@@ -34,6 +34,12 @@ protected Q_SLOTS:
   void on_actionUP_triggered();
   void on_actionHome_triggered();
   void on_actionReload_triggered();
+
+  void on_actionIconView_triggered();
+  void on_actionCompactView_triggered();
+  void on_actionDetailedList_triggered();
+  void on_actionThumbnailView_triggered();
+
   void on_actionGo_triggered();
   void on_actionNew_triggered();
   void on_actionShowHidden_triggered(bool check);

@@ -40,12 +40,27 @@
     <property name="title">
      <string>&amp;View</string>
     </property>
+    <addaction name="actionReload"/>
     <addaction name="actionShowHidden"/>
+    <addaction name="separator"/>
+    <addaction name="actionIconView"/>
+    <addaction name="actionThumbnailView"/>
+    <addaction name="actionCompactView"/>
+    <addaction name="actionDetailedList"/>
+    <addaction name="separator"/>
+    <addaction name="actionSorting"/>
    </widget>
    <widget class="QMenu" name="menu_Editw">
     <property name="title">
      <string>&amp;Edit</string>
     </property>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionSelectAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionPreferences"/>
    </widget>
    <widget class="QMenu" name="menu_Bookmarks">
     <property name="title">
@@ -91,7 +106,9 @@
   </widget>
   <action name="actionUP">
    <property name="icon">
-    <iconset theme="go-up"/>
+    <iconset theme="go-up">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>UP</string>
@@ -99,7 +116,9 @@
   </action>
   <action name="actionHome">
    <property name="icon">
-    <iconset theme="user-home"/>
+    <iconset theme="user-home">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Home</string>
@@ -107,7 +126,9 @@
   </action>
   <action name="actionReload">
    <property name="icon">
-    <iconset theme="view-refresh"/>
+    <iconset theme="view-refresh">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Reload</string>
@@ -115,7 +136,9 @@
   </action>
   <action name="actionGo">
    <property name="icon">
-    <iconset theme="go-jump"/>
+    <iconset theme="go-jump">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go</string>
@@ -123,7 +146,9 @@
   </action>
   <action name="actionQuit">
    <property name="icon">
-    <iconset theme="application-exit"/>
+    <iconset theme="application-exit">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Quit</string>
@@ -131,7 +156,9 @@
   </action>
   <action name="actionAbout">
    <property name="icon">
-    <iconset theme="help-about"/>
+    <iconset theme="help-about">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;About</string>
@@ -139,7 +166,9 @@
   </action>
   <action name="actionNew">
    <property name="icon">
-    <iconset theme="window-new"/>
+    <iconset theme="window-new">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>New</string>
@@ -158,7 +187,9 @@
   </action>
   <action name="actionComputer">
    <property name="icon">
-    <iconset theme="computer"/>
+    <iconset theme="computer">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Computer</string>
@@ -166,7 +197,9 @@
   </action>
   <action name="actionTrash">
    <property name="icon">
-    <iconset theme="user-trash"/>
+    <iconset theme="user-trash">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Trash</string>
@@ -179,7 +212,9 @@
   </action>
   <action name="actionDesktop">
    <property name="icon">
-    <iconset theme="user-desktop"/>
+    <iconset theme="user-desktop">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Desktop</string>
@@ -187,7 +222,9 @@
   </action>
   <action name="actionAddToBookmarks">
    <property name="icon">
-    <iconset theme="list-add"/>
+    <iconset theme="list-add">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Add to Bookmarks</string>
@@ -196,6 +233,61 @@
   <action name="actionApplications">
    <property name="text">
     <string>&amp;Applications</string>
+   </property>
+  </action>
+  <action name="actionReload_2">
+   <property name="text">
+    <string>Reload</string>
+   </property>
+  </action>
+  <action name="actionIconView">
+   <property name="text">
+    <string>Icon View</string>
+   </property>
+  </action>
+  <action name="actionCompactView">
+   <property name="text">
+    <string>Compact View</string>
+   </property>
+  </action>
+  <action name="actionDetailedList">
+   <property name="text">
+    <string>Detailed List</string>
+   </property>
+  </action>
+  <action name="actionThumbnailView">
+   <property name="text">
+    <string>Thumbnail View</string>
+   </property>
+  </action>
+  <action name="actionSorting">
+   <property name="text">
+    <string>Sorting</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>&amp;Cut</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>&amp;Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>&amp;Paste</string>
+   </property>
+  </action>
+  <action name="actionSelectAll">
+   <property name="text">
+    <string>Select All</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Preferences</string>
    </property>
   </action>
  </widget>

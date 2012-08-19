@@ -21,17 +21,25 @@
 #ifndef FM_FOLDERVIEW_H
 #define FM_FOLDERVIEW_H
 
+#include <QWidget>
 #include <QListView>
 #include <QTreeView>
 #include <libfm/fm.h>
 
 namespace Fm {
 
-class FolderView : public QTreeView // QListView
+class FolderView : public QWidget
 {
   Q_OBJECT
 
 public:
+  enum ViewMode {
+    IconMode = 1,
+    CompactMode,
+    DetailedListMode,
+    ThumbnailMode
+  };
+
   enum ClickType {
     ACTIVATED,
     MIDDLE_CLICK,
@@ -39,9 +47,23 @@ public:
   };
 
 public:
-  explicit FolderView(QWidget* parent = 0);
+  explicit FolderView(ViewMode _mode = IconMode, QWidget* parent = 0);
   ~FolderView();
 
+  void setViewMode(ViewMode _mode);
+  ViewMode viewMode();
+  
+  void setIconSize(QSize size);
+  QSize iconSize();
+
+  void setGridSize(QSize size);
+  QSize gridSize();
+  
+  QAbstractItemView* childView();
+
+  QAbstractItemModel* model();
+  void setModel(QAbstractItemModel* _model);
+  
 public Q_SLOTS:
   void onItemActivated(QModelIndex index);
 
@@ -50,6 +72,14 @@ Q_SIGNALS:
   void clicked(int type, FmFileInfo* file);
   void selChanged(int n_sel);
   void sortChanged();
+  
+private:
+
+  QAbstractItemView* view;
+  QAbstractItemModel* model_;
+  ViewMode mode;
+  QSize iconSize_;
+  QSize gridSize_;
 };
 
 }

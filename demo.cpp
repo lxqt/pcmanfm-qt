@@ -20,13 +20,9 @@ MainWindow::MainWindow():
 
   pathEntry = new QLineEdit(this);
   ui.toolBar->insertWidget(ui.actionGo, pathEntry);
-  view = new Fm::FolderView(this);
+  view = new Fm::FolderView(Fm::FolderView::DetailedListMode, this);
   view->setIconSize(QSize(32, 32));
-  view->setColumnWidth(Fm::FolderModel::ColumnName, 200);
-  // view->setWrapping(true);
-  // view->setWordWrap(true);
-  // view->setViewMode(QListView::IconMode);
-  // view->setViewMode(QListView::ListMode);
+  // view->setColumnWidth(Fm::FolderModel::ColumnName, 200);
   setCentralWidget(view);
   connect(view, SIGNAL(clicked(int, FmFileInfo*)), SLOT(onViewClicked(int, FmFileInfo*)));
 
@@ -133,6 +129,8 @@ void MainWindow::on_actionAbout_triggered() {
   QMessageBox::about(this, QString::fromUtf8("Libfm Demo"), QString::fromUtf8("The Qt4 port of libfm.\nCreated by PCMan"));
 }
 
+
+
 void MainWindow::onViewClicked(int type, FmFileInfo* file) {
   if(type == Fm::FolderView::ACTIVATED) {
     if(fm_file_info_is_dir(file)) {
@@ -149,5 +147,21 @@ void MainWindow::onViewClicked(int type, FmFileInfo* file) {
   }
 }
 
+void MainWindow::on_actionIconView_triggered() {
+  qDebug("HERE\n");
+  view->setViewMode(Fm::FolderView::IconMode);
+}
+
+void MainWindow::on_actionCompactView_triggered() {
+  view->setViewMode(Fm::FolderView::CompactMode);
+}
+
+void MainWindow::on_actionDetailedList_triggered() {
+  view->setViewMode(Fm::FolderView::DetailedListMode);
+}
+
+void MainWindow::on_actionThumbnailView_triggered() {
+  view->setViewMode(Fm::FolderView::ThumbnailMode);
+}
 
 #include "demo.moc"
