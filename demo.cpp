@@ -19,6 +19,8 @@ MainWindow::MainWindow():
   ui.setupUi(this);
 
   pathEntry = new QLineEdit(this);
+  connect(pathEntry, SIGNAL(returnPressed()), SLOT(onPathEntryReturnPressed()));
+
   ui.toolBar->insertWidget(ui.actionGo, pathEntry);
   view = new Fm::FolderView(Fm::FolderView::DetailedListMode, this);
   view->setIconSize(QSize(32, 32));
@@ -59,6 +61,14 @@ void MainWindow::chdir(FmPath* path) {
   g_free(disp_path);
 }
 
+void MainWindow::onPathEntryReturnPressed() {
+  QString text = pathEntry->text();
+  QByteArray utext = text.toUtf8();
+  FmPath* path = fm_path_new_for_display_name(utext);
+  chdir(path);
+  fm_path_unref(path);
+}
+
 void MainWindow::on_actionUP_triggered() {
   FmPath* path = folder ? fm_folder_get_path(folder) : NULL;
   if(path) {
@@ -78,11 +88,7 @@ void MainWindow::on_actionReload_triggered() {
 }
 
 void MainWindow::on_actionGo_triggered() {
-  QString text = pathEntry->text();
-  QByteArray utext = text.toUtf8();
-  FmPath* path = fm_path_new_for_display_name(utext);
-  chdir(path);
-  fm_path_unref(path);
+  onPathEntryReturnPressed();
 }
 
 void MainWindow::on_actionNew_triggered() {

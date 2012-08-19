@@ -30,6 +30,8 @@ private:
 
 protected Q_SLOTS:
   void onViewClicked(int type, FmFileInfo* file);
+  
+  void onPathEntryReturnPressed();
 
   void on_actionUP_triggered();
   void on_actionHome_triggered();
