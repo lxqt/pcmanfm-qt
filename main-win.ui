@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>442</width>
+    <height>334</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>File Manager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>442</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menu_View">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="actionShowHidden"/>
+   </widget>
+   <widget class="QMenu" name="menu_Editw">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Bookmarks">
+    <property name="title">
+     <string>&amp;Bookmarks</string>
+    </property>
+    <addaction name="actionAddToBookmarks"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_Go">
+    <property name="title">
+     <string>&amp;Go</string>
+    </property>
+    <addaction name="actionHome"/>
+    <addaction name="actionDesktop"/>
+    <addaction name="actionComputer"/>
+    <addaction name="actionTrash"/>
+    <addaction name="actionNetwork"/>
+    <addaction name="actionApplications"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Editw"/>
+   <addaction name="menu_View"/>
+   <addaction name="menu_Go"/>
+   <addaction name="menu_Bookmarks"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionHome"/>
+   <addaction name="actionUP"/>
+   <addaction name="actionReload"/>
+   <addaction name="actionGo"/>
+  </widget>
+  <action name="actionUP">
+   <property name="icon">
+    <iconset theme="go-up"/>
+   </property>
+   <property name="text">
+    <string>UP</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="icon">
+    <iconset theme="user-home"/>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionReload">
+   <property name="icon">
+    <iconset theme="view-refresh"/>
+   </property>
+   <property name="text">
+    <string>Reload</string>
+   </property>
+  </action>
+  <action name="actionGo">
+   <property name="icon">
+    <iconset theme="go-jump"/>
+   </property>
+   <property name="text">
+    <string>Go</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset theme="application-exit"/>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset theme="help-about"/>
+   </property>
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset theme="window-new"/>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="toolTip">
+    <string>New Window</string>
+   </property>
+  </action>
+  <action name="actionShowHidden">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show &amp;Hidden</string>
+   </property>
+  </action>
+  <action name="actionComputer">
+   <property name="icon">
+    <iconset theme="computer"/>
+   </property>
+   <property name="text">
+    <string>&amp;Computer</string>
+   </property>
+  </action>
+  <action name="actionTrash">
+   <property name="icon">
+    <iconset theme="user-trash"/>
+   </property>
+   <property name="text">
+    <string>&amp;Trash</string>
+   </property>
+  </action>
+  <action name="actionNetwork">
+   <property name="text">
+    <string>&amp;Network</string>
+   </property>
+  </action>
+  <action name="actionDesktop">
+   <property name="icon">
+    <iconset theme="user-desktop"/>
+   </property>
+   <property name="text">
+    <string>&amp;Desktop</string>
+   </property>
+  </action>
+  <action name="actionAddToBookmarks">
+   <property name="icon">
+    <iconset theme="list-add"/>
+   </property>
+   <property name="text">
+    <string>&amp;Add to Bookmarks</string>
+   </property>
+  </action>
+  <action name="actionApplications">
+   <property name="text">
+    <string>&amp;Applications</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

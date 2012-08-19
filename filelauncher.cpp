@@ -1,0 +1,54 @@
+/*
+    <one line to give the library's name and an idea of what it does.>
+    Copyright (C) 2012  <copyright holder> <email>
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+
+#include "filelauncher.h"
+
+using namespace Fm;
+
+FmFileLauncher FileLauncher::funcs = {
+    /* gboolean (*before_open)(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data); */
+    FileLauncher::openFolder,
+    // FmFileLauncherExecAction (*exec_file)(FmFileInfo* file, gpointer user_data);
+    FileLauncher::error
+    // int (*ask)(const char* msg, char* const* btn_labels, int default_btn, gpointer user_data);  
+};
+
+FileLauncher::FileLauncher() {
+
+}
+
+FileLauncher::~FileLauncher() {
+
+}
+
+static bool FileLauncher::launch(QWidget* parent, GList* file_infos) {
+  
+  return fm_launch_files(NULL, file_infos, &funcs, parent);
+}
+
+static gboolean FileLauncher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data, GError** err) {
+  return FALSE;
+}
+
+// static FmFileLauncherExecAction (*exec_file)(FmFileInfo* file, gpointer user_data);
+static gboolean FileLauncher::error(GAppLaunchContext* ctx, GError* err, gpointer user_data) {
+  return TRUE;
+}
+  
