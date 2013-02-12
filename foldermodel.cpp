@@ -21,10 +21,15 @@
 #include "foldermodel.h"
 #include "icontheme.h"
 #include <iostream>
+#include <QtAlgorithms>
+#include <QVector>
 
 using namespace Fm;
 
 FolderModel::FolderModel() : 
+  sortColumn(ColumnName),
+  sortOrder(Qt::AscendingOrder),
+  iconSize_(32),
   folder(NULL)  {
 /*
     ColumnIcon,
@@ -65,26 +70,27 @@ void FolderModel::setFolder(FmFolder* new_folder) {
     folder = NULL;
 }
 
-static void FolderModel::onStartLoading(FmFolder* folder, gpointer user_data) {
+void FolderModel::onStartLoading(FmFolder* folder, gpointer user_data) {
   FolderModel* model = static_cast<FolderModel*>(user_data);
   // remove all items
   model->removeAll();
 }
 
-static void FolderModel::onFinishLoading(FmFolder* folder, gpointer user_data) {
+void FolderModel::onFinishLoading(FmFolder* folder, gpointer user_data) {
   FolderModel* model = static_cast<FolderModel*>(user_data);
-  // add items to the model
-  FmFileInfoList* files = fm_folder_get_files(folder);
-  model->insertFiles(0, files);
 }
 
-static void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_data) {
+void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_data) {
   FolderModel* model = static_cast<FolderModel*>(user_data);
   int n_files = g_slist_length(files);
   model->beginInsertRows(QModelIndex(), model->items.count(), model->items.count() + n_files - 1);
   for(GSList* l = files; l; l = l->next) {
     FmFileInfo* info = FM_FILE_INFO(l->data);
     Item item(info);
+    if(fm_file_info_is_hidden(info)) {
+      model->hiddenItems.append(item);
+      continue;
+    }
     model->items.append(item);
   }
   model->endInsertRows();
@@ -133,13 +139,15 @@ void FolderModel::removeAll() {
   endRemoveRows();
 }
 
-int FolderModel::rowCount(const QModelIndex & parent = QModelIndex()) const {
+int FolderModel::rowCount(const QModelIndex & parent) const {
   if(parent.isValid())
     return 0;
   return items.size();
 }
 
 int FolderModel::columnCount (const QModelIndex & parent = QModelIndex()) const {
+  if(parent.isValid())
+    return 0;
   return NumOfColumns;
 }
 
@@ -174,7 +182,7 @@ QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole
     }
     case Qt::DecorationRole: {
       if(index.column() == 0) {
-	QPixmap pix = IconTheme::loadIcon(fm_file_info_get_icon(info), 24);
+	QPixmap pix = IconTheme::loadIcon(fm_file_info_get_icon(info), iconSize_);
 	// return QVariant(item->icon);
 	return QVariant(pix);
       }
@@ -213,6 +221,10 @@ QModelIndex FolderModel::index(int row, int column, const QModelIndex & parent) 
   return createIndex(row, column, (void*)&item);
 }
 
+QModelIndex FolderModel::parent(const QModelIndex & index) const {
+  return QModelIndex();
+}
+
 QList<FolderModel::Item>::iterator FolderModel::findItemByPath(FmPath* path, int* row) {
   QList<Item>::iterator it = items.begin();
   int i = 0;
@@ -245,3 +257,66 @@ QList<FolderModel::Item>::iterator FolderModel::findItemByName(const char* name,
   return items.end();
 }
 
+bool FolderModel::Sorter::operator()(const Item &t1, const Item &t2) const {
+  // FIXME: using a switch here is inefficient.
+  // Having difffernt sorter function objects for different sort column is better.
+  bool less = false;
+  // dir before files
+  bool isdir1 = fm_file_info_is_dir(t1.info);
+  bool isdir2 = fm_file_info_is_dir(t2.info);
+  if(isdir1 != isdir2) {
+    return isdir1 ? true : false;
+  }
+
+  switch(model_->sortColumn) {
+    case ColumnName:
+      less = t1.displayName < t2.displayName;
+      break;
+    case ColumnMTime:
+      less = fm_file_info_get_mtime(t1.info) < fm_file_info_get_mtime(t2.info);
+      break;
+    case ColumnFileType:
+      break;
+  };
+  return model_->sortOrder == Qt::AscendingOrder ? less : !less;
+}
+
+void FolderModel::sort(int column, Qt::SortOrder order = Qt::AscendingOrder) {
+//  if(column != ColumnName)
+//    return;
+  sortColumn = column;
+  sortOrder = order;
+
+  Q_EMIT layoutAboutToBeChanged();
+
+  // store old position of each row
+  QVector<FmFileInfo*> old_rows(items.count());
+  QList<Item>::iterator it;
+  int row;
+  for(row = 0, it = items.begin(); it != items.end(); ++it, ++row) {
+    Item& item = *it;
+    old_rows[row] = item.info;
+  }
+
+  // sort the real data
+  qStableSort(items.begin(), items.end(), Sorter(this));
+
+  // create mapping
+  QModelIndexList from_indices, to_indices;
+  for(row = 0, it = items.begin(); it != items.end(); ++it, ++row) {
+    Item& item = *it;
+    int old_row = old_rows.indexOf(item.info);
+    to_indices.append(createIndex(row, 0, item.info));
+    from_indices.append(createIndex(old_row, 0, item.info));
+  }
+  changePersistentIndexList(from_indices, to_indices);
+  
+  Q_EMIT layoutChanged();
+}
+
+void FolderModel::setIconSize(int size) {
+  if(size != iconSize_) {
+    iconSize_ = size;
+    // FIXME: reload icons?
+  }
+}

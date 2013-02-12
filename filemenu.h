@@ -18,33 +18,34 @@
 */
 
 
-#ifndef FM_PROXYFOLDERMODEL_H
-#define FM_PROXYFOLDERMODEL_H
+#ifndef FM_FILEMENU_H
+#define FM_FILEMENU_H
 
-#include <QSortFilterProxyModel>
+#include <QtGui/QMenu>
+#include <libfm/fm.h>
 
 namespace Fm {
 
-class ProxyFolderModel : public QSortFilterProxyModel
+class FileMenu : public QMenu
 {
-Q_OBJECT
-
 public:
-  explicit ProxyFolderModel(QObject * parent = 0);
-  ~ProxyFolderModel();
-
-  void setShowHidden(bool show);
-  bool showHidden() {
-    return showHidden_;
-  }
-
+  explicit FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, QWidget* parent = 0);
+  explicit FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, const QString& title, QWidget* parent = 0);
+  ~FileMenu();
+  
 protected:
-  //bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) const;
-
+  void createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd);
+  
 private:
-  bool showHidden_;
+  FmFileInfoList* files_;
+  FmFileInfo* info_;
+  FmPath* cwd_;
+  bool sameType_;
+  bool sameFilesystem_;
+  bool allVirtual_;
+  bool allTrash_;
 };
 
 }
 
-#endif // FM_PROXYFOLDERMODEL_H
+#endif // FM_FILEMENU_H

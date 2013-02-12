@@ -22,6 +22,7 @@
 #define FM_ICONTHEME_H
 
 #include <QPixmap>
+#include <QIcon>
 #include "libfm/fm.h"
 
 namespace Fm {
@@ -30,13 +31,14 @@ class IconTheme
 {
 public:
   IconTheme();
-  virtual ~IconTheme();
+  ~IconTheme();
 
   static QPixmap loadIcon(FmIcon* icon, int size);
-  
-protected:
-  
+  static QIcon icon(FmIcon* fmicon);
+  static QIcon icon(GIcon* gicon);
 
+protected:
+  static FmIcon* fallbackFmIcon;
 };
 
 }

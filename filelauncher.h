@@ -28,7 +28,6 @@ namespace Fm {
 
 class FileLauncher
 {
-
 public:
   FileLauncher();
   ~FileLauncher();

@@ -1,4 +1,4 @@
-project(demo)
+project(pcmanfm-qt)
 cmake_minimum_required(VERSION 2.6)
 find_package(Qt4 REQUIRED)
 
@@ -8,6 +8,7 @@ pkg_check_modules(LIBFM
   gio-2.0
   gio-unix-2.0
   libfm
+  libstartup-notification-1.0
 )
 
 include_directories(
@@ -23,37 +24,44 @@ link_directories(
 
 set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive")
 
-set(qmodeltest_SRCS
-  qmodeltest/modeltest.cpp
-  qmodeltest/dynamictreemodel.cpp
-  qmodeltest/dynamictreemodel.h
+#set(qmodeltest_SRCS
+#  qmodeltest/modeltest.cpp
+#  qmodeltest/dynamictreemodel.cpp
+#  qmodeltest/dynamictreemodel.h
   # qmodeltest/tst_modeltest.cpp
-)
+#)
 
-set(demo_SRCS
-  demo.cpp
-  main.cpp
+set(pcmanfm_SRCS
+  pcmanfm.cpp
+  mainwindow.cpp
+  tabpage.cpp
   application.cpp
   icontheme.cpp
   filelauncher.cpp
-  proxyfoldermodel.cpp
   foldermodel.cpp
   folderview.cpp
-  ${qmodeltest_SRCS}
+  filemenu.cpp
+  applaunchcontext.cpp
+  placesview.cpp
+  placesmodel.cpp
+  mountoperation.cpp
+#  ${qmodeltest_SRCS}
 )
 
-set(demo_UIS
+set(pcmanfm_UIS
   main-win.ui
+  file-props.ui
+  mount-operation-password.ui
 )
 
-QT4_WRAP_UI(demo_UIS_H ${demo_UIS})
+QT4_WRAP_UI(pcmanfm_UIS_H ${pcmanfm_UIS})
 
-qt4_automoc(${demo_SRCS})
-add_executable(demo 
-  ${demo_SRCS}
-  ${demo_UIS_H}
+qt4_automoc(${pcmanfm_SRCS})
+add_executable(pcmanfm-qt 
+  ${pcmanfm_SRCS}
+  ${pcmanfm_UIS_H}
 )
-target_link_libraries(demo 
+target_link_libraries(pcmanfm-qt 
   ${QT_QTCORE_LIBRARY}
   ${QT_QTGUI_LIBRARY}
   ${QT_QTTEST_LIBRARY}

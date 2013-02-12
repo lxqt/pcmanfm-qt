@@ -24,10 +24,13 @@
 #include <QWidget>
 #include <QListView>
 #include <QTreeView>
+#include <QMouseEvent>
 #include <libfm/fm.h>
 
 namespace Fm {
 
+class FolderModel;
+  
 class FolderView : public QWidget
 {
   Q_OBJECT
@@ -41,9 +44,37 @@ public:
   };
 
   enum ClickType {
-    ACTIVATED,
-    MIDDLE_CLICK,
-    CONTEXT_MENU
+    ActivatedClick,
+    MiddleClick,
+    ContextMenuClick
+  };
+
+protected:
+  // override these classes just to handle mouse events
+  class ListView : public QListView {
+  public:
+    ListView(QWidget* parent = 0) : QListView(parent) {
+    }
+    void mousePressEvent(QMouseEvent* event) {
+      QListView::mousePressEvent(event);
+      if(event->button() == Qt::MiddleButton) {
+	QPoint pos = event->pos();
+	static_cast<FolderView*>(parent())->emitClickedAt(MiddleClick, pos);
+      }
+    }
+  };
+
+  class TreeView : public QTreeView {
+  public:
+    TreeView(QWidget* parent = 0) : QTreeView(parent) {
+    }
+    void mousePressEvent(QMouseEvent* event) {
+      QTreeView::mousePressEvent(event);
+      if(event->button() == Qt::MiddleButton) {
+	QPoint pos = event->pos();
+	static_cast<FolderView*>(parent())->emitClickedAt(MiddleClick, pos);
+      }
+    }
   };
 
 public:
@@ -58,12 +89,16 @@ public:
 
   void setGridSize(QSize size);
   QSize gridSize();
-  
+
   QAbstractItemView* childView();
 
-  QAbstractItemModel* model();
-  void setModel(QAbstractItemModel* _model);
-  
+  FolderModel* model();
+  void setModel(FolderModel* _model);
+
+protected:
+  void contextMenuEvent(QContextMenuEvent* event);
+  void emitClickedAt(ClickType type, QPoint& pos);
+
 public Q_SLOTS:
   void onItemActivated(QModelIndex index);
 
@@ -76,7 +111,7 @@ Q_SIGNALS:
 private:
 
   QAbstractItemView* view;
-  QAbstractItemModel* model_;
+  FolderModel* model_;
   ViewMode mode;
   QSize iconSize_;
   QSize gridSize_;

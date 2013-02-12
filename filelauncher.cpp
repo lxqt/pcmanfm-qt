@@ -19,6 +19,7 @@
 
 
 #include "filelauncher.h"
+#include "applaunchcontext.h"
 
 using namespace Fm;
 
@@ -39,8 +40,10 @@ FileLauncher::~FileLauncher() {
 }
 
 static bool FileLauncher::launch(QWidget* parent, GList* file_infos) {
-  
-  return fm_launch_files(NULL, file_infos, &funcs, parent);
+  FmAppLaunchContext* context = fm_app_launch_context_new_for_widget(parent);
+  bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), file_infos, &funcs, parent);
+  g_object_unref(context);
+  return ret;
 }
 
 static gboolean FileLauncher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data, GError** err) {

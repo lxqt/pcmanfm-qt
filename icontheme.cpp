@@ -26,6 +26,8 @@
 
 using namespace Fm;
 
+FmIcon* IconTheme::fallbackFmIcon = NULL;
+
 struct PixEntry {
   int size;
   QPixmap pixmap;
@@ -44,9 +46,18 @@ static void fmIconDataDestroy(gpointer data) {
 IconTheme::IconTheme() {
   // FIXME: only one instance is allowed
   fm_icon_set_user_data_destroy(reinterpret_cast<GDestroyNotify>(fmIconDataDestroy));
+  
+  // get fallback icon
+  if(!fallbackFmIcon) {
+    FmMimeType* mime_type = fm_mime_type_from_name("application/octet-stream");
+    fallbackFmIcon = fm_mime_type_get_icon(mime_type);
+    fm_mime_type_unref(mime_type);
+  }
 }
 
 IconTheme::~IconTheme() {
+  if(fallbackFmIcon)
+    fm_icon_unref(fallbackFmIcon);
 }
 
 // Qt4 has QIcon::fromTheme() which loads an icon according to
@@ -82,7 +93,7 @@ QPixmap IconTheme::loadIcon(FmIcon* icon, int size) {
 	}
       }
       if(*names == NULL) // not found
-	entry->pixmap = QPixmap(); //FIXME: use fallback icon
+	entry->pixmap = loadIcon(fallbackFmIcon, size); // use fallback icon
     }
     else {
       // std::cout << "FOUND" << std::endl;
@@ -91,5 +102,30 @@ QPixmap IconTheme::loadIcon(FmIcon* icon, int size) {
   }
   else if(G_IS_FILE_ICON(gicon)) {
   }
-  return QPixmap(); // fallback
+  return loadIcon(fallbackFmIcon, size); // fallback icon
 }
+
+static QIcon IconTheme::icon(FmIcon* fmicon) {
+  return icon(fmicon->gicon);
+}
+static QIcon IconTheme::icon(GIcon* gicon) {
+  if(G_IS_THEMED_ICON(gicon)) {
+    const gchar * const * names = g_themed_icon_get_names(G_THEMED_ICON(gicon));
+    const gchar * const * name;
+    for(name = names; *name; ++name) {
+      QString qname = *name;
+      if(QIcon::hasThemeIcon(qname)) {
+	return QIcon::fromTheme(qname);
+      }
+    }
+  }
+  else if(G_IS_FILE_ICON(gicon)) {
+    GFile* file = g_file_icon_get_file(G_FILE_ICON(gicon));
+    char* fpath = g_file_get_path(file);
+    QString path = fpath;
+    g_free(fpath);
+    return QIcon(path);
+  }
+  return QIcon();
+}
+

@@ -64,17 +64,31 @@ public:
     FmFileInfo* info;
   };
 
+  class Sorter {
+  public:
+    Sorter(FolderModel* model) :  model_(model) {
+    }
+    inline bool operator()(const Item &t1, const Item &t2) const;
+    FolderModel* model_;
+  };
+  
 public:
   FolderModel();
   virtual ~FolderModel();
 
   void setFolder(FmFolder* new_folder);
+  void setIconSize(int size);
+  int iconSize() {
+    return iconSize_;
+  }
 
-  int rowCount(const QModelIndex & parent) const;
+  int rowCount(const QModelIndex & parent = QModelIndex()) const;
   int columnCount (const QModelIndex & parent) const;
   QVariant data(const QModelIndex & index, int role) const;
   QVariant headerData(int section, Qt::Orientation orientation, int role) const;
   QModelIndex index(int row, int column, const QModelIndex & parent = QModelIndex()) const;
+  QModelIndex parent ( const QModelIndex & index ) const;
+  void sort(int column, Qt::SortOrder order = Qt::AscendingOrder);
 
 protected:
   static void onStartLoading(FmFolder* folder, gpointer user_data);
@@ -90,6 +104,10 @@ protected:
 private:
   FmFolder* folder;
   QList<Item> items;
+  QList<Item> hiddenItems;
+  ColumnId sortColumn;
+  Qt::SortOrder sortOrder;
+  int iconSize_;
 };
 
 }

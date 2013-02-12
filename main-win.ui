@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>File Manager</string>
   </property>
+  <property name="windowIcon">
+   <iconset theme="folder"/>
+  </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -20,14 +23,16 @@
      <x>0</x>
      <y>0</y>
      <width>442</width>
-     <height>25</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
     <property name="title">
      <string>&amp;File</string>
     </property>
-    <addaction name="actionNew"/>
+    <addaction name="actionNewTab"/>
+    <addaction name="actionNewWin"/>
+    <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
@@ -40,6 +45,20 @@
     <property name="title">
      <string>&amp;View</string>
     </property>
+    <widget class="QMenu" name="menuSorting">
+     <property name="title">
+      <string>Sorting</string>
+     </property>
+     <addaction name="actionByFileName"/>
+     <addaction name="actionByMTime"/>
+     <addaction name="actionByFileType"/>
+     <addaction name="actionByOwner"/>
+     <addaction name="separator"/>
+     <addaction name="actionAscending"/>
+     <addaction name="actionDescending"/>
+     <addaction name="separator"/>
+     <addaction name="actionFolderFirst"/>
+    </widget>
     <addaction name="actionReload"/>
     <addaction name="actionShowHidden"/>
     <addaction name="separator"/>
@@ -48,7 +67,7 @@
     <addaction name="actionCompactView"/>
     <addaction name="actionDetailedList"/>
     <addaction name="separator"/>
-    <addaction name="actionSorting"/>
+    <addaction name="menuSorting"/>
    </widget>
    <widget class="QMenu" name="menu_Editw">
     <property name="title">
@@ -98,7 +117,7 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actionNew"/>
+   <addaction name="actionNewTab"/>
    <addaction name="actionHome"/>
    <addaction name="actionUP"/>
    <addaction name="actionReload"/>
@@ -164,14 +183,14 @@
     <string>&amp;About</string>
    </property>
   </action>
-  <action name="actionNew">
+  <action name="actionNewWin">
    <property name="icon">
     <iconset theme="window-new">
      <normaloff/>
     </iconset>
    </property>
    <property name="text">
-    <string>New</string>
+    <string>New Window</string>
    </property>
    <property name="toolTip">
     <string>New Window</string>
@@ -260,11 +279,6 @@
     <string>Thumbnail View</string>
    </property>
   </action>
-  <action name="actionSorting">
-   <property name="text">
-    <string>Sorting</string>
-   </property>
-  </action>
   <action name="actionCut">
    <property name="text">
     <string>&amp;Cut</string>
@@ -288,6 +302,54 @@
   <action name="actionPreferences">
    <property name="text">
     <string>Preferences</string>
+   </property>
+  </action>
+  <action name="actionAscending">
+   <property name="text">
+    <string>Ascending</string>
+   </property>
+  </action>
+  <action name="actionDescending">
+   <property name="text">
+    <string>Descending</string>
+   </property>
+  </action>
+  <action name="actionByFileName">
+   <property name="text">
+    <string>By File Name</string>
+   </property>
+  </action>
+  <action name="actionByMTime">
+   <property name="text">
+    <string>By Modification Time</string>
+   </property>
+  </action>
+  <action name="actionByFileType">
+   <property name="text">
+    <string>By File Type</string>
+   </property>
+  </action>
+  <action name="actionByOwner">
+   <property name="text">
+    <string>By Owner</string>
+   </property>
+  </action>
+  <action name="actionFolderFirst">
+   <property name="text">
+    <string>Folder First</string>
+   </property>
+  </action>
+  <action name="actionNewTab">
+   <property name="icon">
+    <iconset theme="window-new">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>New Tab</string>
+   </property>
+   <property name="toolTip">
+    <string>New Tab</string>
    </property>
   </action>
  </widget>

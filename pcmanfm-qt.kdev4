@@ -1,4 +1,4 @@
 [Project]
-Name=demo
 Manager=KDevCMakeManager
+Name=pcmanfm-qt
 VersionControl=
