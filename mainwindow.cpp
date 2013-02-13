@@ -12,6 +12,8 @@
 #include "filelauncher.h"
 #include "filemenu.h"
 
+#include "ui_about.h"
+
 // #include "qmodeltest/modeltest.h"
 
 using namespace Fm;
@@ -170,7 +172,17 @@ void MainWindow::on_actionQuit_triggered() {
 }
 
 void MainWindow::on_actionAbout_triggered() {
-  QMessageBox::about(this, QString::fromUtf8("PCManFM"), QString::fromUtf8("The Qt port of PCManFM.\nCreated by PCMan"));
+  // the about dialog
+  class AboutDialog : public QDialog {
+  public:
+    explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) {
+      ui.setupUi(this);
+    }
+  private:
+    Ui::AboutDialog ui;
+  };
+  AboutDialog dialog(this);
+  dialog.exec();
 }
 
 void MainWindow::on_actionIconView_triggered() {

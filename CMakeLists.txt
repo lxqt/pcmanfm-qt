@@ -54,6 +54,7 @@ set(pcmanfm_UIS
   main-win.ui
   file-props.ui
   mount-operation-password.ui
+  about.ui
 )
 
 QT4_WRAP_UI(pcmanfm_UIS_H ${pcmanfm_UIS})
