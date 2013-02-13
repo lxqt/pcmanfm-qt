@@ -25,6 +25,7 @@
 #include <QIcon>
 #include <libfm/fm.h>
 #include <QList>
+#include "icontheme.h"
 
 namespace Fm {
 
@@ -48,11 +49,13 @@ public:
     Item(FmFileInfo* _info):
       info(fm_file_info_ref(_info)) {
       displayName = QString::fromUtf8(fm_file_info_get_disp_name(info));
+      icon = IconTheme::icon(fm_file_info_get_icon(_info));
     }
 
     Item(const Item& other) {
       info = other.info ? fm_file_info_ref(other.info) : NULL;
       displayName = QString::fromUtf8(fm_file_info_get_disp_name(info));
+      icon = other.icon;
     }
 
     ~Item() {
@@ -61,6 +64,7 @@ public:
     }
 
     QString displayName;
+    QIcon icon;
     FmFileInfo* info;
   };
 

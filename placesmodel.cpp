@@ -26,42 +26,37 @@ using namespace Fm;
 
 PlacesModel::Item::Item(FmPath* path):
   QStandardItem(),
-  icon_(NULL),
   fileInfo_(NULL) {
   path_ = path ? fm_path_ref(path) : NULL;
 }
 
 PlacesModel::Item::Item(const char* iconName, QString title, FmPath* path):
   QStandardItem(title),
-  icon_(NULL),
   fileInfo_(NULL) {
   path_ = path ? fm_path_ref(path) : NULL;
   FmIcon* icon = fm_icon_from_name(iconName);
-  setIcon(icon);
+  setIcon(IconTheme::icon(icon));
   fm_icon_unref(icon);
 }
 
 PlacesModel::Item::Item(FmIcon* icon, QString title, FmPath* path):
   QStandardItem(title),
-  icon_(NULL),
   fileInfo_(NULL) {
   path_ = path ? fm_path_ref(path) : NULL;
-  setIcon(icon);
+  setIcon(IconTheme::icon(icon));
 }
 
 PlacesModel::Item::Item(GIcon* gicon, QString title, FmPath* path):
   QStandardItem(title),
-  icon_(NULL),
   fileInfo_(NULL) {
   path_ = path ? fm_path_ref(path) : NULL;
   FmIcon* icon = fm_icon_from_gicon(gicon);
-  setIcon(icon);
+  setIcon(IconTheme::icon(gicon));
   fm_icon_unref(icon);
 }
 
 PlacesModel::Item::Item(QIcon icon, QString title, FmPath* path):
   QStandardItem(icon, title),
-  icon_(NULL),
   fileInfo_(NULL) {
   path_ = path ? fm_path_ref(path) : NULL;
 }
@@ -69,20 +64,8 @@ PlacesModel::Item::Item(QIcon icon, QString title, FmPath* path):
 PlacesModel::Item::~Item() {
   if(path_)
     fm_path_unref(path_);
-  if(icon_)
-    fm_icon_unref(icon_);
   if(fileInfo_)
     g_object_unref(fileInfo_);
-}
-
-void PlacesModel::Item::setIcon(FmIcon* icon) {
-  if(icon_)
-    fm_icon_unref(icon_);
-  if(icon) {
-    icon_ = fm_icon_ref(icon);
-  }
-  else
-    icon_ = NULL;
 }
 
 void PlacesModel::Item::setPath(FmPath* path) {
@@ -94,12 +77,6 @@ void PlacesModel::Item::setPath(FmPath* path) {
 
 QVariant PlacesModel::Item::data(int role) const {
   // we use a QPixmap from FmIcon cache rather than QIcon object for decoration role.
-  if(role == Qt::DecorationRole) {
-    if(icon_) {
-      QPixmap pix = IconTheme::loadIcon(icon_, fm_config->small_icon_size);
-      return QVariant(pix);
-    }
-  }
   return QStandardItem::data(role);
 }
 

@@ -87,10 +87,12 @@ void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_da
   for(GSList* l = files; l; l = l->next) {
     FmFileInfo* info = FM_FILE_INFO(l->data);
     Item item(info);
+/*
     if(fm_file_info_is_hidden(info)) {
       model->hiddenItems.append(item);
       continue;
     }
+*/
     model->items.append(item);
   }
   model->endInsertRows();
@@ -182,9 +184,9 @@ QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole
     }
     case Qt::DecorationRole: {
       if(index.column() == 0) {
-	QPixmap pix = IconTheme::loadIcon(fm_file_info_get_icon(info), iconSize_);
-	// return QVariant(item->icon);
-	return QVariant(pix);
+	// QPixmap pix = IconTheme::loadIcon(fm_file_info_get_icon(info), iconSize_);
+	return QVariant(item->icon);
+	// return QVariant(pix);
       }
     }
     case FileInfoRole:

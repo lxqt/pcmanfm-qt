@@ -39,7 +39,7 @@ public:
   }
 
 protected:
-  //bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) const;
+  bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) const;
 
 private:
   bool showHidden_;

@@ -25,13 +25,18 @@
 #include <QApplication>
 #include <QCursor>
 #include <QMessageBox>
+#include "proxyfoldermodel.h"
 
 using namespace Fm;
 
 TabPage::TabPage(FmPath* path, QWidget* parent):
     QWidget( parent),
     folder_ (NULL),
-    folderModel_(NULL) {
+    folderModel_(NULL),
+    showHidden_(false) {
+
+  proxyModel_ = new ProxyFolderModel();
+  proxyModel_->setShowHidden(false);
 
   verticalLayout = new QVBoxLayout(this);
   verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -43,7 +48,11 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
 
   folderModel_ = new Fm::FolderModel();
   folderModel_->sort(Fm::FolderModel::ColumnName);
-  folderView_->setModel(folderModel_);
+
+  proxyModel_->setSourceModel(folderModel_);
+  // folderView_->setModel(folderModel_);
+  // FIXME: this is very dirty
+  folderView_->setModel(proxyModel_);
 
   verticalLayout->addWidget(folderView_);
   
@@ -52,6 +61,8 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
 
 TabPage::~TabPage() {
   freeFolder();
+  if(proxyModel_)
+    delete proxyModel_;
   if(folderModel_)
     delete folderModel_;
 }
@@ -256,7 +267,6 @@ void TabPage::chdir(FmPath* path) {
       onFolderStartLoading(folder_, this);
   folderModel_->setFolder(folder_);
 }
-
 
 void TabPage::onViewClicked(int type, FmFileInfo* file) {
   Q_EMIT fileClicked(type, file);

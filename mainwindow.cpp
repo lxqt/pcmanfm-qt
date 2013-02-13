@@ -113,7 +113,8 @@ void MainWindow::on_actionNewWin_triggered() {
 }
 
 void MainWindow::on_actionShowHidden_triggered(bool checked) {
-
+  TabPage* tabPage = currentPage();
+  tabPage->setShowHidden(checked);
 }
 
 void MainWindow::on_actionByFileName_triggered(bool checked) {

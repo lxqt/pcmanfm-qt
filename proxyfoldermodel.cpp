@@ -37,19 +37,15 @@ void ProxyFolderModel::setShowHidden(bool show) {
     invalidateFilter();
   }
 }
-#if 0
+
 bool ProxyFolderModel::filterAcceptsRow(int source_row, const QModelIndex & source_parent) const {
-/*
   if(!showHidden_) {
     QAbstractItemModel* model = sourceModel();
     QString name = model->data(model->index(source_row, 0, source_parent)).toString();
     if(name.startsWith(".") || name.endsWith("~"))
       return false;
   }
-  return QSortFilterProxyModel::filterAcceptsRow(source_row, source_parent);
-*/
-return true;
+  return true;
 }
-#endif
 
 #include "proxyfoldermodel.moc"

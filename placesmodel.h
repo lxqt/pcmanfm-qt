@@ -42,11 +42,6 @@ public:
       Item(GIcon* gicon, QString title, FmPath* path = 0);
       ~Item();
 
-      FmIcon* icon() {
-	return icon_;
-      }
-      void setIcon(FmIcon* icon);
-
       FmFileInfo* fileInfo() {
 	return fileInfo_;
       }
@@ -60,7 +55,6 @@ public:
       QVariant data ( int role = Qt::UserRole + 1 ) const;
 
     private:
-      FmIcon* icon_;
       FmPath* path_;
       FmFileInfo* fileInfo_;
   };

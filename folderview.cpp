@@ -23,8 +23,7 @@
 #include <QHeaderView>
 #include <QVBoxLayout>
 #include <QContextMenuEvent>
-
-#include <iostream>
+#include "proxyfoldermodel.h"
 
 using namespace Fm;
 
@@ -124,7 +123,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     view->setSelectionMode(QAbstractItemView::ExtendedSelection);
     layout()->addWidget(view);
     if(model_) {
-      reinterpret_cast<FolderModel*>(model_)->setIconSize(iconSize_.width());
+      reinterpret_cast<FolderModel*>(model_->sourceModel())->setIconSize(iconSize_.width());
       // FIXME: preserve selections
       view->setModel(model_);
     }
@@ -134,7 +133,7 @@ void FolderView::setViewMode(ViewMode _mode) {
 void FolderView::setIconSize(QSize size) {
   iconSize_ = size;
   if(model_) {
-    model_->setIconSize(size.width());
+    reinterpret_cast<FolderModel*>(model_->sourceModel())->setIconSize(size.width());
   }
 }
 
@@ -158,11 +157,11 @@ QAbstractItemView* FolderView::childView() {
   return view;
 }
 
-FolderModel* FolderView::model() {
+ProxyFolderModel* FolderView::model() {
   return model_;
 }
 
-void FolderView::setModel(FolderModel* model) {
+void FolderView::setModel(ProxyFolderModel* model) {
   if(view)
     view->setModel(model);
   if(model_)

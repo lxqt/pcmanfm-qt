@@ -41,6 +41,7 @@ set(pcmanfm_SRCS
   icontheme.cpp
   filelauncher.cpp
   foldermodel.cpp
+  proxyfoldermodel.cpp
   folderview.cpp
   filemenu.cpp
   applaunchcontext.cpp

@@ -27,6 +27,7 @@
 #include "folderview.h"
 #include "foldermodel.h"
 #include "placesview.h"
+#include "proxyfoldermodel.h"
 
 namespace Fm {
 
@@ -61,6 +62,15 @@ public:
       folderModel_->sort(col, order);
   }
 
+  bool showHidden() {
+    return showHidden_;
+  }
+  
+  void setShowHidden(bool showHidden) {
+    showHidden_ = showHidden;
+    proxyModel_->setShowHidden(showHidden_);
+  }
+  
   FmPath* path() {
     return folder_ ? fm_folder_get_path(folder_) : NULL;
   }
@@ -112,14 +122,15 @@ private:
   static void onFolderUnmount(FmFolder* _folder, TabPage* pThis);
   static void onFolderContentChanged(FmFolder* _folder, TabPage* pThis);
 
- 
 private:
   FolderView* folderView_;
   FolderModel* folderModel_;
+  ProxyFolderModel* proxyModel_;
   QVBoxLayout* verticalLayout;
   FmFolder* folder_;
   QString title_;
   QString statusText_[StatusTextNum];
+  bool showHidden_;
 };
 
 }

@@ -26,6 +26,16 @@
 #include "libfm/fm.h"
 
 namespace Fm {
+  
+// NOTE:
+// Qt seems to has its own QIcon pixmap caching mechanism internally.
+// Besides, it also caches QIcon objects created by QIcon::fromTheme().
+// So maybe we should not duplicate the work.
+// See http://qt.gitorious.org/qt/qt/blobs/4.8/src/gui/image/qicon.cpp
+// QPixmap QPixmapIconEngine::pixmap(const QSize &size, QIcon::Mode mode, QIcon::State state).
+// In addition, QPixmap is actually stored in X11 server, not client side.
+// Hence maybe we should not cache too many pixmaps, I guess?
+// Let's have Qt do its work and only translate GIcon to QIcon here.
 
 class IconTheme
 {
@@ -33,11 +43,14 @@ public:
   IconTheme();
   ~IconTheme();
 
-  static QPixmap loadIcon(FmIcon* icon, int size);
+  // static QPixmap loadIcon(FmIcon* icon, int size);
   static QIcon icon(FmIcon* fmicon);
   static QIcon icon(GIcon* gicon);
 
 protected:
+
+  static QIcon convertFromGIcon(GIcon* gicon);
+
   static FmIcon* fallbackFmIcon;
 };
 

@@ -29,7 +29,7 @@
 
 namespace Fm {
 
-class FolderModel;
+class ProxyFolderModel;
   
 class FolderView : public QWidget
 {
@@ -92,8 +92,8 @@ public:
 
   QAbstractItemView* childView();
 
-  FolderModel* model();
-  void setModel(FolderModel* _model);
+  ProxyFolderModel* model();
+  void setModel(ProxyFolderModel* _model);
 
 protected:
   void contextMenuEvent(QContextMenuEvent* event);
@@ -111,7 +111,7 @@ Q_SIGNALS:
 private:
 
   QAbstractItemView* view;
-  FolderModel* model_;
+  ProxyFolderModel* model_;
   ViewMode mode;
   QSize iconSize_;
   QSize gridSize_;
