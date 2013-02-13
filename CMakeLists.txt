@@ -15,6 +15,7 @@ include_directories(
   ${QT_INCLUDES}
   ${LIBFM_INCLUDE_DIRS}
   ${CMAKE_CURRENT_BINARY_DIR}
+  ${CMAKE_CURRENT_SOURCE_DIR}
   qmodeltest
 )
 
@@ -34,6 +35,7 @@ set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive")
 set(pcmanfm_SRCS
   pcmanfm.cpp
   mainwindow.cpp
+  sidepane.cpp
   tabpage.cpp
   application.cpp
   icontheme.cpp

@@ -11,7 +11,10 @@
 #include "foldermodel.h"
 #include "folderview.h"
 #include "placesview.h"
-#include <qmessagebox.h>
+#include <QMessageBox>
+#include <QTabBar>
+#include <QStackedWidget>
+#include <QSplitter>
 
 namespace Fm {
 
@@ -28,13 +31,12 @@ public:
   void addTab(FmPath* path);
 
   TabPage* currentPage() {
-    return reinterpret_cast<TabPage*>(notebook->currentWidget());
+    return reinterpret_cast<TabPage*>(ui.stackedWidget->currentWidget());
   }
 
 private:
   Ui::MainWindow ui;
   QLineEdit* pathEntry;
-  QTabWidget* notebook;
   QLabel* fsInfoLabel;
 
 protected Q_SLOTS:
@@ -45,7 +47,7 @@ protected Q_SLOTS:
   void on_actionNewWin_triggered();
   void on_actionQuit_triggered();
 
-  void on_actionUP_triggered();
+  void on_actionGoUp_triggered();
   void on_actionHome_triggered();
   void on_actionReload_triggered();
 
@@ -72,8 +74,10 @@ protected Q_SLOTS:
   void on_actionAddToBookmarks_triggered();
   void on_actionAbout_triggered();
 
-  void onTabCloseRequested(int index);
-  void onCurrentChanged(int index);
+  void onTabBarCloseRequested(int index);
+  void onTabBarCurrentChanged(int index);
+  
+  void onStackedWidgetWidgetRemoved(int index);
   
   void onTabPageTitleChanged(QString title);
   void onTabPageStatusChanged(int type, QString statusText);

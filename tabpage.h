@@ -21,7 +21,8 @@
 #ifndef FM_TABPAGE_H
 #define FM_TABPAGE_H
 
-#include <QSplitter>
+#include <QWidget>
+#include <QVBoxLayout>
 #include <libfm/fm.h>
 #include "folderview.h"
 #include "foldermodel.h"
@@ -29,7 +30,7 @@
 
 namespace Fm {
 
-class TabPage : public QSplitter
+class TabPage : public QWidget
 {
 Q_OBJECT
 
@@ -77,10 +78,6 @@ public:
   Fm::FolderView* folderView() {
     return folderView_;
   }
-  
-  Fm::PlacesView* placesView() const {
-    return placeView_;
-  }
 
   void reload() {
     if(folder_)
@@ -117,9 +114,9 @@ private:
 
  
 private:
-  PlacesView* placeView_;
   FolderView* folderView_;
   FolderModel* folderModel_;
+  QVBoxLayout* verticalLayout;
   FmFolder* folder_;
   QString title_;
   QString statusText_[StatusTextNum];

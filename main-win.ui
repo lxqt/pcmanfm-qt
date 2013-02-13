@@ -6,23 +6,60 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>442</width>
-    <height>334</height>
+    <width>460</width>
+    <height>369</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>File Manager</string>
   </property>
   <property name="windowIcon">
-   <iconset theme="folder"/>
+   <iconset theme="folder">
+    <normaloff/>
+   </iconset>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTabBar" name="tabBar" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="Fm::SidePane" name="sidePane">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <widget class="QStackedWidget" name="stackedWidget"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>442</width>
+     <width>460</width>
      <height>23</height>
     </rect>
    </property>
@@ -98,6 +135,9 @@
     <addaction name="actionTrash"/>
     <addaction name="actionNetwork"/>
     <addaction name="actionApplications"/>
+    <addaction name="separator"/>
+    <addaction name="actionGoBack"/>
+    <addaction name="actionGoForward"/>
    </widget>
    <addaction name="menu_File"/>
    <addaction name="menu_Editw"/>
@@ -108,8 +148,11 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
-   <property name="windowTitle">
-    <string>toolBar</string>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
    </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -118,26 +161,29 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionNewTab"/>
-   <addaction name="actionHome"/>
-   <addaction name="actionUP"/>
+   <addaction name="actionGoBack"/>
+   <addaction name="actionGoForward"/>
+   <addaction name="actionGoUp"/>
    <addaction name="actionReload"/>
    <addaction name="actionGo"/>
   </widget>
-  <action name="actionUP">
+  <action name="actionGoUp">
    <property name="icon">
-    <iconset theme="go-up">
-     <normaloff/>
-    </iconset>
+    <iconset theme="go-up"/>
    </property>
    <property name="text">
-    <string>UP</string>
+    <string>Go Up</string>
+   </property>
+   <property name="toolTip">
+    <string>Go Up</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Up</string>
    </property>
   </action>
   <action name="actionHome">
    <property name="icon">
-    <iconset theme="user-home">
-     <normaloff/>
-    </iconset>
+    <iconset theme="user-home"/>
    </property>
    <property name="text">
     <string>Home</string>
@@ -145,9 +191,7 @@
   </action>
   <action name="actionReload">
    <property name="icon">
-    <iconset theme="view-refresh">
-     <normaloff/>
-    </iconset>
+    <iconset theme="view-refresh"/>
    </property>
    <property name="text">
     <string>Reload</string>
@@ -155,9 +199,7 @@
   </action>
   <action name="actionGo">
    <property name="icon">
-    <iconset theme="go-jump">
-     <normaloff/>
-    </iconset>
+    <iconset theme="go-jump"/>
    </property>
    <property name="text">
     <string>Go</string>
@@ -165,9 +207,7 @@
   </action>
   <action name="actionQuit">
    <property name="icon">
-    <iconset theme="application-exit">
-     <normaloff/>
-    </iconset>
+    <iconset theme="application-exit"/>
    </property>
    <property name="text">
     <string>Quit</string>
@@ -175,9 +215,7 @@
   </action>
   <action name="actionAbout">
    <property name="icon">
-    <iconset theme="help-about">
-     <normaloff/>
-    </iconset>
+    <iconset theme="help-about"/>
    </property>
    <property name="text">
     <string>&amp;About</string>
@@ -185,9 +223,7 @@
   </action>
   <action name="actionNewWin">
    <property name="icon">
-    <iconset theme="window-new">
-     <normaloff/>
-    </iconset>
+    <iconset theme="window-new"/>
    </property>
    <property name="text">
     <string>New Window</string>
@@ -206,9 +242,7 @@
   </action>
   <action name="actionComputer">
    <property name="icon">
-    <iconset theme="computer">
-     <normaloff/>
-    </iconset>
+    <iconset theme="computer"/>
    </property>
    <property name="text">
     <string>&amp;Computer</string>
@@ -216,9 +250,7 @@
   </action>
   <action name="actionTrash">
    <property name="icon">
-    <iconset theme="user-trash">
-     <normaloff/>
-    </iconset>
+    <iconset theme="user-trash"/>
    </property>
    <property name="text">
     <string>&amp;Trash</string>
@@ -231,9 +263,7 @@
   </action>
   <action name="actionDesktop">
    <property name="icon">
-    <iconset theme="user-desktop">
-     <normaloff/>
-    </iconset>
+    <iconset theme="user-desktop"/>
    </property>
    <property name="text">
     <string>&amp;Desktop</string>
@@ -241,9 +271,7 @@
   </action>
   <action name="actionAddToBookmarks">
    <property name="icon">
-    <iconset theme="list-add">
-     <normaloff/>
-    </iconset>
+    <iconset theme="list-add"/>
    </property>
    <property name="text">
     <string>&amp;Add to Bookmarks</string>
@@ -341,9 +369,7 @@
   </action>
   <action name="actionNewTab">
    <property name="icon">
-    <iconset theme="window-new">
-     <normaloff/>
-    </iconset>
+    <iconset theme="window-new"/>
    </property>
    <property name="text">
     <string>New Tab</string>
@@ -352,7 +378,49 @@
     <string>New Tab</string>
    </property>
   </action>
+  <action name="actionGoBack">
+   <property name="icon">
+    <iconset theme="go-previous"/>
+   </property>
+   <property name="text">
+    <string>Go Back</string>
+   </property>
+   <property name="toolTip">
+    <string>Go Back</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Left</string>
+   </property>
+  </action>
+  <action name="actionGoForward">
+   <property name="icon">
+    <iconset theme="go-next"/>
+   </property>
+   <property name="text">
+    <string>Go Forward</string>
+   </property>
+   <property name="toolTip">
+    <string>Go Forward</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Right</string>
+   </property>
+  </action>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Fm::SidePane</class>
+   <extends>QFrame</extends>
+   <header>sidepane.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QTabBar</class>
+   <extends>QWidget</extends>
+   <header>QTabBar</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

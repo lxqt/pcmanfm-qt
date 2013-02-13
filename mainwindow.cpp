@@ -20,11 +20,13 @@ MainWindow::MainWindow(FmPath* path) {
   ui.setupUi(this);
 
   // tabbed browsing interface
-  notebook = new QTabWidget(this);
-  notebook->setTabsClosable(true);
-  connect(notebook, SIGNAL(currentChanged(int)), SLOT(onCurrentChanged(int)));
-  connect(notebook, SIGNAL(tabCloseRequested(int)), SLOT(onTabCloseRequested(int)));
-  setCentralWidget(notebook);
+  ui.tabBar->setDocumentMode(true);
+  ui.tabBar->setTabsClosable(true);
+  ui.tabBar->setElideMode(Qt::ElideRight);
+  ui.tabBar->setExpanding(false);
+  connect(ui.tabBar, SIGNAL(currentChanged(int)), SLOT(onTabBarCurrentChanged(int)));
+  connect(ui.tabBar, SIGNAL(tabCloseRequested(int)), SLOT(onTabBarCloseRequested(int)));
+  connect(ui.stackedWidget, SIGNAL(widgetRemoved(int)), SLOT(onStackedWidgetWidgetRemoved(int)));
 
   // path bar
   pathEntry = new QLineEdit(this);
@@ -34,6 +36,13 @@ MainWindow::MainWindow(FmPath* path) {
   // add filesystem info to status bar
   fsInfoLabel = new QLabel(ui.statusbar);
   ui.statusbar->addPermanentWidget(fsInfoLabel);
+
+  // setup the splitter
+  ui.splitter->setStretchFactor(1, 1); // only the right pane can be stretched
+  QList<int> sizes;
+  sizes.append(150);
+  sizes.append(300);
+  ui.splitter->setSizes(sizes);
 
   // open home dir by default
   addTab(path ? path : fm_path_get_home());
@@ -53,10 +62,12 @@ void MainWindow::chdir(FmPath* path) {
 // add a new tab
 void MainWindow::addTab(FmPath* path) {
   TabPage* newPage = new TabPage(path, this);
+  int index = ui.stackedWidget->addWidget(newPage);
   connect(newPage, SIGNAL(titleChanged(QString)), SLOT(onTabPageTitleChanged(QString)));
   connect(newPage, SIGNAL(statusChanged(int,QString)), SLOT(onTabPageStatusChanged(int,QString)));
   connect(newPage, SIGNAL(fileClicked(int,FmFileInfo*)), SLOT(onTabPageFileClicked(int,FmFileInfo*)));
-  notebook->addTab(newPage, newPage->title());
+
+  ui.tabBar->insertTab(index, newPage->title());
 }
 
 void MainWindow::onPathEntryReturnPressed() {
@@ -67,7 +78,7 @@ void MainWindow::onPathEntryReturnPressed() {
   fm_path_unref(path);
 }
 
-void MainWindow::on_actionUP_triggered() {
+void MainWindow::on_actionGoUp_triggered() {
   FmPath* path = currentPage()->path();
   if(path) {
     FmPath* parent = fm_path_get_parent(path);
@@ -179,18 +190,23 @@ void MainWindow::on_actionThumbnailView_triggered() {
   currentPage()->setViewMode(Fm::FolderView::ThumbnailMode);
 }
 
-void MainWindow::onTabCloseRequested(int index) {
+void MainWindow::onTabBarCloseRequested(int index) {
   qDebug("tab closed");
-  if(notebook->count() == 1) { // this is the last one
-    destroy();
+  if(ui.tabBar->count() == 1) { // this is the last one
+    destroy(); // destroy the whole window
   }
   else {
-    notebook->removeTab(index);
+    QWidget* page = ui.stackedWidget->widget(index);
+    ui.stackedWidget->removeWidget(page);
+    // NOTE: we do not remove the tab here.
+    // it'll be donoe in onStackedWidgetWidgetRemoved()
+    // notebook->removeTab(index);
   }
 }
 
-void MainWindow::onCurrentChanged(int index) {
+void MainWindow::onTabBarCurrentChanged(int index) {
   qDebug("current changed");
+  ui.stackedWidget->setCurrentIndex(index);
   TabPage* tabPage = currentPage();
   if(tabPage) {
     setWindowTitle(tabPage->title());
@@ -200,12 +216,17 @@ void MainWindow::onCurrentChanged(int index) {
   }
 }
 
+void MainWindow::onStackedWidgetWidgetRemoved(int index) {
+  // need to remove associated tab from tabBar
+  ui.tabBar->removeTab(index);
+}
+
 void MainWindow::onTabPageTitleChanged(QString title) {
   TabPage* tabPage = reinterpret_cast<TabPage*>(sender());
-  int index = notebook->indexOf(tabPage);
+  int index = ui.stackedWidget->indexOf(tabPage);
   qDebug("index = %d\n", index);
   if(index >= 0)
-    notebook->setTabText(index, title);
+    ui.tabBar->setTabText(index, title);
 
   if(tabPage == currentPage())
     setWindowTitle(title);

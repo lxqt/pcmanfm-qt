@@ -29,28 +29,24 @@
 using namespace Fm;
 
 TabPage::TabPage(FmPath* path, QWidget* parent):
-    QSplitter(Qt::Horizontal, parent),
+    QWidget( parent),
     folder_ (NULL),
     folderModel_(NULL) {
 
-  placeView_ = new Fm::PlacesView(this);
-  addWidget(placeView_);
+  verticalLayout = new QVBoxLayout(this);
+  verticalLayout->setContentsMargins(0, 0, 0, 0);
 
   folderView_ = new Fm::FolderView(Fm::FolderView::DetailedListMode, this);
   folderView_->setIconSize(QSize(32, 32));
   // newView->setColumnWidth(Fm::FolderModel::ColumnName, 200);
   connect(folderView_, SIGNAL(clicked(int, FmFileInfo*)), SLOT(onViewClicked(int,FmFileInfo*)));
-  addWidget(folderView_);
-  setStretchFactor(1, 1); // only the right pane can be stretched
-  QList<int> sizes;
-  sizes.append(150);
-  sizes.append(300);
-  setSizes(sizes);
 
   folderModel_ = new Fm::FolderModel();
   folderModel_->sort(Fm::FolderModel::ColumnName);
   folderView_->setModel(folderModel_);
 
+  verticalLayout->addWidget(folderView_);
+  
   chdir(path);
 }
 
