@@ -28,7 +28,7 @@ PlacesView::PlacesView(QWidget* parent): QTreeView(parent) {
   setHeaderHidden(true);
   setIndentation(12);
   
-  connect(this, SIGNAL(clicked(QModelIndex)), SLOT(clicked(QModelIndex)));
+  connect(this, SIGNAL(clicked(QModelIndex)), SLOT(onClicked(QModelIndex)));
   
   setIconSize(QSize(24, 24));
   
@@ -37,9 +37,33 @@ PlacesView::PlacesView(QWidget* parent): QTreeView(parent) {
   expandAll();
 }
 
-void PlacesView::clicked(const QModelIndex& index) {
-  qDebug("clicked!!");
+PlacesView::~PlacesView() {
+  if(currentPath_)
+    fm_path_unref(currentPath_);
 }
+
+void PlacesView::onClicked(const QModelIndex& index) {
+  PlacesModel::Item* item = reinterpret_cast<PlacesModel::Item*>(model_->itemFromIndex(index));
+  if(item) {
+    FmPath* path = item->path();
+    if(path) {
+      Q_EMIT chdir(0, path);
+    }
+  }
+}
+
+void PlacesView::setCurrentPath(FmPath* path) {
+  if(currentPath_)
+    fm_path_unref(currentPath_);
+  if(path) {
+    currentPath_ = fm_path_ref(path);
+    // TODO: search for item with the path in model_ and select it.
+    
+  }
+  else
+    currentPath_ = NULL;
+}
+
 
 void PlacesView::dragMoveEvent(QDragMoveEvent* event) {
   QTreeView::dragMoveEvent(event);
@@ -53,11 +77,6 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
   QAbstractScrollArea::contextMenuEvent(event);
 }
 
-PlacesView::~PlacesView() {
-}
 
-void PlacesView::chdir(FmPath* path) {
-  
-}
 
 #include "placesview.moc"

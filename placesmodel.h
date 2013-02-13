@@ -31,36 +31,52 @@ namespace Fm {
 class PlacesModel : public QStandardItemModel
 {
 Q_OBJECT
-
-protected:
-
+public:
   // model item
   class Item : public QStandardItem {
     public:
-      Item();
-      Item(QIcon icon, QString title);
-      Item(const char* iconName, QString title);
-      Item(FmIcon* icon, QString title);
-      Item(GIcon* gicon, QString title);
+      Item(FmPath* path = 0);
+      Item(QIcon icon, QString title, FmPath* path = 0);
+      Item(const char* iconName, QString title, FmPath* path = 0);
+      Item(FmIcon* icon, QString title, FmPath* path = 0);
+      Item(GIcon* gicon, QString title, FmPath* path = 0);
       ~Item();
 
+      FmIcon* icon() {
+	return icon_;
+      }
       void setIcon(FmIcon* icon);
 
       FmFileInfo* fileInfo() {
 	return fileInfo_;
       }
-      
+      void setFileInfo(FmFileInfo* fileInfo);
+
       FmPath* path() {
-	return fm_file_info_get_path(fileInfo_);
+	return path_;
       }
+      void setPath(FmPath* path);
 
       QVariant data ( int role = Qt::UserRole + 1 ) const;
 
     private:
       FmIcon* icon_;
+      FmPath* path_;
       FmFileInfo* fileInfo_;
   };
 
+  class MountableItem : public Item {
+    private:
+      GObject* mountable; // GVolume or GMount
+  };
+
+  class BookmarkItem : public Item {
+    // BookmarkItem();
+    // virtual ~BookmarkItem();
+    private:
+      FmBookmarkItem* bookmarkItem;
+  };
+  
 public:
   explicit PlacesModel(QObject* parent = 0);
   virtual ~PlacesModel();

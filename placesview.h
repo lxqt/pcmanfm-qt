@@ -36,21 +36,29 @@ public:
   explicit PlacesView(QWidget* parent = 0);
   virtual ~PlacesView();
 
-  void chdir(FmPath* path);
+  void setCurrentPath(FmPath* path);
+  FmPath* currentPath() {
+    return currentPath_;
+  }
+
+Q_SIGNALS:
+  void chdir(int type, FmPath* path);
 
 protected Q_SLOTS:
-  void clicked(const QModelIndex & index);
-  void dragMoveEvent(QDragMoveEvent* event);
-  void dropEvent(QDropEvent* event);
-  void contextMenuEvent(QContextMenuEvent* event);
+  void onClicked(const QModelIndex & index);
 
 protected:
   void drawBranches ( QPainter * painter, const QRect & rect, const QModelIndex & index ) const {
     // override this method to inhibit drawing of the branch grid lines by Qt.
   }
 
+  virtual void dragMoveEvent(QDragMoveEvent* event);
+  virtual void dropEvent(QDropEvent* event);
+  virtual void contextMenuEvent(QContextMenuEvent* event);
+
 private:
   PlacesModel* model_;
+  FmPath* currentPath_;
 };
 
 }

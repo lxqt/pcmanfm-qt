@@ -160,7 +160,7 @@ QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole
 
   switch(role) {
     case Qt::ToolTipRole:
-      break;
+      //break;
     case Qt::DisplayRole:
     {
       switch(index.column()) {

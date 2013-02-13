@@ -24,44 +24,51 @@
 
 using namespace Fm;
 
-PlacesModel::Item::Item():
+PlacesModel::Item::Item(FmPath* path):
   QStandardItem(),
   icon_(NULL),
   fileInfo_(NULL) {
+  path_ = path ? fm_path_ref(path) : NULL;
 }
 
-PlacesModel::Item::Item(const char* iconName, QString title):
+PlacesModel::Item::Item(const char* iconName, QString title, FmPath* path):
   QStandardItem(title),
   icon_(NULL),
   fileInfo_(NULL) {
+  path_ = path ? fm_path_ref(path) : NULL;
   FmIcon* icon = fm_icon_from_name(iconName);
   setIcon(icon);
   fm_icon_unref(icon);
 }
 
-PlacesModel::Item::Item(FmIcon* icon, QString title):
+PlacesModel::Item::Item(FmIcon* icon, QString title, FmPath* path):
   QStandardItem(title),
   icon_(NULL),
   fileInfo_(NULL) {
+  path_ = path ? fm_path_ref(path) : NULL;
   setIcon(icon);
 }
 
-PlacesModel::Item::Item(GIcon* gicon, QString title):
+PlacesModel::Item::Item(GIcon* gicon, QString title, FmPath* path):
   QStandardItem(title),
   icon_(NULL),
   fileInfo_(NULL) {
+  path_ = path ? fm_path_ref(path) : NULL;
   FmIcon* icon = fm_icon_from_gicon(gicon);
   setIcon(icon);
   fm_icon_unref(icon);
 }
 
-PlacesModel::Item::Item(QIcon icon, QString title):
+PlacesModel::Item::Item(QIcon icon, QString title, FmPath* path):
   QStandardItem(icon, title),
   icon_(NULL),
   fileInfo_(NULL) {
+  path_ = path ? fm_path_ref(path) : NULL;
 }
 
 PlacesModel::Item::~Item() {
+  if(path_)
+    fm_path_unref(path_);
   if(icon_)
     fm_icon_unref(icon_);
   if(fileInfo_)
@@ -78,6 +85,13 @@ void PlacesModel::Item::setIcon(FmIcon* icon) {
     icon_ = NULL;
 }
 
+void PlacesModel::Item::setPath(FmPath* path) {
+  if(path_)
+    fm_path_unref(path_);
+  path_ = path ? fm_path_ref(path) : NULL;
+}
+
+
 QVariant PlacesModel::Item::data(int role) const {
   // we use a QPixmap from FmIcon cache rather than QIcon object for decoration role.
   if(role == Qt::DecorationRole) {
@@ -89,6 +103,17 @@ QVariant PlacesModel::Item::data(int role) const {
   return QStandardItem::data(role);
 }
 
+void PlacesModel::Item::setFileInfo(FmFileInfo* fileInfo) {
+  if(fileInfo_)
+    fm_file_info_unref(fileInfo_);
+
+  if(fileInfo) {
+    fileInfo_ = fm_file_info_ref(fileInfo);
+  }
+  else
+    fileInfo_ = NULL;
+}
+
 
 PlacesModel::PlacesModel(QObject* parent) : QStandardItemModel(parent) {
   QStandardItem* rootItem;
@@ -98,22 +123,26 @@ PlacesModel::PlacesModel(QObject* parent) : QStandardItemModel(parent) {
   rootItem->setSelectable(false);
   appendRow(rootItem);
   
-  item = new Item("user-home", g_get_user_name());
+  item = new Item("user-home", g_get_user_name(), fm_path_get_home());
   rootItem->appendRow(item);
 
-  item = new Item("user-desktop", tr("Desktop"));
+  item = new Item("user-desktop", tr("Desktop"), fm_path_get_desktop());
   rootItem->appendRow(item);
 
-  item = new Item("user-trash", tr("Trash"));
+  item = new Item("user-trash", tr("Trash"), fm_path_get_trash());
   rootItem->appendRow(item);
 
-  item = new Item("computer", tr("Computer"));
+  FmPath* path = fm_path_new_for_uri("computer:///");
+  item = new Item("computer", tr("Computer"), path);
+  fm_path_unref(path);
   rootItem->appendRow(item);
 
-  item = new Item("system-software-install", tr("Applications"));
+  item = new Item("system-software-install", tr("Applications"), fm_path_get_apps_menu());
   rootItem->appendRow(item);
 
+  path = fm_path_new_for_uri("network:///");
   item = new Item("network", tr("Network"));
+  fm_path_unref(path);
   rootItem->appendRow(item);
 
   rootItem = new QStandardItem("Devices");
@@ -176,7 +205,7 @@ PlacesModel::PlacesModel(QObject* parent) : QStandardItemModel(parent) {
   l = fm_bookmarks_get_all(bookmarks);
   for(; l; l = l->next) {
     FmBookmarkItem* bm_item = (FmBookmarkItem*)l->data;
-    item = new Item("folder", QString::fromUtf8(bm_item->name));
+    item = new Item("folder", QString::fromUtf8(bm_item->name), bm_item->path);
     rootItem->appendRow(item);
   }
 }
