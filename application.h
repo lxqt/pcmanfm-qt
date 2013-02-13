@@ -34,7 +34,7 @@ protected:
 
   
 private:
-  IconTheme iconTheme;
+  IconTheme* iconTheme;
 };
 
 }

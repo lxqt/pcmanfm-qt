@@ -5,10 +5,10 @@
 
 int main(int argc, char** argv)
 {
-  // QIcon::setThemeName("lubuntu");
-  QIcon::setThemeName("elementary");
   QApplication app(argc, argv);
   Fm::Application fmapp;
+  // QIcon::setThemeName("lubuntu");
+  QIcon::setThemeName("elementary");
   Fm::MainWindow mainWin;
   mainWin.resize(640, 480);
   mainWin.show();

@@ -29,6 +29,8 @@ Application::Application() {
     theApp = this;
     g_type_init();
     fm_init(NULL);
+    
+    iconTheme = new IconTheme();
   }
   else {
     // TODO: only single instance is allowed, show a warning
@@ -36,6 +38,8 @@ Application::Application() {
 }
 
 Application::~Application() {
+  if(iconTheme)
+    delete iconTheme;
   fm_finalize();
 }
 
