@@ -49,12 +49,15 @@ set(pcmanfm_SRCS
   placesview.cpp
   placesmodel.cpp
   mountoperation.cpp
+  fileoperation.cpp
+  fileoperationdialog.cpp
 #  ${qmodeltest_SRCS}
 )
 
 set(pcmanfm_UIS
   main-win.ui
   file-props.ui
+  file-operation-dialog.ui
   mount-operation-password.ui
   about.ui
 )

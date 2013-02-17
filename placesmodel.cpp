@@ -61,6 +61,12 @@ PlacesModel::Item::Item(QIcon icon, QString title, FmPath* path):
   path_ = path ? fm_path_ref(path) : NULL;
 }
 
+PlacesModel::Item::Item(QString title, FmPath* path):
+  QStandardItem(title),
+  fileInfo_(NULL) {
+  path_ = path ? fm_path_ref(path) : NULL;
+}
+
 PlacesModel::Item::~Item() {
   if(path_)
     fm_path_unref(path_);
@@ -92,7 +98,11 @@ void PlacesModel::Item::setFileInfo(FmFileInfo* fileInfo) {
 }
 
 
-PlacesModel::PlacesModel(QObject* parent) : QStandardItemModel(parent) {
+PlacesModel::PlacesModel(QObject* parent):
+  QStandardItemModel(parent),
+  showTrash_(true),
+  showApplications_(true),
+  showDesktop_(true) {
   QStandardItem* rootItem;
   Item *item;
   rootItem = new QStandardItem("Places");
@@ -151,12 +161,8 @@ PlacesModel::PlacesModel(QObject* parent) : QStandardItemModel(parent) {
   GList* l;
   for(l = vols; l; l = l->next) {
     GVolume* volume = G_VOLUME(l->data);
-    // add_volume_or_mount(self, G_OBJECT(vol), job);
-    GIcon* gicon = g_volume_get_icon(volume);
-    item = new Item(gicon, QString::fromUtf8(g_volume_get_name(volume)));
-    item->setEditable(false);
+    item = new VolumeItem(volume);
     rootItem->appendRow(item);
-    g_object_unref(gicon);
     g_object_unref(volume);
   }
   g_list_free(vols);
@@ -169,12 +175,8 @@ PlacesModel::PlacesModel(QObject* parent) : QStandardItemModel(parent) {
     if(volume)
       g_object_unref(volume);
     else { /* network mounts or others */
-      GIcon* gicon = g_mount_get_icon(mount);
-      item = new Item(gicon, QString::fromUtf8(g_mount_get_name(mount)));
-      item->setEditable(false);
+      item = new MountItem(mount);
       rootItem->appendRow(item);
-      g_object_unref(gicon);
-      g_object_unref(mount);
     }
     g_object_unref(mount);
   }
@@ -190,8 +192,7 @@ PlacesModel::PlacesModel(QObject* parent) : QStandardItemModel(parent) {
   l = fm_bookmarks_get_all(bookmarks);
   for(; l; l = l->next) {
     FmBookmarkItem* bm_item = (FmBookmarkItem*)l->data;
-    item = new Item("folder", QString::fromUtf8(bm_item->name), bm_item->path);
-    item->setEditable(true);
+    item = new BookmarkItem(bm_item);
     rootItem->appendRow(item);
   }
 }
@@ -202,6 +203,79 @@ PlacesModel::~PlacesModel() {
   if(volumeMonitor)
     g_object_unref(volumeMonitor);
 }
+
+PlacesModel::BookmarkItem::BookmarkItem(FmBookmarkItem* bm_item):
+  Item("folder", QString::fromUtf8(bm_item->name), bm_item->path),
+  bookmarkItem_(fm_bookmark_item_ref(bm_item)) {
+  setEditable(true);
+}
+
+PlacesModel::VolumeItem::VolumeItem(GVolume* volume):
+  Item(QString::fromUtf8(g_volume_get_name(volume))),
+  volume_(reinterpret_cast<GVolume*>(g_object_ref(volume))) {
+
+  // set icon
+  GIcon* gicon = g_volume_get_icon(volume);
+  setIcon(IconTheme::icon(gicon));
+  g_object_unref(gicon);
+  setEditable(false);
+
+  // set dir path
+  GMount* mount = g_volume_get_mount(volume);
+  if(mount) {
+    GFile* mount_root = g_mount_get_root(mount);
+    FmPath* mount_path = fm_path_new_for_gfile(mount_root);
+    setPath(mount_path);
+    fm_path_unref(mount_path);
+    g_object_unref(mount_root);
+    g_object_unref(mount);
+  }
+}
+
+bool PlacesModel::VolumeItem::isMounted() {
+  GMount* mount = g_volume_get_mount(volume_);
+  if(mount)
+    g_object_unref(mount);
+  return mount != NULL ? true : false;
+}
+
+
+PlacesModel::MountItem::MountItem(GMount* mount):
+  Item(QString::fromUtf8(g_mount_get_name(mount))),
+  mount_(reinterpret_cast<GMount*>(mount)) {
+
+  // set path
+  GFile* mount_root = g_mount_get_root(mount);
+  FmPath* mount_path = fm_path_new_for_gfile(mount_root);
+  setPath(mount_path);
+  fm_path_unref(mount_path);
+  g_object_unref(mount_root);
+
+  // set icon
+  GIcon* gicon = g_mount_get_icon(mount);
+  setIcon(IconTheme::icon(gicon));
+  g_object_unref(gicon);
+  setEditable(false);
+}
+
+void PlacesModel::setShowApplications(bool show) {
+  if(showApplications_ != show) {
+    showApplications_ = show;
+  }
+}
+
+void PlacesModel::setShowDesktop(bool show) {
+  if(showDesktop_ != show) {
+    showDesktop_ = show;
+  }
+}
+
+void PlacesModel::setShowTrash(bool show) {
+  if(showTrash_ != show) {
+    showTrash_ = show;
+  }
+}
+
 
 #if 0
 void PlacesModel::addItem(GVolume* volume, FmFileInfoJob* job) {

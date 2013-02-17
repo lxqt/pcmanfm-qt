@@ -48,6 +48,7 @@ public:
       Item(const char* iconName, QString title, FmPath* path = 0);
       Item(FmIcon* icon, QString title, FmPath* path = 0);
       Item(GIcon* gicon, QString title, FmPath* path = 0);
+      Item(QString title, FmPath* path = 0);
       ~Item();
 
       FmFileInfo* fileInfo() {
@@ -75,8 +76,14 @@ public:
     public:
       VolumeItem(GVolume* volume);
       bool isMounted();
+      bool canEject() {
+        return g_volume_can_eject(volume_);
+      }
       int type() {
 	return ItemTypeVolume;
+      }
+      GVolume* volume() {
+        return volume_;
       }
     private:
       GVolume* volume_;
@@ -85,7 +92,6 @@ public:
   class MountItem : public Item {
     public:
       MountItem(GMount* mount);
-      bool isMounted();
       int type() {
 	return ItemTypeMount;
       }
@@ -98,13 +104,11 @@ public:
       int type() {
 	return ItemTypeBookmark;
       }
-    BookmarkItem(FmBookmarkItem* item) {
-      bookmarkItem_ = fm_bookmark_item_ref(item);
-    }
-    virtual ~BookmarkItem() {
-      if(bookmarkItem_)
-	fm_bookmark_item_unref(bookmarkItem_);
-    }
+      BookmarkItem(FmBookmarkItem* bm_item);
+      virtual ~BookmarkItem() {
+        if(bookmarkItem_)
+          fm_bookmark_item_unref(bookmarkItem_);
+      }
     private:
       FmBookmarkItem* bookmarkItem_;
   };
@@ -112,7 +116,23 @@ public:
 public:
   explicit PlacesModel(QObject* parent = 0);
   virtual ~PlacesModel();
-/*
+
+  bool showTrash() {
+    return showTrash_;
+  }
+  void setShowTrash(bool show);
+
+  bool showApplications() {
+    return showApplications_;
+  }
+  void setShowApplications(bool show);
+
+  bool showDesktop() {
+    return showDesktop_;
+  }
+  void setShowDesktop(bool show);
+
+  /*
   virtual QModelIndex index(int row, int column = 0, const QModelIndex& parent = QModelIndex()) const;
   virtual bool dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent);
   virtual QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const;
@@ -125,6 +145,9 @@ private:
   FmBookmarks* bookmarks;
   GVolumeMonitor* volumeMonitor;
   QList<FmJob*> jobs;
+  bool showTrash_;
+  bool showApplications_;
+  bool showDesktop_;
 };
 
 }

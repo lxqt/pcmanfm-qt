@@ -45,11 +45,21 @@ PlacesView::~PlacesView() {
 }
 
 void PlacesView::onClicked(const QModelIndex& index) {
+  if(!index.parent().isValid()) // ignore root items
+    return;
+
   PlacesModel::Item* item = reinterpret_cast<PlacesModel::Item*>(model_->itemFromIndex(index));
   if(item) {
     FmPath* path = item->path();
     if(!path) {
-      // check if mounting volumes is needed?
+      // check if mounting volumes is needed
+      if(item->type() == PlacesModel::ItemTypeVolume) {
+        PlacesModel::VolumeItem* volumeItem = reinterpret_cast<PlacesModel::VolumeItem*>(item);
+        if(!volumeItem->isMounted()) {
+          // TODO: Mount the volume
+          return;
+        }
+      }
     }
     if(path) {
       Q_EMIT chdirRequested(0, path);

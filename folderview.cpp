@@ -88,7 +88,8 @@ void FolderView::setViewMode(ViewMode _mode) {
     treeView->setItemsExpandable(false);
     treeView->setRootIsDecorated(false);
     treeView->header()->setResizeMode(0, QHeaderView::ResizeToContents); // QHeaderView::Stretch);
-
+    treeView->setAllColumnsShowFocus(false);
+    // treeView->setSelectionBehavior(QAbstractItemView::SelectItems);
     iconSize_ = QSize(fm_config->small_icon_size, fm_config->small_icon_size); // FIXME: should we use FmConfig?
   }
   else {
