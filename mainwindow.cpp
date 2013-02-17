@@ -30,6 +30,9 @@ MainWindow::MainWindow(FmPath* path) {
   connect(ui.tabBar, SIGNAL(tabCloseRequested(int)), SLOT(onTabBarCloseRequested(int)));
   connect(ui.stackedWidget, SIGNAL(widgetRemoved(int)), SLOT(onStackedWidgetWidgetRemoved(int)));
 
+  // side pane
+  connect(ui.sidePane, SIGNAL(chdirRequested(int,FmPath*)), SLOT(onSidePaneChdirRequested(int,FmPath*)));
+  
   // path bar
   pathEntry = new QLineEdit(this);
   connect(pathEntry, SIGNAL(returnPressed()), SLOT(onPathEntryReturnPressed()));
@@ -290,5 +293,10 @@ void MainWindow::onPopupMenuHide() {
   //delete the menu;
   menu->deleteLater();
 }
+
+void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {
+  chdir(path);
+}
+
 
 #include "mainwindow.moc"

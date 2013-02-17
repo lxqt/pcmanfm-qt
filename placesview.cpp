@@ -46,8 +46,11 @@ void PlacesView::onClicked(const QModelIndex& index) {
   PlacesModel::Item* item = reinterpret_cast<PlacesModel::Item*>(model_->itemFromIndex(index));
   if(item) {
     FmPath* path = item->path();
+    if(!path) {
+      // check if mounting volumes is needed?
+    }
     if(path) {
-      Q_EMIT chdir(0, path);
+      Q_EMIT chdirRequested(0, path);
     }
   }
 }

@@ -32,6 +32,14 @@ class PlacesModel : public QStandardItemModel
 {
 Q_OBJECT
 public:
+  
+  enum ItemType {
+    ItemTypePlaces = QStandardItem::UserType + 1,
+    ItemTypeVolume,
+    ItemTypeMount,
+    ItemTypeBookmark
+  };
+
   // model item
   class Item : public QStandardItem {
     public:
@@ -53,22 +61,52 @@ public:
       void setPath(FmPath* path);
 
       QVariant data ( int role = Qt::UserRole + 1 ) const;
+      
+      int type() {
+	return ItemTypePlaces;
+      }
 
     private:
       FmPath* path_;
       FmFileInfo* fileInfo_;
   };
 
-  class MountableItem : public Item {
+  class VolumeItem : public Item {
+    public:
+      VolumeItem(GVolume* volume);
+      bool isMounted();
+      int type() {
+	return ItemTypeVolume;
+      }
     private:
-      GObject* mountable; // GVolume or GMount
+      GVolume* volume_;
+  };
+
+  class MountItem : public Item {
+    public:
+      MountItem(GMount* mount);
+      bool isMounted();
+      int type() {
+	return ItemTypeMount;
+      }
+    private:
+      GMount* mount_;
   };
 
   class BookmarkItem : public Item {
-    // BookmarkItem();
-    // virtual ~BookmarkItem();
+    public:
+      int type() {
+	return ItemTypeBookmark;
+      }
+    BookmarkItem(FmBookmarkItem* item) {
+      bookmarkItem_ = fm_bookmark_item_ref(item);
+    }
+    virtual ~BookmarkItem() {
+      if(bookmarkItem_)
+	fm_bookmark_item_unref(bookmarkItem_);
+    }
     private:
-      FmBookmarkItem* bookmarkItem;
+      FmBookmarkItem* bookmarkItem_;
   };
   
 public:

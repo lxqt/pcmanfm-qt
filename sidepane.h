@@ -34,6 +34,11 @@ public:
   explicit SidePane(QWidget* parent = 0);
   virtual ~SidePane();
 
+Q_SIGNALS:
+  void chdirRequested(int type, FmPath* path);
+
+protected Q_SLOTS:
+  void onPlacesViewChdirRequested(int type, FmPath* path);
   
 private:
   PlacesView* placesView_;

@@ -68,6 +68,7 @@ public:
     FmFileInfo* info;
   };
 
+  /*
   class Sorter {
   public:
     Sorter(FolderModel* model) :  model_(model) {
@@ -75,6 +76,7 @@ public:
     inline bool operator()(const Item &t1, const Item &t2) const;
     FolderModel* model_;
   };
+  */
   
 public:
   FolderModel();
@@ -92,7 +94,7 @@ public:
   QVariant headerData(int section, Qt::Orientation orientation, int role) const;
   QModelIndex index(int row, int column, const QModelIndex & parent = QModelIndex()) const;
   QModelIndex parent ( const QModelIndex & index ) const;
-  void sort(int column, Qt::SortOrder order = Qt::AscendingOrder);
+  // void sort(int column, Qt::SortOrder order = Qt::AscendingOrder);
 
 protected:
   static void onStartLoading(FmFolder* folder, gpointer user_data);

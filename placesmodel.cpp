@@ -99,27 +99,33 @@ PlacesModel::PlacesModel(QObject* parent) : QStandardItemModel(parent) {
   rootItem->setEditable(false);
   rootItem->setSelectable(false);
   appendRow(rootItem);
-  
+
   item = new Item("user-home", g_get_user_name(), fm_path_get_home());
+  item->setEditable(false);
   rootItem->appendRow(item);
 
   item = new Item("user-desktop", tr("Desktop"), fm_path_get_desktop());
+  item->setEditable(false);
   rootItem->appendRow(item);
 
   item = new Item("user-trash", tr("Trash"), fm_path_get_trash());
+  item->setEditable(false);
   rootItem->appendRow(item);
 
   FmPath* path = fm_path_new_for_uri("computer:///");
   item = new Item("computer", tr("Computer"), path);
   fm_path_unref(path);
+  item->setEditable(false);
   rootItem->appendRow(item);
 
   item = new Item("system-software-install", tr("Applications"), fm_path_get_apps_menu());
+  item->setEditable(false);
   rootItem->appendRow(item);
 
   path = fm_path_new_for_uri("network:///");
   item = new Item("network", tr("Network"));
   fm_path_unref(path);
+  item->setEditable(false);
   rootItem->appendRow(item);
 
   rootItem = new QStandardItem("Devices");
@@ -148,6 +154,7 @@ PlacesModel::PlacesModel(QObject* parent) : QStandardItemModel(parent) {
     // add_volume_or_mount(self, G_OBJECT(vol), job);
     GIcon* gicon = g_volume_get_icon(volume);
     item = new Item(gicon, QString::fromUtf8(g_volume_get_name(volume)));
+    item->setEditable(false);
     rootItem->appendRow(item);
     g_object_unref(gicon);
     g_object_unref(volume);
@@ -164,6 +171,7 @@ PlacesModel::PlacesModel(QObject* parent) : QStandardItemModel(parent) {
     else { /* network mounts or others */
       GIcon* gicon = g_mount_get_icon(mount);
       item = new Item(gicon, QString::fromUtf8(g_mount_get_name(mount)));
+      item->setEditable(false);
       rootItem->appendRow(item);
       g_object_unref(gicon);
       g_object_unref(mount);
@@ -183,6 +191,7 @@ PlacesModel::PlacesModel(QObject* parent) : QStandardItemModel(parent) {
   for(; l; l = l->next) {
     FmBookmarkItem* bm_item = (FmBookmarkItem*)l->data;
     item = new Item("folder", QString::fromUtf8(bm_item->name), bm_item->path);
+    item->setEditable(true);
     rootItem->appendRow(item);
   }
 }

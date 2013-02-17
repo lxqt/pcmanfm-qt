@@ -47,10 +47,11 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   connect(folderView_, SIGNAL(clicked(int, FmFileInfo*)), SLOT(onViewClicked(int,FmFileInfo*)));
 
   folderModel_ = new Fm::FolderModel();
-  folderModel_->sort(Fm::FolderModel::ColumnName);
+  // folderModel_->sort(Fm::FolderModel::ColumnName);
 
   proxyModel_->setSourceModel(folderModel_);
-  // folderView_->setModel(folderModel_);
+  proxyModel_->sort(Fm::FolderModel::ColumnName);
+// folderView_->setModel(folderModel_);
   // FIXME: this is very dirty
   folderView_->setModel(proxyModel_);
 
@@ -193,10 +194,10 @@ void TabPage::freeFolder() {
 }
 
 QString TabPage::formatStatusText() {
-  if(folderModel_ && folder_) {
+  if(proxyModel_ && folder_) {
       FmFileInfoList* files = fm_folder_get_files(folder_);
       int total_files = fm_file_info_list_get_length(files);
-      int shown_files = folderModel_->rowCount();
+      int shown_files = proxyModel_->rowCount();
       int hidden_files = total_files - shown_files;
       QString text = tr("%n item(s)", "", shown_files);
       if(hidden_files > 0)

@@ -42,7 +42,7 @@ public:
   }
 
 Q_SIGNALS:
-  void chdir(int type, FmPath* path);
+  void chdirRequested(int type, FmPath* path);
 
 protected Q_SLOTS:
   void onClicked(const QModelIndex & index);

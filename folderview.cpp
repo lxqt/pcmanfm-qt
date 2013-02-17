@@ -132,6 +132,8 @@ void FolderView::setViewMode(ViewMode _mode) {
 
 void FolderView::setIconSize(QSize size) {
   iconSize_ = size;
+  if(view)
+    view->setIconSize(size);
   if(model_) {
     reinterpret_cast<FolderModel*>(model_->sourceModel())->setIconSize(size.width());
   }

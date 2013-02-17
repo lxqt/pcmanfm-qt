@@ -22,11 +22,11 @@
 #include <libfm/fm.h>
 #include <QList>
 #include <QIcon>
-#include <iostream>
 
 using namespace Fm;
 
 FmIcon* IconTheme::fallbackFmIcon = NULL;
+QIcon* IconTheme::fallbackIcon = NULL;
 
 static void fmIconDataDestroy(gpointer data) {
   QIcon* picon = reinterpret_cast<QIcon*>(data);
@@ -38,16 +38,38 @@ IconTheme::IconTheme() {
   fm_icon_set_user_data_destroy(reinterpret_cast<GDestroyNotify>(fmIconDataDestroy));
 
   // get fallback icon
-  if(!fallbackFmIcon) {
+  if(!fallbackIcon) {
+    // NOTE & FIXME: this does not work!!
+    // When ctor of IconTheme is called, QIcon::setThemeName() is not yet called.
+    // So the fallback icon we get is always NULL.
+    fallbackIcon = new QIcon();
+    /*
     FmMimeType* mime_type = fm_mime_type_from_name("application/octet-stream");
     fallbackFmIcon = fm_mime_type_get_icon(mime_type);
+    if(fallbackFmIcon) {
+      fm_icon_ref(fallbackFmIcon);
+      *fallbackIcon = icon(fallbackFmIcon);
+    }
     fm_mime_type_unref(mime_type);
+    */
+    if(fallbackIcon->isNull()) { // if we still can't get a fallback icon
+      /*
+      if(fallbackFmIcon) {
+	fm_icon_unref(fallbackFmIcon);
+	fallbackFmIcon = NULL;
+      }
+      */
+      *fallbackIcon = QIcon::fromTheme("unknown");
+      qDebug("isNull: %d", fallbackIcon->isNull());
+    }
   }
 }
 
 IconTheme::~IconTheme() {
   if(fallbackFmIcon)
     fm_icon_unref(fallbackFmIcon);
+  if(fallbackIcon)
+    delete fallbackIcon;
 }
 
 QIcon IconTheme::convertFromGIcon(GIcon* gicon) {
@@ -55,6 +77,7 @@ QIcon IconTheme::convertFromGIcon(GIcon* gicon) {
     const gchar * const * names = g_themed_icon_get_names(G_THEMED_ICON(gicon));
     const gchar * const * name;
     for(name = names; *name; ++name) {
+      qDebug("icon name=%s", *name);
       QString qname = *name;
       QIcon qicon = QIcon::fromTheme(qname);
       if(!qicon.isNull()) {
@@ -69,7 +92,7 @@ QIcon IconTheme::convertFromGIcon(GIcon* gicon) {
     g_free(fpath);
     return QIcon(path);
   }
-  return QIcon();
+  return *fallbackIcon;
 }
 
 
@@ -95,6 +118,6 @@ static QIcon IconTheme::icon(GIcon* gicon) {
     // we do not map GFileIcon to FmIcon deliberately.
     return convertFromGIcon(gicon);
   }
-  return QIcon();
+  return *fallbackIcon;
 }
 

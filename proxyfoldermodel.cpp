@@ -48,4 +48,10 @@ bool ProxyFolderModel::filterAcceptsRow(int source_row, const QModelIndex & sour
   return true;
 }
 
+bool ProxyFolderModel::lessThan(const QModelIndex& left, const QModelIndex& right) const {
+  
+  return QSortFilterProxyModel::lessThan(left, right);
+}
+
+
 #include "proxyfoldermodel.moc"

@@ -37,6 +37,9 @@ namespace Fm {
 // Hence maybe we should not cache too many pixmaps, I guess?
 // Let's have Qt do its work and only translate GIcon to QIcon here.
 
+// Nice article about QPixmap from KDE: http://techbase.kde.org/Development/Tutorials/Graphics/Performance
+
+
 class IconTheme
 {
 public:
@@ -52,6 +55,7 @@ protected:
   static QIcon convertFromGIcon(GIcon* gicon);
 
   static FmIcon* fallbackFmIcon;
+  static QIcon* fallbackIcon;
 };
 
 }

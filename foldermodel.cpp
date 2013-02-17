@@ -259,6 +259,9 @@ QList<FolderModel::Item>::iterator FolderModel::findItemByName(const char* name,
   return items.end();
 }
 
+#if 0
+// we do the sorting in ProxyFolderModel instead.
+
 bool FolderModel::Sorter::operator()(const Item &t1, const Item &t2) const {
   // FIXME: using a switch here is inefficient.
   // Having difffernt sorter function objects for different sort column is better.
@@ -315,6 +318,7 @@ void FolderModel::sort(int column, Qt::SortOrder order = Qt::AscendingOrder) {
   
   Q_EMIT layoutChanged();
 }
+#endif
 
 void FolderModel::setIconSize(int size) {
   if(size != iconSize_) {

@@ -26,11 +26,16 @@ SidePane::SidePane(QWidget* parent): QFrame(parent) {
   verticalLayout = new QVBoxLayout(this);
   verticalLayout->setContentsMargins(0, 0, 0, 0);
   placesView_ = new Fm::PlacesView(this);
+  connect(placesView_, SIGNAL(chdirRequested(int,FmPath*)), SLOT(onPlacesViewChdirRequested(int,FmPath*)));
   verticalLayout->addWidget(placesView_);
 }
 
 SidePane::~SidePane() {
 
+}
+
+void SidePane::onPlacesViewChdirRequested(int type, FmPath* path) {
+  Q_EMIT chdirRequested(type, path);
 }
 
 #include "sidepane.moc"

@@ -84,6 +84,7 @@ protected Q_SLOTS:
   void onTabPageFileClicked(int type, FmFileInfo* fileInfo);
   void onPopupMenuHide();
 
+  void onSidePaneChdirRequested(int type, FmPath* path);
 };
 
 }

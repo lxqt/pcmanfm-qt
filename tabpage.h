@@ -58,8 +58,10 @@ public:
   }
 
   void sort(int col, Qt::SortOrder order = Qt::AscendingOrder) {
-    if(folderModel_)
-      folderModel_->sort(col, order);
+    // if(folderModel_)
+    //  folderModel_->sort(col, order);
+    if(proxyModel_)
+      proxyModel_->sort(col, order);
   }
 
   bool showHidden() {

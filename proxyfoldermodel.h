@@ -25,6 +25,8 @@
 
 namespace Fm {
 
+// a proxy model used to sort and filter FolderModel
+
 class ProxyFolderModel : public QSortFilterProxyModel
 {
 Q_OBJECT
@@ -40,6 +42,7 @@ public:
 
 protected:
   bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) const;
+  bool lessThan ( const QModelIndex & left, const QModelIndex & right ) const;
 
 private:
   bool showHidden_;
