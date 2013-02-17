@@ -148,7 +148,6 @@ void FileMenu::onApplicationTriggered(bool checked) {
 }
 
 void FileMenu::onFilePropertiesTriggered(bool checked) {
-  qDebug("prop");
   FilePropsDialog dlg(files_, this);
   dlg.exec();
 }

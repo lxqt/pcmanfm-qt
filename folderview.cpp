@@ -159,7 +159,7 @@ void FolderView::setIconSize(QSize size) {
     view->setIconSize(size);
 }
 
-QSize FolderView::iconSize() {
+QSize FolderView::iconSize() const {
   return iconSize_;
 }
 
@@ -167,19 +167,19 @@ void FolderView::setGridSize(QSize size) {
   gridSize_ = size;
 }
 
-QSize FolderView::gridSize() {
+QSize FolderView::gridSize() const {
   return gridSize_;
 }
 
-FolderView::ViewMode FolderView::viewMode() {
+FolderView::ViewMode FolderView::viewMode() const {
   return mode;
 }
 
-QAbstractItemView* FolderView::childView() {
+QAbstractItemView* FolderView::childView() const {
   return view;
 }
 
-ProxyFolderModel* FolderView::model() {
+ProxyFolderModel* FolderView::model() const {
   return model_;
 }
 
@@ -210,6 +210,59 @@ void FolderView::emitClickedAt(ClickType type, QPoint& pos) {
     FmFileInfo* info = reinterpret_cast<FmFileInfo*>(data.value<void*>());
     Q_EMIT clicked(type, info);
   }
+}
+
+QModelIndexList FolderView::selectedRows(int column) const {
+  QItemSelectionModel* selModel = selectionModel();
+  if(selModel) {
+    return selModel->selectedRows();
+  }
+  return QModelIndexList();
+}
+
+// This returns all selected "cells", which means all cells of the same row are returned.
+QModelIndexList FolderView::selectedIndexes() const {
+  QItemSelectionModel* selModel = selectionModel();
+  if(selModel) {
+    return selModel->selectedIndexes();
+  }
+  return QModelIndexList();
+}
+
+QItemSelectionModel* FolderView::selectionModel() const {
+  return view ? view->selectionModel() : NULL;
+}
+
+FmPathList* FolderView::selectedFilePaths() const {
+  if(model_) {
+    QModelIndexList selIndexes = mode == DetailedListMode ? selectedRows() : selectedIndexes();
+    if(!selIndexes.isEmpty()) {
+      FmPathList* paths = fm_path_list_new();
+      QModelIndexList::const_iterator it;
+      for(it = selIndexes.begin(); it != selIndexes.end(); ++it) {
+        FmFileInfo* file = model_->fileInfoFromIndex(*it);
+        fm_path_list_push_tail(paths, fm_file_info_get_path(file));
+      }
+      return paths;
+    }
+  }
+  return NULL;
+}
+
+FmFileInfoList* FolderView::selectedFiles() const {
+  if(model_) {
+    QModelIndexList selIndexes = mode == DetailedListMode ? selectedRows() : selectedIndexes();
+    if(!selIndexes.isEmpty()) {
+      FmFileInfoList* files = fm_file_info_list_new();
+      QModelIndexList::const_iterator it;
+      for(it = selIndexes.constBegin(); it != selIndexes.constEnd(); it++) {
+        FmFileInfo* file = model_->fileInfoFromIndex(*it);
+        fm_file_info_list_push_tail(files, file);
+      }
+      return files;
+    }
+  }
+  return NULL;
 }
 
 

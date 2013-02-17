@@ -22,6 +22,7 @@
 #define FM_PROXYFOLDERMODEL_H
 
 #include <QSortFilterProxyModel>
+#include <libfm/fm.h>
 
 namespace Fm {
 
@@ -39,6 +40,8 @@ public:
   bool showHidden() {
     return showHidden_;
   }
+
+  FmFileInfo* fileInfoFromIndex(const QModelIndex& index) const;
 
 protected:
   bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) const;

@@ -91,6 +91,14 @@ public:
     return folderView_;
   }
 
+  FmFileInfoList* selectedFiles() {
+    return folderView_->selectedFiles();
+  }
+
+  FmPathList* selectedFilePaths() {
+    return folderView_->selectedFilePaths();
+  }
+  
   void reload() {
     if(folder_)
       fm_folder_reload(folder_);

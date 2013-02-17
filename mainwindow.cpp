@@ -190,7 +190,6 @@ void MainWindow::on_actionAbout_triggered() {
 }
 
 void MainWindow::on_actionIconView_triggered() {
-  qDebug("HERE\n");
   currentPage()->setViewMode(Fm::FolderView::IconMode);
 }
 
@@ -207,7 +206,6 @@ void MainWindow::on_actionThumbnailView_triggered() {
 }
 
 void MainWindow::onTabBarCloseRequested(int index) {
-  qDebug("tab closed");
   if(ui.tabBar->count() == 1) { // this is the last one
     destroy(); // destroy the whole window
   }
@@ -221,7 +219,6 @@ void MainWindow::onTabBarCloseRequested(int index) {
 }
 
 void MainWindow::onTabBarCurrentChanged(int index) {
-  qDebug("current changed");
   ui.stackedWidget->setCurrentIndex(index);
   TabPage* tabPage = currentPage();
   if(tabPage) {
@@ -240,7 +237,7 @@ void MainWindow::onStackedWidgetWidgetRemoved(int index) {
 void MainWindow::onTabPageTitleChanged(QString title) {
   TabPage* tabPage = reinterpret_cast<TabPage*>(sender());
   int index = ui.stackedWidget->indexOf(tabPage);
-  qDebug("index = %d\n", index);
+
   if(index >= 0)
     ui.tabBar->setTabText(index, title);
 
@@ -278,9 +275,7 @@ void MainWindow::onTabPageFileClicked(int type, FmFileInfo* fileInfo) {
   else if(type == Fm::FolderView::ContextMenuClick) {
     FmFolder* folder = currentPage()->folder();
     // show context menu
-    // FmFileInfoList* files = view->selectedFiles();
-    FmFileInfoList* files = fm_file_info_list_new();
-    fm_file_info_list_push_tail(files, fileInfo);
+    FmFileInfoList* files = currentPage()->selectedFiles();
     Fm::FileMenu* menu = new Fm::FileMenu(files, fileInfo, fm_folder_get_path(folder));
     fm_file_info_list_unref(files);
     menu->popup(QCursor::pos());

@@ -71,22 +71,29 @@ public:
   ~FolderView();
 
   void setViewMode(ViewMode _mode);
-  ViewMode viewMode();
+  ViewMode viewMode() const;
   
   void setIconSize(QSize size);
-  QSize iconSize();
+  QSize iconSize() const;
 
   void setGridSize(QSize size);
-  QSize gridSize();
+  QSize gridSize() const;
 
-  QAbstractItemView* childView();
+  QAbstractItemView* childView() const;
 
-  ProxyFolderModel* model();
+  ProxyFolderModel* model() const;
   void setModel(ProxyFolderModel* _model);
+
+  QItemSelectionModel* selectionModel() const;
+  FmFileInfoList* selectedFiles() const;
+  FmPathList* selectedFilePaths() const;
 
 protected:
   void contextMenuEvent(QContextMenuEvent* event);
   void emitClickedAt(ClickType type, QPoint& pos);
+
+  QModelIndexList selectedRows ( int column = 0 ) const;
+  QModelIndexList selectedIndexes() const;
 
 public Q_SLOTS:
   void onItemActivated(QModelIndex index);
