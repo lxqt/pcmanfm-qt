@@ -22,6 +22,7 @@
 #define FM_FILEPROPSDIALOG_H
 
 #include <QDialog>
+#include <QTimer>
 #include "ui_file-props.h"
 #include <libfm/fm.h>
 
@@ -39,6 +40,11 @@ private:
   void initGeneral();
   void initApplications();
   void initPermissions();
+
+  static void onDeepCountJobFinished(FmDeepCountJob* job, FilePropsDialog* pThis);
+
+private Q_SLOTS:
+  void onFileSizeTimerTimeout();
   
 private:
   Ui::FilePropsDialog ui;
@@ -55,6 +61,7 @@ private:
   gint32 gid; // owner group
 
   FmDeepCountJob* deepCountJob; // job used to count total size
+  QTimer* fileSizeTimer;
 };
 
 }

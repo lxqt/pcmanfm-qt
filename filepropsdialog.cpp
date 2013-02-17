@@ -20,6 +20,7 @@
 
 #include "filepropsdialog.h"
 #include "icontheme.h"
+#include <QStringBuilder>
 
 using namespace Fm;
 
@@ -41,14 +42,12 @@ FilePropsDialog::FilePropsDialog(FmFileInfoList* files, QWidget* parent, Qt::Win
   deepCountJob = fm_deep_count_job_new(paths, FM_DC_JOB_DEFAULT);
   fm_path_list_unref(paths);    
 
-  /*
-  data->timeout = g_timeout_add(600, on_timeout, data);
-  g_signal_connect(dlg, "response", G_CALLBACK(on_response), data);
-  g_signal_connect_swapped(dlg, "destroy", G_CALLBACK(fm_file_prop_data_free), data);
-  g_signal_connect(data->dc_job, "finished", G_CALLBACK(on_finished), data);
+  fileSizeTimer = new QTimer(this);
+  connect(fileSizeTimer, SIGNAL(timeout()), SLOT(onFileSizeTimerTimeout()));
+  fileSizeTimer->start(600);
+  g_signal_connect(deepCountJob, "finished", G_CALLBACK(onDeepCountJobFinished), this);
+  fm_job_run_async(FM_JOB(deepCountJob));
 
-  fm_job_run_async(FM_JOB(data->dc_job));
-  */
   initGeneral();
   initApplications();
   initPermissions();
@@ -58,6 +57,13 @@ FilePropsDialog::FilePropsDialog(FmFileInfoList* files, QWidget* parent, Qt::Win
 FilePropsDialog::~FilePropsDialog() {
   if(fileInfos_)
     fm_file_info_list_unref(fileInfos_);
+  if(deepCountJob)
+    g_object_unref(deepCountJob);
+  if(fileSizeTimer) {
+    fileSizeTimer->stop();
+    delete fileSizeTimer;
+    fileSizeTimer = NULL;
+  }
 }
 
 void FilePropsDialog::initApplications() {
@@ -133,6 +139,46 @@ void FilePropsDialog::initGeneral() {
     ui.fileName->setEnabled(false);
   }
   // on_timeout(data);
+}
+
+/*static */ void FilePropsDialog::onDeepCountJobFinished(FmDeepCountJob* job, FilePropsDialog* pThis) {
+
+  pThis->onFileSizeTimerTimeout(); // update file size display
+
+  // free the job
+  g_object_unref(pThis->deepCountJob);
+  pThis->deepCountJob = NULL;
+
+  // stop the timer
+  if(pThis->fileSizeTimer) {
+    pThis->fileSizeTimer->stop();
+    delete pThis->fileSizeTimer;
+    pThis->fileSizeTimer = NULL;
+  }
+}
+
+void FilePropsDialog::onFileSizeTimerTimeout() {
+  if(deepCountJob && !fm_job_is_cancelled(FM_JOB(deepCountJob))) {
+    char size_str[128];
+    fm_file_size_to_str(size_str, sizeof(size_str), deepCountJob->total_size,
+                        fm_config->si_unit);
+    // FIXME:
+    // OMG! It's really unbelievable that Qt developers only implement
+    // QObject::tr(... int n). GNU gettext developers are smarter and
+    // they use unsigned long instead of int.
+    // We cannot use Qt here to handle plural forms. So sad. :-(
+    QString str = QString::fromUtf8(size_str) %
+      QString(" (%1)").arg(deepCountJob->total_size);
+      // tr(" (%n) byte(s)", "", deepCountJob->total_size);
+    ui.fileSize->setText(str);
+
+    fm_file_size_to_str(size_str, sizeof(size_str), deepCountJob->total_ondisk_size,
+                        fm_config->si_unit);
+    str = QString::fromUtf8(size_str) %
+      QString(" (%1)").arg(deepCountJob->total_ondisk_size);
+      // tr(" (%n) byte(s)", "", deepCountJob->total_ondisk_size);
+    ui.onDiskSize->setText(str);
+  }
 }
 
 #include "filepropsdialog.moc"
