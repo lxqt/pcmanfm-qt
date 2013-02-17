@@ -45,6 +45,24 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
 FolderView::~FolderView() {
 }
 
+void FolderView::ListView::mousePressEvent(QMouseEvent* event) {
+  QListView::mousePressEvent(event);
+  if(event->button() == Qt::MiddleButton) {
+    QPoint pos = event->pos();
+    static_cast<FolderView*>(parent())->emitClickedAt(MiddleClick, pos);
+  }
+}
+
+
+void FolderView::TreeView::mousePressEvent(QMouseEvent* event) {
+  QTreeView::mousePressEvent(event);
+  if(event->button() == Qt::MiddleButton) {
+    QPoint pos = event->pos();
+    static_cast<FolderView*>(parent())->emitClickedAt(MiddleClick, pos);
+  }
+}
+
+
 void FolderView::onItemActivated(QModelIndex index) {
   QVariant data = index.model()->data(index, FolderModel::FileInfoRole);
   FmFileInfo* info = (FmFileInfo*)data.value<void*>();
@@ -122,8 +140,13 @@ void FolderView::setViewMode(ViewMode _mode) {
     view->setIconSize(iconSize_);
     view->setSelectionMode(QAbstractItemView::ExtendedSelection);
     layout()->addWidget(view);
+
+    // enable dnd
+    view->setDragEnabled(true);
+    //view->setDragDropMode();
+    view->setAcceptDrops(true);
+
     if(model_) {
-      reinterpret_cast<FolderModel*>(model_->sourceModel())->setIconSize(iconSize_.width());
       // FIXME: preserve selections
       view->setModel(model_);
     }
@@ -134,9 +157,6 @@ void FolderView::setIconSize(QSize size) {
   iconSize_ = size;
   if(view)
     view->setIconSize(size);
-  if(model_) {
-    reinterpret_cast<FolderModel*>(model_->sourceModel())->setIconSize(size.width());
-  }
 }
 
 QSize FolderView::iconSize() {

@@ -28,6 +28,8 @@ namespace Fm {
 
 class FileMenu : public QMenu
 {
+Q_OBJECT
+
 public:
   explicit FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, QWidget* parent = 0);
   explicit FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, const QString& title, QWidget* parent = 0);
@@ -36,6 +38,10 @@ public:
 protected:
   void createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd);
   
+protected Q_SLOTS:
+  void onFilePropertiesTriggered(bool checked);
+  void onApplicationTriggered(bool checked);
+
 private:
   FmFileInfoList* files_;
   FmFileInfo* info_;

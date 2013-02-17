@@ -20,8 +20,35 @@
 
 #include "filemenu.h"
 #include "icontheme.h"
+#include "filepropsdialog.h"
 
 using namespace Fm;
+
+class AppInfoAction : public QAction {
+
+public:
+  explicit AppInfoAction(GAppInfo* app, QObject* parent = 0):
+    QAction(QString::fromUtf8(g_app_info_get_name(app)), parent),
+    appInfo_(G_APP_INFO(g_object_ref(app))) {
+    setToolTip(QString::fromUtf8(g_app_info_get_description(app)));
+    GIcon* gicon = g_app_info_get_icon(app);
+    QIcon icon = IconTheme::icon(gicon);
+    setIcon(icon);
+  }
+
+  virtual ~AppInfoAction() {
+    if(appInfo_)
+      g_object_unref(appInfo_);
+  }
+
+  GAppInfo* appInfo() const {
+    return appInfo_;
+  }
+
+private:
+  GAppInfo* appInfo_;
+};
+
 
 FileMenu::FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, QWidget* parent): QMenu(parent) {
   createMenu(files, info, cwd);
@@ -73,16 +100,16 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
       GList* l;
       for(l=apps;l;l=l->next) {
         GAppInfo* app = G_APP_INFO(l->data);
+	
+	// check if the command really exists
         gchar * program_path = g_find_program_in_path(g_app_info_get_executable(app));
 	if (!program_path)
 	  continue;
 	g_free(program_path);
 
-	GIcon* gicon = g_app_info_get_icon(app);
-	QIcon icon = IconTheme::icon(gicon);
-	
-	action = new QAction(icon, QString::fromUtf8(g_app_info_get_name(app)), this);
-	action->setToolTip(QString::fromUtf8(g_app_info_get_description(app)));
+	// create a QAction for the application.
+	action = new AppInfoAction(app);
+	connect(action, SIGNAL(triggered(bool)), SLOT(onApplicationTriggered(bool)));
 	menu->addAction(action);
       }
       g_list_free(apps); /* don't unref GAppInfos now */
@@ -109,5 +136,21 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   addSeparator();
 
   action= new QAction(QIcon::fromTheme("document-properties"), tr("Properties"), this);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onFilePropertiesTriggered(bool)));
   addAction(action);
 }
+
+void FileMenu::onApplicationTriggered(bool checked) {
+  AppInfoAction* action = reinterpret_cast<AppInfoAction*>(sender());
+  GAppInfo* appInfo = action->appInfo();
+
+  // TODO: Launch the application selected
+}
+
+void FileMenu::onFilePropertiesTriggered(bool checked) {
+  qDebug("prop");
+  FilePropsDialog dlg(files_, this);
+  dlg.exec();
+}
+
+#include "filemenu.moc"

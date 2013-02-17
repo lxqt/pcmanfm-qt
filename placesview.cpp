@@ -23,7 +23,9 @@
 
 using namespace Fm;
 
-PlacesView::PlacesView(QWidget* parent): QTreeView(parent) {
+PlacesView::PlacesView(QWidget* parent):
+  QTreeView(parent),
+  currentPath_(NULL) {
   setRootIsDecorated(false);
   setHeaderHidden(true);
   setIndentation(12);

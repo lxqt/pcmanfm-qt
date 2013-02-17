@@ -50,31 +50,20 @@ public:
   };
 
 protected:
-  // override these classes just to handle mouse events
+
+  // override these classes for implementing FolderView
   class ListView : public QListView {
   public:
     ListView(QWidget* parent = 0) : QListView(parent) {
     }
-    void mousePressEvent(QMouseEvent* event) {
-      QListView::mousePressEvent(event);
-      if(event->button() == Qt::MiddleButton) {
-	QPoint pos = event->pos();
-	static_cast<FolderView*>(parent())->emitClickedAt(MiddleClick, pos);
-      }
-    }
+    void mousePressEvent(QMouseEvent* event);
   };
 
   class TreeView : public QTreeView {
   public:
     TreeView(QWidget* parent = 0) : QTreeView(parent) {
     }
-    void mousePressEvent(QMouseEvent* event) {
-      QTreeView::mousePressEvent(event);
-      if(event->button() == Qt::MiddleButton) {
-	QPoint pos = event->pos();
-	static_cast<FolderView*>(parent())->emitClickedAt(MiddleClick, pos);
-      }
-    }
+    void mousePressEvent(QMouseEvent* event);
   };
 
 public:

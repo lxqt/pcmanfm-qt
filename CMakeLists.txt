@@ -44,6 +44,7 @@ set(pcmanfm_SRCS
   proxyfoldermodel.cpp
   folderview.cpp
   filemenu.cpp
+  filepropsdialog.cpp
   applaunchcontext.cpp
   placesview.cpp
   placesmodel.cpp

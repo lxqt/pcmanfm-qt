@@ -42,7 +42,6 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   verticalLayout->setContentsMargins(0, 0, 0, 0);
 
   folderView_ = new Fm::FolderView(Fm::FolderView::DetailedListMode, this);
-  folderView_->setIconSize(QSize(32, 32));
   // newView->setColumnWidth(Fm::FolderModel::ColumnName, 200);
   connect(folderView_, SIGNAL(clicked(int, FmFileInfo*)), SLOT(onViewClicked(int,FmFileInfo*)));
 

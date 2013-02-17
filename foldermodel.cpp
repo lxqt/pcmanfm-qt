@@ -27,9 +27,6 @@
 using namespace Fm;
 
 FolderModel::FolderModel() : 
-  sortColumn(ColumnName),
-  sortOrder(Qt::AscendingOrder),
-  iconSize_(32),
   folder(NULL)  {
 /*
     ColumnIcon,
@@ -153,11 +150,20 @@ int FolderModel::columnCount (const QModelIndex & parent = QModelIndex()) const 
   return NumOfColumns;
 }
 
+FolderModel::Item* FolderModel::itemFromIndex(const QModelIndex& index) const {
+  return reinterpret_cast<Item*>(index.internalPointer());
+}
+
+FmFileInfo* FolderModel::fileInfoFromIndex(const QModelIndex& index) const {
+  Item* item = itemFromIndex(index);
+  return item ? item->info : NULL;
+}
+
 QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole) const {
   if(!index.isValid() || index.row() > items.size() || index.column() >= NumOfColumns) {
     return QVariant();
   }
-  Item* item = reinterpret_cast<Item*>(index.internalPointer());
+  Item* item = itemFromIndex(index);
   FmFileInfo* info = item->info;
 
   switch(role) {
@@ -227,6 +233,8 @@ QModelIndex FolderModel::parent(const QModelIndex & index) const {
   return QModelIndex();
 }
 
+// FIXME: this is very inefficient and should be replaced with a 
+// more reasonable implementation later.
 QList<FolderModel::Item>::iterator FolderModel::findItemByPath(FmPath* path, int* row) {
   QList<Item>::iterator it = items.begin();
   int i = 0;
@@ -243,6 +251,8 @@ QList<FolderModel::Item>::iterator FolderModel::findItemByPath(FmPath* path, int
   return items.end();
 }
 
+// FIXME: this is very inefficient and should be replaced with a 
+// more reasonable implementation later.
 QList<FolderModel::Item>::iterator FolderModel::findItemByName(const char* name, int* row) {
   QList<Item>::iterator it = items.begin();
   int i = 0;
@@ -258,6 +268,15 @@ QList<FolderModel::Item>::iterator FolderModel::findItemByName(const char* name,
   }
   return items.end();
 }
+
+QStringList FolderModel::mimeTypes() const {
+  return QAbstractItemModel::mimeTypes();
+}
+
+QMimeData* FolderModel::mimeData(const QModelIndexList& indexes) const {
+  return QAbstractItemModel::mimeData(indexes);
+}
+
 
 #if 0
 // we do the sorting in ProxyFolderModel instead.
@@ -319,10 +338,3 @@ void FolderModel::sort(int column, Qt::SortOrder order = Qt::AscendingOrder) {
   Q_EMIT layoutChanged();
 }
 #endif
-
-void FolderModel::setIconSize(int size) {
-  if(size != iconSize_) {
-    iconSize_ = size;
-    // FIXME: reload icons?
-  }
-}
