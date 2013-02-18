@@ -21,7 +21,6 @@
 #ifndef FM_ICONTHEME_H
 #define FM_ICONTHEME_H
 
-#include <QPixmap>
 #include <QIcon>
 #include "libfm/fm.h"
 
@@ -39,23 +38,20 @@ namespace Fm {
 
 // Nice article about QPixmap from KDE: http://techbase.kde.org/Development/Tutorials/Graphics/Performance
 
-
 class IconTheme
 {
 public:
   IconTheme();
   ~IconTheme();
 
-  // static QPixmap loadIcon(FmIcon* icon, int size);
+  static void setThemeName(QString name);
   static QIcon icon(FmIcon* fmicon);
   static QIcon icon(GIcon* gicon);
 
 protected:
 
   static QIcon convertFromGIcon(GIcon* gicon);
-
-  static FmIcon* fallbackFmIcon;
-  static QIcon* fallbackIcon;
+  QIcon fallbackIcon;
 };
 
 }

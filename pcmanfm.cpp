@@ -7,7 +7,7 @@ int main(int argc, char** argv)
 {
   QApplication app(argc, argv);
   Fm::Application fmapp;
-  QIcon::setThemeName("gnome");
+  Fm::IconTheme::setThemeName("gnome");
   // QIcon::setThemeName("elementary");
   Fm::MainWindow mainWin;
   mainWin.resize(640, 480);
