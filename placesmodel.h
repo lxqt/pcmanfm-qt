@@ -52,19 +52,19 @@ public:
       ~Item();
 
       FmFileInfo* fileInfo() {
-	return fileInfo_;
+        return fileInfo_;
       }
       void setFileInfo(FmFileInfo* fileInfo);
 
       FmPath* path() {
-	return path_;
+        return path_;
       }
       void setPath(FmPath* path);
 
       QVariant data ( int role = Qt::UserRole + 1 ) const;
       
-      int type() {
-	return ItemTypePlaces;
+      virtual int type() const {
+        return ItemTypePlaces;
       }
 
     private:
@@ -79,8 +79,8 @@ public:
       bool canEject() {
         return g_volume_can_eject(volume_);
       }
-      int type() {
-	return ItemTypeVolume;
+      virtual int type() const {
+        return ItemTypeVolume;
       }
       GVolume* volume() {
         return volume_;
@@ -92,8 +92,8 @@ public:
   class MountItem : public Item {
     public:
       MountItem(GMount* mount);
-      int type() {
-	return ItemTypeMount;
+      virtual int type() const {
+        return ItemTypeMount;
       }
     private:
       GMount* mount_;
@@ -101,8 +101,8 @@ public:
 
   class BookmarkItem : public Item {
     public:
-      int type() {
-	return ItemTypeBookmark;
+      virtual int type() const {
+        return ItemTypeBookmark;
       }
       BookmarkItem(FmBookmarkItem* bm_item);
       virtual ~BookmarkItem() {

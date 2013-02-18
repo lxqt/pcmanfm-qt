@@ -40,26 +40,35 @@ private:
 };
 
 
-MountOperation::MountOperation(QWidget* parent) {
-  op = g_mount_operation_new();
+MountOperation::MountOperation(bool interactive, QWidget* parent):
+  interactive_(interactive),
+  running(false),
+  op(g_mount_operation_new()),
+  cancellable_(g_cancellable_new()) {
+  
   g_signal_connect(op, "ask-password", G_CALLBACK(onAskPassword), this);
   g_signal_connect(op, "ask-question", G_CALLBACK(onAskQuestion), this);
   g_signal_connect(op, "reply", G_CALLBACK(onReply), this);
 
 #if GLIB_CHECK_VERSION(2, 20, 0)
-//  g_signal_connect(op, "aborted", G_CALLBACK(), this);
+  g_signal_connect(op, "aborted", G_CALLBACK(onAbort), this);
 #endif
 #if GLIB_CHECK_VERSION(2, 22, 0)
-//  g_signal_connect(op, "show-processes", G_CALLBACK(), this);
+  g_signal_connect(op, "show-processes", G_CALLBACK(onShowProcesses), this);
 #endif
 #if GLIB_CHECK_VERSION(2, 34, 0)
-//  g_signal_connect(op, "show-unmount-progress", G_CALLBACK(), this);
+  g_signal_connect(op, "show-unmount-progress", G_CALLBACK(onShowUnmountProgress()), this);
 #endif
+
 }
 
 MountOperation::~MountOperation() {
+  if(cancellable_) {
+	cancel();
+    g_object_unref(cancellable_);
+  }
   if(op)
-    g_object_unref(op);
+	g_object_unref(op);
 }
 
 void MountOperation::onAbort(GMountOperation* _op, MountOperation* pThis) {
@@ -95,42 +104,66 @@ void MountOperation::onShowUnmountProgress(GMountOperation* _op, gchar* message,
   qDebug("show unmount progress");
 }
 
-typedef enum {
-    MOUNT_VOLUME,
-    MOUNT_GFILE,
-    UMOUNT_MOUNT,
-    EJECT_MOUNT,
-    EJECT_VOLUME
-}MountAction;
+void MountOperation::onEjectMountFinished(GMount* mount, GAsyncResult* res, MountOperation* pThis) {
+  GError* error = NULL;
+  g_mount_eject_with_operation_finish(mount, res, &error);
+  pThis->handleFinish(error);
+}
 
-struct MountData {
-    GMainLoop *loop;
-    MountAction action;
-    GError* err;
-    gboolean ret;
-};
+void MountOperation::onEjectVolumeFinished(GVolume* volume, GAsyncResult* res, MountOperation* pThis) {
+  GError* error = NULL;
+  g_volume_eject_with_operation_finish(volume, res, &error);
+  pThis->handleFinish(error);
+}
 
-static void onMountActionFinished(GObject* src, GAsyncResult *res, gpointer user_data) {
-  struct MountData* data = user_data;
-  switch(data->action)
-  {
-  case MOUNT_VOLUME:
-      data->ret = g_volume_mount_finish(G_VOLUME(src), res, &data->err);
-      break;
-  case MOUNT_GFILE:
-      data->ret = g_file_mount_enclosing_volume_finish(G_FILE(src), res, &data->err);
-      break;
-  case UMOUNT_MOUNT:
-      data->ret = g_mount_unmount_with_operation_finish(G_MOUNT(src), res, &data->err);
-      break;
-  case EJECT_MOUNT:
-      data->ret = g_mount_eject_with_operation_finish(G_MOUNT(src), res, &data->err);
-      break;
-  case EJECT_VOLUME:
-      data->ret = g_volume_eject_with_operation_finish(G_VOLUME(src), res, &data->err);
-      break;
+void MountOperation::onMountFileFinished(GFile* file, GAsyncResult* res, MountOperation* pThis) {
+  GError* error = NULL;
+  g_file_mount_enclosing_volume_finish(file, res, &error);
+  pThis->handleFinish(error);
+}
+
+void MountOperation::onMountVolumeFinished(GVolume* volume, GAsyncResult* res, MountOperation* pThis) {
+  GError* error = NULL;
+  g_volume_mount_finish(volume, res, &error);
+  pThis->handleFinish(error);
+}
+
+void MountOperation::onUnmountMountFinished(GMount* mount, GAsyncResult* res, MountOperation* pThis) {
+  GError* error = NULL;
+  g_mount_unmount_with_operation_finish(mount, res, &error);
+  pThis->handleFinish(error);
+}
+
+void MountOperation::handleFinish(GError* error) {
+  qDebug("operation finished: %p", error);
+  if(error) {
+	bool showError = interactive_;
+	if(error->domain == G_IO_ERROR) {
+	  if(error->code == G_IO_ERROR_FAILED) {
+		// Generate a more human-readable error message instead of using a gvfs one.
+		// The original error message is something like:
+		// Error unmounting: umount exited with exit code 1:
+		// helper failed with: umount: only root can unmount
+		// UUID=18cbf00c-e65f-445a-bccc-11964bdea05d from /media/sda4 */
+		// Why they pass this back to us? This is not human-readable for the users at all.
+		if(strstr(error->message, "only root can ")) {
+		  g_free(error->message);
+		  error->message = g_strdup(_("Only system administrators have the permission to do this."));
+		}
+	  }
+	  else if(error->code == G_IO_ERROR_FAILED_HANDLED)
+		showError = false;
+	}
+	if(showError)
+	  QMessageBox::critical(parent_, QObject::tr("Error"), QString::fromUtf8(error->message));
   }
-  g_main_loop_quit(data->loop);
+
+  Q_EMIT finished(error);
+  if(error)
+	g_error_free(error);
+
+  // free ourself here!!
+  delete this;
 }
 
 void MountOperation::prepareUnmount(GMount* mount) {
@@ -148,106 +181,4 @@ void MountOperation::prepareUnmount(GMount* mount) {
   g_object_unref(root);
 }
 
-
-bool MountOperation::doMount(GObject* obj, int action, gboolean interactive) {
-  gboolean ret;
-  struct MountData* data = g_new0(struct MountData, 1);
-  // GMountOperation* op = interactive ? gtk_mount_operation_new(parent) : NULL;
-  GCancellable* cancellable = g_cancellable_new();
-
-  data->loop = g_main_loop_new (NULL, TRUE);
-  data->action = action;
-
-  switch(data->action) {
-  case MOUNT_VOLUME:
-      g_volume_mount(G_VOLUME(obj), 0, op, cancellable, onMountActionFinished, data);
-      break;
-  case MOUNT_GFILE:
-      g_file_mount_enclosing_volume(G_FILE(obj), 0, op, cancellable, onMountActionFinished, data);
-      break;
-  case UMOUNT_MOUNT:
-      prepareUnmount(G_MOUNT(obj));
-      g_mount_unmount_with_operation(G_MOUNT(obj), G_MOUNT_UNMOUNT_NONE, op, cancellable, onMountActionFinished, data);
-      break;
-  case EJECT_MOUNT:
-      prepareUnmount(G_MOUNT(obj));
-      g_mount_eject_with_operation(G_MOUNT(obj), G_MOUNT_UNMOUNT_NONE, op, cancellable, onMountActionFinished, data);
-      break;
-  case EJECT_VOLUME: {
-	  GMount* mnt = g_volume_get_mount(G_VOLUME(obj));
-	  prepareUnmount(mnt);
-	  g_object_unref(mnt);
-	  g_volume_eject_with_operation(G_VOLUME(obj), G_MOUNT_UNMOUNT_NONE, op, cancellable, onMountActionFinished, data);
-      }
-      break;
-  }
-
-  if (g_main_loop_is_running(data->loop))
-      g_main_loop_run(data->loop);
-
-  g_main_loop_unref(data->loop);
-
-  ret = data->ret;
-  if(data->err) {
-    if(interactive) {
-      if(data->err->domain == G_IO_ERROR) {
-	if(data->err->code == G_IO_ERROR_FAILED) {
-	  /* Generate a more human-readable error message instead of using a gvfs one. */
-	  /* The original error message is something like:
-	    * Error unmounting: umount exited with exit code 1:
-	    * helper failed with: umount: only root can unmount
-	    * UUID=18cbf00c-e65f-445a-bccc-11964bdea05d from /media/sda4 */
-	  /* Why they pass this back to us?
-	    * This is not human-readable for the users at all. */
-	  if(strstr(data->err->message, "only root can ")) {
-	      g_free(data->err->message);
-	      data->err->message = g_strdup(_("Only system administrators have the permission to do this."));
-	  }
-	}
-	else if(data->err->code == G_IO_ERROR_FAILED_HANDLED)
-	    interactive = FALSE;
-      }
-      if(interactive)
-	QMessageBox::critical(parent_, QObject::tr("Error"), QString::fromUtf8(data->err->message));
-    }
-    g_error_free(data->err);
-  }
-  g_free(data);
-  g_object_unref(cancellable);
-  if(op)
-      g_object_unref(op);
-  return ret;
-}
-
-bool MountOperation::mount(FmPath* path, bool interactive) {
-  GFile* gf = fm_path_to_gfile(path);
-  gboolean ret = doMount(G_OBJECT(gf), MOUNT_GFILE, interactive);
-  g_object_unref(gf);
-  return ret;
-}
-
-bool MountOperation::mount(GVolume* vol, bool interactive) {
-  return doMount(G_OBJECT(vol), MOUNT_VOLUME, interactive);
-}
-
-bool MountOperation::unmount(GMount* mount, bool interactive) {
-  return doMount(G_OBJECT(mount), UMOUNT_MOUNT, interactive);
-}
-
-bool MountOperation::unmount(GVolume* vol, bool interactive) {
-  GMount* mount = g_volume_get_mount(vol);
-  gboolean ret;
-  if(!mount)
-      return FALSE;
-  ret = doMount(G_OBJECT(vol), UMOUNT_MOUNT, interactive);
-  g_object_unref(mount);
-  return ret;
-}
-
-bool MountOperation::eject(GMount* mount, bool interactive) {
-  return doMount(G_OBJECT(mount), EJECT_MOUNT, interactive);
-}
-
-bool MountOperation::eject(GVolume* vol, bool interactive) {
-  return doMount(G_OBJECT(vol), EJECT_VOLUME, interactive);
-}
+#include "mountoperation.moc"

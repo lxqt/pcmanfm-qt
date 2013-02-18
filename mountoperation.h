@@ -30,29 +30,76 @@ namespace Fm {
 // FIXME: the original APIs in gtk+ version of libfm for mounting devices is poor.
 // Need to find a better API design which make things fully async and cancellable.
   
-class MountOperation
-{
+class MountOperation: QObject {
+Q_OBJECT
+
 public:
-  explicit MountOperation(QWidget* parent = 0);
-  ~MountOperation();
+  explicit MountOperation(bool interactive = true, QWidget* parent = 0);
 
-  bool mount(FmPath* path, bool interactive = true);
-  bool mount(GVolume* vol, bool interactive = true);
-  bool unmount(GMount* mount, bool interactive = true);
-  bool unmount(GVolume* vol, bool interactive = true);
-  bool eject(GMount* mount, bool interactive = true);
-  bool eject(GVolume* vol, bool interactive = true);
+  void mount(FmPath* path) {
+    GFile* gf = fm_path_to_gfile(path);
+    g_file_mount_enclosing_volume(gf, G_MOUNT_MOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onMountFileFinished, this);
+    g_object_unref(gf);
+  }
 
-  QWidget* parent() {
+  void mount(GVolume* volume) {
+    g_volume_mount(volume, G_MOUNT_MOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onMountVolumeFinished, this);    
+  }
+
+  void unmount(GMount* mount) {
+    prepareUnmount(mount);
+    g_mount_unmount_with_operation(mount, G_MOUNT_UNMOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onUnmountMountFinished, this);
+  }
+
+  void unmount(GVolume* volume) {
+    GMount* mount = g_volume_get_mount(volume);
+    if(!mount)
+      return;
+    unmount(mount);
+    g_object_unref(mount);
+  }
+  
+  void eject(GMount* mount) {
+    prepareUnmount(mount);
+    g_mount_eject_with_operation(mount, G_MOUNT_UNMOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onEjectMountFinished, this);
+  }
+
+  void eject(GVolume* volume) {
+    GMount* mnt = g_volume_get_mount(volume);
+    prepareUnmount(mnt);
+    g_object_unref(mnt);
+    g_volume_eject_with_operation(volume, G_MOUNT_UNMOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onEjectVolumeFinished, this);
+  }
+
+  QWidget* parent() const {
     return parent_;
   }
+
   void setParent(QWidget* parent) {
     parent_ = parent;
   }
 
+  GCancellable* cancellable() const {
+    return cancellable_;
+  }
+  
+  void cancel() {
+    g_cancellable_cancel(cancellable_);
+  }
+
+  bool isRunning() const {
+    return running;
+  }
+
+Q_SIGNALS:
+  void finished(GError* error = NULL);
+
+protected:
+  // The object frees itself when operation is done and should not be explicitly freed
+  ~MountOperation();
+
 private:
   void prepareUnmount(GMount* mount);
-  bool doMount(GObject* obj, int action, gboolean interactive);
 
   static void onAskPassword(GMountOperation *_op, gchar* message, gchar* default_user, gchar* default_domain, GAskPasswordFlags flags, MountOperation* pThis);
   static void onAskQuestion(GMountOperation *_op, gchar* message, GStrv choices, MountOperation* pThis);
@@ -62,9 +109,20 @@ private:
   static void onShowProcesses(GMountOperation *_op, gchar* message, GArray* processes, GStrv choices, MountOperation* pThis);
   static void onShowUnmountProgress(GMountOperation *_op, gchar* message, gint64 time_left, gint64 bytes_left, MountOperation* pThis);
 
+  static void onMountFileFinished(GFile* file, GAsyncResult *res, MountOperation* pThis);
+  static void onMountVolumeFinished(GVolume* volume, GAsyncResult *res, MountOperation* pThis);
+  static void onUnmountMountFinished(GMount* mount, GAsyncResult *res, MountOperation* pThis);
+  static void onEjectMountFinished(GMount* mount, GAsyncResult *res, MountOperation* pThis);
+  static void onEjectVolumeFinished(GVolume* volume, GAsyncResult *res, MountOperation* pThis);
+
+  void handleFinish(GError* error);
+
 private:
   GMountOperation* op;
+  GCancellable* cancellable_;
   QWidget* parent_;
+  bool running;
+  bool interactive_;
 };
 
 }

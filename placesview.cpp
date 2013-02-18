@@ -20,6 +20,7 @@
 
 #include "placesview.h"
 #include "placesmodel.h"
+#include "mountoperation.h"
 
 using namespace Fm;
 
@@ -56,7 +57,11 @@ void PlacesView::onClicked(const QModelIndex& index) {
       if(item->type() == PlacesModel::ItemTypeVolume) {
         PlacesModel::VolumeItem* volumeItem = reinterpret_cast<PlacesModel::VolumeItem*>(item);
         if(!volumeItem->isMounted()) {
-          // TODO: Mount the volume
+          // Mount the volume
+          GVolume* volume = volumeItem->volume();
+          MountOperation* op = new MountOperation(true, this);
+          op->mount(volume);
+          // FIXME: update status of the volume after mount is finished!!
           return;
         }
       }

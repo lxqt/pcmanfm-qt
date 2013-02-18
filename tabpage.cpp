@@ -158,10 +158,10 @@ void TabPage::freeFolder() {
   {
     if(err->code == G_IO_ERROR_NOT_MOUNTED && severity < FM_JOB_ERROR_CRITICAL)
     {
-	FmPath* path = fm_folder_get_path(_folder);
-	MountOperation op(pThis);
-	if(op.mount(path))
-	  return FM_JOB_RETRY;
+      FmPath* path = fm_folder_get_path(_folder);
+      MountOperation* op = new MountOperation(pThis);
+      op->mount(path); // FIXME
+      return FM_JOB_CONTINUE;
     }
   }
   if(severity >= FM_JOB_ERROR_MODERATE)
