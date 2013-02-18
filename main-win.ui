@@ -60,7 +60,7 @@
      <x>0</x>
      <y>0</y>
      <width>460</width>
-     <height>23</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -123,7 +123,6 @@
      <string>&amp;Bookmarks</string>
     </property>
     <addaction name="actionAddToBookmarks"/>
-    <addaction name="separator"/>
    </widget>
    <widget class="QMenu" name="menu_Go">
     <property name="title">
@@ -169,7 +168,9 @@
   </widget>
   <action name="actionGoUp">
    <property name="icon">
-    <iconset theme="go-up"/>
+    <iconset theme="go-up">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go Up</string>
@@ -183,7 +184,9 @@
   </action>
   <action name="actionHome">
    <property name="icon">
-    <iconset theme="user-home"/>
+    <iconset theme="user-home">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Home</string>
@@ -191,7 +194,9 @@
   </action>
   <action name="actionReload">
    <property name="icon">
-    <iconset theme="view-refresh"/>
+    <iconset theme="view-refresh">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Reload</string>
@@ -199,7 +204,9 @@
   </action>
   <action name="actionGo">
    <property name="icon">
-    <iconset theme="go-jump"/>
+    <iconset theme="go-jump">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go</string>
@@ -207,7 +214,9 @@
   </action>
   <action name="actionQuit">
    <property name="icon">
-    <iconset theme="application-exit"/>
+    <iconset theme="application-exit">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Quit</string>
@@ -215,7 +224,9 @@
   </action>
   <action name="actionAbout">
    <property name="icon">
-    <iconset theme="help-about"/>
+    <iconset theme="help-about">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;About</string>
@@ -223,7 +234,9 @@
   </action>
   <action name="actionNewWin">
    <property name="icon">
-    <iconset theme="window-new"/>
+    <iconset theme="window-new">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>New Window</string>
@@ -242,7 +255,9 @@
   </action>
   <action name="actionComputer">
    <property name="icon">
-    <iconset theme="computer"/>
+    <iconset theme="computer">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Computer</string>
@@ -250,7 +265,9 @@
   </action>
   <action name="actionTrash">
    <property name="icon">
-    <iconset theme="user-trash"/>
+    <iconset theme="user-trash">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Trash</string>
@@ -263,7 +280,9 @@
   </action>
   <action name="actionDesktop">
    <property name="icon">
-    <iconset theme="user-desktop"/>
+    <iconset theme="user-desktop">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Desktop</string>
@@ -271,7 +290,9 @@
   </action>
   <action name="actionAddToBookmarks">
    <property name="icon">
-    <iconset theme="list-add"/>
+    <iconset theme="list-add">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Add to Bookmarks</string>
@@ -369,7 +390,9 @@
   </action>
   <action name="actionNewTab">
    <property name="icon">
-    <iconset theme="window-new"/>
+    <iconset theme="window-new">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>New Tab</string>
@@ -380,7 +403,9 @@
   </action>
   <action name="actionGoBack">
    <property name="icon">
-    <iconset theme="go-previous"/>
+    <iconset theme="go-previous">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go Back</string>
@@ -394,7 +419,9 @@
   </action>
   <action name="actionGoForward">
    <property name="icon">
-    <iconset theme="go-next"/>
+    <iconset theme="go-next">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go Forward</string>

@@ -11,6 +11,7 @@
 #include "tabpage.h"
 #include "filelauncher.h"
 #include "filemenu.h"
+#include "bookmarkaction.h"
 
 #include "ui_about.h"
 
@@ -49,11 +50,18 @@ MainWindow::MainWindow(FmPath* path) {
   sizes.append(300);
   ui.splitter->setSizes(sizes);
 
+  // load bookmark menu
+  bookmarks = fm_bookmarks_dup();
+  g_signal_connect(bookmarks, "changed", G_CALLBACK(onBookmarksChanged), this);
+  loadBookmarksMenu();
+
   // open home dir by default
   addTab(path ? path : fm_path_get_home());
 }
 
 MainWindow::~MainWindow() {
+  if(bookmarks)
+    g_object_unref(bookmarks);
 }
 
 void MainWindow::chdir(FmPath* path) {
@@ -291,6 +299,38 @@ void MainWindow::onPopupMenuHide() {
 
 void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {
   chdir(path);
+}
+
+void MainWindow::loadBookmarksMenu() {
+  GList* l = fm_bookmarks_get_all(bookmarks);
+  QAction* before = ui.actionAddToBookmarks;
+  for(; l; l = l->next) {
+    FmBookmarkItem* item = reinterpret_cast<FmBookmarkItem*>(l->data);
+    BookmarkAction* action = new BookmarkAction(item);
+    connect(action, SIGNAL(triggered(bool)), SLOT(onBookmarkActionTriggered()));
+    ui.menu_Bookmarks->insertAction(before, action);
+  }
+  ui.menu_Bookmarks->insertSeparator(before);
+}
+
+void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
+  // delete existing items
+  QList<QAction*> actions = pThis->ui.menu_Bookmarks->actions();
+  QList<QAction*>::const_iterator it = actions.begin();
+  QList<QAction*>::const_iterator last_it = actions.end() - 1;
+  while(it != last_it) {
+    QAction* action = reinterpret_cast<QAction*>(*it);
+    ++it;
+    pThis->ui.menu_Bookmarks->removeAction(action);
+  }
+  pThis->loadBookmarksMenu();
+}
+
+void MainWindow::onBookmarkActionTriggered() {
+  BookmarkAction* action = reinterpret_cast<BookmarkAction*>(sender());
+  FmPath* path = action->path();
+  if(path)
+    chdir(path);
 }
 
 

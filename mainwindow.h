@@ -34,11 +34,6 @@ public:
     return reinterpret_cast<TabPage*>(ui.stackedWidget->currentWidget());
   }
 
-private:
-  Ui::MainWindow ui;
-  QLineEdit* pathEntry;
-  QLabel* fsInfoLabel;
-
 protected Q_SLOTS:
 
   void onPathEntryReturnPressed();
@@ -74,6 +69,8 @@ protected Q_SLOTS:
   void on_actionAddToBookmarks_triggered();
   void on_actionAbout_triggered();
 
+  void onBookmarkActionTriggered();
+  
   void onTabBarCloseRequested(int index);
   void onTabBarCurrentChanged(int index);
   
@@ -85,6 +82,16 @@ protected Q_SLOTS:
   void onPopupMenuHide();
 
   void onSidePaneChdirRequested(int type, FmPath* path);
+
+private:
+  static void onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis);
+  void loadBookmarksMenu();
+
+private:
+  Ui::MainWindow ui;
+  QLineEdit* pathEntry;
+  QLabel* fsInfoLabel;
+  FmBookmarks* bookmarks;
 };
 
 }

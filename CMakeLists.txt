@@ -35,6 +35,7 @@ set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive")
 set(pcmanfm_SRCS
   pcmanfm.cpp
   mainwindow.cpp
+  bookmarkaction.cpp
   sidepane.cpp
   tabpage.cpp
   application.cpp

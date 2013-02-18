@@ -57,7 +57,7 @@ MountOperation::MountOperation(bool interactive, QWidget* parent):
   g_signal_connect(op, "show-processes", G_CALLBACK(onShowProcesses), this);
 #endif
 #if GLIB_CHECK_VERSION(2, 34, 0)
-  g_signal_connect(op, "show-unmount-progress", G_CALLBACK(onShowUnmountProgress()), this);
+  g_signal_connect(op, "show-unmount-progress", G_CALLBACK(onShowUnmountProgress), this);
 #endif
 
 }
