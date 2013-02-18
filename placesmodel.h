@@ -85,6 +85,7 @@ public:
       GVolume* volume() {
         return volume_;
       }
+      void update();
     private:
       GVolume* volume_;
   };
@@ -95,6 +96,10 @@ public:
       virtual int type() const {
         return ItemTypeMount;
       }
+      GMount* mount() const {
+        return mount_;
+      }
+      void update();
     private:
       GMount* mount_;
   };
@@ -108,6 +113,9 @@ public:
       virtual ~BookmarkItem() {
         if(bookmarkItem_)
           fm_bookmark_item_unref(bookmarkItem_);
+      }
+      FmBookmarkItem* bookmark() const {
+        return bookmarkItem_;
       }
     private:
       FmBookmarkItem* bookmarkItem_;
@@ -133,13 +141,29 @@ public:
   void setShowDesktop(bool show);
 
   /*
-  virtual QModelIndex index(int row, int column = 0, const QModelIndex& parent = QModelIndex()) const;
   virtual bool dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent);
-  virtual QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const;
-  virtual int rowCount(const QModelIndex& parent = QModelIndex()) const;
   virtual QMimeData* mimeData(const QModelIndexList& indexes) const;
   virtual Qt::DropActions supportedDropActions() const;
   */
+protected:
+  
+  Item* itemFromPath(FmPath* path);
+  Item* itemFromPath(QStandardItem* rootItem, FmPath* path);
+  VolumeItem* itemFromVolume(GVolume* volume);
+  MountItem* itemFromMount(GMount* mount);
+  BookmarkItem* itemFromBookmark(FmBookmarkItem* bkitem);
+
+private:
+  void loadBookmarks();
+  
+  static void onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis);
+  static void onVolumeRemoved(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis);
+  static void onVolumeChanged(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis);
+  static void onMountAdded(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis);
+  static void onMountRemoved(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis);
+  static void onMountChanged(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis);
+  
+  static void onBookmarksChanged(FmBookmarks* bookmarks, PlacesModel* pThis);
 
 private:
   FmBookmarks* bookmarks;
@@ -148,6 +172,15 @@ private:
   bool showTrash_;
   bool showApplications_;
   bool showDesktop_;
+  QStandardItem* placesRoot;
+  QStandardItem* devicesRoot;
+  QStandardItem* bookmarksRoot;
+  Item* trashItem;
+  Item* desktopItem;
+  Item* homeItem;
+  Item* computerItem;
+  Item* networkItem;
+  Item* applicationsItem;
 };
 
 }

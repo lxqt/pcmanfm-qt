@@ -87,6 +87,7 @@ QVariant PlacesModel::Item::data(int role) const {
 }
 
 void PlacesModel::Item::setFileInfo(FmFileInfo* fileInfo) {
+  // FIXME: how can we correctly update icon?
   if(fileInfo_)
     fm_file_info_unref(fileInfo_);
 
@@ -103,57 +104,54 @@ PlacesModel::PlacesModel(QObject* parent):
   showTrash_(true),
   showApplications_(true),
   showDesktop_(true) {
-  QStandardItem* rootItem;
   Item *item;
-  rootItem = new QStandardItem("Places");
-  rootItem->setEditable(false);
-  rootItem->setSelectable(false);
-  appendRow(rootItem);
+  placesRoot = new QStandardItem("Places");
+  placesRoot->setEditable(false);
+  placesRoot->setSelectable(false);
+  appendRow(placesRoot);
 
-  item = new Item("user-home", g_get_user_name(), fm_path_get_home());
-  item->setEditable(false);
-  rootItem->appendRow(item);
+  homeItem = new Item("user-home", g_get_user_name(), fm_path_get_home());
+  homeItem->setEditable(false);
+  placesRoot->appendRow(homeItem);
 
-  item = new Item("user-desktop", tr("Desktop"), fm_path_get_desktop());
-  item->setEditable(false);
-  rootItem->appendRow(item);
+  desktopItem = new Item("user-desktop", tr("Desktop"), fm_path_get_desktop());
+  desktopItem->setEditable(false);
+  placesRoot->appendRow(desktopItem);
 
-  item = new Item("user-trash", tr("Trash"), fm_path_get_trash());
-  item->setEditable(false);
-  rootItem->appendRow(item);
+  trashItem = new Item("user-trash", tr("Trash"), fm_path_get_trash());
+  trashItem->setEditable(false);
+  placesRoot->appendRow(trashItem);
 
   FmPath* path = fm_path_new_for_uri("computer:///");
-  item = new Item("computer", tr("Computer"), path);
+  computerItem = new Item("computer", tr("Computer"), path);
   fm_path_unref(path);
-  item->setEditable(false);
-  rootItem->appendRow(item);
+  computerItem->setEditable(false);
+  placesRoot->appendRow(computerItem);
 
-  item = new Item("system-software-install", tr("Applications"), fm_path_get_apps_menu());
-  item->setEditable(false);
-  rootItem->appendRow(item);
+  applicationsItem = new Item("system-software-install", tr("Applications"), fm_path_get_apps_menu());
+  applicationsItem->setEditable(false);
+  placesRoot->appendRow(applicationsItem);
 
   path = fm_path_new_for_uri("network:///");
-  item = new Item("network", tr("Network"));
+  networkItem = new Item("network", tr("Network"));
   fm_path_unref(path);
-  item->setEditable(false);
-  rootItem->appendRow(item);
+  networkItem->setEditable(false);
+  placesRoot->appendRow(networkItem);
 
-  rootItem = new QStandardItem("Devices");
-  rootItem->setEditable(false);
-  rootItem->setSelectable(false);
-  appendRow(rootItem);
+  devicesRoot = new QStandardItem("Devices");
+  devicesRoot->setEditable(false);
+  devicesRoot->setSelectable(false);
+  appendRow(devicesRoot);
 
   // volumes
   volumeMonitor = g_volume_monitor_get();
   if(volumeMonitor) {
-    /*
-    g_signal_connect(volumeMonitor, "volume-added", G_CALLBACK(on_volume_added), self);
-    g_signal_connect(volumeMonitor, "volume-removed", G_CALLBACK(on_volume_removed), self);
-    g_signal_connect(volumeMonitor, "volume-changed", G_CALLBACK(on_volume_changed), self);
-    g_signal_connect(volumeMonitor, "mount-added", G_CALLBACK(on_mount_added), self);
-    g_signal_connect(volumeMonitor, "mount-changed", G_CALLBACK(on_mount_changed), self);
-    g_signal_connect(volumeMonitor, "mount-removed", G_CALLBACK(on_mount_removed), self);
-    */
+    g_signal_connect(volumeMonitor, "volume-added", G_CALLBACK(onVolumeAdded), this);
+    g_signal_connect(volumeMonitor, "volume-removed", G_CALLBACK(onVolumeRemoved), this);
+    g_signal_connect(volumeMonitor, "volume-changed", G_CALLBACK(onVolumeChanged), this);
+    g_signal_connect(volumeMonitor, "mount-added", G_CALLBACK(onMountAdded), this);
+    g_signal_connect(volumeMonitor, "mount-changed", G_CALLBACK(onMountChanged), this);
+    g_signal_connect(volumeMonitor, "mount-removed", G_CALLBACK(onMountRemoved), this);
   }
 
   // add volumes to side-pane
@@ -162,7 +160,7 @@ PlacesModel::PlacesModel(QObject* parent):
   for(l = vols; l; l = l->next) {
     GVolume* volume = G_VOLUME(l->data);
     item = new VolumeItem(volume);
-    rootItem->appendRow(item);
+    devicesRoot->appendRow(item);
     g_object_unref(volume);
   }
   g_list_free(vols);
@@ -176,32 +174,46 @@ PlacesModel::PlacesModel(QObject* parent):
       g_object_unref(volume);
     else { /* network mounts or others */
       item = new MountItem(mount);
-      rootItem->appendRow(item);
+      devicesRoot->appendRow(item);
     }
     g_object_unref(mount);
   }
   g_list_free(vols);
 
   // bookmarks
-  rootItem = new QStandardItem("Bookmarks");
-  rootItem->setEditable(false);
-  rootItem->setSelectable(false);
-  appendRow(rootItem);
+  bookmarksRoot = new QStandardItem("Bookmarks");
+  bookmarksRoot->setEditable(false);
+  bookmarksRoot->setSelectable(false);
+  appendRow(bookmarksRoot);
   
   bookmarks = fm_bookmarks_dup();
-  l = fm_bookmarks_get_all(bookmarks);
+  loadBookmarks();
+  g_signal_connect(bookmarks, "changed", G_CALLBACK(onBookmarksChanged), this);
+}
+
+void PlacesModel::loadBookmarks() {
+  GList* l = fm_bookmarks_get_all(bookmarks);
   for(; l; l = l->next) {
     FmBookmarkItem* bm_item = (FmBookmarkItem*)l->data;
-    item = new BookmarkItem(bm_item);
-    rootItem->appendRow(item);
+    BookmarkItem* item = new BookmarkItem(bm_item);
+    bookmarksRoot->appendRow(item);
   }
 }
 
 PlacesModel::~PlacesModel() {
-  if(bookmarks);
+  if(bookmarks) {
+    g_signal_handlers_disconnect_by_func(bookmarks, (gpointer)onBookmarksChanged, this);
     g_object_unref(bookmarks);
-  if(volumeMonitor)
+  }
+  if(volumeMonitor) {
+    g_signal_handlers_disconnect_by_func(volumeMonitor, (gpointer)G_CALLBACK(onVolumeAdded), this);
+    g_signal_handlers_disconnect_by_func(volumeMonitor, (gpointer)G_CALLBACK(onVolumeRemoved), this);
+    g_signal_handlers_disconnect_by_func(volumeMonitor, (gpointer)G_CALLBACK(onVolumeChanged), this);
+    g_signal_handlers_disconnect_by_func(volumeMonitor, (gpointer)G_CALLBACK(onMountAdded), this);
+    g_signal_handlers_disconnect_by_func(volumeMonitor, (gpointer)G_CALLBACK(onMountChanged), this);
+    g_signal_handlers_disconnect_by_func(volumeMonitor, (gpointer)G_CALLBACK(onMountRemoved), this);
     g_object_unref(volumeMonitor);
+  }
 }
 
 PlacesModel::BookmarkItem::BookmarkItem(FmBookmarkItem* bm_item):
@@ -211,17 +223,23 @@ PlacesModel::BookmarkItem::BookmarkItem(FmBookmarkItem* bm_item):
 }
 
 PlacesModel::VolumeItem::VolumeItem(GVolume* volume):
-  Item(QString::fromUtf8(g_volume_get_name(volume))),
+  Item(NULL),
   volume_(reinterpret_cast<GVolume*>(g_object_ref(volume))) {
+  update();
+  setEditable(false);
+}
 
+void PlacesModel::VolumeItem::update() {
+  // set title
+  setText(QString::fromUtf8(g_volume_get_name(volume_)));
+  
   // set icon
-  GIcon* gicon = g_volume_get_icon(volume);
+  GIcon* gicon = g_volume_get_icon(volume_);
   setIcon(IconTheme::icon(gicon));
   g_object_unref(gicon);
-  setEditable(false);
 
   // set dir path
-  GMount* mount = g_volume_get_mount(volume);
+  GMount* mount = g_volume_get_mount(volume_);
   if(mount) {
     GFile* mount_root = g_mount_get_root(mount);
     FmPath* mount_path = fm_path_new_for_gfile(mount_root);
@@ -232,6 +250,7 @@ PlacesModel::VolumeItem::VolumeItem(GVolume* volume):
   }
 }
 
+
 bool PlacesModel::VolumeItem::isMounted() {
   GMount* mount = g_volume_get_mount(volume_);
   if(mount)
@@ -241,22 +260,29 @@ bool PlacesModel::VolumeItem::isMounted() {
 
 
 PlacesModel::MountItem::MountItem(GMount* mount):
-  Item(QString::fromUtf8(g_mount_get_name(mount))),
+  Item(NULL),
   mount_(reinterpret_cast<GMount*>(mount)) {
+  update();
+  setEditable(false);
+}
 
+void PlacesModel::MountItem::update() {
+  // set title
+  setText(QString::fromUtf8(g_mount_get_name(mount_)));
+  
   // set path
-  GFile* mount_root = g_mount_get_root(mount);
+  GFile* mount_root = g_mount_get_root(mount_);
   FmPath* mount_path = fm_path_new_for_gfile(mount_root);
   setPath(mount_path);
   fm_path_unref(mount_path);
   g_object_unref(mount_root);
-
+  
   // set icon
-  GIcon* gicon = g_mount_get_icon(mount);
+  GIcon* gicon = g_mount_get_icon(mount_);
   setIcon(IconTheme::icon(gicon));
   g_object_unref(gicon);
-  setEditable(false);
 }
+
 
 void PlacesModel::setShowApplications(bool show) {
   if(showApplications_ != show) {
@@ -276,125 +302,140 @@ void PlacesModel::setShowTrash(bool show) {
   }
 }
 
-
-#if 0
-void PlacesModel::addItem(GVolume* volume, FmFileInfoJob* job) {
+PlacesModel::Item* PlacesModel::itemFromPath(FmPath* path) {
+  Item* item = itemFromPath(placesRoot, path);
+  if(!item)
+    item = itemFromPath(devicesRoot, path);
+  if(!item)
+    item = itemFromPath(bookmarksRoot, path);
+  return item;
 }
 
-void PlacesModel::addMount(GMount* mount, FmFileInfoJob* job) {
+PlacesModel::Item* PlacesModel::itemFromPath(QStandardItem* rootItem, FmPath* path) {
+  int rowCount = rootItem->rowCount();
+  for(int i = 0; i < rowCount; ++i) {
+    Item* item = reinterpret_cast<Item*>(rootItem->child(i, 0));
+    if(fm_path_equal(item->path(), path))
+      return item;
+  }
+  return NULL;
 }
 
-void PlacesModel::addItem(GObject* volume_or_mount, FmFileInfoJob* job) {
-    if(G_IS_VOLUME(volume_or_mount))
-    {
-        tp = gtk_tree_row_reference_get_path(model->separator);
-        item = add_new_item(GTK_LIST_STORE(model), FM_PLACES_ITEM_VOLUME, &it, tp);
-        gtk_tree_path_free(tp);
-        item->volume = G_VOLUME(g_object_ref(volume_or_mount));
+PlacesModel::VolumeItem* PlacesModel::itemFromVolume(GVolume* volume) {
+  int rowCount = devicesRoot->rowCount();
+  for(int i = 0; i < rowCount; ++i) {
+    Item* item = reinterpret_cast<Item*>(devicesRoot->child(i, 0));
+    if(item->type() == ItemTypeVolume) {
+      VolumeItem* volumeItem = reinterpret_cast<VolumeItem*>(item);
+      if(volumeItem->volume() == volume)
+        return volumeItem;
     }
-    else if(G_IS_MOUNT(volume_or_mount))
-    {
-        tp = gtk_tree_row_reference_get_path(model->separator);
-        item = add_new_item(GTK_LIST_STORE(model), FM_PLACES_ITEM_MOUNT, &it, tp);
-        gtk_tree_path_free(tp);
-        item->mount = G_MOUNT(g_object_ref(volume_or_mount));
-    }
-    else
-    {
-        /* NOTE: this is impossible, unless a bug exists */
-        return;
-    }
-    update_volume_or_mount(model, item, &it, job);
+  }
+  return NULL;
 }
 
-void PlacesModel::update_volume_or_mount(FmPlacesItem* item, GtkTreeIter* it, FmFileInfoJob* job)
-{
-    GIcon* gicon;
-    char* name;
-    GdkPixbuf* pix;
-    GMount* mount;
-    FmPath* path;
-
-    if(item->type == FM_PLACES_ITEM_VOLUME)
-    {
-        name = g_volume_get_name(item->volume);
-        gicon = g_volume_get_icon(item->volume);
-        mount = g_volume_get_mount(item->volume);
+PlacesModel::MountItem* PlacesModel::itemFromMount(GMount* mount) {
+  int rowCount = devicesRoot->rowCount();
+  for(int i = 0; i < rowCount; ++i) {
+    Item* item = reinterpret_cast<Item*>(devicesRoot->child(i, 0));
+    if(item->type() == ItemTypeMount) {
+      MountItem* mountItem = reinterpret_cast<MountItem*>(item);
+      if(mountItem->mount() == mount)
+        return mountItem;
     }
-    else if(G_LIKELY(item->type == FM_PLACES_ITEM_MOUNT))
-    {
-        name = g_mount_get_name(item->mount);
-        gicon = g_mount_get_icon(item->mount);
-        mount = g_object_ref(item->mount);
-    }
-    else
-        return; /* FIXME: is it possible? */
-
-    if(item->icon)
-        fm_icon_unref(item->icon);
-    item->icon = fm_icon_from_gicon(gicon);
-    g_object_unref(gicon);
-
-    if(mount)
-    {
-        GFile* gf = g_mount_get_root(mount);
-        path = fm_path_new_for_gfile(gf);
-        g_object_unref(gf);
-        g_object_unref(mount);
-        item->mounted = TRUE;
-    }
-    else
-    {
-        path = NULL;
-        item->mounted = FALSE;
-    }
-
-    if(!fm_path_equal(fm_file_info_get_path(item->fi), path))
-    {
-        fm_file_info_set_path(item->fi, path);
-        if(path)
-        {
-            if(job)
-                fm_file_info_job_add(job, path);
-            else
-            {
-                job = fm_file_info_job_new(NULL, FM_FILE_INFO_JOB_FOLLOW_SYMLINK);
-                model->jobs = g_slist_prepend(model->jobs, job);
-                g_signal_connect(job, "finished", G_CALLBACK(on_file_info_job_finished), model);
-                fm_job_run_async(FM_JOB(job));
-            }
-            fm_path_unref(path);
-        }
-    }
-
-    pix = fm_pixbuf_from_icon(item->icon, fm_config->pane_icon_size);
-    gtk_list_store_set(GTK_LIST_STORE(model), it, FM_PLACES_MODEL_COL_ICON, pix, FM_PLACES_MODEL_COL_LABEL, name, -1);
-    g_object_unref(pix);
-    g_free(name);
+  }
+  return NULL;
 }
 
-#endif
+PlacesModel::BookmarkItem* PlacesModel::itemFromBookmark(FmBookmarkItem* bkitem) {
+  int rowCount = bookmarksRoot->rowCount();
+  for(int i = 0; i < rowCount; ++i) {
+    BookmarkItem* item = reinterpret_cast<BookmarkItem*>(bookmarksRoot->child(i, 0));
+    if(item->bookmark() == bkitem)
+      return item;
+  }
+  return NULL;
+}
+
+void PlacesModel::onMountAdded(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis) {
+  GVolume* vol = g_mount_get_volume(mount);
+  if(vol) { // mount-added is also emitted when a volume is newly mounted.
+    VolumeItem* item = pThis->itemFromVolume(vol);
+    if(item && !item->path()) {
+      // update the mounted volume and show a button for eject.
+      GFile* gf = g_mount_get_root(mount);
+      FmPath* path = fm_path_new_for_gfile(gf);
+      g_object_unref(gf);
+      item->setPath(path);
+      if(path)
+        fm_path_unref(path);
+      // TODO: inform the view to update mount indicator
+    }
+    g_object_unref(vol);
+  }
+  else { // network mounts and others
+    MountItem* item = pThis->itemFromMount(mount);
+    /* for some unknown reasons, sometimes we get repeated mount-added 
+     * signals and added a device more than one. So, make a sanity check here. */
+    if(!item) {
+      item = new MountItem(mount);
+      pThis->devicesRoot->appendRow(item);
+    }
+  }
+}
+
+void PlacesModel::onMountChanged(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis) {
+  MountItem* item = pThis->itemFromMount(mount);
+  if(item)
+    item->update();
+}
+
+void PlacesModel::onMountRemoved(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis) {
+  GVolume* vol = g_mount_get_volume(mount);
+  if(vol) // we handle volumes in volume-removed handler
+    g_object_unref(vol);
+  else { // network mounts and others
+    MountItem* item = pThis->itemFromMount(mount);
+    if(item) {
+      pThis->devicesRoot->removeRow(item->row());
+    }
+  }
+}
+
+void PlacesModel::onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis) {
+  // for some unknown reasons, sometimes we get repeated volume-added
+  // signals and added a device more than one. So, make a sanity check here.
+  VolumeItem* item = pThis->itemFromVolume(volume);
+  if(!item) {
+    item = new VolumeItem(volume);
+    pThis->devicesRoot->appendRow(item);
+  }
+}
+
+void PlacesModel::onVolumeChanged(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis) {
+  VolumeItem* item = pThis->itemFromVolume(volume);
+  if(item)
+    item->update();
+}
+
+void PlacesModel::onVolumeRemoved(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis) {
+  VolumeItem* item = pThis->itemFromVolume(volume);
+  if(item) {
+    pThis->devicesRoot->removeRow(item->row());
+  }
+}
+
+void PlacesModel::onBookmarksChanged(FmBookmarks* bookmarks, PlacesModel* pThis) {
+  // remove all items
+  pThis->bookmarksRoot->removeRows(0, pThis->bookmarksRoot->rowCount());
+  pThis->loadBookmarks();
+}
+
 
 /*
 
-QModelIndex PlacesModel::index(int row, int column, const QModelIndex& parent) const {
-  return QAbstractListModel::index(row, column, parent);
-}
-
 bool PlacesModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent) {
   return QAbstractListModel::dropMimeData(data, action, row, column, parent);
-}
-
-QVariant PlacesModel::data(const QModelIndex& index, int role) const {
-
-}
-
-int PlacesModel::rowCount(const QModelIndex& parent) const {
-
-}
-
-PlacesModel::~QAbstractQStandardItemModel() {
-
 }
 
 QMimeData* PlacesModel::mimeData(const QModelIndexList& indexes) const {
