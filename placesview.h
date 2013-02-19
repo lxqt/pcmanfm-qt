@@ -23,11 +23,10 @@
 
 #include <QTreeView>
 #include <libfm/fm.h>
+#include "placesmodel.h"
 
 namespace Fm {
   
-class PlacesModel;
-
 class PlacesView : public QTreeView
 {
 Q_OBJECT
@@ -47,6 +46,14 @@ Q_SIGNALS:
 protected Q_SLOTS:
   void onClicked(const QModelIndex & index);
   // void onMountOperationFinished(GError* error);
+
+  void onMountVolume();
+  void onUnmountVolume();
+  void onEjectVolume();
+  void onUnmountMount();
+
+  void onDeleteBookmark();
+  void onRenameBookmark();
 
 protected:
   void drawBranches ( QPainter * painter, const QRect & rect, const QModelIndex & index ) const {

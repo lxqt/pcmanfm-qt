@@ -24,6 +24,7 @@
 #include <QStandardItemModel>
 #include <QStandardItem>
 #include <QList>
+#include <QAction>
 #include <libfm/fm.h>
 
 namespace Fm {
@@ -39,7 +40,7 @@ public:
     ItemTypeMount,
     ItemTypeBookmark
   };
-
+  
   // model item
   class Item : public QStandardItem {
     public:
@@ -120,7 +121,22 @@ public:
     private:
       FmBookmarkItem* bookmarkItem_;
   };
-  
+
+  // QAction used for popup menus
+  class ItemAction : public QAction {
+  public:
+    ItemAction(Item* item, QString text, QObject* parent = 0):
+      QAction(text, parent),
+      item_(item) {
+    }
+
+    Item* item() {
+      return item_;
+    }
+  private:
+    Item* item_;
+  };
+
 public:
   explicit PlacesModel(QObject* parent = 0);
   virtual ~PlacesModel();

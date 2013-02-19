@@ -87,8 +87,10 @@ void FolderView::setViewMode(ViewMode _mode) {
     view = treeView;
     treeView->setItemsExpandable(false);
     treeView->setRootIsDecorated(false);
-    treeView->header()->setResizeMode(0, QHeaderView::ResizeToContents); // QHeaderView::Stretch);
     treeView->setAllColumnsShowFocus(false);
+
+    // FIXME: why this doesn't work?
+    treeView->header()->setResizeMode(0, QHeaderView::Stretch); // QHeaderView::ResizeToContents);
     // treeView->setSelectionBehavior(QAbstractItemView::SelectItems);
     iconSize_ = QSize(fm_config->small_icon_size, fm_config->small_icon_size); // FIXME: should we use FmConfig?
   }
@@ -198,7 +200,7 @@ void FolderView::contextMenuEvent(QContextMenuEvent* event) {
   g_print("%d, %d\n", pos.x(), pos.y());
   QPoint pos2 = view->mapFromParent(pos);
   emitClickedAt(ContextMenuClick, pos2);
-  g_print("MAPPED: %d, %d\n", pos2.x(), pos2.y());
+  // g_print("MAPPED: %d, %d\n", pos2.x(), pos2.y());
 }
 
 void FolderView::emitClickedAt(ClickType type, QPoint& pos) {

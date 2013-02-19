@@ -83,7 +83,7 @@ void TabPage::freeFolder() {
 
 /*static*/ void TabPage::onFolderStartLoading(FmFolder* _folder, TabPage* pThis) {
   QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
-
+  qDebug("start-loading");
 #if 0
 #if FM_CHECK_VERSION(1, 0, 2) && 0 // disabled
     if(fm_folder_is_incremental(_folder))
@@ -163,12 +163,18 @@ void TabPage::freeFolder() {
       FmPath* path = fm_folder_get_path(_folder);
       MountOperation* op = new MountOperation(pThis);
       op->mount(path);
-      if(op->wait()) // blocking event loop, wait for mount operation to finish.
+      if(op->wait()) { // blocking event loop, wait for mount operation to finish.
+        // This will reload the folder, which generates a new "start-loading"
+        // signal, so we get more "start-loading" signals than "finish-loading"
+        // signals. FIXME: This is a bug of libfm.
+        // Because the two signals are not correctly paired, we need to 
+        // remove busy cursor here since "finish-loading" is not emitted.
+        QApplication::restoreOverrideCursor(); // remove busy cursor
         return FM_JOB_RETRY;
+      }
     }
   }
-  if(severity >= FM_JOB_ERROR_MODERATE)
-  {
+  if(severity >= FM_JOB_ERROR_MODERATE) {
     /* Only show more severe errors to the users and
       * ignore milder errors. Otherwise too many error
       * message boxes can be annoying.

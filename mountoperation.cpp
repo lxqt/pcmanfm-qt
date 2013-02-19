@@ -144,7 +144,7 @@ void MountOperation::handleFinish(GError* error) {
         showError = false;
     }
     if(showError)
-      QMessageBox::critical(parent_, QObject::tr("Error"), QString::fromUtf8(error->message));
+      QMessageBox::critical(NULL, QObject::tr("Error"), QString::fromUtf8(error->message));
   }
 
   Q_EMIT finished(error);
