@@ -248,6 +248,9 @@ void PlacesModel::VolumeItem::update() {
     g_object_unref(mount_root);
     g_object_unref(mount);
   }
+  else {
+    setPath(NULL);
+  }
 }
 
 

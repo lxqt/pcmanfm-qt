@@ -22,15 +22,20 @@
 #define FM_MOUNTOPERATION_H
 
 #include <QWidget>
+#include <QDialog>
+#include <QEventLoop>
 #include <libfm/fm.h>
 #include <gio/gio.h>
+
+#include "ui_mount-operation-password.h"
+
 
 namespace Fm {
 
 // FIXME: the original APIs in gtk+ version of libfm for mounting devices is poor.
 // Need to find a better API design which make things fully async and cancellable.
   
-class MountOperation: QObject {
+class MountOperation: public QObject {
 Q_OBJECT
 
 public:
@@ -83,6 +88,10 @@ public:
     return cancellable_;
   }
   
+  GMountOperation* mountOperation() {
+    return op;
+  }
+  
   void cancel() {
     g_cancellable_cancel(cancellable_);
   }
@@ -91,6 +100,10 @@ public:
     return running;
   }
 
+  // block the operation used an internal QEventLoop and returns
+  // only after the whole operation is finished.
+  bool wait();
+  
 Q_SIGNALS:
   void finished(GError* error = NULL);
 
@@ -123,6 +136,7 @@ private:
   QWidget* parent_;
   bool running;
   bool interactive_;
+  QEventLoop* eventLoop;
 };
 
 }

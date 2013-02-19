@@ -108,8 +108,10 @@ void TabPage::freeFolder() {
 
   // FIXME: is this needed?
   FmFileInfo* fi = fm_folder_get_info(_folder);
-  pThis->title_ = QString::fromUtf8(fm_file_info_get_disp_name(fi));
-  Q_EMIT pThis->titleChanged(pThis->title_);
+  if(fi) { // if loading of the folder fails, it's possible that we don't have FmFileInfo.
+    pThis->title_ = QString::fromUtf8(fm_file_info_get_disp_name(fi));
+    Q_EMIT pThis->titleChanged(pThis->title_);
+  }
 
   fm_folder_query_filesystem_info(_folder); // FIXME: is this needed?
 #if 0
@@ -160,8 +162,9 @@ void TabPage::freeFolder() {
     {
       FmPath* path = fm_folder_get_path(_folder);
       MountOperation* op = new MountOperation(pThis);
-      op->mount(path); // FIXME
-      return FM_JOB_CONTINUE;
+      op->mount(path);
+      if(op->wait()) // blocking event loop, wait for mount operation to finish.
+        return FM_JOB_RETRY;
     }
   }
   if(severity >= FM_JOB_ERROR_MODERATE)
@@ -172,7 +175,7 @@ void TabPage::freeFolder() {
       * This fixes bug #3411298- Show "Permission denied" when switching to super user mode.
       * https://sourceforge.net/tracker/?func=detail&aid=3411298&group_id=156956&atid=801864
       * */
-    QMessageBox::critical(pThis, NULL, err->message);
+    QMessageBox::critical(pThis, NULL, QString::fromUtf8(err->message));
   }
   return FM_JOB_CONTINUE;
 }

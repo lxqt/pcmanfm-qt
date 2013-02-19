@@ -21,30 +21,17 @@
 #include "mountoperation.h"
 #include <glib/gi18n.h> // for _()
 #include <QMessageBox>
-
-#include "ui_mount-operation-password.h"
+#include "mountoperationpassworddialog.h"
 
 using namespace Fm;
 
-class MountOpAskPasswordDialog : public QDialog {
-public:
-  explicit MountOpAskPasswordDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) : QDialog(parent) {
-    ui.setupUi(this);
-  }
-
-  virtual ~MountOpAskPasswordDialog() {
-  }
-
-private:
-  Ui::MountOpAskPasswordDialog ui;
-};
-
-
 MountOperation::MountOperation(bool interactive, QWidget* parent):
+  QObject(parent),
   interactive_(interactive),
   running(false),
   op(g_mount_operation_new()),
-  cancellable_(g_cancellable_new()) {
+  cancellable_(g_cancellable_new()),
+  eventLoop(NULL) {
   
   g_signal_connect(op, "ask-password", G_CALLBACK(onAskPassword), this);
   g_signal_connect(op, "ask-question", G_CALLBACK(onAskQuestion), this);
@@ -77,19 +64,24 @@ void MountOperation::onAbort(GMountOperation* _op, MountOperation* pThis) {
 
 void MountOperation::onAskPassword(GMountOperation* _op, gchar* message, gchar* default_user, gchar* default_domain, GAskPasswordFlags flags, MountOperation* pThis) {
   qDebug("ask password");
-  MountOpAskPasswordDialog* dlg = new MountOpAskPasswordDialog(pThis->parent());
-  int res = dlg->exec();
-  if(res == QDialog::Accepted) {
-    g_mount_operation_reply(_op, G_MOUNT_OPERATION_HANDLED);
-  }
-  else {
-    g_mount_operation_reply(_op, G_MOUNT_OPERATION_ABORTED);
-  }
-  dlg->done(res);
+  MountOperationPasswordDialog dlg(pThis, flags);
+  dlg.setMessage(QString::fromUtf8(message));
+  dlg.setDefaultUser(QString::fromUtf8(default_user));
+  dlg.setDefaultDomain(QString::fromUtf8(default_domain));
+
+  dlg.exec();
 }
 
 void MountOperation::onAskQuestion(GMountOperation* _op, gchar* message, GStrv choices, MountOperation* pThis) {
   qDebug("ask question");
+  QMessageBox dialog;
+  dialog.setIcon(QMessageBox::Question);
+  dialog.setText(QString::fromUtf8(message));
+  int n = g_strv_length(choices);
+  for(int i = 0; i < n; ++i) {
+    dialog.addButton(QString::fromUtf8(choices[i]), QMessageBox::AcceptRole);
+  }
+  dialog.exec();
 }
 
 void MountOperation::onReply(GMountOperation* _op, GMountOperationResult result, MountOperation* pThis) {
@@ -137,30 +129,34 @@ void MountOperation::onUnmountMountFinished(GMount* mount, GAsyncResult* res, Mo
 void MountOperation::handleFinish(GError* error) {
   qDebug("operation finished: %p", error);
   if(error) {
-	bool showError = interactive_;
-	if(error->domain == G_IO_ERROR) {
-	  if(error->code == G_IO_ERROR_FAILED) {
-		// Generate a more human-readable error message instead of using a gvfs one.
-		// The original error message is something like:
-		// Error unmounting: umount exited with exit code 1:
-		// helper failed with: umount: only root can unmount
-		// UUID=18cbf00c-e65f-445a-bccc-11964bdea05d from /media/sda4 */
-		// Why they pass this back to us? This is not human-readable for the users at all.
-		if(strstr(error->message, "only root can ")) {
-		  g_free(error->message);
-		  error->message = g_strdup(_("Only system administrators have the permission to do this."));
-		}
-	  }
-	  else if(error->code == G_IO_ERROR_FAILED_HANDLED)
-		showError = false;
-	}
-	if(showError)
-	  QMessageBox::critical(parent_, QObject::tr("Error"), QString::fromUtf8(error->message));
+    bool showError = interactive_;
+    if(error->domain == G_IO_ERROR) {
+      if(error->code == G_IO_ERROR_FAILED) {
+        // Generate a more human-readable error message instead of using a gvfs one.
+        // The original error message is something like:
+        // Error unmounting: umount exited with exit code 1:
+        // helper failed with: umount: only root can unmount
+        // UUID=18cbf00c-e65f-445a-bccc-11964bdea05d from /media/sda4 */
+        // Why they pass this back to us? This is not human-readable for the users at all.
+        if(strstr(error->message, "only root can ")) {
+          g_free(error->message);
+          error->message = g_strdup(_("Only system administrators have the permission to do this."));
+        }
+      }
+      else if(error->code == G_IO_ERROR_FAILED_HANDLED)
+        showError = false;
+    }
+    if(showError)
+      QMessageBox::critical(parent_, QObject::tr("Error"), QString::fromUtf8(error->message));
   }
 
   Q_EMIT finished(error);
+
+  if(eventLoop) // if wait() is called to block the main loop
+    eventLoop->exit(error != NULL ? 1 : 0);
+
   if(error)
-	g_error_free(error);
+    g_error_free(error);
 
   // free ourself here!!
   delete this;
@@ -179,6 +175,14 @@ void MountOperation::prepareUnmount(GMount* mount) {
       g_chdir("/");
   g_object_unref(cwd);
   g_object_unref(root);
+}
+
+// block the operation used an internal QEventLoop and returns
+// only after the whole operation is finished.
+bool MountOperation::wait() {
+  eventLoop = new QEventLoop();
+  int exitCode = eventLoop->exec();
+  return exitCode == 0 ? true : false;
 }
 
 #include "mountoperation.moc"

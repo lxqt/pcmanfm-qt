@@ -46,6 +46,7 @@ Q_SIGNALS:
 
 protected Q_SLOTS:
   void onClicked(const QModelIndex & index);
+  // void onMountOperationFinished(GError* error);
 
 protected:
   void drawBranches ( QPainter * painter, const QRect & rect, const QModelIndex & index ) const {

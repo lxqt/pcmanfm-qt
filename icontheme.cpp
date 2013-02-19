@@ -58,7 +58,7 @@ QIcon IconTheme::convertFromGIcon(GIcon* gicon) {
     const gchar * const * names = g_themed_icon_get_names(G_THEMED_ICON(gicon));
     const gchar * const * name;
     for(name = names; *name; ++name) {
-      qDebug("icon name=%s", *name);
+      // qDebug("icon name=%s", *name);
       QString qname = *name;
       QIcon qicon = QIcon::fromTheme(qname);
       if(!qicon.isNull()) {

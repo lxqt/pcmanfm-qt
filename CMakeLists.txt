@@ -50,6 +50,7 @@ set(pcmanfm_SRCS
   placesview.cpp
   placesmodel.cpp
   mountoperation.cpp
+  mountoperationpassworddialog.cpp
   fileoperation.cpp
   fileoperationdialog.cpp
 #  ${qmodeltest_SRCS}

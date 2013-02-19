@@ -61,8 +61,13 @@ void PlacesView::onClicked(const QModelIndex& index) {
           GVolume* volume = volumeItem->volume();
           MountOperation* op = new MountOperation(true, this);
           op->mount(volume);
+          // connect(op, SIGNAL(finished(GError*)), SLOT(onMountOperationFinished(GError*)));
+          // blocking here until the mount operation is finished?
+
           // FIXME: update status of the volume after mount is finished!!
-          return;
+          if(!op->wait())
+            return;
+          path = item->path();
         }
       }
     }
