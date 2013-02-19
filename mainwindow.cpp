@@ -243,7 +243,7 @@ void MainWindow::onStackedWidgetWidgetRemoved(int index) {
 }
 
 void MainWindow::onTabPageTitleChanged(QString title) {
-  TabPage* tabPage = reinterpret_cast<TabPage*>(sender());
+  TabPage* tabPage = static_cast<TabPage*>(sender());
   int index = ui.stackedWidget->indexOf(tabPage);
 
   if(index >= 0)
@@ -254,7 +254,7 @@ void MainWindow::onTabPageTitleChanged(QString title) {
 }
 
 void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
-  TabPage* tabPage = reinterpret_cast<TabPage*>(sender());
+  TabPage* tabPage = static_cast<TabPage*>(sender());
   if(tabPage == currentPage()) {
     switch(type) {
       case TabPage::StatusTextNormal:
@@ -319,7 +319,7 @@ void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
   QList<QAction*>::const_iterator it = actions.begin();
   QList<QAction*>::const_iterator last_it = actions.end() - 1;
   while(it != last_it) {
-    QAction* action = reinterpret_cast<QAction*>(*it);
+    QAction* action = *it;
     ++it;
     pThis->ui.menu_Bookmarks->removeAction(action);
   }
@@ -327,7 +327,7 @@ void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
 }
 
 void MainWindow::onBookmarkActionTriggered() {
-  BookmarkAction* action = reinterpret_cast<BookmarkAction*>(sender());
+  BookmarkAction* action = static_cast<BookmarkAction*>(sender());
   FmPath* path = action->path();
   if(path)
     chdir(path);

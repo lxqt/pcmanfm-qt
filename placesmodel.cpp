@@ -317,7 +317,7 @@ PlacesModel::Item* PlacesModel::itemFromPath(FmPath* path) {
 PlacesModel::Item* PlacesModel::itemFromPath(QStandardItem* rootItem, FmPath* path) {
   int rowCount = rootItem->rowCount();
   for(int i = 0; i < rowCount; ++i) {
-    Item* item = reinterpret_cast<Item*>(rootItem->child(i, 0));
+    Item* item = static_cast<Item*>(rootItem->child(i, 0));
     if(fm_path_equal(item->path(), path))
       return item;
   }
@@ -327,9 +327,9 @@ PlacesModel::Item* PlacesModel::itemFromPath(QStandardItem* rootItem, FmPath* pa
 PlacesModel::VolumeItem* PlacesModel::itemFromVolume(GVolume* volume) {
   int rowCount = devicesRoot->rowCount();
   for(int i = 0; i < rowCount; ++i) {
-    Item* item = reinterpret_cast<Item*>(devicesRoot->child(i, 0));
+    Item* item = static_cast<Item*>(devicesRoot->child(i, 0));
     if(item->type() == ItemTypeVolume) {
-      VolumeItem* volumeItem = reinterpret_cast<VolumeItem*>(item);
+      VolumeItem* volumeItem = static_cast<VolumeItem*>(item);
       if(volumeItem->volume() == volume)
         return volumeItem;
     }
@@ -340,9 +340,9 @@ PlacesModel::VolumeItem* PlacesModel::itemFromVolume(GVolume* volume) {
 PlacesModel::MountItem* PlacesModel::itemFromMount(GMount* mount) {
   int rowCount = devicesRoot->rowCount();
   for(int i = 0; i < rowCount; ++i) {
-    Item* item = reinterpret_cast<Item*>(devicesRoot->child(i, 0));
+    Item* item = static_cast<Item*>(devicesRoot->child(i, 0));
     if(item->type() == ItemTypeMount) {
-      MountItem* mountItem = reinterpret_cast<MountItem*>(item);
+      MountItem* mountItem = static_cast<MountItem*>(item);
       if(mountItem->mount() == mount)
         return mountItem;
     }
@@ -353,7 +353,7 @@ PlacesModel::MountItem* PlacesModel::itemFromMount(GMount* mount) {
 PlacesModel::BookmarkItem* PlacesModel::itemFromBookmark(FmBookmarkItem* bkitem) {
   int rowCount = bookmarksRoot->rowCount();
   for(int i = 0; i < rowCount; ++i) {
-    BookmarkItem* item = reinterpret_cast<BookmarkItem*>(bookmarksRoot->child(i, 0));
+    BookmarkItem* item = static_cast<BookmarkItem*>(bookmarksRoot->child(i, 0));
     if(item->bookmark() == bkitem)
       return item;
   }

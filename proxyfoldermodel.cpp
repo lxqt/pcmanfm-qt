@@ -55,7 +55,7 @@ bool ProxyFolderModel::lessThan(const QModelIndex& left, const QModelIndex& righ
 }
 
 FmFileInfo* ProxyFolderModel::fileInfoFromIndex(const QModelIndex& index) const {
-  FolderModel* srcModel = reinterpret_cast<FolderModel*>(sourceModel());
+  FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
   if(srcModel) {
     QModelIndex srcIndex = mapToSource(index);
     return srcModel->fileInfoFromIndex(srcIndex);

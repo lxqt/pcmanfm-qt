@@ -21,7 +21,9 @@
 #include "mountoperation.h"
 #include <glib/gi18n.h> // for _()
 #include <QMessageBox>
+#include <QPushButton>
 #include "mountoperationpassworddialog.h"
+#include "mountoperationquestiondialog.h"
 
 using namespace Fm;
 
@@ -35,7 +37,7 @@ MountOperation::MountOperation(bool interactive, QWidget* parent):
   
   g_signal_connect(op, "ask-password", G_CALLBACK(onAskPassword), this);
   g_signal_connect(op, "ask-question", G_CALLBACK(onAskQuestion), this);
-  g_signal_connect(op, "reply", G_CALLBACK(onReply), this);
+  // g_signal_connect(op, "reply", G_CALLBACK(onReply), this);
 
 #if GLIB_CHECK_VERSION(2, 20, 0)
   g_signal_connect(op, "aborted", G_CALLBACK(onAbort), this);
@@ -68,25 +70,20 @@ void MountOperation::onAskPassword(GMountOperation* _op, gchar* message, gchar* 
   dlg.setMessage(QString::fromUtf8(message));
   dlg.setDefaultUser(QString::fromUtf8(default_user));
   dlg.setDefaultDomain(QString::fromUtf8(default_domain));
-
   dlg.exec();
 }
 
 void MountOperation::onAskQuestion(GMountOperation* _op, gchar* message, GStrv choices, MountOperation* pThis) {
   qDebug("ask question");
-  QMessageBox dialog;
-  dialog.setIcon(QMessageBox::Question);
-  dialog.setText(QString::fromUtf8(message));
-  int n = g_strv_length(choices);
-  for(int i = 0; i < n; ++i) {
-    dialog.addButton(QString::fromUtf8(choices[i]), QMessageBox::AcceptRole);
-  }
+  MountOperationQuestionDialog dialog(pThis, message, choices);
   dialog.exec();
 }
 
+/*
 void MountOperation::onReply(GMountOperation* _op, GMountOperationResult result, MountOperation* pThis) {
   qDebug("reply");
 }
+*/
 
 void MountOperation::onShowProcesses(GMountOperation* _op, gchar* message, GArray* processes, GStrv choices, MountOperation* pThis) {
   qDebug("show processes");

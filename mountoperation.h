@@ -116,7 +116,7 @@ private:
 
   static void onAskPassword(GMountOperation *_op, gchar* message, gchar* default_user, gchar* default_domain, GAskPasswordFlags flags, MountOperation* pThis);
   static void onAskQuestion(GMountOperation *_op, gchar* message, GStrv choices, MountOperation* pThis);
-  static void onReply(GMountOperation *_op, GMountOperationResult result, MountOperation* pThis);
+  // static void onReply(GMountOperation *_op, GMountOperationResult result, MountOperation* pThis);
 
   static void onAbort(GMountOperation *_op, MountOperation* pThis);
   static void onShowProcesses(GMountOperation *_op, gchar* message, GArray* processes, GStrv choices, MountOperation* pThis);

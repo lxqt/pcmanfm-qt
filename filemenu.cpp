@@ -141,7 +141,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
 }
 
 void FileMenu::onApplicationTriggered(bool checked) {
-  AppInfoAction* action = reinterpret_cast<AppInfoAction*>(sender());
+  AppInfoAction* action = static_cast<AppInfoAction*>(sender());
   GAppInfo* appInfo = action->appInfo();
 
   // TODO: Launch the application selected
