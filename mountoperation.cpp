@@ -33,7 +33,8 @@ MountOperation::MountOperation(bool interactive, QWidget* parent):
   running(false),
   op(g_mount_operation_new()),
   cancellable_(g_cancellable_new()),
-  eventLoop(NULL) {
+  eventLoop(NULL),
+  autoDestroy_(true) {
   
   g_signal_connect(op, "ask-password", G_CALLBACK(onAskPassword), this);
   g_signal_connect(op, "ask-question", G_CALLBACK(onAskQuestion), this);
@@ -156,7 +157,8 @@ void MountOperation::handleFinish(GError* error) {
     g_error_free(error);
 
   // free ourself here!!
-  delete this;
+  if(autoDestroy_)
+    delete this;
 }
 
 void MountOperation::prepareUnmount(GMount* mount) {

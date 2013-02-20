@@ -29,8 +29,7 @@ namespace Fm {
 
 class FileOperationDialog;
 
-class FileOperation : public QObject
-{
+class FileOperation : public QObject {
 Q_OBJECT
 public:
   enum Type {
@@ -47,21 +46,48 @@ public:
   explicit FileOperation(Type type, FmPathList* srcFiles, QObject* parent = 0);
   virtual ~FileOperation();
 
+  void setDestination(FmPath* dest) {
+    destPath = fm_path_ref(dest);
+    fm_file_ops_job_set_dest(job_, dest);
+  }
+
   bool run();
 
   void cancel() {
-    if(job)
-      fm_job_cancel(FM_JOB(job));
+    if(job_)
+      fm_job_cancel(FM_JOB(job_));
   }
 
   bool isRunning() const {
-    return job ? fm_job_is_running(FM_JOB(job)) : false;
+    return job_ ? fm_job_is_running(FM_JOB(job_)) : false;
   }
 
   bool isCancelled() const {
-    return job ? fm_job_is_cancelled(FM_JOB(job)) : false;
+    return job_ ? fm_job_is_cancelled(FM_JOB(job_)) : false;
   }
 
+  FmFileOpsJob* job() {
+    return job_;
+  }
+
+  bool autoDestroy() {
+    return autoDestroy_;
+  }
+  void setAutoDestroy(bool destroy = true) {
+    autoDestroy_ = destroy;
+  }
+
+  // convinient static functions
+  static FileOperation* copyFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
+  static FileOperation* moveFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
+  static FileOperation* symlinkFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
+  static FileOperation* deleteFiles(FmPathList* srcFiles, QWidget* parent = 0);
+  static FileOperation* trashFiles(FmPathList* srcFiles, QWidget* parent = 0);
+  static FileOperation* changeAttrFiles(FmPathList* srcFiles, QWidget* parent = 0);
+
+Q_SIGNALS:
+  void finished();
+  
 private:
   static gint onFileOpsJobAsk(FmFileOpsJob* job, const char* question, char* const* options, FileOperation* pThis);
   static gint onFileOpsJobAskRename(FmFileOpsJob* job, FmFileInfo* src, FmFileInfo* dest, char** new_name, FileOperation* pThis);
@@ -72,16 +98,21 @@ private:
   static void onFileOpsJobFinished(FmFileOpsJob* job, FileOperation* pThis);
   static void onFileOpsJobCancelled(FmFileOpsJob* job, FileOperation* pThis);
 
+  void handleFinish();
   void disconnectJob();
   void showDialog();
 
 private Q_SLOTS:
-  void onShowDialogTimeout();
+  void onUiTimeout();
   
 private:
-  FmFileOpsJob* job;
+  FmFileOpsJob* job_;
   FileOperationDialog* dlg;
-  QTimer* showUITimer;
+  FmPath* destPath;
+  FmPathList* srcPaths;
+  QTimer* uiTimer;
+  QString curFile;
+  bool autoDestroy_;
 };
 
 }

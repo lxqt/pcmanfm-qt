@@ -54,7 +54,9 @@ set(pcmanfm_SRCS
   mountoperationquestiondialog.cpp
   fileoperation.cpp
   fileoperationdialog.cpp
-#  ${qmodeltest_SRCS}
+  pathcompleter.cpp
+  utilities.cpp
+  #  ${qmodeltest_SRCS}
 )
 
 set(pcmanfm_UIS

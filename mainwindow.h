@@ -42,6 +42,14 @@ protected Q_SLOTS:
   void on_actionNewWin_triggered();
   void on_actionQuit_triggered();
 
+  void on_actionCut_triggered();
+  void on_actionCopy_triggered();
+  void on_actionPaste_triggered();
+  void on_actionDelete_triggered();
+  void on_actionSelectAll_triggered();
+  void on_actionInvertSelection_triggered();
+  void on_actionPreferences_triggered();
+  
   void on_actionGoUp_triggered();
   void on_actionHome_triggered();
   void on_actionReload_triggered();

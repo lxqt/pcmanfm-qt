@@ -60,7 +60,7 @@
      <x>0</x>
      <y>0</y>
      <width>460</width>
-     <height>25</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -113,8 +113,11 @@
     <addaction name="actionCut"/>
     <addaction name="actionCopy"/>
     <addaction name="actionPaste"/>
+    <addaction name="actionRename"/>
+    <addaction name="actionDelete"/>
     <addaction name="separator"/>
     <addaction name="actionSelectAll"/>
+    <addaction name="actionInvertSelection"/>
     <addaction name="separator"/>
     <addaction name="actionPreferences"/>
    </widget>
@@ -431,6 +434,21 @@
    </property>
    <property name="shortcut">
     <string>Alt+Right</string>
+   </property>
+  </action>
+  <action name="actionInvertSelection">
+   <property name="text">
+    <string>Invert Selection</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionRename">
+   <property name="text">
+    <string>Rename</string>
    </property>
   </action>
  </widget>

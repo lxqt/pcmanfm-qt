@@ -19,10 +19,14 @@
 
 
 #include "fileoperationdialog.h"
+#include "fileoperation.h"
 
 using namespace Fm;
 
-FileOperationDialog::FileOperationDialog(QWidget* parent, Qt::WindowFlags f): QDialog(parent, f) {
+FileOperationDialog::FileOperationDialog(FileOperation* _operation):
+  QDialog(NULL),
+  operation(_operation) {
+
   ui.setupUi(this);
 }
 
@@ -30,5 +34,52 @@ FileOperationDialog::FileOperationDialog(QWidget* parent, Qt::WindowFlags f): QD
 FileOperationDialog::~FileOperationDialog() {
 
 }
+
+void FileOperationDialog::setDestPath(FmPath* dest) {
+  char* pathStr = fm_path_display_name(dest, false);
+  ui.dest->setText(QString::fromUtf8(pathStr));
+  g_free(pathStr);
+}
+
+void FileOperationDialog::setSourceFiles(FmPathList* srcFiles) {
+  GList* l;
+  for(l = fm_path_list_peek_head_link(srcFiles); l; l = l->next) {
+    FmPath* path = FM_PATH(l->data);
+    char* pathStr = fm_path_display_name(path, false);
+    ui.sourceFiles->addItem(QString::fromUtf8(pathStr));
+    g_free(pathStr);
+  }
+}
+
+
+int FileOperationDialog::ask(QString question, char*const* options) {
+
+  return 0;
+}
+
+int FileOperationDialog::askRename(FmFileInfo* src, FmFileInfo* dest, QString& new_name) {
+  return 0;
+}
+
+FmJobErrorAction FileOperationDialog::error(GError* err, FmJobErrorSeverity severity) {
+
+}
+
+void FileOperationDialog::setCurFile(QString cur_file) {
+  ui.curFile->setText(cur_file);
+}
+
+void FileOperationDialog::setPercent(unsigned int percent) {
+  ui.progressBar->setValue(percent);
+}
+
+void FileOperationDialog::setPrepared() {
+}
+
+void FileOperationDialog::reject() {
+  operation->cancel();
+  QDialog::reject();
+}
+
 
 #include "fileoperationdialog.moc"

@@ -23,18 +23,33 @@
 
 #include <QDialog>
 #include "ui_file-operation-dialog.h"
+#include <libfm/fm.h>
 
 namespace Fm {
 
-class FileOperationDialog : public QDialog
-{
+class FileOperation;
+  
+class FileOperationDialog : public QDialog {
 Q_OBJECT
 public:
-  explicit FileOperationDialog(QWidget* parent = 0, Qt::WindowFlags f = 0);
+  explicit FileOperationDialog(FileOperation* _operation);
   virtual ~FileOperationDialog();
+  
+  void setSourceFiles(FmPathList* srcFiles);
+  void setDestPath(FmPath* dest);
+
+  int ask(QString question, char* const* options);
+  int askRename(FmFileInfo* src, FmFileInfo* dest, QString& new_name);
+  FmJobErrorAction error(GError* err, FmJobErrorSeverity severity);
+  void setPrepared();
+  void setCurFile(QString cur_file);
+  void setPercent(unsigned int percent);
+
+  virtual void reject();
   
 private:
   Ui::FileOperationDialog ui;
+  FileOperation* operation;
 };
 
 }

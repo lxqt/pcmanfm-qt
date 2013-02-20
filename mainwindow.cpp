@@ -1,10 +1,10 @@
 #include "mainwindow.h"
 
-#include <QtGui/QLabel>
-#include <QtGui/QMenu>
-#include <QtGui/QMenuBar>
-#include <QtGui/QAction>
-#include <QtGui/QVBoxLayout>
+#include <QLabel>
+#include <QMenu>
+#include <QMenuBar>
+#include <QAction>
+#include <QVBoxLayout>
 #include <QMessageBox>
 #include <QSplitter>
 
@@ -12,7 +12,8 @@
 #include "filelauncher.h"
 #include "filemenu.h"
 #include "bookmarkaction.h"
-
+#include "fileoperation.h"
+#include "utilities.h"
 #include "ui_about.h"
 
 // #include "qmodeltest/modeltest.h"
@@ -331,6 +332,43 @@ void MainWindow::onBookmarkActionTriggered() {
   FmPath* path = action->path();
   if(path)
     chdir(path);
+}
+
+void MainWindow::on_actionCopy_triggered() {
+  TabPage* page = currentPage();
+  FmPathList* paths = page->selectedFilePaths();
+  copyFilesToClipboard(paths);
+  fm_path_list_unref(paths);
+}
+
+void MainWindow::on_actionCut_triggered() {
+  TabPage* page = currentPage();
+  FmPathList* paths = page->selectedFilePaths();
+  cutFilesToClipboard(paths);
+  fm_path_list_unref(paths);
+}
+
+void MainWindow::on_actionPaste_triggered() {
+  pasteFilesFromClipboard(currentPage()->path(), this);
+}
+
+void MainWindow::on_actionDelete_triggered() {
+  TabPage* page = currentPage();
+  FmPathList* paths = page->selectedFilePaths();
+  FileOperation::deleteFiles(paths, this);
+  fm_path_list_unref(paths);
+}
+
+void MainWindow::on_actionSelectAll_triggered() {
+
+}
+
+void MainWindow::on_actionInvertSelection_triggered() {
+
+}
+
+void MainWindow::on_actionPreferences_triggered() {
+
 }
 
 

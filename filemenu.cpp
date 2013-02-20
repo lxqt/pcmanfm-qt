@@ -21,6 +21,9 @@
 #include "filemenu.h"
 #include "icontheme.h"
 #include "filepropsdialog.h"
+#include "utilities.h"
+#include "fileoperation.h"
+#include "filelauncher.h"
 
 using namespace Fm;
 
@@ -86,8 +89,9 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
 
   QAction* action;
   action= new QAction(QIcon::fromTheme("document-open"), tr("Open"), this);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onOpenTriggered()));
   addAction(action);
-  
+
   action= new QAction(tr("OpenWith"), this);
   addAction(action);
   // create the "Open with..." sub menu
@@ -100,17 +104,17 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
       GList* l;
       for(l=apps;l;l=l->next) {
         GAppInfo* app = G_APP_INFO(l->data);
-	
-	// check if the command really exists
+      
+        // check if the command really exists
         gchar * program_path = g_find_program_in_path(g_app_info_get_executable(app));
-	if (!program_path)
-	  continue;
-	g_free(program_path);
+        if (!program_path)
+          continue;
+        g_free(program_path);
 
-	// create a QAction for the application.
-	action = new AppInfoAction(app);
-	connect(action, SIGNAL(triggered(bool)), SLOT(onApplicationTriggered(bool)));
-	menu->addAction(action);
+        // create a QAction for the application.
+        action = new AppInfoAction(app);
+        connect(action, SIGNAL(triggered(bool)), SLOT(onApplicationTriggered()));
+        menu->addAction(action);
       }
       g_list_free(apps); /* don't unref GAppInfos now */
     }
@@ -119,37 +123,81 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   addSeparator();
   
   action= new QAction(QIcon::fromTheme("edit-cut"), tr("Cut"), this);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onCutTriggered()));
   addAction(action);
 
   action= new QAction(QIcon::fromTheme("edit-copy"), tr("Copy"), this);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onCopyTriggered()));
   addAction(action);
 
   action= new QAction(QIcon::fromTheme("edit-paste"), tr("Paste"), this);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onPasteTriggered()));
   addAction(action);
 
   action= new QAction(QIcon::fromTheme("edit-delete"), tr("Delete"), this);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onDeleteTriggered()));
   addAction(action);
 
   action= new QAction(tr("Rename"), this);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onRenameTriggered()));
   addAction(action);
 
   addSeparator();
 
   action= new QAction(QIcon::fromTheme("document-properties"), tr("Properties"), this);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onFilePropertiesTriggered(bool)));
+  connect(action, SIGNAL(triggered(bool)), SLOT(onFilePropertiesTriggered()));
   addAction(action);
 }
 
-void FileMenu::onApplicationTriggered(bool checked) {
-  AppInfoAction* action = static_cast<AppInfoAction*>(sender());
-  GAppInfo* appInfo = action->appInfo();
-
-  // TODO: Launch the application selected
+void FileMenu::onOpenTriggered() {
+  Fm::FileLauncher::launch(NULL, files_);
 }
 
-void FileMenu::onFilePropertiesTriggered(bool checked) {
+void FileMenu::onApplicationTriggered() {
+  AppInfoAction* action = static_cast<AppInfoAction*>(sender());
+  GAppInfo* appInfo = action->appInfo();
+  FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
+  GList* uris = NULL;
+  for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
+    FmPath* path = FM_PATH(l->data);
+    char* uri = fm_path_to_uri(path);
+    uris = g_list_prepend(uris, uri);
+  }
+  fm_path_list_unref(paths);
+  fm_app_info_launch_uris(appInfo, uris, NULL, NULL);
+  g_list_foreach(uris, (GFunc)g_free, NULL);
+  g_list_free(uris);  
+}
+
+void FileMenu::onFilePropertiesTriggered() {
   FilePropsDialog dlg(files_, this);
   dlg.exec();
+}
+
+void FileMenu::onCopyTriggered() {
+  FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
+  Fm::copyFilesToClipboard(paths);
+  fm_path_list_unref(paths);
+}
+
+void FileMenu::onCutTriggered() {
+  FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
+  Fm::cutFilesToClipboard(paths);
+  fm_path_list_unref(paths);
+}
+
+void FileMenu::onDeleteTriggered() {
+  FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
+  FileOperation::deleteFiles(paths);
+  fm_path_list_unref(paths);
+}
+
+void FileMenu::onPasteTriggered() {
+  Fm::pasteFilesFromClipboard(cwd_);
+}
+
+void FileMenu::onRenameTriggered() {
+
 }
 
 #include "filemenu.moc"

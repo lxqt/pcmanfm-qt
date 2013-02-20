@@ -39,8 +39,15 @@ protected:
   void createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd);
   
 protected Q_SLOTS:
-  void onFilePropertiesTriggered(bool checked);
-  void onApplicationTriggered(bool checked);
+  void onOpenTriggered();
+  void onFilePropertiesTriggered();
+  void onApplicationTriggered();
+
+  void onCutTriggered();
+  void onCopyTriggered();
+  void onPasteTriggered();
+  void onRenameTriggered();
+  void onDeleteTriggered();
 
 private:
   FmFileInfoList* files_;

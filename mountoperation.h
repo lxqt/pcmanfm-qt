@@ -44,7 +44,8 @@ Q_OBJECT
 
 public:
   explicit MountOperation(bool interactive = true, QWidget* parent = 0);
-
+  ~MountOperation();
+  
   void mount(FmPath* path) {
     GFile* gf = fm_path_to_gfile(path);
     g_file_mount_enclosing_volume(gf, G_MOUNT_MOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onMountFileFinished, this);
@@ -107,13 +108,17 @@ public:
   // block the operation used an internal QEventLoop and returns
   // only after the whole operation is finished.
   bool wait();
-  
+
+  bool autoDestroy() {
+    return autoDestroy_;
+  }
+
+  void setAutoDestroy(bool destroy = true) {
+    autoDestroy_ = destroy;
+  }
+
 Q_SIGNALS:
   void finished(GError* error = NULL);
-
-protected:
-  // The object frees itself when operation is done and should not be explicitly freed
-  ~MountOperation();
 
 private:
   void prepareUnmount(GMount* mount);
@@ -141,6 +146,7 @@ private:
   bool running;
   bool interactive_;
   QEventLoop* eventLoop;
+  bool autoDestroy_;
 };
 
 }
