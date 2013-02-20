@@ -77,6 +77,10 @@ public:
     autoDestroy_ = destroy;
   }
 
+  Type type() {
+    return (Type)job_->type;
+  }
+  
   // convinient static functions
   static FileOperation* copyFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
   static FileOperation* moveFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);

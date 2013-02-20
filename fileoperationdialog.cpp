@@ -28,6 +28,47 @@ FileOperationDialog::FileOperationDialog(FileOperation* _operation):
   operation(_operation) {
 
   ui.setupUi(this);
+
+  QString title;
+  QString message;
+  switch(_operation->type()) {
+  case FM_FILE_OP_MOVE:
+      title = tr("Move files");
+      message = tr("Moving the following files to destination folder:");
+      break;
+  case FM_FILE_OP_COPY:
+      title = tr("Copy Files");
+      message = tr("Copying the following files to destination folder:");
+      break;
+  case FM_FILE_OP_TRASH:
+      title = tr("Trash Files");
+      message = tr("Moving the following files to trash can:");
+      break;
+  case FM_FILE_OP_DELETE:
+      title = tr("Delete Files");
+      message = tr("Deleting the following files");
+      ui.dest->hide();
+      ui.destLabel->hide();
+      break;
+  case FM_FILE_OP_LINK:
+      title = tr("Create Symlinks");
+      message = tr("Creating symlinks for the following files:");
+      break;
+  case FM_FILE_OP_CHANGE_ATTR:
+      title = tr("Change Attributes");
+      message = tr("Changing attributes of the following files:");
+      ui.dest->hide();
+      ui.destLabel->hide();
+      break;
+  case FM_FILE_OP_UNTRASH:
+      title = tr("Restore Trashed Files");
+      message = tr("Restoring the following files from trash can:");
+      ui.dest->hide();
+      ui.destLabel->hide();
+      break;
+  }
+  ui.message->setText(message);
+  setWindowTitle(title);
 }
 
 
@@ -62,7 +103,7 @@ int FileOperationDialog::askRename(FmFileInfo* src, FmFileInfo* dest, QString& n
 }
 
 FmJobErrorAction FileOperationDialog::error(GError* err, FmJobErrorSeverity severity) {
-
+  return FM_JOB_CONTINUE;
 }
 
 void FileOperationDialog::setCurFile(QString cur_file) {
