@@ -32,9 +32,7 @@ G_DEFINE_TYPE(FmAppLaunchContext, fm_app_launch_context, G_TYPE_APP_LAUNCH_CONTE
 static char* fm_app_launch_context_get_display(GAppLaunchContext *context, GAppInfo *info, GList *files) {
   Display* dpy = QX11Info::display();
   char* xstr = DisplayString(dpy);
-  char* ret = g_strdup(xstr);
-  XFree(xstr);
-  return ret;
+  return g_strdup(xstr);
 }
 
 static char* fm_app_launch_context_get_startup_notify_id(GAppLaunchContext *context, GAppInfo *info, GList *files) {

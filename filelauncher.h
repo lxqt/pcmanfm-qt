@@ -26,12 +26,15 @@
 
 namespace Fm {
 
-class FileLauncher
-{
+class FileLauncher {
 public:
   FileLauncher();
   ~FileLauncher();
   static bool launch(QWidget* parent, GList* file_infos);
+  static bool launch(QWidget* parent, FmFileInfoList* file_infos) {
+    GList* fileList = fm_file_info_list_peek_head_link(file_infos);
+    Fm::FileLauncher::launch(NULL, fileList);
+  }
 
 protected:
     static gboolean openFolder(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data, GError** err);
