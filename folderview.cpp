@@ -268,5 +268,9 @@ FmFileInfoList* FolderView::selectedFiles() const {
   return NULL;
 }
 
+void FolderView::invertSelection() {
+  //TODO
+}
+
 
 #include "folderview.moc"

@@ -21,6 +21,7 @@
 #include "fileoperation.h"
 #include "fileoperationdialog.h"
 #include <QTimer>
+#include <QMessageBox>
 
 using namespace Fm;
 
@@ -207,14 +208,32 @@ FileOperation* FileOperation::symlinkFiles(FmPathList* srcFiles, FmPath* dest, Q
 }
 
 //static
-FileOperation* FileOperation::deleteFiles(FmPathList* srcFiles, QWidget* parent) {
+FileOperation* FileOperation::deleteFiles(FmPathList* srcFiles, bool prompt, QWidget* parent) {
+  if(prompt) {
+    int result = QMessageBox::warning(parent, tr("Confirm"),
+                                      tr("Do you want to delete the selected files?"),
+                                      QMessageBox::Yes|QMessageBox::No,
+                                      QMessageBox::No);
+    if(result != QMessageBox::Yes)
+      return NULL;
+  }
+
   FileOperation* op = new FileOperation(FileOperation::Delete, srcFiles);
   op->run();
   return op;
 }
 
 //static
-FileOperation* FileOperation::trashFiles(FmPathList* srcFiles, QWidget* parent) {
+FileOperation* FileOperation::trashFiles(FmPathList* srcFiles, bool prompt, QWidget* parent) {
+  if(prompt) {
+    int result = QMessageBox::warning(parent, tr("Confirm"),
+                                      tr("Do you want to move the selected files to trash can?"),
+                                      QMessageBox::Yes|QMessageBox::No,
+                                      QMessageBox::No);
+    if(result != QMessageBox::Yes)
+      return NULL;
+  }
+
   FileOperation* op = new FileOperation(FileOperation::Trash, srcFiles);
   op->run();
   return op;

@@ -69,6 +69,10 @@
     </property>
     <addaction name="actionNewTab"/>
     <addaction name="actionNewWin"/>
+    <addaction name="actionCloseTab"/>
+    <addaction name="separator"/>
+    <addaction name="actionFileProperties"/>
+    <addaction name="actionFolderProperties"/>
     <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
@@ -140,6 +144,7 @@
     <addaction name="separator"/>
     <addaction name="actionGoBack"/>
     <addaction name="actionGoForward"/>
+    <addaction name="actionGoUp"/>
    </widget>
    <addaction name="menu_File"/>
    <addaction name="menu_Editw"/>
@@ -197,9 +202,7 @@
   </action>
   <action name="actionReload">
    <property name="icon">
-    <iconset theme="view-refresh">
-     <normaloff/>
-    </iconset>
+    <iconset theme="view-refresh"/>
    </property>
    <property name="text">
     <string>Reload</string>
@@ -332,16 +335,25 @@
    </property>
   </action>
   <action name="actionCut">
+   <property name="icon">
+    <iconset theme="edit-cut"/>
+   </property>
    <property name="text">
     <string>&amp;Cut</string>
    </property>
   </action>
   <action name="actionCopy">
+   <property name="icon">
+    <iconset theme="edit-copy"/>
+   </property>
    <property name="text">
     <string>&amp;Copy</string>
    </property>
   </action>
   <action name="actionPaste">
+   <property name="icon">
+    <iconset theme="edit-paste"/>
+   </property>
    <property name="text">
     <string>&amp;Paste</string>
    </property>
@@ -442,6 +454,9 @@
    </property>
   </action>
   <action name="actionDelete">
+   <property name="icon">
+    <iconset theme="edit-delete"/>
+   </property>
    <property name="text">
     <string>Delete</string>
    </property>
@@ -449,6 +464,21 @@
   <action name="actionRename">
    <property name="text">
     <string>Rename</string>
+   </property>
+  </action>
+  <action name="actionCloseTab">
+   <property name="text">
+    <string>Close Tab</string>
+   </property>
+  </action>
+  <action name="actionFileProperties">
+   <property name="text">
+    <string>File Properties</string>
+   </property>
+  </action>
+  <action name="actionFolderProperties">
+   <property name="text">
+    <string>Folder Properties</string>
    </property>
   </action>
  </widget>

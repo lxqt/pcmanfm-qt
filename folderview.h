@@ -88,6 +88,12 @@ public:
   FmFileInfoList* selectedFiles() const;
   FmPathList* selectedFilePaths() const;
 
+  void selectAll() {
+    view->selectAll();
+  }
+
+  void invertSelection();
+  
 protected:
   void contextMenuEvent(QContextMenuEvent* event);
   void emitClickedAt(ClickType type, QPoint& pos);

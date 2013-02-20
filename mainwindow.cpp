@@ -15,6 +15,7 @@
 #include "fileoperation.h"
 #include "utilities.h"
 #include "ui_about.h"
+#include "preferencesdialog.h"
 
 // #include "qmodeltest/modeltest.h"
 
@@ -362,15 +363,16 @@ void MainWindow::on_actionDelete_triggered() {
 }
 
 void MainWindow::on_actionSelectAll_triggered() {
-
+  currentPage()->selectAll();
 }
 
 void MainWindow::on_actionInvertSelection_triggered() {
-
+  currentPage()->invertSelection();
 }
 
 void MainWindow::on_actionPreferences_triggered() {
-
+  PreferencesDialog dlg;
+  dlg.exec();
 }
 
 }

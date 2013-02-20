@@ -32,9 +32,7 @@ set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive")
   # qmodeltest/tst_modeltest.cpp
 #)
 
-set(pcmanfm_SRCS
-  pcmanfm.cpp
-  mainwindow.cpp
+set(libfm_SRCS
   bookmarkaction.cpp
   sidepane.cpp
   tabpage.cpp
@@ -59,18 +57,34 @@ set(pcmanfm_SRCS
   #  ${qmodeltest_SRCS}
 )
 
-set(pcmanfm_UIS
-  main-win.ui
+set(libfm_UIS
   file-props.ui
   file-operation-dialog.ui
   mount-operation-password.ui
+)
+
+QT4_WRAP_UI(libfm_UIS_H ${libfm_UIS})
+qt4_automoc(${libfm_SRCS})
+
+
+set(pcmanfm_SRCS
+  pcmanfm.cpp
+  mainwindow.cpp
+  preferencesdialog.cpp
+)
+
+set(pcmanfm_UIS
+  main-win.ui
   about.ui
+  preferences.ui
 )
 
 QT4_WRAP_UI(pcmanfm_UIS_H ${pcmanfm_UIS})
-
 qt4_automoc(${pcmanfm_SRCS})
+
 add_executable(pcmanfm-qt 
+  ${libfm_SRCS}
+  ${libfm_UIS_H}
   ${pcmanfm_SRCS}
   ${pcmanfm_UIS_H}
 )

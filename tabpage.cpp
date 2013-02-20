@@ -283,6 +283,16 @@ void TabPage::onViewClicked(int type, FmFileInfo* file) {
   Q_EMIT fileClicked(type, file);
 }
 
+
+void TabPage::selectAll() {
+  folderView_->selectAll();
+}
+
+void TabPage::invertSelection() {
+  folderView_->invertSelection();
+}
+
+
 };
 
 #include "tabpage.moc"

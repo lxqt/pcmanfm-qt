@@ -81,8 +81,8 @@ public:
   static FileOperation* copyFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
   static FileOperation* moveFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
   static FileOperation* symlinkFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
-  static FileOperation* deleteFiles(FmPathList* srcFiles, QWidget* parent = 0);
-  static FileOperation* trashFiles(FmPathList* srcFiles, QWidget* parent = 0);
+  static FileOperation* deleteFiles(FmPathList* srcFiles, bool promp = true, QWidget* parent = 0);
+  static FileOperation* trashFiles(FmPathList* srcFiles, bool promp = true, QWidget* parent = 0);
   static FileOperation* changeAttrFiles(FmPathList* srcFiles, QWidget* parent = 0);
 
 Q_SIGNALS:

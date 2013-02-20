@@ -98,7 +98,11 @@ public:
   FmPathList* selectedFilePaths() {
     return folderView_->selectedFilePaths();
   }
-  
+
+  void selectAll();
+
+  void invertSelection();
+
   void reload() {
     if(folder_)
       fm_folder_reload(folder_);
@@ -112,6 +116,7 @@ public:
     return statusText_[type];
   }
   
+ 
 Q_SIGNALS:
   void statusChanged(int type, QString statusText);
   void fileClicked(int type, FmFileInfo* file);
