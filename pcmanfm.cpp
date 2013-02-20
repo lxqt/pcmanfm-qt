@@ -9,7 +9,7 @@ int main(int argc, char** argv)
   Fm::Application fmapp;
   // Fm::IconTheme::setThemeName("gnome");
   Fm::IconTheme::setThemeName("elementary");
-  Fm::MainWindow mainWin;
+  PCManFM::MainWindow mainWin;
   mainWin.resize(640, 480);
   mainWin.show();
   return app.exec();

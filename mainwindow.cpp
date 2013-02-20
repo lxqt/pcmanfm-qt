@@ -20,6 +20,8 @@
 
 using namespace Fm;
 
+namespace PCManFM {
+
 MainWindow::MainWindow(FmPath* path) {
   ui.setupUi(this);
 
@@ -371,5 +373,6 @@ void MainWindow::on_actionPreferences_triggered() {
 
 }
 
+}
 
 #include "mainwindow.moc"

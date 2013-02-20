@@ -16,7 +16,7 @@
 #include <QStackedWidget>
 #include <QSplitter>
 
-namespace Fm {
+namespace PCManFM {
 
 class TabPage;
 

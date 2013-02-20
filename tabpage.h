@@ -29,7 +29,7 @@
 #include "placesview.h"
 #include "proxyfoldermodel.h"
 
-namespace Fm {
+namespace PCManFM {
 
 class TabPage : public QWidget
 {
@@ -49,7 +49,7 @@ public:
 
   void chdir(FmPath* path);
 
-  FolderView::ViewMode viewMode() {
+  Fm::FolderView::ViewMode viewMode() {
     return folderView_->viewMode();
   }
 
@@ -133,9 +133,9 @@ private:
   static void onFolderContentChanged(FmFolder* _folder, TabPage* pThis);
 
 private:
-  FolderView* folderView_;
-  FolderModel* folderModel_;
-  ProxyFolderModel* proxyModel_;
+  Fm::FolderView* folderView_;
+  Fm::FolderModel* folderModel_;
+  Fm::ProxyFolderModel* proxyModel_;
   QVBoxLayout* verticalLayout;
   FmFolder* folder_;
   QString title_;

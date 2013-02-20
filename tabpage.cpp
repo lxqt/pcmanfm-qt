@@ -29,6 +29,8 @@
 
 using namespace Fm;
 
+namespace PCManFM {
+
 TabPage::TabPage(FmPath* path, QWidget* parent):
     QWidget( parent),
     folder_ (NULL),
@@ -280,5 +282,7 @@ void TabPage::chdir(FmPath* path) {
 void TabPage::onViewClicked(int type, FmFileInfo* file) {
   Q_EMIT fileClicked(type, file);
 }
+
+};
 
 #include "tabpage.moc"
