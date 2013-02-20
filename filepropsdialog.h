@@ -36,6 +36,8 @@ public:
   explicit FilePropsDialog(FmFileInfoList* files, QWidget* parent = 0, Qt::WindowFlags f = 0);
   virtual ~FilePropsDialog();
 
+  virtual void accept();
+  
 private:
   void initGeneral();
   void initApplications();
@@ -56,6 +58,8 @@ private:
   bool hasDir;
   bool allDirs;
   FmMimeType* mimeType;
+  GList* appInfos;
+  GAppInfo* defaultApp;
 
   gint32 uid; // owner uid
   gint32 gid; // owner group
