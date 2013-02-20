@@ -20,6 +20,7 @@
 
 #include "fileoperationdialog.h"
 #include "fileoperation.h"
+#include "renamedialog.h"
 
 using namespace Fm;
 
@@ -99,10 +100,39 @@ int FileOperationDialog::ask(QString question, char*const* options) {
 }
 
 int FileOperationDialog::askRename(FmFileInfo* src, FmFileInfo* dest, QString& new_name) {
-  return 0;
+  RenameDialog dlg(src, dest, this);
+  int r = dlg.exec();
+
+  switch(r) {
+    default:
+      break;
+  }
+/*
+  switch(r) {
+  case RESPONSE_RENAME:
+      *new_name = g_strdup(gtk_entry_get_text(filename));
+      res = FM_FILE_OP_RENAME;
+      break;
+  case RESPONSE_OVERWRITE:
+      res = FM_FILE_OP_OVERWRITE;
+      break;
+  case RESPONSE_SKIP:
+      res = FM_FILE_OP_SKIP;
+      break;
+  default:
+      res = FM_FILE_OP_CANCEL;
+  }
+
+  if(gtk_toggle_button_get_active(apply_all)) {
+      if(res == RESPONSE_OVERWRITE || res == FM_FILE_OP_SKIP)
+          data->default_opt = res;
+  }
+*/
+  return FM_FILE_OP_SKIP;
 }
 
 FmJobErrorAction FileOperationDialog::error(GError* err, FmJobErrorSeverity severity) {
+  // QMessageBox::error();
   return FM_JOB_CONTINUE;
 }
 

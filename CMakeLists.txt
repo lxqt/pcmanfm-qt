@@ -53,6 +53,7 @@ set(libfm_SRCS
   mountoperationquestiondialog.cpp
   fileoperation.cpp
   fileoperationdialog.cpp
+  renamedialog.cpp
   pathcompleter.cpp
   utilities.cpp
   #  ${qmodeltest_SRCS}
@@ -61,6 +62,7 @@ set(libfm_SRCS
 set(libfm_UIS
   file-props.ui
   file-operation-dialog.ui
+  rename-dialog.ui
   mount-operation-password.ui
 )
 
