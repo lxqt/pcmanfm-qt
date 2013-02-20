@@ -9,6 +9,7 @@ pkg_check_modules(LIBFM
   gio-unix-2.0
   libfm
   libstartup-notification-1.0
+  x11
 )
 
 include_directories(
@@ -71,6 +72,7 @@ set(pcmanfm_SRCS
   pcmanfm.cpp
   mainwindow.cpp
   preferencesdialog.cpp
+  desktopwindow.cpp
 )
 
 set(pcmanfm_UIS
