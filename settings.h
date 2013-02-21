@@ -42,6 +42,260 @@ public:
 
   QString profileDir(QString profile = QString());
 
+  // setter/getter functions
+  QString profileName() {
+    return profileName_;
+  }
+
+  QString iconThemeName() {
+    return iconThemeName_;
+  }
+  
+  void setIconThemeName(QString iconThemeName) {
+    iconThemeName_ = iconThemeName;
+  }
+
+  int bookmarkOpenMethod() {
+    return bookmarkOpenMethod_;
+  }
+
+  void setBookmarkOpenMethod(int bookmarkOpenMethod) {
+    bookmarkOpenMethod_ = bookmarkOpenMethod;
+  }
+
+  QString suCommand() {
+    return suCommand_;
+  }
+  
+  void setSuCommand(QString suCommand) {
+    suCommand_ = suCommand;
+  }
+
+  bool mountOnStartup() {
+    return mountOnStartup_;
+  }
+
+  void setMountOnStartup(bool mountOnStartup) {
+    mountOnStartup_ = mountOnStartup;
+  }
+
+  bool mountRemovable() {
+    return mountRemovable_;
+  }
+
+  void setMountRemovable(bool mountRemovable) {
+    mountRemovable_ = mountRemovable;
+  }
+
+  bool autoRun() {
+    return autoRun_;
+  }
+
+  void setAutoRun(bool autoRun) {
+    autoRun_ = autoRun;
+  }
+
+
+  int wallpaperMode() {
+    return wallpaperMode_;
+  }
+
+  void setWallpaperMode(int wallpaperMode) {
+    wallpaperMode_ = wallpaperMode;
+  }
+
+  QString wallpaper() {
+    return wallpaper_;
+  }
+
+  void setWallpaper(QString wallpaper) {
+    wallpaper_ = wallpaper;
+  }
+
+  QColor desktopBgColor() {
+    return desktopBgColor_;
+  }
+
+  void setDesktopBgColor(QColor desktopBgColor) {
+    desktopBgColor_ = desktopBgColor;
+  }
+
+  QColor desktopFgColor() {
+    return desktopFgColor_;
+  }
+
+  void setDesktopFgColor(QColor desktopFgColor) {
+    desktopFgColor_ = desktopFgColor;
+  }
+
+  QColor desktopShadowColor() {
+    return desktopShadowColor_;
+  }
+
+  void setDesktopShadowColor(QColor desktopShadowColor) {
+    desktopShadowColor_ = desktopShadowColor;
+  }
+
+  // desktop_font=Sans 12
+  // bool showWmMenu;
+  bool desktopShowHidden() {
+    return desktopShowHidden_;
+  }
+
+  void setDesktopShowHidden(bool desktopShowHidden) {
+    desktopShowHidden_ = desktopShowHidden;
+  }
+
+  Qt::SortOrder desktopSortOrder() {
+    return desktopSortOrder_;
+  }
+
+  void setDesktopSortOrder(Qt::SortOrder desktopSortOrder) {
+    desktopSortOrder_ = desktopSortOrder;
+  }
+
+  Fm::FolderModel::ColumnId desktopSortColumn() {
+    return desktopSortColumn_;
+  }
+
+  void setDesktopSortColumn(Fm::FolderModel::ColumnId desktopSortColumn) {
+    desktopSortColumn_ = desktopSortColumn;
+  }
+
+
+  bool alwaysShowTabs() {
+    return alwaysShowTabs_;
+  }
+
+  void setAlwaysShowTabs(bool alwaysShowTabs) {
+    alwaysShowTabs_ = alwaysShowTabs;
+  }
+
+  int windowWidth() {
+    return windowWidth_;
+  }
+
+  void setWindowWidth(int windowWidth) {
+    windowWidth_ = windowWidth;
+  }
+
+  int windowHeight() {
+    return windowHeight_;
+  }
+
+  void setWindowHeight(int windowHeight) {
+    windowHeight_ = windowHeight;
+  }
+
+  int splitterPos() {
+    return splitterPos_;
+  }
+
+  void setSplitterPos(int splitterPos) {
+    splitterPos_ = splitterPos;
+  }
+
+  int sidePaneMode() {
+    return sidePaneMode_;
+  }
+
+  void setSidePaneMode(int sidePaneMode) {
+    sidePaneMode_ = sidePaneMode;
+  }
+
+
+  Fm::FolderView::ViewMode viewMode() {
+    return viewMode_;
+  }
+
+  void setViewMode(Fm::FolderView::ViewMode viewMode) {
+    viewMode_ = viewMode;
+  }
+
+  bool showHidden() {
+    return showHidden_;
+  }
+
+  void setShowHidden(bool showHidden) {
+    showHidden_ = showHidden;
+  }
+
+  Qt::SortOrder sortOrder() {
+    return sortOrder_;
+  }
+
+  void setSortOrder(Qt::SortOrder sortOrder) {
+    sortOrder_ = sortOrder;
+  }
+
+  Fm::FolderModel::ColumnId sortColumn() {
+    return sortColumn_;
+  }
+
+  void setSortColumn(Fm::FolderModel::ColumnId sortColumn) {
+    sortColumn_ = sortColumn;
+  }
+
+  // settings for use with libfm
+  bool singleClick() {
+    return singleClick_;
+  }
+
+  void setSingleClick(bool singleClick) {
+    singleClick_ = singleClick;
+  }
+
+  bool useTrash() {
+    return useTrash_;
+  }
+
+  void setUseTrash(bool useTrash) {
+    useTrash_ = useTrash;
+  }
+
+  bool confirmDelete() {
+    return confirmDelete_;
+  }
+
+  void setConfirmDelete(bool confirmDelete) {
+    confirmDelete_ = confirmDelete;
+  }
+
+  // bool thumbnailLocal_;
+  // bool thumbnailMax;
+
+  int bigIconSize() {
+    return bigIconSize_;
+  }
+
+  void setBigIconSize(int bigIconSize) {
+    bigIconSize_ = bigIconSize;
+  }
+
+  int smallIconSize() {
+    return smallIconSize_;
+  }
+
+  void setSmallIconSize(int smallIconSize) {
+    smallIconSize_ = smallIconSize;
+  }
+
+  int sidePaneIconSize() {
+    return sidePaneIconSize_;
+  }
+
+  void setSidePaneIconSize(int sidePaneIconSize) {
+    sidePaneIconSize_ = sidePaneIconSize;
+  }
+
+  int thumbnailIconSize() {
+    return thumbnailIconSize_;
+  }
+
+  void setThumbnailIconSize(int thumbnailIconSize) {
+    thumbnailIconSize_ = thumbnailIconSize;
+  }
+  
 private:
   QString profileName_;
 

@@ -92,12 +92,66 @@ bool Settings::save(QString profile) {
 bool Settings::loadFile(QString filePath) {
   QSettings settings(filePath, QSettings::IniFormat);
 
+  settings.beginGroup("System");
+  iconThemeName_ = settings.value("IconThemeName").toString();
+  suCommand_ = settings.value("SuCommand").toString();
+  settings.endGroup();
+
+  settings.beginGroup("Behavior");
+  bookmarkOpenMethod_ = settings.value("BookmarkOpenMethod").toInt();
+  // settings for use with libfm
+  useTrash_ = settings.value("UseTrash").toBool();
+  singleClick_ = settings.value("SingleClick").toBool();
+  confirmDelete_ = settings.value("ConfirmDelete").toBool();
+  // bool thumbnailLocal_;
+  // bool thumbnailMax;
+  settings.endGroup();
+
+  settings.beginGroup("Desktop");
+  wallpaperMode_ = settings.value("WallpaperMode").toInt();
+  wallpaper_ = settings.value("Wallpaper").toString();
+  desktopBgColor_.setNamedColor(settings.value("BgColor").toString());
+  desktopFgColor_.setNamedColor(settings.value("FgColor").toString());
+  desktopShadowColor_.setNamedColor(settings.value("ShadowColor").toString());
+  // desktop_font=Sans 12
+  // bool showWmMenu;
+  desktopShowHidden_ = settings.value("ShowHidden").toBool();
+  desktopSortOrder_ = settings.value("SortOrder").toInt();
+  desktopSortColumn_ = settings.value("SortColumn").toInt();
+  settings.endGroup();
+
+  settings.beginGroup("Volume");
+  mountOnStartup_ = settings.value("MountOnStartup").toBool();
+  mountRemovable_ = settings.value("MountRemovable").toBool();
+  autoRun_ = settings.value("AutoRun").toBool();
+  settings.endGroup();
+
+  settings.beginGroup("FolderView");
+  viewMode_ = settings.value("Mode").toInt();
+  showHidden_ = settings.value("ShowHidden").toBool();
+  sortOrder_ = settings.value("SortOrder").toInt();
+  sortColumn_ = settings.value("SortColumn").toInt();
+
+  // override config in libfm's FmConfig
+  bigIconSize_ = settings.value("BigIconSize").toInt();
+  smallIconSize_ = settings.value("SmallIconSize_").toInt();
+  sidePaneIconSize_ = settings.value("SidePaneIconSize_").toInt();
+  thumbnailIconSize_ = settings.value("ThumbnailIconSize_").toInt();
+  settings.endGroup();
+  
+  settings.beginGroup("Window");
+  windowWidth_ = settings.value("Width").toInt();
+  windowHeight_ = settings.value("Height").toInt();
+  alwaysShowTabs_ = settings.value("AlwaysShowTabs").toBool();
+  splitterPos_ = settings.value("SplitterPos").toInt();
+  sidePaneMode_ = settings.value("SidePaneMode").toInt();
+  settings.endGroup();
+
 }
 
 bool Settings::saveFile(QString filePath) {
   QSettings settings(filePath, QSettings::IniFormat);
 
-  // General
   settings.beginGroup("System");
   settings.setValue("IconThemeName", iconThemeName_);
   settings.setValue("SuCommand", suCommand_);
