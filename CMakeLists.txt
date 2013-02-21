@@ -12,12 +12,15 @@ pkg_check_modules(LIBFM
   x11
 )
 
+# find_package(Boost REQUIRED)
+
 include_directories(
   ${QT_INCLUDES}
   ${LIBFM_INCLUDE_DIRS}
   ${CMAKE_CURRENT_BINARY_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}
-  qmodeltest
+  # ${Boost_INCLUDE_DIRS}
+  # qmodeltest
 )
 
 link_directories(
@@ -75,6 +78,7 @@ set(pcmanfm_SRCS
   mainwindow.cpp
   preferencesdialog.cpp
   desktopwindow.cpp
+  settings.cpp
 )
 
 set(pcmanfm_UIS

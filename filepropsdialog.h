@@ -28,8 +28,7 @@
 
 namespace Fm {
 
-class FilePropsDialog : public QDialog
-{
+class FilePropsDialog : public QDialog {
 Q_OBJECT
 
 public:

@@ -3,6 +3,7 @@
 #include "mainwindow.h"
 #include "desktopwindow.h"
 #include "application.h"
+#include "settings.h"
 
 int main(int argc, char** argv)
 {
@@ -19,8 +20,10 @@ int main(int argc, char** argv)
   Fm::Application fmapp;
   // Fm::IconTheme::setThemeName("gnome");
   Fm::IconTheme::setThemeName("elementary");
+  PCManFM::Settings settings;
+  settings.load();
   PCManFM::MainWindow mainWin;
-
+  settings.save();
   // The desktop icons window
   // PCManFM::DesktopWindow desktopWindow;
   // desktopWindow.show();

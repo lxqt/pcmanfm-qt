@@ -233,6 +233,12 @@ QModelIndex FolderModel::parent(const QModelIndex & index) const {
   return QModelIndex();
 }
 
+Qt::ItemFlags FolderModel::flags(const QModelIndex& index) const {
+  // FIXME: should not return same flags unconditionally for all columns
+  // if(index.column() == ColumnName)
+  return Qt::ItemIsEnabled|Qt::ItemIsSelectable|Qt::ItemIsDragEnabled|Qt::ItemIsDropEnabled; 
+}
+
 // FIXME: this is very inefficient and should be replaced with a 
 // more reasonable implementation later.
 QList<FolderModel::Item>::iterator FolderModel::findItemByPath(FmPath* path, int* row) {

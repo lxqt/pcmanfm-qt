@@ -89,11 +89,13 @@ public:
   QVariant data(const QModelIndex & index, int role) const;
   QVariant headerData(int section, Qt::Orientation orientation, int role) const;
   QModelIndex index(int row, int column, const QModelIndex & parent = QModelIndex()) const;
-  QModelIndex parent ( const QModelIndex & index ) const;
+  QModelIndex parent( const QModelIndex & index ) const;
   // void sort(int column, Qt::SortOrder order = Qt::AscendingOrder);
 
-  QStringList mimeTypes () const;
-  QMimeData* mimeData ( const QModelIndexList & indexes ) const;
+  Qt::ItemFlags flags(const QModelIndex & index) const;
+
+  QStringList mimeTypes() const;
+  QMimeData* mimeData(const QModelIndexList & indexes) const;
 
   FmFileInfo* fileInfoFromIndex(const QModelIndex& index) const;
 
@@ -112,6 +114,8 @@ protected:
 
 private:
   FmFolder* folder;
+
+  // FIXME: should we use a hash table here so item lookup becomes much faster?
   QList<Item> items;
   // ColumnId sortColumn;
   // Qt::SortOrder sortOrder;

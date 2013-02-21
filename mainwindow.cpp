@@ -219,7 +219,7 @@ void MainWindow::on_actionThumbnailView_triggered() {
 
 void MainWindow::onTabBarCloseRequested(int index) {
   if(ui.tabBar->count() == 1) { // this is the last one
-    destroy(); // destroy the whole window
+    close(); // destroy the whole window
   }
   else {
     QWidget* page = ui.stackedWidget->widget(index);

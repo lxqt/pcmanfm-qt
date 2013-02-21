@@ -102,36 +102,38 @@ void FolderView::setViewMode(ViewMode _mode) {
       listView = new ListView(this);
       view = listView;
     }
-    listView->setMovement(QListView::Static);
+    listView->setDragDropMode(QAbstractItemView::DragDrop);
+    listView->setMovement(QListView::Snap);
     listView->setResizeMode(QListView::Adjust);
     listView->setWrapping(true);
+    
     switch(mode) {
       case IconMode: {
-	listView->setViewMode(QListView::IconMode);
-	listView->setGridSize(QSize(80, 80));
-	listView->setWordWrap(true);
-	listView->setFlow(QListView::LeftToRight);
+        listView->setViewMode(QListView::IconMode);
+        listView->setGridSize(QSize(80, 80));
+        listView->setWordWrap(true);
+        listView->setFlow(QListView::LeftToRight);
 
-	iconSize_ = QSize(fm_config->big_icon_size, fm_config->big_icon_size);
-	break;
+        iconSize_ = QSize(fm_config->big_icon_size, fm_config->big_icon_size);
+        break;
       }
       case CompactMode: {
-	listView->setViewMode(QListView::ListMode);
-	listView->setGridSize(QSize());
-	listView->setWordWrap(false);
-	listView->setFlow(QListView::QListView::TopToBottom);
+        listView->setViewMode(QListView::ListMode);
+        listView->setGridSize(QSize());
+        listView->setWordWrap(false);
+        listView->setFlow(QListView::QListView::TopToBottom);
 
-	iconSize_ = QSize(fm_config->small_icon_size, fm_config->small_icon_size);
-	break;
+        iconSize_ = QSize(fm_config->small_icon_size, fm_config->small_icon_size);
+        break;
       }
       case ThumbnailMode: {
-	listView->setViewMode(QListView::IconMode);
-	listView->setGridSize(QSize(160, 160));
-	listView->setWordWrap(true);
-	listView->setFlow(QListView::LeftToRight);
+        listView->setViewMode(QListView::IconMode);
+        listView->setGridSize(QSize(160, 160));
+        listView->setWordWrap(true);
+        listView->setFlow(QListView::LeftToRight);
 
-	iconSize_ = QSize(fm_config->thumbnail_size, fm_config->thumbnail_size);
-	break;
+        iconSize_ = QSize(fm_config->thumbnail_size, fm_config->thumbnail_size);
+        break;
       }
     }
   }
