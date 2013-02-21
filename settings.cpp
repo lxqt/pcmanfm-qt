@@ -19,7 +19,6 @@
 
 
 #include "settings.h"
-#include "smartptrs.h"
 #include <QDir>
 #include <QStringBuilder>
 #include <QSettings>
