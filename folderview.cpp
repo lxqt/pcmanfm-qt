@@ -24,6 +24,7 @@
 #include <QVBoxLayout>
 #include <QContextMenuEvent>
 #include "proxyfoldermodel.h"
+#include "folderitemdelegate.h"
 
 using namespace Fm;
 
@@ -102,6 +103,11 @@ void FolderView::setViewMode(ViewMode _mode) {
       listView = new ListView(this);
       view = listView;
     }
+    // set our own custom delegate
+    FolderItemDelegate* delegate = new FolderItemDelegate(listView);
+    listView->setItemDelegateForColumn(FolderModel::ColumnName, delegate);
+    // FIXME: should we expose the delegate?
+
     listView->setDragDropMode(QAbstractItemView::DragDrop);
     listView->setMovement(QListView::Snap);
     listView->setResizeMode(QListView::Adjust);
@@ -110,7 +116,8 @@ void FolderView::setViewMode(ViewMode _mode) {
     switch(mode) {
       case IconMode: {
         listView->setViewMode(QListView::IconMode);
-        listView->setGridSize(QSize(80, 80));
+        listView->setGridSize(QSize(80, 100));
+        listView->setSpacing(10);
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
 
