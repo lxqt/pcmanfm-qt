@@ -24,7 +24,7 @@
 #include <QMimeData>
 #include <QUrl>
 #include <QList>
-
+#include <QStringBuilder>
 #include "fileoperation.h"
 
 using namespace Fm;
@@ -46,19 +46,60 @@ FmPathList* pathListFromQUrls(QList<QUrl> urls) {
 void pasteFilesFromClipboard(FmPath* destPath, QWidget* parent) {
   QClipboard* clipboard = QApplication::clipboard();
   const QMimeData* data = clipboard->mimeData();
-  if(data->hasUrls()) {
-    FmPathList* paths = Fm::pathListFromQUrls(data->urls());
-    FileOperation::copyFiles(paths, destPath, parent);
+  bool isCut = false;
+  FmPathList* paths = NULL;
+  if(data->hasFormat("x-special/gnome-copied-files")) {
+    // Gnome, LXDE, and XFCE
+    QByteArray gnomeData = data->data("x-special/gnome-copied-files");
+    char* pdata = gnomeData.data();
+    char* eol = strchr(pdata, '\n');
+    if(eol) {
+      *eol = '\0';
+      isCut = (strcmp(pdata, "cut") == 0 ? true : false);
+      paths = fm_path_list_new_from_uri_list(eol + 1);
+    }
+  }
+  
+  if(!paths && data->hasUrls()) {
+    // The KDE way
+    paths = Fm::pathListFromQUrls(data->urls());
+    QByteArray cut = data->data("x-kde-cut-selection");
+    if(!cut.isEmpty() && cut.at(0) == '1')
+      isCut = true;
+  }
+  if(paths) {
+    if(isCut)
+      FileOperation::moveFiles(paths, destPath, parent);
+    else
+      FileOperation::copyFiles(paths, destPath, parent);
     fm_path_list_unref(paths);
   }
 }
 
 void copyFilesToClipboard(FmPathList* files) {
-  
+  QClipboard* clipboard = QApplication::clipboard();
+  QMimeData* data = new QMimeData();
+  char* urilist = fm_path_list_to_uri_list(files);
+  // Gnome, LXDE, and XFCE
+  data->setData("x-special/gnome-copied-files", (QString("copy\n") + urilist).toUtf8());
+  // The KDE way
+  data->setData("text/urilist", urilist);
+  // data.setData("x-kde-cut-selection", "0");
+  g_free(urilist);
+  clipboard->setMimeData(data);
 }
 
 void cutFilesToClipboard(FmPathList* files) {
-  
+  QClipboard* clipboard = QApplication::clipboard();
+  QMimeData* data = new QMimeData();
+  char* urilist = fm_path_list_to_uri_list(files);
+  // Gnome, LXDE, and XFCE
+  data->setData("x-special/gnome-copied-files", (QString("cut\n") + urilist).toUtf8());
+  // The KDE way
+  data->setData("text/urilist", urilist);
+  data->setData("x-kde-cut-selection", "1");
+  g_free(urilist);
+  clipboard->setMimeData(data);
 }
 
 };

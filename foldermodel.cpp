@@ -235,8 +235,10 @@ QModelIndex FolderModel::parent(const QModelIndex & index) const {
 
 Qt::ItemFlags FolderModel::flags(const QModelIndex& index) const {
   // FIXME: should not return same flags unconditionally for all columns
-  // if(index.column() == ColumnName)
-  return Qt::ItemIsEnabled|Qt::ItemIsSelectable|Qt::ItemIsDragEnabled|Qt::ItemIsDropEnabled; 
+  Qt::ItemFlags flags = Qt::ItemIsEnabled|Qt::ItemIsSelectable;
+  if(index.column() == ColumnName)
+    flags |= (Qt::ItemIsDragEnabled|Qt::ItemIsDropEnabled);
+  return flags;
 }
 
 // FIXME: this is very inefficient and should be replaced with a 
