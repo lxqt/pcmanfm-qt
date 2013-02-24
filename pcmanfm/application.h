@@ -27,6 +27,9 @@
 
 namespace PCManFM {
 
+class CommandLineData;
+class DesktopWindow;
+
 class Application : public QApplication {
 Q_OBJECT
 
@@ -44,7 +47,13 @@ public:
     return fmApp_;
   }
 
-  void parseCommandLine(int argc, char** argv);
+  // public interface exported via dbus
+  void launchFiles(QStringList paths, bool inNewWindow);
+  void setWallpaper(QString path, QString modeString);
+  void preferences(QString page);
+  void desktopPrefrences(QString page);
+  void desktopManager(bool enabled);
+  void findFiles(QStringList paths);
 
 protected Q_SLOTS:
   void onAboutToQuit();
@@ -52,6 +61,7 @@ protected Q_SLOTS:
   void onLastWindowClosed();
   void onSaveStateRequest(QSessionManager & manager);
   
+public Q_SLOTS:
   void onCmdLineSwitch(const QString& name);
   void onCmdLineOption(const QString& name, const QVariant& value);
   void onCmdLineParam(const QString& name, const QVariant& value);
@@ -59,11 +69,17 @@ protected Q_SLOTS:
 
 protected:
   virtual void commitData(QSessionManager & manager);
+  bool parseCommandLineArgs(int argc, char** argv);
 
 private:
+  bool isPrimaryInstance;
   Fm::Application fmApp_;
   Settings settings_;
   QString profileName;
+  bool daemonMode_;
+  bool enableDesktopManager_;
+  QList<DesktopWindow*> desktopWindows_;
+  CommandLineData* cmdLineData_;
 };
 
 }

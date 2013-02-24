@@ -1,14 +1,16 @@
 project(pcmanfm-qt)
 cmake_minimum_required(VERSION 2.6)
-find_package(Qt4 REQUIRED)
+
+find_package(Qt4 4.7 REQUIRED  QtCore QtGui QtDBus)
+include(${QT_USE_FILE})
 
 find_package(PkgConfig)
-pkg_check_modules(LIBFM
+pkg_check_modules(LIBFM REQUIRED
   glib-2.0
   gio-2.0
   gio-unix-2.0
   libfm
-  libstartup-notification-1.0
+#  libstartup-notification-1.0
   x11
 )
 
@@ -81,6 +83,7 @@ set(qcommandline_SRCS
 
 set(pcmanfm_SRCS
   ${qcommandline_SRCS}
+  pcmanfm/dbusadaptor.cpp
   pcmanfm/application.cpp
   pcmanfm/pcmanfm.cpp
   pcmanfm/mainwindow.cpp
@@ -89,6 +92,15 @@ set(pcmanfm_SRCS
   pcmanfm/desktopwindow.cpp
   pcmanfm/settings.cpp
 )
+
+qt4_add_dbus_adaptor(pcmanfm_SRCS
+  pcmanfm/org.pcmanfm.Application.xml
+  pcmanfm/application.h
+  PCManFM::Application
+  applicationadaptor
+  ApplicationAdaptor
+)
+
 
 set(pcmanfm_UIS
   pcmanfm/main-win.ui
@@ -108,6 +120,7 @@ add_executable(pcmanfm-qt
 target_link_libraries(pcmanfm-qt 
   ${QT_QTCORE_LIBRARY}
   ${QT_QTGUI_LIBRARY}
-  ${QT_QTTEST_LIBRARY}
+  ${QT_QTDBUS_LIBRARY}
+#  ${QT_QTTEST_LIBRARY}
   ${LIBFM_LIBRARIES}
 )
