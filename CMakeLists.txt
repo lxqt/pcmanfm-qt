@@ -19,6 +19,7 @@ include_directories(
   ${LIBFM_INCLUDE_DIRS}
   ${CMAKE_CURRENT_BINARY_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}
+  ${CMAKE_SOURCE_DIR}/libfm-qt
   # ${Boost_INCLUDE_DIRS}
   # qmodeltest
 )
@@ -37,37 +38,35 @@ set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive")
 #)
 
 set(libfm_SRCS
-  bookmarkaction.cpp
-  sidepane.cpp
-  tabpage.cpp
-  application.cpp
-  icontheme.cpp
-  filelauncher.cpp
-  foldermodel.cpp
-  proxyfoldermodel.cpp
-  folderview.cpp
-  folderitemdelegate.cpp
-  filemenu.cpp
-  filepropsdialog.cpp
-  applaunchcontext.cpp
-  placesview.cpp
-  placesmodel.cpp
-  mountoperation.cpp
-  mountoperationpassworddialog.cpp
-  mountoperationquestiondialog.cpp
-  fileoperation.cpp
-  fileoperationdialog.cpp
-  renamedialog.cpp
-  pathcompleter.cpp
-  utilities.cpp
-  #  ${qmodeltest_SRCS}
+  libfm-qt/bookmarkaction.cpp
+  libfm-qt/sidepane.cpp
+  libfm-qt/application.cpp
+  libfm-qt/icontheme.cpp
+  libfm-qt/filelauncher.cpp
+  libfm-qt/foldermodel.cpp
+  libfm-qt/proxyfoldermodel.cpp
+  libfm-qt/folderview.cpp
+  libfm-qt/folderitemdelegate.cpp
+  libfm-qt/filemenu.cpp
+  libfm-qt/filepropsdialog.cpp
+  libfm-qt/applaunchcontext.cpp
+  libfm-qt/placesview.cpp
+  libfm-qt/placesmodel.cpp
+  libfm-qt/mountoperation.cpp
+  libfm-qt/mountoperationpassworddialog.cpp
+  libfm-qt/mountoperationquestiondialog.cpp
+  libfm-qt/fileoperation.cpp
+  libfm-qt/fileoperationdialog.cpp
+  libfm-qt/renamedialog.cpp
+  libfm-qt/pathcompleter.cpp
+  libfm-qt/utilities.cpp
 )
 
 set(libfm_UIS
-  file-props.ui
-  file-operation-dialog.ui
-  rename-dialog.ui
-  mount-operation-password.ui
+  libfm-qt/file-props.ui
+  libfm-qt/file-operation-dialog.ui
+  libfm-qt/rename-dialog.ui
+  libfm-qt/mount-operation-password.ui
 )
 
 QT4_WRAP_UI(libfm_UIS_H ${libfm_UIS})
@@ -75,17 +74,18 @@ qt4_automoc(${libfm_SRCS})
 
 
 set(pcmanfm_SRCS
-  pcmanfm.cpp
-  mainwindow.cpp
-  preferencesdialog.cpp
-  desktopwindow.cpp
-  settings.cpp
+  pcmanfm-qt/pcmanfm.cpp
+  pcmanfm-qt/mainwindow.cpp
+  pcmanfm-qt/tabpage.cpp
+  pcmanfm-qt/preferencesdialog.cpp
+  pcmanfm-qt/desktopwindow.cpp
+  pcmanfm-qt/settings.cpp
 )
 
 set(pcmanfm_UIS
-  main-win.ui
-  about.ui
-  preferences.ui
+  pcmanfm-qt/main-win.ui
+  pcmanfm-qt/about.ui
+  pcmanfm-qt/preferences.ui
 )
 
 QT4_WRAP_UI(pcmanfm_UIS_H ${pcmanfm_UIS})
