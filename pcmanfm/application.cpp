@@ -144,8 +144,10 @@ bool Application::parseCommandLineArgs(int argc, char** argv) {
     settings_.load(profileName);
 
     // desktop icon management
-    if(desktop)
+    if(desktop) {
       desktopManager(true);
+      keepRunning = true;
+    }
     else if(desktop_off)
       desktopManager(false);
 
