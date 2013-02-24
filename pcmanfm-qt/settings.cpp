@@ -28,6 +28,7 @@ using namespace PCManFM;
 
 Settings::Settings():
   QObject(),
+  iconThemeName_(),
   bookmarkOpenMethod_(0),
   suCommand_(),
   mountOnStartup_(true),
@@ -62,7 +63,6 @@ Settings::Settings():
   smallIconSize_(24),
   sidePaneIconSize_(24),
   thumbnailIconSize_(128) {
-
 }
 
 Settings::~Settings() {
@@ -94,6 +94,11 @@ bool Settings::loadFile(QString filePath) {
 
   settings.beginGroup("System");
   iconThemeName_ = settings.value("IconThemeName").toString();
+  if(iconThemeName_.isEmpty()) {
+    // FIXME: we should choose one from installed icon themes or get
+    // the value from XSETTINGS instead of hard code a fallback value.
+    iconThemeName_ = "elementary"; // fallback icon theme name
+  }
   suCommand_ = settings.value("SuCommand").toString();
   settings.endGroup();
 

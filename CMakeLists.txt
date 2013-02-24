@@ -74,6 +74,7 @@ qt4_automoc(${libfm_SRCS})
 
 
 set(pcmanfm_SRCS
+  pcmanfm-qt/application.cpp
   pcmanfm-qt/pcmanfm.cpp
   pcmanfm-qt/mainwindow.cpp
   pcmanfm-qt/tabpage.cpp
