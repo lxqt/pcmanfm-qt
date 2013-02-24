@@ -24,8 +24,10 @@
 #include <QDBusConnection>
 #include <QDBusInterface>
 #include <QDir>
+#include <QDesktopWidget>
 
 #include "applicationadaptor.h"
+#include "preferencesdialog.h"
 
 using namespace PCManFM;
 static const char* serviceName = "org.pcmanfm.PCManFM";
@@ -164,17 +166,24 @@ bool Application::parseCommandLineArgs(int argc, char** argv) {
     else if(wallpaper || wallpaper_mode) // set wall paper
       setWallpaper(wallpaper, wallpaper_mode);
     else {
-      QStringList paths;
-      if(file_names) {
-        for(char** filename = file_names; *filename; ++filename) {
-          QString path(*filename);
-          paths.push_back(path);
+      if(!desktop && !desktop_off) {
+        QStringList paths;
+        if(file_names) {
+          for(char** filename = file_names; *filename; ++filename) {
+            QString path(*filename);
+            paths.push_back(path);
+          }
         }
+        else {
+          // if no path is specified and we're using daemon mode,
+          // don't open current working directory
+          if(!daemonMode_)
+            paths.push_back(QDir::currentPath());
+        }
+        if(!paths.isEmpty())
+          launchFiles(paths, (bool)new_window);
+        keepRunning = true;
       }
-      else
-        paths.push_back(QDir::currentPath());
-      launchFiles(paths, (bool)new_window);
-      keepRunning = true;
     }
   }
   else {
@@ -210,17 +219,19 @@ bool Application::parseCommandLineArgs(int argc, char** argv) {
       iface.call("setWallpaper", QString(wallpaper), QString(wallpaper_mode));
     }
     else {
-      QStringList paths;
-      if(file_names) {
-        for(char** filename = file_names; *filename; ++filename) {
-          QString path(*filename);
-          paths.push_back(path);
+      if(!desktop && !desktop_off) {
+        QStringList paths;
+        if(file_names) {
+          for(char** filename = file_names; *filename; ++filename) {
+            QString path(*filename);
+            paths.push_back(path);
+          }
         }
+        else
+          paths.push_back(QDir::currentPath());
+        // the function requires bool, but new_window is gboolean, the casting is needed.
+        iface.call("launchFiles", paths, (bool)new_window);
       }
-      else
-        paths.push_back(QDir::currentPath());
-      // the function requires bool, but new_window is gboolean, the casting is needed.
-      QDBusMessage msg = iface.call("launchFiles", paths, (bool)new_window);
     }
   }
 
@@ -239,6 +250,9 @@ int Application::exec() {
 
   if(!parseCommandLineArgs(QCoreApplication::argc(), QCoreApplication::argv()))
     return 0;
+
+  if(daemonMode_) // keep running even when there is no window opened.
+    setQuitOnLastWindowClosed(false);
 
   return QCoreApplication::exec();
 }
@@ -264,6 +278,30 @@ void Application::onSaveStateRequest(QSessionManager& manager) {
 void Application::desktopManager(bool enabled) {
   // TODO: turn on or turn off desktpo management (desktop icons & wallpaper)
   qDebug("desktopManager: %d", enabled);
+  QDesktopWidget* desktopWidget = desktop();
+  if(enabled) {
+    if(!enableDesktopManager_) {
+      int n = desktopWidget->numScreens();
+      connect(desktopWidget, SIGNAL(workAreaResized(int)), SLOT(onWorkAreaResized(int)));
+      connect(desktopWidget, SIGNAL(screenCountChanged(int)), SLOT(onScreenCountChanged(int)));
+      desktopWindows_.reserve(n);
+      for(int i = 0; i < n; ++i) {
+        DesktopWindow* window = createDesktopWindow(i);
+        desktopWindows_.push_back(window);
+      }
+    }
+  }
+  else {
+    if(enableDesktopManager_) {
+      disconnect(desktopWidget, SIGNAL(workAreaResized(int)), this, SLOT(onWorkAreaResized(int)));
+      disconnect(desktopWidget, SIGNAL(screenCountChanged(int)), this, SLOT(onScreenCountChanged(int)));
+      Q_FOREACH(DesktopWindow* window, desktopWindows_) {
+        window->close();
+      }
+      desktopWindows_.clear();
+    }
+  }
+  enableDesktopManager_ = enabled;
 }
 
 void Application::desktopPrefrences(QString page) {
@@ -296,6 +334,8 @@ void Application::launchFiles(QStringList paths, bool inNewWindow) {
 void Application::preferences(QString page) {
   // TODO: open preference dialog
   qDebug("open preference dialog");
+  PreferencesDialog dlg;
+  dlg.exec();
 }
 
 void Application::setWallpaper(QString path, QString modeString) {
@@ -304,6 +344,47 @@ void Application::setWallpaper(QString path, QString modeString) {
   // settings_.setWallpaperMode();
   // TODO: update wallpaper
   qDebug("setWallpaper(\"%s\", \"%s\")", path.toUtf8().data(), modeString.toUtf8().data());
+}
+
+void Application::onWorkAreaResized(int num) {
+  DesktopWindow* window = desktopWindows_.at(num);
+  QRect rect = desktop()->availableGeometry(num);
+  window->resize(rect.width(), rect.height());
+  window->move(rect.x(), rect.y());
+}
+
+DesktopWindow* Application::createDesktopWindow(int screenNum) {
+  DesktopWindow* window = new DesktopWindow();
+  QRect rect = desktop()->availableGeometry(screenNum);
+  window->resize(rect.width(), rect.height());
+  window->move(rect.x(), rect.y());
+  if(!settings_.wallpaper().isEmpty()) {
+    // FIXME: should handle wallpaper mode properly
+    window->setBackground(settings_.wallpaper());
+    qDebug("%s", settings_.wallpaper().toUtf8().data());
+  }
+  window->setForeground(settings_.desktopFgColor());
+  window->show();
+}
+
+
+void Application::onScreenCountChanged(int newCount) {
+  int i;
+  QDesktopWidget* desktopWidget = desktop();
+  if(newCount > desktopWindows_.size()) {
+    // add more desktop windows
+    for(i = desktopWindows_.size(); i < newCount; ++i) {
+      DesktopWindow* window = createDesktopWindow(i);
+      desktopWindows_.push_back(window);
+    }
+  }
+  else if(newCount < desktopWindows_.size()) {
+    for(i = newCount; i < desktopWindows_.size(); ++i) {
+      DesktopWindow* window = desktopWindows_.at(i);
+      window->close();
+    }
+    desktopWindows_.resize(newCount);
+  }
 }
 
 #include "application.moc"

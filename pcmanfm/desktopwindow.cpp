@@ -90,5 +90,14 @@ void DesktopWindow::setBackground(QImage image) {
   listView->setPalette(p);
 }
 
+void DesktopWindow::setForeground(QColor color) {
+  QListView* listView = static_cast<QListView*>(childView());
+  listView->palette().setBrush(QPalette::Text, color);
+}
+
+void DesktopWindow::setShadow(QColor color) {
+  // TODO: implement drawing text with shadow
+}
+
 
 #include "desktopwindow.moc"

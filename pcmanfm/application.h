@@ -24,6 +24,7 @@
 #include <QApplication>
 #include "settings.h"
 #include "../libfm-qt/application.h"
+#include <QVector>
 
 namespace PCManFM {
 
@@ -59,10 +60,13 @@ protected Q_SLOTS:
 
   void onLastWindowClosed();
   void onSaveStateRequest(QSessionManager & manager);
+  void onWorkAreaResized(int num);
+  void onScreenCountChanged(int newCount);
 
 protected:
   virtual void commitData(QSessionManager & manager);
   bool parseCommandLineArgs(int argc, char** argv);
+  DesktopWindow* createDesktopWindow(int screenNum);
 
 private:
   bool isPrimaryInstance;
@@ -71,7 +75,7 @@ private:
   QString profileName;
   bool daemonMode_;
   bool enableDesktopManager_;
-  QList<DesktopWindow*> desktopWindows_;
+  QVector<DesktopWindow*> desktopWindows_;
 };
 
 }

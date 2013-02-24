@@ -40,6 +40,9 @@ public:
   void setBackground(QImage image);
   void setBackground(QString fileName);
   
+  void setForeground(QColor color);
+  void setShadow(QColor color);
+  
 private:
   Fm::ProxyFolderModel* proxyModel;
   Fm::FolderModel* model;

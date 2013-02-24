@@ -15,7 +15,7 @@
 #include "fileoperation.h"
 #include "utilities.h"
 #include "ui_about.h"
-#include "preferencesdialog.h"
+#include "application.h"
 
 // #include "qmodeltest/modeltest.h"
 
@@ -371,8 +371,8 @@ void MainWindow::on_actionInvertSelection_triggered() {
 }
 
 void MainWindow::on_actionPreferences_triggered() {
-  PreferencesDialog dlg;
-  dlg.exec();
+  Application* app = reinterpret_cast<Application*>(qApp);
+  app->preferences(QString());
 }
 
 }
