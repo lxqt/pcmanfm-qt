@@ -158,10 +158,8 @@ void TabPage::freeFolder() {
 }
 
 /*static*/ FmJobErrorAction TabPage::onFolderError(FmFolder* _folder, GError* err, FmJobErrorSeverity severity, TabPage* pThis) {
-  if(err->domain == G_IO_ERROR)
-  {
-    if(err->code == G_IO_ERROR_NOT_MOUNTED && severity < FM_JOB_ERROR_CRITICAL)
-    {
+  if(err->domain == G_IO_ERROR) {
+    if(err->code == G_IO_ERROR_NOT_MOUNTED && severity < FM_JOB_ERROR_CRITICAL) {
       FmPath* path = fm_folder_get_path(_folder);
       MountOperation* op = new MountOperation(pThis);
       op->mount(path);
@@ -268,8 +266,7 @@ void TabPage::chdir(FmPath* path) {
   g_signal_connect(folder_, "unmount", G_CALLBACK(onFolderUnmount), this);
   g_signal_connect(folder_, "content-changed", G_CALLBACK(onFolderContentChanged), this);
 
-  if(fm_folder_is_loaded(folder_))
-  {
+  if(fm_folder_is_loaded(folder_)) {
       onFolderStartLoading(folder_, this);
       onFolderFinishLoading(folder_, this);
       onFolderFsInfo(folder_, this);

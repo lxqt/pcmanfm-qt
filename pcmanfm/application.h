@@ -27,7 +27,6 @@
 
 namespace PCManFM {
 
-class CommandLineData;
 class DesktopWindow;
 
 class Application : public QApplication {
@@ -60,12 +59,6 @@ protected Q_SLOTS:
 
   void onLastWindowClosed();
   void onSaveStateRequest(QSessionManager & manager);
-  
-public Q_SLOTS:
-  void onCmdLineSwitch(const QString& name);
-  void onCmdLineOption(const QString& name, const QVariant& value);
-  void onCmdLineParam(const QString& name, const QVariant& value);
-  void onCmdLineError(const QString error);
 
 protected:
   virtual void commitData(QSessionManager & manager);
@@ -79,7 +72,6 @@ private:
   bool daemonMode_;
   bool enableDesktopManager_;
   QList<DesktopWindow*> desktopWindows_;
-  CommandLineData* cmdLineData_;
 };
 
 }

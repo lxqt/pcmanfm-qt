@@ -25,36 +25,7 @@
 #include <QDBusInterface>
 #include <QDir>
 
-#include <QCommandLine>
-
 #include "applicationadaptor.h"
-
-namespace PCManFM {
-
-  class CommandLineData {
-  public:
-    CommandLineData():
-      daemonMode(false),
-      desktop(false),
-      desktopOff(false),
-      newWindow(false),
-      findFiles(false) {      
-    }
-
-    QString profileName;
-    bool daemonMode;
-    bool desktop;
-    bool desktopOff;
-    QString desktopPref;
-    QString wallpaper;
-    QString wallpaperMode;
-    QString showPref;
-    bool newWindow;
-    bool findFiles;
-    QStringList paths;
-  };
-  
-};
 
 using namespace PCManFM;
 static const char* serviceName = "org.pcmanfm.PCManFM";
@@ -66,8 +37,7 @@ Application::Application(int& argc, char** argv):
   settings_(),
   profileName("default"),
   daemonMode_(false),
-  enableDesktopManager_(false),
-  cmdLineData_(NULL) {
+  enableDesktopManager_(false) {
 
   // QDBusConnection::sessionBus().registerObject("/org/pcmanfm/Application", this);
   QDBusConnection dbus = QDBusConnection::sessionBus();
@@ -93,121 +63,182 @@ Application::~Application() {
 
 }
 
+struct FakeTr {
+  const char* operator() (const char* str) {
+    QString translated = QApplication::translate(NULL, str);
+    strings.push_back(translated.toUtf8());
+    return strings.back().constData();
+  }
+  QList<QByteArray> strings;
+};
 
 bool Application::parseCommandLineArgs(int argc, char** argv) {
-  // It's really a shame that the great Qt library does not come
-  // with any command line parser. Let's use QCommandLine.
-  // TODO: patch QCommandLine so it can accept empty shortnames.
-  const QCommandLineConfigEntry conf[] = {
-    {QCommandLine::Option, 'p', "profile", tr("Name of configuration profile"), QCommandLine::Optional},
-    {QCommandLine::Switch, 'd', "daemon-mode", tr("Run PCManFM as a daemon"), QCommandLine::Optional},
-    // options that are acceptable for every instance of pcmanfm and will be passed through IPC.
-    {QCommandLine::Switch, 't', "desktop", tr("Launch desktop manager"), QCommandLine::Optional},
-    {QCommandLine::Switch, 'o', "desktop-off", tr("Turn off desktop manager if it's running"), QCommandLine::Optional},
-    {QCommandLine::Option, 'e', "desktop-pref", tr("Open desktop preference dialog"), QCommandLine::Optional},
-    {QCommandLine::Option, 'w', "set-wallpaper", tr("Set desktop wallpaper from image FILE"), QCommandLine::Optional},
-    // don't translate list of modes in description, please
-    {QCommandLine::Option, 'm', "wallpaper-mode", tr("Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)"), QCommandLine::Optional},
-    {QCommandLine::Option, 'r', "show-pref", tr("Open Preferences dialog on the page N"), QCommandLine::Optional},
-    {QCommandLine::Switch, 'n', "new-window", tr("Open new window"), QCommandLine::Optional},
-    {QCommandLine::Switch, 'f', "find-files", tr("Open Find Files utility"), QCommandLine::Optional},
-    {QCommandLine::Param, '\0', "paths", ("File or folder paths to opern"), QCommandLine::OptionalMultiple},
-    {QCommandLine::None, '\0', NULL, NULL, QCommandLine::Default}
-  };
-  QCommandLine cmdLine(this);
-  cmdLine.setConfig(conf);
-  cmdLine.enableVersion(true); // enable -v // --version
-  cmdLine.enableHelp(true); // enable -h / --help
-  // why Qt-using developers like to use signal/slot so much?
-  // in this case, an array of callback functions works much more efficient.
-  // Anyway, this is not a performance critical part.
-  // If someday other parts are finished, maybe we can do our own command line parsing.
-  connect(&cmdLine, SIGNAL(switchFound(QString)), SLOT(onCmdLineSwitch(QString)));
-  connect(&cmdLine, SIGNAL(optionFound(QString,QVariant)), SLOT(onCmdLineOption(QString,QVariant)));
-  connect(&cmdLine, SIGNAL(paramFound(QString,QVariant)), SLOT(onCmdLineParam(QString,QVariant)));
-  connect(&cmdLine, SIGNAL(parseError(QString)), SLOT(onCmdLineError(QString)));
+  bool keepRunning = false;
 
-  CommandLineData data;
-  cmdLineData_ = &data;
-  cmdLine.parse();
-  cmdLineData_ = NULL;
+  // It's really a shame that the great Qt library does not come
+  // with any command line parser.
+  // After trying some Qt ways, I finally realized that glib is the best.
+  // Simple, efficient, effective, and does not use signal/slot!
+  // The only drawback is the translated string returned by tr() is
+  // a temporary one. We need to store them in a list to keep them alive. :-(
+
+  char* profile = NULL;
+  gboolean daemon_mode = FALSE;
+  gboolean ask_quit = FALSE;
+  gboolean desktop = FALSE;
+  gboolean desktop_off = FALSE;
+  char* desktop_pref = NULL;
+  char* wallpaper = NULL;
+  char* wallpaper_mode = NULL;
+  char* show_pref = NULL;
+  gboolean new_window = FALSE;
+  gboolean find_files = FALSE;
+  char** file_names = NULL;
+  {
+    FakeTr tr; // a functor used to override QObject::tr().
+    // it convert the translated strings to UTF8 and add them to a list to
+    // keep them alive during the option parsing process.
+    GOptionEntry option_entries[] = {
+      /* options only acceptable by first pcmanfm instance. These options are not passed through IPC */
+      {"profile", 'p', 0, G_OPTION_ARG_STRING, &profile, tr("Name of configuration profile"), tr("PROFILE") },
+      {"daemon-mode", 'd', 0, G_OPTION_ARG_NONE, &daemon_mode, tr("Run PCManFM as a daemon"), NULL },
+      // options that are acceptable for every instance of pcmanfm and will be passed through IPC.
+      {"quit", 'p', 0, G_OPTION_ARG_NONE, &ask_quit, tr("Quit PCManFM"), NULL},
+      {"desktop", '\0', 0, G_OPTION_ARG_NONE, &desktop, tr("Launch desktop manager"), NULL },
+      {"desktop-off", '\0', 0, G_OPTION_ARG_NONE, &desktop_off, tr("Turn off desktop manager if it's running"), NULL },
+      {"desktop-pref", '\0', 0, G_OPTION_ARG_STRING, &desktop_pref, tr("Open desktop preference dialog"), NULL },
+      {"set-wallpaper", 'w', 0, G_OPTION_ARG_FILENAME, &wallpaper, tr("Set desktop wallpaper from image FILE"), tr("FILE") },
+      // don't translate list of modes in description, please
+      {"wallpaper-mode", '\0', 0, G_OPTION_ARG_STRING, &wallpaper_mode, tr("Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)"), tr("MODE") },
+      {"show-pref", '\0', 0, G_OPTION_ARG_STRING, &show_pref, tr("Open Preferences dialog on the page N"), tr("N") },
+      {"new-window", 'n', 0, G_OPTION_ARG_NONE, &new_window, tr("Open new window"), NULL },
+      {"find-files", 'f', 0, G_OPTION_ARG_NONE, &find_files, tr("Open Find Files utility"), NULL },
+      {G_OPTION_REMAINING, 0, 0, G_OPTION_ARG_FILENAME_ARRAY, &file_names, NULL, tr("[FILE1, FILE2,...]")},
+      { NULL }
+    };
+
+    GOptionContext* context = g_option_context_new("");
+    g_option_context_add_main_entries(context, option_entries, NULL);
+    GError* error = NULL;
+    if(!g_option_context_parse(context, &argc, &argv, &error)) {
+      // show error and exit
+      g_fprintf(stderr, "%s\n\n", error->message);
+      g_error_free(error);
+      g_option_context_free(context);
+      return false;
+    }
+    g_option_context_free(context);
+  }
 
   if(isPrimaryInstance) {
     qDebug("isPrimaryInstance");
 
-    if(data.daemonMode)
+    if(daemon_mode)
       daemonMode_ = true;
-    if(!data.profileName.isEmpty())
-      profileName = data.profileName;
+    if(profile)
+      profileName = profile;
 
     // load settings
     settings_.load(profileName);
 
-    qDebug("HERE");
     // desktop icon management
-    if(data.desktop)
+    if(desktop)
       desktopManager(true);
-    else if(data.desktopOff)
+    else if(desktop_off)
       desktopManager(false);
 
-    qDebug("HERE");
-    if(!data.desktopPref.isEmpty()) // desktop preference dialog
-      desktopPrefrences(data.desktopPref);
-    else if(data.findFiles) // file searching utility
-      findFiles(data.paths);
-    else if(!data.showPref.isEmpty()) // preferences dialog
-      preferences(data.showPref);
-    else if(!data.wallpaper.isEmpty()) { // set wall paper
-      setWallpaper(data.wallpaper, data.wallpaperMode);
+    if(desktop_pref) // desktop preference dialog
+      desktopPrefrences(desktop_pref);
+    else if(find_files) { // file searching utility
+      QStringList paths;
+      if(file_names) {
+        for(char** filename = file_names; *filename; ++filename) {
+          QString path(*filename);
+          paths.push_back(path);
+        }
+      }
+      findFiles(paths);
     }
+    else if(show_pref) // preferences dialog
+      preferences(show_pref);
+    else if(wallpaper || wallpaper_mode) // set wall paper
+      setWallpaper(wallpaper, wallpaper_mode);
     else {
-      if(data.paths.isEmpty())
-        data.paths.push_back(QDir::currentPath());
-      launchFiles(data.paths, data.newWindow);
-      return true;
+      QStringList paths;
+      if(file_names) {
+        for(char** filename = file_names; *filename; ++filename) {
+          QString path(*filename);
+          paths.push_back(path);
+        }
+      }
+      else
+        paths.push_back(QDir::currentPath());
+      launchFiles(paths, (bool)new_window);
+      keepRunning = true;
     }
   }
   else {
     QDBusConnection dbus = QDBusConnection::sessionBus();
-    QDBusInterface* iface = new QDBusInterface(serviceName,
-                                               "/Application",
-                                               ifaceName,
-                                               dbus,
-                                               this);
-    if(data.desktop)
-      iface->call("desktopManager", true);
-    else if(data.desktopOff)
-      iface->call("desktopManager", false);
+    QDBusInterface iface(serviceName, "/Application", ifaceName, dbus, this);
+    if(ask_quit) {
+      iface.call("quit");
+      return false;
+    }
 
-    if(!data.desktopPref.isEmpty()) // desktop preference dialog
-      iface->call("desktopPrefrences", data.desktopPref);
-    else if(data.findFiles) // file searching utility
-      iface->call("findFiles", data.paths);
-    else if(!data.showPref.isEmpty()) // preferences dialog
-      iface->call("preferences", data.showPref);
-    else if(!data.wallpaper.isEmpty()) // set wall paper
-      iface->call("setWallpaper", data.wallpaper, data.wallpaperMode);
+    if(desktop)
+      iface.call("desktopManager", true);
+    else if(desktop_off)
+      iface.call("desktopManager", false);
+
+    if(desktop_pref) { // desktop preference dialog
+      iface.call("desktopPrefrences", QString(desktop_pref));
+    }
+    else if(find_files) { // file searching utility
+      QStringList paths;
+      if(file_names) {
+        for(char** filename = file_names; *filename; ++filename) {
+          QString path(*filename);
+          paths.push_back(path);
+        }
+      }
+      iface.call("findFiles", paths);
+    }
+    else if(show_pref) { // preferences dialog
+      iface.call("preferences", QString(show_pref));
+    }
+    else if(wallpaper || wallpaper_mode) { // set wall paper
+      iface.call("setWallpaper", QString(wallpaper), QString(wallpaper_mode));
+    }
     else {
-      if(data.paths.isEmpty())
-          data.paths.push_back(QDir::currentPath());
-      iface->call("launchFiles", data.paths, data.newWindow);
+      QStringList paths;
+      if(file_names) {
+        for(char** filename = file_names; *filename; ++filename) {
+          QString path(*filename);
+          paths.push_back(path);
+        }
+      }
+      else
+        paths.push_back(QDir::currentPath());
+      // the function requires bool, but new_window is gboolean, the casting is needed.
+      QDBusMessage msg = iface.call("launchFiles", paths, (bool)new_window);
     }
   }
-  return false;
+
+  // cleanup
+  g_free(desktop_pref);
+  g_free(show_pref);
+  g_free(wallpaper);
+  g_free(wallpaper_mode);
+  g_free(profile);
+  g_strfreev(file_names);
+
+  return keepRunning;
 }
 
 int Application::exec() {
 
   if(!parseCommandLineArgs(QCoreApplication::argc(), QCoreApplication::argv()))
     return 0;
-
-  MainWindow mainWin;
-  // The desktop icons window
-  // PCManFM::DesktopWindow desktopWindow;
-  // desktopWindow.show();
-
-  mainWin.resize(640, 480);
-  mainWin.show();
 
   return QCoreApplication::exec();
 }
@@ -230,76 +261,41 @@ void Application::onSaveStateRequest(QSessionManager& manager) {
 
 }
 
-void Application::onCmdLineError(const QString error) {
-  // TODO: print error message
-  exit(1);
-}
-
-void Application::onCmdLineOption(const QString& name, const QVariant& value) {
-  if(name == "profile") {
-    profileName = value.toString();
-  }
-  else if(name == "desktop-pref") {
-    cmdLineData_->desktopPref = value.toString();
-  }
-  else if(name == "set-wallpaper") {
-    cmdLineData_->wallpaper = value.toString();
-  }
-  else if(name == "wallpaper-mode") {
-    cmdLineData_->wallpaperMode;
-  }
-  else if(name == "show-pref") {
-    cmdLineData_->showPref = value.toString();
-  }
-}
-
-void Application::onCmdLineSwitch(const QString& name) {
-  if(name == "daemon-mode") {
-    cmdLineData_->daemonMode = true;
-  }
-  else if(name == "desktop") {
-    cmdLineData_->desktop = true;
-  }
-  else if(name == "desktop-off") {
-    cmdLineData_->desktopOff = true;
-  }
-  else if(name == "new-window") {
-    cmdLineData_->newWindow = true;
-  }
-  else if(name == "find-files") {
-    cmdLineData_->findFiles = true;
-  }
-}
-
-void Application::onCmdLineParam(const QString& name, const QVariant& value) {
-  if(name == "paths") {
-    cmdLineData_->paths = value.toStringList();
-  }
-}
-
 void Application::desktopManager(bool enabled) {
   // TODO: turn on or turn off desktpo management (desktop icons & wallpaper)
+  qDebug("desktopManager: %d", enabled);
 }
 
 void Application::desktopPrefrences(QString page) {
   // TODO: show desktop preference window
+  qDebug("show desktop preference window: %s", page.toUtf8().data());
 }
 
 void Application::findFiles(QStringList paths) {
   // TODO: add a file searching utility here.
+  qDebug("findFiles");
 }
 
 void Application::launchFiles(QStringList paths, bool inNewWindow) {
-  // TODO: open paths referred by paths
+
+  MainWindow* mainWin = new MainWindow();
+  // open paths referred by paths
+  // TODO: handle files
   QStringList::iterator it;
   for(it = paths.begin(); it != paths.end(); ++it) {
     QString& pathName = *it;
-    qDebug("launch: %s, %d", pathName.toUtf8().data(), (int)inNewWindow);
+    FmPath* path = fm_path_new_for_path(pathName.toUtf8().constData());
+    mainWin->addTab(path);
+    fm_path_unref(path);
   }
+
+  mainWin->resize(640, 480);
+  mainWin->show();
 }
 
 void Application::preferences(QString page) {
   // TODO: open preference dialog
+  qDebug("open preference dialog");
 }
 
 void Application::setWallpaper(QString path, QString modeString) {
@@ -307,6 +303,7 @@ void Application::setWallpaper(QString path, QString modeString) {
   settings_.setWallpaper(path);
   // settings_.setWallpaperMode();
   // TODO: update wallpaper
+  qDebug("setWallpaper(\"%s\", \"%s\")", path.toUtf8().data(), modeString.toUtf8().data());
 }
 
 #include "application.moc"

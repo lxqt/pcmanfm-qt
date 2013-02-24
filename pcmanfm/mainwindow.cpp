@@ -59,8 +59,8 @@ MainWindow::MainWindow(FmPath* path) {
   g_signal_connect(bookmarks, "changed", G_CALLBACK(onBookmarksChanged), this);
   loadBookmarksMenu();
 
-  // open home dir by default
-  addTab(path ? path : fm_path_get_home());
+  if(path)
+    addTab(path);
 }
 
 MainWindow::~MainWindow() {

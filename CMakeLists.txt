@@ -22,7 +22,6 @@ include_directories(
   ${CMAKE_CURRENT_BINARY_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${CMAKE_SOURCE_DIR}/libfm-qt
-  ${CMAKE_SOURCE_DIR}/qcommandline
   # ${Boost_INCLUDE_DIRS}
   # qmodeltest
 )
@@ -75,15 +74,7 @@ set(libfm_UIS
 QT4_WRAP_UI(libfm_UIS_H ${libfm_UIS})
 qt4_automoc(${libfm_SRCS})
 
-# for QCommandLine
-add_definitions(-DQCOMMANDLINE_STATIC)
-set(qcommandline_SRCS
-  qcommandline/qcommandline.cpp
-)
-
 set(pcmanfm_SRCS
-  ${qcommandline_SRCS}
-  pcmanfm/dbusadaptor.cpp
   pcmanfm/application.cpp
   pcmanfm/pcmanfm.cpp
   pcmanfm/mainwindow.cpp
