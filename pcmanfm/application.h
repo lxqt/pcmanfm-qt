@@ -43,19 +43,27 @@ public:
   Fm::Application& fmApp() {
     return fmApp_;
   }
-  
+
+  void parseCommandLine(int argc, char** argv);
+
 protected Q_SLOTS:
   void onAboutToQuit();
 
   void onLastWindowClosed();
   void onSaveStateRequest(QSessionManager & manager);
   
+  void onCmdLineSwitch(const QString& name);
+  void onCmdLineOption(const QString& name, const QVariant& value);
+  void onCmdLineParam(const QString& name, const QVariant& value);
+  void onCmdLineError(const QString error);
+
 protected:
   virtual void commitData(QSessionManager & manager);
 
 private:
   Fm::Application fmApp_;
   Settings settings_;
+  QString profileName;
 };
 
 }

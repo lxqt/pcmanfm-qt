@@ -20,6 +20,7 @@ include_directories(
   ${CMAKE_CURRENT_BINARY_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${CMAKE_SOURCE_DIR}/libfm-qt
+  ${CMAKE_SOURCE_DIR}/qcommandline
   # ${Boost_INCLUDE_DIRS}
   # qmodeltest
 )
@@ -72,21 +73,27 @@ set(libfm_UIS
 QT4_WRAP_UI(libfm_UIS_H ${libfm_UIS})
 qt4_automoc(${libfm_SRCS})
 
+# for QCommandLine
+add_definitions(-DQCOMMANDLINE_STATIC)
+set(qcommandline_SRCS
+  qcommandline/qcommandline.cpp
+)
 
 set(pcmanfm_SRCS
-  pcmanfm-qt/application.cpp
-  pcmanfm-qt/pcmanfm.cpp
-  pcmanfm-qt/mainwindow.cpp
-  pcmanfm-qt/tabpage.cpp
-  pcmanfm-qt/preferencesdialog.cpp
-  pcmanfm-qt/desktopwindow.cpp
-  pcmanfm-qt/settings.cpp
+  ${qcommandline_SRCS}
+  pcmanfm/application.cpp
+  pcmanfm/pcmanfm.cpp
+  pcmanfm/mainwindow.cpp
+  pcmanfm/tabpage.cpp
+  pcmanfm/preferencesdialog.cpp
+  pcmanfm/desktopwindow.cpp
+  pcmanfm/settings.cpp
 )
 
 set(pcmanfm_UIS
-  pcmanfm-qt/main-win.ui
-  pcmanfm-qt/about.ui
-  pcmanfm-qt/preferences.ui
+  pcmanfm/main-win.ui
+  pcmanfm/about.ui
+  pcmanfm/preferences.ui
 )
 
 QT4_WRAP_UI(pcmanfm_UIS_H ${pcmanfm_UIS})
