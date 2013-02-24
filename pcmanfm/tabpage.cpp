@@ -194,7 +194,9 @@ void TabPage::freeFolder() {
       char free_str[64];
       fm_file_size_to_str(free_str, sizeof(free_str), free, fm_config->si_unit);
       fm_file_size_to_str(total_str, sizeof(total_str), total, fm_config->si_unit);
-      msg = tr("Free space: %1 (Total: %2)").arg(free_str).arg(total_str);
+      msg = tr("Free space: %1 (Total: %2)")
+              .arg(QString::fromUtf8(free_str))
+              .arg(QString::fromUtf8(total_str));
   }
   else
     msg.clear();
