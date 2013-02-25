@@ -306,7 +306,6 @@ void Application::desktopManager(bool enabled) {
       int n = desktopWindows_.size();
       for(int i = 0; i < n; ++i) {
         DesktopWindow* window = desktopWindows_.at(i);
-        // FIXME: the program crashes here sometimes, but I don't know why.
         delete window;
       }
       desktopWindows_.clear();
@@ -376,6 +375,7 @@ DesktopWindow* Application::createDesktopWindow(int screenNum) {
   }
   window->setForeground(settings_.desktopFgColor());
   window->show();
+  return window;
 }
 
 

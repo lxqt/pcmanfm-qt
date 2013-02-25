@@ -32,17 +32,19 @@
 using namespace PCManFM;
 
 DesktopWindow::DesktopWindow():
-  View(Fm::FolderView::IconMode) {
+  View(Fm::FolderView::IconMode),
+  folder(NULL),
+  model(NULL),
+  proxyModel(NULL) {
 
   QDesktopWidget* desktopWidget = QApplication::desktop();
-
   setWindowFlags(Qt::Window|Qt::FramelessWindowHint);
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
 
   model = new Fm::FolderModel();
   proxyModel = new Fm::ProxyFolderModel();
   proxyModel->setSourceModel(model);
-  FmFolder* folder = fm_folder_from_path(fm_path_get_desktop());
+  folder = fm_folder_from_path(fm_path_get_desktop());
   model->setFolder(folder);
   setModel(proxyModel);
 
@@ -65,6 +67,10 @@ DesktopWindow::DesktopWindow():
 }
 
 DesktopWindow::~DesktopWindow() {
+  if(proxyModel)
+    delete proxyModel;
+  if(model)
+    delete model;
   if(folder)
     g_object_unref(folder);
 }

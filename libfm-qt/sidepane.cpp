@@ -23,6 +23,7 @@
 using namespace Fm;
 
 SidePane::SidePane(QWidget* parent): QFrame(parent) {
+  setFrameShape(QFrame::NoFrame);
   verticalLayout = new QVBoxLayout(this);
   verticalLayout->setContentsMargins(0, 0, 0, 0);
   placesView_ = new Fm::PlacesView(this);

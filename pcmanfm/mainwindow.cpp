@@ -238,6 +238,7 @@ void MainWindow::onTabBarCurrentChanged(int index) {
     pathEntry->setText(tabPage->pathName());
     ui.statusbar->showMessage(tabPage->statusText());
     fsInfoLabel->setText(tabPage->statusText(TabPage::StatusTextFSInfo));
+    tabPage->folderView()->childView()->setFocus();
   }
 }
 
