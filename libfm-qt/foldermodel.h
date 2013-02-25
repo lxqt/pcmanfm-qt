@@ -82,7 +82,14 @@ public:
   FolderModel();
   virtual ~FolderModel();
 
+  FmFolder* folder() {
+    return folder_;
+  }
   void setFolder(FmFolder* new_folder);
+
+  FmPath* path() {
+    return folder_ ? fm_folder_get_path(folder_) : NULL;
+  }
 
   int rowCount(const QModelIndex & parent = QModelIndex()) const;
   int columnCount (const QModelIndex & parent) const;
@@ -113,7 +120,7 @@ protected:
   Item* itemFromIndex(const QModelIndex& index) const;
 
 private:
-  FmFolder* folder;
+  FmFolder* folder_;
 
   // FIXME: should we use a hash table here so item lookup becomes much faster?
   QList<Item> items;

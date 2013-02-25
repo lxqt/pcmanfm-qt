@@ -86,8 +86,7 @@ protected Q_SLOTS:
   
   void onTabPageTitleChanged(QString title);
   void onTabPageStatusChanged(int type, QString statusText);
-  void onTabPageFileClicked(int type, FmFileInfo* fileInfo);
-  void onPopupMenuHide();
+  void onTabPageOpenDirRequested(FmPath* path, int target);
 
   void onSidePaneChdirRequested(int type, FmPath* path);
 

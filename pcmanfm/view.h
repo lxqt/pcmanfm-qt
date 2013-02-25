@@ -1,6 +1,6 @@
 /*
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) 2013  <copyright holder> <email>
+    Copyright (C) 2013  PCMan <email>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,40 +18,40 @@
 */
 
 
-#ifndef PCMANFM_DESKTOPWINDOW_H
-#define PCMANFM_DESKTOPWINDOW_H
+#ifndef PCMANFM_FOLDERVIEW_H
+#define PCMANFM_FOLDERVIEW_H
 
-#include "foldermodel.h"
-#include "proxyfoldermodel.h"
-#include <QPixmap>
-#include <QImage>
-#include "view.h"
+#include "folderview.h"
+#include "filemenu.h"
 
 namespace PCManFM {
-  
-class DesktopWindow : public View {
-Q_OBJECT
 
+class View : public Fm::FolderView {
+Q_OBJECT
 public:
-  explicit DesktopWindow();
-  virtual ~DesktopWindow();
-  
-  void setBackground(QPixmap pixmap);
-  void setBackground(QImage image);
-  void setBackground(QString fileName);
-  
-  void setForeground(QColor color);
-  void setShadow(QColor color);
+
+  enum OpenDirTargetType {
+    OpenInCurrentView,
+    OpenInNewWindow,
+    OpenInNewTab
+  };
+
+  explicit View(Fm::FolderView::ViewMode _mode = IconMode, QWidget* parent = 0);
+  virtual ~View();
+
+Q_SIGNALS:
+  void openDirRequested(FmPath* path, int target);
 
 protected Q_SLOTS:
-  void onOpenDirRequested(FmPath* path, int target);
-  
+  void onFileClicked(int type, FmFileInfo* fileInfo);
+  void onPopupMenuHide();
+
+  virtual void prepareFileMenu(Fm::FileMenu* menu);
+  virtual void prepareFolderMenu(QMenu* menu);
+
 private:
-  Fm::ProxyFolderModel* proxyModel;
-  Fm::FolderModel* model;
-  FmFolder* folder;
+  
 };
 
-}
-
-#endif // PCMANFM_DESKTOPWINDOW_H
+};
+#endif // PCMANFM_FOLDERVIEW_H

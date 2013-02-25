@@ -59,7 +59,7 @@ public:
   bool desktopManagerEnabled() {
     return enableDesktopManager_;
   }
-  
+
 protected Q_SLOTS:
   void onAboutToQuit();
 

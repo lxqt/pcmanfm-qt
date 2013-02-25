@@ -43,9 +43,9 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   verticalLayout = new QVBoxLayout(this);
   verticalLayout->setContentsMargins(0, 0, 0, 0);
 
-  folderView_ = new Fm::FolderView(Fm::FolderView::DetailedListMode, this);
+  folderView_ = new View(Fm::FolderView::IconMode, this);
   // newView->setColumnWidth(Fm::FolderModel::ColumnName, 200);
-  connect(folderView_, SIGNAL(clicked(int, FmFileInfo*)), SLOT(onViewClicked(int,FmFileInfo*)));
+  connect(folderView_, SIGNAL(openDirRequested(FmPath*,int)), SLOT(onOpenDirRequested(FmPath*,int)));
 
   folderModel_ = new Fm::FolderModel();
   // folderModel_->sort(Fm::FolderModel::ColumnName);
@@ -278,11 +278,6 @@ void TabPage::chdir(FmPath* path) {
   folderModel_->setFolder(folder_);
 }
 
-void TabPage::onViewClicked(int type, FmFileInfo* file) {
-  Q_EMIT fileClicked(type, file);
-}
-
-
 void TabPage::selectAll() {
   folderView_->selectAll();
 }
@@ -291,6 +286,9 @@ void TabPage::invertSelection() {
   folderView_->invertSelection();
 }
 
+void TabPage::onOpenDirRequested(FmPath* path, int target) {
+  Q_EMIT openDirRequested(path, target);
+}
 
 };
 

@@ -26,11 +26,13 @@
 #include <QTreeView>
 #include <QMouseEvent>
 #include <libfm/fm.h>
+#include "foldermodel.h"
+#include "proxyfoldermodel.h"
 
 namespace Fm {
 
-class ProxyFolderModel;
-  
+class FileMenu;
+
 class FolderView : public QWidget
 {
   Q_OBJECT
@@ -83,6 +85,17 @@ public:
 
   ProxyFolderModel* model() const;
   void setModel(ProxyFolderModel* _model);
+  
+  FmFolder* folder() {
+    if(model_)
+      return static_cast<FolderModel*>(model_->sourceModel())->folder();
+    return NULL;
+  }
+  
+  FmPath* path() {
+    FmFolder* _folder = folder();
+    return _folder ? fm_folder_get_path(_folder) : NULL;
+  }
 
   QItemSelectionModel* selectionModel() const;
   FmFileInfoList* selectedFiles() const;
@@ -104,12 +117,11 @@ protected:
 public Q_SLOTS:
   void onItemActivated(QModelIndex index);
 
-public:
 Q_SIGNALS:
   void clicked(int type, FmFileInfo* file);
   void selChanged(int n_sel);
   void sortChanged();
-  
+
 private:
 
   QAbstractItemView* view;

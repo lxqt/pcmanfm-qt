@@ -27,7 +27,7 @@
 using namespace Fm;
 
 FolderModel::FolderModel() : 
-  folder(NULL)  {
+  folder_(NULL)  {
 /*
     ColumnIcon,
     ColumnName,
@@ -38,33 +38,33 @@ FolderModel::FolderModel() :
   }
 
 FolderModel::~FolderModel() {
-  if(folder)
+  if(folder_)
     setFolder(NULL);
 }
 
 void FolderModel::setFolder(FmFolder* new_folder) {
-  if(folder) {
+  if(folder_) {
     removeAll();	// remove old items
-    g_signal_handlers_disconnect_by_func(folder, onStartLoading, this);
-    g_signal_handlers_disconnect_by_func(folder, onFinishLoading, this);
-    g_signal_handlers_disconnect_by_func(folder, onFilesAdded, this);
-    g_signal_handlers_disconnect_by_func(folder, onFilesChanged, this);
-    g_signal_handlers_disconnect_by_func(folder, onFilesRemoved, this);
-    g_object_unref(folder);
+    g_signal_handlers_disconnect_by_func(folder_, onStartLoading, this);
+    g_signal_handlers_disconnect_by_func(folder_, onFinishLoading, this);
+    g_signal_handlers_disconnect_by_func(folder_, onFilesAdded, this);
+    g_signal_handlers_disconnect_by_func(folder_, onFilesChanged, this);
+    g_signal_handlers_disconnect_by_func(folder_, onFilesRemoved, this);
+    g_object_unref(folder_);
   }
   if(new_folder) {
-    folder = FM_FOLDER(g_object_ref(new_folder));
-    g_signal_connect(folder, "start-loading", G_CALLBACK(onStartLoading), this);
-    g_signal_connect(folder, "finish-loading", G_CALLBACK(onFinishLoading), this);
-    g_signal_connect(folder, "files-added", G_CALLBACK(onFilesAdded), this);
-    g_signal_connect(folder, "files-changed", G_CALLBACK(onFilesChanged), this);
-    g_signal_connect(folder, "files-removed", G_CALLBACK(onFilesRemoved), this);
+    folder_ = FM_FOLDER(g_object_ref(new_folder));
+    g_signal_connect(folder_, "start-loading", G_CALLBACK(onStartLoading), this);
+    g_signal_connect(folder_, "finish-loading", G_CALLBACK(onFinishLoading), this);
+    g_signal_connect(folder_, "files-added", G_CALLBACK(onFilesAdded), this);
+    g_signal_connect(folder_, "files-changed", G_CALLBACK(onFilesChanged), this);
+    g_signal_connect(folder_, "files-removed", G_CALLBACK(onFilesRemoved), this);
     // handle the case if the folder is already loaded
-    if(fm_folder_is_loaded(folder))
-      insertFiles(0, fm_folder_get_files(folder));
+    if(fm_folder_is_loaded(folder_))
+      insertFiles(0, fm_folder_get_files(folder_));
   }
   else
-    folder = NULL;
+    folder_ = NULL;
 }
 
 void FolderModel::onStartLoading(FmFolder* folder, gpointer user_data) {

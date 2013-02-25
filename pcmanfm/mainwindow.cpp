@@ -82,8 +82,8 @@ void MainWindow::addTab(FmPath* path) {
   int index = ui.stackedWidget->addWidget(newPage);
   connect(newPage, SIGNAL(titleChanged(QString)), SLOT(onTabPageTitleChanged(QString)));
   connect(newPage, SIGNAL(statusChanged(int,QString)), SLOT(onTabPageStatusChanged(int,QString)));
-  connect(newPage, SIGNAL(fileClicked(int,FmFileInfo*)), SLOT(onTabPageFileClicked(int,FmFileInfo*)));
-
+  connect(newPage, SIGNAL(openDirRequested(FmPath*,int)), SLOT(onTabPageOpenDirRequested(FmPath*,int)));
+  
   ui.tabBar->insertTab(index, newPage->title());
 }
 
@@ -273,32 +273,23 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
   }
 }
 
-void MainWindow::onTabPageFileClicked(int type, FmFileInfo* fileInfo) {
-  if(type == Fm::FolderView::ActivatedClick) {
-    if(fm_file_info_is_dir(fileInfo)) {
-      chdir(fm_file_info_get_path(fileInfo));
-    }
-    else {
-      GList* files = g_list_append(NULL, fileInfo);
-      Fm::FileLauncher::launch(NULL, files);
-      g_list_free(files);
+void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
+  switch(target) {
+    case View::OpenInCurrentView:
+      chdir(path);
+      break;
+    case View::OpenInNewTab:
+      addTab(path);
+      break;
+    case View::OpenInNewWindow: {
+      Application* app = static_cast<Application*>(qApp);
+      MainWindow* newWin = new MainWindow(path);
+      // TODO: apply window size from app->settings
+      newWin->resize(640, 480);
+      newWin->show();
+      break;
     }
   }
-  else if(type == Fm::FolderView::ContextMenuClick) {
-    FmFolder* folder = currentPage()->folder();
-    // show context menu
-    FmFileInfoList* files = currentPage()->selectedFiles();
-    Fm::FileMenu* menu = new Fm::FileMenu(files, fileInfo, fm_folder_get_path(folder));
-    fm_file_info_list_unref(files);
-    menu->popup(QCursor::pos());
-    connect(menu, SIGNAL(aboutToHide()),SLOT(onPopupMenuHide()));
-  }
-}
-
-void MainWindow::onPopupMenuHide() {
-  Fm::FileMenu* menu = (Fm::FileMenu*)sender();
-  //delete the menu;
-  menu->deleteLater();
 }
 
 void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {

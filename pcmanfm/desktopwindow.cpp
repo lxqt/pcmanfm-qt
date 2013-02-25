@@ -21,7 +21,8 @@
 #include "desktopwindow.h"
 #include <QWidget>
 #include <QDesktopWidget>
-#include <QApplication>
+#include "./application.h"
+#include "mainwindow.h"
 
 #include <QImage>
 #include <QPixmap>
@@ -31,13 +32,12 @@
 using namespace PCManFM;
 
 DesktopWindow::DesktopWindow():
-  FolderView(Fm::FolderView::IconMode) {
+  View(Fm::FolderView::IconMode) {
 
   QDesktopWidget* desktopWidget = QApplication::desktop();
 
   setWindowFlags(Qt::Window|Qt::FramelessWindowHint);
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
-  setFixedSize(desktopWidget->size());
 
   model = new Fm::FolderModel();
   proxyModel = new Fm::ProxyFolderModel();
@@ -61,6 +61,7 @@ DesktopWindow::DesktopWindow():
 
   // set background
   // setBackground("/usr/share/backgrounds/A_Little_Quetzal_by_vgerasimov.jpg");
+  connect(this, SIGNAL(openDirRequested(FmPath*,int)), SLOT(onOpenDirRequested(FmPath*,int)));
 }
 
 DesktopWindow::~DesktopWindow() {
@@ -97,6 +98,15 @@ void DesktopWindow::setForeground(QColor color) {
 
 void DesktopWindow::setShadow(QColor color) {
   // TODO: implement drawing text with shadow
+}
+
+void DesktopWindow::onOpenDirRequested(FmPath* path, int target) {
+  // open in new window unconditionally.
+  Application* app = static_cast<Application*>(qApp);
+  MainWindow* newWin = new MainWindow(path);
+  // TODO: apply window size from app->settings
+  newWin->resize(640, 480);
+  newWin->show();
 }
 
 

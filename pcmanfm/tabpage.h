@@ -24,10 +24,10 @@
 #include <QWidget>
 #include <QVBoxLayout>
 #include <libfm/fm.h>
-#include "folderview.h"
 #include "foldermodel.h"
 #include "placesview.h"
 #include "proxyfoldermodel.h"
+#include "view.h"
 
 namespace PCManFM {
 
@@ -87,7 +87,7 @@ public:
     return folderModel_;
   }
 
-  Fm::FolderView* folderView() {
+  View* folderView() {
     return folderView_;
   }
 
@@ -119,11 +119,11 @@ public:
  
 Q_SIGNALS:
   void statusChanged(int type, QString statusText);
-  void fileClicked(int type, FmFileInfo* file);
   void titleChanged(QString title);
+  void openDirRequested(FmPath* path, int target);
 
 protected Q_SLOTS:
-  void onViewClicked(int type, FmFileInfo* file);
+  void onOpenDirRequested(FmPath* path, int target);
 
 private:
   void freeFolder();
@@ -138,7 +138,7 @@ private:
   static void onFolderContentChanged(FmFolder* _folder, TabPage* pThis);
 
 private:
-  Fm::FolderView* folderView_;
+  View* folderView_;
   Fm::FolderModel* folderModel_;
   Fm::ProxyFolderModel* proxyModel_;
   QVBoxLayout* verticalLayout;

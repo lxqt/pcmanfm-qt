@@ -79,6 +79,7 @@ set(pcmanfm_SRCS
   pcmanfm/pcmanfm.cpp
   pcmanfm/mainwindow.cpp
   pcmanfm/tabpage.cpp
+  pcmanfm/view.cpp
   pcmanfm/preferencesdialog.cpp
   pcmanfm/desktopwindow.cpp
   pcmanfm/settings.cpp

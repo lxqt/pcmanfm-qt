@@ -40,6 +40,7 @@ Application::Application(int& argc, char** argv):
   settings_(),
   profileName("default"),
   daemonMode_(false),
+  desktopWindows_(),
   enableDesktopManager_(false) {
 
   // QDBusConnection::sessionBus().registerObject("/org/pcmanfm/Application", this);
@@ -302,8 +303,11 @@ void Application::desktopManager(bool enabled) {
     if(enableDesktopManager_) {
       disconnect(desktopWidget, SIGNAL(workAreaResized(int)), this, SLOT(onWorkAreaResized(int)));
       disconnect(desktopWidget, SIGNAL(screenCountChanged(int)), this, SLOT(onScreenCountChanged(int)));
-      Q_FOREACH(DesktopWindow* window, desktopWindows_) {
-        window->close();
+      int n = desktopWindows_.size();
+      for(int i = 0; i < n; ++i) {
+        DesktopWindow* window = desktopWindows_.at(i);
+        // FIXME: the program crashes here sometimes, but I don't know why.
+        delete window;
       }
       desktopWindows_.clear();
     }
@@ -363,7 +367,7 @@ void Application::onWorkAreaResized(int num) {
 DesktopWindow* Application::createDesktopWindow(int screenNum) {
   DesktopWindow* window = new DesktopWindow();
   QRect rect = desktop()->availableGeometry(screenNum);
-  window->resize(rect.width(), rect.height());
+  window->setFixedSize(rect.size());
   window->move(rect.x(), rect.y());
   if(!settings_.wallpaper().isEmpty()) {
     // FIXME: should handle wallpaper mode properly
