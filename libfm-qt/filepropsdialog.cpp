@@ -75,8 +75,8 @@ FilePropsDialog::~FilePropsDialog() {
 }
 
 void FilePropsDialog::initApplications() {
-  const char* typeName = fm_mime_type_get_type(mimeType);
   if(singleType && mimeType && !fm_file_info_is_dir(fileInfo)) {
+    const char* typeName = fm_mime_type_get_type(mimeType);
     defaultApp = g_app_info_get_default_for_type(typeName, FALSE);
     int defaultIndex = 0;
     appInfos = g_app_info_get_all_for_type(typeName);
