@@ -24,6 +24,8 @@
 #include <QtGui/QMenu>
 #include <libfm/fm.h>
 
+class QAction;
+
 namespace Fm {
 
 class FileMenu : public QMenu
@@ -34,10 +36,51 @@ public:
   explicit FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, QWidget* parent = 0);
   explicit FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, const QString& title, QWidget* parent = 0);
   ~FileMenu();
+
+  QAction* openAction() {
+    return openAction_;  
+  }
+
+  QAction* openWithAction() {
+    return openWithAction_;  
+  }
+
+  QAction* separator1() {
+    return separator1_;  
+  }
+
+  QAction* cutAction() {
+    return cutAction_;  
+  }
+
+  QAction* copyAction() {
+    return copyAction_;  
+  }
+
+  QAction* pasteAction() {
+    return pasteAction_;
+  }
   
+  QAction* deleteAction() {
+    return deleteAction_;  
+  }
+
+  QAction* renameAction() {
+    return renameAction_;  
+  }
+
+  QAction* separator2() {
+    return separator2_;  
+  }
+
+  QAction* propertiesAction() {
+    return propertiesAction_;  
+  }
+
+
 protected:
   void createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd);
-  
+
 protected Q_SLOTS:
   void onOpenTriggered();
   void onFilePropertiesTriggered();
@@ -57,6 +100,17 @@ private:
   bool sameFilesystem_;
   bool allVirtual_;
   bool allTrash_;
+
+  QAction* openAction_;
+  QAction* openWithAction_;
+  QAction* separator1_;
+  QAction* cutAction_;
+  QAction* copyAction_;
+  QAction* pasteAction_;
+  QAction* deleteAction_;
+  QAction* renameAction_;
+  QAction* separator2_;
+  QAction* propertiesAction_;
 };
 
 }

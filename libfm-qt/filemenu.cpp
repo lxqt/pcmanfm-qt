@@ -87,16 +87,15 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   // check if the files are all in the trash can
   bool allTrash_ =  sameFilesystem_ && fm_path_is_trash(path);
 
-  QAction* action;
-  action= new QAction(QIcon::fromTheme("document-open"), tr("Open"), this);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onOpenTriggered()));
-  addAction(action);
+  openAction_ = new QAction(QIcon::fromTheme("document-open"), tr("Open"), this);
+  connect(openAction_ , SIGNAL(triggered(bool)), SLOT(onOpenTriggered()));
+  addAction(openAction_);
 
-  action= new QAction(tr("OpenWith"), this);
-  addAction(action);
+  openWithAction_ = new QAction(tr("OpenWith"), this);
+  addAction(openWithAction_);
   // create the "Open with..." sub menu
   QMenu* menu = new QMenu();
-  action->setMenu(menu);
+  openWithAction_->setMenu(menu);
 
   if(sameType_) { /* add specific menu items for this mime type */
     if(mime_type && !allVirtual_) { /* the file has a valid mime-type and its not virtual */
@@ -112,7 +111,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
         g_free(program_path);
 
         // create a QAction for the application.
-        action = new AppInfoAction(app);
+        AppInfoAction* action = new AppInfoAction(app);
         connect(action, SIGNAL(triggered(bool)), SLOT(onApplicationTriggered()));
         menu->addAction(action);
       }
@@ -120,33 +119,33 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
     }
   }
   
-  addSeparator();
+  separator1_ = addSeparator();
   
-  action= new QAction(QIcon::fromTheme("edit-cut"), tr("Cut"), this);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onCutTriggered()));
-  addAction(action);
+  cutAction_ = new QAction(QIcon::fromTheme("edit-cut"), tr("Cut"), this);
+  connect(cutAction_, SIGNAL(triggered(bool)), SLOT(onCutTriggered()));
+  addAction(cutAction_);
 
-  action= new QAction(QIcon::fromTheme("edit-copy"), tr("Copy"), this);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onCopyTriggered()));
-  addAction(action);
+  copyAction_ = new QAction(QIcon::fromTheme("edit-copy"), tr("Copy"), this);
+  connect(copyAction_, SIGNAL(triggered(bool)), SLOT(onCopyTriggered()));
+  addAction(copyAction_);
 
-  action= new QAction(QIcon::fromTheme("edit-paste"), tr("Paste"), this);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onPasteTriggered()));
-  addAction(action);
+  pasteAction_ = new QAction(QIcon::fromTheme("edit-paste"), tr("Paste"), this);
+  connect(pasteAction_, SIGNAL(triggered(bool)), SLOT(onPasteTriggered()));
+  addAction(pasteAction_);
 
-  action= new QAction(QIcon::fromTheme("edit-delete"), tr("Delete"), this);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onDeleteTriggered()));
-  addAction(action);
+  deleteAction_ = new QAction(QIcon::fromTheme("edit-delete"), tr("Delete"), this);
+  connect(deleteAction_, SIGNAL(triggered(bool)), SLOT(onDeleteTriggered()));
+  addAction(deleteAction_);
 
-  action= new QAction(tr("Rename"), this);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onRenameTriggered()));
-  addAction(action);
+  renameAction_ = new QAction(tr("Rename"), this);
+  connect(renameAction_, SIGNAL(triggered(bool)), SLOT(onRenameTriggered()));
+  addAction(renameAction_);
 
-  addSeparator();
+  separator2_ = addSeparator();
 
-  action= new QAction(QIcon::fromTheme("document-properties"), tr("Properties"), this);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onFilePropertiesTriggered()));
-  addAction(action);
+  propertiesAction_ = new QAction(QIcon::fromTheme("document-properties"), tr("Properties"), this);
+  connect(propertiesAction_, SIGNAL(triggered(bool)), SLOT(onFilePropertiesTriggered()));
+  addAction(propertiesAction_);
 }
 
 void FileMenu::onOpenTriggered() {
@@ -170,8 +169,8 @@ void FileMenu::onApplicationTriggered() {
 }
 
 void FileMenu::onFilePropertiesTriggered() {
-  FilePropsDialog dlg(files_, this);
-  dlg.exec();
+  FilePropsDialog* dlg = new FilePropsDialog(files_);
+  dlg->show();
 }
 
 void FileMenu::onCopyTriggered() {

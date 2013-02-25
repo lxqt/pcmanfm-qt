@@ -343,10 +343,10 @@ void Application::launchFiles(QStringList paths, bool inNewWindow) {
 }
 
 void Application::preferences(QString page) {
-  // TODO: open preference dialog
+  // open preference dialog
   qDebug("open preference dialog");
-  PreferencesDialog dlg;
-  dlg.exec();
+  PreferencesDialog* dlg = new PreferencesDialog();
+  dlg->show();
 }
 
 void Application::setWallpaper(QString path, QString modeString) {

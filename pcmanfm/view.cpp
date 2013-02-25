@@ -20,6 +20,7 @@
 
 #include "view.h"
 #include "filemenu.h"
+#include "foldermenu.h"
 #include "filelauncher.h"
 
 using namespace PCManFM;
@@ -61,7 +62,9 @@ void View::onFileClicked(int type, FmFileInfo* fileInfo) {
       fm_file_info_list_unref(files);
     }
     else {
-      menu = new QMenu();
+      FmFolder* _folder = folder();
+      FmFileInfo* info =fm_folder_get_info(_folder);
+      menu = new Fm::FolderMenu(info);
       prepareFolderMenu(menu);
       // TODO: create popup menu for the folder itself
     }

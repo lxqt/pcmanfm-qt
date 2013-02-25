@@ -50,6 +50,7 @@ set(libfm_SRCS
   libfm-qt/folderview.cpp
   libfm-qt/folderitemdelegate.cpp
   libfm-qt/filemenu.cpp
+  libfm-qt/foldermenu.cpp
   libfm-qt/filepropsdialog.cpp
   libfm-qt/applaunchcontext.cpp
   libfm-qt/placesview.cpp

@@ -222,6 +222,12 @@ void FolderView::emitClickedAt(ClickType type, QPoint& pos) {
     FmFileInfo* info = reinterpret_cast<FmFileInfo*>(data.value<void*>());
     Q_EMIT clicked(type, info);
   }
+  else {
+    // FIXME: should we show popup menu for the selected files instead
+    // if there are selected files?
+    if(type == ContextMenuClick)
+      Q_EMIT clicked(type, NULL);
+  }
 }
 
 QModelIndexList FolderView::selectedRows(int column) const {
