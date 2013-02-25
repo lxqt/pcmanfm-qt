@@ -25,6 +25,7 @@
 #include <QDBusInterface>
 #include <QDir>
 #include <QDesktopWidget>
+#include <QVector>
 
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
@@ -66,12 +67,16 @@ Application::~Application() {
 }
 
 struct FakeTr {
+  FakeTr(int reserved = 20) {
+    strings.reserve(reserved);
+  }
+
   const char* operator() (const char* str) {
     QString translated = QApplication::translate(NULL, str);
     strings.push_back(translated.toUtf8());
     return strings.back().constData();
   }
-  QList<QByteArray> strings;
+  QVector<QByteArray> strings;
 };
 
 bool Application::parseCommandLineArgs(int argc, char** argv) {
@@ -108,11 +113,11 @@ bool Application::parseCommandLineArgs(int argc, char** argv) {
       {"quit", 'p', 0, G_OPTION_ARG_NONE, &ask_quit, tr("Quit PCManFM"), NULL},
       {"desktop", '\0', 0, G_OPTION_ARG_NONE, &desktop, tr("Launch desktop manager"), NULL },
       {"desktop-off", '\0', 0, G_OPTION_ARG_NONE, &desktop_off, tr("Turn off desktop manager if it's running"), NULL },
-      {"desktop-pref", '\0', 0, G_OPTION_ARG_STRING, &desktop_pref, tr("Open desktop preference dialog"), NULL },
+      {"desktop-pref", '\0', 0, G_OPTION_ARG_STRING, &desktop_pref, tr("Open desktop preference dialog on the page with the specified name"), tr("NAME") },
       {"set-wallpaper", 'w', 0, G_OPTION_ARG_FILENAME, &wallpaper, tr("Set desktop wallpaper from image FILE"), tr("FILE") },
       // don't translate list of modes in description, please
       {"wallpaper-mode", '\0', 0, G_OPTION_ARG_STRING, &wallpaper_mode, tr("Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)"), tr("MODE") },
-      {"show-pref", '\0', 0, G_OPTION_ARG_STRING, &show_pref, tr("Open Preferences dialog on the page N"), tr("N") },
+      {"show-pref", '\0', 0, G_OPTION_ARG_STRING, &show_pref, tr("Open Preferences dialog on the page with the specified name"), tr("NAME") },
       {"new-window", 'n', 0, G_OPTION_ARG_NONE, &new_window, tr("Open new window"), NULL },
       {"find-files", 'f', 0, G_OPTION_ARG_NONE, &find_files, tr("Open Find Files utility"), NULL },
       {G_OPTION_REMAINING, 0, 0, G_OPTION_ARG_FILENAME_ARRAY, &file_names, NULL, tr("[FILE1, FILE2,...]")},

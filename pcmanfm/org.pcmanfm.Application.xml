@@ -23,5 +23,6 @@
     <method name="findFiles">
       <arg type="as" direction="in"/>
     </method>
+    <property name="desktopManagerEnabled" type="b" access="read"/>
   </interface>
 </node>

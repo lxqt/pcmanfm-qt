@@ -32,6 +32,7 @@ class DesktopWindow;
 
 class Application : public QApplication {
 Q_OBJECT
+Q_PROPERTY(bool desktopManagerEnabled READ desktopManagerEnabled)
 
 public:
   Application(int& argc, char** argv);
@@ -55,6 +56,10 @@ public:
   void desktopManager(bool enabled);
   void findFiles(QStringList paths);
 
+  bool desktopManagerEnabled() {
+    return enableDesktopManager_;
+  }
+  
 protected Q_SLOTS:
   void onAboutToQuit();
 
