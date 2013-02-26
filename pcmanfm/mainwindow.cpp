@@ -59,6 +59,29 @@ MainWindow::MainWindow(FmPath* path) {
   g_signal_connect(bookmarks, "changed", G_CALLBACK(onBookmarksChanged), this);
   loadBookmarksMenu();
 
+  // Fix the menu groups which is not done by Qt designer
+  // To my suprise, this was supported in Qt designer 3 :-(
+  QActionGroup* group = new QActionGroup(ui.menu_View);
+  group->setExclusive(true);
+  group->addAction(ui.actionIconView);
+  group->addAction(ui.actionCompactView);
+  group->addAction(ui.actionThumbnailView);
+  group->addAction(ui.actionDetailedList);
+  
+  group = new QActionGroup(ui.menuSorting);
+  group->setExclusive(true);
+  group->addAction(ui.actionByFileName);
+  group->addAction(ui.actionByMTime);
+  group->addAction(ui.actionByFileSize);
+  group->addAction(ui.actionByFileType);
+  group->addAction(ui.actionByOwner);
+  
+  group = new QActionGroup(ui.menuSorting);
+  group->setExclusive(true);
+  group->addAction(ui.actionAscending);
+  group->addAction(ui.actionDescending);
+  
+  
   if(path)
     addTab(path);
 }

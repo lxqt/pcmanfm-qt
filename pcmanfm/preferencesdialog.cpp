@@ -22,14 +22,19 @@
 
 using namespace PCManFM;
 
-PreferencesDialog::PreferencesDialog (QWidget* parent):
+PreferencesDialog::PreferencesDialog (QString activePage, QWidget* parent):
   QDialog (parent) {
-
   ui.setupUi(this);
+  if(!activePage.isEmpty()) {
+    QWidget* page = findChild<QWidget*>(activePage + "Page");
+    if(page) {
+      int index = ui.stackedWidget->indexOf(page);
+      ui.listWidget->setCurrentRow(index);
+    }
+  }
 }
 
 PreferencesDialog::~PreferencesDialog() {
-
 }
 
 #include "preferencesdialog.moc"

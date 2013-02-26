@@ -87,11 +87,14 @@ public:
   void setModel(ProxyFolderModel* _model);
   
   FmFolder* folder() {
-    if(model_)
-      return static_cast<FolderModel*>(model_->sourceModel())->folder();
-    return NULL;
+    return model_ ? static_cast<FolderModel*>(model_->sourceModel())->folder() : NULL;
   }
-  
+
+  FmFileInfo* folderInfo() {
+    FmFolder* _folder = folder();
+    return _folder ? fm_folder_get_info(_folder) : NULL;
+  }
+
   FmPath* path() {
     FmFolder* _folder = folder();
     return _folder ? fm_folder_get_path(_folder) : NULL;

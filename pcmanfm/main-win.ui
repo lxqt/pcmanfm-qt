@@ -60,7 +60,7 @@
      <x>0</x>
      <y>0</y>
      <width>460</width>
-     <height>23</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -92,6 +92,7 @@
      </property>
      <addaction name="actionByFileName"/>
      <addaction name="actionByMTime"/>
+     <addaction name="actionByFileSize"/>
      <addaction name="actionByFileType"/>
      <addaction name="actionByOwner"/>
      <addaction name="separator"/>
@@ -99,6 +100,7 @@
      <addaction name="actionDescending"/>
      <addaction name="separator"/>
      <addaction name="actionFolderFirst"/>
+     <addaction name="actionCaseSensitive"/>
     </widget>
     <addaction name="actionReload"/>
     <addaction name="actionShowHidden"/>
@@ -202,7 +204,9 @@
   </action>
   <action name="actionReload">
    <property name="icon">
-    <iconset theme="view-refresh"/>
+    <iconset theme="view-refresh">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Reload</string>
@@ -315,28 +319,42 @@
    </property>
   </action>
   <action name="actionIconView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Icon View</string>
    </property>
   </action>
   <action name="actionCompactView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Compact View</string>
    </property>
   </action>
   <action name="actionDetailedList">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Detailed List</string>
    </property>
   </action>
   <action name="actionThumbnailView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Thumbnail View</string>
    </property>
   </action>
   <action name="actionCut">
    <property name="icon">
-    <iconset theme="edit-cut"/>
+    <iconset theme="edit-cut">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Cut</string>
@@ -344,7 +362,9 @@
   </action>
   <action name="actionCopy">
    <property name="icon">
-    <iconset theme="edit-copy"/>
+    <iconset theme="edit-copy">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Copy</string>
@@ -352,7 +372,9 @@
   </action>
   <action name="actionPaste">
    <property name="icon">
-    <iconset theme="edit-paste"/>
+    <iconset theme="edit-paste">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Paste</string>
@@ -364,41 +386,65 @@
    </property>
   </action>
   <action name="actionPreferences">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Preferences</string>
    </property>
   </action>
   <action name="actionAscending">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Ascending</string>
    </property>
   </action>
   <action name="actionDescending">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Descending</string>
    </property>
   </action>
   <action name="actionByFileName">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>By File Name</string>
    </property>
   </action>
   <action name="actionByMTime">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>By Modification Time</string>
    </property>
   </action>
   <action name="actionByFileType">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>By File Type</string>
    </property>
   </action>
   <action name="actionByOwner">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>By Owner</string>
    </property>
   </action>
   <action name="actionFolderFirst">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Folder First</string>
    </property>
@@ -455,7 +501,9 @@
   </action>
   <action name="actionDelete">
    <property name="icon">
-    <iconset theme="edit-delete"/>
+    <iconset theme="edit-delete">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Delete</string>
@@ -479,6 +527,22 @@
   <action name="actionFolderProperties">
    <property name="text">
     <string>Folder Properties</string>
+   </property>
+  </action>
+  <action name="actionCaseSensitive">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Case Sensitive</string>
+   </property>
+  </action>
+  <action name="actionByFileSize">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>By File Size</string>
    </property>
   </action>
  </widget>

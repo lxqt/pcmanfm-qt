@@ -23,6 +23,7 @@
 
 #include <QDialog>
 #include "ui_preferences.h"
+#include <QString>
 
 namespace PCManFM
 {
@@ -31,10 +32,10 @@ class PreferencesDialog : public QDialog {
 Q_OBJECT
 
 public:
-    explicit PreferencesDialog(QWidget* parent = 0);
-    virtual ~PreferencesDialog();
+  // activePage is the name of page to select (general, display, advanced...)
+  explicit PreferencesDialog(QString activePage = QString(), QWidget* parent = 0);
+  virtual ~PreferencesDialog();
 
-  
 private:
   Ui::PreferencesDialog ui;
 };

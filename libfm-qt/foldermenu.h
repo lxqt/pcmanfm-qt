@@ -28,11 +28,13 @@ class QAction;
 
 namespace Fm {
 
+class FolderView;
+  
 class FolderMenu : public QMenu {
 Q_OBJECT
 
 public:
-  explicit FolderMenu(FmFileInfo* folderInfo, QWidget* parent = 0);
+  explicit FolderMenu(FolderView* view, QWidget* parent = 0);
   virtual ~FolderMenu();
 
   QAction* createAction() {
@@ -89,17 +91,16 @@ protected Q_SLOTS:
 
   void onSortActionTriggered();
 
-  void onShowHiddenActionTriggered();
+  void onShowHiddenActionTriggered(bool checked);
 
   void onPropertiesActionTriggered();
-
 
 private:
   QMenu* createCreateNewMenu();
   QMenu* createSortMenu();
 
 private:
-  FmFileInfo* folderInfo_;
+  FolderView* view_;
   QAction* createAction_;
   QAction* separator1_;
   QAction* pasteAction_;

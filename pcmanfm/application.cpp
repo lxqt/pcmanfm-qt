@@ -343,8 +343,7 @@ void Application::launchFiles(QStringList paths, bool inNewWindow) {
 
 void Application::preferences(QString page) {
   // open preference dialog
-  qDebug("open preference dialog");
-  PreferencesDialog* dlg = new PreferencesDialog();
+  PreferencesDialog* dlg = new PreferencesDialog(page);
   dlg->show();
 }
 

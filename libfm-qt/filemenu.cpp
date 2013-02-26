@@ -169,8 +169,7 @@ void FileMenu::onApplicationTriggered() {
 }
 
 void FileMenu::onFilePropertiesTriggered() {
-  FilePropsDialog* dlg = new FilePropsDialog(files_);
-  dlg->show();
+  FilePropsDialog::showForFiles(files_);
 }
 
 void FileMenu::onCopyTriggered() {

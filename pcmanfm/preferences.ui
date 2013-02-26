@@ -33,6 +33,9 @@
        <property name="horizontalScrollBarPolicy">
         <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
+       <property name="currentRow">
+        <number>0</number>
+       </property>
        <item>
         <property name="text">
          <string>General</string>

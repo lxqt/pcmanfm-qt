@@ -64,7 +64,7 @@ void View::onFileClicked(int type, FmFileInfo* fileInfo) {
     else {
       FmFolder* _folder = folder();
       FmFileInfo* info =fm_folder_get_info(_folder);
-      menu = new Fm::FolderMenu(info);
+      menu = new Fm::FolderMenu(this);
       prepareFolderMenu(menu);
       // TODO: create popup menu for the folder itself
     }

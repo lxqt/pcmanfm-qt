@@ -223,5 +223,4 @@ void FilePropsDialog::accept() {
   QDialog::accept();
 }
 
-
 #include "filepropsdialog.moc"
