@@ -51,7 +51,7 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   // folderModel_->sort(Fm::FolderModel::ColumnName);
 
   proxyModel_->setSourceModel(folderModel_);
-  proxyModel_->sort(Fm::FolderModel::ColumnName);
+  proxyModel_->sort(Fm::FolderModel::ColumnFileName);
 // folderView_->setModel(folderModel_);
   // FIXME: this is very dirty
   folderView_->setModel(proxyModel_);

@@ -112,6 +112,7 @@ public:
   
 protected:
   void contextMenuEvent(QContextMenuEvent* event);
+  void childMousePressEvent(QMouseEvent* event);
   void emitClickedAt(ClickType type, QPoint& pos);
 
   QModelIndexList selectedRows ( int column = 0 ) const;

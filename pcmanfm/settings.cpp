@@ -43,7 +43,7 @@ Settings::Settings():
   // bool showWmMenu;
   desktopShowHidden_(false),
   desktopSortOrder_(Qt::AscendingOrder),
-  desktopSortColumn_(Fm::FolderModel::ColumnName),
+  desktopSortColumn_(Fm::FolderModel::ColumnFileName),
   alwaysShowTabs_(true),
   windowWidth_(640),
   windowHeight_(480),
@@ -52,7 +52,7 @@ Settings::Settings():
   viewMode_(Fm::FolderView::IconMode),
   showHidden_(false),
   sortOrder_(Qt::AscendingOrder),
-  sortColumn_(Fm::FolderModel::ColumnName),
+  sortColumn_(Fm::FolderModel::ColumnFileName),
   // settings for use with libfm
   singleClick_(false),
   useTrash_(true),

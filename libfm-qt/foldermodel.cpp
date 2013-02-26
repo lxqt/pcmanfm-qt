@@ -172,7 +172,7 @@ QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole
     case Qt::DisplayRole:
     {
       switch(index.column()) {
-	case ColumnName: {
+	case ColumnFileName: {
 	  return QVariant(item->displayName);
 	}
 	case ColumnFileType: {
@@ -181,7 +181,7 @@ QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole
 	  QString str = QString::fromUtf8(desc);
 	  return QVariant(str);
 	}
-	case ColumnMTime: {
+	case ColumnFileMTime: {
 	  const char* name = fm_file_info_get_disp_mtime(info);
 	  QString str = QString::fromUtf8(name);
 	  return QVariant(str);
@@ -206,13 +206,13 @@ QVariant FolderModel::headerData(int section, Qt::Orientation orientation, int r
     if(orientation == Qt::Horizontal) {
       QString title;
       switch(section) {
-	case ColumnName:
+	case ColumnFileName:
 	  title = tr("Name");
 	  break;
 	case ColumnFileType:
 	  title = tr("Type");
 	  break;
-	case ColumnMTime:
+	case ColumnFileMTime:
 	  title = tr("Modified");
 	  break;
       }
@@ -236,7 +236,7 @@ QModelIndex FolderModel::parent(const QModelIndex & index) const {
 Qt::ItemFlags FolderModel::flags(const QModelIndex& index) const {
   // FIXME: should not return same flags unconditionally for all columns
   Qt::ItemFlags flags = Qt::ItemIsEnabled|Qt::ItemIsSelectable;
-  if(index.column() == ColumnName)
+  if(index.column() == ColumnFileName)
     flags |= (Qt::ItemIsDragEnabled|Qt::ItemIsDropEnabled);
   return flags;
 }

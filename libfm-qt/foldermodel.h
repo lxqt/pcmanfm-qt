@@ -38,9 +38,11 @@ public:
   };
 
   enum ColumnId {
-    ColumnName,
+    ColumnFileName,
     ColumnFileType,
-    ColumnMTime,
+    ColumnFileSize,
+    ColumnFileMTime,
+    ColumnFileOwner,
     NumOfColumns
   };
   

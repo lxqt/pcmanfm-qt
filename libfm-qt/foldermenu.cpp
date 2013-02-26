@@ -22,6 +22,7 @@
 #include "filepropsdialog.h"
 #include "folderview.h"
 #include "utilities.h"
+#include <cstring> // for memset
 
 using namespace Fm;
 
@@ -32,8 +33,8 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
   createAction_ = new QAction(tr("Create &New"), this);
   addAction(createAction_);
 
-  QMenu* createMenu = createCreateNewMenu();
-  createAction_->setMenu(createMenu);
+  createCreateNewMenu();
+  createAction_->setMenu(createNewMenu_);
 
   separator1_ = addSeparator();
 
@@ -55,8 +56,8 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
 
   sortAction_ = new QAction(tr("Sorting"), this);
   addAction(sortAction_);
-  QMenu* sortMenu = createSortMenu();
-  sortAction_->setMenu(sortMenu);
+  createSortMenu();
+  sortAction_->setMenu(sortMenu_);
 
   showHiddenAction_ = new QAction(tr("Show Hidden"), this);
   addAction(showHiddenAction_);
@@ -72,7 +73,7 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
 FolderMenu::~FolderMenu() {
 }
 
-QMenu* FolderMenu::createCreateNewMenu() {
+void FolderMenu::createCreateNewMenu() {
   QMenu* createMenu = new QMenu(this);
   QAction* action = new QAction(tr("Folder"), this);
   createMenu->addAction(action);
@@ -80,63 +81,67 @@ QMenu* FolderMenu::createCreateNewMenu() {
   action = new QAction(tr("File"), this);
   createMenu->addAction(action);
 
-  // TODO: add items to "Create New" menu
-  return createMenu;
+  // TODO: add more items to "Create New" menu
+  createNewMenu_ = createMenu;
 }
 
-QMenu* FolderMenu::createSortMenu() {
-  QMenu* sortMenu = new QMenu(this);
-  QActionGroup* group = new QActionGroup(sortMenu);
+void FolderMenu::addSortMenuItem(QString title, int id) {
+  QAction* action = new QAction(title, this);
+  sortMenu_->addAction(action);
+  action->setCheckable(true);
+  sortActionGroup_->addAction(action);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onSortActionTriggered(bool)));
+  sortActions_[id] = action;
+}
+
+void FolderMenu::createSortMenu() {
+  ProxyFolderModel* model = view_->model();
+
+  sortMenu_ = new QMenu(this);
+  sortActionGroup_ = new QActionGroup(sortMenu_);
+  sortActionGroup_->setExclusive(true);
+
+  std::memset(sortActions_, 0, sizeof(sortActions_));
+
+  addSortMenuItem(tr("By File Name"), FolderModel::ColumnFileName);
+  addSortMenuItem(tr("By Modification Time"), FolderModel::ColumnFileMTime);
+  addSortMenuItem(tr("By File Size"), FolderModel::ColumnFileSize);
+  addSortMenuItem(tr("By File Type"), FolderModel::ColumnFileType);
+  addSortMenuItem(tr("By File Owner"), FolderModel::ColumnFileOwner);
+
+  int col = model->sortColumn();
+  if(col >=0 && col < FolderModel::NumOfColumns) {
+    sortActions_[col]->setChecked(true);;
+  }
+
+  sortMenu_->addSeparator();
+
+  QActionGroup* group = new QActionGroup(this);
   group->setExclusive(true);
-
-  QAction* actionByFileName = new QAction(tr("By File Name"), this);
-  sortMenu->addAction(actionByFileName);
-  actionByFileName->setCheckable(true);
-  group->addAction(actionByFileName);
-
-  QAction* actionByMTime = new QAction(tr("By Modification Time"), this);
-  actionByMTime->setCheckable(true);
-  sortMenu->addAction(actionByMTime);
-  group->addAction(actionByMTime);
+  actionAscending_ = new QAction(tr("Ascending"), this);
+  actionAscending_->setCheckable(true);
+  sortMenu_->addAction(actionAscending_);
+  group->addAction(actionAscending_);
   
-  QAction* actionBySize = new QAction(tr("By File Size"), this);
-  actionBySize->setCheckable(true);
-  sortMenu->addAction(actionBySize);
-  group->addAction(actionBySize);
+  actionDescending_ = new QAction(tr("Descending"), this);
+  actionDescending_->setCheckable(true);
+  sortMenu_->addAction(actionDescending_);
+  group->addAction(actionDescending_);
 
-  QAction* actionByFileType = new QAction(tr("By File Type"), this);
-  actionByFileType->setCheckable(true);
-  sortMenu->addAction(actionByFileType);
-  group->addAction(actionByFileType);
+  if(model->sortOrder() == Qt::AscendingOrder)
+    actionAscending_->setChecked(true);
+  else
+    actionDescending_->setChecked(true);
   
-  QAction* actionByOwner = new QAction(tr("By Owner"), this);
-  actionByOwner->setCheckable(true);
-  sortMenu->addAction(actionByOwner);
-  group->addAction(actionByOwner);
-  
-  sortMenu->addSeparator();
-
-  group = new QActionGroup(sortMenu);
-  group->setExclusive(true);
-  QAction* actionAscending = new QAction(tr("Ascending"), this);
-  actionAscending->setCheckable(true);
-  sortMenu->addAction(actionAscending);
-  group->addAction(actionAscending);
-  
-  QAction* actionDescending = new QAction(tr("Descending"), this);
-  actionDescending->setCheckable(true);
-  sortMenu->addAction(actionDescending);
-  group->addAction(actionDescending);
+  sortMenu_->addSeparator();
   
   QAction* actionFolderFirst = new QAction(tr("Folder First"), this);
-  sortMenu->addAction(actionFolderFirst);
+  sortMenu_->addAction(actionFolderFirst);
   actionFolderFirst->setCheckable(true);
 
   QAction* actionCaseSensitive = new QAction(tr("Case Sensitive"), this);
-  sortMenu->addAction(actionCaseSensitive);
+  sortMenu_->addAction(actionCaseSensitive);
   actionCaseSensitive->setCheckable(true);
-
-  return sortMenu;
 }
 
 void FolderMenu::onPasteActionTriggered() {
@@ -153,10 +158,29 @@ void FolderMenu::onInvertSelectionActionTriggered() {
   view_->invertSelection();
 }
 
-void FolderMenu::onSortActionTriggered() {
+void FolderMenu::onSortActionTriggered(bool checked) {
   ProxyFolderModel* model = view_->model();
   if(model) {
-    // model->sort();
+    QAction* action = static_cast<QAction*>(sender());
+    for(int col = 0; col < FolderModel::NumOfColumns; ++col) {
+      if(action == sortActions_[col]) {
+        model->sort(col, model->sortOrder());
+        break;
+      }
+    }
+  }
+}
+
+void FolderMenu::onSortOrderActionTriggered(bool checked) {
+  ProxyFolderModel* model = view_->model();
+  if(model) {
+    QAction* action = static_cast<QAction*>(sender());
+    Qt::SortOrder order;
+    if(action == actionAscending_)
+      order = Qt::AscendingOrder;
+    else
+      order = Qt::DescendingOrder;
+    model->sort(model->sortColumn(), order);
   }
 }
 
@@ -164,6 +188,14 @@ void FolderMenu::onShowHiddenActionTriggered(bool checked) {
   ProxyFolderModel* model = view_->model();
   if(model)
     model->setShowHidden(checked);
+}
+
+void FolderMenu::onCaseSensitiveActionTriggered(bool checked) {
+  // TODO
+}
+
+void FolderMenu::onFolderFirstActionTriggered(bool checked) {
+  // TODO
 }
 
 void FolderMenu::onPropertiesActionTriggered() {

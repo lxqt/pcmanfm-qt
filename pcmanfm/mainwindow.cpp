@@ -156,11 +156,11 @@ void MainWindow::on_actionShowHidden_triggered(bool checked) {
 }
 
 void MainWindow::on_actionByFileName_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnName);
+  currentPage()->sort(Fm::FolderModel::ColumnFileName);
 }
 
 void MainWindow::on_actionByMTime_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnMTime);
+  currentPage()->sort(Fm::FolderModel::ColumnFileMTime);
 }
 
 void MainWindow::on_actionByOwner_triggered(bool checked) {
@@ -170,11 +170,11 @@ void MainWindow::on_actionByFileType_triggered(bool checked) {
 }
 
 void MainWindow::on_actionAscending_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnName, Qt::AscendingOrder);
+  currentPage()->sort(Fm::FolderModel::ColumnFileName, Qt::AscendingOrder);
 }
 
 void MainWindow::on_actionDescending_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnName, Qt::DescendingOrder);
+  currentPage()->sort(Fm::FolderModel::ColumnFileName, Qt::DescendingOrder);
 }
 
 

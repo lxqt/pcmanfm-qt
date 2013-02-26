@@ -48,19 +48,13 @@ FolderView::~FolderView() {
 
 void FolderView::ListView::mousePressEvent(QMouseEvent* event) {
   QListView::mousePressEvent(event);
-  if(event->button() == Qt::MiddleButton) {
-    QPoint pos = event->pos();
-    static_cast<FolderView*>(parent())->emitClickedAt(MiddleClick, pos);
-  }
+  static_cast<FolderView*>(parent())->childMousePressEvent(event);
 }
 
 
 void FolderView::TreeView::mousePressEvent(QMouseEvent* event) {
   QTreeView::mousePressEvent(event);
-  if(event->button() == Qt::MiddleButton) {
-    QPoint pos = event->pos();
-    static_cast<FolderView*>(parent())->emitClickedAt(MiddleClick, pos);
-  }
+  static_cast<FolderView*>(parent())->childMousePressEvent(event);
 }
 
 
@@ -105,7 +99,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     }
     // set our own custom delegate
     FolderItemDelegate* delegate = new FolderItemDelegate(listView);
-    listView->setItemDelegateForColumn(FolderModel::ColumnName, delegate);
+    listView->setItemDelegateForColumn(FolderModel::ColumnFileName, delegate);
     // FIXME: should we expose the delegate?
 
     listView->setDragDropMode(QAbstractItemView::DragDrop);
@@ -206,17 +200,22 @@ void FolderView::setModel(ProxyFolderModel* model) {
 void FolderView::contextMenuEvent(QContextMenuEvent* event) {
   QWidget::contextMenuEvent(event);
   QPoint pos = event->pos();
-  g_print("%d, %d\n", pos.x(), pos.y());
   QPoint pos2 = view->mapFromParent(pos);
   emitClickedAt(ContextMenuClick, pos2);
-  // g_print("MAPPED: %d, %d\n", pos2.x(), pos2.y());
+}
+
+void FolderView::childMousePressEvent(QMouseEvent* event) {
+  // called from mousePressEvent() of chld view
+  if(event->button() == Qt::MiddleButton) {
+    QPoint pos = event->pos();
+    emitClickedAt(MiddleClick, pos);
+  }
 }
 
 void FolderView::emitClickedAt(ClickType type, QPoint& pos) {
   QPoint viewport_pos = view->viewport()->mapFromParent(pos);
   // indexAt() needs a point in "viewport" coordinates.
   QModelIndex index = view->indexAt(viewport_pos);
-  g_print(" ROW: %d\n", index.row());
   if(index.isValid()) {
     QVariant data = index.data(FolderModel::FileInfoRole);
     FmFileInfo* info = reinterpret_cast<FmFileInfo*>(data.value<void*>());
@@ -225,8 +224,11 @@ void FolderView::emitClickedAt(ClickType type, QPoint& pos) {
   else {
     // FIXME: should we show popup menu for the selected files instead
     // if there are selected files?
-    if(type == ContextMenuClick)
+    if(type == ContextMenuClick) {
+      // clear current selection if clicked outside selected files
+      view->clearSelection();
       Q_EMIT clicked(type, NULL);
+    }
   }
 }
 

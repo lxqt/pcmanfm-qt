@@ -23,6 +23,7 @@
 
 #include <QMenu>
 #include <libfm/fm.h>
+#include "foldermodel.h"
 
 class QAction;
 
@@ -81,27 +82,31 @@ public:
     return propertiesAction_;  
   }
 
+  FolderView* view() {
+    return view_;
+  }
+  
 protected Q_SLOTS:
 
   void onPasteActionTriggered();
-
   void onSelectAllActionTriggered();
-
   void onInvertSelectionActionTriggered();
-
-  void onSortActionTriggered();
-
+  void onSortActionTriggered(bool checked);
+  void onSortOrderActionTriggered(bool checked);
   void onShowHiddenActionTriggered(bool checked);
-
+  void onCaseSensitiveActionTriggered(bool checked);
+  void onFolderFirstActionTriggered(bool checked);
   void onPropertiesActionTriggered();
-
+  
 private:
-  QMenu* createCreateNewMenu();
-  QMenu* createSortMenu();
+  void createCreateNewMenu();
+  void createSortMenu();
+  void addSortMenuItem(QString title, int id);
 
 private:
   FolderView* view_;
   QAction* createAction_;
+  QMenu* createNewMenu_;
   QAction* separator1_;
   QAction* pasteAction_;
   QAction* separator2_;
@@ -109,6 +114,11 @@ private:
   QAction* invertSelectionAction_;
   QAction* separator3_;
   QAction* sortAction_;
+  QActionGroup* sortActionGroup_;
+  QMenu* sortMenu_;
+  QAction* sortActions_[FolderModel::NumOfColumns];
+  QAction* actionAscending_;
+  QAction* actionDescending_;
   QAction* showHiddenAction_;
   QAction* separator4_;
   QAction* propertiesAction_;
