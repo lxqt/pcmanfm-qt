@@ -23,33 +23,50 @@
 
 #include "foldermodel.h"
 #include "proxyfoldermodel.h"
-#include <QPixmap>
-#include <QImage>
 #include "view.h"
+#include <qcache.h>
 
 namespace PCManFM {
-  
+
 class DesktopWindow : public View {
 Q_OBJECT
-
 public:
+  enum WallpaperMode {
+    WallpaperNone,
+    WallpaperStretch,
+    WallpaperFit,
+    WallpaperCenter,
+    WallpaperTile
+  };
+
   explicit DesktopWindow();
   virtual ~DesktopWindow();
-  
-  void setBackground(QPixmap pixmap);
-  void setBackground(QImage image);
-  void setBackground(QString fileName);
-  
-  void setForeground(QColor color);
-  void setShadow(QColor color);
+
+  void setForeground(const QColor& color);
+  void setShadow(const QColor& color);
+  void setBackground(const QColor& color);
+  void setWallpaperFile(QString filename);
+  void setWallpaperMode(WallpaperMode mode = WallpaperStretch);
+
+  // void setWallpaperAlpha(qreal alpha);
+  void updateWallpaper();
 
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
-  
+  virtual void resizeEvent(QResizeEvent* event);
+
 private:
-  Fm::ProxyFolderModel* proxyModel;
-  Fm::FolderModel* model;
-  FmFolder* folder;
+  Fm::ProxyFolderModel* proxyModel_;
+  Fm::FolderModel* model_;
+  FmFolder* folder_;
+
+  QColor fgColor_;
+  QColor bgColor_;
+  QColor shadowColor_;
+
+  QString wallpaperFile_;
+  WallpaperMode wallpaperMode_;
+  QPixmap wallpaperPixmap_;
 };
 
 }

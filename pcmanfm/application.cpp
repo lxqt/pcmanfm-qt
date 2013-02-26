@@ -357,26 +357,22 @@ void Application::setWallpaper(QString path, QString modeString) {
 
 void Application::onWorkAreaResized(int num) {
   DesktopWindow* window = desktopWindows_.at(num);
-  QRect rect = desktop()->availableGeometry(num);
+  QRect rect = desktop()->screenGeometry(num);
   window->resize(rect.width(), rect.height());
   window->move(rect.x(), rect.y());
 }
 
 DesktopWindow* Application::createDesktopWindow(int screenNum) {
   DesktopWindow* window = new DesktopWindow();
-  QRect rect = desktop()->availableGeometry(screenNum);
-  window->setFixedSize(rect.size());
-  window->move(rect.x(), rect.y());
-  if(!settings_.wallpaper().isEmpty()) {
-    // FIXME: should handle wallpaper mode properly
-    window->setBackground(settings_.wallpaper());
-    qDebug("%s", settings_.wallpaper().toUtf8().data());
-  }
+  QRect rect = desktop()->screenGeometry(screenNum);
+  window->setGeometry(rect);
+  window->setWallpaperFile(settings_.wallpaper());
+  window->setWallpaperMode(DesktopWindow::WallpaperStretch); // FIXME: set value from settings
   window->setForeground(settings_.desktopFgColor());
+  window->updateWallpaper();
   window->show();
   return window;
 }
-
 
 void Application::onScreenCountChanged(int newCount) {
   int i;

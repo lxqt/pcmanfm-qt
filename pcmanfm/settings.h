@@ -43,11 +43,11 @@ public:
   QString profileDir(QString profile = QString());
 
   // setter/getter functions
-  QString profileName() {
+  QString profileName() const {
     return profileName_;
   }
 
-  QString iconThemeName() {
+  QString iconThemeName() const {
     return iconThemeName_;
   }
   
@@ -63,7 +63,7 @@ public:
     bookmarkOpenMethod_ = bookmarkOpenMethod;
   }
 
-  QString suCommand() {
+  QString suCommand() const {
     return suCommand_;
   }
   
@@ -71,7 +71,7 @@ public:
     suCommand_ = suCommand;
   }
 
-  bool mountOnStartup() {
+  bool mountOnStartup() const {
     return mountOnStartup_;
   }
 
@@ -87,7 +87,7 @@ public:
     mountRemovable_ = mountRemovable;
   }
 
-  bool autoRun() {
+  bool autoRun() const {
     return autoRun_;
   }
 
@@ -96,7 +96,7 @@ public:
   }
 
 
-  int wallpaperMode() {
+  int wallpaperMode() const {
     return wallpaperMode_;
   }
 
@@ -104,7 +104,7 @@ public:
     wallpaperMode_ = wallpaperMode;
   }
 
-  QString wallpaper() {
+  QString wallpaper() const {
     return wallpaper_;
   }
 
@@ -112,7 +112,7 @@ public:
     wallpaper_ = wallpaper;
   }
 
-  QColor desktopBgColor() {
+  const QColor& desktopBgColor() const {
     return desktopBgColor_;
   }
 
@@ -120,7 +120,7 @@ public:
     desktopBgColor_ = desktopBgColor;
   }
 
-  QColor desktopFgColor() {
+  const QColor& desktopFgColor() const {
     return desktopFgColor_;
   }
 
@@ -128,7 +128,7 @@ public:
     desktopFgColor_ = desktopFgColor;
   }
 
-  QColor desktopShadowColor() {
+  const QColor& desktopShadowColor() const {
     return desktopShadowColor_;
   }
 
@@ -138,7 +138,7 @@ public:
 
   // desktop_font=Sans 12
   // bool showWmMenu;
-  bool desktopShowHidden() {
+  bool desktopShowHidden() const {
     return desktopShowHidden_;
   }
 
@@ -146,7 +146,7 @@ public:
     desktopShowHidden_ = desktopShowHidden;
   }
 
-  Qt::SortOrder desktopSortOrder() {
+  Qt::SortOrder desktopSortOrder() const {
     return desktopSortOrder_;
   }
 
@@ -154,7 +154,7 @@ public:
     desktopSortOrder_ = desktopSortOrder;
   }
 
-  Fm::FolderModel::ColumnId desktopSortColumn() {
+  Fm::FolderModel::ColumnId desktopSortColumn() const {
     return desktopSortColumn_;
   }
 
@@ -162,8 +162,7 @@ public:
     desktopSortColumn_ = desktopSortColumn;
   }
 
-
-  bool alwaysShowTabs() {
+  bool alwaysShowTabs() const {
     return alwaysShowTabs_;
   }
 
@@ -171,7 +170,7 @@ public:
     alwaysShowTabs_ = alwaysShowTabs;
   }
 
-  int windowWidth() {
+  int windowWidth() const {
     return windowWidth_;
   }
 
@@ -179,7 +178,7 @@ public:
     windowWidth_ = windowWidth;
   }
 
-  int windowHeight() {
+  int windowHeight() const {
     return windowHeight_;
   }
 
@@ -187,7 +186,7 @@ public:
     windowHeight_ = windowHeight;
   }
 
-  int splitterPos() {
+  int splitterPos() const {
     return splitterPos_;
   }
 
@@ -195,7 +194,7 @@ public:
     splitterPos_ = splitterPos;
   }
 
-  int sidePaneMode() {
+  int sidePaneMode() const {
     return sidePaneMode_;
   }
 
@@ -203,8 +202,7 @@ public:
     sidePaneMode_ = sidePaneMode;
   }
 
-
-  Fm::FolderView::ViewMode viewMode() {
+  Fm::FolderView::ViewMode viewMode() const {
     return viewMode_;
   }
 
@@ -212,7 +210,7 @@ public:
     viewMode_ = viewMode;
   }
 
-  bool showHidden() {
+  bool showHidden() const {
     return showHidden_;
   }
 
@@ -220,7 +218,7 @@ public:
     showHidden_ = showHidden;
   }
 
-  Qt::SortOrder sortOrder() {
+  Qt::SortOrder sortOrder() const {
     return sortOrder_;
   }
 
@@ -228,7 +226,7 @@ public:
     sortOrder_ = sortOrder;
   }
 
-  Fm::FolderModel::ColumnId sortColumn() {
+  Fm::FolderModel::ColumnId sortColumn() const {
     return sortColumn_;
   }
 
@@ -237,7 +235,7 @@ public:
   }
 
   // settings for use with libfm
-  bool singleClick() {
+  bool singleClick() const {
     return singleClick_;
   }
 
@@ -245,7 +243,7 @@ public:
     singleClick_ = singleClick;
   }
 
-  bool useTrash() {
+  bool useTrash() const {
     return useTrash_;
   }
 
@@ -253,7 +251,7 @@ public:
     useTrash_ = useTrash;
   }
 
-  bool confirmDelete() {
+  bool confirmDelete() const {
     return confirmDelete_;
   }
 
@@ -264,7 +262,7 @@ public:
   // bool thumbnailLocal_;
   // bool thumbnailMax;
 
-  int bigIconSize() {
+  int bigIconSize() const {
     return bigIconSize_;
   }
 
@@ -272,7 +270,7 @@ public:
     bigIconSize_ = bigIconSize;
   }
 
-  int smallIconSize() {
+  int smallIconSize() const {
     return smallIconSize_;
   }
 
@@ -280,7 +278,7 @@ public:
     smallIconSize_ = smallIconSize;
   }
 
-  int sidePaneIconSize() {
+  int sidePaneIconSize() const {
     return sidePaneIconSize_;
   }
 
@@ -288,7 +286,7 @@ public:
     sidePaneIconSize_ = sidePaneIconSize;
   }
 
-  int thumbnailIconSize() {
+  int thumbnailIconSize() const {
     return thumbnailIconSize_;
   }
 

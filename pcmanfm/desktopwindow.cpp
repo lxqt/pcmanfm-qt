@@ -24,6 +24,7 @@
 #include "./application.h"
 #include "mainwindow.h"
 
+#include <QPainter>
 #include <QImage>
 #include <QPixmap>
 #include <QPalette>
@@ -33,20 +34,22 @@ using namespace PCManFM;
 
 DesktopWindow::DesktopWindow():
   View(Fm::FolderView::IconMode),
-  folder(NULL),
-  model(NULL),
-  proxyModel(NULL) {
+  folder_(NULL),
+  model_(NULL),
+  proxyModel_(NULL),
+  wallpaperMode_(WallpaperNone) {
 
   QDesktopWidget* desktopWidget = QApplication::desktop();
   setWindowFlags(Qt::Window|Qt::FramelessWindowHint);
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
+  setAttribute(Qt::WA_OpaquePaintEvent);
 
-  model = new Fm::FolderModel();
-  proxyModel = new Fm::ProxyFolderModel();
-  proxyModel->setSourceModel(model);
-  folder = fm_folder_from_path(fm_path_get_desktop());
-  model->setFolder(folder);
-  setModel(proxyModel);
+  model_ = new Fm::FolderModel();
+  proxyModel_ = new Fm::ProxyFolderModel();
+  proxyModel_->setSourceModel(model_);
+  folder_ = fm_folder_from_path(fm_path_get_desktop());
+  model_->setFolder(folder_);
+  setModel(proxyModel_);
 
   QListView* listView = static_cast<QListView*>(childView());
   listView->setMovement(QListView::Snap);
@@ -61,49 +64,31 @@ DesktopWindow::DesktopWindow():
   listView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
   listView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-  // set background
-  // setBackground("/usr/share/backgrounds/A_Little_Quetzal_by_vgerasimov.jpg");
   connect(this, SIGNAL(openDirRequested(FmPath*,int)), SLOT(onOpenDirRequested(FmPath*,int)));
 }
 
 DesktopWindow::~DesktopWindow() {
-  if(proxyModel)
-    delete proxyModel;
-  if(model)
-    delete model;
-  if(folder)
-    g_object_unref(folder);
+  if(proxyModel_)
+    delete proxyModel_;
+  if(model_)
+    delete model_;
+  if(folder_)
+    g_object_unref(folder_);
 }
 
-void DesktopWindow::setBackground(QPixmap pixmap) {
-  QListView* listView = static_cast<QListView*>(childView());
-  QPalette p(listView->palette());
-  p.setBrush(QPalette::Base, pixmap);
-  // p.setBrush(QPalette::Text, QColor(255, 255, 255));
-  listView->setPalette(p);
+void DesktopWindow::setBackground(const QColor& color) {
+  bgColor_ = color;
 }
 
-void DesktopWindow::setBackground(QString fileName) {
-  // QPixmap bg(fileName);
-  QImage bg(fileName);
-  setBackground(bg);
-}
-
-void DesktopWindow::setBackground(QImage image) {
-  QListView* listView = static_cast<QListView*>(childView());
-  QPalette p(listView->palette());
-  p.setBrush(QPalette::Base, image);
-  // p.setBrush(QPalette::Text, QColor(255, 255, 255));
-  listView->setPalette(p);
-}
-
-void DesktopWindow::setForeground(QColor color) {
+void DesktopWindow::setForeground(const QColor& color) {
   QListView* listView = static_cast<QListView*>(childView());
   listView->palette().setBrush(QPalette::Text, color);
+  fgColor_ = color;
 }
 
-void DesktopWindow::setShadow(QColor color) {
+void DesktopWindow::setShadow(const QColor& color) {
   // TODO: implement drawing text with shadow
+  shadowColor_ = color;
 }
 
 void DesktopWindow::onOpenDirRequested(FmPath* path, int target) {
@@ -115,5 +100,67 @@ void DesktopWindow::onOpenDirRequested(FmPath* path, int target) {
   newWin->show();
 }
 
+void DesktopWindow::resizeEvent(QResizeEvent* event) {
+  QWidget::resizeEvent(event);
+  // resize or wall paper if needed
+  if(isVisible() && wallpaperMode_ != WallpaperNone && wallpaperMode_ != WallpaperTile) {
+    updateWallpaper();
+    update();
+  }
+}
+
+void DesktopWindow::setWallpaperFile(QString filename) {
+  wallpaperFile_ = filename;
+}
+
+void DesktopWindow::setWallpaperMode(WallpaperMode mode) {
+  wallpaperMode_ = mode;
+}
+
+void DesktopWindow::updateWallpaper() {
+  // reset the brush
+  QListView* listView = static_cast<QListView*>(childView());
+  QPalette palette(listView->palette());
+
+  if(wallpaperMode_ == WallpaperNone) { // use background color only
+    palette.setBrush(QPalette::Base, bgColor_);
+  }
+  else { // use wallpaper
+    QImage image(wallpaperFile_);
+    if(image.isNull()) { // image file cannot be loaded
+      palette.setBrush(QPalette::Base, bgColor_);
+      QPixmap empty;
+      wallpaperPixmap_ = empty; // clear the pixmap
+    }
+    else { // image file is successfully loaded
+      qDebug("Image is loaded!");
+      QPixmap pixmap;
+      if(wallpaperMode_ == WallpaperTile || image.size() == size()) {
+        // if image size == window size, there are no differences among different modes
+        pixmap = QPixmap::fromImage(image);
+      }
+      else if(wallpaperMode_ == WallpaperStretch) {
+        QImage scaled = image.scaled(width(), height(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+        pixmap = QPixmap::fromImage(scaled);
+      }
+      else {
+        QPixmap pixmap(size());
+        QPainter painter(&pixmap);
+        
+        if(wallpaperMode_ == WallpaperFit) {
+          QImage scaled = image.scaled(width(), height(), Qt::KeepAspectRatio, Qt::SmoothTransformation);
+          image = scaled;
+        }
+        pixmap.fill(bgColor_);
+        int x = width() - image.width();
+        int y = height() - image.height();
+        painter.drawImage(x, y, image);
+      }
+      wallpaperPixmap_ = pixmap;
+      palette.setBrush(QPalette::Base, wallpaperPixmap_);
+    } // if(image.isNull())
+  }
+  listView->setPalette(palette);
+}
 
 #include "desktopwindow.moc"
