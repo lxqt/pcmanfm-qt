@@ -83,6 +83,7 @@ set(pcmanfm_SRCS
   pcmanfm/view.cpp
   pcmanfm/preferencesdialog.cpp
   pcmanfm/desktopwindow.cpp
+  pcmanfm/desktopitemdelegate.cpp
   pcmanfm/settings.cpp
 )
 

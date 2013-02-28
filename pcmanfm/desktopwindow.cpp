@@ -17,18 +17,18 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-
 #include "desktopwindow.h"
 #include <QWidget>
 #include <QDesktopWidget>
-#include "./application.h"
-#include "mainwindow.h"
-
 #include <QPainter>
 #include <QImage>
 #include <QPixmap>
 #include <QPalette>
 #include <QBrush>
+
+#include "./application.h"
+#include "mainwindow.h"
+#include "desktopitemdelegate.h"
 
 using namespace PCManFM;
 
@@ -55,7 +55,10 @@ DesktopWindow::DesktopWindow():
   listView->setMovement(QListView::Snap);
   listView->setResizeMode(QListView::Adjust);
   listView->setFlow(QListView::TopToBottom);
-  // setGridSize();
+
+  // set our own delegate
+  DesktopItemDelegate* delegate = new DesktopItemDelegate(listView);
+  listView->setItemDelegateForColumn(Fm::FolderModel::ColumnFileName, delegate);
 
   // remove frame
   listView->setFrameShape(QFrame::NoFrame);
