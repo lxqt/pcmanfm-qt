@@ -28,6 +28,8 @@
 
 namespace PCManFM {
 
+class DesktopItemDelegate;
+
 class DesktopWindow : public View {
 Q_OBJECT
 public:
@@ -67,6 +69,7 @@ private:
   QString wallpaperFile_;
   WallpaperMode wallpaperMode_;
   QPixmap wallpaperPixmap_;
+  DesktopItemDelegate* delegate_;
 };
 
 }

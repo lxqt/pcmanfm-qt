@@ -57,8 +57,8 @@ DesktopWindow::DesktopWindow():
   listView->setFlow(QListView::TopToBottom);
 
   // set our own delegate
-  DesktopItemDelegate* delegate = new DesktopItemDelegate(listView);
-  listView->setItemDelegateForColumn(Fm::FolderModel::ColumnFileName, delegate);
+  delegate_ = new DesktopItemDelegate(listView);
+  listView->setItemDelegateForColumn(Fm::FolderModel::ColumnFileName, delegate_);
 
   // remove frame
   listView->setFrameShape(QFrame::NoFrame);
@@ -92,6 +92,7 @@ void DesktopWindow::setForeground(const QColor& color) {
 void DesktopWindow::setShadow(const QColor& color) {
   // TODO: implement drawing text with shadow
   shadowColor_ = color;
+  delegate_->setShadowColor(color);
 }
 
 void DesktopWindow::onOpenDirRequested(FmPath* path, int target) {
@@ -163,6 +164,7 @@ void DesktopWindow::updateWallpaper() {
       palette.setBrush(QPalette::Base, wallpaperPixmap_);
     } // if(image.isNull())
   }
+  //FIXME: we should set the pixmap to X11 root window?
   listView->setPalette(palette);
 }
 
