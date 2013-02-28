@@ -75,6 +75,29 @@ set(libfm_UIS
 QT4_WRAP_UI(libfm_UIS_H ${libfm_UIS})
 qt4_automoc(${libfm_SRCS})
 
+add_library(fm-qt SHARED
+  ${libfm_SRCS}
+  ${libfm_UIS_H}
+)
+target_link_libraries(fm-qt
+  ${QT_QTCORE_LIBRARY}
+  ${QT_QTGUI_LIBRARY}
+  ${LIBFM_LIBRARIES}
+)
+
+# install include header files (FIXME: can we make this cleaner? should dir name be versioned?)
+install(DIRECTORY libfm-qt/ DESTINATION include/libfm-qt
+          FILES_MATCHING PATTERN "*.h")
+
+# FIXME: add libtool version to the lib (soname) later.
+# FIXME: only export public symbols
+
+install(TARGETS fm-qt
+  LIBRARY DESTINATION lib
+  PUBLIC_HEADER 
+)
+
+
 set(pcmanfm_SRCS
   pcmanfm/application.cpp
   pcmanfm/pcmanfm.cpp
@@ -95,7 +118,6 @@ qt4_add_dbus_adaptor(pcmanfm_SRCS
   ApplicationAdaptor
 )
 
-
 set(pcmanfm_UIS
   pcmanfm/main-win.ui
   pcmanfm/about.ui
@@ -106,8 +128,6 @@ QT4_WRAP_UI(pcmanfm_UIS_H ${pcmanfm_UIS})
 qt4_automoc(${pcmanfm_SRCS})
 
 add_executable(pcmanfm-qt 
-  ${libfm_SRCS}
-  ${libfm_UIS_H}
   ${pcmanfm_SRCS}
   ${pcmanfm_UIS_H}
 )
@@ -115,6 +135,11 @@ target_link_libraries(pcmanfm-qt
   ${QT_QTCORE_LIBRARY}
   ${QT_QTGUI_LIBRARY}
   ${QT_QTDBUS_LIBRARY}
-#  ${QT_QTTEST_LIBRARY}
   ${LIBFM_LIBRARIES}
+  fm-qt
+)
+
+install(TARGETS
+  pcmanfm-qt
+  RUNTIME DESTINATION bin
 )
