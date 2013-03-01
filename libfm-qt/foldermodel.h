@@ -29,8 +29,7 @@
 
 namespace Fm {
 
-class FolderModel : public QAbstractListModel
-{
+class LIBFM_QT_API FolderModel : public QAbstractListModel {
 public:
 
   enum Role {

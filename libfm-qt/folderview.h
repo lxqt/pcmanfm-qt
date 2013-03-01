@@ -33,8 +33,7 @@ namespace Fm {
 
 class FileMenu;
 
-class FolderView : public QWidget
-{
+class LIBFM_QT_API FolderView : public QWidget {
   Q_OBJECT
 
 public:

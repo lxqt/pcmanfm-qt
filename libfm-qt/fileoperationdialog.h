@@ -29,7 +29,7 @@ namespace Fm {
 
 class FileOperation;
   
-class FileOperationDialog : public QDialog {
+class LIBFM_QT_API FileOperationDialog : public QDialog {
 Q_OBJECT
 public:
   explicit FileOperationDialog(FileOperation* _operation);

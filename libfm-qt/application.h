@@ -20,13 +20,12 @@
 
 #ifndef FM_APPLICATION_H
 #define FM_APPLICATION_H
-
+#include <QtGlobal>
 #include "icontheme.h"
 
 namespace Fm {
 
-class Application
-{
+class LIBFM_QT_API Application {
 public:
   Application();
   ~Application();

@@ -28,8 +28,7 @@ namespace Fm {
 
 // a proxy model used to sort and filter FolderModel
 
-class ProxyFolderModel : public QSortFilterProxyModel
-{
+class LIBFM_QT_API ProxyFolderModel : public QSortFilterProxyModel {
 Q_OBJECT
 
 public:

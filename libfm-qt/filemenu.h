@@ -28,8 +28,7 @@ class QAction;
 
 namespace Fm {
 
-class FileMenu : public QMenu
-{
+class LIBFM_QT_API FileMenu : public QMenu {
 Q_OBJECT
 
 public:

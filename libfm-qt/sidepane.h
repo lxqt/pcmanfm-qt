@@ -27,7 +27,7 @@
 
 namespace Fm {
 
-class SidePane : public QFrame {
+class LIBFM_QT_API SidePane : public QFrame {
 Q_OBJECT
 
 public:

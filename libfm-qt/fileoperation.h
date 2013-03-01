@@ -29,7 +29,7 @@ namespace Fm {
 
 class FileOperationDialog;
 
-class FileOperation : public QObject {
+class LIBFM_QT_API FileOperation : public QObject {
 Q_OBJECT
 public:
   enum Type {

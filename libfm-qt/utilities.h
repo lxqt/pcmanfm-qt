@@ -28,13 +28,13 @@
 
 namespace Fm {
 
-FmPathList* pathListFromQUrls(QList<QUrl> urls);
+FmPathList* LIBFM_QT_API pathListFromQUrls(QList<QUrl> urls);
 
-void pasteFilesFromClipboard(FmPath* destPath, QWidget* parent = 0);
+void LIBFM_QT_API pasteFilesFromClipboard(FmPath* destPath, QWidget* parent = 0);
 
-void copyFilesToClipboard(FmPathList* files);
+void LIBFM_QT_API  copyFilesToClipboard(FmPathList* files);
 
-void cutFilesToClipboard(FmPathList* files);
+void LIBFM_QT_API cutFilesToClipboard(FmPathList* files);
 
 }
 

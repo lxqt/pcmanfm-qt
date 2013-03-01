@@ -25,7 +25,7 @@
 
 namespace Fm {
 
-class PathCompleter : public QCompleter {
+class LIBFM_QT_API PathCompleter : public QCompleter {
 Q_OBJECT
   
 public:

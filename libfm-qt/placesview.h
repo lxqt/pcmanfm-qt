@@ -27,8 +27,7 @@
 
 namespace Fm {
   
-class PlacesView : public QTreeView
-{
+class LIBFM_QT_API PlacesView : public QTreeView {
 Q_OBJECT
 
 public:

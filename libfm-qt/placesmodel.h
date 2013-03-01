@@ -29,8 +29,7 @@
 
 namespace Fm {
 
-class PlacesModel : public QStandardItemModel
-{
+class LIBFM_QT_API PlacesModel : public QStandardItemModel {
 Q_OBJECT
 public:
   

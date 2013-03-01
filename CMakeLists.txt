@@ -30,7 +30,7 @@ link_directories(
   ${LIBFM_LIBRARY_DIRS}
 )
 
-set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive")
+set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive -fvisibility=hidden")
 
 #set(qmodeltest_SRCS
 #  qmodeltest/modeltest.cpp
@@ -79,6 +79,13 @@ add_library(fm-qt SHARED
   ${libfm_SRCS}
   ${libfm_UIS_H}
 )
+
+set_property(
+   TARGET fm-qt APPEND
+   PROPERTY COMPILE_DEFINITIONS
+   LIBFM_QT_API=Q_DECL_EXPORT
+)
+
 target_link_libraries(fm-qt
   ${QT_QTCORE_LIBRARY}
   ${QT_QTGUI_LIBRARY}
@@ -130,6 +137,11 @@ qt4_automoc(${pcmanfm_SRCS})
 add_executable(pcmanfm-qt 
   ${pcmanfm_SRCS}
   ${pcmanfm_UIS_H}
+)
+set_property(
+   TARGET pcmanfm-qt APPEND
+   PROPERTY COMPILE_DEFINITIONS
+   LIBFM_QT_API=Q_DECL_IMPORT
 )
 target_link_libraries(pcmanfm-qt 
   ${QT_QTCORE_LIBRARY}

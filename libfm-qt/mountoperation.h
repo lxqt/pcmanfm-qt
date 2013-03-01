@@ -39,7 +39,7 @@ namespace Fm {
 // FIXME: Need to reconsider the propery way of API design. Blocking sync calls are handy, but
 // indeed causes some problems. :-(
 
-class MountOperation: public QObject {
+class LIBFM_QT_API MountOperation: public QObject {
 Q_OBJECT
 
 public:

@@ -26,7 +26,7 @@
 
 namespace Fm {
 
-class FolderItemDelegate : public QStyledItemDelegate {
+class LIBFM_QT_API FolderItemDelegate : public QStyledItemDelegate {
 public:
   explicit FolderItemDelegate(QListView* view, QObject* parent = 0);
   virtual ~FolderItemDelegate();

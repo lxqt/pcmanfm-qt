@@ -38,8 +38,7 @@ namespace Fm {
 
 // Nice article about QPixmap from KDE: http://techbase.kde.org/Development/Tutorials/Graphics/Performance
 
-class IconTheme
-{
+class LIBFM_QT_API IconTheme {
 public:
   IconTheme();
   ~IconTheme();

@@ -31,7 +31,7 @@ namespace Fm {
 
 class FolderView;
   
-class FolderMenu : public QMenu {
+class LIBFM_QT_API FolderMenu : public QMenu {
 Q_OBJECT
 
 public:

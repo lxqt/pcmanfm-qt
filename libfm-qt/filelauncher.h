@@ -26,7 +26,7 @@
 
 namespace Fm {
 
-class FileLauncher {
+class LIBFM_QT_API FileLauncher {
 public:
   FileLauncher();
   ~FileLauncher();

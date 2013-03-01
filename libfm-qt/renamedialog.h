@@ -28,7 +28,7 @@
 
 namespace Fm {
 
-class RenameDialog : public QDialog {
+class LIBFM_QT_API RenameDialog : public QDialog {
 Q_OBJECT
 
 public:

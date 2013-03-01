@@ -27,7 +27,7 @@
 namespace Fm {
 
 // action used to create bookmark menu items
-class BookmarkAction : public QAction {
+class LIBFM_QT_API BookmarkAction : public QAction {
 public:
   explicit BookmarkAction(FmBookmarkItem* item, QObject* parent = 0);
 
