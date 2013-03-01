@@ -22,6 +22,7 @@
 #define FM_RENAMEDIALOG_H
 
 #include <QDialog>
+#include <qvarlengtharray.h>
 #include "ui_rename-dialog.h"
 #include <libfm/fm.h>
 
@@ -30,13 +31,31 @@ namespace Fm {
 class RenameDialog : public QDialog {
 Q_OBJECT
 
+  enum Action {
+    ActionCancel,
+    ActionRename,
+    ActionOverwrite,
+    ActionSkip
+  };
+
 public:
   explicit RenameDialog(FmFileInfo* src, FmFileInfo* dest, QWidget* parent = 0, Qt::WindowFlags f = 0);
   virtual ~RenameDialog();
 
-  
+  Action action() {
+    return action_;
+  }
+
+  bool applyToAll() {
+    return applyToAll_;
+  }
+
+protected Q_SLOTS:
+
 private:
   Ui::RenameDialog ui;
+  Action action_;
+  bool applyToAll_;
 };
 
 }
