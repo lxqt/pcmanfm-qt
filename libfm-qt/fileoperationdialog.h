@@ -50,6 +50,7 @@ public:
 private:
   Ui::FileOperationDialog ui;
   FileOperation* operation;
+  int defaultOption;
 };
 
 }

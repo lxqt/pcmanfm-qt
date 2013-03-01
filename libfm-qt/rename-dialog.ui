@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>388</width>
-    <height>219</height>
+    <width>398</width>
+    <height>220</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -132,7 +132,7 @@
     </layout>
    </item>
    <item>
-    <widget class="QCheckBox" name="checkBox">
+    <widget class="QCheckBox" name="applyToAll">
      <property name="text">
       <string>Apply this option to all existing files</string>
      </property>
@@ -160,7 +160,7 @@
       <enum>Qt::Horizontal</enum>
      </property>
      <property name="standardButtons">
-      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ignore|QDialogButtonBox::Ok|QDialogButtonBox::Retry</set>
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ignore|QDialogButtonBox::Ok</set>
      </property>
     </widget>
    </item>

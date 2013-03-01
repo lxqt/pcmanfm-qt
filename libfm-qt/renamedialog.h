@@ -31,11 +31,12 @@ namespace Fm {
 class RenameDialog : public QDialog {
 Q_OBJECT
 
+public:
   enum Action {
     ActionCancel,
     ActionRename,
     ActionOverwrite,
-    ActionSkip
+    ActionIgnore
   };
 
 public:
@@ -49,13 +50,27 @@ public:
   bool applyToAll() {
     return applyToAll_;
   }
+  
+  QString newName() {
+    return newName_;
+  }
 
 protected Q_SLOTS:
+  void onRenameClicked();
+  void onIgnoreClicked();
+  void onFileNameChanged(QString newName);
+
+protected:
+  void accept();
+  void reject();
 
 private:
   Ui::RenameDialog ui;
+  QAbstractButton* renameButton_;
   Action action_;
   bool applyToAll_;
+  QString oldName_;
+  QString newName_;
 };
 
 }

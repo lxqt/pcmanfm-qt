@@ -21,12 +21,14 @@
 #include "fileoperationdialog.h"
 #include "fileoperation.h"
 #include "renamedialog.h"
+#include <QMessageBox>
 
 using namespace Fm;
 
 FileOperationDialog::FileOperationDialog(FileOperation* _operation):
   QDialog(NULL),
-  operation(_operation) {
+  operation(_operation),
+  defaultOption(-1) {
 
   ui.setupUi(this);
 
@@ -74,7 +76,6 @@ FileOperationDialog::FileOperationDialog(FileOperation* _operation):
 
 
 FileOperationDialog::~FileOperationDialog() {
-
 }
 
 void FileOperationDialog::setDestPath(FmPath* dest) {
@@ -93,46 +94,47 @@ void FileOperationDialog::setSourceFiles(FmPathList* srcFiles) {
   }
 }
 
-
 int FileOperationDialog::ask(QString question, char*const* options) {
-
+  // TODO: implement FileOperationDialog::ask()
   return 0;
 }
 
 int FileOperationDialog::askRename(FmFileInfo* src, FmFileInfo* dest, QString& new_name) {
-  RenameDialog dlg(src, dest, this);
-  int r = dlg.exec();
-
-  switch(r) {
-    default:
-      break;
+  int ret;
+  if(defaultOption == -1) { // default action is not set, ask the user
+    RenameDialog dlg(src, dest, this);
+    dlg.exec();
+    switch(dlg.action()) {
+      case RenameDialog::ActionOverwrite:
+        ret = FM_FILE_OP_OVERWRITE;
+        if(dlg.applyToAll())
+          defaultOption = ret;
+        break;
+      case RenameDialog::ActionRename:
+        ret = FM_FILE_OP_RENAME;
+        new_name = dlg.newName();
+        break;
+      case RenameDialog::ActionIgnore:
+        ret = FM_FILE_OP_SKIP;
+        if(dlg.applyToAll())
+          defaultOption = ret;
+        break;
+      default:
+        ret = FM_FILE_OP_CANCEL;
+        break;
+    }
   }
-/*
-  switch(r) {
-  case RESPONSE_RENAME:
-      *new_name = g_strdup(gtk_entry_get_text(filename));
-      res = FM_FILE_OP_RENAME;
-      break;
-  case RESPONSE_OVERWRITE:
-      res = FM_FILE_OP_OVERWRITE;
-      break;
-  case RESPONSE_SKIP:
-      res = FM_FILE_OP_SKIP;
-      break;
-  default:
-      res = FM_FILE_OP_CANCEL;
-  }
-
-  if(gtk_toggle_button_get_active(apply_all)) {
-      if(res == RESPONSE_OVERWRITE || res == FM_FILE_OP_SKIP)
-          data->default_opt = res;
-  }
-*/
-  return FM_FILE_OP_SKIP;
+  else
+    ret = defaultOption;
+  return ret;
 }
 
 FmJobErrorAction FileOperationDialog::error(GError* err, FmJobErrorSeverity severity) {
-  // QMessageBox::error();
+  if(severity >= FM_JOB_ERROR_MODERATE) {
+    QMessageBox::critical(this, tr("Error"), err->message);
+    if(severity == FM_JOB_ERROR_CRITICAL)
+      return FM_JOB_ABORT;
+  }
   return FM_JOB_CONTINUE;
 }
 

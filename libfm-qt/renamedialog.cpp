@@ -20,12 +20,15 @@
 
 #include "renamedialog.h"
 #include <QStringBuilder>
+#include <QPushButton>
 #include "icontheme.h"
 
 using namespace Fm;
 
 RenameDialog::RenameDialog(FmFileInfo* src, FmFileInfo* dest, QWidget* parent, Qt::WindowFlags f):
-  QDialog(parent, f) {
+  QDialog(parent, f),
+  action_(ActionIgnore),
+  applyToAll_(false) {
 
   ui.setupUi(this);
 
@@ -75,11 +78,56 @@ RenameDialog::RenameDialog(FmFileInfo* src, FmFileInfo* dest, QWidget* parent, Q
 
   char* basename = fm_path_display_basename(path);
   ui.fileName->setText(QString::fromUtf8(basename));
+  oldName_ = basename;
   g_free(basename);
+  connect(ui.fileName, SIGNAL(textChanged(QString)), SLOT(onFileNameChanged(QString)));
+
+  // add "Rename" button
+  QAbstractButton* button = ui.buttonBox->button(QDialogButtonBox::Ok);
+  button->setText(tr("&Overwrite"));
+  // FIXME: there seems to be no way to place the Rename button next to the overwrite one.
+  renameButton_ = ui.buttonBox->addButton(tr("&Rename"), QDialogButtonBox::ActionRole);
+  connect(renameButton_, SIGNAL(clicked(bool)), SLOT(onRenameClicked()));
+  renameButton_->setEnabled(false); // disabled by default
+
+  button = ui.buttonBox->button(QDialogButtonBox::Ignore);
+  connect(button, SIGNAL(clicked(bool)), SLOT(onIgnoreClicked()));
+  
+  button = ui.buttonBox->button(QDialogButtonBox::Ignore);
+  connect(button, SIGNAL(clicked(bool)), SLOT(onRetryClicked()));
 }
 
 RenameDialog::~RenameDialog() {
 
 }
+
+void RenameDialog::onRenameClicked() {
+  action_ = ActionRename;
+  QDialog::done(QDialog::Accepted);
+}
+
+void RenameDialog::onIgnoreClicked() {
+  action_ = ActionIgnore;
+}
+
+// the overwrite button
+void RenameDialog::accept() {
+  action_ = ActionOverwrite;
+  applyToAll_ = ui.applyToAll->isChecked();
+  QDialog::accept();
+}
+
+// cancel, or close the dialog
+void RenameDialog::reject() {
+  action_ = ActionCancel;
+  QDialog::reject();
+}
+
+void RenameDialog::onFileNameChanged(QString newName) {
+  newName_ = newName;
+  // FIXME: check if the name already exists in the current dir
+  renameButton_->setEnabled((newName_ != oldName_));
+}
+
 
 #include "renamedialog.moc"
