@@ -40,6 +40,7 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   // create proxy folder model to do item filtering
   proxyModel_ = new ProxyFolderModel();
   proxyModel_->setShowHidden(false);
+  connect(proxyModel_, SIGNAL(sortFilterChanged()), SLOT(onModelSortFilterChanged()));
 
   verticalLayout = new QVBoxLayout(this);
   verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -326,6 +327,11 @@ void TabPage::up() {
       chdir(parent, true);
   }
 }
+
+void TabPage::onModelSortFilterChanged() {
+  Q_EMIT sortFilterChanged();
+}
+
 
 };
 

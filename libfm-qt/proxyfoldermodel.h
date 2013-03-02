@@ -45,7 +45,17 @@ public:
     return folderFirst_;
   }
 
+  void setSortCaseSensitivity(Qt::CaseSensitivity cs) {
+    QSortFilterProxyModel::setSortCaseSensitivity(cs);
+    Q_EMIT sortFilterChanged();
+  }
+  
   FmFileInfo* fileInfoFromIndex(const QModelIndex& index) const;
+
+  virtual void sort(int column, Qt::SortOrder order = Qt::AscendingOrder);
+
+Q_SIGNALS:
+  void sortFilterChanged();
 
 protected:
   bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) const;

@@ -161,9 +161,11 @@ Q_SIGNALS:
   void statusChanged(int type, QString statusText);
   void titleChanged(QString title);
   void openDirRequested(FmPath* path, int target);
+  void sortFilterChanged();
 
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
+  void onModelSortFilterChanged();
 
 private:
   void freeFolder();

@@ -92,6 +92,7 @@ protected Q_SLOTS:
   void onTabPageTitleChanged(QString title);
   void onTabPageStatusChanged(int type, QString statusText);
   void onTabPageOpenDirRequested(FmPath* path, int target);
+  void onTabPageSortFilterChanged();
 
   void onSidePaneChdirRequested(int type, FmPath* path);
 

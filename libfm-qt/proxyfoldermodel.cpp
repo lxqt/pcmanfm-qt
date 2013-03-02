@@ -34,10 +34,20 @@ ProxyFolderModel::ProxyFolderModel(QObject * parent):
 ProxyFolderModel::~ProxyFolderModel() {
 }
 
+void ProxyFolderModel::sort(int column, Qt::SortOrder order) {
+  int oldColumn = sortColumn();
+  Qt::SortOrder oldOrder = sortOrder();
+  QSortFilterProxyModel::sort(column, order);
+  if(column != oldColumn || order != oldOrder) {
+    Q_EMIT sortFilterChanged();
+  }
+}
+
 void ProxyFolderModel::setShowHidden(bool show) {
   if(show != showHidden_) {
     showHidden_ = show;
     invalidateFilter();
+    Q_EMIT sortFilterChanged();
   }
 }
 
@@ -46,6 +56,7 @@ void ProxyFolderModel::setFolderFirst(bool folderFirst) {
   if(folderFirst != folderFirst_) {
     folderFirst_ = folderFirst;
     invalidate();
+    Q_EMIT sortFilterChanged();
   }
 }
 

@@ -124,7 +124,8 @@ void MainWindow::addTab(FmPath* path) {
   connect(newPage, SIGNAL(titleChanged(QString)), SLOT(onTabPageTitleChanged(QString)));
   connect(newPage, SIGNAL(statusChanged(int,QString)), SLOT(onTabPageStatusChanged(int,QString)));
   connect(newPage, SIGNAL(openDirRequested(FmPath*,int)), SLOT(onTabPageOpenDirRequested(FmPath*,int)));
-  
+  connect(newPage, SIGNAL(sortFilterChanged()), SLOT(onTabPageSortFilterChanged()));
+
   ui.tabBar->insertTab(index, newPage->title());
 }
 
@@ -406,6 +407,14 @@ void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
     }
   }
 }
+
+void MainWindow::onTabPageSortFilterChanged() {
+  TabPage* tabPage = static_cast<TabPage*>(sender());
+  if(tabPage == currentPage()) {
+    updateViewMenuForCurrentPage();
+  }  
+}
+
 
 void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {
   chdir(path);
