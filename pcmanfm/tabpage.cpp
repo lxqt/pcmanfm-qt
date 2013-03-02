@@ -35,8 +35,7 @@ namespace PCManFM {
 TabPage::TabPage(FmPath* path, QWidget* parent):
     QWidget( parent),
     folder_ (NULL),
-    folderModel_(NULL),
-    showHidden_(false) {
+    folderModel_(NULL) {
 
   // create proxy folder model to do item filtering
   proxyModel_ = new ProxyFolderModel();

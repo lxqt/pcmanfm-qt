@@ -41,7 +41,8 @@ public:
     IconMode = 1,
     CompactMode,
     DetailedListMode,
-    ThumbnailMode
+    ThumbnailMode,
+    NumViewModes = ThumbnailMode
   };
 
   enum ClickType {

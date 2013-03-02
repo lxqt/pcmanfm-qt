@@ -68,9 +68,12 @@ protected Q_SLOTS:
   void on_actionByMTime_triggered(bool checked);
   void on_actionByOwner_triggered(bool checked);
   void on_actionByFileType_triggered(bool checked);
+  void on_actionByFileSize_triggered(bool checked);
   void on_actionAscending_triggered(bool checked);
   void on_actionDescending_triggered(bool checked);
-  
+  void on_actionFolderFirst_triggered(bool checked);
+  void on_actionCaseSensitive_triggered(bool checked);
+
   void on_actionApplications_triggered();
   void on_actionComputer_triggered();
   void on_actionTrash_triggered();
@@ -101,7 +104,7 @@ private:
   static void onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis);
   void loadBookmarksMenu();
   void updateUIForCurrentPage();
- 
+  void updateViewMenuForCurrentPage();
 
 private:
   Ui::MainWindow ui;

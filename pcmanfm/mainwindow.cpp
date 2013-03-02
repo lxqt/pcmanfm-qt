@@ -189,27 +189,40 @@ void MainWindow::on_actionShowHidden_triggered(bool checked) {
 }
 
 void MainWindow::on_actionByFileName_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnFileName);
+  currentPage()->sort(Fm::FolderModel::ColumnFileName, currentPage()->sortOrder());
 }
 
 void MainWindow::on_actionByMTime_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnFileMTime);
+  currentPage()->sort(Fm::FolderModel::ColumnFileMTime, currentPage()->sortOrder());
 }
 
 void MainWindow::on_actionByOwner_triggered(bool checked) {
+  currentPage()->sort(Fm::FolderModel::ColumnFileOwner, currentPage()->sortOrder());
+}
+
+void MainWindow::on_actionByFileSize_triggered(bool checked) {
+  currentPage()->sort(Fm::FolderModel::ColumnFileSize, currentPage()->sortOrder());
 }
 
 void MainWindow::on_actionByFileType_triggered(bool checked) {
+  currentPage()->sort(Fm::FolderModel::ColumnFileType, currentPage()->sortOrder());
 }
 
 void MainWindow::on_actionAscending_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnFileName, Qt::AscendingOrder);
+  currentPage()->sort(currentPage()->sortColumn(), Qt::AscendingOrder);
 }
 
 void MainWindow::on_actionDescending_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnFileName, Qt::DescendingOrder);
+  currentPage()->sort(currentPage()->sortColumn(), Qt::DescendingOrder);
 }
 
+void MainWindow::on_actionCaseSensitive_triggered(bool checked) {
+  currentPage()->setSortCaseSensitive(checked);
+}
+
+void MainWindow::on_actionFolderFirst_triggered(bool checked) {
+  currentPage()->setSortFolderFirst(checked);
+}
 
 void MainWindow::on_actionComputer_triggered() {
   FmPath* path = fm_path_new_for_uri("computer:///");
@@ -291,6 +304,39 @@ void MainWindow::onTabBarCurrentChanged(int index) {
   updateUIForCurrentPage();
 }
 
+void MainWindow::updateViewMenuForCurrentPage() {
+  TabPage* tabPage = currentPage();
+  if(tabPage) {
+    // update menus. FIXME: should we move this to another method?
+    ui.actionShowHidden->setChecked(tabPage->showHidden());
+
+    // view mode
+    QAction* modeActions[Fm::FolderView::NumViewModes];
+    modeActions[Fm::FolderView::IconMode] = ui.actionIconView;
+    modeActions[Fm::FolderView::CompactMode] = ui.actionCompactView;
+    modeActions[Fm::FolderView::DetailedListMode] = ui.actionDetailedList;
+    modeActions[Fm::FolderView::ThumbnailMode] = ui.actionThumbnailView;
+    modeActions[tabPage->viewMode()]->setChecked(true);
+
+    // sort menu
+    QAction* sortActions[Fm::FolderModel::NumOfColumns];
+    sortActions[Fm::FolderModel::ColumnFileName] = ui.actionByFileName;
+    sortActions[Fm::FolderModel::ColumnFileMTime] = ui.actionByMTime;
+    sortActions[Fm::FolderModel::ColumnFileSize] = ui.actionByFileSize;
+    sortActions[Fm::FolderModel::ColumnFileType] = ui.actionByFileType;
+    sortActions[Fm::FolderModel::ColumnFileOwner] = ui.actionByOwner;
+    sortActions[tabPage->sortColumn()]->setChecked(true);
+
+    if(tabPage->sortOrder() == Qt::AscendingOrder)
+      ui.actionAscending->setChecked(true);
+    else
+      ui.actionDescending->setChecked(true);
+
+    ui.actionCaseSensitive->setChecked(tabPage->sortCaseSensitive());
+    ui.actionFolderFirst->setChecked(tabPage->sortFolderFirst());
+  }
+}
+
 void MainWindow::updateUIForCurrentPage() {
   TabPage* tabPage = currentPage();
   if(tabPage) {
@@ -305,7 +351,7 @@ void MainWindow::updateUIForCurrentPage() {
     ui.actionGoBack->setEnabled(tabPage->canBackward());
     ui.actionGoForward->setEnabled(tabPage->canForward());
 
-    // update menus
+    updateViewMenuForCurrentPage();
   }
 }
 

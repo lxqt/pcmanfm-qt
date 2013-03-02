@@ -64,15 +64,36 @@ public:
       proxyModel_->sort(col, order);
   }
 
+  int sortColumn() {
+    return proxyModel_->sortColumn();
+  }
+
+  Qt::SortOrder sortOrder() {
+    return proxyModel_->sortOrder();
+  }
+
+  bool sortFolderFirst() {
+    return proxyModel_->folderFirst();
+  }
+  void setSortFolderFirst(bool value) {
+    proxyModel_->setFolderFirst(value);
+  }
+
+  bool sortCaseSensitive() {
+    return proxyModel_->sortCaseSensitivity();
+  }
+  void setSortCaseSensitive(bool value) {
+    proxyModel_->setSortCaseSensitivity(value ? Qt::CaseSensitive : Qt::CaseInsensitive);
+  }
+
   bool showHidden() {
-    return showHidden_;
+    return proxyModel_->showHidden();
   }
-  
+
   void setShowHidden(bool showHidden) {
-    showHidden_ = showHidden;
-    proxyModel_->setShowHidden(showHidden_);
+    proxyModel_->setShowHidden(showHidden);
   }
-  
+
   FmPath* path() {
     return folder_ ? fm_folder_get_path(folder_) : NULL;
   }
@@ -164,7 +185,6 @@ private:
   FmFolder* folder_;
   QString title_;
   QString statusText_[StatusTextNum];
-  bool showHidden_;
   Fm::BrowseHistory history_; // browsing history
 };
 
