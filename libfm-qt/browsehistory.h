@@ -47,10 +47,18 @@ public:
     path_(other.path_ ? fm_path_ref(other.path_) : NULL),
     scrollPos_(other.scrollPos_) {
   }
-  
+
   ~BrowseHistoryItem() {
     if(path_)
       fm_path_unref(path_);
+  }
+
+  BrowseHistoryItem& operator=(const BrowseHistoryItem& other) {
+    if(path_)
+      fm_path_unref(path_);
+    path_ = other.path_ ? fm_path_ref(other.path_) : NULL;
+    scrollPos_ = other.scrollPos_;
+    return *this;
   }
   
   FmPath* path() {
@@ -69,8 +77,8 @@ private:
   FmPath* path_;
   int scrollPos_;
   // TODO: we may need to store current selection as well. reserve room for furutre expansion.
-  void* reserved1;
-  void* reserved2;
+  // void* reserved1;
+  // void* reserved2;
 };
 
 class LIBFM_QT_API BrowseHistory : public QVector<BrowseHistoryItem> {

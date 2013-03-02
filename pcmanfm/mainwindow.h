@@ -92,10 +92,16 @@ protected Q_SLOTS:
 
   void onSidePaneChdirRequested(int type, FmPath* path);
 
+  void onBackForwardContextMenu(QPoint pos);
+  
+protected:
+  // void changeEvent( QEvent * event);
+
 private:
   static void onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis);
   void loadBookmarksMenu();
   void updateUIForCurrentPage();
+ 
 
 private:
   Ui::MainWindow ui;

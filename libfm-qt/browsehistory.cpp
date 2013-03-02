@@ -31,12 +31,21 @@ BrowseHistory::~BrowseHistory() {
 }
 
 void BrowseHistory::add(FmPath* path, int scrollPos) {
-  if(currentIndex_ < size() - 1) {
-    int n = size() - currentIndex_ - 1;
-    remove(currentIndex_, n);
+  int lastIndex = size() - 1;
+  if(currentIndex_ < lastIndex) {
+    // if we're not at the last item, remove items after the current one.
+    erase(begin() + currentIndex_ + 1, end());
   }
+
   if(size() + 1 > maxCount_) {
-    remove(0);
+    // if there are too many items, remove the oldest one.
+    // FIXME: what if currentIndex_ == 0? remove the last item instead?
+    if(currentIndex_ == 0)
+      remove(lastIndex);
+    else {
+      remove(0);
+      --currentIndex_;
+    }
   }
   // add a path and current scroll position to browse history
   append(BrowseHistoryItem(path, scrollPos));

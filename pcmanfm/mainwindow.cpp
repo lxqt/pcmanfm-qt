@@ -7,6 +7,7 @@
 #include <QVBoxLayout>
 #include <QMessageBox>
 #include <QSplitter>
+#include <QToolButton>
 
 #include "tabpage.h"
 #include "filelauncher.h"
@@ -28,6 +29,20 @@ MainWindow::MainWindow(FmPath* path):
 
   // setup user interface
   ui.setupUi(this);
+
+  // FIXME: why popup menus over back/forward buttons don't work when they're disabled?
+  QToolButton* forwardButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoForward));
+  forwardButton->setContextMenuPolicy(Qt::CustomContextMenu);
+  connect(forwardButton, SIGNAL(customContextMenuRequested(QPoint)), SLOT(onBackForwardContextMenu(QPoint)));
+  QToolButton* backButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoBack));
+  backButton->setContextMenuPolicy(Qt::CustomContextMenu);
+  connect(backButton, SIGNAL(customContextMenuRequested(QPoint)), SLOT(onBackForwardContextMenu(QPoint)));
+  /*
+  QToolButton* btn = new QToolButton();
+  btn->setArrowType(Qt::DownArrow);
+  btn->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Fixed);
+  ui.toolBar->insertWidget(ui.actionGoUp, btn);
+  */
 
   // tabbed browsing interface
   ui.tabBar->setDocumentMode(true);
@@ -419,6 +434,22 @@ void MainWindow::on_actionPreferences_triggered() {
   Application* app = reinterpret_cast<Application*>(qApp);
   app->preferences(QString());
 }
+
+/*
+void MainWindow::changeEvent(QEvent* event) {
+  switch(event->type()) {
+    case QEvent::StyleChange:
+      break;
+  }
+  QWidget::changeEvent(event);
+}
+*/
+
+void MainWindow::onBackForwardContextMenu(QPoint pos) {
+  // TODO: show a popup menu for browsing history here.
+  qDebug("browse history");
+}
+
 
 }
 
