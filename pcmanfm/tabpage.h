@@ -32,8 +32,7 @@
 
 namespace PCManFM {
 
-class TabPage : public QWidget
-{
+class TabPage : public QWidget {
 Q_OBJECT
 
 public:

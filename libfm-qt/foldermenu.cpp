@@ -30,6 +30,8 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
   QMenu(parent),
   view_(view) {
 
+  ProxyFolderModel* model = view_->model();
+
   createAction_ = new QAction(tr("Create &New"), this);
   addAction(createAction_);
 
@@ -61,6 +63,8 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
 
   showHiddenAction_ = new QAction(tr("Show Hidden"), this);
   addAction(showHiddenAction_);
+  showHiddenAction_->setCheckable(true);
+  showHiddenAction_->setChecked(model->showHidden());
   connect(showHiddenAction_, SIGNAL(triggered(bool)), SLOT(onShowHiddenActionTriggered(bool)));
 
   separator4_ = addSeparator();
@@ -132,16 +136,25 @@ void FolderMenu::createSortMenu() {
     actionAscending_->setChecked(true);
   else
     actionDescending_->setChecked(true);
-  
+
+  connect(actionAscending_, SIGNAL(triggered(bool)), SLOT(onSortOrderActionTriggered(bool)));
+  connect(actionDescending_, SIGNAL(triggered(bool)), SLOT(onSortOrderActionTriggered(bool)));
+
   sortMenu_->addSeparator();
   
   QAction* actionFolderFirst = new QAction(tr("Folder First"), this);
   sortMenu_->addAction(actionFolderFirst);
   actionFolderFirst->setCheckable(true);
+  if(model->folderFirst())
+    actionFolderFirst->setChecked(true);
+  connect(actionFolderFirst, SIGNAL(triggered(bool)), SLOT(onFolderFirstActionTriggered(bool)));
 
   QAction* actionCaseSensitive = new QAction(tr("Case Sensitive"), this);
   sortMenu_->addAction(actionCaseSensitive);
   actionCaseSensitive->setCheckable(true);
+  if(model->sortCaseSensitivity() == Qt::CaseSensitive)
+    actionCaseSensitive->setChecked(true);
+  connect(actionCaseSensitive, SIGNAL(triggered(bool)), SLOT(onCaseSensitiveActionTriggered(bool)));
 }
 
 void FolderMenu::onPasteActionTriggered() {
@@ -186,16 +199,24 @@ void FolderMenu::onSortOrderActionTriggered(bool checked) {
 
 void FolderMenu::onShowHiddenActionTriggered(bool checked) {
   ProxyFolderModel* model = view_->model();
-  if(model)
+  if(model) {
+    qDebug("show hidden: %d", checked);
     model->setShowHidden(checked);
+  }
 }
 
 void FolderMenu::onCaseSensitiveActionTriggered(bool checked) {
-  // TODO
+  ProxyFolderModel* model = view_->model();
+  if(model) {
+    model->setSortCaseSensitivity(checked ? Qt::CaseSensitive : Qt::CaseInsensitive);
+  }
 }
 
 void FolderMenu::onFolderFirstActionTriggered(bool checked) {
-  // TODO
+  ProxyFolderModel* model = view_->model();
+  if(model) {
+    model->setFolderFirst(checked);
+  }
 }
 
 void FolderMenu::onPropertiesActionTriggered() {

@@ -51,6 +51,11 @@ void View::onFileClicked(int type, FmFileInfo* fileInfo) {
       g_list_free(files);
     }
   }
+  else if(type == MiddleClick) {
+    if(fm_file_info_is_dir(fileInfo)) {
+      Q_EMIT openDirRequested(fm_file_info_get_path(fileInfo), OpenInNewTab);
+    }
+  }
   else if(type == ContextMenuClick) {
     FmPath* folderPath = path();
     QMenu* menu;

@@ -40,6 +40,11 @@ public:
     return showHidden_;
   }
 
+  void setFolderFirst(bool folderFirst);
+  bool folderFirst() {
+    return folderFirst_;
+  }
+
   FmFileInfo* fileInfoFromIndex(const QModelIndex& index) const;
 
 protected:
@@ -48,6 +53,7 @@ protected:
 
 private:
   bool showHidden_;
+  bool folderFirst_;
 };
 
 }

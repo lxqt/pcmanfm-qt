@@ -44,7 +44,7 @@ FolderModel::~FolderModel() {
 
 void FolderModel::setFolder(FmFolder* new_folder) {
   if(folder_) {
-    removeAll();	// remove old items
+    removeAll();        // remove old items
     g_signal_handlers_disconnect_by_func(folder_, onStartLoading, this);
     g_signal_handlers_disconnect_by_func(folder_, onFinishLoading, this);
     g_signal_handlers_disconnect_by_func(folder_, onFilesAdded, this);
@@ -168,31 +168,40 @@ QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole
 
   switch(role) {
     case Qt::ToolTipRole:
-      //break;
-    case Qt::DisplayRole:
-    {
+      return QVariant(item->displayName);
+    case Qt::DisplayRole:  {
       switch(index.column()) {
-	case ColumnFileName: {
-	  return QVariant(item->displayName);
-	}
-	case ColumnFileType: {
-	  FmMimeType* mime = fm_file_info_get_mime_type(info);
-	  const char* desc = fm_mime_type_get_desc(mime);
-	  QString str = QString::fromUtf8(desc);
-	  return QVariant(str);
-	}
-	case ColumnFileMTime: {
-	  const char* name = fm_file_info_get_disp_mtime(info);
-	  QString str = QString::fromUtf8(name);
-	  return QVariant(str);
-	}
+        case ColumnFileName: {
+          return QVariant(item->displayName);
+        }
+        case ColumnFileType: {
+          FmMimeType* mime = fm_file_info_get_mime_type(info);
+          const char* desc = fm_mime_type_get_desc(mime);
+          QString str = QString::fromUtf8(desc);
+          return QVariant(str);
+        }
+        case ColumnFileMTime: {
+          const char* name = fm_file_info_get_disp_mtime(info);
+          QString str = QString::fromUtf8(name);
+          return QVariant(str);
+        }
+        case ColumnFileSize: {
+          const char* name = fm_file_info_get_disp_size(info);
+          QString str = QString::fromUtf8(name);
+          return QVariant(str);
+          break;
+        }
+        case ColumnFileOwner: {
+          // TODO: show owner names
+          break;
+        }
       }
     }
     case Qt::DecorationRole: {
       if(index.column() == 0) {
-	// QPixmap pix = IconTheme::loadIcon(fm_file_info_get_icon(info), iconSize_);
-	return QVariant(item->icon);
-	// return QVariant(pix);
+        // QPixmap pix = IconTheme::loadIcon(fm_file_info_get_icon(info), iconSize_);
+        return QVariant(item->icon);
+        // return QVariant(pix);
       }
     }
     case FileInfoRole:
@@ -206,15 +215,21 @@ QVariant FolderModel::headerData(int section, Qt::Orientation orientation, int r
     if(orientation == Qt::Horizontal) {
       QString title;
       switch(section) {
-	case ColumnFileName:
-	  title = tr("Name");
-	  break;
-	case ColumnFileType:
-	  title = tr("Type");
-	  break;
-	case ColumnFileMTime:
-	  title = tr("Modified");
-	  break;
+        case ColumnFileName:
+          title = tr("Name");
+          break;
+        case ColumnFileType:
+          title = tr("Type");
+          break;
+        case ColumnFileSize:
+          title = tr("Size");
+          break;
+        case ColumnFileMTime:
+          title = tr("Modified");
+          break;
+        case ColumnFileOwner:
+          title = tr("Owner");
+          break;
       }
       return QVariant(title);
     }
