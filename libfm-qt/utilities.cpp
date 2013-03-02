@@ -85,7 +85,7 @@ void copyFilesToClipboard(FmPathList* files) {
   // Gnome, LXDE, and XFCE
   data->setData("x-special/gnome-copied-files", (QString("copy\n") + urilist).toUtf8());
   // The KDE way
-  data->setData("text/urilist", urilist);
+  data->setData("text/uri-list", urilist);
   // data.setData("x-kde-cut-selection", "0");
   g_free(urilist);
   clipboard->setMimeData(data);
@@ -98,7 +98,7 @@ void cutFilesToClipboard(FmPathList* files) {
   // Gnome, LXDE, and XFCE
   data->setData("x-special/gnome-copied-files", (QString("cut\n") + urilist).toUtf8());
   // The KDE way
-  data->setData("text/urilist", urilist);
+  data->setData("text/uri-list", urilist);
   data->setData("x-kde-cut-selection", "1");
   g_free(urilist);
   clipboard->setMimeData(data);

@@ -60,14 +60,22 @@ protected:
   public:
     ListView(QWidget* parent = 0) : QListView(parent) {
     }
-    void mousePressEvent(QMouseEvent* event);
+    virtual void mousePressEvent(QMouseEvent* event);
+    virtual void dragEnterEvent(QDragEnterEvent* event);
+    virtual void dragMoveEvent(QDragMoveEvent* e);
+    virtual void dragLeaveEvent(QDragLeaveEvent* e);
+    virtual void dropEvent(QDropEvent* e);
   };
 
   class TreeView : public QTreeView {
   public:
     TreeView(QWidget* parent = 0) : QTreeView(parent) {
     }
-    void mousePressEvent(QMouseEvent* event);
+    virtual void mousePressEvent(QMouseEvent* event);
+    virtual void dragEnterEvent(QDragEnterEvent* event);
+    virtual void dragMoveEvent(QDragMoveEvent* e);
+    virtual void dragLeaveEvent(QDragLeaveEvent* e);
+    virtual void dropEvent(QDropEvent* e);
   };
 
 public:
@@ -115,6 +123,11 @@ public:
 protected:
   void contextMenuEvent(QContextMenuEvent* event);
   void childMousePressEvent(QMouseEvent* event);
+  void childDragEnterEvent(QDragEnterEvent* event);
+  void childDragMoveEvent(QDragMoveEvent* e);
+  void childDragLeaveEvent(QDragLeaveEvent* e);
+  void childDropEvent(QDropEvent* e);
+
   void emitClickedAt(ClickType type, QPoint& pos);
 
   QModelIndexList selectedRows ( int column = 0 ) const;

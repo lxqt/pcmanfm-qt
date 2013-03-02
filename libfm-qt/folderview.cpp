@@ -55,10 +55,51 @@ void FolderView::ListView::mousePressEvent(QMouseEvent* event) {
   static_cast<FolderView*>(parent())->childMousePressEvent(event);
 }
 
+void FolderView::ListView::dragEnterEvent(QDragEnterEvent* event) {
+  qDebug("dragEnterEvent");
+  QListView::dragEnterEvent(event);
+  //static_cast<FolderView*>(parent())->childDragEnterEvent(event);
+}
+
+void FolderView::ListView::dragLeaveEvent(QDragLeaveEvent* e) {
+  QListView::dragLeaveEvent(e);
+  static_cast<FolderView*>(parent())->childDragLeaveEvent(e);
+}
+
+void FolderView::ListView::dragMoveEvent(QDragMoveEvent* e) {
+  QListView::dragMoveEvent(e);
+  static_cast<FolderView*>(parent())->childDragMoveEvent(e);
+}
+
+void FolderView::ListView::dropEvent(QDropEvent* e) {
+  QListView::dropEvent(e);
+  static_cast<FolderView*>(parent())->childDropEvent(e);
+}
+
 
 void FolderView::TreeView::mousePressEvent(QMouseEvent* event) {
   QTreeView::mousePressEvent(event);
   static_cast<FolderView*>(parent())->childMousePressEvent(event);
+}
+
+void FolderView::TreeView::dragEnterEvent(QDragEnterEvent* event) {
+  QTreeView::dragEnterEvent(event);
+  static_cast<FolderView*>(parent())->childDragEnterEvent(event);
+}
+
+void FolderView::TreeView::dragLeaveEvent(QDragLeaveEvent* e) {
+  QTreeView::dragLeaveEvent(e);
+  static_cast<FolderView*>(parent())->childDragLeaveEvent(e);
+}
+
+void FolderView::TreeView::dragMoveEvent(QDragMoveEvent* e) {
+  QTreeView::dragMoveEvent(e);
+  static_cast<FolderView*>(parent())->childDragMoveEvent(e);
+}
+
+void FolderView::TreeView::dropEvent(QDropEvent* e) {
+  QTreeView::dropEvent(e);
+  static_cast<FolderView*>(parent())->childDropEvent(e);
 }
 
 
@@ -146,8 +187,8 @@ void FolderView::setViewMode(ViewMode _mode) {
 
     // enable dnd
     view->setDragEnabled(true);
-    //view->setDragDropMode();
     view->setAcceptDrops(true);
+    view->setDragDropMode(QAbstractItemView::DragDrop);
 
     if(model_) {
       // FIXME: preserve selections
@@ -288,5 +329,26 @@ void FolderView::invertSelection() {
   //TODO
 }
 
+void FolderView::childDragEnterEvent(QDragEnterEvent* event) {
+  qDebug("drag enter");
+  if(event->mimeData()->hasFormat("text/uri-list")) {
+    event->accept();
+  }
+  else
+    event->ignore();
+}
+
+void FolderView::childDragLeaveEvent(QDragLeaveEvent* e) {
+  qDebug("drag leave");
+  e->accept();
+}
+
+void FolderView::childDragMoveEvent(QDragMoveEvent* e) {
+  qDebug("drag move");
+}
+
+void FolderView::childDropEvent(QDropEvent* e) {
+  qDebug("drop");
+}
 
 #include "folderview.moc"

@@ -23,6 +23,11 @@
 #include <iostream>
 #include <QtAlgorithms>
 #include <QVector>
+#include <qmimedata.h>
+#include <QMimeData>
+#include <QByteArray>
+#include "utilities.h"
+#include "fileoperation.h"
 
 using namespace Fm;
 
@@ -250,9 +255,15 @@ QModelIndex FolderModel::parent(const QModelIndex & index) const {
 
 Qt::ItemFlags FolderModel::flags(const QModelIndex& index) const {
   // FIXME: should not return same flags unconditionally for all columns
-  Qt::ItemFlags flags = Qt::ItemIsEnabled|Qt::ItemIsSelectable;
-  if(index.column() == ColumnFileName)
-    flags |= (Qt::ItemIsDragEnabled|Qt::ItemIsDropEnabled);
+  Qt::ItemFlags flags;
+  if(index.isValid()) {
+    flags = Qt::ItemIsEnabled|Qt::ItemIsSelectable;
+    if(index.column() == ColumnFileName)
+      flags |= (Qt::ItemIsDragEnabled|Qt::ItemIsDropEnabled);
+  }
+  else {
+    flags = Qt::ItemIsDropEnabled;
+  }
   return flags;
 }
 
@@ -293,71 +304,71 @@ QList<FolderModel::Item>::iterator FolderModel::findItemByName(const char* name,
 }
 
 QStringList FolderModel::mimeTypes() const {
-  return QAbstractItemModel::mimeTypes();
+  qDebug("FolderModel::mimeTypes");
+  QStringList types = QAbstractItemModel::mimeTypes();
+  // now types contains "application/x-qabstractitemmodeldatalist"
+  types << "text/uri-list";
+  // types << "x-special/gnome-copied-files";
+  return types;
 }
 
 QMimeData* FolderModel::mimeData(const QModelIndexList& indexes) const {
-  return QAbstractItemModel::mimeData(indexes);
-}
-
-
-#if 0
-// we do the sorting in ProxyFolderModel instead.
-
-bool FolderModel::Sorter::operator()(const Item &t1, const Item &t2) const {
-  // FIXME: using a switch here is inefficient.
-  // Having difffernt sorter function objects for different sort column is better.
-  bool less = false;
-  // dir before files
-  bool isdir1 = fm_file_info_is_dir(t1.info);
-  bool isdir2 = fm_file_info_is_dir(t2.info);
-  if(isdir1 != isdir2) {
-    return isdir1 ? true : false;
-  }
-
-  switch(model_->sortColumn) {
-    case ColumnName:
-      less = t1.displayName < t2.displayName;
-      break;
-    case ColumnMTime:
-      less = fm_file_info_get_mtime(t1.info) < fm_file_info_get_mtime(t2.info);
-      break;
-    case ColumnFileType:
-      break;
-  };
-  return model_->sortOrder == Qt::AscendingOrder ? less : !less;
-}
-
-void FolderModel::sort(int column, Qt::SortOrder order = Qt::AscendingOrder) {
-//  if(column != ColumnName)
-//    return;
-  sortColumn = column;
-  sortOrder = order;
-
-  Q_EMIT layoutAboutToBeChanged();
-
-  // store old position of each row
-  QVector<FmFileInfo*> old_rows(items.count());
-  QList<Item>::iterator it;
-  int row;
-  for(row = 0, it = items.begin(); it != items.end(); ++it, ++row) {
-    Item& item = *it;
-    old_rows[row] = item.info;
-  }
-
-  // sort the real data
-  qStableSort(items.begin(), items.end(), Sorter(this));
-
-  // create mapping
-  QModelIndexList from_indices, to_indices;
-  for(row = 0, it = items.begin(); it != items.end(); ++it, ++row) {
-    Item& item = *it;
-    int old_row = old_rows.indexOf(item.info);
-    to_indices.append(createIndex(row, 0, item.info));
-    from_indices.append(createIndex(old_row, 0, item.info));
-  }
-  changePersistentIndexList(from_indices, to_indices);
+  QMimeData* data = QAbstractItemModel::mimeData(indexes);
+  qDebug("FolderModel::mimeData");
+  // build a uri list
+  QByteArray urilist;
+  urilist.reserve(4096);
   
-  Q_EMIT layoutChanged();
+  QModelIndexList::const_iterator it;
+  for(it = indexes.constBegin(); it != indexes.end(); ++it) {
+    const QModelIndex index = *it;
+    Item* item = itemFromIndex(index);
+    if(item) {
+      FmPath* path = fm_file_info_get_path(item->info);
+      char* uri = fm_path_to_uri(path);
+      urilist.append(uri);
+      urilist.append('\n');
+      g_free(uri);
+    }
+  }
+  data->setData("text/uri-list", urilist);
+  
+  return data;
 }
-#endif
+
+bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent) {
+  qDebug("FolderModel::dropMimeData");
+  if(!folder_)
+    return false;
+
+  // FIXME: should we put this in dropEvent handler of FolderView instead?
+  if(data->hasUrls()) {
+    qDebug("drop action: %d", action);
+    FmPathList* srcPaths = pathListFromQUrls(data->urls());
+    switch(action) {
+      case Qt::CopyAction:
+        FileOperation::copyFiles(srcPaths, path());
+        break;
+      case Qt::MoveAction:
+        FileOperation::moveFiles(srcPaths, path());
+        break;
+      case Qt::LinkAction:
+        FileOperation::symlinkFiles(srcPaths, path());
+      default:
+        fm_path_list_unref(srcPaths);
+        return false;
+    }
+    fm_path_list_unref(srcPaths);
+    return true;
+  }
+  else if(data->hasFormat("application/x-qabstractitemmodeldatalist")) {
+    return true;
+  }
+  return QAbstractListModel::dropMimeData(data, action, row, column, parent);
+}
+
+Qt::DropActions FolderModel::supportedDropActions() const {
+  qDebug("FolderModel::supportedDropActions");
+  return Qt::CopyAction|Qt::MoveAction|Qt::LinkAction;
+}
+

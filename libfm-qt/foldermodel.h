@@ -102,8 +102,10 @@ public:
 
   Qt::ItemFlags flags(const QModelIndex & index) const;
 
-  QStringList mimeTypes() const;
-  QMimeData* mimeData(const QModelIndexList & indexes) const;
+  virtual QStringList mimeTypes() const;
+  virtual QMimeData* mimeData(const QModelIndexList & indexes) const;
+  virtual Qt::DropActions supportedDropActions() const;
+  virtual bool dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent);
 
   FmFileInfo* fileInfoFromIndex(const QModelIndex& index) const;
 
