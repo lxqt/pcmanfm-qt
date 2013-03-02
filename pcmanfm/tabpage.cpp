@@ -25,6 +25,7 @@
 #include <QApplication>
 #include <QCursor>
 #include <QMessageBox>
+#include <QScrollBar>
 #include "proxyfoldermodel.h"
 
 using namespace Fm;
@@ -37,6 +38,7 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
     folderModel_(NULL),
     showHidden_(false) {
 
+  // create proxy folder model to do item filtering
   proxyModel_ = new ProxyFolderModel();
   proxyModel_->setShowHidden(false);
 
@@ -58,7 +60,7 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
 
   verticalLayout->addWidget(folderView_);
   
-  chdir(path);
+  chdir(path, true);
 }
 
 TabPage::~TabPage() {
@@ -245,20 +247,27 @@ QString TabPage::pathName() {
   return ret;
 }
 
-void TabPage::chdir(FmPath* path) {
+void TabPage::chdir(FmPath* newPath, bool addHistory) {
   if(folder_) {
     // we're already in the specified dir
-    if(fm_path_equal(path, fm_folder_get_path(folder_)))
+    if(fm_path_equal(newPath, fm_folder_get_path(folder_)))
       return;
+
+    if(addHistory) {
+      // store current scroll pos in the browse history
+      BrowseHistoryItem& item = history_.currentItem();
+      QAbstractItemView* childView = folderView_->childView();
+      item.setScrollPos(childView->verticalScrollBar()->value());
+    }
     freeFolder();
   }
 
-  char* disp_name = fm_path_display_basename(path);
+  char* disp_name = fm_path_display_basename(newPath);
   title_ = QString::fromUtf8(disp_name);
   Q_EMIT titleChanged(title_);
   g_free(disp_name);
 
-  folder_ = fm_folder_from_path(path);
+  folder_ = fm_folder_from_path(newPath);
   g_signal_connect(folder_, "start-loading", G_CALLBACK(onFolderStartLoading), this);
   g_signal_connect(folder_, "finish-loading", G_CALLBACK(onFolderFinishLoading), this);
   g_signal_connect(folder_, "error", G_CALLBACK(onFolderError), this);
@@ -269,13 +278,19 @@ void TabPage::chdir(FmPath* path) {
   g_signal_connect(folder_, "content-changed", G_CALLBACK(onFolderContentChanged), this);
 
   if(fm_folder_is_loaded(folder_)) {
-      onFolderStartLoading(folder_, this);
-      onFolderFinishLoading(folder_, this);
-      onFolderFsInfo(folder_, this);
+    onFolderStartLoading(folder_, this);
+    onFolderFinishLoading(folder_, this);
+    onFolderFsInfo(folder_, this);
   }
   else
-      onFolderStartLoading(folder_, this);
+    onFolderStartLoading(folder_, this);
   folderModel_->setFolder(folder_);
+
+  if(addHistory) {
+    // add current path to browse history
+    QAbstractItemView* childView = folderView_->childView();
+    history_.add(path());
+  }
 }
 
 void TabPage::selectAll() {
@@ -288,6 +303,29 @@ void TabPage::invertSelection() {
 
 void TabPage::onOpenDirRequested(FmPath* path, int target) {
   Q_EMIT openDirRequested(path, target);
+}
+
+void TabPage::backward() {
+  history_.backward();
+  chdir(history_.currentPath(), false);
+}
+
+void TabPage::forward() {
+  history_.forward();
+  chdir(history_.currentPath(), false);
+}
+
+bool TabPage::canUp() {
+  return (path() != NULL && fm_path_get_parent(path()) != NULL);
+}
+
+void TabPage::up() {
+  FmPath* _path = path();
+  if(_path) {
+    FmPath* parent = fm_path_get_parent(_path);
+    if(parent)
+      chdir(parent, true);
+  }
 }
 
 };

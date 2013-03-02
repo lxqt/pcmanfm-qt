@@ -28,6 +28,7 @@
 #include "placesview.h"
 #include "proxyfoldermodel.h"
 #include "view.h"
+#include "browsehistory.h"
 
 namespace PCManFM {
 
@@ -47,7 +48,7 @@ public:
   explicit TabPage(FmPath* path, QWidget* parent = 0);
   virtual ~TabPage();
 
-  void chdir(FmPath* path);
+  void chdir(FmPath* newPath, bool addHistory = true);
 
   Fm::FolderView::ViewMode viewMode() {
     return folderView_->viewMode();
@@ -91,6 +92,10 @@ public:
     return folderView_;
   }
 
+  Fm::BrowseHistory& browseHistory() {
+    return history_;
+  }
+
   FmFileInfoList* selectedFiles() {
     return folderView_->selectedFiles();
   }
@@ -116,7 +121,22 @@ public:
     return statusText_[type];
   }
   
- 
+  bool canBackward() {
+    return history_.canBackward();
+  }
+
+  void backward();
+  
+  bool canForward() {
+    return history_.canForward();
+  }
+
+  void forward();
+
+  bool canUp();
+  
+  void up();
+  
 Q_SIGNALS:
   void statusChanged(int type, QString statusText);
   void titleChanged(QString title);
@@ -146,6 +166,7 @@ private:
   QString title_;
   QString statusText_[StatusTextNum];
   bool showHidden_;
+  Fm::BrowseHistory history_; // browsing history
 };
 
 }

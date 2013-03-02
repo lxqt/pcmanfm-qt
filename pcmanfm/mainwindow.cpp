@@ -23,7 +23,10 @@ using namespace Fm;
 
 namespace PCManFM {
 
-MainWindow::MainWindow(FmPath* path) {
+MainWindow::MainWindow(FmPath* path):
+  QMainWindow() {
+
+  // setup user interface
   ui.setupUi(this);
 
   // tabbed browsing interface
@@ -94,8 +97,8 @@ MainWindow::~MainWindow() {
 void MainWindow::chdir(FmPath* path) {
   TabPage* page = currentPage();
   if(page) {
-    page->chdir(path);
-    pathEntry->setText(page->pathName());
+    page->chdir(path, true);
+    updateUIForCurrentPage();
   }
 }
 
@@ -119,11 +122,26 @@ void MainWindow::onPathEntryReturnPressed() {
 }
 
 void MainWindow::on_actionGoUp_triggered() {
-  FmPath* path = currentPage()->path();
-  if(path) {
-    FmPath* parent = fm_path_get_parent(path);
-    if(parent)
-      chdir(parent);
+  TabPage* page = currentPage();
+  if(page) {
+    page->up();
+    updateUIForCurrentPage();
+  }
+}
+
+void MainWindow::on_actionGoBack_triggered() {
+  TabPage* page = currentPage();
+  if(page) {
+    page->backward();
+    updateUIForCurrentPage();
+  }
+}
+
+void MainWindow::on_actionGoForward_triggered() {
+  TabPage* page = currentPage();
+  if(page) {
+    page->forward();
+    updateUIForCurrentPage();
   }
 }
 
@@ -255,6 +273,10 @@ void MainWindow::onTabBarCloseRequested(int index) {
 
 void MainWindow::onTabBarCurrentChanged(int index) {
   ui.stackedWidget->setCurrentIndex(index);
+  updateUIForCurrentPage();
+}
+
+void MainWindow::updateUIForCurrentPage() {
   TabPage* tabPage = currentPage();
   if(tabPage) {
     setWindowTitle(tabPage->title());
@@ -262,8 +284,16 @@ void MainWindow::onTabBarCurrentChanged(int index) {
     ui.statusbar->showMessage(tabPage->statusText());
     fsInfoLabel->setText(tabPage->statusText(TabPage::StatusTextFSInfo));
     tabPage->folderView()->childView()->setFocus();
+
+    // update back/forward/up toolbar buttons
+    ui.actionGoUp->setEnabled(tabPage->canUp());
+    ui.actionGoBack->setEnabled(tabPage->canBackward());
+    ui.actionGoForward->setEnabled(tabPage->canForward());
+
+    // update menus
   }
 }
+
 
 void MainWindow::onStackedWidgetWidgetRemoved(int index) {
   // need to remove associated tab from tabBar

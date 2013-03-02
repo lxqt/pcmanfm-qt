@@ -50,6 +50,8 @@ protected Q_SLOTS:
   void on_actionInvertSelection_triggered();
   void on_actionPreferences_triggered();
   
+  void on_actionGoBack_triggered();
+  void on_actionGoForward_triggered();
   void on_actionGoUp_triggered();
   void on_actionHome_triggered();
   void on_actionReload_triggered();
@@ -93,6 +95,7 @@ protected Q_SLOTS:
 private:
   static void onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis);
   void loadBookmarksMenu();
+  void updateUIForCurrentPage();
 
 private:
   Ui::MainWindow ui;
