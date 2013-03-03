@@ -312,12 +312,23 @@ void MainWindow::updateViewMenuForCurrentPage() {
     ui.actionShowHidden->setChecked(tabPage->showHidden());
 
     // view mode
-    QAction* modeActions[Fm::FolderView::NumViewModes];
-    modeActions[Fm::FolderView::IconMode] = ui.actionIconView;
-    modeActions[Fm::FolderView::CompactMode] = ui.actionCompactView;
-    modeActions[Fm::FolderView::DetailedListMode] = ui.actionDetailedList;
-    modeActions[Fm::FolderView::ThumbnailMode] = ui.actionThumbnailView;
-    modeActions[tabPage->viewMode()]->setChecked(true);
+    QAction* modeAction = NULL;
+    switch(tabPage->viewMode()) {
+      case Fm::FolderView::IconMode:
+        modeAction = ui.actionIconView;
+        break;
+      case Fm::FolderView::CompactMode:
+        modeAction = ui.actionCompactView;
+        break;
+      case Fm::FolderView::DetailedListMode:
+        modeAction = ui.actionDetailedList;
+        break;
+      case Fm::FolderView::ThumbnailMode:
+        modeAction = ui.actionThumbnailView;
+        break;
+    }
+    Q_ASSERT(modeAction != NULL);
+    modeAction->setChecked(true);
 
     // sort menu
     QAction* sortActions[Fm::FolderModel::NumOfColumns];
@@ -327,7 +338,6 @@ void MainWindow::updateViewMenuForCurrentPage() {
     sortActions[Fm::FolderModel::ColumnFileType] = ui.actionByFileType;
     sortActions[Fm::FolderModel::ColumnFileOwner] = ui.actionByOwner;
     sortActions[tabPage->sortColumn()]->setChecked(true);
-
     if(tabPage->sortOrder() == Qt::AscendingOrder)
       ui.actionAscending->setChecked(true);
     else
