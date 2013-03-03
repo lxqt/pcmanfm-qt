@@ -30,7 +30,7 @@ link_directories(
   ${LIBFM_LIBRARY_DIRS}
 )
 
-set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive -fvisibility=hidden")
+set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive -fvisibility=hidden -fno-exceptions")
 
 #set(qmodeltest_SRCS
 #  qmodeltest/modeltest.cpp
