@@ -28,6 +28,8 @@
 namespace PCManFM
 {
 
+class Settings;
+
 class PreferencesDialog : public QDialog {
 Q_OBJECT
 
@@ -35,6 +37,18 @@ public:
   // activePage is the name of page to select (general, display, advanced...)
   explicit PreferencesDialog(QString activePage = QString(), QWidget* parent = 0);
   virtual ~PreferencesDialog();
+
+private:
+  void initIconThemes(Settings& settings);
+  void initArchivers(Settings& settings);
+  void initUiPage(Settings& settings);
+  void initBehaviorPage(Settings& settings);
+  void initThumbnailPage(Settings& settings);
+  void initVolumePage(Settings& settings);
+  void initAdvancedPage(Settings& settings);
+  
+  void initFromSettings();
+  void applySettings();
 
 private:
   Ui::PreferencesDialog ui;
