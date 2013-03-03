@@ -38,6 +38,8 @@ public:
   explicit PreferencesDialog(QString activePage = QString(), QWidget* parent = 0);
   virtual ~PreferencesDialog();
 
+  virtual void accept();
+  
 private:
   void initIconThemes(Settings& settings);
   void initArchivers(Settings& settings);
@@ -46,7 +48,13 @@ private:
   void initThumbnailPage(Settings& settings);
   void initVolumePage(Settings& settings);
   void initAdvancedPage(Settings& settings);
-  
+
+  void applyUiPage(Settings& settings);
+  void applyBehaviorPage(Settings& settings);
+  void applyThumbnailPage(Settings& settings);
+  void applyVolumePage(Settings& settings);
+  void applyAdvancedPage(Settings& settings);
+
   void initFromSettings();
   void applySettings();
 

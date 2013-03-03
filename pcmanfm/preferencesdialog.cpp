@@ -21,8 +21,17 @@
 #include "preferencesdialog.h"
 #include "application.h"
 #include "settings.h"
+#include <QDir>
+#include <QHash>
+#include <QStringBuilder>
+
+#include "folderview.h"
 
 using namespace PCManFM;
+
+static int bigIconSizes[] = {96, 72, 64, 48, 36, 32, 24, 20};
+static int smallIconSizes[] = {48, 36, 32, 24, 20, 16, 12};
+static int thumbnailIconSizes[] = {256, 224, 192, 160, 128, 96, 64};
 
 PreferencesDialog::PreferencesDialog (QString activePage, QWidget* parent):
   QDialog (parent) {
@@ -42,28 +51,126 @@ PreferencesDialog::PreferencesDialog (QString activePage, QWidget* parent):
 PreferencesDialog::~PreferencesDialog() {
 }
 
+static findIconThemesInDir(QHash<QString, QString>& iconThemes, QString dirName) {
+  QDir dir(dirName);
+  QStringList subDirs = dir.entryList(QDir::AllDirs);
+  GKeyFile* kf = g_key_file_new();
+  Q_FOREACH(QString subDir, subDirs) {
+    QString indexFile = dirName % '/' % subDir % "/index.theme";
+    if(g_key_file_load_from_file(kf, indexFile.toLocal8Bit().constData(), 0, NULL)) {
+      // FIXME: skip hidden ones
+      // icon theme must have this key, so it has icons if it has this key
+      // otherwise, it might be a cursor theme or any other kind of theme.
+      if(g_key_file_has_key(kf, "Icon Theme", "Directories", NULL)) {
+        char* dispName = g_key_file_get_locale_string(kf, "Icon Theme", "Name", NULL, NULL);
+        // char* comment = g_key_file_get_locale_string(kf, "Icon Theme", "Comment", NULL, NULL);
+        iconThemes[subDir] = dispName;
+        g_free(dispName);
+      }
+    }
+  }
+  g_key_file_free(kf);
+}
+
 void PreferencesDialog::initIconThemes(Settings& settings) {
-  // TODO: load xdg icon themes and select the current one
+  // TODO: add auto-detection from xsettings, etc.
+
+  // load xdg icon themes and select the current one
+  QHash<QString, QString> iconThemes;
+  // user customed icon themes
+  findIconThemesInDir(iconThemes, QString(g_get_home_dir()) % "/.icons");
+
+  // search for icons in system data dir
+  const char* const* dataDirs = g_get_system_data_dirs();
+  for(const char* const* dataDir = dataDirs; *dataDir; ++dataDir) {
+    findIconThemesInDir(iconThemes, QString(*dataDir) % "/icons");
+  }
+
+  iconThemes.remove("hicolor"); // remove hicolor, which is only a fallback
+  QHash<QString, QString>::const_iterator it;
+  for(it = iconThemes.begin(); it != iconThemes.end(); ++it) {
+    ui.iconTheme->addItem(it.value(), it.key());
+  }
+  ui.iconTheme->model()->sort(0); // sort the list of icon theme names
+
+  // select current theme name
+  int n = ui.iconTheme->count();
+  for(int i = 0; i < n; ++i) {
+    QVariant itemData = ui.iconTheme->itemData(i);
+    if(itemData == settings.iconThemeName()) {
+      break;
+    }
+  }
+  if(i >= n)
+    i = 0;
+  ui.iconTheme->setCurrentIndex(i);
 }
 
 void PreferencesDialog::initArchivers(Settings& settings) {
   const GList* allArchivers = fm_archiver_get_all();
-  for(const GList* l = allArchivers; l; l = l->next) {
+  int i = 0;
+  for(const GList* l = allArchivers; l; l = l->next, ++i) {
     FmArchiver* archiver = reinterpret_cast<FmArchiver*>(l->data);
     ui.archiver->addItem(archiver->program);
+    if(archiver->program == settings.archiver())
+      ui.archiver->setCurrentIndex(i);
   }
 }
 
 void PreferencesDialog::initUiPage(Settings& settings) {
   initIconThemes(settings);
   // icon sizes
+  int i;
+  for(i = 0; i < G_N_ELEMENTS(bigIconSizes); ++i) {
+    int size = bigIconSizes[i];
+    ui.bigIconSize->addItem(QString("%1 x %1").arg(size), size);
+    if(settings.bigIconSize() == size)
+      ui.bigIconSize->setCurrentIndex(i);
+  }
+  for(i = 0; i < G_N_ELEMENTS(smallIconSizes); ++i) {
+    int size = smallIconSizes[i];
+    QString text = QString("%1 x %1").arg(size);
+    ui.smallIconSize->addItem(text, size);
+    if(settings.smallIconSize() == size)
+      ui.smallIconSize->setCurrentIndex(i);
+
+    ui.sidePaneIconSize->addItem(text, size);
+    if(settings.sidePaneIconSize() == size)
+      ui.sidePaneIconSize->setCurrentIndex(i);
+  }
+  for(i = 0; i < G_N_ELEMENTS(thumbnailIconSizes); ++i) {
+    int size = thumbnailIconSizes[i];
+    ui.thumbnailIconSize->addItem(QString("%1 x %1").arg(size), size);
+    if(settings.thumbnailIconSize() == size)
+      ui.thumbnailIconSize->setCurrentIndex(i);
+  }
 
   ui.alwaysShowTabs->setChecked(settings.alwaysShowTabs());
-  // ui.hideTabClose->setChecked(settings.);
+  ui.showTabClose->setChecked(settings.showTabClose());
+  ui.windowWidth->setValue(settings.windowWidth());
+  ui.windowHeight->setValue(settings.windowHeight());
 }
 
 void PreferencesDialog::initBehaviorPage(Settings& settings) {
   ui.singleClick->setChecked(settings.singleClick());
+
+  ui.viewMode->addItem(tr("Icon View"), (int)Fm::FolderView::IconMode);
+  ui.viewMode->addItem(tr("Compact Icon View"), (int)Fm::FolderView::CompactMode);
+  ui.viewMode->addItem(tr("Thumbnail View"), (int)Fm::FolderView::ThumbnailMode);
+  ui.viewMode->addItem(tr("Detailed List View"), (int)Fm::FolderView::DetailedListMode);
+  Fm::FolderView::ViewMode modes[] = {
+    Fm::FolderView::IconMode,
+    Fm::FolderView::CompactMode,
+    Fm::FolderView::ThumbnailMode,
+    Fm::FolderView::DetailedListMode   
+  };
+  for(int i = 0; i < G_N_ELEMENTS(modes); ++i) {
+    if(modes[i] = settings.viewMode()) {
+      ui.viewMode->setCurrentIndex(i);
+      break;
+    }
+  } 
+
   // ui.viewMode->setCurrentIndex(settings.viewMode());
   ui.configmDelete->setChecked(settings.confirmDelete());
   ui.useTrash->setChecked(settings.useTrash());
@@ -71,14 +178,16 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
 
 void PreferencesDialog::initThumbnailPage(Settings& settings) {
   // ui.showThumbnails->setChecked(settings.showThumbnails());
+  // TODO
 }
 
 void PreferencesDialog::initVolumePage(Settings& settings) {
+  // TODO
 }
 
 void PreferencesDialog::initAdvancedPage(Settings& settings) {
   initArchivers(settings);
-  // ui.terminalCommand->setText(settings.terminalCommand());
+  ui.terminalCommand->setText(settings.terminalCommand());
   ui.suCommand->setText(settings.suCommand());
   // ui.siUnit->setChecked(settings.siUnit());
 }
@@ -92,9 +201,57 @@ void PreferencesDialog::initFromSettings() {
   initAdvancedPage(settings);
 }
 
+void PreferencesDialog::applyUiPage(Settings& settings) {
+  settings.setIconThemeName(ui.iconTheme->itemData(ui.iconTheme->currentIndex()).toString());
+  settings.setBigIconSize(ui.bigIconSize->itemData(ui.bigIconSize->currentIndex()).toInt());
+  settings.setSmallIconSize(ui.smallIconSize->itemData(ui.smallIconSize->currentIndex()).toInt());
+  settings.setThumbnailIconSize(ui.thumbnailIconSize->itemData(ui.thumbnailIconSize->currentIndex()).toInt());
+  settings.setSidePaneIconSize(ui.sidePaneIconSize->itemData(ui.sidePaneIconSize->currentIndex()).toInt());
+  settings.setAlwaysShowTabs(ui.alwaysShowTabs->isChecked());
+  settings.setShowTabClose(ui.showTabClose->isChecked());
+  settings.setWindowWidth(ui.windowWidth->value());
+  settings.setWindowHeight(ui.windowHeight->value());
+}
+
+void PreferencesDialog::applyBehaviorPage(Settings& settings) {
+  settings.setSingleClick(ui.singleClick->isChecked());
+  // FIXME: bug here?
+  Fm::FolderView::ViewMode mode = ui.viewMode->itemData(ui.viewMode->currentIndex()).toInt();
+  settings.setViewMode(mode);
+  settings.setConfirmDelete(ui.configmDelete->isChecked());
+  settings.setUseTrash(ui.useTrash->isChecked());
+}
+
+void PreferencesDialog::applyThumbnailPage(Settings& settings) {
+
+}
+
+void PreferencesDialog::applyVolumePage(Settings& settings) {
+
+}
+
+void PreferencesDialog::applyAdvancedPage(Settings& settings) {
+  settings.setTerminalCommand(ui.terminalCommand->text());
+  settings.setSuCommand(ui.suCommand->text());
+  settings.setArchiver(ui.archiver->itemData(ui.archiver->currentIndex()).toString());
+  settings.setSiUnit(ui.siUnit->isChecked());
+}
+
+
 void PreferencesDialog::applySettings() {
   Settings& settings = static_cast<Application*>(qApp)->settings();
-  
+  applyUiPage(settings);
+  applyBehaviorPage(settings);
+  applyThumbnailPage(settings);
+  applyVolumePage(settings);
+  applyAdvancedPage(settings);
+
+  settings.save();
+}
+
+void PreferencesDialog::accept() {
+  QDialog::accept();
+  applySettings();
 }
 
 

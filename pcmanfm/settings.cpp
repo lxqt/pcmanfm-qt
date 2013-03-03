@@ -31,6 +31,7 @@ Settings::Settings():
   iconThemeName_(),
   bookmarkOpenMethod_(0),
   suCommand_(),
+  terminalCommand_(),
   mountOnStartup_(true),
   mountRemovable_(true),
   autoRun_(true),
@@ -45,6 +46,7 @@ Settings::Settings():
   desktopSortOrder_(Qt::AscendingOrder),
   desktopSortColumn_(Fm::FolderModel::ColumnFileName),
   alwaysShowTabs_(true),
+  showTabClose_(true),
   windowWidth_(640),
   windowHeight_(480),
   splitterPos_(120),
@@ -59,6 +61,8 @@ Settings::Settings():
   confirmDelete_(true),
   // bool thumbnailLocal_;
   // bool thumbnailMax;
+  archiver_(),
+  siUnit_(false),
   bigIconSize_(48),
   smallIconSize_(24),
   sidePaneIconSize_(24),
@@ -100,14 +104,17 @@ bool Settings::loadFile(QString filePath) {
     iconThemeName_ = "elementary"; // fallback icon theme name
   }
   suCommand_ = settings.value("SuCommand").toString();
+  setTerminalCommand(settings.value("TerminalCommand").toString());
+  setArchiver(settings.value("Archiver").toString());
+  setSiUnit(settings.value("SIUnit", false).toBool());
   settings.endGroup();
 
   settings.beginGroup("Behavior");
   bookmarkOpenMethod_ = settings.value("BookmarkOpenMethod").toInt();
   // settings for use with libfm
-  useTrash_ = settings.value("UseTrash").toBool();
-  singleClick_ = settings.value("SingleClick").toBool();
-  confirmDelete_ = settings.value("ConfirmDelete").toBool();
+  useTrash_ = settings.value("UseTrash", true).toBool();
+  singleClick_ = settings.value("SingleClick", false).toBool();
+  confirmDelete_ = settings.value("ConfirmDelete", true).toBool();
   // bool thumbnailLocal_;
   // bool thumbnailMax;
   settings.endGroup();
@@ -115,40 +122,42 @@ bool Settings::loadFile(QString filePath) {
   settings.beginGroup("Desktop");
   wallpaperMode_ = settings.value("WallpaperMode").toInt();
   wallpaper_ = settings.value("Wallpaper").toString();
-  desktopBgColor_.setNamedColor(settings.value("BgColor").toString());
-  desktopFgColor_.setNamedColor(settings.value("FgColor").toString());
-  desktopShadowColor_.setNamedColor(settings.value("ShadowColor").toString());
+  desktopBgColor_.setNamedColor(settings.value("BgColor", "#000000").toString());
+  desktopFgColor_.setNamedColor(settings.value("FgColor", "#ffffff").toString());
+  desktopShadowColor_.setNamedColor(settings.value("ShadowColor", "#000000").toString());
   // desktop_font=Sans 12
   // bool showWmMenu;
-  desktopShowHidden_ = settings.value("ShowHidden").toBool();
-  desktopSortOrder_ = settings.value("SortOrder").toInt();
-  desktopSortColumn_ = settings.value("SortColumn").toInt();
+  desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
+  // FIXME: we need to convert these values to strings
+  desktopSortOrder_ = settings.value("SortOrder", Qt::AscendingOrder).toInt();
+  desktopSortColumn_ = settings.value("SortColumn", Fm::FolderModel::ColumnFileName).toInt();
   settings.endGroup();
 
   settings.beginGroup("Volume");
-  mountOnStartup_ = settings.value("MountOnStartup").toBool();
-  mountRemovable_ = settings.value("MountRemovable").toBool();
-  autoRun_ = settings.value("AutoRun").toBool();
+  mountOnStartup_ = settings.value("MountOnStartup", true).toBool();
+  mountRemovable_ = settings.value("MountRemovable", true).toBool();
+  autoRun_ = settings.value("AutoRun", true).toBool();
   settings.endGroup();
 
   settings.beginGroup("FolderView");
-  viewMode_ = settings.value("Mode").toInt();
-  showHidden_ = settings.value("ShowHidden").toBool();
-  sortOrder_ = settings.value("SortOrder").toInt();
-  sortColumn_ = settings.value("SortColumn").toInt();
+  viewMode_ = settings.value("Mode", Fm::FolderView::IconMode).toInt();
+  showHidden_ = settings.value("ShowHidden", false).toBool();
+  sortOrder_ = settings.value("SortOrder", Qt::AscendingOrder).toInt();
+  sortColumn_ = settings.value("SortColumn", Fm::FolderModel::ColumnFileName).toInt();
 
   // override config in libfm's FmConfig
-  bigIconSize_ = settings.value("BigIconSize").toInt();
-  smallIconSize_ = settings.value("SmallIconSize_").toInt();
-  sidePaneIconSize_ = settings.value("SidePaneIconSize_").toInt();
-  thumbnailIconSize_ = settings.value("ThumbnailIconSize_").toInt();
+  bigIconSize_ = settings.value("BigIconSize", 48).toInt();
+  smallIconSize_ = settings.value("SmallIconSize_", 24).toInt();
+  sidePaneIconSize_ = settings.value("SidePaneIconSize_", 24).toInt();
+  thumbnailIconSize_ = settings.value("ThumbnailIconSize_", 128).toInt();
   settings.endGroup();
   
   settings.beginGroup("Window");
-  windowWidth_ = settings.value("Width").toInt();
-  windowHeight_ = settings.value("Height").toInt();
-  alwaysShowTabs_ = settings.value("AlwaysShowTabs").toBool();
-  splitterPos_ = settings.value("SplitterPos").toInt();
+  windowWidth_ = settings.value("Width", 640).toInt();
+  windowHeight_ = settings.value("Height", 680).toInt();
+  alwaysShowTabs_ = settings.value("AlwaysShowTabs", true).toBool();
+  showTabClose_ = settings.value("ShowTabClose", true).toBool();
+  splitterPos_ = settings.value("SplitterPos", 150).toInt();
   sidePaneMode_ = settings.value("SidePaneMode").toInt();
   settings.endGroup();
 
@@ -160,6 +169,9 @@ bool Settings::saveFile(QString filePath) {
   settings.beginGroup("System");
   settings.setValue("IconThemeName", iconThemeName_);
   settings.setValue("SuCommand", suCommand_);
+  settings.setValue("TerminalCommand", terminalCommand_);
+  settings.setValue("Archiver", archiver_);
+  settings.setValue("SIUnit", siUnit_);
   settings.endGroup();
 
   settings.beginGroup("Behavior");
@@ -199,15 +211,16 @@ bool Settings::saveFile(QString filePath) {
 
   // override config in libfm's FmConfig
   settings.setValue("BigIconSize", bigIconSize_);
-  settings.setValue("SmallIconSize_", smallIconSize_);
-  settings.setValue("SidePaneIconSize_", sidePaneIconSize_);
-  settings.setValue("ThumbnailIconSize_", thumbnailIconSize_);
+  settings.setValue("SmallIconSize", smallIconSize_);
+  settings.setValue("SidePaneIconSize", sidePaneIconSize_);
+  settings.setValue("ThumbnailIconSize", thumbnailIconSize_);
   settings.endGroup();
   
   settings.beginGroup("Window");
   settings.setValue("Width", windowWidth_);
   settings.setValue("Height", windowHeight_);
   settings.setValue("AlwaysShowTabs", alwaysShowTabs_);
+  settings.setValue("ShowTabClose", showTabClose_);
   settings.setValue("SplitterPos", splitterPos_);
   settings.setValue("SidePaneMode", sidePaneMode_);
   settings.endGroup();

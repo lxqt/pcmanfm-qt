@@ -62,13 +62,35 @@ public:
   void setBookmarkOpenMethod(int bookmarkOpenMethod) {
     bookmarkOpenMethod_ = bookmarkOpenMethod;
   }
-
+  
   QString suCommand() const {
     return suCommand_;
   }
   
   void setSuCommand(QString suCommand) {
     suCommand_ = suCommand;
+  }
+
+  QString terminalCommand() {
+    return terminalCommand_;
+  }
+
+  void setTerminalCommand(QString terminalCommand) {
+    terminalCommand_ = terminalCommand;
+    // override the settings in libfm FmConfig.
+    g_free(fm_config->terminal);
+    fm_config->terminal = g_strdup(terminalCommand_.toLocal8Bit().constData());
+  }
+
+  QString archiver() const {
+    return archiver_;
+  }
+
+  void setArchiver(QString archiver) {
+    archiver_ = archiver;
+    // override libfm FmConfig
+    g_free(fm_config->archiver);
+    fm_config->archiver = g_strdup(archiver_.toLocal8Bit().constData());
   }
 
   bool mountOnStartup() const {
@@ -165,9 +187,17 @@ public:
   bool alwaysShowTabs() const {
     return alwaysShowTabs_;
   }
-
+  
   void setAlwaysShowTabs(bool alwaysShowTabs) {
     alwaysShowTabs_ = alwaysShowTabs;
+  }
+
+  bool showTabClose() const {
+    return showTabClose_;
+  }
+  
+  void setShowTabClose(bool showTabClose) {
+    showTabClose_ = showTabClose;
   }
 
   int windowWidth() const {
@@ -293,6 +323,16 @@ public:
   void setThumbnailIconSize(int thumbnailIconSize) {
     thumbnailIconSize_ = thumbnailIconSize;
   }
+
+  bool siUnit() {
+    return siUnit_;
+  }
+
+  void setSiUnit(bool siUnit) {
+    siUnit_ = siUnit;
+    // override libfm FmConfig settings. FIXME: should we do this?
+    fm_config->si_unit = (gboolean)siUnit_;
+  }
   
 private:
   QString profileName_;
@@ -302,6 +342,7 @@ private:
 
   int bookmarkOpenMethod_;
   QString suCommand_;
+  QString terminalCommand_;
   bool mountOnStartup_;
   bool mountRemovable_;
   bool autoRun_;
@@ -318,6 +359,7 @@ private:
   Fm::FolderModel::ColumnId desktopSortColumn_;
 
   bool alwaysShowTabs_;
+  bool showTabClose_;
   int windowWidth_;
   int windowHeight_;
   int splitterPos_;
@@ -334,6 +376,8 @@ private:
   bool confirmDelete_;
   // bool thumbnailLocal_;
   // bool thumbnailMax;
+  QString archiver_;
+  bool siUnit_;
 
   int bigIconSize_;
   int smallIconSize_;

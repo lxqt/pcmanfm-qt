@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>585</width>
-    <height>350</height>
+    <width>595</width>
+    <height>375</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -157,17 +157,45 @@
             <property name="fieldGrowthPolicy">
              <enum>QFormLayout::ExpandingFieldsGrow</enum>
             </property>
-            <item row="0" column="0">
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>Default width of new windows:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="windowWidth">
+              <property name="maximum">
+               <number>32768</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="windowHeight">
+              <property name="maximum">
+               <number>32768</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>Default height of new windows:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="2">
              <widget class="QCheckBox" name="alwaysShowTabs">
               <property name="text">
                <string>Always show the tab bar</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="0">
-             <widget class="QCheckBox" name="hideTabClose">
+            <item row="1" column="0" colspan="2">
+             <widget class="QCheckBox" name="showTabClose">
               <property name="text">
-               <string>Hide 'Close tab' buttons</string>
+               <string>Show 'Close' buttons on tabs	</string>
               </property>
              </widget>
             </item>
@@ -190,14 +218,11 @@
         </layout>
        </widget>
        <widget class="QWidget" name="behaviorPage">
-        <layout class="QFormLayout" name="formLayout_6">
-         <property name="fieldGrowthPolicy">
-          <enum>QFormLayout::ExpandingFieldsGrow</enum>
-         </property>
-         <item row="0" column="0" colspan="2">
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
           <widget class="QGroupBox" name="groupBox_4">
            <property name="title">
-            <string>Folder View</string>
+            <string>Browsing</string>
            </property>
            <layout class="QFormLayout" name="formLayout_5">
             <item row="0" column="0" colspan="2">
@@ -215,49 +240,53 @@
              </widget>
             </item>
             <item row="1" column="1">
-             <widget class="QComboBox" name="viewMode">
-              <item>
-               <property name="text">
-                <string>Icon View</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Compact View</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Thumbnail View</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Detailed List View</string>
-               </property>
-              </item>
+             <widget class="QComboBox" name="viewMode"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_6">
+           <property name="title">
+            <string>File Operations</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout_6">
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="configmDelete">
+              <property name="text">
+               <string>Confirm before deleting files</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QCheckBox" name="useTrash">
+              <property name="text">
+               <string>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</string>
+              </property>
              </widget>
             </item>
            </layout>
           </widget>
          </item>
-         <item row="1" column="0" colspan="2">
-          <widget class="QCheckBox" name="configmDelete">
-           <property name="text">
-            <string>Confirm before deleting files</string>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
            </property>
-          </widget>
-         </item>
-         <item row="2" column="0" colspan="2">
-          <widget class="QCheckBox" name="useTrash">
-           <property name="text">
-            <string>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</string>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
            </property>
-          </widget>
+          </spacer>
          </item>
         </layout>
        </widget>
        <widget class="QWidget" name="thumbnailPage">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <layout class="QFormLayout" name="formLayout_3">
          <property name="fieldGrowthPolicy">
           <enum>QFormLayout::ExpandingFieldsGrow</enum>
@@ -289,6 +318,9 @@
         </layout>
        </widget>
        <widget class="QWidget" name="volumePage">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <layout class="QVBoxLayout" name="verticalLayout_4">
          <item>
           <widget class="QGroupBox" name="groupBox_3">
@@ -304,14 +336,14 @@
              </widget>
             </item>
             <item row="1" column="0">
-             <widget class="QCheckBox" name="checkBox_4">
+             <widget class="QCheckBox" name="mountRemovable">
               <property name="text">
                <string>Mount removable media automatically when they are inserted</string>
               </property>
              </widget>
             </item>
             <item row="2" column="0">
-             <widget class="QCheckBox" name="checkBox_5">
+             <widget class="QCheckBox" name="autoRun">
               <property name="text">
                <string>Show available options for removable media when they are inserted</string>
               </property>
@@ -389,6 +421,9 @@
          </item>
          <item>
           <widget class="QCheckBox" name="siUnit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="text">
             <string>Use SI decimal prefixes instead of IEC binary prefixes</string>
            </property>

@@ -21,13 +21,13 @@
 #ifndef FM_SIDEPANE_H
 #define FM_SIDEPANE_H
 
-#include <QFrame>
+#include <QWidget>
 #include <QVBoxLayout>
 #include "placesview.h"
 
 namespace Fm {
 
-class LIBFM_QT_API SidePane : public QFrame {
+class LIBFM_QT_API SidePane : public QWidget {
 Q_OBJECT
 
 public:
