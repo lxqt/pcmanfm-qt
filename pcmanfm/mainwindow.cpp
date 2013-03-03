@@ -180,7 +180,9 @@ void MainWindow::on_actionNewTab_triggered() {
 
 void MainWindow::on_actionNewWin_triggered() {
   FmPath* path = currentPage()->path();
+  Application* app = static_cast<Application*>(qApp);
   MainWindow* newWin = new MainWindow(path);
+  newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
   newWin->show();
 }
 
@@ -411,7 +413,7 @@ void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
       Application* app = static_cast<Application*>(qApp);
       MainWindow* newWin = new MainWindow(path);
       // TODO: apply window size from app->settings
-      newWin->resize(640, 480);
+      newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
       newWin->show();
       break;
     }

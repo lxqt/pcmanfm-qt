@@ -41,7 +41,8 @@ Application::Application(int& argc, char** argv):
   profileName("default"),
   daemonMode_(false),
   desktopWindows_(),
-  enableDesktopManager_(false) {
+  enableDesktopManager_(false),
+  preferencesDialog_() {
 
   // QDBusConnection::sessionBus().registerObject("/org/pcmanfm/Application", this);
   QDBusConnection dbus = QDBusConnection::sessionBus();
@@ -337,14 +338,19 @@ void Application::launchFiles(QStringList paths, bool inNewWindow) {
     fm_path_unref(path);
   }
 
-  mainWin->resize(640, 480);
+  mainWin->resize(settings_.windowWidth(), settings_.windowHeight());
   mainWin->show();
 }
 
 void Application::preferences(QString page) {
   // open preference dialog
-  PreferencesDialog* dlg = new PreferencesDialog(page);
-  dlg->show();
+  if(!preferencesDialog_) {
+    preferencesDialog_ = new PreferencesDialog(page);
+  }
+  else {
+    // TODO: set page
+  }
+  preferencesDialog_.data()->show();
 }
 
 void Application::setWallpaper(QString path, QString modeString) {

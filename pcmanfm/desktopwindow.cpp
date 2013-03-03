@@ -99,8 +99,8 @@ void DesktopWindow::onOpenDirRequested(FmPath* path, int target) {
   // open in new window unconditionally.
   Application* app = static_cast<Application*>(qApp);
   MainWindow* newWin = new MainWindow(path);
-  // TODO: apply window size from app->settings
-  newWin->resize(640, 480);
+  // apply window size from app->settings
+  newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
   newWin->show();
 }
 

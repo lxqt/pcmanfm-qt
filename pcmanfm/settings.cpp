@@ -154,7 +154,7 @@ bool Settings::loadFile(QString filePath) {
   
   settings.beginGroup("Window");
   windowWidth_ = settings.value("Width", 640).toInt();
-  windowHeight_ = settings.value("Height", 680).toInt();
+  windowHeight_ = settings.value("Height", 480).toInt();
   alwaysShowTabs_ = settings.value("AlwaysShowTabs", true).toBool();
   showTabClose_ = settings.value("ShowTabClose", true).toBool();
   splitterPos_ = settings.value("SplitterPos", 150).toInt();

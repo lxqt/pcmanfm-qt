@@ -25,10 +25,12 @@
 #include "settings.h"
 #include "../libfm-qt/application.h"
 #include <QVector>
+#include <QWeakPointer>
 
 namespace PCManFM {
 
 class DesktopWindow;
+class PreferencesDialog;
 
 class Application : public QApplication {
 Q_OBJECT
@@ -81,6 +83,7 @@ private:
   bool daemonMode_;
   bool enableDesktopManager_;
   QVector<DesktopWindow*> desktopWindows_;
+  QWeakPointer<PreferencesDialog> preferencesDialog_;
 };
 
 }
