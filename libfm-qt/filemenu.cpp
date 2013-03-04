@@ -79,13 +79,13 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   FmMimeType* mime_type = fm_file_info_get_mime_type(first);
   FmPath* path = fm_file_info_get_path(first);
   // check if the files are of the same type
-  bool sameType_ = fm_file_info_list_is_same_type(files);
+  sameType_ = fm_file_info_list_is_same_type(files);
   // check if the files are on the same filesystem
-  bool sameFilesystem_ = fm_file_info_list_is_same_fs(files);
+  sameFilesystem_ = fm_file_info_list_is_same_fs(files);
   // check if the files are all virtual
-  bool allVirtual_ = sameFilesystem_ && fm_path_is_virtual(path);
+  allVirtual_ = sameFilesystem_ && fm_path_is_virtual(path);
   // check if the files are all in the trash can
-  bool allTrash_ =  sameFilesystem_ && fm_path_is_trash(path);
+  allTrash_ =  sameFilesystem_ && fm_path_is_trash(path);
 
   openAction_ = new QAction(QIcon::fromTheme("document-open"), tr("Open"), this);
   connect(openAction_ , SIGNAL(triggered(bool)), SLOT(onOpenTriggered()));
@@ -140,6 +140,30 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   renameAction_ = new QAction(tr("Rename"), this);
   connect(renameAction_, SIGNAL(triggered(bool)), SLOT(onRenameTriggered()));
   addAction(renameAction_);
+
+  // archiver integration
+  if(!allVirtual_) {
+    if(sameType_) {
+      FmArchiver* archiver = fm_archiver_get_default();
+      // FIXME: make default archiver configurable rather than hard-coded.
+      if(archiver) {
+        if(fm_archiver_is_mime_type_supported(archiver, fm_mime_type_get_type(mime_type))) {
+          if(cwd_ && archiver->extract_to_cmd) {
+            QAction* action = new QAction(tr("Extract to..."), this);
+            addAction(action);
+          }
+          if(archiver->extract_cmd) {
+            QAction* action = new QAction(tr("Extract Here"), this);
+            addAction(action);
+          }
+        }
+        else {
+          QAction* action = new QAction(tr("Compress"), this);
+          addAction(action);
+        }
+      }
+    }
+  }
 
   separator2_ = addSeparator();
 

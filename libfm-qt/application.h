@@ -29,8 +29,10 @@ class LIBFM_QT_API Application {
 public:
   Application();
   ~Application();
-protected:
 
+  static Application* instance();
+
+protected:
   
 private:
   IconTheme* iconTheme;

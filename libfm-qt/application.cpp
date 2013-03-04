@@ -43,3 +43,6 @@ Application::~Application() {
   fm_finalize();
 }
 
+Application* Application::instance() {
+  return theApp;
+}

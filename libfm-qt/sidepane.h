@@ -23,6 +23,7 @@
 
 #include <QWidget>
 #include <QVBoxLayout>
+#include <qvarlengtharray.h>
 #include "placesview.h"
 
 namespace Fm {
@@ -34,6 +35,16 @@ public:
   explicit SidePane(QWidget* parent = 0);
   virtual ~SidePane();
 
+  QSize iconSize() {
+    return iconSize_;
+  }
+
+  void setIconSize(QSize size) {
+    iconSize_ = size;
+    if(placesView_)
+      placesView_->setIconSize(size);
+  }
+
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
 
@@ -43,6 +54,7 @@ protected Q_SLOTS:
 private:
   PlacesView* placesView_;
   QVBoxLayout* verticalLayout;
+  QSize iconSize_;
 };
 
 }

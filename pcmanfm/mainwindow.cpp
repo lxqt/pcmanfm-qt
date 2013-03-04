@@ -26,8 +26,9 @@ namespace PCManFM {
 
 MainWindow::MainWindow(FmPath* path):
   QMainWindow() {
-  setAttribute(Qt::WA_DeleteOnClose);
 
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  setAttribute(Qt::WA_DeleteOnClose);
   // setup user interface
   ui.setupUi(this);
 
@@ -55,6 +56,7 @@ MainWindow::MainWindow(FmPath* path):
   connect(ui.stackedWidget, SIGNAL(widgetRemoved(int)), SLOT(onStackedWidgetWidgetRemoved(int)));
 
   // side pane
+  ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
   connect(ui.sidePane, SIGNAL(chdirRequested(int,FmPath*)), SLOT(onSidePaneChdirRequested(int,FmPath*)));
   
   // path bar
@@ -551,11 +553,17 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
 
 void MainWindow::updateFromSettings(Settings& settings) {
   // TODO: apply settings
+
+  // side pane
+  ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
+
+  // tabs
+  ui.tabBar->setTabsClosable(settings.showTabClose());
   if(!settings.alwaysShowTabs()) {
     ui.tabBar->setVisible(ui.tabBar->count() > 1);
   }
-
-  ui.tabBar->setTabsClosable(settings.showTabClose());
+  
+  // all tab pages
   int n = ui.stackedWidget->count();
   for(int i = 0; i < n; ++i) {
     TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));

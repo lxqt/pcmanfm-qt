@@ -22,7 +22,10 @@
 
 using namespace Fm;
 
-SidePane::SidePane(QWidget* parent): QWidget(parent) {
+SidePane::SidePane(QWidget* parent):
+  QWidget(parent),
+  iconSize_(24, 24) {
+
   verticalLayout = new QVBoxLayout(this);
   verticalLayout->setContentsMargins(0, 0, 0, 0);
   placesView_ = new Fm::PlacesView(this);
@@ -31,7 +34,6 @@ SidePane::SidePane(QWidget* parent): QWidget(parent) {
 }
 
 SidePane::~SidePane() {
-
 }
 
 void SidePane::onPlacesViewChdirRequested(int type, FmPath* path) {
