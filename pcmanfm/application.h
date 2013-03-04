@@ -62,6 +62,8 @@ public:
     return enableDesktopManager_;
   }
 
+  void updateFromSettings();
+  
 protected Q_SLOTS:
   void onAboutToQuit();
 

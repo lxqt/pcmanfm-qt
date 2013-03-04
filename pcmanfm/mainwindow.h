@@ -19,6 +19,7 @@
 namespace PCManFM {
 
 class TabPage;
+class Settings;
 
 class MainWindow : public QMainWindow
 {
@@ -34,6 +35,8 @@ public:
     return reinterpret_cast<TabPage*>(ui.stackedWidget->currentWidget());
   }
 
+  void updateFromSettings(Settings& settings);
+  
 protected Q_SLOTS:
 
   void onPathEntryReturnPressed();

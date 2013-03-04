@@ -43,6 +43,7 @@ DesktopWindow::DesktopWindow():
   setWindowFlags(Qt::Window|Qt::FramelessWindowHint);
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
   setAttribute(Qt::WA_OpaquePaintEvent);
+  setAttribute(Qt::WA_DeleteOnClose);
 
   model_ = new Fm::FolderModel();
   proxyModel_ = new Fm::ProxyFolderModel();
@@ -167,5 +168,10 @@ void DesktopWindow::updateWallpaper() {
   //FIXME: we should set the pixmap to X11 root window?
   listView->setPalette(palette);
 }
+
+void DesktopWindow::updateFromSettings(Settings& settings) {
+  // TODO apply settings
+}
+
 
 #include "desktopwindow.moc"

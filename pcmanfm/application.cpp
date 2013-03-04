@@ -399,4 +399,27 @@ void Application::onScreenCountChanged(int newCount) {
   }
 }
 
+// called when Settings is changed to update UI
+void Application::updateFromSettings() {
+
+  Fm::IconTheme::setThemeName(settings_.iconThemeName());
+
+  // update main windows and desktop windows
+  QWidgetList windows = this->topLevelWidgets();
+  QWidgetList::iterator it;
+  for(it = windows.begin(); it != windows.end(); ++it) {
+    QWidget* window = *it;
+    if(window->inherits("PCManFM::MainWindow")) {
+      MainWindow* mainWindow = static_cast<MainWindow*>(window);
+      mainWindow->updateFromSettings(settings_);
+    }
+    else if(window->inherits("PCManFM::DesktopWindow")) {
+      DesktopWindow* desktopWindow = static_cast<DesktopWindow*>(window);
+      desktopWindow->updateFromSettings(settings_);
+    }
+  }
+
+}
+
+
 #include "application.moc"

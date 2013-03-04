@@ -26,6 +26,7 @@ namespace PCManFM {
 
 MainWindow::MainWindow(FmPath* path):
   QMainWindow() {
+  setAttribute(Qt::WA_DeleteOnClose);
 
   // setup user interface
   ui.setupUi(this);
@@ -515,6 +516,18 @@ void MainWindow::changeEvent(QEvent* event) {
 void MainWindow::onBackForwardContextMenu(QPoint pos) {
   // TODO: show a popup menu for browsing history here.
   qDebug("browse history");
+}
+
+void MainWindow::updateFromSettings(Settings& settings) {
+  // TODO: apply settings
+  // if(settings.alwaysShowTabs())
+
+  ui.tabBar->setTabsClosable(settings.showTabClose());
+  int n = ui.stackedWidget->count();
+  for(int i = 0; i < n; ++i) {
+    TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
+    page->updateFromSettings(settings);
+  }
 }
 
 

@@ -28,6 +28,8 @@ MountOperationQuestionDialog::MountOperationQuestionDialog(MountOperation* op, g
   QMessageBox(),
   mountOperation(op) {
 
+  setAttribute(Qt::WA_DeleteOnClose);
+
   setIcon(QMessageBox::Question);
   setText(QString::fromUtf8(message));
 

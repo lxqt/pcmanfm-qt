@@ -22,11 +22,21 @@
 #include "filemenu.h"
 #include "foldermenu.h"
 #include "filelauncher.h"
+#include "application.h"
+#include "settings.h"
 
 using namespace PCManFM;
 
 View::View(Fm::FolderView::ViewMode _mode, QWidget* parent):
   Fm::FolderView(_mode, parent) {
+
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+
+  setIconSize(Fm::FolderView::IconMode, QSize(settings.bigIconSize(), settings.bigIconSize()));
+  setIconSize(Fm::FolderView::CompactMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
+  setIconSize(Fm::FolderView::ThumbnailMode, QSize(settings.thumbnailIconSize(), settings.thumbnailIconSize()));
+  setIconSize(Fm::FolderView::DetailedListMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
+
   connect(this, SIGNAL(clicked(int,FmFileInfo*)), SLOT(onFileClicked(int,FmFileInfo*)));
 }
 
@@ -85,5 +95,16 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
 void View::prepareFolderMenu(QMenu* menu) {
 
 }
+
+void View::updateFromSettings(Settings& settings) {
+
+  setIconSize(Fm::FolderView::IconMode, QSize(settings.bigIconSize(), settings.bigIconSize()));
+  setIconSize(Fm::FolderView::CompactMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
+  setIconSize(Fm::FolderView::ThumbnailMode, QSize(settings.thumbnailIconSize(), settings.thumbnailIconSize()));
+  setIconSize(Fm::FolderView::DetailedListMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
+
+  
+}
+
 
 #include "view.moc"

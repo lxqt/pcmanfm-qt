@@ -36,6 +36,7 @@ static int thumbnailIconSizes[] = {256, 224, 192, 160, 128, 96, 64};
 PreferencesDialog::PreferencesDialog (QString activePage, QWidget* parent):
   QDialog (parent) {
   ui.setupUi(this);
+  setAttribute(Qt::WA_DeleteOnClose);
 
   initFromSettings();
   
@@ -49,6 +50,7 @@ PreferencesDialog::PreferencesDialog (QString activePage, QWidget* parent):
 }
 
 PreferencesDialog::~PreferencesDialog() {
+
 }
 
 static findIconThemesInDir(QHash<QString, QString>& iconThemes, QString dirName) {
@@ -247,12 +249,14 @@ void PreferencesDialog::applySettings() {
   applyAdvancedPage(settings);
 
   settings.save();
+  
+  Application* app = static_cast<Application*>(qApp);
+  app->updateFromSettings();
 }
 
 void PreferencesDialog::accept() {
-  QDialog::accept();
   applySettings();
+  QDialog::accept();
 }
-
 
 #include "preferencesdialog.moc"

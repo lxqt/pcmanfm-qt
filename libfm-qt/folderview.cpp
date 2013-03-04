@@ -32,8 +32,12 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
   QWidget(parent),
   view(NULL),
   mode((ViewMode)0),
-  model_(NULL),
-  iconSize_(QSize(32,32)) {
+  model_(NULL) {
+
+  iconSize_[IconMode - FirstViewMode] = QSize(48, 48);
+  iconSize_[CompactMode - FirstViewMode] = QSize(24, 24);
+  iconSize_[ThumbnailMode - FirstViewMode] = QSize(128, 128);
+  iconSize_[DetailedListMode - FirstViewMode] = QSize(24, 24);
 
   QVBoxLayout* layout = new QVBoxLayout();
   layout->setMargin(0);
@@ -87,7 +91,6 @@ void FolderView::setViewMode(ViewMode _mode) {
     // FIXME: why this doesn't work?
     treeView->header()->setResizeMode(0, QHeaderView::Stretch); // QHeaderView::ResizeToContents);
     // treeView->setSelectionBehavior(QAbstractItemView::SelectItems);
-    iconSize_ = QSize(fm_config->small_icon_size, fm_config->small_icon_size); // FIXME: should we use FmConfig?
   }
   else {
     ListView* listView;
@@ -114,8 +117,6 @@ void FolderView::setViewMode(ViewMode _mode) {
         listView->setSpacing(10);
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
-
-        iconSize_ = QSize(fm_config->big_icon_size, fm_config->big_icon_size);
         break;
       }
       case CompactMode: {
@@ -123,8 +124,6 @@ void FolderView::setViewMode(ViewMode _mode) {
         listView->setGridSize(QSize());
         listView->setWordWrap(false);
         listView->setFlow(QListView::QListView::TopToBottom);
-
-        iconSize_ = QSize(fm_config->small_icon_size, fm_config->small_icon_size);
         break;
       }
       case ThumbnailMode: {
@@ -132,8 +131,6 @@ void FolderView::setViewMode(ViewMode _mode) {
         listView->setGridSize(QSize(160, 160));
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
-
-        iconSize_ = QSize(fm_config->thumbnail_size, fm_config->thumbnail_size);
         break;
       }
     }
@@ -143,7 +140,7 @@ void FolderView::setViewMode(ViewMode _mode) {
 
     view->setContextMenuPolicy(Qt::NoContextMenu); // defer the context menu handling to parent widgets
     view->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-    view->setIconSize(iconSize_);
+    view->setIconSize(iconSize_[mode - FirstViewMode]);
     view->setSelectionMode(QAbstractItemView::ExtendedSelection);
     layout()->addWidget(view);
 
@@ -159,14 +156,16 @@ void FolderView::setViewMode(ViewMode _mode) {
   }
 }
 
-void FolderView::setIconSize(QSize size) {
-  iconSize_ = size;
-  if(view)
+void FolderView::setIconSize(ViewMode mode, QSize size) {
+  Q_ASSERT(mode >= FirstViewMode && mode < NumViewModes);
+  iconSize_[mode - FirstViewMode] = size;
+  if(viewMode() == mode)
     view->setIconSize(size);
 }
 
-QSize FolderView::iconSize() const {
-  return iconSize_;
+QSize FolderView::iconSize(ViewMode mode) const {
+  Q_ASSERT(mode >= FirstViewMode && mode < NumViewModes);
+  return iconSize_[mode - FirstViewMode];
 }
 
 void FolderView::setGridSize(QSize size) {

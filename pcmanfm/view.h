@@ -26,6 +26,8 @@
 
 namespace PCManFM {
 
+class Settings;
+
 class View : public Fm::FolderView {
 Q_OBJECT
 public:
@@ -38,6 +40,8 @@ public:
 
   explicit View(Fm::FolderView::ViewMode _mode = IconMode, QWidget* parent = 0);
   virtual ~View();
+
+  void updateFromSettings(Settings& settings);
 
 Q_SIGNALS:
   void openDirRequested(FmPath* path, int target);

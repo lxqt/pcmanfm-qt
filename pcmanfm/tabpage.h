@@ -32,6 +32,8 @@
 
 namespace PCManFM {
 
+class Settings;
+
 class TabPage : public QWidget {
 Q_OBJECT
 
@@ -156,7 +158,9 @@ public:
   bool canUp();
   
   void up();
-  
+
+  void updateFromSettings(Settings& settings);
+
 Q_SIGNALS:
   void statusChanged(int type, QString statusText);
   void titleChanged(QString title);

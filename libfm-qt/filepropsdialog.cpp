@@ -34,6 +34,8 @@ FilePropsDialog::FilePropsDialog(FmFileInfoList* files, QWidget* parent, Qt::Win
   appInfos(NULL),
   defaultApp(NULL) {
 
+  setAttribute(Qt::WA_DeleteOnClose);
+
   ui.setupUi(this);
 
   if(singleType) {

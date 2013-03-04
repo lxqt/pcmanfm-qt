@@ -30,6 +30,8 @@ FileOperationDialog::FileOperationDialog(FileOperation* _operation):
   operation(_operation),
   defaultOption(-1) {
 
+  setAttribute(Qt::WA_DeleteOnClose);
+
   ui.setupUi(this);
 
   QString title;

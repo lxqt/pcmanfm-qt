@@ -29,6 +29,7 @@
 namespace PCManFM {
 
 class DesktopItemDelegate;
+class Settings;
 
 class DesktopWindow : public View {
 Q_OBJECT
@@ -52,6 +53,8 @@ public:
 
   // void setWallpaperAlpha(qreal alpha);
   void updateWallpaper();
+
+  void updateFromSettings(Settings& settings);
 
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);

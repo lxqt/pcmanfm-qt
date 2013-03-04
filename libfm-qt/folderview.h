@@ -38,7 +38,8 @@ class LIBFM_QT_API FolderView : public QWidget {
 
 public:
   enum ViewMode {
-    IconMode = 1,
+    FirstViewMode = 1,
+    IconMode = FirstViewMode,
     CompactMode,
     DetailedListMode,
     ThumbnailMode,
@@ -75,8 +76,8 @@ public:
   void setViewMode(ViewMode _mode);
   ViewMode viewMode() const;
   
-  void setIconSize(QSize size);
-  QSize iconSize() const;
+  void setIconSize(ViewMode mode, QSize size);
+  QSize iconSize(ViewMode mode) const;
 
   void setGridSize(QSize size);
   QSize gridSize() const;
@@ -131,7 +132,7 @@ private:
   QAbstractItemView* view;
   ProxyFolderModel* model_;
   ViewMode mode;
-  QSize iconSize_;
+  QSize iconSize_[NumViewModes];
   QSize gridSize_;
 };
 

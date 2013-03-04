@@ -32,6 +32,8 @@ MountOperationPasswordDialog::MountOperationPasswordDialog(MountOperation* op, G
   needPassword(flags & G_ASK_PASSWORD_NEED_PASSWORD ? true : false),
   needDomain(flags & G_ASK_PASSWORD_NEED_DOMAIN ? true : false) {
 
+  setAttribute(Qt::WA_DeleteOnClose);
+
   ui.setupUi(this);
 
   // change the text of Ok button to Connect

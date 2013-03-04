@@ -27,6 +27,8 @@
 #include <QMessageBox>
 #include <QScrollBar>
 #include "proxyfoldermodel.h"
+#include "settings.h"
+#include "application.h"
 
 using namespace Fm;
 
@@ -37,6 +39,8 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
     folder_ (NULL),
     folderModel_(NULL) {
 
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+      
   // create proxy folder model to do item filtering
   proxyModel_ = new ProxyFolderModel();
   proxyModel_->setShowHidden(false);
@@ -45,7 +49,7 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   verticalLayout = new QVBoxLayout(this);
   verticalLayout->setContentsMargins(0, 0, 0, 0);
 
-  folderView_ = new View(Fm::FolderView::IconMode, this);
+  folderView_ = new View(settings.viewMode(), this);
   // newView->setColumnWidth(Fm::FolderModel::ColumnName, 200);
   connect(folderView_, SIGNAL(openDirRequested(FmPath*,int)), SLOT(onOpenDirRequested(FmPath*,int)));
 
@@ -332,6 +336,9 @@ void TabPage::onModelSortFilterChanged() {
   Q_EMIT sortFilterChanged();
 }
 
+void TabPage::updateFromSettings(Settings& settings) {
+  folderView_->updateFromSettings(settings);
+}
 
 };
 
