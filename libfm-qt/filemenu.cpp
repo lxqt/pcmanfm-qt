@@ -195,7 +195,10 @@ void FileMenu::onPasteTriggered() {
 }
 
 void FileMenu::onRenameTriggered() {
-
+  for(GList* l = fm_file_info_list_peek_head_link(files_); l; l = l->next) {
+    FmFileInfo* info = FM_FILE_INFO(l->data);
+    Fm::renameFile(fm_file_info_get_path(info), NULL);
+  }
 }
 
 #include "filemenu.moc"

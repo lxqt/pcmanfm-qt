@@ -25,6 +25,8 @@
 #include <QUrl>
 #include <QList>
 #include <QStringBuilder>
+#include <QInputDialog>
+#include <QMessageBox>
 #include "fileoperation.h"
 
 using namespace Fm;
@@ -100,6 +102,36 @@ void cutFilesToClipboard(FmPathList* files) {
   data->setData("x-kde-cut-selection", "1");
   g_free(urilist);
   clipboard->setMimeData(data);
+}
+
+void renameFile(FmPath* file, QWidget* parent) {
+  GFile *gf, *parent_gf, *dest;
+  GError* err = NULL;
+  QString new_name;
+  bool ok;
+  new_name = QInputDialog::getText(parent, QObject::tr("Rename File"),
+                                   QObject::tr("Please enter a new name:"),
+                                   QLineEdit::Normal,
+                                   fm_path_get_basename(file),
+                                   &ok);
+  if(!ok)
+    return;
+  gf = fm_path_to_gfile(file);
+  parent_gf = g_file_get_parent(gf);
+  dest = g_file_get_child(G_FILE(parent_gf), new_name.toLocal8Bit().data());
+  g_object_unref(parent_gf);
+  if(!g_file_move(gf, dest,
+    G_FILE_COPY_ALL_METADATA|
+    G_FILE_COPY_NO_FALLBACK_FOR_MOVE|
+    G_FILE_COPY_NOFOLLOW_SYMLINKS,
+    NULL, /* make this cancellable later. */
+    NULL, NULL, &err))
+  {
+    QMessageBox::critical(parent, QObject::tr("Error"), err->message);
+    g_error_free(err);
+  }
+  g_object_unref(dest);
+  g_object_unref(gf);
 }
 
 };

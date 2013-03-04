@@ -30,7 +30,6 @@ RenameDialog::RenameDialog(FmFileInfo* src, FmFileInfo* dest, QWidget* parent, Q
   action_(ActionIgnore),
   applyToAll_(false) {
 
-  setAttribute(Qt::WA_DeleteOnClose);
   ui.setupUi(this);
 
   FmPath* path = fm_file_info_get_path(dest);

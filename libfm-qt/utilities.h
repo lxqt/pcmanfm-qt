@@ -36,6 +36,8 @@ void LIBFM_QT_API  copyFilesToClipboard(FmPathList* files);
 
 void LIBFM_QT_API cutFilesToClipboard(FmPathList* files);
 
+void LIBFM_QT_API renameFile(FmPath* file, QWidget* parent = 0);
+
 }
 
 #endif // FM_UTILITIES_H

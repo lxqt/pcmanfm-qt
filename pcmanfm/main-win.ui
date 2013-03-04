@@ -64,7 +64,7 @@
      <x>0</x>
      <y>0</y>
      <width>460</width>
-     <height>23</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -74,11 +74,11 @@
     <addaction name="actionNewTab"/>
     <addaction name="actionNewWin"/>
     <addaction name="actionCloseTab"/>
+    <addaction name="actionCloseWindow"/>
     <addaction name="separator"/>
     <addaction name="actionFileProperties"/>
     <addaction name="actionFolderProperties"/>
     <addaction name="separator"/>
-    <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
@@ -205,6 +205,9 @@
    <property name="text">
     <string>Home</string>
    </property>
+   <property name="shortcut">
+    <string>Alt+Home</string>
+   </property>
   </action>
   <action name="actionReload">
    <property name="icon">
@@ -214,6 +217,9 @@
    </property>
    <property name="text">
     <string>Reload</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
    </property>
   </action>
   <action name="actionGo">
@@ -258,6 +264,9 @@
    <property name="toolTip">
     <string>New Window</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
   </action>
   <action name="actionShowHidden">
    <property name="checkable">
@@ -265,6 +274,9 @@
    </property>
    <property name="text">
     <string>Show &amp;Hidden</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
    </property>
   </action>
   <action name="actionComputer">
@@ -363,6 +375,9 @@
    <property name="text">
     <string>&amp;Cut</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
   </action>
   <action name="actionCopy">
    <property name="icon">
@@ -372,6 +387,9 @@
    </property>
    <property name="text">
     <string>&amp;Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
    </property>
   </action>
   <action name="actionPaste">
@@ -383,10 +401,16 @@
    <property name="text">
     <string>&amp;Paste</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
   </action>
   <action name="actionSelectAll">
    <property name="text">
     <string>Select All</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
    </property>
   </action>
   <action name="actionPreferences">
@@ -462,6 +486,9 @@
    <property name="toolTip">
     <string>New Tab</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
   </action>
   <action name="actionGoBack">
    <property name="icon">
@@ -509,20 +536,32 @@
    <property name="text">
     <string>Delete</string>
    </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
   </action>
   <action name="actionRename">
    <property name="text">
     <string>Rename</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
    </property>
   </action>
   <action name="actionCloseTab">
    <property name="text">
     <string>Close Tab</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
   </action>
   <action name="actionFileProperties">
    <property name="text">
     <string>File Properties</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Return</string>
    </property>
   </action>
   <action name="actionFolderProperties">
@@ -544,6 +583,11 @@
    </property>
    <property name="text">
     <string>By File Size</string>
+   </property>
+  </action>
+  <action name="actionCloseWindow">
+   <property name="text">
+    <string>Close Window</string>
    </property>
   </action>
  </widget>

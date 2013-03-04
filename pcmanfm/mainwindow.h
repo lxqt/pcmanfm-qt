@@ -43,12 +43,14 @@ protected Q_SLOTS:
 
   void on_actionNewTab_triggered();
   void on_actionNewWin_triggered();
-  void on_actionQuit_triggered();
+  void on_actionCloseTab_triggered();
+  void on_actionCloseWindow_triggered();
 
   void on_actionCut_triggered();
   void on_actionCopy_triggered();
   void on_actionPaste_triggered();
   void on_actionDelete_triggered();
+  void on_actionRename_triggered();
   void on_actionSelectAll_triggered();
   void on_actionInvertSelection_triggered();
   void on_actionPreferences_triggered();
@@ -103,6 +105,7 @@ protected Q_SLOTS:
   
 protected:
   // void changeEvent( QEvent * event);
+  void closeTab(int index);
 
 private:
   static void onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis);

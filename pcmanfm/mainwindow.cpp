@@ -120,6 +120,8 @@ void MainWindow::chdir(FmPath* path) {
 
 // add a new tab
 void MainWindow::addTab(FmPath* path) {
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+
   TabPage* newPage = new TabPage(path, this);
   int index = ui.stackedWidget->addWidget(newPage);
   connect(newPage, SIGNAL(titleChanged(QString)), SLOT(onTabPageTitleChanged(QString)));
@@ -128,6 +130,10 @@ void MainWindow::addTab(FmPath* path) {
   connect(newPage, SIGNAL(sortFilterChanged()), SLOT(onTabPageSortFilterChanged()));
 
   ui.tabBar->insertTab(index, newPage->title());
+  
+  if(!settings.alwaysShowTabs()) {
+    ui.tabBar->setVisible(ui.tabBar->count() > 1);
+  }
 }
 
 void MainWindow::onPathEntryReturnPressed() {
@@ -185,6 +191,16 @@ void MainWindow::on_actionNewWin_triggered() {
   MainWindow* newWin = new MainWindow(path);
   newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
   newWin->show();
+}
+
+void MainWindow::on_actionCloseTab_triggered() {
+  closeTab(ui.tabBar->currentIndex());
+}
+
+void MainWindow::on_actionCloseWindow_triggered() {
+  // FIXME: should we save state here?
+  close();
+  // the window will be deleted automatically on close
 }
 
 void MainWindow::on_actionShowHidden_triggered(bool checked) {
@@ -256,10 +272,6 @@ void MainWindow::on_actionAddToBookmarks_triggered() {
   
 }
 
-void MainWindow::on_actionQuit_triggered() {
-  QApplication::quit();
-}
-
 void MainWindow::on_actionAbout_triggered() {
   // the about dialog
   class AboutDialog : public QDialog {
@@ -291,6 +303,10 @@ void MainWindow::on_actionThumbnailView_triggered() {
 }
 
 void MainWindow::onTabBarCloseRequested(int index) {
+  closeTab(index);
+}
+
+void MainWindow::closeTab(int index) {
   if(ui.tabBar->count() == 1) { // this is the last one
     close(); // destroy the whole window
   }
@@ -300,8 +316,14 @@ void MainWindow::onTabBarCloseRequested(int index) {
     // NOTE: we do not remove the tab here.
     // it'll be donoe in onStackedWidgetWidgetRemoved()
     // notebook->removeTab(index);
+
+    Settings& settings = static_cast<Application*>(qApp)->settings();
+    if(!settings.alwaysShowTabs() && ui.tabBar->count() == 1) {
+      ui.tabBar->setVisible(false);
+    }
   }
 }
+
 
 void MainWindow::onTabBarCurrentChanged(int index) {
   ui.stackedWidget->setCurrentIndex(index);
@@ -489,6 +511,15 @@ void MainWindow::on_actionDelete_triggered() {
   FileOperation::deleteFiles(paths, this);
   fm_path_list_unref(paths);
 }
+void MainWindow::on_actionRename_triggered() {
+  TabPage* page = currentPage();
+  FmPathList* paths = page->selectedFilePaths();
+  for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
+    FmPath* path = FM_PATH(l->data);
+    Fm::renameFile(path, NULL);
+  }
+}
+
 
 void MainWindow::on_actionSelectAll_triggered() {
   currentPage()->selectAll();
@@ -520,7 +551,9 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
 
 void MainWindow::updateFromSettings(Settings& settings) {
   // TODO: apply settings
-  // if(settings.alwaysShowTabs())
+  if(!settings.alwaysShowTabs()) {
+    ui.tabBar->setVisible(ui.tabBar->count() > 1);
+  }
 
   ui.tabBar->setTabsClosable(settings.showTabClose());
   int n = ui.stackedWidget->count();
