@@ -62,6 +62,8 @@ set(libfm_SRCS
   libfm-qt/fileoperationdialog.cpp
   libfm-qt/renamedialog.cpp
   libfm-qt/pathcompleter.cpp
+  libfm-qt/colorbutton.cpp
+  libfm-qt/fontbutton.cpp
   libfm-qt/browsehistory.cpp
   libfm-qt/utilities.cpp
 )
@@ -113,6 +115,7 @@ set(pcmanfm_SRCS
   pcmanfm/tabpage.cpp
   pcmanfm/view.cpp
   pcmanfm/preferencesdialog.cpp
+  pcmanfm/desktoppreferencesdialog.cpp
   pcmanfm/desktopwindow.cpp
   pcmanfm/desktopitemdelegate.cpp
   pcmanfm/settings.cpp
@@ -130,6 +133,7 @@ set(pcmanfm_UIS
   pcmanfm/main-win.ui
   pcmanfm/about.ui
   pcmanfm/preferences.ui
+  pcmanfm/desktop-preferences.ui
 )
 
 QT4_WRAP_UI(pcmanfm_UIS_H ${pcmanfm_UIS})

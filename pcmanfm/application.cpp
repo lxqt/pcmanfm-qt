@@ -29,6 +29,7 @@
 
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
+#include "desktoppreferencesdialog.h"
 
 using namespace PCManFM;
 static const char* serviceName = "org.pcmanfm.PCManFM";
@@ -158,8 +159,10 @@ bool Application::parseCommandLineArgs(int argc, char** argv) {
     else if(desktop_off)
       desktopManager(false);
 
-    if(desktop_pref) // desktop preference dialog
+    if(desktop_pref) { // desktop preference dialog
       desktopPrefrences(desktop_pref);
+      keepRunning = true;
+    }
     else if(find_files) { // file searching utility
       QStringList paths;
       if(file_names) {
@@ -169,9 +172,12 @@ bool Application::parseCommandLineArgs(int argc, char** argv) {
         }
       }
       findFiles(paths);
+      keepRunning = true;
     }
-    else if(show_pref) // preferences dialog
+    else if(show_pref) { // preferences dialog
       preferences(show_pref);
+      keepRunning = true;
+    }
     else if(wallpaper || wallpaper_mode) // set wall paper
       setWallpaper(wallpaper, wallpaper_mode);
     else {
@@ -316,8 +322,14 @@ void Application::desktopManager(bool enabled) {
 }
 
 void Application::desktopPrefrences(QString page) {
-  // TODO: show desktop preference window
-  qDebug("show desktop preference window: %s", page.toUtf8().data());
+  // show desktop preference window
+  if(!desktopPreferencesDialog_) {
+    desktopPreferencesDialog_ = new DesktopPreferencesDialog();
+  }
+  else {
+    // TODO: set page
+  }
+  desktopPreferencesDialog_.data()->show();
 }
 
 void Application::findFiles(QStringList paths) {

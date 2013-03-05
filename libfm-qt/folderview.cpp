@@ -157,14 +157,14 @@ void FolderView::setViewMode(ViewMode _mode) {
 }
 
 void FolderView::setIconSize(ViewMode mode, QSize size) {
-  Q_ASSERT(mode >= FirstViewMode && mode < NumViewModes);
+  Q_ASSERT(mode >= FirstViewMode && mode <= LastViewMode);
   iconSize_[mode - FirstViewMode] = size;
   if(viewMode() == mode)
     view->setIconSize(size);
 }
 
 QSize FolderView::iconSize(ViewMode mode) const {
-  Q_ASSERT(mode >= FirstViewMode && mode < NumViewModes);
+  Q_ASSERT(mode >= FirstViewMode && mode <= LastViewMode);
   return iconSize_[mode - FirstViewMode];
 }
 

@@ -31,6 +31,7 @@ namespace PCManFM {
 
 class DesktopWindow;
 class PreferencesDialog;
+class DesktopPreferencesDialog;
 
 class Application : public QApplication {
 Q_OBJECT
@@ -86,6 +87,7 @@ private:
   bool enableDesktopManager_;
   QVector<DesktopWindow*> desktopWindows_;
   QWeakPointer<PreferencesDialog> preferencesDialog_;
+  QWeakPointer<DesktopPreferencesDialog> desktopPreferencesDialog_;
 };
 
 }

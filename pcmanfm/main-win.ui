@@ -73,12 +73,12 @@
     </property>
     <addaction name="actionNewTab"/>
     <addaction name="actionNewWin"/>
-    <addaction name="actionCloseTab"/>
-    <addaction name="actionCloseWindow"/>
     <addaction name="separator"/>
     <addaction name="actionFileProperties"/>
     <addaction name="actionFolderProperties"/>
     <addaction name="separator"/>
+    <addaction name="actionCloseTab"/>
+    <addaction name="actionCloseWindow"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">

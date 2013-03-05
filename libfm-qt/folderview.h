@@ -43,7 +43,8 @@ public:
     CompactMode,
     DetailedListMode,
     ThumbnailMode,
-    NumViewModes = ThumbnailMode
+    LastViewMode = ThumbnailMode,
+    NumViewModes = (LastViewMode - FirstViewMode)
   };
 
   enum ClickType {
