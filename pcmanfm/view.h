@@ -23,6 +23,7 @@
 
 #include "folderview.h"
 #include "filemenu.h"
+#include "foldermenu.h"
 
 namespace PCManFM {
 
@@ -51,7 +52,7 @@ protected Q_SLOTS:
   void onPopupMenuHide();
 
   virtual void prepareFileMenu(Fm::FileMenu* menu);
-  virtual void prepareFolderMenu(QMenu* menu);
+  virtual void prepareFolderMenu(Fm::FolderMenu* menu);
 
 private:
   

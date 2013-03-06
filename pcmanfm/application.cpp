@@ -327,10 +327,10 @@ void Application::desktopPrefrences(QString page) {
   if(!desktopPreferencesDialog_) {
     desktopPreferencesDialog_ = new DesktopPreferencesDialog();
   }
-  else {
-    desktopPreferencesDialog_.data()->selectPage(page);
-  }
+  desktopPreferencesDialog_.data()->selectPage(page);
   desktopPreferencesDialog_.data()->show();
+  desktopPreferencesDialog_.data()->raise();
+  desktopPreferencesDialog_.data()->activateWindow();
 }
 
 void Application::findFiles(QStringList paths) {
@@ -364,6 +364,8 @@ void Application::preferences(QString page) {
     // TODO: set page
   }
   preferencesDialog_.data()->show();
+  desktopPreferencesDialog_.data()->raise();
+  desktopPreferencesDialog_.data()->activateWindow();
 }
 
 void Application::setWallpaper(QString path, QString modeString) {

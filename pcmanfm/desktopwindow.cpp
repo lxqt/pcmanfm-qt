@@ -29,6 +29,8 @@
 #include "./application.h"
 #include "mainwindow.h"
 #include "desktopitemdelegate.h"
+#include "foldermenu.h"
+#include "filemenu.h"
 
 using namespace PCManFM;
 
@@ -177,6 +179,24 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
   updateWallpaper();
   update();
 }
+
+void DesktopWindow::prepareFileMenu(Fm::FileMenu* menu) {
+  PCManFM::View::prepareFileMenu(menu);
+}
+
+void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
+  PCManFM::View::prepareFolderMenu(menu);
+  // remove file properties action
+  menu->removeAction(menu->propertiesAction());
+  // add an action for desktop preferences instead
+  QAction* action = menu->addAction(tr("Desktop Preferences"));
+  connect(action, SIGNAL(triggered(bool)), SLOT(onDesktopPreferences()));
+}
+
+void DesktopWindow::onDesktopPreferences() {
+  static_cast<Application* >(qApp)->desktopPrefrences(QString());
+}
+
 
 
 #include "desktopwindow.moc"

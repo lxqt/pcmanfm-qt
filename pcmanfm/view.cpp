@@ -92,7 +92,7 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
 
 }
 
-void View::prepareFolderMenu(QMenu* menu) {
+void View::prepareFolderMenu(Fm::FolderMenu* menu) {
 
 }
 

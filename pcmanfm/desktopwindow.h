@@ -56,9 +56,14 @@ public:
 
   void updateFromSettings(Settings& settings);
 
+protected:
+  virtual void prepareFolderMenu(Fm::FolderMenu* menu);
+  virtual void prepareFileMenu(Fm::FileMenu* menu);
+  virtual void resizeEvent(QResizeEvent* event);
+  
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
-  virtual void resizeEvent(QResizeEvent* event);
+  void onDesktopPreferences();
 
 private:
   Fm::ProxyFolderModel* proxyModel_;
