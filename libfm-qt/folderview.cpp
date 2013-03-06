@@ -50,29 +50,61 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
 FolderView::~FolderView() {
 }
 
+void FolderView::ListView::startDrag(Qt::DropActions supportedActions) {
+  if(movement() != Static)
+    QListView::startDrag(supportedActions);
+  else
+    QAbstractItemView::startDrag(supportedActions);
+}
+
 void FolderView::ListView::mousePressEvent(QMouseEvent* event) {
   QListView::mousePressEvent(event);
   static_cast<FolderView*>(parent())->childMousePressEvent(event);
 }
 
+// NOTE:
+// QListView has a problem which I consider a bug or a design flaw.
+// When you set movement property to Static, theoratically the icons
+// should not be movable. However, if you turned on icon mode,
+// the icons becomes freely movable despite the value of movement is Static.
+// To overcome this bug, we override all drag handling methods, and
+// call QAbstractItemView directly, bypassing QListView.
+// In this way, we can workaround the buggy behavior.
+// The drag handlers of QListView basically does the same things
+// as its parent QAbstractItemView, but it also stores the currently
+// dragged item and paint them in the view as needed.
+// TODO: I really should file a bug report to Qt developers.
+
 void FolderView::ListView::dragEnterEvent(QDragEnterEvent* event) {
+  if(movement() != Static)
+    QListView::dragEnterEvent(event);
+  else
+    QAbstractItemView::dragEnterEvent(event);
   qDebug("dragEnterEvent");
-  QListView::dragEnterEvent(event);
   //static_cast<FolderView*>(parent())->childDragEnterEvent(event);
 }
 
 void FolderView::ListView::dragLeaveEvent(QDragLeaveEvent* e) {
-  QListView::dragLeaveEvent(e);
+  if(movement() != Static)
+    QListView::dragLeaveEvent(e);
+  else
+    QAbstractItemView::dragLeaveEvent(e);
   static_cast<FolderView*>(parent())->childDragLeaveEvent(e);
 }
 
 void FolderView::ListView::dragMoveEvent(QDragMoveEvent* e) {
-  QListView::dragMoveEvent(e);
+  if(movement() != Static)
+    QListView::dragMoveEvent(e);
+  else
+    QAbstractItemView::dragMoveEvent(e);
   static_cast<FolderView*>(parent())->childDragMoveEvent(e);
 }
 
 void FolderView::ListView::dropEvent(QDropEvent* e) {
-  QListView::dropEvent(e);
+  if(movement() != Static)
+    QListView::dropEvent(e);
+  else
+    QAbstractItemView::dropEvent(e);
   static_cast<FolderView*>(parent())->childDropEvent(e);
 }
 
@@ -147,7 +179,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     // FIXME: should we expose the delegate?
 
     listView->setDragDropMode(QAbstractItemView::DragDrop);
-    listView->setMovement(QListView::Snap);
+    listView->setMovement(QListView::Static);
     listView->setResizeMode(QListView::Adjust);
     listView->setWrapping(true);
     
@@ -189,6 +221,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     view->setDragEnabled(true);
     view->setAcceptDrops(true);
     view->setDragDropMode(QAbstractItemView::DragDrop);
+    view->setDropIndicatorShown(true);
 
     if(model_) {
       // FIXME: preserve selections

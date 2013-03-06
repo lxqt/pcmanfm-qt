@@ -60,6 +60,7 @@ protected:
   public:
     ListView(QWidget* parent = 0) : QListView(parent) {
     }
+    virtual void startDrag(Qt::DropActions supportedActions);
     virtual void mousePressEvent(QMouseEvent* event);
     virtual void dragEnterEvent(QDragEnterEvent* event);
     virtual void dragMoveEvent(QDragMoveEvent* e);

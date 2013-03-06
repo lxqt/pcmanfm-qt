@@ -92,9 +92,6 @@ RenameDialog::RenameDialog(FmFileInfo* src, FmFileInfo* dest, QWidget* parent, Q
 
   button = ui.buttonBox->button(QDialogButtonBox::Ignore);
   connect(button, SIGNAL(clicked(bool)), SLOT(onIgnoreClicked()));
-  
-  button = ui.buttonBox->button(QDialogButtonBox::Ignore);
-  connect(button, SIGNAL(clicked(bool)), SLOT(onRetryClicked()));
 }
 
 RenameDialog::~RenameDialog() {
