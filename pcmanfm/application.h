@@ -64,6 +64,7 @@ public:
   }
 
   void updateFromSettings();
+  void updateDesktopsFromSettings();
   
 protected Q_SLOTS:
   void onAboutToQuit();

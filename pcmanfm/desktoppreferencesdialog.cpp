@@ -19,6 +19,9 @@
 
 
 #include "desktoppreferencesdialog.h"
+#include "desktopwindow.h"
+#include "settings.h"
+#include "application.h"
 
 using namespace PCManFM;
 
@@ -26,12 +29,75 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   QDialog(parent, f) {
 
   setAttribute(Qt::WA_DeleteOnClose);
+  
+  Settings& settings = static_cast<Application*>(qApp)->settings();
   ui.setupUi(this);
 
+  // setup wallpaper modes
+  connect(ui.wallpaperMode, SIGNAL(currentIndexChanged(int)), SLOT(onWallpaperModeChanged(int)));
+  ui.wallpaperMode->addItem(tr("Fill with background color only"), DesktopWindow::WallpaperNone);
+  ui.wallpaperMode->addItem(tr("Stretch to fill the entire screen"), DesktopWindow::WallpaperStretch);
+  ui.wallpaperMode->addItem(tr("Stretch to fit the screen"), DesktopWindow::WallpaperFit);
+  ui.wallpaperMode->addItem(tr("Center on the screen"), DesktopWindow::WallpaperCenter);
+  ui.wallpaperMode->addItem(tr("Tile the image to fill the entire screen"), DesktopWindow::WallpaperTile);
+  int i;
+  switch(settings.wallpaperMode()) {
+    case DesktopWindow::WallpaperNone:
+      i = 0;
+      break;
+    case DesktopWindow::WallpaperStretch:
+      i = 1;
+      break;
+    case DesktopWindow::WallpaperFit:
+      i = 2;
+      break;
+    case DesktopWindow::WallpaperCenter:
+      i = 3;
+      break;
+    case DesktopWindow::WallpaperTile:
+      i = 4;
+      break;
+    default:
+      i = 0;
+  }
+  ui.wallpaperMode->setCurrentIndex(i);
+
+  ui.imageFIle->setText(settings.wallpaper());
+
+  ui.backgroundColor->setColor(settings.desktopBgColor());
+  ui.textColor->setColor(settings.desktopFgColor());
+  ui.shadowColor->setColor(settings.desktopShadowColor());
 }
 
 DesktopPreferencesDialog::~DesktopPreferencesDialog() {
 
 }
+
+void DesktopPreferencesDialog::accept() {
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  
+  settings.setWallpaper(ui.imageFIle->text());
+
+  int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
+  settings.setWallpaperMode(mode);
+  
+  settings.setDesktopBgColor(ui.backgroundColor->color());
+  settings.setDesktopFgColor(ui.textColor->color());
+  settings.setDesktopShadowColor(ui.shadowColor->color());
+
+  QDialog::accept();
+
+  static_cast<Application*>(qApp)->updateDesktopsFromSettings();
+}
+
+void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
+  int n = ui.wallpaperMode->count();
+  int mode = ui.wallpaperMode->itemData(index).toInt();
+
+  bool enable = (mode != DesktopWindow::WallpaperNone);
+  ui.imageFIle->setEnabled(enable);
+  ui.browse->setEnabled(enable);
+}
+
 
 #include "desktoppreferencesdialog.moc"

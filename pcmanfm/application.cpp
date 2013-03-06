@@ -433,5 +433,13 @@ void Application::updateFromSettings() {
 
 }
 
+void Application::updateDesktopsFromSettings() {
+  QVector<DesktopWindow*>::iterator it;
+  for(it = desktopWindows_.begin(); it != desktopWindows_.end(); ++it) {
+    DesktopWindow* desktopWindow = static_cast<DesktopWindow*>(*it);
+    desktopWindow->updateFromSettings(settings_);
+  }
+}
+
 
 #include "application.moc"

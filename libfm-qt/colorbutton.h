@@ -33,6 +33,15 @@ public:
   explicit ColorButton(QWidget* parent = 0);
   virtual ~ColorButton();
 
+  void setColor(const QColor&);
+
+  QColor color() const {
+    return color_;
+  }
+  
+Q_SIGNALS:
+  void changed();
+
 private Q_SLOTS:
   void onClicked();
 

@@ -34,10 +34,18 @@ ColorButton::~ColorButton() {
 void ColorButton::onClicked() {
   QColorDialog dlg(color_);
   if(dlg.exec() == QDialog::Accepted) {
-    color_ = dlg.selectedColor();
+    setColor(dlg.selectedColor());
+  }
+}
+
+void ColorButton::setColor(const QColor& color) {
+  if(color != color_) {
+    color_ = color;
     QPalette p = palette();
     p.setColor(QPalette::Button, color_);
     setPalette(p);
+
+    Q_EMIT changed();
   }
 }
 

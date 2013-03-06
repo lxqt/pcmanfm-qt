@@ -33,6 +33,11 @@ public:
   explicit DesktopPreferencesDialog(QWidget* parent = 0, Qt::WindowFlags f = 0);
   virtual ~DesktopPreferencesDialog();
 
+  virtual void accept();
+
+protected Q_SLOTS:
+  void onWallpaperModeChanged(int index);
+  
 private:
   Ui::DesktopPreferencesDialog ui;
 };
