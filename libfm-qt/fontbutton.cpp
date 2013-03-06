@@ -20,6 +20,7 @@
 
 #include "fontbutton.h"
 #include <QFontDialog>
+#include <X11/X.h>
 
 using namespace Fm;
 
@@ -28,15 +29,29 @@ FontButton::FontButton(QWidget* parent): QPushButton(parent) {
 }
 
 FontButton::~FontButton() {
-
 }
 
 void FontButton::onClicked() {
   QFontDialog dlg(font_);
   if(dlg.exec() == QDialog::Accepted) {
-    font_ = dlg.selectedFont();
-    setText(font_.toString());
+    setFont(dlg.selectedFont());
   }
+}
+
+void FontButton::setFont(QFont font) {
+  font_ = font;
+  QString text = font.family();
+  if(font.bold()) {
+    text += " ";
+    text += tr("Bold");
+  }
+  if(font.italic()) {
+    text += " ";
+    text += tr("Italic");
+  }
+  text += QString(" %1").arg(font.pointSize());
+  setText(text);
+  Q_EMIT changed();
 }
 
 

@@ -39,8 +39,8 @@ public:
   virtual QSize sizeHint(const QStyleOptionViewItem& option, const QModelIndex& index) const;
   virtual ~DesktopItemDelegate();
 
-  void setShadowColor(const QColor& shadowColor_) {
-    shadowColor_ = shadowColor_;
+  void setShadowColor(const QColor& shadowColor) {
+    shadowColor_ = shadowColor;
   }
   const QColor& shadowColor() const {
     return shadowColor_;

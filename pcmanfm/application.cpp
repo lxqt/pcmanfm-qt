@@ -274,11 +274,12 @@ int Application::exec() {
 
 void Application::onAboutToQuit() {
   qDebug("aboutToQuit");
+  settings_.save();
 }
 
 void Application::commitData(QSessionManager& manager) {
   qDebug("commitData");
-  settings_.save();
+  // FIXME: where should we write the config file?
   QApplication::commitData(manager);
 }
 
@@ -327,7 +328,7 @@ void Application::desktopPrefrences(QString page) {
     desktopPreferencesDialog_ = new DesktopPreferencesDialog();
   }
   else {
-    // TODO: set page
+    desktopPreferencesDialog_.data()->selectPage(page);
   }
   desktopPreferencesDialog_.data()->show();
 }
@@ -384,10 +385,7 @@ DesktopWindow* Application::createDesktopWindow(int screenNum) {
   DesktopWindow* window = new DesktopWindow();
   QRect rect = desktop()->screenGeometry(screenNum);
   window->setGeometry(rect);
-  window->setWallpaperFile(settings_.wallpaper());
-  window->setWallpaperMode(DesktopWindow::WallpaperStretch); // FIXME: set value from settings
-  window->setForeground(settings_.desktopFgColor());
-  window->updateWallpaper();
+  window->updateFromSettings(settings_);
   window->show();
   return window;
 }
@@ -425,12 +423,9 @@ void Application::updateFromSettings() {
       MainWindow* mainWindow = static_cast<MainWindow*>(window);
       mainWindow->updateFromSettings(settings_);
     }
-    else if(window->inherits("PCManFM::DesktopWindow")) {
-      DesktopWindow* desktopWindow = static_cast<DesktopWindow*>(window);
-      desktopWindow->updateFromSettings(settings_);
-    }
   }
-
+  if(desktopManagerEnabled())
+    updateDesktopsFromSettings();
 }
 
 void Application::updateDesktopsFromSettings() {

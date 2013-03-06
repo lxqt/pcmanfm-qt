@@ -91,7 +91,6 @@ void DesktopWindow::setForeground(const QColor& color) {
 }
 
 void DesktopWindow::setShadow(const QColor& color) {
-  // TODO: implement drawing text with shadow
   shadowColor_ = color;
   delegate_->setShadowColor(color);
 }
@@ -138,7 +137,6 @@ void DesktopWindow::updateWallpaper() {
       wallpaperPixmap_ = empty; // clear the pixmap
     }
     else { // image file is successfully loaded
-      qDebug("Image is loaded!");
       QPixmap pixmap;
       if(wallpaperMode_ == WallpaperTile || image.size() == size()) {
         // if image size == window size, there are no differences among different modes
@@ -149,9 +147,9 @@ void DesktopWindow::updateWallpaper() {
         pixmap = QPixmap::fromImage(scaled);
       }
       else {
-        QPixmap pixmap(size());
+        pixmap = QPixmap(size());
         QPainter painter(&pixmap);
-        
+
         if(wallpaperMode_ == WallpaperFit) {
           QImage scaled = image.scaled(width(), height(), Qt::KeepAspectRatio, Qt::SmoothTransformation);
           image = scaled;
@@ -170,7 +168,14 @@ void DesktopWindow::updateWallpaper() {
 }
 
 void DesktopWindow::updateFromSettings(Settings& settings) {
-  // TODO apply settings
+  setWallpaperFile(settings.wallpaper());
+  setWallpaperMode(settings.wallpaperMode());
+  setFont(settings.desktopFont());
+  setForeground(settings.desktopFgColor());
+  setBackground(settings.desktopBgColor());
+  setShadow(settings.desktopShadowColor());
+  updateWallpaper();
+  update();
 }
 
 

@@ -22,6 +22,7 @@
 #define PCMANFM_SETTINGS_H
 
 #include <QObject>
+#include <qvarlengtharray.h>
 #include <libfm/fm.h>
 #include "folderview.h"
 #include "foldermodel.h"
@@ -158,8 +159,14 @@ public:
     desktopShadowColor_ = desktopShadowColor;
   }
 
-  // desktop_font=Sans 12
-  // bool showWmMenu;
+  QFont desktopFont() const {
+    return desktopFont_;
+  }
+  
+  void setDesktopFont(QFont font) {
+    desktopFont_ = font;
+  }
+
   bool desktopShowHidden() const {
     return desktopShowHidden_;
   }
@@ -352,8 +359,8 @@ private:
   QColor desktopBgColor_;
   QColor desktopFgColor_;
   QColor desktopShadowColor_;
-  // desktop_font=Sans 12
-  // bool showWmMenu;
+  QFont desktopFont_;
+
   bool desktopShowHidden_;
   Qt::SortOrder desktopSortOrder_;
   Fm::FolderModel::ColumnId desktopSortColumn_;

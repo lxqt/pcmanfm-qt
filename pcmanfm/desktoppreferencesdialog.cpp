@@ -22,6 +22,9 @@
 #include "desktopwindow.h"
 #include "settings.h"
 #include "application.h"
+#include <QFileDialog>
+#include <QImageReader>
+#include <qfuture.h>
 
 using namespace PCManFM;
 
@@ -61,8 +64,12 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
       i = 0;
   }
   ui.wallpaperMode->setCurrentIndex(i);
+  
+  connect(ui.browse, SIGNAL(clicked(bool)), SLOT(onBrowseClicked()));
+  qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
+  ui.imageFile->setText(settings.wallpaper());
 
-  ui.imageFIle->setText(settings.wallpaper());
+  ui.font->setFont(settings.desktopFont());
 
   ui.backgroundColor->setColor(settings.desktopBgColor());
   ui.textColor->setColor(settings.desktopFgColor());
@@ -70,17 +77,18 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
 }
 
 DesktopPreferencesDialog::~DesktopPreferencesDialog() {
-
 }
 
 void DesktopPreferencesDialog::accept() {
   Settings& settings = static_cast<Application*>(qApp)->settings();
   
-  settings.setWallpaper(ui.imageFIle->text());
+  settings.setWallpaper(ui.imageFile->text());
 
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
   settings.setWallpaperMode(mode);
-  
+
+  settings.setDesktopFont(ui.font->font());
+
   settings.setDesktopBgColor(ui.backgroundColor->color());
   settings.setDesktopFgColor(ui.textColor->color());
   settings.setDesktopShadowColor(ui.shadowColor->color());
@@ -88,6 +96,7 @@ void DesktopPreferencesDialog::accept() {
   QDialog::accept();
 
   static_cast<Application*>(qApp)->updateDesktopsFromSettings();
+  settings.save();
 }
 
 void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
@@ -95,9 +104,39 @@ void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
   int mode = ui.wallpaperMode->itemData(index).toInt();
 
   bool enable = (mode != DesktopWindow::WallpaperNone);
-  ui.imageFIle->setEnabled(enable);
+  ui.imageFile->setEnabled(enable);
   ui.browse->setEnabled(enable);
 }
 
+void DesktopPreferencesDialog::onBrowseClicked() {
+  QFileDialog dlg;
+  dlg.setAcceptMode(QFileDialog::AcceptOpen);
+  dlg.setFileMode(QFileDialog::ExistingFile);
+  // compose a name fileter from QImageReader
+  QString filter;
+  filter.reserve(256);
+  filter = tr("Image Files");
+  filter += " (";
+  QList<QByteArray> formats = QImageReader::supportedImageFormats();
+  Q_FOREACH(QByteArray format, formats) {
+    filter += "*.";
+    filter += format.toLower();
+    filter += ' ';
+  }
+  filter += ')';
+  dlg.setNameFilter(filter);
+  dlg.setNameFilterDetailsVisible(false);
+  if(dlg.exec() == QDialog::Accepted) {
+    QString filename;
+    filename = dlg.selectedFiles().first();
+    ui.imageFile->setText(filename);
+  }
+}
+
+void DesktopPreferencesDialog::selectPage(QString name) {
+  QWidget* page = findChild<QWidget*>(name + "Page");
+  if(page)
+    ui.tabWidget->setCurrentWidget(page);
+}
 
 #include "desktoppreferencesdialog.moc"

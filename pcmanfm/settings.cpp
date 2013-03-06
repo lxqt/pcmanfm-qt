@@ -22,6 +22,7 @@
 #include <QDir>
 #include <QStringBuilder>
 #include <QSettings>
+#include <QApplication>
 // #include <QDesktopServices>
 
 using namespace PCManFM;
@@ -125,9 +126,12 @@ bool Settings::loadFile(QString filePath) {
   desktopBgColor_.setNamedColor(settings.value("BgColor", "#000000").toString());
   desktopFgColor_.setNamedColor(settings.value("FgColor", "#ffffff").toString());
   desktopShadowColor_.setNamedColor(settings.value("ShadowColor", "#000000").toString());
-  // desktop_font=Sans 12
-  // bool showWmMenu;
+  if(settings.contains("Font"))
+    desktopFont_.fromString(settings.value("Font").toString());
+  else
+    desktopFont_ = QApplication::font();
   desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
+
   // FIXME: we need to convert these values to strings
   desktopSortOrder_ = settings.value("SortOrder", Qt::AscendingOrder).toInt();
   desktopSortColumn_ = settings.value("SortColumn", Fm::FolderModel::ColumnFileName).toInt();
@@ -190,8 +194,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("BgColor", desktopBgColor_.name());
   settings.setValue("FgColor", desktopFgColor_.name());
   settings.setValue("ShadowColor", desktopShadowColor_.name());
-  // desktop_font=Sans 12
-  // bool showWmMenu;
+  settings.setValue("Font", desktopFont_.toString());
   settings.setValue("ShowHidden", desktopShowHidden_);
   settings.setValue("SortOrder", desktopSortOrder_);
   settings.setValue("SortColumn", (int)desktopSortColumn_);

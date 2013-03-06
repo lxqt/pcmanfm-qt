@@ -35,9 +35,12 @@ public:
 
   virtual void accept();
 
+  void selectPage(QString name);
+  
 protected Q_SLOTS:
   void onWallpaperModeChanged(int index);
-  
+  void onBrowseClicked();
+
 private:
   Ui::DesktopPreferencesDialog ui;
 };

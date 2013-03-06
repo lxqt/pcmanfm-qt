@@ -32,6 +32,15 @@ public:
   explicit FontButton(QWidget* parent = 0);
   virtual ~FontButton();
 
+  QFont font() {
+    return font_;
+  }
+  
+  void setFont(QFont font);
+  
+Q_SIGNALS:
+  void changed();
+  
 private Q_SLOTS:
   void onClicked();
 
