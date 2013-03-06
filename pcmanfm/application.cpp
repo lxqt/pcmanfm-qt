@@ -298,7 +298,7 @@ void Application::desktopManager(bool enabled) {
   if(enabled) {
     if(!enableDesktopManager_) {
       int n = desktopWidget->numScreens();
-      connect(desktopWidget, SIGNAL(workAreaResized(int)), SLOT(onWorkAreaResized(int)));
+      connect(desktopWidget, SIGNAL(resized(int)), SLOT(onScreenResized(int)));
       connect(desktopWidget, SIGNAL(screenCountChanged(int)), SLOT(onScreenCountChanged(int)));
       desktopWindows_.reserve(n);
       for(int i = 0; i < n; ++i) {
@@ -309,7 +309,7 @@ void Application::desktopManager(bool enabled) {
   }
   else {
     if(enableDesktopManager_) {
-      disconnect(desktopWidget, SIGNAL(workAreaResized(int)), this, SLOT(onWorkAreaResized(int)));
+      disconnect(desktopWidget, SIGNAL(workAreaResized(int)), this, SLOT(onScreenResized(int)));
       disconnect(desktopWidget, SIGNAL(screenCountChanged(int)), this, SLOT(onScreenCountChanged(int)));
       int n = desktopWindows_.size();
       for(int i = 0; i < n; ++i) {
@@ -371,14 +371,12 @@ void Application::setWallpaper(QString path, QString modeString) {
   settings_.setWallpaper(path);
   // settings_.setWallpaperMode();
   // TODO: update wallpaper
-  qDebug("setWallpaper(\"%s\", \"%s\")", path.toUtf8().data(), modeString.toUtf8().data());
 }
 
-void Application::onWorkAreaResized(int num) {
+void Application::onScreenResized(int num) {
   DesktopWindow* window = desktopWindows_.at(num);
   QRect rect = desktop()->screenGeometry(num);
-  window->resize(rect.width(), rect.height());
-  window->move(rect.x(), rect.y());
+  window->setGeometry(rect);
 }
 
 DesktopWindow* Application::createDesktopWindow(int screenNum) {

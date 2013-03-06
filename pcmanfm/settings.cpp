@@ -23,9 +23,28 @@
 #include <QStringBuilder>
 #include <QSettings>
 #include <QApplication>
+#include "desktopwindow.h"
 // #include <QDesktopServices>
 
 using namespace PCManFM;
+
+inline static const char* bookmarkOpenMethodToString(int value);
+inline static int bookmarkOpenMethodFromString(const QString str);
+
+inline static const char* wallpaperModeToString(int value);
+inline static int wallpaperModeFromString(const QString str);
+
+inline static const char* viewModeToString(int value);
+inline static int viewModeFromString(const QString str);
+
+inline static const char* sidePaneModeToString(int value);
+inline static int sidePaneModeFromString(const QString str);
+
+inline static const char* sortOrderToString(Qt::SortOrder order);
+inline static Qt::SortOrder sortOrderFromString(const QString str);
+
+inline static const char* sortColumnToString(int value);
+inline static int sortColumnFromString(const QString str);
 
 Settings::Settings():
   QObject(),
@@ -111,7 +130,7 @@ bool Settings::loadFile(QString filePath) {
   settings.endGroup();
 
   settings.beginGroup("Behavior");
-  bookmarkOpenMethod_ = settings.value("BookmarkOpenMethod").toInt();
+  bookmarkOpenMethod_ = bookmarkOpenMethodFromString(settings.value("BookmarkOpenMethod").toString());
   // settings for use with libfm
   useTrash_ = settings.value("UseTrash", true).toBool();
   singleClick_ = settings.value("SingleClick", false).toBool();
@@ -121,7 +140,7 @@ bool Settings::loadFile(QString filePath) {
   settings.endGroup();
 
   settings.beginGroup("Desktop");
-  wallpaperMode_ = settings.value("WallpaperMode").toInt();
+  wallpaperMode_ = wallpaperModeFromString(settings.value("WallpaperMode").toString());
   wallpaper_ = settings.value("Wallpaper").toString();
   desktopBgColor_.setNamedColor(settings.value("BgColor", "#000000").toString());
   desktopFgColor_.setNamedColor(settings.value("FgColor", "#ffffff").toString());
@@ -132,9 +151,8 @@ bool Settings::loadFile(QString filePath) {
     desktopFont_ = QApplication::font();
   desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
 
-  // FIXME: we need to convert these values to strings
-  desktopSortOrder_ = settings.value("SortOrder", Qt::AscendingOrder).toInt();
-  desktopSortColumn_ = settings.value("SortColumn", Fm::FolderModel::ColumnFileName).toInt();
+  desktopSortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
+  desktopSortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
   settings.endGroup();
 
   settings.beginGroup("Volume");
@@ -144,10 +162,10 @@ bool Settings::loadFile(QString filePath) {
   settings.endGroup();
 
   settings.beginGroup("FolderView");
-  viewMode_ = settings.value("Mode", Fm::FolderView::IconMode).toInt();
+  viewMode_ = viewModeFromString(settings.value("Mode", Fm::FolderView::IconMode).toString());
   showHidden_ = settings.value("ShowHidden", false).toBool();
-  sortOrder_ = settings.value("SortOrder", Qt::AscendingOrder).toInt();
-  sortColumn_ = settings.value("SortColumn", Fm::FolderModel::ColumnFileName).toInt();
+  sortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
+  sortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
 
   // override config in libfm's FmConfig
   bigIconSize_ = settings.value("BigIconSize", 48).toInt();
@@ -162,7 +180,7 @@ bool Settings::loadFile(QString filePath) {
   alwaysShowTabs_ = settings.value("AlwaysShowTabs", true).toBool();
   showTabClose_ = settings.value("ShowTabClose", true).toBool();
   splitterPos_ = settings.value("SplitterPos", 150).toInt();
-  sidePaneMode_ = settings.value("SidePaneMode").toInt();
+  sidePaneMode_ = sidePaneModeFromString(settings.value("SidePaneMode").toString());
   settings.endGroup();
 
 }
@@ -179,7 +197,7 @@ bool Settings::saveFile(QString filePath) {
   settings.endGroup();
 
   settings.beginGroup("Behavior");
-  settings.setValue("BookmarkOpenMethod", bookmarkOpenMethod_);
+  // settings.setValue("BookmarkOpenMethod", bookmarkOpenMethodToString(bookmarkOpenMethod_));
   // settings for use with libfm
   settings.setValue("UseTrash", useTrash_);
   settings.setValue("SingleClick", singleClick_);
@@ -189,15 +207,15 @@ bool Settings::saveFile(QString filePath) {
   settings.endGroup();
 
   settings.beginGroup("Desktop");
-  settings.setValue("WallpaperMode", wallpaperMode_);
+  settings.setValue("WallpaperMode", wallpaperModeToString(wallpaperMode_));
   settings.setValue("Wallpaper", wallpaper_);
   settings.setValue("BgColor", desktopBgColor_.name());
   settings.setValue("FgColor", desktopFgColor_.name());
   settings.setValue("ShadowColor", desktopShadowColor_.name());
   settings.setValue("Font", desktopFont_.toString());
   settings.setValue("ShowHidden", desktopShowHidden_);
-  settings.setValue("SortOrder", desktopSortOrder_);
-  settings.setValue("SortColumn", (int)desktopSortColumn_);
+  settings.setValue("SortOrder", sortOrderToString(desktopSortOrder_));
+  settings.setValue("SortColumn", sortColumnToString(desktopSortColumn_));
   settings.endGroup();
 
   settings.beginGroup("Volume");
@@ -207,10 +225,10 @@ bool Settings::saveFile(QString filePath) {
   settings.endGroup();
 
   settings.beginGroup("FolderView");
-  settings.setValue("Mode", viewMode_);
+  settings.setValue("Mode", viewModeToString(viewMode_));
   settings.setValue("ShowHidden", showHidden_);
-  settings.setValue("SortOrder", sortOrder_);
-  settings.setValue("SortColumn", (int)sortColumn_);
+  settings.setValue("SortOrder", sortOrderToString(sortOrder_));
+  settings.setValue("SortColumn", sortColumnToString(sortColumn_));
 
   // override config in libfm's FmConfig
   settings.setValue("BigIconSize", bigIconSize_);
@@ -218,16 +236,153 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("SidePaneIconSize", sidePaneIconSize_);
   settings.setValue("ThumbnailIconSize", thumbnailIconSize_);
   settings.endGroup();
-  
+
   settings.beginGroup("Window");
   settings.setValue("Width", windowWidth_);
   settings.setValue("Height", windowHeight_);
   settings.setValue("AlwaysShowTabs", alwaysShowTabs_);
   settings.setValue("ShowTabClose", showTabClose_);
   settings.setValue("SplitterPos", splitterPos_);
-  settings.setValue("SidePaneMode", sidePaneMode_);
+  // settings.setValue("SidePaneMode", sidePaneModeToString(sidePaneMode_));
   settings.endGroup();
 
+}
+
+static const char* bookmarkOpenMethodToString(int value) {
+  return "";
+}
+
+static int bookmarkOpenMethodFromString(const QString str) {
+  return 0;
+}
+
+static const char* viewModeToString(int value) {
+  const char* ret;
+  switch(value) {
+    case Fm::FolderView::IconMode:
+    default:
+      ret = "icon";
+      break;
+    case Fm::FolderView::CompactMode:
+      ret = "compact";
+      break;
+    case Fm::FolderView::DetailedListMode:
+      ret = "detailed";
+      break;
+    case Fm::FolderView::ThumbnailMode:
+      ret = "thumbnail";
+      break;
+  }
+  return ret;
+}
+
+static int viewModeFromString(const QString str) {
+  int ret;
+  if(str == "icon")
+    ret = Fm::FolderView::IconMode;
+  else if(str == "compact")
+    ret = Fm::FolderView::CompactMode;
+  else if(str == "detailed")
+    ret = Fm::FolderView::DetailedListMode;
+  else if(str == "thumbnail")
+    ret = Fm::FolderView::ThumbnailMode;
+  else
+    ret = Fm::FolderView::IconMode;
+  return ret;
+}
+
+static const char* sortOrderToString(Qt::SortOrder order) {
+  return (order == Qt::DescendingOrder ? "descending" : "ascending");
+}
+
+static Qt::SortOrder sortOrderFromString(const QString str) {
+  return (str == "descending" ? Qt::DescendingOrder : Qt::AscendingOrder);
+}
+
+static const char* sortColumnToString(int value) {
+  const char* ret;
+  switch(value) {
+    case Fm::FolderModel::ColumnFileName:
+    default:
+      ret = "name";
+      break;
+    case Fm::FolderModel::ColumnFileType:
+      ret = "type";
+      break;
+    case Fm::FolderModel::ColumnFileSize:
+      ret = "size";
+      break;
+    case Fm::FolderModel::ColumnFileMTime:
+      ret = "mtime";
+      break;
+    case Fm::FolderModel::ColumnFileOwner:
+      ret = "owner";
+      break;
+  }
+  return ret;
+}
+
+static int sortColumnFromString(const QString str) {
+  int ret;
+  if(str == "name")
+      ret = Fm::FolderModel::ColumnFileName;
+  else if(str == "type")
+    ret = Fm::FolderModel::ColumnFileType;
+  else if(str == "size")
+    ret = Fm::FolderModel::ColumnFileSize;
+  else if(str == "mtime")
+    ret = Fm::FolderModel::ColumnFileMTime;
+  else if(str == "owner")
+    ret = Fm::FolderModel::ColumnFileOwner;
+  else
+    ret = Fm::FolderModel::ColumnFileName;
+  return ret;
+}
+
+static const char* wallpaperModeToString(int value) {
+  const char* ret;
+  switch(value) {
+    case DesktopWindow::WallpaperNone:
+    default:
+      ret = "none";
+      break;
+    case DesktopWindow::WallpaperStretch:
+      ret = "stretch";
+      break;
+    case DesktopWindow::WallpaperFit:
+      ret = "fit";
+      break;
+    case DesktopWindow::WallpaperCenter:
+      ret = "center";
+      break;
+    case DesktopWindow::WallpaperTile:
+      ret = "tile";
+      break;
+  }
+  return ret;
+}
+
+static int wallpaperModeFromString(const QString str) {
+  int ret;
+  if(str == "stretch")
+    ret = DesktopWindow::WallpaperStretch;
+  else if(str == "fit")
+    ret = DesktopWindow::WallpaperFit;
+  else if(str == "center")
+    ret = DesktopWindow::WallpaperCenter;
+  else if(str == "tile")
+    ret = DesktopWindow::WallpaperTile;
+  else
+    ret = DesktopWindow::WallpaperNone;
+  return ret;
+}
+
+static const char* sidePaneModeToString(int value) {
+  return NULL;
+}
+
+static int sidePaneModeFromString(const QString str) {
+  return 0;
 }
 
 #include "settings.moc"
