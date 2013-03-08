@@ -25,6 +25,7 @@
 #include <QContextMenuEvent>
 #include "proxyfoldermodel.h"
 #include "folderitemdelegate.h"
+#include "dndactionmenu.h"
 
 using namespace Fm;
 
@@ -101,11 +102,13 @@ void FolderView::ListView::dragMoveEvent(QDragMoveEvent* e) {
 }
 
 void FolderView::ListView::dropEvent(QDropEvent* e) {
+
+  static_cast<FolderView*>(parent())->childDropEvent(e);
+
   if(movement() != Static)
     QListView::dropEvent(e);
   else
     QAbstractItemView::dropEvent(e);
-  static_cast<FolderView*>(parent())->childDropEvent(e);
 }
 
 
@@ -130,8 +133,8 @@ void FolderView::TreeView::dragMoveEvent(QDragMoveEvent* e) {
 }
 
 void FolderView::TreeView::dropEvent(QDropEvent* e) {
-  QTreeView::dropEvent(e);
   static_cast<FolderView*>(parent())->childDropEvent(e);
+  QTreeView::dropEvent(e);
 }
 
 
@@ -382,6 +385,12 @@ void FolderView::childDragMoveEvent(QDragMoveEvent* e) {
 
 void FolderView::childDropEvent(QDropEvent* e) {
   qDebug("drop");
+  if(e->keyboardModifiers() == Qt::NoModifier) {
+    // if no key modifiers are used, popup a menu
+    // to ask the user for the action he/she wants to perform.
+    Qt::DropAction action = DndActionMenu::askUser(QCursor::pos());
+    e->setDropAction(action);
+  }
 }
 
 #include "folderview.moc"

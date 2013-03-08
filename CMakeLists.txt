@@ -66,6 +66,7 @@ set(libfm_SRCS
   libfm-qt/fontbutton.cpp
   libfm-qt/browsehistory.cpp
   libfm-qt/utilities.cpp
+  libfm-qt/dndactionmenu.cpp
 )
 
 set(libfm_UIS

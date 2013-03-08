@@ -53,7 +53,7 @@ public:
   FmFileInfo* fileInfoFromIndex(const QModelIndex& index) const;
 
   virtual void sort(int column, Qt::SortOrder order = Qt::AscendingOrder);
-
+  
 Q_SIGNALS:
   void sortFilterChanged();
 

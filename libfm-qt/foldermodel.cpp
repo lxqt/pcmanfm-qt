@@ -340,6 +340,23 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
   qDebug("FolderModel::dropMimeData");
   if(!folder_)
     return false;
+  FmPath* destPath;
+  if(parent.isValid()) { // drop on an item
+    FmFileInfo* info;
+    if(row == -1 && column == -1)
+      info = fileInfoFromIndex(parent);
+    else {
+      QModelIndex itemIndex = parent.child(row, column);
+      info = fileInfoFromIndex(itemIndex);
+    }
+    if(info)
+      destPath = fm_file_info_get_path(info);
+    else
+      return false;
+  }
+  else { // drop on blank area of the folder
+    destPath = path();
+  }
 
   // FIXME: should we put this in dropEvent handler of FolderView instead?
   if(data->hasUrls()) {
@@ -347,13 +364,13 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
     FmPathList* srcPaths = pathListFromQUrls(data->urls());
     switch(action) {
       case Qt::CopyAction:
-        FileOperation::copyFiles(srcPaths, path());
+        FileOperation::copyFiles(srcPaths, destPath);
         break;
       case Qt::MoveAction:
-        FileOperation::moveFiles(srcPaths, path());
+        FileOperation::moveFiles(srcPaths, destPath);
         break;
       case Qt::LinkAction:
-        FileOperation::symlinkFiles(srcPaths, path());
+        FileOperation::symlinkFiles(srcPaths, destPath);
       default:
         fm_path_list_unref(srcPaths);
         return false;

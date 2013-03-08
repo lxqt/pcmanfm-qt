@@ -131,7 +131,7 @@ int FileOperationDialog::askRename(FmFileInfo* src, FmFileInfo* dest, QString& n
 
 FmJobErrorAction FileOperationDialog::error(GError* err, FmJobErrorSeverity severity) {
   if(severity >= FM_JOB_ERROR_MODERATE) {
-    QMessageBox::critical(this, tr("Error"), err->message);
+    QMessageBox::critical(this, tr("Error"), QString::fromUtf8(err->message));
     if(severity == FM_JOB_ERROR_CRITICAL)
       return FM_JOB_ABORT;
   }
