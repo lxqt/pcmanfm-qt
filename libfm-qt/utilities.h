@@ -25,6 +25,7 @@
 #include <QUrl>
 #include <QList>
 #include <libfm/fm.h>
+#include <sys/types.h>
 
 namespace Fm {
 
@@ -32,11 +33,19 @@ FmPathList* LIBFM_QT_API pathListFromQUrls(QList<QUrl> urls);
 
 void LIBFM_QT_API pasteFilesFromClipboard(FmPath* destPath, QWidget* parent = 0);
 
-void LIBFM_QT_API  copyFilesToClipboard(FmPathList* files);
+void LIBFM_QT_API copyFilesToClipboard(FmPathList* files);
 
 void LIBFM_QT_API cutFilesToClipboard(FmPathList* files);
 
 void LIBFM_QT_API renameFile(FmPath* file, QWidget* parent = 0);
+
+uid_t LIBFM_QT_API uidFromName(QString name);
+
+QString LIBFM_QT_API uidToName(uid_t uid);
+
+gid_t LIBFM_QT_API gidFromName(QString name);
+
+QString LIBFM_QT_API gidToName(gid_t gid);
 
 }
 

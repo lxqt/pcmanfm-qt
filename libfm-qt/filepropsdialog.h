@@ -50,9 +50,10 @@ public:
   }
 
 private:
-  void initGeneral();
+  void initGeneralPage();
   void initApplications();
-  void initPermissions();
+  void initPermissionsPage();
+  void initOwner();
 
   static void onDeepCountJobFinished(FmDeepCountJob* job, FilePropsDialog* pThis);
 
@@ -61,19 +62,22 @@ private Q_SLOTS:
   
 private:
   Ui::FilePropsDialog ui;
-  FmFileInfoList* fileInfos_;
-  FmFileInfo* fileInfo;
-  bool singleType;
-  bool singleFile;
-  bool allNative;
-  bool hasDir;
-  bool allDirs;
-  FmMimeType* mimeType;
-  GList* appInfos;
-  GAppInfo* defaultApp;
+  FmFileInfoList* fileInfos_; // list of all file infos
+  FmFileInfo* fileInfo; // file info of the first file in the list
+  bool singleType; // all files are of the same type?
+  bool singleFile; // only one file is selected?
+  bool hasDir; // is there any dir in the files?
+  bool allNative; // all files are on native UNIX filesystems (not virtual or remote)
 
-  gint32 uid; // owner uid
-  gint32 gid; // owner group
+  FmMimeType* mimeType; // mime type of the files
+  GList* appInfos; // applications used to open the file type
+  GAppInfo* defaultApp; // default application used to open the file type 
+
+  gint32 uid; // owner uid of the files, -1 means all files do not have the same uid
+  gint32 gid; // owner gid of the files, -1 means all files do not have the same uid
+  mode_t readPerm; // read permission of the files, -1 means all files do not have the same value
+  mode_t writePerm; // read permission of the files, -1 means all files do not have the same value
+  mode_t execPerm; // read permission of the files, -1 means all files do not have the same value
 
   FmDeepCountJob* deepCountJob; // job used to count total size
   QTimer* fileSizeTimer;

@@ -20,9 +20,23 @@
 
 #include "filepropsdialog.h"
 #include "icontheme.h"
+#include "utilities.h"
 #include <QStringBuilder>
+#include <sys/types.h>
+
+#define DIFFERENT_UIDS    ((uid)-1)
+#define DIFFERENT_GIDS    ((gid)-1)
+#define DIFFERENT_PERMS   ((mode_t)-1)
 
 using namespace Fm;
+
+enum {
+  ACCESS_NO_CHANGE = 0,
+  ACCESS_USER,
+  ACCESS_GROUP,
+  ACCESS_ALL,
+  ACCESS_NOBODY
+};
 
 FilePropsDialog::FilePropsDialog(FmFileInfoList* files, QWidget* parent, Qt::WindowFlags f):
   QDialog(parent, f),
@@ -46,15 +60,8 @@ FilePropsDialog::FilePropsDialog(FmFileInfoList* files, QWidget* parent, Qt::Win
   deepCountJob = fm_deep_count_job_new(paths, FM_DC_JOB_DEFAULT);
   fm_path_list_unref(paths);    
 
-  initGeneral();
-  initApplications();
-  initPermissions();
-    
-  fileSizeTimer = new QTimer(this);
-  connect(fileSizeTimer, SIGNAL(timeout()), SLOT(onFileSizeTimerTimeout()));
-  fileSizeTimer->start(600);
-  g_signal_connect(deepCountJob, "finished", G_CALLBACK(onDeepCountJobFinished), this);
-  fm_job_run_async(FM_JOB(deepCountJob));
+  initGeneralPage();
+  initPermissionsPage();
 }
 
 FilePropsDialog::~FilePropsDialog() {
@@ -100,11 +107,105 @@ void FilePropsDialog::initApplications() {
   }
 }
 
-void FilePropsDialog::initPermissions() {
+void FilePropsDialog::initPermissionsPage() {
+  // ownership handling
+  // get owner/group and mode of the first file in the list
+  uid = fm_file_info_get_uid(fileInfo);
+  gid = fm_file_info_get_gid(fileInfo);
+  mode_t mode = fm_file_info_get_mode(fileInfo);
+  readPerm = (mode & (S_IRUSR|S_IRGRP|S_IROTH));
+  writePerm = (mode & (S_IWUSR|S_IWGRP|S_IWOTH));
+  execPerm = (mode & (S_IXUSR|S_IXGRP|S_IXOTH));
+  allNative = fm_file_info_is_native(fileInfo);
+  hasDir = S_ISDIR(mode);
 
+  // check if all selected files belongs to the same owner/group or have the same mode
+  // at the same time, check if all files are on native unix filesystems
+  GList* l;
+  for(l = fm_file_info_list_peek_head_link(fileInfos_)->next; l; l = l->next) {
+    FmFileInfo* fi = FM_FILE_INFO(l->data);
+    if(allNative && !fm_file_info_is_native(fi))
+      allNative = false; // not all of the files are native
+
+    mode_t fi_mode = fm_file_info_get_mode(fi);
+    if(S_ISDIR(fi_mode))
+      hasDir = true;
+
+    if(uid != DIFFERENT_UIDS && uid != fm_file_info_get_uid(fi))
+      uid = DIFFERENT_UIDS;
+    if(gid != DIFFERENT_GIDS && gid != fm_file_info_get_gid(fi))
+      gid = DIFFERENT_GIDS;
+
+    if(readPerm != DIFFERENT_PERMS && readPerm != (fi_mode & (S_IRUSR|S_IRGRP|S_IROTH)))
+      readPerm = DIFFERENT_PERMS;
+    if(writePerm != DIFFERENT_PERMS && writePerm != (fi_mode & (S_IWUSR|S_IWGRP|S_IWOTH)))
+      writePerm = DIFFERENT_PERMS;
+    if(execPerm != DIFFERENT_PERMS && execPerm != (fi_mode & (S_IXUSR|S_IXGRP|S_IXOTH)))
+      execPerm = DIFFERENT_PERMS;
+  }
+
+  initOwner();
+
+  // if all files are of the same type, and some of them are dirs => all of the items are dirs
+  // rwx values have different meanings for dirs
+  // Let's make it clear for the users
+  if(singleType && hasDir) {
+    ui.readLabel->setText(tr("List files in the folder:"));
+    ui.writeLabel->setText(tr("Modify folder content:"));
+    ui.executableLabel->setText(tr("Read files in the folder:"));
+  }
+  else {
+    ui.readLabel->setText(tr("Read file content:"));
+    ui.writeLabel->setText(tr("Modify file content:"));
+    ui.executableLabel->setText(tr("Execute:"));
+  }
+
+  // read
+  int sel;
+  if(readPerm == DIFFERENT_PERMS)
+    sel = ACCESS_NO_CHANGE;
+  else if(readPerm & S_IROTH)
+    sel = ACCESS_ALL;
+  else if(readPerm & S_IRGRP)
+    sel = ACCESS_GROUP;
+  else if(readPerm & S_IRUSR)
+    sel = ACCESS_USER;
+  else
+    sel = ACCESS_NO_CHANGE;
+  ui.read->setCurrentIndex(sel);
+  
+  //write
+  if(writePerm == DIFFERENT_PERMS)
+    sel = ACCESS_NO_CHANGE;
+  else if(writePerm == 0)
+    sel = ACCESS_NOBODY;
+  else if(writePerm & S_IWOTH)
+    sel = ACCESS_ALL;
+  else if(writePerm & S_IWGRP)
+    sel = ACCESS_GROUP;
+  else if(writePerm & S_IWUSR)
+    sel = ACCESS_USER;
+  else
+    sel = ACCESS_NO_CHANGE;
+  ui.write->setCurrentIndex(sel);
+  
+  //exec
+  if(execPerm == DIFFERENT_PERMS)
+    sel = ACCESS_NO_CHANGE;
+  else if(execPerm == 0)
+    sel = ACCESS_NOBODY;
+  else if(execPerm & S_IXOTH)
+    sel = ACCESS_ALL;
+  else if(execPerm & S_IXGRP)
+    sel = ACCESS_GROUP;
+  else if(execPerm & S_IXUSR)
+    sel = ACCESS_USER;
+  else
+    sel = ACCESS_NO_CHANGE;
+  ui.execute->setCurrentIndex(sel);
 }
 
-void FilePropsDialog::initGeneral() {
+void FilePropsDialog::initGeneralPage() {
   // update UI
   if(singleType) { // all files are of the same mime-type
     FmIcon* icon = NULL;
@@ -142,7 +243,7 @@ void FilePropsDialog::initGeneral() {
   if(singleFile) { // only one file is selected
     char buf[128];
     FmPath* parent_path = fm_path_get_parent(fm_file_info_get_path(fileInfo));
-    char* parent_str = parent_path ? fm_path_display_name(parent_path, TRUE) : NULL;
+    char* parent_str = parent_path ? fm_path_display_name(parent_path, true) : NULL;
     time_t atime;
     struct tm tm;
 
@@ -168,7 +269,16 @@ void FilePropsDialog::initGeneral() {
     ui.fileName->setText(tr("Multiple Files"));
     ui.fileName->setEnabled(false);
   }
-  // on_timeout(data);
+
+  initApplications(); // init applications combo box
+
+  // calculate total file sizes
+  fileSizeTimer = new QTimer(this);
+  connect(fileSizeTimer, SIGNAL(timeout()), SLOT(onFileSizeTimerTimeout()));
+  fileSizeTimer->start(600);
+  g_signal_connect(deepCountJob, "finished", G_CALLBACK(onDeepCountJobFinished), this);
+  fm_job_run_async(FM_JOB(deepCountJob));
+  
 }
 
 /*static */ void FilePropsDialog::onDeepCountJobFinished(FmDeepCountJob* job, FilePropsDialog* pThis) {
@@ -224,5 +334,20 @@ void FilePropsDialog::accept() {
   
   QDialog::accept();
 }
+
+void FilePropsDialog::initOwner() {
+  if(allNative) {
+    if(uid != DIFFERENT_UIDS)
+      ui.owner->setText(uidToName(uid));
+    if(gid != DIFFERENT_GIDS)
+      ui.ownerGroup->setText(gidToName(gid));
+    
+    if(geteuid() != 0) { // on local filesystems, only root can do chown.
+      ui.owner->setEnabled(false);
+      ui.ownerGroup->setEnabled(false);
+    }
+  }
+}
+
 
 #include "filepropsdialog.moc"

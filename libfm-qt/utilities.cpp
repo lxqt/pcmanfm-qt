@@ -29,6 +29,10 @@
 #include <QMessageBox>
 #include "fileoperation.h"
 
+#include <pwd.h>
+#include <grp.h>
+#include <stdlib.h>
+
 using namespace Fm;
 
 namespace Fm {
@@ -132,6 +136,48 @@ void renameFile(FmPath* file, QWidget* parent) {
   }
   g_object_unref(dest);
   g_object_unref(gf);
+}
+
+uid_t uidFromName(QString name) {
+  uid_t ret;
+  if(name.at(0).digitValue() != -1) {
+    ret = uid_t(name.toUInt());
+  }
+  else {
+    struct passwd* pw = getpwnam(name.toAscii());
+    // FIXME: use getpwnam_r instead later to make it reentrant
+    ret = pw ? pw->pw_uid : -1;
+  }
+  return ret;
+}
+
+QString uidToName(uid_t uid) {
+  QString ret;
+  struct passwd* pw = getpwuid(uid);
+  if(pw)
+    ret = pw->pw_name;
+  return ret;
+}
+
+gid_t gidFromName(QString name) {
+  gid_t ret;
+  if(name.at(0).digitValue() != -1) {
+    ret = gid_t(name.toUInt());
+  }
+  else {
+    // FIXME: use getgrnam_r instead later to make it reentrant
+    struct group* grp = getgrnam(name.toAscii());
+    ret = grp ? grp->gr_gid : -1;
+  }
+  return ret;
+}
+
+QString gidToName(gid_t gid) {
+  QString ret;
+  struct group* grp = getgrgid(gid);
+  if(grp)
+    ret = grp->gr_name;
+  return ret;
 }
 
 };
