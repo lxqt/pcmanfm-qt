@@ -21,6 +21,7 @@
 #ifndef FM_APPLICATION_H
 #define FM_APPLICATION_H
 #include <QtGlobal>
+#include <QTranslator>
 #include "icontheme.h"
 
 namespace Fm {
@@ -30,12 +31,16 @@ public:
   Application();
   ~Application();
 
+  QTranslator* translator() {
+    return &translator_;
+  }
   static Application* instance();
 
 protected:
   
 private:
   IconTheme* iconTheme;
+  QTranslator translator_;
 };
 
 }

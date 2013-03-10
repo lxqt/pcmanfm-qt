@@ -92,6 +92,7 @@ private:
   QWeakPointer<PreferencesDialog> preferencesDialog_;
   QWeakPointer<DesktopPreferencesDialog> desktopPreferencesDialog_;
   QTranslator translator;
+  QTranslator qtTranslator;
 };
 
 }

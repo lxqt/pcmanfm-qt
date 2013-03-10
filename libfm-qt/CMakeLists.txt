@@ -56,9 +56,10 @@ add_library(fm-qt SHARED
 )
 
 set_property(
-   TARGET fm-qt APPEND
-   PROPERTY COMPILE_DEFINITIONS
-   LIBFM_QT_API=Q_DECL_EXPORT
+  TARGET fm-qt APPEND
+  PROPERTY COMPILE_DEFINITIONS
+  LIBFM_QT_API=Q_DECL_EXPORT
+  LIBFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/libfm-qt"
 )
 
 target_link_libraries(fm-qt

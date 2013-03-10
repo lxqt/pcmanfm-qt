@@ -19,6 +19,7 @@
 
 #include <libfm/fm.h>
 #include "application.h"
+#include <QLocale>
 
 using namespace Fm;
 
@@ -31,6 +32,7 @@ Application::Application() {
     fm_init(NULL);
     
     iconTheme = new IconTheme();
+    translator_.load("libfm-qt_" + QLocale::system().name(), LIBFM_DATA_DIR "/translations");
   }
   else {
     // TODO: only single instance is allowed, show a warning
@@ -46,3 +48,4 @@ Application::~Application() {
 Application* Application::instance() {
   return theApp;
 }
+

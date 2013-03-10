@@ -26,6 +26,8 @@
 #include <QDir>
 #include <QDesktopWidget>
 #include <QVector>
+#include <QLocale>
+#include <QLibraryInfo>
 
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
@@ -262,8 +264,16 @@ bool Application::parseCommandLineArgs(int argc, char** argv) {
 }
 
 void Application::init() {
-  bool loaded = translator.load("pcmanfm-qt_zh_TW", PCMANFM_DATA_DIR "/translations");
-  qDebug("loaded: %d", loaded);
+
+  // install the translations built-into Qt itself
+  qtTranslator.load("qt_" + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+  installTranslator(&qtTranslator);
+
+  // install libfm-qt translator
+  installTranslator(fmApp_.translator());
+
+  // install our own tranlations
+  translator.load("pcmanfm-qt_" + QLocale::system().name(), PCMANFM_DATA_DIR "/translations");
   installTranslator(&translator);
 }
 
