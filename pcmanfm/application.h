@@ -26,6 +26,7 @@
 #include "../libfm-qt/application.h"
 #include <QVector>
 #include <QWeakPointer>
+#include <QTranslator>
 
 namespace PCManFM {
 
@@ -41,6 +42,7 @@ public:
   Application(int& argc, char** argv);
   virtual ~Application();
 
+  void init();
   int exec();
 
   Settings& settings() {
@@ -89,6 +91,7 @@ private:
   QVector<DesktopWindow*> desktopWindows_;
   QWeakPointer<PreferencesDialog> preferencesDialog_;
   QWeakPointer<DesktopPreferencesDialog> desktopPreferencesDialog_;
+  QTranslator translator;
 };
 
 }

@@ -49,6 +49,7 @@ set_property(
    TARGET pcmanfm-qt APPEND
    PROPERTY COMPILE_DEFINITIONS
    LIBFM_QT_API=Q_DECL_IMPORT
+   PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/pcmanfm-qt"
 )
 target_link_libraries(pcmanfm-qt 
   ${QT_QTCORE_LIBRARY}
@@ -73,11 +74,15 @@ install(
 
 # add translation for pcmanfm-qt
 # See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
+#
 file(GLOB TS_FILES translations/*.ts)
 if(UPDATE_TRANSLATIONS)
-  qt4_create_translation(QM_FILES ${FILES_TO_TRANSLATE} ${TRANSLATIONS_FILES})
+  qt4_create_translation(QM_FILES
+    ${pcmanfm_SRCS}
+    ${pcmanfm_UIS_H}
+    ${TS_FILES})
 else (UPDATE_TRANSLATIONS)
-  qt4_add_translation(QM_FILES ${TRANSLATIONS_FILES})
+  qt4_add_translation(QM_FILES ${TS_FILES})
 endif(UPDATE_TRANSLATIONS) 
-add_custom_target (translations_target DEPENDS ${QM_FILES})
-install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/translations)
+add_custom_target (pcmanfm_translations DEPENDS ${QM_FILES})
+install(FILES ${QM_FILES} DESTINATION share/pcmanfm-qt/translations)

@@ -30,6 +30,12 @@ add_subdirectory(libfm-qt)
 # The main program pcmanfm ----------------------------------------------------
 add_subdirectory(pcmanfm)
 
+# update translations
+add_custom_target(update_translations DEPENDS
+  libfm_translations
+  pcmanfm_translations
+)
+
 # building tarball with CPack -------------------------------------------------
 # To create a source distribution, type:
 # make package_source

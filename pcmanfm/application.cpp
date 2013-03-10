@@ -261,6 +261,12 @@ bool Application::parseCommandLineArgs(int argc, char** argv) {
   return keepRunning;
 }
 
+void Application::init() {
+  bool loaded = translator.load("pcmanfm-qt_zh_TW", PCMANFM_DATA_DIR "/translations");
+  qDebug("loaded: %d", loaded);
+  installTranslator(&translator);
+}
+
 int Application::exec() {
 
   if(!parseCommandLineArgs(QCoreApplication::argc(), QCoreApplication::argv()))

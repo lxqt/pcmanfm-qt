@@ -85,3 +85,18 @@ configure_file(libfm-qt.pc.in libfm-qt.pc @ONLY)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libfm-qt.pc
   DESTINATION lib/pkgconfig
 )
+
+# add translation for pcmanfm-qt
+# See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
+#
+file(GLOB TS_FILES translations/*.ts)
+if(UPDATE_TRANSLATIONS)
+  qt4_create_translation(QM_FILES
+    ${libfm_SRCS}
+    ${libfm_UIS}
+    ${TS_FILES})
+else (UPDATE_TRANSLATIONS)
+  qt4_add_translation(QM_FILES ${TS_FILES})
+endif(UPDATE_TRANSLATIONS)
+add_custom_target (libfm_translations DEPENDS ${QM_FILES})
+install(FILES ${QM_FILES} DESTINATION share/libfm-qt/translations)
