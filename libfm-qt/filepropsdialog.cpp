@@ -19,6 +19,7 @@
 
 
 #include "filepropsdialog.h"
+#include "ui_file-props.h"
 #include "icontheme.h"
 #include "utilities.h"
 #include "fileoperation.h"
@@ -54,7 +55,8 @@ FilePropsDialog::FilePropsDialog(FmFileInfoList* files, QWidget* parent, Qt::Win
 
   setAttribute(Qt::WA_DeleteOnClose);
 
-  ui.setupUi(this);
+  ui = new Ui::FilePropsDialog();
+  ui->setupUi(this);
 
   if(singleType) {
     mimeType = fm_mime_type_ref(fm_file_info_get_mime_type(fileInfo));
@@ -69,6 +71,7 @@ FilePropsDialog::FilePropsDialog(FmFileInfoList* files, QWidget* parent, Qt::Win
 }
 
 FilePropsDialog::~FilePropsDialog() {
+  delete ui;
 
   // delete GAppInfo objects stored for Combobox
   if(appInfos) {
@@ -99,15 +102,15 @@ void FilePropsDialog::initApplications() {
       GIcon* gicon = g_app_info_get_icon(app);
       QString name = QString::fromUtf8(g_app_info_get_name(app));
       QVariant data = qVariantFromValue<void*>(app);
-      ui.openWith->addItem(IconTheme::icon(gicon), name, data);
+      ui->openWith->addItem(IconTheme::icon(gicon), name, data);
       if(app == defaultApp)
         defaultIndex = i;
     }
-    ui.openWith->setCurrentIndex(defaultIndex);
+    ui->openWith->setCurrentIndex(defaultIndex);
   }
   else {
-    ui.openWith->hide();
-    ui.openWithLabel->hide();
+    ui->openWith->hide();
+    ui->openWithLabel->hide();
   }
 }
 
@@ -163,7 +166,7 @@ void FilePropsDialog::initPermissionsPage() {
   if(singleType && hasDir) { // all files are dirs
     comboItems.append(tr("View folder content"));
     comboItems.append(tr("View and modify folder content"));
-    ui.executable->hide();
+    ui->executable->hide();
   }
   else { //not all of the files are dirs
     comboItems.append(tr("Read"));
@@ -171,9 +174,9 @@ void FilePropsDialog::initPermissionsPage() {
   }
   comboItems.append(tr("Forbidden"));
   QStringListModel* comboModel = new QStringListModel(comboItems, this);
-  ui.ownerPerm->setModel(comboModel);
-  ui.groupPerm->setModel(comboModel);
-  ui.otherPerm->setModel(comboModel);
+  ui->ownerPerm->setModel(comboModel);
+  ui->groupPerm->setModel(comboModel);
+  ui->otherPerm->setModel(comboModel);
 
   // owner
   ownerPermSel = ACCESS_NO_CHANGE;
@@ -189,7 +192,7 @@ void FilePropsDialog::initPermissionsPage() {
         ownerPermSel = ACCESS_FORBID;
     }
   }
-  ui.ownerPerm->setCurrentIndex(ownerPermSel);
+  ui->ownerPerm->setCurrentIndex(ownerPermSel);
 
   // owner and group
   groupPermSel = ACCESS_NO_CHANGE;
@@ -205,7 +208,7 @@ void FilePropsDialog::initPermissionsPage() {
         groupPermSel = ACCESS_FORBID;
     }
   }
-  ui.groupPerm->setCurrentIndex(groupPermSel);
+  ui->groupPerm->setCurrentIndex(groupPermSel);
 
   // other
   otherPermSel = ACCESS_NO_CHANGE;
@@ -222,7 +225,7 @@ void FilePropsDialog::initPermissionsPage() {
     }
 
   }
-  ui.otherPerm->setCurrentIndex(otherPermSel);
+  ui->otherPerm->setCurrentIndex(otherPermSel);
 
   // set the checkbox to partially checked state
   // when owner, group, and other have different executable flags set.
@@ -239,7 +242,7 @@ void FilePropsDialog::initPermissionsPage() {
       execCheckState = Qt::Unchecked;
     }
   }
-  ui.executable->setCheckState(execCheckState);
+  ui->executable->setCheckState(execCheckState);
 }
 
 void FilePropsDialog::initGeneralPage() {
@@ -255,25 +258,25 @@ void FilePropsDialog::initGeneralPage() {
     if(mimeType) {
       if(!icon) // get an icon from mime type if needed
         icon = fm_mime_type_get_icon(mimeType);
-      ui.fileType->setText(QString::fromUtf8(fm_mime_type_get_desc(mimeType)));
-      ui.mimeType->setText(QString::fromUtf8(fm_mime_type_get_type(mimeType)));
+      ui->fileType->setText(QString::fromUtf8(fm_mime_type_get_desc(mimeType)));
+      ui->mimeType->setText(QString::fromUtf8(fm_mime_type_get_type(mimeType)));
     }
     if(icon) {
-      ui.iconButton->setIcon(IconTheme::icon(icon));
+      ui->iconButton->setIcon(IconTheme::icon(icon));
     }
 
     if(singleFile && fm_file_info_is_symlink(fileInfo)) {
-      ui.target->setText(QString::fromUtf8(fm_file_info_get_target(fileInfo)));
+      ui->target->setText(QString::fromUtf8(fm_file_info_get_target(fileInfo)));
     }
     else {
-      ui.target->hide();
-      ui.targetLabel->hide();
+      ui->target->hide();
+      ui->targetLabel->hide();
     }
   } // end if(singleType)
   else { // not singleType, multiple files are selected at the same time
-    ui.fileType->setText(tr("Files of different types"));
-    ui.target->hide();
-    ui.targetLabel->hide();
+    ui->fileType->setText(tr("Files of different types"));
+    ui->target->hide();
+    ui->targetLabel->hide();
   }
 
   // FIXME: check if all files has the same parent dir, mtime, or atime
@@ -281,15 +284,15 @@ void FilePropsDialog::initGeneralPage() {
     FmPath* parent_path = fm_path_get_parent(fm_file_info_get_path(fileInfo));
     char* parent_str = parent_path ? fm_path_display_name(parent_path, true) : NULL;
 
-    ui.fileName->setText(QString::fromUtf8(fm_file_info_get_disp_name(fileInfo)));
+    ui->fileName->setText(QString::fromUtf8(fm_file_info_get_disp_name(fileInfo)));
     if(parent_str) {
-      ui.location->setText(QString::fromUtf8(parent_str));
+      ui->location->setText(QString::fromUtf8(parent_str));
       g_free(parent_str);
     }
     else
-      ui.location->clear();
+      ui->location->clear();
 
-    ui.lastModified->setText(QString::fromUtf8(fm_file_info_get_disp_mtime(fileInfo)));
+    ui->lastModified->setText(QString::fromUtf8(fm_file_info_get_disp_mtime(fileInfo)));
 
     // FIXME: need to encapsulate this in an libfm API.
     time_t atime;
@@ -298,11 +301,11 @@ void FilePropsDialog::initGeneralPage() {
     localtime_r(&atime, &tm);
     char buf[128];
     strftime(buf, sizeof(buf), "%x %R", &tm);
-    ui.lastAccessed->setText(QString::fromUtf8(buf));
+    ui->lastAccessed->setText(QString::fromUtf8(buf));
   }
   else {
-    ui.fileName->setText(tr("Multiple Files"));
-    ui.fileName->setEnabled(false);
+    ui->fileName->setText(tr("Multiple Files"));
+    ui->fileName->setEnabled(false);
   }
 
   initApplications(); // init applications combo box
@@ -345,14 +348,14 @@ void FilePropsDialog::onFileSizeTimerTimeout() {
     QString str = QString::fromUtf8(size_str) %
       QString(" (%1 B)").arg(deepCountJob->total_size);
       // tr(" (%n) byte(s)", "", deepCountJob->total_size);
-    ui.fileSize->setText(str);
+    ui->fileSize->setText(str);
 
     fm_file_size_to_str(size_str, sizeof(size_str), deepCountJob->total_ondisk_size,
                         fm_config->si_unit);
     str = QString::fromUtf8(size_str) %
       QString(" (%1 B)").arg(deepCountJob->total_ondisk_size);
       // tr(" (%n) byte(s)", "", deepCountJob->total_ondisk_size);
-    ui.onDiskSize->setText(str);
+    ui->onDiskSize->setText(str);
   }
 }
 
@@ -360,7 +363,7 @@ void FilePropsDialog::accept() {
 
   // applications
   if(mimeType) {
-    int i = ui.openWith->currentIndex();
+    int i = ui->openWith->currentIndex();
     GAppInfo* currentApp = G_APP_INFO(g_list_nth_data(appInfos, i));
     if(currentApp != defaultApp) {
       g_app_info_set_as_default_for_type(currentApp, fm_mime_type_get_type(mimeType), NULL);
@@ -368,14 +371,14 @@ void FilePropsDialog::accept() {
   }
 
   // check if chown or chmod is needed
-  guint32 newUid = uidFromName(ui.owner->text());
-  guint32 newGid = gidFromName(ui.ownerGroup->text());
+  guint32 newUid = uidFromName(ui->owner->text());
+  guint32 newGid = gidFromName(ui->ownerGroup->text());
   bool needChown = (newUid != uid || newGid != gid);
 
-  int newOwnerPermSel = ui.ownerPerm->currentIndex();
-  int newGroupPermSel = ui.groupPerm->currentIndex();
-  int newOtherPermSel = ui.otherPerm->currentIndex();
-  Qt::CheckState newExecCheckState = ui.executable->checkState();
+  int newOwnerPermSel = ui->ownerPerm->currentIndex();
+  int newGroupPermSel = ui->groupPerm->currentIndex();
+  int newOtherPermSel = ui->otherPerm->currentIndex();
+  Qt::CheckState newExecCheckState = ui->executable->checkState();
   bool needChmod = ((newOwnerPermSel != ownerPermSel) ||
                     (newGroupPermSel != groupPermSel) ||
                     (newOtherPermSel != otherPermSel) ||
@@ -450,13 +453,13 @@ void FilePropsDialog::accept() {
 void FilePropsDialog::initOwner() {
   if(allNative) {
     if(uid != DIFFERENT_UIDS)
-      ui.owner->setText(uidToName(uid));
+      ui->owner->setText(uidToName(uid));
     if(gid != DIFFERENT_GIDS)
-      ui.ownerGroup->setText(gidToName(gid));
+      ui->ownerGroup->setText(gidToName(gid));
     
     if(geteuid() != 0) { // on local filesystems, only root can do chown.
-      ui.owner->setEnabled(false);
-      ui.ownerGroup->setEnabled(false);
+      ui->owner->setEnabled(false);
+      ui->ownerGroup->setEnabled(false);
     }
   }
 }

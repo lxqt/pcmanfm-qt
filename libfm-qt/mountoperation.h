@@ -27,9 +27,6 @@
 #include <libfm/fm.h>
 #include <gio/gio.h>
 
-#include "ui_mount-operation-password.h"
-
-
 namespace Fm {
 
 // FIXME: the original APIs in gtk+ version of libfm for mounting devices is poor.

@@ -19,6 +19,7 @@
 
 
 #include "renamedialog.h"
+#include "ui_rename-dialog.h"
 #include <QStringBuilder>
 #include <QPushButton>
 #include "icontheme.h"
@@ -30,7 +31,8 @@ RenameDialog::RenameDialog(FmFileInfo* src, FmFileInfo* dest, QWidget* parent, Q
   action_(ActionIgnore),
   applyToAll_(false) {
 
-  ui.setupUi(this);
+  ui = new Ui::RenameDialog();
+  ui->setupUi(this);
 
   FmPath* path = fm_file_info_get_path(dest);
   FmIcon* srcIcon = fm_file_info_get_icon(src);
@@ -40,7 +42,7 @@ RenameDialog::RenameDialog(FmFileInfo* src, FmFileInfo* dest, QWidget* parent, Q
   QIcon icon = IconTheme::icon(srcIcon);
   QSize iconSize(fm_config->big_icon_size, fm_config->big_icon_size);
   QPixmap pixmap = icon.pixmap(iconSize);
-  ui.srcIcon->setPixmap(pixmap);
+  ui->srcIcon->setPixmap(pixmap);
 
   QString infoStr;
   const char* disp_size = fm_file_info_get_disp_size(src);
@@ -55,12 +57,12 @@ RenameDialog::RenameDialog(FmFileInfo* src, FmFileInfo* dest, QWidget* parent, Q
                 .arg(QString::fromUtf8(fm_file_info_get_desc(src)))
                 .arg(QString::fromUtf8(fm_file_info_get_disp_mtime(src)));
   }
-  ui.srcInfo->setText(infoStr);
+  ui->srcInfo->setText(infoStr);
 
   // show info for the dest file
   icon = IconTheme::icon(destIcon);
   pixmap = icon.pixmap(iconSize);
-  ui.destIcon->setPixmap(pixmap);
+  ui->destIcon->setPixmap(pixmap);
 
   disp_size = fm_file_info_get_disp_size(dest);
   if(disp_size) {
@@ -74,28 +76,28 @@ RenameDialog::RenameDialog(FmFileInfo* src, FmFileInfo* dest, QWidget* parent, Q
                 .arg(QString::fromUtf8(fm_file_info_get_desc(src)))
                 .arg(QString::fromUtf8(fm_file_info_get_disp_mtime(src)));
   }
-  ui.destInfo->setText(infoStr);
+  ui->destInfo->setText(infoStr);
 
   char* basename = fm_path_display_basename(path);
-  ui.fileName->setText(QString::fromUtf8(basename));
+  ui->fileName->setText(QString::fromUtf8(basename));
   oldName_ = basename;
   g_free(basename);
-  connect(ui.fileName, SIGNAL(textChanged(QString)), SLOT(onFileNameChanged(QString)));
+  connect(ui->fileName, SIGNAL(textChanged(QString)), SLOT(onFileNameChanged(QString)));
 
   // add "Rename" button
-  QAbstractButton* button = ui.buttonBox->button(QDialogButtonBox::Ok);
+  QAbstractButton* button = ui->buttonBox->button(QDialogButtonBox::Ok);
   button->setText(tr("&Overwrite"));
   // FIXME: there seems to be no way to place the Rename button next to the overwrite one.
-  renameButton_ = ui.buttonBox->addButton(tr("&Rename"), QDialogButtonBox::ActionRole);
+  renameButton_ = ui->buttonBox->addButton(tr("&Rename"), QDialogButtonBox::ActionRole);
   connect(renameButton_, SIGNAL(clicked(bool)), SLOT(onRenameClicked()));
   renameButton_->setEnabled(false); // disabled by default
 
-  button = ui.buttonBox->button(QDialogButtonBox::Ignore);
+  button = ui->buttonBox->button(QDialogButtonBox::Ignore);
   connect(button, SIGNAL(clicked(bool)), SLOT(onIgnoreClicked()));
 }
 
 RenameDialog::~RenameDialog() {
-
+  delete ui;
 }
 
 void RenameDialog::onRenameClicked() {
@@ -110,7 +112,7 @@ void RenameDialog::onIgnoreClicked() {
 // the overwrite button
 void RenameDialog::accept() {
   action_ = ActionOverwrite;
-  applyToAll_ = ui.applyToAll->isChecked();
+  applyToAll_ = ui->applyToAll->isChecked();
   QDialog::accept();
 }
 

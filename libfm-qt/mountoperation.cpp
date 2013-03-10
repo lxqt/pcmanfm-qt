@@ -24,6 +24,7 @@
 #include <QPushButton>
 #include "mountoperationpassworddialog.h"
 #include "mountoperationquestiondialog.h"
+#include "ui_mount-operation-password.h"
 
 using namespace Fm;
 

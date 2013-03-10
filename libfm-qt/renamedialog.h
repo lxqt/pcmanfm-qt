@@ -22,9 +22,13 @@
 #define FM_RENAMEDIALOG_H
 
 #include <QDialog>
-#include <qvarlengtharray.h>
-#include "ui_rename-dialog.h"
 #include <libfm/fm.h>
+
+namespace Ui {
+  class RenameDialog;
+};
+
+class QAbstractButton;
 
 namespace Fm {
 
@@ -65,7 +69,7 @@ protected:
   void reject();
 
 private:
-  Ui::RenameDialog ui;
+  Ui::RenameDialog* ui;
   QAbstractButton* renameButton_;
   Action action_;
   bool applyToAll_;

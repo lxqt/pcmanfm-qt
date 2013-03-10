@@ -22,6 +22,7 @@
 #include "fileoperation.h"
 #include "renamedialog.h"
 #include <QMessageBox>
+#include "ui_file-operation-dialog.h"
 
 using namespace Fm;
 
@@ -30,7 +31,8 @@ FileOperationDialog::FileOperationDialog(FileOperation* _operation):
   operation(_operation),
   defaultOption(-1) {
 
-  ui.setupUi(this);
+  ui = new Ui::FileOperationDialog();
+  ui->setupUi(this);
 
   QString title;
   QString message;
@@ -50,8 +52,8 @@ FileOperationDialog::FileOperationDialog(FileOperation* _operation):
   case FM_FILE_OP_DELETE:
       title = tr("Delete Files");
       message = tr("Deleting the following files");
-      ui.dest->hide();
-      ui.destLabel->hide();
+      ui->dest->hide();
+      ui->destLabel->hide();
       break;
   case FM_FILE_OP_LINK:
       title = tr("Create Symlinks");
@@ -60,27 +62,28 @@ FileOperationDialog::FileOperationDialog(FileOperation* _operation):
   case FM_FILE_OP_CHANGE_ATTR:
       title = tr("Change Attributes");
       message = tr("Changing attributes of the following files:");
-      ui.dest->hide();
-      ui.destLabel->hide();
+      ui->dest->hide();
+      ui->destLabel->hide();
       break;
   case FM_FILE_OP_UNTRASH:
       title = tr("Restore Trashed Files");
       message = tr("Restoring the following files from trash can:");
-      ui.dest->hide();
-      ui.destLabel->hide();
+      ui->dest->hide();
+      ui->destLabel->hide();
       break;
   }
-  ui.message->setText(message);
+  ui->message->setText(message);
   setWindowTitle(title);
 }
 
 
 FileOperationDialog::~FileOperationDialog() {
+  delete ui;
 }
 
 void FileOperationDialog::setDestPath(FmPath* dest) {
   char* pathStr = fm_path_display_name(dest, false);
-  ui.dest->setText(QString::fromUtf8(pathStr));
+  ui->dest->setText(QString::fromUtf8(pathStr));
   g_free(pathStr);
 }
 
@@ -89,7 +92,7 @@ void FileOperationDialog::setSourceFiles(FmPathList* srcFiles) {
   for(l = fm_path_list_peek_head_link(srcFiles); l; l = l->next) {
     FmPath* path = FM_PATH(l->data);
     char* pathStr = fm_path_display_name(path, false);
-    ui.sourceFiles->addItem(QString::fromUtf8(pathStr));
+    ui->sourceFiles->addItem(QString::fromUtf8(pathStr));
     g_free(pathStr);
   }
 }
@@ -139,11 +142,11 @@ FmJobErrorAction FileOperationDialog::error(GError* err, FmJobErrorSeverity seve
 }
 
 void FileOperationDialog::setCurFile(QString cur_file) {
-  ui.curFile->setText(cur_file);
+  ui->curFile->setText(cur_file);
 }
 
 void FileOperationDialog::setPercent(unsigned int percent) {
-  ui.progressBar->setValue(percent);
+  ui->progressBar->setValue(percent);
 }
 
 void FileOperationDialog::setPrepared() {

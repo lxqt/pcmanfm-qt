@@ -22,13 +22,16 @@
 #define FM_FILEOPERATIONDIALOG_H
 
 #include <QDialog>
-#include "ui_file-operation-dialog.h"
 #include <libfm/fm.h>
+
+namespace Ui {
+  class FileOperationDialog;
+};
 
 namespace Fm {
 
 class FileOperation;
-  
+
 class LIBFM_QT_API FileOperationDialog : public QDialog {
 Q_OBJECT
 public:
@@ -48,7 +51,7 @@ public:
   virtual void reject();
   
 private:
-  Ui::FileOperationDialog ui;
+  Ui::FileOperationDialog* ui;
   FileOperation* operation;
   int defaultOption;
 };

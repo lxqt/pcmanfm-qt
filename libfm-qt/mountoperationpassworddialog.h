@@ -22,8 +22,11 @@
 #define FM_MOUNTOPERATIONPASSWORDDIALOG_H
 
 #include <QDialog>
-#include "ui_mount-operation-password.h"
 #include <gio/gio.h>
+
+namespace Ui {
+  class MountOperationPasswordDialog;
+};
 
 namespace Fm {
   
@@ -46,7 +49,7 @@ private Q_SLOTS:
   void onAnonymousToggled(bool checked);
   
 private:
-  Ui::MountOperationPasswordDialog ui;
+  Ui::MountOperationPasswordDialog* ui;
   MountOperation* mountOperation;
   bool needPassword;
   bool needUserName;

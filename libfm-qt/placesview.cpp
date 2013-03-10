@@ -23,6 +23,7 @@
 #include "mountoperation.h"
 #include <QMenu>
 #include <QContextMenuEvent>
+#include <QHeaderView>
 
 using namespace Fm;
 

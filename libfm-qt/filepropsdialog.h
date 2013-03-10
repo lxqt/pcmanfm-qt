@@ -23,8 +23,11 @@
 
 #include <QDialog>
 #include <QTimer>
-#include "ui_file-props.h"
 #include <libfm/fm.h>
+
+namespace Ui {
+  class FilePropsDialog;
+};
 
 namespace Fm {
 
@@ -61,7 +64,7 @@ private Q_SLOTS:
   void onFileSizeTimerTimeout();
   
 private:
-  Ui::FilePropsDialog ui;
+  Ui::FilePropsDialog* ui;
   FmFileInfoList* fileInfos_; // list of all file infos
   FmFileInfo* fileInfo; // file info of the first file in the list
   bool singleType; // all files are of the same type?

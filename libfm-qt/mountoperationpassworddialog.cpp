@@ -19,6 +19,7 @@
 
 
 #include "mountoperationpassworddialog.h"
+#include "ui_mount-operation-password.h"
 #include "mountoperation.h"
 
 using namespace Fm;
@@ -34,70 +35,71 @@ MountOperationPasswordDialog::MountOperationPasswordDialog(MountOperation* op, G
 
   setAttribute(Qt::WA_DeleteOnClose);
 
-  ui.setupUi(this);
+  ui = new Ui::MountOperationPasswordDialog();
+  ui->setupUi(this);
 
   // change the text of Ok button to Connect
-  ui.buttonBox->buttons().first()->setText(tr("&Connect"));
-  connect(ui.Anonymous, SIGNAL(toggled(bool)), SLOT(onAnonymousToggled(bool)));
+  ui->buttonBox->buttons().first()->setText(tr("&Connect"));
+  connect(ui->Anonymous, SIGNAL(toggled(bool)), SLOT(onAnonymousToggled(bool)));
 
   if(canAnonymous) {
     // select ananymous by default if applicable.
-    ui.Anonymous->setChecked(true);
+    ui->Anonymous->setChecked(true);
   }
   else {
-    ui.Anonymous->setEnabled(false);
+    ui->Anonymous->setEnabled(false);
   }
   if(!needUserName) {
-    ui.username->setEnabled(false);
+    ui->username->setEnabled(false);
   }
   if(!needPassword) {
-    ui.password->setEnabled(false);
+    ui->password->setEnabled(false);
   }
   if(!needDomain) {
-    ui.domain->hide();
-    ui.domainLabel->hide();
+    ui->domain->hide();
+    ui->domainLabel->hide();
   }
   if(canSavePassword) {
-    ui.sessionPassword->setChecked(true);
+    ui->sessionPassword->setChecked(true);
   }
   else {
-    ui.storePassword->setEnabled(false);
-    ui.sessionPassword->setEnabled(false);
-    ui.forgetPassword->setChecked(true);
+    ui->storePassword->setEnabled(false);
+    ui->sessionPassword->setEnabled(false);
+    ui->forgetPassword->setChecked(true);
   }
 }
 
 MountOperationPasswordDialog::~MountOperationPasswordDialog() {
-
+  delete ui;
 }
 
 void MountOperationPasswordDialog::onAnonymousToggled(bool checked) {
   // disable username/password entries if anonymous mode is used
   bool useUserPassword = !checked;
   if(needUserName)
-    ui.username->setEnabled(useUserPassword);
+    ui->username->setEnabled(useUserPassword);
   if(needPassword)
-    ui.password->setEnabled(useUserPassword);
+    ui->password->setEnabled(useUserPassword);
   if(needDomain)
-    ui.domain->setEnabled(useUserPassword);
+    ui->domain->setEnabled(useUserPassword);
 
   if(canSavePassword) {
-    ui.forgetPassword->setEnabled(useUserPassword);
-    ui.sessionPassword->setEnabled(useUserPassword);
-    ui.storePassword->setEnabled(useUserPassword);
+    ui->forgetPassword->setEnabled(useUserPassword);
+    ui->sessionPassword->setEnabled(useUserPassword);
+    ui->storePassword->setEnabled(useUserPassword);
   }
 }
 
 void MountOperationPasswordDialog::setMessage(QString message) {
-  ui.message->setText(message);
+  ui->message->setText(message);
 }
 
 void MountOperationPasswordDialog::setDefaultDomain(QString domain) {
-  ui.domain->setText(domain);
+  ui->domain->setText(domain);
 }
 
 void MountOperationPasswordDialog::setDefaultUser(QString user) {
-  ui.username->setText(user);
+  ui->username->setText(user);
 }
 
 void MountOperationPasswordDialog::done(int r) {
@@ -106,13 +108,13 @@ void MountOperationPasswordDialog::done(int r) {
   if(r == QDialog::Accepted) {
     
     if(needUserName)
-      g_mount_operation_set_username(gmop, ui.username->text().toUtf8());
+      g_mount_operation_set_username(gmop, ui->username->text().toUtf8());
     if(needDomain)
-      g_mount_operation_set_domain(gmop, ui.domain->text().toUtf8());
+      g_mount_operation_set_domain(gmop, ui->domain->text().toUtf8());
     if(needPassword)
-      g_mount_operation_set_password(gmop, ui.password->text().toUtf8());
+      g_mount_operation_set_password(gmop, ui->password->text().toUtf8());
     if(canAnonymous)
-      g_mount_operation_set_anonymous(gmop, ui.Anonymous->isChecked());
+      g_mount_operation_set_anonymous(gmop, ui->Anonymous->isChecked());
 
     g_mount_operation_reply(gmop, G_MOUNT_OPERATION_HANDLED);
   }
