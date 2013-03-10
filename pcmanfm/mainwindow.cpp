@@ -15,6 +15,7 @@
 #include "bookmarkaction.h"
 #include "fileoperation.h"
 #include "utilities.h"
+#include "filepropsdialog.h"
 #include "ui_about.h"
 #include "application.h"
 
@@ -203,6 +204,27 @@ void MainWindow::on_actionCloseWindow_triggered() {
   // FIXME: should we save state here?
   close();
   // the window will be deleted automatically on close
+}
+
+void MainWindow::on_actionFileProperties_triggered() {
+  TabPage* page = currentPage();
+  if(page) {
+    FmFileInfoList* files = page->selectedFiles();
+    Fm::FilePropsDialog::showForFiles(files);
+    fm_file_info_list_unref(files);
+  }
+}
+
+void MainWindow::on_actionFolderProperties_triggered() {
+  TabPage* page = currentPage();
+  if(page) {
+    FmFolder* folder = page->folder();
+    if(folder) {
+      FmFileInfo* info = fm_folder_get_info(folder);
+      if(info)
+        Fm::FilePropsDialog::showForFile(info);
+    }
+  }
 }
 
 void MainWindow::on_actionShowHidden_triggered(bool checked) {

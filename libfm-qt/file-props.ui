@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>362</width>
-    <height>383</height>
+    <width>389</width>
+    <height>412</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,7 +25,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="generalPage">
       <attribute name="title">
@@ -228,6 +228,20 @@
          </property>
         </widget>
        </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Last accessed:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLabel" name="lastAccessed">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="permissionsPage">
@@ -317,124 +331,64 @@
             <widget class="QWidget" name="page">
              <layout class="QFormLayout" name="formLayout_3">
               <item row="0" column="0">
-               <widget class="QLabel" name="readLabel">
+               <widget class="QLabel" name="ownerLabel">
                 <property name="text">
-                 <string/>
+                 <string>Owner:</string>
                 </property>
                </widget>
               </item>
               <item row="0" column="1">
-               <widget class="QComboBox" name="read">
+               <widget class="QComboBox" name="ownerPerm">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
-                <item>
-                 <property name="text">
-                  <string>---</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Only owner</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Owner and group</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Everyone</string>
-                 </property>
-                </item>
                </widget>
               </item>
               <item row="1" column="0">
-               <widget class="QLabel" name="writeLabel">
+               <widget class="QLabel" name="groupLabel">
                 <property name="text">
-                 <string/>
+                 <string>Group:</string>
                 </property>
                </widget>
               </item>
               <item row="1" column="1">
-               <widget class="QComboBox" name="write">
+               <widget class="QComboBox" name="groupPerm">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
-                <item>
-                 <property name="text">
-                  <string>---</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Only owner</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Owner and group</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Everyone</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Nobody</string>
-                 </property>
-                </item>
                </widget>
               </item>
               <item row="2" column="0">
-               <widget class="QLabel" name="executableLabel">
+               <widget class="QLabel" name="otherLabel">
                 <property name="text">
-                 <string/>
+                 <string>Other:</string>
                 </property>
                </widget>
               </item>
               <item row="2" column="1">
-               <widget class="QComboBox" name="execute">
+               <widget class="QComboBox" name="otherPerm">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
-                <item>
-                 <property name="text">
-                  <string>---</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Only owner</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Owner and group</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Everyone</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Nobody</string>
-                 </property>
-                </item>
+               </widget>
+              </item>
+              <item row="3" column="0" colspan="2">
+               <widget class="QCheckBox" name="executable">
+                <property name="text">
+                 <string>Make the file executable</string>
+                </property>
+                <property name="tristate">
+                 <bool>true</bool>
+                </property>
                </widget>
               </item>
              </layout>
@@ -656,6 +610,9 @@
             </item>
             <item>
              <widget class="QPushButton" name="pushButton">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
               <property name="text">
                <string>Advanced Mode</string>
               </property>
@@ -665,13 +622,6 @@
              </widget>
             </item>
            </layout>
-          </item>
-          <item>
-           <widget class="QCheckBox" name="recursive">
-            <property name="text">
-             <string>Apply changes to all subfolders and their contents</string>
-            </property>
-           </widget>
           </item>
          </layout>
         </widget>

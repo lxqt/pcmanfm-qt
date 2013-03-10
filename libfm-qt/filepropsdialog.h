@@ -75,9 +75,14 @@ private:
 
   gint32 uid; // owner uid of the files, -1 means all files do not have the same uid
   gint32 gid; // owner gid of the files, -1 means all files do not have the same uid
-  mode_t readPerm; // read permission of the files, -1 means all files do not have the same value
-  mode_t writePerm; // read permission of the files, -1 means all files do not have the same value
-  mode_t execPerm; // read permission of the files, -1 means all files do not have the same value
+  mode_t ownerPerm; // read permission of the files, -1 means not all files have the same value
+  int ownerPermSel;
+  mode_t groupPerm; // read permission of the files, -1 means not all files have the same value
+  int groupPermSel;
+  mode_t otherPerm; // read permission of the files, -1 means not all files have the same value
+  int otherPermSel;
+  mode_t execPerm; // exec permission of the files
+  Qt::CheckState execCheckState;
 
   FmDeepCountJob* deepCountJob; // job used to count total size
   QTimer* fileSizeTimer;

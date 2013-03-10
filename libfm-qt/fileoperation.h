@@ -51,6 +51,19 @@ public:
     fm_file_ops_job_set_dest(job_, dest);
   }
 
+  void setChmod(mode_t newMode, mode_t newModeMask) {
+    fm_file_ops_job_set_chmod(job_, newMode, newModeMask);
+  }
+
+  void setChown(gint uid, gint gid) {
+    fm_file_ops_job_set_chown(job_, uid, gid);
+  }
+
+  // This only work for change attr jobs.
+  void setRecursiveChattr(bool recursive) {
+    fm_file_ops_job_set_recursive(job_, (gboolean)recursive);
+  }
+
   bool run();
 
   void cancel() {
@@ -117,6 +130,7 @@ private:
   QTimer* uiTimer;
   QString curFile;
   bool autoDestroy_;
+
 };
 
 }
