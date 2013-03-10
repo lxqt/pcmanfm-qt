@@ -1,6 +1,6 @@
 /*
     <one line to give the library's name and an idea of what it does.>
-    Copyright (C) 2012  <copyright holder> <email>
+    Copyright (C) 2012  Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
