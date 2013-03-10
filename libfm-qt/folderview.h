@@ -44,7 +44,7 @@ public:
     DetailedListMode,
     ThumbnailMode,
     LastViewMode = ThumbnailMode,
-    NumViewModes = (LastViewMode - FirstViewMode)
+    NumViewModes = (LastViewMode - FirstViewMode + 1)
   };
 
   enum ClickType {
@@ -81,16 +81,13 @@ protected:
 
 public:
   explicit FolderView(ViewMode _mode = IconMode, QWidget* parent = 0);
-  ~FolderView();
+  virtual ~FolderView();
 
   void setViewMode(ViewMode _mode);
   ViewMode viewMode() const;
   
   void setIconSize(ViewMode mode, QSize size);
   QSize iconSize(ViewMode mode) const;
-
-  void setGridSize(QSize size);
-  QSize gridSize() const;
 
   QAbstractItemView* childView() const;
 
@@ -148,7 +145,6 @@ private:
   ProxyFolderModel* model_;
   ViewMode mode;
   QSize iconSize_[NumViewModes];
-  QSize gridSize_;
 };
 
 }

@@ -156,6 +156,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     view = NULL;
   }
   mode = _mode;
+  QSize iconSize = iconSize_[mode - FirstViewMode];
 
   if(mode == DetailedListMode) {
     TreeView* treeView = new TreeView(this);
@@ -180,17 +181,14 @@ void FolderView::setViewMode(ViewMode _mode) {
     FolderItemDelegate* delegate = new FolderItemDelegate(listView);
     listView->setItemDelegateForColumn(FolderModel::ColumnFileName, delegate);
     // FIXME: should we expose the delegate?
-
-    listView->setDragDropMode(QAbstractItemView::DragDrop);
     listView->setMovement(QListView::Static);
     listView->setResizeMode(QListView::Adjust);
     listView->setWrapping(true);
-    
     switch(mode) {
       case IconMode: {
         listView->setViewMode(QListView::IconMode);
+        // listView->setGridSize(QSize(iconSize.width() * 1.6, iconSize.height() * 2));
         listView->setGridSize(QSize(80, 100));
-        listView->setSpacing(10);
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
         break;
@@ -216,7 +214,8 @@ void FolderView::setViewMode(ViewMode _mode) {
 
     view->setContextMenuPolicy(Qt::NoContextMenu); // defer the context menu handling to parent widgets
     view->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-    view->setIconSize(iconSize_[mode - FirstViewMode]);
+    view->setIconSize(iconSize);
+
     view->setSelectionMode(QAbstractItemView::ExtendedSelection);
     layout()->addWidget(view);
 
@@ -243,14 +242,6 @@ void FolderView::setIconSize(ViewMode mode, QSize size) {
 QSize FolderView::iconSize(ViewMode mode) const {
   Q_ASSERT(mode >= FirstViewMode && mode <= LastViewMode);
   return iconSize_[mode - FirstViewMode];
-}
-
-void FolderView::setGridSize(QSize size) {
-  gridSize_ = size;
-}
-
-QSize FolderView::gridSize() const {
-  return gridSize_;
 }
 
 FolderView::ViewMode FolderView::viewMode() const {
