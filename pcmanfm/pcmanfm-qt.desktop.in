@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Icon=system-file-manager
+Name=PCManFM File Manager
+GenericName=File Manager
+Comment=Browse the file system and manage the files
+Categories=FileManager;Utility;Core;Qt;
+Exec=@CMAKE_INSTALL_PREFIX@/bin/pcmanfm-qt %U
+StartupNotify=true
+Terminal=false
+MimeType=x-directory/normal;inode/directory;

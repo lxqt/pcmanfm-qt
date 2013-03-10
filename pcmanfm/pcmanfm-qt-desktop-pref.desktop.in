@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Icon=user-desktop
+Name=Desktop Preferences
+Comment=Change desktop wallpapers and behavior of desktop manager
+Categories=Settings;Qt;DesktopSettings;
+Exec=@CMAKE_INSTALL_PREFIX@/bin/pcmanfm-qt --desktop-pref=general
+StartupNotify=true
+Terminal=false
+# NotShowIn=GNOME;XFCE;KDE;

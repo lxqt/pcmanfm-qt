@@ -174,6 +174,14 @@ install(TARGETS
   pcmanfm-qt
   RUNTIME DESTINATION bin
 )
+# install a desktop entry file for pcmanfm-qt and desktop preferences
+configure_file(pcmanfm/pcmanfm-qt.desktop.in pcmanfm-qt.desktop @ONLY)
+configure_file(pcmanfm/pcmanfm-qt-desktop-pref.desktop.in pcmanfm-qt-desktop-pref.desktop @ONLY)
+install(
+  FILES ${PROJECT_BINARY_DIR}/pcmanfm-qt.desktop
+        ${PROJECT_BINARY_DIR}/pcmanfm-qt-desktop-pref.desktop
+  DESTINATION share/applications
+)
 
 # building tarball with CPack -------------------------------------------------
 # To create a source distribution, type:
