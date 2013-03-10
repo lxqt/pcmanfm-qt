@@ -1,6 +1,10 @@
 project(pcmanfm-qt)
 cmake_minimum_required(VERSION 2.6)
 
+# Setup common compiler flags/variables ---------------------------------------
+set(PCMANFM_VERSION "0.1")
+set(LIBFM_QT_VERSION "0.1")
+
 find_package(Qt4 4.7 REQUIRED  QtCore QtGui QtDBus)
 include(${QT_USE_FILE})
 
@@ -30,6 +34,7 @@ link_directories(
   ${LIBFM_LIBRARY_DIRS}
 )
 
+# set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
 set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive -fvisibility=hidden -fno-exceptions")
 
 #set(qmodeltest_SRCS
@@ -38,6 +43,8 @@ set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive -fvisibility=hidden -fno-exce
 #  qmodeltest/dynamictreemodel.h
   # qmodeltest/tst_modeltest.cpp
 #)
+
+# The core library libfm-qt ---------------------------------------------------
 
 set(libfm_SRCS
   libfm-qt/bookmarkaction.cpp
@@ -108,7 +115,13 @@ install(TARGETS fm-qt
   PUBLIC_HEADER 
 )
 
+# install a pkgconfig file for libfm-qt
+configure_file(libfm-qt/libfm-qt.pc.in libfm-qt.pc @ONLY)
+install(FILES ${PROJECT_BINARY_DIR}/libfm-qt.pc
+  DESTINATION lib/pkgconfig
+)
 
+# The main program pcmanfm ----------------------------------------------------
 set(pcmanfm_SRCS
   pcmanfm/application.cpp
   pcmanfm/pcmanfm.cpp
@@ -162,7 +175,7 @@ install(TARGETS
   RUNTIME DESTINATION bin
 )
 
-# building tarball with CPack ------------------------------------------
+# building tarball with CPack -------------------------------------------------
 # To create a source distribution, type:
 # make package_source
 include (InstallRequiredSystemLibraries)
