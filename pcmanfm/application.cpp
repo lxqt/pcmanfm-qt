@@ -364,8 +364,8 @@ void Application::preferences(QString page) {
     // TODO: set page
   }
   preferencesDialog_.data()->show();
-  desktopPreferencesDialog_.data()->raise();
-  desktopPreferencesDialog_.data()->activateWindow();
+  preferencesDialog_.data()->raise();
+  preferencesDialog_.data()->activateWindow();
 }
 
 void Application::setWallpaper(QString path, QString modeString) {
