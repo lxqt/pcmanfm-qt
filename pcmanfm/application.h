@@ -23,7 +23,7 @@
 
 #include <QApplication>
 #include "settings.h"
-#include "../libfm-qt/application.h"
+#include "libfmqt.h"
 #include <QVector>
 #include <QWeakPointer>
 #include <QTranslator>
@@ -49,8 +49,8 @@ public:
     return settings_;
   }
   
-  Fm::Application& fmApp() {
-    return fmApp_;
+  Fm::LibFmQt& libFm() {
+    return libFm_;
   }
 
   // public interface exported via dbus
@@ -83,7 +83,7 @@ protected:
 
 private:
   bool isPrimaryInstance;
-  Fm::Application fmApp_;
+  Fm::LibFmQt libFm_;
   Settings settings_;
   QString profileName;
   bool daemonMode_;

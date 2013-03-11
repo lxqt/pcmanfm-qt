@@ -361,7 +361,7 @@
     <message>
         <location filename="../filepropsdialog.cpp" line="172"/>
         <source>Read</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">讀取</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="173"/>
@@ -569,12 +569,12 @@
     <message>
         <location filename="../placesview.cpp" line="171"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">重新命名</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="174"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">刪除</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="184"/>

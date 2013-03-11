@@ -39,7 +39,7 @@ static const char* ifaceName = "org.pcmanfm.Application";
 
 Application::Application(int& argc, char** argv):
   QApplication(argc, argv),
-  fmApp_(),
+  libFm_(),
   settings_(),
   profileName("default"),
   daemonMode_(false),
@@ -270,7 +270,7 @@ void Application::init() {
   installTranslator(&qtTranslator);
 
   // install libfm-qt translator
-  installTranslator(fmApp_.translator());
+  installTranslator(libFm_.translator());
 
   // install our own tranlations
   translator.load("pcmanfm-qt_" + QLocale::system().name(), PCMANFM_DATA_DIR "/translations");

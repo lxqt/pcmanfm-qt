@@ -11,9 +11,9 @@ link_directories(
 )
 
 set(libfm_SRCS
+  libfmqt.cpp
   bookmarkaction.cpp
   sidepane.cpp
-  application.cpp
   icontheme.cpp
   filelauncher.cpp
   foldermodel.cpp

@@ -17,32 +17,35 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+#include <libfm/fm.h>
+#include "libfmqt.h"
+#include <QLocale>
 
-#ifndef FM_APPLICATION_H
-#define FM_APPLICATION_H
-#include <QtGlobal>
-#include <QTranslator>
-#include "icontheme.h"
+using namespace Fm;
 
-namespace Fm {
+LibFmQt* theApp = NULL;
 
-class LIBFM_QT_API Application {
-public:
-  Application();
-  ~Application();
-
-  QTranslator* translator() {
-    return &translator_;
+LibFmQt::LibFmQt() {
+  if(!theApp) {
+    theApp = this;
+    g_type_init();
+    fm_init(NULL);
+    
+    iconTheme = new IconTheme();
+    translator_.load("libfm-qt_" + QLocale::system().name(), LIBFM_DATA_DIR "/translations");
   }
-  static Application* instance();
-
-protected:
-  
-private:
-  IconTheme* iconTheme;
-  QTranslator translator_;
-};
-
+  else {
+    // TODO: only single instance is allowed, show a warning
+  }
 }
 
-#endif // FM_APPLICATION_H
+LibFmQt::~LibFmQt() {
+  if(iconTheme)
+    delete iconTheme;
+  fm_finalize();
+}
+
+LibFmQt* LibFmQt::instance() {
+  return theApp;
+}
+

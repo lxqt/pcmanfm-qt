@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 2.6)
 set(PCMANFM_VERSION "0.1")
 set(LIBFM_QT_VERSION "0.1")
 
-find_package(Qt4 4.7 REQUIRED  QtCore QtGui QtDBus)
+find_package(Qt4 4.6 REQUIRED  QtCore QtGui QtDBus)
 include(${QT_USE_FILE})
 
 find_package(PkgConfig)
