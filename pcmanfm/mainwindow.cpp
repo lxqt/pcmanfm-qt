@@ -27,6 +27,8 @@
 #include <QMessageBox>
 #include <QSplitter>
 #include <QToolButton>
+#include <QShortcut>
+#include <QKeySequence>
 
 #include "tabpage.h"
 #include "filelauncher.h"
@@ -35,6 +37,7 @@
 #include "fileoperation.h"
 #include "utilities.h"
 #include "filepropsdialog.h"
+#include "pathedit.h"
 #include "ui_about.h"
 #include "application.h"
 
@@ -80,7 +83,7 @@ MainWindow::MainWindow(FmPath* path):
   connect(ui.sidePane, SIGNAL(chdirRequested(int,FmPath*)), SLOT(onSidePaneChdirRequested(int,FmPath*)));
   
   // path bar
-  pathEntry = new QLineEdit(this);
+  pathEntry = new Fm::PathEdit(this);
   connect(pathEntry, SIGNAL(returnPressed()), SLOT(onPathEntryReturnPressed()));
   ui.toolBar->insertWidget(ui.actionGo, pathEntry);
 
@@ -121,7 +124,14 @@ MainWindow::MainWindow(FmPath* path):
   group->setExclusive(true);
   group->addAction(ui.actionAscending);
   group->addAction(ui.actionDescending);
-  
+
+  // create shortcuts, FIXME: why this does not work?
+  /*
+  QShortcut* shortcut = new QShortcut(QKeySequence("Ctrl+L", this), this);
+  connect(shortcut, SIGNAL(activated()), pathEntry, SLOT(setFocus()));
+  shortcut = new QShortcut(QKeySequence("Alt+D", this), this);
+  connect(shortcut, SIGNAL(activated()), pathEntry, SLOT(setFocus()));
+  */
   
   if(path)
     addTab(path);

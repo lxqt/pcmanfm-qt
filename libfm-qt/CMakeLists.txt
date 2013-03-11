@@ -32,7 +32,7 @@ set(libfm_SRCS
   fileoperation.cpp
   fileoperationdialog.cpp
   renamedialog.cpp
-  pathcompleter.cpp
+  pathedit.cpp
   colorbutton.cpp
   fontbutton.cpp
   browsehistory.cpp

@@ -18,21 +18,42 @@
 */
 
 
-#ifndef FM_PATHCOMPLETER_H
-#define FM_PATHCOMPLETER_H
+#ifndef FM_PATHEDIT_H
+#define FM_PATHEDIT_H
 
-#include <QCompleter>
+#include <QLineEdit>
+#include <gio/gio.h>
+
+class QCompleter;
+class QStringListModel;
 
 namespace Fm {
 
-class LIBFM_QT_API PathCompleter : public QCompleter {
+class LIBFM_QT_API PathEdit : public QLineEdit {
 Q_OBJECT
-  
 public:
-  PathCompleter(QObject* parent = 0);
-  virtual ~PathCompleter();
+  explicit PathEdit(QWidget* parent = 0);
+  virtual ~PathEdit();
+
+protected:
+  virtual void focusInEvent(QFocusEvent* e);
+  virtual void focusOutEvent(QFocusEvent* e);
+
+private Q_SLOTS:
+  void onTextChanged(const QString & text);
+
+private:
+  void reloadCompleter();
+  static gboolean jobFunc(GIOSchedulerJob *job, GCancellable *cancellable, gpointer user_data);
+  static gboolean onJobFinished(gpointer user_data);
+
+private:
+  QCompleter* completer_;
+  QStringListModel* model_;
+  QString currentPrefix_;
+  GCancellable* cancellable_;
 };
 
 }
 
-#endif // FM_PATHCOMPLETER_H
+#endif // FM_PATHEDIT_H

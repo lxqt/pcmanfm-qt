@@ -40,8 +40,7 @@ namespace PCManFM {
 class TabPage;
 class Settings;
 
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
 Q_OBJECT
 public:
   MainWindow(FmPath* path = NULL);
