@@ -74,15 +74,16 @@ install(
 
 # add translation for pcmanfm-qt
 # See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
-#
 file(GLOB TS_FILES translations/*.ts)
-if(UPDATE_TRANSLATIONS)
-  qt4_create_translation(QM_FILES
-    ${pcmanfm_SRCS}
-    ${pcmanfm_UIS_H}
-    ${TS_FILES})
-else (UPDATE_TRANSLATIONS)
-  qt4_add_translation(QM_FILES ${TS_FILES})
-endif(UPDATE_TRANSLATIONS) 
+qt4_create_translation(QM_FILES
+  ${pcmanfm_SRCS}
+  ${pcmanfm_UIS_H}
+  ${TS_FILES})
+qt4_add_translation(QM_FILES ${TS_FILES})
 add_custom_target (pcmanfm_translations DEPENDS ${QM_FILES})
 install(FILES ${QM_FILES} DESTINATION share/pcmanfm-qt/translations)
+
+# prevent the generated files from being deleted during make clean
+set_directory_properties(PROPERTIES
+  CLEAN_NO_CUSTOM true
+)

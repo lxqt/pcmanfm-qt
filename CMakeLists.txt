@@ -21,9 +21,6 @@ pkg_check_modules(LIBFM REQUIRED
 # set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
 set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fpermissive -fvisibility=hidden -fno-exceptions")
 
-# An option used to update translations when turned on
-option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files (WARNING: make clean will delete the source .ts files! Danger!)")
-
 # The core library libfm-qt ---------------------------------------------------
 add_subdirectory(libfm-qt)
 
@@ -31,7 +28,7 @@ add_subdirectory(libfm-qt)
 add_subdirectory(pcmanfm)
 
 # update translations
-add_custom_target(update_translations DEPENDS
+add_custom_target(update_translations ALL DEPENDS
   libfm_translations
   pcmanfm_translations
 )

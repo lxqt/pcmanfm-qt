@@ -223,12 +223,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="502"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation>網路(&amp;N)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="503"/>
         <source>&amp;Desktop</source>
-        <translation>網路(&amp;N)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="504"/>
