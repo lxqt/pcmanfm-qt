@@ -105,6 +105,8 @@ protected Q_SLOTS:
   void on_actionNetwork_triggered();
   void on_actionDesktop_triggered();
   void on_actionAddToBookmarks_triggered();
+  void on_actionEditBookmarks_triggered();
+  
   void on_actionAbout_triggered();
 
   void onBookmarkActionTriggered();

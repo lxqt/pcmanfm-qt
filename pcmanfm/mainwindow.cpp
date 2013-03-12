@@ -322,7 +322,20 @@ void MainWindow::on_actionDesktop_triggered() {
 }
 
 void MainWindow::on_actionAddToBookmarks_triggered() {
-  
+  TabPage* page = currentPage();
+  if(page) {
+    FmPath* cwd = page->path();
+    if(cwd) {
+      char* dispName = fm_path_display_basename(cwd);
+      fm_bookmarks_insert(bookmarks, cwd, dispName, -1);
+      g_free(dispName);
+    }
+  }
+}
+
+void MainWindow::on_actionEditBookmarks_triggered() {
+  Application* app = static_cast<Application*>(qApp);
+  app->editBookmarks();
 }
 
 void MainWindow::on_actionAbout_triggered() {
@@ -524,7 +537,7 @@ void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
   // delete existing items
   QList<QAction*> actions = pThis->ui.menu_Bookmarks->actions();
   QList<QAction*>::const_iterator it = actions.begin();
-  QList<QAction*>::const_iterator last_it = actions.end() - 1;
+  QList<QAction*>::const_iterator last_it = actions.end() - 2;
   while(it != last_it) {
     QAction* action = *it;
     ++it;

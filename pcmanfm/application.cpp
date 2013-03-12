@@ -45,7 +45,8 @@ Application::Application(int& argc, char** argv):
   daemonMode_(false),
   desktopWindows_(),
   enableDesktopManager_(false),
-  preferencesDialog_() {
+  preferencesDialog_(),
+  editBookmarksialog_() {
 
   // QDBusConnection::sessionBus().registerObject("/org/pcmanfm/Application", this);
   QDBusConnection dbus = QDBusConnection::sessionBus();
@@ -450,6 +451,15 @@ void Application::updateDesktopsFromSettings() {
     DesktopWindow* desktopWindow = static_cast<DesktopWindow*>(*it);
     desktopWindow->updateFromSettings(settings_);
   }
+}
+
+void Application::editBookmarks() {
+  if(!editBookmarksialog_) {
+    FmBookmarks* bookmarks = fm_bookmarks_dup();
+    editBookmarksialog_ = new Fm::EditBookmarksDialog(bookmarks);
+    g_object_unref(bookmarks);
+  }
+  editBookmarksialog_.data()->show();
 }
 
 

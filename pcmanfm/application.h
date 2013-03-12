@@ -24,6 +24,7 @@
 #include <QApplication>
 #include "settings.h"
 #include "libfmqt.h"
+#include "editbookmarksdialog.h"
 #include <QVector>
 #include <QWeakPointer>
 #include <QTranslator>
@@ -58,6 +59,7 @@ public:
   void setWallpaper(QString path, QString modeString);
   void preferences(QString page);
   void desktopPrefrences(QString page);
+  void editBookmarks();
   void desktopManager(bool enabled);
   void findFiles(QStringList paths);
 
@@ -91,6 +93,7 @@ private:
   QVector<DesktopWindow*> desktopWindows_;
   QWeakPointer<PreferencesDialog> preferencesDialog_;
   QWeakPointer<DesktopPreferencesDialog> desktopPreferencesDialog_;
+  QWeakPointer<Fm::EditBookmarksDialog> editBookmarksialog_;
   QTranslator translator;
   QTranslator qtTranslator;
 };

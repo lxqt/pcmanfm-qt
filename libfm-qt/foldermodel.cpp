@@ -389,3 +389,5 @@ Qt::DropActions FolderModel::supportedDropActions() const {
   return Qt::CopyAction|Qt::MoveAction|Qt::LinkAction;
 }
 
+#include "foldermodel.moc"
+

@@ -38,6 +38,7 @@ set(libfm_SRCS
   browsehistory.cpp
   utilities.cpp
   dndactionmenu.cpp
+  editbookmarksdialog.cpp
 )
 
 set(libfm_UIS
@@ -45,6 +46,7 @@ set(libfm_UIS
   file-operation-dialog.ui
   rename-dialog.ui
   mount-operation-password.ui
+  edit-bookmarks.ui
 )
 
 QT4_WRAP_UI(libfm_UIS_H ${libfm_UIS})

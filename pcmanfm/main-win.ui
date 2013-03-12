@@ -136,6 +136,7 @@
      <string>&amp;Bookmarks</string>
     </property>
     <addaction name="actionAddToBookmarks"/>
+    <addaction name="actionEditBookmarks"/>
    </widget>
    <widget class="QMenu" name="menu_Go">
     <property name="title">
@@ -611,6 +612,11 @@
   <action name="actionOpenAsRoot">
    <property name="text">
     <string>Open as &amp;Root</string>
+   </property>
+  </action>
+  <action name="actionEditBookmarks">
+   <property name="text">
+    <string>&amp;Edit Bookmarks</string>
    </property>
   </action>
  </widget>
