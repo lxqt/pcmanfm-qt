@@ -713,183 +713,183 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PreferencesDialog</name>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="449"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="448"/>
         <source>Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="454"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="453"/>
         <source>User Interface</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="456"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="455"/>
         <source>Behavior</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="458"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="457"/>
         <source>Thumbnail</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="460"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="459"/>
         <source>Volume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="462"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="461"/>
         <source>Advanced</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="465"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="464"/>
         <source>Icons</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="466"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="465"/>
         <source>Size of big icons:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="467"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="466"/>
         <source>Size of small icons:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="468"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="467"/>
         <source>Size of thumbnails:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="469"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="468"/>
         <source>Size of side pane icons:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="470"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="469"/>
         <source>Icon theme:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="471"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="470"/>
         <source>Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="472"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="471"/>
         <source>Default width of new windows:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="473"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="472"/>
         <source>Default height of new windows:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="474"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="473"/>
         <source>Always show the tab bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="475"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="474"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="476"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="475"/>
         <source>Browsing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="477"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="476"/>
         <source>Open files with single click</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="478"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="477"/>
         <source>Default view mode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="479"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="478"/>
         <source>File Operations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="480"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="479"/>
         <source>Confirm before deleting files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="481"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="480"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="482"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="481"/>
         <source>Show thumbnails of files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="483"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="482"/>
         <source>Only show thumbnails for local files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="484"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="483"/>
         <source>Do not generate thumbnails for files exceeding this size (KB):</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="485"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="484"/>
         <source>Auto Mount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="486"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="485"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="487"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="486"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="488"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="487"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="489"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="488"/>
         <source>Programs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="490"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="489"/>
         <source>Terminal emulator:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="491"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="490"/>
         <source>Switch user command:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="492"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="491"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="494"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="493"/>
         <source>Archiver integration:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="495"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="494"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation type="unfinished"></translation>
     </message>

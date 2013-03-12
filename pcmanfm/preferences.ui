@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>595</width>
-    <height>375</height>
+    <width>626</width>
+    <height>433</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -318,9 +318,6 @@
         </layout>
        </widget>
        <widget class="QWidget" name="volumePage">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
         <layout class="QVBoxLayout" name="verticalLayout_4">
          <item>
           <widget class="QGroupBox" name="groupBox_3">
