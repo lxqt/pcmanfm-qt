@@ -138,6 +138,72 @@ void renameFile(FmPath* file, QWidget* parent) {
   g_object_unref(gf);
 }
 
+// templateFile is a file path used as a template of the new file.
+void createFile(CreateFileType type, FmPath* parentDir, FmPath* templateFile, QWidget* parent) {
+  if(type == CreateWithTemplate) {
+    FmPathList* files = fm_path_list_new();
+    fm_path_list_push_tail(files, templateFile);
+    FileOperation::copyFiles(files, parentDir, parent);
+    fm_path_list_unref(files);
+  }
+  else {
+    QString defaultNewName;
+    QString prompt;
+    switch(type) {
+    case CreateNewTextFile:
+      prompt = QObject::tr("Please enter a new file name:");
+      defaultNewName = QObject::tr("New text file");
+      break;
+    case CreateNewFolder:
+      prompt = QObject::tr("Please enter a new folder name:");
+      defaultNewName = QObject::tr("New folder");
+      break;
+    }
+
+_retry:
+    // ask the user to input a file name
+    bool ok;
+    QString new_name = QInputDialog::getText(parent, QObject::tr("Create File"),
+                                    prompt,
+                                    QLineEdit::Normal,
+                                    defaultNewName,
+                                    &ok);
+    if(!ok)
+      return;
+
+    GFile* parent_gf = fm_path_to_gfile(parentDir);
+    GFile* dest_gf = g_file_get_child(G_FILE(parent_gf), new_name.toLocal8Bit().data());
+    g_object_unref(parent_gf);
+
+    GError* err = NULL;
+    switch(type) {
+      case CreateNewTextFile: {
+        GFileOutputStream* f = g_file_create(dest_gf, G_FILE_CREATE_NONE, NULL, &err);
+        if(f) {
+          g_output_stream_close(G_OUTPUT_STREAM(f), NULL, NULL);
+          g_object_unref(f);
+        }
+        break;
+      }
+      case CreateNewFolder: {
+        g_file_make_directory(dest_gf, NULL, &err);
+        break;
+      }
+    }
+    g_object_unref(dest_gf);
+
+    if(err) {
+      if(err->domain == G_IO_ERROR && err->code == G_IO_ERROR_EXISTS) {
+        g_error_free(err);
+        err = NULL;
+        goto _retry;
+      }
+      QMessageBox::critical(parent, QObject::tr("Error"), err->message);
+      g_error_free(err);
+    }
+  }
+}
+
 uid_t uidFromName(QString name) {
   uid_t ret;
   if(name.at(0).digitValue() != -1) {

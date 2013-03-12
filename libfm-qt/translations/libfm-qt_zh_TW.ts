@@ -437,52 +437,52 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="85"/>
+        <location filename="../foldermenu.cpp" line="86"/>
         <source>File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="110"/>
+        <location filename="../foldermenu.cpp" line="112"/>
         <source>By File Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="111"/>
+        <location filename="../foldermenu.cpp" line="113"/>
         <source>By Modification Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="112"/>
+        <location filename="../foldermenu.cpp" line="114"/>
         <source>By File Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="113"/>
+        <location filename="../foldermenu.cpp" line="115"/>
         <source>By File Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="114"/>
+        <location filename="../foldermenu.cpp" line="116"/>
         <source>By File Owner</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="125"/>
+        <location filename="../foldermenu.cpp" line="127"/>
         <source>Ascending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="130"/>
+        <location filename="../foldermenu.cpp" line="132"/>
         <source>Descending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="145"/>
+        <location filename="../foldermenu.cpp" line="147"/>
         <source>Folder First</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="152"/>
+        <location filename="../foldermenu.cpp" line="154"/>
         <source>Case Sensitive</source>
         <translation type="unfinished"></translation>
     </message>
@@ -674,6 +674,7 @@ Modified: %3</source>
     <message>
         <location filename="../mountoperation.cpp" line="149"/>
         <location filename="../utilities.cpp" line="134"/>
+        <location filename="../utilities.cpp" line="207"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
@@ -685,6 +686,31 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="117"/>
         <source>Please enter a new name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utilities.cpp" line="160"/>
+        <source>Please enter a new file name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utilities.cpp" line="164"/>
+        <source>Please enter a new folder name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utilities.cpp" line="165"/>
+        <source>New folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utilities.cpp" line="161"/>
+        <source>New text file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utilities.cpp" line="172"/>
+        <source>Create File</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -39,6 +39,14 @@ void LIBFM_QT_API cutFilesToClipboard(FmPathList* files);
 
 void LIBFM_QT_API renameFile(FmPath* file, QWidget* parent = 0);
 
+enum CreateFileType {
+  CreateNewFolder,
+  CreateNewTextFile,
+  CreateWithTemplate
+};
+
+void LIBFM_QT_API createFile(CreateFileType type, FmPath* parentDir, FmPath* templateFile = NULL, QWidget* parent = 0);
+
 uid_t LIBFM_QT_API uidFromName(QString name);
 
 QString LIBFM_QT_API uidToName(uid_t uid);

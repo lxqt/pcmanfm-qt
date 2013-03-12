@@ -80,9 +80,11 @@ FolderMenu::~FolderMenu() {
 void FolderMenu::createCreateNewMenu() {
   QMenu* createMenu = new QMenu(this);
   QAction* action = new QAction(tr("Folder"), this);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onCreateNewFolder()));
   createMenu->addAction(action);
-  
+
   action = new QAction(tr("File"), this);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onCreateNewFile()));
   createMenu->addAction(action);
 
   // TODO: add more items to "Create New" menu
@@ -224,5 +226,18 @@ void FolderMenu::onPropertiesActionTriggered() {
   if(folderInfo)
     FilePropsDialog::showForFile(folderInfo);
 }
+
+void FolderMenu::onCreateNewFile() {
+  FmPath* dirPath = view_->path();
+  if(dirPath)
+    createFile(CreateNewTextFile, dirPath);
+}
+
+void FolderMenu::onCreateNewFolder() {
+  FmPath* dirPath = view_->path();
+  if(dirPath)
+    createFile(CreateNewFolder, dirPath);
+}
+
 
 #include "foldermenu.moc"

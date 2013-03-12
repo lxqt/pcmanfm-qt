@@ -88,6 +88,9 @@ public:
   
 protected Q_SLOTS:
 
+  void onCreateNewFolder();
+  void onCreateNewFile();
+
   void onPasteActionTriggered();
   void onSelectAllActionTriggered();
   void onInvertSelectionActionTriggered();
@@ -97,7 +100,7 @@ protected Q_SLOTS:
   void onCaseSensitiveActionTriggered(bool checked);
   void onFolderFirstActionTriggered(bool checked);
   void onPropertiesActionTriggered();
-  
+
 private:
   void createCreateNewMenu();
   void createSortMenu();
