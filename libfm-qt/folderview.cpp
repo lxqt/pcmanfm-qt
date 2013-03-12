@@ -353,7 +353,14 @@ FmFileInfoList* FolderView::selectedFiles() const {
 }
 
 void FolderView::invertSelection() {
-  //TODO
+  if(model_) {
+    QItemSelectionModel* selModel = view->selectionModel();
+    int rows = model_->rowCount();
+    for(int row = 0; row < rows; ++row) {
+      QModelIndex index = model_->index(row, 0);
+      selModel->select(index, QItemSelectionModel::Toggle|QItemSelectionModel::Rows);
+    }
+  }
 }
 
 void FolderView::childDragEnterEvent(QDragEnterEvent* event) {

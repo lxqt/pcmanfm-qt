@@ -674,7 +674,7 @@ Modified: %3</source>
     <message>
         <location filename="../mountoperation.cpp" line="149"/>
         <location filename="../utilities.cpp" line="134"/>
-        <location filename="../utilities.cpp" line="207"/>
+        <location filename="../utilities.cpp" line="201"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
@@ -689,27 +689,27 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="160"/>
+        <location filename="../utilities.cpp" line="154"/>
         <source>Please enter a new file name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="164"/>
+        <location filename="../utilities.cpp" line="158"/>
         <source>Please enter a new folder name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="165"/>
+        <location filename="../utilities.cpp" line="159"/>
         <source>New folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="161"/>
+        <location filename="../utilities.cpp" line="155"/>
         <source>New text file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="172"/>
+        <location filename="../utilities.cpp" line="166"/>
         <source>Create File</source>
         <translation type="unfinished"></translation>
     </message>

@@ -152,11 +152,19 @@
     <addaction name="actionGoForward"/>
     <addaction name="actionGoUp"/>
    </widget>
+   <widget class="QMenu" name="menu_Tool">
+    <property name="title">
+     <string>&amp;Tool</string>
+    </property>
+    <addaction name="actionOpenTerminal"/>
+    <addaction name="actionOpenAsRoot"/>
+   </widget>
    <addaction name="menu_File"/>
    <addaction name="menu_Editw"/>
    <addaction name="menu_View"/>
    <addaction name="menu_Go"/>
    <addaction name="menu_Bookmarks"/>
+   <addaction name="menu_Tool"/>
    <addaction name="menu_Help"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -588,6 +596,21 @@
   <action name="actionCloseWindow">
    <property name="text">
     <string>Close Window</string>
+   </property>
+  </action>
+  <action name="actionEdit_Bookmarks">
+   <property name="text">
+    <string>Edit Bookmarks</string>
+   </property>
+  </action>
+  <action name="actionOpenTerminal">
+   <property name="text">
+    <string>Open Terminal</string>
+   </property>
+  </action>
+  <action name="actionOpenAsRoot">
+   <property name="text">
+    <string>Open as &amp;Root</string>
    </property>
   </action>
  </widget>
