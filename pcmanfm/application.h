@@ -28,6 +28,7 @@
 #include <QVector>
 #include <QWeakPointer>
 #include <QTranslator>
+#include <gio/gio.h>
 
 namespace PCManFM {
 
@@ -78,10 +79,15 @@ protected Q_SLOTS:
   void onScreenResized(int num);
   void onScreenCountChanged(int newCount);
 
+  void initVolumeManager();
+  
 protected:
   virtual void commitData(QSessionManager & manager);
   bool parseCommandLineArgs(int argc, char** argv);
   DesktopWindow* createDesktopWindow(int screenNum);
+  bool autoMountVolume(GVolume* volume, bool interactive = true);
+  
+  static void onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Application* pThis);
 
 private:
   bool isPrimaryInstance;
@@ -96,6 +102,7 @@ private:
   QWeakPointer<Fm::EditBookmarksDialog> editBookmarksialog_;
   QTranslator translator;
   QTranslator qtTranslator;
+  GVolumeMonitor* volumeMonitor;
 };
 
 }

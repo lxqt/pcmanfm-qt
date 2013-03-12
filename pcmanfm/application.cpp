@@ -32,6 +32,8 @@
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
 #include "desktoppreferencesdialog.h"
+#include "mountoperation.h"
+#include "autorundialog.h"
 
 using namespace PCManFM;
 static const char* serviceName = "org.pcmanfm.PCManFM";
@@ -46,6 +48,7 @@ Application::Application(int& argc, char** argv):
   desktopWindows_(),
   enableDesktopManager_(false),
   preferencesDialog_(),
+  volumeMonitor(NULL),
   editBookmarksialog_() {
 
   // QDBusConnection::sessionBus().registerObject("/org/pcmanfm/Application", this);
@@ -69,7 +72,10 @@ Application::Application(int& argc, char** argv):
 }
 
 Application::~Application() {
-
+  if(volumeMonitor) {
+    g_signal_handlers_disconnect_by_func(volumeMonitor, G_CALLBACK(onVolumeAdded), this);
+    g_object_unref(volumeMonitor);
+  }
 }
 
 struct FakeTr {
@@ -286,6 +292,15 @@ int Application::exec() {
   if(daemonMode_) // keep running even when there is no window opened.
     setQuitOnLastWindowClosed(false);
 
+  volumeMonitor = g_volume_monitor_get();
+  // delay the volume manager a little because in newer versions of glib/gio there's a problem.
+  // when the first volume monitor object is created, it discovers volumes asynchonously.
+  // g_volume_monitor_get() immediately returns while the monitor is still discovering devices.
+  // So initially g_volume_monitor_get_volumes() returns nothing, but shortly after that
+  // we get volume-added signals for all of the volumes. This is not what we want.
+  // So, we wait for 3 seconds here to let it finish device discovery.
+  QTimer::singleShot(3000, this, SLOT(initVolumeManager()));
+
   return QCoreApplication::exec();
 }
 
@@ -461,6 +476,56 @@ void Application::editBookmarks() {
   }
   editBookmarksialog_.data()->show();
 }
+
+void Application::initVolumeManager() {
+
+  g_signal_connect(volumeMonitor, "volume-added", G_CALLBACK(onVolumeAdded), this);
+
+  if(settings_.mountOnStartup()) {
+    /* try to automount all volumes */
+    GList* vols = g_volume_monitor_get_volumes(volumeMonitor);
+    for(GList* l = vols; l; l = l->next) {
+      GVolume* volume = G_VOLUME(l->data);
+      if(g_volume_should_automount(volume))
+        autoMountVolume(volume, false);
+      g_object_unref(volume);
+    }
+    g_list_free(vols);
+  }
+}
+
+bool Application::autoMountVolume(GVolume* volume, bool interactive) {
+  if(!g_volume_should_automount(volume) || !g_volume_can_mount(volume))
+    return FALSE;
+
+  GMount* mount = g_volume_get_mount(volume);
+  if(!mount) { // not mounted, automount is needed
+    // try automount
+    Fm::MountOperation* op = new Fm::MountOperation(interactive);
+    op->mount(volume);
+    if(!op->wait())
+      return false;
+    if(!interactive)
+      return true;
+    mount = g_volume_get_mount(volume);
+  }
+
+  if(mount) {
+    if(interactive && settings_.autoRun()) { // show autorun dialog
+      AutoRunDialog* dlg = new AutoRunDialog(volume, mount);
+      dlg->show();
+    }
+    g_object_unref(mount);
+  }
+  return true;
+}
+
+// static
+void Application::onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Application* pThis) {
+  if(pThis->settings_.mountRemovable())
+    pThis->autoMountVolume(volume, true);
+}
+
 
 
 #include "application.moc"

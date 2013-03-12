@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="template">
+<TS version="2.0">
 <context>
     <name>EditBookmarksDialog</name>
     <message>
@@ -735,6 +735,11 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../utilities.cpp" line="155"/>
+        <source>New text file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../utilities.cpp" line="158"/>
         <source>Please enter a new folder name:</source>
         <translation type="unfinished"></translation>
@@ -742,11 +747,6 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="159"/>
         <source>New folder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../utilities.cpp" line="155"/>
-        <source>New text file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

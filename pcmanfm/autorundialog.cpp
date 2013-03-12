@@ -1,0 +1,137 @@
+/*
+
+    Copyright (C) 2013  Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+
+#include "autorundialog.h"
+#include "icontheme.h"
+#include <QListWidgetItem>
+#include "application.h"
+#include "mainwindow.h"
+
+using namespace PCManFM;
+
+AutoRunDialog::AutoRunDialog(GVolume* volume, GMount* mount, QWidget* parent, Qt::WindowFlags f):
+  cancellable(g_cancellable_new()),
+  applications(NULL),
+  mount_(G_MOUNT(g_object_ref(mount))),
+  QDialog(parent, f) {
+
+  setAttribute(Qt::WA_DeleteOnClose);
+  ui.setupUi(this);
+
+  GIcon* gicon = g_volume_get_icon(volume);
+  QIcon icon = Fm::IconTheme::icon(gicon);
+  ui.icon->setPixmap(icon.pixmap(QSize(48, 48)));
+
+  // add actions
+  QListWidgetItem* item = new QListWidgetItem(QIcon::fromTheme("system-file-manager"), tr("Open in file manager"));
+  ui.listWidget->addItem(item);
+
+  g_mount_guess_content_type(mount, TRUE, cancellable, (GAsyncReadyCallback)onContentTypeFinished, this);
+}
+
+AutoRunDialog::~AutoRunDialog() {
+  g_list_foreach(applications, (GFunc)g_object_unref, NULL);
+  g_list_free(applications);
+
+  if(mount_)
+    g_object_unref(mount_);
+
+  if(cancellable) {
+    g_cancellable_cancel(cancellable);
+    g_object_unref(cancellable);
+  }
+}
+
+void AutoRunDialog::accept() {
+  QListWidgetItem* item = ui.listWidget->selectedItems().first();
+  if(item) {
+    GFile* gf = g_mount_get_root(mount_);
+    void* p = qVariantValue<void*>(item->data(Qt::UserRole));
+    if(p) { // runt the selected application
+      GAppInfo* app = G_APP_INFO(p);
+      GList* filelist = g_list_prepend(NULL, gf);
+      g_app_info_launch(app, filelist, NULL, NULL);
+      g_list_free(filelist);
+    }
+    else {
+      // the default action, open the mounted folder in the file manager
+      Application* app = static_cast<Application*>(qApp);
+      Settings& settings = app->settings();
+      FmPath* path = fm_path_new_for_gfile(gf);
+      // open the path in a new window
+      // FIXME: or should we open it in a new tab? Make this optional later
+      MainWindow* win = new MainWindow(path);
+      fm_path_unref(path);
+      win->resize(settings.windowWidth(), settings.windowHeight());
+      win->show();
+    }
+    g_object_unref(gf);
+  }
+  QDialog::accept();
+}
+
+// static
+void AutoRunDialog::onContentTypeFinished(GMount* mount, GAsyncResult* res, AutoRunDialog* pThis) {
+  if(pThis->cancellable) {
+    g_object_unref(pThis->cancellable);
+    pThis->cancellable = NULL;
+  }
+
+  char** types = g_mount_guess_content_type_finish(mount, res, NULL);
+  char* desc = NULL;
+
+  if(types) {
+    if(types[0]) {
+      for(char** type = types; *type; ++type) {
+        GList* l = g_app_info_get_all_for_type(*type);
+        if(l)
+          pThis->applications = g_list_concat(pThis->applications, l);
+      }
+      desc = g_content_type_get_description(types[0]);
+    }
+    g_strfreev(types);
+
+    if(pThis->applications) {
+      int pos = 0;
+      for(GList* l = pThis->applications; l; l = l->next, ++pos) {
+        GAppInfo* app = G_APP_INFO(l->data);
+        GIcon* gicon = g_app_info_get_icon(app);
+        QIcon icon = Fm::IconTheme::icon(gicon);
+        QString text = QString::fromUtf8(g_app_info_get_name(app));
+        QListWidgetItem* item = new QListWidgetItem(icon, text);
+        item->setData(Qt::UserRole, qVariantFromValue<void*>(app));
+        pThis->ui.listWidget->insertItem(pos, item);
+      }
+    }
+  }
+
+  if(desc) {
+    pThis->ui.mediumType->setText(QString::fromUtf8(desc));
+    g_free(desc);
+  }
+  else
+    pThis->ui.mediumType->setText(tr("Removable Disk"));
+
+  // select the first item
+  pThis->ui.listWidget->item(0)->setSelected(true);
+}
+
+
+#include "autorundialog.moc"

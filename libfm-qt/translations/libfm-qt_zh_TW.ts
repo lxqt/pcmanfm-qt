@@ -2,39 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.0" language="zh_TW">
 <context>
-    <name>EditBookmarksDialog</name>
-    <message>
-        <location filename="../edit-bookmarks.ui" line="14"/>
-        <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../edit-bookmarks.ui" line="42"/>
-        <source>Name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../edit-bookmarks.ui" line="47"/>
-        <source>Location</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../edit-bookmarks.ui" line="67"/>
-        <source>&amp;Add Item</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../edit-bookmarks.ui" line="77"/>
-        <source>&amp;Remove Item</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../edit-bookmarks.ui" line="102"/>
-        <source>Use drag and drop to reorder the items</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>FileOperationDialog</name>
     <message>
         <location filename="../file-operation-dialog.ui" line="32"/>
@@ -222,14 +189,6 @@
         <location filename="../dndactionmenu.cpp" line="30"/>
         <source>Cancel</source>
         <translation type="unfinished">取消</translation>
-    </message>
-</context>
-<context>
-    <name>Fm::EditBookmarksDialog</name>
-    <message>
-        <location filename="../editbookmarksdialog.cpp" line="87"/>
-        <source>New bookmark</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

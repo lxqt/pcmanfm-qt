@@ -20,6 +20,7 @@ set(pcmanfm_SRCS
   desktoppreferencesdialog.cpp
   desktopwindow.cpp
   desktopitemdelegate.cpp
+  autorundialog.cpp
   settings.cpp
 )
 
@@ -36,6 +37,7 @@ set(pcmanfm_UIS
   about.ui
   preferences.ui
   desktop-preferences.ui
+  autorun.ui
 )
 
 QT4_WRAP_UI(pcmanfm_UIS_H ${pcmanfm_UIS})

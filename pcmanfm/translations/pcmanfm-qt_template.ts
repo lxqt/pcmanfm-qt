@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="template">
+<TS version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -59,6 +59,34 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="147"/>
         <source>License</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>AutoRunDialog</name>
+    <message>
+        <location filename="../../build/pcmanfm/ui_autorun.h" line="111"/>
+        <source>Removable medium is inserted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_autorun.h" line="113"/>
+        <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_autorun.h" line="114"/>
+        <source>Type of medium:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_autorun.h" line="115"/>
+        <source>Detecting...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_autorun.h" line="116"/>
+        <source>Please select the action you want to perform:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -502,84 +530,97 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="116"/>
+        <location filename="../application.cpp" line="122"/>
         <source>Name of configuration profile</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="116"/>
+        <location filename="../application.cpp" line="122"/>
         <source>PROFILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="117"/>
+        <location filename="../application.cpp" line="123"/>
         <source>Run PCManFM as a daemon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="119"/>
+        <location filename="../application.cpp" line="125"/>
         <source>Quit PCManFM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="120"/>
+        <location filename="../application.cpp" line="126"/>
         <source>Launch desktop manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="121"/>
+        <location filename="../application.cpp" line="127"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="122"/>
+        <location filename="../application.cpp" line="128"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="122"/>
-        <location filename="../application.cpp" line="126"/>
+        <location filename="../application.cpp" line="128"/>
+        <location filename="../application.cpp" line="132"/>
         <source>NAME</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="123"/>
+        <location filename="../application.cpp" line="129"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="123"/>
+        <location filename="../application.cpp" line="129"/>
         <source>FILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="125"/>
+        <location filename="../application.cpp" line="131"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="125"/>
+        <location filename="../application.cpp" line="131"/>
         <source>MODE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="126"/>
+        <location filename="../application.cpp" line="132"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="127"/>
+        <location filename="../application.cpp" line="133"/>
         <source>Open new window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="128"/>
+        <location filename="../application.cpp" line="134"/>
         <source>Open Find Files utility</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="129"/>
+        <location filename="../application.cpp" line="135"/>
         <source>[FILE1, FILE2,...]</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PCManFM::AutoRunDialog</name>
+    <message>
+        <location filename="../autorundialog.cpp" line="43"/>
+        <source>Open in file manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autorundialog.cpp" line="130"/>
+        <source>Removable Disk</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
