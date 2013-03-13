@@ -40,4 +40,18 @@ void SidePane::onPlacesViewChdirRequested(int type, FmPath* path) {
   Q_EMIT chdirRequested(type, path);
 }
 
+// FIXME: in the future, we can have different modes for side pane, not just places view.
+FmPath* SidePane::currentPath() {
+  if(placesView_)
+    return placesView_->currentPath();
+  return NULL;
+}
+
+void SidePane::setCurrentPath(FmPath* path) {
+  if(placesView_) {
+    placesView_->setCurrentPath(path);
+  }
+}
+
+
 #include "sidepane.moc"

@@ -608,28 +608,28 @@
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="171"/>
+        <location filename="../placesview.cpp" line="178"/>
         <source>Rename</source>
         <translation type="unfinished">重新命名</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="174"/>
+        <location filename="../placesview.cpp" line="181"/>
         <source>Delete</source>
         <translation type="unfinished">刪除</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="184"/>
-        <location filename="../placesview.cpp" line="202"/>
+        <location filename="../placesview.cpp" line="191"/>
+        <location filename="../placesview.cpp" line="209"/>
         <source>Unmount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="188"/>
+        <location filename="../placesview.cpp" line="195"/>
         <source>Mount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="194"/>
+        <location filename="../placesview.cpp" line="201"/>
         <source>Eject</source>
         <translation type="unfinished"></translation>
     </message>

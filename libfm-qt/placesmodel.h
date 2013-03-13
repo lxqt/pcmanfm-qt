@@ -31,6 +31,9 @@ namespace Fm {
 
 class LIBFM_QT_API PlacesModel : public QStandardItemModel {
 Q_OBJECT
+
+friend class PlacesView;
+
 public:
   
   enum ItemType {

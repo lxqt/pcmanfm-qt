@@ -44,6 +44,9 @@ public:
     if(placesView_)
       placesView_->setIconSize(size);
   }
+  
+  FmPath* currentPath();
+  void setCurrentPath(FmPath* path);
 
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);

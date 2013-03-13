@@ -90,10 +90,17 @@ void PlacesView::setCurrentPath(FmPath* path) {
   if(path) {
     currentPath_ = fm_path_ref(path);
     // TODO: search for item with the path in model_ and select it.
-    
+    PlacesModel::Item* item = model_->itemFromPath(currentPath_);
+    if(item) {
+      selectionModel()->select(item->index(), QItemSelectionModel::SelectCurrent);
+    }
+    else
+      clearSelection();
   }
-  else
+  else {
     currentPath_ = NULL;
+    clearSelection();
+  }
 }
 
 

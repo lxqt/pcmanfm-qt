@@ -239,8 +239,10 @@ void MainWindow::on_actionFileProperties_triggered() {
   TabPage* page = currentPage();
   if(page) {
     FmFileInfoList* files = page->selectedFiles();
-    Fm::FilePropsDialog::showForFiles(files);
-    fm_file_info_list_unref(files);
+    if(files) {
+      Fm::FilePropsDialog::showForFiles(files);
+      fm_file_info_list_unref(files);
+    }
   }
 }
 
@@ -447,6 +449,9 @@ void MainWindow::updateUIForCurrentPage() {
     ui.statusbar->showMessage(tabPage->statusText());
     fsInfoLabel->setText(tabPage->statusText(TabPage::StatusTextFSInfo));
     tabPage->folderView()->childView()->setFocus();
+
+    // update side pane
+    ui.sidePane->setCurrentPath(tabPage->path());
 
     // update back/forward/up toolbar buttons
     ui.actionGoUp->setEnabled(tabPage->canUp());
