@@ -152,15 +152,18 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
         if(fm_archiver_is_mime_type_supported(archiver, fm_mime_type_get_type(mime_type))) {
           if(cwd_ && archiver->extract_to_cmd) {
             QAction* action = new QAction(tr("Extract to..."), this);
+            connect(action, SIGNAL(triggered(bool)), SLOT(onExtract()));
             addAction(action);
           }
           if(archiver->extract_cmd) {
             QAction* action = new QAction(tr("Extract Here"), this);
+            connect(action, SIGNAL(triggered(bool)), SLOT(onExtractHere()));
             addAction(action);
           }
         }
         else {
           QAction* action = new QAction(tr("Compress"), this);
+          connect(action, SIGNAL(triggered(bool)), SLOT(onCompress()));
           addAction(action);
         }
       }
@@ -236,6 +239,34 @@ void FileMenu::setUseTrash(bool trash) {
     deleteAction_->setText(useTrash_ ? tr("&Move to Trash") : tr("&Delete"));
   }
 }
+
+void FileMenu::onCompress() {
+  FmArchiver* archiver = fm_archiver_get_default();
+  if(archiver) {
+    FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
+    fm_archiver_create_archive(archiver, NULL, paths);
+    fm_path_list_unref(paths);
+  }
+}
+
+void FileMenu::onExtract() {
+  FmArchiver* archiver = fm_archiver_get_default();
+  if(archiver) {
+    FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
+    fm_archiver_extract_archives(archiver, NULL, paths);
+    fm_path_list_unref(paths);
+  }
+}
+
+void FileMenu::onExtractHere() {
+  FmArchiver* archiver = fm_archiver_get_default();
+  if(archiver) {
+    FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
+    fm_archiver_extract_archives_to(archiver, NULL, paths, cwd_);
+    fm_path_list_unref(paths);
+  }
+}
+
 
 
 #include "filemenu.moc"

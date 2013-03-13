@@ -100,6 +100,10 @@ protected Q_SLOTS:
   void onFilePropertiesTriggered();
   void onApplicationTriggered();
 
+  void onCompress();
+  void onExtract();
+  void onExtractHere();
+  
   void onCutTriggered();
   void onCopyTriggered();
   void onPasteTriggered();

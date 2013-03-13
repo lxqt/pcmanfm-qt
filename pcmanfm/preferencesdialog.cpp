@@ -113,7 +113,7 @@ void PreferencesDialog::initArchivers(Settings& settings) {
   int i = 0;
   for(const GList* l = allArchivers; l; l = l->next, ++i) {
     FmArchiver* archiver = reinterpret_cast<FmArchiver*>(l->data);
-    ui.archiver->addItem(archiver->program);
+    ui.archiver->addItem(archiver->program, QString(archiver->program));
     if(archiver->program == settings.archiver())
       ui.archiver->setCurrentIndex(i);
   }

@@ -261,12 +261,12 @@
     </message>
     <message>
         <location filename="../filemenu.cpp" line="138"/>
-        <location filename="../filemenu.cpp" line="236"/>
+        <location filename="../filemenu.cpp" line="239"/>
         <source>&amp;Move to Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="236"/>
+        <location filename="../filemenu.cpp" line="239"/>
         <source>&amp;Delete</source>
         <translation type="unfinished"></translation>
     </message>
@@ -281,17 +281,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="158"/>
+        <location filename="../filemenu.cpp" line="159"/>
         <source>Extract Here</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="163"/>
+        <location filename="../filemenu.cpp" line="165"/>
         <source>Compress</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="172"/>
+        <location filename="../filemenu.cpp" line="175"/>
         <source>Properties</source>
         <translation type="unfinished"></translation>
     </message>

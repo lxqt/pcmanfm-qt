@@ -127,7 +127,7 @@ bool Settings::loadFile(QString filePath) {
   suCommand_ = settings.value("SuCommand", "gksu %s").toString();
   terminalDirCommand_ = settings.value("TerminalDirCommand", "xterm").toString();
   setTerminalExecCommand(settings.value("TerminalExecCommand", "xterm -e %s").toString());
-  setArchiver(settings.value("Archiver").toString());
+  setArchiver(settings.value("Archiver", "file-roller").toString());
   setSiUnit(settings.value("SIUnit", false).toBool());
   settings.endGroup();
 
