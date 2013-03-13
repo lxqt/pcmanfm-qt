@@ -51,7 +51,8 @@ Settings::Settings():
   iconThemeName_(),
   bookmarkOpenMethod_(0),
   suCommand_(),
-  terminalCommand_(),
+  terminalDirCommand_(),
+  terminalExecCommand_(),
   mountOnStartup_(true),
   mountRemovable_(true),
   autoRun_(true),
@@ -123,8 +124,9 @@ bool Settings::loadFile(QString filePath) {
     // the value from XSETTINGS instead of hard code a fallback value.
     iconThemeName_ = "elementary"; // fallback icon theme name
   }
-  suCommand_ = settings.value("SuCommand").toString();
-  setTerminalCommand(settings.value("TerminalCommand").toString());
+  suCommand_ = settings.value("SuCommand", "gksu %s").toString();
+  terminalDirCommand_ = settings.value("TerminalDirCommand", "xterm").toString();
+  setTerminalExecCommand(settings.value("TerminalExecCommand", "xterm -e %s").toString());
   setArchiver(settings.value("Archiver").toString());
   setSiUnit(settings.value("SIUnit", false).toBool());
   settings.endGroup();
@@ -191,7 +193,8 @@ bool Settings::saveFile(QString filePath) {
   settings.beginGroup("System");
   settings.setValue("IconThemeName", iconThemeName_);
   settings.setValue("SuCommand", suCommand_);
-  settings.setValue("TerminalCommand", terminalCommand_);
+  settings.setValue("TerminalDirCommand", terminalDirCommand_);
+  settings.setValue("TerminalExecCommand", terminalExecCommand_);
   settings.setValue("Archiver", archiver_);
   settings.setValue("SIUnit", siUnit_);
   settings.endGroup();

@@ -635,6 +635,97 @@ void MainWindow::updateFromSettings(Settings& settings) {
   }
 }
 
+static const char* su_cmd_subst(char opt, gpointer user_data) {
+  return user_data;
+}
+
+static FmAppCommandParseOption su_cmd_opts[] = {
+  { 's', su_cmd_subst },
+  { 0, NULL }
+};
+
+void MainWindow::on_actionOpenAsRoot_triggered() {
+  TabPage* page = currentPage();
+  if(page) {
+    Application* app = static_cast<Application*>(qApp);
+    Settings& settings = app->settings();
+    if(!settings.suCommand().isEmpty()) {
+      // run the su command
+      // FIXME: it's better to get the filename of the current process rather than hard-code pcmanfm-qt here.
+      QByteArray suCommand = settings.suCommand().toLocal8Bit();
+      char* cmd = NULL;
+      QByteArray programCommand = app->applicationFilePath().toLocal8Bit();
+      programCommand += " %U";
+      if(fm_app_command_parse(suCommand.constData(), su_cmd_opts, &cmd, programCommand.constData()) == 0) {
+        /* no %s found so just append to it */
+        g_free(cmd);
+        cmd = g_strconcat(suCommand.constData(), programCommand.constData(), NULL);
+      }
+      GAppInfo* appInfo = g_app_info_create_from_commandline(cmd, NULL, 0, NULL);
+      g_free(cmd);
+      if(appInfo) {
+        FmPath* cwd = page->path();
+        GError* err = NULL;
+        char* uri = fm_path_to_uri(cwd);
+        GList* uris = g_list_prepend(NULL, uri);
+        if(!g_app_info_launch_uris(appInfo, uris, NULL, &err)) {
+          QMessageBox::critical(this, tr("Error"), QString::fromUtf8(err->message));
+          g_error_free(err);
+        }
+        g_list_free(uris);
+        g_free(uri);
+        g_object_unref(appInfo);
+      }
+    }
+    else {
+      // show an error message and ask the user to set the command
+      QMessageBox::critical(this, tr("Error"), tr("Switch user command is not set."));
+      app->preferences("advanced");
+    }
+  }
+}
+
+void MainWindow::on_actionOpenTerminal_triggered() {
+  TabPage* page = currentPage();
+  if(page) {
+    Application* app = static_cast<Application*>(qApp);
+    Settings& settings = app->settings();
+    if(!settings.terminalDirCommand().isEmpty()) {
+      // run the terminal command
+      FmPath* path = page->path();
+      char* cwd_str;
+      if(fm_path_is_native(path))
+        cwd_str = fm_path_to_str(path);
+      else { // gio will map remote filesystems to local FUSE-mounted paths here.
+        GFile* gf = fm_path_to_gfile(path);
+        cwd_str = g_file_get_path(gf);
+        g_object_unref(gf);
+      }
+      char* old_cwd = g_get_current_dir();
+      GAppInfo* appInfo = g_app_info_create_from_commandline(settings.terminalDirCommand().toLocal8Bit().constData(), NULL, 0, NULL);
+
+      // change to the desired dir prior to running the terminal emulator. This is quite dirty
+      g_chdir(cwd_str); // currently we don't have better way for this. maybe a wrapper script?
+      g_free(cwd_str);
+
+      GError* err = NULL;
+      if(!g_app_info_launch(appInfo, NULL, NULL, &err)) {
+        QMessageBox::critical(this, tr("Error"), QString::fromUtf8(err->message));
+        g_error_free(err);
+      }
+      g_object_unref(appInfo);
+      /* switch back to old cwd and fix #3114626 - PCManFM 0.9.9 Umount partitions problem */
+      g_chdir(old_cwd); /* This is really dirty, but we don't have better solution now. */
+      g_free(old_cwd);
+    }
+    else {
+      // show an error message and ask the user to set the command
+      QMessageBox::critical(this, tr("Error"), tr("Terminal emulator is not set."));
+      app->preferences("advanced");
+    }
+  }
+}
+
 
 }
 

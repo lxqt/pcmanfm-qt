@@ -72,15 +72,21 @@ public:
     suCommand_ = suCommand;
   }
 
-  QString terminalCommand() {
-    return terminalCommand_;
+  QString terminalDirCommand() {
+    return terminalDirCommand_;
+  }
+  void setTerminalDirCommand(QString terminalCommand) {
+    terminalDirCommand_ = terminalCommand;
   }
 
-  void setTerminalCommand(QString terminalCommand) {
-    terminalCommand_ = terminalCommand;
+  QString terminalExecCommand() {
+    return terminalExecCommand_;
+  }
+  void setTerminalExecCommand(QString terminalCommand) {
+    terminalExecCommand_ = terminalCommand;
     // override the settings in libfm FmConfig.
     g_free(fm_config->terminal);
-    fm_config->terminal = g_strdup(terminalCommand_.toLocal8Bit().constData());
+    fm_config->terminal = g_strdup(terminalExecCommand_.toLocal8Bit().constData());
   }
 
   QString archiver() const {
@@ -349,7 +355,8 @@ private:
 
   int bookmarkOpenMethod_;
   QString suCommand_;
-  QString terminalCommand_;
+  QString terminalDirCommand_;
+  QString terminalExecCommand_;
   bool mountOnStartup_;
   bool mountRemovable_;
   bool autoRun_;

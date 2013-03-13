@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>626</width>
-    <height>433</height>
+    <width>555</width>
+    <height>365</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -227,6 +227,9 @@
            <layout class="QFormLayout" name="formLayout_5">
             <item row="0" column="0" colspan="2">
              <widget class="QCheckBox" name="singleClick">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
               <property name="text">
                <string>Open files with single click</string>
               </property>
@@ -375,24 +378,30 @@
             <item row="0" column="0">
              <widget class="QLabel" name="label_2">
               <property name="text">
-               <string>Terminal emulator:</string>
+               <string>Terminal emulator command for directories:</string>
+              </property>
+              <property name="buddy">
+               <cstring>terminalDirCommand</cstring>
               </property>
              </widget>
             </item>
             <item row="0" column="1">
-             <widget class="QLineEdit" name="terminalCommand"/>
+             <widget class="QLineEdit" name="terminalDirCommand"/>
             </item>
-            <item row="1" column="0">
+            <item row="2" column="0">
              <widget class="QLabel" name="label_3">
               <property name="text">
                <string>Switch user command:</string>
               </property>
+              <property name="buddy">
+               <cstring>suCommand</cstring>
+              </property>
              </widget>
             </item>
-            <item row="1" column="1">
+            <item row="2" column="1">
              <widget class="QLineEdit" name="suCommand"/>
             </item>
-            <item row="2" column="0" colspan="2">
+            <item row="3" column="0" colspan="2">
              <widget class="QLabel" name="label_4">
               <property name="text">
                <string>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
@@ -403,15 +412,31 @@
               </property>
              </widget>
             </item>
-            <item row="3" column="0">
+            <item row="4" column="0">
              <widget class="QLabel" name="label_5">
               <property name="text">
                <string>Archiver integration:</string>
               </property>
+              <property name="buddy">
+               <cstring>archiver</cstring>
+              </property>
              </widget>
             </item>
-            <item row="3" column="1">
+            <item row="4" column="1">
              <widget class="QComboBox" name="archiver"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>Terminal emulator command for programs:</string>
+              </property>
+              <property name="buddy">
+               <cstring>terminalExecCommand</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="terminalExecCommand"/>
             </item>
            </layout>
           </widget>
@@ -457,6 +482,34 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>smallIconSize</tabstop>
+  <tabstop>bigIconSize</tabstop>
+  <tabstop>thumbnailIconSize</tabstop>
+  <tabstop>sidePaneIconSize</tabstop>
+  <tabstop>iconTheme</tabstop>
+  <tabstop>windowWidth</tabstop>
+  <tabstop>windowHeight</tabstop>
+  <tabstop>alwaysShowTabs</tabstop>
+  <tabstop>showTabClose</tabstop>
+  <tabstop>singleClick</tabstop>
+  <tabstop>viewMode</tabstop>
+  <tabstop>configmDelete</tabstop>
+  <tabstop>useTrash</tabstop>
+  <tabstop>showThumbnails</tabstop>
+  <tabstop>mountOnStartup</tabstop>
+  <tabstop>terminalDirCommand</tabstop>
+  <tabstop>terminalExecCommand</tabstop>
+  <tabstop>suCommand</tabstop>
+  <tabstop>archiver</tabstop>
+  <tabstop>siUnit</tabstop>
+  <tabstop>autoRun</tabstop>
+  <tabstop>mountRemovable</tabstop>
+  <tabstop>buttonBox</tabstop>
+  <tabstop>listWidget</tabstop>
+  <tabstop>thumbnailLocal</tabstop>
+  <tabstop>maxThumbnailFileSize</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>
@@ -466,8 +519,8 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
+     <x>252</x>
+     <y>428</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -482,8 +535,8 @@
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
+     <x>320</x>
+     <y>428</y>
     </hint>
     <hint type="destinationlabel">
      <x>286</x>
@@ -498,8 +551,8 @@
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>137</x>
-     <y>145</y>
+     <x>124</x>
+     <y>150</y>
     </hint>
     <hint type="destinationlabel">
      <x>359</x>

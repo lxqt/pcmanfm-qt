@@ -606,7 +606,10 @@
   </action>
   <action name="actionOpenTerminal">
    <property name="text">
-    <string>Open Terminal</string>
+    <string>Open &amp;Terminal</string>
+   </property>
+   <property name="shortcut">
+    <string>F4</string>
    </property>
   </action>
   <action name="actionOpenAsRoot">
