@@ -144,10 +144,10 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   addAction(renameAction_);
 
   // archiver integration
+  // FIXME: we need to modify upstream libfm to include some Qt-based archiver programs.
   if(!allVirtual_) {
     if(sameType_) {
       FmArchiver* archiver = fm_archiver_get_default();
-      // FIXME: make default archiver configurable rather than hard-coded.
       if(archiver) {
         if(fm_archiver_is_mime_type_supported(archiver, fm_mime_type_get_type(mime_type))) {
           if(cwd_ && archiver->extract_to_cmd) {
