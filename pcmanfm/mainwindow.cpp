@@ -577,9 +577,14 @@ void MainWindow::on_actionPaste_triggered() {
 }
 
 void MainWindow::on_actionDelete_triggered() {
+  Application* app = static_cast<Application*>(qApp);
+  Settings& settings = app->settings();
   TabPage* page = currentPage();
   FmPathList* paths = page->selectedFilePaths();
-  FileOperation::deleteFiles(paths, this);
+  if(settings.useTrash())
+    FileOperation::trashFiles(paths, settings.confirmDelete(), this);
+  else
+    FileOperation::deleteFiles(paths, settings.confirmDelete(), this);
   fm_path_list_unref(paths);
 }
 void MainWindow::on_actionRename_triggered() {
@@ -621,7 +626,10 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
 }
 
 void MainWindow::updateFromSettings(Settings& settings) {
-  // TODO: apply settings
+  // apply settings
+  
+  // menu
+  ui.actionDelete->setText(settings.useTrash() ? tr("&Move to Trash") : tr("&Delete"));
 
   // side pane
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));

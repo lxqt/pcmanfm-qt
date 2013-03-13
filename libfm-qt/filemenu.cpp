@@ -71,6 +71,8 @@ FileMenu::~FileMenu() {
 }
 
 void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) {
+  useTrash_ = true;
+  confirmDelete_ = true;
   files_ = fm_file_info_list_ref(files);
   info_ = info ? fm_file_info_ref(info) : NULL;
   cwd_ = cwd ? fm_path_ref(cwd) : NULL;
@@ -133,7 +135,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   connect(pasteAction_, SIGNAL(triggered(bool)), SLOT(onPasteTriggered()));
   addAction(pasteAction_);
 
-  deleteAction_ = new QAction(QIcon::fromTheme("edit-delete"), tr("Delete"), this);
+  deleteAction_ = new QAction(QIcon::fromTheme("edit-delete"), tr("&Move to Trash"), this);
   connect(deleteAction_, SIGNAL(triggered(bool)), SLOT(onDeleteTriggered()));
   addAction(deleteAction_);
 
@@ -210,7 +212,10 @@ void FileMenu::onCutTriggered() {
 
 void FileMenu::onDeleteTriggered() {
   FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
-  FileOperation::deleteFiles(paths);
+  if(useTrash_)
+    FileOperation::trashFiles(paths, confirmDelete_);
+  else
+    FileOperation::deleteFiles(paths, confirmDelete_);
   fm_path_list_unref(paths);
 }
 
@@ -224,5 +229,13 @@ void FileMenu::onRenameTriggered() {
     Fm::renameFile(fm_file_info_get_path(info), NULL);
   }
 }
+
+void FileMenu::setUseTrash(bool trash) {
+  if(useTrash_ != trash) {
+    useTrash_ = trash;
+    deleteAction_->setText(useTrash_ ? tr("&Move to Trash") : tr("&Delete"));
+  }
+}
+
 
 #include "filemenu.moc"

@@ -22,6 +22,7 @@
 #define FM_FILEMENU_H
 
 #include <QtGui/QMenu>
+#include <qabstractitemmodel.h>
 #include <libfm/fm.h>
 
 class QAction;
@@ -36,6 +37,20 @@ public:
   explicit FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, const QString& title, QWidget* parent = 0);
   ~FileMenu();
 
+  bool useTrash() {
+    return useTrash_;
+  }
+  
+  void setUseTrash(bool trash);
+  
+  bool confirmDelete() {
+    return confirmDelete_;
+  }
+
+  void setConfirmDelete(bool confirm) {
+    confirmDelete_ = confirm;
+  }
+  
   QAction* openAction() {
     return openAction_;  
   }
@@ -95,6 +110,8 @@ private:
   FmFileInfoList* files_;
   FmFileInfo* info_;
   FmPath* cwd_;
+  bool useTrash_;
+  bool confirmDelete_;
   bool sameType_;
   bool sameFilesystem_;
   bool allVirtual_;

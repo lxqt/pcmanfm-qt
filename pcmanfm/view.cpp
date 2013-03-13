@@ -70,11 +70,16 @@ void View::onFileClicked(int type, FmFileInfo* fileInfo) {
     FmPath* folderPath = path();
     QMenu* menu;
     if(fileInfo) {
+      Application* app = static_cast<Application*>(qApp);
+      Settings& settings = app->settings();
       // show context menu
       FmFileInfoList* files = selectedFiles();
-      menu = new Fm::FileMenu(files, fileInfo, folderPath);
+      Fm::FileMenu* fileMenu = new Fm::FileMenu(files, fileInfo, folderPath);
+      fileMenu->setConfirmDelete(settings.confirmDelete());
+      fileMenu->setUseTrash(settings.useTrash());
       prepareFileMenu(menu);
       fm_file_info_list_unref(files);
+      menu = fileMenu;
     }
     else {
       FmFolder* _folder = folder();

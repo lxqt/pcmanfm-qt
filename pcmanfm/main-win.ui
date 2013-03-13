@@ -92,7 +92,7 @@
     </property>
     <widget class="QMenu" name="menuSorting">
      <property name="title">
-      <string>Sorting</string>
+      <string>&amp;Sorting</string>
      </property>
      <addaction name="actionByFileName"/>
      <addaction name="actionByMTime"/>
@@ -191,12 +191,10 @@
   </widget>
   <action name="actionGoUp">
    <property name="icon">
-    <iconset theme="go-up">
-     <normaloff/>
-    </iconset>
+    <iconset theme="go-up"/>
    </property>
    <property name="text">
-    <string>Go Up</string>
+    <string>Go &amp;Up</string>
    </property>
    <property name="toolTip">
     <string>Go Up</string>
@@ -220,12 +218,10 @@
   </action>
   <action name="actionReload">
    <property name="icon">
-    <iconset theme="view-refresh">
-     <normaloff/>
-    </iconset>
+    <iconset theme="view-refresh"/>
    </property>
    <property name="text">
-    <string>Reload</string>
+    <string>&amp;Reload</string>
    </property>
    <property name="shortcut">
     <string>F5</string>
@@ -268,7 +264,7 @@
     </iconset>
    </property>
    <property name="text">
-    <string>New Window</string>
+    <string>&amp;New Window</string>
    </property>
    <property name="toolTip">
     <string>New Window</string>
@@ -348,7 +344,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Icon View</string>
+    <string>&amp;Icon View</string>
    </property>
   </action>
   <action name="actionCompactView">
@@ -356,7 +352,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Compact View</string>
+    <string>&amp;Compact View</string>
    </property>
   </action>
   <action name="actionDetailedList">
@@ -364,7 +360,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Detailed List</string>
+    <string>&amp;Detailed List</string>
    </property>
   </action>
   <action name="actionThumbnailView">
@@ -372,17 +368,15 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Thumbnail View</string>
+    <string>&amp;Thumbnail View</string>
    </property>
   </action>
   <action name="actionCut">
    <property name="icon">
-    <iconset theme="edit-cut">
-     <normaloff/>
-    </iconset>
+    <iconset theme="edit-cut"/>
    </property>
    <property name="text">
-    <string>&amp;Cut</string>
+    <string>Cu&amp;t</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+X</string>
@@ -416,7 +410,7 @@
   </action>
   <action name="actionSelectAll">
    <property name="text">
-    <string>Select All</string>
+    <string>Select &amp;All</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+A</string>
@@ -424,7 +418,7 @@
   </action>
   <action name="actionPreferences">
    <property name="text">
-    <string>Preferences</string>
+    <string>Pr&amp;eferences</string>
    </property>
   </action>
   <action name="actionAscending">
@@ -485,12 +479,10 @@
   </action>
   <action name="actionNewTab">
    <property name="icon">
-    <iconset theme="window-new">
-     <normaloff/>
-    </iconset>
+    <iconset theme="window-new"/>
    </property>
    <property name="text">
-    <string>New Tab</string>
+    <string>New &amp;Tab</string>
    </property>
    <property name="toolTip">
     <string>New Tab</string>
@@ -501,12 +493,10 @@
   </action>
   <action name="actionGoBack">
    <property name="icon">
-    <iconset theme="go-previous">
-     <normaloff/>
-    </iconset>
+    <iconset theme="go-previous"/>
    </property>
    <property name="text">
-    <string>Go Back</string>
+    <string>Go &amp;Back</string>
    </property>
    <property name="toolTip">
     <string>Go Back</string>
@@ -517,12 +507,10 @@
   </action>
   <action name="actionGoForward">
    <property name="icon">
-    <iconset theme="go-next">
-     <normaloff/>
-    </iconset>
+    <iconset theme="go-next"/>
    </property>
    <property name="text">
-    <string>Go Forward</string>
+    <string>Go &amp;Forward</string>
    </property>
    <property name="toolTip">
     <string>Go Forward</string>
@@ -533,7 +521,7 @@
   </action>
   <action name="actionInvertSelection">
    <property name="text">
-    <string>Invert Selection</string>
+    <string>&amp;Invert Selection</string>
    </property>
   </action>
   <action name="actionDelete">
@@ -543,7 +531,7 @@
     </iconset>
    </property>
    <property name="text">
-    <string>Delete</string>
+    <string>&amp;Delete</string>
    </property>
    <property name="shortcut">
     <string>Del</string>
@@ -551,7 +539,7 @@
   </action>
   <action name="actionRename">
    <property name="text">
-    <string>Rename</string>
+    <string>&amp;Rename</string>
    </property>
    <property name="shortcut">
     <string>F2</string>
@@ -559,7 +547,7 @@
   </action>
   <action name="actionCloseTab">
    <property name="text">
-    <string>Close Tab</string>
+    <string>C&amp;lose Tab</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+W</string>
@@ -567,7 +555,7 @@
   </action>
   <action name="actionFileProperties">
    <property name="text">
-    <string>File Properties</string>
+    <string>File &amp;Properties</string>
    </property>
    <property name="shortcut">
     <string>Alt+Return</string>
@@ -575,7 +563,7 @@
   </action>
   <action name="actionFolderProperties">
    <property name="text">
-    <string>Folder Properties</string>
+    <string>&amp;Folder Properties</string>
    </property>
   </action>
   <action name="actionCaseSensitive">
