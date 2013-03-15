@@ -139,10 +139,12 @@ void FolderView::TreeView::dropEvent(QDropEvent* e) {
 
 
 void FolderView::onItemActivated(QModelIndex index) {
-  QVariant data = index.model()->data(index, FolderModel::FileInfoRole);
-  FmFileInfo* info = (FmFileInfo*)data.value<void*>();
-  if(info) {
-    Q_EMIT clicked(ActivatedClick, info);
+  if(index.isValid() && index.model()) {
+    QVariant data = index.model()->data(index, FolderModel::FileInfoRole);
+    FmFileInfo* info = (FmFileInfo*)data.value<void*>();
+    if(info) {
+      Q_EMIT clicked(ActivatedClick, info);
+    }
   }
 }
 
