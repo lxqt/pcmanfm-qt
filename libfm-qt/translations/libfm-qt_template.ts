@@ -537,27 +537,27 @@
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="233"/>
+        <location filename="../foldermodel.cpp" line="235"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="236"/>
+        <location filename="../foldermodel.cpp" line="238"/>
         <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="239"/>
+        <location filename="../foldermodel.cpp" line="241"/>
         <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="242"/>
+        <location filename="../foldermodel.cpp" line="244"/>
         <source>Modified</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="245"/>
+        <location filename="../foldermodel.cpp" line="247"/>
         <source>Owner</source>
         <translation type="unfinished"></translation>
     </message>

@@ -57,7 +57,7 @@ public:
 
 private:
   static GObject* readImageFromFile(const char* filename);
-  static GObject* readImageFromStream(GInputStream* stream, GCancellable* cancellable);
+  static GObject* readImageFromStream(GInputStream* stream, guint64 len, GCancellable* cancellable);
   static gboolean writeImage(GObject* image, const char* filename, const char* uri, const char* mtime);
   static GObject* scaleImage(GObject* ori_pix, int new_width, int new_height);
   static int getImageWidth(GObject* image);

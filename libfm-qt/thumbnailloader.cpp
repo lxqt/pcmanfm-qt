@@ -103,22 +103,24 @@ GObject* ThumbnailLoader::readImageFromFile(const char* filename) {
   return image.isNull() ? NULL : fm_qimage_wrapper_new(image);
 }
 
-GObject* ThumbnailLoader::readImageFromStream(GInputStream* stream, GCancellable* cancellable) {
-  QByteArray data;
-  data.reserve(1024 * 1024 * 4); // FIXME: get the size from the file info
-  while(!g_cancellable_is_cancelled(cancellable)) {
-    char buffer[4096];
-    // FIXME: in the future we can create a QIODevice class based on GInputStream, so we
-    // can avoid the unnecessary copies here.
-    gssize size = g_input_stream_read(stream, buffer, 4096, cancellable, NULL);
-    if(size == 0) // end of file
+GObject* ThumbnailLoader::readImageFromStream(GInputStream* stream, guint64 len, GCancellable* cancellable) {
+  // FIXME: should we set a limit here? Otherwise if len is too large, we can run out of memory.
+  unsigned char* buffer = new char[len]; // allocate enough buffer
+  unsigned char* pbuffer = buffer;
+  int totalReadSize = 0;
+  while(!g_cancellable_is_cancelled(cancellable) && totalReadSize < len) {
+    int bytesToRead = totalReadSize + 4096 > len ? len - totalReadSize : 4096;
+    gssize readSize = g_input_stream_read(stream, pbuffer, bytesToRead, cancellable, NULL);
+    if(readSize == 0) // end of file
       break;
-    else if(size == -1) // error
+    else if(readSize == -1) // error
       return NULL;
-    data.append(buffer, size);
+    totalReadSize += readSize;
+    pbuffer += readSize;
   }
   QImage image;
-  image.loadFromData(data);
+  image.loadFromData(buffer, totalReadSize);
+  delete []buffer;
   return image.isNull() ? NULL : fm_qimage_wrapper_new(image);
 }
 
