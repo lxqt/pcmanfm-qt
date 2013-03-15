@@ -50,6 +50,7 @@ DesktopWindow::DesktopWindow():
   model_ = new Fm::FolderModel();
   proxyModel_ = new Fm::ProxyFolderModel();
   proxyModel_->setSourceModel(model_);
+  proxyModel_->setShowThumbnails(true);
   folder_ = fm_folder_from_path(fm_path_get_desktop());
   model_->setFolder(folder_);
   setModel(proxyModel_);

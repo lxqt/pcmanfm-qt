@@ -28,11 +28,12 @@
 #include <QByteArray>
 #include "utilities.h"
 #include "fileoperation.h"
+#include "thumbnailloader.h"
 
 using namespace Fm;
 
 FolderModel::FolderModel() : 
-  folder_(NULL)  {
+  folder_(NULL) {
 /*
     ColumnIcon,
     ColumnName,
@@ -40,11 +41,19 @@ FolderModel::FolderModel() :
     ColumnMTime,
     NumOfColumns
 */
-  }
+  thumbnailRefCounts.reserve(4);
+}
 
 FolderModel::~FolderModel() {
   if(folder_)
     setFolder(NULL);
+  
+  // if the thumbnail requests list is not empty, cancel them
+  if(!thumbnailResults.empty()) {
+    Q_FOREACH(FmThumbnailResult* res, thumbnailResults) {
+      ThumbnailLoader::cancel(res);
+    }
+  }
 }
 
 void FolderModel::setFolder(FmFolder* new_folder) {
@@ -88,7 +97,7 @@ void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_da
   model->beginInsertRows(QModelIndex(), model->items.count(), model->items.count() + n_files - 1);
   for(GSList* l = files; l; l = l->next) {
     FmFileInfo* info = FM_FILE_INFO(l->data);
-    Item item(info);
+    FolderModelItem item(info);
 /*
     if(fm_file_info_is_hidden(info)) {
       model->hiddenItems.append(item);
@@ -105,7 +114,7 @@ static void FolderModel::onFilesChanged(FmFolder* folder, GSList* files, gpointe
   int n_files = g_slist_length(files);
 //  model->beginInsertRows(QModelIndex(), model->items.count(), model->items.count() + n_files - 1);
   for(GSList* l = files; l; l = l->next) {
-    // Item item(FM_FILE_INFO(l->data));
+    // FolderModelItem item(FM_FILE_INFO(l->data));
   }
 //  model->endInsertRows();
 }
@@ -116,7 +125,7 @@ static void FolderModel::onFilesRemoved(FmFolder* folder, GSList* files, gpointe
     FmFileInfo* info = FM_FILE_INFO(l->data);
     const char* name = fm_file_info_get_name(info);
     int row;
-    QList<Item>::iterator it = model->findItemByName(name, &row);
+    QList<FolderModelItem>::iterator it = model->findItemByName(name, &row);
     if(it != model->items.end()) {
       model->beginRemoveRows(QModelIndex(), row, row);
       model->items.erase(it);
@@ -129,7 +138,7 @@ void FolderModel::insertFiles(int row, FmFileInfoList* files) {
   int n_files = fm_file_info_list_get_length(files);
   beginInsertRows(QModelIndex(), row, row + n_files - 1);
   for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
-    Item item(FM_FILE_INFO(l->data));
+    FolderModelItem item(FM_FILE_INFO(l->data));
     items.append(item);
   }
   endInsertRows();
@@ -155,12 +164,12 @@ int FolderModel::columnCount (const QModelIndex & parent = QModelIndex()) const 
   return NumOfColumns;
 }
 
-FolderModel::Item* FolderModel::itemFromIndex(const QModelIndex& index) const {
-  return reinterpret_cast<Item*>(index.internalPointer());
+FolderModelItem* FolderModel::itemFromIndex(const QModelIndex& index) const {
+  return reinterpret_cast<FolderModelItem*>(index.internalPointer());
 }
 
 FmFileInfo* FolderModel::fileInfoFromIndex(const QModelIndex& index) const {
-  Item* item = itemFromIndex(index);
+  FolderModelItem* item = itemFromIndex(index);
   return item ? item->info : NULL;
 }
 
@@ -168,7 +177,7 @@ QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole
   if(!index.isValid() || index.row() > items.size() || index.column() >= NumOfColumns) {
     return QVariant();
   }
-  Item* item = itemFromIndex(index);
+  FolderModelItem* item = itemFromIndex(index);
   FmFileInfo* info = item->info;
 
   switch(role) {
@@ -245,7 +254,7 @@ QVariant FolderModel::headerData(int section, Qt::Orientation orientation, int r
 QModelIndex FolderModel::index(int row, int column, const QModelIndex & parent) const {
   if(row <0 || row >= items.size() || column < 0 || column >= NumOfColumns)
     return QModelIndex();
-  const Item& item = items.at(row);
+  const FolderModelItem& item = items.at(row);
   return createIndex(row, column, (void*)&item);
 }
 
@@ -269,11 +278,11 @@ Qt::ItemFlags FolderModel::flags(const QModelIndex& index) const {
 
 // FIXME: this is very inefficient and should be replaced with a 
 // more reasonable implementation later.
-QList<FolderModel::Item>::iterator FolderModel::findItemByPath(FmPath* path, int* row) {
-  QList<Item>::iterator it = items.begin();
+QList<FolderModelItem>::iterator FolderModel::findItemByPath(FmPath* path, int* row) {
+  QList<FolderModelItem>::iterator it = items.begin();
   int i = 0;
   while(it != items.end()) {
-    Item& item = *it;
+    FolderModelItem& item = *it;
     FmPath* item_path = fm_file_info_get_path(item.info);
     if(fm_path_equal(item_path, path)) {
       *row = i;
@@ -287,13 +296,28 @@ QList<FolderModel::Item>::iterator FolderModel::findItemByPath(FmPath* path, int
 
 // FIXME: this is very inefficient and should be replaced with a 
 // more reasonable implementation later.
-QList<FolderModel::Item>::iterator FolderModel::findItemByName(const char* name, int* row) {
-  QList<Item>::iterator it = items.begin();
+QList<FolderModelItem>::iterator FolderModel::findItemByName(const char* name, int* row) {
+  QList<FolderModelItem>::iterator it = items.begin();
   int i = 0;
   while(it != items.end()) {
-    Item& item = *it;
+    FolderModelItem& item = *it;
     const char* item_name = fm_file_info_get_name(item.info);
     if(strcmp(name, item_name) == 0) {
+      *row = i;
+      return it;
+    }
+    ++it;
+    ++i;
+  }
+  return items.end();
+}
+
+QList< FolderModelItem >::iterator FolderModel::findItemByFileInfo(FmFileInfo* info, int* row) {
+  QList<FolderModelItem>::iterator it = items.begin();
+  int i = 0;
+  while(it != items.end()) {
+    FolderModelItem& item = *it;
+    if(item.info == info) {
       *row = i;
       return it;
     }
@@ -322,7 +346,7 @@ QMimeData* FolderModel::mimeData(const QModelIndexList& indexes) const {
   QModelIndexList::const_iterator it;
   for(it = indexes.constBegin(); it != indexes.end(); ++it) {
     const QModelIndex index = *it;
-    Item* item = itemFromIndex(index);
+    FolderModelItem* item = itemFromIndex(index);
     if(item) {
       FmPath* path = fm_file_info_get_path(item->info);
       char* uri = fm_path_to_uri(path);
@@ -387,6 +411,106 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
 Qt::DropActions FolderModel::supportedDropActions() const {
   qDebug("FolderModel::supportedDropActions");
   return Qt::CopyAction|Qt::MoveAction|Qt::LinkAction;
+}
+
+// ask the model to load thumbnails of the specified size
+void FolderModel::cacheThumbnails(int size) {
+  QVector<QPair<int, int> >::iterator it;
+  for(it = thumbnailRefCounts.begin(); it != thumbnailRefCounts.end(); ++it) {
+    if(it->first == size) {
+      break;
+    }
+  }
+  if(it != thumbnailRefCounts.end())
+    ++it->second;
+  else
+    thumbnailRefCounts.append(QPair<int, int>(size, 1));
+}
+
+// ask the model to free cached thumbnails of the specified size
+void FolderModel::releaseThumbnails(int size) {
+  QVector<QPair<int, int> >::iterator it;
+  for(it = thumbnailRefCounts.begin(); it != thumbnailRefCounts.end(); ++it) {
+    if(it->first == size) {
+      break;
+    }
+  }
+  if(it != thumbnailRefCounts.end()) {
+    --it->second;
+    if(it->second == 0) {
+      thumbnailRefCounts.erase(it);
+
+      // remove thumbnails that ara queued for loading from thumbnailResults
+      QLinkedList<FmThumbnailResult*>::iterator it;
+      for(it = thumbnailResults.begin(); it != thumbnailResults.end();) {
+        QLinkedList<FmThumbnailResult*>::iterator next = it + 1;
+        FmThumbnailResult* res = *it;
+        if(ThumbnailLoader::size(res) == size) {
+          ThumbnailLoader::cancel(res);
+          thumbnailResults.erase(it);
+        }
+        it = next;
+      }
+
+      // remove all cached thumbnails of the specified size
+      QList<FolderModelItem>::iterator itemIt;
+      for(itemIt = items.begin(); itemIt != items.end(); ++itemIt) {
+        FolderModelItem& item = *itemIt;
+        item.removeThumbnail(size);
+      }
+    }
+  }
+}
+
+void FolderModel::onThumbnailLoaded(FmThumbnailResult* res, gpointer user_data) {
+  FolderModel* pThis = reinterpret_cast<FolderModel*>(user_data);
+  QLinkedList<FmThumbnailResult*>::iterator it;
+  for(it = pThis->thumbnailResults.begin(); it != pThis->thumbnailResults.end(); ++it) {
+    if(*it == res) {
+      pThis->thumbnailResults.erase(it);
+      FmFileInfo* info = ThumbnailLoader::fileInfo(res);
+      int row = -1;
+      QList<FolderModelItem>::iterator it = pThis->findItemByFileInfo(info, &row);
+      if(it != pThis->items.end()) {
+        // the file is found in our model
+        FolderModelItem& item = *it;
+        qDebug("thumbnail loaded for: %s", item.displayName.toUtf8().constData());
+        QModelIndex index = pThis->createIndex(row, 0, (void*)&item);
+        int size = ThumbnailLoader::size(res);
+        QImage image = ThumbnailLoader::image(res);
+        FolderModelItem::Thumbnail* thumbnail = item.findThumbnail(size);
+        thumbnail->image = image;
+        if(image.isNull())
+          thumbnail->status = FolderModelItem::ThumbnailFailed;
+        else
+          thumbnail->status = FolderModelItem::ThumbnailLoaded;
+        // tell the world that we have the thumbnail loaded
+        Q_EMIT pThis->thumbnailLoaded(index, size);
+      }
+      break;
+    }
+  }
+}
+
+// get a thumbnail of size at the index
+// if a thumbnail is not yet loaded, this will initiate loading of the thumbnail.
+QImage FolderModel::thumbnailFromIndex(const QModelIndex& index, int size) {
+  FolderModelItem* item = itemFromIndex(index);
+  if(item) {
+    FolderModelItem::Thumbnail* thumbnail = item->findThumbnail(size);
+    switch(thumbnail->status) {
+      case FolderModelItem::ThumbnailNotChecked: {
+        // load the thumbnail
+        FmThumbnailResult* res = ThumbnailLoader::load(item->info, size, onThumbnailLoaded, this);
+        thumbnailResults.push_back(res);
+        thumbnail->status = FolderModelItem::ThumbnailLoading;
+        break;
+      }
+      case FolderModelItem::ThumbnailLoaded:
+        return thumbnail->image;
+    }
+  }
+  return QImage();
 }
 
 #include "foldermodel.moc"

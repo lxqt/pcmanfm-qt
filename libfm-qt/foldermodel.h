@@ -1,5 +1,5 @@
 /*
-    <one line to give the library's name and an idea of what it does.>
+
     Copyright (C) 2012  Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 
     This library is free software; you can redistribute it and/or
@@ -23,9 +23,14 @@
 
 #include <QAbstractListModel>
 #include <QIcon>
+#include <QImage>
 #include <libfm/fm.h>
 #include <QList>
+#include <QVector>
+#include <QLinkedList>
+#include <QPair>
 #include "icontheme.h"
+#include "foldermodelitem.h"
 
 namespace Fm {
 
@@ -45,41 +50,7 @@ public:
     ColumnFileOwner,
     NumOfColumns
   };
-  
-  class Item {
-  public:
-    Item(FmFileInfo* _info):
-      info(fm_file_info_ref(_info)) {
-      displayName = QString::fromUtf8(fm_file_info_get_disp_name(info));
-      icon = IconTheme::icon(fm_file_info_get_icon(_info));
-    }
 
-    Item(const Item& other) {
-      info = other.info ? fm_file_info_ref(other.info) : NULL;
-      displayName = QString::fromUtf8(fm_file_info_get_disp_name(info));
-      icon = other.icon;
-    }
-
-    ~Item() {
-      if(info)
-	fm_file_info_unref(info);
-    }
-
-    QString displayName;
-    QIcon icon;
-    FmFileInfo* info;
-  };
-
-  /*
-  class Sorter {
-  public:
-    Sorter(FolderModel* model) :  model_(model) {
-    }
-    inline bool operator()(const Item &t1, const Item &t2) const;
-    FolderModel* model_;
-  };
-  */
-  
 public:
   FolderModel();
   virtual ~FolderModel();
@@ -109,6 +80,14 @@ public:
   virtual bool dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent);
 
   FmFileInfo* fileInfoFromIndex(const QModelIndex& index) const;
+  FolderModelItem* itemFromIndex(const QModelIndex& index) const;
+  QImage thumbnailFromIndex(const QModelIndex& index, int size);
+
+  void cacheThumbnails(int size);
+  void releaseThumbnails(int size);
+
+Q_SIGNALS:
+  void thumbnailLoaded(const QModelIndex& index, int size);
 
 protected:
   static void onStartLoading(FmFolder* folder, gpointer user_data);
@@ -116,20 +95,22 @@ protected:
   static void onFilesAdded(FmFolder* folder, GSList* files, gpointer user_data);
   static void onFilesChanged(FmFolder* folder, GSList* files, gpointer user_data);
   static void onFilesRemoved(FmFolder* folder, GSList* files, gpointer user_data);
+  static void onThumbnailLoaded(FmThumbnailResult *res, gpointer user_data);
+
   void insertFiles(int row, FmFileInfoList* files);
   void removeAll();
-  QList<Item>::iterator findItemByPath(FmPath* path, int* row);
-  QList<Item>::iterator findItemByName(const char* name, int* row);
-
-  Item* itemFromIndex(const QModelIndex& index) const;
+  QList<FolderModelItem>::iterator findItemByPath(FmPath* path, int* row);
+  QList<FolderModelItem>::iterator findItemByName(const char* name, int* row);
+  QList<FolderModelItem>::iterator findItemByFileInfo(FmFileInfo* info, int* row);
 
 private:
   FmFolder* folder_;
-
   // FIXME: should we use a hash table here so item lookup becomes much faster?
-  QList<Item> items;
-  // ColumnId sortColumn;
-  // Qt::SortOrder sortOrder;
+  QList<FolderModelItem> items;
+
+  // record what size of thumbnails we should cache in an array of <size, refCount> pairs.
+  QVector<QPair<int, int> > thumbnailRefCounts;
+  QLinkedList<FmThumbnailResult*> thumbnailResults;
 };
 
 }

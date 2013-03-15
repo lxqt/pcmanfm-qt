@@ -40,10 +40,11 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
     folderModel_(NULL) {
 
   Settings& settings = static_cast<Application*>(qApp)->settings();
-      
+
   // create proxy folder model to do item filtering
   proxyModel_ = new ProxyFolderModel();
   proxyModel_->setShowHidden(false);
+  proxyModel_->setShowThumbnails(true);
   connect(proxyModel_, SIGNAL(sortFilterChanged()), SLOT(onModelSortFilterChanged()));
 
   verticalLayout = new QVBoxLayout(this);

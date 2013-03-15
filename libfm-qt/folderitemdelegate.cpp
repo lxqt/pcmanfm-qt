@@ -71,6 +71,7 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
     opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
 
+    // FIXME: QImage based thumbnails are painted at incorrect locations
     QPixmap pixmap = opt.icon.pixmap(view_->iconSize());
     opt.decorationSize.setWidth(view_->gridSize().width());
     opt.decorationSize.setHeight(view_->iconSize().height());

@@ -26,22 +26,21 @@ using namespace Fm;
 LibFmQt* theApp = NULL;
 
 LibFmQt::LibFmQt() {
-  if(!theApp) {
-    theApp = this;
-    g_type_init();
-    fm_init(NULL);
-    
-    iconTheme = new IconTheme();
-    translator_.load("libfm-qt_" + QLocale::system().name(), LIBFM_DATA_DIR "/translations");
-  }
-  else {
-    // TODO: only single instance is allowed, show a warning
-  }
+  // TODO: only single instance is allowed, show a warning
+  Q_ASSERT(!theApp);
+
+  theApp = this;
+  g_type_init();
+  fm_init(NULL);
+  
+  iconTheme = new IconTheme();
+  thumbnailLoader = new ThumbnailLoader();
+  translator_.load("libfm-qt_" + QLocale::system().name(), LIBFM_DATA_DIR "/translations");
 }
 
 LibFmQt::~LibFmQt() {
-  if(iconTheme)
-    delete iconTheme;
+  delete iconTheme;
+  delete thumbnailLoader;
   fm_finalize();
 }
 

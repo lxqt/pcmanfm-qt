@@ -25,13 +25,40 @@ using namespace Fm;
 
 ProxyFolderModel::ProxyFolderModel(QObject * parent):
   QSortFilterProxyModel(parent),
+  thumbnailSize_(0),
   showHidden_(false),
+  showThumbnails_(false),
   folderFirst_(true) {
   setDynamicSortFilter(true);
   setSortCaseSensitivity(Qt::CaseInsensitive);
 }
 
 ProxyFolderModel::~ProxyFolderModel() {
+  if(showThumbnails_ && thumbnailSize_ != 0) {
+    FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
+    // tell the source model that we don't need the thumnails anymore
+    if(srcModel) {
+      srcModel->releaseThumbnails(thumbnailSize_);
+      disconnect(srcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)));
+    }
+  }
+}
+
+void ProxyFolderModel::setSourceModel(QAbstractItemModel* model) {
+  Q_ASSERT(model->inherits("Fm::FolderModel"));
+  if(showThumbnails_ && thumbnailSize_ != 0) { // if we're showing thumbnails
+    FolderModel* oldSrcModel = static_cast<FolderModel*>(sourceModel());
+    FolderModel* newSrcModel = static_cast<FolderModel*>(model);
+    if(oldSrcModel) { // we need to release cached thumbnails for the old source model
+      oldSrcModel->releaseThumbnails(thumbnailSize_);
+      disconnect(oldSrcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)));
+    }
+    if(newSrcModel) { // tell the new source model that we want thumbnails of this size
+      newSrcModel->cacheThumbnails(thumbnailSize_);
+      connect(newSrcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)), SLOT(onThumbnailLoaded(QModelIndex,int)));
+    }
+  }
+  QSortFilterProxyModel::setSourceModel(model);
 }
 
 void ProxyFolderModel::sort(int column, Qt::SortOrder order) {
@@ -84,8 +111,6 @@ bool ProxyFolderModel::lessThan(const QModelIndex& left, const QModelIndex& righ
         return leftIsFolder ? true : false;
     }
 
-    // FIXME: do we need to handle filterCaseSensitivity() here?
-
     switch(sortColumn()) {
       case FolderModel::ColumnFileName:
         break;
@@ -111,5 +136,85 @@ FmFileInfo* ProxyFolderModel::fileInfoFromIndex(const QModelIndex& index) const 
   }
   return NULL;
 }
+
+void ProxyFolderModel::setShowThumbnails(bool show) {
+  if(show != showThumbnails_) {
+    showThumbnails_ = show;
+    FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
+    if(srcModel && thumbnailSize_ != 0) {
+      if(show) {
+        // ask for cache of thumbnails of the new size in source model
+        srcModel->cacheThumbnails(thumbnailSize_);
+        // connect to the srcModel so we can be notified when a thumbnail is loaded.
+        connect(srcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)), SLOT(onThumbnailLoaded(QModelIndex,int)));
+      }
+      else { // turn off thumbnails
+        // free cached old thumbnails in souce model
+        srcModel->releaseThumbnails(thumbnailSize_);
+        disconnect(srcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)));
+      }
+      // reload all items, FIXME: can we only update items previously having thumbnails
+      Q_EMIT dataChanged(index(0, 0), index(rowCount() - 1, 0));
+    }
+  }
+}
+
+void ProxyFolderModel::setThumbnailSize(int size) {
+  if(size != thumbnailSize_) {
+    FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
+    if(showThumbnails_ && srcModel) {
+      // free cached thumbnails of the old size
+      if(thumbnailSize_ != 0)
+        srcModel->releaseThumbnails(thumbnailSize_);
+      else {
+        // if the old thumbnail size is 0, we did not turn on thumbnail initially
+        connect(srcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)), SLOT(onThumbnailLoaded(QModelIndex,int)));
+      }
+      // ask for cache of thumbnails of the new size in source model
+      srcModel->cacheThumbnails(size);
+      // reload all items, FIXME: can we only update items previously having thumbnails
+      Q_EMIT dataChanged(index(0, 0), index(rowCount() - 1, 0));
+    }
+    thumbnailSize_ = size;
+  }
+}
+
+QVariant ProxyFolderModel::data(const QModelIndex& index, int role) const {
+  if(role == Qt::DecorationRole && showThumbnails_ && thumbnailSize_) {
+    // we need to show thumbnails instead of icons
+    FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
+    QModelIndex srcIndex = mapToSource(index);
+    QImage image = srcModel->thumbnailFromIndex(srcIndex, thumbnailSize_);
+    if(!image.isNull()) // if we got a thumbnail of the desired size, use it
+      return QVariant(image);
+  }
+  // fallback to icons if thumbnails are not available
+  return QSortFilterProxyModel::data(index, role);
+}
+
+void ProxyFolderModel::onThumbnailLoaded(const QModelIndex& srcIndex, int size) {
+  if(size == thumbnailSize_) { // if a thumbnail of the size we want is loaded
+    QModelIndex index = mapFromSource(srcIndex);
+    Q_EMIT dataChanged(index, index);
+  }
+}
+
+#if 0
+void ProxyFolderModel::reloadAllThumbnails() {
+  // reload all thumbnails and update UI
+  FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
+  if(srcModel) {
+    int rows= rowCount();
+    for(int row = 0; row < rows; ++row) {
+      QModelIndex index = this->index(row, 0);
+      QModelIndex srcIndex = mapToSource(index);
+      QImage image = srcModel->thumbnailFromIndex(srcIndex, size);
+      // tell the world that the item is changed to trigger a UI update
+      if(!image.isNull())
+        Q_EMIT dataChanged(index, index);
+    }
+  }
+}
+#endif
 
 #include "proxyfoldermodel.moc"

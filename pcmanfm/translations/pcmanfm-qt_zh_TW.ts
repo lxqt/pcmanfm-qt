@@ -745,7 +745,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="192"/>
+        <location filename="../desktopwindow.cpp" line="193"/>
         <source>Desktop Preferences</source>
         <translation type="unfinished">桌面偏好設定</translation>
     </message>
@@ -807,19 +807,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="203"/>
+        <location filename="../tabpage.cpp" line="204"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>可用空間 %1 (全部: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="218"/>
+        <location filename="../tabpage.cpp" line="219"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n 個項目</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="220"/>
+        <location filename="../tabpage.cpp" line="221"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n 個隱藏)</numerusform>
