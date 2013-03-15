@@ -105,7 +105,7 @@ PlacesModel::PlacesModel(QObject* parent):
   showApplications_(true),
   showDesktop_(true) {
   Item *item;
-  placesRoot = new QStandardItem("Places");
+  placesRoot = new QStandardItem(tr("Places"));
   placesRoot->setEditable(false);
   placesRoot->setSelectable(false);
   appendRow(placesRoot);
@@ -138,7 +138,7 @@ PlacesModel::PlacesModel(QObject* parent):
   networkItem->setEditable(false);
   placesRoot->appendRow(networkItem);
 
-  devicesRoot = new QStandardItem("Devices");
+  devicesRoot = new QStandardItem(tr("Devices"));
   devicesRoot->setEditable(false);
   devicesRoot->setSelectable(false);
   appendRow(devicesRoot);
@@ -181,7 +181,7 @@ PlacesModel::PlacesModel(QObject* parent):
   g_list_free(vols);
 
   // bookmarks
-  bookmarksRoot = new QStandardItem("Bookmarks");
+  bookmarksRoot = new QStandardItem(tr("Bookmarks"));
   bookmarksRoot->setEditable(false);
   bookmarksRoot->setSelectable(false);
   appendRow(bookmarksRoot);

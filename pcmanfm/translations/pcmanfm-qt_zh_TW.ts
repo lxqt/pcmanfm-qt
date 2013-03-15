@@ -67,27 +67,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="111"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>插入可移除式裝置</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="113"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;插入可移除式裝置&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="114"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>媒體種類:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="115"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>正在偵測...</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="116"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>請選擇想要執行的動作:</translation>
     </message>
 </context>
 <context>
@@ -203,12 +203,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="470"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>上一層(&amp;U)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="477"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>重新讀取(&amp;)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="479"/>
@@ -228,7 +228,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="482"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>新視窗(&amp;N)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="484"/>
@@ -268,7 +268,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="492"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>桌面(&amp;D)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="493"/>
@@ -283,47 +283,47 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="496"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>圖示檢視(&amp;I)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="497"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">簡易檢視(&amp;C)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="498"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
+        <translation>詳細清單(&amp;D)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="499"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>縮圖檢視(&amp;T)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="500"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>剪下(&amp;T)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="536"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>關閉(&amp;L)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="538"/>
         <source>File &amp;Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案屬性(&amp;P)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="540"/>
         <source>&amp;Folder Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>資料夾屬性(&amp;F)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="552"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>排序(&amp;S)</translation>
     </message>
     <message>
         <source>Icon View</source>
@@ -373,27 +373,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="506"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>全選(&amp;A)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="508"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation>偏好設定(&amp;R)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="531"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>反向選取(&amp;I)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="532"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除(&amp;D)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="534"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>重新命名(&amp;R)</translation>
     </message>
     <message>
         <source>Select All</source>
@@ -402,7 +402,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="507"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Preferences</source>
@@ -446,7 +446,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="516"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>新分頁(&amp;T)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="518"/>
@@ -461,7 +461,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="521"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>後退(&amp;B)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="523"/>
@@ -471,12 +471,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="525"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="526"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>前進(&amp;F)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="528"/>
@@ -550,12 +550,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="544"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>編輯書籤</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="545"/>
         <source>Open &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>開啟終端機(&amp;T)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="546"/>
@@ -565,12 +565,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="547"/>
         <source>Open as &amp;Root</source>
-        <translation type="unfinished"></translation>
+        <translation>以系統管理員權限開啟(&amp;R)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="548"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>編輯書籤(&amp;E)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="549"/>
@@ -609,7 +609,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="556"/>
         <source>&amp;Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>工具(&amp;T)</translation>
     </message>
 </context>
 <context>
@@ -701,12 +701,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorundialog.cpp" line="43"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>在檔案管理程式內開啟</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="130"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>可移除式磁碟</translation>
     </message>
 </context>
 <context>
@@ -714,32 +714,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="41"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>只以背景色填滿</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="42"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>延展以填滿整個螢幕</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="43"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>延展到最適合螢幕大小</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="44"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>置於螢幕中央</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="45"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>連續拼貼鋪滿整個螢幕</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="118"/>
         <source>Image Files</source>
-        <translation type="unfinished"></translation>
+        <translation>影像檔案</translation>
     </message>
 </context>
 <context>
@@ -747,7 +747,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopwindow.cpp" line="192"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished">桌面偏好設定</translation>
+        <translation>桌面偏好設定</translation>
     </message>
 </context>
 <context>
@@ -755,12 +755,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="632"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>移動到垃圾桶(&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="632"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除(&amp;D)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="685"/>
@@ -768,17 +768,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../mainwindow.cpp" line="726"/>
         <location filename="../mainwindow.cpp" line="736"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="695"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>切換使用者指令尚未設定</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="736"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>終端機模擬器尚未設定</translation>
     </message>
 </context>
 <context>
@@ -786,22 +786,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferencesdialog.cpp" line="159"/>
         <source>Icon View</source>
-        <translation type="unfinished">圖示檢視</translation>
+        <translation>圖示檢視</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="160"/>
         <source>Compact Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>簡易檢視</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="161"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished">縮圖檢視</translation>
+        <translation>縮圖檢視</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="162"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>詳細清單檢視</translation>
     </message>
 </context>
 <context>
@@ -831,188 +831,189 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="492"/>
         <source>Preferences</source>
-        <translation type="unfinished">偏好設定</translation>
+        <translation>偏好設定</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="497"/>
         <source>User Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>使用者界面</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="499"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>行為</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="501"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"></translation>
+        <translation>縮圖</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="503"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>磁碟</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="505"/>
         <source>Advanced</source>
-        <translation type="unfinished">進階</translation>
+        <translation>進階</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="508"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>圖示</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="509"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>大圖示尺寸:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="510"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>小圖示尺寸:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="511"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation>縮圖尺寸:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="512"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>側邊欄圖示尺寸:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="513"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>圖示佈景主題:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="514"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>視窗</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="515"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>新視窗的預設寬度</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="516"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>新視窗的預設高度</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="517"/>
         <source>Always show the tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>總是顯示標籤列</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="518"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation type="unfinished"></translation>
+        <translation>在分頁標籤上顯示「關閉」按鈕</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="519"/>
         <source>Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>瀏覽</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="520"/>
         <source>Open files with single click</source>
-        <translation type="unfinished"></translation>
+        <translation>單擊開啟檔案</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="521"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>預設檢視模式:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="522"/>
         <source>File Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案操作</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="523"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除檔案前確認</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="524"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>將檔案移動到垃圾桶，而不直接刪除</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="525"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示檔案縮圖</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="526"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>只顯示本地檔案的縮圖</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="527"/>
         <source>Do not generate thumbnails for files exceeding this size (KB):</source>
-        <translation type="unfinished"></translation>
+        <translation>不為超過指定大小的檔案產生縮圖 (KB)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="528"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>自動掛載</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>掛載可掛載的磁碟</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="530"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>可移除式媒體插入時自動掛載</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="531"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>可移除式媒體插入時顯示可用的選項</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="532"/>
         <source>Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>程式</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
         <source>Terminal emulator command for directories:</source>
-        <translation type="unfinished"></translation>
+        <translation>用來開啟目錄的終端機模擬器指令:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="534"/>
         <source>Switch user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>切換使用者的指令:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation type="unfinished"></translation>
+        <translation>範例: 終端機指令可用 &quot;xterm -e %s&quot;而切換使用者指令可用 &quot;gksu %s&quot;。
+%s = 想要用終端機或是切換使用者執行的指令。</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
         <source>Archiver integration:</source>
-        <translation type="unfinished"></translation>
+        <translation>壓縮程式整合:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="538"/>
         <source>Terminal emulator command for programs:</source>
-        <translation type="unfinished"></translation>
+        <translation>用來執行程式的終端機模擬器指令:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 </TS>

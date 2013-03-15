@@ -586,6 +586,11 @@
 <context>
     <name>Fm::PlacesModel</name>
     <message>
+        <location filename="../placesmodel.cpp" line="108"/>
+        <source>Places</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../placesmodel.cpp" line="117"/>
         <source>Desktop</source>
         <translation type="unfinished"></translation>
@@ -608,6 +613,16 @@
     <message>
         <location filename="../placesmodel.cpp" line="136"/>
         <source>Network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesmodel.cpp" line="141"/>
+        <source>Devices</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesmodel.cpp" line="184"/>
+        <source>Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -652,6 +667,11 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="56"/>
+        <source>Type: %1
+Modified: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../renamedialog.cpp" line="75"/>
         <source>Type: %1
 Modified: %3</source>

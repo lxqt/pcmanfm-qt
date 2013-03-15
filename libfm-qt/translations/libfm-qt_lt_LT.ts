@@ -496,6 +496,18 @@
         <source>Network</source>
         <translation>Tinklas</translation>
     </message>
+    <message>
+        <source>Places</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Devices</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bookmarks</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Fm::PlacesView</name>
@@ -543,6 +555,13 @@ Keista: %3</translation>
     <message>
         <source>&amp;Rename</source>
         <translation>Pe&amp;rvadinti</translation>
+    </message>
+    <message>
+        <source>Type: %1
+Modified: %2</source>
+        <translation type="unfinished">Tipas: %1
+Keista: %2 {1
+?}</translation>
     </message>
 </context>
 <context>
