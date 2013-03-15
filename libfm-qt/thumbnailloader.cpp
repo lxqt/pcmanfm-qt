@@ -21,7 +21,6 @@
 #include "thumbnailloader.h"
 #include <new>
 #include <QByteArray>
-#include <qtextlayout.h>
 
 using namespace Fm;
 
@@ -161,8 +160,9 @@ char* ThumbnailLoader::getImageText(GObject* image, const char* key) {
 
 QImage ThumbnailLoader::image(FmThumbnailResult* result) {
   FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(fm_thumbnail_result_get_data(result));
-  if(wrapper)
+  if(wrapper) {
     return wrapper->image;
+  }
   return QImage();
 }
 

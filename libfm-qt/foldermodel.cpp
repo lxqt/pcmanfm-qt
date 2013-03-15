@@ -26,6 +26,8 @@
 #include <qmimedata.h>
 #include <QMimeData>
 #include <QByteArray>
+#include <QPixmap>
+#include <QPainter>
 #include "utilities.h"
 #include "fileoperation.h"
 #include "thumbnailloader.h"
@@ -466,26 +468,43 @@ void FolderModel::onThumbnailLoaded(FmThumbnailResult* res, gpointer user_data) 
   FolderModel* pThis = reinterpret_cast<FolderModel*>(user_data);
   QLinkedList<FmThumbnailResult*>::iterator it;
   for(it = pThis->thumbnailResults.begin(); it != pThis->thumbnailResults.end(); ++it) {
-    if(*it == res) {
-      pThis->thumbnailResults.erase(it);
+    if(*it == res) { // the thumbnail result is in our list
+      pThis->thumbnailResults.erase(it); // remove it from the list
       FmFileInfo* info = ThumbnailLoader::fileInfo(res);
       int row = -1;
+      // find the model item this thumbnail belongs to
       QList<FolderModelItem>::iterator it = pThis->findItemByFileInfo(info, &row);
       if(it != pThis->items.end()) {
         // the file is found in our model
         FolderModelItem& item = *it;
-        qDebug("thumbnail loaded for: %s", item.displayName.toUtf8().constData());
         QModelIndex index = pThis->createIndex(row, 0, (void*)&item);
+        // store the image in the folder model item.
         int size = ThumbnailLoader::size(res);
         QImage image = ThumbnailLoader::image(res);
         FolderModelItem::Thumbnail* thumbnail = item.findThumbnail(size);
         thumbnail->image = image;
+        // qDebug("thumbnail loaded for: %s, size: %d", item.displayName.toUtf8().constData(), size);
         if(image.isNull())
           thumbnail->status = FolderModelItem::ThumbnailFailed;
-        else
+        else {
           thumbnail->status = FolderModelItem::ThumbnailLoaded;
-        // tell the world that we have the thumbnail loaded
-        Q_EMIT pThis->thumbnailLoaded(index, size);
+          // FIXME: due to bugs in Qt's QStyledItemDelegate, if the image width and height
+          // are not the same, painting errors will happen. It's quite unfortunate.
+          // Let's do some padding to make its width and height equals.
+          // This greatly decrease performance :-(
+          // Later if we can re-implement our own item delegate, this can be avoided.
+          QPixmap pixmap = QPixmap(size, size);
+          pixmap.fill(QColor(0, 0, 0, 0)); // fill the pixmap with transparent color (alpha:0)
+          QPainter painter(&pixmap);
+          int x = (size - image.width()) / 2;
+          int y = (size - image.height()) / 2;
+          painter.drawImage(QPoint(x, y), image); // draw the image to the pixmap at center.
+          // FIXME: should we cache QPixmap instead for performance reason?
+          thumbnail->image = pixmap.toImage(); // convert it back to image
+
+          // tell the world that we have the thumbnail loaded
+          Q_EMIT pThis->thumbnailLoaded(index, size);
+        }
       }
       break;
     }
