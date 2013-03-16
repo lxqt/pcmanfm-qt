@@ -78,8 +78,15 @@ GObject *fm_qimage_wrapper_new(QImage& image) {
 }
 
 ThumbnailLoader* ThumbnailLoader::theThumbnailLoader = NULL;
+bool ThumbnailLoader::localFilesOnly_ = true;
+int ThumbnailLoader::maxThumbnailFileSize_ = 0;
 
 ThumbnailLoader::ThumbnailLoader() {
+
+  // apply the settings to libfm
+  fm_config->thumbnail_local = localFilesOnly_;
+  fm_config->thumbnail_max = maxThumbnailFileSize_;
+
   ThumbnailLoaderBackend qt_backend = {
     readImageFromFile,
     readImageFromStream,
@@ -100,10 +107,12 @@ ThumbnailLoader::~ThumbnailLoader() {
 GObject* ThumbnailLoader::readImageFromFile(const char* filename) {
   QImage image;
   image.load(QString(filename));
+  // qDebug("readImageFromFile: %s, %d", filename, image.isNull());
   return image.isNull() ? NULL : fm_qimage_wrapper_new(image);
 }
 
 GObject* ThumbnailLoader::readImageFromStream(GInputStream* stream, guint64 len, GCancellable* cancellable) {
+  // qDebug("readImageFromStream: %p, %llu", stream, len);
   // FIXME: should we set a limit here? Otherwise if len is too large, we can run out of memory.
   unsigned char* buffer = new char[len]; // allocate enough buffer
   unsigned char* pbuffer = buffer;
@@ -132,7 +141,7 @@ gboolean ThumbnailLoader::writeImage(GObject* image, const char* filename, const
 }
 
 GObject* ThumbnailLoader::scaleImage(GObject* ori_pix, int new_width, int new_height) {
-  qDebug("scaleImage: %d, %d", new_width, new_height);
+  // qDebug("scaleImage: %d, %d", new_width, new_height);
   FmQImageWrapper* ori_wrapper = FM_QIMAGE_WRAPPER(ori_pix);
   QImage scaled = ori_wrapper->image.scaled(new_width, new_height, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
   return scaled.isNull() ? NULL : fm_qimage_wrapper_new(scaled);

@@ -27,7 +27,7 @@
 
 namespace Fm {
 
-class ThumbnailLoader {
+class LIBFM_QT_API ThumbnailLoader {
 
 public:
   ThumbnailLoader();
@@ -38,6 +38,7 @@ public:
   }
 
   static FmThumbnailResult* load(FmFileInfo* fileInfo, int size, FmThumbnailResultCallback callback, gpointer user_data) {
+    // qDebug("load thumbnail: %s", fm_file_info_get_disp_name(fileInfo));
     return fm_thumbnail_loader_load(fileInfo, size, callback, user_data);
   }
 
@@ -55,6 +56,26 @@ public:
     fm_thumbnail_result_get_size(result);
   }
 
+  static void setLocalFilesOnly(bool value) {
+    localFilesOnly_ = value;
+    if(fm_config)
+      fm_config->thumbnail_local = localFilesOnly_;
+  }
+
+  static bool localFilesOnly() {
+    return localFilesOnly_;
+  }
+
+  static int maxThumbnailFileSize() {
+    return maxThumbnailFileSize_;
+  }
+  
+  static void setMaxThumbnailFileSize(int size) {
+    maxThumbnailFileSize_ = size;
+    if(fm_config)
+      fm_config->thumbnail_max = maxThumbnailFileSize_;
+  }
+
 private:
   static GObject* readImageFromFile(const char* filename);
   static GObject* readImageFromStream(GInputStream* stream, guint64 len, GCancellable* cancellable);
@@ -67,6 +88,8 @@ private:
 
 private:
   static ThumbnailLoader* theThumbnailLoader;
+  static bool localFilesOnly_;
+  static int maxThumbnailFileSize_;
 };
 
 }

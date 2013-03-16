@@ -32,7 +32,10 @@ LibFmQt::LibFmQt() {
   theApp = this;
   g_type_init();
   fm_init(NULL);
-  
+
+  // turn on glib debug message
+  // g_setenv("G_MESSAGES_DEBUG", "all", true);
+
   iconTheme = new IconTheme();
   thumbnailLoader = new ThumbnailLoader();
   translator_.load("libfm-qt_" + QLocale::system().name(), LIBFM_DATA_DIR "/translations");

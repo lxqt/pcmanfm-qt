@@ -238,8 +238,11 @@ void FolderView::setViewMode(ViewMode _mode) {
 void FolderView::setIconSize(ViewMode mode, QSize size) {
   Q_ASSERT(mode >= FirstViewMode && mode <= LastViewMode);
   iconSize_[mode - FirstViewMode] = size;
-  if(viewMode() == mode)
+  if(viewMode() == mode) {
     view->setIconSize(size);
+    if(model_)
+      model_->setThumbnailSize(size.width());
+  }
 }
 
 QSize FolderView::iconSize(ViewMode mode) const {

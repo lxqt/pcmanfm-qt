@@ -745,7 +745,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="193"/>
+        <location filename="../desktopwindow.cpp" line="194"/>
         <source>Desktop Preferences</source>
         <translation type="unfinished">桌面偏好設定</translation>
     </message>
@@ -955,62 +955,67 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="527"/>
-        <source>Do not generate thumbnails for files exceeding this size (KB):</source>
+        <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="528"/>
-        <source>Auto Mount</source>
+        <source> KB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
-        <source>Mount mountable volumes automatically on program startup</source>
+        <source>Auto Mount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="530"/>
-        <source>Mount removable media automatically when they are inserted</source>
+        <source>Mount mountable volumes automatically on program startup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="531"/>
-        <source>Show available options for removable media when they are inserted</source>
+        <source>Mount removable media automatically when they are inserted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="532"/>
-        <source>Programs</source>
+        <source>Show available options for removable media when they are inserted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
-        <source>Terminal emulator command for directories:</source>
+        <source>Programs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="534"/>
-        <source>Switch user command:</source>
+        <source>Terminal emulator command for directories:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
+        <source>Switch user command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="536"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="538"/>
         <source>Archiver integration:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="538"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
         <source>Terminal emulator command for programs:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation type="unfinished"></translation>
     </message>

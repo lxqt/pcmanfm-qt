@@ -517,6 +517,7 @@ QImage FolderModel::thumbnailFromIndex(const QModelIndex& index, int size) {
   FolderModelItem* item = itemFromIndex(index);
   if(item) {
     FolderModelItem::Thumbnail* thumbnail = item->findThumbnail(size);
+    // qDebug("FolderModel::thumbnailFromIndex: %d, %s", thumbnail->status, item->displayName.toUtf8().data());
     switch(thumbnail->status) {
       case FolderModelItem::ThumbnailNotChecked: {
         // load the thumbnail
