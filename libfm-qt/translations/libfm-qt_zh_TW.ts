@@ -582,7 +582,7 @@
 <context>
     <name>Fm::MountOperationPasswordDialog</name>
     <message>
-        <location filename="../mountoperationpassworddialog.cpp" line="42"/>
+        <location filename="../mountoperationpassworddialog.cpp" line="40"/>
         <source>&amp;Connect</source>
         <translation>連接(&amp;C)</translation>
     </message>

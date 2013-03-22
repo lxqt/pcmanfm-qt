@@ -33,8 +33,6 @@ MountOperationPasswordDialog::MountOperationPasswordDialog(MountOperation* op, G
   needPassword(flags & G_ASK_PASSWORD_NEED_PASSWORD ? true : false),
   needDomain(flags & G_ASK_PASSWORD_NEED_DOMAIN ? true : false) {
 
-  setAttribute(Qt::WA_DeleteOnClose);
-
   ui = new Ui::MountOperationPasswordDialog();
   ui->setupUi(this);
 
