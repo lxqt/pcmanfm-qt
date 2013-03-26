@@ -70,6 +70,12 @@ target_link_libraries(fm-qt
   ${LIBFM_LIBRARIES}
 )
 
+# set libtool soname
+set_target_properties(
+  fm-qt
+  PROPERTIES SOVERSION "0.0.0"
+)
+
 # install include header files (FIXME: can we make this cleaner? should dir name be versioned?)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
   DESTINATION include
