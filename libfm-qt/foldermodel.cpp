@@ -52,7 +52,7 @@ FolderModel::~FolderModel() {
   
   // if the thumbnail requests list is not empty, cancel them
   if(!thumbnailResults.empty()) {
-    Q_FOREACH(FmThumbnailResult* res, thumbnailResults) {
+    Q_FOREACH(FmThumbnailLoader* res, thumbnailResults) {
       ThumbnailLoader::cancel(res);
     }
   }
@@ -443,10 +443,10 @@ void FolderModel::releaseThumbnails(int size) {
       thumbnailRefCounts.erase(it);
 
       // remove thumbnails that ara queued for loading from thumbnailResults
-      QLinkedList<FmThumbnailResult*>::iterator it;
+      QLinkedList<FmThumbnailLoader*>::iterator it;
       for(it = thumbnailResults.begin(); it != thumbnailResults.end();) {
-        QLinkedList<FmThumbnailResult*>::iterator next = it + 1;
-        FmThumbnailResult* res = *it;
+        QLinkedList<FmThumbnailLoader*>::iterator next = it + 1;
+        FmThumbnailLoader* res = *it;
         if(ThumbnailLoader::size(res) == size) {
           ThumbnailLoader::cancel(res);
           thumbnailResults.erase(it);
@@ -464,9 +464,9 @@ void FolderModel::releaseThumbnails(int size) {
   }
 }
 
-void FolderModel::onThumbnailLoaded(FmThumbnailResult* res, gpointer user_data) {
+void FolderModel::onThumbnailLoaded(FmThumbnailLoader* res, gpointer user_data) {
   FolderModel* pThis = reinterpret_cast<FolderModel*>(user_data);
-  QLinkedList<FmThumbnailResult*>::iterator it;
+  QLinkedList<FmThumbnailLoader*>::iterator it;
   for(it = pThis->thumbnailResults.begin(); it != pThis->thumbnailResults.end(); ++it) {
     if(*it == res) { // the thumbnail result is in our list
       pThis->thumbnailResults.erase(it); // remove it from the list
@@ -521,7 +521,7 @@ QImage FolderModel::thumbnailFromIndex(const QModelIndex& index, int size) {
     switch(thumbnail->status) {
       case FolderModelItem::ThumbnailNotChecked: {
         // load the thumbnail
-        FmThumbnailResult* res = ThumbnailLoader::load(item->info, size, onThumbnailLoaded, this);
+        FmThumbnailLoader* res = ThumbnailLoader::load(item->info, size, onThumbnailLoaded, this);
         thumbnailResults.push_back(res);
         thumbnail->status = FolderModelItem::ThumbnailLoading;
         break;

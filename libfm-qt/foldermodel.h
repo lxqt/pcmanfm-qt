@@ -95,7 +95,7 @@ protected:
   static void onFilesAdded(FmFolder* folder, GSList* files, gpointer user_data);
   static void onFilesChanged(FmFolder* folder, GSList* files, gpointer user_data);
   static void onFilesRemoved(FmFolder* folder, GSList* files, gpointer user_data);
-  static void onThumbnailLoaded(FmThumbnailResult *res, gpointer user_data);
+  static void onThumbnailLoaded(FmThumbnailLoader *res, gpointer user_data);
 
   void insertFiles(int row, FmFileInfoList* files);
   void removeAll();
@@ -110,7 +110,7 @@ private:
 
   // record what size of thumbnails we should cache in an array of <size, refCount> pairs.
   QVector<QPair<int, int> > thumbnailRefCounts;
-  QLinkedList<FmThumbnailResult*> thumbnailResults;
+  QLinkedList<FmThumbnailLoader*> thumbnailResults;
 };
 
 }

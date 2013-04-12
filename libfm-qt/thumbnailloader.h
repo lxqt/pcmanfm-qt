@@ -37,23 +37,23 @@ public:
     return theThumbnailLoader;
   }
 
-  static FmThumbnailResult* load(FmFileInfo* fileInfo, int size, FmThumbnailResultCallback callback, gpointer user_data) {
+  static FmThumbnailLoader* load(FmFileInfo* fileInfo, int size, FmThumbnailLoaderCallback callback, gpointer user_data) {
     // qDebug("load thumbnail: %s", fm_file_info_get_disp_name(fileInfo));
     return fm_thumbnail_loader_load(fileInfo, size, callback, user_data);
   }
 
-  static FmFileInfo* fileInfo(FmThumbnailResult* result) {
-    return fm_thumbnail_result_get_file_info(result);
+  static FmFileInfo* fileInfo(FmThumbnailLoader* result) {
+    return fm_thumbnail_loader_get_file_info(result);
   }
 
-  static void cancel(FmThumbnailResult* result) {
-    fm_thumbnail_result_cancel(result);
+  static void cancel(FmThumbnailLoader* result) {
+    fm_thumbnail_loader_cancel(result);
   }
 
-  static QImage image(FmThumbnailResult* result);
+  static QImage image(FmThumbnailLoader* result);
 
-  static int size(FmThumbnailResult* result) {
-    fm_thumbnail_result_get_size(result);
+  static int size(FmThumbnailLoader* result) {
+    fm_thumbnail_loader_get_size(result);
   }
 
   static void setLocalFilesOnly(bool value) {

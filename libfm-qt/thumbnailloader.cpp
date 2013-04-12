@@ -87,7 +87,7 @@ ThumbnailLoader::ThumbnailLoader() {
   fm_config->thumbnail_local = localFilesOnly_;
   fm_config->thumbnail_max = maxThumbnailFileSize_;
 
-  ThumbnailLoaderBackend qt_backend = {
+  FmThumbnailLoaderBackend qt_backend = {
     readImageFromFile,
     readImageFromStream,
     writeImage,
@@ -169,8 +169,8 @@ char* ThumbnailLoader::getImageText(GObject* image, const char* key) {
   return g_memdup(text.constData(), text.length());
 }
 
-QImage ThumbnailLoader::image(FmThumbnailResult* result) {
-  FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(fm_thumbnail_result_get_data(result));
+QImage ThumbnailLoader::image(FmThumbnailLoader* result) {
+  FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(fm_thumbnail_loader_get_data(result));
   if(wrapper) {
     return wrapper->image;
   }
