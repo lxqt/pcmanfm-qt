@@ -1,510 +1,627 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="lt_LT">
 <context>
     <name>EditBookmarksDialog</name>
     <message>
+        <location filename="../edit-bookmarks.ui" line="14"/>
         <source>Edit Bookmarks</source>
-        <translation>Redaguoti žymeles</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../edit-bookmarks.ui" line="42"/>
         <source>Name</source>
-        <translation>Pavadinimas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../edit-bookmarks.ui" line="47"/>
         <source>Location</source>
-        <translation>Vieta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../edit-bookmarks.ui" line="67"/>
         <source>&amp;Add Item</source>
-        <translation>&amp;Pridėti elementą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../edit-bookmarks.ui" line="77"/>
         <source>&amp;Remove Item</source>
-        <translation>&amp;Pašalinti elementą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../edit-bookmarks.ui" line="102"/>
         <source>Use drag and drop to reorder the items</source>
-        <translation>Failų tvarkai pakeisti naudokite vilkimą</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FileOperationDialog</name>
     <message>
+        <location filename="../file-operation-dialog.ui" line="32"/>
         <source>Destination:</source>
-        <translation>Paskirties vieta:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-operation-dialog.ui" line="55"/>
         <source>Processing:</source>
-        <translation>Apdorojama:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-operation-dialog.ui" line="68"/>
         <source>Preparing...</source>
-        <translation>Ruošiamasi...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-operation-dialog.ui" line="75"/>
         <source>Progress</source>
-        <translation>Eiga</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-operation-dialog.ui" line="95"/>
         <source>Time remaining:</source>
-        <translation>Liko laiko:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FilePropsDialog</name>
     <message>
+        <location filename="../file-props.ui" line="14"/>
         <source>File Properties</source>
-        <translation>Failo savybės</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="32"/>
         <source>General</source>
-        <translation>Bendra</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="71"/>
         <source>Location:</source>
-        <translation>Vieta:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="94"/>
         <source>File type:</source>
-        <translation>Failo tipas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="114"/>
         <source>Mime type:</source>
-        <translation>Mime tipas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="134"/>
         <source>File size:</source>
-        <translation>Failo dydis:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="154"/>
         <source>On-disk size:</source>
-        <translation>Dydis diske:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="174"/>
         <source>Last modified:</source>
-        <translation>Paskutinis pakeitimas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="194"/>
         <source>Link target:</source>
-        <translation>Nuorodos tikslas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="217"/>
         <source>Open With:</source>
-        <translation>Atverti su:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="234"/>
         <source>Last accessed:</source>
-        <translation>Paskutinį kartą naudota:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="249"/>
         <source>Permissions</source>
-        <translation>Leidimai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="264"/>
         <source>Ownership</source>
-        <translation>Nuosavybė</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="288"/>
+        <location filename="../file-props.ui" line="353"/>
+        <location filename="../file-props.ui" line="467"/>
         <source>Group:</source>
-        <translation>Grupė:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="301"/>
+        <location filename="../file-props.ui" line="336"/>
+        <location filename="../file-props.ui" line="415"/>
         <source>Owner:</source>
-        <translation>Savininkas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="317"/>
         <source>Access Control</source>
-        <translation>Prieigos kontrolė</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="370"/>
+        <location filename="../file-props.ui" line="519"/>
         <source>Other:</source>
-        <translation>Kita:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="387"/>
         <source>Make the file executable</source>
-        <translation>Padaryti failą vykdomu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="428"/>
+        <location filename="../file-props.ui" line="480"/>
+        <location filename="../file-props.ui" line="532"/>
         <source>Read</source>
-        <translation>Skaityti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="441"/>
+        <location filename="../file-props.ui" line="493"/>
+        <location filename="../file-props.ui" line="545"/>
         <source>Write</source>
-        <translation>Rašyti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="454"/>
+        <location filename="../file-props.ui" line="506"/>
+        <location filename="../file-props.ui" line="558"/>
         <source>Execute</source>
-        <translation>Vykdyti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="567"/>
         <source>Sticky</source>
-        <translation>Lipnus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="574"/>
         <source>SetUID</source>
-        <translation>Nustatyti UID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="581"/>
         <source>SetGID</source>
-        <translation>Nustatyti GID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../file-props.ui" line="617"/>
         <source>Advanced Mode</source>
-        <translation>Išsamus režimas</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::DndActionMenu</name>
     <message>
+        <location filename="../dndactionmenu.cpp" line="26"/>
         <source>Copy here</source>
-        <translation>Kopijuoti čia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../dndactionmenu.cpp" line="27"/>
         <source>Move here</source>
-        <translation>Perkelti čia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../dndactionmenu.cpp" line="28"/>
         <source>Create symlink here</source>
-        <comment>symlink=symbolic link</comment>
-        <translation type="obsolete">Sukurti simbolinę nuorodą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../dndactionmenu.cpp" line="30"/>
         <source>Cancel</source>
-        <translation>Atšaukti</translation>
-    </message>
-    <message>
-        <source>Create symlink here</source>
-        <translation type="unfinished">Sukurti simbolinę nuorodą</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::EditBookmarksDialog</name>
     <message>
+        <location filename="../editbookmarksdialog.cpp" line="87"/>
         <source>New bookmark</source>
-        <translation>Nauja žymelė</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::FileMenu</name>
     <message>
+        <location filename="../filemenu.cpp" line="92"/>
         <source>Open</source>
-        <translation>Atverti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="96"/>
         <source>OpenWith</source>
-        <translation>Atverti su</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="126"/>
         <source>Cut</source>
-        <translation>Iškirpti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="130"/>
         <source>Copy</source>
-        <translation>Kopijuoti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="134"/>
         <source>Paste</source>
-        <translation>Įklijuoti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="138"/>
+        <location filename="../filemenu.cpp" line="239"/>
         <source>&amp;Move to Trash</source>
-        <translation>&amp;Perkelti į šiukšlinę</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
-        <translation>&amp;Pašalinti</translation>
-    </message>
-    <message>
+        <location filename="../filemenu.cpp" line="142"/>
         <source>Rename</source>
-        <translation>Pervadinti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="154"/>
         <source>Extract to...</source>
-        <translation>Išskleisti į...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="159"/>
         <source>Extract Here</source>
-        <translation>Išskleisti čia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="165"/>
         <source>Compress</source>
-        <translation>Archyvuoti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="175"/>
         <source>Properties</source>
-        <translation>Savybės</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="239"/>
+        <source>&amp;Delete</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::FileOperation</name>
     <message>
+        <location filename="../fileoperation.cpp" line="213"/>
+        <location filename="../fileoperation.cpp" line="229"/>
         <source>Confirm</source>
-        <translation>Patvirtinti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperation.cpp" line="214"/>
         <source>Do you want to delete the selected files?</source>
-        <translation>Ar norite ištrinti pasirinktus failus?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperation.cpp" line="230"/>
         <source>Do you want to move the selected files to trash can?</source>
-        <translation>Ar norite perkelti pasirinktus failus į šiukšlinę?</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::FileOperationDialog</name>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="41"/>
         <source>Move files</source>
-        <translation>Perkelti failus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="42"/>
         <source>Moving the following files to destination folder:</source>
-        <translation>Šie failai perkeliami į paskirties aplanką:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="45"/>
         <source>Copy Files</source>
-        <translation>Kopijuoti failus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="46"/>
         <source>Copying the following files to destination folder:</source>
-        <translation>Šie failai kopijuojami į paskirties aplanką:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="49"/>
         <source>Trash Files</source>
-        <translation>Išmesti failus į šiukšliadėžę</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="50"/>
         <source>Moving the following files to trash can:</source>
-        <translation>Failai perkeliami į šiukšliadėžę:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="53"/>
         <source>Delete Files</source>
-        <translation>Pašalinti failus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="54"/>
         <source>Deleting the following files</source>
-        <translation>Šalinami šie failai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="59"/>
         <source>Create Symlinks</source>
-        <comment>symlink=symbolic link</comment>
-        <translation type="obsolete">Sukurti simbolinę nuorodą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="60"/>
         <source>Creating symlinks for the following files:</source>
-        <translation>Šiems failams kuriamos simbolinės nuorodos:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="63"/>
         <source>Change Attributes</source>
-        <translation>Keisti atributus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="64"/>
         <source>Changing attributes of the following files:</source>
-        <translation>Keičiami šių failų atributai:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="69"/>
         <source>Restore Trashed Files</source>
-        <translation>Atstatyti ištrintus failus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="70"/>
         <source>Restoring the following files from trash can:</source>
-        <translation>Šie failai atstatomi iš šiukšliadėžės:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fileoperationdialog.cpp" line="137"/>
         <source>Error</source>
-        <translation>Klaida</translation>
-    </message>
-    <message>
-        <source>Create Symlinks</source>
-        <translation type="unfinished">Sukurti simbolinę nuorodą</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::FilePropsDialog</name>
     <message>
+        <location filename="../filepropsdialog.cpp" line="167"/>
         <source>View folder content</source>
-        <translation>Žiūrėti aplanko turinį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filepropsdialog.cpp" line="168"/>
         <source>View and modify folder content</source>
-        <translation>Žiūrėti ir keisti aplanko turinį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filepropsdialog.cpp" line="172"/>
         <source>Read</source>
-        <translation>Skaityti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filepropsdialog.cpp" line="173"/>
         <source>Read and write</source>
-        <translation>Skaityti ir rašyti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filepropsdialog.cpp" line="175"/>
         <source>Forbidden</source>
-        <translation>Uždrausta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filepropsdialog.cpp" line="277"/>
         <source>Files of different types</source>
-        <translation>Skirtingų tipų failai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filepropsdialog.cpp" line="307"/>
         <source>Multiple Files</source>
-        <translation>Keli failai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filepropsdialog.cpp" line="439"/>
         <source>Apply changes</source>
-        <translation>Pritaikyti pakeitimus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filepropsdialog.cpp" line="440"/>
         <source>Do you want to recursively apply these changes to all files and sub-folders?</source>
-        <translation>Ar norite rekursyviai pritaikyti šiuos pakeitimus visiems failams ir poaplankiams?</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::FolderMenu</name>
     <message>
+        <location filename="../foldermenu.cpp" line="35"/>
         <source>Create &amp;New</source>
-        <translation>&amp;Kurti naują</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="43"/>
         <source>&amp;Paste</source>
-        <translation>Į&amp;klijuoti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="49"/>
         <source>Select &amp;All</source>
-        <translation>Pasirinkti &amp;viską</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="53"/>
         <source>Invert Selection</source>
-        <translation>Invertuoti pasirinkimą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="59"/>
         <source>Sorting</source>
-        <translation>Rikiavimas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="64"/>
         <source>Show Hidden</source>
-        <translation>Rodyti paslėptus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="72"/>
         <source>Folder Pr&amp;operties</source>
-        <translation>Failo &amp;savybės</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="82"/>
         <source>Folder</source>
-        <translation>Aplankas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="86"/>
         <source>File</source>
-        <translation>Failas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="112"/>
         <source>By File Name</source>
-        <translation>Pagal failo vardą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="113"/>
         <source>By Modification Time</source>
-        <translation>Pagal keitimo datą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="114"/>
         <source>By File Size</source>
-        <translation>Pagal failo dydį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="115"/>
         <source>By File Type</source>
-        <translation>Pagal failo tipą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="116"/>
         <source>By File Owner</source>
-        <translation>Pagal failo savininką</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="127"/>
         <source>Ascending</source>
-        <translation>Didėjančiai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="132"/>
         <source>Descending</source>
-        <translation>Mažėjančiai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="147"/>
         <source>Folder First</source>
-        <translation>Pirmiausia aplankai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermenu.cpp" line="154"/>
         <source>Case Sensitive</source>
-        <translation>Skirti raidžių dydį</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::FolderModel</name>
     <message>
+        <location filename="../foldermodel.cpp" line="237"/>
         <source>Name</source>
-        <translation>Pavadinimas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermodel.cpp" line="240"/>
         <source>Type</source>
-        <translation>Tipas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermodel.cpp" line="243"/>
         <source>Size</source>
-        <translation>Dydis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermodel.cpp" line="246"/>
         <source>Modified</source>
-        <translation>Pakeista</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../foldermodel.cpp" line="249"/>
         <source>Owner</source>
-        <translation>Savininkas</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::FontButton</name>
     <message>
+        <location filename="../fontbutton.cpp" line="46"/>
         <source>Bold</source>
-        <translation>Paryškintas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../fontbutton.cpp" line="50"/>
         <source>Italic</source>
-        <translation>Kursyvinis</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::MountOperationPasswordDialog</name>
     <message>
+        <location filename="../mountoperationpassworddialog.cpp" line="40"/>
         <source>&amp;Connect</source>
-        <translation>&amp;Prisijungti</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::PlacesModel</name>
     <message>
-        <source>Desktop</source>
-        <translation>Darbastalis</translation>
-    </message>
-    <message>
-        <source>Trash</source>
-        <translation>Šiukšlinė</translation>
-    </message>
-    <message>
-        <source>Computer</source>
-        <translation>Kompiuteris</translation>
-    </message>
-    <message>
-        <source>Applications</source>
-        <translation>Programos</translation>
-    </message>
-    <message>
-        <source>Network</source>
-        <translation>Tinklas</translation>
-    </message>
-    <message>
+        <location filename="../placesmodel.cpp" line="108"/>
         <source>Places</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../placesmodel.cpp" line="117"/>
+        <source>Desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesmodel.cpp" line="121"/>
+        <source>Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesmodel.cpp" line="126"/>
+        <source>Computer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesmodel.cpp" line="131"/>
+        <source>Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesmodel.cpp" line="136"/>
+        <source>Network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesmodel.cpp" line="141"/>
         <source>Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../placesmodel.cpp" line="184"/>
         <source>Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
@@ -512,169 +629,204 @@
 <context>
     <name>Fm::PlacesView</name>
     <message>
+        <location filename="../placesview.cpp" line="178"/>
         <source>Rename</source>
-        <translation>Pervadinti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../placesview.cpp" line="181"/>
         <source>Delete</source>
-        <translation>Šalinami failai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../placesview.cpp" line="191"/>
+        <location filename="../placesview.cpp" line="209"/>
         <source>Unmount</source>
-        <translation>Atjungti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../placesview.cpp" line="195"/>
         <source>Mount</source>
-        <translation>Prijungti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../placesview.cpp" line="201"/>
         <source>Eject</source>
-        <translation>Išstumti</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::RenameDialog</name>
     <message>
+        <location filename="../renamedialog.cpp" line="50"/>
+        <location filename="../renamedialog.cpp" line="69"/>
         <source>Type: %1
 Size: %2
 Modified: %3</source>
-        <translation>Tipas: %1
-Dydis: %2
-Keista: %3</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Type: %1
-Modified: %3</source>
-        <translation>Tipas: %1
-Keista: %3</translation>
-    </message>
-    <message>
-        <source>&amp;Overwrite</source>
-        <translation>&amp;Perrašyti</translation>
-    </message>
-    <message>
-        <source>&amp;Rename</source>
-        <translation>Pe&amp;rvadinti</translation>
-    </message>
-    <message>
+        <location filename="../renamedialog.cpp" line="56"/>
         <source>Type: %1
 Modified: %2</source>
-        <translation type="unfinished">Tipas: %1
-Keista: %2 {1
-?}</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../renamedialog.cpp" line="75"/>
+        <source>Type: %1
+Modified: %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../renamedialog.cpp" line="89"/>
+        <source>&amp;Overwrite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../renamedialog.cpp" line="91"/>
+        <source>&amp;Rename</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MountOperationPasswordDialog</name>
     <message>
+        <location filename="../mount-operation-password.ui" line="20"/>
         <source>Mount</source>
-        <translation>Prijungti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mount-operation-password.ui" line="48"/>
         <source>Connect &amp;anonymously</source>
-        <translation>Prisijungti &amp;anonimiškai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mount-operation-password.ui" line="58"/>
         <source>Connect as u&amp;ser:</source>
-        <translation>Prisijungti kaip nau&amp;dotojui:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mount-operation-password.ui" line="79"/>
         <source>&amp;Username:</source>
-        <translation>&amp;Naudotojo vardas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mount-operation-password.ui" line="102"/>
         <source>&amp;Password:</source>
-        <translation>&amp;Slaptažodis:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mount-operation-password.ui" line="112"/>
         <source>&amp;Domain:</source>
-        <translation>&amp;Domenas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mount-operation-password.ui" line="127"/>
         <source>Forget password &amp;immediately</source>
-        <translation>&amp;Neįsiminti slaptažodžio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mount-operation-password.ui" line="137"/>
         <source>Remember password until you &amp;logout</source>
-        <translation>&amp;Atsiminti slaptažodį iki atsijungsite</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mount-operation-password.ui" line="147"/>
         <source>Remember &amp;forever</source>
-        <translation>Prisiminti &amp;visam laikui</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
+        <location filename="../mountoperation.cpp" line="149"/>
+        <location filename="../utilities.cpp" line="134"/>
+        <location filename="../utilities.cpp" line="201"/>
         <source>Error</source>
-        <translation>Klaida</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../utilities.cpp" line="116"/>
         <source>Rename File</source>
-        <translation>Pervadinti failą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../utilities.cpp" line="117"/>
         <source>Please enter a new name:</source>
-        <translation>Įveskite naują pavadinimą:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../utilities.cpp" line="154"/>
         <source>Please enter a new file name:</source>
-        <translation>Įveskite naują failo pavadinimą:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../utilities.cpp" line="155"/>
         <source>New text file</source>
-        <translation>Naujas tekstinis failas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../utilities.cpp" line="158"/>
         <source>Please enter a new folder name:</source>
-        <translation>Įveskite naują failo pavadinimą:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../utilities.cpp" line="159"/>
         <source>New folder</source>
-        <translation>Naujas aplankas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../utilities.cpp" line="166"/>
         <source>Create File</source>
-        <translation>Sukurti failą</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>RenameDialog</name>
     <message>
+        <location filename="../rename-dialog.ui" line="14"/>
         <source>Confirm to replace files</source>
-        <translation>Patvirtinti failų pakeitimą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../rename-dialog.ui" line="35"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Šiame aplanke jau yra failas tokiu pačiu pavadinimu.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Ar norite pakeisti esamą failą?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../rename-dialog.ui" line="56"/>
         <source>dest</source>
-        <translation>paskirtis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../rename-dialog.ui" line="63"/>
         <source>with the following file?</source>
-        <translation>šiuo failu?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../rename-dialog.ui" line="76"/>
         <source>src file info</source>
-        <translation>šaltinio failo informacija</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../rename-dialog.ui" line="89"/>
         <source>dest file info</source>
-        <translation>paskirties failo informacija</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../rename-dialog.ui" line="102"/>
         <source>src</source>
-        <translation>šaltinis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../rename-dialog.ui" line="122"/>
         <source>&amp;File name:</source>
-        <translation>&amp;Failo pavadinimas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../rename-dialog.ui" line="137"/>
         <source>Apply this option to all existing files</source>
-        <translation>Pritaikyti šią nuostatą visiems failams</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

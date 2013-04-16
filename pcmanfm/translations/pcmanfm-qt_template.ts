@@ -171,6 +171,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="470"/>
+        <source>Go &amp;Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="472"/>
         <source>Go Up</source>
         <translation type="unfinished"></translation>
@@ -191,18 +196,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="495"/>
-        <source>Reload</source>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="477"/>
+        <source>&amp;Reload</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="478"/>
         <source>F5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="477"/>
-        <source>&amp;Reload</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -218,6 +218,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="481"/>
         <source>&amp;About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="482"/>
+        <source>&amp;New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -271,6 +276,36 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="495"/>
+        <source>Reload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="496"/>
+        <source>&amp;Icon View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="497"/>
+        <source>&amp;Compact View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="498"/>
+        <source>&amp;Detailed List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="499"/>
+        <source>&amp;Thumbnail View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="500"/>
+        <source>Cu&amp;t</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="501"/>
         <source>Ctrl+X</source>
         <translation type="unfinished"></translation>
@@ -301,63 +336,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="508"/>
-        <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="531"/>
-        <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="532"/>
-        <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="534"/>
-        <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="507"/>
         <source>Ctrl+A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="470"/>
-        <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="482"/>
-        <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="496"/>
-        <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="497"/>
-        <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="498"/>
-        <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="499"/>
-        <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="500"/>
-        <source>Cu&amp;t</source>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="508"/>
+        <source>Pr&amp;eferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -441,8 +426,23 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="531"/>
+        <source>&amp;Invert Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="532"/>
+        <source>&amp;Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="533"/>
         <source>Del</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="534"/>
+        <source>&amp;Rename</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -456,28 +456,23 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="538"/>
-        <source>File &amp;Properties</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="540"/>
-        <source>&amp;Folder Properties</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="552"/>
-        <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="537"/>
         <source>Ctrl+W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="538"/>
+        <source>File &amp;Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="539"/>
         <source>Alt+Return</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="540"/>
+        <source>&amp;Folder Properties</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -533,6 +528,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="551"/>
         <source>&amp;View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="552"/>
+        <source>&amp;Sorting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -689,7 +689,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="194"/>
+        <location filename="../desktopwindow.cpp" line="196"/>
         <source>Desktop Preferences</source>
         <translation type="unfinished"></translation>
     </message>
@@ -709,8 +709,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="685"/>
         <location filename="../mainwindow.cpp" line="695"/>
-        <location filename="../mainwindow.cpp" line="726"/>
-        <location filename="../mainwindow.cpp" line="736"/>
+        <location filename="../mainwindow.cpp" line="728"/>
+        <location filename="../mainwindow.cpp" line="738"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
@@ -720,7 +720,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="736"/>
+        <location filename="../mainwindow.cpp" line="738"/>
         <source>Terminal emulator is not set.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -728,22 +728,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="159"/>
+        <location filename="../preferencesdialog.cpp" line="160"/>
         <source>Icon View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="160"/>
+        <location filename="../preferencesdialog.cpp" line="161"/>
         <source>Compact Icon View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="161"/>
+        <location filename="../preferencesdialog.cpp" line="162"/>
         <source>Thumbnail View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="162"/>
+        <location filename="../preferencesdialog.cpp" line="163"/>
         <source>Detailed List View</source>
         <translation type="unfinished"></translation>
     </message>

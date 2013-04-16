@@ -266,11 +266,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="239"/>
-        <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../filemenu.cpp" line="142"/>
         <source>Rename</source>
         <translation type="unfinished"></translation>
@@ -293,6 +288,11 @@
     <message>
         <location filename="../filemenu.cpp" line="175"/>
         <source>Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="239"/>
+        <source>&amp;Delete</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -537,27 +537,27 @@
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="235"/>
+        <location filename="../foldermodel.cpp" line="237"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="238"/>
+        <location filename="../foldermodel.cpp" line="240"/>
         <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="241"/>
+        <location filename="../foldermodel.cpp" line="243"/>
         <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="244"/>
+        <location filename="../foldermodel.cpp" line="246"/>
         <source>Modified</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="247"/>
+        <location filename="../foldermodel.cpp" line="249"/>
         <source>Owner</source>
         <translation type="unfinished"></translation>
     </message>

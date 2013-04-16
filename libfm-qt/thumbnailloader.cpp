@@ -114,7 +114,7 @@ GObject* ThumbnailLoader::readImageFromFile(const char* filename) {
 GObject* ThumbnailLoader::readImageFromStream(GInputStream* stream, guint64 len, GCancellable* cancellable) {
   // qDebug("readImageFromStream: %p, %llu", stream, len);
   // FIXME: should we set a limit here? Otherwise if len is too large, we can run out of memory.
-  unsigned char* buffer = new char[len]; // allocate enough buffer
+  unsigned char* buffer = new unsigned char[len]; // allocate enough buffer
   unsigned char* pbuffer = buffer;
   int totalReadSize = 0;
   while(!g_cancellable_is_cancelled(cancellable) && totalReadSize < len) {
@@ -166,7 +166,7 @@ int ThumbnailLoader::getImageHeight(GObject* image) {
 char* ThumbnailLoader::getImageText(GObject* image, const char* key) {
   FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(image);
   QByteArray text = wrapper->image.text(key).toAscii();
-  return g_memdup(text.constData(), text.length());
+  return (char*)g_memdup(text.constData(), text.length());
 }
 
 QImage ThumbnailLoader::image(FmThumbnailLoader* result) {
