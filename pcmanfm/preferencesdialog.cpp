@@ -53,13 +53,13 @@ PreferencesDialog::~PreferencesDialog() {
 
 }
 
-static findIconThemesInDir(QHash<QString, QString>& iconThemes, QString dirName) {
+static void findIconThemesInDir(QHash<QString, QString>& iconThemes, QString dirName) {
   QDir dir(dirName);
   QStringList subDirs = dir.entryList(QDir::AllDirs);
   GKeyFile* kf = g_key_file_new();
   Q_FOREACH(QString subDir, subDirs) {
     QString indexFile = dirName % '/' % subDir % "/index.theme";
-    if(g_key_file_load_from_file(kf, indexFile.toLocal8Bit().constData(), 0, NULL)) {
+    if(g_key_file_load_from_file(kf, indexFile.toLocal8Bit().constData(), GKeyFileFlags(0), NULL)) {
       // FIXME: skip hidden ones
       // icon theme must have this key, so it has icons if it has this key
       // otherwise, it might be a cursor theme or any other kind of theme.
@@ -97,7 +97,8 @@ void PreferencesDialog::initIconThemes(Settings& settings) {
 
   // select current theme name
   int n = ui.iconTheme->count();
-  for(int i = 0; i < n; ++i) {
+  int i;
+  for(i = 0; i < n; ++i) {
     QVariant itemData = ui.iconTheme->itemData(i);
     if(itemData == settings.iconThemeName()) {
       break;
@@ -221,7 +222,7 @@ void PreferencesDialog::applyUiPage(Settings& settings) {
 void PreferencesDialog::applyBehaviorPage(Settings& settings) {
   settings.setSingleClick(ui.singleClick->isChecked());
   // FIXME: bug here?
-  Fm::FolderView::ViewMode mode = ui.viewMode->itemData(ui.viewMode->currentIndex()).toInt();
+  Fm::FolderView::ViewMode mode = Fm::FolderView::ViewMode(ui.viewMode->itemData(ui.viewMode->currentIndex()).toInt());
   settings.setViewMode(mode);
   settings.setConfirmDelete(ui.configmDelete->isChecked());
   settings.setUseTrash(ui.useTrash->isChecked());

@@ -50,11 +50,11 @@ FolderModel::~FolderModel() {
 void FolderModel::setFolder(FmFolder* new_folder) {
   if(folder_) {
     removeAll();        // remove old items
-    g_signal_handlers_disconnect_by_func(folder_, onStartLoading, this);
-    g_signal_handlers_disconnect_by_func(folder_, onFinishLoading, this);
-    g_signal_handlers_disconnect_by_func(folder_, onFilesAdded, this);
-    g_signal_handlers_disconnect_by_func(folder_, onFilesChanged, this);
-    g_signal_handlers_disconnect_by_func(folder_, onFilesRemoved, this);
+    g_signal_handlers_disconnect_by_func(folder_, gpointer(onStartLoading), this);
+    g_signal_handlers_disconnect_by_func(folder_, gpointer(onFinishLoading), this);
+    g_signal_handlers_disconnect_by_func(folder_, gpointer(onFilesAdded), this);
+    g_signal_handlers_disconnect_by_func(folder_, gpointer(onFilesChanged), this);
+    g_signal_handlers_disconnect_by_func(folder_, gpointer(onFilesRemoved), this);
     g_object_unref(folder_);
   }
   if(new_folder) {
@@ -100,7 +100,8 @@ void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_da
   model->endInsertRows();
 }
 
-static void FolderModel::onFilesChanged(FmFolder* folder, GSList* files, gpointer user_data) {
+//static
+void FolderModel::onFilesChanged(FmFolder* folder, GSList* files, gpointer user_data) {
   FolderModel* model = static_cast<FolderModel*>(user_data);
   int n_files = g_slist_length(files);
 //  model->beginInsertRows(QModelIndex(), model->items.count(), model->items.count() + n_files - 1);
@@ -110,7 +111,8 @@ static void FolderModel::onFilesChanged(FmFolder* folder, GSList* files, gpointe
 //  model->endInsertRows();
 }
 
-static void FolderModel::onFilesRemoved(FmFolder* folder, GSList* files, gpointer user_data) {
+//static
+void FolderModel::onFilesRemoved(FmFolder* folder, GSList* files, gpointer user_data) {
   FolderModel* model = static_cast<FolderModel*>(user_data);
   for(GSList* l = files; l; l = l->next) {
     FmFileInfo* info = FM_FILE_INFO(l->data);

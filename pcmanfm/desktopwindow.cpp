@@ -88,7 +88,9 @@ void DesktopWindow::setBackground(const QColor& color) {
 
 void DesktopWindow::setForeground(const QColor& color) {
   QListView* listView = static_cast<QListView*>(childView());
-  listView->palette().setBrush(QPalette::Text, color);
+  QPalette p = listView->palette();
+  p.setBrush(QPalette::Text, color);
+  listView->setPalette(p);
   fgColor_ = color;
 }
 

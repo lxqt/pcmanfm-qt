@@ -59,7 +59,7 @@ void BrowseHistory::setCurrentIndex(int index) {
   }
 }
 
-bool BrowseHistory::canBackward() {
+bool BrowseHistory::canBackward() const {
   return (currentIndex_ > 0);
 }
 
@@ -69,7 +69,7 @@ int BrowseHistory::backward() {
   return currentIndex_;
 }
 
-bool BrowseHistory::canForward() {
+bool BrowseHistory::canForward() const {
   return (currentIndex_ + 1 < size());
 }
 

@@ -39,7 +39,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   Q_ASSERT(index.isValid());
   QStyleOptionViewItemV4 opt = option;
   initStyleOption(&opt, index);
-  QWidget* widget = opt.widget;
+  const QWidget* widget = opt.widget;
   QStyle* style = widget ? widget->style() : QApplication::style();
 
   painter->save();

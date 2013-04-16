@@ -61,11 +61,11 @@ public:
     return *this;
   }
   
-  FmPath* path() {
+  FmPath* path() const {
     return path_;
   }
 
-  int scrollPos() {
+  int scrollPos() const {
     return scrollPos_;
   }
 
@@ -87,16 +87,16 @@ public:
   BrowseHistory();
   virtual ~BrowseHistory();
 
-  int currentIndex() {
+  int currentIndex() const {
     return currentIndex_;
   }
   void setCurrentIndex(int index);
 
-  FmPath* currentPath() {
+  FmPath* currentPath() const {
     return at(currentIndex_).path();
   }
 
-  int currentScrollPos() {
+  int currentScrollPos() const {
     return at(currentIndex_).scrollPos();
   }
 
@@ -106,15 +106,15 @@ public:
 
   void add(FmPath* path, int scrollPos = 0);
 
-  bool canForward();
+  bool canForward() const;
 
-  bool canBackward();
+  bool canBackward() const;
 
   int backward();
 
   int forward();
 
-  int maxCount() {
+  int maxCount() const {
     return maxCount_;
   }
 

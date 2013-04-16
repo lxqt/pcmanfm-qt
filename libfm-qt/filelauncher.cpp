@@ -24,11 +24,14 @@
 using namespace Fm;
 
 FmFileLauncher FileLauncher::funcs = {
+    NULL,
     /* gboolean (*before_open)(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data); */
-    FileLauncher::openFolder,
+    (FmLaunchFolderFunc)FileLauncher::openFolder,
     // FmFileLauncherExecAction (*exec_file)(FmFileInfo* file, gpointer user_data);
-    FileLauncher::error
+    NULL,
+    FileLauncher::error,
     // int (*ask)(const char* msg, char* const* btn_labels, int default_btn, gpointer user_data);  
+    NULL
 };
 
 FileLauncher::FileLauncher() {
@@ -39,19 +42,23 @@ FileLauncher::~FileLauncher() {
 
 }
 
-static bool FileLauncher::launch(QWidget* parent, GList* file_infos) {
+//static
+bool FileLauncher::launch(QWidget* parent, GList* file_infos) {
   FmAppLaunchContext* context = fm_app_launch_context_new_for_widget(parent);
   bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), file_infos, &funcs, parent);
   g_object_unref(context);
   return ret;
 }
 
-static gboolean FileLauncher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data, GError** err) {
+//static
+gboolean FileLauncher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data, GError** err) {
   return FALSE;
 }
 
 // static FmFileLauncherExecAction (*exec_file)(FmFileInfo* file, gpointer user_data);
-static gboolean FileLauncher::error(GAppLaunchContext* ctx, GError* err, gpointer user_data) {
+
+//static
+gboolean FileLauncher::error(GAppLaunchContext* ctx, GError* err, FmPath* file, gpointer user_data) {
   return TRUE;
 }
   

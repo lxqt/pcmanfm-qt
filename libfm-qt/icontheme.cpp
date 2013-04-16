@@ -77,7 +77,8 @@ QIcon IconTheme::convertFromGIcon(GIcon* gicon) {
 }
 
 
-static QIcon IconTheme::icon(FmIcon* fmicon) {
+//static
+QIcon IconTheme::icon(FmIcon* fmicon) {
   // check if we have a cached version
   QIcon* picon = reinterpret_cast<QIcon*>(fm_icon_get_user_data(fmicon));
   if(!picon) { // we don't have a cache yet
@@ -88,7 +89,8 @@ static QIcon IconTheme::icon(FmIcon* fmicon) {
   return *picon;
 }
 
-static QIcon IconTheme::icon(GIcon* gicon) {
+//static
+QIcon IconTheme::icon(GIcon* gicon) {
   if(G_IS_THEMED_ICON(gicon)) {
     FmIcon* fmicon = fm_icon_from_gicon(gicon);
     QIcon qicon = icon(fmicon);

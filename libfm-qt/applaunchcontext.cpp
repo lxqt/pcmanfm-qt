@@ -49,12 +49,11 @@ static void fm_app_launch_context_init(FmAppLaunchContext* context) {
 }
 
 FmAppLaunchContext* fm_app_launch_context_new_for_widget(QWidget* widget) {
-  FmAppLaunchContext* context = g_object_new(FM_TYPE_APP_LAUNCH_CONTEXT, NULL);
+  FmAppLaunchContext* context = (FmAppLaunchContext*)g_object_new(FM_TYPE_APP_LAUNCH_CONTEXT, NULL);
   return context;
 }
 
 FmAppLaunchContext* fm_app_launch_context_new() {
-  FmAppLaunchContext* context = g_object_new(FM_TYPE_APP_LAUNCH_CONTEXT, NULL);
-  
+  FmAppLaunchContext* context = (FmAppLaunchContext*)g_object_new(FM_TYPE_APP_LAUNCH_CONTEXT, NULL);
   return context;
 }

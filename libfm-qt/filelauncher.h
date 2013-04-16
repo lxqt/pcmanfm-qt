@@ -39,7 +39,7 @@ public:
 protected:
     static gboolean openFolder(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data, GError** err);
     // static FmFileLauncherExecAction (*exec_file)(FmFileInfo* file, gpointer user_data);
-    static gboolean error(GAppLaunchContext* ctx, GError* err, gpointer user_data);
+    static gboolean error(GAppLaunchContext* ctx, GError* err, FmPath* file, gpointer user_data);
     // static int (*ask)(const char* msg, char* const* btn_labels, int default_btn, gpointer user_data);  
 
 private:

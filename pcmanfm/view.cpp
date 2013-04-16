@@ -77,16 +77,16 @@ void View::onFileClicked(int type, FmFileInfo* fileInfo) {
       Fm::FileMenu* fileMenu = new Fm::FileMenu(files, fileInfo, folderPath);
       fileMenu->setConfirmDelete(settings.confirmDelete());
       fileMenu->setUseTrash(settings.useTrash());
-      prepareFileMenu(menu);
+      prepareFileMenu(fileMenu);
       fm_file_info_list_unref(files);
       menu = fileMenu;
     }
     else {
       FmFolder* _folder = folder();
       FmFileInfo* info =fm_folder_get_info(_folder);
-      menu = new Fm::FolderMenu(this);
-      prepareFolderMenu(menu);
-      // TODO: create popup menu for the folder itself
+      Fm::FolderMenu* folderMenu = new Fm::FolderMenu(this);
+      prepareFolderMenu(folderMenu);
+      menu = folderMenu;
     }
     menu->popup(QCursor::pos());
     connect(menu, SIGNAL(aboutToHide()),SLOT(onPopupMenuHide()));

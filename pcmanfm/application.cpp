@@ -73,7 +73,7 @@ Application::Application(int& argc, char** argv):
 
 Application::~Application() {
   if(volumeMonitor) {
-    g_signal_handlers_disconnect_by_func(volumeMonitor, G_CALLBACK(onVolumeAdded), this);
+    g_signal_handlers_disconnect_by_func(volumeMonitor, gpointer(onVolumeAdded), this);
     g_object_unref(volumeMonitor);
   }
 }

@@ -649,7 +649,7 @@ void MainWindow::updateFromSettings(Settings& settings) {
 }
 
 static const char* su_cmd_subst(char opt, gpointer user_data) {
-  return user_data;
+  return (const char*)user_data;
 }
 
 static FmAppCommandParseOption su_cmd_opts[] = {
@@ -669,12 +669,12 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
       char* cmd = NULL;
       QByteArray programCommand = app->applicationFilePath().toLocal8Bit();
       programCommand += " %U";
-      if(fm_app_command_parse(suCommand.constData(), su_cmd_opts, &cmd, programCommand.constData()) == 0) {
+      if(fm_app_command_parse(suCommand.constData(), su_cmd_opts, &cmd, gpointer(programCommand.constData())) == 0) {
         /* no %s found so just append to it */
         g_free(cmd);
         cmd = g_strconcat(suCommand.constData(), programCommand.constData(), NULL);
       }
-      GAppInfo* appInfo = g_app_info_create_from_commandline(cmd, NULL, 0, NULL);
+      GAppInfo* appInfo = g_app_info_create_from_commandline(cmd, NULL, GAppInfoCreateFlags(0), NULL);
       g_free(cmd);
       if(appInfo) {
         FmPath* cwd = page->path();
@@ -715,7 +715,9 @@ void MainWindow::on_actionOpenTerminal_triggered() {
         g_object_unref(gf);
       }
       char* old_cwd = g_get_current_dir();
-      GAppInfo* appInfo = g_app_info_create_from_commandline(settings.terminalDirCommand().toLocal8Bit().constData(), NULL, 0, NULL);
+      GAppInfo* appInfo = g_app_info_create_from_commandline(
+                            settings.terminalDirCommand().toLocal8Bit().constData(),
+                            NULL, GAppInfoCreateFlags(0), NULL);
 
       // change to the desired dir prior to running the terminal emulator. This is quite dirty
       g_chdir(cwd_str); // currently we don't have better way for this. maybe a wrapper script?

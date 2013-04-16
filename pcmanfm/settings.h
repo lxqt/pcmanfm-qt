@@ -22,10 +22,10 @@
 #define PCMANFM_SETTINGS_H
 
 #include <QObject>
-#include <qvarlengtharray.h>
 #include <libfm/fm.h>
 #include "folderview.h"
 #include "foldermodel.h"
+#include "desktopwindow.h"
 
 namespace PCManFM {
 
@@ -125,8 +125,8 @@ public:
   }
 
 
-  int wallpaperMode() const {
-    return wallpaperMode_;
+  DesktopWindow::WallpaperMode wallpaperMode() const {
+    return DesktopWindow::WallpaperMode(wallpaperMode_);
   }
 
   void setWallpaperMode(int wallpaperMode) {

@@ -34,8 +34,8 @@ inline static int bookmarkOpenMethodFromString(const QString str);
 inline static const char* wallpaperModeToString(int value);
 inline static int wallpaperModeFromString(const QString str);
 
-inline static const char* viewModeToString(int value);
-inline static int viewModeFromString(const QString str);
+inline static const char* viewModeToString(Fm::FolderView::ViewMode value);
+inline static Fm::FolderView::ViewMode viewModeFromString(const QString str);
 
 inline static const char* sidePaneModeToString(int value);
 inline static int sidePaneModeFromString(const QString str);
@@ -43,8 +43,8 @@ inline static int sidePaneModeFromString(const QString str);
 inline static const char* sortOrderToString(Qt::SortOrder order);
 inline static Qt::SortOrder sortOrderFromString(const QString str);
 
-inline static const char* sortColumnToString(int value);
-inline static int sortColumnFromString(const QString str);
+inline static const char* sortColumnToString(Fm::FolderModel::ColumnId value);
+inline static Fm::FolderModel::ColumnId sortColumnFromString(const QString str);
 
 Settings::Settings():
   QObject(),
@@ -259,7 +259,7 @@ static int bookmarkOpenMethodFromString(const QString str) {
   return 0;
 }
 
-static const char* viewModeToString(int value) {
+static const char* viewModeToString(Fm::FolderView::ViewMode value) {
   const char* ret;
   switch(value) {
     case Fm::FolderView::IconMode:
@@ -279,8 +279,8 @@ static const char* viewModeToString(int value) {
   return ret;
 }
 
-static int viewModeFromString(const QString str) {
-  int ret;
+Fm::FolderView::ViewMode viewModeFromString(const QString str) {
+  Fm::FolderView::ViewMode ret;
   if(str == "icon")
     ret = Fm::FolderView::IconMode;
   else if(str == "compact")
@@ -302,7 +302,7 @@ static Qt::SortOrder sortOrderFromString(const QString str) {
   return (str == "descending" ? Qt::DescendingOrder : Qt::AscendingOrder);
 }
 
-static const char* sortColumnToString(int value) {
+static const char* sortColumnToString(Fm::FolderModel::ColumnId value) {
   const char* ret;
   switch(value) {
     case Fm::FolderModel::ColumnFileName:
@@ -325,8 +325,8 @@ static const char* sortColumnToString(int value) {
   return ret;
 }
 
-static int sortColumnFromString(const QString str) {
-  int ret;
+static Fm::FolderModel::ColumnId sortColumnFromString(const QString str) {
+  Fm::FolderModel::ColumnId ret;
   if(str == "name")
       ret = Fm::FolderModel::ColumnFileName;
   else if(str == "type")

@@ -125,9 +125,9 @@ void renameFile(FmPath* file, QWidget* parent) {
   dest = g_file_get_child(G_FILE(parent_gf), new_name.toLocal8Bit().data());
   g_object_unref(parent_gf);
   if(!g_file_move(gf, dest,
-    G_FILE_COPY_ALL_METADATA|
+    GFileCopyFlags(G_FILE_COPY_ALL_METADATA|
     G_FILE_COPY_NO_FALLBACK_FOR_MOVE|
-    G_FILE_COPY_NOFOLLOW_SYMLINKS,
+    G_FILE_COPY_NOFOLLOW_SYMLINKS),
     NULL, /* make this cancellable later. */
     NULL, NULL, &err))
   {

@@ -28,7 +28,7 @@ using namespace Fm;
 EditBookmarksDialog::EditBookmarksDialog(FmBookmarks* bookmarks, QWidget* parent, Qt::WindowFlags f):
   QDialog(parent, f),
   ui(new Ui::EditBookmarksDialog()),
-  bookmarks_(g_object_ref(bookmarks)) {
+  bookmarks_(FM_BOOKMARKS(g_object_ref(bookmarks))) {
 
   ui->setupUi(this);
   setAttribute(Qt::WA_DeleteOnClose); // auto delete on close
