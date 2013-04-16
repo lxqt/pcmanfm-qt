@@ -80,8 +80,7 @@ Settings::Settings():
   singleClick_(false),
   useTrash_(true),
   confirmDelete_(true),
-  // bool thumbnailLocal_;
-  // bool thumbnailMax;
+  showThumbnails_(true),
   archiver_(),
   siUnit_(false),
   bigIconSize_(48),
@@ -163,6 +162,12 @@ bool Settings::loadFile(QString filePath) {
   autoRun_ = settings.value("AutoRun", true).toBool();
   settings.endGroup();
 
+  settings.beginGroup("Thumbnail");
+  showThumbnails_ = settings.value("ShowThumbnails", true).toBool();
+  setMaxThumbnailFileSize(settings.value("MaxThumbnailFileSize", 4096).toInt());
+  setThumbnailLocalFilesOnly(settings.value("ThumbnailLocalFilesOnly", true).toBool());
+  settings.endGroup();
+
   settings.beginGroup("FolderView");
   viewMode_ = viewModeFromString(settings.value("Mode", Fm::FolderView::IconMode).toString());
   showHidden_ = settings.value("ShowHidden", false).toBool();
@@ -225,6 +230,12 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("MountOnStartup", mountOnStartup_);
   settings.setValue("MountRemovable", mountRemovable_);
   settings.setValue("AutoRun", autoRun_);
+  settings.endGroup();
+  
+  settings.beginGroup("Thumbnail");
+  settings.setValue("ShowThumbnails", showThumbnails_);
+  settings.setValue("MaxThumbnailFileSize", maxThumbnailFileSize());
+  settings.setValue("ThumbnailLocalFilesOnly", thumbnailLocalFilesOnly());
   settings.endGroup();
 
   settings.beginGroup("FolderView");

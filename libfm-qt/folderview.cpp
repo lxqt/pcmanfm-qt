@@ -229,6 +229,7 @@ void FolderView::setViewMode(ViewMode _mode) {
 
     if(model_) {
       // FIXME: preserve selections
+      model_->setThumbnailSize(iconSize.width());
       view->setModel(model_);
     }
   }
@@ -237,8 +238,11 @@ void FolderView::setViewMode(ViewMode _mode) {
 void FolderView::setIconSize(ViewMode mode, QSize size) {
   Q_ASSERT(mode >= FirstViewMode && mode <= LastViewMode);
   iconSize_[mode - FirstViewMode] = size;
-  if(viewMode() == mode)
+  if(viewMode() == mode) {
     view->setIconSize(size);
+    if(model_)
+      model_->setThumbnailSize(size.width());
+  }
 }
 
 QSize FolderView::iconSize(ViewMode mode) const {
@@ -259,8 +263,11 @@ ProxyFolderModel* FolderView::model() const {
 }
 
 void FolderView::setModel(ProxyFolderModel* model) {
-  if(view)
+  if(view) {
     view->setModel(model);
+    QSize iconSize = iconSize_[mode - FirstViewMode];
+    model->setThumbnailSize(iconSize.width());
+  }
   if(model_)
     delete model_;
   model_ = model;

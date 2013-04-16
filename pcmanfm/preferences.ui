@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>555</width>
-    <height>365</height>
+    <width>598</width>
+    <height>422</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -287,9 +287,6 @@
         </layout>
        </widget>
        <widget class="QWidget" name="thumbnailPage">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
         <layout class="QFormLayout" name="formLayout_3">
          <property name="fieldGrowthPolicy">
           <enum>QFormLayout::ExpandingFieldsGrow</enum>
@@ -311,12 +308,19 @@
          <item row="2" column="0">
           <widget class="QLabel" name="label_10">
            <property name="text">
-            <string>Do not generate thumbnails for files exceeding this size (KB):</string>
+            <string>Do not generate thumbnails for image files exceeding this size:</string>
            </property>
           </widget>
          </item>
          <item row="2" column="1">
-          <widget class="QSpinBox" name="maxThumbnailFileSize"/>
+          <widget class="QSpinBox" name="maxThumbnailFileSize">
+           <property name="suffix">
+            <string> KB</string>
+           </property>
+           <property name="maximum">
+            <number>1048576</number>
+           </property>
+          </widget>
          </item>
         </layout>
        </widget>

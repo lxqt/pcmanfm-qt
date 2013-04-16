@@ -541,27 +541,27 @@
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="224"/>
+        <location filename="../foldermodel.cpp" line="235"/>
         <source>Name</source>
         <translation>名稱</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="227"/>
+        <location filename="../foldermodel.cpp" line="238"/>
         <source>Type</source>
         <translation>類型</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="230"/>
+        <location filename="../foldermodel.cpp" line="241"/>
         <source>Size</source>
         <translation>大小</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="233"/>
+        <location filename="../foldermodel.cpp" line="244"/>
         <source>Modified</source>
         <translation>修改</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="236"/>
+        <location filename="../foldermodel.cpp" line="247"/>
         <source>Owner</source>
         <translation>所有者</translation>
     </message>

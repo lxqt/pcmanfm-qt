@@ -108,8 +108,10 @@ void View::updateFromSettings(Settings& settings) {
   setIconSize(Fm::FolderView::ThumbnailMode, QSize(settings.thumbnailIconSize(), settings.thumbnailIconSize()));
   setIconSize(Fm::FolderView::DetailedListMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
 
-  
+  Fm::ProxyFolderModel* proxyModel = model();
+  if(proxyModel) {
+    proxyModel->setShowThumbnails(settings.showThumbnails());
+  }
 }
-
 
 #include "view.moc"

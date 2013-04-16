@@ -17,6 +17,7 @@ set(libfm_SRCS
   icontheme.cpp
   filelauncher.cpp
   foldermodel.cpp
+  foldermodelitem.cpp
   proxyfoldermodel.cpp
   folderview.cpp
   folderitemdelegate.cpp
@@ -39,6 +40,7 @@ set(libfm_SRCS
   utilities.cpp
   dndactionmenu.cpp
   editbookmarksdialog.cpp
+  thumbnailloader.cpp
 )
 
 set(libfm_UIS

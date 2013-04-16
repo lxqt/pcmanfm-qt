@@ -13,7 +13,7 @@ pkg_check_modules(LIBFM REQUIRED
   glib-2.0
   gio-2.0
   gio-unix-2.0
-  libfm>=1.1.0
+  libfm>=1.2.0
 #  libstartup-notification-1.0
   x11
 )

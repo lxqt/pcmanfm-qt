@@ -47,9 +47,11 @@ DesktopWindow::DesktopWindow():
   setAttribute(Qt::WA_OpaquePaintEvent);
   setAttribute(Qt::WA_DeleteOnClose);
 
+  Settings& settings = static_cast<Application* >(qApp)->settings();
   model_ = new Fm::FolderModel();
   proxyModel_ = new Fm::ProxyFolderModel();
   proxyModel_->setSourceModel(model_);
+  proxyModel_->setShowThumbnails(settings.showThumbnails());
   folder_ = fm_folder_from_path(fm_path_get_desktop());
   model_->setFolder(folder_);
   setModel(proxyModel_);

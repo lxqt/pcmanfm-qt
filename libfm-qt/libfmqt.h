@@ -23,6 +23,7 @@
 #include <QtGlobal>
 #include <QTranslator>
 #include "icontheme.h"
+#include "thumbnailloader.h"
 
 namespace Fm {
 
@@ -40,6 +41,7 @@ protected:
   
 private:
   IconTheme* iconTheme;
+  ThumbnailLoader* thumbnailLoader;
   QTranslator translator_;
 };
 

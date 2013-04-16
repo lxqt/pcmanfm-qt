@@ -745,7 +745,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="192"/>
+        <location filename="../desktopwindow.cpp" line="194"/>
         <source>Desktop Preferences</source>
         <translation>桌面偏好設定</translation>
     </message>
@@ -807,19 +807,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="203"/>
+        <location filename="../tabpage.cpp" line="204"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>可用空間 %1 (全部: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="218"/>
+        <location filename="../tabpage.cpp" line="219"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n 個項目</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="220"/>
+        <location filename="../tabpage.cpp" line="221"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n 個隱藏)</numerusform>
@@ -995,23 +995,28 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
+        <source>Switch user command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="536"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>範例: 終端機指令可用 &quot;xterm -e %s&quot;而切換使用者指令可用 &quot;gksu %s&quot;。
 %s = 想要用終端機或是切換使用者執行的指令。</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="538"/>
         <source>Archiver integration:</source>
         <translation>壓縮程式整合:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="538"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
         <source>Terminal emulator command for programs:</source>
         <translation>用來執行程式的終端機模擬器指令:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation></translation>
     </message>

@@ -180,8 +180,9 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
 }
 
 void PreferencesDialog::initThumbnailPage(Settings& settings) {
-  // ui.showThumbnails->setChecked(settings.showThumbnails());
-  // TODO
+  ui.showThumbnails->setChecked(settings.showThumbnails());
+  ui.thumbnailLocal->setChecked(settings.thumbnailLocalFilesOnly());
+  ui.maxThumbnailFileSize->setValue(settings.maxThumbnailFileSize());
 }
 
 void PreferencesDialog::initVolumePage(Settings& settings) {
@@ -229,7 +230,9 @@ void PreferencesDialog::applyBehaviorPage(Settings& settings) {
 }
 
 void PreferencesDialog::applyThumbnailPage(Settings& settings) {
-
+  settings.setShowThumbnails(ui.showThumbnails->isChecked());
+  settings.setThumbnailLocalFilesOnly(ui.thumbnailLocal->isChecked());
+  settings.setMaxThumbnailFileSize(ui.maxThumbnailFileSize->value());
 }
 
 void PreferencesDialog::applyVolumePage(Settings& settings) {

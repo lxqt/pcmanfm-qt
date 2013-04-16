@@ -26,6 +26,7 @@
 #include "folderview.h"
 #include "foldermodel.h"
 #include "desktopwindow.h"
+#include "thumbnailloader.h"
 
 namespace PCManFM {
 
@@ -333,6 +334,30 @@ public:
     return thumbnailIconSize_;
   }
 
+  bool showThumbnails() {
+    return showThumbnails_;
+  }
+  
+  void setShowThumbnails(bool show) {
+    showThumbnails_ = show;
+  }
+  
+  void setThumbnailLocalFilesOnly(bool value) {
+    Fm::ThumbnailLoader::setLocalFilesOnly(value);
+  }
+
+  bool thumbnailLocalFilesOnly() {
+    return Fm::ThumbnailLoader::localFilesOnly();
+  }
+
+  int maxThumbnailFileSize() {
+    return Fm::ThumbnailLoader::maxThumbnailFileSize();
+  }
+
+  void setMaxThumbnailFileSize(int size) {
+    Fm::ThumbnailLoader::setMaxThumbnailFileSize(size);
+  }
+
   void setThumbnailIconSize(int thumbnailIconSize) {
     thumbnailIconSize_ = thumbnailIconSize;
   }
@@ -346,7 +371,8 @@ public:
     // override libfm FmConfig settings. FIXME: should we do this?
     fm_config->si_unit = (gboolean)siUnit_;
   }
-  
+
+ 
 private:
   QString profileName_;
 
@@ -388,8 +414,9 @@ private:
   bool singleClick_;
   bool useTrash_;
   bool confirmDelete_;
-  // bool thumbnailLocal_;
-  // bool thumbnailMax;
+
+  bool showThumbnails_;
+
   QString archiver_;
   bool siUnit_;
 

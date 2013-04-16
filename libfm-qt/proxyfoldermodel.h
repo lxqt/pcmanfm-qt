@@ -33,7 +33,10 @@ Q_OBJECT
 
 public:
   explicit ProxyFolderModel(QObject * parent = 0);
-  ~ProxyFolderModel();
+  virtual ~ProxyFolderModel();
+
+  // only Fm::FolderModel is allowed for being sourceModel
+  virtual void setSourceModel(QAbstractItemModel* model);
 
   void setShowHidden(bool show);
   bool showHidden() {
@@ -49,21 +52,40 @@ public:
     QSortFilterProxyModel::setSortCaseSensitivity(cs);
     Q_EMIT sortFilterChanged();
   }
-  
+
+  bool showThumbnails() {
+    return showThumbnails_;
+  }
+  void setShowThumbnails(bool show);
+
+  int thumbnailSize() {
+    return thumbnailSize_;
+  }
+  void setThumbnailSize(int size);
+
   FmFileInfo* fileInfoFromIndex(const QModelIndex& index) const;
 
   virtual void sort(int column, Qt::SortOrder order = Qt::AscendingOrder);
-  
+  virtual QVariant data(const QModelIndex & index, int role = Qt::DisplayRole) const;
+
 Q_SIGNALS:
   void sortFilterChanged();
 
+protected Q_SLOTS:
+  void onThumbnailLoaded(const QModelIndex& srcIndex, int size);
+
 protected:
   bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) const;
-  bool lessThan ( const QModelIndex & left, const QModelIndex & right ) const;
+  bool lessThan(const QModelIndex & left, const QModelIndex & right) const;
+  // void reloadAllThumbnails();
+
+private:
 
 private:
   bool showHidden_;
   bool folderFirst_;
+  bool showThumbnails_;
+  int thumbnailSize_;
 };
 
 }
