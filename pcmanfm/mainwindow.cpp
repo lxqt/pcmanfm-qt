@@ -376,11 +376,14 @@ void MainWindow::onTabBarCloseRequested(int index) {
 
 void MainWindow::closeTab(int index) {
   if(ui.tabBar->count() == 1) { // this is the last one
-    close(); // destroy the whole window
+    close();
+    delete this; // destroy the whole window
   }
   else {
     QWidget* page = ui.stackedWidget->widget(index);
-    ui.stackedWidget->removeWidget(page);
+    ui.stackedWidget->removeWidget(page); // this does not delete the page widget
+    delete page;
+
     // NOTE: we do not remove the tab here.
     // it'll be donoe in onStackedWidgetWidgetRemoved()
     // notebook->removeTab(index);

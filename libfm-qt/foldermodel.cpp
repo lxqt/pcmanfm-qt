@@ -47,6 +47,8 @@ FolderModel::FolderModel() :
 }
 
 FolderModel::~FolderModel() {
+  qDebug("delete FolderModel");
+
   if(folder_)
     setFolder(NULL);
   

@@ -54,6 +54,8 @@ MountOperation::MountOperation(bool interactive, QWidget* parent):
 }
 
 MountOperation::~MountOperation() {
+  qDebug("delete MountOperation");
+
   if(cancellable_) {
 	cancel();
     g_object_unref(cancellable_);

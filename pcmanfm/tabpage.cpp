@@ -54,12 +54,12 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   // newView->setColumnWidth(Fm::FolderModel::ColumnName, 200);
   connect(folderView_, SIGNAL(openDirRequested(FmPath*,int)), SLOT(onOpenDirRequested(FmPath*,int)));
 
+  // FIXME: we should not create new folder model everytime!!
   folderModel_ = new Fm::FolderModel();
-  // folderModel_->sort(Fm::FolderModel::ColumnName);
 
   proxyModel_->setSourceModel(folderModel_);
   proxyModel_->sort(Fm::FolderModel::ColumnFileName);
-// folderView_->setModel(folderModel_);
+
   // FIXME: this is very dirty
   folderView_->setModel(proxyModel_);
 
@@ -69,6 +69,7 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
 }
 
 TabPage::~TabPage() {
+  qDebug("delete TabPage");
   freeFolder();
   if(proxyModel_)
     delete proxyModel_;

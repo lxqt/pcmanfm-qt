@@ -537,27 +537,27 @@
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="237"/>
+        <location filename="../foldermodel.cpp" line="239"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="240"/>
+        <location filename="../foldermodel.cpp" line="242"/>
         <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="243"/>
+        <location filename="../foldermodel.cpp" line="245"/>
         <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="246"/>
+        <location filename="../foldermodel.cpp" line="248"/>
         <source>Modified</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="249"/>
+        <location filename="../foldermodel.cpp" line="251"/>
         <source>Owner</source>
         <translation type="unfinished"></translation>
     </message>
@@ -739,7 +739,7 @@ Modified: %3</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../mountoperation.cpp" line="149"/>
+        <location filename="../mountoperation.cpp" line="151"/>
         <location filename="../utilities.cpp" line="134"/>
         <location filename="../utilities.cpp" line="201"/>
         <source>Error</source>

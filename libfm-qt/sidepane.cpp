@@ -34,6 +34,7 @@ SidePane::SidePane(QWidget* parent):
 }
 
 SidePane::~SidePane() {
+  qDebug("delete SidePane");
 }
 
 void SidePane::onPlacesViewChdirRequested(int type, FmPath* path) {

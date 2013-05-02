@@ -49,6 +49,7 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
 }
 
 FolderView::~FolderView() {
+  qDebug("delete FolderView");
 }
 
 void FolderView::ListView::startDrag(Qt::DropActions supportedActions) {

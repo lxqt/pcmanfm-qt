@@ -34,6 +34,8 @@ ProxyFolderModel::ProxyFolderModel(QObject * parent):
 }
 
 ProxyFolderModel::~ProxyFolderModel() {
+  qDebug("delete ProxyFolderModel");
+
   if(showThumbnails_ && thumbnailSize_ != 0) {
     FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
     // tell the source model that we don't need the thumnails anymore
@@ -45,7 +47,9 @@ ProxyFolderModel::~ProxyFolderModel() {
 }
 
 void ProxyFolderModel::setSourceModel(QAbstractItemModel* model) {
+  // we only support Fm::FolderModel
   Q_ASSERT(model->inherits("Fm::FolderModel"));
+
   if(showThumbnails_ && thumbnailSize_ != 0) { // if we're showing thumbnails
     FolderModel* oldSrcModel = static_cast<FolderModel*>(sourceModel());
     FolderModel* newSrcModel = static_cast<FolderModel*>(model);
