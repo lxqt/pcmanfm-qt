@@ -116,6 +116,10 @@ protected Q_SLOTS:
   
   void onTabBarCloseRequested(int index);
   void onTabBarCurrentChanged(int index);
+
+  void onShortcutPrevTab();
+  void onShortcutNextTab();
+  void onShortcutJumpToTab();
   
   void onStackedWidgetWidgetRemoved(int index);
   

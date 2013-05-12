@@ -80,8 +80,8 @@ MainWindow::MainWindow(FmPath* path):
 
   // side pane
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
-  connect(ui.sidePane, SIGNAL(chdirRequested(int,FmPath*)), SLOT(onSidePaneChdirRequested(int,FmPath*)));
-  
+  connect(ui.sidePane, SIGNAL(chdirRequested(int, FmPath*)), SLOT(onSidePaneChdirRequested(int, FmPath*)));
+
   // path bar
   pathEntry = new Fm::PathEdit(this);
   connect(pathEntry, SIGNAL(returnPressed()), SLOT(onPathEntryReturnPressed()));
@@ -111,7 +111,7 @@ MainWindow::MainWindow(FmPath* path):
   group->addAction(ui.actionCompactView);
   group->addAction(ui.actionThumbnailView);
   group->addAction(ui.actionDetailedList);
-  
+
   group = new QActionGroup(ui.menuSorting);
   group->setExclusive(true);
   group->addAction(ui.actionByFileName);
@@ -119,20 +119,31 @@ MainWindow::MainWindow(FmPath* path):
   group->addAction(ui.actionByFileSize);
   group->addAction(ui.actionByFileType);
   group->addAction(ui.actionByOwner);
-  
+
   group = new QActionGroup(ui.menuSorting);
   group->setExclusive(true);
   group->addAction(ui.actionAscending);
   group->addAction(ui.actionDescending);
 
-  // create shortcuts, FIXME: why this does not work?
-  /*
-  QShortcut* shortcut = new QShortcut(QKeySequence("Ctrl+L", this), this);
+  // create shortcuts
+  QShortcut* shortcut = new QShortcut(Qt::CTRL + Qt::Key_L, this);
   connect(shortcut, SIGNAL(activated()), pathEntry, SLOT(setFocus()));
-  shortcut = new QShortcut(QKeySequence("Alt+D", this), this);
+  shortcut = new QShortcut(Qt::ALT + Qt::Key_D, this);
   connect(shortcut, SIGNAL(activated()), pathEntry, SLOT(setFocus()));
-  */
-  
+
+  shortcut = new QShortcut(Qt::CTRL + Qt::Key_Tab, this);
+  connect(shortcut, SIGNAL(activated()), SLOT(onShortcutNextTab()));
+  shortcut = new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_Tab, this);
+  connect(shortcut, SIGNAL(activated()), SLOT(onShortcutPrevTab()));
+
+  int i;
+  for(i = 0; i < 10; ++i) {
+    shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_0 + i), this);
+    connect(shortcut, SIGNAL(activated()), SLOT(onShortcutJumpToTab()));
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_0 + i), this);
+    connect(shortcut, SIGNAL(activated()), SLOT(onShortcutJumpToTab()));    
+  }
+
   if(path)
     addTab(path);
 }
@@ -144,6 +155,7 @@ MainWindow::~MainWindow() {
 
 void MainWindow::chdir(FmPath* path) {
   TabPage* page = currentPage();
+
   if(page) {
     page->chdir(path, true);
     updateUIForCurrentPage();
@@ -157,12 +169,12 @@ void MainWindow::addTab(FmPath* path) {
   TabPage* newPage = new TabPage(path, this);
   int index = ui.stackedWidget->addWidget(newPage);
   connect(newPage, SIGNAL(titleChanged(QString)), SLOT(onTabPageTitleChanged(QString)));
-  connect(newPage, SIGNAL(statusChanged(int,QString)), SLOT(onTabPageStatusChanged(int,QString)));
-  connect(newPage, SIGNAL(openDirRequested(FmPath*,int)), SLOT(onTabPageOpenDirRequested(FmPath*,int)));
+  connect(newPage, SIGNAL(statusChanged(int, QString)), SLOT(onTabPageStatusChanged(int, QString)));
+  connect(newPage, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onTabPageOpenDirRequested(FmPath*, int)));
   connect(newPage, SIGNAL(sortFilterChanged()), SLOT(onTabPageSortFilterChanged()));
 
   ui.tabBar->insertTab(index, newPage->title());
-  
+
   if(!settings.alwaysShowTabs()) {
     ui.tabBar->setVisible(ui.tabBar->count() > 1);
   }
@@ -178,6 +190,7 @@ void MainWindow::onPathEntryReturnPressed() {
 
 void MainWindow::on_actionGoUp_triggered() {
   TabPage* page = currentPage();
+
   if(page) {
     page->up();
     updateUIForCurrentPage();
@@ -186,6 +199,7 @@ void MainWindow::on_actionGoUp_triggered() {
 
 void MainWindow::on_actionGoBack_triggered() {
   TabPage* page = currentPage();
+
   if(page) {
     page->backward();
     updateUIForCurrentPage();
@@ -194,6 +208,7 @@ void MainWindow::on_actionGoBack_triggered() {
 
 void MainWindow::on_actionGoForward_triggered() {
   TabPage* page = currentPage();
+
   if(page) {
     page->forward();
     updateUIForCurrentPage();
@@ -237,8 +252,10 @@ void MainWindow::on_actionCloseWindow_triggered() {
 
 void MainWindow::on_actionFileProperties_triggered() {
   TabPage* page = currentPage();
+
   if(page) {
     FmFileInfoList* files = page->selectedFiles();
+
     if(files) {
       Fm::FilePropsDialog::showForFiles(files);
       fm_file_info_list_unref(files);
@@ -248,10 +265,13 @@ void MainWindow::on_actionFileProperties_triggered() {
 
 void MainWindow::on_actionFolderProperties_triggered() {
   TabPage* page = currentPage();
+
   if(page) {
     FmFolder* folder = page->folder();
+
     if(folder) {
       FmFileInfo* info = fm_folder_get_info(folder);
+
       if(info)
         Fm::FilePropsDialog::showForFile(info);
     }
@@ -325,8 +345,10 @@ void MainWindow::on_actionDesktop_triggered() {
 
 void MainWindow::on_actionAddToBookmarks_triggered() {
   TabPage* page = currentPage();
+
   if(page) {
     FmPath* cwd = page->path();
+
     if(cwd) {
       char* dispName = fm_path_display_basename(cwd);
       fm_bookmarks_insert(bookmarks, cwd, dispName, -1);
@@ -389,6 +411,7 @@ void MainWindow::closeTab(int index) {
     // notebook->removeTab(index);
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
+
     if(!settings.alwaysShowTabs() && ui.tabBar->count() == 1) {
       ui.tabBar->setVisible(false);
     }
@@ -403,26 +426,32 @@ void MainWindow::onTabBarCurrentChanged(int index) {
 
 void MainWindow::updateViewMenuForCurrentPage() {
   TabPage* tabPage = currentPage();
+
   if(tabPage) {
     // update menus. FIXME: should we move this to another method?
     ui.actionShowHidden->setChecked(tabPage->showHidden());
 
     // view mode
     QAction* modeAction = NULL;
+
     switch(tabPage->viewMode()) {
-      case Fm::FolderView::IconMode:
-        modeAction = ui.actionIconView;
-        break;
-      case Fm::FolderView::CompactMode:
-        modeAction = ui.actionCompactView;
-        break;
-      case Fm::FolderView::DetailedListMode:
-        modeAction = ui.actionDetailedList;
-        break;
-      case Fm::FolderView::ThumbnailMode:
-        modeAction = ui.actionThumbnailView;
-        break;
+    case Fm::FolderView::IconMode:
+      modeAction = ui.actionIconView;
+      break;
+
+    case Fm::FolderView::CompactMode:
+      modeAction = ui.actionCompactView;
+      break;
+
+    case Fm::FolderView::DetailedListMode:
+      modeAction = ui.actionDetailedList;
+      break;
+
+    case Fm::FolderView::ThumbnailMode:
+      modeAction = ui.actionThumbnailView;
+      break;
     }
+
     Q_ASSERT(modeAction != NULL);
     modeAction->setChecked(true);
 
@@ -434,6 +463,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
     sortActions[Fm::FolderModel::ColumnFileType] = ui.actionByFileType;
     sortActions[Fm::FolderModel::ColumnFileOwner] = ui.actionByOwner;
     sortActions[tabPage->sortColumn()]->setChecked(true);
+
     if(tabPage->sortOrder() == Qt::AscendingOrder)
       ui.actionAscending->setChecked(true);
     else
@@ -446,6 +476,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
 
 void MainWindow::updateUIForCurrentPage() {
   TabPage* tabPage = currentPage();
+
   if(tabPage) {
     setWindowTitle(tabPage->title());
     pathEntry->setText(tabPage->pathName());
@@ -484,44 +515,50 @@ void MainWindow::onTabPageTitleChanged(QString title) {
 
 void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
   TabPage* tabPage = static_cast<TabPage*>(sender());
+
   if(tabPage == currentPage()) {
     switch(type) {
-      case TabPage::StatusTextNormal:
-	ui.statusbar->showMessage(statusText);
-	break;
-      case TabPage::StatusTextFSInfo:
-	fsInfoLabel->setText(tabPage->statusText(TabPage::StatusTextFSInfo));
-	break;
-      case TabPage::StatusTextSelectedFiles:
-	break;
+    case TabPage::StatusTextNormal:
+      ui.statusbar->showMessage(statusText);
+      break;
+
+    case TabPage::StatusTextFSInfo:
+      fsInfoLabel->setText(tabPage->statusText(TabPage::StatusTextFSInfo));
+      break;
+
+    case TabPage::StatusTextSelectedFiles:
+      break;
     }
   }
 }
 
 void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
   switch(target) {
-    case View::OpenInCurrentView:
-      chdir(path);
-      break;
-    case View::OpenInNewTab:
-      addTab(path);
-      break;
-    case View::OpenInNewWindow: {
-      Application* app = static_cast<Application*>(qApp);
-      MainWindow* newWin = new MainWindow(path);
-      // TODO: apply window size from app->settings
-      newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
-      newWin->show();
-      break;
-    }
+  case View::OpenInCurrentView:
+    chdir(path);
+    break;
+
+  case View::OpenInNewTab:
+    addTab(path);
+    break;
+
+  case View::OpenInNewWindow: {
+    Application* app = static_cast<Application*>(qApp);
+    MainWindow* newWin = new MainWindow(path);
+    // TODO: apply window size from app->settings
+    newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
+    newWin->show();
+    break;
+  }
   }
 }
 
 void MainWindow::onTabPageSortFilterChanged() {
   TabPage* tabPage = static_cast<TabPage*>(sender());
+
   if(tabPage == currentPage()) {
     updateViewMenuForCurrentPage();
-  }  
+  }
 }
 
 
@@ -532,12 +569,14 @@ void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {
 void MainWindow::loadBookmarksMenu() {
   GList* l = fm_bookmarks_get_all(bookmarks);
   QAction* before = ui.actionAddToBookmarks;
+
   for(; l; l = l->next) {
     FmBookmarkItem* item = reinterpret_cast<FmBookmarkItem*>(l->data);
     BookmarkAction* action = new BookmarkAction(item);
     connect(action, SIGNAL(triggered(bool)), SLOT(onBookmarkActionTriggered()));
     ui.menu_Bookmarks->insertAction(before, action);
   }
+
   ui.menu_Bookmarks->insertSeparator(before);
 }
 
@@ -546,17 +585,20 @@ void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
   QList<QAction*> actions = pThis->ui.menu_Bookmarks->actions();
   QList<QAction*>::const_iterator it = actions.begin();
   QList<QAction*>::const_iterator last_it = actions.end() - 2;
+
   while(it != last_it) {
     QAction* action = *it;
     ++it;
     pThis->ui.menu_Bookmarks->removeAction(action);
   }
+
   pThis->loadBookmarksMenu();
 }
 
 void MainWindow::onBookmarkActionTriggered() {
   BookmarkAction* action = static_cast<BookmarkAction*>(sender());
   FmPath* path = action->path();
+
   if(path)
     chdir(path);
 }
@@ -584,15 +626,18 @@ void MainWindow::on_actionDelete_triggered() {
   Settings& settings = app->settings();
   TabPage* page = currentPage();
   FmPathList* paths = page->selectedFilePaths();
+
   if(settings.useTrash())
     FileOperation::trashFiles(paths, settings.confirmDelete(), this);
   else
     FileOperation::deleteFiles(paths, settings.confirmDelete(), this);
+
   fm_path_list_unref(paths);
 }
 void MainWindow::on_actionRename_triggered() {
   TabPage* page = currentPage();
   FmPathList* paths = page->selectedFilePaths();
+
   for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
     FmPath* path = FM_PATH(l->data);
     Fm::renameFile(path, NULL);
@@ -630,7 +675,7 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
 
 void MainWindow::updateFromSettings(Settings& settings) {
   // apply settings
-  
+
   // menu
   ui.actionDelete->setText(settings.useTrash() ? tr("&Move to Trash") : tr("&Delete"));
 
@@ -639,12 +684,14 @@ void MainWindow::updateFromSettings(Settings& settings) {
 
   // tabs
   ui.tabBar->setTabsClosable(settings.showTabClose());
+
   if(!settings.alwaysShowTabs()) {
     ui.tabBar->setVisible(ui.tabBar->count() > 1);
   }
-  
+
   // all tab pages
   int n = ui.stackedWidget->count();
+
   for(int i = 0; i < n; ++i) {
     TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
     page->updateFromSettings(settings);
@@ -662,9 +709,11 @@ static FmAppCommandParseOption su_cmd_opts[] = {
 
 void MainWindow::on_actionOpenAsRoot_triggered() {
   TabPage* page = currentPage();
+
   if(page) {
     Application* app = static_cast<Application*>(qApp);
     Settings& settings = app->settings();
+
     if(!settings.suCommand().isEmpty()) {
       // run the su command
       // FIXME: it's better to get the filename of the current process rather than hard-code pcmanfm-qt here.
@@ -672,22 +721,27 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
       char* cmd = NULL;
       QByteArray programCommand = app->applicationFilePath().toLocal8Bit();
       programCommand += " %U";
+
       if(fm_app_command_parse(suCommand.constData(), su_cmd_opts, &cmd, gpointer(programCommand.constData())) == 0) {
         /* no %s found so just append to it */
         g_free(cmd);
         cmd = g_strconcat(suCommand.constData(), programCommand.constData(), NULL);
       }
+
       GAppInfo* appInfo = g_app_info_create_from_commandline(cmd, NULL, GAppInfoCreateFlags(0), NULL);
       g_free(cmd);
+
       if(appInfo) {
         FmPath* cwd = page->path();
         GError* err = NULL;
         char* uri = fm_path_to_uri(cwd);
         GList* uris = g_list_prepend(NULL, uri);
+
         if(!g_app_info_launch_uris(appInfo, uris, NULL, &err)) {
           QMessageBox::critical(this, tr("Error"), QString::fromUtf8(err->message));
           g_error_free(err);
         }
+
         g_list_free(uris);
         g_free(uri);
         g_object_unref(appInfo);
@@ -703,13 +757,16 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
 
 void MainWindow::on_actionOpenTerminal_triggered() {
   TabPage* page = currentPage();
+
   if(page) {
     Application* app = static_cast<Application*>(qApp);
     Settings& settings = app->settings();
+
     if(!settings.terminalDirCommand().isEmpty()) {
       // run the terminal command
       FmPath* path = page->path();
       char* cwd_str;
+
       if(fm_path_is_native(path))
         cwd_str = fm_path_to_str(path);
       else { // gio will map remote filesystems to local FUSE-mounted paths here.
@@ -717,6 +774,7 @@ void MainWindow::on_actionOpenTerminal_triggered() {
         cwd_str = g_file_get_path(gf);
         g_object_unref(gf);
       }
+
       char* old_cwd = g_get_current_dir();
       GAppInfo* appInfo = g_app_info_create_from_commandline(
                             settings.terminalDirCommand().toLocal8Bit().constData(),
@@ -727,10 +785,12 @@ void MainWindow::on_actionOpenTerminal_triggered() {
       g_free(cwd_str);
 
       GError* err = NULL;
+
       if(!g_app_info_launch(appInfo, NULL, NULL, &err)) {
         QMessageBox::critical(this, tr("Error"), QString::fromUtf8(err->message));
         g_error_free(err);
       }
+
       g_object_unref(appInfo);
       /* switch back to old cwd and fix #3114626 - PCManFM 0.9.9 Umount partitions problem */
       g_chdir(old_cwd); /* This is really dirty, but we don't have better solution now. */
@@ -744,6 +804,46 @@ void MainWindow::on_actionOpenTerminal_triggered() {
   }
 }
 
+void MainWindow::onShortcutNextTab() {
+  int current = ui.tabBar->currentIndex();
+  if(current < ui.tabBar->count() - 1)
+    ui.tabBar->setCurrentIndex(current + 1);
+  else
+    ui.tabBar->setCurrentIndex(0);
+}
+
+void MainWindow::onShortcutPrevTab() {
+  int current = ui.tabBar->currentIndex();
+  if(current > 0)
+    ui.tabBar->setCurrentIndex(current - 1);
+  else
+    ui.tabBar->setCurrentIndex(ui.tabBar->count() - 1);
+}
+
+// Switch to nth tab when Alt+n or Ctrl+n is pressed
+void MainWindow::onShortcutJumpToTab() {
+  QShortcut* shortcut = reinterpret_cast<QShortcut*>(sender());
+  QKeySequence seq = shortcut->key();
+  int keyValue = seq[0];
+  // See the source code of QKeySequence and refer to the method:
+  // QString QKeySequencePrivate::encodeString(int key, QKeySequence::SequenceFormat format).
+  // Then we know how to test if a key sequence contains a modifier.
+  // It's a shame that Qt has no API for this task.
+
+  if((keyValue & Qt::ALT) == Qt::ALT) // test if we have Alt key pressed
+    keyValue -= Qt::ALT;
+  else if((keyValue & Qt::CTRL) == Qt::CTRL) // test if we have Ctrl key pressed
+    keyValue -= Qt::CTRL;
+
+  // now keyValue should contains '0' - '9' only
+  int index;
+  if(keyValue == '0')
+    index = 9;
+  else
+    index = keyValue - '1';
+  if(index < ui.tabBar->count())
+    ui.tabBar->setCurrentIndex(index);
+}
 
 }
 
