@@ -93,9 +93,16 @@ void ProxyFolderModel::setFolderFirst(bool folderFirst) {
 
 bool ProxyFolderModel::filterAcceptsRow(int source_row, const QModelIndex & source_parent) const {
   if(!showHidden_) {
-    QAbstractItemModel* model = sourceModel();
-    QString name = model->data(model->index(source_row, 0, source_parent)).toString();
+    QAbstractItemModel* srcModel = sourceModel();
+    QString name = srcModel->data(srcModel->index(source_row, 0, source_parent)).toString();
     if(name.startsWith(".") || name.endsWith("~"))
+      return false;
+  }
+  // apply additional filters if there're any
+  Q_FOREACH(ProxyFolderModelFilter* filter, filters_) {
+    FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
+    FmFileInfo* fileInfo = srcModel->fileInfoFromIndex(srcModel->index(source_row, 0, source_parent));
+    if(!filter->filterAcceptsRow(this, fileInfo))
       return false;
   }
   return true;
@@ -207,6 +214,19 @@ void ProxyFolderModel::onThumbnailLoaded(const QModelIndex& srcIndex, int size) 
     Q_EMIT dataChanged(index, index);
   }
 }
+
+void ProxyFolderModel::addFilter(ProxyFolderModelFilter* filter) {
+  filters_.append(filter);
+  invalidateFilter();
+  Q_EMIT sortFilterChanged();
+}
+
+void ProxyFolderModel::removeFilter(ProxyFolderModelFilter* filter) {
+  filters_.removeOne(filter);
+  invalidateFilter();
+  Q_EMIT sortFilterChanged();  
+}
+
 
 #if 0
 void ProxyFolderModel::reloadAllThumbnails() {

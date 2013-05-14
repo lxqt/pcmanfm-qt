@@ -23,13 +23,25 @@
 
 #include <QSortFilterProxyModel>
 #include <libfm/fm.h>
+#include <QList>
 
 namespace Fm {
 
 // a proxy model used to sort and filter FolderModel
 
+class FolderModelItem;
+class ProxyFolderModel;
+
+class LIBFM_QT_API ProxyFolderModelFilter {
+public:
+  virtual bool filterAcceptsRow(const ProxyFolderModel* model, FmFileInfo* info) const = 0;
+  virtual ~ProxyFolderModelFilter();
+};
+
+
 class LIBFM_QT_API ProxyFolderModel : public QSortFilterProxyModel {
-Q_OBJECT
+  Q_OBJECT
+public:
 
 public:
   explicit ProxyFolderModel(QObject * parent = 0);
@@ -68,6 +80,9 @@ public:
   virtual void sort(int column, Qt::SortOrder order = Qt::AscendingOrder);
   virtual QVariant data(const QModelIndex & index, int role = Qt::DisplayRole) const;
 
+  void addFilter(ProxyFolderModelFilter* filter);
+  void removeFilter(ProxyFolderModelFilter* filter);
+
 Q_SIGNALS:
   void sortFilterChanged();
 
@@ -86,6 +101,7 @@ private:
   bool folderFirst_;
   bool showThumbnails_;
   int thumbnailSize_;
+  QList<ProxyFolderModelFilter*> filters_;
 };
 
 }
