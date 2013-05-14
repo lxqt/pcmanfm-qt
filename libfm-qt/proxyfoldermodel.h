@@ -35,7 +35,7 @@ class ProxyFolderModel;
 class LIBFM_QT_API ProxyFolderModelFilter {
 public:
   virtual bool filterAcceptsRow(const ProxyFolderModel* model, FmFileInfo* info) const = 0;
-  virtual ~ProxyFolderModelFilter();
+  virtual ~ProxyFolderModelFilter() {}
 };
 
 
