@@ -132,6 +132,3 @@ void AutoRunDialog::onContentTypeFinished(GMount* mount, GAsyncResult* res, Auto
   // select the first item
   pThis->ui.listWidget->item(0)->setSelected(true);
 }
-
-
-#include "autorundialog.moc"

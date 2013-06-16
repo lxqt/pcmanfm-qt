@@ -536,6 +536,3 @@ void Application::onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Applic
     pThis->autoMountVolume(volume, true);
 }
 
-
-
-#include "application.moc"

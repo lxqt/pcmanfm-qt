@@ -269,4 +269,3 @@ void PreferencesDialog::accept() {
   QDialog::accept();
 }
 
-#include "preferencesdialog.moc"

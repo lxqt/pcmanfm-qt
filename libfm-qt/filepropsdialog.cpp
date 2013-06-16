@@ -463,6 +463,3 @@ void FilePropsDialog::initOwner() {
     }
   }
 }
-
-
-#include "filepropsdialog.moc"

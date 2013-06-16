@@ -398,5 +398,3 @@ static const char* sidePaneModeToString(int value) {
 static int sidePaneModeFromString(const QString str) {
   return 0;
 }
-
-#include "settings.moc"

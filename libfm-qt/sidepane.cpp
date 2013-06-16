@@ -53,6 +53,3 @@ void SidePane::setCurrentPath(FmPath* path) {
     placesView_->setCurrentPath(path);
   }
 }
-
-
-#include "sidepane.moc"

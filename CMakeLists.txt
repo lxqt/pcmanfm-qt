@@ -1,5 +1,5 @@
 project(pcmanfm-qt)
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8.6)
 
 # Setup common compiler flags/variables ---------------------------------------
 set(PCMANFM_VERSION "0.1")
@@ -20,6 +20,9 @@ pkg_check_modules(LIBFM REQUIRED
 
 # set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
 set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fvisibility=hidden -fno-exceptions")
+
+# Eanble CMake auto-moc support for Qt
+set(CMAKE_AUTOMOC TRUE)
 
 # The core library libfm-qt ---------------------------------------------------
 add_subdirectory(libfm-qt)

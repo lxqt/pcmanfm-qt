@@ -846,5 +846,3 @@ void MainWindow::onShortcutJumpToTab() {
 }
 
 }
-
-#include "mainwindow.moc"

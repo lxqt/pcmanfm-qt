@@ -245,5 +245,3 @@ void ProxyFolderModel::reloadAllThumbnails() {
   }
 }
 #endif
-
-#include "proxyfoldermodel.moc"

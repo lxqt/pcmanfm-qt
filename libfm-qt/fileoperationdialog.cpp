@@ -157,5 +157,3 @@ void FileOperationDialog::reject() {
   QDialog::reject();
 }
 
-
-#include "fileoperationdialog.moc"

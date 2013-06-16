@@ -138,5 +138,3 @@ void DesktopPreferencesDialog::selectPage(QString name) {
   if(page)
     ui.tabWidget->setCurrentWidget(page);
 }
-
-#include "desktoppreferencesdialog.moc"

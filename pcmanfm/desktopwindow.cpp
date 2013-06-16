@@ -230,6 +230,3 @@ void DesktopWindow::setWorkArea(const QRect& rect) {
                   "}").arg(left).arg(top).arg(right).arg(bottom);
   childView()->setStyleSheet(qss);
 }
-
-
-#include "desktopwindow.moc"

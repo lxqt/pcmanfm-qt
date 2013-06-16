@@ -449,5 +449,3 @@ Qt::DropActions PlacesModel::supportedDropActions() const {
   return QAbstractQStandardItemModel::supportedDropActions();
 }
 */
-
-#include "placesmodel.moc"

@@ -97,6 +97,4 @@ void EditBookmarksDialog::onRemoveItem() {
   }
 }
 
-#include "editbookmarksdialog.moc"
-
 

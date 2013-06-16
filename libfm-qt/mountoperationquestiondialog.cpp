@@ -67,5 +67,3 @@ void MountOperationQuestionDialog::onButtonClicked(QAbstractButton* button) {
     }
   }
 }
-
-#include "mountoperationquestiondialog.moc"

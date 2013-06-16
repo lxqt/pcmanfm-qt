@@ -53,6 +53,3 @@ void FontButton::setFont(QFont font) {
   setText(text);
   Q_EMIT changed();
 }
-
-
-#include "fontbutton.moc"

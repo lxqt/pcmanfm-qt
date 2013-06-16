@@ -127,6 +127,3 @@ void RenameDialog::onFileNameChanged(QString newName) {
   // FIXME: check if the name already exists in the current dir
   renameButton_->setEnabled((newName_ != oldName_));
 }
-
-
-#include "renamedialog.moc"

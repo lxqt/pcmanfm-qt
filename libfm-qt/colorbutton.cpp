@@ -49,6 +49,3 @@ void ColorButton::setColor(const QColor& color) {
   }
 }
 
-
-#include "colorbutton.moc"
-

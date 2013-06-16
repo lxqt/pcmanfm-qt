@@ -536,6 +536,3 @@ QImage FolderModel::thumbnailFromIndex(const QModelIndex& index, int size) {
   }
   return QImage();
 }
-
-#include "foldermodel.moc"
-

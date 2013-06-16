@@ -52,7 +52,6 @@ set(libfm_UIS
 )
 
 QT4_WRAP_UI(libfm_UIS_H ${libfm_UIS})
-qt4_automoc(${libfm_SRCS})
 
 add_library(fm-qt SHARED
   ${libfm_SRCS}

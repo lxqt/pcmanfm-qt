@@ -159,6 +159,3 @@ gboolean PathEdit::onJobFinished(gpointer user_data) {
   pThis->cancellable_ = NULL;
   return TRUE;
 }
-
-#include "pathedit.moc"
-

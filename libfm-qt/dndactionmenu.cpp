@@ -48,5 +48,3 @@ Qt::DropAction DndActionMenu::askUser(QPoint pos) {
     result = Qt::IgnoreAction;
   return result;
 }
-
-#include "dndactionmenu.moc"

@@ -114,4 +114,3 @@ void View::updateFromSettings(Settings& settings) {
   }
 }
 
-#include "view.moc"

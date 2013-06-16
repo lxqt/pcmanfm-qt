@@ -246,6 +246,3 @@ FileOperation* FileOperation::changeAttrFiles(FmPathList* srcFiles, QWidget* par
   op->run();
   return op;
 }
-
-
-#include "fileoperation.moc"

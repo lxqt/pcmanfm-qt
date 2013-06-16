@@ -239,5 +239,3 @@ void FolderMenu::onCreateNewFolder() {
     createFile(CreateNewFolder, dirPath);
 }
 
-
-#include "foldermenu.moc"

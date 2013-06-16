@@ -157,5 +157,3 @@ QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QM
 DesktopItemDelegate::~DesktopItemDelegate() {
 
 }
-
-#include "desktopitemdelegate.moc"

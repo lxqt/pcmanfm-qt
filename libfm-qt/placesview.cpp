@@ -218,7 +218,3 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
     menu->popup(mapToGlobal(event->pos()));
   }
 }
-
-
-
-#include "placesview.moc"

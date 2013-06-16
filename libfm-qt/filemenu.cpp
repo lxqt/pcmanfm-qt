@@ -267,6 +267,3 @@ void FileMenu::onExtractHere() {
   }
 }
 
-
-
-#include "filemenu.moc"

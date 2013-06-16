@@ -400,5 +400,3 @@ void FolderView::childDropEvent(QDropEvent* e) {
     e->setDropAction(action);
   }
 }
-
-#include "folderview.moc"

@@ -186,5 +186,3 @@ bool MountOperation::wait() {
   int exitCode = eventLoop->exec();
   return exitCode == 0 ? true : false;
 }
-
-#include "mountoperation.moc"

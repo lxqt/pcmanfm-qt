@@ -343,5 +343,3 @@ void TabPage::updateFromSettings(Settings& settings) {
 }
 
 };
-
-#include "tabpage.moc"

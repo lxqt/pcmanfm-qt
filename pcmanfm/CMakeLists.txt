@@ -41,7 +41,6 @@ set(pcmanfm_UIS
 )
 
 QT4_WRAP_UI(pcmanfm_UIS_H ${pcmanfm_UIS})
-qt4_automoc(${pcmanfm_SRCS})
 
 add_executable(pcmanfm-qt 
   ${pcmanfm_SRCS}

@@ -122,4 +122,3 @@ void MountOperationPasswordDialog::done(int r) {
   QDialog::done(r);
 }
 
-#include "mountoperationpassworddialog.moc"
