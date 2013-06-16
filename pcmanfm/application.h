@@ -77,6 +77,7 @@ protected Q_SLOTS:
   void onLastWindowClosed();
   void onSaveStateRequest(QSessionManager & manager);
   void onScreenResized(int num);
+  void onWorkAreaResized(int num);
   void onScreenCountChanged(int newCount);
 
   void initVolumeManager();

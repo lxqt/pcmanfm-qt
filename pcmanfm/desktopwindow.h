@@ -53,9 +53,9 @@ public:
 
   // void setWallpaperAlpha(qreal alpha);
   void updateWallpaper();
-
   void updateFromSettings(Settings& settings);
 
+  void setWorkArea(const QRect& rect);
 protected:
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
   virtual void prepareFileMenu(Fm::FileMenu* menu);

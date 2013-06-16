@@ -689,7 +689,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="196"/>
+        <location filename="../desktopwindow.cpp" line="204"/>
         <source>Desktop Preferences</source>
         <translation type="unfinished"></translation>
     </message>

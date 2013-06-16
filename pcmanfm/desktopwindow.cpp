@@ -42,7 +42,7 @@ DesktopWindow::DesktopWindow():
   wallpaperMode_(WallpaperNone) {
 
   QDesktopWidget* desktopWidget = QApplication::desktop();
-  setWindowFlags(Qt::Window|Qt::FramelessWindowHint);
+  setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
   setAttribute(Qt::WA_OpaquePaintEvent);
   setAttribute(Qt::WA_DeleteOnClose);
@@ -67,19 +67,21 @@ DesktopWindow::DesktopWindow():
 
   // remove frame
   listView->setFrameShape(QFrame::NoFrame);
-  
+
   // inhibit scrollbars FIXME: this should be optional in the future
   listView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
   listView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-  connect(this, SIGNAL(openDirRequested(FmPath*,int)), SLOT(onOpenDirRequested(FmPath*,int)));
+  connect(this, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onOpenDirRequested(FmPath*, int)));
 }
 
 DesktopWindow::~DesktopWindow() {
   if(proxyModel_)
     delete proxyModel_;
+
   if(model_)
     delete model_;
+
   if(folder_)
     g_object_unref(folder_);
 }
@@ -112,6 +114,7 @@ void DesktopWindow::onOpenDirRequested(FmPath* path, int target) {
 
 void DesktopWindow::resizeEvent(QResizeEvent* event) {
   QWidget::resizeEvent(event);
+
   // resize or wall paper if needed
   if(isVisible() && wallpaperMode_ != WallpaperNone && wallpaperMode_ != WallpaperTile) {
     updateWallpaper();
@@ -137,6 +140,7 @@ void DesktopWindow::updateWallpaper() {
   }
   else { // use wallpaper
     QImage image(wallpaperFile_);
+
     if(image.isNull()) { // image file cannot be loaded
       palette.setBrush(QPalette::Base, bgColor_);
       QPixmap empty;
@@ -144,6 +148,7 @@ void DesktopWindow::updateWallpaper() {
     }
     else { // image file is successfully loaded
       QPixmap pixmap;
+
       if(wallpaperMode_ == WallpaperTile || image.size() == size()) {
         // if image size == window size, there are no differences among different modes
         pixmap = QPixmap::fromImage(image);
@@ -160,15 +165,18 @@ void DesktopWindow::updateWallpaper() {
           QImage scaled = image.scaled(width(), height(), Qt::KeepAspectRatio, Qt::SmoothTransformation);
           image = scaled;
         }
+
         pixmap.fill(bgColor_);
         int x = width() - image.width();
         int y = height() - image.height();
         painter.drawImage(x, y, image);
       }
+
       wallpaperPixmap_ = pixmap;
       palette.setBrush(QPalette::Base, wallpaperPixmap_);
     } // if(image.isNull())
   }
+
   //FIXME: we should set the pixmap to X11 root window?
   listView->setPalette(palette);
 }
@@ -201,6 +209,27 @@ void DesktopWindow::onDesktopPreferences() {
   static_cast<Application* >(qApp)->desktopPrefrences(QString());
 }
 
+void DesktopWindow::setWorkArea(const QRect& rect) {
+  const QRect& windowRect = geometry();
+  int left = rect.left() - windowRect.left();
+  int top = rect.top() - windowRect.top();
+  int right = windowRect.right() - rect.right();
+  int bottom = windowRect.bottom() - rect.bottom();
+  // We always set the size of the desktop window
+  // to the size of the whole screen regardless of work area.
+  // For work area, we reserve the margins on the list view
+  // using style sheet instead. So icons are all painted
+  // inside the work area but the background image still
+  // covers the whole screen.
+  QString qss = QString(
+                  "QListView{"
+                  "padding-left:%1;"
+                  "padding-top:%2;"
+                  "padding-right:%3;"
+                  "padding-bottom:%4;"
+                  "}").arg(left).arg(top).arg(right).arg(bottom);
+  childView()->setStyleSheet(qss);
+}
 
 
 #include "desktopwindow.moc"

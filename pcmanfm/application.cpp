@@ -331,6 +331,7 @@ void Application::desktopManager(bool enabled) {
     if(!enableDesktopManager_) {
       int n = desktopWidget->numScreens();
       connect(desktopWidget, SIGNAL(resized(int)), SLOT(onScreenResized(int)));
+      connect(desktopWidget, SIGNAL(workAreaResized(int)), SLOT(onWorkAreaResized(int)));
       connect(desktopWidget, SIGNAL(screenCountChanged(int)), SLOT(onScreenCountChanged(int)));
       desktopWindows_.reserve(n);
       for(int i = 0; i < n; ++i) {
@@ -341,7 +342,8 @@ void Application::desktopManager(bool enabled) {
   }
   else {
     if(enableDesktopManager_) {
-      disconnect(desktopWidget, SIGNAL(workAreaResized(int)), this, SLOT(onScreenResized(int)));
+      disconnect(desktopWidget, SIGNAL(resized(int)), this, SLOT(onScreenResized(int)));
+      disconnect(desktopWidget, SIGNAL(workAreaResized(int)), this, SLOT(onWorkAreaResized(int)));
       disconnect(desktopWidget, SIGNAL(screenCountChanged(int)), this, SLOT(onScreenCountChanged(int)));
       int n = desktopWindows_.size();
       for(int i = 0; i < n; ++i) {
@@ -413,10 +415,18 @@ void Application::onScreenResized(int num) {
   window->setGeometry(rect);
 }
 
+void Application::onWorkAreaResized(int num) {
+  DesktopWindow* window = desktopWindows_.at(num);
+  QRect rect = desktop()->availableGeometry(num);
+  window->setWorkArea(rect);
+}
+
 DesktopWindow* Application::createDesktopWindow(int screenNum) {
   DesktopWindow* window = new DesktopWindow();
   QRect rect = desktop()->screenGeometry(screenNum);
   window->setGeometry(rect);
+  rect = desktop()->availableGeometry(screenNum);
+  window->setWorkArea(rect);
   window->updateFromSettings(settings_);
   window->show();
   return window;
