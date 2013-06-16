@@ -186,18 +186,21 @@ void ProxyFolderModel::setThumbnailSize(int size) {
       // reload all items, FIXME: can we only update items previously having thumbnails
       Q_EMIT dataChanged(index(0, 0), index(rowCount() - 1, 0));
     }
+    
     thumbnailSize_ = size;
   }
 }
 
 QVariant ProxyFolderModel::data(const QModelIndex& index, int role) const {
-  if(role == Qt::DecorationRole && showThumbnails_ && thumbnailSize_) {
-    // we need to show thumbnails instead of icons
-    FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
-    QModelIndex srcIndex = mapToSource(index);
-    QImage image = srcModel->thumbnailFromIndex(srcIndex, thumbnailSize_);
-    if(!image.isNull()) // if we got a thumbnail of the desired size, use it
-      return QVariant(image);
+  if(index.column() == 0) { // only show the decoration role for the first column
+    if(role == Qt::DecorationRole && showThumbnails_ && thumbnailSize_) {
+      // we need to show thumbnails instead of icons
+      FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
+      QModelIndex srcIndex = mapToSource(index);
+      QImage image = srcModel->thumbnailFromIndex(srcIndex, thumbnailSize_);
+      if(!image.isNull()) // if we got a thumbnail of the desired size, use it
+        return QVariant(image);
+    }
   }
   // fallback to icons if thumbnails are not available
   return QSortFilterProxyModel::data(index, role);
