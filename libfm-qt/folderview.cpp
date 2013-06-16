@@ -29,29 +29,6 @@
 
 using namespace Fm;
 
-FolderView::FolderView(ViewMode _mode, QWidget* parent):
-  QWidget(parent),
-  view(NULL),
-  mode((ViewMode)0),
-  model_(NULL) {
-
-  iconSize_[IconMode - FirstViewMode] = QSize(48, 48);
-  iconSize_[CompactMode - FirstViewMode] = QSize(24, 24);
-  iconSize_[ThumbnailMode - FirstViewMode] = QSize(128, 128);
-  iconSize_[DetailedListMode - FirstViewMode] = QSize(24, 24);
-
-  QVBoxLayout* layout = new QVBoxLayout();
-  layout->setMargin(0);
-  setLayout(layout);
-
-  setViewMode(_mode);
-  setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-}
-
-FolderView::~FolderView() {
-  qDebug("delete FolderView");
-}
-
 void FolderView::ListView::startDrag(Qt::DropActions supportedActions) {
   if(movement() != Static)
     QListView::startDrag(supportedActions);
@@ -112,6 +89,20 @@ void FolderView::ListView::dropEvent(QDropEvent* e) {
     QAbstractItemView::dropEvent(e);
 }
 
+//-----------------------------------------------------------------------------
+
+FolderView::TreeView::TreeView(QWidget* parent):
+  QTreeView(parent),
+  doingLayout_(false) {
+
+  header()->setStretchLastSection(false);
+}
+
+
+void FolderView::TreeView::setModel(QAbstractItemModel* model) {
+  QTreeView::setModel(model);
+  layoutColumns();
+}
 
 void FolderView::TreeView::mousePressEvent(QMouseEvent* event) {
   QTreeView::mousePressEvent(event);
@@ -138,6 +129,93 @@ void FolderView::TreeView::dropEvent(QDropEvent* e) {
   QTreeView::dropEvent(e);
 }
 
+// the default list mode of QListView handles column widths
+// very badly (worse than gtk+) and it's not very flexible.
+// so, let's handle column widths outselves.
+void FolderView::TreeView::layoutColumns() {
+  if(!model())
+    return;
+  doingLayout_ = true;
+  QHeaderView* headerView = header();
+  // the width that's available for showing the columns.
+  int availWidth = viewport()->contentsRect().width();
+  int desiredWidth = 0;
+
+  // get the width that every column want
+  int numCols = headerView->count();
+  int* widths = new int[numCols]; // array to store the widths every column needs
+  int column;
+  for(column = 0; column < numCols; ++column) {
+    int columnId = headerView->logicalIndex(column);
+    // get the size that the column needs
+    widths[column] = sizeHintForColumn(columnId);
+  }
+
+  // the best case is every column can get its full width
+  for(column = 0; column < numCols; ++column) {
+    desiredWidth += widths[column];
+  }
+
+  // if the total witdh we want exceeds the available space
+  if(desiredWidth > availWidth) {
+    // we don't have that much space for every column
+    int filenameColumn = headerView->visualIndex(FolderModel::ColumnFileName);
+    // shrink the filename column first
+    desiredWidth -= widths[filenameColumn]; // total width of all other columns
+
+    // see if setting the width of the filename column to 200 solve the problem
+    if(desiredWidth + 200 > availWidth) {
+      // even when we reduce the width of the filename column to 200,
+      // the available space is not enough. So we give up trying.
+      widths[filenameColumn] = 200;
+      desiredWidth += 200;
+    }
+    else { // we still have more space, so the width of filename column can be increased
+      // expand the filename column to fill all available space.
+      widths[filenameColumn] = availWidth - desiredWidth;
+      desiredWidth = availWidth;
+    }
+  }
+
+  // really do the resizing for every column
+  for(int column = 0; column < numCols; ++column) {
+    headerView->resizeSection(column, widths[column]);
+  }
+
+  delete []widths;
+  doingLayout_ = false;
+}
+
+void FolderView::TreeView::resizeEvent(QResizeEvent* event) {
+  QAbstractItemView::resizeEvent(event);
+  if(!doingLayout_) // prevent endless recursion.
+    layoutColumns(); // layoutColumns() also triggers resizeEvent
+}
+
+//-----------------------------------------------------------------------------
+
+FolderView::FolderView(ViewMode _mode, QWidget* parent):
+  QWidget(parent),
+  view(NULL),
+  mode((ViewMode)0),
+  model_(NULL) {
+
+  iconSize_[IconMode - FirstViewMode] = QSize(48, 48);
+  iconSize_[CompactMode - FirstViewMode] = QSize(24, 24);
+  iconSize_[ThumbnailMode - FirstViewMode] = QSize(128, 128);
+  iconSize_[DetailedListMode - FirstViewMode] = QSize(24, 24);
+
+  QVBoxLayout* layout = new QVBoxLayout();
+  layout->setMargin(0);
+  setLayout(layout);
+
+  setViewMode(_mode);
+  setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+}
+
+FolderView::~FolderView() {
+  qDebug("delete FolderView");
+}
 
 void FolderView::onItemActivated(QModelIndex index) {
   if(index.isValid() && index.model()) {

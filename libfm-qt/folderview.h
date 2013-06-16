@@ -70,13 +70,19 @@ protected:
 
   class TreeView : public QTreeView {
   public:
-    TreeView(QWidget* parent = 0) : QTreeView(parent) {
-    }
+    TreeView(QWidget* parent = 0);
+    virtual void setModel(QAbstractItemModel* model);
     virtual void mousePressEvent(QMouseEvent* event);
     virtual void dragEnterEvent(QDragEnterEvent* event);
     virtual void dragMoveEvent(QDragMoveEvent* e);
     virtual void dragLeaveEvent(QDragLeaveEvent* e);
     virtual void dropEvent(QDropEvent* e);
+    
+    virtual void resizeEvent(QResizeEvent* event);
+  private:
+    void layoutColumns();
+  private:
+    bool doingLayout_;
   };
 
 public:
