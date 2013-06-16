@@ -48,7 +48,7 @@ inline static Fm::FolderModel::ColumnId sortColumnFromString(const QString str);
 
 Settings::Settings():
   QObject(),
-  iconThemeName_(),
+  fallbackIconThemeName_(),
   bookmarkOpenMethod_(0),
   suCommand_(),
   terminalDirCommand_(),
@@ -117,11 +117,11 @@ bool Settings::loadFile(QString filePath) {
   QSettings settings(filePath, QSettings::IniFormat);
 
   settings.beginGroup("System");
-  iconThemeName_ = settings.value("IconThemeName").toString();
-  if(iconThemeName_.isEmpty()) {
+  fallbackIconThemeName_ = settings.value("FallbackIconThemeName").toString();
+  if(fallbackIconThemeName_.isEmpty()) {
     // FIXME: we should choose one from installed icon themes or get
     // the value from XSETTINGS instead of hard code a fallback value.
-    iconThemeName_ = "elementary"; // fallback icon theme name
+    fallbackIconThemeName_ = "elementary"; // fallback icon theme name
   }
   suCommand_ = settings.value("SuCommand", "gksu %s").toString();
   terminalDirCommand_ = settings.value("TerminalDirCommand", "xterm").toString();
@@ -196,7 +196,7 @@ bool Settings::saveFile(QString filePath) {
   QSettings settings(filePath, QSettings::IniFormat);
 
   settings.beginGroup("System");
-  settings.setValue("IconThemeName", iconThemeName_);
+  settings.setValue("FallbackIconThemeName", fallbackIconThemeName_);
   settings.setValue("SuCommand", suCommand_);
   settings.setValue("TerminalDirCommand", terminalDirCommand_);
   settings.setValue("TerminalExecCommand", terminalExecCommand_);

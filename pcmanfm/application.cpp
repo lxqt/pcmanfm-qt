@@ -43,6 +43,7 @@ Application::Application(int& argc, char** argv):
   QApplication(argc, argv),
   libFm_(),
   settings_(),
+  desktopSettings_(),
   profileName("default"),
   daemonMode_(false),
   desktopWindows_(),
@@ -62,7 +63,10 @@ Application::Application(int& argc, char** argv):
 
     connect(this, SIGNAL(aboutToQuit()), SLOT(onAboutToQuit()));
     settings_.load(profileName);
-    Fm::IconTheme::setThemeName(settings_.iconThemeName());
+
+    QString iconTheme = desktopSettings_.iconThemeName();
+    Fm::IconTheme::setThemeName(iconTheme.isEmpty() ? settings_.fallbackIconThemeName() : iconTheme);
+    connect(&desktopSettings_, SIGNAL(changed()), SLOT(onDesktopSettingsChanged()));
   }
   else {
     // an service of the same name is already registered.
@@ -421,6 +425,12 @@ void Application::onWorkAreaResized(int num) {
   window->setWorkArea(rect);
 }
 
+void Application::onDesktopSettingsChanged() {
+  // FIXME: should we store current icon theme and check if it's really changed here?
+  QString iconTheme = desktopSettings_.iconThemeName();
+  Fm::IconTheme::setThemeName(iconTheme.isEmpty() ? settings_.fallbackIconThemeName() : iconTheme);
+}
+
 DesktopWindow* Application::createDesktopWindow(int screenNum) {
   DesktopWindow* window = new DesktopWindow();
   QRect rect = desktop()->screenGeometry(screenNum);
@@ -454,7 +464,9 @@ void Application::onScreenCountChanged(int newCount) {
 // called when Settings is changed to update UI
 void Application::updateFromSettings() {
 
-  Fm::IconTheme::setThemeName(settings_.iconThemeName());
+  QString iconTheme = desktopSettings_.iconThemeName();
+  if(iconTheme.isEmpty())
+    Fm::IconTheme::setThemeName(settings_.fallbackIconThemeName());
 
   // update main windows and desktop windows
   QWidgetList windows = this->topLevelWidgets();

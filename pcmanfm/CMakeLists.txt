@@ -10,6 +10,12 @@ link_directories(
   ${LIBFM_LIBRARY_DIRS}
 )
 
+set(desktopsettings_SRCS
+  xsettings/xsettings-client.c
+  xsettings/xsettings-common.c
+  desktopsettings.cpp
+)
+
 set(pcmanfm_SRCS
   application.cpp
   pcmanfm.cpp
@@ -22,6 +28,7 @@ set(pcmanfm_SRCS
   desktopitemdelegate.cpp
   autorundialog.cpp
   settings.cpp
+  ${desktopsettings_SRCS}
 )
 
 qt4_add_dbus_adaptor(pcmanfm_SRCS

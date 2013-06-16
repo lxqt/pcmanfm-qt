@@ -29,6 +29,7 @@
 #include <QWeakPointer>
 #include <QTranslator>
 #include <gio/gio.h>
+#include "desktopsettings.h"
 
 namespace PCManFM {
 
@@ -49,6 +50,10 @@ public:
 
   Settings& settings() {
     return settings_;
+  }
+  
+  Xdg::DesktopSettings& desktopSettings() {
+    return desktopSettings_;
   }
   
   Fm::LibFmQt& libFm() {
@@ -79,9 +84,10 @@ protected Q_SLOTS:
   void onScreenResized(int num);
   void onWorkAreaResized(int num);
   void onScreenCountChanged(int newCount);
+  void onDesktopSettingsChanged();
 
   void initVolumeManager();
-  
+ 
 protected:
   virtual void commitData(QSessionManager & manager);
   bool parseCommandLineArgs(int argc, char** argv);
@@ -94,6 +100,7 @@ private:
   bool isPrimaryInstance;
   Fm::LibFmQt libFm_;
   Settings settings_;
+  Xdg::DesktopSettings desktopSettings_;
   QString profileName;
   bool daemonMode_;
   bool enableDesktopManager_;

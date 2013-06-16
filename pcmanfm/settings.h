@@ -49,12 +49,12 @@ public:
     return profileName_;
   }
 
-  QString iconThemeName() const {
-    return iconThemeName_;
+  QString fallbackIconThemeName() const {
+    return fallbackIconThemeName_;
   }
   
-  void setIconThemeName(QString iconThemeName) {
-    iconThemeName_ = iconThemeName;
+  void setFallbackIconThemeName(QString iconThemeName) {
+    fallbackIconThemeName_ = iconThemeName;
   }
 
   int bookmarkOpenMethod() {
@@ -377,7 +377,7 @@ private:
   QString profileName_;
 
   // PCManFM specific
-  QString iconThemeName_;
+  QString fallbackIconThemeName_;
 
   int bookmarkOpenMethod_;
   QString suCommand_;

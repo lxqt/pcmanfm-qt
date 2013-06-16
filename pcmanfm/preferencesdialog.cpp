@@ -75,38 +75,45 @@ static void findIconThemesInDir(QHash<QString, QString>& iconThemes, QString dir
 }
 
 void PreferencesDialog::initIconThemes(Settings& settings) {
-  // TODO: add auto-detection from xsettings, etc.
+  Application* app = static_cast<Application*>(qApp);
 
-  // load xdg icon themes and select the current one
-  QHash<QString, QString> iconThemes;
-  // user customed icon themes
-  findIconThemesInDir(iconThemes, QString(g_get_home_dir()) % "/.icons");
+  // check if auto-detection is done (for example, from xsettings)
+  if(app->desktopSettings().iconThemeName().isEmpty()) { // auto-detection failed
+    // load xdg icon themes and select the current one
+    QHash<QString, QString> iconThemes;
+    // user customed icon themes
+    findIconThemesInDir(iconThemes, QString(g_get_home_dir()) % "/.icons");
 
-  // search for icons in system data dir
-  const char* const* dataDirs = g_get_system_data_dirs();
-  for(const char* const* dataDir = dataDirs; *dataDir; ++dataDir) {
-    findIconThemesInDir(iconThemes, QString(*dataDir) % "/icons");
-  }
-
-  iconThemes.remove("hicolor"); // remove hicolor, which is only a fallback
-  QHash<QString, QString>::const_iterator it;
-  for(it = iconThemes.begin(); it != iconThemes.end(); ++it) {
-    ui.iconTheme->addItem(it.value(), it.key());
-  }
-  ui.iconTheme->model()->sort(0); // sort the list of icon theme names
-
-  // select current theme name
-  int n = ui.iconTheme->count();
-  int i;
-  for(i = 0; i < n; ++i) {
-    QVariant itemData = ui.iconTheme->itemData(i);
-    if(itemData == settings.iconThemeName()) {
-      break;
+    // search for icons in system data dir
+    const char* const* dataDirs = g_get_system_data_dirs();
+    for(const char* const* dataDir = dataDirs; *dataDir; ++dataDir) {
+      findIconThemesInDir(iconThemes, QString(*dataDir) % "/icons");
     }
+
+    iconThemes.remove("hicolor"); // remove hicolor, which is only a fallback
+    QHash<QString, QString>::const_iterator it;
+    for(it = iconThemes.begin(); it != iconThemes.end(); ++it) {
+      ui.iconTheme->addItem(it.value(), it.key());
+    }
+    ui.iconTheme->model()->sort(0); // sort the list of icon theme names
+
+    // select current theme name
+    int n = ui.iconTheme->count();
+    int i;
+    for(i = 0; i < n; ++i) {
+      QVariant itemData = ui.iconTheme->itemData(i);
+      if(itemData == settings.fallbackIconThemeName()) {
+	break;
+      }
+    }
+    if(i >= n)
+      i = 0;
+    ui.iconTheme->setCurrentIndex(i);
   }
-  if(i >= n)
-    i = 0;
-  ui.iconTheme->setCurrentIndex(i);
+  else { // auto-detection of icon theme works, hide the fallback icon theme combo box.
+    ui.iconThemeLabel->hide();
+    ui.iconTheme->hide();
+  }
 }
 
 void PreferencesDialog::initArchivers(Settings& settings) {
@@ -209,7 +216,11 @@ void PreferencesDialog::initFromSettings() {
 }
 
 void PreferencesDialog::applyUiPage(Settings& settings) {
-  settings.setIconThemeName(ui.iconTheme->itemData(ui.iconTheme->currentIndex()).toString());
+  if(ui.iconTheme->isVisible()) {
+    // only apply the value if icon theme combo box is in use
+    // the combo box is hidden when auto-detection of icon theme from xsettings works.
+    settings.setFallbackIconThemeName(ui.iconTheme->itemData(ui.iconTheme->currentIndex()).toString());
+  }
   settings.setBigIconSize(ui.bigIconSize->itemData(ui.bigIconSize->currentIndex()).toInt());
   settings.setSmallIconSize(ui.smallIconSize->itemData(ui.smallIconSize->currentIndex()).toInt());
   settings.setThumbnailIconSize(ui.thumbnailIconSize->itemData(ui.thumbnailIconSize->currentIndex()).toInt());
