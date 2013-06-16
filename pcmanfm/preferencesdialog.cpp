@@ -38,6 +38,9 @@ PreferencesDialog::PreferencesDialog (QString activePage, QWidget* parent):
   ui.setupUi(this);
   setAttribute(Qt::WA_DeleteOnClose);
 
+  // resize the list widget according to the width of its content.
+  ui.listWidget->setMaximumWidth(ui.listWidget->sizeHintForColumn(0) + ui.listWidget->frameWidth() * 2 + 2);
+
   initFromSettings();
   
   if(!activePage.isEmpty()) {
