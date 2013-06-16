@@ -26,17 +26,26 @@
 #include "proxyfoldermodel.h"
 #include "folderitemdelegate.h"
 #include "dndactionmenu.h"
+#include <QTimer>
+#include <QDate>
 
 using namespace Fm;
 
-void FolderView::ListView::startDrag(Qt::DropActions supportedActions) {
+FolderViewListView::FolderViewListView(QWidget* parent):
+  QListView(parent) {
+}
+
+FolderViewListView::~FolderViewListView() {
+}
+
+void FolderViewListView::startDrag(Qt::DropActions supportedActions) {
   if(movement() != Static)
     QListView::startDrag(supportedActions);
   else
     QAbstractItemView::startDrag(supportedActions);
 }
 
-void FolderView::ListView::mousePressEvent(QMouseEvent* event) {
+void FolderViewListView::mousePressEvent(QMouseEvent* event) {
   QListView::mousePressEvent(event);
   static_cast<FolderView*>(parent())->childMousePressEvent(event);
 }
@@ -54,7 +63,7 @@ void FolderView::ListView::mousePressEvent(QMouseEvent* event) {
 // dragged item and paint them in the view as needed.
 // TODO: I really should file a bug report to Qt developers.
 
-void FolderView::ListView::dragEnterEvent(QDragEnterEvent* event) {
+void FolderViewListView::dragEnterEvent(QDragEnterEvent* event) {
   if(movement() != Static)
     QListView::dragEnterEvent(event);
   else
@@ -63,7 +72,7 @@ void FolderView::ListView::dragEnterEvent(QDragEnterEvent* event) {
   //static_cast<FolderView*>(parent())->childDragEnterEvent(event);
 }
 
-void FolderView::ListView::dragLeaveEvent(QDragLeaveEvent* e) {
+void FolderViewListView::dragLeaveEvent(QDragLeaveEvent* e) {
   if(movement() != Static)
     QListView::dragLeaveEvent(e);
   else
@@ -71,7 +80,7 @@ void FolderView::ListView::dragLeaveEvent(QDragLeaveEvent* e) {
   static_cast<FolderView*>(parent())->childDragLeaveEvent(e);
 }
 
-void FolderView::ListView::dragMoveEvent(QDragMoveEvent* e) {
+void FolderViewListView::dragMoveEvent(QDragMoveEvent* e) {
   if(movement() != Static)
     QListView::dragMoveEvent(e);
   else
@@ -79,7 +88,7 @@ void FolderView::ListView::dragMoveEvent(QDragMoveEvent* e) {
   static_cast<FolderView*>(parent())->childDragMoveEvent(e);
 }
 
-void FolderView::ListView::dropEvent(QDropEvent* e) {
+void FolderViewListView::dropEvent(QDropEvent* e) {
 
   static_cast<FolderView*>(parent())->childDropEvent(e);
 
@@ -91,40 +100,46 @@ void FolderView::ListView::dropEvent(QDropEvent* e) {
 
 //-----------------------------------------------------------------------------
 
-FolderView::TreeView::TreeView(QWidget* parent):
+FolderViewTreeView::FolderViewTreeView(QWidget* parent):
   QTreeView(parent),
+  layoutTimer_(NULL),
   doingLayout_(false) {
 
   header()->setStretchLastSection(false);
+  setIndentation(0);
 }
 
+FolderViewTreeView::~FolderViewTreeView() {
+  if(layoutTimer_)
+    delete layoutTimer_;
+}
 
-void FolderView::TreeView::setModel(QAbstractItemModel* model) {
+void FolderViewTreeView::setModel(QAbstractItemModel* model) {
   QTreeView::setModel(model);
   layoutColumns();
 }
 
-void FolderView::TreeView::mousePressEvent(QMouseEvent* event) {
+void FolderViewTreeView::mousePressEvent(QMouseEvent* event) {
   QTreeView::mousePressEvent(event);
   static_cast<FolderView*>(parent())->childMousePressEvent(event);
 }
 
-void FolderView::TreeView::dragEnterEvent(QDragEnterEvent* event) {
+void FolderViewTreeView::dragEnterEvent(QDragEnterEvent* event) {
   QTreeView::dragEnterEvent(event);
   static_cast<FolderView*>(parent())->childDragEnterEvent(event);
 }
 
-void FolderView::TreeView::dragLeaveEvent(QDragLeaveEvent* e) {
+void FolderViewTreeView::dragLeaveEvent(QDragLeaveEvent* e) {
   QTreeView::dragLeaveEvent(e);
   static_cast<FolderView*>(parent())->childDragLeaveEvent(e);
 }
 
-void FolderView::TreeView::dragMoveEvent(QDragMoveEvent* e) {
+void FolderViewTreeView::dragMoveEvent(QDragMoveEvent* e) {
   QTreeView::dragMoveEvent(e);
   static_cast<FolderView*>(parent())->childDragMoveEvent(e);
 }
 
-void FolderView::TreeView::dropEvent(QDropEvent* e) {
+void FolderViewTreeView::dropEvent(QDropEvent* e) {
   static_cast<FolderView*>(parent())->childDropEvent(e);
   QTreeView::dropEvent(e);
 }
@@ -132,7 +147,8 @@ void FolderView::TreeView::dropEvent(QDropEvent* e) {
 // the default list mode of QListView handles column widths
 // very badly (worse than gtk+) and it's not very flexible.
 // so, let's handle column widths outselves.
-void FolderView::TreeView::layoutColumns() {
+void FolderViewTreeView::layoutColumns() {
+  // qDebug("layoutColumns");
   if(!model())
     return;
   doingLayout_ = true;
@@ -184,12 +200,44 @@ void FolderView::TreeView::layoutColumns() {
 
   delete []widths;
   doingLayout_ = false;
+  
+  if(layoutTimer_) {
+    delete layoutTimer_;
+    layoutTimer_ = NULL;
+  }
 }
 
-void FolderView::TreeView::resizeEvent(QResizeEvent* event) {
+void FolderViewTreeView::resizeEvent(QResizeEvent* event) {
   QAbstractItemView::resizeEvent(event);
   if(!doingLayout_) // prevent endless recursion.
     layoutColumns(); // layoutColumns() also triggers resizeEvent
+}
+
+void FolderViewTreeView::rowsInserted(const QModelIndex& parent, int start, int end) {
+  QTreeView::rowsInserted(parent, start, end);
+  queueLayoutColumns();
+}
+
+void FolderViewTreeView::rowsAboutToBeRemoved(const QModelIndex& parent, int start, int end) {
+  QTreeView::rowsAboutToBeRemoved(parent, start, end);
+  queueLayoutColumns();
+}
+
+void FolderViewTreeView::dataChanged(const QModelIndex& topLeft, const QModelIndex& bottomRight) {
+  QTreeView::dataChanged(topLeft, bottomRight);
+  // FIXME: this will be very inefficient
+  // queueLayoutColumns();
+}
+
+void FolderViewTreeView::queueLayoutColumns() {
+  // qDebug("queueLayoutColumns");
+  if(!layoutTimer_) {
+    layoutTimer_ = new QTimer();
+    layoutTimer_->setSingleShot(true);
+    layoutTimer_->setInterval(0);
+    connect(layoutTimer_, SIGNAL(timeout()), SLOT(layoutColumns()));
+  }
+  layoutTimer_->start();
 }
 
 //-----------------------------------------------------------------------------
@@ -240,7 +288,7 @@ void FolderView::setViewMode(ViewMode _mode) {
   QSize iconSize = iconSize_[mode - FirstViewMode];
 
   if(mode == DetailedListMode) {
-    TreeView* treeView = new TreeView(this);
+    FolderViewTreeView* treeView = new FolderViewTreeView(this);
     view = treeView;
     treeView->setItemsExpandable(false);
     treeView->setRootIsDecorated(false);
@@ -251,11 +299,11 @@ void FolderView::setViewMode(ViewMode _mode) {
     // treeView->setSelectionBehavior(QAbstractItemView::SelectItems);
   }
   else {
-    ListView* listView;
+    FolderViewListView* listView;
     if(view)
-      listView = static_cast<ListView*>(view);
+      listView = static_cast<FolderViewListView*>(view);
     else {
-      listView = new ListView(this);
+      listView = new FolderViewListView(this);
       view = listView;
     }
     // set our own custom delegate

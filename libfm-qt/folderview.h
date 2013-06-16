@@ -29,9 +29,51 @@
 #include "foldermodel.h"
 #include "proxyfoldermodel.h"
 
+class QTimer;
+
 namespace Fm {
 
 class FileMenu;
+
+// override these classes for implementing FolderView
+class FolderViewListView : public QListView {
+public:
+  FolderViewListView(QWidget* parent = 0);
+  virtual ~FolderViewListView();
+  virtual void startDrag(Qt::DropActions supportedActions);
+  virtual void mousePressEvent(QMouseEvent* event);
+  virtual void dragEnterEvent(QDragEnterEvent* event);
+  virtual void dragMoveEvent(QDragMoveEvent* e);
+  virtual void dragLeaveEvent(QDragLeaveEvent* e);
+  virtual void dropEvent(QDropEvent* e);
+};
+
+class FolderViewTreeView : public QTreeView {
+  Q_OBJECT
+public:
+  FolderViewTreeView(QWidget* parent = 0);
+  virtual ~FolderViewTreeView();
+  virtual void setModel(QAbstractItemModel* model);
+  virtual void mousePressEvent(QMouseEvent* event);
+  virtual void dragEnterEvent(QDragEnterEvent* event);
+  virtual void dragMoveEvent(QDragMoveEvent* e);
+  virtual void dragLeaveEvent(QDragLeaveEvent* e);
+  virtual void dropEvent(QDropEvent* e);
+  
+  virtual void rowsInserted(const QModelIndex& parent,int start, int end);
+  virtual void rowsAboutToBeRemoved(const QModelIndex& parent,int start, int end);
+  virtual void dataChanged(const QModelIndex& topLeft, const QModelIndex& bottomRight);
+
+  virtual void resizeEvent(QResizeEvent* event);
+  void queueLayoutColumns();
+
+private Q_SLOTS:
+  void layoutColumns();
+
+private:
+  bool doingLayout_;
+  QTimer* layoutTimer_;
+};
 
 class LIBFM_QT_API FolderView : public QWidget {
   Q_OBJECT
@@ -53,39 +95,11 @@ public:
     ContextMenuClick
   };
 
-protected:
-
-  // override these classes for implementing FolderView
-  class ListView : public QListView {
-  public:
-    ListView(QWidget* parent = 0) : QListView(parent) {
-    }
-    virtual void startDrag(Qt::DropActions supportedActions);
-    virtual void mousePressEvent(QMouseEvent* event);
-    virtual void dragEnterEvent(QDragEnterEvent* event);
-    virtual void dragMoveEvent(QDragMoveEvent* e);
-    virtual void dragLeaveEvent(QDragLeaveEvent* e);
-    virtual void dropEvent(QDropEvent* e);
-  };
-
-  class TreeView : public QTreeView {
-  public:
-    TreeView(QWidget* parent = 0);
-    virtual void setModel(QAbstractItemModel* model);
-    virtual void mousePressEvent(QMouseEvent* event);
-    virtual void dragEnterEvent(QDragEnterEvent* event);
-    virtual void dragMoveEvent(QDragMoveEvent* e);
-    virtual void dragLeaveEvent(QDragLeaveEvent* e);
-    virtual void dropEvent(QDropEvent* e);
-    
-    virtual void resizeEvent(QResizeEvent* event);
-  private:
-    void layoutColumns();
-  private:
-    bool doingLayout_;
-  };
-
 public:
+
+  friend class FolderViewTreeView;
+  friend class FolderViewListView;
+  
   explicit FolderView(ViewMode _mode = IconMode, QWidget* parent = 0);
   virtual ~FolderView();
 
