@@ -47,19 +47,21 @@ ProxyFolderModel::~ProxyFolderModel() {
 }
 
 void ProxyFolderModel::setSourceModel(QAbstractItemModel* model) {
-  // we only support Fm::FolderModel
-  Q_ASSERT(model->inherits("Fm::FolderModel"));
+  if(model) {
+    // we only support Fm::FolderModel
+    Q_ASSERT(model->inherits("Fm::FolderModel"));
 
-  if(showThumbnails_ && thumbnailSize_ != 0) { // if we're showing thumbnails
-    FolderModel* oldSrcModel = static_cast<FolderModel*>(sourceModel());
-    FolderModel* newSrcModel = static_cast<FolderModel*>(model);
-    if(oldSrcModel) { // we need to release cached thumbnails for the old source model
-      oldSrcModel->releaseThumbnails(thumbnailSize_);
-      disconnect(oldSrcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)));
-    }
-    if(newSrcModel) { // tell the new source model that we want thumbnails of this size
-      newSrcModel->cacheThumbnails(thumbnailSize_);
-      connect(newSrcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)), SLOT(onThumbnailLoaded(QModelIndex,int)));
+    if(showThumbnails_ && thumbnailSize_ != 0) { // if we're showing thumbnails
+      FolderModel* oldSrcModel = static_cast<FolderModel*>(sourceModel());
+      FolderModel* newSrcModel = static_cast<FolderModel*>(model);
+      if(oldSrcModel) { // we need to release cached thumbnails for the old source model
+        oldSrcModel->releaseThumbnails(thumbnailSize_);
+        disconnect(oldSrcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)));
+      }
+      if(newSrcModel) { // tell the new source model that we want thumbnails of this size
+        newSrcModel->cacheThumbnails(thumbnailSize_);
+        connect(newSrcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)), SLOT(onThumbnailLoaded(QModelIndex,int)));
+      }
     }
   }
   QSortFilterProxyModel::setSourceModel(model);

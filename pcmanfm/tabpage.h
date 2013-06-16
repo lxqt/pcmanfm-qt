@@ -25,6 +25,7 @@
 #include <QVBoxLayout>
 #include <libfm/fm.h>
 #include "foldermodel.h"
+#include "cachedfoldermodel.h"
 #include "placesview.h"
 #include "proxyfoldermodel.h"
 #include "view.h"
@@ -185,7 +186,7 @@ private:
 
 private:
   View* folderView_;
-  Fm::FolderModel* folderModel_;
+  Fm::CachedFolderModel* folderModel_;
   Fm::ProxyFolderModel* proxyModel_;
   QVBoxLayout* verticalLayout;
   FmFolder* folder_;

@@ -54,12 +54,6 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   // newView->setColumnWidth(Fm::FolderModel::ColumnName, 200);
   connect(folderView_, SIGNAL(openDirRequested(FmPath*,int)), SLOT(onOpenDirRequested(FmPath*,int)));
 
-  // FIXME: we should not create new folder model everytime!!
-  folderModel_ = new Fm::FolderModel();
-
-  proxyModel_->setSourceModel(folderModel_);
-  proxyModel_->sort(Fm::FolderModel::ColumnFileName);
-
   // FIXME: this is very dirty
   folderView_->setModel(proxyModel_);
 
@@ -74,7 +68,7 @@ TabPage::~TabPage() {
   if(proxyModel_)
     delete proxyModel_;
   if(folderModel_)
-    delete folderModel_;
+    folderModel_->unref();
 }
 
 void TabPage::freeFolder() {
@@ -265,6 +259,14 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
       QAbstractItemView* childView = folderView_->childView();
       item.setScrollPos(childView->verticalScrollBar()->value());
     }
+
+    // free the previous model
+    if(folderModel_) {
+      proxyModel_->setSourceModel(NULL);
+      folderModel_->unref(); // unref the cached model
+      folderModel_ = NULL;
+    }
+
     freeFolder();
   }
 
@@ -283,6 +285,10 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
   g_signal_connect(folder_, "unmount", G_CALLBACK(onFolderUnmount), this);
   g_signal_connect(folder_, "content-changed", G_CALLBACK(onFolderContentChanged), this);
 
+  folderModel_ = CachedFolderModel::modelFromFolder(folder_);
+  proxyModel_->setSourceModel(folderModel_);
+  proxyModel_->sort(Fm::FolderModel::ColumnFileName);
+  
   if(fm_folder_is_loaded(folder_)) {
     onFolderStartLoading(folder_, this);
     onFolderFinishLoading(folder_, this);
@@ -290,7 +296,6 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
   }
   else
     onFolderStartLoading(folder_, this);
-  folderModel_->setFolder(folder_);
 
   if(addHistory) {
     // add current path to browse history

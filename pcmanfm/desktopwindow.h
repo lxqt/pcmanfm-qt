@@ -22,6 +22,7 @@
 #define PCMANFM_DESKTOPWINDOW_H
 
 #include "foldermodel.h"
+#include "cachedfoldermodel.h"
 #include "proxyfoldermodel.h"
 #include "view.h"
 #include <qcache.h>
@@ -67,7 +68,7 @@ protected Q_SLOTS:
 
 private:
   Fm::ProxyFolderModel* proxyModel_;
-  Fm::FolderModel* model_;
+  Fm::CachedFolderModel* model_;
   FmFolder* folder_;
 
   QColor fgColor_;

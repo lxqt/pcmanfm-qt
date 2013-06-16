@@ -18,6 +18,7 @@ set(libfm_SRCS
   filelauncher.cpp
   foldermodel.cpp
   foldermodelitem.cpp
+  cachedfoldermodel.cpp
   proxyfoldermodel.cpp
   folderview.cpp
   folderitemdelegate.cpp
