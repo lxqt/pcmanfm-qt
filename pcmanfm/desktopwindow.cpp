@@ -25,6 +25,7 @@
 #include <QPixmap>
 #include <QPalette>
 #include <QBrush>
+#include <QLayout>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -44,8 +45,10 @@ DesktopWindow::DesktopWindow():
   QDesktopWidget* desktopWidget = QApplication::desktop();
   setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
-  setAttribute(Qt::WA_OpaquePaintEvent);
   setAttribute(Qt::WA_DeleteOnClose);
+
+  // setAutoFillBackground(true);
+  // setBackgroundRole(QPalette::Base);
 
   Settings& settings = static_cast<Application* >(qApp)->settings();
   
@@ -174,12 +177,21 @@ void DesktopWindow::updateWallpaper() {
       }
 
       wallpaperPixmap_ = pixmap;
-      palette.setBrush(QPalette::Base, wallpaperPixmap_);
+      QBrush brush(pixmap);
+      QMatrix matrix;
+      matrix.translate(100, 100);
+      matrix.rotate(100);
+      brush.setMatrix(matrix);
+      palette.setBrush(QPalette::Base, brush);
     } // if(image.isNull())
   }
 
   //FIXME: we should set the pixmap to X11 root window?
   listView->setPalette(palette);
+  // listView->setBackgroundRole(QPalette::NoRole);
+  // listView->viewport()->setBackgroundRole(QPalette::NoRole);
+  // FIXME: how to fill the remaining screen space reserved by WM_STRUT?
+  // setPalette(palette);
 }
 
 void DesktopWindow::updateFromSettings(Settings& settings) {
@@ -222,12 +234,6 @@ void DesktopWindow::setWorkArea(const QRect& rect) {
   // using style sheet instead. So icons are all painted
   // inside the work area but the background image still
   // covers the whole screen.
-  QString qss = QString(
-                  "QListView{"
-                  "padding-left:%1;"
-                  "padding-top:%2;"
-                  "padding-right:%3;"
-                  "padding-bottom:%4;"
-                  "}").arg(left).arg(top).arg(right).arg(bottom);
-  childView()->setStyleSheet(qss);
+
+  layout()->setContentsMargins(left, top, right, bottom);
 }
