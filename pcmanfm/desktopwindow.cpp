@@ -47,8 +47,9 @@ DesktopWindow::DesktopWindow():
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
   setAttribute(Qt::WA_DeleteOnClose);
 
-  // setAutoFillBackground(true);
-  // setBackgroundRole(QPalette::Base);
+  // paint background for the desktop widget
+  setAutoFillBackground(true);
+  setBackgroundRole(QPalette::Base);
 
   Settings& settings = static_cast<Application* >(qApp)->settings();
   
@@ -64,6 +65,11 @@ DesktopWindow::DesktopWindow():
   listView->setMovement(QListView::Snap);
   listView->setResizeMode(QListView::Adjust);
   listView->setFlow(QListView::TopToBottom);
+
+  // make the background of the list view transparent (alpha: 0)
+  QPalette transparent = listView->palette();
+  transparent.setColor(QPalette::Base, QColor(0,0,0,0));
+  listView->setPalette(transparent);
 
   // set our own delegate
   delegate_ = new DesktopItemDelegate(listView);
@@ -137,7 +143,8 @@ void DesktopWindow::setWallpaperMode(WallpaperMode mode) {
 void DesktopWindow::updateWallpaper() {
   // reset the brush
   QListView* listView = static_cast<QListView*>(childView());
-  QPalette palette(listView->palette());
+  // QPalette palette(listView->palette());
+  QPalette palette(Fm::FolderView::palette());
 
   if(wallpaperMode_ == WallpaperNone) { // use background color only
     palette.setBrush(QPalette::Base, bgColor_);
@@ -187,11 +194,7 @@ void DesktopWindow::updateWallpaper() {
   }
 
   //FIXME: we should set the pixmap to X11 root window?
-  listView->setPalette(palette);
-  // listView->setBackgroundRole(QPalette::NoRole);
-  // listView->viewport()->setBackgroundRole(QPalette::NoRole);
-  // FIXME: how to fill the remaining screen space reserved by WM_STRUT?
-  // setPalette(palette);
+  setPalette(palette);
 }
 
 void DesktopWindow::updateFromSettings(Settings& settings) {
@@ -234,6 +237,5 @@ void DesktopWindow::setWorkArea(const QRect& rect) {
   // using style sheet instead. So icons are all painted
   // inside the work area but the background image still
   // covers the whole screen.
-
   layout()->setContentsMargins(left, top, right, bottom);
 }
