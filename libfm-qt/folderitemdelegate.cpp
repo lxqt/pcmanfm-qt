@@ -71,7 +71,10 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
     opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
 
-    // FIXME: QImage based thumbnails are painted at incorrect locations
+    // FIXME: duplicate the pixmap here seems to cause some high memory usage
+    // problems, and the pixmap previously cached for the QIcon cannot be used, too.
+    // We need to implement our own full item delegate to pain the item properly and
+    // remove this hack as soon as possible.
     QPixmap pixmap = opt.icon.pixmap(view_->iconSize());
     opt.decorationSize.setWidth(view_->gridSize().width());
     opt.decorationSize.setHeight(view_->iconSize().height());

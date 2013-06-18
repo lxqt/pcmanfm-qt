@@ -28,6 +28,7 @@
 #include <QVector>
 #include <QLocale>
 #include <QLibraryInfo>
+#include <QPixmapCache>
 
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
@@ -63,6 +64,9 @@ Application::Application(int& argc, char** argv):
 
     connect(this, SIGNAL(aboutToQuit()), SLOT(onAboutToQuit()));
     settings_.load(profileName);
+
+    // decrease the cache size to reduce memory usage
+    QPixmapCache::setCacheLimit(2048);
 
     QString iconTheme = desktopSettings_.iconThemeName();
     Fm::IconTheme::setThemeName(iconTheme.isEmpty() ? settings_.fallbackIconThemeName() : iconTheme);
