@@ -128,12 +128,14 @@ PlacesModel::PlacesModel(QObject* parent):
   computerItem->setEditable(false);
   placesRoot->appendRow(computerItem);
 
-  applicationsItem = new Item("system-software-install", tr("Applications"), fm_path_get_apps_menu());
+  applicationsItem = new Item(
+    QIcon::fromTheme("system-software-install", QIcon::fromTheme("applications-accessories")),
+                              tr("Applications"), fm_path_get_apps_menu());
   applicationsItem->setEditable(false);
   placesRoot->appendRow(applicationsItem);
 
   path = fm_path_new_for_uri("network:///");
-  networkItem = new Item("network", tr("Network"));
+  networkItem = new Item(QIcon::fromTheme("network", QIcon::fromTheme("folder-network")), tr("Network"));
   fm_path_unref(path);
   networkItem->setEditable(false);
   placesRoot->appendRow(networkItem);
