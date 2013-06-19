@@ -171,20 +171,19 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
   ui.viewMode->addItem(tr("Compact Icon View"), (int)Fm::FolderView::CompactMode);
   ui.viewMode->addItem(tr("Thumbnail View"), (int)Fm::FolderView::ThumbnailMode);
   ui.viewMode->addItem(tr("Detailed List View"), (int)Fm::FolderView::DetailedListMode);
-  Fm::FolderView::ViewMode modes[] = {
+  const Fm::FolderView::ViewMode modes[] = {
     Fm::FolderView::IconMode,
     Fm::FolderView::CompactMode,
     Fm::FolderView::ThumbnailMode,
     Fm::FolderView::DetailedListMode   
   };
   for(int i = 0; i < G_N_ELEMENTS(modes); ++i) {
-    if(modes[i] = settings.viewMode()) {
+    if(modes[i] == settings.viewMode()) {
       ui.viewMode->setCurrentIndex(i);
       break;
     }
   } 
 
-  // ui.viewMode->setCurrentIndex(settings.viewMode());
   ui.configmDelete->setChecked(settings.confirmDelete());
   ui.useTrash->setChecked(settings.useTrash());
 }
