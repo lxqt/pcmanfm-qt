@@ -34,6 +34,9 @@ public:
   virtual void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const;
 
 private:
+  void drawText(QPainter* painter, QStyleOptionViewItemV4& opt, QRectF& textRect) const;
+
+private:
   QListView* view_;
 };
 

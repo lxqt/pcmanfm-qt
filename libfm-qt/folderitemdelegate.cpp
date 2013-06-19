@@ -24,6 +24,9 @@
 #include <QStyleOptionViewItemV4>
 #include <QApplication>
 #include <QIcon>
+#include <QTextLayout>
+#include <QTextOption>
+#include <QTextLine>
 
 using namespace Fm;
 
@@ -37,7 +40,6 @@ FolderItemDelegate::~FolderItemDelegate() {
 
 }
 
-// special thanks to Razor-qt developer Alec Moskvin(amoskvin) for providing the fix!
 QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QModelIndex& index) const {
   QVariant value = index.data(Qt::SizeHintRole);
   if(value.isValid())
@@ -50,13 +52,9 @@ QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QMo
     const QWidget* widget = opt.widget;
     QStyle* style = widget ? widget->style() : QApplication::style();
 
+    // use grid size as size hint
     QSize gridSize = view_->gridSize();
-    QSize size = QStyledItemDelegate::sizeHint(option, index);
-    if(size.height() > gridSize.height())
-      size.setHeight(gridSize.height());
-    // make the item use the width of the whole grid, not the width of the icon.
-    size.setWidth(gridSize.width());
-    return size;
+    return QSize(gridSize.width() -2, gridSize.height() - 2);
   }
   return QStyledItemDelegate::sizeHint(option, index);
 }
@@ -66,22 +64,110 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
   Q_ASSERT(index.isValid());
   if(option.decorationPosition == QStyleOptionViewItem::Top ||
     option.decorationPosition == QStyleOptionViewItem::Bottom) {
+    painter->save();
+    painter->setClipRect(option.rect);
+
     QStyleOptionViewItemV4 opt = option;
     initStyleOption(&opt, index);
     opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
     opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
 
-    // FIXME: duplicate the pixmap here seems to cause some high memory usage
-    // problems, and the pixmap previously cached for the QIcon cannot be used, too.
-    // We need to implement our own full item delegate to pain the item properly and
-    // remove this hack as soon as possible.
-    QPixmap pixmap = opt.icon.pixmap(view_->iconSize());
-    opt.decorationSize.setWidth(view_->gridSize().width());
-    opt.decorationSize.setHeight(view_->iconSize().height());
-    opt.icon = QIcon(pixmap.copy(QRect(QPoint(0, 0), opt.decorationSize)));
-    view_->style()->drawControl(QStyle::CE_ItemViewItem, &opt, painter);
+    // draw the icon
+    QIcon::Mode iconMode;
+    if(opt.state & QStyle::State_Enabled) {
+      if(opt.state & QStyle::State_Selected)
+        iconMode = QIcon::Selected;
+      else {
+        iconMode = QIcon::Normal;
+      }
+    }
+    else
+      iconMode = QIcon::Disabled;
+    QPoint iconPos(opt.rect.x() + (opt.rect.width() - opt.decorationSize.width()) / 2, opt.rect.y());
+    QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
+    painter->drawPixmap(iconPos, pixmap);
+
+    QTextLayout layout;
+    QRectF textRect(opt.rect.x(), opt.rect.y() + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
+    drawText(painter, opt, textRect);
+    painter->restore();
   }
   else {
     QStyledItemDelegate::paint(painter, option, index);
+  }
+}
+
+void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt, QRectF& textRect) const {
+  const QWidget* widget = opt.widget;
+  QStyle* style = widget->style() ? widget->style() : qApp->style();
+  const int focusMargin = style->pixelMetric(QStyle::PM_FocusFrameHMargin, &opt, widget);
+  QTextLayout layout(opt.text, opt.font);
+  QTextOption textOption;
+  textOption.setAlignment(opt.displayAlignment);
+  textOption.setWrapMode(QTextOption::WrapAtWordBoundaryOrAnywhere);
+  textOption.setTextDirection(opt.direction);
+  layout.setTextOption(textOption);
+  qreal height = 0;
+  qreal width = 0;
+  int visibleLines = 0;
+  layout.beginLayout();
+  QString elidedText;
+  for(;;) {
+    QTextLine line = layout.createLine();
+    if(!line.isValid())
+      break;
+    line.setLineWidth(textRect.width());
+    height += opt.fontMetrics.leading();
+    line.setPosition(QPointF(0, height));
+    if((height + line.height() + textRect.y()) > textRect.bottom()) {
+      // if part of this line falls outside the textRect, ignore it and quit.
+      QTextLine lastLine = layout.lineAt(visibleLines - 1);
+      elidedText = opt.text.mid(lastLine.textStart());
+      elidedText = opt.fontMetrics.elidedText(elidedText, opt.textElideMode, textRect.width());
+      break;
+    }
+    height += line.height();
+    width = qMax(width, line.naturalTextWidth());
+    ++ visibleLines;
+  }
+  layout.endLayout();
+
+  // draw background for selected item
+  QRectF boundRect = layout.boundingRect();
+  boundRect.setWidth(width);
+  boundRect.moveTo(textRect.x() + (textRect.width() - width)/2, textRect.y());
+
+  QPalette::ColorGroup cg = opt.state & QStyle::State_Enabled ? QPalette::Normal : QPalette::Disabled;
+  if(opt.state & QStyle::State_Selected) {
+    painter->fillRect(boundRect, opt.palette.highlight());
+    painter->setPen(opt.palette.color(cg, QPalette::HighlightedText));
+  }
+  else
+    painter->setPen(opt.palette.color(cg, QPalette::Text));
+
+  // draw text
+  for(int i = 0; i < visibleLines; ++i) {
+    QTextLine line = layout.lineAt(i);
+    if(i == (visibleLines - 1) && !elidedText.isEmpty()) { // the last line, draw elided text
+      QPointF pos(textRect.x() + line.position().x(), textRect.y() + line.y() + line.ascent());
+      painter->drawText(pos, elidedText);
+    }
+    else {
+      line.draw(painter, textRect.topLeft());
+    }
+  }
+
+  if(opt.state & QStyle::State_HasFocus) {
+    // draw focus rect
+    QStyleOptionFocusRect o;
+    o.QStyleOption::operator=(opt);
+    o.rect = boundRect.toRect(); // subElementRect(SE_ItemViewItemFocusRect, vopt, widget);
+    o.state |= QStyle::State_KeyboardFocusChange;
+    o.state |= QStyle::State_Item;
+    QPalette::ColorGroup cg = (opt.state & QStyle::State_Enabled)
+                  ? QPalette::Normal : QPalette::Disabled;
+    o.backgroundColor = opt.palette.color(cg, (opt.state & QStyle::State_Selected)
+                                  ? QPalette::Highlight : QPalette::Window);
+    style->drawPrimitive(QStyle::PE_FrameFocusRect, &o, painter, widget);
   }
 }
