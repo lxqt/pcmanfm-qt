@@ -135,7 +135,7 @@ PlacesModel::PlacesModel(QObject* parent):
   placesRoot->appendRow(applicationsItem);
 
   path = fm_path_new_for_uri("network:///");
-  networkItem = new Item(QIcon::fromTheme("network", QIcon::fromTheme("folder-network")), tr("Network"));
+  networkItem = new Item(QIcon::fromTheme("network", QIcon::fromTheme("folder-network")), tr("Network"), path);
   fm_path_unref(path);
   networkItem->setEditable(false);
   placesRoot->appendRow(networkItem);
@@ -194,12 +194,13 @@ PlacesModel::PlacesModel(QObject* parent):
 }
 
 void PlacesModel::loadBookmarks() {
-  GList* l = fm_bookmarks_get_all(bookmarks);
-  for(; l; l = l->next) {
+  GList* allBookmarks = fm_bookmarks_get_all(bookmarks);
+  for(GList* l = allBookmarks; l; l = l->next) {
     FmBookmarkItem* bm_item = (FmBookmarkItem*)l->data;
     BookmarkItem* item = new BookmarkItem(bm_item);
     bookmarksRoot->appendRow(item);
   }
+  g_list_free_full(allBookmarks, (GDestroyNotify)fm_bookmark_item_unref);
 }
 
 PlacesModel::~PlacesModel() {
