@@ -37,7 +37,8 @@ namespace PCManFM {
 TabPage::TabPage(FmPath* path, QWidget* parent):
     QWidget( parent),
     folder_ (NULL),
-    folderModel_(NULL) {
+    folderModel_(NULL),
+    overrideCursor_(false) {
 
   Settings& settings = static_cast<Application*>(qApp)->settings();
 
@@ -86,7 +87,14 @@ void TabPage::freeFolder() {
 }
 
 /*static*/ void TabPage::onFolderStartLoading(FmFolder* _folder, TabPage* pThis) {
-  QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+  if(!pThis->overrideCursor_) {
+    // FIXME: sometimes FmFolder of libfm generates unpaired "start-loading" and
+    // "finish-loading" signals of uncertain reasons. This should be a bug in libfm.
+    // Until it's fixed in libfm, we need to workaround the problem here, not to
+    // override the cursor twice.
+    QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+    pThis->overrideCursor_ = true;
+  }
   qDebug("start-loading");
 #if 0
 #if FM_CHECK_VERSION(1, 0, 2) && 0 // disabled
@@ -150,13 +158,16 @@ void TabPage::freeFolder() {
 
 #endif
 
-    /* update status text */
-    QString& text = pThis->statusText_[StatusTextNormal];
-    text = pThis->formatStatusText();
-    Q_EMIT pThis->statusChanged(StatusTextNormal, text);
+  // update status text
+  QString& text = pThis->statusText_[StatusTextNormal];
+  text = pThis->formatStatusText();
+  Q_EMIT pThis->statusChanged(StatusTextNormal, text);
 
+  if(pThis->overrideCursor_) {
     QApplication::restoreOverrideCursor(); // remove busy cursor
-    qDebug("finish-loading");
+    pThis->overrideCursor_ = false;
+  }
+  qDebug("finish-loading");
 }
 
 /*static*/ FmJobErrorAction TabPage::onFolderError(FmFolder* _folder, GError* err, FmJobErrorSeverity severity, TabPage* pThis) {

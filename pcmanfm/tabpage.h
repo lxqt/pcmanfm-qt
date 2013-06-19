@@ -193,6 +193,7 @@ private:
   QString title_;
   QString statusText_[StatusTextNum];
   Fm::BrowseHistory history_; // browsing history
+  bool overrideCursor_;
 };
 
 }
