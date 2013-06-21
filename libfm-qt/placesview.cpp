@@ -21,6 +21,7 @@
 #include "placesview.h"
 #include "placesmodel.h"
 #include "mountoperation.h"
+#include "fileoperation.h"
 #include <QMenu>
 #include <QContextMenuEvent>
 #include <QHeaderView>
@@ -112,6 +113,13 @@ void PlacesView::dropEvent(QDropEvent* event) {
   QTreeView::dropEvent(event);
 }
 
+void PlacesView::onEmptyTrash() {
+  FmPathList* files = fm_path_list_new();
+  fm_path_list_push_tail(files, fm_path_get_trash());
+  Fm::FileOperation::deleteFiles(files);
+  fm_path_list_unref(files);
+}
+
 void PlacesView::onDeleteBookmark() {
   PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
   PlacesModel::BookmarkItem* item = static_cast<PlacesModel::BookmarkItem*>(action->item());
@@ -168,10 +176,20 @@ void PlacesView::onEjectVolume() {
 void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
   QModelIndex index = indexAt(event->pos());
   if(index.isValid() && index.parent().isValid()) {
-    QMenu* menu;
+    QMenu* menu = NULL;
     QAction* action;
     PlacesModel::Item* item = static_cast<PlacesModel::Item*>(model_->itemFromIndex(index));
     switch(item->type()) {
+      case PlacesModel::ItemTypePlaces: {
+        FmPath* path = item->path();
+        if(path && fm_path_equal(fm_path_get_trash(), path)) {
+          menu = new QMenu(this);
+          action = new PlacesModel::ItemAction(item, tr("Empty Trash"), menu);
+          connect(action, SIGNAL(triggered(bool)), SLOT(onEmptyTrash()));
+          menu->addAction(action);
+        }
+        break;
+      }
       case PlacesModel::ItemTypeBookmark: {
         // create context menu for bookmark item
         menu = new QMenu(this);
@@ -211,10 +229,10 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
         menu->addAction(action);
         break;
       }
-      default:
-        // QTreeView::contextMenuEvent(event);
-        return;
     }
-    menu->popup(mapToGlobal(event->pos()));
+    if(menu) {
+      menu->popup(mapToGlobal(event->pos()));
+      connect(menu, SIGNAL(aboutToHide()), menu, SLOT(deleteLater()));
+    }
   }
 }

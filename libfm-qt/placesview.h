@@ -46,6 +46,8 @@ protected Q_SLOTS:
   void onClicked(const QModelIndex & index);
   // void onMountOperationFinished(GError* error);
 
+  void onEmptyTrash();
+
   void onMountVolume();
   void onUnmountVolume();
   void onEjectVolume();
