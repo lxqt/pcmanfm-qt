@@ -21,6 +21,7 @@
 #ifndef FM_BROWSEHISTORY_H
 #define FM_BROWSEHISTORY_H
 
+#include "libfmqtglobals.h"
 #include <QVector>
 #include <libfm/fm.h>
 

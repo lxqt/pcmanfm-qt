@@ -21,6 +21,7 @@
 #ifndef BOOKMARKACTION_H
 #define BOOKMARKACTION_H
 
+#include "libfmqtglobals.h"
 #include <QAction>
 #include <libfm/fm.h>
 

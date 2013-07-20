@@ -21,6 +21,7 @@
 #ifndef FM_PLACESMODEL_H
 #define FM_PLACESMODEL_H
 
+#include "libfmqtglobals.h"
 #include <QStandardItemModel>
 #include <QStandardItem>
 #include <QList>

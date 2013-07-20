@@ -21,6 +21,7 @@
 #ifndef FM_COLORBUTTON_H
 #define FM_COLORBUTTON_H
 
+#include "libfmqtglobals.h"
 #include <QPushButton>
 #include <QColor>
 

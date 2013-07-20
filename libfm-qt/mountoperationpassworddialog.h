@@ -21,6 +21,7 @@
 #ifndef FM_MOUNTOPERATIONPASSWORDDIALOG_H
 #define FM_MOUNTOPERATIONPASSWORDDIALOG_H
 
+#include "libfmqtglobals.h"
 #include <QDialog>
 #include <gio/gio.h>
 

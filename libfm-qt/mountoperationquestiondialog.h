@@ -21,6 +21,7 @@
 #ifndef FM_MOUNTOPERATIONQUESTIONDIALOG_H
 #define FM_MOUNTOPERATIONQUESTIONDIALOG_H
 
+#include "libfmqtglobals.h"
 #include <QMessageBox>
 #include <gio/gio.h>
 

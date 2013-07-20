@@ -1,6 +1,5 @@
 /*
-    <one line to give the library's name and an idea of what it does.>
-    Copyright (C) 2013  <copyright holder> <email>
+    Copyright (C) 2012  Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -17,35 +16,15 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+#ifndef _LIBFM_QT_GLOBALS_
+#define _LIBFM_QT_GLOBALS_
 
-#ifndef FM_CACHEDFOLDERMODEL_H
-#define FM_CACHEDFOLDERMODEL_H
+#include <QtGlobal>
 
-#include "libfmqtglobals.h"
-#include "foldermodel.h"
+#ifdef LIBFM_QT_COMPILATION
+    #define LIBFM_QT_API    Q_DECL_EXPORT
+#else
+    #define LIBFM_QT_API    Q_DECL_IMPORT
+#endif
 
-namespace Fm {
-  
-class LIBFM_QT_API CachedFolderModel : public FolderModel {
-  Q_OBJECT
-public:
-  CachedFolderModel(FmFolder* folder);
-  void ref() {
-    ++refCount;
-  }
-  void unref();
-
-  static CachedFolderModel* modelFromFolder(FmFolder* folder);
-  static CachedFolderModel* modelFromPath(FmPath* path);
-
-private:
-  virtual ~CachedFolderModel();
-  void setFolder(FmFolder* folder);
-private:
-  int refCount;
-};
-
-
-}
-
-#endif // FM_CACHEDFOLDERMODEL_H
+#endif

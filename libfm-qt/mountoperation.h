@@ -21,6 +21,7 @@
 #ifndef FM_MOUNTOPERATION_H
 #define FM_MOUNTOPERATION_H
 
+#include "libfmqtglobals.h"
 #include <QWidget>
 #include <QDialog>
 #include <QEventLoop>

@@ -21,6 +21,7 @@
 #ifndef FM_FILEPROPSDIALOG_H
 #define FM_FILEPROPSDIALOG_H
 
+#include "libfmqtglobals.h"
 #include <QDialog>
 #include <QTimer>
 #include <libfm/fm.h>

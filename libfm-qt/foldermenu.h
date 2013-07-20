@@ -21,6 +21,7 @@
 #ifndef FM_FOLDERMENU_H
 #define FM_FOLDERMENU_H
 
+#include "libfmqtglobals.h"
 #include <QMenu>
 #include <libfm/fm.h>
 #include "foldermodel.h"

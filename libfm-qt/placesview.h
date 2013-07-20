@@ -21,6 +21,7 @@
 #ifndef FM_PLACESVIEW_H
 #define FM_PLACESVIEW_H
 
+#include "libfmqtglobals.h"
 #include <QTreeView>
 #include <libfm/fm.h>
 #include "placesmodel.h"

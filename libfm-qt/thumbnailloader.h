@@ -21,6 +21,7 @@
 #ifndef FM_THUMBNAILLOADER_H
 #define FM_THUMBNAILLOADER_H
 
+#include "libfmqtglobals.h"
 #include <QImage>
 #include <libfm/fm.h>
 #include <gio/gio.h>

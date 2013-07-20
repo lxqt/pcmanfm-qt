@@ -21,6 +21,7 @@
 #ifndef FM_FOLDERITEMDELEGATE_H
 #define FM_FOLDERITEMDELEGATE_H
 
+#include "libfmqtglobals.h"
 #include <QStyledItemDelegate>
 #include <QListView>
 

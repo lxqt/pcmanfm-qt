@@ -21,6 +21,7 @@
 #ifndef FM_FOLDERVIEW_H
 #define FM_FOLDERVIEW_H
 
+#include "libfmqtglobals.h"
 #include <QWidget>
 #include <QListView>
 #include <QTreeView>

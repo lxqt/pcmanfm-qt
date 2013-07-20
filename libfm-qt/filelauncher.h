@@ -21,6 +21,7 @@
 #ifndef FM_FILELAUNCHER_H
 #define FM_FILELAUNCHER_H
 
+#include "libfmqtglobals.h"
 #include <QWidget>
 #include <libfm/fm.h>
 

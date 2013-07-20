@@ -21,6 +21,7 @@
 #ifndef FM_PATHEDIT_H
 #define FM_PATHEDIT_H
 
+#include "libfmqtglobals.h"
 #include <QLineEdit>
 #include <gio/gio.h>
 

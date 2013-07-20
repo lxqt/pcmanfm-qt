@@ -21,6 +21,7 @@
 #ifndef FM_FONTBUTTON_H
 #define FM_FONTBUTTON_H
 
+#include "libfmqtglobals.h"
 #include <QPushButton>
 
 

@@ -21,6 +21,7 @@
 #ifndef FM_FOLDERMODEL_H
 #define FM_FOLDERMODEL_H
 
+#include "libfmqtglobals.h"
 #include <QAbstractListModel>
 #include <QIcon>
 #include <QImage>

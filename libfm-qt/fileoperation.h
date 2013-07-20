@@ -21,6 +21,7 @@
 #ifndef FM_FILEOPERATION_H
 #define FM_FILEOPERATION_H
 
+#include "libfmqtglobals.h"
 #include <QObject>
 #include <libfm/fm.h>
 #include "fileoperationdialog.h"

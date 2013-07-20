@@ -21,6 +21,7 @@
 #ifndef FM_DNDACTIONMENU_H
 #define FM_DNDACTIONMENU_H
 
+#include "libfmqtglobals.h"
 #include <QMenu>
 #include <QAction>
 

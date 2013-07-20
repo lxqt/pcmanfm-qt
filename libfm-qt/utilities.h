@@ -21,6 +21,7 @@
 #ifndef FM_UTILITIES_H
 #define FM_UTILITIES_H
 
+#include "libfmqtglobals.h"
 #include <QClipboard>
 #include <QUrl>
 #include <QList>

@@ -21,6 +21,7 @@
 #ifndef FM_EDITBOOKMARKSDIALOG_H
 #define FM_EDITBOOKMARKSDIALOG_H
 
+#include "libfmqtglobals.h"
 #include <QDialog>
 #include <libfm/fm.h>
 

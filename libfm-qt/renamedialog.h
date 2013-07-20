@@ -21,6 +21,7 @@
 #ifndef FM_RENAMEDIALOG_H
 #define FM_RENAMEDIALOG_H
 
+#include "libfmqtglobals.h"
 #include <QDialog>
 #include <libfm/fm.h>
 

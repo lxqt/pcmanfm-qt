@@ -21,6 +21,7 @@
 #ifndef FM_SIDEPANE_H
 #define FM_SIDEPANE_H
 
+#include "libfmqtglobals.h"
 #include <QWidget>
 #include <QVBoxLayout>
 #include <qvarlengtharray.h>

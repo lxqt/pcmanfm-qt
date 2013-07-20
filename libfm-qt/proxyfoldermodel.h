@@ -21,6 +21,7 @@
 #ifndef FM_PROXYFOLDERMODEL_H
 #define FM_PROXYFOLDERMODEL_H
 
+#include "libfmqtglobals.h"
 #include <QSortFilterProxyModel>
 #include <libfm/fm.h>
 #include <QList>

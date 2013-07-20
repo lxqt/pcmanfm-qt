@@ -21,6 +21,7 @@
 #ifndef FM_ICONTHEME_H
 #define FM_ICONTHEME_H
 
+#include "libfmqtglobals.h"
 #include <QIcon>
 #include "libfm/fm.h"
 

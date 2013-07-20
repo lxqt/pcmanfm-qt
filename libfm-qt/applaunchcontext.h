@@ -21,6 +21,7 @@
 #ifndef FM_APP_LAUNCHCONTEXT_H
 #define FM_APP_LAUNCHCONTEXT_H
 
+#include "libfmqtglobals.h"
 #include <gio/gio.h>
 #include <QWidget>
 
