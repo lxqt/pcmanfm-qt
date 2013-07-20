@@ -1,11 +1,12 @@
-project(pcmanfm-qt)
+# version >= 2.8.6 is needed because of CMAKE_AUTOMOC feature
 cmake_minimum_required(VERSION 2.8.6)
+project(pcmanfm-qt)
 
 # Setup common compiler flags/variables ---------------------------------------
 set(PCMANFM_VERSION "0.1")
 set(LIBFM_QT_VERSION "0.1")
 
-find_package(Qt4 4.6 REQUIRED  QtCore QtGui QtDBus)
+find_package(Qt4 4.6 REQUIRED QtCore QtGui QtDBus)
 include(${QT_USE_FILE})
 
 find_package(PkgConfig)
