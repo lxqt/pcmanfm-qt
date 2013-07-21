@@ -22,6 +22,7 @@
 #include <QCompleter>
 #include <QStringListModel>
 #include <QStringBuilder>
+#include <libfm/fm.h>
 
 using namespace Fm;
 
@@ -93,7 +94,10 @@ void PathEdit::reloadCompleter() {
   // launch a new job to do dir listing
   JobData* data = new JobData();
   data->edit = this;
-  data->dirName = g_file_new_for_commandline_arg(currentPrefix_.toLocal8Bit().constData());
+  // need to use fm_file_new_for_commandline_arg() rather than g_file_new_for_commandline_arg().
+  // otherwise, our own vfs, such as menu://, won't be loaded.
+  data->dirName = fm_file_new_for_commandline_arg(currentPrefix_.toLocal8Bit().constData());
+  qDebug("load: %s", g_file_get_uri(data->dirName));
   cancellable_ = g_cancellable_new();
   data->cancellable = (GCancellable*)g_object_ref(cancellable_);
   g_io_scheduler_push_job((GIOSchedulerJobFunc)jobFunc,
@@ -105,7 +109,8 @@ gboolean PathEdit::jobFunc(GIOSchedulerJob* job, GCancellable* cancellable, gpoi
   JobData* data = reinterpret_cast<JobData*>(user_data);
   GError *err = NULL;
   GFileEnumerator* enu = g_file_enumerate_children(data->dirName,
-                                                   G_FILE_ATTRIBUTE_STANDARD_NAME","
+                                                   // G_FILE_ATTRIBUTE_STANDARD_NAME","
+                                                   G_FILE_ATTRIBUTE_STANDARD_DISPLAY_NAME","
                                                    G_FILE_ATTRIBUTE_STANDARD_TYPE,
                                                    G_FILE_QUERY_INFO_NONE, cancellable,
                                                    &err);
@@ -115,9 +120,9 @@ gboolean PathEdit::jobFunc(GIOSchedulerJob* job, GCancellable* cancellable, gpoi
       if(inf) {
         GFileType type = g_file_info_get_file_type(inf);
         if(type == G_FILE_TYPE_DIRECTORY) {
-          const char* name = g_file_info_get_name(inf);
+          const char* name = g_file_info_get_display_name(inf);
           // FIXME: encoding conversion here?
-          data->subDirs.append(name);
+          data->subDirs.append(QString::fromUtf8(name));
         }
         g_object_unref(inf);
       }
@@ -146,6 +151,7 @@ gboolean PathEdit::onJobFinished(gpointer user_data) {
     // update the completer only if the job is not cancelled
     QStringList::iterator it;
     for(it = data->subDirs.begin(); it != data->subDirs.end(); ++it) {
+      qDebug("%s", it->toUtf8().constData());
       *it = (pThis->currentPrefix_ % *it);
     }
     pThis->model_->setStringList(data->subDirs);
