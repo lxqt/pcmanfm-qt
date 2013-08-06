@@ -83,7 +83,7 @@ QIcon IconTheme::icon(FmIcon* fmicon) {
   QIcon* picon = reinterpret_cast<QIcon*>(fm_icon_get_user_data(fmicon));
   if(!picon) { // we don't have a cache yet
     picon = new QIcon(); // what a waste!
-    *picon = convertFromGIcon(fmicon->gicon);
+    *picon = convertFromGIcon(G_ICON(fmicon));
     fm_icon_set_user_data(fmicon, picon); // store it in FmIcon
   }
   return *picon;
