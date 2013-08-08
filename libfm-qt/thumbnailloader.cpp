@@ -149,7 +149,16 @@ GObject* ThumbnailLoader::scaleImage(GObject* ori_pix, int new_width, int new_he
 
 GObject* ThumbnailLoader::rotateImage(GObject* image, int degree) {
   FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(image);
-  QImage rotated = wrapper->image.transformed(QMatrix().rotate(degree));
+  // degree values are 0, 90, 180, and 270 counterclockwise.
+  // In Qt, QMatrix does rotation counterclockwise as well.
+  // However, because the y axis of widget coordinate system is downward,
+  // the real effect of the coordinate transformation becomes clockwise rotation.
+  // So we need to use (360 - degree) here.
+  // Quote from QMatrix API doc:
+  // Note that if you apply a QMatrix to a point defined in widget 
+  // coordinates, the direction of the rotation will be clockwise because
+  // the y-axis points downwards.
+  QImage rotated = wrapper->image.transformed(QMatrix().rotate(360 - degree));
   return rotated.isNull() ? NULL : fm_qimage_wrapper_new(rotated);
 }
 
