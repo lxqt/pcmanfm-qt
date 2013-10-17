@@ -1,0 +1,7 @@
+# @ prefix means "restart the program if it crashes".
+@lxqt-globalkeysd
+@lxqt-panel
+@pcmanfm-qt --desktop --profile lxqt
+@lxqt-runner
+@lxqt-notificationd
+@lxqt-policykit
