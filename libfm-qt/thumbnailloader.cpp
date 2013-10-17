@@ -82,7 +82,7 @@ bool ThumbnailLoader::localFilesOnly_ = true;
 int ThumbnailLoader::maxThumbnailFileSize_ = 0;
 
 ThumbnailLoader::ThumbnailLoader() {
-
+  gboolean success;
   // apply the settings to libfm
   fm_config->thumbnail_local = localFilesOnly_;
   fm_config->thumbnail_max = maxThumbnailFileSize_;
@@ -95,9 +95,10 @@ ThumbnailLoader::ThumbnailLoader() {
     rotateImage,
     getImageWidth,
     getImageHeight,
-    getImageText
+    getImageText,
+    setImageText
   };
-  fm_thumbnail_loader_set_backend(&qt_backend);
+  success = fm_thumbnail_loader_set_backend(&qt_backend);
 }
 
 ThumbnailLoader::~ThumbnailLoader() {
@@ -133,10 +134,8 @@ GObject* ThumbnailLoader::readImageFromStream(GInputStream* stream, guint64 len,
   return image.isNull() ? NULL : fm_qimage_wrapper_new(image);
 }
 
-gboolean ThumbnailLoader::writeImage(GObject* image, const char* filename, const char* uri, const char* mtime) {
+gboolean ThumbnailLoader::writeImage(GObject* image, const char* filename) {
   FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(image);
-  wrapper->image.setText("tEXt::Thumb::URI", uri);
-  wrapper->image.setText("tEXt::Thumb::MTime", mtime);
   return (gboolean)wrapper->image.save(filename);
 }
 
@@ -176,6 +175,12 @@ char* ThumbnailLoader::getImageText(GObject* image, const char* key) {
   FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(image);
   QByteArray text = wrapper->image.text(key).toAscii();
   return (char*)g_memdup(text.constData(), text.length());
+}
+
+gboolean ThumbnailLoader::setImageText(GObject* image, const char* key, const char* val) {
+  FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(image);
+  wrapper->image.setText(key, val);
+  return TRUE;
 }
 
 QImage ThumbnailLoader::image(FmThumbnailLoader* result) {

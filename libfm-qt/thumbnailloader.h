@@ -80,11 +80,12 @@ public:
 private:
   static GObject* readImageFromFile(const char* filename);
   static GObject* readImageFromStream(GInputStream* stream, guint64 len, GCancellable* cancellable);
-  static gboolean writeImage(GObject* image, const char* filename, const char* uri, const char* mtime);
+  static gboolean writeImage(GObject* image, const char* filename);
   static GObject* scaleImage(GObject* ori_pix, int new_width, int new_height);
   static int getImageWidth(GObject* image);
   static int getImageHeight(GObject* image);
   static char* getImageText(GObject* image, const char* key);
+  static gboolean setImageText(GObject* image, const char* key, const char* val);
   static GObject* rotateImage(GObject* image, int degree);
 
 private:
