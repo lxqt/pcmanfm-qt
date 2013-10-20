@@ -336,6 +336,7 @@ void FolderView::setViewMode(ViewMode _mode) {
         listView->setFlow(QListView::LeftToRight);
         break;
       }
+      default:;
     }
   }
   if(view) {
