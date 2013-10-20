@@ -190,6 +190,7 @@ bool Settings::loadFile(QString filePath) {
   sidePaneMode_ = sidePaneModeFromString(settings.value("SidePaneMode").toString());
   settings.endGroup();
 
+  return true;
 }
 
 bool Settings::saveFile(QString filePath) {
@@ -260,6 +261,7 @@ bool Settings::saveFile(QString filePath) {
   // settings.setValue("SidePaneMode", sidePaneModeToString(sidePaneMode_));
   settings.endGroup();
 
+  return true;
 }
 
 static const char* bookmarkOpenMethodToString(int value) {
