@@ -280,7 +280,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     return;
   // since only detailed list mode uses QTreeView, and others 
   // all use QListView, it's wise to preserve QListView when possible.
-  if(view && mode == DetailedListMode || _mode == DetailedListMode) {
+  if(view && (mode == DetailedListMode || _mode == DetailedListMode)) {
     delete view; // FIXME: no virtual dtor?
     view = NULL;
   }
