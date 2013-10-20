@@ -532,6 +532,7 @@ QImage FolderModel::thumbnailFromIndex(const QModelIndex& index, int size) {
       }
       case FolderModelItem::ThumbnailLoaded:
         return thumbnail->image;
+      default:;
     }
   }
   return QImage();
