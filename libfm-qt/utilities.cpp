@@ -158,6 +158,7 @@ void createFile(CreateFileType type, FmPath* parentDir, FmPath* templateFile, QW
       prompt = QObject::tr("Please enter a new folder name:");
       defaultNewName = QObject::tr("New folder");
       break;
+    default:;
     }
 
 _retry:
@@ -189,6 +190,7 @@ _retry:
         g_file_make_directory(dest_gf, NULL, &err);
         break;
       }
+      default:;
     }
     g_object_unref(dest_gf);
 

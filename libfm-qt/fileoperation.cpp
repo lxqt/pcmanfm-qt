@@ -81,7 +81,7 @@ bool FileOperation::run() {
   uiTimer->start(SHOW_DLG_DELAY);
   connect(uiTimer, SIGNAL(timeout()), SLOT(onUiTimeout()));
 
-  fm_job_run_async(FM_JOB(job_));
+  return fm_job_run_async(FM_JOB(job_));
 }
 
 void FileOperation::onUiTimeout() {

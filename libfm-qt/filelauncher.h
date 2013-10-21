@@ -34,7 +34,7 @@ public:
   static bool launch(QWidget* parent, GList* file_infos);
   static bool launch(QWidget* parent, FmFileInfoList* file_infos) {
     GList* fileList = fm_file_info_list_peek_head_link(file_infos);
-    Fm::FileLauncher::launch(NULL, fileList);
+    return Fm::FileLauncher::launch(NULL, fileList);
   }
 
 protected:
