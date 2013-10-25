@@ -75,7 +75,9 @@ target_link_libraries(fm-qt
 # set libtool soname
 set_target_properties(
   fm-qt
-  PROPERTIES SOVERSION "0.0.0"
+  PROPERTIES 
+  VERSION "0.1.0"
+  SOVERSION "0"
 )
 
 # install include header files (FIXME: can we make this cleaner? should dir name be versioned?)
