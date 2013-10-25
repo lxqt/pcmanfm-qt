@@ -87,14 +87,14 @@ install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 # FIXME: only export public symbols
 
 install(TARGETS fm-qt
-  LIBRARY DESTINATION lib
+  LIBRARY DESTINATION lib${LIB_SUFFIX}
   PUBLIC_HEADER 
 )
 
 # install a pkgconfig file for libfm-qt
 configure_file(libfm-qt.pc.in libfm-qt.pc @ONLY)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libfm-qt.pc
-  DESTINATION lib/pkgconfig
+  DESTINATION lib${LIB_SUFFIX}/pkgconfig
 )
 
 # add translation for pcmanfm-qt
