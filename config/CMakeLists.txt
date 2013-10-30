@@ -1,4 +1,6 @@
 # install default config files to /etc/xdg
+install(FILES lxqt.conf	DESTINATION ${LXQT_ETC_XDG_DIR}/lxqt/)
+
 install(DIRECTORY lxsession/LXDE-Qt    DESTINATION ${LXQT_ETC_XDG_DIR}/lxsession/)
 install(DIRECTORY openbox    DESTINATION ${LXQT_SHARE_DIR}/)
 
