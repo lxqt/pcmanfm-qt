@@ -42,7 +42,7 @@ public:
   bool loadFile(QString filePath);
   bool saveFile(QString filePath);
 
-  QString profileDir(QString profile = QString());
+  QString profileDir(QString profile, bool useFallback = false);
 
   // setter/getter functions
   QString profileName() const {
