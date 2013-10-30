@@ -15,7 +15,7 @@ ConfirmDelete=true
 
 [Desktop]
 WallpaperMode=stretch
-Wallpaper=/usr/share/razor/themes/light/simple_blue_widescreen.png
+Wallpaper=@LXQT_SHARE_DIR@/themes/light/simple_blue_widescreen.png
 BgColor=#000000
 FgColor=#ffffff
 ShadowColor=#000000
