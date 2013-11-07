@@ -101,6 +101,9 @@ install(TARGETS fm-qt
 # install a pkgconfig file for libfm-qt
 configure_file(libfm-qt.pc.in libfm-qt.pc @ONLY)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libfm-qt.pc DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libfm-qt.pc
+  DESTINATION ${LIB_INSTALL_DIR}/pkgconfig
+)
 
 # add translation for pcmanfm-qt
 # See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
