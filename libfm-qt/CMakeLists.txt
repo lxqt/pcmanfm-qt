@@ -63,7 +63,7 @@ set_property(
   TARGET fm-qt APPEND
   PROPERTY COMPILE_DEFINITIONS
   LIBFM_QT_COMPILATION=1
-  LIBFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/libfm-qt"
+  LIBFM_DATA_DIR="${CMAKE_INSTALL_FULL_DATADIR}/libfm-qt"
 )
 
 target_link_libraries(fm-qt
@@ -80,22 +80,20 @@ set_target_properties(
 
 # install include header files (FIXME: can we make this cleaner? should dir name be versioned?)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-  DESTINATION include
+  DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
   FILES_MATCHING PATTERN "*.h")
 
 # FIXME: add libtool version to the lib (soname) later.
 # FIXME: only export public symbols
 
 install(TARGETS fm-qt
-  LIBRARY DESTINATION lib
+  LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
   PUBLIC_HEADER 
 )
 
 # install a pkgconfig file for libfm-qt
 configure_file(libfm-qt.pc.in libfm-qt.pc @ONLY)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libfm-qt.pc
-  DESTINATION lib/pkgconfig
-)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libfm-qt.pc DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
 
 # add translation for pcmanfm-qt
 # See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
@@ -106,7 +104,7 @@ qt4_create_translation(QM_FILES
   ${TS_FILES})
 qt4_add_translation(QM_FILES ${TS_FILES})
 add_custom_target (libfm_translations DEPENDS ${QM_FILES})
-install(FILES ${QM_FILES} DESTINATION share/libfm-qt/translations)
+install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/libfm-qt/translations)
 
 # prevent the generated files from being deleted during make cleaner
 set_directory_properties(PROPERTIES

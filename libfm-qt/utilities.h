@@ -30,15 +30,15 @@
 
 namespace Fm {
 
-FmPathList* LIBFM_QT_API pathListFromQUrls(QList<QUrl> urls);
+LIBFM_QT_API FmPathList* pathListFromQUrls(QList<QUrl> urls);
 
-void LIBFM_QT_API pasteFilesFromClipboard(FmPath* destPath, QWidget* parent = 0);
+LIBFM_QT_API void pasteFilesFromClipboard(FmPath* destPath, QWidget* parent = 0);
 
-void LIBFM_QT_API copyFilesToClipboard(FmPathList* files);
+LIBFM_QT_API void copyFilesToClipboard(FmPathList* files);
 
-void LIBFM_QT_API cutFilesToClipboard(FmPathList* files);
+LIBFM_QT_API void cutFilesToClipboard(FmPathList* files);
 
-void LIBFM_QT_API renameFile(FmPath* file, QWidget* parent = 0);
+LIBFM_QT_API void renameFile(FmPath* file, QWidget* parent = 0);
 
 enum CreateFileType {
   CreateNewFolder,
@@ -46,15 +46,15 @@ enum CreateFileType {
   CreateWithTemplate
 };
 
-void LIBFM_QT_API createFile(CreateFileType type, FmPath* parentDir, FmPath* templateFile = NULL, QWidget* parent = 0);
+LIBFM_QT_API void createFile(CreateFileType type, FmPath* parentDir, FmPath* templateFile = NULL, QWidget* parent = 0);
 
-uid_t LIBFM_QT_API uidFromName(QString name);
+LIBFM_QT_API uid_t uidFromName(QString name);
 
-QString LIBFM_QT_API uidToName(uid_t uid);
+LIBFM_QT_API QString uidToName(uid_t uid);
 
-gid_t LIBFM_QT_API gidFromName(QString name);
+LIBFM_QT_API gid_t gidFromName(QString name);
 
-QString LIBFM_QT_API gidToName(gid_t gid);
+LIBFM_QT_API QString gidToName(gid_t gid);
 
 }
 
