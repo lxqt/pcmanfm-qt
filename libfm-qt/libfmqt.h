@@ -29,22 +29,18 @@
 
 namespace Fm {
 
+struct LibFmQtData;
+
 class LIBFM_QT_API LibFmQt {
 public:
   LibFmQt();
   ~LibFmQt();
 
-  QTranslator* translator() {
-    return &translator_;
-  }
-  static LibFmQt* instance();
+  QTranslator* translator();
 
-protected:
-  
 private:
-  IconTheme* iconTheme;
-  ThumbnailLoader* thumbnailLoader;
-  QTranslator translator_;
+  LibFmQt(LibFmQt& other); // disable copy
+  LibFmQtData* d;
 };
 
 }

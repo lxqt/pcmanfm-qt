@@ -21,33 +21,56 @@
 #include "libfmqt.h"
 #include <QLocale>
 
-using namespace Fm;
+namespace Fm {
+	
+struct LibFmQtData {
+  LibFmQtData();
+  ~LibFmQtData();
 
-LibFmQt* theApp = NULL;
+  IconTheme* iconTheme;
+  ThumbnailLoader* thumbnailLoader;
+  QTranslator translator;
+  int refCount;
+};
 
-LibFmQt::LibFmQt() {
-  // TODO: only single instance is allowed, show a warning
-  Q_ASSERT(!theApp);
+static LibFmQtData* theLibFmData = NULL;
 
-  theApp = this;
+LibFmQtData::LibFmQtData(): refCount(1) {
+#if !GLIB_CHECK_VERSION(2, 36, 0)
   g_type_init();
+#endif
   fm_init(NULL);
-
   // turn on glib debug message
   // g_setenv("G_MESSAGES_DEBUG", "all", true);
-
   iconTheme = new IconTheme();
   thumbnailLoader = new ThumbnailLoader();
-  translator_.load("libfm-qt_" + QLocale::system().name(), LIBFM_DATA_DIR "/translations");
+  translator.load("libfm-qt_" + QLocale::system().name(), LIBFM_DATA_DIR "/translations");
 }
 
-LibFmQt::~LibFmQt() {
+LibFmQtData::~LibFmQtData() {
   delete iconTheme;
   delete thumbnailLoader;
   fm_finalize();
 }
 
-LibFmQt* LibFmQt::instance() {
-  return theApp;
+LibFmQt::LibFmQt() {
+  if(!theLibFmData) {
+    theLibFmData = new LibFmQtData();
+  }
+  else
+    ++theLibFmData->refCount;
+  d = theLibFmData;
 }
 
+LibFmQt::~LibFmQt() {
+  if(--d->refCount == 0) {
+    delete d;
+    theLibFmData = NULL;
+  }
+}
+
+QTranslator* LibFmQt::translator() {
+  return &d->translator;
+}
+
+} // namespace Fm
