@@ -29,6 +29,7 @@
 #include <QLocale>
 #include <QLibraryInfo>
 #include <QPixmapCache>
+#include <QFile>
 
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
@@ -412,9 +413,38 @@ void Application::preferences(QString page) {
 
 void Application::setWallpaper(QString path, QString modeString) {
   static const char* valid_wallpaper_modes[] = {"color", "stretch", "fit", "center", "tile"};
-  settings_.setWallpaper(path);
-  // settings_.setWallpaperMode();
-  // TODO: update wallpaper
+  DesktopWindow::WallpaperMode mode = settings_.wallpaperMode();
+  bool changed = false;
+
+  if(!path.isEmpty() && path != settings_.wallpaper()) {
+    if(QFile(path).exists()) {
+      settings_.setWallpaper(path);
+      changed = true;
+    }
+  }
+  // convert mode string to value
+  for(int i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
+	if(modeString == valid_wallpaper_modes[i]) {
+      mode = (DesktopWindow::WallpaperMode)i;
+      if(mode != settings_.wallpaperMode())
+		changed = true;
+      break;
+	}
+  }
+  // FIXME: support different wallpapers on different screen.
+  // update wallpaper
+  if(changed) {
+    if(enableDesktopManager_) {
+      Q_FOREACH(DesktopWindow* desktopWindow, desktopWindows_) {
+        if(!path.isEmpty())
+          desktopWindow->setWallpaperFile(path);
+        if(mode != settings_.wallpaperMode())
+          desktopWindow->setWallpaperMode(mode);
+        desktopWindow->updateWallpaper();
+      }
+      settings_.save(); // save the settings to the config file
+    }
+  }
 }
 
 void Application::onScreenResized(int num) {

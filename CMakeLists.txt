@@ -19,8 +19,18 @@ pkg_check_modules(LIBFM REQUIRED
   x11
 )
 
-# set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
-set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fvisibility=hidden -fno-exceptions")
+include(GNUInstallDirs)
+
+# do not use Qt keywords
+add_definitions(
+  -DQT_NO_KEYWORDS
+)
+
+if (CMAKE_COMPILER_IS_GNUCXX)
+  # set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
+  set(CMAKE_CXX_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions")
+endif()
+
 
 # Eanble CMake auto-moc support for Qt
 set(CMAKE_AUTOMOC TRUE)

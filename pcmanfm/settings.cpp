@@ -20,6 +20,7 @@
 
 #include "settings.h"
 #include <QDir>
+#include <QFile>
 #include <QStringBuilder>
 #include <QSettings>
 #include <QApplication>
@@ -93,18 +94,33 @@ Settings::~Settings() {
 
 }
 
-QString Settings::profileDir(QString profile) {
+QString Settings::profileDir(QString profile, bool useFallback) {
   // NOTE: it's a shame that QDesktopServices does not handle XDG_CONFIG_HOME
+  // try user-specific config file first
   QString dirName = QLatin1String(qgetenv("XDG_CONFIG_HOME"));
   if (dirName.isEmpty())
     dirName = QDir::homePath() % QLatin1String("/.config");
   dirName = dirName % "/pcmanfm-qt/" % profile;
+  QDir dir(dirName);
+
+  // if user config dir does not exist, try system-wide config dirs instead
+  if(!dir.exists() && useFallback) {
+    QString fallbackDir;
+    for(const char* const* configDir = g_get_system_config_dirs(); *configDir; ++configDir) {
+      fallbackDir = QString(*configDir) % "/pcmanfm-qt/" % profile;
+      dir.setPath(fallbackDir);
+      if(dir.exists()) {
+	dirName = fallbackDir;
+	break;
+      }
+    }
+  }
   return dirName;
 }
 
 bool Settings::load(QString profile) {
-  QString fileName = profileDir(profile) % "/settings.conf";
   profileName_ = profile;
+  QString fileName = profileDir(profile, true) % "/settings.conf";
   return loadFile(fileName);
 }
 
@@ -115,7 +131,6 @@ bool Settings::save(QString profile) {
 
 bool Settings::loadFile(QString filePath) {
   QSettings settings(filePath, QSettings::IniFormat);
-
   settings.beginGroup("System");
   fallbackIconThemeName_ = settings.value("FallbackIconThemeName").toString();
   if(fallbackIconThemeName_.isEmpty()) {
@@ -189,7 +204,7 @@ bool Settings::loadFile(QString filePath) {
   splitterPos_ = settings.value("SplitterPos", 150).toInt();
   sidePaneMode_ = sidePaneModeFromString(settings.value("SidePaneMode").toString());
   settings.endGroup();
-
+  return true;
 }
 
 bool Settings::saveFile(QString filePath) {
@@ -259,7 +274,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("SplitterPos", splitterPos_);
   // settings.setValue("SidePaneMode", sidePaneModeToString(sidePaneMode_));
   settings.endGroup();
-
+  return true;
 }
 
 static const char* bookmarkOpenMethodToString(int value) {

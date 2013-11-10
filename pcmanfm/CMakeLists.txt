@@ -67,17 +67,15 @@ target_link_libraries(pcmanfm-qt
   fm-qt
 )
 
-install(TARGETS
-  pcmanfm-qt
-  RUNTIME DESTINATION bin
-)
+install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+
 # install a desktop entry file for pcmanfm-qt and desktop preferences
 configure_file(pcmanfm-qt.desktop.in pcmanfm-qt.desktop @ONLY)
 configure_file(pcmanfm-qt-desktop-pref.desktop.in pcmanfm-qt-desktop-pref.desktop @ONLY)
 install(
   FILES ${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt.desktop
         ${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt-desktop-pref.desktop
-  DESTINATION share/applications
+  DESTINATION ${CMAKE_INSTALL_DATADIR}/applications
 )
 
 # add translation for pcmanfm-qt
@@ -89,7 +87,7 @@ qt4_create_translation(QM_FILES
   ${TS_FILES})
 qt4_add_translation(QM_FILES ${TS_FILES})
 add_custom_target (pcmanfm_translations DEPENDS ${QM_FILES})
-install(FILES ${QM_FILES} DESTINATION share/pcmanfm-qt/translations)
+install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/pcmanfm-qt/translations)
 
 # prevent the generated files from being deleted during make clean
 set_directory_properties(PROPERTIES
