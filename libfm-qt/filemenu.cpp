@@ -24,6 +24,8 @@
 #include "utilities.h"
 #include "fileoperation.h"
 #include "filelauncher.h"
+#include <libfm/fm-actions.h>
+#include <QMessageBox>
 
 using namespace Fm;
 
@@ -50,6 +52,29 @@ public:
 
 private:
   GAppInfo* appInfo_;
+};
+
+
+class CustomAction : public QAction {
+public:
+  explicit CustomAction(FmFileActionItem* item, QObject* parent = NULL):
+    QAction(QString::fromUtf8(fm_file_action_item_get_name(item)), parent),
+    item_(reinterpret_cast<FmFileActionItem*>(fm_file_action_item_ref(item))) {
+    const char* icon_name = fm_file_action_item_get_icon(item);
+    if(icon_name)
+      setIcon(QIcon::fromTheme(icon_name));
+  }
+
+  virtual ~CustomAction() {
+    fm_file_action_item_unref(item_);
+  }
+
+  FmFileActionItem* item() {
+    return item_;
+  }
+
+private:
+  FmFileActionItem* item_;
 };
 
 
@@ -143,6 +168,19 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   connect(renameAction_, SIGNAL(triggered(bool)), SLOT(onRenameTriggered()));
   addAction(renameAction_);
 
+  // DES-EMA custom actions integration
+  GList* files_list = fm_file_info_list_peek_head_link(files);
+  GList* items = fm_get_actions_for_files(files_list);
+  if(items) {
+    GList* l;
+    for(l=items; l; l=l->next) {
+      FmFileActionItem* item = FM_FILE_ACTION_ITEM(l->data);
+      addCustomActionItem(this, item);
+    }
+  }
+  g_list_foreach(items, (GFunc)fm_file_action_item_unref, NULL);
+  g_list_free(items);
+
   // archiver integration
   // FIXME: we need to modify upstream libfm to include some Qt-based archiver programs.
   if(!allVirtual_) {
@@ -177,6 +215,32 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   addAction(propertiesAction_);
 }
 
+void FileMenu::addCustomActionItem(QMenu* menu, FmFileActionItem* item) {
+  if(!item) { // separator
+    addSeparator();
+    return;
+  }
+
+  // this action is not for context menu
+  if(fm_file_action_item_is_action(item) && !(fm_file_action_item_get_target(item) & FM_FILE_ACTION_TARGET_CONTEXT))
+      return;
+
+  CustomAction* action = new CustomAction(item, menu);
+  menu->addAction(action);
+  if(fm_file_action_item_is_menu(item)) {
+    GList* subitems = fm_file_action_item_get_sub_items(item);
+    for(GList* l = subitems; l; l = l->next) {
+      FmFileActionItem* subitem = FM_FILE_ACTION_ITEM(l->data);
+      QMenu* submenu = new QMenu(menu);
+      addCustomActionItem(submenu, subitem);
+      action->setMenu(submenu);
+    }
+  }
+  else if(fm_file_action_item_is_action(item)) {
+    connect(action, SIGNAL(triggered(bool)), SLOT(onCustomActionTrigerred()));
+  }
+}
+
 void FileMenu::onOpenTriggered() {
   Fm::FileLauncher::launch(NULL, files_);
 }
@@ -195,6 +259,21 @@ void FileMenu::onApplicationTriggered() {
   fm_app_info_launch_uris(appInfo, uris, NULL, NULL);
   g_list_foreach(uris, (GFunc)g_free, NULL);
   g_list_free(uris);  
+}
+
+void FileMenu::onCustomActionTrigerred() {
+  CustomAction* action = static_cast<CustomAction*>(sender());
+  FmFileActionItem* item = action->item();
+
+  GList* files = fm_file_info_list_peek_head_link(files_);
+  char* output = NULL;
+  /* g_debug("item: %s is activated, id:%s", fm_file_action_item_get_name(item),
+      fm_file_action_item_get_id(item)); */
+  fm_file_action_item_launch(item, NULL, files, &output);
+  if(output) {
+    QMessageBox::information(this, tr("Output"), QString::fromUtf8(output));
+    g_free(output);
+  }
 }
 
 void FileMenu::onFilePropertiesTriggered() {

@@ -28,6 +28,8 @@
 
 class QAction;
 
+struct _FmFileActionItem;
+
 namespace Fm {
 
 class LIBFM_QT_API FileMenu : public QMenu {
@@ -95,11 +97,13 @@ public:
 
 protected:
   void createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd);
+  void addCustomActionItem(QMenu* menu, struct _FmFileActionItem* item);
 
 protected Q_SLOTS:
   void onOpenTriggered();
   void onFilePropertiesTriggered();
   void onApplicationTriggered();
+  void onCustomActionTrigerred();
 
   void onCompress();
   void onExtract();

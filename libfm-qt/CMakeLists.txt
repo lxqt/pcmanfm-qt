@@ -1,6 +1,7 @@
 include_directories(
   ${QT_INCLUDES}
   ${LIBFM_INCLUDE_DIRS}
+  ${LIBFM_libfm_INCLUDEDIR}/libfm # to workaround incorrect #include in fm-actions.
   ${CMAKE_CURRENT_BINARY_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${CMAKE_SOURCE_DIR}/libfm-qt
