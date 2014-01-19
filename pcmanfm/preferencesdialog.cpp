@@ -221,12 +221,15 @@ void PreferencesDialog::applyUiPage(Settings& settings) {
   if(settings.useFallbackIconTheme()) {
     // only apply the value if icon theme combo box is in use
     // the combo box is hidden when auto-detection of icon theme from xsettings works.
-    settings.setFallbackIconThemeName(ui.iconTheme->itemData(ui.iconTheme->currentIndex()).toString());
-    QIcon::setThemeName(settings.fallbackIconThemeName());
-    // update the UI by emitting a style change event
-    Q_FOREACH(QWidget *widget, QApplication::allWidgets()) {
-      QEvent event(QEvent::StyleChange);
-      QApplication::sendEvent(widget, &event);
+    QString newIconTheme = ui.iconTheme->itemData(ui.iconTheme->currentIndex()).toString();
+    if(newIconTheme != settings.fallbackIconThemeName()) {
+      settings.setFallbackIconThemeName(newIconTheme);
+      QIcon::setThemeName(settings.fallbackIconThemeName());
+      // update the UI by emitting a style change event
+      Q_FOREACH(QWidget *widget, QApplication::allWidgets()) {
+	QEvent event(QEvent::StyleChange);
+	QApplication::sendEvent(widget, &event);
+      }
     }
   }
   settings.setBigIconSize(ui.bigIconSize->itemData(ui.bigIconSize->currentIndex()).toInt());
