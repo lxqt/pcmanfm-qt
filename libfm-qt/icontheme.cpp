@@ -34,7 +34,7 @@ static void fmIconDataDestroy(gpointer data) {
 }
 
 IconTheme::IconTheme():
-  fallbackIcon(QIcon::fromTheme("unknown")) {
+  fallbackIcon(QIcon::fromTheme("application-octet-stream")) {
   // NOTE: only one instance is allowed
   Q_ASSERT(theIconTheme == NULL);
 
