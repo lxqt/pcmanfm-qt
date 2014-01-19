@@ -51,6 +51,7 @@ PlacesModelItem::PlacesModelItem(FmIcon* icon, QString title, FmPath* path):
 
 PlacesModelItem::PlacesModelItem(QIcon icon, QString title, FmPath* path):
   QStandardItem(icon, title),
+  icon_(NULL),
   path_(path ? fm_path_ref(path) : NULL),
   fileInfo_(NULL) {
 }
