@@ -49,7 +49,7 @@ void IconTheme::setThemeName(QString name) {
   QIcon::setThemeName(name);
   if(theIconTheme) {
     // set fallback icon
-    theIconTheme->fallbackIcon = QIcon::fromTheme("unknown");
+    theIconTheme->fallbackIcon = QIcon::fromTheme("application-octet-stream");
   }
 }
 
