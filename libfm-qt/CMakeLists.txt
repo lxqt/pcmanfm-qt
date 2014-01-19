@@ -29,6 +29,7 @@ set(libfm_SRCS
   applaunchcontext.cpp
   placesview.cpp
   placesmodel.cpp
+  placesmodelitem.cpp
   mountoperation.cpp
   mountoperationpassworddialog.cpp
   mountoperationquestiondialog.cpp

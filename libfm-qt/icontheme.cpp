@@ -23,6 +23,8 @@
 #include <QList>
 #include <QIcon>
 #include <QtGlobal>
+#include <QApplication>
+#include <QDesktopWidget>
 
 using namespace Fm;
 
@@ -34,22 +36,40 @@ static void fmIconDataDestroy(gpointer data) {
 }
 
 IconTheme::IconTheme():
-  fallbackIcon(QIcon::fromTheme("application-octet-stream")) {
+  currentThemeName_(QIcon::themeName()),
+  fallbackIcon_(QIcon::fromTheme("application-octet-stream")) {
   // NOTE: only one instance is allowed
   Q_ASSERT(theIconTheme == NULL);
+  Q_ASSERT(qApp != NULL); // QApplication should exists before contructing IconTheme.
 
   theIconTheme = this;
   fm_icon_set_user_data_destroy(reinterpret_cast<GDestroyNotify>(fmIconDataDestroy));
+  
+  // We need to get notified when there is a QEvent::StyleChange event so
+  // we can check if the current icon theme name is changed.
+  // To do this, we can filter QApplication object itself to intercept
+  // signals of all widgets, but this may be too inefficient.
+  // So, we only filter the events on QDesktopWidget instead.
+  qApp->desktop()->installEventFilter(this);
 }
 
 IconTheme::~IconTheme() {
 }
 
-void IconTheme::setThemeName(QString name) {
-  QIcon::setThemeName(name);
-  if(theIconTheme) {
-    // set fallback icon
-    theIconTheme->fallbackIcon = QIcon::fromTheme("application-octet-stream");
+IconTheme* IconTheme::instance() {
+  return theIconTheme;
+}
+
+// check if the icon theme name is changed and emit "changed()" signal if any change is detected.
+void IconTheme::checkChanged() {
+  if(QIcon::themeName() != currentThemeName_) {
+    // if the icon theme is changed
+    currentThemeName_ = QIcon::themeName();
+    // invalidate the cached data
+    fm_icon_reset_user_data_cache(fm_qdata_id);
+
+    fallbackIcon_ = QIcon::fromTheme("application-octet-stream");
+    Q_EMIT changed();
   }
 }
 
@@ -73,7 +93,7 @@ QIcon IconTheme::convertFromGIcon(GIcon* gicon) {
     g_free(fpath);
     return QIcon(path);
   }
-  return theIconTheme->fallbackIcon;
+  return theIconTheme->fallbackIcon_;
 }
 
 
@@ -101,6 +121,14 @@ QIcon IconTheme::icon(GIcon* gicon) {
     // we do not map GFileIcon to FmIcon deliberately.
     return convertFromGIcon(gicon);
   }
-  return theIconTheme->fallbackIcon;
+  return theIconTheme->fallbackIcon_;
 }
 
+// this method is called whenever there is an event on the QDesktopWidget object.
+bool IconTheme::eventFilter(QObject* obj, QEvent* event) {
+  // we're only interested in the StyleChange event.
+  if(event->type() == QEvent::StyleChange) {
+    checkChanged(); // check if the icon theme is changed
+  }
+  return QObject::eventFilter(obj, event);
+}

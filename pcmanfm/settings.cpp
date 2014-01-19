@@ -50,6 +50,7 @@ inline static Fm::FolderModel::ColumnId sortColumnFromString(const QString str);
 Settings::Settings():
   QObject(),
   fallbackIconThemeName_(),
+  useFallbackIconTheme_(QIcon::themeName().isEmpty()),
   bookmarkOpenMethod_(0),
   suCommand_(),
   terminalDirCommand_(),

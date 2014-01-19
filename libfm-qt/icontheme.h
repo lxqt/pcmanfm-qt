@@ -23,6 +23,7 @@
 
 #include "libfmqtglobals.h"
 #include <QIcon>
+#include <QString>
 #include "libfm/fm.h"
 
 namespace Fm {
@@ -39,19 +40,27 @@ namespace Fm {
 
 // Nice article about QPixmap from KDE: http://techbase.kde.org/Development/Tutorials/Graphics/Performance
 
-class LIBFM_QT_API IconTheme {
+class LIBFM_QT_API IconTheme: public QObject {
+  Q_OBJECT
 public:
   IconTheme();
   ~IconTheme();
 
-  static void setThemeName(QString name);
+  static IconTheme* instance();
   static QIcon icon(FmIcon* fmicon);
   static QIcon icon(GIcon* gicon);
+  
+  void checkChanged(); // check if current icon theme name is changed
+Q_SIGNALS:
+  void changed(); // emitted when the name of current icon theme is changed
 
 protected:
-
+  bool eventFilter(QObject *obj, QEvent *event);
   static QIcon convertFromGIcon(GIcon* gicon);
-  QIcon fallbackIcon;
+
+protected:
+  QIcon fallbackIcon_;
+  QString currentThemeName_;
 };
 
 }

@@ -27,117 +27,28 @@
 #include <QList>
 #include <QAction>
 #include <libfm/fm.h>
+#include "placesmodelitem.h"
 
 namespace Fm {
 
 class LIBFM_QT_API PlacesModel : public QStandardItemModel {
 Q_OBJECT
-
 friend class PlacesView;
-
 public:
-  
-  enum ItemType {
-    ItemTypePlaces = QStandardItem::UserType + 1,
-    ItemTypeVolume,
-    ItemTypeMount,
-    ItemTypeBookmark
-  };
-  
-  // model item
-  class Item : public QStandardItem {
-    public:
-      Item(FmPath* path = 0);
-      Item(QIcon icon, QString title, FmPath* path = 0);
-      Item(const char* iconName, QString title, FmPath* path = 0);
-      Item(FmIcon* icon, QString title, FmPath* path = 0);
-      Item(GIcon* gicon, QString title, FmPath* path = 0);
-      Item(QString title, FmPath* path = 0);
-      ~Item();
-
-      FmFileInfo* fileInfo() {
-        return fileInfo_;
-      }
-      void setFileInfo(FmFileInfo* fileInfo);
-
-      FmPath* path() {
-        return path_;
-      }
-      void setPath(FmPath* path);
-
-      QVariant data ( int role = Qt::UserRole + 1 ) const;
-      
-      virtual int type() const {
-        return ItemTypePlaces;
-      }
-
-    private:
-      FmPath* path_;
-      FmFileInfo* fileInfo_;
-  };
-
-  class VolumeItem : public Item {
-    public:
-      VolumeItem(GVolume* volume);
-      bool isMounted();
-      bool canEject() {
-        return g_volume_can_eject(volume_);
-      }
-      virtual int type() const {
-        return ItemTypeVolume;
-      }
-      GVolume* volume() {
-        return volume_;
-      }
-      void update();
-    private:
-      GVolume* volume_;
-  };
-
-  class MountItem : public Item {
-    public:
-      MountItem(GMount* mount);
-      virtual int type() const {
-        return ItemTypeMount;
-      }
-      GMount* mount() const {
-        return mount_;
-      }
-      void update();
-    private:
-      GMount* mount_;
-  };
-
-  class BookmarkItem : public Item {
-    public:
-      virtual int type() const {
-        return ItemTypeBookmark;
-      }
-      BookmarkItem(FmBookmarkItem* bm_item);
-      virtual ~BookmarkItem() {
-        if(bookmarkItem_)
-          fm_bookmark_item_unref(bookmarkItem_);
-      }
-      FmBookmarkItem* bookmark() const {
-        return bookmarkItem_;
-      }
-    private:
-      FmBookmarkItem* bookmarkItem_;
-  };
 
   // QAction used for popup menus
   class ItemAction : public QAction {
   public:
-    ItemAction(Item* item, QString text, QObject* parent = 0):
+    ItemAction(PlacesModelItem* item, QString text, QObject* parent = 0):
       QAction(text, parent),
       item_(item) {
     }
 
-    Item* item() {
+    PlacesModelItem* item() {
       return item_;
     }
   private:
-    Item* item_;
+    PlacesModelItem* item_;
   };
 
 public:
@@ -164,13 +75,17 @@ public:
   virtual QMimeData* mimeData(const QModelIndexList& indexes) const;
   virtual Qt::DropActions supportedDropActions() const;
   */
+
+public Q_SLOTS:
+  void updateIcons();
+
 protected:
   
-  Item* itemFromPath(FmPath* path);
-  Item* itemFromPath(QStandardItem* rootItem, FmPath* path);
-  VolumeItem* itemFromVolume(GVolume* volume);
-  MountItem* itemFromMount(GMount* mount);
-  BookmarkItem* itemFromBookmark(FmBookmarkItem* bkitem);
+  PlacesModelItem* itemFromPath(FmPath* path);
+  PlacesModelItem* itemFromPath(QStandardItem* rootItem, FmPath* path);
+  PlacesModelVolumeItem* itemFromVolume(GVolume* volume);
+  PlacesModelMountItem* itemFromMount(GMount* mount);
+  PlacesModelBookmarkItem* itemFromBookmark(FmBookmarkItem* bkitem);
 
 private:
   void loadBookmarks();
@@ -194,12 +109,12 @@ private:
   QStandardItem* placesRoot;
   QStandardItem* devicesRoot;
   QStandardItem* bookmarksRoot;
-  Item* trashItem;
-  Item* desktopItem;
-  Item* homeItem;
-  Item* computerItem;
-  Item* networkItem;
-  Item* applicationsItem;
+  PlacesModelItem* trashItem;
+  PlacesModelItem* desktopItem;
+  PlacesModelItem* homeItem;
+  PlacesModelItem* computerItem;
+  PlacesModelItem* networkItem;
+  PlacesModelItem* applicationsItem;
 };
 
 }

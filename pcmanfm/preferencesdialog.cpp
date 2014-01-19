@@ -81,7 +81,7 @@ void PreferencesDialog::initIconThemes(Settings& settings) {
   Application* app = static_cast<Application*>(qApp);
 
   // check if auto-detection is done (for example, from xsettings)
-  if(app->desktopSettings().iconThemeName().isEmpty()) { // auto-detection failed
+  if(settings.useFallbackIconTheme()) { // auto-detection failed
     // load xdg icon themes and select the current one
     QHash<QString, QString> iconThemes;
     // user customed icon themes
@@ -218,10 +218,16 @@ void PreferencesDialog::initFromSettings() {
 }
 
 void PreferencesDialog::applyUiPage(Settings& settings) {
-  if(ui.iconTheme->isVisible()) {
+  if(settings.useFallbackIconTheme()) {
     // only apply the value if icon theme combo box is in use
     // the combo box is hidden when auto-detection of icon theme from xsettings works.
     settings.setFallbackIconThemeName(ui.iconTheme->itemData(ui.iconTheme->currentIndex()).toString());
+
+    // update the UI by emitting a style change event
+    Q_FOREACH(QWidget *widget, QApplication::allWidgets()) {
+      QEvent event(QEvent::StyleChange);
+      QApplication::sendEvent(widget, &event);
+    }
   }
   settings.setBigIconSize(ui.bigIconSize->itemData(ui.bigIconSize->currentIndex()).toInt());
   settings.setSmallIconSize(ui.smallIconSize->itemData(ui.smallIconSize->currentIndex()).toInt());

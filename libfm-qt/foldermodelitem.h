@@ -27,6 +27,7 @@
 #include <QString>
 #include <QIcon>
 #include <QVector>
+#include "icontheme.h"
 
 namespace Fm {
 
@@ -54,6 +55,10 @@ public:
   Thumbnail* findThumbnail(int size);
   // void setThumbnail(int size, QImage image);
   void removeThumbnail(int size);
+
+  void updateIcon() {
+    icon = IconTheme::icon(fm_file_info_get_icon(info));
+  }
 
   QString displayName;
   QIcon icon;

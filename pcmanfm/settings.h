@@ -53,6 +53,10 @@ public:
     return fallbackIconThemeName_;
   }
   
+  bool useFallbackIconTheme() const {
+    return useFallbackIconTheme_;
+  }
+  
   void setFallbackIconThemeName(QString iconThemeName) {
     fallbackIconThemeName_ = iconThemeName;
   }
@@ -378,6 +382,7 @@ private:
 
   // PCManFM specific
   QString fallbackIconThemeName_;
+  bool useFallbackIconTheme_;
 
   int bookmarkOpenMethod_;
   QString suCommand_;
