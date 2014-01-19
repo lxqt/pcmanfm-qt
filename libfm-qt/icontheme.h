@@ -50,7 +50,7 @@ public:
   static QIcon icon(FmIcon* fmicon);
   static QIcon icon(GIcon* gicon);
   
-  void checkChanged(); // check if current icon theme name is changed
+  static void checkChanged(); // check if current icon theme name is changed
 Q_SIGNALS:
   void changed(); // emitted when the name of current icon theme is changed
 

@@ -222,7 +222,7 @@ void PreferencesDialog::applyUiPage(Settings& settings) {
     // only apply the value if icon theme combo box is in use
     // the combo box is hidden when auto-detection of icon theme from xsettings works.
     settings.setFallbackIconThemeName(ui.iconTheme->itemData(ui.iconTheme->currentIndex()).toString());
-
+    QIcon::setThemeName(settings.fallbackIconThemeName());
     // update the UI by emitting a style change event
     Q_FOREACH(QWidget *widget, QApplication::allWidgets()) {
       QEvent event(QEvent::StyleChange);

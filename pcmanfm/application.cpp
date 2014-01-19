@@ -68,8 +68,10 @@ Application::Application(int& argc, char** argv):
     // decrease the cache size to reduce memory usage
     QPixmapCache::setCacheLimit(2048);
 
-    if(settings_.useFallbackIconTheme())
+    if(settings_.useFallbackIconTheme()) {
       QIcon::setThemeName(settings_.fallbackIconThemeName());
+      Fm::IconTheme::checkChanged();
+    }
   }
   else {
     // an service of the same name is already registered.

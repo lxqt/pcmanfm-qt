@@ -62,14 +62,14 @@ IconTheme* IconTheme::instance() {
 
 // check if the icon theme name is changed and emit "changed()" signal if any change is detected.
 void IconTheme::checkChanged() {
-  if(QIcon::themeName() != currentThemeName_) {
+  if(QIcon::themeName() != theIconTheme->currentThemeName_) {
     // if the icon theme is changed
-    currentThemeName_ = QIcon::themeName();
+    theIconTheme->currentThemeName_ = QIcon::themeName();
     // invalidate the cached data
     fm_icon_reset_user_data_cache(fm_qdata_id);
 
-    fallbackIcon_ = QIcon::fromTheme("application-octet-stream");
-    Q_EMIT changed();
+    theIconTheme->fallbackIcon_ = QIcon::fromTheme("application-octet-stream");
+    Q_EMIT theIconTheme->changed();
   }
 }
 
