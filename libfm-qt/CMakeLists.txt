@@ -44,6 +44,7 @@ set(libfm_SRCS
   dndactionmenu.cpp
   editbookmarksdialog.cpp
   thumbnailloader.cpp
+  path.cpp
 )
 
 set(libfm_UIS
