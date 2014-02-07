@@ -8,4 +8,4 @@ Categories=FileManager;Utility;Core;Qt;
 Exec=@CMAKE_INSTALL_PREFIX@/bin/pcmanfm-qt %U
 StartupNotify=true
 Terminal=false
-MimeType=x-directory/normal;inode/directory;
+MimeType=inode/directory;
