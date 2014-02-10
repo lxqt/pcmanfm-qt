@@ -396,6 +396,7 @@ void Application::launchFiles(QStringList paths, bool inNewWindow) {
 
   mainWin->resize(settings_.windowWidth(), settings_.windowHeight());
   mainWin->show();
+  mainWin->raise();
 }
 
 void Application::preferences(QString page) {
