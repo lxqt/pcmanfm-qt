@@ -115,6 +115,7 @@ private:
   PlacesModelItem* computerItem;
   PlacesModelItem* networkItem;
   PlacesModelItem* applicationsItem;
+  QIcon ejectIcon_;
 };
 
 }

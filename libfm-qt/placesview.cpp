@@ -46,6 +46,15 @@ PlacesView::PlacesView(QWidget* parent):
   // headerView->setResizeMode(1, QHeaderView::Fixed);
   headerView->setStretchLastSection(false);
   expandAll();
+
+  // FIXME: is there any better way to make the first column span the whole row?
+  setFirstColumnSpanned(0, QModelIndex(), true); // places root
+  setFirstColumnSpanned(1, QModelIndex(), true); // devices root
+  setFirstColumnSpanned(2, QModelIndex(), true); // bookmarks root
+
+  // the 2nd column is for the eject buttons
+  setColumnWidth(1, 24);
+  setSelectionBehavior(QAbstractItemView::SelectRows); // FIXME: why this does not work?
 }
 
 PlacesView::~PlacesView() {
@@ -53,34 +62,73 @@ PlacesView::~PlacesView() {
     fm_path_unref(currentPath_);
 }
 
+void PlacesView::setIconSize(QSize size) {
+  QTreeView::setIconSize(size);
+  // FIXME: is there any way to let the eject button column resize according
+  // to the size of icons automatically?
+  setColumnWidth(1, size.width());
+}
+
+void PlacesView::onEjectButtonClicked(PlacesModelItem* item) {
+  // The eject button is clicked for a device item (volume or mount)
+  if(item->type() == PlacesModelItem::Volume) {
+    PlacesModelVolumeItem* volumeItem = static_cast<PlacesModelVolumeItem*>(item);
+    MountOperation* op = new MountOperation(true, this);
+    if(volumeItem->canEject()) // do eject if applicable
+      op->eject(volumeItem->volume());
+    else // otherwise, do unmount instead
+      op->unmount(volumeItem->volume());
+    op->wait();
+  }
+  else if(item->type() == PlacesModelItem::Mount) {
+    PlacesModelMountItem* mountItem = static_cast<PlacesModelMountItem*>(item);
+    MountOperation* op = new MountOperation(true, this);
+    op->unmount(mountItem->mount());
+    op->wait();
+  }
+}
+
 void PlacesView::onClicked(const QModelIndex& index) {
   if(!index.parent().isValid()) // ignore root items
     return;
 
-  PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(index));
-  if(item) {
-    FmPath* path = item->path();
-    if(!path) {
-      // check if mounting volumes is needed
-      if(item->type() == PlacesModelItem::Volume) {
-        PlacesModelVolumeItem* volumeItem = static_cast<PlacesModelVolumeItem*>(item);
-        if(!volumeItem->isMounted()) {
-          // Mount the volume
-          GVolume* volume = volumeItem->volume();
-          MountOperation* op = new MountOperation(true, this);
-          op->mount(volume);
-          // connect(op, SIGNAL(finished(GError*)), SLOT(onMountOperationFinished(GError*)));
-          // blocking here until the mount operation is finished?
+  if(index.column() == 0) {
+    PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(index));
+    if(item) {
+      FmPath* path = item->path();
+      if(!path) {
+        // check if mounting volumes is needed
+        if(item->type() == PlacesModelItem::Volume) {
+          PlacesModelVolumeItem* volumeItem = static_cast<PlacesModelVolumeItem*>(item);
+          if(!volumeItem->isMounted()) {
+            // Mount the volume
+            GVolume* volume = volumeItem->volume();
+            MountOperation* op = new MountOperation(true, this);
+            op->mount(volume);
+            // connect(op, SIGNAL(finished(GError*)), SLOT(onMountOperationFinished(GError*)));
+            // blocking here until the mount operation is finished?
 
-          // FIXME: update status of the volume after mount is finished!!
-          if(!op->wait())
-            return;
-          path = item->path();
+            // FIXME: update status of the volume after mount is finished!!
+            if(!op->wait())
+              return;
+            path = item->path();
+          }
         }
       }
+      if(path) {
+        Q_EMIT chdirRequested(0, path);
+      }
     }
-    if(path) {
-      Q_EMIT chdirRequested(0, path);
+  }
+  else if(index.column() == 1) { // column 1 contains eject buttons of the mounted devices
+    if(index.parent() == model_->devicesRoot->index()) { // this is a mounted device
+      // the eject button is clicked
+      QModelIndex itemIndex = index.sibling(index.row(), 0); // the real item is at column 0
+      PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(itemIndex));
+      if(item) {
+	// eject the volume or the mount
+	onEjectButtonClicked(item);
+      }
     }
   }
 }

@@ -21,6 +21,7 @@
 #include "placesmodel.h"
 #include "icontheme.h"
 #include <gio/gio.h>
+#include <QDebug>
 
 using namespace Fm;
 
@@ -28,7 +29,11 @@ PlacesModel::PlacesModel(QObject* parent):
   QStandardItemModel(parent),
   showTrash_(true),
   showApplications_(true),
-  showDesktop_(true) {
+  showDesktop_(true),
+  ejectIcon_(QIcon::fromTheme("media-eject")) {
+
+  setColumnCount(2);
+
   PlacesModelItem *item;
   placesRoot = new QStandardItem(tr("Places"));
   placesRoot->setEditable(false);
@@ -76,6 +81,7 @@ PlacesModel::PlacesModel(QObject* parent):
   devicesRoot = new QStandardItem(tr("Devices"));
   devicesRoot->setEditable(false);
   devicesRoot->setSelectable(false);
+  devicesRoot->setColumnCount(2);
   appendRow(devicesRoot);
 
   // volumes
@@ -94,8 +100,7 @@ PlacesModel::PlacesModel(QObject* parent):
   GList* l;
   for(l = vols; l; l = l->next) {
     GVolume* volume = G_VOLUME(l->data);
-    item = new PlacesModelVolumeItem(volume);
-    devicesRoot->appendRow(item);
+    onVolumeAdded(volumeMonitor, volume, this);
     g_object_unref(volume);
   }
   g_list_free(vols);
@@ -240,7 +245,10 @@ void PlacesModel::onMountAdded(GVolumeMonitor* monitor, GMount* mount, PlacesMod
       item->setPath(path);
       if(path)
         fm_path_unref(path);
-      // TODO: inform the view to update mount indicator
+      // update the mount indicator (eject button)
+      QStandardItem* ejectBtn = item->parent()->child(item->row(), 1);
+      Q_ASSERT(ejectBtn);
+      ejectBtn->setIcon(pThis->ejectIcon_);
     }
     g_object_unref(vol);
   }
@@ -250,7 +258,8 @@ void PlacesModel::onMountAdded(GVolumeMonitor* monitor, GMount* mount, PlacesMod
      * signals and added a device more than one. So, make a sanity check here. */
     if(!item) {
       item = new PlacesModelMountItem(mount);
-      pThis->devicesRoot->appendRow(item);
+      QStandardItem* eject_btn = new QStandardItem(pThis->ejectIcon_, "");
+      pThis->devicesRoot->appendRow(QList<QStandardItem*>() << item << eject_btn);
     }
   }
 }
@@ -263,8 +272,11 @@ void PlacesModel::onMountChanged(GVolumeMonitor* monitor, GMount* mount, PlacesM
 
 void PlacesModel::onMountRemoved(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis) {
   GVolume* vol = g_mount_get_volume(mount);
-  if(vol) // we handle volumes in volume-removed handler
+  qDebug() <<"volume umounted: " << vol;
+  if(vol) {
+    // a volume is unmounted
     g_object_unref(vol);
+  }
   else { // network mounts and others
     PlacesModelMountItem* item = pThis->itemFromMount(mount);
     if(item) {
@@ -276,17 +288,27 @@ void PlacesModel::onMountRemoved(GVolumeMonitor* monitor, GMount* mount, PlacesM
 void PlacesModel::onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis) {
   // for some unknown reasons, sometimes we get repeated volume-added
   // signals and added a device more than one. So, make a sanity check here.
-  PlacesModelVolumeItem* item = pThis->itemFromVolume(volume);
-  if(!item) {
-    item = new PlacesModelVolumeItem(volume);
-    pThis->devicesRoot->appendRow(item);
+  PlacesModelVolumeItem* volumeItem = pThis->itemFromVolume(volume);
+  if(!volumeItem) {
+    volumeItem = new PlacesModelVolumeItem(volume);
+    QStandardItem* ejectBtn = new QStandardItem();
+    if(volumeItem->isMounted())
+      ejectBtn->setIcon(pThis->ejectIcon_);
+    pThis->devicesRoot->appendRow(QList<QStandardItem*>() << volumeItem << ejectBtn);
   }
 }
 
 void PlacesModel::onVolumeChanged(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis) {
   PlacesModelVolumeItem* item = pThis->itemFromVolume(volume);
-  if(item)
+  if(item) {
     item->update();
+    if(!item->isMounted()) { // the volume is unmounted, remove the eject button if needed
+      // remove the eject button for the volume (at column 1 of the same row)
+      QStandardItem* ejectBtn = item->parent()->child(item->row(), 1);
+      Q_ASSERT(ejectBtn);
+      ejectBtn->setIcon(QIcon());
+    }
+  }
 }
 
 void PlacesModel::onVolumeRemoved(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis) {

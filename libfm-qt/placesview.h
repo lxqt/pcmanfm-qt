@@ -40,6 +40,8 @@ public:
     return currentPath_;
   }
 
+  void setIconSize(QSize size);
+  
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
 
@@ -66,6 +68,9 @@ protected:
   virtual void dropEvent(QDropEvent* event);
   virtual void contextMenuEvent(QContextMenuEvent* event);
 
+private:
+  void onEjectButtonClicked(PlacesModelItem* item);
+  
 private:
   PlacesModel* model_;
   FmPath* currentPath_;
