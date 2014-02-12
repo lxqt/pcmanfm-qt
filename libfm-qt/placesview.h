@@ -40,6 +40,15 @@ public:
     return currentPath_;
   }
 
+  // libfm-gtk compatible alias
+  FmPath* getCwd() {
+    return currentPath();
+  }
+
+  void chdir(FmPath* path) {
+    setCurrentPath(path);
+  }
+  
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
 

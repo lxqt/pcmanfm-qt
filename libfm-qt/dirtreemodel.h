@@ -26,6 +26,7 @@
 #include <QAbstractItemModel>
 #include <QIcon>
 #include <QList>
+#include <QSharedPointer>
 #include <libfm/fm.h>
 
 namespace Fm {
@@ -36,7 +37,11 @@ class LIBFM_QT_API DirTreeModel : public QAbstractItemModel {
   Q_OBJECT
 
 public:
-  DirTreeModel(QObject* parent);
+  enum Role {
+    FileInfoRole = Qt::UserRole
+  };
+
+  explicit DirTreeModel(QObject* parent);
   ~DirTreeModel();
 
   QModelIndex addRoot(FmFileInfo* root);
@@ -49,18 +54,32 @@ public:
   FmPath* filePath(const QModelIndex& index);
   const char* dispName(const QModelIndex& index);
 
-  DirTreeModelItem* itemFromIndex(const QModelIndex& index);
+  DirTreeModelItem* itemFromIndex(const QModelIndex& index) const;
+  QModelIndex indexFromItem(DirTreeModelItem* item) const;
 
   void setShowHidden(bool show_hidden);
   bool showHidden() const {
     return showHidden_;
   }
+
+  virtual QVariant data(const QModelIndex& index, int role) const;
+  virtual int columnCount(const QModelIndex& parent) const;
+  virtual int rowCount(const QModelIndex& parent) const;
+  virtual QModelIndex parent(const QModelIndex& child) const;
+  virtual QModelIndex index(int row, int column, const QModelIndex& parent) const;
+  virtual bool hasChildren(const QModelIndex& parent = QModelIndex()) const;
+
+Q_SIGNALS:
+  void rowLoaded(const QModelIndex& index);
   
-  virtual QVariant data(const QModelIndex& index, int role);
-  virtual int columnCount(const QModelIndex& parent);
-  virtual int rowCount(const QModelIndex& parent);
-  virtual QModelIndex parent(const QModelIndex& child);
-  virtual QModelIndex index(int row, int column, const QModelIndex& parent);
+private:
+  DirTreeModelItem* insertFileInfo(FmFileInfo* fi, DirTreeModelItem* parentItem = NULL);
+  int insertItem(DirTreeModelItem* newItem, DirTreeModelItem* parentItem = NULL);
+
+  static void onFolderFinishLoading(FmFolder* folder, gpointer user_data);
+  static void onFolderFilesAdded(FmFolder* folder, GSList* files, gpointer user_data);
+  static void onFolderFilesRemoved(FmFolder* folder, GSList* files, gpointer user_data);
+  static void onFolderFilesChanged(FmFolder* folder, GSList* files, gpointer user_data);
 
 private:
   bool showHidden_;

@@ -28,16 +28,20 @@
 
 namespace Fm {
 
+class DirTreeModel;
+
 class LIBFM_QT_API DirTreeModelItem {
 public:
   friend class DirTreeModel; // allow direct access of private members in DirTreeModel
 
-  DirTreeModelItem();
+  explicit DirTreeModelItem();
+  explicit DirTreeModelItem(FmFileInfo* info, DirTreeModel* model, DirTreeModelItem* parent = NULL);
   ~DirTreeModelItem();
 
 private:
   FmFileInfo* fileInfo_;
   FmFolder* folder_;
+  QString displayName_ ;
   QIcon icon_;
   bool expanded_;
   bool loaded_;
@@ -45,6 +49,7 @@ private:
   DirTreeModelItem* parent_;
   QList<DirTreeModelItem*> children_;
   QList<DirTreeModelItem*> hiddenChildren_;
+  DirTreeModel* model_;
 };
 
 }

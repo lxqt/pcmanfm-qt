@@ -24,6 +24,7 @@
 #include "libfmqtglobals.h"
 #include <QTreeView>
 #include <libfm/fm.h>
+#include "dirtreemodel.h"
 
 namespace Fm {
 
@@ -40,8 +41,30 @@ public:
 
   void setCurrentPath(FmPath* path);
 
+  // libfm-gtk compatible alias
+  FmPath* getCwd() {
+    return currentPath();
+  }
+
+  void chdir(FmPath* path) {
+    setCurrentPath(path);
+  }
+
+  virtual void setModel(QAbstractItemModel* model);
+
+protected:
+  virtual void contextMenuEvent(QContextMenuEvent* event);
+
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
+
+protected Q_SLOTS:
+  void onCollapsed(const QModelIndex & index);
+  void onExpanded(const QModelIndex & index);
+  void onActivated(const QModelIndex & index);
+  void onClicked(const QModelIndex & index);
+
+  void onCurrentRowChanged(const QModelIndex & current, const QModelIndex & previous);
 
 private:
   FmPath* currentPath_;

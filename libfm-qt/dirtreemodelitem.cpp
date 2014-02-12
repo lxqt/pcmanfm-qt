@@ -19,13 +19,38 @@
  */
 
 #include "dirtreemodelitem.h"
+#include "icontheme.h"
 
 using namespace Fm;
 
-DirTreeModelItem::DirTreeModelItem() {
+DirTreeModelItem::DirTreeModelItem():
+  model_(NULL),
+  expanded_(false),
+  loaded_(false),
+  fileInfo_(NULL),
+  parent_(NULL) {
+}
 
+DirTreeModelItem::DirTreeModelItem(FmFileInfo* info, DirTreeModel* model, DirTreeModelItem* parent):
+  model_(model),
+  expanded_(false),
+  loaded_(false),
+  fileInfo_(fm_file_info_ref(info)),
+  displayName_(QString::fromUtf8(fm_file_info_get_disp_name(info))),
+  icon_(IconTheme::icon(fm_file_info_get_icon(info))),
+  parent_(parent) {
 }
 
 DirTreeModelItem::~DirTreeModelItem() {
-
+  if(fileInfo_)
+    fm_file_info_unref(fileInfo_);
+  
+  // delete child items if needed
+  if(!children_.isEmpty()) {
+    Q_FOREACH(DirTreeModelItem* item, children_) {
+      delete item;
+    }
+  }
 }
+
+

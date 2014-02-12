@@ -23,6 +23,7 @@
 #include <QVBoxLayout>
 #include "placesview.h"
 #include "dirtreeview.h"
+#include "dirtreemodel.h"
 
 namespace Fm {
 
@@ -77,6 +78,10 @@ void SidePane::setIconSize(QSize size) {
 }
 
 void SidePane::setCurrentPath(FmPath* path) {
+  Q_ASSERT(path != NULL);
+  if(currentPath_)
+    fm_path_unref(currentPath_);
+  currentPath_ = fm_path_ref(path);
   switch(mode_) {
     case ModePlaces:
       static_cast<PlacesView*>(view_)->setCurrentPath(path);
@@ -149,36 +154,23 @@ bool SidePane::setHomeDir(const char* home_dir) {
 
 void SidePane::initDirTree() {
   // TODO
-#if 0
-  if(dir_tree_model)
-      g_object_ref(dir_tree_model);
-  else
-  {
-      FmFileInfoJob* job = fm_file_info_job_new(NULL, FM_FILE_INFO_JOB_NONE);
-      GList* l;
-      /* query FmFileInfo for home dir and root dir, and then,
-	* add them to dir tree model */
-      fm_file_info_job_add(job, fm_path_get_home());
-      fm_file_info_job_add(job, fm_path_get_root());
+  DirTreeModel* model = new DirTreeModel(view_);
+  FmFileInfoJob* job = fm_file_info_job_new(NULL, FM_FILE_INFO_JOB_NONE);
 
-      /* FIXME: maybe it's cleaner to use run_async here? */
-      GDK_THREADS_LEAVE();
-      fm_job_run_sync_with_mainloop(FM_JOB(job));
-      GDK_THREADS_ENTER();
-
-      dir_tree_model = fm_dir_tree_model_new();
-      for(l = fm_file_info_list_peek_head_link(job->file_infos); l; l = l->next)
-      {
-	  FmFileInfo* fi = FM_FILE_INFO(l->data);
-	  fm_dir_tree_model_add_root(dir_tree_model, fi, NULL);
-      }
-      g_object_unref(job);
-
-      g_object_add_weak_pointer((GObject*)dir_tree_model, (gpointer*)&dir_tree_model);
+  GList* l;
+  /* query FmFileInfo for home dir and root dir, and then,
+    * add them to dir tree model */
+  fm_file_info_job_add(job, fm_path_get_home());
+  fm_file_info_job_add(job, fm_path_get_root());
+  /* FIXME: maybe it's cleaner to use run_async here? */
+  fm_job_run_sync_with_mainloop(FM_JOB(job));
+  for(l = fm_file_info_list_peek_head_link(job->file_infos); l; l = l->next) {
+      FmFileInfo* fi = FM_FILE_INFO(l->data);
+      model->addRoot(fi);
   }
-  gtk_tree_view_set_model(GTK_TREE_VIEW(sp->view), GTK_TREE_MODEL(dir_tree_model));
-  g_object_unref(dir_tree_model);
-#endif
+  g_object_unref(job);
+
+  static_cast<DirTreeView*>(view_)->setModel(model);
 }
 
 void SidePane::setMode(Mode mode) {
@@ -198,6 +190,7 @@ void SidePane::setMode(Mode mode) {
   case ModePlaces: {
     PlacesView* placesView = new Fm::PlacesView(this);
     view_ = placesView;
+    placesView->setIconSize(iconSize_);
     placesView->setCurrentPath(currentPath_);
     connect(placesView, SIGNAL(chdirRequested(int, FmPath*)), SLOT(onPlacesViewChdirRequested(int, FmPath*)));
     break;
@@ -206,6 +199,7 @@ void SidePane::setMode(Mode mode) {
     DirTreeView* dirTreeView = new Fm::DirTreeView(this);
     view_ = dirTreeView;
     initDirTree();
+    dirTreeView->setIconSize(iconSize_);
     dirTreeView->setCurrentPath(currentPath_);
     connect(dirTreeView, SIGNAL(chdirRequested(int, FmPath*)), SLOT(onDirTreeViewChdirRequested(int, FmPath*)));
     break;

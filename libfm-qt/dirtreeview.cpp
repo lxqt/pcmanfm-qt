@@ -24,13 +24,60 @@ using namespace Fm;
 
 DirTreeView::DirTreeView(QWidget* parent):
   currentPath_(NULL) {
+
+  setSelectionMode(QAbstractItemView::SingleSelection);
+  setHeaderHidden(true);
+
+  connect(this, SIGNAL(activated(QModelIndex)), SLOT(onActivated(QModelIndex)));
+  connect(this, SIGNAL(clicked(QModelIndex)), SLOT(onClicked(QModelIndex)));
+  connect(this, SIGNAL(collapsed(QModelIndex)), SLOT(onCollapsed(QModelIndex)));
+  connect(this, SIGNAL(expanded(QModelIndex)), SLOT(onExpanded(QModelIndex)));
 }
 
 DirTreeView::~DirTreeView() {
+  if(currentPath_)
+    fm_path_unref(currentPath_);
 }
 
 void DirTreeView::setCurrentPath(FmPath* path) {
   if(currentPath_)
     fm_path_unref(currentPath_);
   currentPath_ = fm_path_ref(path);
+}
+
+void DirTreeView::setModel(QAbstractItemModel* model) {
+  Q_ASSERT(model->inherits("Fm::DirTreeModel"));
+  QTreeView::setModel(model);
+  connect(selectionModel(), SIGNAL(currentRowChanged(QModelIndex,QModelIndex)), SLOT(onCurrentRowChanged(QModelIndex,QModelIndex)));
+}
+
+
+void DirTreeView::contextMenuEvent(QContextMenuEvent* event) {
+  QAbstractScrollArea::contextMenuEvent(event);
+}
+
+void DirTreeView::onActivated(const QModelIndex& index) {
+
+}
+
+void DirTreeView::onClicked(const QModelIndex& index) {
+
+}
+
+void DirTreeView::onCollapsed(const QModelIndex& index) {
+  DirTreeModel* treeModel = static_cast<DirTreeModel*>(model());
+  if(treeModel) {
+    treeModel->unloadRow(index);
+  }
+}
+
+void DirTreeView::onExpanded(const QModelIndex& index) {
+  DirTreeModel* treeModel = static_cast<DirTreeModel*>(model());
+  if(treeModel) {
+    treeModel->loadRow(index);
+  }
+}
+
+void DirTreeView::onCurrentRowChanged(const QModelIndex& current, const QModelIndex& previous) {
+
 }
