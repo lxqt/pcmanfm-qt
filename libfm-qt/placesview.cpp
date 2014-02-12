@@ -43,7 +43,7 @@ PlacesView::PlacesView(QWidget* parent):
   setModel(model_);
   QHeaderView* headerView = header();
   headerView->setResizeMode(0, QHeaderView::Stretch);
-  // headerView->setResizeMode(1, QHeaderView::Fixed);
+  headerView->setResizeMode(1, QHeaderView::ResizeToContents);
   headerView->setStretchLastSection(false);
   expandAll();
 
@@ -53,20 +53,13 @@ PlacesView::PlacesView(QWidget* parent):
   setFirstColumnSpanned(2, QModelIndex(), true); // bookmarks root
 
   // the 2nd column is for the eject buttons
-  setColumnWidth(1, 24);
   setSelectionBehavior(QAbstractItemView::SelectRows); // FIXME: why this does not work?
+  setAllColumnsShowFocus(false);
 }
 
 PlacesView::~PlacesView() {
   if(currentPath_)
     fm_path_unref(currentPath_);
-}
-
-void PlacesView::setIconSize(QSize size) {
-  QTreeView::setIconSize(size);
-  // FIXME: is there any way to let the eject button column resize according
-  // to the size of icons automatically?
-  setColumnWidth(1, size.width());
 }
 
 void PlacesView::onEjectButtonClicked(PlacesModelItem* item) {
@@ -141,7 +134,7 @@ void PlacesView::setCurrentPath(FmPath* path) {
     // TODO: search for item with the path in model_ and select it.
     PlacesModelItem* item = model_->itemFromPath(currentPath_);
     if(item) {
-      selectionModel()->select(item->index(), QItemSelectionModel::SelectCurrent);
+      selectionModel()->select(item->index(), QItemSelectionModel::SelectCurrent|QItemSelectionModel::Rows);
     }
     else
       clearSelection();

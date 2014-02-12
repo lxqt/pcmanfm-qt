@@ -87,6 +87,8 @@ protected:
   PlacesModelMountItem* itemFromMount(GMount* mount);
   PlacesModelBookmarkItem* itemFromBookmark(FmBookmarkItem* bkitem);
 
+  virtual Qt::ItemFlags flags(const QModelIndex& index) const;
+
 private:
   void loadBookmarks();
   

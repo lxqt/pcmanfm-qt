@@ -38,6 +38,7 @@ PlacesModel::PlacesModel(QObject* parent):
   placesRoot = new QStandardItem(tr("Places"));
   placesRoot->setEditable(false);
   placesRoot->setSelectable(false);
+  placesRoot->setColumnCount(2);
   appendRow(placesRoot);
 
   homeItem = new PlacesModelItem("user-home", g_get_user_name(), fm_path_get_home());
@@ -124,6 +125,7 @@ PlacesModel::PlacesModel(QObject* parent):
   bookmarksRoot = new QStandardItem(tr("Bookmarks"));
   bookmarksRoot->setEditable(false);
   bookmarksRoot->setSelectable(false);
+  bookmarksRoot->setColumnCount(2);
   appendRow(bookmarksRoot);
   
   bookmarks = fm_bookmarks_dup();
@@ -339,6 +341,13 @@ void PlacesModel::updateIcons() {
     item->updateIcon();
   }
 }
+
+Qt::ItemFlags PlacesModel::flags(const QModelIndex& index) const {
+  if(index.column() == 1) // make 2nd column of every row selectable.
+    return Qt::ItemIsSelectable|Qt::ItemIsEnabled;
+  return QStandardItemModel::flags(index);
+}
+
 
 /*
 

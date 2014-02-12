@@ -40,8 +40,6 @@ public:
     return currentPath_;
   }
 
-  void setIconSize(QSize size);
-  
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
 
