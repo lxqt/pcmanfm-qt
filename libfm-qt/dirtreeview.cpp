@@ -19,6 +19,7 @@
  */
 
 #include "dirtreeview.h"
+#include <QHeaderView>
 
 using namespace Fm;
 
@@ -27,6 +28,7 @@ DirTreeView::DirTreeView(QWidget* parent):
 
   setSelectionMode(QAbstractItemView::SingleSelection);
   setHeaderHidden(true);
+  setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
 
   connect(this, SIGNAL(activated(QModelIndex)), SLOT(onActivated(QModelIndex)));
   connect(this, SIGNAL(clicked(QModelIndex)), SLOT(onClicked(QModelIndex)));
@@ -48,6 +50,8 @@ void DirTreeView::setCurrentPath(FmPath* path) {
 void DirTreeView::setModel(QAbstractItemModel* model) {
   Q_ASSERT(model->inherits("Fm::DirTreeModel"));
   QTreeView::setModel(model);
+  header()->setResizeMode(0, QHeaderView::ResizeToContents);
+  header()->setStretchLastSection(true);
   connect(selectionModel(), SIGNAL(currentRowChanged(QModelIndex,QModelIndex)), SLOT(onCurrentRowChanged(QModelIndex,QModelIndex)));
 }
 

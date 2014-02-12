@@ -39,6 +39,7 @@ PlacesView::PlacesView(QWidget* parent):
   
   setIconSize(QSize(24, 24));
   
+  // FIXME: we may share this model amont all views
   model_ = new PlacesModel(this);
   setModel(model_);
   QHeaderView* headerView = header();

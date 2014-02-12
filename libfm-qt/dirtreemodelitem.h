@@ -38,6 +38,17 @@ public:
   explicit DirTreeModelItem(FmFileInfo* info, DirTreeModel* model, DirTreeModelItem* parent = NULL);
   ~DirTreeModelItem();
 
+  void loadFolder();
+  void unloadFolder();
+
+private:
+  void freeFolder();
+
+  static void onFolderFinishLoading(FmFolder* folder, gpointer user_data);
+  static void onFolderFilesAdded(FmFolder* folder, GSList* files, gpointer user_data);
+  static void onFolderFilesRemoved(FmFolder* folder, GSList* files, gpointer user_data);
+  static void onFolderFilesChanged(FmFolder* folder, GSList* files, gpointer user_data);
+
 private:
   FmFileInfo* fileInfo_;
   FmFolder* folder_;

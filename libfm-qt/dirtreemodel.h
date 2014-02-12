@@ -37,6 +37,8 @@ class LIBFM_QT_API DirTreeModel : public QAbstractItemModel {
   Q_OBJECT
 
 public:
+  friend class DirTreeModelItem; // allow direct access of private members in DirTreeModelItem
+
   enum Role {
     FileInfoRole = Qt::UserRole
   };
@@ -75,11 +77,6 @@ Q_SIGNALS:
 private:
   DirTreeModelItem* insertFileInfo(FmFileInfo* fi, DirTreeModelItem* parentItem = NULL);
   int insertItem(DirTreeModelItem* newItem, DirTreeModelItem* parentItem = NULL);
-
-  static void onFolderFinishLoading(FmFolder* folder, gpointer user_data);
-  static void onFolderFilesAdded(FmFolder* folder, GSList* files, gpointer user_data);
-  static void onFolderFilesRemoved(FmFolder* folder, GSList* files, gpointer user_data);
-  static void onFolderFilesChanged(FmFolder* folder, GSList* files, gpointer user_data);
 
 private:
   bool showHidden_;
