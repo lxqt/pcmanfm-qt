@@ -22,7 +22,8 @@
 
 using namespace Fm;
 
-DirTreeView::DirTreeView(QWidget* parent) {
+DirTreeView::DirTreeView(QWidget* parent):
+  currentPath_(NULL) {
 }
 
 DirTreeView::~DirTreeView() {
