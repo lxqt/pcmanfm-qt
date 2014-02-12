@@ -7,7 +7,7 @@ set(PCMANFM_VERSION "0.1")
 set(LIBFM_QT_VERSION "0.1")
 
 # Set default installation paths
-set(LIB_INSTALL_DIR lib CACHE PATH "Installation path for libraries")
+set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for libraries")
 set(INCLUDE_INSTALL_DIR include CACHE PATH "Installation path for includes")
 
 find_package(Qt4 4.6 REQUIRED QtCore QtGui QtDBus)
