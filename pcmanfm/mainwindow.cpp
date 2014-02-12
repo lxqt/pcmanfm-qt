@@ -80,6 +80,7 @@ MainWindow::MainWindow(FmPath* path):
 
   // side pane
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
+  ui.sidePane->setMode(Fm::SidePane::ModePlaces);
   connect(ui.sidePane, SIGNAL(chdirRequested(int, FmPath*)), SLOT(onSidePaneChdirRequested(int, FmPath*)));
 
   // path bar

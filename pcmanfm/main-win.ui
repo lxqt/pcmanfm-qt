@@ -31,6 +31,9 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
      </widget>
     </item>
     <item>
@@ -64,7 +67,7 @@
      <x>0</x>
      <y>0</y>
      <width>460</width>
-     <height>21</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -191,7 +194,9 @@
   </widget>
   <action name="actionGoUp">
    <property name="icon">
-    <iconset theme="go-up"/>
+    <iconset theme="go-up">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go &amp;Up</string>
@@ -218,7 +223,9 @@
   </action>
   <action name="actionReload">
    <property name="icon">
-    <iconset theme="view-refresh"/>
+    <iconset theme="view-refresh">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Reload</string>
@@ -373,7 +380,9 @@
   </action>
   <action name="actionCut">
    <property name="icon">
-    <iconset theme="edit-cut"/>
+    <iconset theme="edit-cut">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Cu&amp;t</string>
@@ -479,7 +488,9 @@
   </action>
   <action name="actionNewTab">
    <property name="icon">
-    <iconset theme="window-new"/>
+    <iconset theme="window-new">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>New &amp;Tab</string>
@@ -493,7 +504,9 @@
   </action>
   <action name="actionGoBack">
    <property name="icon">
-    <iconset theme="go-previous"/>
+    <iconset theme="go-previous">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go &amp;Back</string>
@@ -507,7 +520,9 @@
   </action>
   <action name="actionGoForward">
    <property name="icon">
-    <iconset theme="go-next"/>
+    <iconset theme="go-next">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go &amp;Forward</string>

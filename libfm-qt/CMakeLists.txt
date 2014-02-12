@@ -30,6 +30,9 @@ set(libfm_SRCS
   placesview.cpp
   placesmodel.cpp
   placesmodelitem.cpp
+  dirtreeview.cpp
+  dirtreemodel.cpp
+  dirtreemodelitem.cpp
   mountoperation.cpp
   mountoperationpassworddialog.cpp
   mountoperationquestiondialog.cpp

@@ -22,15 +22,24 @@
 #define FM_SIDEPANE_H
 
 #include "libfmqtglobals.h"
-#include <QWidget>
-#include <QVBoxLayout>
-#include <qvarlengtharray.h>
 #include "placesview.h"
+
+class QComboBox;
+class QVBoxLayout;
+class QWidget;
 
 namespace Fm {
 
 class LIBFM_QT_API SidePane : public QWidget {
-Q_OBJECT
+  Q_OBJECT
+
+public:
+  enum Mode {
+      ModeNone = -1,
+      ModePlaces = 0,
+      ModeDirTree,
+      NumModes
+  };
 
 public:
   explicit SidePane(QWidget* parent = 0);
@@ -40,25 +49,75 @@ public:
     return iconSize_;
   }
 
-  void setIconSize(QSize size) {
-    iconSize_ = size;
-    if(placesView_)
-      placesView_->setIconSize(size);
-  }
+  void setIconSize(QSize size);
   
-  FmPath* currentPath();
+  FmPath* currentPath() {
+    return currentPath_;
+  }
+
   void setCurrentPath(FmPath* path);
+
+  void setMode(Mode mode);
+
+  Mode mode() {
+    return mode_;
+  }
+
+  QWidget* view() {
+    return view_;
+  }
+
+  const char *modeName(Mode mode);
+
+  Mode modeByName(const char *str);
+
+#if 0 // FIXME: are these APIs from libfm-qt needed?
+  int modeCount(void) {
+    return NumModes;
+  }
+
+  QString modeLabel(Mode mode);
+
+  QString modeTooltip(Mode mode);
+#endif
+
+  bool setShowHidden(bool show_hidden);
+
+  bool showHidden() {
+    return showHidden_;
+  }
+
+  bool setHomeDir(const char *home_dir);
+
+  // libfm-gtk compatible alias
+  FmPath* getCwd() {
+    return currentPath();
+  }
+
+  void chdir(FmPath* path) {
+    setCurrentPath(path);
+  }
 
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
+  void modeChanged();
 
 protected Q_SLOTS:
   void onPlacesViewChdirRequested(int type, FmPath* path);
+  void onDirTreeViewChdirRequested(int type, FmPath* path);
+  void onComboCurrentIndexChanged(int current);
+
+private:
+  void initDirTree();
   
 private:
-  PlacesView* placesView_;
+  FmPath* currentPath_;
+  QWidget* view_;
+  QComboBox* combo_;
   QVBoxLayout* verticalLayout;
   QSize iconSize_;
+  Mode mode_;
+  bool showHidden_;
 };
 
 }
