@@ -112,7 +112,7 @@ QModelIndex DirTreeModel::indexFromItem(DirTreeModelItem* item) const {
   const QList<DirTreeModelItem*>& items = item->parent_ ? item->parent_->children_ : rootItems_;
   int row = items.indexOf(item);
   if(row >= 0)
-    return createIndex(row, 1, (void*)item);
+    return createIndex(row, 0, (void*)item);
   return QModelIndex();
 }
 
@@ -132,43 +132,6 @@ DirTreeModelItem* DirTreeModel::itemFromIndex(const QModelIndex& index) const {
   return reinterpret_cast<DirTreeModelItem*>(index.internalPointer());
 }
 
-/* Add file info to parent node to proper position.
- * GtkTreePath tp is the tree path of parent node. */
-DirTreeModelItem* DirTreeModel::insertFileInfo(FmFileInfo* fi, Fm::DirTreeModelItem* parentItem) {
-  qDebug() << "insertFileInfo: " << fm_file_info_get_disp_name(fi);
-  DirTreeModelItem* item = new DirTreeModelItem(fi, this);
-  insertItem(item, parentItem);
-  return item;
-}
-
-// find a good position to insert the new item
-int DirTreeModel::insertItem(DirTreeModelItem* newItem, DirTreeModelItem* parentItem) {
-  if(!parentItem) {
-    // FIXME: handle root items
-    return -1;
-  }
-  const char* new_key = fm_file_info_get_collate_key(newItem->fileInfo_);
-  int pos = 0;
-  QList<DirTreeModelItem*>::iterator it;
-  for(it = parentItem->children_.begin(); it != parentItem->children_.end(); ++it) {
-    DirTreeModelItem* child = *it;
-    if(G_UNLIKELY(!child->fileInfo_))
-      continue;
-    const char* key = fm_file_info_get_collate_key(child->fileInfo_);
-    if(strcmp(new_key, key) <= 0)
-      break;
-    ++pos;
-  }
-  // inform the world that we're about to insert the item
-  QModelIndex parentIndex = indexFromItem(parentItem);
-  qDebug() << "parentIndex" << parentIndex << ", row:" << pos;
-  beginInsertRows(parentIndex, pos, pos);
-  newItem->parent_ = parentItem;
-  parentItem->children_.insert(it, newItem);
-  endInsertRows();
-  // Q_EMIT layoutChanged();
-  return pos;
-}
 
 void DirTreeModel::loadRow(const QModelIndex& index) {
   DirTreeModelItem* item = itemFromIndex(index);

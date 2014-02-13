@@ -56,9 +56,6 @@ public:
   FmPath* filePath(const QModelIndex& index);
   const char* dispName(const QModelIndex& index);
 
-  DirTreeModelItem* itemFromIndex(const QModelIndex& index) const;
-  QModelIndex indexFromItem(DirTreeModelItem* item) const;
-
   void setShowHidden(bool show_hidden);
   bool showHidden() const {
     return showHidden_;
@@ -72,12 +69,12 @@ public:
   virtual QModelIndex index(int row, int column, const QModelIndex& parent) const;
   virtual bool hasChildren(const QModelIndex& parent = QModelIndex()) const;
 
+private:
+  DirTreeModelItem* itemFromIndex(const QModelIndex& index) const;
+  QModelIndex indexFromItem(DirTreeModelItem* item) const;
+
 Q_SIGNALS:
   void rowLoaded(const QModelIndex& index);
-  
-private:
-  DirTreeModelItem* insertFileInfo(FmFileInfo* fi, DirTreeModelItem* parentItem = NULL);
-  int insertItem(DirTreeModelItem* newItem, DirTreeModelItem* parentItem = NULL);
 
 private:
   bool showHidden_;

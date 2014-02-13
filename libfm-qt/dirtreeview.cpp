@@ -20,6 +20,7 @@
 
 #include "dirtreeview.h"
 #include <QHeaderView>
+#include <QDebug>
 
 using namespace Fm;
 
@@ -65,7 +66,7 @@ void DirTreeView::onActivated(const QModelIndex& index) {
 }
 
 void DirTreeView::onClicked(const QModelIndex& index) {
-
+  qDebug() << "DirTreeView::onClicked: " << index;
 }
 
 void DirTreeView::onCollapsed(const QModelIndex& index) {

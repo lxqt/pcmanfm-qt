@@ -25,6 +25,7 @@
 #include <libfm/fm.h>
 #include <QIcon>
 #include <QList>
+#include <QModelIndex>
 
 namespace Fm {
 
@@ -49,6 +50,10 @@ private:
   void freeFolder();
   void addPlaceHolderChild();
   DirTreeModelItem* childFromName(const char* utf8_name, int* pos);
+
+  DirTreeModelItem* insertFileInfo(FmFileInfo* fi);
+  int insertItem(Fm::DirTreeModelItem* newItem);
+  QModelIndex index();
 
   static void onFolderFinishLoading(FmFolder* folder, gpointer user_data);
   static void onFolderFilesAdded(FmFolder* folder, GSList* files, gpointer user_data);

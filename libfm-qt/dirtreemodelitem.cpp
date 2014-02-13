@@ -21,6 +21,7 @@
 #include "dirtreemodelitem.h"
 #include "dirtreemodel.h"
 #include "icontheme.h"
+#include <QDebug>
 
 namespace Fm {
 
@@ -105,7 +106,7 @@ void DirTreeModelItem::loadFolder() {
       for(file_l = fm_file_info_list_peek_head_link(files); file_l; file_l = file_l->next) {
 	FmFileInfo* fi = FM_FILE_INFO(file_l->data);
 	if(fm_file_info_is_dir(fi)) {
-	  model_->insertFileInfo(fi, this);
+	  insertFileInfo(fi);
 	}
       }
       onFolderFinishLoading(folder_, this);
@@ -119,8 +120,7 @@ void DirTreeModelItem::unloadFolder() {
       * item to keep expander in the tree view around. */
 
     // delete all child items
-    QModelIndex index = model_->indexFromItem(this);
-    model_->beginRemoveRows(index, 0, children_.count() - 1);
+    model_->beginRemoveRows(index(), 0, children_.count() - 1);
     if(!children_.isEmpty()) {
       Q_FOREACH(DirTreeModelItem* item, children_) {
 	delete item;
@@ -138,26 +138,63 @@ void DirTreeModelItem::unloadFolder() {
   }
 }
 
+QModelIndex DirTreeModelItem::index() {
+  Q_ASSERT(model_);
+  return model_->indexFromItem(this);
+}
+
+/* Add file info to parent node to proper position.
+ * GtkTreePath tp is the tree path of parent node. */
+DirTreeModelItem* DirTreeModelItem::insertFileInfo(FmFileInfo* fi) {
+  // qDebug() << "insertFileInfo: " << fm_file_info_get_disp_name(fi);
+  DirTreeModelItem* item = new DirTreeModelItem(fi, model_);
+  insertItem(item);
+  return item;
+}
+
+// find a good position to insert the new item
+int DirTreeModelItem::insertItem(DirTreeModelItem* newItem) {
+  const char* new_key = fm_file_info_get_collate_key(newItem->fileInfo_);
+  int pos = 0;
+  QList<DirTreeModelItem*>::iterator it;
+  for(it = children_.begin(); it != children_.end(); ++it) {
+    DirTreeModelItem* child = *it;
+    if(G_UNLIKELY(!child->fileInfo_))
+      continue;
+    const char* key = fm_file_info_get_collate_key(child->fileInfo_);
+    if(strcmp(new_key, key) <= 0)
+      break;
+    ++pos;
+  }
+  // inform the world that we're about to insert the item
+  model_->beginInsertRows(index(), pos, pos);
+  newItem->parent_ = this;
+  children_.insert(it, newItem);
+  model_->endInsertRows();
+  return pos;
+}
+
+
 // FmFolder signal handlers
 
 // static
 void DirTreeModelItem::onFolderFinishLoading(FmFolder* folder, gpointer user_data) {
   DirTreeModelItem* _this = (DirTreeModelItem*)user_data;
   DirTreeModel* model = _this->model_;
-  QModelIndex index = model->indexFromItem(_this);
   /* set 'loaded' flag beforehand as callback may check it */
   _this->loaded_ = true;
+  QModelIndex index = _this->index();
 
   // remove the placeholder child if needed
   if(_this->children_.count() == 1) { // we have no other child other than the place holder item, leave it
     _this->placeHolderChild_->displayName_ = DirTreeModel::tr("<No sub folders>");
-    QModelIndex index = model->indexFromItem(_this->placeHolderChild_);
-    Q_EMIT model->dataChanged(index, index);
+    QModelIndex placeHolderIndex = _this->placeHolderChild_->index();
+    qDebug() << "placeHolderIndex: "<<placeHolderIndex;
+    Q_EMIT model->dataChanged(placeHolderIndex, placeHolderIndex);
   }
   else {
-    QModelIndex index = model->indexFromItem(_this);
     int pos = _this->children_.indexOf(_this->placeHolderChild_);
-    model->beginRemoveRows(index,pos, pos); 
+    model->beginRemoveRows(index, pos, pos); 
     _this->children_.removeAt(pos);
     delete _this->placeHolderChild_;
     model->endRemoveRows(); 
@@ -173,18 +210,14 @@ void DirTreeModelItem::onFolderFilesAdded(FmFolder* folder, GSList* files, gpoin
   DirTreeModelItem* _this = (DirTreeModelItem*)user_data;
   DirTreeModel* model = _this->model_;
 
-  // FIXME: only emit rowInserted signals does not seem to work in Qt after
-  // we insert new items in an expanded row. Ask for a re-layout here.
-  Q_EMIT model->layoutAboutToBeChanged();
   for(l = files; l; l = l->next) {
     FmFileInfo* fi = FM_FILE_INFO(l->data);
     if(fm_file_info_is_dir(fi)) { /* FIXME: maybe adding files can be allowed later */
       /* Ideally FmFolder should not emit files-added signals for files that
        * already exists. So there is no need to check for duplication here. */
-      model->insertFileInfo(fi, _this);
+      _this->insertFileInfo(fi);
     }
   }
-  Q_EMIT model->layoutChanged();
 }
 
 // static
@@ -197,8 +230,7 @@ void DirTreeModelItem::onFolderFilesRemoved(FmFolder* folder, GSList* files, gpo
     int pos;
     DirTreeModelItem* child  = _this->childFromName(fm_file_info_get_name(fi), &pos);
     if(child) {
-      QModelIndex index = model->indexFromItem(_this);
-      model->beginRemoveRows(index, pos, pos);
+      model->beginRemoveRows(_this->index(), pos, pos);
       _this->children_.removeAt(pos);
       delete child;
       model->endRemoveRows();
@@ -216,7 +248,7 @@ void DirTreeModelItem::onFolderFilesChanged(FmFolder* folder, GSList* files, gpo
     int pos;
     DirTreeModelItem* child = _this->childFromName(fm_file_info_get_name(changedFile), &pos);
     if(child) {
-      QModelIndex childIndex = model->indexFromItem(child);
+      QModelIndex childIndex = child->index();
       Q_EMIT model->dataChanged(childIndex, childIndex);
     }
   }
