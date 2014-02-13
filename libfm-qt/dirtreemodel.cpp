@@ -31,6 +31,13 @@ DirTreeModel::~DirTreeModel() {
 
 // QAbstractItemModel implementation
 
+Qt::ItemFlags DirTreeModel::flags(const QModelIndex& index) const {
+  DirTreeModelItem* item = itemFromIndex(index);
+  if(item && item->isPlaceHolder())
+    return Qt::ItemIsEnabled;
+  return QAbstractItemModel::flags(index);
+}
+
 QVariant DirTreeModel::data(const QModelIndex& index, int role) const {
   if(!index.isValid() || index.column() > 1) {
     return QVariant();
@@ -62,7 +69,6 @@ int DirTreeModel::rowCount(const QModelIndex& parent) const {
   DirTreeModelItem* item = itemFromIndex(parent);
   if(item)
     return item->children_.count();
-  return 0;
 }
 
 QModelIndex DirTreeModel::parent(const QModelIndex& child) const {
@@ -97,9 +103,8 @@ QModelIndex DirTreeModel::index(int row, int column, const QModelIndex& parent) 
 }
 
 bool DirTreeModel::hasChildren(const QModelIndex& parent) const {
-  // DirTreeModelItem* item = itemFromIndex(parent);
-  // return item ? !item->children_.isEmpty() : NULL;
-  return true;
+  DirTreeModelItem* item = itemFromIndex(parent);
+  return item ? !item->isPlaceHolder() : true;
 }
 
 QModelIndex DirTreeModel::indexFromItem(DirTreeModelItem* item) const {
@@ -156,11 +161,12 @@ int DirTreeModel::insertItem(DirTreeModelItem* newItem, DirTreeModelItem* parent
   }
   // inform the world that we're about to insert the item
   QModelIndex parentIndex = indexFromItem(parentItem);
+  qDebug() << "parentIndex" << parentIndex << ", row:" << pos;
   beginInsertRows(parentIndex, pos, pos);
   newItem->parent_ = parentItem;
   parentItem->children_.insert(it, newItem);
   endInsertRows();
-
+  // Q_EMIT layoutChanged();
   return pos;
 }
 

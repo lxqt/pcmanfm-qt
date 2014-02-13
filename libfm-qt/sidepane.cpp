@@ -21,6 +21,7 @@
 #include "sidepane.h"
 #include <QComboBox>
 #include <QVBoxLayout>
+#include <QHeaderView>
 #include "placesview.h"
 #include "dirtreeview.h"
 #include "dirtreemodel.h"

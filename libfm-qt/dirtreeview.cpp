@@ -29,6 +29,7 @@ DirTreeView::DirTreeView(QWidget* parent):
   setSelectionMode(QAbstractItemView::SingleSelection);
   setHeaderHidden(true);
   setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+  header()->setStretchLastSection(false);
 
   connect(this, SIGNAL(activated(QModelIndex)), SLOT(onActivated(QModelIndex)));
   connect(this, SIGNAL(clicked(QModelIndex)), SLOT(onClicked(QModelIndex)));
@@ -51,7 +52,6 @@ void DirTreeView::setModel(QAbstractItemModel* model) {
   Q_ASSERT(model->inherits("Fm::DirTreeModel"));
   QTreeView::setModel(model);
   header()->setResizeMode(0, QHeaderView::ResizeToContents);
-  header()->setStretchLastSection(true);
   connect(selectionModel(), SIGNAL(currentRowChanged(QModelIndex,QModelIndex)), SLOT(onCurrentRowChanged(QModelIndex,QModelIndex)));
 }
 

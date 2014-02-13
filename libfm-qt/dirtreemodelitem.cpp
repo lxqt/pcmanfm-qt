@@ -26,20 +26,27 @@ namespace Fm {
 
 DirTreeModelItem::DirTreeModelItem():
   model_(NULL),
+  folder_(NULL),
   expanded_(false),
   loaded_(false),
   fileInfo_(NULL),
+  placeHolderChild_(NULL),
   parent_(NULL) {
 }
 
 DirTreeModelItem::DirTreeModelItem(FmFileInfo* info, DirTreeModel* model, DirTreeModelItem* parent):
   model_(model),
+  folder_(NULL),
   expanded_(false),
   loaded_(false),
   fileInfo_(fm_file_info_ref(info)),
   displayName_(QString::fromUtf8(fm_file_info_get_disp_name(info))),
   icon_(IconTheme::icon(fm_file_info_get_icon(info))),
+  placeHolderChild_(NULL),
   parent_(parent) {
+
+  if(info)
+    addPlaceHolderChild();
 }
 
 DirTreeModelItem::~DirTreeModelItem() {
@@ -57,71 +64,78 @@ DirTreeModelItem::~DirTreeModelItem() {
   }
 }
 
+void DirTreeModelItem::addPlaceHolderChild() {
+  placeHolderChild_ = new DirTreeModelItem();
+  placeHolderChild_->parent_ = this;
+  placeHolderChild_->model_ = model_;
+  children_.append(placeHolderChild_);
+}
+
 void DirTreeModelItem::freeFolder() {
-  g_signal_handlers_disconnect_by_func(folder_, gpointer(onFolderFinishLoading), this);
-  g_signal_handlers_disconnect_by_func(folder_, gpointer(onFolderFilesAdded), this);
-  g_signal_handlers_disconnect_by_func(folder_, gpointer(onFolderFilesRemoved), this);
-  g_signal_handlers_disconnect_by_func(folder_, gpointer(onFolderFilesChanged), this);
-  g_object_unref(folder_);
+  if(folder_) {
+    g_signal_handlers_disconnect_by_func(folder_, gpointer(onFolderFinishLoading), this);
+    g_signal_handlers_disconnect_by_func(folder_, gpointer(onFolderFilesAdded), this);
+    g_signal_handlers_disconnect_by_func(folder_, gpointer(onFolderFilesRemoved), this);
+    g_signal_handlers_disconnect_by_func(folder_, gpointer(onFolderFilesChanged), this);
+    g_object_unref(folder_);
+    folder_ = NULL;
+  }
 }
 
 void DirTreeModelItem::loadFolder() {
   if(!expanded_) {
+    // the place holder child item
+    placeHolderChild_->displayName_ = DirTreeModel::tr("Loading...");
+
     /* dynamically load content of the folder. */
-    FmFolder* folder = fm_folder_from_path(fm_file_info_get_path(fileInfo_));
-    folder_ = folder;
+    folder_ = fm_folder_from_path(fm_file_info_get_path(fileInfo_));
     /* g_debug("fm_dir_tree_model_load_row()"); */
     /* associate the data with loaded handler */
-    g_signal_connect(folder, "finish-loading", G_CALLBACK(onFolderFinishLoading), this);
-    g_signal_connect(folder, "files-added", G_CALLBACK(onFolderFilesAdded), this);
-    g_signal_connect(folder, "files-removed", G_CALLBACK(onFolderFilesRemoved), this);
-    g_signal_connect(folder, "files-changed", G_CALLBACK(onFolderFilesChanged), this);
+    g_signal_connect(folder_, "finish-loading", G_CALLBACK(onFolderFinishLoading), this);
+    g_signal_connect(folder_, "files-added", G_CALLBACK(onFolderFilesAdded), this);
+    g_signal_connect(folder_, "files-removed", G_CALLBACK(onFolderFilesRemoved), this);
+    g_signal_connect(folder_, "files-changed", G_CALLBACK(onFolderFilesChanged), this);
 
-    if(!children_.isEmpty()) {
-      // add_place_holder_child_item(model, item_l, tp, TRUE);
-    }
     /* set 'expanded' flag beforehand as callback may check it */
     expanded_ = true;
     /* if the folder is already loaded, call "loaded" handler ourselves */
-    if(fm_folder_is_loaded(folder)) { // already loaded
+    if(fm_folder_is_loaded(folder_)) { // already loaded
       GList* file_l;
-      FmFileInfoList* files = fm_folder_get_files(folder);
+      FmFileInfoList* files = fm_folder_get_files(folder_);
       for(file_l = fm_file_info_list_peek_head_link(files); file_l; file_l = file_l->next) {
 	FmFileInfo* fi = FM_FILE_INFO(file_l->data);
 	if(fm_file_info_is_dir(fi)) {
 	  model_->insertFileInfo(fi, this);
 	}
       }
-      onFolderFinishLoading(folder, this);
+      onFolderFinishLoading(folder_, this);
     }
   }
 }
 
 void DirTreeModelItem::unloadFolder() {
-#if 0
-  GList* item_l = (GList*)it->user_data;
-  DirTreeModelItem* item = (DirTreeModelItem*)item_l->data;
-  g_return_if_fail(item != NULL);
-  if(item->expanded) { /* do some cleanup */
-    GList* had_children = item->children;
+  if(expanded_) { /* do some cleanup */
     /* remove all children, and replace them with a dummy child
       * item to keep expander in the tree view around. */
-    remove_all_children(model, item_l, tp);
 
-    /* now, GtkTreeView think that we have no child since all
-      * child items are removed. So we add a place holder child
-      * item to keep the expander around. */
-    /* don't leave expanders if not stated in config */
-    if(had_children)
-      add_place_holder_child_item(model, item_l, tp, TRUE);
+    // delete all child items
+    QModelIndex index = model_->indexFromItem(this);
+    model_->beginRemoveRows(index, 0, children_.count() - 1);
+    if(!children_.isEmpty()) {
+      Q_FOREACH(DirTreeModelItem* item, children_) {
+	delete item;
+      }
+      children_.clear();
+    }
+    model_->endRemoveRows();
+    /* now, we have no child since all child items are removed.
+     * So we add a place holder child item to keep the expander around. */
+    addPlaceHolderChild();
     /* deactivate folder since it will be reactivated on expand */
-    item_free_folder(item->folder, item_l);
-    item->folder = NULL;
-    item->expanded = FALSE;
-    item->loaded = FALSE;
-    /* g_debug("fm_dir_tree_model_unload_row()"); */
+    freeFolder();
+    expanded_ = false;
+    loaded_ = false;
   }
-#endif
 }
 
 // FmFolder signal handlers
@@ -133,24 +147,23 @@ void DirTreeModelItem::onFolderFinishLoading(FmFolder* folder, gpointer user_dat
   QModelIndex index = model->indexFromItem(_this);
   /* set 'loaded' flag beforehand as callback may check it */
   _this->loaded_ = true;
-#if 0
-  GList* place_holder_l;
-  place_holder_l = item->children;
-  /* don't leave expanders if not stated in config */
-  /* if we have loaded sub dirs, remove the place holder */
-  if(fm_config->no_child_non_expandable || !place_holder_l || place_holder_l->next) {
-    /* remove the fake placeholder item showing "Loading..." */
-    /* #3614965: crash after removing only child from existing directory:
-       after reload first item may be absent or may be not a placeholder,
-       if no_child_non_expandable is unset, place_holder_l cannot be NULL */
-    if(place_holder_l && ((DirTreeModelItem*)place_holder_l->data)->fi == NULL)
-      remove_item(model, place_holder_l);
-    /* in case if no_child_non_expandable was unset while reloading, it may
-       be still place_holder_l is NULL but let leave empty folder still */
+
+  // remove the placeholder child if needed
+  if(_this->children_.count() == 1) { // we have no other child other than the place holder item, leave it
+    _this->placeHolderChild_->displayName_ = DirTreeModel::tr("<No sub folders>");
+    QModelIndex index = model->indexFromItem(_this->placeHolderChild_);
+    Q_EMIT model->dataChanged(index, index);
   }
-  else { /* if we have no sub dirs, leave the place holder and let it show "Empty" */
+  else {
+    QModelIndex index = model->indexFromItem(_this);
+    int pos = _this->children_.indexOf(_this->placeHolderChild_);
+    model->beginRemoveRows(index,pos, pos); 
+    _this->children_.removeAt(pos);
+    delete _this->placeHolderChild_;
+    model->endRemoveRows(); 
+    _this->placeHolderChild_ = NULL;
   }
-#endif
+
   Q_EMIT model->rowLoaded(index);
 }
 
@@ -160,6 +173,9 @@ void DirTreeModelItem::onFolderFilesAdded(FmFolder* folder, GSList* files, gpoin
   DirTreeModelItem* _this = (DirTreeModelItem*)user_data;
   DirTreeModel* model = _this->model_;
 
+  // FIXME: only emit rowInserted signals does not seem to work in Qt after
+  // we insert new items in an expanded row. Ask for a re-layout here.
+  Q_EMIT model->layoutAboutToBeChanged();
   for(l = files; l; l = l->next) {
     FmFileInfo* fi = FM_FILE_INFO(l->data);
     if(fm_file_info_is_dir(fi)) { /* FIXME: maybe adding files can be allowed later */
@@ -168,63 +184,57 @@ void DirTreeModelItem::onFolderFilesAdded(FmFolder* folder, GSList* files, gpoin
       model->insertFileInfo(fi, _this);
     }
   }
+  Q_EMIT model->layoutChanged();
 }
 
 // static
 void DirTreeModelItem::onFolderFilesRemoved(FmFolder* folder, GSList* files, gpointer user_data) {
-  GSList* l;
   DirTreeModelItem* _this = (DirTreeModelItem*)user_data;
   DirTreeModel* model = _this->model_;
 
-#if 0
-  for(l = files; l; l = l->next) {
+  for(GSList* l = files; l; l = l->next) {
     FmFileInfo* fi = FM_FILE_INFO(l->data);
-    FmPath* path = fm_file_info_get_path(fi);
-    GList* rm_item_l = children_by_name(model, item->children,
-                                        fm_path_get_basename(path), NULL);
-    if(rm_item_l)
-      remove_item(model, rm_item_l);
+    int pos;
+    DirTreeModelItem* child  = _this->childFromName(fm_file_info_get_name(fi), &pos);
+    if(child) {
+      QModelIndex index = model->indexFromItem(_this);
+      model->beginRemoveRows(index, pos, pos);
+      _this->children_.removeAt(pos);
+      delete child;
+      model->endRemoveRows();
+    }
   }
-#endif
 }
 
 // static
 void DirTreeModelItem::onFolderFilesChanged(FmFolder* folder, GSList* files, gpointer user_data) {
-  GSList* l;
   DirTreeModelItem* _this = (DirTreeModelItem*)user_data;
   DirTreeModel* model = _this->model_;
 
-#if 0
-  GtkTreePath* tp = item_to_tree_path(model, item_l);
-
-  /* g_debug("files changed!!"); */
-
-  for(l = files; l; l = l->next) {
-    FmFileInfo* fi = FM_FILE_INFO(l->data);
-    int idx;
-    FmPath* path = fm_file_info_get_path(fi);
-    GList* changed_item_l = children_by_name(model, item->children,
-                            fm_path_get_basename(path), &idx);
-    /* g_debug("changed file: %s", fi->path->name); */
-    if(changed_item_l) {
-      DirTreeModelItem* changed_item = (DirTreeModelItem*)changed_item_l->data;
-      GtkTreeIter it;
-      if(changed_item->fi)
-        fm_file_info_unref(changed_item->fi);
-      changed_item->fi = fm_file_info_ref(fi);
-      /* inform gtk tree view about the change */
-      item_to_tree_iter(model, changed_item_l, &it);
-      gtk_tree_path_append_index(tp, idx);
-      gtk_tree_model_row_changed(GTK_TREE_MODEL(model), tp, &it);
-      gtk_tree_path_up(tp);
-
-      /* FIXME and TODO: check if we have sub folder */
-      /* item_queue_subdir_check(model, changed_item_l); */
+  for(GSList* l = files; l; l = l->next) {
+    FmFileInfo* changedFile = FM_FILE_INFO(l->data);
+    int pos;
+    DirTreeModelItem* child = _this->childFromName(fm_file_info_get_name(changedFile), &pos);
+    if(child) {
+      QModelIndex childIndex = model->indexFromItem(child);
+      Q_EMIT model->dataChanged(childIndex, childIndex);
     }
   }
-  gtk_tree_path_free(tp);
-#endif
 }
+
+DirTreeModelItem* DirTreeModelItem::childFromName(const char* utf8_name, int* pos) {
+  int i = 0;
+  Q_FOREACH(DirTreeModelItem* item, children_) {
+    if(item->fileInfo_ && strcmp(fm_file_info_get_name(item->fileInfo_), utf8_name) == 0) {
+      if(pos)
+	*pos = i;
+      return item;
+    }
+    ++i;
+  }
+  return NULL;
+}
+
 
 } // namespace Fm
 

@@ -40,9 +40,15 @@ public:
 
   void loadFolder();
   void unloadFolder();
+  
+  bool isPlaceHolder() {
+    return (fileInfo_ == NULL);
+  }
 
 private:
   void freeFolder();
+  void addPlaceHolderChild();
+  DirTreeModelItem* childFromName(const char* utf8_name, int* pos);
 
   static void onFolderFinishLoading(FmFolder* folder, gpointer user_data);
   static void onFolderFilesAdded(FmFolder* folder, GSList* files, gpointer user_data);
@@ -56,8 +62,8 @@ private:
   QIcon icon_;
   bool expanded_;
   bool loaded_;
-  // GList* parent; /* parent node */
   DirTreeModelItem* parent_;
+  DirTreeModelItem* placeHolderChild_;
   QList<DirTreeModelItem*> children_;
   QList<DirTreeModelItem*> hiddenChildren_;
   DirTreeModel* model_;
