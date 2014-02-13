@@ -46,6 +46,8 @@ public:
     return (fileInfo_ == NULL);
   }
 
+  void setShowHidden(bool show);
+
 private:
   void freeFolder();
   void addPlaceHolderChild();

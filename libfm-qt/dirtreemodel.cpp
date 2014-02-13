@@ -23,7 +23,8 @@
 
 namespace Fm {
 
-DirTreeModel::DirTreeModel(QObject* parent) {
+DirTreeModel::DirTreeModel(QObject* parent):
+  showHidden_(false) {
 }
 
 DirTreeModel::~DirTreeModel() {
@@ -75,10 +76,12 @@ QModelIndex DirTreeModel::parent(const QModelIndex& child) const {
   DirTreeModelItem* item = itemFromIndex(child);
   if(item && item->parent_) {
     item = item->parent_; // go to parent item
-    const QList<DirTreeModelItem*>& items = item->parent_ ? item->parent_->children_ : rootItems_;
-    int row = items.indexOf(item); // this is Q(n) and may be slow :-(
-    if(row >= 0)
-      return createIndex(row, 1, (void*)item);
+    if(item) {
+      const QList<DirTreeModelItem*>& items = item->parent_ ? item->parent_->children_ : rootItems_;
+      int row = items.indexOf(item); // this is Q(n) and may be slow :-(
+      if(row >= 0)
+	return createIndex(row, 1, (void*)item);
+    }
   }
   return QModelIndex();
 }
@@ -173,6 +176,9 @@ const char* DirTreeModel::dispName(const QModelIndex& index) {
 
 void DirTreeModel::setShowHidden(bool show_hidden) {
   showHidden_ = show_hidden;
+  Q_FOREACH(DirTreeModelItem* item, rootItems_) {
+    item->setShowHidden(show_hidden);
+  }
 }
 
 
