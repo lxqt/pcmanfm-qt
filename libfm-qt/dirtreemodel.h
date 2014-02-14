@@ -32,12 +32,14 @@
 namespace Fm {
   
 class DirTreeModelItem;
+class DirTreeView;
 
 class LIBFM_QT_API DirTreeModel : public QAbstractItemModel {
   Q_OBJECT
 
 public:
   friend class DirTreeModelItem; // allow direct access of private members in DirTreeModelItem
+  friend class DirTreeView; // allow direct access of private members in DirTreeView
 
   enum Role {
     FileInfoRole = Qt::UserRole
@@ -61,6 +63,8 @@ public:
     return showHidden_;
   }
 
+  QModelIndex indexFromPath(FmPath* path) const;
+  
   virtual Qt::ItemFlags flags(const QModelIndex& index) const;
   virtual QVariant data(const QModelIndex& index, int role) const;
   virtual int columnCount(const QModelIndex& parent) const;
@@ -70,6 +74,7 @@ public:
   virtual bool hasChildren(const QModelIndex& parent = QModelIndex()) const;
 
 private:
+  DirTreeModelItem* itemFromPath(FmPath* path) const;
   DirTreeModelItem* itemFromIndex(const QModelIndex& index) const;
   QModelIndex indexFromItem(DirTreeModelItem* item) const;
 

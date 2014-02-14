@@ -24,10 +24,13 @@
 #include "libfmqtglobals.h"
 #include <QTreeView>
 #include <libfm/fm.h>
-#include "dirtreemodel.h"
+#include "path.h"
 
 namespace Fm {
 
+class DirTreeModel;
+class DirTreeModelItem;
+  
 class LIBFM_QT_API DirTreeView : public QTreeView {
   Q_OBJECT
 
@@ -55,6 +58,10 @@ public:
 protected:
   virtual void contextMenuEvent(QContextMenuEvent* event);
 
+private:
+  void cancelPendingChdir();
+  void expandPendingPath();
+
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
 
@@ -63,11 +70,14 @@ protected Q_SLOTS:
   void onExpanded(const QModelIndex & index);
   void onActivated(const QModelIndex & index);
   void onClicked(const QModelIndex & index);
+  void onRowLoaded(const QModelIndex& index);
 
   void onCurrentRowChanged(const QModelIndex & current, const QModelIndex & previous);
 
 private:
   FmPath* currentPath_;
+  QList<Path> pathsToExpand_;
+  DirTreeModelItem* currentExpandingItem_;
 };
 
 }

@@ -21,10 +21,13 @@
 #include "dirtreeview.h"
 #include <QHeaderView>
 #include <QDebug>
+#include "dirtreemodel.h"
+#include "dirtreemodelitem.h"
 
 using namespace Fm;
 
 DirTreeView::DirTreeView(QWidget* parent):
+  currentExpandingItem_(NULL),
   currentPath_(NULL) {
 
   setSelectionMode(QAbstractItemView::SingleSelection);
@@ -43,17 +46,130 @@ DirTreeView::~DirTreeView() {
     fm_path_unref(currentPath_);
 }
 
+void DirTreeView::cancelPendingChdir() {
+  if(!pathsToExpand_.isEmpty()) {
+    pathsToExpand_.clear();
+    if(!currentExpandingItem_)
+      return;
+    DirTreeModel* _model = static_cast<DirTreeModel*>(model());
+    disconnect(_model, SIGNAL(rowLoaded(QModelIndex)), this, SLOT(onRowLoaded(QModelIndex)));
+    currentExpandingItem_ = NULL;
+  }
+}
+
+void DirTreeView::expandPendingPath() {
+  if(pathsToExpand_.isEmpty())
+    return;
+
+  FmPath* path = pathsToExpand_.first().data();
+  // qDebug() << "expanding: " << Path(path).displayBasename();
+  DirTreeModel* _model = static_cast<DirTreeModel*>(model());
+  DirTreeModelItem* item = _model->itemFromPath(path);
+  // qDebug() << "findItem: " << item;
+  if(item) {
+    currentExpandingItem_ = item;
+    connect(_model, SIGNAL(rowLoaded(QModelIndex)), SLOT(onRowLoaded(QModelIndex)));
+    if(item->loaded_) { // the node is already loaded
+      onRowLoaded(item->index());
+    }
+    else {
+      // _model->loadRow(item->index());
+      item->loadFolder();
+    }
+  }
+  else {
+    selectionModel()->clear();
+    /* since we never get it loaded we need to update cwd here */
+    if(currentPath_)
+      fm_path_unref(currentPath_);
+    currentPath_ = fm_path_ref(path);
+
+    cancelPendingChdir(); // FIXME: is this correct? this is not done in the gtk+ version of libfm.
+  }
+}
+
+void DirTreeView::onRowLoaded(const QModelIndex& index) {
+  DirTreeModel* _model = static_cast<DirTreeModel*>(model());
+  if(!currentExpandingItem_)
+    return;
+  if(currentExpandingItem_ != _model->itemFromIndex(index)) {
+    return;
+  }
+  /* disconnect the handler since we only need it once */
+  disconnect(_model, SIGNAL(rowLoaded(QModelIndex)), this, SLOT(onRowLoaded(QModelIndex)));
+
+  DirTreeModelItem* item = _model->itemFromIndex(index);
+  // qDebug() << "row loaded: " << item->displayName_;
+  /* after the folder is loaded, the files should have been added to
+    * the tree model */
+  expand(index);
+
+  /* remove the expanded path from pending list */
+  pathsToExpand_.removeFirst();
+  if(pathsToExpand_.isEmpty()) {  /* this is the last one and we're done, select the item */
+    // qDebug() << "Done!";
+    selectionModel()->select(index, QItemSelectionModel::SelectCurrent|QItemSelectionModel::Clear);
+    scrollTo(index, QAbstractItemView::PositionAtCenter);
+  }
+  else { /* continue expanding next pending path */
+    expandPendingPath();
+  }
+}
+
+
 void DirTreeView::setCurrentPath(FmPath* path) {
+  DirTreeModel* _model = static_cast<DirTreeModel*>(model());
+  if(!_model)
+    return;
+  int rowCount = _model->rowCount(QModelIndex());
+  if(rowCount == 0 || fm_path_equal(currentPath_, path))
+    return;
+
   if(currentPath_)
     fm_path_unref(currentPath_);
   currentPath_ = fm_path_ref(path);
+
+  // NOTE: The content of each node is loaded on demand dynamically.
+  // So, when we ask for a chdir operation, some nodes do not exists yet.
+  // We have to wait for the loading of child nodes and continue the
+  // pending chdir operation after the child nodes become available.
+
+  // cancel previous pending tree expansion
+  cancelPendingChdir();
+
+  /* find a root item containing this path */
+  FmPath* root;
+  for(int row = 0; row < rowCount; ++row) {
+    QModelIndex index = _model->index(row, 0, QModelIndex());
+    root = _model->filePath(index);
+    if(fm_path_has_prefix(path, root))
+      break;
+    root = NULL;
+  }
+
+  if(root) { /* root item is found */
+    do { /* add path elements one by one to a list */
+      pathsToExpand_.prepend(path);
+      // qDebug() << "prepend path: " << Path(path).displayBasename();
+      if(fm_path_equal(path, root))
+        break;
+      path = fm_path_get_parent(path);
+    }
+    while(path);
+
+    expandPendingPath();
+  }
 }
 
 void DirTreeView::setModel(QAbstractItemModel* model) {
   Q_ASSERT(model->inherits("Fm::DirTreeModel"));
+
+  if(!pathsToExpand_.isEmpty()) // if a chdir request is in progress, cancel it
+    cancelPendingChdir();
+
   QTreeView::setModel(model);
   header()->setResizeMode(0, QHeaderView::ResizeToContents);
-  connect(selectionModel(), SIGNAL(currentRowChanged(QModelIndex,QModelIndex)), SLOT(onCurrentRowChanged(QModelIndex,QModelIndex)));
+  connect(selectionModel(), SIGNAL(currentRowChanged(QModelIndex, QModelIndex)), SLOT(onCurrentRowChanged(QModelIndex, QModelIndex)));
 }
 
 
@@ -66,7 +182,7 @@ void DirTreeView::onActivated(const QModelIndex& index) {
 }
 
 void DirTreeView::onClicked(const QModelIndex& index) {
-  qDebug() << "DirTreeView::onClicked: " << index;
+  // qDebug() << "DirTreeView::onClicked: " << index;
 }
 
 void DirTreeView::onCollapsed(const QModelIndex& index) {

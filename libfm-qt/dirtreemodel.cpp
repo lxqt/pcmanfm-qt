@@ -80,7 +80,7 @@ QModelIndex DirTreeModel::parent(const QModelIndex& child) const {
       const QList<DirTreeModelItem*>& items = item->parent_ ? item->parent_->children_ : rootItems_;
       int row = items.indexOf(item); // this is Q(n) and may be slow :-(
       if(row >= 0)
-	return createIndex(row, 1, (void*)item);
+	return createIndex(row, 0, (void*)item);
     }
   }
   return QModelIndex();
@@ -133,6 +133,25 @@ QModelIndex DirTreeModel::addRoot(FmFileInfo* root) {
 
 DirTreeModelItem* DirTreeModel::itemFromIndex(const QModelIndex& index) const {
   return reinterpret_cast<DirTreeModelItem*>(index.internalPointer());
+}
+
+QModelIndex DirTreeModel::indexFromPath(FmPath* path) const {
+  DirTreeModelItem* item = itemFromPath(path);
+  return item ? item->index() : QModelIndex();
+}
+
+DirTreeModelItem* DirTreeModel::itemFromPath(FmPath* path) const {
+  Q_FOREACH(DirTreeModelItem* item, rootItems_) {
+    if(item->fileInfo_ && fm_path_equal(path, fm_file_info_get_path(item->fileInfo_))) {
+      return item;
+    }
+    else {
+      DirTreeModelItem* child = item->childFromPath(path, true);
+      if(child)
+	return child;
+    }
+  }
+  return NULL;
 }
 
 

@@ -286,6 +286,24 @@ DirTreeModelItem* DirTreeModelItem::childFromName(const char* utf8_name, int* po
   return NULL;
 }
 
+DirTreeModelItem* DirTreeModelItem::childFromPath(FmPath* path, bool recursive) const {
+  Q_ASSERT(path != NULL);
+
+  Q_FOREACH(DirTreeModelItem* item, children_) {
+    // if(item->fileInfo_)
+    //  qDebug() << "child: " << QString::fromUtf8(fm_file_info_get_disp_name(item->fileInfo_));
+    if(item->fileInfo_ && fm_path_equal(fm_file_info_get_path(item->fileInfo_), path)) {
+      return item;
+    }
+    else if(recursive) {
+      DirTreeModelItem* child = item->childFromPath(path, true);
+      if(child)
+	return child;
+    }
+  }
+  return NULL;
+}
+
 void DirTreeModelItem::setShowHidden(bool show) {
   if(show) {
     // move all hidden children to visible list

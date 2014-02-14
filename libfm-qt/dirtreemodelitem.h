@@ -30,10 +30,12 @@
 namespace Fm {
 
 class DirTreeModel;
+class DirTreeView;
 
 class LIBFM_QT_API DirTreeModelItem {
 public:
   friend class DirTreeModel; // allow direct access of private members in DirTreeModel
+  friend class DirTreeView; // allow direct access of private members in DirTreeView
 
   explicit DirTreeModelItem();
   explicit DirTreeModelItem(FmFileInfo* info, DirTreeModel* model, DirTreeModelItem* parent = NULL);
@@ -52,6 +54,7 @@ private:
   void freeFolder();
   void addPlaceHolderChild();
   DirTreeModelItem* childFromName(const char* utf8_name, int* pos);
+  DirTreeModelItem* childFromPath(FmPath* path, bool recursive) const;
 
   DirTreeModelItem* insertFileInfo(FmFileInfo* fi);
   int insertItem(Fm::DirTreeModelItem* newItem);
