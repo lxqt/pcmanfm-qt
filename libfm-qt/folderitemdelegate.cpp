@@ -143,7 +143,7 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt
 
   // draw background for selected item
   QRectF boundRect = layout.boundingRect();
-  qDebug() << "bound rect: " << boundRect << "width: " << width;
+  //qDebug() << "bound rect: " << boundRect << "width: " << width;
   boundRect.setWidth(width);
   boundRect.moveTo(textRect.x() + (textRect.width() - width)/2, textRect.y());
   

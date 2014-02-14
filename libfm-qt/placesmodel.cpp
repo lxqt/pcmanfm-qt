@@ -22,6 +22,7 @@
 #include "icontheme.h"
 #include <gio/gio.h>
 #include <QDebug>
+#include <QMimeData>
 
 using namespace Fm;
 
@@ -345,21 +346,45 @@ void PlacesModel::updateIcons() {
 Qt::ItemFlags PlacesModel::flags(const QModelIndex& index) const {
   if(index.column() == 1) // make 2nd column of every row selectable.
     return Qt::ItemIsSelectable|Qt::ItemIsEnabled;
-  return QStandardItemModel::flags(index);
+  if(!index.parent().isValid()) { // this is a root item
+    return Qt::ItemIsEnabled;
+  }
+  PlacesModelItem* placesItem = static_cast<PlacesModelItem*>(itemFromIndex(index));
+  if(placesItem) {
+    if(placesItem->type() == PlacesModelItem::Bookmark)
+      return Qt::ItemIsSelectable|Qt::ItemIsEnabled|Qt::ItemIsDropEnabled|Qt::ItemIsDragEnabled;
+  }
+  return Qt::ItemIsSelectable|Qt::ItemIsEnabled|Qt::ItemIsDropEnabled;
 }
-
-
-/*
 
 bool PlacesModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent) {
-  return QAbstractListModel::dropMimeData(data, action, row, column, parent);
+  qDebug() << "dropMimeData: " << action << "row" << row << ", column" << column << "index" << parent;
+  if(row == -1 && column == -1) { // drop on parent item itself
+    QStandardItem* item = itemFromIndex(parent);
+    if(item && item->parent()) {
+      PlacesModelItem* placesItem = static_cast<PlacesModelItem*>(item);
+      if(placesItem->path()) {
+	// TODO: copy or move the dragged files to the dir pointed by the item.
+	// qDebug() << "drop on" << item->text();
+      }
+    }
+  }
+  else { // drop on a position between items
+    PlacesModelItem* placesItem = static_cast<PlacesModelItem*>(itemFromIndex(parent));
+    if(parent.isValid()) { // we only allow dropping on blank row of bookmarks section
+      if(placesItem->type() == PlacesModelItem::Bookmark) {
+	// TODO: add the dragged paths to bookmarks at the specified row if it's a folder.
+      }
+    }
+  }
+  return false;
 }
 
-QMimeData* PlacesModel::mimeData(const QModelIndexList& indexes) const {
-  return QAbstractQStandardItemModel::mimeData(indexes);
-}
+//QMimeData* PlacesModel::mimeData(const QModelIndexList& indexes) const {
+//  return QStandardItemModel::mimeData(indexes);
+//}
 
 Qt::DropActions PlacesModel::supportedDropActions() const {
-  return QAbstractQStandardItemModel::supportedDropActions();
+  return QStandardItemModel::supportedDropActions();
 }
-*/
+

@@ -56,6 +56,9 @@ PlacesView::PlacesView(QWidget* parent):
   // the 2nd column is for the eject buttons
   setSelectionBehavior(QAbstractItemView::SelectRows); // FIXME: why this does not work?
   setAllColumnsShowFocus(false);
+  
+  setAcceptDrops(true);
+  setDragEnabled(true);
 }
 
 PlacesView::~PlacesView() {
