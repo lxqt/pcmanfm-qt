@@ -28,6 +28,7 @@
 #include "dndactionmenu.h"
 #include <QTimer>
 #include <QDate>
+#include <QDebug>
 
 using namespace Fm;
 
@@ -49,6 +50,39 @@ void FolderViewListView::mousePressEvent(QMouseEvent* event) {
   QListView::mousePressEvent(event);
   static_cast<FolderView*>(parent())->childMousePressEvent(event);
 }
+
+QModelIndex FolderViewListView::indexAt(const QPoint& point) const {
+  QModelIndex index = QListView::indexAt(point);
+  // NOTE: QListView has a severe design flaw here. It does hit-testing based on the 
+  // total bound rect of the item. The width of an item is determined by max(icon_width, text_width).
+  // So if the text label is much wider than the icon, when you click outside the icon but
+  // the point is still within the outer bound rect, the item is still selected.
+  // This results in very poor usability. Let's do precise hit-testing here.
+  // An item is hit only when the point is in the icon or text label.
+  // If the point is in the bound rectangle but outside the icon or text, it should not be selected.
+  if(viewMode() == QListView::IconMode && index.isValid()) {
+    // FIXME: this hack only improves the usability partially. We still need more precise sizeHint handling.
+    // FolderItemDelegate* delegate = static_cast<FolderItemDelegate*>(itemDelegateForColumn(FolderModel::ColumnFileName));
+    // Q_ASSERT(delegate != NULL);
+    // We use the grid size - (2, 2) as the size of the bounding rectangle of the whole item.
+    // The width of the text label hence is gridSize.width - 2, and the width and height of the icon is from iconSize().
+    QRect visRect = visualRect(index); // visibal area on the screen
+    QSize itemSize = gridSize();
+    itemSize.setWidth(itemSize.width() - 2);
+    itemSize.setHeight(itemSize.height() - 2);
+    QSize _iconSize = iconSize();
+    int textHeight = itemSize.height() - _iconSize.height();
+    if(point.y() < visRect.bottom() - textHeight) {
+      // the point is in the icon area, not over the text label
+      int iconXMargin = (itemSize.width() - _iconSize.width()) / 2;
+      if(point.x() < (visRect.left() + iconXMargin) || point.x() > (visRect.right() - iconXMargin))
+	return QModelIndex();
+    }
+    // qDebug() << "visualRect: " << visRect << "point:" << point;
+  }
+  return index;
+}
+
 
 // NOTE:
 // QListView has a problem which I consider a bug or a design flaw.
@@ -317,7 +351,7 @@ void FolderView::setViewMode(ViewMode _mode) {
       case IconMode: {
         listView->setViewMode(QListView::IconMode);
         // listView->setGridSize(QSize(iconSize.width() * 1.6, iconSize.height() * 2));
-        listView->setGridSize(QSize(80, 100));
+        listView->setGridSize(QSize(90, 110));
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
         break;

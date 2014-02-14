@@ -27,6 +27,7 @@
 #include <QTextLayout>
 #include <QTextOption>
 #include <QTextLine>
+#include <QDebug>
 
 using namespace Fm;
 
@@ -49,12 +50,18 @@ QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QMo
 
     QStyleOptionViewItemV4 opt = option;
     initStyleOption(&opt, index);
+    opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
+    opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
     const QWidget* widget = opt.widget;
     QStyle* style = widget ? widget->style() : QApplication::style();
 
-    // use grid size as size hint
+    // FIXME: there're some problems in this size hint calculation.
     QSize gridSize = view_->gridSize();
-    return QSize(gridSize.width() -2, gridSize.height() - 2);
+    QRectF textRect(0, 0, gridSize.width() - 4, gridSize.height() - opt.decorationSize.height() - 4);
+    drawText(NULL, opt, textRect); // passing NULL for painter will calculate the bounding rect only.
+    int width = qMax((int)textRect.width(), opt.decorationSize.width()) + 4;
+    int height = opt.decorationSize.height() + textRect.height() + 4;
+    return QSize(width, height);
   }
   return QStyledItemDelegate::sizeHint(option, index);
 }
@@ -87,7 +94,6 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
     painter->drawPixmap(iconPos, pixmap);
 
-    QTextLayout layout;
     QRectF textRect(opt.rect.x(), opt.rect.y() + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
     drawText(painter, opt, textRect);
     painter->restore();
@@ -97,6 +103,7 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
   }
 }
 
+// if painter is NULL, the method calculate the bounding rectangle of the text and save it to textRect
 void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt, QRectF& textRect) const {
   const QWidget* widget = opt.widget;
   QStyle* style = widget->style() ? widget->style() : qApp->style();
@@ -124,6 +131,8 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt
       QTextLine lastLine = layout.lineAt(visibleLines - 1);
       elidedText = opt.text.mid(lastLine.textStart());
       elidedText = opt.fontMetrics.elidedText(elidedText, opt.textElideMode, textRect.width());
+      if(visibleLines == 1) // this is the only visible line
+        width = textRect.width();
       break;
     }
     height += line.height();
@@ -134,8 +143,14 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt
 
   // draw background for selected item
   QRectF boundRect = layout.boundingRect();
+  qDebug() << "bound rect: " << boundRect << "width: " << width;
   boundRect.setWidth(width);
   boundRect.moveTo(textRect.x() + (textRect.width() - width)/2, textRect.y());
+  
+  if(!painter) { // no painter, calculate the bounding rect only
+    textRect = boundRect;
+    return;
+  }
 
   QPalette::ColorGroup cg = opt.state & QStyle::State_Enabled ? QPalette::Normal : QPalette::Disabled;
   if(opt.state & QStyle::State_Selected) {

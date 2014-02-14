@@ -47,6 +47,8 @@ public:
   virtual void dragMoveEvent(QDragMoveEvent* e);
   virtual void dragLeaveEvent(QDragLeaveEvent* e);
   virtual void dropEvent(QDropEvent* e);
+  
+  virtual QModelIndex indexAt(const QPoint & point) const;
 };
 
 class FolderViewTreeView : public QTreeView {
