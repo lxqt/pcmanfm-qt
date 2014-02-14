@@ -26,6 +26,8 @@
 #include <libfm/fm.h>
 #include "path.h"
 
+class QItemSelection;
+
 namespace Fm {
 
 class DirTreeModel;
@@ -68,11 +70,8 @@ Q_SIGNALS:
 protected Q_SLOTS:
   void onCollapsed(const QModelIndex & index);
   void onExpanded(const QModelIndex & index);
-  void onActivated(const QModelIndex & index);
-  void onClicked(const QModelIndex & index);
   void onRowLoaded(const QModelIndex& index);
-
-  void onCurrentRowChanged(const QModelIndex & current, const QModelIndex & previous);
+  void onSelectionChanged(const QItemSelection & selected, const QItemSelection & deselected);
 
 private:
   FmPath* currentPath_;

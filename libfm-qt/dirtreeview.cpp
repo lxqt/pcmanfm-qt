@@ -21,6 +21,7 @@
 #include "dirtreeview.h"
 #include <QHeaderView>
 #include <QDebug>
+#include <QItemSelection>
 #include "dirtreemodel.h"
 #include "dirtreemodelitem.h"
 
@@ -35,8 +36,6 @@ DirTreeView::DirTreeView(QWidget* parent):
   setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
   header()->setStretchLastSection(false);
 
-  connect(this, SIGNAL(activated(QModelIndex)), SLOT(onActivated(QModelIndex)));
-  connect(this, SIGNAL(clicked(QModelIndex)), SLOT(onClicked(QModelIndex)));
   connect(this, SIGNAL(collapsed(QModelIndex)), SLOT(onCollapsed(QModelIndex)));
   connect(this, SIGNAL(expanded(QModelIndex)), SLOT(onExpanded(QModelIndex)));
 }
@@ -109,7 +108,7 @@ void DirTreeView::onRowLoaded(const QModelIndex& index) {
   if(pathsToExpand_.isEmpty()) {  /* this is the last one and we're done, select the item */
     // qDebug() << "Done!";
     selectionModel()->select(index, QItemSelectionModel::SelectCurrent|QItemSelectionModel::Clear);
-    scrollTo(index, QAbstractItemView::PositionAtCenter);
+    scrollTo(index, QAbstractItemView::EnsureVisible);
   }
   else { /* continue expanding next pending path */
     expandPendingPath();
@@ -169,20 +168,12 @@ void DirTreeView::setModel(QAbstractItemModel* model) {
 
   QTreeView::setModel(model);
   header()->setResizeMode(0, QHeaderView::ResizeToContents);
-  connect(selectionModel(), SIGNAL(currentRowChanged(QModelIndex, QModelIndex)), SLOT(onCurrentRowChanged(QModelIndex, QModelIndex)));
+  connect(selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onSelectionChanged(QItemSelection,QItemSelection)));
 }
 
 
 void DirTreeView::contextMenuEvent(QContextMenuEvent* event) {
   QAbstractScrollArea::contextMenuEvent(event);
-}
-
-void DirTreeView::onActivated(const QModelIndex& index) {
-
-}
-
-void DirTreeView::onClicked(const QModelIndex& index) {
-  // qDebug() << "DirTreeView::onClicked: " << index;
 }
 
 void DirTreeView::onCollapsed(const QModelIndex& index) {
@@ -199,6 +190,17 @@ void DirTreeView::onExpanded(const QModelIndex& index) {
   }
 }
 
-void DirTreeView::onCurrentRowChanged(const QModelIndex& current, const QModelIndex& previous) {
-
+void DirTreeView::onSelectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
+  if(!selected.isEmpty()) {
+    QModelIndex index = selected.first().topLeft();
+    DirTreeModel* _model = static_cast<DirTreeModel*>(model());
+    FmPath* path = _model->filePath(index);
+    if(path && currentPath_ && fm_path_equal(path, currentPath_))
+      return;
+    cancelPendingChdir();
+    if(currentPath_)
+      fm_path_unref(currentPath_);
+    currentPath_ = fm_path_ref(path);
+    Q_EMIT chdirRequested(0, path);
+  }
 }
