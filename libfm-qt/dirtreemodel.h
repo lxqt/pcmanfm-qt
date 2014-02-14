@@ -56,7 +56,7 @@ public:
   QIcon icon(const QModelIndex& index);
   FmFileInfo* fileInfo(const QModelIndex& index);
   FmPath* filePath(const QModelIndex& index);
-  const char* dispName(const QModelIndex& index);
+  QString dispName(const QModelIndex& index);
 
   void setShowHidden(bool show_hidden);
   bool showHidden() const {

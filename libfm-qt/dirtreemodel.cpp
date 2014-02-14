@@ -158,13 +158,13 @@ DirTreeModelItem* DirTreeModel::itemFromPath(FmPath* path) const {
 void DirTreeModel::loadRow(const QModelIndex& index) {
   DirTreeModelItem* item = itemFromIndex(index);
   Q_ASSERT(item);
-  if(item)
+  if(item && !item->isPlaceHolder())
     item->loadFolder();
 }
 
 void DirTreeModel::unloadRow(const QModelIndex& index) {
   DirTreeModelItem* item = itemFromIndex(index);
-  if(item)
+  if(item && !item->isPlaceHolder())
     item->unloadFolder();
 }
 
@@ -185,12 +185,12 @@ FmFileInfo* DirTreeModel::fileInfo(const QModelIndex& index) {
 
 FmPath* DirTreeModel::filePath(const QModelIndex& index) {
   DirTreeModelItem* item = itemFromIndex(index);
-  return item ? fm_file_info_get_path(item->fileInfo_) : NULL;
+  return item && item->fileInfo_ ? fm_file_info_get_path(item->fileInfo_) : NULL;
 }
 
-const char* DirTreeModel::dispName(const QModelIndex& index) {
+QString DirTreeModel::dispName(const QModelIndex& index) {
   DirTreeModelItem* item = itemFromIndex(index);
-  return item ? fm_file_info_get_disp_name(item->fileInfo_) : NULL;
+  return item ? item->displayName_ : QString();
 }
 
 void DirTreeModel::setShowHidden(bool show_hidden) {

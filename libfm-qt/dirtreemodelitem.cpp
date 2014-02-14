@@ -74,6 +74,7 @@ void DirTreeModelItem::addPlaceHolderChild() {
   placeHolderChild_ = new DirTreeModelItem();
   placeHolderChild_->parent_ = this;
   placeHolderChild_->model_ = model_;
+  placeHolderChild_->displayName_ = DirTreeModel::tr("Loading...");
   children_.append(placeHolderChild_);
 }
 
@@ -90,9 +91,6 @@ void DirTreeModelItem::freeFolder() {
 
 void DirTreeModelItem::loadFolder() {
   if(!expanded_) {
-    // the place holder child item
-    placeHolderChild_->displayName_ = DirTreeModel::tr("Loading...");
-
     /* dynamically load content of the folder. */
     folder_ = fm_folder_from_path(fm_file_info_get_path(fileInfo_));
     /* g_debug("fm_dir_tree_model_load_row()"); */
@@ -204,7 +202,7 @@ void DirTreeModelItem::onFolderFinishLoading(FmFolder* folder, gpointer user_dat
   /* set 'loaded' flag beforehand as callback may check it */
   _this->loaded_ = true;
   QModelIndex index = _this->index();
-
+qDebug() << "folder loaded";
   // remove the placeholder child if needed
   if(_this->children_.count() == 1) { // we have no other child other than the place holder item, leave it
     _this->placeHolderChild_->displayName_ = DirTreeModel::tr("<No sub folders>");

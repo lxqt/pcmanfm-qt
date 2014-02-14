@@ -198,6 +198,8 @@ void DirTreeView::onSelectionChanged(const QItemSelection & selected, const QIte
     if(path && currentPath_ && fm_path_equal(path, currentPath_))
       return;
     cancelPendingChdir();
+    if(!path)
+      return;
     if(currentPath_)
       fm_path_unref(currentPath_);
     currentPath_ = fm_path_ref(path);
