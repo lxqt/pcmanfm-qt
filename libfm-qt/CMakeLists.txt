@@ -33,6 +33,7 @@ set(libfm_SRCS
   dirtreeview.cpp
   dirtreemodel.cpp
   dirtreemodelitem.cpp
+  dnddest.cpp
   mountoperation.cpp
   mountoperationpassworddialog.cpp
   mountoperationquestiondialog.cpp

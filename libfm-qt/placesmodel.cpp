@@ -23,6 +23,7 @@
 #include <gio/gio.h>
 #include <QDebug>
 #include <QMimeData>
+#include "utilities.h"
 
 using namespace Fm;
 
@@ -35,7 +36,7 @@ PlacesModel::PlacesModel(QObject* parent):
 
   setColumnCount(2);
 
-  PlacesModelItem *item;
+  PlacesModelItem* item;
   placesRoot = new QStandardItem(tr("Places"));
   placesRoot->setEditable(false);
   placesRoot->setSelectable(false);
@@ -128,11 +129,11 @@ PlacesModel::PlacesModel(QObject* parent):
   bookmarksRoot->setSelectable(false);
   bookmarksRoot->setColumnCount(2);
   appendRow(bookmarksRoot);
-  
+
   bookmarks = fm_bookmarks_dup();
   loadBookmarks();
   g_signal_connect(bookmarks, "changed", G_CALLBACK(onBookmarksChanged), this);
-  
+
   // update some icons when the icon theme is changed
   connect(IconTheme::instance(), SIGNAL(changed()), SLOT(updateIcons()));
 }
@@ -257,7 +258,7 @@ void PlacesModel::onMountAdded(GVolumeMonitor* monitor, GMount* mount, PlacesMod
   }
   else { // network mounts and others
     PlacesModelMountItem* item = pThis->itemFromMount(mount);
-    /* for some unknown reasons, sometimes we get repeated mount-added 
+    /* for some unknown reasons, sometimes we get repeated mount-added
      * signals and added a device more than one. So, make a sanity check here. */
     if(!item) {
       item = new PlacesModelMountItem(mount);
@@ -275,7 +276,7 @@ void PlacesModel::onMountChanged(GVolumeMonitor* monitor, GMount* mount, PlacesM
 
 void PlacesModel::onMountRemoved(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis) {
   GVolume* vol = g_mount_get_volume(mount);
-  qDebug() <<"volume umounted: " << vol;
+  qDebug() << "volume umounted: " << vol;
   if(vol) {
     // a volume is unmounted
     g_object_unref(vol);
@@ -345,35 +346,50 @@ void PlacesModel::updateIcons() {
 
 Qt::ItemFlags PlacesModel::flags(const QModelIndex& index) const {
   if(index.column() == 1) // make 2nd column of every row selectable.
-    return Qt::ItemIsSelectable|Qt::ItemIsEnabled;
-  if(!index.parent().isValid()) { // this is a root item
-    return Qt::ItemIsEnabled;
+    return Qt::ItemIsSelectable | Qt::ItemIsEnabled;
+  if(!index.parent().isValid()) { // root items
+    if(index.row() == 2) // bookmarks root
+      return Qt::ItemIsEnabled | Qt::ItemIsDropEnabled | Qt::ItemIsDragEnabled;
+    else
+      return Qt::ItemIsEnabled;
   }
   PlacesModelItem* placesItem = static_cast<PlacesModelItem*>(itemFromIndex(index));
   if(placesItem) {
     if(placesItem->type() == PlacesModelItem::Bookmark)
-      return Qt::ItemIsSelectable|Qt::ItemIsEnabled|Qt::ItemIsDropEnabled|Qt::ItemIsDragEnabled;
+      return Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsDropEnabled | Qt::ItemIsDragEnabled;
   }
-  return Qt::ItemIsSelectable|Qt::ItemIsEnabled|Qt::ItemIsDropEnabled;
+  return QStandardItemModel::flags(index); // Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsDropEnabled;
 }
 
 bool PlacesModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent) {
   qDebug() << "dropMimeData: " << action << "row" << row << ", column" << column << "index" << parent;
-  if(row == -1 && column == -1) { // drop on parent item itself
-    QStandardItem* item = itemFromIndex(parent);
-    if(item && item->parent()) {
+  QStandardItem* item = itemFromIndex(parent);
+  if(row == -1 && column == -1) { // drop on an item itself
+    if(item && item->parent()) { // need to be a child item
       PlacesModelItem* placesItem = static_cast<PlacesModelItem*>(item);
       if(placesItem->path()) {
-	// TODO: copy or move the dragged files to the dir pointed by the item.
-	// qDebug() << "drop on" << item->text();
+	qDebug() << "dropped dest:" << placesItem->text();
+        // TODO: copy or move the dragged files to the dir pointed by the item.
+        // qDebug() << "drop on" << item->text();
       }
     }
   }
   else { // drop on a position between items
-    PlacesModelItem* placesItem = static_cast<PlacesModelItem*>(itemFromIndex(parent));
-    if(parent.isValid()) { // we only allow dropping on blank row of bookmarks section
-      if(placesItem->type() == PlacesModelItem::Bookmark) {
-	// TODO: add the dragged paths to bookmarks at the specified row if it's a folder.
+    if(item == bookmarksRoot) { // we only allow dropping on blank row of bookmarks section
+      if(data->hasUrls()) {
+        FmPathList* paths = pathListFromQUrls(data->urls());
+        for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
+          FmPath* path = FM_PATH(l->data);
+          GFile* gf = fm_path_to_gfile(path);
+          // FIXME: this is a blocking call
+          if(g_file_query_file_type(gf, G_FILE_QUERY_INFO_NOFOLLOW_SYMLINKS,
+                                    NULL) == G_FILE_TYPE_DIRECTORY) {
+            char* disp_name = fm_path_display_basename(path);
+            fm_bookmarks_insert(bookmarks, path, disp_name, row);
+            g_free(disp_name);
+          }
+          g_object_unref(gf);
+        }
       }
     }
   }
@@ -383,6 +399,10 @@ bool PlacesModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
 //QMimeData* PlacesModel::mimeData(const QModelIndexList& indexes) const {
 //  return QStandardItemModel::mimeData(indexes);
 //}
+
+QStringList PlacesModel::mimeTypes() const {
+  return QStringList() << "text/uri-list";
+}
 
 Qt::DropActions PlacesModel::supportedDropActions() const {
   return QStandardItemModel::supportedDropActions();

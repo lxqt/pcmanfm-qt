@@ -82,7 +82,7 @@ protected:
   PlacesModelBookmarkItem* itemFromBookmark(FmBookmarkItem* bkitem);
 
   virtual Qt::ItemFlags flags(const QModelIndex& index) const;
-  // virtual QStringList mimeTypes() const;
+  virtual QStringList mimeTypes() const;
   // virtual QMimeData* mimeData(const QModelIndexList& indexes) const;
   virtual bool dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent);
   Qt::DropActions supportedDropActions() const;
