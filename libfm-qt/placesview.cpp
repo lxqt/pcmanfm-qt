@@ -25,6 +25,7 @@
 #include <QMenu>
 #include <QContextMenuEvent>
 #include <QHeaderView>
+#include <QDebug>
 
 using namespace Fm;
 
@@ -152,6 +153,15 @@ void PlacesView::setCurrentPath(FmPath* path) {
 
 void PlacesView::dragMoveEvent(QDragMoveEvent* event) {
   QTreeView::dragMoveEvent(event);
+  /*
+  QModelIndex index = indexAt(event->pos());
+  if(event->isAccepted() && index.isValid() && index.parent() == model_->bookmarksRoot->index()) {
+    if(dropIndicatorPosition() != OnItem) {
+      event->setDropAction(Qt::LinkAction);
+      event->accept();
+    }
+  }
+  */
 }
 
 void PlacesView::dropEvent(QDropEvent* event) {
