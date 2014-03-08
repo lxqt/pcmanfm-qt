@@ -1,3 +1,5 @@
+
+
 include_directories(
   ${QT_INCLUDES}
   ${LIBFM_INCLUDE_DIRS}
@@ -10,6 +12,13 @@ include_directories(
 link_directories(
   ${LIBFM_LIBRARY_DIRS}
 )
+
+if (EXISTS ${LIBFM_libfm_INCLUDEDIR}/libfm/fm-actions.h )
+	set_property(
+		DIRECTORY
+		PROPERTY COMPILE_DEFINITIONS CUSTOM_ACTIONS 
+	)
+endif()
 
 set(libfm_SRCS
   libfmqt.cpp
