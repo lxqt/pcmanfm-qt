@@ -97,14 +97,17 @@ public:
 
 protected:
   void createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd);
+#ifdef CUSTOM_ACTIONS
   void addCustomActionItem(QMenu* menu, struct _FmFileActionItem* item);
+#endif
 
 protected Q_SLOTS:
   void onOpenTriggered();
   void onFilePropertiesTriggered();
   void onApplicationTriggered();
+#ifdef CUSTOM_ACTIONS
   void onCustomActionTrigerred();
-
+#endif
   void onCompress();
   void onExtract();
   void onExtractHere();

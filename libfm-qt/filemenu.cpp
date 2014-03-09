@@ -24,7 +24,9 @@
 #include "utilities.h"
 #include "fileoperation.h"
 #include "filelauncher.h"
+#ifdef CUSTOM_ACTIONS
 #include <libfm/fm-actions.h>
+#endif
 #include <QMessageBox>
 
 using namespace Fm;
@@ -54,7 +56,7 @@ private:
   GAppInfo* appInfo_;
 };
 
-
+#ifdef CUSTOM_ACTIONS
 class CustomAction : public QAction {
 public:
   explicit CustomAction(FmFileActionItem* item, QObject* parent = NULL):
@@ -77,6 +79,7 @@ private:
   FmFileActionItem* item_;
 };
 
+#endif
 
 FileMenu::FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, QWidget* parent): QMenu(parent) {
   createMenu(files, info, cwd);
@@ -168,6 +171,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   connect(renameAction_, SIGNAL(triggered(bool)), SLOT(onRenameTriggered()));
   addAction(renameAction_);
 
+#ifdef CUSTOM_ACTIONS
   // DES-EMA custom actions integration
   GList* files_list = fm_file_info_list_peek_head_link(files);
   GList* items = fm_get_actions_for_files(files_list);
@@ -177,10 +181,10 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
       FmFileActionItem* item = FM_FILE_ACTION_ITEM(l->data);
       addCustomActionItem(this, item);
     }
-  }
+  } 
   g_list_foreach(items, (GFunc)fm_file_action_item_unref, NULL);
   g_list_free(items);
-
+#endif
   // archiver integration
   // FIXME: we need to modify upstream libfm to include some Qt-based archiver programs.
   if(!allVirtual_) {
@@ -215,6 +219,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   addAction(propertiesAction_);
 }
 
+#ifdef CUSTOM_ACTIONS
 void FileMenu::addCustomActionItem(QMenu* menu, FmFileActionItem* item) {
   if(!item) { // separator
     addSeparator();
@@ -240,6 +245,7 @@ void FileMenu::addCustomActionItem(QMenu* menu, FmFileActionItem* item) {
     connect(action, SIGNAL(triggered(bool)), SLOT(onCustomActionTrigerred()));
   }
 }
+#endif
 
 void FileMenu::onOpenTriggered() {
   Fm::FileLauncher::launch(NULL, files_);
@@ -261,6 +267,7 @@ void FileMenu::onApplicationTriggered() {
   g_list_free(uris);  
 }
 
+#ifdef CUSTOM_ACTIONS
 void FileMenu::onCustomActionTrigerred() {
   CustomAction* action = static_cast<CustomAction*>(sender());
   FmFileActionItem* item = action->item();
@@ -275,6 +282,7 @@ void FileMenu::onCustomActionTrigerred() {
     g_free(output);
   }
 }
+#endif
 
 void FileMenu::onFilePropertiesTriggered() {
   FilePropsDialog::showForFiles(files_);
