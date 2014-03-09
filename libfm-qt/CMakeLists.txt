@@ -13,12 +13,6 @@ link_directories(
   ${LIBFM_LIBRARY_DIRS}
 )
 
-if (EXISTS ${LIBFM_libfm_INCLUDEDIR}/libfm/fm-actions.h )
-	set_property(
-		DIRECTORY
-		PROPERTY COMPILE_DEFINITIONS CUSTOM_ACTIONS 
-	)
-endif()
 
 set(libfm_SRCS
   libfmqt.cpp
@@ -81,6 +75,11 @@ set_property(
   LIBFM_QT_COMPILATION=1
   LIBFM_DATA_DIR="${CMAKE_INSTALL_FULL_DATADIR}/libfm-qt"
 )
+
+# only turn on custom actions support if it is enabled in libfm.
+if(EXISTS ${LIBFM_libfm_INCLUDEDIR}/libfm/fm-actions.h )
+  set_property(TARGET fm-qt APPEND PROPERTY COMPILE_DEFINITIONS CUSTOM_ACTIONS)
+endif()
 
 target_link_libraries(fm-qt
   ${QT_QTCORE_LIBRARY}
