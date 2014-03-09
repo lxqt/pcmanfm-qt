@@ -171,6 +171,7 @@ Q_SIGNALS:
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
   void onModelSortFilterChanged();
+  void onSelChanged(int numSel);
 
 private:
   void freeFolder();

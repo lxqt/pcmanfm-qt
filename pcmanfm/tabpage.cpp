@@ -35,10 +35,10 @@ using namespace Fm;
 namespace PCManFM {
 
 TabPage::TabPage(FmPath* path, QWidget* parent):
-    QWidget( parent),
-    folder_ (NULL),
-    folderModel_(NULL),
-    overrideCursor_(false) {
+  QWidget(parent),
+  folder_(NULL),
+  folderModel_(NULL),
+  overrideCursor_(false) {
 
   Settings& settings = static_cast<Application*>(qApp)->settings();
 
@@ -53,13 +53,14 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
 
   folderView_ = new View(settings.viewMode(), this);
   // newView->setColumnWidth(Fm::FolderModel::ColumnName, 200);
-  connect(folderView_, SIGNAL(openDirRequested(FmPath*,int)), SLOT(onOpenDirRequested(FmPath*,int)));
+  connect(folderView_, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onOpenDirRequested(FmPath*, int)));
+  connect(folderView_, SIGNAL(selChanged(int)), SLOT(onSelChanged(int)));
 
   // FIXME: this is very dirty
   folderView_->setModel(proxyModel_);
 
   verticalLayout->addWidget(folderView_);
-  
+
   chdir(path, true);
 }
 
@@ -98,21 +99,20 @@ void TabPage::freeFolder() {
   qDebug("start-loading");
 #if 0
 #if FM_CHECK_VERSION(1, 0, 2) && 0 // disabled
-    if(fm_folder_is_incremental(_folder))
-    {
-        /* create a model for the folder and set it to the view
-           it is delayed for non-incremental folders since adding rows into
-           model is much faster without handlers connected to its signals */
-        FmFolderModel* model = fm_folder_model_new(folder, FALSE);
-        fm_folder_view_set_model(fv, model);
-        fm_folder_model_set_sort(model, app_config->sort_by,
-                                 (app_config->sort_type == GTK_SORT_ASCENDING) ?
-                                        FM_SORT_ASCENDING : FM_SORT_DESCENDING);
-        g_object_unref(model);
-    }
-    else
+  if(fm_folder_is_incremental(_folder)) {
+    /* create a model for the folder and set it to the view
+       it is delayed for non-incremental folders since adding rows into
+       model is much faster without handlers connected to its signals */
+    FmFolderModel* model = fm_folder_model_new(folder, FALSE);
+    fm_folder_view_set_model(fv, model);
+    fm_folder_model_set_sort(model, app_config->sort_by,
+                             (app_config->sort_type == GTK_SORT_ASCENDING) ?
+                             FM_SORT_ASCENDING : FM_SORT_DESCENDING);
+    g_object_unref(model);
+  }
+  else
 #endif
-        fm_folder_view_set_model(fv, NULL);
+    fm_folder_view_set_model(fv, NULL);
 #endif
 }
 
@@ -127,34 +127,33 @@ void TabPage::freeFolder() {
 
   fm_folder_query_filesystem_info(_folder); // FIXME: is this needed?
 #if 0
-    FmFolderView* fv = pThis->folder_view;
-    const FmNavHistoryItem* item;
-    GtkScrolledWindow* scroll = GTK_SCROLLED_WINDOW(fv);
+  FmFolderView* fv = pThis->folder_view;
+  const FmNavHistoryItem* item;
+  GtkScrolledWindow* scroll = GTK_SCROLLED_WINDOW(fv);
 
-    /* Note: most of the time, we delay the creation of the 
-     * folder model and do it after the whole folder is loaded.
-     * That is because adding rows into model is much faster when no handlers
-     * are connected to its signals. So we detach the model from folder view
-     * and create the model again when it's fully loaded. 
-     * This optimization, however, is not used for FmFolder objects
-     * with incremental loading (search://) */
-    if(fm_folder_view_get_model(fv) == NULL)
-    {
-        /* create a model for the folder and set it to the view */
-        FmFolderModel* model = fm_folder_model_new(folder, app_config->show_hidden);
-        fm_folder_view_set_model(fv, model);
+  /* Note: most of the time, we delay the creation of the
+   * folder model and do it after the whole folder is loaded.
+   * That is because adding rows into model is much faster when no handlers
+   * are connected to its signals. So we detach the model from folder view
+   * and create the model again when it's fully loaded.
+   * This optimization, however, is not used for FmFolder objects
+   * with incremental loading (search://) */
+  if(fm_folder_view_get_model(fv) == NULL) {
+    /* create a model for the folder and set it to the view */
+    FmFolderModel* model = fm_folder_model_new(folder, app_config->show_hidden);
+    fm_folder_view_set_model(fv, model);
 #if FM_CHECK_VERSION(1, 0, 2)
-        /* since 1.0.2 sorting should be applied on model instead of view */
-        fm_folder_model_set_sort(model, app_config->sort_by,
-                                 (app_config->sort_type == GTK_SORT_ASCENDING) ?
-                                        FM_SORT_ASCENDING : FM_SORT_DESCENDING);
+    /* since 1.0.2 sorting should be applied on model instead of view */
+    fm_folder_model_set_sort(model, app_config->sort_by,
+                             (app_config->sort_type == GTK_SORT_ASCENDING) ?
+                             FM_SORT_ASCENDING : FM_SORT_DESCENDING);
 #endif
-        g_object_unref(model);
-    }
+    g_object_unref(model);
+  }
 
-    /* scroll to recorded position */
-    item = fm_nav_history_get_cur(pThis->nav_history);
-    gtk_adjustment_set_value(gtk_scrolled_window_get_vadjustment(scroll), item->scroll_pos);
+  /* scroll to recorded position */
+  item = fm_nav_history_get_cur(pThis->nav_history);
+  gtk_adjustment_set_value(gtk_scrolled_window_get_vadjustment(scroll), item->scroll_pos);
 
 #endif
 
@@ -180,7 +179,7 @@ void TabPage::freeFolder() {
         // This will reload the folder, which generates a new "start-loading"
         // signal, so we get more "start-loading" signals than "finish-loading"
         // signals. FIXME: This is a bug of libfm.
-        // Because the two signals are not correctly paired, we need to 
+        // Because the two signals are not correctly paired, we need to
         // remove busy cursor here since "finish-loading" is not emitted.
         QApplication::restoreOverrideCursor(); // remove busy cursor
         return FM_JOB_RETRY;
@@ -203,13 +202,13 @@ void TabPage::freeFolder() {
   guint64 free, total;
   QString& msg = pThis->statusText_[StatusTextFSInfo];
   if(fm_folder_get_filesystem_info(_folder, &total, &free)) {
-      char total_str[64];
-      char free_str[64];
-      fm_file_size_to_str(free_str, sizeof(free_str), free, fm_config->si_unit);
-      fm_file_size_to_str(total_str, sizeof(total_str), total, fm_config->si_unit);
-      msg = tr("Free space: %1 (Total: %2)")
-              .arg(QString::fromUtf8(free_str))
-              .arg(QString::fromUtf8(total_str));
+    char total_str[64];
+    char free_str[64];
+    fm_file_size_to_str(free_str, sizeof(free_str), free, fm_config->si_unit);
+    fm_file_size_to_str(total_str, sizeof(total_str), total, fm_config->si_unit);
+    msg = tr("Free space: %1 (Total: %2)")
+          .arg(QString::fromUtf8(free_str))
+          .arg(QString::fromUtf8(total_str));
   }
   else
     msg.clear();
@@ -218,14 +217,14 @@ void TabPage::freeFolder() {
 
 QString TabPage::formatStatusText() {
   if(proxyModel_ && folder_) {
-      FmFileInfoList* files = fm_folder_get_files(folder_);
-      int total_files = fm_file_info_list_get_length(files);
-      int shown_files = proxyModel_->rowCount();
-      int hidden_files = total_files - shown_files;
-      QString text = tr("%n item(s)", "", shown_files);
-      if(hidden_files > 0)
-	text += tr(" (%n hidden)", "", hidden_files);
-      return text;
+    FmFileInfoList* files = fm_folder_get_files(folder_);
+    int total_files = fm_file_info_list_get_length(files);
+    int shown_files = proxyModel_->rowCount();
+    int hidden_files = total_files - shown_files;
+    QString text = tr("%n item(s)", "", shown_files);
+    if(hidden_files > 0)
+      text += tr(" (%n hidden)", "", hidden_files);
+    return text;
   }
   return QString();
 }
@@ -242,13 +241,8 @@ QString TabPage::formatStatusText() {
 
 /*static */ void TabPage::onFolderContentChanged(FmFolder* _folder, TabPage* pThis) {
   /* update status text */
-#if 0
-  g_free(pThis->status_text[FM_STATUS_TEXT_NORMAL]);
-  pThis->status_text[FM_STATUS_TEXT_NORMAL] = format_status_text(pThis);
-  g_signal_emit(page, signals[STATUS], 0,
-		(guint)FM_STATUS_TEXT_NORMAL,
-		pThis->status_text[FM_STATUS_TEXT_NORMAL]);
-#endif
+  pThis->statusText_[StatusTextNormal] = pThis->formatStatusText();
+  Q_EMIT pThis->statusChanged(StatusTextNormal, pThis->statusText_[StatusTextNormal]);
 }
 
 QString TabPage::pathName() {
@@ -299,7 +293,7 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
   folderModel_ = CachedFolderModel::modelFromFolder(folder_);
   proxyModel_->setSourceModel(folderModel_);
   proxyModel_->sort(Fm::FolderModel::ColumnFileName);
-  
+
   if(fm_folder_is_loaded(folder_)) {
     onFolderStartLoading(folder_, this);
     onFolderFinishLoading(folder_, this);
@@ -326,6 +320,65 @@ void TabPage::invertSelection() {
 void TabPage::onOpenDirRequested(FmPath* path, int target) {
   Q_EMIT openDirRequested(path, target);
 }
+
+// when the current selection in the folder view is changed
+void TabPage::onSelChanged(int numSel) {
+  QString msg;
+  if(numSel > 0) {
+    /* FIXME: display total size of all selected files. */
+    if(numSel == 1) { /* only one file is selected */
+      FmFileInfoList* files = folderView_->selectedFiles();
+      FmFileInfo* fi = fm_file_info_list_peek_head(files);
+      const char* size_str = fm_file_info_get_disp_size(fi);
+      if(size_str) {
+        msg = QString("\"%1\" (%2) %3")
+                        .arg(QString::fromUtf8(fm_file_info_get_disp_name(fi)))
+                        .arg(QString::fromUtf8(size_str ? size_str : ""))
+                        .arg(QString::fromUtf8(fm_file_info_get_desc(fi)));
+      }
+      else {
+        msg = QString("\"%1\" %2")
+                        .arg(QString::fromUtf8(fm_file_info_get_disp_name(fi)))
+                        .arg(QString::fromUtf8(fm_file_info_get_desc(fi)));
+      }
+      /* FIXME: should we support statusbar plugins as in the gtk+ version? */
+      fm_file_info_list_unref(files);
+    }
+    else {
+      FmFileInfoList* files;
+      goffset sum;
+      GList* l;
+      char size_str[128];
+      msg = tr("%1 item(s) selected", NULL, numSel).arg(numSel);
+      /* don't count if too many files are selected, that isn't lightweight */
+      if(numSel < 1000) {
+        sum = 0;
+        files = folderView_->selectedFiles();
+        for(l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
+          if(fm_file_info_is_dir(FM_FILE_INFO(l->data))) {
+            /* if we got a directory then we cannot tell it's size
+            unless we do deep count but we cannot afford it */
+            sum = -1;
+            break;
+          }
+          sum += fm_file_info_get_size(FM_FILE_INFO(l->data));
+        }
+        if(sum >= 0) {
+          fm_file_size_to_str(size_str, sizeof(size_str), sum,
+                              fm_config->si_unit);
+	  msg += QString(" (%1)").arg(QString::fromUtf8(size_str));
+        }
+      /* FIXME: should we support statusbar plugins as in the gtk+ version? */
+        fm_file_info_list_unref(files);
+      }
+      /* FIXME: can we show some more info on selection?
+          that isn't lightweight if a lot of files are selected */
+    }
+  }
+  statusText_[StatusTextSelectedFiles] = msg;
+  Q_EMIT statusChanged(StatusTextSelectedFiles, msg);
+}
+
 
 void TabPage::backward() {
   history_.backward();

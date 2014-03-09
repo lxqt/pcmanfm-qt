@@ -156,6 +156,7 @@ protected:
 
 public Q_SLOTS:
   void onItemActivated(QModelIndex index);
+  void onSelectionChanged(const QItemSelection & selected, const QItemSelection & deselected);
 
 Q_SIGNALS:
   void clicked(int type, FmFileInfo* file);

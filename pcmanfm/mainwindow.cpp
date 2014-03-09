@@ -29,6 +29,7 @@
 #include <QToolButton>
 #include <QShortcut>
 #include <QKeySequence>
+#include <QDebug>
 
 #include "tabpage.h"
 #include "filelauncher.h"
@@ -142,7 +143,7 @@ MainWindow::MainWindow(FmPath* path):
     shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_0 + i), this);
     connect(shortcut, SIGNAL(activated()), SLOT(onShortcutJumpToTab()));
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_0 + i), this);
-    connect(shortcut, SIGNAL(activated()), SLOT(onShortcutJumpToTab()));    
+    connect(shortcut, SIGNAL(activated()), SLOT(onShortcutJumpToTab()));
   }
 
   if(path)
@@ -425,6 +426,18 @@ void MainWindow::onTabBarCurrentChanged(int index) {
   updateUIForCurrentPage();
 }
 
+void MainWindow::updateStatusBarForCurrentPage() {
+  TabPage* tabPage = currentPage();
+  QString text = tabPage->statusText(TabPage::StatusTextSelectedFiles);
+  if(text.isEmpty())
+    text = tabPage->statusText(TabPage::StatusTextNormal);
+  ui.statusbar->showMessage(text);
+
+  text = tabPage->statusText(TabPage::StatusTextFSInfo);
+  fsInfoLabel->setText(text);
+  fsInfoLabel->setVisible(!text.isEmpty());
+}
+
 void MainWindow::updateViewMenuForCurrentPage() {
   TabPage* tabPage = currentPage();
 
@@ -494,6 +507,7 @@ void MainWindow::updateUIForCurrentPage() {
     ui.actionGoForward->setEnabled(tabPage->canForward());
 
     updateViewMenuForCurrentPage();
+    updateStatusBarForCurrentPage();
   }
 }
 
@@ -516,18 +530,21 @@ void MainWindow::onTabPageTitleChanged(QString title) {
 
 void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
   TabPage* tabPage = static_cast<TabPage*>(sender());
-
   if(tabPage == currentPage()) {
     switch(type) {
     case TabPage::StatusTextNormal:
-      ui.statusbar->showMessage(statusText);
+    case TabPage::StatusTextSelectedFiles: {
+      // FIXME: updating the status text so frequently is a little bit ineffiecient
+      QString text = statusText = tabPage->statusText(TabPage::StatusTextSelectedFiles);
+      if(text.isEmpty())
+        ui.statusbar->showMessage(tabPage->statusText(TabPage::StatusTextNormal));
+      else
+        ui.statusbar->showMessage(text);
       break;
-
+    }
     case TabPage::StatusTextFSInfo:
       fsInfoLabel->setText(tabPage->statusText(TabPage::StatusTextFSInfo));
-      break;
-
-    case TabPage::StatusTextSelectedFiles:
+      fsInfoLabel->setVisible(!statusText.isEmpty());
       break;
     }
   }

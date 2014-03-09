@@ -141,6 +141,7 @@ private:
   void loadBookmarksMenu();
   void updateUIForCurrentPage();
   void updateViewMenuForCurrentPage();
+  void updateStatusBarForCurrentPage();
 
 private:
   Ui::MainWindow ui;

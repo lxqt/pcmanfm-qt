@@ -309,14 +309,30 @@ void FolderView::onItemActivated(QModelIndex index) {
   }
 }
 
+void FolderView::onSelectionChanged(const QItemSelection& selected, const QItemSelection& deselected) {
+  QItemSelectionModel* selModel = static_cast<QItemSelectionModel*>(sender());
+  int nSel = 0;
+  if(viewMode() == DetailedListMode)
+    nSel = selModel->selectedRows().count();
+  else
+    nSel = selModel->selectedIndexes().count();
+  // qDebug()<<"selected:" << nSel;
+  Q_EMIT selChanged(nSel); // FIXME: this is inefficient
+}
+
+
 void FolderView::setViewMode(ViewMode _mode) {
   if(_mode == mode) // if it's the same more, ignore
     return;
+  // FIXME: retain old selection
+
   // since only detailed list mode uses QTreeView, and others 
   // all use QListView, it's wise to preserve QListView when possible.
+  bool recreateView = false;
   if(view && mode == DetailedListMode || _mode == DetailedListMode) {
     delete view; // FIXME: no virtual dtor?
     view = NULL;
+    recreateView = true;
   }
   mode = _mode;
   QSize iconSize = iconSize_[mode - FirstViewMode];
@@ -374,7 +390,6 @@ void FolderView::setViewMode(ViewMode _mode) {
   }
   if(view) {
     connect(view, SIGNAL(activated(QModelIndex)), SLOT(onItemActivated(QModelIndex)));
-
     view->setContextMenuPolicy(Qt::NoContextMenu); // defer the context menu handling to parent widgets
     view->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     view->setIconSize(iconSize);
@@ -392,6 +407,8 @@ void FolderView::setViewMode(ViewMode _mode) {
       // FIXME: preserve selections
       model_->setThumbnailSize(iconSize.width());
       view->setModel(model_);
+      if(recreateView)
+	connect(view->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onSelectionChanged(QItemSelection,QItemSelection)));
     }
   }
 }
@@ -428,6 +445,8 @@ void FolderView::setModel(ProxyFolderModel* model) {
     view->setModel(model);
     QSize iconSize = iconSize_[mode - FirstViewMode];
     model->setThumbnailSize(iconSize.width());
+    if(view->selectionModel())
+      connect(view->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onSelectionChanged(QItemSelection,QItemSelection)));
   }
   if(model_)
     delete model_;
