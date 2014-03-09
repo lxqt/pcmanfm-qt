@@ -88,7 +88,9 @@ set_target_properties(
 # install include header files (FIXME: can we make this cleaner? should dir name be versioned?)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
   DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
-  FILES_MATCHING PATTERN "*.h")
+  FILES_MATCHING PATTERN "*.h"
+  PATTERN "*_p.h" EXCLUDE # exclude private headers
+)
 
 # FIXME: add libtool version to the lib (soname) later.
 # FIXME: only export public symbols

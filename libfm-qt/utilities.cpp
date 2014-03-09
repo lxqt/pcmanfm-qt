@@ -19,13 +19,13 @@
 
 
 #include "utilities.h"
+#include "utilities_p.h"
 #include <QApplication>
 #include <QClipboard>
 #include <QMimeData>
 #include <QUrl>
 #include <QList>
 #include <QStringBuilder>
-#include <QInputDialog>
 #include <QMessageBox>
 #include "fileoperation.h"
 
@@ -111,15 +111,18 @@ void cutFilesToClipboard(FmPathList* files) {
 void renameFile(FmPath* file, QWidget* parent) {
   GFile *gf, *parent_gf, *dest;
   GError* err = NULL;
-  QString new_name;
-  bool ok;
-  new_name = QInputDialog::getText(parent, QObject::tr("Rename File"),
-                                   QObject::tr("Please enter a new name:"),
-                                   QLineEdit::Normal,
-                                   fm_path_get_basename(file),
-                                   &ok);
-  if(!ok)
+  FilenameDialog dlg(parent);
+  dlg.setWindowTitle(QObject::tr("Rename File"));
+  dlg.setLabelText(QObject::tr("Please enter a new name:"));
+  // FIXME: what's the best way to handle non-UTF8 filename encoding here?
+  QString old_name = QString::fromLocal8Bit(fm_path_get_basename(file));
+  dlg.setTextValue(old_name);
+  if(dlg.exec() != QDialog::Accepted)
     return;
+  QString new_name = dlg.textValue();
+  if(new_name == old_name)
+    return;
+
   gf = fm_path_to_gfile(file);
   parent_gf = g_file_get_parent(gf);
   dest = g_file_get_child(G_FILE(parent_gf), new_name.toLocal8Bit().data());
