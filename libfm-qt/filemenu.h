@@ -94,6 +94,17 @@ public:
     return propertiesAction_;  
   }
 
+  FmFileInfoList* files() {
+    return files_;
+  }
+
+  FmFileInfo* firstFile() {
+    return info_;
+  }
+
+  FmPath* cwd() {
+    return cwd_;
+  }
 
 protected:
   void createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd);

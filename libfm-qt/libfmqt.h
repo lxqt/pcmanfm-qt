@@ -26,6 +26,7 @@
 #include <QTranslator>
 #include "icontheme.h"
 #include "thumbnailloader.h"
+#include <libfm/fm.h>
 
 namespace Fm {
 

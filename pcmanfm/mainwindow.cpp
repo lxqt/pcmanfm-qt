@@ -775,50 +775,9 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
 
 void MainWindow::on_actionOpenTerminal_triggered() {
   TabPage* page = currentPage();
-
   if(page) {
     Application* app = static_cast<Application*>(qApp);
-    Settings& settings = app->settings();
-
-    if(!settings.terminalDirCommand().isEmpty()) {
-      // run the terminal command
-      FmPath* path = page->path();
-      char* cwd_str;
-
-      if(fm_path_is_native(path))
-        cwd_str = fm_path_to_str(path);
-      else { // gio will map remote filesystems to local FUSE-mounted paths here.
-        GFile* gf = fm_path_to_gfile(path);
-        cwd_str = g_file_get_path(gf);
-        g_object_unref(gf);
-      }
-
-      char* old_cwd = g_get_current_dir();
-      GAppInfo* appInfo = g_app_info_create_from_commandline(
-                            settings.terminalDirCommand().toLocal8Bit().constData(),
-                            NULL, GAppInfoCreateFlags(0), NULL);
-
-      // change to the desired dir prior to running the terminal emulator. This is quite dirty
-      g_chdir(cwd_str); // currently we don't have better way for this. maybe a wrapper script?
-      g_free(cwd_str);
-
-      GError* err = NULL;
-
-      if(!g_app_info_launch(appInfo, NULL, NULL, &err)) {
-        QMessageBox::critical(this, tr("Error"), QString::fromUtf8(err->message));
-        g_error_free(err);
-      }
-
-      g_object_unref(appInfo);
-      /* switch back to old cwd and fix #3114626 - PCManFM 0.9.9 Umount partitions problem */
-      g_chdir(old_cwd); /* This is really dirty, but we don't have better solution now. */
-      g_free(old_cwd);
-    }
-    else {
-      // show an error message and ask the user to set the command
-      QMessageBox::critical(this, tr("Error"), tr("Terminal emulator is not set."));
-      app->preferences("advanced");
-    }
+    app->openFolderInTerminal(page->path());
   }
 }
 

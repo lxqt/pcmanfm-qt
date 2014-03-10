@@ -24,6 +24,9 @@
 #include "filelauncher.h"
 #include "application.h"
 #include "settings.h"
+#include "application.h"
+#include "mainwindow.h"
+#include <QAction>
 
 using namespace PCManFM;
 
@@ -37,11 +40,10 @@ View::View(Fm::FolderView::ViewMode _mode, QWidget* parent):
   setIconSize(Fm::FolderView::ThumbnailMode, QSize(settings.thumbnailIconSize(), settings.thumbnailIconSize()));
   setIconSize(Fm::FolderView::DetailedListMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
 
-  connect(this, SIGNAL(clicked(int,FmFileInfo*)), SLOT(onFileClicked(int,FmFileInfo*)));
+  connect(this, SIGNAL(clicked(int, FmFileInfo*)), SLOT(onFileClicked(int, FmFileInfo*)));
 }
 
 View::~View() {
-
 }
 
 void View::onPopupMenuHide() {
@@ -83,18 +85,74 @@ void View::onFileClicked(int type, FmFileInfo* fileInfo) {
     }
     else {
       FmFolder* _folder = folder();
-      FmFileInfo* info =fm_folder_get_info(_folder);
+      FmFileInfo* info = fm_folder_get_info(_folder);
       Fm::FolderMenu* folderMenu = new Fm::FolderMenu(this);
       prepareFolderMenu(folderMenu);
       menu = folderMenu;
     }
     menu->popup(QCursor::pos());
-    connect(menu, SIGNAL(aboutToHide()),SLOT(onPopupMenuHide()));
+    connect(menu, SIGNAL(aboutToHide()), SLOT(onPopupMenuHide()));
   }
 }
 
-void View::prepareFileMenu(Fm::FileMenu* menu) {
+void View::onNewWindow() {
+  Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
+  // FIXME: open the files in a new window
+  Application* app = static_cast<Application*>(qApp);
+  app->openFolders(menu->files());
+}
 
+void View::onNewTab() {
+  Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
+  for(GList* l = fm_file_info_list_peek_head_link(menu->files()); l; l = l->next) {
+    FmFileInfo* file = FM_FILE_INFO(l->data);
+    Q_EMIT openDirRequested(fm_file_info_get_path(file), OpenInNewTab);
+  }
+}
+
+void View::onOpenInTerminal() {
+  Application* app = static_cast<Application*>(qApp);
+  Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
+  for(GList* l = fm_file_info_list_peek_head_link(menu->files()); l; l = l->next) {
+    FmFileInfo* file = FM_FILE_INFO(l->data);
+    app->openFolderInTerminal(fm_file_info_get_path(file));
+  }
+}
+
+void View::onSearch() {
+  
+}
+
+void View::prepareFileMenu(Fm::FileMenu* menu) {
+  // add some more menu items for dirs
+  bool all_native = true;
+  FmFileInfoList* files = menu->files();
+  for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
+    FmFileInfo* fi = FM_FILE_INFO(l->data);
+    if(!fm_file_info_is_dir(fi))
+      return; /* actions are valid only if all selected are directories */
+    else if(!fm_file_info_is_native(fi))
+      all_native = false;
+  }
+
+  // hide "Open with" for selected dirs
+  menu->openWithAction()->setVisible(false);
+  
+  QAction* action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New T&ab"), menu);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onNewTab()));
+  menu->insertAction(menu->separator1(), action);
+
+  action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
+  connect(action, SIGNAL(triggered(bool)), SLOT(onNewWindow()));
+  menu->insertAction(menu->separator1(), action);
+
+  // TODO: add search
+  // action = menu->addAction(_("Search"));
+  if(all_native) {
+    action = new QAction(QIcon::fromTheme("utilities-terminal"), tr("Open in Termina&l"), menu);
+    connect(action, SIGNAL(triggered(bool)), SLOT(onOpenInTerminal()));
+    menu->insertAction(menu->separator1(), action);
+  }
 }
 
 void View::prepareFolderMenu(Fm::FolderMenu* menu) {

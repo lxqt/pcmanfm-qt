@@ -51,6 +51,12 @@ protected Q_SLOTS:
   void onFileClicked(int type, FmFileInfo* fileInfo);
   void onPopupMenuHide();
 
+  void onNewWindow();
+  void onNewTab();
+  void onOpenInTerminal();
+  void onSearch();
+
+protected:
   virtual void prepareFileMenu(Fm::FileMenu* menu);
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
 

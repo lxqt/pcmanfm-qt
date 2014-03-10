@@ -71,6 +71,9 @@ public:
   void updateFromSettings();
   void updateDesktopsFromSettings();
 
+  void openFolderInTerminal(FmPath* path);
+  void openFolders(FmFileInfoList* files);
+
 protected Q_SLOTS:
   void onAboutToQuit();
 

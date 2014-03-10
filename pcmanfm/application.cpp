@@ -30,6 +30,8 @@
 #include <QLibraryInfo>
 #include <QPixmapCache>
 #include <QFile>
+#include <QMessageBox>
+#include <gio/gio.h>
 
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
@@ -92,7 +94,7 @@ struct FakeTr {
     strings.reserve(reserved);
   }
 
-  const char* operator() (const char* str) {
+  const char* operator()(const char* str) {
     QString translated = QApplication::translate(NULL, str);
     strings.push_back(translated.toUtf8());
     return strings.back().constData();
@@ -385,7 +387,8 @@ void Application::launchFiles(QStringList paths, bool inNewWindow) {
 
   MainWindow* mainWin = new MainWindow();
   // open paths referred by paths
-  // TODO: handle files
+  // FIXME: query file infos first and handle non-dir files properly
+  // also reuse FmFileLauncher.
   QStringList::iterator it;
   for(it = paths.begin(); it != paths.end(); ++it) {
     QString& pathName = *it;
@@ -393,10 +396,62 @@ void Application::launchFiles(QStringList paths, bool inNewWindow) {
     mainWin->addTab(path);
     fm_path_unref(path);
   }
-
   mainWin->resize(settings_.windowWidth(), settings_.windowHeight());
   mainWin->show();
   mainWin->raise();
+}
+
+void Application::openFolders(FmFileInfoList* files) {
+  // open the files in a new window
+  // FIXME: support opening folders in the last active existing window
+  MainWindow* newWin = new MainWindow();
+  // apply window size from app->settings
+  newWin->resize(settings().windowWidth(), settings().windowHeight());
+  for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
+    FmFileInfo* file = FM_FILE_INFO(l->data);
+    newWin->addTab(fm_file_info_get_path(file));
+  }
+  newWin->show();
+  newWin->raise();
+}
+
+void Application::openFolderInTerminal(FmPath* path) {
+  if(!settings_.terminalDirCommand().isEmpty()) {
+    // run the terminal command
+    char* cwd_str;
+    if(fm_path_is_native(path))
+      cwd_str = fm_path_to_str(path);
+    else { // gio will map remote filesystems to local FUSE-mounted paths here.
+      GFile* gf = fm_path_to_gfile(path);
+      cwd_str = g_file_get_path(gf);
+      g_object_unref(gf);
+    }
+
+    char* old_cwd = g_get_current_dir();
+    GAppInfo* appInfo = g_app_info_create_from_commandline(
+                          settings_.terminalDirCommand().toLocal8Bit().constData(),
+                          NULL, GAppInfoCreateFlags(0), NULL);
+
+    // change to the desired dir prior to running the terminal emulator. This is quite dirty
+    g_chdir(cwd_str); // currently we don't have better way for this. maybe a wrapper script?
+    g_free(cwd_str);
+
+    GError* err = NULL;
+    if(!g_app_info_launch(appInfo, NULL, NULL, &err)) {
+      QMessageBox::critical(NULL, tr("Error"), QString::fromUtf8(err->message));
+      g_error_free(err);
+    }
+
+    g_object_unref(appInfo);
+    /* switch back to old cwd and fix #3114626 - PCManFM 0.9.9 Umount partitions problem */
+    g_chdir(old_cwd); /* This is really dirty, but we don't have better solution now. */
+    g_free(old_cwd);
+  }
+  else {
+    // show an error message and ask the user to set the command
+    QMessageBox::critical(NULL, tr("Error"), tr("Terminal emulator is not set."));
+    preferences("advanced");
+  }
 }
 
 void Application::preferences(QString page) {
@@ -425,18 +480,18 @@ void Application::setWallpaper(QString path, QString modeString) {
   }
   // convert mode string to value
   for(int i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
-	if(modeString == valid_wallpaper_modes[i]) {
+    if(modeString == valid_wallpaper_modes[i]) {
       mode = (DesktopWindow::WallpaperMode)i;
       if(mode != settings_.wallpaperMode())
-		changed = true;
+        changed = true;
       break;
-	}
+    }
   }
   // FIXME: support different wallpapers on different screen.
   // update wallpaper
   if(changed) {
     if(enableDesktopManager_) {
-      Q_FOREACH(DesktopWindow* desktopWindow, desktopWindows_) {
+      Q_FOREACH(DesktopWindow * desktopWindow, desktopWindows_) {
         if(!path.isEmpty())
           desktopWindow->setWallpaperFile(path);
         if(mode != settings_.wallpaperMode())
