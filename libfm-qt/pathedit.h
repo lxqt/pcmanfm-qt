@@ -30,6 +30,8 @@ class QStringListModel;
 
 namespace Fm {
 
+struct JobData;
+
 class LIBFM_QT_API PathEdit : public QLineEdit {
 Q_OBJECT
 public:
@@ -44,9 +46,11 @@ private Q_SLOTS:
   void onTextChanged(const QString & text);
 
 private:
-  void reloadCompleter();
+  void reloadCompleter(bool triggeredByFocusInEvent = false);
+  void freeCompleter();
   static gboolean jobFunc(GIOSchedulerJob *job, GCancellable *cancellable, gpointer user_data);
-  static gboolean onJobFinished(gpointer user_data);
+  static gboolean _onJobFinished(gpointer user_data);
+  void onJobFinished(JobData* data);
 
 private:
   QCompleter* completer_;

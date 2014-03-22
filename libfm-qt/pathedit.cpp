@@ -22,9 +22,10 @@
 #include <QCompleter>
 #include <QStringListModel>
 #include <QStringBuilder>
+#include <QDebug>
 #include <libfm/fm.h>
 
-using namespace Fm;
+namespace Fm {
 
 PathEdit::PathEdit(QWidget* parent):
   QLineEdit(parent),
@@ -48,10 +49,14 @@ PathEdit::~PathEdit() {
 
 void PathEdit::focusInEvent(QFocusEvent* e) {
   QLineEdit::focusInEvent(e);
+  // build the completion list only when we have the keyboard focus
+  reloadCompleter(true);
 }
 
 void PathEdit::focusOutEvent(QFocusEvent* e) {
   QLineEdit::focusOutEvent(e);
+  // free the completion list since we don't need it anymore
+  freeCompleter();
 }
 
 void PathEdit::onTextChanged(const QString& text) {
@@ -63,7 +68,11 @@ void PathEdit::onTextChanged(const QString& text) {
   QString newPrefix = text.left(pos);
   if(currentPrefix_ != newPrefix) {
     currentPrefix_ = newPrefix;
-    reloadCompleter();
+    // only build the completion list if we have the keyboard focus
+    // if we don't have the focus now, then we'll rebuild the completion list
+    // when focusInEvent happens. this avoid unnecessary dir loading.
+    if(hasFocus())
+      reloadCompleter(false);
   }
 }
 
@@ -72,7 +81,8 @@ struct JobData {
   GFile* dirName;
   QStringList subDirs;
   PathEdit* edit;
-  
+  bool triggeredByFocusInEvent;
+
   ~JobData() {
     g_object_unref(dirName);
     g_object_unref(cancellable);
@@ -83,7 +93,7 @@ struct JobData {
   }
 };
 
-void PathEdit::reloadCompleter() {
+void PathEdit::reloadCompleter(bool triggeredByFocusInEvent) {
   // parent dir has been changed, reload dir list
   // if(currentPrefix_[0] == "~") { // special case for home dir
   // cancel running dir-listing jobs, if there's any
@@ -94,15 +104,25 @@ void PathEdit::reloadCompleter() {
   // launch a new job to do dir listing
   JobData* data = new JobData();
   data->edit = this;
+  data->triggeredByFocusInEvent = triggeredByFocusInEvent;
   // need to use fm_file_new_for_commandline_arg() rather than g_file_new_for_commandline_arg().
   // otherwise, our own vfs, such as menu://, won't be loaded.
   data->dirName = fm_file_new_for_commandline_arg(currentPrefix_.toLocal8Bit().constData());
-  qDebug("load: %s", g_file_get_uri(data->dirName));
+  // qDebug("load: %s", g_file_get_uri(data->dirName));
   cancellable_ = g_cancellable_new();
   data->cancellable = (GCancellable*)g_object_ref(cancellable_);
   g_io_scheduler_push_job((GIOSchedulerJobFunc)jobFunc,
                           data, (GDestroyNotify)JobData::freeMe,
                           G_PRIORITY_LOW, cancellable_);
+}
+
+void PathEdit::freeCompleter() {
+  if(cancellable_) {
+    g_cancellable_cancel(cancellable_);
+    g_object_unref(cancellable_);
+    cancellable_ = NULL;
+  }
+  model_->setStringList(QStringList());
 }
 
 gboolean PathEdit::jobFunc(GIOSchedulerJob* job, GCancellable* cancellable, gpointer user_data) {
@@ -139,29 +159,37 @@ gboolean PathEdit::jobFunc(GIOSchedulerJob* job, GCancellable* cancellable, gpoi
     g_object_unref(enu);
   }
   // finished! let's update the UI in the main thread
-  g_io_scheduler_job_send_to_mainloop(job, onJobFinished, data, NULL);
+  g_io_scheduler_job_send_to_mainloop(job, _onJobFinished, data, NULL);
   return FALSE;
 }
 
-// This callback function is called from main thread so it's safe to access the GUI
-gboolean PathEdit::onJobFinished(gpointer user_data) {
+// static
+gboolean PathEdit::_onJobFinished(gpointer user_data) {
   JobData* data = reinterpret_cast<JobData*>(user_data);
-  PathEdit* pThis = data->edit;
+  data->edit->onJobFinished(data);
+  return TRUE;
+}
+
+// This callback function is called from main thread so it's safe to access the GUI
+void PathEdit::onJobFinished(JobData* data) {
   if(!g_cancellable_is_cancelled(data->cancellable)) {
     // update the completer only if the job is not cancelled
     QStringList::iterator it;
     for(it = data->subDirs.begin(); it != data->subDirs.end(); ++it) {
-      qDebug("%s", it->toUtf8().constData());
-      *it = (pThis->currentPrefix_ % *it);
+      // qDebug("%s", it->toUtf8().constData());
+      *it = (currentPrefix_ % *it);
     }
-    pThis->model_->setStringList(data->subDirs);
+    model_->setStringList(data->subDirs);
     // trigger completion manually
-    if(pThis->hasFocus())
-      pThis->completer_->complete();
+    if(hasFocus() && !data->triggeredByFocusInEvent)
+      completer_->complete();
   }
   else
-    pThis->model_->setStringList(QStringList());
-  g_object_unref(pThis->cancellable_);
-  pThis->cancellable_ = NULL;
-  return TRUE;
+    model_->setStringList(QStringList());
+  if(cancellable_) {
+    g_object_unref(cancellable_);
+    cancellable_ = NULL;
+  }
 }
+
+} // namespace Fm
