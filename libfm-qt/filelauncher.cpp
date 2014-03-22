@@ -20,18 +20,19 @@
 
 #include "filelauncher.h"
 #include "applaunchcontext.h"
+#include <QMessageBox>
+#include <QEventLoop>
+#include "execfiledialog.h"
 
 using namespace Fm;
 
 FmFileLauncher FileLauncher::funcs = {
-    NULL,
-    /* gboolean (*before_open)(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data); */
-    (FmLaunchFolderFunc)FileLauncher::openFolder,
-    // FmFileLauncherExecAction (*exec_file)(FmFileInfo* file, gpointer user_data);
-    NULL,
-    FileLauncher::error,
-    // int (*ask)(const char* msg, char* const* btn_labels, int default_btn, gpointer user_data);  
-    NULL
+  FileLauncher::_getApp,
+  /* gboolean (*before_open)(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data); */
+  (FmLaunchFolderFunc)FileLauncher::_openFolder,
+  FileLauncher::_execFile,
+  FileLauncher::_error,
+  FileLauncher::_ask
 };
 
 FileLauncher::FileLauncher() {
@@ -45,20 +46,46 @@ FileLauncher::~FileLauncher() {
 //static
 bool FileLauncher::launch(QWidget* parent, GList* file_infos) {
   FmAppLaunchContext* context = fm_app_launch_context_new_for_widget(parent);
-  bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), file_infos, &funcs, parent);
+  bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), file_infos, &funcs, this);
   g_object_unref(context);
   return ret;
 }
 
-//static
-gboolean FileLauncher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data, GError** err) {
-  return FALSE;
+GAppInfo* FileLauncher::getApp(GList* file_infos, FmMimeType* mime_type, GError** err) {
+  return NULL;
 }
 
-// static FmFileLauncherExecAction (*exec_file)(FmFileInfo* file, gpointer user_data);
-
-//static
-gboolean FileLauncher::error(GAppLaunchContext* ctx, GError* err, FmPath* file, gpointer user_data) {
-  return TRUE;
+bool FileLauncher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err) {
+  return false;
 }
-  
+
+FmFileLauncherExecAction FileLauncher::execFile(FmFileInfo* file) {
+  FmFileLauncherExecAction res = FM_FILE_LAUNCHER_EXEC_CANCEL;
+  // FIXME: should we make a non-modal dialog here with QEventLoop?
+  ExecFileDialog dlg(file);
+  if(dlg.exec() == QDialog::Accepted) {
+    res = dlg.result();
+  }
+  return res;
+}
+
+int FileLauncher::ask(const char* msg, char* const* btn_labels, int default_btn) {
+  /* FIXME: set default button properly */
+  // return fm_askv(data->parent, NULL, msg, btn_labels);
+  return -1;
+}
+
+bool FileLauncher::error(GAppLaunchContext* ctx, GError* err, FmPath* path) {
+  /* ask for mount if trying to launch unmounted path */
+  if(err->domain == G_IO_ERROR) {
+    if(path && err->code == G_IO_ERROR_NOT_MOUNTED) {
+      //if(fm_mount_path(data->parent, path, TRUE))
+      //  return FALSE; /* ask to retry */
+    }
+    else if(err->code == G_IO_ERROR_FAILED_HANDLED)
+      return true; /* don't show error message */
+  }
+  QMessageBox::critical(NULL, QObject::tr("Error"), QString::fromUtf8(err->message));
+  return false;
+}
+

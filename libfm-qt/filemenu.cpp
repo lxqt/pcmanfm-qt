@@ -248,7 +248,8 @@ void FileMenu::addCustomActionItem(QMenu* menu, FmFileActionItem* item) {
 #endif
 
 void FileMenu::onOpenTriggered() {
-  Fm::FileLauncher::launch(NULL, files_);
+  Fm::FileLauncher launcher;
+  launcher.launch(NULL, files_);
 }
 
 void FileMenu::onApplicationTriggered() {

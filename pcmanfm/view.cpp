@@ -59,7 +59,8 @@ void View::onFileClicked(int type, FmFileInfo* fileInfo) {
     }
     else {
       GList* files = g_list_append(NULL, fileInfo);
-      Fm::FileLauncher::launch(NULL, files);
+      Fm::FileLauncher launcher;
+      launcher.launch(NULL, files);
       g_list_free(files);
     }
   }

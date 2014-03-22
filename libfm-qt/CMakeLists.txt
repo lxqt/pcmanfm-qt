@@ -52,6 +52,7 @@ set(libfm_SRCS
   editbookmarksdialog.cpp
   thumbnailloader.cpp
   path.cpp
+  execfiledialog.cpp
 )
 
 set(libfm_UIS
@@ -60,6 +61,7 @@ set(libfm_UIS
   rename-dialog.ui
   mount-operation-password.ui
   edit-bookmarks.ui
+  exec-file.ui
 )
 
 QT4_WRAP_UI(libfm_UIS_H ${libfm_UIS})

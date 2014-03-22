@@ -31,17 +31,35 @@ class LIBFM_QT_API FileLauncher {
 public:
   FileLauncher();
   ~FileLauncher();
-  static bool launch(QWidget* parent, GList* file_infos);
-  static bool launch(QWidget* parent, FmFileInfoList* file_infos) {
+  bool launch(QWidget* parent, GList* file_infos);
+  bool launch(QWidget* parent, FmFileInfoList* file_infos) {
     GList* fileList = fm_file_info_list_peek_head_link(file_infos);
     Fm::FileLauncher::launch(NULL, fileList);
   }
 
 protected:
-    static gboolean openFolder(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data, GError** err);
-    // static FmFileLauncherExecAction (*exec_file)(FmFileInfo* file, gpointer user_data);
-    static gboolean error(GAppLaunchContext* ctx, GError* err, FmPath* file, gpointer user_data);
-    // static int (*ask)(const char* msg, char* const* btn_labels, int default_btn, gpointer user_data);  
+  virtual GAppInfo* getApp(GList* file_infos, FmMimeType* mime_type, GError** err);
+  virtual bool openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err);
+  virtual FmFileLauncherExecAction execFile(FmFileInfo* file);
+  virtual bool error(GAppLaunchContext* ctx, GError* err, FmPath* path);
+  virtual int ask(const char* msg, char* const* btn_labels, int default_btn);
+
+private:
+  static GAppInfo* _getApp(GList* file_infos, FmMimeType* mime_type, gpointer user_data, GError** err) {
+     return reinterpret_cast<FileLauncher*>(user_data)->getApp(file_infos, mime_type, err);
+  }
+  static gboolean _openFolder(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data, GError** err) {
+    return reinterpret_cast<FileLauncher*>(user_data)->openFolder(ctx, folder_infos, err);
+  }
+  static FmFileLauncherExecAction _execFile(FmFileInfo* file, gpointer user_data) {
+    return reinterpret_cast<FileLauncher*>(user_data)->execFile(file);
+  }
+  static gboolean _error(GAppLaunchContext* ctx, GError* err, FmPath* file, gpointer user_data) {
+    return reinterpret_cast<FileLauncher*>(user_data)->error(ctx, err, file);
+  }
+  static int _ask(const char* msg, char* const* btn_labels, int default_btn, gpointer user_data) {
+    return reinterpret_cast<FileLauncher*>(user_data)->ask(msg, btn_labels, default_btn);
+  }
 
 private:
   static FmFileLauncher funcs;
