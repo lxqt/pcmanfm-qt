@@ -56,7 +56,7 @@ public:
   virtual ~PlacesModel();
 
   bool showTrash() {
-    return showTrash_;
+    return trashItem_ != NULL;
   }
   void setShowTrash(bool show);
 
@@ -72,6 +72,7 @@ public:
 
 public Q_SLOTS:
   void updateIcons();
+  void updateTrash();
 
 protected:
   
@@ -87,6 +88,8 @@ protected:
   virtual bool dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent);
   Qt::DropActions supportedDropActions() const;
 
+  void createTrashItem();
+  
 private:
   void loadBookmarks();
   
@@ -99,17 +102,18 @@ private:
   
   static void onBookmarksChanged(FmBookmarks* bookmarks, PlacesModel* pThis);
 
+  static void onTrashChanged(GFileMonitor *monitor, GFile *gf, GFile *other, GFileMonitorEvent evt, PlacesModel* pThis);
 private:
   FmBookmarks* bookmarks;
   GVolumeMonitor* volumeMonitor;
   QList<FmJob*> jobs;
-  bool showTrash_;
   bool showApplications_;
   bool showDesktop_;
   QStandardItem* placesRoot;
   QStandardItem* devicesRoot;
   QStandardItem* bookmarksRoot;
-  PlacesModelItem* trashItem;
+  PlacesModelItem* trashItem_;
+  GFileMonitor* trashMonitor_;
   PlacesModelItem* desktopItem;
   PlacesModelItem* homeItem;
   PlacesModelItem* computerItem;

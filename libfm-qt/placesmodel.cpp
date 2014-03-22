@@ -23,13 +23,13 @@
 #include <gio/gio.h>
 #include <QDebug>
 #include <QMimeData>
+#include <QTimer>
 #include "utilities.h"
 
 using namespace Fm;
 
 PlacesModel::PlacesModel(QObject* parent):
   QStandardItemModel(parent),
-  showTrash_(true),
   showApplications_(true),
   showDesktop_(true),
   ejectIcon_(QIcon::fromTheme("media-eject")) {
@@ -51,9 +51,7 @@ PlacesModel::PlacesModel(QObject* parent):
   desktopItem->setEditable(false);
   placesRoot->appendRow(desktopItem);
 
-  trashItem = new PlacesModelItem("user-trash", tr("Trash"), fm_path_get_trash());
-  trashItem->setEditable(false);
-  placesRoot->appendRow(trashItem);
+  createTrashItem();
 
   FmPath* path = fm_path_new_for_uri("computer:///");
   computerItem = new PlacesModelItem("computer", tr("Computer"), path);
@@ -162,6 +160,50 @@ PlacesModel::~PlacesModel() {
     g_signal_handlers_disconnect_by_func(volumeMonitor, (gpointer)G_CALLBACK(onMountRemoved), this);
     g_object_unref(volumeMonitor);
   }
+
+  if(trashMonitor_) {
+      g_signal_handlers_disconnect_by_func(trashMonitor_, (gpointer)G_CALLBACK(onTrashChanged), this);
+      g_object_unref(trashMonitor_);
+  }
+}
+
+// static
+void PlacesModel::onTrashChanged(GFileMonitor* monitor, GFile* gf, GFile* other, GFileMonitorEvent evt, PlacesModel* pThis) {
+  QTimer::singleShot(0, pThis, SLOT(updateTrash()));
+}
+
+void PlacesModel::updateTrash() {
+  if(trashItem_) {
+    GFile* gf = fm_file_new_for_uri("trash:///");
+    GFileInfo* inf = g_file_query_info(gf, G_FILE_ATTRIBUTE_TRASH_ITEM_COUNT, G_FILE_QUERY_INFO_NONE, NULL, NULL);
+    g_object_unref(gf);
+    if(inf) {
+      guint32 n = g_file_info_get_attribute_uint32(inf, G_FILE_ATTRIBUTE_TRASH_ITEM_COUNT);
+      g_object_unref(inf);
+      const char* icon_name = n > 0 ? "user-trash-full" : "user-trash";
+      FmIcon* icon = fm_icon_from_name(icon_name);
+      trashItem_->setIcon(icon);
+      fm_icon_unref(icon);
+    }
+  }
+}
+
+void PlacesModel::createTrashItem() {
+  trashItem_ = new PlacesModelItem("user-trash", tr("Trash"), fm_path_get_trash());
+  trashItem_->setEditable(false);
+
+  GFile* gf;
+  gf = fm_file_new_for_uri("trash:///");
+  if(!g_file_query_exists(gf, NULL)) {
+    g_object_unref(gf);
+    return;
+  }
+  trashMonitor_ = fm_monitor_directory(gf, NULL);
+  g_signal_connect(trashMonitor_, "changed", G_CALLBACK(onTrashChanged), this);
+  g_object_unref(gf);
+
+  placesRoot->insertRow(desktopItem->row() + 1, trashItem_);
+  QTimer::singleShot(0, this, SLOT(updateTrash()));
 }
 
 void PlacesModel::setShowApplications(bool show) {
@@ -177,8 +219,20 @@ void PlacesModel::setShowDesktop(bool show) {
 }
 
 void PlacesModel::setShowTrash(bool show) {
-  if(showTrash_ != show) {
-    showTrash_ = show;
+  if(show) {
+    if(!trashItem_)
+      createTrashItem();
+  }
+  else {
+    if(trashItem_) {
+      if(trashMonitor_) {
+        g_signal_handlers_disconnect_by_func(trashMonitor_, (gpointer)G_CALLBACK(onTrashChanged), this);
+        g_object_unref(trashMonitor_);
+        trashMonitor_ = NULL;
+      }
+      placesRoot->removeRow(trashItem_->row()); // delete trashItem_;
+      trashItem_ = NULL;
+    }
   }
 }
 
@@ -387,11 +441,11 @@ bool PlacesModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
     if(row == -1 && column == -1) { // drop on an item
       // we only allow dropping on an bookmark item
       if(item && item->parent() == bookmarksRoot)
-	newPos = parent.row();
+        newPos = parent.row();
     }
     else { // drop on a position between items
       if(item == bookmarksRoot) // we only allow dropping on a bookmark item
-	newPos = row;
+        newPos = row;
     }
     if(newPos != -1 && newPos != oldPos) // reorder the bookmark item
       fm_bookmarks_reorder(bookmarks, draggedItem, newPos);
@@ -421,7 +475,7 @@ bool PlacesModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
             g_free(disp_name);
           }
           g_object_unref(gf);
-	  return true;
+          return true;
         }
       }
     }
