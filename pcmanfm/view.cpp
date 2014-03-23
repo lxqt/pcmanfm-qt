@@ -101,7 +101,7 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
   }
 
   // hide "Open with" for selected dirs
-  menu->openWithAction()->setVisible(false);
+  menu->openWithMenuAction()->setVisible(false);
   
   QAction* action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New T&ab"), menu);
   connect(action, SIGNAL(triggered(bool)), SLOT(onNewTab()));
