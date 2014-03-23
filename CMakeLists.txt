@@ -52,6 +52,23 @@ add_custom_target(update_translations ALL DEPENDS
   pcmanfm_translations
 )
 
+# add Doxygen support to genrate API docs
+# References:
+# http://majewsky.wordpress.com/2010/08/14/tip-of-the-day-cmake-and-doxygen/
+# http://www.bluequartz.net/projects/EIM_Segmentation/SoftwareDocumentation/html/usewithcmakeproject.html
+option(BUILD_DOCUMENTATION "Use Doxygen to create the HTML based API documentation" OFF)
+if(BUILD_DOCUMENTATION)
+  find_package(Doxygen)
+  if(DOXYGEN_FOUND)
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile @ONLY)
+    add_custom_target(doc ALL
+      ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
+      WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+      COMMENT "Generating API documentation with Doxygen" VERBATIM
+    )
+  endif(DOXYGEN_FOUND)
+endif(BUILD_DOCUMENTATION)
+
 # building tarball with CPack -------------------------------------------------
 # To create a source distribution, type:
 # make package_source
