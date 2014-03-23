@@ -49,9 +49,7 @@ FilePropsDialog::FilePropsDialog(FmFileInfoList* files, QWidget* parent, Qt::Win
   singleType(fm_file_info_list_is_same_type(files)),
   singleFile(fm_file_info_list_get_length(files) == 1 ? true:false),
   fileInfo(fm_file_info_list_peek_head(files)),
-  mimeType(NULL),
-  appInfos(NULL),
-  defaultApp(NULL) {
+  mimeType(NULL) {
 
   setAttribute(Qt::WA_DeleteOnClose);
 
@@ -73,12 +71,6 @@ FilePropsDialog::FilePropsDialog(FmFileInfoList* files, QWidget* parent, Qt::Win
 FilePropsDialog::~FilePropsDialog() {
   delete ui;
 
-  // delete GAppInfo objects stored for Combobox
-  if(appInfos) {
-    g_list_foreach(appInfos, (GFunc)g_object_unref, NULL);
-    g_list_free(appInfos);
-  }
-
   if(fileInfos_)
     fm_file_info_list_unref(fileInfos_);
   if(deepCountJob)
@@ -92,21 +84,7 @@ FilePropsDialog::~FilePropsDialog() {
 
 void FilePropsDialog::initApplications() {
   if(singleType && mimeType && !fm_file_info_is_dir(fileInfo)) {
-    const char* typeName = fm_mime_type_get_type(mimeType);
-    defaultApp = g_app_info_get_default_for_type(typeName, FALSE);
-    int defaultIndex = 0;
-    appInfos = g_app_info_get_all_for_type(typeName);
-    int i = 0;
-    for(GList* l = appInfos; l; l = l->next, ++i) {
-      GAppInfo* app = G_APP_INFO(l->data);
-      GIcon* gicon = g_app_info_get_icon(app);
-      QString name = QString::fromUtf8(g_app_info_get_name(app));
-      QVariant data = qVariantFromValue<void*>(app);
-      ui->openWith->addItem(IconTheme::icon(gicon), name, data);
-      if(app == defaultApp)
-        defaultIndex = i;
-    }
-    ui->openWith->setCurrentIndex(defaultIndex);
+    ui->openWith->setMimeType(mimeType);
   }
   else {
     ui->openWith->hide();
@@ -362,12 +340,9 @@ void FilePropsDialog::onFileSizeTimerTimeout() {
 void FilePropsDialog::accept() {
 
   // applications
-  if(mimeType) {
-    int i = ui->openWith->currentIndex();
-    GAppInfo* currentApp = G_APP_INFO(g_list_nth_data(appInfos, i));
-    if(currentApp != defaultApp) {
-      g_app_info_set_as_default_for_type(currentApp, fm_mime_type_get_type(mimeType), NULL);
-    }
+  if(mimeType && ui->openWith->isChanged()) {
+    GAppInfo* currentApp = ui->openWith->selectedApp();
+    g_app_info_set_as_default_for_type(currentApp, fm_mime_type_get_type(mimeType), NULL);
   }
 
   // check if chown or chmod is needed

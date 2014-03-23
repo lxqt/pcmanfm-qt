@@ -74,8 +74,6 @@ private:
   bool allNative; // all files are on native UNIX filesystems (not virtual or remote)
 
   FmMimeType* mimeType; // mime type of the files
-  GList* appInfos; // applications used to open the file type
-  GAppInfo* defaultApp; // default application used to open the file type 
 
   gint32 uid; // owner uid of the files, -1 means all files do not have the same uid
   gint32 gid; // owner gid of the files, -1 means all files do not have the same uid

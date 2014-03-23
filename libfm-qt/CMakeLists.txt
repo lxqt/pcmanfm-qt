@@ -53,6 +53,7 @@ set(libfm_SRCS
   thumbnailloader.cpp
   path.cpp
   execfiledialog.cpp
+  appchoosercombobox.cpp
 )
 
 set(libfm_UIS
