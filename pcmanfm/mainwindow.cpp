@@ -49,7 +49,8 @@ using namespace Fm;
 namespace PCManFM {
 
 MainWindow::MainWindow(FmPath* path):
-  QMainWindow() {
+  QMainWindow(),
+  fileLauncher_(this) {
 
   Settings& settings = static_cast<Application*>(qApp)->settings();
   setAttribute(Qt::WA_DeleteOnClose);
@@ -169,6 +170,7 @@ void MainWindow::addTab(FmPath* path) {
   Settings& settings = static_cast<Application*>(qApp)->settings();
 
   TabPage* newPage = new TabPage(path, this);
+  newPage->setFileLauncher(&fileLauncher_);
   int index = ui.stackedWidget->addWidget(newPage);
   connect(newPage, SIGNAL(titleChanged(QString)), SLOT(onTabPageTitleChanged(QString)));
   connect(newPage, SIGNAL(statusChanged(int, QString)), SLOT(onTabPageStatusChanged(int, QString)));

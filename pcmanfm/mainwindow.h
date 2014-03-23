@@ -34,6 +34,7 @@
 #include <QTabBar>
 #include <QStackedWidget>
 #include <QSplitter>
+#include "launcher.h"
 
 namespace PCManFM {
 
@@ -148,6 +149,7 @@ private:
   QLineEdit* pathEntry;
   QLabel* fsInfoLabel;
   FmBookmarks* bookmarks;
+  Launcher fileLauncher_;
 };
 
 }

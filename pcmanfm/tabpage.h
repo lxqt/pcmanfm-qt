@@ -31,9 +31,14 @@
 #include "view.h"
 #include "browsehistory.h"
 
+namespace Fm {
+  class FileLauncher;
+};
+
 namespace PCManFM {
 
 class Settings;
+class Launcher;
 
 class TabPage : public QWidget {
 Q_OBJECT
@@ -161,6 +166,14 @@ public:
   void up();
 
   void updateFromSettings(Settings& settings);
+
+  void setFileLauncher(Fm::FileLauncher* launcher) {
+    folderView_->setFileLauncher(launcher);
+  }
+
+  Fm::FileLauncher* fileLauncher() {
+    return folderView_->fileLauncher();
+  }
 
 Q_SIGNALS:
   void statusChanged(int type, QString statusText);

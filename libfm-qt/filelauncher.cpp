@@ -22,6 +22,7 @@
 #include "applaunchcontext.h"
 #include <QMessageBox>
 #include <QEventLoop>
+#include <QDebug>
 #include "execfiledialog.h"
 
 using namespace Fm;
@@ -44,9 +45,16 @@ FileLauncher::~FileLauncher() {
 }
 
 //static
-bool FileLauncher::launch(QWidget* parent, GList* file_infos) {
+bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
   FmAppLaunchContext* context = fm_app_launch_context_new_for_widget(parent);
   bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), file_infos, &funcs, this);
+  g_object_unref(context);
+  return ret;
+}
+
+bool FileLauncher::launchPaths(QWidget* parent, GList* paths) {
+  FmAppLaunchContext* context = fm_app_launch_context_new_for_widget(parent);
+  bool ret = fm_launch_paths(G_APP_LAUNCH_CONTEXT(context), paths, &funcs, this);
   g_object_unref(context);
   return ret;
 }
@@ -56,6 +64,10 @@ GAppInfo* FileLauncher::getApp(GList* file_infos, FmMimeType* mime_type, GError*
 }
 
 bool FileLauncher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err) {
+  for(GList* l = folder_infos; l; l = l->next) {
+    FmFileInfo* fi = FM_FILE_INFO(l->data);
+    qDebug() << "  folder:" << QString::fromUtf8(fm_file_info_get_disp_name(fi));
+  }
   return false;
 }
 

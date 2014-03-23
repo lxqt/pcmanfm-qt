@@ -32,6 +32,8 @@ struct _FmFileActionItem;
 
 namespace Fm {
 
+class FileLauncher;
+  
 class LIBFM_QT_API FileMenu : public QMenu {
 Q_OBJECT
 
@@ -105,7 +107,15 @@ public:
   FmPath* cwd() {
     return cwd_;
   }
+  
+  void setFileLauncher(FileLauncher* launcher) {
+    fileLauncher_ = launcher;
+  }
 
+  FileLauncher* fileLauncher() {
+    return fileLauncher_;
+  }
+  
 protected:
   void createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd);
 #ifdef CUSTOM_ACTIONS
@@ -150,6 +160,8 @@ private:
   QAction* renameAction_;
   QAction* separator2_;
   QAction* propertiesAction_;
+
+  FileLauncher* fileLauncher_;
 };
 
 }

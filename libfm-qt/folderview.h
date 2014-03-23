@@ -35,6 +35,8 @@ class QTimer;
 namespace Fm {
 
 class FileMenu;
+class FolderMenu;
+class FileLauncher;
 
 // override these classes for implementing FolderView
 class FolderViewListView : public QListView {
@@ -140,7 +142,15 @@ public:
   }
 
   void invertSelection();
-  
+
+  void setFileLauncher(FileLauncher* launcher) {
+    fileLauncher_ = launcher;
+  }
+
+  FileLauncher* fileLauncher() {
+    return fileLauncher_;
+  }
+
 protected:
   void contextMenuEvent(QContextMenuEvent* event);
   void childMousePressEvent(QMouseEvent* event);
@@ -154,10 +164,14 @@ protected:
   QModelIndexList selectedRows ( int column = 0 ) const;
   QModelIndexList selectedIndexes() const;
 
+  virtual void prepareFileMenu(Fm::FileMenu* menu);
+  virtual void prepareFolderMenu(Fm::FolderMenu* menu);
+
 public Q_SLOTS:
   void onItemActivated(QModelIndex index);
   void onSelectionChanged(const QItemSelection & selected, const QItemSelection & deselected);
-
+  virtual void onFileClicked(int type, FmFileInfo* fileInfo);
+  
 Q_SIGNALS:
   void clicked(int type, FmFileInfo* file);
   void selChanged(int n_sel);
@@ -169,6 +183,7 @@ private:
   ProxyFolderModel* model_;
   ViewMode mode;
   QSize iconSize_[NumViewModes];
+  FileLauncher* fileLauncher_;
 };
 
 }

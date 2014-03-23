@@ -28,6 +28,7 @@
 #include <libfm/fm-actions.h>
 #endif
 #include <QMessageBox>
+#include <QDebug>
 
 using namespace Fm;
 
@@ -81,11 +82,15 @@ private:
 
 #endif
 
-FileMenu::FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, QWidget* parent): QMenu(parent) {
+FileMenu::FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, QWidget* parent):
+  QMenu(parent),
+  fileLauncher_(NULL) {
   createMenu(files, info, cwd);
 }
 
-FileMenu::FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, const QString& title, QWidget* parent): QMenu(title, parent) {
+FileMenu::FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, const QString& title, QWidget* parent):
+  QMenu(title, parent),
+  fileLauncher_(NULL) {
   createMenu(files, info, cwd);
 }
 
@@ -248,8 +253,13 @@ void FileMenu::addCustomActionItem(QMenu* menu, FmFileActionItem* item) {
 #endif
 
 void FileMenu::onOpenTriggered() {
-  Fm::FileLauncher launcher;
-  launcher.launch(NULL, files_);
+  if(fileLauncher_) {
+    fileLauncher_->launchFiles(NULL, files_);
+  }
+  else { // use the default launcher
+    Fm::FileLauncher launcher;
+    launcher.launchFiles(NULL, files_);
+  }
 }
 
 void FileMenu::onApplicationTriggered() {

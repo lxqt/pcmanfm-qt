@@ -30,14 +30,22 @@ namespace Fm {
 class LIBFM_QT_API FileLauncher {
 public:
   FileLauncher();
-  ~FileLauncher();
-  bool launch(QWidget* parent, GList* file_infos);
-  bool launch(QWidget* parent, FmFileInfoList* file_infos) {
+  virtual ~FileLauncher();
+
+  bool launchFiles(QWidget* parent, FmFileInfoList* file_infos) {
     GList* fileList = fm_file_info_list_peek_head_link(file_infos);
-    Fm::FileLauncher::launch(NULL, fileList);
+    Fm::FileLauncher::launchFiles(parent, fileList);
+  }
+  bool launchPaths(QWidget* parent, FmPathList* paths) {
+    GList* pathList = fm_path_list_peek_head_link(paths);
+    Fm::FileLauncher::launchPaths(parent, pathList);
   }
 
+  bool launchFiles(QWidget* parent, GList* file_infos);
+  bool launchPaths(QWidget* parent, GList* paths);
+
 protected:
+
   virtual GAppInfo* getApp(GList* file_infos, FmMimeType* mime_type, GError** err);
   virtual bool openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err);
   virtual FmFileLauncherExecAction execFile(FmFileInfo* file);

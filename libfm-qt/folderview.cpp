@@ -26,11 +26,14 @@
 #include "proxyfoldermodel.h"
 #include "folderitemdelegate.h"
 #include "dndactionmenu.h"
+#include "filemenu.h"
+#include "foldermenu.h"
+#include "filelauncher.h"
 #include <QTimer>
 #include <QDate>
 #include <QDebug>
 
-using namespace Fm;
+namespace Fm {
 
 FolderViewListView::FolderViewListView(QWidget* parent):
   QListView(parent) {
@@ -280,6 +283,7 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
   QWidget(parent),
   view(NULL),
   mode((ViewMode)0),
+  fileLauncher_(NULL),
   model_(NULL) {
 
   iconSize_[IconMode - FirstViewMode] = QSize(48, 48);
@@ -293,10 +297,12 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
 
   setViewMode(_mode);
   setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
+  connect(this, SIGNAL(clicked(int, FmFileInfo*)), SLOT(onFileClicked(int, FmFileInfo*)));
 }
 
 FolderView::~FolderView() {
-  qDebug("delete FolderView");
+  // qDebug("delete FolderView");
 }
 
 void FolderView::onItemActivated(QModelIndex index) {
@@ -579,3 +585,44 @@ void FolderView::childDropEvent(QDropEvent* e) {
     e->setDropAction(action);
   }
 }
+
+void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
+  if(type == ActivatedClick) {
+    if(fileLauncher_) {
+      GList* files = g_list_append(NULL, fileInfo);
+      fileLauncher_->launchFiles(NULL, files);
+      g_list_free(files);
+    }
+  }
+  else if(type == ContextMenuClick) {
+    FmPath* folderPath = path();
+    QMenu* menu;
+    if(fileInfo) {
+      // show context menu
+      FmFileInfoList* files = selectedFiles();
+      Fm::FileMenu* fileMenu = new Fm::FileMenu(files, fileInfo, folderPath);
+      fileMenu->setFileLauncher(fileLauncher_);
+      prepareFileMenu(fileMenu);
+      fm_file_info_list_unref(files);
+      menu = fileMenu;
+    }
+    else {
+      FmFolder* _folder = folder();
+      FmFileInfo* info = fm_folder_get_info(_folder);
+      Fm::FolderMenu* folderMenu = new Fm::FolderMenu(this);
+      prepareFolderMenu(folderMenu);
+      menu = folderMenu;
+    }
+    menu->popup(QCursor::pos());
+    connect(menu, SIGNAL(aboutToHide()), menu, SLOT(deleteLater()));
+  }
+}
+
+void FolderView::prepareFileMenu(FileMenu* menu) {
+}
+
+void FolderView::prepareFolderMenu(FolderMenu* menu) {
+}
+
+
+} // namespace Fm

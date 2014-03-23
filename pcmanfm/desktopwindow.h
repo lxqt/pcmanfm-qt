@@ -25,7 +25,7 @@
 #include "cachedfoldermodel.h"
 #include "proxyfoldermodel.h"
 #include "view.h"
-#include <qcache.h>
+#include "launcher.h"
 
 namespace PCManFM {
 
@@ -79,6 +79,7 @@ private:
   WallpaperMode wallpaperMode_;
   QPixmap wallpaperPixmap_;
   DesktopItemDelegate* delegate_;
+  Launcher fileLauncher_;
 };
 
 }

@@ -26,6 +26,7 @@
 #include "settings.h"
 #include "application.h"
 #include "mainwindow.h"
+#include "launcher.h"
 #include <QAction>
 
 using namespace PCManFM;
@@ -39,60 +40,19 @@ View::View(Fm::FolderView::ViewMode _mode, QWidget* parent):
   setIconSize(Fm::FolderView::CompactMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
   setIconSize(Fm::FolderView::ThumbnailMode, QSize(settings.thumbnailIconSize(), settings.thumbnailIconSize()));
   setIconSize(Fm::FolderView::DetailedListMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
-
-  connect(this, SIGNAL(clicked(int, FmFileInfo*)), SLOT(onFileClicked(int, FmFileInfo*)));
 }
 
 View::~View() {
 }
 
-void View::onPopupMenuHide() {
-  Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender());
-  //delete the menu;
-  menu->deleteLater();
-}
-
 void View::onFileClicked(int type, FmFileInfo* fileInfo) {
-  if(type == ActivatedClick) {
-    if(fm_file_info_is_dir(fileInfo)) {
-      Q_EMIT openDirRequested(fm_file_info_get_path(fileInfo), OpenInCurrentView);
-    }
-    else {
-      GList* files = g_list_append(NULL, fileInfo);
-      Fm::FileLauncher launcher;
-      launcher.launch(NULL, files);
-      g_list_free(files);
-    }
-  }
-  else if(type == MiddleClick) {
+  if(type == MiddleClick) {
     if(fm_file_info_is_dir(fileInfo)) {
       Q_EMIT openDirRequested(fm_file_info_get_path(fileInfo), OpenInNewTab);
     }
   }
-  else if(type == ContextMenuClick) {
-    FmPath* folderPath = path();
-    QMenu* menu;
-    if(fileInfo) {
-      Application* app = static_cast<Application*>(qApp);
-      Settings& settings = app->settings();
-      // show context menu
-      FmFileInfoList* files = selectedFiles();
-      Fm::FileMenu* fileMenu = new Fm::FileMenu(files, fileInfo, folderPath);
-      fileMenu->setConfirmDelete(settings.confirmDelete());
-      fileMenu->setUseTrash(settings.useTrash());
-      prepareFileMenu(fileMenu);
-      fm_file_info_list_unref(files);
-      menu = fileMenu;
-    }
-    else {
-      FmFolder* _folder = folder();
-      FmFileInfo* info = fm_folder_get_info(_folder);
-      Fm::FolderMenu* folderMenu = new Fm::FolderMenu(this);
-      prepareFolderMenu(folderMenu);
-      menu = folderMenu;
-    }
-    menu->popup(QCursor::pos());
-    connect(menu, SIGNAL(aboutToHide()), SLOT(onPopupMenuHide()));
+  else {
+    Fm::FolderView::onFileClicked(type, fileInfo);
   }
 }
 
@@ -125,6 +85,10 @@ void View::onSearch() {
 }
 
 void View::prepareFileMenu(Fm::FileMenu* menu) {
+  Application* app = static_cast<Application*>(qApp);
+  menu->setConfirmDelete(app->settings().confirmDelete());
+  menu->setUseTrash(app->settings().useTrash());
+
   // add some more menu items for dirs
   bool all_native = true;
   FmFileInfoList* files = menu->files();

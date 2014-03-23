@@ -38,6 +38,7 @@
 #include "desktoppreferencesdialog.h"
 #include "mountoperation.h"
 #include "autorundialog.h"
+#include "launcher.h"
 
 using namespace PCManFM;
 static const char* serviceName = "org.pcmanfm.PCManFM";
@@ -384,35 +385,20 @@ void Application::findFiles(QStringList paths) {
 }
 
 void Application::launchFiles(QStringList paths, bool inNewWindow) {
-
-  MainWindow* mainWin = new MainWindow();
-  // open paths referred by paths
-  // FIXME: query file infos first and handle non-dir files properly
-  // also reuse FmFileLauncher.
+  FmPathList* pathList = fm_path_list_new();
   QStringList::iterator it;
   for(it = paths.begin(); it != paths.end(); ++it) {
     QString& pathName = *it;
     FmPath* path = fm_path_new_for_path(pathName.toUtf8().constData());
-    mainWin->addTab(path);
+    fm_path_list_push_tail(pathList, path);
     fm_path_unref(path);
   }
-  mainWin->resize(settings_.windowWidth(), settings_.windowHeight());
-  mainWin->show();
-  mainWin->raise();
+  Launcher(NULL).launchPaths(NULL, pathList);
+  fm_path_list_unref(pathList);
 }
 
 void Application::openFolders(FmFileInfoList* files) {
-  // open the files in a new window
-  // FIXME: support opening folders in the last active existing window
-  MainWindow* newWin = new MainWindow();
-  // apply window size from app->settings
-  newWin->resize(settings().windowWidth(), settings().windowHeight());
-  for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
-    FmFileInfo* file = FM_FILE_INFO(l->data);
-    newWin->addTab(fm_file_info_get_path(file));
-  }
-  newWin->show();
-  newWin->raise();
+  Launcher(NULL).launchFiles(NULL, files);
 }
 
 void Application::openFolderInTerminal(FmPath* path) {

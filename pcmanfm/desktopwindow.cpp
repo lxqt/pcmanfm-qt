@@ -40,6 +40,7 @@ DesktopWindow::DesktopWindow():
   folder_(NULL),
   model_(NULL),
   proxyModel_(NULL),
+  fileLauncher_(NULL),
   wallpaperMode_(WallpaperNone) {
 
   QDesktopWidget* desktopWidget = QApplication::desktop();
@@ -50,6 +51,9 @@ DesktopWindow::DesktopWindow():
   // paint background for the desktop widget
   setAutoFillBackground(true);
   setBackgroundRole(QPalette::Base);
+
+  // set our custom file launcher
+  View::setFileLauncher(&fileLauncher_);
 
   Settings& settings = static_cast<Application* >(qApp)->settings();
   
