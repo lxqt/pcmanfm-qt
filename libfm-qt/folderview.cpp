@@ -32,6 +32,7 @@
 #include <QTimer>
 #include <QDate>
 #include <QDebug>
+#include "folderview_p.h"
 
 namespace Fm {
 

@@ -23,7 +23,7 @@
 #include <QMessageBox>
 #include <QEventLoop>
 #include <QDebug>
-#include "execfiledialog.h"
+#include "execfiledialog_p.h"
 
 using namespace Fm;
 

@@ -24,6 +24,8 @@
 #include <QTimer>
 #include <QLineEdit>
 
+namespace Fm {
+
 // private class used in internal implementation
 class FilenameDialog : public QInputDialog {
   Q_OBJECT
@@ -53,5 +55,7 @@ private Q_SLOTS:
     }
   }
 };
+
+} // namespace Fm
 
 #endif

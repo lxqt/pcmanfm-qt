@@ -22,8 +22,8 @@
 #include <glib/gi18n.h> // for _()
 #include <QMessageBox>
 #include <QPushButton>
-#include "mountoperationpassworddialog.h"
-#include "mountoperationquestiondialog.h"
+#include "mountoperationpassworddialog_p.h"
+#include "mountoperationquestiondialog_p.h"
 #include "ui_mount-operation-password.h"
 
 using namespace Fm;

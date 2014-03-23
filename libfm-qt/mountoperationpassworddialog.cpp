@@ -18,11 +18,11 @@
 */
 
 
-#include "mountoperationpassworddialog.h"
+#include "mountoperationpassworddialog_p.h"
 #include "ui_mount-operation-password.h"
 #include "mountoperation.h"
 
-using namespace Fm;
+namespace Fm {
 
 MountOperationPasswordDialog::MountOperationPasswordDialog(MountOperation* op, GAskPasswordFlags flags):
   QDialog(),
@@ -122,3 +122,4 @@ void MountOperationPasswordDialog::done(int r) {
   QDialog::done(r);
 }
 
+} // namespace Fm

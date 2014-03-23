@@ -18,11 +18,11 @@
 */
 
 
-#include "mountoperationquestiondialog.h"
+#include "mountoperationquestiondialog_p.h"
 #include "mountoperation.h"
 #include <QPushButton>
 
-using namespace Fm;
+namespace Fm {
 
 MountOperationQuestionDialog::MountOperationQuestionDialog(MountOperation* op, gchar* message, GStrv choices):
   QMessageBox(),
@@ -67,3 +67,5 @@ void MountOperationQuestionDialog::onButtonClicked(QAbstractButton* button) {
     }
   }
 }
+
+} // namespace Fm

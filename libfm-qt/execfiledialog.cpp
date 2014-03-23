@@ -18,7 +18,7 @@
  *
  */
 
-#include "execfiledialog.h"
+#include "execfiledialog_p.h"
 #include "ui_exec-file.h"
 #include "icontheme.h"
 
