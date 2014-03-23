@@ -19,8 +19,9 @@ pkg_check_modules(LIBFM REQUIRED
   gio-2.0
   gio-unix-2.0
   libfm>=1.2.0
-#  libstartup-notification-1.0
   x11
+  libmenu-cache>=0.4.0
+#  libstartup-notification-1.0
 )
 
 include(GNUInstallDirs)

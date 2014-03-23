@@ -24,6 +24,7 @@
 #include "utilities.h"
 #include "fileoperation.h"
 #include "filelauncher.h"
+#include "appchooserdialog.h"
 #ifdef CUSTOM_ACTIONS
 #include <libfm/fm-actions.h>
 #endif
@@ -126,11 +127,11 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   connect(openAction_ , SIGNAL(triggered(bool)), SLOT(onOpenTriggered()));
   addAction(openAction_);
 
-  openWithAction_ = new QAction(tr("OpenWith"), this);
-  addAction(openWithAction_);
+  openWithMenuAction_ = new QAction(tr("Open With..."), this);
+  addAction(openWithMenuAction_);
   // create the "Open with..." sub menu
   QMenu* menu = new QMenu();
-  openWithAction_->setMenu(menu);
+  openWithMenuAction_->setMenu(menu);
 
   if(sameType_) { /* add specific menu items for this mime type */
     if(mime_type && !allVirtual_) { /* the file has a valid mime-type and its not virtual */
@@ -153,7 +154,11 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
       g_list_free(apps); /* don't unref GAppInfos now */
     }
   }
-  
+  menu->addSeparator();
+  openWithAction_ = new QAction(tr("Other Applications"), this);
+  connect(openWithAction_ , SIGNAL(triggered(bool)), SLOT(onOpenWithTriggered()));
+  menu->addAction(openWithAction_);
+
   separator1_ = addSeparator();
   
   cutAction_ = new QAction(QIcon::fromTheme("edit-cut"), tr("Cut"), this);
@@ -262,9 +267,24 @@ void FileMenu::onOpenTriggered() {
   }
 }
 
-void FileMenu::onApplicationTriggered() {
-  AppInfoAction* action = static_cast<AppInfoAction*>(sender());
-  GAppInfo* appInfo = action->appInfo();
+void FileMenu::onOpenWithTriggered() {
+  AppChooserDialog dlg(NULL);
+  if(sameType_) {
+    dlg.setMimeType(fm_file_info_get_mime_type(info_));
+  }
+  else { // we can only set the selected app as default if all files are of the same type
+    dlg.setCanSetDefault(false);
+  }
+  if(dlg.exec() == QDialog::Accepted) {
+    GAppInfo* app = dlg.selectedApp();
+    if(app) {
+      openFilesWithApp(app);
+      g_object_unref(app);
+    }
+  }
+}
+
+void FileMenu::openFilesWithApp(GAppInfo* app) {
   FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
   GList* uris = NULL;
   for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
@@ -273,9 +293,14 @@ void FileMenu::onApplicationTriggered() {
     uris = g_list_prepend(uris, uri);
   }
   fm_path_list_unref(paths);
-  fm_app_info_launch_uris(appInfo, uris, NULL, NULL);
+  fm_app_info_launch_uris(app, uris, NULL, NULL);
   g_list_foreach(uris, (GFunc)g_free, NULL);
   g_list_free(uris);  
+}
+
+void FileMenu::onApplicationTriggered() {
+  AppInfoAction* action = static_cast<AppInfoAction*>(sender());
+  openFilesWithApp(action->appInfo());
 }
 
 #ifdef CUSTOM_ACTIONS

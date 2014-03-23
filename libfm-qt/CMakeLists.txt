@@ -54,6 +54,8 @@ set(libfm_SRCS
   path.cpp
   execfiledialog.cpp
   appchoosercombobox.cpp
+  appmenuview.cpp
+  appchooserdialog.cpp
 )
 
 set(libfm_UIS
@@ -63,6 +65,7 @@ set(libfm_UIS
   mount-operation-password.ui
   edit-bookmarks.ui
   exec-file.ui
+  app-chooser-dialog.ui
 )
 
 QT4_WRAP_UI(libfm_UIS_H ${libfm_UIS})

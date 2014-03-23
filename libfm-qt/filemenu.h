@@ -60,10 +60,14 @@ public:
     return openAction_;  
   }
 
+  QAction* openWithMenuAction() {
+    return openWithMenuAction_;  
+  }
+
   QAction* openWithAction() {
     return openWithAction_;  
   }
-
+  
   QAction* separator1() {
     return separator1_;  
   }
@@ -121,9 +125,11 @@ protected:
 #ifdef CUSTOM_ACTIONS
   void addCustomActionItem(QMenu* menu, struct _FmFileActionItem* item);
 #endif
+  void openFilesWithApp(GAppInfo* app);
 
 protected Q_SLOTS:
   void onOpenTriggered();
+  void onOpenWithTriggered();
   void onFilePropertiesTriggered();
   void onApplicationTriggered();
 #ifdef CUSTOM_ACTIONS
@@ -151,6 +157,7 @@ private:
   bool allTrash_;
 
   QAction* openAction_;
+  QAction* openWithMenuAction_;
   QAction* openWithAction_;
   QAction* separator1_;
   QAction* cutAction_;

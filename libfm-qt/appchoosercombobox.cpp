@@ -20,6 +20,7 @@
 
 #include "appchoosercombobox.h"
 #include "icontheme.h"
+#include "appchooserdialog.h"
 
 namespace Fm {
 
@@ -90,7 +91,32 @@ void AppChooserComboBox::onCurrentIndexChanged(int index) {
   // the last item is "Customize"
   if(index == (count() - 1)) {
     /* TODO: let the user choose an app or add custom actions here. */
-    
+    AppChooserDialog dlg(mimeType_);
+    dlg.setCanSetDefault(false);
+    if(dlg.exec() == QDialog::Accepted) {
+      GAppInfo* app = dlg.selectedApp();
+      if(app) {
+        /* see if it's already in the list to prevent duplication */
+        GList* found = NULL;
+        for(found = appInfos_; found; found = found->next) {
+          if(g_app_info_equal(app, G_APP_INFO(found->data)))
+            break;
+        }
+        /* if it's already in the list, select it */
+        if(found) {
+          setCurrentIndex(g_list_position(appInfos_, found));
+          g_object_unref(app);
+        }
+        else { /* if it's not found, add it to the list */
+          appInfos_ = g_list_prepend(appInfos_, app);
+          GIcon* gicon = g_app_info_get_icon(app);
+          QString name = QString::fromUtf8(g_app_info_get_name(app));
+          insertItem(0, IconTheme::icon(gicon), name);
+          setCurrentIndex(0);
+        }
+        return;
+      }
+    }
     // restore to previously selected item
     setCurrentIndex(prevIndex_);
   }
@@ -104,7 +130,7 @@ void AppChooserComboBox::onCurrentIndexChanged(int index) {
 /* get a list of custom apps added with app-chooser.
 * the returned GList is owned by the combo box and shouldn't be freed. */
 const GList* AppChooserComboBox::customApps() {
- 
+
 }
 #endif
 

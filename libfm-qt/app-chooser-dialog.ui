@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>392</width>
+    <width>432</width>
     <height>387</height>
    </rect>
   </property>
@@ -17,19 +17,8 @@
    <property name="fieldGrowthPolicy">
     <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
    </property>
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>&lt;b&gt;File type to be opened:&lt;/b&gt;</string>
-     </property>
-    </widget>
-   </item>
    <item row="0" column="1">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
+    <widget class="QLabel" name="fileTypeHeader"/>
    </item>
    <item row="1" column="0" colspan="2">
     <widget class="QTabWidget" name="tabWidget">
@@ -48,16 +37,7 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QTreeWidget" name="treeWidget">
-         <attribute name="headerVisible">
-          <bool>false</bool>
-         </attribute>
-         <column>
-          <property name="text">
-           <string notr="true">1</string>
-          </property>
-         </column>
-        </widget>
+        <widget class="Fm::AppMenuView" name="appMenuView"/>
        </item>
       </layout>
      </widget>
@@ -74,7 +54,7 @@
         </widget>
        </item>
        <item row="1" column="0" colspan="2">
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="cmdLine"/>
        </item>
        <item row="3" column="0">
         <widget class="QLabel" name="label_4">
@@ -84,7 +64,7 @@
         </widget>
        </item>
        <item row="3" column="1">
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QLineEdit" name="appName"/>
        </item>
        <item row="2" column="0" colspan="2">
         <widget class="QLabel" name="label_5">
@@ -103,7 +83,7 @@
         </widget>
        </item>
        <item row="5" column="0" colspan="2">
-        <widget class="QCheckBox" name="checkBox_3">
+        <widget class="QCheckBox" name="keepTermOpen">
          <property name="enabled">
           <bool>false</bool>
          </property>
@@ -113,7 +93,7 @@
         </widget>
        </item>
        <item row="4" column="0" colspan="2">
-        <widget class="QCheckBox" name="checkBox_2">
+        <widget class="QCheckBox" name="useTerminal">
          <property name="text">
           <string>Execute in terminal emulator</string>
          </property>
@@ -124,7 +104,7 @@
     </widget>
    </item>
    <item row="2" column="0" colspan="2">
-    <widget class="QCheckBox" name="checkBox">
+    <widget class="QCheckBox" name="setDefault">
      <property name="text">
       <string>Set selected application as default action of this file type</string>
      </property>
@@ -142,6 +122,13 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Fm::AppMenuView</class>
+   <extends>QTreeView</extends>
+   <header>appmenuview.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections>
   <connection>
@@ -177,9 +164,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>checkBox_2</sender>
+   <sender>useTerminal</sender>
    <signal>toggled(bool)</signal>
-   <receiver>checkBox_3</receiver>
+   <receiver>keepTermOpen</receiver>
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
