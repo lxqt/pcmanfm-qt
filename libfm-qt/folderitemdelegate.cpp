@@ -19,6 +19,7 @@
 
 
 #include "folderitemdelegate.h"
+#include "foldermodel.h"
 #include <QPainter>
 #include <QModelIndex>
 #include <QStyleOptionViewItemV4>
@@ -29,12 +30,12 @@
 #include <QTextLine>
 #include <QDebug>
 
-using namespace Fm;
+namespace Fm {
 
-FolderItemDelegate::FolderItemDelegate(QListView* view, QObject* parent):
+FolderItemDelegate::FolderItemDelegate(QAbstractItemView* view, QObject* parent):
   QStyledItemDelegate(parent ? parent : view),
+  symlinkIcon_(QIcon::fromTheme("emblem-symbolic-link")),
   view_(view) {
-
 }
 
 FolderItemDelegate::~FolderItemDelegate() {
@@ -56,8 +57,8 @@ QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QMo
     QStyle* style = widget ? widget->style() : QApplication::style();
 
     // FIXME: there're some problems in this size hint calculation.
-    QSize gridSize = view_->gridSize();
-    QRectF textRect(0, 0, gridSize.width() - 4, gridSize.height() - opt.decorationSize.height() - 4);
+    Q_ASSERT(gridSize_ != QSize());
+    QRectF textRect(0, 0, gridSize_.width() - 4, gridSize_.height() - opt.decorationSize.height() - 4);
     drawText(NULL, opt, textRect); // passing NULL for painter will calculate the bounding rect only.
     int width = qMax((int)textRect.width(), opt.decorationSize.width()) + 4;
     int height = opt.decorationSize.height() + textRect.height() + 4;
@@ -66,9 +67,26 @@ QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QMo
   return QStyledItemDelegate::sizeHint(option, index);
 }
 
+QIcon::Mode FolderItemDelegate::iconModeFromState(QStyle::State state) {
+  QIcon::Mode iconMode;
+  if(state & QStyle::State_Enabled) {
+    if(state & QStyle::State_Selected)
+      iconMode = QIcon::Selected;
+    else {
+      iconMode = QIcon::Normal;
+    }
+  }
+  else
+    iconMode = QIcon::Disabled;
+  return iconMode;
+}
+
 // special thanks to Razor-qt developer Alec Moskvin(amoskvin) for providing the fix!
 void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const {
   Q_ASSERT(index.isValid());
+  FmFileInfo* file = static_cast<FmFileInfo*>(qVariantValue<void*>(index.data(FolderModel::FileInfoRole)));
+  bool isSymlink = file && fm_file_info_is_symlink(file);
+
   if(option.decorationPosition == QStyleOptionViewItem::Top ||
     option.decorationPosition == QStyleOptionViewItem::Bottom) {
     painter->save();
@@ -80,26 +98,35 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
 
     // draw the icon
-    QIcon::Mode iconMode;
-    if(opt.state & QStyle::State_Enabled) {
-      if(opt.state & QStyle::State_Selected)
-        iconMode = QIcon::Selected;
-      else {
-        iconMode = QIcon::Normal;
-      }
-    }
-    else
-      iconMode = QIcon::Disabled;
+    QIcon::Mode iconMode = iconModeFromState(opt.state);
     QPoint iconPos(opt.rect.x() + (opt.rect.width() - opt.decorationSize.width()) / 2, opt.rect.y());
     QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
     painter->drawPixmap(iconPos, pixmap);
 
+    // draw some emblems for the item if needed
+    // we only support symlink emblem at the moment
+    if(isSymlink)
+      painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
+
+    // draw the text
     QRectF textRect(opt.rect.x(), opt.rect.y() + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
     drawText(painter, opt, textRect);
     painter->restore();
   }
   else {
+    // let QStyledItemDelegate does its default painting
     QStyledItemDelegate::paint(painter, option, index);
+
+    // draw emblems if needed
+    if(isSymlink) {
+      QStyleOptionViewItemV4 opt = option;
+      initStyleOption(&opt, index);
+      QIcon::Mode iconMode = iconModeFromState(opt.state);
+      QPoint iconPos(opt.rect.x(), opt.rect.y() + (opt.rect.height() - opt.decorationSize.height()) / 2);
+      // draw some emblems for the item if needed
+      // we only support symlink emblem at the moment
+      painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
+    }
   }
 }
 
@@ -186,3 +213,6 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt
     style->drawPrimitive(QStyle::PE_FrameFocusRect, &o, painter, widget);
   }
 }
+
+
+} // namespace Fm

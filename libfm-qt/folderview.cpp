@@ -354,6 +354,10 @@ void FolderView::setViewMode(ViewMode _mode) {
     // FIXME: why this doesn't work?
     treeView->header()->setResizeMode(0, QHeaderView::Stretch); // QHeaderView::ResizeToContents);
     // treeView->setSelectionBehavior(QAbstractItemView::SelectItems);
+
+    // set our own custom delegate
+    FolderItemDelegate* delegate = new FolderItemDelegate(treeView);
+    treeView->setItemDelegateForColumn(FolderModel::ColumnFileName, delegate);
   }
   else {
     FolderViewListView* listView;
@@ -394,6 +398,7 @@ void FolderView::setViewMode(ViewMode _mode) {
         break;
       }
     }
+    delegate->setGridSize(listView->gridSize());
   }
   if(view) {
     connect(view, SIGNAL(activated(QModelIndex)), SLOT(onItemActivated(QModelIndex)));

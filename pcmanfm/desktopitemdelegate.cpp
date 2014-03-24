@@ -19,6 +19,7 @@
 
 
 #include "desktopitemdelegate.h"
+#include "foldermodel.h"
 #include <QApplication>
 #include <QListView>
 #include <QPainter>
@@ -32,9 +33,11 @@ using namespace PCManFM;
 DesktopItemDelegate::DesktopItemDelegate(QListView* view, QObject* parent):
   QStyledItemDelegate(parent ? parent : view),
   view_(view),
+  symlinkIcon_(QIcon::fromTheme("emblem-symbolic-link")),
   shadowColor_(0, 0, 0) {
 }
 
+// FIXME: we need to figure out a way to derive from Fm::FolderItemDelegate to avoid code duplication.
 void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const {
   Q_ASSERT(index.isValid());
   QStyleOptionViewItemV4 opt = option;
@@ -63,6 +66,15 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
   painter->drawPixmap(iconPos, pixmap);
 
+  // draw some emblems for the item if needed
+  // we only support symlink emblem at the moment
+  FmFileInfo* file = static_cast<FmFileInfo*>(qVariantValue<void*>(index.data(Fm::FolderModel::FileInfoRole)));
+  if(file) {
+    if(fm_file_info_is_symlink(file)) {
+      painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
+    }
+  }
+  
   // draw text
   QRectF textRect(opt.rect.x(), opt.rect.y() + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
   QTextLayout layout(opt.text, opt.font);

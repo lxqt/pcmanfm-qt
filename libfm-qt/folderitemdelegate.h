@@ -23,22 +23,35 @@
 
 #include "libfmqtglobals.h"
 #include <QStyledItemDelegate>
-#include <QListView>
+#include <QAbstractItemView>
 
 namespace Fm {
 
 class LIBFM_QT_API FolderItemDelegate : public QStyledItemDelegate {
+  Q_OBJECT
 public:
-  explicit FolderItemDelegate(QListView* view, QObject* parent = 0);
+  explicit FolderItemDelegate(QAbstractItemView* view, QObject* parent = 0);
   virtual ~FolderItemDelegate();
+  
+  void setGridSize(QSize size) {
+    gridSize_ = size;
+  }
+
+  QSize gridSize() {
+    return gridSize_;
+  }
+  
   virtual QSize sizeHint(const QStyleOptionViewItem & option, const QModelIndex & index) const;
   virtual void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const;
 
 private:
   void drawText(QPainter* painter, QStyleOptionViewItemV4& opt, QRectF& textRect) const;
-
+  static QIcon::Mode iconModeFromState(QStyle::State state);
+  
 private:
-  QListView* view_;
+  QAbstractItemView* view_;
+  QIcon symlinkIcon_;
+  QSize gridSize_;
 };
 
 }

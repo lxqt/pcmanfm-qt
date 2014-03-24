@@ -48,6 +48,7 @@ public:
 
 private:
   QListView* view_;
+  QIcon symlinkIcon_;
   QColor shadowColor_;
 };
 
