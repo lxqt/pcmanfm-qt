@@ -21,6 +21,7 @@
 #include "appchoosercombobox.h"
 #include "icontheme.h"
 #include "appchooserdialog.h"
+#include "utilities.h"
 
 namespace Fm {
 
@@ -91,7 +92,9 @@ void AppChooserComboBox::onCurrentIndexChanged(int index) {
   // the last item is "Customize"
   if(index == (count() - 1)) {
     /* TODO: let the user choose an app or add custom actions here. */
-    AppChooserDialog dlg(mimeType_);
+    QWidget* toplevel = topLevelWidget();
+    AppChooserDialog dlg(mimeType_, toplevel);
+    dlg.setWindowModality(Qt::WindowModal);
     dlg.setCanSetDefault(false);
     if(dlg.exec() == QDialog::Accepted) {
       GAppInfo* app = dlg.selectedApp();

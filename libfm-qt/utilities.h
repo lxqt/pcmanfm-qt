@@ -28,6 +28,8 @@
 #include <libfm/fm.h>
 #include <sys/types.h>
 
+class QDialog;
+
 namespace Fm {
 
 LIBFM_QT_API FmPathList* pathListFromQUrls(QList<QUrl> urls);
@@ -55,6 +57,8 @@ LIBFM_QT_API QString uidToName(uid_t uid);
 LIBFM_QT_API gid_t gidFromName(QString name);
 
 LIBFM_QT_API QString gidToName(gid_t gid);
+
+LIBFM_QT_API int execModelessDialog(QDialog* dlg);
 
 }
 

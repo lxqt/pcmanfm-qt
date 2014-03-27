@@ -21,9 +21,10 @@
 #include "filelauncher.h"
 #include "applaunchcontext.h"
 #include <QMessageBox>
-#include <QEventLoop>
 #include <QDebug>
 #include "execfiledialog_p.h"
+#include "appchooserdialog.h"
+#include "utilities.h"
 
 using namespace Fm;
 
@@ -60,6 +61,15 @@ bool FileLauncher::launchPaths(QWidget* parent, GList* paths) {
 }
 
 GAppInfo* FileLauncher::getApp(GList* file_infos, FmMimeType* mime_type, GError** err) {
+  AppChooserDialog dlg(NULL);
+  if(mime_type)
+    dlg.setMimeType(mime_type);
+  else
+    dlg.setCanSetDefault(false);
+  // FIXME: show error properly?
+  if(execModelessDialog(&dlg) == QDialog::Accepted) {
+    return dlg.selectedApp();
+  }
   return NULL;
 }
 
@@ -73,9 +83,8 @@ bool FileLauncher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GErro
 
 FmFileLauncherExecAction FileLauncher::execFile(FmFileInfo* file) {
   FmFileLauncherExecAction res = FM_FILE_LAUNCHER_EXEC_CANCEL;
-  // FIXME: should we make a non-modal dialog here with QEventLoop?
   ExecFileDialog dlg(file);
-  if(dlg.exec() == QDialog::Accepted) {
+  if(execModelessDialog(&dlg) == QDialog::Accepted) {
     res = dlg.result();
   }
   return res;
@@ -97,7 +106,8 @@ bool FileLauncher::error(GAppLaunchContext* ctx, GError* err, FmPath* path) {
     else if(err->code == G_IO_ERROR_FAILED_HANDLED)
       return true; /* don't show error message */
   }
-  QMessageBox::critical(NULL, QObject::tr("Error"), QString::fromUtf8(err->message));
+  QMessageBox dlg(QMessageBox::Critical, QObject::tr("Error"), QString::fromUtf8(err->message), QMessageBox::Ok);
+  execModelessDialog(&dlg);
   return false;
 }
 

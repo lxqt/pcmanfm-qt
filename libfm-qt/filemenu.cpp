@@ -226,7 +226,8 @@ void FileMenu::onOpenWithTriggered() {
   else { // we can only set the selected app as default if all files are of the same type
     dlg.setCanSetDefault(false);
   }
-  if(dlg.exec() == QDialog::Accepted) {
+  
+  if(execModelessDialog(&dlg) == QDialog::Accepted) {
     GAppInfo* app = dlg.selectedApp();
     if(app) {
       openFilesWithApp(app);
