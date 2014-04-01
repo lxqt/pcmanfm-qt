@@ -401,24 +401,12 @@ void MainWindow::onTabBarCloseRequested(int index) {
 }
 
 void MainWindow::closeTab(int index) {
-  if(ui.tabBar->count() == 1) { // this is the last one
-    close();
-    delete this; // destroy the whole window
-  }
-  else {
-    QWidget* page = ui.stackedWidget->widget(index);
+  QWidget* page = ui.stackedWidget->widget(index);
+  if(page) {
     ui.stackedWidget->removeWidget(page); // this does not delete the page widget
     delete page;
-
     // NOTE: we do not remove the tab here.
     // it'll be donoe in onStackedWidgetWidgetRemoved()
-    // notebook->removeTab(index);
-
-    Settings& settings = static_cast<Application*>(qApp)->settings();
-
-    if(!settings.alwaysShowTabs() && ui.tabBar->count() == 1) {
-      ui.tabBar->setVisible(false);
-    }
   }
 }
 
@@ -517,6 +505,15 @@ void MainWindow::updateUIForCurrentPage() {
 void MainWindow::onStackedWidgetWidgetRemoved(int index) {
   // need to remove associated tab from tabBar
   ui.tabBar->removeTab(index);
+  if(ui.tabBar->count() == 0) { // this is the last one
+    deleteLater(); // destroy the whole window
+  }
+  else {
+    Settings& settings = static_cast<Application*>(qApp)->settings();
+    if(!settings.alwaysShowTabs() && ui.tabBar->count() == 1) {
+      ui.tabBar->setVisible(false);
+    }
+  }
 }
 
 void MainWindow::onTabPageTitleChanged(QString title) {
