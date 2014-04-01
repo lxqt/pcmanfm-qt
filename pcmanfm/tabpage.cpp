@@ -231,12 +231,14 @@ QString TabPage::formatStatusText() {
 
 /*static*/ void TabPage::onFolderRemoved(FmFolder* _folder, TabPage* pThis) {
   // the folder we're showing is removed, destroy the widget
-  pThis->destroy();
+  // qDebug("folder removed"));
+  delete pThis;
 }
 
 /*static*/ void TabPage::onFolderUnmount(FmFolder* _folder, TabPage* pThis) {
   // the folder we're showing is unmounted, destroy the widget
-  pThis->destroy();
+  // qDebug("folder unmount");
+  delete pThis;
 }
 
 /*static */ void TabPage::onFolderContentChanged(FmFolder* _folder, TabPage* pThis) {
