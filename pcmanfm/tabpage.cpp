@@ -72,6 +72,10 @@ TabPage::~TabPage() {
     delete proxyModel_;
   if(folderModel_)
     folderModel_->unref();
+
+  if(overrideCursor_) {
+    QApplication::restoreOverrideCursor(); // remove busy cursor
+  }
 }
 
 void TabPage::freeFolder() {
@@ -183,6 +187,7 @@ void TabPage::freeFolder() {
         // Because the two signals are not correctly paired, we need to
         // remove busy cursor here since "finish-loading" is not emitted.
         QApplication::restoreOverrideCursor(); // remove busy cursor
+	pThis->overrideCursor_ = false;
         return FM_JOB_RETRY;
       }
     }
@@ -194,7 +199,9 @@ void TabPage::freeFolder() {
       * This fixes bug #3411298- Show "Permission denied" when switching to super user mode.
       * https://sourceforge.net/tracker/?func=detail&aid=3411298&group_id=156956&atid=801864
       * */
-    QMessageBox::critical(pThis, NULL, QString::fromUtf8(err->message));
+
+    // FIXME: consider replacing this modal dialog with an info bar to improve usability
+    QMessageBox::critical(pThis, tr("Error"), QString::fromUtf8(err->message));
   }
   return FM_JOB_CONTINUE;
 }
@@ -233,13 +240,17 @@ QString TabPage::formatStatusText() {
 /*static*/ void TabPage::onFolderRemoved(FmFolder* _folder, TabPage* pThis) {
   // the folder we're showing is removed, destroy the widget
   qDebug("folder removed");
-  delete pThis;
+  // FIXME: this is more or less a drity hack :-(
+  pThis->freeFolder(); // stop monitoring the folder. without this, FmFolder will try to reload and generate an error message box
+  pThis->deleteLater(); // destroy ourself
 }
 
 /*static*/ void TabPage::onFolderUnmount(FmFolder* _folder, TabPage* pThis) {
   // the folder we're showing is unmounted, destroy the widget
   qDebug("folder unmount");
-  delete pThis;
+  // FIXME: this is more or less a drity hack :-(
+  pThis->freeFolder(); // stop monitoring the folder. without this, FmFolder will try to reload and generate an error message box
+  pThis->deleteLater(); // destroy ourself
 }
 
 /*static */ void TabPage::onFolderContentChanged(FmFolder* _folder, TabPage* pThis) {

@@ -66,6 +66,7 @@ PlacesView::PlacesView(QWidget* parent):
 PlacesView::~PlacesView() {
   if(currentPath_)
     fm_path_unref(currentPath_);
+  // qDebug("delete PlacesView");
 }
 
 void PlacesView::onEjectButtonClicked(PlacesModelItem* item) {
@@ -77,14 +78,13 @@ void PlacesView::onEjectButtonClicked(PlacesModelItem* item) {
       op->eject(volumeItem->volume());
     else // otherwise, do unmount instead
       op->unmount(volumeItem->volume());
-    op->wait();
   }
   else if(item->type() == PlacesModelItem::Mount) {
     PlacesModelMountItem* mountItem = static_cast<PlacesModelMountItem*>(item);
     MountOperation* op = new MountOperation(true, this);
     op->unmount(mountItem->mount());
-    op->wait();
   }
+  qDebug("PlacesView::onEjectButtonClicked");
 }
 
 void PlacesView::onClicked(const QModelIndex& index) {
