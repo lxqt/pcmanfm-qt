@@ -30,6 +30,7 @@
 #include "settings.h"
 #include "application.h"
 #include "cachedfoldermodel.h"
+#include <QTimer>
 
 using namespace Fm;
 
@@ -240,17 +241,21 @@ QString TabPage::formatStatusText() {
 /*static*/ void TabPage::onFolderRemoved(FmFolder* _folder, TabPage* pThis) {
   // the folder we're showing is removed, destroy the widget
   qDebug("folder removed");
-  // FIXME: this is more or less a drity hack :-(
-  pThis->freeFolder(); // stop monitoring the folder. without this, FmFolder will try to reload and generate an error message box
-  pThis->deleteLater(); // destroy ourself
+  // NOTE: call pThis->deleteLater() directly from this GObject signal handler
+  // does not work but I don't know why.
+  // Maybe it's the problem of glib mainloop integration?
+  // Call it when idle works, though.
+  QTimer::singleShot(0, pThis, SLOT(deleteLater()));
 }
 
 /*static*/ void TabPage::onFolderUnmount(FmFolder* _folder, TabPage* pThis) {
   // the folder we're showing is unmounted, destroy the widget
   qDebug("folder unmount");
-  // FIXME: this is more or less a drity hack :-(
-  pThis->freeFolder(); // stop monitoring the folder. without this, FmFolder will try to reload and generate an error message box
-  pThis->deleteLater(); // destroy ourself
+  // NOTE: call pThis->deleteLater() directly from this GObject signal handler
+  // does not work but I don't know why.
+  // Maybe it's the problem of glib mainloop integration?
+  // Call it when idle works, though.
+  QTimer::singleShot(0, pThis, SLOT(deleteLater()));
 }
 
 /*static */ void TabPage::onFolderContentChanged(FmFolder* _folder, TabPage* pThis) {

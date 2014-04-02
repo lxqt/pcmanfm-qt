@@ -125,8 +125,8 @@ void PlacesView::onClicked(const QModelIndex& index) {
       QModelIndex itemIndex = index.sibling(index.row(), 0); // the real item is at column 0
       PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(itemIndex));
       if(item) {
-	// eject the volume or the mount
-	onEjectButtonClicked(item);
+        // eject the volume or the mount
+        onEjectButtonClicked(item);
       }
     }
   }
