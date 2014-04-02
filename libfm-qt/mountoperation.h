@@ -24,9 +24,11 @@
 #include "libfmqtglobals.h"
 #include <QWidget>
 #include <QDialog>
-#include <QEventLoop>
 #include <libfm/fm.h>
 #include <gio/gio.h>
+#include <QPointer>
+
+class QEventLoop;
 
 namespace Fm {
 
@@ -46,17 +48,17 @@ public:
   
   void mount(FmPath* path) {
     GFile* gf = fm_path_to_gfile(path);
-    g_file_mount_enclosing_volume(gf, G_MOUNT_MOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onMountFileFinished, this);
+    g_file_mount_enclosing_volume(gf, G_MOUNT_MOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onMountFileFinished, new QPointer<MountOperation>(this));
     g_object_unref(gf);
   }
 
   void mount(GVolume* volume) {
-    g_volume_mount(volume, G_MOUNT_MOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onMountVolumeFinished, this);    
+    g_volume_mount(volume, G_MOUNT_MOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onMountVolumeFinished, new QPointer<MountOperation>(this));    
   }
 
   void unmount(GMount* mount) {
     prepareUnmount(mount);
-    g_mount_unmount_with_operation(mount, G_MOUNT_UNMOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onUnmountMountFinished, this);
+    g_mount_unmount_with_operation(mount, G_MOUNT_UNMOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onUnmountMountFinished, new QPointer<MountOperation>(this));
   }
 
   void unmount(GVolume* volume) {
@@ -69,14 +71,14 @@ public:
   
   void eject(GMount* mount) {
     prepareUnmount(mount);
-    g_mount_eject_with_operation(mount, G_MOUNT_UNMOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onEjectMountFinished, this);
+    g_mount_eject_with_operation(mount, G_MOUNT_UNMOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onEjectMountFinished, new QPointer<MountOperation>(this));
   }
 
   void eject(GVolume* volume) {
     GMount* mnt = g_volume_get_mount(volume);
     prepareUnmount(mnt);
     g_object_unref(mnt);
-    g_volume_eject_with_operation(volume, G_MOUNT_UNMOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onEjectVolumeFinished, this);
+    g_volume_eject_with_operation(volume, G_MOUNT_UNMOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onEjectVolumeFinished, new QPointer<MountOperation>(this));
   }
 
   QWidget* parent() const {
@@ -129,11 +131,12 @@ private:
   static void onShowProcesses(GMountOperation *_op, gchar* message, GArray* processes, GStrv choices, MountOperation* pThis);
   static void onShowUnmountProgress(GMountOperation *_op, gchar* message, gint64 time_left, gint64 bytes_left, MountOperation* pThis);
 
-  static void onMountFileFinished(GFile* file, GAsyncResult *res, MountOperation* pThis);
-  static void onMountVolumeFinished(GVolume* volume, GAsyncResult *res, MountOperation* pThis);
-  static void onUnmountMountFinished(GMount* mount, GAsyncResult *res, MountOperation* pThis);
-  static void onEjectMountFinished(GMount* mount, GAsyncResult *res, MountOperation* pThis);
-  static void onEjectVolumeFinished(GVolume* volume, GAsyncResult *res, MountOperation* pThis);
+  // it's possible that this object is freed when the callback is called by gio, so guarding with QPointer is needed here.
+  static void onMountFileFinished(GFile* file, GAsyncResult *res, QPointer<MountOperation>* pThis);
+  static void onMountVolumeFinished(GVolume* volume, GAsyncResult *res, QPointer<MountOperation>* pThis);
+  static void onUnmountMountFinished(GMount* mount, GAsyncResult *res, QPointer<MountOperation>* pThis);
+  static void onEjectMountFinished(GMount* mount, GAsyncResult *res, QPointer<MountOperation>* pThis);
+  static void onEjectVolumeFinished(GVolume* volume, GAsyncResult *res, QPointer<MountOperation>* pThis);
 
   void handleFinish(GError* error);
 

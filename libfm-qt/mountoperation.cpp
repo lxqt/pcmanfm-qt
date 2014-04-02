@@ -1,6 +1,6 @@
 /*
 
-    Copyright (C) 2013  Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
+    Copyright (C) 2013 - 2014 Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,11 +22,12 @@
 #include <glib/gi18n.h> // for _()
 #include <QMessageBox>
 #include <QPushButton>
+#include <QEventLoop>
 #include "mountoperationpassworddialog_p.h"
 #include "mountoperationquestiondialog_p.h"
 #include "ui_mount-operation-password.h"
 
-using namespace Fm;
+namespace Fm {
 
 MountOperation::MountOperation(bool interactive, QWidget* parent):
   QObject(parent),
@@ -55,13 +56,31 @@ MountOperation::MountOperation(bool interactive, QWidget* parent):
 
 MountOperation::~MountOperation() {
   qDebug("delete MountOperation");
-
   if(cancellable_) {
-	cancel();
+    cancel();
     g_object_unref(cancellable_);
   }
-  if(op)
-	g_object_unref(op);
+
+  if(eventLoop) { // if wait() is called to block the main loop, but the event loop is still running
+    // NOTE: is this possible?
+    eventLoop->exit(1);
+  }
+
+  if(op) {
+    g_signal_handlers_disconnect_by_func(op, (gpointer)G_CALLBACK(onAskPassword), this);
+    g_signal_handlers_disconnect_by_func(op, (gpointer)G_CALLBACK(onAskQuestion), this);
+#if GLIB_CHECK_VERSION(2, 20, 0)
+    g_signal_handlers_disconnect_by_func(op, (gpointer)G_CALLBACK(onAbort), this);
+#endif
+#if GLIB_CHECK_VERSION(2, 22, 0)
+    g_signal_handlers_disconnect_by_func(op, (gpointer)G_CALLBACK(onShowProcesses), this);
+#endif
+#if GLIB_CHECK_VERSION(2, 34, 0)
+    g_signal_handlers_disconnect_by_func(op, (gpointer)G_CALLBACK(onShowUnmountProgress), this);
+#endif
+    g_object_unref(op);
+  }
+  // qDebug("MountOperation deleted");
 }
 
 void MountOperation::onAbort(GMountOperation* _op, MountOperation* pThis) {
@@ -97,34 +116,49 @@ void MountOperation::onShowUnmountProgress(GMountOperation* _op, gchar* message,
   qDebug("show unmount progress");
 }
 
-void MountOperation::onEjectMountFinished(GMount* mount, GAsyncResult* res, MountOperation* pThis) {
-  GError* error = NULL;
-  g_mount_eject_with_operation_finish(mount, res, &error);
-  pThis->handleFinish(error);
+void MountOperation::onEjectMountFinished(GMount* mount, GAsyncResult* res, QPointer< MountOperation >* pThis) {
+  if(*pThis) {
+    GError* error = NULL;
+    g_mount_eject_with_operation_finish(mount, res, &error);
+    (*pThis)->handleFinish(error);
+  }
+  delete pThis;
 }
 
-void MountOperation::onEjectVolumeFinished(GVolume* volume, GAsyncResult* res, MountOperation* pThis) {
-  GError* error = NULL;
-  g_volume_eject_with_operation_finish(volume, res, &error);
-  pThis->handleFinish(error);
+void MountOperation::onEjectVolumeFinished(GVolume* volume, GAsyncResult* res, QPointer< MountOperation >* pThis) {
+  if(*pThis) {
+    GError* error = NULL;
+    g_volume_eject_with_operation_finish(volume, res, &error);
+    (*pThis)->handleFinish(error);
+  }
+  delete pThis;
 }
 
-void MountOperation::onMountFileFinished(GFile* file, GAsyncResult* res, MountOperation* pThis) {
-  GError* error = NULL;
-  g_file_mount_enclosing_volume_finish(file, res, &error);
-  pThis->handleFinish(error);
+void MountOperation::onMountFileFinished(GFile* file, GAsyncResult* res, QPointer< MountOperation >* pThis) {
+  if(*pThis) {
+    GError* error = NULL;
+    g_file_mount_enclosing_volume_finish(file, res, &error);
+    (*pThis)->handleFinish(error);
+  }
+  delete pThis;
 }
 
-void MountOperation::onMountVolumeFinished(GVolume* volume, GAsyncResult* res, MountOperation* pThis) {
-  GError* error = NULL;
-  g_volume_mount_finish(volume, res, &error);
-  pThis->handleFinish(error);
+void MountOperation::onMountVolumeFinished(GVolume* volume, GAsyncResult* res, QPointer< MountOperation >* pThis) {
+  if(*pThis) {
+    GError* error = NULL;
+    g_volume_mount_finish(volume, res, &error);
+    (*pThis)->handleFinish(error);
+  }
+  delete pThis;
 }
 
-void MountOperation::onUnmountMountFinished(GMount* mount, GAsyncResult* res, MountOperation* pThis) {
-  GError* error = NULL;
-  g_mount_unmount_with_operation_finish(mount, res, &error);
-  pThis->handleFinish(error);
+void MountOperation::onUnmountMountFinished(GMount* mount, GAsyncResult* res, QPointer< MountOperation >* pThis) {
+  if(*pThis) {
+    GError* error = NULL;
+    g_mount_unmount_with_operation_finish(mount, res, &error);
+    (*pThis)->handleFinish(error);
+  }
+  delete pThis;
 }
 
 void MountOperation::handleFinish(GError* error) {
@@ -153,15 +187,17 @@ void MountOperation::handleFinish(GError* error) {
 
   Q_EMIT finished(error);
 
-  if(eventLoop) // if wait() is called to block the main loop
+  if(eventLoop) { // if wait() is called to block the main loop
     eventLoop->exit(error != NULL ? 1 : 0);
+    eventLoop = NULL;
+  }
 
   if(error)
     g_error_free(error);
 
   // free ourself here!!
   if(autoDestroy_)
-    delete this;
+    deleteLater();
 }
 
 void MountOperation::prepareUnmount(GMount* mount) {
@@ -182,7 +218,10 @@ void MountOperation::prepareUnmount(GMount* mount) {
 // block the operation used an internal QEventLoop and returns
 // only after the whole operation is finished.
 bool MountOperation::wait() {
-  eventLoop = new QEventLoop();
-  int exitCode = eventLoop->exec();
+  QEventLoop loop;
+  eventLoop = &loop;
+  int exitCode = loop.exec();
   return exitCode == 0 ? true : false;
 }
+
+} // namespace Fm

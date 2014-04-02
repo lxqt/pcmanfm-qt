@@ -503,10 +503,12 @@ void MainWindow::updateUIForCurrentPage() {
 
 
 void MainWindow::onStackedWidgetWidgetRemoved(int index) {
+  // qDebug("onStackedWidgetWidgetRemoved: %d", index);
   // need to remove associated tab from tabBar
   ui.tabBar->removeTab(index);
   if(ui.tabBar->count() == 0) { // this is the last one
     deleteLater(); // destroy the whole window
+    // qDebug("delete window");
   }
   else {
     Settings& settings = static_cast<Application*>(qApp)->settings();
