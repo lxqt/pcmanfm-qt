@@ -27,9 +27,6 @@
 #include <QLineEdit>
 #include <QTabWidget>
 #include <libfm/fm.h>
-#include "foldermodel.h"
-#include "folderview.h"
-#include "placesview.h"
 #include <QMessageBox>
 #include <QTabBar>
 #include <QStackedWidget>

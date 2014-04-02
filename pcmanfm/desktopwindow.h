@@ -21,11 +21,13 @@
 #ifndef PCMANFM_DESKTOPWINDOW_H
 #define PCMANFM_DESKTOPWINDOW_H
 
-#include "foldermodel.h"
-#include "cachedfoldermodel.h"
-#include "proxyfoldermodel.h"
 #include "view.h"
 #include "launcher.h"
+
+namespace Fm {
+  class CachedFolderModel;
+  class ProxyFolderModel;
+}
 
 namespace PCManFM {
 

@@ -20,6 +20,8 @@
 #include <libfm/fm.h>
 #include "libfmqt.h"
 #include <QLocale>
+#include "icontheme.h"
+#include "thumbnailloader.h"
 
 namespace Fm {
 	

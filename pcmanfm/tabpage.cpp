@@ -29,6 +29,7 @@
 #include "proxyfoldermodel.h"
 #include "settings.h"
 #include "application.h"
+#include "cachedfoldermodel.h"
 
 using namespace Fm;
 

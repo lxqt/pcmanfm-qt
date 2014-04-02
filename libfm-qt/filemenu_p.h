@@ -21,7 +21,6 @@
 #define FM_FILEMENU_P_H
 
 #include "icontheme.h"
-#include "fileoperation.h"
 #ifdef CUSTOM_ACTIONS
 #include <libfm/fm-actions.h>
 #endif

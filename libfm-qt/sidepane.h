@@ -22,7 +22,8 @@
 #define FM_SIDEPANE_H
 
 #include "libfmqtglobals.h"
-#include "placesview.h"
+#include <libfm/fm.h>
+#include <QWidget>
 
 class QComboBox;
 class QVBoxLayout;

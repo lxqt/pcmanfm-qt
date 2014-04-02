@@ -24,9 +24,11 @@
 #include "libfmqtglobals.h"
 #include <QTreeView>
 #include <libfm/fm.h>
-#include "placesmodel.h"
 
 namespace Fm {
+
+class PlacesModel;
+class PlacesModelItem;
   
 class LIBFM_QT_API PlacesView : public QTreeView {
 Q_OBJECT

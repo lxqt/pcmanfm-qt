@@ -27,9 +27,13 @@
 #include <QList>
 #include <QAction>
 #include <libfm/fm.h>
-#include "placesmodelitem.h"
 
 namespace Fm {
+  
+class PlacesModelItem;
+class PlacesModelVolumeItem;
+class PlacesModelMountItem;
+class PlacesModelBookmarkItem;
 
 class LIBFM_QT_API PlacesModel : public QStandardItemModel {
 Q_OBJECT

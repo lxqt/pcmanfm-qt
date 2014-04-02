@@ -29,10 +29,6 @@ class QTimer;
 
 namespace Fm {
 
-class FileMenu;
-class FolderMenu;
-class FileLauncher;
-
 // override these classes for implementing FolderView
 class FolderViewListView : public QListView {
 public:

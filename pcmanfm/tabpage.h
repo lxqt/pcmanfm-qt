@@ -24,15 +24,14 @@
 #include <QWidget>
 #include <QVBoxLayout>
 #include <libfm/fm.h>
-#include "foldermodel.h"
-#include "cachedfoldermodel.h"
-#include "placesview.h"
-#include "proxyfoldermodel.h"
-#include "view.h"
 #include "browsehistory.h"
+#include "view.h"
 
 namespace Fm {
   class FileLauncher;
+  class FolderModel;
+  class ProxyFolderModel;
+  class CachedFolderModel;
 };
 
 namespace PCManFM {
@@ -113,7 +112,7 @@ public:
   }
 
   Fm::FolderModel* folderModel() {
-    return folderModel_;
+    return reinterpret_cast<Fm::FolderModel*>(folderModel_);
   }
 
   View* folderView() {

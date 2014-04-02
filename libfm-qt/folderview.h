@@ -30,8 +30,6 @@
 #include "foldermodel.h"
 #include "proxyfoldermodel.h"
 
-class QTimer;
-
 namespace Fm {
 
 class FileMenu;

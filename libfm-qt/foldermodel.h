@@ -30,7 +30,6 @@
 #include <QVector>
 #include <QLinkedList>
 #include <QPair>
-#include "icontheme.h"
 #include "foldermodelitem.h"
 
 namespace Fm {

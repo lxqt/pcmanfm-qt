@@ -25,6 +25,7 @@
 #include <QMimeData>
 #include <QTimer>
 #include "utilities.h"
+#include "placesmodelitem.h"
 
 using namespace Fm;
 
@@ -59,8 +60,9 @@ PlacesModel::PlacesModel(QObject* parent):
   computerItem->setEditable(false);
   placesRoot->appendRow(computerItem);
 
-  char* applicaion_icon_names[] = {"system-software-install", "applications-accessories", "application-x-executable"};
-  GIcon* gicon = g_themed_icon_new_from_names(applicaion_icon_names, G_N_ELEMENTS(applicaion_icon_names));
+  const char* applicaion_icon_names[] = {"system-software-install", "applications-accessories", "application-x-executable"};
+  // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
+  GIcon* gicon = g_themed_icon_new_from_names((char**)applicaion_icon_names, G_N_ELEMENTS(applicaion_icon_names));
   FmIcon* fmicon = fm_icon_from_gicon(gicon);
   g_object_unref(gicon);
   applicationsItem = new PlacesModelItem(fmicon, tr("Applications"), fm_path_get_apps_menu());
@@ -68,8 +70,9 @@ PlacesModel::PlacesModel(QObject* parent):
   applicationsItem->setEditable(false);
   placesRoot->appendRow(applicationsItem);
 
-  char* network_icon_names[] = {"network", "folder-network", "folder"};
-  gicon = g_themed_icon_new_from_names(network_icon_names, G_N_ELEMENTS(network_icon_names));
+  const char* network_icon_names[] = {"network", "folder-network", "folder"};
+  // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
+  gicon = g_themed_icon_new_from_names((char**)network_icon_names, G_N_ELEMENTS(network_icon_names));
   fmicon = fm_icon_from_gicon(gicon);
   g_object_unref(gicon);
   path = fm_path_new_for_uri("network:///");

@@ -22,8 +22,11 @@
 #define PCMANFM_FOLDERVIEW_H
 
 #include "folderview.h"
-#include "filemenu.h"
-#include "foldermenu.h"
+
+namespace Fm {
+  class FileMenu;
+  class FolderMenu;
+}
 
 namespace PCManFM {
 

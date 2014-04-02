@@ -24,7 +24,8 @@
 #include "libfmqtglobals.h"
 #include <QObject>
 #include <libfm/fm.h>
-#include "fileoperationdialog.h"
+
+class QTimer;
 
 namespace Fm {
 

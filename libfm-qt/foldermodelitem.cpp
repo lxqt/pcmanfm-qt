@@ -19,7 +19,6 @@
 
 
 #include "foldermodelitem.h"
-#include "icontheme.h"
 
 using namespace Fm;
 

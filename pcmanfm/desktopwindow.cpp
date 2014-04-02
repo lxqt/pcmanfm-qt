@@ -32,6 +32,7 @@
 #include "desktopitemdelegate.h"
 #include "foldermenu.h"
 #include "filemenu.h"
+#include "cachedfoldermodel.h"
 
 using namespace PCManFM;
 

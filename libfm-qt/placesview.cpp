@@ -20,6 +20,7 @@
 
 #include "placesview.h"
 #include "placesmodel.h"
+#include "placesmodelitem.h"
 #include "mountoperation.h"
 #include "fileoperation.h"
 #include <QMenu>

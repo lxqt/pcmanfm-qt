@@ -18,7 +18,7 @@
 */
 
 
-#include "placesmodel.h"
+#include "placesmodelitem.h"
 #include "icontheme.h"
 #include <gio/gio.h>
 
