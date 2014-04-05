@@ -173,7 +173,7 @@ int ThumbnailLoader::getImageHeight(GObject* image) {
 
 char* ThumbnailLoader::getImageText(GObject* image, const char* key) {
   FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(image);
-  QByteArray text = wrapper->image.text(key).toAscii();
+  QByteArray text = wrapper->image.text(key).toLatin1();
   return (char*)g_memdup(text.constData(), text.length());
 }
 

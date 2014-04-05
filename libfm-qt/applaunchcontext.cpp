@@ -23,16 +23,18 @@
 #include <X11/Xlib.h>
 
 typedef struct _FmAppLaunchContext {
-  GAppLaunchContext parent;
-  
+  GAppLaunchContext parent;  
 }FmAppLaunchContext;
 
 G_DEFINE_TYPE(FmAppLaunchContext, fm_app_launch_context, G_TYPE_APP_LAUNCH_CONTEXT)
 
 static char* fm_app_launch_context_get_display(GAppLaunchContext *context, GAppInfo *info, GList *files) {
   Display* dpy = QX11Info::display();
-  char* xstr = DisplayString(dpy);
-  return g_strdup(xstr);
+  if(dpy) {
+    char* xstr = DisplayString(dpy);
+    return g_strdup(xstr);
+  }
+  return NULL;
 }
 
 static char* fm_app_launch_context_get_startup_notify_id(GAppLaunchContext *context, GAppInfo *info, GList *files) {

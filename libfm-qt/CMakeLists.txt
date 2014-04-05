@@ -1,7 +1,15 @@
-
+if(USE_QT5)
+#  add_definitions(${Qt5Widgets_DEFINITIONS})
+#  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
+#  set(QTX_INCLUDES ${Qt5Widgets_INCLUDES})
+#  set(QTX_LIBRARIES ${Qt5Widgets_LIBRARIES})
+else()
+  set(QTX_INCLUDES ${QT_INCLUDES})
+  set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY})
+endif()
 
 include_directories(
-  ${QT_INCLUDES}
+  ${QTX_INCLUDES}
   ${LIBFM_INCLUDE_DIRS}
   ${LIBFM_libfm_INCLUDEDIR}/libfm # to workaround incorrect #include in fm-actions.
   ${CMAKE_CURRENT_BINARY_DIR}
@@ -12,7 +20,6 @@ include_directories(
 link_directories(
   ${LIBFM_LIBRARY_DIRS}
 )
-
 
 set(libfm_SRCS
   libfmqt.cpp
@@ -68,7 +75,11 @@ set(libfm_UIS
   app-chooser-dialog.ui
 )
 
-QT4_WRAP_UI(libfm_UIS_H ${libfm_UIS})
+if(USE_QT5)
+  qt5_wrap_ui(libfm_UIS_H ${libfm_UIS})
+else()
+  qt4_wrap_ui(libfm_UIS_H ${libfm_UIS})
+endif()
 
 add_library(fm-qt SHARED
   ${libfm_SRCS}
@@ -88,8 +99,7 @@ if(EXISTS ${LIBFM_libfm_INCLUDEDIR}/libfm/fm-actions.h )
 endif()
 
 target_link_libraries(fm-qt
-  ${QT_QTCORE_LIBRARY}
-  ${QT_QTGUI_LIBRARY}
+  ${QTX_LIBRARIES}
   ${LIBFM_LIBRARIES}
 )
 
@@ -124,11 +134,20 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libfm-qt.pc
 # add translation for pcmanfm-qt
 # See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
 file(GLOB TS_FILES translations/*.ts)
-qt4_create_translation(QM_FILES
-  ${libfm_SRCS}
-  ${libfm_UIS}
-  ${TS_FILES})
-qt4_add_translation(QM_FILES ${TS_FILES})
+if(USE_QT5)
+  qt5_create_translation(QM_FILES
+    ${libfm_SRCS}
+    ${libfm_UIS}
+    ${TS_FILES})
+  qt5_add_translation(QM_FILES ${TS_FILES})
+else()
+  qt4_create_translation(QM_FILES
+    ${libfm_SRCS}
+    ${libfm_UIS}
+    ${TS_FILES})
+  qt4_add_translation(QM_FILES ${TS_FILES})
+endif()
+
 add_custom_target (libfm_translations DEPENDS ${QM_FILES})
 install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/libfm-qt/translations)
 
@@ -136,3 +155,8 @@ install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/libfm-qt/translat
 set_directory_properties(PROPERTIES
   CLEAN_NO_CUSTOM true
 )
+
+if(USE_QT5)
+  qt5_use_modules(fm-qt Widgets DBus X11Extras)
+else()
+endif()

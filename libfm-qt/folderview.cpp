@@ -32,6 +32,7 @@
 #include <QTimer>
 #include <QDate>
 #include <QDebug>
+#include <QMimeData>
 #include "folderview_p.h"
 
 namespace Fm {
@@ -352,8 +353,12 @@ void FolderView::setViewMode(ViewMode _mode) {
     treeView->setAllColumnsShowFocus(false);
 
     // FIXME: why this doesn't work?
+#if QT_VERSION >= 0x050000
+    treeView->header()->setSectionResizeMode(0, QHeaderView::Stretch); // QHeaderView::ResizeToContents);
+#else
     treeView->header()->setResizeMode(0, QHeaderView::Stretch); // QHeaderView::ResizeToContents);
     // treeView->setSelectionBehavior(QAbstractItemView::SelectItems);
+#endif
 
     // set our own custom delegate
     FolderItemDelegate* delegate = new FolderItemDelegate(treeView);

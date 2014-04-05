@@ -10,8 +10,20 @@ set(LIBFM_QT_VERSION "0.1")
 set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for libraries")
 set(INCLUDE_INSTALL_DIR include CACHE PATH "Installation path for includes")
 
-find_package(Qt4 4.6 REQUIRED QtCore QtGui QtDBus)
-include(${QT_USE_FILE})
+option(USE_QT5 "Use Qt5. Defaults to Qt4" OFF)
+
+if(USE_QT5) # actually, we need Qt >= 5.1. Qt 5.0 is not supported.
+  cmake_minimum_required(VERSION 2.8.8) # we need at least cmake 2.8.9 to build with Qt5
+  find_package(Qt5Widgets REQUIRED)
+  # find_package(Qt5Xml REQUIRED)
+  find_package(Qt5LinguistTools REQUIRED)
+  find_package(Qt5DBus REQUIRED)
+  find_package(Qt5X11Extras REQUIRED)
+  set(CMAKE_INCLUDE_CURRENT_DIR ON)
+else()
+  find_package(Qt4 4.6 REQUIRED QtCore QtGui QtDBus)
+  include(${QT_USE_FILE})
+endif()
 
 find_package(PkgConfig)
 pkg_check_modules(LIBFM REQUIRED

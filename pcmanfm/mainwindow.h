@@ -21,7 +21,7 @@
 #define FM_MAIN_WINDOW_H
 
 #include "ui_main-win.h"
-#include <QtGui/QMainWindow>
+#include <QMainWindow>
 #include <QListView>
 #include <QSortFilterProxyModel>
 #include <QLineEdit>

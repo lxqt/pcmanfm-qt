@@ -84,7 +84,11 @@ QIcon::Mode FolderItemDelegate::iconModeFromState(QStyle::State state) {
 // special thanks to Razor-qt developer Alec Moskvin(amoskvin) for providing the fix!
 void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const {
   Q_ASSERT(index.isValid());
+#if QT_VERSION >= 0x050000
+  FmFileInfo* file = static_cast<FmFileInfo*>(index.data(FolderModel::FileInfoRole).value<void*>());
+#else
   FmFileInfo* file = static_cast<FmFileInfo*>(qVariantValue<void*>(index.data(FolderModel::FileInfoRole)));
+#endif
   bool isSymlink = file && fm_file_info_is_symlink(file);
 
   if(option.decorationPosition == QStyleOptionViewItem::Top ||

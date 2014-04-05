@@ -22,7 +22,7 @@
 #define FM_FILEMENU_H
 
 #include "libfmqtglobals.h"
-#include <QtGui/QMenu>
+#include <QMenu>
 #include <qabstractitemmodel.h>
 #include <libfm/fm.h>
 

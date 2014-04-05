@@ -214,7 +214,7 @@ uid_t uidFromName(QString name) {
     ret = uid_t(name.toUInt());
   }
   else {
-    struct passwd* pw = getpwnam(name.toAscii());
+    struct passwd* pw = getpwnam(name.toLatin1());
     // FIXME: use getpwnam_r instead later to make it reentrant
     ret = pw ? pw->pw_uid : -1;
   }
@@ -236,7 +236,7 @@ gid_t gidFromName(QString name) {
   }
   else {
     // FIXME: use getgrnam_r instead later to make it reentrant
-    struct group* grp = getgrnam(name.toAscii());
+    struct group* grp = getgrnam(name.toLatin1());
     ret = grp ? grp->gr_gid : -1;
   }
   return ret;

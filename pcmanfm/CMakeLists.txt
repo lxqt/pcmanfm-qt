@@ -25,13 +25,23 @@ set(pcmanfm_SRCS
   settings.cpp
 )
 
-qt4_add_dbus_adaptor(pcmanfm_SRCS
-  org.pcmanfm.Application.xml
-  application.h
-  PCManFM::Application
-  applicationadaptor
-  ApplicationAdaptor
-)
+if(USE_QT5)
+  qt5_add_dbus_adaptor(pcmanfm_SRCS
+    org.pcmanfm.Application.xml
+    application.h
+    PCManFM::Application
+    applicationadaptor
+    ApplicationAdaptor
+  )
+else()
+  qt4_add_dbus_adaptor(pcmanfm_SRCS
+    org.pcmanfm.Application.xml
+    application.h
+    PCManFM::Application
+    applicationadaptor
+    ApplicationAdaptor
+  )
+endif()
 
 set(pcmanfm_UIS
   main-win.ui
@@ -41,7 +51,11 @@ set(pcmanfm_UIS
   autorun.ui
 )
 
-QT4_WRAP_UI(pcmanfm_UIS_H ${pcmanfm_UIS})
+if(USE_QT5)
+  qt5_wrap_ui(pcmanfm_UIS_H ${pcmanfm_UIS})
+else()
+  qt4_wrap_ui(pcmanfm_UIS_H ${pcmanfm_UIS})
+endif()
 
 add_executable(pcmanfm-qt 
   ${pcmanfm_SRCS}
@@ -75,11 +89,21 @@ install(
 # add translation for pcmanfm-qt
 # See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
 file(GLOB TS_FILES translations/*.ts)
-qt4_create_translation(QM_FILES
-  ${pcmanfm_SRCS}
-  ${pcmanfm_UIS_H}
-  ${TS_FILES})
-qt4_add_translation(QM_FILES ${TS_FILES})
+
+if(USE_QT5)
+  qt5_create_translation(QM_FILES
+    ${pcmanfm_SRCS}
+    ${pcmanfm_UIS_H}
+    ${TS_FILES})
+  qt5_add_translation(QM_FILES ${TS_FILES})
+else()
+  qt4_create_translation(QM_FILES
+    ${pcmanfm_SRCS}
+    ${pcmanfm_UIS_H}
+    ${TS_FILES})
+  qt4_add_translation(QM_FILES ${TS_FILES})
+endif()
+
 add_custom_target (pcmanfm_translations DEPENDS ${QM_FILES})
 install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/pcmanfm-qt/translations)
 
@@ -87,3 +111,12 @@ install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/pcmanfm-qt/transl
 set_directory_properties(PROPERTIES
   CLEAN_NO_CUSTOM true
 )
+
+if(USE_QT5)
+#  add_definitions(${Qt5Widgets_DEFINITIONS})
+#  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
+#  set(QTX_INCLUDES ${Qt5Widgets_INCLUDES})
+#  set(QTX_LIBRARIES ${Qt5Widgets_LIBRARIES})
+  qt5_use_modules(pcmanfm-qt Widgets DBus)
+else()
+endif()

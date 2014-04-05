@@ -45,8 +45,13 @@ PlacesView::PlacesView(QWidget* parent):
   model_ = new PlacesModel(this);
   setModel(model_);
   QHeaderView* headerView = header();
+#if QT_VERSION >= 0x050000
+  headerView->setSectionResizeMode(0, QHeaderView::Stretch);
+  headerView->setSectionResizeMode(1, QHeaderView::ResizeToContents);
+#else
   headerView->setResizeMode(0, QHeaderView::Stretch);
   headerView->setResizeMode(1, QHeaderView::ResizeToContents);
+#endif
   headerView->setStretchLastSection(false);
   expandAll();
 

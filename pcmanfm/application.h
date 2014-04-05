@@ -26,7 +26,7 @@
 #include "libfmqt.h"
 #include "editbookmarksdialog.h"
 #include <QVector>
-#include <QWeakPointer>
+#include <QPointer>
 #include <QTranslator>
 #include <gio/gio.h>
 
@@ -86,7 +86,7 @@ protected Q_SLOTS:
  
 protected:
   virtual void commitData(QSessionManager & manager);
-  bool parseCommandLineArgs(int argc, char** argv);
+  bool parseCommandLineArgs();
   DesktopWindow* createDesktopWindow(int screenNum);
   bool autoMountVolume(GVolume* volume, bool interactive = true);
   
@@ -100,12 +100,14 @@ private:
   bool daemonMode_;
   bool enableDesktopManager_;
   QVector<DesktopWindow*> desktopWindows_;
-  QWeakPointer<PreferencesDialog> preferencesDialog_;
-  QWeakPointer<DesktopPreferencesDialog> desktopPreferencesDialog_;
-  QWeakPointer<Fm::EditBookmarksDialog> editBookmarksialog_;
+  QPointer<PreferencesDialog> preferencesDialog_;
+  QPointer<DesktopPreferencesDialog> desktopPreferencesDialog_;
+  QPointer<Fm::EditBookmarksDialog> editBookmarksialog_;
   QTranslator translator;
   QTranslator qtTranslator;
   GVolumeMonitor* volumeMonitor;
+  int argc_;
+  char** argv_;
 };
 
 }

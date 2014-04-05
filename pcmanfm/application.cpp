@@ -56,6 +56,9 @@ Application::Application(int& argc, char** argv):
   volumeMonitor(NULL),
   editBookmarksialog_() {
 
+  argc_ = argc;
+  argv_ = argv;
+
   // QDBusConnection::sessionBus().registerObject("/org/pcmanfm/Application", this);
   QDBusConnection dbus = QDBusConnection::sessionBus();
   if(dbus.registerService(serviceName)) {
@@ -103,7 +106,7 @@ struct FakeTr {
   QVector<QByteArray> strings;
 };
 
-bool Application::parseCommandLineArgs(int argc, char** argv) {
+bool Application::parseCommandLineArgs() {
   bool keepRunning = false;
 
   // It's really a shame that the great Qt library does not come
@@ -151,7 +154,7 @@ bool Application::parseCommandLineArgs(int argc, char** argv) {
     GOptionContext* context = g_option_context_new("");
     g_option_context_add_main_entries(context, option_entries, NULL);
     GError* error = NULL;
-    if(!g_option_context_parse(context, &argc, &argv, &error)) {
+    if(!g_option_context_parse(context, &argc_, &argv_, &error)) {
       // show error and exit
       g_fprintf(stderr, "%s\n\n", error->message);
       g_error_free(error);
@@ -298,7 +301,7 @@ void Application::init() {
 
 int Application::exec() {
 
-  if(!parseCommandLineArgs(QCoreApplication::argc(), QCoreApplication::argv()))
+  if(!parseCommandLineArgs())
     return 0;
 
   if(daemonMode_) // keep running even when there is no window opened.
@@ -324,7 +327,10 @@ void Application::onAboutToQuit() {
 void Application::commitData(QSessionManager& manager) {
   qDebug("commitData");
   // FIXME: where should we write the config file?
+#if QT_VERSION >= 0x050000
+#else
   QApplication::commitData(manager);
+#endif
 }
 
 void Application::onLastWindowClosed() {

@@ -167,7 +167,11 @@ void DirTreeView::setModel(QAbstractItemModel* model) {
     cancelPendingChdir();
 
   QTreeView::setModel(model);
+#if QT_VERSION >= 0x050000
+  header()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
+#else
   header()->setResizeMode(0, QHeaderView::ResizeToContents);
+#endif
   connect(selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onSelectionChanged(QItemSelection,QItemSelection)));
 }
 
