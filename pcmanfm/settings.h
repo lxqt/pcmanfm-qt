@@ -92,6 +92,7 @@ public:
     // override the settings in libfm FmConfig.
     g_free(fm_config->terminal);
     fm_config->terminal = g_strdup(terminalExecCommand_.toLocal8Bit().constData());
+    g_signal_emit_by_name(fm_config, "changed::terminal");
   }
 
   QString archiver() const {
