@@ -1,15 +1,5 @@
-if(USE_QT5)
-#  add_definitions(${Qt5Widgets_DEFINITIONS})
-#  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
-#  set(QTX_INCLUDES ${Qt5Widgets_INCLUDES})
-#  set(QTX_LIBRARIES ${Qt5Widgets_LIBRARIES})
-else()
-  set(QTX_INCLUDES ${QT_INCLUDES})
-  set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY})
-endif()
-
 include_directories(
-  ${QTX_INCLUDES}
+  ${QT_INCLUDES}
   ${LIBFM_INCLUDE_DIRS}
   ${LIBFM_libfm_INCLUDEDIR}/libfm # to workaround incorrect #include in fm-actions.
   ${CMAKE_CURRENT_BINARY_DIR}
@@ -99,7 +89,8 @@ if(EXISTS ${LIBFM_libfm_INCLUDEDIR}/libfm/fm-actions.h )
 endif()
 
 target_link_libraries(fm-qt
-  ${QTX_LIBRARIES}
+  ${QT_QTCORE_LIBRARY}
+  ${QT_QTGUI_LIBRARY}
   ${LIBFM_LIBRARIES}
 )
 
@@ -135,16 +126,10 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libfm-qt.pc
 # See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
 file(GLOB TS_FILES translations/*.ts)
 if(USE_QT5)
-  qt5_create_translation(QM_FILES
-    ${libfm_SRCS}
-    ${libfm_UIS}
-    ${TS_FILES})
+  qt5_create_translation(QM_FILES ${libfm_SRCS} ${libfm_UIS} ${TS_FILES})
   qt5_add_translation(QM_FILES ${TS_FILES})
 else()
-  qt4_create_translation(QM_FILES
-    ${libfm_SRCS}
-    ${libfm_UIS}
-    ${TS_FILES})
+  qt4_create_translation(QM_FILES ${libfm_SRCS} ${libfm_UIS} ${TS_FILES})
   qt4_add_translation(QM_FILES ${TS_FILES})
 endif()
 
@@ -158,5 +143,4 @@ set_directory_properties(PROPERTIES
 
 if(USE_QT5)
   qt5_use_modules(fm-qt Widgets DBus X11Extras)
-else()
 endif()

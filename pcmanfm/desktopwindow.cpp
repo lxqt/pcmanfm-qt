@@ -34,6 +34,14 @@
 #include "filemenu.h"
 #include "cachedfoldermodel.h"
 
+#include <QX11Info> // requires Qt 4 or Qt 5.1
+#if QT_VERSION >= 0x050000
+#include <xcb/xcb.h>
+#else
+#include <X11/Xlib.h>
+#include <X11/Xatom.h>
+#endif
+
 using namespace PCManFM;
 
 DesktopWindow::DesktopWindow():
@@ -48,6 +56,22 @@ DesktopWindow::DesktopWindow():
   setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
   setAttribute(Qt::WA_DeleteOnClose);
+  
+  // set freedesktop.org EWMH hints properly
+#if QT_VERSION >= 0x050000
+  if(QX11Info::isPlatformX11() && QX11Info::connection()) {
+    xcb_connection_t* con = QX11Info::connection();
+    const char* atom_name = "_NET_WM_WINDOW_TYPE_DESKTOP";
+    xcb_atom_t atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(atom_name), atom_name), NULL)->atom;
+    const char* prop_atom_name = "_NET_WM_WINDOW_TYPE";
+    xcb_atom_t prop_atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(prop_atom_name), prop_atom_name), NULL)->atom;
+    xcb_atom_t XA_ATOM = 4;
+    xcb_change_property(con, XCB_PROP_MODE_REPLACE, winId(), prop_atom, XA_ATOM, 32, 1, &atom);
+  }
+#else
+  Atom atom = XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE_DESKTOP", False);
+  XChangeProperty(QX11Info::display(), winId(), XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE", False), XA_ATOM, 32, PropModeReplace, (uchar*)&atom, 1);
+#endif
 
   // paint background for the desktop widget
   setAutoFillBackground(true);

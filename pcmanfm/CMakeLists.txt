@@ -91,16 +91,10 @@ install(
 file(GLOB TS_FILES translations/*.ts)
 
 if(USE_QT5)
-  qt5_create_translation(QM_FILES
-    ${pcmanfm_SRCS}
-    ${pcmanfm_UIS_H}
-    ${TS_FILES})
+  qt5_create_translation(QM_FILES ${pcmanfm_SRCS} ${pcmanfm_UIS_H} ${TS_FILES})
   qt5_add_translation(QM_FILES ${TS_FILES})
 else()
-  qt4_create_translation(QM_FILES
-    ${pcmanfm_SRCS}
-    ${pcmanfm_UIS_H}
-    ${TS_FILES})
+  qt4_create_translation(QM_FILES ${pcmanfm_SRCS} ${pcmanfm_UIS_H} ${TS_FILES})
   qt4_add_translation(QM_FILES ${TS_FILES})
 endif()
 
@@ -113,10 +107,5 @@ set_directory_properties(PROPERTIES
 )
 
 if(USE_QT5)
-#  add_definitions(${Qt5Widgets_DEFINITIONS})
-#  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
-#  set(QTX_INCLUDES ${Qt5Widgets_INCLUDES})
-#  set(QTX_LIBRARIES ${Qt5Widgets_LIBRARIES})
   qt5_use_modules(pcmanfm-qt Widgets DBus)
-else()
 endif()
