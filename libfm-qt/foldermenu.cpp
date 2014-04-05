@@ -1,6 +1,7 @@
 /*
 
-    Copyright (C) 2013  Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
+    Copyright (C) 2013-2014  Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
+    Copyright (C) 2012-2014 Andriy Grytsenko (LStranger) <andrej@rep.kiev.ua>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -24,7 +25,7 @@
 #include "utilities.h"
 #include <cstring> // for memset
 
-using namespace Fm;
+namespace Fm {
 
 FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
   QMenu(parent),
@@ -49,11 +50,11 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
   selectAllAction_ = new QAction(tr("Select &All"), this);
   addAction(selectAllAction_);
   connect(selectAllAction_, SIGNAL(triggered(bool)), SLOT(onSelectAllActionTriggered()));
-  
+
   invertSelectionAction_ = new QAction(tr("Invert Selection"), this);
   addAction(invertSelectionAction_);
   connect(invertSelectionAction_, SIGNAL(triggered(bool)), SLOT(onInvertSelectionActionTriggered()));
-  
+
   separator3_ = addSeparator();
 
   sortAction_ = new QAction(tr("Sorting"), this);
@@ -79,16 +80,36 @@ FolderMenu::~FolderMenu() {
 
 void FolderMenu::createCreateNewMenu() {
   QMenu* createMenu = new QMenu(this);
+  createNewMenu_ = createMenu;
+
   QAction* action = new QAction(tr("Folder"), this);
   connect(action, SIGNAL(triggered(bool)), SLOT(onCreateNewFolder()));
   createMenu->addAction(action);
 
-  action = new QAction(tr("File"), this);
+  action = new QAction(tr("Blank File"), this);
   connect(action, SIGNAL(triggered(bool)), SLOT(onCreateNewFile()));
   createMenu->addAction(action);
 
-  // TODO: add more items to "Create New" menu
-  createNewMenu_ = createMenu;
+  // add more items to "Create New" menu from templates
+  GList* templates = fm_template_list_all(fm_config->only_user_templates);
+  if(templates) {
+    createMenu->addSeparator();
+    for(GList* l = templates; l; l = l->next) {
+      FmTemplate* templ = (FmTemplate*)l->data;
+      /* we support directories differently */
+      if(fm_template_is_directory(templ))
+        continue;
+      FmMimeType* mime_type = fm_template_get_mime_type(templ);
+      const char* label = fm_template_get_label(templ);
+      QString text = QString("%1 (%2)").arg(QString::fromUtf8(label)).arg(QString::fromUtf8(fm_mime_type_get_desc(mime_type)));
+      FmIcon* icon = fm_template_get_icon(templ);
+      if(!icon)
+        icon = fm_mime_type_get_icon(mime_type);
+      QAction* action = createMenu->addAction(IconTheme::icon(icon), text);
+      action->setObjectName(QString::fromUtf8(fm_template_get_name(templ, NULL)));
+      connect(action, SIGNAL(triggered(bool)), SLOT(onCreateNew()));
+    }
+  }
 }
 
 void FolderMenu::addSortMenuItem(QString title, int id) {
@@ -116,7 +137,8 @@ void FolderMenu::createSortMenu() {
   addSortMenuItem(tr("By File Owner"), FolderModel::ColumnFileOwner);
 
   int col = model->sortColumn();
-  if(col >=0 && col < FolderModel::NumOfColumns) {
+
+  if(col >= 0 && col < FolderModel::NumOfColumns) {
     sortActions_[col]->setChecked(true);;
   }
 
@@ -128,7 +150,7 @@ void FolderMenu::createSortMenu() {
   actionAscending_->setCheckable(true);
   sortMenu_->addAction(actionAscending_);
   group->addAction(actionAscending_);
-  
+
   actionDescending_ = new QAction(tr("Descending"), this);
   actionDescending_->setCheckable(true);
   sortMenu_->addAction(actionDescending_);
@@ -143,24 +165,29 @@ void FolderMenu::createSortMenu() {
   connect(actionDescending_, SIGNAL(triggered(bool)), SLOT(onSortOrderActionTriggered(bool)));
 
   sortMenu_->addSeparator();
-  
+
   QAction* actionFolderFirst = new QAction(tr("Folder First"), this);
   sortMenu_->addAction(actionFolderFirst);
   actionFolderFirst->setCheckable(true);
+
   if(model->folderFirst())
     actionFolderFirst->setChecked(true);
+
   connect(actionFolderFirst, SIGNAL(triggered(bool)), SLOT(onFolderFirstActionTriggered(bool)));
 
   QAction* actionCaseSensitive = new QAction(tr("Case Sensitive"), this);
   sortMenu_->addAction(actionCaseSensitive);
   actionCaseSensitive->setCheckable(true);
+
   if(model->sortCaseSensitivity() == Qt::CaseSensitive)
     actionCaseSensitive->setChecked(true);
+
   connect(actionCaseSensitive, SIGNAL(triggered(bool)), SLOT(onCaseSensitiveActionTriggered(bool)));
 }
 
 void FolderMenu::onPasteActionTriggered() {
   FmPath* folderPath = view_->path();
+
   if(folderPath)
     pasteFilesFromClipboard(folderPath);
 }
@@ -175,8 +202,10 @@ void FolderMenu::onInvertSelectionActionTriggered() {
 
 void FolderMenu::onSortActionTriggered(bool checked) {
   ProxyFolderModel* model = view_->model();
+
   if(model) {
     QAction* action = static_cast<QAction*>(sender());
+
     for(int col = 0; col < FolderModel::NumOfColumns; ++col) {
       if(action == sortActions_[col]) {
         model->sort(col, model->sortOrder());
@@ -188,19 +217,23 @@ void FolderMenu::onSortActionTriggered(bool checked) {
 
 void FolderMenu::onSortOrderActionTriggered(bool checked) {
   ProxyFolderModel* model = view_->model();
+
   if(model) {
     QAction* action = static_cast<QAction*>(sender());
     Qt::SortOrder order;
+
     if(action == actionAscending_)
       order = Qt::AscendingOrder;
     else
       order = Qt::DescendingOrder;
+
     model->sort(model->sortColumn(), order);
   }
 }
 
 void FolderMenu::onShowHiddenActionTriggered(bool checked) {
   ProxyFolderModel* model = view_->model();
+
   if(model) {
     qDebug("show hidden: %d", checked);
     model->setShowHidden(checked);
@@ -209,6 +242,7 @@ void FolderMenu::onShowHiddenActionTriggered(bool checked) {
 
 void FolderMenu::onCaseSensitiveActionTriggered(bool checked) {
   ProxyFolderModel* model = view_->model();
+
   if(model) {
     model->setSortCaseSensitivity(checked ? Qt::CaseSensitive : Qt::CaseInsensitive);
   }
@@ -216,6 +250,7 @@ void FolderMenu::onCaseSensitiveActionTriggered(bool checked) {
 
 void FolderMenu::onFolderFirstActionTriggered(bool checked) {
   ProxyFolderModel* model = view_->model();
+
   if(model) {
     model->setFolderFirst(checked);
   }
@@ -223,19 +258,43 @@ void FolderMenu::onFolderFirstActionTriggered(bool checked) {
 
 void FolderMenu::onPropertiesActionTriggered() {
   FmFileInfo* folderInfo = view_->folderInfo();
+
   if(folderInfo)
     FilePropsDialog::showForFile(folderInfo);
 }
 
 void FolderMenu::onCreateNewFile() {
   FmPath* dirPath = view_->path();
+
   if(dirPath)
     createFile(CreateNewTextFile, dirPath);
 }
 
 void FolderMenu::onCreateNewFolder() {
   FmPath* dirPath = view_->path();
+
   if(dirPath)
     createFile(CreateNewFolder, dirPath);
 }
 
+void FolderMenu::onCreateNew() {
+  QAction* action = static_cast<QAction*>(sender());
+  QByteArray name = action->objectName().toUtf8();
+  GList* templates = fm_template_list_all(fm_config->only_user_templates);
+  FmTemplate* templ = NULL;
+  for(GList* l = templates; l; l = l->next) {
+    FmTemplate* t = (FmTemplate*)l->data;
+    if(name == fm_template_get_name(t, NULL)) {
+      templ = t;
+      break;
+    }
+  }
+  if(templ) { // template found
+    FmPath* dirPath = view_->path();
+    if(dirPath)
+      createFile(CreateWithTemplate, dirPath, templ, view_);
+  }
+}
+
+
+} // namespace Fm

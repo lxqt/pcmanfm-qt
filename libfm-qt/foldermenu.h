@@ -91,6 +91,7 @@ protected Q_SLOTS:
 
   void onCreateNewFolder();
   void onCreateNewFile();
+  void onCreateNew();
 
   void onPasteActionTriggered();
   void onSelectAllActionTriggered();
