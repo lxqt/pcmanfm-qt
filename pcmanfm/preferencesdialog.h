@@ -48,6 +48,7 @@ private:
   void initThumbnailPage(Settings& settings);
   void initVolumePage(Settings& settings);
   void initAdvancedPage(Settings& settings);
+  void initTerminals(Settings& settings);
 
   void applyUiPage(Settings& settings);
   void applyBehaviorPage(Settings& settings);

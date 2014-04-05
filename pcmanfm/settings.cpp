@@ -53,8 +53,7 @@ Settings::Settings():
   useFallbackIconTheme_(QIcon::themeName().isEmpty() || QIcon::themeName() == "hicolor"),
   bookmarkOpenMethod_(0),
   suCommand_(),
-  terminalDirCommand_(),
-  terminalExecCommand_(),
+  terminal_(),
   mountOnStartup_(true),
   mountRemovable_(true),
   autoRun_(true),
@@ -140,8 +139,7 @@ bool Settings::loadFile(QString filePath) {
     fallbackIconThemeName_ = "elementary"; // fallback icon theme name
   }
   suCommand_ = settings.value("SuCommand", "gksu %s").toString();
-  terminalDirCommand_ = settings.value("TerminalDirCommand", "xterm").toString();
-  setTerminalExecCommand(settings.value("TerminalExecCommand", "xterm -e %s").toString());
+  setTerminal(settings.value("Terminal", "xterm").toString());
   setArchiver(settings.value("Archiver", "file-roller").toString());
   setSiUnit(settings.value("SIUnit", false).toBool());
   settings.endGroup();
@@ -214,8 +212,7 @@ bool Settings::saveFile(QString filePath) {
   settings.beginGroup("System");
   settings.setValue("FallbackIconThemeName", fallbackIconThemeName_);
   settings.setValue("SuCommand", suCommand_);
-  settings.setValue("TerminalDirCommand", terminalDirCommand_);
-  settings.setValue("TerminalExecCommand", terminalExecCommand_);
+  settings.setValue("Terminal", terminal_);
   settings.setValue("Archiver", archiver_);
   settings.setValue("SIUnit", siUnit_);
   settings.endGroup();
@@ -414,3 +411,11 @@ static const char* sidePaneModeToString(int value) {
 static int sidePaneModeFromString(const QString str) {
   return 0;
 }
+
+void Settings::setTerminal(QString terminalCommand) {
+    terminal_ = terminalCommand;
+    // override the settings in libfm FmConfig.
+    g_free(fm_config->terminal);
+    fm_config->terminal = g_strdup(terminal_.toLocal8Bit().constData());
+    g_signal_emit_by_name(fm_config, "changed::terminal");
+  }

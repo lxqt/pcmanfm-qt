@@ -24,6 +24,7 @@
 #include <QDir>
 #include <QHash>
 #include <QStringBuilder>
+#include <QSettings>
 
 #include "folderview.h"
 
@@ -200,10 +201,16 @@ void PreferencesDialog::initVolumePage(Settings& settings) {
   ui.autoRun->setChecked(settings.autoRun());
 }
 
+void PreferencesDialog::initTerminals(Settings& settings) {
+  // load the known terminal list from the terminal.list file of libfm
+  QSettings termlist(LIBFM_DATA_DIR "/terminals.list", QSettings::IniFormat);
+  ui.terminal->addItems(termlist.childGroups());
+  ui.terminal->setEditText(settings.terminal());
+}
+
 void PreferencesDialog::initAdvancedPage(Settings& settings) {
   initArchivers(settings);
-  ui.terminalDirCommand->setText(settings.terminalDirCommand());
-  ui.terminalExecCommand->setText(settings.terminalExecCommand());
+  initTerminals(settings);
   ui.suCommand->setText(settings.suCommand());
   // ui.siUnit->setChecked(settings.siUnit());
 }
@@ -264,8 +271,7 @@ void PreferencesDialog::applyVolumePage(Settings& settings) {
 }
 
 void PreferencesDialog::applyAdvancedPage(Settings& settings) {
-  settings.setTerminalDirCommand(ui.terminalDirCommand->text());
-  settings.setTerminalExecCommand(ui.terminalExecCommand->text());
+  settings.setTerminal(ui.terminal->currentText());
   settings.setSuCommand(ui.suCommand->text());
   settings.setArchiver(ui.archiver->itemData(ui.archiver->currentIndex()).toString());
   settings.setSiUnit(ui.siUnit->isChecked());
