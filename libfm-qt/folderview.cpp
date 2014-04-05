@@ -352,14 +352,6 @@ void FolderView::setViewMode(ViewMode _mode) {
     treeView->setRootIsDecorated(false);
     treeView->setAllColumnsShowFocus(false);
 
-    // FIXME: why this doesn't work?
-#if QT_VERSION >= 0x050000
-    treeView->header()->setSectionResizeMode(0, QHeaderView::Stretch); // QHeaderView::ResizeToContents);
-#else
-    treeView->header()->setResizeMode(0, QHeaderView::Stretch); // QHeaderView::ResizeToContents);
-    // treeView->setSelectionBehavior(QAbstractItemView::SelectItems);
-#endif
-
     // set our own custom delegate
     FolderItemDelegate* delegate = new FolderItemDelegate(treeView);
     treeView->setItemDelegateForColumn(FolderModel::ColumnFileName, delegate);
@@ -425,7 +417,7 @@ void FolderView::setViewMode(ViewMode _mode) {
       model_->setThumbnailSize(iconSize.width());
       view->setModel(model_);
       if(recreateView)
-	connect(view->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onSelectionChanged(QItemSelection,QItemSelection)));
+        connect(view->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onSelectionChanged(QItemSelection,QItemSelection)));
     }
   }
 }

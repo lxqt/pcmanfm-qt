@@ -200,22 +200,20 @@ QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole
         case ColumnFileType: {
           FmMimeType* mime = fm_file_info_get_mime_type(info);
           const char* desc = fm_mime_type_get_desc(mime);
-          QString str = QString::fromUtf8(desc);
-          return QVariant(str);
+          return QString::fromUtf8(desc);
         }
         case ColumnFileMTime: {
           const char* name = fm_file_info_get_disp_mtime(info);
-          QString str = QString::fromUtf8(name);
-          return QVariant(str);
+          return QString::fromUtf8(name);
         }
         case ColumnFileSize: {
           const char* name = fm_file_info_get_disp_size(info);
-          QString str = QString::fromUtf8(name);
-          return QVariant(str);
+          return QString::fromUtf8(name);
           break;
         }
         case ColumnFileOwner: {
-          // TODO: show owner names
+          const char* name = fm_file_info_get_disp_owner(info);
+          return QString::fromUtf8(name);
           break;
         }
       }
