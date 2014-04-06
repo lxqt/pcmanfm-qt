@@ -23,6 +23,9 @@
 
 #include "view.h"
 #include "launcher.h"
+#include <QHash>
+#include <QPoint>
+#include <QByteArray>
 
 namespace Fm {
   class CachedFolderModel;
@@ -45,7 +48,7 @@ public:
     WallpaperTile
   };
 
-  explicit DesktopWindow();
+  explicit DesktopWindow(int screenNum);
   virtual ~DesktopWindow();
 
   void setForeground(const QColor& color);
@@ -59,14 +62,26 @@ public:
   void updateFromSettings(Settings& settings);
 
   void setWorkArea(const QRect& rect);
+
 protected:
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
   virtual void prepareFileMenu(Fm::FileMenu* menu);
   virtual void resizeEvent(QResizeEvent* event);
-  
+
+  void loadItemPositions();
+  void saveItemPositions();
+
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
   void onDesktopPreferences();
+
+  void onRowsAboutToBeRemoved(const QModelIndex& parent, int start, int end);
+  void onRowsInserted(const QModelIndex& parent, int start, int end);
+  void onLayoutChanged();
+  void onIndexesMoved(const QModelIndexList& indexes);
+
+  void relayoutItems();
+  void onStickToCurrentPos(bool toggled);
 
 private:
   Fm::ProxyFolderModel* proxyModel_;
@@ -82,6 +97,9 @@ private:
   QPixmap wallpaperPixmap_;
   DesktopItemDelegate* delegate_;
   Launcher fileLauncher_;
+  
+  int screenNum_;
+  QHash<QByteArray, QPoint> customItemPos_;
 };
 
 }

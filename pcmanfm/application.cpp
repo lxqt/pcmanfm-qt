@@ -493,7 +493,7 @@ void Application::onWorkAreaResized(int num) {
 }
 
 DesktopWindow* Application::createDesktopWindow(int screenNum) {
-  DesktopWindow* window = new DesktopWindow();
+  DesktopWindow* window = new DesktopWindow(screenNum);
   QRect rect = desktop()->screenGeometry(screenNum);
   window->setGeometry(rect);
   rect = desktop()->availableGeometry(screenNum);

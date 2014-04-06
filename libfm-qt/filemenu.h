@@ -119,6 +119,22 @@ public:
   FileLauncher* fileLauncher() {
     return fileLauncher_;
   }
+
+  bool sameType() const {
+    return sameType_;
+  }
+
+  bool sameFilesystem() const {
+    return sameFilesystem_;
+  }
+
+  bool allVirtual() const {
+    return allVirtual_;
+  }
+
+  bool allTrash() const {
+    return allTrash_;
+  }
   
 protected:
   void createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd);

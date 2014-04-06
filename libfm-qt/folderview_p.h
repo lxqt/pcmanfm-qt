@@ -31,7 +31,9 @@ namespace Fm {
 
 // override these classes for implementing FolderView
 class FolderViewListView : public QListView {
+  Q_OBJECT
 public:
+  friend class FolderView;
   FolderViewListView(QWidget* parent = 0);
   virtual ~FolderViewListView();
   virtual void startDrag(Qt::DropActions supportedActions);
@@ -42,11 +44,20 @@ public:
   virtual void dropEvent(QDropEvent* e);
   
   virtual QModelIndex indexAt(const QPoint & point) const;
+
+  inline void setPositionForIndex(const QPoint & position, const QModelIndex & index) {
+    QListView::setPositionForIndex(position, index);
+  }
+
+  inline QRect rectForIndex(const QModelIndex & index) const {
+    return QListView::rectForIndex(index);
+  }
 };
 
 class FolderViewTreeView : public QTreeView {
   Q_OBJECT
 public:
+  friend class FolderView;
   FolderViewTreeView(QWidget* parent = 0);
   virtual ~FolderViewTreeView();
   virtual void setModel(QAbstractItemModel* model);

@@ -26,6 +26,10 @@
 #include <QPalette>
 #include <QBrush>
 #include <QLayout>
+#include <QDebug>
+#include <QTimer>
+#include <QSettings>
+#include <QStringBuilder>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -33,6 +37,7 @@
 #include "foldermenu.h"
 #include "filemenu.h"
 #include "cachedfoldermodel.h"
+#include "folderview_p.h"
 
 #include <QX11Info> // requires Qt 4 or Qt 5.1
 #if QT_VERSION >= 0x050000
@@ -44,8 +49,9 @@
 
 using namespace PCManFM;
 
-DesktopWindow::DesktopWindow():
+DesktopWindow::DesktopWindow(int screenNum):
   View(Fm::FolderView::IconMode),
+  screenNum_(screenNum),
   folder_(NULL),
   model_(NULL),
   proxyModel_(NULL),
@@ -79,7 +85,7 @@ DesktopWindow::DesktopWindow():
 
   // set our custom file launcher
   View::setFileLauncher(&fileLauncher_);
-
+  loadItemPositions();
   Settings& settings = static_cast<Application* >(qApp)->settings();
   
   model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
@@ -88,6 +94,7 @@ DesktopWindow::DesktopWindow():
   proxyModel_ = new Fm::ProxyFolderModel();
   proxyModel_->setSourceModel(model_);
   proxyModel_->setShowThumbnails(settings.showThumbnails());
+  proxyModel_->sort(Fm::FolderModel::ColumnFileMTime);
   setModel(proxyModel_);
 
   QListView* listView = static_cast<QListView*>(childView());
@@ -110,6 +117,11 @@ DesktopWindow::DesktopWindow():
   // inhibit scrollbars FIXME: this should be optional in the future
   listView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
   listView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
+  connect(proxyModel_, SIGNAL(rowsInserted(QModelIndex,int,int)), SLOT(onRowsInserted(QModelIndex,int,int)));
+  connect(proxyModel_, SIGNAL(rowsAboutToBeRemoved(QModelIndex,int,int)), SLOT(onRowsAboutToBeRemoved(QModelIndex,int,int)));
+  connect(proxyModel_, SIGNAL(layoutChanged()), SLOT(onLayoutChanged()));
+  connect(listView, SIGNAL(indexesMoved(QModelIndexList)), SLOT(onIndexesMoved(QModelIndexList)));
 
   connect(this, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onOpenDirRequested(FmPath*, int)));
 }
@@ -239,6 +251,21 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
 
 void DesktopWindow::prepareFileMenu(Fm::FileMenu* menu) {
   PCManFM::View::prepareFileMenu(menu);
+  QAction* action = new QAction(tr("Stic&k to Current Position"), menu);
+  action->setCheckable(true);
+  menu->insertSeparator(menu->separator2());
+  menu->insertAction(menu->separator2(), action);
+
+  FmFileInfoList* files = menu->files();
+  // select exactly one item
+  if(fm_file_info_list_get_length(files) == 1) {
+    FmFileInfo* file = menu->firstFile();
+    if(customItemPos_.find(fm_file_info_get_name(file)) != customItemPos_.end()) {
+      // the file item has a custom position
+      action->setChecked(true);
+    }
+  }
+  connect(action, SIGNAL(toggled(bool)), SLOT(onStickToCurrentPos(bool)));
 }
 
 void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
@@ -267,4 +294,145 @@ void DesktopWindow::setWorkArea(const QRect& rect) {
   // inside the work area but the background image still
   // covers the whole screen.
   layout()->setContentsMargins(left, top, right, bottom);
+}
+
+void DesktopWindow::onRowsInserted(const QModelIndex& parent, int start, int end) {
+  if(!customItemPos_.isEmpty())
+    QTimer::singleShot(0, this, SLOT(relayoutItems()));
+}
+
+void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start, int end) {
+  if(!customItemPos_.isEmpty()) {
+    // also delete stored custom item positions for the items currently being removed.
+    bool changed = false;
+    for(int row = start; row <= end ;++row) {
+      QModelIndex index = parent.child(row, 0);
+      FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
+      if(file) { // remove custom position for the item
+        if(customItemPos_.remove(fm_file_info_get_name(file)))
+          changed = true;
+      }
+    }
+    if(changed)
+      saveItemPositions();
+    QTimer::singleShot(0, this, SLOT(relayoutItems()));
+  }
+}
+
+void DesktopWindow::onLayoutChanged() {
+  if(!customItemPos_.isEmpty())
+    QTimer::singleShot(0, this, SLOT(relayoutItems()));
+}
+
+void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
+  Fm::FolderViewListView* listView = static_cast<Fm::FolderViewListView*>(childView());
+  // remember the custom position for the items
+  Q_FOREACH(const QModelIndex& index, indexes) {
+    FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
+    QRect itemRect = listView->rectForIndex(index);
+    customItemPos_[fm_file_info_get_name(file)] = itemRect.topLeft();
+    saveItemPositions();
+    QTimer::singleShot(0, this, SLOT(relayoutItems()));
+  }
+}
+
+// QListView does item layout in a very inflexible way, so let's do our custom layout again.
+// FIXME: this is very inefficient, but due to the design flaw of QListView, this is currently the only workaround.
+void DesktopWindow::relayoutItems() {
+  qDebug("relayoutItems()");
+  // FIXME: we use an internal class declared in a private header here, which is pretty bad.
+  Fm::FolderViewListView* listView = static_cast<Fm::FolderViewListView*>(childView());
+  QSize grid = listView->gridSize();
+  QPoint pos = listView->contentsRect().topLeft();
+
+  for(int row = 0, rowCount = proxyModel_->rowCount(); row < rowCount; ++row) {
+    QModelIndex index = proxyModel_->index(row, 0);
+    FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
+    const char* name = fm_file_info_get_name(file);
+    QHash<QByteArray, QPoint>::iterator it = customItemPos_.find(name);
+    if(it != customItemPos_.end()) { // the item has a custom position
+      QPoint customPos = *it;
+      listView->setPositionForIndex(customPos, index);
+      continue;
+    }
+    // check if the current pos is alredy occupied by a custom item
+    bool used = false;
+    for(it = customItemPos_.begin(); it != customItemPos_.end(); ++it) {
+      QPoint customPos = *it;
+      if(QRect(*it, grid).contains(pos)) {
+        used = true;
+        break;
+      }
+    }
+    if(used) { // go to next pos
+      --row;
+    }
+    else {
+      listView->setPositionForIndex(pos, index);
+    }
+    pos.setY(pos.y() + grid.height() + listView->spacing());
+    if(pos.y() + grid.height() > listView->contentsRect().bottom()) {
+      pos.setX(pos.x() + grid.width() + listView->spacing());
+      pos.setY(rect().top());
+    }
+  }
+}
+
+void DesktopWindow::loadItemPositions() {
+  // load custom item positions
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  QString configFile = QString("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
+  QSettings file(configFile, QSettings::IniFormat);
+  Q_FOREACH(const QString& name, file.childGroups()) {
+    file.beginGroup(name);
+    QVariant var = file.value("pos");
+    if(var.isValid())
+      customItemPos_[name.toUtf8()] = var.toPoint();
+    file.endGroup();
+  }
+}
+
+void DesktopWindow::saveItemPositions() {
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  // store custom item positions
+  QString configFile = QString("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
+  // FIXME: using QSettings here is inefficient and it's not friendly to UTF-8.
+  QSettings file(configFile, QSettings::IniFormat);
+  file.clear(); // remove all existing entries
+
+  // FIXME: we have to remove dead entries not associated to any files?
+  QHash<QByteArray, QPoint>::iterator it;
+  for(it = customItemPos_.begin(); it != customItemPos_.end(); ++it) {
+    const QByteArray& name = it.key();
+    QPoint pos = it.value();
+    file.beginGroup(QString::fromUtf8(name, name.length()));
+    file.setValue("pos", pos);
+    file.endGroup();
+  }
+}
+
+void DesktopWindow::onStickToCurrentPos(bool toggled) {
+  QAction* action = static_cast<QAction*>(sender());
+  Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(action->parent());
+  Fm::FolderViewListView* listView = static_cast<Fm::FolderViewListView*>(childView());
+
+  QModelIndexList indexes = listView->selectionModel()->selectedIndexes();
+  if(!indexes.isEmpty()) {
+    FmFileInfo* file = menu->firstFile();
+    QByteArray name = fm_file_info_get_name(file);
+    QModelIndex index = indexes.first();
+    if(toggled) { // remember to current custom position
+      QRect itemRect = listView->rectForIndex(index);
+      customItemPos_[name] = itemRect.topLeft();
+      saveItemPositions();
+    }
+    else { // cancel custom position and perform relayout
+      QHash<QByteArray, QPoint>::iterator it = customItemPos_.find(name);
+      if(it != customItemPos_.end()) {
+        customItemPos_.erase(it);
+        saveItemPositions();
+        relayoutItems();
+      }
+    }
+  }
 }
