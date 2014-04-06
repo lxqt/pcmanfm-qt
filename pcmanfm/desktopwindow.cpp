@@ -166,7 +166,7 @@ void DesktopWindow::onOpenDirRequested(FmPath* path, int target) {
 void DesktopWindow::resizeEvent(QResizeEvent* event) {
   QWidget::resizeEvent(event);
 
-  // resize or wall paper if needed
+  // resize wall paper if needed
   if(isVisible() && wallpaperMode_ != WallpaperNone && wallpaperMode_ != WallpaperTile) {
     updateWallpaper();
     update();
@@ -294,6 +294,8 @@ void DesktopWindow::setWorkArea(const QRect& rect) {
   // inside the work area but the background image still
   // covers the whole screen.
   layout()->setContentsMargins(left, top, right, bottom);
+  if(!customItemPos_.isEmpty())
+    QTimer::singleShot(0, this, SLOT(relayoutItems()));
 }
 
 void DesktopWindow::onRowsInserted(const QModelIndex& parent, int start, int end) {
