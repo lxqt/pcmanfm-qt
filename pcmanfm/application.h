@@ -74,6 +74,10 @@ public:
   void openFolderInTerminal(FmPath* path);
   void openFolders(FmFileInfoList* files);
 
+  QString profileName() {
+    return profileName_;
+  }
+
 protected Q_SLOTS:
   void onAboutToQuit();
 
@@ -96,7 +100,7 @@ private:
   bool isPrimaryInstance;
   Fm::LibFmQt libFm_;
   Settings settings_;
-  QString profileName;
+  QString profileName_;
   bool daemonMode_;
   bool enableDesktopManager_;
   QVector<DesktopWindow*> desktopWindows_;
@@ -105,7 +109,7 @@ private:
   QPointer<Fm::EditBookmarksDialog> editBookmarksialog_;
   QTranslator translator;
   QTranslator qtTranslator;
-  GVolumeMonitor* volumeMonitor;
+  GVolumeMonitor* volumeMonitor_;
   int argc_;
   char** argv_;
 };

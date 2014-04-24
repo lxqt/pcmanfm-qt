@@ -22,6 +22,8 @@
 #include <QDesktopWidget>
 #include <QPainter>
 #include <QImage>
+#include <QImageReader>
+#include <QFile>
 #include <QPixmap>
 #include <QPalette>
 #include <QBrush>
@@ -30,6 +32,7 @@
 #include <QTimer>
 #include <QSettings>
 #include <QStringBuilder>
+#include <QDir>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -181,6 +184,68 @@ void DesktopWindow::setWallpaperMode(WallpaperMode mode) {
   wallpaperMode_ = mode;
 }
 
+QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
+  // see if we have a scaled version cached on disk
+  QString cacheFileName = QString::fromLocal8Bit(qgetenv("XDG_CACHE_HOME"));
+  if(cacheFileName.isEmpty())
+    cacheFileName = QDir::homePath() % QLatin1String("/.cache");
+  Application* app = static_cast<Application*>(qApp);
+  cacheFileName += QLatin1String("/pcmanfm-qt/") % app->profileName();
+  QDir().mkpath(cacheFileName); // ensure that the cache dir exists
+  cacheFileName += QLatin1String("/wallpaper.cache");
+
+  // read info file
+  QString origin;
+  QFile info(cacheFileName % ".info");
+  if(info.open(QIODevice::ReadOnly)) {
+    origin = QString::fromLocal8Bit(info.readLine());
+    info.close();
+    if(!origin.isEmpty()) {
+      // try to see if we can get the size of the cached image.
+      QImageReader reader(cacheFileName);
+      reader.setAutoDetectImageFormat(true);
+      QSize cachedSize = reader.size();
+      qDebug() << "size of cached file" << cachedSize << ", requiredSize:" << requiredSize;
+      if(cachedSize.isValid()) {
+        if(cachedSize == requiredSize) { // see if the cached wallpaper has the size we want
+          QImage image = reader.read(); // return the loaded image
+          qDebug() << "origin" << origin;
+          if(origin == wallpaperFile_)
+            return image;
+        }
+      }
+    }
+  }
+  qDebug() << "no cached wallpaper. generate a new one!";
+  // we don't have a cached scaled image, load the original file
+  QImage image(wallpaperFile_);
+  qDebug() << "size of original image" << image.size();
+  if(image.isNull() || image.size() == requiredSize) // if the original size is what we want
+    return image;
+
+  // scale the original image
+  QImage scaled = image.scaled(requiredSize.width(), requiredSize.height(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+  // FIXME: should we save the scaled image if its size is larger than the original image?
+
+  // write the path of the original image to the .info file
+  if(info.open(QIODevice::WriteOnly)) {
+    info.write(wallpaperFile_.toLocal8Bit());
+    info.close();
+
+    // write the scaled cache image to disk
+    const char* format; // we keep jpg format for *.jpg files, and use png format for others.
+    if(wallpaperFile_.endsWith(QLatin1String(".jpg"), Qt::CaseInsensitive) || wallpaperFile_.endsWith(QLatin1String(".jpeg"), Qt::CaseInsensitive))
+      format = "JPG";
+    else
+      format = "PNG";
+    scaled.save(cacheFileName, format);
+  }
+  qDebug() << "wallpaper cached saved to " << cacheFileName;
+  // FIXME: we might delay the write of the cached image?
+  return scaled;
+}
+
+// really generate the background pixmap according to current settings and apply it.
 void DesktopWindow::updateWallpaper() {
   // reset the brush
   QListView* listView = static_cast<QListView*>(childView());
@@ -191,47 +256,49 @@ void DesktopWindow::updateWallpaper() {
     palette.setBrush(QPalette::Base, bgColor_);
   }
   else { // use wallpaper
-    QImage image(wallpaperFile_);
-
-    if(image.isNull()) { // image file cannot be loaded
-      palette.setBrush(QPalette::Base, bgColor_);
-      QPixmap empty;
-      wallpaperPixmap_ = empty; // clear the pixmap
+    QPixmap pixmap;
+    QImage image;
+    if(wallpaperMode_ == WallpaperTile) { // use the original size
+      image = QImage(wallpaperFile_);
+      pixmap = QPixmap::fromImage(image);
     }
-    else { // image file is successfully loaded
-      QPixmap pixmap;
-
-      if(wallpaperMode_ == WallpaperTile || image.size() == size()) {
-        // if image size == window size, there are no differences among different modes
-        pixmap = QPixmap::fromImage(image);
+    else if(wallpaperMode_ == WallpaperStretch) {
+      image = loadWallpaperFile(size());
+      pixmap = QPixmap::fromImage(image);
+    }
+    else { // WallpaperCenter || WallpaperFit
+      if(wallpaperMode_ == WallpaperCenter) {
+        image = QImage(wallpaperFile_); // load original image
       }
-      else if(wallpaperMode_ == WallpaperStretch) {
-        QImage scaled = image.scaled(width(), height(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
-        pixmap = QPixmap::fromImage(scaled);
+      else if(wallpaperMode_ == WallpaperFit) {
+        // calculate the desired size
+        QSize origSize = QImageReader(wallpaperFile_).size(); // get the size of the original file
+        if(origSize.isValid()) {
+          QSize desiredSize = origSize;
+          desiredSize.scale(width(), height(), Qt::KeepAspectRatio);
+          image = loadWallpaperFile(desiredSize); // load the scaled image
+        }
       }
-      else {
+      if(!image.isNull()) {
         pixmap = QPixmap(size());
         QPainter painter(&pixmap);
-
-        if(wallpaperMode_ == WallpaperFit) {
-          QImage scaled = image.scaled(width(), height(), Qt::KeepAspectRatio, Qt::SmoothTransformation);
-          image = scaled;
-        }
-
         pixmap.fill(bgColor_);
-        int x = width() - image.width();
-        int y = height() - image.height();
+        int x = (width() - image.width()) / 2;
+        int y = (height() - image.height()) / 2;
         painter.drawImage(x, y, image);
       }
-
-      wallpaperPixmap_ = pixmap;
+    }
+    wallpaperPixmap_ = pixmap;
+    if(!pixmap.isNull()) {
       QBrush brush(pixmap);
       QMatrix matrix;
       matrix.translate(100, 100);
       matrix.rotate(100);
       brush.setMatrix(matrix);
       palette.setBrush(QPalette::Base, brush);
-    } // if(image.isNull())
+    }
+    else // if the image is not loaded, fallback to use background color only
+      palette.setBrush(QPalette::Base, bgColor_);
   }
 
   //FIXME: we should set the pixmap to X11 root window?

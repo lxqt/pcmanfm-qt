@@ -48,12 +48,12 @@ Application::Application(int& argc, char** argv):
   QApplication(argc, argv),
   libFm_(),
   settings_(),
-  profileName("default"),
+  profileName_("default"),
   daemonMode_(false),
   desktopWindows_(),
   enableDesktopManager_(false),
   preferencesDialog_(),
-  volumeMonitor(NULL),
+  volumeMonitor_(NULL),
   editBookmarksialog_() {
 
   argc_ = argc;
@@ -69,7 +69,7 @@ Application::Application(int& argc, char** argv):
     dbus.registerObject("/Application", this);
 
     connect(this, SIGNAL(aboutToQuit()), SLOT(onAboutToQuit()));
-    settings_.load(profileName);
+    settings_.load(profileName_);
 
     // decrease the cache size to reduce memory usage
     QPixmapCache::setCacheLimit(2048);
@@ -87,9 +87,9 @@ Application::Application(int& argc, char** argv):
 }
 
 Application::~Application() {
-  if(volumeMonitor) {
-    g_signal_handlers_disconnect_by_func(volumeMonitor, gpointer(onVolumeAdded), this);
-    g_object_unref(volumeMonitor);
+  if(volumeMonitor_) {
+    g_signal_handlers_disconnect_by_func(volumeMonitor_, gpointer(onVolumeAdded), this);
+    g_object_unref(volumeMonitor_);
   }
 }
 
@@ -170,10 +170,10 @@ bool Application::parseCommandLineArgs() {
     if(daemon_mode)
       daemonMode_ = true;
     if(profile)
-      profileName = profile;
+      profileName_ = profile;
 
     // load settings
-    settings_.load(profileName);
+    settings_.load(profileName_);
 
     // desktop icon management
     if(desktop) {
@@ -307,7 +307,7 @@ int Application::exec() {
   if(daemonMode_) // keep running even when there is no window opened.
     setQuitOnLastWindowClosed(false);
 
-  volumeMonitor = g_volume_monitor_get();
+  volumeMonitor_ = g_volume_monitor_get();
   // delay the volume manager a little because in newer versions of glib/gio there's a problem.
   // when the first volume monitor object is created, it discovers volumes asynchonously.
   // g_volume_monitor_get() immediately returns while the monitor is still discovering devices.
@@ -560,11 +560,11 @@ void Application::editBookmarks() {
 
 void Application::initVolumeManager() {
 
-  g_signal_connect(volumeMonitor, "volume-added", G_CALLBACK(onVolumeAdded), this);
+  g_signal_connect(volumeMonitor_, "volume-added", G_CALLBACK(onVolumeAdded), this);
 
   if(settings_.mountOnStartup()) {
     /* try to automount all volumes */
-    GList* vols = g_volume_monitor_get_volumes(volumeMonitor);
+    GList* vols = g_volume_monitor_get_volumes(volumeMonitor_);
     for(GList* l = vols; l; l = l->next) {
       GVolume* volume = G_VOLUME(l->data);
       if(g_volume_should_automount(volume))

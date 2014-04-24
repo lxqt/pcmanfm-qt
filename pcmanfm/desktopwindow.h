@@ -71,6 +71,8 @@ protected:
   void loadItemPositions();
   void saveItemPositions();
 
+  QImage loadWallpaperFile(QSize requiredSize);
+
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
   void onDesktopPreferences();

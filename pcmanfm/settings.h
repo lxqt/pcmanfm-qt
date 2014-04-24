@@ -31,7 +31,7 @@
 namespace PCManFM {
 
 class Settings : public QObject {
-Q_OBJECT
+  Q_OBJECT
 public:
   Settings();
   virtual ~Settings();
@@ -364,7 +364,6 @@ public:
     fm_config->si_unit = (gboolean)siUnit_;
   }
 
- 
 private:
   QString profileName_;
 
