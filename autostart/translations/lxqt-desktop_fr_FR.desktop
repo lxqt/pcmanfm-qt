@@ -1,13 +1,2 @@
-[Desktop Entry]
-Type=Application
-Name=Desktop
-TryExec=lxqt-desktop
-Exec=lxqt-desktop
-OnlyShowIn=LxQt;
-X-LxQt-Module=true
-
-#TRANSLATIONS_DIR=translations
-
-
 # Translations
 Name[fr_FR]=Bureau
