@@ -136,7 +136,9 @@ GObject* ThumbnailLoader::readImageFromStream(GInputStream* stream, guint64 len,
 
 gboolean ThumbnailLoader::writeImage(GObject* image, const char* filename) {
   FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(image);
-  return (gboolean)wrapper->image.save(filename);
+  if(wrapper->image.isNull())
+    return FALSE;
+  return (gboolean)wrapper->image.save(filename, "PNG");
 }
 
 GObject* ThumbnailLoader::scaleImage(GObject* ori_pix, int new_width, int new_height) {
