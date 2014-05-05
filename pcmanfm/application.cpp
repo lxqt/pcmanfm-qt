@@ -209,7 +209,7 @@ bool Application::parseCommandLineArgs() {
         QStringList paths;
         if(file_names) {
           for(char** filename = file_names; *filename; ++filename) {
-            QString path(*filename);
+            QString path = QString::fromLocal8Bit(*filename);
             paths.push_back(path);
           }
         }
@@ -262,7 +262,7 @@ bool Application::parseCommandLineArgs() {
         QStringList paths;
         if(file_names) {
           for(char** filename = file_names; *filename; ++filename) {
-            QString path(*filename);
+            QString path = QString::fromLocal8Bit(*filename);
             paths.push_back(path);
           }
         }
@@ -395,7 +395,7 @@ void Application::launchFiles(QStringList paths, bool inNewWindow) {
   QStringList::iterator it;
   for(it = paths.begin(); it != paths.end(); ++it) {
     QString& pathName = *it;
-    FmPath* path = fm_path_new_for_path(pathName.toUtf8().constData());
+    FmPath* path = fm_path_new_for_path(pathName.toLocal8Bit().constData());
     fm_path_list_push_tail(pathList, path);
     fm_path_unref(path);
   }
