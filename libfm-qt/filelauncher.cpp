@@ -108,6 +108,6 @@ bool FileLauncher::error(GAppLaunchContext* ctx, GError* err, FmPath* path) {
   }
   QMessageBox dlg(QMessageBox::Critical, QObject::tr("Error"), QString::fromUtf8(err->message), QMessageBox::Ok);
   execModelessDialog(&dlg);
-  return false;
+  return true;
 }
 
