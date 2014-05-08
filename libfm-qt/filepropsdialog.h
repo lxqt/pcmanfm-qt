@@ -44,13 +44,15 @@ public:
   static FilePropsDialog* showForFile(FmFileInfo* file, QWidget* parent = 0) {
     FmFileInfoList* files = fm_file_info_list_new();
     fm_file_info_list_push_tail(files, file);
-    showForFiles(files, parent);
+    FilePropsDialog* dlg = showForFiles(files, parent);
     fm_file_info_list_unref(files);
+    return dlg;
   }
   
   static FilePropsDialog* showForFiles(FmFileInfoList* files, QWidget* parent = 0) {
     FilePropsDialog* dlg = new FilePropsDialog(files, parent);
     dlg->show();
+    return dlg;
   }
 
 private:

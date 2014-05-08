@@ -54,7 +54,7 @@ public:
   static QImage image(FmThumbnailLoader* result);
 
   static int size(FmThumbnailLoader* result) {
-    fm_thumbnail_loader_get_size(result);
+    return fm_thumbnail_loader_get_size(result);
   }
 
   static void setLocalFilesOnly(bool value) {

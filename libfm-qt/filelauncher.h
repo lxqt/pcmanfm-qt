@@ -34,11 +34,11 @@ public:
 
   bool launchFiles(QWidget* parent, FmFileInfoList* file_infos) {
     GList* fileList = fm_file_info_list_peek_head_link(file_infos);
-    Fm::FileLauncher::launchFiles(parent, fileList);
+    return Fm::FileLauncher::launchFiles(parent, fileList);
   }
   bool launchPaths(QWidget* parent, FmPathList* paths) {
     GList* pathList = fm_path_list_peek_head_link(paths);
-    Fm::FileLauncher::launchPaths(parent, pathList);
+    return Fm::FileLauncher::launchPaths(parent, pathList);
   }
 
   bool launchFiles(QWidget* parent, GList* file_infos);
