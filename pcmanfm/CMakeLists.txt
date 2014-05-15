@@ -1,6 +1,8 @@
 include_directories(
   ${QT_INCLUDES}
   ${LIBFM_INCLUDE_DIRS}
+  ${LIBMENUCACHE_INCLUDE_DIRS}
+  ${SYSTEM_LIBS_INCLUDE_DIRS}
   ${CMAKE_CURRENT_BINARY_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${PROJECT_SOURCE_DIR}/libfm-qt
@@ -8,6 +10,8 @@ include_directories(
 
 link_directories(
   ${LIBFM_LIBRARY_DIRS}
+  ${LIBMENUCACHE_LIBRARY_DIRS}
+  ${SYSTEM_LIBS_LIBRARY_DIRS}
 )
 
 set(pcmanfm_SRCS
@@ -66,13 +70,15 @@ set_property(
    PROPERTY COMPILE_DEFINITIONS
    LIBFM_QT_API=Q_DECL_IMPORT
    PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/pcmanfm-qt"
-   LIBFM_DATA_DIR="${LIBFM_libfm_PREFIX}/share/libfm" # This is a little bit dirty
+   LIBFM_DATA_DIR="${LIBFM_PREFIX}/share/libfm" # This is a little bit dirty
 )
 target_link_libraries(pcmanfm-qt 
   ${QT_QTCORE_LIBRARY}
   ${QT_QTGUI_LIBRARY}
   ${QT_QTDBUS_LIBRARY}
   ${LIBFM_LIBRARIES}
+  ${LIBMENUCACHE_LIBRARIES}
+  ${SYSTEM_LIBS_LIBRARIES}
   fm-qt
 )
 
