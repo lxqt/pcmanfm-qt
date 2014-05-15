@@ -26,14 +26,20 @@ else()
 endif()
 
 find_package(PkgConfig)
-pkg_check_modules(LIBFM REQUIRED
+pkg_check_modules(SYSTEM_LIBS REQUIRED
   glib-2.0
   gio-2.0
   gio-unix-2.0
-  libfm>=1.2.0
-  libmenu-cache>=0.4.0
   ${XLIB} # we need to make this optional when trying to support Wayland
 #  libstartup-notification-1.0
+)
+
+pkg_check_modules(LIBFM REQUIRED
+  libfm>=1.2.0
+)
+
+pkg_check_modules(LIBMENUCACHE REQUIRED
+  libmenu-cache>=0.4.0
 )
 
 include(GNUInstallDirs)

@@ -1,13 +1,17 @@
 include_directories(
   ${QT_INCLUDES}
   ${LIBFM_INCLUDE_DIRS}
-  ${LIBFM_libfm_INCLUDEDIR}/libfm # to workaround incorrect #include in fm-actions.
+  ${LIBFM_INCLUDEDIR}/libfm # to workaround incorrect #include in fm-actions.
+  ${LIBMENUCACHE_INCLUDE_DIRS}
+  ${SYSTEM_LIBS_INCLUDE_DIRS}
   ${CMAKE_CURRENT_BINARY_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 link_directories(
   ${LIBFM_LIBRARY_DIRS}
+  ${LIBMENUCACHE_LIBRARY_DIRS}
+  ${SYSTEM_LIBS_LIBRARY_DIRS}
 )
 
 set(libfm_SRCS
@@ -83,7 +87,7 @@ set_property(
 )
 
 # only turn on custom actions support if it is enabled in libfm.
-if(EXISTS ${LIBFM_libfm_INCLUDEDIR}/libfm/fm-actions.h )
+if(EXISTS ${LIBFM_INCLUDEDIR}/libfm/fm-actions.h )
   set_property(TARGET fm-qt APPEND PROPERTY COMPILE_DEFINITIONS CUSTOM_ACTIONS)
 endif()
 
@@ -91,6 +95,8 @@ target_link_libraries(fm-qt
   ${QT_QTCORE_LIBRARY}
   ${QT_QTGUI_LIBRARY}
   ${LIBFM_LIBRARIES}
+  ${LIBMENUCACHE_LIBRARIES}
+  ${SYSTEM_LIBS_LIBRARIES}
 )
 
 # set libtool soname
