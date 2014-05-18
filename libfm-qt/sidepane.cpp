@@ -75,6 +75,7 @@ void SidePane::setIconSize(QSize size) {
     case ModeDirTree:
       static_cast<QTreeView*>(view_)->setIconSize(size);
       break;
+    default:;
   }
 }
 
@@ -90,6 +91,7 @@ void SidePane::setCurrentPath(FmPath* path) {
     case ModeDirTree:
       static_cast<DirTreeView*>(view_)->setCurrentPath(path);
       break;
+    default:;
   }
 }
 
@@ -149,6 +151,7 @@ bool SidePane::setHomeDir(const char* home_dir) {
   case ModeDirTree:
     // static_cast<PlacesView*>(view_);
     return true;
+  default:;
   }
   return true;
 }
@@ -196,7 +199,7 @@ void SidePane::setMode(Mode mode) {
     connect(placesView, SIGNAL(chdirRequested(int, FmPath*)), SLOT(onPlacesViewChdirRequested(int, FmPath*)));
     break;
   }
-  case ModeDirTree:
+  case ModeDirTree: {
     DirTreeView* dirTreeView = new Fm::DirTreeView(this);
     view_ = dirTreeView;
     initDirTree();
@@ -204,6 +207,8 @@ void SidePane::setMode(Mode mode) {
     dirTreeView->setCurrentPath(currentPath_);
     connect(dirTreeView, SIGNAL(chdirRequested(int, FmPath*)), SLOT(onDirTreeViewChdirRequested(int, FmPath*)));
     break;
+  }
+  default:;
   }
   if(view_) {
     // if(sp->update_popup)

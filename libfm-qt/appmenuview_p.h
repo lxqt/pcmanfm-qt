@@ -54,7 +54,7 @@ public:
   }
   
   MenuCacheType type() {
-    menu_cache_item_get_type(item_);
+	return menu_cache_item_get_type(item_);
   }
   
   bool isApp() {

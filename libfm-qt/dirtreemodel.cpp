@@ -70,6 +70,7 @@ int DirTreeModel::rowCount(const QModelIndex& parent) const {
   DirTreeModelItem* item = itemFromIndex(parent);
   if(item)
     return item->children_.count();
+  return 0;
 }
 
 QModelIndex DirTreeModel::parent(const QModelIndex& child) const {

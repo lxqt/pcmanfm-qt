@@ -337,7 +337,7 @@ void FolderView::setViewMode(ViewMode _mode) {
   // since only detailed list mode uses QTreeView, and others 
   // all use QListView, it's wise to preserve QListView when possible.
   bool recreateView = false;
-  if(view && mode == DetailedListMode || _mode == DetailedListMode) {
+  if(view && (mode == DetailedListMode || _mode == DetailedListMode)) {
     delete view; // FIXME: no virtual dtor?
     view = NULL;
     recreateView = true;
@@ -394,6 +394,7 @@ void FolderView::setViewMode(ViewMode _mode) {
         listView->setFlow(QListView::LeftToRight);
         break;
       }
+      default:;
     }
     delegate->setGridSize(listView->gridSize());
   }
