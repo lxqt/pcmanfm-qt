@@ -384,12 +384,8 @@ void FolderView::onItemActivated(QModelIndex index) {
 
 void FolderView::onSelectionChanged(const QItemSelection& selected, const QItemSelection& deselected) {
   QItemSelectionModel* selModel = static_cast<QItemSelectionModel*>(sender());
-  int nSel = 0;
-  if(viewMode() == DetailedListMode)
-    nSel = selModel->selectedRows().count();
-  else
-    nSel = selModel->selectedIndexes().count();
-  // qDebug()<<"selected:" << nSel;
+  int nSel = selModel->selectedRows().count();
+  //qDebug()<<"selected:" << nSel;
   Q_EMIT selChanged(nSel); // FIXME: this is inefficient
 }
 
@@ -470,6 +466,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     view->setIconSize(iconSize);
 
     view->setSelectionMode(QAbstractItemView::ExtendedSelection);
+    view->setSelectionBehavior(QAbstractItemView::SelectRows);
     layout()->addWidget(view);
 
     // enable dnd
@@ -585,7 +582,7 @@ QItemSelectionModel* FolderView::selectionModel() const {
 
 FmPathList* FolderView::selectedFilePaths() const {
   if(model_) {
-    QModelIndexList selIndexes = mode == DetailedListMode ? selectedRows() : selectedIndexes();
+    QModelIndexList selIndexes = selectedRows();
     if(!selIndexes.isEmpty()) {
       FmPathList* paths = fm_path_list_new();
       QModelIndexList::const_iterator it;
@@ -601,7 +598,7 @@ FmPathList* FolderView::selectedFilePaths() const {
 
 FmFileInfoList* FolderView::selectedFiles() const {
   if(model_) {
-    QModelIndexList selIndexes = mode == DetailedListMode ? selectedRows() : selectedIndexes();
+    QModelIndexList selIndexes = selectedRows();
     if(!selIndexes.isEmpty()) {
       FmFileInfoList* files = fm_file_info_list_new();
       QModelIndexList::const_iterator it;
