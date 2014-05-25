@@ -33,6 +33,7 @@
 #include <QDate>
 #include <QDebug>
 #include <QMimeData>
+#include <QApplication>
 #include "folderview_p.h"
 
 namespace Fm {
@@ -312,7 +313,9 @@ void FolderView::onItemActivated(QModelIndex index) {
     QVariant data = index.model()->data(index, FolderModel::FileInfoRole);
     FmFileInfo* info = (FmFileInfo*)data.value<void*>();
     if(info) {
-      Q_EMIT clicked(ActivatedClick, info);
+      if (!(QApplication::keyboardModifiers() & (Qt::ShiftModifier | Qt::ControlModifier | Qt::AltModifier | Qt::MetaModifier))) {
+        Q_EMIT clicked(ActivatedClick, info);
+      }
     }
   }
 }
