@@ -531,22 +531,21 @@ void FolderView::setModel(ProxyFolderModel* model) {
 void FolderView::contextMenuEvent(QContextMenuEvent* event) {
   QWidget::contextMenuEvent(event);
   QPoint pos = event->pos();
-  QPoint pos2 = view->mapFromParent(pos);
-  emitClickedAt(ContextMenuClick, pos2);
+  QPoint view_pos = view->mapFromParent(pos);
+  QPoint viewport_pos = view->viewport()->mapFromParent(view_pos);
+  emitClickedAt(ContextMenuClick, viewport_pos);
 }
 
 void FolderView::childMousePressEvent(QMouseEvent* event) {
-  // called from mousePressEvent() of chld view
+  // called from mousePressEvent() of child view
   if(event->button() == Qt::MiddleButton) {
-    QPoint pos = event->pos();
-    emitClickedAt(MiddleClick, pos);
+    emitClickedAt(MiddleClick, event->pos());
   }
 }
 
-void FolderView::emitClickedAt(ClickType type, QPoint& pos) {
-  QPoint viewport_pos = view->viewport()->mapFromParent(pos);
+void FolderView::emitClickedAt(ClickType type, const QPoint& pos) {
   // indexAt() needs a point in "viewport" coordinates.
-  QModelIndex index = view->indexAt(viewport_pos);
+  QModelIndex index = view->indexAt(pos);
   if(index.isValid()) {
     QVariant data = index.data(FolderModel::FileInfoRole);
     FmFileInfo* info = reinterpret_cast<FmFileInfo*>(data.value<void*>());

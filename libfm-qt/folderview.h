@@ -115,7 +115,7 @@ protected:
   void childDragLeaveEvent(QDragLeaveEvent* e);
   void childDropEvent(QDropEvent* e);
 
-  void emitClickedAt(ClickType type, QPoint& pos);
+  void emitClickedAt(ClickType type, const QPoint& pos);
 
   QModelIndexList selectedRows ( int column = 0 ) const;
   QModelIndexList selectedIndexes() const;
