@@ -38,6 +38,8 @@ public:
   virtual ~FolderViewListView();
   virtual void startDrag(Qt::DropActions supportedActions);
   virtual void mousePressEvent(QMouseEvent* event);
+  virtual void mouseReleaseEvent(QMouseEvent* event);
+  virtual void mouseDoubleClickEvent(QMouseEvent* event);
   virtual void dragEnterEvent(QDragEnterEvent* event);
   virtual void dragMoveEvent(QDragMoveEvent* e);
   virtual void dragLeaveEvent(QDragLeaveEvent* e);
@@ -52,6 +54,15 @@ public:
   inline QRect rectForIndex(const QModelIndex & index) const {
     return QListView::rectForIndex(index);
   }
+
+Q_SIGNALS:
+  void activatedFiltered(const QModelIndex &index);
+
+private Q_SLOTS:
+  void activation(const QModelIndex &index);
+
+private:
+  bool activationAllowed_;
 };
 
 class FolderViewTreeView : public QTreeView {
@@ -62,6 +73,8 @@ public:
   virtual ~FolderViewTreeView();
   virtual void setModel(QAbstractItemModel* model);
   virtual void mousePressEvent(QMouseEvent* event);
+  virtual void mouseReleaseEvent(QMouseEvent* event);
+  virtual void mouseDoubleClickEvent(QMouseEvent* event);
   virtual void dragEnterEvent(QDragEnterEvent* event);
   virtual void dragMoveEvent(QDragMoveEvent* e);
   virtual void dragLeaveEvent(QDragLeaveEvent* e);
@@ -74,12 +87,18 @@ public:
   virtual void resizeEvent(QResizeEvent* event);
   void queueLayoutColumns();
 
+Q_SIGNALS:
+  void activatedFiltered(const QModelIndex &index);
+
 private Q_SLOTS:
   void layoutColumns();
+  void activation(const QModelIndex &index);
 
 private:
   bool doingLayout_;
   QTimer* layoutTimer_;
+
+  bool activationAllowed_;
 };
 
 } // namespace Fm

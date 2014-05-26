@@ -39,7 +39,9 @@
 namespace Fm {
 
 FolderViewListView::FolderViewListView(QWidget* parent):
-  QListView(parent) {
+  QListView(parent),
+  activationAllowed_(true) {
+  connect(this, SIGNAL(activated(QModelIndex)), this, SLOT(activation(QModelIndex)));
 }
 
 FolderViewListView::~FolderViewListView() {
@@ -138,15 +140,46 @@ void FolderViewListView::dropEvent(QDropEvent* e) {
     QAbstractItemView::dropEvent(e);
 }
 
+void FolderViewListView::mouseReleaseEvent(QMouseEvent* event) {
+  bool activationWasAllowed = activationAllowed_;
+  if ((!style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+    activationAllowed_ = false;
+  }
+
+  QListView::mouseReleaseEvent(event);
+
+  activationAllowed_ = activationWasAllowed;
+}
+
+void FolderViewListView::mouseDoubleClickEvent(QMouseEvent* event) {
+  bool activationWasAllowed = activationAllowed_;
+  if ((style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+    activationAllowed_ = false;
+  }
+
+  QListView::mouseDoubleClickEvent(event);
+
+  activationAllowed_ = activationWasAllowed;
+}
+
+void FolderViewListView::activation(const QModelIndex &index) {
+  if (activationAllowed_) {
+    Q_EMIT activatedFiltered(index);
+  }
+}
+
 //-----------------------------------------------------------------------------
 
 FolderViewTreeView::FolderViewTreeView(QWidget* parent):
   QTreeView(parent),
   layoutTimer_(NULL),
-  doingLayout_(false) {
+  doingLayout_(false),
+  activationAllowed_(true) {
 
   header()->setStretchLastSection(false);
   setIndentation(0);
+
+  connect(this, SIGNAL(activated(QModelIndex)), this, SLOT(activation(QModelIndex)));
 }
 
 FolderViewTreeView::~FolderViewTreeView() {
@@ -280,6 +313,35 @@ void FolderViewTreeView::queueLayoutColumns() {
   layoutTimer_->start();
 }
 
+void FolderViewTreeView::mouseReleaseEvent(QMouseEvent* event) {
+  bool activationWasAllowed = activationAllowed_;
+  if ((!style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+    activationAllowed_ = false;
+  }
+
+  QTreeView::mouseReleaseEvent(event);
+
+  activationAllowed_ = activationWasAllowed;
+}
+
+void FolderViewTreeView::mouseDoubleClickEvent(QMouseEvent* event) {
+  bool activationWasAllowed = activationAllowed_;
+  if ((style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+    activationAllowed_ = false;
+  }
+
+  QTreeView::mouseDoubleClickEvent(event);
+
+  activationAllowed_ = activationWasAllowed;
+}
+
+void FolderViewTreeView::activation(const QModelIndex &index) {
+  if (activationAllowed_) {
+    Q_EMIT activatedFiltered(index);
+  }
+}
+
+
 //-----------------------------------------------------------------------------
 
 FolderView::FolderView(ViewMode _mode, QWidget* parent):
@@ -402,7 +464,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     delegate->setGridSize(listView->gridSize());
   }
   if(view) {
-    connect(view, SIGNAL(activated(QModelIndex)), SLOT(onItemActivated(QModelIndex)));
+    connect(view, SIGNAL(activatedFiltered(QModelIndex)), SLOT(onItemActivated(QModelIndex)));
     view->setContextMenuPolicy(Qt::NoContextMenu); // defer the context menu handling to parent widgets
     view->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     view->setIconSize(iconSize);
