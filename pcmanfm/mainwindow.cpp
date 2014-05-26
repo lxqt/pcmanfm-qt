@@ -285,6 +285,7 @@ void MainWindow::on_actionFolderProperties_triggered() {
 void MainWindow::on_actionShowHidden_triggered(bool checked) {
   TabPage* tabPage = currentPage();
   tabPage->setShowHidden(checked);
+  static_cast<Application*>(qApp)->settings().setShowHidden(checked);
 }
 
 void MainWindow::on_actionByFileName_triggered(bool checked) {
