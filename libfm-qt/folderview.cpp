@@ -665,15 +665,16 @@ void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
   }
   else if(type == ContextMenuClick) {
     FmPath* folderPath = path();
-    QMenu* menu;
+    QMenu* menu = NULL;
     if(fileInfo) {
       // show context menu
-      FmFileInfoList* files = selectedFiles();
-      Fm::FileMenu* fileMenu = new Fm::FileMenu(files, fileInfo, folderPath);
-      fileMenu->setFileLauncher(fileLauncher_);
-      prepareFileMenu(fileMenu);
-      fm_file_info_list_unref(files);
-      menu = fileMenu;
+      if (FmFileInfoList* files = selectedFiles()) {
+        Fm::FileMenu* fileMenu = new Fm::FileMenu(files, fileInfo, folderPath);
+        fileMenu->setFileLauncher(fileLauncher_);
+        prepareFileMenu(fileMenu);
+        fm_file_info_list_unref(files);
+        menu = fileMenu;
+      }
     }
     else {
       FmFolder* _folder = folder();
@@ -682,8 +683,10 @@ void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
       prepareFolderMenu(folderMenu);
       menu = folderMenu;
     }
-    menu->popup(QCursor::pos());
-    connect(menu, SIGNAL(aboutToHide()), menu, SLOT(deleteLater()));
+    if (menu) {
+      menu->popup(QCursor::pos());
+      connect(menu, SIGNAL(aboutToHide()), menu, SLOT(deleteLater()));
+    }
   }
 }
 
