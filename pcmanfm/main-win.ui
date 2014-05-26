@@ -24,7 +24,7 @@
      <number>0</number>
     </property>
     <item>
-     <widget class="QTabBar" name="tabBar" native="true">
+     <widget class="PCManFM::TabBar" name="tabBar" native="true">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -628,9 +628,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>QTabBar</class>
+   <class>PCManFM::TabBar</class>
    <extends>QWidget</extends>
-   <header>QTabBar</header>
+   <header>tabbar.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>

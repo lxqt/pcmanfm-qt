@@ -19,6 +19,7 @@ set(pcmanfm_SRCS
   pcmanfm.cpp
   mainwindow.cpp
   tabpage.cpp
+  tabbar.cpp
   view.cpp
   launcher.cpp
   preferencesdialog.cpp
