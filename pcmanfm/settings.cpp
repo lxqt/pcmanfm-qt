@@ -190,11 +190,11 @@ bool Settings::loadFile(QString filePath) {
 
   // override config in libfm's FmConfig
   bigIconSize_ = settings.value("BigIconSize", 48).toInt();
-  smallIconSize_ = settings.value("SmallIconSize_", 24).toInt();
-  sidePaneIconSize_ = settings.value("SidePaneIconSize_", 24).toInt();
-  thumbnailIconSize_ = settings.value("ThumbnailIconSize_", 128).toInt();
+  smallIconSize_ = settings.value("SmallIconSize", 24).toInt();
+  sidePaneIconSize_ = settings.value("SidePaneIconSize", 24).toInt();
+  thumbnailIconSize_ = settings.value("ThumbnailIconSize", 128).toInt();
   settings.endGroup();
-  
+
   settings.beginGroup("Window");
   windowWidth_ = settings.value("Width", 640).toInt();
   windowHeight_ = settings.value("Height", 480).toInt();
@@ -244,7 +244,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("MountRemovable", mountRemovable_);
   settings.setValue("AutoRun", autoRun_);
   settings.endGroup();
-  
+
   settings.beginGroup("Thumbnail");
   settings.setValue("ShowThumbnails", showThumbnails_);
   settings.setValue("MaxThumbnailFileSize", maxThumbnailFileSize());
