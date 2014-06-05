@@ -147,6 +147,9 @@ MainWindow::MainWindow(FmPath* path):
     connect(shortcut, SIGNAL(activated()), SLOT(onShortcutJumpToTab()));
   }
 
+  QShortcut *shiftDelShortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this);
+  connect(shiftDelShortcut, SIGNAL(activated()), SLOT(onDeleteSelection()));
+
   if(path)
     addTab(path);
 }
@@ -654,6 +657,17 @@ void MainWindow::on_actionDelete_triggered() {
 
   fm_path_list_unref(paths);
 }
+
+void MainWindow::onDeleteSelection()
+{
+  Application* app = static_cast<Application*>(qApp);
+  Settings& settings = app->settings();
+  TabPage* page = currentPage();
+  FmPathList* paths = page->selectedFilePaths();
+  FileOperation::deleteFiles(paths, settings.confirmDelete(), this);
+  fm_path_list_unref(paths);
+}
+
 void MainWindow::on_actionRename_triggered() {
   TabPage* page = currentPage();
   FmPathList* paths = page->selectedFilePaths();
