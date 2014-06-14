@@ -239,13 +239,14 @@ QString TabPage::formatStatusText() {
 }
 
 /*static*/ void TabPage::onFolderRemoved(FmFolder* _folder, TabPage* pThis) {
-  // the folder we're showing is removed, destroy the widget
-  qDebug("folder removed");
-  // NOTE: call pThis->deleteLater() directly from this GObject signal handler
-  // does not work but I don't know why.
-  // Maybe it's the problem of glib mainloop integration?
-  // Call it when idle works, though.
-  QTimer::singleShot(0, pThis, SLOT(deleteLater()));
+  // the folder we're showing is removed, go up
+  qDebug("folder removed, going up");
+
+  pThis->up();
+  FmPath *path = pThis->path();
+  char *name = fm_path_to_str(path);
+  Q_EMIT pThis->openDirRequested(path, View::OpenInCurrentView);
+  g_free(name);
 }
 
 /*static*/ void TabPage::onFolderUnmount(FmFolder* _folder, TabPage* pThis) {
