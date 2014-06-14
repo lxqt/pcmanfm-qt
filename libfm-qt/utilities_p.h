@@ -30,9 +30,14 @@ namespace Fm {
 class FilenameDialog : public QInputDialog {
   Q_OBJECT
 public:
-  FilenameDialog(QWidget* parent = 0, Qt::WindowFlags flags = 0): QInputDialog(parent, flags) {
+  FilenameDialog(QWidget* parent = 0, int isDirectory = 0, Qt::WindowFlags flags = 0):
+  QInputDialog(parent, flags),
+  _isDirectory(isDirectory) {
     QTimer::singleShot(0, this, SLOT(initSelection()));
   }
+
+private:
+  int _isDirectory;
 
 private Q_SLOTS:
   // do not select filename extensions
@@ -40,16 +45,20 @@ private Q_SLOTS:
     // find the QLineEdit child widget
     QLineEdit* lineEdit = findChild<QLineEdit*>();
     if(lineEdit) {
-      QString filename = lineEdit->text();
-      if(!filename.isEmpty()) {
-        // only select filename part without extension name.
-        int ext = filename.lastIndexOf('.');
-        if(ext != -1) {
-          // add special cases for tar.gz, tar.bz2, and other tar.* files
-          if(filename.leftRef(ext).endsWith(".tar"))
-            ext -= 4;
-	  // FIXME: should we also handle other special cases?
-          lineEdit->setSelection(0, ext);
+      if (_isDirectory)
+        lineEdit->selectAll();
+      else {
+        QString filename = lineEdit->text();
+        if(!filename.isEmpty()) {
+          // only select filename part without extension name.
+          int ext = filename.lastIndexOf('.');
+          if(ext != -1) {
+            // add special cases for tar.gz, tar.bz2, and other tar.* files
+            if(filename.leftRef(ext).endsWith(".tar"))
+              ext -= 4;
+            // FIXME: should we also handle other special cases?
+            lineEdit->setSelection(0, ext);
+          }
         }
       }
     }
