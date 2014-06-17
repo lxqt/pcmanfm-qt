@@ -43,6 +43,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.wallpaperMode->addItem(tr("Stretch to fit the screen"), DesktopWindow::WallpaperFit);
   ui.wallpaperMode->addItem(tr("Center on the screen"), DesktopWindow::WallpaperCenter);
   ui.wallpaperMode->addItem(tr("Tile the image to fill the entire screen"), DesktopWindow::WallpaperTile);
+  ui.wallpaperMode->addItem(tr("Multihead"), DesktopWindow::WallpaperMultihead);
   int i;
   switch(settings.wallpaperMode()) {
     case DesktopWindow::WallpaperNone:
@@ -59,6 +60,9 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
       break;
     case DesktopWindow::WallpaperTile:
       i = 4;
+      break;
+    case DesktopWindow::WallpaperMultihead:
+      i = 5;
       break;
     default:
       i = 0;

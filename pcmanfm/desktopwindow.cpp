@@ -266,6 +266,14 @@ void DesktopWindow::updateWallpaper() {
       image = loadWallpaperFile(size());
       pixmap = QPixmap::fromImage(image);
     }
+    else if(wallpaperMode_ == WallpaperMultihead) {
+      image = QImage(wallpaperFile_); // load original image
+      pixmap = QPixmap(size());
+      QPainter painter(&pixmap);
+      pixmap.fill(bgColor_);
+      painter.drawImage(-geometry().left(), -geometry().top(), image);
+      pixmap = QPixmap::fromImage(image);
+    }
     else { // WallpaperCenter || WallpaperFit
       if(wallpaperMode_ == WallpaperCenter) {
         image = QImage(wallpaperFile_); // load original image

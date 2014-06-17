@@ -445,7 +445,7 @@ void Application::preferences(QString page) {
 }
 
 void Application::setWallpaper(QString path, QString modeString) {
-  static const char* valid_wallpaper_modes[] = {"color", "stretch", "fit", "center", "tile"};
+  static const char* valid_wallpaper_modes[] = {"color", "stretch", "fit", "center", "tile", "multihead"};
   DesktopWindow::WallpaperMode mode = settings_.wallpaperMode();
   bool changed = false;
 
