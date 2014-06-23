@@ -242,7 +242,8 @@ QString TabPage::formatStatusText() {
   // the folder we're showing is removed, go up
   qDebug("folder removed, going up");
 
-  pThis->up();
+  while (!QFile(fm_path_to_str(pThis->path())).exists())
+    pThis->up();
   FmPath *path = pThis->path();
   char *name = fm_path_to_str(path);
   Q_EMIT pThis->openDirRequested(path, View::OpenInCurrentView);
