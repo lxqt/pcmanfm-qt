@@ -554,9 +554,12 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
 
 void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
   switch(target) {
-  case View::OpenInCurrentView:
-    chdir(path);
+  case View::OpenInCurrentView: {
+    TabPage* tabPage = static_cast<TabPage*>(sender());
+    if (tabPage == currentPage())
+      chdir(path);
     break;
+  }
 
   case View::OpenInNewTab:
     addTab(path);
