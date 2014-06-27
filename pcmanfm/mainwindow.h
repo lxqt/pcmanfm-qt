@@ -52,7 +52,7 @@ public:
   }
 
   void updateFromSettings(Settings& settings);
-  
+
 protected Q_SLOTS:
 
   void onPathEntryReturnPressed();
@@ -72,7 +72,7 @@ protected Q_SLOTS:
   void on_actionSelectAll_triggered();
   void on_actionInvertSelection_triggered();
   void on_actionPreferences_triggered();
-  
+
   void on_actionGoBack_triggered();
   void on_actionGoForward_triggered();
   void on_actionGoUp_triggered();
@@ -104,23 +104,23 @@ protected Q_SLOTS:
   void on_actionDesktop_triggered();
   void on_actionAddToBookmarks_triggered();
   void on_actionEditBookmarks_triggered();
-  
+
   void on_actionOpenTerminal_triggered();
   void on_actionOpenAsRoot_triggered();
-  
+
   void on_actionAbout_triggered();
 
   void onBookmarkActionTriggered();
-  
+
   void onTabBarCloseRequested(int index);
   void onTabBarCurrentChanged(int index);
 
   void onShortcutPrevTab();
   void onShortcutNextTab();
   void onShortcutJumpToTab();
-  
+
   void onStackedWidgetWidgetRemoved(int index);
-  
+
   void onTabPageTitleChanged(QString title);
   void onTabPageStatusChanged(int type, QString statusText);
   void onTabPageOpenDirRequested(FmPath* path, int target);
@@ -129,7 +129,9 @@ protected Q_SLOTS:
   void onSidePaneChdirRequested(int type, FmPath* path);
 
   void onBackForwardContextMenu(QPoint pos);
-  
+
+  void onBackspaceShortcut();
+
 protected:
   // void changeEvent( QEvent * event);
   void closeTab(int index);
