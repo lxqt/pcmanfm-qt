@@ -147,6 +147,9 @@ MainWindow::MainWindow(FmPath* path):
     connect(shortcut, SIGNAL(activated()), SLOT(onShortcutJumpToTab()));
   }
 
+  QShortcut *backspaceShortcut = new QShortcut(QKeySequence(Qt::Key_Backspace), this);
+  connect(backspaceShortcut, SIGNAL(activated()), SLOT(onBackspaceShortcut()));
+
   if(path)
     addTab(path);
 }
@@ -654,6 +657,13 @@ void MainWindow::on_actionDelete_triggered() {
 
   fm_path_list_unref(paths);
 }
+
+void MainWindow::onBackspaceShortcut()
+{
+    this->currentPage()->up();
+    updateUIForCurrentPage();
+}
+
 void MainWindow::on_actionRename_triggered() {
   TabPage* page = currentPage();
   FmPathList* paths = page->selectedFilePaths();
