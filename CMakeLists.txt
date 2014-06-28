@@ -10,10 +10,10 @@ set(LIBFM_QT_VERSION "0.1")
 set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for libraries")
 set(INCLUDE_INSTALL_DIR include CACHE PATH "Installation path for includes")
 
-option(USE_QT5 "Use Qt5. Defaults to Qt4" OFF)
+option(USE_QT5 "Use Qt5. Defaults to Qt4" $ENV{USE_QT5})
 
 if(USE_QT5) # actually, we need Qt >= 5.1. Qt 5.0 is not supported.
-  cmake_minimum_required(VERSION 2.8.9) # we need at least cmake 2.8.9 to build with Qt5
+  cmake_minimum_required(VERSION 2.8.11)
   find_package(Qt5Widgets REQUIRED)
   find_package(Qt5DBus REQUIRED)
   find_package(Qt5LinguistTools REQUIRED)
@@ -30,7 +30,7 @@ pkg_check_modules(SYSTEM_LIBS REQUIRED
   glib-2.0
   gio-2.0
   gio-unix-2.0
-  ${XLIB} # we need to make this optional when trying to support Wayland
+  ${XLIB}
 #  libstartup-notification-1.0
 )
 

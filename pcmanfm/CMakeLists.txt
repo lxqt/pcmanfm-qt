@@ -1,10 +1,19 @@
+if(USE_QT5)
+	set(LIBFM_LIBRARY "fm-qt5")
+	set(QTX_INCLUDE_DIRS "")
+	set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
+else()
+	set(LIBFM_LIBRARY "fm-qt")
+	set(QTX_INCLUDE_DIRS ${QT_INCLUDES})
+	set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTDBUS_LIBRARY})
+endif()
+
 include_directories(
-  ${QT_INCLUDES}
+  ${QTX_INCLUDE_DIRS}
   ${LIBFM_INCLUDE_DIRS}
   ${LIBMENUCACHE_INCLUDE_DIRS}
   ${SYSTEM_LIBS_INCLUDE_DIRS}
   ${CMAKE_CURRENT_BINARY_DIR}
-  ${CMAKE_CURRENT_SOURCE_DIR}
   ${PROJECT_SOURCE_DIR}/libfm-qt
 )
 
@@ -73,14 +82,13 @@ set_property(
    PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/pcmanfm-qt"
    LIBFM_DATA_DIR="${LIBFM_PREFIX}/share/libfm" # This is a little bit dirty
 )
+
 target_link_libraries(pcmanfm-qt 
-  ${QT_QTCORE_LIBRARY}
-  ${QT_QTGUI_LIBRARY}
-  ${QT_QTDBUS_LIBRARY}
+  ${QTX_LIBRARIES}
   ${LIBFM_LIBRARIES}
   ${LIBMENUCACHE_LIBRARIES}
   ${SYSTEM_LIBS_LIBRARIES}
-  fm-qt
+  ${LIBFM_LIBRARY}
 )
 
 install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})

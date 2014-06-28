@@ -1,11 +1,21 @@
+project(fm-qt)
+if(USE_QT5)
+	set(LIBRARY_NAME "fm-qt5")
+	set(QTX_INCLUDE_DIRS "")
+	set(QTX_LIBRARIES Qt5::Widgets Qt5::X11Extras)
+else()
+	set(LIBRARY_NAME "fm-qt")
+	set(QTX_INCLUDE_DIRS ${QT_INCLUDES})
+	set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY})
+endif()
+
 include_directories(
-  ${QT_INCLUDES}
+  ${QTX_INCLUDE_DIRS}
   ${LIBFM_INCLUDE_DIRS}
   ${LIBFM_INCLUDEDIR}/libfm # to workaround incorrect #include in fm-actions.
   ${LIBMENUCACHE_INCLUDE_DIRS}
   ${SYSTEM_LIBS_INCLUDE_DIRS}
   ${CMAKE_CURRENT_BINARY_DIR}
-  ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 link_directories(
@@ -74,13 +84,13 @@ else()
   qt4_wrap_ui(libfm_UIS_H ${libfm_UIS})
 endif()
 
-add_library(fm-qt SHARED
+add_library(${LIBRARY_NAME} SHARED
   ${libfm_SRCS}
   ${libfm_UIS_H}
 )
 
 set_property(
-  TARGET fm-qt APPEND
+  TARGET ${LIBRARY_NAME} APPEND
   PROPERTY COMPILE_DEFINITIONS
   LIBFM_QT_COMPILATION=1
   LIBFM_DATA_DIR="${CMAKE_INSTALL_FULL_DATADIR}/libfm-qt"
@@ -88,12 +98,11 @@ set_property(
 
 # only turn on custom actions support if it is enabled in libfm.
 if(EXISTS ${LIBFM_INCLUDEDIR}/libfm/fm-actions.h )
-  set_property(TARGET fm-qt APPEND PROPERTY COMPILE_DEFINITIONS CUSTOM_ACTIONS)
+  set_property(TARGET ${LIBRARY_NAME} APPEND PROPERTY COMPILE_DEFINITIONS CUSTOM_ACTIONS)
 endif()
 
-target_link_libraries(fm-qt
-  ${QT_QTCORE_LIBRARY}
-  ${QT_QTGUI_LIBRARY}
+target_link_libraries(${LIBRARY_NAME}
+  ${QTX_LIBRARIES}
   ${LIBFM_LIBRARIES}
   ${LIBMENUCACHE_LIBRARIES}
   ${SYSTEM_LIBS_LIBRARIES}
@@ -101,7 +110,7 @@ target_link_libraries(fm-qt
 
 # set libtool soname
 set_target_properties(
-  fm-qt
+  ${LIBRARY_NAME}
   PROPERTIES SOVERSION "0.0.0"
 )
 
@@ -115,19 +124,24 @@ install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 # FIXME: add libtool version to the lib (soname) later.
 # FIXME: only export public symbols
 
-install(TARGETS fm-qt
+install(TARGETS ${LIBRARY_NAME}
   LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-  PUBLIC_HEADER 
+  PUBLIC_HEADER
 )
 
 # install a pkgconfig file for libfm-qt
-configure_file(libfm-qt.pc.in libfm-qt.pc @ONLY)
+if(USE_QT5)
+	set(REQUIRED_QT "Qt5Core >= 5.1 Qt5DBus >= 5.1")
+else()
+	set(REQUIRED_QT "QtGui >= 4.7 QtDBus >= 4.7")
+endif()
+configure_file(libfm-qt.pc.in lib${LIBRARY_NAME}.pc @ONLY)
 # FreeBSD loves to install files to different locations
 # http://www.freebsd.org/doc/handbook/dirstructure.html
 if(${CMAKE_SYSTEM_NAME} STREQUAL "FreeBSD")
-  install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libfm-qt.pc DESTINATION libdata/pkgconfig)
+  install(FILES ${CMAKE_CURRENT_BINARY_DIR}/lib${LIBRARY_NAME}.pc DESTINATION libdata/pkgconfig)
 else()
-  install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libfm-qt.pc DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
+  install(FILES ${CMAKE_CURRENT_BINARY_DIR}/lib${LIBRARY_NAME}.pc DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
 endif()
 
 # add translation for pcmanfm-qt
@@ -148,7 +162,3 @@ install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/libfm-qt/translat
 set_directory_properties(PROPERTIES
   CLEAN_NO_CUSTOM true
 )
-
-if(USE_QT5)
-  qt5_use_modules(fm-qt Widgets DBus X11Extras)
-endif()
