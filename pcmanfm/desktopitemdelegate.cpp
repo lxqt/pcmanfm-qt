@@ -68,7 +68,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
 
   // draw some emblems for the item if needed
   // we only support symlink emblem at the moment
-#if QT_VERSION >= 0x050000
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   FmFileInfo* file = static_cast<FmFileInfo*>(index.data(Fm::FolderModel::FileInfoRole).value<void*>());
 #else
   FmFileInfo* file = static_cast<FmFileInfo*>(qVariantValue<void*>(index.data(Fm::FolderModel::FileInfoRole)));

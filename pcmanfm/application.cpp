@@ -327,7 +327,7 @@ void Application::onAboutToQuit() {
 void Application::commitData(QSessionManager& manager) {
   qDebug("commitData");
   // FIXME: where should we write the config file?
-#if QT_VERSION >= 0x050000
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
 #else
   QApplication::commitData(manager);
 #endif

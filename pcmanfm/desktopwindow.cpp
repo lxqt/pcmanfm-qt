@@ -43,7 +43,7 @@
 #include "folderview_p.h"
 
 #include <QX11Info> // requires Qt 4 or Qt 5.1
-#if QT_VERSION >= 0x050000
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
 #include <xcb/xcb.h>
 #else
 #include <X11/Xlib.h>
@@ -67,7 +67,7 @@ DesktopWindow::DesktopWindow(int screenNum):
   setAttribute(Qt::WA_DeleteOnClose);
   
   // set freedesktop.org EWMH hints properly
-#if QT_VERSION >= 0x050000
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   if(QX11Info::isPlatformX11() && QX11Info::connection()) {
     xcb_connection_t* con = QX11Info::connection();
     const char* atom_name = "_NET_WM_WINDOW_TYPE_DESKTOP";
