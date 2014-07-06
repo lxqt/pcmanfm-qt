@@ -109,13 +109,6 @@ DesktopWindow::DesktopWindow(int screenNum):
   listView->setResizeMode(QListView::Adjust);
   listView->setFlow(QListView::TopToBottom);
 
-#if QT_VERSION < 0x050000
-  // make the background of the list view transparent (alpha: 0)
-  QPalette transparent = listView->palette();
-  transparent.setColor(QPalette::Base, QColor(0,0,0,0));
-  listView->setPalette(transparent);
-#endif
-
   // set our own delegate
   delegate_ = new DesktopItemDelegate(listView);
   listView->setItemDelegateForColumn(Fm::FolderModel::ColumnFileName, delegate_);
