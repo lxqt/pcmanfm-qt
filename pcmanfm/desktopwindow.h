@@ -54,6 +54,7 @@ public:
   void setForeground(const QColor& color);
   void setShadow(const QColor& color);
   void setBackground(const QColor& color);
+  void setDesktopFolder();
   void setWallpaperFile(QString filename);
   void setWallpaperMode(WallpaperMode mode = WallpaperStretch);
 
@@ -93,13 +94,12 @@ private:
   QColor fgColor_;
   QColor bgColor_;
   QColor shadowColor_;
-
   QString wallpaperFile_;
   WallpaperMode wallpaperMode_;
   QPixmap wallpaperPixmap_;
   DesktopItemDelegate* delegate_;
   Launcher fileLauncher_;
-  
+
   int screenNum_;
   QHash<QByteArray, QPoint> customItemPos_;
 };

@@ -15,12 +15,14 @@ include_directories(
   ${SYSTEM_LIBS_INCLUDE_DIRS}
   ${CMAKE_CURRENT_BINARY_DIR}
   ${PROJECT_SOURCE_DIR}/libfm-qt
+  ${QTXDG_INCLUDE_DIRS}
 )
 
 link_directories(
   ${LIBFM_LIBRARY_DIRS}
   ${LIBMENUCACHE_LIBRARY_DIRS}
   ${SYSTEM_LIBS_LIBRARY_DIRS}
+  ${QTXDG_LIBRARY_DIRS}
 )
 
 set(pcmanfm_SRCS
@@ -71,7 +73,7 @@ else()
   qt4_wrap_ui(pcmanfm_UIS_H ${pcmanfm_UIS})
 endif()
 
-add_executable(pcmanfm-qt 
+add_executable(pcmanfm-qt
   ${pcmanfm_SRCS}
   ${pcmanfm_UIS_H}
 )
@@ -83,12 +85,13 @@ set_property(
    LIBFM_DATA_DIR="${LIBFM_PREFIX}/share/libfm" # This is a little bit dirty
 )
 
-target_link_libraries(pcmanfm-qt 
+target_link_libraries(pcmanfm-qt
   ${QTX_LIBRARIES}
   ${LIBFM_LIBRARIES}
   ${LIBMENUCACHE_LIBRARIES}
   ${SYSTEM_LIBS_LIBRARIES}
   ${LIBFM_LIBRARY}
+  ${QTXDG_LIBRARY}
 )
 
 install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
