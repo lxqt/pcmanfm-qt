@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>451</width>
-    <height>393</height>
+    <width>473</width>
+    <height>428</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -208,10 +208,55 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
-        <widget class="QCheckBox" name="showWmMenu">
-         <property name="text">
-          <string>Show menus provided by window managers when desktop is clicked</string>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="title">
+          <string>Window Manager</string>
          </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QCheckBox" name="showWmMenu">
+            <property name="text">
+             <string>Show menus provided by window managers when desktop is clicked</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>Desktop</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Desktop folder:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="desktopFolder">
+            <property name="toolTip">
+             <string>Image file</string>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Folder path</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="browseDesktopFolder">
+            <property name="text">
+             <string>&amp;Browse</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
        <item>

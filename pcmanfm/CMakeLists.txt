@@ -9,12 +9,14 @@ include_directories(
     ${SYSTEM_LIBS_INCLUDE_DIRS}
     "${CMAKE_CURRENT_BINARY_DIR}"
     "${PROJECT_SOURCE_DIR}/libfm-qt"
+    ${QTXDG_INCLUDE_DIRS}
 )
 
 link_directories(
     ${LIBFM_LIBRARY_DIRS}
     ${LIBMENUCACHE_LIBRARY_DIRS}
     ${SYSTEM_LIBS_LIBRARY_DIRS}
+    ${QTXDG_LIBRARY_DIRS}
 )
 
 set(pcmanfm_SRCS
@@ -70,6 +72,7 @@ target_link_libraries(pcmanfm-qt
     ${LIBMENUCACHE_LIBRARIES}
     ${SYSTEM_LIBS_LIBRARIES}
     ${LIBFM_LIBRARY}
+    ${QTXDG_LIBRARY}
 )
 
 install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})

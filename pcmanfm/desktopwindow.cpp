@@ -36,6 +36,7 @@
 #include <QShortcut>
 #include <QDropEvent>
 #include <QMimeData>
+#include <XdgDirs>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -180,6 +181,12 @@ void DesktopWindow::resizeEvent(QResizeEvent* event) {
   queueRelayout(100); // Qt use a 100 msec delay for relayout internally so we use it, too.
 }
 
+void DesktopWindow::setDesktopFolder() {
+  QString desktopFolder = XdgDirs::userDir(XdgDirs::Desktop);
+  model_ = Fm::CachedFolderModel::modelFromPath(fm_path_new_for_path(desktopFolder.toStdString().c_str()));
+  proxyModel_->setSourceModel(model_);
+}
+
 void DesktopWindow::setWallpaperFile(QString filename) {
   wallpaperFile_ = filename;
 }
@@ -315,6 +322,7 @@ void DesktopWindow::updateWallpaper() {
 }
 
 void DesktopWindow::updateFromSettings(Settings& settings) {
+  setDesktopFolder();
   setWallpaperFile(settings.wallpaper());
   setWallpaperMode(settings.wallpaperMode());
   setFont(settings.desktopFont());

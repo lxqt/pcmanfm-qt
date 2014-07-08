@@ -25,6 +25,7 @@
 #include <QFileDialog>
 #include <QImageReader>
 #include <qfuture.h>
+#include <XdgDirs>
 
 using namespace PCManFM;
 
@@ -32,7 +33,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   QDialog(parent, f) {
 
   setAttribute(Qt::WA_DeleteOnClose);
-  
+
   Settings& settings = static_cast<Application*>(qApp)->settings();
   ui.setupUi(this);
 
@@ -64,10 +65,15 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
       i = 0;
   }
   ui.wallpaperMode->setCurrentIndex(i);
-  
+
   connect(ui.browse, SIGNAL(clicked(bool)), SLOT(onBrowseClicked()));
   qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
   ui.imageFile->setText(settings.wallpaper());
+
+  connect(ui.browseDesktopFolder, SIGNAL(clicked(bool)), SLOT(onBrowseDesktopFolderClicked()));
+  QString desktopFolder = XdgDirs::userDir(XdgDirs::Desktop);
+  qDebug("desktop folder: %s", desktopFolder.toStdString().c_str());
+  ui.desktopFolder->setText(desktopFolder);
 
   ui.font->setFont(settings.desktopFont());
 
@@ -82,14 +88,13 @@ DesktopPreferencesDialog::~DesktopPreferencesDialog() {
 
 void DesktopPreferencesDialog::accept() {
   Settings& settings = static_cast<Application*>(qApp)->settings();
-  
-  settings.setWallpaper(ui.imageFile->text());
 
+  XdgDirs::setUserDir(XdgDirs::Desktop, ui.desktopFolder->text(), true);
+
+  settings.setWallpaper(ui.imageFile->text());
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
   settings.setWallpaperMode(mode);
-
   settings.setDesktopFont(ui.font->font());
-
   settings.setDesktopBgColor(ui.backgroundColor->color());
   settings.setDesktopFgColor(ui.textColor->color());
   settings.setDesktopShadowColor(ui.shadowColor->color());
@@ -132,6 +137,18 @@ void DesktopPreferencesDialog::onBrowseClicked() {
     QString filename;
     filename = dlg.selectedFiles().first();
     ui.imageFile->setText(filename);
+  }
+}
+
+void DesktopPreferencesDialog::onBrowseDesktopFolderClicked()
+{
+  QFileDialog dlg;
+  dlg.setAcceptMode(QFileDialog::AcceptOpen);
+  dlg.setFileMode(QFileDialog::DirectoryOnly);
+  if (dlg.exec() == QDialog::Accepted) {
+    QString dir;
+    dir = dlg.selectedFiles().first();
+    ui.desktopFolder->setText(dir);
   }
 }
 
