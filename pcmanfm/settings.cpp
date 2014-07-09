@@ -69,8 +69,10 @@ Settings::Settings():
   desktopSortColumn_(Fm::FolderModel::ColumnFileName),
   alwaysShowTabs_(true),
   showTabClose_(true),
-  windowWidth_(640),
-  windowHeight_(480),
+  fixedWindowWidth_(640),
+  fixedWindowHeight_(480),
+  lastWindowWidth_(640),
+  lastWindowHeight_(480),
   splitterPos_(120),
   sidePaneMode_(0),
   viewMode_(Fm::FolderView::IconMode),
@@ -196,8 +198,11 @@ bool Settings::loadFile(QString filePath) {
   settings.endGroup();
 
   settings.beginGroup("Window");
-  windowWidth_ = settings.value("Width", 640).toInt();
-  windowHeight_ = settings.value("Height", 480).toInt();
+  fixedWindowWidth_ = settings.value("FixedWidth", 640).toInt();
+  fixedWindowHeight_ = settings.value("FixedHeight", 480).toInt();
+  lastWindowWidth_ = settings.value("LastWindowWidth", 640).toInt();
+  lastWindowHeight_ = settings.value("LastWindowHeight", 480).toInt();
+  rememberWindowSize_ = settings.value("RememberWindowSize", true).toBool();
   alwaysShowTabs_ = settings.value("AlwaysShowTabs", true).toBool();
   showTabClose_ = settings.value("ShowTabClose", true).toBool();
   splitterPos_ = settings.value("SplitterPos", 150).toInt();
@@ -265,8 +270,11 @@ bool Settings::saveFile(QString filePath) {
   settings.endGroup();
 
   settings.beginGroup("Window");
-  settings.setValue("Width", windowWidth_);
-  settings.setValue("Height", windowHeight_);
+  settings.setValue("FixedWidth", fixedWindowWidth_);
+  settings.setValue("FixedHeight", fixedWindowHeight_);
+  settings.setValue("LastWindowWidth", lastWindowWidth_);
+  settings.setValue("LastWindowHeight", lastWindowHeight_);
+  settings.setValue("RememberWindowSize", rememberWindowSize_);
   settings.setValue("AlwaysShowTabs", alwaysShowTabs_);
   settings.setValue("ShowTabClose", showTabClose_);
   settings.setValue("SplitterPos", splitterPos_);
