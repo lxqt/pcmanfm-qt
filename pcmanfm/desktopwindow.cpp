@@ -65,15 +65,19 @@ DesktopWindow::DesktopWindow(int screenNum):
   setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
   setAttribute(Qt::WA_DeleteOnClose);
-  
+
   // set freedesktop.org EWMH hints properly
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   if(QX11Info::isPlatformX11() && QX11Info::connection()) {
     xcb_connection_t* con = QX11Info::connection();
     const char* atom_name = "_NET_WM_WINDOW_TYPE_DESKTOP";
-    xcb_atom_t atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(atom_name), atom_name), NULL)->atom;
+    xcb_intern_atom_reply_t *reply = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(atom_name), atom_name), NULL);
+    xcb_atom_t atom = reply->atom;
+    delete reply;
     const char* prop_atom_name = "_NET_WM_WINDOW_TYPE";
-    xcb_atom_t prop_atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(prop_atom_name), prop_atom_name), NULL)->atom;
+    reply = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(prop_atom_name), prop_atom_name), NULL);
+    xcb_atom_t prop_atom = reply->atom;
+    delete reply;
     xcb_atom_t XA_ATOM = 4;
     xcb_change_property(con, XCB_PROP_MODE_REPLACE, winId(), prop_atom, XA_ATOM, 32, 1, &atom);
   }
@@ -90,7 +94,7 @@ DesktopWindow::DesktopWindow(int screenNum):
   View::setFileLauncher(&fileLauncher_);
   loadItemPositions();
   Settings& settings = static_cast<Application* >(qApp)->settings();
-  
+
   model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
   folder_ = reinterpret_cast<FmFolder*>(g_object_ref(model_->folder()));
 
@@ -104,11 +108,6 @@ DesktopWindow::DesktopWindow(int screenNum):
   listView->setMovement(QListView::Snap);
   listView->setResizeMode(QListView::Adjust);
   listView->setFlow(QListView::TopToBottom);
-
-  // make the background of the list view transparent (alpha: 0)
-  QPalette transparent = listView->palette();
-  transparent.setColor(QPalette::Base, QColor(0,0,0,0));
-  listView->setPalette(transparent);
 
   // set our own delegate
   delegate_ = new DesktopItemDelegate(listView);
