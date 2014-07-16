@@ -65,7 +65,7 @@ DesktopWindow::DesktopWindow(int screenNum):
   setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
   setAttribute(Qt::WA_DeleteOnClose);
-  
+
   // set freedesktop.org EWMH hints properly
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   if(QX11Info::isPlatformX11() && QX11Info::connection()) {
@@ -90,7 +90,7 @@ DesktopWindow::DesktopWindow(int screenNum):
   View::setFileLauncher(&fileLauncher_);
   loadItemPositions();
   Settings& settings = static_cast<Application* >(qApp)->settings();
-  
+
   model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
   folder_ = reinterpret_cast<FmFolder*>(g_object_ref(model_->folder()));
 
@@ -106,9 +106,9 @@ DesktopWindow::DesktopWindow(int screenNum):
   listView->setFlow(QListView::TopToBottom);
 
   // make the background of the list view transparent (alpha: 0)
-  QPalette transparent = listView->palette();
-  transparent.setColor(QPalette::Base, QColor(0,0,0,0));
-  listView->setPalette(transparent);
+  // QPalette transparent = listView->palette();
+  // transparent.setColor(QPalette::Base, QColor(0,0,0,0));
+  // listView->setPalette(transparent);
 
   // set our own delegate
   delegate_ = new DesktopItemDelegate(listView);
@@ -291,10 +291,10 @@ void DesktopWindow::updateWallpaper() {
     wallpaperPixmap_ = pixmap;
     if(!pixmap.isNull()) {
       QBrush brush(pixmap);
-      QMatrix matrix;
-      matrix.translate(100, 100);
-      matrix.rotate(100);
-      brush.setMatrix(matrix);
+      // QMatrix matrix;
+      // matrix.translate(100, 100);
+      // matrix.rotate(100);
+      // brush.setMatrix(matrix);
       palette.setBrush(QPalette::Base, brush);
     }
     else // if the image is not loaded, fallback to use background color only
