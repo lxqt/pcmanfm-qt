@@ -33,6 +33,7 @@
 #include <QSettings>
 #include <QStringBuilder>
 #include <QDir>
+#include <XdgDirs>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -65,7 +66,7 @@ DesktopWindow::DesktopWindow(int screenNum):
   setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
   setAttribute(Qt::WA_DeleteOnClose);
-  
+
   // set freedesktop.org EWMH hints properly
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   if(QX11Info::isPlatformX11() && QX11Info::connection()) {
@@ -90,8 +91,10 @@ DesktopWindow::DesktopWindow(int screenNum):
   View::setFileLauncher(&fileLauncher_);
   loadItemPositions();
   Settings& settings = static_cast<Application* >(qApp)->settings();
-  
-  model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
+
+  // get desktop dir as set in libqtxdg
+  QString desktopDir = XdgDirs::userDir(XdgDirs::Desktop);
+  model_ = Fm::CachedFolderModel::modelFromPath(fm_path_new_for_path(desktopDir.toStdString().c_str()));
   folder_ = reinterpret_cast<FmFolder*>(g_object_ref(model_->folder()));
 
   proxyModel_ = new Fm::ProxyFolderModel();
@@ -174,6 +177,12 @@ void DesktopWindow::resizeEvent(QResizeEvent* event) {
     updateWallpaper();
     update();
   }
+}
+
+void DesktopWindow::setDesktopFolder() {
+  QString desktopFolder = XdgDirs::userDir(XdgDirs::Desktop);
+  model_ = Fm::CachedFolderModel::modelFromPath(fm_path_new_for_path(desktopFolder.toStdString().c_str()));
+  proxyModel_->setSourceModel(model_);
 }
 
 void DesktopWindow::setWallpaperFile(QString filename) {
@@ -306,6 +315,7 @@ void DesktopWindow::updateWallpaper() {
 }
 
 void DesktopWindow::updateFromSettings(Settings& settings) {
+  setDesktopFolder();
   setWallpaperFile(settings.wallpaper());
   setWallpaperMode(settings.wallpaperMode());
   setFont(settings.desktopFont());

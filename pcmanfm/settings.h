@@ -52,11 +52,11 @@ public:
   QString fallbackIconThemeName() const {
     return fallbackIconThemeName_;
   }
-  
+
   bool useFallbackIconTheme() const {
     return useFallbackIconTheme_;
   }
-  
+
   void setFallbackIconThemeName(QString iconThemeName) {
     fallbackIconThemeName_ = iconThemeName;
   }
@@ -68,11 +68,11 @@ public:
   void setBookmarkOpenMethod(int bookmarkOpenMethod) {
     bookmarkOpenMethod_ = bookmarkOpenMethod;
   }
-  
+
   QString suCommand() const {
     return suCommand_;
   }
-  
+
   void setSuCommand(QString suCommand) {
     suCommand_ = suCommand;
   }
@@ -116,7 +116,6 @@ public:
   void setAutoRun(bool autoRun) {
     autoRun_ = autoRun;
   }
-
 
   DesktopWindow::WallpaperMode wallpaperMode() const {
     return DesktopWindow::WallpaperMode(wallpaperMode_);

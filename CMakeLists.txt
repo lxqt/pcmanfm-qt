@@ -25,6 +25,8 @@ else()
   set(XLIB "x11")
 endif()
 
+find_package(qt5xdg REQUIRED)
+
 find_package(PkgConfig)
 pkg_check_modules(SYSTEM_LIBS REQUIRED
   glib-2.0
@@ -85,7 +87,7 @@ if(BUILD_DOCUMENTATION)
       WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
       COMMENT "Generating API documentation with Doxygen" VERBATIM
     )
-    
+
     install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/docs
       DESTINATION ${CMAKE_INSTALL_DOCDIR}
     )
