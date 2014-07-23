@@ -62,8 +62,7 @@ Settings::Settings():
   desktopBgColor_(),
   desktopFgColor_(),
   desktopShadowColor_(),
-  // desktop_font=Sans 12
-  // bool showWmMenu;
+  showWmMenu_(false),
   desktopShowHidden_(false),
   desktopSortOrder_(Qt::AscendingOrder),
   desktopSortColumn_(Fm::FolderModel::ColumnFileName),
@@ -164,6 +163,7 @@ bool Settings::loadFile(QString filePath) {
     desktopFont_.fromString(settings.value("Font").toString());
   else
     desktopFont_ = QApplication::font();
+  showWmMenu_ = settings.value("ShowWmMenu", false).toBool();
   desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
 
   desktopSortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
@@ -234,6 +234,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("FgColor", desktopFgColor_.name());
   settings.setValue("ShadowColor", desktopShadowColor_.name());
   settings.setValue("Font", desktopFont_.toString());
+  settings.setValue("ShowWmMenu", showWmMenu_);
   settings.setValue("ShowHidden", desktopShowHidden_);
   settings.setValue("SortOrder", sortOrderToString(desktopSortOrder_));
   settings.setValue("SortColumn", sortColumnToString(desktopSortColumn_));

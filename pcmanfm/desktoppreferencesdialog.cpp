@@ -74,6 +74,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.backgroundColor->setColor(settings.desktopBgColor());
   ui.textColor->setColor(settings.desktopFgColor());
   ui.shadowColor->setColor(settings.desktopShadowColor());
+  ui.showWmMenu->setChecked(settings.showWmMenu());
 }
 
 DesktopPreferencesDialog::~DesktopPreferencesDialog() {
@@ -92,6 +93,7 @@ void DesktopPreferencesDialog::accept() {
   settings.setDesktopBgColor(ui.backgroundColor->color());
   settings.setDesktopFgColor(ui.textColor->color());
   settings.setDesktopShadowColor(ui.shadowColor->color());
+  settings.setShowWmMenu(ui.showWmMenu->isChecked());
 
   QDialog::accept();
 

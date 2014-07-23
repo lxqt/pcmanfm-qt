@@ -27,9 +27,14 @@
 #include <QPoint>
 #include <QByteArray>
 
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) // Qt 5
+#include <xcb/xcb.h>
+#endif
+
 namespace Fm {
   class CachedFolderModel;
   class ProxyFolderModel;
+  class FolderViewListView;
 }
 
 namespace PCManFM {
@@ -67,11 +72,18 @@ protected:
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
   virtual void prepareFileMenu(Fm::FileMenu* menu);
   virtual void resizeEvent(QResizeEvent* event);
+  virtual void onFileClicked(int type, FmFileInfo* fileInfo);
 
   void loadItemPositions();
   void saveItemPositions();
 
   QImage loadWallpaperFile(QSize requiredSize);
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) // Qt 5
+  virtual bool nativeEvent(const QByteArray& eventType, void* message, long* result);
+#else // Qt 4
+  virtual bool x11Event(XEvent * event);
+#endif
 
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
@@ -89,6 +101,7 @@ private:
   Fm::ProxyFolderModel* proxyModel_;
   Fm::CachedFolderModel* model_;
   FmFolder* folder_;
+  Fm::FolderViewListView* listView_;
 
   QColor fgColor_;
   QColor bgColor_;
@@ -99,7 +112,8 @@ private:
   QPixmap wallpaperPixmap_;
   DesktopItemDelegate* delegate_;
   Launcher fileLauncher_;
-  
+  bool showWmMenu_;
+
   int screenNum_;
   QHash<QByteArray, QPoint> customItemPos_;
 };

@@ -59,6 +59,7 @@ DesktopWindow::DesktopWindow(int screenNum):
   model_(NULL),
   proxyModel_(NULL),
   fileLauncher_(NULL),
+  showWmMenu_(false),
   wallpaperMode_(WallpaperNone) {
 
   QDesktopWidget* desktopWidget = QApplication::desktop();
@@ -100,36 +101,40 @@ DesktopWindow::DesktopWindow(int screenNum):
   proxyModel_->sort(Fm::FolderModel::ColumnFileMTime);
   setModel(proxyModel_);
 
-  QListView* listView = static_cast<QListView*>(childView());
-  listView->setMovement(QListView::Snap);
-  listView->setResizeMode(QListView::Adjust);
-  listView->setFlow(QListView::TopToBottom);
+  listView_ = static_cast<Fm::FolderViewListView*>(childView());
+  listView_->setMovement(QListView::Snap);
+  listView_->setResizeMode(QListView::Adjust);
+  listView_->setFlow(QListView::TopToBottom);
 
   // make the background of the list view transparent (alpha: 0)
-  QPalette transparent = listView->palette();
+  QPalette transparent = listView_->palette();
   transparent.setColor(QPalette::Base, QColor(0,0,0,0));
-  listView->setPalette(transparent);
+  listView_->setPalette(transparent);
 
   // set our own delegate
-  delegate_ = new DesktopItemDelegate(listView);
-  listView->setItemDelegateForColumn(Fm::FolderModel::ColumnFileName, delegate_);
+  delegate_ = new DesktopItemDelegate(listView_);
+  listView_->setItemDelegateForColumn(Fm::FolderModel::ColumnFileName, delegate_);
 
   // remove frame
-  listView->setFrameShape(QFrame::NoFrame);
+  listView_->setFrameShape(QFrame::NoFrame);
 
   // inhibit scrollbars FIXME: this should be optional in the future
-  listView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-  listView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+  listView_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+  listView_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
   connect(proxyModel_, SIGNAL(rowsInserted(QModelIndex,int,int)), SLOT(onRowsInserted(QModelIndex,int,int)));
   connect(proxyModel_, SIGNAL(rowsAboutToBeRemoved(QModelIndex,int,int)), SLOT(onRowsAboutToBeRemoved(QModelIndex,int,int)));
   connect(proxyModel_, SIGNAL(layoutChanged()), SLOT(onLayoutChanged()));
-  connect(listView, SIGNAL(indexesMoved(QModelIndexList)), SLOT(onIndexesMoved(QModelIndexList)));
+  connect(listView_, SIGNAL(indexesMoved(QModelIndexList)), SLOT(onIndexesMoved(QModelIndexList)));
 
   connect(this, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onOpenDirRequested(FmPath*, int)));
+  
+  listView_->installEventFilter(this);
 }
 
 DesktopWindow::~DesktopWindow() {
+  listView_->removeEventFilter(this);
+
   if(proxyModel_)
     delete proxyModel_;
 
@@ -145,10 +150,9 @@ void DesktopWindow::setBackground(const QColor& color) {
 }
 
 void DesktopWindow::setForeground(const QColor& color) {
-  QListView* listView = static_cast<QListView*>(childView());
-  QPalette p = listView->palette();
+  QPalette p = listView_->palette();
   p.setBrush(QPalette::Text, color);
-  listView->setPalette(p);
+  listView_->setPalette(p);
   fgColor_ = color;
 }
 
@@ -248,8 +252,7 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
 // really generate the background pixmap according to current settings and apply it.
 void DesktopWindow::updateWallpaper() {
   // reset the brush
-  QListView* listView = static_cast<QListView*>(childView());
-  // QPalette palette(listView->palette());
+  // QPalette palette(listView_->palette());
   QPalette palette(Fm::FolderView::palette());
 
   if(wallpaperMode_ == WallpaperNone) { // use background color only
@@ -312,11 +315,19 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
   setForeground(settings.desktopFgColor());
   setBackground(settings.desktopBgColor());
   setShadow(settings.desktopShadowColor());
+  showWmMenu_ = settings.showWmMenu();
   updateWallpaper();
   update();
 }
 
+void DesktopWindow::onFileClicked(int type, FmFileInfo* fileInfo) {
+  if(!fileInfo && showWmMenu_)
+    return; // do not show the popup if we want to use the desktop menu provided by the WM.
+  View::onFileClicked(type, fileInfo);
+}
+
 void DesktopWindow::prepareFileMenu(Fm::FileMenu* menu) {
+  // qDebug("DesktopWindow::prepareFileMenu");
   PCManFM::View::prepareFileMenu(menu);
   QAction* action = new QAction(tr("Stic&k to Current Position"), menu);
   action->setCheckable(true);
@@ -343,6 +354,99 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
   QAction* action = menu->addAction(tr("Desktop Preferences"));
   connect(action, SIGNAL(triggered(bool)), SLOT(onDesktopPreferences()));
 }
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) // Qt 5
+
+bool DesktopWindow::nativeEvent(const QByteArray& eventType, void* message, long* result) {
+  if(showWmMenu_ && eventType == "xcb_generic_event_t") { // XCB event
+    // filter all native X11 events (xcb)
+    xcb_generic_event_t* generic_event = reinterpret_cast<xcb_generic_event_t*>(message);
+    // qDebug("XCB event: %d", generic_event->response_type);
+    switch(generic_event->response_type & ~0x80) {
+      case XCB_BUTTON_PRESS: {
+        xcb_button_press_event_t* event = reinterpret_cast<xcb_button_press_event_t*>(generic_event);
+        if(event->event == effectiveWinId()) {
+          // check if the user click on blank area
+          QModelIndex index = listView_->indexAt(QPoint(event->event_x, event->event_y));
+          if(!index.isValid()) {
+            xcb_ungrab_pointer(QX11Info::connection(), event->time);
+            // forward the event to the root window
+            xcb_button_press_event_t event2 = *event;
+            WId root = QX11Info::appRootWindow(QX11Info::appScreen());
+            event2.event = root;
+            xcb_send_event(QX11Info::connection(), 0, root, XCB_EVENT_MASK_BUTTON_PRESS, (char*)&event2);
+          }
+        }
+        break;
+      }
+      case XCB_BUTTON_RELEASE: {
+        xcb_button_release_event_t* event = reinterpret_cast<xcb_button_release_event_t*>(generic_event);
+        if(event->event == effectiveWinId()) {
+          // check if the user click on blank area
+          QModelIndex index = listView_->indexAt(QPoint(event->event_x, event->event_y));
+          if(!index.isValid()) {
+            // forward the event to the root window
+            xcb_button_release_event_t event2 = *event;
+            WId root = QX11Info::appRootWindow(QX11Info::appScreen());
+            event2.event = root;
+            xcb_send_event(QX11Info::connection(), 0, root, XCB_EVENT_MASK_BUTTON_RELEASE, (char*)&event2);
+          }
+        }
+        break;
+      }
+      default: {
+        break;
+      }
+    }
+  }
+  return QWidget::nativeEvent(eventType, message, result);
+}
+
+#else // Qt 4
+
+bool DesktopWindow::x11Event(XEvent * event) {
+  // FIXME: support Qt4
+  if(showWmMenu_) {
+    // filter all native X11 events (using Xlib)
+    switch(event->type) {
+      case ButtonPress: {
+        if(event->xany.window == effectiveWinId()) {
+          // check if the user click on blank area
+          QModelIndex index = listView_->indexAt(QPoint(event->xbutton.x, event->xbutton.y));
+          if(!index.isValid()) {
+            XUngrabPointer(QX11Info::display(), event->xbutton.time);
+            // forward the event to the root window
+            XButtonEvent event2 = event->xbutton;
+            WId root = QX11Info::appRootWindow(QX11Info::appScreen());
+            event2.window = root;
+            XSendEvent(QX11Info::display(), root, False, ButtonPressMask|ButtonReleaseMask, (XEvent*)&event2);
+          }
+        }
+        break;
+      }
+      case ButtonRelease: {
+        if(event->xany.window == effectiveWinId()) {
+          // check if the user click on blank area
+          QModelIndex index = listView_->indexAt(QPoint(event->xbutton.x, event->xbutton.y));
+          if(!index.isValid()) {
+            // forward the event to the root window
+            XButtonEvent event2 = event->xbutton;
+            WId root = QX11Info::appRootWindow(QX11Info::appScreen());
+            event2.window = root;
+            XSendEvent(QX11Info::display(), root, False, ButtonPressMask|ButtonReleaseMask, (XEvent*)&event2);
+          }
+        }
+        break;
+      }
+      default: {
+        break;
+      }
+    }
+  }
+  return QWidget::x11Event(event);
+}
+
+#endif
 
 void DesktopWindow::onDesktopPreferences() {
   static_cast<Application* >(qApp)->desktopPrefrences(QString());
@@ -394,11 +498,10 @@ void DesktopWindow::onLayoutChanged() {
 }
 
 void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
-  Fm::FolderViewListView* listView = static_cast<Fm::FolderViewListView*>(childView());
   // remember the custom position for the items
   Q_FOREACH(const QModelIndex& index, indexes) {
     FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
-    QRect itemRect = listView->rectForIndex(index);
+    QRect itemRect = listView_->rectForIndex(index);
     customItemPos_[fm_file_info_get_name(file)] = itemRect.topLeft();
     saveItemPositions();
     QTimer::singleShot(0, this, SLOT(relayoutItems()));
@@ -410,9 +513,8 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
 void DesktopWindow::relayoutItems() {
   qDebug("relayoutItems()");
   // FIXME: we use an internal class declared in a private header here, which is pretty bad.
-  Fm::FolderViewListView* listView = static_cast<Fm::FolderViewListView*>(childView());
-  QSize grid = listView->gridSize();
-  QPoint pos = listView->contentsRect().topLeft();
+  QSize grid = listView_->gridSize();
+  QPoint pos = listView_->contentsRect().topLeft();
 
   for(int row = 0, rowCount = proxyModel_->rowCount(); row < rowCount; ++row) {
     QModelIndex index = proxyModel_->index(row, 0);
@@ -421,7 +523,7 @@ void DesktopWindow::relayoutItems() {
     QHash<QByteArray, QPoint>::iterator it = customItemPos_.find(name);
     if(it != customItemPos_.end()) { // the item has a custom position
       QPoint customPos = *it;
-      listView->setPositionForIndex(customPos, index);
+      listView_->setPositionForIndex(customPos, index);
       continue;
     }
     // check if the current pos is alredy occupied by a custom item
@@ -437,11 +539,11 @@ void DesktopWindow::relayoutItems() {
       --row;
     }
     else {
-      listView->setPositionForIndex(pos, index);
+      listView_->setPositionForIndex(pos, index);
     }
-    pos.setY(pos.y() + grid.height() + listView->spacing());
-    if(pos.y() + grid.height() > listView->contentsRect().bottom()) {
-      pos.setX(pos.x() + grid.width() + listView->spacing());
+    pos.setY(pos.y() + grid.height() + listView_->spacing());
+    if(pos.y() + grid.height() > listView_->contentsRect().bottom()) {
+      pos.setX(pos.x() + grid.width() + listView_->spacing());
       pos.setY(rect().top());
     }
   }
@@ -483,15 +585,14 @@ void DesktopWindow::saveItemPositions() {
 void DesktopWindow::onStickToCurrentPos(bool toggled) {
   QAction* action = static_cast<QAction*>(sender());
   Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(action->parent());
-  Fm::FolderViewListView* listView = static_cast<Fm::FolderViewListView*>(childView());
 
-  QModelIndexList indexes = listView->selectionModel()->selectedIndexes();
+  QModelIndexList indexes = listView_->selectionModel()->selectedIndexes();
   if(!indexes.isEmpty()) {
     FmFileInfo* file = menu->firstFile();
     QByteArray name = fm_file_info_get_name(file);
     QModelIndex index = indexes.first();
     if(toggled) { // remember to current custom position
-      QRect itemRect = listView->rectForIndex(index);
+      QRect itemRect = listView_->rectForIndex(index);
       customItemPos_[name] = itemRect.topLeft();
       saveItemPositions();
     }
