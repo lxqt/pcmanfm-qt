@@ -85,6 +85,8 @@ protected:
   virtual bool x11Event(XEvent * event);
 #endif
 
+  void queueRelayout();
+
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
   void onDesktopPreferences();
@@ -116,6 +118,7 @@ private:
 
   int screenNum_;
   QHash<QByteArray, QPoint> customItemPos_;
+  QTimer* relayoutTimer_;
 };
 
 }

@@ -60,7 +60,8 @@ DesktopWindow::DesktopWindow(int screenNum):
   proxyModel_(NULL),
   fileLauncher_(NULL),
   showWmMenu_(false),
-  wallpaperMode_(WallpaperNone) {
+  wallpaperMode_(WallpaperNone),
+  relayoutTimer_(NULL) {
 
   QDesktopWidget* desktopWidget = QApplication::desktop();
   setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
@@ -134,6 +135,9 @@ DesktopWindow::DesktopWindow(int screenNum):
 
 DesktopWindow::~DesktopWindow() {
   listView_->removeEventFilter(this);
+
+  if(relayoutTimer_)
+    delete relayoutTimer_;
 
   if(proxyModel_)
     delete proxyModel_;
@@ -466,12 +470,12 @@ void DesktopWindow::setWorkArea(const QRect& rect) {
   // covers the whole screen.
   layout()->setContentsMargins(left, top, right, bottom);
   if(!customItemPos_.isEmpty())
-    QTimer::singleShot(0, this, SLOT(relayoutItems()));
+    queueRelayout();
 }
 
 void DesktopWindow::onRowsInserted(const QModelIndex& parent, int start, int end) {
   if(!customItemPos_.isEmpty())
-    QTimer::singleShot(0, this, SLOT(relayoutItems()));
+    queueRelayout();
 }
 
 void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start, int end) {
@@ -488,30 +492,42 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
     }
     if(changed)
       saveItemPositions();
-    QTimer::singleShot(0, this, SLOT(relayoutItems()));
+    queueRelayout();
   }
 }
 
 void DesktopWindow::onLayoutChanged() {
   if(!customItemPos_.isEmpty())
-    QTimer::singleShot(0, this, SLOT(relayoutItems()));
+    queueRelayout();
 }
 
 void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
   // remember the custom position for the items
   Q_FOREACH(const QModelIndex& index, indexes) {
-    FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
-    QRect itemRect = listView_->rectForIndex(index);
-    customItemPos_[fm_file_info_get_name(file)] = itemRect.topLeft();
-    saveItemPositions();
-    QTimer::singleShot(0, this, SLOT(relayoutItems()));
+	// Qt emits indexMoved for every single cells in the same row.
+	// So indexes list may contain several indixes for the same row.
+	// Since we only care about rows, not individual cells,
+	// let's handle column 0 of every row here.
+	if(index.column() == 0) {
+      FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
+      QRect itemRect = listView_->rectForIndex(index);
+      QByteArray name = fm_file_info_get_name(file);
+      customItemPos_[name] = itemRect.topLeft();
+      saveItemPositions();
+      queueRelayout();
+    }
   }
 }
 
 // QListView does item layout in a very inflexible way, so let's do our custom layout again.
 // FIXME: this is very inefficient, but due to the design flaw of QListView, this is currently the only workaround.
 void DesktopWindow::relayoutItems() {
-  qDebug("relayoutItems()");
+  // qDebug("relayoutItems()");
+  if(relayoutTimer_) {
+	// this slot might be called from the timer, so we cannot delete it directly here.
+	relayoutTimer_->deleteLater();
+	relayoutTimer_ = NULL;
+  }
   // FIXME: we use an internal class declared in a private header here, which is pretty bad.
   QSize grid = listView_->gridSize();
   QPoint pos = listView_->contentsRect().topLeft();
@@ -519,18 +535,19 @@ void DesktopWindow::relayoutItems() {
   for(int row = 0, rowCount = proxyModel_->rowCount(); row < rowCount; ++row) {
     QModelIndex index = proxyModel_->index(row, 0);
     FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
-    const char* name = fm_file_info_get_name(file);
+    QByteArray name = fm_file_info_get_name(file);
     QHash<QByteArray, QPoint>::iterator it = customItemPos_.find(name);
     if(it != customItemPos_.end()) { // the item has a custom position
       QPoint customPos = *it;
       listView_->setPositionForIndex(customPos, index);
+      // qDebug() << "set custom pos:" << name << row << index << customPos;
       continue;
     }
     // check if the current pos is alredy occupied by a custom item
     bool used = false;
     for(it = customItemPos_.begin(); it != customItemPos_.end(); ++it) {
       QPoint customPos = *it;
-      if(QRect(*it, grid).contains(pos)) {
+      if(QRect(customPos, grid).contains(pos)) {
         used = true;
         break;
       }
@@ -540,6 +557,7 @@ void DesktopWindow::relayoutItems() {
     }
     else {
       listView_->setPositionForIndex(pos, index);
+      // qDebug() << "set pos" << name << row << index << pos;
     }
     pos.setY(pos.y() + grid.height() + listView_->spacing());
     if(pos.y() + grid.height() > listView_->contentsRect().bottom()) {
@@ -604,5 +622,15 @@ void DesktopWindow::onStickToCurrentPos(bool toggled) {
         relayoutItems();
       }
     }
+  }
+}
+
+void DesktopWindow::queueRelayout() {
+  // qDebug() << "queueRelayout";
+  if(!relayoutTimer_) {
+    relayoutTimer_ = new QTimer();
+    relayoutTimer_->setSingleShot(true);
+    connect(relayoutTimer_, SIGNAL(timeout()), SLOT(relayoutItems()));
+    relayoutTimer_->start();
   }
 }
