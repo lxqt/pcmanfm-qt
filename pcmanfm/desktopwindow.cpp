@@ -511,12 +511,18 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
 	if(index.column() == 0) {
       FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
       QRect itemRect = listView_->rectForIndex(index);
+      // for some unknown reason, Qt sometimes generate incorrect position
+      // which contains negative values. we need to omit that.
+      // QListView is really buggy!
+      if(itemRect.x() < 0 || itemRect.y() < 0)
+		continue;
       QByteArray name = fm_file_info_get_name(file);
       customItemPos_[name] = itemRect.topLeft();
+      // qDebug() << "indexMoved:" << name << index << itemRect;
       saveItemPositions();
-      queueRelayout();
     }
   }
+  queueRelayout();
 }
 
 // QListView does item layout in a very inflexible way, so let's do our custom layout again.
