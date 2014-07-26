@@ -504,24 +504,20 @@ void DesktopWindow::onLayoutChanged() {
 void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
   // remember the custom position for the items
   Q_FOREACH(const QModelIndex& index, indexes) {
-	// Qt emits indexMoved for every single cells in the same row.
+	// Under some circumstances, Qt might emit indexMoved for 
+    // every single cells in the same row. (when QAbstractItemView::SelectItems is set)
 	// So indexes list may contain several indixes for the same row.
 	// Since we only care about rows, not individual cells,
 	// let's handle column 0 of every row here.
 	if(index.column() == 0) {
       FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
       QRect itemRect = listView_->rectForIndex(index);
-      // for some unknown reason, Qt sometimes generate incorrect position
-      // which contains negative values. we need to omit that.
-      // QListView is really buggy!
-      if(itemRect.x() < 0 || itemRect.y() < 0)
-		continue;
       QByteArray name = fm_file_info_get_name(file);
       customItemPos_[name] = itemRect.topLeft();
       // qDebug() << "indexMoved:" << name << index << itemRect;
-      saveItemPositions();
     }
   }
+  saveItemPositions();
   queueRelayout();
 }
 
