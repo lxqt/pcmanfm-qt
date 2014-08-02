@@ -213,10 +213,12 @@ void FilePropsDialog::initPermissionsPage() {
     // check if the files are all executable
     if((mode & (S_IXUSR|S_IXGRP|S_IXOTH)) == (S_IXUSR|S_IXGRP|S_IXOTH)) {
       // owner, group, and other all have exec permission.
+      ui->executable->setTristate(false);
       execCheckState = Qt::Checked;
     }
     else if((mode & (S_IXUSR|S_IXGRP|S_IXOTH)) == 0) {
       // owner, group, and other all have no exec permission
+      ui->executable->setTristate(false);
       execCheckState = Qt::Unchecked;
     }
   }
