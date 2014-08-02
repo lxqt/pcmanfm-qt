@@ -298,10 +298,6 @@ void DesktopWindow::updateWallpaper() {
     wallpaperPixmap_ = pixmap;
     if(!pixmap.isNull()) {
       QBrush brush(pixmap);
-      QMatrix matrix;
-      matrix.translate(100, 100);
-      matrix.rotate(100);
-      brush.setMatrix(matrix);
       palette.setBrush(QPalette::Base, brush);
     }
     else // if the image is not loaded, fallback to use background color only
