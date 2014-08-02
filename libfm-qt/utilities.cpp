@@ -119,7 +119,9 @@ void cutFilesToClipboard(FmPathList* files) {
 void renameFile(FmPath* file, QWidget* parent) {
   GFile* gf, *parent_gf, *dest;
   GError* err = NULL;
-  FilenameDialog dlg(parent);
+  gf = fm_path_to_gfile(file);
+  int isDirectory = g_file_test(g_file_get_path(gf), G_FILE_TEST_IS_DIR);
+  FilenameDialog dlg(parent, isDirectory);
   dlg.setWindowTitle(QObject::tr("Rename File"));
   dlg.setLabelText(QObject::tr("Please enter a new name:"));
   // FIXME: what's the best way to handle non-UTF8 filename encoding here?
@@ -134,7 +136,6 @@ void renameFile(FmPath* file, QWidget* parent) {
   if(new_name == old_name)
     return;
 
-  gf = fm_path_to_gfile(file);
   parent_gf = g_file_get_parent(gf);
   dest = g_file_get_child(G_FILE(parent_gf), new_name.toLocal8Bit().data());
   g_object_unref(parent_gf);
