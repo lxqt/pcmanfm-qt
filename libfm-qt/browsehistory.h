@@ -23,6 +23,7 @@
 
 #include "libfmqtglobals.h"
 #include <QVector>
+#include <QPair>
 #include <libfm/fm.h>
 
 namespace Fm {
@@ -61,7 +62,7 @@ public:
     scrollPos_ = other.scrollPos_;
     return *this;
   }
-  
+
   FmPath* path() const {
     return path_;
   }
@@ -120,6 +121,8 @@ public:
   }
 
   void setMaxCount(int maxCount);
+
+  QVector<FmPath*> getLastestItems(int n);
 
 private:
   int currentIndex_;

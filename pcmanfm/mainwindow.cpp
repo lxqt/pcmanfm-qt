@@ -693,7 +693,31 @@ void MainWindow::changeEvent(QEvent* event) {
 */
 
 void MainWindow::onBackForwardContextMenu(QPoint pos) {
-  // TODO: show a popup menu for browsing history here.
+  QPoint globalPos = ui.toolBar->mapToGlobal(pos);
+  globalPos.setY(globalPos.y() + 20);
+  QMenu *historyMenu = new QMenu(tr("History"), this);
+  historyMenu->setTitle("History");
+  QVector<FmPath*> history = currentPage()->browseHistory().getLastestItems(10);
+  FmPath* current = currentPage()->path();
+
+  const int size = history.size();
+  for (int i = 0; i < size; ++i) {
+    QAction *action = new QAction(QIcon::fromTheme("folder"), fm_path_display_basename(history.at(i)), historyMenu);
+    if (current == history.at(i)) {
+      QFont f = QFont();
+      f.setBold(true);
+      action->setFont(f);
+    }
+    action->setData(fm_path_to_str(history.at(i)));
+    historyMenu->addAction(action);
+  }
+
+  QAction *selectedItem = historyMenu->exec(globalPos);
+  if (selectedItem) {
+      chdir(fm_path_new_for_path(selectedItem->data().toString().toStdString().c_str()));
+  }
+
+  delete(historyMenu);
   qDebug("browse history");
 }
 

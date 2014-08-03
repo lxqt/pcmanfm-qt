@@ -85,3 +85,16 @@ void BrowseHistory::setMaxCount(int maxCount) {
     // TODO: remove some items
   }
 }
+
+QVector<FmPath*> BrowseHistory::getLastestItems(int n) {
+  n = n > count() ? count() : n;
+  QVector<FmPath*> items;
+  FmPath *path;
+  for (int i = n - 1; i >= 0; --i) {
+    path = at(i).path();
+    if (!items.contains(path)) {
+      items.append(path);
+    }
+  }
+  return items;
+}
