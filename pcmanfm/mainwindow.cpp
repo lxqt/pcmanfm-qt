@@ -661,6 +661,7 @@ void MainWindow::on_actionRename_triggered() {
     FmFileInfo* file = FM_FILE_INFO(l->data);
     Fm::renameFile(file, NULL);
   }
+  fm_file_info_list_unref(files);
 }
 
 
