@@ -130,8 +130,6 @@ protected Q_SLOTS:
 
   void onBackForwardContextMenu(QPoint pos);
 
-  void onBackspaceShortcut();
-
 protected:
   // void changeEvent( QEvent * event);
   void closeTab(int index);
