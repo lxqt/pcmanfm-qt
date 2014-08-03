@@ -30,8 +30,23 @@ namespace Fm {
 class FilenameDialog : public QInputDialog {
   Q_OBJECT
 public:
-  FilenameDialog(QWidget* parent = 0, Qt::WindowFlags flags = 0): QInputDialog(parent, flags) {
-    QTimer::singleShot(0, this, SLOT(initSelection()));
+  FilenameDialog(QWidget* parent = 0, Qt::WindowFlags flags = 0):
+    QInputDialog(parent, flags),
+    selectExtension_(false) {
+  }
+
+  virtual void showEvent(QShowEvent * event) {
+    QWidget::showEvent(event);
+    if(!selectExtension_) // dot not select filename extension
+      QTimer::singleShot(0, this, SLOT(initSelection()));
+  }
+
+  bool selectExtension() const {
+    return selectExtension_;
+  }
+  
+  void setSelectExtension(bool value) {
+    selectExtension_ = value;
   }
 
 private Q_SLOTS:
@@ -54,6 +69,9 @@ private Q_SLOTS:
       }
     }
   }
+
+private:
+  bool selectExtension_;
 };
 
 } // namespace Fm

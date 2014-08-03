@@ -655,11 +655,11 @@ void MainWindow::on_actionDelete_triggered() {
 
 void MainWindow::on_actionRename_triggered() {
   TabPage* page = currentPage();
-  FmPathList* paths = page->selectedFilePaths();
+  FmFileInfoList* files = page->selectedFiles();
 
-  for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
-    FmPath* path = FM_PATH(l->data);
-    Fm::renameFile(path, NULL);
+  for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
+    FmFileInfo* file = FM_FILE_INFO(l->data);
+    Fm::renameFile(file, NULL);
   }
 }
 

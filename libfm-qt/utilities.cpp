@@ -116,15 +116,17 @@ void cutFilesToClipboard(FmPathList* files) {
   clipboard->setMimeData(data);
 }
 
-void renameFile(FmPath* file, QWidget* parent) {
-  GFile* gf, *parent_gf, *dest;
-  GError* err = NULL;
+void renameFile(FmFileInfo *file, QWidget *parent) {
+  FmPath* path = fm_file_info_get_path(file);
   FilenameDialog dlg(parent);
   dlg.setWindowTitle(QObject::tr("Rename File"));
   dlg.setLabelText(QObject::tr("Please enter a new name:"));
   // FIXME: what's the best way to handle non-UTF8 filename encoding here?
-  QString old_name = QString::fromLocal8Bit(fm_path_get_basename(file));
+  QString old_name = QString::fromLocal8Bit(fm_path_get_basename(path));
   dlg.setTextValue(old_name);
+
+  if(fm_file_info_is_dir(file)) // select filename extension for directories
+    dlg.setSelectExtension(true);
 
   if(dlg.exec() != QDialog::Accepted)
     return;
@@ -134,11 +136,12 @@ void renameFile(FmPath* file, QWidget* parent) {
   if(new_name == old_name)
     return;
 
-  gf = fm_path_to_gfile(file);
-  parent_gf = g_file_get_parent(gf);
-  dest = g_file_get_child(G_FILE(parent_gf), new_name.toLocal8Bit().data());
+  GFile* gf = fm_path_to_gfile(path);
+  GFile* parent_gf = g_file_get_parent(gf);
+  GFile* dest = g_file_get_child(G_FILE(parent_gf), new_name.toLocal8Bit().data());
   g_object_unref(parent_gf);
 
+  GError* err = NULL;
   if(!g_file_move(gf, dest,
                   GFileCopyFlags(G_FILE_COPY_ALL_METADATA |
                                  G_FILE_COPY_NO_FALLBACK_FOR_MOVE |

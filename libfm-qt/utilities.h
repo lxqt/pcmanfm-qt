@@ -40,7 +40,7 @@ LIBFM_QT_API void copyFilesToClipboard(FmPathList* files);
 
 LIBFM_QT_API void cutFilesToClipboard(FmPathList* files);
 
-LIBFM_QT_API void renameFile(FmPath* file, QWidget* parent = 0);
+LIBFM_QT_API void renameFile(FmFileInfo* file, QWidget* parent = 0);
 
 enum CreateFileType {
   CreateNewFolder,
