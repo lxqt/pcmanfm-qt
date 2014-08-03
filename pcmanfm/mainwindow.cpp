@@ -41,6 +41,7 @@
 #include "pathedit.h"
 #include "ui_about.h"
 #include "application.h"
+#include "path.h"
 
 // #include "qmodeltest/modeltest.h"
 
@@ -57,19 +58,13 @@ MainWindow::MainWindow(FmPath* path):
   // setup user interface
   ui.setupUi(this);
 
-  // FIXME: why popup menus over back/forward buttons don't work when they're disabled?
+  // add a context menu for showing browse history to back and forward buttons
   QToolButton* forwardButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoForward));
   forwardButton->setContextMenuPolicy(Qt::CustomContextMenu);
   connect(forwardButton, SIGNAL(customContextMenuRequested(QPoint)), SLOT(onBackForwardContextMenu(QPoint)));
   QToolButton* backButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoBack));
   backButton->setContextMenuPolicy(Qt::CustomContextMenu);
   connect(backButton, SIGNAL(customContextMenuRequested(QPoint)), SLOT(onBackForwardContextMenu(QPoint)));
-  /*
-  QToolButton* btn = new QToolButton();
-  btn->setArrowType(Qt::DownArrow);
-  btn->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Fixed);
-  ui.toolBar->insertWidget(ui.actionGoUp, btn);
-  */
 
   // tabbed browsing interface
   ui.tabBar->setDocumentMode(true);
@@ -693,8 +688,29 @@ void MainWindow::changeEvent(QEvent* event) {
 */
 
 void MainWindow::onBackForwardContextMenu(QPoint pos) {
-  // TODO: show a popup menu for browsing history here.
-  qDebug("browse history");
+  // show a popup menu for browsing history here.
+  QToolButton* btn = static_cast<QToolButton*>(sender());
+  TabPage* page = currentPage();
+  FmPath* currentPath = page->path();
+  QMenu menu;
+  Q_FOREACH(const BrowseHistoryItem& item, currentPage()->browseHistory()) {
+    Fm::Path path = item.path();
+    QAction* action = menu.addAction(path.displayName());
+    if(fm_path_equal(item.path(), currentPath)) {
+      // make the current path bold and checked
+      action->setCheckable(true);
+      action->setChecked(true);
+      QFont font = menu.font();
+      font.setBold(true);
+      action->setFont(font);
+    }
+  }
+  QAction* selectedAction = menu.exec(btn->mapToGlobal(pos));
+  if(selectedAction) {
+    int index = menu.actions().indexOf(selectedAction);
+    page->jumpToHistory(index);
+    updateUIForCurrentPage();
+  }
 }
 
 void MainWindow::updateFromSettings(Settings& settings) {

@@ -160,6 +160,8 @@ public:
 
   void forward();
 
+  void jumpToHistory(int index);
+
   bool canUp();
   
   void up();

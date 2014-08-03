@@ -409,6 +409,14 @@ void TabPage::forward() {
   chdir(history_.currentPath(), false);
 }
 
+void TabPage::jumpToHistory(int index)
+{
+  if(index >=0 && index < history_.size()) {
+    history_.setCurrentIndex(index);
+    chdir(history_.currentPath(), false);
+  }
+}
+
 bool TabPage::canUp() {
   return (path() != NULL && fm_path_get_parent(path()) != NULL);
 }
