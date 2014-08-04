@@ -30,13 +30,22 @@
 #include <QTranslator>
 #include <gio/gio.h>
 
+// we need a native event filter for Qt 5
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+#include <QAbstractNativeEventFilter>
+#else
+// we do not have this class in Qt4, so create a fake one
+struct QAbstractNativeEventFilter {
+};
+#endif
+
 namespace PCManFM {
 
 class DesktopWindow;
 class PreferencesDialog;
 class DesktopPreferencesDialog;
 
-class Application : public QApplication {
+class Application : public QApplication, public QAbstractNativeEventFilter {
   Q_OBJECT
   Q_PROPERTY(bool desktopManagerEnabled READ desktopManagerEnabled)
 
@@ -77,6 +86,10 @@ public:
   QString profileName() {
     return profileName_;
   }
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+  virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result);
+#endif
 
 protected Q_SLOTS:
   void onAboutToQuit();

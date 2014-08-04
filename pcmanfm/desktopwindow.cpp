@@ -357,12 +357,35 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
 
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) // Qt 5
 
-bool DesktopWindow::nativeEvent(const QByteArray& eventType, void* message, long* result) {
-  if(showWmMenu_ && eventType == "xcb_generic_event_t") { // XCB event
-    // filter all native X11 events (xcb)
-    xcb_generic_event_t* generic_event = reinterpret_cast<xcb_generic_event_t*>(message);
-    // qDebug("XCB event: %d", generic_event->response_type);
-    switch(generic_event->response_type & ~0x80) {
+void DesktopWindow::xcbEvent(xcb_generic_event_t* generic_event) {
+  int event_type = generic_event->response_type & ~0x80;
+  if(event_type == XCB_PROPERTY_NOTIFY) {
+    xcb_property_notify_event_t* event = reinterpret_cast<xcb_property_notify_event_t*>(generic_event);
+    if(event->window == QX11Info::appRootWindow(screenNum_)) {
+      // NOTE: the following is a workaround for Qt bug 32567.
+      // https://bugreports.qt-project.org/browse/QTBUG-32567
+      // Though the status of the bug report is closed, it's not yet fixed for X11.
+      // In theory, QDesktopWidget should emit "workAreaResized()" signal when the work area
+      // of any screen is changed, but in fact it does not do it.
+      // Therefore we need to monitor the X11 event ourselves and do the update manually.
+      static xcb_atom_t workarea_atom = 0;
+      if(workarea_atom == 0) {
+        const char* atom_name = "_NET_WORKAREA";
+        xcb_connection_t* con = QX11Info::connection();
+        workarea_atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(atom_name), atom_name), NULL)->atom;
+      }
+      if(event->atom == workarea_atom) { // work area is changed, upadte
+        // When our event filter function is called, Qt has not handled the event yet.
+        // So Qt still has the old work area size at the moment.
+        // Schedule a timer to update the work area from Qt later.
+        QTimer::singleShot(100, this, SLOT(updateWorkArea()));
+      }
+    }
+  }
+  else if(showWmMenu_) {
+    // If we want to show the desktop menus provided by the window manager instead of ours,
+    // we have to forward the mouse events we received to the root window.
+    switch(event_type) {
       case XCB_BUTTON_PRESS: {
         xcb_button_press_event_t* event = reinterpret_cast<xcb_button_press_event_t*>(generic_event);
         if(event->event == effectiveWinId()) {
@@ -394,12 +417,10 @@ bool DesktopWindow::nativeEvent(const QByteArray& eventType, void* message, long
         }
         break;
       }
-      default: {
+      default:
         break;
-      }
     }
   }
-  return QWidget::nativeEvent(eventType, message, result);
 }
 
 #else // Qt 4
@@ -447,6 +468,12 @@ bool DesktopWindow::x11Event(XEvent * event) {
 }
 
 #endif
+
+void DesktopWindow::updateWorkArea() {
+  QRect rect = qApp->desktop()->availableGeometry(screenNum_);
+  qDebug() << "new workarea" << rect;
+  setWorkArea(rect);
+}
 
 void DesktopWindow::onDesktopPreferences() {
   static_cast<Application* >(qApp)->desktopPrefrences(QString());

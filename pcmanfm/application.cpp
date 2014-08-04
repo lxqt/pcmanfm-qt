@@ -91,6 +91,11 @@ Application::~Application() {
     g_signal_handlers_disconnect_by_func(volumeMonitor_, gpointer(onVolumeAdded), this);
     g_object_unref(volumeMonitor_);
   }
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+  if(enableDesktopManager_)
+    removeNativeEventFilter(this);
+#endif
 }
 
 struct FakeTr {
@@ -347,6 +352,9 @@ void Application::desktopManager(bool enabled) {
   QDesktopWidget* desktopWidget = desktop();
   if(enabled) {
     if(!enableDesktopManager_) {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+      installNativeEventFilter(this);
+#endif
       int n = desktopWidget->numScreens();
       connect(desktopWidget, SIGNAL(resized(int)), SLOT(onScreenResized(int)));
       connect(desktopWidget, SIGNAL(workAreaResized(int)), SLOT(onWorkAreaResized(int)));
@@ -369,6 +377,9 @@ void Application::desktopManager(bool enabled) {
         delete window;
       }
       desktopWindows_.clear();
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+      removeNativeEventFilter(this);
+#endif
     }
   }
   enableDesktopManager_ = enabled;
@@ -607,3 +618,19 @@ void Application::onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Applic
   if(pThis->settings_.mountRemovable())
     pThis->autoMountVolume(volume, true);
 }
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+
+bool Application::nativeEventFilter(const QByteArray & eventType, void * message, long * result) {
+  if(eventType == "xcb_generic_event_t") { // XCB event
+    // filter all native X11 events (xcb)
+    xcb_generic_event_t* generic_event = reinterpret_cast<xcb_generic_event_t*>(message);
+    // qDebug("XCB event: %d", generic_event->response_type & ~0x80);
+    Q_FOREACH(DesktopWindow * window, desktopWindows_) {
+      window->xcbEvent(generic_event);
+    }
+  }
+  return false;
+}
+
+#endif

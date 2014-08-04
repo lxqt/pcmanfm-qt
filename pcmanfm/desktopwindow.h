@@ -68,6 +68,10 @@ public:
 
   void setWorkArea(const QRect& rect);
 
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) // Qt 5
+  void xcbEvent(xcb_generic_event_t* generic_event);
+#endif
+
 protected:
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
   virtual void prepareFileMenu(Fm::FileMenu* menu);
@@ -79,9 +83,7 @@ protected:
 
   QImage loadWallpaperFile(QSize requiredSize);
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) // Qt 5
-  virtual bool nativeEvent(const QByteArray& eventType, void* message, long* result);
-#else // Qt 4
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0) // Qt 4
   virtual bool x11Event(XEvent * event);
 #endif
 
@@ -98,6 +100,8 @@ protected Q_SLOTS:
 
   void relayoutItems();
   void onStickToCurrentPos(bool toggled);
+
+  void updateWorkArea();
 
 private:
   Fm::ProxyFolderModel* proxyModel_;
