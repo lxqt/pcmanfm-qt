@@ -41,7 +41,7 @@
 #include "pathedit.h"
 #include "ui_about.h"
 #include "application.h"
-#include "path.h"
+#include "../libfm-qt/path.h"
 
 // #include "qmodeltest/modeltest.h"
 
