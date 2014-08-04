@@ -97,32 +97,32 @@ PlacesModel::PlacesModel(QObject* parent):
     g_signal_connect(volumeMonitor, "mount-added", G_CALLBACK(onMountAdded), this);
     g_signal_connect(volumeMonitor, "mount-changed", G_CALLBACK(onMountChanged), this);
     g_signal_connect(volumeMonitor, "mount-removed", G_CALLBACK(onMountRemoved), this);
-  }
 
-  // add volumes to side-pane
-  GList* vols = g_volume_monitor_get_volumes(volumeMonitor);
-  GList* l;
-  for(l = vols; l; l = l->next) {
-    GVolume* volume = G_VOLUME(l->data);
-    onVolumeAdded(volumeMonitor, volume, this);
-    g_object_unref(volume);
-  }
-  g_list_free(vols);
-
-  /* add mounts to side-pane */
-  vols = g_volume_monitor_get_mounts(volumeMonitor);
-  for(l = vols; l; l = l->next) {
-    GMount* mount = G_MOUNT(l->data);
-    GVolume* volume = g_mount_get_volume(mount);
-    if(volume)
-      g_object_unref(volume);
-    else { /* network mounts or others */
-      item = new PlacesModelMountItem(mount);
-      devicesRoot->appendRow(item);
+    // add volumes to side-pane
+    GList* vols = g_volume_monitor_get_volumes(volumeMonitor);
+    GList* l;
+    for(l = vols; l; l = l->next) {
+        GVolume* volume = G_VOLUME(l->data);
+        onVolumeAdded(volumeMonitor, volume, this);
+        g_object_unref(volume);
     }
-    g_object_unref(mount);
+    g_list_free(vols);
+
+    /* add mounts to side-pane */
+    vols = g_volume_monitor_get_mounts(volumeMonitor);
+    for(l = vols; l; l = l->next) {
+        GMount* mount = G_MOUNT(l->data);
+        GVolume* volume = g_mount_get_volume(mount);
+        if(volume)
+        g_object_unref(volume);
+        else { /* network mounts or others */
+        item = new PlacesModelMountItem(mount);
+        devicesRoot->appendRow(item);
+        }
+        g_object_unref(mount);
+    }
+    g_list_free(vols);
   }
-  g_list_free(vols);
 
   // bookmarks
   bookmarksRoot = new QStandardItem(tr("Bookmarks"));
@@ -163,10 +163,9 @@ PlacesModel::~PlacesModel() {
     g_signal_handlers_disconnect_by_func(volumeMonitor, (gpointer)G_CALLBACK(onMountRemoved), this);
     g_object_unref(volumeMonitor);
   }
-
   if(trashMonitor_) {
-      g_signal_handlers_disconnect_by_func(trashMonitor_, (gpointer)G_CALLBACK(onTrashChanged), this);
-      g_object_unref(trashMonitor_);
+    g_signal_handlers_disconnect_by_func(trashMonitor_, (gpointer)G_CALLBACK(onTrashChanged), this);
+    g_object_unref(trashMonitor_);
   }
 }
 
@@ -192,17 +191,22 @@ void PlacesModel::updateTrash() {
 }
 
 void PlacesModel::createTrashItem() {
+  GFile* gf;
+  gf = fm_file_new_for_uri("trash:///");
+  // check if trash is supported by the current vfs
+  // if gvfs is not installed, this can be unavailable.
+  if(!g_file_query_exists(gf, NULL)) {
+    g_object_unref(gf);
+    trashItem_ = NULL;
+    trashMonitor_ = NULL;
+    return;
+  }
   trashItem_ = new PlacesModelItem("user-trash", tr("Trash"), fm_path_get_trash());
   trashItem_->setEditable(false);
 
-  GFile* gf;
-  gf = fm_file_new_for_uri("trash:///");
-  if(!g_file_query_exists(gf, NULL)) {
-    g_object_unref(gf);
-    return;
-  }
   trashMonitor_ = fm_monitor_directory(gf, NULL);
-  g_signal_connect(trashMonitor_, "changed", G_CALLBACK(onTrashChanged), this);
+  if(trashMonitor_)
+    g_signal_connect(trashMonitor_, "changed", G_CALLBACK(onTrashChanged), this);
   g_object_unref(gf);
 
   placesRoot->insertRow(desktopItem->row() + 1, trashItem_);

@@ -489,6 +489,7 @@ void Application::onScreenResized(int num) {
 void Application::onWorkAreaResized(int num) {
   DesktopWindow* window = desktopWindows_.at(num);
   QRect rect = desktop()->availableGeometry(num);
+  qDebug() << "workAreaResized" << num << rect;
   window->setWorkArea(rect);
 }
 
