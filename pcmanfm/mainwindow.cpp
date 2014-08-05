@@ -692,12 +692,14 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
   // show a popup menu for browsing history here.
   QToolButton* btn = static_cast<QToolButton*>(sender());
   TabPage* page = currentPage();
-  FmPath* currentPath = page->path();
+  Fm::BrowseHistory& history = page->browseHistory();
+  int current = history.currentIndex();
   QMenu menu;
-  Q_FOREACH(const BrowseHistoryItem& item, currentPage()->browseHistory()) {
+  for(int i = 0; i < history.size(); ++i) {
+    const BrowseHistoryItem& item = history.at(i);
     Fm::Path path = item.path();
     QAction* action = menu.addAction(path.displayName());
-    if(fm_path_equal(item.path(), currentPath)) {
+    if(i == current) {
       // make the current path bold and checked
       action->setCheckable(true);
       action->setChecked(true);

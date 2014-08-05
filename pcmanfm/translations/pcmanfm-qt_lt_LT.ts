@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.1">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -63,7 +63,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>License</source>
         <translation>Licencija</translation>
     </message>
-    <message utf8="true">
+    <message>
         <source>PCMan File Manager
 
 Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
@@ -164,6 +164,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <source>Advanced</source>
         <translation>Sudėtingesni</translation>
+    </message>
+    <message>
+        <source>Show menus provided by window managers when desktop is clicked</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -480,6 +484,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>&amp;Tool</source>
         <translation>Į&amp;rankiai</translation>
     </message>
+    <message>
+        <source>Main Toolbar</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PCManFM::Application</name>
@@ -547,6 +555,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>[FILE1, FILE2,...]</source>
         <translation>[FAILAS1, FAILAS2,...]</translation>
     </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Klaida</translation>
+    </message>
+    <message>
+        <source>Terminal emulator is not set.</source>
+        <translation type="unfinished">Nenustatytas terminalo emuliatorius.</translation>
+    </message>
 </context>
 <context>
     <name>PCManFM::AutoRunDialog</name>
@@ -592,6 +608,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>Desktop Preferences</source>
         <translation>Darbastalio nustatymai</translation>
     </message>
+    <message>
+        <source>Stic&amp;k to Current Position</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PCManFM::MainWindow</name>
@@ -613,7 +633,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Terminal emulator is not set.</source>
-        <translation>Nenustatytas terminalo emuliatorius.</translation>
+        <translation type="vanished">Nenustatytas terminalo emuliatorius.</translation>
     </message>
 </context>
 <context>
@@ -652,6 +672,29 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished">
             <numerusform> (%n paslėptas)</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Klaida</translation>
+    </message>
+    <message>
+        <source>%1 item(s) selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PCManFM::View</name>
+    <message>
+        <source>Open in New T&amp;ab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open in New Win&amp;dow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open in Termina&amp;l</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -758,7 +801,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Do not generate thumbnails for files exceeding this size (KB):</source>
-        <translation>Negeneruoti miniatiūrų, jei failas didesnis nei (KB):</translation>
+        <translation type="vanished">Negeneruoti miniatiūrų, jei failas didesnis nei (KB):</translation>
     </message>
     <message>
         <source>Auto Mount</source>
@@ -782,7 +825,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Terminal emulator command for directories:</source>
-        <translation>Terminalo emuliatoriaus komanda aplankams:</translation>
+        <translation type="vanished">Terminalo emuliatoriaus komanda aplankams:</translation>
     </message>
     <message>
         <source>Switch user command:</source>
@@ -800,11 +843,23 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Terminal emulator command for programs:</source>
-        <translation>Terminalo emuliatoriaus komanda programoms:</translation>
+        <translation type="vanished">Terminalo emuliatoriaus komanda programoms:</translation>
     </message>
     <message>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Naudoti SI dešimtainius matmenis vietoj IEC dvejetainių matmenų</translation>
+    </message>
+    <message>
+        <source>Do not generate thumbnails for image files exceeding this size:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source> KB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Terminal emulator:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
