@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW">
+<TS version="2.0" language="zh_TW">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -35,7 +35,7 @@
         <source>Authors</source>
         <translation>作者</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="../../build/pcmanfm/ui_about.h" line="129"/>
         <source>PCMan File Manager
 
@@ -801,7 +801,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Terminal emulator is not set.</source>
-        <translation type="vanished">終端機模擬器尚未設定</translation>
+        <translation type="obsolete">終端機模擬器尚未設定</translation>
     </message>
 </context>
 <context>
@@ -1021,7 +1021,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Do not generate thumbnails for files exceeding this size (KB):</source>
-        <translation type="vanished">不為超過指定大小的檔案產生縮圖 (KB)</translation>
+        <translation type="obsolete">不為超過指定大小的檔案產生縮圖 (KB)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="513"/>
@@ -1050,7 +1050,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Terminal emulator command for directories:</source>
-        <translation type="vanished">用來開啟目錄的終端機模擬器指令:</translation>
+        <translation type="obsolete">用來開啟目錄的終端機模擬器指令:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="519"/>
@@ -1071,7 +1071,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Terminal emulator command for programs:</source>
-        <translation type="vanished">用來執行程式的終端機模擬器指令:</translation>
+        <translation type="obsolete">用來執行程式的終端機模擬器指令:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="523"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -63,7 +63,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>License</source>
         <translation>Licencija</translation>
     </message>
-    <message>
+    <message utf8="true">
         <source>PCMan File Manager
 
 Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
@@ -633,7 +633,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Terminal emulator is not set.</source>
-        <translation type="vanished">Nenustatytas terminalo emuliatorius.</translation>
+        <translation type="obsolete">Nenustatytas terminalo emuliatorius.</translation>
     </message>
 </context>
 <context>
@@ -801,7 +801,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Do not generate thumbnails for files exceeding this size (KB):</source>
-        <translation type="vanished">Negeneruoti miniatiūrų, jei failas didesnis nei (KB):</translation>
+        <translation type="obsolete">Negeneruoti miniatiūrų, jei failas didesnis nei (KB):</translation>
     </message>
     <message>
         <source>Auto Mount</source>
@@ -825,7 +825,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Terminal emulator command for directories:</source>
-        <translation type="vanished">Terminalo emuliatoriaus komanda aplankams:</translation>
+        <translation type="obsolete">Terminalo emuliatoriaus komanda aplankams:</translation>
     </message>
     <message>
         <source>Switch user command:</source>
@@ -843,7 +843,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Terminal emulator command for programs:</source>
-        <translation type="vanished">Terminalo emuliatoriaus komanda programoms:</translation>
+        <translation type="obsolete">Terminalo emuliatoriaus komanda programoms:</translation>
     </message>
     <message>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>

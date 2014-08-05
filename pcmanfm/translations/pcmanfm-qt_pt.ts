@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pt_PT">
+<TS version="2.0" language="pt_PT">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -37,7 +37,7 @@
         <source>Authors</source>
         <translation>Autores</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="../../build/pcmanfm/ui_about.h" line="129"/>
         <source>PCMan File Manager
 
@@ -764,7 +764,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     </message>
     <message>
         <source>Terminal emulator is not set.</source>
-        <translation type="vanished">O emulador de terminal não está definido.</translation>
+        <translation type="obsolete">O emulador de terminal não está definido.</translation>
     </message>
 </context>
 <context>
@@ -986,7 +986,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     </message>
     <message>
         <source>Do not generate thumbnails for files exceeding this size (KB):</source>
-        <translation type="vanished">Não gerar miniaturas para os ficheiros que excedam (KB):</translation>
+        <translation type="obsolete">Não gerar miniaturas para os ficheiros que excedam (KB):</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="513"/>
@@ -1015,7 +1015,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     </message>
     <message>
         <source>Terminal emulator command for directories:</source>
-        <translation type="vanished">Comando do terminal para os diretórios:</translation>
+        <translation type="obsolete">Comando do terminal para os diretórios:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="519"/>
@@ -1036,7 +1036,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     </message>
     <message>
         <source>Terminal emulator command for programs:</source>
-        <translation type="vanished">Comando do terminal para os programas:</translation>
+        <translation type="obsolete">Comando do terminal para os programas:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="523"/>

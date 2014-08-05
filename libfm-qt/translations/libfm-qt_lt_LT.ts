@@ -2,6 +2,51 @@
 <!DOCTYPE TS>
 <TS version="2.0">
 <context>
+    <name>AppChooserDialog</name>
+    <message>
+        <source>Choose an Application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Installed Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Custom Command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Command line to execute:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Application name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;These special codes can be used in the command line:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: Represents a single file name&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;: Represents multiple file names&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represents a single URI of the file&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represents multiple URIs&lt;/li&gt;
+&lt;/ul&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Keep terminal window open after command execution</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Execute in terminal emulator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Set selected application as default action of this file type</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>EditBookmarksDialog</name>
     <message>
         <source>Edit Bookmarks</source>
@@ -26,6 +71,29 @@
     <message>
         <source>Use drag and drop to reorder the items</source>
         <translation>Failų tvarkai pakeisti naudokite vilkimą</translation>
+    </message>
+</context>
+<context>
+    <name>ExecFileDialog</name>
+    <message>
+        <source>Execute file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>E&amp;xecute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Execute in &amp;Terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished">Atšaukti</translation>
     </message>
 </context>
 <context>
@@ -155,6 +223,31 @@
     </message>
 </context>
 <context>
+    <name>Fm::AppChooserComboBox</name>
+    <message>
+        <source>Customize</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Fm::AppChooserDialog</name>
+    <message>
+        <source>Select an application to open &quot;%1&quot; files</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Fm::DirTreeModel</name>
+    <message>
+        <source>Loading...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;No sub folders&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Fm::DndActionMenu</name>
     <message>
         <source>Copy here</source>
@@ -186,6 +279,18 @@
     </message>
 </context>
 <context>
+    <name>Fm::ExecFileDialog</name>
+    <message>
+        <source>This text file &apos;%1&apos; seems to be an executable script.
+What do you want to do with it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This file &apos;%1&apos; is executable. Do you want to execute it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Fm::FileMenu</name>
     <message>
         <source>Open</source>
@@ -193,7 +298,7 @@
     </message>
     <message>
         <source>OpenWith</source>
-        <translation>Atverti su</translation>
+        <translation type="obsolete">Atverti su</translation>
     </message>
     <message>
         <source>Cut</source>
@@ -234,6 +339,18 @@
     <message>
         <source>Properties</source>
         <translation>Savybės</translation>
+    </message>
+    <message>
+        <source>Open With...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Other Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Output</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -394,7 +511,7 @@
     </message>
     <message>
         <source>File</source>
-        <translation>Failas</translation>
+        <translation type="obsolete">Failas</translation>
     </message>
     <message>
         <source>By File Name</source>
@@ -431,6 +548,10 @@
     <message>
         <source>Case Sensitive</source>
         <translation>Skirti raidžių dydį</translation>
+    </message>
+    <message>
+        <source>Blank File</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -531,6 +652,10 @@
         <source>Eject</source>
         <translation>Išstumti</translation>
     </message>
+    <message>
+        <source>Empty Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Fm::RenameDialog</name>
@@ -562,6 +687,25 @@ Modified: %2</source>
         <translation type="unfinished">Tipas: %1
 Keista: %2 {1
 ?}</translation>
+    </message>
+</context>
+<context>
+    <name>Fm::SidePane</name>
+    <message>
+        <source>Places</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Directory Tree</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Shows list of common places, devices, and bookmarks in sidebar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Shows tree of directories in sidebar</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -636,6 +780,10 @@ Keista: %2 {1
     <message>
         <source>Create File</source>
         <translation>Sukurti failą</translation>
+    </message>
+    <message>
+        <source>Enter a name for the new %1:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

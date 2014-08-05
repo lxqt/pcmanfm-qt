@@ -29,6 +29,7 @@
 using namespace Fm;
 
 static IconTheme* theIconTheme = NULL; // the global single instance of IconTheme.
+static const char* fallbackNames[] = {"unknown", "application-octet-stream", NULL};
 
 static void fmIconDataDestroy(gpointer data) {
   QIcon* picon = reinterpret_cast<QIcon*>(data);
@@ -36,15 +37,15 @@ static void fmIconDataDestroy(gpointer data) {
 }
 
 IconTheme::IconTheme():
-  currentThemeName_(QIcon::themeName()),
-  fallbackIcon_(QIcon::fromTheme("application-octet-stream")) {
+  currentThemeName_(QIcon::themeName()) {
   // NOTE: only one instance is allowed
   Q_ASSERT(theIconTheme == NULL);
   Q_ASSERT(qApp != NULL); // QApplication should exists before contructing IconTheme.
 
   theIconTheme = this;
   fm_icon_set_user_data_destroy(reinterpret_cast<GDestroyNotify>(fmIconDataDestroy));
-  
+  fallbackIcon_ = iconFromNames(fallbackNames);
+
   // We need to get notified when there is a QEvent::StyleChange event so
   // we can check if the current icon theme name is changed.
   // To do this, we can filter QApplication object itself to intercept
@@ -68,23 +69,31 @@ void IconTheme::checkChanged() {
     // invalidate the cached data
     fm_icon_reset_user_data_cache(fm_qdata_id);
 
-    theIconTheme->fallbackIcon_ = QIcon::fromTheme("application-octet-stream");
+    theIconTheme->fallbackIcon_ = iconFromNames(fallbackNames);
     Q_EMIT theIconTheme->changed();
   }
+}
+
+QIcon IconTheme::iconFromNames(const char* const* names) {
+  const gchar* const* name;
+  // qDebug("names: %p", names);
+  for(name = names; *name; ++name) {
+    // qDebug("icon name=%s", *name);
+    QString qname = *name;
+    QIcon qicon = QIcon::fromTheme(qname);
+    if(!qicon.isNull()) {
+      return qicon;
+    }
+  }
+  return QIcon();
 }
 
 QIcon IconTheme::convertFromGIcon(GIcon* gicon) {
   if(G_IS_THEMED_ICON(gicon)) {
     const gchar * const * names = g_themed_icon_get_names(G_THEMED_ICON(gicon));
-    const gchar * const * name;
-    for(name = names; *name; ++name) {
-      // qDebug("icon name=%s", *name);
-      QString qname = *name;
-      QIcon qicon = QIcon::fromTheme(qname);
-      if(!qicon.isNull()) {
-	return qicon;
-      }
-    }
+    QIcon icon = iconFromNames(names);
+    if(!icon.isNull())
+      return icon;
   }
   else if(G_IS_FILE_ICON(gicon)) {
     GFile* file = g_file_icon_get_file(G_FILE_ICON(gicon));

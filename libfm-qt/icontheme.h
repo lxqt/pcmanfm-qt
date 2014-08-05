@@ -57,6 +57,7 @@ Q_SIGNALS:
 protected:
   bool eventFilter(QObject *obj, QEvent *event);
   static QIcon convertFromGIcon(GIcon* gicon);
+  static QIcon iconFromNames(const char * const * names);
 
 protected:
   QIcon fallbackIcon_;
