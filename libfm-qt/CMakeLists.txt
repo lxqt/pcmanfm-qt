@@ -146,19 +146,24 @@ endif()
 
 # add translation for pcmanfm-qt
 # See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
+option (UPDATE_TRANSLATIONS "Update source translation translations/*.ts files")
 file(GLOB TS_FILES translations/*.ts)
 if(USE_QT5)
-  qt5_create_translation(QM_FILES ${libfm_SRCS} ${libfm_UIS} ${TS_FILES})
-  qt5_add_translation(QM_FILES ${TS_FILES})
+  if(UPDATE_TRANSLATIONS)
+    qt5_create_translation(QM_FILES ${libfm_SRCS} ${libfm_UIS} ${TS_FILES})
+  else()
+    qt5_add_translation(QM_FILES ${TS_FILES})
+  endif()
 else()
-  qt4_create_translation(QM_FILES ${libfm_SRCS} ${libfm_UIS} ${TS_FILES})
-  qt4_add_translation(QM_FILES ${TS_FILES})
+  if(UPDATE_TRANSLATIONS)
+    qt4_create_translation(QM_FILES ${libfm_SRCS} ${libfm_UIS} ${TS_FILES})
+  else()
+    qt4_add_translation(QM_FILES ${TS_FILES})
+  endif()
 endif()
 
 add_custom_target (libfm_translations DEPENDS ${QM_FILES})
 install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/libfm-qt/translations)
 
 # prevent the generated files from being deleted during make cleaner
-set_directory_properties(PROPERTIES
-  CLEAN_NO_CUSTOM true
-)
+set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)
