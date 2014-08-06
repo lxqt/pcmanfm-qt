@@ -57,6 +57,7 @@ Settings::Settings():
   mountOnStartup_(true),
   mountRemovable_(true),
   autoRun_(true),
+  closeOnUnmount_(false),
   wallpaperMode_(0),
   wallpaper_(),
   desktopBgColor_(),
@@ -174,6 +175,7 @@ bool Settings::loadFile(QString filePath) {
   mountOnStartup_ = settings.value("MountOnStartup", true).toBool();
   mountRemovable_ = settings.value("MountRemovable", true).toBool();
   autoRun_ = settings.value("AutoRun", true).toBool();
+  closeOnUnmount_ = settings.value("CloseOnUnmount", true).toBool();
   settings.endGroup();
 
   settings.beginGroup("Thumbnail");
@@ -244,6 +246,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("MountOnStartup", mountOnStartup_);
   settings.setValue("MountRemovable", mountRemovable_);
   settings.setValue("AutoRun", autoRun_);
+  settings.setValue("CloseOnUnmount", closeOnUnmount_);
   settings.endGroup();
 
   settings.beginGroup("Thumbnail");

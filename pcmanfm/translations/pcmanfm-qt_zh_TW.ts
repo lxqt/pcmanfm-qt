@@ -854,7 +854,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="371"/>
+        <location filename="../tabpage.cpp" line="383"/>
         <source>%1 item(s) selected</source>
         <translation type="unfinished"></translation>
     </message>
@@ -880,142 +880,157 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PreferencesDialog</name>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="476"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="498"/>
         <source>Preferences</source>
         <translation>偏好設定</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="481"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="503"/>
         <source>User Interface</source>
         <translation>使用者界面</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="483"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="505"/>
         <source>Behavior</source>
         <translation>行為</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="485"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="507"/>
         <source>Thumbnail</source>
         <translation>縮圖</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="487"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="509"/>
         <source>Volume</source>
         <translation>磁碟</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="489"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="511"/>
         <source>Advanced</source>
         <translation>進階</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="492"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="514"/>
         <source>Icons</source>
         <translation>圖示</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="493"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="515"/>
         <source>Size of big icons:</source>
         <translation>大圖示尺寸:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="494"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="516"/>
         <source>Size of small icons:</source>
         <translation>小圖示尺寸:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="495"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="517"/>
         <source>Size of thumbnails:</source>
         <translation>縮圖尺寸:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="496"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="518"/>
         <source>Size of side pane icons:</source>
         <translation>側邊欄圖示尺寸:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="497"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="519"/>
         <source>Icon theme:</source>
         <translation>圖示佈景主題:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="498"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="520"/>
         <source>Window</source>
         <translation>視窗</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="499"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="521"/>
         <source>Default width of new windows:</source>
         <translation>新視窗的預設寬度</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="500"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="522"/>
         <source>Default height of new windows:</source>
         <translation>新視窗的預設高度</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="501"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="523"/>
         <source>Always show the tab bar</source>
         <translation>總是顯示標籤列</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="502"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="524"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>在分頁標籤上顯示「關閉」按鈕</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="503"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="525"/>
         <source>Browsing</source>
         <translation>瀏覽</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="504"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="526"/>
         <source>Open files with single click</source>
         <translation>單擊開啟檔案</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="505"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="527"/>
         <source>Default view mode:</source>
         <translation>預設檢視模式:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="506"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="528"/>
         <source>File Operations</source>
         <translation>檔案操作</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="507"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
         <source>Confirm before deleting files</source>
         <translation>刪除檔案前確認</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="508"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="530"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation>將檔案移動到垃圾桶，而不直接刪除</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="509"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="531"/>
         <source>Show thumbnails of files</source>
         <translation>顯示檔案縮圖</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="510"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="532"/>
         <source>Only show thumbnails for local files</source>
         <translation>只顯示本地檔案的縮圖</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="511"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="512"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="534"/>
         <source> KB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="518"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
+        <source>When removable medium unmounted:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
+        <source>Close tab containing removable medium</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
+        <source>Change folder in the tab to home folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
         <source>Terminal emulator:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1024,27 +1039,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="obsolete">不為超過指定大小的檔案產生縮圖 (KB)</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="513"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
         <source>Auto Mount</source>
         <translation>自動掛載</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="514"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="536"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>掛載可掛載的磁碟</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="515"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>可移除式媒體插入時自動掛載</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="516"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="538"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>可移除式媒體插入時顯示可用的選項</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="517"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="542"/>
         <source>Programs</source>
         <translation>程式</translation>
     </message>
@@ -1053,19 +1068,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="obsolete">用來開啟目錄的終端機模擬器指令:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="519"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="544"/>
         <source>Switch user command:</source>
         <translation>切換使用者的指令:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="520"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="545"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>範例: 終端機指令可用 &quot;xterm -e %s&quot;而切換使用者指令可用 &quot;gksu %s&quot;。
 %s = 想要用終端機或是切換使用者執行的指令。</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="522"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
         <source>Archiver integration:</source>
         <translation>壓縮程式整合:</translation>
     </message>
@@ -1074,7 +1089,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="obsolete">用來執行程式的終端機模擬器指令:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="523"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation></translation>
     </message>

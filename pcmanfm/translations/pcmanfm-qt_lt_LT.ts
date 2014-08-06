@@ -861,5 +861,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>Terminal emulator:</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>When removable medium unmounted:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close tab containing removable medium</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Change folder in the tab to home folder</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

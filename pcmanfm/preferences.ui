@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>643</width>
-    <height>446</height>
+    <width>689</width>
+    <height>466</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -344,6 +344,29 @@
              <widget class="QCheckBox" name="autoRun">
               <property name="text">
                <string>Show available options for removable media when they are inserted</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_7">
+           <property name="title">
+            <string>When removable medium unmounted:</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QRadioButton" name="closeOnUnmount">
+              <property name="text">
+               <string>Close tab containing removable medium</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="goHomeOnUnmount">
+              <property name="text">
+               <string>Change folder in the tab to home folder</string>
               </property>
              </widget>
             </item>

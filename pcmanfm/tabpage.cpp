@@ -241,11 +241,15 @@ QString TabPage::formatStatusText() {
 /*static*/ void TabPage::onFolderRemoved(FmFolder* _folder, TabPage* pThis) {
   // the folder we're showing is removed, destroy the widget
   qDebug("folder removed");
+  Settings& settings = static_cast<Application*>(qApp)->settings();
   // NOTE: call pThis->deleteLater() directly from this GObject signal handler
   // does not work but I don't know why.
   // Maybe it's the problem of glib mainloop integration?
   // Call it when idle works, though.
-  QTimer::singleShot(0, pThis, SLOT(deleteLater()));
+  if(settings.closeOnUnmount())
+    QTimer::singleShot(0, pThis, SLOT(deleteLater()));
+  else
+    pThis->chdir(fm_path_get_home());
 }
 
 /*static*/ void TabPage::onFolderUnmount(FmFolder* _folder, TabPage* pThis) {
@@ -255,7 +259,15 @@ QString TabPage::formatStatusText() {
   // does not work but I don't know why.
   // Maybe it's the problem of glib mainloop integration?
   // Call it when idle works, though.
-  QTimer::singleShot(0, pThis, SLOT(deleteLater()));
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  // NOTE: call pThis->deleteLater() directly from this GObject signal handler
+  // does not work but I don't know why.
+  // Maybe it's the problem of glib mainloop integration?
+  // Call it when idle works, though.
+  if(settings.closeOnUnmount())
+    QTimer::singleShot(0, pThis, SLOT(deleteLater()));
+  else
+    pThis->chdir(fm_path_get_home());
 }
 
 /*static */ void TabPage::onFolderContentChanged(FmFolder* _folder, TabPage* pThis) {

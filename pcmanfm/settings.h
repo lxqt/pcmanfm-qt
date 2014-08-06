@@ -117,7 +117,14 @@ public:
     autoRun_ = autoRun;
   }
 
+  bool closeOnUnmount() const {
+    return closeOnUnmount_;
+  }
 
+  void setCloseOnUnmount(bool value) {
+    closeOnUnmount_ = value;
+  }
+  
   DesktopWindow::WallpaperMode wallpaperMode() const {
     return DesktopWindow::WallpaperMode(wallpaperMode_);
   }
@@ -385,6 +392,7 @@ private:
   bool mountOnStartup_;
   bool mountRemovable_;
   bool autoRun_;
+  bool closeOnUnmount_;
 
   int wallpaperMode_;
   QString wallpaper_;

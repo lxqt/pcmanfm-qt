@@ -200,6 +200,10 @@ void PreferencesDialog::initVolumePage(Settings& settings) {
   ui.mountOnStartup->setChecked(settings.mountOnStartup());
   ui.mountRemovable->setChecked(settings.mountRemovable());
   ui.autoRun->setChecked(settings.autoRun());
+  if(settings.closeOnUnmount())
+    ui.closeOnUnmount->setChecked(true);
+  else
+    ui.goHomeOnUnmount->setChecked(true);
 }
 
 void PreferencesDialog::initTerminals(Settings& settings) {
@@ -269,6 +273,7 @@ void PreferencesDialog::applyVolumePage(Settings& settings) {
   settings.setAutoRun(ui.autoRun->isChecked());
   settings.setMountOnStartup(ui.mountOnStartup->isChecked());
   settings.setMountRemovable(ui.mountRemovable->isChecked());
+  settings.setCloseOnUnmount(ui.closeOnUnmount->isChecked());
 }
 
 void PreferencesDialog::applyAdvancedPage(Settings& settings) {
