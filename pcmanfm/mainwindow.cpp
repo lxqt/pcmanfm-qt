@@ -124,26 +124,20 @@ MainWindow::MainWindow(FmPath* path):
   group->addAction(ui.actionDescending);
 
   // create shortcuts
-  QShortcut* shortcut = new QShortcut(Qt::CTRL + Qt::Key_L, this);
-  connect(shortcut, SIGNAL(activated()), pathEntry, SLOT(setFocus()));
-  shortcut = new QShortcut(Qt::ALT + Qt::Key_D, this);
-  connect(shortcut, SIGNAL(activated()), pathEntry, SLOT(setFocus()));
+  new QShortcut(Qt::CTRL + Qt::Key_L, pathEntry, SLOT(setFocus()));
+  new QShortcut(Qt::ALT + Qt::Key_D, pathEntry, SLOT(setFocus()));
 
-  shortcut = new QShortcut(Qt::CTRL + Qt::Key_Tab, this);
-  connect(shortcut, SIGNAL(activated()), SLOT(onShortcutNextTab()));
-  shortcut = new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_Tab, this);
-  connect(shortcut, SIGNAL(activated()), SLOT(onShortcutPrevTab()));
+  new QShortcut(Qt::CTRL + Qt::Key_Tab, this, SLOT(onShortcutNextTab()));
+  new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_Tab, this, SLOT(onShortcutPrevTab()));
 
   int i;
   for(i = 0; i < 10; ++i) {
-    shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_0 + i), this);
-    connect(shortcut, SIGNAL(activated()), SLOT(onShortcutJumpToTab()));
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_0 + i), this);
-    connect(shortcut, SIGNAL(activated()), SLOT(onShortcutJumpToTab()));
+    new QShortcut(QKeySequence(Qt::ALT + Qt::Key_0 + i), this, SLOT(onShortcutJumpToTab()));
+    new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_0 + i), this, SLOT(onShortcutJumpToTab()));
   }
 
-  QShortcut *backspaceShortcut = new QShortcut(QKeySequence(Qt::Key_Backspace), this);
-  connect(backspaceShortcut, SIGNAL(activated()), SLOT(on_actionGoUp_triggered()));
+  new QShortcut(QKeySequence(Qt::Key_Backspace), this, SLOT(on_actionGoUp_triggered()));
+  new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this, SLOT(on_actionDelete_triggered()));
 
   if(path)
     addTab(path);
@@ -645,7 +639,8 @@ void MainWindow::on_actionDelete_triggered() {
   TabPage* page = currentPage();
   FmPathList* paths = page->selectedFilePaths();
 
-  if(settings.useTrash())
+  bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
+  if(settings.useTrash() && !shiftPressed)
     FileOperation::trashFiles(paths, settings.confirmDelete(), this);
   else
     FileOperation::deleteFiles(paths, settings.confirmDelete(), this);

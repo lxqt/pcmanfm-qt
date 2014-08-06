@@ -137,14 +137,14 @@ DesktopWindow::DesktopWindow(int screenNum):
   listView_->installEventFilter(this);
   
   // setup shortcuts
-  QShortcut* shortcut;
-  shortcut = new QShortcut(Qt::CTRL + Qt::Key_X, this, SLOT(onCutActivated())); // cut
-  shortcut = new QShortcut(Qt::CTRL + Qt::Key_C, this, SLOT(onCopyActivated())); // copy
-  shortcut = new QShortcut(Qt::CTRL + Qt::Key_V, this, SLOT(onPasteActivated())); // paste
-  shortcut = new QShortcut(Qt::CTRL + Qt::Key_A, listView_, SLOT(selectAll())); // select all
-  shortcut = new QShortcut(Qt::Key_Delete, this, SLOT(onDeleteActivated())); // delete
-  shortcut = new QShortcut(Qt::Key_F2, this, SLOT(onRenameActivated())); // rename
-  shortcut = new QShortcut(Qt::ALT + Qt::Key_Return, this, SLOT(onFilePropertiesActivated())); // rename
+  new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_X), this, SLOT(onCutActivated())); // cut
+  new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_C), this, SLOT(onCopyActivated())); // copy
+  new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_V), this, SLOT(onPasteActivated())); // paste
+  new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_A), listView_, SLOT(selectAll())); // select all
+  new QShortcut(QKeySequence(Qt::Key_Delete), this, SLOT(onDeleteActivated())); // delete
+  new QShortcut(QKeySequence(Qt::Key_F2), this, SLOT(onRenameActivated())); // rename
+  new QShortcut(QKeySequence(Qt::ALT + Qt::Key_Return), this, SLOT(onFilePropertiesActivated())); // rename
+  new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this, SLOT(onDeleteActivated())); // force delete
 }
 
 DesktopWindow::~DesktopWindow() {
@@ -697,7 +697,8 @@ void DesktopWindow::onPasteActivated() {
 void DesktopWindow::onDeleteActivated() {
   if(FmPathList* paths = selectedFilePaths()) {
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    if(settings.useTrash())
+    bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
+    if(settings.useTrash() && !shiftPressed)
       Fm::FileOperation::trashFiles(paths, settings.confirmDelete());
     else
       Fm::FileOperation::deleteFiles(paths, settings.confirmDelete());
