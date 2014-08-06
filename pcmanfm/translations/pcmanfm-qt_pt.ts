@@ -729,12 +729,12 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="332"/>
+        <location filename="../desktopwindow.cpp" line="346"/>
         <source>Stic&amp;k to Current Position</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="354"/>
+        <location filename="../desktopwindow.cpp" line="368"/>
         <source>Desktop Preferences</source>
         <translation>Preferências da área de trabalho</translation>
     </message>

@@ -33,6 +33,7 @@
 #include <QSettings>
 #include <QStringBuilder>
 #include <QDir>
+#include <QShortcut>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -41,6 +42,9 @@
 #include "filemenu.h"
 #include "cachedfoldermodel.h"
 #include "folderview_p.h"
+#include "fileoperation.h"
+#include "filepropsdialog.h"
+#include "utilities.h"
 
 #include <QX11Info> // requires Qt 4 or Qt 5.1
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
@@ -131,6 +135,16 @@ DesktopWindow::DesktopWindow(int screenNum):
   connect(this, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onOpenDirRequested(FmPath*, int)));
   
   listView_->installEventFilter(this);
+  
+  // setup shortcuts
+  QShortcut* shortcut;
+  shortcut = new QShortcut(Qt::CTRL + Qt::Key_X, this, SLOT(onCutActivated())); // cut
+  shortcut = new QShortcut(Qt::CTRL + Qt::Key_C, this, SLOT(onCopyActivated())); // copy
+  shortcut = new QShortcut(Qt::CTRL + Qt::Key_V, this, SLOT(onPasteActivated())); // paste
+  shortcut = new QShortcut(Qt::CTRL + Qt::Key_A, listView_, SLOT(selectAll())); // select all
+  shortcut = new QShortcut(Qt::Key_Delete, this, SLOT(onDeleteActivated())); // delete
+  shortcut = new QShortcut(Qt::Key_F2, this, SLOT(onRenameActivated())); // rename
+  shortcut = new QShortcut(Qt::ALT + Qt::Key_Return, this, SLOT(onFilePropertiesActivated())); // rename
 }
 
 DesktopWindow::~DesktopWindow() {
@@ -657,5 +671,53 @@ void DesktopWindow::queueRelayout() {
     relayoutTimer_->setSingleShot(true);
     connect(relayoutTimer_, SIGNAL(timeout()), SLOT(relayoutItems()));
     relayoutTimer_->start();
+  }
+}
+
+// slots for file operations
+
+void DesktopWindow::onCutActivated() {
+  if(FmPathList* paths = selectedFilePaths()) {
+    Fm::cutFilesToClipboard(paths);
+    fm_path_list_unref(paths);
+  }
+}
+
+void DesktopWindow::onCopyActivated() {
+  if(FmPathList* paths = selectedFilePaths()) {
+    Fm::copyFilesToClipboard(paths);
+    fm_path_list_unref(paths);
+  }
+}
+
+void DesktopWindow::onPasteActivated() {
+  Fm::pasteFilesFromClipboard(path());
+}
+
+void DesktopWindow::onDeleteActivated() {
+  if(FmPathList* paths = selectedFilePaths()) {
+    Settings& settings = static_cast<Application*>(qApp)->settings();
+    if(settings.useTrash())
+      Fm::FileOperation::trashFiles(paths, settings.confirmDelete());
+    else
+      Fm::FileOperation::deleteFiles(paths, settings.confirmDelete());
+    fm_path_list_unref(paths);
+  }
+}
+
+void DesktopWindow::onRenameActivated() {
+  if(FmFileInfoList* files = selectedFiles()) {
+    for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
+      FmFileInfo* info = FM_FILE_INFO(l->data);
+      Fm::renameFile(info, NULL);
+      fm_file_info_list_unref(files);
+    }
+  }
+}
+
+void DesktopWindow::onFilePropertiesActivated() {
+  if(FmFileInfoList* files = selectedFiles()) {
+    Fm::FilePropsDialog::showForFiles(files);
+    fm_file_info_list_unref(files);
   }
 }

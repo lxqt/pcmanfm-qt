@@ -102,6 +102,14 @@ protected Q_SLOTS:
   void onStickToCurrentPos(bool toggled);
 
   void updateWorkArea();
+  
+  // file operations
+  void onCutActivated();
+  void onCopyActivated();
+  void onPasteActivated();
+  void onRenameActivated();
+  void onDeleteActivated();
+  void onFilePropertiesActivated();
 
 private:
   Fm::ProxyFolderModel* proxyModel_;
