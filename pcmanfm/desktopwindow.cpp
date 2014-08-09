@@ -73,15 +73,11 @@ DesktopWindow::DesktopWindow(int screenNum):
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
   setAttribute(Qt::WA_DeleteOnClose);
 
-  // paint background for the desktop widget
-  //setAutoFillBackground(true);
-  //setBackgroundRole(QPalette::Base);
-
   // set our custom file launcher
   View::setFileLauncher(&fileLauncher_);
 
   listView_ = static_cast<Fm::FolderViewListView*>(childView());
-  listView_->setMovement(QListView::Snap);
+  listView_->setMovement(QListView::Free);
   listView_->setResizeMode(QListView::Adjust);
   listView_->setFlow(QListView::TopToBottom);
 
@@ -121,7 +117,7 @@ DesktopWindow::DesktopWindow(int screenNum):
 
   connect(this, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onOpenDirRequested(FmPath*, int)));
   
-  // listView_->installEventFilter(this);
+  listView_->installEventFilter(this);
   
   // setup shortcuts
   new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_X), this, SLOT(onCutActivated())); // cut
@@ -135,7 +131,7 @@ DesktopWindow::DesktopWindow(int screenNum):
 }
 
 DesktopWindow::~DesktopWindow() {
-  // listView_->removeEventFilter(this);
+  listView_->removeEventFilter(this);
 
   if(relayoutTimer_)
     delete relayoutTimer_;
@@ -565,8 +561,8 @@ void DesktopWindow::relayoutItems() {
       screen = screenNum_;
     }
     QRect workArea = desktop->availableGeometry(screen);
-    workArea.adjust(12, 12, -12, -12); // add a margin to the work area
-    qDebug() << "workArea" << workArea;
+    workArea.adjust(12, 12, -12, -12); // add a 12 pixel margin to the work area
+    // qDebug() << "workArea" << workArea;
     // FIXME: we use an internal class declared in a private header here, which is pretty bad.
     QSize grid = listView_->gridSize();
     QPoint pos = workArea.topLeft();
@@ -756,4 +752,21 @@ bool DesktopWindow::event(QEvent* event)
 #endif
   }
   return QWidget::event(event);
+}
+
+#undef FontChange // this seems to be defined in Xlib headers as a macro, undef it!
+
+bool DesktopWindow::eventFilter(QObject * watched, QEvent * event) {
+  if(watched == listView_) {
+    switch(event->type()) {
+    case QEvent::StyleChange:
+    case QEvent::FontChange:
+      if(model_)
+        queueRelayout();
+      break;
+    default:
+      break;
+    }
+  }
+  return false;
 }
