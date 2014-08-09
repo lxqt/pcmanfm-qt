@@ -71,22 +71,6 @@ DesktopWindow::DesktopWindow(int screenNum):
   setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
   setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
   setAttribute(Qt::WA_DeleteOnClose);
-  
-  // set freedesktop.org EWMH hints properly
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-  if(QX11Info::isPlatformX11() && QX11Info::connection()) {
-    xcb_connection_t* con = QX11Info::connection();
-    const char* atom_name = "_NET_WM_WINDOW_TYPE_DESKTOP";
-    xcb_atom_t atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(atom_name), atom_name), NULL)->atom;
-    const char* prop_atom_name = "_NET_WM_WINDOW_TYPE";
-    xcb_atom_t prop_atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(prop_atom_name), prop_atom_name), NULL)->atom;
-    xcb_atom_t XA_ATOM = 4;
-    xcb_change_property(con, XCB_PROP_MODE_REPLACE, winId(), prop_atom, XA_ATOM, 32, 1, &atom);
-  }
-#else
-  Atom atom = XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE_DESKTOP", False);
-  XChangeProperty(QX11Info::display(), winId(), XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE", False), XA_ATOM, 32, PropModeReplace, (uchar*)&atom, 1);
-#endif
 
   // paint background for the desktop widget
   setAutoFillBackground(true);
@@ -721,4 +705,26 @@ void DesktopWindow::onFilePropertiesActivated() {
     Fm::FilePropsDialog::showForFiles(files);
     fm_file_info_list_unref(files);
   }
+}
+
+bool DesktopWindow::event(QEvent* event)
+{
+  if(event->type() == QEvent::WinIdChange) {
+    // set freedesktop.org EWMH hints properly
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    if(QX11Info::isPlatformX11() && QX11Info::connection()) {
+      xcb_connection_t* con = QX11Info::connection();
+      const char* atom_name = "_NET_WM_WINDOW_TYPE_DESKTOP";
+      xcb_atom_t atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(atom_name), atom_name), NULL)->atom;
+      const char* prop_atom_name = "_NET_WM_WINDOW_TYPE";
+      xcb_atom_t prop_atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(prop_atom_name), prop_atom_name), NULL)->atom;
+      xcb_atom_t XA_ATOM = 4;
+      xcb_change_property(con, XCB_PROP_MODE_REPLACE, winId(), prop_atom, XA_ATOM, 32, 1, &atom);
+    }
+#else
+    Atom atom = XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE_DESKTOP", False);
+    XChangeProperty(QX11Info::display(), winId(), XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE", False), XA_ATOM, 32, PropModeReplace, (uchar*)&atom, 1);
+#endif
+  }
+  return QWidget::event(event);
 }

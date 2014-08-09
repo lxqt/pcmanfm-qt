@@ -83,6 +83,8 @@ protected:
 
   QImage loadWallpaperFile(QSize requiredSize);
 
+  virtual bool event(QEvent* event);
+
 #if QT_VERSION < QT_VERSION_CHECK(5, 0, 0) // Qt 4
   virtual bool x11Event(XEvent * event);
 #endif
