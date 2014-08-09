@@ -40,6 +40,8 @@
 #include "autorundialog.h"
 #include "launcher.h"
 
+#include <X11/Xlib.h>
+
 using namespace PCManFM;
 static const char* serviceName = "org.pcmanfm.PCManFM";
 static const char* ifaceName = "org.pcmanfm.Application";
@@ -355,14 +357,24 @@ void Application::desktopManager(bool enabled) {
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
       installNativeEventFilter(this);
 #endif
-      int n = desktopWidget->numScreens();
       connect(desktopWidget, SIGNAL(resized(int)), SLOT(onScreenResized(int)));
       connect(desktopWidget, SIGNAL(workAreaResized(int)), SLOT(onWorkAreaResized(int)));
       connect(desktopWidget, SIGNAL(screenCountChanged(int)), SLOT(onScreenCountChanged(int)));
-      desktopWindows_.reserve(n);
-      for(int i = 0; i < n; ++i) {
-        DesktopWindow* window = createDesktopWindow(i);
-        desktopWindows_.push_back(window);
+
+      // NOTE: there are two modes
+      // When virtual desktop is used (all screens are combined to form a large virtual desktop),
+      // we only create one DesktopWindow. Otherwise, we create one for each screen.
+      if(desktopWidget->isVirtualDesktop()) {
+	DesktopWindow* window = createDesktopWindow(-1);
+	desktopWindows_.push_back(window);
+      }
+      else {
+	int n = desktopWidget->numScreens();
+	desktopWindows_.reserve(n);
+	for(int i = 0; i < n; ++i) {
+	  DesktopWindow* window = createDesktopWindow(i);
+	  desktopWindows_.push_back(window);
+	}
       }
     }
   }
@@ -506,10 +518,16 @@ void Application::onWorkAreaResized(int num) {
 
 DesktopWindow* Application::createDesktopWindow(int screenNum) {
   DesktopWindow* window = new DesktopWindow(screenNum);
-  QRect rect = desktop()->screenGeometry(screenNum);
-  window->setGeometry(rect);
-  rect = desktop()->availableGeometry(screenNum);
-  window->setWorkArea(rect);
+  if(screenNum == -1) { // one large virtual desktop only
+    QRect rect = desktop()->geometry();
+    window->setGeometry(rect);
+  }
+  else {
+    QRect rect = desktop()->screenGeometry(screenNum);
+    window->setGeometry(rect);
+    rect = desktop()->availableGeometry(screenNum);
+    window->setWorkArea(rect);
+  }
   window->updateFromSettings(settings_);
   window->show();
   return window;

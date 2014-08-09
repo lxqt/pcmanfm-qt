@@ -625,94 +625,94 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="142"/>
+        <location filename="../application.cpp" line="144"/>
         <source>Name of configuration profile</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="142"/>
+        <location filename="../application.cpp" line="144"/>
         <source>PROFILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="143"/>
+        <location filename="../application.cpp" line="145"/>
         <source>Run PCManFM as a daemon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="145"/>
+        <location filename="../application.cpp" line="147"/>
         <source>Quit PCManFM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="146"/>
+        <location filename="../application.cpp" line="148"/>
         <source>Launch desktop manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="147"/>
+        <location filename="../application.cpp" line="149"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="148"/>
+        <location filename="../application.cpp" line="150"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="148"/>
-        <location filename="../application.cpp" line="152"/>
+        <location filename="../application.cpp" line="150"/>
+        <location filename="../application.cpp" line="154"/>
         <source>NAME</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="149"/>
+        <location filename="../application.cpp" line="151"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="149"/>
+        <location filename="../application.cpp" line="151"/>
         <source>FILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="151"/>
+        <location filename="../application.cpp" line="153"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="151"/>
+        <location filename="../application.cpp" line="153"/>
         <source>MODE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="152"/>
+        <location filename="../application.cpp" line="154"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="153"/>
+        <location filename="../application.cpp" line="155"/>
         <source>Open new window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="154"/>
+        <location filename="../application.cpp" line="156"/>
         <source>Open Find Files utility</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="155"/>
+        <location filename="../application.cpp" line="157"/>
         <source>[FILE1, FILE2,...]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="433"/>
-        <location filename="../application.cpp" line="440"/>
+        <location filename="../application.cpp" line="445"/>
+        <location filename="../application.cpp" line="452"/>
         <source>Error</source>
         <translation type="unfinished">錯誤</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="440"/>
+        <location filename="../application.cpp" line="452"/>
         <source>Terminal emulator is not set.</source>
         <translation type="unfinished">終端機模擬器尚未設定</translation>
     </message>
@@ -766,12 +766,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="330"/>
+        <location filename="../desktopwindow.cpp" line="333"/>
         <source>Stic&amp;k to Current Position</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="352"/>
+        <location filename="../desktopwindow.cpp" line="355"/>
         <source>Desktop Preferences</source>
         <translation>桌面偏好設定</translation>
     </message>

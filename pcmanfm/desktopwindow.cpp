@@ -49,6 +49,7 @@
 #include <QX11Info> // requires Qt 4 or Qt 5.1
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
 #include <xcb/xcb.h>
+#include <X11/Xlib.h>
 #else
 #include <X11/Xlib.h>
 #include <X11/Xatom.h>
@@ -73,32 +74,40 @@ DesktopWindow::DesktopWindow(int screenNum):
   setAttribute(Qt::WA_DeleteOnClose);
 
   // paint background for the desktop widget
-  setAutoFillBackground(true);
-  setBackgroundRole(QPalette::Base);
+  //setAutoFillBackground(true);
+  //setBackgroundRole(QPalette::Base);
 
   // set our custom file launcher
   View::setFileLauncher(&fileLauncher_);
-  loadItemPositions();
-  Settings& settings = static_cast<Application* >(qApp)->settings();
-  
-  model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
-  folder_ = reinterpret_cast<FmFolder*>(g_object_ref(model_->folder()));
-
-  proxyModel_ = new Fm::ProxyFolderModel();
-  proxyModel_->setSourceModel(model_);
-  proxyModel_->setShowThumbnails(settings.showThumbnails());
-  proxyModel_->sort(Fm::FolderModel::ColumnFileMTime);
-  setModel(proxyModel_);
 
   listView_ = static_cast<Fm::FolderViewListView*>(childView());
   listView_->setMovement(QListView::Snap);
   listView_->setResizeMode(QListView::Adjust);
   listView_->setFlow(QListView::TopToBottom);
 
-  // make the background of the list view transparent (alpha: 0)
-  QPalette transparent = listView_->palette();
-  transparent.setColor(QPalette::Base, QColor(0,0,0,0));
-  listView_->setPalette(transparent);
+  // NOTE: When XRnadR is in use, the all screens are actually combined to form a
+  // large virtual desktop and only one DesktopWindow needs to be created and screenNum is -1.
+  // In some older multihead setups, such as xinerama, every physical screen
+  // is treated as a separate desktop so many instances of DesktopWindow may be created.
+  // In this case we only want to show desktop icons on the primary screen.
+  if(desktopWidget->isVirtualDesktop() || screenNum_ == desktopWidget->primaryScreen()) {
+    loadItemPositions();
+    Settings& settings = static_cast<Application* >(qApp)->settings();
+    
+    model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
+    folder_ = reinterpret_cast<FmFolder*>(g_object_ref(model_->folder()));
+
+    proxyModel_ = new Fm::ProxyFolderModel();
+    proxyModel_->setSourceModel(model_);
+    proxyModel_->setShowThumbnails(settings.showThumbnails());
+    proxyModel_->sort(Fm::FolderModel::ColumnFileMTime);
+    setModel(proxyModel_);
+
+    connect(proxyModel_, SIGNAL(rowsInserted(QModelIndex,int,int)), SLOT(onRowsInserted(QModelIndex,int,int)));
+    connect(proxyModel_, SIGNAL(rowsAboutToBeRemoved(QModelIndex,int,int)), SLOT(onRowsAboutToBeRemoved(QModelIndex,int,int)));
+    connect(proxyModel_, SIGNAL(layoutChanged()), SLOT(onLayoutChanged()));
+    connect(listView_, SIGNAL(indexesMoved(QModelIndexList)), SLOT(onIndexesMoved(QModelIndexList)));
+  }
 
   // set our own delegate
   delegate_ = new DesktopItemDelegate(listView_);
@@ -106,19 +115,13 @@ DesktopWindow::DesktopWindow(int screenNum):
 
   // remove frame
   listView_->setFrameShape(QFrame::NoFrame);
-
   // inhibit scrollbars FIXME: this should be optional in the future
   listView_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
   listView_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-  connect(proxyModel_, SIGNAL(rowsInserted(QModelIndex,int,int)), SLOT(onRowsInserted(QModelIndex,int,int)));
-  connect(proxyModel_, SIGNAL(rowsAboutToBeRemoved(QModelIndex,int,int)), SLOT(onRowsAboutToBeRemoved(QModelIndex,int,int)));
-  connect(proxyModel_, SIGNAL(layoutChanged()), SLOT(onLayoutChanged()));
-  connect(listView_, SIGNAL(indexesMoved(QModelIndexList)), SLOT(onIndexesMoved(QModelIndexList)));
-
   connect(this, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onOpenDirRequested(FmPath*, int)));
   
-  listView_->installEventFilter(this);
+  // listView_->installEventFilter(this);
   
   // setup shortcuts
   new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_X), this, SLOT(onCutActivated())); // cut
@@ -132,7 +135,7 @@ DesktopWindow::DesktopWindow(int screenNum):
 }
 
 DesktopWindow::~DesktopWindow() {
-  listView_->removeEventFilter(this);
+  // listView_->removeEventFilter(this);
 
   if(relayoutTimer_)
     delete relayoutTimer_;
@@ -468,9 +471,11 @@ bool DesktopWindow::x11Event(XEvent * event) {
 #endif
 
 void DesktopWindow::updateWorkArea() {
-  QRect rect = qApp->desktop()->availableGeometry(screenNum_);
-  qDebug() << "new workarea" << rect;
-  setWorkArea(rect);
+  if(screenNum_ != -1) {
+    QRect rect = qApp->desktop()->availableGeometry(screenNum_);
+    qDebug() << "new workarea" << rect;
+    setWorkArea(rect);
+  }
 }
 
 void DesktopWindow::onDesktopPreferences() {
@@ -489,14 +494,11 @@ void DesktopWindow::setWorkArea(const QRect& rect) {
   // using style sheet instead. So icons are all painted
   // inside the work area but the background image still
   // covers the whole screen.
-  layout()->setContentsMargins(left, top, right, bottom);
-  if(!customItemPos_.isEmpty())
-    queueRelayout();
+  queueRelayout();
 }
 
 void DesktopWindow::onRowsInserted(const QModelIndex& parent, int start, int end) {
-  if(!customItemPos_.isEmpty())
-    queueRelayout();
+  queueRelayout();
 }
 
 void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start, int end) {
@@ -513,24 +515,23 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
     }
     if(changed)
       saveItemPositions();
-    queueRelayout();
   }
+  queueRelayout();
 }
 
 void DesktopWindow::onLayoutChanged() {
-  if(!customItemPos_.isEmpty())
-    queueRelayout();
+  queueRelayout();
 }
 
 void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
   // remember the custom position for the items
   Q_FOREACH(const QModelIndex& index, indexes) {
-	// Under some circumstances, Qt might emit indexMoved for 
+    // Under some circumstances, Qt might emit indexMoved for 
     // every single cells in the same row. (when QAbstractItemView::SelectItems is set)
-	// So indexes list may contain several indixes for the same row.
-	// Since we only care about rows, not individual cells,
-	// let's handle column 0 of every row here.
-	if(index.column() == 0) {
+    // So indexes list may contain several indixes for the same row.
+    // Since we only care about rows, not individual cells,
+    // let's handle column 0 of every row here.
+    if(index.column() == 0) {
       FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
       QRect itemRect = listView_->rectForIndex(index);
       QByteArray name = fm_file_info_get_name(file);
@@ -547,46 +548,74 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
 void DesktopWindow::relayoutItems() {
   // qDebug("relayoutItems()");
   if(relayoutTimer_) {
-	// this slot might be called from the timer, so we cannot delete it directly here.
-	relayoutTimer_->deleteLater();
-	relayoutTimer_ = NULL;
+    // this slot might be called from the timer, so we cannot delete it directly here.
+    relayoutTimer_->deleteLater();
+    relayoutTimer_ = NULL;
   }
-  // FIXME: we use an internal class declared in a private header here, which is pretty bad.
-  QSize grid = listView_->gridSize();
-  QPoint pos = listView_->contentsRect().topLeft();
-
-  for(int row = 0, rowCount = proxyModel_->rowCount(); row < rowCount; ++row) {
-    QModelIndex index = proxyModel_->index(row, 0);
-    FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
-    QByteArray name = fm_file_info_get_name(file);
-    QHash<QByteArray, QPoint>::iterator it = customItemPos_.find(name);
-    if(it != customItemPos_.end()) { // the item has a custom position
-      QPoint customPos = *it;
-      listView_->setPositionForIndex(customPos, index);
-      // qDebug() << "set custom pos:" << name << row << index << customPos;
-      continue;
-    }
-    // check if the current pos is alredy occupied by a custom item
-    bool used = false;
-    for(it = customItemPos_.begin(); it != customItemPos_.end(); ++it) {
-      QPoint customPos = *it;
-      if(QRect(customPos, grid).contains(pos)) {
-        used = true;
+  
+  QDesktopWidget* desktop = qApp->desktop();
+  int screen = 0;
+  int row = 0;
+  int rowCount = proxyModel_->rowCount();
+  for(;;) {
+    if(desktop->isVirtualDesktop()) {
+      if(screen >= desktop->numScreens())
         break;
+    }else {
+      screen = screenNum_;
+    }
+    QRect workArea = desktop->availableGeometry(screen);
+    workArea.adjust(12, 12, -12, -12); // add a margin to the work area
+    qDebug() << "workArea" << workArea;
+    // FIXME: we use an internal class declared in a private header here, which is pretty bad.
+    QSize grid = listView_->gridSize();
+    QPoint pos = workArea.topLeft();
+    for(; row < rowCount; ++row) {
+      QModelIndex index = proxyModel_->index(row, 0);
+      FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
+      QByteArray name = fm_file_info_get_name(file);
+      QHash<QByteArray, QPoint>::iterator it = customItemPos_.find(name);
+      if(it != customItemPos_.end()) { // the item has a custom position
+        QPoint customPos = *it;
+        listView_->setPositionForIndex(customPos, index);
+        // qDebug() << "set custom pos:" << name << row << index << customPos;
+        continue;
+      }
+      // check if the current pos is alredy occupied by a custom item
+      bool used = false;
+      for(it = customItemPos_.begin(); it != customItemPos_.end(); ++it) {
+        QPoint customPos = *it;
+        if(QRect(customPos, grid).contains(pos)) {
+          used = true;
+          break;
+        }
+      }
+      if(used) { // go to next pos
+        --row;
+      }
+      else {
+        listView_->setPositionForIndex(pos, index);
+        // qDebug() << "set pos" << name << row << index << pos;
+      }
+      // move to next cell in the column
+      pos.setY(pos.y() + grid.height() + listView_->spacing());
+      if(pos.y() + grid.height() > workArea.bottom()) {
+        // if the next position may exceed the bottom of work area, go to the top of next column
+        pos.setX(pos.x() + grid.width() + listView_->spacing());
+        pos.setY(workArea.top());
+
+        // check if the new column exceeds the right margin of work area
+        if(pos.x() + grid.width() > workArea.right()) {
+          if(desktop->isVirtualDesktop()) {
+            // in virtual desktop mode, go to next screen
+            ++screen;
+            break;
+          }
+        }
       }
     }
-    if(used) { // go to next pos
-      --row;
-    }
-    else {
-      listView_->setPositionForIndex(pos, index);
-      // qDebug() << "set pos" << name << row << index << pos;
-    }
-    pos.setY(pos.y() + grid.height() + listView_->spacing());
-    if(pos.y() + grid.height() > listView_->contentsRect().bottom()) {
-      pos.setX(pos.x() + grid.width() + listView_->spacing());
-      pos.setY(rect().top());
-    }
+    if(row >= rowCount)
+      break;
   }
 }
 
