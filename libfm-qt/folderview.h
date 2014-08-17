@@ -30,6 +30,8 @@
 #include "foldermodel.h"
 #include "proxyfoldermodel.h"
 
+class QTimer;
+
 namespace Fm {
 
 class FileMenu;
@@ -107,6 +109,12 @@ public:
     return fileLauncher_;
   }
 
+  int autoSelectionDelay() const {
+    return autoSelectionDelay_;
+  }
+
+  void setAutoSelectionDelay(int delay);
+
 protected:
   void contextMenuEvent(QContextMenuEvent* event);
   void childMousePressEvent(QMouseEvent* event);
@@ -122,12 +130,17 @@ protected:
 
   virtual void prepareFileMenu(Fm::FileMenu* menu);
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
+  
+  virtual bool eventFilter(QObject* watched, QEvent* event);
 
 public Q_SLOTS:
   void onItemActivated(QModelIndex index);
   void onSelectionChanged(const QItemSelection & selected, const QItemSelection & deselected);
   virtual void onFileClicked(int type, FmFileInfo* fileInfo);
-  
+
+private Q_SLOTS:
+  void onAutoSelectionTimeout();
+
 Q_SIGNALS:
   void clicked(int type, FmFileInfo* file);
   void selChanged(int n_sel);
@@ -140,6 +153,9 @@ private:
   ViewMode mode;
   QSize iconSize_[NumViewModes];
   FileLauncher* fileLauncher_;
+  int autoSelectionDelay_;
+  QTimer* autoSelectionTimer_;
+  QModelIndex lastAutoSelectionIndex_;
 };
 
 }

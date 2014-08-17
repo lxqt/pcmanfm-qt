@@ -33,6 +33,7 @@
 #include <QDate>
 #include <QDebug>
 #include <QMimeData>
+#include <QHoverEvent>
 #include <QApplication>
 #include "folderview_p.h"
 
@@ -348,6 +349,8 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
   QWidget(parent),
   view(NULL),
   mode((ViewMode)0),
+  autoSelectionDelay_(600),
+  autoSelectionTimer_(NULL),
   fileLauncher_(NULL),
   model_(NULL) {
 
@@ -464,6 +467,8 @@ void FolderView::setViewMode(ViewMode _mode) {
     delegate->setGridSize(listView->gridSize());
   }
   if(view) {
+    // we have to install the event filter on the viewport instead of the view itself.
+    view->viewport()->installEventFilter(this);
     connect(view, SIGNAL(activatedFiltered(QModelIndex)), SLOT(onItemActivated(QModelIndex)));
     view->setContextMenuPolicy(Qt::NoContextMenu); // defer the context menu handling to parent widgets
     view->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
@@ -505,6 +510,18 @@ QSize FolderView::iconSize(ViewMode mode) const {
 
 FolderView::ViewMode FolderView::viewMode() const {
   return mode;
+}
+
+void FolderView::setAutoSelectionDelay(int delay) {
+  autoSelectionDelay_ = delay;
+  if(!view)
+    return;
+  if(mode == DetailedListMode) {
+    FolderViewTreeView* treeView = static_cast<FolderViewTreeView*>(view);
+  }
+  else {
+    FolderViewListView* listView = static_cast<FolderViewListView*>(view);
+  }
 }
 
 QAbstractItemView* FolderView::childView() const {
@@ -652,6 +669,112 @@ void FolderView::childDropEvent(QDropEvent* e) {
     Qt::DropAction action = DndActionMenu::askUser(QCursor::pos());
     e->setDropAction(action);
   }
+}
+
+bool FolderView::eventFilter(QObject* watched, QEvent* event) {
+  // NOTE: Instead of simply filtering the drag and drop events of the child view in
+  // the event filter, we overrided each event handler virtual methods in
+  // both QListView and QTreeView and added some childXXXEvent() callbacks.
+  // We did this because of a design flaw of Qt.
+  // All QAbstractScrollArea derived widgets, including QAbstractItemView
+  // contains an internal child widget, which is called a viewport.
+  // The events actually comes from the child viewport, not the parent view itself.
+  // Qt redirects the events of viewport to the viewportEvent() method of
+  // QAbstractScrollArea and let the parent widget handle the events.
+  // Qt implemented this using a event filter installed on the child viewport widget.
+  // That means, when we try to install an event filter on the viewport,
+  // there is already a filter installed by Qt which will be called before ours.
+  // So we can never intercept the event handling of QAbstractItemView by using a filter.
+  // That's why we override respective virtual methods for different events.
+  if(view && watched == view->viewport()) {
+    switch(event->type()) {
+    case QEvent::HoverMove:
+      // activate items on single click
+      if(style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick)) {
+        QHoverEvent* hoverEvent = static_cast<QHoverEvent*>(event);
+        QModelIndex index = view->indexAt(hoverEvent->pos()); // find out the hovered item
+        if(index.isValid()) { // change the cursor to a hand when hovering on an item
+          setCursor(Qt::PointingHandCursor);
+          if(!selectionModel()->hasSelection())
+            selectionModel()->setCurrentIndex(index, QItemSelectionModel::Current);
+        }
+        else
+          setCursor(Qt::ArrowCursor);
+        // turn on auto-selection for hovered item when single click mode is used.
+        if(autoSelectionDelay_ > 0 && model_) {
+          if(!autoSelectionTimer_) {
+            autoSelectionTimer_ = new QTimer(this);
+            connect(autoSelectionTimer_, SIGNAL(timeout()), SLOT(onAutoSelectionTimeout()));
+            lastAutoSelectionIndex_ = QModelIndex();
+          }
+          autoSelectionTimer_->start(autoSelectionDelay_);
+        }
+        break;
+      }
+    }
+  }
+  return QObject::eventFilter(watched, event);
+}
+
+// this slot handles auto-selection of items.
+void FolderView::onAutoSelectionTimeout() {
+  if(QApplication::mouseButtons() != Qt::NoButton)
+    return;
+
+  Qt::KeyboardModifiers mods = QApplication::keyboardModifiers();
+  QPoint pos = view->viewport()->mapFromGlobal(QCursor::pos()); // convert to viewport coordinates
+  QModelIndex index = view->indexAt(pos); // find out the hovered item
+  QItemSelectionModel::SelectionFlags flags = (mode == DetailedListMode ? QItemSelectionModel::Rows : QItemSelectionModel::NoUpdate);
+  QItemSelectionModel* selModel = view->selectionModel();
+
+  if(mods & Qt::ControlModifier) { // Ctrl key is pressed
+    if(selModel->isSelected(index) && index != lastAutoSelectionIndex_) {
+      // unselect a previously selected item
+      selModel->select(index, flags|QItemSelectionModel::Deselect);
+      lastAutoSelectionIndex_ = QModelIndex();
+    }
+    else {
+      // select an unselected item
+      selModel->select(index, flags|QItemSelectionModel::Select);
+      lastAutoSelectionIndex_ = index;
+    }
+    selModel->setCurrentIndex(index, QItemSelectionModel::NoUpdate); // move the cursor
+  }
+  else if(mods & Qt::ShiftModifier) { // Shift key is pressed
+    // select all items between current index and the hovered index.
+    QModelIndex current = selModel->currentIndex();
+    if(selModel->hasSelection() && current.isValid()) {
+      selModel->clear(); // clear old selection
+      selModel->setCurrentIndex(current, QItemSelectionModel::NoUpdate);
+      int begin = current.row();
+      int end = index.row();
+      if(begin > end)
+        qSwap(begin, end);
+      for(int row = begin; row <= end; ++row) {
+        QModelIndex sel = model_->index(row, 0);
+        selModel->select(sel, flags|QItemSelectionModel::Select);
+      }
+    }
+    else { // no items are selected, select the hovered item.
+      if(index.isValid()) {
+        selModel->select(index, flags|QItemSelectionModel::SelectCurrent);
+        selModel->setCurrentIndex(index, QItemSelectionModel::NoUpdate);
+      }
+    }
+    lastAutoSelectionIndex_ = index;
+  }
+  else if(mods == Qt::NoModifier) { // no modifier keys are pressed.
+    if(index.isValid()) {
+      // select the hovered item
+      view->clearSelection();
+      selModel->select(index, flags|QItemSelectionModel::SelectCurrent);
+      selModel->setCurrentIndex(index, QItemSelectionModel::NoUpdate);
+    }
+    lastAutoSelectionIndex_ = index;
+  }
+
+  autoSelectionTimer_->deleteLater();
+  autoSelectionTimer_ = NULL;
 }
 
 void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
