@@ -588,94 +588,94 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="144"/>
+        <location filename="../application.cpp" line="155"/>
         <source>Name of configuration profile</source>
         <translation>Nome do perfil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="144"/>
+        <location filename="../application.cpp" line="155"/>
         <source>PROFILE</source>
         <translation>Perfil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="145"/>
+        <location filename="../application.cpp" line="156"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Executar PCManFM como serviço</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="147"/>
+        <location filename="../application.cpp" line="158"/>
         <source>Quit PCManFM</source>
         <translation>Fechar PCManFM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="148"/>
+        <location filename="../application.cpp" line="159"/>
         <source>Launch desktop manager</source>
         <translation>Abrir gestor da área de trabalho</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="149"/>
+        <location filename="../application.cpp" line="160"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Fechar gestor da área de trabalho se estiver em execução</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="150"/>
+        <location filename="../application.cpp" line="161"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferências da área de trabalho na página especificada</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="150"/>
-        <location filename="../application.cpp" line="154"/>
+        <location filename="../application.cpp" line="161"/>
+        <location filename="../application.cpp" line="165"/>
         <source>NAME</source>
         <translation>Nome</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="151"/>
+        <location filename="../application.cpp" line="162"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Definir papel de parede com base num ficheiro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="151"/>
+        <location filename="../application.cpp" line="162"/>
         <source>FILE</source>
         <translation>Ficheiro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="153"/>
+        <location filename="../application.cpp" line="164"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Definir modo do papel de parede. Modo =(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="153"/>
+        <location filename="../application.cpp" line="164"/>
         <source>MODE</source>
         <translation>Modo</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="154"/>
+        <location filename="../application.cpp" line="165"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferências na página especificada</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="155"/>
+        <location filename="../application.cpp" line="166"/>
         <source>Open new window</source>
         <translation>Abrir nova janela</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="156"/>
+        <location filename="../application.cpp" line="167"/>
         <source>Open Find Files utility</source>
         <translation>Abrir utilitário de procura de ficheiros</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="157"/>
+        <location filename="../application.cpp" line="168"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[Ficheiro1, Ficheiro2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="445"/>
-        <location filename="../application.cpp" line="452"/>
+        <location filename="../application.cpp" line="470"/>
+        <location filename="../application.cpp" line="477"/>
         <source>Error</source>
         <translation type="unfinished">Erro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="452"/>
+        <location filename="../application.cpp" line="477"/>
         <source>Terminal emulator is not set.</source>
         <translation type="unfinished">O emulador de terminal não está definido.</translation>
     </message>
@@ -770,22 +770,22 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="172"/>
+        <location filename="../preferencesdialog.cpp" line="174"/>
         <source>Icon View</source>
         <translation>Vista de ícones</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="173"/>
+        <location filename="../preferencesdialog.cpp" line="175"/>
         <source>Compact Icon View</source>
         <translation>Vista compacta de ícones</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="174"/>
+        <location filename="../preferencesdialog.cpp" line="176"/>
         <source>Thumbnail View</source>
         <translation>Vista de miniaturas</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="175"/>
+        <location filename="../preferencesdialog.cpp" line="177"/>
         <source>Detailed List View</source>
         <translation>Lista detalhada</translation>
     </message>
@@ -793,17 +793,17 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="205"/>
+        <location filename="../tabpage.cpp" line="204"/>
         <source>Error</source>
         <translation type="unfinished">Erro</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="218"/>
+        <location filename="../tabpage.cpp" line="217"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Espaço livre: %1 (Total: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="233"/>
+        <location filename="../tabpage.cpp" line="232"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n item</numerusform>
@@ -811,7 +811,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="235"/>
+        <location filename="../tabpage.cpp" line="234"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform>(%n oculto)</numerusform>
@@ -819,7 +819,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="383"/>
+        <location filename="../tabpage.cpp" line="382"/>
         <source>%1 item(s) selected</source>
         <translation type="unfinished"></translation>
     </message>
@@ -827,17 +827,17 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::View</name>
     <message>
-        <location filename="../view.cpp" line="106"/>
+        <location filename="../view.cpp" line="102"/>
         <source>Open in New T&amp;ab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="110"/>
+        <location filename="../view.cpp" line="106"/>
         <source>Open in New Win&amp;dow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="117"/>
+        <location filename="../view.cpp" line="113"/>
         <source>Open in Termina&amp;l</source>
         <translation type="unfinished"></translation>
     </message>
@@ -845,157 +845,167 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PreferencesDialog</name>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="498"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="516"/>
         <source>Preferences</source>
         <translation>Preferências</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="503"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="521"/>
         <source>User Interface</source>
         <translation>Interface</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="505"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="523"/>
         <source>Behavior</source>
         <translation>Comportamento</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="507"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="525"/>
         <source>Thumbnail</source>
         <translation>Miniaturas</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="509"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="527"/>
         <source>Volume</source>
         <translation>Volume</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="511"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
         <source>Advanced</source>
         <translation>Avançado</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="514"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="532"/>
         <source>Icons</source>
         <translation>Ícones</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="515"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
         <source>Size of big icons:</source>
         <translation>Tamanho dos ícones grandes:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="516"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="534"/>
         <source>Size of small icons:</source>
         <translation>Tamanho dos ícones pequenos:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="517"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
         <source>Size of thumbnails:</source>
         <translation>Tamanho das miniaturas:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="518"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="536"/>
         <source>Size of side pane icons:</source>
         <translation>Tamanho dos ícones no painel lateral:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="519"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
         <source>Icon theme:</source>
         <translation>Tema de ícones:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="520"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="538"/>
         <source>Window</source>
         <translation>Janela</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="521"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
         <source>Default width of new windows:</source>
         <translation>Largura para as novas janelas:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="522"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
         <source>Default height of new windows:</source>
         <translation>Altura para as novas janeas:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="523"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
         <source>Always show the tab bar</source>
         <translation>Mostrar sempre barra de separadores</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="524"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="542"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Mostrar botão &quot;Fechar&quot; nos separadores</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="525"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
         <source>Browsing</source>
         <translation>Navegação</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="526"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="544"/>
         <source>Open files with single click</source>
         <translation>Abrir ficheiros com um clique</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="527"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="545"/>
+        <source>Delay of auto-selection in single click mode (0 to disable)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
         <source>Default view mode:</source>
         <translation>Modo de visualização:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="528"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
+        <source> sec</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
         <source>File Operations</source>
         <translation>Operações de ficheiros</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
         <source>Confirm before deleting files</source>
         <translation>Confirmar antes de eliminar</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="530"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="550"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation>Mover ficheiros para o lixo em vez de os eliminar do disco.</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="531"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
         <source>Show thumbnails of files</source>
         <translation>Mostrar miniaturas</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="532"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
         <source>Only show thumbnails for local files</source>
         <translation>Mostrar apenas para ficheiros locais</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="534"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
         <source> KB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
         <source>When removable medium unmounted:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
         <source>Close tab containing removable medium</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
         <source>Change folder in the tab to home folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
         <source>Terminal emulator:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1004,27 +1014,27 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         <translation type="obsolete">Não gerar miniaturas para os ficheiros que excedam (KB):</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
         <source>Auto Mount</source>
         <translation>Montar automaticamente</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="536"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Montar discos amovíveis ao iniciar a aplicação</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Montar discos amovíveis ao inserir</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="538"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Mostrar opções possíveis para os discos assim que forem inseridos</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="542"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
         <source>Programs</source>
         <translation>Programas</translation>
     </message>
@@ -1033,19 +1043,19 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         <translation type="obsolete">Comando do terminal para os diretórios:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="544"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
         <source>Switch user command:</source>
         <translation>Comando para trocar de utilizador:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="545"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Exemplo: &quot;xterm -e %s&quot; para terminal ou &quot;gksu %s&quot; para  trocar de utilizador.
 %s = a linha de comandos a executar no terminal ou com o comando su.</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
         <source>Archiver integration:</source>
         <translation>Integração de arquivadores:</translation>
     </message>
@@ -1054,7 +1064,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         <translation type="obsolete">Comando do terminal para os programas:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Utilizar prefixos decimais SI em vez dos prefixos binários IEC</translation>
     </message>

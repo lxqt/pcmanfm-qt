@@ -52,6 +52,7 @@ PreferencesDialog::PreferencesDialog (QString activePage, QWidget* parent):
       ui.listWidget->setCurrentRow(index);
     }
   }
+  adjustSize();
 }
 
 PreferencesDialog::~PreferencesDialog() {
@@ -168,6 +169,7 @@ void PreferencesDialog::initUiPage(Settings& settings) {
 
 void PreferencesDialog::initBehaviorPage(Settings& settings) {
   ui.singleClick->setChecked(settings.singleClick());
+  ui.autoSelectionDelay->setValue(double(settings.autoSelectionDelay()) / 1000);
 
   ui.viewMode->addItem(tr("Icon View"), (int)Fm::FolderView::IconMode);
   ui.viewMode->addItem(tr("Compact Icon View"), (int)Fm::FolderView::CompactMode);
@@ -256,6 +258,7 @@ void PreferencesDialog::applyUiPage(Settings& settings) {
 
 void PreferencesDialog::applyBehaviorPage(Settings& settings) {
   settings.setSingleClick(ui.singleClick->isChecked());
+  settings.setAutoSelectionDelay(int(ui.autoSelectionDelay->value() * 1000));
   // FIXME: bug here?
   Fm::FolderView::ViewMode mode = Fm::FolderView::ViewMode(ui.viewMode->itemData(ui.viewMode->currentIndex()).toInt());
   settings.setViewMode(mode);

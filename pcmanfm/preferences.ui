@@ -219,25 +219,48 @@
             <string>Browsing</string>
            </property>
            <layout class="QFormLayout" name="formLayout_5">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
             <item row="0" column="0" colspan="2">
              <widget class="QCheckBox" name="singleClick">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
               <property name="text">
                <string>Open files with single click</string>
               </property>
              </widget>
             </item>
             <item row="1" column="0">
+             <widget class="QLabel" name="label">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Delay of auto-selection in single click mode (0 to disable)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
              <widget class="QLabel" name="label_11">
               <property name="text">
                <string>Default view mode:</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="1">
+            <item row="2" column="1">
              <widget class="QComboBox" name="viewMode"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="autoSelectionDelay">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="suffix">
+               <string> sec</string>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -561,12 +584,44 @@
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>124</x>
-     <y>150</y>
+     <x>84</x>
+     <y>160</y>
     </hint>
     <hint type="destinationlabel">
      <x>359</x>
      <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>singleClick</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>label</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>singleClick</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>autoSelectionDelay</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>582</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>586</x>
+     <y>93</y>
     </hint>
    </hints>
   </connection>

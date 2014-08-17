@@ -469,6 +469,8 @@ void FolderView::setViewMode(ViewMode _mode) {
   if(view) {
     // we have to install the event filter on the viewport instead of the view itself.
     view->viewport()->installEventFilter(this);
+    // we want the QEvent::HoverMove event for single click + auto-selection support
+    view->viewport()->setAttribute(Qt::WA_Hover, true);
     connect(view, SIGNAL(activatedFiltered(QModelIndex)), SLOT(onItemActivated(QModelIndex)));
     view->setContextMenuPolicy(Qt::NoContextMenu); // defer the context menu handling to parent widgets
     view->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
@@ -514,14 +516,6 @@ FolderView::ViewMode FolderView::viewMode() const {
 
 void FolderView::setAutoSelectionDelay(int delay) {
   autoSelectionDelay_ = delay;
-  if(!view)
-    return;
-  if(mode == DetailedListMode) {
-    FolderViewTreeView* treeView = static_cast<FolderViewTreeView*>(view);
-  }
-  else {
-    FolderViewListView* listView = static_cast<FolderViewListView*>(view);
-  }
 }
 
 QAbstractItemView* FolderView::childView() const {
@@ -543,6 +537,17 @@ void FolderView::setModel(ProxyFolderModel* model) {
   if(model_)
     delete model_;
   model_ = model;
+}
+
+bool FolderView::event(QEvent* event) {
+  switch(event->type()) {
+    case QEvent::StyleChange:
+      break;
+    case QEvent::FontChange:
+      // FIXME: we need to optimize spacing of items for different fonts
+      break;
+  };
+  return QWidget::event(event);
 }
 
 void FolderView::contextMenuEvent(QContextMenuEvent* event) {
@@ -711,6 +716,10 @@ bool FolderView::eventFilter(QObject* watched, QEvent* event) {
         }
         break;
       }
+    case QEvent::HoverLeave:
+      if(style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick))
+        setCursor(Qt::ArrowCursor);
+      break;
     }
   }
   return QObject::eventFilter(watched, event);

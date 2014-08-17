@@ -79,6 +79,7 @@ Settings::Settings():
   sortColumn_(Fm::FolderModel::ColumnFileName),
   // settings for use with libfm
   singleClick_(false),
+  autoSelectionDelay_(600),
   useTrash_(true),
   confirmDelete_(true),
   showThumbnails_(true),
@@ -149,6 +150,7 @@ bool Settings::loadFile(QString filePath) {
   // settings for use with libfm
   useTrash_ = settings.value("UseTrash", true).toBool();
   singleClick_ = settings.value("SingleClick", false).toBool();
+  autoSelectionDelay_ = settings.value("AutoSelectionDelay", 600).toInt();
   confirmDelete_ = settings.value("ConfirmDelete", true).toBool();
   // bool thumbnailLocal_;
   // bool thumbnailMax;
@@ -224,6 +226,7 @@ bool Settings::saveFile(QString filePath) {
   // settings for use with libfm
   settings.setValue("UseTrash", useTrash_);
   settings.setValue("SingleClick", singleClick_);
+  settings.setValue("AutoSelectionDelay", autoSelectionDelay_);
   settings.setValue("ConfirmDelete", confirmDelete_);
   // bool thumbnailLocal_;
   // bool thumbnailMax;

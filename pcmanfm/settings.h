@@ -294,6 +294,14 @@ public:
     singleClick_ = singleClick;
   }
 
+  int autoSelectionDelay() const {
+    return autoSelectionDelay_;
+  }
+  
+  void setAutoSelectionDelay(int value) {
+    autoSelectionDelay_ = value;
+  }
+  
   bool useTrash() const {
     return useTrash_;
   }
@@ -420,6 +428,7 @@ private:
 
   // settings for use with libfm
   bool singleClick_;
+  int autoSelectionDelay_;
   bool useTrash_;
   bool confirmDelete_;
 

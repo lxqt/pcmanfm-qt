@@ -46,6 +46,13 @@ using namespace PCManFM;
 static const char* serviceName = "org.pcmanfm.PCManFM";
 static const char* ifaceName = "org.pcmanfm.Application";
 
+int ProxyStyle::styleHint(StyleHint hint, const QStyleOption* option, const QWidget* widget, QStyleHintReturn* returnData) const {
+  Application* app = static_cast<Application*>(qApp);
+  if(hint == QStyle::SH_ItemView_ActivateItemOnSingleClick)
+    return app->settings().singleClick();
+  return QProxyStyle::styleHint(hint, option, widget, returnData);
+}
+
 Application::Application(int& argc, char** argv):
   QApplication(argc, argv),
   libFm_(),
@@ -66,6 +73,8 @@ Application::Application(int& argc, char** argv):
   if(dbus.registerService(serviceName)) {
     // we successfully registered the service
     isPrimaryInstance = true;
+    setStyle(new ProxyStyle());
+    desktop()->installEventFilter(this);
 
     new ApplicationAdaptor(this);
     dbus.registerObject("/Application", this);
@@ -89,6 +98,8 @@ Application::Application(int& argc, char** argv):
 }
 
 Application::~Application() {
+  desktop()->removeEventFilter(this);
+
   if(volumeMonitor_) {
     g_signal_handlers_disconnect_by_func(volumeMonitor_, gpointer(onVolumeAdded), this);
     g_object_unref(volumeMonitor_);
@@ -329,6 +340,20 @@ int Application::exec() {
 void Application::onAboutToQuit() {
   qDebug("aboutToQuit");
   settings_.save();
+}
+
+bool Application::eventFilter(QObject* watched, QEvent* event) {
+  if(watched == desktop()) {
+    qDebug() << "filter" << event;
+    switch(event->type()) {
+      case QEvent::StyleChange:
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+      case QEvent::ThemeChange:
+#endif
+        setStyle(new ProxyStyle());
+    };
+  }
+  return QObject::eventFilter(watched, event);
 }
 
 void Application::commitData(QSessionManager& manager) {

@@ -35,11 +35,7 @@ View::View(Fm::FolderView::ViewMode _mode, QWidget* parent):
   Fm::FolderView(_mode, parent) {
 
   Settings& settings = static_cast<Application*>(qApp)->settings();
-
-  setIconSize(Fm::FolderView::IconMode, QSize(settings.bigIconSize(), settings.bigIconSize()));
-  setIconSize(Fm::FolderView::CompactMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
-  setIconSize(Fm::FolderView::ThumbnailMode, QSize(settings.thumbnailIconSize(), settings.thumbnailIconSize()));
-  setIconSize(Fm::FolderView::DetailedListMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
+  updateFromSettings(settings);
 }
 
 View::~View() {
@@ -130,6 +126,8 @@ void View::updateFromSettings(Settings& settings) {
   setIconSize(Fm::FolderView::CompactMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
   setIconSize(Fm::FolderView::ThumbnailMode, QSize(settings.thumbnailIconSize(), settings.thumbnailIconSize()));
   setIconSize(Fm::FolderView::DetailedListMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
+
+  setAutoSelectionDelay(settings.autoSelectionDelay());
 
   Fm::ProxyFolderModel* proxyModel = model();
   if(proxyModel) {

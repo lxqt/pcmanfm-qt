@@ -60,7 +60,6 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
 
   // FIXME: this is very dirty
   folderView_->setModel(proxyModel_);
-
   verticalLayout->addWidget(folderView_);
 
   chdir(path, true);

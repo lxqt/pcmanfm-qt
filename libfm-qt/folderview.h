@@ -37,6 +37,7 @@ namespace Fm {
 class FileMenu;
 class FolderMenu;
 class FileLauncher;
+class FolderViewStyle;
 
 class LIBFM_QT_API FolderView : public QWidget {
   Q_OBJECT
@@ -116,6 +117,7 @@ public:
   void setAutoSelectionDelay(int delay);
 
 protected:
+  virtual bool event(QEvent* event);
   void contextMenuEvent(QContextMenuEvent* event);
   void childMousePressEvent(QMouseEvent* event);
   void childDragEnterEvent(QDragEnterEvent* event);
