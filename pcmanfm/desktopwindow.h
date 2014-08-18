@@ -66,11 +66,11 @@ public:
   void updateWallpaper();
   void updateFromSettings(Settings& settings);
 
-  void setWorkArea(const QRect& rect);
-
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) // Qt 5
   void xcbEvent(xcb_generic_event_t* generic_event);
 #endif
+
+  void queueRelayout();
 
 protected:
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
@@ -90,8 +90,6 @@ protected:
   virtual bool x11Event(XEvent * event);
 #endif
 
-  void queueRelayout();
-
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
   void onDesktopPreferences();
@@ -104,7 +102,7 @@ protected Q_SLOTS:
   void relayoutItems();
   void onStickToCurrentPos(bool toggled);
 
-  void updateWorkArea();
+  // void updateWorkArea();
   
   // file operations
   void onCutActivated();

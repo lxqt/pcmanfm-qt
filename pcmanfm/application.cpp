@@ -40,6 +40,10 @@
 #include "autorundialog.h"
 #include "launcher.h"
 
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+#include <QScreen>
+#endif
+
 #include <X11/Xlib.h>
 
 using namespace PCManFM;
@@ -381,9 +385,15 @@ void Application::desktopManager(bool enabled) {
     if(!enableDesktopManager_) {
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
       installNativeEventFilter(this);
+      Q_FOREACH(QScreen* screen, screens()) {
+        connect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
+        connect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+      }
+      connect(this, &QApplication::screenAdded, this, &Application::onScreenAdded);
+#else
+      connect(desktopWidget, SIGNAL(workAreaResized(int)), SLOT(onWorkAreaResized(int)));
 #endif
       connect(desktopWidget, SIGNAL(resized(int)), SLOT(onScreenResized(int)));
-      connect(desktopWidget, SIGNAL(workAreaResized(int)), SLOT(onWorkAreaResized(int)));
       connect(desktopWidget, SIGNAL(screenCountChanged(int)), SLOT(onScreenCountChanged(int)));
 
       // NOTE: there are two modes
@@ -406,7 +416,6 @@ void Application::desktopManager(bool enabled) {
   else {
     if(enableDesktopManager_) {
       disconnect(desktopWidget, SIGNAL(resized(int)), this, SLOT(onScreenResized(int)));
-      disconnect(desktopWidget, SIGNAL(workAreaResized(int)), this, SLOT(onWorkAreaResized(int)));
       disconnect(desktopWidget, SIGNAL(screenCountChanged(int)), this, SLOT(onScreenCountChanged(int)));
       int n = desktopWindows_.size();
       for(int i = 0; i < n; ++i) {
@@ -415,7 +424,14 @@ void Application::desktopManager(bool enabled) {
       }
       desktopWindows_.clear();
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+      Q_FOREACH(QScreen* screen, screens()) {
+        disconnect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
+        disconnect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+      }
+      disconnect(this, &QApplication::screenAdded, this, &Application::onScreenAdded);
       removeNativeEventFilter(this);
+#else
+      disconnect(desktopWidget, SIGNAL(workAreaResized(int)), this, SLOT(onWorkAreaResized(int)));
 #endif
     }
   }
@@ -534,11 +550,14 @@ void Application::onScreenResized(int num) {
   window->setGeometry(rect);
 }
 
+// This slot is for Qt4 only
 void Application::onWorkAreaResized(int num) {
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
   DesktopWindow* window = desktopWindows_.at(num);
   QRect rect = desktop()->availableGeometry(num);
   qDebug() << "workAreaResized" << num << rect;
-  window->setWorkArea(rect);
+  window->queueRelayout();
+#endif
 }
 
 DesktopWindow* Application::createDesktopWindow(int screenNum) {
@@ -550,8 +569,6 @@ DesktopWindow* Application::createDesktopWindow(int screenNum) {
   else {
     QRect rect = desktop()->screenGeometry(screenNum);
     window->setGeometry(rect);
-    rect = desktop()->availableGeometry(screenNum);
-    window->setWorkArea(rect);
   }
   window->updateFromSettings(settings_);
   window->show();
@@ -677,3 +694,43 @@ bool Application::nativeEventFilter(const QByteArray & eventType, void * message
 }
 
 #endif
+
+// this slot is Qt5 only
+void Application::onScreenAdded(QScreen* newScreen) {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+  if(enableDesktopManager_) {
+    connect(newScreen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
+    connect(newScreen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+  }
+#endif
+}
+
+// this slot is Qt5 only
+void Application::onScreenDestroyed(QObject* screenObj) {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+  if(enableDesktopManager_) {
+    
+  }
+#endif
+}
+
+// this slot is Qt5 only
+void Application::onVirtualGeometryChanged(const QRect& rect) {
+  // NOTE: the following is a workaround for Qt bug 32567.
+  // https://bugreports.qt-project.org/browse/QTBUG-32567
+  // Though the status of the bug report is closed, it's not yet fixed for X11.
+  // In theory, QDesktopWidget should emit "workAreaResized()" signal when the work area
+  // of any screen is changed, but in fact it does not do it.
+  // However, QScreen provided since Qt5 does not have the bug and
+  // virtualGeometryChanged() is emitted correctly when the workAreas changed.
+  // So we use it in Qt5.
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+  if(enableDesktopManager_) {
+    QScreen* screeb = static_cast<QScreen*>(sender());
+    // qDebug() << "onVirtualGeometryChanged";
+    Q_FOREACH(DesktopWindow* desktop, desktopWindows_) {
+      desktop->queueRelayout();
+    }
+  }
+#endif
+}

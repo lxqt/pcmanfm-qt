@@ -356,30 +356,7 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
 
 void DesktopWindow::xcbEvent(xcb_generic_event_t* generic_event) {
   int event_type = generic_event->response_type & ~0x80;
-  if(event_type == XCB_PROPERTY_NOTIFY) {
-    xcb_property_notify_event_t* event = reinterpret_cast<xcb_property_notify_event_t*>(generic_event);
-    if(event->window == QX11Info::appRootWindow(screenNum_)) {
-      // NOTE: the following is a workaround for Qt bug 32567.
-      // https://bugreports.qt-project.org/browse/QTBUG-32567
-      // Though the status of the bug report is closed, it's not yet fixed for X11.
-      // In theory, QDesktopWidget should emit "workAreaResized()" signal when the work area
-      // of any screen is changed, but in fact it does not do it.
-      // Therefore we need to monitor the X11 event ourselves and do the update manually.
-      static xcb_atom_t workarea_atom = 0;
-      if(workarea_atom == 0) {
-        const char* atom_name = "_NET_WORKAREA";
-        xcb_connection_t* con = QX11Info::connection();
-        workarea_atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(atom_name), atom_name), NULL)->atom;
-      }
-      if(event->atom == workarea_atom) { // work area is changed, upadte
-        // When our event filter function is called, Qt has not handled the event yet.
-        // So Qt still has the old work area size at the moment.
-        // Schedule a timer to update the work area from Qt later.
-        QTimer::singleShot(100, this, SLOT(updateWorkArea()));
-      }
-    }
-  }
-  else if(showWmMenu_) {
+  if(showWmMenu_) {
     // If we want to show the desktop menus provided by the window manager instead of ours,
     // we have to forward the mouse events we received to the root window.
     switch(event_type) {
@@ -466,31 +443,8 @@ bool DesktopWindow::x11Event(XEvent * event) {
 
 #endif
 
-void DesktopWindow::updateWorkArea() {
-  if(screenNum_ != -1) {
-    QRect rect = qApp->desktop()->availableGeometry(screenNum_);
-    qDebug() << "new workarea" << rect;
-    setWorkArea(rect);
-  }
-}
-
 void DesktopWindow::onDesktopPreferences() {
   static_cast<Application* >(qApp)->desktopPrefrences(QString());
-}
-
-void DesktopWindow::setWorkArea(const QRect& rect) {
-  const QRect& windowRect = geometry();
-  int left = rect.left() - windowRect.left();
-  int top = rect.top() - windowRect.top();
-  int right = windowRect.right() - rect.right();
-  int bottom = windowRect.bottom() - rect.bottom();
-  // We always set the size of the desktop window
-  // to the size of the whole screen regardless of work area.
-  // For work area, we reserve the margins on the list view
-  // using style sheet instead. So icons are all painted
-  // inside the work area but the background image still
-  // covers the whole screen.
-  queueRelayout();
 }
 
 void DesktopWindow::onRowsInserted(const QModelIndex& parent, int start, int end) {

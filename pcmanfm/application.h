@@ -40,6 +40,8 @@ struct QAbstractNativeEventFilter {
 };
 #endif
 
+class QScreen;
+
 namespace PCManFM {
 
 class DesktopWindow;
@@ -106,10 +108,15 @@ protected Q_SLOTS:
   void onLastWindowClosed();
   void onSaveStateRequest(QSessionManager & manager);
   void onScreenResized(int num);
-  void onWorkAreaResized(int num);
+  void onWorkAreaResized(int num); // // This slot is for Qt4 only
   void onScreenCountChanged(int newCount);
   void initVolumeManager();
- 
+
+  // these slots are for Qt5 only
+  void onVirtualGeometryChanged(const QRect& rect);
+  void onScreenDestroyed(QObject* screenObj);
+  void onScreenAdded(QScreen* newScreen);
+
 protected:
   virtual bool eventFilter(QObject* watched, QEvent* event);
   virtual void commitData(QSessionManager & manager);
