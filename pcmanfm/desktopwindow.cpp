@@ -309,6 +309,7 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
   setWallpaperFile(settings.wallpaper());
   setWallpaperMode(settings.wallpaperMode());
   setFont(settings.desktopFont());
+  setIconSize(Fm::FolderView::IconMode, QSize(settings.bigIconSize(), settings.bigIconSize()));
   setForeground(settings.desktopFgColor());
   setBackground(settings.desktopBgColor());
   setShadow(settings.desktopShadowColor());

@@ -709,7 +709,7 @@ void Application::onScreenAdded(QScreen* newScreen) {
 void Application::onScreenDestroyed(QObject* screenObj) {
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   if(enableDesktopManager_) {
-    
+    // FIXME: add workarounds for Qt5 bug #40681 and #40791 here.
   }
 #endif
 }

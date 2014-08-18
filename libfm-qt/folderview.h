@@ -135,6 +135,8 @@ protected:
   
   virtual bool eventFilter(QObject* watched, QEvent* event);
 
+  void updateGridSize(); // called when view mode, icon size, or font size is changed
+
 public Q_SLOTS:
   void onItemActivated(QModelIndex index);
   void onSelectionChanged(const QItemSelection & selected, const QItemSelection & deselected);

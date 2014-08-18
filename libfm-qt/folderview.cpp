@@ -442,29 +442,25 @@ void FolderView::setViewMode(ViewMode _mode) {
     switch(mode) {
       case IconMode: {
         listView->setViewMode(QListView::IconMode);
-        // listView->setGridSize(QSize(iconSize.width() * 1.6, iconSize.height() * 2));
-        listView->setGridSize(QSize(90, 110));
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
         break;
       }
       case CompactMode: {
         listView->setViewMode(QListView::ListMode);
-        listView->setGridSize(QSize());
         listView->setWordWrap(false);
         listView->setFlow(QListView::QListView::TopToBottom);
         break;
       }
       case ThumbnailMode: {
         listView->setViewMode(QListView::IconMode);
-        listView->setGridSize(QSize(160, 160));
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
         break;
       }
       default:;
     }
-    delegate->setGridSize(listView->gridSize());
+    updateGridSize();
   }
   if(view) {
     // we have to install the event filter on the viewport instead of the view itself.
@@ -495,6 +491,42 @@ void FolderView::setViewMode(ViewMode _mode) {
   }
 }
 
+// set proper grid size for the QListView based on current view mode, icon size, and font size.
+void FolderView::updateGridSize() {
+  if(mode == DetailedListMode || !view)
+    return;
+  FolderViewListView* listView = static_cast<FolderViewListView*>(view);
+  QSize icon = iconSize(mode); // size of the icon
+  QFontMetrics fm = fontMetrics(); // size of current font
+  QSize grid; // the final grid size
+  switch(mode) {
+    case IconMode:
+    case ThumbnailMode: {
+      // NOTE by PCMan about finding the optimal text label size:
+      // The average filename length on my root filesystem is roughly 18-20 chars.
+      // So, a reasonable size for the text label is about 10 chars each line since string of this length
+      // can be shown in two lines. If you consider word wrap, then the result is around 10 chars per word.
+      // In average, 10 char per line should be enough to display a "word" in the filename without breaking.
+      // The values can be estimated with this command:
+      // > find / | xargs  basename -a | sed -e s'/[_-]/ /g' | wc -mcw
+      // However, this average only applies to English. For some Asian characters, such as Chinese chars,
+      // each char actually takes doubled space. To be safe, we use 13 chars per line x average char width
+      // to get a nearly optimal width for the text label. As most of the filenames have less than 40 chars
+      // 13 chars x 3 lines should be enough to show the full filenames for most files.
+      int textWidth = fm.averageCharWidth() * 13 + 8; // add 4 px padding for left and right border
+      int textHeight = fm.height() * 3 + 8; // add 4 px padding for top and bottom border
+      grid.setWidth(qMax(icon.width(), textWidth) + 8); // add a margin 4 px for every cell
+      grid.setHeight(icon.height() + 4 + textHeight + 8); // add a margin 4 px for every cell and 4px between the icon & text
+      break;
+    }
+    default:
+      ; // do not use grid size
+  }
+  listView->setGridSize(grid);
+  FolderItemDelegate* delegate = static_cast<FolderItemDelegate*>(listView->itemDelegateForColumn(FolderModel::ColumnFileName));
+  delegate->setGridSize(grid);
+}
+
 void FolderView::setIconSize(ViewMode mode, QSize size) {
   Q_ASSERT(mode >= FirstViewMode && mode <= LastViewMode);
   iconSize_[mode - FirstViewMode] = size;
@@ -502,6 +534,7 @@ void FolderView::setIconSize(ViewMode mode, QSize size) {
     view->setIconSize(size);
     if(model_)
       model_->setThumbnailSize(size.width());
+    updateGridSize();
   }
 }
 
@@ -544,7 +577,7 @@ bool FolderView::event(QEvent* event) {
     case QEvent::StyleChange:
       break;
     case QEvent::FontChange:
-      // FIXME: we need to optimize spacing of items for different fonts
+      updateGridSize();
       break;
   };
   return QWidget::event(event);
