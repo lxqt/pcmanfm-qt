@@ -351,6 +351,7 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
   mode((ViewMode)0),
   autoSelectionDelay_(600),
   autoSelectionTimer_(NULL),
+  selChangedTimer_(NULL),
   fileLauncher_(NULL),
   model_(NULL) {
 
@@ -385,15 +386,31 @@ void FolderView::onItemActivated(QModelIndex index) {
   }
 }
 
-void FolderView::onSelectionChanged(const QItemSelection& selected, const QItemSelection& deselected) {
-  QItemSelectionModel* selModel = static_cast<QItemSelectionModel*>(sender());
+void FolderView::onSelChangedTimeout() {
+  selChangedTimer_->deleteLater();
+  selChangedTimer_ = NULL;
+
+  QItemSelectionModel* selModel = selectionModel();
   int nSel = 0;
   if(viewMode() == DetailedListMode)
     nSel = selModel->selectedRows().count();
-  else
+  else {
     nSel = selModel->selectedIndexes().count();
+  }
   // qDebug()<<"selected:" << nSel;
   Q_EMIT selChanged(nSel); // FIXME: this is inefficient
+}
+
+void FolderView::onSelectionChanged(const QItemSelection& selected, const QItemSelection& deselected) {
+  // It's possible that the selected items change too often and this slot gets called for thousands of times.
+  // For example, when you select thousands of files and delete them, we will get one selectionChanged() event
+  // for every deleted file. So, we use a timer to delay the handling to avoid too frequent updates of the UI.
+  if(!selChangedTimer_) {
+    selChangedTimer_ = new QTimer(this);
+    selChangedTimer_->setSingleShot(true);
+    connect(selChangedTimer_, SIGNAL(timeout()), SLOT(onSelChangedTimeout()));
+    selChangedTimer_->start(200);
+  }
 }
 
 
@@ -620,7 +637,7 @@ void FolderView::emitClickedAt(ClickType type, const QPoint& pos) {
 QModelIndexList FolderView::selectedRows(int column) const {
   QItemSelectionModel* selModel = selectionModel();
   if(selModel) {
-    return selModel->selectedRows();
+    return selModel->selectedRows(column);
   }
   return QModelIndexList();
 }
@@ -670,13 +687,38 @@ FmFileInfoList* FolderView::selectedFiles() const {
   return NULL;
 }
 
+void FolderView::selectAll() {
+  if(mode == DetailedListMode)
+    view->selectAll();
+  else {
+    // NOTE: By default QListView::selectAll() selects all columns in the model.
+    // However, QListView only show the first column. Normal selection by mouse
+    // can only select the first column of every row. I consider this discripancy yet
+    // another design flaw of Qt. To make them consistent, we do it ourselves by only
+    // selecting the first column of every row and do not select all columns as Qt does.
+    // This will trigger one selectionChanged event per row, which is very inefficient,
+    // but we have no other choices to workaround the Qt bug.
+    // I'll report a Qt bug for this later.
+    if(model_) {
+      int rowCount = model_->rowCount();
+      for(int row = 0; row < rowCount; ++row) {
+        QModelIndex index = model_->index(row, 0);
+        selectionModel()->select(index, QItemSelectionModel::Select);
+      }
+    }
+  }
+}
+
 void FolderView::invertSelection() {
   if(model_) {
     QItemSelectionModel* selModel = view->selectionModel();
     int rows = model_->rowCount();
+    QItemSelectionModel::SelectionFlags flags = QItemSelectionModel::Toggle;
+    if(mode == DetailedListMode)
+      flags |= QItemSelectionModel::Rows;
     for(int row = 0; row < rows; ++row) {
       QModelIndex index = model_->index(row, 0);
-      selModel->select(index, QItemSelectionModel::Toggle|QItemSelectionModel::Rows);
+      selModel->select(index, flags);
     }
   }
 }

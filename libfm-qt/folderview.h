@@ -96,9 +96,7 @@ public:
   FmFileInfoList* selectedFiles() const;
   FmPathList* selectedFilePaths() const;
 
-  void selectAll() {
-    view->selectAll();
-  }
+  void selectAll();
 
   void invertSelection();
 
@@ -144,6 +142,7 @@ public Q_SLOTS:
 
 private Q_SLOTS:
   void onAutoSelectionTimeout();
+  void onSelChangedTimeout();
 
 Q_SIGNALS:
   void clicked(int type, FmFileInfo* file);
@@ -160,6 +159,7 @@ private:
   int autoSelectionDelay_;
   QTimer* autoSelectionTimer_;
   QModelIndex lastAutoSelectionIndex_;
+  QTimer* selChangedTimer_;
 };
 
 }
