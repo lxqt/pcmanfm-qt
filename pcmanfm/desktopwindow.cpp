@@ -34,6 +34,8 @@
 #include <QStringBuilder>
 #include <QDir>
 #include <QShortcut>
+#include <QDropEvent>
+#include <QMimeData>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -724,4 +726,29 @@ bool DesktopWindow::eventFilter(QObject * watched, QEvent * event) {
     }
   }
   return false;
+}
+
+void DesktopWindow::childDropEvent(QDropEvent* e) {
+  bool moveItem = false;
+  if(e->source() == listView_ && e->keyboardModifiers() == Qt::NoModifier) {
+    // drag source is our list view, and no other modifier keys are pressed
+    // => we're dragging desktop items
+    const QMimeData *mimeData = e->mimeData();
+    if(mimeData->hasFormat("application/x-qabstractitemmodeldatalist")) {
+      QModelIndex dropIndex = listView_->indexAt(e->pos());
+      if(dropIndex.isValid()) { // drop on an item
+        QModelIndexList selected = selectedIndexes(); // the dragged items
+        if(selected.contains(dropIndex)) { // drop on self, ignore
+          moveItem = true;
+        }
+      }
+      else { // drop on a blank area
+        moveItem = true;
+      }
+    }
+  }
+  if(moveItem)
+    e->accept();
+  else
+    Fm::FolderView::childDropEvent(e);
 }

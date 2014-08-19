@@ -116,12 +116,12 @@ public:
 
 protected:
   virtual bool event(QEvent* event);
-  void contextMenuEvent(QContextMenuEvent* event);
-  void childMousePressEvent(QMouseEvent* event);
-  void childDragEnterEvent(QDragEnterEvent* event);
-  void childDragMoveEvent(QDragMoveEvent* e);
-  void childDragLeaveEvent(QDragLeaveEvent* e);
-  void childDropEvent(QDropEvent* e);
+  virtual void contextMenuEvent(QContextMenuEvent* event);
+  virtual void childMousePressEvent(QMouseEvent* event);
+  virtual void childDragEnterEvent(QDragEnterEvent* event);
+  virtual void childDragMoveEvent(QDragMoveEvent* e);
+  virtual void childDragLeaveEvent(QDragLeaveEvent* e);
+  virtual void childDropEvent(QDropEvent* e);
 
   void emitClickedAt(ClickType type, const QPoint& pos);
 

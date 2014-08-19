@@ -90,6 +90,8 @@ protected:
   virtual bool x11Event(XEvent * event);
 #endif
 
+  virtual void childDropEvent(QDropEvent* e);
+
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
   void onDesktopPreferences();
