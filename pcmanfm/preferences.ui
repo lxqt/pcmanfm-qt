@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>689</width>
-    <height>466</height>
+    <width>741</width>
+    <height>446</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -151,34 +151,6 @@
             <property name="fieldGrowthPolicy">
              <enum>QFormLayout::ExpandingFieldsGrow</enum>
             </property>
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_12">
-              <property name="text">
-               <string>Default width of new windows:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QSpinBox" name="windowWidth">
-              <property name="maximum">
-               <number>32768</number>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="QSpinBox" name="windowHeight">
-              <property name="maximum">
-               <number>32768</number>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0">
-             <widget class="QLabel" name="label_13">
-              <property name="text">
-               <string>Default height of new windows:</string>
-              </property>
-             </widget>
-            </item>
             <item row="0" column="0" colspan="2">
              <widget class="QCheckBox" name="alwaysShowTabs">
               <property name="text">
@@ -190,6 +162,44 @@
              <widget class="QCheckBox" name="showTabClose">
               <property name="text">
                <string>Show 'Close' buttons on tabs	</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QCheckBox" name="dontRememberWindowSize">
+              <property name="text">
+               <string>Do not remember window size</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>Default width of new windows:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>Default height of new windows:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QSpinBox" name="fixedWindowHeight">
+              <property name="maximum">
+               <number>32768</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="fixedWindowWidth">
+              <property name="maximum">
+               <number>32768</number>
               </property>
              </widget>
             </item>
@@ -523,8 +533,6 @@
   <tabstop>thumbnailIconSize</tabstop>
   <tabstop>sidePaneIconSize</tabstop>
   <tabstop>iconTheme</tabstop>
-  <tabstop>windowWidth</tabstop>
-  <tabstop>windowHeight</tabstop>
   <tabstop>alwaysShowTabs</tabstop>
   <tabstop>showTabClose</tabstop>
   <tabstop>singleClick</tabstop>
@@ -584,8 +592,8 @@
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>84</x>
-     <y>160</y>
+     <x>94</x>
+     <y>157</y>
     </hint>
     <hint type="destinationlabel">
      <x>359</x>
@@ -610,6 +618,22 @@
    </hints>
   </connection>
   <connection>
+   <sender>dontRememberWindowSize</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>fixedWindowWidth</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>357</x>
+     <y>317</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>377</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
    <sender>singleClick</sender>
    <signal>toggled(bool)</signal>
    <receiver>autoSelectionDelay</receiver>
@@ -622,6 +646,22 @@
     <hint type="destinationlabel">
      <x>586</x>
      <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dontRememberWindowSize</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>fixedWindowHeight</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>400</x>
+     <y>307</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>421</x>
+     <y>374</y>
     </hint>
    </hints>
   </connection>

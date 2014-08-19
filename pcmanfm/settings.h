@@ -56,11 +56,11 @@ public:
   QString fallbackIconThemeName() const {
     return fallbackIconThemeName_;
   }
-  
+
   bool useFallbackIconTheme() const {
     return useFallbackIconTheme_;
   }
-  
+
   void setFallbackIconThemeName(QString iconThemeName) {
     fallbackIconThemeName_ = iconThemeName;
   }
@@ -72,11 +72,11 @@ public:
   void setBookmarkOpenMethod(int bookmarkOpenMethod) {
     bookmarkOpenMethod_ = bookmarkOpenMethod;
   }
-  
+
   QString suCommand() const {
     return suCommand_;
   }
-  
+
   void setSuCommand(QString suCommand) {
     suCommand_ = suCommand;
   }
@@ -172,7 +172,7 @@ public:
   QFont desktopFont() const {
     return desktopFont_;
   }
-  
+
   void setDesktopFont(QFont font) {
     desktopFont_ = font;
   }
@@ -212,7 +212,7 @@ public:
   bool alwaysShowTabs() const {
     return alwaysShowTabs_;
   }
-  
+
   void setAlwaysShowTabs(bool alwaysShowTabs) {
     alwaysShowTabs_ = alwaysShowTabs;
   }
@@ -220,25 +220,55 @@ public:
   bool showTabClose() const {
     return showTabClose_;
   }
-  
+
   void setShowTabClose(bool showTabClose) {
     showTabClose_ = showTabClose;
   }
 
-  int windowWidth() const {
-    return windowWidth_;
+  bool rememberWindowSize() const {
+      return rememberWindowSize_;
   }
 
-  void setWindowWidth(int windowWidth) {
-    windowWidth_ = windowWidth;
+  void setRememberWindowSize(bool rememberWindowSize) {
+      rememberWindowSize_ = rememberWindowSize;
+  }
+
+  int windowWidth() const {
+      if (rememberWindowSize_)
+          return lastWindowWidth_;
+      else
+          return fixedWindowWidth_;
   }
 
   int windowHeight() const {
-    return windowHeight_;
+      if (rememberWindowSize_)
+          return lastWindowHeight_;
+      else
+          return lastWindowHeight_;
   }
 
-  void setWindowHeight(int windowHeight) {
-    windowHeight_ = windowHeight;
+  int fixedWindowWidth() const {
+    return fixedWindowWidth_;
+  }
+
+  void setFixedWindowWidth(int fixedWindowWidth) {
+    fixedWindowWidth_ = fixedWindowWidth;
+  }
+
+  int fixedWindowHeight() const {
+    return fixedWindowHeight_;
+  }
+
+  void setFixedWindowHeight(int fixedWindowHeight) {
+    fixedWindowHeight_ = fixedWindowHeight;
+  }
+
+  void setLastWindowWidth(int lastWindowWidth) {
+      lastWindowWidth_ = lastWindowWidth;
+  }
+
+  void setLastWindowHeight(int lastWindowHeight) {
+      lastWindowHeight_ = lastWindowHeight;
   }
 
   int splitterPos() const {
@@ -358,11 +388,11 @@ public:
   bool showThumbnails() {
     return showThumbnails_;
   }
-  
+
   void setShowThumbnails(bool show) {
     showThumbnails_ = show;
   }
-  
+
   void setThumbnailLocalFilesOnly(bool value) {
     Fm::ThumbnailLoader::setLocalFilesOnly(value);
   }
@@ -423,8 +453,11 @@ private:
 
   bool alwaysShowTabs_;
   bool showTabClose_;
-  int windowWidth_;
-  int windowHeight_;
+  bool rememberWindowSize_;
+  int fixedWindowWidth_;
+  int fixedWindowHeight_;
+  int lastWindowWidth_;
+  int lastWindowHeight_;
   int splitterPos_;
   int sidePaneMode_;
 

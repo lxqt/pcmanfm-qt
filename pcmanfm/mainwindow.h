@@ -133,6 +133,8 @@ protected Q_SLOTS:
 protected:
   // void changeEvent( QEvent * event);
   void closeTab(int index);
+  virtual void resizeEvent(QResizeEvent *event);
+  virtual void closeEvent(QCloseEvent *event);
 
 private:
   static void onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis);
