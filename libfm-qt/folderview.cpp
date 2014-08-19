@@ -513,10 +513,10 @@ void FolderView::updateGridSize() {
       // each char actually takes doubled space. To be safe, we use 13 chars per line x average char width
       // to get a nearly optimal width for the text label. As most of the filenames have less than 40 chars
       // 13 chars x 3 lines should be enough to show the full filenames for most files.
-      int textWidth = fm.averageCharWidth() * 13 + 8; // add 4 px padding for left and right border
-      int textHeight = fm.height() * 3 + 8; // add 4 px padding for top and bottom border
+      int textWidth = fm.averageCharWidth() * 12 + 4; // add 2 px padding for left and right border
+      int textHeight = fm.height() * 3 + 4; // add 2 px padding for top and bottom border
       grid.setWidth(qMax(icon.width(), textWidth) + 8); // add a margin 4 px for every cell
-      grid.setHeight(icon.height() + 4 + textHeight + 8); // add a margin 4 px for every cell and 4px between the icon & text
+      grid.setHeight(icon.height() + textHeight + 8); // add a margin 4 px for every cell
       break;
     }
     default:
