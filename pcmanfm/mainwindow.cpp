@@ -58,6 +58,14 @@ MainWindow::MainWindow(FmPath* path):
   // setup user interface
   ui.setupUi(this);
 
+  // hide menu items that are not usable
+  if(!isUriSchemeSupported("computer"))
+    ui.actionComputer->setVisible(false);
+  if(!isUriSchemeSupported("trash"))
+    ui.actionTrash->setVisible(false);
+  if(!isUriSchemeSupported("network"))
+    ui.actionNetwork->setVisible(false);
+
   // add a context menu for showing browse history to back and forward buttons
   QToolButton* forwardButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoForward));
   forwardButton->setContextMenuPolicy(Qt::CustomContextMenu);

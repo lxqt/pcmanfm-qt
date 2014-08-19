@@ -49,6 +49,10 @@ public:
     return profileName_;
   }
 
+  bool supportTrash() const {
+    return supportTrash_;
+  }
+
   QString fallbackIconThemeName() const {
     return fallbackIconThemeName_;
   }
@@ -303,6 +307,8 @@ public:
   }
   
   bool useTrash() const {
+    if(!supportTrash_)
+      return false;
     return useTrash_;
   }
 
@@ -389,6 +395,7 @@ public:
 
 private:
   QString profileName_;
+  bool supportTrash_;
 
   // PCManFM specific
   QString fallbackIconThemeName_;

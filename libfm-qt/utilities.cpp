@@ -33,6 +33,7 @@
 #include <pwd.h>
 #include <grp.h>
 #include <stdlib.h>
+#include <glib.h>
 
 using namespace Fm;
 
@@ -287,5 +288,15 @@ int execModelessDialog(QDialog* dlg) {
   (void)loop.exec(QEventLoop::DialogExec);
   return dlg->result();
 }
+
+// check if GVFS can support this uri scheme (lower case)
+bool isUriSchemeSupported(const char* uriScheme) {
+  const gchar * const * schemes = g_vfs_get_supported_uri_schemes(g_vfs_get_default());
+  for(const gchar * const * scheme = schemes; *scheme; ++scheme)
+    if(strcmp(uriScheme, *scheme) == 0)
+      return true;
+  return false;
+}
+
 
 };

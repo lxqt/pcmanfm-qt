@@ -25,6 +25,7 @@
 #include <QSettings>
 #include <QApplication>
 #include "desktopwindow.h"
+#include "utilities.h"
 // #include <QDesktopServices>
 
 using namespace PCManFM;
@@ -49,6 +50,7 @@ inline static Fm::FolderModel::ColumnId sortColumnFromString(const QString str);
 
 Settings::Settings():
   QObject(),
+  supportTrash_(Fm::isUriSchemeSupported("trash")),
   fallbackIconThemeName_(),
   useFallbackIconTheme_(QIcon::themeName().isEmpty() || QIcon::themeName() == "hicolor"),
   bookmarkOpenMethod_(0),
@@ -207,6 +209,7 @@ bool Settings::loadFile(QString filePath) {
   splitterPos_ = settings.value("SplitterPos", 150).toInt();
   sidePaneMode_ = sidePaneModeFromString(settings.value("SidePaneMode").toString());
   settings.endGroup();
+
   return true;
 }
 

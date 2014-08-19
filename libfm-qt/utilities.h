@@ -60,6 +60,8 @@ LIBFM_QT_API QString gidToName(gid_t gid);
 
 LIBFM_QT_API int execModelessDialog(QDialog* dlg);
 
+LIBFM_QT_API bool isUriSchemeSupported(const char* uriScheme);
+
 }
 
 #endif // FM_UTILITIES_H
