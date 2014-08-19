@@ -226,25 +226,25 @@ public:
   }
 
   bool rememberWindowSize() const {
-      return rememberWindowSize_;
+    return rememberWindowSize_;
   }
 
   void setRememberWindowSize(bool rememberWindowSize) {
-      rememberWindowSize_ = rememberWindowSize;
+    rememberWindowSize_ = rememberWindowSize;
   }
 
   int windowWidth() const {
-      if (rememberWindowSize_)
-          return lastWindowWidth_;
-      else
-          return fixedWindowWidth_;
+    if(rememberWindowSize_)
+      return lastWindowWidth_;
+    else
+      return fixedWindowWidth_;
   }
 
   int windowHeight() const {
-      if (rememberWindowSize_)
-          return lastWindowHeight_;
-      else
-          return lastWindowHeight_;
+    if(rememberWindowSize_)
+      return lastWindowHeight_;
+    else
+      return lastWindowHeight_;
   }
 
   int fixedWindowWidth() const {

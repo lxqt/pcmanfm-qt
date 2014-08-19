@@ -881,5 +881,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source> sec</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Remember the size of the last closed window</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

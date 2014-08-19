@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>741</width>
-    <height>446</height>
+    <width>736</width>
+    <height>497</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -166,12 +166,9 @@
              </widget>
             </item>
             <item row="2" column="0" colspan="2">
-             <widget class="QCheckBox" name="dontRememberWindowSize">
+             <widget class="QCheckBox" name="rememberWindowSize">
               <property name="text">
-               <string>Do not remember window size</string>
-              </property>
-              <property name="checked">
-               <bool>true</bool>
+               <string>Remember the size of the last closed window</string>
               </property>
              </widget>
             </item>
@@ -560,8 +557,8 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>252</x>
-     <y>428</y>
+     <x>261</x>
+     <y>487</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -576,8 +573,8 @@
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>320</x>
-     <y>428</y>
+     <x>329</x>
+     <y>487</y>
     </hint>
     <hint type="destinationlabel">
      <x>286</x>
@@ -608,28 +605,28 @@
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>199</x>
-     <y>61</y>
+     <x>237</x>
+     <y>39</y>
     </hint>
     <hint type="destinationlabel">
-     <x>456</x>
-     <y>93</y>
+     <x>237</x>
+     <y>39</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>dontRememberWindowSize</sender>
+   <sender>rememberWindowSize</sender>
    <signal>toggled(bool)</signal>
    <receiver>fixedWindowWidth</receiver>
-   <slot>setEnabled(bool)</slot>
+   <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>357</x>
-     <y>317</y>
+     <x>506</x>
+     <y>351</y>
     </hint>
     <hint type="destinationlabel">
-     <x>377</x>
-     <y>330</y>
+     <x>462</x>
+     <y>386</y>
     </hint>
    </hints>
   </connection>
@@ -640,28 +637,60 @@
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>582</x>
-     <y>61</y>
+     <x>237</x>
+     <y>39</y>
     </hint>
     <hint type="destinationlabel">
-     <x>586</x>
-     <y>93</y>
+     <x>237</x>
+     <y>39</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>dontRememberWindowSize</sender>
+   <sender>rememberWindowSize</sender>
    <signal>toggled(bool)</signal>
    <receiver>fixedWindowHeight</receiver>
-   <slot>setEnabled(bool)</slot>
+   <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>400</x>
-     <y>307</y>
+     <x>549</x>
+     <y>351</y>
     </hint>
     <hint type="destinationlabel">
-     <x>421</x>
+     <x>462</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rememberWindowSize</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>label_12</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>211</x>
      <y>374</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rememberWindowSize</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>label_13</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>404</y>
     </hint>
    </hints>
   </connection>

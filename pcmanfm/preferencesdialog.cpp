@@ -163,7 +163,7 @@ void PreferencesDialog::initUiPage(Settings& settings) {
 
   ui.alwaysShowTabs->setChecked(settings.alwaysShowTabs());
   ui.showTabClose->setChecked(settings.showTabClose());
-  ui.dontRememberWindowSize->setChecked(settings.rememberWindowSize() ? false : true);
+  ui.rememberWindowSize->setChecked(settings.rememberWindowSize());
   ui.fixedWindowWidth->setValue(settings.fixedWindowWidth());
   ui.fixedWindowHeight->setValue(settings.fixedWindowHeight());
 }
@@ -259,7 +259,7 @@ void PreferencesDialog::applyUiPage(Settings& settings) {
   settings.setSidePaneIconSize(ui.sidePaneIconSize->itemData(ui.sidePaneIconSize->currentIndex()).toInt());
   settings.setAlwaysShowTabs(ui.alwaysShowTabs->isChecked());
   settings.setShowTabClose(ui.showTabClose->isChecked());
-  settings.setRememberWindowSize(ui.dontRememberWindowSize->isChecked() ? false : true);
+  settings.setRememberWindowSize(ui.rememberWindowSize->isChecked());
   settings.setFixedWindowWidth(ui.fixedWindowWidth->value());
   settings.setFixedWindowHeight(ui.fixedWindowHeight->value());
 }
