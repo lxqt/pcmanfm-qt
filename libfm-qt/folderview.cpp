@@ -35,6 +35,7 @@
 #include <QMimeData>
 #include <QHoverEvent>
 #include <QApplication>
+#include <QScrollBar>
 #include "folderview_p.h"
 
 namespace Fm {
@@ -794,6 +795,22 @@ bool FolderView::eventFilter(QObject* watched, QEvent* event) {
     case QEvent::HoverLeave:
       if(style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick))
         setCursor(Qt::ArrowCursor);
+      break;
+    case QEvent::Wheel:
+      // This is to fix #85: Scrolling doesn't work in compact view
+      // Actually, I think it's the bug of Qt, not ours.
+      // When in compact mode, only the horizontal scroll bar is used and the vertical one is hidden.
+      // So, when a user scroll his mouse wheel, it's reasonable to scroll the horizontal scollbar.
+      // Qt does not implement such a simple feature, unfortunately.
+      // We do it by forwarding the scroll event in the viewport to the horizontal scrollbar.
+      // FIXME: if someday Qt supports this, we have to disable the workaround.
+      if(mode == CompactMode) {
+        QScrollBar* scroll = view->horizontalScrollBar();
+        if(scroll) {
+          QApplication::sendEvent(scroll, event);
+          return true;
+        }
+      }
       break;
     }
   }

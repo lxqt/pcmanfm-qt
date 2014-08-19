@@ -122,7 +122,7 @@ protected:
   virtual void childDragMoveEvent(QDragMoveEvent* e);
   virtual void childDragLeaveEvent(QDragLeaveEvent* e);
   virtual void childDropEvent(QDropEvent* e);
-
+  
   void emitClickedAt(ClickType type, const QPoint& pos);
 
   QModelIndexList selectedRows ( int column = 0 ) const;
