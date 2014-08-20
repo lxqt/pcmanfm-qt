@@ -45,6 +45,8 @@ class Settings;
 class DesktopWindow : public View {
 Q_OBJECT
 public:
+  friend class Application;
+
   enum WallpaperMode {
     WallpaperNone,
     WallpaperStretch,
@@ -72,6 +74,12 @@ public:
 
   void queueRelayout();
 
+  int screenNum() const {
+    return screenNum_;
+  }
+
+  void setScreenNum(int num);
+  
 protected:
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
   virtual void prepareFileMenu(Fm::FileMenu* menu);

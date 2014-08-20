@@ -112,10 +112,11 @@ protected Q_SLOTS:
   void onScreenCountChanged(int newCount);
   void initVolumeManager();
 
-  // these slots are for Qt5 only
+  // the following slots are for Qt5 only
   void onVirtualGeometryChanged(const QRect& rect);
   void onScreenDestroyed(QObject* screenObj);
   void onScreenAdded(QScreen* newScreen);
+  void reloadDesktopsAsNeeded();
 
 protected:
   virtual bool eventFilter(QObject* watched, QEvent* event);

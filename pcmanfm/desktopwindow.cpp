@@ -50,6 +50,7 @@
 
 #include <QX11Info> // requires Qt 4 or Qt 5.1
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+#include <QScreen>
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
 #else
@@ -192,38 +193,46 @@ void DesktopWindow::setWallpaperMode(WallpaperMode mode) {
 }
 
 QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
-  // see if we have a scaled version cached on disk
-  QString cacheFileName = QString::fromLocal8Bit(qgetenv("XDG_CACHE_HOME"));
-  if(cacheFileName.isEmpty())
-    cacheFileName = QDir::homePath() % QLatin1String("/.cache");
-  Application* app = static_cast<Application*>(qApp);
-  cacheFileName += QLatin1String("/pcmanfm-qt/") % app->profileName();
-  QDir().mkpath(cacheFileName); // ensure that the cache dir exists
-  cacheFileName += QLatin1String("/wallpaper.cache");
+  // NOTE: for ease of programming, we only use the cache for the primary screen.
+  bool useCache = (screenNum_ == -1 || screenNum_ == 0);
+  QFile info;
+  QString cacheFileName;
+  if(useCache) {
+    // see if we have a scaled version cached on disk
+    cacheFileName = QString::fromLocal8Bit(qgetenv("XDG_CACHE_HOME"));
+    if(cacheFileName.isEmpty())
+      cacheFileName = QDir::homePath() % QLatin1String("/.cache");
+    Application* app = static_cast<Application*>(qApp);
+    cacheFileName += QLatin1String("/pcmanfm-qt/") % app->profileName();
+    QDir().mkpath(cacheFileName); // ensure that the cache dir exists
+    cacheFileName += QLatin1String("/wallpaper.cache");
 
-  // read info file
-  QString origin;
-  QFile info(cacheFileName % ".info");
-  if(info.open(QIODevice::ReadOnly)) {
-    origin = QString::fromLocal8Bit(info.readLine());
-    info.close();
-    if(!origin.isEmpty()) {
-      // try to see if we can get the size of the cached image.
-      QImageReader reader(cacheFileName);
-      reader.setAutoDetectImageFormat(true);
-      QSize cachedSize = reader.size();
-      qDebug() << "size of cached file" << cachedSize << ", requiredSize:" << requiredSize;
-      if(cachedSize.isValid()) {
-        if(cachedSize == requiredSize) { // see if the cached wallpaper has the size we want
-          QImage image = reader.read(); // return the loaded image
-          qDebug() << "origin" << origin;
-          if(origin == wallpaperFile_)
-            return image;
+    // read info file
+    QString origin;
+    info.setFileName(cacheFileName % ".info");
+    if(info.open(QIODevice::ReadOnly)) {
+      // FIXME: we need to compare mtime to see if the cache is out of date
+      origin = QString::fromLocal8Bit(info.readLine());
+      info.close();
+      if(!origin.isEmpty()) {
+        // try to see if we can get the size of the cached image.
+        QImageReader reader(cacheFileName);
+        reader.setAutoDetectImageFormat(true);
+        QSize cachedSize = reader.size();
+        qDebug() << "size of cached file" << cachedSize << ", requiredSize:" << requiredSize;
+        if(cachedSize.isValid()) {
+          if(cachedSize == requiredSize) { // see if the cached wallpaper has the size we want
+            QImage image = reader.read(); // return the loaded image
+            qDebug() << "origin" << origin;
+            if(origin == wallpaperFile_)
+              return image;
+          }
         }
       }
     }
+    qDebug() << "no cached wallpaper. generate a new one!";
   }
-  qDebug() << "no cached wallpaper. generate a new one!";
+
   // we don't have a cached scaled image, load the original file
   QImage image(wallpaperFile_);
   qDebug() << "size of original image" << image.size();
@@ -234,21 +243,23 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
   QImage scaled = image.scaled(requiredSize.width(), requiredSize.height(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
   // FIXME: should we save the scaled image if its size is larger than the original image?
 
-  // write the path of the original image to the .info file
-  if(info.open(QIODevice::WriteOnly)) {
-    info.write(wallpaperFile_.toLocal8Bit());
-    info.close();
+  if(useCache) {
+    // write the path of the original image to the .info file
+    if(info.open(QIODevice::WriteOnly)) {
+      info.write(wallpaperFile_.toLocal8Bit());
+      info.close();
 
-    // write the scaled cache image to disk
-    const char* format; // we keep jpg format for *.jpg files, and use png format for others.
-    if(wallpaperFile_.endsWith(QLatin1String(".jpg"), Qt::CaseInsensitive) || wallpaperFile_.endsWith(QLatin1String(".jpeg"), Qt::CaseInsensitive))
-      format = "JPG";
-    else
-      format = "PNG";
-    scaled.save(cacheFileName, format);
+      // write the scaled cache image to disk
+      const char* format; // we keep jpg format for *.jpg files, and use png format for others.
+      if(wallpaperFile_.endsWith(QLatin1String(".jpg"), Qt::CaseInsensitive) || wallpaperFile_.endsWith(QLatin1String(".jpeg"), Qt::CaseInsensitive))
+        format = "JPG";
+      else
+        format = "PNG";
+      scaled.save(cacheFileName, format);
+    }
+    qDebug() << "wallpaper cached saved to " << cacheFileName;
+    // FIXME: we might delay the write of the cached image?
   }
-  qDebug() << "wallpaper cached saved to " << cacheFileName;
-  // FIXME: we might delay the write of the cached image?
   return scaled;
 }
 
@@ -520,8 +531,9 @@ void DesktopWindow::relayoutItems() {
       screen = screenNum_;
     }
     QRect workArea = desktop->availableGeometry(screen);
+    qDebug() << "availableGeometry" << qApp->screens().at(screen)->availableGeometry();
     workArea.adjust(12, 12, -12, -12); // add a 12 pixel margin to the work area
-    // qDebug() << "workArea" << workArea;
+    qDebug() << "workArea" << screen <<  workArea;
     // FIXME: we use an internal class declared in a private header here, which is pretty bad.
     QSize grid = listView_->gridSize();
     QPoint pos = workArea.topLeft();
@@ -695,6 +707,9 @@ bool DesktopWindow::event(QEvent* event)
 {
   switch(event->type()) {
   case QEvent::WinIdChange: {
+    qDebug() << "winid change:" << effectiveWinId();
+    if(effectiveWinId() == 0)
+      break;
     // set freedesktop.org EWMH hints properly
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
     if(QX11Info::isPlatformX11() && QX11Info::connection()) {
@@ -704,11 +719,11 @@ bool DesktopWindow::event(QEvent* event)
       const char* prop_atom_name = "_NET_WM_WINDOW_TYPE";
       xcb_atom_t prop_atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(prop_atom_name), prop_atom_name), NULL)->atom;
       xcb_atom_t XA_ATOM = 4;
-      xcb_change_property(con, XCB_PROP_MODE_REPLACE, winId(), prop_atom, XA_ATOM, 32, 1, &atom);
+      xcb_change_property(con, XCB_PROP_MODE_REPLACE, effectiveWinId(), prop_atom, XA_ATOM, 32, 1, &atom);
     }
 #else
     Atom atom = XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE_DESKTOP", False);
-    XChangeProperty(QX11Info::display(), winId(), XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE", False), XA_ATOM, 32, PropModeReplace, (uchar*)&atom, 1);
+    XChangeProperty(QX11Info::display(), effectiveWinId(), XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE", False), XA_ATOM, 32, PropModeReplace, (uchar*)&atom, 1);
 #endif
     break;
   }
@@ -761,4 +776,12 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
     e->accept();
   else
     Fm::FolderView::childDropEvent(e);
+}
+
+
+void DesktopWindow::setScreenNum(int num) {
+  if(screenNum_ != num) {
+    screenNum_ = num;
+    queueRelayout();
+  }
 }
