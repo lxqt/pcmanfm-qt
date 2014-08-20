@@ -312,6 +312,8 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
   setWallpaperMode(settings.wallpaperMode());
   setFont(settings.desktopFont());
   setIconSize(Fm::FolderView::IconMode, QSize(settings.bigIconSize(), settings.bigIconSize()));
+  // setIconSize may trigger relayout of items by QListView, so we need to do the layout again.
+  queueRelayout();
   setForeground(settings.desktopFgColor());
   setBackground(settings.desktopBgColor());
   setShadow(settings.desktopShadowColor());
@@ -691,7 +693,8 @@ void DesktopWindow::onFilePropertiesActivated() {
 
 bool DesktopWindow::event(QEvent* event)
 {
-  if(event->type() == QEvent::WinIdChange) {
+  switch(event->type()) {
+  case QEvent::WinIdChange: {
     // set freedesktop.org EWMH hints properly
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
     if(QX11Info::isPlatformX11() && QX11Info::connection()) {
@@ -707,6 +710,13 @@ bool DesktopWindow::event(QEvent* event)
     Atom atom = XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE_DESKTOP", False);
     XChangeProperty(QX11Info::display(), winId(), XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE", False), XA_ATOM, 32, PropModeReplace, (uchar*)&atom, 1);
 #endif
+    break;
+  }
+#undef FontChange // FontChange is defined in the headers of XLib and clashes with Qt, let's undefine it.
+  case QEvent::StyleChange:
+  case QEvent::FontChange:
+    queueRelayout();
+    break;
   }
   return QWidget::event(event);
 }
