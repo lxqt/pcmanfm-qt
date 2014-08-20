@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.1">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -63,7 +63,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>License</source>
         <translation>Licencija</translation>
     </message>
-    <message utf8="true">
+    <message>
         <source>PCMan File Manager
 
 Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)

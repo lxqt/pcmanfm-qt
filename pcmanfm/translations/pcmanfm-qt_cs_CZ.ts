@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="cs_CZ">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="121"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">O</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="122"/>
@@ -33,7 +33,7 @@
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="128"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Autoři</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="129"/>
@@ -59,7 +59,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="146"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Licence</translation>
     </message>
 </context>
 <context>
@@ -165,7 +165,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="263"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Pokročilé</translation>
     </message>
 </context>
 <context>
@@ -173,277 +173,277 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="499"/>
         <source>File Manager</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Správce souborů</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="502"/>
         <source>Go Up</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nahoru</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="504"/>
         <source>Alt+Up</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Alt+Nahoru</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="505"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Domů</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="506"/>
         <source>Alt+Home</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Alt+Home</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="525"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Obnovit</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="508"/>
         <source>F5</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">F5</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="507"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Obnovit</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="509"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Jdi</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="510"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ukončit</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="511"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;O programu</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="514"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nové okno</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="516"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+N</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="517"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zobrazit &amp;skryté</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="518"/>
         <source>Ctrl+H</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+H</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="519"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Počítač</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="520"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Koš</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="521"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Síť</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="522"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Plocha</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="523"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Přidat k záložkám</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="524"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Programy</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="531"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+X</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="532"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kopírovat</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="533"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+C</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="534"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vložit</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="535"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+V</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="536"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vybrat všechno</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="538"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Nastavení</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="561"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Invertovat výběr</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="562"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Smazat</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="564"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Přejmenovat</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="537"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+A</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="500"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nahoru</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="512"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nové &amp;okno</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="526"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Pohled s ikonami</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="527"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kompaktní pohled</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="528"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Seznam s podrobnostmi</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="529"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Pohled s náhledy</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="530"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vyjmout</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="539"/>
         <source>Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vzestupně</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="540"/>
         <source>Descending</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Sestupně</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="541"/>
         <source>By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Podle jména</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="542"/>
         <source>By Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Podle času</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="543"/>
         <source>By File Type</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Podle typu</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="544"/>
         <source>By Owner</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Podle vlastníka</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="545"/>
         <source>Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Složky jako první</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="546"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nový &amp;panel</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="548"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nový panel</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="550"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+T</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="551"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zpět</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="553"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zpět</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="555"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Alt+Vlevo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="556"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Vpřed</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="558"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vpřed</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="560"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Alt+Vpravo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="563"/>
@@ -453,117 +453,117 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="565"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">F2</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="566"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zavřít panel</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="568"/>
         <source>File &amp;Properties</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vlastnosti souboru</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="570"/>
         <source>&amp;Folder Properties</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vlastnosti složky</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="582"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Řadit</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="587"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Hlavní panel</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="567"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+W</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="569"/>
         <source>Alt+Return</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Alt+Return</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="571"/>
         <source>Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Rozlišovat velikost písmen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="572"/>
         <source>By File Size</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Podle velikosti</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="573"/>
         <source>Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zavřít okno</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="574"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Upravit záložky</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="575"/>
         <source>Open &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Otevřít &amp;terminál</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="576"/>
         <source>F4</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">F4</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="577"/>
         <source>Open as &amp;Root</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Otevřít jako &amp;Root</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="578"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Upravit záložky</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="579"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Soubor</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="580"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Nápověda</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="581"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Zobrazení</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="583"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Úpr&amp;avy</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="584"/>
         <source>&amp;Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zál&amp;ožky</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="585"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Jdi</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="586"/>
         <source>&amp;Tool</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nás&amp;troje</translation>
     </message>
 </context>
 <context>
@@ -730,7 +730,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="740"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Smazat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="801"/>
@@ -784,12 +784,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>%n item(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="234"/>
         <source> (%n hidden)</source>
         <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -827,17 +831,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
         <source>User Interface</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Uživatelské rozhraní</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="531"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Chování</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Náhled</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
@@ -847,7 +851,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Pokročilé</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
@@ -857,22 +861,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Velikost velkých ikon:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="542"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Velikost malých ikon:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Velikost náhledů:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="544"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Velikost ikon v postranním panelu:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="545"/>
@@ -952,17 +956,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zobrazovat náhledy souborů</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zobrazovat náhlet jen u lokálních souborů</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Negenerovat náhledy obrázků přesahujících tuto velikost:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
