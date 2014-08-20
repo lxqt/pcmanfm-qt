@@ -531,9 +531,8 @@ void DesktopWindow::relayoutItems() {
       screen = screenNum_;
     }
     QRect workArea = desktop->availableGeometry(screen);
-    qDebug() << "availableGeometry" << qApp->screens().at(screen)->availableGeometry();
     workArea.adjust(12, 12, -12, -12); // add a 12 pixel margin to the work area
-    qDebug() << "workArea" << screen <<  workArea;
+    // qDebug() << "workArea" << screen <<  workArea;
     // FIXME: we use an internal class declared in a private header here, which is pretty bad.
     QSize grid = listView_->gridSize();
     QPoint pos = workArea.topLeft();

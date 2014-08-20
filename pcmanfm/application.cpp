@@ -786,6 +786,7 @@ void Application::onScreenDestroyed(QObject* screenObj) {
 // This slot is for Qt 5 onlt, but the stupid Qt moc cannot do conditional compilation
 // so we have to define it for Qt 4 as well.
 void Application::reloadDesktopsAsNeeded() {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   if(enableDesktopManager_) {
     // workarounds for Qt5 bug #40681 and #40791 here.
     Q_FOREACH(DesktopWindow* desktop, desktopWindows_) {
@@ -796,6 +797,7 @@ void Application::reloadDesktopsAsNeeded() {
       }
     }
   }
+#endif
 }
 
 // This slot is for Qt 5 onlt, but the stupid Qt moc cannot do conditional compilation

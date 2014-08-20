@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pt_PT">
+<TS version="2.0" language="pt_PT">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -37,7 +37,7 @@
         <source>Authors</source>
         <translation>Autores</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="../../build/pcmanfm/ui_about.h" line="129"/>
         <source>PCMan File Manager
 
