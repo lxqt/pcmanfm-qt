@@ -182,6 +182,7 @@ void DesktopWindow::resizeEvent(QResizeEvent* event) {
     updateWallpaper();
     update();
   }
+  queueRelayout(100); // Qt use a 100 msec delay for relayout internally so we use it, too.
 }
 
 void DesktopWindow::setWallpaperFile(QString filename) {
@@ -643,13 +644,13 @@ void DesktopWindow::onStickToCurrentPos(bool toggled) {
   }
 }
 
-void DesktopWindow::queueRelayout() {
+void DesktopWindow::queueRelayout(int delay) {
   // qDebug() << "queueRelayout";
   if(!relayoutTimer_) {
     relayoutTimer_ = new QTimer();
     relayoutTimer_->setSingleShot(true);
     connect(relayoutTimer_, SIGNAL(timeout()), SLOT(relayoutItems()));
-    relayoutTimer_->start();
+    relayoutTimer_->start(delay);
   }
 }
 

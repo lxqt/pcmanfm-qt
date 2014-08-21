@@ -72,7 +72,7 @@ public:
   void xcbEvent(xcb_generic_event_t* generic_event);
 #endif
 
-  void queueRelayout();
+  void queueRelayout(int delay = 0);
 
   int screenNum() const {
     return screenNum_;
