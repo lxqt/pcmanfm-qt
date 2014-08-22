@@ -373,6 +373,7 @@ void MainWindow::on_actionAbout_triggered() {
   public:
     explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) {
       ui.setupUi(this);
+      ui.version->setText(tr("Version: %1").arg(PCMANFM_QT_VERSION));
     }
   private:
     Ui::AboutDialog ui;

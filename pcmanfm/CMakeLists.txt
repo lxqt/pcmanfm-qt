@@ -81,6 +81,7 @@ set_property(
    LIBFM_QT_API=Q_DECL_IMPORT
    PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/pcmanfm-qt"
    LIBFM_DATA_DIR="${LIBFM_PREFIX}/share/libfm" # This is a little bit dirty
+   PCMANFM_QT_VERSION="${PCMANFM_QT_VERSION}"
 )
 
 target_link_libraries(pcmanfm-qt 
