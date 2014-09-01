@@ -61,7 +61,7 @@ add_definitions(
 
 if (CMAKE_COMPILER_IS_GNUCXX)
   # set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
-  set(CMAKE_CXX_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions")
+  set(CMAKE_CXX_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions ${CMAKE_CXX_FLAGS}")
 endif()
 
 # Eanble CMake auto-moc support for Qt
