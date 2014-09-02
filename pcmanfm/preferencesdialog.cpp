@@ -44,7 +44,7 @@ PreferencesDialog::PreferencesDialog (QString activePage, QWidget* parent):
   ui.listWidget->setMaximumWidth(ui.listWidget->sizeHintForColumn(0) + ui.listWidget->frameWidth() * 2 + 4);
 
   initFromSettings();
-  
+
   if(!activePage.isEmpty()) {
     QWidget* page = findChild<QWidget*>(activePage + "Page");
     if(page) {
@@ -52,6 +52,7 @@ PreferencesDialog::PreferencesDialog (QString activePage, QWidget* parent):
       ui.listWidget->setCurrentRow(index);
     }
   }
+  adjustSize();
 }
 
 PreferencesDialog::~PreferencesDialog() {
@@ -162,12 +163,14 @@ void PreferencesDialog::initUiPage(Settings& settings) {
 
   ui.alwaysShowTabs->setChecked(settings.alwaysShowTabs());
   ui.showTabClose->setChecked(settings.showTabClose());
-  ui.windowWidth->setValue(settings.windowWidth());
-  ui.windowHeight->setValue(settings.windowHeight());
+  ui.rememberWindowSize->setChecked(settings.rememberWindowSize());
+  ui.fixedWindowWidth->setValue(settings.fixedWindowWidth());
+  ui.fixedWindowHeight->setValue(settings.fixedWindowHeight());
 }
 
 void PreferencesDialog::initBehaviorPage(Settings& settings) {
   ui.singleClick->setChecked(settings.singleClick());
+  ui.autoSelectionDelay->setValue(double(settings.autoSelectionDelay()) / 1000);
 
   ui.viewMode->addItem(tr("Icon View"), (int)Fm::FolderView::IconMode);
   ui.viewMode->addItem(tr("Compact Icon View"), (int)Fm::FolderView::CompactMode);
@@ -177,17 +180,22 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
     Fm::FolderView::IconMode,
     Fm::FolderView::CompactMode,
     Fm::FolderView::ThumbnailMode,
-    Fm::FolderView::DetailedListMode   
+    Fm::FolderView::DetailedListMode
   };
   for(int i = 0; i < G_N_ELEMENTS(modes); ++i) {
     if(modes[i] == settings.viewMode()) {
       ui.viewMode->setCurrentIndex(i);
       break;
     }
-  } 
+  }
 
   ui.configmDelete->setChecked(settings.confirmDelete());
-  ui.useTrash->setChecked(settings.useTrash());
+
+  if(settings.supportTrash())
+    ui.useTrash->setChecked(settings.useTrash());
+  else {
+    ui.useTrash->hide();
+  }
 }
 
 void PreferencesDialog::initThumbnailPage(Settings& settings) {
@@ -239,28 +247,33 @@ void PreferencesDialog::applyUiPage(Settings& settings) {
       QIcon::setThemeName(settings.fallbackIconThemeName());
       // update the UI by emitting a style change event
       Q_FOREACH(QWidget *widget, QApplication::allWidgets()) {
-	QEvent event(QEvent::StyleChange);
-	QApplication::sendEvent(widget, &event);
+        QEvent event(QEvent::StyleChange);
+        QApplication::sendEvent(widget, &event);
       }
     }
   }
+
   settings.setBigIconSize(ui.bigIconSize->itemData(ui.bigIconSize->currentIndex()).toInt());
   settings.setSmallIconSize(ui.smallIconSize->itemData(ui.smallIconSize->currentIndex()).toInt());
   settings.setThumbnailIconSize(ui.thumbnailIconSize->itemData(ui.thumbnailIconSize->currentIndex()).toInt());
   settings.setSidePaneIconSize(ui.sidePaneIconSize->itemData(ui.sidePaneIconSize->currentIndex()).toInt());
   settings.setAlwaysShowTabs(ui.alwaysShowTabs->isChecked());
   settings.setShowTabClose(ui.showTabClose->isChecked());
-  settings.setWindowWidth(ui.windowWidth->value());
-  settings.setWindowHeight(ui.windowHeight->value());
+  settings.setRememberWindowSize(ui.rememberWindowSize->isChecked());
+  settings.setFixedWindowWidth(ui.fixedWindowWidth->value());
+  settings.setFixedWindowHeight(ui.fixedWindowHeight->value());
 }
 
 void PreferencesDialog::applyBehaviorPage(Settings& settings) {
   settings.setSingleClick(ui.singleClick->isChecked());
+  settings.setAutoSelectionDelay(int(ui.autoSelectionDelay->value() * 1000));
   // FIXME: bug here?
   Fm::FolderView::ViewMode mode = Fm::FolderView::ViewMode(ui.viewMode->itemData(ui.viewMode->currentIndex()).toInt());
   settings.setViewMode(mode);
   settings.setConfirmDelete(ui.configmDelete->isChecked());
-  settings.setUseTrash(ui.useTrash->isChecked());
+  
+  if(settings.supportTrash())
+    settings.setUseTrash(ui.useTrash->isChecked());
 }
 
 void PreferencesDialog::applyThumbnailPage(Settings& settings) {
@@ -293,7 +306,7 @@ void PreferencesDialog::applySettings() {
   applyAdvancedPage(settings);
 
   settings.save();
-  
+
   Application* app = static_cast<Application*>(qApp);
   app->updateFromSettings();
 }

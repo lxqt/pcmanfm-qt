@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>689</width>
-    <height>466</height>
+    <width>736</width>
+    <height>497</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -151,34 +151,6 @@
             <property name="fieldGrowthPolicy">
              <enum>QFormLayout::ExpandingFieldsGrow</enum>
             </property>
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_12">
-              <property name="text">
-               <string>Default width of new windows:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QSpinBox" name="windowWidth">
-              <property name="maximum">
-               <number>32768</number>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="QSpinBox" name="windowHeight">
-              <property name="maximum">
-               <number>32768</number>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0">
-             <widget class="QLabel" name="label_13">
-              <property name="text">
-               <string>Default height of new windows:</string>
-              </property>
-             </widget>
-            </item>
             <item row="0" column="0" colspan="2">
              <widget class="QCheckBox" name="alwaysShowTabs">
               <property name="text">
@@ -190,6 +162,41 @@
              <widget class="QCheckBox" name="showTabClose">
               <property name="text">
                <string>Show 'Close' buttons on tabs	</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QCheckBox" name="rememberWindowSize">
+              <property name="text">
+               <string>Remember the size of the last closed window</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>Default width of new windows:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>Default height of new windows:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QSpinBox" name="fixedWindowHeight">
+              <property name="maximum">
+               <number>32768</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="fixedWindowWidth">
+              <property name="maximum">
+               <number>32768</number>
               </property>
              </widget>
             </item>
@@ -219,25 +226,48 @@
             <string>Browsing</string>
            </property>
            <layout class="QFormLayout" name="formLayout_5">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
             <item row="0" column="0" colspan="2">
              <widget class="QCheckBox" name="singleClick">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
               <property name="text">
                <string>Open files with single click</string>
               </property>
              </widget>
             </item>
             <item row="1" column="0">
+             <widget class="QLabel" name="label">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Delay of auto-selection in single click mode (0 to disable)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
              <widget class="QLabel" name="label_11">
               <property name="text">
                <string>Default view mode:</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="1">
+            <item row="2" column="1">
              <widget class="QComboBox" name="viewMode"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="autoSelectionDelay">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="suffix">
+               <string> sec</string>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -500,8 +530,6 @@
   <tabstop>thumbnailIconSize</tabstop>
   <tabstop>sidePaneIconSize</tabstop>
   <tabstop>iconTheme</tabstop>
-  <tabstop>windowWidth</tabstop>
-  <tabstop>windowHeight</tabstop>
   <tabstop>alwaysShowTabs</tabstop>
   <tabstop>showTabClose</tabstop>
   <tabstop>singleClick</tabstop>
@@ -529,8 +557,8 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>252</x>
-     <y>428</y>
+     <x>261</x>
+     <y>487</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -545,8 +573,8 @@
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>320</x>
-     <y>428</y>
+     <x>329</x>
+     <y>487</y>
     </hint>
     <hint type="destinationlabel">
      <x>286</x>
@@ -561,12 +589,108 @@
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>124</x>
-     <y>150</y>
+     <x>94</x>
+     <y>157</y>
     </hint>
     <hint type="destinationlabel">
      <x>359</x>
      <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>singleClick</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>label</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rememberWindowSize</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>fixedWindowWidth</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>506</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>462</x>
+     <y>386</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>singleClick</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>autoSelectionDelay</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rememberWindowSize</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>fixedWindowHeight</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>549</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>462</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rememberWindowSize</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>label_12</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>211</x>
+     <y>374</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rememberWindowSize</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>label_13</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>404</y>
     </hint>
    </hints>
   </connection>

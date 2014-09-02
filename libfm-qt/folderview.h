@@ -30,11 +30,14 @@
 #include "foldermodel.h"
 #include "proxyfoldermodel.h"
 
+class QTimer;
+
 namespace Fm {
 
 class FileMenu;
 class FolderMenu;
 class FileLauncher;
+class FolderViewStyle;
 
 class LIBFM_QT_API FolderView : public QWidget {
   Q_OBJECT
@@ -93,9 +96,7 @@ public:
   FmFileInfoList* selectedFiles() const;
   FmPathList* selectedFilePaths() const;
 
-  void selectAll() {
-    view->selectAll();
-  }
+  void selectAll();
 
   void invertSelection();
 
@@ -107,14 +108,21 @@ public:
     return fileLauncher_;
   }
 
-protected:
-  void contextMenuEvent(QContextMenuEvent* event);
-  void childMousePressEvent(QMouseEvent* event);
-  void childDragEnterEvent(QDragEnterEvent* event);
-  void childDragMoveEvent(QDragMoveEvent* e);
-  void childDragLeaveEvent(QDragLeaveEvent* e);
-  void childDropEvent(QDropEvent* e);
+  int autoSelectionDelay() const {
+    return autoSelectionDelay_;
+  }
 
+  void setAutoSelectionDelay(int delay);
+
+protected:
+  virtual bool event(QEvent* event);
+  virtual void contextMenuEvent(QContextMenuEvent* event);
+  virtual void childMousePressEvent(QMouseEvent* event);
+  virtual void childDragEnterEvent(QDragEnterEvent* event);
+  virtual void childDragMoveEvent(QDragMoveEvent* e);
+  virtual void childDragLeaveEvent(QDragLeaveEvent* e);
+  virtual void childDropEvent(QDropEvent* e);
+  
   void emitClickedAt(ClickType type, const QPoint& pos);
 
   QModelIndexList selectedRows ( int column = 0 ) const;
@@ -122,12 +130,20 @@ protected:
 
   virtual void prepareFileMenu(Fm::FileMenu* menu);
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
+  
+  virtual bool eventFilter(QObject* watched, QEvent* event);
+
+  void updateGridSize(); // called when view mode, icon size, or font size is changed
 
 public Q_SLOTS:
   void onItemActivated(QModelIndex index);
   void onSelectionChanged(const QItemSelection & selected, const QItemSelection & deselected);
   virtual void onFileClicked(int type, FmFileInfo* fileInfo);
-  
+
+private Q_SLOTS:
+  void onAutoSelectionTimeout();
+  void onSelChangedTimeout();
+
 Q_SIGNALS:
   void clicked(int type, FmFileInfo* file);
   void selChanged(int n_sel);
@@ -140,6 +156,10 @@ private:
   ViewMode mode;
   QSize iconSize_[NumViewModes];
   FileLauncher* fileLauncher_;
+  int autoSelectionDelay_;
+  QTimer* autoSelectionTimer_;
+  QModelIndex lastAutoSelectionIndex_;
+  QTimer* selChangedTimer_;
 };
 
 }

@@ -33,7 +33,9 @@
 #include <QDate>
 #include <QDebug>
 #include <QMimeData>
+#include <QHoverEvent>
 #include <QApplication>
+#include <QScrollBar>
 #include "folderview_p.h"
 
 namespace Fm {
@@ -348,6 +350,9 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
   QWidget(parent),
   view(NULL),
   mode((ViewMode)0),
+  autoSelectionDelay_(600),
+  autoSelectionTimer_(NULL),
+  selChangedTimer_(NULL),
   fileLauncher_(NULL),
   model_(NULL) {
 
@@ -382,15 +387,31 @@ void FolderView::onItemActivated(QModelIndex index) {
   }
 }
 
-void FolderView::onSelectionChanged(const QItemSelection& selected, const QItemSelection& deselected) {
-  QItemSelectionModel* selModel = static_cast<QItemSelectionModel*>(sender());
+void FolderView::onSelChangedTimeout() {
+  selChangedTimer_->deleteLater();
+  selChangedTimer_ = NULL;
+
+  QItemSelectionModel* selModel = selectionModel();
   int nSel = 0;
   if(viewMode() == DetailedListMode)
     nSel = selModel->selectedRows().count();
-  else
+  else {
     nSel = selModel->selectedIndexes().count();
+  }
   // qDebug()<<"selected:" << nSel;
   Q_EMIT selChanged(nSel); // FIXME: this is inefficient
+}
+
+void FolderView::onSelectionChanged(const QItemSelection& selected, const QItemSelection& deselected) {
+  // It's possible that the selected items change too often and this slot gets called for thousands of times.
+  // For example, when you select thousands of files and delete them, we will get one selectionChanged() event
+  // for every deleted file. So, we use a timer to delay the handling to avoid too frequent updates of the UI.
+  if(!selChangedTimer_) {
+    selChangedTimer_ = new QTimer(this);
+    selChangedTimer_->setSingleShot(true);
+    connect(selChangedTimer_, SIGNAL(timeout()), SLOT(onSelChangedTimeout()));
+    selChangedTimer_->start(200);
+  }
 }
 
 
@@ -439,31 +460,31 @@ void FolderView::setViewMode(ViewMode _mode) {
     switch(mode) {
       case IconMode: {
         listView->setViewMode(QListView::IconMode);
-        // listView->setGridSize(QSize(iconSize.width() * 1.6, iconSize.height() * 2));
-        listView->setGridSize(QSize(90, 110));
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
         break;
       }
       case CompactMode: {
         listView->setViewMode(QListView::ListMode);
-        listView->setGridSize(QSize());
         listView->setWordWrap(false);
         listView->setFlow(QListView::QListView::TopToBottom);
         break;
       }
       case ThumbnailMode: {
         listView->setViewMode(QListView::IconMode);
-        listView->setGridSize(QSize(160, 160));
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
         break;
       }
       default:;
     }
-    delegate->setGridSize(listView->gridSize());
+    updateGridSize();
   }
   if(view) {
+    // we have to install the event filter on the viewport instead of the view itself.
+    view->viewport()->installEventFilter(this);
+    // we want the QEvent::HoverMove event for single click + auto-selection support
+    view->viewport()->setAttribute(Qt::WA_Hover, true);
     connect(view, SIGNAL(activatedFiltered(QModelIndex)), SLOT(onItemActivated(QModelIndex)));
     view->setContextMenuPolicy(Qt::NoContextMenu); // defer the context menu handling to parent widgets
     view->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
@@ -488,6 +509,42 @@ void FolderView::setViewMode(ViewMode _mode) {
   }
 }
 
+// set proper grid size for the QListView based on current view mode, icon size, and font size.
+void FolderView::updateGridSize() {
+  if(mode == DetailedListMode || !view)
+    return;
+  FolderViewListView* listView = static_cast<FolderViewListView*>(view);
+  QSize icon = iconSize(mode); // size of the icon
+  QFontMetrics fm = fontMetrics(); // size of current font
+  QSize grid; // the final grid size
+  switch(mode) {
+    case IconMode:
+    case ThumbnailMode: {
+      // NOTE by PCMan about finding the optimal text label size:
+      // The average filename length on my root filesystem is roughly 18-20 chars.
+      // So, a reasonable size for the text label is about 10 chars each line since string of this length
+      // can be shown in two lines. If you consider word wrap, then the result is around 10 chars per word.
+      // In average, 10 char per line should be enough to display a "word" in the filename without breaking.
+      // The values can be estimated with this command:
+      // > find / | xargs  basename -a | sed -e s'/[_-]/ /g' | wc -mcw
+      // However, this average only applies to English. For some Asian characters, such as Chinese chars,
+      // each char actually takes doubled space. To be safe, we use 13 chars per line x average char width
+      // to get a nearly optimal width for the text label. As most of the filenames have less than 40 chars
+      // 13 chars x 3 lines should be enough to show the full filenames for most files.
+      int textWidth = fm.averageCharWidth() * 12 + 4; // add 2 px padding for left and right border
+      int textHeight = fm.height() * 3 + 4; // add 2 px padding for top and bottom border
+      grid.setWidth(qMax(icon.width(), textWidth) + 8); // add a margin 4 px for every cell
+      grid.setHeight(icon.height() + textHeight + 8); // add a margin 4 px for every cell
+      break;
+    }
+    default:
+      ; // do not use grid size
+  }
+  listView->setGridSize(grid);
+  FolderItemDelegate* delegate = static_cast<FolderItemDelegate*>(listView->itemDelegateForColumn(FolderModel::ColumnFileName));
+  delegate->setGridSize(grid);
+}
+
 void FolderView::setIconSize(ViewMode mode, QSize size) {
   Q_ASSERT(mode >= FirstViewMode && mode <= LastViewMode);
   iconSize_[mode - FirstViewMode] = size;
@@ -495,6 +552,7 @@ void FolderView::setIconSize(ViewMode mode, QSize size) {
     view->setIconSize(size);
     if(model_)
       model_->setThumbnailSize(size.width());
+    updateGridSize();
   }
 }
 
@@ -505,6 +563,10 @@ QSize FolderView::iconSize(ViewMode mode) const {
 
 FolderView::ViewMode FolderView::viewMode() const {
   return mode;
+}
+
+void FolderView::setAutoSelectionDelay(int delay) {
+  autoSelectionDelay_ = delay;
 }
 
 QAbstractItemView* FolderView::childView() const {
@@ -526,6 +588,17 @@ void FolderView::setModel(ProxyFolderModel* model) {
   if(model_)
     delete model_;
   model_ = model;
+}
+
+bool FolderView::event(QEvent* event) {
+  switch(event->type()) {
+    case QEvent::StyleChange:
+      break;
+    case QEvent::FontChange:
+      updateGridSize();
+      break;
+  };
+  return QWidget::event(event);
 }
 
 void FolderView::contextMenuEvent(QContextMenuEvent* event) {
@@ -565,7 +638,7 @@ void FolderView::emitClickedAt(ClickType type, const QPoint& pos) {
 QModelIndexList FolderView::selectedRows(int column) const {
   QItemSelectionModel* selModel = selectionModel();
   if(selModel) {
-    return selModel->selectedRows();
+    return selModel->selectedRows(column);
   }
   return QModelIndexList();
 }
@@ -615,13 +688,38 @@ FmFileInfoList* FolderView::selectedFiles() const {
   return NULL;
 }
 
+void FolderView::selectAll() {
+  if(mode == DetailedListMode)
+    view->selectAll();
+  else {
+    // NOTE: By default QListView::selectAll() selects all columns in the model.
+    // However, QListView only show the first column. Normal selection by mouse
+    // can only select the first column of every row. I consider this discripancy yet
+    // another design flaw of Qt. To make them consistent, we do it ourselves by only
+    // selecting the first column of every row and do not select all columns as Qt does.
+    // This will trigger one selectionChanged event per row, which is very inefficient,
+    // but we have no other choices to workaround the Qt bug.
+    // I'll report a Qt bug for this later.
+    if(model_) {
+      int rowCount = model_->rowCount();
+      for(int row = 0; row < rowCount; ++row) {
+        QModelIndex index = model_->index(row, 0);
+        selectionModel()->select(index, QItemSelectionModel::Select);
+      }
+    }
+  }
+}
+
 void FolderView::invertSelection() {
   if(model_) {
     QItemSelectionModel* selModel = view->selectionModel();
     int rows = model_->rowCount();
+    QItemSelectionModel::SelectionFlags flags = QItemSelectionModel::Toggle;
+    if(mode == DetailedListMode)
+      flags |= QItemSelectionModel::Rows;
     for(int row = 0; row < rows; ++row) {
       QModelIndex index = model_->index(row, 0);
-      selModel->select(index, QItemSelectionModel::Toggle|QItemSelectionModel::Rows);
+      selModel->select(index, flags);
     }
   }
 }
@@ -652,6 +750,132 @@ void FolderView::childDropEvent(QDropEvent* e) {
     Qt::DropAction action = DndActionMenu::askUser(QCursor::pos());
     e->setDropAction(action);
   }
+}
+
+bool FolderView::eventFilter(QObject* watched, QEvent* event) {
+  // NOTE: Instead of simply filtering the drag and drop events of the child view in
+  // the event filter, we overrided each event handler virtual methods in
+  // both QListView and QTreeView and added some childXXXEvent() callbacks.
+  // We did this because of a design flaw of Qt.
+  // All QAbstractScrollArea derived widgets, including QAbstractItemView
+  // contains an internal child widget, which is called a viewport.
+  // The events actually comes from the child viewport, not the parent view itself.
+  // Qt redirects the events of viewport to the viewportEvent() method of
+  // QAbstractScrollArea and let the parent widget handle the events.
+  // Qt implemented this using a event filter installed on the child viewport widget.
+  // That means, when we try to install an event filter on the viewport,
+  // there is already a filter installed by Qt which will be called before ours.
+  // So we can never intercept the event handling of QAbstractItemView by using a filter.
+  // That's why we override respective virtual methods for different events.
+  if(view && watched == view->viewport()) {
+    switch(event->type()) {
+    case QEvent::HoverMove:
+      // activate items on single click
+      if(style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick)) {
+        QHoverEvent* hoverEvent = static_cast<QHoverEvent*>(event);
+        QModelIndex index = view->indexAt(hoverEvent->pos()); // find out the hovered item
+        if(index.isValid()) { // change the cursor to a hand when hovering on an item
+          setCursor(Qt::PointingHandCursor);
+          if(!selectionModel()->hasSelection())
+            selectionModel()->setCurrentIndex(index, QItemSelectionModel::Current);
+        }
+        else
+          setCursor(Qt::ArrowCursor);
+        // turn on auto-selection for hovered item when single click mode is used.
+        if(autoSelectionDelay_ > 0 && model_) {
+          if(!autoSelectionTimer_) {
+            autoSelectionTimer_ = new QTimer(this);
+            connect(autoSelectionTimer_, SIGNAL(timeout()), SLOT(onAutoSelectionTimeout()));
+            lastAutoSelectionIndex_ = QModelIndex();
+          }
+          autoSelectionTimer_->start(autoSelectionDelay_);
+        }
+        break;
+      }
+    case QEvent::HoverLeave:
+      if(style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick))
+        setCursor(Qt::ArrowCursor);
+      break;
+    case QEvent::Wheel:
+      // This is to fix #85: Scrolling doesn't work in compact view
+      // Actually, I think it's the bug of Qt, not ours.
+      // When in compact mode, only the horizontal scroll bar is used and the vertical one is hidden.
+      // So, when a user scroll his mouse wheel, it's reasonable to scroll the horizontal scollbar.
+      // Qt does not implement such a simple feature, unfortunately.
+      // We do it by forwarding the scroll event in the viewport to the horizontal scrollbar.
+      // FIXME: if someday Qt supports this, we have to disable the workaround.
+      if(mode == CompactMode) {
+        QScrollBar* scroll = view->horizontalScrollBar();
+        if(scroll) {
+          QApplication::sendEvent(scroll, event);
+          return true;
+        }
+      }
+      break;
+    }
+  }
+  return QObject::eventFilter(watched, event);
+}
+
+// this slot handles auto-selection of items.
+void FolderView::onAutoSelectionTimeout() {
+  if(QApplication::mouseButtons() != Qt::NoButton)
+    return;
+
+  Qt::KeyboardModifiers mods = QApplication::keyboardModifiers();
+  QPoint pos = view->viewport()->mapFromGlobal(QCursor::pos()); // convert to viewport coordinates
+  QModelIndex index = view->indexAt(pos); // find out the hovered item
+  QItemSelectionModel::SelectionFlags flags = (mode == DetailedListMode ? QItemSelectionModel::Rows : QItemSelectionModel::NoUpdate);
+  QItemSelectionModel* selModel = view->selectionModel();
+
+  if(mods & Qt::ControlModifier) { // Ctrl key is pressed
+    if(selModel->isSelected(index) && index != lastAutoSelectionIndex_) {
+      // unselect a previously selected item
+      selModel->select(index, flags|QItemSelectionModel::Deselect);
+      lastAutoSelectionIndex_ = QModelIndex();
+    }
+    else {
+      // select an unselected item
+      selModel->select(index, flags|QItemSelectionModel::Select);
+      lastAutoSelectionIndex_ = index;
+    }
+    selModel->setCurrentIndex(index, QItemSelectionModel::NoUpdate); // move the cursor
+  }
+  else if(mods & Qt::ShiftModifier) { // Shift key is pressed
+    // select all items between current index and the hovered index.
+    QModelIndex current = selModel->currentIndex();
+    if(selModel->hasSelection() && current.isValid()) {
+      selModel->clear(); // clear old selection
+      selModel->setCurrentIndex(current, QItemSelectionModel::NoUpdate);
+      int begin = current.row();
+      int end = index.row();
+      if(begin > end)
+        qSwap(begin, end);
+      for(int row = begin; row <= end; ++row) {
+        QModelIndex sel = model_->index(row, 0);
+        selModel->select(sel, flags|QItemSelectionModel::Select);
+      }
+    }
+    else { // no items are selected, select the hovered item.
+      if(index.isValid()) {
+        selModel->select(index, flags|QItemSelectionModel::SelectCurrent);
+        selModel->setCurrentIndex(index, QItemSelectionModel::NoUpdate);
+      }
+    }
+    lastAutoSelectionIndex_ = index;
+  }
+  else if(mods == Qt::NoModifier) { // no modifier keys are pressed.
+    if(index.isValid()) {
+      // select the hovered item
+      view->clearSelection();
+      selModel->select(index, flags|QItemSelectionModel::SelectCurrent);
+      selModel->setCurrentIndex(index, QItemSelectionModel::NoUpdate);
+    }
+    lastAutoSelectionIndex_ = index;
+  }
+
+  autoSelectionTimer_->deleteLater();
+  autoSelectionTimer_ = NULL;
 }
 
 void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {

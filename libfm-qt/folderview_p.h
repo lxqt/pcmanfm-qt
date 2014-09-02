@@ -24,6 +24,7 @@
 #include <QListView>
 #include <QTreeView>
 #include <QMouseEvent>
+#include "folderview.h"
 
 class QTimer;
 
@@ -97,9 +98,9 @@ private Q_SLOTS:
 private:
   bool doingLayout_;
   QTimer* layoutTimer_;
-
   bool activationAllowed_;
 };
+
 
 } // namespace Fm
 

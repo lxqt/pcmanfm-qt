@@ -3,8 +3,18 @@ cmake_minimum_required(VERSION 2.8.6)
 project(pcmanfm-qt)
 
 # Setup common compiler flags/variables ---------------------------------------
-set(PCMANFM_VERSION "0.1")
-set(LIBFM_QT_VERSION "0.1")
+set(PCMANFM_QT_VERSION "0.8.0")
+set(LIBFM_QT_VERSION "0.8.0")
+# We use the libtool versioning scheme for the internal so name, "current:revision:age"
+# http://www.gnu.org/software/libtool/manual/html_node/Updating-version-info.html#Updating-version-info
+# https://www.sourceware.org/autobook/autobook/autobook_91.html
+# http://pusling.com/blog/?p=352
+# Actually, libtool uses differnt ways on different operating systems. So there is no
+# universal way to translate a libtool version-info to a cmake version.
+# We use "(current-age).age.revision" as the cmake version.
+# current: 1, revision: 0, age: 0 => version: 1.0.0
+set(LIBFM_QT_LIB_VERSION "1.0.0")
+set(LIBFM_QT_LIB_SOVERSION "1")
 
 # Set default installation paths
 set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for libraries")
@@ -14,10 +24,10 @@ option(USE_QT5 "Use Qt5. Defaults to Qt4" $ENV{USE_QT5})
 
 if(USE_QT5) # actually, we need Qt >= 5.1. Qt 5.0 is not supported.
   cmake_minimum_required(VERSION 2.8.11)
-  find_package(Qt5Widgets REQUIRED)
-  find_package(Qt5DBus REQUIRED)
-  find_package(Qt5LinguistTools REQUIRED)
-  find_package(Qt5X11Extras REQUIRED)
+  find_package(Qt5Widgets 5.1 REQUIRED)
+  find_package(Qt5DBus 5.1 REQUIRED)
+  find_package(Qt5LinguistTools 5.1 REQUIRED)
+  find_package(Qt5X11Extras 5.1 REQUIRED)
   set(XLIB "xcb")
 else()
   find_package(Qt4 4.6 REQUIRED QtCore QtGui QtDBus)
@@ -101,10 +111,9 @@ set (CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/COPYING")
 set (CPACK_RESOURCE_FILE_README "${CMAKE_CURRENT_SOURCE_DIR}/README")
 set (CPACK_PACKAGE_VENDOR "")
 set (CPACK_PACKAGE_VERSION_MAJOR "0")
-set (CPACK_PACKAGE_VERSION_MINOR "1")
+set (CPACK_PACKAGE_VERSION_MINOR "8")
 set (CPACK_PACKAGE_VERSION_PATCH "0")
 set (CPACK_GENERATOR TBZ2)
 set (CPACK_SOURCE_GENERATOR TBZ2)
 set (CPACK_SOURCE_IGNORE_FILES /build/;.gitignore;.*~;.git;.kdev4;temp)
-# set (CPACK_SOURCE_PACKAGE_FILE_NAME pcmanfm-qt.0.1.0.tar.gz)
 include (CPack)

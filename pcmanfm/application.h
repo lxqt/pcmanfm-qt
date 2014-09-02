@@ -27,6 +27,7 @@
 #include "editbookmarksdialog.h"
 #include <QVector>
 #include <QPointer>
+#include <QProxyStyle>
 #include <QTranslator>
 #include <gio/gio.h>
 
@@ -39,11 +40,21 @@ struct QAbstractNativeEventFilter {
 };
 #endif
 
+class QScreen;
+
 namespace PCManFM {
 
 class DesktopWindow;
 class PreferencesDialog;
 class DesktopPreferencesDialog;
+
+class ProxyStyle: public QProxyStyle {
+  Q_OBJECT
+public:
+  ProxyStyle() : QProxyStyle() {}
+  virtual ~ProxyStyle() {}
+  virtual int styleHint(StyleHint hint, const QStyleOption * option = 0, const QWidget * widget = 0, QStyleHintReturn * returnData = 0) const;
+};
 
 class Application : public QApplication, public QAbstractNativeEventFilter {
   Q_OBJECT
@@ -97,11 +108,18 @@ protected Q_SLOTS:
   void onLastWindowClosed();
   void onSaveStateRequest(QSessionManager & manager);
   void onScreenResized(int num);
-  void onWorkAreaResized(int num);
+  void onWorkAreaResized(int num); // // This slot is for Qt4 only
   void onScreenCountChanged(int newCount);
   void initVolumeManager();
- 
+
+  // the following slots are for Qt5 only
+  void onVirtualGeometryChanged(const QRect& rect);
+  void onScreenDestroyed(QObject* screenObj);
+  void onScreenAdded(QScreen* newScreen);
+  void reloadDesktopsAsNeeded();
+
 protected:
+  virtual bool eventFilter(QObject* watched, QEvent* event);
   virtual void commitData(QSessionManager & manager);
   bool parseCommandLineArgs();
   DesktopWindow* createDesktopWindow(int screenNum);

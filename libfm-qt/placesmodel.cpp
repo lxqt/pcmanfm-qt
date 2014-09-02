@@ -54,11 +54,16 @@ PlacesModel::PlacesModel(QObject* parent):
 
   createTrashItem();
 
-  FmPath* path = fm_path_new_for_uri("computer:///");
-  computerItem = new PlacesModelItem("computer", tr("Computer"), path);
-  fm_path_unref(path);
-  computerItem->setEditable(false);
-  placesRoot->appendRow(computerItem);
+  FmPath* path;
+  if(isUriSchemeSupported("computer")) {
+    path = fm_path_new_for_uri("computer:///");
+    computerItem = new PlacesModelItem("computer", tr("Computer"), path);
+    fm_path_unref(path);
+    computerItem->setEditable(false);
+    placesRoot->appendRow(computerItem);
+  }
+  else
+    computerItem = NULL;
 
   const char* applicaion_icon_names[] = {"system-software-install", "applications-accessories", "application-x-executable"};
   // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
@@ -70,17 +75,21 @@ PlacesModel::PlacesModel(QObject* parent):
   applicationsItem->setEditable(false);
   placesRoot->appendRow(applicationsItem);
 
-  const char* network_icon_names[] = {"network", "folder-network", "folder"};
-  // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
-  gicon = g_themed_icon_new_from_names((char**)network_icon_names, G_N_ELEMENTS(network_icon_names));
-  fmicon = fm_icon_from_gicon(gicon);
-  g_object_unref(gicon);
-  path = fm_path_new_for_uri("network:///");
-  networkItem = new PlacesModelItem(fmicon, tr("Network"), path);
-  fm_icon_unref(fmicon);
-  fm_path_unref(path);
-  networkItem->setEditable(false);
-  placesRoot->appendRow(networkItem);
+  if(isUriSchemeSupported("network")) {
+    const char* network_icon_names[] = {"network", "folder-network", "folder"};
+    // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
+    gicon = g_themed_icon_new_from_names((char**)network_icon_names, G_N_ELEMENTS(network_icon_names));
+    fmicon = fm_icon_from_gicon(gicon);
+    g_object_unref(gicon);
+    path = fm_path_new_for_uri("network:///");
+    networkItem = new PlacesModelItem(fmicon, tr("Network"), path);
+    fm_icon_unref(fmicon);
+    fm_path_unref(path);
+    networkItem->setEditable(false);
+    placesRoot->appendRow(networkItem);
+  }
+  else
+    networkItem = NULL;
 
   devicesRoot = new QStandardItem(tr("Devices"));
   devicesRoot->setEditable(false);

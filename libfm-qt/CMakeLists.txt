@@ -111,7 +111,9 @@ target_link_libraries(${LIBRARY_NAME}
 # set libtool soname
 set_target_properties(
   ${LIBRARY_NAME}
-  PROPERTIES SOVERSION "0.0.0"
+  PROPERTIES
+  VERSION ${LIBFM_QT_LIB_VERSION}
+  SOVERSION ${LIBFM_QT_LIB_SOVERSION}
 )
 
 # install include header files (FIXME: can we make this cleaner? should dir name be versioned?)

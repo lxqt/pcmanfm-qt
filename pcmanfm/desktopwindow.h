@@ -45,6 +45,8 @@ class Settings;
 class DesktopWindow : public View {
 Q_OBJECT
 public:
+  friend class Application;
+
   enum WallpaperMode {
     WallpaperNone,
     WallpaperStretch,
@@ -66,12 +68,18 @@ public:
   void updateWallpaper();
   void updateFromSettings(Settings& settings);
 
-  void setWorkArea(const QRect& rect);
-
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) // Qt 5
   void xcbEvent(xcb_generic_event_t* generic_event);
 #endif
 
+  void queueRelayout(int delay = 0);
+
+  int screenNum() const {
+    return screenNum_;
+  }
+
+  void setScreenNum(int num);
+  
 protected:
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
   virtual void prepareFileMenu(Fm::FileMenu* menu);
@@ -83,11 +91,14 @@ protected:
 
   QImage loadWallpaperFile(QSize requiredSize);
 
+  virtual bool event(QEvent* event);
+  virtual bool eventFilter(QObject * watched, QEvent * event);
+
 #if QT_VERSION < QT_VERSION_CHECK(5, 0, 0) // Qt 4
   virtual bool x11Event(XEvent * event);
 #endif
 
-  void queueRelayout();
+  virtual void childDropEvent(QDropEvent* e);
 
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
@@ -101,7 +112,15 @@ protected Q_SLOTS:
   void relayoutItems();
   void onStickToCurrentPos(bool toggled);
 
-  void updateWorkArea();
+  // void updateWorkArea();
+  
+  // file operations
+  void onCutActivated();
+  void onCopyActivated();
+  void onPasteActivated();
+  void onRenameActivated();
+  void onDeleteActivated();
+  void onFilePropertiesActivated();
 
 private:
   Fm::ProxyFolderModel* proxyModel_;
