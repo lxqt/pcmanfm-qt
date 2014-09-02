@@ -809,12 +809,12 @@ Ultima modifica: %3</translation>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
         <source>src file info</source>
-        <translation type="unfinished"/>
+        <translation>info file sorg</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
         <source>dest file info</source>
-        <translation type="unfinished"/>
+        <translation>info file dest</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
