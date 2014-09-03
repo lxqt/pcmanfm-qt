@@ -81,6 +81,17 @@ add_custom_target(update_translations ALL DEPENDS
   pcmanfm_translations
 )
 
+# manpage for pcmanfm-qt
+configure_file(
+  ${CMAKE_CURRENT_SOURCE_DIR}/pcmanfm-qt.1.in
+  ${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt.1
+  @ONLY
+)
+install(FILES
+  ${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt.1
+  DESTINATION ${CMAKE_INSTALL_MANDIR}/man1
+)
+
 # add Doxygen support to genrate API docs
 # References:
 # http://majewsky.wordpress.com/2010/08/14/tip-of-the-day-cmake-and-doxygen/
