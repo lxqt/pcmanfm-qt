@@ -75,6 +75,14 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.textColor->setColor(settings.desktopFgColor());
   ui.shadowColor->setColor(settings.desktopShadowColor());
   ui.showWmMenu->setChecked(settings.showWmMenu());
+
+  if (i) { // Use wallpaper
+    ui.backgroundColor->setEnabled(false);
+    ui.backgroundColorLabel->setEnabled(false);
+  } else { // Use background color only
+    ui.imageFile->setEnabled(false);
+    ui.browse->setEnabled(false);
+  }
 }
 
 DesktopPreferencesDialog::~DesktopPreferencesDialog() {
@@ -108,6 +116,8 @@ void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
   bool enable = (mode != DesktopWindow::WallpaperNone);
   ui.imageFile->setEnabled(enable);
   ui.browse->setEnabled(enable);
+  ui.backgroundColor->setEnabled(!enable);
+  ui.backgroundColorLabel->setEnabled(!enable);
 }
 
 void DesktopPreferencesDialog::onBrowseClicked() {
