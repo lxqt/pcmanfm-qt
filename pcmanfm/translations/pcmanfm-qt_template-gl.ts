@@ -74,7 +74,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="146"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>Licenza</translation>
     </message>
 </context>
 <context>
@@ -208,7 +208,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="506"/>
         <source>Alt+Home</source>
-        <translation type="unfinished"/>
+        <translation>Alt+Inicio</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="525"/>
@@ -448,12 +448,12 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="556"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"/>
+        <translation>Adian&amp;te</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="558"/>
         <source>Go Forward</source>
-        <translation type="unfinished"/>
+        <translation>Adiante</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="560"/>
@@ -473,112 +473,112 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="566"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Pechar a lapela</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="568"/>
         <source>File &amp;Properties</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Propiedades do ficheiro</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="570"/>
         <source>&amp;Folder Properties</source>
-        <translation type="unfinished"/>
+        <translation>Propiedades do &amp;cartafol</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="582"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Ordenación</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="587"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"/>
+        <translation>Barra de ferramentas principal</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="567"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="569"/>
         <source>Alt+Return</source>
-        <translation type="unfinished"/>
+        <translation>Alt+Intro</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="571"/>
         <source>Case Sensitive</source>
-        <translation type="unfinished"/>
+        <translation>Distinguindo maiúsculas de minúsculas</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="572"/>
         <source>By File Size</source>
-        <translation type="unfinished"/>
+        <translation>Polo tamaño do ficheiro</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="573"/>
         <source>Close Window</source>
-        <translation type="unfinished"/>
+        <translation>Pechar a xanela</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="574"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"/>
+        <translation>Editar os marcadores</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="575"/>
         <source>Open &amp;Terminal</source>
-        <translation type="unfinished"/>
+        <translation>Abrir un &amp;terminal</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="576"/>
         <source>F4</source>
-        <translation type="unfinished"/>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="577"/>
         <source>Open as &amp;Root</source>
-        <translation type="unfinished"/>
+        <translation>Abrir como &amp;root</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="578"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Editar marcadores</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="579"/>
         <source>&amp;File</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Ficheiro</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="580"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Axuda</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="581"/>
         <source>&amp;View</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Ver</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="583"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Editar</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="584"/>
         <source>&amp;Bookmarks</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Marcadores</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="585"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Ir para</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="586"/>
         <source>&amp;Tool</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Ferramenta</translation>
     </message>
 </context>
 <context>
@@ -586,32 +586,32 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="142"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"/>
+        <translation>Nome do perfil de configuración</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="142"/>
         <source>PROFILE</source>
-        <translation type="unfinished"/>
+        <translation>PERFIL</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="143"/>
         <source>Run PCManFM as a daemon</source>
-        <translation type="unfinished"/>
+        <translation>Executar PCManFM como un servizo</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="145"/>
         <source>Quit PCManFM</source>
-        <translation type="unfinished"/>
+        <translation>Saír do PCManFM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="146"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"/>
+        <translation>Iniciar o xestor de escritorio</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="147"/>
         <source>Turn off desktop manager if it's running</source>
-        <translation type="unfinished"/>
+        <translation>Apagar o xestor de escritorio se está en execución</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="148"/>
@@ -622,7 +622,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
         <location filename="../application.cpp" line="148"/>
         <location filename="../application.cpp" line="152"/>
         <source>NAME</source>
-        <translation type="unfinished"/>
+        <translation>NOME</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="149"/>
@@ -632,7 +632,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="149"/>
         <source>FILE</source>
-        <translation type="unfinished"/>
+        <translation>FICHEIRO</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="151"/>
@@ -642,7 +642,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="151"/>
         <source>MODE</source>
-        <translation type="unfinished"/>
+        <translation>MODO</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="152"/>
@@ -652,7 +652,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="153"/>
         <source>Open new window</source>
-        <translation type="unfinished"/>
+        <translation>Abrir unha nova xanela</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="154"/>
@@ -662,13 +662,13 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="155"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"/>
+        <translation>[FICHEIRO1, FICHEIRO2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="433"/>
         <location filename="../application.cpp" line="440"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="440"/>
@@ -681,12 +681,12 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../autorundialog.cpp" line="43"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"/>
+        <translation>Abrir no xestor de ficheiros</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="134"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"/>
+        <translation>Disco extraíbel</translation>
     </message>
 </context>
 <context>
@@ -694,32 +694,32 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="41"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"/>
+        <translation>Encher só coa cor de fondo</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="42"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"/>
+        <translation>Estirar para encher a pantalla completa</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="43"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"/>
+        <translation>Estirar para adaptar á pantalla</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="44"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"/>
+        <translation>Centrar na pantalla</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="45"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"/>
+        <translation>Facer mosaico coa imaxe para encher a pantalla completa</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="120"/>
         <source>Image Files</source>
-        <translation type="unfinished"/>
+        <translation>Ficheiros de imaxe</translation>
     </message>
 </context>
 <context>
@@ -732,7 +732,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../desktopwindow.cpp" line="354"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"/>
+        <translation>Preferencias do escritorio</translation>
     </message>
 </context>
 <context>
@@ -740,23 +740,23 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../mainwindow.cpp" line="723"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Mover ao lixo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="723"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Eliminar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="784"/>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"/>
+        <translation>A orde para cambiar de usuario non está configurada.</translation>
     </message>
 </context>
 <context>
@@ -764,22 +764,22 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../preferencesdialog.cpp" line="172"/>
         <source>Icon View</source>
-        <translation type="unfinished"/>
+        <translation>Vista en Iconas</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="173"/>
         <source>Compact Icon View</source>
-        <translation type="unfinished"/>
+        <translation>Vista compacta en iconas</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="174"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"/>
+        <translation>Vista de miniaturas</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="175"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"/>
+        <translation>Ver como lista detallada</translation>
     </message>
 </context>
 <context>
@@ -787,31 +787,29 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../tabpage.cpp" line="205"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="218"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation type="unfinished"/>
+        <translation>Espazo libre: %1 (Total: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="233"/>
         <source>%n item(s)</source>
-        <translation type="unfinished">
-            <numerusform/>
-        </translation>
-    </message>
+        <translation><numerusform>%n elemento</numerusform>
+        <numerusform>%n elementos</numerusform>
+        </translation></message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="235"/>
         <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform/>
-        </translation>
-    </message>
+        <translation><numerusform> (%n agochado)</numerusform>
+        <numerusform> (%n agochados)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="371"/>
         <source>%1 item(s) selected</source>
-        <translation type="unfinished"/>
+        <translation>Escolleu %1 elemento(s)</translation>
     </message>
 </context>
 <context>
@@ -819,17 +817,17 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../view.cpp" line="106"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"/>
+        <translation>Abrir nunha nova l&amp;apela</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="110"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"/>
+        <translation>Abrir nunha nova xa&amp;nela</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="117"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"/>
+        <translation>Abrir nun termina&amp;l</translation>
     </message>
 </context>
 <context>
@@ -837,112 +835,112 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="476"/>
         <source>Preferences</source>
-        <translation type="unfinished"/>
+        <translation>Preferencias</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="481"/>
         <source>User Interface</source>
-        <translation type="unfinished"/>
+        <translation>Interface de usuario</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="483"/>
         <source>Behavior</source>
-        <translation type="unfinished"/>
+        <translation>Comportamento</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="485"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"/>
+        <translation>Miniatura</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="487"/>
         <source>Volume</source>
-        <translation type="unfinished"/>
+        <translation>Volume</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="489"/>
         <source>Advanced</source>
-        <translation type="unfinished"/>
+        <translation>Avanzado</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="492"/>
         <source>Icons</source>
-        <translation type="unfinished"/>
+        <translation>Iconas</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="493"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"/>
+        <translation>Tamaño das iconas grandes:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="494"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"/>
+        <translation>Tamaño das iconas pequenas:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="495"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"/>
+        <translation>Tamaño das miniaturas:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="496"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"/>
+        <translation>Tamaño das iconas do panel lateral:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="497"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"/>
+        <translation>Tema de iconas:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="498"/>
         <source>Window</source>
-        <translation type="unfinished"/>
+        <translation>Xanela</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="499"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"/>
+        <translation>Largo predeterminado para as novas xanelas:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="500"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"/>
+        <translation>Alto predeterminado para as novas xanelas:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="501"/>
         <source>Always show the tab bar</source>
-        <translation type="unfinished"/>
+        <translation>Amosar sempre a barra de lapelas</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="502"/>
         <source>Show 'Close' buttons on tabs	</source>
-        <translation type="unfinished"/>
+        <translation>Amosar os botóns de «Pechar» nas lapelas	</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="503"/>
         <source>Browsing</source>
-        <translation type="unfinished"/>
+        <translation>Navegando</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="504"/>
         <source>Open files with single click</source>
-        <translation type="unfinished"/>
+        <translation>Abrir os ficheiros cun só clic</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="505"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"/>
+        <translation>Modo de vista predeterminado:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="506"/>
         <source>File Operations</source>
-        <translation type="unfinished"/>
+        <translation>Operacións de ficheiro</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="507"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"/>
+        <translation>Confirmar antes de eliminar os ficheiros</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="508"/>
@@ -967,48 +965,49 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="512"/>
         <source> KB</source>
-        <translation type="unfinished"/>
+        <translation> KB</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="513"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"/>
+        <translation>Montaxe automático</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="514"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"/>
+        <translation>Montar os volumes montábeis automaticamente no arrinque do programa</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="515"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"/>
+        <translation>Montar os dispositivos removíbeis automaticamente ao seren inseridos</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="516"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"/>
+        <translation>Amosar as opción para os dispositivos removíbeis ao seren inseridos</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="517"/>
         <source>Programs</source>
-        <translation type="unfinished"/>
+        <translation>Programas</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="518"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"/>
+        <translation>Emulador de terminal:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="519"/>
         <source>Switch user command:</source>
-        <translation type="unfinished"/>
+        <translation>Orde de cambio de usuario:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="520"/>
         <source>Examples: "xterm -e %s" for terminal or "gksu %s" for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation type="unfinished"/>
+        <translation>Exemplos: «xterm -e %s» para o terminal ou «gksu %s» para cambiar de usuario.
+%s = á liña de ordes que quere executar co terminal ou como superusario.</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="522"/>
