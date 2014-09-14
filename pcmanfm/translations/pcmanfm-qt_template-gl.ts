@@ -5,22 +5,22 @@
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="121"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Sobre</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="122"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-size:16pt; font-weight:600;"&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-size:16pt; font-weight:600;"&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="123"/>
         <source>Lightweight file manager</source>
-        <translation type="unfinished"/>
+        <translation>Un xestor de xanelas lixeiro</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="124"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="http://pcmanfm.sourceforge.net/"&gt;&lt;span style=" text-decoration: underline; color:#0000ff;"&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="http://pcmanfm.sourceforge.net/"&gt;&lt;span style=" text-decoration: underline; color:#0000ff;"&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="125"/>
@@ -32,7 +32,7 @@
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="128"/>
         <source>Authors</source>
-        <translation type="unfinished"/>
+        <translation>Autores</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="129"/>
@@ -53,7 +53,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"/>
+        <translation>PCMan File Manager
+
+Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
+
+Este programa é software libre; pode distribuílo e/ou
+modificalo baixo os termos da Licenza Pública Xeral GNU
+tal como foi publicada pola Free Software Foundation; tanto na versión 2
+da Licenza, como (segundo o seu criterio) calquera versión posterior.
+
+Este programa distribúese coa esperanza de que sexa útil,
+pero SEN NINGUNHA GARANTÍA; nin sequera a garantíia implícita de
+COMERCIALIZACIÓN ou ADECUACIÖN PARA UN PROPÓSITO ESPECÍFICO.
+Vexa a Licenza Pública Xeral GNU para obter mais detalles.
+
+Debe ter recibido unha copia da Licenza Pública Xeral GNU
+con este programa; se non é así, escriba á Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="146"/>
@@ -66,22 +82,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="110"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"/>
+        <translation>Foi inserido un dispositivo removíbel</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="112"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Foi inserido un dispositivo removíbel&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="113"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"/>
+        <translation>Tipo de dispositivo:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="114"/>
         <source>Detecting...</source>
-        <translation type="unfinished"/>
+        <translation>Detectando...</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="115"/>
@@ -94,67 +110,67 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="240"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"/>
+        <translation>Preferencias do escritorio</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="241"/>
         <source>Background</source>
-        <translation type="unfinished"/>
+        <translation>Fondo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="242"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"/>
+        <translation>Modo do fondo de escritorio:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="243"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"/>
+        <translation>Ficheiro de imaxe do fondo de escritorio:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="245"/>
         <source>Select background color:</source>
-        <translation type="unfinished"/>
+        <translation>Escoller a cor do fondo:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="247"/>
         <source>Image file</source>
-        <translation type="unfinished"/>
+        <translation>Ficheiro de imaxe</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="252"/>
         <source>Image file path</source>
-        <translation type="unfinished"/>
+        <translation>Ruta ao ficheiro de imaxe</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="253"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Examinar</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="254"/>
         <source>Label Text</source>
-        <translation type="unfinished"/>
+        <translation>Texto da etiqueta</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="257"/>
         <source>Select  text color:</source>
-        <translation type="unfinished"/>
+        <translation>Escoller a cor do texto:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="258"/>
         <source>Select shadow color:</source>
-        <translation type="unfinished"/>
+        <translation>Escoller a cor da sombra:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="259"/>
         <source>Select font:</source>
-        <translation type="unfinished"/>
+        <translation>Escoller o tipo de letra:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="261"/>
         <source>General</source>
-        <translation type="unfinished"/>
+        <translation>Xeral</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="262"/>
@@ -164,7 +180,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="263"/>
         <source>Advanced</source>
-        <translation type="unfinished"/>
+        <translation>Avanzado</translation>
     </message>
 </context>
 <context>
@@ -172,12 +188,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="499"/>
         <source>File Manager</source>
-        <translation type="unfinished"/>
+        <translation>Xestor de ficheiros</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="502"/>
         <source>Go Up</source>
-        <translation type="unfinished"/>
+        <translation>Subir</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="504"/>
@@ -187,7 +203,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="505"/>
         <source>Home</source>
-        <translation type="unfinished"/>
+        <translation>Inicio</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="506"/>
@@ -197,232 +213,232 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="525"/>
         <source>Reload</source>
-        <translation type="unfinished"/>
+        <translation>Cargar de novo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="508"/>
         <source>F5</source>
-        <translation type="unfinished"/>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="507"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Cargar de novo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="509"/>
         <source>Go</source>
-        <translation type="unfinished"/>
+        <translation>Ir para</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="510"/>
         <source>Quit</source>
-        <translation type="unfinished"/>
+        <translation>Saír</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="511"/>
         <source>&amp;About</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Sobre</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="514"/>
         <source>New Window</source>
-        <translation type="unfinished"/>
+        <translation>Nova xanela</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="516"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="517"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"/>
+        <translation>Amosar a&amp;gochados</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="518"/>
         <source>Ctrl+H</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="519"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Computador</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="520"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Lixo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="521"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Rede</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="522"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Escritorio</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="523"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"/>
+        <translation>En&amp;gadir aos marcadores</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="524"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Aplicacións</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="531"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl-X</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="532"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Copiar</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="533"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="534"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Pegar</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="535"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="536"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar &amp;todo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="538"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"/>
+        <translation>Pre&amp;ferencias</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="561"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Inverter a selección</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="562"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Eliminar</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="564"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Renomear</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="537"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="500"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"/>
+        <translation>S&amp;ubir</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="512"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Nova xanela</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="526"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"/>
+        <translation>Vista de &amp;iconas</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="527"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"/>
+        <translation>Vista &amp;compacta</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="528"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"/>
+        <translation>Vista &amp;detallada</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="529"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"/>
+        <translation>Vista de &amp;miniaturas</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="530"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"/>
+        <translation>Cor&amp;tar</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="539"/>
         <source>Ascending</source>
-        <translation type="unfinished"/>
+        <translation>Ascendente</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="540"/>
         <source>Descending</source>
-        <translation type="unfinished"/>
+        <translation>Descendente</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="541"/>
         <source>By File Name</source>
-        <translation type="unfinished"/>
+        <translation>Polo nome do ficheiro</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="542"/>
         <source>By Modification Time</source>
-        <translation type="unfinished"/>
+        <translation>Pola data de modificación</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="543"/>
         <source>By File Type</source>
-        <translation type="unfinished"/>
+        <translation>Polo tipo do ficheiro</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="544"/>
         <source>By Owner</source>
-        <translation type="unfinished"/>
+        <translation>Polo propietario</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="545"/>
         <source>Folder First</source>
-        <translation type="unfinished"/>
+        <translation>Primeiro os cartafoles</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="546"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"/>
+        <translation>Nova &amp;lapela</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="548"/>
         <source>New Tab</source>
-        <translation type="unfinished"/>
+        <translation>Nova lapela</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="550"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="551"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"/>
+        <translation>A&amp;trás</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="553"/>
         <source>Go Back</source>
-        <translation type="unfinished"/>
+        <translation>Ir cara atrás</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="555"/>
@@ -447,12 +463,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="563"/>
         <source>Del</source>
-        <translation type="unfinished"/>
+        <translation>Supr</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="565"/>
         <source>F2</source>
-        <translation type="unfinished"/>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="566"/>
