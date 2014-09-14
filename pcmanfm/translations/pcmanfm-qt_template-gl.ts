@@ -27,7 +27,9 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation type="unfinished"/>
+        <translation>Programación:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="128"/>
@@ -102,7 +104,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="115"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"/>
+        <translation>Escolla a acción que quere realizar:</translation>
     </message>
 </context>
 <context>
@@ -175,7 +177,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="262"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation type="unfinished"/>
+        <translation>Amosar os menús fornecidos polos xestores de xanelas cando se preme no escritorio</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="263"/>
@@ -198,7 +200,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="504"/>
         <source>Alt+Up</source>
-        <translation type="unfinished"/>
+        <translation>Alt+Frecha arriba</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="505"/>
@@ -443,7 +445,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="555"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"/>
+        <translation>Alt+Frecha esquerda</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="556"/>
@@ -458,7 +460,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="560"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"/>
+        <translation>Alt+Frecha dereita</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="563"/>
@@ -616,7 +618,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="148"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"/>
+        <translation>Abrir o diálogo de preferencias do escritorio na páxina co nome especificado</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="148"/>
@@ -627,7 +629,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="149"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"/>
+        <translation>Estabelecer o fondo de pantalla do escritorio desde o FICHEIRO de imaxe</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="149"/>
@@ -637,7 +639,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="151"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation type="unfinished"/>
+        <translation>Axuste o modo de fondo de escritorio. MODO=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="151"/>
@@ -647,7 +649,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="152"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"/>
+        <translation>Abrir o diálogo de preferencias do escritorio na páxina co nome especificado</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="153"/>
@@ -657,7 +659,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="154"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"/>
+        <translation>Abrir a utilidade de busca de ficheiros</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="155"/>
@@ -673,7 +675,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="440"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"/>
+        <translation>Non foi estabelecido o emulador de terminal</translation>
     </message>
 </context>
 <context>
@@ -727,7 +729,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../desktopwindow.cpp" line="332"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Permanente na posición actual</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="354"/>
@@ -945,22 +947,22 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="508"/>
         <source>Move deleted files to "trash bin" instead of erasing from disk.</source>
-        <translation type="unfinished"/>
+        <translation>Mover os ficheiros eliminados ao «cesto do lixo» no canto de borralos do disco.</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="509"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"/>
+        <translation>Amosar miniaturas dos ficheiros</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="510"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"/>
+        <translation>Amosar só as miniaturas dos ficheiros locais</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="511"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation type="unfinished"/>
+        <translation>Non xerar miniaturas dos ficheiros de imaxe se o tamaño excede de:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="512"/>
@@ -1012,12 +1014,12 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="522"/>
         <source>Archiver integration:</source>
-        <translation type="unfinished"/>
+        <translation>Integración do «Archiver»:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="523"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"/>
+        <translation>Utilizar prefixos decimais SI no canto de prefixos binarios IEC </translation>
     </message>
 </context>
 </TS>
