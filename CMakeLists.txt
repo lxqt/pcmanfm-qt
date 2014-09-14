@@ -61,7 +61,7 @@ add_definitions(
 
 if (CMAKE_COMPILER_IS_GNUCXX)
   # set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
-  set(CMAKE_CXX_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions")
+  set(CMAKE_CXX_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions ${CMAKE_CXX_FLAGS}")
 endif()
 
 # Eanble CMake auto-moc support for Qt
@@ -79,6 +79,17 @@ add_subdirectory(pcmanfm)
 add_custom_target(update_translations ALL DEPENDS
   libfm_translations
   pcmanfm_translations
+)
+
+# manpage for pcmanfm-qt
+configure_file(
+  ${CMAKE_CURRENT_SOURCE_DIR}/pcmanfm-qt.1.in
+  ${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt.1
+  @ONLY
+)
+install(FILES
+  ${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt.1
+  DESTINATION ${CMAKE_INSTALL_MANDIR}/man1
 )
 
 # add Doxygen support to genrate API docs
