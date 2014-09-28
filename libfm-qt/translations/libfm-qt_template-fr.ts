@@ -187,12 +187,12 @@
     <message>
         <location filename="../file-props.ui" line="574"/>
         <source>SetUID</source>
-        <translation type="unfinished"/>
+        <translation>SetUID</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="581"/>
         <source>SetGID</source>
-        <translation type="unfinished"/>
+        <translation>SetGID</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="617"/>
@@ -241,7 +241,7 @@
     <message>
         <location filename="../filemenu.cpp" line="96"/>
         <source>OpenWith</source>
-        <translation type="unfinished"/>
+        <translation>OpenWith</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="126"/>

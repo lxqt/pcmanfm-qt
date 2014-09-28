@@ -209,7 +209,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="505"/>
         <source>Home</source>
-        <translation type="unfinished"/>
+        <translation>Page d'accueil</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="506"/>
@@ -234,7 +234,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="509"/>
         <source>Go</source>
-        <translation type="unfinished"/>
+        <translation>Aller à…</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="510"/>
@@ -579,7 +579,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="585"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"/>
+        <translation>A&amp;ller à…</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="586"/>
@@ -628,58 +628,58 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         <location filename="../application.cpp" line="148"/>
         <location filename="../application.cpp" line="152"/>
         <source>NAME</source>
-        <translation type="unfinished"/>
+        <translation>NAME</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="149"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"/>
+        <translation>Définir le fond d'écran de bureau depuis l'image FILE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="149"/>
         <source>FILE</source>
-        <translation type="unfinished"/>
+        <translation>FILE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="151"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation type="unfinished"/>
+        <translation>Définir le mode de fond d'écran de bureau. MODE=(couleur|étirer|ajuster|centrer|découper)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="151"/>
         <source>MODE</source>
-        <translation type="unfinished"/>
+        <translation>MODE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="152"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"/>
+        <translation>Ouvrir la boîte de dialogue des préférences sur la page avec le nom spécifié</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="153"/>
         <source>Open new window</source>
-        <translation type="unfinished"/>
+        <translation>Ouvrir une nouvelle fenêtre</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="154"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"/>
+        <translation>Ouvrir l'utilitaire de recherche de fichiers</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="155"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"/>
+        <translation>[FILE1, FILE2, etc.]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="433"/>
         <location filename="../application.cpp" line="440"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>Erreur</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="440"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"/>
+        <translation>L'émulateur de terminal n'est pas défini.</translation>
     </message>
 </context>
 <context>
@@ -687,12 +687,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../autorundialog.cpp" line="43"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"/>
+        <translation>Ouvrir dans le gestionnaire de fichiers</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="134"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"/>
+        <translation>Disque amovible</translation>
     </message>
 </context>
 <context>
@@ -700,32 +700,32 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="41"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"/>
+        <translation>Remplir seulement avec la couleur d'arrière-plan</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="42"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"/>
+        <translation>Étirer pour remplir l'écran entier</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="43"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"/>
+        <translation>Étirer pour remplir l'écran</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="44"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"/>
+        <translation>Centrer sur l’écran</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="45"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"/>
+        <translation>Faire une mosaïque avec l'image pour remplir l'écran entier</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="120"/>
         <source>Image Files</source>
-        <translation type="unfinished"/>
+        <translation>Fichiers image</translation>
     </message>
 </context>
 <context>
@@ -733,12 +733,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="332"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"/>
+        <translation>Res&amp;ter à la position actuelle</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="354"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"/>
+        <translation>Préférences du bureau</translation>
     </message>
 </context>
 <context>
@@ -746,23 +746,23 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="723"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Mettre à la corbeille</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="723"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Supprimer</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="784"/>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>Erreur</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"/>
+        <translation>La commande de changement d’utilisateur n'est pas configurée.</translation>
     </message>
 </context>
 <context>
@@ -770,22 +770,22 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="172"/>
         <source>Icon View</source>
-        <translation type="unfinished"/>
+        <translation>Vue en icônes</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="173"/>
         <source>Compact Icon View</source>
-        <translation type="unfinished"/>
+        <translation>Vue en icônes compacte</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="174"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"/>
+        <translation>Vue en vignettes</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="175"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"/>
+        <translation>Vue en liste détaillée</translation>
     </message>
 </context>
 <context>
@@ -793,31 +793,29 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../tabpage.cpp" line="205"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>Erreur</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="218"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation type="unfinished"/>
+        <translation>Espace libre: %1 (total : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="233"/>
         <source>%n item(s)</source>
-        <translation type="unfinished">
-            <numerusform/>
-        </translation>
-    </message>
+        <translation><numerusform>%n élément</numerusform>
+        <numerusform>%n éléments</numerusform>
+        </translation></message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="235"/>
         <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform/>
-        </translation>
-    </message>
+        <translation><numerusform> (%n caché)</numerusform>
+        <numerusform> (%n cachés)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="371"/>
         <source>%1 item(s) selected</source>
-        <translation type="unfinished"/>
+        <translation>%1 élément(s) sélectionné(s)</translation>
     </message>
 </context>
 <context>
@@ -825,17 +823,17 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../view.cpp" line="106"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"/>
+        <translation>Ouvrir dans un nouvel ongle&amp;t</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="110"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"/>
+        <translation>Ouvrir &amp;dans une nouvelle fenêtre</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="117"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"/>
+        <translation>Ouvrir dans &amp;le terminal</translation>
     </message>
 </context>
 <context>
@@ -843,188 +841,189 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="476"/>
         <source>Preferences</source>
-        <translation type="unfinished"/>
+        <translation>Préférences</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="481"/>
         <source>User Interface</source>
-        <translation type="unfinished"/>
+        <translation>Interface utilisateur</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="483"/>
         <source>Behavior</source>
-        <translation type="unfinished"/>
+        <translation>Comportement</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="485"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"/>
+        <translation>Vignette</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="487"/>
         <source>Volume</source>
-        <translation type="unfinished"/>
+        <translation>Volume</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="489"/>
         <source>Advanced</source>
-        <translation type="unfinished"/>
+        <translation>Avancé</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="492"/>
         <source>Icons</source>
-        <translation type="unfinished"/>
+        <translation>Icônes</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="493"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"/>
+        <translation>Taille des grandes icônes :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="494"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"/>
+        <translation>Taille des petites icônes :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="495"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"/>
+        <translation>Taille des vignettes :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="496"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"/>
+        <translation>Taille des icônes de panneau latéral :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="497"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"/>
+        <translation>Thème d'icônes : </translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="498"/>
         <source>Window</source>
-        <translation type="unfinished"/>
+        <translation>Fenêtre</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="499"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"/>
+        <translation>Largeur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="500"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"/>
+        <translation>Hauteur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="501"/>
         <source>Always show the tab bar</source>
-        <translation type="unfinished"/>
+        <translation>Toujours afficher la barre des onglets</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="502"/>
         <source>Show 'Close' buttons on tabs	</source>
-        <translation type="unfinished"/>
+        <translation>Afficher le bouton « Fermer » sur les onglets	</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="503"/>
         <source>Browsing</source>
-        <translation type="unfinished"/>
+        <translation>Navigation</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="504"/>
         <source>Open files with single click</source>
-        <translation type="unfinished"/>
+        <translation>Ouvrir les fichiers avec un simple clic</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="505"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"/>
+        <translation>Mode de vue par défaut :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="506"/>
         <source>File Operations</source>
-        <translation type="unfinished"/>
+        <translation>Opérations sur les fichiers</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="507"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"/>
+        <translation>Confirmer avant de supprimer les fichiers</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="508"/>
         <source>Move deleted files to "trash bin" instead of erasing from disk.</source>
-        <translation type="unfinished"/>
+        <translation>Mettre les fichiers supprimés à la corbeille eu lieu de les effacer du disque.</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="509"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"/>
+        <translation>Montrer les vignettes des fichiers</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="510"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"/>
+        <translation>Montrer les vignettes seulement pour les fichiers locaux</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="511"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation type="unfinished"/>
+        <translation>Ne pas générer de vignettes pour les fichiers image excédant cette taille :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="512"/>
         <source> KB</source>
-        <translation type="unfinished"/>
+        <translation> Ko</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="513"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"/>
+        <translation>Monter automatiquement</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="514"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"/>
+        <translation>Monter automatiquement les volumes au démarrage du programme</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="515"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"/>
+        <translation>Monter automatiquement les médias amovibles lorsqu'ils sont insérés</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="516"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"/>
+        <translation>Montrer les options disponibles pour les médias amovibles lorsqu'ils sont insérés</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="517"/>
         <source>Programs</source>
-        <translation type="unfinished"/>
+        <translation>Programmes</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="518"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"/>
+        <translation>Émulateur de terminal :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="519"/>
         <source>Switch user command:</source>
-        <translation type="unfinished"/>
+        <translation>Commande de changement d'utilisateur :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="520"/>
         <source>Examples: "xterm -e %s" for terminal or "gksu %s" for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation type="unfinished"/>
+        <translation>Exemples : « xterm -e %s » pour le terminal ; « gksu %s » pour changer d’utilisateur.
+%s = la ligne de commande que vous voulez exécuter avec le terminal ou su.</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="522"/>
         <source>Archiver integration:</source>
-        <translation type="unfinished"/>
+        <translation>Intégration du logiciel de compression de données :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="523"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"/>
+        <translation>Utiliser les préfixes de décimales du système international d'unités au lieu des préfixes binaires de l'IEC</translation>
     </message>
 </context>
 </TS>
