@@ -48,15 +48,10 @@
 #include "filepropsdialog.h"
 #include "utilities.h"
 
-#include <QX11Info> // requires Qt 4 or Qt 5.1
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+#include <QX11Info>
 #include <QScreen>
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
-#else
-#include <X11/Xlib.h>
-#include <X11/Xatom.h>
-#endif
 
 using namespace PCManFM;
 
@@ -92,7 +87,7 @@ DesktopWindow::DesktopWindow(int screenNum):
   if(desktopWidget->isVirtualDesktop() || screenNum_ == desktopWidget->primaryScreen()) {
     loadItemPositions();
     Settings& settings = static_cast<Application* >(qApp)->settings();
-    
+
     model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
     folder_ = reinterpret_cast<FmFolder*>(g_object_ref(model_->folder()));
 
@@ -119,9 +114,9 @@ DesktopWindow::DesktopWindow(int screenNum):
   listView_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
   connect(this, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onOpenDirRequested(FmPath*, int)));
-  
+
   listView_->installEventFilter(this);
-  
+
   // setup shortcuts
   new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_X), this, SLOT(onCutActivated())); // cut
   new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_C), this, SLOT(onCopyActivated())); // copy
@@ -369,8 +364,6 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
   connect(action, SIGNAL(triggered(bool)), SLOT(onDesktopPreferences()));
 }
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) // Qt 5
-
 void DesktopWindow::xcbEvent(xcb_generic_event_t* generic_event) {
   int event_type = generic_event->response_type & ~0x80;
   if(showWmMenu_) {
@@ -414,52 +407,6 @@ void DesktopWindow::xcbEvent(xcb_generic_event_t* generic_event) {
   }
 }
 
-#else // Qt 4
-
-bool DesktopWindow::x11Event(XEvent * event) {
-  // FIXME: support Qt4
-  if(showWmMenu_) {
-    // filter all native X11 events (using Xlib)
-    switch(event->type) {
-      case ButtonPress: {
-        if(event->xany.window == effectiveWinId()) {
-          // check if the user click on blank area
-          QModelIndex index = listView_->indexAt(QPoint(event->xbutton.x, event->xbutton.y));
-          if(!index.isValid()) {
-            XUngrabPointer(QX11Info::display(), event->xbutton.time);
-            // forward the event to the root window
-            XButtonEvent event2 = event->xbutton;
-            WId root = QX11Info::appRootWindow(QX11Info::appScreen());
-            event2.window = root;
-            XSendEvent(QX11Info::display(), root, False, ButtonPressMask|ButtonReleaseMask, (XEvent*)&event2);
-          }
-        }
-        break;
-      }
-      case ButtonRelease: {
-        if(event->xany.window == effectiveWinId()) {
-          // check if the user click on blank area
-          QModelIndex index = listView_->indexAt(QPoint(event->xbutton.x, event->xbutton.y));
-          if(!index.isValid()) {
-            // forward the event to the root window
-            XButtonEvent event2 = event->xbutton;
-            WId root = QX11Info::appRootWindow(QX11Info::appScreen());
-            event2.window = root;
-            XSendEvent(QX11Info::display(), root, False, ButtonPressMask|ButtonReleaseMask, (XEvent*)&event2);
-          }
-        }
-        break;
-      }
-      default: {
-        break;
-      }
-    }
-  }
-  return QWidget::x11Event(event);
-}
-
-#endif
-
 void DesktopWindow::onDesktopPreferences() {
   static_cast<Application* >(qApp)->desktopPrefrences(QString());
 }
@@ -493,7 +440,7 @@ void DesktopWindow::onLayoutChanged() {
 void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
   // remember the custom position for the items
   Q_FOREACH(const QModelIndex& index, indexes) {
-    // Under some circumstances, Qt might emit indexMoved for 
+    // Under some circumstances, Qt might emit indexMoved for
     // every single cells in the same row. (when QAbstractItemView::SelectItems is set)
     // So indexes list may contain several indixes for the same row.
     // Since we only care about rows, not individual cells,
@@ -519,7 +466,7 @@ void DesktopWindow::relayoutItems() {
     relayoutTimer_->deleteLater();
     relayoutTimer_ = NULL;
   }
-  
+
   QDesktopWidget* desktop = qApp->desktop();
   int screen = 0;
   int row = 0;
@@ -711,7 +658,6 @@ bool DesktopWindow::event(QEvent* event)
     if(effectiveWinId() == 0)
       break;
     // set freedesktop.org EWMH hints properly
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
     if(QX11Info::isPlatformX11() && QX11Info::connection()) {
       xcb_connection_t* con = QX11Info::connection();
       const char* atom_name = "_NET_WM_WINDOW_TYPE_DESKTOP";
@@ -721,10 +667,6 @@ bool DesktopWindow::event(QEvent* event)
       xcb_atom_t XA_ATOM = 4;
       xcb_change_property(con, XCB_PROP_MODE_REPLACE, effectiveWinId(), prop_atom, XA_ATOM, 32, 1, &atom);
     }
-#else
-    Atom atom = XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE_DESKTOP", False);
-    XChangeProperty(QX11Info::display(), effectiveWinId(), XInternAtom(QX11Info::display(), "_NET_WM_WINDOW_TYPE", False), XA_ATOM, 32, PropModeReplace, (uchar*)&atom, 1);
-#endif
     break;
   }
 #undef FontChange // FontChange is defined in the headers of XLib and clashes with Qt, let's undefine it.

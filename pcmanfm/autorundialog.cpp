@@ -63,12 +63,8 @@ void AutoRunDialog::accept() {
   QListWidgetItem* item = ui.listWidget->selectedItems().first();
   if(item) {
     GFile* gf = g_mount_get_root(mount_);
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
     void* p = item->data(Qt::UserRole).value<void*>();
-#else
-    void* p = qVariantValue<void*>(item->data(Qt::UserRole));
-#endif
-    if(p) { // runt the selected application
+    if(p) { // run the selected application
       GAppInfo* app = G_APP_INFO(p);
       GList* filelist = g_list_prepend(NULL, gf);
       g_app_info_launch(app, filelist, NULL, NULL);

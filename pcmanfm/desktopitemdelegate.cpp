@@ -68,17 +68,13 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
 
   // draw some emblems for the item if needed
   // we only support symlink emblem at the moment
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   FmFileInfo* file = static_cast<FmFileInfo*>(index.data(Fm::FolderModel::FileInfoRole).value<void*>());
-#else
-  FmFileInfo* file = static_cast<FmFileInfo*>(qVariantValue<void*>(index.data(Fm::FolderModel::FileInfoRole)));
-#endif
   if(file) {
     if(fm_file_info_is_symlink(file)) {
       painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
     }
   }
-  
+
   // draw text
   QRectF textRect(opt.rect.x(), opt.rect.y() + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
   QTextLayout layout(opt.text, opt.font);
@@ -149,7 +145,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
       line.draw(painter, textRect.topLeft());
     }
   }
-  
+
   if(opt.state & QStyle::State_HasFocus) {
     // FIXME: draw focus rect
   }

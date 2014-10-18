@@ -84,11 +84,7 @@ QIcon::Mode FolderItemDelegate::iconModeFromState(QStyle::State state) {
 // special thanks to Razor-qt developer Alec Moskvin(amoskvin) for providing the fix!
 void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const {
   Q_ASSERT(index.isValid());
-#if QT_VERSION >= 0x050000
   FmFileInfo* file = static_cast<FmFileInfo*>(index.data(FolderModel::FileInfoRole).value<void*>());
-#else
-  FmFileInfo* file = static_cast<FmFileInfo*>(qVariantValue<void*>(index.data(FolderModel::FileInfoRole)));
-#endif
   bool isSymlink = file && fm_file_info_is_symlink(file);
 
   if(option.decorationPosition == QStyleOptionViewItem::Top ||
@@ -177,7 +173,7 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt
   //qDebug() << "bound rect: " << boundRect << "width: " << width;
   boundRect.setWidth(width);
   boundRect.moveTo(textRect.x() + (textRect.width() - width)/2, textRect.y());
-  
+
   if(!painter) { // no painter, calculate the bounding rect only
     textRect = boundRect;
     return;

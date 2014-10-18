@@ -25,20 +25,13 @@
 #include "settings.h"
 #include "libfmqt.h"
 #include "editbookmarksdialog.h"
+#include <QAbstractNativeEventFilter>
 #include <QVector>
 #include <QPointer>
 #include <QProxyStyle>
 #include <QTranslator>
 #include <gio/gio.h>
 
-// we need a native event filter for Qt 5
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-#include <QAbstractNativeEventFilter>
-#else
-// we do not have this class in Qt4, so create a fake one
-struct QAbstractNativeEventFilter {
-};
-#endif
 
 class QScreen;
 
@@ -70,7 +63,7 @@ public:
   Settings& settings() {
     return settings_;
   }
-  
+
   Fm::LibFmQt& libFm() {
     return libFm_;
   }
@@ -98,9 +91,7 @@ public:
     return profileName_;
   }
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result);
-#endif
 
 protected Q_SLOTS:
   void onAboutToQuit();
@@ -108,11 +99,9 @@ protected Q_SLOTS:
   void onLastWindowClosed();
   void onSaveStateRequest(QSessionManager & manager);
   void onScreenResized(int num);
-  void onWorkAreaResized(int num); // // This slot is for Qt4 only
   void onScreenCountChanged(int newCount);
   void initVolumeManager();
 
-  // the following slots are for Qt5 only
   void onVirtualGeometryChanged(const QRect& rect);
   void onScreenDestroyed(QObject* screenObj);
   void onScreenAdded(QScreen* newScreen);
@@ -120,11 +109,10 @@ protected Q_SLOTS:
 
 protected:
   virtual bool eventFilter(QObject* watched, QEvent* event);
-  virtual void commitData(QSessionManager & manager);
   bool parseCommandLineArgs();
   DesktopWindow* createDesktopWindow(int screenNum);
   bool autoMountVolume(GVolume* volume, bool interactive = true);
-  
+
   static void onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Application* pThis);
 
 private:

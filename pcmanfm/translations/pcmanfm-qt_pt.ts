@@ -629,94 +629,94 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="160"/>
+        <location filename="../application.cpp" line="156"/>
         <source>Name of configuration profile</source>
         <translation>Nome do perfil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="160"/>
+        <location filename="../application.cpp" line="156"/>
         <source>PROFILE</source>
         <translation>Perfil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="161"/>
+        <location filename="../application.cpp" line="157"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Executar PCManFM como serviço</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="163"/>
+        <location filename="../application.cpp" line="159"/>
         <source>Quit PCManFM</source>
         <translation>Fechar PCManFM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="164"/>
+        <location filename="../application.cpp" line="160"/>
         <source>Launch desktop manager</source>
         <translation>Abrir gestor da área de trabalho</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="161"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Fechar gestor da área de trabalho se estiver em execução</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="166"/>
+        <location filename="../application.cpp" line="162"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferências da área de trabalho na página especificada</translation>
     </message>
     <message>
+        <location filename="../application.cpp" line="162"/>
         <location filename="../application.cpp" line="166"/>
-        <location filename="../application.cpp" line="170"/>
         <source>NAME</source>
         <translation>Nome</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="167"/>
+        <location filename="../application.cpp" line="163"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Definir papel de parede com base num ficheiro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="167"/>
+        <location filename="../application.cpp" line="163"/>
         <source>FILE</source>
         <translation>Ficheiro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="169"/>
+        <location filename="../application.cpp" line="165"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Definir modo do papel de parede. Modo =(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="169"/>
+        <location filename="../application.cpp" line="165"/>
         <source>MODE</source>
         <translation>Modo</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="170"/>
+        <location filename="../application.cpp" line="166"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferências na página especificada</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="167"/>
         <source>Open new window</source>
         <translation>Abrir nova janela</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="172"/>
+        <location filename="../application.cpp" line="168"/>
         <source>Open Find Files utility</source>
         <translation>Abrir utilitário de procura de ficheiros</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="173"/>
+        <location filename="../application.cpp" line="169"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[Ficheiro1, Ficheiro2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="487"/>
-        <location filename="../application.cpp" line="494"/>
+        <location filename="../application.cpp" line="469"/>
+        <location filename="../application.cpp" line="476"/>
         <source>Error</source>
         <translation type="unfinished">Erro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="494"/>
+        <location filename="../application.cpp" line="476"/>
         <source>Terminal emulator is not set.</source>
         <translation type="unfinished">O emulador de terminal não está definido.</translation>
     </message>
@@ -729,7 +729,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         <translation>Abrir no gestor de ficheiros</translation>
     </message>
     <message>
-        <location filename="../autorundialog.cpp" line="134"/>
+        <location filename="../autorundialog.cpp" line="130"/>
         <source>Removable Disk</source>
         <translation>Disco amovível</translation>
     </message>
@@ -770,12 +770,12 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="346"/>
+        <location filename="../desktopwindow.cpp" line="341"/>
         <source>Stic&amp;k to Current Position</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="368"/>
+        <location filename="../desktopwindow.cpp" line="363"/>
         <source>Desktop Preferences</source>
         <translation>Preferências da área de trabalho</translation>
     </message>

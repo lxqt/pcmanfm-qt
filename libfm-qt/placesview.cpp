@@ -36,22 +36,17 @@ PlacesView::PlacesView(QWidget* parent):
   setRootIsDecorated(false);
   setHeaderHidden(true);
   setIndentation(12);
-  
+
   connect(this, SIGNAL(clicked(QModelIndex)), SLOT(onClicked(QModelIndex)));
-  
+
   setIconSize(QSize(24, 24));
-  
+
   // FIXME: we may share this model amont all views
   model_ = new PlacesModel(this);
   setModel(model_);
   QHeaderView* headerView = header();
-#if QT_VERSION >= 0x050000
   headerView->setSectionResizeMode(0, QHeaderView::Stretch);
   headerView->setSectionResizeMode(1, QHeaderView::ResizeToContents);
-#else
-  headerView->setResizeMode(0, QHeaderView::Stretch);
-  headerView->setResizeMode(1, QHeaderView::ResizeToContents);
-#endif
   headerView->setStretchLastSection(false);
   expandAll();
 
@@ -63,7 +58,7 @@ PlacesView::PlacesView(QWidget* parent):
   // the 2nd column is for the eject buttons
   setSelectionBehavior(QAbstractItemView::SelectRows); // FIXME: why this does not work?
   setAllColumnsShowFocus(false);
-  
+
   setAcceptDrops(true);
   setDragEnabled(true);
 }

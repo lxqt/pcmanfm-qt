@@ -26,10 +26,7 @@
 #include <QHash>
 #include <QPoint>
 #include <QByteArray>
-
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) // Qt 5
 #include <xcb/xcb.h>
-#endif
 
 namespace Fm {
   class CachedFolderModel;
@@ -68,9 +65,7 @@ public:
   void updateWallpaper();
   void updateFromSettings(Settings& settings);
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0) // Qt 5
   void xcbEvent(xcb_generic_event_t* generic_event);
-#endif
 
   void queueRelayout(int delay = 0);
 
@@ -79,7 +74,7 @@ public:
   }
 
   void setScreenNum(int num);
-  
+
 protected:
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
   virtual void prepareFileMenu(Fm::FileMenu* menu);
@@ -93,10 +88,6 @@ protected:
 
   virtual bool event(QEvent* event);
   virtual bool eventFilter(QObject * watched, QEvent * event);
-
-#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0) // Qt 4
-  virtual bool x11Event(XEvent * event);
-#endif
 
   virtual void childDropEvent(QDropEvent* e);
 
@@ -113,7 +104,7 @@ protected Q_SLOTS:
   void onStickToCurrentPos(bool toggled);
 
   // void updateWorkArea();
-  
+
   // file operations
   void onCutActivated();
   void onCopyActivated();

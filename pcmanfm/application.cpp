@@ -40,10 +40,8 @@
 #include "autorundialog.h"
 #include "launcher.h"
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
 #include <QScreen>
 #include <QWindow>
-#endif
 
 #include <X11/Xlib.h>
 
@@ -110,10 +108,8 @@ Application::~Application() {
     g_object_unref(volumeMonitor_);
   }
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   if(enableDesktopManager_)
     removeNativeEventFilter(this);
-#endif
 }
 
 struct FakeTr {
@@ -349,25 +345,13 @@ void Application::onAboutToQuit() {
 
 bool Application::eventFilter(QObject* watched, QEvent* event) {
   if(watched == desktop()) {
-    // qDebug() << "filter" << event;
     switch(event->type()) {
       case QEvent::StyleChange:
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
       case QEvent::ThemeChange:
-#endif
         setStyle(new ProxyStyle());
     };
   }
   return QObject::eventFilter(watched, event);
-}
-
-void Application::commitData(QSessionManager& manager) {
-  qDebug("commitData");
-  // FIXME: where should we write the config file?
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-#else
-  QApplication::commitData(manager);
-#endif
 }
 
 void Application::onLastWindowClosed() {
@@ -384,16 +368,12 @@ void Application::desktopManager(bool enabled) {
   QDesktopWidget* desktopWidget = desktop();
   if(enabled) {
     if(!enableDesktopManager_) {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
       installNativeEventFilter(this);
       Q_FOREACH(QScreen* screen, screens()) {
         connect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
         connect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
       }
       connect(this, &QApplication::screenAdded, this, &Application::onScreenAdded);
-#else
-      connect(desktopWidget, SIGNAL(workAreaResized(int)), SLOT(onWorkAreaResized(int)));
-#endif
       connect(desktopWidget, SIGNAL(resized(int)), SLOT(onScreenResized(int)));
       connect(desktopWidget, SIGNAL(screenCountChanged(int)), SLOT(onScreenCountChanged(int)));
 
@@ -424,16 +404,12 @@ void Application::desktopManager(bool enabled) {
         delete window;
       }
       desktopWindows_.clear();
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
       Q_FOREACH(QScreen* screen, screens()) {
         disconnect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
         disconnect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
       }
       disconnect(this, &QApplication::screenAdded, this, &Application::onScreenAdded);
       removeNativeEventFilter(this);
-#else
-      disconnect(desktopWidget, SIGNAL(workAreaResized(int)), this, SLOT(onWorkAreaResized(int)));
-#endif
     }
   }
   enableDesktopManager_ = enabled;
@@ -556,18 +532,6 @@ void Application::onScreenResized(int num) {
     QRect rect = desktop()->screenGeometry(num);
     window->setGeometry(rect);
   }
-}
-
-// This slot is for Qt4 only
-void Application::onWorkAreaResized(int num) {
-#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
-  if(desktop()->isVirtualDesktop())
-    num = 0; // in virtual desktop mode, we only have one desktop window. that is the first one.
-  DesktopWindow* window = desktopWindows_.at(num);
-  QRect rect = desktop()->availableGeometry(num);
-  qDebug() << "workAreaResized" << num << rect;
-  window->queueRelayout();
-#endif
 }
 
 DesktopWindow* Application::createDesktopWindow(int screenNum) {
@@ -712,8 +676,6 @@ void Application::onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Applic
     pThis->autoMountVolume(volume, true);
 }
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-
 bool Application::nativeEventFilter(const QByteArray & eventType, void * message, long * result) {
   if(eventType == "xcb_generic_event_t") { // XCB event
     // filter all native X11 events (xcb)
@@ -726,27 +688,18 @@ bool Application::nativeEventFilter(const QByteArray & eventType, void * message
   return false;
 }
 
-#endif
-
-// This slot is for Qt 5 onlt, but the stupid Qt moc cannot do conditional compilation
-// so we have to define it for Qt 4 as well.
 void Application::onScreenAdded(QScreen* newScreen) {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   if(enableDesktopManager_) {
     connect(newScreen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
     connect(newScreen, &QObject::destroyed, this, &Application::onScreenDestroyed);
   }
-#endif
 }
 
-// This slot is for Qt 5 onlt, but the stupid Qt moc cannot do conditional compilation
-// so we have to define it for Qt 4 as well.
 void Application::onScreenDestroyed(QObject* screenObj) {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   // NOTE by PCMan: This is a workaround for Qt 5 bug #40681.
   // With this very dirty workaround, we can fix lxde/lxde-qt bug #204, #205, and #206.
   // Qt 5 has two new regression bugs which breaks lxqt-panel in a multihead environment.
-  // #40681: Regression bug: QWidget::winId() returns old value and QEvent::WinIdChange event is not emitted sometimes. (multihead setup) 
+  // #40681: Regression bug: QWidget::winId() returns old value and QEvent::WinIdChange event is not emitted sometimes. (multihead setup)
   // #40791: Regression: QPlatformWindow, QWindow, and QWidget::winId() are out of sync.
   // Explanations for the workaround:
   // Internally, Qt mantains a list of QScreens and update it when XRandR configuration changes.
@@ -755,7 +708,7 @@ void Application::onScreenDestroyed(QObject* screenObj) {
   // Qt will call QWindow::setScreen(0) on the internal windowHandle() of our panel widget to move it
   // to the primary screen. However, moving a window to a different screen is more than just changing
   // its position. With XRandR, all screens are actually part of the same virtual desktop. However,
-  // this is not the case in other setups, such as Xinerama and moving a window to another screen is 
+  // this is not the case in other setups, such as Xinerama and moving a window to another screen is
   // not possible unless you destroy the widget and create it again for a new screen.
   // Therefore, Qt destroy the widget and re-create it when moving our panel to a new screen.
   // Unfortunately, destroying the window also destroy the child windows embedded into it,
@@ -780,13 +733,9 @@ void Application::onScreenDestroyed(QObject* screenObj) {
     if(reloadNeeded)
         QTimer::singleShot(0, this, SLOT(reloadDesktopsAsNeeded()));
   }
-#endif
 }
 
-// This slot is for Qt 5 onlt, but the stupid Qt moc cannot do conditional compilation
-// so we have to define it for Qt 4 as well.
 void Application::reloadDesktopsAsNeeded() {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   if(enableDesktopManager_) {
     // workarounds for Qt5 bug #40681 and #40791 here.
     Q_FOREACH(DesktopWindow* desktop, desktopWindows_) {
@@ -797,7 +746,6 @@ void Application::reloadDesktopsAsNeeded() {
       }
     }
   }
-#endif
 }
 
 // This slot is for Qt 5 onlt, but the stupid Qt moc cannot do conditional compilation
@@ -811,7 +759,6 @@ void Application::onVirtualGeometryChanged(const QRect& rect) {
   // However, QScreen provided since Qt5 does not have the bug and
   // virtualGeometryChanged() is emitted correctly when the workAreas changed.
   // So we use it in Qt5.
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
   if(enableDesktopManager_) {
     QScreen* screeb = static_cast<QScreen*>(sender());
     // qDebug() << "onVirtualGeometryChanged";
@@ -819,5 +766,4 @@ void Application::onVirtualGeometryChanged(const QRect& rect) {
       desktop->queueRelayout();
     }
   }
-#endif
 }

@@ -575,94 +575,94 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="160"/>
+        <location filename="../application.cpp" line="156"/>
         <source>Name of configuration profile</source>
         <translation>Nome del profilo di configurazione</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="160"/>
+        <location filename="../application.cpp" line="156"/>
         <source>PROFILE</source>
         <translation>PROFILO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="161"/>
+        <location filename="../application.cpp" line="157"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Esegue PCManFM come demone</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="163"/>
+        <location filename="../application.cpp" line="159"/>
         <source>Quit PCManFM</source>
         <translation>Esce da PCManFM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="164"/>
+        <location filename="../application.cpp" line="160"/>
         <source>Launch desktop manager</source>
         <translation>Lancia il gestore della scrivania</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="161"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Spegne il gestore della scrivania se è in esecuzione</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="166"/>
+        <location filename="../application.cpp" line="162"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Apre le preferenze della scrivania alla pagina con il nome specificato</translation>
     </message>
     <message>
+        <location filename="../application.cpp" line="162"/>
         <location filename="../application.cpp" line="166"/>
-        <location filename="../application.cpp" line="170"/>
         <source>NAME</source>
         <translation>NOME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="167"/>
+        <location filename="../application.cpp" line="163"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Imposta lo sfondo della scrivania con l&apos;immagine dal FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="167"/>
+        <location filename="../application.cpp" line="163"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="169"/>
+        <location filename="../application.cpp" line="165"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Imposta la modalità dello sfondo della scrivania. MODO=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="169"/>
+        <location filename="../application.cpp" line="165"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="170"/>
+        <location filename="../application.cpp" line="166"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Apre le Preferenze alla pagina con il nome specificato</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="167"/>
         <source>Open new window</source>
         <translation>Apre una nuova finestra</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="172"/>
+        <location filename="../application.cpp" line="168"/>
         <source>Open Find Files utility</source>
         <translation>Apre l&apos;utilità di ricerca file</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="173"/>
+        <location filename="../application.cpp" line="169"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2, ...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="487"/>
-        <location filename="../application.cpp" line="494"/>
+        <location filename="../application.cpp" line="469"/>
+        <location filename="../application.cpp" line="476"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="494"/>
+        <location filename="../application.cpp" line="476"/>
         <source>Terminal emulator is not set.</source>
         <translation>L&apos;emulatore di terminale non è impostato.</translation>
     </message>
@@ -675,7 +675,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Apre nel gestore file</translation>
     </message>
     <message>
-        <location filename="../autorundialog.cpp" line="134"/>
+        <location filename="../autorundialog.cpp" line="130"/>
         <source>Removable Disk</source>
         <translation>Disco rimovibile</translation>
     </message>
@@ -716,12 +716,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="346"/>
+        <location filename="../desktopwindow.cpp" line="341"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Blo&amp;cca alla posizione attuale</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="368"/>
+        <location filename="../desktopwindow.cpp" line="363"/>
         <source>Desktop Preferences</source>
         <translation>Preferenze scrivania</translation>
     </message>
