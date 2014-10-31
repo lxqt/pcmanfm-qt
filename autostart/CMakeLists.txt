@@ -3,7 +3,6 @@ cmake_minimum_required( VERSION 2.8.11)
 file(GLOB DESKTOP_FILES_IN *.desktop.in)
 
 # Translations **********************************
-include(LxQtTranslate)
 lxqt_translate_desktop(DESKTOP_FILES
     SOURCES
         ${DESKTOP_FILES_IN}
