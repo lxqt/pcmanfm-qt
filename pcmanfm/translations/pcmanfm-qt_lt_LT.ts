@@ -567,6 +567,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>Terminal emulator is not set.</source>
         <translation type="unfinished">Nenustatytas terminalo emuliatorius.</translation>
     </message>
+    <message>
+        <source>Files or directories to open</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PCManFM::AutoRunDialog</name>

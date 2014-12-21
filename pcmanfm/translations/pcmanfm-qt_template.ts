@@ -569,94 +569,99 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="156"/>
+        <location filename="../application.cpp" line="122"/>
         <source>Name of configuration profile</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="156"/>
+        <location filename="../application.cpp" line="122"/>
         <source>PROFILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="157"/>
+        <location filename="../application.cpp" line="125"/>
         <source>Run PCManFM as a daemon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="159"/>
+        <location filename="../application.cpp" line="128"/>
         <source>Quit PCManFM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="160"/>
+        <location filename="../application.cpp" line="131"/>
         <source>Launch desktop manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="161"/>
+        <location filename="../application.cpp" line="134"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="137"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
-        <location filename="../application.cpp" line="166"/>
+        <location filename="../application.cpp" line="137"/>
+        <location filename="../application.cpp" line="153"/>
         <source>NAME</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="163"/>
-        <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="163"/>
-        <source>FILE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="165"/>
-        <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="165"/>
-        <source>MODE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="166"/>
-        <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="167"/>
+        <location filename="../application.cpp" line="140"/>
         <source>Open new window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="143"/>
         <source>Open Find Files utility</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="169"/>
+        <location filename="../application.cpp" line="146"/>
+        <source>Set desktop wallpaper from image FILE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="146"/>
+        <source>FILE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="150"/>
+        <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="150"/>
+        <source>MODE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="153"/>
+        <source>Open Preferences dialog on the page with the specified name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="156"/>
+        <source>Files or directories to open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="156"/>
         <source>[FILE1, FILE2,...]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="469"/>
-        <location filename="../application.cpp" line="476"/>
+        <location filename="../application.cpp" line="402"/>
+        <location filename="../application.cpp" line="409"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="476"/>
+        <location filename="../application.cpp" line="409"/>
         <source>Terminal emulator is not set.</source>
         <translation type="unfinished"></translation>
     </message>

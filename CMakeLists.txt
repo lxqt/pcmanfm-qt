@@ -18,18 +18,17 @@ set(LIBFM_QT_LIB_SOVERSION "1")
 set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for libraries")
 set(INCLUDE_INSTALL_DIR include CACHE PATH "Installation path for includes")
 
-find_package(Qt5Widgets 5.1 REQUIRED)
-find_package(Qt5DBus 5.1 REQUIRED)
-find_package(Qt5LinguistTools 5.1 REQUIRED)
-find_package(Qt5X11Extras 5.1 REQUIRED)
-set(XLIB "xcb")
+find_package(Qt5Widgets 5.2 REQUIRED)
+find_package(Qt5DBus 5.2 REQUIRED)
+find_package(Qt5LinguistTools 5.2 REQUIRED)
+find_package(Qt5X11Extras 5.2 REQUIRED)
 
 find_package(PkgConfig)
 pkg_check_modules(SYSTEM_LIBS REQUIRED
     glib-2.0
     gio-2.0
     gio-unix-2.0
-    ${XLIB}
+    xcb
 )
 
 pkg_check_modules(LIBFM REQUIRED libfm>=1.2.0)

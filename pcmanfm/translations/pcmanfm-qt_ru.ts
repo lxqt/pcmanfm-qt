@@ -4,32 +4,32 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <location filename="../about.ui" line="14"/>
+        <location filename="../../build/pcmanfm/ui_about.h" line="134"/>
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="25"/>
+        <location filename="../../build/pcmanfm/ui_about.h" line="135"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="48"/>
+        <location filename="../../build/pcmanfm/ui_about.h" line="137"/>
         <source>Lightweight file manager</source>
         <translation>Легковесный диспетчер файлов</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="58"/>
+        <location filename="../../build/pcmanfm/ui_about.h" line="138"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="78"/>
+        <location filename="../../build/pcmanfm/ui_about.h" line="142"/>
         <source>Authors</source>
         <translation>Авторы</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="87"/>
+        <location filename="../../build/pcmanfm/ui_about.h" line="139"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
@@ -38,12 +38,12 @@
 </translation>
     </message>
     <message>
-        <location filename="../about.ui" line="100"/>
+        <location filename="../../build/pcmanfm/ui_about.h" line="160"/>
         <source>License</source>
         <translation>Лицензия</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="109"/>
+        <location filename="../../build/pcmanfm/ui_about.h" line="143"/>
         <source>PCMan File Manager
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
@@ -67,27 +67,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>AutoRunDialog</name>
     <message>
-        <location filename="../autorun.ui" line="14"/>
+        <location filename="../../build/pcmanfm/ui_autorun.h" line="110"/>
         <source>Removable medium is inserted</source>
         <translation>Вставлен съёмный носитель</translation>
     </message>
     <message>
-        <location filename="../autorun.ui" line="33"/>
+        <location filename="../../build/pcmanfm/ui_autorun.h" line="112"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
         <translation>&lt;b&gt;Вставлен съёмный носитель&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../autorun.ui" line="40"/>
+        <location filename="../../build/pcmanfm/ui_autorun.h" line="113"/>
         <source>Type of medium:</source>
         <translation>Тип носителя:</translation>
     </message>
     <message>
-        <location filename="../autorun.ui" line="47"/>
+        <location filename="../../build/pcmanfm/ui_autorun.h" line="114"/>
         <source>Detecting...</source>
         <translation>Обнаружение...</translation>
     </message>
     <message>
-        <location filename="../autorun.ui" line="56"/>
+        <location filename="../../build/pcmanfm/ui_autorun.h" line="115"/>
         <source>Please select the action you want to perform:</source>
         <translation>Выберите действие, которое хотите совершить:</translation>
     </message>
@@ -95,77 +95,77 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktop-preferences.ui" line="14"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="240"/>
         <source>Desktop Preferences</source>
         <translation>Настройки рабочего стола</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="24"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="261"/>
         <source>General</source>
         <translation>Общие</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="30"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="241"/>
         <source>Background</source>
         <translation>Фон</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="52"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="242"/>
         <source>Wallpaper mode:</source>
         <translation>Режим обоев:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="65"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="243"/>
         <source>Wallpaper image file:</source>
         <translation>Файл изображения обоев:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="85"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="245"/>
         <source>Select background color:</source>
         <translation>Выбрать цвет фона:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="94"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="247"/>
         <source>Image file</source>
         <translation>Файл изображения</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="100"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="252"/>
         <source>Image file path</source>
         <translation>Путь к файлу изображения</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="107"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="253"/>
         <source>&amp;Browse</source>
         <translation>&amp;Обзор</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="119"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="254"/>
         <source>Label Text</source>
         <translation>Текст ярлыков</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="157"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="257"/>
         <source>Select  text color:</source>
         <translation>Выбрать цвет текста:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="170"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="258"/>
         <source>Select shadow color:</source>
         <translation>Выбрать цвет тени:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="183"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="259"/>
         <source>Select font:</source>
         <translation>Выбрать шрифт:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="207"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="263"/>
         <source>Advanced</source>
         <translation>Расширенные</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="213"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="262"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
         <translation>Показывать меню, предоставляемые оконными менеджерами по клику на рабочий стол</translation>
     </message>
@@ -173,538 +173,508 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>FindFilesDialog</name>
     <message>
-        <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation>Найnb файлы</translation>
+        <translation type="vanished">Найnb файлы</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation>Имя/расположение</translation>
+        <translation type="vanished">Имя/расположение</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation>Шаблоны имён файлов</translation>
+        <translation type="vanished">Шаблоны имён файлов</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation>Шаблон:</translation>
+        <translation type="vanished">Шаблон:</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="46"/>
-        <location filename="../file-search.ui" line="220"/>
         <source>Case insensitive</source>
-        <translation>Регистрочувствительный</translation>
+        <translation type="vanished">Регистрочувствительный</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="53"/>
-        <location filename="../file-search.ui" line="227"/>
         <source>Use regular expression</source>
-        <translation>Использовать регулярные выражения</translation>
+        <translation type="vanished">Использовать регулярные выражения</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation>Места поиска</translation>
+        <translation type="vanished">Места поиска</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation>Добавить</translation>
+        <translation type="vanished">Добавить</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="86"/>
         <source>Remove</source>
-        <translation>Удалить</translation>
+        <translation type="vanished">Удалить</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="113"/>
         <source>Search in sub directories</source>
-        <translation>Искать в подпапках</translation>
+        <translation type="vanished">Искать в подпапках</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="120"/>
         <source>Search hidden files</source>
-        <translation>Искать скрытые файлы</translation>
+        <translation type="vanished">Искать скрытые файлы</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="134"/>
-        <location filename="../file-search.ui" line="140"/>
         <source>File Type</source>
-        <translation>Тип файла</translation>
+        <translation type="vanished">Тип файла</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="146"/>
         <source>Only search for files of following types:</source>
-        <translation>Искать только следующие типы файлов:</translation>
+        <translation type="vanished">Искать только следующие типы файлов:</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="153"/>
         <source>Text files</source>
-        <translation>Текстовые файлы</translation>
+        <translation type="vanished">Текстовые файлы</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="160"/>
         <source>Image files</source>
-        <translation>Файлы изображений</translation>
+        <translation type="vanished">Файлы изображений</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="167"/>
         <source>Audio files</source>
-        <translation>Аудиофайлы</translation>
+        <translation type="vanished">Аудиофайлы</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="174"/>
         <source>Video files</source>
-        <translation>Видеофайлы</translation>
+        <translation type="vanished">Видеофайлы</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="181"/>
         <source>Documents</source>
-        <translation>Документы</translation>
+        <translation type="vanished">Документы</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="205"/>
         <source>Content</source>
-        <translation>Содержание</translation>
+        <translation type="vanished">Содержание</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="211"/>
         <source>File contains</source>
-        <translation>Содержание файла</translation>
+        <translation type="vanished">Содержание файла</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="251"/>
         <source>Properties</source>
-        <translation>Свойства</translation>
+        <translation type="vanished">Свойства</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="257"/>
         <source>File Size</source>
-        <translation>Размер файла</translation>
+        <translation type="vanished">Размер файла</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="263"/>
         <source>Bigger than:</source>
-        <translation>Больше чем:</translation>
+        <translation type="vanished">Больше чем:</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="284"/>
         <source>Smaller than:</source>
-        <translation>Меньше чем:</translation>
+        <translation type="vanished">Меньше чем:</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="308"/>
         <source>Last Modified Time</source>
-        <translation>Время последнего изменения</translation>
+        <translation type="vanished">Время последнего изменения</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="314"/>
         <source>Earlier than:</source>
-        <translation>Раньше чем:</translation>
+        <translation type="vanished">Раньше чем:</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="321"/>
         <source>Later than:</source>
-        <translation>Позже чем:</translation>
+        <translation type="vanished">Позже чем:</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../main-win.ui" line="14"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="499"/>
         <source>File Manager</source>
         <translation>Диспетчер файлов</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="75"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="579"/>
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="88"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="580"/>
         <source>&amp;Help</source>
         <translation>&amp;Справка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="94"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="581"/>
         <source>&amp;View</source>
         <translation>&amp;Вид</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="98"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="582"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Сортировка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="124"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="583"/>
         <source>&amp;Edit</source>
         <translation>&amp;Правка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="139"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="584"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Закладки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="146"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="585"/>
         <source>&amp;Go</source>
         <translation>&amp;Перейти</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="161"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="586"/>
         <source>&amp;Tool</source>
         <translation>&amp;Инструмент</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="177"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="587"/>
         <source>Main Toolbar</source>
         <translation>Главная панель инструментов</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="205"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="500"/>
         <source>Go &amp;Up</source>
         <translation>Перейти &amp;вверх</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="208"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="502"/>
         <source>Go Up</source>
         <translation>Перейти вверх</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="211"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="504"/>
         <source>Alt+Up</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="221"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="505"/>
         <source>Home</source>
         <translation>Домой</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="224"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="506"/>
         <source>Alt+Home</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="234"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="507"/>
         <source>&amp;Reload</source>
         <translation>&amp;Обновить</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="237"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="508"/>
         <source>F5</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="247"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="509"/>
         <source>Go</source>
         <translation>Перейти</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="257"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="510"/>
         <source>Quit</source>
         <translation>Выйти</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="267"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="511"/>
         <source>&amp;About</source>
         <translation>&amp;О программе</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="277"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="512"/>
         <source>&amp;New Window</source>
         <translation>&amp;Новое окно</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="280"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="514"/>
         <source>New Window</source>
         <translation>Новое окно</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="283"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="516"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="291"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="517"/>
         <source>Show &amp;Hidden</source>
         <translation>Показать &amp;скрытые</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="294"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="518"/>
         <source>Ctrl+H</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="304"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="519"/>
         <source>&amp;Computer</source>
         <translation>&amp;Компьютер</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="314"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="520"/>
         <source>&amp;Trash</source>
         <translation>&amp;Корзина</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="319"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="521"/>
         <source>&amp;Network</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="329"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="522"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Рабочий стол</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="339"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="523"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Добавить в закладки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="344"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="524"/>
         <source>&amp;Applications</source>
         <translation>&amp;Приложения</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="349"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="525"/>
         <source>Reload</source>
         <translation>Обновить</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="357"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="526"/>
         <source>&amp;Icon View</source>
         <translation>Просмотр &amp;значками</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="365"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="527"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Компактный просмотр</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="373"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="528"/>
         <source>&amp;Detailed List</source>
         <translation>Просмотр &amp;подробным списком</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="381"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="529"/>
         <source>&amp;Thumbnail View</source>
         <translation>Просмотр &amp;эскизами</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="391"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="530"/>
         <source>Cu&amp;t</source>
         <translation>&amp;Вырезать</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="394"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="531"/>
         <source>Ctrl+X</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="404"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="532"/>
         <source>&amp;Copy</source>
         <translation>&amp;Копировать</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="407"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="533"/>
         <source>Ctrl+C</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="417"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="534"/>
         <source>&amp;Paste</source>
         <translation>&amp;Вставить</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="420"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="535"/>
         <source>Ctrl+V</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="425"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="536"/>
         <source>Select &amp;All</source>
         <translation>Выделить &amp;всё</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="428"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="537"/>
         <source>Ctrl+A</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="433"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="538"/>
         <source>Pr&amp;eferences</source>
         <translation>&amp;Настройки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="441"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="539"/>
         <source>Ascending</source>
         <translation>По возрастанию</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="449"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="540"/>
         <source>Descending</source>
         <translation>По убыванию</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="457"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="541"/>
         <source>By File Name</source>
         <translation>По имени файла</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="465"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="542"/>
         <source>By Modification Time</source>
         <translation>По времени изменения</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="473"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="543"/>
         <source>By File Type</source>
         <translation>По типу файла</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="481"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="544"/>
         <source>By Owner</source>
         <translation>По владельцу</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="489"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="545"/>
         <source>Folder First</source>
         <translation>Сначала папки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="499"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="546"/>
         <source>New &amp;Tab</source>
         <translation>Новая &amp;вкладка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="502"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="548"/>
         <source>New Tab</source>
         <translation>Новая вкладка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="505"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="550"/>
         <source>Ctrl+T</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="515"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="551"/>
         <source>Go &amp;Back</source>
         <translation>Перейти &amp;назад</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="518"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="553"/>
         <source>Go Back</source>
         <translation>Перейти назад</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="521"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="555"/>
         <source>Alt+Left</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="531"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="556"/>
         <source>Go &amp;Forward</source>
         <translation>Перейти &amp;вперёд</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="534"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="558"/>
         <source>Go Forward</source>
         <translation>Перейти вперёд</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="537"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="560"/>
         <source>Alt+Right</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="542"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="561"/>
         <source>&amp;Invert Selection</source>
         <translation>&amp;Инвертировать выделение</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="552"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="562"/>
         <source>&amp;Delete</source>
         <translation>&amp;Удалить</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="555"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="563"/>
         <source>Del</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="560"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="564"/>
         <source>&amp;Rename</source>
         <translation>&amp;Переименовать</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="563"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="565"/>
         <source>F2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="568"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="566"/>
         <source>C&amp;lose Tab</source>
         <translation>&amp;Закрыть вкладку</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="571"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="567"/>
         <source>Ctrl+W</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="576"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="568"/>
         <source>File &amp;Properties</source>
         <translation>&amp;Свойства файла</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="579"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="569"/>
         <source>Alt+Return</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="584"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="570"/>
         <source>&amp;Folder Properties</source>
         <translation>&amp;Свойства папки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="592"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="571"/>
         <source>Case Sensitive</source>
         <translation>Регистрочувствительная</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="600"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="572"/>
         <source>By File Size</source>
         <translation>По размеру файла</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="605"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="573"/>
         <source>Close Window</source>
         <translation>Закрыть окно</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="610"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="574"/>
         <source>Edit Bookmarks</source>
         <translation>Изменить закладки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="615"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="575"/>
         <source>Open &amp;Terminal</source>
         <translation>Открыть &amp;терминал</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="618"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="576"/>
         <source>F4</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="623"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="577"/>
         <source>Open as &amp;Root</source>
         <translation>Открыть от имени &amp;суперпользователя</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="628"/>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="578"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Изменить закладки</translation>
     </message>
@@ -712,94 +682,99 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="156"/>
+        <location filename="../application.cpp" line="122"/>
         <source>Name of configuration profile</source>
         <translation>Имя профиля конфигурации</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="156"/>
+        <location filename="../application.cpp" line="122"/>
         <source>PROFILE</source>
         <translation>ПРОФИЛЬ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="157"/>
+        <location filename="../application.cpp" line="125"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Запустить PCManFM как демон</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="159"/>
+        <location filename="../application.cpp" line="128"/>
         <source>Quit PCManFM</source>
         <translation>Выйти из PCManFM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="160"/>
+        <location filename="../application.cpp" line="131"/>
         <source>Launch desktop manager</source>
         <translation>Запустить менеджер рабочего стола</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="161"/>
+        <location filename="../application.cpp" line="134"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Отключить менеджер рабочего стола, если он запущен</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="137"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Открыть диалог настроек рабочего стола на странице с указанным именем</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
-        <location filename="../application.cpp" line="166"/>
+        <location filename="../application.cpp" line="137"/>
+        <location filename="../application.cpp" line="153"/>
         <source>NAME</source>
         <translation>ИМЯ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="163"/>
+        <location filename="../application.cpp" line="146"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Выбрать обои рабочего стола из ФАЙЛА изображения</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="163"/>
+        <location filename="../application.cpp" line="146"/>
         <source>FILE</source>
         <translation>ФАЙЛ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="150"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Выбрать режим обоев рабочего стола. РЕЖИМ=(цвет|растянуть|вместить|по центру|черепицей)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="150"/>
         <source>MODE</source>
         <translation>РЕЖИМ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="166"/>
+        <location filename="../application.cpp" line="153"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Открыть диалог настроек на странице с указанным именем</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="167"/>
+        <location filename="../application.cpp" line="140"/>
         <source>Open new window</source>
         <translation>Открыть новое окно</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="143"/>
         <source>Open Find Files utility</source>
         <translation>Открыть утилиту поиска файлов</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="169"/>
+        <location filename="../application.cpp" line="156"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[ФАЙЛ1, ФАЙЛ2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="463"/>
-        <location filename="../application.cpp" line="470"/>
+        <location filename="../application.cpp" line="156"/>
+        <source>Files or directories to open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="402"/>
+        <location filename="../application.cpp" line="409"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="470"/>
+        <location filename="../application.cpp" line="409"/>
         <source>Terminal emulator is not set.</source>
         <translation>Эмулятор терминала не указан.</translation>
     </message>
@@ -972,219 +947,219 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PreferencesDialog</name>
     <message>
-        <location filename="../preferences.ui" line="14"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="524"/>
         <source>Preferences</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="35"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
         <source>User Interface</source>
         <translation>Интерфейс пользователя</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="40"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="531"/>
         <source>Behavior</source>
         <translation>Поведение</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="45"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
         <source>Thumbnail</source>
         <translation>Эскизы</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="50"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
         <source>Volume</source>
         <translation>Том</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="55"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
         <source>Advanced</source>
         <translation>Расширенные</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="76"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
         <source>Icons</source>
         <translation>Значки</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="82"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
         <source>Size of big icons:</source>
         <translation>Размер больших значков:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="92"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="542"/>
         <source>Size of small icons:</source>
         <translation>Размер маленьких значков:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="102"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
         <source>Size of thumbnails:</source>
         <translation>Размер значков:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="112"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="544"/>
         <source>Size of side pane icons:</source>
         <translation>Размер значков боковой панели:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="128"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="545"/>
         <source>Icon theme:</source>
         <translation>Тема значков:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="148"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
         <source>Window</source>
         <translation>Окно</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="157"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
         <source>Always show the tab bar</source>
         <translation>Всегда показывать панель вкладок</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="164"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Показывать кнопку «Закрыть» на вкладках</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="171"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
         <source>Remember the size of the last closed window</source>
         <translation>Запоминать размер последнего закрытого окна</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="178"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="550"/>
         <source>Default width of new windows:</source>
         <translation>Ширина новых окон по умолчанию:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="185"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
         <source>Default height of new windows:</source>
         <translation>Высота новых окон по умолчанию:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="226"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
         <source>Browsing</source>
         <translation>Просмотр</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="235"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
         <source>Open files with single click</source>
         <translation>Открывать файлы по одиночному щелчку мыши</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="245"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
         <translation>Задержка автовыделения в режиме одиночного щелчка (0 для отключения)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="252"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
         <source>Default view mode:</source>
         <translation>Режим просмотра по умолчанию:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="265"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
         <source> sec</source>
         <translation> сек</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="278"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
         <source>File Operations</source>
         <translation>Операции с файлами</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="284"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
         <source>Confirm before deleting files</source>
         <translation>Подтверждение перед удалением файлов</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="291"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation>Перемещать удалённые файлы в корзину вместо удаления их с диска.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="321"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
         <source>Show thumbnails of files</source>
         <translation>Показывать эскизы файлов</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="328"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
         <source>Only show thumbnails for local files</source>
         <translation>Показывать эскизы только для локальных файлов</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="335"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Не создавать эскизы для файлов изображений больше чем:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="342"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
         <source> KB</source>
         <translation> КБ</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="356"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
         <source>Auto Mount</source>
         <translation>Автоподключение</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="362"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Подключать съёмные тома автоматически при запуске программы</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="369"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="566"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Подключать съёмные тома автоматически при их подключении</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="376"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Показывать доступные варианты для съёмных устройств при их вставлении</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="386"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
         <source>When removable medium unmounted:</source>
         <translation>При отключении съёмного устройства:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="392"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
         <source>Close tab containing removable medium</source>
         <translation>Закрыть вкладку, отображающую съёмное устройство</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="399"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
         <source>Change folder in the tab to home folder</source>
         <translation>Сменить папку во вкладке на домашний каталог</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="426"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="571"/>
         <source>Programs</source>
         <translation>Программы</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="435"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
         <source>Terminal emulator:</source>
         <translation>Эмулятор терминала:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="442"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
         <source>Switch user command:</source>
         <translation>Команда переключения пользователя:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="455"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Примеры: &quot;xterm -e %s&quot; для терминала или &quot;gksu %s&quot; для переключения пользователя.
 %s = командная строка,которую вы хотите выполнить с терминалом или su.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="466"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
         <source>Archiver integration:</source>
         <translation>Интеграция архиватора:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="492"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Использовать десятичные префиксы СИ вместо двоичных префиксов IEC</translation>
     </message>

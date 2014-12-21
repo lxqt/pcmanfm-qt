@@ -636,94 +636,99 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="156"/>
+        <location filename="../application.cpp" line="122"/>
         <source>Name of configuration profile</source>
         <translation>Nom du profil de configuration</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="156"/>
+        <location filename="../application.cpp" line="122"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="157"/>
+        <location filename="../application.cpp" line="125"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Lancer PCManFM comme démon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="159"/>
+        <location filename="../application.cpp" line="128"/>
         <source>Quit PCManFM</source>
         <translation>Quitter PCManFM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="160"/>
+        <location filename="../application.cpp" line="131"/>
         <source>Launch desktop manager</source>
         <translation>Lancer le gestionnaire de bureau</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="161"/>
+        <location filename="../application.cpp" line="134"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Éteindre le gestionnaire de bureau s&apos;il fonctionne</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="137"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Ouvrir la boîte de dialogue des préférences du bureau sur la page avec le nom spécifié</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
-        <location filename="../application.cpp" line="166"/>
+        <location filename="../application.cpp" line="137"/>
+        <location filename="../application.cpp" line="153"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="163"/>
+        <location filename="../application.cpp" line="146"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Définir le fond d&apos;écran de bureau depuis l&apos;image FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="163"/>
+        <location filename="../application.cpp" line="146"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="150"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Définir le mode de fond d&apos;écran de bureau. MODE=(couleur|étirer|ajuster|centrer|découper)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="150"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="166"/>
+        <location filename="../application.cpp" line="153"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Ouvrir la boîte de dialogue des préférences sur la page avec le nom spécifié</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="167"/>
+        <location filename="../application.cpp" line="140"/>
         <source>Open new window</source>
         <translation>Ouvrir une nouvelle fenêtre</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="143"/>
         <source>Open Find Files utility</source>
         <translation>Ouvrir l&apos;utilitaire de recherche de fichiers</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="169"/>
+        <location filename="../application.cpp" line="156"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2, etc.]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="469"/>
-        <location filename="../application.cpp" line="476"/>
+        <location filename="../application.cpp" line="156"/>
+        <source>Files or directories to open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="402"/>
+        <location filename="../application.cpp" line="409"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="476"/>
+        <location filename="../application.cpp" line="409"/>
         <source>Terminal emulator is not set.</source>
         <translation>L&apos;émulateur de terminal n&apos;est pas défini.</translation>
     </message>
