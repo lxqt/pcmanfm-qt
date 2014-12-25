@@ -375,7 +375,7 @@ void Application::launchFiles(QStringList paths, bool inNewWindow) {
   QStringList::iterator it;
   for(it = paths.begin(); it != paths.end(); ++it) {
     QString& pathName = *it;
-    FmPath* path = fm_path_new_for_path(pathName.toLocal8Bit().constData());
+    FmPath* path = fm_path_new_for_commandline_arg(pathName.toLocal8Bit().constData());
     fm_path_list_push_tail(pathList, path);
     fm_path_unref(path);
   }
