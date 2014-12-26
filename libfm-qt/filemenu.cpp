@@ -42,7 +42,8 @@ FileMenu::FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, QWidget
 
 FileMenu::FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, const QString& title, QWidget* parent):
   QMenu(title, parent),
-  fileLauncher_(NULL) {
+  fileLauncher_(NULL),
+  unTrashAction_(NULL) {
   createMenu(files, info, cwd);
 }
 
@@ -111,26 +112,45 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   menu->addAction(openWithAction_);
 
   separator1_ = addSeparator();
-  
-  cutAction_ = new QAction(QIcon::fromTheme("edit-cut"), tr("Cut"), this);
-  connect(cutAction_, SIGNAL(triggered(bool)), SLOT(onCutTriggered()));
-  addAction(cutAction_);
 
-  copyAction_ = new QAction(QIcon::fromTheme("edit-copy"), tr("Copy"), this);
-  connect(copyAction_, SIGNAL(triggered(bool)), SLOT(onCopyTriggered()));
-  addAction(copyAction_);
+  if(allTrash_) { // all selected files are in trash:///
+    bool can_restore = true;
+    /* only immediate children of trash:/// can be restored. */
+    for(GList* l = fm_file_info_list_peek_head_link(files_); l; l=l->next) {
+        FmPath *trash_path = fm_file_info_get_path(FM_FILE_INFO(l->data));
+        if(!fm_path_get_parent(trash_path) ||
+           !fm_path_is_trash_root(fm_path_get_parent(trash_path))) {
+            can_restore = false;
+            break;
+        }
+    }
+    if(can_restore) {
+      unTrashAction_ = new QAction(tr("&Restore"), this);
+      connect(unTrashAction_, SIGNAL(triggered(bool)), SLOT(onUnTrashTriggered()));
+      addAction(unTrashAction_);
+    }
+  }
+  else { // ordinary files
+    cutAction_ = new QAction(QIcon::fromTheme("edit-cut"), tr("Cut"), this);
+    connect(cutAction_, SIGNAL(triggered(bool)), SLOT(onCutTriggered()));
+    addAction(cutAction_);
 
-  pasteAction_ = new QAction(QIcon::fromTheme("edit-paste"), tr("Paste"), this);
-  connect(pasteAction_, SIGNAL(triggered(bool)), SLOT(onPasteTriggered()));
-  addAction(pasteAction_);
+    copyAction_ = new QAction(QIcon::fromTheme("edit-copy"), tr("Copy"), this);
+    connect(copyAction_, SIGNAL(triggered(bool)), SLOT(onCopyTriggered()));
+    addAction(copyAction_);
 
-  deleteAction_ = new QAction(QIcon::fromTheme("edit-delete"), tr("&Move to Trash"), this);
-  connect(deleteAction_, SIGNAL(triggered(bool)), SLOT(onDeleteTriggered()));
-  addAction(deleteAction_);
+    pasteAction_ = new QAction(QIcon::fromTheme("edit-paste"), tr("Paste"), this);
+    connect(pasteAction_, SIGNAL(triggered(bool)), SLOT(onPasteTriggered()));
+    addAction(pasteAction_);
 
-  renameAction_ = new QAction(tr("Rename"), this);
-  connect(renameAction_, SIGNAL(triggered(bool)), SLOT(onRenameTriggered()));
-  addAction(renameAction_);
+    deleteAction_ = new QAction(QIcon::fromTheme("edit-delete"), tr("&Move to Trash"), this);
+    connect(deleteAction_, SIGNAL(triggered(bool)), SLOT(onDeleteTriggered()));
+    addAction(deleteAction_);
+
+    renameAction_ = new QAction(tr("Rename"), this);
+    connect(renameAction_, SIGNAL(triggered(bool)), SLOT(onRenameTriggered()));
+    addAction(renameAction_);
+  }
 
 #ifdef CUSTOM_ACTIONS
   // DES-EMA custom actions integration
@@ -295,6 +315,11 @@ void FileMenu::onDeleteTriggered() {
   else
     FileOperation::deleteFiles(paths, confirmDelete_);
   fm_path_list_unref(paths);
+}
+
+void FileMenu::onUnTrashTriggered() {
+  FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
+  FileOperation::unTrashFiles(paths);
 }
 
 void FileMenu::onPasteTriggered() {

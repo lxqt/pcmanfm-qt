@@ -88,6 +88,10 @@ public:
     return deleteAction_;  
   }
 
+  QAction* unTrashAction() {
+    return unTrashAction_;  
+  }
+
   QAction* renameAction() {
     return renameAction_;  
   }
@@ -160,6 +164,7 @@ protected Q_SLOTS:
   void onPasteTriggered();
   void onRenameTriggered();
   void onDeleteTriggered();
+  void onUnTrashTriggered();
 
 private:
   FmFileInfoList* files_;
@@ -180,6 +185,7 @@ private:
   QAction* copyAction_;
   QAction* pasteAction_;
   QAction* deleteAction_;
+  QAction* unTrashAction_;
   QAction* renameAction_;
   QAction* separator2_;
   QAction* propertiesAction_;

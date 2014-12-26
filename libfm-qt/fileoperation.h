@@ -40,7 +40,7 @@ public:
     Link = FM_FILE_OP_LINK,
     Delete = FM_FILE_OP_DELETE,
     Trash = FM_FILE_OP_TRASH,
-    Untrash = FM_FILE_OP_UNTRASH,
+    UnTrash = FM_FILE_OP_UNTRASH,
     ChangeAttr = FM_FILE_OP_CHANGE_ATTR
   };
 
@@ -102,6 +102,7 @@ public:
   static FileOperation* symlinkFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
   static FileOperation* deleteFiles(FmPathList* srcFiles, bool promp = true, QWidget* parent = 0);
   static FileOperation* trashFiles(FmPathList* srcFiles, bool promp = true, QWidget* parent = 0);
+  static FileOperation* unTrashFiles(FmPathList* srcFiles, QWidget* parent = 0);
   static FileOperation* changeAttrFiles(FmPathList* srcFiles, QWidget* parent = 0);
 
 Q_SIGNALS:

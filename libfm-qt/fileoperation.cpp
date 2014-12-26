@@ -239,6 +239,13 @@ FileOperation* FileOperation::trashFiles(FmPathList* srcFiles, bool prompt, QWid
   return op;
 }
 
+//static
+FileOperation* FileOperation::unTrashFiles(FmPathList* srcFiles, QWidget* parent) {
+  FileOperation* op = new FileOperation(FileOperation::UnTrash, srcFiles);
+  op->run();
+  return op;
+}
+
 // static
 FileOperation* FileOperation::changeAttrFiles(FmPathList* srcFiles, QWidget* parent) {
   //TODO
