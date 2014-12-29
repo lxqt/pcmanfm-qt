@@ -139,7 +139,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="253"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Suchen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="254"/>
@@ -312,27 +312,27 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="536"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished">Alles markieren</translation>
+        <translation>&amp;Alles markieren</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="538"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished">Einstellungen</translation>
+        <translation>&amp;Einstellungen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="561"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished">Auswahl umkehren</translation>
+        <translation>Auswahl &amp;umkehren</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="562"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished">Löschen</translation>
+        <translation>&amp;Löschen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="564"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished">Umbenennen</translation>
+        <translation>Um&amp;benennen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="537"/>
@@ -342,37 +342,37 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="500"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished">Übergeordneter Ordner</translation>
+        <translation>&amp;Übergeordneter Ordner</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="512"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished">Neues Fenster</translation>
+        <translation>Neues &amp;Fenster</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="526"/>
         <source>&amp;Icon View</source>
-        <translation>Symbolansicht</translation>
+        <translation>&amp;Symbolansicht</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="527"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished">Listenansicht</translation>
+        <translation>&amp;Listenansicht</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="528"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished">Detailansicht</translation>
+        <translation>&amp;Detailansicht</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="529"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished">Miniaturansicht</translation>
+        <translation>&amp;Miniaturansicht</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="530"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished">Ausschneiden</translation>
+        <translation>&amp;Ausschneiden</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="539"/>
@@ -412,7 +412,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="546"/>
         <source>New &amp;Tab</source>
-        <translation>Neuer Reiter</translation>
+        <translation>Neuer &amp;Reiter</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="548"/>
@@ -427,7 +427,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="551"/>
         <source>Go &amp;Back</source>
-        <translation>Zurück</translation>
+        <translation>&amp;Zurück</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="553"/>
@@ -442,7 +442,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="556"/>
         <source>Go &amp;Forward</source>
-        <translation>Vorwärts</translation>
+        <translation>&amp;Vorwärts</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="558"/>
@@ -467,22 +467,22 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="566"/>
         <source>C&amp;lose Tab</source>
-        <translation>Reiter schließen</translation>
+        <translation>Reiter &amp;schließen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="568"/>
         <source>File &amp;Properties</source>
-        <translation>Dateieigenschaften</translation>
+        <translation>&amp;Dateieigenschaften</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="570"/>
         <source>&amp;Folder Properties</source>
-        <translation>Ordnereigenschaften</translation>
+        <translation>&amp;Eigenschaften des aktuellen Ordners</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="582"/>
         <source>&amp;Sorting</source>
-        <translation>Sortierung</translation>
+        <translation>S&amp;ortierung</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="587"/>
@@ -522,7 +522,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="575"/>
         <source>Open &amp;Terminal</source>
-        <translation>Terminal öffnen</translation>
+        <translation>&amp;Terminal öffnen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="576"/>
@@ -532,47 +532,47 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="577"/>
         <source>Open as &amp;Root</source>
-        <translation>Als Root öffnen</translation>
+        <translation>Als &amp;Root öffnen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="578"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation>Favoriten bearbeiten</translation>
+        <translation>&amp;Favoriten bearbeiten</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="579"/>
         <source>&amp;File</source>
-        <translation>Datei</translation>
+        <translation>&amp;Datei</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="580"/>
         <source>&amp;Help</source>
-        <translation>Hilfe</translation>
+        <translation>&amp;Hilfe</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="581"/>
         <source>&amp;View</source>
-        <translation>Ansicht</translation>
+        <translation>&amp;Ansicht</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="583"/>
         <source>&amp;Edit</source>
-        <translation>Bearbeiten</translation>
+        <translation>&amp;Bearbeiten</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="584"/>
         <source>&amp;Bookmarks</source>
-        <translation>Favoriten</translation>
+        <translation>&amp;Favoriten</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="585"/>
         <source>&amp;Go</source>
-        <translation>Vorwärts</translation>
+        <translation>&amp;Gehe zu</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="586"/>
         <source>&amp;Tool</source>
-        <translation>Werkzeuge</translation>
+        <translation>&amp;Werkzeuge</translation>
     </message>
 </context>
 <context>
@@ -726,7 +726,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../desktopwindow.cpp" line="341"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Symbole &amp;fixieren</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="363"/>
@@ -744,12 +744,12 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../mainwindow.cpp" line="741"/>
         <source>&amp;Move to Trash</source>
-        <translation>In den Papierkorb verschieben</translation>
+        <translation>In den &amp;Papierkorb verschieben</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="741"/>
         <source>&amp;Delete</source>
-        <translation>Löschen</translation>
+        <translation>&amp;Löschen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="802"/>
@@ -802,8 +802,8 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
         <location filename="../tabpage.cpp" line="232"/>
         <source>%n item(s)</source>
         <translation>
+            <numerusform>%n Objekt</numerusform>
             <numerusform>%n Objekte</numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -811,7 +811,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
         <source> (%n hidden)</source>
         <translation>
             <numerusform>(%n versteckt)</numerusform>
-            <numerusform></numerusform>
+            <numerusform>(%n versteckt)</numerusform>
         </translation>
     </message>
     <message>
@@ -825,17 +825,17 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../view.cpp" line="102"/>
         <source>Open in New T&amp;ab</source>
-        <translation>In einem neuen Reiter öffnen</translation>
+        <translation>In einem neuen &amp;Reiter öffnen</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="106"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>In einem neuen Fenster öffnen</translation>
+        <translation>In einem neuen &amp;Fenster öffnen</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="113"/>
         <source>Open in Termina&amp;l</source>
-        <translation>Im Terminal öffnen</translation>
+        <translation>Im &amp;Terminal öffnen</translation>
     </message>
 </context>
 <context>
@@ -958,7 +958,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
         <source>File Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>Dateioperationen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
@@ -1050,7 +1050,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
         <source>Archiver integration:</source>
-        <translation>Archivmanagerintegration</translation>
+        <translation>Archivmanagerintegration:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>

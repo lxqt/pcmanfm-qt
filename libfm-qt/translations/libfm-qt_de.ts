@@ -593,7 +593,7 @@ Was möchten Sie damit tun?</translation>
     <message>
         <location filename="../foldermenu.cpp" line="44"/>
         <source>&amp;Paste</source>
-        <translation>Einfügen</translation>
+        <translation>&amp;Einfügen</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="50"/>
@@ -618,7 +618,7 @@ Was möchten Sie damit tun?</translation>
     <message>
         <location filename="../foldermenu.cpp" line="73"/>
         <source>Folder Pr&amp;operties</source>
-        <translation>Ordnereigenschaften</translation>
+        <translation>Ordner&amp;eigenschaften</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="85"/>
@@ -831,12 +831,12 @@ Geändert: %3</translation>
     <message>
         <location filename="../renamedialog.cpp" line="89"/>
         <source>&amp;Overwrite</source>
-        <translation>Überschreiben</translation>
+        <translation>Über&amp;schreiben</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="91"/>
         <source>&amp;Rename</source>
-        <translation>Umbenennen</translation>
+        <translation>&amp;Umbenennen</translation>
     </message>
 </context>
 <context>
@@ -968,47 +968,47 @@ Geändert: %3</translation>
     <message>
         <location filename="../rename-dialog.ui" line="14"/>
         <source>Confirm to replace files</source>
-        <translation type="unfinished"></translation>
+        <translation>Überschreiben von Dateien bestätigen</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="35"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Es gibt bereits eine gleichnamige Datei an diesem Ort.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Möchten Sie die Datei ersetzen?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
         <source>dest</source>
-        <translation type="unfinished"></translation>
+        <translation>Ziel</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="63"/>
         <source>with the following file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Mit der folgenden Datei?</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
         <source>src file info</source>
-        <translation type="unfinished"></translation>
+        <translation>Info über die Quelldatei</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
         <source>dest file info</source>
-        <translation type="unfinished"></translation>
+        <translation>Info über die Zieldatei</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
         <source>src</source>
-        <translation type="unfinished"></translation>
+        <translation>Quelle</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
         <source>&amp;File name:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Dateiname:</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="137"/>
         <source>Apply this option to all existing files</source>
-        <translation type="unfinished"></translation>
+        <translation>Diese Aktion auf alle existierenden Dateien anwenden</translation>
     </message>
 </context>
 </TS>
