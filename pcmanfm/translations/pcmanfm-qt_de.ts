@@ -267,12 +267,12 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="521"/>
         <source>&amp;Network</source>
-        <translation>Netz&amp;werk</translation>
+        <translation>&amp;Netzwerk</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="522"/>
         <source>&amp;Desktop</source>
-        <translation>&amp;Desktop</translation>
+        <translation>Arbeits&amp;fläche</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="523"/>
