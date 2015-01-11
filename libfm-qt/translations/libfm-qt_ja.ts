@@ -48,7 +48,7 @@
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished">コマンド実行後も端末のウィンドウを閉じない</translation>
+        <translation>コマンド実行後も端末のウィンドウを閉じない</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
