@@ -22,6 +22,7 @@
 #include "desktopwindow.h"
 #include "settings.h"
 #include "application.h"
+#include <QDesktopWidget>
 #include <QFileDialog>
 #include <QImageReader>
 #include <qfuture.h>
@@ -43,7 +44,8 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.wallpaperMode->addItem(tr("Stretch to fit the screen"), DesktopWindow::WallpaperFit);
   ui.wallpaperMode->addItem(tr("Center on the screen"), DesktopWindow::WallpaperCenter);
   ui.wallpaperMode->addItem(tr("Tile the image to fill the entire screen"), DesktopWindow::WallpaperTile);
-  ui.wallpaperMode->addItem(tr("Multihead"), DesktopWindow::WallpaperMultihead);
+  if(settings.wallpaperMode() == DesktopWindow::WallpaperMultihead || QApplication::desktop()->screenCount() > 1)
+    ui.wallpaperMode->addItem(tr("Multihead"), DesktopWindow::WallpaperMultihead);
   int i;
   switch(settings.wallpaperMode()) {
     case DesktopWindow::WallpaperNone:
