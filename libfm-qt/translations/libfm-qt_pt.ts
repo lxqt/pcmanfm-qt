@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="pt_PT">
+<TS version="2.0" language="pt">
 <context>
     <name>AppChooserDialog</name>
     <message>
         <location filename="../app-chooser-dialog.ui" line="14"/>
         <source>Choose an Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Escolha uma aplicação</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
         <source>Installed Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicações instaladas</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
         <source>Custom Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Comando personalizado</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
         <source>Command line to execute:</source>
-        <translation type="unfinished"></translation>
+        <translation>Linha de comandos a executar:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
         <source>Application name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome da aplicação:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
@@ -37,22 +37,28 @@
 &lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represents a single URI of the file&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represents multiple URIs&lt;/li&gt;
 &lt;/ul&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Pode utilizar os seguintes códigos na linha de comandos:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: é o nome de um ficheiro&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;: é o nome de vários ficheiros&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: é o URI do ficheiro&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: é o URI de vários ficheiros&lt;/li&gt;
+&lt;/ul&gt;</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished"></translation>
+        <translation>Manter janela de terminal aberta depois de executar o comando</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
         <source>Execute in terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar no emulador de terminal</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
         <source>Set selected application as default action of this file type</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizar a aplicação selecionada como pré-definida para este tipo de ficheiro</translation>
     </message>
 </context>
 <context>
@@ -93,27 +99,27 @@
     <message>
         <location filename="../exec-file.ui" line="14"/>
         <source>Execute file</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar ficheiro</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
         <source>&amp;Open</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Abrir</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
         <source>E&amp;xecute</source>
-        <translation type="unfinished"></translation>
+        <translation>E&amp;xecutar</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
         <source>Execute in &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar no &amp;terminal</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
 </context>
 <context>
@@ -169,7 +175,7 @@
     <message>
         <location filename="../file-props.ui" line="114"/>
         <source>Mime type:</source>
-        <translation>Tipo Mime:</translation>
+        <translation>Tipo MIME:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="134"/>
@@ -288,7 +294,7 @@
     <message>
         <location filename="../appchoosercombobox.cpp" line="76"/>
         <source>Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>Personalizar</translation>
     </message>
 </context>
 <context>
@@ -296,7 +302,7 @@
     <message>
         <location filename="../appchooserdialog.cpp" line="262"/>
         <source>Select an application to open &quot;%1&quot; files</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecione uma aplicação para abrir os ficheiros %1</translation>
     </message>
 </context>
 <context>
@@ -304,12 +310,12 @@
     <message>
         <location filename="../dirtreemodelitem.cpp" line="77"/>
         <source>Loading...</source>
-        <translation type="unfinished"></translation>
+        <translation>A carregar...</translation>
     </message>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="208"/>
         <source>&lt;No sub folders&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Não existem subpastas&gt;</translation>
     </message>
 </context>
 <context>
@@ -349,12 +355,13 @@
         <location filename="../execfiledialog.cpp" line="40"/>
         <source>This text file &apos;%1&apos; seems to be an executable script.
 What do you want to do with it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Parece que o ficheiro de texto %1 é um script executável.
+O que pretende fazer com o ficheiro?</translation>
     </message>
     <message>
         <location filename="../execfiledialog.cpp" line="45"/>
         <source>This file &apos;%1&apos; is executable. Do you want to execute it?</source>
-        <translation type="unfinished"></translation>
+        <translation>O ficheiro %1 é um executável. Pretende executar o ficheiro?</translation>
     </message>
 </context>
 <context>
@@ -392,7 +399,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="269"/>
         <source>Output</source>
-        <translation type="unfinished"></translation>
+        <translation>Destino</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="314"/>
@@ -407,12 +414,12 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="81"/>
         <source>Open With...</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir com...</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="109"/>
         <source>Other Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Outras aplicações</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="157"/>
@@ -422,7 +429,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="162"/>
         <source>Extract Here</source>
-        <translation>Extrair para aqui</translation>
+        <translation>Extrair aqui</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="168"/>
@@ -451,7 +458,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperation.cpp" line="230"/>
         <source>Do you want to move the selected files to trash can?</source>
-        <translation>Quer mesmo mover para o lixo o(s) ficheiro(s) selecionado(s)?</translation>
+        <translation>Quer mesmo mover o(s) ficheiro(s) selecionado(s) para o lixo?</translation>
     </message>
 </context>
 <context>
@@ -464,7 +471,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="42"/>
         <source>Moving the following files to destination folder:</source>
-        <translation>A moverficheiros para a pasta de destino:</translation>
+        <translation>A mover os ficheiros para a pasta de destino:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="45"/>
@@ -474,7 +481,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="46"/>
         <source>Copying the following files to destination folder:</source>
-        <translation>A copiar ficheiros para a pasta de destino:</translation>
+        <translation>A copiar os ficheiros para a pasta de destino:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="49"/>
@@ -484,7 +491,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="50"/>
         <source>Moving the following files to trash can:</source>
-        <translation>A mover ficheiros para o lixo:</translation>
+        <translation>A mover os ficheiros para o lixo:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="53"/>
@@ -514,7 +521,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="64"/>
         <source>Changing attributes of the following files:</source>
-        <translation>A alterar atributos destes ficheiros:</translation>
+        <translation>A alterar os atributos destes ficheiros:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="69"/>
@@ -557,7 +564,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filepropsdialog.cpp" line="153"/>
         <source>Forbidden</source>
-        <translation>proibido</translation>
+        <translation>Proibido</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="257"/>
@@ -629,7 +636,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../foldermenu.cpp" line="89"/>
         <source>Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>Ficheiro vazio</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="133"/>
@@ -731,7 +738,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../placesmodel.cpp" line="41"/>
         <source>Places</source>
-        <translation type="unfinished"></translation>
+        <translation>Locais</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="51"/>
@@ -761,12 +768,12 @@ What do you want to do with it?</source>
     <message>
         <location filename="../placesmodel.cpp" line="85"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Dispositivos</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="128"/>
         <source>Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Marcadores</translation>
     </message>
 </context>
 <context>
@@ -774,7 +781,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../placesview.cpp" line="248"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Esvaziar lixo</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="257"/>
@@ -819,9 +826,8 @@ Modificado: %3</translation>
         <location filename="../renamedialog.cpp" line="56"/>
         <source>Type: %1
 Modified: %2</source>
-        <translation type="unfinished">Tipo: %1
-Modificado: %2 {1
-?}</translation>
+        <translation>Tipo: %1
+Modificado: %2</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="75"/>
@@ -847,23 +853,23 @@ Modificado: %3</translation>
         <location filename="../sidepane.cpp" line="45"/>
         <location filename="../sidepane.cpp" line="124"/>
         <source>Places</source>
-        <translation type="unfinished"></translation>
+        <translation>Locais</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="46"/>
         <location filename="../sidepane.cpp" line="126"/>
         <source>Directory Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>Árvore de diretórios</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="134"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra a lista de locais, dispositivos e marcadores na barra lateral</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="136"/>
         <source>Shows tree of directories in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra a árvore de diretórios na barra lateral</translation>
     </message>
 </context>
 <context>
@@ -896,17 +902,17 @@ Modificado: %3</translation>
     <message>
         <location filename="../mount-operation-password.ui" line="112"/>
         <source>&amp;Domain:</source>
-        <translation>&amp;Dmínio:</translation>
+        <translation>&amp;Domínio:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="127"/>
         <source>Forget password &amp;immediately</source>
-        <translation>Decartar senha &amp;imediatamente</translation>
+        <translation>Esquecer senha &amp;imediatamente</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="137"/>
         <source>Remember password until you &amp;logout</source>
-        <translation>Memorizar sen&amp;ha até fechar sessão</translation>
+        <translation>Memorizar sen&amp;ha até fechar a sessão</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="147"/>
@@ -957,7 +963,7 @@ Modificado: %3</translation>
     <message>
         <location filename="../utilities.cpp" line="177"/>
         <source>Enter a name for the new %1:</source>
-        <translation type="unfinished"></translation>
+        <translation>Introduza o nome para %1:</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="186"/>
@@ -975,7 +981,7 @@ Modificado: %3</translation>
     <message>
         <location filename="../rename-dialog.ui" line="35"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Já existe, nesta localização, um ficheiro com o mesmo nome..&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Pretende substituir o ficheiro existente&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Já existe um ficheiro com o mesmo nome nesta localização.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Pretende substituir o ficheiro existente&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
