@@ -49,7 +49,8 @@ public:
     WallpaperStretch,
     WallpaperFit,
     WallpaperCenter,
-    WallpaperTile
+    WallpaperTile,
+    WallpaperMultihead
   };
 
   explicit DesktopWindow(int screenNum);
