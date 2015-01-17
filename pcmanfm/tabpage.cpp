@@ -121,8 +121,13 @@ void TabPage::freeFolder() {
 #endif
 }
 
-/*static*/ void TabPage::onFolderFinishLoading(FmFolder* _folder, TabPage* pThis) {
+// slot
+void TabPage::restoreScrollPos() {
+  // scroll to recorded position
+  folderView_->childView()->verticalScrollBar()->setValue(browseHistory().currentScrollPos());
+}
 
+/*static*/ void TabPage::onFolderFinishLoading(FmFolder* _folder, TabPage* pThis) {
   // FIXME: is this needed?
   FmFileInfo* fi = fm_folder_get_info(_folder);
   if(fi) { // if loading of the folder fails, it's possible that we don't have FmFileInfo.
@@ -132,7 +137,7 @@ void TabPage::freeFolder() {
 
   fm_folder_query_filesystem_info(_folder); // FIXME: is this needed?
 #if 0
-  FmFolderView* fv = pThis->folder_view;
+  FmFolderView* fv = folder_view;
   const FmNavHistoryItem* item;
   GtkScrolledWindow* scroll = GTK_SCROLLED_WINDOW(fv);
 
@@ -156,10 +161,6 @@ void TabPage::freeFolder() {
     g_object_unref(model);
   }
 
-  /* scroll to recorded position */
-  item = fm_nav_history_get_cur(pThis->nav_history);
-  gtk_adjustment_set_value(gtk_scrolled_window_get_vadjustment(scroll), item->scroll_pos);
-
 #endif
 
   // update status text
@@ -172,6 +173,11 @@ void TabPage::freeFolder() {
     pThis->overrideCursor_ = false;
   }
   qDebug("finish-loading");
+
+  // After finishing loading the folder, the model is updated, but Qt delays the UI update 
+  // for performance reasons. Therefore at this point the UI is not up to date.
+  // Of course, the scrollbar ranges are not updated yet. We solve this by installing an Qt timeout handler.
+  QTimer::singleShot(10, pThis, SLOT(restoreScrollPos()));
 }
 
 /*static*/ FmJobErrorAction TabPage::onFolderError(FmFolder* _folder, GError* err, FmJobErrorSeverity severity, TabPage* pThis) {
@@ -411,11 +417,21 @@ void TabPage::onSelChanged(int numSel) {
 
 
 void TabPage::backward() {
+  // remember current scroll position
+  BrowseHistoryItem& item = history_.currentItem();
+  QAbstractItemView* childView = folderView_->childView();
+  item.setScrollPos(childView->verticalScrollBar()->value());
+
   history_.backward();
   chdir(history_.currentPath(), false);
 }
 
 void TabPage::forward() {
+  // remember current scroll position
+  BrowseHistoryItem& item = history_.currentItem();
+  QAbstractItemView* childView = folderView_->childView();
+  item.setScrollPos(childView->verticalScrollBar()->value());
+
   history_.forward();
   chdir(history_.currentPath(), false);
 }
@@ -423,6 +439,11 @@ void TabPage::forward() {
 void TabPage::jumpToHistory(int index)
 {
   if(index >=0 && index < history_.size()) {
+    // remember current scroll position
+    BrowseHistoryItem& item = history_.currentItem();
+    QAbstractItemView* childView = folderView_->childView();
+    item.setScrollPos(childView->verticalScrollBar()->value());
+
     history_.setCurrentIndex(index);
     chdir(history_.currentPath(), false);
   }
