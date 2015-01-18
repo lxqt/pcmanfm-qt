@@ -75,7 +75,11 @@ void EditBookmarksDialog::accept() {
   }
 
   // FIXME: should we support Qt or KDE specific bookmarks in the future?
-  char* outputFile = g_build_filename(g_get_home_dir(), ".gtk-bookmarks", NULL);
+  char* outputFile = g_build_filename(g_get_user_config_dir(), "gtk-3.0", "bookmarks", NULL);
+  if (!g_file_test(outputFile, G_FILE_TEST_IS_REGULAR)) {
+    g_free(outputFile);
+    outputFile = g_build_filename(g_get_home_dir(), ".gtk-bookmarks", NULL);
+  }
   // we use glib API here because the API is atomic.
   g_file_set_contents(outputFile, buf.constData(), buf.length(), NULL);
   g_free(outputFile);
