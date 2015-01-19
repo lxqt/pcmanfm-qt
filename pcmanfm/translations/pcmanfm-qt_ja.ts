@@ -67,7 +67,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="139"/>
@@ -101,7 +101,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>PCMan File Manager
+        <translation type="vanished">PCMan File Manager
 
 Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
 
@@ -161,77 +161,99 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>DesktopPreferencesDialog</name>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="240"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="276"/>
         <source>Desktop Preferences</source>
         <translation>デスクトップの設定</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="241"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="277"/>
         <source>Background</source>
         <translation>背景</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="242"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="278"/>
         <source>Wallpaper mode:</source>
         <translation>壁紙のモード:</translation>
-        </message>
+    </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="243"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="279"/>
         <source>Wallpaper image file:</source>
         <translation>壁紙の画像ファイル:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="245"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="281"/>
         <source>Select background color:</source>
         <translation>背景色を選択:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="247"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="283"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="303"/>
         <source>Image file</source>
         <translation>画像ファイル</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="252"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="288"/>
         <source>Image file path</source>
         <translation>画像ファイルのパス</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="253"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="289"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="309"/>
         <source>&amp;Browse</source>
         <translation>参照(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="254"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="290"/>
         <source>Label Text</source>
         <translation>ラベルテキスト</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="257"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="293"/>
         <source>Select  text color:</source>
         <translation>文字色を選択</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="258"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="294"/>
         <source>Select shadow color:</source>
         <translation>影の色を選択:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="259"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="295"/>
         <source>Select font:</source>
         <translation>フォントを選択</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="261"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="297"/>
         <source>General</source>
         <translation>一般</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="262"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="298"/>
+        <source>Window Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="299"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
         <translation>デスクトップのクリック時にウインドウマネージャーのメニューを表示</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="263"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="300"/>
+        <source>Desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="301"/>
+        <source>Desktop folder:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="308"/>
+        <source>Folder path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="310"/>
         <source>Advanced</source>
         <translation>高度</translation>
     </message>
@@ -472,7 +494,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <location filename="../../build/pcmanfm/ui_main-win.h" line="546"/>
         <source>New &amp;Tab</source>
         <translation>新しいタブ(&amp;T)</translation>
-        </message>
+    </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="548"/>
         <source>New Tab</source>
@@ -750,32 +772,32 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="41"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="42"/>
         <source>Fill with background color only</source>
         <translation>背景色のみで埋める</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="42"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="43"/>
         <source>Stretch to fill the entire screen</source>
         <translation>画面全部に引き伸ばす</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="43"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="44"/>
         <source>Stretch to fit the screen</source>
         <translation>画面に合わせて調節</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="44"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="45"/>
         <source>Center on the screen</source>
         <translation>画面の中央に表示</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="45"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="46"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>画面全体に並べる</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="120"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="125"/>
         <source>Image Files</source>
         <translation>画像ファイル</translation>
     </message>
@@ -783,12 +805,12 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="349"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>現在の場所に固定</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="363"/>
+        <location filename="../desktopwindow.cpp" line="371"/>
         <source>Desktop Preferences</source>
         <translation>デスクトップ設定</translation>
     </message>
@@ -823,7 +845,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     </message>
     <message>
         <source>Terminal emulator is not set.</source>
-        <translation>端末エミュレーターを未設定です</translation>
+        <translation type="vanished">端末エミュレーターを未設定です</translation>
     </message>
 </context>
 <context>
@@ -852,35 +874,31 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="204"/>
+        <location filename="../tabpage.cpp" line="210"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="217"/>
+        <location filename="../tabpage.cpp" line="223"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>空き領域: %1 (全体: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="232"/>
+        <location filename="../tabpage.cpp" line="238"/>
         <source>%n item(s)</source>
         <translation>
-        <numerusform>%n 個のアイテム</numerusform>
-        <numerusform></numerusform>
-        <numerusform></numerusform>
+            <numerusform>%n 個のアイテム</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="234"/>
+        <location filename="../tabpage.cpp" line="240"/>
         <source> (%n hidden)</source>
-        <translation> 
+        <translation>
             <numerusform>(%n 個の隠しアイテム)</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-	    </translation>
+        </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="382"/>
+        <location filename="../tabpage.cpp" line="388"/>
         <source>%1 item(s) selected</source>
         <translation>%1 個のアイテムを選択</translation>
     </message>
@@ -1077,7 +1095,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     </message>
     <message>
         <source>Do not generate thumbnails for files exceeding this size (KB):</source>
-        <translation>次のサイズ(KB)を超えるファイルのサムネイルを生成しない:</translation>
+        <translation type="vanished">次のサイズ(KB)を超えるファイルのサムネイルを生成しない:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
@@ -1106,7 +1124,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     </message>
     <message>
         <source>Terminal emulator command for directories:</source>
-        <translation>ディレクトリーで実行する端末エミュレーターのコマンド</translation>
+        <translation type="vanished">ディレクトリーで実行する端末エミュレーターのコマンド</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
@@ -1127,7 +1145,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     </message>
     <message>
         <source>Terminal emulator command for programs:</source>
-        <translation>プログラムを実行する端末エミュレーターのコマンド:</translation>
+        <translation type="vanished">プログラムを実行する端末エミュレーターのコマンド:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>

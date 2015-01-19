@@ -173,6 +173,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>Show menus provided by window managers when desktop is clicked</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Window Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Desktop folder:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Folder path</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

@@ -152,77 +152,99 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>DesktopPreferencesDialog</name>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="240"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="276"/>
         <source>Desktop Preferences</source>
         <translation>Preferências da área de trabalho</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="241"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="277"/>
         <source>Background</source>
         <translation>Fundo</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="242"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="278"/>
         <source>Wallpaper mode:</source>
         <translation>Modo de papel de parede:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="243"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="279"/>
         <source>Wallpaper image file:</source>
         <translation>Ficheiro do papel de parede:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="245"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="281"/>
         <source>Select background color:</source>
         <translation>Escolha a cor de fundo:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="247"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="283"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="303"/>
         <source>Image file</source>
         <translation>Ficheiro de imagem</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="252"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="288"/>
         <source>Image file path</source>
         <translation>Caminho do ficheiro de imagem</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="253"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="289"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="309"/>
         <source>&amp;Browse</source>
         <translation>E&amp;xplorar</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="254"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="290"/>
         <source>Label Text</source>
         <translation>Texto</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="257"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="293"/>
         <source>Select  text color:</source>
         <translation>Escolha a cor do texto:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="258"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="294"/>
         <source>Select shadow color:</source>
         <translation>Escolha a cor da sombra:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="259"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="295"/>
         <source>Select font:</source>
         <translation>Escolha o tipo de letra:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="261"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="297"/>
         <source>General</source>
         <translation>Geral</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="262"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="298"/>
+        <source>Window Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="299"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="263"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="300"/>
+        <source>Desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="301"/>
+        <source>Desktop folder:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="308"/>
+        <source>Folder path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="310"/>
         <source>Advanced</source>
         <translation>Avançado</translation>
     </message>
@@ -742,32 +764,32 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="41"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="42"/>
         <source>Fill with background color only</source>
         <translation>Preencher apenas com a cor de fundo</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="42"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="43"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Esticar para preencher o ecrã</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="43"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="44"/>
         <source>Stretch to fit the screen</source>
         <translation>Esticar para se ajustar ao ecrã</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="44"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="45"/>
         <source>Center on the screen</source>
         <translation>Centrar no ecrã</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="45"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="46"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Imagens em mosaico para preencher o ecrã</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="120"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="125"/>
         <source>Image Files</source>
         <translation>Ficheiros de imagem</translation>
     </message>
@@ -775,12 +797,12 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="349"/>
         <source>Stic&amp;k to Current Position</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="363"/>
+        <location filename="../desktopwindow.cpp" line="371"/>
         <source>Desktop Preferences</source>
         <translation>Preferências da área de trabalho</translation>
     </message>
@@ -844,17 +866,17 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="204"/>
+        <location filename="../tabpage.cpp" line="210"/>
         <source>Error</source>
         <translation type="unfinished">Erro</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="217"/>
+        <location filename="../tabpage.cpp" line="223"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Espaço livre: %1 (Total: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="232"/>
+        <location filename="../tabpage.cpp" line="238"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n item</numerusform>
@@ -862,7 +884,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="234"/>
+        <location filename="../tabpage.cpp" line="240"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform>(%n oculto)</numerusform>
@@ -870,7 +892,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="382"/>
+        <location filename="../tabpage.cpp" line="388"/>
         <source>%1 item(s) selected</source>
         <translation type="unfinished"></translation>
     </message>
