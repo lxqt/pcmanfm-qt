@@ -43,16 +43,16 @@ public:
   // QAction used for popup menus
   class ItemAction : public QAction {
   public:
-    ItemAction(PlacesModelItem* item, QString text, QObject* parent = 0):
+    ItemAction(const QModelIndex& index, QString text, QObject* parent = 0):
       QAction(text, parent),
-      item_(item) {
+      index_(index) {
     }
 
-    PlacesModelItem* item() {
-      return item_;
+    QPersistentModelIndex& index() {
+      return index_;
     }
   private:
-    PlacesModelItem* item_;
+    QPersistentModelIndex index_;
   };
 
 public:

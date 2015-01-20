@@ -178,7 +178,9 @@ void PlacesView::onEmptyTrash() {
 
 void PlacesView::onDeleteBookmark() {
   PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
-  PlacesModelBookmarkItem* item = static_cast<PlacesModelBookmarkItem*>(action->item());
+  if(!action->index().isValid())
+    return;
+  PlacesModelBookmarkItem* item = static_cast<PlacesModelBookmarkItem*>(model_->itemFromIndex(action->index()));
   FmBookmarkItem* bookmarkItem = item->bookmark();
   FmBookmarks* bookmarks = fm_bookmarks_dup();
   fm_bookmarks_remove(bookmarks, bookmarkItem);
@@ -187,17 +189,26 @@ void PlacesView::onDeleteBookmark() {
 
 void PlacesView::onRenameBookmark() {
   PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
-  PlacesModelBookmarkItem* item = static_cast<PlacesModelBookmarkItem*>(action->item());
+  if(!action->index().isValid())
+    return;
+  PlacesModelBookmarkItem* item = static_cast<PlacesModelBookmarkItem*>(model_->itemFromIndex(action->index()));
+  setFocus();
+  setCurrentIndex(item->index());
+  edit(item->index());
+/*
   FmBookmarkItem* bookmarkItem = item->bookmark();
   FmBookmarks* bookmarks = fm_bookmarks_dup();
   // TODO: rename bookmark
   // fm_bookmarks_rename(bookmarks, bookmarkItem);
   g_object_unref(bookmarks);
+*/
 }
 
 void PlacesView::onMountVolume() {
   PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
-  PlacesModelVolumeItem* item = static_cast<PlacesModelVolumeItem*>(action->item());
+  if(!action->index().isValid())
+    return;
+  PlacesModelVolumeItem* item = static_cast<PlacesModelVolumeItem*>(model_->itemFromIndex(action->index()));
   MountOperation* op = new MountOperation(true, this);
   op->mount(item->volume());
   op->wait();
@@ -205,8 +216,10 @@ void PlacesView::onMountVolume() {
 
 void PlacesView::onUnmountVolume() {
   PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
+  if(!action->index().isValid())
+    return;
+  PlacesModelVolumeItem* item = static_cast<PlacesModelVolumeItem*>(model_->itemFromIndex(action->index()));
   GMount* mount = NULL;
-  PlacesModelVolumeItem* item = static_cast<PlacesModelVolumeItem*>(action->item());
   MountOperation* op = new MountOperation(true, this);
   op->unmount(item->volume());
   op->wait();
@@ -214,7 +227,9 @@ void PlacesView::onUnmountVolume() {
 
 void PlacesView::onUnmountMount() {
   PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
-  PlacesModelMountItem* item = static_cast<PlacesModelMountItem*>(action->item());
+  if(!action->index().isValid())
+    return;
+  PlacesModelMountItem* item = static_cast<PlacesModelMountItem*>(model_->itemFromIndex(action->index()));
   GMount* mount = item->mount();
   MountOperation* op = new MountOperation(true, this);
   op->unmount(mount);
@@ -223,7 +238,9 @@ void PlacesView::onUnmountMount() {
 
 void PlacesView::onEjectVolume() {
   PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
-  PlacesModelVolumeItem* item = static_cast<PlacesModelVolumeItem*>(action->item());
+  if(!action->index().isValid())
+    return;
+  PlacesModelVolumeItem* item = static_cast<PlacesModelVolumeItem*>(model_->itemFromIndex(action->index()));
   MountOperation* op = new MountOperation(true, this);
   op->eject(item->volume());
   op->wait();
@@ -240,7 +257,7 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
         FmPath* path = item->path();
         if(path && fm_path_equal(fm_path_get_trash(), path)) {
           menu = new QMenu(this);
-          action = new PlacesModel::ItemAction(item, tr("Empty Trash"), menu);
+          action = new PlacesModel::ItemAction(item->index(), tr("Empty Trash"), menu);
           connect(action, SIGNAL(triggered(bool)), SLOT(onEmptyTrash()));
           menu->addAction(action);
         }
@@ -249,10 +266,10 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
       case PlacesModelItem::Bookmark: {
         // create context menu for bookmark item
         menu = new QMenu(this);
-        action = new PlacesModel::ItemAction(item, tr("Rename"), menu);
+        action = new PlacesModel::ItemAction(item->index(), tr("Rename"), menu);
         connect(action, SIGNAL(triggered(bool)), SLOT(onRenameBookmark()));
         menu->addAction(action);
-        action = new PlacesModel::ItemAction(item, tr("Delete"), menu);
+        action = new PlacesModel::ItemAction(item->index(), tr("Delete"), menu);
         connect(action, SIGNAL(triggered(bool)), SLOT(onDeleteBookmark()));
         menu->addAction(action);
         break;
@@ -262,17 +279,17 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
         menu = new QMenu(this);
 
         if(volumeItem->isMounted()) {
-          action = new PlacesModel::ItemAction(item, tr("Unmount"), menu);
+          action = new PlacesModel::ItemAction(item->index(), tr("Unmount"), menu);
           connect(action, SIGNAL(triggered(bool)), SLOT(onUnmountVolume()));
         }
         else {
-          action = new PlacesModel::ItemAction(item, tr("Mount"), menu);
+          action = new PlacesModel::ItemAction(item->index(), tr("Mount"), menu);
           connect(action, SIGNAL(triggered(bool)), SLOT(onMountVolume()));
         }
         menu->addAction(action);
 
         if(volumeItem->canEject()) {
-          action = new PlacesModel::ItemAction(item, tr("Eject"), menu);
+          action = new PlacesModel::ItemAction(item->index(), tr("Eject"), menu);
           connect(action, SIGNAL(triggered(bool)), SLOT(onEjectVolume()));
           menu->addAction(action);
         }
@@ -280,7 +297,7 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
       }
       case PlacesModelItem::Mount: {
         menu = new QMenu(this);
-        action = new PlacesModel::ItemAction(item, tr("Unmount"), menu);
+        action = new PlacesModel::ItemAction(item->index(), tr("Unmount"), menu);
         connect(action, SIGNAL(triggered(bool)), SLOT(onUnmountMount()));
         menu->addAction(action);
         break;
