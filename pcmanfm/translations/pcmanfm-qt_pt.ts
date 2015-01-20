@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pt_PT">
+<TS version="2.0" language="pt">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -21,7 +21,7 @@
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="138"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="143"/>
@@ -42,12 +42,12 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished">Gestor de ficheiros PCMan
+        <translation>Gestor de ficheiros PCMan
 
-Direitos de autor (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
+Direitos de autor (C) 2009 - 2015  洪任諭 (Hong Jen Yee)
 
-Esta aplicação é um programa livre. Pode distribuir e/ou modifcar a aplicação
-segundo os termos da GNU General Public License, conforme pubilcada
+Esta aplicação é um programa livre. Pode distribuir e/ou modificar a aplicação
+nos termos da GNU General Public License, conforme pubilcada
 pela Free Software Foundation; tanto na sua versão 2 ou, por opção,
 qualquer versão mais recente.
 
@@ -58,12 +58,11 @@ para mais detalhes.
 
 Deve ter recebido uma cópia da GNU General Public License com o programa
 Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA. {2009 ?} {2014 ?} {2
-?} {51 ?} {02110-1301,?}</translation>
+51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="139"/>
@@ -97,9 +96,9 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="vanished">Gestor de ficheiros PCMan
+        <translation>Gestor de ficheiros PCMan
 
-Direitos de autor (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
+Direitos de autor (C) 2009 - 2015  洪任諭 (Hong Jen Yee)
 
 Esta aplicação é um programa livre. Pode distribuir e/ou modifcar a aplicação
 segundo os termos da GNU General Public License, conforme pubilcada
@@ -226,7 +225,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="299"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar menus disponibilizados pelo gestor de janelas ao clicar na área de trabalho</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="300"/>
@@ -440,7 +439,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="529"/>
         <source>&amp;Thumbnail View</source>
-        <translation>Minia&amp;turas</translation>
+        <translation>Vista de minia&amp;turas</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="530"/>
@@ -560,7 +559,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="587"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra principal</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="567"/>
@@ -575,7 +574,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="571"/>
         <source>Case Sensitive</source>
-        <translation>Diferenciar maiúsculas de minúsculas</translation>
+        <translation>Diferenciar maiúsculas/minúsculas</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="572"/>
@@ -729,23 +728,23 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../application.cpp" line="156"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation>[Ficheiro1, Ficheiro2,...]</translation>
+        <translation>[Ficheiro1, ficheiro2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="156"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Ficheiros ou diretórios a abrir</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="402"/>
         <location filename="../application.cpp" line="409"/>
         <source>Error</source>
-        <translation type="unfinished">Erro</translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="409"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished">O emulador de terminal não está definido.</translation>
+        <translation>O emulador de terminal não está definido.</translation>
     </message>
 </context>
 <context>
@@ -776,7 +775,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="44"/>
         <source>Stretch to fit the screen</source>
-        <translation>Esticar para se ajustar ao ecrã</translation>
+        <translation>Esticar para ajustar ao ecrã</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="45"/>
@@ -799,7 +798,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../desktopwindow.cpp" line="349"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Fi&amp;xar na posiçao atual</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="371"/>
@@ -812,7 +811,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../mainwindow.cpp" line="376"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versão: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="741"/>
@@ -868,7 +867,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../tabpage.cpp" line="210"/>
         <source>Error</source>
-        <translation type="unfinished">Erro</translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="223"/>
@@ -894,7 +893,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../tabpage.cpp" line="388"/>
         <source>%1 item(s) selected</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 itens selecionados</translation>
     </message>
 </context>
 <context>
@@ -902,17 +901,17 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../view.cpp" line="102"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir em novo sep&amp;arador</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="106"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir em &amp;nova janela</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="113"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir no termina&amp;l</translation>
     </message>
 </context>
 <context>
@@ -1005,7 +1004,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>Memorizar tamanho da última janela fechada</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
@@ -1020,7 +1019,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Atraso para seleçao automática no modo de um clique (0 para desativar)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
@@ -1030,7 +1029,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> seg</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
@@ -1050,7 +1049,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
         <source>Show thumbnails of files</source>
-        <translation>Mostrar miniaturas</translation>
+        <translation>Mostrar miniaturas dos ficheiros</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
@@ -1060,32 +1059,32 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Não gerar miniaturas para as imagens que excedam este tamanho:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
         <source> KB</source>
-        <translation type="unfinished"></translation>
+        <translation> KB</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ao desmontar um disco amovível:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
         <source>Close tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar o separador que contém o disco</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
         <source>Change folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Mudar o separador para a pasta pessoal</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
+        <translation>Emulador de terminal:</translation>
     </message>
     <message>
         <source>Do not generate thumbnails for files exceeding this size (KB):</source>
