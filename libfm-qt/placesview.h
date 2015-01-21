@@ -56,6 +56,7 @@ Q_SIGNALS:
 
 protected Q_SLOTS:
   void onClicked(const QModelIndex & index);
+  void onPressed(const QModelIndex & index);
   // void onMountOperationFinished(GError* error);
 
   void onEmptyTrash();
@@ -79,7 +80,8 @@ protected:
 
 private:
   void onEjectButtonClicked(PlacesModelItem* item);
-  
+  void activateRow(int type, const QModelIndex& index);
+
 private:
   PlacesModel* model_;
   FmPath* currentPath_;

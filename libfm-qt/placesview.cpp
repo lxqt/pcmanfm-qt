@@ -27,6 +27,7 @@
 #include <QContextMenuEvent>
 #include <QHeaderView>
 #include <QDebug>
+#include <QGuiApplication>
 
 using namespace Fm;
 
@@ -37,7 +38,8 @@ PlacesView::PlacesView(QWidget* parent):
   setHeaderHidden(true);
   setIndentation(12);
 
-  connect(this, SIGNAL(clicked(QModelIndex)), SLOT(onClicked(QModelIndex)));
+  connect(this, &QTreeView::clicked, this, &PlacesView::onClicked);
+  connect(this, &QTreeView::pressed, this, &PlacesView::onPressed);
 
   setIconSize(QSize(24, 24));
 
@@ -69,6 +71,45 @@ PlacesView::~PlacesView() {
   // qDebug("delete PlacesView");
 }
 
+void PlacesView::activateRow(int type, const QModelIndex& index) {
+  if(!index.parent().isValid()) // ignore root items
+    return;
+  PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(index));
+  if(item) {
+    FmPath* path = item->path();
+    if(!path) {
+      // check if mounting volumes is needed
+      if(item->type() == PlacesModelItem::Volume) {
+        PlacesModelVolumeItem* volumeItem = static_cast<PlacesModelVolumeItem*>(item);
+        if(!volumeItem->isMounted()) {
+          // Mount the volume
+          GVolume* volume = volumeItem->volume();
+          MountOperation* op = new MountOperation(true, this);
+          op->mount(volume);
+          // connect(op, SIGNAL(finished(GError*)), SLOT(onMountOperationFinished(GError*)));
+          // blocking here until the mount operation is finished?
+
+          // FIXME: update status of the volume after mount is finished!!
+          if(!op->wait())
+            return;
+          path = item->path();
+        }
+      }
+    }
+    if(path) {
+      Q_EMIT chdirRequested(type, path);
+    }
+  }
+}
+
+// mouse button pressed
+void PlacesView::onPressed(const QModelIndex& index) {
+  // if middle button is pressed
+  if(QGuiApplication::mouseButtons() & Qt::MiddleButton) {
+    activateRow(1, index);
+  }
+}
+
 void PlacesView::onEjectButtonClicked(PlacesModelItem* item) {
   // The eject button is clicked for a device item (volume or mount)
   if(item->type() == PlacesModelItem::Volume) {
@@ -92,32 +133,7 @@ void PlacesView::onClicked(const QModelIndex& index) {
     return;
 
   if(index.column() == 0) {
-    PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(index));
-    if(item) {
-      FmPath* path = item->path();
-      if(!path) {
-        // check if mounting volumes is needed
-        if(item->type() == PlacesModelItem::Volume) {
-          PlacesModelVolumeItem* volumeItem = static_cast<PlacesModelVolumeItem*>(item);
-          if(!volumeItem->isMounted()) {
-            // Mount the volume
-            GVolume* volume = volumeItem->volume();
-            MountOperation* op = new MountOperation(true, this);
-            op->mount(volume);
-            // connect(op, SIGNAL(finished(GError*)), SLOT(onMountOperationFinished(GError*)));
-            // blocking here until the mount operation is finished?
-
-            // FIXME: update status of the volume after mount is finished!!
-            if(!op->wait())
-              return;
-            path = item->path();
-          }
-        }
-      }
-      if(path) {
-        Q_EMIT chdirRequested(0, path);
-      }
-    }
+    activateRow(0, index);
   }
   else if(index.column() == 1) { // column 1 contains eject buttons of the mounted devices
     if(index.parent() == model_->devicesRoot->index()) { // this is a mounted device

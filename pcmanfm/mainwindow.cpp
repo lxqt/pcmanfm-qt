@@ -620,7 +620,11 @@ void MainWindow::onTabPageSortFilterChanged() {
 
 
 void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {
-  chdir(path);
+  // FIXME: use enum for type value or change it to button.
+  if(type == 0) // left button (default)
+    chdir(path);
+  else if(type == 1) // middle button
+    addTab(path);
 }
 
 void MainWindow::loadBookmarksMenu() {
