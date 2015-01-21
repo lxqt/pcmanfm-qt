@@ -80,9 +80,12 @@ MainWindow::MainWindow(FmPath* path):
   ui.tabBar->setElideMode(Qt::ElideRight);
   ui.tabBar->setExpanding(false);
   ui.tabBar->setMovable(true); // reorder the tabs by dragging
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 4, 0)
   // switch to the tab under the cursor during dnd.
   ui.tabBar->setChangeCurrentOnDrag(true);
   ui.tabBar->setAcceptDrops(true);
+#endif
 
   connect(ui.tabBar, SIGNAL(currentChanged(int)), SLOT(onTabBarCurrentChanged(int)));
   connect(ui.tabBar, SIGNAL(tabCloseRequested(int)), SLOT(onTabBarCloseRequested(int)));
