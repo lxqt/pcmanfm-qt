@@ -79,8 +79,14 @@ MainWindow::MainWindow(FmPath* path):
   ui.tabBar->setTabsClosable(true);
   ui.tabBar->setElideMode(Qt::ElideRight);
   ui.tabBar->setExpanding(false);
+  ui.tabBar->setMovable(true); // reorder the tabs by dragging
+  // switch to the tab under the cursor during dnd.
+  ui.tabBar->setChangeCurrentOnDrag(true);
+  ui.tabBar->setAcceptDrops(true);
+
   connect(ui.tabBar, SIGNAL(currentChanged(int)), SLOT(onTabBarCurrentChanged(int)));
   connect(ui.tabBar, SIGNAL(tabCloseRequested(int)), SLOT(onTabBarCloseRequested(int)));
+  connect(ui.tabBar, SIGNAL(tabMoved(int,int)), SLOT(onTabBarTabMoved(int,int)));
   connect(ui.stackedWidget, SIGNAL(widgetRemoved(int)), SLOT(onStackedWidgetWidgetRemoved(int)));
 
   // side pane
@@ -400,6 +406,22 @@ void MainWindow::on_actionThumbnailView_triggered() {
 
 void MainWindow::onTabBarCloseRequested(int index) {
   closeTab(index);
+}
+
+void MainWindow::onTabBarTabMoved(int from, int to) {
+  // a tab in the tab bar is moved by the user, so we have to move the
+  //  corredponding tab page in the stacked widget to the new position, too.
+  QWidget* page = ui.stackedWidget->widget(from);
+  if(page) {
+	// we're not going to delete the tab page, so here we block signals
+	// to avoid calling the slot onStackedWidgetWidgetRemoved() before
+	// removing the page. Otherwise the page widget will be destroyed.
+    ui.stackedWidget->blockSignals(true);
+    ui.stackedWidget->removeWidget(page);
+    ui.stackedWidget->insertWidget(to, page); // insert the page to the new position
+    ui.stackedWidget->blockSignals(false); // unblock signals
+    ui.stackedWidget->setCurrentWidget(page);
+  }
 }
 
 void MainWindow::closeTab(int index) {
