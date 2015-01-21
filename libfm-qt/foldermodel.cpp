@@ -120,11 +120,20 @@ void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_da
 void FolderModel::onFilesChanged(FmFolder* folder, GSList* files, gpointer user_data) {
   FolderModel* model = static_cast<FolderModel*>(user_data);
   int n_files = g_slist_length(files);
-//  model->beginInsertRows(QModelIndex(), model->items.count(), model->items.count() + n_files - 1);
   for(GSList* l = files; l; l = l->next) {
-    // FolderModelItem item(FM_FILE_INFO(l->data));
+    FmFileInfo* info = FM_FILE_INFO(l->data);
+    int row;
+    QList<FolderModelItem>::iterator it = model->findItemByFileInfo(info, &row);
+    if(it != model->items.end()) {
+      FolderModelItem& item = *it;
+      // try to update the item
+      item.displayName = QString::fromUtf8(fm_file_info_get_disp_name(info));
+      item.updateIcon();
+      item.thumbnails.clear();
+      QModelIndex index = model->createIndex(row, 0, &item);
+      Q_EMIT model->dataChanged(index, index);
+    }
   }
-//  model->endInsertRows();
 }
 
 //static
