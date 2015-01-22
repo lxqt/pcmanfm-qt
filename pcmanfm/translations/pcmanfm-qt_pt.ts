@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<TS version="2.0" language="pt">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -62,7 +62,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="139"/>
@@ -96,7 +96,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="vanished">Gestor de ficheiros PCMan
+        <translation>Gestor de ficheiros PCMan
 
 Direitos de autor (C) 2009 - 2015  洪任諭 (Hong Jen Yee)
 
@@ -220,7 +220,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="298"/>
         <source>Window Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestor de janelas</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="299"/>
@@ -230,17 +230,17 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="300"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Área de trabalho</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="301"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasta da área de trabalho:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="308"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Caminho da pasta</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="310"/>
