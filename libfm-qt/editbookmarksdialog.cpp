@@ -49,8 +49,8 @@ EditBookmarksDialog::EditBookmarksDialog(FmBookmarks* bookmarks, QWidget* parent
     ui->treeWidget->addTopLevelItem(item);
   }
 
-  connect(ui->addItem, SIGNAL(clicked(bool)), SLOT(onAddItem()));
-  connect(ui->removeItem, SIGNAL(clicked(bool)), SLOT(onRemoveItem()));
+  connect(ui->addItem, &QPushButton::clicked, this, &EditBookmarksDialog::onAddItem);
+  connect(ui->removeItem, &QPushButton::clicked, this, &EditBookmarksDialog::onRemoveItem);
 }
 
 EditBookmarksDialog::~EditBookmarksDialog() {

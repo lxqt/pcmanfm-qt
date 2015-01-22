@@ -46,7 +46,7 @@ FolderModel::FolderModel() :
   thumbnailRefCounts.reserve(4);
   
   // reload all icons when the icon theme is changed
-  connect(IconTheme::instance(), SIGNAL(changed()), SLOT(updateIcons()));
+  connect(IconTheme::instance(), &IconTheme::changed, this, &FolderModel::updateIcons);
 }
 
 FolderModel::~FolderModel() {

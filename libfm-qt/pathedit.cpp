@@ -34,7 +34,7 @@ PathEdit::PathEdit(QWidget* parent):
   completer_(new QCompleter()) {
   setCompleter(completer_);
   completer_->setModel(model_);
-  connect(this, SIGNAL(textChanged(QString)), SLOT(onTextChanged(QString)));
+  connect(this, &PathEdit::textChanged, this, &PathEdit::onTextChanged);
 }
 
 PathEdit::~PathEdit() {

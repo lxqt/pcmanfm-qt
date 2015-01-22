@@ -76,7 +76,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   allTrash_ =  sameFilesystem_ && fm_path_is_trash(path);
 
   openAction_ = new QAction(QIcon::fromTheme("document-open"), tr("Open"), this);
-  connect(openAction_ , SIGNAL(triggered(bool)), SLOT(onOpenTriggered()));
+  connect(openAction_ , &QAction::triggered, this, &FileMenu::onOpenTriggered);
   addAction(openAction_);
 
   openWithMenuAction_ = new QAction(tr("Open With..."), this);
@@ -100,7 +100,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
 
         // create a QAction for the application.
         AppInfoAction* action = new AppInfoAction(app);
-        connect(action, SIGNAL(triggered(bool)), SLOT(onApplicationTriggered()));
+        connect(action, &QAction::triggered, this, &FileMenu::onApplicationTriggered);
         menu->addAction(action);
       }
       g_list_free(apps); /* don't unref GAppInfos now */
@@ -108,7 +108,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   }
   menu->addSeparator();
   openWithAction_ = new QAction(tr("Other Applications"), this);
-  connect(openWithAction_ , SIGNAL(triggered(bool)), SLOT(onOpenWithTriggered()));
+  connect(openWithAction_ , &QAction::triggered, this, &FileMenu::onOpenWithTriggered);
   menu->addAction(openWithAction_);
 
   separator1_ = addSeparator();
@@ -126,29 +126,29 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
     }
     if(can_restore) {
       unTrashAction_ = new QAction(tr("&Restore"), this);
-      connect(unTrashAction_, SIGNAL(triggered(bool)), SLOT(onUnTrashTriggered()));
+      connect(unTrashAction_, &QAction::triggered, this, &FileMenu::onUnTrashTriggered);
       addAction(unTrashAction_);
     }
   }
   else { // ordinary files
     cutAction_ = new QAction(QIcon::fromTheme("edit-cut"), tr("Cut"), this);
-    connect(cutAction_, SIGNAL(triggered(bool)), SLOT(onCutTriggered()));
+    connect(cutAction_, &QAction::triggered, this, &FileMenu::onCutTriggered);
     addAction(cutAction_);
 
     copyAction_ = new QAction(QIcon::fromTheme("edit-copy"), tr("Copy"), this);
-    connect(copyAction_, SIGNAL(triggered(bool)), SLOT(onCopyTriggered()));
+    connect(copyAction_, &QAction::triggered, this, &FileMenu::onCopyTriggered);
     addAction(copyAction_);
 
     pasteAction_ = new QAction(QIcon::fromTheme("edit-paste"), tr("Paste"), this);
-    connect(pasteAction_, SIGNAL(triggered(bool)), SLOT(onPasteTriggered()));
+    connect(pasteAction_, &QAction::triggered, this, &FileMenu::onPasteTriggered);
     addAction(pasteAction_);
 
     deleteAction_ = new QAction(QIcon::fromTheme("edit-delete"), tr("&Move to Trash"), this);
-    connect(deleteAction_, SIGNAL(triggered(bool)), SLOT(onDeleteTriggered()));
+    connect(deleteAction_, &QAction::triggered, this, &FileMenu::onDeleteTriggered);
     addAction(deleteAction_);
 
     renameAction_ = new QAction(tr("Rename"), this);
-    connect(renameAction_, SIGNAL(triggered(bool)), SLOT(onRenameTriggered()));
+    connect(renameAction_, &QAction::triggered, this, &FileMenu::onRenameTriggered);
     addAction(renameAction_);
   }
 
@@ -175,18 +175,18 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
         if(fm_archiver_is_mime_type_supported(archiver, fm_mime_type_get_type(mime_type))) {
           if(cwd_ && archiver->extract_to_cmd) {
             QAction* action = new QAction(tr("Extract to..."), this);
-            connect(action, SIGNAL(triggered(bool)), SLOT(onExtract()));
+            connect(action, &QAction::triggered, this, &FileMenu::onExtract);
             addAction(action);
           }
           if(archiver->extract_cmd) {
             QAction* action = new QAction(tr("Extract Here"), this);
-            connect(action, SIGNAL(triggered(bool)), SLOT(onExtractHere()));
+            connect(action, &QAction::triggered, this, &FileMenu::onExtractHere);
             addAction(action);
           }
         }
         else {
           QAction* action = new QAction(tr("Compress"), this);
-          connect(action, SIGNAL(triggered(bool)), SLOT(onCompress()));
+          connect(action, &QAction::triggered, this, &FileMenu::onCompress);
           addAction(action);
         }
       }
@@ -196,7 +196,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   separator2_ = addSeparator();
 
   propertiesAction_ = new QAction(QIcon::fromTheme("document-properties"), tr("Properties"), this);
-  connect(propertiesAction_, SIGNAL(triggered(bool)), SLOT(onFilePropertiesTriggered()));
+  connect(propertiesAction_, &QAction::triggered, this, &FileMenu::onFilePropertiesTriggered);
   addAction(propertiesAction_);
 }
 
@@ -223,7 +223,7 @@ void FileMenu::addCustomActionItem(QMenu* menu, FmFileActionItem* item) {
     }
   }
   else if(fm_file_action_item_is_action(item)) {
-    connect(action, SIGNAL(triggered(bool)), SLOT(onCustomActionTrigerred()));
+    connect(action, &QAction::triggered, this, &FileMenu::onCustomActionTrigerred);
   }
 }
 #endif

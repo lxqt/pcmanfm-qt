@@ -43,7 +43,7 @@ namespace Fm {
 FolderViewListView::FolderViewListView(QWidget* parent):
   QListView(parent),
   activationAllowed_(true) {
-  connect(this, SIGNAL(activated(QModelIndex)), this, SLOT(activation(QModelIndex)));
+  connect(this, &QListView::activated, this, &FolderViewListView::activation);
 }
 
 FolderViewListView::~FolderViewListView() {

@@ -53,7 +53,7 @@ AppMenuView::AppMenuView(QWidget* parent):
     }
   }
   setModel(model_);
-  connect(selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SIGNAL(selectionChanged()));
+  connect(selectionModel(), &QItemSelectionModel::selectionChanged, this, &AppMenuView::selectionChanged);
   selectionModel()->select(model_->index(0, 0), QItemSelectionModel::SelectCurrent);
 }
 

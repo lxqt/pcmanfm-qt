@@ -24,7 +24,7 @@
 using namespace Fm;
 
 ColorButton::ColorButton(QWidget* parent): QPushButton(parent) {
-  connect(this, SIGNAL(clicked(bool)), SLOT(onClicked()));
+  connect(this, &QPushButton::clicked, this, &ColorButton::onClicked);
 }
 
 ColorButton::~ColorButton() {

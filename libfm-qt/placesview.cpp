@@ -274,7 +274,7 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
         if(path && fm_path_equal(fm_path_get_trash(), path)) {
           menu = new QMenu(this);
           action = new PlacesModel::ItemAction(item->index(), tr("Empty Trash"), menu);
-          connect(action, SIGNAL(triggered(bool)), SLOT(onEmptyTrash()));
+          connect(action, &QAction::triggered, this, &PlacesView::onEmptyTrash);
           menu->addAction(action);
         }
         break;
@@ -283,10 +283,10 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
         // create context menu for bookmark item
         menu = new QMenu(this);
         action = new PlacesModel::ItemAction(item->index(), tr("Rename"), menu);
-        connect(action, SIGNAL(triggered(bool)), SLOT(onRenameBookmark()));
+        connect(action, &QAction::triggered, this, &PlacesView::onRenameBookmark);
         menu->addAction(action);
         action = new PlacesModel::ItemAction(item->index(), tr("Delete"), menu);
-        connect(action, SIGNAL(triggered(bool)), SLOT(onDeleteBookmark()));
+        connect(action, &QAction::triggered, this, &PlacesView::onDeleteBookmark);
         menu->addAction(action);
         break;
       }
@@ -296,17 +296,17 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
 
         if(volumeItem->isMounted()) {
           action = new PlacesModel::ItemAction(item->index(), tr("Unmount"), menu);
-          connect(action, SIGNAL(triggered(bool)), SLOT(onUnmountVolume()));
+          connect(action, &QAction::triggered, this, &PlacesView::onUnmountVolume);
         }
         else {
           action = new PlacesModel::ItemAction(item->index(), tr("Mount"), menu);
-          connect(action, SIGNAL(triggered(bool)), SLOT(onMountVolume()));
+          connect(action, &QAction::triggered, this, &PlacesView::onMountVolume);
         }
         menu->addAction(action);
 
         if(volumeItem->canEject()) {
           action = new PlacesModel::ItemAction(item->index(), tr("Eject"), menu);
-          connect(action, SIGNAL(triggered(bool)), SLOT(onEjectVolume()));
+          connect(action, &QAction::triggered, this, &PlacesView::onEjectVolume);
           menu->addAction(action);
         }
         break;
@@ -314,14 +314,14 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
       case PlacesModelItem::Mount: {
         menu = new QMenu(this);
         action = new PlacesModel::ItemAction(item->index(), tr("Unmount"), menu);
-        connect(action, SIGNAL(triggered(bool)), SLOT(onUnmountMount()));
+        connect(action, &QAction::triggered, this, &PlacesView::onUnmountMount);
         menu->addAction(action);
         break;
       }
     }
     if(menu) {
       menu->popup(mapToGlobal(event->pos()));
-      connect(menu, SIGNAL(aboutToHide()), menu, SLOT(deleteLater()));
+      connect(menu, &QMenu::aboutToHide, menu, &QMenu::deleteLater);
     }
   }
 }

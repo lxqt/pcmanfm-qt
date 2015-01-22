@@ -20,6 +20,7 @@
 
 #include "proxyfoldermodel.h"
 #include "foldermodel.h"
+#include <QCollator>
 
 using namespace Fm;
 
@@ -126,7 +127,16 @@ bool ProxyFolderModel::lessThan(const QModelIndex& left, const QModelIndex& righ
 
     switch(sortColumn()) {
       case FolderModel::ColumnFileName:
-        break;
+        if(filterCaseSensitivity() == Qt::CaseSensitive) {
+          // fm_file_info_get_collate_key_nocasefold() uses g_utf8_casefold() from glib internally, which
+          // is only an approximation not working correctly in some locales.
+          // FIXME: we may use QCollator (since Qt 5.2) for this, but the performance impact is unknown
+          return strcmp(fm_file_info_get_collate_key_nocasefold(leftInfo), fm_file_info_get_collate_key_nocasefold(rightInfo)) < 0;
+        }
+        else {
+          // linguistic case insensitive ordering
+          return strcmp(fm_file_info_get_collate_key(leftInfo), fm_file_info_get_collate_key(rightInfo)) < 0;
+        }
       case FolderModel::ColumnFileMTime:
         return fm_file_info_get_mtime(leftInfo) < fm_file_info_get_mtime(rightInfo);
       case FolderModel::ColumnFileSize:

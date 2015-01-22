@@ -79,7 +79,7 @@ bool FileOperation::run() {
   // run the job
   uiTimer = new QTimer();
   uiTimer->start(SHOW_DLG_DELAY);
-  connect(uiTimer, SIGNAL(timeout()), SLOT(onUiTimeout()));
+  connect(uiTimer, &QTimer::timeout, this, &FileOperation::onUiTimeout);
 
   return fm_job_run_async(FM_JOB(job_));
 }

@@ -292,7 +292,7 @@ void FilePropsDialog::initGeneralPage() {
 
   // calculate total file sizes
   fileSizeTimer = new QTimer(this);
-  connect(fileSizeTimer, SIGNAL(timeout()), SLOT(onFileSizeTimerTimeout()));
+  connect(fileSizeTimer, &QTimer::timeout, this, &FilePropsDialog::onFileSizeTimerTimeout);
   fileSizeTimer->start(600);
   g_signal_connect(deepCountJob, "finished", G_CALLBACK(onDeepCountJobFinished), this);
   fm_job_run_async(FM_JOB(deepCountJob));

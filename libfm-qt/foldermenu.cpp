@@ -43,17 +43,17 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
 
   pasteAction_ = new QAction(QIcon::fromTheme("edit-paste"), tr("&Paste"), this);
   addAction(pasteAction_);
-  connect(pasteAction_, SIGNAL(triggered(bool)), SLOT(onPasteActionTriggered()));
+  connect(pasteAction_, &QAction::triggered, this, &FolderMenu::onPasteActionTriggered);
 
   separator2_ = addSeparator();
 
   selectAllAction_ = new QAction(tr("Select &All"), this);
   addAction(selectAllAction_);
-  connect(selectAllAction_, SIGNAL(triggered(bool)), SLOT(onSelectAllActionTriggered()));
+  connect(selectAllAction_, &QAction::triggered, this, &FolderMenu::onSelectAllActionTriggered);
 
   invertSelectionAction_ = new QAction(tr("Invert Selection"), this);
   addAction(invertSelectionAction_);
-  connect(invertSelectionAction_, SIGNAL(triggered(bool)), SLOT(onInvertSelectionActionTriggered()));
+  connect(invertSelectionAction_, &QAction::triggered, this, &FolderMenu::onInvertSelectionActionTriggered);
 
   separator3_ = addSeparator();
 
@@ -66,13 +66,13 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
   addAction(showHiddenAction_);
   showHiddenAction_->setCheckable(true);
   showHiddenAction_->setChecked(model->showHidden());
-  connect(showHiddenAction_, SIGNAL(triggered(bool)), SLOT(onShowHiddenActionTriggered(bool)));
+  connect(showHiddenAction_, &QAction::triggered, this, &FolderMenu::onShowHiddenActionTriggered);
 
   separator4_ = addSeparator();
 
   propertiesAction_ = new QAction(tr("Folder Pr&operties"), this);
   addAction(propertiesAction_);
-  connect(propertiesAction_, SIGNAL(triggered(bool)), SLOT(onPropertiesActionTriggered()));
+  connect(propertiesAction_, &QAction::triggered, this, &FolderMenu::onPropertiesActionTriggered);
 }
 
 FolderMenu::~FolderMenu() {
@@ -83,11 +83,11 @@ void FolderMenu::createCreateNewMenu() {
   createNewMenu_ = createMenu;
 
   QAction* action = new QAction(tr("Folder"), this);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onCreateNewFolder()));
+  connect(action, &QAction::triggered, this, &FolderMenu::onCreateNewFolder);
   createMenu->addAction(action);
 
   action = new QAction(tr("Blank File"), this);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onCreateNewFile()));
+  connect(action, &QAction::triggered, this, &FolderMenu::onCreateNewFile);
   createMenu->addAction(action);
 
   // add more items to "Create New" menu from templates
@@ -107,7 +107,7 @@ void FolderMenu::createCreateNewMenu() {
         icon = fm_mime_type_get_icon(mime_type);
       QAction* action = createMenu->addAction(IconTheme::icon(icon), text);
       action->setObjectName(QString::fromUtf8(fm_template_get_name(templ, NULL)));
-      connect(action, SIGNAL(triggered(bool)), SLOT(onCreateNew()));
+      connect(action, &QAction::triggered, this, &FolderMenu::onCreateNew);
     }
   }
 }
@@ -117,7 +117,7 @@ void FolderMenu::addSortMenuItem(QString title, int id) {
   sortMenu_->addAction(action);
   action->setCheckable(true);
   sortActionGroup_->addAction(action);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onSortActionTriggered(bool)));
+  connect(action, &QAction::triggered, this, &FolderMenu::onSortActionTriggered);
   sortActions_[id] = action;
 }
 
@@ -161,8 +161,8 @@ void FolderMenu::createSortMenu() {
   else
     actionDescending_->setChecked(true);
 
-  connect(actionAscending_, SIGNAL(triggered(bool)), SLOT(onSortOrderActionTriggered(bool)));
-  connect(actionDescending_, SIGNAL(triggered(bool)), SLOT(onSortOrderActionTriggered(bool)));
+  connect(actionAscending_, &QAction::triggered, this, &FolderMenu::onSortOrderActionTriggered);
+  connect(actionDescending_, &QAction::triggered, this, &FolderMenu::onSortOrderActionTriggered);
 
   sortMenu_->addSeparator();
 
@@ -173,7 +173,7 @@ void FolderMenu::createSortMenu() {
   if(model->folderFirst())
     actionFolderFirst->setChecked(true);
 
-  connect(actionFolderFirst, SIGNAL(triggered(bool)), SLOT(onFolderFirstActionTriggered(bool)));
+  connect(actionFolderFirst, &QAction::triggered, this, &FolderMenu::onFolderFirstActionTriggered);
 
   QAction* actionCaseSensitive = new QAction(tr("Case Sensitive"), this);
   sortMenu_->addAction(actionCaseSensitive);
@@ -182,7 +182,7 @@ void FolderMenu::createSortMenu() {
   if(model->sortCaseSensitivity() == Qt::CaseSensitive)
     actionCaseSensitive->setChecked(true);
 
-  connect(actionCaseSensitive, SIGNAL(triggered(bool)), SLOT(onCaseSensitiveActionTriggered(bool)));
+  connect(actionCaseSensitive, &QAction::triggered, this, &FolderMenu::onCaseSensitiveActionTriggered);
 }
 
 void FolderMenu::onPasteActionTriggered() {

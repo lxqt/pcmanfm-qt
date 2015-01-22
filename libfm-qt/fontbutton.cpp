@@ -25,7 +25,7 @@
 using namespace Fm;
 
 FontButton::FontButton(QWidget* parent): QPushButton(parent) {
-  connect(this, SIGNAL(clicked(bool)), SLOT(onClicked()));
+  connect(this, &QPushButton::clicked, this, &FontButton::onClicked);
 }
 
 FontButton::~FontButton() {

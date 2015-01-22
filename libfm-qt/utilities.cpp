@@ -281,7 +281,7 @@ QString gidToName(gid_t gid) {
 int execModelessDialog(QDialog* dlg) {
   // FIXME: this does much less than QDialog::exec(). Will this work flawlessly?
   QEventLoop loop;
-  QObject::connect(dlg, SIGNAL(finished(int)), &loop, SLOT(quit()));
+  QObject::connect(dlg, &QDialog::finished, &loop, &QEventLoop::quit);
   // DialogExec does not seem to be documented in the Qt API doc?
   // However, in the source code of QDialog::exec(), it's used so let's use it too.
   dlg->show();
