@@ -39,17 +39,14 @@ PlacesModel::PlacesModel(QObject* parent):
 
   PlacesModelItem* item;
   placesRoot = new QStandardItem(tr("Places"));
-  placesRoot->setEditable(false);
   placesRoot->setSelectable(false);
   placesRoot->setColumnCount(2);
   appendRow(placesRoot);
 
   homeItem = new PlacesModelItem("user-home", g_get_user_name(), fm_path_get_home());
-  homeItem->setEditable(false);
   placesRoot->appendRow(homeItem);
 
   desktopItem = new PlacesModelItem("user-desktop", tr("Desktop"), fm_path_get_desktop());
-  desktopItem->setEditable(false);
   placesRoot->appendRow(desktopItem);
 
   createTrashItem();
@@ -59,7 +56,6 @@ PlacesModel::PlacesModel(QObject* parent):
     path = fm_path_new_for_uri("computer:///");
     computerItem = new PlacesModelItem("computer", tr("Computer"), path);
     fm_path_unref(path);
-    computerItem->setEditable(false);
     placesRoot->appendRow(computerItem);
   }
   else
@@ -72,7 +68,6 @@ PlacesModel::PlacesModel(QObject* parent):
   g_object_unref(gicon);
   applicationsItem = new PlacesModelItem(fmicon, tr("Applications"), fm_path_get_apps_menu());
   fm_icon_unref(fmicon);
-  applicationsItem->setEditable(false);
   placesRoot->appendRow(applicationsItem);
 
   if(isUriSchemeSupported("network")) {
@@ -85,14 +80,12 @@ PlacesModel::PlacesModel(QObject* parent):
     networkItem = new PlacesModelItem(fmicon, tr("Network"), path);
     fm_icon_unref(fmicon);
     fm_path_unref(path);
-    networkItem->setEditable(false);
     placesRoot->appendRow(networkItem);
   }
   else
     networkItem = NULL;
 
   devicesRoot = new QStandardItem(tr("Devices"));
-  devicesRoot->setEditable(false);
   devicesRoot->setSelectable(false);
   devicesRoot->setColumnCount(2);
   appendRow(devicesRoot);
@@ -135,7 +128,6 @@ PlacesModel::PlacesModel(QObject* parent):
 
   // bookmarks
   bookmarksRoot = new QStandardItem(tr("Bookmarks"));
-  bookmarksRoot->setEditable(false);
   bookmarksRoot->setSelectable(false);
   bookmarksRoot->setColumnCount(2);
   appendRow(bookmarksRoot);
@@ -211,7 +203,6 @@ void PlacesModel::createTrashItem() {
     return;
   }
   trashItem_ = new PlacesModelItem("user-trash", tr("Trash"), fm_path_get_trash());
-  trashItem_->setEditable(false);
 
   trashMonitor_ = fm_monitor_directory(gf, NULL);
   if(trashMonitor_)
@@ -423,13 +414,7 @@ Qt::ItemFlags PlacesModel::flags(const QModelIndex& index) const {
     else
       return Qt::ItemIsEnabled;
   }
-  PlacesModelItem* placesItem = static_cast<PlacesModelItem*>(itemFromIndex(index));
-  if(placesItem) {
-    if(placesItem->type() == PlacesModelItem::Bookmark)
-      return Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsDropEnabled | Qt::ItemIsDragEnabled;
-  }
-  return Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsDropEnabled;
-  // return QStandardItemModel::flags(index);
+  return QStandardItemModel::flags(index);
 }
 
 bool PlacesModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent) {

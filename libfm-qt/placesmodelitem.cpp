@@ -38,6 +38,7 @@ PlacesModelItem::PlacesModelItem(const char* iconName, QString title, FmPath* pa
   fileInfo_(NULL) {
   if(icon_)
     QStandardItem::setIcon(IconTheme::icon(icon_));
+  setEditable(false);
 }
 
 PlacesModelItem::PlacesModelItem(FmIcon* icon, QString title, FmPath* path):
@@ -47,6 +48,7 @@ PlacesModelItem::PlacesModelItem(FmIcon* icon, QString title, FmPath* path):
   fileInfo_(NULL) {
   if(icon_)
     QStandardItem::setIcon(IconTheme::icon(icon));
+  setEditable(false);
 }
 
 PlacesModelItem::PlacesModelItem(QIcon icon, QString title, FmPath* path):
@@ -54,6 +56,7 @@ PlacesModelItem::PlacesModelItem(QIcon icon, QString title, FmPath* path):
   icon_(NULL),
   path_(path ? fm_path_ref(path) : NULL),
   fileInfo_(NULL) {
+  setEditable(false);
 }
 
 PlacesModelItem::~PlacesModelItem() {

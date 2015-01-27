@@ -46,6 +46,7 @@ PlacesView::PlacesView(QWidget* parent):
   // FIXME: we may share this model amont all views
   model_ = new PlacesModel(this);
   setModel(model_);
+
   QHeaderView* headerView = header();
   headerView->setSectionResizeMode(0, QHeaderView::Stretch);
   headerView->setSectionResizeMode(1, QHeaderView::ResizeToContents);
@@ -203,6 +204,17 @@ void PlacesView::onDeleteBookmark() {
   g_object_unref(bookmarks);
 }
 
+// virtual
+void PlacesView::commitData(QWidget * editor) {
+  QTreeView::commitData(editor);
+  PlacesModelBookmarkItem* item = static_cast<PlacesModelBookmarkItem*>(model_->itemFromIndex(currentIndex()));
+  FmBookmarkItem* bookmarkItem = item->bookmark();
+  FmBookmarks* bookmarks = fm_bookmarks_dup();
+  // rename bookmark
+  fm_bookmarks_rename(bookmarks, bookmarkItem, item->text().toUtf8().constData());
+  g_object_unref(bookmarks);
+}
+
 void PlacesView::onRenameBookmark() {
   PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
   if(!action->index().isValid())
@@ -211,13 +223,6 @@ void PlacesView::onRenameBookmark() {
   setFocus();
   setCurrentIndex(item->index());
   edit(item->index());
-/*
-  FmBookmarkItem* bookmarkItem = item->bookmark();
-  FmBookmarks* bookmarks = fm_bookmarks_dup();
-  // TODO: rename bookmark
-  // fm_bookmarks_rename(bookmarks, bookmarkItem);
-  g_object_unref(bookmarks);
-*/
 }
 
 void PlacesView::onMountVolume() {
