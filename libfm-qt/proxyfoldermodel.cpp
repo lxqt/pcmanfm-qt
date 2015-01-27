@@ -127,11 +127,18 @@ bool ProxyFolderModel::lessThan(const QModelIndex& left, const QModelIndex& righ
 
     switch(sortColumn()) {
       case FolderModel::ColumnFileName:
-        if(filterCaseSensitivity() == Qt::CaseSensitive) {
+        if(sortCaseSensitivity() == Qt::CaseSensitive) {
           // fm_file_info_get_collate_key_nocasefold() uses g_utf8_casefold() from glib internally, which
           // is only an approximation not working correctly in some locales.
           // FIXME: we may use QCollator (since Qt 5.2) for this, but the performance impact is unknown
           return strcmp(fm_file_info_get_collate_key_nocasefold(leftInfo), fm_file_info_get_collate_key_nocasefold(rightInfo)) < 0;
+          /*
+          QCollator coll;
+          coll.setCaseSensitivity(Qt::CaseSensitive);
+          coll.setIgnorePunctuation(false);
+          coll.setNumericMode(true);
+          return coll.compare(QString::fromUtf8(fm_file_info_get_disp_name(leftInfo)), QString::fromUtf8(fm_file_info_get_disp_name(rightInfo))) < 0;
+          */
         }
         else {
           // linguistic case insensitive ordering
