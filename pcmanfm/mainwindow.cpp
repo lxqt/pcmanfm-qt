@@ -440,16 +440,20 @@ void MainWindow::closeTab(int index) {
 void MainWindow::resizeEvent(QResizeEvent *event) {
   QMainWindow::resizeEvent(event);
   Settings& settings = static_cast<Application*>(qApp)->settings();
-  settings.setLastWindowWidth(width());
-  settings.setLastWindowHeight(height());
+  if(settings.rememberWindowSize()) {
+    settings.setLastWindowWidth(width());
+    settings.setLastWindowHeight(height());
+  }
 }
 
 void MainWindow::closeEvent(QCloseEvent *event)
 {
   QWidget::closeEvent(event);
   Settings& settings = static_cast<Application*>(qApp)->settings();
-  settings.setLastWindowWidth(width());
-  settings.setLastWindowHeight(height());
+  if(settings.rememberWindowSize()) {
+    settings.setLastWindowWidth(width());
+    settings.setLastWindowHeight(height());
+  }
 }
 
 void MainWindow::onTabBarCurrentChanged(int index) {

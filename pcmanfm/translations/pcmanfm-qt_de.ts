@@ -764,23 +764,23 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
         <translation>Version: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="770"/>
+        <location filename="../mainwindow.cpp" line="774"/>
         <source>&amp;Move to Trash</source>
         <translation>In den &amp;Papierkorb verschieben</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="770"/>
+        <location filename="../mainwindow.cpp" line="774"/>
         <source>&amp;Delete</source>
         <translation>&amp;Löschen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="831"/>
-        <location filename="../mainwindow.cpp" line="842"/>
+        <location filename="../mainwindow.cpp" line="835"/>
+        <location filename="../mainwindow.cpp" line="846"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="842"/>
+        <location filename="../mainwindow.cpp" line="846"/>
         <source>Switch user command is not set.</source>
         <translation>Befehl, um den Benutzer zu wechseln, ist nicht eingestellt.</translation>
     </message>

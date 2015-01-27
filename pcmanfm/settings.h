@@ -244,7 +244,7 @@ public:
     if(rememberWindowSize_)
       return lastWindowHeight_;
     else
-      return lastWindowHeight_;
+      return fixedWindowHeight_;
   }
 
   int fixedWindowWidth() const {
