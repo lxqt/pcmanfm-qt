@@ -23,6 +23,7 @@
 #include "libfmqtglobals.h"
 #include <libfm/fm.h>
 #include <QString>
+#include <QMetaType>
 
 namespace Fm {
 
@@ -234,5 +235,7 @@ private:
 };
 
 }
+
+Q_DECLARE_OPAQUE_POINTER(FmPath*)
 
 #endif // FM_PATH_H

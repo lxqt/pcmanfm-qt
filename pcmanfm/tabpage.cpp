@@ -48,15 +48,15 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   proxyModel_ = new ProxyFolderModel();
   proxyModel_->setShowHidden(settings.showHidden());
   proxyModel_->setShowThumbnails(settings.showThumbnails());
-  connect(proxyModel_, SIGNAL(sortFilterChanged()), SLOT(onModelSortFilterChanged()));
+  connect(proxyModel_, &ProxyFolderModel::sortFilterChanged, this, &TabPage::onModelSortFilterChanged);
 
   verticalLayout = new QVBoxLayout(this);
   verticalLayout->setContentsMargins(0, 0, 0, 0);
 
   folderView_ = new View(settings.viewMode(), this);
   // newView->setColumnWidth(Fm::FolderModel::ColumnName, 200);
-  connect(folderView_, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onOpenDirRequested(FmPath*, int)));
-  connect(folderView_, SIGNAL(selChanged(int)), SLOT(onSelChanged(int)));
+  connect(folderView_, &View::openDirRequested, this, &TabPage::onOpenDirRequested);
+  connect(folderView_, &View::selChanged, this, &TabPage::onSelChanged);
 
   // FIXME: this is very dirty
   folderView_->setModel(proxyModel_);

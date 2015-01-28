@@ -69,10 +69,10 @@ MainWindow::MainWindow(FmPath* path):
   // add a context menu for showing browse history to back and forward buttons
   QToolButton* forwardButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoForward));
   forwardButton->setContextMenuPolicy(Qt::CustomContextMenu);
-  connect(forwardButton, SIGNAL(customContextMenuRequested(QPoint)), SLOT(onBackForwardContextMenu(QPoint)));
+  connect(forwardButton, &QToolButton::customContextMenuRequested, this, &MainWindow::onBackForwardContextMenu);
   QToolButton* backButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoBack));
   backButton->setContextMenuPolicy(Qt::CustomContextMenu);
-  connect(backButton, SIGNAL(customContextMenuRequested(QPoint)), SLOT(onBackForwardContextMenu(QPoint)));
+  connect(backButton, &QToolButton::customContextMenuRequested, this, &MainWindow::onBackForwardContextMenu);
 
   // tabbed browsing interface
   ui.tabBar->setDocumentMode(true);
@@ -87,19 +87,19 @@ MainWindow::MainWindow(FmPath* path):
   ui.tabBar->setAcceptDrops(true);
 #endif
 
-  connect(ui.tabBar, SIGNAL(currentChanged(int)), SLOT(onTabBarCurrentChanged(int)));
-  connect(ui.tabBar, SIGNAL(tabCloseRequested(int)), SLOT(onTabBarCloseRequested(int)));
-  connect(ui.tabBar, SIGNAL(tabMoved(int,int)), SLOT(onTabBarTabMoved(int,int)));
-  connect(ui.stackedWidget, SIGNAL(widgetRemoved(int)), SLOT(onStackedWidgetWidgetRemoved(int)));
+  connect(ui.tabBar, &QTabBar::currentChanged, this, &MainWindow::onTabBarCurrentChanged);
+  connect(ui.tabBar, &QTabBar::tabCloseRequested, this, &MainWindow::onTabBarCloseRequested);
+  connect(ui.tabBar, &QTabBar::tabMoved, this, &MainWindow::onTabBarTabMoved);
+  connect(ui.stackedWidget, &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
 
   // side pane
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
   ui.sidePane->setMode(Fm::SidePane::ModePlaces);
-  connect(ui.sidePane, SIGNAL(chdirRequested(int, FmPath*)), SLOT(onSidePaneChdirRequested(int, FmPath*)));
+  connect(ui.sidePane, &Fm::SidePane::chdirRequested, this, &MainWindow::onSidePaneChdirRequested);
 
   // path bar
   pathEntry = new Fm::PathEdit(this);
-  connect(pathEntry, SIGNAL(returnPressed()), SLOT(onPathEntryReturnPressed()));
+  connect(pathEntry, &Fm::PathEdit::returnPressed, this, &MainWindow::onPathEntryReturnPressed);
   ui.toolBar->insertWidget(ui.actionGo, pathEntry);
 
   // add filesystem info to status bar
@@ -141,20 +141,33 @@ MainWindow::MainWindow(FmPath* path):
   group->addAction(ui.actionDescending);
 
   // create shortcuts
-  new QShortcut(Qt::CTRL + Qt::Key_L, pathEntry, SLOT(setFocus()));
-  new QShortcut(Qt::ALT + Qt::Key_D, pathEntry, SLOT(setFocus()));
+  QShortcut* shortcut;
+  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_L), this);
+  connect(shortcut, &QShortcut::activated, pathEntry, static_cast<void (QWidget::*)()>(&Fm::PathEdit::setFocus));
 
-  new QShortcut(Qt::CTRL + Qt::Key_Tab, this, SLOT(onShortcutNextTab()));
-  new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_Tab, this, SLOT(onShortcutPrevTab()));
+  shortcut = new QShortcut(Qt::ALT + Qt::Key_D, this);
+  connect(shortcut, &QShortcut::activated, pathEntry, static_cast<void (QWidget::*)()>(&QWidget::setFocus));
+
+  shortcut = new QShortcut(Qt::CTRL + Qt::Key_Tab, this);
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutNextTab);
+
+  shortcut = new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_Tab, this);
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutPrevTab);
 
   int i;
   for(i = 0; i < 10; ++i) {
-    new QShortcut(QKeySequence(Qt::ALT + Qt::Key_0 + i), this, SLOT(onShortcutJumpToTab()));
-    new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_0 + i), this, SLOT(onShortcutJumpToTab()));
+    shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_0 + i), this);
+    connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutJumpToTab);
+
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_0 + i), this);
+    connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutJumpToTab);
   }
 
-  new QShortcut(QKeySequence(Qt::Key_Backspace), this, SLOT(on_actionGoUp_triggered()));
-  new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this, SLOT(on_actionDelete_triggered()));
+  shortcut = new QShortcut(QKeySequence(Qt::Key_Backspace), this);
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionGoUp_triggered);
+
+  shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this);
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDelete_triggered);
 
   if(path)
     addTab(path);
@@ -181,10 +194,10 @@ void MainWindow::addTab(FmPath* path) {
   TabPage* newPage = new TabPage(path, this);
   newPage->setFileLauncher(&fileLauncher_);
   int index = ui.stackedWidget->addWidget(newPage);
-  connect(newPage, SIGNAL(titleChanged(QString)), SLOT(onTabPageTitleChanged(QString)));
-  connect(newPage, SIGNAL(statusChanged(int, QString)), SLOT(onTabPageStatusChanged(int, QString)));
-  connect(newPage, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onTabPageOpenDirRequested(FmPath*, int)));
-  connect(newPage, SIGNAL(sortFilterChanged()), SLOT(onTabPageSortFilterChanged()));
+  connect(newPage, &TabPage::titleChanged, this, &MainWindow::onTabPageTitleChanged);
+  connect(newPage, &TabPage::statusChanged, this, &MainWindow::onTabPageStatusChanged);
+  connect(newPage, &TabPage::openDirRequested, this, &MainWindow::onTabPageOpenDirRequested);
+  connect(newPage, &TabPage::sortFilterChanged, this, &MainWindow::onTabPageSortFilterChanged);
 
   ui.tabBar->insertTab(index, newPage->title());
 
@@ -641,7 +654,7 @@ void MainWindow::loadBookmarksMenu() {
   for(; l; l = l->next) {
     FmBookmarkItem* item = reinterpret_cast<FmBookmarkItem*>(l->data);
     BookmarkAction* action = new BookmarkAction(item);
-    connect(action, SIGNAL(triggered(bool)), SLOT(onBookmarkActionTriggered()));
+    connect(action, &QAction::triggered, this, &MainWindow::onBookmarkActionTriggered);
     ui.menu_Bookmarks->insertAction(before, action);
   }
 

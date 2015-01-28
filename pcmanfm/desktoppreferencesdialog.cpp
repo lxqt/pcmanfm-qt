@@ -38,7 +38,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.setupUi(this);
 
   // setup wallpaper modes
-  connect(ui.wallpaperMode, SIGNAL(currentIndexChanged(int)), SLOT(onWallpaperModeChanged(int)));
+  connect(ui.wallpaperMode, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &DesktopPreferencesDialog::onWallpaperModeChanged);
   ui.wallpaperMode->addItem(tr("Fill with background color only"), DesktopWindow::WallpaperNone);
   ui.wallpaperMode->addItem(tr("Stretch to fill the entire screen"), DesktopWindow::WallpaperStretch);
   ui.wallpaperMode->addItem(tr("Stretch to fit the screen"), DesktopWindow::WallpaperFit);
@@ -66,11 +66,11 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   }
   ui.wallpaperMode->setCurrentIndex(i);
 
-  connect(ui.browse, SIGNAL(clicked(bool)), SLOT(onBrowseClicked()));
+  connect(ui.browse, &QPushButton::clicked, this, &DesktopPreferencesDialog::onBrowseClicked);
   qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
   ui.imageFile->setText(settings.wallpaper());
 
-  connect(ui.browseDesktopFolder, SIGNAL(clicked(bool)), SLOT(onBrowseDesktopFolderClicked()));
+  connect(ui.browseDesktopFolder, &QPushButton::clicked, this, &DesktopPreferencesDialog::onBrowseDesktopFolderClicked);
   QString desktopFolder = XdgDirs::userDir(XdgDirs::Desktop);
   qDebug("desktop folder: %s", desktopFolder.toStdString().c_str());
   ui.desktopFolder->setText(desktopFolder);

@@ -100,18 +100,18 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
   menu->openWithMenuAction()->setVisible(false);
   
   QAction* action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New T&ab"), menu);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onNewTab()));
+  connect(action, &QAction::triggered, this, &View::onNewTab);
   menu->insertAction(menu->separator1(), action);
 
   action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
-  connect(action, SIGNAL(triggered(bool)), SLOT(onNewWindow()));
+  connect(action, &QAction::triggered, this, &View::onNewWindow);
   menu->insertAction(menu->separator1(), action);
 
   // TODO: add search
   // action = menu->addAction(_("Search"));
   if(all_native) {
     action = new QAction(QIcon::fromTheme("utilities-terminal"), tr("Open in Termina&l"), menu);
-    connect(action, SIGNAL(triggered(bool)), SLOT(onOpenInTerminal()));
+    connect(action, &QAction::triggered, this, &View::onOpenInTerminal);
     menu->insertAction(menu->separator1(), action);
   }
 }

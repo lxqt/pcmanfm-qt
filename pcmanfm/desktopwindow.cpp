@@ -48,6 +48,7 @@
 #include "fileoperation.h"
 #include "filepropsdialog.h"
 #include "utilities.h"
+#include "path.h"
 
 #include <QX11Info>
 #include <QScreen>
@@ -98,10 +99,10 @@ DesktopWindow::DesktopWindow(int screenNum):
     proxyModel_->sort(Fm::FolderModel::ColumnFileMTime);
     setModel(proxyModel_);
 
-    connect(proxyModel_, SIGNAL(rowsInserted(QModelIndex,int,int)), SLOT(onRowsInserted(QModelIndex,int,int)));
-    connect(proxyModel_, SIGNAL(rowsAboutToBeRemoved(QModelIndex,int,int)), SLOT(onRowsAboutToBeRemoved(QModelIndex,int,int)));
-    connect(proxyModel_, SIGNAL(layoutChanged()), SLOT(onLayoutChanged()));
-    connect(listView_, SIGNAL(indexesMoved(QModelIndexList)), SLOT(onIndexesMoved(QModelIndexList)));
+    connect(proxyModel_, &Fm::ProxyFolderModel::rowsInserted, this, &DesktopWindow::onRowsInserted);
+    connect(proxyModel_, &Fm::ProxyFolderModel::rowsAboutToBeRemoved, this, &DesktopWindow::onRowsAboutToBeRemoved);
+    connect(proxyModel_, &Fm::ProxyFolderModel::layoutChanged, this, &DesktopWindow::onLayoutChanged);
+    connect(listView_, &QListView::indexesMoved, this, &DesktopWindow::onIndexesMoved);
   }
 
   // set our own delegate
@@ -114,19 +115,35 @@ DesktopWindow::DesktopWindow(int screenNum):
   listView_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
   listView_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-  connect(this, SIGNAL(openDirRequested(FmPath*, int)), SLOT(onOpenDirRequested(FmPath*, int)));
+  connect(this, &DesktopWindow::openDirRequested, this, &DesktopWindow::onOpenDirRequested);
 
   listView_->installEventFilter(this);
 
   // setup shortcuts
-  new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_X), this, SLOT(onCutActivated())); // cut
-  new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_C), this, SLOT(onCopyActivated())); // copy
-  new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_V), this, SLOT(onPasteActivated())); // paste
-  new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_A), listView_, SLOT(selectAll())); // select all
-  new QShortcut(QKeySequence(Qt::Key_Delete), this, SLOT(onDeleteActivated())); // delete
-  new QShortcut(QKeySequence(Qt::Key_F2), this, SLOT(onRenameActivated())); // rename
-  new QShortcut(QKeySequence(Qt::ALT + Qt::Key_Return), this, SLOT(onFilePropertiesActivated())); // rename
-  new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this, SLOT(onDeleteActivated())); // force delete
+  QShortcut* shortcut;
+  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_X), this); // cut
+  connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCutActivated);
+
+  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_C), this); // copy
+  connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCopyActivated);
+
+  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_V), this); // paste
+  connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onPasteActivated);
+
+  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_A), this); // select all
+  connect(shortcut, &QShortcut::activated, listView_, &QListView::selectAll);
+
+  shortcut = new QShortcut(QKeySequence(Qt::Key_Delete), this); // delete
+  connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
+
+  shortcut = new QShortcut(QKeySequence(Qt::Key_F2), this); // rename
+  connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onRenameActivated);
+
+  shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_Return), this); // rename
+  connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onFilePropertiesActivated);
+
+  shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this); // force delete
+  connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
 }
 
 DesktopWindow::~DesktopWindow() {
@@ -360,7 +377,7 @@ void DesktopWindow::prepareFileMenu(Fm::FileMenu* menu) {
       action->setChecked(true);
     }
   }
-  connect(action, SIGNAL(toggled(bool)), SLOT(onStickToCurrentPos(bool)));
+  connect(action, &QAction::toggled, this, &DesktopWindow::onStickToCurrentPos);
 }
 
 void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
@@ -369,7 +386,7 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
   menu->removeAction(menu->propertiesAction());
   // add an action for desktop preferences instead
   QAction* action = menu->addAction(tr("Desktop Preferences"));
-  connect(action, SIGNAL(triggered(bool)), SLOT(onDesktopPreferences()));
+  connect(action, &QAction::triggered, this, &DesktopWindow::onDesktopPreferences);
 }
 
 void DesktopWindow::xcbEvent(xcb_generic_event_t* generic_event) {
@@ -604,7 +621,7 @@ void DesktopWindow::queueRelayout(int delay) {
   if(!relayoutTimer_) {
     relayoutTimer_ = new QTimer();
     relayoutTimer_->setSingleShot(true);
-    connect(relayoutTimer_, SIGNAL(timeout()), SLOT(relayoutItems()));
+    connect(relayoutTimer_, &QTimer::timeout, this, &DesktopWindow::relayoutItems);
     relayoutTimer_->start(delay);
   }
 }

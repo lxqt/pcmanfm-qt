@@ -26,6 +26,7 @@
 #include <libfm/fm.h>
 #include "browsehistory.h"
 #include "view.h"
+#include "path.h"
 
 namespace Fm {
   class FileLauncher;

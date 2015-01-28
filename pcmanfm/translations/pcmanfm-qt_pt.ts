@@ -796,12 +796,12 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="349"/>
+        <location filename="../desktopwindow.cpp" line="366"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Fi&amp;xar na posiçao atual</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="371"/>
+        <location filename="../desktopwindow.cpp" line="388"/>
         <source>Desktop Preferences</source>
         <translation>Preferências da área de trabalho</translation>
     </message>
@@ -809,28 +809,28 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="385"/>
+        <location filename="../mainwindow.cpp" line="398"/>
         <source>Version: %1</source>
         <translation>Versão: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="774"/>
+        <location filename="../mainwindow.cpp" line="787"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mover para o lixo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="774"/>
+        <location filename="../mainwindow.cpp" line="787"/>
         <source>&amp;Delete</source>
         <translation>&amp;Eliminar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="835"/>
-        <location filename="../mainwindow.cpp" line="846"/>
+        <location filename="../mainwindow.cpp" line="848"/>
+        <location filename="../mainwindow.cpp" line="859"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="846"/>
+        <location filename="../mainwindow.cpp" line="859"/>
         <source>Switch user command is not set.</source>
         <translation>O comando para trocar de utilizador não está definido.</translation>
     </message>

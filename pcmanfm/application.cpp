@@ -83,7 +83,7 @@ Application::Application(int& argc, char** argv):
     new ApplicationAdaptor(this);
     dbus.registerObject("/Application", this);
 
-    connect(this, SIGNAL(aboutToQuit()), SLOT(onAboutToQuit()));
+    connect(this, &Application::aboutToQuit, this, &Application::onAboutToQuit);
     settings_.load(profileName_);
 
     // decrease the cache size to reduce memory usage
@@ -313,8 +313,8 @@ void Application::desktopManager(bool enabled) {
         connect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
       }
       connect(this, &QApplication::screenAdded, this, &Application::onScreenAdded);
-      connect(desktopWidget, SIGNAL(resized(int)), SLOT(onScreenResized(int)));
-      connect(desktopWidget, SIGNAL(screenCountChanged(int)), SLOT(onScreenCountChanged(int)));
+      connect(desktopWidget, &QDesktopWidget::resized, this, &Application::onScreenResized);
+      connect(desktopWidget, &QDesktopWidget::screenCountChanged, this, &Application::onScreenCountChanged);
 
       // NOTE: there are two modes
       // When virtual desktop is used (all screens are combined to form a large virtual desktop),
@@ -335,8 +335,8 @@ void Application::desktopManager(bool enabled) {
   }
   else {
     if(enableDesktopManager_) {
-      disconnect(desktopWidget, SIGNAL(resized(int)), this, SLOT(onScreenResized(int)));
-      disconnect(desktopWidget, SIGNAL(screenCountChanged(int)), this, SLOT(onScreenCountChanged(int)));
+      disconnect(desktopWidget, &QDesktopWidget::resized, this, &Application::onScreenResized);
+      disconnect(desktopWidget, &QDesktopWidget::screenCountChanged, this, &Application::onScreenCountChanged);
       int n = desktopWindows_.size();
       for(int i = 0; i < n; ++i) {
         DesktopWindow* window = desktopWindows_.at(i);
