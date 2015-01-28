@@ -763,32 +763,32 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="42"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="93"/>
         <source>Fill with background color only</source>
         <translation>Preencher apenas com a cor de fundo</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="43"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="94"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Esticar para preencher o ecrã</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="44"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="95"/>
         <source>Stretch to fit the screen</source>
         <translation>Esticar para ajustar ao ecrã</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="45"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="96"/>
         <source>Center on the screen</source>
         <translation>Centrar no ecrã</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="46"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="97"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Imagens em mosaico para preencher o ecrã</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="125"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="176"/>
         <source>Image Files</source>
         <translation>Ficheiros de imagem</translation>
     </message>
@@ -796,12 +796,12 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="366"/>
+        <location filename="../desktopwindow.cpp" line="364"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Fi&amp;xar na posiçao atual</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="388"/>
+        <location filename="../desktopwindow.cpp" line="386"/>
         <source>Desktop Preferences</source>
         <translation>Preferências da área de trabalho</translation>
     </message>

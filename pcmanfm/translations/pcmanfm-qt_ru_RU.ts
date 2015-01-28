@@ -817,32 +817,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="42"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="93"/>
         <source>Fill with background color only</source>
         <translation>Заполнить только цветом фона</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="43"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="94"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Растянуть по всему экрану</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="44"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="95"/>
         <source>Stretch to fit the screen</source>
         <translation>Растянуть по размеру экрана</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="45"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="96"/>
         <source>Center on the screen</source>
         <translation>По центру экрана</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="46"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="97"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Плиточное заполнение всего экрана изображением</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="125"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="176"/>
         <source>Image Files</source>
         <translation>Файлы изображений</translation>
     </message>
@@ -850,12 +850,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="366"/>
+        <location filename="../desktopwindow.cpp" line="364"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Прикрепить к текущему положению</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="388"/>
+        <location filename="../desktopwindow.cpp" line="386"/>
         <source>Desktop Preferences</source>
         <translation>Настройки рабочего стола</translation>
     </message>

@@ -36,7 +36,6 @@
 #include <QShortcut>
 #include <QDropEvent>
 #include <QMimeData>
-#include <XdgDirs>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -199,8 +198,7 @@ void DesktopWindow::resizeEvent(QResizeEvent* event) {
 }
 
 void DesktopWindow::setDesktopFolder() {
-  QString desktopFolder = XdgDirs::userDir(XdgDirs::Desktop);
-  model_ = Fm::CachedFolderModel::modelFromPath(fm_path_new_for_path(desktopFolder.toStdString().c_str()));
+  model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
   proxyModel_->setSourceModel(model_);
 }
 

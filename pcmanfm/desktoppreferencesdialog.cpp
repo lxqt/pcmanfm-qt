@@ -17,17 +17,68 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-
 #include "desktoppreferencesdialog.h"
 #include "desktopwindow.h"
 #include "settings.h"
 #include "application.h"
 #include <QFileDialog>
 #include <QImageReader>
-#include <qfuture.h>
-#include <XdgDirs>
+#include <QFile>
+#include <QDir>
+#include <QSaveFile>
+#include <QRegExp>
+#include <QDebug>
+#include <QStandardPaths>
 
 using namespace PCManFM;
+
+static QString readUserDirsFile() {
+  QFile file(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/user-dirs.dirs"));
+  if(file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+    QByteArray data = file.readAll();
+    file.close();
+    return QString::fromLocal8Bit(data);
+  }
+  return QString();
+}
+
+static QString readDesktopDir() {
+  QString str = readUserDirsFile();
+  if(str.isEmpty())
+    return QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + QStringLiteral("/Desktop");
+  QRegExp reg(QStringLiteral("XDG_DESKTOP_DIR=\"([^\n]*)\""));
+  if(reg.lastIndexIn(str) != -1) {
+    str = reg.cap(1);
+    if(str.startsWith(QStringLiteral("$HOME")))
+      str = QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + str.mid(5);
+    return str;
+  }
+  return QString();
+}
+
+static void setDesktopDir(QString path) {
+  QString home = QStandardPaths::writableLocation(QStandardPaths::HomeLocation);
+  if(path.startsWith(home))
+    path = QStringLiteral("$HOME") + path.mid(home.length());
+  QString str = readUserDirsFile();
+  QRegExp reg(QStringLiteral("XDG_DESKTOP_DIR=\"([^\n]*)\""));
+  QString line = QStringLiteral("XDG_DESKTOP_DIR=\"") + path + '\"';
+  if(reg.indexIn(str) != -1)
+    str.replace(reg, line);
+  else {
+	if(!str.endsWith('\n'))
+	  str += '\n';
+    str += line + '\n';
+  }
+  QString dir = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation);
+  if(QDir().mkpath(dir)) { // write the file
+    QSaveFile file(dir + QStringLiteral("/user-dirs.dirs"));
+    if(file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+      file.write(str.toLocal8Bit());
+      file.commit();
+    }
+  }
+}
 
 DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFlags f):
   QDialog(parent, f) {
@@ -71,7 +122,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.imageFile->setText(settings.wallpaper());
 
   connect(ui.browseDesktopFolder, &QPushButton::clicked, this, &DesktopPreferencesDialog::onBrowseDesktopFolderClicked);
-  QString desktopFolder = XdgDirs::userDir(XdgDirs::Desktop);
+  QString desktopFolder = readDesktopDir();
   qDebug("desktop folder: %s", desktopFolder.toStdString().c_str());
   ui.desktopFolder->setText(desktopFolder);
 
@@ -89,7 +140,7 @@ DesktopPreferencesDialog::~DesktopPreferencesDialog() {
 void DesktopPreferencesDialog::accept() {
   Settings& settings = static_cast<Application*>(qApp)->settings();
 
-  XdgDirs::setUserDir(XdgDirs::Desktop, ui.desktopFolder->text(), true);
+  setDesktopDir(ui.desktopFolder->text());
 
   settings.setWallpaper(ui.imageFile->text());
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();

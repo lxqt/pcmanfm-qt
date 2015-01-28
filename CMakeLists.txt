@@ -23,8 +23,6 @@ find_package(Qt5DBus 5.2 REQUIRED)
 find_package(Qt5LinguistTools 5.2 REQUIRED)
 find_package(Qt5X11Extras 5.2 REQUIRED)
 
-find_package(qt5xdg REQUIRED)
-
 find_package(PkgConfig)
 pkg_check_modules(SYSTEM_LIBS REQUIRED
     glib-2.0
