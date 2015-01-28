@@ -137,7 +137,7 @@ PlacesModel::PlacesModel(QObject* parent):
   g_signal_connect(bookmarks, "changed", G_CALLBACK(onBookmarksChanged), this);
 
   // update some icons when the icon theme is changed
-  connect(IconTheme::instance(), SIGNAL(changed()), SLOT(updateIcons()));
+  connect(IconTheme::instance(), &IconTheme::changed, this, &PlacesModel::updateIcons);
 }
 
 void PlacesModel::loadBookmarks() {

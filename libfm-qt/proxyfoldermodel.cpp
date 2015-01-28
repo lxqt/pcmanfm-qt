@@ -61,7 +61,7 @@ void ProxyFolderModel::setSourceModel(QAbstractItemModel* model) {
       }
       if(newSrcModel) { // tell the new source model that we want thumbnails of this size
         newSrcModel->cacheThumbnails(thumbnailSize_);
-        connect(newSrcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)), SLOT(onThumbnailLoaded(QModelIndex,int)));
+        connect(newSrcModel, &FolderModel::thumbnailLoaded, this, &ProxyFolderModel::onThumbnailLoaded);
       }
     }
   }
@@ -176,7 +176,7 @@ void ProxyFolderModel::setShowThumbnails(bool show) {
         // ask for cache of thumbnails of the new size in source model
         srcModel->cacheThumbnails(thumbnailSize_);
         // connect to the srcModel so we can be notified when a thumbnail is loaded.
-        connect(srcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)), SLOT(onThumbnailLoaded(QModelIndex,int)));
+        connect(srcModel, &FolderModel::thumbnailLoaded, this, &ProxyFolderModel::onThumbnailLoaded);
       }
       else { // turn off thumbnails
         // free cached old thumbnails in souce model
@@ -198,7 +198,7 @@ void ProxyFolderModel::setThumbnailSize(int size) {
         srcModel->releaseThumbnails(thumbnailSize_);
       else {
         // if the old thumbnail size is 0, we did not turn on thumbnail initially
-        connect(srcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)), SLOT(onThumbnailLoaded(QModelIndex,int)));
+        connect(srcModel, &FolderModel::thumbnailLoaded, this, &ProxyFolderModel::onThumbnailLoaded);
       }
       // ask for cache of thumbnails of the new size in source model
       srcModel->cacheThumbnails(size);

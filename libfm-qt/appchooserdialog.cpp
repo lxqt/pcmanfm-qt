@@ -33,8 +33,8 @@ AppChooserDialog::AppChooserDialog(FmMimeType* mimeType, QWidget* parent, Qt::Wi
   ui(new Ui::AppChooserDialog()) {
   ui->setupUi(this);
 
-  connect(ui->appMenuView, SIGNAL(selectionChanged()), SLOT(onSelectionChanged()));
-  connect(ui->tabWidget, SIGNAL(currentChanged(int)), SLOT(onTabChanged(int)));
+  connect(ui->appMenuView, &AppMenuView::selectionChanged, this, &AppChooserDialog::onSelectionChanged);
+  connect(ui->tabWidget, &QTabWidget::currentChanged, this, &AppChooserDialog::onTabChanged);
 
   if(!ui->appMenuView->isAppSelected())
     ui->buttonBox->button(QDialogButtonBox::Ok)->setEnabled(false); // disable OK button

@@ -25,6 +25,7 @@
 #include "placesview.h"
 #include "dirtreeview.h"
 #include "dirtreemodel.h"
+#include "path.h"
 
 namespace Fm {
 
@@ -44,7 +45,7 @@ SidePane::SidePane(QWidget* parent):
   combo_->setFrame(false);
   combo_->addItem(tr("Places"));
   combo_->addItem(tr("Directory Tree"));
-  connect(combo_, SIGNAL(currentIndexChanged(int)), SLOT(onComboCurrentIndexChanged(int)));
+  connect(combo_, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &SidePane::onComboCurrentIndexChanged);
   verticalLayout->addWidget(combo_);
 }
 
@@ -196,7 +197,7 @@ void SidePane::setMode(Mode mode) {
     view_ = placesView;
     placesView->setIconSize(iconSize_);
     placesView->setCurrentPath(currentPath_);
-    connect(placesView, SIGNAL(chdirRequested(int, FmPath*)), SLOT(onPlacesViewChdirRequested(int, FmPath*)));
+    connect(placesView, &PlacesView::chdirRequested, this, &SidePane::onPlacesViewChdirRequested);
     break;
   }
   case ModeDirTree: {
@@ -205,7 +206,7 @@ void SidePane::setMode(Mode mode) {
     initDirTree();
     dirTreeView->setIconSize(iconSize_);
     dirTreeView->setCurrentPath(currentPath_);
-    connect(dirTreeView, SIGNAL(chdirRequested(int, FmPath*)), SLOT(onDirTreeViewChdirRequested(int, FmPath*)));
+    connect(dirTreeView, &DirTreeView::chdirRequested, this, &SidePane::onDirTreeViewChdirRequested);
     break;
   }
   default:;

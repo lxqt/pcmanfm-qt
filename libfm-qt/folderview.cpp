@@ -36,7 +36,10 @@
 #include <QHoverEvent>
 #include <QApplication>
 #include <QScrollBar>
+#include <QMetaType>
 #include "folderview_p.h"
+
+Q_DECLARE_OPAQUE_POINTER(FmFileInfo*)
 
 namespace Fm {
 
@@ -181,7 +184,7 @@ FolderViewTreeView::FolderViewTreeView(QWidget* parent):
   header()->setStretchLastSection(false);
   setIndentation(0);
 
-  connect(this, SIGNAL(activated(QModelIndex)), this, SLOT(activation(QModelIndex)));
+  connect(this, &QTreeView::activated, this, &FolderViewTreeView::activation);
 }
 
 FolderViewTreeView::~FolderViewTreeView() {
@@ -310,7 +313,7 @@ void FolderViewTreeView::queueLayoutColumns() {
     layoutTimer_ = new QTimer();
     layoutTimer_->setSingleShot(true);
     layoutTimer_->setInterval(0);
-    connect(layoutTimer_, SIGNAL(timeout()), SLOT(layoutColumns()));
+    connect(layoutTimer_, &QTimer::timeout, this, &FolderViewTreeView::layoutColumns);
   }
   layoutTimer_->start();
 }
@@ -368,7 +371,7 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
   setViewMode(_mode);
   setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
-  connect(this, SIGNAL(clicked(int, FmFileInfo*)), SLOT(onFileClicked(int, FmFileInfo*)));
+  connect(this, &FolderView::clicked, this, &FolderView::onFileClicked);
 }
 
 FolderView::~FolderView() {
@@ -409,7 +412,7 @@ void FolderView::onSelectionChanged(const QItemSelection& selected, const QItemS
   if(!selChangedTimer_) {
     selChangedTimer_ = new QTimer(this);
     selChangedTimer_->setSingleShot(true);
-    connect(selChangedTimer_, SIGNAL(timeout()), SLOT(onSelChangedTimeout()));
+    connect(selChangedTimer_, &QTimer::timeout, this, &FolderView::onSelChangedTimeout);
     selChangedTimer_->start(200);
   }
 }
@@ -433,6 +436,8 @@ void FolderView::setViewMode(ViewMode _mode) {
 
   if(mode == DetailedListMode) {
     FolderViewTreeView* treeView = new FolderViewTreeView(this);
+    connect(treeView, &FolderViewTreeView::activatedFiltered, this, &FolderView::onItemActivated);
+
     view = treeView;
     treeView->setItemsExpandable(false);
     treeView->setRootIsDecorated(false);
@@ -448,6 +453,7 @@ void FolderView::setViewMode(ViewMode _mode) {
       listView = static_cast<FolderViewListView*>(view);
     else {
       listView = new FolderViewListView(this);
+      connect(listView, &FolderViewListView::activatedFiltered, this, &FolderView::onItemActivated);
       view = listView;
     }
     // set our own custom delegate
@@ -485,7 +491,6 @@ void FolderView::setViewMode(ViewMode _mode) {
     view->viewport()->installEventFilter(this);
     // we want the QEvent::HoverMove event for single click + auto-selection support
     view->viewport()->setAttribute(Qt::WA_Hover, true);
-    connect(view, SIGNAL(activatedFiltered(QModelIndex)), SLOT(onItemActivated(QModelIndex)));
     view->setContextMenuPolicy(Qt::NoContextMenu); // defer the context menu handling to parent widgets
     view->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     view->setIconSize(iconSize);
@@ -504,7 +509,7 @@ void FolderView::setViewMode(ViewMode _mode) {
       model_->setThumbnailSize(iconSize.width());
       view->setModel(model_);
       if(recreateView)
-        connect(view->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onSelectionChanged(QItemSelection,QItemSelection)));
+        connect(view->selectionModel(), &QItemSelectionModel::selectionChanged, this, &FolderView::onSelectionChanged);
     }
   }
 }
@@ -583,7 +588,7 @@ void FolderView::setModel(ProxyFolderModel* model) {
     QSize iconSize = iconSize_[mode - FirstViewMode];
     model->setThumbnailSize(iconSize.width());
     if(view->selectionModel())
-      connect(view->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onSelectionChanged(QItemSelection,QItemSelection)));
+      connect(view->selectionModel(), &QItemSelectionModel::selectionChanged, this, &FolderView::onSelectionChanged);
   }
   if(model_)
     delete model_;
@@ -785,7 +790,7 @@ bool FolderView::eventFilter(QObject* watched, QEvent* event) {
         if(autoSelectionDelay_ > 0 && model_) {
           if(!autoSelectionTimer_) {
             autoSelectionTimer_ = new QTimer(this);
-            connect(autoSelectionTimer_, SIGNAL(timeout()), SLOT(onAutoSelectionTimeout()));
+            connect(autoSelectionTimer_, &QTimer::timeout, this, &FolderView::onAutoSelectionTimeout);
             lastAutoSelectionIndex_ = QModelIndex();
           }
           autoSelectionTimer_->start(autoSelectionDelay_);
@@ -908,7 +913,7 @@ void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
     }
     if (menu) {
       menu->popup(QCursor::pos());
-      connect(menu, SIGNAL(aboutToHide()), menu, SLOT(deleteLater()));
+      connect(menu, &QMenu::aboutToHide, menu, &QMenu::deleteLater);
     }
   }
 }

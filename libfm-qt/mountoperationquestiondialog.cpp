@@ -42,7 +42,7 @@ MountOperationQuestionDialog::MountOperationQuestionDialog(MountOperation* op, g
     addButton(button, QMessageBox::AcceptRole);
     choiceButtons[i] = button;
   }
-  connect(this, SIGNAL(buttonClicked(QAbstractButton*)), SLOT(onButtonClicked(QAbstractButton*)));
+  connect(this, &MountOperationQuestionDialog::buttonClicked, this, &MountOperationQuestionDialog::onButtonClicked);
 }
 
 MountOperationQuestionDialog::~MountOperationQuestionDialog() {

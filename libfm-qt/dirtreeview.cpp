@@ -37,8 +37,8 @@ DirTreeView::DirTreeView(QWidget* parent):
   setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
   header()->setStretchLastSection(false);
 
-  connect(this, SIGNAL(collapsed(QModelIndex)), SLOT(onCollapsed(QModelIndex)));
-  connect(this, SIGNAL(expanded(QModelIndex)), SLOT(onExpanded(QModelIndex)));
+  connect(this, &DirTreeView::collapsed, this, &DirTreeView::onCollapsed);
+  connect(this, &DirTreeView::expanded, this, &DirTreeView::onExpanded);
 }
 
 DirTreeView::~DirTreeView() {
@@ -52,7 +52,7 @@ void DirTreeView::cancelPendingChdir() {
     if(!currentExpandingItem_)
       return;
     DirTreeModel* _model = static_cast<DirTreeModel*>(model());
-    disconnect(_model, SIGNAL(rowLoaded(QModelIndex)), this, SLOT(onRowLoaded(QModelIndex)));
+    disconnect(_model, &DirTreeModel::rowLoaded, this, &DirTreeView::onRowLoaded);
     currentExpandingItem_ = NULL;
   }
 }
@@ -68,7 +68,7 @@ void DirTreeView::expandPendingPath() {
   // qDebug() << "findItem: " << item;
   if(item) {
     currentExpandingItem_ = item;
-    connect(_model, SIGNAL(rowLoaded(QModelIndex)), SLOT(onRowLoaded(QModelIndex)));
+    connect(_model, &DirTreeModel::rowLoaded, this, &DirTreeView::onRowLoaded);
     if(item->loaded_) { // the node is already loaded
       onRowLoaded(item->index());
     }
@@ -96,7 +96,7 @@ void DirTreeView::onRowLoaded(const QModelIndex& index) {
     return;
   }
   /* disconnect the handler since we only need it once */
-  disconnect(_model, SIGNAL(rowLoaded(QModelIndex)), this, SLOT(onRowLoaded(QModelIndex)));
+  disconnect(_model, &DirTreeModel::rowLoaded, this, &DirTreeView::onRowLoaded);
 
   DirTreeModelItem* item = _model->itemFromIndex(index);
   // qDebug() << "row loaded: " << item->displayName_;
@@ -169,7 +169,7 @@ void DirTreeView::setModel(QAbstractItemModel* model) {
 
   QTreeView::setModel(model);
   header()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
-  connect(selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onSelectionChanged(QItemSelection,QItemSelection)));
+  connect(selectionModel(), &QItemSelectionModel::selectionChanged, this, &DirTreeView::onSelectionChanged);
 }
 
 

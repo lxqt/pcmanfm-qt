@@ -82,18 +82,18 @@ RenameDialog::RenameDialog(FmFileInfo* src, FmFileInfo* dest, QWidget* parent, Q
   ui->fileName->setText(QString::fromUtf8(basename));
   oldName_ = basename;
   g_free(basename);
-  connect(ui->fileName, SIGNAL(textChanged(QString)), SLOT(onFileNameChanged(QString)));
+  connect(ui->fileName, &QLineEdit::textChanged, this, &RenameDialog::onFileNameChanged);
 
   // add "Rename" button
   QAbstractButton* button = ui->buttonBox->button(QDialogButtonBox::Ok);
   button->setText(tr("&Overwrite"));
   // FIXME: there seems to be no way to place the Rename button next to the overwrite one.
   renameButton_ = ui->buttonBox->addButton(tr("&Rename"), QDialogButtonBox::ActionRole);
-  connect(renameButton_, SIGNAL(clicked(bool)), SLOT(onRenameClicked()));
+  connect(renameButton_, &QPushButton::clicked, this, &RenameDialog::onRenameClicked);
   renameButton_->setEnabled(false); // disabled by default
 
   button = ui->buttonBox->button(QDialogButtonBox::Ignore);
-  connect(button, SIGNAL(clicked(bool)), SLOT(onIgnoreClicked()));
+  connect(button, &QPushButton::clicked, this, &RenameDialog::onIgnoreClicked);
 }
 
 RenameDialog::~RenameDialog() {
