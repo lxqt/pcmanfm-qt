@@ -80,6 +80,9 @@ void AutoRunDialog::accept() {
       MainWindow* win = new MainWindow(path);
       fm_path_unref(path);
       win->resize(settings.windowWidth(), settings.windowHeight());
+      if(settings.windowMaximized()) {
+          win->setWindowState(win->windowState() | Qt::WindowMaximized);
+      }
       win->show();
     }
     g_object_unref(gf);

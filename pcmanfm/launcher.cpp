@@ -42,6 +42,10 @@ bool Launcher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** 
   if(!mainWindow) {
     mainWindow = new MainWindow(fm_file_info_get_path(fi));
     mainWindow->resize(app->settings().windowWidth(), app->settings().windowHeight());
+
+    if(app->settings().windowMaximized()) {
+        mainWindow->setWindowState(mainWindow->windowState() | Qt::WindowMaximized);
+    }
   }
   else
     mainWindow->chdir(fm_file_info_get_path(fi));

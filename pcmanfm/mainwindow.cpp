@@ -263,6 +263,10 @@ void MainWindow::on_actionNewWin_triggered() {
   Application* app = static_cast<Application*>(qApp);
   MainWindow* newWin = new MainWindow(path);
   newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
+
+  if(app->settings().windowMaximized())
+  	newWin->setWindowState(newWin->windowState() | Qt::WindowMaximized);
+  
   newWin->show();
 }
 
@@ -454,8 +458,12 @@ void MainWindow::resizeEvent(QResizeEvent *event) {
   QMainWindow::resizeEvent(event);
   Settings& settings = static_cast<Application*>(qApp)->settings();
   if(settings.rememberWindowSize()) {
-    settings.setLastWindowWidth(width());
-    settings.setLastWindowHeight(height());
+    settings.setLastWindowMaximized(isMaximized());
+
+    if(!isMaximized()) {
+        settings.setLastWindowWidth(width());
+        settings.setLastWindowHeight(height());
+    }
   }
 }
 
@@ -464,8 +472,12 @@ void MainWindow::closeEvent(QCloseEvent *event)
   QWidget::closeEvent(event);
   Settings& settings = static_cast<Application*>(qApp)->settings();
   if(settings.rememberWindowSize()) {
-    settings.setLastWindowWidth(width());
-    settings.setLastWindowHeight(height());
+    settings.setLastWindowMaximized(isMaximized());
+
+    if(!isMaximized()) {
+        settings.setLastWindowWidth(width());
+        settings.setLastWindowHeight(height());
+    }
   }
 }
 
@@ -624,6 +636,10 @@ void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
     MainWindow* newWin = new MainWindow(path);
     // TODO: apply window size from app->settings
     newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
+    
+    if(app->settings().windowMaximized())
+        newWin->setWindowState(newWin->windowState() | Qt::WindowMaximized);
+    
     newWin->show();
     break;
   }
