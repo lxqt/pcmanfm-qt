@@ -75,6 +75,7 @@ Settings::Settings():
   fixedWindowHeight_(480),
   lastWindowWidth_(640),
   lastWindowHeight_(480),
+  lastWindowMaximized_(false),
   splitterPos_(120),
   sidePaneMode_(0),
   viewMode_(Fm::FolderView::IconMode),
@@ -208,6 +209,7 @@ bool Settings::loadFile(QString filePath) {
   fixedWindowHeight_ = settings.value("FixedHeight", 480).toInt();
   lastWindowWidth_ = settings.value("LastWindowWidth", 640).toInt();
   lastWindowHeight_ = settings.value("LastWindowHeight", 480).toInt();
+  lastWindowMaximized_ = settings.value("LastWindowMaximized", false).toBool();
   rememberWindowSize_ = settings.value("RememberWindowSize", true).toBool();
   alwaysShowTabs_ = settings.value("AlwaysShowTabs", true).toBool();
   showTabClose_ = settings.value("ShowTabClose", true).toBool();
@@ -284,6 +286,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("FixedHeight", fixedWindowHeight_);
   settings.setValue("LastWindowWidth", lastWindowWidth_);
   settings.setValue("LastWindowHeight", lastWindowHeight_);
+  settings.setValue("LastWindowMaximized", lastWindowMaximized_);
   settings.setValue("RememberWindowSize", rememberWindowSize_);
   settings.setValue("AlwaysShowTabs", alwaysShowTabs_);
   settings.setValue("ShowTabClose", showTabClose_);

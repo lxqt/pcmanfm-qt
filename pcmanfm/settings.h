@@ -247,6 +247,13 @@ public:
       return fixedWindowHeight_;
   }
 
+  bool windowMaximized() const {
+    if(rememberWindowSize_)
+      return lastWindowMaximized_;
+    else
+      return false;
+  }
+
   int fixedWindowWidth() const {
     return fixedWindowWidth_;
   }
@@ -269,6 +276,10 @@ public:
 
   void setLastWindowHeight(int lastWindowHeight) {
       lastWindowHeight_ = lastWindowHeight;
+  }
+
+  void setLastWindowMaximized(bool lastWindowMaximized) {
+      lastWindowMaximized_ = lastWindowMaximized;
   }
 
   int splitterPos() const {
@@ -458,6 +469,7 @@ private:
   int fixedWindowHeight_;
   int lastWindowWidth_;
   int lastWindowHeight_;
+  bool lastWindowMaximized_;
   int splitterPos_;
   int sidePaneMode_;
 
