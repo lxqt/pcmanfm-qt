@@ -355,7 +355,7 @@
         <location filename="../execfiledialog.cpp" line="40"/>
         <source>This text file &apos;%1&apos; seems to be an executable script.
 What do you want to do with it?</source>
-        <translation>這個文字檔 &apos;%1&apos; 似乎是可執行的 script。\n
+        <translation>這個文字檔 &apos;%1&apos; 似乎是可執行的 script。
 想要進行什麼操作？</translation>
     </message>
     <message>
@@ -462,7 +462,7 @@ What do you want to do with it?</source>
         <location filename="../fileoperation.cpp" line="189"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation>因為檔案系統不支援，有些檔案無法丟到垃圾桶\n
+        <translation>因為檔案系統不支援，有些檔案無法丟到垃圾桶
 是否直接刪除這些檔案？</translation>
     </message>
     <message>

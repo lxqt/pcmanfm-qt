@@ -374,7 +374,7 @@ What do you want to do with it?</source>
     <message>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation>Kai kurie failai negali būti išmesti į šiukšlinę, nes failų sistema to nepalaiko.\n
+        <translation>Kai kurie failai negali būti išmesti į šiukšlinę, nes failų sistema to nepalaiko.
 Ar norite vietoje to juos pašalinti visam laikui?</translation>
     </message>
     <message>

@@ -459,7 +459,7 @@ What do you want to do with it?</source>
         <location filename="../fileoperation.cpp" line="189"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation>ファイルシステムのサポートがないため、ゴミ箱へ移動できないファイルがあります。\n
+        <translation>ファイルシステムのサポートがないため、ゴミ箱へ移動できないファイルがあります。
 かわりにこれらを削除しますか?</translation>
     </message>
     <message>

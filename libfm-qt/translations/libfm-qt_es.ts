@@ -454,7 +454,7 @@ What do you want to do with it?</source>
         <location filename="../fileoperation.cpp" line="189"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation>Algunos archivos no pueden moverse a la papelera porque el subsistema de archivos no permite esta operación.\n
+        <translation>Algunos archivos no pueden moverse a la papelera porque el subsistema de archivos no permite esta operación.
 ¿Quiere eliminarlos en su lugar?</translation>
     </message>
     <message>
