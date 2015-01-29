@@ -163,22 +163,39 @@ void FileOperation::onFileOpsJobPrepared(FmFileOpsJob* job, FileOperation* pThis
 
 void FileOperation::handleFinish() {
   disconnectJob();
-  g_object_unref(job_);
-  job_ = NULL;
 
   if(uiTimer) {
     uiTimer->stop();
     delete uiTimer;
     uiTimer = NULL;
   }
-  
+
   if(dlg) {
     dlg->done(QDialog::Accepted);
     delete dlg;
     dlg = NULL;
   }
   Q_EMIT finished();
-  
+
+  /* sepcial handling for trash
+   * FIXME: need to refactor this to use a more elegant way later. */
+  if(job_->type == FM_FILE_OP_TRASH) { /* FIXME: direct access to job struct! */
+    FmPathList* unable_to_trash = static_cast<FmPathList*>(g_object_get_data(G_OBJECT(job_), "trash-unsupported"));
+    /* some files cannot be trashed because underlying filesystems don't support it. */
+    if(unable_to_trash) { /* delete them instead */
+      /* FIXME: parent window might be already destroyed! */
+      QWidget* parent = NULL; // FIXME: currently, parent window is not set
+      if(QMessageBox::question(parent, tr("Error"),
+                    tr("Some files cannot be moved to trash can because "
+                    "the underlying file systems don't support this operation.\n"
+                    "Do you want to delete them instead?")) == QMessageBox::Yes) {
+        deleteFiles(unable_to_trash, false);
+      }
+    }
+  }
+  g_object_unref(job_);
+  job_ = NULL;
+
   if(autoDestroy_)
     delete this;
 }

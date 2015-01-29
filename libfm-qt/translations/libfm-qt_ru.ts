@@ -292,7 +292,7 @@
 <context>
     <name>Fm::AppChooserComboBox</name>
     <message>
-        <location filename="../appchoosercombobox.cpp" line="76"/>
+        <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
         <translation>Настроить</translation>
     </message>
@@ -344,7 +344,7 @@
 <context>
     <name>Fm::EditBookmarksDialog</name>
     <message>
-        <location filename="../editbookmarksdialog.cpp" line="87"/>
+        <location filename="../editbookmarksdialog.cpp" line="95"/>
         <source>New bookmark</source>
         <translation>Новая закладка</translation>
     </message>
@@ -367,73 +367,78 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="77"/>
+        <location filename="../filemenu.cpp" line="78"/>
         <source>Open</source>
         <translation>Открыть</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="81"/>
+        <location filename="../filemenu.cpp" line="82"/>
         <source>Open With...</source>
         <translation>Открыть с помощью...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="109"/>
+        <location filename="../filemenu.cpp" line="110"/>
         <source>Other Applications</source>
         <translation>Другие приложения</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="115"/>
+        <location filename="../filemenu.cpp" line="128"/>
+        <source>&amp;Restore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="134"/>
         <source>Cut</source>
         <translation>Вырезать</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="119"/>
+        <location filename="../filemenu.cpp" line="138"/>
         <source>Copy</source>
         <translation>Копировать</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="123"/>
+        <location filename="../filemenu.cpp" line="142"/>
         <source>Paste</source>
         <translation>Вставить</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="127"/>
-        <location filename="../filemenu.cpp" line="314"/>
+        <location filename="../filemenu.cpp" line="146"/>
+        <location filename="../filemenu.cpp" line="339"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Переместить в корзину</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="131"/>
+        <location filename="../filemenu.cpp" line="150"/>
         <source>Rename</source>
         <translation>Переименовать</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="157"/>
+        <location filename="../filemenu.cpp" line="177"/>
         <source>Extract to...</source>
         <translation>Распаковать в ...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="162"/>
+        <location filename="../filemenu.cpp" line="182"/>
         <source>Extract Here</source>
         <translation>Распаковать здесь</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="168"/>
+        <location filename="../filemenu.cpp" line="188"/>
         <source>Compress</source>
         <translation>Сжать</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="178"/>
+        <location filename="../filemenu.cpp" line="198"/>
         <source>Properties</source>
         <translation>Свойства</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="269"/>
+        <location filename="../filemenu.cpp" line="289"/>
         <source>Output</source>
         <translation>Вывод</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="314"/>
+        <location filename="../filemenu.cpp" line="339"/>
         <source>&amp;Delete</source>
         <translation>&amp;Удалить</translation>
     </message>
@@ -441,18 +446,29 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileOperation</name>
     <message>
-        <location filename="../fileoperation.cpp" line="213"/>
-        <location filename="../fileoperation.cpp" line="229"/>
+        <location filename="../fileoperation.cpp" line="188"/>
+        <source>Error</source>
+        <translation type="unfinished">Ошибка</translation>
+    </message>
+    <message>
+        <location filename="../fileoperation.cpp" line="189"/>
+        <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
+Do you want to delete them instead?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fileoperation.cpp" line="230"/>
+        <location filename="../fileoperation.cpp" line="246"/>
         <source>Confirm</source>
         <translation>Подтвердить</translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="214"/>
+        <location filename="../fileoperation.cpp" line="231"/>
         <source>Do you want to delete the selected files?</source>
         <translation>Вы действительно хотите удалить выбранные файлы?</translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="230"/>
+        <location filename="../fileoperation.cpp" line="247"/>
         <source>Do you want to move the selected files to trash can?</source>
         <translation>Переместить выбранные файлы в корзину?</translation>
     </message>
@@ -679,27 +695,27 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="240"/>
+        <location filename="../foldermodel.cpp" line="249"/>
         <source>Name</source>
         <translation>Имя</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="243"/>
+        <location filename="../foldermodel.cpp" line="252"/>
         <source>Type</source>
         <translation>Тип</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="246"/>
+        <location filename="../foldermodel.cpp" line="255"/>
         <source>Size</source>
         <translation>Размер</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="249"/>
+        <location filename="../foldermodel.cpp" line="258"/>
         <source>Modified</source>
         <translation>Изменён</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="252"/>
+        <location filename="../foldermodel.cpp" line="261"/>
         <source>Owner</source>
         <translation>Владелец</translation>
     </message>
@@ -733,37 +749,37 @@ What do you want to do with it?</source>
         <translation>Места</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="51"/>
+        <location filename="../placesmodel.cpp" line="49"/>
         <source>Desktop</source>
         <translation>Рабочий стол</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="60"/>
+        <location filename="../placesmodel.cpp" line="57"/>
         <source>Computer</source>
         <translation>Компьютер</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="73"/>
+        <location filename="../placesmodel.cpp" line="69"/>
         <source>Applications</source>
         <translation>Программы</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="85"/>
+        <location filename="../placesmodel.cpp" line="80"/>
         <source>Network</source>
         <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="94"/>
+        <location filename="../placesmodel.cpp" line="88"/>
         <source>Devices</source>
         <translation>Устройства</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="137"/>
+        <location filename="../placesmodel.cpp" line="130"/>
         <source>Bookmarks</source>
         <translation>Закладки</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="213"/>
+        <location filename="../placesmodel.cpp" line="205"/>
         <source>Trash</source>
         <translation>Корзина</translation>
     </message>
@@ -771,33 +787,33 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="243"/>
+        <location filename="../placesview.cpp" line="281"/>
         <source>Empty Trash</source>
         <translation>Очистить корзину</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="252"/>
+        <location filename="../placesview.cpp" line="290"/>
         <source>Rename</source>
         <translation>Переименовать</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="255"/>
+        <location filename="../placesview.cpp" line="293"/>
         <source>Delete</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="265"/>
-        <location filename="../placesview.cpp" line="283"/>
+        <location filename="../placesview.cpp" line="303"/>
+        <location filename="../placesview.cpp" line="321"/>
         <source>Unmount</source>
         <translation>Отключить</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="269"/>
+        <location filename="../placesview.cpp" line="307"/>
         <source>Mount</source>
         <translation>Подключить</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="275"/>
+        <location filename="../placesview.cpp" line="313"/>
         <source>Eject</source>
         <translation>Извлечь</translation>
     </message>
@@ -842,24 +858,24 @@ Modified: %3</source>
 <context>
     <name>Fm::SidePane</name>
     <message>
-        <location filename="../sidepane.cpp" line="45"/>
-        <location filename="../sidepane.cpp" line="124"/>
+        <location filename="../sidepane.cpp" line="46"/>
+        <location filename="../sidepane.cpp" line="125"/>
         <source>Places</source>
         <translation>Места</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="46"/>
-        <location filename="../sidepane.cpp" line="126"/>
+        <location filename="../sidepane.cpp" line="47"/>
+        <location filename="../sidepane.cpp" line="127"/>
         <source>Directory Tree</source>
         <translation>Дерево папок</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="134"/>
+        <location filename="../sidepane.cpp" line="135"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
         <translation>Показывает список обычных мест, устройств и закладок в боковой панели</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="136"/>
+        <location filename="../sidepane.cpp" line="137"/>
         <source>Shows tree of directories in sidebar</source>
         <translation>Показывает дерево папок в боковой панели</translation>
     </message>
@@ -915,10 +931,10 @@ Modified: %3</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../filelauncher.cpp" line="109"/>
-        <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="152"/>
         <location filename="../utilities.cpp" line="226"/>
+        <location filename="../mountoperation.cpp" line="185"/>
+        <location filename="../filelauncher.cpp" line="109"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>

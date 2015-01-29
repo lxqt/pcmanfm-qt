@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.1">
 <context>
     <name>AppChooserDialog</name>
     <message>
@@ -352,6 +352,10 @@ What do you want to do with it?</source>
         <source>Output</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>&amp;Restore</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Fm::FileOperation</name>
@@ -366,6 +370,15 @@ What do you want to do with it?</source>
     <message>
         <source>Do you want to move the selected files to trash can?</source>
         <translation>Ar norite perkelti pasirinktus failus į šiukšlinę?</translation>
+    </message>
+    <message>
+        <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
+Do you want to delete them instead?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Klaida</translation>
     </message>
 </context>
 <context>

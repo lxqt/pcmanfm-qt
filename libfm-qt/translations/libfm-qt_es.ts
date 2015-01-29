@@ -292,7 +292,7 @@
 <context>
     <name>Fm::AppChooserComboBox</name>
     <message>
-        <location filename="../appchoosercombobox.cpp" line="76"/>
+        <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
         <translation>Personalizar</translation>
     </message>
@@ -344,7 +344,7 @@
 <context>
     <name>Fm::EditBookmarksDialog</name>
     <message>
-        <location filename="../editbookmarksdialog.cpp" line="87"/>
+        <location filename="../editbookmarksdialog.cpp" line="95"/>
         <source>New bookmark</source>
         <translation>Nuevo marcador</translation>
     </message>
@@ -446,18 +446,29 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileOperation</name>
     <message>
-        <location filename="../fileoperation.cpp" line="213"/>
-        <location filename="../fileoperation.cpp" line="229"/>
+        <location filename="../fileoperation.cpp" line="188"/>
+        <source>Error</source>
+        <translation type="unfinished">Error</translation>
+    </message>
+    <message>
+        <location filename="../fileoperation.cpp" line="189"/>
+        <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
+Do you want to delete them instead?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fileoperation.cpp" line="230"/>
+        <location filename="../fileoperation.cpp" line="246"/>
         <source>Confirm</source>
         <translation>Confirmación</translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="214"/>
+        <location filename="../fileoperation.cpp" line="231"/>
         <source>Do you want to delete the selected files?</source>
         <translation>¿Quiere borrar los archivos seleccionados?</translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="230"/>
+        <location filename="../fileoperation.cpp" line="247"/>
         <source>Do you want to move the selected files to trash can?</source>
         <translation>¿Quiere mover los archivos seleccionados a la papelera?</translation>
     </message>
@@ -684,27 +695,27 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="240"/>
+        <location filename="../foldermodel.cpp" line="249"/>
         <source>Name</source>
         <translation>Nombre</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="243"/>
+        <location filename="../foldermodel.cpp" line="252"/>
         <source>Type</source>
         <translation>Tipo</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="246"/>
+        <location filename="../foldermodel.cpp" line="255"/>
         <source>Size</source>
         <translation>Tamaño</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="249"/>
+        <location filename="../foldermodel.cpp" line="258"/>
         <source>Modified</source>
         <translation>Modificado</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="252"/>
+        <location filename="../foldermodel.cpp" line="261"/>
         <source>Owner</source>
         <translation>Dueño</translation>
     </message>
@@ -738,37 +749,37 @@ What do you want to do with it?</source>
         <translation>Lugares</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="51"/>
+        <location filename="../placesmodel.cpp" line="49"/>
         <source>Desktop</source>
         <translation>Escritorio</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="60"/>
+        <location filename="../placesmodel.cpp" line="57"/>
         <source>Computer</source>
         <translation>Sistema</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="73"/>
+        <location filename="../placesmodel.cpp" line="69"/>
         <source>Applications</source>
         <translation>Aplicaciones</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="85"/>
+        <location filename="../placesmodel.cpp" line="80"/>
         <source>Network</source>
         <translation>Red</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="94"/>
+        <location filename="../placesmodel.cpp" line="88"/>
         <source>Devices</source>
         <translation>Dispositivos</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="137"/>
+        <location filename="../placesmodel.cpp" line="130"/>
         <source>Bookmarks</source>
         <translation>Marcadores</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="213"/>
+        <location filename="../placesmodel.cpp" line="205"/>
         <source>Trash</source>
         <translation>Papelera</translation>
     </message>
@@ -776,33 +787,33 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="243"/>
+        <location filename="../placesview.cpp" line="281"/>
         <source>Empty Trash</source>
         <translation>Vaciar Papelera</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="252"/>
+        <location filename="../placesview.cpp" line="290"/>
         <source>Rename</source>
         <translation>Renombrar</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="255"/>
+        <location filename="../placesview.cpp" line="293"/>
         <source>Delete</source>
         <translation>Borrar</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="265"/>
-        <location filename="../placesview.cpp" line="283"/>
+        <location filename="../placesview.cpp" line="303"/>
+        <location filename="../placesview.cpp" line="321"/>
         <source>Unmount</source>
         <translation>Desmontar</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="269"/>
+        <location filename="../placesview.cpp" line="307"/>
         <source>Mount</source>
         <translation>Montar</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="275"/>
+        <location filename="../placesview.cpp" line="313"/>
         <source>Eject</source>
         <translation>Expulsar</translation>
     </message>
@@ -847,24 +858,24 @@ Modificado: %3</translation>
 <context>
     <name>Fm::SidePane</name>
     <message>
-        <location filename="../sidepane.cpp" line="45"/>
-        <location filename="../sidepane.cpp" line="124"/>
+        <location filename="../sidepane.cpp" line="46"/>
+        <location filename="../sidepane.cpp" line="125"/>
         <source>Places</source>
         <translation>Lugares</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="46"/>
-        <location filename="../sidepane.cpp" line="126"/>
+        <location filename="../sidepane.cpp" line="47"/>
+        <location filename="../sidepane.cpp" line="127"/>
         <source>Directory Tree</source>
         <translation>Árbol de Directorios</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="134"/>
+        <location filename="../sidepane.cpp" line="135"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
         <translation>Muestra lista de lugares comunes, dispositivos y marcadores en la barra lateral</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="136"/>
+        <location filename="../sidepane.cpp" line="137"/>
         <source>Shows tree of directories in sidebar</source>
         <translation>Muestra árbol de directorios en barra lateral</translation>
     </message>
@@ -920,10 +931,10 @@ Modificado: %3</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../filelauncher.cpp" line="109"/>
-        <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="152"/>
         <location filename="../utilities.cpp" line="226"/>
+        <location filename="../mountoperation.cpp" line="185"/>
+        <location filename="../filelauncher.cpp" line="109"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>

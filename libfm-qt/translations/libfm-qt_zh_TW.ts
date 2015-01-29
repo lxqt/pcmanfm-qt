@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="zh_TW">
+<TS version="2.1" language="zh_TW">
 <context>
     <name>AppChooserDialog</name>
     <message>
@@ -286,7 +286,7 @@
 <context>
     <name>Fm::AppChooserComboBox</name>
     <message>
-        <location filename="../appchoosercombobox.cpp" line="76"/>
+        <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
         <translation type="unfinished"></translation>
     </message>
@@ -338,7 +338,7 @@
 <context>
     <name>Fm::EditBookmarksDialog</name>
     <message>
-        <location filename="../editbookmarksdialog.cpp" line="87"/>
+        <location filename="../editbookmarksdialog.cpp" line="95"/>
         <source>New bookmark</source>
         <translation>新書籤</translation>
     </message>
@@ -360,7 +360,7 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="77"/>
+        <location filename="../filemenu.cpp" line="78"/>
         <source>Open</source>
         <translation>開啟</translation>
     </message>
@@ -369,43 +369,48 @@ What do you want to do with it?</source>
         <translation type="obsolete">用其他程式開啟</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="81"/>
+        <location filename="../filemenu.cpp" line="82"/>
         <source>Open With...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="109"/>
+        <location filename="../filemenu.cpp" line="110"/>
         <source>Other Applications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="115"/>
+        <location filename="../filemenu.cpp" line="128"/>
+        <source>&amp;Restore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="134"/>
         <source>Cut</source>
         <translation>剪下</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="119"/>
+        <location filename="../filemenu.cpp" line="138"/>
         <source>Copy</source>
         <translation>複製</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="123"/>
+        <location filename="../filemenu.cpp" line="142"/>
         <source>Paste</source>
         <translation>貼上</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="127"/>
-        <location filename="../filemenu.cpp" line="314"/>
+        <location filename="../filemenu.cpp" line="146"/>
+        <location filename="../filemenu.cpp" line="339"/>
         <source>&amp;Move to Trash</source>
         <translation>移動到垃圾桶(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="269"/>
+        <location filename="../filemenu.cpp" line="289"/>
         <source>Output</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="314"/>
+        <location filename="../filemenu.cpp" line="339"/>
         <source>&amp;Delete</source>
         <translation>刪除(&amp;D)</translation>
     </message>
@@ -414,27 +419,27 @@ What do you want to do with it?</source>
         <translation type="obsolete">刪除</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="131"/>
+        <location filename="../filemenu.cpp" line="150"/>
         <source>Rename</source>
         <translation>重新命名</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="157"/>
+        <location filename="../filemenu.cpp" line="177"/>
         <source>Extract to...</source>
         <translation>解壓縮到...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="162"/>
+        <location filename="../filemenu.cpp" line="182"/>
         <source>Extract Here</source>
         <translation>在此解壓縮</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="168"/>
+        <location filename="../filemenu.cpp" line="188"/>
         <source>Compress</source>
         <translation>壓縮</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="178"/>
+        <location filename="../filemenu.cpp" line="198"/>
         <source>Properties</source>
         <translation>屬性</translation>
     </message>
@@ -442,18 +447,29 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileOperation</name>
     <message>
-        <location filename="../fileoperation.cpp" line="213"/>
-        <location filename="../fileoperation.cpp" line="229"/>
+        <location filename="../fileoperation.cpp" line="188"/>
+        <source>Error</source>
+        <translation type="unfinished">錯誤</translation>
+    </message>
+    <message>
+        <location filename="../fileoperation.cpp" line="189"/>
+        <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
+Do you want to delete them instead?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fileoperation.cpp" line="230"/>
+        <location filename="../fileoperation.cpp" line="246"/>
         <source>Confirm</source>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="214"/>
+        <location filename="../fileoperation.cpp" line="231"/>
         <source>Do you want to delete the selected files?</source>
         <translation>你確定要刪除選取的檔案嗎?</translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="230"/>
+        <location filename="../fileoperation.cpp" line="247"/>
         <source>Do you want to move the selected files to trash can?</source>
         <translation>你確定要把選取的檔案移到垃圾桶嗎?</translation>
     </message>
@@ -684,27 +700,27 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="240"/>
+        <location filename="../foldermodel.cpp" line="249"/>
         <source>Name</source>
         <translation>名稱</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="243"/>
+        <location filename="../foldermodel.cpp" line="252"/>
         <source>Type</source>
         <translation>類型</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="246"/>
+        <location filename="../foldermodel.cpp" line="255"/>
         <source>Size</source>
         <translation>大小</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="249"/>
+        <location filename="../foldermodel.cpp" line="258"/>
         <source>Modified</source>
         <translation>修改</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="252"/>
+        <location filename="../foldermodel.cpp" line="261"/>
         <source>Owner</source>
         <translation>所有者</translation>
     </message>
@@ -738,37 +754,37 @@ What do you want to do with it?</source>
         <translation>位置</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="51"/>
+        <location filename="../placesmodel.cpp" line="49"/>
         <source>Desktop</source>
         <translation>桌面</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="204"/>
+        <location filename="../placesmodel.cpp" line="205"/>
         <source>Trash</source>
         <translation>垃圾桶</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="58"/>
+        <location filename="../placesmodel.cpp" line="57"/>
         <source>Computer</source>
         <translation>電腦</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="68"/>
+        <location filename="../placesmodel.cpp" line="69"/>
         <source>Applications</source>
         <translation>應用程式</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="79"/>
+        <location filename="../placesmodel.cpp" line="80"/>
         <source>Network</source>
         <translation>網路</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="85"/>
+        <location filename="../placesmodel.cpp" line="88"/>
         <source>Devices</source>
         <translation>裝置</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="128"/>
+        <location filename="../placesmodel.cpp" line="130"/>
         <source>Bookmarks</source>
         <translation>書籤</translation>
     </message>
@@ -776,33 +792,33 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="248"/>
+        <location filename="../placesview.cpp" line="281"/>
         <source>Empty Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="257"/>
+        <location filename="../placesview.cpp" line="290"/>
         <source>Rename</source>
         <translation>重新命名</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="260"/>
+        <location filename="../placesview.cpp" line="293"/>
         <source>Delete</source>
         <translation>刪除</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="270"/>
-        <location filename="../placesview.cpp" line="288"/>
+        <location filename="../placesview.cpp" line="303"/>
+        <location filename="../placesview.cpp" line="321"/>
         <source>Unmount</source>
         <translation>卸載</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="274"/>
+        <location filename="../placesview.cpp" line="307"/>
         <source>Mount</source>
         <translation>掛載</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="280"/>
+        <location filename="../placesview.cpp" line="313"/>
         <source>Eject</source>
         <translation>退出</translation>
     </message>
@@ -848,24 +864,24 @@ Modified: %3</source>
 <context>
     <name>Fm::SidePane</name>
     <message>
-        <location filename="../sidepane.cpp" line="45"/>
-        <location filename="../sidepane.cpp" line="124"/>
+        <location filename="../sidepane.cpp" line="46"/>
+        <location filename="../sidepane.cpp" line="125"/>
         <source>Places</source>
         <translation type="unfinished">位置</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="46"/>
-        <location filename="../sidepane.cpp" line="126"/>
+        <location filename="../sidepane.cpp" line="47"/>
+        <location filename="../sidepane.cpp" line="127"/>
         <source>Directory Tree</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="134"/>
+        <location filename="../sidepane.cpp" line="135"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="136"/>
+        <location filename="../sidepane.cpp" line="137"/>
         <source>Shows tree of directories in sidebar</source>
         <translation type="unfinished"></translation>
     </message>
@@ -921,50 +937,50 @@ Modified: %3</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../filelauncher.cpp" line="109"/>
+        <location filename="../utilities.cpp" line="152"/>
+        <location filename="../utilities.cpp" line="226"/>
         <location filename="../mountoperation.cpp" line="185"/>
-        <location filename="../utilities.cpp" line="151"/>
-        <location filename="../utilities.cpp" line="225"/>
+        <location filename="../filelauncher.cpp" line="109"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="122"/>
+        <location filename="../utilities.cpp" line="123"/>
         <source>Rename File</source>
         <translation>重新命名</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="123"/>
+        <location filename="../utilities.cpp" line="124"/>
         <source>Please enter a new name:</source>
         <translation>請輸入一個新名稱:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="166"/>
+        <location filename="../utilities.cpp" line="167"/>
         <source>Please enter a new file name:</source>
         <translation>請輸入一個新檔名:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="171"/>
+        <location filename="../utilities.cpp" line="172"/>
         <source>Please enter a new folder name:</source>
         <translation>請輸入一個新資料夾名稱:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="172"/>
+        <location filename="../utilities.cpp" line="173"/>
         <source>New folder</source>
         <translation>新資料夾</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="167"/>
+        <location filename="../utilities.cpp" line="168"/>
         <source>New text file</source>
         <translation>新文字檔</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="177"/>
+        <location filename="../utilities.cpp" line="178"/>
         <source>Enter a name for the new %1:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="186"/>
+        <location filename="../utilities.cpp" line="187"/>
         <source>Create File</source>
         <translation>建立檔案</translation>
     </message>
