@@ -454,7 +454,8 @@ What do you want to do with it?</source>
         <location filename="../fileoperation.cpp" line="189"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>Некоторые файлы не могут быть помещены в корзину, поскольку файловая система не поддерживает эту операцию.\n
+Вы всё равно хотите их удалить?</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="230"/>

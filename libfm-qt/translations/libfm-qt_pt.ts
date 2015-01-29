@@ -458,7 +458,8 @@ O que pretende fazer com o ficheiro?</translation>
         <location filename="../fileoperation.cpp" line="189"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>Alguns ficheiros não podem ser movidos para o lixo, porque o sistema de ficheiros não suporta esta ação.\n
+Eliminar permanentemente?</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="230"/>

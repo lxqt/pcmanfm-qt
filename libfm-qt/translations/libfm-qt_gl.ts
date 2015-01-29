@@ -445,13 +445,14 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperation.cpp" line="188"/>
         <source>Error</source>
-        <translation type="unfinished">Erro</translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="189"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>Algúns ficheiros non poden enviarse ao cesto do lixo porque o subsistema de ficheiros non permite esta operación.\n
+Desexa eliminalos no seu canto?</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="230"/>

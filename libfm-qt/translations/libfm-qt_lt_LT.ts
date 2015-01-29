@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="zh_TW">
 <context>
     <name>AppChooserDialog</name>
     <message>
@@ -374,7 +374,8 @@ What do you want to do with it?</source>
     <message>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>Kai kurie failai negali būti išmesti į šiukšlinę, nes failų sistema to nepalaiko.\n
+Ar norite vietoje to juos pašalinti visam laikui?</translation>
     </message>
     <message>
         <source>Error</source>

@@ -6,27 +6,27 @@
     <message>
         <location filename="../app-chooser-dialog.ui" line="14"/>
         <source>Choose an Application</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇一個應用程式</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
         <source>Installed Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>安裝的應用程式</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
         <source>Custom Command</source>
-        <translation type="unfinished"></translation>
+        <translation>自訂指令</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
         <source>Command line to execute:</source>
-        <translation type="unfinished"></translation>
+        <translation>要執行的命令列:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
         <source>Application name:</source>
-        <translation type="unfinished"></translation>
+        <translation>應用程式名稱:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
@@ -37,22 +37,28 @@
 &lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represents a single URI of the file&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represents multiple URIs&lt;/li&gt;
 &lt;/ul&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;這些特殊代號可以在指令列參數使用：&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;：代表單一檔案名稱&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;：代表多個檔案名稱&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;：代表單一檔案 URI&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;：代表多個 URI&lt;/li&gt;
+&lt;/ul&gt;</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished"></translation>
+        <translation>執行指令後保持終端機視窗開啟</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
         <source>Execute in terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>在終端機模擬器執行</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
         <source>Set selected application as default action of this file type</source>
-        <translation type="unfinished"></translation>
+        <translation>將所選應用程式設定為此類型檔案的預設處理程式</translation>
     </message>
 </context>
 <context>
@@ -93,27 +99,27 @@
     <message>
         <location filename="../exec-file.ui" line="14"/>
         <source>Execute file</source>
-        <translation type="unfinished"></translation>
+        <translation>執行檔案</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
         <source>&amp;Open</source>
-        <translation type="unfinished"></translation>
+        <translation>開啟(&amp;)</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
         <source>E&amp;xecute</source>
-        <translation type="unfinished"></translation>
+        <translation>執行(&amp;X)</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
         <source>Execute in &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>在終端機內執行(&amp;T)</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
@@ -288,7 +294,7 @@
     <message>
         <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>自訂</translation>
     </message>
 </context>
 <context>
@@ -296,7 +302,7 @@
     <message>
         <location filename="../appchooserdialog.cpp" line="262"/>
         <source>Select an application to open &quot;%1&quot; files</source>
-        <translation type="unfinished"></translation>
+        <translation>選取用來開啟「%1」檔案的應用程式</translation>
     </message>
 </context>
 <context>
@@ -304,12 +310,12 @@
     <message>
         <location filename="../dirtreemodelitem.cpp" line="77"/>
         <source>Loading...</source>
-        <translation type="unfinished"></translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="208"/>
         <source>&lt;No sub folders&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;沒有子資料夾&gt;</translation>
     </message>
 </context>
 <context>
@@ -349,12 +355,13 @@
         <location filename="../execfiledialog.cpp" line="40"/>
         <source>This text file &apos;%1&apos; seems to be an executable script.
 What do you want to do with it?</source>
-        <translation type="unfinished"></translation>
+        <translation>這個文字檔 &apos;%1&apos; 似乎是可執行的 script。\n
+想要進行什麼操作？</translation>
     </message>
     <message>
         <location filename="../execfiledialog.cpp" line="45"/>
         <source>This file &apos;%1&apos; is executable. Do you want to execute it?</source>
-        <translation type="unfinished"></translation>
+        <translation>這個檔案 &apos;%1&apos; 是可執行檔，是否想要執行？</translation>
     </message>
 </context>
 <context>
@@ -371,17 +378,17 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="82"/>
         <source>Open With...</source>
-        <translation type="unfinished"></translation>
+        <translation>用其他程式開啟...</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="110"/>
         <source>Other Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>其他應用程式</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="128"/>
         <source>&amp;Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>恢復(&amp;R)</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="134"/>
@@ -407,7 +414,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="289"/>
         <source>Output</source>
-        <translation type="unfinished"></translation>
+        <translation>輸出</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="339"/>
@@ -449,13 +456,14 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperation.cpp" line="188"/>
         <source>Error</source>
-        <translation type="unfinished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="189"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>因為檔案系統不支援，有些檔案無法丟到垃圾桶\n
+是否直接刪除這些檔案？</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="230"/>
@@ -649,7 +657,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="89"/>
         <source>Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>空白檔案</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="133"/>
@@ -794,7 +802,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesview.cpp" line="281"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>清空垃圾桶</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="290"/>
@@ -839,9 +847,8 @@ Modified: %3</source>
         <location filename="../renamedialog.cpp" line="56"/>
         <source>Type: %1
 Modified: %2</source>
-        <translation type="unfinished">類型: %1
-最後修改: %2 {1
-?}</translation>
+        <translation>類型: %1
+最後修改: %2</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="75"/>
@@ -867,23 +874,23 @@ Modified: %3</source>
         <location filename="../sidepane.cpp" line="46"/>
         <location filename="../sidepane.cpp" line="125"/>
         <source>Places</source>
-        <translation type="unfinished">位置</translation>
+        <translation>位置</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="47"/>
         <location filename="../sidepane.cpp" line="127"/>
         <source>Directory Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>目錄樹</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="135"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="137"/>
         <source>Shows tree of directories in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -977,7 +984,7 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="178"/>
         <source>Enter a name for the new %1:</source>
-        <translation type="unfinished"></translation>
+        <translation>幫新的 %1 輸入一個名稱:</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="187"/>

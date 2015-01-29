@@ -374,7 +374,7 @@ Was möchten Sie damit tun?</translation>
     <message>
         <location filename="../filemenu.cpp" line="128"/>
         <source>&amp;Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>Wiede&amp;rherstellen</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="134"/>
@@ -448,13 +448,14 @@ Was möchten Sie damit tun?</translation>
     <message>
         <location filename="../fileoperation.cpp" line="188"/>
         <source>Error</source>
-        <translation type="unfinished">Fehler</translation>
+        <translation>Fehler</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="189"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>Einige Dateien können nicht in den Papierkorb verschoben werden, da die zugrundeliegenden Dateisysteme den Vorgang nicht unterstützen.\n
+Sollen die Dateien stattdessen gelöscht werden?</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="230"/>
