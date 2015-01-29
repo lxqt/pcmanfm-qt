@@ -354,6 +354,14 @@ public:
     confirmDelete_ = confirmDelete;
   }
 
+  bool noUsbTrash() const {
+    return noUsbTrash_;
+  }
+
+  void setNoUsbTrash(bool noUsbTrash) {
+    noUsbTrash_ = noUsbTrash;
+  }
+
   // bool thumbnailLocal_;
   // bool thumbnailMax;
 
@@ -471,6 +479,7 @@ private:
   int autoSelectionDelay_;
   bool useTrash_;
   bool confirmDelete_;
+  bool noUsbTrash_; // do not trash files on usb removable devices
 
   bool showThumbnails_;
 
