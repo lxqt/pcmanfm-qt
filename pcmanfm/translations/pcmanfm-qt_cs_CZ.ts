@@ -696,7 +696,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../autorundialog.cpp" line="130"/>
+        <location filename="../autorundialog.cpp" line="133"/>
         <source>Removable Disk</source>
         <translation type="unfinished"></translation>
     </message>
@@ -750,28 +750,28 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="398"/>
+        <location filename="../mainwindow.cpp" line="402"/>
         <source>Version: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="803"/>
         <source>&amp;Move to Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="803"/>
         <source>&amp;Delete</source>
         <translation type="unfinished">Smazat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="848"/>
-        <location filename="../mainwindow.cpp" line="859"/>
+        <location filename="../mainwindow.cpp" line="864"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="859"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>Switch user command is not set.</source>
         <translation type="unfinished"></translation>
     </message>

@@ -125,5 +125,13 @@ void RenameDialog::reject() {
 void RenameDialog::onFileNameChanged(QString newName) {
   newName_ = newName;
   // FIXME: check if the name already exists in the current dir
-  renameButton_->setEnabled((newName_ != oldName_));
+  bool hasNewName = (newName_ != oldName_);
+  renameButton_->setEnabled(hasNewName);
+  renameButton_->setDefault(hasNewName);
+
+  // change default button to rename rather than overwrire 
+  // if the user typed a new filename
+  QPushButton* overwriteButton = static_cast<QPushButton*>(ui->buttonBox->button(QDialogButtonBox::Ok));
+  overwriteButton->setEnabled(!hasNewName);
+  overwriteButton->setDefault(!hasNewName);
 }

@@ -752,7 +752,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>在檔案管理程式內開啟</translation>
     </message>
     <message>
-        <location filename="../autorundialog.cpp" line="130"/>
+        <location filename="../autorundialog.cpp" line="133"/>
         <source>Removable Disk</source>
         <translation>可移除式磁碟</translation>
     </message>
@@ -806,28 +806,28 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="398"/>
+        <location filename="../mainwindow.cpp" line="402"/>
         <source>Version: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="803"/>
         <source>&amp;Move to Trash</source>
         <translation>移動到垃圾桶(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="803"/>
         <source>&amp;Delete</source>
         <translation>刪除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="848"/>
-        <location filename="../mainwindow.cpp" line="859"/>
+        <location filename="../mainwindow.cpp" line="864"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="859"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>Switch user command is not set.</source>
         <translation>切換使用者指令尚未設定</translation>
     </message>

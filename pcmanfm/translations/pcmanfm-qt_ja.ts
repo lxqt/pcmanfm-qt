@@ -764,7 +764,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <translation>ファイルマネージャーで開く</translation>
     </message>
     <message>
-        <location filename="../autorundialog.cpp" line="130"/>
+        <location filename="../autorundialog.cpp" line="133"/>
         <source>Removable Disk</source>
         <translation>リムーバブルディスク</translation>
     </message>
@@ -818,28 +818,28 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="398"/>
+        <location filename="../mainwindow.cpp" line="402"/>
         <source>Version: %1</source>
         <translation>バージョン: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="803"/>
         <source>&amp;Move to Trash</source>
         <translation>ゴミ箱へ移動(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="803"/>
         <source>&amp;Delete</source>
         <translation>削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="848"/>
-        <location filename="../mainwindow.cpp" line="859"/>
+        <location filename="../mainwindow.cpp" line="864"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="859"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>Switch user command is not set.</source>
         <translation>ユーザー切替コマンドを未設定です</translation>
     </message>

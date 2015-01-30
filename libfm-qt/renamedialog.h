@@ -29,7 +29,7 @@ namespace Ui {
   class RenameDialog;
 };
 
-class QAbstractButton;
+class QPushButton;
 
 namespace Fm {
 
@@ -71,7 +71,7 @@ protected:
 
 private:
   Ui::RenameDialog* ui;
-  QAbstractButton* renameButton_;
+  QPushButton* renameButton_;
   Action action_;
   bool applyToAll_;
   QString oldName_;

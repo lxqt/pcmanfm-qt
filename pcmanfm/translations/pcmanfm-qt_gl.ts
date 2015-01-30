@@ -755,7 +755,7 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
         <translation>Abrir no xestor de ficheiros</translation>
     </message>
     <message>
-        <location filename="../autorundialog.cpp" line="130"/>
+        <location filename="../autorundialog.cpp" line="133"/>
         <source>Removable Disk</source>
         <translation>Disco extraíbel</translation>
     </message>
@@ -809,28 +809,28 @@ con este programa; se non é así, escriba á Free Software Foundation, Inc.,
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="398"/>
+        <location filename="../mainwindow.cpp" line="402"/>
         <source>Version: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="803"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mover ao lixo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="803"/>
         <source>&amp;Delete</source>
         <translation>&amp;Eliminar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="848"/>
-        <location filename="../mainwindow.cpp" line="859"/>
+        <location filename="../mainwindow.cpp" line="864"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="859"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>Switch user command is not set.</source>
         <translation>A orde para cambiar de usuario non está configurada.</translation>
     </message>
