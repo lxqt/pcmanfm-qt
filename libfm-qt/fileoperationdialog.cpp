@@ -149,6 +149,23 @@ void FileOperationDialog::setPercent(unsigned int percent) {
   ui->progressBar->setValue(percent);
 }
 
+void FileOperationDialog::setRemainingTime(unsigned int sec) {
+  unsigned int min = 0;
+  unsigned int hr = 0;
+  if(sec > 60) {
+    min = sec / 60;
+    sec %= 60;
+    if(min > 60) {
+      hr = min / 60;
+      min %= 60;
+    }
+  }
+  ui->timeRemaining->setText(QString("%1:%2:%3")
+                             .arg(hr, 2, 10, QChar('0'))
+                             .arg(min, 2, 10, QChar('0'))
+                             .arg(sec, 2, 10, QChar('0')));
+}
+
 void FileOperationDialog::setPrepared() {
 }
 

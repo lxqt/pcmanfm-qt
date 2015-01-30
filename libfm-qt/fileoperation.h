@@ -23,6 +23,7 @@
 
 #include "libfmqtglobals.h"
 #include <QObject>
+#include <QElapsedTimer>
 #include <libfm/fm.h>
 
 class QTimer;
@@ -122,6 +123,26 @@ private:
   void disconnectJob();
   void showDialog();
 
+  void pauseElapsedTimer() {
+    if(Q_LIKELY(elapsedTimer_ != NULL)) {
+      lastElapsed_ += elapsedTimer_->elapsed();
+      elapsedTimer_->invalidate();
+    }
+  }
+
+  void resumeElapsedTimer() {
+    if(Q_LIKELY(elapsedTimer_ != NULL)) {
+      elapsedTimer_->start();
+    }
+  }
+
+  qint64 elapsedTime() {
+    if(Q_LIKELY(elapsedTimer_ != NULL)) {
+      return lastElapsed_ + elapsedTimer_->elapsed();
+    }
+    return 0;
+  }
+
 private Q_SLOTS:
   void onUiTimeout();
   
@@ -131,9 +152,11 @@ private:
   FmPath* destPath;
   FmPathList* srcPaths;
   QTimer* uiTimer;
+  QElapsedTimer* elapsedTimer_;
+  qint64 lastElapsed_;
+  bool updateRemainingTime_;
   QString curFile;
   bool autoDestroy_;
-
 };
 
 }

@@ -21,7 +21,9 @@
 #include "fileoperation.h"
 #include "fileoperationdialog.h"
 #include <QTimer>
+#include <QElapsedTimer>
 #include <QMessageBox>
+#include <QDebug>
 
 using namespace Fm;
 
@@ -32,6 +34,10 @@ FileOperation::FileOperation(Type type, FmPathList* srcFiles, QObject* parent):
   dlg(NULL),
   destPath(NULL),
   srcPaths(fm_path_list_ref(srcFiles)),
+  uiTimer(NULL),
+  elapsedTimer_(NULL),
+  lastElapsed_(0),
+  updateRemainingTime_(true),
   autoDestroy_(true),
   job_(fm_file_ops_job_new((FmFileOpType)type, srcFiles)) {
 
@@ -62,6 +68,10 @@ FileOperation::~FileOperation() {
     delete uiTimer;
     uiTimer = NULL;
   }
+  if(elapsedTimer_) {
+    delete elapsedTimer_;
+    elapsedTimer_ = NULL;
+  }
 
   if(job_) {
     disconnectJob();
@@ -87,6 +97,15 @@ bool FileOperation::run() {
 void FileOperation::onUiTimeout() {
   if(dlg) {
     dlg->setCurFile(curFile);
+    // estimate remaining time based on past history
+    // FIXME: avoid directly access data member of FmFileOpsJob
+    if(Q_LIKELY(job_->percent > 0 && updateRemainingTime_)) {
+      gint64 remaining = elapsedTime() * ((double(100 - job_->percent) / job_->percent) / 1000);
+      dlg->setRemainingTime(remaining);
+    }
+    // this timeout slot is called every 0.5 second.
+    // by adding this flag, we can update remaining time every 1 second.
+    updateRemainingTime_ = !updateRemainingTime_;
   }
   else{
     showDialog();
@@ -112,17 +131,22 @@ void FileOperation::showDialog() {
 }
 
 gint FileOperation::onFileOpsJobAsk(FmFileOpsJob* job, const char* question, char*const* options, FileOperation* pThis) {
+  pThis->pauseElapsedTimer();
   pThis->showDialog();
-  return pThis->dlg->ask(QString::fromUtf8(question), options);
+  int ret = pThis->dlg->ask(QString::fromUtf8(question), options);
+  pThis->resumeElapsedTimer();
+  return ret;
 }
 
 gint FileOperation::onFileOpsJobAskRename(FmFileOpsJob* job, FmFileInfo* src, FmFileInfo* dest, char** new_name, FileOperation* pThis) {
+  pThis->pauseElapsedTimer();
   pThis->showDialog();
   QString newName;
   int ret = pThis->dlg->askRename(src, dest, newName);
   if(!newName.isEmpty()) {
     *new_name = g_strdup(newName.toUtf8().constData());
   }
+  pThis->resumeElapsedTimer();
   return ret;
 }
 
@@ -141,8 +165,11 @@ void FileOperation::onFileOpsJobCurFile(FmFileOpsJob* job, const char* cur_file,
 }
 
 FmJobErrorAction FileOperation::onFileOpsJobError(FmFileOpsJob* job, GError* err, FmJobErrorSeverity severity, FileOperation* pThis) {
+  pThis->pauseElapsedTimer();
   pThis->showDialog();
-  return pThis->dlg->error(err, severity);
+  FmJobErrorAction act = pThis->dlg->error(err, severity);
+  pThis->resumeElapsedTimer();
+  return act;
 }
 
 void FileOperation::onFileOpsJobFinished(FmFileOpsJob* job, FileOperation* pThis) {
@@ -156,6 +183,10 @@ void FileOperation::onFileOpsJobPercent(FmFileOpsJob* job, guint percent, FileOp
 }
 
 void FileOperation::onFileOpsJobPrepared(FmFileOpsJob* job, FileOperation* pThis) {
+  if(!pThis->elapsedTimer_) {
+    pThis->elapsedTimer_ = new QElapsedTimer();
+    pThis->elapsedTimer_->start();
+  }
   if(pThis->dlg) {
     pThis->dlg->setPrepared();
   }

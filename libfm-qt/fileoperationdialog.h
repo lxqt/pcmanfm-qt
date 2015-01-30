@@ -48,9 +48,10 @@ public:
   void setPrepared();
   void setCurFile(QString cur_file);
   void setPercent(unsigned int percent);
+  void setRemainingTime(unsigned int sec);
 
   virtual void reject();
-  
+
 private:
   Ui::FileOperationDialog* ui;
   FileOperation* operation;
