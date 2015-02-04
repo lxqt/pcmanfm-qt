@@ -96,6 +96,8 @@ MainWindow::MainWindow(FmPath* path):
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
   ui.sidePane->setMode(Fm::SidePane::ModePlaces);
   connect(ui.sidePane, &Fm::SidePane::chdirRequested, this, &MainWindow::onSidePaneChdirRequested);
+  // detect change of splitter position
+  connect(ui.splitter, &QSplitter::splitterMoved, this, &MainWindow::onSplitterMoved);
 
   // path bar
   pathEntry = new Fm::PathEdit(this);
@@ -109,7 +111,7 @@ MainWindow::MainWindow(FmPath* path):
   // setup the splitter
   ui.splitter->setStretchFactor(1, 1); // only the right pane can be stretched
   QList<int> sizes;
-  sizes.append(150);
+  sizes.append(settings.splitterPos());
   sizes.append(300);
   ui.splitter->setSizes(sizes);
 
@@ -661,6 +663,11 @@ void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {
     chdir(path);
   else if(type == 1) // middle button
     addTab(path);
+}
+
+void MainWindow::onSplitterMoved(int pos, int index) {
+  Application* app = static_cast<Application*>(qApp);
+  app->settings().setSplitterPos(pos);
 }
 
 void MainWindow::loadBookmarksMenu() {
