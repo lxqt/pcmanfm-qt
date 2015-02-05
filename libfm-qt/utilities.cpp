@@ -292,6 +292,8 @@ int execModelessDialog(QDialog* dlg) {
 // check if GVFS can support this uri scheme (lower case)
 bool isUriSchemeSupported(const char* uriScheme) {
   const gchar * const * schemes = g_vfs_get_supported_uri_schemes(g_vfs_get_default());
+  if(Q_UNLIKELY(schemes == NULL))
+    return false;
   for(const gchar * const * scheme = schemes; *scheme; ++scheme)
     if(strcmp(uriScheme, *scheme) == 0)
       return true;
