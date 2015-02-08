@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="de_DE" sourcelanguage="en">
+<TS version="2.1" language="de_DE" sourcelanguage="en">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -102,77 +102,99 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
 <context>
     <name>DesktopPreferencesDialog</name>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="240"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="276"/>
         <source>Desktop Preferences</source>
         <translation>Arbeitsplatzeinstellungen</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="241"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="277"/>
         <source>Background</source>
         <translation>Hintergrund</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="242"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="278"/>
         <source>Wallpaper mode:</source>
         <translation>Hintergrundbildmodus:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="243"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="279"/>
         <source>Wallpaper image file:</source>
         <translation>Hintergrundbild:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="245"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="281"/>
         <source>Select background color:</source>
         <translation>Hintergrundfarbe:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="247"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="283"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="303"/>
         <source>Image file</source>
         <translation>Bilddatei</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="252"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="288"/>
         <source>Image file path</source>
         <translation>Pfad zur Bilddatei</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="253"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="289"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="309"/>
         <source>&amp;Browse</source>
         <translation>&amp;Suchen</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="254"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="290"/>
         <source>Label Text</source>
         <translation>Text</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="257"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="293"/>
         <source>Select  text color:</source>
         <translation>Farbe der Beschriftung:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="258"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="294"/>
         <source>Select shadow color:</source>
         <translation>Farbe des Schattens:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="259"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="295"/>
         <source>Select font:</source>
         <translation>Schrift für Beschriftung:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="261"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="297"/>
         <source>General</source>
         <translation>Allgemeines</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="262"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="298"/>
+        <source>Window Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="299"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
         <translation>Beim Klicken auf den Arbeitsplatz die Menüs des Fenstermanagers anzeigen</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="263"/>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="300"/>
+        <source>Desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="301"/>
+        <source>Desktop folder:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="308"/>
+        <source>Folder path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="310"/>
         <source>Advanced</source>
         <translation>Erweitert</translation>
     </message>
@@ -691,32 +713,32 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="41"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="42"/>
         <source>Fill with background color only</source>
         <translation>Nur mit Hintergrundfarbe füllen</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="42"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="43"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Gefüllt</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="43"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="44"/>
         <source>Stretch to fit the screen</source>
         <translation>Gestreckt</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="44"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="45"/>
         <source>Center on the screen</source>
         <translation>Zentriert</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="45"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="46"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Nebeneinander</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="120"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="125"/>
         <source>Image Files</source>
         <translation>Bilddateien</translation>
     </message>
@@ -724,12 +746,12 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="349"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Symbole &amp;fixieren</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="363"/>
+        <location filename="../desktopwindow.cpp" line="371"/>
         <source>Desktop Preferences</source>
         <translation>Arbeitsplatzeinstellungen</translation>
     </message>
@@ -789,17 +811,17 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="204"/>
+        <location filename="../tabpage.cpp" line="210"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="217"/>
+        <location filename="../tabpage.cpp" line="223"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Freier Speicherplatz: %1 (Gesamt: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="232"/>
+        <location filename="../tabpage.cpp" line="238"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n Objekt</numerusform>
@@ -807,7 +829,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="234"/>
+        <location filename="../tabpage.cpp" line="240"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform>(%n versteckt)</numerusform>
@@ -815,7 +837,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="382"/>
+        <location filename="../tabpage.cpp" line="388"/>
         <source>%1 item(s) selected</source>
         <translation>%1 Objekte ausgewählt</translation>
     </message>
