@@ -188,6 +188,12 @@ public:
     return fm_path_hash(data_);
   }
 
+  void take(FmPath* path) { // take the ownership of the "path"
+    if(data_)
+      fm_path_unref(data_);
+    data_ = path;
+  }
+
   Path& operator = (const Path& other) {
     if(data_)
       fm_path_unref(data_);
