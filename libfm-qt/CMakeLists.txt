@@ -63,6 +63,7 @@ set(libfm_SRCS
     appchoosercombobox.cpp
     appmenuview.cpp
     appchooserdialog.cpp
+    filesearchdialog.cpp
     fm-search.c # might be moved to libfm later
 )
 
@@ -74,6 +75,7 @@ set(libfm_UIS
     edit-bookmarks.ui
     exec-file.ui
     app-chooser-dialog.ui
+    filesearch.ui
 )
 
 qt5_wrap_ui(libfm_UIS_H ${libfm_UIS})
