@@ -52,7 +52,7 @@ void fm_search_free(FmSearch* search)
     g_list_free_full(search->mime_types, (GDestroyNotify)g_free);
     g_list_free_full(search->search_path_list, (GDestroyNotify)g_free);
     g_free(search->name_patterns);
-    g_free(search->name_patterns);
+    g_free(search->content_pattern);
     g_free(search->max_mtime);
     g_free(search->min_mtime);
     g_slice_free(FmSearch, search);
@@ -238,7 +238,6 @@ FmPath* fm_search_dup_path(FmSearch* search)
 
     if(search->search_path_list) /* we need to have at least one dir path */
     {
-        const guint unit_bytes[] = {1, (1024), (1024*1024), (1024*1024*1024)};
         char *escaped;
         /* add paths */
 	GList* l;
