@@ -230,7 +230,8 @@ _retry:
 
 uid_t uidFromName(QString name) {
   uid_t ret;
-
+  if(name.isEmpty())
+      return -1;
   if(name.at(0).digitValue() != -1) {
     ret = uid_t(name.toUInt());
   }
@@ -249,13 +250,16 @@ QString uidToName(uid_t uid) {
 
   if(pw)
     ret = pw->pw_name;
+  else
+    ret = QString::number(uid);
 
   return ret;
 }
 
 gid_t gidFromName(QString name) {
   gid_t ret;
-
+  if(name.isEmpty())
+      return -1;
   if(name.at(0).digitValue() != -1) {
     ret = gid_t(name.toUInt());
   }
@@ -274,6 +278,8 @@ QString gidToName(gid_t gid) {
 
   if(grp)
     ret = grp->gr_name;
+  else
+    ret = QString::number(gid);
 
   return ret;
 }

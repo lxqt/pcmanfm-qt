@@ -349,7 +349,7 @@ void FilePropsDialog::accept() {
   // check if chown or chmod is needed
   guint32 newUid = uidFromName(ui->owner->text());
   guint32 newGid = gidFromName(ui->ownerGroup->text());
-  bool needChown = (newUid != uid || newGid != gid);
+  bool needChown = (newUid != -1 && newUid != uid) || (newGid != -1 && newGid != gid);
 
   int newOwnerPermSel = ui->ownerPerm->currentIndex();
   int newGroupPermSel = ui->groupPerm->currentIndex();
