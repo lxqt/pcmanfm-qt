@@ -29,9 +29,10 @@ AppChooserComboBox::AppChooserComboBox(QWidget* parent):
   QComboBox(parent),
   defaultApp_(NULL),
   appInfos_(NULL),
-  defaultAppIndex_(0),
+  defaultAppIndex_(-1),
   prevIndex_(0),
-  mimeType_(NULL) {
+  mimeType_(NULL),
+  blockOnCurrentIndexChanged_(false) {
 
   // the new Qt5 signal/slot syntax cannot handle overloaded methods by default
   // hence a type-casting is needed here. really ugly!
@@ -72,11 +73,12 @@ void AppChooserComboBox::setMimeType(FmMimeType* mimeType) {
       if(g_app_info_equal(app, defaultApp_))
         defaultAppIndex_ = i;
     }
-    setCurrentIndex(defaultAppIndex_);
   }
   // add "Other applications" item
   insertSeparator(count());
   addItem(tr("Customize"));
+  if(defaultAppIndex_ != -1)
+    setCurrentIndex(defaultAppIndex_);
 }
 
 // returns the currently selected app.
@@ -89,7 +91,7 @@ bool AppChooserComboBox::isChanged() {
 }
 
 void AppChooserComboBox::onCurrentIndexChanged(int index) {
-  if(index == -1 || index == prevIndex_)
+  if(index == -1 || index == prevIndex_ || blockOnCurrentIndexChanged_)
     return;
 
   // the last item is "Customize"
@@ -108,6 +110,10 @@ void AppChooserComboBox::onCurrentIndexChanged(int index) {
           if(g_app_info_equal(app, G_APP_INFO(found->data)))
             break;
         }
+
+        // inserting new items or change current index will recursively trigger onCurrentIndexChanged.
+        // we need to block our handler to prevent recursive calls.
+        blockOnCurrentIndexChanged_ = true;
         /* if it's already in the list, select it */
         if(found) {
           setCurrentIndex(g_list_position(appInfos_, found));
@@ -120,11 +126,16 @@ void AppChooserComboBox::onCurrentIndexChanged(int index) {
           insertItem(0, IconTheme::icon(gicon), name);
           setCurrentIndex(0);
         }
+        blockOnCurrentIndexChanged_ = false;
         return;
       }
     }
+
+    // block our handler to prevent recursive calls.
+    blockOnCurrentIndexChanged_ = true;
     // restore to previously selected item
     setCurrentIndex(prevIndex_);
+    blockOnCurrentIndexChanged_ = false;
   }
   else {
     prevIndex_ = index;

@@ -53,6 +53,7 @@ private:
   GAppInfo* defaultApp_; // default application used to open the file type 
   int defaultAppIndex_;
   int prevIndex_;
+  bool blockOnCurrentIndexChanged_;
 };
 
 }
