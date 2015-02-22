@@ -69,7 +69,7 @@ void AppChooserComboBox::setMimeType(FmMimeType* mimeType) {
       // QVariant data = qVariantFromValue<void*>(app);
       // addItem(IconTheme::icon(gicon), name, data);
       addItem(IconTheme::icon(gicon), name);
-      if(app == defaultApp_)
+      if(g_app_info_equal(app, defaultApp_))
         defaultAppIndex_ = i;
     }
     setCurrentIndex(defaultAppIndex_);
