@@ -272,7 +272,7 @@ FileOperation* FileOperation::deleteFiles(FmPathList* srcFiles, bool prompt, QWi
 }
 
 //static
-FileOperation* FileOperation::trashFiles(FmPathList* srcFiles, bool prompt, QWidget* parent) {
+FileOperation* FileOperation::trashFiles(FmPathList* srcFiles, QWidget* parent) {
   FileOperation* op = new FileOperation(FileOperation::Trash, srcFiles);
   op->run();
   return op;
