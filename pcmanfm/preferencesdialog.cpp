@@ -189,6 +189,7 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
     }
   }
 
+  ui.configmTrash->setChecked(settings.confirmTrash());
   ui.configmDelete->setChecked(settings.confirmDelete());
 
   if(settings.supportTrash())
@@ -270,6 +271,7 @@ void PreferencesDialog::applyBehaviorPage(Settings& settings) {
   // FIXME: bug here?
   Fm::FolderView::ViewMode mode = Fm::FolderView::ViewMode(ui.viewMode->itemData(ui.viewMode->currentIndex()).toInt());
   settings.setViewMode(mode);
+  settings.setConfirmTrash(ui.configmTrash->isChecked());
   settings.setConfirmDelete(ui.configmDelete->isChecked());
   
   if(settings.supportTrash())

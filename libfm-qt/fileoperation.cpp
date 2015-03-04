@@ -272,7 +272,16 @@ FileOperation* FileOperation::deleteFiles(FmPathList* srcFiles, bool prompt, QWi
 }
 
 //static
-FileOperation* FileOperation::trashFiles(FmPathList* srcFiles, QWidget* parent) {
+FileOperation* FileOperation::trashFiles(FmPathList* srcFiles, bool prompt, QWidget* parent) {
+  if(prompt) {
+    int result = QMessageBox::warning(parent, tr("Confirm"),
+                                      tr("Do you want to move the selected files to trash can?"),
+                                      QMessageBox::Yes|QMessageBox::No,
+                                      QMessageBox::No);
+    if(result != QMessageBox::Yes)
+      return NULL;
+  }
+
   FileOperation* op = new FileOperation(FileOperation::Trash, srcFiles);
   op->run();
   return op;

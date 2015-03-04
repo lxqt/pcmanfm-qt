@@ -82,6 +82,7 @@ void View::onSearch() {
 
 void View::prepareFileMenu(Fm::FileMenu* menu) {
   Application* app = static_cast<Application*>(qApp);
+  menu->setConfirmTrash(app->settings().confirmTrash());
   menu->setConfirmDelete(app->settings().confirmDelete());
   menu->setUseTrash(app->settings().useTrash());
 

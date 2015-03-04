@@ -813,7 +813,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Confirm before deleting files</source>
-        <translation>Patvirtinti prieš ištrinant failus</translation>
+        <translation type="vanished">Patvirtinti prieš ištrinant failus</translation>
     </message>
     <message>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
@@ -911,6 +911,18 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Remember the size of the last closed window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Confirm before:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Moving files or folders to the trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting files or folders</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

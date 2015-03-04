@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>736</width>
+    <width>770</width>
     <height>497</height>
    </rect>
   </property>
@@ -279,13 +279,33 @@
            </property>
            <layout class="QFormLayout" name="formLayout_6">
             <item row="0" column="0">
-             <widget class="QCheckBox" name="configmDelete">
+             <widget class="QLabel" name="label_2">
               <property name="text">
-               <string>Confirm before deleting files</string>
+               <string>Confirm before:</string>
               </property>
              </widget>
             </item>
             <item row="1" column="0">
+             <widget class="QFrame" name="frame">
+              <layout class="QFormLayout" name="formLayout_8">
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="configmTrash">
+                 <property name="text">
+                  <string>Moving files or folders to the trash</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QCheckBox" name="configmDelete">
+                 <property name="text">
+                  <string>Deleting files or folders</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0">
              <widget class="QCheckBox" name="useTrash">
               <property name="text">
                <string>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</string>
