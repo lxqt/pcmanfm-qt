@@ -389,14 +389,14 @@
             <item>
              <widget class="QRadioButton" name="closeOnUnmount">
               <property name="text">
-               <string>Close tab containing removable medium</string>
+               <string>Close &amp;tab containing removable medium</string>
               </property>
              </widget>
             </item>
             <item>
              <widget class="QRadioButton" name="goHomeOnUnmount">
               <property name="text">
-               <string>Change folder in the tab to home folder</string>
+               <string>Chan&amp;ge folder in the tab to home folder</string>
               </property>
              </widget>
             </item>
@@ -439,7 +439,7 @@
             <item row="1" column="0">
              <widget class="QLabel" name="label_3">
               <property name="text">
-               <string>Switch user command:</string>
+               <string>Switch &amp;user command:</string>
               </property>
               <property name="buddy">
                <cstring>suCommand</cstring>
@@ -463,7 +463,7 @@
             <item row="3" column="0">
              <widget class="QLabel" name="label_5">
               <property name="text">
-               <string>Archiver integration:</string>
+               <string>Archiver in&amp;tegration:</string>
               </property>
               <property name="buddy">
                <cstring>archiver</cstring>
@@ -525,28 +525,34 @@
   </layout>
  </widget>
  <tabstops>
-  <tabstop>smallIconSize</tabstop>
+  <tabstop>listWidget</tabstop>
+  <tabstop>iconTheme</tabstop>
   <tabstop>bigIconSize</tabstop>
+  <tabstop>smallIconSize</tabstop>
   <tabstop>thumbnailIconSize</tabstop>
   <tabstop>sidePaneIconSize</tabstop>
-  <tabstop>iconTheme</tabstop>
   <tabstop>alwaysShowTabs</tabstop>
   <tabstop>showTabClose</tabstop>
+  <tabstop>rememberWindowSize</tabstop>
+  <tabstop>fixedWindowWidth</tabstop>
+  <tabstop>fixedWindowHeight</tabstop>
   <tabstop>singleClick</tabstop>
+  <tabstop>autoSelectionDelay</tabstop>
   <tabstop>viewMode</tabstop>
   <tabstop>configmDelete</tabstop>
   <tabstop>useTrash</tabstop>
   <tabstop>showThumbnails</tabstop>
+  <tabstop>thumbnailLocal</tabstop>
+  <tabstop>maxThumbnailFileSize</tabstop>
   <tabstop>mountOnStartup</tabstop>
+  <tabstop>mountRemovable</tabstop>
+  <tabstop>autoRun</tabstop>
+  <tabstop>closeOnUnmount</tabstop>
+  <tabstop>goHomeOnUnmount</tabstop>
+  <tabstop>terminal</tabstop>
   <tabstop>suCommand</tabstop>
   <tabstop>archiver</tabstop>
   <tabstop>siUnit</tabstop>
-  <tabstop>autoRun</tabstop>
-  <tabstop>mountRemovable</tabstop>
-  <tabstop>buttonBox</tabstop>
-  <tabstop>listWidget</tabstop>
-  <tabstop>thumbnailLocal</tabstop>
-  <tabstop>maxThumbnailFileSize</tabstop>
  </tabstops>
  <resources/>
  <connections>
