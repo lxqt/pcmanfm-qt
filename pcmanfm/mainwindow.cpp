@@ -808,6 +808,7 @@ void MainWindow::updateFromSettings(Settings& settings) {
 
   // menu
   ui.actionDelete->setText(settings.useTrash() ? tr("&Move to Trash") : tr("&Delete"));
+  ui.actionDelete->setIcon(settings.useTrash() ? QIcon::fromTheme("user-trash") : QIcon::fromTheme("edit-delete"));
 
   // side pane
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));

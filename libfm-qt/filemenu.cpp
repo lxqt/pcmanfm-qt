@@ -143,7 +143,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
     connect(pasteAction_, &QAction::triggered, this, &FileMenu::onPasteTriggered);
     addAction(pasteAction_);
 
-    deleteAction_ = new QAction(QIcon::fromTheme("edit-delete"), tr("&Move to Trash"), this);
+    deleteAction_ = new QAction(QIcon::fromTheme("user-trash"), tr("&Move to Trash"), this);
     connect(deleteAction_, &QAction::triggered, this, &FileMenu::onDeleteTriggered);
     addAction(deleteAction_);
 
@@ -337,6 +337,7 @@ void FileMenu::setUseTrash(bool trash) {
   if(useTrash_ != trash) {
     useTrash_ = trash;
     deleteAction_->setText(useTrash_ ? tr("&Move to Trash") : tr("&Delete"));
+    deleteAction_->setIcon(useTrash_ ? QIcon::fromTheme("user-trash") : QIcon::fromTheme("edit-delete"));
   }
 }
 
