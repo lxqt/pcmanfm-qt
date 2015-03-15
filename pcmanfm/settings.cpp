@@ -86,6 +86,7 @@ Settings::Settings():
   singleClick_(false),
   autoSelectionDelay_(600),
   useTrash_(true),
+  confirmTrash_(false),
   confirmDelete_(true),
   noUsbTrash_(false),
   showThumbnails_(true),
@@ -157,6 +158,7 @@ bool Settings::loadFile(QString filePath) {
   useTrash_ = settings.value("UseTrash", true).toBool();
   singleClick_ = settings.value("SingleClick", false).toBool();
   autoSelectionDelay_ = settings.value("AutoSelectionDelay", 600).toInt();
+  confirmTrash_ = settings.value("ConfirmTrash", false).toBool();
   confirmDelete_ = settings.value("ConfirmDelete", true).toBool();
   noUsbTrash_ = settings.value("NoUsbTrash", false).toBool();
   fm_config->no_usb_trash = noUsbTrash_; // also set this to libfm since FmFileOpsJob reads this config value before trashing files.
@@ -240,6 +242,8 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("UseTrash", useTrash_);
   settings.setValue("SingleClick", singleClick_);
   settings.setValue("AutoSelectionDelay", autoSelectionDelay_);
+
+  settings.setValue("ConfirmTrash", confirmTrash_);
   settings.setValue("ConfirmDelete", confirmDelete_);
   settings.setValue("NoUsbTrash", noUsbTrash_);
   // bool thumbnailLocal_;

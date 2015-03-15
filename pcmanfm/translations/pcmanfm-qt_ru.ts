@@ -951,17 +951,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::View</name>
     <message>
-        <location filename="../view.cpp" line="102"/>
+        <location filename="../view.cpp" line="103"/>
         <source>Open in New T&amp;ab</source>
         <translation>Открыть в новой &amp;вкладке</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="106"/>
+        <location filename="../view.cpp" line="107"/>
         <source>Open in New Win&amp;dow</source>
         <translation>Открыть в новом &amp;окне</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="113"/>
+        <location filename="../view.cpp" line="114"/>
         <source>Open in Termina&amp;l</source>
         <translation>Открыть в &amp;терминале</translation>
     </message>
@@ -969,219 +969,233 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PreferencesDialog</name>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="524"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
         <source>Preferences</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
         <source>User Interface</source>
         <translation>Интерфейс пользователя</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="531"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
         <source>Behavior</source>
         <translation>Поведение</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
         <source>Thumbnail</source>
         <translation>Эскизы</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
         <source>Volume</source>
         <translation>Том</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
         <source>Advanced</source>
         <translation>Расширенные</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
         <source>Icons</source>
         <translation>Значки</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
         <source>Size of big icons:</source>
         <translation>Размер больших значков:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="542"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
         <source>Size of small icons:</source>
         <translation>Размер маленьких значков:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
         <source>Size of thumbnails:</source>
         <translation>Размер значков:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="544"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="566"/>
         <source>Size of side pane icons:</source>
         <translation>Размер значков боковой панели:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="545"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
         <source>Icon theme:</source>
         <translation>Тема значков:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
         <source>Window</source>
         <translation>Окно</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
         <source>Always show the tab bar</source>
         <translation>Всегда показывать панель вкладок</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Показывать кнопку «Закрыть» на вкладках</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="571"/>
         <source>Remember the size of the last closed window</source>
         <translation>Запоминать размер последнего закрытого окна</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="550"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
         <source>Default width of new windows:</source>
         <translation>Ширина новых окон по умолчанию:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
         <source>Default height of new windows:</source>
         <translation>Высота новых окон по умолчанию:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
         <source>Browsing</source>
         <translation>Просмотр</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="575"/>
         <source>Open files with single click</source>
         <translation>Открывать файлы по одиночному щелчку мыши</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
         <translation>Задержка автовыделения в режиме одиночного щелчка (0 для отключения)</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
         <source>Default view mode:</source>
         <translation>Режим просмотра по умолчанию:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="578"/>
         <source> sec</source>
         <translation> сек</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="579"/>
         <source>File Operations</source>
         <translation>Операции с файлами</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
-        <source>Confirm before deleting files</source>
-        <translation>Подтверждение перед удалением файлов</translation>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="580"/>
+        <source>Confirm before:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="581"/>
+        <source>Moving files or folders to the trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="582"/>
+        <source>Deleting files or folders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Confirm before deleting files</source>
+        <translation type="vanished">Подтверждение перед удалением файлов</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="583"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation>Перемещать удалённые файлы в корзину вместо удаления их с диска.</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="584"/>
         <source>Show thumbnails of files</source>
         <translation>Показывать эскизы файлов</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="585"/>
         <source>Only show thumbnails for local files</source>
         <translation>Показывать эскизы только для локальных файлов</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="586"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Не создавать эскизы для файлов изображений больше чем:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="587"/>
         <source> KB</source>
         <translation> КБ</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="588"/>
         <source>Auto Mount</source>
         <translation>Автоподключение</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="589"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Подключать съёмные тома автоматически при запуске программы</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="566"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="590"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Подключать съёмные тома автоматически при их подключении</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="591"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Показывать доступные варианты для съёмных устройств при их вставлении</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="592"/>
         <source>When removable medium unmounted:</source>
         <translation>При отключении съёмного устройства:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="593"/>
         <source>Close tab containing removable medium</source>
         <translation>Закрыть вкладку, отображающую съёмное устройство</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="594"/>
         <source>Change folder in the tab to home folder</source>
         <translation>Сменить папку во вкладке на домашний каталог</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="571"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="595"/>
         <source>Programs</source>
         <translation>Программы</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="596"/>
         <source>Terminal emulator:</source>
         <translation>Эмулятор терминала:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="597"/>
         <source>Switch user command:</source>
         <translation>Команда переключения пользователя:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="598"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Примеры: &quot;xterm -e %s&quot; для терминала или &quot;gksu %s&quot; для переключения пользователя.
 %s = командная строка,которую вы хотите выполнить с терминалом или su.</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="600"/>
         <source>Archiver integration:</source>
         <translation>Интеграция архиватора:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="601"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Использовать десятичные префиксы СИ вместо двоичных префиксов IEC</translation>
     </message>

@@ -45,9 +45,17 @@ public:
   bool useTrash() {
     return useTrash_;
   }
-  
+
   void setUseTrash(bool trash);
-  
+
+  bool confirmTrash() {
+    return confirmTrash_;
+  }
+
+  void setConfirmTrash(bool confirm) {
+    confirmTrash_ = confirm;
+  }
+
   bool confirmDelete() {
     return confirmDelete_;
   }
@@ -55,7 +63,7 @@ public:
   void setConfirmDelete(bool confirm) {
     confirmDelete_ = confirm;
   }
-  
+
   QAction* openAction() {
     return openAction_;  
   }
@@ -171,6 +179,7 @@ private:
   FmFileInfo* info_;
   FmPath* cwd_;
   bool useTrash_;
+  bool confirmTrash_;
   bool confirmDelete_;
   bool sameType_;
   bool sameFilesystem_;

@@ -649,7 +649,7 @@ void DesktopWindow::onDeleteActivated() {
     Settings& settings = static_cast<Application*>(qApp)->settings();
     bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
     if(settings.useTrash() && !shiftPressed)
-      Fm::FileOperation::trashFiles(paths, settings.confirmDelete());
+      Fm::FileOperation::trashFiles(paths, settings.confirmTrash());
     else
       Fm::FileOperation::deleteFiles(paths, settings.confirmDelete());
     fm_path_list_unref(paths);

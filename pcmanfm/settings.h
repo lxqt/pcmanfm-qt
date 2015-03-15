@@ -357,6 +357,14 @@ public:
     useTrash_ = useTrash;
   }
 
+  bool confirmTrash() const {
+    return confirmTrash_;
+  }
+
+  void setConfirmTrash(bool confirmTrash) {
+    confirmTrash_ = confirmTrash;
+  }
+
   bool confirmDelete() const {
     return confirmDelete_;
   }
@@ -490,6 +498,7 @@ private:
   bool singleClick_;
   int autoSelectionDelay_;
   bool useTrash_;
+  bool confirmTrash_;
   bool confirmDelete_;
   bool noUsbTrash_; // do not trash files on usb removable devices
 
