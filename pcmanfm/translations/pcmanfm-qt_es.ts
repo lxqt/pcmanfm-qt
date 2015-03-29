@@ -894,13 +894,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <translation>&amp;Eliminar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="871"/>
-        <location filename="../mainwindow.cpp" line="882"/>
+        <location filename="../mainwindow.cpp" line="872"/>
+        <location filename="../mainwindow.cpp" line="883"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="882"/>
+        <location filename="../mainwindow.cpp" line="883"/>
         <source>Switch user command is not set.</source>
         <translation>El comando para cambiar de usuario no está definido.</translation>
     </message>
@@ -983,219 +983,235 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
 <context>
     <name>PreferencesDialog</name>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="524"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="530"/>
         <source>Preferences</source>
         <translation>Preferencias</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
         <source>User Interface</source>
         <translation>Interfaz de Usuario</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="531"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
         <source>Behavior</source>
         <translation>Comportamiento</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
         <source>Thumbnail</source>
         <translation>Miniaturas</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
         <source>Volume</source>
         <translation>Volumen</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
         <source>Advanced</source>
         <translation>Avanzado</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
         <source>Icons</source>
         <translation>Íconos</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
         <source>Size of big icons:</source>
         <translation>Tamaño de íconos grandes:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="542"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
         <source>Size of small icons:</source>
         <translation>Tamaño de íconos pequeños:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
         <source>Size of thumbnails:</source>
         <translation>Tamaño de miniaturas:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="544"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="550"/>
         <source>Size of side pane icons:</source>
         <translation>Tamaño de íconos del panel lateral:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="545"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
         <source>Icon theme:</source>
         <translation>Tema de íconos:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
         <source>Window</source>
         <translation>Ventana</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
         <source>Always show the tab bar</source>
         <translation>Mostrar siempre la barra de pestañas</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Mostrar botones de cerrar en las pestañas</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
         <source>Remember the size of the last closed window</source>
         <translation>Recordar el tamaño de la última ventana cerrada</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="550"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
         <source>Default width of new windows:</source>
         <translation>Ancho para nuevas ventanas:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
         <source>Default height of new windows:</source>
         <translation>Altura para nuevas ventanas:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
         <source>Browsing</source>
         <translation>Navegación</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
         <source>Open files with single click</source>
         <translation>Abrir archivos con un solo click</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
         <translation>Demora de selección automática en modo de un click (0 para deshabilitar)</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
         <source>Default view mode:</source>
         <translation>Modo de visualización por defecto:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
         <source> sec</source>
         <translation>seg</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
         <source>File Operations</source>
         <translation>Operaciones de Archivos</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
         <source>Confirm before deleting files</source>
         <translation>Confirmar antes de borrar</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation>Mover archivos a la papelera en lugar de eliminarlos del disco.</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="566"/>
         <source>Show thumbnails of files</source>
         <translation>Mostrar miniaturas de archivos</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
         <source>Only show thumbnails for local files</source>
         <translation>Solo mostrar miniaturas para archivos locales</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>No generar miniaturas para archivos de imágenes mayores a:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
         <source> KB</source>
         <translation>KB</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
         <source>Auto Mount</source>
         <translation>Montar Automáticamente</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="571"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Montar discos removibles automáticamente al inicio</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="566"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Montar discos removibles automáticamente cuando se insertan</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Mostrar opciones disponibles para los discos removibles al insertarlos</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
         <source>When removable medium unmounted:</source>
         <translation>Cuando se desconecta un disco removible:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="575"/>
+        <source>Close &amp;tab containing removable medium</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
+        <source>Chan&amp;ge folder in the tab to home folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="579"/>
+        <source>Switch &amp;user command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="582"/>
+        <source>Archiver in&amp;tegration:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Close tab containing removable medium</source>
-        <translation>Cerrar la pestaña que contiene al disco removible</translation>
+        <translation type="vanished">Cerrar la pestaña que contiene al disco removible</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
         <source>Change folder in the tab to home folder</source>
-        <translation>Cambiar el directorio en la pestaña a la carpeta personal</translation>
+        <translation type="vanished">Cambiar el directorio en la pestaña a la carpeta personal</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="571"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
         <source>Programs</source>
         <translation>Programas</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="578"/>
         <source>Terminal emulator:</source>
         <translation>Emulador de terminal:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
         <source>Switch user command:</source>
-        <translation>Comando para cambiar de usuario:</translation>
+        <translation type="vanished">Comando para cambiar de usuario:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="580"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Ejemplos: &quot;xterm -e %s&quot; para terminal o &quot;gksu %s&quot; para cambiar de usuario.
 %s = la línea de comandos a ejecutar en la terminal o como otro usuario.</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
         <source>Archiver integration:</source>
-        <translation>Integración con programas de archivo:</translation>
+        <translation type="vanished">Integración con programas de archivo:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="583"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Usar prefijos decimales SI en lugar de prefijos binarios IEC</translation>
     </message>

@@ -59,11 +59,11 @@ MainWindow::MainWindow(FmPath* path):
   ui.setupUi(this);
 
   // hide menu items that are not usable
-  if(!isUriSchemeSupported("computer"))
+  if(!uriExists("computer:///"))
     ui.actionComputer->setVisible(false);
-  if(!isUriSchemeSupported("trash"))
+  if(!settings.supportTrash())
     ui.actionTrash->setVisible(false);
-  if(!isUriSchemeSupported("network"))
+  if(!uriExists("network:///"))
     ui.actionNetwork->setVisible(false);
 
   // add a context menu for showing browse history to back and forward buttons

@@ -765,13 +765,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished">Smazat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="871"/>
-        <location filename="../mainwindow.cpp" line="882"/>
+        <location filename="../mainwindow.cpp" line="872"/>
+        <location filename="../mainwindow.cpp" line="883"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="882"/>
+        <location filename="../mainwindow.cpp" line="883"/>
         <source>Switch user command is not set.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -856,218 +856,218 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PreferencesDialog</name>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="524"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="530"/>
         <source>Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
         <source>User Interface</source>
         <translation type="unfinished">Uživatelské rozhraní</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="531"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
         <source>Behavior</source>
         <translation type="unfinished">Chování</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
         <source>Thumbnail</source>
         <translation type="unfinished">Náhled</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
         <source>Volume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
         <source>Advanced</source>
         <translation type="unfinished">Pokročilé</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
         <source>Icons</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
         <source>Size of big icons:</source>
         <translation type="unfinished">Velikost velkých ikon:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="542"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
         <source>Size of small icons:</source>
         <translation type="unfinished">Velikost malých ikon:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
         <source>Size of thumbnails:</source>
         <translation type="unfinished">Velikost náhledů:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="544"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="550"/>
         <source>Size of side pane icons:</source>
         <translation type="unfinished">Velikost ikon v postranním panelu:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="545"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
         <source>Icon theme:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
         <source>Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="550"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
         <source>Default width of new windows:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
         <source>Default height of new windows:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
         <source>Always show the tab bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
         <source>Remember the size of the last closed window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
         <source>Browsing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
         <source>Open files with single click</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
         <source>Default view mode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
         <source> sec</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
         <source>File Operations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
         <source>Confirm before deleting files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="566"/>
         <source>Show thumbnails of files</source>
         <translation type="unfinished">Zobrazovat náhledy souborů</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
         <source>Only show thumbnails for local files</source>
         <translation type="unfinished">Zobrazovat náhlet jen u lokálních souborů</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation type="unfinished">Negenerovat náhledy obrázků přesahujících tuto velikost:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
         <source> KB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
         <source>Auto Mount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="571"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="566"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
         <source>When removable medium unmounted:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
-        <source>Close tab containing removable medium</source>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="575"/>
+        <source>Close &amp;tab containing removable medium</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
-        <source>Change folder in the tab to home folder</source>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
+        <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="571"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="579"/>
+        <source>Switch &amp;user command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="582"/>
+        <source>Archiver in&amp;tegration:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
         <source>Programs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="578"/>
         <source>Terminal emulator:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
-        <source>Switch user command:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="580"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
-        <source>Archiver integration:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="583"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation type="unfinished"></translation>
     </message>

@@ -833,13 +833,13 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <translation>削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="871"/>
-        <location filename="../mainwindow.cpp" line="882"/>
+        <location filename="../mainwindow.cpp" line="872"/>
+        <location filename="../mainwindow.cpp" line="883"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="882"/>
+        <location filename="../mainwindow.cpp" line="883"/>
         <source>Switch user command is not set.</source>
         <translation>ユーザー切替コマンドを未設定です</translation>
     </message>
@@ -924,172 +924,180 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>PreferencesDialog</name>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="524"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="530"/>
         <source>Preferences</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
         <source>User Interface</source>
         <translation>ユーザーインターフェース</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="531"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
         <source>Behavior</source>
         <translation>挙動</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
         <source>Thumbnail</source>
         <translation>サムネイル</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
         <source>Volume</source>
         <translation>ボリューム</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
         <source>Advanced</source>
         <translation>高度</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
         <source>Icons</source>
         <translation>アイコン</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
         <source>Size of big icons:</source>
         <translation>大きいアイコンの大きさ:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="542"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
         <source>Size of small icons:</source>
         <translation>小さいアイコンの大きさ:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
         <source>Size of thumbnails:</source>
         <translation>サムネイルの大きさ:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="544"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="550"/>
         <source>Size of side pane icons:</source>
         <translation>サイドペインのアイコンの大きさ</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="545"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
         <source>Icon theme:</source>
         <translation>アイコンテーマ:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
         <source>Window</source>
         <translation>ウインドウ</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="550"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
         <source>Default width of new windows:</source>
         <translation>新しいウインドウのデフォルト幅</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
         <source>Default height of new windows:</source>
         <translation>新しいウインドウのデフォルトの高さ</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
         <source>Always show the tab bar</source>
         <translation>タブバーを常に表示</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>閉じるボタンをタブに表示</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
         <source>Remember the size of the last closed window</source>
         <translation>直前に閉じたウインドウのサイズを記憶</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
         <source>Browsing</source>
         <translation>ブラウジング</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
         <source>Open files with single click</source>
         <translation>シングルクリックでファイルを開く</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
         <translation>シングルクリックモードでの自動選択の遅延時間(0で無効)</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
         <source>Default view mode:</source>
         <translation>デフォルトの表示モード</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
         <source> sec</source>
         <translation> 秒</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
         <source>File Operations</source>
         <translation>ファイル操作</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
         <source>Confirm before deleting files</source>
         <translation>ファイルを削除する前に確認</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation>ディスクから削除せずに&quot;ゴミ箱&quot;へ入れる</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="566"/>
         <source>Show thumbnails of files</source>
         <translation>ファイルのサムネイルを表示</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
         <source>Only show thumbnails for local files</source>
         <translation>ローカルファイルのみサムネイル表示</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>次のサイズを超える画像ファイルのサムネイルを生成しない:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
         <source>When removable medium unmounted:</source>
         <translation>リムーバブルメディアもアンマウントする際に:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="579"/>
+        <source>Switch &amp;user command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="582"/>
+        <source>Archiver in&amp;tegration:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Close tab containing removable medium</source>
-        <translation>リムーバブルメディアを表示しているタブを閉じる</translation>
+        <translation type="vanished">リムーバブルメディアを表示しているタブを閉じる</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
         <source>Change folder in the tab to home folder</source>
-        <translation>そのタブのフォルダーをホームフォルダーに移動</translation>
+        <translation type="vanished">そのタブのフォルダーをホームフォルダーに移動</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="578"/>
         <source>Terminal emulator:</source>
         <translation>端末エミュレーター:</translation>
     </message>
@@ -1098,27 +1106,37 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <translation type="vanished">次のサイズ(KB)を超えるファイルのサムネイルを生成しない:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
         <source>Auto Mount</source>
         <translation>自動マウント</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="571"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>プログラム開始時にマウント可能なボリュームをマウントする</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="566"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>リムーバブルメディアが接続された際に自動的にマウントする</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>リムーバブルメディアが接続された際に、可能な処理を表示する</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="571"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="575"/>
+        <source>Close &amp;tab containing removable medium</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
+        <source>Chan&amp;ge folder in the tab to home folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
         <source>Programs</source>
         <translation>プログラム</translation>
     </message>
@@ -1127,28 +1145,26 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <translation type="vanished">ディレクトリーで実行する端末エミュレーターのコマンド</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
         <source>Switch user command:</source>
-        <translation>ユーザーを切り替えるためのコマンド</translation>
+        <translation type="vanished">ユーザーを切り替えるためのコマンド</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="580"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>例: 端末に &quot;xterm -e %s&quot; 、ユーザー切替に &quot;gksu %s&quot;
 %s には、端末やsuで実行するコマンドが代入されます</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
         <source>Archiver integration:</source>
-        <translation>アーカイバー連係:</translation>
+        <translation type="vanished">アーカイバー連係:</translation>
     </message>
     <message>
         <source>Terminal emulator command for programs:</source>
         <translation type="vanished">プログラムを実行する端末エミュレーターのコマンド:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="583"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>IEC二進接頭辞の代わりに、SI十進接頭辞を用いる</translation>
     </message>

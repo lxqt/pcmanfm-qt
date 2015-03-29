@@ -857,7 +857,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Switch user command:</source>
-        <translation>Naudotojo perjungimo komanda:</translation>
+        <translation type="vanished">Naudotojo perjungimo komanda:</translation>
     </message>
     <message>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
@@ -867,7 +867,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Archiver integration:</source>
-        <translation>Archyvatoriaus integracija:</translation>
+        <translation type="vanished">Archyvatoriaus integracija:</translation>
     </message>
     <message>
         <source>Terminal emulator command for programs:</source>
@@ -894,14 +894,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Close tab containing removable medium</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Change folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -911,6 +903,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Remember the size of the last closed window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close &amp;tab containing removable medium</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Chan&amp;ge folder in the tab to home folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Switch &amp;user command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Archiver in&amp;tegration:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

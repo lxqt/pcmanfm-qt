@@ -50,6 +50,7 @@ inline static Fm::FolderModel::ColumnId sortColumnFromString(const QString str);
 
 Settings::Settings():
   QObject(),
+  supportTrash_(Fm::uriExists("trash:///")), // check if trash:/// is supported
   fallbackIconThemeName_(),
   useFallbackIconTheme_(QIcon::themeName().isEmpty() || QIcon::themeName() == "hicolor"),
   bookmarkOpenMethod_(0),
@@ -94,11 +95,6 @@ Settings::Settings():
   smallIconSize_(24),
   sidePaneIconSize_(24),
   thumbnailIconSize_(128) {
-
-  // check if trash:/// is supported
-  GFile* trash = g_file_new_for_uri("trash:///");
-  supportTrash_ = g_file_query_exists(trash, NULL);
-  g_object_unref(trash);
 }
 
 Settings::~Settings() {

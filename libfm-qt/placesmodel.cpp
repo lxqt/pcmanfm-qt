@@ -52,7 +52,7 @@ PlacesModel::PlacesModel(QObject* parent):
   createTrashItem();
 
   FmPath* path;
-  if(isUriSchemeSupported("computer")) {
+  if(uriExists("computer:///")) {
     path = fm_path_new_for_uri("computer:///");
     computerItem = new PlacesModelItem("computer", tr("Computer"), path);
     fm_path_unref(path);
@@ -70,7 +70,7 @@ PlacesModel::PlacesModel(QObject* parent):
   fm_icon_unref(fmicon);
   placesRoot->appendRow(applicationsItem);
 
-  if(isUriSchemeSupported("network")) {
+  if(uriExists("network:///")) {
     const char* network_icon_names[] = {"network", "folder-network", "folder"};
     // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
     gicon = g_themed_icon_new_from_names((char**)network_icon_names, G_N_ELEMENTS(network_icon_names));
