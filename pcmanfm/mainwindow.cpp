@@ -653,6 +653,9 @@ void MainWindow::onTabPageSortFilterChanged() {
 
   if(tabPage == currentPage()) {
     updateViewMenuForCurrentPage();
+    Settings& settings = static_cast<Application*>(qApp)->settings();
+    settings.setSortColumn(static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn()));
+    settings.setSortOrder(tabPage->sortOrder());
   }
 }
 

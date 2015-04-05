@@ -195,6 +195,11 @@ FolderViewTreeView::~FolderViewTreeView() {
 void FolderViewTreeView::setModel(QAbstractItemModel* model) {
   QTreeView::setModel(model);
   layoutColumns();
+  if(ProxyFolderModel* proxyModel = qobject_cast<ProxyFolderModel*>(model)) {
+    connect(proxyModel, &ProxyFolderModel::sortFilterChanged, this, &FolderViewTreeView::onSortFilterChanged,
+            Qt::UniqueConnection);
+    onSortFilterChanged();
+  }
 }
 
 void FolderViewTreeView::mousePressEvent(QMouseEvent* event) {
@@ -343,6 +348,16 @@ void FolderViewTreeView::mouseDoubleClickEvent(QMouseEvent* event) {
 void FolderViewTreeView::activation(const QModelIndex &index) {
   if (activationAllowed_) {
     Q_EMIT activatedFiltered(index);
+  }
+}
+
+void FolderViewTreeView::onSortFilterChanged() {
+  if(QSortFilterProxyModel* proxyModel = qobject_cast<QSortFilterProxyModel*>(model())) {
+    header()->setSortIndicatorShown(true);
+    header()->setSortIndicator(proxyModel->sortColumn(), proxyModel->sortOrder());
+    if (!isSortingEnabled()) {
+      setSortingEnabled(true);
+    }
   }
 }
 

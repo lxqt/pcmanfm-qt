@@ -94,6 +94,7 @@ Q_SIGNALS:
 private Q_SLOTS:
   void layoutColumns();
   void activation(const QModelIndex &index);
+  void onSortFilterChanged();
 
 private:
   bool doingLayout_;
