@@ -43,8 +43,6 @@ public:
 class LIBFM_QT_API ProxyFolderModel : public QSortFilterProxyModel {
   Q_OBJECT
 public:
-
-public:
   explicit ProxyFolderModel(QObject * parent = 0);
   virtual ~ProxyFolderModel();
 

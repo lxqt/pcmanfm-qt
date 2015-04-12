@@ -659,7 +659,6 @@ void Application::onScreenDestroyed(QObject* screenObj) {
   //
   // The workaround is very simple. Just completely destroy the window before Qt has a chance to do
   // QWindow::setScreen() for it. Later, we recreate the window ourselves. So this can bypassing the Qt bugs.
-  QScreen* screen = static_cast<QScreen*>(screenObj);
   if(enableDesktopManager_) {
     bool reloadNeeded = false;
     // FIXME: add workarounds for Qt5 bug #40681 and #40791 here.

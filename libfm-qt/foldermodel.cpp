@@ -95,7 +95,8 @@ void FolderModel::onStartLoading(FmFolder* folder, gpointer user_data) {
 }
 
 void FolderModel::onFinishLoading(FmFolder* folder, gpointer user_data) {
-  FolderModel* model = static_cast<FolderModel*>(user_data);
+  Q_UNUSED(folder)
+  Q_UNUSED(user_data)
 }
 
 void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_data) {
@@ -217,12 +218,10 @@ QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole
         case ColumnFileSize: {
           const char* name = fm_file_info_get_disp_size(info);
           return QString::fromUtf8(name);
-          break;
         }
         case ColumnFileOwner: {
           const char* name = fm_file_info_get_disp_owner(info);
           return QString::fromUtf8(name);
-          break;
         }
       }
     }

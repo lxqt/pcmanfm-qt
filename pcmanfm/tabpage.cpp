@@ -382,15 +382,13 @@ void TabPage::onSelChanged(int numSel) {
       fm_file_info_list_unref(files);
     }
     else {
-      FmFileInfoList* files;
       goffset sum;
       GList* l;
-      char size_str[128];
       msg = tr("%1 item(s) selected", NULL, numSel).arg(numSel);
       /* don't count if too many files are selected, that isn't lightweight */
       if(numSel < 1000) {
         sum = 0;
-        files = folderView_->selectedFiles();
+        FmFileInfoList* files = folderView_->selectedFiles();
         for(l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
           if(fm_file_info_is_dir(FM_FILE_INFO(l->data))) {
             /* if we got a directory then we cannot tell it's size
@@ -401,6 +399,7 @@ void TabPage::onSelChanged(int numSel) {
           sum += fm_file_info_get_size(FM_FILE_INFO(l->data));
         }
         if(sum >= 0) {
+          char size_str[128];
           fm_file_size_to_str(size_str, sizeof(size_str), sum,
                               fm_config->si_unit);
 	  msg += QString(" (%1)").arg(QString::fromUtf8(size_str));

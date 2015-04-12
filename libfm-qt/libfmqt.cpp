@@ -33,6 +33,7 @@ struct LibFmQtData {
   ThumbnailLoader* thumbnailLoader;
   QTranslator translator;
   int refCount;
+  Q_DISABLE_COPY(LibFmQtData)
 };
 
 static LibFmQtData* theLibFmData = NULL;

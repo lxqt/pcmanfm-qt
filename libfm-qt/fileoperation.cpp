@@ -86,6 +86,7 @@ FileOperation::~FileOperation() {
 }
 
 bool FileOperation::run() {
+  delete uiTimer;
   // run the job
   uiTimer = new QTimer();
   uiTimer->start(SHOW_DLG_DELAY);

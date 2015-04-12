@@ -696,7 +696,7 @@ FmFileInfoList* FolderView::selectedFiles() const {
     if(!selIndexes.isEmpty()) {
       FmFileInfoList* files = fm_file_info_list_new();
       QModelIndexList::const_iterator it;
-      for(it = selIndexes.constBegin(); it != selIndexes.constEnd(); it++) {
+      for(it = selIndexes.constBegin(); it != selIndexes.constEnd(); ++it) {
         FmFileInfo* file = model_->fileInfoFromIndex(*it);
         fm_file_info_list_push_tail(files, file);
       }
