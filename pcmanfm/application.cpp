@@ -699,7 +699,6 @@ void Application::onVirtualGeometryChanged(const QRect& rect) {
   // virtualGeometryChanged() is emitted correctly when the workAreas changed.
   // So we use it in Qt5.
   if(enableDesktopManager_) {
-    QScreen* screeb = static_cast<QScreen*>(sender());
     // qDebug() << "onVirtualGeometryChanged";
     Q_FOREACH(DesktopWindow* desktop, desktopWindows_) {
       desktop->queueRelayout();

@@ -267,12 +267,10 @@ void FolderViewTreeView::layoutColumns() {
       // even when we reduce the width of the filename column to 200,
       // the available space is not enough. So we give up trying.
       widths[filenameColumn] = 200;
-      desiredWidth += 200;
     }
     else { // we still have more space, so the width of filename column can be increased
       // expand the filename column to fill all available space.
       widths[filenameColumn] = availWidth - desiredWidth;
-      desiredWidth = availWidth;
     }
   }
 
@@ -920,8 +918,6 @@ void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
       }
     }
     else {
-      FmFolder* _folder = folder();
-      FmFileInfo* info = fm_folder_get_info(_folder);
       Fm::FolderMenu* folderMenu = new Fm::FolderMenu(this);
       prepareFolderMenu(folderMenu);
       menu = folderMenu;

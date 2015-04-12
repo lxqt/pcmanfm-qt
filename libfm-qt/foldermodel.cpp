@@ -119,7 +119,6 @@ void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_da
 //static
 void FolderModel::onFilesChanged(FmFolder* folder, GSList* files, gpointer user_data) {
   FolderModel* model = static_cast<FolderModel*>(user_data);
-  int n_files = g_slist_length(files);
   for(GSList* l = files; l; l = l->next) {
     FmFileInfo* info = FM_FILE_INFO(l->data);
     int row;

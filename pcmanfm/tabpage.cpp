@@ -342,7 +342,6 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
 
   if(addHistory) {
     // add current path to browse history
-    QAbstractItemView* childView = folderView_->childView();
     history_.add(path());
   }
 }

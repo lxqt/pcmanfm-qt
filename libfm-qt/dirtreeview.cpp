@@ -98,7 +98,7 @@ void DirTreeView::onRowLoaded(const QModelIndex& index) {
   /* disconnect the handler since we only need it once */
   disconnect(_model, &DirTreeModel::rowLoaded, this, &DirTreeView::onRowLoaded);
 
-  DirTreeModelItem* item = _model->itemFromIndex(index);
+  // DirTreeModelItem* item = _model->itemFromIndex(index);
   // qDebug() << "row loaded: " << item->displayName_;
   /* after the folder is loaded, the files should have been added to
     * the tree model */
@@ -122,7 +122,7 @@ void DirTreeView::setCurrentPath(FmPath* path) {
   if(!_model)
     return;
   int rowCount = _model->rowCount(QModelIndex());
-  if(rowCount == 0 || fm_path_equal(currentPath_, path))
+  if(rowCount <= 0 || fm_path_equal(currentPath_, path))
     return;
 
   if(currentPath_)

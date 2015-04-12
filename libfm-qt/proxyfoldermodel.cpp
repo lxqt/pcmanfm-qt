@@ -227,8 +227,8 @@ QVariant ProxyFolderModel::data(const QModelIndex& index, int role) const {
 
 void ProxyFolderModel::onThumbnailLoaded(const QModelIndex& srcIndex, int size) {
   
-  FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
-  FolderModelItem* item = srcModel->itemFromIndex(srcIndex);
+  // FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
+  // FolderModelItem* item = srcModel->itemFromIndex(srcIndex);
   // qDebug("ProxyFolderModel::onThumbnailLoaded: %d, %s", size, item->displayName.toUtf8().data());
   
   if(size == thumbnailSize_) { // if a thumbnail of the size we want is loaded

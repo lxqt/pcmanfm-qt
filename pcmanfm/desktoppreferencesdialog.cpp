@@ -158,7 +158,6 @@ void DesktopPreferencesDialog::accept() {
 }
 
 void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
-  int n = ui.wallpaperMode->count();
   int mode = ui.wallpaperMode->itemData(index).toInt();
 
   bool enable = (mode != DesktopWindow::WallpaperNone);

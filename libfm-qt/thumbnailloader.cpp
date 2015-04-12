@@ -82,7 +82,6 @@ bool ThumbnailLoader::localFilesOnly_ = true;
 int ThumbnailLoader::maxThumbnailFileSize_ = 0;
 
 ThumbnailLoader::ThumbnailLoader() {
-  gboolean success;
   // apply the settings to libfm
   fm_config->thumbnail_local = localFilesOnly_;
   fm_config->thumbnail_max = maxThumbnailFileSize_;
@@ -98,7 +97,7 @@ ThumbnailLoader::ThumbnailLoader() {
     getImageText,
     setImageText
   };
-  success = fm_thumbnail_loader_set_backend(&qt_backend);
+  gboolean success = fm_thumbnail_loader_set_backend(&qt_backend);
 }
 
 ThumbnailLoader::~ThumbnailLoader() {
