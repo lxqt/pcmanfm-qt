@@ -814,23 +814,23 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         <translation>Versão: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="810"/>
+        <location filename="../mainwindow.cpp" line="813"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mover para o lixo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="810"/>
+        <location filename="../mainwindow.cpp" line="813"/>
         <source>&amp;Delete</source>
         <translation>&amp;Eliminar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="872"/>
-        <location filename="../mainwindow.cpp" line="883"/>
+        <location filename="../mainwindow.cpp" line="875"/>
+        <location filename="../mainwindow.cpp" line="886"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="883"/>
+        <location filename="../mainwindow.cpp" line="886"/>
         <source>Switch user command is not set.</source>
         <translation>O comando para trocar de utilizador não está definido.</translation>
     </message>
@@ -891,7 +891,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="388"/>
+        <location filename="../tabpage.cpp" line="390"/>
         <source>%1 item(s) selected</source>
         <translation>%1 itens selecionados</translation>
     </message>
