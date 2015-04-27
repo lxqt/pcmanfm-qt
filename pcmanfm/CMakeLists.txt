@@ -26,6 +26,7 @@ set(pcmanfm_SRCS
     view.cpp
     launcher.cpp
     preferencesdialog.cpp
+    xdgdir.cpp
     desktoppreferencesdialog.cpp
     desktopwindow.cpp
     desktopitemdelegate.cpp
