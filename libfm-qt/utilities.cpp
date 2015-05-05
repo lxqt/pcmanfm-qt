@@ -313,6 +313,7 @@ bool isUriSchemeSupported(const char* uriScheme) {
 // NOTE: this is a blocking call possibly involving I/O.
 // So it's better to use it in limited cases, like checking trash:// or computer://.
 // Avoid calling this on a slow filesystem.
+// Checking "network:///" is very slow, for example.
 bool uriExists(const char* uri) {
   GFile* gf = g_file_new_for_uri(uri);
   bool ret = (bool)g_file_query_exists(gf, NULL);

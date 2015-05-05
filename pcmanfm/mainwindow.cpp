@@ -59,12 +59,16 @@ MainWindow::MainWindow(FmPath* path):
   ui.setupUi(this);
 
   // hide menu items that are not usable
-  if(!uriExists("computer:///"))
-    ui.actionComputer->setVisible(false);
+  //if(!uriExists("computer:///"))
+  //  ui.actionComputer->setVisible(false);
   if(!settings.supportTrash())
     ui.actionTrash->setVisible(false);
-  if(!uriExists("network:///"))
-    ui.actionNetwork->setVisible(false);
+
+  // FIXME: add an option to hide network:///
+  // We cannot use uriExists() here since calling this on "network:///"
+  // is very slow and blocking.
+  //if(!uriExists("network:///"))
+  //  ui.actionNetwork->setVisible(false);
 
   // add a context menu for showing browse history to back and forward buttons
   QToolButton* forwardButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoForward));
