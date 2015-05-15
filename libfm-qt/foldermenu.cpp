@@ -267,14 +267,14 @@ void FolderMenu::onCreateNewFile() {
   FmPath* dirPath = view_->path();
 
   if(dirPath)
-    createFile(CreateNewTextFile, dirPath);
+    createFileOrFolder(CreateNewTextFile, dirPath);
 }
 
 void FolderMenu::onCreateNewFolder() {
   FmPath* dirPath = view_->path();
 
   if(dirPath)
-    createFile(CreateNewFolder, dirPath);
+    createFileOrFolder(CreateNewFolder, dirPath);
 }
 
 void FolderMenu::onCreateNew() {
@@ -292,7 +292,7 @@ void FolderMenu::onCreateNew() {
   if(templ) { // template found
     FmPath* dirPath = view_->path();
     if(dirPath)
-      createFile(CreateWithTemplate, dirPath, templ, view_);
+      createFileOrFolder(CreateWithTemplate, dirPath, templ, view_);
   }
 }
 

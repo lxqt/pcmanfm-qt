@@ -276,6 +276,24 @@ void MainWindow::on_actionNewWin_triggered() {
   newWin->show();
 }
 
+void MainWindow::on_actionNewFolder_triggered() {
+  if(TabPage* tabPage = currentPage()) {
+    FmPath* dirPath = tabPage->folderView()->path();
+
+    if(dirPath)
+      createFileOrFolder(CreateNewFolder, dirPath);
+  }
+}
+
+void MainWindow::on_actionNewBlankFile_triggered() {
+  if(TabPage* tabPage = currentPage()) {
+    FmPath* dirPath = tabPage->folderView()->path();
+
+    if(dirPath)
+      createFileOrFolder(CreateNewTextFile, dirPath);
+  }
+}
+
 void MainWindow::on_actionCloseTab_triggered() {
   closeTab(ui.tabBar->currentIndex());
 }

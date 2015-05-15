@@ -74,8 +74,17 @@
     <property name="title">
      <string>&amp;File</string>
     </property>
+    <widget class="QMenu" name="menuCreateNew">
+     <property name="title">
+      <string>C&amp;reate New</string>
+     </property>
+     <addaction name="actionNewFolder"/>
+     <addaction name="actionNewBlankFile"/>
+    </widget>
     <addaction name="actionNewTab"/>
     <addaction name="actionNewWin"/>
+    <addaction name="separator"/>
+    <addaction name="menuCreateNew"/>
     <addaction name="separator"/>
     <addaction name="actionFileProperties"/>
     <addaction name="actionFolderProperties"/>
@@ -626,6 +635,25 @@
   <action name="actionEditBookmarks">
    <property name="text">
     <string>&amp;Edit Bookmarks</string>
+   </property>
+  </action>
+  <action name="actionNewFolder">
+   <property name="icon">
+    <iconset theme="folder-new"/>
+   </property>
+   <property name="text">
+    <string>Folder</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="actionNewBlankFile">
+   <property name="text">
+    <string>Blank File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+N</string>
    </property>
   </action>
  </widget>
