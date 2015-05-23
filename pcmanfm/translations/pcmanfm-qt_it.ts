@@ -168,27 +168,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="298"/>
         <source>Window Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestore finestre</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="299"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Mostra menu forniti dai gestori finestre quando si fa clic sulla Scrivania</translation>
+        <translation>Mostra il menu forniti dal gestore finestre quando si fa clic sulla scrivania</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="300"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Scrivania</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="301"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cartella scrivania:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="308"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Percorso</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="310"/>
@@ -266,7 +266,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="517"/>
         <source>Show &amp;Hidden</source>
-        <translation>Mostra &amp;nascosti</translation>
+        <translation>Mostra file &amp;nascosti</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="518"/>
@@ -680,7 +680,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="156"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Cartelle o file da aprire</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="402"/>
@@ -710,32 +710,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="93"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="46"/>
         <source>Fill with background color only</source>
         <translation>Riempi solo con il colore di sfondo</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="94"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="47"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Allarga per riempire tutto lo schermo</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="95"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="48"/>
         <source>Stretch to fit the screen</source>
-        <translation>Restringe per adattare allo schermo</translation>
+        <translation>Restringi per adattare allo schermo</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="96"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="49"/>
         <source>Center on the screen</source>
         <translation>Centra nello schermo</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="97"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Ripete l&apos;immagine per riempire tutto lo schermo</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="176"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="129"/>
         <source>Image Files</source>
         <translation>File immagine</translation>
     </message>
@@ -743,12 +743,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="364"/>
+        <location filename="../desktopwindow.cpp" line="366"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Blo&amp;cca alla posizione attuale</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="386"/>
+        <location filename="../desktopwindow.cpp" line="388"/>
         <source>Desktop Preferences</source>
         <translation>Preferenze scrivania</translation>
     </message>
@@ -758,7 +758,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="408"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versione:%1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="817"/>
@@ -821,7 +821,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../tabpage.cpp" line="238"/>
         <source>%n item(s)</source>
         <translation>
-            <numerusform>%n oggetto</numerusform>
+            <numerusform>%n oggetto/i</numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -836,7 +836,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../tabpage.cpp" line="390"/>
         <source>%1 item(s) selected</source>
-        <translation>%1 elemento selezionato</translation>
+        <translation>%1 elementi selezionati</translation>
     </message>
 </context>
 <context>
@@ -947,7 +947,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ricorda dimensione della ultima finestra chiusa</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
@@ -962,7 +962,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ritardo per l&apos;auto-selezione in modalità click singolo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
@@ -972,7 +972,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation>secondi</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
@@ -1032,27 +1032,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>Quando viene smontato un volume rimovibile:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="575"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudi &amp;scheda con il contenuto</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambia in cartella &amp;home</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="579"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Comando per cambiare utente:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="582"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestore archivi da usare:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
