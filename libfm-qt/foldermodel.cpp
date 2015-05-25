@@ -233,6 +233,7 @@ QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole
         return QVariant(item->icon);
         // return QVariant(pix);
       }
+      break;
     }
     case FileInfoRole:
       return qVariantFromValue((void*)info);
