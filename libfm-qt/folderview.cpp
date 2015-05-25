@@ -292,7 +292,13 @@ void FolderViewTreeView::layoutColumns() {
 
 void FolderViewTreeView::resizeEvent(QResizeEvent* event) {
   QAbstractItemView::resizeEvent(event);
-  if(!doingLayout_) // prevent endless recursion.
+  // prevent endless recursion.
+  // When manually resizing columns, at the point where a horizontal scroll
+  // bar has to be inserted or removed, the vertical size changes, a resize
+  // event  occurs and the column headers are flickering badly if the column
+  // layout is modified at this point. Therefore only layout the columns if
+  // the horizontal size changes.
+  if(!doingLayout_ && event->size().width() != event->oldSize().width())
     layoutColumns(); // layoutColumns() also triggers resizeEvent
 }
 
