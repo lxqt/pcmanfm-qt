@@ -330,6 +330,7 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
   proxyModel_->setSourceModel(folderModel_);
   proxyModel_->sort(proxyModel_->sortColumn(), proxyModel_->sortOrder());
   Settings& settings = static_cast<Application*>(qApp)->settings();
+  proxyModel_->setFolderFirst(settings.sortFolderFirst());
   proxyModel_->sort(settings.sortColumn(), settings.sortOrder());
 
   if(fm_folder_is_loaded(folder_)) {

@@ -330,6 +330,14 @@ public:
     sortColumn_ = sortColumn;
   }
 
+  bool sortFolderFirst() const {
+    return sortFolderFirst_;
+  }
+
+  void setSortFolderFirst(bool folderFirst) {
+    sortFolderFirst_ = folderFirst;
+  }
+
   // settings for use with libfm
   bool singleClick() const {
     return singleClick_;
@@ -485,6 +493,7 @@ private:
   bool showHidden_;
   Qt::SortOrder sortOrder_;
   Fm::FolderModel::ColumnId sortColumn_;
+  bool sortFolderFirst_;
 
   // settings for use with libfm
   bool singleClick_;

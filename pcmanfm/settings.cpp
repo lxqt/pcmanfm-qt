@@ -82,6 +82,7 @@ Settings::Settings():
   showHidden_(false),
   sortOrder_(Qt::AscendingOrder),
   sortColumn_(Fm::FolderModel::ColumnFileName),
+  sortFolderFirst_(true),
   // settings for use with libfm
   singleClick_(false),
   autoSelectionDelay_(600),
@@ -199,6 +200,7 @@ bool Settings::loadFile(QString filePath) {
   showHidden_ = settings.value("ShowHidden", false).toBool();
   sortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
   sortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
+  sortFolderFirst_ = settings.value("SortFolderFirst", true).toBool();
 
   // override config in libfm's FmConfig
   bigIconSize_ = settings.value("BigIconSize", 48).toInt();
@@ -277,6 +279,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("ShowHidden", showHidden_);
   settings.setValue("SortOrder", sortOrderToString(sortOrder_));
   settings.setValue("SortColumn", sortColumnToString(sortColumn_));
+  settings.setValue("SortFolderFirst", sortFolderFirst_);
 
   // override config in libfm's FmConfig
   settings.setValue("BigIconSize", bigIconSize_);

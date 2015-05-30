@@ -122,7 +122,7 @@ bool ProxyFolderModel::lessThan(const QModelIndex& left, const QModelIndex& righ
       bool leftIsFolder = (bool)fm_file_info_is_dir(leftInfo);
       bool rightIsFolder = (bool)fm_file_info_is_dir(rightInfo);
       if(leftIsFolder != rightIsFolder)
-        return leftIsFolder ? true : false;
+        return sortOrder() == Qt::AscendingOrder ? leftIsFolder : rightIsFolder;
     }
 
     switch(sortColumn()) {
