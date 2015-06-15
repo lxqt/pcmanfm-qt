@@ -771,32 +771,32 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="93"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="46"/>
         <source>Fill with background color only</source>
         <translation>Remplir seulement avec la couleur d&apos;arrière-plan</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="94"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="47"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Étirer pour remplir l&apos;écran entier</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="95"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="48"/>
         <source>Stretch to fit the screen</source>
         <translation>Étirer pour remplir l&apos;écran</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="96"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="49"/>
         <source>Center on the screen</source>
         <translation>Centrer sur l’écran</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="97"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Faire une mosaïque avec l&apos;image pour remplir l&apos;écran entier</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="176"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="129"/>
         <source>Image Files</source>
         <translation>Fichiers image</translation>
     </message>
@@ -804,12 +804,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="364"/>
+        <location filename="../desktopwindow.cpp" line="366"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Res&amp;ter à la position actuelle</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="386"/>
+        <location filename="../desktopwindow.cpp" line="388"/>
         <source>Desktop Preferences</source>
         <translation>Préférences du bureau</translation>
     </message>
@@ -822,23 +822,23 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="817"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mettre à la corbeille</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="817"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>&amp;Delete</source>
         <translation>&amp;Supprimer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="879"/>
-        <location filename="../mainwindow.cpp" line="890"/>
+        <location filename="../mainwindow.cpp" line="874"/>
+        <location filename="../mainwindow.cpp" line="885"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="890"/>
+        <location filename="../mainwindow.cpp" line="885"/>
         <source>Switch user command is not set.</source>
         <translation>La commande de changement d’utilisateur n&apos;est pas configurée.</translation>
     </message>
@@ -895,7 +895,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="390"/>
+        <location filename="../tabpage.cpp" line="391"/>
         <source>%1 item(s) selected</source>
         <translation>%1 élément(s) sélectionné(s)</translation>
     </message>

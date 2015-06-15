@@ -177,6 +177,13 @@ MainWindow::MainWindow(FmPath* path):
 
   if(path)
     addTab(path);
+
+  // size from settings
+  if(settings.rememberWindowSize()) {
+    resize(settings.windowWidth(), settings.windowHeight());
+    if(settings.windowMaximized())
+      setWindowState(windowState() | Qt::WindowMaximized);
+  }
 }
 
 MainWindow::~MainWindow() {
@@ -266,14 +273,7 @@ void MainWindow::on_actionNewTab_triggered() {
 
 void MainWindow::on_actionNewWin_triggered() {
   FmPath* path = currentPage()->path();
-  Application* app = static_cast<Application*>(qApp);
-  MainWindow* newWin = new MainWindow(path);
-  newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
-
-  if(app->settings().windowMaximized())
-  	newWin->setWindowState(newWin->windowState() | Qt::WindowMaximized);
-
-  newWin->show();
+  (new MainWindow(path))->show();
 }
 
 void MainWindow::on_actionNewFolder_triggered() {
@@ -656,15 +656,7 @@ void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
     break;
 
   case View::OpenInNewWindow: {
-    Application* app = static_cast<Application*>(qApp);
-    MainWindow* newWin = new MainWindow(path);
-    // TODO: apply window size from app->settings
-    newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
-
-    if(app->settings().windowMaximized())
-        newWin->setWindowState(newWin->windowState() | Qt::WindowMaximized);
-
-    newWin->show();
+    (new MainWindow(path))->show();
     break;
   }
   }
@@ -689,6 +681,8 @@ void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {
     chdir(path);
   else if(type == 1) // middle button
     addTab(path);
+  else if(type == 2) // new window
+    (new MainWindow(path))->show();
 }
 
 void MainWindow::onSplitterMoved(int pos, int index) {

@@ -59,6 +59,9 @@ protected Q_SLOTS:
   void onPressed(const QModelIndex & index);
   // void onMountOperationFinished(GError* error);
 
+  void onOpenNewTab();
+  void onOpenNewWindow();
+
   void onEmptyTrash();
 
   void onMountVolume();
@@ -66,6 +69,8 @@ protected Q_SLOTS:
   void onEjectVolume();
   void onUnmountMount();
 
+  void onMoveBookmarkUp();
+  void onMoveBookmarkDown();
   void onDeleteBookmark();
   void onRenameBookmark();
 

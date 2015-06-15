@@ -706,32 +706,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="93"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="46"/>
         <source>Fill with background color only</source>
         <translation>Wypełnienie kolorem</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="94"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="47"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Rozciągnięcie do rozmiaru ekranu </translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="95"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="48"/>
         <source>Stretch to fit the screen</source>
         <translation>Dopasowanie do rozmiaru ekranu</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="96"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="49"/>
         <source>Center on the screen</source>
         <translation>Wyśrodkowanie</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="97"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Sąsiadująco</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="176"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="129"/>
         <source>Image Files</source>
         <translation>Pliki obrazków</translation>
     </message>
@@ -739,12 +739,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="364"/>
+        <location filename="../desktopwindow.cpp" line="366"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Przyp&amp;nij do aktualnej pozycji</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="386"/>
+        <location filename="../desktopwindow.cpp" line="388"/>
         <source>Desktop Preferences</source>
         <translation>Ustawienia pulpitu</translation>
     </message>
@@ -757,23 +757,23 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Wersja: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="817"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Przenieś do kosza</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="817"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>&amp;Delete</source>
         <translation>&amp;Usuń</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="879"/>
-        <location filename="../mainwindow.cpp" line="890"/>
+        <location filename="../mainwindow.cpp" line="874"/>
+        <location filename="../mainwindow.cpp" line="885"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="890"/>
+        <location filename="../mainwindow.cpp" line="885"/>
         <source>Switch user command is not set.</source>
         <translation>Nie ustawiono polecenia do przełączania użytkowników.</translation>
     </message>
@@ -832,7 +832,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="390"/>
+        <location filename="../tabpage.cpp" line="391"/>
         <source>%1 item(s) selected</source>
         <translation>Zaznaczono %1 elementy</translation>
     </message>

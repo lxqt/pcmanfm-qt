@@ -705,32 +705,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="93"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="46"/>
         <source>Fill with background color only</source>
         <translation>Kitöltés csak háttérszínnel </translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="94"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="47"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Kitöltve</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="95"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="48"/>
         <source>Stretch to fit the screen</source>
         <translation>Nyújtva</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="96"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="49"/>
         <source>Center on the screen</source>
         <translation>Középre</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="97"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Csempézve</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="176"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="129"/>
         <source>Image Files</source>
         <translation>Képfájlok</translation>
     </message>
@@ -738,12 +738,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="364"/>
+        <location filename="../desktopwindow.cpp" line="366"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Pozíció megjegyzése</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="386"/>
+        <location filename="../desktopwindow.cpp" line="388"/>
         <source>Desktop Preferences</source>
         <translation>Asztalbeállítások</translation>
     </message>
@@ -751,28 +751,28 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="404"/>
+        <location filename="../mainwindow.cpp" line="408"/>
         <source>Version: %1</source>
         <translation>Verzió: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="810"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Kukába</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="810"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>&amp;Delete</source>
         <translation>&amp;Töröl</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="871"/>
-        <location filename="../mainwindow.cpp" line="882"/>
+        <location filename="../mainwindow.cpp" line="874"/>
+        <location filename="../mainwindow.cpp" line="885"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="882"/>
+        <location filename="../mainwindow.cpp" line="885"/>
         <source>Switch user command is not set.</source>
         <translation>A felhasználót váltó alkalmazás beállítatlan.</translation>
     </message>
@@ -827,7 +827,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="388"/>
+        <location filename="../tabpage.cpp" line="391"/>
         <source>%1 item(s) selected</source>
         <translation>%1 elem választva</translation>
     </message>
@@ -853,219 +853,235 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PreferencesDialog</name>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="524"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="530"/>
         <source>Preferences</source>
         <translation>Beállítások</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="529"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
         <source>User Interface</source>
         <translation>Felhasználói felület</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="531"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
         <source>Behavior</source>
         <translation>Viselkedés</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="533"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="539"/>
         <source>Thumbnail</source>
         <translation>Bélyegkép</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="535"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
         <source>Volume</source>
         <translation>Adathordozó</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="537"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
         <source>Advanced</source>
         <translation>Haladó</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="540"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
         <source>Icons</source>
         <translation>Ikonok</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="541"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
         <source>Size of big icons:</source>
         <translation>Nagy méret:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="542"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
         <source>Size of small icons:</source>
         <translation>Kicsi méret:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="543"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
         <source>Size of thumbnails:</source>
         <translation>Bélyegképméret:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="544"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="550"/>
         <source>Size of side pane icons:</source>
         <translation>Oldalsáv ikonméret:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="545"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
         <source>Icon theme:</source>
         <translation>Ikon téma:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="546"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
         <source>Window</source>
         <translation>Ablak</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="550"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
         <source>Default width of new windows:</source>
         <translation>Új ablak alapszélessége:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="551"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
         <source>Default height of new windows:</source>
         <translation>Új ablak alapmagassága:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="547"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
         <source>Always show the tab bar</source>
         <translation>Fülsáv mindig látható</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="548"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>&apos;Bezár&apos;gomb a fülön látszik</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="549"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
         <source>Remember the size of the last closed window</source>
         <translation>Utoljára bezárt ablak méretének megjegyzése</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="552"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
         <source>Browsing</source>
         <translation>Böngészés</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="553"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
         <source>Open files with single click</source>
         <translation>Megnyitás egy kattintásra</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="554"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
         <translation>Egykattintásos megnyitási módban az automata kiválasztás késleltetése (0 tilt)</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="555"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
         <source>Default view mode:</source>
         <translation>Alapértelmezett nézet:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="556"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
         <source> sec</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="557"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
         <source>File Operations</source>
         <translation>Fájlkezelések</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="558"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
         <source>Confirm before deleting files</source>
         <translation>Törlés előtti megerősítés</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="559"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation>Törölt fájlok lemezről törlés helyett a kukába  a kukába mennek.</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="560"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="566"/>
         <source>Show thumbnails of files</source>
         <translation>Fájloknál</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="561"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
         <source>Only show thumbnails for local files</source>
         <translation>Csak helyi fájloknál</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="562"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Nincs, ha a fájl ennél nagyobb:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
         <source> KB</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
         <source>Auto Mount</source>
         <translation>Automata csatolás</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="565"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="571"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Csatolható eszközök automata csatolása induláskor</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="566"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Cserélhető adathordozók automata csatolása behelyezéskor</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="567"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Cserélhető adathordozók behelyezéskor választás felkínálása</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="568"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
         <source>When removable medium unmounted:</source>
         <translation>Cserélhető adathordozó lecsatolásakor:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="569"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="575"/>
+        <source>Close &amp;tab containing removable medium</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
+        <source>Chan&amp;ge folder in the tab to home folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="579"/>
+        <source>Switch &amp;user command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="582"/>
+        <source>Archiver in&amp;tegration:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Close tab containing removable medium</source>
-        <translation>Cserélhető adathordozó fülének bezárása</translation>
+        <translation type="vanished">Cserélhető adathordozó fülének bezárása</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="570"/>
         <source>Change folder in the tab to home folder</source>
-        <translation>A fül a saját mappát fogja mutatni</translation>
+        <translation type="vanished">A fül a saját mappát fogja mutatni</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="571"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
         <source>Programs</source>
         <translation>Programok</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="572"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="578"/>
         <source>Terminal emulator:</source>
         <translation>Terminálemulátor:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="573"/>
         <source>Switch user command:</source>
-        <translation>Felhasználó váltási parancs:</translation>
+        <translation type="vanished">Felhasználó váltási parancs:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="580"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Példa: &quot;xterm -e %s&quot; terminálhoz &quot;gksu %s&quot; felhasználóváltáshoz.
 %s = A parancs, mely terminálhoz, vagy rendszergazdakénti végrehajtáshoz kell.</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
         <source>Archiver integration:</source>
-        <translation>Csomagoló beépítés:</translation>
+        <translation type="vanished">Csomagoló beépítés:</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="577"/>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="583"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation></translation>
     </message>

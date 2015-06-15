@@ -761,23 +761,23 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Versione:%1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="817"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>&amp;Move to Trash</source>
         <translation>Cestin&amp;a</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="817"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>&amp;Delete</source>
         <translation>&amp;Rimuovi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="879"/>
-        <location filename="../mainwindow.cpp" line="890"/>
+        <location filename="../mainwindow.cpp" line="874"/>
+        <location filename="../mainwindow.cpp" line="885"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="890"/>
+        <location filename="../mainwindow.cpp" line="885"/>
         <source>Switch user command is not set.</source>
         <translation>Il comando per cambiare utente non è impostato.</translation>
     </message>
@@ -834,7 +834,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="390"/>
+        <location filename="../tabpage.cpp" line="391"/>
         <source>%1 item(s) selected</source>
         <translation>%1 elementi selezionati</translation>
     </message>

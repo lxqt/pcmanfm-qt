@@ -193,6 +193,38 @@ void PlacesView::onEmptyTrash() {
   fm_path_list_unref(files);
 }
 
+void PlacesView::onMoveBookmarkUp()
+{
+  PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
+  if(!action->index().isValid())
+    return;
+  PlacesModelBookmarkItem* item = static_cast<PlacesModelBookmarkItem*>(model_->itemFromIndex(action->index()));
+
+  int row = item->row();
+  if(row > 0) {
+    FmBookmarkItem* bookmarkItem = item->bookmark();
+    FmBookmarks* bookmarks = fm_bookmarks_dup();
+    fm_bookmarks_reorder(bookmarks, bookmarkItem, row - 1);
+    g_object_unref(bookmarks);
+  }
+}
+
+void PlacesView::onMoveBookmarkDown()
+{
+  PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
+  if(!action->index().isValid())
+    return;
+  PlacesModelBookmarkItem* item = static_cast<PlacesModelBookmarkItem*>(model_->itemFromIndex(action->index()));
+
+  int row = item->row();
+  if(row < model_->rowCount()) {
+    FmBookmarkItem* bookmarkItem = item->bookmark();
+    FmBookmarks* bookmarks = fm_bookmarks_dup();
+    fm_bookmarks_reorder(bookmarks, bookmarkItem, row + 1);
+    g_object_unref(bookmarks);
+  }
+}
+
 void PlacesView::onDeleteBookmark() {
   PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
   if(!action->index().isValid())
@@ -213,6 +245,26 @@ void PlacesView::commitData(QWidget * editor) {
   // rename bookmark
   fm_bookmarks_rename(bookmarks, bookmarkItem, item->text().toUtf8().constData());
   g_object_unref(bookmarks);
+}
+
+void PlacesView::onOpenNewTab()
+{
+  PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
+  if(!action->index().isValid())
+      return;
+  PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(action->index()));
+  if(item)
+    Q_EMIT chdirRequested(1, item->path());
+}
+
+void PlacesView::onOpenNewWindow()
+{
+  PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
+  if(!action->index().isValid())
+      return;
+  PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(action->index()));
+  if(item)
+    Q_EMIT chdirRequested(2, item->path());
 }
 
 void PlacesView::onRenameBookmark() {
@@ -270,14 +322,25 @@ void PlacesView::onEjectVolume() {
 void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
   QModelIndex index = indexAt(event->pos());
   if(index.isValid() && index.parent().isValid()) {
-    QMenu* menu = NULL;
+    QMenu* menu = new QMenu(this);
     QAction* action;
     PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(index));
+
+    if(item->type() != PlacesModelItem::Mount
+        && (item->type() != PlacesModelItem::Volume
+        || static_cast<PlacesModelVolumeItem*>(item)->isMounted())) {
+      action = new PlacesModel::ItemAction(item->index(), tr("Open in New Tab"), menu);
+      connect(action, &QAction::triggered, this, &PlacesView::onOpenNewTab);
+      menu->addAction(action);
+      action = new PlacesModel::ItemAction(item->index(), tr("Open in New Window"), menu);
+      connect(action, &QAction::triggered, this, &PlacesView::onOpenNewWindow);
+      menu->addAction(action);
+    }
+
     switch(item->type()) {
       case PlacesModelItem::Places: {
         FmPath* path = item->path();
         if(path && fm_path_equal(fm_path_get_trash(), path)) {
-          menu = new QMenu(this);
           action = new PlacesModel::ItemAction(item->index(), tr("Empty Trash"), menu);
           connect(action, &QAction::triggered, this, &PlacesView::onEmptyTrash);
           menu->addAction(action);
@@ -286,18 +349,26 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
       }
       case PlacesModelItem::Bookmark: {
         // create context menu for bookmark item
-        menu = new QMenu(this);
-        action = new PlacesModel::ItemAction(item->index(), tr("Rename"), menu);
+        if(item->index().row() > 0) {
+          action = new PlacesModel::ItemAction(item->index(), tr("Move Bookmark Up"), menu);
+          connect(action, &QAction::triggered, this, &PlacesView::onMoveBookmarkUp);
+          menu->addAction(action);
+        }
+        if(item->index().row() < model_->rowCount()) {
+          action = new PlacesModel::ItemAction(item->index(), tr("Move Bookmark Down"), menu);
+          connect(action, &QAction::triggered, this, &PlacesView::onMoveBookmarkDown);
+          menu->addAction(action);
+        }
+        action = new PlacesModel::ItemAction(item->index(), tr("Rename Bookmark"), menu);
         connect(action, &QAction::triggered, this, &PlacesView::onRenameBookmark);
         menu->addAction(action);
-        action = new PlacesModel::ItemAction(item->index(), tr("Delete"), menu);
+        action = new PlacesModel::ItemAction(item->index(), tr("Remove Bookmark"), menu);
         connect(action, &QAction::triggered, this, &PlacesView::onDeleteBookmark);
         menu->addAction(action);
         break;
       }
       case PlacesModelItem::Volume: {
         PlacesModelVolumeItem* volumeItem = static_cast<PlacesModelVolumeItem*>(item);
-        menu = new QMenu(this);
 
         if(volumeItem->isMounted()) {
           action = new PlacesModel::ItemAction(item->index(), tr("Unmount"), menu);
@@ -317,16 +388,17 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
         break;
       }
       case PlacesModelItem::Mount: {
-        menu = new QMenu(this);
         action = new PlacesModel::ItemAction(item->index(), tr("Unmount"), menu);
         connect(action, &QAction::triggered, this, &PlacesView::onUnmountMount);
         menu->addAction(action);
         break;
       }
     }
-    if(menu) {
+    if(menu->actions().size()) {
       menu->popup(mapToGlobal(event->pos()));
       connect(menu, &QMenu::aboutToHide, menu, &QMenu::deleteLater);
+    } else {
+        menu->deleteLater();
     }
   }
 }
