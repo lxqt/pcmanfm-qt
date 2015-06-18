@@ -39,7 +39,7 @@ public:
   virtual ~PreferencesDialog();
 
   virtual void accept();
-  
+
 private:
   void initIconThemes(Settings& settings);
   void initArchivers(Settings& settings);

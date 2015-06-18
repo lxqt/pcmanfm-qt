@@ -33,7 +33,7 @@ struct _FmFileActionItem;
 namespace Fm {
 
 class FileLauncher;
-  
+
 class LIBFM_QT_API FileMenu : public QMenu {
 Q_OBJECT
 
@@ -45,9 +45,9 @@ public:
   bool useTrash() {
     return useTrash_;
   }
-  
+
   void setUseTrash(bool trash);
-  
+
   bool confirmDelete() {
     return confirmDelete_;
   }
@@ -55,53 +55,53 @@ public:
   void setConfirmDelete(bool confirm) {
     confirmDelete_ = confirm;
   }
-  
+
   QAction* openAction() {
-    return openAction_;  
+    return openAction_;
   }
 
   QAction* openWithMenuAction() {
-    return openWithMenuAction_;  
+    return openWithMenuAction_;
   }
 
   QAction* openWithAction() {
-    return openWithAction_;  
+    return openWithAction_;
   }
-  
+
   QAction* separator1() {
-    return separator1_;  
+    return separator1_;
   }
 
   QAction* cutAction() {
-    return cutAction_;  
+    return cutAction_;
   }
 
   QAction* copyAction() {
-    return copyAction_;  
+    return copyAction_;
   }
 
   QAction* pasteAction() {
     return pasteAction_;
   }
-  
+
   QAction* deleteAction() {
-    return deleteAction_;  
+    return deleteAction_;
   }
 
   QAction* unTrashAction() {
-    return unTrashAction_;  
+    return unTrashAction_;
   }
 
   QAction* renameAction() {
-    return renameAction_;  
+    return renameAction_;
   }
 
   QAction* separator2() {
-    return separator2_;  
+    return separator2_;
   }
 
   QAction* propertiesAction() {
-    return propertiesAction_;  
+    return propertiesAction_;
   }
 
   FmFileInfoList* files() {
@@ -115,7 +115,7 @@ public:
   FmPath* cwd() {
     return cwd_;
   }
-  
+
   void setFileLauncher(FileLauncher* launcher) {
     fileLauncher_ = launcher;
   }
@@ -139,7 +139,7 @@ public:
   bool allTrash() const {
     return allTrash_;
   }
-  
+
 protected:
   void createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd);
 #ifdef CUSTOM_ACTIONS
@@ -158,7 +158,7 @@ protected Q_SLOTS:
   void onCompress();
   void onExtract();
   void onExtractHere();
-  
+
   void onCutTriggered();
   void onCopyTriggered();
   void onPasteTriggered();

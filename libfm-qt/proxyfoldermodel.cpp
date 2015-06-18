@@ -117,7 +117,7 @@ bool ProxyFolderModel::lessThan(const QModelIndex& left, const QModelIndex& righ
   if(srcModel) {
     FmFileInfo* leftInfo = srcModel->fileInfoFromIndex(left);
     FmFileInfo* rightInfo = srcModel->fileInfoFromIndex(right);
-    
+
     if(folderFirst_) {
       bool leftIsFolder = (bool)fm_file_info_is_dir(leftInfo);
       bool rightIsFolder = (bool)fm_file_info_is_dir(rightInfo);
@@ -205,7 +205,7 @@ void ProxyFolderModel::setThumbnailSize(int size) {
       // reload all items, FIXME: can we only update items previously having thumbnails
       Q_EMIT dataChanged(index(0, 0), index(rowCount() - 1, 0));
     }
-    
+
     thumbnailSize_ = size;
   }
 }
@@ -226,11 +226,11 @@ QVariant ProxyFolderModel::data(const QModelIndex& index, int role) const {
 }
 
 void ProxyFolderModel::onThumbnailLoaded(const QModelIndex& srcIndex, int size) {
-  
+
   FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
   FolderModelItem* item = srcModel->itemFromIndex(srcIndex);
   // qDebug("ProxyFolderModel::onThumbnailLoaded: %d, %s", size, item->displayName.toUtf8().data());
-  
+
   if(size == thumbnailSize_) { // if a thumbnail of the size we want is loaded
     QModelIndex index = mapFromSource(srcIndex);
     Q_EMIT dataChanged(index, index);
@@ -246,7 +246,7 @@ void ProxyFolderModel::addFilter(ProxyFolderModelFilter* filter) {
 void ProxyFolderModel::removeFilter(ProxyFolderModelFilter* filter) {
   filters_.removeOne(filter);
   invalidateFilter();
-  Q_EMIT sortFilterChanged();  
+  Q_EMIT sortFilterChanged();
 }
 
 

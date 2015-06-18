@@ -31,7 +31,7 @@ class QItemSelection;
 namespace Fm {
 
 class DirTreeModelItem;
-  
+
 class LIBFM_QT_API DirTreeView : public QTreeView {
   Q_OBJECT
 

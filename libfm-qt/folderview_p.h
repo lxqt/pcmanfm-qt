@@ -45,7 +45,7 @@ public:
   virtual void dragMoveEvent(QDragMoveEvent* e);
   virtual void dragLeaveEvent(QDragLeaveEvent* e);
   virtual void dropEvent(QDropEvent* e);
-  
+
   virtual QModelIndex indexAt(const QPoint & point) const;
 
   inline void setPositionForIndex(const QPoint & position, const QModelIndex & index) {
@@ -80,7 +80,7 @@ public:
   virtual void dragMoveEvent(QDragMoveEvent* e);
   virtual void dragLeaveEvent(QDragLeaveEvent* e);
   virtual void dropEvent(QDropEvent* e);
-  
+
   virtual void rowsInserted(const QModelIndex& parent,int start, int end);
   virtual void rowsAboutToBeRemoved(const QModelIndex& parent,int start, int end);
   virtual void dataChanged(const QModelIndex& topLeft, const QModelIndex& bottomRight);

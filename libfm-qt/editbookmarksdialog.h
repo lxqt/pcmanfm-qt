@@ -42,7 +42,7 @@ public:
 private Q_SLOTS:
   void onAddItem();
   void onRemoveItem();
-  
+
 private:
   Ui::EditBookmarksDialog* ui;
   FmBookmarks* bookmarks_;

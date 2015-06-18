@@ -44,7 +44,7 @@ public:
   bool selectExtension() const {
     return selectExtension_;
   }
-  
+
   void setSelectExtension(bool value) {
     selectExtension_ = value;
   }

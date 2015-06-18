@@ -128,7 +128,7 @@ public:
   void setCloseOnUnmount(bool value) {
     closeOnUnmount_ = value;
   }
-  
+
   DesktopWindow::WallpaperMode wallpaperMode() const {
     return DesktopWindow::WallpaperMode(wallpaperMode_);
   }
@@ -176,11 +176,11 @@ public:
   void setDesktopFont(QFont font) {
     desktopFont_ = font;
   }
-  
+
   bool showWmMenu() const {
     return showWmMenu_;
   }
-  
+
   void setShowWmMenu(bool value) {
     showWmMenu_ = value;
   }
@@ -350,11 +350,11 @@ public:
   int autoSelectionDelay() const {
     return autoSelectionDelay_;
   }
-  
+
   void setAutoSelectionDelay(int value) {
     autoSelectionDelay_ = value;
   }
-  
+
   bool useTrash() const {
     if(!supportTrash_)
       return false;

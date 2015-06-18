@@ -204,7 +204,7 @@ void DirTreeView::onSelectionChanged(const QItemSelection & selected, const QIte
     if(currentPath_)
       fm_path_unref(currentPath_);
     currentPath_ = fm_path_ref(path);
-    
+
     // FIXME: use enums for type rather than hard-coded values 0 or 1
     int type = 0;
     if(QGuiApplication::mouseButtons() & Qt::MiddleButton)

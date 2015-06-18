@@ -174,7 +174,7 @@ void TabPage::restoreScrollPos() {
   }
   qDebug("finish-loading");
 
-  // After finishing loading the folder, the model is updated, but Qt delays the UI update 
+  // After finishing loading the folder, the model is updated, but Qt delays the UI update
   // for performance reasons. Therefore at this point the UI is not up to date.
   // Of course, the scrollbar ranges are not updated yet. We solve this by installing an Qt timeout handler.
   QTimer::singleShot(10, pThis, SLOT(restoreScrollPos()));

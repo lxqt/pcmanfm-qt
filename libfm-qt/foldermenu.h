@@ -31,7 +31,7 @@ class QAction;
 namespace Fm {
 
 class FolderView;
-  
+
 class LIBFM_QT_API FolderMenu : public QMenu {
 Q_OBJECT
 
@@ -40,53 +40,53 @@ public:
   virtual ~FolderMenu();
 
   QAction* createAction() {
-    return createAction_;  
+    return createAction_;
   }
 
   QAction* separator1() {
-    return separator1_;  
+    return separator1_;
   }
 
   QAction* pasteAction() {
-    return pasteAction_;  
+    return pasteAction_;
   }
 
   QAction* separator2() {
-    return separator2_;  
+    return separator2_;
   }
 
   QAction* selectAllAction() {
-    return selectAllAction_;  
+    return selectAllAction_;
   }
 
   QAction* invertSelectionAction() {
-    return invertSelectionAction_;  
+    return invertSelectionAction_;
   }
 
   QAction* separator3() {
-    return separator3_;  
+    return separator3_;
   }
 
   QAction* sortAction() {
-    return sortAction_;  
+    return sortAction_;
   }
 
   QAction* showHiddenAction() {
-    return showHiddenAction_;  
+    return showHiddenAction_;
   }
 
   QAction* separator4() {
-    return separator4_;  
+    return separator4_;
   }
 
   QAction* propertiesAction() {
-    return propertiesAction_;  
+    return propertiesAction_;
   }
 
   FolderView* view() {
     return view_;
   }
-  
+
 protected Q_SLOTS:
 
   void onCreateNewFolder();

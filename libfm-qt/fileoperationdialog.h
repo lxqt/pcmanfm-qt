@@ -38,7 +38,7 @@ Q_OBJECT
 public:
   explicit FileOperationDialog(FileOperation* _operation);
   virtual ~FileOperationDialog();
-  
+
   void setSourceFiles(FmPathList* srcFiles);
   void setDestPath(FmPath* dest);
 

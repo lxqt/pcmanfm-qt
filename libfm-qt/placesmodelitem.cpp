@@ -131,7 +131,7 @@ PlacesModelVolumeItem::PlacesModelVolumeItem(GVolume* volume):
 void PlacesModelVolumeItem::update() {
   // set title
   setText(QString::fromUtf8(g_volume_get_name(volume_)));
-  
+
   // set icon
   GIcon* gicon = g_volume_get_icon(volume_);
   setIcon(gicon);
@@ -171,14 +171,14 @@ PlacesModelMountItem::PlacesModelMountItem(GMount* mount):
 void PlacesModelMountItem::update() {
   // set title
   setText(QString::fromUtf8(g_mount_get_name(mount_)));
-  
+
   // set path
   GFile* mount_root = g_mount_get_root(mount_);
   FmPath* mount_path = fm_path_new_for_gfile(mount_root);
   setPath(mount_path);
   fm_path_unref(mount_path);
   g_object_unref(mount_root);
-  
+
   // set icon
   GIcon* gicon = g_mount_get_icon(mount_);
   setIcon(gicon);

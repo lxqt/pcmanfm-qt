@@ -91,7 +91,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
       GList* l;
       for(l=apps;l;l=l->next) {
         GAppInfo* app = G_APP_INFO(l->data);
-      
+
         // check if the command really exists
         gchar * program_path = g_find_program_in_path(g_app_info_get_executable(app));
         if (!program_path)
@@ -162,7 +162,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
       FmFileActionItem* item = FM_FILE_ACTION_ITEM(l->data);
       addCustomActionItem(this, item);
     }
-  } 
+  }
   g_list_foreach(items, (GFunc)fm_file_action_item_unref, NULL);
   g_list_free(items);
 #endif
@@ -246,7 +246,7 @@ void FileMenu::onOpenWithTriggered() {
   else { // we can only set the selected app as default if all files are of the same type
     dlg.setCanSetDefault(false);
   }
-  
+
   if(execModelessDialog(&dlg) == QDialog::Accepted) {
     GAppInfo* app = dlg.selectedApp();
     if(app) {
@@ -267,7 +267,7 @@ void FileMenu::openFilesWithApp(GAppInfo* app) {
   fm_path_list_unref(paths);
   fm_app_info_launch_uris(app, uris, NULL, NULL);
   g_list_foreach(uris, (GFunc)g_free, NULL);
-  g_list_free(uris);  
+  g_list_free(uris);
 }
 
 void FileMenu::onApplicationTriggered() {

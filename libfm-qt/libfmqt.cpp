@@ -24,7 +24,7 @@
 #include "thumbnailloader.h"
 
 namespace Fm {
-	
+
 struct LibFmQtData {
   LibFmQtData();
   ~LibFmQtData();

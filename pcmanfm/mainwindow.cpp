@@ -272,7 +272,7 @@ void MainWindow::on_actionNewWin_triggered() {
 
   if(app->settings().windowMaximized())
   	newWin->setWindowState(newWin->windowState() | Qt::WindowMaximized);
-  
+
   newWin->show();
 }
 
@@ -660,10 +660,10 @@ void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
     MainWindow* newWin = new MainWindow(path);
     // TODO: apply window size from app->settings
     newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
-    
+
     if(app->settings().windowMaximized())
         newWin->setWindowState(newWin->windowState() | Qt::WindowMaximized);
-    
+
     newWin->show();
     break;
   }

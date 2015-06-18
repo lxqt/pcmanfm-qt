@@ -35,7 +35,7 @@ public:
   virtual ~AutoRunDialog();
 
   virtual void accept();
-  
+
 private Q_SLOTS:
 
 private:

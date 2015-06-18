@@ -30,7 +30,7 @@ namespace Ui {
 };
 
 namespace Fm {
-  
+
 class MountOperation;
 
 class MountOperationPasswordDialog : public QDialog {
@@ -48,7 +48,7 @@ public:
 
 private Q_SLOTS:
   void onAnonymousToggled(bool checked);
-  
+
 private:
   Ui::MountOperationPasswordDialog* ui;
   MountOperation* mountOperation;

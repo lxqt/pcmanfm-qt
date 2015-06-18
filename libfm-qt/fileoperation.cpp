@@ -77,7 +77,7 @@ FileOperation::~FileOperation() {
     disconnectJob();
     g_object_unref(job_);
   }
-  
+
   if(srcPaths)
     fm_path_list_unref(srcPaths);
 
@@ -156,7 +156,7 @@ void FileOperation::onFileOpsJobCancelled(FmFileOpsJob* job, FileOperation* pThi
 
 void FileOperation::onFileOpsJobCurFile(FmFileOpsJob* job, const char* cur_file, FileOperation* pThis) {
   pThis->curFile = QString::fromUtf8(cur_file);
-  
+
   // We update the current file name in a timeout slot because drawing a string
   // in the UI is expansive. Updating the label text too often cause
   // significant impact on performance.

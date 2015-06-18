@@ -271,7 +271,7 @@ void PreferencesDialog::applyBehaviorPage(Settings& settings) {
   Fm::FolderView::ViewMode mode = Fm::FolderView::ViewMode(ui.viewMode->itemData(ui.viewMode->currentIndex()).toInt());
   settings.setViewMode(mode);
   settings.setConfirmDelete(ui.configmDelete->isChecked());
-  
+
   if(settings.supportTrash())
     settings.setUseTrash(ui.useTrash->isChecked());
 }

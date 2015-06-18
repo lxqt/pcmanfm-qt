@@ -96,7 +96,7 @@ public:
   Type type() {
     return (Type)job_->type;
   }
-  
+
   // convinient static functions
   static FileOperation* copyFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
   static FileOperation* moveFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
@@ -108,7 +108,7 @@ public:
 
 Q_SIGNALS:
   void finished();
-  
+
 private:
   static gint onFileOpsJobAsk(FmFileOpsJob* job, const char* question, char* const* options, FileOperation* pThis);
   static gint onFileOpsJobAskRename(FmFileOpsJob* job, FmFileInfo* src, FmFileInfo* dest, char** new_name, FileOperation* pThis);
@@ -145,7 +145,7 @@ private:
 
 private Q_SLOTS:
   void onUiTimeout();
-  
+
 private:
   FmFileOpsJob* job_;
   FileOperationDialog* dlg;

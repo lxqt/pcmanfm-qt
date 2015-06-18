@@ -29,7 +29,7 @@
 #include <libfm/fm.h>
 
 namespace Fm {
-  
+
 class PlacesModelItem;
 class PlacesModelVolumeItem;
 class PlacesModelMountItem;
@@ -79,7 +79,7 @@ public Q_SLOTS:
   void updateTrash();
 
 protected:
-  
+
   PlacesModelItem* itemFromPath(FmPath* path);
   PlacesModelItem* itemFromPath(QStandardItem* rootItem, FmPath* path);
   PlacesModelVolumeItem* itemFromVolume(GVolume* volume);
@@ -93,17 +93,17 @@ protected:
   Qt::DropActions supportedDropActions() const;
 
   void createTrashItem();
-  
+
 private:
   void loadBookmarks();
-  
+
   static void onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis);
   static void onVolumeRemoved(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis);
   static void onVolumeChanged(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis);
   static void onMountAdded(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis);
   static void onMountRemoved(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis);
   static void onMountChanged(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis);
-  
+
   static void onBookmarksChanged(FmBookmarks* bookmarks, PlacesModel* pThis);
 
   static void onTrashChanged(GFileMonitor *monitor, GFile *gf, GFile *other, GFileMonitorEvent evt, PlacesModel* pThis);

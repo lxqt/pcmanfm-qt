@@ -32,9 +32,9 @@ Q_OBJECT
 public:
   explicit DndActionMenu(QWidget* parent = 0);
   virtual ~DndActionMenu();
-  
+
   static Qt::DropAction askUser(QPoint pos);
-  
+
 private:
   QAction* copyAction;
   QAction* moveAction;

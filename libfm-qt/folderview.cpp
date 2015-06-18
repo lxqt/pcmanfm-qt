@@ -66,7 +66,7 @@ void FolderViewListView::mousePressEvent(QMouseEvent* event) {
 
 QModelIndex FolderViewListView::indexAt(const QPoint& point) const {
   QModelIndex index = QListView::indexAt(point);
-  // NOTE: QListView has a severe design flaw here. It does hit-testing based on the 
+  // NOTE: QListView has a severe design flaw here. It does hit-testing based on the
   // total bound rect of the item. The width of an item is determined by max(icon_width, text_width).
   // So if the text label is much wider than the icon, when you click outside the icon but
   // the point is still within the outer bound rect, the item is still selected.
@@ -283,7 +283,7 @@ void FolderViewTreeView::layoutColumns() {
 
   delete []widths;
   doingLayout_ = false;
-  
+
   if(layoutTimer_) {
     delete layoutTimer_;
     layoutTimer_ = NULL;
@@ -444,7 +444,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     return;
   // FIXME: retain old selection
 
-  // since only detailed list mode uses QTreeView, and others 
+  // since only detailed list mode uses QTreeView, and others
   // all use QListView, it's wise to preserve QListView when possible.
   bool recreateView = false;
   if(view && (mode == DetailedListMode || _mode == DetailedListMode)) {

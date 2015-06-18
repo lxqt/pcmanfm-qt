@@ -34,7 +34,7 @@
 
 using namespace Fm;
 
-FolderModel::FolderModel() : 
+FolderModel::FolderModel() :
   folder_(NULL) {
 /*
     ColumnIcon,
@@ -44,7 +44,7 @@ FolderModel::FolderModel() :
     NumOfColumns
 */
   thumbnailRefCounts.reserve(4);
-  
+
   // reload all icons when the icon theme is changed
   connect(IconTheme::instance(), &IconTheme::changed, this, &FolderModel::updateIcons);
 }
@@ -54,7 +54,7 @@ FolderModel::~FolderModel() {
 
   if(folder_)
     setFolder(NULL);
-  
+
   // if the thumbnail requests list is not empty, cancel them
   if(!thumbnailResults.empty()) {
     Q_FOREACH(FmThumbnailLoader* res, thumbnailResults) {
@@ -293,7 +293,7 @@ Qt::ItemFlags FolderModel::flags(const QModelIndex& index) const {
   return flags;
 }
 
-// FIXME: this is very inefficient and should be replaced with a 
+// FIXME: this is very inefficient and should be replaced with a
 // more reasonable implementation later.
 QList<FolderModelItem>::iterator FolderModel::findItemByPath(FmPath* path, int* row) {
   QList<FolderModelItem>::iterator it = items.begin();
@@ -311,7 +311,7 @@ QList<FolderModelItem>::iterator FolderModel::findItemByPath(FmPath* path, int* 
   return items.end();
 }
 
-// FIXME: this is very inefficient and should be replaced with a 
+// FIXME: this is very inefficient and should be replaced with a
 // more reasonable implementation later.
 QList<FolderModelItem>::iterator FolderModel::findItemByName(const char* name, int* row) {
   QList<FolderModelItem>::iterator it = items.begin();
@@ -359,7 +359,7 @@ QMimeData* FolderModel::mimeData(const QModelIndexList& indexes) const {
   // build a uri list
   QByteArray urilist;
   urilist.reserve(4096);
-  
+
   QModelIndexList::const_iterator it;
   for(it = indexes.constBegin(); it != indexes.end(); ++it) {
     const QModelIndex index = *it;
@@ -373,7 +373,7 @@ QMimeData* FolderModel::mimeData(const QModelIndexList& indexes) const {
     }
   }
   data->setData("text/uri-list", urilist);
-  
+
   return data;
 }
 

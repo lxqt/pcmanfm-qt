@@ -29,7 +29,7 @@ namespace Fm {
 
 class LIBFM_QT_API Path {
 public:
-  
+
   Path(): data_(NULL) {
   }
 
@@ -129,7 +129,7 @@ public:
   bool isTrash() {
     return fm_path_is_trash(data_);
   }
-  
+
   bool isTrashRoot() {
     return fm_path_is_trash_root(data_);
   }
@@ -169,13 +169,13 @@ public:
     g_free(dispname);
     return str;
   }
-  
+
   /*
   char* displayBasename() {
     return fm_path_display_basename(data_);
   }
   */
-  
+
   QString displayBasename() {
     char* basename = fm_path_display_basename(data_);
     QString s = QString::fromUtf8(basename);

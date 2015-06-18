@@ -39,7 +39,7 @@ public:
   QColor color() const {
     return color_;
   }
-  
+
 Q_SIGNALS:
   void changed();
 

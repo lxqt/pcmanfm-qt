@@ -51,7 +51,7 @@ public:
   }
 
   void setIconSize(QSize size);
-  
+
   FmPath* currentPath() {
     return currentPath_;
   }
@@ -110,7 +110,7 @@ protected Q_SLOTS:
 
 private:
   void initDirTree();
-  
+
 private:
   FmPath* currentPath_;
   QWidget* view_;

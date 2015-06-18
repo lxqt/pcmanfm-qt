@@ -62,7 +62,7 @@ protected:
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
 
 private:
-  
+
 };
 
 };

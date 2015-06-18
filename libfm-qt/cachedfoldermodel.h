@@ -25,7 +25,7 @@
 #include "foldermodel.h"
 
 namespace Fm {
-  
+
 class LIBFM_QT_API CachedFolderModel : public FolderModel {
   Q_OBJECT
 public:

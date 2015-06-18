@@ -63,13 +63,13 @@ public:
 
   friend class FolderViewTreeView;
   friend class FolderViewListView;
-  
+
   explicit FolderView(ViewMode _mode = IconMode, QWidget* parent = 0);
   virtual ~FolderView();
 
   void setViewMode(ViewMode _mode);
   ViewMode viewMode() const;
-  
+
   void setIconSize(ViewMode mode, QSize size);
   QSize iconSize(ViewMode mode) const;
 
@@ -77,7 +77,7 @@ public:
 
   ProxyFolderModel* model() const;
   void setModel(ProxyFolderModel* _model);
-  
+
   FmFolder* folder() {
     return model_ ? static_cast<FolderModel*>(model_->sourceModel())->folder() : NULL;
   }
@@ -122,7 +122,7 @@ protected:
   virtual void childDragMoveEvent(QDragMoveEvent* e);
   virtual void childDragLeaveEvent(QDragLeaveEvent* e);
   virtual void childDropEvent(QDropEvent* e);
-  
+
   void emitClickedAt(ClickType type, const QPoint& pos);
 
   QModelIndexList selectedRows ( int column = 0 ) const;
@@ -130,7 +130,7 @@ protected:
 
   virtual void prepareFileMenu(Fm::FileMenu* menu);
   virtual void prepareFolderMenu(Fm::FolderMenu* menu);
-  
+
   virtual bool eventFilter(QObject* watched, QEvent* event);
 
   void updateGridSize(); // called when view mode, icon size, or font size is changed

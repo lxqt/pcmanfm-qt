@@ -62,7 +62,7 @@ FilePropsDialog::FilePropsDialog(FmFileInfoList* files, QWidget* parent, Qt::Win
 
   FmPathList* paths = fm_path_list_new_from_file_info_list(files);
   deepCountJob = fm_deep_count_job_new(paths, FM_DC_JOB_DEFAULT);
-  fm_path_list_unref(paths);    
+  fm_path_list_unref(paths);
 
   initGeneralPage();
   initPermissionsPage();
@@ -409,7 +409,7 @@ void FilePropsDialog::accept() {
           newMode |= (S_IXUSR|S_IXGRP|S_IXOTH);
       }
       op->setChmod(newMode, newModeMask);
-      
+
       if(hasDir) { // if there are some dirs in our selected files
         QMessageBox::StandardButton r = QMessageBox::question(this,
                                           tr("Apply changes"),
@@ -432,7 +432,7 @@ void FilePropsDialog::initOwner() {
       ui->owner->setText(uidToName(uid));
     if(gid != DIFFERENT_GIDS)
       ui->ownerGroup->setText(gidToName(gid));
-    
+
     if(geteuid() != 0) { // on local filesystems, only root can do chown.
       ui->owner->setEnabled(false);
       ui->ownerGroup->setEnabled(false);

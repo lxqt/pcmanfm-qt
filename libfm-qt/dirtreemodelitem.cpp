@@ -212,10 +212,10 @@ qDebug() << "folder loaded";
   }
   else {
     int pos = _this->children_.indexOf(_this->placeHolderChild_);
-    model->beginRemoveRows(index, pos, pos); 
+    model->beginRemoveRows(index, pos, pos);
     _this->children_.removeAt(pos);
     delete _this->placeHolderChild_;
-    model->endRemoveRows(); 
+    model->endRemoveRows();
     _this->placeHolderChild_ = NULL;
   }
 

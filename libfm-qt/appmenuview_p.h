@@ -48,15 +48,15 @@ public:
   ~AppMenuViewItem() {
     menu_cache_item_unref(item_);
   }
-  
+
   MenuCacheItem* item() {
     return item_;
   }
-  
+
   MenuCacheType type() {
 	return menu_cache_item_get_type(item_);
   }
-  
+
   bool isApp() {
     return type() == MENU_CACHE_TYPE_APP;
   }
