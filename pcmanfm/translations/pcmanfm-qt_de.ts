@@ -104,7 +104,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="276"/>
         <source>Desktop Preferences</source>
-        <translation>Arbeitsplatzeinstellungen</translation>
+        <translation>Schreibtischeinstellungen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="277"/>
@@ -176,7 +176,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="299"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Beim Klicken auf den Arbeitsplatz die Menüs des Fenstermanagers anzeigen</translation>
+        <translation>Beim Klicken auf den Schreibtisch die Menüs des Fenstermanagers anzeigen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="300"/>
@@ -294,7 +294,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="522"/>
         <source>&amp;Desktop</source>
-        <translation>Arbeits&amp;fläche</translation>
+        <translation>Schreib&amp;tisch</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="523"/>
@@ -753,7 +753,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../desktopwindow.cpp" line="386"/>
         <source>Desktop Preferences</source>
-        <translation>Arbeitsplatzeinstellungen</translation>
+        <translation>Schreibtischeinstellungen</translation>
     </message>
 </context>
 <context>

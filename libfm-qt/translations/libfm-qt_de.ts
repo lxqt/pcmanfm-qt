@@ -752,7 +752,7 @@ Sollen die Dateien stattdessen gelöscht werden?</translation>
     <message>
         <location filename="../placesmodel.cpp" line="49"/>
         <source>Desktop</source>
-        <translation>Arbeitsplatz</translation>
+        <translation>Schreibtisch</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="205"/>
