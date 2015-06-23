@@ -32,7 +32,9 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QCommandLineParser>
+#include <QSocketNotifier>
 #include <gio/gio.h>
+#include <sys/socket.h>
 
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
@@ -84,6 +86,8 @@ Application::Application(int& argc, char** argv):
     dbus.registerObject("/Application", this);
 
     connect(this, &Application::aboutToQuit, this, &Application::onAboutToQuit);
+    // aboutToQuit() is not signalled on SIGTERM, install signal handler
+    installSigtermHandler();
     settings_.load(profileName_);
 
     // decrease the cache size to reduce memory usage
@@ -704,5 +708,40 @@ void Application::onVirtualGeometryChanged(const QRect& rect) {
     Q_FOREACH(DesktopWindow* desktop, desktopWindows_) {
       desktop->queueRelayout();
     }
+  }
+}
+
+
+static int sigterm_fd[2];
+
+static void sigtermHandler(int) {
+  char c = 1;
+  ::write(sigterm_fd[0], &c, sizeof(c));
+}
+
+void Application::installSigtermHandler() {
+  if(::socketpair(AF_UNIX, SOCK_STREAM, 0, sigterm_fd) == 0) {
+    QSocketNotifier* notifier = new QSocketNotifier(sigterm_fd[1], QSocketNotifier::Read, this);
+    connect(notifier, &QSocketNotifier::activated, this, &Application::onSigtermNotified);
+
+    struct sigaction action;
+    action.sa_handler = sigtermHandler;
+    ::sigemptyset(&action.sa_mask);
+    action.sa_flags |= SA_RESTART;
+    if(::sigaction(SIGTERM, &action, 0) != 0) {
+      qWarning("Couldn't install SIGTERM handler");
+    }
+  } else {
+    qWarning("Couldn't create SIGTERM socketpair");
+  }
+}
+
+void Application::onSigtermNotified() {
+  if (QSocketNotifier* notifier = qobject_cast<QSocketNotifier*>(sender())) {
+    notifier->setEnabled(false);
+    char c;
+    ::read(sigterm_fd[1], &c, sizeof(c));
+    quit();
+    notifier->setEnabled(true);
   }
 }
