@@ -130,6 +130,10 @@ protected Q_SLOTS:
   void onTabPageSortFilterChanged();
 
   void onSidePaneChdirRequested(int type, FmPath* path);
+  void onSidePaneOpenFolderInNewWindowRequested(FmPath* path);
+  void onSidePaneOpenFolderInNewTabRequested(FmPath* path);
+  void onSidePaneOpenFolderInTerminalRequested(FmPath* path);
+  void onSidePaneCreateNewFolderRequested(FmPath* path);
   void onSidePaneModeChanged(Fm::SidePane::Mode mode);
   void onSplitterMoved(int pos, int index);
 

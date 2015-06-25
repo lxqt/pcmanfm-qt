@@ -929,8 +929,8 @@ void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
       menu = folderMenu;
     }
     if (menu) {
-      menu->popup(QCursor::pos());
-      connect(menu, &QMenu::aboutToHide, menu, &QMenu::deleteLater);
+      menu->exec(QCursor::pos());
+      delete menu;
     }
   }
 }

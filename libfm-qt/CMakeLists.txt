@@ -32,6 +32,7 @@ set(libfm_SRCS
     proxyfoldermodel.cpp
     folderview.cpp
     folderitemdelegate.cpp
+    createnewmenu.cpp
     filemenu.cpp
     foldermenu.cpp
     filepropsdialog.cpp

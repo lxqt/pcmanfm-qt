@@ -19,6 +19,7 @@
 
 
 #include "filemenu.h"
+#include "createnewmenu.h"
 #include "icontheme.h"
 #include "filepropsdialog.h"
 #include "utilities.h"
@@ -112,6 +113,13 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   menu->addAction(openWithAction_);
 
   separator1_ = addSeparator();
+
+  QAction* createAction = new QAction(tr("Create &New"), this);
+  FmPath* dirPath = fm_file_info_list_get_length(files) == 1 && fm_file_info_is_dir(first)
+      ? path : cwd_;
+  createAction->setMenu(new CreateNewMenu(NULL, dirPath, this));
+  addAction(createAction);
+  addSeparator();
 
   if(allTrash_) { // all selected files are in trash:///
     bool can_restore = true;

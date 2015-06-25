@@ -88,11 +88,6 @@ public:
   }
 
 protected Q_SLOTS:
-
-  void onCreateNewFolder();
-  void onCreateNewFile();
-  void onCreateNew();
-
   void onPasteActionTriggered();
   void onSelectAllActionTriggered();
   void onInvertSelectionActionTriggered();
@@ -104,14 +99,12 @@ protected Q_SLOTS:
   void onPropertiesActionTriggered();
 
 private:
-  void createCreateNewMenu();
   void createSortMenu();
   void addSortMenuItem(QString title, int id);
 
 private:
   FolderView* view_;
   QAction* createAction_;
-  QMenu* createNewMenu_;
   QAction* separator1_;
   QAction* pasteAction_;
   QAction* separator2_;

@@ -649,6 +649,9 @@
    </property>
   </action>
   <action name="actionNewBlankFile">
+   <property name="icon">
+    <iconset theme="document-new"/>
+   </property>
    <property name="text">
     <string>Blank File</string>
    </property>

@@ -100,6 +100,10 @@ MainWindow::MainWindow(FmPath* path):
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
   ui.sidePane->setMode(settings.sidePaneMode());
   connect(ui.sidePane, &Fm::SidePane::chdirRequested, this, &MainWindow::onSidePaneChdirRequested);
+  connect(ui.sidePane, &Fm::SidePane::openFolderInNewWindowRequested, this, &MainWindow::onSidePaneOpenFolderInNewWindowRequested);
+  connect(ui.sidePane, &Fm::SidePane::openFolderInNewTabRequested, this, &MainWindow::onSidePaneOpenFolderInNewTabRequested);
+  connect(ui.sidePane, &Fm::SidePane::openFolderInTerminalRequested, this, &MainWindow::onSidePaneOpenFolderInTerminalRequested);
+  connect(ui.sidePane, &Fm::SidePane::createNewFolderRequested, this, &MainWindow::onSidePaneCreateNewFolderRequested);
   connect(ui.sidePane, &Fm::SidePane::modeChanged, this, &MainWindow::onSidePaneModeChanged);
 
   // detect change of splitter position
@@ -685,6 +689,23 @@ void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {
     addTab(path);
   else if(type == 2) // new window
     (new MainWindow(path))->show();
+}
+
+void MainWindow::onSidePaneOpenFolderInNewWindowRequested(FmPath* path) {
+  (new MainWindow(path))->show();
+}
+
+void MainWindow::onSidePaneOpenFolderInNewTabRequested(FmPath* path) {
+  addTab(path);
+}
+
+void MainWindow::onSidePaneOpenFolderInTerminalRequested(FmPath* path) {
+  Application* app = static_cast<Application*>(qApp);
+  app->openFolderInTerminal(path);
+}
+
+void MainWindow::onSidePaneCreateNewFolderRequested(FmPath* path) {
+  createFileOrFolder(CreateNewFolder, path);
 }
 
 void MainWindow::onSidePaneModeChanged(Fm::SidePane::Mode mode) {

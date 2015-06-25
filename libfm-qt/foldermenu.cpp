@@ -20,6 +20,7 @@
 
 
 #include "foldermenu.h"
+#include "createnewmenu.h"
 #include "filepropsdialog.h"
 #include "folderview.h"
 #include "utilities.h"
@@ -36,8 +37,7 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
   createAction_ = new QAction(tr("Create &New"), this);
   addAction(createAction_);
 
-  createCreateNewMenu();
-  createAction_->setMenu(createNewMenu_);
+  createAction_->setMenu(new CreateNewMenu(view_, view_->path(), this));
 
   separator1_ = addSeparator();
 
@@ -76,40 +76,6 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
 }
 
 FolderMenu::~FolderMenu() {
-}
-
-void FolderMenu::createCreateNewMenu() {
-  QMenu* createMenu = new QMenu(this);
-  createNewMenu_ = createMenu;
-
-  QAction* action = new QAction(tr("Folder"), this);
-  connect(action, &QAction::triggered, this, &FolderMenu::onCreateNewFolder);
-  createMenu->addAction(action);
-
-  action = new QAction(tr("Blank File"), this);
-  connect(action, &QAction::triggered, this, &FolderMenu::onCreateNewFile);
-  createMenu->addAction(action);
-
-  // add more items to "Create New" menu from templates
-  GList* templates = fm_template_list_all(fm_config->only_user_templates);
-  if(templates) {
-    createMenu->addSeparator();
-    for(GList* l = templates; l; l = l->next) {
-      FmTemplate* templ = (FmTemplate*)l->data;
-      /* we support directories differently */
-      if(fm_template_is_directory(templ))
-        continue;
-      FmMimeType* mime_type = fm_template_get_mime_type(templ);
-      const char* label = fm_template_get_label(templ);
-      QString text = QString("%1 (%2)").arg(QString::fromUtf8(label)).arg(QString::fromUtf8(fm_mime_type_get_desc(mime_type)));
-      FmIcon* icon = fm_template_get_icon(templ);
-      if(!icon)
-        icon = fm_mime_type_get_icon(mime_type);
-      QAction* action = createMenu->addAction(IconTheme::icon(icon), text);
-      action->setObjectName(QString::fromUtf8(fm_template_get_name(templ, NULL)));
-      connect(action, &QAction::triggered, this, &FolderMenu::onCreateNew);
-    }
-  }
 }
 
 void FolderMenu::addSortMenuItem(QString title, int id) {
@@ -262,39 +228,5 @@ void FolderMenu::onPropertiesActionTriggered() {
   if(folderInfo)
     FilePropsDialog::showForFile(folderInfo);
 }
-
-void FolderMenu::onCreateNewFile() {
-  FmPath* dirPath = view_->path();
-
-  if(dirPath)
-    createFileOrFolder(CreateNewTextFile, dirPath);
-}
-
-void FolderMenu::onCreateNewFolder() {
-  FmPath* dirPath = view_->path();
-
-  if(dirPath)
-    createFileOrFolder(CreateNewFolder, dirPath);
-}
-
-void FolderMenu::onCreateNew() {
-  QAction* action = static_cast<QAction*>(sender());
-  QByteArray name = action->objectName().toUtf8();
-  GList* templates = fm_template_list_all(fm_config->only_user_templates);
-  FmTemplate* templ = NULL;
-  for(GList* l = templates; l; l = l->next) {
-    FmTemplate* t = (FmTemplate*)l->data;
-    if(name == fm_template_get_name(t, NULL)) {
-      templ = t;
-      break;
-    }
-  }
-  if(templ) { // template found
-    FmPath* dirPath = view_->path();
-    if(dirPath)
-      createFileOrFolder(CreateWithTemplate, dirPath, templ, view_);
-  }
-}
-
 
 } // namespace Fm
