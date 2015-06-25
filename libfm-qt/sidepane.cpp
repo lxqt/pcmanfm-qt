@@ -207,6 +207,14 @@ void SidePane::setMode(Mode mode) {
     dirTreeView->setIconSize(iconSize_);
     dirTreeView->setCurrentPath(currentPath_);
     connect(dirTreeView, &DirTreeView::chdirRequested, this, &SidePane::onDirTreeViewChdirRequested);
+    connect(dirTreeView, &DirTreeView::openFolderInNewWindowRequested,
+            this, &SidePane::openFolderInNewWindowRequested);
+    connect(dirTreeView, &DirTreeView::openFolderInNewTabRequested,
+            this, &SidePane::openFolderInNewTabRequested);
+    connect(dirTreeView, &DirTreeView::openFolderInTerminalRequested,
+            this, &SidePane::openFolderInTerminalRequested);
+    connect(dirTreeView, &DirTreeView::createNewFolderRequested,
+            this, &SidePane::createNewFolderRequested);
     break;
   }
   default:;

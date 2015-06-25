@@ -101,6 +101,10 @@ public:
 
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
+  void openFolderInNewWindowRequested(FmPath* path);
+  void openFolderInNewTabRequested(FmPath* path);
+  void openFolderInTerminalRequested(FmPath* path);
+  void createNewFolderRequested(FmPath* path);
   void modeChanged(Fm::SidePane::Mode mode);
 
 protected Q_SLOTS:
