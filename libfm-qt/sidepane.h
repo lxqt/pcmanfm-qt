@@ -101,7 +101,7 @@ public:
 
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
-  void modeChanged();
+  void modeChanged(Fm::SidePane::Mode mode);
 
 protected Q_SLOTS:
   void onPlacesViewChdirRequested(int type, FmPath* path);

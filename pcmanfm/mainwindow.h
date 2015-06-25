@@ -130,6 +130,7 @@ protected Q_SLOTS:
   void onTabPageSortFilterChanged();
 
   void onSidePaneChdirRequested(int type, FmPath* path);
+  void onSidePaneModeChanged(Fm::SidePane::Mode mode);
   void onSplitterMoved(int pos, int index);
 
   void onBackForwardContextMenu(QPoint pos);

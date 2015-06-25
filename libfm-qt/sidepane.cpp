@@ -216,7 +216,7 @@ void SidePane::setMode(Mode mode) {
     //  g_signal_connect(sp->view, "item-popup", G_CALLBACK(on_item_popup), sp);
     verticalLayout->addWidget(view_);
   }
-  Q_EMIT modeChanged();
+  Q_EMIT modeChanged(mode);
 }
 
 bool SidePane::setShowHidden(bool show_hidden) {

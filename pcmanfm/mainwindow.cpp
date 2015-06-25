@@ -98,8 +98,10 @@ MainWindow::MainWindow(FmPath* path):
 
   // side pane
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
-  ui.sidePane->setMode(Fm::SidePane::ModePlaces);
+  ui.sidePane->setMode(settings.sidePaneMode());
   connect(ui.sidePane, &Fm::SidePane::chdirRequested, this, &MainWindow::onSidePaneChdirRequested);
+  connect(ui.sidePane, &Fm::SidePane::modeChanged, this, &MainWindow::onSidePaneModeChanged);
+
   // detect change of splitter position
   connect(ui.splitter, &QSplitter::splitterMoved, this, &MainWindow::onSplitterMoved);
 
@@ -683,6 +685,10 @@ void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {
     addTab(path);
   else if(type == 2) // new window
     (new MainWindow(path))->show();
+}
+
+void MainWindow::onSidePaneModeChanged(Fm::SidePane::Mode mode) {
+  static_cast<Application*>(qApp)->settings().setSidePaneMode(mode);
 }
 
 void MainWindow::onSplitterMoved(int pos, int index) {
