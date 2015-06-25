@@ -39,8 +39,8 @@ inline static int wallpaperModeFromString(const QString str);
 inline static const char* viewModeToString(Fm::FolderView::ViewMode value);
 inline static Fm::FolderView::ViewMode viewModeFromString(const QString str);
 
-inline static const char* sidePaneModeToString(int value);
-inline static int sidePaneModeFromString(const QString str);
+inline static const char* sidePaneModeToString(Fm::SidePane::Mode value);
+inline static Fm::SidePane::Mode sidePaneModeFromString(const QString& str);
 
 inline static const char* sortOrderToString(Qt::SortOrder order);
 inline static Qt::SortOrder sortOrderFromString(const QString str);
@@ -77,7 +77,7 @@ Settings::Settings():
   lastWindowHeight_(480),
   lastWindowMaximized_(false),
   splitterPos_(120),
-  sidePaneMode_(0),
+  sidePaneMode_(Fm::SidePane::ModePlaces),
   viewMode_(Fm::FolderView::IconMode),
   showHidden_(false),
   sortOrder_(Qt::AscendingOrder),
@@ -298,7 +298,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("AlwaysShowTabs", alwaysShowTabs_);
   settings.setValue("ShowTabClose", showTabClose_);
   settings.setValue("SplitterPos", splitterPos_);
-  // settings.setValue("SidePaneMode", sidePaneModeToString(sidePaneMode_));
+  settings.setValue("SidePaneMode", sidePaneModeToString(sidePaneMode_));
   settings.endGroup();
   return true;
 }
@@ -432,12 +432,32 @@ static int wallpaperModeFromString(const QString str) {
   return ret;
 }
 
-static const char* sidePaneModeToString(int value) {
-  return NULL;
+static const char* sidePaneModeToString(Fm::SidePane::Mode value) {
+  const char* ret;
+  switch(value) {
+    case Fm::SidePane::ModePlaces:
+    default:
+      ret = "places";
+      break;
+    case Fm::SidePane::ModeDirTree:
+      ret = "dirtree";
+      break;
+    case Fm::SidePane::ModeNone:
+      ret = "none";
+      break;
+  }
+  return ret;
 }
 
-static int sidePaneModeFromString(const QString str) {
-  return 0;
+static Fm::SidePane::Mode sidePaneModeFromString(const QString& str) {
+  Fm::SidePane::Mode ret;
+  if(str == "none")
+    ret = Fm::SidePane::ModeNone;
+  else if(str == "dirtree")
+    ret = Fm::SidePane::ModeDirTree;
+  else
+    ret = Fm::SidePane::ModePlaces;
+  return ret;
 }
 
 void Settings::setTerminal(QString terminalCommand) {

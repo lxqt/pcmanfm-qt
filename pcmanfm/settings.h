@@ -26,6 +26,7 @@
 #include "folderview.h"
 #include "foldermodel.h"
 #include "desktopwindow.h"
+#include "sidepane.h"
 #include "thumbnailloader.h"
 
 namespace PCManFM {
@@ -290,11 +291,11 @@ public:
     splitterPos_ = splitterPos;
   }
 
-  int sidePaneMode() const {
+  Fm::SidePane::Mode sidePaneMode() const {
     return sidePaneMode_;
   }
 
-  void setSidePaneMode(int sidePaneMode) {
+  void setSidePaneMode(Fm::SidePane::Mode sidePaneMode) {
     sidePaneMode_ = sidePaneMode;
   }
 
@@ -487,7 +488,7 @@ private:
   int lastWindowHeight_;
   bool lastWindowMaximized_;
   int splitterPos_;
-  int sidePaneMode_;
+  Fm::SidePane::Mode sidePaneMode_;
 
   Fm::FolderView::ViewMode viewMode_;
   bool showHidden_;
