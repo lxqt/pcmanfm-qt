@@ -100,6 +100,8 @@ public:
 
   void invertSelection();
 
+  void updateAfterFolderLoaded();
+
   void setFileLauncher(FileLauncher* launcher) {
     fileLauncher_ = launcher;
   }
