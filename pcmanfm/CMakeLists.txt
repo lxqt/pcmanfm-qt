@@ -57,10 +57,19 @@ lxqt_translate_ts(QM_FILES
     UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
     SOURCES ${pcmanfm_SRCS} ${pcmanfm_UIS_H}
 )
+
+# translate desktop entry files for pcmanfm-qt and desktop preferences
+lxqt_translate_desktop(DESKTOP_FILES
+    SOURCES
+        pcmanfm-qt.desktop.in
+        pcmanfm-qt-desktop-pref.desktop.in
+)
+
 add_executable(pcmanfm-qt
     ${pcmanfm_SRCS}
     ${pcmanfm_UIS_H}
     ${QM_FILES}
+    ${DESKTOP_FILES}
 )
 set_property(
      TARGET pcmanfm-qt APPEND
@@ -82,12 +91,7 @@ target_link_libraries(pcmanfm-qt
 install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 # install a desktop entry file for pcmanfm-qt and desktop preferences
-configure_file(pcmanfm-qt.desktop.in pcmanfm-qt.desktop @ONLY)
-configure_file(pcmanfm-qt-desktop-pref.desktop.in pcmanfm-qt-desktop-pref.desktop @ONLY)
-install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt.desktop"
-    "${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt-desktop-pref.desktop"
-    DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
+install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
 )
 
 install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/pcmanfm-qt/translations")
