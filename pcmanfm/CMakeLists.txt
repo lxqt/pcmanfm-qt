@@ -52,9 +52,15 @@ set(pcmanfm_UIS
 
 qt5_wrap_ui(pcmanfm_UIS_H ${pcmanfm_UIS})
 
+# add translation for pcmanfm-qt
+lxqt_translate_ts(QM_FILES
+    UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
+    SOURCES ${pcmanfm_SRCS} ${pcmanfm_UIS_H}
+)
 add_executable(pcmanfm-qt
     ${pcmanfm_SRCS}
     ${pcmanfm_UIS_H}
+    ${QM_FILES}
 )
 set_property(
      TARGET pcmanfm-qt APPEND
@@ -84,14 +90,6 @@ install(FILES
     DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
 )
 
-# add translation for pcmanfm-qt
-# See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
-file(GLOB TS_FILES translations/*.ts)
-
-qt5_create_translation(QM_FILES ${pcmanfm_SRCS} ${pcmanfm_UIS_H} ${TS_FILES})
-qt5_add_translation(QM_FILES ${TS_FILES})
-
-add_custom_target(pcmanfm_translations DEPENDS ${QM_FILES})
 install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/pcmanfm-qt/translations")
 
 # prevent the generated files from being deleted during make clean
