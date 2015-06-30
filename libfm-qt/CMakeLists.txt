@@ -75,9 +75,16 @@ set(libfm_UIS
 
 qt5_wrap_ui(libfm_UIS_H ${libfm_UIS})
 
+# add translation for libfm-qt
+lxqt_translate_ts(QM_FILES
+    UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
+    SOURCES ${libfm_SRCS} ${libfm_UIS}
+)
+
 add_library(${LIBRARY_NAME} SHARED
     ${libfm_SRCS}
     ${libfm_UIS_H}
+    ${QM_FILES}
 )
 
 set_property(
@@ -131,17 +138,6 @@ else()
     install(FILES "${CMAKE_CURRENT_BINARY_DIR}/lib${LIBRARY_NAME}.pc" DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig")
 endif()
 
-# add translation for pcmanfm-qt
-# See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
-option (UPDATE_TRANSLATIONS "Update source translation translations/*.ts files")
-file(GLOB TS_FILES translations/*.ts)
-if(UPDATE_TRANSLATIONS)
-    qt5_create_translation(QM_FILES ${libfm_SRCS} ${libfm_UIS} ${TS_FILES})
-else()
-    qt5_add_translation(QM_FILES ${TS_FILES})
-endif()
-
-add_custom_target(libfm_translations DEPENDS ${QM_FILES})
 install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/libfm-qt/translations")
 
 # prevent the generated files from being deleted during make cleaner

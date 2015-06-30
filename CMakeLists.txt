@@ -11,6 +11,8 @@ set(LIBFM_QT_VERSION_MINOR 9)
 set(LIBFM_QT_VERSION_PATCH 0)
 set(LIBFM_QT_VERSION ${LIBFM_QT_VERSION_MAJOR}.${LIBFM_QT_VERSION_MINOR}.${LIBFM_QT_VERSION_PATCH})
 
+list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
+
 # We use the libtool versioning scheme for the internal so name, "current:revision:age"
 # http://www.gnu.org/software/libtool/manual/html_node/Updating-version-info.html#Updating-version-info
 # https://www.sourceware.org/autobook/autobook/autobook_91.html
@@ -43,6 +45,8 @@ pkg_check_modules(LIBFM REQUIRED libfm>=1.2.0)
 pkg_check_modules(LIBMENUCACHE REQUIRED libmenu-cache>=0.4.0)
 
 include(GNUInstallDirs)
+include(LXQtTranslateTs)
+include(LXQtTranslateDesktop)
 
 add_definitions(-DQT_NO_KEYWORDS)
 
@@ -56,12 +60,6 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 add_subdirectory(libfm-qt)
 add_subdirectory(pcmanfm)
-
-# update translations
-add_custom_target(update_translations ALL DEPENDS
-    libfm_translations
-    pcmanfm_translations
-)
 
 # manpage for pcmanfm-qt
 configure_file(
