@@ -152,133 +152,133 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="32"/>
+        <location filename="../file-props.ui" line="41"/>
         <source>General</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="71"/>
+        <location filename="../file-props.ui" line="80"/>
         <source>Location:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="94"/>
+        <location filename="../file-props.ui" line="106"/>
         <source>File type:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="114"/>
+        <location filename="../file-props.ui" line="129"/>
         <source>Mime type:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="134"/>
+        <location filename="../file-props.ui" line="152"/>
         <source>File size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="154"/>
+        <location filename="../file-props.ui" line="175"/>
         <source>On-disk size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="174"/>
+        <location filename="../file-props.ui" line="198"/>
         <source>Last modified:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="194"/>
+        <location filename="../file-props.ui" line="221"/>
         <source>Link target:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="217"/>
+        <location filename="../file-props.ui" line="247"/>
         <source>Open With:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="234"/>
+        <location filename="../file-props.ui" line="267"/>
         <source>Last accessed:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="249"/>
+        <location filename="../file-props.ui" line="285"/>
         <source>Permissions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="264"/>
+        <location filename="../file-props.ui" line="300"/>
         <source>Ownership</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="288"/>
-        <location filename="../file-props.ui" line="353"/>
-        <location filename="../file-props.ui" line="467"/>
+        <location filename="../file-props.ui" line="324"/>
+        <location filename="../file-props.ui" line="389"/>
+        <location filename="../file-props.ui" line="503"/>
         <source>Group:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="301"/>
-        <location filename="../file-props.ui" line="336"/>
-        <location filename="../file-props.ui" line="415"/>
+        <location filename="../file-props.ui" line="337"/>
+        <location filename="../file-props.ui" line="372"/>
+        <location filename="../file-props.ui" line="451"/>
         <source>Owner:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="317"/>
+        <location filename="../file-props.ui" line="353"/>
         <source>Access Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="370"/>
-        <location filename="../file-props.ui" line="519"/>
+        <location filename="../file-props.ui" line="406"/>
+        <location filename="../file-props.ui" line="555"/>
         <source>Other:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="387"/>
+        <location filename="../file-props.ui" line="423"/>
         <source>Make the file executable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="428"/>
-        <location filename="../file-props.ui" line="480"/>
-        <location filename="../file-props.ui" line="532"/>
+        <location filename="../file-props.ui" line="464"/>
+        <location filename="../file-props.ui" line="516"/>
+        <location filename="../file-props.ui" line="568"/>
         <source>Read</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="441"/>
-        <location filename="../file-props.ui" line="493"/>
-        <location filename="../file-props.ui" line="545"/>
+        <location filename="../file-props.ui" line="477"/>
+        <location filename="../file-props.ui" line="529"/>
+        <location filename="../file-props.ui" line="581"/>
         <source>Write</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="454"/>
-        <location filename="../file-props.ui" line="506"/>
-        <location filename="../file-props.ui" line="558"/>
+        <location filename="../file-props.ui" line="490"/>
+        <location filename="../file-props.ui" line="542"/>
+        <location filename="../file-props.ui" line="594"/>
         <source>Execute</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="567"/>
+        <location filename="../file-props.ui" line="603"/>
         <source>Sticky</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="574"/>
+        <location filename="../file-props.ui" line="610"/>
         <source>SetUID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="581"/>
+        <location filename="../file-props.ui" line="617"/>
         <source>SetGID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="617"/>
+        <location filename="../file-props.ui" line="653"/>
         <source>Advanced Mode</source>
         <translation type="unfinished"></translation>
     </message>
@@ -365,6 +365,16 @@ What do you want to do with it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="82"/>
+        <source>Open With...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="110"/>
+        <source>Other Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../filemenu.cpp" line="128"/>
         <source>&amp;Restore</source>
         <translation type="unfinished"></translation>
@@ -391,28 +401,8 @@ What do you want to do with it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="289"/>
-        <source>Output</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../filemenu.cpp" line="339"/>
-        <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../filemenu.cpp" line="150"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../filemenu.cpp" line="82"/>
-        <source>Open With...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../filemenu.cpp" line="110"/>
-        <source>Other Applications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -435,33 +425,43 @@ What do you want to do with it?</source>
         <source>Properties</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../filemenu.cpp" line="289"/>
+        <source>Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="339"/>
+        <source>&amp;Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Fm::FileOperation</name>
     <message>
-        <location filename="../fileoperation.cpp" line="188"/>
+        <location filename="../fileoperation.cpp" line="219"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="189"/>
+        <location filename="../fileoperation.cpp" line="220"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="230"/>
-        <location filename="../fileoperation.cpp" line="246"/>
+        <location filename="../fileoperation.cpp" line="261"/>
+        <location filename="../fileoperation.cpp" line="277"/>
         <source>Confirm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="231"/>
+        <location filename="../fileoperation.cpp" line="262"/>
         <source>Do you want to delete the selected files?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="247"/>
+        <location filename="../fileoperation.cpp" line="278"/>
         <source>Do you want to move the selected files to trash can?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -688,27 +688,27 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="249"/>
+        <location filename="../foldermodel.cpp" line="250"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="252"/>
+        <location filename="../foldermodel.cpp" line="253"/>
         <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="255"/>
+        <location filename="../foldermodel.cpp" line="256"/>
         <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="258"/>
+        <location filename="../foldermodel.cpp" line="259"/>
         <source>Modified</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="261"/>
+        <location filename="../foldermodel.cpp" line="262"/>
         <source>Owner</source>
         <translation type="unfinished"></translation>
     </message>
@@ -747,66 +747,86 @@ Do you want to delete them instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="205"/>
-        <source>Trash</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../placesmodel.cpp" line="57"/>
+        <location filename="../placesmodel.cpp" line="58"/>
         <source>Computer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="69"/>
+        <location filename="../placesmodel.cpp" line="71"/>
         <source>Applications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="80"/>
+        <location filename="../placesmodel.cpp" line="83"/>
         <source>Network</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="88"/>
+        <location filename="../placesmodel.cpp" line="91"/>
         <source>Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="130"/>
+        <location filename="../placesmodel.cpp" line="133"/>
         <source>Bookmarks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesmodel.cpp" line="208"/>
+        <source>Trash</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="281"/>
+        <location filename="../placesview.cpp" line="332"/>
+        <source>Open in New Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesview.cpp" line="335"/>
+        <source>Open in New Window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesview.cpp" line="344"/>
         <source>Empty Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="290"/>
-        <source>Rename</source>
+        <location filename="../placesview.cpp" line="353"/>
+        <source>Move Bookmark Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="293"/>
-        <source>Delete</source>
+        <location filename="../placesview.cpp" line="358"/>
+        <source>Move Bookmark Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="303"/>
-        <location filename="../placesview.cpp" line="321"/>
+        <location filename="../placesview.cpp" line="362"/>
+        <source>Rename Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesview.cpp" line="365"/>
+        <source>Remove Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesview.cpp" line="374"/>
+        <location filename="../placesview.cpp" line="391"/>
         <source>Unmount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="307"/>
+        <location filename="../placesview.cpp" line="378"/>
         <source>Mount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="313"/>
+        <location filename="../placesview.cpp" line="384"/>
         <source>Eject</source>
         <translation type="unfinished"></translation>
     </message>
@@ -920,14 +940,6 @@ Modified: %3</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../utilities.cpp" line="152"/>
-        <location filename="../utilities.cpp" line="226"/>
-        <location filename="../mountoperation.cpp" line="185"/>
-        <location filename="../filelauncher.cpp" line="109"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../utilities.cpp" line="123"/>
         <source>Rename File</source>
         <translation type="unfinished"></translation>
@@ -938,33 +950,46 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="167"/>
+        <location filename="../utilities.cpp" line="152"/>
+        <location filename="../utilities.cpp" line="228"/>
+        <location filename="../mountoperation.cpp" line="185"/>
+        <location filename="../filelauncher.cpp" line="109"/>
+        <source>Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utilities.cpp" line="164"/>
+        <source>Create Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utilities.cpp" line="165"/>
+        <source>Create File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utilities.cpp" line="169"/>
         <source>Please enter a new file name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="168"/>
+        <location filename="../utilities.cpp" line="170"/>
         <source>New text file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="172"/>
+        <location filename="../utilities.cpp" line="174"/>
         <source>Please enter a new folder name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="173"/>
+        <location filename="../utilities.cpp" line="175"/>
         <source>New folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="178"/>
+        <location filename="../utilities.cpp" line="180"/>
         <source>Enter a name for the new %1:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../utilities.cpp" line="187"/>
-        <source>Create File</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
