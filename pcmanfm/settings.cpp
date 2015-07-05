@@ -71,6 +71,7 @@ Settings::Settings():
   desktopSortColumn_(Fm::FolderModel::ColumnFileName),
   alwaysShowTabs_(true),
   showTabClose_(true),
+  rememberWindowSize_(true),
   fixedWindowWidth_(640),
   fixedWindowHeight_(480),
   lastWindowWidth_(640),

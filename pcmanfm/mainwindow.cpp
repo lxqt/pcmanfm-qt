@@ -691,17 +691,18 @@ void MainWindow::onSplitterMoved(int pos, int index) {
 }
 
 void MainWindow::loadBookmarksMenu() {
-  GList* l = fm_bookmarks_get_all(bookmarks);
+  GList* allBookmarks = fm_bookmarks_get_all(bookmarks);
   QAction* before = ui.actionAddToBookmarks;
 
-  for(; l; l = l->next) {
+  for(GList* l = allBookmarks; l; l = l->next) {
     FmBookmarkItem* item = reinterpret_cast<FmBookmarkItem*>(l->data);
-    BookmarkAction* action = new BookmarkAction(item);
+    BookmarkAction* action = new BookmarkAction(item, ui.menu_Bookmarks);
     connect(action, &QAction::triggered, this, &MainWindow::onBookmarkActionTriggered);
     ui.menu_Bookmarks->insertAction(before, action);
   }
 
   ui.menu_Bookmarks->insertSeparator(before);
+  g_list_free_full(allBookmarks, (GDestroyNotify)fm_bookmark_item_unref);
 }
 
 void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {

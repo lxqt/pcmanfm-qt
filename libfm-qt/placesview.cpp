@@ -292,7 +292,6 @@ void PlacesView::onUnmountVolume() {
   if(!action->index().isValid())
     return;
   PlacesModelVolumeItem* item = static_cast<PlacesModelVolumeItem*>(model_->itemFromIndex(action->index()));
-  GMount* mount = NULL;
   MountOperation* op = new MountOperation(true, this);
   op->unmount(item->volume());
   op->wait();

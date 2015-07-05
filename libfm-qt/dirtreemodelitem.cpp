@@ -226,7 +226,6 @@ qDebug() << "folder loaded";
 void DirTreeModelItem::onFolderFilesAdded(FmFolder* folder, GSList* files, gpointer user_data) {
   GSList* l;
   DirTreeModelItem* _this = (DirTreeModelItem*)user_data;
-  DirTreeModel* model = _this->model_;
   for(l = files; l; l = l->next) {
     FmFileInfo* fi = FM_FILE_INFO(l->data);
     if(fm_file_info_is_dir(fi)) { /* FIXME: maybe adding files can be allowed later */

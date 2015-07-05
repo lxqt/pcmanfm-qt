@@ -42,8 +42,6 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   Q_ASSERT(index.isValid());
   QStyleOptionViewItemV4 opt = option;
   initStyleOption(&opt, index);
-  const QWidget* widget = opt.widget;
-  QStyle* style = widget ? widget->style() : QApplication::style();
 
   painter->save();
   painter->setClipRect(option.rect);
@@ -112,8 +110,8 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   QRectF boundRect = layout.boundingRect();
   boundRect.setWidth(width);
   boundRect.moveTo(textRect.x() + (textRect.width() - width)/2, textRect.y());
-  if(opt.state & QStyle::State_Selected) {
-    QPalette palette = widget->palette();
+  if((opt.state & QStyle::State_Selected) && opt.widget) {
+    QPalette palette = opt.widget->palette();
     // qDebug("w: %f, h:%f, m:%f", boundRect.width(), boundRect.height(), layout.minimumWidth());
     painter->fillRect(boundRect, palette.highlight());
   }
@@ -158,8 +156,6 @@ QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QM
     return qvariant_cast<QSize>(value);
   QStyleOptionViewItemV4 opt = option;
   initStyleOption(&opt, index);
-  const QWidget* widget = opt.widget;
-  QStyle* style = widget ? widget->style() : QApplication::style();
 
   // use grid size as size hint
   QSize gridSize = view_->gridSize();

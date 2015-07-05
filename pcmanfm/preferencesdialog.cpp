@@ -81,8 +81,6 @@ static void findIconThemesInDir(QHash<QString, QString>& iconThemes, QString dir
 }
 
 void PreferencesDialog::initIconThemes(Settings& settings) {
-  Application* app = static_cast<Application*>(qApp);
-
   // check if auto-detection is done (for example, from xsettings)
   if(settings.useFallbackIconTheme()) { // auto-detection failed
     // load xdg icon themes and select the current one

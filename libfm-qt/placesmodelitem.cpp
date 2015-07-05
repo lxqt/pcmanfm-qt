@@ -130,7 +130,9 @@ PlacesModelVolumeItem::PlacesModelVolumeItem(GVolume* volume):
 
 void PlacesModelVolumeItem::update() {
   // set title
-  setText(QString::fromUtf8(g_volume_get_name(volume_)));
+  char* volumeName = g_volume_get_name(volume_);
+  setText(QString::fromUtf8(volumeName));
+  g_free(volumeName);
 
   // set icon
   GIcon* gicon = g_volume_get_icon(volume_);
