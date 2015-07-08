@@ -44,6 +44,7 @@ pkg_check_modules(SYSTEM_LIBS REQUIRED
 pkg_check_modules(LIBFM REQUIRED libfm>=1.2.0)
 pkg_check_modules(LIBMENUCACHE REQUIRED libmenu-cache>=0.4.0)
 
+option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 include(GNUInstallDirs)
 include(LXQtTranslateTs)
 include(LXQtTranslateDesktop)
