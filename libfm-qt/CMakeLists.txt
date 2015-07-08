@@ -3,6 +3,7 @@ project(fm-qt)
 set(LIBRARY_NAME "fm-qt5")
 set(QTX_INCLUDE_DIRS "")
 set(QTX_LIBRARIES Qt5::Widgets Qt5::X11Extras)
+set(libfm_TRANSLATION_TEMPLATE "lib${PROJECT_NAME}")
 
 include_directories(
     ${QTX_INCLUDE_DIRS}
@@ -79,6 +80,7 @@ qt5_wrap_ui(libfm_UIS_H ${libfm_UIS})
 lxqt_translate_ts(QM_FILES
     UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
     SOURCES ${libfm_SRCS} ${libfm_UIS}
+    TEMPLATE ${libfm_TRANSLATION_TEMPLATE}
 )
 
 add_library(${LIBRARY_NAME} SHARED

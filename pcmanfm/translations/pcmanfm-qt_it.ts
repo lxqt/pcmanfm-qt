@@ -760,7 +760,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Ripete l&apos;immagine per riempire tutto lo schermo</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="129"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="128"/>
         <source>Image Files</source>
         <translation>File immagine</translation>
     </message>
@@ -786,23 +786,23 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Versione:%1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="830"/>
+        <location filename="../mainwindow.cpp" line="831"/>
         <source>&amp;Move to Trash</source>
         <translation>Cestin&amp;a</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="830"/>
+        <location filename="../mainwindow.cpp" line="831"/>
         <source>&amp;Delete</source>
         <translation>&amp;Rimuovi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="892"/>
-        <location filename="../mainwindow.cpp" line="903"/>
+        <location filename="../mainwindow.cpp" line="893"/>
+        <location filename="../mainwindow.cpp" line="904"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="903"/>
+        <location filename="../mainwindow.cpp" line="904"/>
         <source>Switch user command is not set.</source>
         <translation>Il comando per cambiare utente non è impostato.</translation>
     </message>
@@ -810,22 +810,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="175"/>
+        <location filename="../preferencesdialog.cpp" line="173"/>
         <source>Icon View</source>
         <translation>Vista icone</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="176"/>
+        <location filename="../preferencesdialog.cpp" line="174"/>
         <source>Compact Icon View</source>
         <translation>Vista icone compatta</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="177"/>
+        <location filename="../preferencesdialog.cpp" line="175"/>
         <source>Thumbnail View</source>
         <translation>Vista miniature</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="178"/>
+        <location filename="../preferencesdialog.cpp" line="176"/>
         <source>Detailed List View</source>
         <translation>Vista elenco dettagliato</translation>
     </message>
@@ -859,7 +859,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="391"/>
+        <location filename="../tabpage.cpp" line="388"/>
         <source>%1 item(s) selected</source>
         <translation>%1 elementi selezionati</translation>
     </message>

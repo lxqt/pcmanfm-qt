@@ -338,7 +338,7 @@
 <context>
     <name>Fm::EditBookmarksDialog</name>
     <message>
-        <location filename="../editbookmarksdialog.cpp" line="95"/>
+        <location filename="../editbookmarksdialog.cpp" line="96"/>
         <source>New bookmark</source>
         <translation type="unfinished"></translation>
     </message>
@@ -439,29 +439,29 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileOperation</name>
     <message>
-        <location filename="../fileoperation.cpp" line="219"/>
+        <location filename="../fileoperation.cpp" line="220"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="220"/>
+        <location filename="../fileoperation.cpp" line="221"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="261"/>
-        <location filename="../fileoperation.cpp" line="277"/>
+        <location filename="../fileoperation.cpp" line="262"/>
+        <location filename="../fileoperation.cpp" line="278"/>
         <source>Confirm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="262"/>
+        <location filename="../fileoperation.cpp" line="263"/>
         <source>Do you want to delete the selected files?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="278"/>
+        <location filename="../fileoperation.cpp" line="279"/>
         <source>Do you want to move the selected files to trash can?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -688,27 +688,27 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="250"/>
+        <location filename="../foldermodel.cpp" line="248"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="253"/>
+        <location filename="../foldermodel.cpp" line="251"/>
         <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="256"/>
+        <location filename="../foldermodel.cpp" line="254"/>
         <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="259"/>
+        <location filename="../foldermodel.cpp" line="257"/>
         <source>Modified</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="262"/>
+        <location filename="../foldermodel.cpp" line="260"/>
         <source>Owner</source>
         <translation type="unfinished"></translation>
     </message>
@@ -737,42 +737,42 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::PlacesModel</name>
     <message>
-        <location filename="../placesmodel.cpp" line="41"/>
+        <location filename="../placesmodel.cpp" line="40"/>
         <source>Places</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="49"/>
+        <location filename="../placesmodel.cpp" line="48"/>
         <source>Desktop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="58"/>
+        <location filename="../placesmodel.cpp" line="57"/>
         <source>Computer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="71"/>
+        <location filename="../placesmodel.cpp" line="70"/>
         <source>Applications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="83"/>
+        <location filename="../placesmodel.cpp" line="82"/>
         <source>Network</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="91"/>
+        <location filename="../placesmodel.cpp" line="90"/>
         <source>Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="133"/>
+        <location filename="../placesmodel.cpp" line="132"/>
         <source>Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="208"/>
+        <location filename="../placesmodel.cpp" line="207"/>
         <source>Trash</source>
         <translation type="unfinished"></translation>
     </message>
@@ -780,53 +780,53 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="332"/>
+        <location filename="../placesview.cpp" line="331"/>
         <source>Open in New Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="335"/>
+        <location filename="../placesview.cpp" line="334"/>
         <source>Open in New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="344"/>
+        <location filename="../placesview.cpp" line="343"/>
         <source>Empty Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="353"/>
+        <location filename="../placesview.cpp" line="352"/>
         <source>Move Bookmark Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="358"/>
+        <location filename="../placesview.cpp" line="357"/>
         <source>Move Bookmark Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="362"/>
+        <location filename="../placesview.cpp" line="361"/>
         <source>Rename Bookmark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="365"/>
+        <location filename="../placesview.cpp" line="364"/>
         <source>Remove Bookmark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="374"/>
-        <location filename="../placesview.cpp" line="391"/>
+        <location filename="../placesview.cpp" line="373"/>
+        <location filename="../placesview.cpp" line="390"/>
         <source>Unmount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="378"/>
+        <location filename="../placesview.cpp" line="377"/>
         <source>Mount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="384"/>
+        <location filename="../placesview.cpp" line="383"/>
         <source>Eject</source>
         <translation type="unfinished"></translation>
     </message>

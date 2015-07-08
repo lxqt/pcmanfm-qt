@@ -756,7 +756,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Sąsiadująco</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="129"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="128"/>
         <source>Image Files</source>
         <translation>Pliki obrazków</translation>
     </message>
@@ -782,23 +782,23 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Wersja: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="830"/>
+        <location filename="../mainwindow.cpp" line="831"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Przenieś do kosza</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="830"/>
+        <location filename="../mainwindow.cpp" line="831"/>
         <source>&amp;Delete</source>
         <translation>&amp;Usuń</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="892"/>
-        <location filename="../mainwindow.cpp" line="903"/>
+        <location filename="../mainwindow.cpp" line="893"/>
+        <location filename="../mainwindow.cpp" line="904"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="903"/>
+        <location filename="../mainwindow.cpp" line="904"/>
         <source>Switch user command is not set.</source>
         <translation>Nie ustawiono polecenia do przełączania użytkowników.</translation>
     </message>
@@ -806,22 +806,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="175"/>
+        <location filename="../preferencesdialog.cpp" line="173"/>
         <source>Icon View</source>
         <translation>Widok ikon</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="176"/>
+        <location filename="../preferencesdialog.cpp" line="174"/>
         <source>Compact Icon View</source>
         <translation>Lista zwarta</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="177"/>
+        <location filename="../preferencesdialog.cpp" line="175"/>
         <source>Thumbnail View</source>
         <translation>Miniatury</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="178"/>
+        <location filename="../preferencesdialog.cpp" line="176"/>
         <source>Detailed List View</source>
         <translation>Lista szczegółowa</translation>
     </message>
@@ -857,7 +857,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="391"/>
+        <location filename="../tabpage.cpp" line="388"/>
         <source>%1 item(s) selected</source>
         <translation>Zaznaczono %1 elementy</translation>
     </message>

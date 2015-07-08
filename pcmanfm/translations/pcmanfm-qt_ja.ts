@@ -822,7 +822,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <translation>画面全体に並べる</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="129"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="128"/>
         <source>Image Files</source>
         <translation>画像ファイル</translation>
     </message>
@@ -848,23 +848,23 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <translation>バージョン: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="830"/>
+        <location filename="../mainwindow.cpp" line="831"/>
         <source>&amp;Move to Trash</source>
         <translation>ゴミ箱へ移動(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="830"/>
+        <location filename="../mainwindow.cpp" line="831"/>
         <source>&amp;Delete</source>
         <translation>削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="892"/>
-        <location filename="../mainwindow.cpp" line="903"/>
+        <location filename="../mainwindow.cpp" line="893"/>
+        <location filename="../mainwindow.cpp" line="904"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="903"/>
+        <location filename="../mainwindow.cpp" line="904"/>
         <source>Switch user command is not set.</source>
         <translation>ユーザー切替コマンドを未設定です</translation>
     </message>
@@ -876,22 +876,22 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="175"/>
+        <location filename="../preferencesdialog.cpp" line="173"/>
         <source>Icon View</source>
         <translation>アイコン表示</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="176"/>
+        <location filename="../preferencesdialog.cpp" line="174"/>
         <source>Compact Icon View</source>
         <translation>小さなアイコン表示</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="177"/>
+        <location filename="../preferencesdialog.cpp" line="175"/>
         <source>Thumbnail View</source>
         <translation>サムネイル表示</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="178"/>
+        <location filename="../preferencesdialog.cpp" line="176"/>
         <source>Detailed List View</source>
         <translation>詳細なリスト表示</translation>
     </message>
@@ -923,7 +923,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="391"/>
+        <location filename="../tabpage.cpp" line="388"/>
         <source>%1 item(s) selected</source>
         <translation>%1 個のアイテムを選択</translation>
     </message>

@@ -821,7 +821,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         <translation>Faire une mosaïque avec l&apos;image pour remplir l&apos;écran entier</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="129"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="128"/>
         <source>Image Files</source>
         <translation>Fichiers image</translation>
     </message>
@@ -847,23 +847,23 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="830"/>
+        <location filename="../mainwindow.cpp" line="831"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mettre à la corbeille</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="830"/>
+        <location filename="../mainwindow.cpp" line="831"/>
         <source>&amp;Delete</source>
         <translation>&amp;Supprimer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="892"/>
-        <location filename="../mainwindow.cpp" line="903"/>
+        <location filename="../mainwindow.cpp" line="893"/>
+        <location filename="../mainwindow.cpp" line="904"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="903"/>
+        <location filename="../mainwindow.cpp" line="904"/>
         <source>Switch user command is not set.</source>
         <translation>La commande de changement d’utilisateur n&apos;est pas configurée.</translation>
     </message>
@@ -871,22 +871,22 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="175"/>
+        <location filename="../preferencesdialog.cpp" line="173"/>
         <source>Icon View</source>
         <translation>Vue en icônes</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="176"/>
+        <location filename="../preferencesdialog.cpp" line="174"/>
         <source>Compact Icon View</source>
         <translation>Vue en icônes compacte</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="177"/>
+        <location filename="../preferencesdialog.cpp" line="175"/>
         <source>Thumbnail View</source>
         <translation>Vue en vignettes</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="178"/>
+        <location filename="../preferencesdialog.cpp" line="176"/>
         <source>Detailed List View</source>
         <translation>Vue en liste détaillée</translation>
     </message>
@@ -920,7 +920,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="391"/>
+        <location filename="../tabpage.cpp" line="388"/>
         <source>%1 item(s) selected</source>
         <translation>%1 élément(s) sélectionné(s)</translation>
     </message>
