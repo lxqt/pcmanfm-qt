@@ -341,6 +341,7 @@ void MainWindow::on_actionFolderProperties_triggered() {
 void MainWindow::on_actionShowHidden_triggered(bool checked) {
   TabPage* tabPage = currentPage();
   tabPage->setShowHidden(checked);
+  ui.sidePane->setShowHidden(checked);
   static_cast<Application*>(qApp)->settings().setShowHidden(checked);
 }
 
@@ -590,6 +591,7 @@ void MainWindow::updateUIForCurrentPage() {
 
     // update side pane
     ui.sidePane->setCurrentPath(tabPage->path());
+    ui.sidePane->setShowHidden(tabPage->showHidden());
 
     // update back/forward/up toolbar buttons
     ui.actionGoUp->setEnabled(tabPage->canUp());

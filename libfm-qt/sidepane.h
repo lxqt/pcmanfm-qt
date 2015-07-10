@@ -82,7 +82,7 @@ public:
   QString modeTooltip(Mode mode);
 #endif
 
-  bool setShowHidden(bool show_hidden);
+  void setShowHidden(bool show_hidden);
 
   bool showHidden() {
     return showHidden_;

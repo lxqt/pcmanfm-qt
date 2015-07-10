@@ -161,6 +161,7 @@ void SidePane::initDirTree() {
   // TODO
   DirTreeModel* model = new DirTreeModel(view_);
   FmFileInfoJob* job = fm_file_info_job_new(NULL, FM_FILE_INFO_JOB_NONE);
+  model->setShowHidden(showHidden_);
 
   GList* l;
   /* query FmFileInfo for home dir and root dir, and then,
@@ -227,16 +228,16 @@ void SidePane::setMode(Mode mode) {
   Q_EMIT modeChanged(mode);
 }
 
-bool SidePane::setShowHidden(bool show_hidden) {
-  if(view_ == NULL)
-    return false;
-  // TODO: SidePane::setShowHidden
-
-  // spec = g_object_class_find_property(klass, "show-hidden");
-  //if(spec == NULL || spec->value_type != G_TYPE_BOOLEAN)
-  //  return false; /* isn't supported by view */
-  // g_object_set(sp->view, "show-hidden", show_hidden, NULL);
-  return true;
+void SidePane::setShowHidden(bool show_hidden) {
+  if(view_ == NULL || show_hidden == showHidden_)
+    return;
+  showHidden_ = show_hidden;
+  if(mode_ == ModeDirTree) {
+    DirTreeView* dirTreeView = static_cast<DirTreeView*>(view_);
+    DirTreeModel* model = static_cast<DirTreeModel*>( dirTreeView->model());
+    if(model)
+      model->setShowHidden(showHidden_);
+  }
 }
 
 } // namespace Fm
