@@ -204,7 +204,7 @@ bool Application::parseCommandLineArgs() {
             paths.push_back(QDir::currentPath());
         }
         if(!paths.isEmpty())
-          launchFiles(paths, parser.isSet(newWindowOption));
+          launchFiles(QDir::currentPath(), paths, parser.isSet(newWindowOption));
         keepRunning = true;
       }
     }
@@ -239,8 +239,8 @@ bool Application::parseCommandLineArgs() {
         QStringList paths = parser.positionalArguments();
         if(paths.isEmpty()) {
           paths.push_back(QDir::currentPath());
-	}
-        iface.call("launchFiles", paths, parser.isSet(newWindowOption));
+        }
+        iface.call("launchFiles", QDir::currentPath(), paths, parser.isSet(newWindowOption));
       }
     }
   }
@@ -374,15 +374,31 @@ void Application::findFiles(QStringList paths) {
   qDebug("findFiles");
 }
 
-void Application::launchFiles(QStringList paths, bool inNewWindow) {
+void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) {
   FmPathList* pathList = fm_path_list_new();
+  FmPath* cwd_path = NULL;
   QStringList::iterator it;
-  for(it = paths.begin(); it != paths.end(); ++it) {
-    QString& pathName = *it;
-    FmPath* path = fm_path_new_for_commandline_arg(pathName.toLocal8Bit().constData());
+  Q_FOREACH(const QString& it, paths) {
+    QByteArray pathName = it.toLocal8Bit();
+    FmPath* path = NULL;
+    if(pathName[0] == '/') // absolute path
+        path = fm_path_new_for_path(pathName.constData());
+    else if(pathName.contains(":/")) // URI
+        path = fm_path_new_for_uri(pathName.constData());
+    else if(pathName == "~") // special case for home dir
+        path = fm_path_ref(fm_path_get_home());
+    else // basename
+    {
+        if(Q_UNLIKELY(!cwd_path))
+            cwd_path = fm_path_new_for_str(cwd.toLocal8Bit().constData());
+        path = fm_path_new_relative(cwd_path, pathName.constData());
+    }
     fm_path_list_push_tail(pathList, path);
     fm_path_unref(path);
   }
+  if(cwd_path)
+      fm_path_unref(cwd_path);
+
   Launcher(NULL).launchPaths(NULL, pathList);
   fm_path_list_unref(pathList);
 }

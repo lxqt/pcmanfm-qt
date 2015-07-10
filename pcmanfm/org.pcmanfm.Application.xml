@@ -11,6 +11,7 @@
       <arg type="b" direction="in"/>
     </method>
     <method name="launchFiles">
+      <arg type="s" direction="in"/>
       <arg type="as" direction="in"/>
       <arg type="b" direction="in"/>
     </method>

@@ -69,7 +69,7 @@ public:
   }
 
   // public interface exported via dbus
-  void launchFiles(QStringList paths, bool inNewWindow);
+  void launchFiles(QString cwd, QStringList paths, bool inNewWindow);
   void setWallpaper(QString path, QString modeString);
   void preferences(QString page);
   void desktopPrefrences(QString page);
