@@ -316,6 +316,17 @@ void FolderViewTreeView::dataChanged(const QModelIndex& topLeft, const QModelInd
   // queueLayoutColumns();
 }
 
+void FolderViewTreeView::reset() {
+  // Sometimes when the content of the model is radically changed, Qt does reset()
+  // on the model rather than doing large amount of insertion and deletion.
+  // This is for performance reason so in this case rowsInserted() and rowsAboutToBeRemoved()
+  // might not be called. Hence we also have to re-layout the columns when the model is reset.
+  // This fixes bug #190
+  // https://github.com/lxde/pcmanfm-qt/issues/190
+  QTreeView::reset();
+  queueLayoutColumns();
+}
+
 void FolderViewTreeView::queueLayoutColumns() {
   // qDebug("queueLayoutColumns");
   if(!layoutTimer_) {
