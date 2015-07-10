@@ -240,7 +240,7 @@ FmPath* fm_search_dup_path(FmSearch* search)
     {
         char *escaped;
         /* add paths */
-	GList* l;
+        GList* l;
         for(l = search->search_path_list; ; )
         {
             char *path_str = (char*)l->data;
@@ -249,7 +249,7 @@ FmPath* fm_search_dup_path(FmSearch* search)
             g_string_append(search_str, escaped);
             g_free(escaped);
 
-	    l = l->next;
+            l = l->next;
             if(!l) /* no more items */
                 break;
             g_string_append_c(search_str, ','); /* separator for paths */
