@@ -22,6 +22,7 @@
 #include "fm-search.h"
 #include "ui_filesearch.h"
 #include <limits>
+#include <QFileDialog>
 
 namespace Fm {
 
@@ -34,6 +35,12 @@ FileSearchDialog::FileSearchDialog(QStringList paths, QWidget* parent, Qt::Windo
   Q_FOREACH(const QString& path, paths) {
     ui->listView->addItem(path);
   }
+
+  ui->maxTime->setDate(QDate::currentDate());
+  ui->minTime->setDate(QDate::currentDate());
+
+  connect(ui->addPath, &QPushButton::clicked, this, &FileSearchDialog::onAddPath);
+  connect(ui->removePath, &QPushButton::clicked, this, &FileSearchDialog::onRemovePath);
 }
 
 FileSearchDialog::~FileSearchDialog() {
@@ -70,21 +77,21 @@ void FileSearchDialog::accept() {
       fm_search_add_mime_type(search, "audio/*");
     if(ui->searchVideo->isChecked())
       fm_search_add_mime_type(search, "video/*");
-    //if(ui->search->isChecked())
-    //  fm_search_add_mime_type(search, "inode/directory");
+    if(ui->searchFolders->isChecked())
+      fm_search_add_mime_type(search, "inode/directory");
     if(ui->searchDocuments->isChecked()) {
       const char* doc_types[] = {
-        "application/pdf;"
+        "application/pdf",
         /* "text/html;" */
-        "application/vnd.oasis.opendocument.*;"
-        "application/vnd.openxmlformats-officedocument.*;"
-        "application/msword;application/vnd.ms-word;"
+        "application/vnd.oasis.opendocument.*",
+        "application/vnd.openxmlformats-officedocument.*",
+        "application/msword;application/vnd.ms-word",
         "application/msexcel;application/vnd.ms-excel"
       };
       for(i = 0; i < sizeof(doc_types)/sizeof(char*); ++i)
-	fm_search_add_mime_type(search, doc_types[i]);
+        fm_search_add_mime_type(search, doc_types[i]);
     }
-    
+
     // search based on file size
     const unsigned int unit_bytes[] = {1, (1024), (1024*1024), (1024*1024*1024)};
     if(ui->largerThan->isChecked()) {
@@ -114,6 +121,23 @@ void FileSearchDialog::accept() {
     return;
   }
   QDialog::accept();
+}
+
+void FileSearchDialog::onAddPath() {
+  QString dir = QFileDialog::getExistingDirectory(this, tr("Select a folder"));
+  if(dir.isEmpty())
+    return;
+  // avoid adding duplicated items
+  if(ui->listView->findItems(dir, Qt::MatchFixedString|Qt::MatchCaseSensitive).isEmpty()) {
+    ui->listView->addItem(dir);
+  }
+}
+
+void FileSearchDialog::onRemovePath() {
+  // remove selected items
+  Q_FOREACH(QListWidgetItem* item, ui->listView->selectedItems()) {
+    delete item;
+  }
 }
 
 }
