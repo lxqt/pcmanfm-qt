@@ -42,6 +42,10 @@ public:
 
   virtual void accept();
 
+private Q_SLOTS:
+  void onAddPath();
+  void onRemovePath();
+
 private:
   Ui::SearchDialog* ui;
   Path searchUri_;
