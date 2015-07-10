@@ -544,6 +544,12 @@ void FolderView::setViewMode(ViewMode _mode) {
   }
 }
 
+void FolderView::updateAfterFolderLoaded() {
+  if(FolderViewTreeView* treeView = qobject_cast<FolderViewTreeView*>(view)) {
+    treeView->queueLayoutColumns();
+  }
+}
+
 // set proper grid size for the QListView based on current view mode, icon size, and font size.
 void FolderView::updateGridSize() {
   if(mode == DetailedListMode || !view)
