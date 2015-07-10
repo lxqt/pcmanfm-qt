@@ -366,10 +366,18 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QDateEdit" name="maxTime"/>
+           <widget class="QDateEdit" name="maxTime">
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QDateEdit" name="minTime"/>
+           <widget class="QDateEdit" name="minTime">
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>
