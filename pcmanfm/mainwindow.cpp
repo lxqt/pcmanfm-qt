@@ -934,6 +934,11 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
   }
 }
 
+void MainWindow::on_actionFindFiles_triggered() {
+  Application* app = static_cast<Application*>(qApp);
+  app->findFiles(QStringList() << currentPage()->pathName());
+}
+
 void MainWindow::on_actionOpenTerminal_triggered() {
   TabPage* page = currentPage();
   if(page) {

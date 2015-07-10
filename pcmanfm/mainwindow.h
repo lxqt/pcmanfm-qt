@@ -109,6 +109,7 @@ protected Q_SLOTS:
 
   void on_actionOpenTerminal_triggered();
   void on_actionOpenAsRoot_triggered();
+  void on_actionFindFiles_triggered();
 
   void on_actionAbout_triggered();
 

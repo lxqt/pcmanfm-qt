@@ -75,7 +75,7 @@ public:
   void desktopPrefrences(QString page);
   void editBookmarks();
   void desktopManager(bool enabled);
-  void findFiles(QStringList paths);
+  void findFiles(QStringList paths = QStringList());
 
   bool desktopManagerEnabled() {
     return enableDesktopManager_;
@@ -107,6 +107,8 @@ protected Q_SLOTS:
   void onScreenDestroyed(QObject* screenObj);
   void onScreenAdded(QScreen* newScreen);
   void reloadDesktopsAsNeeded();
+
+  void onFindFileAccepted();
 
 protected:
   virtual bool eventFilter(QObject* watched, QEvent* event);

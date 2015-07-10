@@ -20,7 +20,16 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
-    <property name="margin">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
      <number>0</number>
     </property>
     <item>
@@ -67,7 +76,7 @@
      <x>0</x>
      <y>0</y>
      <width>460</width>
-     <height>27</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -171,6 +180,7 @@
     </property>
     <addaction name="actionOpenTerminal"/>
     <addaction name="actionOpenAsRoot"/>
+    <addaction name="actionFindFiles"/>
    </widget>
    <addaction name="menu_File"/>
    <addaction name="menu_Editw"/>
@@ -657,6 +667,11 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Alt+N</string>
+   </property>
+  </action>
+  <action name="actionFindFiles">
+   <property name="text">
+    <string>&amp;Find Files</string>
    </property>
   </action>
  </widget>
