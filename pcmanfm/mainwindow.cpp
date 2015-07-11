@@ -655,15 +655,15 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
 
 void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
   switch(target) {
-  case View::OpenInCurrentView:
+  case OpenInCurrentTab:
     chdir(path);
     break;
 
-  case View::OpenInNewTab:
+  case OpenInNewTab:
     addTab(path);
     break;
 
-  case View::OpenInNewWindow: {
+  case OpenInNewWindow: {
     (new MainWindow(path))->show();
     break;
   }
@@ -752,9 +752,22 @@ void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
 void MainWindow::onBookmarkActionTriggered() {
   BookmarkAction* action = static_cast<BookmarkAction*>(sender());
   FmPath* path = action->path();
-
-  if(path)
-    chdir(path);
+  if(path) {
+    Application* app = static_cast<Application*>(qApp);
+    Settings& settings = app->settings();
+    switch(settings.bookmarkOpenMethod()) {
+    case OpenInCurrentTab: /* current tab */
+    default:
+      chdir(path);
+      break;
+    case OpenInNewTab: /* new tab */
+      addTab(path);
+      break;
+    case OpenInNewWindow: /* new window */
+      (new MainWindow(path))->show();
+      break;
+    }
+  }
 }
 
 void MainWindow::on_actionCopy_triggered() {

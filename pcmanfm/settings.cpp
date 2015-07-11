@@ -30,8 +30,8 @@
 
 using namespace PCManFM;
 
-inline static const char* bookmarkOpenMethodToString(int value);
-inline static int bookmarkOpenMethodFromString(const QString str);
+inline static const char* bookmarkOpenMethodToString(OpenDirTargetType value);
+inline static OpenDirTargetType bookmarkOpenMethodFromString(const QString str);
 
 inline static const char* wallpaperModeToString(int value);
 inline static int wallpaperModeFromString(const QString str);
@@ -53,7 +53,7 @@ Settings::Settings():
   supportTrash_(Fm::uriExists("trash:///")), // check if trash:/// is supported
   fallbackIconThemeName_(),
   useFallbackIconTheme_(QIcon::themeName().isEmpty() || QIcon::themeName() == "hicolor"),
-  bookmarkOpenMethod_(0),
+  bookmarkOpenMethod_(OpenInCurrentTab),
   suCommand_(),
   terminal_(),
   mountOnStartup_(true),
@@ -255,7 +255,7 @@ bool Settings::saveFile(QString filePath) {
   settings.endGroup();
 
   settings.beginGroup("Behavior");
-  // settings.setValue("BookmarkOpenMethod", bookmarkOpenMethodToString(bookmarkOpenMethod_));
+  settings.setValue("BookmarkOpenMethod", bookmarkOpenMethodToString(bookmarkOpenMethod_));
   // settings for use with libfm
   settings.setValue("UseTrash", useTrash_);
   settings.setValue("SingleClick", singleClick_);
@@ -327,12 +327,30 @@ bool Settings::saveFile(QString filePath) {
   return true;
 }
 
-static const char* bookmarkOpenMethodToString(int value) {
+static const char* bookmarkOpenMethodToString(OpenDirTargetType value) {
+  switch(value) {
+  case OpenInCurrentTab:
+  default:
+    return "current_tab";
+  case OpenInNewTab:
+    return "new_tab";
+  case OpenInNewWindow:
+    return "new_window";
+  case OpenInLastActiveWindow:
+    return "last_window";
+  }
   return "";
 }
 
-static int bookmarkOpenMethodFromString(const QString str) {
-  return 0;
+static OpenDirTargetType bookmarkOpenMethodFromString(const QString str) {
+
+  if(str == QStringLiteral("new_tab"))
+    return OpenInNewTab;
+  else if(str == QStringLiteral("new_window"))
+    return OpenInNewWindow;
+  else if(str == QStringLiteral("last_window"))
+    return OpenInLastActiveWindow;
+  return OpenInCurrentTab;
 }
 
 static const char* viewModeToString(Fm::FolderView::ViewMode value) {

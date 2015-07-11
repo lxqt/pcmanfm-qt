@@ -303,7 +303,7 @@ void PreferencesDialog::applyBehaviorPage(Settings& settings) {
   settings.setSingleClick(ui.singleClick->isChecked());
   settings.setAutoSelectionDelay(int(ui.autoSelectionDelay->value() * 1000));
 
-  settings.setBookmarkOpenMethod(ui.bookmarkOpenMethod->currentIndex());
+  settings.setBookmarkOpenMethod(OpenDirTargetType(ui.bookmarkOpenMethod->currentIndex()));
 
   // FIXME: bug here?
   Fm::FolderView::ViewMode mode = Fm::FolderView::ViewMode(ui.viewMode->itemData(ui.viewMode->currentIndex()).toInt());
