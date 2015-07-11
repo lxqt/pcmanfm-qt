@@ -36,12 +36,6 @@ class View : public Fm::FolderView {
 Q_OBJECT
 public:
 
-  enum OpenDirTargetType {
-    OpenInCurrentView,
-    OpenInNewWindow,
-    OpenInNewTab
-  };
-
   explicit View(Fm::FolderView::ViewMode _mode = IconMode, QWidget* parent = 0);
   virtual ~View();
 

@@ -31,6 +31,13 @@
 
 namespace PCManFM {
 
+enum OpenDirTargetType {
+    OpenInCurrentTab,
+    OpenInNewTab,
+    OpenInNewWindow,
+    OpenInLastActiveWindow
+};
+
 class Settings : public QObject {
   Q_OBJECT
 public:
@@ -66,11 +73,11 @@ public:
     fallbackIconThemeName_ = iconThemeName;
   }
 
-  int bookmarkOpenMethod() {
+  OpenDirTargetType bookmarkOpenMethod() {
     return bookmarkOpenMethod_;
   }
 
-  void setBookmarkOpenMethod(int bookmarkOpenMethod) {
+  void setBookmarkOpenMethod(OpenDirTargetType bookmarkOpenMethod) {
     bookmarkOpenMethod_ = bookmarkOpenMethod;
   }
 
@@ -529,7 +536,7 @@ private:
   QString fallbackIconThemeName_;
   bool useFallbackIconTheme_;
 
-  int bookmarkOpenMethod_;
+  OpenDirTargetType bookmarkOpenMethod_;
   QString suCommand_;
   QString terminal_;
   bool mountOnStartup_;
