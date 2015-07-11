@@ -31,6 +31,8 @@ class QWidget;
 
 namespace Fm {
 
+class FileMenu;
+
 class LIBFM_QT_API SidePane : public QWidget {
   Q_OBJECT
 
@@ -106,6 +108,8 @@ Q_SIGNALS:
   void openFolderInTerminalRequested(FmPath* path);
   void createNewFolderRequested(FmPath* path);
   void modeChanged(Fm::SidePane::Mode mode);
+
+  void prepareFileMenu(Fm::FileMenu* menu); // emit before showing a Fm::FileMenu
 
 protected Q_SLOTS:
   void onPlacesViewChdirRequested(int type, FmPath* path);

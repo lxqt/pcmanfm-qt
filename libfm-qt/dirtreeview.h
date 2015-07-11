@@ -30,6 +30,7 @@ class QItemSelection;
 
 namespace Fm {
 
+class FileMenu;
 class DirTreeModelItem;
 
 class LIBFM_QT_API DirTreeView : public QTreeView {
@@ -69,6 +70,7 @@ Q_SIGNALS:
   void openFolderInNewTabRequested(FmPath* path);
   void openFolderInTerminalRequested(FmPath* path);
   void createNewFolderRequested(FmPath* path);
+  void prepareFileMenu(Fm::FileMenu* menu); // emit before showing a Fm::FileMenu
 
 protected Q_SLOTS:
   void onCollapsed(const QModelIndex & index);

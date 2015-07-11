@@ -26,6 +26,7 @@
 #include "dirtreeview.h"
 #include "dirtreemodel.h"
 #include "path.h"
+#include "filemenu.h"
 
 namespace Fm {
 
@@ -216,6 +217,8 @@ void SidePane::setMode(Mode mode) {
             this, &SidePane::openFolderInTerminalRequested);
     connect(dirTreeView, &DirTreeView::createNewFolderRequested,
             this, &SidePane::createNewFolderRequested);
+    connect(dirTreeView, &DirTreeView::prepareFileMenu,
+            this, &SidePane::prepareFileMenu);
     break;
   }
   default:;
