@@ -380,6 +380,24 @@ public:
 
   void setNoUsbTrash(bool noUsbTrash) {
     noUsbTrash_ = noUsbTrash;
+    fm_config->no_usb_trash = noUsbTrash_; // also set this to libfm since FmFileOpsJob reads this config value before trashing files.
+  }
+
+  bool confirmTrash() const {
+    return confirmTrash_;
+  }
+
+  void setConfirmTrash(bool value) {
+    confirmTrash_ = value;
+  }
+
+  bool quickExec() const {
+    return quickExec_;
+  }
+
+  void setQuickExec(bool value) {
+    quickExec_ = value;
+    fm_config->quick_exec = quickExec_;
   }
 
   // bool thumbnailLocal_;
@@ -451,6 +469,58 @@ public:
     fm_config->si_unit = (gboolean)siUnit_;
   }
 
+  bool backupAsHidden() const {
+    return backupAsHidden_;
+  }
+
+  void setBackupAsHidden(bool value) {
+    backupAsHidden_ = value;
+    fm_config->backup_as_hidden = backupAsHidden_; // also set this to libfm since fm_file_info_is_hidden() reads this value internally.
+  }
+
+  bool showFullNames() const {
+    return showFullNames_;
+  }
+
+  void setShowFullNames(bool value) {
+    showFullNames_ = value;
+  }
+
+  bool shadowHidden() const {
+    return shadowHidden_;
+  }
+
+  void setShadowHidden(bool value) {
+    shadowHidden_ = value;
+  }
+
+  bool onlyUserTemplates() const {
+    return onlyUserTemplates_;
+  }
+
+  void setOnlyUserTemplates(bool value) {
+    onlyUserTemplates_ = value;
+    fm_config->only_user_templates = onlyUserTemplates_;
+  }
+
+  bool templateTypeOnce() const {
+    return templateTypeOnce_;
+  }
+
+  void setTemplateTypeOnce(bool value) {
+    templateTypeOnce_ = value;
+    fm_config->template_type_once = templateTypeOnce_;
+  }
+
+  bool templateRunApp() const {
+    return templateRunApp_;
+  }
+
+  void setTemplateRunApp(bool value) {
+    templateRunApp_ = value;
+    fm_config->template_run_app = templateRunApp_;
+  }
+
 private:
   QString profileName_;
   bool supportTrash_;
@@ -502,16 +572,25 @@ private:
   bool useTrash_;
   bool confirmDelete_;
   bool noUsbTrash_; // do not trash files on usb removable devices
+  bool confirmTrash_; // Confirm before moving files into "trash can"
+  bool quickExec_; // Don't ask options on launch executable file
 
   bool showThumbnails_;
 
   QString archiver_;
   bool siUnit_;
+  bool backupAsHidden_;
+  bool showFullNames_;
+  bool shadowHidden_;
 
   int bigIconSize_;
   int smallIconSize_;
   int sidePaneIconSize_;
   int thumbnailIconSize_;
+
+  bool onlyUserTemplates_;
+  bool templateTypeOnce_;
+  bool templateRunApp_;
 };
 
 }

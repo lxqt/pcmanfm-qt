@@ -83,6 +83,7 @@ void View::onSearch() {
 void View::prepareFileMenu(Fm::FileMenu* menu) {
   Application* app = static_cast<Application*>(qApp);
   menu->setConfirmDelete(app->settings().confirmDelete());
+  menu->setConfirmTrash(app->settings().confirmTrash());
   menu->setUseTrash(app->settings().useTrash());
 
   // add some more menu items for dirs

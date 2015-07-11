@@ -783,7 +783,7 @@ void MainWindow::on_actionDelete_triggered() {
 
   bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
   if(settings.useTrash() && !shiftPressed)
-    FileOperation::trashFiles(paths, settings.confirmDelete(), this);
+    FileOperation::trashFiles(paths, settings.confirmTrash(), this);
   else
     FileOperation::deleteFiles(paths, settings.confirmDelete(), this);
 

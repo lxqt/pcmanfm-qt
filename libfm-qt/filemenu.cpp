@@ -60,6 +60,8 @@ FileMenu::~FileMenu() {
 void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) {
   useTrash_ = true;
   confirmDelete_ = true;
+  confirmTrash_ = false; // Confirm before moving files into "trash can"
+
   files_ = fm_file_info_list_ref(files);
   info_ = info ? fm_file_info_ref(info) : NULL;
   cwd_ = cwd ? fm_path_ref(cwd) : NULL;
@@ -319,7 +321,7 @@ void FileMenu::onCutTriggered() {
 void FileMenu::onDeleteTriggered() {
   FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
   if(useTrash_)
-    FileOperation::trashFiles(paths, confirmDelete_);
+    FileOperation::trashFiles(paths, confirmTrash_);
   else
     FileOperation::deleteFiles(paths, confirmDelete_);
   fm_path_list_unref(paths);

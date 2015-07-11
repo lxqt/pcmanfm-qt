@@ -44,6 +44,14 @@ public:
   bool launchFiles(QWidget* parent, GList* file_infos);
   bool launchPaths(QWidget* parent, GList* paths);
 
+  bool quickExec() const {
+    return quickExec_;
+  }
+
+  void setQuickExec(bool value) {
+    quickExec_ = value;
+  }
+
 protected:
 
   virtual GAppInfo* getApp(GList* file_infos, FmMimeType* mime_type, GError** err);
@@ -71,6 +79,7 @@ private:
 
 private:
   static FmFileLauncher funcs;
+  bool quickExec_; // Don't ask options on launch executable file
 };
 
 }
