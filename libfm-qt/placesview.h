@@ -29,7 +29,7 @@ namespace Fm {
 
 class PlacesModel;
 class PlacesModelItem;
-  
+
 class LIBFM_QT_API PlacesView : public QTreeView {
 Q_OBJECT
 
@@ -50,7 +50,7 @@ public:
   void chdir(FmPath* path) {
     setCurrentPath(path);
   }
-  
+
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
 
@@ -59,6 +59,9 @@ protected Q_SLOTS:
   void onPressed(const QModelIndex & index);
   // void onMountOperationFinished(GError* error);
 
+  void onOpenNewTab();
+  void onOpenNewWindow();
+
   void onEmptyTrash();
 
   void onMountVolume();
@@ -66,6 +69,8 @@ protected Q_SLOTS:
   void onEjectVolume();
   void onUnmountMount();
 
+  void onMoveBookmarkUp();
+  void onMoveBookmarkDown();
   void onDeleteBookmark();
   void onRenameBookmark();
 
@@ -77,7 +82,7 @@ protected:
   virtual void dragMoveEvent(QDragMoveEvent* event);
   virtual void dropEvent(QDropEvent* event);
   virtual void contextMenuEvent(QContextMenuEvent* event);
-  
+
   virtual void commitData(QWidget * editor);
 
 private:

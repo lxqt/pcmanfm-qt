@@ -129,7 +129,7 @@ void RenameDialog::onFileNameChanged(QString newName) {
   renameButton_->setEnabled(hasNewName);
   renameButton_->setDefault(hasNewName);
 
-  // change default button to rename rather than overwrire 
+  // change default button to rename rather than overwrire
   // if the user typed a new filename
   QPushButton* overwriteButton = static_cast<QPushButton*>(ui->buttonBox->button(QDialogButtonBox::Ok));
   overwriteButton->setEnabled(!hasNewName);

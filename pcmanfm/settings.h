@@ -26,9 +26,17 @@
 #include "folderview.h"
 #include "foldermodel.h"
 #include "desktopwindow.h"
+#include "sidepane.h"
 #include "thumbnailloader.h"
 
 namespace PCManFM {
+
+enum OpenDirTargetType {
+    OpenInCurrentTab,
+    OpenInNewTab,
+    OpenInNewWindow,
+    OpenInLastActiveWindow
+};
 
 class Settings : public QObject {
   Q_OBJECT
@@ -65,11 +73,11 @@ public:
     fallbackIconThemeName_ = iconThemeName;
   }
 
-  int bookmarkOpenMethod() {
+  OpenDirTargetType bookmarkOpenMethod() {
     return bookmarkOpenMethod_;
   }
 
-  void setBookmarkOpenMethod(int bookmarkOpenMethod) {
+  void setBookmarkOpenMethod(OpenDirTargetType bookmarkOpenMethod) {
     bookmarkOpenMethod_ = bookmarkOpenMethod;
   }
 
@@ -128,7 +136,7 @@ public:
   void setCloseOnUnmount(bool value) {
     closeOnUnmount_ = value;
   }
-  
+
   DesktopWindow::WallpaperMode wallpaperMode() const {
     return DesktopWindow::WallpaperMode(wallpaperMode_);
   }
@@ -176,11 +184,11 @@ public:
   void setDesktopFont(QFont font) {
     desktopFont_ = font;
   }
-  
+
   bool showWmMenu() const {
     return showWmMenu_;
   }
-  
+
   void setShowWmMenu(bool value) {
     showWmMenu_ = value;
   }
@@ -290,11 +298,11 @@ public:
     splitterPos_ = splitterPos;
   }
 
-  int sidePaneMode() const {
+  Fm::SidePane::Mode sidePaneMode() const {
     return sidePaneMode_;
   }
 
-  void setSidePaneMode(int sidePaneMode) {
+  void setSidePaneMode(Fm::SidePane::Mode sidePaneMode) {
     sidePaneMode_ = sidePaneMode;
   }
 
@@ -350,11 +358,11 @@ public:
   int autoSelectionDelay() const {
     return autoSelectionDelay_;
   }
-  
+
   void setAutoSelectionDelay(int value) {
     autoSelectionDelay_ = value;
   }
-  
+
   bool useTrash() const {
     if(!supportTrash_)
       return false;
@@ -379,6 +387,24 @@ public:
 
   void setNoUsbTrash(bool noUsbTrash) {
     noUsbTrash_ = noUsbTrash;
+    fm_config->no_usb_trash = noUsbTrash_; // also set this to libfm since FmFileOpsJob reads this config value before trashing files.
+  }
+
+  bool confirmTrash() const {
+    return confirmTrash_;
+  }
+
+  void setConfirmTrash(bool value) {
+    confirmTrash_ = value;
+  }
+
+  bool quickExec() const {
+    return quickExec_;
+  }
+
+  void setQuickExec(bool value) {
+    quickExec_ = value;
+    fm_config->quick_exec = quickExec_;
   }
 
   // bool thumbnailLocal_;
@@ -450,6 +476,58 @@ public:
     fm_config->si_unit = (gboolean)siUnit_;
   }
 
+  bool backupAsHidden() const {
+    return backupAsHidden_;
+  }
+
+  void setBackupAsHidden(bool value) {
+    backupAsHidden_ = value;
+    fm_config->backup_as_hidden = backupAsHidden_; // also set this to libfm since fm_file_info_is_hidden() reads this value internally.
+  }
+
+  bool showFullNames() const {
+    return showFullNames_;
+  }
+
+  void setShowFullNames(bool value) {
+    showFullNames_ = value;
+  }
+
+  bool shadowHidden() const {
+    return shadowHidden_;
+  }
+
+  void setShadowHidden(bool value) {
+    shadowHidden_ = value;
+  }
+
+  bool onlyUserTemplates() const {
+    return onlyUserTemplates_;
+  }
+
+  void setOnlyUserTemplates(bool value) {
+    onlyUserTemplates_ = value;
+    fm_config->only_user_templates = onlyUserTemplates_;
+  }
+
+  bool templateTypeOnce() const {
+    return templateTypeOnce_;
+  }
+
+  void setTemplateTypeOnce(bool value) {
+    templateTypeOnce_ = value;
+    fm_config->template_type_once = templateTypeOnce_;
+  }
+
+  bool templateRunApp() const {
+    return templateRunApp_;
+  }
+
+  void setTemplateRunApp(bool value) {
+    templateRunApp_ = value;
+    fm_config->template_run_app = templateRunApp_;
+  }
+
 private:
   QString profileName_;
   bool supportTrash_;
@@ -458,7 +536,7 @@ private:
   QString fallbackIconThemeName_;
   bool useFallbackIconTheme_;
 
-  int bookmarkOpenMethod_;
+  OpenDirTargetType bookmarkOpenMethod_;
   QString suCommand_;
   QString terminal_;
   bool mountOnStartup_;
@@ -487,7 +565,7 @@ private:
   int lastWindowHeight_;
   bool lastWindowMaximized_;
   int splitterPos_;
-  int sidePaneMode_;
+  Fm::SidePane::Mode sidePaneMode_;
 
   Fm::FolderView::ViewMode viewMode_;
   bool showHidden_;
@@ -501,16 +579,25 @@ private:
   bool useTrash_;
   bool confirmDelete_;
   bool noUsbTrash_; // do not trash files on usb removable devices
+  bool confirmTrash_; // Confirm before moving files into "trash can"
+  bool quickExec_; // Don't ask options on launch executable file
 
   bool showThumbnails_;
 
   QString archiver_;
   bool siUnit_;
+  bool backupAsHidden_;
+  bool showFullNames_;
+  bool shadowHidden_;
 
   int bigIconSize_;
   int smallIconSize_;
   int sidePaneIconSize_;
   int thumbnailIconSize_;
+
+  bool onlyUserTemplates_;
+  bool templateTypeOnce_;
+  bool templateRunApp_;
 };
 
 }

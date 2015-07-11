@@ -43,7 +43,7 @@ public:
 
   void loadFolder();
   void unloadFolder();
-  
+
   bool isPlaceHolder() {
     return (fileInfo_ == NULL);
   }

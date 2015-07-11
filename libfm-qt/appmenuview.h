@@ -30,7 +30,7 @@ class QStandardItemModel;
 class QStandardItem;
 
 namespace Fm {
-  
+
 class AppMenuViewItem;
 
 class LIBFM_QT_API AppMenuView : public QTreeView {
@@ -51,7 +51,7 @@ public:
 
 Q_SIGNALS:
   void selectionChanged();
-  
+
 private:
   void addMenuItems(QStandardItem* parentItem, MenuCacheDir* dir);
   void onMenuCacheReload(MenuCache* mc);

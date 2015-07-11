@@ -53,8 +53,6 @@ QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QMo
     initStyleOption(&opt, index);
     opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
     opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
-    const QWidget* widget = opt.widget;
-    QStyle* style = widget ? widget->style() : QApplication::style();
 
     // FIXME: there're some problems in this size hint calculation.
     Q_ASSERT(gridSize_ != QSize());
@@ -132,9 +130,6 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
 
 // if painter is NULL, the method calculate the bounding rectangle of the text and save it to textRect
 void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt, QRectF& textRect) const {
-  const QWidget* widget = opt.widget;
-  QStyle* style = widget->style() ? widget->style() : qApp->style();
-  const int focusMargin = style->pixelMetric(QStyle::PM_FocusFrameHMargin, &opt, widget);
   QTextLayout layout(opt.text, opt.font);
   QTextOption textOption;
   textOption.setAlignment(opt.displayAlignment);
@@ -210,7 +205,10 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt
                   ? QPalette::Normal : QPalette::Disabled;
     o.backgroundColor = opt.palette.color(cg, (opt.state & QStyle::State_Selected)
                                   ? QPalette::Highlight : QPalette::Window);
-    style->drawPrimitive(QStyle::PE_FrameFocusRect, &o, painter, widget);
+    if (const QWidget* widget = opt.widget) {
+      QStyle* style = widget->style() ? widget->style() : qApp->style();
+      style->drawPrimitive(QStyle::PE_FrameFocusRect, &o, painter, widget);
+    }
   }
 }
 

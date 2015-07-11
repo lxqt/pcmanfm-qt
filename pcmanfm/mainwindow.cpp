@@ -98,8 +98,14 @@ MainWindow::MainWindow(FmPath* path):
 
   // side pane
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
-  ui.sidePane->setMode(Fm::SidePane::ModePlaces);
+  ui.sidePane->setMode(settings.sidePaneMode());
   connect(ui.sidePane, &Fm::SidePane::chdirRequested, this, &MainWindow::onSidePaneChdirRequested);
+  connect(ui.sidePane, &Fm::SidePane::openFolderInNewWindowRequested, this, &MainWindow::onSidePaneOpenFolderInNewWindowRequested);
+  connect(ui.sidePane, &Fm::SidePane::openFolderInNewTabRequested, this, &MainWindow::onSidePaneOpenFolderInNewTabRequested);
+  connect(ui.sidePane, &Fm::SidePane::openFolderInTerminalRequested, this, &MainWindow::onSidePaneOpenFolderInTerminalRequested);
+  connect(ui.sidePane, &Fm::SidePane::createNewFolderRequested, this, &MainWindow::onSidePaneCreateNewFolderRequested);
+  connect(ui.sidePane, &Fm::SidePane::modeChanged, this, &MainWindow::onSidePaneModeChanged);
+
   // detect change of splitter position
   connect(ui.splitter, &QSplitter::splitterMoved, this, &MainWindow::onSplitterMoved);
 
@@ -177,6 +183,13 @@ MainWindow::MainWindow(FmPath* path):
 
   if(path)
     addTab(path);
+
+  // size from settings
+  if(settings.rememberWindowSize()) {
+    resize(settings.windowWidth(), settings.windowHeight());
+    if(settings.windowMaximized())
+      setWindowState(windowState() | Qt::WindowMaximized);
+  }
 }
 
 MainWindow::~MainWindow() {
@@ -266,14 +279,25 @@ void MainWindow::on_actionNewTab_triggered() {
 
 void MainWindow::on_actionNewWin_triggered() {
   FmPath* path = currentPage()->path();
-  Application* app = static_cast<Application*>(qApp);
-  MainWindow* newWin = new MainWindow(path);
-  newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
+  (new MainWindow(path))->show();
+}
 
-  if(app->settings().windowMaximized())
-  	newWin->setWindowState(newWin->windowState() | Qt::WindowMaximized);
-  
-  newWin->show();
+void MainWindow::on_actionNewFolder_triggered() {
+  if(TabPage* tabPage = currentPage()) {
+    FmPath* dirPath = tabPage->folderView()->path();
+
+    if(dirPath)
+      createFileOrFolder(CreateNewFolder, dirPath);
+  }
+}
+
+void MainWindow::on_actionNewBlankFile_triggered() {
+  if(TabPage* tabPage = currentPage()) {
+    FmPath* dirPath = tabPage->folderView()->path();
+
+    if(dirPath)
+      createFileOrFolder(CreateNewTextFile, dirPath);
+  }
 }
 
 void MainWindow::on_actionCloseTab_triggered() {
@@ -317,6 +341,7 @@ void MainWindow::on_actionFolderProperties_triggered() {
 void MainWindow::on_actionShowHidden_triggered(bool checked) {
   TabPage* tabPage = currentPage();
   tabPage->setShowHidden(checked);
+  ui.sidePane->setShowHidden(checked);
   static_cast<Application*>(qApp)->settings().setShowHidden(checked);
 }
 
@@ -566,6 +591,7 @@ void MainWindow::updateUIForCurrentPage() {
 
     // update side pane
     ui.sidePane->setCurrentPath(tabPage->path());
+    ui.sidePane->setShowHidden(tabPage->showHidden());
 
     // update back/forward/up toolbar buttons
     ui.actionGoUp->setEnabled(tabPage->canUp());
@@ -629,24 +655,16 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
 
 void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
   switch(target) {
-  case View::OpenInCurrentView:
+  case OpenInCurrentTab:
     chdir(path);
     break;
 
-  case View::OpenInNewTab:
+  case OpenInNewTab:
     addTab(path);
     break;
 
-  case View::OpenInNewWindow: {
-    Application* app = static_cast<Application*>(qApp);
-    MainWindow* newWin = new MainWindow(path);
-    // TODO: apply window size from app->settings
-    newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
-    
-    if(app->settings().windowMaximized())
-        newWin->setWindowState(newWin->windowState() | Qt::WindowMaximized);
-    
-    newWin->show();
+  case OpenInNewWindow: {
+    (new MainWindow(path))->show();
     break;
   }
   }
@@ -671,6 +689,29 @@ void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {
     chdir(path);
   else if(type == 1) // middle button
     addTab(path);
+  else if(type == 2) // new window
+    (new MainWindow(path))->show();
+}
+
+void MainWindow::onSidePaneOpenFolderInNewWindowRequested(FmPath* path) {
+  (new MainWindow(path))->show();
+}
+
+void MainWindow::onSidePaneOpenFolderInNewTabRequested(FmPath* path) {
+  addTab(path);
+}
+
+void MainWindow::onSidePaneOpenFolderInTerminalRequested(FmPath* path) {
+  Application* app = static_cast<Application*>(qApp);
+  app->openFolderInTerminal(path);
+}
+
+void MainWindow::onSidePaneCreateNewFolderRequested(FmPath* path) {
+  createFileOrFolder(CreateNewFolder, path);
+}
+
+void MainWindow::onSidePaneModeChanged(Fm::SidePane::Mode mode) {
+  static_cast<Application*>(qApp)->settings().setSidePaneMode(mode);
 }
 
 void MainWindow::onSplitterMoved(int pos, int index) {
@@ -679,17 +720,18 @@ void MainWindow::onSplitterMoved(int pos, int index) {
 }
 
 void MainWindow::loadBookmarksMenu() {
-  GList* l = fm_bookmarks_get_all(bookmarks);
+  GList* allBookmarks = fm_bookmarks_get_all(bookmarks);
   QAction* before = ui.actionAddToBookmarks;
 
-  for(; l; l = l->next) {
+  for(GList* l = allBookmarks; l; l = l->next) {
     FmBookmarkItem* item = reinterpret_cast<FmBookmarkItem*>(l->data);
-    BookmarkAction* action = new BookmarkAction(item);
+    BookmarkAction* action = new BookmarkAction(item, ui.menu_Bookmarks);
     connect(action, &QAction::triggered, this, &MainWindow::onBookmarkActionTriggered);
     ui.menu_Bookmarks->insertAction(before, action);
   }
 
   ui.menu_Bookmarks->insertSeparator(before);
+  g_list_free_full(allBookmarks, (GDestroyNotify)fm_bookmark_item_unref);
 }
 
 void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
@@ -710,9 +752,22 @@ void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
 void MainWindow::onBookmarkActionTriggered() {
   BookmarkAction* action = static_cast<BookmarkAction*>(sender());
   FmPath* path = action->path();
-
-  if(path)
-    chdir(path);
+  if(path) {
+    Application* app = static_cast<Application*>(qApp);
+    Settings& settings = app->settings();
+    switch(settings.bookmarkOpenMethod()) {
+    case OpenInCurrentTab: /* current tab */
+    default:
+      chdir(path);
+      break;
+    case OpenInNewTab: /* new tab */
+      addTab(path);
+      break;
+    case OpenInNewWindow: /* new window */
+      (new MainWindow(path))->show();
+      break;
+    }
+  }
 }
 
 void MainWindow::on_actionCopy_triggered() {
@@ -741,7 +796,7 @@ void MainWindow::on_actionDelete_triggered() {
 
   bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
   if(settings.useTrash() && !shiftPressed)
-    FileOperation::trashFiles(paths, settings.confirmDelete(), this);
+    FileOperation::trashFiles(paths, settings.confirmTrash(), this);
   else
     FileOperation::deleteFiles(paths, settings.confirmDelete(), this);
 

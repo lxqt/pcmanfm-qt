@@ -104,7 +104,7 @@ void MountOperationPasswordDialog::done(int r) {
   GMountOperation* gmop = mountOperation->mountOperation();
 
   if(r == QDialog::Accepted) {
-    
+
     if(needUserName)
       g_mount_operation_set_username(gmop, ui->username->text().toUtf8());
     if(needDomain)

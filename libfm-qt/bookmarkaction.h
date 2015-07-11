@@ -40,7 +40,7 @@ public:
   FmBookmarkItem* bookmark() {
     return item_;
   }
-  
+
   FmPath* path() {
     return item_->path;
   }

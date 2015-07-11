@@ -45,7 +45,7 @@ Q_OBJECT
 public:
   explicit MountOperation(bool interactive = true, QWidget* parent = 0);
   ~MountOperation();
-  
+
   void mount(FmPath* path) {
     GFile* gf = fm_path_to_gfile(path);
     g_file_mount_enclosing_volume(gf, G_MOUNT_MOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onMountFileFinished, new QPointer<MountOperation>(this));
@@ -53,7 +53,7 @@ public:
   }
 
   void mount(GVolume* volume) {
-    g_volume_mount(volume, G_MOUNT_MOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onMountVolumeFinished, new QPointer<MountOperation>(this));    
+    g_volume_mount(volume, G_MOUNT_MOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onMountVolumeFinished, new QPointer<MountOperation>(this));
   }
 
   void unmount(GMount* mount) {
@@ -68,7 +68,7 @@ public:
     unmount(mount);
     g_object_unref(mount);
   }
-  
+
   void eject(GMount* mount) {
     prepareUnmount(mount);
     g_mount_eject_with_operation(mount, G_MOUNT_UNMOUNT_NONE, op, cancellable_, (GAsyncReadyCallback)onEjectMountFinished, new QPointer<MountOperation>(this));
@@ -92,11 +92,11 @@ public:
   GCancellable* cancellable() const {
     return cancellable_;
   }
-  
+
   GMountOperation* mountOperation() {
     return op;
   }
-  
+
   void cancel() {
     g_cancellable_cancel(cancellable_);
   }

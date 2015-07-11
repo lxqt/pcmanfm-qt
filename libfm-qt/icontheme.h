@@ -27,7 +27,7 @@
 #include "libfm/fm.h"
 
 namespace Fm {
-  
+
 // NOTE:
 // Qt seems to has its own QIcon pixmap caching mechanism internally.
 // Besides, it also caches QIcon objects created by QIcon::fromTheme().
@@ -49,7 +49,7 @@ public:
   static IconTheme* instance();
   static QIcon icon(FmIcon* fmicon);
   static QIcon icon(GIcon* gicon);
-  
+
   static void checkChanged(); // check if current icon theme name is changed
 Q_SIGNALS:
   void changed(); // emitted when the name of current icon theme is changed

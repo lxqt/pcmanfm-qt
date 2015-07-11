@@ -30,8 +30,8 @@
 
 using namespace PCManFM;
 
-inline static const char* bookmarkOpenMethodToString(int value);
-inline static int bookmarkOpenMethodFromString(const QString str);
+inline static const char* bookmarkOpenMethodToString(OpenDirTargetType value);
+inline static OpenDirTargetType bookmarkOpenMethodFromString(const QString str);
 
 inline static const char* wallpaperModeToString(int value);
 inline static int wallpaperModeFromString(const QString str);
@@ -39,8 +39,8 @@ inline static int wallpaperModeFromString(const QString str);
 inline static const char* viewModeToString(Fm::FolderView::ViewMode value);
 inline static Fm::FolderView::ViewMode viewModeFromString(const QString str);
 
-inline static const char* sidePaneModeToString(int value);
-inline static int sidePaneModeFromString(const QString str);
+inline static const char* sidePaneModeToString(Fm::SidePane::Mode value);
+inline static Fm::SidePane::Mode sidePaneModeFromString(const QString& str);
 
 inline static const char* sortOrderToString(Qt::SortOrder order);
 inline static Qt::SortOrder sortOrderFromString(const QString str);
@@ -53,7 +53,7 @@ Settings::Settings():
   supportTrash_(Fm::uriExists("trash:///")), // check if trash:/// is supported
   fallbackIconThemeName_(),
   useFallbackIconTheme_(QIcon::themeName().isEmpty() || QIcon::themeName() == "hicolor"),
-  bookmarkOpenMethod_(0),
+  bookmarkOpenMethod_(OpenInCurrentTab),
   suCommand_(),
   terminal_(),
   mountOnStartup_(true),
@@ -71,13 +71,14 @@ Settings::Settings():
   desktopSortColumn_(Fm::FolderModel::ColumnFileName),
   alwaysShowTabs_(true),
   showTabClose_(true),
+  rememberWindowSize_(true),
   fixedWindowWidth_(640),
   fixedWindowHeight_(480),
   lastWindowWidth_(640),
   lastWindowHeight_(480),
   lastWindowMaximized_(false),
   splitterPos_(120),
-  sidePaneMode_(0),
+  sidePaneMode_(Fm::SidePane::ModePlaces),
   viewMode_(Fm::FolderView::IconMode),
   showHidden_(false),
   sortOrder_(Qt::AscendingOrder),
@@ -89,6 +90,8 @@ Settings::Settings():
   useTrash_(true),
   confirmDelete_(true),
   noUsbTrash_(false),
+  confirmTrash_(false),
+  quickExec_(false),
   showThumbnails_(true),
   archiver_(),
   siUnit_(false),
@@ -150,6 +153,11 @@ bool Settings::loadFile(QString filePath) {
   setTerminal(settings.value("Terminal", "xterm").toString());
   setArchiver(settings.value("Archiver", "file-roller").toString());
   setSiUnit(settings.value("SIUnit", false).toBool());
+
+  setOnlyUserTemplates(settings.value("OnlyUserTemplates", false).toBool());
+  setTemplateTypeOnce(settings.value("OemplateTypeOnce", false).toBool());
+  setTemplateRunApp(settings.value("TemplateRunApp", false).toBool());
+
   settings.endGroup();
 
   settings.beginGroup("Behavior");
@@ -159,8 +167,9 @@ bool Settings::loadFile(QString filePath) {
   singleClick_ = settings.value("SingleClick", false).toBool();
   autoSelectionDelay_ = settings.value("AutoSelectionDelay", 600).toInt();
   confirmDelete_ = settings.value("ConfirmDelete", true).toBool();
-  noUsbTrash_ = settings.value("NoUsbTrash", false).toBool();
-  fm_config->no_usb_trash = noUsbTrash_; // also set this to libfm since FmFileOpsJob reads this config value before trashing files.
+  setNoUsbTrash(settings.value("NoUsbTrash", false).toBool());
+  confirmTrash_ = settings.value("ConfirmTrash", false).toBool();
+  setQuickExec(settings.value("QuickExec", false).toBool());
   // bool thumbnailLocal_;
   // bool thumbnailMax;
   settings.endGroup();
@@ -202,6 +211,10 @@ bool Settings::loadFile(QString filePath) {
   sortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
   sortFolderFirst_ = settings.value("SortFolderFirst", true).toBool();
 
+  setBackupAsHidden(settings.value("BackupAsHidden", false).toBool());
+  showFullNames_ = settings.value("ShowFullNames", false).toBool();
+  shadowHidden_ = settings.value("ShadowHidden", false).toBool();
+
   // override config in libfm's FmConfig
   bigIconSize_ = settings.value("BigIconSize", 48).toInt();
   smallIconSize_ = settings.value("SmallIconSize", 24).toInt();
@@ -234,16 +247,23 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("Terminal", terminal_);
   settings.setValue("Archiver", archiver_);
   settings.setValue("SIUnit", siUnit_);
+
+  settings.setValue("OnlyUserTemplates", onlyUserTemplates_);
+  settings.setValue("OemplateTypeOnce", templateTypeOnce_);
+  settings.setValue("TemplateRunApp", templateRunApp_);
+
   settings.endGroup();
 
   settings.beginGroup("Behavior");
-  // settings.setValue("BookmarkOpenMethod", bookmarkOpenMethodToString(bookmarkOpenMethod_));
+  settings.setValue("BookmarkOpenMethod", bookmarkOpenMethodToString(bookmarkOpenMethod_));
   // settings for use with libfm
   settings.setValue("UseTrash", useTrash_);
   settings.setValue("SingleClick", singleClick_);
   settings.setValue("AutoSelectionDelay", autoSelectionDelay_);
   settings.setValue("ConfirmDelete", confirmDelete_);
   settings.setValue("NoUsbTrash", noUsbTrash_);
+  settings.setValue("ConfirmTrash", confirmTrash_);
+  settings.setValue("QuickExec", quickExec_);
   // bool thumbnailLocal_;
   // bool thumbnailMax;
   settings.endGroup();
@@ -281,6 +301,10 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("SortColumn", sortColumnToString(sortColumn_));
   settings.setValue("SortFolderFirst", sortFolderFirst_);
 
+  settings.setValue("BackupAsHidden", backupAsHidden_);
+  settings.setValue("ShowFullNames", showFullNames_);
+  settings.setValue("ShadowHidden", shadowHidden_);
+
   // override config in libfm's FmConfig
   settings.setValue("BigIconSize", bigIconSize_);
   settings.setValue("SmallIconSize", smallIconSize_);
@@ -298,17 +322,35 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("AlwaysShowTabs", alwaysShowTabs_);
   settings.setValue("ShowTabClose", showTabClose_);
   settings.setValue("SplitterPos", splitterPos_);
-  // settings.setValue("SidePaneMode", sidePaneModeToString(sidePaneMode_));
+  settings.setValue("SidePaneMode", sidePaneModeToString(sidePaneMode_));
   settings.endGroup();
   return true;
 }
 
-static const char* bookmarkOpenMethodToString(int value) {
+static const char* bookmarkOpenMethodToString(OpenDirTargetType value) {
+  switch(value) {
+  case OpenInCurrentTab:
+  default:
+    return "current_tab";
+  case OpenInNewTab:
+    return "new_tab";
+  case OpenInNewWindow:
+    return "new_window";
+  case OpenInLastActiveWindow:
+    return "last_window";
+  }
   return "";
 }
 
-static int bookmarkOpenMethodFromString(const QString str) {
-  return 0;
+static OpenDirTargetType bookmarkOpenMethodFromString(const QString str) {
+
+  if(str == QStringLiteral("new_tab"))
+    return OpenInNewTab;
+  else if(str == QStringLiteral("new_window"))
+    return OpenInNewWindow;
+  else if(str == QStringLiteral("last_window"))
+    return OpenInLastActiveWindow;
+  return OpenInCurrentTab;
 }
 
 static const char* viewModeToString(Fm::FolderView::ViewMode value) {
@@ -432,12 +474,32 @@ static int wallpaperModeFromString(const QString str) {
   return ret;
 }
 
-static const char* sidePaneModeToString(int value) {
-  return NULL;
+static const char* sidePaneModeToString(Fm::SidePane::Mode value) {
+  const char* ret;
+  switch(value) {
+    case Fm::SidePane::ModePlaces:
+    default:
+      ret = "places";
+      break;
+    case Fm::SidePane::ModeDirTree:
+      ret = "dirtree";
+      break;
+    case Fm::SidePane::ModeNone:
+      ret = "none";
+      break;
+  }
+  return ret;
 }
 
-static int sidePaneModeFromString(const QString str) {
-  return 0;
+static Fm::SidePane::Mode sidePaneModeFromString(const QString& str) {
+  Fm::SidePane::Mode ret;
+  if(str == "none")
+    ret = Fm::SidePane::ModeNone;
+  else if(str == "dirtree")
+    ret = Fm::SidePane::ModeDirTree;
+  else
+    ret = Fm::SidePane::ModePlaces;
+  return ret;
 }
 
 void Settings::setTerminal(QString terminalCommand) {

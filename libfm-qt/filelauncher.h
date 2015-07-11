@@ -34,15 +34,23 @@ public:
 
   bool launchFiles(QWidget* parent, FmFileInfoList* file_infos) {
     GList* fileList = fm_file_info_list_peek_head_link(file_infos);
-    return Fm::FileLauncher::launchFiles(parent, fileList);
+    return launchFiles(parent, fileList);
   }
   bool launchPaths(QWidget* parent, FmPathList* paths) {
     GList* pathList = fm_path_list_peek_head_link(paths);
-    return Fm::FileLauncher::launchPaths(parent, pathList);
+    return launchPaths(parent, pathList);
   }
 
   bool launchFiles(QWidget* parent, GList* file_infos);
   bool launchPaths(QWidget* parent, GList* paths);
+
+  bool quickExec() const {
+    return quickExec_;
+  }
+
+  void setQuickExec(bool value) {
+    quickExec_ = value;
+  }
 
 protected:
 
@@ -71,6 +79,7 @@ private:
 
 private:
   static FmFileLauncher funcs;
+  bool quickExec_; // Don't ask options on launch executable file
 };
 
 }

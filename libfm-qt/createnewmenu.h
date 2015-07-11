@@ -1,6 +1,6 @@
 /*
-    <one line to give the library's name and an idea of what it does.>
-    Copyright (C) 2013  <copyright holder> <email>
+    Menu with entries to create new folders and files.
+    Copyright (C) 2012  Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -17,35 +17,35 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-
-#ifndef FM_CACHEDFOLDERMODEL_H
-#define FM_CACHEDFOLDERMODEL_H
+#ifndef FM_CREATENEWMENU_H
+#define FM_CREATENEWMENU_H
 
 #include "libfmqtglobals.h"
-#include "foldermodel.h"
+#include <QMenu>
+#include <libfm/fm.h>
 
 namespace Fm {
 
-class LIBFM_QT_API CachedFolderModel : public FolderModel {
-  Q_OBJECT
+class FolderView;
+
+class LIBFM_QT_API CreateNewMenu : public QMenu {
+Q_OBJECT
+
 public:
-  CachedFolderModel(FmFolder* folder);
-  void ref() {
-    ++refCount;
-  }
-  void unref();
+  explicit CreateNewMenu(QWidget* dialogParent, FmPath* dirPath,
+                         QWidget* parent = 0);
+  virtual ~CreateNewMenu();
 
-  static CachedFolderModel* modelFromFolder(FmFolder* folder);
-  static CachedFolderModel* modelFromPath(FmPath* path);
+protected Q_SLOTS:
+  void onCreateNewFolder();
+  void onCreateNewFile();
+  void onCreateNew();
 
 private:
-  virtual ~CachedFolderModel();
-  void setFolder(FmFolder* folder);
-private:
-  int refCount;
+  QWidget* dialogParent_;
+  FmPath* dirPath_;
 };
-
 
 }
 
-#endif // FM_CACHEDFOLDERMODEL_H
+#endif // FM_CREATENEWMENU_H

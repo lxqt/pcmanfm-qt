@@ -33,7 +33,7 @@ class LIBFM_QT_API ThumbnailLoader {
 public:
   ThumbnailLoader();
   virtual ~ThumbnailLoader();
-  
+
   static ThumbnailLoader* instance() {
     return theThumbnailLoader;
   }
@@ -70,7 +70,7 @@ public:
   static int maxThumbnailFileSize() {
     return maxThumbnailFileSize_;
   }
-  
+
   static void setMaxThumbnailFileSize(int size) {
     maxThumbnailFileSize_ = size;
     if(fm_config)

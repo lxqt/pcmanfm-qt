@@ -40,7 +40,7 @@ public:
   virtual ~FilePropsDialog();
 
   virtual void accept();
-  
+
   static FilePropsDialog* showForFile(FmFileInfo* file, QWidget* parent = 0) {
     FmFileInfoList* files = fm_file_info_list_new();
     fm_file_info_list_push_tail(files, file);
@@ -48,7 +48,7 @@ public:
     fm_file_info_list_unref(files);
     return dlg;
   }
-  
+
   static FilePropsDialog* showForFiles(FmFileInfoList* files, QWidget* parent = 0) {
     FilePropsDialog* dlg = new FilePropsDialog(files, parent);
     dlg->show();
@@ -65,7 +65,7 @@ private:
 
 private Q_SLOTS:
   void onFileSizeTimerTimeout();
-  
+
 private:
   Ui::FilePropsDialog* ui;
   FmFileInfoList* fileInfos_; // list of all file infos

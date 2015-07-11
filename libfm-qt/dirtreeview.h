@@ -30,8 +30,9 @@ class QItemSelection;
 
 namespace Fm {
 
+class FileMenu;
 class DirTreeModelItem;
-  
+
 class LIBFM_QT_API DirTreeView : public QTreeView {
   Q_OBJECT
 
@@ -57,7 +58,7 @@ public:
   virtual void setModel(QAbstractItemModel* model);
 
 protected:
-  virtual void contextMenuEvent(QContextMenuEvent* event);
+  virtual void mousePressEvent(QMouseEvent* event);
 
 private:
   void cancelPendingChdir();
@@ -65,12 +66,23 @@ private:
 
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
+  void openFolderInNewWindowRequested(FmPath* path);
+  void openFolderInNewTabRequested(FmPath* path);
+  void openFolderInTerminalRequested(FmPath* path);
+  void createNewFolderRequested(FmPath* path);
+  void prepareFileMenu(Fm::FileMenu* menu); // emit before showing a Fm::FileMenu
 
 protected Q_SLOTS:
   void onCollapsed(const QModelIndex & index);
   void onExpanded(const QModelIndex & index);
   void onRowLoaded(const QModelIndex& index);
   void onSelectionChanged(const QItemSelection & selected, const QItemSelection & deselected);
+  void onCustomContextMenuRequested(const QPoint& pos);
+  void onOpen();
+  void onNewWindow();
+  void onNewTab();
+  void onOpenInTerminal();
+  void onNewFolder();
 
 private:
   FmPath* currentPath_;

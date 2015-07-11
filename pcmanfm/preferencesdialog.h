@@ -39,10 +39,11 @@ public:
   virtual ~PreferencesDialog();
 
   virtual void accept();
-  
+
 private:
   void initIconThemes(Settings& settings);
   void initArchivers(Settings& settings);
+  void initDisplayPage(Settings& settings);
   void initUiPage(Settings& settings);
   void initBehaviorPage(Settings& settings);
   void initThumbnailPage(Settings& settings);
@@ -51,6 +52,7 @@ private:
   void initTerminals(Settings& settings);
 
   void applyUiPage(Settings& settings);
+  void applyDisplayPage(Settings& settings);
   void applyBehaviorPage(Settings& settings);
   void applyThumbnailPage(Settings& settings);
   void applyVolumePage(Settings& settings);

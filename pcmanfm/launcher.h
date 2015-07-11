@@ -24,7 +24,7 @@
 #include "filelauncher.h"
 
 namespace PCManFM {
-  
+
 class MainWindow;
 
 class Launcher : public Fm::FileLauncher {

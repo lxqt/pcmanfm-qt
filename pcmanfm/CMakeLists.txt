@@ -52,9 +52,24 @@ set(pcmanfm_UIS
 
 qt5_wrap_ui(pcmanfm_UIS_H ${pcmanfm_UIS})
 
+# add translation for pcmanfm-qt
+lxqt_translate_ts(QM_FILES
+    UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
+    SOURCES ${pcmanfm_SRCS} ${pcmanfm_UIS_H}
+)
+
+# translate desktop entry files for pcmanfm-qt and desktop preferences
+lxqt_translate_desktop(DESKTOP_FILES
+    SOURCES
+        pcmanfm-qt.desktop.in
+        pcmanfm-qt-desktop-pref.desktop.in
+)
+
 add_executable(pcmanfm-qt
     ${pcmanfm_SRCS}
     ${pcmanfm_UIS_H}
+    ${QM_FILES}
+    ${DESKTOP_FILES}
 )
 set_property(
      TARGET pcmanfm-qt APPEND
@@ -76,22 +91,9 @@ target_link_libraries(pcmanfm-qt
 install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 # install a desktop entry file for pcmanfm-qt and desktop preferences
-configure_file(pcmanfm-qt.desktop.in pcmanfm-qt.desktop @ONLY)
-configure_file(pcmanfm-qt-desktop-pref.desktop.in pcmanfm-qt-desktop-pref.desktop @ONLY)
-install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt.desktop"
-    "${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt-desktop-pref.desktop"
-    DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
+install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
 )
 
-# add translation for pcmanfm-qt
-# See http://www.cmake.org/Wiki/CMake:How_To_Build_Qt4_Software
-file(GLOB TS_FILES translations/*.ts)
-
-qt5_create_translation(QM_FILES ${pcmanfm_SRCS} ${pcmanfm_UIS_H} ${TS_FILES})
-qt5_add_translation(QM_FILES ${TS_FILES})
-
-add_custom_target(pcmanfm_translations DEPENDS ${QM_FILES})
 install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/pcmanfm-qt/translations")
 
 # prevent the generated files from being deleted during make clean

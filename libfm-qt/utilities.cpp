@@ -158,9 +158,11 @@ void renameFile(FmFileInfo *file, QWidget *parent) {
 }
 
 // templateFile is a file path used as a template of the new file.
-void createFile(CreateFileType type, FmPath* parentDir, FmTemplate* templ, QWidget* parent) {
+void createFileOrFolder(CreateFileType type, FmPath* parentDir, FmTemplate* templ, QWidget* parent) {
   QString defaultNewName;
   QString prompt;
+  QString dialogTitle = type == CreateNewFolder ? QObject::tr("Create Folder")
+                                                : QObject::tr("Create File");
 
   switch(type) {
   case CreateNewTextFile:
@@ -184,7 +186,7 @@ void createFile(CreateFileType type, FmPath* parentDir, FmTemplate* templ, QWidg
 _retry:
   // ask the user to input a file name
   bool ok;
-  QString new_name = QInputDialog::getText(parent, QObject::tr("Create File"),
+  QString new_name = QInputDialog::getText(parent, dialogTitle,
                      prompt,
                      QLineEdit::Normal,
                      defaultNewName,

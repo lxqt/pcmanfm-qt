@@ -61,7 +61,7 @@ public:
     scrollPos_ = other.scrollPos_;
     return *this;
   }
-  
+
   FmPath* path() const {
     return path_;
   }

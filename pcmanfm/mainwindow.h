@@ -59,6 +59,8 @@ protected Q_SLOTS:
 
   void on_actionNewTab_triggered();
   void on_actionNewWin_triggered();
+  void on_actionNewFolder_triggered();
+  void on_actionNewBlankFile_triggered();
   void on_actionCloseTab_triggered();
   void on_actionCloseWindow_triggered();
   void on_actionFileProperties_triggered();
@@ -128,6 +130,11 @@ protected Q_SLOTS:
   void onTabPageSortFilterChanged();
 
   void onSidePaneChdirRequested(int type, FmPath* path);
+  void onSidePaneOpenFolderInNewWindowRequested(FmPath* path);
+  void onSidePaneOpenFolderInNewTabRequested(FmPath* path);
+  void onSidePaneOpenFolderInTerminalRequested(FmPath* path);
+  void onSidePaneCreateNewFolderRequested(FmPath* path);
+  void onSidePaneModeChanged(Fm::SidePane::Mode mode);
   void onSplitterMoved(int pos, int index);
 
   void onBackForwardContextMenu(QPoint pos);

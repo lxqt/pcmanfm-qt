@@ -107,7 +107,7 @@ public:
   }
 
   QString pathName();
-  
+
   FmFolder* folder() {
     return folder_;
   }
@@ -144,17 +144,17 @@ public:
   QString title() const {
     return title_;
   }
-  
+
   QString statusText(StatusTextType type = StatusTextNormal) const {
     return statusText_[type];
   }
-  
+
   bool canBackward() {
     return history_.canBackward();
   }
 
   void backward();
-  
+
   bool canForward() {
     return history_.canForward();
   }
@@ -164,7 +164,7 @@ public:
   void jumpToHistory(int index);
 
   bool canUp();
-  
+
   void up();
 
   void updateFromSettings(Settings& settings);

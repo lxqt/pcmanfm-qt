@@ -28,6 +28,8 @@ Launcher::Launcher(PCManFM::MainWindow* mainWindow):
   Fm::FileLauncher(),
   mainWindow_(mainWindow) {
 
+  Application* app = static_cast<Application*>(qApp);
+  setQuickExec(app->settings().quickExec());
 }
 
 Launcher::~Launcher() {

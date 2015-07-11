@@ -23,8 +23,10 @@
 #include <QDebug>
 #include <QItemSelection>
 #include <QGuiApplication>
+#include <QMouseEvent>
 #include "dirtreemodel.h"
 #include "dirtreemodelitem.h"
+#include "filemenu.h"
 
 using namespace Fm;
 
@@ -39,6 +41,10 @@ DirTreeView::DirTreeView(QWidget* parent):
 
   connect(this, &DirTreeView::collapsed, this, &DirTreeView::onCollapsed);
   connect(this, &DirTreeView::expanded, this, &DirTreeView::onExpanded);
+
+  setContextMenuPolicy(Qt::CustomContextMenu);
+  connect(this, &DirTreeView::customContextMenuRequested,
+          this, &DirTreeView::onCustomContextMenuRequested);
 }
 
 DirTreeView::~DirTreeView() {
@@ -98,7 +104,7 @@ void DirTreeView::onRowLoaded(const QModelIndex& index) {
   /* disconnect the handler since we only need it once */
   disconnect(_model, &DirTreeModel::rowLoaded, this, &DirTreeView::onRowLoaded);
 
-  DirTreeModelItem* item = _model->itemFromIndex(index);
+  // DirTreeModelItem* item = _model->itemFromIndex(index);
   // qDebug() << "row loaded: " << item->displayName_;
   /* after the folder is loaded, the files should have been added to
     * the tree model */
@@ -122,7 +128,7 @@ void DirTreeView::setCurrentPath(FmPath* path) {
   if(!_model)
     return;
   int rowCount = _model->rowCount(QModelIndex());
-  if(rowCount == 0 || fm_path_equal(currentPath_, path))
+  if(rowCount <= 0 || fm_path_equal(currentPath_, path))
     return;
 
   if(currentPath_)
@@ -172,9 +178,85 @@ void DirTreeView::setModel(QAbstractItemModel* model) {
   connect(selectionModel(), &QItemSelectionModel::selectionChanged, this, &DirTreeView::onSelectionChanged);
 }
 
+void DirTreeView::mousePressEvent(QMouseEvent* event) {
+  if(event && event->button() == Qt::RightButton &&
+     event->type() == QEvent::MouseButtonPress) {
+    // Do not change the selection when the context menu is activated.
+    return;
+  }
+  QTreeView::mousePressEvent(event);
+}
 
-void DirTreeView::contextMenuEvent(QContextMenuEvent* event) {
-  QAbstractScrollArea::contextMenuEvent(event);
+void DirTreeView::onCustomContextMenuRequested(const QPoint& pos) {
+  QModelIndex index = indexAt(pos);
+  if(index.isValid()) {
+    QVariant data = index.data(DirTreeModel::FileInfoRole);
+    FmFileInfo* fileInfo = reinterpret_cast<FmFileInfo*>(data.value<void*>());
+    if(fileInfo) {
+      FmPath* path = fm_file_info_get_path(fileInfo);
+      FmFileInfoList* files = fm_file_info_list_new();
+      fm_file_info_list_push_tail(files, fileInfo);
+      Fm::FileMenu* menu = new Fm::FileMenu(files, fileInfo, path);
+      // FIXME: apply some settings to the menu and set a proper file launcher to it
+      Q_EMIT prepareFileMenu(menu);
+      fm_file_info_list_unref(files);
+      QVariant pathData = qVariantFromValue(reinterpret_cast<void*>(path));
+      QAction* action = menu->openAction();
+      action->disconnect();
+      action->setData(index);
+      connect(action, &QAction::triggered, this, &DirTreeView::onOpen);
+      action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New T&ab"), menu);
+      action->setData(pathData);
+      connect(action, &QAction::triggered, this, &DirTreeView::onNewTab);
+      menu->insertAction(menu->separator1(), action);
+      action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
+      action->setData(pathData);
+      connect(action, &QAction::triggered, this, &DirTreeView::onNewWindow);
+      menu->insertAction(menu->separator1(), action);
+      if(fm_file_info_is_native(fileInfo)) {
+        action = new QAction(QIcon::fromTheme("utilities-terminal"), tr("Open in Termina&l"), menu);
+        action->setData(pathData);
+        connect(action, &QAction::triggered, this, &DirTreeView::onOpenInTerminal);
+        menu->insertAction(menu->separator1(), action);
+      }
+      menu->exec(mapToGlobal(pos));
+      delete menu;
+    }
+  }
+}
+
+void DirTreeView::onOpen() {
+  if(QAction* action = qobject_cast<QAction*>(sender())) {
+    setCurrentIndex(action->data().toModelIndex());
+  }
+}
+
+void DirTreeView::onNewWindow() {
+  if(QAction* action = qobject_cast<QAction*>(sender())) {
+    FmPath* path = reinterpret_cast<FmPath*>(action->data().value<void*>());
+    Q_EMIT openFolderInNewWindowRequested(path);
+  }
+}
+
+void DirTreeView::onNewTab() {
+  if(QAction* action = qobject_cast<QAction*>(sender())) {
+    FmPath* path = reinterpret_cast<FmPath*>(action->data().value<void*>());
+    Q_EMIT openFolderInNewTabRequested(path);
+  }
+}
+
+void DirTreeView::onOpenInTerminal() {
+  if(QAction* action = qobject_cast<QAction*>(sender())) {
+    FmPath* path = reinterpret_cast<FmPath*>(action->data().value<void*>());
+    Q_EMIT openFolderInTerminalRequested(path);
+  }
+}
+
+void DirTreeView::onNewFolder() {
+  if(QAction* action = qobject_cast<QAction*>(sender())) {
+    FmPath* path = reinterpret_cast<FmPath*>(action->data().value<void*>());
+    Q_EMIT createNewFolderRequested(path);
+  }
 }
 
 void DirTreeView::onCollapsed(const QModelIndex& index) {
@@ -204,7 +286,7 @@ void DirTreeView::onSelectionChanged(const QItemSelection & selected, const QIte
     if(currentPath_)
       fm_path_unref(currentPath_);
     currentPath_ = fm_path_ref(path);
-    
+
     // FIXME: use enums for type rather than hard-coded values 0 or 1
     int type = 0;
     if(QGuiApplication::mouseButtons() & Qt::MiddleButton)

@@ -23,7 +23,7 @@
 #include <X11/Xlib.h>
 
 typedef struct _FmAppLaunchContext {
-  GAppLaunchContext parent;  
+  GAppLaunchContext parent;
 }FmAppLaunchContext;
 
 G_DEFINE_TYPE(FmAppLaunchContext, fm_app_launch_context, G_TYPE_APP_LAUNCH_CONTEXT)

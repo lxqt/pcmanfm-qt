@@ -31,6 +31,8 @@ class QWidget;
 
 namespace Fm {
 
+class FileMenu;
+
 class LIBFM_QT_API SidePane : public QWidget {
   Q_OBJECT
 
@@ -51,7 +53,7 @@ public:
   }
 
   void setIconSize(QSize size);
-  
+
   FmPath* currentPath() {
     return currentPath_;
   }
@@ -82,7 +84,7 @@ public:
   QString modeTooltip(Mode mode);
 #endif
 
-  bool setShowHidden(bool show_hidden);
+  void setShowHidden(bool show_hidden);
 
   bool showHidden() {
     return showHidden_;
@@ -101,7 +103,13 @@ public:
 
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
-  void modeChanged();
+  void openFolderInNewWindowRequested(FmPath* path);
+  void openFolderInNewTabRequested(FmPath* path);
+  void openFolderInTerminalRequested(FmPath* path);
+  void createNewFolderRequested(FmPath* path);
+  void modeChanged(Fm::SidePane::Mode mode);
+
+  void prepareFileMenu(Fm::FileMenu* menu); // emit before showing a Fm::FileMenu
 
 protected Q_SLOTS:
   void onPlacesViewChdirRequested(int type, FmPath* path);
@@ -110,7 +118,7 @@ protected Q_SLOTS:
 
 private:
   void initDirTree();
-  
+
 private:
   FmPath* currentPath_;
   QWidget* view_;

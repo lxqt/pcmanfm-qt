@@ -69,7 +69,7 @@ public:
   }
 
   // public interface exported via dbus
-  void launchFiles(QStringList paths, bool inNewWindow);
+  void launchFiles(QString cwd, QStringList paths, bool inNewWindow);
   void setWallpaper(QString path, QString modeString);
   void preferences(QString page);
   void desktopPrefrences(QString page);
@@ -95,6 +95,7 @@ public:
 
 protected Q_SLOTS:
   void onAboutToQuit();
+  void onSigtermNotified();
 
   void onLastWindowClosed();
   void onSaveStateRequest(QSessionManager & manager);
@@ -116,6 +117,8 @@ protected:
   static void onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Application* pThis);
 
 private:
+  void installSigtermHandler();
+
   bool isPrimaryInstance;
   Fm::LibFmQt libFm_;
   Settings settings_;

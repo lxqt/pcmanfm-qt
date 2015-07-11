@@ -55,7 +55,7 @@ public:
   bool applyToAll() {
     return applyToAll_;
   }
-  
+
   QString newName() {
     return newName_;
   }

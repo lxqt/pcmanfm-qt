@@ -37,7 +37,7 @@ MountOperation::MountOperation(bool interactive, QWidget* parent):
   cancellable_(g_cancellable_new()),
   eventLoop(NULL),
   autoDestroy_(true) {
-  
+
   g_signal_connect(op, "ask-password", G_CALLBACK(onAskPassword), this);
   g_signal_connect(op, "ask-question", G_CALLBACK(onAskQuestion), this);
   // g_signal_connect(op, "reply", G_CALLBACK(onReply), this);

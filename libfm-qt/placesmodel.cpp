@@ -37,7 +37,6 @@ PlacesModel::PlacesModel(QObject* parent):
 
   setColumnCount(2);
 
-  PlacesModelItem* item;
   placesRoot = new QStandardItem(tr("Places"));
   placesRoot->setSelectable(false);
   placesRoot->setColumnCount(2);
@@ -121,7 +120,7 @@ PlacesModel::PlacesModel(QObject* parent):
         if(volume)
         g_object_unref(volume);
         else { /* network mounts or others */
-        item = new PlacesModelMountItem(mount);
+        PlacesModelItem* item = new PlacesModelMountItem(mount);
         devicesRoot->appendRow(item);
         }
         g_object_unref(mount);

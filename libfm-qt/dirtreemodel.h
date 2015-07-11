@@ -30,7 +30,7 @@
 #include <libfm/fm.h>
 
 namespace Fm {
-  
+
 class DirTreeModelItem;
 class DirTreeView;
 
@@ -64,7 +64,7 @@ public:
   }
 
   QModelIndex indexFromPath(FmPath* path) const;
-  
+
   virtual Qt::ItemFlags flags(const QModelIndex& index) const;
   virtual QVariant data(const QModelIndex& index, int role) const;
   virtual int columnCount(const QModelIndex& parent) const;

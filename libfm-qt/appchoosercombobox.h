@@ -46,11 +46,11 @@ public:
 
 private Q_SLOTS:
   void onCurrentIndexChanged(int index);
-  
+
 private:
   FmMimeType* mimeType_;
   GList* appInfos_; // applications used to open the file type
-  GAppInfo* defaultApp_; // default application used to open the file type 
+  GAppInfo* defaultApp_; // default application used to open the file type
   int defaultAppIndex_;
   int prevIndex_;
   bool blockOnCurrentIndexChanged_;

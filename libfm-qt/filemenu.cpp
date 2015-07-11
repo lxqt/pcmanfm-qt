@@ -19,6 +19,7 @@
 
 
 #include "filemenu.h"
+#include "createnewmenu.h"
 #include "icontheme.h"
 #include "filepropsdialog.h"
 #include "utilities.h"
@@ -59,6 +60,8 @@ FileMenu::~FileMenu() {
 void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) {
   useTrash_ = true;
   confirmDelete_ = true;
+  confirmTrash_ = false; // Confirm before moving files into "trash can"
+
   files_ = fm_file_info_list_ref(files);
   info_ = info ? fm_file_info_ref(info) : NULL;
   cwd_ = cwd ? fm_path_ref(cwd) : NULL;
@@ -91,7 +94,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
       GList* l;
       for(l=apps;l;l=l->next) {
         GAppInfo* app = G_APP_INFO(l->data);
-      
+
         // check if the command really exists
         gchar * program_path = g_find_program_in_path(g_app_info_get_executable(app));
         if (!program_path)
@@ -112,6 +115,13 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   menu->addAction(openWithAction_);
 
   separator1_ = addSeparator();
+
+  QAction* createAction = new QAction(tr("Create &New"), this);
+  FmPath* dirPath = fm_file_info_list_get_length(files) == 1 && fm_file_info_is_dir(first)
+      ? path : cwd_;
+  createAction->setMenu(new CreateNewMenu(NULL, dirPath, this));
+  addAction(createAction);
+  addSeparator();
 
   if(allTrash_) { // all selected files are in trash:///
     bool can_restore = true;
@@ -162,7 +172,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
       FmFileActionItem* item = FM_FILE_ACTION_ITEM(l->data);
       addCustomActionItem(this, item);
     }
-  } 
+  }
   g_list_foreach(items, (GFunc)fm_file_action_item_unref, NULL);
   g_list_free(items);
 #endif
@@ -246,7 +256,7 @@ void FileMenu::onOpenWithTriggered() {
   else { // we can only set the selected app as default if all files are of the same type
     dlg.setCanSetDefault(false);
   }
-  
+
   if(execModelessDialog(&dlg) == QDialog::Accepted) {
     GAppInfo* app = dlg.selectedApp();
     if(app) {
@@ -267,7 +277,7 @@ void FileMenu::openFilesWithApp(GAppInfo* app) {
   fm_path_list_unref(paths);
   fm_app_info_launch_uris(app, uris, NULL, NULL);
   g_list_foreach(uris, (GFunc)g_free, NULL);
-  g_list_free(uris);  
+  g_list_free(uris);
 }
 
 void FileMenu::onApplicationTriggered() {
@@ -311,7 +321,7 @@ void FileMenu::onCutTriggered() {
 void FileMenu::onDeleteTriggered() {
   FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
   if(useTrash_)
-    FileOperation::trashFiles(paths, confirmDelete_);
+    FileOperation::trashFiles(paths, confirmTrash_);
   else
     FileOperation::deleteFiles(paths, confirmDelete_);
   fm_path_list_unref(paths);

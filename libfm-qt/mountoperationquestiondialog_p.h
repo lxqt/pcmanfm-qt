@@ -39,7 +39,7 @@ public:
 
 private Q_SLOTS:
   void onButtonClicked(QAbstractButton* button);
-  
+
 private:
   MountOperation* mountOperation;
   QAbstractButton** choiceButtons;

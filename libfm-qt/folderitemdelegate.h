@@ -32,7 +32,7 @@ class LIBFM_QT_API FolderItemDelegate : public QStyledItemDelegate {
 public:
   explicit FolderItemDelegate(QAbstractItemView* view, QObject* parent = 0);
   virtual ~FolderItemDelegate();
-  
+
   void setGridSize(QSize size) {
     gridSize_ = size;
   }
@@ -40,14 +40,14 @@ public:
   QSize gridSize() {
     return gridSize_;
   }
-  
+
   virtual QSize sizeHint(const QStyleOptionViewItem & option, const QModelIndex & index) const;
   virtual void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const;
 
 private:
   void drawText(QPainter* painter, QStyleOptionViewItemV4& opt, QRectF& textRect) const;
   static QIcon::Mode iconModeFromState(QStyle::State state);
-  
+
 private:
   QAbstractItemView* view_;
   QIcon symlinkIcon_;

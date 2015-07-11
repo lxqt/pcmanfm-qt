@@ -37,8 +37,8 @@ EditBookmarksDialog::EditBookmarksDialog(FmBookmarks* bookmarks, QWidget* parent
   setAttribute(Qt::WA_DeleteOnClose); // auto delete on close
 
   // load bookmarks
-  GList* l = fm_bookmarks_get_all(bookmarks_);
-  for(; l; l = l->next) {
+  GList* allBookmarks = fm_bookmarks_get_all(bookmarks_);
+  for(GList* l = allBookmarks; l; l = l->next) {
     FmBookmarkItem* bookmark = reinterpret_cast<FmBookmarkItem*>(l->data);
     QTreeWidgetItem* item = new QTreeWidgetItem();
     char* path_str = fm_path_display_name(bookmark->path, false);
@@ -48,6 +48,7 @@ EditBookmarksDialog::EditBookmarksDialog(FmBookmarks* bookmarks, QWidget* parent
     g_free(path_str);
     ui->treeWidget->addTopLevelItem(item);
   }
+  g_list_free_full(allBookmarks, (GDestroyNotify)fm_bookmark_item_unref);
 
   connect(ui->addItem, &QPushButton::clicked, this, &EditBookmarksDialog::onAddItem);
   connect(ui->removeItem, &QPushButton::clicked, this, &EditBookmarksDialog::onRemoveItem);

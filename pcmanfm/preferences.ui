@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>736</width>
-    <height>497</height>
+    <width>685</width>
+    <height>440</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,16 +28,21 @@
         <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="currentRow">
-        <number>0</number>
+        <number>-1</number>
        </property>
        <item>
         <property name="text">
-         <string>User Interface</string>
+         <string>Behavior</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Behavior</string>
+         <string>Display</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>User Interface</string>
         </property>
        </item>
        <item>
@@ -68,14 +73,176 @@
        <property name="currentIndex">
         <number>0</number>
        </property>
-       <widget class="QWidget" name="uiPage">
-        <layout class="QVBoxLayout" name="verticalLayout_5">
+       <widget class="QWidget" name="behaviorPage">
+        <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,1">
+         <item>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="title">
+            <string>Browsing</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout_5">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QCheckBox" name="singleClick">
+              <property name="text">
+               <string>Open files with single click</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Delay of auto-selection in single click mode (0 to disable)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>Default view mode:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="viewMode"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="autoSelectionDelay">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="suffix">
+               <string> sec</string>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Bookmarks:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="bookmarkOpenMethod">
+              <item>
+               <property name="text">
+                <string>Open in current tab</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Open in new tab</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Open in new window</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_6">
+           <property name="title">
+            <string>File Operations</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="QCheckBox" name="configmDelete">
+              <property name="text">
+               <string>Confirm before deleting files</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="useTrash">
+              <property name="text">
+               <string>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="noUsbTrash">
+              <property name="text">
+               <string>Erase files on removable media instead of &quot;trash can&quot; creation</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="confirmTrash">
+              <property name="text">
+               <string>Confirm before moving files into &quot;trash can&quot;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="quickExec">
+              <property name="text">
+               <string>Don't ask options on launch executable file</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="displayPage">
+        <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0,0,1">
          <item>
           <widget class="QGroupBox" name="groupBox_2">
            <property name="title">
             <string>Icons</string>
            </property>
            <layout class="QFormLayout" name="formLayout_2">
+            <item row="0" column="0">
+             <widget class="QLabel" name="iconThemeLabel">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Icon theme:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="iconTheme">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
             <item row="1" column="0">
              <widget class="QLabel" name="label_6">
               <property name="text">
@@ -116,32 +283,69 @@
             <item row="4" column="1">
              <widget class="QComboBox" name="sidePaneIconSize"/>
             </item>
-            <item row="0" column="0">
-             <widget class="QLabel" name="iconThemeLabel">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_9">
+           <property name="title">
+            <string>User interface</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QCheckBox" name="siUnit">
               <property name="text">
-               <string>Icon theme:</string>
+               <string>Use SI decimal prefixes instead of IEC binary prefixes</string>
               </property>
              </widget>
             </item>
-            <item row="0" column="1">
-             <widget class="QComboBox" name="iconTheme">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
+            <item>
+             <widget class="QCheckBox" name="backupAsHidden">
+              <property name="text">
+               <string>Treat backup files as hidden</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="showFullNames">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Always show full file names</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="shadowHidden">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Show icons of hidden files shadowed</string>
               </property>
              </widget>
             </item>
            </layout>
           </widget>
          </item>
+         <item>
+          <spacer name="verticalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="uiPage">
+        <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0,1">
          <item>
           <widget class="QGroupBox" name="groupBox_5">
            <property name="title">
@@ -204,106 +408,108 @@
           </widget>
          </item>
          <item>
+          <widget class="QGroupBox" name="groupBox_10">
+           <property name="title">
+            <string>Show in places</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <widget class="QListWidget" name="showInPlaces">
+              <item>
+               <property name="text">
+                <string>Home</string>
+               </property>
+               <property name="checkState">
+                <enum>Unchecked</enum>
+               </property>
+               <property name="icon">
+                <iconset theme="user-home">
+                 <normaloff/>
+                </iconset>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Desktop</string>
+               </property>
+               <property name="checkState">
+                <enum>Unchecked</enum>
+               </property>
+               <property name="icon">
+                <iconset theme="user-desktop">
+                 <normaloff/>
+                </iconset>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Trash can</string>
+               </property>
+               <property name="checkState">
+                <enum>Unchecked</enum>
+               </property>
+               <property name="icon">
+                <iconset theme="user-trash">
+                 <normaloff/>
+                </iconset>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Computer</string>
+               </property>
+               <property name="checkState">
+                <enum>Unchecked</enum>
+               </property>
+               <property name="icon">
+                <iconset theme="computer">
+                 <normaloff/>
+                </iconset>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Applications</string>
+               </property>
+               <property name="checkState">
+                <enum>Unchecked</enum>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Devices</string>
+               </property>
+               <property name="checkState">
+                <enum>Unchecked</enum>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Network</string>
+               </property>
+               <property name="checkState">
+                <enum>Unchecked</enum>
+               </property>
+               <property name="icon">
+                <iconset theme="folder-network">
+                 <normaloff/>
+                </iconset>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
           <spacer name="verticalSpacer_4">
            <property name="orientation">
             <enum>Qt::Vertical</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="behaviorPage">
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <widget class="QGroupBox" name="groupBox_4">
-           <property name="title">
-            <string>Browsing</string>
-           </property>
-           <layout class="QFormLayout" name="formLayout_5">
-            <property name="fieldGrowthPolicy">
-             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-            </property>
-            <item row="0" column="0" colspan="2">
-             <widget class="QCheckBox" name="singleClick">
-              <property name="text">
-               <string>Open files with single click</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="label">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
-              <property name="text">
-               <string>Delay of auto-selection in single click mode (0 to disable)</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_11">
-              <property name="text">
-               <string>Default view mode:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QComboBox" name="viewMode"/>
-            </item>
-            <item row="1" column="1">
-             <widget class="QDoubleSpinBox" name="autoSelectionDelay">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
-              <property name="suffix">
-               <string> sec</string>
-              </property>
-              <property name="singleStep">
-               <double>0.100000000000000</double>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="QGroupBox" name="groupBox_6">
-           <property name="title">
-            <string>File Operations</string>
-           </property>
-           <layout class="QFormLayout" name="formLayout_6">
-            <item row="0" column="0">
-             <widget class="QCheckBox" name="configmDelete">
-              <property name="text">
-               <string>Confirm before deleting files</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QCheckBox" name="useTrash">
-              <property name="text">
-               <string>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <spacer name="verticalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
+             <width>0</width>
+             <height>0</height>
             </size>
            </property>
           </spacer>
@@ -311,45 +517,64 @@
         </layout>
        </widget>
        <widget class="QWidget" name="thumbnailPage">
-        <layout class="QFormLayout" name="formLayout_3">
-         <property name="fieldGrowthPolicy">
-          <enum>QFormLayout::ExpandingFieldsGrow</enum>
-         </property>
-         <item row="0" column="0">
-          <widget class="QCheckBox" name="showThumbnails">
-           <property name="text">
-            <string>Show thumbnails of files</string>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <widget class="QGroupBox" name="groupBox_8">
+           <property name="title">
+            <string>Thumbnail</string>
            </property>
+           <layout class="QFormLayout" name="formLayout_3">
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>Do not generate thumbnails for image files exceeding this size:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="maxThumbnailFileSize">
+              <property name="suffix">
+               <string> KB</string>
+              </property>
+              <property name="maximum">
+               <number>1048576</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QCheckBox" name="thumbnailLocal">
+              <property name="text">
+               <string>Only show thumbnails for local files</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="2">
+             <widget class="QCheckBox" name="showThumbnails">
+              <property name="text">
+               <string>Show thumbnails of files</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </item>
-         <item row="1" column="0">
-          <widget class="QCheckBox" name="thumbnailLocal">
-           <property name="text">
-            <string>Only show thumbnails for local files</string>
+         <item>
+          <spacer name="verticalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
            </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_10">
-           <property name="text">
-            <string>Do not generate thumbnails for image files exceeding this size:</string>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>0</width>
+             <height>225</height>
+            </size>
            </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QSpinBox" name="maxThumbnailFileSize">
-           <property name="suffix">
-            <string> KB</string>
-           </property>
-           <property name="maximum">
-            <number>1048576</number>
-           </property>
-          </widget>
+          </spacer>
          </item>
         </layout>
        </widget>
        <widget class="QWidget" name="volumePage">
-        <layout class="QVBoxLayout" name="verticalLayout_4">
+        <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,1">
          <item>
           <widget class="QGroupBox" name="groupBox_3">
            <property name="title">
@@ -410,8 +635,8 @@
            </property>
            <property name="sizeHint" stdset="0">
             <size>
-             <width>20</width>
-             <height>40</height>
+             <width>0</width>
+             <height>0</height>
             </size>
            </property>
           </spacer>
@@ -419,7 +644,7 @@
         </layout>
        </widget>
        <widget class="QWidget" name="advancedPage">
-        <layout class="QVBoxLayout" name="verticalLayout_2">
+        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,1">
          <item>
           <widget class="QGroupBox" name="groupBox">
            <property name="title">
@@ -484,13 +709,33 @@
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="siUnit">
-           <property name="enabled">
-            <bool>false</bool>
+          <widget class="QGroupBox" name="groupBox_11">
+           <property name="title">
+            <string>Templates</string>
            </property>
-           <property name="text">
-            <string>Use SI decimal prefixes instead of IEC binary prefixes</string>
-           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_12">
+            <item>
+             <widget class="QCheckBox" name="onlyUserTemplates">
+              <property name="text">
+               <string>Show only user defined templates in menu</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="templateTypeOnce">
+              <property name="text">
+               <string>Show only one template for each MIME type</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="templateRunApp">
+              <property name="text">
+               <string>Run default application after creation from template</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </item>
          <item>
@@ -500,8 +745,8 @@
            </property>
            <property name="sizeHint" stdset="0">
             <size>
-             <width>20</width>
-             <height>40</height>
+             <width>0</width>
+             <height>0</height>
             </size>
            </property>
           </spacer>
@@ -526,11 +771,6 @@
  </widget>
  <tabstops>
   <tabstop>listWidget</tabstop>
-  <tabstop>iconTheme</tabstop>
-  <tabstop>bigIconSize</tabstop>
-  <tabstop>smallIconSize</tabstop>
-  <tabstop>thumbnailIconSize</tabstop>
-  <tabstop>sidePaneIconSize</tabstop>
   <tabstop>alwaysShowTabs</tabstop>
   <tabstop>showTabClose</tabstop>
   <tabstop>rememberWindowSize</tabstop>
@@ -541,9 +781,6 @@
   <tabstop>viewMode</tabstop>
   <tabstop>configmDelete</tabstop>
   <tabstop>useTrash</tabstop>
-  <tabstop>showThumbnails</tabstop>
-  <tabstop>thumbnailLocal</tabstop>
-  <tabstop>maxThumbnailFileSize</tabstop>
   <tabstop>mountOnStartup</tabstop>
   <tabstop>mountRemovable</tabstop>
   <tabstop>autoRun</tabstop>
@@ -552,7 +789,6 @@
   <tabstop>terminal</tabstop>
   <tabstop>suCommand</tabstop>
   <tabstop>archiver</tabstop>
-  <tabstop>siUnit</tabstop>
  </tabstops>
  <resources/>
  <connections>

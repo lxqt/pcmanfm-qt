@@ -81,8 +81,6 @@ static void findIconThemesInDir(QHash<QString, QString>& iconThemes, QString dir
 }
 
 void PreferencesDialog::initIconThemes(Settings& settings) {
-  Application* app = static_cast<Application*>(qApp);
-
   // check if auto-detection is done (for example, from xsettings)
   if(settings.useFallbackIconTheme()) { // auto-detection failed
     // load xdg icon themes and select the current one
@@ -133,44 +131,61 @@ void PreferencesDialog::initArchivers(Settings& settings) {
   }
 }
 
+void PreferencesDialog::initDisplayPage(Settings& settings) {
+    initIconThemes(settings);
+    // icon sizes
+    int i;
+    for(i = 0; i < G_N_ELEMENTS(bigIconSizes); ++i) {
+      int size = bigIconSizes[i];
+      ui.bigIconSize->addItem(QString("%1 x %1").arg(size), size);
+      if(settings.bigIconSize() == size)
+        ui.bigIconSize->setCurrentIndex(i);
+    }
+    for(i = 0; i < G_N_ELEMENTS(smallIconSizes); ++i) {
+      int size = smallIconSizes[i];
+      QString text = QString("%1 x %1").arg(size);
+      ui.smallIconSize->addItem(text, size);
+      if(settings.smallIconSize() == size)
+        ui.smallIconSize->setCurrentIndex(i);
+
+      ui.sidePaneIconSize->addItem(text, size);
+      if(settings.sidePaneIconSize() == size)
+        ui.sidePaneIconSize->setCurrentIndex(i);
+    }
+    for(i = 0; i < G_N_ELEMENTS(thumbnailIconSizes); ++i) {
+      int size = thumbnailIconSizes[i];
+      ui.thumbnailIconSize->addItem(QString("%1 x %1").arg(size), size);
+      if(settings.thumbnailIconSize() == size)
+        ui.thumbnailIconSize->setCurrentIndex(i);
+    }
+
+    ui.siUnit->setChecked(settings.siUnit());
+    ui.backupAsHidden->setChecked(settings.backupAsHidden());
+
+    ui.showFullNames->setChecked(settings.showFullNames());
+    ui.shadowHidden->setChecked(settings.shadowHidden());
+
+    // FIXME: Hide options that we don't support yet.
+    ui.showFullNames->hide();
+    ui.shadowHidden->hide();
+}
+
 void PreferencesDialog::initUiPage(Settings& settings) {
-  initIconThemes(settings);
-  // icon sizes
-  int i;
-  for(i = 0; i < G_N_ELEMENTS(bigIconSizes); ++i) {
-    int size = bigIconSizes[i];
-    ui.bigIconSize->addItem(QString("%1 x %1").arg(size), size);
-    if(settings.bigIconSize() == size)
-      ui.bigIconSize->setCurrentIndex(i);
-  }
-  for(i = 0; i < G_N_ELEMENTS(smallIconSizes); ++i) {
-    int size = smallIconSizes[i];
-    QString text = QString("%1 x %1").arg(size);
-    ui.smallIconSize->addItem(text, size);
-    if(settings.smallIconSize() == size)
-      ui.smallIconSize->setCurrentIndex(i);
-
-    ui.sidePaneIconSize->addItem(text, size);
-    if(settings.sidePaneIconSize() == size)
-      ui.sidePaneIconSize->setCurrentIndex(i);
-  }
-  for(i = 0; i < G_N_ELEMENTS(thumbnailIconSizes); ++i) {
-    int size = thumbnailIconSizes[i];
-    ui.thumbnailIconSize->addItem(QString("%1 x %1").arg(size), size);
-    if(settings.thumbnailIconSize() == size)
-      ui.thumbnailIconSize->setCurrentIndex(i);
-  }
-
   ui.alwaysShowTabs->setChecked(settings.alwaysShowTabs());
   ui.showTabClose->setChecked(settings.showTabClose());
   ui.rememberWindowSize->setChecked(settings.rememberWindowSize());
   ui.fixedWindowWidth->setValue(settings.fixedWindowWidth());
   ui.fixedWindowHeight->setValue(settings.fixedWindowHeight());
+
+  // FIXME: Hide options that we don't support yet.
+  ui.showInPlaces->parentWidget()->hide();
 }
 
 void PreferencesDialog::initBehaviorPage(Settings& settings) {
   ui.singleClick->setChecked(settings.singleClick());
   ui.autoSelectionDelay->setValue(double(settings.autoSelectionDelay()) / 1000);
+
+  ui.bookmarkOpenMethod->setCurrentIndex(settings.bookmarkOpenMethod());
 
   ui.viewMode->addItem(tr("Icon View"), (int)Fm::FolderView::IconMode);
   ui.viewMode->addItem(tr("Compact Icon View"), (int)Fm::FolderView::CompactMode);
@@ -196,6 +211,10 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
   else {
     ui.useTrash->hide();
   }
+
+  ui.noUsbTrash->setChecked(settings.noUsbTrash());
+  ui.confirmTrash->setChecked(settings.confirmTrash());
+  ui.quickExec->setChecked(settings.quickExec());
 }
 
 void PreferencesDialog::initThumbnailPage(Settings& settings) {
@@ -225,11 +244,19 @@ void PreferencesDialog::initAdvancedPage(Settings& settings) {
   initArchivers(settings);
   initTerminals(settings);
   ui.suCommand->setText(settings.suCommand());
-  // ui.siUnit->setChecked(settings.siUnit());
+
+  ui.onlyUserTemplates->setChecked(settings.onlyUserTemplates());
+  ui.templateTypeOnce->setChecked(settings.templateTypeOnce());
+
+  ui.templateRunApp->setChecked(settings.templateRunApp());
+
+  // FIXME: Hide options that we don't support yet.
+  ui.templateRunApp->hide();
 }
 
 void PreferencesDialog::initFromSettings() {
   Settings& settings = static_cast<Application*>(qApp)->settings();
+  initDisplayPage(settings);
   initUiPage(settings);
   initBehaviorPage(settings);
   initThumbnailPage(settings);
@@ -237,7 +264,7 @@ void PreferencesDialog::initFromSettings() {
   initAdvancedPage(settings);
 }
 
-void PreferencesDialog::applyUiPage(Settings& settings) {
+void PreferencesDialog::applyDisplayPage(Settings& settings) {
   if(settings.useFallbackIconTheme()) {
     // only apply the value if icon theme combo box is in use
     // the combo box is hidden when auto-detection of icon theme from xsettings works.
@@ -257,6 +284,14 @@ void PreferencesDialog::applyUiPage(Settings& settings) {
   settings.setSmallIconSize(ui.smallIconSize->itemData(ui.smallIconSize->currentIndex()).toInt());
   settings.setThumbnailIconSize(ui.thumbnailIconSize->itemData(ui.thumbnailIconSize->currentIndex()).toInt());
   settings.setSidePaneIconSize(ui.sidePaneIconSize->itemData(ui.sidePaneIconSize->currentIndex()).toInt());
+
+  settings.setSiUnit(ui.siUnit->isChecked());
+  settings.setBackupAsHidden(ui.backupAsHidden->isChecked());
+  settings.setShowFullNames(ui.showFullNames->isChecked());
+  settings.setShadowHidden(ui.shadowHidden->isChecked());
+}
+
+void PreferencesDialog::applyUiPage(Settings& settings) {
   settings.setAlwaysShowTabs(ui.alwaysShowTabs->isChecked());
   settings.setShowTabClose(ui.showTabClose->isChecked());
   settings.setRememberWindowSize(ui.rememberWindowSize->isChecked());
@@ -267,13 +302,20 @@ void PreferencesDialog::applyUiPage(Settings& settings) {
 void PreferencesDialog::applyBehaviorPage(Settings& settings) {
   settings.setSingleClick(ui.singleClick->isChecked());
   settings.setAutoSelectionDelay(int(ui.autoSelectionDelay->value() * 1000));
+
+  settings.setBookmarkOpenMethod(OpenDirTargetType(ui.bookmarkOpenMethod->currentIndex()));
+
   // FIXME: bug here?
   Fm::FolderView::ViewMode mode = Fm::FolderView::ViewMode(ui.viewMode->itemData(ui.viewMode->currentIndex()).toInt());
   settings.setViewMode(mode);
   settings.setConfirmDelete(ui.configmDelete->isChecked());
-  
+
   if(settings.supportTrash())
     settings.setUseTrash(ui.useTrash->isChecked());
+
+  settings.setNoUsbTrash(ui.noUsbTrash->isChecked());
+  settings.setConfirmTrash(ui.confirmTrash->isChecked());
+  settings.setQuickExec(ui.quickExec->isChecked());
 }
 
 void PreferencesDialog::applyThumbnailPage(Settings& settings) {
@@ -293,12 +335,16 @@ void PreferencesDialog::applyAdvancedPage(Settings& settings) {
   settings.setTerminal(ui.terminal->currentText());
   settings.setSuCommand(ui.suCommand->text());
   settings.setArchiver(ui.archiver->itemData(ui.archiver->currentIndex()).toString());
-  settings.setSiUnit(ui.siUnit->isChecked());
+
+  settings.setOnlyUserTemplates(ui.onlyUserTemplates->isChecked());
+  settings.setTemplateTypeOnce(ui.templateTypeOnce->isChecked());
+  settings.setTemplateRunApp(ui.templateRunApp->isChecked());
 }
 
 
 void PreferencesDialog::applySettings() {
   Settings& settings = static_cast<Application*>(qApp)->settings();
+  applyDisplayPage(settings);
   applyUiPage(settings);
   applyBehaviorPage(settings);
   applyThumbnailPage(settings);

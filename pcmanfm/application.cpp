@@ -32,7 +32,9 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QCommandLineParser>
+#include <QSocketNotifier>
 #include <gio/gio.h>
+#include <sys/socket.h>
 
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
@@ -84,6 +86,8 @@ Application::Application(int& argc, char** argv):
     dbus.registerObject("/Application", this);
 
     connect(this, &Application::aboutToQuit, this, &Application::onAboutToQuit);
+    // aboutToQuit() is not signalled on SIGTERM, install signal handler
+    installSigtermHandler();
     settings_.load(profileName_);
 
     // decrease the cache size to reduce memory usage
@@ -200,7 +204,7 @@ bool Application::parseCommandLineArgs() {
             paths.push_back(QDir::currentPath());
         }
         if(!paths.isEmpty())
-          launchFiles(paths, parser.isSet(newWindowOption));
+          launchFiles(QDir::currentPath(), paths, parser.isSet(newWindowOption));
         keepRunning = true;
       }
     }
@@ -235,8 +239,8 @@ bool Application::parseCommandLineArgs() {
         QStringList paths = parser.positionalArguments();
         if(paths.isEmpty()) {
           paths.push_back(QDir::currentPath());
-	}
-        iface.call("launchFiles", paths, parser.isSet(newWindowOption));
+        }
+        iface.call("launchFiles", QDir::currentPath(), paths, parser.isSet(newWindowOption));
       }
     }
   }
@@ -370,15 +374,31 @@ void Application::findFiles(QStringList paths) {
   qDebug("findFiles");
 }
 
-void Application::launchFiles(QStringList paths, bool inNewWindow) {
+void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) {
   FmPathList* pathList = fm_path_list_new();
+  FmPath* cwd_path = NULL;
   QStringList::iterator it;
-  for(it = paths.begin(); it != paths.end(); ++it) {
-    QString& pathName = *it;
-    FmPath* path = fm_path_new_for_commandline_arg(pathName.toLocal8Bit().constData());
+  Q_FOREACH(const QString& it, paths) {
+    QByteArray pathName = it.toLocal8Bit();
+    FmPath* path = NULL;
+    if(pathName[0] == '/') // absolute path
+        path = fm_path_new_for_path(pathName.constData());
+    else if(pathName.contains(":/")) // URI
+        path = fm_path_new_for_uri(pathName.constData());
+    else if(pathName == "~") // special case for home dir
+        path = fm_path_ref(fm_path_get_home());
+    else // basename
+    {
+        if(Q_UNLIKELY(!cwd_path))
+            cwd_path = fm_path_new_for_str(cwd.toLocal8Bit().constData());
+        path = fm_path_new_relative(cwd_path, pathName.constData());
+    }
     fm_path_list_push_tail(pathList, path);
     fm_path_unref(path);
   }
+  if(cwd_path)
+      fm_path_unref(cwd_path);
+
   Launcher(NULL).launchPaths(NULL, pathList);
   fm_path_list_unref(pathList);
 }
@@ -659,7 +679,6 @@ void Application::onScreenDestroyed(QObject* screenObj) {
   //
   // The workaround is very simple. Just completely destroy the window before Qt has a chance to do
   // QWindow::setScreen() for it. Later, we recreate the window ourselves. So this can bypassing the Qt bugs.
-  QScreen* screen = static_cast<QScreen*>(screenObj);
   if(enableDesktopManager_) {
     bool reloadNeeded = false;
     // FIXME: add workarounds for Qt5 bug #40681 and #40791 here.
@@ -699,10 +718,44 @@ void Application::onVirtualGeometryChanged(const QRect& rect) {
   // virtualGeometryChanged() is emitted correctly when the workAreas changed.
   // So we use it in Qt5.
   if(enableDesktopManager_) {
-    QScreen* screeb = static_cast<QScreen*>(sender());
     // qDebug() << "onVirtualGeometryChanged";
     Q_FOREACH(DesktopWindow* desktop, desktopWindows_) {
       desktop->queueRelayout();
     }
+  }
+}
+
+
+static int sigterm_fd[2];
+
+static void sigtermHandler(int) {
+  char c = 1;
+  ::write(sigterm_fd[0], &c, sizeof(c));
+}
+
+void Application::installSigtermHandler() {
+  if(::socketpair(AF_UNIX, SOCK_STREAM, 0, sigterm_fd) == 0) {
+    QSocketNotifier* notifier = new QSocketNotifier(sigterm_fd[1], QSocketNotifier::Read, this);
+    connect(notifier, &QSocketNotifier::activated, this, &Application::onSigtermNotified);
+
+    struct sigaction action;
+    action.sa_handler = sigtermHandler;
+    ::sigemptyset(&action.sa_mask);
+    action.sa_flags |= SA_RESTART;
+    if(::sigaction(SIGTERM, &action, 0) != 0) {
+      qWarning("Couldn't install SIGTERM handler");
+    }
+  } else {
+    qWarning("Couldn't create SIGTERM socketpair");
+  }
+}
+
+void Application::onSigtermNotified() {
+  if (QSocketNotifier* notifier = qobject_cast<QSocketNotifier*>(sender())) {
+    notifier->setEnabled(false);
+    char c;
+    ::read(sigterm_fd[1], &c, sizeof(c));
+    quit();
+    notifier->setEnabled(true);
   }
 }
