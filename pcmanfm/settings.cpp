@@ -90,6 +90,8 @@ Settings::Settings():
   useTrash_(true),
   confirmDelete_(true),
   noUsbTrash_(false),
+  confirmTrash_(false),
+  quickExec_(false),
   showThumbnails_(true),
   archiver_(),
   siUnit_(false),
@@ -151,6 +153,11 @@ bool Settings::loadFile(QString filePath) {
   setTerminal(settings.value("Terminal", "xterm").toString());
   setArchiver(settings.value("Archiver", "file-roller").toString());
   setSiUnit(settings.value("SIUnit", false).toBool());
+
+  setOnlyUserTemplates(settings.value("OnlyUserTemplates", false).toBool());
+  setTemplateTypeOnce(settings.value("OemplateTypeOnce", false).toBool());
+  setTemplateRunApp(settings.value("TemplateRunApp", false).toBool());
+
   settings.endGroup();
 
   settings.beginGroup("Behavior");
@@ -160,8 +167,9 @@ bool Settings::loadFile(QString filePath) {
   singleClick_ = settings.value("SingleClick", false).toBool();
   autoSelectionDelay_ = settings.value("AutoSelectionDelay", 600).toInt();
   confirmDelete_ = settings.value("ConfirmDelete", true).toBool();
-  noUsbTrash_ = settings.value("NoUsbTrash", false).toBool();
-  fm_config->no_usb_trash = noUsbTrash_; // also set this to libfm since FmFileOpsJob reads this config value before trashing files.
+  setNoUsbTrash(settings.value("NoUsbTrash", false).toBool());
+  confirmTrash_ = settings.value("ConfirmTrash", false).toBool();
+  setQuickExec(settings.value("QuickExec", false).toBool());
   // bool thumbnailLocal_;
   // bool thumbnailMax;
   settings.endGroup();
@@ -203,6 +211,10 @@ bool Settings::loadFile(QString filePath) {
   sortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
   sortFolderFirst_ = settings.value("SortFolderFirst", true).toBool();
 
+  setBackupAsHidden(settings.value("BackupAsHidden", false).toBool());
+  showFullNames_ = settings.value("ShowFullNames", false).toBool();
+  shadowHidden_ = settings.value("ShadowHidden", false).toBool();
+
   // override config in libfm's FmConfig
   bigIconSize_ = settings.value("BigIconSize", 48).toInt();
   smallIconSize_ = settings.value("SmallIconSize", 24).toInt();
@@ -235,6 +247,11 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("Terminal", terminal_);
   settings.setValue("Archiver", archiver_);
   settings.setValue("SIUnit", siUnit_);
+
+  settings.setValue("OnlyUserTemplates", onlyUserTemplates_);
+  settings.setValue("OemplateTypeOnce", templateTypeOnce_);
+  settings.setValue("TemplateRunApp", templateRunApp_);
+
   settings.endGroup();
 
   settings.beginGroup("Behavior");
@@ -245,6 +262,8 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("AutoSelectionDelay", autoSelectionDelay_);
   settings.setValue("ConfirmDelete", confirmDelete_);
   settings.setValue("NoUsbTrash", noUsbTrash_);
+  settings.setValue("ConfirmTrash", confirmTrash_);
+  settings.setValue("QuickExec", quickExec_);
   // bool thumbnailLocal_;
   // bool thumbnailMax;
   settings.endGroup();
@@ -281,6 +300,10 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("SortOrder", sortOrderToString(sortOrder_));
   settings.setValue("SortColumn", sortColumnToString(sortColumn_));
   settings.setValue("SortFolderFirst", sortFolderFirst_);
+
+  settings.setValue("BackupAsHidden", backupAsHidden_);
+  settings.setValue("ShowFullNames", showFullNames_);
+  settings.setValue("ShadowHidden", shadowHidden_);
 
   // override config in libfm's FmConfig
   settings.setValue("BigIconSize", bigIconSize_);

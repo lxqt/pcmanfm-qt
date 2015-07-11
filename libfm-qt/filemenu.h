@@ -140,6 +140,14 @@ public:
     return allTrash_;
   }
 
+  bool confirmTrash() const {
+    return confirmTrash_;
+  }
+
+  void setConfirmTrash(bool value) {
+    confirmTrash_ = value;
+  }
+
 protected:
   void createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd);
 #ifdef CUSTOM_ACTIONS
@@ -172,6 +180,8 @@ private:
   FmPath* cwd_;
   bool useTrash_;
   bool confirmDelete_;
+  bool confirmTrash_; // Confirm before moving files into "trash can"
+
   bool sameType_;
   bool sameFilesystem_;
   bool allVirtual_;
