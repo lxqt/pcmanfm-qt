@@ -198,6 +198,7 @@ void DirTreeView::onCustomContextMenuRequested(const QPoint& pos) {
       fm_file_info_list_push_tail(files, fileInfo);
       Fm::FileMenu* menu = new Fm::FileMenu(files, fileInfo, path);
       // FIXME: apply some settings to the menu and set a proper file launcher to it
+      Q_EMIT prepareFileMenu(menu);
       fm_file_info_list_unref(files);
       QVariant pathData = qVariantFromValue(reinterpret_cast<void*>(path));
       QAction* action = menu->openAction();
