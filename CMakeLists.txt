@@ -24,10 +24,6 @@ list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 set(LIBFM_QT_LIB_VERSION "2.0.0")
 set(LIBFM_QT_LIB_SOVERSION "2")
 
-# Set default installation paths
-set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for libraries")
-set(INCLUDE_INSTALL_DIR include CACHE PATH "Installation path for includes")
-
 find_package(Qt5Widgets 5.2 REQUIRED)
 find_package(Qt5DBus 5.2 REQUIRED)
 find_package(Qt5LinguistTools 5.2 REQUIRED)
