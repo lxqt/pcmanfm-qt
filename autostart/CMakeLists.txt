@@ -10,4 +10,7 @@ lxqt_translate_desktop(DESKTOP_FILES
 add_custom_target(autostart_desktop_files ALL DEPENDS ${DESKTOP_FILES})
 #************************************************
 
-install(FILES ${DESKTOP_FILES} DESTINATION "${LXQT_ETC_XDG_DIR}/autostart")
+install(FILES
+    ${DESKTOP_FILES}
+    DESTINATION "${LXQT_ETC_XDG_DIR}/autostart"
+)
