@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="de_DE" sourcelanguage="en">
+<TS version="2.1" language="de" sourcelanguage="en">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -171,7 +171,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="298"/>
         <source>Window Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Fenstermanager</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="299"/>
@@ -181,17 +181,18 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="300"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>not an ideal translation, see discussion in https://github.com/lxde/lxqt/issues/699</translatorcomment>
+        <translation>Schreibtisch</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="301"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Schreibtischordner:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="308"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Pfad des Ordners</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="310"/>
@@ -209,27 +210,27 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="517"/>
         <source>Go Up</source>
-        <translation>Go Up</translation>
+        <translation>Hoch</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="519"/>
         <source>Alt+Up</source>
-        <translation>Alt+Up</translation>
+        <translation>Alt+Bild hoch</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="520"/>
         <source>Home</source>
-        <translation>Home</translation>
+        <translation>Nutzerverzeichnis</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="521"/>
         <source>Alt+Home</source>
-        <translation>Alt+Home</translation>
+        <translation>Alt+Pos1</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="540"/>
         <source>Reload</source>
-        <translation>Ordner neu laden</translation>
+        <translation>Neu laden</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="523"/>
@@ -239,17 +240,17 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="522"/>
         <source>&amp;Reload</source>
-        <translation>Ordner neu &amp;laden</translation>
+        <translation>Neu &amp;laden</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="524"/>
         <source>Go</source>
-        <translation>Gehe zu</translation>
+        <translation>Los</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="525"/>
         <source>Quit</source>
-        <translation>Fenster schließen</translation>
+        <translation>Verlassen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="526"/>
@@ -264,7 +265,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="531"/>
         <source>Ctrl+N</source>
-        <translation>Ctrl+N</translation>
+        <translation>Strg+N</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="532"/>
@@ -274,7 +275,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="533"/>
         <source>Ctrl+H</source>
-        <translation>Ctrl+H</translation>
+        <translation>Strg+H</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="534"/>
@@ -299,7 +300,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="538"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation>Zu Favoriten &amp;hinzufügen</translation>
+        <translation>Zu Lesezeichen &amp;hinzufügen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="539"/>
@@ -309,7 +310,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="546"/>
         <source>Ctrl+X</source>
-        <translation>Ctrl+X</translation>
+        <translation>Strg+X</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="547"/>
@@ -319,7 +320,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="548"/>
         <source>Ctrl+C</source>
-        <translation>Ctrl+C</translation>
+        <translation>Strg+C</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="549"/>
@@ -329,7 +330,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="550"/>
         <source>Ctrl+V</source>
-        <translation>Ctrl+V</translation>
+        <translation>Strg+V</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="551"/>
@@ -359,7 +360,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="552"/>
         <source>Ctrl+A</source>
-        <translation>Ctrl+A</translation>
+        <translation>Strg+A</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="515"/>
@@ -444,7 +445,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="565"/>
         <source>Ctrl+T</source>
-        <translation>Ctrl+T</translation>
+        <translation>Strg+T</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="566"/>
@@ -459,7 +460,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="570"/>
         <source>Alt+Left</source>
-        <translation>Alt+Left</translation>
+        <translation>Alt+Pfeil links</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="571"/>
@@ -474,12 +475,12 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="575"/>
         <source>Alt+Right</source>
-        <translation>Alt+Right</translation>
+        <translation>Alt+Pfeil rechts</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="578"/>
         <source>Del</source>
-        <translation>Del</translation>
+        <translation>Entf</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="580"/>
@@ -504,27 +505,27 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="594"/>
         <source>Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordner</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="595"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+Umschalt+N</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="596"/>
         <source>Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>Leere Datei</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="597"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+Alt+N</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="599"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>Neu e&amp;rstellen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="602"/>
@@ -539,7 +540,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="582"/>
         <source>Ctrl+W</source>
-        <translation>Ctrl+W</translation>
+        <translation>Strg+W</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="584"/>
@@ -564,7 +565,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="589"/>
         <source>Edit Bookmarks</source>
-        <translation>Favoriten bearbeiten</translation>
+        <translation>Lesezeichen bearbeiten</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="590"/>
@@ -584,7 +585,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="593"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation>&amp;Favoriten bearbeiten</translation>
+        <translation>&amp;Lesezeichen bearbeiten</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="598"/>
@@ -609,7 +610,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="604"/>
         <source>&amp;Bookmarks</source>
-        <translation>&amp;Favoriten</translation>
+        <translation>&amp;Lesezeichen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="605"/>
@@ -745,12 +746,12 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="47"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>Gefüllt</translation>
+        <translation>Auf Bildschirmgröße bringen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="48"/>
         <source>Stretch to fit the screen</source>
-        <translation>Gestreckt</translation>
+        <translation>In Bildschirm einpassen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="49"/>
@@ -1005,7 +1006,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="563"/>
         <source>File Operations</source>
-        <translation>Dateioperationen</translation>
+        <translation>Handhabung von Dateien</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="564"/>
@@ -1060,27 +1061,27 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="574"/>
         <source>When removable medium unmounted:</source>
-        <translation>Wenn Wechseldatenträger ausgeworfen:</translation>
+        <translation>Wenn Wechseldatenträger entfernt werden:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="575"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Den Rei&amp;ter des Wechseldatenträgers schließen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="576"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Im Reiter des Wechsledatenträgers das Nutze&amp;rverzeichnis anzeigen</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="579"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Befehl zum N&amp;utzerwechsel:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="582"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Archivverwal&amp;tung:</translation>
     </message>
     <message>
         <source>Close tab containing removable medium</source>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="de_DE" sourcelanguage="en">
+<TS version="2.1" language="de" sourcelanguage="en">
 <context>
     <name>AppChooserDialog</name>
     <message>
@@ -66,7 +66,7 @@
     <message>
         <location filename="../edit-bookmarks.ui" line="14"/>
         <source>Edit Bookmarks</source>
-        <translation>Favoriten bearbeiten</translation>
+        <translation>Lesezeichen bearbeiten</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="42"/>
@@ -346,7 +346,7 @@
     <message>
         <location filename="../editbookmarksdialog.cpp" line="96"/>
         <source>New bookmark</source>
-        <translation>Neuer Favorit</translation>
+        <translation>Neues Lesezeichen</translation>
     </message>
 </context>
 <context>
@@ -782,7 +782,7 @@ Sollen die Dateien stattdessen gelöscht werden?</translation>
     <message>
         <location filename="../placesmodel.cpp" line="132"/>
         <source>Bookmarks</source>
-        <translation>Favoriten</translation>
+        <translation>Lesezeichen</translation>
     </message>
 </context>
 <context>
@@ -803,32 +803,32 @@ Sollen die Dateien stattdessen gelöscht werden?</translation>
     <message>
         <location filename="../placesview.cpp" line="331"/>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>In neuem Reiter öffnen</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="334"/>
         <source>Open in New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>In neuem Fenster öffnen</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="352"/>
         <source>Move Bookmark Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach oben verschieben</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="357"/>
         <source>Move Bookmark Down</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach unten verschieben</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="361"/>
         <source>Rename Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen umbenennen</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="364"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen entfernen</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="373"/>
@@ -901,7 +901,7 @@ Geändert: %3</translation>
     <message>
         <location filename="../sidepane.cpp" line="135"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
-        <translation>Zeigt eine Liste diverser Orte, Geräte und Favoriten in der Seitenleiste</translation>
+        <translation>Zeigt eine Liste diverser Orte, Geräte und Lesezeichen in der Seitenleiste</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="137"/>
@@ -980,7 +980,7 @@ Geändert: %3</translation>
     <message>
         <location filename="../utilities.cpp" line="164"/>
         <source>Create Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordner erstellen</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="169"/>
