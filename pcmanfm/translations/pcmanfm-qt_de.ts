@@ -205,140 +205,140 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Dateisuche</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Dateiname, Lokalisation</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>Dateiname</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchmuster:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="220"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Groß- und Kleinschreibung ignorieren</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
         <location filename="../file-search.ui" line="227"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Muster ist regulärer Ausdruck</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation type="unfinished"></translation>
+        <translation>Lokalisation</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Hinzufügen</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="86"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Entfernen</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="113"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Unterverzeichnisse einbeziehen</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="120"/>
         <source>Search hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>versteckte Dateien einbeziehen</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="134"/>
         <location filename="../file-search.ui" line="140"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Dateityp</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="146"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>Suche auf die folgenden Typen beschränken:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="153"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>Textdateien</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="160"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilddateien</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="167"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>Audiodateien</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="174"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>Videodateien</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="181"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokumente</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="205"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>Inhalt</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="211"/>
         <source>File contains</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei enthält</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="251"/>
         <source>Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>Dateieigenschaften</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="257"/>
         <source>File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Dateigröße</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="263"/>
         <source>Bigger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>größer als:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="284"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation>kleiner als:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="308"/>
         <source>Last Modified Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeitpunkt der letzten Modifikation</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="314"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>vor:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="321"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation>nach:</translation>
     </message>
 </context>
 <context>
@@ -1173,102 +1173,102 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Anzeige</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="130"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="138"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>in aktuellem Tab öffnen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="143"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>in neuem Tab öffnen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="148"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>in neuem Fenster öffnen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Dateien auf Wechseldatenträgern löschen anstatt sie in den Papierkorb zu verschieben</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Bestätigung vor Verschieben in den Papierkorb</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Beim Starten ausführbarer Dateien keine Optionen hierzu erfragen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="292"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzeroberfläche</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="305"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Sicherungsdateien wie versteckte handhaben</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="315"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Dateinamen immer vollständig anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Icons versteckter Dateien schattiert anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="413"/>
         <source>Show in places</source>
-        <translation type="unfinished"></translation>
+        <translation>Unter &quot;Orte&quot; anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="420"/>
         <source>Home</source>
-        <translation type="unfinished">Nutzerverzeichnis</translation>
+        <translation>Nutzerverzeichnis</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="433"/>
         <source>Desktop</source>
-        <translation type="unfinished">Schreibtisch</translation>
+        <translation>Schreibtisch</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="446"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation>Papierkorb</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechner</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="472"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Anwendungen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="480"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Geräte</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="488"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerk</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="530"/>
@@ -1328,22 +1328,22 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../preferences.ui" line="714"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorlagen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="720"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Ausschließlich benutzerdefinierte im Menü anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="727"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Nur eine Vorlage pro MIME-Typ anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="734"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Aus Vorlagen erstellte Dokumente in Standardanwendung öffnen</translation>
     </message>
     <message>
         <source>Close tab containing removable medium</source>
