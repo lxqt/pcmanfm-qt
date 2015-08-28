@@ -5,5 +5,5 @@ GenericName=Desktop Settings
 Comment=Change wallpapers and behavior of desktop manager
 Exec=pcmanfm-qt --desktop-pref=general
 Icon=user-desktop
-Categories=Qt;DesktopSettings;
+Categories=Settings;Qt;DesktopSettings;
 StartupNotify=true
