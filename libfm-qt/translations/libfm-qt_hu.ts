@@ -306,6 +306,19 @@
     </message>
 </context>
 <context>
+    <name>Fm::CreateNewMenu</name>
+    <message>
+        <location filename="../createnewmenu.cpp" line="29"/>
+        <source>Folder</source>
+        <translation type="unfinished">Mappa</translation>
+    </message>
+    <message>
+        <location filename="../createnewmenu.cpp" line="33"/>
+        <source>Blank File</source>
+        <translation type="unfinished">Üres fájl</translation>
+    </message>
+</context>
+<context>
     <name>Fm::DirTreeModel</name>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="77"/>
@@ -316,6 +329,24 @@
         <location filename="../dirtreemodelitem.cpp" line="208"/>
         <source>&lt;No sub folders&gt;</source>
         <translation>&lt;Nincs almappa&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>Fm::DirTreeView</name>
+    <message>
+        <location filename="../dirtreeview.cpp" line="208"/>
+        <source>Open in New T&amp;ab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dirtreeview.cpp" line="212"/>
+        <source>Open in New Win&amp;dow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dirtreeview.cpp" line="217"/>
+        <source>Open in Termina&amp;l</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -367,78 +398,83 @@ Mi legyen vele?</translation>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="78"/>
+        <location filename="../filemenu.cpp" line="81"/>
         <source>Open</source>
         <translation>Nyit</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="128"/>
+        <location filename="../filemenu.cpp" line="119"/>
+        <source>Create &amp;New</source>
+        <translation type="unfinished">&amp;Új létrehozása</translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="138"/>
         <source>&amp;Restore</source>
         <translation>&amp;Visszavon</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="134"/>
+        <location filename="../filemenu.cpp" line="144"/>
         <source>Cut</source>
         <translation>Kivág</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="138"/>
+        <location filename="../filemenu.cpp" line="148"/>
         <source>Copy</source>
         <translation>Másol</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="142"/>
+        <location filename="../filemenu.cpp" line="152"/>
         <source>Paste</source>
         <translation>Beilleszt</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="146"/>
-        <location filename="../filemenu.cpp" line="339"/>
+        <location filename="../filemenu.cpp" line="156"/>
+        <location filename="../filemenu.cpp" line="349"/>
         <source>&amp;Move to Trash</source>
         <translation>Kukába &amp;mozgat</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="289"/>
+        <location filename="../filemenu.cpp" line="299"/>
         <source>Output</source>
         <translation>Kimenet</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="339"/>
+        <location filename="../filemenu.cpp" line="349"/>
         <source>&amp;Delete</source>
         <translation>&amp;Töröl</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="150"/>
+        <location filename="../filemenu.cpp" line="160"/>
         <source>Rename</source>
         <translation>Átnevez</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="82"/>
+        <location filename="../filemenu.cpp" line="85"/>
         <source>Open With...</source>
         <translation>Megnyitás ezzel...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="110"/>
+        <location filename="../filemenu.cpp" line="113"/>
         <source>Other Applications</source>
         <translation>Más alkalmazások</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="177"/>
+        <location filename="../filemenu.cpp" line="187"/>
         <source>Extract to...</source>
         <translation>Kibontás...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="182"/>
+        <location filename="../filemenu.cpp" line="192"/>
         <source>Extract Here</source>
         <translation>Kibontás ide</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="188"/>
+        <location filename="../filemenu.cpp" line="198"/>
         <source>Compress</source>
         <translation>Csomagolás</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="198"/>
+        <location filename="../filemenu.cpp" line="208"/>
         <source>Properties</source>
         <translation>Tulajdonságok</translation>
     </message>
@@ -603,7 +639,7 @@ Töröljük őket véglegesen?</translation>
 <context>
     <name>Fm::FolderMenu</name>
     <message>
-        <location filename="../foldermenu.cpp" line="36"/>
+        <location filename="../foldermenu.cpp" line="37"/>
         <source>Create &amp;New</source>
         <translation>&amp;Új létrehozása</translation>
     </message>
@@ -639,57 +675,55 @@ Töröljük őket véglegesen?</translation>
         <translation>Mappatulajd&amp;onságok</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="85"/>
         <source>Folder</source>
-        <translation>Mappa</translation>
+        <translation type="vanished">Mappa</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="89"/>
         <source>Blank File</source>
-        <translation>Üres fájl</translation>
+        <translation type="vanished">Üres fájl</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="133"/>
+        <location filename="../foldermenu.cpp" line="99"/>
         <source>By File Name</source>
         <translation>Név</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="134"/>
+        <location filename="../foldermenu.cpp" line="100"/>
         <source>By Modification Time</source>
         <translation>Módosítási idő</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="135"/>
+        <location filename="../foldermenu.cpp" line="101"/>
         <source>By File Size</source>
         <translation>Méret</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="136"/>
+        <location filename="../foldermenu.cpp" line="102"/>
         <source>By File Type</source>
         <translation>Típus</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="137"/>
+        <location filename="../foldermenu.cpp" line="103"/>
         <source>By File Owner</source>
         <translation>Tulajdonos</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="149"/>
+        <location filename="../foldermenu.cpp" line="115"/>
         <source>Ascending</source>
         <translation>Emelkedő</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="154"/>
+        <location filename="../foldermenu.cpp" line="120"/>
         <source>Descending</source>
         <translation>Csökkenő</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="169"/>
+        <location filename="../foldermenu.cpp" line="135"/>
         <source>Folder First</source>
         <translation>Mappák elől</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="178"/>
+        <location filename="../foldermenu.cpp" line="144"/>
         <source>Case Sensitive</source>
         <translation>Nagybetűérzékeny</translation>
     </message>
@@ -888,24 +922,24 @@ Módosítva: %3</translation>
 <context>
     <name>Fm::SidePane</name>
     <message>
-        <location filename="../sidepane.cpp" line="46"/>
-        <location filename="../sidepane.cpp" line="125"/>
+        <location filename="../sidepane.cpp" line="47"/>
+        <location filename="../sidepane.cpp" line="126"/>
         <source>Places</source>
         <translation>Helyek</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="47"/>
-        <location filename="../sidepane.cpp" line="127"/>
+        <location filename="../sidepane.cpp" line="48"/>
+        <location filename="../sidepane.cpp" line="128"/>
         <source>Directory Tree</source>
         <translation>Könyvtárfa</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="135"/>
+        <location filename="../sidepane.cpp" line="136"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
         <translation>Általános helyek, eszközök és könyvjelzők listája az oldalsávban</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="137"/>
+        <location filename="../sidepane.cpp" line="138"/>
         <source>Shows tree of directories in sidebar</source>
         <translation>Könyvtárfa az oldalsávban</translation>
     </message>
@@ -961,10 +995,10 @@ Módosítva: %3</translation>
 <context>
     <name>QObject</name>
     <message>
+        <location filename="../filelauncher.cpp" line="117"/>
+        <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="152"/>
         <location filename="../utilities.cpp" line="228"/>
-        <location filename="../mountoperation.cpp" line="185"/>
-        <location filename="../filelauncher.cpp" line="109"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>

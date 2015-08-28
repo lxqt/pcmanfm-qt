@@ -306,6 +306,19 @@
     </message>
 </context>
 <context>
+    <name>Fm::CreateNewMenu</name>
+    <message>
+        <location filename="../createnewmenu.cpp" line="29"/>
+        <source>Folder</source>
+        <translation type="unfinished">Directorio</translation>
+    </message>
+    <message>
+        <location filename="../createnewmenu.cpp" line="33"/>
+        <source>Blank File</source>
+        <translation type="unfinished">Archivo Vacío</translation>
+    </message>
+</context>
+<context>
     <name>Fm::DirTreeModel</name>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="77"/>
@@ -316,6 +329,24 @@
         <location filename="../dirtreemodelitem.cpp" line="208"/>
         <source>&lt;No sub folders&gt;</source>
         <translation>&lt;No hay subdirectorios&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>Fm::DirTreeView</name>
+    <message>
+        <location filename="../dirtreeview.cpp" line="208"/>
+        <source>Open in New T&amp;ab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dirtreeview.cpp" line="212"/>
+        <source>Open in New Win&amp;dow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dirtreeview.cpp" line="217"/>
+        <source>Open in Termina&amp;l</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -367,78 +398,83 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="78"/>
+        <location filename="../filemenu.cpp" line="81"/>
         <source>Open</source>
         <translation>Abrir</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="82"/>
+        <location filename="../filemenu.cpp" line="85"/>
         <source>Open With...</source>
         <translation>Abrir con...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="110"/>
+        <location filename="../filemenu.cpp" line="113"/>
         <source>Other Applications</source>
         <translation>Otras Aplicaciones</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="128"/>
+        <location filename="../filemenu.cpp" line="119"/>
+        <source>Create &amp;New</source>
+        <translation type="unfinished">Crear &amp;Nuevo</translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="138"/>
         <source>&amp;Restore</source>
         <translation>&amp;Restaurar</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="134"/>
+        <location filename="../filemenu.cpp" line="144"/>
         <source>Cut</source>
         <translation>Cortar</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="138"/>
+        <location filename="../filemenu.cpp" line="148"/>
         <source>Copy</source>
         <translation>Copiar</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="142"/>
+        <location filename="../filemenu.cpp" line="152"/>
         <source>Paste</source>
         <translation>Pegar</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="146"/>
-        <location filename="../filemenu.cpp" line="339"/>
+        <location filename="../filemenu.cpp" line="156"/>
+        <location filename="../filemenu.cpp" line="349"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mover a la Papelera</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="150"/>
+        <location filename="../filemenu.cpp" line="160"/>
         <source>Rename</source>
         <translation>Renombrar</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="177"/>
+        <location filename="../filemenu.cpp" line="187"/>
         <source>Extract to...</source>
         <translation>Extraer en...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="182"/>
+        <location filename="../filemenu.cpp" line="192"/>
         <source>Extract Here</source>
         <translation>Extraer aquí</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="188"/>
+        <location filename="../filemenu.cpp" line="198"/>
         <source>Compress</source>
         <translation>Comprimir</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="198"/>
+        <location filename="../filemenu.cpp" line="208"/>
         <source>Properties</source>
         <translation>Propiedades</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="289"/>
+        <location filename="../filemenu.cpp" line="299"/>
         <source>Output</source>
         <translation>Salida</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="339"/>
+        <location filename="../filemenu.cpp" line="349"/>
         <source>&amp;Delete</source>
         <translation>&amp;Borrar</translation>
     </message>
@@ -603,7 +639,7 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::FolderMenu</name>
     <message>
-        <location filename="../foldermenu.cpp" line="36"/>
+        <location filename="../foldermenu.cpp" line="37"/>
         <source>Create &amp;New</source>
         <translation>Crear &amp;Nuevo</translation>
     </message>
@@ -638,57 +674,55 @@ Do you want to delete them instead?</source>
         <translation>Pr&amp;opiedades del directorio</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="85"/>
         <source>Folder</source>
-        <translation>Directorio</translation>
+        <translation type="vanished">Directorio</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="89"/>
         <source>Blank File</source>
-        <translation>Archivo Vacío</translation>
+        <translation type="vanished">Archivo Vacío</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="133"/>
+        <location filename="../foldermenu.cpp" line="99"/>
         <source>By File Name</source>
         <translation>Por nombre de archivo</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="134"/>
+        <location filename="../foldermenu.cpp" line="100"/>
         <source>By Modification Time</source>
         <translation>Por fecha de modificación</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="135"/>
+        <location filename="../foldermenu.cpp" line="101"/>
         <source>By File Size</source>
         <translation>Por tamaño de archivo</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="136"/>
+        <location filename="../foldermenu.cpp" line="102"/>
         <source>By File Type</source>
         <translation>Por tipo de archivo</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="137"/>
+        <location filename="../foldermenu.cpp" line="103"/>
         <source>By File Owner</source>
         <translation>Por dueño del archivo</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="149"/>
+        <location filename="../foldermenu.cpp" line="115"/>
         <source>Ascending</source>
         <translation>Ascendente</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="154"/>
+        <location filename="../foldermenu.cpp" line="120"/>
         <source>Descending</source>
         <translation>Descendente</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="169"/>
+        <location filename="../foldermenu.cpp" line="135"/>
         <source>Folder First</source>
         <translation>Primero Directorios</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="178"/>
+        <location filename="../foldermenu.cpp" line="144"/>
         <source>Case Sensitive</source>
         <translation>Coincidir mayúsculas</translation>
     </message>
@@ -887,24 +921,24 @@ Modificado: %3</translation>
 <context>
     <name>Fm::SidePane</name>
     <message>
-        <location filename="../sidepane.cpp" line="46"/>
-        <location filename="../sidepane.cpp" line="125"/>
+        <location filename="../sidepane.cpp" line="47"/>
+        <location filename="../sidepane.cpp" line="126"/>
         <source>Places</source>
         <translation>Lugares</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="47"/>
-        <location filename="../sidepane.cpp" line="127"/>
+        <location filename="../sidepane.cpp" line="48"/>
+        <location filename="../sidepane.cpp" line="128"/>
         <source>Directory Tree</source>
         <translation>Árbol de Directorios</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="135"/>
+        <location filename="../sidepane.cpp" line="136"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
         <translation>Muestra lista de lugares comunes, dispositivos y marcadores en la barra lateral</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="137"/>
+        <location filename="../sidepane.cpp" line="138"/>
         <source>Shows tree of directories in sidebar</source>
         <translation>Muestra árbol de directorios en barra lateral</translation>
     </message>
@@ -960,10 +994,10 @@ Modificado: %3</translation>
 <context>
     <name>QObject</name>
     <message>
+        <location filename="../filelauncher.cpp" line="117"/>
+        <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="152"/>
         <location filename="../utilities.cpp" line="228"/>
-        <location filename="../mountoperation.cpp" line="185"/>
-        <location filename="../filelauncher.cpp" line="109"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
