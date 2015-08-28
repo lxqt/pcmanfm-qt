@@ -576,12 +576,12 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../main-win.ui" line="508"/>
         <source>New &amp;Tab</source>
-        <translation>Neuer &amp;Reiter</translation>
+        <translation>Neuer &amp;Tab</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="511"/>
         <source>New Tab</source>
-        <translation>Neuer Reiter</translation>
+        <translation>Neuer Tab</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="514"/>
@@ -631,7 +631,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../main-win.ui" line="577"/>
         <source>C&amp;lose Tab</source>
-        <translation>Reiter &amp;schließen</translation>
+        <translation>Tab &amp;schließen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="585"/>
@@ -799,7 +799,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../application.cpp" line="141"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Einstellungsdialog der Arbeitsfläche mit dem angegebenen Reiter öffnen</translation>
+        <translation>Einstellungsdialog der Arbeitsfläche mit dem angegebenen Tab öffnen</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="141"/>
@@ -840,7 +840,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../application.cpp" line="157"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Einstellungsdialog auf dem angegebenen Reiter öffnen</translation>
+        <translation>Einstellungsdialog auf dem angegebenen Tab öffnen</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="160"/>
@@ -869,7 +869,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../autorundialog.cpp" line="43"/>
         <source>Open in file manager</source>
-        <translation>In Dateimanager öffnen</translation>
+        <translation>Öffnen in Dateimanager</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="133"/>
@@ -1014,17 +1014,17 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../view.cpp" line="103"/>
         <source>Open in New T&amp;ab</source>
-        <translation>In einem neuen &amp;Reiter öffnen</translation>
+        <translation>Öffnen in neuem &amp;Tab</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="107"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>In einem neuen &amp;Fenster öffnen</translation>
+        <translation>Öffnen in neuem &amp;Fenster</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="114"/>
         <source>Open in Termina&amp;l</source>
-        <translation>Im &amp;Terminal öffnen</translation>
+        <translation>Öffnen in &amp;Terminal</translation>
     </message>
 </context>
 <context>
@@ -1108,12 +1108,12 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../preferences.ui" line="361"/>
         <source>Always show the tab bar</source>
-        <translation>Reiterleiste immer anzeigen</translation>
+        <translation>Tableiste immer anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="368"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>&apos;Schließen&apos;-Knopf an Reitern zeigen</translation>
+        <translation>&apos;Schließen&apos;-Knopf an Tabs zeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="375"/>
@@ -1183,17 +1183,17 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../preferences.ui" line="138"/>
         <source>Open in current tab</source>
-        <translation>in aktuellem Tab öffnen</translation>
+        <translation>Öffnen in aktuellem Tab</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="143"/>
         <source>Open in new tab</source>
-        <translation>in neuem Tab öffnen</translation>
+        <translation>Öffnen in neuem Tab</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="148"/>
         <source>Open in new window</source>
-        <translation>in neuem Fenster öffnen</translation>
+        <translation>Öffnen in neuem Fenster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="179"/>
@@ -1313,7 +1313,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../preferences.ui" line="624"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>Im Reiter des Wechsledatenträgers das Nutze&amp;rverzeichnis anzeigen</translation>
+        <translation>Im Tab des Wechsledatenträgers das Nutze&amp;rverzeichnis anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="667"/>

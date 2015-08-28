@@ -310,12 +310,12 @@
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished">Ordner</translation>
+        <translation>Ordner</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished">Leere Datei</translation>
+        <translation>Leere Datei</translation>
     </message>
 </context>
 <context>
@@ -336,17 +336,17 @@
     <message>
         <location filename="../dirtreeview.cpp" line="208"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffnen in neuem T&amp;ab</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="212"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffnen in neuem &amp;Fenster</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffnen in Termina&amp;l</translation>
     </message>
 </context>
 <context>
@@ -405,7 +405,7 @@ Was möchten Sie damit tun?</translation>
     <message>
         <location filename="../filemenu.cpp" line="119"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished">&amp;Neu erstellen</translation>
+        <translation>&amp;Neu erstellen</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="138"/>
@@ -837,12 +837,12 @@ Sollen die Dateien stattdessen gelöscht werden?</translation>
     <message>
         <location filename="../placesview.cpp" line="331"/>
         <source>Open in New Tab</source>
-        <translation>In neuem Reiter öffnen</translation>
+        <translation>Öffnen in neuem Tab</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="334"/>
         <source>Open in New Window</source>
-        <translation>In neuem Fenster öffnen</translation>
+        <translation>Öffnen in neuem Fenster</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="352"/>
