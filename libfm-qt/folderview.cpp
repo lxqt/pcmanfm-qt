@@ -646,8 +646,13 @@ void FolderView::contextMenuEvent(QContextMenuEvent* event) {
 
 void FolderView::childMousePressEvent(QMouseEvent* event) {
   // called from mousePressEvent() of child view
-  if(event->button() == Qt::MiddleButton) {
+  Qt::MouseButton button = event->button();
+  if(button == Qt::MiddleButton) {
     emitClickedAt(MiddleClick, event->pos());
+  } else if (button == Qt::BackButton) {
+    Q_EMIT clickedBack();
+  } else if (button == Qt::ForwardButton) {
+    Q_EMIT clickedForward();
   }
 }
 
