@@ -197,140 +197,140 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Znajdź pliki</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa/Lokalizacja</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>Wzorce nazwy pliku</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="unfinished"></translation>
+        <translation>Wzorzec:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="220"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignoruj wielkość liter</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
         <location filename="../file-search.ui" line="227"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Użyj wyrażeń regularnych</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation type="unfinished"></translation>
+        <translation>Szukaj w</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="86"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="113"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Szukaj w podkatalogach</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="120"/>
         <source>Search hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>Szukaj wśród ukrytych plików</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="134"/>
         <location filename="../file-search.ui" line="140"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Typ pliku</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="146"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>Szukaj tylko plików o podanym typie:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="153"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>Pliki tekstowe</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="160"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>Obrazy</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="167"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>Pliki dźwiękowe</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="174"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>Pliki wideo</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="181"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokumenty</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="205"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>Zawartość</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="211"/>
         <source>File contains</source>
-        <translation type="unfinished"></translation>
+        <translation>Pliki zawierające</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="251"/>
         <source>Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>Ustawienia</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="257"/>
         <source>File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar pliku</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="263"/>
         <source>Bigger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Większy niż:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="284"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mniejszy niż:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="308"/>
         <source>Last Modified Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Czas ostatniej modyfikacji</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="314"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Wcześniejszy niż:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="321"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Późniejszy niż:</translation>
     </message>
 </context>
 <context>
@@ -403,7 +403,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../main-win.ui" line="300"/>
         <source>Show &amp;Hidden</source>
-        <translation>Wyświetlanie &amp;ukrytych plików</translation>
+        <translation>Wyświetl &amp;ukryte pliki</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="303"/>
@@ -508,7 +508,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../main-win.ui" line="366"/>
         <source>&amp;Icon View</source>
-        <translation>Widok &amp;ikon</translation>
+        <translation>&amp;Ikony</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="374"/>
@@ -638,27 +638,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../main-win.ui" line="645"/>
         <source>Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalog</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="656"/>
         <source>Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>Pusty plik</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="659"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="79"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nowy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="107"/>
@@ -703,7 +703,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Open &amp;Terminal</source>
-        <translation>Otwórz położenie w &amp;terminalu</translation>
+        <translation>Otwórz w &amp;terminalu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="627"/>
@@ -781,12 +781,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="135"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Uruchom menedżera pulpitu</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="138"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyłądż menedżera pulpitu jeżeli jest uruchomiony</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="141"/>
@@ -797,7 +797,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../application.cpp" line="141"/>
         <location filename="../application.cpp" line="157"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>NAZWA</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="144"/>
@@ -874,22 +874,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="46"/>
         <source>Fill with background color only</source>
-        <translation>Wypełnienie kolorem</translation>
+        <translation>Wypełnij tylko kolorem</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="47"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>Rozciągnięcie do rozmiaru ekranu </translation>
+        <translation>Rozciągnij do rozmiaru ekranu</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="48"/>
         <source>Stretch to fit the screen</source>
-        <translation>Dopasowanie do rozmiaru ekranu</translation>
+        <translation>Dopasuj do rozmiaru ekranu</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="49"/>
         <source>Center on the screen</source>
-        <translation>Wyśrodkowanie</translation>
+        <translation>Wyśrodkuj</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
@@ -949,7 +949,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferencesdialog.cpp" line="190"/>
         <source>Icon View</source>
-        <translation>Widok ikon</translation>
+        <translation>Ikony</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="191"/>
@@ -1047,7 +1047,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation>Wolumeny</translation>
+        <translation>Wolumen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
@@ -1122,7 +1122,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>Open files with single click</source>
-        <translation>Otwieranie plików jednokrotnym kliknięciem</translation>
+        <translation>Otwórz pliki pojedynczym kliknięciem</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="100"/>
@@ -1137,7 +1137,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="120"/>
         <source> sec</source>
-        <translation>sek</translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
@@ -1147,7 +1147,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Confirm before deleting files</source>
-        <translation>Potwierdzenie usuwania plików</translation>
+        <translation>Potwierdź przed usunięciem plików</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="172"/>
@@ -1157,12 +1157,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="554"/>
         <source>Show thumbnails of files</source>
-        <translation>Wyświetlanie miniatur zawartości plików</translation>
+        <translation>Wyświetl miniatury zawartości plików</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="547"/>
         <source>Only show thumbnails for local files</source>
-        <translation>Wyświetlanie miniatur tylko lokalnych plików</translation>
+        <translation>Wyświetl miniatury zawartości tylko lokalnych plików</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
@@ -1172,22 +1172,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="130"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zakładki:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="138"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz w aktualnej zakładce</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="143"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz w nowej zakładce</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="148"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz w nowym oknie</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="179"/>
@@ -1197,7 +1197,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Potwierdź przed przeniesieniem plików do &quot;Kosza&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
@@ -1207,7 +1207,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="292"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyświetlanie</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="305"/>
@@ -1217,7 +1217,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="315"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Zawsze wyświetlaj pełne nazwy plików</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -1232,42 +1232,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="420"/>
         <source>Home</source>
-        <translation type="unfinished">Katalog użytkownika</translation>
+        <translation>Katalog użytkownika</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="433"/>
         <source>Desktop</source>
-        <translation type="unfinished">Pulpit</translation>
+        <translation>Pulpit</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="446"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation>Kosz</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Komputer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="472"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplikacje</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="480"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Urządzenia</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="488"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Sieć</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="530"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Pomijanie generowania miniatur plików większych niż:</translation>
+        <translation>Nie generuj miniatur dla plików większych niż:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="537"/>
@@ -1297,17 +1297,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="611"/>
         <source>When removable medium unmounted:</source>
-        <translation>Działania po odmontowaniu nośnika wymiennego</translation>
+        <translation>Działania po odmontowaniu nośnika wymiennego:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="617"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Zamknij zakładkę nośnika wymiennego</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="624"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmień katalog w zakładce na katalog użytkownika</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="667"/>
@@ -1317,12 +1317,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="691"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Menedżer archiwów</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="714"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Szablony</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="720"/>
@@ -1332,7 +1332,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="727"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokazuj tylko jeden szablon dla każdego typu MIME</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="734"/>
