@@ -95,6 +95,7 @@ public:
   QItemSelectionModel* selectionModel() const;
   FmFileInfoList* selectedFiles() const;
   FmPathList* selectedFilePaths() const;
+  QModelIndex indexFromFolderPath(FmPath* folderPath) const;
 
   void selectAll();
 

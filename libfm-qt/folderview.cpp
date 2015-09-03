@@ -712,6 +712,18 @@ FmPathList* FolderView::selectedFilePaths() const {
   return NULL;
 }
 
+QModelIndex FolderView::indexFromFolderPath(FmPath* folderPath) const {
+  QModelIndex index;
+  int count = model_->rowCount();
+  for(int row = 0; row < count; ++row) {
+    index = model_->index(row, 0);
+    FmFileInfo* info = model_->fileInfoFromIndex(index);
+    if(info && fm_file_info_is_dir(info) && fm_path_equal(folderPath,fm_file_info_get_path(info)))
+      return index;
+  }
+  return QModelIndex();
+}
+
 FmFileInfoList* FolderView::selectedFiles() const {
   if(model_) {
     QModelIndexList selIndexes = mode == DetailedListMode ? selectedRows() : selectedIndexes();
