@@ -40,7 +40,8 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   QWidget(parent),
   folder_(NULL),
   folderModel_(NULL),
-  overrideCursor_(false) {
+  overrideCursor_(false),
+  wentUp_(false) {
 
   Settings& settings = static_cast<Application*>(qApp)->settings();
 
@@ -123,16 +124,14 @@ void TabPage::freeFolder() {
 #endif
 }
 
-static bool wentUp(false);
-
 // slot
 void TabPage::restoreScrollPos() {
-  if (!wentUp) {
+  if (!wentUp_) {
     // scroll to recorded position
     folderView_->childView()->verticalScrollBar()->setValue(browseHistory().currentScrollPos());
   } else {
     // scroll to and select the folder from where we've come up (-> up()).
-    wentUp = false;
+    wentUp_ = false;
     int prevIndex = history_.currentIndex() - 1;
     if (prevIndex >= 0) {
       QModelIndex index = folderView_->indexFromFolderPath(history_.at(prevIndex).path());
@@ -475,7 +474,7 @@ void TabPage::up() {
   if(_path) {
     FmPath* parent = fm_path_get_parent(_path);
     if(parent) {
-      wentUp = true;
+      wentUp_ = true;
       chdir(parent, true);
     }
   }
