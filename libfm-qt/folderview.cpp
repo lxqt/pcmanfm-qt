@@ -927,7 +927,15 @@ void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
     }
   }
   else if(type == ContextMenuClick) {
-    FmPath* folderPath = path();
+    FmPath* folderPath = NULL;
+    FmFileInfoList* files = selectedFiles();
+    if (files) {
+      FmFileInfo* first = fm_file_info_list_peek_head(files);
+      if (fm_file_info_list_get_length(files) == 1 && fm_file_info_is_dir(first))
+        folderPath = fm_file_info_get_path(first);
+    }
+    if (!folderPath)
+      folderPath = path();
     QMenu* menu = NULL;
     if(fileInfo) {
       // show context menu
