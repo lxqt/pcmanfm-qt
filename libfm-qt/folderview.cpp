@@ -724,6 +724,36 @@ QModelIndex FolderView::indexFromFolderPath(FmPath* folderPath) const {
   return QModelIndex();
 }
 
+void FolderView::selectFiles(FmFileInfoList* files) {
+  if (!files) return;
+  selectionModel()->clear();
+  QModelIndex index, firstIndex;
+  int count = model_->rowCount();
+  GList* List = fm_list_peek_head_link((FmList*)files);
+  bool singleFile(g_list_length(List) == 1);
+  for(int row = 0; row < count; ++row) {
+    if (!List) break;
+    index = model_->index(row, 0);
+    FmFileInfo* info = model_->fileInfoFromIndex(index);
+    GList* l = List;
+    for(; l; l = l->next) {
+      FmFileInfo* fi = (FmFileInfo*)l->data;
+      if (info == fi)
+      {
+        selectionModel()->select(index, QItemSelectionModel::Select);
+        List = g_list_remove_link(List, l);
+        if (!firstIndex.isValid()) firstIndex = index;
+        break;
+      }
+    }
+  }
+  if (firstIndex.isValid()) {
+    view->scrollTo(firstIndex, QAbstractItemView::EnsureVisible);
+    if (singleFile) // give focus to the single file
+      selectionModel()->setCurrentIndex(firstIndex, QItemSelectionModel::Current);
+  }
+}
+
 FmFileInfoList* FolderView::selectedFiles() const {
   if(model_) {
     QModelIndexList selIndexes = mode == DetailedListMode ? selectedRows() : selectedIndexes();
@@ -831,8 +861,11 @@ bool FolderView::eventFilter(QObject* watched, QEvent* event) {
           if(!selectionModel()->hasSelection())
             selectionModel()->setCurrentIndex(index, QItemSelectionModel::Current);
         }
-        else
+        else {
           setCursor(Qt::ArrowCursor);
+          if(!selectionModel()->hasSelection())
+            selectionModel()->clearCurrentIndex();
+        }
         // turn on auto-selection for hovered item when single click mode is used.
         if(autoSelectionDelay_ > 0 && model_) {
           if(!autoSelectionTimer_) {

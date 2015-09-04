@@ -188,6 +188,8 @@ protected Q_SLOTS:
   void onModelSortFilterChanged();
   void onSelChanged(int numSel);
   void restoreScrollPos();
+  void onFilesAdded(FmFileInfoList* files);
+  void stopWatchingNewFiles();
 
 private:
   void freeFolder();
