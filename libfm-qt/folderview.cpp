@@ -712,6 +712,18 @@ FmPathList* FolderView::selectedFilePaths() const {
   return NULL;
 }
 
+QModelIndex FolderView::indexFromFolderPath(FmPath* folderPath) const {
+  QModelIndex index;
+  int count = model_->rowCount();
+  for(int row = 0; row < count; ++row) {
+    index = model_->index(row, 0);
+    FmFileInfo* info = model_->fileInfoFromIndex(index);
+    if(info && fm_file_info_is_dir(info) && fm_path_equal(folderPath,fm_file_info_get_path(info)))
+      return index;
+  }
+  return QModelIndex();
+}
+
 FmFileInfoList* FolderView::selectedFiles() const {
   if(model_) {
     QModelIndexList selIndexes = mode == DetailedListMode ? selectedRows() : selectedIndexes();
@@ -927,7 +939,15 @@ void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
     }
   }
   else if(type == ContextMenuClick) {
-    FmPath* folderPath = path();
+    FmPath* folderPath = NULL;
+    FmFileInfoList* files = selectedFiles();
+    if (files) {
+      FmFileInfo* first = fm_file_info_list_peek_head(files);
+      if (fm_file_info_list_get_length(files) == 1 && fm_file_info_is_dir(first))
+        folderPath = fm_file_info_get_path(first);
+    }
+    else
+      folderPath = path();
     QMenu* menu = NULL;
     if(fileInfo) {
       // show context menu

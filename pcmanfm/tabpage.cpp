@@ -31,7 +31,6 @@
 #include "application.h"
 #include "cachedfoldermodel.h"
 #include <QTimer>
-
 using namespace Fm;
 
 namespace PCManFM {
@@ -123,10 +122,24 @@ void TabPage::freeFolder() {
 #endif
 }
 
+static bool focusChildFolder(false);
+
 // slot
 void TabPage::restoreScrollPos() {
-  // scroll to recorded position
-  folderView_->childView()->verticalScrollBar()->setValue(browseHistory().currentScrollPos());
+  if (!focusChildFolder) {
+    // scroll to recorded position
+    folderView_->childView()->verticalScrollBar()->setValue(browseHistory().currentScrollPos());
+  } else {
+    // scroll to and select the folder from where we've come here by going up (-> up()).
+    focusChildFolder = false;
+    int prevIndex = history_.currentIndex() - 1;
+    if (prevIndex < 0) return;
+    QModelIndex index = folderView_->indexFromFolderPath(history_.at(prevIndex).path());
+    if (index.isValid()) {
+      folderView_->childView()->scrollTo(index, QAbstractItemView::EnsureVisible);
+      folderView_->childView()->setCurrentIndex(index);
+    }
+  }
 }
 
 /*static*/ void TabPage::onFolderFinishLoading(FmFolder* _folder, TabPage* pThis) {
@@ -319,6 +332,10 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
   g_free(disp_name);
 
   folder_ = fm_folder_from_path(newPath);
+  if(addHistory) {
+    // add current path to browse history
+    history_.add(path());
+  }
   g_signal_connect(folder_, "start-loading", G_CALLBACK(onFolderStartLoading), this);
   g_signal_connect(folder_, "finish-loading", G_CALLBACK(onFolderFinishLoading), this);
   g_signal_connect(folder_, "error", G_CALLBACK(onFolderError), this);
@@ -342,11 +359,6 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
   }
   else
     onFolderStartLoading(folder_, this);
-
-  if(addHistory) {
-    // add current path to browse history
-    history_.add(path());
-  }
 }
 
 void TabPage::selectAll() {
@@ -460,8 +472,10 @@ void TabPage::up() {
   FmPath* _path = path();
   if(_path) {
     FmPath* parent = fm_path_get_parent(_path);
-    if(parent)
+    if(parent) {
+      focusChildFolder = true;
       chdir(parent, true);
+    }
   }
 }
 
