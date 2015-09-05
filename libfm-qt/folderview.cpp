@@ -725,7 +725,7 @@ QModelIndex FolderView::indexFromFolderPath(FmPath* folderPath) const {
 }
 
 void FolderView::selectFiles(FmFileInfoList* files) {
-  if (!files) return;
+  if (!model_ || !files) return;
   selectionModel()->clear();
   QModelIndex index, firstIndex;
   int count = model_->rowCount();
