@@ -713,6 +713,7 @@ FmPathList* FolderView::selectedFilePaths() const {
 }
 
 QModelIndex FolderView::indexFromFolderPath(FmPath* folderPath) const {
+  if(!model_ || !folderPath) return QModelIndex();
   QModelIndex index;
   int count = model_->rowCount();
   for(int row = 0; row < count; ++row) {
