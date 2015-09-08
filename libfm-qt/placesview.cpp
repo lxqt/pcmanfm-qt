@@ -107,7 +107,8 @@ void PlacesView::activateRow(int type, const QModelIndex& index) {
 void PlacesView::onPressed(const QModelIndex& index) {
   // if middle button is pressed
   if(QGuiApplication::mouseButtons() & Qt::MiddleButton) {
-    activateRow(1, index);
+    // the real item is at column 0
+    activateRow(1, 0 == index.column() ? index : index.sibling(index.row(), 0));
   }
 }
 
