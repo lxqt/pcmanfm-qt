@@ -61,7 +61,25 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файловый менеджер PCMan
+
+Авторское право (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Эта программа является свободным программным обеспечением;
+вы можете распространять и/или модифицировать ее согласно
+условиям стандартной общественной лицензии GNU, опубликованной
+Фондом свободного ПО; либо версии 2 лицензии, либо
+(по вашему выбору) любой более поздней версии.
+
+Эта программа распространяется в надежде что она будет полезной,
+но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий
+КОММЕРЧЕСКОЙ ЦЕННОСТИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.
+Смотрите Стандартную Общественную Лицензию GNU для большего
+количества деталей.
+
+Вы должны были получить копию Стандартной Общественной Лицензии GNU
+вместе с этой программой; если лицензии не было, напишите в Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301, США.</translation>
     </message>
 </context>
 <context>
@@ -970,17 +988,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="210"/>
+        <location filename="../tabpage.cpp" line="212"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="223"/>
+        <location filename="../tabpage.cpp" line="225"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Свободное место: %1 (всего: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="238"/>
+        <location filename="../tabpage.cpp" line="240"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n объект</numerusform>
@@ -989,7 +1007,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="240"/>
+        <location filename="../tabpage.cpp" line="242"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n скрыт)</numerusform>
@@ -998,7 +1016,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="388"/>
+        <location filename="../tabpage.cpp" line="390"/>
         <source>%1 item(s) selected</source>
         <translation>%1 объекта(ов) выделено</translation>
     </message>
@@ -1267,7 +1285,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="530"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Не создавать эскизы для файлов изображений больше чем:</translation>
+        <translation>Не создавать эскизы для файлов изображений больших чем:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="537"/>
@@ -1302,7 +1320,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="617"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>Закрыть &amp;вкладку, отображающую содержимого съёмного носителя</translation>
+        <translation>Закрыть &amp;вкладку, отображающую содержимое съёмного носителя</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="624"/>
