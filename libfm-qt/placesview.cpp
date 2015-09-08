@@ -105,6 +105,10 @@ void PlacesView::activateRow(int type, const QModelIndex& index) {
 
 // mouse button pressed
 void PlacesView::onPressed(const QModelIndex& index) {
+  /* FIXME: (Tsu Jan) If column 1 is middle clicked by chance, the app
+     will crash because of an "invalid" FmPath. I found no way to check
+     an FmPath for its "validity", hence the following conditional. */
+  if(index.column() > 0) return;
   // if middle button is pressed
   if(QGuiApplication::mouseButtons() & Qt::MiddleButton) {
     activateRow(1, index);
