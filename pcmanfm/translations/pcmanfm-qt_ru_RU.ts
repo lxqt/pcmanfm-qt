@@ -61,7 +61,25 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файловый менеджер PCMan
+
+Авторское право (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Эта программа является свободным программным обеспечением;
+вы можете распространять и/или модифицировать ее согласно
+условиям стандартной общественной лицензии GNU, опубликованной
+Фондом свободного ПО; либо версии 2 лицензии, либо
+(по вашему выбору) любой более поздней версии.
+
+Эта программа распространяется в надежде что она будет полезной,
+но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий
+КОММЕРЧЕСКОЙ ЦЕННОСТИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.
+Смотрите Стандартную Общественную Лицензию GNU для большего
+количества деталей.
+
+Вы должны были получить копию Стандартной Общественной Лицензии GNU
+вместе с этой программой; если лицензии не было, напишите в Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301, США.</translation>
     </message>
 </context>
 <context>
@@ -1267,7 +1285,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="530"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Не создавать эскизы для файлов изображений больше чем:</translation>
+        <translation>Не создавать эскизы для файлов изображений больших чем:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="537"/>
@@ -1302,7 +1320,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferences.ui" line="617"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>Закрыть &amp;вкладку, отображающую содержимого съёмного носителя</translation>
+        <translation>Закрыть &amp;вкладку, отображающую содержимое съёмного носителя</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="624"/>
