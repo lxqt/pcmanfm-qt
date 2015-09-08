@@ -310,12 +310,12 @@
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished">Папку</translation>
+        <translation>Папку</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished">Пустой файл</translation>
+        <translation>Пустой файл</translation>
     </message>
 </context>
 <context>
@@ -336,17 +336,17 @@
     <message>
         <location filename="../dirtreeview.cpp" line="208"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть в новой вкл&amp;адке</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="212"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть в новом о&amp;кне</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть в термина&amp;ле</translation>
     </message>
 </context>
 <context>
@@ -386,7 +386,7 @@
         <location filename="../execfiledialog.cpp" line="40"/>
         <source>This text file &apos;%1&apos; seems to be an executable script.
 What do you want to do with it?</source>
-        <translation type="unfinished">Этот текстовый файл &apos;%1&apos; похож на исполняемый скрипт.
+        <translation>Этот текстовый файл &apos;%1&apos; похож на исполняемый скрипт.
 Что вы хотите с ним сделать?</translation>
     </message>
     <message>
@@ -415,12 +415,12 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="119"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished">&amp;Создать</translation>
+        <translation>&amp;Создать</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="138"/>
         <source>&amp;Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Восстановить</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="144"/>
@@ -484,7 +484,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperation.cpp" line="220"/>
         <source>Error</source>
-        <translation type="unfinished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="221"/>
@@ -674,14 +674,6 @@ Do you want to delete them instead?</source>
         <translation>&amp;Свойства папки</translation>
     </message>
     <message>
-        <source>Folder</source>
-        <translation type="vanished">Папку</translation>
-    </message>
-    <message>
-        <source>Blank File</source>
-        <translation type="vanished">Пустой файл</translation>
-    </message>
-    <message>
         <location filename="../foldermenu.cpp" line="99"/>
         <source>By File Name</source>
         <translation>По имени</translation>
@@ -827,42 +819,34 @@ Do you want to delete them instead?</source>
         <translation>Очистить корзину</translation>
     </message>
     <message>
-        <source>Rename</source>
-        <translation type="vanished">Переименовать</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Удалить</translation>
-    </message>
-    <message>
         <location filename="../placesview.cpp" line="331"/>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть в новой вкладке</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="334"/>
         <source>Open in New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть в новом окне</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="352"/>
         <source>Move Bookmark Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Сдвинуть закладку вверх</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="357"/>
         <source>Move Bookmark Down</source>
-        <translation type="unfinished"></translation>
+        <translation>Сдвинуть закладку вниз</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="361"/>
         <source>Rename Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Переименовать закладку</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="364"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить закладку</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="373"/>
@@ -1014,7 +998,7 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="164"/>
         <source>Create Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Создать папку</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="169"/>
