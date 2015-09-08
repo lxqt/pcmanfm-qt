@@ -322,6 +322,8 @@ void PlacesView::onEjectVolume() {
 void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
   QModelIndex index = indexAt(event->pos());
   if(index.isValid() && index.parent().isValid()) {
+    if(index.column() != 0) // the real item is at column 0
+      index = index.sibling(index.row(), 0);
     QMenu* menu = new QMenu(this);
     QAction* action;
     PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(index));
