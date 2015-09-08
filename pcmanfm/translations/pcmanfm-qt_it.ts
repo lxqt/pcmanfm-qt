@@ -822,8 +822,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../tabpage.cpp" line="238"/>
         <source>%n item(s)</source>
         <translation>
-            <numerusform>%n oggetto/i</numerusform>
-            <numerusform></numerusform>
+            <numerusform>%n oggetto</numerusform>
+            <numerusform>%n.oggetti</numerusform>
         </translation>
     </message>
     <message numerus="yes">
