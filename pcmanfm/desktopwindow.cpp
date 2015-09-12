@@ -389,49 +389,6 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
   connect(action, &QAction::triggered, this, &DesktopWindow::onDesktopPreferences);
 }
 
-void DesktopWindow::xcbEvent(xcb_generic_event_t* generic_event) {
-  int event_type = generic_event->response_type & ~0x80;
-  if(showWmMenu_) {
-    // If we want to show the desktop menus provided by the window manager instead of ours,
-    // we have to forward the mouse events we received to the root window.
-    switch(event_type) {
-      case XCB_BUTTON_PRESS: {
-        xcb_button_press_event_t* event = reinterpret_cast<xcb_button_press_event_t*>(generic_event);
-        if(event->event == effectiveWinId()) {
-          // check if the user click on blank area
-          QModelIndex index = listView_->indexAt(QPoint(event->event_x, event->event_y));
-          if(!index.isValid()) {
-            xcb_ungrab_pointer(QX11Info::connection(), event->time);
-            // forward the event to the root window
-            xcb_button_press_event_t event2 = *event;
-            WId root = QX11Info::appRootWindow(QX11Info::appScreen());
-            event2.event = root;
-            xcb_send_event(QX11Info::connection(), 0, root, XCB_EVENT_MASK_BUTTON_PRESS, (char*)&event2);
-          }
-        }
-        break;
-      }
-      case XCB_BUTTON_RELEASE: {
-        xcb_button_release_event_t* event = reinterpret_cast<xcb_button_release_event_t*>(generic_event);
-        if(event->event == effectiveWinId()) {
-          // check if the user click on blank area
-          QModelIndex index = listView_->indexAt(QPoint(event->event_x, event->event_y));
-          if(!index.isValid()) {
-            // forward the event to the root window
-            xcb_button_release_event_t event2 = *event;
-            WId root = QX11Info::appRootWindow(QX11Info::appScreen());
-            event2.event = root;
-            xcb_send_event(QX11Info::connection(), 0, root, XCB_EVENT_MASK_BUTTON_RELEASE, (char*)&event2);
-          }
-        }
-        break;
-      }
-      default:
-        break;
-    }
-  }
-}
-
 void DesktopWindow::onDesktopPreferences() {
   static_cast<Application* >(qApp)->desktopPrefrences(QString());
 }
@@ -675,6 +632,69 @@ void DesktopWindow::onFilePropertiesActivated() {
   }
 }
 
+static void forwardMouseEventToRoot(QMouseEvent* event) {
+  xcb_ungrab_pointer(QX11Info::connection(), event->timestamp());
+  // forward the event to the root window
+  xcb_button_press_event_t xcb_event;
+  uint32_t mask = 0;
+  xcb_event.state = 0;
+  switch(event->type()) {
+  case QEvent::MouseButtonPress:
+    xcb_event.response_type = XCB_BUTTON_PRESS;
+    mask = XCB_EVENT_MASK_BUTTON_PRESS;
+    break;
+  case QEvent::MouseButtonRelease:
+      xcb_event.response_type = XCB_BUTTON_RELEASE;
+      mask = XCB_EVENT_MASK_BUTTON_RELEASE;
+    break;
+  default:
+    return;
+  }
+
+  // convert Qt button to XCB button
+  switch(event->button()) {
+  case Qt::LeftButton:
+    xcb_event.detail = 1;
+    xcb_event.state |= XCB_BUTTON_MASK_1;
+    break;
+  case Qt::MiddleButton:
+    xcb_event.detail = 2;
+    xcb_event.state |= XCB_BUTTON_MASK_2;
+    break;
+  case Qt::RightButton:
+    xcb_event.detail = 3;
+    xcb_event.state |= XCB_BUTTON_MASK_3;
+    break;
+  default:
+    xcb_event.detail = 0;
+  }
+
+  // convert Qt modifiers to XCB states
+  if(event->modifiers() & Qt::ShiftModifier)
+    xcb_event.state |= XCB_MOD_MASK_SHIFT;
+  if(event->modifiers() & Qt::ControlModifier)
+    xcb_event.state |= XCB_MOD_MASK_SHIFT;
+  if(event->modifiers() & Qt::AltModifier)
+    xcb_event.state |= XCB_MOD_MASK_1;
+
+  xcb_event.sequence = 0;
+  xcb_event.time = event->timestamp();
+
+  WId root = QX11Info::appRootWindow(QX11Info::appScreen());
+  xcb_event.event = root;
+  xcb_event.root = root;
+  xcb_event.child = 0;
+
+  xcb_event.root_x = event->globalX();
+  xcb_event.root_y = event->globalY();
+  xcb_event.event_x = event->x();
+  xcb_event.event_y = event->y();
+  xcb_event.same_screen = 1;
+
+  xcb_send_event(QX11Info::connection(), 0, root, mask, (char*)&xcb_event);
+  xcb_flush(QX11Info::connection());
+}
+
 bool DesktopWindow::event(QEvent* event)
 {
   switch(event->type()) {
@@ -716,6 +736,25 @@ bool DesktopWindow::eventFilter(QObject * watched, QEvent * event) {
     case QEvent::FontChange:
       if(model_)
         queueRelayout();
+      break;
+    default:
+      break;
+    }
+  }
+  else if(watched == listView_->viewport()) {
+    switch(event->type()) {
+    case QEvent::MouseButtonPress:
+    case QEvent::MouseButtonRelease:
+        if(showWmMenu_) {
+          QMouseEvent* e = static_cast<QMouseEvent*>(event);
+          // If we want to show the desktop menus provided by the window manager instead of ours,
+          // we have to forward the mouse events we received to the root window.
+          // check if the user click on blank area
+          QModelIndex index = listView_->indexAt(e->pos());
+          if(!index.isValid() && e->button() != Qt::LeftButton) {
+            forwardMouseEventToRoot(e);
+          }
+      }
       break;
     default:
       break;
