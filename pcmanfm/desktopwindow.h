@@ -66,8 +66,6 @@ public:
   void updateWallpaper();
   void updateFromSettings(Settings& settings);
 
-  void xcbEvent(xcb_generic_event_t* generic_event);
-
   void queueRelayout(int delay = 0);
 
   int screenNum() const {
