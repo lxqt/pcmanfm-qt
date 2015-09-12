@@ -25,7 +25,6 @@
 #include "settings.h"
 #include "libfmqt.h"
 #include "editbookmarksdialog.h"
-#include <QAbstractNativeEventFilter>
 #include <QVector>
 #include <QPointer>
 #include <QProxyStyle>
@@ -49,7 +48,7 @@ public:
   virtual int styleHint(StyleHint hint, const QStyleOption * option = 0, const QWidget * widget = 0, QStyleHintReturn * returnData = 0) const;
 };
 
-class Application : public QApplication, public QAbstractNativeEventFilter {
+class Application : public QApplication {
   Q_OBJECT
   Q_PROPERTY(bool desktopManagerEnabled READ desktopManagerEnabled)
 
@@ -90,8 +89,6 @@ public:
   QString profileName() {
     return profileName_;
   }
-
-  virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result);
 
 protected Q_SLOTS:
   void onAboutToQuit();
