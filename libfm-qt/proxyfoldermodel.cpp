@@ -118,6 +118,12 @@ bool ProxyFolderModel::lessThan(const QModelIndex& left, const QModelIndex& righ
     FmFileInfo* leftInfo = srcModel->fileInfoFromIndex(left);
     FmFileInfo* rightInfo = srcModel->fileInfoFromIndex(right);
 
+    if(Q_UNLIKELY(!leftInfo || !rightInfo)) {
+      // In theory, this should not happen, but it's safer to add the null check.
+      // This is reported in https://github.com/lxde/pcmanfm-qt/issues/205
+      return false;
+    }
+
     if(folderFirst_) {
       bool leftIsFolder = (bool)fm_file_info_is_dir(leftInfo);
       bool rightIsFolder = (bool)fm_file_info_is_dir(rightInfo);
