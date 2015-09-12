@@ -62,6 +62,19 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   confirmDelete_ = true;
   confirmTrash_ = false; // Confirm before moving files into "trash can"
 
+  openAction_ = NULL;
+  openWithMenuAction_ = NULL;
+  openWithAction_ = NULL;
+  separator1_ = NULL;
+  cutAction_ = NULL;
+  copyAction_ = NULL;
+  pasteAction_ = NULL;
+  deleteAction_ = NULL;
+  unTrashAction_ = NULL;
+  renameAction_ = NULL;
+  separator2_ = NULL;
+  propertiesAction_ = NULL;
+
   files_ = fm_file_info_list_ref(files);
   info_ = info ? fm_file_info_ref(info) : NULL;
   cwd_ = cwd ? fm_path_ref(cwd) : NULL;
@@ -346,8 +359,10 @@ void FileMenu::onRenameTriggered() {
 void FileMenu::setUseTrash(bool trash) {
   if(useTrash_ != trash) {
     useTrash_ = trash;
-    deleteAction_->setText(useTrash_ ? tr("&Move to Trash") : tr("&Delete"));
-    deleteAction_->setIcon(useTrash_ ? QIcon::fromTheme("user-trash") : QIcon::fromTheme("edit-delete"));
+    if(deleteAction_) {
+      deleteAction_->setText(useTrash_ ? tr("&Move to Trash") : tr("&Delete"));
+      deleteAction_->setIcon(useTrash_ ? QIcon::fromTheme("user-trash") : QIcon::fromTheme("edit-delete"));
+    }
   }
 }
 
