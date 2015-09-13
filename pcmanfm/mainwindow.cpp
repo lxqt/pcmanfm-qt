@@ -951,7 +951,21 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
 
 void MainWindow::on_actionFindFiles_triggered() {
   Application* app = static_cast<Application*>(qApp);
-  app->findFiles(QStringList() << currentPage()->pathName());
+  FmPathList* selectedPaths = currentPage()->selectedFilePaths();
+  QStringList paths;
+  if(selectedPaths) {
+    for(GList* l = fm_path_list_peek_head_link(selectedPaths); l; l = l->next) {
+      // FIXME: is it ok to use display name here?
+      // This might be broken on filesystems with non-UTF-8 filenames.
+      Fm::Path path(FM_PATH(l->data));
+      paths.append(path.displayName(false));
+    }
+    fm_path_list_unref(selectedPaths);
+  }
+  else {
+    paths.append(currentPage()->pathName());
+  }
+  app->findFiles(paths);
 }
 
 void MainWindow::on_actionOpenTerminal_triggered() {
