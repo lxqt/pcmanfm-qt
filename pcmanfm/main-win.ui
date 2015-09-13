@@ -76,7 +76,7 @@
      <x>0</x>
      <y>0</y>
      <width>460</width>
-     <height>22</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -237,7 +237,7 @@
     </iconset>
    </property>
    <property name="text">
-    <string>Home</string>
+    <string>&amp;Home</string>
    </property>
    <property name="shortcut">
     <string>Alt+Home</string>
@@ -457,7 +457,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Ascending</string>
+    <string>&amp;Ascending</string>
    </property>
   </action>
   <action name="actionDescending">
@@ -465,7 +465,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Descending</string>
+    <string>&amp;Descending</string>
    </property>
   </action>
   <action name="actionByFileName">
@@ -473,7 +473,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>By File Name</string>
+    <string>&amp;By File Name</string>
    </property>
   </action>
   <action name="actionByMTime">
@@ -481,7 +481,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>By Modification Time</string>
+    <string>By &amp;Modification Time</string>
    </property>
   </action>
   <action name="actionByFileType">
@@ -489,7 +489,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>By File Type</string>
+    <string>By File &amp;Type</string>
    </property>
   </action>
   <action name="actionByOwner">
@@ -497,7 +497,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>By Owner</string>
+    <string>By &amp;Owner</string>
    </property>
   </action>
   <action name="actionFolderFirst">
@@ -505,7 +505,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Folder First</string>
+    <string>&amp;Folder First</string>
    </property>
   </action>
   <action name="actionNewTab">
@@ -608,7 +608,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Case Sensitive</string>
+    <string>&amp;Case Sensitive</string>
    </property>
   </action>
   <action name="actionByFileSize">
@@ -616,12 +616,12 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>By File Size</string>
+    <string>By File &amp;Size</string>
    </property>
   </action>
   <action name="actionCloseWindow">
    <property name="text">
-    <string>Close Window</string>
+    <string>&amp;Close Window</string>
    </property>
   </action>
   <action name="actionEdit_Bookmarks">
@@ -649,10 +649,12 @@
   </action>
   <action name="actionNewFolder">
    <property name="icon">
-    <iconset theme="folder-new"/>
+    <iconset theme="folder-new">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
-    <string>Folder</string>
+    <string>&amp;Folder</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+N</string>
@@ -660,10 +662,12 @@
   </action>
   <action name="actionNewBlankFile">
    <property name="icon">
-    <iconset theme="document-new"/>
+    <iconset theme="document-new">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
-    <string>Blank File</string>
+    <string>&amp;Blank File</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Alt+N</string>
@@ -672,6 +676,9 @@
   <action name="actionFindFiles">
    <property name="text">
     <string>&amp;Find Files</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
    </property>
   </action>
  </widget>

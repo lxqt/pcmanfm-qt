@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>431</width>
-    <height>359</height>
+    <height>416</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -76,7 +76,9 @@
                  <string>Add</string>
                 </property>
                 <property name="icon">
-                 <iconset theme="list-add"/>
+                 <iconset theme="list-add">
+                  <normaloff/>
+                 </iconset>
                 </property>
                </widget>
               </item>
@@ -86,7 +88,9 @@
                  <string>Remove</string>
                 </property>
                 <property name="icon">
-                 <iconset theme="list-remove"/>
+                 <iconset theme="list-remove">
+                  <normaloff/>
+                 </iconset>
                 </property>
                </widget>
               </item>
@@ -125,9 +129,6 @@
         </widget>
        </item>
       </layout>
-      <zorder>buttonBox</zorder>
-      <zorder>groupBox</zorder>
-      <zorder>groupBox_2</zorder>
      </widget>
      <widget class="QWidget" name="tab_2">
       <attribute name="title">
@@ -256,7 +257,7 @@
          <property name="title">
           <string>File Size</string>
          </property>
-         <layout class="QGridLayout" name="gridLayout">
+         <layout class="QFormLayout" name="formLayout_3">
           <item row="0" column="0">
            <widget class="QCheckBox" name="checkBox_12">
             <property name="text">
@@ -265,18 +266,22 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QSpinBox" name="spinBox">
-            <property name="enabled">
-             <bool>false</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="2">
-           <widget class="QComboBox" name="comboBox">
-            <property name="enabled">
-             <bool>false</bool>
-            </property>
-           </widget>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QSpinBox" name="spinBox">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
           <item row="1" column="0">
            <widget class="QCheckBox" name="checkBox_13">
@@ -286,18 +291,22 @@
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QSpinBox" name="spinBox_2">
-            <property name="enabled">
-             <bool>false</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="QComboBox" name="comboBox_2">
-            <property name="enabled">
-             <bool>false</bool>
-            </property>
-           </widget>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QSpinBox" name="spinBox_2">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_2">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
          </layout>
         </widget>
@@ -307,11 +316,21 @@
          <property name="title">
           <string>Last Modified Time</string>
          </property>
-         <layout class="QGridLayout" name="gridLayout_2">
+         <layout class="QFormLayout" name="formLayout_2">
           <item row="0" column="0">
            <widget class="QCheckBox" name="checkBox_14">
             <property name="text">
              <string>Earlier than:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QDateTimeEdit" name="dateTimeEdit">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="calendarPopup">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -324,16 +343,6 @@
           </item>
           <item row="1" column="1">
            <widget class="QDateTimeEdit" name="dateTimeEdit_2">
-            <property name="enabled">
-             <bool>false</bool>
-            </property>
-            <property name="calendarPopup">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QDateTimeEdit" name="dateTimeEdit">
             <property name="enabled">
              <bool>false</bool>
             </property>
