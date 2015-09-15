@@ -181,7 +181,7 @@ FolderViewTreeView::FolderViewTreeView(QWidget* parent):
   doingLayout_(false),
   activationAllowed_(true) {
 
-  header()->setStretchLastSection(false);
+  header()->setStretchLastSection(true);
   setIndentation(0);
 
   connect(this, &QTreeView::activated, this, &FolderViewTreeView::activation);
@@ -248,30 +248,29 @@ void FolderViewTreeView::layoutColumns() {
     int columnId = headerView->logicalIndex(column);
     // get the size that the column needs
     widths[column] = sizeHintForColumn(columnId);
-  }
-
-  // the best case is every column can get its full width
-  for(column = 0; column < numCols; ++column) {
+    // compute the total width needed
     desiredWidth += widths[column];
   }
 
+  int filenameColumn = headerView->visualIndex(FolderModel::ColumnFileName);
   // if the total witdh we want exceeds the available space
   if(desiredWidth > availWidth) {
-    // we don't have that much space for every column
-    int filenameColumn = headerView->visualIndex(FolderModel::ColumnFileName);
-    // shrink the filename column first
-    desiredWidth -= widths[filenameColumn]; // total width of all other columns
+    // Compute the width available for the filename column
+    int filenameAvailWidth = availWidth - desiredWidth + widths[filenameColumn];
 
-    // see if setting the width of the filename column to 200 solve the problem
-    if(desiredWidth + 200 > availWidth) {
-      // even when we reduce the width of the filename column to 200,
-      // the available space is not enough. So we give up trying.
-      widths[filenameColumn] = 200;
+    // Compute the minimum acceptable width for the filename column
+    int filenameMinWidth = qMin(200, sizeHintForColumn(filenameColumn));
+
+    if (filenameAvailWidth > filenameMinWidth) {
+        // Shrink the filename column to the available width
+        widths[filenameColumn] = filenameAvailWidth;
+    } else {
+        // Set the filename column to its minimum width
+        widths[filenameColumn] = filenameMinWidth;
     }
-    else { // we still have more space, so the width of filename column can be increased
-      // expand the filename column to fill all available space.
-      widths[filenameColumn] = availWidth - desiredWidth;
-    }
+  } else {
+      // Fill the extra available space with the filename column
+      widths[filenameColumn] += availWidth - desiredWidth;
   }
 
   // really do the resizing for every column
