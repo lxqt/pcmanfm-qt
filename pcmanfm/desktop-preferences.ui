@@ -219,7 +219,7 @@
       <attribute name="title">
        <string>Advanced</string>
       </attribute>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
+      <layout class="QVBoxLayout" name="advancedPageLayout">
        <item>
         <widget class="QGroupBox" name="groupBox_4">
          <property name="title">
