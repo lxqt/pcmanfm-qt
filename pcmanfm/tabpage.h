@@ -182,6 +182,8 @@ Q_SIGNALS:
   void titleChanged(QString title);
   void openDirRequested(FmPath* path, int target);
   void sortFilterChanged();
+  void forwardRequested();
+  void backwardRequested();
 
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
