@@ -57,8 +57,8 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   // newView->setColumnWidth(Fm::FolderModel::ColumnName, 200);
   connect(folderView_, &View::openDirRequested, this, &TabPage::onOpenDirRequested);
   connect(folderView_, &View::selChanged, this, &TabPage::onSelChanged);
-  connect(folderView_, &View::clickedBack, this, &TabPage::backward);
-  connect(folderView_, &View::clickedForward, this, &TabPage::forward);
+  connect(folderView_, &View::clickedBack, this, &TabPage::backwardRequested);
+  connect(folderView_, &View::clickedForward, this, &TabPage::forwardRequested);
 
   // FIXME: this is very dirty
   folderView_->setModel(proxyModel_);

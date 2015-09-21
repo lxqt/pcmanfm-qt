@@ -217,6 +217,8 @@ void MainWindow::addTab(FmPath* path) {
   connect(newPage, &TabPage::statusChanged, this, &MainWindow::onTabPageStatusChanged);
   connect(newPage, &TabPage::openDirRequested, this, &MainWindow::onTabPageOpenDirRequested);
   connect(newPage, &TabPage::sortFilterChanged, this, &MainWindow::onTabPageSortFilterChanged);
+  connect(newPage, &TabPage::backwardRequested, this, &MainWindow::on_actionGoBack_triggered);
+  connect(newPage, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
 
   ui.tabBar->insertTab(index, newPage->title());
 
