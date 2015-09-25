@@ -85,12 +85,16 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.textColor->setColor(settings.desktopFgColor());
   ui.shadowColor->setColor(settings.desktopShadowColor());
   ui.showWmMenu->setChecked(settings.showWmMenu());
+
+  connect(ui.buttonBox->button(QDialogButtonBox::Apply), &QPushButton::clicked,
+          this, &DesktopPreferencesDialog::onApplyClicked);
 }
 
 DesktopPreferencesDialog::~DesktopPreferencesDialog() {
 }
 
-void DesktopPreferencesDialog::accept() {
+void DesktopPreferencesDialog::applySettings()
+{
   Settings& settings = static_cast<Application*>(qApp)->settings();
 
   XdgDir::setDesktopDir(ui.desktopFolder->text());
@@ -104,10 +108,19 @@ void DesktopPreferencesDialog::accept() {
   settings.setDesktopShadowColor(ui.shadowColor->color());
   settings.setShowWmMenu(ui.showWmMenu->isChecked());
 
-  QDialog::accept();
-
-  static_cast<Application*>(qApp)->updateDesktopsFromSettings();
   settings.save();
+}
+
+void DesktopPreferencesDialog::onApplyClicked()
+{
+  applySettings();
+  static_cast<Application*>(qApp)->updateDesktopsFromSettings();
+}
+
+void DesktopPreferencesDialog::accept() {
+  applySettings();
+  static_cast<Application*>(qApp)->updateDesktopsFromSettings();
+  QDialog::accept();
 }
 
 void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {

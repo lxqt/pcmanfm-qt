@@ -38,9 +38,12 @@ public:
   void selectPage(QString name);
 
 protected Q_SLOTS:
+  void onApplyClicked();
   void onWallpaperModeChanged(int index);
   void onBrowseClicked();
   void onBrowseDesktopFolderClicked();
+
+  void applySettings();
 
 private:
   Ui::DesktopPreferencesDialog ui;
