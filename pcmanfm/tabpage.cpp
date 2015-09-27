@@ -31,10 +31,41 @@
 #include "application.h"
 #include "cachedfoldermodel.h"
 #include <QTimer>
+#include <QTextStream>
 
 using namespace Fm;
 
 namespace PCManFM {
+
+bool ProxyFilter::filterAcceptsRow(const Fm::ProxyFolderModel* model, FmFileInfo* info) const {
+  if(!model || !info)
+    return true;
+  QString baseName(fm_file_info_get_name(info));
+  if(!virtHiddenList_.isEmpty() && !model->showHidden() && virtHiddenList_.contains(baseName))
+      return false;
+  if(!filterStr_.isEmpty() && !baseName.contains(filterStr_, Qt::CaseInsensitive))
+    return false;
+  return true;
+}
+
+void ProxyFilter::setVirtHidden(FmFolder* folder) {
+  virtHiddenList_ = QStringList(); // reset the list
+  if(!folder) return;
+  if(FmPath* path = fm_folder_get_path(folder)) {
+    char* pathStr = fm_path_to_str(path);
+    if(pathStr) {
+      QString dotHidden = QString(pathStr) + QString("/.hidden");
+      g_free(pathStr);
+      QFile file(dotHidden);
+      if(file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QTextStream in(&file);
+        while(!in.atEnd())
+          virtHiddenList_.append(in.readLine());
+        file.close();
+      }
+    }
+  }
+}
 
 TabPage::TabPage(FmPath* path, QWidget* parent):
   QWidget(parent),
@@ -60,6 +91,9 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
   connect(folderView_, &View::clickedBack, this, &TabPage::backward);
   connect(folderView_, &View::clickedForward, this, &TabPage::forward);
 
+  proxyFilter_ = new ProxyFilter();
+  proxyModel_->addFilter(proxyFilter_);
+
   // FIXME: this is very dirty
   folderView_->setModel(proxyModel_);
   verticalLayout->addWidget(folderView_);
@@ -70,6 +104,8 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
 TabPage::~TabPage() {
   qDebug("delete TabPage");
   freeFolder();
+  if(proxyFilter_)
+    delete proxyFilter_;
   if(proxyModel_)
     delete proxyModel_;
   if(folderModel_)
@@ -319,6 +355,11 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
   g_free(disp_name);
 
   folder_ = fm_folder_from_path(newPath);
+  proxyFilter_->setVirtHidden(folder_);
+  if(addHistory) {
+    // add current path to browse history
+    history_.add(path());
+  }
   g_signal_connect(folder_, "start-loading", G_CALLBACK(onFolderStartLoading), this);
   g_signal_connect(folder_, "finish-loading", G_CALLBACK(onFolderFinishLoading), this);
   g_signal_connect(folder_, "error", G_CALLBACK(onFolderError), this);
@@ -342,11 +383,6 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
   }
   else
     onFolderStartLoading(folder_, this);
-
-  if(addHistory) {
-    // add current path to browse history
-    history_.add(path());
-  }
 }
 
 void TabPage::selectAll() {
@@ -471,6 +507,21 @@ void TabPage::onModelSortFilterChanged() {
 
 void TabPage::updateFromSettings(Settings& settings) {
   folderView_->updateFromSettings(settings);
+}
+
+void TabPage::setShowHidden(bool showHidden) {
+  if(!proxyModel_ || showHidden == proxyModel_->showHidden())
+    return;
+  proxyModel_->setShowHidden(showHidden);
+  statusText_[StatusTextNormal] = formatStatusText();
+  Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
+}
+
+void TabPage:: applyFilter() {
+  if(!proxyModel_) return;
+  proxyModel_->updateFilters();
+  statusText_[StatusTextNormal] = formatStatusText();
+  Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
 }
 
 };

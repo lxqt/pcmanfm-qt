@@ -118,6 +118,8 @@ protected Q_SLOTS:
   void onTabBarCurrentChanged(int index);
   void onTabBarTabMoved(int from, int to);
 
+  void onFilterStringChanged(QString str);
+
   void onShortcutPrevTab();
   void onShortcutNextTab();
   void onShortcutJumpToTab();
