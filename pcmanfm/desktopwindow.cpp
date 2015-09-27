@@ -788,6 +788,10 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
     Fm::FolderView::childDropEvent(e);
 }
 
+void DesktopWindow::closeEvent(QCloseEvent *event) {
+  // prevent the desktop window from being closed.
+  event->ignore();
+}
 
 void DesktopWindow::setScreenNum(int num) {
   if(screenNum_ != num) {

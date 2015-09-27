@@ -89,6 +89,7 @@ protected:
   virtual bool eventFilter(QObject * watched, QEvent * event);
 
   virtual void childDropEvent(QDropEvent* e);
+  virtual void closeEvent(QCloseEvent *event);
 
 protected Q_SLOTS:
   void onOpenDirRequested(FmPath* path, int target);
