@@ -96,6 +96,8 @@ MainWindow::MainWindow(FmPath* path):
   connect(ui.tabBar, &QTabBar::tabMoved, this, &MainWindow::onTabBarTabMoved);
   connect(ui.stackedWidget, &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
 
+  connect(ui.filterBar, &QLineEdit::textChanged, this, &MainWindow::onFilterStringChanged);
+
   // side pane
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
   ui.sidePane->setMode(settings.sidePaneMode());
@@ -181,6 +183,12 @@ MainWindow::MainWindow(FmPath* path):
   shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this);
   connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDelete_triggered);
 
+  if(QToolButton* clearButton = ui.filterBar->findChild<QToolButton*>()) {
+    clearButton->setToolTip(tr("Clear text (Ctrl+K)"));
+    shortcut = new QShortcut(Qt::CTRL + Qt::Key_K, this);
+    connect(shortcut, &QShortcut::activated, ui.filterBar, &QLineEdit::clear);
+  }
+
   if(path)
     addTab(path);
 
@@ -201,6 +209,7 @@ void MainWindow::chdir(FmPath* path) {
   TabPage* page = currentPage();
 
   if(page) {
+    ui.filterBar->clear();
     page->chdir(path, true);
     updateUIForCurrentPage();
   }
@@ -239,6 +248,7 @@ void MainWindow::on_actionGoUp_triggered() {
   TabPage* page = currentPage();
 
   if(page) {
+    ui.filterBar->clear();
     page->up();
     updateUIForCurrentPage();
   }
@@ -248,6 +258,7 @@ void MainWindow::on_actionGoBack_triggered() {
   TabPage* page = currentPage();
 
   if(page) {
+    ui.filterBar->clear();
     page->backward();
     updateUIForCurrentPage();
   }
@@ -257,6 +268,7 @@ void MainWindow::on_actionGoForward_triggered() {
   TabPage* page = currentPage();
 
   if(page) {
+    ui.filterBar->clear();
     page->forward();
     updateUIForCurrentPage();
   }
@@ -477,6 +489,16 @@ void MainWindow::onTabBarTabMoved(int from, int to) {
   }
 }
 
+void MainWindow::onFilterStringChanged(QString str) {
+  if(TabPage* tabPage = currentPage()) {
+    // appy filter only if needed (not if tab is changed)
+    if(str != tabPage->getFilterStr()) {
+      tabPage->setFilterStr(str);
+      tabPage->applyFilter();
+    }
+  }
+}
+
 void MainWindow::closeTab(int index) {
   QWidget* page = ui.stackedWidget->widget(index);
   if(page) {
@@ -516,6 +538,8 @@ void MainWindow::closeEvent(QCloseEvent *event)
 
 void MainWindow::onTabBarCurrentChanged(int index) {
   ui.stackedWidget->setCurrentIndex(index);
+  if(TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(index)))
+    ui.filterBar->setText(page->getFilterStr());
   updateUIForCurrentPage();
 }
 
@@ -604,7 +628,6 @@ void MainWindow::updateUIForCurrentPage() {
     updateStatusBarForCurrentPage();
   }
 }
-
 
 void MainWindow::onStackedWidgetWidgetRemoved(int index) {
   // qDebug("onStackedWidgetWidgetRemoved: %d", index);
@@ -863,6 +886,7 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
   QAction* selectedAction = menu.exec(btn->mapToGlobal(pos));
   if(selectedAction) {
     int index = menu.actions().indexOf(selectedAction);
+    ui.filterBar->clear();
     page->jumpToHistory(index);
     updateUIForCurrentPage();
   }
