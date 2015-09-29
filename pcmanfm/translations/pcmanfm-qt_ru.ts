@@ -144,7 +144,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="94"/>
-        <location filename="../desktop-preferences.ui" line="242"/>
+        <location filename="../desktop-preferences.ui" line="255"/>
         <source>Image file</source>
         <translation>Файл изображения</translation>
     </message>
@@ -155,7 +155,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="107"/>
-        <location filename="../desktop-preferences.ui" line="255"/>
+        <location filename="../desktop-preferences.ui" line="268"/>
         <source>&amp;Browse</source>
         <translation>&amp;Обзор</translation>
     </message>
@@ -180,32 +180,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <translation>Выбрать шрифт:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="213"/>
+        <location filename="../desktop-preferences.ui" line="226"/>
         <source>Window Manager</source>
         <translation>Оконный менеджер</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="229"/>
+        <location filename="../desktop-preferences.ui" line="242"/>
         <source>Desktop</source>
         <translation>Рабочий стол</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="235"/>
+        <location filename="../desktop-preferences.ui" line="248"/>
         <source>Desktop folder:</source>
         <translation>Папка рабочего стола:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="248"/>
+        <location filename="../desktop-preferences.ui" line="261"/>
         <source>Folder path</source>
         <translation>Путь к папке</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="207"/>
+        <location filename="../desktop-preferences.ui" line="220"/>
         <source>Advanced</source>
         <translation>Расширенные</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="219"/>
+        <location filename="../desktop-preferences.ui" line="232"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
         <translation>Показывать меню, предоставляемые оконными менеджерами по клику на рабочий стол</translation>
     </message>
@@ -234,13 +234,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
-        <location filename="../file-search.ui" line="220"/>
+        <location filename="../file-search.ui" line="221"/>
         <source>Case insensitive</source>
         <translation>Регистрочувствительный</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
-        <location filename="../file-search.ui" line="227"/>
+        <location filename="../file-search.ui" line="228"/>
         <source>Use regular expression</source>
         <translation>Использовать регулярные выражения</translation>
     </message>
@@ -255,98 +255,98 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <translation>Добавить</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="86"/>
+        <location filename="../file-search.ui" line="88"/>
         <source>Remove</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="113"/>
+        <location filename="../file-search.ui" line="117"/>
         <source>Search in sub directories</source>
         <translation>Искать в подпапках</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="120"/>
+        <location filename="../file-search.ui" line="124"/>
         <source>Search hidden files</source>
         <translation>Искать скрытые файлы</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="134"/>
-        <location filename="../file-search.ui" line="140"/>
+        <location filename="../file-search.ui" line="135"/>
+        <location filename="../file-search.ui" line="141"/>
         <source>File Type</source>
         <translation>Тип файла</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="146"/>
+        <location filename="../file-search.ui" line="147"/>
         <source>Only search for files of following types:</source>
         <translation>Искать только следующие типы файлов:</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="153"/>
+        <location filename="../file-search.ui" line="154"/>
         <source>Text files</source>
         <translation>Текстовые файлы</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="160"/>
+        <location filename="../file-search.ui" line="161"/>
         <source>Image files</source>
         <translation>Файлы изображений</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="167"/>
+        <location filename="../file-search.ui" line="168"/>
         <source>Audio files</source>
         <translation>Аудиофайлы</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="174"/>
+        <location filename="../file-search.ui" line="175"/>
         <source>Video files</source>
         <translation>Видеофайлы</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="181"/>
+        <location filename="../file-search.ui" line="182"/>
         <source>Documents</source>
         <translation>Документы</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="205"/>
+        <location filename="../file-search.ui" line="206"/>
         <source>Content</source>
         <translation>Содержание</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="211"/>
+        <location filename="../file-search.ui" line="212"/>
         <source>File contains</source>
         <translation>Содержание файла</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="251"/>
+        <location filename="../file-search.ui" line="252"/>
         <source>Properties</source>
         <translation>Свойства</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="257"/>
+        <location filename="../file-search.ui" line="258"/>
         <source>File Size</source>
         <translation>Размер файла</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="263"/>
+        <location filename="../file-search.ui" line="264"/>
         <source>Bigger than:</source>
         <translation>Больше чем:</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="284"/>
+        <location filename="../file-search.ui" line="289"/>
         <source>Smaller than:</source>
         <translation>Меньше чем:</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="308"/>
+        <location filename="../file-search.ui" line="317"/>
         <source>Last Modified Time</source>
         <translation>Время последнего изменения</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="314"/>
+        <location filename="../file-search.ui" line="323"/>
         <source>Earlier than:</source>
         <translation>Раньше чем:</translation>
     </message>
     <message>
-        <location filename="../file-search.ui" line="321"/>
+        <location filename="../file-search.ui" line="340"/>
         <source>Later than:</source>
         <translation>Позже чем:</translation>
     </message>
@@ -359,417 +359,427 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <translation>Диспетчер файлов</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="645"/>
-        <source>Folder</source>
-        <translation>Папка</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="648"/>
+        <location filename="../main-win.ui" line="660"/>
         <source>Ctrl+Shift+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="656"/>
-        <source>Blank File</source>
-        <translation>Пустой файл</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="659"/>
+        <location filename="../main-win.ui" line="673"/>
         <source>Ctrl+Alt+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="75"/>
+        <location filename="../main-win.ui" line="84"/>
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="79"/>
+        <location filename="../main-win.ui" line="88"/>
         <source>C&amp;reate New</source>
         <translation>С&amp;оздать новое</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="97"/>
+        <location filename="../main-win.ui" line="106"/>
         <source>&amp;Help</source>
         <translation>&amp;Справка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="103"/>
+        <location filename="../main-win.ui" line="112"/>
         <source>&amp;View</source>
         <translation>&amp;Вид</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="107"/>
+        <location filename="../main-win.ui" line="116"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Сортировка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="133"/>
+        <location filename="../main-win.ui" line="142"/>
         <source>&amp;Edit</source>
         <translation>&amp;Правка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="148"/>
+        <location filename="../main-win.ui" line="157"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Закладки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="155"/>
+        <location filename="../main-win.ui" line="164"/>
         <source>&amp;Go</source>
         <translation>&amp;Перейти</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="170"/>
+        <location filename="../main-win.ui" line="179"/>
         <source>&amp;Tool</source>
         <translation>&amp;Инструмент</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="186"/>
+        <location filename="../main-win.ui" line="196"/>
         <source>Main Toolbar</source>
         <translation>Главная панель инструментов</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="214"/>
+        <location filename="../main-win.ui" line="224"/>
         <source>Go &amp;Up</source>
         <translation>Перейти &amp;вверх</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="217"/>
+        <location filename="../main-win.ui" line="227"/>
         <source>Go Up</source>
         <translation>Перейти вверх</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="220"/>
+        <location filename="../main-win.ui" line="230"/>
         <source>Alt+Up</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="230"/>
-        <source>Home</source>
-        <translation>Домой</translation>
+        <location filename="../main-win.ui" line="240"/>
+        <source>&amp;Home</source>
+        <translation>&amp;Домой</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="233"/>
+        <location filename="../main-win.ui" line="243"/>
         <source>Alt+Home</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="243"/>
+        <location filename="../main-win.ui" line="253"/>
         <source>&amp;Reload</source>
         <translation>&amp;Обновить</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="246"/>
+        <location filename="../main-win.ui" line="256"/>
         <source>F5</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="256"/>
+        <location filename="../main-win.ui" line="266"/>
         <source>Go</source>
         <translation>Перейти</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="266"/>
+        <location filename="../main-win.ui" line="276"/>
         <source>Quit</source>
         <translation>Выйти</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="276"/>
+        <location filename="../main-win.ui" line="286"/>
         <source>&amp;About</source>
         <translation>&amp;О программе</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="286"/>
+        <location filename="../main-win.ui" line="296"/>
         <source>&amp;New Window</source>
         <translation>&amp;Новое окно</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="289"/>
+        <location filename="../main-win.ui" line="299"/>
         <source>New Window</source>
         <translation>Новое окно</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="292"/>
+        <location filename="../main-win.ui" line="302"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="300"/>
+        <location filename="../main-win.ui" line="310"/>
         <source>Show &amp;Hidden</source>
         <translation>Показать &amp;скрытые</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="303"/>
+        <location filename="../main-win.ui" line="313"/>
         <source>Ctrl+H</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="313"/>
+        <location filename="../main-win.ui" line="323"/>
         <source>&amp;Computer</source>
         <translation>&amp;Компьютер</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="323"/>
+        <location filename="../main-win.ui" line="333"/>
         <source>&amp;Trash</source>
         <translation>&amp;Корзина</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="328"/>
+        <location filename="../main-win.ui" line="338"/>
         <source>&amp;Network</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="338"/>
+        <location filename="../main-win.ui" line="348"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Рабочий стол</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="348"/>
+        <location filename="../main-win.ui" line="358"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Добавить в закладки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="353"/>
+        <location filename="../main-win.ui" line="363"/>
         <source>&amp;Applications</source>
         <translation>&amp;Приложения</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="358"/>
+        <location filename="../main-win.ui" line="368"/>
         <source>Reload</source>
         <translation>Обновить</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="366"/>
+        <location filename="../main-win.ui" line="376"/>
         <source>&amp;Icon View</source>
         <translation>Просмотр &amp;значками</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="374"/>
+        <location filename="../main-win.ui" line="384"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Компактный просмотр</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="382"/>
+        <location filename="../main-win.ui" line="392"/>
         <source>&amp;Detailed List</source>
         <translation>Просмотр &amp;подробным списком</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="390"/>
+        <location filename="../main-win.ui" line="400"/>
         <source>&amp;Thumbnail View</source>
         <translation>Просмотр &amp;эскизами</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="400"/>
+        <location filename="../main-win.ui" line="410"/>
         <source>Cu&amp;t</source>
         <translation>&amp;Вырезать</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="403"/>
+        <location filename="../main-win.ui" line="413"/>
         <source>Ctrl+X</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="413"/>
+        <location filename="../main-win.ui" line="423"/>
         <source>&amp;Copy</source>
         <translation>&amp;Копировать</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="416"/>
+        <location filename="../main-win.ui" line="426"/>
         <source>Ctrl+C</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="426"/>
+        <location filename="../main-win.ui" line="436"/>
         <source>&amp;Paste</source>
         <translation>&amp;Вставить</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="429"/>
+        <location filename="../main-win.ui" line="439"/>
         <source>Ctrl+V</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="434"/>
+        <location filename="../main-win.ui" line="444"/>
         <source>Select &amp;All</source>
         <translation>Выделить &amp;всё</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="437"/>
+        <location filename="../main-win.ui" line="447"/>
         <source>Ctrl+A</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="442"/>
+        <location filename="../main-win.ui" line="452"/>
         <source>Pr&amp;eferences</source>
         <translation>&amp;Настройки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="450"/>
-        <source>Ascending</source>
-        <translation>По возрастанию</translation>
+        <location filename="../main-win.ui" line="460"/>
+        <source>&amp;Ascending</source>
+        <translation>По &amp;возрастанию</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="458"/>
-        <source>Descending</source>
-        <translation>По убыванию</translation>
+        <location filename="../main-win.ui" line="468"/>
+        <source>&amp;Descending</source>
+        <translation>По &amp;убыванию</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="466"/>
-        <source>By File Name</source>
-        <translation>По имени файла</translation>
+        <location filename="../main-win.ui" line="476"/>
+        <source>&amp;By File Name</source>
+        <translation>&amp;По имени файла</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="474"/>
-        <source>By Modification Time</source>
-        <translation>По времени изменения</translation>
+        <location filename="../main-win.ui" line="484"/>
+        <source>By &amp;Modification Time</source>
+        <translation>По времени &amp;изменения</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="482"/>
-        <source>By File Type</source>
-        <translation>По типу файла</translation>
+        <location filename="../main-win.ui" line="492"/>
+        <source>By File &amp;Type</source>
+        <translation>По &amp;типу файла</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="490"/>
-        <source>By Owner</source>
-        <translation>По владельцу</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="498"/>
-        <source>Folder First</source>
-        <translation>Сначала папки</translation>
+        <location filename="../main-win.ui" line="500"/>
+        <source>By &amp;Owner</source>
+        <translation>По &amp;владельцу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="508"/>
+        <source>&amp;Folder First</source>
+        <translation>Сначала &amp;папки</translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="611"/>
+        <source>&amp;Case Sensitive</source>
+        <translation>&amp;Регистрочувствительная</translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="619"/>
+        <source>By File &amp;Size</source>
+        <translation>По &amp;размеру файла</translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="624"/>
+        <source>&amp;Close Window</source>
+        <translation>&amp;Закрыть окно</translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="657"/>
+        <source>&amp;Folder</source>
+        <translation>&amp;Папка</translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="670"/>
+        <source>&amp;Blank File</source>
+        <translation>&amp;Пустой файл</translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="678"/>
+        <source>&amp;Find Files</source>
+        <translation>&amp;Найти файлы</translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="681"/>
+        <source>F3</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="518"/>
         <source>New &amp;Tab</source>
         <translation>Новая &amp;вкладка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="511"/>
+        <location filename="../main-win.ui" line="521"/>
         <source>New Tab</source>
         <translation>Новая вкладка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="514"/>
+        <location filename="../main-win.ui" line="524"/>
         <source>Ctrl+T</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="524"/>
+        <location filename="../main-win.ui" line="534"/>
         <source>Go &amp;Back</source>
         <translation>Перейти &amp;назад</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="527"/>
+        <location filename="../main-win.ui" line="537"/>
         <source>Go Back</source>
         <translation>Перейти назад</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="530"/>
+        <location filename="../main-win.ui" line="540"/>
         <source>Alt+Left</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="540"/>
+        <location filename="../main-win.ui" line="550"/>
         <source>Go &amp;Forward</source>
         <translation>Перейти &amp;вперёд</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="543"/>
+        <location filename="../main-win.ui" line="553"/>
         <source>Go Forward</source>
         <translation>Перейти вперёд</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="546"/>
+        <location filename="../main-win.ui" line="556"/>
         <source>Alt+Right</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="551"/>
+        <location filename="../main-win.ui" line="561"/>
         <source>&amp;Invert Selection</source>
         <translation>&amp;Инвертировать выделение</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="561"/>
+        <location filename="../main-win.ui" line="571"/>
         <source>&amp;Delete</source>
         <translation>&amp;Удалить</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="564"/>
+        <location filename="../main-win.ui" line="574"/>
         <source>Del</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="569"/>
+        <location filename="../main-win.ui" line="579"/>
         <source>&amp;Rename</source>
         <translation>&amp;Переименовать</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="572"/>
+        <location filename="../main-win.ui" line="582"/>
         <source>F2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="577"/>
+        <location filename="../main-win.ui" line="587"/>
         <source>C&amp;lose Tab</source>
         <translation>&amp;Закрыть вкладку</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="580"/>
+        <location filename="../main-win.ui" line="590"/>
         <source>Ctrl+W</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="585"/>
+        <location filename="../main-win.ui" line="595"/>
         <source>File &amp;Properties</source>
         <translation>&amp;Свойства файла</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="588"/>
+        <location filename="../main-win.ui" line="598"/>
         <source>Alt+Return</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="593"/>
+        <location filename="../main-win.ui" line="603"/>
         <source>&amp;Folder Properties</source>
         <translation>&amp;Свойства папки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="601"/>
-        <source>Case Sensitive</source>
-        <translation>Регистрочувствительная</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="609"/>
-        <source>By File Size</source>
-        <translation>По размеру файла</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="614"/>
-        <source>Close Window</source>
-        <translation>Закрыть окно</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="619"/>
+        <location filename="../main-win.ui" line="629"/>
         <source>Edit Bookmarks</source>
         <translation>Изменить закладки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="624"/>
+        <location filename="../main-win.ui" line="634"/>
         <source>Open &amp;Terminal</source>
         <translation>Открыть &amp;терминал</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="627"/>
+        <location filename="../main-win.ui" line="637"/>
         <source>F4</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="632"/>
+        <location filename="../main-win.ui" line="642"/>
         <source>Open as &amp;Root</source>
         <translation>Открыть от имени &amp;суперпользователя</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="637"/>
+        <location filename="../main-win.ui" line="647"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Изменить закладки</translation>
     </message>
@@ -777,99 +787,99 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="126"/>
+        <location filename="../application.cpp" line="127"/>
         <source>Name of configuration profile</source>
         <translation>Имя профиля конфигурации</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="126"/>
+        <location filename="../application.cpp" line="127"/>
         <source>PROFILE</source>
         <translation>ПРОФИЛЬ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="129"/>
+        <location filename="../application.cpp" line="130"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Запустить PCManFM как демон</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="132"/>
+        <location filename="../application.cpp" line="133"/>
         <source>Quit PCManFM</source>
         <translation>Выйти из PCManFM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="135"/>
+        <location filename="../application.cpp" line="136"/>
         <source>Launch desktop manager</source>
         <translation>Запустить менеджер рабочего стола</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="138"/>
+        <location filename="../application.cpp" line="139"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Отключить менеджер рабочего стола, если он запущен</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="141"/>
+        <location filename="../application.cpp" line="142"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Открыть диалог настроек рабочего стола на странице с указанным именем</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="141"/>
-        <location filename="../application.cpp" line="157"/>
+        <location filename="../application.cpp" line="142"/>
+        <location filename="../application.cpp" line="158"/>
         <source>NAME</source>
         <translation>ИМЯ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="150"/>
+        <location filename="../application.cpp" line="151"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Выбрать обои рабочего стола из ФАЙЛА изображения</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="150"/>
+        <location filename="../application.cpp" line="151"/>
         <source>FILE</source>
         <translation>ФАЙЛ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="154"/>
+        <location filename="../application.cpp" line="155"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Выбрать режим обоев рабочего стола. РЕЖИМ=(цвет|растянуть|вместить|по центру|черепицей)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="154"/>
+        <location filename="../application.cpp" line="155"/>
         <source>MODE</source>
         <translation>РЕЖИМ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="157"/>
+        <location filename="../application.cpp" line="158"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Открыть диалог настроек на странице с указанным именем</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="144"/>
+        <location filename="../application.cpp" line="145"/>
         <source>Open new window</source>
         <translation>Открыть новое окно</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="147"/>
+        <location filename="../application.cpp" line="148"/>
         <source>Open Find Files utility</source>
         <translation>Открыть утилиту поиска файлов</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="160"/>
+        <location filename="../application.cpp" line="161"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[ФАЙЛ1, ФАЙЛ2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="160"/>
+        <location filename="../application.cpp" line="161"/>
         <source>Files or directories to open</source>
         <translation>Файлы или папки для открытия</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="422"/>
-        <location filename="../application.cpp" line="429"/>
+        <location filename="../application.cpp" line="436"/>
+        <location filename="../application.cpp" line="443"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="429"/>
+        <location filename="../application.cpp" line="443"/>
         <source>Terminal emulator is not set.</source>
         <translation>Эмулятор терминала не указан.</translation>
     </message>
@@ -915,7 +925,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <translation>Плиточное заполнение всего экрана изображением</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="128"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="141"/>
         <source>Image Files</source>
         <translation>Файлы изображений</translation>
     </message>
@@ -936,28 +946,28 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="433"/>
+        <location filename="../mainwindow.cpp" line="435"/>
         <source>Version: %1</source>
         <translation>Версия: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="873"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Переместить в корзину</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="873"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>&amp;Delete</source>
         <translation>&amp;Удалить</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="935"/>
-        <location filename="../mainwindow.cpp" line="946"/>
+        <location filename="../mainwindow.cpp" line="937"/>
+        <location filename="../mainwindow.cpp" line="948"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="946"/>
+        <location filename="../mainwindow.cpp" line="948"/>
         <source>Switch user command is not set.</source>
         <translation>Команда переключения пользователя не задана.</translation>
     </message>
