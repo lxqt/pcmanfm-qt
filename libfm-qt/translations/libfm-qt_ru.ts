@@ -398,83 +398,83 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="81"/>
+        <location filename="../filemenu.cpp" line="94"/>
         <source>Open</source>
         <translation>Открыть</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="85"/>
+        <location filename="../filemenu.cpp" line="98"/>
         <source>Open With...</source>
         <translation>Открыть с помощью...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="113"/>
+        <location filename="../filemenu.cpp" line="126"/>
         <source>Other Applications</source>
         <translation>Другие приложения</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="119"/>
+        <location filename="../filemenu.cpp" line="132"/>
         <source>Create &amp;New</source>
         <translation>&amp;Создать</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="138"/>
+        <location filename="../filemenu.cpp" line="151"/>
         <source>&amp;Restore</source>
         <translation>&amp;Восстановить</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="144"/>
+        <location filename="../filemenu.cpp" line="157"/>
         <source>Cut</source>
         <translation>Вырезать</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="148"/>
+        <location filename="../filemenu.cpp" line="161"/>
         <source>Copy</source>
         <translation>Копировать</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="152"/>
+        <location filename="../filemenu.cpp" line="165"/>
         <source>Paste</source>
         <translation>Вставить</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="156"/>
-        <location filename="../filemenu.cpp" line="349"/>
+        <location filename="../filemenu.cpp" line="169"/>
+        <location filename="../filemenu.cpp" line="363"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Переместить в корзину</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="160"/>
+        <location filename="../filemenu.cpp" line="173"/>
         <source>Rename</source>
         <translation>Переименовать</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="187"/>
+        <location filename="../filemenu.cpp" line="200"/>
         <source>Extract to...</source>
         <translation>Распаковать в ...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="192"/>
+        <location filename="../filemenu.cpp" line="205"/>
         <source>Extract Here</source>
         <translation>Распаковать здесь</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="198"/>
+        <location filename="../filemenu.cpp" line="211"/>
         <source>Compress</source>
         <translation>Сжать</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="208"/>
+        <location filename="../filemenu.cpp" line="221"/>
         <source>Properties</source>
         <translation>Свойства</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="299"/>
+        <location filename="../filemenu.cpp" line="312"/>
         <source>Output</source>
         <translation>Вывод</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="349"/>
+        <location filename="../filemenu.cpp" line="363"/>
         <source>&amp;Delete</source>
         <translation>&amp;Удалить</translation>
     </message>
@@ -634,6 +634,24 @@ Do you want to delete them instead?</source>
         <location filename="../filepropsdialog.cpp" line="416"/>
         <source>Do you want to recursively apply these changes to all files and sub-folders?</source>
         <translation>Применить изменения рекурсивно ко всем файлам и подпапкам?</translation>
+    </message>
+</context>
+<context>
+    <name>Fm::FileSearchDialog</name>
+    <message>
+        <location filename="../filesearchdialog.cpp" line="120"/>
+        <source>Error</source>
+        <translation>Ошибка</translation>
+    </message>
+    <message>
+        <location filename="../filesearchdialog.cpp" line="120"/>
+        <source>You should add at least add one directory to search.</source>
+        <translation>Вы должны добавить не менее одного места для поиска.</translation>
+    </message>
+    <message>
+        <location filename="../filesearchdialog.cpp" line="127"/>
+        <source>Select a folder</source>
+        <translation>Выберите папку</translation>
     </message>
 </context>
 <context>
@@ -814,53 +832,53 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="343"/>
+        <location filename="../placesview.cpp" line="346"/>
         <source>Empty Trash</source>
         <translation>Очистить корзину</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="331"/>
+        <location filename="../placesview.cpp" line="334"/>
         <source>Open in New Tab</source>
         <translation>Открыть в новой вкладке</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="334"/>
+        <location filename="../placesview.cpp" line="337"/>
         <source>Open in New Window</source>
         <translation>Открыть в новом окне</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="352"/>
+        <location filename="../placesview.cpp" line="355"/>
         <source>Move Bookmark Up</source>
         <translation>Сдвинуть закладку вверх</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="357"/>
+        <location filename="../placesview.cpp" line="360"/>
         <source>Move Bookmark Down</source>
         <translation>Сдвинуть закладку вниз</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="361"/>
+        <location filename="../placesview.cpp" line="364"/>
         <source>Rename Bookmark</source>
         <translation>Переименовать закладку</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="364"/>
+        <location filename="../placesview.cpp" line="367"/>
         <source>Remove Bookmark</source>
         <translation>Удалить закладку</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="373"/>
-        <location filename="../placesview.cpp" line="390"/>
+        <location filename="../placesview.cpp" line="376"/>
+        <location filename="../placesview.cpp" line="393"/>
         <source>Unmount</source>
         <translation>Отключить</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="377"/>
+        <location filename="../placesview.cpp" line="380"/>
         <source>Mount</source>
         <translation>Подключить</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="383"/>
+        <location filename="../placesview.cpp" line="386"/>
         <source>Eject</source>
         <translation>Извлечь</translation>
     </message>
@@ -1077,6 +1095,183 @@ Modified: %3</source>
         <location filename="../rename-dialog.ui" line="137"/>
         <source>Apply this option to all existing files</source>
         <translation>Запомнить выбор для всех уже существующих файлов</translation>
+    </message>
+</context>
+<context>
+    <name>SearchDialog</name>
+    <message>
+        <location filename="../filesearch.ui" line="14"/>
+        <source>Search Files</source>
+        <translation>Искать файлы</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="29"/>
+        <source>Name/Location</source>
+        <translation>Имя/Расположение</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="35"/>
+        <source>File Name Patterns:</source>
+        <translation>Шаблоны имени файла:</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="41"/>
+        <source>*</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="48"/>
+        <source>Case insensitive</source>
+        <translation>Нечувствительный к регистру поиск</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="55"/>
+        <source>Use regular expression</source>
+        <translation>Использовать регулярные выражения</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="65"/>
+        <source>Places to Search:</source>
+        <translation>Места для поиска:</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="78"/>
+        <source>&amp;Add</source>
+        <translation>&amp;Добавить</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="90"/>
+        <source>&amp;Remove</source>
+        <translation>&amp;Удалить</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="119"/>
+        <source>Search in sub directories</source>
+        <translation>Искать в подпапках</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="126"/>
+        <source>Search for hidden files</source>
+        <translation>Искать скрытые файлы</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="137"/>
+        <source>File Type</source>
+        <translation>Тип файла</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="143"/>
+        <source>Only search for files of following types:</source>
+        <translation>Искать файлы только следующих типов:</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="149"/>
+        <source>Text files</source>
+        <translation>Текстовые файлы</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="156"/>
+        <source>Image files</source>
+        <translation>Изображения</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="163"/>
+        <source>Audio files</source>
+        <translation>Аудиофайлы</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="170"/>
+        <source>Video files</source>
+        <translation>Видеофайлы</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="177"/>
+        <source>Documents</source>
+        <translation>Документы</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="184"/>
+        <source>Folders</source>
+        <translation>Папки</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="208"/>
+        <source>Content</source>
+        <translation>Содержание</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="214"/>
+        <source>File contains:</source>
+        <translation>Файл содержит:</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="223"/>
+        <source>Case insensiti&amp;ve</source>
+        <translation>Нечувствительн&amp;ый к регистру поиск</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="230"/>
+        <source>&amp;Use regular expression</source>
+        <translation>&amp;Использовать регулярные выражения</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="254"/>
+        <source>Properties</source>
+        <translation>Свойства</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="260"/>
+        <source>File Size:</source>
+        <translation>Размер файла:</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="266"/>
+        <source>Larger than:</source>
+        <translation>Больше, чем:</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="282"/>
+        <location filename="../filesearch.ui" line="323"/>
+        <source>Bytes</source>
+        <translation>Байт</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="287"/>
+        <location filename="../filesearch.ui" line="328"/>
+        <source>KiB</source>
+        <translation>КиБ</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="292"/>
+        <location filename="../filesearch.ui" line="333"/>
+        <source>MiB</source>
+        <translation>МиБ</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="297"/>
+        <location filename="../filesearch.ui" line="338"/>
+        <source>GiB</source>
+        <translation>ГиБ</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="307"/>
+        <source>Smaller than:</source>
+        <translation>Меньше, чем:</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="351"/>
+        <source>Last Modified Time:</source>
+        <translation>Время последнего изменения:</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="357"/>
+        <source>Earlier than:</source>
+        <translation>Раньше, чем:</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="364"/>
+        <source>Later than:</source>
+        <translation>Позже, чем:</translation>
     </message>
 </context>
 </TS>
