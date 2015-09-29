@@ -40,6 +40,23 @@ namespace PCManFM {
 class Settings;
 class Launcher;
 
+class ProxyFilter : public Fm::ProxyFolderModelFilter {
+public:
+  bool filterAcceptsRow(const Fm::ProxyFolderModel* model, FmFileInfo* info) const;
+  virtual ~ProxyFilter() {}
+  void setVirtHidden(FmFolder* folder);
+  QString getFilterStr() {
+    return filterStr_;
+  }
+  void setFilterStr(QString str) {
+    filterStr_ = str;
+  }
+
+private:
+  QString filterStr_;
+  QStringList virtHiddenList_;
+};
+
 class TabPage : public QWidget {
 Q_OBJECT
 
@@ -98,9 +115,7 @@ public:
     return proxyModel_->showHidden();
   }
 
-  void setShowHidden(bool showHidden) {
-    proxyModel_->setShowHidden(showHidden);
-  }
+  void setShowHidden(bool showHidden);
 
   FmPath* path() {
     return folder_ ? fm_folder_get_path(folder_) : NULL;
@@ -137,8 +152,10 @@ public:
   void invertSelection();
 
   void reload() {
-    if(folder_)
+    if(folder_) {
+      proxyFilter_->setVirtHidden(folder_); // reread ".hidden"
       fm_folder_reload(folder_);
+    }
   }
 
   QString title() const {
@@ -177,6 +194,19 @@ public:
     return folderView_->fileLauncher();
   }
 
+  QString getFilterStr() {
+    if(proxyFilter_)
+      return proxyFilter_->getFilterStr();
+    return QString();
+  }
+
+  void setFilterStr(QString str) {
+    if(proxyFilter_)
+      proxyFilter_->setFilterStr(str);
+  }
+
+  void applyFilter();
+
 Q_SIGNALS:
   void statusChanged(int type, QString statusText);
   void titleChanged(QString title);
@@ -207,6 +237,7 @@ private:
   View* folderView_;
   Fm::CachedFolderModel* folderModel_;
   Fm::ProxyFolderModel* proxyModel_;
+  ProxyFilter* proxyFilter_;
   QVBoxLayout* verticalLayout;
   FmFolder* folder_;
   QString title_;

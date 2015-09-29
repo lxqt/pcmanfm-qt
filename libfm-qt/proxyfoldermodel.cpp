@@ -254,6 +254,10 @@ void ProxyFolderModel::removeFilter(ProxyFolderModelFilter* filter) {
   Q_EMIT sortFilterChanged();
 }
 
+void ProxyFolderModel::updateFilters() {
+  invalidate();
+  Q_EMIT sortFilterChanged();
+}
 
 #if 0
 void ProxyFolderModel::reloadAllThumbnails() {
