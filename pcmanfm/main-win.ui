@@ -15,8 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset theme="folder">
-    <normaloff/>
-   </iconset>
+    <normaloff>.</normaloff>.</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -59,13 +58,16 @@
        </property>
       </widget>
       <widget class="QFrame" name="frame">
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
         <item>
          <widget class="QStackedWidget" name="stackedWidget">
           <property name="sizePolicy">
@@ -98,7 +100,7 @@
      <x>0</x>
      <y>0</y>
      <width>460</width>
-     <height>23</height>
+     <height>29</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -239,8 +241,7 @@
   <action name="actionGoUp">
    <property name="icon">
     <iconset theme="go-up">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>Go &amp;Up</string>
@@ -255,8 +256,7 @@
   <action name="actionHome">
    <property name="icon">
     <iconset theme="user-home">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Home</string>
@@ -268,8 +268,7 @@
   <action name="actionReload">
    <property name="icon">
     <iconset theme="view-refresh">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Reload</string>
@@ -281,8 +280,7 @@
   <action name="actionGo">
    <property name="icon">
     <iconset theme="go-jump">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>Go</string>
@@ -291,8 +289,7 @@
   <action name="actionQuit">
    <property name="icon">
     <iconset theme="application-exit">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>Quit</string>
@@ -301,8 +298,7 @@
   <action name="actionAbout">
    <property name="icon">
     <iconset theme="help-about">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;About</string>
@@ -311,8 +307,7 @@
   <action name="actionNewWin">
    <property name="icon">
     <iconset theme="window-new">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;New Window</string>
@@ -338,8 +333,7 @@
   <action name="actionComputer">
    <property name="icon">
     <iconset theme="computer">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Computer</string>
@@ -348,8 +342,7 @@
   <action name="actionTrash">
    <property name="icon">
     <iconset theme="user-trash">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Trash</string>
@@ -363,8 +356,7 @@
   <action name="actionDesktop">
    <property name="icon">
     <iconset theme="user-desktop">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Desktop</string>
@@ -373,8 +365,7 @@
   <action name="actionAddToBookmarks">
    <property name="icon">
     <iconset theme="list-add">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Add to Bookmarks</string>
@@ -425,8 +416,7 @@
   <action name="actionCut">
    <property name="icon">
     <iconset theme="edit-cut">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>Cu&amp;t</string>
@@ -438,8 +428,7 @@
   <action name="actionCopy">
    <property name="icon">
     <iconset theme="edit-copy">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Copy</string>
@@ -451,8 +440,7 @@
   <action name="actionPaste">
    <property name="icon">
     <iconset theme="edit-paste">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Paste</string>
@@ -533,8 +521,7 @@
   <action name="actionNewTab">
    <property name="icon">
     <iconset theme="window-new">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>New &amp;Tab</string>
@@ -549,8 +536,7 @@
   <action name="actionGoBack">
    <property name="icon">
     <iconset theme="go-previous">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>Go &amp;Back</string>
@@ -565,8 +551,7 @@
   <action name="actionGoForward">
    <property name="icon">
     <iconset theme="go-next">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>Go &amp;Forward</string>
@@ -586,8 +571,7 @@
   <action name="actionDelete">
    <property name="icon">
     <iconset theme="edit-delete">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Delete</string>
@@ -672,8 +656,7 @@
   <action name="actionNewFolder">
    <property name="icon">
     <iconset theme="folder-new">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Folder</string>
@@ -685,8 +668,7 @@
   <action name="actionNewBlankFile">
    <property name="icon">
     <iconset theme="document-new">
-     <normaloff/>
-    </iconset>
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Blank File</string>
