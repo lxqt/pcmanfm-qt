@@ -57,6 +57,7 @@ Q_SIGNALS:
 protected Q_SLOTS:
   void onClicked(const QModelIndex & index);
   void onPressed(const QModelIndex & index);
+  void onIconSizeChanged(const QSize & size);
   // void onMountOperationFinished(GError* error);
 
   void onOpenNewTab();
