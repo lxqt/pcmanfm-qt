@@ -155,6 +155,8 @@ void PlacesView::onClicked(const QModelIndex& index) {
         onEjectButtonClicked(item);
       }
     }
+    else
+      activateRow(0, index.sibling(index.row(), 0));
   }
 }
 
