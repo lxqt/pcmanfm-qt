@@ -49,6 +49,9 @@
 
 #include <X11/Xlib.h>
 
+#include "xdgdir.h"
+#include <QFileSystemWatcher>
+
 using namespace PCManFM;
 static const char* serviceName = "org.pcmanfm.PCManFM";
 static const char* ifaceName = "org.pcmanfm.Application";
@@ -70,6 +73,8 @@ Application::Application(int& argc, char** argv):
   enableDesktopManager_(false),
   preferencesDialog_(),
   volumeMonitor_(NULL),
+  userDirsWatcher_(NULL),
+  lxqtRunning_(false),
   editBookmarksialog_() {
 
   argc_ = argc;
@@ -98,6 +103,21 @@ Application::Application(int& argc, char** argv):
       QIcon::setThemeName(settings_.fallbackIconThemeName());
       Fm::IconTheme::checkChanged();
     }
+
+    // Check if LXQt Session is running. LXQt has it's own Desktop Folder
+    // editor. We just hide our editor when LXQt is running.
+    QDBusInterface* lxqtSessionIface = new QDBusInterface(
+                                        QStringLiteral("org.lxqt.session"),
+                                        QStringLiteral("/LXQtSession"));
+    if (lxqtSessionIface) {
+      if (lxqtSessionIface->isValid()) {
+          lxqtRunning_ = true;
+          userDesktopFolder_ = XdgDir::readDesktopDir();
+          initWatch();
+      }
+    }
+    delete lxqtSessionIface; // It's fine to delete a null pointer
+    lxqtSessionIface = 0;
   }
   else {
     // an service of the same name is already registered.
@@ -116,6 +136,21 @@ Application::~Application() {
 
   // if(enableDesktopManager_)
   //   removeNativeEventFilter(this);
+}
+
+void Application::initWatch()
+{
+  QFile file_ (QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/user-dirs.dirs"));
+  if(! file_.open(QIODevice::ReadOnly | QIODevice::Text)) {
+    qDebug() << Q_FUNC_INFO << "Could not read: " << userDirsFile_;
+    userDirsFile_ = QString();
+  } else {
+    userDirsFile_ = file_.fileName();
+  }
+
+  userDirsWatcher_ = new QFileSystemWatcher(this);
+  userDirsWatcher_->addPath(userDirsFile_);
+  connect(userDirsWatcher_, &QFileSystemWatcher::fileChanged, this, &Application::onUserDirsChanged);
 }
 
 bool Application::parseCommandLineArgs() {
@@ -282,6 +317,32 @@ int Application::exec() {
   return QCoreApplication::exec();
 }
 
+
+void Application::onUserDirsChanged()
+{
+  qDebug() << Q_FUNC_INFO;
+  bool file_deleted = !userDirsWatcher_->files().contains(userDirsFile_);
+  if(file_deleted) {
+    // if our config file is already deleted, reinstall a new watcher
+    userDirsWatcher_->addPath(userDirsFile_);
+  }
+
+  const QString d = XdgDir::readDesktopDir();
+  if (d != userDesktopFolder_) {
+    userDesktopFolder_ = d;
+    const QDir dir(d);
+    if (dir.exists()) {
+      const int N = desktopWindows_.size();
+      for(int i = 0; i < N; ++i) {
+        desktopWindows_.at(i)->setDesktopFolder();
+      }
+    } else {
+        qWarning("Application::onUserDirsChanged: %s doesn't exist",
+                    qUtf8Printable(userDesktopFolder_));
+    }
+  }
+}
+
 void Application::onAboutToQuit() {
   qDebug("aboutToQuit");
   settings_.save();
@@ -363,6 +424,9 @@ void Application::desktopPrefrences(QString page) {
   // show desktop preference window
   if(!desktopPreferencesDialog_) {
     desktopPreferencesDialog_ = new DesktopPreferencesDialog();
+
+    // Should be used only one time
+    desktopPreferencesDialog_->setEditDesktopFolder(!lxqtRunning_);
   }
   desktopPreferencesDialog_.data()->selectPage(page);
   desktopPreferencesDialog_.data()->show();
