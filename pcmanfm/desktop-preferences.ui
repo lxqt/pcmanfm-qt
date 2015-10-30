@@ -17,7 +17,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="generalPage">
       <attribute name="title">
@@ -230,42 +230,6 @@
            <widget class="QCheckBox" name="showWmMenu">
             <property name="text">
              <string>Show menus provided by window managers when desktop is clicked</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="groupBox_3">
-         <property name="title">
-          <string>Desktop</string>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_4">
-          <item>
-           <widget class="QLabel" name="label_7">
-            <property name="text">
-             <string>Desktop folder:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="desktopFolder">
-            <property name="toolTip">
-             <string>Image file</string>
-            </property>
-            <property name="statusTip">
-             <string/>
-            </property>
-            <property name="placeholderText">
-             <string>Folder path</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="browseDesktopFolder">
-            <property name="text">
-             <string>&amp;Browse</string>
             </property>
            </widget>
           </item>
