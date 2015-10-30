@@ -115,9 +115,9 @@ Application::Application(int& argc, char** argv):
           userDesktopFolder_ = XdgDir::readDesktopDir();
           initWatch();
       }
+      delete lxqtSessionIface;
+      lxqtSessionIface = 0;
     }
-    delete lxqtSessionIface; // It's fine to delete a null pointer
-    lxqtSessionIface = 0;
   }
   else {
     // an service of the same name is already registered.

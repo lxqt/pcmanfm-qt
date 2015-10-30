@@ -34,9 +34,7 @@
 
 class QScreen;
 
-#ifndef EDIT_DESKTOP_FOLDER
 class QFileSystemWatcher;
-#endif
 
 namespace PCManFM {
 
