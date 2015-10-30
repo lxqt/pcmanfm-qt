@@ -59,6 +59,12 @@
       </widget>
       <widget class="QFrame" name="frame">
        <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <property name="leftMargin">
+         <number>1</number>
+        </property>
         <property name="topMargin">
          <number>0</number>
         </property>
