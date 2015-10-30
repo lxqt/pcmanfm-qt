@@ -242,43 +242,46 @@ void FolderViewTreeView::layoutColumns() {
 
   // get the width that every column want
   int numCols = headerView->count();
-  int* widths = new int[numCols]; // array to store the widths every column needs
-  int column;
-  for(column = 0; column < numCols; ++column) {
-    int columnId = headerView->logicalIndex(column);
-    // get the size that the column needs
-    widths[column] = sizeHintForColumn(columnId);
-    // compute the total width needed
-    desiredWidth += widths[column];
-  }
+  if(numCols > 0) {
+    int* widths = new int[numCols]; // array to store the widths every column needs
+    int column;
+    for(column = 0; column < numCols; ++column) {
+      int columnId = headerView->logicalIndex(column);
+      // get the size that the column needs
+      widths[column] = sizeHintForColumn(columnId);
+      // compute the total width needed
+      desiredWidth += widths[column];
+    }
 
-  int filenameColumn = headerView->visualIndex(FolderModel::ColumnFileName);
-  // if the total witdh we want exceeds the available space
-  if(desiredWidth > availWidth) {
-    // Compute the width available for the filename column
-    int filenameAvailWidth = availWidth - desiredWidth + widths[filenameColumn];
+    int filenameColumn = headerView->visualIndex(FolderModel::ColumnFileName);
+    // if the total witdh we want exceeds the available space
+    if(desiredWidth > availWidth) {
+      // Compute the width available for the filename column
+      int filenameAvailWidth = availWidth - desiredWidth + widths[filenameColumn];
 
-    // Compute the minimum acceptable width for the filename column
-    int filenameMinWidth = qMin(200, sizeHintForColumn(filenameColumn));
+      // Compute the minimum acceptable width for the filename column
+      int filenameMinWidth = qMin(200, sizeHintForColumn(filenameColumn));
 
-    if (filenameAvailWidth > filenameMinWidth) {
+      if (filenameAvailWidth > filenameMinWidth) {
         // Shrink the filename column to the available width
         widths[filenameColumn] = filenameAvailWidth;
-    } else {
+      }
+      else {
         // Set the filename column to its minimum width
         widths[filenameColumn] = filenameMinWidth;
+      }
     }
-  } else {
+    else {
       // Fill the extra available space with the filename column
       widths[filenameColumn] += availWidth - desiredWidth;
-  }
+    }
 
-  // really do the resizing for every column
-  for(int column = 0; column < numCols; ++column) {
-    headerView->resizeSection(column, widths[column]);
+    // really do the resizing for every column
+    for(int column = 0; column < numCols; ++column) {
+      headerView->resizeSection(column, widths[column]);
+    }
+    delete []widths;
   }
-
-  delete []widths;
   doingLayout_ = false;
 
   if(layoutTimer_) {
