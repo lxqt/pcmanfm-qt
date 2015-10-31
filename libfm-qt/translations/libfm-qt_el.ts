@@ -306,6 +306,19 @@
     </message>
 </context>
 <context>
+    <name>Fm::CreateNewMenu</name>
+    <message>
+        <location filename="../createnewmenu.cpp" line="29"/>
+        <source>Folder</source>
+        <translation type="unfinished">Φάκελος</translation>
+    </message>
+    <message>
+        <location filename="../createnewmenu.cpp" line="33"/>
+        <source>Blank File</source>
+        <translation type="unfinished">Κενό αρχείο</translation>
+    </message>
+</context>
+<context>
     <name>Fm::DirTreeModel</name>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="77"/>
@@ -316,6 +329,24 @@
         <location filename="../dirtreemodelitem.cpp" line="208"/>
         <source>&lt;No sub folders&gt;</source>
         <translation>&lt;No sub folders&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>Fm::DirTreeView</name>
+    <message>
+        <location filename="../dirtreeview.cpp" line="208"/>
+        <source>Open in New T&amp;ab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dirtreeview.cpp" line="212"/>
+        <source>Open in New Win&amp;dow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dirtreeview.cpp" line="217"/>
+        <source>Open in Termina&amp;l</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -367,78 +398,83 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="78"/>
+        <location filename="../filemenu.cpp" line="94"/>
         <source>Open</source>
         <translation>Άνοιγμα</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="82"/>
+        <location filename="../filemenu.cpp" line="98"/>
         <source>Open With...</source>
         <translation>Άνοιγμα με...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="110"/>
+        <location filename="../filemenu.cpp" line="126"/>
         <source>Other Applications</source>
         <translation>Άλλες εφαρμογές</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="128"/>
+        <location filename="../filemenu.cpp" line="132"/>
+        <source>Create &amp;New</source>
+        <translation type="unfinished">Δημιουργία &amp;νέου</translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="151"/>
         <source>&amp;Restore</source>
         <translation>&amp;Επαναφορά</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="134"/>
+        <location filename="../filemenu.cpp" line="157"/>
         <source>Cut</source>
         <translation>Αποκοπή</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="138"/>
+        <location filename="../filemenu.cpp" line="161"/>
         <source>Copy</source>
         <translation>Αντιγραφή</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="142"/>
+        <location filename="../filemenu.cpp" line="165"/>
         <source>Paste</source>
         <translation>Επικόλληση</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="146"/>
-        <location filename="../filemenu.cpp" line="339"/>
+        <location filename="../filemenu.cpp" line="169"/>
+        <location filename="../filemenu.cpp" line="363"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Μετακίνηση στα απορρίμματα</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="150"/>
+        <location filename="../filemenu.cpp" line="173"/>
         <source>Rename</source>
         <translation>Μετονομασία</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="177"/>
+        <location filename="../filemenu.cpp" line="200"/>
         <source>Extract to...</source>
         <translation>Εξαγωγή σε...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="182"/>
+        <location filename="../filemenu.cpp" line="205"/>
         <source>Extract Here</source>
         <translation>Εξαγωγή εδώ</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="188"/>
+        <location filename="../filemenu.cpp" line="211"/>
         <source>Compress</source>
         <translation>Συμπίεση</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="198"/>
+        <location filename="../filemenu.cpp" line="221"/>
         <source>Properties</source>
         <translation>Ιδιότητες</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="289"/>
+        <location filename="../filemenu.cpp" line="312"/>
         <source>Output</source>
         <translation>Έξοδος</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="339"/>
+        <location filename="../filemenu.cpp" line="363"/>
         <source>&amp;Delete</source>
         <translation>&amp;Διαγραφή</translation>
     </message>
@@ -601,9 +637,27 @@ Do you want to delete them instead?</source>
     </message>
 </context>
 <context>
+    <name>Fm::FileSearchDialog</name>
+    <message>
+        <location filename="../filesearchdialog.cpp" line="120"/>
+        <source>Error</source>
+        <translation type="unfinished">Σφάλμα</translation>
+    </message>
+    <message>
+        <location filename="../filesearchdialog.cpp" line="120"/>
+        <source>You should add at least add one directory to search.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearchdialog.cpp" line="127"/>
+        <source>Select a folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Fm::FolderMenu</name>
     <message>
-        <location filename="../foldermenu.cpp" line="36"/>
+        <location filename="../foldermenu.cpp" line="37"/>
         <source>Create &amp;New</source>
         <translation>Δημιουργία &amp;νέου</translation>
     </message>
@@ -638,57 +692,55 @@ Do you want to delete them instead?</source>
         <translation>Ι&amp;διότητες του φακέλου</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="85"/>
         <source>Folder</source>
-        <translation>Φάκελος</translation>
+        <translation type="vanished">Φάκελος</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="89"/>
         <source>Blank File</source>
-        <translation>Κενό αρχείο</translation>
+        <translation type="vanished">Κενό αρχείο</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="133"/>
+        <location filename="../foldermenu.cpp" line="99"/>
         <source>By File Name</source>
         <translation>Ανά όνομα αρχείου</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="134"/>
+        <location filename="../foldermenu.cpp" line="100"/>
         <source>By Modification Time</source>
         <translation>Ανά χρόνο τροποποίησης</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="135"/>
+        <location filename="../foldermenu.cpp" line="101"/>
         <source>By File Size</source>
         <translation>Ανά μέγεθος αρχείου</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="136"/>
+        <location filename="../foldermenu.cpp" line="102"/>
         <source>By File Type</source>
         <translation>Ανά τύπο αρχείου</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="137"/>
+        <location filename="../foldermenu.cpp" line="103"/>
         <source>By File Owner</source>
         <translation>Ανά ιδιοκτήτη αρχείου</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="149"/>
+        <location filename="../foldermenu.cpp" line="115"/>
         <source>Ascending</source>
         <translation>Αύξουσα</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="154"/>
+        <location filename="../foldermenu.cpp" line="120"/>
         <source>Descending</source>
         <translation>Φθίνουσα</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="169"/>
+        <location filename="../foldermenu.cpp" line="135"/>
         <source>Folder First</source>
         <translation>Οι φάκελοι πρώτα</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="178"/>
+        <location filename="../foldermenu.cpp" line="144"/>
         <source>Case Sensitive</source>
         <translation>Διάκριση πεζών/κεφαλαίων</translation>
     </message>
@@ -788,53 +840,53 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="331"/>
+        <location filename="../placesview.cpp" line="344"/>
         <source>Open in New Tab</source>
         <translation>Άνοιγμα σε νέα καρτέλα</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="334"/>
+        <location filename="../placesview.cpp" line="347"/>
         <source>Open in New Window</source>
         <translation>Άνοιγμα σε νέο παράθυρο</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="343"/>
+        <location filename="../placesview.cpp" line="356"/>
         <source>Empty Trash</source>
         <translation>Άδειασμα των απορριμμάτων</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="352"/>
+        <location filename="../placesview.cpp" line="365"/>
         <source>Move Bookmark Up</source>
         <translation>Μετακίνηση του σελιδοδείκτη προς τα πάνω</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="357"/>
+        <location filename="../placesview.cpp" line="370"/>
         <source>Move Bookmark Down</source>
         <translation>Μετακίνηση του σελιδοδείκτη προς τα κάτω</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="361"/>
+        <location filename="../placesview.cpp" line="374"/>
         <source>Rename Bookmark</source>
         <translation>Μετονομασία σελιδοδείκτη</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="364"/>
+        <location filename="../placesview.cpp" line="377"/>
         <source>Remove Bookmark</source>
         <translation>Αφαίρεση σελιδοδείκτη</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="373"/>
-        <location filename="../placesview.cpp" line="390"/>
+        <location filename="../placesview.cpp" line="386"/>
+        <location filename="../placesview.cpp" line="403"/>
         <source>Unmount</source>
         <translation>Αποπροσάρτηση</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="377"/>
+        <location filename="../placesview.cpp" line="390"/>
         <source>Mount</source>
         <translation>Προσάρτηση</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="383"/>
+        <location filename="../placesview.cpp" line="396"/>
         <source>Eject</source>
         <translation>Εξαγωγή</translation>
     </message>
@@ -879,24 +931,24 @@ Modified: %3</source>
 <context>
     <name>Fm::SidePane</name>
     <message>
-        <location filename="../sidepane.cpp" line="46"/>
-        <location filename="../sidepane.cpp" line="125"/>
+        <location filename="../sidepane.cpp" line="47"/>
+        <location filename="../sidepane.cpp" line="127"/>
         <source>Places</source>
         <translation>Τοποθεσίες</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="47"/>
-        <location filename="../sidepane.cpp" line="127"/>
+        <location filename="../sidepane.cpp" line="48"/>
+        <location filename="../sidepane.cpp" line="129"/>
         <source>Directory Tree</source>
         <translation>Δέντρο καταλόγων</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="135"/>
+        <location filename="../sidepane.cpp" line="137"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
         <translation>Εμφανίζει τη λίστα με τις κοινές τοποθεσίες, συσκευές, και σελιδοδείκτες στην πλευρική στήλη</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="137"/>
+        <location filename="../sidepane.cpp" line="139"/>
         <source>Shows tree of directories in sidebar</source>
         <translation>Εμφανίζει ένα δέντρο των καταλόγων στην πλευρική στήλη</translation>
     </message>
@@ -965,7 +1017,7 @@ Modified: %3</source>
         <location filename="../utilities.cpp" line="152"/>
         <location filename="../utilities.cpp" line="228"/>
         <location filename="../mountoperation.cpp" line="185"/>
-        <location filename="../filelauncher.cpp" line="109"/>
+        <location filename="../filelauncher.cpp" line="117"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
@@ -1051,6 +1103,183 @@ Modified: %3</source>
         <location filename="../rename-dialog.ui" line="137"/>
         <source>Apply this option to all existing files</source>
         <translation>Εφαρμογή της επιλογής σε όλα τα υπάρχοντα αρχεία</translation>
+    </message>
+</context>
+<context>
+    <name>SearchDialog</name>
+    <message>
+        <location filename="../filesearch.ui" line="14"/>
+        <source>Search Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="29"/>
+        <source>Name/Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="35"/>
+        <source>File Name Patterns:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="41"/>
+        <source>*</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="48"/>
+        <source>Case insensitive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="55"/>
+        <source>Use regular expression</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="65"/>
+        <source>Places to Search:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="78"/>
+        <source>&amp;Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="90"/>
+        <source>&amp;Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="119"/>
+        <source>Search in sub directories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="126"/>
+        <source>Search for hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="137"/>
+        <source>File Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="143"/>
+        <source>Only search for files of following types:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="149"/>
+        <source>Text files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="156"/>
+        <source>Image files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="163"/>
+        <source>Audio files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="170"/>
+        <source>Video files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="177"/>
+        <source>Documents</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="184"/>
+        <source>Folders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="208"/>
+        <source>Content</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="214"/>
+        <source>File contains:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="223"/>
+        <source>Case insensiti&amp;ve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="230"/>
+        <source>&amp;Use regular expression</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="254"/>
+        <source>Properties</source>
+        <translation type="unfinished">Ιδιότητες</translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="260"/>
+        <source>File Size:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="266"/>
+        <source>Larger than:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="282"/>
+        <location filename="../filesearch.ui" line="323"/>
+        <source>Bytes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="287"/>
+        <location filename="../filesearch.ui" line="328"/>
+        <source>KiB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="292"/>
+        <location filename="../filesearch.ui" line="333"/>
+        <source>MiB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="297"/>
+        <location filename="../filesearch.ui" line="338"/>
+        <source>GiB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="307"/>
+        <source>Smaller than:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="351"/>
+        <source>Last Modified Time:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="357"/>
+        <source>Earlier than:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filesearch.ui" line="364"/>
+        <source>Later than:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
