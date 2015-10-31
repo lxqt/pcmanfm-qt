@@ -135,7 +135,7 @@ GObject* ThumbnailLoader::readImageFromStream(GInputStream* stream, guint64 len,
 
 gboolean ThumbnailLoader::writeImage(GObject* image, const char* filename) {
   FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(image);
-  if(wrapper->image.isNull())
+  if(wrapper == NULL || wrapper->image.isNull())
     return FALSE;
   return (gboolean)wrapper->image.save(filename, "PNG");
 }
@@ -180,7 +180,10 @@ char* ThumbnailLoader::getImageText(GObject* image, const char* key) {
 
 gboolean ThumbnailLoader::setImageText(GObject* image, const char* key, const char* val) {
   FmQImageWrapper* wrapper = FM_QIMAGE_WRAPPER(image);
-  wrapper->image.setText(key, val);
+  // NOTE: we might receive image=NULL sometimes with older versions of libfm.
+  if(Q_LIKELY(wrapper != NULL)) {
+    wrapper->image.setText(key, val);
+  }
   return TRUE;
 }
 
