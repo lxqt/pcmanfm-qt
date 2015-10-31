@@ -832,53 +832,53 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="346"/>
+        <location filename="../placesview.cpp" line="356"/>
         <source>Empty Trash</source>
         <translation>Очистить корзину</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="334"/>
+        <location filename="../placesview.cpp" line="344"/>
         <source>Open in New Tab</source>
         <translation>Открыть в новой вкладке</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="337"/>
+        <location filename="../placesview.cpp" line="347"/>
         <source>Open in New Window</source>
         <translation>Открыть в новом окне</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="355"/>
+        <location filename="../placesview.cpp" line="365"/>
         <source>Move Bookmark Up</source>
         <translation>Сдвинуть закладку вверх</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="360"/>
+        <location filename="../placesview.cpp" line="370"/>
         <source>Move Bookmark Down</source>
         <translation>Сдвинуть закладку вниз</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="364"/>
+        <location filename="../placesview.cpp" line="374"/>
         <source>Rename Bookmark</source>
         <translation>Переименовать закладку</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="367"/>
+        <location filename="../placesview.cpp" line="377"/>
         <source>Remove Bookmark</source>
         <translation>Удалить закладку</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="376"/>
-        <location filename="../placesview.cpp" line="393"/>
+        <location filename="../placesview.cpp" line="386"/>
+        <location filename="../placesview.cpp" line="403"/>
         <source>Unmount</source>
         <translation>Отключить</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="380"/>
+        <location filename="../placesview.cpp" line="390"/>
         <source>Mount</source>
         <translation>Подключить</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="386"/>
+        <location filename="../placesview.cpp" line="396"/>
         <source>Eject</source>
         <translation>Извлечь</translation>
     </message>
@@ -924,23 +924,23 @@ Modified: %3</source>
     <name>Fm::SidePane</name>
     <message>
         <location filename="../sidepane.cpp" line="47"/>
-        <location filename="../sidepane.cpp" line="126"/>
+        <location filename="../sidepane.cpp" line="127"/>
         <source>Places</source>
         <translation>Места</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="48"/>
-        <location filename="../sidepane.cpp" line="128"/>
+        <location filename="../sidepane.cpp" line="129"/>
         <source>Directory Tree</source>
         <translation>Дерево папок</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="136"/>
+        <location filename="../sidepane.cpp" line="137"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
         <translation>Показывает список обычных мест, устройств и закладок в боковой панели</translation>
     </message>
     <message>
-        <location filename="../sidepane.cpp" line="138"/>
+        <location filename="../sidepane.cpp" line="139"/>
         <source>Shows tree of directories in sidebar</source>
         <translation>Показывает дерево папок в боковой панели</translation>
     </message>
@@ -996,10 +996,10 @@ Modified: %3</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../filelauncher.cpp" line="117"/>
-        <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="152"/>
         <location filename="../utilities.cpp" line="228"/>
+        <location filename="../mountoperation.cpp" line="185"/>
+        <location filename="../filelauncher.cpp" line="117"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
