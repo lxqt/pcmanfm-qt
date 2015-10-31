@@ -51,6 +51,15 @@ public:
     setCurrentPath(path);
   }
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 5, 0)
+  void setIconSize(const QSize &size) {
+      // The signal QAbstractItemView::iconSizeChanged is only available after Qt 5.5.
+      // To simulate the effect for older Qt versions, we override setIconSize().
+      QAbstractItemView::setIconSize(size);
+      onIconSizeChanged(size);
+  }
+#endif
+
 Q_SIGNALS:
   void chdirRequested(int type, FmPath* path);
 
