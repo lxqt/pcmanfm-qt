@@ -852,7 +852,7 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="356"/>
+        <location filename="../placesview.cpp" line="358"/>
         <source>Empty Trash</source>
         <translation>清空垃圾桶</translation>
     </message>
@@ -865,48 +865,48 @@ Do you want to delete them instead?</source>
         <translation type="vanished">刪除</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="344"/>
+        <location filename="../placesview.cpp" line="346"/>
         <source>Open in New Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="347"/>
+        <location filename="../placesview.cpp" line="349"/>
         <source>Open in New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="365"/>
+        <location filename="../placesview.cpp" line="367"/>
         <source>Move Bookmark Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="370"/>
+        <location filename="../placesview.cpp" line="372"/>
         <source>Move Bookmark Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="374"/>
+        <location filename="../placesview.cpp" line="376"/>
         <source>Rename Bookmark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="377"/>
+        <location filename="../placesview.cpp" line="379"/>
         <source>Remove Bookmark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="386"/>
-        <location filename="../placesview.cpp" line="403"/>
+        <location filename="../placesview.cpp" line="388"/>
+        <location filename="../placesview.cpp" line="405"/>
         <source>Unmount</source>
         <translation>卸載</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="390"/>
+        <location filename="../placesview.cpp" line="392"/>
         <source>Mount</source>
         <translation>掛載</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="396"/>
+        <location filename="../placesview.cpp" line="398"/>
         <source>Eject</source>
         <translation>退出</translation>
     </message>
