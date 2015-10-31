@@ -15,7 +15,8 @@
   </property>
   <property name="windowIcon">
    <iconset theme="folder">
-    <normaloff>.</normaloff>.</iconset>
+    <normaloff/>
+   </iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -106,7 +107,7 @@
      <x>0</x>
      <y>0</y>
      <width>460</width>
-     <height>29</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -166,6 +167,7 @@
     <addaction name="actionDetailedList"/>
     <addaction name="separator"/>
     <addaction name="menuSorting"/>
+    <addaction name="actionFilter"/>
    </widget>
    <widget class="QMenu" name="menu_Editw">
     <property name="title">
@@ -247,7 +249,8 @@
   <action name="actionGoUp">
    <property name="icon">
     <iconset theme="go-up">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go &amp;Up</string>
@@ -262,7 +265,8 @@
   <action name="actionHome">
    <property name="icon">
     <iconset theme="user-home">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Home</string>
@@ -274,7 +278,8 @@
   <action name="actionReload">
    <property name="icon">
     <iconset theme="view-refresh">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Reload</string>
@@ -286,7 +291,8 @@
   <action name="actionGo">
    <property name="icon">
     <iconset theme="go-jump">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go</string>
@@ -295,7 +301,8 @@
   <action name="actionQuit">
    <property name="icon">
     <iconset theme="application-exit">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Quit</string>
@@ -304,7 +311,8 @@
   <action name="actionAbout">
    <property name="icon">
     <iconset theme="help-about">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;About</string>
@@ -313,7 +321,8 @@
   <action name="actionNewWin">
    <property name="icon">
     <iconset theme="window-new">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;New Window</string>
@@ -339,7 +348,8 @@
   <action name="actionComputer">
    <property name="icon">
     <iconset theme="computer">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Computer</string>
@@ -348,7 +358,8 @@
   <action name="actionTrash">
    <property name="icon">
     <iconset theme="user-trash">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Trash</string>
@@ -362,7 +373,8 @@
   <action name="actionDesktop">
    <property name="icon">
     <iconset theme="user-desktop">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Desktop</string>
@@ -371,7 +383,8 @@
   <action name="actionAddToBookmarks">
    <property name="icon">
     <iconset theme="list-add">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Add to Bookmarks</string>
@@ -422,7 +435,8 @@
   <action name="actionCut">
    <property name="icon">
     <iconset theme="edit-cut">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Cu&amp;t</string>
@@ -434,7 +448,8 @@
   <action name="actionCopy">
    <property name="icon">
     <iconset theme="edit-copy">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Copy</string>
@@ -446,7 +461,8 @@
   <action name="actionPaste">
    <property name="icon">
     <iconset theme="edit-paste">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Paste</string>
@@ -527,7 +543,8 @@
   <action name="actionNewTab">
    <property name="icon">
     <iconset theme="window-new">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>New &amp;Tab</string>
@@ -542,7 +559,8 @@
   <action name="actionGoBack">
    <property name="icon">
     <iconset theme="go-previous">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go &amp;Back</string>
@@ -557,7 +575,8 @@
   <action name="actionGoForward">
    <property name="icon">
     <iconset theme="go-next">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>Go &amp;Forward</string>
@@ -577,7 +596,8 @@
   <action name="actionDelete">
    <property name="icon">
     <iconset theme="edit-delete">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Delete</string>
@@ -662,7 +682,8 @@
   <action name="actionNewFolder">
    <property name="icon">
     <iconset theme="folder-new">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Folder</string>
@@ -674,7 +695,8 @@
   <action name="actionNewBlankFile">
    <property name="icon">
     <iconset theme="document-new">
-     <normaloff>.</normaloff>.</iconset>
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Blank File</string>
@@ -689,6 +711,14 @@
    </property>
    <property name="shortcut">
     <string>F3</string>
+   </property>
+  </action>
+  <action name="actionFilter">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Filter</string>
    </property>
   </action>
  </widget>

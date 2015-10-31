@@ -96,6 +96,9 @@ MainWindow::MainWindow(FmPath* path):
   connect(ui.tabBar, &QTabBar::tabMoved, this, &MainWindow::onTabBarTabMoved);
   connect(ui.stackedWidget, &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
 
+  // FIXME: should we make the filter bar a per-view configuration?
+  ui.filterBar->setVisible(settings.showFilter());
+  ui.actionFilter->setChecked(settings.showFilter());
   connect(ui.filterBar, &QLineEdit::textChanged, this, &MainWindow::onFilterStringChanged);
 
   // side pane
@@ -393,6 +396,11 @@ void MainWindow::on_actionCaseSensitive_triggered(bool checked) {
 
 void MainWindow::on_actionFolderFirst_triggered(bool checked) {
   currentPage()->setSortFolderFirst(checked);
+}
+
+void MainWindow::on_actionFilter_triggered(bool checked) {
+  ui.filterBar->setVisible(checked);
+  static_cast<Application*>(qApp)->settings().setShowFilter(checked);
 }
 
 void MainWindow::on_actionComputer_triggered() {
