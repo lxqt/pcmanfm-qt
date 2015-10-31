@@ -67,7 +67,9 @@ PlacesView::PlacesView(QWidget* parent):
 
   // update the umount button's column width based on icon size
   onIconSizeChanged(iconSize());
+#if QT_VERSION >= QT_VERSION_CHECK(5, 5, 0) // this signal requires Qt >= 5.5
   connect(this, &QAbstractItemView::iconSizeChanged, this, &PlacesView::onIconSizeChanged);
+#endif
 }
 
 PlacesView::~PlacesView() {
