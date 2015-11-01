@@ -57,7 +57,7 @@ QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QMo
     // FIXME: there're some problems in this size hint calculation.
     Q_ASSERT(gridSize_ != QSize());
     QRectF textRect(0, 0, gridSize_.width() - 4, gridSize_.height() - opt.decorationSize.height() - 4);
-    drawText(NULL, opt, textRect); // passing NULL for painter will calculate the bounding rect only.
+    drawText(nullptr, opt, textRect); // passing nullptr for painter will calculate the bounding rect only.
     int width = qMax((int)textRect.width(), opt.decorationSize.width()) + 4;
     int height = opt.decorationSize.height() + textRect.height() + 4;
     return QSize(width, height);
@@ -65,18 +65,12 @@ QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QMo
   return QStyledItemDelegate::sizeHint(option, index);
 }
 
-QIcon::Mode FolderItemDelegate::iconModeFromState(QStyle::State state) {
-  QIcon::Mode iconMode;
-  if(state & QStyle::State_Enabled) {
-    if(state & QStyle::State_Selected)
-      iconMode = QIcon::Selected;
-    else {
-      iconMode = QIcon::Normal;
-    }
-  }
-  else
-    iconMode = QIcon::Disabled;
-  return iconMode;
+QIcon::Mode FolderItemDelegate::iconModeFromState(const QStyle::State state) {
+
+  if(state & QStyle::State_Enabled)
+    return (state & QStyle::State_Selected) ? QIcon::Selected : QIcon::Normal;
+
+  return QIcon::Disabled;
 }
 
 // special thanks to Razor-qt developer Alec Moskvin(amoskvin) for providing the fix!
@@ -128,7 +122,7 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
   }
 }
 
-// if painter is NULL, the method calculate the bounding rectangle of the text and save it to textRect
+// if painter is nullptr, the method calculate the bounding rectangle of the text and save it to textRect
 void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt, QRectF& textRect) const {
   QTextLayout layout(opt.text, opt.font);
   QTextOption textOption;

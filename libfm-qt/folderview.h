@@ -43,6 +43,7 @@ class LIBFM_QT_API FolderView : public QWidget {
   Q_OBJECT
 
 public:
+
   enum ViewMode {
     FirstViewMode = 1,
     IconMode = FirstViewMode,
@@ -58,8 +59,6 @@ public:
     MiddleClick,
     ContextMenuClick
   };
-
-public:
 
   friend class FolderViewTreeView;
   friend class FolderViewListView;

@@ -41,7 +41,7 @@
 
 Q_DECLARE_OPAQUE_POINTER(FmFileInfo*)
 
-namespace Fm {
+using namespace Fm;
 
 FolderViewListView::FolderViewListView(QWidget* parent):
   QListView(parent),
@@ -76,7 +76,7 @@ QModelIndex FolderViewListView::indexAt(const QPoint& point) const {
   if(viewMode() == QListView::IconMode && index.isValid()) {
     // FIXME: this hack only improves the usability partially. We still need more precise sizeHint handling.
     // FolderItemDelegate* delegate = static_cast<FolderItemDelegate*>(itemDelegateForColumn(FolderModel::ColumnFileName));
-    // Q_ASSERT(delegate != NULL);
+    // Q_ASSERT(delegate != nullptr);
     // We use the grid size - (2, 2) as the size of the bounding rectangle of the whole item.
     // The width of the text label hence is gridSize.width - 2, and the width and height of the icon is from iconSize().
     QRect visRect = visualRect(index); // visibal area on the screen
@@ -147,7 +147,7 @@ void FolderViewListView::dropEvent(QDropEvent* e) {
 
 void FolderViewListView::mouseReleaseEvent(QMouseEvent* event) {
   bool activationWasAllowed = activationAllowed_;
-  if ((!style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+  if ((!style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, nullptr, this)) || (event->button() != Qt::LeftButton)) {
     activationAllowed_ = false;
   }
 
@@ -158,7 +158,7 @@ void FolderViewListView::mouseReleaseEvent(QMouseEvent* event) {
 
 void FolderViewListView::mouseDoubleClickEvent(QMouseEvent* event) {
   bool activationWasAllowed = activationAllowed_;
-  if ((style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+  if ((style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, nullptr, this)) || (event->button() != Qt::LeftButton)) {
     activationAllowed_ = false;
   }
 
@@ -177,7 +177,7 @@ void FolderViewListView::activation(const QModelIndex &index) {
 
 FolderViewTreeView::FolderViewTreeView(QWidget* parent):
   QTreeView(parent),
-  layoutTimer_(NULL),
+  layoutTimer_(nullptr),
   doingLayout_(false),
   activationAllowed_(true) {
 
@@ -286,7 +286,7 @@ void FolderViewTreeView::layoutColumns() {
 
   if(layoutTimer_) {
     delete layoutTimer_;
-    layoutTimer_ = NULL;
+    layoutTimer_ = nullptr;
   }
 }
 
@@ -342,7 +342,7 @@ void FolderViewTreeView::queueLayoutColumns() {
 
 void FolderViewTreeView::mouseReleaseEvent(QMouseEvent* event) {
   bool activationWasAllowed = activationAllowed_;
-  if ((!style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+  if ((!style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, nullptr, this)) || (event->button() != Qt::LeftButton)) {
     activationAllowed_ = false;
   }
 
@@ -353,7 +353,7 @@ void FolderViewTreeView::mouseReleaseEvent(QMouseEvent* event) {
 
 void FolderViewTreeView::mouseDoubleClickEvent(QMouseEvent* event) {
   bool activationWasAllowed = activationAllowed_;
-  if ((style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+  if ((style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, nullptr, this)) || (event->button() != Qt::LeftButton)) {
     activationAllowed_ = false;
   }
 
@@ -383,13 +383,13 @@ void FolderViewTreeView::onSortFilterChanged() {
 
 FolderView::FolderView(ViewMode _mode, QWidget* parent):
   QWidget(parent),
-  view(NULL),
+  view(nullptr),
   mode((ViewMode)0),
   autoSelectionDelay_(600),
-  autoSelectionTimer_(NULL),
-  selChangedTimer_(NULL),
-  fileLauncher_(NULL),
-  model_(NULL) {
+  autoSelectionTimer_(nullptr),
+  selChangedTimer_(nullptr),
+  fileLauncher_(nullptr),
+  model_(nullptr) {
 
   iconSize_[IconMode - FirstViewMode] = QSize(48, 48);
   iconSize_[CompactMode - FirstViewMode] = QSize(24, 24);
@@ -423,7 +423,7 @@ void FolderView::onItemActivated(QModelIndex index) {
 
 void FolderView::onSelChangedTimeout() {
   selChangedTimer_->deleteLater();
-  selChangedTimer_ = NULL;
+  selChangedTimer_ = nullptr;
 
   QItemSelectionModel* selModel = selectionModel();
   int nSel = 0;
@@ -459,7 +459,7 @@ void FolderView::setViewMode(ViewMode _mode) {
   bool recreateView = false;
   if(view && (mode == DetailedListMode || _mode == DetailedListMode)) {
     delete view; // FIXME: no virtual dtor?
-    view = NULL;
+    view = nullptr;
     recreateView = true;
   }
   mode = _mode;
@@ -671,7 +671,7 @@ void FolderView::emitClickedAt(ClickType type, const QPoint& pos) {
     if(type == ContextMenuClick) {
       // clear current selection if clicked outside selected files
       view->clearSelection();
-      Q_EMIT clicked(type, NULL);
+      Q_EMIT clicked(type, nullptr);
     }
   }
 }
@@ -694,7 +694,7 @@ QModelIndexList FolderView::selectedIndexes() const {
 }
 
 QItemSelectionModel* FolderView::selectionModel() const {
-  return view ? view->selectionModel() : NULL;
+  return view ? view->selectionModel() : nullptr;
 }
 
 FmPathList* FolderView::selectedFilePaths() const {
@@ -710,7 +710,7 @@ FmPathList* FolderView::selectedFilePaths() const {
       return paths;
     }
   }
-  return NULL;
+  return nullptr;
 }
 
 FmFileInfoList* FolderView::selectedFiles() const {
@@ -726,7 +726,7 @@ FmFileInfoList* FolderView::selectedFiles() const {
       return files;
     }
   }
-  return NULL;
+  return nullptr;
 }
 
 void FolderView::selectAll() {
@@ -916,19 +916,19 @@ void FolderView::onAutoSelectionTimeout() {
   }
 
   autoSelectionTimer_->deleteLater();
-  autoSelectionTimer_ = NULL;
+  autoSelectionTimer_ = nullptr;
 }
 
 void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
   if(type == ActivatedClick) {
     if(fileLauncher_) {
-      GList* files = g_list_append(NULL, fileInfo);
-      fileLauncher_->launchFiles(NULL, files);
+      GList* files = g_list_append(nullptr, fileInfo);
+      fileLauncher_->launchFiles(nullptr, files);
       g_list_free(files);
     }
   }
   else if(type == ContextMenuClick) {
-    FmPath* folderPath = NULL;
+    FmPath* folderPath = nullptr;
     FmFileInfoList* files = selectedFiles();
     if (files) {
       FmFileInfo* first = fm_file_info_list_peek_head(files);
@@ -937,7 +937,7 @@ void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
     }
     if (!folderPath)
       folderPath = path();
-    QMenu* menu = NULL;
+    QMenu* menu = nullptr;
     if(fileInfo) {
       // show context menu
       if (FmFileInfoList* files = selectedFiles()) {
@@ -966,5 +966,3 @@ void FolderView::prepareFileMenu(FileMenu* menu) {
 void FolderView::prepareFolderMenu(FolderMenu* menu) {
 }
 
-
-} // namespace Fm

@@ -69,7 +69,7 @@ public:
   };
 
 public:
-  explicit TabPage(FmPath* path, QWidget* parent = 0);
+  explicit TabPage(FmPath* path, QWidget* parent = nullptr);
   virtual ~TabPage();
 
   void chdir(FmPath* newPath, bool addHistory = true);
@@ -118,7 +118,7 @@ public:
   void setShowHidden(bool showHidden);
 
   FmPath* path() {
-    return folder_ ? fm_folder_get_path(folder_) : NULL;
+    return folder_ ? fm_folder_get_path(folder_) : nullptr;
   }
 
   QString pathName();

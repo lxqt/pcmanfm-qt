@@ -47,6 +47,24 @@ include(LXQtTranslateDesktop)
 
 add_definitions(-DQT_NO_KEYWORDS)
 
+if (CMAKE_VERSION VERSION_LESS "3.1")
+    include(CheckCXXCompilerFlag)
+    CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
+    if(COMPILER_SUPPORTS_CXX11)
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+    else()
+        CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
+        # -std=c++0x is deprecated but some tools e.g. qmake or older gcc are still using it
+        if(COMPILER_SUPPORTS_CXX0X)
+            set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
+        else()
+            message(FATAL_ERROR "Compiler ${CMAKE_CXX_COMPILER} does not support c++11/c++0x")
+        endif()
+    endif()
+else()
+  set(CMAKE_CXX_STANDARD 11)
+endif()
+
 if (CMAKE_COMPILER_IS_GNUCXX)
     # set visibility to hidden to hide symbols, unless they're exported manually in the code
     set(CMAKE_CXX_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions ${CMAKE_CXX_FLAGS}")
