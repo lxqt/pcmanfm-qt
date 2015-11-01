@@ -26,24 +26,24 @@
 namespace Fm {
 
 DirTreeModelItem::DirTreeModelItem():
-  model_(NULL),
-  folder_(NULL),
+  model_(nullptr),
+  folder_(nullptr),
   expanded_(false),
   loaded_(false),
-  fileInfo_(NULL),
-  placeHolderChild_(NULL),
-  parent_(NULL) {
+  fileInfo_(nullptr),
+  placeHolderChild_(nullptr),
+  parent_(nullptr) {
 }
 
 DirTreeModelItem::DirTreeModelItem(FmFileInfo* info, DirTreeModel* model, DirTreeModelItem* parent):
   model_(model),
-  folder_(NULL),
+  folder_(nullptr),
   expanded_(false),
   loaded_(false),
   fileInfo_(fm_file_info_ref(info)),
   displayName_(QString::fromUtf8(fm_file_info_get_disp_name(info))),
   icon_(IconTheme::icon(fm_file_info_get_icon(info))),
-  placeHolderChild_(NULL),
+  placeHolderChild_(nullptr),
   parent_(parent) {
 
   if(info)
@@ -85,7 +85,7 @@ void DirTreeModelItem::freeFolder() {
     g_signal_handlers_disconnect_by_func(folder_, gpointer(onFolderFilesRemoved), this);
     g_signal_handlers_disconnect_by_func(folder_, gpointer(onFolderFilesChanged), this);
     g_object_unref(folder_);
-    folder_ = NULL;
+    folder_ = nullptr;
   }
 }
 
@@ -216,7 +216,7 @@ qDebug() << "folder loaded";
     _this->children_.removeAt(pos);
     delete _this->placeHolderChild_;
     model->endRemoveRows();
-    _this->placeHolderChild_ = NULL;
+    _this->placeHolderChild_ = nullptr;
   }
 
   Q_EMIT model->rowLoaded(index);
@@ -272,7 +272,7 @@ void DirTreeModelItem::onFolderFilesChanged(FmFolder* folder, GSList* files, gpo
 
 DirTreeModelItem* DirTreeModelItem::childFromName(const char* utf8_name, int* pos) {
   int i = 0;
-  Q_FOREACH(DirTreeModelItem* item, children_) {
+  for (const auto item : children_) {
     if(item->fileInfo_ && strcmp(fm_file_info_get_name(item->fileInfo_), utf8_name) == 0) {
       if(pos)
         *pos = i;
@@ -280,25 +280,24 @@ DirTreeModelItem* DirTreeModelItem::childFromName(const char* utf8_name, int* po
     }
     ++i;
   }
-  return NULL;
+  return nullptr;
 }
 
 DirTreeModelItem* DirTreeModelItem::childFromPath(FmPath* path, bool recursive) const {
-  Q_ASSERT(path != NULL);
+  Q_ASSERT(path != nullptr);
 
   Q_FOREACH(DirTreeModelItem* item, children_) {
     // if(item->fileInfo_)
     //  qDebug() << "child: " << QString::fromUtf8(fm_file_info_get_disp_name(item->fileInfo_));
     if(item->fileInfo_ && fm_path_equal(fm_file_info_get_path(item->fileInfo_), path)) {
       return item;
-    }
-    else if(recursive) {
+    } else if(recursive) {
       DirTreeModelItem* child = item->childFromPath(path, true);
       if(child)
-	return child;
+        return child;
     }
   }
-  return NULL;
+  return nullptr;
 }
 
 void DirTreeModelItem::setShowHidden(bool show) {

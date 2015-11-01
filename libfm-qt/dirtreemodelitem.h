@@ -38,14 +38,14 @@ public:
   friend class DirTreeView; // allow direct access of private members in DirTreeView
 
   explicit DirTreeModelItem();
-  explicit DirTreeModelItem(FmFileInfo* info, DirTreeModel* model, DirTreeModelItem* parent = NULL);
+  explicit DirTreeModelItem(FmFileInfo* info, DirTreeModel* model, DirTreeModelItem* parent = nullptr);
   ~DirTreeModelItem();
 
   void loadFolder();
   void unloadFolder();
 
-  bool isPlaceHolder() {
-    return (fileInfo_ == NULL);
+  inline bool isPlaceHolder() const {
+    return (fileInfo_ == nullptr);
   }
 
   void setShowHidden(bool show);

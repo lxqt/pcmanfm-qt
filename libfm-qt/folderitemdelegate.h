@@ -30,14 +30,14 @@ namespace Fm {
 class LIBFM_QT_API FolderItemDelegate : public QStyledItemDelegate {
   Q_OBJECT
 public:
-  explicit FolderItemDelegate(QAbstractItemView* view, QObject* parent = 0);
+  explicit FolderItemDelegate(QAbstractItemView* view, QObject* parent = nullptr);
   virtual ~FolderItemDelegate();
 
-  void setGridSize(QSize size) {
+  inline void setGridSize(QSize size) {
     gridSize_ = size;
   }
 
-  QSize gridSize() {
+  inline QSize gridSize() const {
     return gridSize_;
   }
 

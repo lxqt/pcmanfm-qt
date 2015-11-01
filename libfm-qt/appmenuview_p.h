@@ -35,7 +35,7 @@ public:
     if(menu_cache_item_get_icon(item))
       fmicon = fm_icon_from_name(menu_cache_item_get_icon(item));
     else
-      fmicon = NULL;
+      fmicon = nullptr;
     setText(QString::fromUtf8(menu_cache_item_get_name(item)));
     setEditable(false);
     setDragEnabled(false);

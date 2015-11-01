@@ -35,7 +35,7 @@
 using namespace Fm;
 
 FolderModel::FolderModel() :
-  folder_(NULL) {
+  folder_(nullptr) {
 /*
     ColumnIcon,
     ColumnName,
@@ -53,7 +53,7 @@ FolderModel::~FolderModel() {
   qDebug("delete FolderModel");
 
   if(folder_)
-    setFolder(NULL);
+    setFolder(nullptr);
 
   // if the thumbnail requests list is not empty, cancel them
   if(!thumbnailResults.empty()) {
@@ -85,7 +85,7 @@ void FolderModel::setFolder(FmFolder* new_folder) {
       insertFiles(0, fm_folder_get_files(folder_));
   }
   else
-    folder_ = NULL;
+    folder_ = nullptr;
 }
 
 void FolderModel::onStartLoading(FmFolder* folder, gpointer user_data) {
@@ -188,10 +188,10 @@ FolderModelItem* FolderModel::itemFromIndex(const QModelIndex& index) const {
 
 FmFileInfo* FolderModel::fileInfoFromIndex(const QModelIndex& index) const {
   FolderModelItem* item = itemFromIndex(index);
-  return item ? item->info : NULL;
+  return item ? item->info : nullptr;
 }
 
-QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole) const {
+QVariant FolderModel::data(const QModelIndex & index, int role/* = Qt::DisplayRole*/) const {
   if(!index.isValid() || index.row() > items.size() || index.column() >= NumOfColumns) {
     return QVariant();
   }
@@ -239,7 +239,7 @@ QVariant FolderModel::data(const QModelIndex & index, int role = Qt::DisplayRole
   return QVariant();
 }
 
-QVariant FolderModel::headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const {
+QVariant FolderModel::headerData(int section, Qt::Orientation orientation, int role/* = Qt::DisplayRole*/) const {
   if(role == Qt::DisplayRole) {
     if(orientation == Qt::Horizontal) {
       QString title;
@@ -358,9 +358,7 @@ QMimeData* FolderModel::mimeData(const QModelIndexList& indexes) const {
   QByteArray urilist;
   urilist.reserve(4096);
 
-  QModelIndexList::const_iterator it;
-  for(it = indexes.constBegin(); it != indexes.end(); ++it) {
-    const QModelIndex index = *it;
+  for(const auto &index : indexes) {
     FolderModelItem* item = itemFromIndex(index);
     if(item) {
       FmPath* path = fm_file_info_get_path(item->info);
@@ -429,17 +427,15 @@ Qt::DropActions FolderModel::supportedDropActions() const {
 }
 
 // ask the model to load thumbnails of the specified size
-void FolderModel::cacheThumbnails(int size) {
-  QVector<QPair<int, int> >::iterator it;
-  for(it = thumbnailRefCounts.begin(); it != thumbnailRefCounts.end(); ++it) {
-    if(it->first == size) {
-      break;
-    }
+void FolderModel::cacheThumbnails(const int size) {
+  QVector<QPair<int, int>>::iterator it = thumbnailRefCounts.begin();
+  while (it != thumbnailRefCounts.end()) {
+    if (it->first == size) {
+      ++it->second;
+      return;
+    } else ++it;
   }
-  if(it != thumbnailRefCounts.end())
-    ++it->second;
-  else
-    thumbnailRefCounts.append(QPair<int, int>(size, 1));
+  thumbnailRefCounts.append(QPair<int, int>(size, 1));
 }
 
 // ask the model to free cached thumbnails of the specified size
@@ -541,8 +537,7 @@ QImage FolderModel::thumbnailFromIndex(const QModelIndex& index, int size) {
       }
       case FolderModelItem::ThumbnailLoaded:
         return thumbnail->image;
-      default:
-        break;
+      default:;
     }
   }
   return QImage();
