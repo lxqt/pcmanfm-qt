@@ -33,7 +33,6 @@ CachedFolderModel::CachedFolderModel(FmFolder* folder):
 }
 
 CachedFolderModel::~CachedFolderModel() {
-  qDebug("delete CachedFolderModel");
 }
 
 CachedFolderModel* CachedFolderModel::modelFromFolder(FmFolder* folder) {
