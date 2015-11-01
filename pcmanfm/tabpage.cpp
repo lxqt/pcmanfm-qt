@@ -102,7 +102,6 @@ TabPage::TabPage(FmPath* path, QWidget* parent):
 }
 
 TabPage::~TabPage() {
-  qDebug("delete TabPage");
   freeFolder();
   if(proxyFilter_)
     delete proxyFilter_;
@@ -139,7 +138,6 @@ void TabPage::freeFolder() {
     QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
     pThis->overrideCursor_ = true;
   }
-  qDebug("start-loading");
 #if 0
 #if FM_CHECK_VERSION(1, 0, 2) && 0 // disabled
   if(fm_folder_is_incremental(_folder)) {
@@ -210,7 +208,6 @@ void TabPage::restoreScrollPos() {
     QApplication::restoreOverrideCursor(); // remove busy cursor
     pThis->overrideCursor_ = false;
   }
-  qDebug("finish-loading");
 
   // After finishing loading the folder, the model is updated, but Qt delays the UI update
   // for performance reasons. Therefore at this point the UI is not up to date.
@@ -231,7 +228,7 @@ void TabPage::restoreScrollPos() {
         // Because the two signals are not correctly paired, we need to
         // remove busy cursor here since "finish-loading" is not emitted.
         QApplication::restoreOverrideCursor(); // remove busy cursor
-	pThis->overrideCursor_ = false;
+        pThis->overrideCursor_ = false;
         return FM_JOB_RETRY;
       }
     }

@@ -407,7 +407,6 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
 }
 
 FolderView::~FolderView() {
-  // qDebug("delete FolderView");
 }
 
 void FolderView::onItemActivated(QModelIndex index) {
