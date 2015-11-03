@@ -338,7 +338,7 @@ void Application::onUserDirsChanged()
       }
     } else {
         qWarning("Application::onUserDirsChanged: %s doesn't exist",
-                    qUtf8Printable(userDesktopFolder_));
+                    userDesktopFolder_.toUtf8().constData());
     }
   }
 }
