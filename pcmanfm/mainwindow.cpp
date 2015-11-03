@@ -51,7 +51,8 @@ namespace PCManFM {
 
 MainWindow::MainWindow(FmPath* path):
   QMainWindow(),
-  fileLauncher_(this) {
+  fileLauncher_(this),
+  rightClickIndex(-1) {
 
   Settings& settings = static_cast<Application*>(qApp)->settings();
   setAttribute(Qt::WA_DeleteOnClose);
@@ -91,9 +92,15 @@ MainWindow::MainWindow(FmPath* path):
   ui.tabBar->setAcceptDrops(true);
 #endif
 
+  ui.tabBar->setContextMenuPolicy(Qt::CustomContextMenu);
+  connect(ui.actionCloseRight, &QAction::triggered, this, &MainWindow::closeRightTabs);
+  connect(ui.actionCloseLeft, &QAction::triggered, this, &MainWindow::closeLeftTabs);
+  connect(ui.actionCloseOther, &QAction::triggered, this, &MainWindow::closeOtherTabs);
+
   connect(ui.tabBar, &QTabBar::currentChanged, this, &MainWindow::onTabBarCurrentChanged);
   connect(ui.tabBar, &QTabBar::tabCloseRequested, this, &MainWindow::onTabBarCloseRequested);
   connect(ui.tabBar, &QTabBar::tabMoved, this, &MainWindow::onTabBarTabMoved);
+  connect(ui.tabBar, &QTabBar::customContextMenuRequested, this, &MainWindow::tabContextMenu);
   connect(ui.stackedWidget, &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
 
   // FIXME: should we make the filter bar a per-view configuration?
@@ -898,6 +905,39 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
     page->jumpToHistory(index);
     updateUIForCurrentPage();
   }
+}
+
+void MainWindow::tabContextMenu(const QPoint& pos) {
+  int tabNum = ui.tabBar->count();
+  if(tabNum <= 1) return;
+
+  rightClickIndex = ui.tabBar->tabAt(pos);
+  if(rightClickIndex < 0) return;
+
+  QMenu menu;
+  if(rightClickIndex > 0)
+      menu.addAction(ui.actionCloseLeft);
+  if(rightClickIndex < tabNum - 1) {
+    menu.addAction(ui.actionCloseRight);
+    if(rightClickIndex > 0) {
+      menu.addSeparator();
+      menu.addAction(ui.actionCloseOther);
+    }
+  }
+  menu.exec(ui.tabBar->mapToGlobal(pos));
+}
+
+void MainWindow::closeLeftTabs() {
+  while(rightClickIndex > 0) {
+    closeTab(rightClickIndex - 1);
+    --rightClickIndex;
+  }
+}
+
+void MainWindow::closeRightTabs() {
+  if(rightClickIndex < 0) return;
+  while(rightClickIndex < ui.tabBar->count() - 1)
+    closeTab(rightClickIndex + 1);
 }
 
 void MainWindow::updateFromSettings(Settings& settings) {

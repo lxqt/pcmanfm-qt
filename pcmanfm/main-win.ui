@@ -721,6 +721,27 @@
     <string>Filter</string>
    </property>
   </action>
+  <action name="actionCloseLeft">
+   <property name="icon">
+    <iconset theme="go-previous"/>
+   </property>
+   <property name="text">
+    <string>Close &amp;left tabs</string>
+   </property>
+  </action>
+  <action name="actionCloseRight">
+   <property name="icon">
+    <iconset theme="go-next"/>
+   </property>
+   <property name="text">
+    <string>Close &amp;right tabs</string>
+   </property>
+  </action>
+  <action name="actionCloseOther">
+   <property name="text">
+    <string>Close &amp;other tabs</string>
+   </property>
+  </action>
  </widget>
  <customwidgets>
   <customwidget>
