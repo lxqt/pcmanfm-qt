@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="hu_HU">
+<TS version="2.1" language="hu">
 <context>
     <name>AppChooserDialog</name>
     <message>
@@ -310,12 +310,12 @@
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished">Mappa</translation>
+        <translation>Mappa</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished">Üres fájl</translation>
+        <translation>Üres fájl</translation>
     </message>
 </context>
 <context>
@@ -336,17 +336,17 @@
     <message>
         <location filename="../dirtreeview.cpp" line="208"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Megnyi&amp;tás új fülön</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="212"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Me&amp;gnyitás új ablakban</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Megnyitás terminá&amp;lban</translation>
     </message>
 </context>
 <context>
@@ -405,7 +405,7 @@ Mi legyen vele?</translation>
     <message>
         <location filename="../filemenu.cpp" line="132"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished">&amp;Új létrehozása</translation>
+        <translation>&amp;Új létrehozása</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="151"/>
@@ -641,17 +641,17 @@ Töröljük őket véglegesen?</translation>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>Error</source>
-        <translation type="unfinished">Hiba</translation>
+        <translation>Hiba</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>You should add at least add one directory to search.</source>
-        <translation type="unfinished"></translation>
+        <translation>Legalább egy mappa megadása kell a kereséshez.</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="127"/>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Mappa választás</translation>
     </message>
 </context>
 <context>
@@ -856,32 +856,32 @@ Töröljük őket véglegesen?</translation>
     <message>
         <location filename="../placesview.cpp" line="346"/>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Megnyitás új fülön</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="349"/>
         <source>Open in New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Megnyitás új ablakban</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="367"/>
         <source>Move Bookmark Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Könyvjelző föl</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="372"/>
         <source>Move Bookmark Down</source>
-        <translation type="unfinished"></translation>
+        <translation>Könyvjelző le</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="376"/>
         <source>Rename Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Könyvjelző átnevezés</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="379"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Könyvjelző törlés</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="388"/>
@@ -1033,7 +1033,7 @@ Módosítva: %3</translation>
     <message>
         <location filename="../utilities.cpp" line="164"/>
         <source>Create Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Mappa létrehozás</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="169"/>
@@ -1119,176 +1119,176 @@ Módosítva: %3</translation>
     <message>
         <location filename="../filesearch.ui" line="14"/>
         <source>Search Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Fájlkeresés</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="29"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Név/hely</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="35"/>
         <source>File Name Patterns:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fájlnév szűrő:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="41"/>
         <source>*</source>
-        <translation type="unfinished"></translation>
+        <translation>*</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="48"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Nagybetű érzéketlen</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Szabályos kifejezés</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="65"/>
         <source>Places to Search:</source>
-        <translation type="unfinished"></translation>
+        <translation>Keresési helyek:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="78"/>
         <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Hozzá&amp;ad</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="90"/>
         <source>&amp;Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Tö&amp;röl</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="119"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Alkönyvtárakban keres</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="126"/>
         <source>Search for hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>Rejtett fájlok is</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="137"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Fájltípus</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="143"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>Csak a következőkben keres:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="149"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>Szövegfájlok</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="156"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>Képfájlok</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="163"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>Hangfájlok</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="170"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>Videók</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="177"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokumentumok</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="184"/>
         <source>Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>Könyvtárak</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="208"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>Tartalom</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="214"/>
         <source>File contains:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fájl tartalmaz:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="223"/>
         <source>Case insensiti&amp;ve</source>
-        <translation type="unfinished"></translation>
+        <translation>Nagybetű ér&amp;zéketlen</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="230"/>
         <source>&amp;Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Szabvá&amp;nyos kifejezés</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="254"/>
         <source>Properties</source>
-        <translation type="unfinished">Tulajdonságok</translation>
+        <translation>Tulajdonságok</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="260"/>
         <source>File Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fájlméret:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
         <source>Larger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nagyobb mint:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="282"/>
         <location filename="../filesearch.ui" line="323"/>
         <source>Bytes</source>
-        <translation type="unfinished"></translation>
+        <translation>Bájt</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="287"/>
         <location filename="../filesearch.ui" line="328"/>
         <source>KiB</source>
-        <translation type="unfinished"></translation>
+        <translation>Kb</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="292"/>
         <location filename="../filesearch.ui" line="333"/>
         <source>MiB</source>
-        <translation type="unfinished"></translation>
+        <translation>Mb</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="297"/>
         <location filename="../filesearch.ui" line="338"/>
         <source>GiB</source>
-        <translation type="unfinished"></translation>
+        <translation>Gb</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="307"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kissebb mint:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="351"/>
         <source>Last Modified Time:</source>
-        <translation type="unfinished"></translation>
+        <translation>Utolsó módosítás ideje:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="357"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Korább mint:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="364"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Később mint:</translation>
     </message>
 </context>
 </TS>

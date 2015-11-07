@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="hu_HU">
+<TS version="2.1" language="hu">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -96,32 +96,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Űrlap</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="76"/>
         <source>Desktop</source>
-        <translation type="unfinished">Asztal</translation>
+        <translation>Asztal</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="77"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished">Asztal mappa:</translation>
+        <translation>Asztal mappa:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="79"/>
         <source>Image file</source>
-        <translation type="unfinished">Képfájl</translation>
+        <translation>Képfájl</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="84"/>
         <source>Folder path</source>
-        <translation type="unfinished">Könyvtár útvonal</translation>
+        <translation>Könyvtár útvonal</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="85"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">&amp;Böngészés</translation>
+        <translation>&amp;Böngészés</translation>
     </message>
 </context>
 <context>
@@ -870,7 +870,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Szövegtörlés (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
