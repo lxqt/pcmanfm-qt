@@ -24,6 +24,8 @@
 #include <QDialog>
 #include "ui_desktop-preferences.h"
 
+#include "ui_desktop-folder.h"
+
 namespace PCManFM {
 
 class DesktopPreferencesDialog : public QDialog {
@@ -37,13 +39,26 @@ public:
 
   void selectPage(QString name);
 
+  // Should only be used one time.
+  void setEditDesktopFolder(const bool enabled);
+
 protected Q_SLOTS:
+  void onApplyClicked();
   void onWallpaperModeChanged(int index);
   void onBrowseClicked();
   void onBrowseDesktopFolderClicked();
 
+  void applySettings();
+
 private:
   Ui::DesktopPreferencesDialog ui;
+  Ui::DesktopFolder uiDesktopFolder;
+
+  bool editDesktopFolderEnabled;
+  QWidget* desktopFolderWidget;
+  QString desktopFolder;
+
+  void setupDesktopFolderUi();
 };
 
 }

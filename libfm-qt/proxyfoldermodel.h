@@ -50,7 +50,7 @@ public:
   virtual void setSourceModel(QAbstractItemModel* model);
 
   void setShowHidden(bool show);
-  bool showHidden() {
+  bool showHidden() const {
     return showHidden_;
   }
 
@@ -81,6 +81,7 @@ public:
 
   void addFilter(ProxyFolderModelFilter* filter);
   void removeFilter(ProxyFolderModelFilter* filter);
+  void updateFilters();
 
 Q_SIGNALS:
   void sortFilterChanged();

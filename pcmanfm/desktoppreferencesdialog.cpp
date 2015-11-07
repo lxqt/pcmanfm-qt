@@ -34,7 +34,11 @@
 using namespace PCManFM;
 
 DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFlags f):
-  QDialog(parent, f) {
+  QDialog(parent, f),
+  editDesktopFolderEnabled(false),
+  desktopFolderWidget(0),
+  desktopFolder() {
+
 
   setAttribute(Qt::WA_DeleteOnClose);
 
@@ -74,26 +78,42 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
   ui.imageFile->setText(settings.wallpaper());
 
-  connect(ui.browseDesktopFolder, &QPushButton::clicked, this, &DesktopPreferencesDialog::onBrowseDesktopFolderClicked);
-  QString desktopFolder = XdgDir::readDesktopDir();
-  qDebug("desktop folder: %s", desktopFolder.toStdString().c_str());
-  ui.desktopFolder->setText(desktopFolder);
-
   ui.font->setFont(settings.desktopFont());
 
   ui.backgroundColor->setColor(settings.desktopBgColor());
   ui.textColor->setColor(settings.desktopFgColor());
   ui.shadowColor->setColor(settings.desktopShadowColor());
   ui.showWmMenu->setChecked(settings.showWmMenu());
+
+  connect(ui.buttonBox->button(QDialogButtonBox::Apply), &QPushButton::clicked,
+          this, &DesktopPreferencesDialog::onApplyClicked);
 }
 
 DesktopPreferencesDialog::~DesktopPreferencesDialog() {
 }
 
-void DesktopPreferencesDialog::accept() {
+void DesktopPreferencesDialog::setupDesktopFolderUi()
+{
+  desktopFolderWidget = new QWidget();
+  uiDesktopFolder.setupUi(desktopFolderWidget);
+  ui.advancedPageLayout->insertWidget(1, desktopFolderWidget);
+  uiDesktopFolder.verticalLayout->setMargin(0);
+
+  desktopFolder = XdgDir::readDesktopDir();
+  qDebug("desktop folder: %s", desktopFolder.toStdString().c_str());
+
+  uiDesktopFolder.desktopFolder->setText(desktopFolder);
+
+  connect(uiDesktopFolder.browseDesktopFolder, &QPushButton::clicked,
+    this, &DesktopPreferencesDialog::onBrowseDesktopFolderClicked);
+}
+
+void DesktopPreferencesDialog::applySettings()
+{
   Settings& settings = static_cast<Application*>(qApp)->settings();
 
-  XdgDir::setDesktopDir(ui.desktopFolder->text());
+  if (editDesktopFolderEnabled)
+      XdgDir::setDesktopDir(uiDesktopFolder.desktopFolder->text());
 
   settings.setWallpaper(ui.imageFile->text());
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
@@ -104,10 +124,19 @@ void DesktopPreferencesDialog::accept() {
   settings.setDesktopShadowColor(ui.shadowColor->color());
   settings.setShowWmMenu(ui.showWmMenu->isChecked());
 
-  QDialog::accept();
-
-  static_cast<Application*>(qApp)->updateDesktopsFromSettings();
   settings.save();
+}
+
+void DesktopPreferencesDialog::onApplyClicked()
+{
+  applySettings();
+  static_cast<Application*>(qApp)->updateDesktopsFromSettings();
+}
+
+void DesktopPreferencesDialog::accept() {
+  applySettings();
+  static_cast<Application*>(qApp)->updateDesktopsFromSettings();
+  QDialog::accept();
 }
 
 void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
@@ -147,11 +176,12 @@ void DesktopPreferencesDialog::onBrowseDesktopFolderClicked()
 {
   QFileDialog dlg;
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
+  dlg.setAcceptMode(QFileDialog::AcceptOpen);
   dlg.setFileMode(QFileDialog::DirectoryOnly);
   if (dlg.exec() == QDialog::Accepted) {
     QString dir;
     dir = dlg.selectedFiles().first();
-    ui.desktopFolder->setText(dir);
+    uiDesktopFolder.desktopFolder->setText(dir);
   }
 }
 
@@ -159,4 +189,11 @@ void DesktopPreferencesDialog::selectPage(QString name) {
   QWidget* page = findChild<QWidget*>(name + "Page");
   if(page)
     ui.tabWidget->setCurrentWidget(page);
+}
+
+void DesktopPreferencesDialog::setEditDesktopFolder(const bool enabled)
+{
+  editDesktopFolderEnabled = enabled;
+  if (editDesktopFolderEnabled)
+      setupDesktopFolderUi();
 }

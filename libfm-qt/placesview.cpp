@@ -49,7 +49,7 @@ PlacesView::PlacesView(QWidget* parent):
 
   QHeaderView* headerView = header();
   headerView->setSectionResizeMode(0, QHeaderView::Stretch);
-  headerView->setSectionResizeMode(1, QHeaderView::ResizeToContents);
+  headerView->setSectionResizeMode(1, QHeaderView::Fixed);
   headerView->setStretchLastSection(false);
   expandAll();
 
@@ -64,6 +64,12 @@ PlacesView::PlacesView(QWidget* parent):
 
   setAcceptDrops(true);
   setDragEnabled(true);
+
+  // update the umount button's column width based on icon size
+  onIconSizeChanged(iconSize());
+#if QT_VERSION >= QT_VERSION_CHECK(5, 5, 0) // this signal requires Qt >= 5.5
+  connect(this, &QAbstractItemView::iconSizeChanged, this, &PlacesView::onIconSizeChanged);
+#endif
 }
 
 PlacesView::~PlacesView() {
@@ -107,8 +113,13 @@ void PlacesView::activateRow(int type, const QModelIndex& index) {
 void PlacesView::onPressed(const QModelIndex& index) {
   // if middle button is pressed
   if(QGuiApplication::mouseButtons() & Qt::MiddleButton) {
-    activateRow(1, index);
+    // the real item is at column 0
+    activateRow(1, 0 == index.column() ? index : index.sibling(index.row(), 0));
   }
+}
+
+void PlacesView::onIconSizeChanged(const QSize& size) {
+  setColumnWidth(1, size.width() + 5);
 }
 
 void PlacesView::onEjectButtonClicked(PlacesModelItem* item) {
@@ -146,6 +157,8 @@ void PlacesView::onClicked(const QModelIndex& index) {
         onEjectButtonClicked(item);
       }
     }
+    else
+      activateRow(0, index.sibling(index.row(), 0));
   }
 }
 
@@ -321,6 +334,8 @@ void PlacesView::onEjectVolume() {
 void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
   QModelIndex index = indexAt(event->pos());
   if(index.isValid() && index.parent().isValid()) {
+    if(index.column() != 0) // the real item is at column 0
+      index = index.sibling(index.row(), 0);
     QMenu* menu = new QMenu(this);
     QAction* action;
     PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(index));

@@ -25,7 +25,6 @@
 #include "settings.h"
 #include "libfmqt.h"
 #include "editbookmarksdialog.h"
-#include <QAbstractNativeEventFilter>
 #include <QVector>
 #include <QPointer>
 #include <QProxyStyle>
@@ -34,6 +33,8 @@
 
 
 class QScreen;
+
+class QFileSystemWatcher;
 
 namespace PCManFM {
 
@@ -49,7 +50,7 @@ public:
   virtual int styleHint(StyleHint hint, const QStyleOption * option = 0, const QWidget * widget = 0, QStyleHintReturn * returnData = 0) const;
 };
 
-class Application : public QApplication, public QAbstractNativeEventFilter {
+class Application : public QApplication {
   Q_OBJECT
   Q_PROPERTY(bool desktopManagerEnabled READ desktopManagerEnabled)
 
@@ -75,7 +76,7 @@ public:
   void desktopPrefrences(QString page);
   void editBookmarks();
   void desktopManager(bool enabled);
-  void findFiles(QStringList paths);
+  void findFiles(QStringList paths = QStringList());
 
   bool desktopManagerEnabled() {
     return enableDesktopManager_;
@@ -90,8 +91,6 @@ public:
   QString profileName() {
     return profileName_;
   }
-
-  virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result);
 
 protected Q_SLOTS:
   void onAboutToQuit();
@@ -108,6 +107,8 @@ protected Q_SLOTS:
   void onScreenAdded(QScreen* newScreen);
   void reloadDesktopsAsNeeded();
 
+  void onFindFileAccepted();
+
 protected:
   virtual bool eventFilter(QObject* watched, QEvent* event);
   bool parseCommandLineArgs();
@@ -116,7 +117,11 @@ protected:
 
   static void onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Application* pThis);
 
+private Q_SLOTS:
+  void onUserDirsChanged();
+
 private:
+  void initWatch();
   void installSigtermHandler();
 
   bool isPrimaryInstance;
@@ -132,6 +137,12 @@ private:
   QTranslator translator;
   QTranslator qtTranslator;
   GVolumeMonitor* volumeMonitor_;
+
+  QFileSystemWatcher *userDirsWatcher_;
+  QString userDirsFile_;
+  QString userDesktopFolder_;
+  bool lxqtRunning_;
+
   int argc_;
   char** argv_;
 };

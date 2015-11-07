@@ -84,6 +84,7 @@ Settings::Settings():
   sortOrder_(Qt::AscendingOrder),
   sortColumn_(Fm::FolderModel::ColumnFileName),
   sortFolderFirst_(true),
+  showFilter_(false),
   // settings for use with libfm
   singleClick_(false),
   autoSelectionDelay_(600),
@@ -210,6 +211,7 @@ bool Settings::loadFile(QString filePath) {
   sortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
   sortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
   sortFolderFirst_ = settings.value("SortFolderFirst", true).toBool();
+  showFilter_ = settings.value("ShowFilter", false).toBool();
 
   setBackupAsHidden(settings.value("BackupAsHidden", false).toBool());
   showFullNames_ = settings.value("ShowFullNames", false).toBool();
@@ -300,6 +302,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("SortOrder", sortOrderToString(sortOrder_));
   settings.setValue("SortColumn", sortColumnToString(sortColumn_));
   settings.setValue("SortFolderFirst", sortFolderFirst_);
+  settings.setValue("ShowFilter", showFilter_);
 
   settings.setValue("BackupAsHidden", backupAsHidden_);
   settings.setValue("ShowFullNames", showFullNames_);

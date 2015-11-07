@@ -98,6 +98,7 @@ protected Q_SLOTS:
   void on_actionDescending_triggered(bool checked);
   void on_actionFolderFirst_triggered(bool checked);
   void on_actionCaseSensitive_triggered(bool checked);
+  void on_actionFilter_triggered(bool checked);
 
   void on_actionApplications_triggered();
   void on_actionComputer_triggered();
@@ -109,6 +110,7 @@ protected Q_SLOTS:
 
   void on_actionOpenTerminal_triggered();
   void on_actionOpenAsRoot_triggered();
+  void on_actionFindFiles_triggered();
 
   void on_actionAbout_triggered();
 
@@ -117,6 +119,8 @@ protected Q_SLOTS:
   void onTabBarCloseRequested(int index);
   void onTabBarCurrentChanged(int index);
   void onTabBarTabMoved(int from, int to);
+
+  void onFilterStringChanged(QString str);
 
   void onShortcutPrevTab();
   void onShortcutNextTab();

@@ -181,7 +181,7 @@ FolderViewTreeView::FolderViewTreeView(QWidget* parent):
   doingLayout_(false),
   activationAllowed_(true) {
 
-  header()->setStretchLastSection(false);
+  header()->setStretchLastSection(true);
   setIndentation(0);
 
   connect(this, &QTreeView::activated, this, &FolderViewTreeView::activation);
@@ -242,44 +242,46 @@ void FolderViewTreeView::layoutColumns() {
 
   // get the width that every column want
   int numCols = headerView->count();
-  int* widths = new int[numCols]; // array to store the widths every column needs
-  int column;
-  for(column = 0; column < numCols; ++column) {
-    int columnId = headerView->logicalIndex(column);
-    // get the size that the column needs
-    widths[column] = sizeHintForColumn(columnId);
-  }
+  if(numCols > 0) {
+    int* widths = new int[numCols]; // array to store the widths every column needs
+    int column;
+    for(column = 0; column < numCols; ++column) {
+      int columnId = headerView->logicalIndex(column);
+      // get the size that the column needs
+      widths[column] = sizeHintForColumn(columnId);
+      // compute the total width needed
+      desiredWidth += widths[column];
+    }
 
-  // the best case is every column can get its full width
-  for(column = 0; column < numCols; ++column) {
-    desiredWidth += widths[column];
-  }
-
-  // if the total witdh we want exceeds the available space
-  if(desiredWidth > availWidth) {
-    // we don't have that much space for every column
     int filenameColumn = headerView->visualIndex(FolderModel::ColumnFileName);
-    // shrink the filename column first
-    desiredWidth -= widths[filenameColumn]; // total width of all other columns
+    // if the total witdh we want exceeds the available space
+    if(desiredWidth > availWidth) {
+      // Compute the width available for the filename column
+      int filenameAvailWidth = availWidth - desiredWidth + widths[filenameColumn];
 
-    // see if setting the width of the filename column to 200 solve the problem
-    if(desiredWidth + 200 > availWidth) {
-      // even when we reduce the width of the filename column to 200,
-      // the available space is not enough. So we give up trying.
-      widths[filenameColumn] = 200;
+      // Compute the minimum acceptable width for the filename column
+      int filenameMinWidth = qMin(200, sizeHintForColumn(filenameColumn));
+
+      if (filenameAvailWidth > filenameMinWidth) {
+        // Shrink the filename column to the available width
+        widths[filenameColumn] = filenameAvailWidth;
+      }
+      else {
+        // Set the filename column to its minimum width
+        widths[filenameColumn] = filenameMinWidth;
+      }
     }
-    else { // we still have more space, so the width of filename column can be increased
-      // expand the filename column to fill all available space.
-      widths[filenameColumn] = availWidth - desiredWidth;
+    else {
+      // Fill the extra available space with the filename column
+      widths[filenameColumn] += availWidth - desiredWidth;
     }
-  }
 
-  // really do the resizing for every column
-  for(int column = 0; column < numCols; ++column) {
-    headerView->resizeSection(column, widths[column]);
+    // really do the resizing for every column
+    for(int column = 0; column < numCols; ++column) {
+      headerView->resizeSection(column, widths[column]);
+    }
+    delete []widths;
   }
-
-  delete []widths;
   doingLayout_ = false;
 
   if(layoutTimer_) {
@@ -405,7 +407,6 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
 }
 
 FolderView::~FolderView() {
-  // qDebug("delete FolderView");
 }
 
 void FolderView::onItemActivated(QModelIndex index) {
@@ -646,8 +647,13 @@ void FolderView::contextMenuEvent(QContextMenuEvent* event) {
 
 void FolderView::childMousePressEvent(QMouseEvent* event) {
   // called from mousePressEvent() of child view
-  if(event->button() == Qt::MiddleButton) {
+  Qt::MouseButton button = event->button();
+  if(button == Qt::MiddleButton) {
     emitClickedAt(MiddleClick, event->pos());
+  } else if (button == Qt::BackButton) {
+    Q_EMIT clickedBack();
+  } else if (button == Qt::ForwardButton) {
+    Q_EMIT clickedForward();
   }
 }
 
@@ -922,7 +928,15 @@ void FolderView::onFileClicked(int type, FmFileInfo* fileInfo) {
     }
   }
   else if(type == ContextMenuClick) {
-    FmPath* folderPath = path();
+    FmPath* folderPath = NULL;
+    FmFileInfoList* files = selectedFiles();
+    if (files) {
+      FmFileInfo* first = fm_file_info_list_peek_head(files);
+      if (fm_file_info_list_get_length(files) == 1 && fm_file_info_is_dir(first))
+        folderPath = fm_file_info_get_path(first);
+    }
+    if (!folderPath)
+      folderPath = path();
     QMenu* menu = NULL;
     if(fileInfo) {
       // show context menu

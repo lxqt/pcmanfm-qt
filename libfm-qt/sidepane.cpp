@@ -74,6 +74,7 @@ void SidePane::setIconSize(QSize size) {
   iconSize_ = size;
   switch(mode_) {
     case ModePlaces:
+      static_cast<PlacesView*>(view_)->setIconSize(size);
     case ModeDirTree:
       static_cast<QTreeView*>(view_)->setIconSize(size);
       break;

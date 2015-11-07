@@ -346,6 +346,14 @@ public:
     sortFolderFirst_ = folderFirst;
   }
 
+  bool showFilter() const {
+    return showFilter_;
+  }
+
+  void setShowFilter(bool value) {
+    showFilter_ = value;
+  }
+
   // settings for use with libfm
   bool singleClick() const {
     return singleClick_;
@@ -572,6 +580,7 @@ private:
   Qt::SortOrder sortOrder_;
   Fm::FolderModel::ColumnId sortColumn_;
   bool sortFolderFirst_;
+  bool showFilter_;
 
   // settings for use with libfm
   bool singleClick_;

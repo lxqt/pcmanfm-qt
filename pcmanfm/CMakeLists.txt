@@ -47,6 +47,7 @@ set(pcmanfm_UIS
     about.ui
     preferences.ui
     desktop-preferences.ui
+    desktop-folder.ui
     autorun.ui
 )
 

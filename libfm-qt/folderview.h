@@ -146,6 +146,8 @@ private Q_SLOTS:
 
 Q_SIGNALS:
   void clicked(int type, FmFileInfo* file);
+  void clickedBack();
+  void clickedForward();
   void selChanged(int n_sel);
   void sortChanged();
 
