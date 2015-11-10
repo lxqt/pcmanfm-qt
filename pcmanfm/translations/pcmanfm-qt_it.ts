@@ -93,7 +93,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="115"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished">Scegli l&apos;azione da eseguire:</translation>
+        <translation>Scegli l&apos;azione da eseguire:</translation>
     </message>
 </context>
 <context>
