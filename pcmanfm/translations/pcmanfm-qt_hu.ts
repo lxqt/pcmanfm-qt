@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="hu_HU">
+<TS version="2.1" language="hu">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -11,12 +11,30 @@
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="135"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="137"/>
         <source>Lightweight file manager</source>
         <translation>Könnyed fájlkezelő</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_about.h" line="138"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_about.h" line="139"/>
+        <source>Programming:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</source>
+        <translation>Programozó:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_about.h" line="142"/>
+        <source>Authors</source>
+        <translation>Szerzők</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="143"/>
@@ -37,25 +55,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_about.h" line="139"/>
-        <source>Programming:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
-</source>
-        <translation>Programfejlesztő:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_about.h" line="138"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_about.h" line="142"/>
-        <source>Authors</source>
-        <translation>Szerzők</translation>
+        <translation>PCMan File Manager
+
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Ez egy szabad szoftver, ami a Free Software Foundation által
+megjelentetett GNU General Public Licensz 2-es, vagy későbbi
+verzióiban felsorolt feltételekkel szabadon terjeszthető, módosítható.
+
+A megjelentetők remélik, hogy a program hasznos, viszont
+SEMMILYEN GARANCIÁT NEM VÁLLALNAK, beleértve áttételesen az
+ÜZLETI célú hasznosítására, továbbá a SPECIÁLIS CÉLRA TÖRTÉNŐ
+HASZNÁLHATÓSÁGÁRA sem. További részletek a GNU General Public Licensz soraiban.
+
+Ezzel a programmal együtt meg kellett kapnia a GNU General
+Public Licensz másolatát is, ha nem, akkor írjon a Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA címre.
+</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="160"/>
@@ -68,7 +84,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="110"/>
         <source>Removable medium is inserted</source>
-        <translation>Új hordozható adathordozó észlelve</translation>
+        <translation>Új cserélhető adathordozó észlelve</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="112"/>
@@ -96,32 +112,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Űrlap</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="76"/>
         <source>Desktop</source>
-        <translation type="unfinished">Asztal</translation>
+        <translation>Asztal</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="77"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished">Asztal mappa:</translation>
+        <translation>Asztal mappa:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="79"/>
         <source>Image file</source>
-        <translation type="unfinished">Képfájl</translation>
+        <translation>Képfájl</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="84"/>
         <source>Folder path</source>
-        <translation type="unfinished">Könyvtár útvonal</translation>
+        <translation>Könyvtár útvonal</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="85"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">&amp;Böngészés</translation>
+        <translation>&amp;Böngészés</translation>
     </message>
 </context>
 <context>
@@ -202,18 +218,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Asztalra kattintva az ablakkezelő menüje látszik</translation>
     </message>
     <message>
-        <source>Desktop</source>
-        <translation type="vanished">Asztal</translation>
-    </message>
-    <message>
-        <source>Desktop folder:</source>
-        <translation type="vanished">Asztal mappa:</translation>
-    </message>
-    <message>
-        <source>Folder path</source>
-        <translation type="vanished">Könyvtár útvonal</translation>
-    </message>
-    <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="278"/>
         <source>Advanced</source>
         <translation>Haladó</translation>
@@ -227,6 +231,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Fájlkezelő</translation>
     </message>
     <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="558"/>
+        <source>Go &amp;Up</source>
+        <translation>&amp;Föl</translation>
+    </message>
+    <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="560"/>
         <source>Go Up</source>
         <translation>Föl</translation>
@@ -237,33 +246,24 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Alt+Föl</translation>
     </message>
     <message>
-        <source>Home</source>
-        <translation type="vanished">Saját könyvtár</translation>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="563"/>
+        <source>&amp;Home</source>
+        <translation>&amp;Saját könyvtár</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="564"/>
         <source>Alt+Home</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="583"/>
-        <source>Reload</source>
-        <translation>Újratölt</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="566"/>
-        <source>F5</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="563"/>
-        <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="565"/>
         <source>&amp;Reload</source>
         <translation>Új&amp;ratölt</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="566"/>
+        <source>F5</source>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="567"/>
@@ -281,6 +281,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Ról&amp;am</translation>
     </message>
     <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="570"/>
+        <source>&amp;New Window</source>
+        <translation>Ú&amp;J ablak</translation>
+    </message>
+    <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="572"/>
         <source>New Window</source>
         <translation>ÚJ ablak</translation>
@@ -288,7 +293,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="574"/>
         <source>Ctrl+N</source>
-        <translation></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="575"/>
@@ -298,7 +303,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="576"/>
         <source>Ctrl+H</source>
-        <translation></translation>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="577"/>
@@ -331,119 +336,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>&amp;Alkalmazások</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="589"/>
-        <source>Ctrl+X</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="590"/>
-        <source>&amp;Copy</source>
-        <translation>&amp;Másol</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="591"/>
-        <source>Ctrl+C</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="592"/>
-        <source>&amp;Paste</source>
-        <translation>&amp;Beilleszt</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="593"/>
-        <source>Ctrl+V</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="594"/>
-        <source>Select &amp;All</source>
-        <translation>&amp;Mindet</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="596"/>
-        <source>Pr&amp;eferences</source>
-        <translation>B&amp;eállítások</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="597"/>
-        <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="598"/>
-        <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="599"/>
-        <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="600"/>
-        <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="601"/>
-        <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="602"/>
-        <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="603"/>
-        <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="619"/>
-        <source>&amp;Invert Selection</source>
-        <translation>K&amp;ijelölés megfordítás</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="620"/>
-        <source>&amp;Delete</source>
-        <translation>&amp;Töröl</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="622"/>
-        <source>&amp;Rename</source>
-        <translation>&amp;Átnevez</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="629"/>
-        <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="630"/>
-        <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="631"/>
-        <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="595"/>
-        <source>Ctrl+A</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="558"/>
-        <source>Go &amp;Up</source>
-        <translation>&amp;Föl</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="570"/>
-        <source>&amp;New Window</source>
-        <translation>&amp;ÚJ ablak</translation>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="583"/>
+        <source>Reload</source>
+        <translation>Újratölt</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="584"/>
@@ -471,32 +366,104 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>&amp;Kivág</translation>
     </message>
     <message>
-        <source>Ascending</source>
-        <translation type="vanished">Növekvő</translation>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="589"/>
+        <source>Ctrl+X</source>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
-        <source>Descending</source>
-        <translation type="vanished">Csökkenő</translation>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="590"/>
+        <source>&amp;Copy</source>
+        <translation>&amp;Másol</translation>
     </message>
     <message>
-        <source>By File Name</source>
-        <translation type="vanished">Név</translation>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="591"/>
+        <source>Ctrl+C</source>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
-        <source>By Modification Time</source>
-        <translation type="vanished">Módosítási idő</translation>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="592"/>
+        <source>&amp;Paste</source>
+        <translation>&amp;Beilleszt</translation>
     </message>
     <message>
-        <source>By File Type</source>
-        <translation type="vanished">Típus</translation>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="593"/>
+        <source>Ctrl+V</source>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
-        <source>By Owner</source>
-        <translation type="vanished">Tulajdonos</translation>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="594"/>
+        <source>Select &amp;All</source>
+        <translation>&amp;Mindet</translation>
     </message>
     <message>
-        <source>Folder First</source>
-        <translation type="vanished">Mappák elől</translation>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="595"/>
+        <source>Ctrl+A</source>
+        <translation>Ctrl+A</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="596"/>
+        <source>Pr&amp;eferences</source>
+        <translation>B&amp;eállítások</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="597"/>
+        <source>&amp;Ascending</source>
+        <translation>&amp;Növekvő</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="598"/>
+        <source>&amp;Descending</source>
+        <translation>&amp;Csökkenő</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="599"/>
+        <source>&amp;By File Name</source>
+        <translation>&amp;Fájlnév szerint</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="600"/>
+        <source>By &amp;Modification Time</source>
+        <translation>&amp;Módosítási idő szerint</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="601"/>
+        <source>By File &amp;Type</source>
+        <translation>Fájl&amp;típus szerint</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="602"/>
+        <source>By &amp;Owner</source>
+        <translation>&amp;Tulajdonos szerint</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="603"/>
+        <source>&amp;Folder First</source>
+        <translation>Ma&amp;ppák elől</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="629"/>
+        <source>&amp;Case Sensitive</source>
+        <translation>Na&amp;gybetűérzékeny</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="630"/>
+        <source>By File &amp;Size</source>
+        <translation>Fá&amp;jlméret szerint</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="631"/>
+        <source>&amp;Close Window</source>
+        <translation>A&amp;blak bezárás</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="637"/>
+        <source>&amp;Folder</source>
+        <translation>&amp;Mappa</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="639"/>
+        <source>&amp;Blank File</source>
+        <translation>&amp;Üres fájl</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="604"/>
@@ -511,7 +478,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="608"/>
         <source>Ctrl+T</source>
-        <translation></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="609"/>
@@ -544,14 +511,29 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Alt+Jobb</translation>
     </message>
     <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="619"/>
+        <source>&amp;Invert Selection</source>
+        <translation>K&amp;ijelölés megfordítás</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="620"/>
+        <source>&amp;Delete</source>
+        <translation>&amp;Töröl</translation>
+    </message>
+    <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="621"/>
         <source>Del</source>
-        <translation></translation>
+        <translation>Del</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="622"/>
+        <source>&amp;Rename</source>
+        <translation>&amp;Átnevez</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="623"/>
         <source>F2</source>
-        <translation></translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="624"/>
@@ -559,66 +541,24 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Fü&amp;l bezárás</translation>
     </message>
     <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="625"/>
+        <source>Ctrl+W</source>
+        <translation>Ctrl+W</translation>
+    </message>
+    <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="626"/>
         <source>File &amp;Properties</source>
         <translation>&amp;Fájljellemzők</translation>
     </message>
     <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="627"/>
+        <source>Alt+Return</source>
+        <translation>Alt+Return</translation>
+    </message>
+    <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="628"/>
         <source>&amp;Folder Properties</source>
         <translation>&amp;Mappajellemzők</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="638"/>
-        <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="640"/>
-        <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="643"/>
-        <source>Filter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="646"/>
-        <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="649"/>
-        <source>&amp;Sorting</source>
-        <translation>&amp;Rendezés</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="654"/>
-        <source>Main Toolbar</source>
-        <translation>Eszközsáv</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="625"/>
-        <source>Ctrl+W</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="627"/>
-        <source>Alt+Return</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Case Sensitive</source>
-        <translation type="vanished">Nagybetűérzékeny</translation>
-    </message>
-    <message>
-        <source>By File Size</source>
-        <translation type="vanished">Fájlméret</translation>
-    </message>
-    <message>
-        <source>Close Window</source>
-        <translation type="vanished">Ablak bezárás</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="632"/>
@@ -633,7 +573,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="634"/>
         <source>F4</source>
-        <translation></translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="635"/>
@@ -646,34 +586,44 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Könyvj&amp;elzőkezelés</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="637"/>
-        <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="638"/>
+        <source>Ctrl+Shift+N</source>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_main-win.h" line="639"/>
-        <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="640"/>
+        <source>Ctrl+Alt+N</source>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="641"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fájlkeresés</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="642"/>
         <source>F3</source>
-        <translation type="unfinished"></translation>
+        <translation>F3</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="643"/>
+        <source>Filter</source>
+        <translation>Szűrő</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="644"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>Szövegszűrő...</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="645"/>
         <source>&amp;File</source>
         <translation>&amp;Fájl</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="646"/>
+        <source>C&amp;reate New</source>
+        <translation>Ú&amp;j létrehozás</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="647"/>
@@ -684,6 +634,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../../build/pcmanfm/ui_main-win.h" line="648"/>
         <source>&amp;View</source>
         <translation>&amp;Nézet</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="649"/>
+        <source>&amp;Sorting</source>
+        <translation>Rendezé&amp;s</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="650"/>
@@ -705,6 +660,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>&amp;Tool</source>
         <translation>&amp;Eszközök</translation>
     </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_main-win.h" line="654"/>
+        <source>Main Toolbar</source>
+        <translation>Eszközsáv</translation>
+    </message>
 </context>
 <context>
     <name>PCManFM::Application</name>
@@ -716,12 +676,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="162"/>
         <source>PROFILE</source>
-        <translation></translation>
+        <translation>PROFIL</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>Run PCManFM as a daemon</source>
-        <translation>A PCManFM mint daemon fut</translation>
+        <translation>PCManFM daemon-ként</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
@@ -747,7 +707,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../application.cpp" line="177"/>
         <location filename="../application.cpp" line="193"/>
         <source>NAME</source>
-        <translation></translation>
+        <translation>NÉV</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
@@ -767,7 +727,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>FILE</source>
-        <translation>FILE</translation>
+        <translation>FÁJL</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
@@ -777,7 +737,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>MODE</source>
-        <translation></translation>
+        <translation>MÓD</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
@@ -792,7 +752,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation></translation>
+        <translation>[FÁJL1, FÁJL2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="500"/>
@@ -870,7 +830,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Szövegtörlés (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
@@ -896,7 +856,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="980"/>
         <source>Switch user command is not set.</source>
-        <translation>A felhasználót váltó alkalmazás beállítatlan.</translation>
+        <translation>Felhasználóváltó parancs határozatlan.</translation>
     </message>
 </context>
 <context>
@@ -1041,16 +1001,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Ablak</translation>
     </message>
     <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="757"/>
-        <source>Default width of new windows:</source>
-        <translation>Új ablak alapszélessége:</translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="758"/>
-        <source>Default height of new windows:</source>
-        <translation>Új ablak alapmagassága:</translation>
-    </message>
-    <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="754"/>
         <source>Always show the tab bar</source>
         <translation>Fülsáv mindig látható</translation>
@@ -1064,6 +1014,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../../build/pcmanfm/ui_preferences.h" line="756"/>
         <source>Remember the size of the last closed window</source>
         <translation>Utoljára bezárt ablak méretének megjegyzése</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="757"/>
+        <source>Default width of new windows:</source>
+        <translation>Új ablak alapszélessége:</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="758"/>
+        <source>Default height of new windows:</source>
+        <translation>Új ablak alapmagassága:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="724"/>
@@ -1083,27 +1043,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="727"/>
         <source>Default view mode:</source>
-        <translation>Alapértelmezett nézet:</translation>
+        <translation>Alapértelmezett nézetmód:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="728"/>
         <source> sec</source>
-        <translation></translation>
+        <translation> mp</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="736"/>
         <source>File Operations</source>
-        <translation>Fájlkezelések</translation>
+        <translation>Fájlműveletek</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="737"/>
         <source>Confirm before deleting files</source>
-        <translation>Törlés előtti megerősítés</translation>
+        <translation>Törlés előtt megerősítés</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="738"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Törölt fájlok lemezről törlés helyett a kukába  a kukába mennek.</translation>
+        <translation>Törölt fájlok lemezről törlés helyett a kukába mennek.</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="783"/>
@@ -1118,112 +1078,112 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="713"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Képernyő</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="729"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Könyvjelzők:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="732"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Megnyitás itt</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="733"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Megnyitás új fülön</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="734"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Megnyitás új ablakban</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="739"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Cserélhető adathordozón a fájlok törlése &quot;kukázás&quot; helyett</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="740"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Megerősítés &quot;kukázás&quot; előtt</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="741"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Fájl futtatás előtt nincs opció kérés</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="748"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Kezelőfelület</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="750"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Biztonsági mentett fájlokat rejtettként kezel</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="751"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Mindig részletes fájlnevek</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="752"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Rejtett fájlok ikonjai árnyékoltak</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="759"/>
         <source>Show in places</source>
-        <translation type="unfinished"></translation>
+        <translation>Helyben látható</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="764"/>
         <source>Home</source>
-        <translation type="unfinished">Saját könyvtár</translation>
+        <translation>Saját könyvtár</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="766"/>
         <source>Desktop</source>
-        <translation type="unfinished">Asztal</translation>
+        <translation>Asztal</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="768"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuka</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="770"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Számítógép</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="772"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Alkalmazások</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="774"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Eszközök</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="776"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Hálózat</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="780"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Nincs, ha a fájl ennél nagyobb:</translation>
+        <translation>Nincs kép, ha a fájl ennél nagyobb:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="781"/>
         <source> KB</source>
-        <translation></translation>
+        <translation> KB</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="784"/>
@@ -1253,50 +1213,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="789"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Cserélhe&amp;tő adathortozós fül bezárása</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="790"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="793"/>
-        <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="796"/>
-        <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="797"/>
-        <source>Templates</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="798"/>
-        <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="799"/>
-        <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/pcmanfm/ui_preferences.h" line="800"/>
-        <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Close tab containing removable medium</source>
-        <translation type="vanished">Cserélhető adathordozó fülének bezárása</translation>
-    </message>
-    <message>
-        <source>Change folder in the tab to home folder</source>
-        <translation type="vanished">A fül a saját mappát fogja mutatni</translation>
+        <translation>A &amp;fül a saját mappát fogja mutatni</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="791"/>
@@ -1309,8 +1231,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Terminálemulátor:</translation>
     </message>
     <message>
-        <source>Switch user command:</source>
-        <translation type="vanished">Felhasználó váltási parancs:</translation>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="793"/>
+        <source>Switch &amp;user command:</source>
+        <translation>Fel&amp;használó váltási parancs:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="794"/>
@@ -1320,13 +1243,34 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 %s = A parancs, mely terminálhoz, vagy rendszergazdakénti végrehajtáshoz kell.</translation>
     </message>
     <message>
-        <source>Archiver integration:</source>
-        <translation type="vanished">Csomagoló beépítés:</translation>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="796"/>
+        <source>Archiver in&amp;tegration:</source>
+        <translation>Csomagoló beépí&amp;tés:</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="797"/>
+        <source>Templates</source>
+        <translation>Társítások</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="798"/>
+        <source>Show only user defined templates in menu</source>
+        <translation>Menüben csak felhasználói társítások</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="799"/>
+        <source>Show only one template for each MIME type</source>
+        <translation>Minden MIME típushoz csak egy társítás látható</translation>
+    </message>
+    <message>
+        <location filename="../../build/pcmanfm/ui_preferences.h" line="800"/>
+        <source>Run default application after creation from template</source>
+        <translation>Tásítás után az alapértelmezett alkalmazás fut</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="749"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation></translation>
+        <translation>IEC bináris helyett SI decimális prefix használata</translation>
     </message>
 </context>
 </TS>
