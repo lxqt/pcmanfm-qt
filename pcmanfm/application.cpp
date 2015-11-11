@@ -80,6 +80,8 @@ Application::Application(int& argc, char** argv):
   argc_ = argc;
   argv_ = argv;
 
+  setApplicationVersion(PCMANFM_QT_VERSION);
+
   // QDBusConnection::sessionBus().registerObject("/org/pcmanfm/Application", this);
   QDBusConnection dbus = QDBusConnection::sessionBus();
   if(dbus.registerService(serviceName)) {
