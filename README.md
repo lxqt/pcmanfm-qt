@@ -2,8 +2,8 @@
 
 The Qt port of the LXDE file manager PCManFM.
 
-Includes libfm-qt, the qt port of the libfm-qt - a library providing components
-to build desktop file managers.
+Includes libfm-qt, the Qt port of the libfm - a library providing components to
+build desktop file managers.
 
 Issue tracker:
   https://github.com/lxde/pcmanfm-qt/issues
