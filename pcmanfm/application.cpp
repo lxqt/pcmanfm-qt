@@ -822,7 +822,7 @@ void Application::installSigtermHandler() {
     struct sigaction action;
     action.sa_handler = sigtermHandler;
     ::sigemptyset(&action.sa_mask);
-    action.sa_flags |= SA_RESTART;
+    action.sa_flags = SA_RESTART;
     if(::sigaction(SIGTERM, &action, 0) != 0) {
       qWarning("Couldn't install SIGTERM handler");
     }
