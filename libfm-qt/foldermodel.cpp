@@ -32,7 +32,7 @@
 #include "fileoperation.h"
 #include "thumbnailloader.h"
 
-using namespace Fm;
+namespace Fm {
 
 FolderModel::FolderModel() :
   folder_(NULL) {
@@ -554,3 +554,6 @@ void FolderModel::updateIcons() {
     (*it).updateIcon();
   }
 }
+
+
+} // namespace Fm

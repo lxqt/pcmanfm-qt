@@ -29,7 +29,7 @@
 #include <QDebug>
 #include <QGuiApplication>
 
-using namespace Fm;
+namespace Fm {
 
 PlacesView::PlacesView(QWidget* parent):
   QTreeView(parent),
@@ -416,3 +416,6 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
     }
   }
 }
+
+
+} // namespace Fm

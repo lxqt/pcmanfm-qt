@@ -26,7 +26,7 @@
 #include "appchooserdialog.h"
 #include "utilities.h"
 
-using namespace Fm;
+namespace Fm {
 
 FmFileLauncher FileLauncher::funcs = {
   FileLauncher::_getApp,
@@ -119,3 +119,5 @@ bool FileLauncher::error(GAppLaunchContext* ctx, GError* err, FmPath* path) {
   return true;
 }
 
+
+} // namespace Fm

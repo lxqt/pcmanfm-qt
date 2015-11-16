@@ -26,7 +26,7 @@
 #include <QStandardPaths>
 #include <QDir>
 
-using namespace Fm;
+namespace Fm {
 
 EditBookmarksDialog::EditBookmarksDialog(FmBookmarks* bookmarks, QWidget* parent, Qt::WindowFlags f):
   QDialog(parent, f),
@@ -107,3 +107,4 @@ void EditBookmarksDialog::onRemoveItem() {
 }
 
 
+} // namespace Fm

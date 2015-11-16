@@ -55,7 +55,7 @@
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
 
-using namespace PCManFM;
+namespace PCManFM {
 
 DesktopWindow::DesktopWindow(int screenNum):
   View(Fm::FolderView::IconMode),
@@ -799,3 +799,5 @@ void DesktopWindow::setScreenNum(int num) {
     queueRelayout();
   }
 }
+
+} // namespace PCManFM

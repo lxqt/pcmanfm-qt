@@ -20,7 +20,7 @@
 
 #include "foldermodelitem.h"
 
-using namespace Fm;
+namespace Fm {
 
 FolderModelItem::FolderModelItem(FmFileInfo* _info):
   info(fm_file_info_ref(_info)) {
@@ -91,3 +91,6 @@ void FolderModelItem::setThumbnail(int size, QImage image) {
   }
 }
 #endif
+
+
+} // namespace Fm

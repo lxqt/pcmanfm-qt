@@ -20,7 +20,7 @@
 
 #include "dndactionmenu.h"
 
-using namespace Fm;
+namespace Fm {
 
 DndActionMenu::DndActionMenu(QWidget* parent): QMenu(parent) {
   copyAction = addAction(QIcon::fromTheme("edit-copy"), tr("Copy here"));
@@ -48,3 +48,6 @@ Qt::DropAction DndActionMenu::askUser(QPoint pos) {
     result = Qt::IgnoreAction;
   return result;
 }
+
+
+} // namespace Fm

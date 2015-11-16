@@ -22,7 +22,7 @@
 #include "foldermodel.h"
 #include <QCollator>
 
-using namespace Fm;
+namespace Fm {
 
 ProxyFolderModel::ProxyFolderModel(QObject * parent):
   QSortFilterProxyModel(parent),
@@ -276,3 +276,6 @@ void ProxyFolderModel::reloadAllThumbnails() {
   }
 }
 #endif
+
+
+} // namespace Fm

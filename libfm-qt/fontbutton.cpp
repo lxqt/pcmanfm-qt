@@ -22,7 +22,7 @@
 #include <QFontDialog>
 #include <X11/X.h>
 
-using namespace Fm;
+namespace Fm {
 
 FontButton::FontButton(QWidget* parent): QPushButton(parent) {
   connect(this, &QPushButton::clicked, this, &FontButton::onClicked);
@@ -53,3 +53,6 @@ void FontButton::setFont(QFont font) {
   setText(text);
   Q_EMIT changed();
 }
+
+
+} // namespace Fm

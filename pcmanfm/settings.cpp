@@ -28,7 +28,7 @@
 #include "utilities.h"
 // #include <QDesktopServices>
 
-using namespace PCManFM;
+namespace PCManFM {
 
 inline static const char* bookmarkOpenMethodToString(OpenDirTargetType value);
 inline static OpenDirTargetType bookmarkOpenMethodFromString(const QString str);
@@ -511,4 +511,6 @@ void Settings::setTerminal(QString terminalCommand) {
     g_free(fm_config->terminal);
     fm_config->terminal = g_strdup(terminal_.toLocal8Bit().constData());
     g_signal_emit_by_name(fm_config, "changed::terminal");
-  }
+}
+
+} // namespace PCManFM

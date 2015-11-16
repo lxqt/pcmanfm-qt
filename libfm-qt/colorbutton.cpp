@@ -21,7 +21,7 @@
 #include "colorbutton.h"
 #include <QColorDialog>
 
-using namespace Fm;
+namespace Fm {
 
 ColorButton::ColorButton(QWidget* parent): QPushButton(parent) {
   connect(this, &QPushButton::clicked, this, &ColorButton::onClicked);
@@ -49,3 +49,5 @@ void ColorButton::setColor(const QColor& color) {
   }
 }
 
+
+} // namespace Fm

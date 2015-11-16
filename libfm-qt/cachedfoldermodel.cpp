@@ -20,7 +20,7 @@
 
 #include "cachedfoldermodel.h"
 
-using namespace Fm;
+namespace Fm {
 
 static GQuark data_id = 0;
 
@@ -71,3 +71,5 @@ void CachedFolderModel::unref() {
   }
 }
 
+
+} // namespace Fm
