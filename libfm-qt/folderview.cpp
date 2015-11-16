@@ -567,16 +567,19 @@ void FolderView::updateGridSize() {
       // each char actually takes doubled space. To be safe, we use 13 chars per line x average char width
       // to get a nearly optimal width for the text label. As most of the filenames have less than 40 chars
       // 13 chars x 3 lines should be enough to show the full filenames for most files.
-      int textWidth = fm.averageCharWidth() * 12 + 4; // add 2 px padding for left and right border
-      int textHeight = fm.height() * 3 + 4; // add 2 px padding for top and bottom border
-      grid.setWidth(qMax(icon.width(), textWidth) + 8); // add a margin 4 px for every cell
-      grid.setHeight(icon.height() + textHeight + 8); // add a margin 4 px for every cell
+      int textWidth = fm.averageCharWidth() * 13;
+      int textHeight = fm.lineSpacing() * 3;
+      grid.setWidth(qMax(icon.width(), textWidth) + 4); // a margin of 2 px for selection rects
+      grid.setHeight(icon.height() + textHeight + 4); // a margin of 2 px for selection rects
       break;
     }
     default:
       ; // do not use grid size
   }
-  listView->setGridSize(grid);
+  if(mode == IconMode || mode == ThumbnailMode)
+    listView->setGridSize(grid + QSize(6, 6)); // a margin of 6 px for every cell
+  else
+    listView->setGridSize(grid);
   FolderItemDelegate* delegate = static_cast<FolderItemDelegate*>(listView->itemDelegateForColumn(FolderModel::ColumnFileName));
   delegate->setGridSize(grid);
 }

@@ -56,6 +56,10 @@ public:
     return QListView::rectForIndex(index);
   }
 
+  inline QStyleOptionViewItem getViewOptions() {
+    return viewOptions();
+  }
+
 Q_SIGNALS:
   void activatedFiltered(const QModelIndex &index);
 

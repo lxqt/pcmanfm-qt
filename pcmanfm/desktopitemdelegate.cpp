@@ -74,7 +74,20 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   }
 
   // draw text
-  QRectF textRect(opt.rect.x(), opt.rect.y() + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
+  QSize gridSize = view_->gridSize() - QSize(6, 6);
+  QRectF textRect(opt.rect.x() - (gridSize.width() - opt.rect.width()) / 2,
+                  opt.rect.y() + opt.decorationSize.height(),
+                  gridSize.width(),
+                  gridSize.height() - opt.decorationSize.height());
+  drawText(painter, opt, textRect);
+
+  if(opt.state & QStyle::State_HasFocus) {
+    // FIXME: draw focus rect
+  }
+  painter->restore();
+}
+
+void DesktopItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt, QRectF& textRect) const {
   QTextLayout layout(opt.text, opt.font);
 
   QTextOption textOption;
@@ -87,7 +100,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   int visibleLines = 0;
   layout.beginLayout();
   QString elidedText;
-
+  textRect.adjust(2, 2, -2, -2); // a 2-px margin is considered at FolderView::updateGridSize()
   for(;;) {
     QTextLine line = layout.createLine();
     if(!line.isValid())
@@ -107,13 +120,23 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     ++ visibleLines;
   }
   layout.endLayout();
+  width = qMax(width, (qreal)opt.fontMetrics.width(elidedText));
   QRectF boundRect = layout.boundingRect();
   boundRect.setWidth(width);
+  boundRect.setHeight(height);
   boundRect.moveTo(textRect.x() + (textRect.width() - width)/2, textRect.y());
+
+  QRectF selRect = boundRect.adjusted(-2, -2, 2, 2);
+
+  if(!painter) { // no painter, calculate the bounding rect only
+    textRect = selRect;
+    return;
+  }
+
   if((opt.state & QStyle::State_Selected) && opt.widget) {
     QPalette palette = opt.widget->palette();
     // qDebug("w: %f, h:%f, m:%f", boundRect.width(), boundRect.height(), layout.minimumWidth());
-    painter->fillRect(boundRect, palette.highlight());
+    painter->fillRect(selRect, palette.highlight());
   }
   else { // only draw shadow for non-selected items
     // draw shadow, FIXME: is it possible to use QGraphicsDropShadowEffect here?
@@ -122,7 +145,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     for(int i = 0; i < visibleLines; ++i) {
       QTextLine line = layout.lineAt(i);
       if(i == (visibleLines - 1) && !elidedText.isEmpty()) { // the last line, draw elided text
-        QPointF pos(textRect.x() + line.position().x() + 1, textRect.y() + line.y() + line.ascent() + 1);
+        QPointF pos(boundRect.x() + line.position().x() + 1, boundRect.y() + line.y() + line.ascent() + 1);
         painter->drawText(pos, elidedText);
       }
       else {
@@ -136,18 +159,13 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   for(int i = 0; i < visibleLines; ++i) {
     QTextLine line = layout.lineAt(i);
     if(i == (visibleLines - 1) && !elidedText.isEmpty()) { // the last line, draw elided text
-      QPointF pos(textRect.x() + line.position().x(), textRect.y() + line.y() + line.ascent());
+      QPointF pos(boundRect.x() + line.position().x(), boundRect.y() + line.y() + line.ascent());
       painter->drawText(pos, elidedText);
     }
     else {
       line.draw(painter, textRect.topLeft());
     }
   }
-
-  if(opt.state & QStyle::State_HasFocus) {
-    // FIXME: draw focus rect
-  }
-  painter->restore();
 }
 
 QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QModelIndex& index) const {
@@ -156,10 +174,17 @@ QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QM
     return qvariant_cast<QSize>(value);
   QStyleOptionViewItemV4 opt = option;
   initStyleOption(&opt, index);
+  opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
+  opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
 
-  // use grid size as size hint
-  QSize gridSize = view_->gridSize();
-  return QSize(gridSize.width() -2, gridSize.height() - 2);
+  QSize gridSize = view_->gridSize()
+                   - QSize(6, 6); // a 6-px margin is added at FolderView::updateGridSize()
+  Q_ASSERT(gridSize != QSize());
+  QRectF textRect(0, 0, gridSize.width(), gridSize.height() - opt.decorationSize.height());
+  drawText(NULL, opt, textRect); // passing NULL for painter will calculate the bounding rect only.
+  int width = qMax((int)textRect.width(), opt.decorationSize.width());
+  int height = opt.decorationSize.height() + textRect.height();
+  return QSize(width, height);
 }
 
 DesktopItemDelegate::~DesktopItemDelegate() {
