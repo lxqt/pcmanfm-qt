@@ -20,7 +20,7 @@
 
 #include "browsehistory.h"
 
-using namespace Fm;
+namespace Fm {
 
 BrowseHistory::BrowseHistory():
   currentIndex_(0),
@@ -85,3 +85,6 @@ void BrowseHistory::setMaxCount(int maxCount) {
     // TODO: remove some items
   }
 }
+
+
+} // namespace Fm

@@ -24,7 +24,7 @@
 #include <QPushButton>
 #include "icontheme.h"
 
-using namespace Fm;
+namespace Fm {
 
 RenameDialog::RenameDialog(FmFileInfo* src, FmFileInfo* dest, QWidget* parent, Qt::WindowFlags f):
   QDialog(parent, f),
@@ -135,3 +135,6 @@ void RenameDialog::onFileNameChanged(QString newName) {
   overwriteButton->setEnabled(!hasNewName);
   overwriteButton->setDefault(!hasNewName);
 }
+
+
+} // namespace Fm

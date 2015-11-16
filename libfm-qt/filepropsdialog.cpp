@@ -34,7 +34,7 @@
 #define DIFFERENT_GIDS    ((gid)-1)
 #define DIFFERENT_PERMS   ((mode_t)-1)
 
-using namespace Fm;
+namespace Fm {
 
 enum {
   ACCESS_NO_CHANGE = 0,
@@ -439,3 +439,6 @@ void FilePropsDialog::initOwner() {
     }
   }
 }
+
+
+} // namespace Fm

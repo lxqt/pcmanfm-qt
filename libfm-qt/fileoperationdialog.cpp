@@ -24,7 +24,7 @@
 #include <QMessageBox>
 #include "ui_file-operation-dialog.h"
 
-using namespace Fm;
+namespace Fm {
 
 FileOperationDialog::FileOperationDialog(FileOperation* _operation):
   QDialog(NULL),
@@ -174,3 +174,5 @@ void FileOperationDialog::reject() {
   QDialog::reject();
 }
 
+
+} // namespace Fm

@@ -31,7 +31,7 @@
 #include <QDebug>
 #include <QStandardPaths>
 
-using namespace PCManFM;
+namespace PCManFM {
 
 DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFlags f):
   QDialog(parent, f),
@@ -197,3 +197,5 @@ void DesktopPreferencesDialog::setEditDesktopFolder(const bool enabled)
   if (editDesktopFolderEnabled)
       setupDesktopFolderUi();
 }
+
+} // namespace PCManFM

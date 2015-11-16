@@ -26,7 +26,7 @@
 #include <QApplication>
 #include <QDesktopWidget>
 
-using namespace Fm;
+namespace Fm {
 
 static IconTheme* theIconTheme = NULL; // the global single instance of IconTheme.
 static const char* fallbackNames[] = {"unknown", "application-octet-stream", NULL};
@@ -141,3 +141,6 @@ bool IconTheme::eventFilter(QObject* obj, QEvent* event) {
   }
   return QObject::eventFilter(obj, event);
 }
+
+
+} // namespace Fm

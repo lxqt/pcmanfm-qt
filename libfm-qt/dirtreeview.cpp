@@ -28,7 +28,7 @@
 #include "dirtreemodelitem.h"
 #include "filemenu.h"
 
-using namespace Fm;
+namespace Fm {
 
 DirTreeView::DirTreeView(QWidget* parent):
   currentExpandingItem_(NULL),
@@ -294,3 +294,6 @@ void DirTreeView::onSelectionChanged(const QItemSelection & selected, const QIte
     Q_EMIT chdirRequested(type, path);
   }
 }
+
+
+} // namespace Fm

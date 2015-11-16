@@ -35,8 +35,6 @@
 #include <stdlib.h>
 #include <glib.h>
 
-using namespace Fm;
-
 namespace Fm {
 
 FmPathList* pathListFromQUrls(QList<QUrl> urls) {
@@ -323,4 +321,5 @@ bool uriExists(const char* uri) {
   return ret;
 }
 
-}
+
+} // namespace Fm

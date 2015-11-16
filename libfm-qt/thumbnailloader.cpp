@@ -22,7 +22,7 @@
 #include <new>
 #include <QByteArray>
 
-using namespace Fm;
+namespace Fm {
 
 // FmQImageWrapper is a GObject used to wrap QImage objects and use in glib-based libfm
 #define FM_TYPE_QIMAGE_WRAPPER              (fm_qimage_wrapper_get_type())
@@ -195,3 +195,5 @@ QImage ThumbnailLoader::image(FmThumbnailLoader* result) {
   return QImage();
 }
 
+
+} // namespace Fm

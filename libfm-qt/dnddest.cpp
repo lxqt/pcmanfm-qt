@@ -22,7 +22,7 @@
 #include "fileoperation.h"
 #include "utilities.h"
 
-using namespace Fm;
+namespace Fm {
 
 const char* supportedMimeTypes[] = {
   "text/uri-list"
@@ -69,3 +69,6 @@ bool DndDest::isSupported(const QMimeData* data) {
 bool DndDest::isSupported(QString mimeType) {
   return false;
 }
+
+
+} // namespace Fm

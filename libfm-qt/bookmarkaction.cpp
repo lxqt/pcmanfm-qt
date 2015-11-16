@@ -20,7 +20,7 @@
 
 #include "bookmarkaction.h"
 
-using namespace Fm;
+namespace Fm {
 
 BookmarkAction::BookmarkAction(FmBookmarkItem* item, QObject* parent):
   QAction(parent),
@@ -28,3 +28,5 @@ BookmarkAction::BookmarkAction(FmBookmarkItem* item, QObject* parent):
 
   setText(QString::fromUtf8(item->name));
 }
+
+} // namespace Fm

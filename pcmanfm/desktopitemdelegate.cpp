@@ -28,7 +28,7 @@
 #include <QTextOption>
 #include <QTextLine>
 
-using namespace PCManFM;
+namespace PCManFM {
 
 DesktopItemDelegate::DesktopItemDelegate(QListView* view, QObject* parent):
   QStyledItemDelegate(parent ? parent : view),
@@ -165,3 +165,5 @@ QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QM
 DesktopItemDelegate::~DesktopItemDelegate() {
 
 }
+
+} // namespace PCManFM

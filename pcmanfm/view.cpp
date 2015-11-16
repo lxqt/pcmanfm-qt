@@ -29,7 +29,7 @@
 #include "launcher.h"
 #include <QAction>
 
-using namespace PCManFM;
+namespace PCManFM {
 
 View::View(Fm::FolderView::ViewMode _mode, QWidget* parent):
   Fm::FolderView(_mode, parent) {
@@ -136,3 +136,4 @@ void View::updateFromSettings(Settings& settings) {
   }
 }
 
+} // namespace PCManFM

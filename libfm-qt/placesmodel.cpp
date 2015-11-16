@@ -27,7 +27,7 @@
 #include "utilities.h"
 #include "placesmodelitem.h"
 
-using namespace Fm;
+namespace Fm {
 
 PlacesModel::PlacesModel(QObject* parent):
   QStandardItemModel(parent),
@@ -519,3 +519,5 @@ Qt::DropActions PlacesModel::supportedDropActions() const {
   return QStandardItemModel::supportedDropActions();
 }
 
+
+} // namespace Fm

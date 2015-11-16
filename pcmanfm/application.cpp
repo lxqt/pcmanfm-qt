@@ -52,7 +52,8 @@
 #include "xdgdir.h"
 #include <QFileSystemWatcher>
 
-using namespace PCManFM;
+namespace PCManFM {
+
 static const char* serviceName = "org.pcmanfm.PCManFM";
 static const char* ifaceName = "org.pcmanfm.Application";
 
@@ -840,3 +841,5 @@ void Application::onSigtermNotified() {
     notifier->setEnabled(true);
   }
 }
+
+} // namespace PCManFM

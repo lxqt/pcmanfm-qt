@@ -25,7 +25,7 @@
 #include <QMessageBox>
 #include <QDebug>
 
-using namespace Fm;
+namespace Fm {
 
 #define SHOW_DLG_DELAY  1000
 
@@ -302,3 +302,6 @@ FileOperation* FileOperation::changeAttrFiles(FmPathList* srcFiles, QWidget* par
   op->run();
   return op;
 }
+
+
+} // namespace Fm

@@ -521,4 +521,4 @@ void TabPage:: applyFilter() {
   Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
 }
 
-};
+} // namespace PCManFM
