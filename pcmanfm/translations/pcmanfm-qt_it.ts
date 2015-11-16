@@ -21,7 +21,7 @@
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="138"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="143"/>
@@ -42,11 +42,27 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation></translation>
+        <translation>PCMan Gestore file
+
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Questo programma è software libero; puoi redistribuirlo e/o
+modificarlo nei termini della GNU General Public License
+come pubblicata dalla Free Software Foundation; nella versione 2
+della licenza, o (a tua scelta) qualsiasi versione successiva.
+
+Questo programma è distribuito nella speranza che possa essere utile,
+ma SENZA ALCUNA GARANZIA; senza nemmeno la garanzia implicita di
+COMMERCIABILITÀ o IDONEITÀ PER FINI PARTICOLARI. Vedi la
+GNU General Public License per ulteriori dettagli.
+
+Dovresti aver ricevuto una copia della GNU General Public License
+insieme a questo programma; In caso contrario, scrivi a Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="139"/>
@@ -93,7 +109,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="115"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Scegliere l&apos;azione da eseguire:</translation>
+        <translation>Seleziona l&apos;azione da eseguire:</translation>
     </message>
 </context>
 <context>
@@ -101,32 +117,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="76"/>
         <source>Desktop</source>
-        <translation type="unfinished">Scrivania</translation>
+        <translation>Scrivania</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="77"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished">Cartella scrivania:</translation>
+        <translation>Cartella della scrivania:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="79"/>
         <source>Image file</source>
-        <translation type="unfinished">File immagine</translation>
+        <translation>File immagine</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="84"/>
         <source>Folder path</source>
-        <translation type="unfinished">Percorso</translation>
+        <translation>Percorso della cartella</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="85"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">&amp;Sfoglia</translation>
+        <translation>&amp;Sfoglia</translation>
     </message>
 </context>
 <context>
@@ -149,12 +165,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="257"/>
         <source>Wallpaper image file:</source>
-        <translation>File immagine sfondo:</translation>
+        <translation>File immagine di sfondo:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="259"/>
         <source>Select background color:</source>
-        <translation>Colore sfondo:</translation>
+        <translation>Seleziona il colore di sfondo:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="261"/>
@@ -179,44 +195,44 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="271"/>
         <source>Select  text color:</source>
-        <translation>Colore testo:</translation>
+        <translation>Seleziona il colore del testo:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="272"/>
         <source>Select shadow color:</source>
-        <translation>Colore dell&apos;ombra:</translation>
+        <translation>Seleziona il colore delle ombre:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="273"/>
         <source>Select font:</source>
-        <translation>Carattere:</translation>
+        <translation>Seleziona il carattere:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="275"/>
         <source>General</source>
-        <translation>Generali</translation>
+        <translation>Generale</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="276"/>
         <source>Window Manager</source>
-        <translation>Gestore finestre</translation>
+        <translation>Gestore delle finestre</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="277"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Mostra il menu forniti dal gestore finestre quando si fa click sulla scrivania</translation>
+        <translation>Mostra i menu forniti dal gestore delle finestre quando fai clic sul desktop</translation>
     </message>
     <message>
         <source>Desktop</source>
-        <translation type="vanished">Scrivania</translation>
+        <translation>Scrivania</translation>
     </message>
     <message>
         <source>Desktop folder:</source>
-        <translation type="vanished">Cartella scrivania:</translation>
+        <translation>Cartella della scrivania:</translation>
     </message>
     <message>
         <source>Folder path</source>
-        <translation type="vanished">Percorso</translation>
+        <translation>Percorso della cartella</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="278"/>
@@ -243,7 +259,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Home</source>
-        <translation type="vanished">Cartella home</translation>
+        <translation>Cartella home</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="564"/>
@@ -263,7 +279,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="563"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Home</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="565"/>
@@ -298,7 +314,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="575"/>
         <source>Show &amp;Hidden</source>
-        <translation>Mostra file &amp;nascosti</translation>
+        <translation>Mostra i file &amp;nascosti</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="576"/>
@@ -373,37 +389,37 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="597"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Crescente</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="598"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Decrescente</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="599"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Per nome file</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="600"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Per data di &amp;modifica</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="601"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Per &amp;tipo di file</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="602"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Per pr&amp;oprietario</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="603"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>Prima le ca&amp;rtelle</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="619"/>
@@ -413,7 +429,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="620"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Rimuovi</translation>
+        <translation>&amp;Elimina</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="622"/>
@@ -462,31 +478,31 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Ascending</source>
-        <translation type="vanished">Crescente</translation>
+        <translation>Crescente</translation>
     </message>
     <message>
         <source>Descending</source>
-        <translation type="vanished">Decrescente</translation>
+        <translation>Decrescente</translation>
     </message>
     <message>
         <source>By File Name</source>
-        <translation type="vanished">Per nome file</translation>
+        <translation>Per nome file</translation>
     </message>
     <message>
         <source>By Modification Time</source>
-        <translation type="vanished">Per data modifica</translation>
+        <translation>Per data modifica</translation>
     </message>
     <message>
         <source>By File Type</source>
-        <translation type="vanished">Per tipo file</translation>
+        <translation>Per tipo file</translation>
     </message>
     <message>
         <source>By Owner</source>
-        <translation type="vanished">Per proprietario</translation>
+        <translation>Per proprietario</translation>
     </message>
     <message>
         <source>Folder First</source>
-        <translation type="vanished">Prima le cartelle</translation>
+        <translation>Prima le cartelle</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="604"/>
@@ -561,62 +577,62 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="629"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Distingui le maius&amp;cole</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="630"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Per dimen&amp;sione del file</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="631"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Chiudi finestra</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="637"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Cartella</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="638"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="639"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>File &amp;vuoto</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="640"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="641"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Trova &amp;file</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="642"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="643"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtro</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="644"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtra per stringa...</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="646"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>C&amp;rea nuovo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="649"/>
@@ -626,7 +642,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="654"/>
         <source>Main Toolbar</source>
-        <translation>Barra strumenti principale</translation>
+        <translation>Barra degli strumenti principale</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="625"/>
@@ -640,15 +656,15 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Case Sensitive</source>
-        <translation type="vanished">Distingui MAIUSCOLE/minuscole</translation>
+        <translation>Distingui le maiuscole</translation>
     </message>
     <message>
         <source>By File Size</source>
-        <translation type="vanished">Per dimensione file</translation>
+        <translation>Per dimensione del file</translation>
     </message>
     <message>
         <source>Close Window</source>
-        <translation type="vanished">Chiudi finestra</translation>
+        <translation>Chiudi finestra</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="632"/>
@@ -726,12 +742,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>Run PCManFM as a daemon</source>
-        <translation>Esegue PCManFM come demone</translation>
+        <translation>Esegui PCManFM come demone</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Quit PCManFM</source>
-        <translation>Esce da PCManFM</translation>
+        <translation>Esci da PCManFM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
@@ -741,7 +757,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>Spegne il gestore della scrivania se è in esecuzione</translation>
+        <translation>Spegni il gestore della scrivania se è in esecuzione</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -772,7 +788,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>MODE</source>
-        <translation>MODE</translation>
+        <translation>MODO</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
@@ -798,7 +814,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>Files or directories to open</source>
-        <translation>Cartelle o file da aprire</translation>
+        <translation>File o cartelle da aprire</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="500"/>
@@ -876,7 +892,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella il testo (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
@@ -891,7 +907,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="907"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Rimuovi</translation>
+        <translation>&amp;Elimina</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="969"/>
@@ -944,8 +960,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../tabpage.cpp" line="276"/>
         <source>%n item(s)</source>
         <translation>
-            <numerusform>%n oggetto</numerusform>
-            <numerusform>%n oggetti</numerusform>
+            <numerusform>%n elemento</numerusform>
+            <numerusform>%n elementi</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1006,7 +1022,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="719"/>
         <source>Volume</source>
-        <translation>Periferiche</translation>
+        <translation>Volume</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="721"/>
@@ -1071,7 +1087,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="756"/>
         <source>Remember the size of the last closed window</source>
-        <translation>Ricorda dimensione della ultima finestra chiusa</translation>
+        <translation>Ricorda la dimensione della ultima finestra chiusa</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="724"/>
@@ -1081,12 +1097,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="725"/>
         <source>Open files with single click</source>
-        <translation>Apri file con un click singolo</translation>
+        <translation>Apri file con un clic singolo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="726"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation>Ritardo per l&apos;auto-selezione in modalità click singolo</translation>
+        <translation>Ritardo per la selezione automatica in modalità con clic singolo (0 per disabilitare)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="727"/>
@@ -1126,102 +1142,102 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="713"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Schermo</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="729"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Segnalibri:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="732"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri nella scheda attuale</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="733"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri in una nuova scheda</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="734"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri una nuova finestra</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="739"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella i file sui supporti rimovibile invece di cestinarli</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="740"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Conferma prima di cestinare i file</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="741"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Non chiedere opzioni all&apos;avvio dei file eseguibili</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="748"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Interfaccia utente</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="750"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Tratta i file di backup come nascosti</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="751"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra sempre il nome completo dei file</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="752"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra le icone dei file nascosti come ombreggiate</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="759"/>
         <source>Show in places</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra in Risorse</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="764"/>
         <source>Home</source>
-        <translation type="unfinished">Cartella home</translation>
+        <translation>Home</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="766"/>
         <source>Desktop</source>
-        <translation type="unfinished">Scrivania</translation>
+        <translation>Scrivania</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="768"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation>Cestino</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="770"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Computer</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="772"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Applicazioni</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="774"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Dispositivi</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="776"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Rete</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="780"/>
@@ -1281,22 +1297,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="797"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Modelli</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="798"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra solo i modelli definiti dall&apos;utente nel menu</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="799"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra solo un modello per ogni tipo MIME</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="800"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Esegui l&apos;applicazione predefinita dopo la creazione da modello</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="791"/>
@@ -1310,7 +1326,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Switch user command:</source>
-        <translation type="vanished">Comando per cambiare utente:</translation>
+        <translation>Comando per cambiare utente:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="794"/>
@@ -1321,7 +1337,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <source>Archiver integration:</source>
-        <translation type="vanished">Integrazione con gli archivi:</translation>
+        <translation>Integrazione con gli archivi:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="749"/>
