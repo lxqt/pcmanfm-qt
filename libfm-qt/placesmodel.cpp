@@ -106,9 +106,9 @@ PlacesModel::PlacesModel(QObject* parent):
     GList* vols = g_volume_monitor_get_volumes(volumeMonitor);
     GList* l;
     for(l = vols; l; l = l->next) {
-        GVolume* volume = G_VOLUME(l->data);
-        onVolumeAdded(volumeMonitor, volume, this);
-        g_object_unref(volume);
+      GVolume* volume = G_VOLUME(l->data);
+      onVolumeAdded(volumeMonitor, volume, this);
+      g_object_unref(volume);
     }
     g_list_free(vols);
 
@@ -118,10 +118,21 @@ PlacesModel::PlacesModel(QObject* parent):
         GMount* mount = G_MOUNT(l->data);
         GVolume* volume = g_mount_get_volume(mount);
         if(volume)
-        g_object_unref(volume);
+          g_object_unref(volume);
         else { /* network mounts or others */
-        PlacesModelItem* item = new PlacesModelMountItem(mount);
-        devicesRoot->appendRow(item);
+          gboolean shadowed = FALSE;
+#if GLIB_CHECK_VERSION(2, 20, 0)
+          shadowed = g_mount_is_shadowed(mount);
+#endif
+          // according to gio API doc, a shadowed mount should not be visible to the user
+          if(shadowed) {
+            shadowedMounts_.push_back(mount);
+            continue;
+          }
+          else {
+            PlacesModelItem* item = new PlacesModelMountItem(mount);
+            devicesRoot->appendRow(item);
+          }
         }
         g_object_unref(mount);
     }
@@ -169,6 +180,10 @@ PlacesModel::~PlacesModel() {
   if(trashMonitor_) {
     g_signal_handlers_disconnect_by_func(trashMonitor_, (gpointer)G_CALLBACK(onTrashChanged), this);
     g_object_unref(trashMonitor_);
+  }
+
+  Q_FOREACH(GMount* mount, shadowedMounts_) {
+    g_object_unref(mount);
   }
 }
 
@@ -301,6 +316,14 @@ PlacesModelBookmarkItem* PlacesModel::itemFromBookmark(FmBookmarkItem* bkitem) {
 }
 
 void PlacesModel::onMountAdded(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis) {
+  // according to gio API doc, a shadowed mount should not be visible to the user
+#if GLIB_CHECK_VERSION(2, 20, 0)
+    if(g_mount_is_shadowed(mount)) {
+      if(pThis->shadowedMounts_.indexOf(mount) == -1)
+        pThis->shadowedMounts_.push_back(G_MOUNT(g_object_ref(mount)));
+      return;
+    }
+#endif
   GVolume* vol = g_mount_get_volume(mount);
   if(vol) { // mount-added is also emitted when a volume is newly mounted.
     PlacesModelVolumeItem* item = pThis->itemFromVolume(vol);
@@ -332,16 +355,44 @@ void PlacesModel::onMountAdded(GVolumeMonitor* monitor, GMount* mount, PlacesMod
 }
 
 void PlacesModel::onMountChanged(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis) {
+  gboolean shadowed = FALSE;
+  // according to gio API doc, a shadowed mount should not be visible to the user
+#if GLIB_CHECK_VERSION(2, 20, 0)
+  shadowed = g_mount_is_shadowed(mount);
+  // qDebug() << "changed:" << mount << shadowed;
+#endif
   PlacesModelMountItem* item = pThis->itemFromMount(mount);
-  if(item)
-    item->update();
+  if(item) {
+    if(shadowed) { // if a visible item becomes shadowed, remove it from the model
+      pThis->shadowedMounts_.push_back(G_MOUNT(g_object_ref(mount))); // remember the shadowed mount
+      pThis->devicesRoot->removeRow(item->row());
+    }
+    else { // otherwise, update its status
+      item->update();
+    }
+  }
+  else {
+#if GLIB_CHECK_VERSION(2, 20, 0)
+    if(!shadowed) { // if a mount is unshadowed
+      int i = pThis->shadowedMounts_.indexOf(mount);
+      if(i != -1) { // a previously shadowed mount is unshadowed
+        pThis->shadowedMounts_.removeAt(i);
+        onMountAdded(monitor, mount, pThis); // add it to our model again
+      }
+    }
+#endif
+  }
 }
 
 void PlacesModel::onMountRemoved(GVolumeMonitor* monitor, GMount* mount, PlacesModel* pThis) {
   GVolume* vol = g_mount_get_volume(mount);
-  qDebug() << "volume umounted: " << vol;
+  // qDebug() << mount << "volume umounted: " << vol;
   if(vol) {
-    // a volume is unmounted
+    // a volume is being unmounted
+    // NOTE: Due to some problems of gvfs, sometimes the volume does not receive
+    // "change" signal so it does not update the eject button. Let's workaround
+    // this by calling onVolumeChanged() handler manually. (This is needed for mtp://)
+    onVolumeChanged(monitor, vol, pThis);
     g_object_unref(vol);
   }
   else { // network mounts and others
@@ -350,6 +401,14 @@ void PlacesModel::onMountRemoved(GVolumeMonitor* monitor, GMount* mount, PlacesM
       pThis->devicesRoot->removeRow(item->row());
     }
   }
+
+#if GLIB_CHECK_VERSION(2, 20, 0)
+  // if this is a shadowed mount
+  if(g_mount_is_shadowed(mount)) {
+    pThis->shadowedMounts_.removeOne(mount);
+    g_object_unref(mount);
+  }
+#endif
 }
 
 void PlacesModel::onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, PlacesModel* pThis) {

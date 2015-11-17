@@ -124,6 +124,7 @@ private:
   PlacesModelItem* networkItem;
   PlacesModelItem* applicationsItem;
   QIcon ejectIcon_;
+  QList<GMount*> shadowedMounts_;
 };
 
 }
