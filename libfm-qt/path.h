@@ -30,7 +30,7 @@ namespace Fm {
 class LIBFM_QT_API Path {
 public:
 
-  Path(): data_(NULL) {
+  Path(): data_(nullptr) {
   }
 
   Path(FmPath* path, bool takeOwnership = false): data_(path) {
@@ -38,7 +38,7 @@ public:
       fm_path_ref(data_);
   }
 
-  Path(const Path& other): data_(other.data_ ? fm_path_ref(other.data_) : NULL) {
+  Path(const Path& other): data_(other.data_ ? fm_path_ref(other.data_) : nullptr) {
   }
 
   Path(GFile* gf): data_(fm_path_new_for_gfile(gf)) {
@@ -103,7 +103,7 @@ public:
   }
 
   Path parent() {
-    return Path(fm_path_get_parent(data_), false);
+    return Path(data_ != nullptr ? fm_path_get_parent(data_) : nullptr, false);
   }
 
   const char* basename() {
