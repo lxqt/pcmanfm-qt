@@ -204,8 +204,10 @@ MainWindow::MainWindow(FmPath* path):
 }
 
 MainWindow::~MainWindow() {
-  if(bookmarks)
+  if(bookmarks) {
+    g_signal_handlers_disconnect_by_func(bookmarks, (gpointer)G_CALLBACK(onBookmarksChanged), this);
     g_object_unref(bookmarks);
+  }
 }
 
 void MainWindow::chdir(FmPath* path) {
