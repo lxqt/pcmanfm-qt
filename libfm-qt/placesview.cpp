@@ -336,7 +336,11 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
   if(index.isValid() && index.parent().isValid()) {
     if(index.column() != 0) // the real item is at column 0
       index = index.sibling(index.row(), 0);
-    QMenu* menu = new QMenu(this);
+
+    // Do not take the ownership of the menu since
+    // it will be deleted with deleteLater() upon hidden.
+    // This is possibly related to #145 - https://github.com/lxde/pcmanfm-qt/issues/145
+    QMenu* menu = new QMenu();
     QAction* action;
     PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(index));
 
