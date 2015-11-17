@@ -244,6 +244,7 @@ private:
   QString statusText_[StatusTextNum];
   Fm::BrowseHistory history_; // browsing history
   bool overrideCursor_;
+  bool wentUp_;
 };
 
 }
