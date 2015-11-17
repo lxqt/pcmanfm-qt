@@ -243,8 +243,8 @@ private:
   QString title_;
   QString statusText_[StatusTextNum];
   Fm::BrowseHistory history_; // browsing history
+  Fm::Path lastFolderPath_; // last browsed folder
   bool overrideCursor_;
-  bool wentUp_;
 };
 
 }
