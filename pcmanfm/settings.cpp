@@ -109,7 +109,11 @@ Settings::~Settings() {
 QString Settings::profileDir(QString profile, bool useFallback) {
   // NOTE: it's a shame that QDesktopServices does not handle XDG_CONFIG_HOME
   // try user-specific config file first
-  QString dirName = QLatin1String(qgetenv("XDG_CONFIG_HOME"));
+  QString dirName;
+  // WARNING: Don't use XDG_CONFIG_HOME with root because it might
+  // give the user config directory if gksu-properties is set to su.
+  if(geteuid())
+    dirName = QLatin1String(qgetenv("XDG_CONFIG_HOME"));
   if (dirName.isEmpty())
     dirName = QDir::homePath() % QLatin1String("/.config");
   dirName = dirName % "/pcmanfm-qt/" % profile;
