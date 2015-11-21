@@ -171,6 +171,15 @@ MainWindow::MainWindow(FmPath* path):
   shortcut = new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_Tab, this);
   connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutPrevTab);
 
+  // Add Ctrl+PgUp and Ctrl+PgDown as well, because they are common in Firefox
+  // , Opera, Google Chromium/Google Chrome and most other tab-using
+  // applications.
+  shortcut = new QShortcut(Qt::CTRL + Qt::Key_PageDown, this);
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutNextTab);
+
+  shortcut = new QShortcut(Qt::CTRL + Qt::Key_PageUp, this);
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutPrevTab);
+
   int i;
   for(i = 0; i < 10; ++i) {
     shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_0 + i), this);
