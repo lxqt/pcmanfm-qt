@@ -295,7 +295,7 @@ void FilePropsDialog::initGeneralPage() {
   connect(fileSizeTimer, &QTimer::timeout, this, &FilePropsDialog::onFileSizeTimerTimeout);
   fileSizeTimer->start(600);
   g_signal_connect(deepCountJob, "finished", G_CALLBACK(onDeepCountJobFinished), this);
-  fm_job_run_async(FM_JOB(deepCountJob));
+  bool bret = fm_job_run_async(FM_JOB(deepCountJob));
 }
 
 /*static */ void FilePropsDialog::onDeepCountJobFinished(FmDeepCountJob* job, FilePropsDialog* pThis) {
