@@ -6,27 +6,27 @@
     <message>
         <location filename="../app-chooser-dialog.ui" line="14"/>
         <source>Choose an Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionnez une application</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
         <source>Installed Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Applications installées</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
         <source>Custom Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Commandes personnalisées</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
         <source>Command line to execute:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ligne de commande a exécuter :</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
         <source>Application name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom de l’application :</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
@@ -37,22 +37,28 @@
 &lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represents a single URI of the file&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represents multiple URIs&lt;/li&gt;
 &lt;/ul&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Ces codes spéciaux peuvent être utilisées dans la ligne de commande :&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: Represente un seul nom de fichier&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;: Represente plusieurs nom de fichiers&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represente l’URI d&apos;un seul fichier&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represente plusieurs URIs&lt;/li&gt;
+&lt;/ul&gt;</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished"></translation>
+        <translation>Garder la fenêtre de terminal ouverte après exécution de la commande</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
         <source>Execute in terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Exécuter dans un émulateur de terminal</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
         <source>Set selected application as default action of this file type</source>
-        <translation type="unfinished"></translation>
+        <translation>Définir l’application sélectionnée par défaut pour les fichiers de ce type</translation>
     </message>
 </context>
 <context>
@@ -93,27 +99,27 @@
     <message>
         <location filename="../exec-file.ui" line="14"/>
         <source>Execute file</source>
-        <translation type="unfinished"></translation>
+        <translation>Exécuter le fichier</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
         <source>&amp;Open</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ouvrir</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
         <source>E&amp;xecute</source>
-        <translation type="unfinished"></translation>
+        <translation>E&amp;xécuter</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
         <source>Execute in &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Exécuter dans un &amp;terminal</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
         <source>Cancel</source>
-        <translation type="unfinished">Annuler</translation>
+        <translation>Annuler</translation>
     </message>
 </context>
 <context>
@@ -131,7 +137,7 @@
     <message>
         <location filename="../file-operation-dialog.ui" line="68"/>
         <source>Preparing...</source>
-        <translation>Préparation...</translation>
+        <translation>Préparation…</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="75"/>
@@ -228,7 +234,7 @@
     <message>
         <location filename="../file-props.ui" line="353"/>
         <source>Access Control</source>
-        <translation>Contrôle d&apos;accès</translation>
+        <translation>Contrôle d’accès</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="406"/>
@@ -288,7 +294,7 @@
     <message>
         <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>Personnaliser</translation>
     </message>
 </context>
 <context>
@@ -296,7 +302,7 @@
     <message>
         <location filename="../appchooserdialog.cpp" line="262"/>
         <source>Select an application to open &quot;%1&quot; files</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionnez une application pour ouvrir les fichiers de type &quot;%1&quot;</translation>
     </message>
 </context>
 <context>
@@ -304,12 +310,12 @@
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished">Dossier</translation>
+        <translation>Dossier</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>Fichier vide</translation>
     </message>
 </context>
 <context>
@@ -317,12 +323,12 @@
     <message>
         <location filename="../dirtreemodelitem.cpp" line="77"/>
         <source>Loading...</source>
-        <translation type="unfinished"></translation>
+        <translation>Chargement…</translation>
     </message>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="208"/>
         <source>&lt;No sub folders&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Aucun sous-dossiers&gt;</translation>
     </message>
 </context>
 <context>
@@ -330,17 +336,17 @@
     <message>
         <location filename="../dirtreeview.cpp" line="208"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans un nouvel &amp;onglet</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="212"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans une nouvelle &amp;fenêtre</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans un &amp;terminal</translation>
     </message>
 </context>
 <context>
@@ -385,7 +391,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../execfiledialog.cpp" line="45"/>
         <source>This file &apos;%1&apos; is executable. Do you want to execute it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Le fichier &apos;%1&apos; est exécutable. Souhaitez-vous le lancer ?</translation>
     </message>
 </context>
 <context>
@@ -438,27 +444,27 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="98"/>
         <source>Open With...</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir avec…</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="126"/>
         <source>Other Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Autres applications</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="132"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished">Créer un &amp;nouveau</translation>
+        <translation>Créer un &amp;nouveau</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="151"/>
         <source>&amp;Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>Restaurer</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="200"/>
         <source>Extract to...</source>
-        <translation>Extraire vers...</translation>
+        <translation>Extraire vers…</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="205"/>
@@ -638,17 +644,17 @@ Voulez-vous plutôt les supprimer ?</translation>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>Error</source>
-        <translation type="unfinished">Erreur</translation>
+        <translation>Erreur</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>You should add at least add one directory to search.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vous devriez indiquer au moins un dossier pour la recherche.</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="127"/>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionnez un dossier</translation>
     </message>
 </context>
 <context>
@@ -839,7 +845,7 @@ Voulez-vous plutôt les supprimer ?</translation>
     <message>
         <location filename="../placesview.cpp" line="358"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Corbeille vide</translation>
     </message>
     <message>
         <source>Rename</source>
@@ -852,32 +858,32 @@ Voulez-vous plutôt les supprimer ?</translation>
     <message>
         <location filename="../placesview.cpp" line="346"/>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans un nouvel onglet</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="349"/>
         <source>Open in New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans une nouvelle fenêtre</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="367"/>
         <source>Move Bookmark Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Monter le signet</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="372"/>
         <source>Move Bookmark Down</source>
-        <translation type="unfinished"></translation>
+        <translation>Descendre le signet</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="376"/>
         <source>Rename Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Renommer le signet</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="379"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Effacer le signet</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="388"/>
@@ -1029,7 +1035,7 @@ Modification : %3</translation>
     <message>
         <location filename="../utilities.cpp" line="164"/>
         <source>Create Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer un dossier</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="169"/>
@@ -1054,7 +1060,7 @@ Modification : %3</translation>
     <message>
         <location filename="../utilities.cpp" line="180"/>
         <source>Enter a name for the new %1:</source>
-        <translation type="unfinished"></translation>
+        <translation>Entrez un nom pour le nouveau %1 :</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="165"/>
@@ -1077,7 +1083,7 @@ Modification : %3</translation>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
         <source>dest</source>
-        <translation>dest.</translation>
+        <translation>dst</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="63"/>
@@ -1092,7 +1098,7 @@ Modification : %3</translation>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
         <source>dest file info</source>
-        <translation>infos fichier dest.</translation>
+        <translation>infos fichier dst</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
@@ -1130,12 +1136,12 @@ Modification : %3</translation>
     <message>
         <location filename="../filesearch.ui" line="41"/>
         <source>*</source>
-        <translation type="unfinished"></translation>
+        <translation>*</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="48"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Insensible à la casse</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
@@ -1150,7 +1156,7 @@ Modification : %3</translation>
     <message>
         <location filename="../filesearch.ui" line="78"/>
         <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ajout</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="90"/>
@@ -1170,7 +1176,7 @@ Modification : %3</translation>
     <message>
         <location filename="../filesearch.ui" line="137"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Type de fichier</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="143"/>
@@ -1190,7 +1196,7 @@ Modification : %3</translation>
     <message>
         <location filename="../filesearch.ui" line="163"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>Fichiers audio</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="170"/>
@@ -1200,27 +1206,27 @@ Modification : %3</translation>
     <message>
         <location filename="../filesearch.ui" line="177"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Documents</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="184"/>
         <source>Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>Dossiers</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="208"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>Contenu</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="214"/>
         <source>File contains:</source>
-        <translation type="unfinished"></translation>
+        <translation>Le fichier contient :</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="223"/>
         <source>Case insensiti&amp;ve</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Insensible à la casse</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="230"/>
@@ -1235,7 +1241,7 @@ Modification : %3</translation>
     <message>
         <location filename="../filesearch.ui" line="260"/>
         <source>File Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Taille du fichier :</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
@@ -1246,25 +1252,25 @@ Modification : %3</translation>
         <location filename="../filesearch.ui" line="282"/>
         <location filename="../filesearch.ui" line="323"/>
         <source>Bytes</source>
-        <translation type="unfinished"></translation>
+        <translation>Octets</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="287"/>
         <location filename="../filesearch.ui" line="328"/>
         <source>KiB</source>
-        <translation type="unfinished"></translation>
+        <translation>KiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="292"/>
         <location filename="../filesearch.ui" line="333"/>
         <source>MiB</source>
-        <translation type="unfinished"></translation>
+        <translation>MiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="297"/>
         <location filename="../filesearch.ui" line="338"/>
         <source>GiB</source>
-        <translation type="unfinished"></translation>
+        <translation>GiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="307"/>
@@ -1279,7 +1285,7 @@ Modification : %3</translation>
     <message>
         <location filename="../filesearch.ui" line="357"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Plus récent que :</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="364"/>
