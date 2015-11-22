@@ -1,12 +1,12 @@
 .TH PCManFM-Qt "1" "September 2014" "@CMAKE_PROJECT_NAME@ @PCMANFM_QT_VERSION@" "User Commands"
 .SH NAME
-PCManFM-Qt \- A lightweight Qt based file manager for X Window.
+PCManFM-Qt \- A lightweight Qt-based file manager for X Window.
 .SH SYNOPSIS
 pcmanfm\-qt [OPTION...] [FILE1, FILE2,...]
 .SH DESCRIPTION
-PCMan File Manager Qt (\fBPCManFM-Qt\fP) is an extremly fast, lightweight, yet
+PCMan File Manager Qt (\fBPCManFM-Qt\fP) is an extremely fast, lightweight, yet
 feature-rich file manager with tabbed browsing. It is the default file manager
-for the lightweight desktop environment, \fBLXQt\fP.
+for the lightweight desktop environment \fBLXQt\fP.
 .SH OPTIONS
 .SS "Help Options:"
 .TP
@@ -15,7 +15,7 @@ Show help options
 .SS "Application Options:"
 .TP
 \fB\-p\fR, \fB\-\-profile\fR=\fI\,PROFILE\/\fR
-Name of configuration profile
+Set name of configuration profile
 .TP
 \fB\-d\fR, \fB\-\-daemon\-mode\fR
 Run PCManFM as a daemon
