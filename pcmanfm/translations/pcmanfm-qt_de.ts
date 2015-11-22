@@ -837,99 +837,99 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="165"/>
         <source>Name of configuration profile</source>
         <translation>Name des Konfigurationsprofils</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="165"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM as a daemon</source>
         <translation>PCManFM als Daemon starten</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM</source>
         <translation>PCManFM beenden</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
         <translation>Verwaltung der Arbeitsfläche starten</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="174"/>
+        <location filename="../application.cpp" line="177"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Verwaltung der Arbeitsfläche beenden, falls aktiv</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
+        <location filename="../application.cpp" line="180"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Einstellungsdialog der Arbeitsfläche mit dem angegebenen Tab öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="196"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="183"/>
         <source>Open new window</source>
         <translation>Neues Fenster öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
+        <location filename="../application.cpp" line="186"/>
         <source>Open Find Files utility</source>
         <translation>Dateisuche öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Angegebene DATEI als Hintergrundbild einstellen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="189"/>
         <source>FILE</source>
         <translation>DATEI</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Hintergrundbildmodus einstellen. MODUS=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="193"/>
         <source>MODE</source>
         <translation>MODUS</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Einstellungsdialog auf dem angegebenen Tab öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Files or directories to open</source>
         <translation>Zu öfnende Dateien oder Ordner</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="199"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[DATEI1, DATEI2, ...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="500"/>
-        <location filename="../application.cpp" line="507"/>
+        <location filename="../application.cpp" line="503"/>
+        <location filename="../application.cpp" line="510"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="507"/>
+        <location filename="../application.cpp" line="510"/>
         <source>Terminal emulator is not set.</source>
         <translation>Es ist kein Terminalemulator eingestellt.</translation>
     </message>
@@ -996,33 +996,33 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="190"/>
+        <location filename="../mainwindow.cpp" line="199"/>
         <source>Clear text (Ctrl+K)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="466"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="907"/>
+        <location filename="../mainwindow.cpp" line="918"/>
         <source>&amp;Move to Trash</source>
         <translation>In den &amp;Papierkorb verschieben</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="907"/>
+        <location filename="../mainwindow.cpp" line="918"/>
         <source>&amp;Delete</source>
         <translation>&amp;Löschen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="969"/>
         <location filename="../mainwindow.cpp" line="980"/>
+        <location filename="../mainwindow.cpp" line="991"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="980"/>
+        <location filename="../mainwindow.cpp" line="991"/>
         <source>Switch user command is not set.</source>
         <translation>Befehl, um den Benutzer zu wechseln, ist nicht eingestellt.</translation>
     </message>
@@ -1053,17 +1053,17 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="248"/>
+        <location filename="../tabpage.cpp" line="255"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="261"/>
+        <location filename="../tabpage.cpp" line="268"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Freier Speicherplatz: %1 (Gesamt: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="276"/>
+        <location filename="../tabpage.cpp" line="283"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n Objekt</numerusform>
@@ -1071,7 +1071,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="278"/>
+        <location filename="../tabpage.cpp" line="285"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform>(%n versteckt)</numerusform>
@@ -1079,7 +1079,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="426"/>
+        <location filename="../tabpage.cpp" line="436"/>
         <source>%1 item(s) selected</source>
         <translation>%1 Objekte ausgewählt</translation>
     </message>

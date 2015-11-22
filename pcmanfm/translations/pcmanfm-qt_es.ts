@@ -825,99 +825,99 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="165"/>
         <source>Name of configuration profile</source>
         <translation>Nombre del perfil ce configuración</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="165"/>
         <source>PROFILE</source>
         <translation>PERFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Ejecutar PCManFM como un servicio</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM</source>
         <translation>Cerrar PCManFM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
         <translation>Abrir administrador de escritorio</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="174"/>
+        <location filename="../application.cpp" line="177"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Cerrar administrador de escritorio si está en ejecución</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
+        <location filename="../application.cpp" line="180"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferencias de escritorio en la página especificada</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="196"/>
         <source>NAME</source>
         <translation>NOMBRE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="183"/>
         <source>Open new window</source>
         <translation>Abrir nueva ventana</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
+        <location filename="../application.cpp" line="186"/>
         <source>Open Find Files utility</source>
         <translation>Abrir búsqueda de archivos</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Configurar papel tapiz desde un archivo</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="189"/>
         <source>FILE</source>
         <translation>ARCHIVO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Definir modo de papel tapiz. MODO =(color|estirar|ajustar|centrar|repetir)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="193"/>
         <source>MODE</source>
         <translation>MODO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferencias en la página especificada</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Files or directories to open</source>
         <translation>Archivos o directorios a abrir</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="199"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[Archivo 1, Archivo 2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="500"/>
-        <location filename="../application.cpp" line="507"/>
+        <location filename="../application.cpp" line="503"/>
+        <location filename="../application.cpp" line="510"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="507"/>
+        <location filename="../application.cpp" line="510"/>
         <source>Terminal emulator is not set.</source>
         <translation>El emulador de terminal no está configurado.</translation>
     </message>
@@ -984,33 +984,33 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="190"/>
+        <location filename="../mainwindow.cpp" line="199"/>
         <source>Clear text (Ctrl+K)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="466"/>
         <source>Version: %1</source>
         <translation>Versión: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="907"/>
+        <location filename="../mainwindow.cpp" line="918"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mover a la Papelera</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="907"/>
+        <location filename="../mainwindow.cpp" line="918"/>
         <source>&amp;Delete</source>
         <translation>&amp;Eliminar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="969"/>
         <location filename="../mainwindow.cpp" line="980"/>
+        <location filename="../mainwindow.cpp" line="991"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="980"/>
+        <location filename="../mainwindow.cpp" line="991"/>
         <source>Switch user command is not set.</source>
         <translation>El comando para cambiar de usuario no está definido.</translation>
     </message>
@@ -1041,17 +1041,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="248"/>
+        <location filename="../tabpage.cpp" line="255"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="261"/>
+        <location filename="../tabpage.cpp" line="268"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Espacio libre: %1 (Total %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="276"/>
+        <location filename="../tabpage.cpp" line="283"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n elemento</numerusform>
@@ -1059,7 +1059,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="278"/>
+        <location filename="../tabpage.cpp" line="285"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n oculto)</numerusform>
@@ -1067,7 +1067,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="426"/>
+        <location filename="../tabpage.cpp" line="436"/>
         <source>%1 item(s) selected</source>
         <translation>%1 elemento(s) seleccionado(s)</translation>
     </message>

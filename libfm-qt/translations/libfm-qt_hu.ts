@@ -807,7 +807,7 @@ Töröljük őket véglegesen?</translation>
         <translation>Asztal</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="207"/>
+        <location filename="../placesmodel.cpp" line="222"/>
         <source>Trash</source>
         <translation>Kuka</translation>
     </message>
@@ -832,7 +832,7 @@ Töröljük őket véglegesen?</translation>
         <translation>Eszközök</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="132"/>
+        <location filename="../placesmodel.cpp" line="143"/>
         <source>Bookmarks</source>
         <translation>Könyvjelzők</translation>
     </message>
@@ -840,7 +840,7 @@ Töröljük őket véglegesen?</translation>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="358"/>
+        <location filename="../placesview.cpp" line="362"/>
         <source>Empty Trash</source>
         <translation>Kukaürítés</translation>
     </message>
@@ -853,48 +853,48 @@ Töröljük őket véglegesen?</translation>
         <translation type="vanished">Töröl</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="346"/>
+        <location filename="../placesview.cpp" line="350"/>
         <source>Open in New Tab</source>
         <translation>Megnyitás új fülön</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="349"/>
+        <location filename="../placesview.cpp" line="353"/>
         <source>Open in New Window</source>
         <translation>Megnyitás új ablakban</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="367"/>
+        <location filename="../placesview.cpp" line="371"/>
         <source>Move Bookmark Up</source>
         <translation>Könyvjelző föl</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="372"/>
+        <location filename="../placesview.cpp" line="376"/>
         <source>Move Bookmark Down</source>
         <translation>Könyvjelző le</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="376"/>
+        <location filename="../placesview.cpp" line="380"/>
         <source>Rename Bookmark</source>
         <translation>Könyvjelző átnevezés</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="379"/>
+        <location filename="../placesview.cpp" line="383"/>
         <source>Remove Bookmark</source>
         <translation>Könyvjelző törlés</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="388"/>
-        <location filename="../placesview.cpp" line="405"/>
+        <location filename="../placesview.cpp" line="392"/>
+        <location filename="../placesview.cpp" line="409"/>
         <source>Unmount</source>
         <translation>Lecsatol</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="392"/>
+        <location filename="../placesview.cpp" line="396"/>
         <source>Mount</source>
         <translation>Csatol</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="398"/>
+        <location filename="../placesview.cpp" line="402"/>
         <source>Eject</source>
         <translation>Kidobat</translation>
     </message>
@@ -1012,55 +1012,55 @@ Módosítva: %3</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../utilities.cpp" line="152"/>
-        <location filename="../utilities.cpp" line="228"/>
+        <location filename="../utilities.cpp" line="150"/>
+        <location filename="../utilities.cpp" line="226"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../filelauncher.cpp" line="117"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="123"/>
+        <location filename="../utilities.cpp" line="121"/>
         <source>Rename File</source>
         <translation>Fájlátnevezés</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="124"/>
+        <location filename="../utilities.cpp" line="122"/>
         <source>Please enter a new name:</source>
         <translation>Új név:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="164"/>
+        <location filename="../utilities.cpp" line="162"/>
         <source>Create Folder</source>
         <translation>Mappakészítés</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="169"/>
+        <location filename="../utilities.cpp" line="167"/>
         <source>Please enter a new file name:</source>
         <translation>Új fájlnév:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="170"/>
+        <location filename="../utilities.cpp" line="168"/>
         <source>New text file</source>
         <translation>Új szövegfájl</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="174"/>
+        <location filename="../utilities.cpp" line="172"/>
         <source>Please enter a new folder name:</source>
         <translation>Űj mappanév:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="175"/>
+        <location filename="../utilities.cpp" line="173"/>
         <source>New folder</source>
         <translation>Új mappa</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="180"/>
+        <location filename="../utilities.cpp" line="178"/>
         <source>Enter a name for the new %1:</source>
         <translation>Az új %1 neve:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="165"/>
+        <location filename="../utilities.cpp" line="163"/>
         <source>Create File</source>
         <translation>Fájlkészítés</translation>
     </message>

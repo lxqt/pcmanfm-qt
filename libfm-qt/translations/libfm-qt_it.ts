@@ -404,7 +404,7 @@ Cosa vuoi fare?</translation>
     </message>
     <message>
         <source>OpenWith</source>
-        <translation>ApriCon</translation>
+        <translation type="vanished">ApriCon</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="157"/>
@@ -697,11 +697,11 @@ Vuoi invece eliminarli?</translation>
     </message>
     <message>
         <source>Folder</source>
-        <translation>Cartella</translation>
+        <translation type="vanished">Cartella</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="99"/>
@@ -811,7 +811,7 @@ Vuoi invece eliminarli?</translation>
         <translation>Scrivania</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="207"/>
+        <location filename="../placesmodel.cpp" line="222"/>
         <source>Trash</source>
         <translation>Cestino</translation>
     </message>
@@ -836,7 +836,7 @@ Vuoi invece eliminarli?</translation>
         <translation>Dispositivi</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="132"/>
+        <location filename="../placesmodel.cpp" line="143"/>
         <source>Bookmarks</source>
         <translation>Segnalibri</translation>
     </message>
@@ -844,61 +844,61 @@ Vuoi invece eliminarli?</translation>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="358"/>
+        <location filename="../placesview.cpp" line="362"/>
         <source>Empty Trash</source>
         <translation>Svuota cestino</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation>Rinomina</translation>
+        <translation type="vanished">Rinomina</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Elimina</translation>
+        <translation type="vanished">Elimina</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="346"/>
+        <location filename="../placesview.cpp" line="350"/>
         <source>Open in New Tab</source>
         <translation>Apri in una nuova scheda</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="349"/>
+        <location filename="../placesview.cpp" line="353"/>
         <source>Open in New Window</source>
         <translation>Apri in una nuova finestra</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="367"/>
+        <location filename="../placesview.cpp" line="371"/>
         <source>Move Bookmark Up</source>
         <translation>Sposta segnalibro in su</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="372"/>
+        <location filename="../placesview.cpp" line="376"/>
         <source>Move Bookmark Down</source>
         <translation>Sposta segnalibro in giù</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="376"/>
+        <location filename="../placesview.cpp" line="380"/>
         <source>Rename Bookmark</source>
         <translation>Rinomina segnalibro</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="379"/>
+        <location filename="../placesview.cpp" line="383"/>
         <source>Remove Bookmark</source>
         <translation>Rimuovi segnalibro</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="388"/>
-        <location filename="../placesview.cpp" line="405"/>
+        <location filename="../placesview.cpp" line="392"/>
+        <location filename="../placesview.cpp" line="409"/>
         <source>Unmount</source>
         <translation>Smonta</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="392"/>
+        <location filename="../placesview.cpp" line="396"/>
         <source>Mount</source>
         <translation>Monta</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="398"/>
+        <location filename="../placesview.cpp" line="402"/>
         <source>Eject</source>
         <translation>Espelli</translation>
     </message>
@@ -1016,55 +1016,55 @@ Ultima modifica: %3</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../utilities.cpp" line="152"/>
-        <location filename="../utilities.cpp" line="228"/>
+        <location filename="../utilities.cpp" line="150"/>
+        <location filename="../utilities.cpp" line="226"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../filelauncher.cpp" line="117"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="123"/>
+        <location filename="../utilities.cpp" line="121"/>
         <source>Rename File</source>
         <translation>Rinomina file</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="124"/>
+        <location filename="../utilities.cpp" line="122"/>
         <source>Please enter a new name:</source>
         <translation>Digita un nuovo nome:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="164"/>
+        <location filename="../utilities.cpp" line="162"/>
         <source>Create Folder</source>
         <translation>Crea cartella</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="169"/>
+        <location filename="../utilities.cpp" line="167"/>
         <source>Please enter a new file name:</source>
         <translation>Digita un nuovo nome del file:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="170"/>
+        <location filename="../utilities.cpp" line="168"/>
         <source>New text file</source>
         <translation>Nuovo file di testo</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="174"/>
+        <location filename="../utilities.cpp" line="172"/>
         <source>Please enter a new folder name:</source>
         <translation>Digita un nuovo nome della cartella:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="175"/>
+        <location filename="../utilities.cpp" line="173"/>
         <source>New folder</source>
         <translation>Nuova cartella</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="180"/>
+        <location filename="../utilities.cpp" line="178"/>
         <source>Enter a name for the new %1:</source>
         <translation>Digita un nome per %1:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="165"/>
+        <location filename="../utilities.cpp" line="163"/>
         <source>Create File</source>
         <translation>Crea file</translation>
     </message>
