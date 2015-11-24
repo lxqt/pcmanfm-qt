@@ -107,6 +107,7 @@ TabPage::~TabPage() {
     delete proxyFilter_;
   if(proxyModel_)
     delete proxyModel_;
+  stopWatchingNewFiles();
   if(folderModel_)
     folderModel_->unref();
 
@@ -130,6 +131,7 @@ void TabPage::freeFolder() {
 }
 
 /*static*/ void TabPage::onFolderStartLoading(FmFolder* _folder, TabPage* pThis) {
+  QTimer::singleShot(0, pThis, SLOT(stopWatchingNewFiles()));
   if(!pThis->overrideCursor_) {
     // FIXME: sometimes FmFolder of libfm generates unpaired "start-loading" and
     // "finish-loading" signals of uncertain reasons. This should be a bug in libfm.
@@ -171,6 +173,20 @@ void TabPage::restoreScrollPos() {
       folderView_->childView()->setCurrentIndex(index);
     }
   }
+  // get ready to select files that may be added later
+  connect(folderModel_, SIGNAL(filesAdded(FmFileInfoList*)),
+          this, SLOT(onFilesAdded(FmFileInfoList*)), Qt::UniqueConnection);
+}
+
+// slot
+void TabPage::onFilesAdded(FmFileInfoList* files) {
+  folderView_->selectFiles(files);
+}
+
+// slot
+void TabPage::stopWatchingNewFiles() {
+  disconnect(folderModel_, SIGNAL(filesAdded(FmFileInfoList*)),
+             this, SLOT(onFilesAdded(FmFileInfoList*)));
 }
 
 /*static*/ void TabPage::onFolderFinishLoading(FmFolder* _folder, TabPage* pThis) {
@@ -351,6 +367,7 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
 
     // free the previous model
     if(folderModel_) {
+      stopWatchingNewFiles();
       proxyModel_->setSourceModel(NULL);
       folderModel_->unref(); // unref the cached model
       folderModel_ = NULL;

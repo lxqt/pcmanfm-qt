@@ -103,8 +103,10 @@ void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_da
   FolderModel* model = static_cast<FolderModel*>(user_data);
   int n_files = g_slist_length(files);
   model->beginInsertRows(QModelIndex(), model->items.count(), model->items.count() + n_files - 1);
+  FmFileInfoList* infoList = fm_file_info_list_new();
   for(GSList* l = files; l; l = l->next) {
     FmFileInfo* info = FM_FILE_INFO(l->data);
+    fm_file_info_list_push_tail(infoList, info);
     FolderModelItem item(info);
 /*
     if(fm_file_info_is_hidden(info)) {
@@ -115,6 +117,7 @@ void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_da
     model->items.append(item);
   }
   model->endInsertRows();
+  Q_EMIT model->filesAdded(infoList);
 }
 
 //static
@@ -387,7 +390,10 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
       info = fileInfoFromIndex(itemIndex);
     }
     if(info)
-      destPath = fm_file_info_get_path(info);
+      if (fm_file_info_is_dir(info))
+        destPath = fm_file_info_get_path(info);
+      else
+        destPath = path();
     else
       return false;
   }

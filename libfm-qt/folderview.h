@@ -95,6 +95,7 @@ public:
   FmFileInfoList* selectedFiles() const;
   FmPathList* selectedFilePaths() const;
   QModelIndex indexFromFolderPath(FmPath* folderPath) const;
+  void selectFiles(FmFileInfoList* files);
 
   void selectAll();
 

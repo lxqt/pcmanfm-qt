@@ -88,6 +88,7 @@ public:
 
 Q_SIGNALS:
   void thumbnailLoaded(const QModelIndex& index, int size);
+  void filesAdded(FmFileInfoList* infoList);
 
 public Q_SLOTS:
   void updateIcons();
