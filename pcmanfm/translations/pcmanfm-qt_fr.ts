@@ -21,7 +21,7 @@
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="138"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_about.h" line="143"/>
@@ -42,28 +42,17 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished">Gestionnaire de fichiers de PCMan
+        <translation>Gestionnaire de fichiers de PCMan
 
-Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
+Copyright © 2009 - 2015 洪任諭 (Hong Jen Yee)
 
-Ce programme est du logiciel libre ; vous le redistribuer
-avec ou sans modification sous les termes de la licence pu-
-blique générale GNU telle que publiée par le fondation pour
-le logiciel libre, soit en version 2, soit en n&apos;importe quelle
-version ultérieure (à votre discrétion).
+Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier suivant les termes de la “GNU General Public License” telle que publiée par la Free Software Foundation, soit en version 2, soit (à votre gré) toute version ultérieure.
 
-Ce programme est distribué dans l&apos;espoir qu&apos;il soit utile,
-mais SANS AUCUNE GARANTIE ; sans même la garantie impli-
-cite de QUALITÉ MARCHANDE ou d&apos;APTITUDE À UN CERTAIN
-BUT. Voir la licence publique générale GNU pour de plus am-
-ples détails.
+Ce programme est distribué dans l&apos;espoir qu&apos;il vous sera utile, mais SANS AUCUNE GARANTIE ; sans même la garantie implicite de COMMERCIALISABILITÉ, ni d’ADÉQUATION À UN OBJECTIF PARTICULIER. Consultez la Licence Générale Publique GNU pour plus de détails.
 
-Vous devriez avoir reçu une copie de la licence publique géné-
-rale GNU avec ce programme ; si ce n&apos;est pas le cas, écrivez à la
-fondation pour le logiciel libre à l&apos;adresse ci-dessous :
+Vous devriez avoir reçu une copie de la licence publique générale GNU avec ce programme ; si ce n&apos;est pas le cas, écrivez à la fondation pour le logiciel libre à l&apos;adresse ci-dessous :
 Free Software Foundation, Inc.n 51 Franklin Street,
-Fifth Floor, Boston, MA 02110-1301, USA. {2009 ?} {2014 ?} {2
-?} {51 ?} {02110-1301,?}</translation>
+Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
@@ -103,23 +92,13 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
         <translation type="vanished">Gestionnaire de fichiers de PCMan
 
-Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
+Copyright © 2009 - 2015 洪任諭 (Hong Jen Yee)
 
-Ce programme est du logiciel libre ; vous le redistribuer
-avec ou sans modification sous les termes de la licence pu-
-blique générale GNU telle que publiée par le fondation pour
-le logiciel libre, soit en version 2, soit en n&apos;importe quelle
-version ultérieure (à votre discrétion).
+Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier suivant les termes de la “GNU General Public License” telle que publiée par la Free Software Foundation, soit en version 2, soit (à votre gré) toute version ultérieure.
 
-Ce programme est distribué dans l&apos;espoir qu&apos;il soit utile,
-mais SANS AUCUNE GARANTIE ; sans même la garantie impli-
-cite de QUALITÉ MARCHANDE ou d&apos;APTITUDE À UN CERTAIN
-BUT. Voir la licence publique générale GNU pour de plus am-
-ples détails.
+Ce programme est distribué dans l&apos;espoir qu&apos;il vous sera utile, mais SANS AUCUNE GARANTIE ; sans même la garantie implicite de COMMERCIALISABILITÉ, ni d’ADÉQUATION À UN OBJECTIF PARTICULIER. Consultez la Licence Générale Publique GNU pour plus de détails.
 
-Vous devriez avoir reçu une copie de la licence publique géné-
-rale GNU avec ce programme ; si ce n&apos;est pas le cas, écrivez à la
-fondation pour le logiciel libre à l&apos;adresse ci-dessous :
+Vous devriez avoir reçu une copie de la licence publique générale GNU avec ce programme ; si ce n&apos;est pas le cas, écrivez à la fondation pour le logiciel libre à l&apos;adresse ci-dessous :
 Free Software Foundation, Inc.n 51 Franklin Street,
 Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
@@ -149,7 +128,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="114"/>
         <source>Detecting...</source>
-        <translation>Détection en cours...</translation>
+        <translation>Détection en cours…</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_autorun.h" line="115"/>
@@ -162,7 +141,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formulaire</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="76"/>
@@ -177,7 +156,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="79"/>
         <source>Image file</source>
-        <translation type="unfinished">Fichier image</translation>
+        <translation>Fichier image</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="84"/>
@@ -187,7 +166,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-folder.h" line="85"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">&amp;Parcourir</translation>
+        <translation>&amp;Parcourir</translation>
     </message>
 </context>
 <context>
@@ -235,7 +214,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="268"/>
         <source>Label Text</source>
-        <translation type="unfinished">Texte de l&apos;étiquette</translation>
+        <translation>Texte de l&apos;étiquette</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="271"/>
@@ -260,7 +239,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="276"/>
         <source>Window Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestionnaire de fenêtre</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_desktop-preferences.h" line="277"/>
@@ -322,7 +301,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="567"/>
         <source>Go</source>
-        <translation>Aller à…</translation>
+        <translation>Aller à</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="568"/>
@@ -422,37 +401,37 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="597"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Croissant</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="598"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Décroissant</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="599"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Par nom de fichier</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="600"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Par date de &amp;modification</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="601"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Par &amp;type de fichier</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="602"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Par &amp;Propriétaire</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="603"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Dossiers d&apos;abord</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="619"/>
@@ -472,17 +451,17 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="629"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Sensible à la &amp;casse</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="630"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Par &amp;taille de fichier</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="631"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fermer la fenêtre</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="595"/>
@@ -625,22 +604,22 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="638"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Maj+N</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="640"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="643"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrer</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="646"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer un &amp;nouveau</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="649"/>
@@ -702,27 +681,27 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="637"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Dossier</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="639"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fichier vide</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="641"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Trouver des fichiers</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="642"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="644"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrer par chaîne…</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="645"/>
@@ -737,7 +716,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="648"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Voir</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="650"/>
@@ -846,7 +825,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Fichiers ou dossiers à ouvrir</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="500"/>
@@ -924,12 +903,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Effacer le texte (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Version: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="907"/>
@@ -1119,7 +1098,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="756"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>Mémoriser la taille de la dernière fenêtre fermée</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="724"/>
@@ -1134,7 +1113,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="726"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Délai avant auto-sélection en mode simple click (0 pour désactiver)</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="727"/>
@@ -1144,7 +1123,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="728"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation>s</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="736"/>
@@ -1179,22 +1158,22 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="729"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Marque-pages :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="732"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans l&apos;onglet courant</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="733"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans un nouvel onglet</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="734"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans une nouvelle fenêtre</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="739"/>
@@ -1204,32 +1183,32 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="740"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmer avant de déplacer des fichiers à la poubelle</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="741"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne pas poser de questions avant lancement de fichier exécutable</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="748"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Interface utilisateur</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="750"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Cacher les fichiers de sauvegarde</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="751"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Toujours montrer le nom complet des fichiers</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="752"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Montrer les icônes de fichiers cachés ombragées</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="759"/>
@@ -1239,37 +1218,37 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="764"/>
         <source>Home</source>
-        <translation type="unfinished">Page d&apos;accueil</translation>
+        <translation>Page d&apos;accueil</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="766"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Bureau</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="768"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation>Poubelle</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="770"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordinateur</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="772"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Applications</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="774"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Périphériques</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="776"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Réseau</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="780"/>
@@ -1329,17 +1308,17 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="797"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Modèles</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="798"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne montrer que les modèles définis par l&apos;utilisateur dans le menu</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="799"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne montrer qu&apos;un modèle pour chaque type MIME</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="800"/>
