@@ -764,99 +764,99 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="165"/>
         <source>Name of configuration profile</source>
         <translation>設定プロファイルの名前</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="165"/>
         <source>PROFILE</source>
         <translation>PROFILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM as a daemon</source>
         <translation>PCManFMをデーモンとして実行</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM</source>
         <translation>PCManFMを終了</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
         <translation>デスクトップマネージャーを起動</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="174"/>
+        <location filename="../application.cpp" line="177"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>実行中のデスクトップマネージャーを終了</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
+        <location filename="../application.cpp" line="180"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>特定の名前のページ上でデスクトップ設定ダイアログを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="196"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>画像ファイルからデスクトップの壁紙を設定</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="189"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="193"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>デスクトップの壁紙のモードを設定する。MODE=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="190"/>
+        <location filename="../application.cpp" line="193"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="193"/>
+        <location filename="../application.cpp" line="196"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>特定の名前のページで設定ダイアログを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="183"/>
         <source>Open new window</source>
         <translation>新しいウインドウを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
+        <location filename="../application.cpp" line="186"/>
         <source>Open Find Files utility</source>
         <translation>ファイル検索ユーティリティーを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="199"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="196"/>
+        <location filename="../application.cpp" line="199"/>
         <source>Files or directories to open</source>
         <translation>開くファイルまたはディレクトリー</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="500"/>
-        <location filename="../application.cpp" line="507"/>
+        <location filename="../application.cpp" line="503"/>
+        <location filename="../application.cpp" line="510"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="507"/>
+        <location filename="../application.cpp" line="510"/>
         <source>Terminal emulator is not set.</source>
         <translation>端末エミュレーターを未設定です</translation>
     </message>
@@ -923,33 +923,33 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="190"/>
+        <location filename="../mainwindow.cpp" line="199"/>
         <source>Clear text (Ctrl+K)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="466"/>
         <source>Version: %1</source>
         <translation>バージョン: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="907"/>
+        <location filename="../mainwindow.cpp" line="918"/>
         <source>&amp;Move to Trash</source>
         <translation>ゴミ箱へ移動(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="907"/>
+        <location filename="../mainwindow.cpp" line="918"/>
         <source>&amp;Delete</source>
         <translation>削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="969"/>
         <location filename="../mainwindow.cpp" line="980"/>
+        <location filename="../mainwindow.cpp" line="991"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="980"/>
+        <location filename="../mainwindow.cpp" line="991"/>
         <source>Switch user command is not set.</source>
         <translation>ユーザー切替コマンドを未設定です</translation>
     </message>
@@ -984,31 +984,31 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="248"/>
+        <location filename="../tabpage.cpp" line="255"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="261"/>
+        <location filename="../tabpage.cpp" line="268"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>空き領域: %1 (全体: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="276"/>
+        <location filename="../tabpage.cpp" line="283"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n 個のアイテム</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="278"/>
+        <location filename="../tabpage.cpp" line="285"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform>(%n 個の隠しアイテム)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="426"/>
+        <location filename="../tabpage.cpp" line="436"/>
         <source>%1 item(s) selected</source>
         <translation>%1 個のアイテムを選択</translation>
     </message>
