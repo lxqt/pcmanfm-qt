@@ -47,6 +47,9 @@ public:
   }
 
 private:
+  void drawText(QPainter* painter, QStyleOptionViewItemV4& opt, QRectF& textRect) const;
+
+private:
   QListView* view_;
   QIcon symlinkIcon_;
   QColor shadowColor_;

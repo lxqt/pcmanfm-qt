@@ -54,12 +54,11 @@ QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QMo
     opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
     opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
 
-    // FIXME: there're some problems in this size hint calculation.
     Q_ASSERT(gridSize_ != QSize());
-    QRectF textRect(0, 0, gridSize_.width() - 4, gridSize_.height() - opt.decorationSize.height() - 4);
-    drawText(nullptr, opt, textRect); // passing nullptr for painter will calculate the bounding rect only.
-    int width = qMax((int)textRect.width(), opt.decorationSize.width()) + 4;
-    int height = opt.decorationSize.height() + textRect.height() + 4;
+    QRectF textRect(0, 0, gridSize_.width(), gridSize_.height() - opt.decorationSize.height());
+    drawText(nullptr, opt, textRect); // passing NULL for painter will calculate the bounding rect only.
+    int width = qMax((int)textRect.width(), opt.decorationSize.width());
+    int height = opt.decorationSize.height() + textRect.height();
     return QSize(width, height);
   }
   return QStyledItemDelegate::sizeHint(option, index);
@@ -101,7 +100,11 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
       painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
 
     // draw the text
-    QRectF textRect(opt.rect.x(), opt.rect.y() + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
+    // The text rect dimensions should be exactly as they were in sizeHint()
+    QRectF textRect(opt.rect.x() - (gridSize_.width() - opt.rect.width()) / 2,
+                    opt.rect.y() + opt.decorationSize.height(),
+                    gridSize_.width(),
+                    gridSize_.height() - opt.decorationSize.height());
     drawText(painter, opt, textRect);
     painter->restore();
   }
@@ -135,6 +138,7 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt
   int visibleLines = 0;
   layout.beginLayout();
   QString elidedText;
+  textRect.adjust(2, 2, -2, -2); // a 2-px margin is considered at FolderView::updateGridSize()
   for(;;) {
     QTextLine line = layout.createLine();
     if(!line.isValid())
@@ -156,21 +160,25 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt
     ++ visibleLines;
   }
   layout.endLayout();
+  width = qMax(width, (qreal)opt.fontMetrics.width(elidedText));
 
   // draw background for selected item
   QRectF boundRect = layout.boundingRect();
   //qDebug() << "bound rect: " << boundRect << "width: " << width;
   boundRect.setWidth(width);
+  boundRect.setHeight(height);
   boundRect.moveTo(textRect.x() + (textRect.width() - width)/2, textRect.y());
 
+  QRectF selRect = boundRect.adjusted(-2, -2, 2, 2);
+
   if(!painter) { // no painter, calculate the bounding rect only
-    textRect = boundRect;
+    textRect = selRect;
     return;
   }
 
   QPalette::ColorGroup cg = opt.state & QStyle::State_Enabled ? QPalette::Normal : QPalette::Disabled;
   if(opt.state & QStyle::State_Selected) {
-    painter->fillRect(boundRect, opt.palette.highlight());
+    painter->fillRect(selRect, opt.palette.highlight());
     painter->setPen(opt.palette.color(cg, QPalette::HighlightedText));
   }
   else
@@ -180,7 +188,7 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt
   for(int i = 0; i < visibleLines; ++i) {
     QTextLine line = layout.lineAt(i);
     if(i == (visibleLines - 1) && !elidedText.isEmpty()) { // the last line, draw elided text
-      QPointF pos(textRect.x() + line.position().x(), textRect.y() + line.y() + line.ascent());
+      QPointF pos(boundRect.x() + line.position().x(), boundRect.y() + line.y() + line.ascent());
       painter->drawText(pos, elidedText);
     }
     else {
@@ -192,7 +200,7 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt
     // draw focus rect
     QStyleOptionFocusRect o;
     o.QStyleOption::operator=(opt);
-    o.rect = boundRect.toRect(); // subElementRect(SE_ItemViewItemFocusRect, vopt, widget);
+    o.rect = selRect.toRect(); // subElementRect(SE_ItemViewItemFocusRect, vopt, widget);
     o.state |= QStyle::State_KeyboardFocusChange;
     o.state |= QStyle::State_Item;
     QPalette::ColorGroup cg = (opt.state & QStyle::State_Enabled)
