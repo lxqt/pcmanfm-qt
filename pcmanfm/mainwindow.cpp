@@ -32,16 +32,16 @@
 #include <QDebug>
 
 #include "tabpage.h"
-#include "filelauncher.h"
-#include "filemenu.h"
-#include "bookmarkaction.h"
-#include "fileoperation.h"
-#include "utilities.h"
-#include "filepropsdialog.h"
-#include "pathedit.h"
+#include "launcher.h"
+#include <libfm-qt/filemenu.h>
+#include <libfm-qt/bookmarkaction.h>
+#include <libfm-qt/fileoperation.h>
+#include <libfm-qt/utilities.h>
+#include <libfm-qt/filepropsdialog.h>
+#include <libfm-qt/pathedit.h>
 #include "ui_about.h"
 #include "application.h"
-#include "../libfm-qt/path.h"
+#include <libfm-qt/path.h>
 
 // #include "qmodeltest/modeltest.h"
 

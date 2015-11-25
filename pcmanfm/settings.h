@@ -23,11 +23,11 @@
 
 #include <QObject>
 #include <libfm/fm.h>
-#include "folderview.h"
-#include "foldermodel.h"
+#include <libfm-qt/folderview.h>
+#include <libfm-qt/foldermodel.h>
 #include "desktopwindow.h"
-#include "sidepane.h"
-#include "thumbnailloader.h"
+#include <libfm-qt/sidepane.h>
+#include <libfm-qt/thumbnailloader.h>
 
 namespace PCManFM {
 

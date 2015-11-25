@@ -1,18 +1,18 @@
-set(LIBFM_LIBRARY "fm-qt5")
 set(QTX_INCLUDE_DIRS "")
 set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
 
 include_directories(
     ${QTX_INCLUDE_DIRS}
     ${LIBFM_INCLUDE_DIRS}
+    ${LIBFM_QT_INCLUDE_DIRS}
     ${LIBMENUCACHE_INCLUDE_DIRS}
     ${SYSTEM_LIBS_INCLUDE_DIRS}
     "${CMAKE_CURRENT_BINARY_DIR}"
-    "${PROJECT_SOURCE_DIR}/libfm-qt"
 )
 
 link_directories(
     ${LIBFM_LIBRARY_DIRS}
+    ${LIBFM_QT_LIBRARY_DIRS}
     ${LIBMENUCACHE_LIBRARY_DIRS}
     ${SYSTEM_LIBS_LIBRARY_DIRS}
 )
@@ -84,9 +84,9 @@ set_property(
 target_link_libraries(pcmanfm-qt
     ${QTX_LIBRARIES}
     ${LIBFM_LIBRARIES}
+    ${LIBFM_QT_LIBRARIES}
     ${LIBMENUCACHE_LIBRARIES}
     ${SYSTEM_LIBS_LIBRARIES}
-    ${LIBFM_LIBRARY}
 )
 
 install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})

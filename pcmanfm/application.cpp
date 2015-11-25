@@ -39,10 +39,10 @@
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
 #include "desktoppreferencesdialog.h"
-#include "mountoperation.h"
+#include <libfm-qt/mountoperation.h>
 #include "autorundialog.h"
 #include "launcher.h"
-#include "filesearchdialog.h"
+#include <libfm-qt/filesearchdialog.h>
 
 #include <QScreen>
 #include <QWindow>

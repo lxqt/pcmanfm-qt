@@ -1,6 +1,6 @@
 #include <libfm/fm.h>
 #include "application.h"
-#include "libfmqt.h"
+#include <libfm-qt/libfmqt.h>
 
 int main(int argc, char** argv) {
   // ensure that glib integration of Qt is not turned off

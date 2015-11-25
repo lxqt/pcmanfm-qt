@@ -21,7 +21,7 @@
 #ifndef PCMANFM_FOLDERVIEW_H
 #define PCMANFM_FOLDERVIEW_H
 
-#include "folderview.h"
+#include <libfm-qt/folderview.h>
 
 namespace Fm {
   class FileMenu;

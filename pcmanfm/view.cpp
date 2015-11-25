@@ -19,9 +19,8 @@
 
 
 #include "view.h"
-#include "filemenu.h"
-#include "foldermenu.h"
-#include "filelauncher.h"
+#include <libfm-qt/filemenu.h>
+#include <libfm-qt/foldermenu.h>
 #include "application.h"
 #include "settings.h"
 #include "application.h"

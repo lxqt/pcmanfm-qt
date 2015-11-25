@@ -24,9 +24,9 @@
 #include <QWidget>
 #include <QVBoxLayout>
 #include <libfm/fm.h>
-#include "browsehistory.h"
+#include <libfm-qt/browsehistory.h>
 #include "view.h"
-#include "path.h"
+#include <libfm-qt/path.h>
 
 namespace Fm {
   class FileLauncher;

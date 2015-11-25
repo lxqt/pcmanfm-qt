@@ -23,8 +23,8 @@
 
 #include <QApplication>
 #include "settings.h"
-#include "libfmqt.h"
-#include "editbookmarksdialog.h"
+#include <libfm-qt/libfmqt.h>
+#include <libfm-qt/editbookmarksdialog.h>
 #include <QVector>
 #include <QPointer>
 #include <QProxyStyle>

@@ -19,7 +19,7 @@
 
 
 #include "desktopitemdelegate.h"
-#include "foldermodel.h"
+#include <libfm-qt/foldermodel.h>
 #include <QApplication>
 #include <QListView>
 #include <QPainter>
