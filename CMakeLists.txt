@@ -12,25 +12,15 @@ find_package(Qt5Widgets 5.2 REQUIRED)
 find_package(Qt5DBus 5.2 REQUIRED)
 find_package(Qt5LinguistTools 5.2 REQUIRED)
 find_package(Qt5X11Extras 5.2 REQUIRED)
+find_package(fm-qt REQUIRED)
 
-find_package(PkgConfig)
-pkg_check_modules(SYSTEM_LIBS REQUIRED
-    glib-2.0
-    gio-2.0
-    gio-unix-2.0
-    xcb
-)
-
-pkg_check_modules(LIBFM_QT REQUIRED libfm-qt>=0.10.0) # FIXME: replace with cmake imported targets later
-pkg_check_modules(LIBFM REQUIRED libfm>=1.2.0)
-pkg_check_modules(LIBMENUCACHE REQUIRED libmenu-cache>=0.4.0)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(LIB_XCB REQUIRED xcb)
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 include(GNUInstallDirs)
 include(LXQtTranslateTs)
 include(LXQtTranslateDesktop)
-
-add_definitions(-DQT_NO_KEYWORDS)
 
 if (CMAKE_VERSION VERSION_LESS "3.1")
     include(CheckCXXCompilerFlag)

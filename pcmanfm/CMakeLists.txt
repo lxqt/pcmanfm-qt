@@ -1,22 +1,3 @@
-set(QTX_INCLUDE_DIRS "")
-set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
-
-include_directories(
-    ${QTX_INCLUDE_DIRS}
-    ${LIBFM_INCLUDE_DIRS}
-    ${LIBFM_QT_INCLUDE_DIRS}
-    ${LIBMENUCACHE_INCLUDE_DIRS}
-    ${SYSTEM_LIBS_INCLUDE_DIRS}
-    "${CMAKE_CURRENT_BINARY_DIR}"
-)
-
-link_directories(
-    ${LIBFM_LIBRARY_DIRS}
-    ${LIBFM_QT_LIBRARY_DIRS}
-    ${LIBMENUCACHE_LIBRARY_DIRS}
-    ${SYSTEM_LIBS_LIBRARY_DIRS}
-)
-
 set(pcmanfm_SRCS
     application.cpp
     pcmanfm.cpp
@@ -75,18 +56,17 @@ add_executable(pcmanfm-qt
 set_property(
      TARGET pcmanfm-qt APPEND
      PROPERTY COMPILE_DEFINITIONS
-     LIBFM_QT_API=Q_DECL_IMPORT
      PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/pcmanfm-qt"
-     LIBFM_DATA_DIR="${LIBFM_PREFIX}/share/libfm" # This is a little bit dirty
      PCMANFM_QT_VERSION="${PCMANFM_QT_VERSION}"
 )
 
+target_include_directories(pcmanfm-qt
+    PRIVATE "${LIB_XCB_INDLUDE_DIRS}"
+)
+
 target_link_libraries(pcmanfm-qt
-    ${QTX_LIBRARIES}
-    ${LIBFM_LIBRARIES}
-    ${LIBFM_QT_LIBRARIES}
-    ${LIBMENUCACHE_LIBRARIES}
-    ${SYSTEM_LIBS_LIBRARIES}
+    fm-qt
+    "${LIB_XCB_LIBRARIES}"
 )
 
 install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
