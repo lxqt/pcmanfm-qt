@@ -65,6 +65,9 @@ target_include_directories(pcmanfm-qt
 )
 
 target_link_libraries(pcmanfm-qt
+    Qt5::X11Extras
+    Qt5::Widgets
+    Qt5::DBus
     fm-qt
     "${LIB_XCB_LIBRARIES}"
 )
@@ -79,5 +82,3 @@ install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/pcmanfm-qt/trans
 
 # prevent the generated files from being deleted during make clean
 set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)
-
-qt5_use_modules(pcmanfm-qt Widgets DBus)
