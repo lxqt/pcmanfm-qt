@@ -25,7 +25,7 @@
 #include <QSettings>
 #include <QApplication>
 #include "desktopwindow.h"
-#include "utilities.h"
+#include <libfm-qt/utilities.h>
 // #include <QDesktopServices>
 
 namespace PCManFM {

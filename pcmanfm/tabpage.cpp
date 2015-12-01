@@ -19,17 +19,17 @@
 
 
 #include "tabpage.h"
-#include "filelauncher.h"
-#include "filemenu.h"
-#include "mountoperation.h"
+#include "launcher.h"
+#include <libfm-qt/filemenu.h>
+#include <libfm-qt/mountoperation.h>
 #include <QApplication>
 #include <QCursor>
 #include <QMessageBox>
 #include <QScrollBar>
-#include "proxyfoldermodel.h"
+#include <libfm-qt/proxyfoldermodel.h>
 #include "settings.h"
 #include "application.h"
-#include "cachedfoldermodel.h"
+#include <libfm-qt/cachedfoldermodel.h>
 #include <QTimer>
 #include <QTextStream>
 

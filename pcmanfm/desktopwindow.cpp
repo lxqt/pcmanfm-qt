@@ -40,14 +40,14 @@
 #include "./application.h"
 #include "mainwindow.h"
 #include "desktopitemdelegate.h"
-#include "foldermenu.h"
-#include "filemenu.h"
-#include "cachedfoldermodel.h"
-#include "folderview_p.h"
-#include "fileoperation.h"
-#include "filepropsdialog.h"
-#include "utilities.h"
-#include "path.h"
+#include <libfm-qt/foldermenu.h>
+#include <libfm-qt/filemenu.h>
+#include <libfm-qt/cachedfoldermodel.h>
+#include <libfm-qt/folderview_p.h>
+#include <libfm-qt/fileoperation.h>
+#include <libfm-qt/filepropsdialog.h>
+#include <libfm-qt/utilities.h>
+#include <libfm-qt/path.h>
 #include "xdgdir.h"
 
 #include <QX11Info>

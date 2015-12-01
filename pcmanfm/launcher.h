@@ -21,7 +21,7 @@
 #ifndef PCMANFM_LAUNCHER_H
 #define PCMANFM_LAUNCHER_H
 
-#include "filelauncher.h"
+#include <libfm-qt/filelauncher.h>
 
 namespace PCManFM {
 

@@ -269,12 +269,12 @@
   <customwidget>
    <class>Fm::ColorButton</class>
    <extends>QPushButton</extends>
-   <header>colorbutton.h</header>
+   <header location="global">libfm-qt/colorbutton.h</header>
   </customwidget>
   <customwidget>
    <class>Fm::FontButton</class>
    <extends>QPushButton</extends>
-   <header>fontbutton.h</header>
+   <header location="global">libfm-qt/fontbutton.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
