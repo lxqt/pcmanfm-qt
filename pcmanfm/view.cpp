@@ -87,34 +87,42 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
 
   // add some more menu items for dirs
   bool all_native = true;
+  bool all_directory = true;
   FmFileInfoList* files = menu->files();
   for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
     FmFileInfo* fi = FM_FILE_INFO(l->data);
     if(!fm_file_info_is_dir(fi))
-      return; /* actions are valid only if all selected are directories */
-    else if(!fm_file_info_is_native(fi))
+      all_directory = false;
+    else if(fm_file_info_is_dir(fi) && !fm_file_info_is_native(fi))
       all_native = false;
   }
 
-  QAction* action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New T&ab"), menu);
-  connect(action, &QAction::triggered, this, &View::onNewTab);
-  menu->insertAction(menu->separator1(), action);
-
-  action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
-  connect(action, &QAction::triggered, this, &View::onNewWindow);
-  menu->insertAction(menu->separator1(), action);
-
-  // TODO: add search
-  // action = menu->addAction(_("Search"));
-  if(all_native) {
-    action = new QAction(QIcon::fromTheme("utilities-terminal"), tr("Open in Termina&l"), menu);
-    connect(action, &QAction::triggered, this, &View::onOpenInTerminal);
+  if (all_directory)
+  {
+    QAction* action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New T&ab"), menu);
+    connect(action, &QAction::triggered, this, &View::onNewTab);
     menu->insertAction(menu->separator1(), action);
+
+    action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
+    connect(action, &QAction::triggered, this, &View::onNewWindow);
+    menu->insertAction(menu->separator1(), action);
+
+    // TODO: add search
+    // action = menu->addAction(_("Search"));
+
+    if(all_native)
+    {
+      action = new QAction(QIcon::fromTheme("utilities-terminal"), tr("Open in Termina&l"), menu);
+      connect(action, &QAction::triggered, this, &View::onOpenInTerminal);
+      menu->insertAction(menu->separator1(), action);
+    }
+  }
+  else {
+    menu->pasteAction()->setVisible(false);
   }
 }
 
 void View::prepareFolderMenu(Fm::FolderMenu* menu) {
-
 }
 
 void View::updateFromSettings(Settings& settings) {
