@@ -37,7 +37,7 @@ qt5_wrap_ui(pcmanfm_UIS_H ${pcmanfm_UIS})
 # add translation for pcmanfm-qt
 lxqt_translate_ts(QM_FILES
     UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
-    SOURCES ${pcmanfm_SRCS} ${pcmanfm_UIS_H}
+    SOURCES ${pcmanfm_SRCS} ${pcmanfm_UIS}
 )
 
 # translate desktop entry files for pcmanfm-qt and desktop preferences
