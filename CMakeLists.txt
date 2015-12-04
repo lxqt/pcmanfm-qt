@@ -40,7 +40,7 @@ else()
   set(CMAKE_CXX_STANDARD 11)
 endif()
 
-if (CMAKE_COMPILER_IS_GNUCXX)
+if (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
     # set visibility to hidden to hide symbols, unless they're exported manually in the code
     set(CMAKE_CXX_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions ${CMAKE_CXX_FLAGS}")
 endif()
