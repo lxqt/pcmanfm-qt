@@ -22,6 +22,10 @@ include(GNUInstallDirs)
 include(LXQtTranslateTs)
 include(LXQtTranslateDesktop)
 
+# set visibility to hidden to hide symbols, unless they're exported manually in the code
+set(CMAKE_CXX_VISIBILITY_PRESET hidden)
+set(CMAKE_VISIBILITY_INLINES_HIDDEN 1)
+
 if (CMAKE_VERSION VERSION_LESS "3.1")
     include(CheckCXXCompilerFlag)
     CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
@@ -42,7 +46,7 @@ endif()
 
 if (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
     # set visibility to hidden to hide symbols, unless they're exported manually in the code
-    set(CMAKE_CXX_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions ${CMAKE_CXX_FLAGS}")
+    set(CMAKE_CXX_FLAGS "-fno-exceptions ${CMAKE_CXX_FLAGS}")
 endif()
 
 set(CMAKE_AUTOMOC TRUE)
