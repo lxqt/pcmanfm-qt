@@ -119,6 +119,7 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
   }
   else {
     menu->pasteAction()->setVisible(false);
+    menu->createAction()->setVisible(false);
   }
 }
 
