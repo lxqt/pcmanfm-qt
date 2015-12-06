@@ -160,7 +160,7 @@ bool Settings::loadFile(QString filePath) {
   setSiUnit(settings.value("SIUnit", false).toBool());
 
   setOnlyUserTemplates(settings.value("OnlyUserTemplates", false).toBool());
-  setTemplateTypeOnce(settings.value("OemplateTypeOnce", false).toBool());
+  setTemplateTypeOnce(settings.value("TemplateTypeOnce", false).toBool());
   setTemplateRunApp(settings.value("TemplateRunApp", false).toBool());
 
   settings.endGroup();
@@ -255,7 +255,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("SIUnit", siUnit_);
 
   settings.setValue("OnlyUserTemplates", onlyUserTemplates_);
-  settings.setValue("OemplateTypeOnce", templateTypeOnce_);
+  settings.setValue("TemplateTypeOnce", templateTypeOnce_);
   settings.setValue("TemplateRunApp", templateRunApp_);
 
   settings.endGroup();
