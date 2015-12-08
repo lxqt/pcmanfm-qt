@@ -115,7 +115,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -216,18 +216,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <translation>Оконный менеджер</translation>
     </message>
     <message>
-        <source>Desktop</source>
-        <translation type="vanished">Рабочий стол</translation>
-    </message>
-    <message>
-        <source>Desktop folder:</source>
-        <translation type="vanished">Папка рабочего стола:</translation>
-    </message>
-    <message>
-        <source>Folder path</source>
-        <translation type="vanished">Путь к папке</translation>
-    </message>
-    <message>
         <location filename="../desktop-preferences.ui" line="220"/>
         <source>Advanced</source>
         <translation>Расширенные</translation>
@@ -235,7 +223,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../desktop-preferences.ui" line="232"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Показывать меню, предоставляемые оконными менеджерами по клику на рабочий стол</translation>
+        <translation>Показывать меню, предоставляемые оконными менеджерами, по клику на рабочий стол</translation>
     </message>
 </context>
 <context>
@@ -243,7 +231,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation>Найnb файлы</translation>
+        <translation>Найти файлы</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
@@ -264,7 +252,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation>Регистрочувствительный</translation>
+        <translation>Нечувствительный к регистру</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
@@ -341,7 +329,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../file-search.ui" line="212"/>
         <source>File contains</source>
-        <translation>Содержание файла</translation>
+        <translation>Файл содержит</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="252"/>
@@ -356,12 +344,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation>Больше чем:</translation>
+        <translation>Больше, чем:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation>Меньше чем:</translation>
+        <translation>Меньше, чем:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="317"/>
@@ -371,12 +359,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../file-search.ui" line="323"/>
         <source>Earlier than:</source>
-        <translation>Раньше чем:</translation>
+        <translation>Раньше, чем:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="340"/>
         <source>Later than:</source>
-        <translation>Позже чем:</translation>
+        <translation>Позже, чем:</translation>
     </message>
 </context>
 <context>
@@ -414,7 +402,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../main-win.ui" line="119"/>
         <source>C&amp;reate New</source>
-        <translation>С&amp;оздать новое</translation>
+        <translation>&amp;Создать</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="137"/>
@@ -459,7 +447,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../main-win.ui" line="256"/>
         <source>Go &amp;Up</source>
-        <translation>Перейти &amp;вверх</translation>
+        <translation>Перейти вв&amp;ерх</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="259"/>
@@ -509,7 +497,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../main-win.ui" line="328"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Новое окно</translation>
+        <translation>Новое &amp;окно</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="331"/>
@@ -669,7 +657,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>&amp;Case Sensitive</source>
-        <translation>&amp;Регистрочувствительная</translation>
+        <translation>&amp;Чувствительная к регистру</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
@@ -704,17 +692,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../main-win.ui" line="729"/>
         <source>Close &amp;left tabs</source>
-        <translation>Закрыть вкладки &amp;слева</translation>
+        <translation>Закрыть вкладки с&amp;лева</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="737"/>
         <source>Close &amp;right tabs</source>
-        <translation>Закрыть вкладки &amp;справа</translation>
+        <translation>Закрыть вкладки с&amp;права</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="742"/>
         <source>Close &amp;other tabs</source>
-        <translation>Закрыть &amp;другие</translation>
+        <translation>Закрыть &amp;остальные вкладки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
@@ -799,7 +787,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../main-win.ui" line="627"/>
         <source>File &amp;Properties</source>
-        <translation>&amp;Свойства файла</translation>
+        <translation>Свойства &amp;файла</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="630"/>
@@ -809,7 +797,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../main-win.ui" line="635"/>
         <source>&amp;Folder Properties</source>
-        <translation>&amp;Свойства папки</translation>
+        <translation>Свойства &amp;папки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="661"/>
@@ -1158,7 +1146,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../preferences.ui" line="269"/>
         <source>Size of thumbnails:</source>
-        <translation>Размер значков:</translation>
+        <translation>Размер эскизов:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="279"/>
@@ -1238,7 +1226,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Перемещать удалённые файлы в корзину вместо удаления их с диска.</translation>
+        <translation>Перемещать удалённые файлы в «корзину» вместо удаления их с диска.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="554"/>
@@ -1278,12 +1266,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Удалять файлы на съёмных носителях вместо создания «Корзины»</translation>
+        <translation>Удалять файлы на съёмных носителях вместо создания «корзины»</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>Просить подтверждения перед удалением файлов в «Корзину»</translation>
+        <translation>Подтверждение перед перемещением файлов в «корзину»</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
@@ -1318,7 +1306,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../preferences.ui" line="420"/>
         <source>Home</source>
-        <translation>Домой</translation>
+        <translation>Дом</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="433"/>
@@ -1373,7 +1361,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../preferences.ui" line="594"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>Подключать съёмные тома автоматически при их подключении</translation>
+        <translation>Подключать съёмные тома автоматически при их вставлении</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="601"/>
@@ -1413,7 +1401,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../preferences.ui" line="720"/>
         <source>Show only user defined templates in menu</source>
-        <translation>Показывать только шаблоны, определённые пользователем, в меню</translation>
+        <translation>Показывать в меню только шаблоны, определённые пользователем</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="727"/>
@@ -1423,7 +1411,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../preferences.ui" line="734"/>
         <source>Run default application after creation from template</source>
-        <translation>Запускать приложение по умолчанию после создания шаблона</translation>
+        <translation>Запускать приложение по умолчанию после создания из шаблона</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
