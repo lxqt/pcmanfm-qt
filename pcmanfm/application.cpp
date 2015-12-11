@@ -518,7 +518,7 @@ void Application::preferences(QString page) {
     preferencesDialog_ = new PreferencesDialog(page);
   }
   else {
-    // TODO: set page
+    preferencesDialog_.data()->selectPage(page);
   }
   preferencesDialog_.data()->show();
   preferencesDialog_.data()->raise();

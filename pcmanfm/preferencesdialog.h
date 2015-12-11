@@ -40,6 +40,8 @@ public:
 
   virtual void accept();
 
+  void selectPage(QString name);
+
 private:
   void initIconThemes(Settings& settings);
   void initArchivers(Settings& settings);

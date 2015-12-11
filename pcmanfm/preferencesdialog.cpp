@@ -45,13 +45,7 @@ PreferencesDialog::PreferencesDialog (QString activePage, QWidget* parent):
 
   initFromSettings();
 
-  if(!activePage.isEmpty()) {
-    QWidget* page = findChild<QWidget*>(activePage + "Page");
-    if(page) {
-      int index = ui.stackedWidget->indexOf(page);
-      ui.listWidget->setCurrentRow(index);
-    }
-  }
+  selectPage(activePage);
   adjustSize();
 }
 
@@ -360,6 +354,16 @@ void PreferencesDialog::applySettings() {
 void PreferencesDialog::accept() {
   applySettings();
   QDialog::accept();
+}
+
+void PreferencesDialog::selectPage(QString name) {
+  if(!name.isEmpty()) {
+    QWidget* page = findChild<QWidget*>(name + "Page");
+    if(page) {
+      int index = ui.stackedWidget->indexOf(page);
+      ui.listWidget->setCurrentRow(index);
+    }
+  }
 }
 
 } // namespace PCManFM
