@@ -96,6 +96,13 @@ Settings::Settings():
   showThumbnails_(true),
   archiver_(),
   siUnit_(false),
+  placesHome_(true),
+  placesDesktop_(true),
+  placesApplications_(true),
+  placesTrash_(true),
+  placesRoot_(true),
+  placesComputer_(true),
+  placesNetwork_(true),
   bigIconSize_(48),
   smallIconSize_(24),
   sidePaneIconSize_(24),
@@ -228,6 +235,16 @@ bool Settings::loadFile(QString filePath) {
   thumbnailIconSize_ = settings.value("ThumbnailIconSize", 128).toInt();
   settings.endGroup();
 
+  settings.beginGroup("Places");
+  placesHome_ = settings.value("PlacesHome", true).toBool();
+  placesDesktop_ = settings.value("PlacesDesktop", true).toBool();
+  placesApplications_ = settings.value("PlacesApplications", true).toBool();
+  placesTrash_ = settings.value("PlacesTrash", true).toBool();
+  placesRoot_ = settings.value("PlacesRoot", true).toBool();
+  placesComputer_ = settings.value("PlacesComputer", true).toBool();
+  placesNetwork_ = settings.value("PlacesNetwork", true).toBool();
+  settings.endGroup();
+
   settings.beginGroup("Window");
   fixedWindowWidth_ = settings.value("FixedWidth", 640).toInt();
   fixedWindowHeight_ = settings.value("FixedHeight", 480).toInt();
@@ -317,6 +334,16 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("SmallIconSize", smallIconSize_);
   settings.setValue("SidePaneIconSize", sidePaneIconSize_);
   settings.setValue("ThumbnailIconSize", thumbnailIconSize_);
+  settings.endGroup();
+
+  settings.beginGroup("Places");
+  settings.setValue("PlacesHome", placesHome_);
+  settings.setValue("PlacesDesktop", placesDesktop_);
+  settings.setValue("PlacesApplications", placesApplications_);
+  settings.setValue("PlacesTrash", placesTrash_);
+  settings.setValue("PlacesRoot", placesRoot_);
+  settings.setValue("PlacesComputer", placesComputer_);
+  settings.setValue("PlacesNetwork", placesNetwork_);
   settings.endGroup();
 
   settings.beginGroup("Window");
@@ -516,5 +543,6 @@ void Settings::setTerminal(QString terminalCommand) {
     fm_config->terminal = g_strdup(terminal_.toLocal8Bit().constData());
     g_signal_emit_by_name(fm_config, "changed::terminal");
 }
+
 
 } // namespace PCManFM

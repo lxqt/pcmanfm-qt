@@ -322,6 +322,63 @@ public:
     showHidden_ = showHidden;
   }
 
+  bool placesHome() const {
+      return placesHome_;
+  }
+
+  void setPlacesHome(bool placesHome) {
+      placesHome_ = placesHome;
+  }
+
+  bool placesDesktop() const {
+      return placesDesktop_;
+  }
+
+  void setPlacesDesktop(bool placesDesktop) {
+      placesDesktop_ = placesDesktop;
+  }
+
+  bool placesApplications() const {
+      return placesApplications_;
+  }
+
+  void setPlacesApplications(bool placesApplications) {
+      placesApplications_ = placesApplications;
+  }
+
+  bool placesTrash() const {
+      return placesTrash_;
+  }
+
+  void setPlacesTrash(bool placesTrash) {
+      placesTrash_ = placesTrash;
+  }
+
+  bool placesRoot() const {
+      return placesRoot_;
+  }
+
+  void setPlacesRoot(bool placesRoot) {
+      placesRoot_ = placesRoot;
+  }
+
+  bool placesComputer() const {
+      return placesComputer_;
+  }
+
+  void setPlacesComputer(bool placesComputer) {
+      placesComputer_ = placesComputer;
+  }
+
+  bool placesNetwork() const {
+      return placesNetwork_;
+  }
+
+  void setPlacesNetwork(bool placesNetwork) {
+      placesNetwork_ = placesNetwork;
+  }
+
+
   Qt::SortOrder sortOrder() const {
     return sortOrder_;
   }
@@ -536,6 +593,7 @@ public:
     fm_config->template_run_app = templateRunApp_;
   }
 
+
 private:
   QString profileName_;
   bool supportTrash_;
@@ -598,6 +656,14 @@ private:
   bool backupAsHidden_;
   bool showFullNames_;
   bool shadowHidden_;
+
+  bool placesHome_;
+  bool placesDesktop_;
+  bool placesApplications_;
+  bool placesTrash_;
+  bool placesRoot_;
+  bool placesComputer_;
+  bool placesNetwork_;
 
   int bigIconSize_;
   int smallIconSize_;
