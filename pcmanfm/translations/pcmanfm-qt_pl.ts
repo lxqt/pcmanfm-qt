@@ -877,7 +877,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="183"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz narzędzie wyszukiwania</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
@@ -990,7 +990,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuń tekst (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
@@ -1392,7 +1392,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="796"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>Menedżer &amp;archiwów</translation>
+        <translation>Menedżer &amp;archiwów:</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="797"/>
