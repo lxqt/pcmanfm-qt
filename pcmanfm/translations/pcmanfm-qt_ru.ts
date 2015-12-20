@@ -881,7 +881,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../application.cpp" line="193"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation>Выбрать режим обоев рабочего стола. РЕЖИМ=(цвет|растянуть|вместить|по центру|черепицей)</translation>
+        <translation>Выбрать режим обоев рабочего стола. РЕЖИМ=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>

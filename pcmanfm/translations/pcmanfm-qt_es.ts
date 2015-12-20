@@ -888,7 +888,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation>Definir modo de papel tapiz. MODO =(color|estirar|ajustar|centrar|repetir)</translation>
+        <translation>Definir modo de papel tapiz. MODO =(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
