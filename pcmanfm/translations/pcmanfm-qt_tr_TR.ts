@@ -723,7 +723,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>FILE masaüstü duvarkağıdı olarak ayarla</translation>
+        <translation>DOSYA masaüstü duvarkağıdı olarak ayarlansın</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
