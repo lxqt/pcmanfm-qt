@@ -733,7 +733,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation>Masaüstü duvarkağıdı ayarı. MODE=(color|stretch|fit|center|tile)</translation>
+        <translation>Masaüstü duvarkağıdı ayarı. MOD=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
