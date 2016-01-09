@@ -1142,7 +1142,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="713"/>
         <source>Display</source>
-        <translation>Schermo</translation>
+        <translation>Visualizza</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="729"/>
