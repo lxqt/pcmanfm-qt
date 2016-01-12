@@ -133,10 +133,22 @@ void DesktopItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& op
     return;
   }
 
+  if (opt.state & QStyle::State_Selected || opt.state & QStyle::State_MouseOver) {
+    if (const QWidget* widget = opt.widget) { // let the style engine do it
+      QStyle* style = widget->style() ? widget->style() : qApp->style();
+      QStyleOptionViewItemV4 o(opt);
+      o.text = QString();
+      o.rect = selRect.toAlignedRect().intersected(opt.rect); // due to clipping and rounding, we might lose 1px
+      o.showDecorationSelected = true;
+      style->drawPrimitive(QStyle::PE_PanelItemViewItem, &o, painter, widget);
+    }
+  }
+
   if((opt.state & QStyle::State_Selected) && opt.widget) {
     QPalette palette = opt.widget->palette();
     // qDebug("w: %f, h:%f, m:%f", boundRect.width(), boundRect.height(), layout.minimumWidth());
-    painter->fillRect(selRect, palette.highlight());
+    if(!opt.widget)
+      painter->fillRect(selRect, palette.highlight());
   }
   else { // only draw shadow for non-selected items
     // draw shadow, FIXME: is it possible to use QGraphicsDropShadowEffect here?
