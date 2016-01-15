@@ -31,7 +31,6 @@
 #include <QTranslator>
 #include <gio/gio.h>
 
-
 class QScreen;
 
 class QFileSystemWatcher;
