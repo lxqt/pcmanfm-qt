@@ -13,6 +13,7 @@ set(pcmanfm_SRCS
     desktopitemdelegate.cpp
     autorundialog.cpp
     settings.cpp
+    xdndworkaround.cpp
 )
 
 qt5_add_dbus_adaptor(pcmanfm_SRCS
@@ -62,6 +63,7 @@ set_property(
 
 target_include_directories(pcmanfm-qt
     PRIVATE "${LIB_XCB_INDLUDE_DIRS}"
+    "${Qt5Gui_PRIVATE_INCLUDE_DIRS}"
 )
 
 target_link_libraries(pcmanfm-qt
