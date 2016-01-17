@@ -114,6 +114,9 @@ protected Q_SLOTS:
   void onFilePropertiesActivated();
 
 private:
+  void removeBottomGap();
+
+private:
   Fm::ProxyFolderModel* proxyModel_;
   Fm::CachedFolderModel* model_;
   FmFolder* folder_;

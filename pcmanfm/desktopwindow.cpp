@@ -441,8 +441,8 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
       workArea.adjust(12, 12, -12, -12);
       if(customItemPos_.keys(tl).isEmpty() // don't put items on each other
          && tl.x() >= workArea.x() && tl.y() >= workArea.y()
-         && tl.x() + listView_->gridSize().width() <= workArea.right()
-         && tl.y() + listView_->gridSize().height() <= workArea.bottom()) {
+         && tl.x() + listView_->gridSize().width() <= workArea.right() + 1 // for historical reasons (-> Qt doc)
+         && tl.y() + listView_->gridSize().height() <= workArea.bottom() + 1) { // as above
         QByteArray name = fm_file_info_get_name(file);
         customItemPos_[name] = tl;
         // qDebug() << "indexMoved:" << name << index << itemRect;
@@ -451,6 +451,43 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
   }
   saveItemPositions();
   queueRelayout();
+}
+
+void DesktopWindow::removeBottomGap() {
+  /************************************************************
+   NOTE: Desktop is an area bounded from below while icons snap
+   to its grid srarting from above. Therefore, we try to adjust
+   the vertical cell margin to prevent relatively large gaps
+   from taking shape at the desktop bottom.
+   ************************************************************/
+  QSize cellMargins = getMargins();
+  int workAreaHeight = qApp->desktop()->availableGeometry(screenNum_).height()
+                       - 24; // a 12-pix margin will be considered everywhere
+  int cellHeight = listView_->gridSize().height() + listView_->spacing();
+  int iconNumber = workAreaHeight / cellHeight;
+  int bottomGap = workAreaHeight % cellHeight;
+  /*******************************************
+   First try to make room for an extra icon...
+   *******************************************/
+  // If one pixel is subtracted from the vertical margin, cellHeight
+  // will decrease by 2 while bottomGap will increase by 2*iconNumber.
+  // So, we can add an icon to the bottom once this inequality holds:
+  // bottomGap + 2*n*iconNumber >= cellHeight - 2*n
+  // From here, we get our "subtrahend":
+  qreal exactNumber = ((qreal)cellHeight - (qreal)bottomGap)
+                      / (2.0 * (qreal)iconNumber + 2.0);
+  int subtrahend = (int)exactNumber + ((int)exactNumber == exactNumber ? 0 : 1);
+  if(subtrahend < cellMargins.height()) { // lack of margin doesn't seem good
+    cellMargins -= QSize(0, subtrahend);
+  }
+  /***************************************************
+   ... but if that can't be done, try to spread icons!
+   ***************************************************/
+  else
+    cellMargins += QSize(0, (bottomGap / iconNumber) / 2);
+  // set the new margins (if they're changed)
+  delegate_->setMargins(cellMargins);
+  setMargins(cellMargins);
 }
 
 // QListView does item layout in a very inflexible way, so let's do our custom layout again.
@@ -513,13 +550,13 @@ void DesktopWindow::relayoutItems() {
       }
       // move to next cell in the column
       pos.setY(pos.y() + grid.height() + listView_->spacing());
-      if(pos.y() + grid.height() > workArea.bottom()) {
+      if(pos.y() + grid.height() > workArea.bottom() + 1) {
         // if the next position may exceed the bottom of work area, go to the top of next column
         pos.setX(pos.x() + grid.width() + listView_->spacing());
         pos.setY(workArea.top());
 
         // check if the new column exceeds the right margin of work area
-        if(pos.x() + grid.width() > workArea.right()) {
+        if(pos.x() + grid.width() > workArea.right() + 1) {
           if(desktop->isVirtualDesktop()) {
             // in virtual desktop mode, go to next screen
             ++screen;
@@ -555,8 +592,8 @@ void DesktopWindow::loadItemPositions() {
     if(var.isValid()) {
       QPoint customPos = var.toPoint();
       if (customPos.x() >= workArea.x() && customPos.y() >= workArea.y()
-          && customPos.x() + listView_->gridSize().width() <= workArea.right()
-          && customPos.y() + listView_->gridSize().height() <= workArea.bottom())
+          && customPos.x() + listView_->gridSize().width() <= workArea.right() + 1
+          && customPos.y() + listView_->gridSize().height() <= workArea.bottom() + 1)
       {
         // correct positions that are't aligned to the grid
         qreal w = qAbs((qreal)customPos.x() - (qreal)workArea.x())
@@ -567,7 +604,7 @@ void DesktopWindow::loadItemPositions() {
         customPos.setY(workArea.y() + qRound(h) * (grid.height() + listView_->spacing()));
         while(customItemPos_.values().contains(customPos)) {
           customPos.setY(customPos.y() + grid.height() + listView_->spacing());
-          if(customPos.y() + grid.height() > workArea.bottom()) {
+          if(customPos.y() + grid.height() > workArea.bottom() + 1) {
             customPos.setX(customPos.x() + grid.width() + listView_->spacing());
             customPos.setY(workArea.top());
           }
@@ -625,6 +662,7 @@ void DesktopWindow::onStickToCurrentPos(bool toggled) {
 
 void DesktopWindow::queueRelayout(int delay) {
   // qDebug() << "queueRelayout";
+  removeBottomGap();
   if(!relayoutTimer_) {
     relayoutTimer_ = new QTimer();
     relayoutTimer_->setSingleShot(true);

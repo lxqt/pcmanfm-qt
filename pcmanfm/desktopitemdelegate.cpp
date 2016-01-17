@@ -34,7 +34,8 @@ DesktopItemDelegate::DesktopItemDelegate(QListView* view, QObject* parent):
   QStyledItemDelegate(parent ? parent : view),
   view_(view),
   symlinkIcon_(QIcon::fromTheme("emblem-symbolic-link")),
-  shadowColor_(0, 0, 0) {
+  shadowColor_(0, 0, 0),
+  margins_(QSize(3, 3)) {
 }
 
 // FIXME: we need to figure out a way to derive from Fm::FolderItemDelegate to avoid code duplication.
@@ -74,7 +75,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   }
 
   // draw text
-  QSize gridSize = view_->gridSize() - QSize(6, 6);
+  QSize gridSize = view_->gridSize() - 2 * margins_;
   QRectF textRect(opt.rect.x() - (gridSize.width() - opt.rect.width()) / 2,
                   opt.rect.y() + opt.decorationSize.height(),
                   gridSize.width(),
@@ -189,8 +190,7 @@ QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QM
   opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
   opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
 
-  QSize gridSize = view_->gridSize()
-                   - QSize(6, 6); // a 6-px margin is added at FolderView::updateGridSize()
+  QSize gridSize = view_->gridSize() - 2 * margins_;
   Q_ASSERT(gridSize != QSize());
   QRectF textRect(0, 0, gridSize.width(), gridSize.height() - opt.decorationSize.height());
   drawText(NULL, opt, textRect); // passing NULL for painter will calculate the bounding rect only.
