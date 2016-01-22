@@ -161,7 +161,7 @@ bool Settings::loadFile(QString filePath) {
     // the value from XSETTINGS instead of hard code a fallback value.
     fallbackIconThemeName_ = "elementary"; // fallback icon theme name
   }
-  suCommand_ = settings.value("SuCommand", "gksu %s").toString();
+  suCommand_ = settings.value("SuCommand", "lxqt-sudo %s").toString();
   setTerminal(settings.value("Terminal", "xterm").toString());
   setArchiver(settings.value("Archiver", "file-roller").toString());
   setSiUnit(settings.value("SIUnit", false).toBool());
