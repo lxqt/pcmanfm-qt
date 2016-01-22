@@ -1,6 +1,6 @@
 [System]
 IconThemeName=elementary
-SuCommand=gksu %s
+SuCommand=lxqt-sudo %s
 TerminalCommand=
 Archiver=file-roller
 SIUnit=false
