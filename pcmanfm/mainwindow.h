@@ -150,6 +150,7 @@ protected Q_SLOTS:
     closeLeftTabs();
     closeRightTabs();
   }
+  void focusPathEntry();
 
 protected:
   // void changeEvent( QEvent * event);

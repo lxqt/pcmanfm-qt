@@ -167,10 +167,10 @@ MainWindow::MainWindow(FmPath* path):
   // create shortcuts
   QShortcut* shortcut;
   shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_L), this);
-  connect(shortcut, &QShortcut::activated, pathEntry, static_cast<void (QWidget::*)()>(&Fm::PathEdit::setFocus));
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::focusPathEntry);
 
   shortcut = new QShortcut(Qt::ALT + Qt::Key_D, this);
-  connect(shortcut, &QShortcut::activated, pathEntry, static_cast<void (QWidget::*)()>(&QWidget::setFocus));
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::focusPathEntry);
 
   shortcut = new QShortcut(Qt::CTRL + Qt::Key_Tab, this);
   connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutNextTab);
@@ -949,6 +949,13 @@ void MainWindow::closeRightTabs() {
   if(rightClickIndex < 0) return;
   while(rightClickIndex < ui.tabBar->count() - 1)
     closeTab(rightClickIndex + 1);
+}
+
+void MainWindow::focusPathEntry() {
+  if(pathEntry != nullptr) {
+    pathEntry->setFocus();
+    pathEntry->selectAll();
+  }
 }
 
 void MainWindow::updateFromSettings(Settings& settings) {
