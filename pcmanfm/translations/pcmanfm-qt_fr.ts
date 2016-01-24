@@ -716,7 +716,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="648"/>
         <source>&amp;View</source>
-        <translation>&amp;Voir</translation>
+        <translation>&amp;Affichage</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_main-win.h" line="650"/>
@@ -942,7 +942,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="191"/>
         <source>Compact Icon View</source>
-        <translation>Vue en icônes compacte</translation>
+        <translation>Vue compacte</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="192"/>
@@ -1118,7 +1118,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="727"/>
         <source>Default view mode:</source>
-        <translation>Mode de vue par défaut :</translation>
+        <translation>Mode d&apos;affichage par défaut :</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="728"/>
@@ -1153,7 +1153,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="713"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Affichage</translation>
     </message>
     <message>
         <location filename="../../build/pcmanfm/ui_preferences.h" line="729"/>
