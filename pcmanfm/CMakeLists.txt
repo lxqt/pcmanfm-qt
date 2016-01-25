@@ -13,7 +13,6 @@ set(pcmanfm_SRCS
     desktopitemdelegate.cpp
     autorundialog.cpp
     settings.cpp
-    xdndworkaround.cpp
 )
 
 qt5_add_dbus_adaptor(pcmanfm_SRCS
