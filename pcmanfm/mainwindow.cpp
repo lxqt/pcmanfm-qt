@@ -166,6 +166,9 @@ MainWindow::MainWindow(FmPath* path):
 
   // create shortcuts
   QShortcut* shortcut;
+  shortcut = new QShortcut(QKeySequence::Quit, this);
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::close);
+
   shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_L), this);
   connect(shortcut, &QShortcut::activated, this, &MainWindow::focusPathEntry);
 
