@@ -151,6 +151,7 @@ protected Q_SLOTS:
     closeRightTabs();
   }
   void focusPathEntry();
+  void toggleMenuBar();
 
 protected:
   // void changeEvent( QEvent * event);

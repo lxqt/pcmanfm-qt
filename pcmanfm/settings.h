@@ -306,6 +306,14 @@ public:
     sidePaneMode_ = sidePaneMode;
   }
 
+  bool showMenuBar() const {
+    return showMenuBar_;
+  }
+
+  void setShowMenuBar(bool showMenuBar) {
+    showMenuBar_ = showMenuBar;
+  }
+
   Fm::FolderView::ViewMode viewMode() const {
     return viewMode_;
   }
@@ -632,6 +640,7 @@ private:
   bool lastWindowMaximized_;
   int splitterPos_;
   Fm::SidePane::Mode sidePaneMode_;
+  bool showMenuBar_;
 
   Fm::FolderView::ViewMode viewMode_;
   bool showHidden_;
