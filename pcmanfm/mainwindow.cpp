@@ -973,10 +973,7 @@ void MainWindow::updateFromSettings(Settings& settings) {
 
   // tabs
   ui.tabBar->setTabsClosable(settings.showTabClose());
-
-  if(!settings.alwaysShowTabs()) {
-    ui.tabBar->setVisible(ui.tabBar->count() > 1);
-  }
+  ui.tabBar->setVisible(settings.alwaysShowTabs() || (ui.tabBar->count() > 1));
 
   // all tab pages
   int n = ui.stackedWidget->count();
