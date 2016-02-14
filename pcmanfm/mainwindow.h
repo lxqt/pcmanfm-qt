@@ -141,6 +141,7 @@ protected Q_SLOTS:
   void onSidePaneCreateNewFolderRequested(FmPath* path);
   void onSidePaneModeChanged(Fm::SidePane::Mode mode);
   void onSplitterMoved(int pos, int index);
+  void onResetFocus();
 
   void onBackForwardContextMenu(QPoint pos);
 
