@@ -166,6 +166,9 @@ MainWindow::MainWindow(FmPath* path):
 
   // create shortcuts
   QShortcut* shortcut;
+  shortcut = new QShortcut(QKeySequence(Qt::Key_Escape), this);
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::onResetFocus);
+
   shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_L), this);
   connect(shortcut, &QShortcut::activated, this, &MainWindow::focusPathEntry);
 
@@ -497,6 +500,12 @@ void MainWindow::on_actionThumbnailView_triggered() {
 
 void MainWindow::onTabBarCloseRequested(int index) {
   closeTab(index);
+}
+
+void MainWindow::onResetFocus() {
+  if(TabPage* page = currentPage()) {
+    currentPage()->folderView()->childView()->setFocus();
+  }
 }
 
 void MainWindow::onTabBarTabMoved(int from, int to) {
