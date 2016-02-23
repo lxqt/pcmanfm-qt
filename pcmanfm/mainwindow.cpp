@@ -205,6 +205,13 @@ MainWindow::MainWindow(FmPath* path):
   shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this);
   connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDelete_triggered);
 
+  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_I), this);
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::focusFilterBar);
+
+  // in addition to F3, for convenience
+  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_F), this);
+  connect(shortcut, &QShortcut::activated, ui.actionFindFiles, &QAction::trigger);
+
   if(QToolButton* clearButton = ui.filterBar->findChild<QToolButton*>()) {
     clearButton->setToolTip(tr("Clear text (Ctrl+K)"));
     shortcut = new QShortcut(Qt::CTRL + Qt::Key_K, this);
@@ -421,6 +428,21 @@ void MainWindow::on_actionFolderFirst_triggered(bool checked) {
 
 void MainWindow::on_actionFilter_triggered(bool checked) {
   ui.filterBar->setVisible(checked);
+  if(checked)
+    ui.filterBar->setFocus();
+  else if(TabPage* tabPage = currentPage()) {
+    ui.filterBar->clear();
+    tabPage->folderView()->childView()->setFocus();
+    // clear filter string for all tabs
+    int n = ui.stackedWidget->count();
+    for(int i = 0; i < n; ++i) {
+      TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
+      if(!page->getFilterStr().isEmpty()) {
+        page->setFilterStr(QString());
+        page->applyFilter();
+      }
+    }
+  }
   static_cast<Application*>(qApp)->settings().setShowFilter(checked);
 }
 
@@ -516,6 +538,13 @@ void MainWindow::onTabBarTabMoved(int from, int to) {
     ui.stackedWidget->blockSignals(false); // unblock signals
     ui.stackedWidget->setCurrentWidget(page);
   }
+}
+
+void MainWindow::focusFilterBar() {
+  if(!ui.filterBar->isVisible())
+    ui.actionFilter->trigger();
+  else
+    ui.filterBar->setFocus();
 }
 
 void MainWindow::onFilterStringChanged(QString str) {
