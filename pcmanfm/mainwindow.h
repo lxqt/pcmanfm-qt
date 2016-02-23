@@ -120,6 +120,7 @@ protected Q_SLOTS:
   void onTabBarCurrentChanged(int index);
   void onTabBarTabMoved(int from, int to);
 
+  void focusFilterBar();
   void onFilterStringChanged(QString str);
 
   void onShortcutPrevTab();

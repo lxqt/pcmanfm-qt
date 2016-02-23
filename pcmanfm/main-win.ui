@@ -92,6 +92,9 @@
           <property name="clearButtonEnabled">
            <bool>true</bool>
           </property>
+          <property name="toolTip">
+           <string>Focus with Ctrl+I</string>
+          </property>
          </widget>
         </item>
        </layout>
@@ -701,6 +704,9 @@
    </property>
    <property name="text">
     <string>&amp;Filter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
    </property>
   </action>
   <action name="actionCloseLeft">
