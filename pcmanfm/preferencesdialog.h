@@ -42,6 +42,9 @@ public:
 
   void selectPage(QString name);
 
+protected Q_SLOTS:
+  void lockMargins(bool lock);
+
 private:
   void initIconThemes(Settings& settings);
   void initArchivers(Settings& settings);

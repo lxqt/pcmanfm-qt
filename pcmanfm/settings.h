@@ -511,6 +511,23 @@ public:
     return thumbnailIconSize_;
   }
 
+  QSize folderViewCellMargins() const {
+    return folderViewCellMargins_;
+  }
+
+  void setFolderViewCellMargins(QSize size) {
+    folderViewCellMargins_ = size;
+  }
+
+  QSize desktopCellMargins() const {
+    return desktopCellMargins_;
+  }
+
+  void setDesktopCellMargins(QSize size) {
+    desktopCellMargins_ = size;
+  }
+
+
   bool showThumbnails() {
     return showThumbnails_;
   }
@@ -682,6 +699,9 @@ private:
   bool onlyUserTemplates_;
   bool templateTypeOnce_;
   bool templateRunApp_;
+
+  QSize folderViewCellMargins_;
+  QSize desktopCellMargins_;
 };
 
 }

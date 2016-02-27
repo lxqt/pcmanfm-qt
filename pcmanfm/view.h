@@ -41,6 +41,13 @@ public:
 
   void updateFromSettings(Settings& settings);
 
+  QSize  getMargins() const {
+    return Fm::FolderView::getMargins();
+  }
+  void setMargins(QSize size) {
+    Fm::FolderView::setMargins(size);
+  }
+
 Q_SIGNALS:
   void openDirRequested(FmPath* path, int target);
 

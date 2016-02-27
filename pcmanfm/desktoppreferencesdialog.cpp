@@ -87,6 +87,10 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
 
   connect(ui.buttonBox->button(QDialogButtonBox::Apply), &QPushButton::clicked,
           this, &DesktopPreferencesDialog::onApplyClicked);
+
+  ui.hMargin->setValue(settings.desktopCellMargins().width());
+  ui.vMargin->setValue(settings.desktopCellMargins().height());
+  connect(ui.lockMargins, &QAbstractButton::clicked, this, &DesktopPreferencesDialog::lockMargins);
 }
 
 DesktopPreferencesDialog::~DesktopPreferencesDialog() {
@@ -108,6 +112,16 @@ void DesktopPreferencesDialog::setupDesktopFolderUi()
     this, &DesktopPreferencesDialog::onBrowseDesktopFolderClicked);
 }
 
+void DesktopPreferencesDialog::lockMargins(bool lock) {
+  ui.vMargin->setDisabled(lock);
+  if(lock) {
+    ui.vMargin->setValue(ui.hMargin->value());
+    connect(ui.hMargin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), ui.vMargin, &QSpinBox::setValue);
+  }
+  else
+    disconnect(ui.hMargin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), ui.vMargin, &QSpinBox::setValue);
+}
+
 void DesktopPreferencesDialog::applySettings()
 {
   Settings& settings = static_cast<Application*>(qApp)->settings();
@@ -123,6 +137,7 @@ void DesktopPreferencesDialog::applySettings()
   settings.setDesktopFgColor(ui.textColor->color());
   settings.setDesktopShadowColor(ui.shadowColor->color());
   settings.setShowWmMenu(ui.showWmMenu->isChecked());
+  settings.setDesktopCellMargins(QSize(ui.hMargin->value(), ui.vMargin->value()));
 
   settings.save();
 }

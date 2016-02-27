@@ -47,6 +47,7 @@ protected Q_SLOTS:
   void onWallpaperModeChanged(int index);
   void onBrowseClicked();
   void onBrowseDesktopFolderClicked();
+  void lockMargins(bool lock);
 
   void applySettings();
 

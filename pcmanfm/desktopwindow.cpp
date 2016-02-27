@@ -344,7 +344,8 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
   setWallpaperMode(settings.wallpaperMode());
   setFont(settings.desktopFont());
   setIconSize(Fm::FolderView::IconMode, QSize(settings.bigIconSize(), settings.bigIconSize()));
-  // setIconSize may trigger relayout of items by QListView, so we need to do the layout again.
+  setMargins(settings.desktopCellMargins());
+  // setIconSize and setMargins may trigger relayout of items by QListView, so we need to do the layout again.
   queueRelayout();
   setForeground(settings.desktopFgColor());
   setBackground(settings.desktopBgColor());
@@ -477,7 +478,10 @@ void DesktopWindow::removeBottomGap() {
   qreal exactNumber = ((qreal)cellHeight - (qreal)bottomGap)
                       / (2.0 * (qreal)iconNumber + 2.0);
   int subtrahend = (int)exactNumber + ((int)exactNumber == exactNumber ? 0 : 1);
-  if(subtrahend < cellMargins.height()) { // lack of margin doesn't seem good
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  int minCellHeight = settings.desktopCellMargins().height();
+  if(subtrahend > 0
+     && cellMargins.height() - subtrahend >= minCellHeight) {
     cellMargins -= QSize(0, subtrahend);
   }
   /***************************************************
@@ -488,6 +492,8 @@ void DesktopWindow::removeBottomGap() {
   // set the new margins (if they're changed)
   delegate_->setMargins(cellMargins);
   setMargins(cellMargins);
+  // in case the text shadow is reset to (0,0,0,0)
+  setShadow(settings.desktopShadowColor());
 }
 
 // QListView does item layout in a very inflexible way, so let's do our custom layout again.
