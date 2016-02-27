@@ -164,6 +164,10 @@ MainWindow::MainWindow(FmPath* path):
   group->addAction(ui.actionAscending);
   group->addAction(ui.actionDescending);
 
+  // Add menubar actions to the main window this is necessary so that actions
+  // shortcuts are still working when the menubar is hidden.
+  addActions(ui.menubar->actions());
+
   // Show or hide the menu bar
   ui.menubar->setVisible(settings.showMenuBar());
 
