@@ -135,6 +135,8 @@ void View::updateFromSettings(Settings& settings) {
   setIconSize(Fm::FolderView::ThumbnailMode, QSize(settings.thumbnailIconSize(), settings.thumbnailIconSize()));
   setIconSize(Fm::FolderView::DetailedListMode, QSize(settings.smallIconSize(), settings.smallIconSize()));
 
+  setMargins(settings.folderViewCellMargins());
+
   setAutoSelectionDelay(settings.autoSelectionDelay());
 
   Fm::ProxyFolderModel* proxyModel = model();
