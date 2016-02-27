@@ -32,19 +32,6 @@
      <number>0</number>
     </property>
     <item>
-     <widget class="PCManFM::TabBar" name="tabBar" native="true">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="acceptDrops">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item>
      <widget class="QSplitter" name="splitter">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -74,6 +61,19 @@
         <property name="bottomMargin">
          <number>0</number>
         </property>
+        <item>
+         <widget class="PCManFM::TabBar" name="tabBar" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="acceptDrops">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
         <item>
          <widget class="QStackedWidget" name="stackedWidget">
           <property name="sizePolicy">
