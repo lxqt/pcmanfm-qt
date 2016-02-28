@@ -170,6 +170,7 @@
     <addaction name="separator"/>
     <addaction name="menuSorting"/>
     <addaction name="actionFilter"/>
+    <addaction name="actionMenu_bar"/>
    </widget>
    <widget class="QMenu" name="menu_Editw">
     <property name="title">
@@ -730,6 +731,20 @@
   <action name="actionCloseOther">
    <property name="text">
     <string>Close &amp;other tabs</string>
+   </property>
+  </action>
+  <action name="actionMenu_bar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Menu bar</string>
+   </property>
+   <property name="toolTip">
+    <string>Menu bar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
    </property>
   </action>
  </widget>

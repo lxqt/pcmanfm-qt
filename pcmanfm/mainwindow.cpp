@@ -166,6 +166,8 @@ MainWindow::MainWindow(FmPath* path):
 
   // Show or hide the menu bar
   ui.menubar->setVisible(settings.showMenuBar());
+  ui.actionMenu_bar->setChecked(settings.showMenuBar());
+  connect(ui.actionMenu_bar, &QAction::triggered, this, &MainWindow::toggleMenuBar);
 
   // create shortcuts
   QShortcut* shortcut;
@@ -218,9 +220,6 @@ MainWindow::MainWindow(FmPath* path):
     connect(shortcut, &QShortcut::activated, ui.filterBar, &QLineEdit::clear);
   }
 
-  shortcut = new QShortcut(Qt::CTRL + Qt::Key_M, this);
-  connect(shortcut, &QShortcut::activated, this, &MainWindow::toggleMenuBar);
-
   if(path)
     addTab(path);
 
@@ -270,7 +269,7 @@ void MainWindow::addTab(FmPath* path) {
   }
 }
 
-void MainWindow::toggleMenuBar() {
+void MainWindow::toggleMenuBar(bool checked) {
   Settings& settings = static_cast<Application*>(qApp)->settings();
   bool showMenuBar = !settings.showMenuBar();
 
@@ -278,12 +277,14 @@ void MainWindow::toggleMenuBar() {
     if (QMessageBox::Cancel == QMessageBox::warning(this,
           tr("Hide menu bar"),
           tr("This will hide the menu bar completely, use Ctrl+M to show it again."),
-          QMessageBox::Ok | QMessageBox::Cancel )) {
+          QMessageBox::Ok | QMessageBox::Cancel)) {
+      ui.actionMenu_bar->setChecked(true);
       return;
     }
   }
 
   ui.menubar->setVisible(showMenuBar);
+  ui.actionMenu_bar->setChecked(showMenuBar);
   settings.setShowMenuBar(showMenuBar);
 }
 
