@@ -71,13 +71,13 @@ function(lxqt_translate_desktop _RESULT)
         set(_pattern "'\\[.*]\\s*='")
         if (_translations)
             add_custom_command(OUTPUT ${_outFile}
-                COMMAND grep -v "'#TRANSLATIONS_DIR='" ${_inFile} > ${_outFile}
-                COMMAND grep -h ${_pattern} ${_translations} >> ${_outFile}
+                COMMAND grep -a -v "'#TRANSLATIONS_DIR='" ${_inFile} > ${_outFile}
+                COMMAND grep -a -h ${_pattern} ${_translations} >> ${_outFile}
                 COMMENT "Generating ${_fileName}${_fileExt}"
             )
         else()
             add_custom_command(OUTPUT ${_outFile}
-                COMMAND grep -v "'#TRANSLATIONS_DIR='" ${_inFile} > ${_outFile}
+                COMMAND grep -a -v "'#TRANSLATIONS_DIR='" ${_inFile} > ${_outFile}
                 COMMENT "Generating ${_fileName}${_fileExt}"
             )
         endif()
