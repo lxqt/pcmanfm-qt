@@ -248,6 +248,8 @@
    <addaction name="actionGoUp"/>
    <addaction name="actionReload"/>
    <addaction name="actionGo"/>
+   <addaction name="separator"/>
+   <addaction name="actionMenu"/>
   </widget>
   <action name="actionGoUp">
    <property name="icon">
@@ -745,6 +747,17 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionMenu">
+   <property name="icon">
+    <iconset theme="application-menu"/>
+   </property>
+   <property name="text">
+    <string>Menu</string>
+   </property>
+   <property name="toolTip">
+    <string>Menu</string>
    </property>
   </action>
  </widget>
