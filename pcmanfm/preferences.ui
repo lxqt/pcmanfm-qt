@@ -446,42 +446,53 @@ A space is also reserved for 3 lines of text.</string>
              </widget>
             </item>
             <item row="1" column="0" colspan="2">
+             <widget class="QCheckBox" name="fullWidthTabbar">
+              <property name="toolTip">
+               <string>If unchecked, the tab bar will be positioned only
+above the folder-view and not above the left pane.</string>
+              </property>
+              <property name="text">
+               <string>Fullwidth tab bar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
              <widget class="QCheckBox" name="showTabClose">
               <property name="text">
                <string>Show 'Close' buttons on tabs	</string>
               </property>
              </widget>
             </item>
-            <item row="2" column="0" colspan="2">
+            <item row="3" column="0" colspan="2">
              <widget class="QCheckBox" name="rememberWindowSize">
               <property name="text">
                <string>Remember the size of the last closed window</string>
               </property>
              </widget>
             </item>
-            <item row="3" column="0">
+            <item row="4" column="0">
              <widget class="QLabel" name="label_12">
               <property name="text">
                <string>Default width of new windows:</string>
               </property>
              </widget>
             </item>
-            <item row="4" column="0">
+            <item row="4" column="1">
+             <widget class="QSpinBox" name="fixedWindowWidth">
+              <property name="maximum">
+               <number>32768</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
              <widget class="QLabel" name="label_13">
               <property name="text">
                <string>Default height of new windows:</string>
               </property>
              </widget>
             </item>
-            <item row="4" column="1">
+            <item row="5" column="1">
              <widget class="QSpinBox" name="fixedWindowHeight">
-              <property name="maximum">
-               <number>32768</number>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="QSpinBox" name="fixedWindowWidth">
               <property name="maximum">
                <number>32768</number>
               </property>
