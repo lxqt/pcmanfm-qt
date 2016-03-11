@@ -170,6 +170,7 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
 
 void PreferencesDialog::initUiPage(Settings& settings) {
   ui.alwaysShowTabs->setChecked(settings.alwaysShowTabs());
+  ui.fullWidthTabbar->setChecked(settings.fullWidthTabBar());
   ui.showTabClose->setChecked(settings.showTabClose());
   ui.rememberWindowSize->setChecked(settings.rememberWindowSize());
   ui.fixedWindowWidth->setValue(settings.fixedWindowWidth());
@@ -292,6 +293,7 @@ void PreferencesDialog::applyDisplayPage(Settings& settings) {
 
 void PreferencesDialog::applyUiPage(Settings& settings) {
   settings.setAlwaysShowTabs(ui.alwaysShowTabs->isChecked());
+  settings.setFullWidthTabBar(ui.fullWidthTabbar->isChecked());
   settings.setShowTabClose(ui.showTabClose->isChecked());
   settings.setRememberWindowSize(ui.rememberWindowSize->isChecked());
   settings.setFixedWindowWidth(ui.fixedWindowWidth->value());

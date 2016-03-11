@@ -314,6 +314,14 @@ public:
     showMenuBar_ = showMenuBar;
   }
 
+  bool fullWidthTabBar() const {
+    return fullWidthTabBar_;
+  }
+
+  void setFullWidthTabBar(bool fullWith) {
+    fullWidthTabBar_ = fullWith;
+  }
+
   Fm::FolderView::ViewMode viewMode() const {
     return viewMode_;
   }
@@ -658,6 +666,7 @@ private:
   int splitterPos_;
   Fm::SidePane::Mode sidePaneMode_;
   bool showMenuBar_;
+  bool fullWidthTabBar_;
 
   Fm::FolderView::ViewMode viewMode_;
   bool showHidden_;

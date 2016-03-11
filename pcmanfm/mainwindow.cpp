@@ -85,6 +85,10 @@ MainWindow::MainWindow(FmPath* path):
   ui.tabBar->setElideMode(Qt::ElideRight);
   ui.tabBar->setExpanding(false);
   ui.tabBar->setMovable(true); // reorder the tabs by dragging
+  if(!settings.fullWidthTabBar()) {
+    ui.verticalLayout->removeWidget(ui.tabBar);
+    ui.verticalLayout_2->insertWidget(0, ui.tabBar);
+  }
 
 #if QT_VERSION >= QT_VERSION_CHECK(5, 4, 0)
   // switch to the tab under the cursor during dnd.
@@ -1037,6 +1041,16 @@ void MainWindow::updateFromSettings(Settings& settings) {
   // tabs
   ui.tabBar->setTabsClosable(settings.showTabClose());
   ui.tabBar->setVisible(settings.alwaysShowTabs() || (ui.tabBar->count() > 1));
+  if(ui.verticalLayout->indexOf(ui.tabBar) > -1) {
+    if(!settings.fullWidthTabBar()) {
+      ui.verticalLayout->removeWidget(ui.tabBar);
+      ui.verticalLayout_2->insertWidget(0, ui.tabBar);
+    }
+  }
+  else if (ui.verticalLayout_2->indexOf(ui.tabBar) > -1 && settings.fullWidthTabBar()) {
+    ui.verticalLayout_2->removeWidget(ui.tabBar);
+    ui.verticalLayout->insertWidget(0, ui.tabBar);
+  }
 
   // all tab pages
   int n = ui.stackedWidget->count();
