@@ -45,7 +45,7 @@ public:
   virtual ~MainWindow();
 
   void chdir(FmPath* path);
-  void addTab(FmPath* path);
+  int addTab(FmPath* path);
 
   TabPage* currentPage() {
     return reinterpret_cast<TabPage*>(ui.stackedWidget->currentWidget());

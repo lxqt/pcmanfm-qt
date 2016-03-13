@@ -279,7 +279,7 @@ void MainWindow::chdir(FmPath* path) {
 }
 
 // add a new tab
-void MainWindow::addTab(FmPath* path) {
+int MainWindow::addTab(FmPath* path) {
   Settings& settings = static_cast<Application*>(qApp)->settings();
 
   TabPage* newPage = new TabPage(path, this);
@@ -297,6 +297,8 @@ void MainWindow::addTab(FmPath* path) {
   if(!settings.alwaysShowTabs()) {
     ui.tabBar->setVisible(ui.tabBar->count() > 1);
   }
+
+  return index;
 }
 
 void MainWindow::toggleMenuBar(bool checked) {
@@ -375,7 +377,8 @@ void MainWindow::on_actionGo_triggered() {
 
 void MainWindow::on_actionNewTab_triggered() {
   FmPath* path = currentPage()->path();
-  addTab(path);
+  int index = addTab(path);
+  ui.tabBar->setCurrentIndex(index);
 }
 
 void MainWindow::on_actionNewWin_triggered() {
