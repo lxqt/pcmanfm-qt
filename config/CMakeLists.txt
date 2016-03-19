@@ -2,7 +2,8 @@
 install(FILES
     lxqt.conf	
     session.conf
-    windowmanagers.conf	
+    windowmanagers.conf
+    globalkeyshortcuts.conf
     DESTINATION "${LXQT_ETC_XDG_DIR}/lxqt"
     COMPONENT Runtime
 )
