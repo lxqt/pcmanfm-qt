@@ -585,7 +585,7 @@ void MainWindow::onTabBarCloseRequested(int index) {
 
 void MainWindow::onResetFocus() {
   if(TabPage* page = currentPage()) {
-    currentPage()->folderView()->childView()->setFocus();
+    page->folderView()->childView()->setFocus();
   }
 }
 

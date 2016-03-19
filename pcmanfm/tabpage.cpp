@@ -69,8 +69,8 @@ void ProxyFilter::setVirtHidden(FmFolder* folder) {
 
 TabPage::TabPage(FmPath* path, QWidget* parent):
   QWidget(parent),
-  folder_(NULL),
   folderModel_(NULL),
+  folder_(NULL),
   overrideCursor_(false) {
 
   Settings& settings = static_cast<Application*>(qApp)->settings();

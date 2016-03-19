@@ -27,10 +27,10 @@
 namespace PCManFM {
 
 AutoRunDialog::AutoRunDialog(GVolume* volume, GMount* mount, QWidget* parent, Qt::WindowFlags f):
+  QDialog(parent, f),
   cancellable(g_cancellable_new()),
   applications(NULL),
-  mount_(G_MOUNT(g_object_ref(mount))),
-  QDialog(parent, f) {
+  mount_(G_MOUNT(g_object_ref(mount))) {
 
   setAttribute(Qt::WA_DeleteOnClose);
   ui.setupUi(this);

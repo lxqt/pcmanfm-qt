@@ -59,13 +59,13 @@ namespace PCManFM {
 
 DesktopWindow::DesktopWindow(int screenNum):
   View(Fm::FolderView::IconMode),
-  screenNum_(screenNum),
-  folder_(NULL),
-  model_(NULL),
   proxyModel_(NULL),
+  model_(NULL),
+  folder_(NULL),
+  wallpaperMode_(WallpaperNone),
   fileLauncher_(NULL),
   showWmMenu_(false),
-  wallpaperMode_(WallpaperNone),
+  screenNum_(screenNum),
   relayoutTimer_(NULL) {
 
   QDesktopWidget* desktopWidget = QApplication::desktop();

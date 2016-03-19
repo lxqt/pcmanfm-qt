@@ -70,13 +70,13 @@ Application::Application(int& argc, char** argv):
   settings_(),
   profileName_("default"),
   daemonMode_(false),
-  desktopWindows_(),
   enableDesktopManager_(false),
+  desktopWindows_(),
   preferencesDialog_(),
+  editBookmarksialog_(),
   volumeMonitor_(NULL),
   userDirsWatcher_(NULL),
-  lxqtRunning_(false),
-  editBookmarksialog_() {
+  lxqtRunning_(false) {
 
   argc_ = argc;
   argv_ = argv;
