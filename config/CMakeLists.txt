@@ -8,7 +8,7 @@ install(FILES
     COMPONENT Runtime
 )
 install(DIRECTORY openbox
-    DESTINATION "${LXQT_SHARE_DIR}"
+    DESTINATION "${LXQT_ETC_XDG_DIR}/lxqt"
     COMPONENT Runtime
 )
 
