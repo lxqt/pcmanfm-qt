@@ -343,7 +343,7 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
   setWallpaperFile(settings.wallpaper());
   setWallpaperMode(settings.wallpaperMode());
   setFont(settings.desktopFont());
-  setIconSize(Fm::FolderView::IconMode, QSize(settings.bigIconSize(), settings.bigIconSize()));
+  setIconSize(Fm::FolderView::IconMode, QSize(settings.desktopIconSize(), settings.desktopIconSize()));
   setMargins(settings.desktopCellMargins());
   // setIconSize and setMargins may trigger relayout of items by QListView, so we need to do the layout again.
   queueRelayout();

@@ -33,6 +33,8 @@
 
 namespace PCManFM {
 
+static int iconSizes[] = {96, 72, 64, 48, 36, 32, 24, 20};
+
 DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFlags f):
   QDialog(parent, f),
   editDesktopFolderEnabled(false),
@@ -77,6 +79,13 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   connect(ui.browse, &QPushButton::clicked, this, &DesktopPreferencesDialog::onBrowseClicked);
   qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
   ui.imageFile->setText(settings.wallpaper());
+
+  for(int i = 0; i < G_N_ELEMENTS(iconSizes); ++i) {
+    int size = iconSizes[i];
+    ui.iconSize->addItem(QString("%1 x %1").arg(size), size);
+    if(settings.desktopIconSize() == size)
+      ui.iconSize->setCurrentIndex(i);
+  }
 
   ui.font->setFont(settings.desktopFont());
 
@@ -132,6 +141,7 @@ void DesktopPreferencesDialog::applySettings()
   settings.setWallpaper(ui.imageFile->text());
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
   settings.setWallpaperMode(mode);
+  settings.setDesktopIconSize(ui.iconSize->itemData(ui.iconSize->currentIndex()).toInt());
   settings.setDesktopFont(ui.font->font());
   settings.setDesktopBgColor(ui.backgroundColor->color());
   settings.setDesktopFgColor(ui.textColor->color());
