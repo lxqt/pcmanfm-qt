@@ -65,6 +65,7 @@ Settings::Settings():
   desktopBgColor_(),
   desktopFgColor_(),
   desktopShadowColor_(),
+  desktopIconSize_(48),
   showWmMenu_(false),
   desktopShowHidden_(false),
   desktopSortOrder_(Qt::AscendingOrder),
@@ -200,6 +201,7 @@ bool Settings::loadFile(QString filePath) {
     desktopFont_.fromString(settings.value("Font").toString());
   else
     desktopFont_ = QApplication::font();
+  desktopIconSize_ = settings.value("DesktopIconSize", 48).toInt();
   showWmMenu_ = settings.value("ShowWmMenu", false).toBool();
   desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
 
@@ -310,6 +312,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("FgColor", desktopFgColor_.name());
   settings.setValue("ShadowColor", desktopShadowColor_.name());
   settings.setValue("Font", desktopFont_.toString());
+  settings.setValue("DesktopIconSize", desktopIconSize_);
   settings.setValue("ShowWmMenu", showWmMenu_);
   settings.setValue("ShowHidden", desktopShowHidden_);
   settings.setValue("SortOrder", sortOrderToString(desktopSortOrder_));

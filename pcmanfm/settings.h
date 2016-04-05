@@ -185,6 +185,14 @@ public:
     desktopFont_ = font;
   }
 
+  int desktopIconSize() const {
+    return desktopIconSize_;
+  }
+
+  void setDesktopIconSize(int desktopIconSize) {
+    desktopIconSize_ = desktopIconSize;
+  }
+
   bool showWmMenu() const {
     return showWmMenu_;
   }
@@ -649,6 +657,7 @@ private:
   QColor desktopFgColor_;
   QColor desktopShadowColor_;
   QFont desktopFont_;
+  int desktopIconSize_;
   bool showWmMenu_;
 
   bool desktopShowHidden_;
