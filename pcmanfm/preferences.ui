@@ -245,33 +245,54 @@
             </item>
             <item row="1" column="0">
              <widget class="QLabel" name="label_6">
+              <property name="toolTip">
+               <string>Used by Icon View</string>
+              </property>
               <property name="text">
                <string>Size of big icons:</string>
               </property>
              </widget>
             </item>
             <item row="1" column="1">
-             <widget class="QComboBox" name="bigIconSize"/>
+             <widget class="QComboBox" name="bigIconSize">
+              <property name="toolTip">
+               <string>Used by Icon View</string>
+              </property>
+             </widget>
             </item>
             <item row="2" column="0">
              <widget class="QLabel" name="label_7">
+              <property name="toolTip">
+               <string>Used by Compact View and Detailed List View</string>
+              </property>
               <property name="text">
                <string>Size of small icons:</string>
               </property>
              </widget>
             </item>
             <item row="2" column="1">
-             <widget class="QComboBox" name="smallIconSize"/>
+             <widget class="QComboBox" name="smallIconSize">
+              <property name="toolTip">
+               <string>Used by Compact View and Detailed List View</string>
+              </property>
+             </widget>
             </item>
             <item row="3" column="0">
              <widget class="QLabel" name="label_8">
+              <property name="toolTip">
+               <string>Used by Thumbnail View</string>
+              </property>
               <property name="text">
                <string>Size of thumbnails:</string>
               </property>
              </widget>
             </item>
             <item row="3" column="1">
-             <widget class="QComboBox" name="thumbnailIconSize"/>
+             <widget class="QComboBox" name="thumbnailIconSize">
+              <property name="toolTip">
+               <string>Used by Thumbnail View</string>
+              </property>
+             </widget>
             </item>
             <item row="4" column="0">
              <widget class="QLabel" name="label_9">
@@ -440,6 +461,10 @@ A space is also reserved for 3 lines of text.</string>
             </property>
             <item row="0" column="0" colspan="2">
              <widget class="QCheckBox" name="alwaysShowTabs">
+              <property name="toolTip">
+               <string>When unchecked, the tab bar will be shown
+only if there are more than one tab.</string>
+              </property>
               <property name="text">
                <string>Always show the tab bar</string>
               </property>
@@ -644,6 +669,9 @@ above the folder-view and not above the left pane.</string>
             </item>
             <item row="0" column="0" colspan="2">
              <widget class="QCheckBox" name="showThumbnails">
+              <property name="toolTip">
+               <string>Needs ffmpegthumbnailer</string>
+              </property>
               <property name="text">
                <string>Show thumbnails of files</string>
               </property>
