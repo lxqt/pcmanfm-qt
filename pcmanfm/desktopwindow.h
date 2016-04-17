@@ -98,6 +98,7 @@ protected Q_SLOTS:
   void onRowsAboutToBeRemoved(const QModelIndex& parent, int start, int end);
   void onRowsInserted(const QModelIndex& parent, int start, int end);
   void onLayoutChanged();
+  void onModelSortFilterChanged();
   void onIndexesMoved(const QModelIndexList& indexes);
 
   void relayoutItems();

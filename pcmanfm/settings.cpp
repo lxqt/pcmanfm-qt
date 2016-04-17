@@ -69,7 +69,8 @@ Settings::Settings():
   showWmMenu_(false),
   desktopShowHidden_(false),
   desktopSortOrder_(Qt::AscendingOrder),
-  desktopSortColumn_(Fm::FolderModel::ColumnFileName),
+  desktopSortColumn_(Fm::FolderModel::ColumnFileMTime),
+  desktopSortFolderFirst_(true),
   alwaysShowTabs_(true),
   showTabClose_(true),
   rememberWindowSize_(true),
@@ -207,6 +208,7 @@ bool Settings::loadFile(QString filePath) {
 
   desktopSortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
   desktopSortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
+  desktopSortFolderFirst_ = settings.value("SortFolderFirst", true).toBool();
 
   desktopCellMargins_ = (settings.value("DesktopCellMargins", QSize(3, 1)).toSize()
                          .expandedTo(QSize(0, 0))).boundedTo(QSize(48, 48));
@@ -317,6 +319,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("ShowHidden", desktopShowHidden_);
   settings.setValue("SortOrder", sortOrderToString(desktopSortOrder_));
   settings.setValue("SortColumn", sortColumnToString(desktopSortColumn_));
+  settings.setValue("SortFolderFirst", desktopSortFolderFirst_);
   settings.setValue("DesktopCellMargins", desktopCellMargins_);
   settings.endGroup();
 

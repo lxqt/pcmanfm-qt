@@ -225,6 +225,14 @@ public:
     desktopSortColumn_ = desktopSortColumn;
   }
 
+  bool desktopSortFolderFirst() const {
+    return desktopSortFolderFirst_;
+  }
+
+  void setSesktopSortFolderFirst(bool desktopFolderFirst) {
+    desktopSortFolderFirst_ = desktopFolderFirst;
+  }
+
   bool alwaysShowTabs() const {
     return alwaysShowTabs_;
   }
@@ -663,6 +671,7 @@ private:
   bool desktopShowHidden_;
   Qt::SortOrder desktopSortOrder_;
   Fm::FolderModel::ColumnId desktopSortColumn_;
+  bool desktopSortFolderFirst_;
 
   bool alwaysShowTabs_;
   bool showTabClose_;
