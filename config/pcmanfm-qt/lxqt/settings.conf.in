@@ -20,7 +20,7 @@ BgColor=#000000
 FgColor=#ffffff
 ShadowColor=#000000
 ShowHidden=false
-SortOrder=descending
+SortOrder=ascending
 SortColumn=name
 Font="Sans Serif,10,-1,5,50,0,0,0,0,0"
 
@@ -32,7 +32,7 @@ AutoRun=true
 [FolderView]
 Mode=icon
 ShowHidden=false
-SortOrder=descending
+SortOrder=ascending
 SortColumn=name
 BigIconSize=48
 SmallIconSize=24
