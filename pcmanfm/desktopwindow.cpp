@@ -96,12 +96,14 @@ DesktopWindow::DesktopWindow(int screenNum):
     proxyModel_ = new Fm::ProxyFolderModel();
     proxyModel_->setSourceModel(model_);
     proxyModel_->setShowThumbnails(settings.showThumbnails());
-    proxyModel_->sort(Fm::FolderModel::ColumnFileMTime);
+    proxyModel_->sort(settings.desktopSortColumn(), settings.desktopSortOrder());
+    proxyModel_->setFolderFirst(settings.desktopSortFolderFirst());
     setModel(proxyModel_);
 
     connect(proxyModel_, &Fm::ProxyFolderModel::rowsInserted, this, &DesktopWindow::onRowsInserted);
     connect(proxyModel_, &Fm::ProxyFolderModel::rowsAboutToBeRemoved, this, &DesktopWindow::onRowsAboutToBeRemoved);
     connect(proxyModel_, &Fm::ProxyFolderModel::layoutChanged, this, &DesktopWindow::onLayoutChanged);
+    connect(proxyModel_, &Fm::ProxyFolderModel::sortFilterChanged, this, &DesktopWindow::onModelSortFilterChanged);
     connect(listView_, &QListView::indexesMoved, this, &DesktopWindow::onIndexesMoved);
   }
 
@@ -424,6 +426,13 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
 
 void DesktopWindow::onLayoutChanged() {
   queueRelayout();
+}
+
+void DesktopWindow::onModelSortFilterChanged() {
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  settings.setDesktopSortColumn(static_cast<Fm::FolderModel::ColumnId>(proxyModel_->sortColumn()));
+  settings.setDesktopSortOrder(proxyModel_->sortOrder());
+  settings.setSesktopSortFolderFirst(proxyModel_->folderFirst());
 }
 
 void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
