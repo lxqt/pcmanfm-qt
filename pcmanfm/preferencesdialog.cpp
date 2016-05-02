@@ -187,7 +187,7 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
   ui.bookmarkOpenMethod->setCurrentIndex(settings.bookmarkOpenMethod());
 
   ui.viewMode->addItem(tr("Icon View"), (int)Fm::FolderView::IconMode);
-  ui.viewMode->addItem(tr("Compact Icon View"), (int)Fm::FolderView::CompactMode);
+  ui.viewMode->addItem(tr("Compact View"), (int)Fm::FolderView::CompactMode);
   ui.viewMode->addItem(tr("Thumbnail View"), (int)Fm::FolderView::ThumbnailMode);
   ui.viewMode->addItem(tr("Detailed List View"), (int)Fm::FolderView::DetailedListMode);
   const Fm::FolderView::ViewMode modes[] = {
