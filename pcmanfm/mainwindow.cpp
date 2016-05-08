@@ -173,7 +173,7 @@ MainWindow::MainWindow(FmPath* path):
   addActions(ui.menubar->actions());
 
   // Show or hide the menu bar
-  QMenu *menu = new QMenu();
+  QMenu *menu = new QMenu(ui.toolBar);
   menu->addMenu(ui.menu_File);
   menu->addMenu(ui.menu_Editw);
   menu->addMenu(ui.menu_View);
