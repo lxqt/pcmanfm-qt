@@ -38,6 +38,11 @@ qt5_wrap_ui(pcmanfm_UIS_H ${pcmanfm_UIS})
 lxqt_translate_ts(QM_FILES
     UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
     SOURCES ${pcmanfm_SRCS} ${pcmanfm_UIS}
+    INSTALL_DIR "${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/translations"
+    PULL_TRANSLATIONS ${PULL_TRANSLATIONS}
+    CLEAN_TRANSLATIONS ${CLEAN_TRANSLATIONS}
+    TRANSLATIONS_REPO ${TRANSLATIONS_REPO}
+    TRANSLATIONS_REFSPEC ${TRANSLATIONS_REFSPEC}
 )
 
 # translate desktop entry files for pcmanfm-qt and desktop preferences
@@ -78,8 +83,6 @@ install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 # install a desktop entry file for pcmanfm-qt and desktop preferences
 install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
 )
-
-install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/pcmanfm-qt/translations")
 
 # prevent the generated files from being deleted during make clean
 set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)

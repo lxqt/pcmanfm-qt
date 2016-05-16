@@ -18,6 +18,8 @@ find_package(Qt5DBus 5.2 REQUIRED)
 find_package(Qt5LinguistTools 5.2 REQUIRED)
 find_package(Qt5X11Extras 5.2 REQUIRED)
 find_package(fm-qt REQUIRED)
+#Note: no run-time dependency on liblxqt, just a build dependency for lxqt_translate_ts/desktop
+find_package(lxqt REQUIRED)
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIB_XCB REQUIRED xcb)
