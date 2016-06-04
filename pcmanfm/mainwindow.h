@@ -102,7 +102,7 @@ protected Q_SLOTS:
   void on_actionDescending_triggered(bool checked);
   void on_actionFolderFirst_triggered(bool checked);
   void on_actionCaseSensitive_triggered(bool checked);
-  void on_actionFilter_triggered(bool checked);
+  void on_actionClearFilter_triggered();
 
   void on_actionApplications_triggered();
   void on_actionComputer_triggered();
@@ -164,6 +164,7 @@ protected:
   void closeTab(int index);
   virtual void resizeEvent(QResizeEvent *event);
   virtual void closeEvent(QCloseEvent *event);
+  virtual bool eventFilter(QObject *object, QEvent* event);
 
 private:
   static void onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis);

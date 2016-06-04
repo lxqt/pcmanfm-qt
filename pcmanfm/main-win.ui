@@ -177,7 +177,7 @@
     <addaction name="menu_View_2"/>
     <addaction name="actionPreserveView"/>
     <addaction name="separator"/>
-    <addaction name="actionFilter"/>
+    <addaction name="actionClearFilter"/>
     <addaction name="actionMenu_bar"/>
    </widget>
    <widget class="QMenu" name="menu_Editw">
@@ -717,12 +717,12 @@
     <string>F3</string>
    </property>
   </action>
-  <action name="actionFilter">
+  <action name="actionClearFilter">
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="text">
-    <string>&amp;Filter</string>
+    <string>&amp;Clear filter</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+B</string>

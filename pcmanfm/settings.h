@@ -526,12 +526,12 @@ public:
     sortFolderFirst_ = folderFirst;
   }
 
-  bool showFilter() const {
-    return showFilter_;
+  bool alwaysShowFilter() const {
+    return alwaysShowFilter_;
   }
 
-  void setShowFilter(bool value) {
-    showFilter_ = value;
+  void setAlwaysShowFilter(bool value) {
+    alwaysShowFilter_ = value;
   }
 
   // settings for use with libfm
@@ -789,7 +789,7 @@ private:
   Fm::FolderModel::ColumnId sortColumn_;
   bool sortFolderFirst_;
   bool sortCaseSensitive_;
-  bool showFilter_;
+  bool alwaysShowFilter_;
 
   // settings for use with libfm
   bool singleClick_;

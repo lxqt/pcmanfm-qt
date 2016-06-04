@@ -113,9 +113,9 @@ MainWindow::MainWindow(Path path):
   connect(ui.stackedWidget, &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
 
   // FIXME: should we make the filter bar a per-view configuration?
-  ui.filterBar->setVisible(settings.showFilter());
-  ui.actionFilter->setChecked(settings.showFilter());
+  ui.filterBar->setVisible(settings.alwaysShowFilter());
   connect(ui.filterBar, &QLineEdit::textChanged, this, &MainWindow::onFilterStringChanged);
+  ui.filterBar->installEventFilter(this);
 
   // side pane
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
@@ -498,13 +498,18 @@ void MainWindow::on_actionPreserveView_triggered(bool checked) {
   page->setCustomizedView(!page->hasCustomizedView());
 }
 
-void MainWindow::on_actionFilter_triggered(bool checked) {
-  ui.filterBar->setVisible(checked);
-  if(checked)
-    ui.filterBar->setFocus();
-  else if(TabPage* tabPage = currentPage()) {
+void MainWindow::on_actionClearFilter_triggered() {
+  // hide the filter bar if it's not set to be always visible
+  ui.filterBar->setVisible(static_cast<Application*>(qApp)->settings().alwaysShowFilter());
+
+  if(TabPage* tabPage = currentPage()) {
+    // clear the filter
     ui.filterBar->clear();
-    tabPage->folderView()->childView()->setFocus();
+
+    // reset focus to the folder view if necessary
+    if (ui.filterBar->hasFocus())
+      tabPage->folderView()->childView()->setFocus();
+
     // clear filter string for all tabs
     int n = ui.stackedWidget->count();
     for(int i = 0; i < n; ++i) {
@@ -515,7 +520,6 @@ void MainWindow::on_actionFilter_triggered(bool checked) {
       }
     }
   }
-  static_cast<Application*>(qApp)->settings().setShowFilter(checked);
 }
 
 void MainWindow::on_actionComputer_triggered() {
@@ -614,9 +618,9 @@ void MainWindow::onTabBarTabMoved(int from, int to) {
 
 void MainWindow::focusFilterBar() {
   if(!ui.filterBar->isVisible())
-    ui.actionFilter->trigger();
-  else
-    ui.filterBar->setFocus();
+    ui.filterBar->show();
+
+  ui.filterBar->setFocus();
 }
 
 void MainWindow::onFilterStringChanged(QString str) {
@@ -664,6 +668,19 @@ void MainWindow::closeEvent(QCloseEvent *event)
         settings.setLastWindowHeight(height());
     }
   }
+}
+
+bool MainWindow::eventFilter(QObject* object, QEvent* event) {
+  if (object == ui.filterBar) {
+    // hide the filter bar if it loses focus while empty, and is not set to be
+    // always visible
+    Settings& settings = static_cast<Application*>(qApp)->settings();
+    if (!settings.alwaysShowFilter() &&
+        (event->type() == QEvent::FocusOut) && ui.filterBar->text().isEmpty()) {
+      ui.filterBar->hide();
+    }
+  }
+  return QObject::eventFilter(object, event);
 }
 
 void MainWindow::onTabBarCurrentChanged(int index) {
@@ -1035,7 +1052,7 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
   QAction* selectedAction = menu.exec(btn->mapToGlobal(pos));
   if(selectedAction) {
     int index = menu.actions().indexOf(selectedAction);
-    ui.filterBar->clear();
+    ui.actionClearFilter->trigger();
     page->jumpToHistory(index);
     updateUIForCurrentPage();
   }
@@ -1090,6 +1107,9 @@ void MainWindow::updateFromSettings(Settings& settings) {
 
   // side pane
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
+
+  // filter bar
+  ui.filterBar->setVisible(settings.alwaysShowFilter());
 
   // tabs
   ui.tabBar->setTabsClosable(settings.showTabClose());

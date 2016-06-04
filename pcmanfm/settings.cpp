@@ -90,7 +90,7 @@ Settings::Settings():
   sortColumn_(Fm::FolderModel::ColumnFileName),
   sortFolderFirst_(true),
   sortCaseSensitive_(false),
-  showFilter_(false),
+  alwaysShowFilter_(false),
   // settings for use with libfm
   singleClick_(false),
   autoSelectionDelay_(600),
@@ -240,7 +240,7 @@ bool Settings::loadFile(QString filePath) {
   sortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
   sortFolderFirst_ = settings.value("SortFolderFirst", true).toBool();
   sortCaseSensitive_ = settings.value("SortCaseSensitive", false).toBool();
-  showFilter_ = settings.value("ShowFilter", false).toBool();
+  alwaysShowFilter_ = settings.value("AlwaysShowFilter", false).toBool();
 
   setBackupAsHidden(settings.value("BackupAsHidden", false).toBool());
   showFullNames_ = settings.value("ShowFullNames", false).toBool();
@@ -350,7 +350,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("SortColumn", sortColumnToString(sortColumn_));
   settings.setValue("SortFolderFirst", sortFolderFirst_);
   settings.setValue("SortCaseSensitive", sortCaseSensitive_);
-  settings.setValue("ShowFilter", showFilter_);
+  settings.setValue("AlwaysShowFilter", alwaysShowFilter_);
 
   settings.setValue("BackupAsHidden", backupAsHidden_);
   settings.setValue("ShowFullNames", showFullNames_);
