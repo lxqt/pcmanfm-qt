@@ -88,6 +88,7 @@ protected Q_SLOTS:
   void on_actionCompactView_triggered();
   void on_actionDetailedList_triggered();
   void on_actionThumbnailView_triggered();
+  void on_actionPreserveView_triggered(bool checked);
 
   void on_actionGo_triggered();
   void on_actionShowHidden_triggered(bool check);
@@ -101,6 +102,7 @@ protected Q_SLOTS:
   void on_actionDescending_triggered(bool checked);
   void on_actionFolderFirst_triggered(bool checked);
   void on_actionCaseSensitive_triggered(bool checked);
+  void on_actionPreserveSorting_triggered(bool checked);
   void on_actionFilter_triggered(bool checked);
 
   void on_actionApplications_triggered();
@@ -171,6 +173,7 @@ private:
   void updateViewMenuForCurrentPage();
   void updateStatusBarForCurrentPage();
   void setRTLIcons(bool isRTL);
+  void saveViewMode();
 
 private:
   Ui::MainWindow ui;

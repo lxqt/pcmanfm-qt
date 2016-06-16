@@ -145,6 +145,9 @@
      <string>&amp;View</string>
     </property>
     <widget class="QMenu" name="menuSorting">
+     <property name="tearOffEnabled">
+      <bool>true</bool>
+     </property>
      <property name="title">
       <string>&amp;Sorting</string>
      </property>
@@ -159,16 +162,29 @@
      <addaction name="separator"/>
      <addaction name="actionFolderFirst"/>
      <addaction name="actionCaseSensitive"/>
+     <addaction name="separator"/>
+     <addaction name="actionPreserveSorting"/>
+    </widget>
+    <widget class="QMenu" name="menu_View_2">
+     <property name="tearOffEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>&amp;View</string>
+     </property>
+     <addaction name="actionIconView"/>
+     <addaction name="actionThumbnailView"/>
+     <addaction name="actionCompactView"/>
+     <addaction name="actionDetailedList"/>
+     <addaction name="separator"/>
+     <addaction name="actionPreserveView"/>
     </widget>
     <addaction name="actionReload"/>
     <addaction name="actionShowHidden"/>
     <addaction name="separator"/>
-    <addaction name="actionIconView"/>
-    <addaction name="actionThumbnailView"/>
-    <addaction name="actionCompactView"/>
-    <addaction name="actionDetailedList"/>
-    <addaction name="separator"/>
+    <addaction name="menu_View_2"/>
     <addaction name="menuSorting"/>
+    <addaction name="separator"/>
     <addaction name="actionFilter"/>
     <addaction name="actionMenu_bar"/>
    </widget>
@@ -531,6 +547,14 @@
     <string>&amp;Folder First</string>
    </property>
   </action>
+  <action name="actionPreserveSorting">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Preserve sorting for this folder</string>
+   </property>
+  </action>
   <action name="actionNewTab">
    <property name="icon">
     <iconset theme="window-new">
@@ -758,6 +782,14 @@
    </property>
    <property name="toolTip">
     <string>Menu</string>
+   </property>
+  </action>
+  <action name="actionPreserveView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Preserve view for this folder</string>
    </property>
   </action>
  </widget>
