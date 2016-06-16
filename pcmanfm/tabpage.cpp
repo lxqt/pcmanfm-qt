@@ -32,6 +32,7 @@
 #include <libfm-qt/cachedfoldermodel.h>
 #include <QTimer>
 #include <QTextStream>
+#include <QSettings>
 
 using namespace Fm;
 
@@ -383,9 +384,45 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
   folderModel_ = CachedFolderModel::modelFromFolder(folder_);
   proxyModel_->setSourceModel(folderModel_);
   proxyModel_->sort(proxyModel_->sortColumn(), proxyModel_->sortOrder());
+  // set sorting, considering customized folders
   Settings& settings = static_cast<Application*>(qApp)->settings();
-  proxyModel_->setFolderFirst(settings.sortFolderFirst());
-  proxyModel_->sort(settings.sortColumn(), settings.sortOrder());
+  QString configFile = QString("%1/perfolder-settings.conf").arg(settings.profileDir(settings.profileName()));
+  QSettings file(configFile, QSettings::IniFormat);
+  // we use a nested QHash<QString(folder), QHash<QString(property), QVariant(value)>> in "mainwindow.cpp"
+  QHash<QString, QVariant> customFolders = file.value("customFolders").toHash();
+  char* pathStr = fm_path_to_str(path());
+  QString folder(pathStr);
+  g_free(pathStr);
+  QHash<QString, QVariant> props = customFolders.value(folder).toHash();
+  if(props.contains("SortColumn")) {
+    Fm::FolderModel::ColumnId sortColumn;
+    int columnId = props.value("SortColumn").toInt();
+    switch(columnId) {
+      case 0:
+      default:
+        sortColumn = Fm::FolderModel::ColumnFileName;
+        break;
+      case 1:
+        sortColumn = Fm::FolderModel::ColumnFileType;
+        break;
+      case 2:
+        sortColumn = Fm::FolderModel::ColumnFileSize;
+        break;
+      case 3:
+        sortColumn = Fm::FolderModel::ColumnFileMTime;
+        break;
+      case 4:
+        sortColumn = Fm::FolderModel::ColumnFileOwner;
+        break;
+    }
+    proxyModel_->sort(sortColumn,
+                      props.value("SortOrder").toInt() == 0 ? Qt::AscendingOrder : Qt::DescendingOrder);
+    proxyModel_->setFolderFirst(props.value("SortFolderFirst").toBool());
+  }
+  else { // always revert to the default sorting
+    proxyModel_->setFolderFirst(settings.sortFolderFirst());
+    proxyModel_->sort(settings.sortColumn(), settings.sortOrder());
+  }
 
   if(fm_folder_is_loaded(folder_)) {
     onFolderStartLoading(folder_, this);

@@ -347,6 +347,24 @@ void Application::onUserDirsChanged()
 
 void Application::onAboutToQuit() {
   qDebug("aboutToQuit");
+  // remove non-existent folders from the list of custom folders
+  QString configFile = QString("%1/perfolder-settings.conf").arg(settings_.profileDir(settings_.profileName()));
+  QSettings folderSettings(configFile, QSettings::IniFormat);
+  QHash<QString, QVariant> customFolders = folderSettings.value("customFolders").toHash();
+  if(!customFolders.isEmpty()) {
+    //qDebug() << "Custom folders: " << customFolders.keys();
+    QHash<QString, QVariant>::iterator i = customFolders.begin();
+    while (i != customFolders.end()) {
+      QDir dir(i.key());
+      if(!dir.exists()) {
+        i = customFolders.erase(i);
+      }
+      else ++i;
+    }
+    folderSettings.setValue("customFolders", customFolders);
+  }
+  if(customFolders.isEmpty())
+    folderSettings.clear();
   settings_.save();
 }
 
