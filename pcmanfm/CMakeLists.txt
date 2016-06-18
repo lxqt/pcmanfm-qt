@@ -81,8 +81,17 @@ target_link_libraries(pcmanfm-qt
 install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 # install a desktop entry file for pcmanfm-qt and desktop preferences
-install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
+install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/applications")
+
+# install a polkit action policy file for running pcmanfm-qt with pkexec as root
+configure_file("org.lxqt.pkexec.pcmanfm-qt.policy.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/org.lxqt.pkexec.pcmanfm-qt.policy"
+    @ONLY
+)
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/org.lxqt.pkexec.pcmanfm-qt.policy"
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/polkit-1/actions"
 )
 
 # prevent the generated files from being deleted during make clean
 set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)
+
