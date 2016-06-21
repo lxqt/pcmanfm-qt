@@ -259,6 +259,9 @@ MainWindow::MainWindow(FmPath* path):
     if(settings.windowMaximized())
       setWindowState(windowState() | Qt::WindowMaximized);
   }
+
+  if(QApplication::layoutDirection() == Qt::RightToLeft)
+    setRTLIcons(true);
 }
 
 MainWindow::~MainWindow() {
@@ -976,15 +979,34 @@ void MainWindow::on_actionPreferences_triggered() {
   app->preferences(QString());
 }
 
-/*
-void MainWindow::changeEvent(QEvent* event) {
+// change some icons according to layout direction
+void MainWindow::setRTLIcons(bool isRTL) {
+  QIcon nxtIcn = QIcon::fromTheme("go-next");
+  QIcon prevIcn = QIcon::fromTheme("go-previous");
+  if(isRTL) {
+    ui.actionGoBack->setIcon(nxtIcn);
+    ui.actionCloseLeft->setIcon(nxtIcn);
+    ui.actionGoForward->setIcon(prevIcn);
+    ui.actionCloseRight->setIcon(prevIcn);
+  }
+  else {
+    ui.actionGoBack->setIcon(prevIcn);
+    ui.actionCloseLeft->setIcon(prevIcn);
+    ui.actionGoForward->setIcon(nxtIcn);
+    ui.actionCloseRight->setIcon(nxtIcn);
+  }
+}
+
+void MainWindow::changeEvent(QEvent *event) {
   switch(event->type()) {
-    case QEvent::StyleChange:
+    case QEvent::LayoutDirectionChange:
+      setRTLIcons(QApplication::layoutDirection() == Qt::RightToLeft);
+      break;
+    default:
       break;
   }
   QWidget::changeEvent(event);
 }
-*/
 
 void MainWindow::onBackForwardContextMenu(QPoint pos) {
   // show a popup menu for browsing history here.

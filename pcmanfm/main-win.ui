@@ -718,7 +718,7 @@
      <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
-    <string>Close &amp;left tabs</string>
+    <string>Close &amp;previous tabs</string>
    </property>
   </action>
   <action name="actionCloseRight">
@@ -727,7 +727,7 @@
      <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
-    <string>Close &amp;right tabs</string>
+    <string>Close &amp;next tabs</string>
    </property>
   </action>
   <action name="actionCloseOther">
