@@ -156,7 +156,7 @@ protected Q_SLOTS:
   void toggleMenuBar(bool checked);
 
 protected:
-  // void changeEvent( QEvent * event);
+  void changeEvent(QEvent *event);
   void closeTab(int index);
   virtual void resizeEvent(QResizeEvent *event);
   virtual void closeEvent(QCloseEvent *event);
@@ -167,6 +167,7 @@ private:
   void updateUIForCurrentPage();
   void updateViewMenuForCurrentPage();
   void updateStatusBarForCurrentPage();
+  void setRTLIcons(bool isRTL);
 
 private:
   Ui::MainWindow ui;
