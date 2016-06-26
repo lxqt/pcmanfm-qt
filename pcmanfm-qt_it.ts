@@ -190,12 +190,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="119"/>
         <source>Icons</source>
-        <translation type="unfinished">Icone</translation>
+        <translation>Icone</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="125"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Dimensione delle icone:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="138"/>
@@ -225,39 +225,40 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="225"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Distanze</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Distanze minime tra gli elementi:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Predefinita 3 px.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="241"/>
         <location filename="../../desktop-preferences.ui" line="265"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="254"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Predefinita 1 px.
+E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="278"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocca</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
@@ -326,7 +327,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="96"/>
         <source>Focus with Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Attiva il focus con Cltr+I</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="275"/>
@@ -491,44 +492,44 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="709"/>
         <source>&amp;Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra del &amp;filtro</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="712"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="721"/>
         <source>Close &amp;left tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudi le schede a &amp;sinistra</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="730"/>
         <source>Close &amp;right tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudi le schede a &amp;destra</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="735"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudi le &amp;altre schede</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="743"/>
         <location filename="../../main-win.ui" line="746"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra del menu</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="749"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="757"/>
         <location filename="../../main-win.ui" line="760"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="470"/>
@@ -686,7 +687,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="646"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="678"/>
@@ -906,7 +907,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli la modalità dello sfondo. Modalita=(%1)</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="198"/>
@@ -999,12 +1000,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="310"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Nascondi barra del menu</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="311"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Questo nasconderà la barra del menu, usa Ctrl+M per visualizzarla nuovamente.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="557"/>
@@ -1047,7 +1048,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferencesdialog.cpp" line="190"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista compatta</translation>
     </message>
     <message>
         <location filename="../../preferencesdialog.cpp" line="191"/>
@@ -1299,19 +1300,19 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../preferences.ui" line="249"/>
         <location filename="../../preferences.ui" line="259"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Usata nella vista icone</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="266"/>
         <location filename="../../preferences.ui" line="276"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Usata nella vista compatta e la vista lista dettagliata</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="283"/>
         <location filename="../../preferences.ui" line="293"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Usata dalla vista miniature</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="313"/>
@@ -1336,51 +1337,53 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="369"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>Spazio minimo tra le icone:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="376"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Predefinita 3px.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="379"/>
         <location filename="../../preferences.ui" line="403"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="392"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="399"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Predefinita 1 px.
+E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="416"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocca</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="465"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Se non viene spuntata la barra delle schede sarà visibile solo con più di una scheda.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="476"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
-        <translation type="unfinished"></translation>
+        <translation>Se non viene spuntata la barra delle schede è posizionata
+sopra la vista cartella e non sopra il panello sinistro.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="480"/>
         <source>Fullwidth tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra delle schede estesa</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="532"/>
@@ -1435,7 +1438,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="673"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>Necessità di ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="703"/>
