@@ -29,6 +29,7 @@
 #include <QToolButton>
 #include <QShortcut>
 #include <QKeySequence>
+#include <QDir>
 #include <QDebug>
 
 #include "tabpage.h"
@@ -128,6 +129,7 @@ MainWindow::MainWindow(FmPath* path):
   // path bar
   pathEntry = new Fm::PathEdit(this);
   connect(pathEntry, &Fm::PathEdit::returnPressed, this, &MainWindow::onPathEntryReturnPressed);
+  connect(pathEntry, &QLineEdit::textEdited, this, &MainWindow::onPathEntryEdited);
   ui.toolBar->insertWidget(ui.actionGo, pathEntry);
 
   // add filesystem info to status bar
@@ -334,6 +336,14 @@ void MainWindow::onPathEntryReturnPressed() {
   FmPath* path = fm_path_new_for_display_name(utext);
   chdir(path);
   fm_path_unref(path);
+}
+
+void MainWindow::onPathEntryEdited(const QString& text) {
+  QString realText(text);
+  if(realText == "~" || realText.startsWith("~/")) {
+    realText.replace(0, 1, QDir::homePath());
+    pathEntry->setText(realText);
+  }
 }
 
 void MainWindow::on_actionGoUp_triggered() {
