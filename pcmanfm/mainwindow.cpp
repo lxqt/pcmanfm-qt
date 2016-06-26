@@ -382,6 +382,7 @@ void MainWindow::on_actionHome_triggered() {
 
 void MainWindow::on_actionReload_triggered() {
   currentPage()->reload();
+  pathEntry->setText(currentPage()->pathName());
 }
 
 void MainWindow::on_actionGo_triggered() {
