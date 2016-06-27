@@ -28,7 +28,7 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programming:
+        <translation>Programmering:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;</translation>
     </message>
     <message>
@@ -89,7 +89,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Flytbart medie er reigstreret&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Flytbart medie er registreret&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../autorun.ui" line="40"/>
@@ -127,7 +127,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation>Billedefil</translation>
+        <translation>Billedfil</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="42"/>
@@ -145,7 +145,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>Skrivebordsindstilligner</translation>
+        <translation>Skrivebordsindstillinger</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="30"/>
@@ -258,12 +258,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
         <source>Window Manager</source>
-        <translation>Vindueshåntering</translation>
+        <translation>Vindueshåndtering</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="327"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Vis vindueshånterignens menuer  når man klikker på skrivebordet</translation>
+        <translation>Vis vindueshåndteringens menuer når man klikker på skrivebordet</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="315"/>
@@ -648,7 +648,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="614"/>
         <source>File &amp;Properties</source>
-        <translation>Fil&amp;Egenskaber</translation>
+        <translation>Fil&amp;egenskaber</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="617"/>
@@ -658,7 +658,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="622"/>
         <source>&amp;Folder Properties</source>
-        <translation>&amp;Mappeegenkaber</translation>
+        <translation>&amp;Mappeegenskaber</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="651"/>
@@ -1170,7 +1170,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Flyt slettede filer til papirkurven istedet for at slette dem fra disken.</translation>
+        <translation>Flyt slettede filer til papirkurven i stedet for at slette dem fra disken.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="676"/>
@@ -1210,7 +1210,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Slet filer på flytbare medier, istedet for at smide dem i papirkurven</translation>
+        <translation>Slet filer på flytbare medier, i stedet for at smide dem i papirkurven</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="186"/>
@@ -1243,7 +1243,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="313"/>
         <source>User interface</source>
-        <translation>Brugerfalde</translation>
+        <translation>Brugerflade</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="326"/>
@@ -1253,7 +1253,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="336"/>
         <source>Always show full file names</source>
-        <translation>Vis altid fulde filanavne</translation>
+        <translation>Vis altid fulde filnavne</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="346"/>
@@ -1395,7 +1395,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../preferences.ui" line="739"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>Luk &amp;faneblad med det flytbare medue</translation>
+        <translation>Luk &amp;faneblad med det flytbare medie</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="746"/>
@@ -1437,7 +1437,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../preferences.ui" line="842"/>
         <source>Show only user defined templates in menu</source>
-        <translation>Vis kun bruigerdefinerede skabeloner i menuen</translation>
+        <translation>Vis kun brugerdefinerede skabeloner i menuen</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="849"/>
@@ -1452,7 +1452,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../preferences.ui" line="319"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>Brug SI decimapræfik istedet fo IEC præfikser</translation>
+        <translation>Brug SI decimalpræfiks i stedet fo IEC præfiks</translation>
     </message>
 </context>
 </TS>
