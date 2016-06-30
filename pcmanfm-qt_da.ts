@@ -16,7 +16,7 @@
     <message>
         <location filename="../../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation>Letvægts filhåndtering</translation>
+        <translation>Letvægtsfilhåndtering</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="58"/>
@@ -76,7 +76,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../about.ui" line="100"/>
         <source>License</source>
-        <translation type="unfinished">Licens</translation>
+        <translation>Licens</translation>
     </message>
 </context>
 <context>
@@ -718,7 +718,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="121"/>
         <source>C&amp;reate New</source>
-        <translation>O&amp;ret ny</translation>
+        <translation>Op&amp;ret ny</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="139"/>
@@ -1003,16 +1003,16 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <location filename="../../tabpage.cpp" line="284"/>
         <source>%n item(s)</source>
         <translation>
-            <numerusform>%n objekt(er)</numerusform>
-            <numerusform></numerusform>
+            <numerusform>%n objekt</numerusform>
+            <numerusform>%n objekter</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="286"/>
         <source> (%n hidden)</source>
         <translation>
+            <numerusform>(%n skjult)</numerusform>
             <numerusform>(%n skjulte)</numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -1095,7 +1095,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="300"/>
         <source>Size of side pane icons:</source>
-        <translation>Størrelse på sidepanel:</translation>
+        <translation>Ikonstørrelse på sidepanel:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="232"/>
@@ -1452,7 +1452,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../preferences.ui" line="319"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>Brug SI decimalpræfiks i stedet fo IEC præfiks</translation>
+        <translation>Brug SI decimalpræfiks i stedet for IEC præfiks</translation>
     </message>
 </context>
 </TS>
