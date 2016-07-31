@@ -418,15 +418,26 @@ void TabPage::onSelChanged(int numSel) {
       FmFileInfo* fi = fm_file_info_list_peek_head(files);
       const char* size_str = fm_file_info_get_disp_size(fi);
       if(size_str) {
-        msg = QString("\"%1\" (%2) %3")
-                        .arg(QString::fromUtf8(fm_file_info_get_disp_name(fi)))
+        msg = QString("(%1) %2")
                         .arg(QString::fromUtf8(size_str ? size_str : ""))
                         .arg(QString::fromUtf8(fm_file_info_get_desc(fi)));
       }
       else {
-        msg = QString("\"%1\" %2")
-                        .arg(QString::fromUtf8(fm_file_info_get_disp_name(fi)))
-                        .arg(QString::fromUtf8(fm_file_info_get_desc(fi)));
+        msg = QString("%1").arg(QString::fromUtf8(fm_file_info_get_desc(fi)));
+      }
+      /* consider the text and layout directions to complete the message */
+      QString dispName = QString("\"%1\" ").arg(QString::fromUtf8(fm_file_info_get_disp_name(fi)));
+      if(QApplication::layoutDirection() == Qt::RightToLeft) {
+        if(!msg.isRightToLeft()) // it's LTR for now
+          msg = QChar(0x200F) + dispName + QChar(0x200F) + QChar(0x200E) + msg + QChar(0x200E);
+        else
+          msg = QChar(0x200F) + dispName + msg + QChar(0x200F);
+      }
+      else { // msg is always LTR for LTR layouts
+        if(dispName.isRightToLeft())
+          msg = dispName + QChar(0x200E) + msg + QChar(0x200E);
+        else
+          msg = QChar(0x200E) + dispName + QChar(0x200E) + msg;
       }
       /* FIXME: should we support statusbar plugins as in the gtk+ version? */
       fm_file_info_list_unref(files);
