@@ -628,8 +628,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="601"/>
         <source>F2</source>
-        <translation>
-F2</translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="606"/>
