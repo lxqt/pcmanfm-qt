@@ -420,7 +420,7 @@ void TabPage::onSelChanged(int numSel) {
       if(size_str) {
         msg = QString("\"%1\" (%2) %3")
                         .arg(QString::fromUtf8(fm_file_info_get_disp_name(fi)))
-                        .arg(QString::fromUtf8(size_str ? size_str : ""))
+                        .arg(QString::fromUtf8(size_str))
                         .arg(QString::fromUtf8(fm_file_info_get_desc(fi)));
       }
       else {
@@ -434,7 +434,7 @@ void TabPage::onSelChanged(int numSel) {
     else {
       goffset sum;
       GList* l;
-      msg = tr("%n item(s) selected", nullptr, numSel).arg(numSel);
+      msg = tr("%n item(s) selected", nullptr, numSel);
       /* don't count if too many files are selected, that isn't lightweight */
       if(numSel < 1000) {
         sum = 0;
