@@ -224,6 +224,7 @@ protected Q_SLOTS:
 private:
   void freeFolder();
   QString formatStatusText();
+  static void directedText(QString &txt, QChar startMark = QChar(), QChar endMark = QChar());
 
   static void onFolderStartLoading(FmFolder* _folder, TabPage* pThis);
   static void onFolderFinishLoading(FmFolder* _folder, TabPage* pThis);
