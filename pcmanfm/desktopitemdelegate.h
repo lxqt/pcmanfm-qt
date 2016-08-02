@@ -50,7 +50,7 @@ public:
   }
 
 private:
-  void drawText(QPainter* painter, QStyleOptionViewItemV4& opt, QRectF& textRect) const;
+  void drawText(QPainter* painter, QStyleOptionViewItem& opt, QRectF& textRect) const;
 
 private:
   QListView* view_;
