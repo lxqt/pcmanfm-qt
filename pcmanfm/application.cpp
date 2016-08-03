@@ -352,11 +352,10 @@ void Application::onAboutToQuit() {
 
 bool Application::eventFilter(QObject* watched, QEvent* event) {
   if(watched == desktop()) {
-    switch(event->type()) {
-      case QEvent::StyleChange:
-      case QEvent::ThemeChange:
+    if (event->type() == QEvent::StyleChange ||
+        event->type() == QEvent::ThemeChange) {
         setStyle(new ProxyStyle());
-    };
+    }
   }
   return QObject::eventFilter(watched, event);
 }
