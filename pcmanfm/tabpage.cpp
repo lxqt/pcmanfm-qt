@@ -408,6 +408,17 @@ void TabPage::onOpenDirRequested(FmPath* path, int target) {
   Q_EMIT openDirRequested(path, target);
 }
 
+/* This is for creating texts with correct directions and is also needed
+   with LTR layouts and texts because LTR texts can contain RTL strings. */
+/*static*/ void TabPage::directedText(QString &txt, QChar startMark,QChar endMark) {
+  // mark (LRM/RLM) and embedding (LRE/RLE) directions
+  QString mDir = txt.isRightToLeft() ? QChar(0x200F) : QChar(0x200E);
+  QString eDir = txt.isRightToLeft() ? QChar(0x202B) : QChar(0x202A);
+  txt = (startMark.isNull() ? QString() : mDir + QString(startMark))
+         + eDir + txt
+         + (endMark.isNull() ? QString() : mDir + QString(endMark));
+}
+
 // when the current selection in the folder view is changed
 void TabPage::onSelChanged(int numSel) {
   QString msg;
@@ -417,16 +428,19 @@ void TabPage::onSelChanged(int numSel) {
       FmFileInfoList* files = folderView_->selectedFiles();
       FmFileInfo* fi = fm_file_info_list_peek_head(files);
       const char* size_str = fm_file_info_get_disp_size(fi);
+
+      QString dispName = QString::fromUtf8(fm_file_info_get_disp_name(fi));
+      directedText(dispName, '\"', '\"');
+      QString fileDesc = QString::fromUtf8(fm_file_info_get_desc(fi));
+      directedText(fileDesc);
+
       if(size_str) {
-        msg = QString("\"%1\" (%2) %3")
-                        .arg(QString::fromUtf8(fm_file_info_get_disp_name(fi)))
-                        .arg(QString::fromUtf8(size_str))
-                        .arg(QString::fromUtf8(fm_file_info_get_desc(fi)));
+        QString sizeStr = QString::fromUtf8(size_str);
+        directedText(sizeStr, '(', ')');
+        msg = QString("%1 %2 %3").arg(dispName).arg(sizeStr).arg(fileDesc);
       }
       else {
-        msg = QString("\"%1\" %2")
-                        .arg(QString::fromUtf8(fm_file_info_get_disp_name(fi)))
-                        .arg(QString::fromUtf8(fm_file_info_get_desc(fi)));
+        msg = QString("%1 %2").arg(dispName).arg(fileDesc);
       }
       /* FIXME: should we support statusbar plugins as in the gtk+ version? */
       fm_file_info_list_unref(files);
@@ -435,6 +449,7 @@ void TabPage::onSelChanged(int numSel) {
       goffset sum;
       GList* l;
       msg = tr("%n item(s) selected", nullptr, numSel);
+      directedText(msg);
       /* don't count if too many files are selected, that isn't lightweight */
       if(numSel < 1000) {
         sum = 0;
@@ -452,7 +467,9 @@ void TabPage::onSelChanged(int numSel) {
           char size_str[128];
           fm_file_size_to_str(size_str, sizeof(size_str), sum,
                               fm_config->si_unit);
-	  msg += QString(" (%1)").arg(QString::fromUtf8(size_str));
+          QString sizeStr = QString::fromUtf8(size_str);
+          directedText(sizeStr, '(', ')');
+	      msg += QString(" %1").arg(sizeStr);
         }
       /* FIXME: should we support statusbar plugins as in the gtk+ version? */
         fm_file_info_list_unref(files);
