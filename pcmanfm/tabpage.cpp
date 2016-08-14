@@ -165,8 +165,8 @@ void TabPage::restoreScrollPos() {
 
   // if the current folder is the parent folder of the last browsed folder,
   // select the folder item in current view.
-  if(lastFolderPath_.parent() == path()) {
-    QModelIndex index = folderView_->indexFromFolderPath(lastFolderPath_.data());
+  if(lastFolderPath_.isValid() && lastFolderPath_.getParent() == path()) {
+    QModelIndex index = folderView_->indexFromFolderPath(lastFolderPath_);
     if(index.isValid()) {
       folderView_->childView()->scrollTo(index, QAbstractItemView::EnsureVisible);
       folderView_->childView()->setCurrentIndex(index);

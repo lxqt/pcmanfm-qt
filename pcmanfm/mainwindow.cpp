@@ -1029,7 +1029,9 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
   for(int i = 0; i < history.size(); ++i) {
     const BrowseHistoryItem& item = history.at(i);
     Fm::Path path = item.path();
-    QAction* action = menu.addAction(path.displayName());
+    char* name = path.displayName(true);
+    QAction* action = menu.addAction(QString::fromUtf8(name));
+    g_free(name);
     if(i == current) {
       // make the current path bold and checked
       action->setCheckable(true);
