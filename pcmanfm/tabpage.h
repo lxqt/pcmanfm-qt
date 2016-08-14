@@ -27,6 +27,8 @@
 #include <libfm-qt/browsehistory.h>
 #include "view.h"
 #include <libfm-qt/path.h>
+#include <libfm-qt/folder.h>
+#include <libfm-qt/fileinfo.h>
 
 namespace Fm {
   class FileLauncher;
@@ -44,7 +46,7 @@ class ProxyFilter : public Fm::ProxyFolderModelFilter {
 public:
   bool filterAcceptsRow(const Fm::ProxyFolderModel* model, FmFileInfo* info) const;
   virtual ~ProxyFilter() {}
-  void setVirtHidden(FmFolder* folder);
+  void setVirtHidden(Fm::Folder folder);
   QString getFilterStr() {
     return filterStr_;
   }
@@ -69,10 +71,10 @@ public:
   };
 
 public:
-  explicit TabPage(FmPath* path, QWidget* parent = nullptr);
+  explicit TabPage(Fm::Path path, QWidget* parent = nullptr);
   virtual ~TabPage();
 
-  void chdir(FmPath* newPath, bool addHistory = true);
+  void chdir(Fm::Path newPath, bool addHistory = true);
 
   Fm::FolderView::ViewMode viewMode() {
     return folderView_->viewMode();
@@ -117,13 +119,13 @@ public:
 
   void setShowHidden(bool showHidden);
 
-  FmPath* path() {
-    return folder_ ? fm_folder_get_path(folder_) : nullptr;
+  Fm::Path path() {
+    return Fm::Path(!folder_.isNull() ? folder_.getPath() : nullptr);
   }
 
   QString pathName();
 
-  FmFolder* folder() {
+  Fm::Folder& folder() {
     return folder_;
   }
 
@@ -139,11 +141,11 @@ public:
     return history_;
   }
 
-  FmFileInfoList* selectedFiles() {
+  Fm::FileInfoList selectedFiles() {
     return folderView_->selectedFiles();
   }
 
-  FmPathList* selectedFilePaths() {
+  Fm::PathList selectedFilePaths() {
     return folderView_->selectedFilePaths();
   }
 
@@ -152,9 +154,9 @@ public:
   void invertSelection();
 
   void reload() {
-    if(folder_) {
+    if(!folder_.isNull()) {
       proxyFilter_->setVirtHidden(folder_); // reread ".hidden"
-      fm_folder_reload(folder_);
+      folder_.reload();
     }
   }
 
@@ -239,7 +241,7 @@ private:
   Fm::ProxyFolderModel* proxyModel_;
   ProxyFilter* proxyFilter_;
   QVBoxLayout* verticalLayout;
-  FmFolder* folder_;
+  Fm::Folder folder_;
   QString title_;
   QString statusText_[StatusTextNum];
   Fm::BrowseHistory history_; // browsing history

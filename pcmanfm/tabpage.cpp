@@ -22,14 +22,15 @@
 #include "launcher.h"
 #include <libfm-qt/filemenu.h>
 #include <libfm-qt/mountoperation.h>
+#include <libfm-qt/proxyfoldermodel.h>
+#include <libfm-qt/cachedfoldermodel.h>
+#include <libfm-qt/fileinfo.h>
 #include <QApplication>
 #include <QCursor>
 #include <QMessageBox>
 #include <QScrollBar>
-#include <libfm-qt/proxyfoldermodel.h>
 #include "settings.h"
 #include "application.h"
-#include <libfm-qt/cachedfoldermodel.h>
 #include <QTimer>
 #include <QTextStream>
 
@@ -48,14 +49,17 @@ bool ProxyFilter::filterAcceptsRow(const Fm::ProxyFolderModel* model, FmFileInfo
   return true;
 }
 
-void ProxyFilter::setVirtHidden(FmFolder* folder) {
+void ProxyFilter::setVirtHidden(Fm::Folder folder) {
   virtHiddenList_ = QStringList(); // reset the list
-  if(!folder) return;
-  if(FmPath* path = fm_folder_get_path(folder)) {
-    char* pathStr = fm_path_to_str(path);
+  if(folder.isNull())
+      return;
+  Fm::Path path = folder.getPath();
+  if(!path.isNull()) {
+    char* pathStr = path.toStr();
     if(pathStr) {
-      QString dotHidden = QString(pathStr) + QString("/.hidden");
+      QString dotHidden = QString::fromUtf8(pathStr) + QString("/.hidden");
       g_free(pathStr);
+      // FIXME: this does not work for non-local filesystems
       QFile file(dotHidden);
       if(file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         QTextStream in(&file);
@@ -67,10 +71,9 @@ void ProxyFilter::setVirtHidden(FmFolder* folder) {
   }
 }
 
-TabPage::TabPage(FmPath* path, QWidget* parent):
+TabPage::TabPage(Fm::Path path, QWidget* parent):
   QWidget(parent),
   folderModel_(NULL),
-  folder_(NULL),
   overrideCursor_(false) {
 
   Settings& settings = static_cast<Application*>(qApp)->settings();
@@ -117,7 +120,7 @@ TabPage::~TabPage() {
 }
 
 void TabPage::freeFolder() {
-  if(folder_) {
+  if(!folder_.isNull()) {
     g_signal_handlers_disconnect_by_func(folder_, (gpointer)onFolderStartLoading, this);
     g_signal_handlers_disconnect_by_func(folder_, (gpointer)onFolderFinishLoading, this);
     g_signal_handlers_disconnect_by_func(folder_, (gpointer)onFolderError, this);
@@ -125,8 +128,7 @@ void TabPage::freeFolder() {
     g_signal_handlers_disconnect_by_func(folder_, (gpointer)onFolderRemoved, this);
     g_signal_handlers_disconnect_by_func(folder_, (gpointer)onFolderUnmount, this);
     g_signal_handlers_disconnect_by_func(folder_, (gpointer)onFolderContentChanged, this);
-    g_object_unref(folder_);
-    folder_ = NULL;
+    folder_ = nullptr;
   }
 }
 
@@ -165,7 +167,7 @@ void TabPage::restoreScrollPos() {
 
   // if the current folder is the parent folder of the last browsed folder,
   // select the folder item in current view.
-  if(lastFolderPath_.isValid() && lastFolderPath_.getParent() == path()) {
+  if(!lastFolderPath_.isNull() && lastFolderPath_.getParent() == path()) {
     QModelIndex index = folderView_->indexFromFolderPath(lastFolderPath_);
     if(index.isValid()) {
       folderView_->childView()->scrollTo(index, QAbstractItemView::EnsureVisible);
@@ -276,8 +278,8 @@ void TabPage::restoreScrollPos() {
 }
 
 QString TabPage::formatStatusText() {
-  if(proxyModel_ && folder_) {
-    FmFileInfoList* files = fm_folder_get_files(folder_);
+  if(proxyModel_ && !folder_.isNull()) {
+    Fm::FileInfoList files = folder_.getFiles();
     int total_files = fm_file_info_list_get_length(files);
     int shown_files = proxyModel_->rowCount();
     int hidden_files = total_files - shown_files;
@@ -300,7 +302,7 @@ QString TabPage::formatStatusText() {
   if(settings.closeOnUnmount())
     QTimer::singleShot(0, pThis, SLOT(deleteLater()));
   else
-    pThis->chdir(fm_path_get_home());
+    pThis->chdir(Fm::Path::getHome());
 }
 
 /*static*/ void TabPage::onFolderUnmount(FmFolder* _folder, TabPage* pThis) {
@@ -318,7 +320,7 @@ QString TabPage::formatStatusText() {
   if(settings.closeOnUnmount())
     QTimer::singleShot(0, pThis, SLOT(deleteLater()));
   else
-    pThis->chdir(fm_path_get_home());
+    pThis->chdir(Fm::Path::getHome());
 }
 
 /*static */ void TabPage::onFolderContentChanged(FmFolder* _folder, TabPage* pThis) {
@@ -328,20 +330,20 @@ QString TabPage::formatStatusText() {
 }
 
 QString TabPage::pathName() {
-  char* disp_path = fm_path_display_name(path(), TRUE);
+  char* disp_path = path().displayName(true);
   QString ret = QString::fromUtf8(disp_path);
   g_free(disp_path);
   return ret;
 }
 
-void TabPage::chdir(FmPath* newPath, bool addHistory) {
-  if(folder_) {
+void TabPage::chdir(Path newPath, bool addHistory) {
+  if(!folder_.isNull()) {
     // we're already in the specified dir
-    if(fm_path_equal(newPath, fm_folder_get_path(folder_)))
+    if(newPath == fm_folder_get_path(folder_))
       return;
 
     // remember the previous folder path that we have browsed.
-    lastFolderPath_ = fm_folder_get_path(folder_);
+    lastFolderPath_ = folder_.getPath();
 
     if(addHistory) {
       // store current scroll pos in the browse history
@@ -360,12 +362,12 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
     freeFolder();
   }
 
-  char* disp_name = fm_path_display_basename(newPath);
+  char* disp_name = newPath.displayBasename();
   title_ = QString::fromUtf8(disp_name);
   Q_EMIT titleChanged(title_);
   g_free(disp_name);
 
-  folder_ = fm_folder_from_path(newPath);
+  folder_ = Fm::Folder::fromPath(newPath);
   proxyFilter_->setVirtHidden(folder_);
   if(addHistory) {
     // add current path to browse history
@@ -387,7 +389,7 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
   proxyModel_->setFolderFirst(settings.sortFolderFirst());
   proxyModel_->sort(settings.sortColumn(), settings.sortOrder());
 
-  if(fm_folder_is_loaded(folder_)) {
+  if(folder_.isLoaded()) {
     onFolderStartLoading(folder_, this);
     onFolderFinishLoading(folder_, this);
     onFolderFsInfo(folder_, this);
@@ -500,14 +502,15 @@ void TabPage::jumpToHistory(int index)
 }
 
 bool TabPage::canUp() {
-  return (path() != NULL && fm_path_get_parent(path()) != NULL);
+  Fm::Path _path = path();
+  return (!_path.isNull() && !_path.getParent().isNull());
 }
 
 void TabPage::up() {
-  FmPath* _path = path();
-  if(_path) {
-    FmPath* parent = fm_path_get_parent(_path);
-    if(parent) {
+  Fm::Path _path = path();
+  if(!_path.isNull()) {
+    Fm::Path parent = _path.getParent();
+    if(!parent.isNull()) {
       chdir(parent, true);
     }
   }

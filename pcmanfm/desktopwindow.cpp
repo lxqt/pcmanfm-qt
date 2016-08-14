@@ -48,6 +48,7 @@
 #include <libfm-qt/filepropsdialog.h>
 #include <libfm-qt/utilities.h>
 #include <libfm-qt/path.h>
+#include <libfm-qt/fileinfo.h>
 #include "xdgdir.h"
 
 #include <QX11Info>
@@ -61,7 +62,6 @@ DesktopWindow::DesktopWindow(int screenNum):
   View(Fm::FolderView::IconMode),
   proxyModel_(NULL),
   model_(NULL),
-  folder_(NULL),
   wallpaperMode_(WallpaperNone),
   fileLauncher_(NULL),
   showWmMenu_(false),
@@ -90,8 +90,8 @@ DesktopWindow::DesktopWindow(int screenNum):
     loadItemPositions();
     Settings& settings = static_cast<Application* >(qApp)->settings();
 
-    model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
-    folder_ = reinterpret_cast<FmFolder*>(g_object_ref(model_->folder()));
+    model_ = Fm::CachedFolderModel::modelFromPath(Fm::Path::getDesktop());
+    folder_ = model_->folder();
 
     proxyModel_ = new Fm::ProxyFolderModel();
     proxyModel_->setSourceModel(model_);
@@ -159,9 +159,6 @@ DesktopWindow::~DesktopWindow() {
 
   if(model_)
     model_->unref();
-
-  if(folder_)
-    g_object_unref(folder_);
 }
 
 void DesktopWindow::setBackground(const QColor& color) {
@@ -201,7 +198,7 @@ void DesktopWindow::resizeEvent(QResizeEvent* event) {
 }
 
 void DesktopWindow::setDesktopFolder() {
-  FmPath *path = fm_path_new_for_path(XdgDir::readDesktopDir().toStdString().c_str());
+  Fm::Path path = Fm::Path::newForPath(XdgDir::readDesktopDir().toStdString().c_str());
   model_ = Fm::CachedFolderModel::modelFromPath(path);
   proxyModel_->setSourceModel(model_);
 }
@@ -371,7 +368,7 @@ void DesktopWindow::prepareFileMenu(Fm::FileMenu* menu) {
   menu->insertSeparator(menu->separator2());
   menu->insertAction(menu->separator2(), action);
 
-  FmFileInfoList* files = menu->files();
+  Fm::FileInfoList files = menu->files();
   // select exactly one item
   if(fm_file_info_list_get_length(files) == 1) {
     FmFileInfo* file = menu->firstFile();
@@ -409,7 +406,7 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
     // Here we can't rely on ProxyFolderModel::fileInfoFromIndex() because, although rows
     // aren't removed yet, files are already removed.
     QHash<QByteArray, QPoint> _customItemPos = customItemPos_;
-    char* dektopPath = fm_path_to_str(fm_path_get_desktop());
+    char* dektopPath = Fm::Path::getDesktop().toStr();
     QString desktopDir = QString(dektopPath) + QString("/");
     g_free(dektopPath);
     QHash<QByteArray, QPoint>::iterator it;
@@ -594,7 +591,7 @@ void DesktopWindow::loadItemPositions() {
   QSize grid = listView_->gridSize();
   QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
   workArea.adjust(12, 12, -12, -12);
-  char* dektopPath = fm_path_to_str(fm_path_get_desktop());
+  char* dektopPath = Fm::Path::getDesktop().toStr();
   QString desktopDir = QString(dektopPath) + QString("/");
   g_free(dektopPath);
   Q_FOREACH(const QString& name, file.childGroups()) {
@@ -689,16 +686,16 @@ void DesktopWindow::queueRelayout(int delay) {
 // slots for file operations
 
 void DesktopWindow::onCutActivated() {
-  if(FmPathList* paths = selectedFilePaths()) {
+  Fm::PathList paths = selectedFilePaths();
+  if(!paths.isNull()) {
     Fm::cutFilesToClipboard(paths);
-    fm_path_list_unref(paths);
   }
 }
 
 void DesktopWindow::onCopyActivated() {
-  if(FmPathList* paths = selectedFilePaths()) {
+  Fm::PathList paths = selectedFilePaths();
+  if(!paths.isNull()) {
     Fm::copyFilesToClipboard(paths);
-    fm_path_list_unref(paths);
   }
 }
 
@@ -707,31 +704,31 @@ void DesktopWindow::onPasteActivated() {
 }
 
 void DesktopWindow::onDeleteActivated() {
-  if(FmPathList* paths = selectedFilePaths()) {
+  Fm::PathList paths = selectedFilePaths();
+  if(!paths.isNull()) {
     Settings& settings = static_cast<Application*>(qApp)->settings();
     bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
     if(settings.useTrash() && !shiftPressed)
       Fm::FileOperation::trashFiles(paths, settings.confirmTrash());
     else
       Fm::FileOperation::deleteFiles(paths, settings.confirmDelete());
-    fm_path_list_unref(paths);
   }
 }
 
 void DesktopWindow::onRenameActivated() {
-  if(FmFileInfoList* files = selectedFiles()) {
+  Fm::FileInfoList files = selectedFiles();
+  if(!files.isNull()) {
     for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
       FmFileInfo* info = FM_FILE_INFO(l->data);
       Fm::renameFile(info, NULL);
-      fm_file_info_list_unref(files);
     }
   }
 }
 
 void DesktopWindow::onFilePropertiesActivated() {
-  if(FmFileInfoList* files = selectedFiles()) {
+  Fm::FileInfoList files = selectedFiles();
+  if(!files.isNull()) {
     Fm::FilePropsDialog::showForFiles(files);
-    fm_file_info_list_unref(files);
   }
 }
 
