@@ -38,11 +38,11 @@ Launcher::~Launcher() {
 
 bool Launcher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err) {
   GList* l = folder_infos;
-  FmFileInfo* fi = FM_FILE_INFO(l->data);
+  Fm::FileInfo fi = FM_FILE_INFO(l->data);
   Application* app = static_cast<Application*>(qApp);
   MainWindow* mainWindow = mainWindow_;
   if(!mainWindow) {
-    mainWindow = new MainWindow(fm_file_info_get_path(fi));
+    mainWindow = new MainWindow(fi.getPath());
     mainWindow->resize(app->settings().windowWidth(), app->settings().windowHeight());
 
     if(app->settings().windowMaximized()) {
@@ -50,11 +50,11 @@ bool Launcher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** 
     }
   }
   else
-    mainWindow->chdir(fm_file_info_get_path(fi));
+    mainWindow->chdir(fi.getPath());
   l = l->next;
   for(; l; l = l->next) {
     fi = FM_FILE_INFO(l->data);
-    mainWindow->addTab(fm_file_info_get_path(fi));
+    mainWindow->addTab(fi.getPath());
   }
   mainWindow->show();
   mainWindow->raise();

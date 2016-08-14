@@ -70,8 +70,8 @@ void View::onOpenInTerminal() {
   Application* app = static_cast<Application*>(qApp);
   Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
   for(GList* l = fm_file_info_list_peek_head_link(menu->files()); l; l = l->next) {
-    FmFileInfo* file = FM_FILE_INFO(l->data);
-    app->openFolderInTerminal(fm_file_info_get_path(file));
+    Fm::FileInfo file = FM_FILE_INFO(l->data);
+    app->openFolderInTerminal(file.getPath());
   }
 }
 
@@ -88,12 +88,12 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
   // add some more menu items for dirs
   bool all_native = true;
   bool all_directory = true;
-  FmFileInfoList* files = menu->files();
-  for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
-    FmFileInfo* fi = FM_FILE_INFO(l->data);
-    if(!fm_file_info_is_dir(fi))
+  Fm::FileInfoList files = menu->files();
+  for(GList* l = files.peekHeadLink(); l; l = l->next) {
+    Fm::FileInfo fi = FM_FILE_INFO(l->data);
+    if(!fi.isDir())
       all_directory = false;
-    else if(fm_file_info_is_dir(fi) && !fm_file_info_is_native(fi))
+    else if(fi.isDir() && !fi.isNative())
       all_native = false;
   }
 

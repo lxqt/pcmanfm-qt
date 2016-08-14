@@ -43,6 +43,8 @@
 #include "autorundialog.h"
 #include "launcher.h"
 #include <libfm-qt/filesearchdialog.h>
+#include <libfm-qt/path.h>
+#include <libfm-qt/terminal.h>
 
 #include <QScreen>
 #include <QWindow>
@@ -439,10 +441,9 @@ void Application::onFindFileAccepted() {
   Fm::FileSearchDialog* dlg = static_cast<Fm::FileSearchDialog*>(sender());
   Fm::Path uri = dlg->searchUri();
   // FIXME: we should be able to open it in an existing window
-  FmPathList* paths = fm_path_list_new();
-  fm_path_list_push_tail(paths, uri.data());
+  Fm::PathList paths;
+  paths.pushTail(uri);
   Launcher(NULL).launchPaths(NULL, paths);
-  fm_path_list_unref(paths);
 }
 
 void Application::findFiles(QStringList paths) {
@@ -454,50 +455,46 @@ void Application::findFiles(QStringList paths) {
 }
 
 void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) {
-  FmPathList* pathList = fm_path_list_new();
-  FmPath* cwd_path = NULL;
+  Fm::PathList pathList;
+  Fm::Path cwd_path;
   QStringList::iterator it;
   Q_FOREACH(const QString& it, paths) {
     QByteArray pathName = it.toLocal8Bit();
-    FmPath* path = NULL;
+    Fm::Path path;
     if(pathName[0] == '/') // absolute path
-        path = fm_path_new_for_path(pathName.constData());
+        path = Fm::Path::newForPath(pathName.constData());
     else if(pathName.contains(":/")) // URI
-        path = fm_path_new_for_uri(pathName.constData());
+        path = Fm::Path::newForUri(pathName.constData());
     else if(pathName == "~") // special case for home dir
-        path = fm_path_ref(fm_path_get_home());
+        path = Fm::Path::getHome();
     else // basename
     {
         if(Q_UNLIKELY(!cwd_path))
-            cwd_path = fm_path_new_for_str(cwd.toLocal8Bit().constData());
-        path = fm_path_new_relative(cwd_path, pathName.constData());
+            cwd_path = Fm::Path::newForStr(cwd.toLocal8Bit().constData());
+        path = cwd_path.newRelative(pathName.constData());
     }
     fm_path_list_push_tail(pathList, path);
-    fm_path_unref(path);
   }
-  if(cwd_path)
-      fm_path_unref(cwd_path);
 
   Launcher(NULL).launchPaths(NULL, pathList);
-  fm_path_list_unref(pathList);
 }
 
-void Application::openFolders(FmFileInfoList* files) {
+void Application::openFolders(Fm::FileInfoList files) {
   Launcher(NULL).launchFiles(NULL, files);
 }
 
-void Application::openFolderInTerminal(FmPath* path) {
+void Application::openFolderInTerminal(Fm::Path path) {
   if(!settings_.terminal().isEmpty()) {
     char* cwd_str;
-    if(fm_path_is_native(path))
-      cwd_str = fm_path_to_str(path);
+    if(path.isNative())
+      cwd_str = path.toStr();
     else { // gio will map remote filesystems to local FUSE-mounted paths here.
-      GFile* gf = fm_path_to_gfile(path);
+      GFile* gf = path.toGfile();
       cwd_str = g_file_get_path(gf);
       g_object_unref(gf);
     }
     GError* err = NULL;
-    if(!fm_terminal_launch(cwd_str, &err)) {
+    if(!Fm::Terminal::launch(cwd_str, &err)) {
       QMessageBox::critical(NULL, tr("Error"), QString::fromUtf8(err->message));
       g_error_free(err);
     }

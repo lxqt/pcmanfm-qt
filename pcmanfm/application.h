@@ -84,8 +84,8 @@ public:
   void updateFromSettings();
   void updateDesktopsFromSettings();
 
-  void openFolderInTerminal(FmPath* path);
-  void openFolders(FmFileInfoList* files);
+  void openFolderInTerminal(Fm::Path path);
+  void openFolders(Fm::FileInfoList files);
 
   QString profileName() {
     return profileName_;
