@@ -416,22 +416,21 @@ void TabPage::onSelChanged(int numSel) {
   if(numSel > 0) {
     /* FIXME: display total size of all selected files. */
     if(numSel == 1) { /* only one file is selected */
-      FmFileInfoList* files = folderView_->selectedFiles();
-      FmFileInfo* fi = fm_file_info_list_peek_head(files);
-      const char* size_str = fm_file_info_get_disp_size(fi);
+      Fm::FileInfoList files = folderView_->selectedFiles();
+      Fm::FileInfo fi = fm_file_info_list_peek_head(files);
+      const char* size_str = fi.getDispSize();
       if(size_str) {
         msg = QString("\"%1\" (%2) %3")
-                        .arg(QString::fromUtf8(fm_file_info_get_disp_name(fi)))
+                        .arg(QString::fromUtf8(fi.getDispName()))
                         .arg(QString::fromUtf8(size_str))
-                        .arg(QString::fromUtf8(fm_file_info_get_desc(fi)));
+                        .arg(QString::fromUtf8(fi.getDesc()));
       }
       else {
         msg = QString("\"%1\" %2")
-                        .arg(QString::fromUtf8(fm_file_info_get_disp_name(fi)))
-                        .arg(QString::fromUtf8(fm_file_info_get_desc(fi)));
+                        .arg(QString::fromUtf8(fi.getDispName()))
+                        .arg(QString::fromUtf8(fi.getDesc()));
       }
       /* FIXME: should we support statusbar plugins as in the gtk+ version? */
-      fm_file_info_list_unref(files);
     }
     else {
       goffset sum;
@@ -440,24 +439,24 @@ void TabPage::onSelChanged(int numSel) {
       /* don't count if too many files are selected, that isn't lightweight */
       if(numSel < 1000) {
         sum = 0;
-        FmFileInfoList* files = folderView_->selectedFiles();
+        Fm::FileInfoList files = folderView_->selectedFiles();
         for(l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
-          if(fm_file_info_is_dir(FM_FILE_INFO(l->data))) {
+          Fm::FileInfo fi = FM_FILE_INFO(l->data);
+          if(fi.isDir()) {
             /* if we got a directory then we cannot tell it's size
             unless we do deep count but we cannot afford it */
             sum = -1;
             break;
           }
-          sum += fm_file_info_get_size(FM_FILE_INFO(l->data));
+          sum += fi.getSize();
         }
         if(sum >= 0) {
           char size_str[128];
           fm_file_size_to_str(size_str, sizeof(size_str), sum,
                               fm_config->si_unit);
-	  msg += QString(" (%1)").arg(QString::fromUtf8(size_str));
+          msg += QString(" (%1)").arg(QString::fromUtf8(size_str));
         }
-      /* FIXME: should we support statusbar plugins as in the gtk+ version? */
-        fm_file_info_list_unref(files);
+        /* FIXME: should we support statusbar plugins as in the gtk+ version? */
       }
       /* FIXME: can we show some more info on selection?
           that isn't lightweight if a lot of files are selected */

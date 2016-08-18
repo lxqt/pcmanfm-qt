@@ -371,8 +371,8 @@ void DesktopWindow::prepareFileMenu(Fm::FileMenu* menu) {
   Fm::FileInfoList files = menu->files();
   // select exactly one item
   if(fm_file_info_list_get_length(files) == 1) {
-    FmFileInfo* file = menu->firstFile();
-    if(customItemPos_.find(fm_file_info_get_name(file)) != customItemPos_.end()) {
+    Fm::FileInfo file = menu->firstFile();
+    if(customItemPos_.find(file.getName()) != customItemPos_.end()) {
       // the file item has a custom position
       action->setChecked(true);
     }
@@ -441,7 +441,7 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
     // Since we only care about rows, not individual cells,
     // let's handle column 0 of every row here.
     if(index.column() == 0) {
-      FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
+      Fm::FileInfo file = proxyModel_->fileInfoFromIndex(index);
       QRect itemRect = listView_->rectForIndex(index);
       QPoint tl = itemRect.topLeft();
       QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
@@ -450,7 +450,7 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
          && tl.x() >= workArea.x() && tl.y() >= workArea.y()
          && tl.x() + listView_->gridSize().width() <= workArea.right() + 1 // for historical reasons (-> Qt doc)
          && tl.y() + listView_->gridSize().height() <= workArea.bottom() + 1) { // as above
-        QByteArray name = fm_file_info_get_name(file);
+        QByteArray name = file.getName();
         customItemPos_[name] = tl;
         // qDebug() << "indexMoved:" << name << index << itemRect;
       }
@@ -533,8 +533,8 @@ void DesktopWindow::relayoutItems() {
     for(; row < rowCount; ++row) {
       QModelIndex index = proxyModel_->index(row, 0);
       int itemWidth = delegate_->sizeHint(listView_->getViewOptions(), index).width();
-      FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
-      QByteArray name = fm_file_info_get_name(file);
+      Fm::FileInfo file = proxyModel_->fileInfoFromIndex(index);
+      QByteArray name = file.getName();
       QHash<QByteArray, QPoint>::iterator it = customItemPos_.find(name);
       if(it != customItemPos_.end()) { // the item has a custom position
         QPoint customPos = *it;
@@ -653,8 +653,8 @@ void DesktopWindow::onStickToCurrentPos(bool toggled) {
 
   QModelIndexList indexes = listView_->selectionModel()->selectedIndexes();
   if(!indexes.isEmpty()) {
-    FmFileInfo* file = menu->firstFile();
-    QByteArray name = fm_file_info_get_name(file);
+    Fm::FileInfo file = menu->firstFile();
+    QByteArray name = file.getName();
     QModelIndex index = indexes.first();
     if(toggled) { // remember to current custom position
       QRect itemRect = listView_->rectForIndex(index);

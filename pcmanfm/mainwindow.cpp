@@ -389,19 +389,19 @@ void MainWindow::on_actionGo_triggered() {
 }
 
 void MainWindow::on_actionNewTab_triggered() {
-  FmPath* path = currentPage()->path();
+  Fm::Path path = currentPage()->path();
   int index = addTab(path);
   ui.tabBar->setCurrentIndex(index);
 }
 
 void MainWindow::on_actionNewWin_triggered() {
-  FmPath* path = currentPage()->path();
+  Fm::Path path = currentPage()->path();
   (new MainWindow(path))->show();
 }
 
 void MainWindow::on_actionNewFolder_triggered() {
   if(TabPage* tabPage = currentPage()) {
-    FmPath* dirPath = tabPage->folderView()->path();
+    Fm::Path dirPath = tabPage->folderView()->path();
 
     if(dirPath)
       createFileOrFolder(CreateNewFolder, dirPath);
@@ -410,7 +410,7 @@ void MainWindow::on_actionNewFolder_triggered() {
 
 void MainWindow::on_actionNewBlankFile_triggered() {
   if(TabPage* tabPage = currentPage()) {
-    FmPath* dirPath = tabPage->folderView()->path();
+    Fm::Path dirPath = tabPage->folderView()->path();
 
     if(dirPath)
       createFileOrFolder(CreateNewTextFile, dirPath);
@@ -901,7 +901,7 @@ void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
 
 void MainWindow::onBookmarkActionTriggered() {
   BookmarkAction* action = static_cast<BookmarkAction*>(sender());
-  FmPath* path = action->path();
+  Fm::Path path = action->path();
   if(path) {
     Application* app = static_cast<Application*>(qApp);
     Settings& settings = app->settings();
