@@ -89,7 +89,7 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
   bool all_native = true;
   bool all_directory = true;
   Fm::FileInfoList files = menu->files();
-  for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
+  for(GList* l = files.peekHeadLink(); l; l = l->next) {
     Fm::FileInfo fi = FM_FILE_INFO(l->data);
     if(!fi.isDir())
       all_directory = false;

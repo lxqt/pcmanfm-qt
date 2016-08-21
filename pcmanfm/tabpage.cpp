@@ -417,20 +417,22 @@ void TabPage::onSelChanged(int numSel) {
     /* FIXME: display total size of all selected files. */
     if(numSel == 1) { /* only one file is selected */
       Fm::FileInfoList files = folderView_->selectedFiles();
-      Fm::FileInfo fi = fm_file_info_list_peek_head(files);
-      const char* size_str = fi.getDispSize();
-      if(size_str) {
-        msg = QString("\"%1\" (%2) %3")
-                        .arg(QString::fromUtf8(fi.getDispName()))
-                        .arg(QString::fromUtf8(size_str))
-                        .arg(QString::fromUtf8(fi.getDesc()));
-      }
-      else {
-        msg = QString("\"%1\" %2")
-                        .arg(QString::fromUtf8(fi.getDispName()))
-                        .arg(QString::fromUtf8(fi.getDesc()));
-      }
+      if(!files.isNull()) {
+        Fm::FileInfo fi = fm_file_info_list_peek_head(files);
+        const char* size_str = fi.getDispSize();
+        if(size_str) {
+          msg = QString("\"%1\" (%2) %3")
+                         .arg(QString::fromUtf8(fi.getDispName()))
+                         .arg(QString::fromUtf8(size_str))
+                         .arg(QString::fromUtf8(fi.getDesc()));
+        }
+        else {
+            msg = QString("\"%1\" %2")
+                            .arg(QString::fromUtf8(fi.getDispName()))
+                            .arg(QString::fromUtf8(fi.getDesc()));
+        }
       /* FIXME: should we support statusbar plugins as in the gtk+ version? */
+      }
     }
     else {
       goffset sum;
@@ -440,15 +442,17 @@ void TabPage::onSelChanged(int numSel) {
       if(numSel < 1000) {
         sum = 0;
         Fm::FileInfoList files = folderView_->selectedFiles();
-        for(l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
-          Fm::FileInfo fi = FM_FILE_INFO(l->data);
-          if(fi.isDir()) {
-            /* if we got a directory then we cannot tell it's size
-            unless we do deep count but we cannot afford it */
-            sum = -1;
-            break;
+        if(!files.isNull()) {
+          for(l = files.peekHeadLink(); l; l = l->next) {
+            Fm::FileInfo fi = FM_FILE_INFO(l->data);
+            if(fi.isDir()) {
+              /* if we got a directory then we cannot tell it's size
+              unless we do deep count but we cannot afford it */
+              sum = -1;
+              break;
+            }
+            sum += fi.getSize();
           }
-          sum += fi.getSize();
         }
         if(sum >= 0) {
           char size_str[128];

@@ -430,7 +430,7 @@ void MainWindow::on_actionCloseWindow_triggered() {
 void MainWindow::on_actionFileProperties_triggered() {
   TabPage* page = currentPage();
   if(page) {
-    Fm::FileInfoList files = Fm::FileInfoList::wrapPtr(page->selectedFiles());
+    Fm::FileInfoList files = page->selectedFiles();
     if(!files.isNull()) {
       Fm::FilePropsDialog::showForFiles(files);
     }
@@ -922,13 +922,13 @@ void MainWindow::onBookmarkActionTriggered() {
 
 void MainWindow::on_actionCopy_triggered() {
   TabPage* page = currentPage();
-  Fm::PathList paths = Fm::PathList::wrapPtr(page->selectedFilePaths());
+  Fm::PathList paths = page->selectedFilePaths();
   copyFilesToClipboard(paths);
 }
 
 void MainWindow::on_actionCut_triggered() {
   TabPage* page = currentPage();
-  Fm::PathList paths = Fm::PathList::wrapPtr(page->selectedFilePaths());
+  Fm::PathList paths = page->selectedFilePaths();
   cutFilesToClipboard(paths);
 }
 
@@ -940,7 +940,7 @@ void MainWindow::on_actionDelete_triggered() {
   Application* app = static_cast<Application*>(qApp);
   Settings& settings = app->settings();
   TabPage* page = currentPage();
-  Fm::PathList paths = Fm::PathList::wrapPtr(page->selectedFilePaths());
+  Fm::PathList paths = page->selectedFilePaths();
 
   bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
   if(settings.useTrash() && !shiftPressed)
@@ -951,7 +951,7 @@ void MainWindow::on_actionDelete_triggered() {
 
 void MainWindow::on_actionRename_triggered() {
   TabPage* page = currentPage();
-  Fm::FileInfoList files = Fm::FileInfoList::wrapPtr(page->selectedFiles());
+  Fm::FileInfoList files = page->selectedFiles();
   for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
     FmFileInfo* file = FM_FILE_INFO(l->data);
     Fm::renameFile(file, NULL);

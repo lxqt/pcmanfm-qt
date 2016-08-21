@@ -442,7 +442,7 @@ void Application::onFindFileAccepted() {
   Fm::Path uri = dlg->searchUri();
   // FIXME: we should be able to open it in an existing window
   Fm::PathList paths;
-  fm_path_list_push_tail(paths, uri);
+  paths.pushTail(uri);
   Launcher(NULL).launchPaths(NULL, paths);
 }
 
