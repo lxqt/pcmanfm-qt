@@ -115,32 +115,32 @@ USA.</translation>
     <message>
         <location filename="../../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Φόρμα</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished">Επιφάνεια εργασίας</translation>
+        <translation>Επιφάνεια εργασίας</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished">Φάκελος επιφάνειας εργασίας:</translation>
+        <translation>Φάκελος επιφάνειας εργασίας:</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation type="unfinished">Αρχείο εικόνας</translation>
+        <translation>Αρχείο εικόνας</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished">Διαδρομή του φακέλου</translation>
+        <translation>Διαδρομή του φακέλου</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">&amp;Περιήγηση</translation>
+        <translation>&amp;Περιήγηση</translation>
     </message>
 </context>
 <context>
@@ -188,12 +188,12 @@ USA.</translation>
     <message>
         <location filename="../../desktop-preferences.ui" line="119"/>
         <source>Icons</source>
-        <translation type="unfinished">Εικονίδια</translation>
+        <translation>Εικονίδια</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="125"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέγεθος εικονιδίων:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="138"/>
@@ -223,39 +223,40 @@ USA.</translation>
     <message>
         <location filename="../../desktop-preferences.ui" line="225"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Espacement</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστο περιθώριο αντικειμένων:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 εικ εξ ορισμού.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="241"/>
         <location filename="../../desktop-preferences.ui" line="265"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> εικ</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="254"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>1 εικ εξ ορισμού.
+Επίσης δεσμεύεται μια θέση για 3 γραμμές κειμένου.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="278"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλείδωμα</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
@@ -269,15 +270,15 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <source>Desktop</source>
-        <translation type="vanished">Επιφάνεια εργασίας</translation>
+        <translation>Επιφάνεια εργασίας</translation>
     </message>
     <message>
         <source>Desktop folder:</source>
-        <translation type="vanished">Φάκελος επιφάνειας εργασίας:</translation>
+        <translation>Φάκελος επιφάνειας εργασίας:</translation>
     </message>
     <message>
         <source>Folder path</source>
-        <translation type="vanished">Διαδρομή του φακέλου</translation>
+        <translation>Διαδρομή του φακέλου</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="315"/>
@@ -289,111 +290,111 @@ A space is also reserved for 3 lines of text.</source>
     <name>FindFilesDialog</name>
     <message>
         <source>Find Files</source>
-        <translation type="vanished">Αναζήτηση αρχείων</translation>
+        <translation>Αναζήτηση αρχείων</translation>
     </message>
     <message>
         <source>Name/Location</source>
-        <translation type="vanished">Όνομα/Τοποθεσία</translation>
+        <translation>Όνομα/Τοποθεσία</translation>
     </message>
     <message>
         <source>File name patterns</source>
-        <translation type="vanished">Σχηματομορφές ονομάτων αρχείων</translation>
+        <translation>Σχηματομορφές ονομάτων αρχείων</translation>
     </message>
     <message>
         <source>Pattern:</source>
-        <translation type="vanished">Σχηματομορφή:</translation>
+        <translation>Σχηματομορφή:</translation>
     </message>
     <message>
         <source>Case insensitive</source>
-        <translation type="vanished">Δίχως διάκριση πεζών/κεφαλαίων</translation>
+        <translation>Δίχως διάκριση πεζών/κεφαλαίων</translation>
     </message>
     <message>
         <source>Use regular expression</source>
-        <translation type="vanished">Χρήση κανονικής έκφρασης</translation>
+        <translation>Χρήση κανονικής έκφρασης</translation>
     </message>
     <message>
         <source>Places to search</source>
-        <translation type="vanished">Τοποθεσίες προς αναζήτηση</translation>
+        <translation>Τοποθεσίες προς αναζήτηση</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">Αφαίρεση</translation>
+        <translation>Αφαίρεση</translation>
     </message>
     <message>
         <source>Search in sub directories</source>
-        <translation type="vanished">Αναζήτηση σε υποφακέλους</translation>
+        <translation>Αναζήτηση σε υποφακέλους</translation>
     </message>
     <message>
         <source>Search hidden files</source>
-        <translation type="vanished">Αναζήτηση κρυφών αρχείων</translation>
+        <translation>Αναζήτηση κρυφών αρχείων</translation>
     </message>
     <message>
         <source>File Type</source>
-        <translation type="vanished">Τύπος αρχείου</translation>
+        <translation>Τύπος αρχείου</translation>
     </message>
     <message>
         <source>Only search for files of following types:</source>
-        <translation type="vanished">Αναζήτηση αρχείων μόνο για τους ακόλουθους τύπους:</translation>
+        <translation>Αναζήτηση αρχείων μόνο για τους ακόλουθους τύπους:</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation type="vanished">Αρχεία κειμένου</translation>
+        <translation>Αρχεία κειμένου</translation>
     </message>
     <message>
         <source>Image files</source>
-        <translation type="vanished">Αρχεία εικόνων</translation>
+        <translation>Αρχεία εικόνων</translation>
     </message>
     <message>
         <source>Audio files</source>
-        <translation type="vanished">Αρχεία ήχου</translation>
+        <translation>Αρχεία ήχου</translation>
     </message>
     <message>
         <source>Video files</source>
-        <translation type="vanished">Αρχεία βίντεο</translation>
+        <translation>Αρχεία βίντεο</translation>
     </message>
     <message>
         <source>Documents</source>
-        <translation type="vanished">Έγγραφα</translation>
+        <translation>Έγγραφα</translation>
     </message>
     <message>
         <source>Content</source>
-        <translation type="vanished">Περιεχόμενο</translation>
+        <translation>Περιεχόμενο</translation>
     </message>
     <message>
         <source>File contains</source>
-        <translation type="vanished">Αρχεία που περιέχουν</translation>
+        <translation>Αρχεία που περιέχουν</translation>
     </message>
     <message>
         <source>Properties</source>
-        <translation type="vanished">Ιδιότητες</translation>
+        <translation>Ιδιότητες</translation>
     </message>
     <message>
         <source>File Size</source>
-        <translation type="vanished">Μέγεθος αρχείων</translation>
+        <translation>Μέγεθος αρχείου</translation>
     </message>
     <message>
         <source>Bigger than:</source>
-        <translation type="vanished">Μεγαλύτερο από:</translation>
+        <translation>Μεγαλύτερο από:</translation>
     </message>
     <message>
         <source>Smaller than:</source>
-        <translation type="vanished">Μικρότερο από:</translation>
+        <translation>Μικρότερο από:</translation>
     </message>
     <message>
         <source>Last Modified Time</source>
-        <translation type="vanished">Χρόνος της τελευταίας τροποποίησης</translation>
+        <translation>Χρόνος της τελευταίας τροποποίησης</translation>
     </message>
     <message>
         <source>Earlier than:</source>
-        <translation type="vanished">Προγενέστερα από:</translation>
+        <translation>Προγενέστερα από:</translation>
     </message>
     <message>
         <source>Later than:</source>
-        <translation type="vanished">Αργότερα από:</translation>
+        <translation>Αργότερα από:</translation>
     </message>
 </context>
 <context>
@@ -420,12 +421,12 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <source>Home</source>
-        <translation type="vanished">Προσωπικός φάκελος</translation>
+        <translation>Προσωπικός φάκελος</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="275"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Προσωπικός φάκελος</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="278"/>
@@ -585,137 +586,137 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="483"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Αύξουσα</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="491"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Φθίνουσα</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="499"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ανά όνομα αρχείου</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="507"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Ανά &amp;χρόνο τροποποίησης</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="515"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Ανά &amp;τύπο αρχείου</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="523"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Ανά ι&amp;διοκτήτη</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="531"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Πρώτα οι φάκελοι</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="630"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Διάκριση πεζών/κεφαλαίων</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="638"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Ανά &amp;μέγεθος αρχείου</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="643"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Κλείσιμο παραθύρου</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="646"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="678"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Φάκελος</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="690"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Κενό αρχείο</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="709"/>
         <source>&amp;Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Φίλτρο</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="712"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="721"/>
         <source>Close &amp;left tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλείσιμο των καρτελών &amp;αριστερά</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="730"/>
         <source>Close &amp;right tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλείσιμο των καρτελών &amp;δεξιά</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="735"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλείσιμο των ά&amp;λλων καρτελών</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="743"/>
         <location filename="../../main-win.ui" line="746"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Γραμμή μενού</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="749"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="757"/>
         <location filename="../../main-win.ui" line="760"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Μενού</translation>
     </message>
     <message>
         <source>Ascending</source>
-        <translation type="vanished">Αύξουσα</translation>
+        <translation>Αύξουσα</translation>
     </message>
     <message>
         <source>Descending</source>
-        <translation type="vanished">Φθίνουσα</translation>
+        <translation>Φθίνουσα</translation>
     </message>
     <message>
         <source>By File Name</source>
-        <translation type="vanished">Ανά όνομα αρχείου</translation>
+        <translation>Ανά όνομα αρχείου</translation>
     </message>
     <message>
         <source>By Modification Time</source>
-        <translation type="vanished">Ανά χρόνο τροποποίησης</translation>
+        <translation>Ανά χρόνο τροποποίησης</translation>
     </message>
     <message>
         <source>By File Type</source>
-        <translation type="vanished">Ανά τύπο αρχείου</translation>
+        <translation>Ανά τύπο αρχείου</translation>
     </message>
     <message>
         <source>By Owner</source>
-        <translation type="vanished">Ανά ιδιοκτήτη</translation>
+        <translation>Ανά ιδιοκτήτη</translation>
     </message>
     <message>
         <source>Folder First</source>
-        <translation type="vanished">Πρώτα οι φάκελοι</translation>
+        <translation>Πρώτα οι φάκελοι</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="540"/>
@@ -814,15 +815,15 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <source>Case Sensitive</source>
-        <translation type="vanished">Διάκριση πεζών/κεφαλαίων</translation>
+        <translation>Διάκριση πεζών/κεφαλαίων</translation>
     </message>
     <message>
         <source>By File Size</source>
-        <translation type="vanished">Ανά μέγεθος αρχείου</translation>
+        <translation>Ανά μέγεθος αρχείου</translation>
     </message>
     <message>
         <source>Close Window</source>
-        <translation type="vanished">Κλείσιμο παραθύρου</translation>
+        <translation>Κλείσιμο παραθύρου</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="651"/>
@@ -851,7 +852,7 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <source>Folder</source>
-        <translation type="vanished">Φάκελος</translation>
+        <translation>Φάκελος</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="681"/>
@@ -860,7 +861,7 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <source>Blank File</source>
-        <translation type="vanished">Κενό αρχείο</translation>
+        <translation>Κενό αρχείο</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="693"/>
@@ -870,22 +871,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="698"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Αναζήτηση αρχείων</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="701"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="90"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>Φιλτράρισμα ανά συμβολοσειρά...</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="96"/>
         <source>Focus with Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Εστίαση με Ctrl+I</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="117"/>
@@ -1003,7 +1004,7 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation type="vanished">Ορισμός της λειτουργίας της επιφάνειας ΛΕΙΤΟΥΡΓΙΑ=(color|stretch|fit|center|tile)</translation>
+        <translation>Ορισμός της λειτουργίας της επιφάνειας ΛΕΙΤΟΥΡΓΙΑ=(χρώμα|τέντωμα|προσαρμογή|κέντρο|παράθεση)</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="192"/>
@@ -1013,7 +1014,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ορισμός της λειτουργίας της ταπετσαρίας της επιφάνειας εργασίας. ΛΕΙΤΟΥΡΓΙΑ=(%1)</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="195"/>
@@ -1106,17 +1107,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="248"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Καθαρισμός κειμένου (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="310"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Απόκρυψη της γραμμή μενού</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="311"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτό θα καταχωνιάσει τη γραμμή μενού. Μπορείτε να την αποκαλύψετε πάλι με τον συνδυασμό πλήκτρων Ctrl+M.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="557"/>
@@ -1154,12 +1155,12 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <source>Compact Icon View</source>
-        <translation type="vanished">Συμπαγής προβολή εικονιδίων</translation>
+        <translation>Συμπαγής προβολή εικονιδίων</translation>
     </message>
     <message>
         <location filename="../../preferencesdialog.cpp" line="190"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>Συμπαγής προβολή</translation>
     </message>
     <message>
         <location filename="../../preferencesdialog.cpp" line="191"/>
@@ -1411,19 +1412,19 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../preferences.ui" line="249"/>
         <location filename="../../preferences.ui" line="259"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρησιμοποιείται από την προβολή εικονιδίων</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="266"/>
         <location filename="../../preferences.ui" line="276"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρησιμοποιείται από την συμπαγής προβολή και την αναλυτική προβολή</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="283"/>
         <location filename="../../preferences.ui" line="293"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρησιμοποιείται από την προβολή εικόνων επισκόπησης</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="313"/>
@@ -1448,51 +1449,54 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="369"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστο περιθώριο αντικειμένων στην προβολή εικονιδίων:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="376"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 εικ εξ ορισμού.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="379"/>
         <location filename="../../preferences.ui" line="403"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> εικ</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="392"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="399"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 εικ εξ ορισμού.
+Επίσης δεσμεύεται μια θέση για 3 γραμμές κειμένου.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="416"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλείδωμα</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="465"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>όταν δεν είναι επιλεγμένο, εμφανίζεται η γραμμή καρτελών
+μόνο αν υπάρχουν περισσότερες από μια καρτέλες.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="476"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν δεν είναι επιλεγμένο, η γραμμή καρτελών τοποθετείται
+πάνω από την προβολή των φακέλων και όχι πάνω από τον αριστερό πίνακα.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="480"/>
         <source>Fullwidth tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Γραμμή καρτελών πλήρους πλάτους</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="532"/>
@@ -1547,7 +1551,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="673"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>Απαιτείται το ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="703"/>
