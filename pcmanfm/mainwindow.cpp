@@ -452,10 +452,8 @@ void MainWindow::on_actionFolderProperties_triggered() {
 }
 
 void MainWindow::on_actionShowHidden_triggered(bool checked) {
-  TabPage* tabPage = currentPage();
-  tabPage->setShowHidden(checked);
+  currentPage()->setShowHidden(checked);
   ui.sidePane->setShowHidden(checked);
-  static_cast<Application*>(qApp)->settings().setShowHidden(checked);
 }
 
 void MainWindow::on_actionByFileName_triggered(bool checked) {
@@ -494,76 +492,9 @@ void MainWindow::on_actionFolderFirst_triggered(bool checked) {
   currentPage()->setSortFolderFirst(checked);
 }
 
-/* When the box is checked, save the sorting in 'perfolder-settings.conf'.
-   When unchecked, revert to the default sorting and remove the sorting keys
-   from the conf file or remove the folder path from it if the view mode
-   isn't customized either. */
-void MainWindow::on_actionPreserveSorting_triggered(bool checked) {
+void MainWindow::on_actionPreserveView_triggered(bool checked) {
   TabPage* page = currentPage();
-  if(page) {
-    FmFolder* folder = page->folder();
-    if(folder) {
-      Settings& settings = static_cast<Application*>(qApp)->settings();
-      QString configFile = QString("%1/perfolder-settings.conf").arg(settings.profileDir(settings.profileName()));
-      QSettings file(configFile, QSettings::IniFormat);
-      // we use a nested QHash<QString(folder), QHash<QString(property), QVariant(value)>>
-      QHash<QString, QVariant> customFolders = file.value("customFolders").toHash();
-      FmPath* path = fm_folder_get_path(folder);
-      char* pathStr = fm_path_to_str(path);
-      QString folder(pathStr);
-      g_free(pathStr);
-      QHash<QString, QVariant> props = customFolders.value(folder).toHash();
-
-      if(!checked) {
-        if(props.contains("Mode")) {
-          props.remove("SortColumn");
-          props.remove("SortFolderFirst");
-          props.remove("SortOrder");
-          customFolders.insert(folder, props);
-        }
-        else
-          customFolders.remove(folder);
-        file.setValue("customFolders", customFolders);
-        page->sort(settings.sortColumn(), settings.sortOrder());
-        page->setSortFolderFirst(settings.sortFolderFirst());
-        page->setSortCaseSensitive(false);
-      }
-      else {
-        int columnId;
-        switch(static_cast<Fm::FolderModel::ColumnId>(page->sortColumn())) {
-          case Fm::FolderModel::ColumnFileName:
-          default:
-            columnId = 0;
-            break;
-          case Fm::FolderModel::ColumnFileType:
-            columnId = 1;
-            break;
-          case Fm::FolderModel::ColumnFileSize:
-            columnId = 2;
-            break;
-          case Fm::FolderModel::ColumnFileMTime:
-            columnId = 3;
-            break;
-          case Fm::FolderModel::ColumnFileOwner:
-            columnId = 4;
-            break;
-        }
-        int order = page->sortOrder() == Qt::AscendingOrder ? 0 : 1;
-        bool folderFirst(page->sortFolderFirst());
-        /* this may be called by onTabPageSortFilterChanged() without change in sorting
-           and we don't want a redundant writng of the same QHash in a different form */
-        if(props.value("SortColumn").toInt() == columnId
-           && props.value("SortFolderFirst").toBool() == folderFirst
-           && props.value("SortOrder").toInt() == order)
-          return;
-        props.insert("SortColumn", QVariant(columnId));
-        props.insert("SortFolderFirst", QVariant(folderFirst));
-        props.insert("SortOrder", QVariant(order));
-        customFolders.insert(folder, props);
-        file.setValue("customFolders", customFolders);
-      }
-    }
-  }
+  page->setCustomizedView(!page->hasCustomizedView());
 }
 
 void MainWindow::on_actionFilter_triggered(bool checked) {
@@ -640,104 +571,18 @@ void MainWindow::on_actionAbout_triggered() {
 
 void MainWindow::on_actionIconView_triggered() {
   currentPage()->setViewMode(Fm::FolderView::IconMode);
-  saveViewMode();
 }
 
 void MainWindow::on_actionCompactView_triggered() {
   currentPage()->setViewMode(Fm::FolderView::CompactMode);
-  saveViewMode();
 }
 
 void MainWindow::on_actionDetailedList_triggered() {
   currentPage()->setViewMode(Fm::FolderView::DetailedListMode);
-  saveViewMode();
 }
 
 void MainWindow::on_actionThumbnailView_triggered() {
   currentPage()->setViewMode(Fm::FolderView::ThumbnailMode);
-  saveViewMode();
-}
-
-void MainWindow::saveViewMode()
-{
-  if(ui.actionPreserveView->isChecked())
-    on_actionPreserveView_triggered(true);
-  else {
-    Settings& settings = static_cast<Application*>(qApp)->settings();
-    settings.setViewMode(currentPage()->viewMode());
-  }
-}
-
-/* When the box is checked, save the view mode in 'perfolder-settings.conf'.
-   When unchecked, revert to the default view mode and remove the mode key
-   from the conf file or remove the folder path from it if the sorting isn't
-   customized either. */
-void MainWindow::on_actionPreserveView_triggered(bool checked) {
-  TabPage* page = currentPage();
-  if(page) {
-    FmFolder* folder = page->folder();
-    if(folder) {
-      Settings& settings = static_cast<Application*>(qApp)->settings();
-      QString configFile = QString("%1/perfolder-settings.conf").arg(settings.profileDir(settings.profileName()));
-      QSettings file(configFile, QSettings::IniFormat);
-      QHash<QString, QVariant> customFolders = file.value("customFolders").toHash();
-      FmPath* path = fm_folder_get_path(folder);
-      char* pathStr = fm_path_to_str(path);
-      QString folder(pathStr);
-      g_free(pathStr);
-      QHash<QString, QVariant> props = customFolders.value(folder).toHash();
-
-      if(!checked) {
-        if(props.contains("SortColumn"))
-        {
-          props.remove("Mode");
-          customFolders.insert(folder, props);
-        }
-        else
-          customFolders.remove(folder);
-        file.setValue("customFolders", customFolders);
-        if(page->viewMode() != settings.viewMode()) {
-          page->setViewMode(settings.viewMode());
-          switch(settings.viewMode()) { // there's no slot to set checkboxes
-          case Fm::FolderView::IconMode:
-          default:
-            ui.actionIconView->setChecked(true);
-            break;
-          case Fm::FolderView::CompactMode:
-            ui.actionCompactView->setChecked(true);
-            break;
-          case Fm::FolderView::DetailedListMode:
-            ui.actionDetailedList->setChecked(true);
-            break;
-          case Fm::FolderView::ThumbnailMode:
-            ui.actionThumbnailView->setChecked(true);
-            break;
-          }
-        }
-      }
-      else {
-        int viewMode;
-        switch(page->viewMode()) {
-          case Fm::FolderView::IconMode:
-          default:
-            viewMode = 0;
-            break;
-          case Fm::FolderView::CompactMode:
-            viewMode = 1;
-            break;
-          case Fm::FolderView::DetailedListMode:
-            viewMode = 2;
-            break;
-          case Fm::FolderView::ThumbnailMode:
-            viewMode = 3;
-            break;
-        }
-        props.insert("Mode", QVariant(viewMode));
-        customFolders.insert(folder, props);
-        file.setValue("customFolders", customFolders);
-      }
-    }
-  }
 }
 
 void MainWindow::onTabBarCloseRequested(int index) {
@@ -845,6 +690,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
   if(tabPage) {
     // update menus. FIXME: should we move this to another method?
     ui.actionShowHidden->setChecked(tabPage->showHidden());
+    ui.actionPreserveView->setChecked(tabPage->hasCustomizedView());
 
     // view mode
     QAction* modeAction = NULL;
@@ -886,27 +732,6 @@ void MainWindow::updateViewMenuForCurrentPage() {
 
     ui.actionCaseSensitive->setChecked(tabPage->sortCaseSensitive());
     ui.actionFolderFirst->setChecked(tabPage->sortFolderFirst());
-
-    // see if this folder is customized
-    ui.actionPreserveSorting->setChecked(false);
-    ui.actionPreserveView->setChecked(false);
-    FmFolder* folder = tabPage->folder();
-    if(folder) {
-      Settings& settings = static_cast<Application*>(qApp)->settings();
-      QString configFile = QString("%1/perfolder-settings.conf").arg(settings.profileDir(settings.profileName()));
-      QSettings file(configFile, QSettings::IniFormat);
-      QHash<QString, QVariant> customFolders = file.value("customFolders").toHash();
-      FmPath* path = fm_folder_get_path(folder);
-      char* pathStr = fm_path_to_str(path);
-      QString folder(pathStr);
-      g_free(pathStr);
-      QHash<QString, QVariant> props = customFolders.value(folder).toHash();
-      if(props.isEmpty()) return;
-      if(props.contains("SortColumn"))
-        ui.actionPreserveSorting->setChecked(true);
-      if(props.contains("Mode"))
-        ui.actionPreserveView->setChecked(true);
-    }
   }
 }
 
@@ -928,43 +753,6 @@ void MainWindow::updateUIForCurrentPage() {
     ui.actionGoUp->setEnabled(tabPage->canUp());
     ui.actionGoBack->setEnabled(tabPage->canBackward());
     ui.actionGoForward->setEnabled(tabPage->canForward());
-
-    // update view mode when needed, considering customized folders
-    FmFolder* folder = tabPage->folder();
-    if(folder) {
-      Settings& settings = static_cast<Application*>(qApp)->settings();
-      QString configFile = QString("%1/perfolder-settings.conf").arg(settings.profileDir(settings.profileName()));
-      QSettings file(configFile, QSettings::IniFormat);
-      QHash<QString, QVariant> customFolders = file.value("customFolders").toHash();
-      FmPath* path = fm_folder_get_path(folder);
-      char* pathStr = fm_path_to_str(path);
-      QString folder(pathStr);
-      g_free(pathStr);
-      QHash<QString, QVariant> props = customFolders.value(folder).toHash();
-      if(props.contains("Mode")) {
-        int viewMode = props.value("Mode").toInt();
-        Fm::FolderView::ViewMode vm;
-        switch(viewMode) {
-          case 0:
-          default:
-            vm = Fm::FolderView::IconMode;
-            break;
-          case 1:
-            vm = Fm::FolderView::CompactMode;
-            break;
-          case 2:
-            vm = Fm::FolderView::DetailedListMode;
-            break;
-          case 3:
-            vm = Fm::FolderView::ThumbnailMode;
-            break;
-        }
-        if(tabPage->viewMode() != vm)
-          tabPage->setViewMode(vm);
-      }
-      else if (tabPage->viewMode() != settings.viewMode()) // always revert to the default mode
-        tabPage->setViewMode(settings.viewMode());
-    }
 
     updateViewMenuForCurrentPage();
     updateStatusBarForCurrentPage();
@@ -1030,10 +818,9 @@ void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
     addTab(path);
     break;
 
-  case OpenInNewWindow: {
+  case OpenInNewWindow:
     (new MainWindow(path))->show();
     break;
-  }
   }
 }
 
@@ -1042,13 +829,12 @@ void MainWindow::onTabPageSortFilterChanged() {
 
   if(tabPage == currentPage()) {
     updateViewMenuForCurrentPage();
-    if(ui.actionPreserveSorting->isChecked())
-      on_actionPreserveSorting_triggered(true);
-    else {
+    if(!tabPage->hasCustomizedView()) {
       Settings& settings = static_cast<Application*>(qApp)->settings();
       settings.setSortColumn(static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn()));
       settings.setSortOrder(tabPage->sortOrder());
       settings.setSortFolderFirst(tabPage->sortFolderFirst());
+      settings.setSortCaseSensitive(tabPage->sortCaseSensitive());
     }
   }
 }

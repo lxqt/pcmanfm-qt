@@ -29,6 +29,7 @@
 #include <libfm-qt/path.h>
 #include <libfm-qt/folder.h>
 #include <libfm-qt/fileinfo.h>
+#include "settings.h"
 
 namespace Fm {
   class FileLauncher;
@@ -39,7 +40,6 @@ namespace Fm {
 
 namespace PCManFM {
 
-class Settings;
 class Launcher;
 
 class ProxyFilter : public Fm::ProxyFolderModelFilter {
@@ -77,44 +77,34 @@ public:
   void chdir(Fm::Path newPath, bool addHistory = true);
 
   Fm::FolderView::ViewMode viewMode() {
-    return folderView_->viewMode();
+    return folderSettings_.viewMode();
   }
 
-  void setViewMode(Fm::FolderView::ViewMode mode) {
-    folderView_->setViewMode(mode);
-  }
+  void setViewMode(Fm::FolderView::ViewMode mode);
 
-  void sort(int col, Qt::SortOrder order = Qt::AscendingOrder) {
-    // if(folderModel_)
-    //  folderModel_->sort(col, order);
-    if(proxyModel_)
-      proxyModel_->sort(col, order);
-  }
+  void sort(int col, Qt::SortOrder order = Qt::AscendingOrder);
 
   int sortColumn() {
-    return proxyModel_->sortColumn();
+    return folderSettings_.sortColumn();
   }
 
   Qt::SortOrder sortOrder() {
-    return proxyModel_->sortOrder();
+    return folderSettings_.sortOrder();
   }
 
   bool sortFolderFirst() {
-    return proxyModel_->folderFirst();
+    return folderSettings_.sortFolderFirst();
   }
-  void setSortFolderFirst(bool value) {
-    proxyModel_->setFolderFirst(value);
-  }
+  void setSortFolderFirst(bool value);
 
   bool sortCaseSensitive() {
-    return proxyModel_->sortCaseSensitivity();
-  }
-  void setSortCaseSensitive(bool value) {
-    proxyModel_->setSortCaseSensitivity(value ? Qt::CaseSensitive : Qt::CaseInsensitive);
+    return folderSettings_.sortCaseSensitive();
   }
 
+  void setSortCaseSensitive(bool value);
+
   bool showHidden() {
-    return proxyModel_->showHidden();
+    return folderSettings_.showHidden();
   }
 
   void setShowHidden(bool showHidden);
@@ -209,6 +199,12 @@ public:
 
   void applyFilter();
 
+  bool hasCustomizedView() {
+    return folderSettings_.isCustomized();
+  }
+
+  void setCustomizedView(bool value);
+
 Q_SIGNALS:
   void statusChanged(int type, QString statusText);
   void titleChanged(QString title);
@@ -247,6 +243,7 @@ private:
   Fm::BrowseHistory history_; // browsing history
   Fm::Path lastFolderPath_; // last browsed folder
   bool overrideCursor_;
+  FolderSettings folderSettings_;
 };
 
 }

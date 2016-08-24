@@ -122,6 +122,10 @@ TabPage::~TabPage() {
 
 void TabPage::freeFolder() {
   if(!folder_.isNull()) {
+    if(folderSettings_.isCustomized()) {
+      // save custom view settings for this folder
+      static_cast<Application*>(qApp)->settings().saveFolderSettings(folder_.getPath(), folderSettings_);
+    }
     g_signal_handlers_disconnect_by_func(folder_, (gpointer)onFolderStartLoading, this);
     g_signal_handlers_disconnect_by_func(folder_, (gpointer)onFolderFinishLoading, this);
     g_signal_handlers_disconnect_by_func(folder_, (gpointer)onFolderError, this);
@@ -385,46 +389,16 @@ void TabPage::chdir(Path newPath, bool addHistory) {
 
   folderModel_ = CachedFolderModel::modelFromFolder(folder_);
   proxyModel_->setSourceModel(folderModel_);
-  proxyModel_->sort(proxyModel_->sortColumn(), proxyModel_->sortOrder());
+  // proxyModel_->sort(proxyModel_->sortColumn(), proxyModel_->sortOrder());
+
   // set sorting, considering customized folders
   Settings& settings = static_cast<Application*>(qApp)->settings();
-  QString configFile = QString("%1/perfolder-settings.conf").arg(settings.profileDir(settings.profileName()));
-  QSettings file(configFile, QSettings::IniFormat);
-  // we use a nested QHash<QString(folder), QHash<QString(property), QVariant(value)>> in "mainwindow.cpp"
-  QHash<QString, QVariant> customFolders = file.value("customFolders").toHash();
-  char* pathStr = fm_path_to_str(path());
-  QString folder(pathStr);
-  g_free(pathStr);
-  QHash<QString, QVariant> props = customFolders.value(folder).toHash();
-  if(props.contains("SortColumn")) {
-    Fm::FolderModel::ColumnId sortColumn;
-    int columnId = props.value("SortColumn").toInt();
-    switch(columnId) {
-      case 0:
-      default:
-        sortColumn = Fm::FolderModel::ColumnFileName;
-        break;
-      case 1:
-        sortColumn = Fm::FolderModel::ColumnFileType;
-        break;
-      case 2:
-        sortColumn = Fm::FolderModel::ColumnFileSize;
-        break;
-      case 3:
-        sortColumn = Fm::FolderModel::ColumnFileMTime;
-        break;
-      case 4:
-        sortColumn = Fm::FolderModel::ColumnFileOwner;
-        break;
-    }
-    proxyModel_->sort(sortColumn,
-                      props.value("SortOrder").toInt() == 0 ? Qt::AscendingOrder : Qt::DescendingOrder);
-    proxyModel_->setFolderFirst(props.value("SortFolderFirst").toBool());
-  }
-  else { // always revert to the default sorting
-    proxyModel_->setFolderFirst(settings.sortFolderFirst());
-    proxyModel_->sort(settings.sortColumn(), settings.sortOrder());
-  }
+  folderSettings_ = settings.loadFolderSettings(path());
+  proxyModel_->sort(folderSettings_.sortColumn(), folderSettings_.sortOrder());
+  proxyModel_->setFolderFirst(folderSettings_.sortFolderFirst());
+  proxyModel_->setShowHidden(folderSettings_.showHidden());
+  proxyModel_->setSortCaseSensitivity(folderSettings_.sortCaseSensitive() ? Qt::CaseSensitive : Qt::CaseInsensitive);
+  folderView_->setViewMode(folderSettings_.viewMode());
 
   if(folder_.isLoaded()) {
     onFolderStartLoading(folder_, this);
@@ -564,7 +538,46 @@ void TabPage::updateFromSettings(Settings& settings) {
   folderView_->updateFromSettings(settings);
 }
 
+void TabPage::setViewMode(Fm::FolderView::ViewMode mode) {
+  folderView_->setViewMode(mode);
+  if(folderSettings_.isCustomized() && folderSettings_.viewMode() != mode) {
+    folderSettings_.setViewMode(mode);
+    static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+  }
+}
+
+void TabPage::sort(int col, Qt::SortOrder order) {
+  folderSettings_.setSortColumn(Fm::FolderModel::ColumnId(col));
+  folderSettings_.setSortOrder(order);
+  if(folderSettings_.isCustomized() && (folderSettings_.sortColumn() != col || folderSettings_.sortOrder() != order)) {
+    static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+  }
+  if(proxyModel_)
+    proxyModel_->sort(col, order);
+}
+
+void TabPage::setSortFolderFirst(bool value) {
+  proxyModel_->setFolderFirst(value);
+  if(folderSettings_.isCustomized() && folderSettings_.sortFolderFirst() != value) {
+    folderSettings_.setSortFolderFirst(value);
+    static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+  }
+}
+
+void TabPage::setSortCaseSensitive(bool value) {
+  if(folderSettings_.isCustomized() && folderSettings_.sortCaseSensitive() != value) {
+    folderSettings_.setSortCaseSensitive(value);
+    static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+  }
+  proxyModel_->setSortCaseSensitivity(value ? Qt::CaseSensitive : Qt::CaseInsensitive);
+}
+
+
 void TabPage::setShowHidden(bool showHidden) {
+  if(folderSettings_.isCustomized() && folderSettings_.showHidden() != showHidden) {
+    static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+    folderSettings_.setShowHidden(showHidden);
+  }
   if(!proxyModel_ || showHidden == proxyModel_->showHidden())
     return;
   proxyModel_->setShowHidden(showHidden);
@@ -572,11 +585,30 @@ void TabPage::setShowHidden(bool showHidden) {
   Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
 }
 
-void TabPage:: applyFilter() {
-  if(!proxyModel_) return;
+void TabPage::applyFilter() {
+  if(!proxyModel_)
+    return;
   proxyModel_->updateFilters();
   statusText_[StatusTextNormal] = formatStatusText();
   Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
+}
+
+void TabPage::setCustomizedView(bool value) {
+  if(folderSettings_.isCustomized() == value)
+    return;
+
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  folderSettings_.setCustomized(value);
+  if(value) { // save customized folder view settings
+    settings.saveFolderSettings(path(), folderSettings_);
+  }
+  else { // use default folder view settings
+    settings.clearFolderSettings(path());
+    setShowHidden(settings.showHidden());
+    setSortCaseSensitive(settings.sortCaseSensitive());
+    setSortFolderFirst(settings.sortFolderFirst());
+    sort(settings.sortColumn(), settings.sortOrder());
+  }
 }
 
 } // namespace PCManFM

@@ -26,6 +26,7 @@
 #include <QApplication>
 #include "desktopwindow.h"
 #include <libfm-qt/utilities.h>
+#include <libfm-qt/folderconfig.h>
 // #include <QDesktopServices>
 
 namespace PCManFM {
@@ -88,6 +89,7 @@ Settings::Settings():
   sortOrder_(Qt::AscendingOrder),
   sortColumn_(Fm::FolderModel::ColumnFileName),
   sortFolderFirst_(true),
+  sortCaseSensitive_(false),
   showFilter_(false),
   // settings for use with libfm
   singleClick_(false),
@@ -233,6 +235,7 @@ bool Settings::loadFile(QString filePath) {
   sortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
   sortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
   sortFolderFirst_ = settings.value("SortFolderFirst", true).toBool();
+  sortCaseSensitive_ = settings.value("SortCaseSensitive", false).toBool();
   showFilter_ = settings.value("ShowFilter", false).toBool();
 
   setBackupAsHidden(settings.value("BackupAsHidden", false).toBool());
@@ -342,6 +345,7 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("SortOrder", sortOrderToString(sortOrder_));
   settings.setValue("SortColumn", sortColumnToString(sortColumn_));
   settings.setValue("SortFolderFirst", sortFolderFirst_);
+  settings.setValue("SortCaseSensitive", sortCaseSensitive_);
   settings.setValue("ShowFilter", showFilter_);
 
   settings.setValue("BackupAsHidden", backupAsHidden_);
@@ -381,6 +385,10 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("ShowMenuBar", showMenuBar_);
   settings.setValue("FullWidthTabBar", fullWidthTabBar_);
   settings.endGroup();
+
+  // save per-folder settings
+  Fm::FolderConfig::saveCache();
+
   return true;
 }
 
@@ -565,6 +573,80 @@ void Settings::setTerminal(QString terminalCommand) {
     g_free(fm_config->terminal);
     fm_config->terminal = g_strdup(terminal_.toLocal8Bit().constData());
     g_signal_emit_by_name(fm_config, "changed::terminal");
+}
+
+
+// per-folder settings
+FolderSettings Settings::loadFolderSettings(Fm::Path path) const {
+  FolderSettings settings;
+  Fm::FolderConfig cfg(path);
+  // set defaults
+  settings.setSortOrder(sortOrder());
+  settings.setSortColumn(sortColumn());
+  settings.setViewMode(viewMode());
+  settings.setShowHidden(showHidden());
+  settings.setSortCaseSensitive(sortCaseSensitive());
+  // columns?
+  if(!cfg.isEmpty()) {
+    // load folder-specific settings
+    settings.setCustomized(true);
+
+    char* str;
+    // load sorting
+    str = cfg.getString("SortOrder");
+    if(str != nullptr) {
+      settings.setSortOrder(sortOrderFromString(str));
+      g_free(str);
+    }
+
+    str = cfg.getString("SortColumn");
+    if(str != nullptr) {
+      settings.setSortColumn(sortColumnFromString(str));
+      g_free(str);
+    }
+
+    str = cfg.getString("ViewMode");
+    if(str != nullptr) {
+      // set view mode
+      settings.setViewMode(viewModeFromString(str));
+      g_free(str);
+    }
+
+    gboolean show_hidden;
+    if(cfg.getBoolean("ShowHidden", &show_hidden)) {
+      settings.setShowHidden(show_hidden);
+    }
+
+    gboolean folder_first;
+    if(cfg.getBoolean("SortFolderFirst", &folder_first)) {
+      settings.setSortFolderFirst(folder_first);
+    }
+
+    gboolean case_sensitive;
+    if(cfg.getBoolean("SortCaseSensitive", &case_sensitive)) {
+      settings.setSortCaseSensitive(case_sensitive);
+    }
+  }
+  return settings;
+}
+
+void Settings::saveFolderSettings(Fm::Path path, const FolderSettings& settings) {
+  if(!path.isNull()) {
+    Fm::FolderConfig cfg(path);
+    cfg.setString("SortOrder", sortOrderToString(settings.sortOrder()));
+    cfg.setString("SortColumn", sortColumnToString(settings.sortColumn()));
+    cfg.setString("ViewMode", viewModeToString(settings.viewMode()));
+    cfg.setBoolean("ShowHidden", settings.showHidden());
+    cfg.setBoolean("SortFolderFirst", settings.sortFolderFirst());
+    cfg.setBoolean("SortCaseSensitive", settings.sortCaseSensitive());
+  }
+}
+
+void Settings::clearFolderSettings(Fm::Path path) const {
+  if(!path.isNull()) {
+    Fm::FolderConfig cfg(path);
+    cfg.purge();
+  }
 }
 
 
