@@ -180,6 +180,7 @@ private:
   Fm::Bookmarks bookmarks;
   Launcher fileLauncher_;
   int rightClickIndex;
+  bool updatingViewMenu_;
 };
 
 }

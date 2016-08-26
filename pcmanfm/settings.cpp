@@ -585,6 +585,7 @@ FolderSettings Settings::loadFolderSettings(Fm::Path path) const {
   settings.setSortColumn(sortColumn());
   settings.setViewMode(viewMode());
   settings.setShowHidden(showHidden());
+  settings.setSortFolderFirst(sortFolderFirst());
   settings.setSortCaseSensitive(sortCaseSensitive());
   // columns?
   if(!cfg.isEmpty()) {

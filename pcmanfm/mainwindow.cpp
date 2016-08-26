@@ -56,7 +56,8 @@ namespace PCManFM {
 MainWindow::MainWindow(Path path):
   QMainWindow(),
   fileLauncher_(this),
-  rightClickIndex(-1) {
+  rightClickIndex(-1),
+  updatingViewMenu_(false) {
 
   Settings& settings = static_cast<Application*>(qApp)->settings();
   setAttribute(Qt::WA_DeleteOnClose);
@@ -685,8 +686,10 @@ void MainWindow::updateStatusBarForCurrentPage() {
 }
 
 void MainWindow::updateViewMenuForCurrentPage() {
+  if(updatingViewMenu_)  // prevent recursive calls
+    return;
+  updatingViewMenu_ = true;
   TabPage* tabPage = currentPage();
-
   if(tabPage) {
     // update menus. FIXME: should we move this to another method?
     ui.actionShowHidden->setChecked(tabPage->showHidden());
@@ -729,10 +732,10 @@ void MainWindow::updateViewMenuForCurrentPage() {
       ui.actionAscending->setChecked(true);
     else
       ui.actionDescending->setChecked(true);
-
     ui.actionCaseSensitive->setChecked(tabPage->sortCaseSensitive());
     ui.actionFolderFirst->setChecked(tabPage->sortFolderFirst());
   }
+  updatingViewMenu_ = false;
 }
 
 void MainWindow::updateUIForCurrentPage() {
@@ -826,7 +829,6 @@ void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
 
 void MainWindow::onTabPageSortFilterChanged() {
   TabPage* tabPage = static_cast<TabPage*>(sender());
-
   if(tabPage == currentPage()) {
     updateViewMenuForCurrentPage();
     if(!tabPage->hasCustomizedView()) {

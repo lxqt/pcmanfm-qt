@@ -46,6 +46,7 @@ public:
     sortColumn_(Fm::FolderModel::ColumnFileName),
     viewMode_(Fm::FolderView::IconMode),
     showHidden_(false),
+    sortFolderFirst_(true),
     sortCaseSensitive_(true) {
   }
 
@@ -110,8 +111,8 @@ private:
   Qt::SortOrder sortOrder_;
   Fm::FolderModel::ColumnId sortColumn_;
   Fm::FolderView::ViewMode viewMode_;
-  bool sortFolderFirst_;
   bool showHidden_;
+  bool sortFolderFirst_;
   bool sortCaseSensitive_;
   // columns?
 };

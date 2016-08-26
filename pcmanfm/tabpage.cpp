@@ -33,7 +33,7 @@
 #include "application.h"
 #include <QTimer>
 #include <QTextStream>
-#include <QSettings>
+#include <QDebug>
 
 using namespace Fm;
 
@@ -83,7 +83,7 @@ TabPage::TabPage(Fm::Path path, QWidget* parent):
   proxyModel_ = new ProxyFolderModel();
   proxyModel_->setShowHidden(settings.showHidden());
   proxyModel_->setShowThumbnails(settings.showThumbnails());
-  connect(proxyModel_, &ProxyFolderModel::sortFilterChanged, this, &TabPage::onModelSortFilterChanged);
+  connect(proxyModel_, &ProxyFolderModel::sortFilterChanged, this, &TabPage::sortFilterChanged);
 
   verticalLayout = new QVBoxLayout(this);
   verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -388,8 +388,6 @@ void TabPage::chdir(Path newPath, bool addHistory) {
   g_signal_connect(folder_, "content-changed", G_CALLBACK(onFolderContentChanged), this);
 
   folderModel_ = CachedFolderModel::modelFromFolder(folder_);
-  proxyModel_->setSourceModel(folderModel_);
-  // proxyModel_->sort(proxyModel_->sortColumn(), proxyModel_->sortOrder());
 
   // set sorting, considering customized folders
   Settings& settings = static_cast<Application*>(qApp)->settings();
@@ -398,6 +396,8 @@ void TabPage::chdir(Path newPath, bool addHistory) {
   proxyModel_->setFolderFirst(folderSettings_.sortFolderFirst());
   proxyModel_->setShowHidden(folderSettings_.showHidden());
   proxyModel_->setSortCaseSensitivity(folderSettings_.sortCaseSensitive() ? Qt::CaseSensitive : Qt::CaseInsensitive);
+  proxyModel_->setSourceModel(folderModel_);
+
   folderView_->setViewMode(folderSettings_.viewMode());
 
   if(folder_.isLoaded()) {
@@ -530,53 +530,59 @@ void TabPage::up() {
   }
 }
 
-void TabPage::onModelSortFilterChanged() {
-  Q_EMIT sortFilterChanged();
-}
-
 void TabPage::updateFromSettings(Settings& settings) {
   folderView_->updateFromSettings(settings);
 }
 
 void TabPage::setViewMode(Fm::FolderView::ViewMode mode) {
-  folderView_->setViewMode(mode);
-  if(folderSettings_.isCustomized() && folderSettings_.viewMode() != mode) {
+  if(folderSettings_.viewMode() != mode) {
     folderSettings_.setViewMode(mode);
-    static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+    if(folderSettings_.isCustomized()) {
+      static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+    }
   }
+  folderView_->setViewMode(mode);
 }
 
 void TabPage::sort(int col, Qt::SortOrder order) {
-  folderSettings_.setSortColumn(Fm::FolderModel::ColumnId(col));
-  folderSettings_.setSortOrder(order);
-  if(folderSettings_.isCustomized() && (folderSettings_.sortColumn() != col || folderSettings_.sortOrder() != order)) {
-    static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+  if(folderSettings_.sortColumn() != col || folderSettings_.sortOrder() != order) {
+    folderSettings_.setSortColumn(Fm::FolderModel::ColumnId(col));
+    folderSettings_.setSortOrder(order);
+    if(folderSettings_.isCustomized()) {
+      static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+    }
   }
   if(proxyModel_)
     proxyModel_->sort(col, order);
 }
 
 void TabPage::setSortFolderFirst(bool value) {
-  proxyModel_->setFolderFirst(value);
-  if(folderSettings_.isCustomized() && folderSettings_.sortFolderFirst() != value) {
+  if(folderSettings_.sortFolderFirst() != value) {
     folderSettings_.setSortFolderFirst(value);
-    static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+    if(folderSettings_.isCustomized()) {
+      static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+    }
   }
+  proxyModel_->setFolderFirst(value);
 }
 
 void TabPage::setSortCaseSensitive(bool value) {
-  if(folderSettings_.isCustomized() && folderSettings_.sortCaseSensitive() != value) {
+  if(folderSettings_.sortCaseSensitive() != value) {
     folderSettings_.setSortCaseSensitive(value);
-    static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+    if(folderSettings_.isCustomized()) {
+      static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+    }
   }
   proxyModel_->setSortCaseSensitivity(value ? Qt::CaseSensitive : Qt::CaseInsensitive);
 }
 
 
 void TabPage::setShowHidden(bool showHidden) {
-  if(folderSettings_.isCustomized() && folderSettings_.showHidden() != showHidden) {
-    static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+  if(folderSettings_.showHidden() != showHidden) {
     folderSettings_.setShowHidden(showHidden);
+    if(folderSettings_.isCustomized()) {
+      static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+    }
   }
   if(!proxyModel_ || showHidden == proxyModel_->showHidden())
     return;
