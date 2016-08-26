@@ -130,6 +130,8 @@ public:
   bool loadFile(QString filePath);
   bool saveFile(QString filePath);
 
+  static QString xdgUserConfigDir();
+
   QString profileDir(QString profile, bool useFallback = false);
 
   // setter/getter functions

@@ -27,7 +27,7 @@
 #include "desktopwindow.h"
 #include <libfm-qt/utilities.h>
 #include <libfm-qt/folderconfig.h>
-// #include <QDesktopServices>
+#include <QStandardPaths>
 
 namespace PCManFM {
 
@@ -121,16 +121,20 @@ Settings::~Settings() {
 
 }
 
-QString Settings::profileDir(QString profile, bool useFallback) {
-  // NOTE: it's a shame that QDesktopServices does not handle XDG_CONFIG_HOME
-  // try user-specific config file first
+QString Settings::xdgUserConfigDir() {
   QString dirName;
   // WARNING: Don't use XDG_CONFIG_HOME with root because it might
   // give the user config directory if gksu-properties is set to su.
-  if(geteuid())
-    dirName = QLatin1String(qgetenv("XDG_CONFIG_HOME"));
+  if(geteuid() != 0)  // non-root user
+    dirName = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation);
   if (dirName.isEmpty())
     dirName = QDir::homePath() % QLatin1String("/.config");
+  return dirName;
+}
+
+QString Settings::profileDir(QString profile, bool useFallback) {
+  // try user-specific config file first
+  QString dirName = xdgUserConfigDir();
   dirName = dirName % "/pcmanfm-qt/" % profile;
   QDir dir(dirName);
 
@@ -633,6 +637,10 @@ FolderSettings Settings::loadFolderSettings(Fm::Path path) const {
 
 void Settings::saveFolderSettings(Fm::Path path, const FolderSettings& settings) {
   if(!path.isNull()) {
+    // ensure that we have the libfm dir
+    QString dirName = xdgUserConfigDir() % QStringLiteral("/libfm");
+    QDir().mkpath(dirName);  // if libfm config dir does not exist, create it
+
     Fm::FolderConfig cfg(path);
     cfg.setString("SortOrder", sortOrderToString(settings.sortOrder()));
     cfg.setString("SortColumn", sortColumnToString(settings.sortColumn()));
