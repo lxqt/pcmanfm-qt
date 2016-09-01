@@ -109,27 +109,27 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished">Schreibtisch</translation>
+        <translation>Schreibtisch</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished">Schreibtischordner:</translation>
+        <translation>Schreibtischordner:</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation type="unfinished">Bilddatei</translation>
+        <translation>Bilddatei</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished">Pfad des Ordners</translation>
+        <translation>Pfad des Ordners</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">&amp;Suchen</translation>
+        <translation>&amp;Suchen</translation>
     </message>
 </context>
 <context>
@@ -177,12 +177,12 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../desktop-preferences.ui" line="119"/>
         <source>Icons</source>
-        <translation type="unfinished">Symbole</translation>
+        <translation>Symbole</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="125"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Symbolgröße:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="138"/>
@@ -212,39 +212,40 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../desktop-preferences.ui" line="225"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Abstand</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Minimaler Rand der Objekte:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardwert 3 px.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="241"/>
         <location filename="../../desktop-preferences.ui" line="265"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="254"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardwert 1 px.
+Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="278"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Sperren (vertikaler Abstand = horizontaler Abstand)</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
@@ -425,7 +426,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="96"/>
         <source>Focus with Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Mit Strg+I fokussieren</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="275"/>
@@ -540,37 +541,37 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="483"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Aufsteigend</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="491"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>A&amp;bsteigend</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="499"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach &amp;Namen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="507"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach &amp;Zeitpunkt von Modifikationen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="515"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach Datei&amp;typ</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="523"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach &amp;Eigentümer</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="531"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Verzeichnisse zuerst</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="581"/>
@@ -590,64 +591,64 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="630"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Groß- und &amp;Kleinbuchstaben berücksichtigen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="638"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach Datei&amp;größe</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="643"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Fe&amp;nster schließen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="646"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+Q</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="709"/>
         <source>&amp;Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filter</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="712"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+B</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="721"/>
         <source>Close &amp;left tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabs &amp;links vom aktiven schließen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="730"/>
         <source>Close &amp;right tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabs &amp;rechts vom aktiven schließen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="735"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle Tabs außer dem &amp;aktiven schließen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="743"/>
         <location filename="../../main-win.ui" line="746"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Menüleiste</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="749"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+M</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="757"/>
         <location filename="../../main-win.ui" line="760"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Menü</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="470"/>
@@ -870,27 +871,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="678"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ordner</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="690"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>Leere &amp;Datei</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="698"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Dateien suchen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="701"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="90"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach Zeichenketten filtern...</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="117"/>
@@ -1003,7 +1004,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Modus des Hintergrundbildes einstellen. MODE=(%1)</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="195"/>
@@ -1096,17 +1097,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="248"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Text löschen (Strg+K)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="310"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Menüleiste verbergen</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="311"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Die Menüleiste wird vollständig verborgen. Sie kann mit der Tastenkombination Strg+M wieder aktiviert werden.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="557"/>
@@ -1149,7 +1150,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferencesdialog.cpp" line="190"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>Listenansicht</translation>
     </message>
     <message>
         <location filename="../../preferencesdialog.cpp" line="191"/>
@@ -1401,19 +1402,19 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../preferences.ui" line="249"/>
         <location filename="../../preferences.ui" line="259"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Wird in der Symbolansicht verwendet</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="266"/>
         <location filename="../../preferences.ui" line="276"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Wird in der Listen- und detaillierten Listenansicht verwendet</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="283"/>
         <location filename="../../preferences.ui" line="293"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Wird in der Miniaturansicht verwendet</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="313"/>
@@ -1438,51 +1439,55 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="369"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>Minimaler Rand der Objekte in Symbolansicht:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="376"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardwert 3 px.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="379"/>
         <location filename="../../preferences.ui" line="403"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="392"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="399"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardwert 3 px.
+Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="416"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Sperren</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="465"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bei Deaktivierung wird die Leiste der Reiter (Tabs) nur angezeigt,
+wenn mehr als einer geöffnet ist.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="476"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bei Deaktivierung wird die Tab-Leiste nur über dem rechten Feld
+mit der eigentlichen Verzeichnis- und Dateiansicht angezeigt und nicht
+über die linke Spalte ausgedehnt.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="480"/>
         <source>Fullwidth tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab-Leiste über gesamte Fensterbreite ausdehnen</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="532"/>
@@ -1537,7 +1542,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="673"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>Benötigt ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="703"/>
