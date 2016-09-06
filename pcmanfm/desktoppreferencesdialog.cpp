@@ -30,6 +30,7 @@
 #include <QRegExp>
 #include <QDebug>
 #include <QStandardPaths>
+#include <QSettings>
 
 namespace PCManFM {
 
@@ -138,6 +139,9 @@ void DesktopPreferencesDialog::applySettings()
   if (editDesktopFolderEnabled)
       XdgDir::setDesktopDir(uiDesktopFolder.desktopFolder->text());
 
+  // Note: LXQt helper
+  if (settings.wallpaper() != ui.imageFile->text())
+      static_cast<Application const * const>(qApp)->setWallpaperLXQtSetting();
   settings.setWallpaper(ui.imageFile->text());
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
   settings.setWallpaperMode(mode);
