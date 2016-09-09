@@ -20,6 +20,7 @@
     <method name="setWallpaper">
       <arg type="s" direction="in"/>
       <arg type="s" direction="in"/>
+      <arg type="b" direction="in"/>
     </method>
     <method name="findFiles">
       <arg type="as" direction="in"/>

@@ -53,6 +53,7 @@
 
 #include "xdgdir.h"
 #include <QFileSystemWatcher>
+#include <QSettings>
 
 namespace PCManFM {
 
@@ -194,6 +195,9 @@ bool Application::parseCommandLineArgs() {
   QCommandLineOption wallpaperModeOption("wallpaper-mode", tr("Set mode of desktop wallpaper. MODE=(%1)").arg("color|stretch|fit|center|tile"), tr("MODE"));
   parser.addOption(wallpaperModeOption);
 
+  QCommandLineOption wallpaperByLXQtTheme("wallpaper-by-lxqt-theme", tr("Flag if wallpaper is changed by LXQt theme"));
+  parser.addOption(wallpaperByLXQtTheme);
+
   QCommandLineOption showPrefOption("show-pref", tr("Open Preferences dialog on the page with the specified name"), tr("NAME"));
   parser.addOption(showPrefOption);
 
@@ -233,7 +237,7 @@ bool Application::parseCommandLineArgs() {
       keepRunning = true;
     }
     else if(parser.isSet(setWallpaperOption) || parser.isSet(wallpaperModeOption)) // set wall paper
-      setWallpaper(parser.value(setWallpaperOption), parser.value(wallpaperModeOption));
+      setWallpaper(parser.value(setWallpaperOption), parser.value(wallpaperModeOption), parser.isSet(wallpaperByLXQtTheme));
     else {
       if(!parser.isSet(desktopOption) && !parser.isSet(desktopOffOption)) {
         QStringList paths = parser.positionalArguments();
@@ -272,7 +276,7 @@ bool Application::parseCommandLineArgs() {
       iface.call("preferences", parser.value(showPrefOption));
     }
     else if(parser.isSet(setWallpaperOption) || parser.isSet(wallpaperModeOption)) { // set wall paper
-      iface.call("setWallpaper", parser.value(setWallpaperOption), parser.value(wallpaperModeOption));
+      iface.call("setWallpaper", parser.value(setWallpaperOption), parser.value(wallpaperModeOption), parser.isSet(wallpaperByLXQtTheme));
     }
     else {
       if(!parser.isSet(desktopOption) && !parser.isSet(desktopOffOption)) {
@@ -520,7 +524,7 @@ void Application::preferences(QString page) {
   preferencesDialog_.data()->activateWindow();
 }
 
-void Application::setWallpaper(QString path, QString modeString) {
+void Application::setWallpaper(QString path, QString modeString, bool byLXQtTheme) {
   static const char* valid_wallpaper_modes[] = {"color", "stretch", "fit", "center", "tile"};
   DesktopWindow::WallpaperMode mode = settings_.wallpaperMode();
   bool changed = false;
@@ -529,6 +533,9 @@ void Application::setWallpaper(QString path, QString modeString) {
     if(QFile(path).exists()) {
       settings_.setWallpaper(path);
       changed = true;
+      // Note: LXQt helper
+      if (!byLXQtTheme)
+          setWallpaperLXQtSetting();
     }
   }
   // convert mode string to value
@@ -651,6 +658,11 @@ void Application::updateDesktopsFromSettings() {
     DesktopWindow* desktopWindow = static_cast<DesktopWindow*>(*it);
     desktopWindow->updateFromSettings(settings_);
   }
+}
+
+void Application::setWallpaperLXQtSetting() const
+{
+    QSettings{"lxqt", "lxqt"}.setValue("wallpaperChanged", true);
 }
 
 void Application::editBookmarks() {

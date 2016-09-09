@@ -70,7 +70,7 @@ public:
 
   // public interface exported via dbus
   void launchFiles(QString cwd, QStringList paths, bool inNewWindow);
-  void setWallpaper(QString path, QString modeString);
+  void setWallpaper(QString path, QString modeString, bool byLXQtTheme);
   void preferences(QString page);
   void desktopPrefrences(QString page);
   void editBookmarks();
@@ -83,6 +83,12 @@ public:
 
   void updateFromSettings();
   void updateDesktopsFromSettings();
+  /*! \brief Sets wallpaperChanged into LXQt settings
+   * ($XDG_CONFIG_HOME/lxqt/lxqt.conf). This is a helper config value for
+   * lxqt-config-appearance to distinguish if user changed the wallpeper
+   * independently on theme.
+   */
+  void setWallpaperLXQtSetting() const;
 
   void openFolderInTerminal(Fm::Path path);
   void openFolders(Fm::FileInfoList files);
