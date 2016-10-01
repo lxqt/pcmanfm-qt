@@ -1107,7 +1107,10 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="286"/>
         <source> (%n hidden)</source>
-        <translation>(%n verborgen)</translation>
+        <translation>
+            <numerusform>(%n verborgen)</numerusform>
+            <numerusform>(%n verborgen)</numerusform>
+        </translation>
     </message>
     <message>
         <location filename="../../tabpage.cpp" line="437"/>
