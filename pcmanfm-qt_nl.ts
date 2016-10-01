@@ -16,12 +16,7 @@
     <message>
         <location filename="../../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation>Lichte bestandsbeheerder</translation>
-    </message>
-    <message>
-        <location filename="../../about.ui" line="58"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>Lichtgewicht bestandsbeheerder</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="109"/>
@@ -44,25 +39,23 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
         <translation>PCMan bestandsbeheerder
 
-Copyright © 2009 - 2015 洪任諭 (Hong Jen Yee)
+Auteursrecht © 2009 - 2015 洪任諭 (Hong Jen Yee)
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
+Dit programma is vrije programmatuur; u kunt het verspreiden en/of 
+aanpassen binnen de voorwaarden van de GNU General Public License 
+zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 
+van die licentie hetzij (naar uw eigen keuze) een nieuwere versie.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+Dit programma wordt verspreid in de hoop dat het bruikbaar is, maar 
+ZONDER ENIGE GARANTIE; zelfs zonder de garantie van VERKOOPBAARHEID 
+of BRUIKBAARHEID VOOR EEN BEPAALD DOEL. Zie de GNU General Public 
+License voor meer bijzonderheden.
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://pcmanfm.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://pcmanfm.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+Een exemplaar van de GNU General Public License heeft u, als het 
+goed is, samen met dit programma gekregen; schrijf anders naar de 
+Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, 
+Boston, MA 02110-1301 USA
+</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="87"/>
@@ -79,42 +72,6 @@ Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
         <translation>Auteurs</translation>
     </message>
     <message>
-        <source>PCMan File Manager
-
-Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="vanished">PCMan bestandsbeheerder
-
-Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
-    </message>
-    <message>
         <location filename="../../about.ui" line="100"/>
         <source>License</source>
         <translation>Licentie</translation>
@@ -125,17 +82,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>Verwisselbaar medium is ingevoegd</translation>
+        <translation>Verwijderbaar medium is ingevoegd</translation>
     </message>
     <message>
         <location filename="../../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Verwisselbaar medium is ingevoegd&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Verwijderbaar medium is ingevoegd&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>Type medium:</translation>
+        <translation>Soort medium:</translation>
     </message>
     <message>
         <location filename="../../autorun.ui" line="47"/>
@@ -145,7 +102,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Kies de actie die u wil uitvoeren:</translation>
+        <translation>Kies a.u.b. de actie die u wilt uitvoeren:</translation>
     </message>
 </context>
 <context>
@@ -196,12 +153,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="52"/>
         <source>Wallpaper mode:</source>
-        <translation>Bureaubladachtergrondmodus:</translation>
+        <translation>Modus voor bureaubladachtergrond:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="65"/>
         <source>Wallpaper image file:</source>
-        <translation>Bureaubladachtergrondafbeelding:</translation>
+        <translation>Afbeelding voor bureaubladachtergrond:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="85"/>
@@ -216,7 +173,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="100"/>
         <source>Image file path</source>
-        <translation>Afbeeldingspad</translation>
+        <translation>Bestandpad van afbeelding</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="107"/>
@@ -231,12 +188,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="125"/>
         <source>Icon size:</source>
-        <translation>Pictogramgrootte</translation>
+        <translation>Pictogramgrootte:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="138"/>
         <source>Label Text</source>
-        <translation>Labeltekst</translation>
+        <translation>Etikettekst</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="176"/>
@@ -266,7 +223,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation>Minimale marges voor items:</translation>
+        <translation>Minimale marges voor elementen:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="238"/>
@@ -289,12 +246,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>Standaard 1 px.
-Een spatie is gereserveerd voor 3 regels tekst.</translation>
+Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="278"/>
         <source>Lock</source>
-        <translation>Vergrendel</translation>
+        <translation>Vergrendelen</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
@@ -304,7 +261,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../desktop-preferences.ui" line="327"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Geef menu's aangeboden door vensterbeheerders weer wanneer op bureaublad wordt geklikt</translation>
+        <translation>Toon menu's aangeboden door vensterbeheerders wanneer op bureaublad wordt geklikt</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="315"/>
@@ -351,7 +308,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="96"/>
         <source>Focus with Ctrl+I</source>
-        <translation>Stel focus in met Ctrl+I</translation>
+        <translation>Stel scherpstelling in met Ctrl+I</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="275"/>
@@ -391,7 +348,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="340"/>
         <source>Show &amp;Hidden</source>
-        <translation>&amp;Verborgen weergeven</translation>
+        <translation>&amp;Verborgen elementen weergeven</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="343"/>
@@ -486,7 +443,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="515"/>
         <source>By File &amp;Type</source>
-        <translation>Op bestands&amp;type</translation>
+        <translation>Op bestandsoor&amp;t</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="523"/>
@@ -624,7 +581,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     </message>
     <message>
         <source>By Modification Time</source>
-        <translation>Op bewerkingsdatum</translation>
+        <translation>Op bewerkingstijdstip</translation>
     </message>
     <message>
         <source>By File Type</source>
@@ -701,7 +658,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="614"/>
         <source>File &amp;Properties</source>
-        <translation>&amp;Bestandseigenschappen</translation>
+        <translation>&amp;Bestandeigenschappen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="622"/>
@@ -758,7 +715,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     </message>
     <message>
         <source>By File Size</source>
-        <translation>Op bestandsgrootte</translation>
+        <translation>Op bestandgrootte</translation>
     </message>
     <message>
         <source>Close Window</source>
@@ -772,7 +729,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="656"/>
         <source>Open &amp;Terminal</source>
-        <translation>&amp;Terminal openen</translation>
+        <translation>&amp;Terminalvenster openen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="659"/>
@@ -822,12 +779,12 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="139"/>
         <source>&amp;Help</source>
-        <translation>&amp;Help</translation>
+        <translation>&amp;Hulp</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="145"/>
         <source>&amp;View</source>
-        <translation>&amp;Beeld</translation>
+        <translation>&amp;Tonen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="177"/>
@@ -865,7 +822,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="168"/>
         <source>Run PCManFM as a daemon</source>
-        <translation>PCManFM uitvoeren als daemon</translation>
+        <translation>PCManFM uitvoeren als achtergronddienst</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="171"/>
@@ -875,12 +832,12 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
-        <translation>Bureaubladbeheerder uitvoeren</translation>
+        <translation>Bureaubladbeheerder starten</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="177"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>Schakel bureaubladbeheerder uit als deze wordt uitgevoerd</translation>
+        <translation>Schakel bureaubladbeheerder uit als deze draait</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="180"/>
@@ -896,7 +853,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>Stel bureaubladachtergrond in van afbeeldingsBESTAND</translation>
+        <translation>Stel bureaubladachtergrond in vanuit afbeeldingsBESTAND</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="189"/>
@@ -905,7 +862,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     </message>
     <message>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation>Stel bureaubladachtergrondmodus in. MODUS=(color|stretch|fit|center|tile)</translation>
+        <translation>Stel modus van bureaubladachtergrond in. MODUS=(kleur|uitrekken|passend|centreren|mozaïek)</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="192"/>
@@ -915,7 +872,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="195"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Open voorkeuren op de pagina met de opgegeven naam</translation>
+        <translation>Open voorkeurendialoog op de pagina met de opgegeven naam</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="183"/>
@@ -925,12 +882,12 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="186"/>
         <source>Open Find Files utility</source>
-        <translation>Open bestanden zoeken</translation>
+        <translation>Start de bestandenzoeker</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation>Stel bureaubladachtergrondmodus in. MODE=(%1)</translation>
+        <translation>Stel modus van bureaubladachtergrond in. MODE=(%1)</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="198"/>
@@ -951,7 +908,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="509"/>
         <source>Terminal emulator is not set.</source>
-        <translation>Terminalemulator is niet ingesteld.</translation>
+        <translation>Terminalnabootser is niet ingesteld.</translation>
     </message>
 </context>
 <context>
@@ -1005,7 +962,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../desktopwindow.cpp" line="369"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>Op de huidige positie &amp;blijven</translation>
+        <translation>&amp;Blijf op de huidige positie</translation>
     </message>
     <message>
         <location filename="../../desktopwindow.cpp" line="391"/>
@@ -1018,17 +975,17 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../mainwindow.cpp" line="248"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation>Tekst wissen (Ctrl+K)</translation>
+        <translation>Wis tekst (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="310"/>
         <source>Hide menu bar</source>
-        <translation>Menubalk verbergen</translation>
+        <translation>Verberg menubalk</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="311"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>Dit zal de menubalk volledig verbergen, gebruik Ctrl+M om ze opnieuw weer te geven.</translation>
+        <translation>Dit zal de menubalk volledig verbergen, gebruik Ctrl+M om hem opnieuw weer te geven.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="557"/>
@@ -1038,7 +995,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../mainwindow.cpp" line="1062"/>
         <source>&amp;Move to Trash</source>
-        <translation>&amp;Verplaatsen naar prullenbak</translation>
+        <translation>&amp;Verplaats naar prullenbak</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="1062"/>
@@ -1054,7 +1011,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../mainwindow.cpp" line="1142"/>
         <source>Switch user command is not set.</source>
-        <translation>Het commando om van gebruiker te wisselen is niet ingesteld.</translation>
+        <translation>De opdracht om van gebruiker te wisselen is niet ingesteld.</translation>
     </message>
 </context>
 <context>
@@ -1100,8 +1057,8 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
         <location filename="../../tabpage.cpp" line="284"/>
         <source>%n item(s)</source>
         <translation>
-            <numerusform>%n bestand</numerusform>
-            <numerusform>%n bestanden</numerusform>
+            <numerusform>%n element</numerusform>
+            <numerusform>%n elementen</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1115,7 +1072,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../tabpage.cpp" line="437"/>
         <source>%1 item(s) selected</source>
-        <translation>%1 bestand(en) geselecteerd</translation>
+        <translation>%1 element(en) geselecteerd</translation>
     </message>
 </context>
 <context>
@@ -1133,7 +1090,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../view.cpp" line="115"/>
         <source>Open in Termina&amp;l</source>
-        <translation>Openen in termina&amp;l</translation>
+        <translation>Openen in termina&amp;lvenster</translation>
     </message>
 </context>
 <context>
@@ -1146,7 +1103,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation>Gebruikersinterface</translation>
+        <translation>Gebruikersschil</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="35"/>
@@ -1162,7 +1119,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation>Volume</translation>
+        <translation>Schijf</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="60"/>
@@ -1177,12 +1134,12 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="252"/>
         <source>Size of big icons:</source>
-        <translation>Grootte van grote pictogrammen:</translation>
+        <translation>Omvang van grote pictogrammen:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="269"/>
         <source>Size of small icons:</source>
-        <translation>Grootte van kleine pictogrammen:</translation>
+        <translation>Omvang van kleine pictogrammen:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="286"/>
@@ -1192,7 +1149,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="300"/>
         <source>Size of side pane icons:</source>
-        <translation>Grootte van zijpaneeliconen:</translation>
+        <translation>Grootte van zijbalkpictogrammen:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="232"/>
@@ -1222,12 +1179,12 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="487"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Geef &apos;Sluiten&apos;-knop op tabbladen weer</translation>
+        <translation>Geef &apos;Sluiten&apos;-knoppen op tabbladen weer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="494"/>
         <source>Remember the size of the last closed window</source>
-        <translation>Onthou de grootte van het laatst gesloten venster</translation>
+        <translation>Onthoud de grootte van het laatst gesloten venster</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="81"/>
@@ -1242,7 +1199,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="100"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation>Vertraging voor automatische selectie in enkele klik-modus (0 om uit te schakelen)</translation>
+        <translation>Vertraging voor automatische selectie in enkele-klik-modus (0 om uit te schakelen)</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="107"/>
@@ -1257,12 +1214,12 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="159"/>
         <source>File Operations</source>
-        <translation>Bestandsbewerkingen</translation>
+        <translation>Bestandbewerkingen</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="165"/>
         <source>Confirm before deleting files</source>
-        <translation>Bevestig verwijderen van bestanden</translation>
+        <translation>Bevestig voor verwijderen van bestanden</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="172"/>
@@ -1307,7 +1264,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Verwijder bestanden op verwisselbare media in plaats van ze naar de prullenbak te verplaatsen</translation>
+        <translation>Verwijder bestanden op verwijderbare media in plaats van ze naar de prullenbak te verplaatsen</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="186"/>
@@ -1340,7 +1297,7 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="313"/>
         <source>User interface</source>
-        <translation>Gebruikersinterface</translation>
+        <translation>Gebruikersschil</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="326"/>
@@ -1350,17 +1307,17 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="336"/>
         <source>Always show full file names</source>
-        <translation>Geef altijd volledige bestandsnamen weer</translation>
+        <translation>Geef altijd volledige bestandnamen weer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="346"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Geef iconen van verborgen bestanden weer met schaduw</translation>
+        <translation>Geef pictogrammen van verborgen bestanden weer met schaduw</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="369"/>
-        <source>Minimale marges voor items in pictogramweergave:</source>
-        <translation>Minimal</translation>
+        <source>Minimum item margins in icon view:</source>
+        <translation>Minimale marges voor elementen in pictogramweergave:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="376"/>
@@ -1388,19 +1345,21 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="416"/>
         <source>Lock</source>
-        <translation>Vergrendel</translation>
+        <translation>Vergrendelen</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="465"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation>Wanneer niet aangevinkt wordt de tabbladwerkbalk enkel weergegeven als er meer dan een tabblad is.</translation>
+        <translation>Wanneer niet aangevinkt, wordt de 
+tabbladwerkbalk enkel weergegeven als er meer dan één tabblad is.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="476"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
-        <translation>Wanneer niet aangevinkt wordt de tabbladwerkbalk enkel boven de mapweergave geplaatst en niet boven het linkerpaneel.</translation>
+        <translation>Wanneer niet aangevinkt, wordt de 
+tabbladwerkbalk enkel boven de mapweergave geplaatst en niet boven het linkerpaneel.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="480"/>
@@ -1410,7 +1369,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="532"/>
         <source>Show in places</source>
-        <translation>Geef weer in plaatsen</translation>
+        <translation>Toon in locaties</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="539"/>
@@ -1450,7 +1409,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="649"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Maak geen miniaturen aan voor afbeeldingsbestanden groten dan:</translation>
+        <translation>Maak geen miniaturen aan voor afbeeldingsbestanden groter dan:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="656"/>
@@ -1470,37 +1429,37 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="709"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>Koppel aankoppelbare volumes automatisch aan bij opstarten van programma</translation>
+        <translation>Koppel aankoppelbare schijven automatisch aan bij opstarten van programma</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="716"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>Koppel verwisselbare media automatisch aan wanneer ze worden ingevoegd</translation>
+        <translation>Koppel verwijderbare media automatisch aan wanneer ze worden ingevoegd</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="723"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation>Geef mogelijke opties voor verwisselbare media weer wanneer ze worden ingevoegd</translation>
+        <translation>Geef mogelijke opties voor verwijderbare media weer wanneer ze worden ingevoegd</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="733"/>
         <source>When removable medium unmounted:</source>
-        <translation>Bij ontkoppelen van verwisselbaar medium:</translation>
+        <translation>Bij ontkoppelen van verwijderbaar medium:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="739"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>Sluit &amp;tabblad met verwisselbaar medium</translation>
+        <translation>Sluit &amp;tabblad met verwijderbaar medium</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="746"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>Verander ma&amp;p in het tabblad naar de persoonlijke map</translation>
+        <translation>Verander ma&amp;p in het tabblad in de persoonlijke map</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="789"/>
         <source>Switch &amp;user command:</source>
-        <translation>Commando voor wisselen van gebr&amp;uiker:</translation>
+        <translation>Opdracht voor wisselen van gebr&amp;uiker:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="813"/>
@@ -1515,12 +1474,12 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="842"/>
         <source>Show only user defined templates in menu</source>
-        <translation>Geef enkel sjablonen gedefinieerd door de gebruiker weer in menu</translation>
+        <translation>Toon enkel sjablonen gedefinieerd door de gebruiker in menu</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="849"/>
         <source>Show only one template for each MIME type</source>
-        <translation>Geef slechts een sjabloon voor elk MIME-type weer</translation>
+        <translation>Toon slechts één sjabloon voor elke bestandsoort (MIME-type)</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="856"/>
@@ -1535,18 +1494,18 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="782"/>
         <source>Terminal emulator:</source>
-        <translation>Terminalemulator:</translation>
+        <translation>Terminalnabootser:</translation>
     </message>
     <message>
         <source>Switch user command:</source>
-        <translation>Commando voor wisselen van gebruiker:</translation>
+        <translation>Opdracht voor wisselen van gebruiker:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="802"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Voorbeelden: &quot;xterm -e %s&quot; voor de terminal of &quot;gksu %s&quot; om van gebruiker te wisselen.
-%s = de commandoregel die u wil uitvoeren met de terminal of su.</translation>
+%s = de opdrachtregel die u wilt uitvoeren met de terminal of met su.</translation>
     </message>
     <message>
         <source>Archiver integration:</source>
@@ -1555,7 +1514,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="319"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>Gebruik SI-voorvoegsels in plaats van IEC-voorvoegsels</translation>
+        <translation>Gebruik decimale SI-voorvoegsels in plaats van binaire IEC-voorvoegsels</translation>
     </message>
 </context>
 </TS>
