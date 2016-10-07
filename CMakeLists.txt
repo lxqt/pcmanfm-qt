@@ -11,6 +11,8 @@ set(PCMANFM_QT_VERSION_MINOR 11)
 set(PCMANFM_QT_VERSION_PATCH 1)
 set(PCMANFM_QT_VERSION ${PCMANFM_QT_VERSION_MAJOR}.${PCMANFM_QT_VERSION_MINOR}.${PCMANFM_QT_VERSION_PATCH})
 
+set(LXQTBT_MINIMUM_VERSION "0.1.0")
+
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
 find_package(Qt5Widgets 5.2 REQUIRED)
@@ -18,8 +20,7 @@ find_package(Qt5DBus 5.2 REQUIRED)
 find_package(Qt5LinguistTools 5.2 REQUIRED)
 find_package(Qt5X11Extras 5.2 REQUIRED)
 find_package(fm-qt REQUIRED)
-#Note: no run-time dependency on liblxqt, just a build dependency for lxqt_translate_ts/desktop
-find_package(lxqt REQUIRED)
+find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIB_XCB REQUIRED xcb)
