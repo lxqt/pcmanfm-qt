@@ -266,7 +266,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
         <source>Show menus provided by window managers when desktop is clicked</source>
         <translation>Mostra i menu forniti dal gestore delle finestre quando fai clic sul desktop</translation>
     </message>
-   <message>
+    <message>
         <location filename="../../desktop-preferences.ui" line="315"/>
         <source>Advanced</source>
         <translation>Avanzate</translation>
@@ -1320,7 +1320,7 @@ only if there are more than one tab.</source>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
         <translation>Se non viene spuntata la barra delle schede è posizionata
-sopra la vista cartella e non sopra il panello sinistro.</translation>
+sopra la vista cartella e non sopra il pannello sinistro.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="480"/>
