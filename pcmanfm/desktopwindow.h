@@ -50,7 +50,8 @@ public:
     WallpaperStretch,
     WallpaperFit,
     WallpaperCenter,
-    WallpaperTile
+    WallpaperTile,
+    WallpaperZoom
   };
 
   explicit DesktopWindow(int screenNum);
