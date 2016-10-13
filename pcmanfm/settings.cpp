@@ -524,6 +524,9 @@ static const char* wallpaperModeToString(int value) {
     case DesktopWindow::WallpaperTile:
       ret = "tile";
       break;
+    case DesktopWindow::WallpaperZoom:
+      ret = "zoom";
+      break;
   }
   return ret;
 }
@@ -538,6 +541,8 @@ static int wallpaperModeFromString(const QString str) {
     ret = DesktopWindow::WallpaperCenter;
   else if(str == "tile")
     ret = DesktopWindow::WallpaperTile;
+  else if(str == "zoom")
+    ret = DesktopWindow::WallpaperZoom;
   else
     ret = DesktopWindow::WallpaperNone;
   return ret;
