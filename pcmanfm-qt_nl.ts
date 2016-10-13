@@ -110,7 +110,7 @@ Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
     <message>
         <location filename="../../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation>Formulier</translation>
+        <translation>Vorm</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="23"/>
@@ -812,7 +812,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="165"/>
         <source>Name of configuration profile</source>
-        <translation>Naam van configuratieprofiel</translation>
+        <translation>Naam van instellingenprofiel</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="165"/>
@@ -1179,7 +1179,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="487"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Geef &apos;Sluiten&apos;-knoppen op tabbladen weer</translation>
+        <translation>Geef &apos;Sluiten&apos;-knoppen weer op tabbladen</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="494"/>
@@ -1209,7 +1209,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="120"/>
         <source> sec</source>
-        <translation>s</translation>
+        <translation>sec</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="159"/>
@@ -1264,7 +1264,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Verwijder bestanden op verwijderbare media in plaats van ze naar de prullenbak te verplaatsen</translation>
+        <translation>Wis bestanden op verwijderbare media in plaats van een prullenbak aan te maken</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="186"/>
@@ -1274,7 +1274,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="193"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation>Stel geen vragen bij openen van uitvoerbaar bestand</translation>
+        <translation>Stel geen vragen bij uitvoeren van uitvoerbaar bestand</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="249"/>
