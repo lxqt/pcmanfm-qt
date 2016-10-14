@@ -193,12 +193,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../../desktop-preferences.ui" line="119"/>
         <source>Icons</source>
-        <translation type="unfinished">Значки</translation>
+        <translation>Значки</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="125"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Размер значков:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="138"/>
@@ -223,39 +223,40 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../../desktop-preferences.ui" line="225"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Расстояние</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Минимальные границы элементов:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>По умолчанию - 3 пикселя.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="241"/>
         <location filename="../../desktop-preferences.ui" line="265"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> пикс.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="254"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>По умолчанию - 3 пикселя.
+Также резервируется место для 3 строк текста.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="278"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Связать</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
@@ -277,111 +278,111 @@ A space is also reserved for 3 lines of text.</source>
     <name>FindFilesDialog</name>
     <message>
         <source>Find Files</source>
-        <translation type="vanished">Найти файлы</translation>
+        <translation>Найти файлы</translation>
     </message>
     <message>
         <source>Name/Location</source>
-        <translation type="vanished">Имя/расположение</translation>
+        <translation>Имя/расположение</translation>
     </message>
     <message>
         <source>File name patterns</source>
-        <translation type="vanished">Шаблоны имён файлов</translation>
+        <translation>Шаблоны имён файлов</translation>
     </message>
     <message>
         <source>Pattern:</source>
-        <translation type="vanished">Шаблон:</translation>
+        <translation>Шаблон:</translation>
     </message>
     <message>
         <source>Case insensitive</source>
-        <translation type="vanished">Нечувствительный к регистру</translation>
+        <translation>Нечувствительный к регистру</translation>
     </message>
     <message>
         <source>Use regular expression</source>
-        <translation type="vanished">Использовать регулярные выражения</translation>
+        <translation>Использовать регулярное выражение</translation>
     </message>
     <message>
         <source>Places to search</source>
-        <translation type="vanished">Места поиска</translation>
+        <translation>Места поиска</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Добавить</translation>
+        <translation>Добавить</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">Удалить</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>Search in sub directories</source>
-        <translation type="vanished">Искать в подпапках</translation>
+        <translation>Искать в подпапках</translation>
     </message>
     <message>
         <source>Search hidden files</source>
-        <translation type="vanished">Искать скрытые файлы</translation>
+        <translation>Искать скрытые файлы</translation>
     </message>
     <message>
         <source>File Type</source>
-        <translation type="vanished">Тип файла</translation>
+        <translation>Тип файла</translation>
     </message>
     <message>
         <source>Only search for files of following types:</source>
-        <translation type="vanished">Искать только следующие типы файлов:</translation>
+        <translation>Искать только следующие типы файлов:</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation type="vanished">Текстовые файлы</translation>
+        <translation>Текстовые файлы</translation>
     </message>
     <message>
         <source>Image files</source>
-        <translation type="vanished">Файлы изображений</translation>
+        <translation>Файлы изображений</translation>
     </message>
     <message>
         <source>Audio files</source>
-        <translation type="vanished">Аудиофайлы</translation>
+        <translation>Аудиофайлы</translation>
     </message>
     <message>
         <source>Video files</source>
-        <translation type="vanished">Видеофайлы</translation>
+        <translation>Видеофайлы</translation>
     </message>
     <message>
         <source>Documents</source>
-        <translation type="vanished">Документы</translation>
+        <translation>Документы</translation>
     </message>
     <message>
         <source>Content</source>
-        <translation type="vanished">Содержание</translation>
+        <translation>Содержимое</translation>
     </message>
     <message>
         <source>File contains</source>
-        <translation type="vanished">Файл содержит</translation>
+        <translation>Файл содержит</translation>
     </message>
     <message>
         <source>Properties</source>
-        <translation type="vanished">Свойства</translation>
+        <translation>Свойства</translation>
     </message>
     <message>
         <source>File Size</source>
-        <translation type="vanished">Размер файла</translation>
+        <translation>Размер файла</translation>
     </message>
     <message>
         <source>Bigger than:</source>
-        <translation type="vanished">Больше, чем:</translation>
+        <translation>Больше, чем:</translation>
     </message>
     <message>
         <source>Smaller than:</source>
-        <translation type="vanished">Меньше, чем:</translation>
+        <translation>Меньше, чем:</translation>
     </message>
     <message>
         <source>Last Modified Time</source>
-        <translation type="vanished">Время последнего изменения</translation>
+        <translation>Время последнего изменения</translation>
     </message>
     <message>
         <source>Earlier than:</source>
-        <translation type="vanished">Раньше, чем:</translation>
+        <translation>Раньше, чем:</translation>
     </message>
     <message>
         <source>Later than:</source>
-        <translation type="vanished">Позже, чем:</translation>
+        <translation>Позже, чем:</translation>
     </message>
 </context>
 <context>
@@ -394,16 +395,16 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="681"/>
         <source>Ctrl+Shift+N</source>
-        <translation></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="693"/>
         <source>Ctrl+Alt+N</source>
-        <translation></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="vanished">Фильтр</translation>
+        <translation>Фильтр</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="90"/>
@@ -413,7 +414,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="96"/>
         <source>Focus with Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Фокус по Ctrl+I</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="117"/>
@@ -613,7 +614,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="450"/>
         <source>Ctrl+C</source>
-        <translation></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="459"/>
@@ -623,7 +624,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="462"/>
         <source>Ctrl+V</source>
-        <translation></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="467"/>
@@ -633,7 +634,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="470"/>
         <source>Ctrl+A</source>
-        <translation></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="475"/>
@@ -693,7 +694,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="646"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="678"/>
@@ -713,17 +714,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="701"/>
         <source>F3</source>
-        <translation></translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="709"/>
         <source>&amp;Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Фильтр</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="712"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="721"/>
@@ -744,18 +745,18 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../main-win.ui" line="743"/>
         <location filename="../../main-win.ui" line="746"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Панель меню</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="749"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="757"/>
         <location filename="../../main-win.ui" line="760"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Меню</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="540"/>
@@ -770,7 +771,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="546"/>
         <source>Ctrl+T</source>
-        <translation></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="555"/>
@@ -785,7 +786,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="561"/>
         <source>Alt+Left</source>
-        <translation></translation>
+        <translation>Alt+Стрелка_влево</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="570"/>
@@ -815,7 +816,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="593"/>
         <source>Del</source>
-        <translation></translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="598"/>
@@ -825,7 +826,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="601"/>
         <source>F2</source>
-        <translation></translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="606"/>
@@ -835,7 +836,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="609"/>
         <source>Ctrl+W</source>
-        <translation></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="614"/>
@@ -845,7 +846,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="617"/>
         <source>Alt+Return</source>
-        <translation></translation>
+        <translation>Alt+Return</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="622"/>
@@ -865,7 +866,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="659"/>
         <source>F4</source>
-        <translation></translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="664"/>
@@ -933,7 +934,7 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation type="vanished">Выбрать режим обоев рабочего стола. РЕЖИМ=(color|stretch|fit|center|tile)</translation>
+        <translation>Выбрать режим обоев рабочего стола. РЕЖИМ=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="192"/>
@@ -958,7 +959,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Задать режим обоев рабочего стола. РЕЖИМ=(%1)</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="198"/>
@@ -1051,12 +1052,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="310"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрыть панель меню</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="311"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Полностью скрыть панель меню; нажмите Ctrl+M, чтобы вернуть ее.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="557"/>
@@ -1094,12 +1095,12 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <source>Compact Icon View</source>
-        <translation type="vanished">Просмотр компактными значками</translation>
+        <translation>Просмотр компактными значками</translation>
     </message>
     <message>
         <location filename="../../preferencesdialog.cpp" line="190"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>Компактный просмотр</translation>
     </message>
     <message>
         <location filename="../../preferencesdialog.cpp" line="191"/>
@@ -1353,19 +1354,19 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../preferences.ui" line="249"/>
         <location filename="../../preferences.ui" line="259"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Используется в режиме значков</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="266"/>
         <location filename="../../preferences.ui" line="276"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Используется в компактном режиме и просмотре подробным списком</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="283"/>
         <location filename="../../preferences.ui" line="293"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Используется в режиме эскизов</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="313"/>
@@ -1390,51 +1391,54 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="369"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Минимальные границы элементов в режиме значков:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="376"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>по умолчанию - 3 пикселя</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="379"/>
         <location filename="../../preferences.ui" line="403"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> пикс.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="392"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="399"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>По умолчанию - 3 пикселя.
+Также резервируется место для 3 строк текста.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="416"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Связать</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="465"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если не отмечено, то панель вкладок будет отображаться,
+только если есть больше одной вкладки.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="476"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если не отмечено, то панель вкладок будет размещаться
+только над областью просмотра папок, но не над левой панелью.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="480"/>
         <source>Fullwidth tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Панель вкладок во всю ширину</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="532"/>
@@ -1489,7 +1493,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="673"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>Необходим ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="703"/>
