@@ -19,6 +19,25 @@
         <translation>Lichtgewicht bestandsbeheerder</translation>
     </message>
     <message>
+        <location filename="../../about.ui" line="58"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../about.ui" line="87"/>
+        <source>Programming:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</source>
+        <translation>Programmeur:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
+    </message>
+    <message>
+        <location filename="../../about.ui" line="78"/>
+        <source>Authors</source>
+        <translation>Auteurs</translation>
+    </message>
+    <message>
         <location filename="../../about.ui" line="109"/>
         <source>PCMan File Manager
 
@@ -58,20 +77,6 @@ Boston, MA 02110-1301 USA
 </translation>
     </message>
     <message>
-        <location filename="../../about.ui" line="87"/>
-        <source>Programming:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
-</source>
-        <translation>Ontwikkelaar:
-Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
-</translation>
-    </message>
-    <message>
-        <location filename="../../about.ui" line="78"/>
-        <source>Authors</source>
-        <translation>Auteurs</translation>
-    </message>
-    <message>
         <location filename="../../about.ui" line="100"/>
         <source>License</source>
         <translation>Licentie</translation>
@@ -97,7 +102,7 @@ Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
     <message>
         <location filename="../../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation>Controleren...</translation>
+        <translation>Onderzoeken...</translation>
     </message>
     <message>
         <location filename="../../autorun.ui" line="56"/>
@@ -135,7 +140,7 @@ Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
     <message>
         <location filename="../../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation>&amp;Bladeren</translation>
+        <translation>&amp;Verkennen</translation>
     </message>
 </context>
 <context>
@@ -158,7 +163,7 @@ Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
     <message>
         <location filename="../../desktop-preferences.ui" line="65"/>
         <source>Wallpaper image file:</source>
-        <translation>Afbeelding voor bureaubladachtergrond:</translation>
+        <translation>Afbeeldingsbestand voor bureaubladachtergrond:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="85"/>
@@ -173,12 +178,12 @@ Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
     <message>
         <location filename="../../desktop-preferences.ui" line="100"/>
         <source>Image file path</source>
-        <translation>Bestandpad van afbeelding</translation>
+        <translation>Pad van afbeeldingsbestand</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="107"/>
         <source>&amp;Browse</source>
-        <translation>&amp;Bladeren</translation>
+        <translation>&amp;Verkennen</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="119"/>
@@ -277,6 +282,16 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>Bestandsbeheerder</translation>
     </message>
     <message>
+        <location filename="../../main-win.ui" line="96"/>
+        <source>Focus with Ctrl+I</source>
+        <translation>Stel scherp met Ctrl+I</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="260"/>
+        <source>Go &amp;Up</source>
+        <translation>Om&amp;hoog</translation>
+    </message>
+    <message>
         <location filename="../../main-win.ui" line="263"/>
         <source>Go Up</source>
         <translation>Omhoog</translation>
@@ -284,31 +299,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="266"/>
         <source>Alt+Up</source>
-        <translation>Alt+Omhoog</translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation>Persoonlijke map</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="278"/>
-        <source>Alt+Home</source>
-        <translation>Alt+Home</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="394"/>
-        <source>Reload</source>
-        <translation>Herladen</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="290"/>
-        <source>F5</source>
-        <translation>F5</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="96"/>
-        <source>Focus with Ctrl+I</source>
-        <translation>Stel scherpstelling in met Ctrl+I</translation>
+        <translation>Alt+PageUp</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="275"/>
@@ -316,9 +307,19 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>&amp;Persoonlijke map</translation>
     </message>
     <message>
+        <location filename="../../main-win.ui" line="278"/>
+        <source>Alt+Home</source>
+        <translation>Alt+Home</translation>
+    </message>
+    <message>
         <location filename="../../main-win.ui" line="287"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Herladen</translation>
+        <translation>Her&amp;laden</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="290"/>
+        <source>F5</source>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="299"/>
@@ -336,6 +337,11 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>&amp;Over</translation>
     </message>
     <message>
+        <location filename="../../main-win.ui" line="326"/>
+        <source>&amp;New Window</source>
+        <translation>&amp;Nieuw venster</translation>
+    </message>
+    <message>
         <location filename="../../main-win.ui" line="329"/>
         <source>New Window</source>
         <translation>Nieuw venster</translation>
@@ -348,7 +354,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="340"/>
         <source>Show &amp;Hidden</source>
-        <translation>&amp;Verborgen elementen weergeven</translation>
+        <translation>Toon &amp;verborgen elementen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="343"/>
@@ -378,12 +384,42 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="384"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation>&amp;Toevoegen aan bladwijzers</translation>
+        <translation>Voeg &amp;toe aan bladwijzers</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="389"/>
         <source>&amp;Applications</source>
-        <translation>&amp;Toepassingen</translation>
+        <translation>Toe&amp;passingen</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="394"/>
+        <source>Reload</source>
+        <translation>Herladen</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="402"/>
+        <source>&amp;Icon View</source>
+        <translation>&amp;Pictogramweergave</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="410"/>
+        <source>&amp;Compact View</source>
+        <translation>&amp;Compacte weergave</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="418"/>
+        <source>&amp;Detailed List</source>
+        <translation>&amp;Gedetailleerde lijst</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="426"/>
+        <source>&amp;Thumbnail View</source>
+        <translation>&amp;Miniaturenweergave</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="435"/>
+        <source>Cu&amp;t</source>
+        <translation>&amp;Knippen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="438"/>
@@ -393,7 +429,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="447"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Kopiëren</translation>
+        <translation>K&amp;opiëren</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="450"/>
@@ -413,7 +449,12 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="467"/>
         <source>Select &amp;All</source>
-        <translation>&amp;Alles selecteren</translation>
+        <translation>Selecteer &amp;alles</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="470"/>
+        <source>Ctrl+A</source>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="475"/>
@@ -433,17 +474,17 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="499"/>
         <source>&amp;By File Name</source>
-        <translation>&amp;Op bestandsnaam</translation>
+        <translation>Op bestands&amp;naam</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="507"/>
         <source>By &amp;Modification Time</source>
-        <translation>Op &amp;bewerkingsdatum</translation>
+        <translation>Op &amp;bewerkingstijdstip</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="515"/>
         <source>By File &amp;Type</source>
-        <translation>Op bestandsoor&amp;t</translation>
+        <translation>Op bestand&amp;soort</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="523"/>
@@ -456,21 +497,6 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>&amp;Mappen eerst</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="581"/>
-        <source>&amp;Invert Selection</source>
-        <translation>&amp;Selectie omkeren</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="590"/>
-        <source>&amp;Delete</source>
-        <translation>&amp;Verwijderen</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="598"/>
-        <source>&amp;Rename</source>
-        <translation>&amp;Hernoemen</translation>
-    </message>
-    <message>
         <location filename="../../main-win.ui" line="630"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;Hoofdlettergevoelig</translation>
@@ -478,17 +504,32 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="638"/>
         <source>By File &amp;Size</source>
-        <translation>Op bestand&amp;sgrootte</translation>
+        <translation>Op bestand&amp;grootte</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="643"/>
         <source>&amp;Close Window</source>
-        <translation>&amp;Venster sluiten</translation>
+        <translation>Sluit &amp;venster</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="646"/>
+        <source>Ctrl+Q</source>
+        <translation>Ctrl+Q</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="678"/>
+        <source>&amp;Folder</source>
+        <translation>&amp;Map</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="690"/>
+        <source>&amp;Blank File</source>
+        <translation>&amp;Leeg bestand</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="709"/>
         <source>&amp;Filter</source>
-        <translation>&amp;Filteren</translation>
+        <translation>&amp;Filter</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="712"/>
@@ -498,17 +539,17 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="721"/>
         <source>Close &amp;left tabs</source>
-        <translation>&amp;Linkse tabbladen sluiten</translation>
+        <translation>Sluit &amp;linkse tabbladen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="730"/>
         <source>Close &amp;right tabs</source>
-        <translation>&amp;Rechtse tabbladen sluiten</translation>
+        <translation>Sluit &amp;rechtse tabbladen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="735"/>
         <source>Close &amp;other tabs</source>
-        <translation>&amp;Andere tabbladen sluiten</translation>
+        <translation>Sluit &amp;andere tabbladen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="743"/>
@@ -526,74 +567,6 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <location filename="../../main-win.ui" line="760"/>
         <source>Menu</source>
         <translation>Menu</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="470"/>
-        <source>Ctrl+A</source>
-        <translation>Ctrl+A</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="260"/>
-        <source>Go &amp;Up</source>
-        <translation>&amp;Omhoog</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="326"/>
-        <source>&amp;New Window</source>
-        <translation>&amp;Nieuw venster</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="402"/>
-        <source>&amp;Icon View</source>
-        <translation>&amp;Pictogramweergave</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="410"/>
-        <source>&amp;Compact View</source>
-        <translation>&amp;Compacte weergave</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="418"/>
-        <source>&amp;Detailed List</source>
-        <translation>Ge&amp;detailleerde lijst</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="426"/>
-        <source>&amp;Thumbnail View</source>
-        <translation>Minia&amp;tuurweergave</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="435"/>
-        <source>Cu&amp;t</source>
-        <translation>&amp;Knippen</translation>
-    </message>
-    <message>
-        <source>Ascending</source>
-        <translation>Oplopend</translation>
-    </message>
-    <message>
-        <source>Descending</source>
-        <translation>Aflopend</translation>
-    </message>
-    <message>
-        <source>By File Name</source>
-        <translation>Op bestandsnaam</translation>
-    </message>
-    <message>
-        <source>By Modification Time</source>
-        <translation>Op bewerkingstijdstip</translation>
-    </message>
-    <message>
-        <source>By File Type</source>
-        <translation>Op bestandstype</translation>
-    </message>
-    <message>
-        <source>By Owner</source>
-        <translation>Op eigenaar</translation>
-    </message>
-    <message>
-        <source>Folder First</source>
-        <translation>Map eerst</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="540"/>
@@ -641,9 +614,24 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>Alt+Rechts</translation>
     </message>
     <message>
+        <location filename="../../main-win.ui" line="581"/>
+        <source>&amp;Invert Selection</source>
+        <translation>&amp;Draai selectie om</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="590"/>
+        <source>&amp;Delete</source>
+        <translation>&amp;Wissen</translation>
+    </message>
+    <message>
         <location filename="../../main-win.ui" line="593"/>
         <source>Del</source>
         <translation>Del</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="598"/>
+        <source>&amp;Rename</source>
+        <translation>&amp;Hernoemen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="601"/>
@@ -653,7 +641,12 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="606"/>
         <source>C&amp;lose Tab</source>
-        <translation>Tabblad s&amp;luiten</translation>
+        <translation>S&amp;luit tabblad</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="609"/>
+        <source>Ctrl+W</source>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="614"/>
@@ -661,14 +654,39 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>&amp;Bestandeigenschappen</translation>
     </message>
     <message>
+        <location filename="../../main-win.ui" line="617"/>
+        <source>Alt+Return</source>
+        <translation>Alt+Enter</translation>
+    </message>
+    <message>
         <location filename="../../main-win.ui" line="622"/>
         <source>&amp;Folder Properties</source>
         <translation>&amp;Mapeigenschappen</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="646"/>
-        <source>Ctrl+Q</source>
-        <translation>Ctrl+Q</translation>
+        <location filename="../../main-win.ui" line="651"/>
+        <source>Edit Bookmarks</source>
+        <translation>Bladwijzers bewerken</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="656"/>
+        <source>Open &amp;Terminal</source>
+        <translation>Open &amp;terminalvenster</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="659"/>
+        <source>F4</source>
+        <translation>F4</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="664"/>
+        <source>Open as &amp;Root</source>
+        <translation>Open als &amp;root</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="669"/>
+        <source>&amp;Edit Bookmarks</source>
+        <translation>Bladwijzers b&amp;ewerken</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="681"/>
@@ -681,85 +699,9 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <source>Filter</source>
-        <translation>Filteren</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="121"/>
-        <source>C&amp;reate New</source>
-        <translation>&amp;Nieuw aanmaken</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="149"/>
-        <source>&amp;Sorting</source>
-        <translation>&amp;Sorteren</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="231"/>
-        <source>Main Toolbar</source>
-        <translation>Hoofdwerkbalk</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="609"/>
-        <source>Ctrl+W</source>
-        <translation>Ctrl+W</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="617"/>
-        <source>Alt+Return</source>
-        <translation>Alt+Enter</translation>
-    </message>
-    <message>
-        <source>Case Sensitive</source>
-        <translation>Hoofdlettergevoelig</translation>
-    </message>
-    <message>
-        <source>By File Size</source>
-        <translation>Op bestandgrootte</translation>
-    </message>
-    <message>
-        <source>Close Window</source>
-        <translation>Venster sluiten</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="651"/>
-        <source>Edit Bookmarks</source>
-        <translation>Bladwijzers bewerken</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="656"/>
-        <source>Open &amp;Terminal</source>
-        <translation>&amp;Terminalvenster openen</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="659"/>
-        <source>F4</source>
-        <translation>F4</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="664"/>
-        <source>Open as &amp;Root</source>
-        <translation>Openen als &amp;root</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="669"/>
-        <source>&amp;Edit Bookmarks</source>
-        <translation>Bladwijzers b&amp;ewerken</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="678"/>
-        <source>&amp;Folder</source>
-        <translation>&amp;Map</translation>
-    </message>
-    <message>
-        <location filename="../../main-win.ui" line="690"/>
-        <source>&amp;Blank File</source>
-        <translation>Leeg &amp;bestand</translation>
-    </message>
-    <message>
         <location filename="../../main-win.ui" line="698"/>
         <source>&amp;Find Files</source>
-        <translation>&amp;Bestanden zoeken</translation>
+        <translation>&amp;Zoek bestanden</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="701"/>
@@ -769,12 +711,17 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="90"/>
         <source>Filter by string...</source>
-        <translation>Filteren op tekenreeks...</translation>
+        <translation>Filter op tekenreeks...</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="117"/>
         <source>&amp;File</source>
         <translation>&amp;Bestand</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="121"/>
+        <source>C&amp;reate New</source>
+        <translation>&amp;Maak nieuw</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="139"/>
@@ -785,6 +732,11 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <location filename="../../main-win.ui" line="145"/>
         <source>&amp;View</source>
         <translation>&amp;Tonen</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="149"/>
+        <source>&amp;Sorting</source>
+        <translation>&amp;Sorteren</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="177"/>
@@ -804,7 +756,12 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="214"/>
         <source>&amp;Tool</source>
-        <translation>&amp;Gereedschap</translation>
+        <translation>Ge&amp;reedschap</translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="231"/>
+        <source>Main Toolbar</source>
+        <translation>Hoofdwerkbalk</translation>
     </message>
 </context>
 <context>
@@ -822,17 +779,17 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="168"/>
         <source>Run PCManFM as a daemon</source>
-        <translation>PCManFM uitvoeren als achtergronddienst</translation>
+        <translation>Draai PCManFM als achtergronddienst</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="171"/>
         <source>Quit PCManFM</source>
-        <translation>PCManFM afsluiten</translation>
+        <translation>Sluit PCManFM af</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
-        <translation>Bureaubladbeheerder starten</translation>
+        <translation>Start bureaubladbeheerder</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="177"/>
@@ -842,7 +799,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="180"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Open bureaubladvoorkeuren op de pagina met de opgegeven naam</translation>
+        <translation>Open dialoogvenster met bureaubladvoorkeuren op de pagina met de opgegeven naam</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="180"/>
@@ -851,33 +808,9 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>NAAM</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="189"/>
-        <source>Set desktop wallpaper from image FILE</source>
-        <translation>Stel bureaubladachtergrond in vanuit afbeeldingsBESTAND</translation>
-    </message>
-    <message>
-        <location filename="../../application.cpp" line="189"/>
-        <source>FILE</source>
-        <translation>BESTAND</translation>
-    </message>
-    <message>
-        <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation>Stel modus van bureaubladachtergrond in. MODUS=(kleur|uitrekken|passend|centreren|mozaïek)</translation>
-    </message>
-    <message>
-        <location filename="../../application.cpp" line="192"/>
-        <source>MODE</source>
-        <translation>MODUS</translation>
-    </message>
-    <message>
-        <location filename="../../application.cpp" line="195"/>
-        <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Open voorkeurendialoog op de pagina met de opgegeven naam</translation>
-    </message>
-    <message>
         <location filename="../../application.cpp" line="183"/>
         <source>Open new window</source>
-        <translation>Nieuw venster openen</translation>
+        <translation>Open nieuw venster</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="186"/>
@@ -885,19 +818,39 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>Start de bestandenzoeker</translation>
     </message>
     <message>
+        <location filename="../../application.cpp" line="189"/>
+        <source>Set desktop wallpaper from image FILE</source>
+        <translation>Stel (afbeeldings-) BESTAND in als bureaubladachtergrond</translation>
+    </message>
+    <message>
+        <location filename="../../application.cpp" line="189"/>
+        <source>FILE</source>
+        <translation>BESTAND</translation>
+    </message>
+    <message>
+        <location filename="../../application.cpp" line="192"/>
+        <source>MODE</source>
+        <translation>MODUS</translation>
+    </message>
+    <message>
         <location filename="../../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation>Stel modus van bureaubladachtergrond in. MODE=(%1)</translation>
+        <translation>Stel modus van bureaubladachtergrond in. MODUS=(%1)</translation>
+    </message>
+    <message>
+        <location filename="../../application.cpp" line="195"/>
+        <source>Open Preferences dialog on the page with the specified name</source>
+        <translation>Open dialoogvenster met voorkeuren op de pagina met de opgegeven naam</translation>
+    </message>
+    <message>
+        <location filename="../../application.cpp" line="198"/>
+        <source>Files or directories to open</source>
+        <translation>Te openen bestanden of mappen</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="198"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[BESTAND1, BESTAND2, enz.]</translation>
-    </message>
-    <message>
-        <location filename="../../application.cpp" line="198"/>
-        <source>Files or directories to open</source>
-        <translation>Bestanden of mappen om te openen</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="502"/>
@@ -916,7 +869,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../autorundialog.cpp" line="43"/>
         <source>Open in file manager</source>
-        <translation>Openen in bestandsbeheerder</translation>
+        <translation>Open in bestandsbeheerder</translation>
     </message>
     <message>
         <location filename="../../autorundialog.cpp" line="133"/>
@@ -929,27 +882,27 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
-        <translation>Enkel opvullen met achtergrondkleur</translation>
+        <translation>Vul alleen op met achtergrondkleur</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>Uitrekken om het volledige scherm te vullen</translation>
+        <translation>Rek uit om het hele scherm te vullen</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
-        <translation>Uitrekken om op het scherm te passen</translation>
+        <translation>Rek uit om op het scherm te passen</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
-        <translation>Centreren op het scherm</translation>
+        <translation>Centreer op het scherm</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>Een mozaïek van de afbeelding maken om het volledige scherm te vullen</translation>
+        <translation>Tegel de afbeelding om het volledige scherm te vullen</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="182"/>
@@ -995,7 +948,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../mainwindow.cpp" line="1062"/>
         <source>&amp;Move to Trash</source>
-        <translation>&amp;Verplaats naar prullenbak</translation>
+        <translation>Verplaats naar &amp;prullenbak</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="1062"/>
@@ -1011,7 +964,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../mainwindow.cpp" line="1142"/>
         <source>Switch user command is not set.</source>
-        <translation>De opdracht om van gebruiker te wisselen is niet ingesteld.</translation>
+        <translation>De opdracht voor gebruikerswissel is niet ingesteld.</translation>
     </message>
 </context>
 <context>
@@ -1022,10 +975,6 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>Pictogramweergave</translation>
     </message>
     <message>
-        <source>Compact Icon View</source>
-        <translation>Compacte pictogramweergave</translation>
-    </message>
-    <message>
         <location filename="../../preferencesdialog.cpp" line="190"/>
         <source>Compact View</source>
         <translation>Compacte weergave</translation>
@@ -1033,7 +982,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../preferencesdialog.cpp" line="191"/>
         <source>Thumbnail View</source>
-        <translation>Miniatuurweergave</translation>
+        <translation>Miniaturenweergave</translation>
     </message>
     <message>
         <location filename="../../preferencesdialog.cpp" line="192"/>
@@ -1080,17 +1029,17 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../view.cpp" line="102"/>
         <source>Open in New T&amp;ab</source>
-        <translation>Openen in nieuw &amp;tabblad</translation>
+        <translation>Open in nieuw &amp;tabblad</translation>
     </message>
     <message>
         <location filename="../../view.cpp" line="106"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>Openen in nieuw &amp;venster</translation>
+        <translation>Open in nieuw &amp;venster</translation>
     </message>
     <message>
         <location filename="../../view.cpp" line="115"/>
         <source>Open in Termina&amp;l</source>
-        <translation>Openen in termina&amp;lvenster</translation>
+        <translation>Open in termina&amp;lvenster</translation>
     </message>
 </context>
 <context>
@@ -1162,16 +1111,6 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>Venster</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="501"/>
-        <source>Default width of new windows:</source>
-        <translation>Standaardbreedte voor nieuwe vensters:</translation>
-    </message>
-    <message>
-        <location filename="../../preferences.ui" line="515"/>
-        <source>Default height of new windows:</source>
-        <translation>Standaardhoogte voor nieuwe vensters:</translation>
-    </message>
-    <message>
         <location filename="../../preferences.ui" line="469"/>
         <source>Always show the tab bar</source>
         <translation>Geef de tabbladwerkbalk altijd weer</translation>
@@ -1179,7 +1118,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="487"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Geef &apos;Sluiten&apos;-knoppen weer op tabbladen</translation>
+        <translation>Toon &apos;Sluiten&apos;-knoppen op tabbladen</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="494"/>
@@ -1187,9 +1126,19 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>Onthoud de grootte van het laatst gesloten venster</translation>
     </message>
     <message>
+        <location filename="../../preferences.ui" line="501"/>
+        <source>Default width of new windows:</source>
+        <translation>Standaardbreedte van nieuwe vensters:</translation>
+    </message>
+    <message>
+        <location filename="../../preferences.ui" line="515"/>
+        <source>Default height of new windows:</source>
+        <translation>Standaardhoogte van nieuwe vensters:</translation>
+    </message>
+    <message>
         <location filename="../../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation>Navigatie</translation>
+        <translation>Verkennen</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="90"/>
@@ -1209,7 +1158,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="120"/>
         <source> sec</source>
-        <translation>sec</translation>
+        <translation> sec</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="159"/>
@@ -1219,22 +1168,22 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="165"/>
         <source>Confirm before deleting files</source>
-        <translation>Bevestig voor verwijderen van bestanden</translation>
+        <translation>Vraag om bevestiging bij verwijderen van bestanden</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Verplaats verwijderde bestanden naar de prullenbak in plaats van ze te verwijderen van de schijf.</translation>
+        <translation>Verplaats verwijderde bestanden naar de prullenbak in plaats van ze te wissen van de schijf.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="676"/>
         <source>Show thumbnails of files</source>
-        <translation>Geef miniaturen van bestanden weer</translation>
+        <translation>Toon miniaturen van bestanden</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="666"/>
         <source>Only show thumbnails for local files</source>
-        <translation>Geef enkel miniaturen weer voor lokale bestanden</translation>
+        <translation>Toon alleen miniaturen voor lokale bestanden</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="40"/>
@@ -1269,7 +1218,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>Bevestig verplaatsen van bestanden naar prullenbak</translation>
+        <translation>Vraag om bevestiging bij verplaatsen van bestanden naar prullenbak</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="193"/>
@@ -1286,13 +1235,13 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <location filename="../../preferences.ui" line="266"/>
         <location filename="../../preferences.ui" line="276"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>Gebruikt door compacte weergave en gedetailleerde lijstweergave</translation>
+        <translation>Gebruikt door compacte weergave en door gedetailleerde lijstweergave</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="283"/>
         <location filename="../../preferences.ui" line="293"/>
         <source>Used by Thumbnail View</source>
-        <translation>Gebruikt door miniatuurweergave</translation>
+        <translation>Gebruikt door miniaturenweergave</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="313"/>
@@ -1307,7 +1256,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="336"/>
         <source>Always show full file names</source>
-        <translation>Geef altijd volledige bestandnamen weer</translation>
+        <translation>Toon altijd volledige bestandnamen</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="346"/>
@@ -1352,14 +1301,14 @@ Een spatie is gereserveerd voor 3 regels tekst.</translation>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Wanneer niet aangevinkt, wordt de 
-tabbladwerkbalk enkel weergegeven als er meer dan één tabblad is.</translation>
+tabbladwerkbalk alleen weergegeven als er meer dan één tabblad is.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="476"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
-        <translation>Wanneer niet aangevinkt, wordt de 
-tabbladwerkbalk enkel boven de mapweergave geplaatst en niet boven het linkerpaneel.</translation>
+        <translation>Wanneer niet aangevinkt, wordt de tabblad-
+werkbalk alleen boven de mapweergave geplaatst en niet boven het linkerpaneel.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="480"/>
@@ -1369,7 +1318,7 @@ tabbladwerkbalk enkel boven de mapweergave geplaatst en niet boven het linkerpan
     <message>
         <location filename="../../preferences.ui" line="532"/>
         <source>Show in places</source>
-        <translation>Toon in locaties</translation>
+        <translation>Toon in Locaties</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="539"/>
@@ -1439,12 +1388,12 @@ tabbladwerkbalk enkel boven de mapweergave geplaatst en niet boven het linkerpan
     <message>
         <location filename="../../preferences.ui" line="723"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation>Geef mogelijke opties voor verwijderbare media weer wanneer ze worden ingevoegd</translation>
+        <translation>Toon beschikbare opties voor verwijderbare media wanneer ze worden ingevoegd</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="733"/>
         <source>When removable medium unmounted:</source>
-        <translation>Bij ontkoppelen van verwijderbaar medium:</translation>
+        <translation>Na ontkoppelen van verwijderbaar medium:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="739"/>
@@ -1457,9 +1406,26 @@ tabbladwerkbalk enkel boven de mapweergave geplaatst en niet boven het linkerpan
         <translation>Verander ma&amp;p in het tabblad in de persoonlijke map</translation>
     </message>
     <message>
+        <location filename="../../preferences.ui" line="773"/>
+        <source>Programs</source>
+        <translation>Programma's</translation>
+    </message>
+    <message>
+        <location filename="../../preferences.ui" line="782"/>
+        <source>Terminal emulator:</source>
+        <translation>Terminalnabootser:</translation>
+    </message>
+    <message>
         <location filename="../../preferences.ui" line="789"/>
         <source>Switch &amp;user command:</source>
-        <translation>Opdracht voor wisselen van gebr&amp;uiker:</translation>
+        <translation>Opdracht voor &amp;gebruikerswissel:</translation>
+    </message>
+    <message>
+        <location filename="../../preferences.ui" line="802"/>
+        <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
+%s = the command line you want to execute with terminal or su.</source>
+        <translation>Voorbeelden: &quot;xterm -e %s&quot; voor de terminal of &quot;gksu %s&quot; om van gebruiker te wisselen.
+%s = de opdrachtregel die u wilt uitvoeren met de terminal of met su.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="813"/>
@@ -1474,7 +1440,7 @@ tabbladwerkbalk enkel boven de mapweergave geplaatst en niet boven het linkerpan
     <message>
         <location filename="../../preferences.ui" line="842"/>
         <source>Show only user defined templates in menu</source>
-        <translation>Toon enkel sjablonen gedefinieerd door de gebruiker in menu</translation>
+        <translation>Toon alleen sjablonen gedefinieerd door de gebruiker in menu</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="849"/>
@@ -1485,31 +1451,6 @@ tabbladwerkbalk enkel boven de mapweergave geplaatst en niet boven het linkerpan
         <location filename="../../preferences.ui" line="856"/>
         <source>Run default application after creation from template</source>
         <translation>Voer standaardtoepassing uit na aanmaken vanuit sjabloon</translation>
-    </message>
-    <message>
-        <location filename="../../preferences.ui" line="773"/>
-        <source>Programs</source>
-        <translation>Programma's</translation>
-    </message>
-    <message>
-        <location filename="../../preferences.ui" line="782"/>
-        <source>Terminal emulator:</source>
-        <translation>Terminalnabootser:</translation>
-    </message>
-    <message>
-        <source>Switch user command:</source>
-        <translation>Opdracht voor wisselen van gebruiker:</translation>
-    </message>
-    <message>
-        <location filename="../../preferences.ui" line="802"/>
-        <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
-%s = the command line you want to execute with terminal or su.</source>
-        <translation>Voorbeelden: &quot;xterm -e %s&quot; voor de terminal of &quot;gksu %s&quot; om van gebruiker te wisselen.
-%s = de opdrachtregel die u wilt uitvoeren met de terminal of met su.</translation>
-    </message>
-    <message>
-        <source>Archiver integration:</source>
-        <translation>Integratie met archivering:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="319"/>
