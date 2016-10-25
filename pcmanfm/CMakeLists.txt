@@ -63,6 +63,7 @@ target_compile_definitions(pcmanfm-qt
     PRIVATE
         PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/pcmanfm-qt"
         PCMANFM_QT_VERSION="${PCMANFM_QT_VERSION}"
+        LIBFM_DATA_DIR="${PKG_FM_PREFIX}/share/libfm"
 )
 
 target_include_directories(pcmanfm-qt
