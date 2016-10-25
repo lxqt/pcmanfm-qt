@@ -58,11 +58,11 @@ add_executable(pcmanfm-qt
     ${QM_FILES}
     ${DESKTOP_FILES}
 )
-set_property(
-     TARGET pcmanfm-qt APPEND
-     PROPERTY COMPILE_DEFINITIONS
-     PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/pcmanfm-qt"
-     PCMANFM_QT_VERSION="${PCMANFM_QT_VERSION}"
+
+target_compile_definitions(pcmanfm-qt
+    PRIVATE
+        PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/pcmanfm-qt"
+        PCMANFM_QT_VERSION="${PCMANFM_QT_VERSION}"
 )
 
 target_include_directories(pcmanfm-qt
