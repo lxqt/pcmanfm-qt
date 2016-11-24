@@ -35,6 +35,11 @@
 #include <libfm-qt/bookmarks.h>
 #include <libfm-qt/path.h>
 
+namespace Fm {
+  class PathEdit;
+  class PathBar;
+}
+
 namespace PCManFM {
 
 class TabPage;
@@ -59,6 +64,7 @@ protected Q_SLOTS:
 
   void onPathEntryReturnPressed();
   void onPathEntryEdited(const QString& text);
+  void onPathBarChdir(FmPath* dirPath);
 
   void on_actionNewTab_triggered();
   void on_actionNewWin_triggered();
@@ -103,6 +109,9 @@ protected Q_SLOTS:
   void on_actionFolderFirst_triggered(bool checked);
   void on_actionCaseSensitive_triggered(bool checked);
   void on_actionFilter_triggered(bool checked);
+
+  void on_actionLocationBar_triggered(bool checked);
+  void on_actionPathButtons_triggered(bool checked);
 
   void on_actionApplications_triggered();
   void on_actionComputer_triggered();
@@ -166,20 +175,22 @@ protected:
   virtual void closeEvent(QCloseEvent *event);
 
 private:
-  static void onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis);
+  static void onBookmarksChanged(FmBookmarks* bookmarks_, MainWindow* pThis);
   void loadBookmarksMenu();
   void updateUIForCurrentPage();
   void updateViewMenuForCurrentPage();
   void updateStatusBarForCurrentPage();
   void setRTLIcons(bool isRTL);
+  void createPathBar(bool usePathButtons);
 
 private:
   Ui::MainWindow ui;
-  QLineEdit* pathEntry;
-  QLabel* fsInfoLabel;
-  Fm::Bookmarks bookmarks;
+  Fm::PathEdit* pathEntry_;
+  Fm::PathBar* pathBar_;
+  QLabel* fsInfoLabel_;
+  Fm::Bookmarks bookmarks_;
   Launcher fileLauncher_;
-  int rightClickIndex;
+  int rightClickIndex_;
   bool updatingViewMenu_;
 };
 

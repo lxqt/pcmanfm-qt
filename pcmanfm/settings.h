@@ -534,6 +534,14 @@ public:
     showFilter_ = value;
   }
 
+  bool pathBarButtons() const {
+    return pathBarButtons_;
+  }
+
+  void setPathBarButtons(bool value) {
+    pathBarButtons_ = value;
+  }
+
   // settings for use with libfm
   bool singleClick() const {
     return singleClick_;
@@ -790,6 +798,7 @@ private:
   bool sortFolderFirst_;
   bool sortCaseSensitive_;
   bool showFilter_;
+  bool pathBarButtons_;
 
   // settings for use with libfm
   bool singleClick_;

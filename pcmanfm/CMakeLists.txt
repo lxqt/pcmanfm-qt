@@ -30,6 +30,7 @@ set(pcmanfm_UIS
     desktop-preferences.ui
     desktop-folder.ui
     autorun.ui
+    connect.ui
 )
 
 qt5_wrap_ui(pcmanfm_UIS_H ${pcmanfm_UIS})

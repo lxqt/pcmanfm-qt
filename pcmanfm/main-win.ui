@@ -170,6 +170,20 @@
      <addaction name="actionDetailedList"/>
      <addaction name="separator"/>
     </widget>
+    <widget class="QMenu" name="menuToolbars">
+     <property name="title">
+      <string>&amp;Toolbars</string>
+     </property>
+     <addaction name="actionFilter"/>
+     <addaction name="actionMenu_bar"/>
+    </widget>
+    <widget class="QMenu" name="menuPathBarStyle">
+     <property name="title">
+      <string>Path &amp;Bar</string>
+     </property>
+     <addaction name="actionLocationBar"/>
+     <addaction name="actionPathButtons"/>
+    </widget>
     <addaction name="actionReload"/>
     <addaction name="separator"/>
     <addaction name="actionShowHidden"/>
@@ -177,8 +191,8 @@
     <addaction name="menu_View_2"/>
     <addaction name="actionPreserveView"/>
     <addaction name="separator"/>
-    <addaction name="actionFilter"/>
-    <addaction name="actionMenu_bar"/>
+    <addaction name="menuToolbars"/>
+    <addaction name="menuPathBarStyle"/>
    </widget>
    <widget class="QMenu" name="menu_Editw">
     <property name="title">
@@ -216,6 +230,8 @@
     <addaction name="actionGoBack"/>
     <addaction name="actionGoForward"/>
     <addaction name="actionGoUp"/>
+    <addaction name="separator"/>
+    <addaction name="actionConnectToServer"/>
    </widget>
    <widget class="QMenu" name="menu_Tool">
     <property name="title">
@@ -756,7 +772,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Menu bar</string>
+    <string>&amp;Menu bar</string>
    </property>
    <property name="toolTip">
     <string>Menu bar</string>
@@ -783,6 +799,27 @@
    </property>
    <property name="text">
     <string>&amp;Preserve Settings for This Folder</string>
+   </property>
+  </action>
+  <action name="actionConnectToServer">
+   <property name="text">
+    <string>Connect to &amp;Server</string>
+   </property>
+  </action>
+  <action name="actionLocationBar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Location</string>
+   </property>
+  </action>
+  <action name="actionPathButtons">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Path Buttons</string>
    </property>
   </action>
  </widget>
