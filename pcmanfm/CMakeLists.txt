@@ -12,6 +12,7 @@ set(pcmanfm_SRCS
     desktopwindow.cpp
     desktopitemdelegate.cpp
     autorundialog.cpp
+    connectserverdialog.cpp
     settings.cpp
 )
 

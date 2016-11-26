@@ -13,11 +13,17 @@
   <property name="windowTitle">
    <string>Connect to remote server</string>
   </property>
+  <property name="windowIcon">
+   <iconset theme="folder-remote"/>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="5" column="0" colspan="4">
-    <widget class="QRadioButton" name="radioButton">
+    <widget class="QRadioButton" name="ananymousLogin">
      <property name="text">
       <string>Anonymous &amp;login</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
      </property>
     </widget>
    </item>
@@ -25,7 +31,7 @@
     <widget class="QLineEdit" name="path"/>
    </item>
    <item row="6" column="0">
-    <widget class="QRadioButton" name="radioButton_2">
+    <widget class="QRadioButton" name="loginAsUser">
      <property name="text">
       <string>Login as &amp;user:</string>
      </property>
@@ -35,23 +41,7 @@
     <widget class="QLineEdit" name="userName"/>
    </item>
    <item row="1" column="1" colspan="3">
-    <widget class="QComboBox" name="serverType">
-     <item>
-      <property name="text">
-       <string>SSH</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>FTP</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>WebDav</string>
-      </property>
-     </item>
-    </widget>
+    <widget class="QComboBox" name="serverType"/>
    </item>
    <item row="8" column="0" colspan="4">
     <widget class="QDialogButtonBox" name="buttonBox">
@@ -108,7 +98,11 @@
     </widget>
    </item>
    <item row="2" column="3">
-    <widget class="QSpinBox" name="port"/>
+    <widget class="QSpinBox" name="port">
+     <property name="maximum">
+      <number>65535</number>
+     </property>
+    </widget>
    </item>
    <item row="7" column="0">
     <spacer name="verticalSpacer">
@@ -134,8 +128,8 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
+     <x>254</x>
+     <y>249</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -150,12 +144,28 @@
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
+     <x>322</x>
+     <y>249</y>
     </hint>
     <hint type="destinationlabel">
      <x>286</x>
      <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loginAsUser</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>userName</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>163</x>
+     <y>184</y>
     </hint>
    </hints>
   </connection>

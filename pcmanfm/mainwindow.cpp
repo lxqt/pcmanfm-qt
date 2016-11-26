@@ -52,6 +52,9 @@ using namespace Fm;
 
 namespace PCManFM {
 
+// static
+MainWindow* MainWindow::lastActive_ = nullptr;
+
 MainWindow::MainWindow(Path path):
   QMainWindow(),
   pathEntry_(nullptr),
@@ -414,6 +417,11 @@ void MainWindow::on_actionReload_triggered() {
     pathEntry_->setText(currentPage()->pathName());
 }
 
+void MainWindow::on_actionConnectToServer_triggered() {
+  Application* app = static_cast<Application*>(qApp);
+  app->connectToServer();
+}
+
 void MainWindow::on_actionGo_triggered() {
   onPathEntryReturnPressed();
 }
@@ -708,6 +716,9 @@ void MainWindow::resizeEvent(QResizeEvent *event) {
 
 void MainWindow::closeEvent(QCloseEvent *event)
 {
+  if(lastActive_ == this)
+    lastActive_ = nullptr;
+
   QWidget::closeEvent(event);
   Settings& settings = static_cast<Application*>(qApp)->settings();
   if(settings.rememberWindowSize()) {
@@ -1056,6 +1067,16 @@ void MainWindow::setRTLIcons(bool isRTL) {
     ui.actionGoForward->setIcon(nxtIcn);
     ui.actionCloseRight->setIcon(nxtIcn);
   }
+}
+
+bool MainWindow::event(QEvent* event) {
+  switch(event->type()) {
+  case QEvent::WindowActivate:
+    lastActive_ = this;
+  default:
+    break;
+  }
+  return QMainWindow::event(event);
 }
 
 void MainWindow::changeEvent(QEvent *event) {

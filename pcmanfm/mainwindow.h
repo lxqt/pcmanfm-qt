@@ -60,6 +60,10 @@ public:
 
   void updateFromSettings(Settings& settings);
 
+  static MainWindow* lastActive() {
+    return lastActive_;
+  }
+
 protected Q_SLOTS:
 
   void onPathEntryReturnPressed();
@@ -89,6 +93,7 @@ protected Q_SLOTS:
   void on_actionGoUp_triggered();
   void on_actionHome_triggered();
   void on_actionReload_triggered();
+  void on_actionConnectToServer_triggered();
 
   void on_actionIconView_triggered();
   void on_actionCompactView_triggered();
@@ -169,10 +174,11 @@ protected Q_SLOTS:
   void toggleMenuBar(bool checked);
 
 protected:
-  void changeEvent(QEvent *event);
+  bool event(QEvent* event) override;
+  void changeEvent(QEvent *event) override;
   void closeTab(int index);
-  virtual void resizeEvent(QResizeEvent *event);
-  virtual void closeEvent(QCloseEvent *event);
+  virtual void resizeEvent(QResizeEvent *event) override;
+  virtual void closeEvent(QCloseEvent *event) override;
 
 private:
   static void onBookmarksChanged(FmBookmarks* bookmarks_, MainWindow* pThis);
@@ -192,6 +198,8 @@ private:
   Launcher fileLauncher_;
   int rightClickIndex_;
   bool updatingViewMenu_;
+
+  static MainWindow* lastActive_;
 };
 
 }

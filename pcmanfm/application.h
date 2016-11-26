@@ -37,6 +37,7 @@ class QFileSystemWatcher;
 
 namespace PCManFM {
 
+class MainWindow;
 class DesktopWindow;
 class PreferencesDialog;
 class DesktopPreferencesDialog;
@@ -76,6 +77,7 @@ public:
   void editBookmarks();
   void desktopManager(bool enabled);
   void findFiles(QStringList paths = QStringList());
+  void connectToServer();
 
   bool desktopManagerEnabled() {
     return enableDesktopManager_;
@@ -107,6 +109,7 @@ protected Q_SLOTS:
   void reloadDesktopsAsNeeded();
 
   void onFindFileAccepted();
+  void onConnectToServerAccepted();
 
 protected:
   virtual bool eventFilter(QObject* watched, QEvent* event);
