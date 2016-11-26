@@ -298,6 +298,7 @@ void MainWindow::createPathBar(bool usePathButtons) {
   if(usePathButtons) {
     bar = pathBar_ = new Fm::PathBar(this);
     connect(pathBar_, &Fm::PathBar::chdir, this, &MainWindow::onPathBarChdir);
+    connect(pathBar_, &Fm::PathBar::editingFinished, this, &MainWindow::onResetFocus);
   }
   else {
     bar = pathEntry_ = new Fm::PathEdit(this);
@@ -1133,9 +1134,13 @@ void MainWindow::closeRightTabs() {
 }
 
 void MainWindow::focusPathEntry() {
+  // use text entry for the path bar
   if(pathEntry_ != nullptr) {
     pathEntry_->setFocus();
     pathEntry_->selectAll();
+  }
+  else if (pathBar_ != nullptr) { // use button-style path bar
+    pathBar_->openEditor();
   }
 }
 

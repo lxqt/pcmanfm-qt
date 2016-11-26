@@ -91,7 +91,7 @@ Settings::Settings():
   sortFolderFirst_(true),
   sortCaseSensitive_(false),
   showFilter_(false),
-  pathBarButtons_(false),
+  pathBarButtons_(true),
   // settings for use with libfm
   singleClick_(false),
   autoSelectionDelay_(600),
@@ -280,7 +280,7 @@ bool Settings::loadFile(QString filePath) {
   sidePaneMode_ = sidePaneModeFromString(settings.value("SidePaneMode").toString());
   showMenuBar_ = settings.value("ShowMenuBar", true).toBool();
   fullWidthTabBar_ = settings.value("FullWidthTabBar", true).toBool();
-  pathBarButtons_ = settings.value("PathBarButtons", false).toBool();
+  pathBarButtons_ = settings.value("PathBarButtons", true).toBool();
   settings.endGroup();
 
   return true;
