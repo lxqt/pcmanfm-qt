@@ -193,7 +193,7 @@ bool Application::parseCommandLineArgs() {
   QCommandLineOption setWallpaperOption(QStringList() << "w" << "set-wallpaper", tr("Set desktop wallpaper from image FILE"), tr("FILE"));
   parser.addOption(setWallpaperOption);
 
-  QCommandLineOption wallpaperModeOption("wallpaper-mode", tr("Set mode of desktop wallpaper. MODE=(%1)").arg("color|stretch|fit|center|tile"), tr("MODE"));
+  QCommandLineOption wallpaperModeOption("wallpaper-mode", tr("Set mode of desktop wallpaper. MODE=(%1)").arg("color|stretch|fit|center|tile|zoom"), tr("MODE"));
   parser.addOption(wallpaperModeOption);
 
   QCommandLineOption showPrefOption("show-pref", tr("Open Preferences dialog on the page with the specified name"), tr("NAME"));
