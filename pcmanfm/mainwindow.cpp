@@ -203,10 +203,8 @@ MainWindow::MainWindow(Path path):
   QToolButton* menuBtn = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionMenu));
   menuBtn->setPopupMode(QToolButton::InstantPopup);
 
-  Q_FOREACH(QAction *action, ui.toolBar->actions()) {
-    if(action->isSeparator())
-      action->setVisible(!settings.showMenuBar());
-  }
+  menuSep_ = ui.toolBar->insertSeparator(ui.actionMenu);
+  menuSep_->setVisible(!settings.showMenuBar());
   ui.actionMenu->setVisible(!settings.showMenuBar());
   ui.menubar->setVisible(settings.showMenuBar());
   ui.actionMenu_bar->setChecked(settings.showMenuBar());
@@ -351,10 +349,7 @@ void MainWindow::toggleMenuBar(bool checked) {
 
   ui.menubar->setVisible(showMenuBar);
   ui.actionMenu_bar->setChecked(showMenuBar);
-  Q_FOREACH(QAction *action, ui.toolBar->actions()) {
-    if(action->isSeparator())
-      action->setVisible(!showMenuBar);
-  }
+  menuSep_->setVisible(!showMenuBar);
   ui.actionMenu->setVisible(!showMenuBar);
   settings.setShowMenuBar(showMenuBar);
 }
