@@ -277,8 +277,8 @@
    <addaction name="actionGoForward"/>
    <addaction name="actionGoUp"/>
    <addaction name="actionReload"/>
-   <addaction name="actionGo"/>
    <addaction name="separator"/>
+   <addaction name="actionGo"/>
    <addaction name="actionMenu"/>
   </widget>
   <action name="actionGoUp">

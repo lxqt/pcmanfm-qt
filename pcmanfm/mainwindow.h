@@ -199,6 +199,7 @@ private:
   Launcher fileLauncher_;
   int rightClickIndex_;
   bool updatingViewMenu_;
+  QAction* menuSep_;
 
   static MainWindow* lastActive_;
 };
