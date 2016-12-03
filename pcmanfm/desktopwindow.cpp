@@ -446,8 +446,8 @@ void DesktopWindow::onDataChanged(const QModelIndex& topLeft, const QModelIndex&
     for(int i = topLeft.row(); i <= bottomRight.row(); ++i) {
       QModelIndex index = topLeft.sibling(i, 0);
       if(index.isValid() && displayNames_.contains(index)) {
-        FmFileInfo* file = proxyModel_->fileInfoFromIndex(index);
-        if(displayNames_[index] != fm_file_info_get_disp_name(file)) {
+        Fm::FileInfo file = proxyModel_->fileInfoFromIndex(index);
+        if(displayNames_[index] != file.getDispName()) {
           relayout = true;
           break;
         }
