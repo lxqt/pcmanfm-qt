@@ -22,9 +22,6 @@ find_package(Qt5X11Extras 5.2 REQUIRED)
 find_package(fm-qt REQUIRED)
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(LIB_XCB REQUIRED xcb)
-
 message(STATUS "Building ${PROJECT_NAME} with Qt ${Qt5Core_VERSION_STRING}")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)

@@ -69,8 +69,8 @@ target_compile_definitions(pcmanfm-qt
 )
 
 target_include_directories(pcmanfm-qt
-    PRIVATE "${LIB_XCB_INDLUDE_DIRS}"
-    "${Qt5Gui_PRIVATE_INCLUDE_DIRS}"
+    PRIVATE
+        "${Qt5Gui_PRIVATE_INCLUDE_DIRS}"
 )
 
 target_link_libraries(pcmanfm-qt
@@ -78,7 +78,6 @@ target_link_libraries(pcmanfm-qt
     Qt5::Widgets
     Qt5::DBus
     fm-qt
-    "${LIB_XCB_LIBRARIES}"
 )
 
 install(TARGETS pcmanfm-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
