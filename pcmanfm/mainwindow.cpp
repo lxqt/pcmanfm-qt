@@ -301,6 +301,7 @@ void MainWindow::createPathBar(bool usePathButtons) {
   if(usePathButtons) {
     bar = pathBar_ = new Fm::PathBar(this);
     connect(pathBar_, &Fm::PathBar::chdir, this, &MainWindow::onPathBarChdir);
+    connect(pathBar_, &Fm::PathBar::middleClickChdir, this, &MainWindow::onPathBarMiddleClickChdir);
     connect(pathBar_, &Fm::PathBar::editingFinished, this, &MainWindow::onResetFocus);
   }
   else {
@@ -375,6 +376,10 @@ void MainWindow::onPathEntryEdited(const QString& text) {
 
 void MainWindow::onPathBarChdir(FmPath* dirPath) {
   chdir(dirPath);
+}
+
+void MainWindow::onPathBarMiddleClickChdir(FmPath* dirPath) {
+  addTab(dirPath);
 }
 
 void MainWindow::on_actionGoUp_triggered() {
