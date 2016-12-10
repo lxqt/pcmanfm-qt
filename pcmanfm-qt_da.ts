@@ -9,9 +9,13 @@
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../about.ui" line="25"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../about.ui" line="48"/>
@@ -32,12 +36,32 @@
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;</translation>
     </message>
     <message>
+        <location filename="../../about.ui" line="109"/>
+        <source>PCManFM-Qt File Manager
+
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../about.ui" line="78"/>
         <source>Authors</source>
         <translation>Forfattere</translation>
     </message>
     <message>
-        <location filename="../../about.ui" line="109"/>
         <source>PCMan File Manager
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
@@ -55,7 +79,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>PCMan File Manager
+        <translation type="vanished">PCMan File Manager
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
@@ -105,6 +129,49 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
         <translation>Vækg venligst hvad du vil foretage dig:</translation>
+    </message>
+</context>
+<context>
+    <name>ConnectServerDialog</name>
+    <message>
+        <location filename="../../connect.ui" line="14"/>
+        <source>Connect to remote server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connect.ui" line="23"/>
+        <source>Anonymous &amp;login</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connect.ui" line="36"/>
+        <source>Login as &amp;user:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connect.ui" line="65"/>
+        <source>Specify remote folder to connect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connect.ui" line="72"/>
+        <source>Type:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connect.ui" line="79"/>
+        <source>Port:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connect.ui" line="86"/>
+        <source>Path:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connect.ui" line="96"/>
+        <source>Host:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -279,484 +346,532 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <translation>Filhåndtering</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="96"/>
+        <location filename="../../main-win.ui" line="90"/>
         <source>Focus with Ctrl+I</source>
         <translation>Giv fokus med Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="260"/>
+        <location filename="../../main-win.ui" line="178"/>
+        <source>&amp;Toolbars</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="185"/>
+        <source>Path &amp;Bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="290"/>
         <source>Go &amp;Up</source>
         <translation>Gå &amp;op</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="263"/>
+        <location filename="../../main-win.ui" line="293"/>
         <source>Go Up</source>
         <translation>Gå op</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="266"/>
+        <location filename="../../main-win.ui" line="296"/>
         <source>Alt+Up</source>
         <translation>Alt+pilop</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="275"/>
+        <location filename="../../main-win.ui" line="305"/>
         <source>&amp;Home</source>
         <translation>&amp;Hjem</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="278"/>
+        <location filename="../../main-win.ui" line="308"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="287"/>
+        <location filename="../../main-win.ui" line="317"/>
         <source>&amp;Reload</source>
         <translation>&amp;Genindlæs</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="290"/>
+        <location filename="../../main-win.ui" line="320"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="299"/>
+        <location filename="../../main-win.ui" line="329"/>
         <source>Go</source>
         <translation>Gå til</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="308"/>
+        <location filename="../../main-win.ui" line="338"/>
         <source>Quit</source>
         <translation>Afslut</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="317"/>
+        <location filename="../../main-win.ui" line="347"/>
         <source>&amp;About</source>
         <translation>&amp;Om</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="326"/>
+        <location filename="../../main-win.ui" line="356"/>
         <source>&amp;New Window</source>
         <translation>&amp;Nyt vindue</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="329"/>
+        <location filename="../../main-win.ui" line="359"/>
         <source>New Window</source>
         <translation>Nyt vindue</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="332"/>
+        <location filename="../../main-win.ui" line="362"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="340"/>
+        <location filename="../../main-win.ui" line="370"/>
         <source>Show &amp;Hidden</source>
         <translation>Vis &amp;skjulte</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="343"/>
+        <location filename="../../main-win.ui" line="373"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="352"/>
+        <location filename="../../main-win.ui" line="382"/>
         <source>&amp;Computer</source>
         <translation>&amp;Computer</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="361"/>
+        <location filename="../../main-win.ui" line="391"/>
         <source>&amp;Trash</source>
         <translation>&amp;Papirkurv</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="366"/>
+        <location filename="../../main-win.ui" line="396"/>
         <source>&amp;Network</source>
         <translation>&amp;Netværk</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="375"/>
+        <location filename="../../main-win.ui" line="405"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Skrivebord</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="384"/>
+        <location filename="../../main-win.ui" line="414"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Tilføj til bogmærker</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="389"/>
+        <location filename="../../main-win.ui" line="419"/>
         <source>&amp;Applications</source>
         <translation>&amp;Applikationer</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="394"/>
+        <location filename="../../main-win.ui" line="424"/>
         <source>Reload</source>
         <translation>Genindlæs</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="402"/>
+        <location filename="../../main-win.ui" line="432"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Ikonvisning</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="410"/>
+        <location filename="../../main-win.ui" line="440"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Kompakt visning</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="418"/>
+        <location filename="../../main-win.ui" line="448"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Detaljeret visning</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="426"/>
+        <location filename="../../main-win.ui" line="456"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Forhåndsvisninger</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="435"/>
+        <location filename="../../main-win.ui" line="465"/>
         <source>Cu&amp;t</source>
         <translation>Kli&amp;p</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="438"/>
+        <location filename="../../main-win.ui" line="468"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="447"/>
+        <location filename="../../main-win.ui" line="477"/>
         <source>&amp;Copy</source>
         <translation>K&amp;opier</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="450"/>
+        <location filename="../../main-win.ui" line="480"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="459"/>
+        <location filename="../../main-win.ui" line="489"/>
         <source>&amp;Paste</source>
         <translation>&amp;Indsæt</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="462"/>
+        <location filename="../../main-win.ui" line="492"/>
         <source>Ctrl+V</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="467"/>
+        <location filename="../../main-win.ui" line="497"/>
         <source>Select &amp;All</source>
         <translation>Marker &amp;alt</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="470"/>
+        <location filename="../../main-win.ui" line="500"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="475"/>
+        <location filename="../../main-win.ui" line="505"/>
         <source>Pr&amp;eferences</source>
         <translation>Ind&amp;stillinger</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="483"/>
+        <location filename="../../main-win.ui" line="513"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Stigende</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="491"/>
+        <location filename="../../main-win.ui" line="521"/>
         <source>&amp;Descending</source>
         <translation>&amp;Faldende</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="499"/>
+        <location filename="../../main-win.ui" line="529"/>
         <source>&amp;By File Name</source>
         <translation>Efter fi&amp;lnavn</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="507"/>
+        <location filename="../../main-win.ui" line="537"/>
         <source>By &amp;Modification Time</source>
         <translation>Efter &amp;senest ændret</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="515"/>
+        <location filename="../../main-win.ui" line="545"/>
         <source>By File &amp;Type</source>
         <translation>Efter fi&amp;type</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="523"/>
+        <location filename="../../main-win.ui" line="553"/>
         <source>By &amp;Owner</source>
         <translation>Efter &amp;ejer</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="531"/>
+        <location filename="../../main-win.ui" line="561"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Mapper først</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="630"/>
+        <location filename="../../main-win.ui" line="569"/>
+        <source>&amp;Preserve sorting for this folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="668"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;Forskel på store og små bogstaver</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="638"/>
+        <location filename="../../main-win.ui" line="676"/>
         <source>By File &amp;Size</source>
         <translation>Efter fil&amp;størrelse</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="643"/>
+        <location filename="../../main-win.ui" line="681"/>
         <source>&amp;Close Window</source>
         <translation>&amp;Luk vindue</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="646"/>
+        <location filename="../../main-win.ui" line="684"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="678"/>
+        <location filename="../../main-win.ui" line="716"/>
         <source>&amp;Folder</source>
         <translation>&amp;Mappe</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="690"/>
+        <location filename="../../main-win.ui" line="728"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Tom fil</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="709"/>
+        <location filename="../../main-win.ui" line="747"/>
         <source>&amp;Filter</source>
         <translation>&amp;Filtrer</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="712"/>
+        <location filename="../../main-win.ui" line="750"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="721"/>
+        <location filename="../../main-win.ui" line="759"/>
+        <source>Close &amp;previous tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="768"/>
+        <source>Close &amp;next tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="807"/>
+        <source>&amp;Preserve Settings for This Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="812"/>
+        <source>Connect to &amp;Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="820"/>
+        <source>&amp;Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="828"/>
+        <source>&amp;Path Buttons</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Close &amp;left tabs</source>
-        <translation>Luk &amp;venstre faneblade</translation>
+        <translation type="vanished">Luk &amp;venstre faneblade</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="730"/>
         <source>Close &amp;right tabs</source>
-        <translation>Luk &amp;højre faneblade</translation>
+        <translation type="vanished">Luk &amp;højre faneblade</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="735"/>
+        <location filename="../../main-win.ui" line="773"/>
         <source>Close &amp;other tabs</source>
         <translation>Luk &amp;andre faneblade</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="743"/>
-        <location filename="../../main-win.ui" line="746"/>
+        <location filename="../../main-win.ui" line="781"/>
+        <source>&amp;Menu bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="784"/>
         <source>Menu bar</source>
         <translation>Menulinje</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="749"/>
+        <location filename="../../main-win.ui" line="787"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="757"/>
-        <location filename="../../main-win.ui" line="760"/>
+        <location filename="../../main-win.ui" line="796"/>
+        <location filename="../../main-win.ui" line="799"/>
         <source>Menu</source>
         <translation>Menu</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="540"/>
+        <location filename="../../main-win.ui" line="578"/>
         <source>New &amp;Tab</source>
         <translation>Nyt &amp;faneblad</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="543"/>
+        <location filename="../../main-win.ui" line="581"/>
         <source>New Tab</source>
         <translation>Nyt faneblad</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="546"/>
+        <location filename="../../main-win.ui" line="584"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="555"/>
+        <location filename="../../main-win.ui" line="593"/>
         <source>Go &amp;Back</source>
         <translation>Til&amp;bage</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="558"/>
+        <location filename="../../main-win.ui" line="596"/>
         <source>Go Back</source>
         <translation>Tilbage</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="561"/>
+        <location filename="../../main-win.ui" line="599"/>
         <source>Alt+Left</source>
         <translation>Alt+venstrepil</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="570"/>
+        <location filename="../../main-win.ui" line="608"/>
         <source>Go &amp;Forward</source>
         <translation>&amp;Fremad</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="573"/>
+        <location filename="../../main-win.ui" line="611"/>
         <source>Go Forward</source>
         <translation>Fremad</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="576"/>
+        <location filename="../../main-win.ui" line="614"/>
         <source>Alt+Right</source>
         <translation>Alt+Højrepil</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="581"/>
+        <location filename="../../main-win.ui" line="619"/>
         <source>&amp;Invert Selection</source>
         <translation>&amp;Inventer markering</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="590"/>
+        <location filename="../../main-win.ui" line="628"/>
         <source>&amp;Delete</source>
         <translation>&amp;Slet</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="593"/>
+        <location filename="../../main-win.ui" line="631"/>
         <source>Del</source>
         <translation>Slet</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="598"/>
+        <location filename="../../main-win.ui" line="636"/>
         <source>&amp;Rename</source>
         <translation>&amp;Omdøb</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="601"/>
+        <location filename="../../main-win.ui" line="639"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="606"/>
+        <location filename="../../main-win.ui" line="644"/>
         <source>C&amp;lose Tab</source>
         <translation>&amp;Luk faneblad</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="609"/>
+        <location filename="../../main-win.ui" line="647"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="614"/>
+        <location filename="../../main-win.ui" line="652"/>
         <source>File &amp;Properties</source>
         <translation>Fil&amp;egenskaber</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="617"/>
+        <location filename="../../main-win.ui" line="655"/>
         <source>Alt+Return</source>
         <translation>Alt+Enter</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="622"/>
+        <location filename="../../main-win.ui" line="660"/>
         <source>&amp;Folder Properties</source>
         <translation>&amp;Mappeegenskaber</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="651"/>
+        <location filename="../../main-win.ui" line="689"/>
         <source>Edit Bookmarks</source>
         <translation>Rediger bogmærker</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="656"/>
+        <location filename="../../main-win.ui" line="694"/>
         <source>Open &amp;Terminal</source>
         <translation>Åbn &amp;terminal</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="659"/>
+        <location filename="../../main-win.ui" line="697"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="664"/>
+        <location filename="../../main-win.ui" line="702"/>
         <source>Open as &amp;Root</source>
         <translation>Åbn som &amp;rodbruger</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="669"/>
+        <location filename="../../main-win.ui" line="707"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>R&amp;ediger bogmærker</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="681"/>
+        <location filename="../../main-win.ui" line="719"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Skift+N</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="693"/>
+        <location filename="../../main-win.ui" line="731"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="698"/>
+        <location filename="../../main-win.ui" line="736"/>
         <source>&amp;Find Files</source>
         <translation>&amp;FInd filer</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="701"/>
+        <location filename="../../main-win.ui" line="739"/>
         <source>F3</source>
         <translation>F3</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="90"/>
+        <location filename="../../main-win.ui" line="93"/>
         <source>Filter by string...</source>
         <translation>Filtrer efter tekst...</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="117"/>
+        <location filename="../../main-win.ui" line="120"/>
         <source>&amp;File</source>
         <translation>&amp;Fil</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="121"/>
+        <location filename="../../main-win.ui" line="124"/>
         <source>C&amp;reate New</source>
         <translation>Op&amp;ret ny</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="139"/>
+        <location filename="../../main-win.ui" line="142"/>
         <source>&amp;Help</source>
         <translation>&amp;Hjælp</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="145"/>
+        <location filename="../../main-win.ui" line="148"/>
+        <location filename="../../main-win.ui" line="168"/>
         <source>&amp;View</source>
         <translation>&amp;Vis</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="149"/>
+        <location filename="../../main-win.ui" line="152"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Sortering</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="177"/>
+        <location filename="../../main-win.ui" line="202"/>
         <source>&amp;Edit</source>
         <translation>R&amp;ediger</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="192"/>
+        <location filename="../../main-win.ui" line="217"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Bogmærker</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="199"/>
+        <location filename="../../main-win.ui" line="224"/>
         <source>&amp;Go</source>
         <translation>&amp;Gå</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="214"/>
+        <location filename="../../main-win.ui" line="241"/>
         <source>&amp;Tool</source>
         <translation>&amp;Værktøjer</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="231"/>
+        <location filename="../../main-win.ui" line="261"/>
         <source>Main Toolbar</source>
         <translation>Hovedværktøjslinje</translation>
     </message>
@@ -764,99 +879,99 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../../application.cpp" line="165"/>
+        <location filename="../../application.cpp" line="169"/>
         <source>Name of configuration profile</source>
         <translation>Konfigurationsprofilnavn</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="165"/>
+        <location filename="../../application.cpp" line="169"/>
         <source>PROFILE</source>
         <translation>Profil</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="168"/>
+        <location filename="../../application.cpp" line="172"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Kør PCManFM som daemon</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="171"/>
+        <location filename="../../application.cpp" line="175"/>
         <source>Quit PCManFM</source>
         <translation>Afslut PCManFM</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="174"/>
+        <location filename="../../application.cpp" line="178"/>
         <source>Launch desktop manager</source>
         <translation>Kør skrivebordshåndtering</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="177"/>
+        <location filename="../../application.cpp" line="181"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Slå skrivebordshåndtering fra, hvis den kører</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="180"/>
+        <location filename="../../application.cpp" line="184"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Åbn skrivebordsindstillinger på siden med det specifcerede navn</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="180"/>
-        <location filename="../../application.cpp" line="195"/>
+        <location filename="../../application.cpp" line="184"/>
+        <location filename="../../application.cpp" line="199"/>
         <source>NAME</source>
         <translation>Navn</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="183"/>
+        <location filename="../../application.cpp" line="187"/>
         <source>Open new window</source>
         <translation>Åbn nyt vindue</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="186"/>
+        <location filename="../../application.cpp" line="190"/>
         <source>Open Find Files utility</source>
         <translation>Åbn find filer værktøjet</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="189"/>
+        <location filename="../../application.cpp" line="193"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Sæt skrivebordstapet fra billedurl</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="189"/>
+        <location filename="../../application.cpp" line="193"/>
         <source>FILE</source>
         <translation>Fil</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="192"/>
+        <location filename="../../application.cpp" line="196"/>
         <source>MODE</source>
         <translation>tapetype</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="192"/>
+        <location filename="../../application.cpp" line="196"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Sæt typen af tapet til typen=(%1)</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="195"/>
+        <location filename="../../application.cpp" line="199"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Åbn indstillinger på siden med det specificerede navn</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="198"/>
+        <location filename="../../application.cpp" line="202"/>
         <source>Files or directories to open</source>
         <translation>Filer eller mapper at åbne</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="198"/>
+        <location filename="../../application.cpp" line="202"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FIL1,FIL2,...]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="502"/>
-        <location filename="../../application.cpp" line="509"/>
+        <location filename="../../application.cpp" line="518"/>
+        <location filename="../../application.cpp" line="525"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="509"/>
+        <location filename="../../application.cpp" line="525"/>
         <source>Terminal emulator is not set.</source>
         <translation>Termnialemulator er ikke indstillet.</translation>
     </message>
@@ -869,9 +984,42 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <translation>Åbn i filhåndtering</translation>
     </message>
     <message>
-        <location filename="../../autorundialog.cpp" line="133"/>
+        <location filename="../../autorundialog.cpp" line="132"/>
         <source>Removable Disk</source>
         <translation>Flytbar disk</translation>
+    </message>
+</context>
+<context>
+    <name>PCManFM::ConnectServerDialog</name>
+    <message>
+        <location filename="../../connectserverdialog.cpp" line="9"/>
+        <source>SSH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connectserverdialog.cpp" line="10"/>
+        <source>FTP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connectserverdialog.cpp" line="11"/>
+        <source>WebDav</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connectserverdialog.cpp" line="12"/>
+        <source>Secure WebDav</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connectserverdialog.cpp" line="13"/>
+        <source>HTTP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../connectserverdialog.cpp" line="14"/>
+        <source>HTTPS</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -902,7 +1050,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <translation>Gentag billedet til at fylde hele skærmen</translation>
     </message>
     <message>
-        <location filename="../../desktoppreferencesdialog.cpp" line="182"/>
+        <location filename="../../desktoppreferencesdialog.cpp" line="57"/>
+        <source>Zoom the image to fill the entire screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../desktoppreferencesdialog.cpp" line="186"/>
         <source>Image Files</source>
         <translation>Billedfiler</translation>
     </message>
@@ -910,12 +1063,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../../desktopwindow.cpp" line="369"/>
+        <location filename="../../desktopwindow.cpp" line="367"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>K&amp;læb til nuværende position</translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="391"/>
+        <location filename="../../desktopwindow.cpp" line="389"/>
         <source>Desktop Preferences</source>
         <translation>Skrivebordsindstillinger</translation>
     </message>
@@ -923,43 +1076,43 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../../mainwindow.cpp" line="248"/>
+        <location filename="../../mainwindow.cpp" line="262"/>
         <source>Clear text (Ctrl+K)</source>
         <translation>Ryd tekst (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="310"/>
+        <location filename="../../mainwindow.cpp" line="343"/>
         <source>Hide menu bar</source>
         <translation>Skjul menulinje</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="311"/>
+        <location filename="../../mainwindow.cpp" line="344"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Dette vil skjule menulinjen helt. Bruge Ctrl+M for at vise den igen.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="557"/>
+        <location filename="../../mainwindow.cpp" line="626"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1062"/>
+        <location filename="../../mainwindow.cpp" line="1172"/>
         <source>&amp;Move to Trash</source>
         <translation>Smid i &amp;papirkurv</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1062"/>
+        <location filename="../../mainwindow.cpp" line="1172"/>
         <source>&amp;Delete</source>
         <translation>&amp;Slet</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1131"/>
-        <location filename="../../mainwindow.cpp" line="1142"/>
+        <location filename="../../mainwindow.cpp" line="1241"/>
+        <location filename="../../mainwindow.cpp" line="1252"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1142"/>
+        <location filename="../../mainwindow.cpp" line="1252"/>
         <source>Switch user command is not set.</source>
         <translation>Skiftbrugerkommando ikke indstillet.</translation>
     </message>
@@ -990,17 +1143,17 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../../tabpage.cpp" line="256"/>
+        <location filename="../../tabpage.cpp" line="263"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
     <message>
-        <location filename="../../tabpage.cpp" line="269"/>
+        <location filename="../../tabpage.cpp" line="276"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Fri plads: %1 (Totalt: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="284"/>
+        <location filename="../../tabpage.cpp" line="291"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n objekt</numerusform>
@@ -1008,17 +1161,24 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="286"/>
+        <location filename="../../tabpage.cpp" line="293"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform>(%n skjult)</numerusform>
             <numerusform>(%n skjulte)</numerusform>
         </translation>
     </message>
+    <message numerus="yes">
+        <location filename="../../tabpage.cpp" line="451"/>
+        <source>%n item(s) selected</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
     <message>
-        <location filename="../../tabpage.cpp" line="437"/>
         <source>%1 item(s) selected</source>
-        <translation>%1 objekt(er) valgt</translation>
+        <translation type="vanished">%1 objekt(er) valgt</translation>
     </message>
 </context>
 <context>
