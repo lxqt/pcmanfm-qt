@@ -18,17 +18,17 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../about.ui" line="78"/>
@@ -59,7 +59,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -95,42 +95,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>連線到遠端伺服器</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>匿名登入 (&amp;L)</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>以使用者名稱登入 (&amp;U):</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>指定要連線的遠端目錄</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>型態:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>連接埠:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>路徑:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>主機:</translation>
     </message>
 </context>
 <context>
@@ -138,7 +138,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="23"/>
@@ -211,12 +211,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="119"/>
         <source>Icons</source>
-        <translation type="unfinished">圖示</translation>
+        <translation>圖示</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="125"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>圖示大小:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="138"/>
@@ -246,39 +246,40 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="225"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>間距</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>項目邊緣留空:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>預設 3 像素</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="241"/>
         <location filename="../../desktop-preferences.ui" line="265"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> 像素</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="254"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>預設 1 像素
+還會額外保留三行文字高度的空間</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="278"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>鎖定</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
@@ -335,17 +336,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="90"/>
         <source>Focus with Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>以 Ctrl+I 取得焦點</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="178"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>工具列(&amp;T)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="185"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>路徑工具列 (&amp;B)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="290"/>
@@ -470,32 +471,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="529"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>以檔案名稱( &amp;B)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="537"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>以最後修改時間 (&amp;M)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="545"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>以檔案型態 (&amp;T)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="553"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>以擁有者 (&amp;O)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="561"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>資料夾優先 (&amp;F)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="569"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>保存這個目錄的排序設定</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="644"/>
@@ -515,103 +516,103 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="668"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>區分大小寫 (&amp;C)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="676"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>依照檔案大小 (&amp;S)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="681"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>關閉視窗 (&amp;C)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="684"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="719"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="731"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="747"/>
         <source>&amp;Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>過濾 (&amp;F)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="750"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="759"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>關閉前一個分頁 &amp;P)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="768"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>關閉下一個分頁 (&amp;N)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="807"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>保存這個目錄的設定</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="812"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>連線到伺服器 (&amp;S)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="820"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>位置 (&amp;L)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="828"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>路徑按鈕 (&amp;P)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="773"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>關閉其他分頁 (&amp;O)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="781"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>選單列 (&amp;M)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="784"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>選單列</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="787"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="796"/>
         <location filename="../../main-win.ui" line="799"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>選單</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="124"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>新建 (&amp;R)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="152"/>
@@ -621,7 +622,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="261"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>主要工具列</translation>
     </message>
     <message>
         <source>Icon View</source>
@@ -646,7 +647,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="468"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="477"/>
@@ -656,7 +657,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="480"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="489"/>
@@ -666,7 +667,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="492"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="497"/>
@@ -747,7 +748,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="584"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="593"/>
@@ -777,7 +778,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="614"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Invert Selection</source>
@@ -790,7 +791,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="631"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Rename</source>
@@ -799,7 +800,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="639"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -808,7 +809,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="647"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>File Properties</source>
@@ -817,7 +818,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="655"/>
         <source>Alt+Return</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Folder Properties</source>
@@ -848,7 +849,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="697"/>
         <source>F4</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="702"/>
@@ -863,27 +864,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="716"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="728"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="736"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="739"/>
         <source>F3</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="93"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="120"/>
@@ -931,7 +932,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../application.cpp" line="169"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="169"/>
@@ -1044,32 +1045,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1102,7 +1103,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>縮放影像填滿整個螢幕</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="186"/>
@@ -1133,12 +1134,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="343"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>隱藏選單列</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="344"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>選單列將完全被隱藏，使用 Ctrl+M 可再次顯示。</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="626"/>
@@ -1185,7 +1186,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferencesdialog.cpp" line="190"/>
         <source>Compact View</source>
-        <translation type="unfinished">簡易檢視</translation>
+        <translation>簡易檢視</translation>
     </message>
     <message>
         <location filename="../../preferencesdialog.cpp" line="191"/>
@@ -1227,8 +1228,8 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="451"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>選取 %n 個項目</numerusform>
         </translation>
     </message>
     <message>
@@ -1315,17 +1316,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>在可移除裝置上直接刪除檔案，而不移到垃圾桶</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>將檔案移到垃圾桶前先確認</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="193"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>開啟可執行檔案時不要提問</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="220"/>
@@ -1400,7 +1401,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="100"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation type="unfinished"></translation>
+        <translation>滑鼠單擊模式下自動選取的時間延遲 (0 表示關閉)</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="107"/>
@@ -1431,19 +1432,19 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../preferences.ui" line="249"/>
         <location filename="../../preferences.ui" line="259"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>由圖示檢視使用</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="266"/>
         <location filename="../../preferences.ui" line="276"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>由簡易檢視和詳細清單列表使用</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="283"/>
         <location filename="../../preferences.ui" line="293"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>縮圖檢視使用</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="313"/>
@@ -1453,12 +1454,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="326"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>將備份檔案視為隱藏檔</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="336"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>總是顯示完整檔案名稱</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="346"/>
@@ -1468,71 +1469,71 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="369"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>圖示檢視項目邊緣留空</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="376"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>預設 3 像素</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="379"/>
         <location filename="../../preferences.ui" line="403"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> 像素 </translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="392"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="399"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="416"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>鎖定</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="465"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>若取消，分頁工具列只會在有多於一個分頁的時候顯示</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="476"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="480"/>
         <source>Fullwidth tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>完整寬度的分頁工具列</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="532"/>
         <source>Show in places</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="539"/>
         <source>Home</source>
-        <translation type="unfinished">家目錄</translation>
+        <translation>家目錄</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="552"/>
         <source>Desktop</source>
-        <translation type="unfinished">桌面</translation>
+        <translation>桌面</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="565"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="578"/>
@@ -1542,22 +1543,22 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="591"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>應用程式</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="599"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>裝置</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="607"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>網路</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="673"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>需要 ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="676"/>
@@ -1572,17 +1573,17 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="842"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>選單中只顯示使用者定義的範本</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="849"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>每個 MIME 型態只顯示一個範本</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="856"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>建立檔案範本之後執行預設程式開啟</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="666"/>
@@ -1597,27 +1598,27 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="656"/>
         <source> KB</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="733"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">當卸載可移除裝置時:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="789"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished">切換使用者的指令:</translation>
+        <translation>切換使用者的指令:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="813"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished">壓縮程式整合:</translation>
+        <translation>壓縮程式整合:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="782"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished">終端機模擬器:</translation>
+        <translation>終端機模擬器:</translation>
     </message>
     <message>
         <source>Do not generate thumbnails for files exceeding this size (KB):</source>
@@ -1646,12 +1647,12 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="739"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>關閉顯示可移除裝置的分頁</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="746"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>將分頁內容改為家目錄</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="773"/>
