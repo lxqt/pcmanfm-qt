@@ -235,6 +235,30 @@ public:
     wallpaper_ = wallpaper;
   }
 
+  QString wallpaperDir() const {
+    return wallpaperDir_;
+  }
+
+  void setWallpaperDir(QString dir) {
+    wallpaperDir_ = dir;
+  }
+
+  int slideShowInterval() const {
+    return slideShowInterval_;
+  }
+
+  void setSlideShowInterval(int interval) {
+    slideShowInterval_ = interval;
+  }
+
+  bool wallpaperRandomize() const {
+    return wallpaperRandomize_;
+  }
+
+  void setWallpaperRandomize(bool randomize) {
+    wallpaperRandomize_ = randomize;
+  }
+
   const QColor& desktopBgColor() const {
     return desktopBgColor_;
   }
@@ -766,6 +790,9 @@ private:
 
   int wallpaperMode_;
   QString wallpaper_;
+  QString wallpaperDir_;
+  int slideShowInterval_;
+  bool wallpaperRandomize_;
   QColor desktopBgColor_;
   QColor desktopFgColor_;
   QColor desktopShadowColor_;

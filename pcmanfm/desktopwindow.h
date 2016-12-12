@@ -63,9 +63,14 @@ public:
   void setDesktopFolder();
   void setWallpaperFile(QString filename);
   void setWallpaperMode(WallpaperMode mode = WallpaperStretch);
+  void setWallpaperDir(QString dirname);
+  void setSlideShowInterval(int interval);
+  void setWallpaperRandomize(bool randomize);
 
   // void setWallpaperAlpha(qreal alpha);
   void updateWallpaper();
+  bool pickWallpaper();
+  void changeWallpaper();
   void updateFromSettings(Settings& settings);
 
   void queueRelayout(int delay = 0);
@@ -131,6 +136,10 @@ private:
   QColor shadowColor_;
   QString wallpaperFile_;
   WallpaperMode wallpaperMode_;
+  QString wallpaperDir_;
+  int slideShowInterval_;
+  QTimer* wallpaperTimer_;
+  bool wallpaperRandomize_;
   QPixmap wallpaperPixmap_;
   DesktopItemDelegate* delegate_;
   Launcher fileLauncher_;

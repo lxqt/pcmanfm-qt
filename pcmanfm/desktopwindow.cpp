@@ -30,6 +30,7 @@
 #include <QLayout>
 #include <QDebug>
 #include <QTimer>
+#include <QTime>
 #include <QSettings>
 #include <QStringBuilder>
 #include <QDir>
@@ -63,6 +64,9 @@ DesktopWindow::DesktopWindow(int screenNum):
   proxyModel_(NULL),
   model_(NULL),
   wallpaperMode_(WallpaperNone),
+  slideShowInterval_(0),
+  wallpaperTimer_(NULL),
+  wallpaperRandomize_(false),
   fileLauncher_(NULL),
   showWmMenu_(false),
   screenNum_(screenNum),
@@ -155,6 +159,9 @@ DesktopWindow::~DesktopWindow() {
   if(relayoutTimer_)
     delete relayoutTimer_;
 
+  if(wallpaperTimer_)
+    delete wallpaperTimer_;
+
   if(proxyModel_)
     delete proxyModel_;
 
@@ -210,6 +217,18 @@ void DesktopWindow::setWallpaperFile(QString filename) {
 
 void DesktopWindow::setWallpaperMode(WallpaperMode mode) {
   wallpaperMode_ = mode;
+}
+
+void DesktopWindow::setWallpaperDir(QString dirname) {
+  wallpaperDir_ = dirname;
+}
+
+void DesktopWindow::setSlideShowInterval(int interval) {
+  slideShowInterval_ = qMax(interval, 0);
+}
+
+void DesktopWindow::setWallpaperRandomize(bool randomize) {
+  wallpaperRandomize_ = randomize;
 }
 
 QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
@@ -339,10 +358,66 @@ void DesktopWindow::updateWallpaper() {
   setPalette(palette);
 }
 
+bool DesktopWindow::pickWallpaper() {
+  if(slideShowInterval_ < 5 * 60000
+     || !QFileInfo(wallpaperDir_).isDir()) {
+    return false;
+  }
+
+  QList<QByteArray> formats = QImageReader::supportedImageFormats();
+  QStringList formatsFilters;
+  for (const QByteArray& format: formats)
+    formatsFilters << QString("*.") + format;
+  QDir dir(wallpaperDir_);
+  QStringList files = dir.entryList(formatsFilters,
+                                    QDir::Files | QDir::NoDotAndDotDot,
+                                    QDir::Name);
+  if(!files.isEmpty()) {
+     QString oldWallpaperFile = wallpaperFile_;
+     if(!wallpaperRandomize_) {
+       bool found = false;
+       for(int i = 0; i < files.size(); ++i) {
+         if(wallpaperFile_ == wallpaperDir_ + "/" + files.at(i)) {
+           wallpaperFile_ = wallpaperDir_ + "/" + (i + 1 < files.size()
+                                                   ? files.at(i+1) : files.at(0));
+           found = true;
+           break;
+         }
+       }
+       if(!found)
+         wallpaperFile_ = wallpaperDir_ + "/" + files.first();
+     }
+     else {
+       if(files.size() > 1) {
+         files.removeOne(wallpaperFile_);
+         // this is needed for the randomness, especially when choosing the first wallpaper
+         qsrand((uint)QTime::currentTime().msec());
+         int randomValue = qrand() % files.size();
+         wallpaperFile_ = wallpaperDir_ + "/" + files.at(randomValue);
+       }
+       else
+         wallpaperFile_ = wallpaperDir_ + "/" + files.first();
+     }
+
+     if (wallpaperFile_ != oldWallpaperFile)
+       return true;
+  }
+
+  return false;
+}
+
+void DesktopWindow::changeWallpaper() {
+  if(pickWallpaper())
+    updateWallpaper();
+}
+
 void DesktopWindow::updateFromSettings(Settings& settings) {
   setDesktopFolder();
   setWallpaperFile(settings.wallpaper());
   setWallpaperMode(settings.wallpaperMode());
+  setWallpaperDir(settings.wallpaperDir());
+  setSlideShowInterval(settings.slideShowInterval());
+  setWallpaperRandomize(settings.wallpaperRandomize());
   setFont(settings.desktopFont());
   setIconSize(Fm::FolderView::IconMode, QSize(settings.desktopIconSize(), settings.desktopIconSize()));
   setMargins(settings.desktopCellMargins());
@@ -352,8 +427,27 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
   setBackground(settings.desktopBgColor());
   setShadow(settings.desktopShadowColor());
   showWmMenu_ = settings.showWmMenu();
+
+  if(slideShowInterval_ >= 5 * 60000 // no slide show with less than 5min
+     && QFileInfo(wallpaperDir_).isDir()) {
+    pickWallpaper();
+    if(!wallpaperTimer_) {
+      wallpaperTimer_ = new QTimer();
+      connect(wallpaperTimer_, &QTimer::timeout, this, &DesktopWindow::changeWallpaper);
+    }
+    else
+      wallpaperTimer_->stop(); // restart the timer after updating wallpaper
+  }
+  else if(wallpaperTimer_) {
+    delete wallpaperTimer_;
+    wallpaperTimer_ = NULL;
+  }
+
   updateWallpaper();
   update();
+
+  if(wallpaperTimer_)
+    wallpaperTimer_->start(slideShowInterval_);
 }
 
 void DesktopWindow::onFileClicked(int type, FmFileInfo* fileInfo) {
