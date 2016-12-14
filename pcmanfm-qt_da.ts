@@ -9,13 +9,9 @@
         <translation>Om</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
         <location filename="../../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="48"/>
@@ -54,48 +50,28 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt filhåndtering
+
+Ophavsret (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Dette program er fri software. Du kan redistribuere og/eller
+modificere det under de betingelserne som er angivet i GNU General
+Public License, som er udgivet af Free Software Foundation. Enten
+version 2 af licensen eller (efter eget valg) enhver senere version.
+
+Dette program distribueres i håb om at det vil vise sig nyttigt, men
+UDEN NOGEN FORM FOR GARANTI, uden selv de underforståede garantier
+omkring SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere
+detaljer kan læses i GNU General Public License.
+
+Du skulle have modtaget en kopi af GNU General Public License sammen
+med dette program. Hvis ikke, så skriv til Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="78"/>
         <source>Authors</source>
         <translation>Forfattere</translation>
-    </message>
-    <message>
-        <source>PCMan File Manager
-
-Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="vanished">PCMan File Manager
-
-Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="100"/>
@@ -136,42 +112,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Opret forbindelse til fjern-server</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Anonymt &amp;login</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>Log ind som &amp;bruger:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Specificér fjern-mappe som der skal oprettes forbindelse til</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Type:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Port:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sti:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vært:</translation>
     </message>
 </context>
 <context>
@@ -212,7 +188,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>Skrivebordsindstillinger</translation>
+        <translation>Skrivebordsipræferencer</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="30"/>
@@ -325,12 +301,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
         <source>Window Manager</source>
-        <translation>Vindueshåndtering</translation>
+        <translation>Window Manager</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="327"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Vis vindueshåndteringens menuer når man klikker på skrivebordet</translation>
+        <translation>Vis menuer fra window managerne når der klikkes på skrivebordet</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="315"/>
@@ -353,12 +329,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="178"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Værktøjslinjer</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="185"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Sti&amp;linje</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="290"/>
@@ -458,7 +434,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="414"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation>&amp;Tilføj til bogmærker</translation>
+        <translation>&amp;Føj til bogmærker</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="419"/>
@@ -518,7 +494,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="492"/>
         <source>Ctrl+V</source>
-        <translation></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="497"/>
@@ -533,7 +509,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="505"/>
         <source>Pr&amp;eferences</source>
-        <translation>Ind&amp;stillinger</translation>
+        <translation>præf&amp;erencer</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="513"/>
@@ -558,7 +534,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="545"/>
         <source>By File &amp;Type</source>
-        <translation>Efter fi&amp;type</translation>
+        <translation>Efter fil&amp;type</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="553"/>
@@ -573,7 +549,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="569"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bevar sortering for denne mappe</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="668"/>
@@ -618,40 +594,32 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="759"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Luk &amp;forrige faneblade</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="768"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Luk &amp;næste faneblade</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="807"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bevar indstillinger for denne mappe</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="812"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Opret forbindelse til &amp;server</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="820"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Placering</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="828"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Close &amp;left tabs</source>
-        <translation type="vanished">Luk &amp;venstre faneblade</translation>
-    </message>
-    <message>
-        <source>Close &amp;right tabs</source>
-        <translation type="vanished">Luk &amp;højre faneblade</translation>
+        <translation>&amp;Sti-knapper</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="773"/>
@@ -661,7 +629,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="781"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Menulinje</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="784"/>
@@ -792,7 +760,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="702"/>
         <source>Open as &amp;Root</source>
-        <translation>Åbn som &amp;rodbruger</translation>
+        <translation>Åbn som &amp;root</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="707"/>
@@ -822,7 +790,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="93"/>
         <source>Filter by string...</source>
-        <translation>Filtrer efter tekst...</translation>
+        <translation>Filtrér efter tekst...</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="120"/>
@@ -911,7 +879,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="184"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Åbn skrivebordsindstillinger på siden med det specifcerede navn</translation>
+        <translation>Åbn skrivebordspræferencer på siden med det specifcerede navn</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="184"/>
@@ -952,7 +920,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="199"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Åbn indstillinger på siden med det specificerede navn</translation>
+        <translation>Åbn præferencer på siden med det specificerede navn</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="202"/>
@@ -994,32 +962,32 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>Sikker WebDav</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1052,7 +1020,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Zomm billedet så det fylder hele skærmen</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="186"/>
@@ -1070,7 +1038,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../desktopwindow.cpp" line="389"/>
         <source>Desktop Preferences</source>
-        <translation>Skrivebordsindstillinger</translation>
+        <translation>Skrivebordspræferencer</translation>
     </message>
 </context>
 <context>
@@ -1171,14 +1139,10 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="451"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n objekt valgt</numerusform>
+            <numerusform>%n objekter valgt</numerusform>
         </translation>
-    </message>
-    <message>
-        <source>%1 item(s) selected</source>
-        <translation type="vanished">%1 objekt(er) valgt</translation>
     </message>
 </context>
 <context>
@@ -1204,7 +1168,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Indstillinger</translation>
+        <translation>Præferencer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="45"/>
