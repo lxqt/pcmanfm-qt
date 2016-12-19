@@ -554,7 +554,10 @@ void Application::setWallpaper(QString path, QString modeString) {
   // convert mode string to value
   for(std::size_t i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
     if(modeString == valid_wallpaper_modes[i]) {
-      mode = (DesktopWindow::WallpaperMode)i;
+      // We don't take safety checks because valid_wallpaper_modes[] is
+      // defined in this function and we can clearly see that it does not
+      // overflow.
+      mode = static_cast<DesktopWindow::WallpaperMode>(i);
       if(mode != settings_.wallpaperMode())
         changed = true;
       break;
