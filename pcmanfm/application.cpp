@@ -552,7 +552,7 @@ void Application::setWallpaper(QString path, QString modeString) {
     }
   }
   // convert mode string to value
-  for(int i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
+  for(std::size_t i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
     if(modeString == valid_wallpaper_modes[i]) {
       mode = (DesktopWindow::WallpaperMode)i;
       if(mode != settings_.wallpaperMode())
