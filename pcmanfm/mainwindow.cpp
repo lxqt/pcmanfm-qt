@@ -370,7 +370,11 @@ void MainWindow::onPathEntryEdited(const QString& text) {
 }
 
 void MainWindow::onPathBarChdir(FmPath* dirPath) {
-  chdir(dirPath);
+  // call chdir() only when needed because otherwise
+  // filter bar will be cleard on changing current tab
+  TabPage* page = currentPage();
+  if(page && dirPath != page->path())
+    chdir(dirPath);
 }
 
 void MainWindow::onPathBarMiddleClickChdir(FmPath* dirPath) {
