@@ -84,7 +84,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
   ui.imageFile->setText(settings.wallpaper());
 
-  for(int i = 0; i < G_N_ELEMENTS(iconSizes); ++i) {
+  for(std::size_t i = 0; i < G_N_ELEMENTS(iconSizes); ++i) {
     int size = iconSizes[i];
     ui.iconSize->addItem(QString("%1 x %1").arg(size), size);
     if(settings.desktopIconSize() == size)
