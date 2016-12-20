@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="tr_TR">
+<TS version="2.1" language="tr">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -15,7 +15,7 @@
     <message>
         <location filename="../../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="48"/>
@@ -54,12 +54,29 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt Dosya Yöneticisi
+
+Telif Hakkı (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Bu program ücretsiz bir yazılımdır; bunu dağıtabilir veya
+GNU Genel Kamu Lisansı kapsamında değiştirebilirsiniz
+Özgür Yazılım Vakfı lisansı altında yada
+benzeri başka bir lisans altında bir sürüm çatallayabilirsiniz.
+
+Bu program faydalı olacağı amacıyla geliştirilmiştir,
+fakat size hiçbir kullanım garantisi vermez.
+Belirli bir amaca katkı vermek için kamu yararına geliştirildi.
+Daha fazla bilgi edinmek için GNU Genel Kamu Lisansını inceleyin.
+
+Bu program ile birlikte GNU Genel Kamu Lisansını 
+kabul etmiş varsayılırsınız.
+VAKIF, Inc., 51 Franklin Caddesi, Beşinci Kat, Boston, MA  02110-1301, ABD.
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="78"/>
         <source>Authors</source>
-        <translation>Sahiplik</translation>
+        <translation>Yazarlar</translation>
     </message>
     <message>
         <source>PCMan File Manager
@@ -157,7 +174,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tür:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="79"/>
@@ -213,7 +230,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>Masaüstü Seçenekleri</translation>
+        <translation>Masaüstü Tercihleri</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="30"/>
@@ -223,27 +240,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="52"/>
         <source>Wallpaper mode:</source>
-        <translation>Duvarkağıdı yerleşim biçimi:</translation>
+        <translation>Duvarkağıdı kipi:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="65"/>
         <source>Wallpaper image file:</source>
-        <translation>Duvarkağıdı:</translation>
+        <translation>Duvar kağıdı resim dosyası:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="85"/>
         <source>Select background color:</source>
-        <translation>Duvarkağıdı olarak arkaplan rengi seç:</translation>
+        <translation>Arkaplan rengi seç:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="94"/>
         <source>Image file</source>
-        <translation>Görsel dosyası</translation>
+        <translation>Resim dosyası</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="100"/>
         <source>Image file path</source>
-        <translation>Görsel dosyası yolu</translation>
+        <translation>Resim dosya yolu</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="107"/>
@@ -253,32 +270,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="119"/>
         <source>Icons</source>
-        <translation type="unfinished">Simgeler</translation>
+        <translation>Simgeler</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="125"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Simge boyutu:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="138"/>
         <source>Label Text</source>
-        <translation>Metin Etiketi</translation>
+        <translation>Etiket Metni</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="176"/>
         <source>Select  text color:</source>
-        <translation>Metin için renk seç:</translation>
+        <translation>Metin rengi seç:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="189"/>
         <source>Select shadow color:</source>
-        <translation>Metin gölgesi için renk seç:</translation>
+        <translation>Gölge rengi seç:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="202"/>
         <source>Select font:</source>
-        <translation>Font biçimini seç:</translation>
+        <translation>Yazıtipi seç:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="24"/>
@@ -288,7 +305,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="225"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Boşluk</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="231"/>
@@ -298,7 +315,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Öntanımlı olarak 3 px.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="241"/>
@@ -330,7 +347,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../desktop-preferences.ui" line="327"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Masaüstüne sağ tıklandığında Lxqt Uygulama Menüsünü göster</translation>
+        <translation>Masaüstüne tıklandığında pencere yöneticisinin sağladığı simgeleri göster</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="315"/>
@@ -348,17 +365,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="90"/>
         <source>Focus with Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I ile odaklanır</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="178"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>Araç &amp;Çubukları</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="185"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Yol &amp;Çubuğu</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="290"/>
@@ -428,7 +445,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="370"/>
         <source>Show &amp;Hidden</source>
-        <translation>Göster &amp;Gizle</translation>
+        <translation>&amp;Gizli Dosyaları Göster</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="373"/>
@@ -478,12 +495,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="440"/>
         <source>&amp;Compact View</source>
-        <translation>&amp;Kompakt Görünüm</translation>
+        <translation>&amp;Sıkışık Görünüm</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="448"/>
         <source>&amp;Detailed List</source>
-        <translation>&amp;Detaylı Liste</translation>
+        <translation>&amp;Ayrıntılı Liste</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="456"/>
@@ -568,12 +585,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="561"/>
         <source>&amp;Folder First</source>
-        <translation>&amp;Önce Klasörler</translation>
+        <translation>&amp;Önce Dizin</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="569"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu dizinin sıralamasını &amp;koru</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="668"/>
@@ -593,12 +610,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="684"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="716"/>
         <source>&amp;Folder</source>
-        <translation>&amp;Klasör</translation>
+        <translation>&amp;Dizin</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="728"/>
@@ -608,68 +625,68 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="747"/>
         <source>&amp;Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtre</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="750"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="759"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Önceki sekmeleri kapat</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="768"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>So&amp;nraki sekmeleri kapat</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="807"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu Dizinin Ayarlarını &amp;Koru</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="812"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sunucuya Bağlan</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="820"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Konum</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="828"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Yol Düğmeleri</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="773"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Diğer sekmeleri kapat</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="781"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Menü çubuğu</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="784"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Menü çubuğu</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="787"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="796"/>
         <location filename="../../main-win.ui" line="799"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Menü</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="578"/>
@@ -719,7 +736,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="619"/>
         <source>&amp;Invert Selection</source>
-        <translation>&amp;Tersini Seç</translation>
+        <translation>Seçimi &amp;Tersine Çevir</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="628"/>
@@ -734,7 +751,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="636"/>
         <source>&amp;Rename</source>
-        <translation>&amp;Adını değiştir</translation>
+        <translation>&amp;Yeniden Adlandır</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="639"/>
@@ -764,7 +781,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="660"/>
         <source>&amp;Folder Properties</source>
-        <translation>&amp;Klasör Özellikleri</translation>
+        <translation>&amp;Dizin Özellikleri</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="689"/>
@@ -869,7 +886,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="261"/>
         <source>Main Toolbar</source>
-        <translation>Araç Çubuğu</translation>
+        <translation>Ana Araç Çubuğu</translation>
     </message>
 </context>
 <context>
@@ -887,12 +904,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../application.cpp" line="172"/>
         <source>Run PCManFM as a daemon</source>
-        <translation>Daemon olarak PCManFM çalıştırın</translation>
+        <translation>PCManFM&apos;i arkaplanda çalıştır</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="175"/>
         <source>Quit PCManFM</source>
-        <translation>PCManFM den Çık</translation>
+        <translation>PCManFM&apos;den Çık</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="178"/>
@@ -902,7 +919,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../application.cpp" line="181"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>Eğer masaüstü yönetici çalışıyorsa kapat</translation>
+        <translation>Eğer çalışıyorsa masaüstü yöneticisini durdur</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="184"/>
@@ -1032,7 +1049,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>Tüm ekranı kaplayacak şekilde uzat</translation>
+        <translation>Tüm ekranı kaplayacak şekilde ger</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="54"/>
@@ -1057,7 +1074,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="186"/>
         <source>Image Files</source>
-        <translation>Görsel Dosyası</translation>
+        <translation>Resim Dosyaları</translation>
     </message>
 </context>
 <context>
@@ -1083,7 +1100,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="343"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Menü çubuğunu gizle</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="344"/>
@@ -1098,7 +1115,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="1172"/>
         <source>&amp;Move to Trash</source>
-        <translation>&amp;Çöpe Taşı</translation>
+        <translation>&amp;Çöp Kutusuna Taşı</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="1172"/>
@@ -1114,7 +1131,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="1252"/>
         <source>Switch user command is not set.</source>
-        <translation>Kullanıcı değişitirme-komutu ayarlı değil.</translation>
+        <translation>Kullanıcı değiştirme komutu atanmamış.</translation>
     </message>
 </context>
 <context>
@@ -1131,7 +1148,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferencesdialog.cpp" line="190"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>Sıkışık Görünüm</translation>
     </message>
     <message>
         <location filename="../../preferencesdialog.cpp" line="191"/>
