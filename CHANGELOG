@@ -1,7 +1,40 @@
 
-pcmanfm-qt-0.11.1 / 2016-09-24
+pcmanfm-qt-0.11.2 / 2016-12-21
 ==============================
 
+  * Use static_cast instead of the C style cast
+  * Fix sign-compare warnings
+  * Prevent wrong clearing of filter-bar with path buttons (#432)
+  * bump patch version (#429)
+  * Add *da.desktop files
+  * Re-layout on Changing Display Name. (#355)
+  * Add Pathbar Separator
+  * New tab on middle clicking a path button
+  * Make dialogue "About" point out it's the Qt version of PCManFM. (#421)
+  * CMake: Drop finding XCB
+  * Avoid code duplication.
+  * Added a wallpaper zooming option
+  * Implement a "Connect to server" dialog for easily mounting remote filesystems. Add new API PCManFM::MainWindow::lastActive() to get last active window.
+  * Use the new button-style path bar by default. Properly handle the editing of button-style path bar.
+  * Add missing ui file.
+  * Move the pcmanfm-qt_pt_BR.ts file to lxqt-l10n repo.
+  * Remove context menu from toolbar and menubar
+  * Support button-style path bar and adjust the layout of the view menu slightly.
+  * Create pcmanfm-qt_fr.desktop
+  * Create pcmanfm-qt-desktop-pref_fr.desktop
+  * Adds Build PROJECT_NAME with Qt version message
+  * Moved LIBFM_DATA_DIR compile definition from libfm-qt
+  * Use target_compile_definitions().
+  * Use the new lxqt-build-tools package
+  * Added very basic .gitattributes
+  * remove "building with cpack" from CMakeLists.txt - not used anymore
+  * Add Catalan translations
+  * Added Brazilian Portuguese Translation (pt_BR)
+
+0.11.1 / 2016-09-24
+===================
+
+  * Release 0.11.1: Add changelog
   * Bump version to 0.11.1 (#399)
   * Extend README.md
   * Ensure the existence of libfm dir.
