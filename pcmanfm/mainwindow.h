@@ -173,6 +173,7 @@ protected Q_SLOTS:
   }
   void focusPathEntry();
   void toggleMenuBar(bool checked);
+  void detachTab();
 
 protected:
   bool event(QEvent* event) override;
@@ -180,6 +181,8 @@ protected:
   void closeTab(int index);
   virtual void resizeEvent(QResizeEvent *event) override;
   virtual void closeEvent(QCloseEvent *event) override;
+  virtual void dragEnterEvent(QDragEnterEvent *event);
+  virtual void dropEvent(QDropEvent *event);
 
 private:
   static void onBookmarksChanged(FmBookmarks* bookmarks_, MainWindow* pThis);
@@ -189,6 +192,8 @@ private:
   void updateStatusBarForCurrentPage();
   void setRTLIcons(bool isRTL);
   void createPathBar(bool usePathButtons);
+  int addTabWithPage(TabPage* page);
+  void dropTab();
 
 private:
   Ui::MainWindow ui;

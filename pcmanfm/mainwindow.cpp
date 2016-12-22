@@ -31,6 +31,7 @@
 #include <QKeySequence>
 #include <QDir>
 #include <QSettings>
+#include <QMimeData>
 #include <QDebug>
 
 #include "tabpage.h"
@@ -114,6 +115,7 @@ MainWindow::MainWindow(Path path):
   connect(ui.tabBar, &QTabBar::tabCloseRequested, this, &MainWindow::onTabBarCloseRequested);
   connect(ui.tabBar, &QTabBar::tabMoved, this, &MainWindow::onTabBarTabMoved);
   connect(ui.tabBar, &QTabBar::customContextMenuRequested, this, &MainWindow::tabContextMenu);
+  connect(ui.tabBar, &TabBar::tabDetached, this, &MainWindow::detachTab);
   connect(ui.stackedWidget, &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
 
   // FIXME: should we make the filter bar a per-view configuration?
@@ -268,14 +270,16 @@ MainWindow::MainWindow(Path path):
     addTab(path);
 
   // size from settings
-  if(settings.rememberWindowSize()) {
-    resize(settings.windowWidth(), settings.windowHeight());
-    if(settings.windowMaximized())
-      setWindowState(windowState() | Qt::WindowMaximized);
+  resize(settings.windowWidth(), settings.windowHeight());
+  if(settings.rememberWindowSize() && settings.windowMaximized()) {
+    setWindowState(windowState() | Qt::WindowMaximized);
   }
 
   if(QApplication::layoutDirection() == Qt::RightToLeft)
     setRTLIcons(true);
+
+  // we want tab dnd
+  setAcceptDrops(true);
 }
 
 MainWindow::~MainWindow() {
@@ -311,27 +315,32 @@ void MainWindow::createPathBar(bool usePathButtons) {
   ui.actionGo->setVisible(!usePathButtons);
 }
 
-// add a new tab
-int MainWindow::addTab(Path path) {
+int MainWindow::addTabWithPage(TabPage* page) {
+  if(page == nullptr)
+    return -1;
+  page->setFileLauncher(&fileLauncher_);
+  int index = ui.stackedWidget->addWidget(page);
+  connect(page, &TabPage::titleChanged, this, &MainWindow::onTabPageTitleChanged);
+  connect(page, &TabPage::statusChanged, this, &MainWindow::onTabPageStatusChanged);
+  connect(page, &TabPage::openDirRequested, this, &MainWindow::onTabPageOpenDirRequested);
+  connect(page, &TabPage::sortFilterChanged, this, &MainWindow::onTabPageSortFilterChanged);
+  connect(page, &TabPage::backwardRequested, this, &MainWindow::on_actionGoBack_triggered);
+  connect(page, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
+
+  ui.tabBar->insertTab(index, page->title());
+
   Settings& settings = static_cast<Application*>(qApp)->settings();
-
-  TabPage* newPage = new TabPage(path, this);
-  newPage->setFileLauncher(&fileLauncher_);
-  int index = ui.stackedWidget->addWidget(newPage);
-  connect(newPage, &TabPage::titleChanged, this, &MainWindow::onTabPageTitleChanged);
-  connect(newPage, &TabPage::statusChanged, this, &MainWindow::onTabPageStatusChanged);
-  connect(newPage, &TabPage::openDirRequested, this, &MainWindow::onTabPageOpenDirRequested);
-  connect(newPage, &TabPage::sortFilterChanged, this, &MainWindow::onTabPageSortFilterChanged);
-  connect(newPage, &TabPage::backwardRequested, this, &MainWindow::on_actionGoBack_triggered);
-  connect(newPage, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
-
-  ui.tabBar->insertTab(index, newPage->title());
-
   if(!settings.alwaysShowTabs()) {
     ui.tabBar->setVisible(ui.tabBar->count() > 1);
   }
 
   return index;
+}
+
+// add a new tab
+int MainWindow::addTab(Path path) {
+  TabPage* newPage = new TabPage(path, this);
+  return addTabWithPage(newPage);
 }
 
 void MainWindow::toggleMenuBar(bool checked) {
@@ -1167,6 +1176,76 @@ void MainWindow::focusPathEntry() {
   else if (pathBar_ != nullptr) { // use button-style path bar
     pathBar_->openEditor();
   }
+}
+
+void MainWindow::dragEnterEvent(QDragEnterEvent *event) {
+  if(event->mimeData()->hasFormat("application/pcmanfm-qt-tab"))
+    event->acceptProposedAction();
+}
+
+void MainWindow::dropEvent(QDropEvent *event) {
+  if(event->mimeData()->hasFormat("application/pcmanfm-qt-tab"))
+    dropTab();
+  event->acceptProposedAction();
+}
+
+void MainWindow::dropTab() {
+  if(lastActive_ == nullptr // impossible
+     || lastActive_ == this) { // don't drop on the same window
+    ui.tabBar->finishMouseMoveEvent();
+    return;
+  }
+
+  // close the tab in the first window and add
+  // its page to a new tab in the second window
+  TabPage* dropPage = lastActive_->currentPage();
+  if(dropPage) {
+    disconnect(dropPage, &TabPage::titleChanged, lastActive_, &MainWindow::onTabPageTitleChanged);
+    disconnect(dropPage, &TabPage::statusChanged, lastActive_, &MainWindow::onTabPageStatusChanged);
+    disconnect(dropPage, &TabPage::openDirRequested, lastActive_, &MainWindow::onTabPageOpenDirRequested);
+    disconnect(dropPage, &TabPage::sortFilterChanged, lastActive_, &MainWindow::onTabPageSortFilterChanged);
+    disconnect(dropPage, &TabPage::backwardRequested, lastActive_, &MainWindow::on_actionGoBack_triggered);
+    disconnect(dropPage, &TabPage::forwardRequested, lastActive_, &MainWindow::on_actionGoForward_triggered);
+
+    // release mouse before tab removal because otherwise, the source tabbar
+    // might not be updated properly with tab reordering during a fast drag-and-drop
+    lastActive_->ui.tabBar->releaseMouse();
+
+    QWidget* page = lastActive_->ui.stackedWidget->currentWidget();
+    lastActive_->ui.stackedWidget->removeWidget(page);
+    int index = addTabWithPage(dropPage);
+    ui.tabBar->setCurrentIndex(index);
+  }
+  else
+    ui.tabBar->finishMouseMoveEvent(); // impossible
+}
+
+void MainWindow::detachTab() {
+  if (ui.stackedWidget->count() == 1) { // don't detach a single tab
+    ui.tabBar->finishMouseMoveEvent();
+    return;
+  }
+
+  // close the tab and move its page to a new window
+  TabPage* dropPage = currentPage();
+  if(dropPage) {
+    disconnect(dropPage, &TabPage::titleChanged, this, &MainWindow::onTabPageTitleChanged);
+    disconnect(dropPage, &TabPage::statusChanged, this, &MainWindow::onTabPageStatusChanged);
+    disconnect(dropPage, &TabPage::openDirRequested, this, &MainWindow::onTabPageOpenDirRequested);
+    disconnect(dropPage, &TabPage::sortFilterChanged, this, &MainWindow::onTabPageSortFilterChanged);
+    disconnect(dropPage, &TabPage::backwardRequested, this, &MainWindow::on_actionGoBack_triggered);
+    disconnect(dropPage, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
+
+    ui.tabBar->releaseMouse(); // as in dropTab()
+
+    QWidget* page = ui.stackedWidget->currentWidget();
+    ui.stackedWidget->removeWidget(page);
+    MainWindow* newWin = new MainWindow();
+    newWin->addTabWithPage(dropPage);
+    newWin->show();
+  }
+  else
+    ui.tabBar->finishMouseMoveEvent(); // impossible
 }
 
 void MainWindow::updateFromSettings(Settings& settings) {

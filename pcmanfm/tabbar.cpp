@@ -19,13 +19,69 @@
 
 
 #include "tabbar.h"
+#include <QPointer>
 #include <QMouseEvent>
+#include <QApplication>
+#include <QDrag>
+#include <QMimeData>
 
 namespace PCManFM {
 
 TabBar::TabBar(QWidget *parent):
   QTabBar(parent)
 {
+}
+
+void TabBar::mousePressEvent(QMouseEvent *event) {
+  QTabBar::mousePressEvent (event);
+  if(event->button() == Qt::LeftButton
+     && tabAt(event->pos()) > -1) {
+    dragStartPosition_ = event->pos();
+  }
+  dragStarted_ = false;
+}
+
+void TabBar::mouseMoveEvent(QMouseEvent *event)
+{
+  if(!dragStartPosition_.isNull()
+     && (event->pos() - dragStartPosition_).manhattanLength() < QApplication::startDragDistance()) {
+    dragStarted_ = true;
+  }
+
+  if((event->buttons() & Qt::LeftButton)
+     && dragStarted_
+     && !window()->geometry().contains(event->globalPos())) {
+    if(currentIndex() == -1)
+      return;
+
+    QPointer<QDrag> drag = new QDrag(this);
+    QMimeData *mimeData = new QMimeData;
+    mimeData->setData("application/pcmanfm-qt-tab", QByteArray());
+    drag->setMimeData(mimeData);
+    Qt::DropAction dragged = drag->exec();
+    if(dragged == Qt::IgnoreAction) { // a tab is dropped outside all windows
+      if(count() > 1)
+        Q_EMIT tabDetached();
+      else
+        finishMouseMoveEvent();
+      event->accept();
+    }
+    else if(dragged == Qt::MoveAction) // a tab is dropped into another window
+      event->accept();
+    drag->deleteLater();
+  }
+  else
+    QTabBar::mouseMoveEvent(event);
+}
+
+void TabBar::finishMouseMoveEvent() {
+  QMouseEvent finishingEvent(QEvent::MouseMove, QPoint(), Qt::NoButton, Qt::NoButton, Qt::NoModifier);
+  mouseMoveEvent(&finishingEvent);
+}
+
+void TabBar::releaseMouse() {
+  QMouseEvent releasingEvent(QEvent::MouseButtonRelease, QPoint(), Qt::LeftButton, Qt::NoButton, Qt::NoModifier);
+  mouseReleaseEvent(&releasingEvent);
 }
 
 void TabBar::mouseReleaseEvent(QMouseEvent *event) {
@@ -36,6 +92,12 @@ void TabBar::mouseReleaseEvent(QMouseEvent *event) {
     }
   }
   QTabBar::mouseReleaseEvent(event);
+}
+
+// Let the main window receive dragged tabs!
+void TabBar::dragEnterEvent(QDragEnterEvent *event) {
+  if(event->mimeData()->hasFormat("application/pcmanfm-qt-tab"))
+    event->ignore();
 }
 
 }
