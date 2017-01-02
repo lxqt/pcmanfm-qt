@@ -154,22 +154,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzak sunucuya bağlan</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Anonim &amp;giriş</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>K&amp;ullanıcı olarak giriş:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Bağlanılacak uzak dizini belirleyin</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="72"/>
@@ -184,7 +184,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Yol:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="96"/>
@@ -212,7 +212,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation>Görsel dosyası</translation>
+        <translation>Resim dosyası</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="42"/>
@@ -321,12 +321,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../../desktop-preferences.ui" line="241"/>
         <location filename="../../desktop-preferences.ui" line="265"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="254"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="261"/>
@@ -337,7 +337,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../desktop-preferences.ui" line="278"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilitle</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
@@ -360,7 +360,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation>Dosya Yönetici</translation>
+        <translation>Dosya Yöneticisi</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="90"/>
@@ -475,7 +475,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="414"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation>&amp;Yer İmlerine Ekle</translation>
+        <translation>Yer İmlerine &amp;Ekle</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="419"/>
@@ -490,7 +490,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="432"/>
         <source>&amp;Icon View</source>
-        <translation>&amp;Simgeler</translation>
+        <translation>&amp;Simge Görünümü</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="440"/>
@@ -959,12 +959,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../application.cpp" line="196"/>
         <source>MODE</source>
-        <translation>MOD</translation>
+        <translation>KİP</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="196"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Masaüstü duvar kağıdının kipini ayarla. KİP=(%1)</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="199"/>
@@ -1011,32 +1011,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1069,7 +1069,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Remi tüm ekranı dolduracak şekilde ayarla</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="186"/>
@@ -1105,7 +1105,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="344"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu eylem menü çubuğunu tamamen gizleyecektir, tekrar göstermek için Ctrl+M kısayolunu kullanın.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="626"/>
@@ -1190,8 +1190,8 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="451"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n nesne seçildi</numerusform>
         </translation>
     </message>
     <message>
@@ -1288,7 +1288,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="469"/>
         <source>Always show the tab bar</source>
-        <translation>Daima sekme çubuğunu göster</translation>
+        <translation>Sekme çubuğunu daima göster</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="487"/>
@@ -1328,12 +1328,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="107"/>
         <source>Default view mode:</source>
-        <translation>Varsayılan görünüm modu:</translation>
+        <translation>Varsayılan görünüm kipi:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="120"/>
         <source> sec</source>
-        <translation>.san</translation>
+        <translation> sn</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="159"/>
@@ -1368,7 +1368,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="130"/>
         <source>Bookmarks:</source>
-        <translation>Yerimleri:</translation>
+        <translation>Yer İmleri:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="138"/>
@@ -1404,19 +1404,19 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../preferences.ui" line="249"/>
         <location filename="../../preferences.ui" line="259"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="266"/>
         <location filename="../../preferences.ui" line="276"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="283"/>
         <location filename="../../preferences.ui" line="293"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="313"/>
@@ -1441,7 +1441,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="369"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="376"/>
@@ -1452,12 +1452,12 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../preferences.ui" line="379"/>
         <location filename="../../preferences.ui" line="403"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="392"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="399"/>
@@ -1468,24 +1468,26 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="416"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilitle</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="465"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçimi kaldırdığınızda,sekme çubuğu  yalnızca birden fazla sekme var ise görünür</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="476"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçim kaldırırsanız sekme çubuğu sadece dizin
+görümümü üzerinde görünür ve sol panel üzerinde
+görünmez.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="480"/>
         <source>Fullwidth tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Geniş sekme çubuğu</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="532"/>
@@ -1540,7 +1542,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../preferences.ui" line="673"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>ffmpegthumbnailer gerekiyor</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="703"/>
