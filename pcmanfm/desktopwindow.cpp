@@ -26,7 +26,7 @@
 #include <QFile>
 #include <QPixmap>
 #include <QPalette>
-#include <QBrush>
+
 #include <QLayout>
 #include <QDebug>
 #include <QTimer>
@@ -36,6 +36,7 @@
 #include <QShortcut>
 #include <QDropEvent>
 #include <QMimeData>
+#include <QPaintEvent>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -81,6 +82,13 @@ DesktopWindow::DesktopWindow(int screenNum):
   listView_->setResizeMode(QListView::Adjust);
   listView_->setFlow(QListView::TopToBottom);
 
+  // This is to workaround Qt bug 54384 which affects Qt >= 5.6
+  // https://bugreports.qt.io/browse/QTBUG-54384
+  // Setting a QPixmap larger then the screen resolution to the background of a list view won't work.
+  // So we did a hack here: Disable the automatic background painting.
+  // Then paint the background of the list view ourselves by hook into its paint event handling method with a event filter.
+  listView_->viewport()->setAutoFillBackground(false);
+
   // NOTE: When XRnadR is in use, the all screens are actually combined to form a
   // large virtual desktop and only one DesktopWindow needs to be created and screenNum is -1.
   // In some older multihead setups, such as xinerama, every physical screen
@@ -121,6 +129,7 @@ DesktopWindow::DesktopWindow(int screenNum):
   connect(this, &DesktopWindow::openDirRequested, this, &DesktopWindow::onOpenDirRequested);
 
   listView_->installEventFilter(this);
+  listView_->viewport()->installEventFilter(this);
 
   // setup shortcuts
   QShortcut* shortcut;
@@ -150,6 +159,7 @@ DesktopWindow::DesktopWindow(int screenNum):
 }
 
 DesktopWindow::~DesktopWindow() {
+  listView_->viewport()->removeEventFilter(this);
   listView_->removeEventFilter(this);
 
   if(relayoutTimer_)
@@ -285,14 +295,7 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
 
 // really generate the background pixmap according to current settings and apply it.
 void DesktopWindow::updateWallpaper() {
-  // reset the brush
-  // QPalette palette(listView_->palette());
-  QPalette palette(Fm::FolderView::palette());
-
-  if(wallpaperMode_ == WallpaperNone) { // use background color only
-    palette.setBrush(QPalette::Base, bgColor_);
-  }
-  else { // use wallpaper
+  if(wallpaperMode_ != WallpaperNone) {  // use wallpaper
     QPixmap pixmap;
     QImage image;
     if(wallpaperMode_ == WallpaperTile) { // use the original size
@@ -327,16 +330,7 @@ void DesktopWindow::updateWallpaper() {
       }
     }
     wallpaperPixmap_ = pixmap;
-    if(!pixmap.isNull()) {
-      QBrush brush(pixmap);
-      palette.setBrush(QPalette::Base, brush);
-    }
-    else // if the image is not loaded, fallback to use background color only
-      palette.setBrush(QPalette::Base, bgColor_);
   }
-
-  //FIXME: we should set the pixmap to X11 root window?
-  setPalette(palette);
 }
 
 void DesktopWindow::updateFromSettings(Settings& settings) {
@@ -529,6 +523,19 @@ void DesktopWindow::removeBottomGap() {
   setMargins(cellMargins);
   // in case the text shadow is reset to (0,0,0,0)
   setShadow(settings.desktopShadowColor());
+}
+
+void DesktopWindow::paintBackground(QPaintEvent *event) {
+  // This is to workaround Qt bug 54384 which affects Qt >= 5.6
+  // https://bugreports.qt.io/browse/QTBUG-54384
+  // Since Qt does not paint the background of the QListView using the QPixmap we set properly, we do it ourselves.
+  QPainter painter(listView_->viewport()); // the painter paints on the viewport widget, not the QListView.
+  if(wallpaperMode_ == WallpaperNone || wallpaperPixmap_.isNull()) {
+    painter.fillRect(event->rect(), QBrush(bgColor_));
+  }
+  else {
+    painter.drawPixmap(event->rect(), wallpaperPixmap_, event->rect());
+  }
 }
 
 // QListView does item layout in a very inflexible way, so let's do our custom layout again.
@@ -876,6 +883,10 @@ bool DesktopWindow::eventFilter(QObject * watched, QEvent * event) {
   }
   else if(watched == listView_->viewport()) {
     switch(event->type()) {
+	case QEvent::Paint: {
+        paintBackground(static_cast<QPaintEvent*>(event));
+		break;
+	}
     case QEvent::MouseButtonPress:
     case QEvent::MouseButtonRelease:
         if(showWmMenu_) {

@@ -119,6 +119,7 @@ protected Q_SLOTS:
 
 private:
   void removeBottomGap();
+  void paintBackground(QPaintEvent* event);
 
 private:
   Fm::ProxyFolderModel* proxyModel_;
