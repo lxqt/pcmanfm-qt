@@ -1,7 +1,14 @@
 
-pcmanfm-qt-0.11.2 / 2016-12-21
+pcmanfm-qt-0.11.3 / 2017-01-14
 ==============================
 
+  * Add a workaround for the Qt5 bug which causes broken wallpaper background.
+  * Update AUTHORS
+
+0.11.2 / 2016-12-21
+===================
+
+  * Release 0.11.2: Update changelog
   * Use static_cast instead of the C style cast
   * Fix sign-compare warnings
   * Prevent wrong clearing of filter-bar with path buttons (#432)
