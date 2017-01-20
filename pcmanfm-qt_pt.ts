@@ -661,7 +661,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../../main-win.ui" line="807"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation>Manterdefinições para esta &amp;pasta</translation>
+        <translation>Manter definições para esta &amp;pasta</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="812"/>
