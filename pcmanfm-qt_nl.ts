@@ -15,7 +15,7 @@
     <message>
         <location filename="../../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="48"/>
@@ -55,7 +55,22 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>Auteursrecht © 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Dit programma is vrije programmatuur; u kunt het verspreiden en/of 
+aanpassen binnen de voorwaarden van de GNU General Public License 
+zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 
+van die licentie hetzij (naar uw eigen keuze) een nieuwere versie.
+
+Dit programma wordt verspreid in de hoop dat het bruikbaar is, maar 
+ZONDER ENIGE GARANTIE; zelfs zonder de garantie van VERKOOPBAARHEID 
+of BRUIKBAARHEID VOOR EEN BEPAALD DOEL. Zie de GNU General Public 
+License voor meer bijzonderheden.
+
+Een exemplaar van de GNU General Public License heeft u, als het 
+goed is, samen met dit programma gekregen; schrijf anders naar de 
+Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, 
+Boston, MA 02110-1301 USA</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="78"/>
@@ -139,42 +154,42 @@ Boston, MA 02110-1301 USA
     <message>
         <location filename="../../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Verbind met server op afstand</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Anoniem aanmelden</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aanmelden als gebruiker</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Geef map op afstand aan om mee te verbinden</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Soort:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Poort:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pad:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Gastheercomputer:</translation>
     </message>
 </context>
 <context>
@@ -333,7 +348,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../desktop-preferences.ui" line="327"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Toon menu&apos;s aangeboden door vensterbeheerders wanneer op bureaublad wordt geklikt</translation>
+        <translation>Toon menu&apos;s aangeboden door vensterbeheerders wanneer er op bureaublad wordt geklikt</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="315"/>
@@ -356,12 +371,12 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="178"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Werkbalken</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="185"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Padbalk</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="290"/>
@@ -551,7 +566,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="529"/>
         <source>&amp;By File Name</source>
-        <translation>Op bestands&amp;naam</translation>
+        <translation>Op bestandnaam</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="537"/>
@@ -561,7 +576,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="545"/>
         <source>By File &amp;Type</source>
-        <translation>Op bestand&amp;soort</translation>
+        <translation>Op bestandsoort</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="553"/>
@@ -576,7 +591,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="569"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Behoud rangschikking voor deze map</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="668"/>
@@ -586,7 +601,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="676"/>
         <source>By File &amp;Size</source>
-        <translation>Op bestand&amp;grootte</translation>
+        <translation>Op bestandgrootte</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="681"/>
@@ -621,32 +636,32 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="759"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Sluit vorige tabbladen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="768"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Sluit volgende tabbladen</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="807"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Behoud instellingen voor deze map</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="812"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Verbinden met server</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="820"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Locatie</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="828"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Padknoppen</translation>
     </message>
     <message>
         <source>Close &amp;left tabs</source>
@@ -664,7 +679,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="781"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Menubalk</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="784"/>
@@ -935,7 +950,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../application.cpp" line="193"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>Stel (afbeeldings-) BESTAND in als bureaubladachtergrond</translation>
+        <translation>Stel afbeeldingsBESTAND in als bureaubladachtergrond</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="193"/>
@@ -997,32 +1012,32 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>Beveiligde WebDav</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1055,7 +1070,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Vergroot de afbeelding om haar schermvullend te maken</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="186"/>
@@ -1174,9 +1189,9 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="451"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n element(en) gekozen</numerusform>
+            <numerusform>%n element(en) gekozen</numerusform>
         </translation>
     </message>
     <message>
@@ -1333,7 +1348,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Verplaats verwijderde bestanden naar de prullenbak in plaats van ze te wissen van de schijf.</translation>
+        <translation>Verplaats verwijderde bestanden naar de prullenbak in plaats van hen te wissen van de schijf.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="676"/>
@@ -1478,7 +1493,7 @@ werkbalk alleen boven de mapweergave geplaatst en niet boven het linkerpaneel.</
     <message>
         <location filename="../../preferences.ui" line="532"/>
         <source>Show in places</source>
-        <translation>Toon in Locaties</translation>
+        <translation>Toon in locaties</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="539"/>
