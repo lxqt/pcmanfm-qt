@@ -778,7 +778,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
         ui.actionPreserveView->setChecked(tabPage->hasCustomizedView());
 
         // view mode
-        QAction* modeAction = NULL;
+        QAction* modeAction = nullptr;
 
         switch(tabPage->viewMode()) {
         case Fm::FolderView::IconMode:
@@ -798,7 +798,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
             break;
         }
 
-        Q_ASSERT(modeAction != NULL);
+        Q_ASSERT(modeAction != nullptr);
         modeAction->setChecked(true);
 
         // sort menu
@@ -1056,7 +1056,7 @@ void MainWindow::on_actionRename_triggered() {
     TabPage* page = currentPage();
     auto files = page->selectedFiles();
     for(auto& file: files) {
-        Fm::renameFile(file, NULL);
+        Fm::renameFile(file, nullptr);
     }
 }
 
@@ -1234,7 +1234,7 @@ static const char* su_cmd_subst(char opt, gpointer user_data) {
 
 static FmAppCommandParseOption su_cmd_opts[] = {
     { 's', su_cmd_subst },
-    { 0, NULL }
+    { 0, nullptr }
 };
 
 void MainWindow::on_actionOpenAsRoot_triggered() {
@@ -1248,26 +1248,26 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
             // run the su command
             // FIXME: it's better to get the filename of the current process rather than hard-code pcmanfm-qt here.
             QByteArray suCommand = settings.suCommand().toLocal8Bit();
-            char* cmd = NULL;
+            char* cmd = nullptr;
             QByteArray programCommand = app->applicationFilePath().toLocal8Bit();
             programCommand += " %U";
 
             if(fm_app_command_parse(suCommand.constData(), su_cmd_opts, &cmd, gpointer(programCommand.constData())) == 0) {
                 /* no %s found so just append to it */
                 g_free(cmd);
-                cmd = g_strconcat(suCommand.constData(), programCommand.constData(), NULL);
+                cmd = g_strconcat(suCommand.constData(), programCommand.constData(), nullptr);
             }
 
-            Fm2::GAppInfoPtr appInfo{g_app_info_create_from_commandline(cmd, NULL, GAppInfoCreateFlags(0), NULL), false};
+            Fm2::GAppInfoPtr appInfo{g_app_info_create_from_commandline(cmd, nullptr, GAppInfoCreateFlags(0), nullptr), false};
             g_free(cmd);
 
             if(appInfo) {
                 auto cwd = page->path();
                 Fm2::GErrorPtr err;
                 auto uri = cwd.uri();
-                GList* uris = g_list_prepend(NULL, uri.get());
+                GList* uris = g_list_prepend(nullptr, uri.get());
 
-                if(!g_app_info_launch_uris(appInfo.get(), uris, NULL, &err)) {
+                if(!g_app_info_launch_uris(appInfo.get(), uris, nullptr, &err)) {
                     QMessageBox::critical(this, tr("Error"), QString::fromUtf8(err->message));
                 }
 

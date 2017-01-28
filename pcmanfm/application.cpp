@@ -79,8 +79,8 @@ Application::Application(int& argc, char** argv):
     desktopWindows_(),
     preferencesDialog_(),
     editBookmarksialog_(),
-    volumeMonitor_(NULL),
-    userDirsWatcher_(NULL),
+    volumeMonitor_(nullptr),
+    userDirsWatcher_(nullptr),
     lxqtRunning_(false) {
 
     argc_ = argc;
@@ -457,7 +457,7 @@ void Application::onFindFileAccepted() {
     Fm2::GFilePtr gf{uri.toGfile(), false};
     paths.push_back(Fm2::FilePath{gf.get(), true});
     MainWindow* window = MainWindow::lastActive();
-    Launcher(window).launchPaths(NULL, paths);
+    Launcher(window).launchPaths(nullptr, paths);
 }
 
 void Application::onConnectToServerAccepted() {
@@ -466,7 +466,7 @@ void Application::onConnectToServerAccepted() {
     Fm2::FilePathList paths;
     paths.push_back(Fm2::FilePath::fromDisplayName(uri.toUtf8().constData()));
     MainWindow* window = MainWindow::lastActive();
-    Launcher(window).launchPaths(NULL, paths);
+    Launcher(window).launchPaths(nullptr, paths);
 }
 
 void Application::findFiles(QStringList paths) {
@@ -509,11 +509,11 @@ void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) 
        pathList.push_back(std::move(path));
     }
 
-    Launcher(NULL).launchPaths(NULL, pathList);
+    Launcher(nullptr).launchPaths(nullptr, pathList);
 }
 
 void Application::openFolders(Fm2::FileInfoList files) {
-    Launcher(NULL).launchFiles(NULL, std::move(files));
+    Launcher(nullptr).launchFiles(nullptr, std::move(files));
 }
 
 void Application::openFolderInTerminal(Fm2::FilePath path) {
@@ -521,12 +521,12 @@ void Application::openFolderInTerminal(Fm2::FilePath path) {
         auto cwd_str = path.localPath();
         Fm2::GErrorPtr err;
         if(!Fm::Terminal::launch(cwd_str.get(), &err)) {
-            QMessageBox::critical(NULL, tr("Error"), err.message());
+            QMessageBox::critical(nullptr, tr("Error"), err.message());
         }
     }
     else {
         // show an error message and ask the user to set the command
-        QMessageBox::critical(NULL, tr("Error"), tr("Terminal emulator is not set."));
+        QMessageBox::critical(nullptr, tr("Error"), tr("Terminal emulator is not set."));
         preferences("advanced");
     }
 }

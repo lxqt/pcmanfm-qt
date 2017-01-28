@@ -30,7 +30,7 @@ namespace PCManFM {
 AutoRunDialog::AutoRunDialog(GVolume* volume, GMount* mount, QWidget* parent, Qt::WindowFlags f):
   QDialog(parent, f),
   cancellable(g_cancellable_new()),
-  applications(NULL),
+  applications(nullptr),
   mount_(G_MOUNT(g_object_ref(mount))) {
 
   setAttribute(Qt::WA_DeleteOnClose);
@@ -48,7 +48,7 @@ AutoRunDialog::AutoRunDialog(GVolume* volume, GMount* mount, QWidget* parent, Qt
 }
 
 AutoRunDialog::~AutoRunDialog() {
-  g_list_foreach(applications, (GFunc)g_object_unref, NULL);
+  g_list_foreach(applications, (GFunc)g_object_unref, nullptr);
   g_list_free(applications);
 
   if(mount_)
@@ -67,8 +67,8 @@ void AutoRunDialog::accept() {
     void* p = item->data(Qt::UserRole).value<void*>();
     if(p) { // run the selected application
       GAppInfo* app = G_APP_INFO(p);
-      GList* filelist = g_list_prepend(NULL, gf);
-      g_app_info_launch(app, filelist, NULL, NULL);
+      GList* filelist = g_list_prepend(nullptr, gf);
+      g_app_info_launch(app, filelist, nullptr, nullptr);
       g_list_free(filelist);
     }
     else {
@@ -94,11 +94,11 @@ void AutoRunDialog::accept() {
 void AutoRunDialog::onContentTypeFinished(GMount* mount, GAsyncResult* res, AutoRunDialog* pThis) {
   if(pThis->cancellable) {
     g_object_unref(pThis->cancellable);
-    pThis->cancellable = NULL;
+    pThis->cancellable = nullptr;
   }
 
-  char** types = g_mount_guess_content_type_finish(mount, res, NULL);
-  char* desc = NULL;
+  char** types = g_mount_guess_content_type_finish(mount, res, nullptr);
+  char* desc = nullptr;
 
   if(types) {
     if(types[0]) {

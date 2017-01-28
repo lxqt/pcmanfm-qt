@@ -62,13 +62,13 @@ namespace PCManFM {
 
 DesktopWindow::DesktopWindow(int screenNum):
     View(Fm::FolderView::IconMode),
-    proxyModel_(NULL),
-    model_(NULL),
+    proxyModel_(nullptr),
+    model_(nullptr),
     wallpaperMode_(WallpaperNone),
-    fileLauncher_(NULL),
+    fileLauncher_(nullptr),
     showWmMenu_(false),
     screenNum_(screenNum),
-    relayoutTimer_(NULL) {
+    relayoutTimer_(nullptr) {
 
     QDesktopWidget* desktopWidget = QApplication::desktop();
     setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
@@ -576,7 +576,7 @@ void DesktopWindow::relayoutItems() {
     if(relayoutTimer_) {
         // this slot might be called from the timer, so we cannot delete it directly here.
         relayoutTimer_->deleteLater();
-        relayoutTimer_ = NULL;
+        relayoutTimer_ = nullptr;
     }
 
     QDesktopWidget* desktop = qApp->desktop();
@@ -801,7 +801,7 @@ void DesktopWindow::onRenameActivated() {
     auto files = selectedFiles();
     if(!files.empty()) {
         for(auto& info: files) {
-            Fm::renameFile(info, NULL);
+            Fm::renameFile(info, nullptr);
         }
     }
 }
@@ -890,9 +890,9 @@ bool DesktopWindow::event(QEvent* event) {
         if(QX11Info::isPlatformX11() && QX11Info::connection()) {
             xcb_connection_t* con = QX11Info::connection();
             const char* atom_name = "_NET_WM_WINDOW_TYPE_DESKTOP";
-            xcb_atom_t atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(atom_name), atom_name), NULL)->atom;
+            xcb_atom_t atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(atom_name), atom_name), nullptr)->atom;
             const char* prop_atom_name = "_NET_WM_WINDOW_TYPE";
-            xcb_atom_t prop_atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(prop_atom_name), prop_atom_name), NULL)->atom;
+            xcb_atom_t prop_atom = xcb_intern_atom_reply(con, xcb_intern_atom(con, 0, strlen(prop_atom_name), prop_atom_name), nullptr)->atom;
             xcb_atom_t XA_ATOM = 4;
             xcb_change_property(con, XCB_PROP_MODE_REPLACE, effectiveWinId(), prop_atom, XA_ATOM, 32, 1, &atom);
         }

@@ -29,7 +29,7 @@ class MainWindow;
 
 class Launcher : public Fm::FileLauncher {
 public:
-  Launcher(MainWindow* mainWindow = NULL);
+  Launcher(MainWindow* mainWindow = nullptr);
   ~Launcher();
 
 protected:
