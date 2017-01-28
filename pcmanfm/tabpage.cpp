@@ -79,7 +79,7 @@ void ProxyFilter::setVirtHidden(const std::shared_ptr<Fm2::Folder> &folder) {
 
 TabPage::TabPage(Fm2::FilePath path, QWidget* parent):
     QWidget(parent),
-    folderModel_(NULL),
+    folderModel_(nullptr),
     overrideCursor_(false) {
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
@@ -163,7 +163,7 @@ void TabPage::onFolderStartLoading() {
     }
     else
 #endif
-        fm_folder_view_set_model(fv, NULL);
+        fm_folder_view_set_model(fv, nullptr);
 #endif
 }
 
@@ -202,7 +202,7 @@ void TabPage::onFolderFinishLoading() {
      * and create the model again when it's fully loaded.
      * This optimization, however, is not used for FmFolder objects
      * with incremental loading (search://) */
-    if(fm_folder_view_get_model(fv) == NULL) {
+    if(fm_folder_view_get_model(fv) == nullptr) {
         /* create a model for the folder and set it to the view */
         FmFolderModel* model = fm_folder_model_new(folder, app_config->show_hidden);
         fm_folder_view_set_model(fv, model);
@@ -370,9 +370,9 @@ void TabPage::chdir(Fm2::FilePath newPath, bool addHistory) {
 
         // free the previous model
         if(folderModel_) {
-            proxyModel_->setSourceModel(NULL);
+            proxyModel_->setSourceModel(nullptr);
             folderModel_->unref(); // unref the cached model
-            folderModel_ = NULL;
+            folderModel_ = nullptr;
         }
 
         freeFolder();

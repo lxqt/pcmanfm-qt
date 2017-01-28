@@ -117,7 +117,7 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
         }
     }
     else {
-        if(menu->pasteAction()) { // NULL for trash
+        if(menu->pasteAction()) { // nullptr for trash
             menu->pasteAction()->setVisible(false);
         }
         if(menu->createAction()) {

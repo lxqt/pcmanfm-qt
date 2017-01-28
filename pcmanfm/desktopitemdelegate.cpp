@@ -194,7 +194,7 @@ QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QM
   QSize gridSize = view_->gridSize() - 2 * margins_;
   Q_ASSERT(gridSize != QSize());
   QRectF textRect(0, 0, gridSize.width(), gridSize.height() - opt.decorationSize.height());
-  drawText(NULL, opt, textRect); // passing NULL for painter will calculate the bounding rect only.
+  drawText(nullptr, opt, textRect); // passing nullptr for painter will calculate the bounding rect only.
   int width = qMax((int)textRect.width(), opt.decorationSize.width());
   int height = opt.decorationSize.height() + textRect.height();
   return QSize(width, height);

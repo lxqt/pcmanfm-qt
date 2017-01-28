@@ -59,13 +59,13 @@ static void findIconThemesInDir(QHash<QString, QString>& iconThemes, QString dir
   GKeyFile* kf = g_key_file_new();
   Q_FOREACH(QString subDir, subDirs) {
     QString indexFile = dirName % '/' % subDir % "/index.theme";
-    if(g_key_file_load_from_file(kf, indexFile.toLocal8Bit().constData(), GKeyFileFlags(0), NULL)) {
+    if(g_key_file_load_from_file(kf, indexFile.toLocal8Bit().constData(), GKeyFileFlags(0), nullptr)) {
       // FIXME: skip hidden ones
       // icon theme must have this key, so it has icons if it has this key
       // otherwise, it might be a cursor theme or any other kind of theme.
-      if(g_key_file_has_key(kf, "Icon Theme", "Directories", NULL)) {
-        char* dispName = g_key_file_get_locale_string(kf, "Icon Theme", "Name", NULL, NULL);
-        // char* comment = g_key_file_get_locale_string(kf, "Icon Theme", "Comment", NULL, NULL);
+      if(g_key_file_has_key(kf, "Icon Theme", "Directories", nullptr)) {
+        char* dispName = g_key_file_get_locale_string(kf, "Icon Theme", "Name", nullptr, nullptr);
+        // char* comment = g_key_file_get_locale_string(kf, "Icon Theme", "Comment", nullptr, nullptr);
         iconThemes[subDir] = dispName;
         g_free(dispName);
       }
