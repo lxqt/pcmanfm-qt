@@ -23,6 +23,7 @@
 #include <QListWidgetItem>
 #include "application.h"
 #include "mainwindow.h"
+#include <libfm-qt/core/filepath.h>
 
 namespace PCManFM {
 
@@ -74,7 +75,7 @@ void AutoRunDialog::accept() {
       // the default action, open the mounted folder in the file manager
       Application* app = static_cast<Application*>(qApp);
       Settings& settings = app->settings();
-      Fm::Path path = Fm::Path::newForGfile(gf);
+      Fm2::FilePath path{gf, true};
       // open the path in a new window
       // FIXME: or should we open it in a new tab? Make this optional later
       MainWindow* win = new MainWindow(path);
