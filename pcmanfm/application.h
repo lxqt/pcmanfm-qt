@@ -31,6 +31,9 @@
 #include <QTranslator>
 #include <gio/gio.h>
 
+#include <libfm-qt/core/filepath.h>
+#include <libfm-qt/core/fileinfo.h>
+
 class QScreen;
 
 class QFileSystemWatcher;
@@ -86,8 +89,8 @@ public:
   void updateFromSettings();
   void updateDesktopsFromSettings();
 
-  void openFolderInTerminal(Fm::Path path);
-  void openFolders(Fm::FileInfoList files);
+  void openFolderInTerminal(Fm2::FilePath path);
+  void openFolders(Fm2::FileInfoList files);
 
   QString profileName() {
     return profileName_;
