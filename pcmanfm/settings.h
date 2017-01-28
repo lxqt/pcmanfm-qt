@@ -27,7 +27,7 @@
 #include <libfm-qt/foldermodel.h>
 #include "desktopwindow.h"
 #include <libfm-qt/sidepane.h>
-#include <libfm-qt/thumbnailloader.h>
+#include <libfm-qt/core/thumbnailjob.h>
 
 namespace PCManFM {
 
@@ -667,19 +667,19 @@ public:
     }
 
     void setThumbnailLocalFilesOnly(bool value) {
-        Fm::ThumbnailLoader::setLocalFilesOnly(value);
+        Fm2::ThumbnailJob::setLocalFilesOnly(value);
     }
 
-    bool thumbnailLocalFilesOnly() {
-        return Fm::ThumbnailLoader::localFilesOnly();
+    bool thumbnailLocalFilesOnly() const {
+        return Fm2::ThumbnailJob::localFilesOnly();
     }
 
-    int maxThumbnailFileSize() {
-        return Fm::ThumbnailLoader::maxThumbnailFileSize();
+    int maxThumbnailFileSize() const {
+        return Fm2::ThumbnailJob::maxThumbnailFileSize();
     }
 
     void setMaxThumbnailFileSize(int size) {
-        Fm::ThumbnailLoader::setMaxThumbnailFileSize(size);
+        Fm2::ThumbnailJob::setMaxThumbnailFileSize(size);
     }
 
     void setThumbnailIconSize(int thumbnailIconSize) {
