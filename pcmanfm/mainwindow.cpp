@@ -416,8 +416,7 @@ void MainWindow::on_actionGoForward_triggered() {
 }
 
 void MainWindow::on_actionHome_triggered() {
-    auto home = QDir::homePath().toLocal8Bit();
-    chdir(Fm2::FilePath::fromLocalPath(home.constData()));
+    chdir(Fm2::FilePath::homeDir());
 }
 
 void MainWindow::on_actionReload_triggered() {

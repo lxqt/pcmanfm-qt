@@ -492,7 +492,7 @@ void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) 
         QByteArray pathName = it.toLocal8Bit();
         Fm2::FilePath path;
         if(pathName == "~") { // special case for home dir
-            pathName = QDir::homePath().toLocal8Bit();
+            path = Fm2::FilePath::homeDir();
         }
         if(pathName[0] == '/') { // absolute path
             path = Fm2::FilePath::fromLocalPath(pathName.constData());
