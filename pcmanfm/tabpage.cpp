@@ -314,8 +314,7 @@ void TabPage::onFolderRemoved() {
         QTimer::singleShot(0, this, SLOT(deleteLater()));
     }
     else {
-        auto home = Fm2::FilePath::fromLocalPath(QDir::homePath().toLocal8Bit().constData());
-        chdir(home);
+        chdir(Fm2::FilePath::homeDir());
     }
 }
 
@@ -335,8 +334,7 @@ void TabPage::onFolderUnmount() {
         QTimer::singleShot(0, this, SLOT(deleteLater()));
     }
     else {
-        auto home = Fm2::FilePath::fromLocalPath(QDir::homePath().toLocal8Bit().constData());
-        chdir(home);
+        chdir(Fm2::FilePath::homeDir());
     }
 }
 
