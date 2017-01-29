@@ -45,7 +45,6 @@
 #include <libfm-qt/pathbar.h>
 #include <libfm-qt/path.h>
 #include <libfm-qt/fileinfo.h>
-#include <libfm-qt/folder.h>
 #include "ui_about.h"
 #include "application.h"
 
@@ -491,7 +490,7 @@ void MainWindow::on_actionFolderProperties_triggered() {
     if(page) {
         auto folder = page->folder();
         if(folder) {
-            auto info = folder->getInfo();
+            auto info = folder->info();
             if(info) {
                 Fm::FilePropsDialog::showForFile(info);
             }

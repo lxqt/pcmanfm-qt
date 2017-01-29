@@ -389,7 +389,7 @@ void DesktopWindow::prepareFileMenu(Fm::FileMenu* menu) {
     // select exactly one item
     if(files.size() == 1) {
         auto file = menu->firstFile();
-        if(customItemPos_.find(file->getName()) != customItemPos_.cend()) {
+        if(customItemPos_.find(file->name()) != customItemPos_.cend()) {
             // the file item has a custom position
             action->setChecked(true);
         }
@@ -464,7 +464,7 @@ void DesktopWindow::onDataChanged(const QModelIndex& topLeft, const QModelIndex&
             QModelIndex index = topLeft.sibling(i, 0);
             if(index.isValid() && displayNames_.contains(index)) {
                 auto file = proxyModel_->fileInfoFromIndex(index);
-                if(displayNames_[index] != file->getDispName()) {
+                if(displayNames_[index] != file->displayName()) {
                     relayout = true;
                     break;
                 }
@@ -502,7 +502,7 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
                     && tl.x() >= workArea.x() && tl.y() >= workArea.y()
                     && tl.x() + listView_->gridSize().width() <= workArea.right() + 1 // for historical reasons (-> Qt doc)
                     && tl.y() + listView_->gridSize().height() <= workArea.bottom() + 1) { // as above
-                customItemPos_[file->getName()] = tl;
+                customItemPos_[file->name()] = tl;
                 // qDebug() << "indexMoved:" << name << index << itemRect;
             }
         }
@@ -604,9 +604,9 @@ void DesktopWindow::relayoutItems() {
             auto file = proxyModel_->fileInfoFromIndex(index);
             // remember display names of desktop entries and shortcuts
             if(file->isDesktopEntry() || file->isShortcut()) {
-                displayNames_[index] = file->getDispName();
+                displayNames_[index] = file->displayName();
             }
-            auto name = file->getName();
+            auto name = file->name();
             auto find_it = customItemPos_.find(name);
             if(find_it != customItemPos_.cend()) { // the item has a custom position
                 QPoint customPos = find_it->second;
@@ -734,7 +734,7 @@ void DesktopWindow::onStickToCurrentPos(bool toggled) {
     QModelIndexList indexes = listView_->selectionModel()->selectedIndexes();
     if(!indexes.isEmpty()) {
         auto file = menu->firstFile();
-        auto name = file->getName();
+        auto name = file->name();
         QModelIndex index = indexes.first();
         if(toggled) { // remember to current custom position
             QRect itemRect = listView_->rectForIndex(index);

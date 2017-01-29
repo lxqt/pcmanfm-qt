@@ -39,10 +39,10 @@ Launcher::~Launcher() {
 
 bool Launcher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err) {
     GList* l = folder_infos;
-    Fm::FileInfo fi = FM_FILE_INFO(l->data);
+    FmFileInfo* fi = FM_FILE_INFO(l->data);
     Application* app = static_cast<Application*>(qApp);
     MainWindow* mainWindow = mainWindow_;
-    Fm2::FilePath path{fm_path_to_gfile(fi.getPath()), false};
+    Fm2::FilePath path{fm_path_to_gfile(fm_file_info_get_path(fi)), false};
     if(!mainWindow) {
         mainWindow = new MainWindow(std::move(path));
         mainWindow->resize(app->settings().windowWidth(), app->settings().windowHeight());
@@ -57,7 +57,7 @@ bool Launcher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** 
     l = l->next;
     for(; l; l = l->next) {
         fi = FM_FILE_INFO(l->data);
-        path = Fm2::FilePath{fm_path_to_gfile(fi.getPath()), false};
+        path = Fm2::FilePath{fm_path_to_gfile(fm_file_info_get_path(fi)), false};
         mainWindow->addTab(std::move(path));
     }
     mainWindow->show();
