@@ -43,7 +43,7 @@
 #include <libfm-qt/mountoperation.h>
 #include <libfm-qt/filesearchdialog.h>
 #include <libfm-qt/path.h>
-#include <libfm-qt/terminal.h>
+#include <libfm-qt/core/terminal.h>
 
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
@@ -518,9 +518,9 @@ void Application::openFolders(Fm2::FileInfoList files) {
 
 void Application::openFolderInTerminal(Fm2::FilePath path) {
     if(!settings_.terminal().isEmpty()) {
-        auto cwd_str = path.localPath();
         Fm2::GErrorPtr err;
-        if(!Fm::Terminal::launch(cwd_str.get(), &err)) {
+        auto terminalName = settings_.terminal().toUtf8();
+        if(!Fm2::launchTerminal(terminalName.constData(), path, err)) {
             QMessageBox::critical(nullptr, tr("Error"), err.message());
         }
     }
