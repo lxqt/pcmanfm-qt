@@ -44,7 +44,7 @@ bool ProxyFilter::filterAcceptsRow(const Fm::ProxyFolderModel* model, const std:
     if(!model || !info) {
         return true;
     }
-    QString baseName = QString::fromStdString(info->getName());
+    QString baseName = QString::fromStdString(info->name());
     if(!virtHiddenList_.isEmpty() && !model->showHidden() && virtHiddenList_.contains(baseName)) {
         return false;
     }
@@ -59,7 +59,7 @@ void ProxyFilter::setVirtHidden(const std::shared_ptr<Fm2::Folder> &folder) {
     if(!folder) {
         return;
     }
-    auto path = folder->getPath();
+    auto path = folder->path();
     if(path) {
         auto pathStr = path.localPath();
         if(pathStr) {
@@ -132,7 +132,7 @@ void TabPage::freeFolder() {
     if(folder_) {
         if(folderSettings_.isCustomized()) {
             // save custom view settings for this folder
-            static_cast<Application*>(qApp)->settings().saveFolderSettings(folder_->getPath(), folderSettings_);
+            static_cast<Application*>(qApp)->settings().saveFolderSettings(folder_->path(), folderSettings_);
         }
         disconnect(folder_.get(), nullptr, this, nullptr); // disconnect from all signals
         folder_ = nullptr;
@@ -184,9 +184,9 @@ void TabPage::restoreScrollPos() {
 
 void TabPage::onFolderFinishLoading() {
     // FIXME: is this needed?
-    auto fi = folder_->getInfo();
+    auto fi = folder_->info();
     if(fi) { // if loading of the folder fails, it's possible that we don't have FmFileInfo.
-        Q_EMIT titleChanged(fi->getDispName());
+        Q_EMIT titleChanged(fi->displayName());
     }
 
     folder_->queryFilesystemInfo(); // FIXME: is this needed?
@@ -289,7 +289,7 @@ void TabPage::onFolderFsInfo() {
 QString TabPage::formatStatusText() {
     if(proxyModel_ && folder_) {
         // FIXME: this is very inefficient
-        auto files = folder_->getFiles();
+        auto files = folder_->files();
         int total_files = files.size();
         int shown_files = proxyModel_->rowCount();
         int hidden_files = total_files - shown_files;
@@ -354,12 +354,12 @@ QString TabPage::pathName() {
 void TabPage::chdir(Fm2::FilePath newPath, bool addHistory) {
     if(folder_) {
         // we're already in the specified dir
-        if(newPath == folder_->getPath()) {
+        if(newPath == folder_->path()) {
             return;
         }
 
         // remember the previous folder path that we have browsed.
-        lastFolderPath_ = folder_->getPath();
+        lastFolderPath_ = folder_->path();
 
         if(addHistory) {
             // store current scroll pos in the browse history
@@ -441,13 +441,13 @@ void TabPage::onSelChanged(int numSel) {
                 const char* size_str = fi->getDispSize();
                 if(size_str) {
                     msg = QString("\"%1\" (%2) %3")
-                          .arg(QString::fromUtf8(fi->getDispName()))
+                          .arg(QString::fromUtf8(fi->displayName()))
                           .arg(QString::fromUtf8(size_str))
                           .arg(QString::fromUtf8(fi->getDesc()));
                 }
                 else {
                     msg = QString("\"%1\" %2")
-                          .arg(QString::fromUtf8(fi->getDispName()))
+                          .arg(QString::fromUtf8(fi->displayName()))
                           .arg(QString::fromUtf8(fi->getDesc()));
                 }
                 /* FIXME: should we support statusbar plugins as in the gtk+ version? */

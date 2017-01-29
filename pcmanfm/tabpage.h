@@ -27,7 +27,6 @@
 #include <libfm-qt/browsehistory.h>
 #include "view.h"
 #include <libfm-qt/path.h>
-#include <libfm-qt/folder.h>
 #include <libfm-qt/fileinfo.h>
 #include "settings.h"
 
@@ -114,7 +113,7 @@ public:
     void setShowHidden(bool showHidden);
 
     Fm2::FilePath path() {
-        return folder_ ? folder_->getPath() : Fm2::FilePath();
+        return folder_ ? folder_->path() : Fm2::FilePath();
     }
 
     QString pathName();
