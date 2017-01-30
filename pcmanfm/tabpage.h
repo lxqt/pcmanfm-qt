@@ -228,8 +228,10 @@ private:
 
     void onFolderStartLoading();
     void onFolderFinishLoading();
-    // FIXME: port to new API
-    // FmJobErrorAction onFolderError(GError* err, FmJobErrorSeverity severity);
+
+    // FIXME: this API design is bad and might be removed later
+    void onFolderError(const Fm2::GErrorPtr& err, Fm2::Job::ErrorSeverity severity, Fm2::Job::ErrorAction& response);
+
     void onFolderFsInfo();
     void onFolderRemoved();
     void onFolderUnmount();
