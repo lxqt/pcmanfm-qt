@@ -148,8 +148,7 @@ public:
 
     void reload() {
         if(!folder_) {
-            // FIXME: port to Fm2
-            //proxyFilter_->setVirtHidden(folder_); // reread ".hidden"
+            proxyFilter_->setVirtHidden(folder_); // reread ".hidden"
             folder_->reload();
         }
     }
@@ -220,7 +219,7 @@ Q_SIGNALS:
     void backwardRequested();
 
 protected Q_SLOTS:
-    void onSelChanged(int numSel);
+    void onSelChanged();
     void restoreScrollPos();
 
 private:

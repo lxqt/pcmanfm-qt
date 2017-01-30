@@ -25,6 +25,7 @@
 #include <libfm-qt/proxyfoldermodel.h>
 #include <libfm-qt/cachedfoldermodel.h>
 #include <libfm-qt/fileinfo.h>
+#include <libfm-qt/utilities.h>
 #include <QApplication>
 #include <QCursor>
 #include <QMessageBox>
@@ -426,30 +427,26 @@ void TabPage::invertSelection() {
 }
 
 // when the current selection in the folder view is changed
-void TabPage::onSelChanged(int numSel) {
-#if 0
-    // FIXME: port to the new API.
+void TabPage::onSelChanged() {
     QString msg;
-    if(numSel > 0) {
+    if(folderView_->hasSelection()) {
+        auto files = folderView_->selectedFiles();
+        int numSel = files.size();
         /* FIXME: display total size of all selected files. */
         if(numSel == 1) { /* only one file is selected */
-            auto files = folderView_->selectedFiles();
-            if(!files.empty()) {
-                auto& fi = files.front();
-                const char* size_str = fi->getDispSize();
-                if(size_str) {
-                    msg = QString("\"%1\" (%2) %3")
-                          .arg(QString::fromUtf8(fi->displayName()))
-                          .arg(QString::fromUtf8(size_str))
-                          .arg(QString::fromUtf8(fi->getDesc()));
-                }
-                else {
-                    msg = QString("\"%1\" %2")
-                          .arg(QString::fromUtf8(fi->displayName()))
-                          .arg(QString::fromUtf8(fi->getDesc()));
-                }
-                /* FIXME: should we support statusbar plugins as in the gtk+ version? */
+            auto& fi = files.front();
+            if(!fi->isDir()) {
+                msg = QString("\"%1\" (%2) %3")
+                      .arg(fi->displayName())
+                      .arg(Fm::formatFileSize(fi->size(), fm_config->si_unit)) // FIXME: deprecate fm_config
+                      .arg(fi->mimeType()->desc());
             }
+            else {
+                msg = QString("\"%1\" %2")
+                      .arg(fi->displayName())
+                      .arg(fi->mimeType()->desc());
+            }
+            /* FIXME: should we support statusbar plugins as in the gtk+ version? */
         }
         else {
             goffset sum;
@@ -458,24 +455,17 @@ void TabPage::onSelChanged(int numSel) {
             /* don't count if too many files are selected, that isn't lightweight */
             if(numSel < 1000) {
                 sum = 0;
-                auto files = folderView_->selectedFiles();
-                if(!files.empty()) {
-                    for(l = files.peekHeadLink(); l; l = l->next) {
-                        Fm::FileInfo fi = FM_FILE_INFO(l->data);
-                        if(fi.isDir()) {
-                            /* if we got a directory then we cannot tell it's size
-                            unless we do deep count but we cannot afford it */
-                            sum = -1;
-                            break;
-                        }
-                        sum += fi.getSize();
+                for(auto& fi: files) {
+                    if(fi->isDir()) {
+                        /* if we got a directory then we cannot tell it's size
+                        unless we do deep count but we cannot afford it */
+                        sum = -1;
+                        break;
                     }
+                    sum += fi->size();
                 }
                 if(sum >= 0) {
-                    char size_str[128];
-                    fm_file_size_to_str(size_str, sizeof(size_str), sum,
-                                        fm_config->si_unit);
-                    msg += QString(" (%1)").arg(QString::fromUtf8(size_str));
+                    msg += QString(" (%1)").arg(Fm::formatFileSize(sum, fm_config->si_unit)); // FIXME: deprecate fm_config
                 }
                 /* FIXME: should we support statusbar plugins as in the gtk+ version? */
             }
@@ -485,7 +475,6 @@ void TabPage::onSelChanged(int numSel) {
     }
     statusText_[StatusTextSelectedFiles] = msg;
     Q_EMIT statusChanged(StatusTextSelectedFiles, msg);
-#endif
 }
 
 
