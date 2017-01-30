@@ -234,13 +234,11 @@ void TabPage::onFolderFinishLoading() {
     QTimer::singleShot(10, this, SLOT(restoreScrollPos()));
 }
 
-#if 0
-// FIXME: port to new API
-FmJobErrorAction TabPage::onFolderError(FmFolder* _folder, GError* err, FmJobErrorSeverity severity, TabPage* pThis) {
-    if(err->domain == G_IO_ERROR) {
-        if(err->code == G_IO_ERROR_NOT_MOUNTED && severity < FM_JOB_ERROR_CRITICAL) {
-            FmPath* path = fm_folder_get_path(_folder);
-            MountOperation* op = new MountOperation(pThis);
+void TabPage::onFolderError(const Fm2::GErrorPtr& err, Fm2::Job::ErrorSeverity severity, Fm2::Job::ErrorAction& response) {
+    if(err.domain() == G_IO_ERROR) {
+        if(err.code() == G_IO_ERROR_NOT_MOUNTED && severity < Fm2::Job::ErrorSeverity::CRITICAL) {
+            auto& path = folder_->path();
+            MountOperation* op = new MountOperation(this);
             op->mount(path);
             if(op->wait()) { // blocking event loop, wait for mount operation to finish.
                 // This will reload the folder, which generates a new "start-loading"
@@ -250,11 +248,12 @@ FmJobErrorAction TabPage::onFolderError(FmFolder* _folder, GError* err, FmJobErr
                 // remove busy cursor here since "finish-loading" is not emitted.
                 QApplication::restoreOverrideCursor(); // remove busy cursor
                 overrideCursor_ = false;
-                return FM_JOB_RETRY;
+                response = Fm2::Job::ErrorAction::RETRY;
+                return;
             }
         }
     }
-    if(severity >= FM_JOB_ERROR_MODERATE) {
+    if(severity >= Fm2::Job::ErrorSeverity::MODERATE) {
         /* Only show more severe errors to the users and
           * ignore milder errors. Otherwise too many error
           * message boxes can be annoying.
@@ -263,11 +262,10 @@ FmJobErrorAction TabPage::onFolderError(FmFolder* _folder, GError* err, FmJobErr
           * */
 
         // FIXME: consider replacing this modal dialog with an info bar to improve usability
-        QMessageBox::critical(pThis, tr("Error"), QString::fromUtf8(err->message));
+        QMessageBox::critical(this, tr("Error"), err.message());
     }
-    return FM_JOB_CONTINUE;
+    response = Fm2::Job::ErrorAction::CONTINUE;
 }
-#endif
 
 void TabPage::onFolderFsInfo() {
     guint64 free, total;
@@ -387,8 +385,9 @@ void TabPage::chdir(Fm2::FilePath newPath, bool addHistory) {
     }
     connect(folder_.get(), &Fm2::Folder::startLoading, this, &TabPage::onFolderStartLoading);
     connect(folder_.get(), &Fm2::Folder::finishLoading, this, &TabPage::onFolderFinishLoading);
-    // FIXME: port to new API
-    // connect(folder_.get(), &Fm2::Folder::"error", this, &TabPage::onFolderError), this);
+
+    // FIXME: Fm2::Folder::error() is a bad design and might be removed in the future.
+    connect(folder_.get(), &Fm2::Folder::error, this, &TabPage::onFolderError);
     connect(folder_.get(), &Fm2::Folder::fileSystemChanged, this, &TabPage::onFolderFsInfo);
     /* destroy the page when the folder is unmounted or deleted. */
     connect(folder_.get(), &Fm2::Folder::removed, this, &TabPage::onFolderRemoved);
