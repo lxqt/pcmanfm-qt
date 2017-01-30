@@ -300,7 +300,17 @@ void DesktopWindow::updateWallpaper() {
     QImage image;
     if(wallpaperMode_ == WallpaperTile) { // use the original size
       image = QImage(wallpaperFile_);
-      pixmap = QPixmap::fromImage(image);
+      // Note: We can't use the QPainter::drawTiledPixmap(), because it doesn't tile
+      // correctly for background pixmaps bigger than the current screen size. This
+      // may be also the reason for wrong rendering by QWidget::setAutoFillBackground(true)
+      const QSize s = size();
+      pixmap = QPixmap{s};
+      QPainter painter{&pixmap};
+      for (int x = 0; x < s.width(); x += image.width()) {
+          for (int y = 0; y < s.height(); y += image.height()) {
+              painter.drawImage(x, y, image);
+          }
+      }
     }
     else if(wallpaperMode_ == WallpaperStretch) {
       image = loadWallpaperFile(size());
