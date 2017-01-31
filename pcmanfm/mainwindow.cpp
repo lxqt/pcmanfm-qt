@@ -595,7 +595,7 @@ void MainWindow::on_actionComputer_triggered() {
 }
 
 void MainWindow::on_actionApplications_triggered() {
-    chdir(Fm2::FilePath::fromUri("menu://applications.menu/"));
+    chdir(Fm2::FilePath::fromUri("menu://applications/"));
 }
 
 void MainWindow::on_actionTrash_triggered() {
