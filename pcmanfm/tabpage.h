@@ -146,12 +146,7 @@ public:
 
     void invertSelection();
 
-    void reload() {
-        if(!folder_) {
-            proxyFilter_->setVirtHidden(folder_); // reread ".hidden"
-            folder_->reload();
-        }
-    }
+    void reload();
 
     QString statusText(StatusTextType type = StatusTextNormal) const {
         return statusText_[type];

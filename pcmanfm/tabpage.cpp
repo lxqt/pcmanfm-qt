@@ -427,6 +427,13 @@ void TabPage::invertSelection() {
     folderView_->invertSelection();
 }
 
+void TabPage::reload() {
+    if(folder_) {
+        proxyFilter_->setVirtHidden(folder_); // reread ".hidden"
+        folder_->reload();
+    }
+}
+
 // when the current selection in the folder view is changed
 void TabPage::onSelChanged() {
     QString msg;
