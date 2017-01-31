@@ -78,9 +78,13 @@ void ProxyFilter::setVirtHidden(const std::shared_ptr<Fm2::Folder> &folder) {
     }
 }
 
-TabPage::TabPage(Fm2::FilePath path, QWidget* parent):
+TabPage::TabPage(QWidget* parent):
     QWidget(parent),
-    folderModel_(nullptr),
+    folderView_{nullptr},
+    folderModel_{nullptr},
+    proxyModel_{nullptr},
+    proxyFilter_{nullptr},
+    verticalLayout{nullptr},
     overrideCursor_(false) {
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
@@ -108,8 +112,6 @@ TabPage::TabPage(Fm2::FilePath path, QWidget* parent):
     // FIXME: this is very dirty
     folderView_->setModel(proxyModel_);
     verticalLayout->addWidget(folderView_);
-
-    chdir(path, true);
 }
 
 TabPage::~TabPage() {
@@ -184,9 +186,9 @@ void TabPage::restoreScrollPos() {
 }
 
 void TabPage::onFolderFinishLoading() {
-    // FIXME: is this needed?
     auto fi = folder_->info();
     if(fi) { // if loading of the folder fails, it's possible that we don't have FmFileInfo.
+        setWindowTitle(fi->displayName());
         Q_EMIT titleChanged(fi->displayName());
     }
 

@@ -318,7 +318,7 @@ void MainWindow::createPathBar(bool usePathButtons) {
 int MainWindow::addTab(Fm2::FilePath path) {
     Settings& settings = static_cast<Application*>(qApp)->settings();
 
-    TabPage* newPage = new TabPage(path, this);
+    TabPage* newPage = new TabPage(this);
     newPage->setFileLauncher(&fileLauncher_);
     int index = ui.stackedWidget->addWidget(newPage);
     connect(newPage, &TabPage::titleChanged, this, &MainWindow::onTabPageTitleChanged);
@@ -328,12 +328,12 @@ int MainWindow::addTab(Fm2::FilePath path) {
     connect(newPage, &TabPage::backwardRequested, this, &MainWindow::on_actionGoBack_triggered);
     connect(newPage, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
 
-    ui.tabBar->insertTab(index, newPage->title());
+    newPage->chdir(path, true);
+    ui.tabBar->insertTab(index, newPage->windowTitle());
 
     if(!settings.alwaysShowTabs()) {
         ui.tabBar->setVisible(ui.tabBar->count() > 1);
     }
-
     return index;
 }
 
@@ -824,7 +824,7 @@ void MainWindow::updateUIForCurrentPage() {
     TabPage* tabPage = currentPage();
 
     if(tabPage) {
-        setWindowTitle(tabPage->title());
+        setWindowTitle(tabPage->windowTitle());
         if(pathEntry_ != nullptr) {
             pathEntry_->setText(tabPage->pathName());
         }
@@ -868,7 +868,6 @@ void MainWindow::onStackedWidgetWidgetRemoved(int index) {
 void MainWindow::onTabPageTitleChanged(QString title) {
     TabPage* tabPage = static_cast<TabPage*>(sender());
     int index = ui.stackedWidget->indexOf(tabPage);
-
     if(index >= 0) {
         ui.tabBar->setTabText(index, title);
     }
