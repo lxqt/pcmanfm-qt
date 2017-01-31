@@ -74,7 +74,7 @@ public:
     };
 
 public:
-    explicit TabPage(Fm2::FilePath path, QWidget* parent = nullptr);
+    explicit TabPage(QWidget* parent = nullptr);
     virtual ~TabPage();
 
     void chdir(Fm2::FilePath newPath, bool addHistory = true);
@@ -151,10 +151,6 @@ public:
             proxyFilter_->setVirtHidden(folder_); // reread ".hidden"
             folder_->reload();
         }
-    }
-
-    QString title() const {
-        return title_;
     }
 
     QString statusText(StatusTextType type = StatusTextNormal) const {
@@ -244,7 +240,6 @@ private:
     ProxyFilter* proxyFilter_;
     QVBoxLayout* verticalLayout;
     std::shared_ptr<Fm2::Folder> folder_;
-    QString title_;
     QString statusText_[StatusTextNum];
     Fm::BrowseHistory history_; // browsing history
     Fm2::FilePath lastFolderPath_; // last browsed folder
