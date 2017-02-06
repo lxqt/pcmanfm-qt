@@ -239,6 +239,14 @@ public:
     return wallpaperDir_;
   }
 
+  void setLastSlide(QString wallpaper) {
+    lastSlide_ = wallpaper;
+  }
+
+  QString lastSlide() const {
+    return lastSlide_;
+  }
+
   void setWallpaperDir(QString dir) {
     wallpaperDir_ = dir;
   }
@@ -790,6 +798,7 @@ private:
 
   int wallpaperMode_;
   QString wallpaper_;
+  QString lastSlide_;
   QString wallpaperDir_;
   int slideShowInterval_;
   bool wallpaperRandomize_;

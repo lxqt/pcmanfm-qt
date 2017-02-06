@@ -57,6 +57,9 @@
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
 
+#define MIN_SLIDE_INTERVAL 5*60000 // 5 min
+#define MAX_SLIDE_INTERVAL (24*60+55)*60000 // 24 h and 55 min
+
 namespace PCManFM {
 
 DesktopWindow::DesktopWindow(int screenNum):
@@ -156,11 +159,15 @@ DesktopWindow::DesktopWindow(int screenNum):
 DesktopWindow::~DesktopWindow() {
   listView_->removeEventFilter(this);
 
-  if(relayoutTimer_)
+  if(relayoutTimer_) {
+    relayoutTimer_->stop();
     delete relayoutTimer_;
+  }
 
-  if(wallpaperTimer_)
+  if(wallpaperTimer_) {
+    wallpaperTimer_->stop();
     delete wallpaperTimer_;
+  }
 
   if(proxyModel_)
     delete proxyModel_;
@@ -219,12 +226,16 @@ void DesktopWindow::setWallpaperMode(WallpaperMode mode) {
   wallpaperMode_ = mode;
 }
 
+void DesktopWindow::setLastSlide(QString filename) {
+  lastSlide_ = filename;
+}
+
 void DesktopWindow::setWallpaperDir(QString dirname) {
   wallpaperDir_ = dirname;
 }
 
 void DesktopWindow::setSlideShowInterval(int interval) {
-  slideShowInterval_ = qMax(interval, 0);
+  slideShowInterval_ = interval;
 }
 
 void DesktopWindow::setWallpaperRandomize(bool randomize) {
@@ -359,7 +370,7 @@ void DesktopWindow::updateWallpaper() {
 }
 
 bool DesktopWindow::pickWallpaper() {
-  if(slideShowInterval_ < 5 * 60000
+  if(slideShowInterval_ <= 0
      || !QFileInfo(wallpaperDir_).isDir()) {
     return false;
   }
@@ -368,39 +379,55 @@ bool DesktopWindow::pickWallpaper() {
   QStringList formatsFilters;
   for (const QByteArray& format: formats)
     formatsFilters << QString("*.") + format;
-  QDir dir(wallpaperDir_);
-  QStringList files = dir.entryList(formatsFilters,
-                                    QDir::Files | QDir::NoDotAndDotDot,
-                                    QDir::Name);
+  QDir folder(wallpaperDir_);
+  QStringList files = folder.entryList(formatsFilters,
+                                       QDir::Files | QDir::NoDotAndDotDot,
+                                       QDir::Name);
   if(!files.isEmpty()) {
-     QString oldWallpaperFile = wallpaperFile_;
+     QString dir = wallpaperDir_ + QLatin1Char('/');
      if(!wallpaperRandomize_) {
-       bool found = false;
-       for(int i = 0; i < files.size(); ++i) {
-         if(wallpaperFile_ == wallpaperDir_ + "/" + files.at(i)) {
-           wallpaperFile_ = wallpaperDir_ + "/" + (i + 1 < files.size()
-                                                   ? files.at(i+1) : files.at(0));
-           found = true;
-           break;
+       if(!lastSlide_.startsWith(dir)) // not in the directory
+         wallpaperFile_ = dir + files.first();
+       else {
+         QString ls = lastSlide_.remove(0, dir.size());
+         if(ls.isEmpty() // invalid
+            || ls.contains(QLatin1Char('/'))) { // in a subdirectory or invalid
+           wallpaperFile_ = dir + files.first();
+         }
+         else {
+           int index = files.indexOf(ls);
+           if(index == -1) // removed or invalid
+             wallpaperFile_ = dir + files.first();
+           else
+             wallpaperFile_ = dir + (index + 1 < files.size()
+                                     ? files.at(index + 1)
+                                     : files.first());
          }
        }
-       if(!found)
-         wallpaperFile_ = wallpaperDir_ + "/" + files.first();
      }
      else {
        if(files.size() > 1) {
-         files.removeOne(wallpaperFile_);
+         if(lastSlide_.startsWith(dir))
+         {
+           QString ls = lastSlide_.remove(0, dir.size());
+           if(!ls.isEmpty() && !ls.contains(QLatin1Char('/')))
+             files.removeOne(ls); // choose from other images
+         }
          // this is needed for the randomness, especially when choosing the first wallpaper
          qsrand((uint)QTime::currentTime().msec());
          int randomValue = qrand() % files.size();
-         wallpaperFile_ = wallpaperDir_ + "/" + files.at(randomValue);
+         wallpaperFile_ = dir + files.at(randomValue);
        }
        else
-         wallpaperFile_ = wallpaperDir_ + "/" + files.first();
+         wallpaperFile_ = dir + files.first();
      }
 
-     if (wallpaperFile_ != oldWallpaperFile)
+     if (lastSlide_ != wallpaperFile_) {
+       lastSlide_ = wallpaperFile_;
+       Settings& settings = static_cast<Application*>(qApp)->settings();
+       settings.setLastSlide(lastSlide_);
        return true;
+     }
   }
 
   return false;
@@ -415,8 +442,14 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
   setDesktopFolder();
   setWallpaperFile(settings.wallpaper());
   setWallpaperMode(settings.wallpaperMode());
+  setLastSlide(settings.lastSlide());
   setWallpaperDir(settings.wallpaperDir());
-  setSlideShowInterval(settings.slideShowInterval());
+  int interval = settings.slideShowInterval();
+  if(interval > 0 && (interval < MIN_SLIDE_INTERVAL || interval > MAX_SLIDE_INTERVAL)) {
+    interval = qBound(MIN_SLIDE_INTERVAL, interval, MAX_SLIDE_INTERVAL);
+    settings.setSlideShowInterval(interval);
+  }
+  setSlideShowInterval(interval);
   setWallpaperRandomize(settings.wallpaperRandomize());
   setFont(settings.desktopFont());
   setIconSize(Fm::FolderView::IconMode, QSize(settings.desktopIconSize(), settings.desktopIconSize()));
@@ -428,7 +461,7 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
   setShadow(settings.desktopShadowColor());
   showWmMenu_ = settings.showWmMenu();
 
-  if(slideShowInterval_ >= 5 * 60000 // no slide show with less than 5min
+  if(slideShowInterval_ > 0
      && QFileInfo(wallpaperDir_).isDir()) {
     pickWallpaper();
     if(!wallpaperTimer_) {
@@ -439,6 +472,7 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
       wallpaperTimer_->stop(); // restart the timer after updating wallpaper
   }
   else if(wallpaperTimer_) {
+    wallpaperTimer_->stop();
     delete wallpaperTimer_;
     wallpaperTimer_ = NULL;
   }

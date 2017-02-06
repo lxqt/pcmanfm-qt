@@ -63,6 +63,7 @@ public:
   void setDesktopFolder();
   void setWallpaperFile(QString filename);
   void setWallpaperMode(WallpaperMode mode = WallpaperStretch);
+  void setLastSlide(QString filename);
   void setWallpaperDir(QString dirname);
   void setSlideShowInterval(int interval);
   void setWallpaperRandomize(bool randomize);
@@ -136,6 +137,7 @@ private:
   QColor shadowColor_;
   QString wallpaperFile_;
   WallpaperMode wallpaperMode_;
+  QString lastSlide_;
   QString wallpaperDir_;
   int slideShowInterval_;
   QTimer* wallpaperTimer_;

@@ -63,6 +63,7 @@ Settings::Settings():
   closeOnUnmount_(false),
   wallpaperMode_(0),
   wallpaper_(),
+  lastSlide_(),
   wallpaperDir_(),
   slideShowInterval_(0),
   wallpaperRandomize_(false),
@@ -205,9 +206,9 @@ bool Settings::loadFile(QString filePath) {
   settings.beginGroup("Desktop");
   wallpaperMode_ = wallpaperModeFromString(settings.value("WallpaperMode").toString());
   wallpaper_ = settings.value("Wallpaper").toString();
+  lastSlide_ = settings.value("LastSlide").toString();
   wallpaperDir_ = settings.value("WallpaperDirectory").toString();
-  slideShowInterval_ = qMin(settings.value("SlideShowInterval", 0).toInt(),
-                            (24 * 60 + 55) * 60000); // the upper limit is 24h and 55min
+  slideShowInterval_ = settings.value("SlideShowInterval", 0).toInt();
   wallpaperRandomize_ = settings.value("WallpaperRandomize").toBool();
   desktopBgColor_.setNamedColor(settings.value("BgColor", "#000000").toString());
   desktopFgColor_.setNamedColor(settings.value("FgColor", "#ffffff").toString());
@@ -326,6 +327,7 @@ bool Settings::saveFile(QString filePath) {
   settings.beginGroup("Desktop");
   settings.setValue("WallpaperMode", wallpaperModeToString(wallpaperMode_));
   settings.setValue("Wallpaper", wallpaper_);
+  settings.setValue("LastSlide", lastSlide_);
   settings.setValue("WallpaperDirectory", wallpaperDir_);
   settings.setValue("SlideShowInterval", slideShowInterval_);
   settings.setValue("WallpaperRandomize", wallpaperRandomize_);
