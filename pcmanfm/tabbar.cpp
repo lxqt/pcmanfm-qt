@@ -26,6 +26,7 @@ namespace PCManFM {
 TabBar::TabBar(QWidget *parent):
   QTabBar(parent)
 {
+  setAutoHide(true);
 }
 
 void TabBar::mouseReleaseEvent(QMouseEvent *event) {
