@@ -346,11 +346,14 @@ void TabPage::onFolderContentChanged() {
 }
 
 QString TabPage::pathName() {
-    auto disp_path = path().displayName();
+    // auto disp_path = path().displayName();
+    // FIXME: displayName() returns invalid path sometimes.
+    auto disp_path = path().toString();
     return QString::fromUtf8(disp_path.get());
 }
 
 void TabPage::chdir(Fm2::FilePath newPath, bool addHistory) {
+    // qDebug() << "TABPAGE CHDIR:" << newPath.toString().get();
     if(folder_) {
         // we're already in the specified dir
         if(newPath == folder_->path()) {
