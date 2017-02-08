@@ -27,7 +27,6 @@
 #include <libfm-qt/browsehistory.h>
 #include "view.h"
 #include <libfm-qt/path.h>
-#include <libfm-qt/fileinfo.h>
 #include "settings.h"
 
 #include <libfm-qt/core/fileinfo.h>

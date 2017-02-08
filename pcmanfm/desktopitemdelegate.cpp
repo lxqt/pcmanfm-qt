@@ -20,7 +20,7 @@
 
 #include "desktopitemdelegate.h"
 #include <libfm-qt/foldermodel.h>
-#include <libfm-qt/fileinfo.h>
+#include <libfm-qt/core/fileinfo.h>
 #include <QApplication>
 #include <QListView>
 #include <QPainter>
@@ -70,9 +70,9 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
 
     // draw some emblems for the item if needed
     // we only support symlink emblem at the moment
-    Fm::FileInfo file = static_cast<FmFileInfo*>(index.data(Fm::FolderModel::FileInfoRole).value<void*>());
-    if(!file.isNull()) {
-        if(file.isSymlink()) {
+    auto file = index.data(Fm::FolderModel::FileInfoRole).value<std::shared_ptr<const Fm2::FileInfo>>();
+    if(file) {
+        if(file->isSymlink()) {
             painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
         }
     }

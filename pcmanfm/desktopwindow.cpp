@@ -49,8 +49,7 @@
 #include <libfm-qt/fileoperation.h>
 #include <libfm-qt/filepropsdialog.h>
 #include <libfm-qt/utilities.h>
-#include <libfm-qt/path.h>
-#include <libfm-qt/fileinfo.h>
+#include <libfm-qt/core/fileinfo.h>
 #include "xdgdir.h"
 
 #include <QX11Info>
