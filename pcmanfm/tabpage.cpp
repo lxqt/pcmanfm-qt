@@ -24,7 +24,7 @@
 #include <libfm-qt/mountoperation.h>
 #include <libfm-qt/proxyfoldermodel.h>
 #include <libfm-qt/cachedfoldermodel.h>
-#include <libfm-qt/fileinfo.h>
+#include <libfm-qt/core/fileinfo.h>
 #include <libfm-qt/utilities.h>
 #include <QApplication>
 #include <QCursor>

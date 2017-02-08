@@ -43,8 +43,7 @@
 #include <libfm-qt/filepropsdialog.h>
 #include <libfm-qt/pathedit.h>
 #include <libfm-qt/pathbar.h>
-#include <libfm-qt/path.h>
-#include <libfm-qt/fileinfo.h>
+#include <libfm-qt/core/fileinfo.h>
 #include "ui_about.h"
 #include "application.h"
 
