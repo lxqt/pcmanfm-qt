@@ -70,7 +70,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
 
     // draw some emblems for the item if needed
     // we only support symlink emblem at the moment
-    auto file = index.data(Fm::FolderModel::FileInfoRole).value<std::shared_ptr<const Fm2::FileInfo>>();
+    auto file = index.data(Fm::FolderModel::FileInfoRole).value<std::shared_ptr<const Fm::FileInfo>>();
     if(file) {
         if(file->isSymlink()) {
             painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));

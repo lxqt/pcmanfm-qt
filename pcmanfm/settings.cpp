@@ -616,7 +616,7 @@ void Settings::setTerminal(QString terminalCommand) {
 
 
 // per-folder settings
-FolderSettings Settings::loadFolderSettings(const Fm2::FilePath& path) const {
+FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
     FolderSettings settings;
     Fm::FolderConfig cfg(path);
     // set defaults
@@ -670,7 +670,7 @@ FolderSettings Settings::loadFolderSettings(const Fm2::FilePath& path) const {
     return settings;
 }
 
-void Settings::saveFolderSettings(const Fm2::FilePath& path, const FolderSettings& settings) {
+void Settings::saveFolderSettings(const Fm::FilePath& path, const FolderSettings& settings) {
     if(path) {
         // ensure that we have the libfm dir
         QString dirName = xdgUserConfigDir() % QStringLiteral("/libfm");
@@ -686,7 +686,7 @@ void Settings::saveFolderSettings(const Fm2::FilePath& path, const FolderSetting
     }
 }
 
-void Settings::clearFolderSettings(const Fm2::FilePath& path) const {
+void Settings::clearFolderSettings(const Fm::FilePath& path) const {
     if(path) {
         Fm::FolderConfig cfg(path);
         cfg.purge();

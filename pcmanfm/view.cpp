@@ -40,7 +40,7 @@ View::View(Fm::FolderView::ViewMode _mode, QWidget* parent):
 View::~View() {
 }
 
-void View::onFileClicked(int type, const std::shared_ptr<const Fm2::FileInfo>& fileInfo) {
+void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) {
     if(type == MiddleClick) {
         if(fileInfo->isDir()) {
             Q_EMIT openDirRequested(fileInfo->path(), OpenInNewTab);

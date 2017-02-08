@@ -46,9 +46,9 @@ class Launcher;
 
 class ProxyFilter : public Fm::ProxyFolderModelFilter {
 public:
-    bool filterAcceptsRow(const Fm::ProxyFolderModel* model, const std::shared_ptr<const Fm2::FileInfo>& info) const;
+    bool filterAcceptsRow(const Fm::ProxyFolderModel* model, const std::shared_ptr<const Fm::FileInfo>& info) const;
     virtual ~ProxyFilter() {}
-    void setVirtHidden(const std::shared_ptr<Fm2::Folder>& folder);
+    void setVirtHidden(const std::shared_ptr<Fm::Folder>& folder);
     QString getFilterStr() {
         return filterStr_;
     }
@@ -76,7 +76,7 @@ public:
     explicit TabPage(QWidget* parent = nullptr);
     virtual ~TabPage();
 
-    void chdir(Fm2::FilePath newPath, bool addHistory = true);
+    void chdir(Fm::FilePath newPath, bool addHistory = true);
 
     Fm::FolderView::ViewMode viewMode() {
         return folderSettings_.viewMode();
@@ -111,13 +111,13 @@ public:
 
     void setShowHidden(bool showHidden);
 
-    Fm2::FilePath path() {
-        return folder_ ? folder_->path() : Fm2::FilePath();
+    Fm::FilePath path() {
+        return folder_ ? folder_->path() : Fm::FilePath();
     }
 
     QString pathName();
 
-    const std::shared_ptr<Fm2::Folder>& folder() {
+    const std::shared_ptr<Fm::Folder>& folder() {
         return folder_;
     }
 
@@ -133,11 +133,11 @@ public:
         return history_;
     }
 
-    Fm2::FileInfoList selectedFiles() {
+    Fm::FileInfoList selectedFiles() {
         return folderView_->selectedFiles();
     }
 
-    Fm2::FilePathList selectedFilePaths() {
+    Fm::FilePathList selectedFilePaths() {
         return folderView_->selectedFilePaths();
     }
 
@@ -203,7 +203,7 @@ public:
 Q_SIGNALS:
     void statusChanged(int type, QString statusText);
     void titleChanged(QString title);
-    void openDirRequested(const Fm2::FilePath& path, int target);
+    void openDirRequested(const Fm::FilePath& path, int target);
     void sortFilterChanged();
     void forwardRequested();
     void backwardRequested();
@@ -220,7 +220,7 @@ private:
     void onFolderFinishLoading();
 
     // FIXME: this API design is bad and might be removed later
-    void onFolderError(const Fm2::GErrorPtr& err, Fm2::Job::ErrorSeverity severity, Fm2::Job::ErrorAction& response);
+    void onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity severity, Fm::Job::ErrorAction& response);
 
     void onFolderFsInfo();
     void onFolderRemoved();
@@ -233,10 +233,10 @@ private:
     Fm::ProxyFolderModel* proxyModel_;
     ProxyFilter* proxyFilter_;
     QVBoxLayout* verticalLayout;
-    std::shared_ptr<Fm2::Folder> folder_;
+    std::shared_ptr<Fm::Folder> folder_;
     QString statusText_[StatusTextNum];
     Fm::BrowseHistory history_; // browsing history
-    Fm2::FilePath lastFolderPath_; // last browsed folder
+    Fm::FilePath lastFolderPath_; // last browsed folder
     bool overrideCursor_;
     FolderSettings folderSettings_;
 };

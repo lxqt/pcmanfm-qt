@@ -98,7 +98,7 @@ DesktopWindow::DesktopWindow(int screenNum):
         loadItemPositions();
         Settings& settings = static_cast<Application* >(qApp)->settings();
 
-        auto desktopPath = Fm2::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
+        auto desktopPath = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
         model_ = Fm::CachedFolderModel::modelFromPath(desktopPath);
         folder_ = model_->folder();
 
@@ -192,7 +192,7 @@ void DesktopWindow::setShadow(const QColor& color) {
     delegate_->setShadowColor(color);
 }
 
-void DesktopWindow::onOpenDirRequested(const Fm2::FilePath& path, int target) {
+void DesktopWindow::onOpenDirRequested(const Fm::FilePath& path, int target) {
     // open in new window unconditionally.
     Application* app = static_cast<Application*>(qApp);
     MainWindow* newWin = new MainWindow(path);
@@ -213,7 +213,7 @@ void DesktopWindow::resizeEvent(QResizeEvent* event) {
 }
 
 void DesktopWindow::setDesktopFolder() {
-    auto path = Fm2::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
+    auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
     model_ = Fm::CachedFolderModel::modelFromPath(path);
     proxyModel_->setSourceModel(model_);
 }
@@ -359,7 +359,7 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
     update();
 }
 
-void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm2::FileInfo>& fileInfo) {
+void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) {
     if(!fileInfo && showWmMenu_) {
         return;    // do not show the popup if we want to use the desktop menu provided by the WM.
     }

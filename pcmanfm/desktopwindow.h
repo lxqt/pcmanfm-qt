@@ -83,7 +83,7 @@ protected:
     virtual void prepareFolderMenu(Fm::FolderMenu* menu) override;
     virtual void prepareFileMenu(Fm::FileMenu* menu) override;
     virtual void resizeEvent(QResizeEvent* event) override;
-    virtual void onFileClicked(int type, const std::shared_ptr<const Fm2::FileInfo>& fileInfo) override;
+    virtual void onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) override;
 
     void loadItemPositions();
     void saveItemPositions();
@@ -97,7 +97,7 @@ protected:
     virtual void closeEvent(QCloseEvent* event) override;
 
 protected Q_SLOTS:
-    void onOpenDirRequested(const Fm2::FilePath& path, int target);
+    void onOpenDirRequested(const Fm::FilePath& path, int target);
     void onDesktopPreferences();
 
     void onRowsAboutToBeRemoved(const QModelIndex& parent, int start, int end);
@@ -127,7 +127,7 @@ private:
 private:
     Fm::ProxyFolderModel* proxyModel_;
     Fm::CachedFolderModel* model_;
-    std::shared_ptr<Fm2::Folder> folder_;
+    std::shared_ptr<Fm::Folder> folder_;
     Fm::FolderViewListView* listView_;
 
     QColor fgColor_;

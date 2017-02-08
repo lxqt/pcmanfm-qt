@@ -49,11 +49,11 @@ class Settings;
 class MainWindow : public QMainWindow {
     Q_OBJECT
 public:
-    MainWindow(Fm2::FilePath path = Fm2::FilePath());
+    MainWindow(Fm::FilePath path = Fm::FilePath());
     virtual ~MainWindow();
 
-    void chdir(Fm2::FilePath path);
-    int addTab(Fm2::FilePath path);
+    void chdir(Fm::FilePath path);
+    int addTab(Fm::FilePath path);
 
     TabPage* currentPage() {
         return reinterpret_cast<TabPage*>(ui.stackedWidget->currentWidget());
@@ -69,8 +69,8 @@ protected Q_SLOTS:
 
     void onPathEntryReturnPressed();
     void onPathEntryEdited(const QString& text);
-    void onPathBarChdir(const Fm2::FilePath& dirPath);
-    void onPathBarMiddleClickChdir(const Fm2::FilePath &dirPath);
+    void onPathBarChdir(const Fm::FilePath& dirPath);
+    void onPathBarMiddleClickChdir(const Fm::FilePath &dirPath);
 
     void on_actionNewTab_triggered();
     void on_actionNewWin_triggered();
@@ -151,14 +151,14 @@ protected Q_SLOTS:
 
     void onTabPageTitleChanged(QString title);
     void onTabPageStatusChanged(int type, QString statusText);
-    void onTabPageOpenDirRequested(const Fm2::FilePath &path, int target);
+    void onTabPageOpenDirRequested(const Fm::FilePath &path, int target);
     void onTabPageSortFilterChanged();
 
-    void onSidePaneChdirRequested(int type, const Fm2::FilePath &path);
-    void onSidePaneOpenFolderInNewWindowRequested(const Fm2::FilePath &path);
-    void onSidePaneOpenFolderInNewTabRequested(const Fm2::FilePath &path);
-    void onSidePaneOpenFolderInTerminalRequested(const Fm2::FilePath &path);
-    void onSidePaneCreateNewFolderRequested(const Fm2::FilePath &path);
+    void onSidePaneChdirRequested(int type, const Fm::FilePath &path);
+    void onSidePaneOpenFolderInNewWindowRequested(const Fm::FilePath &path);
+    void onSidePaneOpenFolderInNewTabRequested(const Fm::FilePath &path);
+    void onSidePaneOpenFolderInTerminalRequested(const Fm::FilePath &path);
+    void onSidePaneCreateNewFolderRequested(const Fm::FilePath &path);
     void onSidePaneModeChanged(Fm::SidePane::Mode mode);
     void onSplitterMoved(int pos, int index);
     void onResetFocus();
@@ -197,7 +197,7 @@ private:
     Fm::PathEdit* pathEntry_;
     Fm::PathBar* pathBar_;
     QLabel* fsInfoLabel_;
-    std::shared_ptr<Fm2::Bookmarks> bookmarks_;
+    std::shared_ptr<Fm::Bookmarks> bookmarks_;
     Launcher fileLauncher_;
     int rightClickIndex_;
     bool updatingViewMenu_;
