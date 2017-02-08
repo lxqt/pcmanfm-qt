@@ -54,14 +54,14 @@ namespace PCManFM {
 // static
 MainWindow* MainWindow::lastActive_ = nullptr;
 
-MainWindow::MainWindow(Fm2::FilePath path):
+MainWindow::MainWindow(Fm::FilePath path):
     QMainWindow(),
     pathEntry_(nullptr),
     pathBar_(nullptr),
     fileLauncher_(this),
     rightClickIndex_(-1),
     updatingViewMenu_(false),
-    bookmarks_{Fm2::Bookmarks::globalInstance()} {
+    bookmarks_{Fm::Bookmarks::globalInstance()} {
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
     setAttribute(Qt::WA_DeleteOnClose);
@@ -156,7 +156,7 @@ MainWindow::MainWindow(Fm2::FilePath path):
     ui.splitter->setSizes(sizes);
 
     // load bookmark menu
-    connect(bookmarks_.get(), &Fm2::Bookmarks::changed, this, &MainWindow::onBookmarksChanged);
+    connect(bookmarks_.get(), &Fm::Bookmarks::changed, this, &MainWindow::onBookmarksChanged);
     loadBookmarksMenu();
 
     // Fix the menu groups which is not done by Qt designer
@@ -287,7 +287,7 @@ MainWindow::MainWindow(Fm2::FilePath path):
 MainWindow::~MainWindow() {
 }
 
-void MainWindow::chdir(Fm2::FilePath path) {
+void MainWindow::chdir(Fm::FilePath path) {
     TabPage* page = currentPage();
     if(page) {
         ui.filterBar->clear();
@@ -314,7 +314,7 @@ void MainWindow::createPathBar(bool usePathButtons) {
 }
 
 // add a new tab
-int MainWindow::addTab(Fm2::FilePath path) {
+int MainWindow::addTab(Fm::FilePath path) {
     Settings& settings = static_cast<Application*>(qApp)->settings();
 
     TabPage* newPage = new TabPage(this);
@@ -360,7 +360,7 @@ void MainWindow::toggleMenuBar(bool checked) {
 void MainWindow::onPathEntryReturnPressed() {
     QString text = pathEntry_->text();
     QByteArray utext = text.toUtf8();
-    chdir(Fm2::FilePath::fromDisplayName(utext.constData()));
+    chdir(Fm::FilePath::fromDisplayName(utext.constData()));
 }
 
 void MainWindow::onPathEntryEdited(const QString& text) {
@@ -371,7 +371,7 @@ void MainWindow::onPathEntryEdited(const QString& text) {
     }
 }
 
-void MainWindow::onPathBarChdir(const Fm2::FilePath& dirPath) {
+void MainWindow::onPathBarChdir(const Fm::FilePath& dirPath) {
     // call chdir() only when needed because otherwise
     // filter bar will be cleard on changing current tab
     TabPage* page = currentPage();
@@ -380,7 +380,7 @@ void MainWindow::onPathBarChdir(const Fm2::FilePath& dirPath) {
     }
 }
 
-void MainWindow::onPathBarMiddleClickChdir(const Fm2::FilePath& dirPath) {
+void MainWindow::onPathBarMiddleClickChdir(const Fm::FilePath& dirPath) {
     addTab(dirPath);
 }
 
@@ -415,7 +415,7 @@ void MainWindow::on_actionGoForward_triggered() {
 }
 
 void MainWindow::on_actionHome_triggered() {
-    chdir(Fm2::FilePath::homeDir());
+    chdir(Fm::FilePath::homeDir());
 }
 
 void MainWindow::on_actionReload_triggered() {
@@ -590,24 +590,24 @@ void MainWindow::on_actionPathButtons_triggered(bool checked) {
 }
 
 void MainWindow::on_actionComputer_triggered() {
-    chdir(Fm2::FilePath::fromUri("computer:///"));
+    chdir(Fm::FilePath::fromUri("computer:///"));
 }
 
 void MainWindow::on_actionApplications_triggered() {
-    chdir(Fm2::FilePath::fromUri("menu://applications/"));
+    chdir(Fm::FilePath::fromUri("menu://applications/"));
 }
 
 void MainWindow::on_actionTrash_triggered() {
-    chdir(Fm2::FilePath::fromUri("trash:///"));
+    chdir(Fm::FilePath::fromUri("trash:///"));
 }
 
 void MainWindow::on_actionNetwork_triggered() {
-    chdir(Fm2::FilePath::fromUri("network:///"));
+    chdir(Fm::FilePath::fromUri("network:///"));
 }
 
 void MainWindow::on_actionDesktop_triggered() {
     auto desktop = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation).toLocal8Bit();
-    chdir(Fm2::FilePath::fromLocalPath(desktop.constData()));
+    chdir(Fm::FilePath::fromLocalPath(desktop.constData()));
 }
 
 void MainWindow::on_actionAddToBookmarks_triggered() {
@@ -900,7 +900,7 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
     }
 }
 
-void MainWindow::onTabPageOpenDirRequested(const Fm2::FilePath& path, int target) {
+void MainWindow::onTabPageOpenDirRequested(const Fm::FilePath& path, int target) {
     switch(target) {
     case OpenInCurrentTab:
         chdir(path);
@@ -931,7 +931,7 @@ void MainWindow::onTabPageSortFilterChanged() {
 }
 
 
-void MainWindow::onSidePaneChdirRequested(int type, const Fm2::FilePath &path) {
+void MainWindow::onSidePaneChdirRequested(int type, const Fm::FilePath &path) {
     // FIXME: use enum for type value or change it to button.
     if(type == 0) { // left button (default)
         chdir(path);
@@ -944,20 +944,20 @@ void MainWindow::onSidePaneChdirRequested(int type, const Fm2::FilePath &path) {
     }
 }
 
-void MainWindow::onSidePaneOpenFolderInNewWindowRequested(const Fm2::FilePath &path) {
+void MainWindow::onSidePaneOpenFolderInNewWindowRequested(const Fm::FilePath &path) {
     (new MainWindow(path))->show();
 }
 
-void MainWindow::onSidePaneOpenFolderInNewTabRequested(const Fm2::FilePath &path) {
+void MainWindow::onSidePaneOpenFolderInNewTabRequested(const Fm::FilePath &path) {
     addTab(path);
 }
 
-void MainWindow::onSidePaneOpenFolderInTerminalRequested(const Fm2::FilePath &path) {
+void MainWindow::onSidePaneOpenFolderInTerminalRequested(const Fm::FilePath &path) {
     Application* app = static_cast<Application*>(qApp);
     app->openFolderInTerminal(path);
 }
 
-void MainWindow::onSidePaneCreateNewFolderRequested(const Fm2::FilePath &path) {
+void MainWindow::onSidePaneCreateNewFolderRequested(const Fm::FilePath &path) {
     createFileOrFolder(CreateNewFolder, path);
 }
 
@@ -1254,12 +1254,12 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
                 cmd = g_strconcat(suCommand.constData(), programCommand.constData(), nullptr);
             }
 
-            Fm2::GAppInfoPtr appInfo{g_app_info_create_from_commandline(cmd, nullptr, GAppInfoCreateFlags(0), nullptr), false};
+            Fm::GAppInfoPtr appInfo{g_app_info_create_from_commandline(cmd, nullptr, GAppInfoCreateFlags(0), nullptr), false};
             g_free(cmd);
 
             if(appInfo) {
                 auto cwd = page->path();
-                Fm2::GErrorPtr err;
+                Fm::GErrorPtr err;
                 auto uri = cwd.uri();
                 GList* uris = g_list_prepend(nullptr, uri.get());
 

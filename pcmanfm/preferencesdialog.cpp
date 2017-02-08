@@ -243,7 +243,7 @@ void PreferencesDialog::initVolumePage(Settings& settings) {
 
 void PreferencesDialog::initTerminals(Settings& settings) {
     // load the known terminal list from the terminal.list file of libfm
-    for(auto& terminal: Fm2::allKnownTerminals()) {
+    for(auto& terminal: Fm::allKnownTerminals()) {
         ui.terminal->addItem(terminal.get());
     }
     ui.terminal->setEditText(settings.terminal());

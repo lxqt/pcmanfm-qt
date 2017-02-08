@@ -41,7 +41,7 @@ using namespace Fm;
 
 namespace PCManFM {
 
-bool ProxyFilter::filterAcceptsRow(const Fm::ProxyFolderModel* model, const std::shared_ptr<const Fm2::FileInfo>& info) const {
+bool ProxyFilter::filterAcceptsRow(const Fm::ProxyFolderModel* model, const std::shared_ptr<const Fm::FileInfo>& info) const {
     if(!model || !info) {
         return true;
     }
@@ -55,7 +55,7 @@ bool ProxyFilter::filterAcceptsRow(const Fm::ProxyFolderModel* model, const std:
     return true;
 }
 
-void ProxyFilter::setVirtHidden(const std::shared_ptr<Fm2::Folder> &folder) {
+void ProxyFilter::setVirtHidden(const std::shared_ptr<Fm::Folder> &folder) {
     virtHiddenList_ = QStringList(); // reset the list
     if(!folder) {
         return;
@@ -236,9 +236,9 @@ void TabPage::onFolderFinishLoading() {
     QTimer::singleShot(10, this, SLOT(restoreScrollPos()));
 }
 
-void TabPage::onFolderError(const Fm2::GErrorPtr& err, Fm2::Job::ErrorSeverity severity, Fm2::Job::ErrorAction& response) {
+void TabPage::onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity severity, Fm::Job::ErrorAction& response) {
     if(err.domain() == G_IO_ERROR) {
-        if(err.code() == G_IO_ERROR_NOT_MOUNTED && severity < Fm2::Job::ErrorSeverity::CRITICAL) {
+        if(err.code() == G_IO_ERROR_NOT_MOUNTED && severity < Fm::Job::ErrorSeverity::CRITICAL) {
             auto& path = folder_->path();
             MountOperation* op = new MountOperation(this);
             op->mount(path);
@@ -250,12 +250,12 @@ void TabPage::onFolderError(const Fm2::GErrorPtr& err, Fm2::Job::ErrorSeverity s
                 // remove busy cursor here since "finish-loading" is not emitted.
                 QApplication::restoreOverrideCursor(); // remove busy cursor
                 overrideCursor_ = false;
-                response = Fm2::Job::ErrorAction::RETRY;
+                response = Fm::Job::ErrorAction::RETRY;
                 return;
             }
         }
     }
-    if(severity >= Fm2::Job::ErrorSeverity::MODERATE) {
+    if(severity >= Fm::Job::ErrorSeverity::MODERATE) {
         /* Only show more severe errors to the users and
           * ignore milder errors. Otherwise too many error
           * message boxes can be annoying.
@@ -266,7 +266,7 @@ void TabPage::onFolderError(const Fm2::GErrorPtr& err, Fm2::Job::ErrorSeverity s
         // FIXME: consider replacing this modal dialog with an info bar to improve usability
         QMessageBox::critical(this, tr("Error"), err.message());
     }
-    response = Fm2::Job::ErrorAction::CONTINUE;
+    response = Fm::Job::ErrorAction::CONTINUE;
 }
 
 void TabPage::onFolderFsInfo() {
@@ -315,7 +315,7 @@ void TabPage::onFolderRemoved() {
         QTimer::singleShot(0, this, SLOT(deleteLater()));
     }
     else {
-        chdir(Fm2::FilePath::homeDir());
+        chdir(Fm::FilePath::homeDir());
     }
 }
 
@@ -335,7 +335,7 @@ void TabPage::onFolderUnmount() {
         QTimer::singleShot(0, this, SLOT(deleteLater()));
     }
     else {
-        chdir(Fm2::FilePath::homeDir());
+        chdir(Fm::FilePath::homeDir());
     }
 }
 
@@ -352,7 +352,7 @@ QString TabPage::pathName() {
     return QString::fromUtf8(disp_path.get());
 }
 
-void TabPage::chdir(Fm2::FilePath newPath, bool addHistory) {
+void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     // qDebug() << "TABPAGE CHDIR:" << newPath.toString().get();
     if(folder_) {
         // we're already in the specified dir
@@ -382,22 +382,22 @@ void TabPage::chdir(Fm2::FilePath newPath, bool addHistory) {
 
     Q_EMIT titleChanged(newPath.baseName().get());  // FIXME: display name
 
-    folder_ = Fm2::Folder::fromPath(newPath);
+    folder_ = Fm::Folder::fromPath(newPath);
     proxyFilter_->setVirtHidden(folder_);
     if(addHistory) {
         // add current path to browse history
         history_.add(path());
     }
-    connect(folder_.get(), &Fm2::Folder::startLoading, this, &TabPage::onFolderStartLoading);
-    connect(folder_.get(), &Fm2::Folder::finishLoading, this, &TabPage::onFolderFinishLoading);
+    connect(folder_.get(), &Fm::Folder::startLoading, this, &TabPage::onFolderStartLoading);
+    connect(folder_.get(), &Fm::Folder::finishLoading, this, &TabPage::onFolderFinishLoading);
 
-    // FIXME: Fm2::Folder::error() is a bad design and might be removed in the future.
-    connect(folder_.get(), &Fm2::Folder::error, this, &TabPage::onFolderError);
-    connect(folder_.get(), &Fm2::Folder::fileSystemChanged, this, &TabPage::onFolderFsInfo);
+    // FIXME: Fm::Folder::error() is a bad design and might be removed in the future.
+    connect(folder_.get(), &Fm::Folder::error, this, &TabPage::onFolderError);
+    connect(folder_.get(), &Fm::Folder::fileSystemChanged, this, &TabPage::onFolderFsInfo);
     /* destroy the page when the folder is unmounted or deleted. */
-    connect(folder_.get(), &Fm2::Folder::removed, this, &TabPage::onFolderRemoved);
-    connect(folder_.get(), &Fm2::Folder::unmount, this, &TabPage::onFolderUnmount);
-    connect(folder_.get(), &Fm2::Folder::contentChanged, this, &TabPage::onFolderContentChanged);
+    connect(folder_.get(), &Fm::Folder::removed, this, &TabPage::onFolderRemoved);
+    connect(folder_.get(), &Fm::Folder::unmount, this, &TabPage::onFolderUnmount);
+    connect(folder_.get(), &Fm::Folder::contentChanged, this, &TabPage::onFolderContentChanged);
 
     folderModel_ = CachedFolderModel::modelFromFolder(folder_);
 

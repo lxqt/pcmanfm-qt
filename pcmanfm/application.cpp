@@ -453,9 +453,9 @@ void Application::desktopPrefrences(QString page) {
 void Application::onFindFileAccepted() {
     Fm::FileSearchDialog* dlg = static_cast<Fm::FileSearchDialog*>(sender());
     Fm::Path uri = dlg->searchUri();
-    Fm2::FilePathList paths;
-    Fm2::GFilePtr gf{uri.toGfile(), false};
-    paths.push_back(Fm2::FilePath{gf.get(), true});
+    Fm::FilePathList paths;
+    Fm::GFilePtr gf{uri.toGfile(), false};
+    paths.push_back(Fm::FilePath{gf.get(), true});
     MainWindow* window = MainWindow::lastActive();
     Launcher(window).launchPaths(nullptr, paths);
 }
@@ -463,8 +463,8 @@ void Application::onFindFileAccepted() {
 void Application::onConnectToServerAccepted() {
     ConnectServerDialog* dlg = static_cast<ConnectServerDialog*>(sender());
     QString uri = dlg->uriText();
-    Fm2::FilePathList paths;
-    paths.push_back(Fm2::FilePath::fromDisplayName(uri.toUtf8().constData()));
+    Fm::FilePathList paths;
+    paths.push_back(Fm::FilePath::fromDisplayName(uri.toUtf8().constData()));
     MainWindow* window = MainWindow::lastActive();
     Launcher(window).launchPaths(nullptr, paths);
 }
@@ -485,24 +485,24 @@ void Application::connectToServer() {
 }
 
 void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) {
-    Fm2::FilePathList pathList;
-    Fm2::FilePath cwd_path;
+    Fm::FilePathList pathList;
+    Fm::FilePath cwd_path;
     QStringList::iterator it;
     Q_FOREACH(const QString& it, paths) {
         QByteArray pathName = it.toLocal8Bit();
-        Fm2::FilePath path;
+        Fm::FilePath path;
         if(pathName == "~") { // special case for home dir
-            path = Fm2::FilePath::homeDir();
+            path = Fm::FilePath::homeDir();
         }
         if(pathName[0] == '/') { // absolute path
-            path = Fm2::FilePath::fromLocalPath(pathName.constData());
+            path = Fm::FilePath::fromLocalPath(pathName.constData());
         }
         else if(pathName.contains(":/")) { // URI
-            path = Fm2::FilePath::fromUri(pathName.constData());
+            path = Fm::FilePath::fromUri(pathName.constData());
         }
         else { // basename
             if(Q_UNLIKELY(!cwd_path)) {
-                cwd_path = Fm2::FilePath::fromLocalPath(cwd.toLocal8Bit().constData());
+                cwd_path = Fm::FilePath::fromLocalPath(cwd.toLocal8Bit().constData());
             }
             path = cwd_path.relativePath(pathName.constData());
         }
@@ -512,15 +512,15 @@ void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) 
     Launcher(nullptr).launchPaths(nullptr, pathList);
 }
 
-void Application::openFolders(Fm2::FileInfoList files) {
+void Application::openFolders(Fm::FileInfoList files) {
     Launcher(nullptr).launchFiles(nullptr, std::move(files));
 }
 
-void Application::openFolderInTerminal(Fm2::FilePath path) {
+void Application::openFolderInTerminal(Fm::FilePath path) {
     if(!settings_.terminal().isEmpty()) {
-        Fm2::GErrorPtr err;
+        Fm::GErrorPtr err;
         auto terminalName = settings_.terminal().toUtf8();
-        if(!Fm2::launchTerminal(terminalName.constData(), path, err)) {
+        if(!Fm::launchTerminal(terminalName.constData(), path, err)) {
             QMessageBox::critical(nullptr, tr("Error"), err.message());
         }
     }

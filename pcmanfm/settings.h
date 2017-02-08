@@ -667,19 +667,19 @@ public:
     }
 
     void setThumbnailLocalFilesOnly(bool value) {
-        Fm2::ThumbnailJob::setLocalFilesOnly(value);
+        Fm::ThumbnailJob::setLocalFilesOnly(value);
     }
 
     bool thumbnailLocalFilesOnly() const {
-        return Fm2::ThumbnailJob::localFilesOnly();
+        return Fm::ThumbnailJob::localFilesOnly();
     }
 
     int maxThumbnailFileSize() const {
-        return Fm2::ThumbnailJob::maxThumbnailFileSize();
+        return Fm::ThumbnailJob::maxThumbnailFileSize();
     }
 
     void setMaxThumbnailFileSize(int size) {
-        Fm2::ThumbnailJob::setMaxThumbnailFileSize(size);
+        Fm::ThumbnailJob::setMaxThumbnailFileSize(size);
     }
 
     void setThumbnailIconSize(int thumbnailIconSize) {
@@ -749,11 +749,11 @@ public:
     }
 
     // per-folder settings
-    FolderSettings loadFolderSettings(const Fm2::FilePath& path) const;
+    FolderSettings loadFolderSettings(const Fm::FilePath& path) const;
 
-    void saveFolderSettings(const Fm2::FilePath& path, const FolderSettings& settings);
+    void saveFolderSettings(const Fm::FilePath& path, const FolderSettings& settings);
 
-    void clearFolderSettings(const Fm2::FilePath& path) const;
+    void clearFolderSettings(const Fm::FilePath& path) const;
 
 private:
     QString profileName_;

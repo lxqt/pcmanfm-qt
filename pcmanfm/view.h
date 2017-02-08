@@ -51,7 +51,7 @@ public:
     }
 
 Q_SIGNALS:
-    void openDirRequested(const Fm2::FilePath& path, int target);
+    void openDirRequested(const Fm::FilePath& path, int target);
 
 protected Q_SLOTS:
     void onNewWindow();
@@ -60,7 +60,7 @@ protected Q_SLOTS:
     void onSearch();
 
 protected:
-    virtual void onFileClicked(int type, const std::shared_ptr<const Fm2::FileInfo>& fileInfo);
+    virtual void onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo);
     virtual void prepareFileMenu(Fm::FileMenu* menu);
     virtual void prepareFolderMenu(Fm::FolderMenu* menu);
 

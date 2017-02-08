@@ -38,7 +38,7 @@ AutoRunDialog::AutoRunDialog(GVolume* volume, GMount* mount, QWidget* parent, Qt
     ui.setupUi(this);
 
     GIcon* gicon = g_volume_get_icon(volume);
-    QIcon icon = Fm2::IconInfo::fromGIcon(gicon)->qicon();
+    QIcon icon = Fm::IconInfo::fromGIcon(gicon)->qicon();
     ui.icon->setPixmap(icon.pixmap(QSize(48, 48)));
 
     // add actions
@@ -77,7 +77,7 @@ void AutoRunDialog::accept() {
             // the default action, open the mounted folder in the file manager
             Application* app = static_cast<Application*>(qApp);
             Settings& settings = app->settings();
-            Fm2::FilePath path{gf, true};
+            Fm::FilePath path{gf, true};
             // open the path in a new window
             // FIXME: or should we open it in a new tab? Make this optional later
             MainWindow* win = new MainWindow(path);
@@ -119,7 +119,7 @@ void AutoRunDialog::onContentTypeFinished(GMount* mount, GAsyncResult* res, Auto
             for(GList* l = pThis->applications; l; l = l->next, ++pos) {
                 GAppInfo* app = G_APP_INFO(l->data);
                 GIcon* gicon = g_app_info_get_icon(app);
-                QIcon icon = Fm2::IconInfo::fromGIcon(gicon)->qicon();
+                QIcon icon = Fm::IconInfo::fromGIcon(gicon)->qicon();
                 QString text = QString::fromUtf8(g_app_info_get_name(app));
                 QListWidgetItem* item = new QListWidgetItem(icon, text);
                 item->setData(Qt::UserRole, qVariantFromValue<void*>(app));
