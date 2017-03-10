@@ -84,6 +84,14 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
   ui.imageFile->setText(settings.wallpaper());
 
+  ui.slideShow->setChecked(settings.slideShowInterval() > 0);
+  ui.imageFolder->setText(settings.wallpaperDir());
+  int minutes = qMax(settings.slideShowInterval() / 60000, 5); // 5 min at least
+  ui.hours->setValue(minutes / 60);
+  ui.minutes->setValue(minutes % 60);
+  ui.randomize->setChecked(settings.wallpaperRandomize());
+  connect(ui.folderBrowse, &QPushButton::clicked, this, &DesktopPreferencesDialog::onFolderBrowseClicked);
+
   for(std::size_t i = 0; i < G_N_ELEMENTS(iconSizes); ++i) {
     int size = iconSizes[i];
     ui.iconSize->addItem(QString("%1 x %1").arg(size), size);
@@ -145,12 +153,22 @@ void DesktopPreferencesDialog::applySettings()
   settings.setWallpaper(ui.imageFile->text());
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
   settings.setWallpaperMode(mode);
+
+  settings.setWallpaperDir(ui.imageFolder->text());
+  int interval = 0;
+  if(ui.slideShow->isChecked())
+    interval = (ui.minutes->value() + 60 * ui.hours->value()) * 60000;
+  settings.setSlideShowInterval(interval);
+  settings.setWallpaperRandomize(ui.randomize->isChecked());
+
   settings.setDesktopIconSize(ui.iconSize->itemData(ui.iconSize->currentIndex()).toInt());
+
   settings.setDesktopFont(ui.font->font());
   settings.setDesktopBgColor(ui.backgroundColor->color());
   settings.setDesktopFgColor(ui.textColor->color());
   settings.setDesktopShadowColor(ui.shadowColor->color());
   settings.setShowWmMenu(ui.showWmMenu->isChecked());
+
   settings.setDesktopCellMargins(QSize(ui.hMargin->value(), ui.vMargin->value()));
 
   settings.save();
@@ -198,6 +216,19 @@ void DesktopPreferencesDialog::onBrowseClicked() {
     QString filename;
     filename = dlg.selectedFiles().first();
     ui.imageFile->setText(filename);
+  }
+}
+
+void DesktopPreferencesDialog::onFolderBrowseClicked() {
+  QFileDialog dlg;
+  dlg.setAcceptMode(QFileDialog::AcceptOpen);
+  dlg.setFileMode(QFileDialog::Directory);
+  dlg.setOption(QFileDialog::ShowDirsOnly);
+  dlg.setDirectory(QDir::home().path());
+  if(dlg.exec() == QDialog::Accepted) {
+    QString foldername;
+    foldername = dlg.selectedFiles().first();
+    ui.imageFolder->setText(foldername);
   }
 }
 
