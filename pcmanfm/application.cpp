@@ -82,6 +82,14 @@ Application::Application(int& argc, char** argv):
   userDirsWatcher_(NULL),
   lxqtRunning_(false) {
 
+  // handle some signals by quitting gracefully
+  auto handler = [](int sig) -> void {
+    Q_UNUSED (sig);
+    QCoreApplication::quit();
+  };
+  for(int sig : {SIGQUIT, SIGINT, SIGTERM, SIGHUP})
+    signal(sig, handler);
+
   argc_ = argc;
   argv_ = argv;
 
