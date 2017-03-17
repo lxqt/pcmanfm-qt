@@ -381,6 +381,10 @@ void MainWindow::onPathBarMiddleClickChdir(FmPath* dirPath) {
   addTab(dirPath);
 }
 
+void MainWindow::onPathBarMiddleClickChdir(FmPath* dirPath) {
+  addTab(dirPath);
+}
+
 void MainWindow::on_actionGoUp_triggered() {
   TabPage* page = currentPage();
 
