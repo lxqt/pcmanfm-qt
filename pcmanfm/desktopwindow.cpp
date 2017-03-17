@@ -544,7 +544,10 @@ void DesktopWindow::paintBackground(QPaintEvent *event) {
     painter.fillRect(event->rect(), QBrush(bgColor_));
   }
   else {
-    painter.drawPixmap(event->rect(), wallpaperPixmap_, event->rect());
+    if(wallpaperMode_ == WallpaperTile)
+      painter.drawTiledPixmap(event->rect(), wallpaperPixmap_);
+    else
+      painter.drawPixmap(event->rect(), wallpaperPixmap_, event->rect());
   }
 }
 
