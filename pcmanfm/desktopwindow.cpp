@@ -330,6 +330,15 @@ void DesktopWindow::updateWallpaper() {
           image = loadWallpaperFile(desiredSize); // load the scaled image
         }
       }
+      else if(wallpaperMode_ == WallpaperZoom) {
+        // calculate the desired size
+        QSize origSize = QImageReader(wallpaperFile_).size();
+        if(origSize.isValid()) {
+          QSize desiredSize = origSize;
+          desiredSize.scale(width(), height(), Qt::KeepAspectRatioByExpanding);
+          image = loadWallpaperFile(desiredSize);
+        }
+      }
       if(!image.isNull()) {
         pixmap = QPixmap(size());
         QPainter painter(&pixmap);
