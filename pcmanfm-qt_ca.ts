@@ -242,7 +242,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="202"/>
         <source>Select font:</source>
-        <translation>Seleccioneu el tipus de lletra:</translation>
+        <translation>Seleccioneu la lletra:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="24"/>
