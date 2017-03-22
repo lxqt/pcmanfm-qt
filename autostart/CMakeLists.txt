@@ -1,12 +1,7 @@
 cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 
-file(GLOB DESKTOP_FILES_IN *.desktop.in)
+file(GLOB DESKTOP_FILES *.desktop)
 
-# Translations **********************************
-lxqt_translate_desktop(DESKTOP_FILES
-    SOURCES
-        ${DESKTOP_FILES_IN}
-)
 add_custom_target(autostart_desktop_files ALL DEPENDS ${DESKTOP_FILES})
 #************************************************
 
