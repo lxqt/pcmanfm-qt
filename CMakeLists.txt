@@ -61,3 +61,7 @@ if(BUILD_DOCUMENTATION)
     )
     install(DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/docs" DESTINATION "${CMAKE_INSTALL_DOCDIR}")
 endif()
+
+# merged from lxqt-common
+add_subdirectory(autostart)
+add_subdirectory(config)
