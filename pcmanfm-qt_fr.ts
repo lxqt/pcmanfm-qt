@@ -69,7 +69,7 @@ Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
     <message>
         <location filename="../../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="100"/>
@@ -95,7 +95,24 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestionnaire de fichiers de PCMan
+
+Copyright © 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Ce programme est un logiciel libre ; vous pouvez le redistribuer et/ou
+ le modifier suivant les termes de la “GNU General Public License”
+ telle que publiée par la Free Software Foundation, soit en version 2,
+ soit (à votre gré) toute version ultérieure.
+
+Ce programme est distribué dans l&apos;espoir qu&apos;il vous sera utile,
+ mais SANS AUCUNE GARANTIE ; sans même la garantie implicite
+ de COMMERCIALISABILITÉ, ni d’ADÉQUATION À UN OBJECTIF PARTICULIER
+. Consultez la Licence Générale Publique GNU pour plus de détails.
+
+Vous devriez avoir reçu une copie de la licence publique générale GNU
+ avec ce programme ; si ce n&apos;est pas le cas, écrivez à la fondation pour le logiciel libre à l&apos;adresse ci-dessous :
+Free Software Foundation, Inc.n 51 Franklin Street,
+Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
 </context>
 <context>
@@ -131,42 +148,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion au serveur distant</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion &amp;anonyme</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion en &amp;utilisateur :</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Spécifier le répertoire distant auquel connecter</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Type :</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Port :</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Chemin :</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hôte :</translation>
     </message>
 </context>
 <context>
@@ -336,112 +353,142 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
 <context>
     <name>FindFilesDialog</name>
     <message>
+        <location filename="../../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation type="vanished">Recherche de fichiers</translation>
+        <translation>Recherche de fichiers</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation type="vanished">Nom/Emplacement</translation>
+        <translation>Nom/Emplacement</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="vanished">Motifs du nom de fichier</translation>
+        <translation>Motifs du nom de fichier</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="vanished">Motif :</translation>
+        <translation>Motif :</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="46"/>
+        <location filename="../../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation type="vanished">Insensible à la casse</translation>
+        <translation>Insensible à la casse</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="53"/>
+        <location filename="../../file-search.ui" line="228"/>
         <source>Use regular expression</source>
-        <translation type="vanished">Utiliser les expressions rationnelles</translation>
+        <translation>Utiliser les expressions rationnelles</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation type="vanished">Emplacements de recherche</translation>
+        <translation>Emplacements de recherche</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation type="vanished">Ajouter</translation>
+        <translation>Ajouter</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="88"/>
         <source>Remove</source>
-        <translation type="vanished">Supprimer</translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="117"/>
         <source>Search in sub directories</source>
-        <translation type="vanished">Rechercher dans les sous-répertoires</translation>
+        <translation>Rechercher dans les sous-répertoires</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="124"/>
         <source>Search hidden files</source>
-        <translation type="vanished">Rechercher les fichiers cachés</translation>
+        <translation>Rechercher les fichiers cachés</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="135"/>
+        <location filename="../../file-search.ui" line="141"/>
         <source>File Type</source>
-        <translation type="vanished">Type de fichiers</translation>
+        <translation>Type de fichiers</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="147"/>
         <source>Only search for files of following types:</source>
-        <translation type="vanished">Ne rechercher que les fichiers des types suivants :</translation>
+        <translation>Ne rechercher que les fichiers des types suivants :</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="154"/>
         <source>Text files</source>
-        <translation type="vanished">Fichiers texte</translation>
+        <translation>Fichiers texte</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="161"/>
         <source>Image files</source>
-        <translation type="vanished">Fichiers images</translation>
+        <translation>Fichiers images</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="168"/>
         <source>Audio files</source>
-        <translation type="vanished">Fichiers audio</translation>
+        <translation>Fichiers audio</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="175"/>
         <source>Video files</source>
-        <translation type="vanished">Fichiers vidéo</translation>
+        <translation>Fichiers vidéo</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="182"/>
         <source>Documents</source>
-        <translation type="vanished">Documents</translation>
+        <translation>Documents</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="206"/>
         <source>Content</source>
-        <translation type="vanished">Contenu</translation>
+        <translation>Contenu</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="212"/>
         <source>File contains</source>
-        <translation type="vanished">Fichiers contenant</translation>
+        <translation>Fichiers contenant</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="252"/>
         <source>Properties</source>
-        <translation type="vanished">Propriétés</translation>
+        <translation>Propriétés</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="258"/>
         <source>File Size</source>
-        <translation type="vanished">Taille de fichier</translation>
+        <translation>Taille de fichier</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation type="vanished">Plus grands que :</translation>
+        <translation>Plus grands que :</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation type="vanished">Plus petits que :</translation>
+        <translation>Plus petits que :</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="317"/>
         <source>Last Modified Time</source>
-        <translation type="vanished">Dernière modification</translation>
+        <translation>Dernière modification</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="323"/>
         <source>Earlier than:</source>
-        <translation type="vanished">Avant le :</translation>
+        <translation>Avant le :</translation>
     </message>
     <message>
+        <location filename="../../file-search.ui" line="340"/>
         <source>Later than:</source>
-        <translation type="vanished">Après le :</translation>
+        <translation>Après le :</translation>
     </message>
 </context>
 <context>
@@ -484,12 +531,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../../main-win.ui" line="178"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>Barre des &amp;outils</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="185"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barre des &amp;chemins</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="305"/>
@@ -694,7 +741,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../../main-win.ui" line="781"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barre des &amp;menus</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="807"/>
@@ -704,17 +751,17 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../../main-win.ui" line="812"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Connecter au &amp;serveur</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="820"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Emplacement</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="828"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>Bo&amp;utons des chemins</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="773"/>
@@ -1092,32 +1139,32 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav sécurisé</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1150,7 +1197,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoomer l&apos;image pour remplir l&apos;écran</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="186"/>
@@ -1161,12 +1208,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../../desktopwindow.cpp" line="367"/>
+        <location filename="../../desktopwindow.cpp" line="362"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Res&amp;ter à la position actuelle</translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="389"/>
+        <location filename="../../desktopwindow.cpp" line="384"/>
         <source>Desktop Preferences</source>
         <translation>Préférences du bureau</translation>
     </message>
@@ -1189,28 +1236,28 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
         <translation>Cela permet de masquer complètement la barre de menus, utilisez Ctrl + M pour la montrer à nouveau.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="626"/>
+        <location filename="../../mainwindow.cpp" line="630"/>
         <source>Version: %1</source>
         <translation>Version : %1</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1172"/>
+        <location filename="../../mainwindow.cpp" line="1176"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mettre à la corbeille</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1172"/>
+        <location filename="../../mainwindow.cpp" line="1176"/>
         <source>&amp;Delete</source>
         <translation>&amp;Supprimer</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1241"/>
-        <location filename="../../mainwindow.cpp" line="1252"/>
+        <location filename="../../mainwindow.cpp" line="1245"/>
+        <location filename="../../mainwindow.cpp" line="1256"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1252"/>
+        <location filename="../../mainwindow.cpp" line="1256"/>
         <source>Switch user command is not set.</source>
         <translation>La commande de changement d’utilisateur n&apos;est pas configurée.</translation>
     </message>
@@ -1218,22 +1265,22 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="189"/>
+        <location filename="../../preferencesdialog.cpp" line="188"/>
         <source>Icon View</source>
         <translation>Vue en icônes</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="190"/>
+        <location filename="../../preferencesdialog.cpp" line="189"/>
         <source>Compact View</source>
         <translation>Vue compacte</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="191"/>
+        <location filename="../../preferencesdialog.cpp" line="190"/>
         <source>Thumbnail View</source>
         <translation>Vue en vignettes</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="192"/>
+        <location filename="../../preferencesdialog.cpp" line="191"/>
         <source>Detailed List View</source>
         <translation>Vue en liste détaillée</translation>
     </message>
@@ -1266,13 +1313,10 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
             <numerusform> (%n cachés)</numerusform>
         </translation>
     </message>
-    <message numerus="yes">
+    <message>
         <location filename="../../tabpage.cpp" line="451"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform>%n item(s) selectionné(s)</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation>%n item(s) selectionné(s)</translation>
     </message>
 </context>
 <context>
