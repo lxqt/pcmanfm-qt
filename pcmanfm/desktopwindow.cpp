@@ -37,6 +37,7 @@
 #include <QDropEvent>
 #include <QMimeData>
 #include <QPaintEvent>
+#include <QTextEdit>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -119,6 +120,8 @@ DesktopWindow::DesktopWindow(int screenNum):
   // set our own delegate
   delegate_ = new DesktopItemDelegate(listView_);
   listView_->setItemDelegateForColumn(Fm::FolderModel::ColumnFileName, delegate_);
+  // inline renaming
+  connect(delegate_, &QAbstractItemDelegate::closeEditor, this, &DesktopWindow::onClosingEditor);
 
   // remove frame
   listView_->setFrameShape(QFrame::NoFrame);
@@ -843,6 +846,44 @@ static void forwardMouseEventToRoot(QMouseEvent* event) {
 
   xcb_send_event(QX11Info::connection(), 0, root, mask, (char*)&xcb_event);
   xcb_flush(QX11Info::connection());
+}
+
+void DesktopWindow::onClosingEditor(QWidget* editor, QAbstractItemDelegate::EndEditHint hint) {
+  if (hint != QAbstractItemDelegate::NoHint)
+    return; // we set the hint to NoHint in DesktopItemDelegate::eventFilter()
+  QString newName = reinterpret_cast<QTextEdit*>(editor)->toPlainText();
+  editor->deleteLater();
+  if (newName.isEmpty())
+    return;
+
+  QModelIndex index = listView_->selectionModel()->currentIndex();
+  if(index.isValid() && index.model()) {
+    QVariant data = index.model()->data(index, Fm::FolderModel::FileInfoRole);
+    FmFileInfo* file = (FmFileInfo*)data.value<void*>();
+    if(file) {
+      FmPath* path = fm_file_info_get_path(file);
+      QString oldName = QString::fromLocal8Bit(fm_path_get_basename(path));
+      if(newName == oldName)
+        return;
+      GFile* gf = fm_path_to_gfile(path);
+      GFile* parent_gf = g_file_get_parent(gf);
+      GFile* dest = g_file_get_child(G_FILE(parent_gf), newName.toLocal8Bit().constData());
+      g_object_unref(parent_gf);
+
+      GError* err = NULL;
+      if(!g_file_move(gf, dest,
+                      GFileCopyFlags(G_FILE_COPY_ALL_METADATA |
+                                     G_FILE_COPY_NO_FALLBACK_FOR_MOVE |
+                                     G_FILE_COPY_NOFOLLOW_SYMLINKS),
+                      NULL, /* make this cancellable later. */
+                      NULL, NULL, &err)) {
+          QMessageBox::critical(nullptr, QObject::tr("Error"), err->message);
+          g_error_free(err);
+      }
+      g_object_unref(dest);
+      g_object_unref(gf);
+    }
+  }
 }
 
 bool DesktopWindow::event(QEvent* event)
