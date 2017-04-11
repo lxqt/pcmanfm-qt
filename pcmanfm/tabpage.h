@@ -38,7 +38,7 @@ class FileLauncher;
 class FolderModel;
 class ProxyFolderModel;
 class CachedFolderModel;
-};
+}
 
 namespace PCManFM {
 

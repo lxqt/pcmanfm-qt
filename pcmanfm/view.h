@@ -68,5 +68,5 @@ private:
 
 };
 
-};
+}
 #endif // PCMANFM_FOLDERVIEW_H
