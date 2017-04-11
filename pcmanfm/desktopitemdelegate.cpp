@@ -64,16 +64,18 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     else {
         iconMode = QIcon::Disabled;
     }
-    QPoint iconPos(opt.rect.x() + (opt.rect.width() - opt.decorationSize.width()) / 2, opt.rect.y());
-    QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
-    painter->drawPixmap(iconPos, pixmap);
+    QPoint iconPos(opt.rect.x() + (opt.rect.width() - option.decorationSize.width()) / 2, opt.rect.y());
+    QPixmap pixmap = opt.icon.pixmap(option.decorationSize, iconMode);
+    // in case the pixmap is smaller than the requested size
+    QSize margin = ((option.decorationSize - pixmap.size()) / 2).expandedTo(QSize(0, 0));
+    painter->drawPixmap(iconPos + QPoint(margin.width(), margin.height()), pixmap);
 
     // draw some emblems for the item if needed
     // we only support symlink emblem at the moment
     auto file = index.data(Fm::FolderModel::FileInfoRole).value<std::shared_ptr<const Fm::FileInfo>>();
     if(file) {
         if(file->isSymlink()) {
-            painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
+            painter->drawPixmap(iconPos, symlinkIcon_.pixmap(option.decorationSize / 2, iconMode));
         }
     }
     // FIXME: draw other emblems
@@ -81,9 +83,9 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     // draw text
     QSize gridSize = view_->gridSize() - 2 * margins_;
     QRectF textRect(opt.rect.x() - (gridSize.width() - opt.rect.width()) / 2,
-                    opt.rect.y() + opt.decorationSize.height(),
+                    opt.rect.y() + option.decorationSize.height(),
                     gridSize.width(),
-                    gridSize.height() - opt.decorationSize.height());
+                    gridSize.height() - option.decorationSize.height());
     drawText(painter, opt, textRect);
 
     if(opt.state & QStyle::State_HasFocus) {
@@ -199,10 +201,10 @@ QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QM
 
     QSize gridSize = view_->gridSize() - 2 * margins_;
     Q_ASSERT(gridSize != QSize());
-    QRectF textRect(0, 0, gridSize.width(), gridSize.height() - opt.decorationSize.height());
+    QRectF textRect(0, 0, gridSize.width(), gridSize.height() - option.decorationSize.height());
     drawText(nullptr, opt, textRect); // passing nullptr for painter will calculate the bounding rect only.
-    int width = qMax((int)textRect.width(), opt.decorationSize.width());
-    int height = opt.decorationSize.height() + textRect.height();
+    int width = qMax((int)textRect.width(), option.decorationSize.width());
+    int height = option.decorationSize.height() + textRect.height();
     return QSize(width, height);
 }
 
