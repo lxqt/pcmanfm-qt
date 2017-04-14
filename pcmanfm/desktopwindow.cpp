@@ -497,7 +497,7 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
                 return elem.second == tl;
             });
 
-            if(existingItem != customItemPos_.cend() // don't put items on each other
+            if(existingItem == customItemPos_.cend() // don't put items on each other
                     && tl.x() >= workArea.x() && tl.y() >= workArea.y()
                     && tl.x() + listView_->gridSize().width() <= workArea.right() + 1 // for historical reasons (-> Qt doc)
                     && tl.y() + listView_->gridSize().height() <= workArea.bottom() + 1) { // as above
