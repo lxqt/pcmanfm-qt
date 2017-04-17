@@ -27,16 +27,18 @@
 #include <libfm-qt/browsehistory.h>
 #include "view.h"
 #include <libfm-qt/path.h>
-#include <libfm-qt/folder.h>
-#include <libfm-qt/fileinfo.h>
 #include "settings.h"
 
+#include <libfm-qt/core/fileinfo.h>
+#include <libfm-qt/core/filepath.h>
+#include <libfm-qt/core/folder.h>
+
 namespace Fm {
-  class FileLauncher;
-  class FolderModel;
-  class ProxyFolderModel;
-  class CachedFolderModel;
-};
+class FileLauncher;
+class FolderModel;
+class ProxyFolderModel;
+class CachedFolderModel;
+}
 
 namespace PCManFM {
 
@@ -44,205 +46,199 @@ class Launcher;
 
 class ProxyFilter : public Fm::ProxyFolderModelFilter {
 public:
-  bool filterAcceptsRow(const Fm::ProxyFolderModel* model, FmFileInfo* info) const;
-  virtual ~ProxyFilter() {}
-  void setVirtHidden(Fm::Folder folder);
-  QString getFilterStr() {
-    return filterStr_;
-  }
-  void setFilterStr(QString str) {
-    filterStr_ = str;
-  }
+    bool filterAcceptsRow(const Fm::ProxyFolderModel* model, const std::shared_ptr<const Fm::FileInfo>& info) const;
+    virtual ~ProxyFilter() {}
+    void setVirtHidden(const std::shared_ptr<Fm::Folder>& folder);
+    QString getFilterStr() {
+        return filterStr_;
+    }
+    void setFilterStr(QString str) {
+        filterStr_ = str;
+    }
 
 private:
-  QString filterStr_;
-  QStringList virtHiddenList_;
+    QString filterStr_;
+    QStringList virtHiddenList_;
 };
 
 class TabPage : public QWidget {
-Q_OBJECT
+    Q_OBJECT
 
 public:
-  enum StatusTextType {
-    StatusTextNormal,
-    StatusTextSelectedFiles,
-    StatusTextFSInfo,
-    StatusTextNum
-  };
+    enum StatusTextType {
+        StatusTextNormal,
+        StatusTextSelectedFiles,
+        StatusTextFSInfo,
+        StatusTextNum
+    };
 
 public:
-  explicit TabPage(Fm::Path path, QWidget* parent = nullptr);
-  virtual ~TabPage();
+    explicit TabPage(QWidget* parent = nullptr);
+    virtual ~TabPage();
 
-  void chdir(Fm::Path newPath, bool addHistory = true);
+    void chdir(Fm::FilePath newPath, bool addHistory = true);
 
-  Fm::FolderView::ViewMode viewMode() {
-    return folderSettings_.viewMode();
-  }
-
-  void setViewMode(Fm::FolderView::ViewMode mode);
-
-  void sort(int col, Qt::SortOrder order = Qt::AscendingOrder);
-
-  int sortColumn() {
-    return folderSettings_.sortColumn();
-  }
-
-  Qt::SortOrder sortOrder() {
-    return folderSettings_.sortOrder();
-  }
-
-  bool sortFolderFirst() {
-    return folderSettings_.sortFolderFirst();
-  }
-  void setSortFolderFirst(bool value);
-
-  bool sortCaseSensitive() {
-    return folderSettings_.sortCaseSensitive();
-  }
-
-  void setSortCaseSensitive(bool value);
-
-  bool showHidden() {
-    return folderSettings_.showHidden();
-  }
-
-  void setShowHidden(bool showHidden);
-
-  Fm::Path path() {
-    return Fm::Path(!folder_.isNull() ? folder_.getPath() : nullptr);
-  }
-
-  QString pathName();
-
-  Fm::Folder& folder() {
-    return folder_;
-  }
-
-  Fm::FolderModel* folderModel() {
-    return reinterpret_cast<Fm::FolderModel*>(folderModel_);
-  }
-
-  View* folderView() {
-    return folderView_;
-  }
-
-  Fm::BrowseHistory& browseHistory() {
-    return history_;
-  }
-
-  Fm::FileInfoList selectedFiles() {
-    return folderView_->selectedFiles();
-  }
-
-  Fm::PathList selectedFilePaths() {
-    return folderView_->selectedFilePaths();
-  }
-
-  void selectAll();
-
-  void invertSelection();
-
-  void reload() {
-    if(!folder_.isNull()) {
-      proxyFilter_->setVirtHidden(folder_); // reread ".hidden"
-      folder_.reload();
+    Fm::FolderView::ViewMode viewMode() {
+        return folderSettings_.viewMode();
     }
-  }
 
-  QString title() const {
-    return title_;
-  }
+    void setViewMode(Fm::FolderView::ViewMode mode);
 
-  QString statusText(StatusTextType type = StatusTextNormal) const {
-    return statusText_[type];
-  }
+    void sort(int col, Qt::SortOrder order = Qt::AscendingOrder);
 
-  bool canBackward() {
-    return history_.canBackward();
-  }
+    int sortColumn() {
+        return folderSettings_.sortColumn();
+    }
 
-  void backward();
+    Qt::SortOrder sortOrder() {
+        return folderSettings_.sortOrder();
+    }
 
-  bool canForward() {
-    return history_.canForward();
-  }
+    bool sortFolderFirst() {
+        return folderSettings_.sortFolderFirst();
+    }
+    void setSortFolderFirst(bool value);
 
-  void forward();
+    bool sortCaseSensitive() {
+        return folderSettings_.sortCaseSensitive();
+    }
 
-  void jumpToHistory(int index);
+    void setSortCaseSensitive(bool value);
 
-  bool canUp();
+    bool showHidden() {
+        return folderSettings_.showHidden();
+    }
 
-  void up();
+    void setShowHidden(bool showHidden);
 
-  void updateFromSettings(Settings& settings);
+    Fm::FilePath path() {
+        return folder_ ? folder_->path() : Fm::FilePath();
+    }
 
-  void setFileLauncher(Fm::FileLauncher* launcher) {
-    folderView_->setFileLauncher(launcher);
-  }
+    QString pathName();
 
-  Fm::FileLauncher* fileLauncher() {
-    return folderView_->fileLauncher();
-  }
+    const std::shared_ptr<Fm::Folder>& folder() {
+        return folder_;
+    }
 
-  QString getFilterStr() {
-    if(proxyFilter_)
-      return proxyFilter_->getFilterStr();
-    return QString();
-  }
+    Fm::FolderModel* folderModel() {
+        return reinterpret_cast<Fm::FolderModel*>(folderModel_);
+    }
 
-  void setFilterStr(QString str) {
-    if(proxyFilter_)
-      proxyFilter_->setFilterStr(str);
-  }
+    View* folderView() {
+        return folderView_;
+    }
 
-  void applyFilter();
+    Fm::BrowseHistory& browseHistory() {
+        return history_;
+    }
 
-  bool hasCustomizedView() {
-    return folderSettings_.isCustomized();
-  }
+    Fm::FileInfoList selectedFiles() {
+        return folderView_->selectedFiles();
+    }
 
-  void setCustomizedView(bool value);
+    Fm::FilePathList selectedFilePaths() {
+        return folderView_->selectedFilePaths();
+    }
+
+    void selectAll();
+
+    void invertSelection();
+
+    void reload();
+
+    QString statusText(StatusTextType type = StatusTextNormal) const {
+        return statusText_[type];
+    }
+
+    bool canBackward() {
+        return history_.canBackward();
+    }
+
+    void backward();
+
+    bool canForward() {
+        return history_.canForward();
+    }
+
+    void forward();
+
+    void jumpToHistory(int index);
+
+    bool canUp();
+
+    void up();
+
+    void updateFromSettings(Settings& settings);
+
+    void setFileLauncher(Fm::FileLauncher* launcher) {
+        folderView_->setFileLauncher(launcher);
+    }
+
+    Fm::FileLauncher* fileLauncher() {
+        return folderView_->fileLauncher();
+    }
+
+    QString getFilterStr() {
+        if(proxyFilter_) {
+            return proxyFilter_->getFilterStr();
+        }
+        return QString();
+    }
+
+    void setFilterStr(QString str) {
+        if(proxyFilter_) {
+            proxyFilter_->setFilterStr(str);
+        }
+    }
+
+    void applyFilter();
+
+    bool hasCustomizedView() {
+        return folderSettings_.isCustomized();
+    }
+
+    void setCustomizedView(bool value);
 
 Q_SIGNALS:
-  void statusChanged(int type, QString statusText);
-  void titleChanged(QString title);
-  void openDirRequested(FmPath* path, int target);
-  void sortFilterChanged();
-  void forwardRequested();
-  void backwardRequested();
+    void statusChanged(int type, QString statusText);
+    void titleChanged(QString title);
+    void openDirRequested(const Fm::FilePath& path, int target);
+    void sortFilterChanged();
+    void forwardRequested();
+    void backwardRequested();
 
 protected Q_SLOTS:
-  void onOpenDirRequested(FmPath* path, int target);
-  void onSelChanged(int numSel);
-  void restoreScrollPos();
+    void onSelChanged();
+    void restoreScrollPos();
 
 private:
-  void freeFolder();
-  QString formatStatusText();
+    void freeFolder();
+    QString formatStatusText();
 
-  static void onFolderStartLoading(FmFolder* _folder, TabPage* pThis);
-  static void onFolderFinishLoading(FmFolder* _folder, TabPage* pThis);
-  static FmJobErrorAction onFolderError(FmFolder* _folder, GError* err, FmJobErrorSeverity severity, TabPage* pThis);
-  static void onFolderFsInfo(FmFolder* _folder, TabPage* pThis);
-  static void onFolderRemoved(FmFolder* _folder, TabPage* pThis);
-  static void onFolderUnmount(FmFolder* _folder, TabPage* pThis);
-  static void onFolderContentChanged(FmFolder* _folder, TabPage* pThis);
+    void onFolderStartLoading();
+    void onFolderFinishLoading();
+
+    // FIXME: this API design is bad and might be removed later
+    void onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity severity, Fm::Job::ErrorAction& response);
+
+    void onFolderFsInfo();
+    void onFolderRemoved();
+    void onFolderUnmount();
+    void onFolderContentChanged();
 
 private:
-  View* folderView_;
-  Fm::CachedFolderModel* folderModel_;
-  Fm::ProxyFolderModel* proxyModel_;
-  ProxyFilter* proxyFilter_;
-  QVBoxLayout* verticalLayout;
-  Fm::Folder folder_;
-  QString title_;
-  QString statusText_[StatusTextNum];
-  Fm::BrowseHistory history_; // browsing history
-  Fm::Path lastFolderPath_; // last browsed folder
-  bool overrideCursor_;
-  FolderSettings folderSettings_;
+    View* folderView_;
+    Fm::CachedFolderModel* folderModel_;
+    Fm::ProxyFolderModel* proxyModel_;
+    ProxyFilter* proxyFilter_;
+    QVBoxLayout* verticalLayout;
+    std::shared_ptr<Fm::Folder> folder_;
+    QString statusText_[StatusTextNum];
+    Fm::BrowseHistory history_; // browsing history
+    Fm::FilePath lastFolderPath_; // last browsed folder
+    bool overrideCursor_;
+    FolderSettings folderSettings_;
 };
 
 }

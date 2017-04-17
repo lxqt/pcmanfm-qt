@@ -21,15 +21,16 @@
 #include "launcher.h"
 #include "mainwindow.h"
 #include "application.h"
+#include <libfm-qt/core/filepath.h>
 
 namespace PCManFM {
 
 Launcher::Launcher(PCManFM::MainWindow* mainWindow):
-  Fm::FileLauncher(),
-  mainWindow_(mainWindow) {
+    Fm::FileLauncher(),
+    mainWindow_(mainWindow) {
 
-  Application* app = static_cast<Application*>(qApp);
-  setQuickExec(app->settings().quickExec());
+    Application* app = static_cast<Application*>(qApp);
+    setQuickExec(app->settings().quickExec());
 }
 
 Launcher::~Launcher() {
@@ -37,28 +38,31 @@ Launcher::~Launcher() {
 }
 
 bool Launcher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err) {
-  GList* l = folder_infos;
-  Fm::FileInfo fi = FM_FILE_INFO(l->data);
-  Application* app = static_cast<Application*>(qApp);
-  MainWindow* mainWindow = mainWindow_;
-  if(!mainWindow) {
-    mainWindow = new MainWindow(fi.getPath());
-    mainWindow->resize(app->settings().windowWidth(), app->settings().windowHeight());
+    GList* l = folder_infos;
+    FmFileInfo* fi = FM_FILE_INFO(l->data);
+    Application* app = static_cast<Application*>(qApp);
+    MainWindow* mainWindow = mainWindow_;
+    Fm::FilePath path{fm_path_to_gfile(fm_file_info_get_path(fi)), false};
+    if(!mainWindow) {
+        mainWindow = new MainWindow(std::move(path));
+        mainWindow->resize(app->settings().windowWidth(), app->settings().windowHeight());
 
-    if(app->settings().windowMaximized()) {
-        mainWindow->setWindowState(mainWindow->windowState() | Qt::WindowMaximized);
+        if(app->settings().windowMaximized()) {
+            mainWindow->setWindowState(mainWindow->windowState() | Qt::WindowMaximized);
+        }
     }
-  }
-  else
-    mainWindow->chdir(fi.getPath());
-  l = l->next;
-  for(; l; l = l->next) {
-    fi = FM_FILE_INFO(l->data);
-    mainWindow->addTab(fi.getPath());
-  }
-  mainWindow->show();
-  mainWindow->raise();
-  return true;
+    else {
+        mainWindow->chdir(std::move(path));
+    }
+    l = l->next;
+    for(; l; l = l->next) {
+        fi = FM_FILE_INFO(l->data);
+        path = Fm::FilePath{fm_path_to_gfile(fm_file_info_get_path(fi)), false};
+        mainWindow->addTab(std::move(path));
+    }
+    mainWindow->show();
+    mainWindow->raise();
+    return true;
 }
 
 } //namespace PCManFM

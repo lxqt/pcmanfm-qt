@@ -29,14 +29,14 @@ class MainWindow;
 
 class Launcher : public Fm::FileLauncher {
 public:
-  Launcher(MainWindow* mainWindow = NULL);
-  ~Launcher();
+    Launcher(MainWindow* mainWindow = nullptr);
+    ~Launcher();
 
 protected:
-  virtual bool openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err);
+    virtual bool openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err);
 
 private:
-  MainWindow* mainWindow_;
+    MainWindow* mainWindow_;
 };
 
 }

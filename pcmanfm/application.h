@@ -31,6 +31,9 @@
 #include <QTranslator>
 #include <gio/gio.h>
 
+#include <libfm-qt/core/filepath.h>
+#include <libfm-qt/core/fileinfo.h>
+
 class QScreen;
 
 class QFileSystemWatcher;
@@ -43,110 +46,110 @@ class PreferencesDialog;
 class DesktopPreferencesDialog;
 
 class ProxyStyle: public QProxyStyle {
-  Q_OBJECT
+    Q_OBJECT
 public:
-  ProxyStyle() : QProxyStyle() {}
-  virtual ~ProxyStyle() {}
-  virtual int styleHint(StyleHint hint, const QStyleOption * option = 0, const QWidget * widget = 0, QStyleHintReturn * returnData = 0) const;
+    ProxyStyle() : QProxyStyle() {}
+    virtual ~ProxyStyle() {}
+    virtual int styleHint(StyleHint hint, const QStyleOption* option = 0, const QWidget* widget = 0, QStyleHintReturn* returnData = 0) const;
 };
 
 class Application : public QApplication {
-  Q_OBJECT
-  Q_PROPERTY(bool desktopManagerEnabled READ desktopManagerEnabled)
+    Q_OBJECT
+    Q_PROPERTY(bool desktopManagerEnabled READ desktopManagerEnabled)
 
 public:
-  Application(int& argc, char** argv);
-  virtual ~Application();
+    Application(int& argc, char** argv);
+    virtual ~Application();
 
-  void init();
-  int exec();
+    void init();
+    int exec();
 
-  Settings& settings() {
-    return settings_;
-  }
+    Settings& settings() {
+        return settings_;
+    }
 
-  Fm::LibFmQt& libFm() {
-    return libFm_;
-  }
+    Fm::LibFmQt& libFm() {
+        return libFm_;
+    }
 
-  // public interface exported via dbus
-  void launchFiles(QString cwd, QStringList paths, bool inNewWindow);
-  void setWallpaper(QString path, QString modeString);
-  void preferences(QString page);
-  void desktopPrefrences(QString page);
-  void editBookmarks();
-  void desktopManager(bool enabled);
-  void findFiles(QStringList paths = QStringList());
-  void connectToServer();
+    // public interface exported via dbus
+    void launchFiles(QString cwd, QStringList paths, bool inNewWindow);
+    void setWallpaper(QString path, QString modeString);
+    void preferences(QString page);
+    void desktopPrefrences(QString page);
+    void editBookmarks();
+    void desktopManager(bool enabled);
+    void findFiles(QStringList paths = QStringList());
+    void connectToServer();
 
-  bool desktopManagerEnabled() {
-    return enableDesktopManager_;
-  }
+    bool desktopManagerEnabled() {
+        return enableDesktopManager_;
+    }
 
-  void updateFromSettings();
-  void updateDesktopsFromSettings();
+    void updateFromSettings();
+    void updateDesktopsFromSettings();
 
-  void openFolderInTerminal(Fm::Path path);
-  void openFolders(Fm::FileInfoList files);
+    void openFolderInTerminal(Fm::FilePath path);
+    void openFolders(Fm::FileInfoList files);
 
-  QString profileName() {
-    return profileName_;
-  }
+    QString profileName() {
+        return profileName_;
+    }
 
 protected Q_SLOTS:
-  void onAboutToQuit();
-  void onSigtermNotified();
+    void onAboutToQuit();
+    void onSigtermNotified();
 
-  void onLastWindowClosed();
-  void onSaveStateRequest(QSessionManager & manager);
-  void onScreenResized(int num);
-  void onScreenCountChanged(int newCount);
-  void initVolumeManager();
+    void onLastWindowClosed();
+    void onSaveStateRequest(QSessionManager& manager);
+    void onScreenResized(int num);
+    void onScreenCountChanged(int newCount);
+    void initVolumeManager();
 
-  void onVirtualGeometryChanged(const QRect& rect);
-  void onScreenDestroyed(QObject* screenObj);
-  void onScreenAdded(QScreen* newScreen);
-  void reloadDesktopsAsNeeded();
+    void onVirtualGeometryChanged(const QRect& rect);
+    void onScreenDestroyed(QObject* screenObj);
+    void onScreenAdded(QScreen* newScreen);
+    void reloadDesktopsAsNeeded();
 
-  void onFindFileAccepted();
-  void onConnectToServerAccepted();
+    void onFindFileAccepted();
+    void onConnectToServerAccepted();
 
 protected:
-  virtual bool eventFilter(QObject* watched, QEvent* event);
-  bool parseCommandLineArgs();
-  DesktopWindow* createDesktopWindow(int screenNum);
-  bool autoMountVolume(GVolume* volume, bool interactive = true);
+    virtual bool eventFilter(QObject* watched, QEvent* event);
+    bool parseCommandLineArgs();
+    DesktopWindow* createDesktopWindow(int screenNum);
+    bool autoMountVolume(GVolume* volume, bool interactive = true);
 
-  static void onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Application* pThis);
+    static void onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Application* pThis);
 
 private Q_SLOTS:
-  void onUserDirsChanged();
+    void onUserDirsChanged();
 
 private:
-  void initWatch();
-  void installSigtermHandler();
+    void initWatch();
+    void installSigtermHandler();
 
-  bool isPrimaryInstance;
-  Fm::LibFmQt libFm_;
-  Settings settings_;
-  QString profileName_;
-  bool daemonMode_;
-  bool enableDesktopManager_;
-  QVector<DesktopWindow*> desktopWindows_;
-  QPointer<PreferencesDialog> preferencesDialog_;
-  QPointer<DesktopPreferencesDialog> desktopPreferencesDialog_;
-  QPointer<Fm::EditBookmarksDialog> editBookmarksialog_;
-  QTranslator translator;
-  QTranslator qtTranslator;
-  GVolumeMonitor* volumeMonitor_;
+    bool isPrimaryInstance;
+    Fm::LibFmQt libFm_;
+    Settings settings_;
+    QString profileName_;
+    bool daemonMode_;
+    bool enableDesktopManager_;
+    QVector<DesktopWindow*> desktopWindows_;
+    QPointer<PreferencesDialog> preferencesDialog_;
+    QPointer<DesktopPreferencesDialog> desktopPreferencesDialog_;
+    QPointer<Fm::EditBookmarksDialog> editBookmarksialog_;
+    QTranslator translator;
+    QTranslator qtTranslator;
+    GVolumeMonitor* volumeMonitor_;
 
-  QFileSystemWatcher *userDirsWatcher_;
-  QString userDirsFile_;
-  QString userDesktopFolder_;
-  bool lxqtRunning_;
+    QFileSystemWatcher* userDirsWatcher_;
+    QString userDirsFile_;
+    QString userDesktopFolder_;
+    bool lxqtRunning_;
 
-  int argc_;
-  char** argv_;
+    int argc_;
+    char** argv_;
 };
 
 }

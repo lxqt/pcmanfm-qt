@@ -25,49 +25,48 @@
 #include "ui_preferences.h"
 #include <QString>
 
-namespace PCManFM
-{
+namespace PCManFM {
 
 class Settings;
 
 class PreferencesDialog : public QDialog {
-Q_OBJECT
+    Q_OBJECT
 
 public:
-  // activePage is the name of page to select (general, display, advanced...)
-  explicit PreferencesDialog(QString activePage = QString(), QWidget* parent = 0);
-  virtual ~PreferencesDialog();
+    // activePage is the name of page to select (general, display, advanced...)
+    explicit PreferencesDialog(QString activePage = QString(), QWidget* parent = 0);
+    virtual ~PreferencesDialog();
 
-  virtual void accept();
+    virtual void accept();
 
-  void selectPage(QString name);
+    void selectPage(QString name);
 
 protected Q_SLOTS:
-  void lockMargins(bool lock);
+    void lockMargins(bool lock);
 
 private:
-  void initIconThemes(Settings& settings);
-  void initArchivers(Settings& settings);
-  void initDisplayPage(Settings& settings);
-  void initUiPage(Settings& settings);
-  void initBehaviorPage(Settings& settings);
-  void initThumbnailPage(Settings& settings);
-  void initVolumePage(Settings& settings);
-  void initAdvancedPage(Settings& settings);
-  void initTerminals(Settings& settings);
+    void initIconThemes(Settings& settings);
+    void initArchivers(Settings& settings);
+    void initDisplayPage(Settings& settings);
+    void initUiPage(Settings& settings);
+    void initBehaviorPage(Settings& settings);
+    void initThumbnailPage(Settings& settings);
+    void initVolumePage(Settings& settings);
+    void initAdvancedPage(Settings& settings);
+    void initTerminals(Settings& settings);
 
-  void applyUiPage(Settings& settings);
-  void applyDisplayPage(Settings& settings);
-  void applyBehaviorPage(Settings& settings);
-  void applyThumbnailPage(Settings& settings);
-  void applyVolumePage(Settings& settings);
-  void applyAdvancedPage(Settings& settings);
+    void applyUiPage(Settings& settings);
+    void applyDisplayPage(Settings& settings);
+    void applyBehaviorPage(Settings& settings);
+    void applyThumbnailPage(Settings& settings);
+    void applyVolumePage(Settings& settings);
+    void applyAdvancedPage(Settings& settings);
 
-  void initFromSettings();
-  void applySettings();
+    void initFromSettings();
+    void applySettings();
 
 private:
-  Ui::PreferencesDialog ui;
+    Ui::PreferencesDialog ui;
 };
 
 }

@@ -22,10 +22,12 @@
 #define PCMANFM_FOLDERVIEW_H
 
 #include <libfm-qt/folderview.h>
+#include <libfm-qt/core/filepath.h>
+
 
 namespace Fm {
-  class FileMenu;
-  class FolderMenu;
+class FileMenu;
+class FolderMenu;
 }
 
 namespace PCManFM {
@@ -33,38 +35,38 @@ namespace PCManFM {
 class Settings;
 
 class View : public Fm::FolderView {
-Q_OBJECT
+    Q_OBJECT
 public:
 
-  explicit View(Fm::FolderView::ViewMode _mode = IconMode, QWidget* parent = 0);
-  virtual ~View();
+    explicit View(Fm::FolderView::ViewMode _mode = IconMode, QWidget* parent = 0);
+    virtual ~View();
 
-  void updateFromSettings(Settings& settings);
+    void updateFromSettings(Settings& settings);
 
-  QSize  getMargins() const {
-    return Fm::FolderView::getMargins();
-  }
-  void setMargins(QSize size) {
-    Fm::FolderView::setMargins(size);
-  }
+    QSize  getMargins() const {
+        return Fm::FolderView::getMargins();
+    }
+    void setMargins(QSize size) {
+        Fm::FolderView::setMargins(size);
+    }
 
 Q_SIGNALS:
-  void openDirRequested(FmPath* path, int target);
+    void openDirRequested(const Fm::FilePath& path, int target);
 
 protected Q_SLOTS:
-  void onNewWindow();
-  void onNewTab();
-  void onOpenInTerminal();
-  void onSearch();
+    void onNewWindow();
+    void onNewTab();
+    void onOpenInTerminal();
+    void onSearch();
 
 protected:
-  virtual void onFileClicked(int type, FmFileInfo* fileInfo);
-  virtual void prepareFileMenu(Fm::FileMenu* menu);
-  virtual void prepareFolderMenu(Fm::FolderMenu* menu);
+    virtual void onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo);
+    virtual void prepareFileMenu(Fm::FileMenu* menu);
+    virtual void prepareFolderMenu(Fm::FolderMenu* menu);
 
 private:
 
 };
 
-};
+}
 #endif // PCMANFM_FOLDERVIEW_H

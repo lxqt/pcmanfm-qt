@@ -32,12 +32,13 @@
 #include <QStackedWidget>
 #include <QSplitter>
 #include "launcher.h"
-#include <libfm-qt/bookmarks.h>
 #include <libfm-qt/path.h>
+#include <libfm-qt/core/filepath.h>
+#include <libfm-qt/core/bookmarks.h>
 
 namespace Fm {
-  class PathEdit;
-  class PathBar;
+class PathEdit;
+class PathBar;
 }
 
 namespace PCManFM {
@@ -46,162 +47,163 @@ class TabPage;
 class Settings;
 
 class MainWindow : public QMainWindow {
-Q_OBJECT
+    Q_OBJECT
 public:
-  MainWindow(Fm::Path path = Fm::Path());
-  virtual ~MainWindow();
+    MainWindow(Fm::FilePath path = Fm::FilePath());
+    virtual ~MainWindow();
 
-  void chdir(Fm::Path path);
-  int addTab(Fm::Path path);
+    void chdir(Fm::FilePath path);
+    int addTab(Fm::FilePath path);
 
-  TabPage* currentPage() {
-    return reinterpret_cast<TabPage*>(ui.stackedWidget->currentWidget());
-  }
+    TabPage* currentPage() {
+        return reinterpret_cast<TabPage*>(ui.stackedWidget->currentWidget());
+    }
 
-  void updateFromSettings(Settings& settings);
+    void updateFromSettings(Settings& settings);
 
-  static MainWindow* lastActive() {
-    return lastActive_;
-  }
+    static MainWindow* lastActive() {
+        return lastActive_;
+    }
 
 protected Q_SLOTS:
 
-  void onPathEntryReturnPressed();
-  void onPathEntryEdited(const QString& text);
-  void onPathBarChdir(FmPath* dirPath);
-  void onPathBarMiddleClickChdir(FmPath* dirPath);
+    void onPathEntryReturnPressed();
+    void onPathEntryEdited(const QString& text);
+    void onPathBarChdir(const Fm::FilePath& dirPath);
+    void onPathBarMiddleClickChdir(const Fm::FilePath &dirPath);
 
-  void on_actionNewTab_triggered();
-  void on_actionNewWin_triggered();
-  void on_actionNewFolder_triggered();
-  void on_actionNewBlankFile_triggered();
-  void on_actionCloseTab_triggered();
-  void on_actionCloseWindow_triggered();
-  void on_actionFileProperties_triggered();
-  void on_actionFolderProperties_triggered();
+    void on_actionNewTab_triggered();
+    void on_actionNewWin_triggered();
+    void on_actionNewFolder_triggered();
+    void on_actionNewBlankFile_triggered();
+    void on_actionCloseTab_triggered();
+    void on_actionCloseWindow_triggered();
+    void on_actionFileProperties_triggered();
+    void on_actionFolderProperties_triggered();
 
-  void on_actionCut_triggered();
-  void on_actionCopy_triggered();
-  void on_actionPaste_triggered();
-  void on_actionDelete_triggered();
-  void on_actionRename_triggered();
-  void on_actionSelectAll_triggered();
-  void on_actionInvertSelection_triggered();
-  void on_actionPreferences_triggered();
+    void on_actionCut_triggered();
+    void on_actionCopy_triggered();
+    void on_actionPaste_triggered();
+    void on_actionDelete_triggered();
+    void on_actionRename_triggered();
+    void on_actionSelectAll_triggered();
+    void on_actionInvertSelection_triggered();
+    void on_actionPreferences_triggered();
 
-  void on_actionGoBack_triggered();
-  void on_actionGoForward_triggered();
-  void on_actionGoUp_triggered();
-  void on_actionHome_triggered();
-  void on_actionReload_triggered();
-  void on_actionConnectToServer_triggered();
+    void on_actionGoBack_triggered();
+    void on_actionGoForward_triggered();
+    void on_actionGoUp_triggered();
+    void on_actionHome_triggered();
+    void on_actionReload_triggered();
+    void on_actionConnectToServer_triggered();
 
-  void on_actionIconView_triggered();
-  void on_actionCompactView_triggered();
-  void on_actionDetailedList_triggered();
-  void on_actionThumbnailView_triggered();
+    void on_actionIconView_triggered();
+    void on_actionCompactView_triggered();
+    void on_actionDetailedList_triggered();
+    void on_actionThumbnailView_triggered();
 
-  void on_actionGo_triggered();
-  void on_actionShowHidden_triggered(bool check);
-  void on_actionPreserveView_triggered(bool checked);
+    void on_actionGo_triggered();
+    void on_actionShowHidden_triggered(bool check);
+    void on_actionPreserveView_triggered(bool checked);
 
-  void on_actionByFileName_triggered(bool checked);
-  void on_actionByMTime_triggered(bool checked);
-  void on_actionByOwner_triggered(bool checked);
-  void on_actionByFileType_triggered(bool checked);
-  void on_actionByFileSize_triggered(bool checked);
-  void on_actionAscending_triggered(bool checked);
-  void on_actionDescending_triggered(bool checked);
-  void on_actionFolderFirst_triggered(bool checked);
-  void on_actionCaseSensitive_triggered(bool checked);
-  void on_actionFilter_triggered(bool checked);
+    void on_actionByFileName_triggered(bool checked);
+    void on_actionByMTime_triggered(bool checked);
+    void on_actionByOwner_triggered(bool checked);
+    void on_actionByFileType_triggered(bool checked);
+    void on_actionByFileSize_triggered(bool checked);
+    void on_actionAscending_triggered(bool checked);
+    void on_actionDescending_triggered(bool checked);
+    void on_actionFolderFirst_triggered(bool checked);
+    void on_actionCaseSensitive_triggered(bool checked);
+    void on_actionFilter_triggered(bool checked);
 
-  void on_actionLocationBar_triggered(bool checked);
-  void on_actionPathButtons_triggered(bool checked);
+    void on_actionLocationBar_triggered(bool checked);
+    void on_actionPathButtons_triggered(bool checked);
 
-  void on_actionApplications_triggered();
-  void on_actionComputer_triggered();
-  void on_actionTrash_triggered();
-  void on_actionNetwork_triggered();
-  void on_actionDesktop_triggered();
-  void on_actionAddToBookmarks_triggered();
-  void on_actionEditBookmarks_triggered();
+    void on_actionApplications_triggered();
+    void on_actionComputer_triggered();
+    void on_actionTrash_triggered();
+    void on_actionNetwork_triggered();
+    void on_actionDesktop_triggered();
+    void on_actionAddToBookmarks_triggered();
+    void on_actionEditBookmarks_triggered();
 
-  void on_actionOpenTerminal_triggered();
-  void on_actionOpenAsRoot_triggered();
-  void on_actionFindFiles_triggered();
+    void on_actionOpenTerminal_triggered();
+    void on_actionOpenAsRoot_triggered();
+    void on_actionFindFiles_triggered();
 
-  void on_actionAbout_triggered();
+    void on_actionAbout_triggered();
 
-  void onBookmarkActionTriggered();
+    void onBookmarkActionTriggered();
 
-  void onTabBarCloseRequested(int index);
-  void onTabBarCurrentChanged(int index);
-  void onTabBarTabMoved(int from, int to);
+    void onTabBarCloseRequested(int index);
+    void onTabBarCurrentChanged(int index);
+    void onTabBarTabMoved(int from, int to);
 
-  void focusFilterBar();
-  void onFilterStringChanged(QString str);
+    void focusFilterBar();
+    void onFilterStringChanged(QString str);
 
-  void onShortcutPrevTab();
-  void onShortcutNextTab();
-  void onShortcutJumpToTab();
+    void onShortcutPrevTab();
+    void onShortcutNextTab();
+    void onShortcutJumpToTab();
 
-  void onStackedWidgetWidgetRemoved(int index);
+    void onStackedWidgetWidgetRemoved(int index);
 
-  void onTabPageTitleChanged(QString title);
-  void onTabPageStatusChanged(int type, QString statusText);
-  void onTabPageOpenDirRequested(FmPath* path, int target);
-  void onTabPageSortFilterChanged();
+    void onTabPageTitleChanged(QString title);
+    void onTabPageStatusChanged(int type, QString statusText);
+    void onTabPageOpenDirRequested(const Fm::FilePath &path, int target);
+    void onTabPageSortFilterChanged();
 
-  void onSidePaneChdirRequested(int type, FmPath* path);
-  void onSidePaneOpenFolderInNewWindowRequested(FmPath* path);
-  void onSidePaneOpenFolderInNewTabRequested(FmPath* path);
-  void onSidePaneOpenFolderInTerminalRequested(FmPath* path);
-  void onSidePaneCreateNewFolderRequested(FmPath* path);
-  void onSidePaneModeChanged(Fm::SidePane::Mode mode);
-  void onSplitterMoved(int pos, int index);
-  void onResetFocus();
+    void onSidePaneChdirRequested(int type, const Fm::FilePath &path);
+    void onSidePaneOpenFolderInNewWindowRequested(const Fm::FilePath &path);
+    void onSidePaneOpenFolderInNewTabRequested(const Fm::FilePath &path);
+    void onSidePaneOpenFolderInTerminalRequested(const Fm::FilePath &path);
+    void onSidePaneCreateNewFolderRequested(const Fm::FilePath &path);
+    void onSidePaneModeChanged(Fm::SidePane::Mode mode);
+    void onSplitterMoved(int pos, int index);
+    void onResetFocus();
 
-  void onBackForwardContextMenu(QPoint pos);
+    void onBackForwardContextMenu(QPoint pos);
 
-  void tabContextMenu(const QPoint& pos);
-  void closeLeftTabs();
-  void closeRightTabs();
-  void closeOtherTabs() {
-    closeLeftTabs();
-    closeRightTabs();
-  }
-  void focusPathEntry();
-  void toggleMenuBar(bool checked);
+    void tabContextMenu(const QPoint& pos);
+    void closeLeftTabs();
+    void closeRightTabs();
+    void closeOtherTabs() {
+        closeLeftTabs();
+        closeRightTabs();
+    }
+    void focusPathEntry();
+    void toggleMenuBar(bool checked);
+
+    void onBookmarksChanged();
 
 protected:
-  bool event(QEvent* event) override;
-  void changeEvent(QEvent *event) override;
-  void closeTab(int index);
-  virtual void resizeEvent(QResizeEvent *event) override;
-  virtual void closeEvent(QCloseEvent *event) override;
+    bool event(QEvent* event) override;
+    void changeEvent(QEvent* event) override;
+    void closeTab(int index);
+    virtual void resizeEvent(QResizeEvent* event) override;
+    virtual void closeEvent(QCloseEvent* event) override;
 
 private:
-  static void onBookmarksChanged(FmBookmarks* bookmarks_, MainWindow* pThis);
-  void loadBookmarksMenu();
-  void updateUIForCurrentPage();
-  void updateViewMenuForCurrentPage();
-  void updateStatusBarForCurrentPage();
-  void setRTLIcons(bool isRTL);
-  void createPathBar(bool usePathButtons);
+    void loadBookmarksMenu();
+    void updateUIForCurrentPage();
+    void updateViewMenuForCurrentPage();
+    void updateStatusBarForCurrentPage();
+    void setRTLIcons(bool isRTL);
+    void createPathBar(bool usePathButtons);
 
 private:
-  Ui::MainWindow ui;
-  Fm::PathEdit* pathEntry_;
-  Fm::PathBar* pathBar_;
-  QLabel* fsInfoLabel_;
-  Fm::Bookmarks bookmarks_;
-  Launcher fileLauncher_;
-  int rightClickIndex_;
-  bool updatingViewMenu_;
-  QAction* menuSep_;
+    Ui::MainWindow ui;
+    Fm::PathEdit* pathEntry_;
+    Fm::PathBar* pathBar_;
+    QLabel* fsInfoLabel_;
+    std::shared_ptr<Fm::Bookmarks> bookmarks_;
+    Launcher fileLauncher_;
+    int rightClickIndex_;
+    bool updatingViewMenu_;
+    QAction* menuSep_;
 
-  static MainWindow* lastActive_;
+    static MainWindow* lastActive_;
 };
 
 }
