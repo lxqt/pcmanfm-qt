@@ -948,7 +948,7 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
             break;
         }
     }
-    return false;
+    return Fm::FolderView::eventFilter(watched, event);
 }
 
 void DesktopWindow::childDropEvent(QDropEvent* e) {
