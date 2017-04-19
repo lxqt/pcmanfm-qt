@@ -68,7 +68,6 @@ public:
 protected Q_SLOTS:
 
     void onPathEntryReturnPressed();
-    void onPathEntryEdited(const QString& text);
     void onPathBarChdir(const Fm::FilePath& dirPath);
     void onPathBarMiddleClickChdir(const Fm::FilePath &dirPath);
 
