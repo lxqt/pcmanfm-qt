@@ -357,8 +357,8 @@ void MainWindow::toggleMenuBar(bool checked) {
 
 void MainWindow::onPathEntryReturnPressed() {
     QString text = pathEntry_->text();
-    QByteArray utext = text.toUtf8();
-    chdir(Fm::FilePath::fromDisplayName(utext.constData()));
+    QByteArray utext = text.toLocal8Bit();
+    chdir(Fm::FilePath::fromPathStr(utext.constData()));
 }
 
 void MainWindow::onPathBarChdir(const Fm::FilePath& dirPath) {
