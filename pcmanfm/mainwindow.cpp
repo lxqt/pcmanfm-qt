@@ -29,7 +29,6 @@
 #include <QToolButton>
 #include <QShortcut>
 #include <QKeySequence>
-#include <QDir>
 #include <QSettings>
 #include <QStandardPaths>
 #include <QDebug>
@@ -307,7 +306,6 @@ void MainWindow::createPathBar(bool usePathButtons) {
     else {
         bar = pathEntry_ = new Fm::PathEdit(this);
         connect(pathEntry_, &Fm::PathEdit::returnPressed, this, &MainWindow::onPathEntryReturnPressed);
-        connect(pathEntry_, &QLineEdit::textEdited, this, &MainWindow::onPathEntryEdited);
     }
     ui.toolBar->insertWidget(ui.actionGo, bar);
     ui.actionGo->setVisible(!usePathButtons);
@@ -361,14 +359,6 @@ void MainWindow::onPathEntryReturnPressed() {
     QString text = pathEntry_->text();
     QByteArray utext = text.toUtf8();
     chdir(Fm::FilePath::fromDisplayName(utext.constData()));
-}
-
-void MainWindow::onPathEntryEdited(const QString& text) {
-    QString realText(text);
-    if(realText == "~" || realText.startsWith("~/")) {
-        realText.replace(0, 1, QDir::homePath());
-        pathEntry_->setText(realText);
-    }
 }
 
 void MainWindow::onPathBarChdir(const Fm::FilePath& dirPath) {
