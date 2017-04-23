@@ -91,7 +91,7 @@ void PreferencesDialog::initIconThemes(Settings& settings) {
 
         iconThemes.remove("hicolor"); // remove hicolor, which is only a fallback
         QHash<QString, QString>::const_iterator it;
-        for(it = iconThemes.begin(); it != iconThemes.end(); ++it) {
+        for(it = iconThemes.constBegin(); it != iconThemes.constEnd(); ++it) {
             ui.iconTheme->addItem(it.value(), it.key());
         }
         ui.iconTheme->model()->sort(0); // sort the list of icon theme names

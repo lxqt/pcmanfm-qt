@@ -984,8 +984,8 @@ void MainWindow::loadBookmarksMenu() {
 void MainWindow::onBookmarksChanged() {
     // delete existing items
     QList<QAction*> actions = ui.menu_Bookmarks->actions();
-    QList<QAction*>::const_iterator it = actions.begin();
-    QList<QAction*>::const_iterator last_it = actions.end() - 2;
+    QList<QAction*>::const_iterator it = actions.constBegin();
+    QList<QAction*>::const_iterator last_it = actions.constEnd() - 2;
 
     while(it != last_it) {
         QAction* action = *it;
