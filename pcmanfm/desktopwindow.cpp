@@ -425,11 +425,14 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
         char* dektopPath = Fm::Path::getDesktop().toStr();
         QString desktopDir = QString(dektopPath) + QString("/");
         g_free(dektopPath);
-        for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend(); ++it) {
+        for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend();) {
             auto& name = it->first;
             if(!QFile::exists(desktopDir + QString::fromStdString(name))) {
-                customItemPos_.erase(it);
+                it = customItemPos_.erase(it);
                 changed = true;
+            }
+            else {
+                ++it;
             }
         }
         if(changed) {
