@@ -428,7 +428,7 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
         for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend(); ++it) {
             auto& name = it->first;
             if(!QFile::exists(desktopDir + QString::fromStdString(name))) {
-                customItemPos_.erase(it);
+                it = customItemPos_.erase(it);
                 changed = true;
             }
         }
