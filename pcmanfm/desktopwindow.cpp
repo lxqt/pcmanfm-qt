@@ -384,15 +384,15 @@ void DesktopWindow::prepareFileMenu(Fm::FileMenu* menu) {
     menu->insertSeparator(menu->separator2());
     menu->insertAction(menu->separator2(), action);
 
+    bool checked(true);
     auto files = menu->files();
-    // select exactly one item
-    if(files.size() == 1) {
-        auto file = menu->firstFile();
-        if(customItemPos_.find(file->name()) != customItemPos_.cend()) {
-            // the file item has a custom position
-            action->setChecked(true);
+    for(const auto& file : files) {
+        if(customItemPos_.find(file->name()) == customItemPos_.cend()) {
+            checked = false;
+            break;
         }
     }
+    action->setChecked(checked);
     connect(action, &QAction::toggled, this, &DesktopWindow::onStickToCurrentPos);
 }
 
@@ -730,26 +730,28 @@ void DesktopWindow::saveItemPositions() {
 }
 
 void DesktopWindow::onStickToCurrentPos(bool toggled) {
-    QAction* action = static_cast<QAction*>(sender());
-    Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(action->parent());
-
     QModelIndexList indexes = listView_->selectionModel()->selectedIndexes();
     if(!indexes.isEmpty()) {
-        auto file = menu->firstFile();
-        auto name = file->name();
-        QModelIndex index = indexes.first();
-        if(toggled) { // remember to current custom position
-            QRect itemRect = listView_->rectForIndex(index);
-            customItemPos_[name] = itemRect.topLeft();
-            saveItemPositions();
-        }
-        else { // cancel custom position and perform relayout
-            auto it = customItemPos_.find(name);
-            if(it != customItemPos_.end()) {
-                customItemPos_.erase(it);
-                saveItemPositions();
-                relayoutItems();
+        bool relayout(false);
+        QModelIndexList::const_iterator it;
+        for(it = indexes.constBegin(); it != indexes.constEnd(); ++it) {
+            auto file = proxyModel_->fileInfoFromIndex(*it);
+            auto name = file->name();
+            if(toggled) { // remember the current custom position
+                QRect itemRect = listView_->rectForIndex(*it);
+                customItemPos_[name] = itemRect.topLeft();
             }
+            else { // cancel custom position and perform relayout
+                auto item = customItemPos_.find(name);
+                if(item != customItemPos_.end()) {
+                    customItemPos_.erase(item);
+                    relayout = true;
+                }
+            }
+        }
+        saveItemPositions();
+        if(relayout) {
+            relayoutItems();
         }
     }
 }
