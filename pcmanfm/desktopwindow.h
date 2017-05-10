@@ -95,6 +95,7 @@ protected:
 
     virtual void childDropEvent(QDropEvent* e) override;
     virtual void closeEvent(QCloseEvent* event) override;
+    virtual void paintEvent(QPaintEvent *event) override;
 
 protected Q_SLOTS:
     void onOpenDirRequested(const Fm::FilePath& path, int target);
