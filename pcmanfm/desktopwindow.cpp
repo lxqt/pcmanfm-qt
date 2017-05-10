@@ -84,9 +84,9 @@ DesktopWindow::DesktopWindow(int screenNum):
 
     // This is to workaround Qt bug 54384 which affects Qt >= 5.6
     // https://bugreports.qt.io/browse/QTBUG-54384
-    // Setting a QPixmap larger then the screen resolution to the background of a list view won't work.
-    // So we did a hack here: Disable the automatic background painting.
-    // Then paint the background of the list view ourselves by hook into its paint event handling method with a event filter.
+    // Setting a QPixmap larger then the screen resolution to desktop's QPalette won't work.
+    // So we make the viewport transparent by preventing its backround from being filled automatically.
+    // Then we paint desktop's background ourselves by using its paint event handling method.
     listView_->viewport()->setAutoFillBackground(false);
 
     // NOTE: When XRnadR is in use, the all screens are actually combined to form a
@@ -311,8 +311,7 @@ void DesktopWindow::updateWallpaper() {
         if(wallpaperMode_ == WallpaperTile) { // use the original size
             image = QImage(wallpaperFile_);
             // Note: We can't use the QPainter::drawTiledPixmap(), because it doesn't tile
-            // correctly for background pixmaps bigger than the current screen size. This
-            // may be also the reason for wrong rendering by QWidget::setAutoFillBackground(true)
+            // correctly for background pixmaps bigger than the current screen size.
             const QSize s = size();
             pixmap = QPixmap{s};
             QPainter painter{&pixmap};
@@ -414,7 +413,9 @@ void DesktopWindow::onRowsInserted(const QModelIndex& parent, int start, int end
     Q_UNUSED(parent);
     Q_UNUSED(start);
     Q_UNUSED(end);
-    queueRelayout();
+    // disable view updates temporarily and delay relayout to prevent items from shaking
+    listView_->setUpdatesEnabled(false);
+    queueRelayout(100);
 }
 
 void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start, int end) {
@@ -443,7 +444,8 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
             saveItemPositions();
         }
     }
-    queueRelayout();
+    listView_->setUpdatesEnabled(false);
+    queueRelayout(100);
 }
 
 void DesktopWindow::onLayoutChanged() {
@@ -563,8 +565,7 @@ void DesktopWindow::removeBottomGap() {
 void DesktopWindow::paintBackground(QPaintEvent* event) {
     // This is to workaround Qt bug 54384 which affects Qt >= 5.6
     // https://bugreports.qt.io/browse/QTBUG-54384
-    // Since Qt does not paint the background of the QListView using the QPixmap we set properly, we do it ourselves.
-    QPainter painter(listView_->viewport()); // the painter paints on the viewport widget, not the QListView.
+    QPainter painter(this);
     if(wallpaperMode_ == WallpaperNone || wallpaperPixmap_.isNull()) {
         painter.fillRect(event->rect(), QBrush(bgColor_));
     }
@@ -658,6 +659,10 @@ void DesktopWindow::relayoutItems() {
         if(row >= rowCount) {
             break;
         }
+    }
+
+    if(!listView_->updatesEnabled()) {
+        listView_->setUpdatesEnabled(true);
     }
 }
 
@@ -931,10 +936,6 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
     }
     else if(watched == listView_->viewport()) {
         switch(event->type()) {
-        case QEvent::Paint: {
-            paintBackground(static_cast<QPaintEvent*>(event));
-            break;
-        }
         case QEvent::MouseButtonPress:
         case QEvent::MouseButtonRelease:
             if(showWmMenu_) {
@@ -1022,6 +1023,11 @@ void DesktopWindow::alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize&
 void DesktopWindow::closeEvent(QCloseEvent* event) {
     // prevent the desktop window from being closed.
     event->ignore();
+}
+
+void DesktopWindow::paintEvent(QPaintEvent *event) {
+    paintBackground(event);
+    QWidget::paintEvent(event);
 }
 
 void DesktopWindow::setScreenNum(int num) {
