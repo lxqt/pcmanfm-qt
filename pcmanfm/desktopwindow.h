@@ -123,6 +123,7 @@ protected Q_SLOTS:
 private:
     void removeBottomGap();
     void paintBackground(QPaintEvent* event);
+    static void alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize& grid, const int spacing);
 
 private:
     Fm::ProxyFolderModel* proxyModel_;
