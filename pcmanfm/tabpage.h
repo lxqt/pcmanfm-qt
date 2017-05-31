@@ -200,6 +200,18 @@ public:
 
     void setCustomizedView(bool value);
 
+    void cutTriggered() {
+        folderView_->onCutTriggered();
+    }
+
+    void copyTriggered() {
+        folderView_->onCopyTriggered();
+    }
+
+    void pasteTriggered() {
+        folderView_->onPasteTriggered();
+    }
+
 Q_SIGNALS:
     void statusChanged(int type, QString statusText);
     void titleChanged(QString title);

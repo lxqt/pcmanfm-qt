@@ -1009,18 +1009,22 @@ void MainWindow::onBookmarkActionTriggered() {
 
 void MainWindow::on_actionCopy_triggered() {
     TabPage* page = currentPage();
+    page->copyTriggered();
     auto paths = page->selectedFilePaths();
     copyFilesToClipboard(paths);
 }
 
 void MainWindow::on_actionCut_triggered() {
     TabPage* page = currentPage();
+    page->cutTriggered();
     auto paths = page->selectedFilePaths();
     cutFilesToClipboard(paths);
 }
 
 void MainWindow::on_actionPaste_triggered() {
-    pasteFilesFromClipboard(currentPage()->path(), this);
+    TabPage* page = currentPage();
+    page->pasteTriggered();
+    pasteFilesFromClipboard(page->path(), this);
 }
 
 void MainWindow::on_actionDelete_triggered() {
