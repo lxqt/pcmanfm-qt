@@ -179,7 +179,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Port:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="86"/>
@@ -189,7 +189,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Host:</translation>
     </message>
 </context>
 <context>
@@ -310,7 +310,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Minimum parça marjları:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="238"/>
@@ -332,7 +332,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Varsayılan olarak 1 piksel.
+Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="278"/>
@@ -1446,7 +1447,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="376"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Varsayılan olarak 3 piksel.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="379"/>
@@ -1463,7 +1464,8 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../preferences.ui" line="399"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Varsayılan olarak 3 piksel.
+Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="416"/>
