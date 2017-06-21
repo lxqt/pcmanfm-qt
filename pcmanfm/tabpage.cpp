@@ -122,6 +122,7 @@ TabPage::~TabPage() {
     if(proxyModel_) {
         delete proxyModel_;
     }
+    disconnect(folderModel_, &Fm::FolderModel::fileSizeChanged, this, &TabPage::onFileSizeChanged);
     if(folderModel_) {
         folderModel_->unref();
     }
@@ -170,7 +171,7 @@ void TabPage::onFolderStartLoading() {
 #endif
 }
 
-void TabPage::restoreScrollPos() {
+void TabPage::onUiUpdated() {
     // scroll to recorded position
     folderView_->childView()->verticalScrollBar()->setValue(browseHistory().currentScrollPos());
 
@@ -181,6 +182,17 @@ void TabPage::restoreScrollPos() {
         if(index.isValid()) {
             folderView_->childView()->scrollTo(index, QAbstractItemView::EnsureVisible);
             folderView_->childView()->setCurrentIndex(index);
+        }
+    }
+    // update selection statusbar info when needed
+    connect(folderModel_, &Fm::FolderModel::fileSizeChanged, this, &TabPage::onFileSizeChanged);
+}
+
+void TabPage::onFileSizeChanged(const QModelIndex& index) {
+    if(folderView_->hasSelection()) {
+        QModelIndexList indexes = folderView_->selectionModel()->selectedIndexes();
+        if(indexes.contains(proxyModel_->mapFromSource(index))) {
+            onSelChanged();
         }
     }
 }
@@ -232,8 +244,8 @@ void TabPage::onFolderFinishLoading() {
 
     // After finishing loading the folder, the model is updated, but Qt delays the UI update
     // for performance reasons. Therefore at this point the UI is not up to date.
-    // Of course, the scrollbar ranges are not updated yet. We solve this by installing an Qt timeout handler.
-    QTimer::singleShot(10, this, SLOT(restoreScrollPos()));
+    // For example, the scrollbar ranges are not updated yet. We solve this by installing an Qt timeout handler.
+    QTimer::singleShot(10, this, SLOT(onUiUpdated()));
 }
 
 void TabPage::onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity severity, Fm::Job::ErrorAction& response) {
@@ -372,6 +384,7 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
 
         // free the previous model
         if(folderModel_) {
+            disconnect(folderModel_, &Fm::FolderModel::fileSizeChanged, this, &TabPage::onFileSizeChanged);
             proxyModel_->setSourceModel(nullptr);
             folderModel_->unref(); // unref the cached model
             folderModel_ = nullptr;

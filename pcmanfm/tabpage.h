@@ -210,7 +210,8 @@ Q_SIGNALS:
 
 protected Q_SLOTS:
     void onSelChanged();
-    void restoreScrollPos();
+    void onUiUpdated();
+    void onFileSizeChanged(const QModelIndex& index);
 
 private:
     void freeFolder();
