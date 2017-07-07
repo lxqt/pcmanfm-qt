@@ -144,7 +144,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onPasteActivated);
 
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_A), this); // select all
-    connect(shortcut, &QShortcut::activated, listView_, &QListView::selectAll);
+    connect(shortcut, &QShortcut::activated, this, &FolderView::selectAll);
 
     shortcut = new QShortcut(QKeySequence(Qt::Key_Delete), this); // delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
