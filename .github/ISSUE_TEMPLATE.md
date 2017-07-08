@@ -30,5 +30,7 @@
 * Distribution & Version: 
 * Kernel: 
 * Qt Version: 
-* liblxqt Version:  
+* lxqt-build-tools Version: 
+* libqtxdg Version:
+* libfm-qt Version:
 * Package version: 
