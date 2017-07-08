@@ -28,6 +28,7 @@
 #include <QTextLayout>
 #include <QTextOption>
 #include <QTextLine>
+#include <QTextEdit>
 
 namespace PCManFM {
 
@@ -210,6 +211,88 @@ QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QM
 
 DesktopItemDelegate::~DesktopItemDelegate() {
 
+}
+
+/*
+ * The following methods are for inline renaming.
+*/
+
+QWidget* DesktopItemDelegate::createEditor(QWidget* parent, const QStyleOptionViewItem& option, const QModelIndex& index) const {
+    Q_UNUSED(option);
+    Q_UNUSED(index);
+    // we use QTextEdit instead of QPlainTextEdit because
+    // the latter always shows an empty space at the bottom
+    QTextEdit* textEdit = new QTextEdit(parent);
+    textEdit->setAcceptRichText(false);
+    // Since the text color is inherited from the desktop foreground color,
+    // it may not be suitable. So, we reset it by using the app palette.
+    QPalette p = textEdit->palette();
+    p.setColor(QPalette::Text, qApp->palette().text().color());
+    textEdit->setPalette(p);
+
+    textEdit->ensureCursorVisible();
+    textEdit->setFocusPolicy(Qt::StrongFocus);
+    textEdit->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    textEdit->setContentsMargins(0, 0, 0, 0);
+    return textEdit;
+}
+
+void DesktopItemDelegate::setEditorData(QWidget* editor, const QModelIndex& index) const {
+    if (!index.isValid()) {
+        return;
+    }
+    QTextEdit* textEdit = qobject_cast<QTextEdit*>(editor);
+    if (!textEdit) {
+        return;
+    }
+    const QString currentName = index.data(Qt::EditRole).toString();
+    textEdit->setPlainText(currentName);
+    textEdit->setUndoRedoEnabled(false);
+    textEdit->setAlignment(Qt::AlignCenter);
+    textEdit->setUndoRedoEnabled(true);
+    // select text appropriately
+    QTextCursor cur = textEdit->textCursor();
+    int end;
+    if (index.data(Fm::FolderModel::FileIsDirRole).toBool() || !currentName.contains("."))
+        end = currentName.size();
+    else
+        end = currentName.lastIndexOf(".");
+    cur.setPosition(end, QTextCursor::KeepAnchor);
+    textEdit->setTextCursor(cur);
+}
+
+bool DesktopItemDelegate::eventFilter(QObject* object, QEvent* event) {
+    QWidget *editor = qobject_cast<QWidget*>(object);
+    if (editor && event->type() == QEvent::KeyPress) {
+        int k = static_cast<QKeyEvent *>(event)->key();
+        if (k == Qt::Key_Return || k == Qt::Key_Enter) {
+            Q_EMIT QAbstractItemDelegate::commitData(editor);
+            Q_EMIT QAbstractItemDelegate::closeEditor(editor, QAbstractItemDelegate::NoHint);
+            return true;
+        }
+    }
+    return QStyledItemDelegate::eventFilter(object, event);
+}
+
+void DesktopItemDelegate::updateEditorGeometry(QWidget* editor, const QStyleOptionViewItem& option, const QModelIndex& index) const {
+    QSize gridSize = view_->gridSize() - 2 * margins_;
+    if (gridSize != QSize()
+        && (option.decorationPosition == QStyleOptionViewItem::Top
+            || option.decorationPosition == QStyleOptionViewItem::Bottom)) {
+        // give all of the available space to the editor
+        QStyleOptionViewItem opt = option;
+        initStyleOption(&opt, index);
+        opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
+        opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
+        QRect textRect(opt.rect.x() - (gridSize.width() - opt.rect.width()) / 2,
+                       opt.rect.y() + option.decorationSize.height(),
+                       gridSize.width(),
+                       gridSize.height() - option.decorationSize.height());
+        int frame = editor->style()->pixelMetric(QStyle::PM_DefaultFrameWidth, &option, editor);
+        editor->setGeometry(textRect.adjusted(-frame, -frame, frame, frame));
+    }
+    else
+        QStyledItemDelegate::updateEditorGeometry(editor, option, index);
 }
 
 } // namespace PCManFM

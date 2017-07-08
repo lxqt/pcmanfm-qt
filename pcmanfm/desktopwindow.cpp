@@ -38,6 +38,7 @@
 #include <QMimeData>
 #include <QPaintEvent>
 #include <QStandardPaths>
+#include <QTextEdit>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -120,6 +121,8 @@ DesktopWindow::DesktopWindow(int screenNum):
     // set our own delegate
     delegate_ = new DesktopItemDelegate(listView_);
     listView_->setItemDelegateForColumn(Fm::FolderModel::ColumnFileName, delegate_);
+    // inline renaming
+    connect(delegate_, &QAbstractItemDelegate::closeEditor, this, &DesktopWindow::onClosingEditor);
 
     // remove frame
     listView_->setFrameShape(QFrame::NoFrame);
@@ -806,10 +809,20 @@ void DesktopWindow::onDeleteActivated() {
 }
 
 void DesktopWindow::onRenameActivated() {
-    auto files = selectedFiles();
-    if(!files.empty()) {
-        for(auto& info: files) {
-            Fm::renameFile(info, nullptr);
+    // do inline renaming if only one item is selected,
+    // otherwise use the renaming dialog
+    if(selectedIndexes().size() == 1) {
+        QModelIndex cur = listView_->currentIndex();
+        if (cur.isValid()) {
+            listView_->edit(cur);
+        }
+    }
+    else {
+        auto files = selectedFiles();
+        if(!files.empty()) {
+            for(auto& info: files) {
+                Fm::renameFile(info, nullptr);
+            }
         }
     }
 }
@@ -885,6 +898,33 @@ static void forwardMouseEventToRoot(QMouseEvent* event) {
 
     xcb_send_event(QX11Info::connection(), 0, root, mask, (char*)&xcb_event);
     xcb_flush(QX11Info::connection());
+}
+
+void DesktopWindow::onClosingEditor(QWidget* editor, QAbstractItemDelegate::EndEditHint hint) {
+    if (hint != QAbstractItemDelegate::NoHint) {
+        // we set the hint to NoHint in DesktopItemDelegate::eventFilter()
+        return;
+    }
+    QString newName;
+    if (qobject_cast<QTextEdit*>(editor)) {
+        newName = qobject_cast<QTextEdit*>(editor)->toPlainText();
+    }
+    if (newName.isEmpty()) {
+        return;
+    }
+
+    QModelIndex index = listView_->selectionModel()->currentIndex();
+    if(index.isValid() && index.model()) {
+        QVariant data = index.model()->data(index, Fm::FolderModel::FileInfoRole);
+        auto info = data.value<std::shared_ptr<const Fm::FileInfo>>();
+        if (info) {
+            auto oldName = QString::fromStdString(info->name());
+            if(newName == oldName) {
+                return;
+            }
+            Fm::changeFileName(info->path(), newName, nullptr);
+        }
+    }
 }
 
 bool DesktopWindow::event(QEvent* event) {

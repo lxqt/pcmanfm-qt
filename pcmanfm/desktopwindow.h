@@ -121,6 +121,9 @@ protected Q_SLOTS:
     void onDeleteActivated();
     void onFilePropertiesActivated();
 
+    // inline renaming
+    void onClosingEditor(QWidget* editor, QAbstractItemDelegate::EndEditHint hint);
+
 private:
     void removeBottomGap();
     void paintBackground(QPaintEvent* event);
