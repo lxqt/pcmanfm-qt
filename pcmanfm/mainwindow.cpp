@@ -1039,10 +1039,21 @@ void MainWindow::on_actionDelete_triggered() {
 }
 
 void MainWindow::on_actionRename_triggered() {
+    // do inline renaming if only one item is selected,
+    // otherwise use the renaming dialog
     TabPage* page = currentPage();
     auto files = page->selectedFiles();
-    for(auto& file: files) {
-        Fm::renameFile(file, nullptr);
+    if(files.size() == 1) {
+        QModelIndex cur = page->folderView()->childView()->currentIndex();
+        if (cur.isValid()) {
+            page->folderView()->childView()->scrollTo(cur);
+            page->folderView()->childView()->edit(cur);
+        }
+    }
+    else if(!files.empty()) {
+        for(auto& file: files) {
+            Fm::renameFile(file, nullptr);
+        }
     }
 }
 
