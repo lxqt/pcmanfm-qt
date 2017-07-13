@@ -353,142 +353,112 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
 <context>
     <name>FindFilesDialog</name>
     <message>
-        <location filename="../../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation>Recherche de fichiers</translation>
+        <translation type="vanished">Recherche de fichiers</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation>Nom/Emplacement</translation>
+        <translation type="vanished">Nom/Emplacement</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation>Motifs du nom de fichier</translation>
+        <translation type="vanished">Motifs du nom de fichier</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation>Motif :</translation>
+        <translation type="vanished">Motif :</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="46"/>
-        <location filename="../../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation>Insensible à la casse</translation>
+        <translation type="vanished">Insensible à la casse</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="53"/>
-        <location filename="../../file-search.ui" line="228"/>
         <source>Use regular expression</source>
-        <translation>Utiliser les expressions rationnelles</translation>
+        <translation type="vanished">Utiliser les expressions rationnelles</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation>Emplacements de recherche</translation>
+        <translation type="vanished">Emplacements de recherche</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation>Ajouter</translation>
+        <translation type="vanished">Ajouter</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="88"/>
         <source>Remove</source>
-        <translation>Supprimer</translation>
+        <translation type="vanished">Supprimer</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="117"/>
         <source>Search in sub directories</source>
-        <translation>Rechercher dans les sous-répertoires</translation>
+        <translation type="vanished">Rechercher dans les sous-répertoires</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="124"/>
         <source>Search hidden files</source>
-        <translation>Rechercher les fichiers cachés</translation>
+        <translation type="vanished">Rechercher les fichiers cachés</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="135"/>
-        <location filename="../../file-search.ui" line="141"/>
         <source>File Type</source>
-        <translation>Type de fichiers</translation>
+        <translation type="vanished">Type de fichiers</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="147"/>
         <source>Only search for files of following types:</source>
-        <translation>Ne rechercher que les fichiers des types suivants :</translation>
+        <translation type="vanished">Ne rechercher que les fichiers des types suivants :</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="154"/>
         <source>Text files</source>
-        <translation>Fichiers texte</translation>
+        <translation type="vanished">Fichiers texte</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="161"/>
         <source>Image files</source>
-        <translation>Fichiers images</translation>
+        <translation type="vanished">Fichiers images</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="168"/>
         <source>Audio files</source>
-        <translation>Fichiers audio</translation>
+        <translation type="vanished">Fichiers audio</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="175"/>
         <source>Video files</source>
-        <translation>Fichiers vidéo</translation>
+        <translation type="vanished">Fichiers vidéo</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="182"/>
         <source>Documents</source>
-        <translation>Documents</translation>
+        <translation type="vanished">Documents</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="206"/>
         <source>Content</source>
-        <translation>Contenu</translation>
+        <translation type="vanished">Contenu</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="212"/>
         <source>File contains</source>
-        <translation>Fichiers contenant</translation>
+        <translation type="vanished">Fichiers contenant</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="252"/>
         <source>Properties</source>
-        <translation>Propriétés</translation>
+        <translation type="vanished">Propriétés</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="258"/>
         <source>File Size</source>
-        <translation>Taille de fichier</translation>
+        <translation type="vanished">Taille de fichier</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation>Plus grands que :</translation>
+        <translation type="vanished">Plus grands que :</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation>Plus petits que :</translation>
+        <translation type="vanished">Plus petits que :</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="317"/>
         <source>Last Modified Time</source>
-        <translation>Dernière modification</translation>
+        <translation type="vanished">Dernière modification</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="323"/>
         <source>Earlier than:</source>
-        <translation>Avant le :</translation>
+        <translation type="vanished">Avant le :</translation>
     </message>
     <message>
-        <location filename="../../file-search.ui" line="340"/>
         <source>Later than:</source>
-        <translation>Après le :</translation>
+        <translation type="vanished">Après le :</translation>
     </message>
 </context>
 <context>
@@ -1024,99 +994,99 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../../application.cpp" line="169"/>
+        <location filename="../../application.cpp" line="170"/>
         <source>Name of configuration profile</source>
         <translation>Nom du profil de configuration</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="169"/>
+        <location filename="../../application.cpp" line="170"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="172"/>
+        <location filename="../../application.cpp" line="173"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Lancer PCManFM comme démon</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="175"/>
+        <location filename="../../application.cpp" line="176"/>
         <source>Quit PCManFM</source>
         <translation>Quitter PCManFM</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="178"/>
+        <location filename="../../application.cpp" line="179"/>
         <source>Launch desktop manager</source>
         <translation>Lancer le gestionnaire de bureau</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="181"/>
+        <location filename="../../application.cpp" line="182"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Éteindre le gestionnaire de bureau s&apos;il fonctionne</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="184"/>
+        <location filename="../../application.cpp" line="185"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Ouvrir la boîte de dialogue des préférences du bureau sur la page avec le nom spécifié</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="184"/>
-        <location filename="../../application.cpp" line="199"/>
+        <location filename="../../application.cpp" line="185"/>
+        <location filename="../../application.cpp" line="200"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="193"/>
+        <location filename="../../application.cpp" line="194"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Définir le fond d&apos;écran de bureau depuis l&apos;image FILE</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="193"/>
+        <location filename="../../application.cpp" line="194"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="196"/>
+        <location filename="../../application.cpp" line="197"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="199"/>
+        <location filename="../../application.cpp" line="200"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Ouvrir la boîte de dialogue des préférences sur la page avec le nom spécifié</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="187"/>
+        <location filename="../../application.cpp" line="188"/>
         <source>Open new window</source>
         <translation>Ouvrir une nouvelle fenêtre</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="190"/>
+        <location filename="../../application.cpp" line="191"/>
         <source>Open Find Files utility</source>
         <translation>Ouvrir l&apos;utilitaire de recherche de fichiers</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="196"/>
+        <location filename="../../application.cpp" line="197"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Définir le mode du papier-peint. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="202"/>
+        <location filename="../../application.cpp" line="203"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FICHIER1, FICHIER2, etc.]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="202"/>
+        <location filename="../../application.cpp" line="203"/>
         <source>Files or directories to open</source>
         <translation>Fichiers ou dossiers à ouvrir</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="518"/>
-        <location filename="../../application.cpp" line="525"/>
+        <location filename="../../application.cpp" line="524"/>
+        <location filename="../../application.cpp" line="529"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="525"/>
+        <location filename="../../application.cpp" line="529"/>
         <source>Terminal emulator is not set.</source>
         <translation>L&apos;émulateur de terminal n&apos;est pas défini.</translation>
     </message>
@@ -1124,12 +1094,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
 <context>
     <name>PCManFM::AutoRunDialog</name>
     <message>
-        <location filename="../../autorundialog.cpp" line="43"/>
+        <location filename="../../autorundialog.cpp" line="45"/>
         <source>Open in file manager</source>
         <translation>Ouvrir dans le gestionnaire de fichiers</translation>
     </message>
     <message>
-        <location filename="../../autorundialog.cpp" line="132"/>
+        <location filename="../../autorundialog.cpp" line="136"/>
         <source>Removable Disk</source>
         <translation>Disque amovible</translation>
     </message>
@@ -1208,12 +1178,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../../desktopwindow.cpp" line="362"/>
+        <location filename="../../desktopwindow.cpp" line="382"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Res&amp;ter à la position actuelle</translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="384"/>
+        <location filename="../../desktopwindow.cpp" line="404"/>
         <source>Desktop Preferences</source>
         <translation>Préférences du bureau</translation>
     </message>
@@ -1221,7 +1191,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../../mainwindow.cpp" line="262"/>
+        <location filename="../../mainwindow.cpp" line="264"/>
         <source>Clear text (Ctrl+K)</source>
         <translation>Effacer le texte (Ctrl+K)</translation>
     </message>
@@ -1236,28 +1206,28 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
         <translation>Cela permet de masquer complètement la barre de menus, utilisez Ctrl + M pour la montrer à nouveau.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="630"/>
+        <location filename="../../mainwindow.cpp" line="625"/>
         <source>Version: %1</source>
         <translation>Version : %1</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1176"/>
+        <location filename="../../mainwindow.cpp" line="1188"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mettre à la corbeille</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1176"/>
+        <location filename="../../mainwindow.cpp" line="1188"/>
         <source>&amp;Delete</source>
         <translation>&amp;Supprimer</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1245"/>
-        <location filename="../../mainwindow.cpp" line="1256"/>
+        <location filename="../../mainwindow.cpp" line="1257"/>
+        <location filename="../../mainwindow.cpp" line="1265"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1256"/>
+        <location filename="../../mainwindow.cpp" line="1265"/>
         <source>Switch user command is not set.</source>
         <translation>La commande de changement d’utilisateur n&apos;est pas configurée.</translation>
     </message>
@@ -1265,22 +1235,22 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="188"/>
+        <location filename="../../preferencesdialog.cpp" line="195"/>
         <source>Icon View</source>
         <translation>Vue en icônes</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="189"/>
+        <location filename="../../preferencesdialog.cpp" line="196"/>
         <source>Compact View</source>
         <translation>Vue compacte</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="190"/>
+        <location filename="../../preferencesdialog.cpp" line="197"/>
         <source>Thumbnail View</source>
         <translation>Vue en vignettes</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="191"/>
+        <location filename="../../preferencesdialog.cpp" line="198"/>
         <source>Detailed List View</source>
         <translation>Vue en liste détaillée</translation>
     </message>
@@ -1288,17 +1258,17 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../../tabpage.cpp" line="263"/>
+        <location filename="../../tabpage.cpp" line="279"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../../tabpage.cpp" line="276"/>
+        <location filename="../../tabpage.cpp" line="292"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Espace libre: %1 (total : %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="291"/>
+        <location filename="../../tabpage.cpp" line="309"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n élément</numerusform>
@@ -1306,17 +1276,20 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="293"/>
+        <location filename="../../tabpage.cpp" line="311"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n caché)</numerusform>
             <numerusform> (%n cachés)</numerusform>
         </translation>
     </message>
-    <message>
-        <location filename="../../tabpage.cpp" line="451"/>
+    <message numerus="yes">
+        <location filename="../../tabpage.cpp" line="478"/>
         <source>%n item(s) selected</source>
-        <translation>%n item(s) selectionné(s)</translation>
+        <translation type="unfinished">
+            <numerusform>%n item(s) selectionné(s)</numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -1332,7 +1305,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
         <translation>Ouvrir &amp;dans une nouvelle fenêtre</translation>
     </message>
     <message>
-        <location filename="../../view.cpp" line="115"/>
+        <location filename="../../view.cpp" line="114"/>
         <source>Open in Termina&amp;l</source>
         <translation>Ouvrir dans &amp;le terminal</translation>
     </message>
