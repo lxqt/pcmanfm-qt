@@ -604,10 +604,13 @@ void TabPage::setShowHidden(bool showHidden) {
             static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
         }
     }
-    if(!proxyModel_ || showHidden == proxyModel_->showHidden()) {
+    if(!proxyModel_) {
         return;
     }
-    proxyModel_->setShowHidden(showHidden);
+    if(showHidden != proxyModel_->showHidden()) {
+        proxyModel_->setShowHidden(showHidden);
+    }
+    // this may also be called by MainWindow::onTabPageSortFilterChanged to set status message
     statusText_[StatusTextNormal] = formatStatusText();
     Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
 }

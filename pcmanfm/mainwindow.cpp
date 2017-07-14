@@ -489,6 +489,9 @@ void MainWindow::on_actionFolderProperties_triggered() {
 void MainWindow::on_actionShowHidden_triggered(bool checked) {
     currentPage()->setShowHidden(checked);
     ui.sidePane->setShowHidden(checked);
+    if(!currentPage()->hasCustomizedView()) {
+        static_cast<Application*>(qApp)->settings().setShowHidden(checked);  // remember globally
+    }
 }
 
 void MainWindow::on_actionByFileName_triggered(bool checked) {
@@ -916,7 +919,9 @@ void MainWindow::onTabPageSortFilterChanged() {
             settings.setSortOrder(tabPage->sortOrder());
             settings.setSortFolderFirst(tabPage->sortFolderFirst());
             settings.setSortCaseSensitive(tabPage->sortCaseSensitive());
+            settings.setShowHidden(tabPage->showHidden()); // remember globally , as in on_actionShowHidden_triggered()
         }
+        tabPage->setShowHidden(tabPage->showHidden()); // change status text and perfolder setting
     }
 }
 
