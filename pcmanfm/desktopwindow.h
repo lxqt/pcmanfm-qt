@@ -40,7 +40,6 @@ class FolderViewListView;
 
 namespace PCManFM {
 
-class DesktopItemDelegate;
 class Settings;
 
 class DesktopWindow : public View {
@@ -138,7 +137,6 @@ private:
     QString wallpaperFile_;
     WallpaperMode wallpaperMode_;
     QPixmap wallpaperPixmap_;
-    DesktopItemDelegate* delegate_;
     Launcher fileLauncher_;
     bool showWmMenu_;
 

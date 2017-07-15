@@ -10,7 +10,6 @@ set(pcmanfm_SRCS
     xdgdir.cpp
     desktoppreferencesdialog.cpp
     desktopwindow.cpp
-    desktopitemdelegate.cpp
     autorundialog.cpp
     connectserverdialog.cpp
     settings.cpp

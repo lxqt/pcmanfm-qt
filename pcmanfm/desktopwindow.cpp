@@ -41,9 +41,9 @@
 
 #include "./application.h"
 #include "mainwindow.h"
-#include "desktopitemdelegate.h"
 #include <libfm-qt/foldermenu.h>
 #include <libfm-qt/filemenu.h>
+#include <libfm-qt/folderitemdelegate.h>
 #include <libfm-qt/cachedfoldermodel.h>
 #include <libfm-qt/folderview_p.h>
 #include <libfm-qt/fileoperation.h>
@@ -117,10 +117,6 @@ DesktopWindow::DesktopWindow(int screenNum):
         connect(listView_, &QListView::indexesMoved, this, &DesktopWindow::onIndexesMoved);
     }
 
-    // set our own delegate
-    delegate_ = new DesktopItemDelegate(listView_);
-    listView_->setItemDelegateForColumn(Fm::FolderModel::ColumnFileName, delegate_);
-
     // remove frame
     listView_->setFrameShape(QFrame::NoFrame);
     // inhibit scrollbars FIXME: this should be optional in the future
@@ -189,7 +185,8 @@ void DesktopWindow::setForeground(const QColor& color) {
 
 void DesktopWindow::setShadow(const QColor& color) {
     shadowColor_ = color;
-    delegate_->setShadowColor(color);
+    auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(Fm::FolderModel::ColumnFileName));
+    delegate->setShadowColor(color);
 }
 
 void DesktopWindow::onOpenDirRequested(const Fm::FilePath& path, int target) {
@@ -487,6 +484,8 @@ void DesktopWindow::onDataChanged(const QModelIndex& topLeft, const QModelIndex&
 }
 
 void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
+    auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
+    auto itemSize = delegate->itemSize();
     // remember the custom position for the items
     Q_FOREACH(const QModelIndex& index, indexes) {
         // Under some circumstances, Qt might emit indexMoved for
@@ -508,8 +507,8 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
 
             if(existingItem == customItemPos_.cend() // don't put items on each other
                     && tl.x() >= workArea.x() && tl.y() >= workArea.y()
-                    && tl.x() + listView_->gridSize().width() <= workArea.right() + 1 // for historical reasons (-> Qt doc)
-                    && tl.y() + listView_->gridSize().height() <= workArea.bottom() + 1) { // as above
+                    && tl.x() + itemSize.width() <= workArea.right() + 1 // for historical reasons (-> Qt doc)
+                    && tl.y() + itemSize.height() <= workArea.bottom() + 1) { // as above
                 customItemPos_[file->name()] = tl;
                 // qDebug() << "indexMoved:" << name << index << itemRect;
             }
@@ -526,10 +525,13 @@ void DesktopWindow::removeBottomGap() {
      the vertical cell margin to prevent relatively large gaps
      from taking shape at the desktop bottom.
      ************************************************************/
+    auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
+    auto itemSize = delegate->itemSize();
+    qDebug() << "delegate:" << delegate->itemSize();
     QSize cellMargins = getMargins();
     int workAreaHeight = qApp->desktop()->availableGeometry(screenNum_).height()
                          - 24; // a 12-pix margin will be considered everywhere
-    int cellHeight = listView_->gridSize().height() + listView_->spacing();
+    int cellHeight = itemSize.height() + listView_->spacing();
     int iconNumber = workAreaHeight / cellHeight;
     int bottomGap = workAreaHeight % cellHeight;
     /*******************************************
@@ -556,7 +558,7 @@ void DesktopWindow::removeBottomGap() {
         cellMargins += QSize(0, (bottomGap / iconNumber) / 2);
     }
     // set the new margins (if they're changed)
-    delegate_->setMargins(cellMargins);
+    delegate->setMargins(cellMargins);
     setMargins(cellMargins);
     // in case the text shadow is reset to (0,0,0,0)
     setShadow(settings.desktopShadowColor());
@@ -590,6 +592,10 @@ void DesktopWindow::relayoutItems() {
     int screen = 0;
     int row = 0;
     int rowCount = proxyModel_->rowCount();
+
+    auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
+    auto itemSize = delegate->itemSize();
+
     for(;;) {
         if(desktop->isVirtualDesktop()) {
             if(screen >= desktop->numScreens()) {
@@ -603,11 +609,10 @@ void DesktopWindow::relayoutItems() {
         workArea.adjust(12, 12, -12, -12); // add a 12 pixel margin to the work area
         // qDebug() << "workArea" << screen <<  workArea;
         // FIXME: we use an internal class declared in a private header here, which is pretty bad.
-        QSize grid = listView_->gridSize();
         QPoint pos = workArea.topLeft();
         for(; row < rowCount; ++row) {
             QModelIndex index = proxyModel_->index(row, 0);
-            int itemWidth = delegate_->sizeHint(listView_->getViewOptions(), index).width();
+            int itemWidth = delegate->sizeHint(listView_->getViewOptions(), index).width();
             auto file = proxyModel_->fileInfoFromIndex(index);
             // remember display names of desktop entries and shortcuts
             if(file->isDesktopEntry() || file->isShortcut()) {
@@ -618,7 +623,7 @@ void DesktopWindow::relayoutItems() {
             if(find_it != customItemPos_.cend()) { // the item has a custom position
                 QPoint customPos = find_it->second;
                 // center the contents vertically
-                listView_->setPositionForIndex(customPos + QPoint((grid.width() - itemWidth) / 2, 0), index);
+                listView_->setPositionForIndex(customPos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
                 // qDebug() << "set custom pos:" << name << row << index << customPos;
                 continue;
             }
@@ -626,7 +631,7 @@ void DesktopWindow::relayoutItems() {
             bool used = false;
             for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend(); ++it) {
                 QPoint customPos = it->second;
-                if(QRect(customPos, grid).contains(pos)) {
+                if(QRect(customPos, itemSize).contains(pos)) {
                     used = true;
                     break;
                 }
@@ -636,18 +641,18 @@ void DesktopWindow::relayoutItems() {
             }
             else {
                 // center the contents vertically
-                listView_->setPositionForIndex(pos + QPoint((grid.width() - itemWidth) / 2, 0), index);
+                listView_->setPositionForIndex(pos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
                 // qDebug() << "set pos" << name << row << index << pos;
             }
             // move to next cell in the column
-            pos.setY(pos.y() + grid.height() + listView_->spacing());
-            if(pos.y() + grid.height() > workArea.bottom() + 1) {
+            pos.setY(pos.y() + itemSize.height() + listView_->spacing());
+            if(pos.y() + itemSize.height() > workArea.bottom() + 1) {
                 // if the next position may exceed the bottom of work area, go to the top of next column
-                pos.setX(pos.x() + grid.width() + listView_->spacing());
+                pos.setX(pos.x() + itemSize.width() + listView_->spacing());
                 pos.setY(workArea.top());
 
                 // check if the new column exceeds the right margin of work area
-                if(pos.x() + grid.width() > workArea.right() + 1) {
+                if(pos.x() + itemSize.width() > workArea.right() + 1) {
                     if(desktop->isVirtualDesktop()) {
                         // in virtual desktop mode, go to next screen
                         ++screen;
@@ -672,7 +677,9 @@ void DesktopWindow::loadItemPositions() {
     Settings& settings = static_cast<Application*>(qApp)->settings();
     QString configFile = QString("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
     QSettings file(configFile, QSettings::IniFormat);
-    QSize grid = listView_->gridSize();
+
+    auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
+    auto grid = delegate->itemSize();
     QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
     workArea.adjust(12, 12, -12, -12);
     char* dektopPath = Fm::Path::getDesktop().toStr();
@@ -695,8 +702,8 @@ void DesktopWindow::loadItemPositions() {
         if(var.isValid()) {
             QPoint customPos = var.toPoint();
             if(customPos.x() >= workArea.x() && customPos.y() >= workArea.y()
-                    && customPos.x() + listView_->gridSize().width() <= workArea.right() + 1
-                    && customPos.y() + listView_->gridSize().height() <= workArea.bottom() + 1) {
+                    && customPos.x() + grid.width() <= workArea.right() + 1
+                    && customPos.y() + grid.height() <= workArea.bottom() + 1) {
                 // correct positions that are't aligned to the grid
                 alignToGrid(customPos, workArea.topLeft(), grid, listView_->spacing());
                 // FIXME: this is very inefficient
@@ -979,6 +986,8 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         e->accept();
     }
     else {
+        auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
+        auto grid = delegate->itemSize();
         Fm::FolderView::childDropEvent(e);
         // position dropped items successively, starting with the drop rectangle
         if(mimeData->hasUrls()
@@ -991,7 +1000,6 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                 if(!name.empty()) { // respect the positions of existing files
                     QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
                     if(!QFile::exists(desktopDir + QString::fromStdString(name))) {
-                        QSize grid = listView_->gridSize();
                         QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
                         workArea.adjust(12, 12, -12, -12);
                         QPoint pos = mapFromGlobal(e->pos());
