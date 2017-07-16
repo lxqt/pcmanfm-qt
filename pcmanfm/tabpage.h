@@ -106,7 +106,7 @@ public:
     void setSortCaseSensitive(bool value);
 
     bool showHidden() {
-        return folderSettings_.showHidden();
+        return proxyModel_->showHidden();
     }
 
     void setShowHidden(bool showHidden);
