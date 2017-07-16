@@ -969,7 +969,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../../application.cpp" line="200"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Atverti nuostatų dialogą nurodyto pavadinimo puslapyje </translation>
+        <translation>Atverti nuostatų dialogą nurodyto pavadinimo puslapyje</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="203"/>
@@ -1438,7 +1438,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../../preferences.ui" line="346"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Rodyti paslėptų failų piktogramas užtamsintai </translation>
+        <translation>Rodyti paslėptų failų piktogramas užtamsintai</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="369"/>
