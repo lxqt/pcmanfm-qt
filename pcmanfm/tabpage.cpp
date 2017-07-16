@@ -446,6 +446,13 @@ void TabPage::invertSelection() {
 void TabPage::reload() {
     if(folder_) {
         proxyFilter_->setVirtHidden(folder_); // reread ".hidden"
+        // don't select or scroll to the previous folder after reload
+        lastFolderPath_ = Fm::FilePath();
+        // but remember the current scroll position
+        BrowseHistoryItem& item = history_.currentItem();
+        QAbstractItemView* childView = folderView_->childView();
+        item.setScrollPos(childView->verticalScrollBar()->value());
+
         folder_->reload();
     }
 }
