@@ -813,12 +813,21 @@ void DesktopWindow::onDeleteActivated() {
 }
 
 void DesktopWindow::onRenameActivated() {
-    auto files = selectedFiles();
-    if(!files.empty()) {
-        for(auto& info: files) {
-            Fm::renameFile(info, nullptr);
-        }
+    // do inline renaming if only one item is selected,
+    // otherwise use the renaming dialog
+    if(selectedIndexes().size() == 1) {
+        QModelIndex cur = listView_->currentIndex();
+        if (cur.isValid()) {
+            listView_->edit(cur);        }
     }
+    else {
+        auto files = selectedFiles();
+        if(!files.empty()) {
+            for(auto& info: files) {
+                Fm::renameFile(info, nullptr);
+            }
+         }
+     }
 }
 
 void DesktopWindow::onFilePropertiesActivated() {
