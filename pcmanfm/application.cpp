@@ -679,11 +679,11 @@ void Application::updateFromSettings() {
     }
 }
 
-void Application::updateDesktopsFromSettings() {
+void Application::updateDesktopsFromSettings(bool changeSlide) {
     QVector<DesktopWindow*>::iterator it;
     for(it = desktopWindows_.begin(); it != desktopWindows_.end(); ++it) {
         DesktopWindow* desktopWindow = static_cast<DesktopWindow*>(*it);
-        desktopWindow->updateFromSettings(settings_);
+        desktopWindow->updateFromSettings(settings_, changeSlide);
     }
 }
 
