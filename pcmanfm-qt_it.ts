@@ -1057,12 +1057,12 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../../desktopwindow.cpp" line="382"/>
+        <location filename="../../desktopwindow.cpp" line="379"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Blo&amp;cca alla posizione attuale</translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="404"/>
+        <location filename="../../desktopwindow.cpp" line="401"/>
         <source>Desktop Preferences</source>
         <translation>Preferenze della scrivania</translation>
     </message>
@@ -1085,28 +1085,28 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
         <translation>Questo nasconderà la barra del menu, usa Ctrl+M per visualizzarla nuovamente.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="625"/>
+        <location filename="../../mainwindow.cpp" line="628"/>
         <source>Version: %1</source>
         <translation>Versione:%1</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1188"/>
+        <location filename="../../mainwindow.cpp" line="1204"/>
         <source>&amp;Move to Trash</source>
         <translation>Cestin&amp;a</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1188"/>
+        <location filename="../../mainwindow.cpp" line="1204"/>
         <source>&amp;Delete</source>
         <translation>&amp;Elimina</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1257"/>
-        <location filename="../../mainwindow.cpp" line="1265"/>
+        <location filename="../../mainwindow.cpp" line="1273"/>
+        <location filename="../../mainwindow.cpp" line="1281"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1265"/>
+        <location filename="../../mainwindow.cpp" line="1281"/>
         <source>Switch user command is not set.</source>
         <translation>Il comando per cambiare utente non è impostato.</translation>
     </message>
@@ -1163,7 +1163,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="478"/>
+        <location filename="../../tabpage.cpp" line="485"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n elemento selezionato</numerusform>

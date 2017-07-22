@@ -1081,12 +1081,12 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../../desktopwindow.cpp" line="382"/>
+        <location filename="../../desktopwindow.cpp" line="379"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Blijf op de huidige positie</translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="404"/>
+        <location filename="../../desktopwindow.cpp" line="401"/>
         <source>Desktop Preferences</source>
         <translation>Bureaubladvoorkeuren</translation>
     </message>
@@ -1109,28 +1109,28 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>Dit zal de menubalk volledig verbergen, gebruik Ctrl+M om hem opnieuw weer te geven.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="625"/>
+        <location filename="../../mainwindow.cpp" line="628"/>
         <source>Version: %1</source>
         <translation>Versie: %1</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1188"/>
+        <location filename="../../mainwindow.cpp" line="1204"/>
         <source>&amp;Move to Trash</source>
         <translation>Verplaats naar &amp;prullenbak</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1188"/>
+        <location filename="../../mainwindow.cpp" line="1204"/>
         <source>&amp;Delete</source>
         <translation>&amp;Verwijderen</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1257"/>
-        <location filename="../../mainwindow.cpp" line="1265"/>
+        <location filename="../../mainwindow.cpp" line="1273"/>
+        <location filename="../../mainwindow.cpp" line="1281"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1265"/>
+        <location filename="../../mainwindow.cpp" line="1281"/>
         <source>Switch user command is not set.</source>
         <translation>De opdracht voor gebruikerswissel is niet ingesteld.</translation>
     </message>
@@ -1187,7 +1187,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="478"/>
+        <location filename="../../tabpage.cpp" line="485"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n element(en) gekozen</numerusform>

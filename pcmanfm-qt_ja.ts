@@ -1153,12 +1153,12 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../../desktopwindow.cpp" line="382"/>
+        <location filename="../../desktopwindow.cpp" line="379"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>現在の場所に固定</translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="404"/>
+        <location filename="../../desktopwindow.cpp" line="401"/>
         <source>Desktop Preferences</source>
         <translation>デスクトップ設定</translation>
     </message>
@@ -1181,28 +1181,28 @@ A space is also reserved for 3 lines of text.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="625"/>
+        <location filename="../../mainwindow.cpp" line="628"/>
         <source>Version: %1</source>
         <translation>バージョン: %1</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1188"/>
+        <location filename="../../mainwindow.cpp" line="1204"/>
         <source>&amp;Move to Trash</source>
         <translation>ゴミ箱へ移動(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1188"/>
+        <location filename="../../mainwindow.cpp" line="1204"/>
         <source>&amp;Delete</source>
         <translation>削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1257"/>
-        <location filename="../../mainwindow.cpp" line="1265"/>
+        <location filename="../../mainwindow.cpp" line="1273"/>
+        <location filename="../../mainwindow.cpp" line="1281"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1265"/>
+        <location filename="../../mainwindow.cpp" line="1281"/>
         <source>Switch user command is not set.</source>
         <translation>ユーザー切替コマンドを未設定です</translation>
     </message>
@@ -1265,7 +1265,7 @@ A space is also reserved for 3 lines of text.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="478"/>
+        <location filename="../../tabpage.cpp" line="485"/>
         <source>%n item(s) selected</source>
         <translation type="unfinished">
             <numerusform></numerusform>
