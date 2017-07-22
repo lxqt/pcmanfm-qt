@@ -63,6 +63,10 @@ Settings::Settings():
     closeOnUnmount_(false),
     wallpaperMode_(0),
     wallpaper_(),
+    lastSlide_(),
+    wallpaperDir_(),
+    slideShowInterval_(0),
+    wallpaperRandomize_(false),
     desktopBgColor_(),
     desktopFgColor_(),
     desktopShadowColor_(),
@@ -204,6 +208,10 @@ bool Settings::loadFile(QString filePath) {
     settings.beginGroup("Desktop");
     wallpaperMode_ = wallpaperModeFromString(settings.value("WallpaperMode").toString());
     wallpaper_ = settings.value("Wallpaper").toString();
+    lastSlide_ = settings.value("LastSlide").toString();
+    wallpaperDir_ = settings.value("WallpaperDirectory").toString();
+    slideShowInterval_ = settings.value("SlideShowInterval", 0).toInt();
+    wallpaperRandomize_ = settings.value("WallpaperRandomize").toBool();
     desktopBgColor_.setNamedColor(settings.value("BgColor", "#000000").toString());
     desktopFgColor_.setNamedColor(settings.value("FgColor", "#ffffff").toString());
     desktopShadowColor_.setNamedColor(settings.value("ShadowColor", "#000000").toString());
@@ -323,6 +331,10 @@ bool Settings::saveFile(QString filePath) {
     settings.beginGroup("Desktop");
     settings.setValue("WallpaperMode", wallpaperModeToString(wallpaperMode_));
     settings.setValue("Wallpaper", wallpaper_);
+    settings.setValue("LastSlide", lastSlide_);
+    settings.setValue("WallpaperDirectory", wallpaperDir_);
+    settings.setValue("SlideShowInterval", slideShowInterval_);
+    settings.setValue("WallpaperRandomize", wallpaperRandomize_);
     settings.setValue("BgColor", desktopBgColor_.name());
     settings.setValue("FgColor", desktopFgColor_.name());
     settings.setValue("ShadowColor", desktopShadowColor_.name());

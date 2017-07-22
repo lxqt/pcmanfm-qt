@@ -87,7 +87,7 @@ public:
     }
 
     void updateFromSettings();
-    void updateDesktopsFromSettings();
+    void updateDesktopsFromSettings(bool changeSlide = true);
 
     void openFolderInTerminal(Fm::FilePath path);
     void openFolders(Fm::FileInfoList files);
