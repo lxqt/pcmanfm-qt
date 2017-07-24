@@ -1295,7 +1295,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../../preferences.ui" line="487"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Rodyti ant kortelių mygtuką &quot;Užverti&quot;</translation>
+        <translation>Rodyti ant kortelių mygtuką &quot;Užverti&quot;	</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="494"/>
