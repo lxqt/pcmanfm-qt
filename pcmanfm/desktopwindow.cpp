@@ -818,15 +818,15 @@ void DesktopWindow::onRenameActivated() {
     if(selectedIndexes().size() == 1) {
         QModelIndex cur = listView_->currentIndex();
         if (cur.isValid()) {
-            listView_->edit(cur);        }
+            listView_->edit(cur);
+            return;
+        }
     }
-    else {
-        auto files = selectedFiles();
-        if(!files.empty()) {
-            for(auto& info: files) {
-                Fm::renameFile(info, nullptr);
-            }
-         }
+    auto files = selectedFiles();
+    if(!files.empty()) {
+        for(auto& info: files) {
+            Fm::renameFile(info, nullptr);
+        }
      }
 }
 
