@@ -65,7 +65,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt File Manager
+
+Prawa autorskie (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Niniejszy program jest otwartym oprogramowaniem; możesz go rozprowadzać
+dalej i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU,
+wydanej przez Fundację Wolnodostępnego Oprogramowania - według wersji drugiej
+tej Licencji lub którejś z późniejszych wersji.
+
+Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny -
+jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI
+HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania
+bliższych informacji - Powszechna Licencja Publiczna GNU.
+
+Z pewnością wraz z niniejszym programem otrzymałeś też egzemplarz Powszechnej
+Licencji Publicznej GNU; jeśli nie - napisz do Free Software 
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
 </context>
 <context>
@@ -144,7 +160,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formularz</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="23"/>
@@ -268,7 +284,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../../desktop-preferences.ui" line="241"/>
         <location filename="../../desktop-preferences.ui" line="265"/>
         <source> px</source>
-        <translation>px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="254"/>
@@ -580,7 +596,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../../main-win.ui" line="497"/>
         <source>Select &amp;All</source>
-        <translation>Zazn&amp;acz wszystko </translation>
+        <translation>Zazn&amp;acz wszystko</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="505"/>
@@ -1300,18 +1316,18 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
         <location filename="../../tabpage.cpp" line="309"/>
         <source>%n item(s)</source>
         <translation>
+            <numerusform>%n element</numerusform>
+            <numerusform>%n elementy</numerusform>
             <numerusform>%n elementów</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="311"/>
         <source> (%n hidden)</source>
         <translation>
-            <numerusform>(%n ukrytych)</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+            <numerusform> (%n ukryty)</numerusform>
+            <numerusform> (%n ukryte)</numerusform>
+            <numerusform> (%n ukrytych)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1432,7 +1448,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../../preferences.ui" line="487"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Pokaż przycisk &apos;Zamknij&apos; na kartach</translation>
+        <translation>Pokaż przycisk &apos;Zamknij&apos; na kartach	</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="494"/>
@@ -1477,7 +1493,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Przenoszenie plików do &quot;Kosza&quot; zamiast usuwania z dysku</translation>
+        <translation>Przenoszenie plików do &quot;Kosza&quot; zamiast usuwania z dysku.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="676"/>
@@ -1581,7 +1597,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
         <location filename="../../preferences.ui" line="379"/>
         <location filename="../../preferences.ui" line="403"/>
         <source> px</source>
-        <translation>px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="392"/>
