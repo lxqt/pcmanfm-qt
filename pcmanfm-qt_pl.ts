@@ -306,7 +306,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
         <source>Window Manager</source>
-        <translation>Menedżer Okien</translation>
+        <translation>Menedżer okien</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="327"/>
@@ -1448,12 +1448,12 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../../preferences.ui" line="487"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Pokaż przycisk &apos;Zamknij&apos; na kartach	</translation>
+        <translation>Pokazuj przycisk &apos;Zamknij&apos; na kartach	</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="494"/>
         <source>Remember the size of the last closed window</source>
-        <translation>Pamiętaj rozmiar ostatnio zamkniętego okna</translation>
+        <translation>Zapamiętuj rozmiar ostatnio zamkniętego okna</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="81"/>
@@ -1493,12 +1493,12 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Przenoszenie plików do &quot;Kosza&quot; zamiast usuwania z dysku.</translation>
+        <translation>Przenoś pliki do &quot;Kosza&quot; zamiast usuwać z dysku.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="676"/>
         <source>Show thumbnails of files</source>
-        <translation>Wyświetl miniatury zawartości plików</translation>
+        <translation>Wyświetlaj miniatury zawartości plików</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="666"/>
@@ -1581,7 +1581,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../../preferences.ui" line="346"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Przytłumione ikony dla plików ukrytych</translation>
+        <translation>Przyciemniaj ikony ukrytych plików</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="369"/>
@@ -1638,7 +1638,7 @@ nad widokiem, nie nad prawym panelem.</translation>
     <message>
         <location filename="../../preferences.ui" line="532"/>
         <source>Show in places</source>
-        <translation>Pokaż w położeniach</translation>
+        <translation>Pokazuj w położeniach</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="539"/>
@@ -1698,17 +1698,17 @@ nad widokiem, nie nad prawym panelem.</translation>
     <message>
         <location filename="../../preferences.ui" line="709"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>Montowanie wolumenów podczas uruchamiania programu</translation>
+        <translation>Montuj nośniki wymienne podczas uruchamiania programu</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="716"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>Montowanie nośników wymiennych po wsunięciu</translation>
+        <translation>Montuj nośniki wymienne po ich wsunięciu</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="723"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation>Wyświetlanie możliwych czynności po wsunięciu nośnika wymiennego</translation>
+        <translation>Wyświetlaj możliwe czynności po wsunięciu nośnika wymiennego</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="733"/>
