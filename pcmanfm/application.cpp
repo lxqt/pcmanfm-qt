@@ -452,6 +452,14 @@ void Application::desktopPrefrences(QString page) {
 
 void Application::onFindFileAccepted() {
     Fm::FileSearchDialog* dlg = static_cast<Fm::FileSearchDialog*>(sender());
+    // get search settings
+    settings_.setSearchNameCaseInsensitive(dlg->nameCaseInsensitive());
+    settings_.setsearchContentCaseInsensitive(dlg->contentCaseInsensitive());
+    settings_.setSearchNameRegexp(dlg->nameRegexp());
+    settings_.setSearchContentRegexp(dlg->contentRegexp());
+    settings_.setSearchRecursive(dlg->recursive());
+    settings_.setSearchhHidden(dlg->searchhHidden());
+
     Fm::Path uri = dlg->searchUri();
     Fm::FilePathList paths;
     Fm::GFilePtr gf{uri.toGfile(), false};
@@ -474,6 +482,14 @@ void Application::findFiles(QStringList paths) {
     Fm::FileSearchDialog* dlg = new Fm::FileSearchDialog(paths);
     connect(dlg, &QDialog::accepted, this, &Application::onFindFileAccepted);
     dlg->setAttribute(Qt::WA_DeleteOnClose);
+    // set search settings
+    dlg->setNameCaseInsensitive(settings_.searchNameCaseInsensitive());
+    dlg->setContentCaseInsensitive(settings_.searchContentCaseInsensitive());
+    dlg->setNameRegexp(settings_.searchNameRegexp());
+    dlg->setContentRegexp(settings_.searchContentRegexp());
+    dlg->setRecursive(settings_.searchRecursive());
+    dlg->setSearchhHidden(settings_.searchhHidden());
+
     dlg->show();
 }
 
