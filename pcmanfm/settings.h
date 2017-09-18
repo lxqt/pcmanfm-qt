@@ -787,6 +787,54 @@ public:
 
     void clearFolderSettings(const Fm::FilePath& path) const;
 
+    bool searchNameCaseInsensitive() const {
+        return searchNameCaseInsensitive_;
+    }
+
+    void setSearchNameCaseInsensitive(bool caseInsensitive) {
+        searchNameCaseInsensitive_ = caseInsensitive;
+    }
+
+    bool searchContentCaseInsensitive() const {
+        return searchContentCaseInsensitive_;
+    }
+
+    void setsearchContentCaseInsensitive(bool caseInsensitive) {
+        searchContentCaseInsensitive_ = caseInsensitive;
+    }
+
+    bool searchNameRegexp() const {
+        return searchNameRegexp_;
+    }
+
+    void setSearchNameRegexp(bool reg) {
+        searchNameRegexp_ = reg;
+    }
+
+    bool searchContentRegexp() const {
+        return searchNameRegexp_;
+    }
+
+    void setSearchContentRegexp(bool reg) {
+        searchContentRegexp_ = reg;
+    }
+
+    bool searchRecursive() const {
+        return searchRecursive_;
+    }
+
+    void setSearchRecursive(bool rec) {
+        searchRecursive_ = rec;
+    }
+
+    bool searchhHidden() const {
+        return searchhHidden_;
+    }
+
+    void setSearchhHidden(bool hidden) {
+        searchhHidden_ = hidden;
+    }
+
 private:
     QString profileName_;
     bool supportTrash_;
@@ -879,6 +927,14 @@ private:
 
     QSize folderViewCellMargins_;
     QSize desktopCellMargins_;
+
+    // search settings
+    bool searchNameCaseInsensitive_;
+    bool searchContentCaseInsensitive_;
+    bool searchNameRegexp_;
+    bool searchContentRegexp_;
+    bool searchRecursive_;
+    bool searchhHidden_;
 };
 
 }

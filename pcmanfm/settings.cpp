@@ -119,7 +119,13 @@ Settings::Settings():
     sidePaneIconSize_(24),
     thumbnailIconSize_(128),
     folderViewCellMargins_(QSize(3, 3)),
-    desktopCellMargins_(QSize(3, 1)) {
+    desktopCellMargins_(QSize(3, 1)),
+    searchNameCaseInsensitive_(false),
+    searchContentCaseInsensitive_(false),
+    searchNameRegexp_(true),
+    searchContentRegexp_(true),
+    searchRecursive_(false),
+    searchhHidden_(false) {
 }
 
 Settings::~Settings() {
@@ -295,6 +301,15 @@ bool Settings::loadFile(QString filePath) {
     pathBarButtons_ = settings.value("PathBarButtons", true).toBool();
     settings.endGroup();
 
+    settings.beginGroup("Search");
+    searchNameCaseInsensitive_ = settings.value("searchNameCaseInsensitive", false).toBool();
+    searchContentCaseInsensitive_ = settings.value("searchContentCaseInsensitive", false).toBool();
+    searchNameRegexp_ = settings.value("searchNameRegexp", true).toBool();
+    searchContentRegexp_ = settings.value("searchContentRegexp", true).toBool();
+    searchRecursive_ = settings.value("searchRecursive", false).toBool();
+    searchhHidden_ = settings.value("searchhHidden", false).toBool();
+    settings.endGroup();
+
     return true;
 }
 
@@ -411,6 +426,15 @@ bool Settings::saveFile(QString filePath) {
 
     // save per-folder settings
     Fm::FolderConfig::saveCache();
+
+    settings.beginGroup("Search");
+    settings.setValue("searchNameCaseInsensitive", searchNameCaseInsensitive_);
+    settings.setValue("searchContentCaseInsensitive", searchContentCaseInsensitive_);
+    settings.setValue("searchNameRegexp", searchNameRegexp_);
+    settings.setValue("searchContentRegexp", searchContentRegexp_);
+    settings.setValue("searchRecursive", searchRecursive_);
+    settings.setValue("searchhHidden", searchhHidden_);
+    settings.endGroup();
 
     return true;
 }
