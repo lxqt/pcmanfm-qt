@@ -192,7 +192,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     // Show or hide the menu bar
     QMenu* menu = new QMenu(ui.toolBar);
     menu->addMenu(ui.menu_File);
-    menu->addMenu(ui.menu_Editw);
+    menu->addMenu(ui.menu_Edit);
     menu->addMenu(ui.menu_View);
     menu->addMenu(ui.menu_Go);
     menu->addMenu(ui.menu_Bookmarks);
@@ -812,6 +812,34 @@ void MainWindow::updateViewMenuForCurrentPage() {
     updatingViewMenu_ = false;
 }
 
+// Update the enabled state of Edit actions for selected files
+void MainWindow::updateEditSelectedActions() {
+    bool hasAccessible(false);
+    bool hasDeletable(false);
+    bool hasRenamable(false);
+    if(TabPage* page = currentPage()) {
+        auto files = page->selectedFiles();
+        for(auto& file: files) {
+            if(file->isAccessible()) {
+                hasAccessible = true;
+            }
+            if(file->isDeletable()) {
+                hasDeletable = true;
+            }
+            if(file->canSetName()) {
+                hasRenamable = true;
+            }
+            if (hasAccessible && hasDeletable && hasRenamable) {
+                break;
+            }
+        }
+    }
+    ui.actionCopy->setEnabled(hasAccessible);
+    ui.actionCut->setEnabled(hasDeletable);
+    ui.actionDelete->setEnabled(hasDeletable);
+    ui.actionRename->setEnabled(hasRenamable);
+}
+
 void MainWindow::updateUIForCurrentPage() {
     TabPage* tabPage = currentPage();
 
@@ -839,6 +867,16 @@ void MainWindow::updateUIForCurrentPage() {
         updateViewMenuForCurrentPage();
         updateStatusBarForCurrentPage();
     }
+
+    // also update the enabled state of Edit actions
+    updateEditSelectedActions();
+    bool isWritable(false);
+    if(tabPage && tabPage->folder()) {
+        if(auto info = tabPage->folder()->info()) {
+            isWritable = info->isWritable();
+        }
+    }
+    ui.actionPaste->setEnabled(isWritable);
 }
 
 void MainWindow::onStackedWidgetWidgetRemoved(int index) {
@@ -866,6 +904,16 @@ void MainWindow::onTabPageTitleChanged(QString title) {
 
     if(tabPage == currentPage()) {
         setWindowTitle(title);
+
+        // Since TabPage::titleChanged is emitted on changing directory,
+        // the Paste action should be disabled if when the new directory isn't writable
+        bool isWritable(false);
+        if(tabPage && tabPage->folder()) {
+            if(auto info = tabPage->folder()->info()) {
+                isWritable = info->isWritable();
+            }
+        }
+        ui.actionPaste->setEnabled(isWritable);
     }
 }
 
@@ -891,6 +939,11 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
             break;
         }
     }
+
+    // Since TabPage::statusChanged is always emitted after View::selChanged,
+    // there is no need to connect a separate slot to the latter signal
+    // in order to update the enabled state of Edit actions for selected files
+    updateEditSelectedActions();
 }
 
 void MainWindow::onTabPageOpenDirRequested(const Fm::FilePath& path, int target) {

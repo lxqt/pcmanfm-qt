@@ -187,6 +187,7 @@ private:
     void loadBookmarksMenu();
     void updateUIForCurrentPage();
     void updateViewMenuForCurrentPage();
+    void updateEditSelectedActions();
     void updateStatusBarForCurrentPage();
     void setRTLIcons(bool isRTL);
     void createPathBar(bool usePathButtons);

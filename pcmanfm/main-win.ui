@@ -197,7 +197,7 @@
     <addaction name="menuToolbars"/>
     <addaction name="menuPathBarStyle"/>
    </widget>
-   <widget class="QMenu" name="menu_Editw">
+   <widget class="QMenu" name="menu_Edit">
     <property name="title">
      <string>&amp;Edit</string>
     </property>
@@ -245,7 +245,7 @@
     <addaction name="actionFindFiles"/>
    </widget>
    <addaction name="menu_File"/>
-   <addaction name="menu_Editw"/>
+   <addaction name="menu_Edit"/>
    <addaction name="menu_View"/>
    <addaction name="menu_Go"/>
    <addaction name="menu_Bookmarks"/>
