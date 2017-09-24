@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="48"/>
@@ -91,7 +91,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="vanished">PCMan failų tvarkytuvė
+        <translation>PCMan failų tvarkytuvė
 
 Autorių teisės (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
@@ -342,57 +342,57 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Skaidrių rodymas</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Įjungti skaidrių rodymą</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Darbalaukio fono paveikslų aplankas:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="340"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Naršyti</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="347"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> valanda(-ų)</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="357"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>ir</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Mažesnių nei 5 min. intervalų bus nepaisoma</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="373"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Intervalas:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="380"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> minutė(-ių)</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Darbalaukio fonų aplankas</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Atsitiktinė tvarka</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="459"/>
@@ -689,11 +689,11 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     </message>
     <message>
         <source>Close &amp;left tabs</source>
-        <translation type="vanished">Užverti &amp;kairiąsias korteles</translation>
+        <translation>Užverti &amp;kairiąsias korteles</translation>
     </message>
     <message>
         <source>Close &amp;right tabs</source>
-        <translation type="vanished">Užverti &amp;dešiniąsias korteles</translation>
+        <translation>Užverti &amp;dešiniąsias korteles</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="759"/>
@@ -1244,7 +1244,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     </message>
     <message>
         <source>%1 item(s) selected</source>
-        <translation type="vanished">Pažymėti %1 elementai</translation>
+        <translation>Pažymėti %1 elementai</translation>
     </message>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="485"/>
