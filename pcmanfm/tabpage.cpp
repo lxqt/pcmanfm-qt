@@ -372,6 +372,9 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
             return;
         }
 
+        // reset the status selected text
+        statusText_[StatusTextSelectedFiles] = QString();
+
         // remember the previous folder path that we have browsed.
         lastFolderPath_ = folder_->path();
 

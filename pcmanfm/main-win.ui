@@ -252,7 +252,7 @@
    <addaction name="menu_Tool"/>
    <addaction name="menu_Help"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="PCManFM::StatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
    <property name="contextMenuPolicy">
     <enum>Qt::PreventContextMenu</enum>
@@ -834,6 +834,12 @@
    <class>PCManFM::TabBar</class>
    <extends>QWidget</extends>
    <header>tabbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PCManFM::StatusBar</class>
+   <extends>QStatusBar</extends>
+   <header>statusbar.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>

@@ -4,6 +4,7 @@ set(pcmanfm_SRCS
     mainwindow.cpp
     tabpage.cpp
     tabbar.cpp
+    statusbar.cpp
     view.cpp
     launcher.cpp
     preferencesdialog.cpp
