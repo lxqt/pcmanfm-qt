@@ -906,7 +906,7 @@ void MainWindow::onTabPageTitleChanged(QString title) {
         setWindowTitle(title);
 
         // Since TabPage::titleChanged is emitted on changing directory,
-        // the Paste action should be disabled if when the new directory isn't writable
+        // the enabled state of Paste action should be updated here
         bool isWritable(false);
         if(tabPage && tabPage->folder()) {
             if(auto info = tabPage->folder()->info()) {
@@ -923,8 +923,9 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
         switch(type) {
         case TabPage::StatusTextNormal:
         case TabPage::StatusTextSelectedFiles: {
-            // FIXME: updating the status text so frequently is a little bit ineffiecient
-            QString text = statusText = tabPage->statusText(TabPage::StatusTextSelectedFiles);
+            // although the status text may change very frequently,
+            // the text of PCManFM::StatusBar is updated with a delay
+            QString text = tabPage->statusText(TabPage::StatusTextSelectedFiles);
             if(text.isEmpty()) {
                 ui.statusbar->showMessage(tabPage->statusText(TabPage::StatusTextNormal));
             }
@@ -942,7 +943,6 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
 
     // Since TabPage::statusChanged is always emitted after View::selChanged,
     // there is no need to connect a separate slot to the latter signal
-    // in order to update the enabled state of Edit actions for selected files
     updateEditSelectedActions();
 }
 
