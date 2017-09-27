@@ -266,10 +266,10 @@ bool Settings::loadFile(QString filePath) {
     shadowHidden_ = settings.value("ShadowHidden", false).toBool();
 
     // override config in libfm's FmConfig
-    bigIconSize_ = settings.value("BigIconSize", 48).toInt();
-    smallIconSize_ = settings.value("SmallIconSize", 24).toInt();
-    sidePaneIconSize_ = settings.value("SidePaneIconSize", 24).toInt();
-    thumbnailIconSize_ = settings.value("ThumbnailIconSize", 128).toInt();
+    bigIconSize_ = toIconSize(settings.value("BigIconSize", 48).toInt(), Big);
+    smallIconSize_ = toIconSize(settings.value("SmallIconSize", 24).toInt(), Small);
+    sidePaneIconSize_ = toIconSize(settings.value("SidePaneIconSize", 24).toInt(), Small);
+    thumbnailIconSize_ = toIconSize(settings.value("ThumbnailIconSize", 128).toInt(), Thumbnail);
 
     folderViewCellMargins_ = (settings.value("FolderViewCellMargins", QSize(3, 3)).toSize()
                               .expandedTo(QSize(0, 0))).boundedTo(QSize(48, 48));
@@ -437,6 +437,33 @@ bool Settings::saveFile(QString filePath) {
     settings.endGroup();
 
     return true;
+}
+
+QList<int> Settings::iconSizes(IconType type) const {
+    QList<int> sizes;
+    switch(type) {
+    case Big:
+        sizes << 96 << 72 << 64 << 48 << 32;
+        break;
+    case Thumbnail:
+        sizes << 256 << 224 << 192 << 160 << 128 << 96 << 64;
+        break;
+    case Small:
+    default:
+        sizes << 48 << 32 << 24 << 22 << 16;
+        break;
+    }
+    return sizes;
+}
+
+int Settings::toIconSize(int size, IconType type) const {
+    QList<int> sizes = iconSizes(type);
+    for (int i = 0; i < sizes.size(); ++i) {
+        if(size >= sizes.at(i)) {
+            return sizes.at(i);
+        }
+    }
+    return sizes.at(sizes.size() - 1);
 }
 
 static const char* bookmarkOpenMethodToString(OpenDirTargetType value) {
