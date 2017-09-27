@@ -31,10 +31,6 @@
 
 namespace PCManFM {
 
-static int bigIconSizes[] = {96, 72, 64, 48, 36, 32, 24, 20};
-static int smallIconSizes[] = {48, 36, 32, 24, 20, 16, 12};
-static int thumbnailIconSizes[] = {256, 224, 192, 160, 128, 96, 64};
-
 PreferencesDialog::PreferencesDialog(QString activePage, QWidget* parent):
     QDialog(parent) {
     ui.setupUi(this);
@@ -135,15 +131,17 @@ void PreferencesDialog::initArchivers(Settings& settings) {
 void PreferencesDialog::initDisplayPage(Settings& settings) {
     initIconThemes(settings);
     // icon sizes
-    for(std::size_t i = 0; i < G_N_ELEMENTS(bigIconSizes); ++i) {
-        int size = bigIconSizes[i];
+    QList<int>sizes = settings.iconSizes(Settings::Big);
+    for(int i = 0; i < sizes.size(); ++i) {
+        int size = sizes.at(i);
         ui.bigIconSize->addItem(QString("%1 x %1").arg(size), size);
         if(settings.bigIconSize() == size) {
             ui.bigIconSize->setCurrentIndex(i);
         }
     }
-    for(std::size_t i = 0; i < G_N_ELEMENTS(smallIconSizes); ++i) {
-        int size = smallIconSizes[i];
+    sizes = settings.iconSizes(Settings::Small);
+    for(int i = 0; i < sizes.size(); ++i) {
+        int size = sizes.at(i);
         QString text = QString("%1 x %1").arg(size);
         ui.smallIconSize->addItem(text, size);
         if(settings.smallIconSize() == size) {
@@ -155,8 +153,9 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
             ui.sidePaneIconSize->setCurrentIndex(i);
         }
     }
-    for(std::size_t i = 0; i < G_N_ELEMENTS(thumbnailIconSizes); ++i) {
-        int size = thumbnailIconSizes[i];
+    sizes = settings.iconSizes(Settings::Thumbnail);
+    for(int i = 0; i < sizes.size(); ++i) {
+        int size = sizes.at(i);
         ui.thumbnailIconSize->addItem(QString("%1 x %1").arg(size), size);
         if(settings.thumbnailIconSize() == size) {
             ui.thumbnailIconSize->setCurrentIndex(i);

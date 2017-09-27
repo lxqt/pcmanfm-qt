@@ -121,8 +121,16 @@ private:
 class Settings : public QObject {
     Q_OBJECT
 public:
+    enum IconType {
+        Small,
+        Big,
+        Thumbnail
+    };
+
     Settings();
     virtual ~Settings();
+
+    QList<int> iconSizes(IconType type) const;
 
     bool load(QString profile = "default");
     bool save(QString profile = QString());
@@ -836,6 +844,8 @@ public:
     }
 
 private:
+    int toIconSize(int size, IconType type) const;
+
     QString profileName_;
     bool supportTrash_;
 
