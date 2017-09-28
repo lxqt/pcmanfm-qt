@@ -131,17 +131,16 @@ void PreferencesDialog::initArchivers(Settings& settings) {
 void PreferencesDialog::initDisplayPage(Settings& settings) {
     initIconThemes(settings);
     // icon sizes
-    QList<int>sizes = settings.iconSizes(Settings::Big);
-    for(int i = 0; i < sizes.size(); ++i) {
-        int size = sizes.at(i);
+    int i = 0;
+    for (const auto & size : Settings::iconSizes(Settings::Big)) {
         ui.bigIconSize->addItem(QString("%1 x %1").arg(size), size);
         if(settings.bigIconSize() == size) {
             ui.bigIconSize->setCurrentIndex(i);
         }
+        ++i;
     }
-    sizes = settings.iconSizes(Settings::Small);
-    for(int i = 0; i < sizes.size(); ++i) {
-        int size = sizes.at(i);
+    i = 0;
+    for (const auto & size : Settings::iconSizes(Settings::Small)) {
         QString text = QString("%1 x %1").arg(size);
         ui.smallIconSize->addItem(text, size);
         if(settings.smallIconSize() == size) {
@@ -152,14 +151,15 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
         if(settings.sidePaneIconSize() == size) {
             ui.sidePaneIconSize->setCurrentIndex(i);
         }
+        ++i;
     }
-    sizes = settings.iconSizes(Settings::Thumbnail);
-    for(int i = 0; i < sizes.size(); ++i) {
-        int size = sizes.at(i);
+    i = 0;
+    for (const auto & size : Settings::iconSizes(Settings::Thumbnail)) {
         ui.thumbnailIconSize->addItem(QString("%1 x %1").arg(size), size);
         if(settings.thumbnailIconSize() == size) {
             ui.thumbnailIconSize->setCurrentIndex(i);
         }
+        ++i;
     }
 
     ui.siUnit->setChecked(settings.siUnit());

@@ -439,31 +439,32 @@ bool Settings::saveFile(QString filePath) {
     return true;
 }
 
-QList<int> Settings::iconSizes(IconType type) const {
-    QList<int> sizes;
+const QList<int> & Settings::iconSizes(IconType type) {
+    static const QList<int> sizes_big = {96, 72, 64, 48, 32};
+    static const QList<int> sizes_thumbnail = {256, 224, 192, 160, 128, 96, 64};
+    static const QList<int> sizes_small = {48, 32, 24, 22, 16};
     switch(type) {
     case Big:
-        sizes << 96 << 72 << 64 << 48 << 32;
+        return sizes_big;
         break;
     case Thumbnail:
-        sizes << 256 << 224 << 192 << 160 << 128 << 96 << 64;
+        return sizes_thumbnail;
         break;
     case Small:
     default:
-        sizes << 48 << 32 << 24 << 22 << 16;
+        return sizes_small;
         break;
     }
-    return sizes;
 }
 
 int Settings::toIconSize(int size, IconType type) const {
-    QList<int> sizes = iconSizes(type);
-    for (int i = 0; i < sizes.size(); ++i) {
-        if(size >= sizes.at(i)) {
-            return sizes.at(i);
+    const QList<int> & sizes = iconSizes(type);
+    for (const auto & s : sizes) {
+        if(size >= s) {
+            return s;
         }
     }
-    return sizes.at(sizes.size() - 1);
+    return sizes.back();
 }
 
 static const char* bookmarkOpenMethodToString(OpenDirTargetType value) {

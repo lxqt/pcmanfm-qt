@@ -130,8 +130,6 @@ public:
     Settings();
     virtual ~Settings();
 
-    QList<int> iconSizes(IconType type) const;
-
     bool load(QString profile = "default");
     bool save(QString profile = QString());
 
@@ -139,6 +137,7 @@ public:
     bool saveFile(QString filePath);
 
     static QString xdgUserConfigDir();
+    static const QList<int> & iconSizes(IconType type);
 
     QString profileDir(QString profile, bool useFallback = false);
 
