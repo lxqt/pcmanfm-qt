@@ -1176,13 +1176,13 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
         <translation>[PLIK1, PLIK2,...]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="524"/>
-        <location filename="../../application.cpp" line="529"/>
+        <location filename="../../application.cpp" line="540"/>
+        <location filename="../../application.cpp" line="545"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="529"/>
+        <location filename="../../application.cpp" line="545"/>
         <source>Terminal emulator is not set.</source>
         <translation>Nie ustawiono emulatora terminala.</translation>
     </message>
@@ -1307,23 +1307,23 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
         <translation>Wersja: %1</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1210"/>
+        <location filename="../../mainwindow.cpp" line="1263"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Przenieś do kosza</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1210"/>
+        <location filename="../../mainwindow.cpp" line="1263"/>
         <source>&amp;Delete</source>
         <translation>&amp;Usuń</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1279"/>
-        <location filename="../../mainwindow.cpp" line="1287"/>
+        <location filename="../../mainwindow.cpp" line="1332"/>
+        <location filename="../../mainwindow.cpp" line="1340"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1287"/>
+        <location filename="../../mainwindow.cpp" line="1340"/>
         <source>Switch user command is not set.</source>
         <translation>Nie ustawiono polecenia do przełączania użytkowników.</translation>
     </message>

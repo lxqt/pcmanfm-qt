@@ -1171,13 +1171,13 @@ A space is also reserved for 3 lines of text.</source>
         <translation>[Archivo 1, Archivo 2,...]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="524"/>
-        <location filename="../../application.cpp" line="529"/>
+        <location filename="../../application.cpp" line="540"/>
+        <location filename="../../application.cpp" line="545"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="529"/>
+        <location filename="../../application.cpp" line="545"/>
         <source>Terminal emulator is not set.</source>
         <translation>El emulador de terminal no está configurado.</translation>
     </message>
@@ -1302,23 +1302,23 @@ A space is also reserved for 3 lines of text.</source>
         <translation>Versión: %1</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1210"/>
+        <location filename="../../mainwindow.cpp" line="1263"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mover a la Papelera</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1210"/>
+        <location filename="../../mainwindow.cpp" line="1263"/>
         <source>&amp;Delete</source>
         <translation>&amp;Eliminar</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1279"/>
-        <location filename="../../mainwindow.cpp" line="1287"/>
+        <location filename="../../mainwindow.cpp" line="1332"/>
+        <location filename="../../mainwindow.cpp" line="1340"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1287"/>
+        <location filename="../../mainwindow.cpp" line="1340"/>
         <source>Switch user command is not set.</source>
         <translation>El comando para cambiar de usuario no está definido.</translation>
     </message>

@@ -1037,13 +1037,13 @@ A space is also reserved for 3 lines of text.</source>
         <translation>[ФАЙЛ1, ФАЙЛ2,...]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="524"/>
-        <location filename="../../application.cpp" line="529"/>
+        <location filename="../../application.cpp" line="540"/>
+        <location filename="../../application.cpp" line="545"/>
         <source>Error</source>
         <translation>Помилка</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="529"/>
+        <location filename="../../application.cpp" line="545"/>
         <source>Terminal emulator is not set.</source>
         <translation>Емулятор терміналу не встановлений.</translation>
     </message>
@@ -1168,23 +1168,23 @@ A space is also reserved for 3 lines of text.</source>
         <translation>Версія: %1</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1210"/>
+        <location filename="../../mainwindow.cpp" line="1263"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Перемістити до смітника</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1210"/>
+        <location filename="../../mainwindow.cpp" line="1263"/>
         <source>&amp;Delete</source>
         <translation>&amp;Вилучити</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1279"/>
-        <location filename="../../mainwindow.cpp" line="1287"/>
+        <location filename="../../mainwindow.cpp" line="1332"/>
+        <location filename="../../mainwindow.cpp" line="1340"/>
         <source>Error</source>
         <translation>Помилка</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1287"/>
+        <location filename="../../mainwindow.cpp" line="1340"/>
         <source>Switch user command is not set.</source>
         <translation>Команда пемикання користувачів не встановлена.</translation>
     </message>

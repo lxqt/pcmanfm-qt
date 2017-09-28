@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="48"/>
@@ -91,7 +91,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>PCMan failų tvarkytuvė
+        <translation type="vanished">PCMan failų tvarkytuvė
 
 Autorių teisės (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
@@ -689,11 +689,11 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     </message>
     <message>
         <source>Close &amp;left tabs</source>
-        <translation>Užverti &amp;kairiąsias korteles</translation>
+        <translation type="vanished">Užverti &amp;kairiąsias korteles</translation>
     </message>
     <message>
         <source>Close &amp;right tabs</source>
-        <translation>Užverti &amp;dešiniąsias korteles</translation>
+        <translation type="vanished">Užverti &amp;dešiniąsias korteles</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="759"/>
@@ -1037,13 +1037,13 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
         <translation>[FAILAS1, FAILAS2,...]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="524"/>
-        <location filename="../../application.cpp" line="529"/>
+        <location filename="../../application.cpp" line="540"/>
+        <location filename="../../application.cpp" line="545"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="529"/>
+        <location filename="../../application.cpp" line="545"/>
         <source>Terminal emulator is not set.</source>
         <translation>Terminalo emuliatorius nėra nustatytas.</translation>
     </message>
@@ -1168,23 +1168,23 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
         <translation>Versija: %1</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1210"/>
+        <location filename="../../mainwindow.cpp" line="1263"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Perkelti į šiukšlinę</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1210"/>
+        <location filename="../../mainwindow.cpp" line="1263"/>
         <source>&amp;Delete</source>
         <translation>&amp;Ištrinti</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1279"/>
-        <location filename="../../mainwindow.cpp" line="1287"/>
+        <location filename="../../mainwindow.cpp" line="1332"/>
+        <location filename="../../mainwindow.cpp" line="1340"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1287"/>
+        <location filename="../../mainwindow.cpp" line="1340"/>
         <source>Switch user command is not set.</source>
         <translation>Naudotojo perjungimo komanda nėra nustatyta.</translation>
     </message>
@@ -1244,7 +1244,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     </message>
     <message>
         <source>%1 item(s) selected</source>
-        <translation>Pažymėti %1 elementai</translation>
+        <translation type="vanished">Pažymėti %1 elementai</translation>
     </message>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="485"/>
