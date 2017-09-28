@@ -23,6 +23,21 @@
 
 namespace PCManFM {
 
+class Label : public QLabel {
+Q_OBJECT
+
+public:
+    explicit Label(QWidget *parent = 0, Qt::WindowFlags f = Qt::WindowFlags());
+
+protected:
+    void paintEvent(QPaintEvent *event) override;
+
+private:
+    QString elidedText_;
+    QString lastText_;
+    int lastWidth_;
+};
+
 class StatusBar : public QStatusBar {
 Q_OBJECT
 
@@ -37,7 +52,7 @@ protected Q_SLOTS:
     void reallyShowMessage();
 
 private:
-    QLabel* statusLabel_; // for a stable text
+    Label* statusLabel_; // for a stable (elided) text
     QTimer* messageTimer_;
     QString lastMessage_;
     int lastTimeOut_;
