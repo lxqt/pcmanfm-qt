@@ -812,7 +812,7 @@ public:
     }
 
     bool searchContentRegexp() const {
-        return searchNameRegexp_;
+        return searchContentRegexp_;
     }
 
     void setSearchContentRegexp(bool reg) {
