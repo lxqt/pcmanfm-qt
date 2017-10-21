@@ -1,7 +1,93 @@
 
-pcmanfm-qt-0.11.3 / 2017-01-14
+pcmanfm-qt-0.12.0 / 2017-10-21
 ==============================
 
+  * Set Version
+  * removed dangeling symlink to debian dir
+  * Text eliding, long texts and newline
+  * Update status message appropriately
+  * fixup...use static const
+  * Fix icon sizes
+  * Just fixed my typo in search settings (#574)
+  * Lithuanian translation
+  * Lithuanian translation
+  * Disable menubar actions that cannot be used
+  * Save and restore search settings
+  * Don't export github templates
+  * Wallpaper Slide Show
+  * Inline renaming with F2 for detailed list view (#554)
+  * Inline renaming with F2
+  * Fix showing/hiding hidden files (#535)
+  * Don't select or scroll to child folder on reloading (#536)
+  * Replace customized DesktopItemDelegate hacks with the standard Fm::FolderItemDelegate provided by libfm-qt. (#529)
+  * liblxqt version make no sense here
+  * Copied issue template
+  * Fix Ctrl+A on desktop (#526)
+  * Update statusbar size info when needed
+  * Drops Qt5Core_VERSION_STRING
+  * set Qt::AA_UseHighDpiPixmaps to true
+  * Fix jerky desktop items
+  * Place dropped item at drop position (#504)
+  * Make custom pos checkbox work for multiple items (#499)
+  * Fix crash on removing desktop items with custom position (#496)
+  * Fix cursor on hovering desktop items
+  * Fix pressing RETURN in location bar
+  * Remove the old tilde replacement
+  * Included LXQTConfigVars
+  * Fixed config/CMakeLists.txt - removed not needed things
+  * Added merged autostart and config to CMakeLists.txt
+  * Updated *_da.desktop files and removed *_da_DK.desktop files
+  * Update desktop entries and Replace fr_FR by fr
+  * lxqt-rc.xml: Change default config install path
+  * PCManFM-Qt: Update default wallpaper (#49)
+  * Merge pull request #48 from lxde/pcmanfm-qt-sort-order
+  * Settings Openbox updated.
+  * Default key shortcuts added to lxqt-globalkeysd.
+  * Use lxqt-sudo in pcmanfm-qt config file by default.
+  * Update Greek translation (el) Remove country variant from language code
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Coding style changes
+  * Adds double quotes to everything that may break
+  * Updates the build system to use the Targets infrastructure
+  * adjust default wallpaper to default theme
+  * Drops hardcoded /etc/xdg paths
+  * Updated german translation, replaced Qt4 by Qt in all xsession/translations
+  * Updates translations infrastructure
+  * Update the required minimum cmake version
+  * remove dead template lines switch OnlyShowIn from Razor -> LXQt stringchanges LxQt -> LXQt
+  * Add session.conf and windowmanagers.conf.
+  * Support lxqt-session and add necessary xdg autostart desktop entry files.
+  * Rename dirs and replace razor with lxqt. Install lxqt.conf to /etc/xdg/lxqt and provide theme config.
+  * Properly set default wallpaper for pcmanfm-qt. Comment out openbox config handling in startlxde-qt since it's not needed.
+  * Remove custom openbox config file in desktop.conf temporarily until lxsession is fixed.
+  * Fix file paths, replacing razor with lxqt. * Remove Alt+F2 and Ctrl+Esc from openbox config file to avoid conflicts with lxqt-panel & lxqt-globalkeys.
+  * Add default configuration files for lxde-qt session.
+  * Use const iterators (Fix a FTBFS in debug mode) (#483)
+  * Fixed desktop items movement
+  * Fixes some pedantic bugs
+  * Correct alignment of small icons on desktop
+  * Rename namespace Fm2 to Fm.
+  * Remove unused header includes.
+  * Fix a bug in correct tab page dir path which causes problems of file searching.
+  * Fix incorrect URI of application menu.
+  * Fix the broken folder reload.
+  * Fix incorrect title update of tabs.
+  * Add basic error handling when folder loading is failed.
+  * Port status message handling to the new libfm C++ API.
+  * Use Fm2::Path::homePath() API.
+  * Use the new libfm C++ terminal emulator APIs.
+  * Adopt to changes of libfm C++ APIs.
+  * Deprecate the use of Fm::Thumbnailer.
+  * Replace all NULL with C++ 11 nullptr.
+  * Initial port to the new C++ libfm API.
+  * DesktopWindow: Render tilled wallpaper manually
+  * Use const iterators
+  * Checks bookmarks iterators validity (#444)
+
+0.11.3 / 2017-01-14
+===================
+
+  * Release 0.11.3: Update changelog
   * remove 0.11.3 changelog entries
   * Bump patch version
   * Release 0.11.3: Update changelog
