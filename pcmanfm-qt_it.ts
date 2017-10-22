@@ -1169,22 +1169,22 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="195"/>
+        <location filename="../../preferencesdialog.cpp" line="194"/>
         <source>Icon View</source>
         <translation>Vista icone</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="196"/>
+        <location filename="../../preferencesdialog.cpp" line="195"/>
         <source>Compact View</source>
         <translation>Vista compatta</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="197"/>
+        <location filename="../../preferencesdialog.cpp" line="196"/>
         <source>Thumbnail View</source>
         <translation>Vista miniature</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="198"/>
+        <location filename="../../preferencesdialog.cpp" line="197"/>
         <source>Detailed List View</source>
         <translation>Vista elenco dettagliato</translation>
     </message>
@@ -1218,7 +1218,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="485"/>
+        <location filename="../../tabpage.cpp" line="488"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n elemento selezionato</numerusform>

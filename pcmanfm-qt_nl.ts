@@ -1193,22 +1193,22 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="195"/>
+        <location filename="../../preferencesdialog.cpp" line="194"/>
         <source>Icon View</source>
         <translation>Pictogramweergave</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="196"/>
+        <location filename="../../preferencesdialog.cpp" line="195"/>
         <source>Compact View</source>
         <translation>Compacte weergave</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="197"/>
+        <location filename="../../preferencesdialog.cpp" line="196"/>
         <source>Thumbnail View</source>
         <translation>Miniaturenweergave</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="198"/>
+        <location filename="../../preferencesdialog.cpp" line="197"/>
         <source>Detailed List View</source>
         <translation>Gedetailleerde lijstweergave</translation>
     </message>
@@ -1242,7 +1242,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="485"/>
+        <location filename="../../tabpage.cpp" line="488"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n element(en) gekozen</numerusform>

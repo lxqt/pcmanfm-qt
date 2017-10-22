@@ -1272,7 +1272,7 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="195"/>
+        <location filename="../../preferencesdialog.cpp" line="194"/>
         <source>Icon View</source>
         <translation>Visão em ícones</translation>
     </message>
@@ -1281,17 +1281,17 @@ A space is also reserved for 3 lines of text.</source>
         <translation type="vanished">Visão compacta de ícones</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="196"/>
+        <location filename="../../preferencesdialog.cpp" line="195"/>
         <source>Compact View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="197"/>
+        <location filename="../../preferencesdialog.cpp" line="196"/>
         <source>Thumbnail View</source>
         <translation>Visão em miniaturas</translation>
     </message>
     <message>
-        <location filename="../../preferencesdialog.cpp" line="198"/>
+        <location filename="../../preferencesdialog.cpp" line="197"/>
         <source>Detailed List View</source>
         <translation>Lista detalhada</translation>
     </message>
@@ -1325,7 +1325,7 @@ A space is also reserved for 3 lines of text.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="485"/>
+        <location filename="../../tabpage.cpp" line="488"/>
         <source>%n item(s) selected</source>
         <translation type="unfinished">
             <numerusform></numerusform>
