@@ -9,10 +9,6 @@
         <translation>À propos</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
         <location filename="../../about.ui" line="48"/>
         <source>Lightweight file manager</source>
         <translation>Gestionnaire de fichiers léger</translation>
@@ -21,36 +17,6 @@
         <location filename="../../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>PCMan File Manager
-
-Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="vanished">Gestionnaire de fichiers de PCMan
-
-Copyright © 2009 - 2015 洪任諭 (Hong Jen Yee)
-
-Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier suivant les termes de la “GNU General Public License” telle que publiée par la Free Software Foundation, soit en version 2, soit (à votre gré) toute version ultérieure.
-
-Ce programme est distribué dans l&apos;espoir qu&apos;il vous sera utile, mais SANS AUCUNE GARANTIE ; sans même la garantie implicite de COMMERCIALISABILITÉ, ni d’ADÉQUATION À UN OBJECTIF PARTICULIER. Consultez la Licence Générale Publique GNU pour plus de détails.
-
-Vous devriez avoir reçu une copie de la licence publique générale GNU avec ce programme ; si ce n&apos;est pas le cas, écrivez à la fondation pour le logiciel libre à l&apos;adresse ci-dessous :
-Free Software Foundation, Inc.n 51 Franklin Street,
-Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="87"/>
@@ -337,57 +303,57 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Vision de diapositives</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Valider la vision de diapositives</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Répertoire des fonds d&apos;écran :</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="340"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcourir</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="347"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> heure(s)</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="357"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>et</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Des intervalles inférieurs à 5 mn sont ignorés</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="373"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Intervalle :</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="380"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> minute(s)</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Répertoire des fonds d&apos;écran</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Défilement aléatoire des diapositives</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="459"/>
@@ -403,117 +369,6 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
         <location filename="../../desktop-preferences.ui" line="453"/>
         <source>Advanced</source>
         <translation>Avancé</translation>
-    </message>
-</context>
-<context>
-    <name>FindFilesDialog</name>
-    <message>
-        <source>Find Files</source>
-        <translation type="vanished">Recherche de fichiers</translation>
-    </message>
-    <message>
-        <source>Name/Location</source>
-        <translation type="vanished">Nom/Emplacement</translation>
-    </message>
-    <message>
-        <source>File name patterns</source>
-        <translation type="vanished">Motifs du nom de fichier</translation>
-    </message>
-    <message>
-        <source>Pattern:</source>
-        <translation type="vanished">Motif :</translation>
-    </message>
-    <message>
-        <source>Case insensitive</source>
-        <translation type="vanished">Insensible à la casse</translation>
-    </message>
-    <message>
-        <source>Use regular expression</source>
-        <translation type="vanished">Utiliser les expressions rationnelles</translation>
-    </message>
-    <message>
-        <source>Places to search</source>
-        <translation type="vanished">Emplacements de recherche</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Ajouter</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation type="vanished">Supprimer</translation>
-    </message>
-    <message>
-        <source>Search in sub directories</source>
-        <translation type="vanished">Rechercher dans les sous-répertoires</translation>
-    </message>
-    <message>
-        <source>Search hidden files</source>
-        <translation type="vanished">Rechercher les fichiers cachés</translation>
-    </message>
-    <message>
-        <source>File Type</source>
-        <translation type="vanished">Type de fichiers</translation>
-    </message>
-    <message>
-        <source>Only search for files of following types:</source>
-        <translation type="vanished">Ne rechercher que les fichiers des types suivants :</translation>
-    </message>
-    <message>
-        <source>Text files</source>
-        <translation type="vanished">Fichiers texte</translation>
-    </message>
-    <message>
-        <source>Image files</source>
-        <translation type="vanished">Fichiers images</translation>
-    </message>
-    <message>
-        <source>Audio files</source>
-        <translation type="vanished">Fichiers audio</translation>
-    </message>
-    <message>
-        <source>Video files</source>
-        <translation type="vanished">Fichiers vidéo</translation>
-    </message>
-    <message>
-        <source>Documents</source>
-        <translation type="vanished">Documents</translation>
-    </message>
-    <message>
-        <source>Content</source>
-        <translation type="vanished">Contenu</translation>
-    </message>
-    <message>
-        <source>File contains</source>
-        <translation type="vanished">Fichiers contenant</translation>
-    </message>
-    <message>
-        <source>Properties</source>
-        <translation type="vanished">Propriétés</translation>
-    </message>
-    <message>
-        <source>File Size</source>
-        <translation type="vanished">Taille de fichier</translation>
-    </message>
-    <message>
-        <source>Bigger than:</source>
-        <translation type="vanished">Plus grands que :</translation>
-    </message>
-    <message>
-        <source>Smaller than:</source>
-        <translation type="vanished">Plus petits que :</translation>
-    </message>
-    <message>
-        <source>Last Modified Time</source>
-        <translation type="vanished">Dernière modification</translation>
-    </message>
-    <message>
-        <source>Earlier than:</source>
-        <translation type="vanished">Avant le :</translation>
-    </message>
-    <message>
-        <source>Later than:</source>
-        <translation type="vanished">Après le :</translation>
     </message>
 </context>
 <context>
@@ -1047,6 +902,14 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     </message>
 </context>
 <context>
+    <name>PCManFM</name>
+    <message>
+        <location filename="../../mainwindow.cpp" line="264"/>
+        <source>Clear text (Ctrl+K)</source>
+        <translation>Effacer le texte (Ctrl+K)</translation>
+    </message>
+</context>
+<context>
     <name>PCManFM::Application</name>
     <message>
         <location filename="../../application.cpp" line="170"/>
@@ -1246,11 +1109,6 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../../mainwindow.cpp" line="264"/>
-        <source>Clear text (Ctrl+K)</source>
-        <translation>Effacer le texte (Ctrl+K)</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.cpp" line="343"/>
         <source>Hide menu bar</source>
         <translation>Cacher la barre des menus</translation>
@@ -1338,13 +1196,10 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
             <numerusform> (%n cachés)</numerusform>
         </translation>
     </message>
-    <message numerus="yes">
+    <message>
         <location filename="../../tabpage.cpp" line="488"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform>%n item(s) selectionné(s)</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation>%n item(s) sélectionné(s)</translation>
     </message>
 </context>
 <context>
