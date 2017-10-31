@@ -1297,12 +1297,7 @@ void MainWindow::dropTab() {
     // its page to a new tab in the second window
     TabPage* dropPage = lastActive_->currentPage();
     if(dropPage) {
-        disconnect(dropPage, &TabPage::titleChanged, lastActive_, &MainWindow::onTabPageTitleChanged);
-        disconnect(dropPage, &TabPage::statusChanged, lastActive_, &MainWindow::onTabPageStatusChanged);
-        disconnect(dropPage, &TabPage::openDirRequested, lastActive_, &MainWindow::onTabPageOpenDirRequested);
-        disconnect(dropPage, &TabPage::sortFilterChanged, lastActive_, &MainWindow::onTabPageSortFilterChanged);
-        disconnect(dropPage, &TabPage::backwardRequested, lastActive_, &MainWindow::on_actionGoBack_triggered);
-        disconnect(dropPage, &TabPage::forwardRequested, lastActive_, &MainWindow::on_actionGoForward_triggered);
+        disconnect(dropPage, nullptr, lastActive_, nullptr);
 
         // release mouse before tab removal because otherwise, the source tabbar
         // might not be updated properly with tab reordering during a fast drag-and-drop
@@ -1327,12 +1322,7 @@ void MainWindow::detachTab() {
     // close the tab and move its page to a new window
     TabPage* dropPage = currentPage();
     if(dropPage) {
-        disconnect(dropPage, &TabPage::titleChanged, this, &MainWindow::onTabPageTitleChanged);
-        disconnect(dropPage, &TabPage::statusChanged, this, &MainWindow::onTabPageStatusChanged);
-        disconnect(dropPage, &TabPage::openDirRequested, this, &MainWindow::onTabPageOpenDirRequested);
-        disconnect(dropPage, &TabPage::sortFilterChanged, this, &MainWindow::onTabPageSortFilterChanged);
-        disconnect(dropPage, &TabPage::backwardRequested, this, &MainWindow::on_actionGoBack_triggered);
-        disconnect(dropPage, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
+        disconnect(dropPage, nullptr, this, nullptr);
 
         ui.tabBar->releaseMouse(); // as in dropTab()
 
