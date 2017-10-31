@@ -28,7 +28,8 @@
 namespace PCManFM {
 
 TabBar::TabBar(QWidget *parent):
-    QTabBar(parent)
+    QTabBar(parent),
+    dragStarted_(false)
 {
 }
 
