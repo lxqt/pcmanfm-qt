@@ -158,6 +158,12 @@ MainWindow::MainWindow(Fm::FilePath path):
     connect(bookmarks_.get(), &Fm::Bookmarks::changed, this, &MainWindow::onBookmarksChanged);
     loadBookmarksMenu();
 
+    // set generic icons for view actions
+    ui.actionIconView->setIcon(style()->standardIcon(QStyle::SP_FileDialogContentsView));
+    ui.actionThumbnailView->setIcon(style()->standardIcon(QStyle::SP_FileDialogInfoView));
+    ui.actionCompactView->setIcon(style()->standardIcon(QStyle::SP_FileDialogListView));
+    ui.actionDetailedList->setIcon(style()->standardIcon(QStyle::SP_FileDialogDetailedView));
+
     // Fix the menu groups which is not done by Qt designer
     // To my suprise, this was supported in Qt designer 3 :-(
     QActionGroup* group = new QActionGroup(ui.menu_View);
