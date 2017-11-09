@@ -104,7 +104,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Vækg venligst hvad du vil foretage dig:</translation>
+        <translation>Vælg venligst hvad du vil foretage dig:</translation>
     </message>
 </context>
 <context>
@@ -188,7 +188,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>Skrivebordsipræferencer</translation>
+        <translation>Skrivebordspræferencer</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="30"/>
@@ -489,12 +489,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="414"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation>&amp;Føj til bogmærker</translation>
+        <translation>&amp;Tilføj til bogmærker</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="419"/>
         <source>&amp;Applications</source>
-        <translation>&amp;Applikationer</translation>
+        <translation>&amp;Programmer</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="424"/>
@@ -564,7 +564,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="505"/>
         <source>Pr&amp;eferences</source>
-        <translation>præf&amp;erencer</translation>
+        <translation>Præf&amp;erencer</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="513"/>
@@ -584,7 +584,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="537"/>
         <source>By &amp;Modification Time</source>
-        <translation>Efter &amp;senest ændret</translation>
+        <translation>Efter &amp;ændringstidspunkt</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="545"/>
@@ -639,7 +639,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="747"/>
         <source>&amp;Filter</source>
-        <translation>&amp;Filtrer</translation>
+        <translation>&amp;Filter</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="750"/>
@@ -835,7 +835,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="736"/>
         <source>&amp;Find Files</source>
-        <translation>&amp;FInd filer</translation>
+        <translation>&amp;Find filer</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="739"/>
@@ -1075,7 +1075,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation>Zomm billedet så det fylder hele skærmen</translation>
+        <translation>Zoom billedet så det fylder hele skærmen</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="204"/>
@@ -1173,7 +1173,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../tabpage.cpp" line="292"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Fri plads: %1 (Totalt: %2)</translation>
+        <translation>Fri plads: %1 (Samlet: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="309"/>
@@ -1187,8 +1187,8 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <location filename="../../tabpage.cpp" line="311"/>
         <source> (%n hidden)</source>
         <translation>
-            <numerusform>(%n skjult)</numerusform>
-            <numerusform>(%n skjulte)</numerusform>
+            <numerusform> (%n skjult)</numerusform>
+            <numerusform> (%n skjulte)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1269,7 +1269,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="286"/>
         <source>Size of thumbnails:</source>
-        <translation>Størrelse på forhåndsvisninger:</translation>
+        <translation>Forhåndsvisningsstørrelse:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="300"/>
@@ -1294,7 +1294,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="487"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Vis luk knapper på faneblade</translation>
+        <translation>Vis &apos;Luk&apos;-knapper på faneblade</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="494"/>
@@ -1304,32 +1304,32 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="501"/>
         <source>Default width of new windows:</source>
-        <translation>Standard bredde af nye vinduer:</translation>
+        <translation>Standardbredde på nye vinduer:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="515"/>
         <source>Default height of new windows:</source>
-        <translation>Standard højde af nye vinduer:</translation>
+        <translation>Standardhøjde på nye vinduer:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation>Surfing</translation>
+        <translation>Gennemgang</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="90"/>
         <source>Open files with single click</source>
-        <translation>Åbn filer med enkeltklik</translation>
+        <translation>Åbn filer med ét klik</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="100"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation>Forsinkelse af auto markering i enkeltkliktilstand (0 for ingen automarkering)</translation>
+        <translation>Forsinkelse af automatisk markering i ét klik-tilstand (0 for at deaktivere)</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="107"/>
         <source>Default view mode:</source>
-        <translation>Standard visningstilstand:</translation>
+        <translation>Standardvisningstilstand:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="120"/>
@@ -1339,12 +1339,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="159"/>
         <source>File Operations</source>
-        <translation>Filoperationer</translation>
+        <translation>Filhandlinger</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="165"/>
         <source>Confirm before deleting files</source>
-        <translation>Bekræft før filer slettes</translation>
+        <translation>Bekræft inden filer slettes</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="172"/>
@@ -1359,7 +1359,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="666"/>
         <source>Only show thumbnails for local files</source>
-        <translation>Lav kun forhåndsvisninger for lokale filer</translation>
+        <translation>Vis kun forhåndsvisninger for lokale filer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="40"/>
@@ -1394,7 +1394,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>Bekrøft før filer smides i papirkurven</translation>
+        <translation>Bekræft inden filer smides i papirkurven</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="193"/>
@@ -1427,7 +1427,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../preferences.ui" line="326"/>
         <source>Treat backup files as hidden</source>
-        <translation>Behandl backup filer som skjulte filer</translation>
+        <translation>Behandl sikkerhedskopi-filer som skjulte filer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="336"/>
@@ -1519,7 +1519,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../preferences.ui" line="591"/>
         <source>Applications</source>
-        <translation>Applikationer</translation>
+        <translation>Programmer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="599"/>
@@ -1534,7 +1534,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../preferences.ui" line="649"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Lav ikke forhåndsvisning for billeder større end:</translation>
+        <translation>Generer ikke forhåndsvisninger for billeder større end:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="656"/>
@@ -1554,7 +1554,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../preferences.ui" line="709"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>Monter monterbare diskenheder automatisk ved programstart</translation>
+        <translation>Monter automatisk monterbare diskenheder ved programstart</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="716"/>
@@ -1569,7 +1569,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../preferences.ui" line="733"/>
         <source>When removable medium unmounted:</source>
-        <translation>Når et flytbart medie er afmonteret:</translation>
+        <translation>Når et flytbart medie afmonteres:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="739"/>
@@ -1584,7 +1584,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../preferences.ui" line="773"/>
         <source>Programs</source>
-        <translation>Applikationer</translation>
+        <translation>Programmer</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="782"/>
@@ -1594,7 +1594,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../preferences.ui" line="789"/>
         <source>Switch &amp;user command:</source>
-        <translation>Skiftbr&amp;ugerkommando:</translation>
+        <translation>Skiftbr&amp;uger-kommando:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="802"/>
@@ -1621,17 +1621,17 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../preferences.ui" line="849"/>
         <source>Show only one template for each MIME type</source>
-        <translation>Vis kun en skabelon for hver MIME-type</translation>
+        <translation>Vis kun én skabelon for hver MIME-type</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="856"/>
         <source>Run default application after creation from template</source>
-        <translation>Kør standardapplikation efter oprettelse af skabelon</translation>
+        <translation>Kør standardprogram efter oprettelse af skabelon</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="319"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>Brug SI decimalpræfiks i stedet for IEC præfiks</translation>
+        <translation>Brug SI-decimalpræfiks i stedet for IEC-præfiks</translation>
     </message>
 </context>
 </TS>
