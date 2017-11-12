@@ -1116,7 +1116,9 @@ void MainWindow::on_actionRename_triggered() {
     }
     if(!files.empty()) {
         for(auto& file: files) {
-            Fm::renameFile(file, nullptr);
+            if(!Fm::renameFile(file, nullptr)) {
+                break;
+            }
         }
     }
 }
