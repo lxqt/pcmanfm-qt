@@ -14,6 +14,7 @@ set(pcmanfm_SRCS
     autorundialog.cpp
     connectserverdialog.cpp
     settings.cpp
+    bulkrename.cpp
 )
 
 qt5_add_dbus_adaptor(pcmanfm_SRCS
@@ -32,6 +33,7 @@ set(pcmanfm_UIS
     desktop-folder.ui
     autorun.ui
     connect.ui
+    bulk-rename.ui
 )
 
 qt5_wrap_ui(pcmanfm_UIS_H ${pcmanfm_UIS})
