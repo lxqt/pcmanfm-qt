@@ -179,7 +179,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     <message>
         <location filename="../../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>実行させる処理を選んでください</translation>
+        <translation>実行させる処理を選んでください:</translation>
     </message>
 </context>
 <context>
@@ -187,22 +187,22 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     <message>
         <location filename="../../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>リモートサーバーに接続</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Anonymousでログイン(&amp;l)</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザーでログイン(&amp;u):</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>接続時にリモートフォルダを指定</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="72"/>
@@ -217,12 +217,12 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     <message>
         <location filename="../../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>パス:</translation>
     </message>
     <message>
         <location filename="../../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>ホスト:</translation>
     </message>
 </context>
 <context>
@@ -230,32 +230,32 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     <message>
         <location filename="../../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>フォーム</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>デスクトップ</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>デスクトップフォルダ:</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation type="unfinished">画像ファイル</translation>
+        <translation>画像ファイル</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>フォルダのパス</translation>
     </message>
     <message>
         <location filename="../../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">参照(&amp;B)</translation>
+        <translation>参照(&amp;B)</translation>
     </message>
 </context>
 <context>
@@ -303,12 +303,12 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     <message>
         <location filename="../../desktop-preferences.ui" line="119"/>
         <source>Icons</source>
-        <translation type="unfinished">アイコン</translation>
+        <translation>アイコン</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="125"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>アイコンの大きさ:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="138"/>
@@ -318,7 +318,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     <message>
         <location filename="../../desktop-preferences.ui" line="176"/>
         <source>Select  text color:</source>
-        <translation>文字色を選択</translation>
+        <translation>文字色を選択:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="189"/>
@@ -328,7 +328,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     <message>
         <location filename="../../desktop-preferences.ui" line="202"/>
         <source>Select font:</source>
-        <translation>フォントを選択</translation>
+        <translation>フォントを選択:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="24"/>
@@ -338,17 +338,17 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     <message>
         <location filename="../../desktop-preferences.ui" line="225"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>空白</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>アイテムの最小のマージン:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>既定では3 px。</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="241"/>
@@ -365,37 +365,38 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <location filename="../../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>既定では1 px。
+また3行分のテキストのため空白が確保されます。</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="278"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>ロック</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>スライドショー</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>スライドショーを有効にする</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>壁紙画像のフォルダ:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="340"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>参照</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="347"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> 時間</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="357"/>
@@ -405,32 +406,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>5分以内の間隔は無視されます</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="373"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>間隔:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="380"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> 分</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>壁紙のフォルダ</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>スライドショーをランダムに表示する</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="459"/>
         <source>Window Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>ウィンドウマネージャー</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="465"/>
@@ -487,17 +488,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="178"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>ツールバー(&amp;T)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="185"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>パスバー(&amp;B)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="305"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>ホーム(&amp;H)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="317"/>
@@ -607,42 +608,42 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="513"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>昇順(&amp;A)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="521"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>降順(&amp;D)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="529"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>名前順(&amp;B)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="537"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>更新時間順(&amp;M)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="545"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルの種類順(&amp;T)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="553"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>作者順(&amp;O)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="561"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>フォルダを最初に並べる(&amp;F)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="569"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>このフォルダのソートを保存する(&amp;P)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="619"/>
@@ -662,22 +663,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="668"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>大文字小文字を区別する(&amp;C)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="676"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルのサイズ順(&amp;S)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="681"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>ウィンドウを閉じる(&amp;C)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="747"/>
         <source>&amp;Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>フィルター（&amp;F）</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="750"/>
@@ -687,47 +688,47 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="759"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>前のタブを閉じる(&amp;p)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="768"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>後ろのタブを閉じる(&amp;n)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="807"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>このフォルダの設定を保存する(&amp;P)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="812"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>サーバーに接続(&amp;S)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="820"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>場所(&amp;L)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="828"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>パスボタン(&amp;P)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="773"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>他のタブを閉じる(&amp;o)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="781"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>メニューバー(&amp;M)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="784"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>メニューバー</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="787"/>
@@ -738,7 +739,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../main-win.ui" line="796"/>
         <location filename="../../main-win.ui" line="799"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>メニュー</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="500"/>
@@ -896,7 +897,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="124"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>新規作成(&amp;r)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="152"/>
@@ -953,32 +954,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="707"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation>ブックマークを編集</translation>
+        <translation>ブックマークを編集(&amp;E)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="716"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>フォルダ(&amp;F)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="728"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>空白のファイル(&amp;B)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="736"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルを検索(&amp;F)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="739"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="93"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>文字列でフィルタ...</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="120"/>
@@ -1097,7 +1098,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../application.cpp" line="197"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>デスクトップ壁紙のモードの設定。MODE=(%1)</translation>
     </message>
     <message>
         <location filename="../../application.cpp" line="203"/>
@@ -1118,7 +1119,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../application.cpp" line="545"/>
         <source>Terminal emulator is not set.</source>
-        <translation>端末エミュレーターを未設定です</translation>
+        <translation>端末エミュレーターを未設定です。</translation>
     </message>
 </context>
 <context>
@@ -1197,7 +1198,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>画像をスクリーン全体に拡大</translation>
     </message>
     <message>
         <location filename="../../desktoppreferencesdialog.cpp" line="204"/>
@@ -1210,7 +1211,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../desktopwindow.cpp" line="525"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>現在の場所に固定</translation>
+        <translation>現在の場所に固定(&amp;k)</translation>
     </message>
     <message>
         <location filename="../../desktopwindow.cpp" line="547"/>
@@ -1223,17 +1224,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="264"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストを消去 (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="343"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>メニューバーを隠す</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="344"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>メニューバーが完全に隠れます。Ctrl+Mにより再表示されます。</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="628"/>
@@ -1259,7 +1260,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="1340"/>
         <source>Switch user command is not set.</source>
-        <translation>ユーザー切替コマンドを未設定です</translation>
+        <translation>ユーザー切替コマンドを未設定です。</translation>
     </message>
     <message>
         <source>Terminal emulator is not set.</source>
@@ -1316,14 +1317,14 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../tabpage.cpp" line="311"/>
         <source> (%n hidden)</source>
         <translation>
-            <numerusform>(%n 個の隠しアイテム)</numerusform>
+            <numerusform> (%n 個の隠しアイテム)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="488"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n アイテムが選択されました</numerusform>
         </translation>
     </message>
     <message>
@@ -1369,7 +1370,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>ディスプレイ</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="50"/>
@@ -1390,37 +1391,37 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="130"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>ブックマーク:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="138"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>現在のタブで開く</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="143"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>新しいタブで開く</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="148"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>新しいウィンドウで開く</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>ゴミ箱を作らずに、リムーバブルメディア上のファイルを消去する</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>ゴミ箱に入れる前に確認する</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="193"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>実行ファイルを作動させる際にオプションを尋ねない</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="220"/>
@@ -1500,7 +1501,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="107"/>
         <source>Default view mode:</source>
-        <translation>デフォルトの表示モード</translation>
+        <translation>デフォルトの表示モード:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="120"/>
@@ -1520,55 +1521,55 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>ディスクから削除せずに&quot;ゴミ箱&quot;へ入れる</translation>
+        <translation>ディスクから削除せずに&quot;ゴミ箱&quot;へ入れる。</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="249"/>
         <location filename="../../preferences.ui" line="259"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>アイコン表示を使用</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="266"/>
         <location filename="../../preferences.ui" line="276"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>コンパクト表示及び詳細リスト表示の際に使用</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="283"/>
         <location filename="../../preferences.ui" line="293"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>サムネイル表示を使用</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="313"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザーインターフェース</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="326"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>バックアップガイルを隠しファイルと同様に扱う</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="336"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>常にファイル名をフルに表示する</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="346"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>隠しファイルのアイコンに影をつける</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="369"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>アイコン表示における最小のアイテムの余白:</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="376"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>既定で 3 px。</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="379"/>
@@ -1590,7 +1591,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../preferences.ui" line="416"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>ロック</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="465"/>
