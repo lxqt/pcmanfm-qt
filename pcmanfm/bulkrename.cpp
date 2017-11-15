@@ -20,6 +20,7 @@
 #include <QTimer>
 #include <QPushButton>
 #include <QMessageBox>
+#include <QProgressDialog>
 
 #include <libfm-qt/utilities.h>
 
@@ -68,17 +69,26 @@ BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
         }
         baseName.insert(end, QLatin1Char('#'));
     }
-    uint failed = 0;
+    QProgressDialog progress(QObject::tr("Renaming files..."), QObject::tr("Abort"), 0, files.size(), parent);
+    progress.setWindowModality(Qt::WindowModal);
+    int i = 0, failed = 0;
     for(auto& file: files) {
+        progress.setValue(i);
+        if(progress.wasCanceled()) {
+            progress.close();
+            QMessageBox::warning(parent, QObject::tr("Warning"), QObject::tr("Renaming is aborted."));
+            return;
+        }
         auto fileName = QString::fromStdString(file->name());
         QString newName = baseName;
-        newName.replace(QLatin1Char('#'), QString::number(start));
+        newName.replace(QLatin1Char('#'), QString::number(start + i));
         if (newName == fileName || !Fm::changeFileName(file->path(), newName, nullptr, false)) {
             ++failed;
         }
-        ++start;
+        ++i;
     }
-    if(failed == files.size()) {
+    progress.setValue(i);
+    if(failed == i) {
         QMessageBox::critical(parent, QObject::tr("Error"), QObject::tr("No file could be renamed."));
     }
     else if(failed > 0) {
