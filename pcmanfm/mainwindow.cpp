@@ -46,6 +46,7 @@
 #include <libfm-qt/core/fileinfo.h>
 #include "ui_about.h"
 #include "application.h"
+#include "bulkrename.h"
 
 using namespace Fm;
 
@@ -833,7 +834,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
 void MainWindow::updateEditSelectedActions() {
     bool hasAccessible(false);
     bool hasDeletable(false);
-    bool hasRenamable(false);
+    int renamable(0);
     if(TabPage* page = currentPage()) {
         auto files = page->selectedFiles();
         for(auto& file: files) {
@@ -844,9 +845,9 @@ void MainWindow::updateEditSelectedActions() {
                 hasDeletable = true;
             }
             if(file->canSetName()) {
-                hasRenamable = true;
+                ++renamable;
             }
-            if (hasAccessible && hasDeletable && hasRenamable) {
+            if (hasAccessible && hasDeletable && renamable > 1) {
                 break;
             }
         }
@@ -854,7 +855,8 @@ void MainWindow::updateEditSelectedActions() {
     ui.actionCopy->setEnabled(hasAccessible);
     ui.actionCut->setEnabled(hasDeletable);
     ui.actionDelete->setEnabled(hasDeletable);
-    ui.actionRename->setEnabled(hasRenamable);
+    ui.actionRename->setEnabled(renamable > 0);
+    ui.actionBulkRename->setEnabled(renamable > 1);
 }
 
 void MainWindow::updateUIForCurrentPage() {
@@ -1140,6 +1142,9 @@ void MainWindow::on_actionRename_triggered() {
     }
 }
 
+void MainWindow::on_actionBulkRename_triggered() {
+    BulkRenamer(currentPage()->selectedFiles(), this);
+}
 
 void MainWindow::on_actionSelectAll_triggered() {
     currentPage()->selectAll();

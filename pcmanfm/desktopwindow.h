@@ -123,6 +123,7 @@ protected Q_SLOTS:
     void onCopyActivated();
     void onPasteActivated();
     void onRenameActivated();
+    void onBulkRenameActivated();
     void onDeleteActivated();
     void onFilePropertiesActivated();
 

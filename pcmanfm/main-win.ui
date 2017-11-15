@@ -210,6 +210,9 @@
     <addaction name="actionSelectAll"/>
     <addaction name="actionInvertSelection"/>
     <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionBulkRename"/>
+    <addaction name="separator"/>
     <addaction name="actionPreferences"/>
    </widget>
    <widget class="QMenu" name="menu_Bookmarks">
@@ -831,6 +834,17 @@
    </property>
    <property name="text">
     <string>&amp;Path Buttons</string>
+   </property>
+  </action>
+  <action name="actionBulkRename">
+   <property name="text">
+    <string>&amp;Bulk Rename</string>
+   </property>
+   <property name="toolTip">
+    <string>Bulk Rename</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F2</string>
    </property>
   </action>
  </widget>

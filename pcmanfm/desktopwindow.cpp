@@ -52,6 +52,7 @@
 #include <libfm-qt/utilities.h>
 #include <libfm-qt/core/fileinfo.h>
 #include "xdgdir.h"
+#include "bulkrename.h"
 
 #include <QX11Info>
 #include <QScreen>
@@ -155,7 +156,10 @@ DesktopWindow::DesktopWindow(int screenNum):
     shortcut = new QShortcut(QKeySequence(Qt::Key_F2), this); // rename
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onRenameActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_Return), this); // rename
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_F2), this); // bulk rename
+    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onBulkRenameActivated);
+
+    shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_Return), this); // properties
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onFilePropertiesActivated);
 
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this); // force delete
@@ -976,6 +980,10 @@ void DesktopWindow::onRenameActivated() {
             }
         }
      }
+}
+
+void DesktopWindow::onBulkRenameActivated() {
+    BulkRenamer(selectedFiles(), this);
 }
 
 void DesktopWindow::onFilePropertiesActivated() {
