@@ -287,12 +287,14 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::chdir(Fm::FilePath path) {
-    TabPage* page = currentPage();
-    if(page) {
-        ui.filterBar->clear();
-        page->chdir(path, true);
-        updateUIForCurrentPage();
-    }
+    QTimer::singleShot(0, [this, path] {
+        TabPage* page = currentPage();
+        if(page) {
+            ui.filterBar->clear();
+            page->chdir(path, true);
+            updateUIForCurrentPage();
+        }
+    });
 }
 
 void MainWindow::createPathBar(bool usePathButtons) {
@@ -375,33 +377,40 @@ void MainWindow::onPathBarMiddleClickChdir(const Fm::FilePath& dirPath) {
 }
 
 void MainWindow::on_actionGoUp_triggered() {
-    TabPage* page = currentPage();
-
-    if(page) {
-        ui.filterBar->clear();
-        page->up();
-        updateUIForCurrentPage();
-    }
+    QTimer::singleShot(0, [this] {
+        TabPage* page = currentPage();
+    
+        if(page) {
+            ui.filterBar->clear();
+            page->up();
+            updateUIForCurrentPage();
+        }
+    });
 }
 
 void MainWindow::on_actionGoBack_triggered() {
-    TabPage* page = currentPage();
-
-    if(page) {
-        ui.filterBar->clear();
-        page->backward();
-        updateUIForCurrentPage();
-    }
+    QTimer::singleShot(0, [this] {
+        TabPage* page = currentPage();
+    
+        if(page) {
+            ui.filterBar->clear();
+            page->backward();
+            updateUIForCurrentPage();
+        }
+    });
 }
 
 void MainWindow::on_actionGoForward_triggered() {
-    TabPage* page = currentPage();
-
-    if(page) {
-        ui.filterBar->clear();
-        page->forward();
-        updateUIForCurrentPage();
-    }
+    QTimer::singleShot(0, [this] {
+        TabPage* page = currentPage();
+    
+        if(page) {
+            ui.filterBar->clear();
+            page->forward();
+            updateUIForCurrentPage();
+        }
+    });
+    
 }
 
 void MainWindow::on_actionHome_triggered() {
