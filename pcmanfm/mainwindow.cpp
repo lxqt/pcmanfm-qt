@@ -297,6 +297,7 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::chdir(Fm::FilePath path) {
+    // wait until queued events are processed
     QTimer::singleShot(0, [this, path] {
         TabPage* page = currentPage();
         if(page) {
