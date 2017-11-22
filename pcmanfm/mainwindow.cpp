@@ -288,9 +288,8 @@ MainWindow::~MainWindow() {
 
 void MainWindow::chdir(Fm::FilePath path) {
     // wait until queued events are processed
-    QTimer::singleShot(0, [this, path] {
-        TabPage* page = currentPage();
-        if(page) {
+    QTimer::singleShot(0, this, [this, path] {
+        if(TabPage* page = currentPage()) {
             ui.filterBar->clear();
             page->chdir(path, true);
             updateUIForCurrentPage();
@@ -378,10 +377,8 @@ void MainWindow::onPathBarMiddleClickChdir(const Fm::FilePath& dirPath) {
 }
 
 void MainWindow::on_actionGoUp_triggered() {
-    QTimer::singleShot(0, [this] {
-        TabPage* page = currentPage();
-    
-        if(page) {
+    QTimer::singleShot(0, this, [this] {
+        if(TabPage* page = currentPage()) {
             ui.filterBar->clear();
             page->up();
             updateUIForCurrentPage();
@@ -390,10 +387,8 @@ void MainWindow::on_actionGoUp_triggered() {
 }
 
 void MainWindow::on_actionGoBack_triggered() {
-    QTimer::singleShot(0, [this] {
-        TabPage* page = currentPage();
-    
-        if(page) {
+    QTimer::singleShot(0, this, [this] {
+        if(TabPage* page = currentPage()) {
             ui.filterBar->clear();
             page->backward();
             updateUIForCurrentPage();
@@ -402,10 +397,8 @@ void MainWindow::on_actionGoBack_triggered() {
 }
 
 void MainWindow::on_actionGoForward_triggered() {
-    QTimer::singleShot(0, [this] {
-        TabPage* page = currentPage();
-    
-        if(page) {
+    QTimer::singleShot(0, this, [this] {
+        if(TabPage* page = currentPage()) {
             ui.filterBar->clear();
             page->forward();
             updateUIForCurrentPage();
