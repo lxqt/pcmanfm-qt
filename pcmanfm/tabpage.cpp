@@ -460,6 +460,11 @@ void TabPage::reload() {
     }
 }
 
+QString TabPage::encloseWithBidiMarks(QString text) {
+    QChar bidiMark = text.isRightToLeft()? QChar(0x200f) : QChar(0x200e);
+    return bidiMark+text+bidiMark;
+}
+
 // when the current selection in the folder view is changed
 void TabPage::onSelChanged() {
     QString msg;
@@ -470,15 +475,19 @@ void TabPage::onSelChanged() {
         if(numSel == 1) { /* only one file is selected */
             auto& fi = files.front();
             if(!fi->isDir()) {
-                msg = QString("\"%1\" (%2) %3")
-                      .arg(fi->displayName())
-                      .arg(Fm::formatFileSize(fi->size(), fm_config->si_unit)) // FIXME: deprecate fm_config
-                      .arg(fi->mimeType()->desc());
+                msg = QString("%4\"%1\" %4(%2) %4%3")
+                      .arg(encloseWithBidiMarks(fi->displayName()))
+                      .arg(encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit))) // FIXME: deprecate fm_config
+                      .arg(encloseWithBidiMarks(fi->mimeType()->desc()))
+                      .arg(QString::fromUtf8(
+                          (!layoutDirection() == Qt::LeftToRight) ? "\u200f" : "\u200e"));
             }
             else {
-                msg = QString("\"%1\" %2")
-                      .arg(fi->displayName())
-                      .arg(fi->mimeType()->desc());
+                msg = QString("%3\"%1\" %3%2")
+                      .arg(encloseWithBidiMarks(fi->displayName())(
+                      .arg(encloseWithBidiMarks(fi->mimeType()->desc())
+                      .arg(QString::fromUtf8(
+                          (!layoutDirection() == Qt::LeftToRight) ? "\u200f" : "\u200e"));
             }
             /* FIXME: should we support statusbar plugins as in the gtk+ version? */
         }
