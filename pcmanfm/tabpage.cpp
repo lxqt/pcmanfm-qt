@@ -466,8 +466,8 @@ void TabPage::reload() {
 // 202b RIGHT-TO-LEFT EMBEDDING
 // 202c POP DIRECTIONAL FORMATTING
 QString TabPage::encloseWithBidiMarks(const QString& text) {
-    QChar bidiMark = text.isRightToLeft()? QChar(0x200f) : QChar(0x200e);
-    QChar embedBidiMark = text.isRightToLeft()? QChar(0x202b) : QChar(0x202a);
+    QChar bidiMark = text.isRightToLeft() ? QChar(0x200f) : QChar(0x200e);
+    QChar embedBidiMark = text.isRightToLeft() ? QChar(0x202b) : QChar(0x202a);
     return embedBidiMark+text+bidiMark+QChar(0x202c);
 }
 
@@ -486,14 +486,14 @@ void TabPage::onSelChanged() {
                       .arg(encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit))) // FIXME: deprecate fm_config
                       .arg(encloseWithBidiMarks(fi->mimeType()->desc()))
                       .arg(QString::fromUtf8(
-                          (!layoutDirection() == Qt::LeftToRight) ? "\u200f" : "\u200e"));
+                          (layoutDirection() == Qt::RightToLeft) ? "\u200f" : "\u200e"));
             }
             else {
                 msg = QString("%3\"%1\" %3%2")
                       .arg(encloseWithBidiMarks(fi->displayName()))
                       .arg(encloseWithBidiMarks(fi->mimeType()->desc()))
                       .arg(QString::fromUtf8(
-                          (!layoutDirection() == Qt::LeftToRight) ? "\u200f" : "\u200e"));
+                          (layoutDirection() == Qt::RightToLeft) ? "\u200f" : "\u200e"));
             }
             /* FIXME: should we support statusbar plugins as in the gtk+ version? */
         }
