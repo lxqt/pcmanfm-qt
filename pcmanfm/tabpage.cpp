@@ -460,9 +460,15 @@ void TabPage::reload() {
     }
 }
 
-QString TabPage::encloseWithBidiMarks(QString text) {
+// 200e LEFT-TO-RIGHT MARK
+// 200f RIGHT-TO-LEFT MARK
+// 202a LEFT-TO-RIGHT EMBEDDING
+// 202b RIGHT-TO-LEFT EMBEDDING
+// 202c POP DIRECTIONAL FORMATTING
+QString TabPage::encloseWithBidiMarks(QString& text) {
     QChar bidiMark = text.isRightToLeft()? QChar(0x200f) : QChar(0x200e);
-    return bidiMark+text+bidiMark;
+    QChar embedBidiMark = text.isRightToLeft()? QChar(0x202b) : QChar(0x202a);
+    return embedBidiMark+text+bidiMark+QChar(0x202c);
 }
 
 // when the current selection in the folder view is changed
@@ -484,8 +490,8 @@ void TabPage::onSelChanged() {
             }
             else {
                 msg = QString("%3\"%1\" %3%2")
-                      .arg(encloseWithBidiMarks(fi->displayName())(
-                      .arg(encloseWithBidiMarks(fi->mimeType()->desc())
+                      .arg(encloseWithBidiMarks(fi->displayName()))
+                      .arg(encloseWithBidiMarks(fi->mimeType()->desc()))
                       .arg(QString::fromUtf8(
                           (!layoutDirection() == Qt::LeftToRight) ? "\u200f" : "\u200e"));
             }
