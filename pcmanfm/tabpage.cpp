@@ -465,7 +465,7 @@ void TabPage::reload() {
 // 202a LEFT-TO-RIGHT EMBEDDING
 // 202b RIGHT-TO-LEFT EMBEDDING
 // 202c POP DIRECTIONAL FORMATTING
-QString TabPage::encloseWithBidiMarks(QString& text) {
+QString TabPage::encloseWithBidiMarks(const QString& text) {
     QChar bidiMark = text.isRightToLeft()? QChar(0x200f) : QChar(0x200e);
     QChar embedBidiMark = text.isRightToLeft()? QChar(0x202b) : QChar(0x202a);
     return embedBidiMark+text+bidiMark+QChar(0x202c);
