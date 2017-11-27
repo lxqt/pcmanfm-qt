@@ -200,10 +200,6 @@ public:
 
     void setCustomizedView(bool value);
 
-protected:
-    // Adds bidi marks (RLM/LRM) around the text for the statusbar.
-    QString encloseWithBidiMarks(QString text);
-
 Q_SIGNALS:
     void statusChanged(int type, QString statusText);
     void titleChanged(QString title);
@@ -220,6 +216,9 @@ protected Q_SLOTS:
 private:
     void freeFolder();
     QString formatStatusText();
+
+    // Adds bidi marks (RLM/LRM/RLE/LRE/POP) around the text for the statusbar.
+    QString encloseWithBidiMarks(QString& text);
 
     void onFolderStartLoading();
     void onFolderFinishLoading();
