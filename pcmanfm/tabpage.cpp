@@ -485,15 +485,13 @@ void TabPage::onSelChanged() {
                       .arg(encloseWithBidiMarks(fi->displayName()))
                       .arg(encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit))) // FIXME: deprecate fm_config
                       .arg(encloseWithBidiMarks(fi->mimeType()->desc()))
-                      .arg(QString::fromUtf8(
-                          (layoutDirection() == Qt::RightToLeft) ? "\u200f" : "\u200e"));
+                      .arg((layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
             }
             else {
                 msg = QString("%3\"%1\" %3%2")
                       .arg(encloseWithBidiMarks(fi->displayName()))
                       .arg(encloseWithBidiMarks(fi->mimeType()->desc()))
-                      .arg(QString::fromUtf8(
-                          (layoutDirection() == Qt::RightToLeft) ? "\u200f" : "\u200e"));
+                      .arg((layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
             }
             /* FIXME: should we support statusbar plugins as in the gtk+ version? */
         }
