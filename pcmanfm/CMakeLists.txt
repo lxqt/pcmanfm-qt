@@ -17,13 +17,18 @@ set(pcmanfm_SRCS
     bulkrename.cpp
 )
 
-qt5_add_dbus_adaptor(pcmanfm_SRCS
+qt5_add_dbus_adaptor(pcmanfm_DBUS_SRCS
     org.pcmanfm.Application.xml
     application.h
     PCManFM::Application
     applicationadaptor
     ApplicationAdaptor
 )
+
+# qt5_add_dbus_adaptor() already generated the moc files. It also marked the
+# files with SKIP_AUTOMOC but we still need to mark them witk SKIP_AUTOGEN.
+# TODO: Check if this behaviour is a CMake bug.
+set_source_files_properties(${pcmanfm_DBUS_SRCS} PROPERTIES SKIP_AUTOGEN ON)
 
 set(pcmanfm_UIS
     main-win.ui
@@ -56,6 +61,7 @@ lxqt_translate_desktop(DESKTOP_FILES
 
 add_executable(pcmanfm-qt
     ${pcmanfm_SRCS}
+    ${pcmanfm_DBUS_SRCS}
     ${pcmanfm_UIS}
     ${QM_FILES}
     ${DESKTOP_FILES}
