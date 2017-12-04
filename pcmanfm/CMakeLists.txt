@@ -36,8 +36,6 @@ set(pcmanfm_UIS
     bulk-rename.ui
 )
 
-qt5_wrap_ui(pcmanfm_UIS_H ${pcmanfm_UIS})
-
 # add translation for pcmanfm-qt
 lxqt_translate_ts(QM_FILES
     UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
@@ -58,7 +56,7 @@ lxqt_translate_desktop(DESKTOP_FILES
 
 add_executable(pcmanfm-qt
     ${pcmanfm_SRCS}
-    ${pcmanfm_UIS_H}
+    ${pcmanfm_UIS}
     ${QM_FILES}
     ${DESKTOP_FILES}
 )
