@@ -1,11 +1,6 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(pcmanfm-qt)
 
-# CMP0063: Honor visibility properties for all target types.
-if (POLICY CMP0063)
-    cmake_policy (SET CMP0063 NEW)
-endif (POLICY CMP0063)
-
 # PcmanFm-Qt Version
 set(PCMANFM_QT_VERSION_MAJOR 0)
 set(PCMANFM_QT_VERSION_MINOR 12)
