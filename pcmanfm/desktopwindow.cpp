@@ -74,6 +74,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     wallpaperRandomize_(false),
     fileLauncher_(nullptr),
     showWmMenu_(false),
+    desktopHideItems_(false),
     screenNum_(screenNum),
     relayoutTimer_(nullptr) {
 
@@ -148,7 +149,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onPasteActivated);
 
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_A), this); // select all
-    connect(shortcut, &QShortcut::activated, this, &FolderView::selectAll);
+    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::selectAll);
 
     shortcut = new QShortcut(QKeySequence(Qt::Key_Delete), this); // delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
@@ -482,6 +483,13 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     setBackground(settings.desktopBgColor());
     setShadow(settings.desktopShadowColor());
     showWmMenu_ = settings.showWmMenu();
+    desktopHideItems_ = settings.desktopHideItems();
+    if(desktopHideItems_) {
+        // hide all items by hiding the list view and also
+        // prevent the current item from being changed by arrow keys
+        listView_->clearFocus();
+        listView_->setVisible(false);
+    }
 
     if(slideShowInterval_ > 0
        && QFileInfo(wallpaperDir_).isDir()) {
@@ -520,7 +528,18 @@ void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm::File
     if(!fileInfo && showWmMenu_) {
         return;    // do not show the popup if we want to use the desktop menu provided by the WM.
     }
-    View::onFileClicked(type, fileInfo);
+    if(desktopHideItems_) { // only a context menu with desktop actions
+        if(type == Fm::FolderView::ActivatedClick) {
+            return;
+        }
+        QMenu* menu = new QMenu(this);
+        addDesktopActions(menu);
+        menu->exec(QCursor::pos());
+        delete menu;
+    }
+    else {
+        View::onFileClicked(type, fileInfo);
+    }
 }
 
 void DesktopWindow::prepareFileMenu(Fm::FileMenu* menu) {
@@ -547,9 +566,40 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
     PCManFM::View::prepareFolderMenu(menu);
     // remove file properties action
     menu->removeAction(menu->propertiesAction());
-    // add an action for desktop preferences instead
-    QAction* action = menu->addAction(tr("Desktop Preferences"));
+    // add desktop actions instead
+    addDesktopActions(menu);
+}
+
+void DesktopWindow::addDesktopActions(QMenu* menu) {
+    QAction* action = menu->addAction(tr("Hide Desktop Items"));
+    action->setCheckable(true);
+    action->setChecked(desktopHideItems_);
+    menu->addSeparator();
+    connect(action, &QAction::triggered, this, &DesktopWindow::toggleDesktop);
+    action = menu->addAction(tr("Desktop Preferences"));
     connect(action, &QAction::triggered, this, &DesktopWindow::onDesktopPreferences);
+}
+
+void DesktopWindow::toggleDesktop() {
+    desktopHideItems_ = !desktopHideItems_;
+    Settings& settings = static_cast<Application*>(qApp)->settings();
+    settings.setDesktopHideItems(desktopHideItems_);
+    listView_->setVisible(!desktopHideItems_);
+    // a relayout is needed on showing the items for the first time
+    // because the positions aren't updated while the view is hidden
+    if(!desktopHideItems_) {
+        listView_->setFocus(); // refocus the view
+        queueRelayout();
+    }
+    else { // prevent the current item from being changed by arrow keys
+        listView_->clearFocus();
+    }
+}
+
+void DesktopWindow::selectAll() {
+    if(!desktopHideItems_) {
+        FolderView::selectAll();
+    }
 }
 
 void DesktopWindow::onDesktopPreferences() {
@@ -603,7 +653,7 @@ void DesktopWindow::onModelSortFilterChanged() {
     Settings& settings = static_cast<Application*>(qApp)->settings();
     settings.setDesktopSortColumn(static_cast<Fm::FolderModel::ColumnId>(proxyModel_->sortColumn()));
     settings.setDesktopSortOrder(proxyModel_->sortOrder());
-    settings.setSesktopSortFolderFirst(proxyModel_->folderFirst());
+    settings.setDesktopSortFolderFirst(proxyModel_->folderFirst());
 }
 
 void DesktopWindow::onDataChanged(const QModelIndex& topLeft, const QModelIndex& bottomRight) {
@@ -931,6 +981,9 @@ void DesktopWindow::queueRelayout(int delay) {
 // slots for file operations
 
 void DesktopWindow::onCutActivated() {
+    if(desktopHideItems_) {
+        return;
+    }
     auto paths = selectedFilePaths();
     if(!paths.empty()) {
         Fm::cutFilesToClipboard(paths);
@@ -938,6 +991,9 @@ void DesktopWindow::onCutActivated() {
 }
 
 void DesktopWindow::onCopyActivated() {
+    if(desktopHideItems_) {
+        return;
+    }
     auto paths = selectedFilePaths();
     if(!paths.empty()) {
         Fm::copyFilesToClipboard(paths);
@@ -945,10 +1001,16 @@ void DesktopWindow::onCopyActivated() {
 }
 
 void DesktopWindow::onPasteActivated() {
+    if(desktopHideItems_) {
+        return;
+    }
     Fm::pasteFilesFromClipboard(path());
 }
 
 void DesktopWindow::onDeleteActivated() {
+    if(desktopHideItems_) {
+        return;
+    }
     auto paths = selectedFilePaths();
     if(!paths.empty()) {
         Settings& settings = static_cast<Application*>(qApp)->settings();
@@ -963,6 +1025,9 @@ void DesktopWindow::onDeleteActivated() {
 }
 
 void DesktopWindow::onRenameActivated() {
+    if(desktopHideItems_) {
+        return;
+    }
     // do inline renaming if only one item is selected,
     // otherwise use the renaming dialog
     if(selectedIndexes().size() == 1) {
@@ -983,10 +1048,16 @@ void DesktopWindow::onRenameActivated() {
 }
 
 void DesktopWindow::onBulkRenameActivated() {
+    if(desktopHideItems_) {
+        return;
+    }
     BulkRenamer(selectedFiles(), this);
 }
 
 void DesktopWindow::onFilePropertiesActivated() {
+    if(desktopHideItems_) {
+        return;
+    }
     auto files = selectedFiles();
     if(!files.empty()) {
         Fm::FilePropsDialog::showForFiles(std::move(files));

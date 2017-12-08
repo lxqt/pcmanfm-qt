@@ -330,6 +330,14 @@ public:
         desktopShowHidden_ = desktopShowHidden;
     }
 
+    bool desktopHideItems() const {
+        return desktopHideItems_;
+    }
+
+    void setDesktopHideItems(bool hide) {
+        desktopHideItems_ = hide;
+    }
+
     Qt::SortOrder desktopSortOrder() const {
         return desktopSortOrder_;
     }
@@ -350,7 +358,7 @@ public:
         return desktopSortFolderFirst_;
     }
 
-    void setSesktopSortFolderFirst(bool desktopFolderFirst) {
+    void setDesktopSortFolderFirst(bool desktopFolderFirst) {
         desktopSortFolderFirst_ = desktopFolderFirst;
     }
 
@@ -874,6 +882,7 @@ private:
     bool showWmMenu_;
 
     bool desktopShowHidden_;
+    bool desktopHideItems_;
     Qt::SortOrder desktopSortOrder_;
     Fm::FolderModel::ColumnId desktopSortColumn_;
     bool desktopSortFolderFirst_;
