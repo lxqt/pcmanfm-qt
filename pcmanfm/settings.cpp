@@ -73,6 +73,7 @@ Settings::Settings():
     desktopIconSize_(48),
     showWmMenu_(false),
     desktopShowHidden_(false),
+    desktopHideItems_(false),
     desktopSortOrder_(Qt::AscendingOrder),
     desktopSortColumn_(Fm::FolderModel::ColumnFileMTime),
     desktopSortFolderFirst_(true),
@@ -230,6 +231,7 @@ bool Settings::loadFile(QString filePath) {
     desktopIconSize_ = settings.value("DesktopIconSize", 48).toInt();
     showWmMenu_ = settings.value("ShowWmMenu", false).toBool();
     desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
+    desktopHideItems_ = settings.value("HideItems", false).toBool();
 
     desktopSortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
     desktopSortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
@@ -357,6 +359,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue("DesktopIconSize", desktopIconSize_);
     settings.setValue("ShowWmMenu", showWmMenu_);
     settings.setValue("ShowHidden", desktopShowHidden_);
+    settings.setValue("HideItems", desktopHideItems_);
     settings.setValue("SortOrder", sortOrderToString(desktopSortOrder_));
     settings.setValue("SortColumn", sortColumnToString(desktopSortColumn_));
     settings.setValue("SortFolderFirst", desktopSortFolderFirst_);
