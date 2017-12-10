@@ -143,6 +143,7 @@ void View::updateFromSettings(Settings& settings) {
     Fm::ProxyFolderModel* proxyModel = model();
     if(proxyModel) {
         proxyModel->setShowThumbnails(settings.showThumbnails());
+        proxyModel->setBackupAsHidden(settings.backupAsHidden());
     }
 }
 

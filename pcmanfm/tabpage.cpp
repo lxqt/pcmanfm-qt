@@ -92,6 +92,7 @@ TabPage::TabPage(QWidget* parent):
     // create proxy folder model to do item filtering
     proxyModel_ = new ProxyFolderModel();
     proxyModel_->setShowHidden(settings.showHidden());
+    proxyModel_->setBackupAsHidden(settings.backupAsHidden());
     proxyModel_->setShowThumbnails(settings.showThumbnails());
     connect(proxyModel_, &ProxyFolderModel::sortFilterChanged, this, &TabPage::sortFilterChanged);
 
