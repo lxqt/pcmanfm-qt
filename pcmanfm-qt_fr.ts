@@ -797,7 +797,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../../main-win.ui" line="152"/>
         <source>&amp;Sorting</source>
-        <translation>Tri en cour&amp;s</translation>
+        <translation>Tri des élément&amp;s</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="261"/>
@@ -1351,7 +1351,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Mettre les fichiers supprimés à la corbeille eu lieu de les effacer du disque.</translation>
+        <translation>Mettre les fichiers supprimés à la corbeille au lieu de les effacer du disque.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="676"/>
@@ -1391,7 +1391,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Effacer les fichiers sur des supports amovibles au lieu de les créer dans la corbeille</translation>
+        <translation>Effacer les fichiers sur des supports amovibles au lieu de les mettre dans la corbeille</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="186"/>
