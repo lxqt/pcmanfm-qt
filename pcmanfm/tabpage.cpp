@@ -498,7 +498,6 @@ void TabPage::onSelChanged() {
         }
         else {
             goffset sum;
-            GList* l;
             msg = tr("%n item(s) selected", nullptr, numSel);
             /* don't count if too many files are selected, that isn't lightweight */
             if(numSel < 1000) {
