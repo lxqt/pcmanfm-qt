@@ -379,7 +379,7 @@ void Application::onLastWindowClosed() {
 
 }
 
-void Application::onSaveStateRequest(QSessionManager& manager) {
+void Application::onSaveStateRequest(QSessionManager& /*manager*/) {
 
 }
 
@@ -500,7 +500,7 @@ void Application::connectToServer() {
     dlg->show();
 }
 
-void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) {
+void Application::launchFiles(QString cwd, QStringList paths, bool /*inNewWindow*/) {
     Fm::FilePathList pathList;
     Fm::FilePath cwd_path;
     QStringList::iterator it;
@@ -760,7 +760,7 @@ bool Application::autoMountVolume(GVolume* volume, bool interactive) {
 }
 
 // static
-void Application::onVolumeAdded(GVolumeMonitor* monitor, GVolume* volume, Application* pThis) {
+void Application::onVolumeAdded(GVolumeMonitor* /*monitor*/, GVolume* volume, Application* pThis) {
     if(pThis->settings_.mountRemovable()) {
         pThis->autoMountVolume(volume, true);
     }
@@ -841,7 +841,7 @@ void Application::reloadDesktopsAsNeeded() {
 
 // This slot is for Qt 5 onlt, but the stupid Qt moc cannot do conditional compilation
 // so we have to define it for Qt 4 as well.
-void Application::onVirtualGeometryChanged(const QRect& rect) {
+void Application::onVirtualGeometryChanged(const QRect& /*rect*/) {
     // NOTE: the following is a workaround for Qt bug 32567.
     // https://bugreports.qt-project.org/browse/QTBUG-32567
     // Though the status of the bug report is closed, it's not yet fixed for X11.

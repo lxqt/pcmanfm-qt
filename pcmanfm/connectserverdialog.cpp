@@ -62,7 +62,7 @@ QString ConnectServerDialog::uriText() {
   return uri;
 }
 
-void ConnectServerDialog::onCurrentIndexChanged(int index) {
+void ConnectServerDialog::onCurrentIndexChanged(int /*index*/) {
   int serverTypeIdx = ui.serverType->currentIndex();
   const auto& serverType = serverTypes[serverTypeIdx];
   ui.port->setValue(serverType.defaultPort);

@@ -354,7 +354,7 @@ int MainWindow::addTab(Fm::FilePath path) {
     return addTabWithPage(newPage, path);
 }
 
-void MainWindow::toggleMenuBar(bool checked) {
+void MainWindow::toggleMenuBar(bool /*checked*/) {
     Settings& settings = static_cast<Application*>(qApp)->settings();
     bool showMenuBar = !settings.showMenuBar();
 
@@ -515,31 +515,31 @@ void MainWindow::on_actionShowHidden_triggered(bool checked) {
     }
 }
 
-void MainWindow::on_actionByFileName_triggered(bool checked) {
+void MainWindow::on_actionByFileName_triggered(bool /*checked*/) {
     currentPage()->sort(Fm::FolderModel::ColumnFileName, currentPage()->sortOrder());
 }
 
-void MainWindow::on_actionByMTime_triggered(bool checked) {
+void MainWindow::on_actionByMTime_triggered(bool /*checked*/) {
     currentPage()->sort(Fm::FolderModel::ColumnFileMTime, currentPage()->sortOrder());
 }
 
-void MainWindow::on_actionByOwner_triggered(bool checked) {
+void MainWindow::on_actionByOwner_triggered(bool /*checked*/) {
     currentPage()->sort(Fm::FolderModel::ColumnFileOwner, currentPage()->sortOrder());
 }
 
-void MainWindow::on_actionByFileSize_triggered(bool checked) {
+void MainWindow::on_actionByFileSize_triggered(bool /*checked*/) {
     currentPage()->sort(Fm::FolderModel::ColumnFileSize, currentPage()->sortOrder());
 }
 
-void MainWindow::on_actionByFileType_triggered(bool checked) {
+void MainWindow::on_actionByFileType_triggered(bool /*checked*/) {
     currentPage()->sort(Fm::FolderModel::ColumnFileType, currentPage()->sortOrder());
 }
 
-void MainWindow::on_actionAscending_triggered(bool checked) {
+void MainWindow::on_actionAscending_triggered(bool /*checked*/) {
     currentPage()->sort(currentPage()->sortColumn(), Qt::AscendingOrder);
 }
 
-void MainWindow::on_actionDescending_triggered(bool checked) {
+void MainWindow::on_actionDescending_triggered(bool /*checked*/) {
     currentPage()->sort(currentPage()->sortColumn(), Qt::DescendingOrder);
 }
 
@@ -551,7 +551,7 @@ void MainWindow::on_actionFolderFirst_triggered(bool checked) {
     currentPage()->setSortFolderFirst(checked);
 }
 
-void MainWindow::on_actionPreserveView_triggered(bool checked) {
+void MainWindow::on_actionPreserveView_triggered(bool /*checked*/) {
     TabPage* page = currentPage();
     page->setCustomizedView(!page->hasCustomizedView());
 }
@@ -644,7 +644,7 @@ void MainWindow::on_actionAbout_triggered() {
     // the about dialog
     class AboutDialog : public QDialog {
     public:
-        explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) {
+        explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) : QDialog(parent, f) {
             ui.setupUi(this);
             ui.version->setText(tr("Version: %1").arg(PCMANFM_QT_VERSION));
         }
@@ -1035,7 +1035,7 @@ void MainWindow::onSidePaneModeChanged(Fm::SidePane::Mode mode) {
     static_cast<Application*>(qApp)->settings().setSidePaneMode(mode);
 }
 
-void MainWindow::onSplitterMoved(int pos, int index) {
+void MainWindow::onSplitterMoved(int pos, int /*index*/) {
     Application* app = static_cast<Application*>(qApp);
     app->settings().setSplitterPos(pos);
 }
@@ -1380,7 +1380,7 @@ void MainWindow::updateFromSettings(Settings& settings) {
     }
 }
 
-static const char* su_cmd_subst(char opt, gpointer user_data) {
+static const char* su_cmd_subst(char /*opt*/, gpointer user_data) {
     return (const char*)user_data;
 }
 
