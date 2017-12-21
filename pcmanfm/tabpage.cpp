@@ -546,7 +546,7 @@ void TabPage::forward() {
 }
 
 void TabPage::jumpToHistory(int index) {
-    if(index >= 0 && index < history_.size()) {
+    if(index >= 0 && static_cast<size_t>(index) < history_.size()) {
         // remember current scroll position
         BrowseHistoryItem& item = history_.currentItem();
         QAbstractItemView* childView = folderView_->childView();
