@@ -59,10 +59,10 @@ MainWindow::MainWindow(Fm::FilePath path):
     QMainWindow(),
     pathEntry_(nullptr),
     pathBar_(nullptr),
+    bookmarks_{Fm::Bookmarks::globalInstance()},
     fileLauncher_(this),
     rightClickIndex_(-1),
-    updatingViewMenu_(false),
-    bookmarks_{Fm::Bookmarks::globalInstance()} {
+    updatingViewMenu_(false) {
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
     setAttribute(Qt::WA_DeleteOnClose);
