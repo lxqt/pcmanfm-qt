@@ -214,7 +214,7 @@ void DesktopPreferencesDialog::onBrowseClicked() {
   dlg.setNameFilterDetailsVisible(false);
   if(dlg.exec() == QDialog::Accepted) {
     QString filename;
-    filename = dlg.selectedFiles().first();
+    filename = dlg.selectedFiles().constFirst();
     ui.imageFile->setText(filename);
   }
 }
@@ -227,7 +227,7 @@ void DesktopPreferencesDialog::onFolderBrowseClicked() {
   dlg.setDirectory(QDir::home().path());
   if(dlg.exec() == QDialog::Accepted) {
     QString foldername;
-    foldername = dlg.selectedFiles().first();
+    foldername = dlg.selectedFiles().constFirst();
     ui.imageFolder->setText(foldername);
   }
 }
@@ -240,7 +240,7 @@ void DesktopPreferencesDialog::onBrowseDesktopFolderClicked()
   dlg.setFileMode(QFileDialog::DirectoryOnly);
   if (dlg.exec() == QDialog::Accepted) {
     QString dir;
-    dir = dlg.selectedFiles().first();
+    dir = dlg.selectedFiles().constFirst();
     uiDesktopFolder.desktopFolder->setText(dir);
   }
 }
