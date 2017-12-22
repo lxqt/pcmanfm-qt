@@ -253,7 +253,7 @@ void TabPage::onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity sev
     if(err.domain() == G_IO_ERROR) {
         if(err.code() == G_IO_ERROR_NOT_MOUNTED && severity < Fm::Job::ErrorSeverity::CRITICAL) {
             auto& path = folder_->path();
-            MountOperation* op = new MountOperation(this);
+            MountOperation* op = new MountOperation(true);
             op->mount(path);
             if(op->wait()) { // blocking event loop, wait for mount operation to finish.
                 // This will reload the folder, which generates a new "start-loading"
@@ -498,7 +498,6 @@ void TabPage::onSelChanged() {
         }
         else {
             goffset sum;
-            GList* l;
             msg = tr("%n item(s) selected", nullptr, numSel);
             /* don't count if too many files are selected, that isn't lightweight */
             if(numSel < 1000) {
@@ -547,7 +546,7 @@ void TabPage::forward() {
 }
 
 void TabPage::jumpToHistory(int index) {
-    if(index >= 0 && index < history_.size()) {
+    if(index >= 0 && static_cast<size_t>(index) < history_.size()) {
         // remember current scroll position
         BrowseHistoryItem& item = history_.currentItem();
         QAbstractItemView* childView = folderView_->childView();

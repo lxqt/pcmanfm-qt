@@ -37,7 +37,7 @@ Launcher::~Launcher() {
 
 }
 
-bool Launcher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err) {
+bool Launcher::openFolder(GAppLaunchContext* /*ctx*/, GList* folder_infos, GError** /*err*/) {
     GList* l = folder_infos;
     FmFileInfo* fi = FM_FILE_INFO(l->data);
     Application* app = static_cast<Application*>(qApp);

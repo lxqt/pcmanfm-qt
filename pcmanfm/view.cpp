@@ -126,7 +126,7 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
     }
 }
 
-void View::prepareFolderMenu(Fm::FolderMenu* menu) {
+void View::prepareFolderMenu(Fm::FolderMenu* /*menu*/) {
 }
 
 void View::updateFromSettings(Settings& settings) {
