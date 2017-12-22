@@ -291,8 +291,8 @@ void TabPage::onFolderFsInfo() {
         fm_file_size_to_str(free_str, sizeof(free_str), free, fm_config->si_unit);
         fm_file_size_to_str(total_str, sizeof(total_str), total, fm_config->si_unit);
         msg = tr("Free space: %1 (Total: %2)")
-              .arg(QString::fromUtf8(free_str))
-              .arg(QString::fromUtf8(total_str));
+              .arg(QString::fromUtf8(free_str),
+              QString::fromUtf8(total_str));
     }
     else {
         msg.clear();
@@ -483,16 +483,16 @@ void TabPage::onSelChanged() {
             auto& fi = files.front();
             if(!fi->isDir()) {
                 msg = QString("%4\"%1\" %4(%2) %4%3")
-                      .arg(encloseWithBidiMarks(fi->displayName()))
-                      .arg(encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit))) // FIXME: deprecate fm_config
-                      .arg(encloseWithBidiMarks(fi->mimeType()->desc()))
-                      .arg((layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
+                      .arg(encloseWithBidiMarks(fi->displayName()),
+                      encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit)), // FIXME: deprecate fm_config
+                      encloseWithBidiMarks(fi->mimeType()->desc()),
+                      (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
             }
             else {
                 msg = QString("%3\"%1\" %3%2")
-                      .arg(encloseWithBidiMarks(fi->displayName()))
-                      .arg(encloseWithBidiMarks(fi->mimeType()->desc()))
-                      .arg((layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
+                      .arg(encloseWithBidiMarks(fi->displayName()),
+                      encloseWithBidiMarks(fi->mimeType()->desc()),
+                      (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
             }
             /* FIXME: should we support statusbar plugins as in the gtk+ version? */
         }
