@@ -285,6 +285,7 @@ bool Settings::loadFile(QString filePath) {
     placesRoot_ = settings.value("PlacesRoot", true).toBool();
     placesComputer_ = settings.value("PlacesComputer", true).toBool();
     placesNetwork_ = settings.value("PlacesNetwork", true).toBool();
+    hiddenPlaces_ = settings.value("HiddenPlaces").toStringList().toSet();
     settings.endGroup();
 
     settings.beginGroup("Window");
@@ -409,6 +410,13 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue("PlacesRoot", placesRoot_);
     settings.setValue("PlacesComputer", placesComputer_);
     settings.setValue("PlacesNetwork", placesNetwork_);
+    if (hiddenPlaces_.isEmpty()) {  // don't save "@Invalid()"
+        settings.remove("HiddenPlaces");
+    }
+    else {
+        QStringList hiddenPlaces = hiddenPlaces_.toList();
+        settings.setValue("HiddenPlaces", hiddenPlaces);
+    }
     settings.endGroup();
 
     settings.beginGroup("Window");

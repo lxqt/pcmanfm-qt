@@ -554,6 +554,19 @@ public:
         placesNetwork_ = placesNetwork;
     }
 
+    QSet<QString> getHiddenPlaces() const {
+        return hiddenPlaces_;
+    }
+
+    void setHiddenPlace(const QString& str, bool hide) {
+        if(hide) {
+            hiddenPlaces_ << str;
+        }
+        else {
+            hiddenPlaces_.remove(str);
+        }
+    }
+
 
     Qt::SortOrder sortOrder() const {
         return sortOrder_;
@@ -933,6 +946,7 @@ private:
     bool placesRoot_;
     bool placesComputer_;
     bool placesNetwork_;
+    QSet<QString> hiddenPlaces_;
 
     int bigIconSize_;
     int smallIconSize_;

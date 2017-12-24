@@ -127,12 +127,14 @@ MainWindow::MainWindow(Fm::FilePath path):
     // side pane
     ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
     ui.sidePane->setMode(settings.sidePaneMode());
+    ui.sidePane->restoreHiddenPlaces(settings.getHiddenPlaces());
     connect(ui.sidePane, &Fm::SidePane::chdirRequested, this, &MainWindow::onSidePaneChdirRequested);
     connect(ui.sidePane, &Fm::SidePane::openFolderInNewWindowRequested, this, &MainWindow::onSidePaneOpenFolderInNewWindowRequested);
     connect(ui.sidePane, &Fm::SidePane::openFolderInNewTabRequested, this, &MainWindow::onSidePaneOpenFolderInNewTabRequested);
     connect(ui.sidePane, &Fm::SidePane::openFolderInTerminalRequested, this, &MainWindow::onSidePaneOpenFolderInTerminalRequested);
     connect(ui.sidePane, &Fm::SidePane::createNewFolderRequested, this, &MainWindow::onSidePaneCreateNewFolderRequested);
     connect(ui.sidePane, &Fm::SidePane::modeChanged, this, &MainWindow::onSidePaneModeChanged);
+    connect(ui.sidePane, &Fm::SidePane::hiddenPlaceSet, this, &MainWindow::onSettingHiddenPlace);
 
     // detect change of splitter position
     connect(ui.splitter, &QSplitter::splitterMoved, this, &MainWindow::onSplitterMoved);
@@ -1033,6 +1035,10 @@ void MainWindow::onSidePaneCreateNewFolderRequested(const Fm::FilePath &path) {
 
 void MainWindow::onSidePaneModeChanged(Fm::SidePane::Mode mode) {
     static_cast<Application*>(qApp)->settings().setSidePaneMode(mode);
+}
+
+void MainWindow::onSettingHiddenPlace(const QString& str, bool hide) {
+    static_cast<Application*>(qApp)->settings().setHiddenPlace(str, hide);
 }
 
 void MainWindow::onSplitterMoved(int pos, int /*index*/) {
