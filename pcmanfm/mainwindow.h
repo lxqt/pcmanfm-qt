@@ -178,6 +178,8 @@ protected Q_SLOTS:
 
     void onBookmarksChanged();
 
+    void onSettingHiddenPlace(const QString& str, bool hide);
+
 protected:
     bool event(QEvent* event) override;
     void changeEvent(QEvent* event) override;
