@@ -46,36 +46,10 @@ bool ProxyFilter::filterAcceptsRow(const Fm::ProxyFolderModel* model, const std:
         return true;
     }
     QString baseName = QString::fromStdString(info->name());
-    if(!virtHiddenList_.isEmpty() && !model->showHidden() && virtHiddenList_.contains(baseName)) {
-        return false;
-    }
     if(!filterStr_.isEmpty() && !baseName.contains(filterStr_, Qt::CaseInsensitive)) {
         return false;
     }
     return true;
-}
-
-void ProxyFilter::setVirtHidden(const std::shared_ptr<Fm::Folder> &folder) {
-    virtHiddenList_ = QStringList(); // reset the list
-    if(!folder) {
-        return;
-    }
-    auto path = folder->path();
-    if(path) {
-        auto pathStr = path.localPath();
-        if(pathStr) {
-            QString dotHidden = QString::fromUtf8(pathStr.get()) + QString("/.hidden");
-            // FIXME: this does not work for non-local filesystems
-            QFile file(dotHidden);
-            if(file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-                QTextStream in(&file);
-                while(!in.atEnd()) {
-                    virtHiddenList_.append(in.readLine());
-                }
-                file.close();
-            }
-        }
-    }
 }
 
 TabPage::TabPage(QWidget* parent):
@@ -400,7 +374,6 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     Q_EMIT titleChanged(newPath.baseName().get());  // FIXME: display name
 
     folder_ = Fm::Folder::fromPath(newPath);
-    proxyFilter_->setVirtHidden(folder_);
     if(addHistory) {
         // add current path to browse history
         history_.add(path());
@@ -449,7 +422,6 @@ void TabPage::invertSelection() {
 
 void TabPage::reload() {
     if(folder_) {
-        proxyFilter_->setVirtHidden(folder_); // reread ".hidden"
         // don't select or scroll to the previous folder after reload
         lastFolderPath_ = Fm::FilePath();
         // but remember the current scroll position

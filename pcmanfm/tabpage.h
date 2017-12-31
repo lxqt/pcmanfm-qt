@@ -48,7 +48,6 @@ class ProxyFilter : public Fm::ProxyFolderModelFilter {
 public:
     bool filterAcceptsRow(const Fm::ProxyFolderModel* model, const std::shared_ptr<const Fm::FileInfo>& info) const;
     virtual ~ProxyFilter() {}
-    void setVirtHidden(const std::shared_ptr<Fm::Folder>& folder);
     QString getFilterStr() {
         return filterStr_;
     }
@@ -58,7 +57,6 @@ public:
 
 private:
     QString filterStr_;
-    QStringList virtHiddenList_;
 };
 
 class TabPage : public QWidget {
