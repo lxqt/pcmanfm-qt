@@ -390,7 +390,8 @@ void Application::desktopManager(bool enabled) {
     if(enabled) {
         if(!enableDesktopManager_) {
             // installNativeEventFilter(this);
-            Q_FOREACH(QScreen* screen, screens()) {
+            const auto allScreens = screens();
+            for(QScreen* screen : allScreens) {
                 connect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
                 connect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
             }
@@ -425,7 +426,8 @@ void Application::desktopManager(bool enabled) {
                 delete window;
             }
             desktopWindows_.clear();
-            Q_FOREACH(QScreen* screen, screens()) {
+            const auto allScreens = screens();
+            for(QScreen* screen : allScreens) {
                 disconnect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
                 disconnect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
             }
@@ -504,7 +506,7 @@ void Application::launchFiles(QString cwd, QStringList paths, bool /*inNewWindow
     Fm::FilePathList pathList;
     Fm::FilePath cwd_path;
     QStringList::iterator it;
-    Q_FOREACH(const QString& it, paths) {
+    for(const QString& it : qAsConst(paths)) {
         QByteArray pathName = it.toLocal8Bit();
         Fm::FilePath path;
         if(pathName == "~") { // special case for home dir
@@ -588,7 +590,7 @@ void Application::setWallpaper(QString path, QString modeString) {
     // update wallpaper
     if(changed) {
         if(enableDesktopManager_) {
-            Q_FOREACH(DesktopWindow* desktopWindow, desktopWindows_) {
+            for(DesktopWindow* desktopWindow :  qAsConst(desktopWindows_)) {
                 if(!path.isEmpty()) {
                     desktopWindow->setWallpaperFile(path);
                 }
@@ -814,7 +816,7 @@ void Application::onScreenDestroyed(QObject* screenObj) {
     if(enableDesktopManager_) {
         bool reloadNeeded = false;
         // FIXME: add workarounds for Qt5 bug #40681 and #40791 here.
-        Q_FOREACH(DesktopWindow* desktop, desktopWindows_) {
+        for(DesktopWindow* desktop :  qAsConst(desktopWindows_)) {
             if(desktop->windowHandle()->screen() == screenObj) {
                 desktop->destroy(); // destroy the underlying native window
                 reloadNeeded = true;
@@ -829,7 +831,7 @@ void Application::onScreenDestroyed(QObject* screenObj) {
 void Application::reloadDesktopsAsNeeded() {
     if(enableDesktopManager_) {
         // workarounds for Qt5 bug #40681 and #40791 here.
-        Q_FOREACH(DesktopWindow* desktop, desktopWindows_) {
+        for(DesktopWindow* desktop : qAsConst(desktopWindows_)) {
             if(!desktop->windowHandle()) {
                 desktop->create(); // re-create the underlying native window
                 desktop->queueRelayout();
@@ -852,7 +854,7 @@ void Application::onVirtualGeometryChanged(const QRect& /*rect*/) {
     // So we use it in Qt5.
     if(enableDesktopManager_) {
         // qDebug() << "onVirtualGeometryChanged";
-        Q_FOREACH(DesktopWindow* desktop, desktopWindows_) {
+        for(DesktopWindow* desktop : qAsConst(desktopWindows_)) {
             desktop->queueRelayout();
         }
     }
