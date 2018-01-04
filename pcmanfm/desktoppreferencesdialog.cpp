@@ -203,8 +203,8 @@ void DesktopPreferencesDialog::onBrowseClicked() {
   filter.reserve(256);
   filter = tr("Image Files");
   filter += " (";
-  QList<QByteArray> formats = QImageReader::supportedImageFormats();
-  Q_FOREACH(QByteArray format, formats) {
+  const QList<QByteArray> formats = QImageReader::supportedImageFormats();
+  for(const QByteArray& format : formats) {
     filter += "*.";
     filter += format.toLower();
     filter += ' ';

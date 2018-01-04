@@ -8,14 +8,14 @@ set(PCMANFM_QT_VERSION_PATCH 0)
 
 set(PCMANFM_QT_VERSION ${PCMANFM_QT_VERSION_MAJOR}.${PCMANFM_QT_VERSION_MINOR}.${PCMANFM_QT_VERSION_PATCH})
 
-set(LXQTBT_MINIMUM_VERSION "0.4.0")
+set(LXQTBT_MINIMUM_VERSION "0.4.1")
 
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
-find_package(Qt5Widgets 5.2 REQUIRED)
-find_package(Qt5DBus 5.2 REQUIRED)
-find_package(Qt5LinguistTools 5.2 REQUIRED)
-find_package(Qt5X11Extras 5.2 REQUIRED)
+find_package(Qt5Widgets 5.7.1 REQUIRED)
+find_package(Qt5DBus 5.7.1 REQUIRED)
+find_package(Qt5LinguistTools 5.7.1 REQUIRED)
+find_package(Qt5X11Extras 5.7.1 REQUIRED)
 find_package(fm-qt REQUIRED)
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 

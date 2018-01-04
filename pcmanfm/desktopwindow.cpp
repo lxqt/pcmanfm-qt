@@ -687,7 +687,7 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
     auto itemSize = delegate->itemSize();
     // remember the custom position for the items
-    Q_FOREACH(const QModelIndex& index, indexes) {
+    for(const QModelIndex& index : indexes) {
         // Under some circumstances, Qt might emit indexMoved for
         // every single cells in the same row. (when QAbstractItemView::SelectItems is set)
         // So indexes list may contain several indixes for the same row.
@@ -892,7 +892,8 @@ void DesktopWindow::loadItemPositions() {
     }
 
     // FIXME: this is inefficient
-    Q_FOREACH(const QString& name, file.childGroups()) {
+    const auto names = file.childGroups();
+    for(const QString& name : names) {
         if(!QFile::exists(desktopDir + name.toUtf8())) {
             // the file may have been removed from outside LXQT
             continue;
