@@ -150,6 +150,29 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
 </context>
 <context>
+    <name>BulkRenameDialog</name>
+    <message>
+        <location filename="../../bulk-rename.ui" line="6"/>
+        <source>Bulk Rename</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../bulk-rename.ui" line="48"/>
+        <source># will be replaced by numbers starting with:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../bulk-rename.ui" line="71"/>
+        <source>Rename selected files to:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../bulk-rename.ui" line="84"/>
+        <source>Name#</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ConnectServerDialog</name>
     <message>
         <location filename="../../connect.ui" line="14"/>
@@ -434,453 +457,468 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
         <translation>Yol &amp;Çubuğu</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="290"/>
+        <location filename="../../main-win.ui" line="298"/>
         <source>Go &amp;Up</source>
         <translation>Üst &amp;Dizin</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="293"/>
+        <location filename="../../main-win.ui" line="301"/>
         <source>Go Up</source>
         <translation>Üst Dizin</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="296"/>
+        <location filename="../../main-win.ui" line="304"/>
         <source>Alt+Up</source>
         <translation>Alt+Yukarı</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="305"/>
+        <location filename="../../main-win.ui" line="313"/>
         <source>&amp;Home</source>
         <translation>&amp;Ev Dizini</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="308"/>
+        <location filename="../../main-win.ui" line="316"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="317"/>
+        <location filename="../../main-win.ui" line="325"/>
         <source>&amp;Reload</source>
         <translation>&amp;Yeniden Yükle</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="320"/>
+        <location filename="../../main-win.ui" line="328"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="329"/>
+        <location filename="../../main-win.ui" line="337"/>
         <source>Go</source>
         <translation>Git</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="338"/>
+        <location filename="../../main-win.ui" line="346"/>
         <source>Quit</source>
         <translation>Çıkış</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="347"/>
+        <location filename="../../main-win.ui" line="355"/>
         <source>&amp;About</source>
         <translation>&amp;Hakkında</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="356"/>
+        <location filename="../../main-win.ui" line="364"/>
         <source>&amp;New Window</source>
         <translation>&amp;Yeni Pencere</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="359"/>
+        <location filename="../../main-win.ui" line="367"/>
         <source>New Window</source>
         <translation>Yeni Pencere</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="362"/>
+        <location filename="../../main-win.ui" line="370"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="370"/>
+        <location filename="../../main-win.ui" line="378"/>
         <source>Show &amp;Hidden</source>
         <translation>&amp;Gizli Dosyaları Göster</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="373"/>
+        <location filename="../../main-win.ui" line="381"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="382"/>
+        <location filename="../../main-win.ui" line="390"/>
         <source>&amp;Computer</source>
         <translation>&amp;Bilgisayar</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="391"/>
+        <location filename="../../main-win.ui" line="399"/>
         <source>&amp;Trash</source>
         <translation>&amp;Çöp</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="396"/>
+        <location filename="../../main-win.ui" line="404"/>
         <source>&amp;Network</source>
         <translation>&amp;Ağ</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="405"/>
+        <location filename="../../main-win.ui" line="413"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Masaüstü</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="414"/>
+        <location filename="../../main-win.ui" line="422"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>Yer İmlerine &amp;Ekle</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="419"/>
+        <location filename="../../main-win.ui" line="427"/>
         <source>&amp;Applications</source>
         <translation>&amp;Uygulamalar</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="424"/>
+        <location filename="../../main-win.ui" line="432"/>
         <source>Reload</source>
         <translation>Yeniden Yükle</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="432"/>
+        <location filename="../../main-win.ui" line="440"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Simge Görünümü</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="440"/>
+        <location filename="../../main-win.ui" line="448"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Sıkışık Görünüm</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="448"/>
+        <location filename="../../main-win.ui" line="456"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Ayrıntılı Liste</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="456"/>
+        <location filename="../../main-win.ui" line="464"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Önizleme</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="465"/>
+        <location filename="../../main-win.ui" line="473"/>
         <source>Cu&amp;t</source>
         <translation>Ke&amp;s</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="468"/>
+        <location filename="../../main-win.ui" line="476"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="477"/>
+        <location filename="../../main-win.ui" line="485"/>
         <source>&amp;Copy</source>
         <translation>&amp;Kopyala</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="480"/>
+        <location filename="../../main-win.ui" line="488"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="489"/>
+        <location filename="../../main-win.ui" line="497"/>
         <source>&amp;Paste</source>
         <translation>&amp;Yapıştır</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="492"/>
+        <location filename="../../main-win.ui" line="500"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="497"/>
+        <location filename="../../main-win.ui" line="505"/>
         <source>Select &amp;All</source>
         <translation>Tümünü &amp;Seç</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="500"/>
+        <location filename="../../main-win.ui" line="508"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="505"/>
+        <location filename="../../main-win.ui" line="513"/>
         <source>Pr&amp;eferences</source>
         <translation>Ter&amp;cihler</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="513"/>
+        <location filename="../../main-win.ui" line="521"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Artan</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="521"/>
+        <location filename="../../main-win.ui" line="529"/>
         <source>&amp;Descending</source>
         <translation>&amp;Azalan</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="529"/>
+        <location filename="../../main-win.ui" line="537"/>
         <source>&amp;By File Name</source>
         <translation>&amp;Dosya Adı</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="537"/>
+        <location filename="../../main-win.ui" line="545"/>
         <source>By &amp;Modification Time</source>
         <translation>&amp;Değiştirme Zamanı</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="545"/>
+        <location filename="../../main-win.ui" line="553"/>
         <source>By File &amp;Type</source>
         <translation>&amp;Dosya Tipi</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="553"/>
+        <location filename="../../main-win.ui" line="561"/>
         <source>By &amp;Owner</source>
         <translation>&amp;Sahiplik</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="561"/>
+        <location filename="../../main-win.ui" line="569"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Önce Dizin</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="569"/>
+        <location filename="../../main-win.ui" line="577"/>
         <source>&amp;Preserve sorting for this folder</source>
         <translation>Bu dizinin sıralamasını &amp;koru</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="668"/>
+        <location filename="../../main-win.ui" line="676"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;Alfabetik</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="676"/>
+        <location filename="../../main-win.ui" line="684"/>
         <source>By File &amp;Size</source>
         <translation>Dosya &amp;Boyutu</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="681"/>
+        <location filename="../../main-win.ui" line="689"/>
         <source>&amp;Close Window</source>
         <translation>&amp;Pencereyi Kapat</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="684"/>
+        <location filename="../../main-win.ui" line="692"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="716"/>
+        <location filename="../../main-win.ui" line="724"/>
         <source>&amp;Folder</source>
         <translation>&amp;Dizin</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="728"/>
+        <location filename="../../main-win.ui" line="736"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Boş Dosya</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="747"/>
+        <location filename="../../main-win.ui" line="755"/>
         <source>&amp;Filter</source>
         <translation>&amp;Filtre</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="750"/>
+        <location filename="../../main-win.ui" line="758"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="759"/>
+        <location filename="../../main-win.ui" line="767"/>
         <source>Close &amp;previous tabs</source>
         <translation>&amp;Önceki sekmeleri kapat</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="768"/>
+        <location filename="../../main-win.ui" line="776"/>
         <source>Close &amp;next tabs</source>
         <translation>So&amp;nraki sekmeleri kapat</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="807"/>
+        <location filename="../../main-win.ui" line="815"/>
         <source>&amp;Preserve Settings for This Folder</source>
         <translation>Bu Dizinin Ayarlarını &amp;Koru</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="812"/>
+        <location filename="../../main-win.ui" line="820"/>
         <source>Connect to &amp;Server</source>
         <translation>&amp;Sunucuya Bağlan</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="820"/>
+        <location filename="../../main-win.ui" line="828"/>
         <source>&amp;Location</source>
         <translation>&amp;Konum</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="828"/>
+        <location filename="../../main-win.ui" line="836"/>
         <source>&amp;Path Buttons</source>
         <translation>&amp;Yol Düğmeleri</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="773"/>
+        <location filename="../../main-win.ui" line="841"/>
+        <source>&amp;Bulk Rename</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="844"/>
+        <source>Bulk Rename</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="847"/>
+        <source>Ctrl+F2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main-win.ui" line="781"/>
         <source>Close &amp;other tabs</source>
         <translation>&amp;Diğer sekmeleri kapat</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="781"/>
+        <location filename="../../main-win.ui" line="789"/>
         <source>&amp;Menu bar</source>
         <translation>&amp;Menü çubuğu</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="784"/>
+        <location filename="../../main-win.ui" line="792"/>
         <source>Menu bar</source>
         <translation>Menü çubuğu</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="787"/>
+        <location filename="../../main-win.ui" line="795"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="796"/>
-        <location filename="../../main-win.ui" line="799"/>
+        <location filename="../../main-win.ui" line="804"/>
+        <location filename="../../main-win.ui" line="807"/>
         <source>Menu</source>
         <translation>Menü</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="578"/>
+        <location filename="../../main-win.ui" line="586"/>
         <source>New &amp;Tab</source>
         <translation>Yeni &amp;Sekme</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="581"/>
+        <location filename="../../main-win.ui" line="589"/>
         <source>New Tab</source>
         <translation>Yeni Sekme</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="584"/>
+        <location filename="../../main-win.ui" line="592"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="593"/>
+        <location filename="../../main-win.ui" line="601"/>
         <source>Go &amp;Back</source>
         <translation>Geri &amp;Git</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="596"/>
+        <location filename="../../main-win.ui" line="604"/>
         <source>Go Back</source>
         <translation>Geri Git</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="599"/>
+        <location filename="../../main-win.ui" line="607"/>
         <source>Alt+Left</source>
         <translation>Alt+Left</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="608"/>
+        <location filename="../../main-win.ui" line="616"/>
         <source>Go &amp;Forward</source>
         <translation>&amp;İleri</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="611"/>
+        <location filename="../../main-win.ui" line="619"/>
         <source>Go Forward</source>
         <translation>İleri</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="614"/>
+        <location filename="../../main-win.ui" line="622"/>
         <source>Alt+Right</source>
         <translation>Alt+Right</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="619"/>
+        <location filename="../../main-win.ui" line="627"/>
         <source>&amp;Invert Selection</source>
         <translation>Seçimi &amp;Tersine Çevir</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="628"/>
+        <location filename="../../main-win.ui" line="636"/>
         <source>&amp;Delete</source>
         <translation>&amp;Sil</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="631"/>
+        <location filename="../../main-win.ui" line="639"/>
         <source>Del</source>
         <translation>Sil</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="636"/>
+        <location filename="../../main-win.ui" line="644"/>
         <source>&amp;Rename</source>
         <translation>&amp;Yeniden Adlandır</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="639"/>
+        <location filename="../../main-win.ui" line="647"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="644"/>
+        <location filename="../../main-win.ui" line="652"/>
         <source>C&amp;lose Tab</source>
         <translation>S&amp;ekmeyi Kapat</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="647"/>
+        <location filename="../../main-win.ui" line="655"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="652"/>
+        <location filename="../../main-win.ui" line="660"/>
         <source>File &amp;Properties</source>
         <translation>Dosya &amp;Özellikleri</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="655"/>
+        <location filename="../../main-win.ui" line="663"/>
         <source>Alt+Return</source>
         <translation>Alt+Enter</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="660"/>
+        <location filename="../../main-win.ui" line="668"/>
         <source>&amp;Folder Properties</source>
         <translation>&amp;Dizin Özellikleri</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="689"/>
+        <location filename="../../main-win.ui" line="697"/>
         <source>Edit Bookmarks</source>
         <translation>Yer İmlerini Düzenle</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="694"/>
+        <location filename="../../main-win.ui" line="702"/>
         <source>Open &amp;Terminal</source>
         <translation>Uçbirim &amp;Aç</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="697"/>
+        <location filename="../../main-win.ui" line="705"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="702"/>
+        <location filename="../../main-win.ui" line="710"/>
         <source>Open as &amp;Root</source>
         <translation>&amp;Yetkili Olarak PCManFM Aç</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="707"/>
+        <location filename="../../main-win.ui" line="715"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Yer İmlerini Düzenle</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="719"/>
+        <location filename="../../main-win.ui" line="727"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="731"/>
+        <location filename="../../main-win.ui" line="739"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="736"/>
+        <location filename="../../main-win.ui" line="744"/>
         <source>&amp;Find Files</source>
         <translation>Dosya &amp;Bul</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="739"/>
+        <location filename="../../main-win.ui" line="747"/>
         <source>F3</source>
         <translation>F3</translation>
     </message>
@@ -925,22 +963,22 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
         <translation>&amp;Düzenle</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="217"/>
+        <location filename="../../main-win.ui" line="220"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Yer imleri</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="224"/>
+        <location filename="../../main-win.ui" line="227"/>
         <source>&amp;Go</source>
         <translation>&amp;Git</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="241"/>
+        <location filename="../../main-win.ui" line="244"/>
         <source>&amp;Tool</source>
         <translation>&amp;Araçlar</translation>
     </message>
     <message>
-        <location filename="../../main-win.ui" line="261"/>
+        <location filename="../../main-win.ui" line="264"/>
         <source>Main Toolbar</source>
         <translation>Ana Araç Çubuğu</translation>
     </message>
@@ -1038,13 +1076,13 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
         <translation>[DOSYA1, DOSYA,...]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="540"/>
-        <location filename="../../application.cpp" line="545"/>
+        <location filename="../../application.cpp" line="542"/>
+        <location filename="../../application.cpp" line="547"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="545"/>
+        <location filename="../../application.cpp" line="547"/>
         <source>Terminal emulator is not set.</source>
         <translation>Uçbirim uygulaması ayarlanmadı.</translation>
     </message>
@@ -1136,12 +1174,17 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../../desktopwindow.cpp" line="525"/>
+        <location filename="../../desktopwindow.cpp" line="548"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Geçerli Konuma Sa&amp;bitle</translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="547"/>
+        <location filename="../../desktopwindow.cpp" line="574"/>
+        <source>Hide Desktop Items</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../desktopwindow.cpp" line="579"/>
         <source>Desktop Preferences</source>
         <translation>Masaüstü Tercihleri</translation>
     </message>
@@ -1149,43 +1192,43 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../../mainwindow.cpp" line="264"/>
+        <location filename="../../mainwindow.cpp" line="275"/>
         <source>Clear text (Ctrl+K)</source>
         <translation>Metni temizle (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="343"/>
+        <location filename="../../mainwindow.cpp" line="365"/>
         <source>Hide menu bar</source>
         <translation>Menü çubuğunu gizle</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="344"/>
+        <location filename="../../mainwindow.cpp" line="366"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Bu eylem menü çubuğunu tamamen gizleyecektir, tekrar göstermek için Ctrl+M kısayolunu kullanın.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="628"/>
+        <location filename="../../mainwindow.cpp" line="651"/>
         <source>Version: %1</source>
         <translation>Sürüm: %1</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1263"/>
+        <location filename="../../mainwindow.cpp" line="1360"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Çöp Kutusuna Taşı</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1263"/>
+        <location filename="../../mainwindow.cpp" line="1360"/>
         <source>&amp;Delete</source>
         <translation>&amp;Sil</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1332"/>
-        <location filename="../../mainwindow.cpp" line="1340"/>
+        <location filename="../../mainwindow.cpp" line="1429"/>
+        <location filename="../../mainwindow.cpp" line="1437"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="1340"/>
+        <location filename="../../mainwindow.cpp" line="1437"/>
         <source>Switch user command is not set.</source>
         <translation>Kullanıcı değiştirme komutu atanmamış.</translation>
     </message>
@@ -1220,31 +1263,31 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../../tabpage.cpp" line="279"/>
+        <location filename="../../tabpage.cpp" line="254"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     <message>
-        <location filename="../../tabpage.cpp" line="292"/>
+        <location filename="../../tabpage.cpp" line="267"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Boş alan: %1 (Toplam %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="309"/>
+        <location filename="../../tabpage.cpp" line="284"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n nesne(ler)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="311"/>
+        <location filename="../../tabpage.cpp" line="286"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n gizli)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="488"/>
+        <location filename="../../tabpage.cpp" line="473"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n nesne seçildi</numerusform>
@@ -1687,6 +1730,45 @@ görünmez.</translation>
         <location filename="../../preferences.ui" line="319"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>SI  onluk önekleri yerine IEC ikili önekleri kullan</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../../bulkrename.cpp" line="72"/>
+        <source>Renaming files...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../bulkrename.cpp" line="72"/>
+        <source>Abort</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../bulkrename.cpp" line="79"/>
+        <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../bulkrename.cpp" line="79"/>
+        <source>Renaming is aborted.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../bulkrename.cpp" line="92"/>
+        <location filename="../../bulkrename.cpp" line="95"/>
+        <source>Error</source>
+        <translation type="unfinished">Hata</translation>
+    </message>
+    <message>
+        <location filename="../../bulkrename.cpp" line="92"/>
+        <source>No file could be renamed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../bulkrename.cpp" line="95"/>
+        <source>Some files could not be renamed.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
