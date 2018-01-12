@@ -117,22 +117,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Masowa zmiana nazw</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># zostanie zastąpione liczbami zaczynając od:</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmień nazwę zaznaczonych plików na:</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa#</translation>
     </message>
 </context>
 <context>
@@ -799,17 +799,17 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Masowa zmiana nazw</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Masowa zmiana nazw</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="781"/>
@@ -1319,7 +1319,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../../desktopwindow.cpp" line="574"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukryj ikony pulpitu</translation>
     </message>
     <message>
         <location filename="../../desktopwindow.cpp" line="579"/>
@@ -1897,38 +1897,38 @@ nad widokiem, nie nad prawym panelem.</translation>
     <message>
         <location filename="../../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Trwa zmiana nazw plików…</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Przerwij</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Ostrzeżenie</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Anulowanie zmiany nazw..</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="92"/>
         <location filename="../../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Błąd</translation>
+        <translation>Błąd</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nie udało się zmienić nazw wszystkich plików.</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie udało się zmienić nazw niektórych plików.</translation>
     </message>
 </context>
 </TS>
