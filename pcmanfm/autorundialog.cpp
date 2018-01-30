@@ -19,7 +19,6 @@
 
 
 #include "autorundialog.h"
-#include <libfm-qt/icontheme.h>
 #include <QListWidgetItem>
 #include "application.h"
 #include "mainwindow.h"
