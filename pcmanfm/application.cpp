@@ -109,7 +109,6 @@ Application::Application(int& argc, char** argv):
 
         if(settings_.useFallbackIconTheme()) {
             QIcon::setThemeName(settings_.fallbackIconThemeName());
-            Fm::IconTheme::checkChanged();
         }
 
         // Check if LXQt Session is running. LXQt has it's own Desktop Folder
