@@ -95,22 +95,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>批量重命名</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># 会被替换为数字开始自:</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>重命名已选定的文件至:</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>名称#</translation>
     </message>
 </context>
 <context>
@@ -685,17 +685,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>批量重命名(&amp;B)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>批量重命名</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="781"/>
@@ -1114,7 +1114,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../desktopwindow.cpp" line="574"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>隐藏桌面项目</translation>
     </message>
     <message>
         <location filename="../../desktopwindow.cpp" line="579"/>
@@ -1661,38 +1661,38 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>重命名文件...</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>忽略</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>警告</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>重命名已取消。</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="92"/>
         <location filename="../../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">错误</translation>
+        <translation>错误错误</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>没有文件可以被重命名。</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>某些文件不能被重命名。</translation>
     </message>
 </context>
 </TS>
