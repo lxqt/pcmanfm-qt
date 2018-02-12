@@ -153,22 +153,22 @@ adresu 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translatio
     <message>
         <location filename="../../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Masinis pervadinimas</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># bus pakeista skaitmenimis, pradedant nuo:</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pervadinti pažymėtus failus į:</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Pavadinimas#</translation>
     </message>
 </context>
 <context>
@@ -713,17 +713,17 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Masinis pervadinimas</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Masinis pervadinimas</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl(Vald)+F2</translation>
     </message>
     <message>
         <source>Close &amp;left tabs</source>
@@ -1180,7 +1180,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../../desktopwindow.cpp" line="574"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Slėpti darbalaukio elementus</translation>
     </message>
     <message>
         <location filename="../../desktopwindow.cpp" line="579"/>
@@ -1740,38 +1740,38 @@ kairiajame polangyje.</translation>
     <message>
         <location filename="../../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Pervadinami failai...</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Nutraukti</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Įspėjimas</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pervadinimas yra nutrauktas.</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="92"/>
         <location filename="../../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Klaida</translation>
+        <translation>Klaida</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepavyko pervadinti jokio failo.</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kai kurių failų pervadinti nepavyko.</translation>
     </message>
 </context>
 </TS>
