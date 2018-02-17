@@ -1168,63 +1168,63 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../../application.cpp" line="170"/>
+        <location filename="../../application.cpp" line="169"/>
         <source>Name of configuration profile</source>
         <translation>Όνομα διαμόρφωσης του προφίλ</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="170"/>
+        <location filename="../../application.cpp" line="169"/>
         <source>PROFILE</source>
         <translation>ΠΡΟΦΙΛ</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="173"/>
+        <location filename="../../application.cpp" line="172"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Εκτέλεση του PCManFM ως δαίμονα</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="176"/>
+        <location filename="../../application.cpp" line="175"/>
         <source>Quit PCManFM</source>
         <translation>Έξοδος του PCManFM</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="179"/>
+        <location filename="../../application.cpp" line="178"/>
         <source>Launch desktop manager</source>
         <translation>Εκτέλεση διαχειριστή της επιφάνειας εργασίας</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="182"/>
+        <location filename="../../application.cpp" line="181"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Τερματισμός του διαχειριστή της επιφάνειας εργασίας αν εκτελείται</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="185"/>
+        <location filename="../../application.cpp" line="184"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Άνοιγμα του διαλόγου προτιμήσεων της επιφάνειας εργασίας στη σελίδα με το καθορισμένο όνομα</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="185"/>
-        <location filename="../../application.cpp" line="200"/>
+        <location filename="../../application.cpp" line="184"/>
+        <location filename="../../application.cpp" line="199"/>
         <source>NAME</source>
         <translation>ΟΝΟΜΑ</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="188"/>
+        <location filename="../../application.cpp" line="187"/>
         <source>Open new window</source>
         <translation>Άνοιγμα νέου παραθύρου</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="191"/>
+        <location filename="../../application.cpp" line="190"/>
         <source>Open Find Files utility</source>
         <translation>Άνοιγμα του εργαλείου αναζήτησης αρχείων</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="194"/>
+        <location filename="../../application.cpp" line="193"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Ορισμός της ταπετσαρίας της επιφάνειας εργασίας από ΑΡΧΕΙΟ εικόνας</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="194"/>
+        <location filename="../../application.cpp" line="193"/>
         <source>FILE</source>
         <translation>ΑΡΧΕΙΟ</translation>
     </message>
@@ -1233,38 +1233,38 @@ A space is also reserved for 3 lines of text.</source>
         <translation type="vanished">Ορισμός της λειτουργίας της επιφάνειας ΛΕΙΤΟΥΡΓΙΑ=(χρώμα|τέντωμα|προσαρμογή|κέντρο|παράθεση)</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="197"/>
+        <location filename="../../application.cpp" line="196"/>
         <source>MODE</source>
         <translation>ΛΕΙΤΟΥΡΓΙΑ</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="197"/>
+        <location filename="../../application.cpp" line="196"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Ορισμός της λειτουργίας της ταπετσαρίας της επιφάνειας εργασίας. ΛΕΙΤΟΥΡΓΙΑ=(%1)</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="200"/>
+        <location filename="../../application.cpp" line="199"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Άνοιγμα του διαλόγου προτιμήσεων στη σελίδα με το καθορισμένο όνομα</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="203"/>
+        <location filename="../../application.cpp" line="202"/>
         <source>Files or directories to open</source>
         <translation>Αρχεία ή κατάλογοι προς άνοιγμα</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="203"/>
+        <location filename="../../application.cpp" line="202"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[ΑΡΧΕΙΟ1, ΑΡΧΕΙΟ2,...]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="542"/>
-        <location filename="../../application.cpp" line="547"/>
+        <location filename="../../application.cpp" line="541"/>
+        <location filename="../../application.cpp" line="546"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="547"/>
+        <location filename="../../application.cpp" line="546"/>
         <source>Terminal emulator is not set.</source>
         <translation>Δεν έχει οριστεί ο προσομοιωτής τερματικού.</translation>
     </message>
@@ -1272,12 +1272,12 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::AutoRunDialog</name>
     <message>
-        <location filename="../../autorundialog.cpp" line="45"/>
+        <location filename="../../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
         <translation>Άνοιγμα στο διαχειριστή αρχείων</translation>
     </message>
     <message>
-        <location filename="../../autorundialog.cpp" line="136"/>
+        <location filename="../../autorundialog.cpp" line="135"/>
         <source>Removable Disk</source>
         <translation>Αφαιρούμενος δίσκος</translation>
     </message>
@@ -1470,8 +1470,15 @@ A space is also reserved for 3 lines of text.</source>
             <numerusform> (%n κρυφό(ά))</numerusform>
         </translation>
     </message>
+    <message>
+        <location filename="../../tabpage.cpp" line="291"/>
+        <location filename="../../tabpage.cpp" line="468"/>
+        <location filename="../../tabpage.cpp" line="484"/>
+        <source>Link to</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="473"/>
+        <location filename="../../tabpage.cpp" line="498"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n επιλεγμένο(α) αντικείμενο(α)</numerusform>

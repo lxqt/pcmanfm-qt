@@ -1085,53 +1085,53 @@ Será reservado um espaço para 3 linhas de texto.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../../application.cpp" line="170"/>
+        <location filename="../../application.cpp" line="169"/>
         <source>Name of configuration profile</source>
         <translation>Nome do perfil de configuração</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="170"/>
+        <location filename="../../application.cpp" line="169"/>
         <source>PROFILE</source>
         <translation>Perfil</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="173"/>
+        <location filename="../../application.cpp" line="172"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Executar o PCManFM como serviço</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="176"/>
+        <location filename="../../application.cpp" line="175"/>
         <source>Quit PCManFM</source>
         <translation>Fechar o PCManFM</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="179"/>
+        <location filename="../../application.cpp" line="178"/>
         <source>Launch desktop manager</source>
         <translation>Abrir gestor da área de trabalho</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="182"/>
+        <location filename="../../application.cpp" line="181"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Desativar o gestor da área de trabalho, se em execução</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="185"/>
+        <location filename="../../application.cpp" line="184"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferências da área de trabalho na página especificada</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="185"/>
-        <location filename="../../application.cpp" line="200"/>
+        <location filename="../../application.cpp" line="184"/>
+        <location filename="../../application.cpp" line="199"/>
         <source>NAME</source>
         <translation>Nome</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="194"/>
+        <location filename="../../application.cpp" line="193"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Definir papel de parede com base em ficheiro</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="194"/>
+        <location filename="../../application.cpp" line="193"/>
         <source>FILE</source>
         <translation>Ficheiro</translation>
     </message>
@@ -1140,48 +1140,48 @@ Será reservado um espaço para 3 linhas de texto.</translation>
         <translation type="vanished">Definir modo do papel de parede. Modo =(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="197"/>
+        <location filename="../../application.cpp" line="196"/>
         <source>MODE</source>
         <translation>Modo</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="200"/>
+        <location filename="../../application.cpp" line="199"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferências na página especificada</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="188"/>
+        <location filename="../../application.cpp" line="187"/>
         <source>Open new window</source>
         <translation>Abrir nova janela</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="191"/>
+        <location filename="../../application.cpp" line="190"/>
         <source>Open Find Files utility</source>
         <translation>Abrir o utilitário &apos;Localizar ficheiros&apos;</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="197"/>
+        <location filename="../../application.cpp" line="196"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Definir o modo do papel de parede. Modo=(%1)</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="203"/>
+        <location filename="../../application.cpp" line="202"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[Ficheiro1, ficheiro2,...]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="203"/>
+        <location filename="../../application.cpp" line="202"/>
         <source>Files or directories to open</source>
         <translation>Ficheiros ou diretórios a abrir</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="542"/>
-        <location filename="../../application.cpp" line="547"/>
+        <location filename="../../application.cpp" line="541"/>
+        <location filename="../../application.cpp" line="546"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="547"/>
+        <location filename="../../application.cpp" line="546"/>
         <source>Terminal emulator is not set.</source>
         <translation>Emulador de terminal não definido.</translation>
     </message>
@@ -1189,12 +1189,12 @@ Será reservado um espaço para 3 linhas de texto.</translation>
 <context>
     <name>PCManFM::AutoRunDialog</name>
     <message>
-        <location filename="../../autorundialog.cpp" line="45"/>
+        <location filename="../../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
         <translation>Abrir no gestor de ficheiros</translation>
     </message>
     <message>
-        <location filename="../../autorundialog.cpp" line="136"/>
+        <location filename="../../autorundialog.cpp" line="135"/>
         <source>Removable Disk</source>
         <translation>Disco amovível</translation>
     </message>
@@ -1391,8 +1391,15 @@ Será reservado um espaço para 3 linhas de texto.</translation>
             <numerusform> (%n ocultos)</numerusform>
         </translation>
     </message>
+    <message>
+        <location filename="../../tabpage.cpp" line="291"/>
+        <location filename="../../tabpage.cpp" line="468"/>
+        <location filename="../../tabpage.cpp" line="484"/>
+        <source>Link to</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="473"/>
+        <location filename="../../tabpage.cpp" line="498"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n item selecionado</numerusform>
