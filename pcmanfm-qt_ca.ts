@@ -55,7 +55,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestor de fitxers PCManFM-Qt
+
+Drets d&apos;autor (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo
+sota els termes de la Llicència Pública General GNU tal com ha estat
+publicada per la Free Software Foundation; ja sigui la versió 2 de la Llicència
+o bé (si ho preferiu) qualsevol altra versió posterior.
+
+Aquest programa es distribueix amb l&apos;esperança que sigui útil, però SENSE
+CAP GARANTIA; fins i tot sense la garantia implícita de COMERCIALITZACIÓ,
+SATISFACCIÓ DE QUALITAT o ADEQUACIÓ A UN ÚS CONCRET. Per a més
+detalls vegeu la Llicència pública general de GNU.
+
+Hauríeu d&apos;haver rebut una còpia de la Llicència Pública General GNU
+juntament amb Engrampa; en cas contrari, escriviu a la Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="78"/>
@@ -101,22 +117,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Canvi de nom massiu</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Se substiturà # amb nombres, començant per:</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Canvia el nom dels fitxers seleccionats:</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom#</translation>
     </message>
 </context>
 <context>
@@ -692,17 +708,17 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Can&amp;vi de nom massiu</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Canvi de nom massiu</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <source>Close &amp;left tabs</source>
@@ -801,7 +817,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../../main-win.ui" line="644"/>
         <source>&amp;Rename</source>
-        <translation>&amp;Reanomena</translation>
+        <translation>Can&amp;via el nom</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="647"/>
@@ -1129,7 +1145,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../../desktopwindow.cpp" line="574"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Oculta els ítems de l&apos;escriptori</translation>
     </message>
     <message>
         <location filename="../../desktopwindow.cpp" line="579"/>
@@ -1693,38 +1709,38 @@ sobre de la vista de la carpeta i no sobre el plafó esquerre.</translation>
     <message>
         <location filename="../../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està canviant el nom als fitxers...</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Avorta</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Avís</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha avortat el canvi de nom.</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="92"/>
         <location filename="../../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Error</translation>
+        <translation>Error</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>No es pot canviar el nom de cap fitxer.</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut canviar el nom d&apos;alguns fitxers.</translation>
     </message>
 </context>
 </TS>
