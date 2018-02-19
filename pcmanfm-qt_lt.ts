@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="lt">
+<TS version="2.0" language="lt">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="48"/>
@@ -91,7 +91,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="vanished">PCMan failų tvarkytuvė
+        <translation>PCMan failų tvarkytuvė
 
 Autorių teisės (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
@@ -727,11 +727,11 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     </message>
     <message>
         <source>Close &amp;left tabs</source>
-        <translation type="vanished">Užverti &amp;kairiąsias korteles</translation>
+        <translation>Užverti &amp;kairiąsias korteles</translation>
     </message>
     <message>
         <source>Close &amp;right tabs</source>
-        <translation type="vanished">Užverti &amp;dešiniąsias korteles</translation>
+        <translation>Užverti &amp;dešiniąsias korteles</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="767"/>
@@ -1290,11 +1290,11 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
         <location filename="../../tabpage.cpp" line="468"/>
         <location filename="../../tabpage.cpp" line="484"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuoroda į</translation>
     </message>
     <message>
         <source>%1 item(s) selected</source>
-        <translation type="vanished">Pažymėti %1 elementai</translation>
+        <translation>Pažymėti %1 elementai</translation>
     </message>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="498"/>
