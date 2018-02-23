@@ -776,7 +776,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="636"/>
         <source>&amp;Delete</source>
-        <translation></translation>
+        <translation>删除(&amp;D)</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="639"/>
@@ -1220,7 +1220,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../../tabpage.cpp" line="468"/>
         <location filename="../../tabpage.cpp" line="484"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>链接至</translation>
     </message>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="498"/>
