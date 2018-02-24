@@ -112,22 +112,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Masseomdøbning</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># erstattes med tal begyndende med:</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Omdøb valgte filer til:</translation>
     </message>
     <message>
         <location filename="../../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Navn#</translation>
     </message>
 </context>
 <context>
@@ -324,57 +324,57 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Diasshow</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivér diasshow</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tapetbilledmappe:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="340"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Gennemse</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="347"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> time(r)</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="357"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>og</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Intervaller mindre end 5 min. ignoreres</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="373"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Interval:</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="380"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> minut(ter)</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Tapetmappe</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilfældiggør diasshowet</translation>
     </message>
     <message>
         <location filename="../../desktop-preferences.ui" line="459"/>
@@ -702,17 +702,17 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Masseomdøbning</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Masseomdøbning</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="781"/>
@@ -1131,7 +1131,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../../desktopwindow.cpp" line="574"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjul skrivebordsobjekter</translation>
     </message>
     <message>
         <location filename="../../desktopwindow.cpp" line="579"/>
@@ -1239,7 +1239,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <location filename="../../tabpage.cpp" line="468"/>
         <location filename="../../tabpage.cpp" line="484"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Link til</translation>
     </message>
     <message numerus="yes">
         <location filename="../../tabpage.cpp" line="498"/>
@@ -1689,38 +1689,38 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Omdøber filer...</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Afbryd</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Advarsel</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Omdøbning er afbrudt.</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="92"/>
         <location filename="../../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Fejl</translation>
+        <translation>Fejl</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunne ikke omdøbe nogen fil.</translation>
     </message>
     <message>
         <location filename="../../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nogle filer kunne ikke omdøbes.</translation>
     </message>
 </context>
 </TS>
