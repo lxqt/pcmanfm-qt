@@ -76,7 +76,8 @@ DesktopWindow::DesktopWindow(int screenNum):
     showWmMenu_(false),
     desktopHideItems_(false),
     screenNum_(screenNum),
-    relayoutTimer_(nullptr) {
+    relayoutTimer_(nullptr),
+    selectionTimer_(nullptr) {
 
     QDesktopWidget* desktopWidget = QApplication::desktop();
     setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
@@ -110,6 +111,8 @@ DesktopWindow::DesktopWindow(int screenNum):
         auto desktopPath = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
         model_ = Fm::CachedFolderModel::modelFromPath(desktopPath);
         folder_ = model_->folder();
+        connect(folder_.get(), &Fm::Folder::startLoading, this, &DesktopWindow::onFolderStartLoading);
+        connect(folder_.get(), &Fm::Folder::finishLoading, this, &DesktopWindow::onFolderFinishLoading);
 
         proxyModel_ = new Fm::ProxyFolderModel();
         proxyModel_->setSourceModel(model_);
@@ -171,6 +174,8 @@ DesktopWindow::~DesktopWindow() {
     listView_->viewport()->removeEventFilter(this);
     listView_->removeEventFilter(this);
 
+    disconnect(folder_.get(), nullptr, this, nullptr);
+
     if(relayoutTimer_) {
         relayoutTimer_->stop();
         delete relayoutTimer_;
@@ -186,6 +191,7 @@ DesktopWindow::~DesktopWindow() {
     }
 
     if(model_) {
+        disconnect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
         model_->unref();
     }
 }
@@ -229,9 +235,31 @@ void DesktopWindow::resizeEvent(QResizeEvent* event) {
 }
 
 void DesktopWindow::setDesktopFolder() {
+    if(folder_) {
+        // free the previous model and folder
+        if(model_) {
+            disconnect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
+            proxyModel_->setSourceModel(nullptr);
+            model_->unref(); // unref the cached model
+            model_ = nullptr;
+        }
+        disconnect(folder_.get(), nullptr, this, nullptr);
+        folder_ = nullptr;
+    }
+
     auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
     model_ = Fm::CachedFolderModel::modelFromPath(path);
+    folder_ = model_->folder();
+    connect(folder_.get(), &Fm::Folder::startLoading, this, &DesktopWindow::onFolderStartLoading);
+    connect(folder_.get(), &Fm::Folder::finishLoading, this, &DesktopWindow::onFolderFinishLoading);
     proxyModel_->setSourceModel(model_);
+    if(folder_->isLoaded()) {
+        onFolderStartLoading();
+        onFolderFinishLoading();
+    }
+    else {
+        onFolderStartLoading();
+    }
 }
 
 void DesktopWindow::setWallpaperFile(QString filename) {
@@ -718,6 +746,35 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
     queueRelayout();
 }
 
+void DesktopWindow::onFolderStartLoading() { // desktop may be reloaded
+    if(model_) {
+        disconnect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
+    }
+}
+
+void DesktopWindow::onFolderFinishLoading() {
+    QTimer::singleShot(10, [this]() { // Qt delays the UI update (as in TabPage::onFolderFinishLoading)
+        if(model_) {
+            connect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
+        }
+    });
+}
+
+void DesktopWindow::onFilesAdded(const Fm::FileInfoList files) {
+    if(static_cast<Application*>(qApp)->settings().selectNewFiles()) {
+        if(!selectionTimer_) {
+            selectFiles(files, false);
+            selectionTimer_ = new QTimer (this);
+            selectionTimer_->setSingleShot(true);
+            selectionTimer_->start(200);
+        }
+        else {
+            selectFiles(files, selectionTimer_->isActive());
+            selectionTimer_->start(200);
+        }
+    }
+}
+
 void DesktopWindow::removeBottomGap() {
     /************************************************************
      NOTE: Desktop is an area bounded from below while icons snap
@@ -727,7 +784,7 @@ void DesktopWindow::removeBottomGap() {
      ************************************************************/
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
     auto itemSize = delegate->itemSize();
-    qDebug() << "delegate:" << delegate->itemSize();
+    //qDebug() << "delegate:" << delegate->itemSize();
     QSize cellMargins = getMargins();
     int workAreaHeight = qApp->desktop()->availableGeometry(screenNum_).height()
                          - 24; // a 12-pix margin will be considered everywhere
@@ -1134,7 +1191,7 @@ static void forwardMouseEventToRoot(QMouseEvent* event) {
 bool DesktopWindow::event(QEvent* event) {
     switch(event->type()) {
     case QEvent::WinIdChange: {
-        qDebug() << "winid change:" << effectiveWinId();
+        //qDebug() << "winid change:" << effectiveWinId();
         if(effectiveWinId() == 0) {
             break;
         }

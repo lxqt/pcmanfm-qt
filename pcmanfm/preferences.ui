@@ -194,6 +194,13 @@
               </property>
              </widget>
             </item>
+            <item>
+             <widget class="QCheckBox" name="selectNewFiles">
+              <property name="text">
+               <string>Select newly created files</string>
+              </property>
+             </widget>
+            </item>
            </layout>
           </widget>
          </item>

@@ -210,6 +210,7 @@ protected Q_SLOTS:
     void onSelChanged();
     void onUiUpdated();
     void onFileSizeChanged(const QModelIndex& index);
+    void onFilesAdded(const Fm::FileInfoList files);
 
 private:
     void freeFolder();
@@ -241,6 +242,7 @@ private:
     Fm::FilePath lastFolderPath_; // last browsed folder
     bool overrideCursor_;
     FolderSettings folderSettings_;
+    QTimer* selectionTimer_;
 };
 
 }

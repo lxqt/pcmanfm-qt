@@ -220,6 +220,7 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
     ui.noUsbTrash->setChecked(settings.noUsbTrash());
     ui.confirmTrash->setChecked(settings.confirmTrash());
     ui.quickExec->setChecked(settings.quickExec());
+    ui.selectNewFiles->setChecked(settings.selectNewFiles());
 }
 
 void PreferencesDialog::initThumbnailPage(Settings& settings) {
@@ -328,6 +329,7 @@ void PreferencesDialog::applyBehaviorPage(Settings& settings) {
     settings.setNoUsbTrash(ui.noUsbTrash->isChecked());
     settings.setConfirmTrash(ui.confirmTrash->isChecked());
     settings.setQuickExec(ui.quickExec->isChecked());
+    settings.setSelectNewFiles(ui.selectNewFiles->isChecked());
 }
 
 void PreferencesDialog::applyThumbnailPage(Settings& settings) {

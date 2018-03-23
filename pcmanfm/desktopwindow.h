@@ -114,6 +114,9 @@ protected Q_SLOTS:
     void onModelSortFilterChanged();
     void onIndexesMoved(const QModelIndexList& indexes);
     void onDataChanged(const QModelIndex& topLeft, const QModelIndex& bottomRight);
+    void onFolderStartLoading();
+    void onFolderFinishLoading();
+    void onFilesAdded(const Fm::FileInfoList files);
 
     void relayoutItems();
     void onStickToCurrentPos(bool toggled);
@@ -160,6 +163,7 @@ private:
     std::unordered_map<std::string, QPoint> customItemPos_;
     QHash<QModelIndex, QString> displayNames_; // only for desktop entries and shortcuts
     QTimer* relayoutTimer_;
+    QTimer* selectionTimer_;
 };
 
 }
