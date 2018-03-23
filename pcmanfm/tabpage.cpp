@@ -59,7 +59,8 @@ TabPage::TabPage(QWidget* parent):
     proxyModel_{nullptr},
     proxyFilter_{nullptr},
     verticalLayout{nullptr},
-    overrideCursor_(false) {
+    overrideCursor_(false),
+    selectionTimer_(nullptr) {
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
 
@@ -97,8 +98,9 @@ TabPage::~TabPage() {
     if(proxyModel_) {
         delete proxyModel_;
     }
-    disconnect(folderModel_, &Fm::FolderModel::fileSizeChanged, this, &TabPage::onFileSizeChanged);
     if(folderModel_) {
+        disconnect(folderModel_, &Fm::FolderModel::fileSizeChanged, this, &TabPage::onFileSizeChanged);
+        disconnect(folderModel_, &Fm::FolderModel::filesAdded, this, &TabPage::onFilesAdded);
         folderModel_->unref();
     }
 
@@ -119,6 +121,9 @@ void TabPage::freeFolder() {
 }
 
 void TabPage::onFolderStartLoading() {
+    if(folderModel_){
+        disconnect(folderModel_, &Fm::FolderModel::filesAdded, this, &TabPage::onFilesAdded);
+    }
     if(!overrideCursor_) {
         // FIXME: sometimes FmFolder of libfm generates unpaired "start-loading" and
         // "finish-loading" signals of uncertain reasons. This should be a bug in libfm.
@@ -159,8 +164,12 @@ void TabPage::onUiUpdated() {
             folderView_->childView()->setCurrentIndex(index);
         }
     }
-    // update selection statusbar info when needed
-    connect(folderModel_, &Fm::FolderModel::fileSizeChanged, this, &TabPage::onFileSizeChanged);
+    if(folderModel_) {
+        // update selection statusbar info when needed
+        connect(folderModel_, &Fm::FolderModel::fileSizeChanged, this, &TabPage::onFileSizeChanged);
+        // get ready to select files that may be added later
+        connect(folderModel_, &Fm::FolderModel::filesAdded, this, &TabPage::onFilesAdded);
+    }
 }
 
 void TabPage::onFileSizeChanged(const QModelIndex& index) {
@@ -168,6 +177,22 @@ void TabPage::onFileSizeChanged(const QModelIndex& index) {
         QModelIndexList indexes = folderView_->selectionModel()->selectedIndexes();
         if(indexes.contains(proxyModel_->mapFromSource(index))) {
             onSelChanged();
+        }
+    }
+}
+
+// slot
+void TabPage::onFilesAdded(Fm::FileInfoList files) {
+    if(static_cast<Application*>(qApp)->settings().selectNewFiles()) {
+        if(!selectionTimer_) {
+            folderView_->selectFiles(files, false);
+            selectionTimer_ = new QTimer (this);
+            selectionTimer_->setSingleShot(true);
+            selectionTimer_->start(200);
+        }
+        else {
+            folderView_->selectFiles(files, selectionTimer_->isActive());
+            selectionTimer_->start(200);
         }
     }
 }
@@ -369,6 +394,7 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
         // free the previous model
         if(folderModel_) {
             disconnect(folderModel_, &Fm::FolderModel::fileSizeChanged, this, &TabPage::onFileSizeChanged);
+            disconnect(folderModel_, &Fm::FolderModel::filesAdded, this, &TabPage::onFilesAdded);
             proxyModel_->setSourceModel(nullptr);
             folderModel_->unref(); // unref the cached model
             folderModel_ = nullptr;

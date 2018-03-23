@@ -670,6 +670,14 @@ public:
         fm_config->quick_exec = quickExec_;
     }
 
+    bool selectNewFiles() const {
+        return selectNewFiles_;
+    }
+
+    void setSelectNewFiles(bool value) {
+        selectNewFiles_ = value;
+    }
+
     // bool thumbnailLocal_;
     // bool thumbnailMax;
 
@@ -930,6 +938,7 @@ private:
     bool noUsbTrash_; // do not trash files on usb removable devices
     bool confirmTrash_; // Confirm before moving files into "trash can"
     bool quickExec_; // Don't ask options on launch executable file
+    bool selectNewFiles_;
 
     bool showThumbnails_;
 

@@ -105,6 +105,7 @@ Settings::Settings():
     noUsbTrash_(false),
     confirmTrash_(false),
     quickExec_(false),
+    selectNewFiles_(false),
     showThumbnails_(true),
     archiver_(),
     siUnit_(false),
@@ -208,6 +209,7 @@ bool Settings::loadFile(QString filePath) {
     setNoUsbTrash(settings.value("NoUsbTrash", false).toBool());
     confirmTrash_ = settings.value("ConfirmTrash", false).toBool();
     setQuickExec(settings.value("QuickExec", false).toBool());
+    selectNewFiles_ = settings.value("SelectNewFiles", false).toBool();
     // bool thumbnailLocal_;
     // bool thumbnailMax;
     settings.endGroup();
@@ -342,6 +344,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue("NoUsbTrash", noUsbTrash_);
     settings.setValue("ConfirmTrash", confirmTrash_);
     settings.setValue("QuickExec", quickExec_);
+    settings.setValue("SelectNewFiles", selectNewFiles_);
     // bool thumbnailLocal_;
     // bool thumbnailMax;
     settings.endGroup();
