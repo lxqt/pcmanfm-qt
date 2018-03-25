@@ -404,7 +404,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     </message>
     <message>
         <source>Desktop</source>
-        <translatorcomment>not an ideal translation, see discussion in https://github.com/lxde/lxqt/issues/699</translatorcomment>
+        <translatorcomment>not an ideal translation, see discussion in https://github.com/lxqt/lxqt/issues/699</translatorcomment>
         <translation type="vanished">Schreibtisch</translation>
     </message>
     <message>
