@@ -40,7 +40,7 @@ pcmanfm-qt-0.12.0 / 2017-10-21
   * Update desktop entries and Replace fr_FR by fr
   * lxqt-rc.xml: Change default config install path
   * PCManFM-Qt: Update default wallpaper (#49)
-  * Merge pull request #48 from lxde/pcmanfm-qt-sort-order
+  * Merge pull request #48 from lxqt/pcmanfm-qt-sort-order
   * Settings Openbox updated.
   * Default key shortcuts added to lxqt-globalkeysd.
   * Use lxqt-sudo in pcmanfm-qt config file by default.
@@ -58,10 +58,10 @@ pcmanfm-qt-0.12.0 / 2017-10-21
   * Add session.conf and windowmanagers.conf.
   * Support lxqt-session and add necessary xdg autostart desktop entry files.
   * Rename dirs and replace razor with lxqt. Install lxqt.conf to /etc/xdg/lxqt and provide theme config.
-  * Properly set default wallpaper for pcmanfm-qt. Comment out openbox config handling in startlxde-qt since it's not needed.
+  * Properly set default wallpaper for pcmanfm-qt. Comment out openbox config handling in startlxqt since it's not needed.
   * Remove custom openbox config file in desktop.conf temporarily until lxsession is fixed.
   * Fix file paths, replacing razor with lxqt. * Remove Alt+F2 and Ctrl+Esc from openbox config file to avoid conflicts with lxqt-panel & lxqt-globalkeys.
-  * Add default configuration files for lxde-qt session.
+  * Add default configuration files for lxqt session.
   * Use const iterators (Fix a FTBFS in debug mode) (#483)
   * Fixed desktop items movement
   * Fixes some pedantic bugs
@@ -151,7 +151,7 @@ pcmanfm-qt-0.12.0 / 2017-10-21
   * ts-files removal (#352)
   * Fix memory leak in main window tool bar (#350)
   * Change "compact icon view" in "icon view" (#349)
-  * Merge pull request #341 from lxde/desktop_sort_settings
+  * Merge pull request #341 from lxqt/desktop_sort_settings
   * Add some tooltips to Pref dialog
   * Add setting for Desktop con size
   * Fix a few compiler warnings
@@ -302,7 +302,7 @@ split-libfm-qt / 2015-11-24
   * Port some missing config options from the gtk+ version of pcmanfm.
   * Also show hidden dirs in the directory tree when the "Show Hidden" option in the menu is turned on.
   * Fix #190 - Column layout is not always updated.
-  * Fix relative paths in command line arguments. Close lxde/pcmanfm-qt#170 - relative paths stated by xdg-open not considered.
+  * Fix relative paths in command line arguments. Close lxqt/pcmanfm-qt#170 - relative paths stated by xdg-open not considered.
   * Create New menu actions, context menu in tree side pane, #163.
   * Install SIGTERM handler to save settings when logging out, #157.
   * Store side pane mode setting, #157.
@@ -312,7 +312,7 @@ split-libfm-qt / 2015-11-24
   * Handles .desktop files translations
   * Uses LXQt lxqt_translate_ts() to handle translations
   * Add German translation of pcmanfm-qt.desktop
-  * Fix lxde/lxqt#447 - missing actions in Places' context menus
+  * Fix lxqt/lxqt#447 - missing actions in Places' context menus
   * Remove trailing whitespaces
   * polishing German translation
   * Add menu items and shortcuts for new folder and blank file, fixes #163.
@@ -330,8 +330,8 @@ split-libfm-qt / 2015-11-24
   * Fix warnings reported by cppcheck.
   * Fix warnings reported by scan-build.
   * Sort indicators in detailed view, store column and order in settings, fixes #109.
-  * Fix lxde/lxqt#512 - pcmanfm-qt: cannot delete to trash.
-  * Fix lxde/lxqt#512 - "pcmanfm-qt: cannot delete to trash" by using a safer way to check trash:/// support.
+  * Fix lxqt/lxqt#512 - pcmanfm-qt: cannot delete to trash.
+  * Fix lxqt/lxqt#512 - "pcmanfm-qt: cannot delete to trash" by using a safer way to check trash:/// support.
   * Polish translations added
   * Bumps version
   * Rearrange tab order (tabstops)
@@ -346,8 +346,8 @@ split-libfm-qt / 2015-11-24
   * Add more null checks.
   * Fix #130 - Remember width of side panel.
   * Portuguese update
-  * Add very basic "remaining time" display to the progress dialog. Fix lxde/lxqt#463 - Progress dialog of pcmanfm-qt does not show remaining time.
-  * Fix lxde/pcmanfm-qt#120 - Foucs "Rename" button when file name changed.
+  * Add very basic "remaining time" display to the progress dialog. Fix lxqt/lxqt#463 - Progress dialog of pcmanfm-qt does not show remaining time.
+  * Fix lxqt/pcmanfm-qt#120 - Foucs "Rename" button when file name changed.
   * remember maximized state
   * Remove unnecessary '\n' charactor from the translated strings.
   * Fix translations (the newly added string comes from the translation of libfm).
@@ -359,7 +359,7 @@ split-libfm-qt / 2015-11-24
   * More migration to Qt5 new signal/slot syntax for better type safety & speed.
   * Migrade to new Qt5 signal/slot syntax for better type safety and speed.
   * Fix the broken sorting option.
-  * Fix lxde/lxqt#448 - PCmanFM-QT renaming place bookmarks does nothing.
+  * Fix lxqt/lxqt#448 - PCmanFM-QT renaming place bookmarks does nothing.
   * Fix broken rememberWindowSize settings.
   * Portuguese update
   * Support linguistic sorting of file names. This fixes #105.
@@ -377,8 +377,8 @@ split-libfm-qt / 2015-11-24
   * Update Japanese translation
   * Add German translation
   * add Japanese translation
-  * Implement "UnTrash" for files in trash:/// and close lxde/lxqt#136.
-  * Handle command line URIs correctly and fix bug lxde/lxqt#414.
+  * Implement "UnTrash" for files in trash:/// and close lxqt/lxqt#136.
+  * Handle command line URIs correctly and fix bug lxqt/lxqt#414.
   * Handle command line arguments with QCommandLineParser instead of using glib. Requires Qt >= 5.2.
   * Add Russian translation
   * Drop Qt4 support in code
@@ -416,7 +416,7 @@ split-libfm-qt / 2015-11-24
   * Avoid showing the popup menu when moving desktop items.
   * Improve handling of file selection and fixing FolderView::selectAll(), which is reported in #45. Delay the handling of selectionChanged() signal to avoid too frequent UI updates.
   * Little adjustment for the grid of the folder view to decrease unnecessary margins.
-  * Use a new way to optimize the size of filename display based on current view mode and font size. This also fixes lxde/lxde-qt #198 - PCmanFM-qt incorrectly displays 256x256 Thumbnails.
+  * Use a new way to optimize the size of filename display based on current view mode and font size. This also fixes lxqt/lxqt#198 - PCmanFM-qt incorrectly displays 256x256 Thumbnails.
   * Replace the very broken QDesktopWidget with QScreen in Qt 5 when handling multihead support.
   * Fully support single click activation and auto-selection with associated options added to the preference dialog.
   * Add single click and auto-selection on hover support to Fm::FolderView.
@@ -432,7 +432,7 @@ split-libfm-qt / 2015-11-24
   * Improve handling of fallback icons. This closes bug #57.
   * Fix the mark for current history item in the popup menu of forward and backward buttons.
   * Translations are lost accidentally in a previous commit. Restore them all.
-  * Add a workaround for Qt bug 32567 which causes bug #251 of lxde/lxde-qt. Now the desktop window should monitor the change of work area correctly.
+  * Add a workaround for Qt bug 32567 which causes bug lxqt/lxqt#251. Now the desktop window should monitor the change of work area correctly.
   * Avoid ambiguity when including path.h from libfm-qt.
   * Fix a crash in Fm::PlacesModel when gvfs is not available. This closes bug #35 - Ctrl+W closes all windows.
   * Fix a memory leak and free the file info list properly when renaming files.
@@ -445,9 +445,9 @@ split-libfm-qt / 2015-11-24
   * Avoid unnecessary writes to the desktop icon config file.
   * Revert "fixed selection issue #45" This patch breaks copying files by DND in icon view mode and moving desktop icons.
   * Avoid unnecessary relayout.
-  * Fix lxde/lxde-qt #184 - cannot move icons on desktop.
+  * Fix lxqt/lxqt#184 - cannot move icons on desktop.
   * Support showing the desktop menu provided by the window manager.
-  * Use qss instead of QPalette to set the background color of ColorButton. This fixed bug #192 of lxde-qt.
+  * Use qss instead of QPalette to set the background color of ColorButton. This fixed bug lxqt/lxqt#192.
   * Adds option to remember last window size
   * Replace hard-coded version number 0x050000 with QT_VERSION_CHECK(5, 0, 0) for better readability.
   * Rename the library from libfm-qt to libfm-qt5 when built with Qt5.

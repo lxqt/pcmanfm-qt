@@ -789,7 +789,7 @@ void Application::onScreenAdded(QScreen* newScreen) {
 
 void Application::onScreenDestroyed(QObject* screenObj) {
     // NOTE by PCMan: This is a workaround for Qt 5 bug #40681.
-    // With this very dirty workaround, we can fix lxde/lxde-qt bug #204, #205, and #206.
+    // With this very dirty workaround, we can fix lxqt/lxqt bug #204, #205, and #206.
     // Qt 5 has two new regression bugs which breaks lxqt-panel in a multihead environment.
     // #40681: Regression bug: QWidget::winId() returns old value and QEvent::WinIdChange event is not emitted sometimes. (multihead setup)
     // #40791: Regression: QPlatformWindow, QWindow, and QWidget::winId() are out of sync.
