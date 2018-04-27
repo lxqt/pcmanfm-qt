@@ -92,7 +92,7 @@ MainWindow::MainWindow(Fm::FilePath path):
 
     // tabbed browsing interface
     ui.tabBar->setDocumentMode(true);
-    ui.tabBar->setTabsClosable(true);
+    ui.tabBar->setTabsClosable(settings.showTabClose());
     ui.tabBar->setElideMode(Qt::ElideRight);
     ui.tabBar->setExpanding(false);
     ui.tabBar->setMovable(true); // reorder the tabs by dragging
@@ -342,7 +342,7 @@ int MainWindow::addTabWithPage(TabPage* page, Fm::FilePath path) {
         page->chdir(path, true);
     }
     ui.tabBar->insertTab(index, page->windowTitle());
- 
+
     Settings& settings = static_cast<Application*>(qApp)->settings();
     if(!settings.alwaysShowTabs()) {
         ui.tabBar->setVisible(ui.tabBar->count() > 1);
@@ -424,7 +424,7 @@ void MainWindow::on_actionGoForward_triggered() {
             updateUIForCurrentPage();
         }
     });
-    
+
 }
 
 void MainWindow::on_actionHome_triggered() {
