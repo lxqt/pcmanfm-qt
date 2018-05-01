@@ -28,6 +28,7 @@
 #include "desktopwindow.h"
 #include <libfm-qt/sidepane.h>
 #include <libfm-qt/core/thumbnailjob.h>
+#include <libfm-qt/core/archiver.h>
 
 namespace PCManFM {
 
@@ -189,9 +190,7 @@ public:
 
     void setArchiver(QString archiver) {
         archiver_ = archiver;
-        // override libfm FmConfig
-        g_free(fm_config->archiver);
-        fm_config->archiver = g_strdup(archiver_.toLocal8Bit().constData());
+        Fm::Archiver::setDefaultArchiverByName(archiver_.toLocal8Bit().constData());
     }
 
     bool mountOnStartup() const {
