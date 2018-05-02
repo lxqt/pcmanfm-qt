@@ -8,7 +8,7 @@ set(PCMANFM_QT_VERSION_PATCH 0)
 
 set(PCMANFM_QT_VERSION ${PCMANFM_QT_VERSION_MAJOR}.${PCMANFM_QT_VERSION_MINOR}.${PCMANFM_QT_VERSION_PATCH})
 
-set(LXQTBT_MINIMUM_VERSION "0.4.1")
+set(LXQTBT_MINIMUM_VERSION "0.5.0")
 
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
@@ -23,6 +23,7 @@ message(STATUS "Building ${PROJECT_NAME} with Qt ${Qt5Core_VERSION}")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 include(GNUInstallDirs)
+include(LXQtPreventInSourceBuilds)
 include(LXQtConfigVars)
 include(LXQtTranslateTs)
 include(LXQtTranslateDesktop)
