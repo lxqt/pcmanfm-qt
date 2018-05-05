@@ -28,6 +28,7 @@
 
 #include <libfm-qt/folderview.h>
 #include <libfm-qt/core/terminal.h>
+#include <libfm-qt/core/archiver.h>
 
 namespace PCManFM {
 
@@ -117,12 +118,11 @@ void PreferencesDialog::initIconThemes(Settings& settings) {
 }
 
 void PreferencesDialog::initArchivers(Settings& settings) {
-    const GList* allArchivers = fm_archiver_get_all();
-    int i = 0;
-    for(const GList* l = allArchivers; l; l = l->next, ++i) {
-        FmArchiver* archiver = reinterpret_cast<FmArchiver*>(l->data);
-        ui.archiver->addItem(archiver->program, QString(archiver->program));
-        if(archiver->program == settings.archiver()) {
+    auto& allArchivers = Fm::Archiver::allArchivers();
+    for(int i = 0; i < int(allArchivers.size()); ++i) {
+        auto& archiver = allArchivers[i];
+        ui.archiver->addItem(archiver->program(), QString(archiver->program()));
+        if(archiver->program() == settings.archiver()) {
             ui.archiver->setCurrentIndex(i);
         }
     }
