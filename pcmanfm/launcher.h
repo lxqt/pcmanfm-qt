@@ -33,7 +33,7 @@ public:
     ~Launcher();
 
 protected:
-    virtual bool openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err);
+    bool openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folderInfos, Fm::GErrorPtr& err) override;
 
 private:
     MainWindow* mainWindow_;
