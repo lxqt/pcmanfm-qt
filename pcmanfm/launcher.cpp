@@ -37,7 +37,7 @@ Launcher::~Launcher() {
 
 }
 
-bool Launcher::openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folderInfos, Fm::GErrorPtr& err) {
+bool Launcher::openFolder(GAppLaunchContext* /*ctx*/, const Fm::FileInfoList& folderInfos, Fm::GErrorPtr& /*err*/) {
     auto fi = folderInfos[0];
     Application* app = static_cast<Application*>(qApp);
     MainWindow* mainWindow = mainWindow_;
