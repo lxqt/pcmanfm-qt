@@ -190,7 +190,8 @@
             <item>
              <widget class="QCheckBox" name="quickExec">
               <property name="text">
-               <string>Don't ask options on launch executable file</string>
+               <string>Launch executable files without prompt
+(Requires application restart to take effect)</string>
               </property>
              </widget>
             </item>
