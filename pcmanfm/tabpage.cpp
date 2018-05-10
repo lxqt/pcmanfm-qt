@@ -253,7 +253,7 @@ void TabPage::onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity sev
         if(err.code() == G_IO_ERROR_NOT_MOUNTED && severity < Fm::Job::ErrorSeverity::CRITICAL) {
             auto& path = folder_->path();
             MountOperation* op = new MountOperation(true);
-            op->mount(path);
+            op->mountEnclosingVolume(path);
             if(op->wait()) { // blocking event loop, wait for mount operation to finish.
                 // This will reload the folder, which generates a new "start-loading"
                 // signal, so we get more "start-loading" signals than "finish-loading"
