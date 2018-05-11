@@ -32,7 +32,6 @@
 #include <QStackedWidget>
 #include <QSplitter>
 #include "launcher.h"
-#include <libfm-qt/path.h>
 #include <libfm-qt/core/filepath.h>
 #include <libfm-qt/core/bookmarks.h>
 
