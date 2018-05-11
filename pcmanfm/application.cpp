@@ -42,7 +42,6 @@
 
 #include <libfm-qt/mountoperation.h>
 #include <libfm-qt/filesearchdialog.h>
-#include <libfm-qt/path.h>
 #include <libfm-qt/core/terminal.h>
 
 #include "applicationadaptor.h"
@@ -461,10 +460,8 @@ void Application::onFindFileAccepted() {
     settings_.setSearchRecursive(dlg->recursive());
     settings_.setSearchhHidden(dlg->searchhHidden());
 
-    Fm::Path uri = dlg->searchUri();
     Fm::FilePathList paths;
-    Fm::GFilePtr gf{uri.toGfile(), false};
-    paths.push_back(Fm::FilePath{gf.get(), true});
+    paths.emplace_back(dlg->searchUri());
     MainWindow* window = MainWindow::lastActive();
     Launcher(window).launchPaths(nullptr, paths);
 }

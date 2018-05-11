@@ -652,9 +652,8 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
         // Here we can't rely on ProxyFolderModel::fileInfoFromIndex() because, although rows
         // aren't removed yet, files are already removed.
         bool changed = false;
-        char* dektopPath = Fm::Path::getDesktop().toStr();
-        QString desktopDir = QString(dektopPath) + QString("/");
-        g_free(dektopPath);
+        QString desktopDir = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
+        desktopDir += '/';
         for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend();) {
             auto& name = it->first;
             if(!QFile::exists(desktopDir + QString::fromStdString(name))) {
@@ -939,10 +938,8 @@ void DesktopWindow::loadItemPositions() {
     auto grid = delegate->itemSize();
     QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
     workArea.adjust(12, 12, -12, -12);
-    char* dektopPath = Fm::Path::getDesktop().toStr();
-    QString desktopDir = QString(dektopPath) + QString("/");
-    g_free(dektopPath);
-
+    QString desktopDir = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
+    desktopDir += '/';
     std::vector<QPoint> usedPos;
     for(auto& item: customItemPos_) {
         usedPos.push_back(item.second);
