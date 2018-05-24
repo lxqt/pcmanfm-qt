@@ -189,9 +189,11 @@
             </item>
             <item>
              <widget class="QCheckBox" name="quickExec">
+              <property name="toolTip">
+               <string>Requires application restart to take effect completely</string>
+              </property>
               <property name="text">
-               <string>Launch executable files without prompt
-(Requires application restart to take effect)</string>
+               <string>Launch executable files without prompt</string>
               </property>
              </widget>
             </item>
@@ -337,8 +339,8 @@
             </item>
             <item row="2" column="0" colspan="6">
              <widget class="QCheckBox" name="showFullNames">
-              <property name="enabled">
-               <bool>false</bool>
+              <property name="toolTip">
+               <string>Requires application restart to take effect completely</string>
               </property>
               <property name="text">
                <string>Always show full file names</string>

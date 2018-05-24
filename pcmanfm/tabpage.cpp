@@ -421,10 +421,11 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     connect(folder_.get(), &Fm::Folder::unmount, this, &TabPage::onFolderUnmount);
     connect(folder_.get(), &Fm::Folder::contentChanged, this, &TabPage::onFolderContentChanged);
 
+    Settings& settings = static_cast<Application*>(qApp)->settings();
     folderModel_ = CachedFolderModel::modelFromFolder(folder_);
+    folderModel_->setShowFullName(settings.showFullNames());
 
     // set sorting, considering customized folders
-    Settings& settings = static_cast<Application*>(qApp)->settings();
     folderSettings_ = settings.loadFolderSettings(path());
     proxyModel_->sort(folderSettings_.sortColumn(), folderSettings_.sortOrder());
     proxyModel_->setFolderFirst(folderSettings_.sortFolderFirst());
