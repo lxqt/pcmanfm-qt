@@ -99,7 +99,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     // Then we paint desktop's background ourselves by using its paint event handling method.
     listView_->viewport()->setAutoFillBackground(false);
 
-    // NOTE: When XRnadR is in use, the all screens are actually combined to form a
+    // NOTE: When XRandR is in use, the all screens are actually combined to form a
     // large virtual desktop and only one DesktopWindow needs to be created and screenNum is -1.
     // In some older multihead setups, such as xinerama, every physical screen
     // is treated as a separate desktop so many instances of DesktopWindow may be created.
