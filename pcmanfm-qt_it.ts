@@ -1626,7 +1626,7 @@ sopra la vista cartella e non sopra il pannello sinistro.</translation>
     <message>
         <location filename="../../preferences.ui" line="664"/>
         <source> KB</source>
-        <translation> KB</translation>
+        <translation>&#xa0;KB</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="681"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="lt">
+<TS version="2.1" language="lt">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="48"/>
@@ -91,7 +91,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>PCMan failų tvarkytuvė
+        <translation type="vanished">PCMan failų tvarkytuvė
 
 Autorių teisės (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
@@ -727,11 +727,11 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     </message>
     <message>
         <source>Close &amp;left tabs</source>
-        <translation>Užverti &amp;kairiąsias korteles</translation>
+        <translation type="vanished">Užverti &amp;kairiąsias korteles</translation>
     </message>
     <message>
         <source>Close &amp;right tabs</source>
-        <translation>Užverti &amp;dešiniąsias korteles</translation>
+        <translation type="vanished">Užverti &amp;dešiniąsias korteles</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="767"/>
@@ -989,99 +989,99 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../../application.cpp" line="169"/>
+        <location filename="../../application.cpp" line="168"/>
         <source>Name of configuration profile</source>
         <translation>Konfigūracijos profilio pavadinimas</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="169"/>
+        <location filename="../../application.cpp" line="168"/>
         <source>PROFILE</source>
         <translation>PROFILIS</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="172"/>
+        <location filename="../../application.cpp" line="171"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Vykdyti PCManFM kaip tarnybą</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="175"/>
+        <location filename="../../application.cpp" line="174"/>
         <source>Quit PCManFM</source>
         <translation>Išeiti iš PCManFM</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="178"/>
+        <location filename="../../application.cpp" line="177"/>
         <source>Launch desktop manager</source>
         <translation>Paleisti darbalaukio tvarkytuvę</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="181"/>
+        <location filename="../../application.cpp" line="180"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Išjungti darbalaukio tvarkytuvę, jeigu ji yra vykdoma</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="184"/>
+        <location filename="../../application.cpp" line="183"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Atverti darbalaukio nuostatų dialogą nurodyto pavadinimo puslapyje</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="184"/>
-        <location filename="../../application.cpp" line="199"/>
+        <location filename="../../application.cpp" line="183"/>
+        <location filename="../../application.cpp" line="198"/>
         <source>NAME</source>
         <translation>PAVADINIMAS</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="187"/>
+        <location filename="../../application.cpp" line="186"/>
         <source>Open new window</source>
         <translation>Atverti naują langą</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="190"/>
+        <location filename="../../application.cpp" line="189"/>
         <source>Open Find Files utility</source>
         <translation>Atverti failų paieškos paslaugų programą</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="193"/>
+        <location filename="../../application.cpp" line="192"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Nustatyti darbalaukio foną iš paveikslo FAILO</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="193"/>
+        <location filename="../../application.cpp" line="192"/>
         <source>FILE</source>
         <translation>FAILAS</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="196"/>
+        <location filename="../../application.cpp" line="195"/>
         <source>MODE</source>
         <translation>VEIKSENA</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="196"/>
+        <location filename="../../application.cpp" line="195"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Nustatyti darbalaukio fono veikseną. VEIKSENA=(%1)</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="199"/>
+        <location filename="../../application.cpp" line="198"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Atverti nuostatų dialogą nurodyto pavadinimo puslapyje</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="202"/>
+        <location filename="../../application.cpp" line="201"/>
         <source>Files or directories to open</source>
         <translation>Failai ar katalogai, kuriuos atverti</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="202"/>
+        <location filename="../../application.cpp" line="201"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FAILAS1, FAILAS2,...]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="541"/>
-        <location filename="../../application.cpp" line="546"/>
+        <location filename="../../application.cpp" line="538"/>
+        <location filename="../../application.cpp" line="543"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="546"/>
+        <location filename="../../application.cpp" line="543"/>
         <source>Terminal emulator is not set.</source>
         <translation>Terminalo emuliatorius nėra nustatytas.</translation>
     </message>
@@ -1173,17 +1173,17 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../../desktopwindow.cpp" line="548"/>
+        <location filename="../../desktopwindow.cpp" line="576"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Pritvirtinti prie esamos &amp;vietos</translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="574"/>
+        <location filename="../../desktopwindow.cpp" line="602"/>
         <source>Hide Desktop Items</source>
         <translation>Slėpti darbalaukio elementus</translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="579"/>
+        <location filename="../../desktopwindow.cpp" line="607"/>
         <source>Desktop Preferences</source>
         <translation>Darbalaukio nuostatos</translation>
     </message>
@@ -1258,17 +1258,17 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../../tabpage.cpp" line="254"/>
+        <location filename="../../tabpage.cpp" line="279"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
-        <location filename="../../tabpage.cpp" line="267"/>
+        <location filename="../../tabpage.cpp" line="292"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Laisva vieta: %1 (Viso: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="284"/>
+        <location filename="../../tabpage.cpp" line="309"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n elementas</numerusform>
@@ -1277,7 +1277,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="286"/>
+        <location filename="../../tabpage.cpp" line="311"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n paslėptas)</numerusform>
@@ -1286,18 +1286,18 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../../tabpage.cpp" line="291"/>
-        <location filename="../../tabpage.cpp" line="468"/>
-        <location filename="../../tabpage.cpp" line="484"/>
+        <location filename="../../tabpage.cpp" line="316"/>
+        <location filename="../../tabpage.cpp" line="494"/>
+        <location filename="../../tabpage.cpp" line="510"/>
         <source>Link to</source>
         <translation>Nuoroda į</translation>
     </message>
     <message>
         <source>%1 item(s) selected</source>
-        <translation>Pažymėti %1 elementai</translation>
+        <translation type="vanished">Pažymėti %1 elementai</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="498"/>
+        <location filename="../../tabpage.cpp" line="524"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>Pažymėtas %n elementas</numerusform>
@@ -1343,7 +1343,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     </message>
     <message>
         <location filename="../../preferences.ui" line="50"/>
-        <location filename="../../preferences.ui" line="643"/>
+        <location filename="../../preferences.ui" line="651"/>
         <source>Thumbnail</source>
         <translation>Miniatiūros</translation>
     </message>
@@ -1358,62 +1358,73 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
         <translation>Išplėstinės</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="220"/>
+        <location filename="../../preferences.ui" line="193"/>
+        <source>Launch executable files without prompt
+(Requires application restart to take effect)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../preferences.ui" line="201"/>
+        <source>Select newly created files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../preferences.ui" line="228"/>
         <source>Icons</source>
         <translation>Piktogramos</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="252"/>
+        <location filename="../../preferences.ui" line="260"/>
         <source>Size of big icons:</source>
         <translation>Didelių piktogramų dydis:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="269"/>
+        <location filename="../../preferences.ui" line="277"/>
         <source>Size of small icons:</source>
         <translation>Mažų piktogramų dydis:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="286"/>
+        <location filename="../../preferences.ui" line="294"/>
         <source>Size of thumbnails:</source>
         <translation>Miniatiūrų dydis:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="300"/>
+        <location filename="../../preferences.ui" line="308"/>
         <source>Size of side pane icons:</source>
         <translation>Šoninio polangio piktogramų dydis:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="232"/>
+        <location filename="../../preferences.ui" line="240"/>
         <source>Icon theme:</source>
         <translation>Piktogramų tema:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="456"/>
+        <location filename="../../preferences.ui" line="464"/>
         <source>Window</source>
         <translation>Langas</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="469"/>
+        <location filename="../../preferences.ui" line="477"/>
         <source>Always show the tab bar</source>
         <translation>Visada rodyti kortelių juostą</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="487"/>
+        <location filename="../../preferences.ui" line="495"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Rodyti ant kortelių mygtuką &quot;Užverti&quot;	</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="494"/>
+        <location filename="../../preferences.ui" line="502"/>
         <source>Remember the size of the last closed window</source>
         <translation>Prisiminti paskutinio užverto lango dydį</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="501"/>
+        <location filename="../../preferences.ui" line="509"/>
         <source>Default width of new windows:</source>
         <translation>Numatytasis naujų langų plotis:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="515"/>
+        <location filename="../../preferences.ui" line="523"/>
         <source>Default height of new windows:</source>
         <translation>Numatytasis naujų langų aukštis:</translation>
     </message>
@@ -1458,12 +1469,12 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
         <translation>Perkelti ištrinamus failus į šiukšlinę, o ne ištrinti iš disko.</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="676"/>
+        <location filename="../../preferences.ui" line="684"/>
         <source>Show thumbnails of files</source>
         <translation>Rodyti failų miniatiūras</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="666"/>
+        <location filename="../../preferences.ui" line="674"/>
         <source>Only show thumbnails for local files</source>
         <translation>Rodyti miniatiūras tik vietiniams failams</translation>
     </message>
@@ -1503,83 +1514,82 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
         <translation>Patvirtinti prieš perkeliant failus į šiukšlinę</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="193"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation>Paleidžiant vykdomąjį failą, neklausti parinkčių</translation>
+        <translation type="vanished">Paleidžiant vykdomąjį failą, neklausti parinkčių</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="249"/>
-        <location filename="../../preferences.ui" line="259"/>
+        <location filename="../../preferences.ui" line="257"/>
+        <location filename="../../preferences.ui" line="267"/>
         <source>Used by Icon View</source>
         <translation>Naudojama piktogramų rodinio</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="266"/>
-        <location filename="../../preferences.ui" line="276"/>
+        <location filename="../../preferences.ui" line="274"/>
+        <location filename="../../preferences.ui" line="284"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>Naudojama glausto rodinio ir išsamaus sąrašo rodinio</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="283"/>
-        <location filename="../../preferences.ui" line="293"/>
+        <location filename="../../preferences.ui" line="291"/>
+        <location filename="../../preferences.ui" line="301"/>
         <source>Used by Thumbnail View</source>
         <translation>Naudojama miniatiūrų rodinio</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="313"/>
+        <location filename="../../preferences.ui" line="321"/>
         <source>User interface</source>
         <translation>Naudotojo sąsaja</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="326"/>
+        <location filename="../../preferences.ui" line="334"/>
         <source>Treat backup files as hidden</source>
         <translation>Žiūrėti į atsarginių kopijų failus kaip į paslėptus</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="336"/>
+        <location filename="../../preferences.ui" line="344"/>
         <source>Always show full file names</source>
         <translation>Visada rodyti pilnus failų pavadinimus</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="346"/>
+        <location filename="../../preferences.ui" line="354"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Rodyti paslėptų failų piktogramas užtamsintai</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="369"/>
+        <location filename="../../preferences.ui" line="377"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Mažiausios elemento paraštės piktogramų rodinyje:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="376"/>
+        <location filename="../../preferences.ui" line="384"/>
         <source>3 px by default.</source>
         <translation>Pagal numatymą - 3 pikseliai.</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="379"/>
-        <location filename="../../preferences.ui" line="403"/>
+        <location filename="../../preferences.ui" line="387"/>
+        <location filename="../../preferences.ui" line="411"/>
         <source> px</source>
         <translation> piks</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="392"/>
+        <location filename="../../preferences.ui" line="400"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="399"/>
+        <location filename="../../preferences.ui" line="407"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>Pagal numatymą - 3 pikseliai.
 Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="416"/>
+        <location filename="../../preferences.ui" line="424"/>
         <source>Lock</source>
         <translation>Užrakinti</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="465"/>
+        <location filename="../../preferences.ui" line="473"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Kai žymėjimas nuimtas, kortelių juosta bus
@@ -1587,7 +1597,7 @@ rodoma tik tuomet, kai bus daugiau nei
 viena kortelė.</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="476"/>
+        <location filename="../../preferences.ui" line="484"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
         <translation>Jeigu žymėjimas nuimtas, kortelių juosta bus
@@ -1595,149 +1605,149 @@ išdėstyta tik virš aplankų rodinio, ir nebus išdėstyta
 kairiajame polangyje.</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="480"/>
+        <location filename="../../preferences.ui" line="488"/>
         <source>Fullwidth tab bar</source>
         <translation>Kortelių juosta per visą plotį</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="532"/>
+        <location filename="../../preferences.ui" line="540"/>
         <source>Show in places</source>
         <translation>Rodyti &quot;Vietose&quot;</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="539"/>
+        <location filename="../../preferences.ui" line="547"/>
         <source>Home</source>
         <translation>Namai</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="552"/>
+        <location filename="../../preferences.ui" line="560"/>
         <source>Desktop</source>
         <translation>Darbalaukis</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="565"/>
+        <location filename="../../preferences.ui" line="573"/>
         <source>Trash can</source>
         <translation>Šiukšlinė</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="578"/>
+        <location filename="../../preferences.ui" line="586"/>
         <source>Computer</source>
         <translation>Kompiuteris</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="591"/>
+        <location filename="../../preferences.ui" line="599"/>
         <source>Applications</source>
         <translation>Programos</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="599"/>
+        <location filename="../../preferences.ui" line="607"/>
         <source>Devices</source>
         <translation>Įrenginiai</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="607"/>
+        <location filename="../../preferences.ui" line="615"/>
         <source>Network</source>
         <translation>Tinklas</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="649"/>
+        <location filename="../../preferences.ui" line="657"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Nekurti miniatiūrų, jei failas didesnis nei:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="656"/>
+        <location filename="../../preferences.ui" line="664"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="673"/>
+        <location filename="../../preferences.ui" line="681"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Reikalauja ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="703"/>
+        <location filename="../../preferences.ui" line="711"/>
         <source>Auto Mount</source>
         <translation>Automatinis prijungimas</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="709"/>
+        <location filename="../../preferences.ui" line="717"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Paleidus programą, automatiškai prijungti prieinamus tomus</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="716"/>
+        <location filename="../../preferences.ui" line="724"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Automatiškai prijungti keičiamąsias laikmenas, kai jos yra įdedamos</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="723"/>
+        <location filename="../../preferences.ui" line="731"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Įdėjus keičiamąją laikmeną, rodyti prieinamas parinktis</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="733"/>
+        <location filename="../../preferences.ui" line="741"/>
         <source>When removable medium unmounted:</source>
         <translation>Atjungus keičiamąją laikmeną:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="739"/>
+        <location filename="../../preferences.ui" line="747"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Užverti keičiamosios laikmenos kor&amp;telę</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="746"/>
+        <location filename="../../preferences.ui" line="754"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Pakeisti aplanką kortelėje į &amp;Namų aplanką</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="773"/>
+        <location filename="../../preferences.ui" line="781"/>
         <source>Programs</source>
         <translation>Programos</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="782"/>
+        <location filename="../../preferences.ui" line="790"/>
         <source>Terminal emulator:</source>
         <translation>Terminalo emuliatorius:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="789"/>
+        <location filename="../../preferences.ui" line="797"/>
         <source>Switch &amp;user command:</source>
         <translation>Na&amp;udotojo perjungimo komanda:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="802"/>
+        <location filename="../../preferences.ui" line="810"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Pavyzdžiai: &quot;xterm -e %s&quot; terminalui arba &quot;gksu %s&quot; naudotojo perjungimui.
 %s = komandų eilutė, kurią norite vykdyti su terminalu ar su.</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="813"/>
+        <location filename="../../preferences.ui" line="821"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>Archyvavimo programos in&amp;tegracija:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="836"/>
+        <location filename="../../preferences.ui" line="844"/>
         <source>Templates</source>
         <translation>Šablonai</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="842"/>
+        <location filename="../../preferences.ui" line="850"/>
         <source>Show only user defined templates in menu</source>
         <translation>Meniu rodyti tik naudotojo apibrėžtus šablonus</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="849"/>
+        <location filename="../../preferences.ui" line="857"/>
         <source>Show only one template for each MIME type</source>
         <translation>Kiekvienam MIME tipui rodyti tik po vieną šabloną</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="856"/>
+        <location filename="../../preferences.ui" line="864"/>
         <source>Run default application after creation from template</source>
         <translation>Sukūrus šabloną, paleisti numatytąją programą</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="319"/>
+        <location filename="../../preferences.ui" line="327"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Vietoj IEC dvejetainių priešdelių, naudoti SI dešimtainius priešdelius</translation>
     </message>

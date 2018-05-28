@@ -575,7 +575,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../../main-win.ui" line="301"/>
         <source>Go Up</source>
-        <translation>Μετάβαση πάνω</translation>
+        <translation>Μετάβαση&#xa0;πάνω</translation>
     </message>
     <message>
         <location filename="../../main-win.ui" line="304"/>
@@ -1168,63 +1168,63 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../../application.cpp" line="169"/>
+        <location filename="../../application.cpp" line="168"/>
         <source>Name of configuration profile</source>
         <translation>Όνομα διαμόρφωσης του προφίλ</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="169"/>
+        <location filename="../../application.cpp" line="168"/>
         <source>PROFILE</source>
         <translation>ΠΡΟΦΙΛ</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="172"/>
+        <location filename="../../application.cpp" line="171"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Εκτέλεση του PCManFM ως δαίμονα</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="175"/>
+        <location filename="../../application.cpp" line="174"/>
         <source>Quit PCManFM</source>
         <translation>Έξοδος του PCManFM</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="178"/>
+        <location filename="../../application.cpp" line="177"/>
         <source>Launch desktop manager</source>
         <translation>Εκτέλεση διαχειριστή της επιφάνειας εργασίας</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="181"/>
+        <location filename="../../application.cpp" line="180"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Τερματισμός του διαχειριστή της επιφάνειας εργασίας αν εκτελείται</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="184"/>
+        <location filename="../../application.cpp" line="183"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Άνοιγμα του διαλόγου προτιμήσεων της επιφάνειας εργασίας στη σελίδα με το καθορισμένο όνομα</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="184"/>
-        <location filename="../../application.cpp" line="199"/>
+        <location filename="../../application.cpp" line="183"/>
+        <location filename="../../application.cpp" line="198"/>
         <source>NAME</source>
         <translation>ΟΝΟΜΑ</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="187"/>
+        <location filename="../../application.cpp" line="186"/>
         <source>Open new window</source>
         <translation>Άνοιγμα νέου παραθύρου</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="190"/>
+        <location filename="../../application.cpp" line="189"/>
         <source>Open Find Files utility</source>
         <translation>Άνοιγμα του εργαλείου αναζήτησης αρχείων</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="193"/>
+        <location filename="../../application.cpp" line="192"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Ορισμός της ταπετσαρίας της επιφάνειας εργασίας από ΑΡΧΕΙΟ εικόνας</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="193"/>
+        <location filename="../../application.cpp" line="192"/>
         <source>FILE</source>
         <translation>ΑΡΧΕΙΟ</translation>
     </message>
@@ -1233,38 +1233,38 @@ A space is also reserved for 3 lines of text.</source>
         <translation type="vanished">Ορισμός της λειτουργίας της επιφάνειας ΛΕΙΤΟΥΡΓΙΑ=(χρώμα|τέντωμα|προσαρμογή|κέντρο|παράθεση)</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="196"/>
+        <location filename="../../application.cpp" line="195"/>
         <source>MODE</source>
         <translation>ΛΕΙΤΟΥΡΓΙΑ</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="196"/>
+        <location filename="../../application.cpp" line="195"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Ορισμός της λειτουργίας της ταπετσαρίας της επιφάνειας εργασίας. ΛΕΙΤΟΥΡΓΙΑ=(%1)</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="199"/>
+        <location filename="../../application.cpp" line="198"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Άνοιγμα του διαλόγου προτιμήσεων στη σελίδα με το καθορισμένο όνομα</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="202"/>
+        <location filename="../../application.cpp" line="201"/>
         <source>Files or directories to open</source>
         <translation>Αρχεία ή κατάλογοι προς άνοιγμα</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="202"/>
+        <location filename="../../application.cpp" line="201"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[ΑΡΧΕΙΟ1, ΑΡΧΕΙΟ2,...]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="541"/>
-        <location filename="../../application.cpp" line="546"/>
+        <location filename="../../application.cpp" line="538"/>
+        <location filename="../../application.cpp" line="543"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="546"/>
+        <location filename="../../application.cpp" line="543"/>
         <source>Terminal emulator is not set.</source>
         <translation>Δεν έχει οριστεί ο προσομοιωτής τερματικού.</translation>
     </message>
@@ -1356,17 +1356,17 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../../desktopwindow.cpp" line="548"/>
+        <location filename="../../desktopwindow.cpp" line="576"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Παραμονή στην τρέχουσα θέση</translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="574"/>
+        <location filename="../../desktopwindow.cpp" line="602"/>
         <source>Hide Desktop Items</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="579"/>
+        <location filename="../../desktopwindow.cpp" line="607"/>
         <source>Desktop Preferences</source>
         <translation>Ιδιότητες της επιφάνειας εργασίας</translation>
     </message>
@@ -1445,17 +1445,17 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../../tabpage.cpp" line="254"/>
+        <location filename="../../tabpage.cpp" line="279"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../../tabpage.cpp" line="267"/>
+        <location filename="../../tabpage.cpp" line="292"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Ελεύθερος χώρος: %1 (Σύνολο: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="284"/>
+        <location filename="../../tabpage.cpp" line="309"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n αντικείμενο(α)</numerusform>
@@ -1463,7 +1463,7 @@ A space is also reserved for 3 lines of text.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="286"/>
+        <location filename="../../tabpage.cpp" line="311"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n κρυφό(ά))</numerusform>
@@ -1471,14 +1471,14 @@ A space is also reserved for 3 lines of text.</source>
         </translation>
     </message>
     <message>
-        <location filename="../../tabpage.cpp" line="291"/>
-        <location filename="../../tabpage.cpp" line="468"/>
-        <location filename="../../tabpage.cpp" line="484"/>
+        <location filename="../../tabpage.cpp" line="316"/>
+        <location filename="../../tabpage.cpp" line="494"/>
+        <location filename="../../tabpage.cpp" line="510"/>
         <source>Link to</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="498"/>
+        <location filename="../../tabpage.cpp" line="524"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n επιλεγμένο(α) αντικείμενο(α)</numerusform>
@@ -1527,7 +1527,7 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <location filename="../../preferences.ui" line="50"/>
-        <location filename="../../preferences.ui" line="643"/>
+        <location filename="../../preferences.ui" line="651"/>
         <source>Thumbnail</source>
         <translation>Εικόνες επισκόπησης</translation>
     </message>
@@ -1542,62 +1542,73 @@ A space is also reserved for 3 lines of text.</source>
         <translation>Προηγμένα</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="220"/>
+        <location filename="../../preferences.ui" line="193"/>
+        <source>Launch executable files without prompt
+(Requires application restart to take effect)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../preferences.ui" line="201"/>
+        <source>Select newly created files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../preferences.ui" line="228"/>
         <source>Icons</source>
         <translation>Εικονίδια</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="252"/>
+        <location filename="../../preferences.ui" line="260"/>
         <source>Size of big icons:</source>
         <translation>Το μέγεθος των μεγάλων εικονιδίων:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="269"/>
+        <location filename="../../preferences.ui" line="277"/>
         <source>Size of small icons:</source>
         <translation>Το μέγεθος των μικρών εικονιδίων:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="286"/>
+        <location filename="../../preferences.ui" line="294"/>
         <source>Size of thumbnails:</source>
         <translation>Το μέγεθος των εικόνων επισκόπησης:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="300"/>
+        <location filename="../../preferences.ui" line="308"/>
         <source>Size of side pane icons:</source>
         <translation>Το μέγεθος των εικονιδίων του πλευρικού πίνακα:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="232"/>
+        <location filename="../../preferences.ui" line="240"/>
         <source>Icon theme:</source>
         <translation>Θέματα εικονιδίων:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="456"/>
+        <location filename="../../preferences.ui" line="464"/>
         <source>Window</source>
         <translation>Παράθυρο</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="469"/>
+        <location filename="../../preferences.ui" line="477"/>
         <source>Always show the tab bar</source>
         <translation>Να εμφανίζεται πάντα η γραμμή καρτελών</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="487"/>
+        <location filename="../../preferences.ui" line="495"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Εμφάνιση του κουμπιού κλεισίματος στις καρτέλες</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="494"/>
+        <location filename="../../preferences.ui" line="502"/>
         <source>Remember the size of the last closed window</source>
         <translation>Απομνημόνευση του μεγέθους του τελευταία κλεισμένου παραθύρου</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="501"/>
+        <location filename="../../preferences.ui" line="509"/>
         <source>Default width of new windows:</source>
         <translation>Πλάτος εξ ορισμού των νέων παραθύρων:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="515"/>
+        <location filename="../../preferences.ui" line="523"/>
         <source>Default height of new windows:</source>
         <translation>Ύψος εξ ορισμού των νέων παραθύρων:</translation>
     </message>
@@ -1642,12 +1653,12 @@ A space is also reserved for 3 lines of text.</source>
         <translation>Μετακίνηση των διαγραμμένων αρχείων στον κάδο των απορριμμάτων αντί τη διαγραφή τους από το δίσκο. </translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="676"/>
+        <location filename="../../preferences.ui" line="684"/>
         <source>Show thumbnails of files</source>
         <translation>Εμφάνιση εικόνων επισκόπησης των αρχείων</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="666"/>
+        <location filename="../../preferences.ui" line="674"/>
         <source>Only show thumbnails for local files</source>
         <translation>Εμφάνιση των εικόνων επισκόπησης μόνο για τα τοπικά αρχεία</translation>
     </message>
@@ -1687,239 +1698,238 @@ A space is also reserved for 3 lines of text.</source>
         <translation>Επιβεβαίωση πριν την μετακίνηση των αρχείων στον κάδο απορριμμάτων</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="193"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation>Να μην ερωτώνται ενέργειες κατά το άνοιγμα ενός εκτελέσιμου αρχείου</translation>
+        <translation type="vanished">Να μην ερωτώνται ενέργειες κατά το άνοιγμα ενός εκτελέσιμου αρχείου</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="249"/>
-        <location filename="../../preferences.ui" line="259"/>
+        <location filename="../../preferences.ui" line="257"/>
+        <location filename="../../preferences.ui" line="267"/>
         <source>Used by Icon View</source>
         <translation>Χρησιμοποιείται από την προβολή εικονιδίων</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="266"/>
-        <location filename="../../preferences.ui" line="276"/>
+        <location filename="../../preferences.ui" line="274"/>
+        <location filename="../../preferences.ui" line="284"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>Χρησιμοποιείται από την συμπαγής προβολή και την αναλυτική προβολή</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="283"/>
-        <location filename="../../preferences.ui" line="293"/>
+        <location filename="../../preferences.ui" line="291"/>
+        <location filename="../../preferences.ui" line="301"/>
         <source>Used by Thumbnail View</source>
         <translation>Χρησιμοποιείται από την προβολή εικόνων επισκόπησης</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="313"/>
+        <location filename="../../preferences.ui" line="321"/>
         <source>User interface</source>
         <translation>Περιβάλλον χρήστη</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="326"/>
+        <location filename="../../preferences.ui" line="334"/>
         <source>Treat backup files as hidden</source>
         <translation>Διαχείριση των αρχείων αντιγράφων ασφαλείας ως κρυφά</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="336"/>
+        <location filename="../../preferences.ui" line="344"/>
         <source>Always show full file names</source>
         <translation>Να εμφανίζονται πάντα τα πλήρη ονόματα των αρχείων</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="346"/>
+        <location filename="../../preferences.ui" line="354"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Εμφάνιση των εικονιδίων των κρυφών αρχείων σε σκίαση</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="369"/>
+        <location filename="../../preferences.ui" line="377"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Ελάχιστο περιθώριο αντικειμένων στην προβολή εικονιδίων:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="376"/>
+        <location filename="../../preferences.ui" line="384"/>
         <source>3 px by default.</source>
         <translation>3 εικ εξ ορισμού.</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="379"/>
-        <location filename="../../preferences.ui" line="403"/>
+        <location filename="../../preferences.ui" line="387"/>
+        <location filename="../../preferences.ui" line="411"/>
         <source> px</source>
         <translation> εικ</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="392"/>
+        <location filename="../../preferences.ui" line="400"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="399"/>
+        <location filename="../../preferences.ui" line="407"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>3 εικ εξ ορισμού.
 Επίσης δεσμεύεται μια θέση για 3 γραμμές κειμένου.</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="416"/>
+        <location filename="../../preferences.ui" line="424"/>
         <source>Lock</source>
         <translation>Κλείδωμα</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="465"/>
+        <location filename="../../preferences.ui" line="473"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Όταν δεν είναι επιλεγμένο, εμφανίζεται η γραμμή καρτελών
 μόνο αν υπάρχουν περισσότερες από μια καρτέλες.</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="476"/>
+        <location filename="../../preferences.ui" line="484"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
         <translation>Αν δεν είναι επιλεγμένο, η γραμμή καρτελών τοποθετείται
 πάνω από την προβολή των φακέλων και όχι πάνω από τον αριστερό πίνακα.</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="480"/>
+        <location filename="../../preferences.ui" line="488"/>
         <source>Fullwidth tab bar</source>
         <translation>Γραμμή καρτελών πλήρους πλάτους</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="532"/>
+        <location filename="../../preferences.ui" line="540"/>
         <source>Show in places</source>
         <translation>Εμφάνιση στις τοποθεσίες</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="539"/>
+        <location filename="../../preferences.ui" line="547"/>
         <source>Home</source>
         <translation>Προσωπικός φάκελος</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="552"/>
+        <location filename="../../preferences.ui" line="560"/>
         <source>Desktop</source>
         <translation>Επιφάνεια εργασίας</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="565"/>
+        <location filename="../../preferences.ui" line="573"/>
         <source>Trash can</source>
         <translation>Απορρίμματα</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="578"/>
+        <location filename="../../preferences.ui" line="586"/>
         <source>Computer</source>
         <translation>Υπολογιστής</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="591"/>
+        <location filename="../../preferences.ui" line="599"/>
         <source>Applications</source>
         <translation>Εφαρμογές</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="599"/>
+        <location filename="../../preferences.ui" line="607"/>
         <source>Devices</source>
         <translation>Συσκευές</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="607"/>
+        <location filename="../../preferences.ui" line="615"/>
         <source>Network</source>
         <translation>Δίκτυο</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="649"/>
+        <location filename="../../preferences.ui" line="657"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Να μην δημιουργούνται εικόνες επισκόπησης για αρχεία εικόνων που υπερβαίνουν αυτό το το μέγεθος:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="656"/>
+        <location filename="../../preferences.ui" line="664"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="673"/>
+        <location filename="../../preferences.ui" line="681"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Απαιτείται το ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="703"/>
+        <location filename="../../preferences.ui" line="711"/>
         <source>Auto Mount</source>
         <translation>Αυτόματη προσάρτηση</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="709"/>
+        <location filename="../../preferences.ui" line="717"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Αυτόματη προσάρτηση των διαθέσιμων χώρων αποθήκευσης κατά την έναρξη του προγράμματος</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="716"/>
+        <location filename="../../preferences.ui" line="724"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Αυτόματη προσάρτηση των αφαιρούμενων μέσων κατά την εισαγωγή τους</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="723"/>
+        <location filename="../../preferences.ui" line="731"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Εμφάνιση των διαθέσιμων επιλογών των αφαιρούμενων μέσων κατά την εισαγωγή τους</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="733"/>
+        <location filename="../../preferences.ui" line="741"/>
         <source>When removable medium unmounted:</source>
         <translation>Κατά την αποπροσάρτηση ενός αφαιρουμένου μέσου:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="739"/>
+        <location filename="../../preferences.ui" line="747"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Κλείσιμο της καρ&amp;τέλας που περιέχει το αφαιρούμενο μέσο</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="746"/>
+        <location filename="../../preferences.ui" line="754"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Α&amp;λλαγή του φακέλου της καρτέλα στον προσωπικό κατάλογο</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="773"/>
+        <location filename="../../preferences.ui" line="781"/>
         <source>Programs</source>
         <translation>Προγράμματα</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="782"/>
+        <location filename="../../preferences.ui" line="790"/>
         <source>Terminal emulator:</source>
         <translation>Προσομοιωτής τερματικού:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="789"/>
+        <location filename="../../preferences.ui" line="797"/>
         <source>Switch &amp;user command:</source>
         <translation>Εντολή εναλλαγής &amp;χρήστη:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="802"/>
+        <location filename="../../preferences.ui" line="810"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Παραδείγματα: &quot;xterm -e %s&quot; για το τερματικό ή &quot;gksu %s&quot; για την αλλαγή χρήστη.
 %s = η γραμμή εντολών που θέλετε να εκτελέσετε μέσω του τερματικού ή της su.</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="813"/>
+        <location filename="../../preferences.ui" line="821"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>Ενσωμάτωση αρ&amp;χειοθέτησης:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="836"/>
+        <location filename="../../preferences.ui" line="844"/>
         <source>Templates</source>
         <translation>Πρότυπα</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="842"/>
+        <location filename="../../preferences.ui" line="850"/>
         <source>Show only user defined templates in menu</source>
         <translation>Εμφάνιση στο μενού μόνο των πρότυπων που έχουν καθοριστεί από τον χρήστη</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="849"/>
+        <location filename="../../preferences.ui" line="857"/>
         <source>Show only one template for each MIME type</source>
         <translation>Εμφάνιση μόνο ενός πρότυπου για έκαστον τύπο MIME</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="856"/>
+        <location filename="../../preferences.ui" line="864"/>
         <source>Run default application after creation from template</source>
         <translation>Εκτέλεση της εξ ορισμού εφαρμογής μετά τη δημιουργία από το πρότυπο</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="319"/>
+        <location filename="../../preferences.ui" line="327"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Χρήση προθεμάτων δεκαδικών SI αντί για δυαδικά προθέματα IEC</translation>
     </message>

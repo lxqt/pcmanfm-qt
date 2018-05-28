@@ -24,8 +24,12 @@
     </message>
     <message>
         <location filename="../../about.ui" line="58"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;httpw://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../about.ui" line="109"/>
@@ -70,19 +74,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
 
-　このプログラムはフリーソフトウェアです。
+&#x3000;このプログラムはフリーソフトウェアです。
 あなたはこれを、フリーソフトウェア財団によって発行された
 GNU 一般公衆利用許諾契約書(バージョン2か、希望によっては
 それ以降のバージョンのうちどれか)の定める条件の下で
 再頒布または改変することができます。
 
-　このプログラムは有用であることを願って頒布されますが、
+&#x3000;このプログラムは有用であることを願って頒布されますが、
 *全くの無保証* です。
 商業可能性の保証や特定の目的への適合性は、
 言外に示されたものも含め全く存在しません。
 詳しくはGNU 一般公衆利用許諾契約書をご覧ください。
 
-　あなたはこのプログラムとともに、
+&#x3000;あなたはこのプログラムとともに、
 GNU 一般公衆利用許諾契約書の複製物を1部
 受け取ったはずです。もし受け取っていなければ、
 フリーソフトウェア財団まで請求してください。
@@ -129,19 +133,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
 
-　このプログラムはフリーソフトウェアです。
+&#x3000;このプログラムはフリーソフトウェアです。
 あなたはこれを、フリーソフトウェア財団によって発行された
 GNU 一般公衆利用許諾契約書(バージョン2か、希望によっては
 それ以降のバージョンのうちどれか)の定める条件の下で
 再頒布または改変することができます。
 
-　このプログラムは有用であることを願って頒布されますが、
+&#x3000;このプログラムは有用であることを願って頒布されますが、
 *全くの無保証* です。
 商業可能性の保証や特定の目的への適合性は、
 言外に示されたものも含め全く存在しません。
 詳しくはGNU 一般公衆利用許諾契約書をご覧ください。
 
-　あなたはこのプログラムとともに、
+&#x3000;あなたはこのプログラムとともに、
 GNU 一般公衆利用許諾契約書の複製物を1部
 受け取ったはずです。もし受け取っていなければ、
 フリーソフトウェア財団まで請求してください。
@@ -1059,53 +1063,53 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../../application.cpp" line="169"/>
+        <location filename="../../application.cpp" line="168"/>
         <source>Name of configuration profile</source>
         <translation>設定プロファイルの名前</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="169"/>
+        <location filename="../../application.cpp" line="168"/>
         <source>PROFILE</source>
         <translation>PROFILE</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="172"/>
+        <location filename="../../application.cpp" line="171"/>
         <source>Run PCManFM as a daemon</source>
         <translation>PCManFMをデーモンとして実行</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="175"/>
+        <location filename="../../application.cpp" line="174"/>
         <source>Quit PCManFM</source>
         <translation>PCManFMを終了</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="178"/>
+        <location filename="../../application.cpp" line="177"/>
         <source>Launch desktop manager</source>
         <translation>デスクトップマネージャーを起動</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="181"/>
+        <location filename="../../application.cpp" line="180"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>実行中のデスクトップマネージャーを終了</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="184"/>
+        <location filename="../../application.cpp" line="183"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>特定の名前のページ上でデスクトップ設定ダイアログを開く</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="184"/>
-        <location filename="../../application.cpp" line="199"/>
+        <location filename="../../application.cpp" line="183"/>
+        <location filename="../../application.cpp" line="198"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="193"/>
+        <location filename="../../application.cpp" line="192"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>画像ファイルからデスクトップの壁紙を設定</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="193"/>
+        <location filename="../../application.cpp" line="192"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
@@ -1114,48 +1118,48 @@ A space is also reserved for 3 lines of text.</source>
         <translation type="vanished">デスクトップの壁紙のモードを設定する。MODE=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="196"/>
+        <location filename="../../application.cpp" line="195"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="199"/>
+        <location filename="../../application.cpp" line="198"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>特定の名前のページで設定ダイアログを開く</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="187"/>
+        <location filename="../../application.cpp" line="186"/>
         <source>Open new window</source>
         <translation>新しいウインドウを開く</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="190"/>
+        <location filename="../../application.cpp" line="189"/>
         <source>Open Find Files utility</source>
         <translation>ファイル検索ユーティリティーを開く</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="196"/>
+        <location filename="../../application.cpp" line="195"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>デスクトップ壁紙のモードの設定。MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="202"/>
+        <location filename="../../application.cpp" line="201"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="202"/>
+        <location filename="../../application.cpp" line="201"/>
         <source>Files or directories to open</source>
         <translation>開くファイルまたはディレクトリー</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="541"/>
-        <location filename="../../application.cpp" line="546"/>
+        <location filename="../../application.cpp" line="538"/>
+        <location filename="../../application.cpp" line="543"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../../application.cpp" line="546"/>
+        <location filename="../../application.cpp" line="543"/>
         <source>Terminal emulator is not set.</source>
         <translation>端末エミュレーターを未設定です。</translation>
     </message>
@@ -1247,17 +1251,17 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../../desktopwindow.cpp" line="548"/>
+        <location filename="../../desktopwindow.cpp" line="576"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>現在の場所に固定(&amp;k)</translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="574"/>
+        <location filename="../../desktopwindow.cpp" line="602"/>
         <source>Hide Desktop Items</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../desktopwindow.cpp" line="579"/>
+        <location filename="../../desktopwindow.cpp" line="607"/>
         <source>Desktop Preferences</source>
         <translation>デスクトップ設定</translation>
     </message>
@@ -1340,38 +1344,38 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../../tabpage.cpp" line="254"/>
+        <location filename="../../tabpage.cpp" line="279"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../../tabpage.cpp" line="267"/>
+        <location filename="../../tabpage.cpp" line="292"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>空き領域: %1 (全体: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="284"/>
+        <location filename="../../tabpage.cpp" line="309"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n 個のアイテム</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="286"/>
+        <location filename="../../tabpage.cpp" line="311"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n 個の隠しアイテム)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../../tabpage.cpp" line="291"/>
-        <location filename="../../tabpage.cpp" line="468"/>
-        <location filename="../../tabpage.cpp" line="484"/>
+        <location filename="../../tabpage.cpp" line="316"/>
+        <location filename="../../tabpage.cpp" line="494"/>
+        <location filename="../../tabpage.cpp" line="510"/>
         <source>Link to</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../../tabpage.cpp" line="498"/>
+        <location filename="../../tabpage.cpp" line="524"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n アイテムが選択されました</numerusform>
@@ -1424,7 +1428,7 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <location filename="../../preferences.ui" line="50"/>
-        <location filename="../../preferences.ui" line="643"/>
+        <location filename="../../preferences.ui" line="651"/>
         <source>Thumbnail</source>
         <translation>サムネイル</translation>
     </message>
@@ -1469,67 +1473,66 @@ A space is also reserved for 3 lines of text.</source>
         <translation>ゴミ箱に入れる前に確認する</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="193"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation>実行ファイルを作動させる際にオプションを尋ねない</translation>
+        <translation type="vanished">実行ファイルを作動させる際にオプションを尋ねない</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="220"/>
+        <location filename="../../preferences.ui" line="228"/>
         <source>Icons</source>
         <translation>アイコン</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="252"/>
+        <location filename="../../preferences.ui" line="260"/>
         <source>Size of big icons:</source>
         <translation>大きいアイコンの大きさ:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="269"/>
+        <location filename="../../preferences.ui" line="277"/>
         <source>Size of small icons:</source>
         <translation>小さいアイコンの大きさ:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="286"/>
+        <location filename="../../preferences.ui" line="294"/>
         <source>Size of thumbnails:</source>
         <translation>サムネイルの大きさ:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="300"/>
+        <location filename="../../preferences.ui" line="308"/>
         <source>Size of side pane icons:</source>
         <translation>サイドペインのアイコンの大きさ</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="232"/>
+        <location filename="../../preferences.ui" line="240"/>
         <source>Icon theme:</source>
         <translation>アイコンテーマ:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="456"/>
+        <location filename="../../preferences.ui" line="464"/>
         <source>Window</source>
         <translation>ウインドウ</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="501"/>
+        <location filename="../../preferences.ui" line="509"/>
         <source>Default width of new windows:</source>
         <translation>新しいウインドウのデフォルト幅</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="515"/>
+        <location filename="../../preferences.ui" line="523"/>
         <source>Default height of new windows:</source>
         <translation>新しいウインドウのデフォルトの高さ</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="469"/>
+        <location filename="../../preferences.ui" line="477"/>
         <source>Always show the tab bar</source>
         <translation>タブバーを常に表示</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="487"/>
+        <location filename="../../preferences.ui" line="495"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>閉じるボタンをタブに表示</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="494"/>
+        <location filename="../../preferences.ui" line="502"/>
         <source>Remember the size of the last closed window</source>
         <translation>直前に閉じたウインドウのサイズを記憶</translation>
     </message>
@@ -1574,190 +1577,201 @@ A space is also reserved for 3 lines of text.</source>
         <translation>ディスクから削除せずに&quot;ゴミ箱&quot;へ入れる。</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="249"/>
-        <location filename="../../preferences.ui" line="259"/>
+        <location filename="../../preferences.ui" line="193"/>
+        <source>Launch executable files without prompt
+(Requires application restart to take effect)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../preferences.ui" line="201"/>
+        <source>Select newly created files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../preferences.ui" line="257"/>
+        <location filename="../../preferences.ui" line="267"/>
         <source>Used by Icon View</source>
         <translation>アイコン表示を使用</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="266"/>
-        <location filename="../../preferences.ui" line="276"/>
+        <location filename="../../preferences.ui" line="274"/>
+        <location filename="../../preferences.ui" line="284"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>コンパクト表示及び詳細リスト表示の際に使用</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="283"/>
-        <location filename="../../preferences.ui" line="293"/>
+        <location filename="../../preferences.ui" line="291"/>
+        <location filename="../../preferences.ui" line="301"/>
         <source>Used by Thumbnail View</source>
         <translation>サムネイル表示を使用</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="313"/>
+        <location filename="../../preferences.ui" line="321"/>
         <source>User interface</source>
         <translation>ユーザーインターフェース</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="326"/>
+        <location filename="../../preferences.ui" line="334"/>
         <source>Treat backup files as hidden</source>
         <translation>バックアップガイルを隠しファイルと同様に扱う</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="336"/>
+        <location filename="../../preferences.ui" line="344"/>
         <source>Always show full file names</source>
         <translation>常にファイル名をフルに表示する</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="346"/>
+        <location filename="../../preferences.ui" line="354"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>隠しファイルのアイコンに影をつける</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="369"/>
+        <location filename="../../preferences.ui" line="377"/>
         <source>Minimum item margins in icon view:</source>
         <translation>アイコン表示における最小のアイテムの余白:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="376"/>
+        <location filename="../../preferences.ui" line="384"/>
         <source>3 px by default.</source>
         <translation>既定で 3 px。</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="379"/>
-        <location filename="../../preferences.ui" line="403"/>
+        <location filename="../../preferences.ui" line="387"/>
+        <location filename="../../preferences.ui" line="411"/>
         <source> px</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="392"/>
+        <location filename="../../preferences.ui" line="400"/>
         <source>x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="399"/>
+        <location filename="../../preferences.ui" line="407"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation type="unfinished">既定では1 px。
 また3行分のテキストのため空白が確保されます。 {3 ?} {3 ?}</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="416"/>
+        <location filename="../../preferences.ui" line="424"/>
         <source>Lock</source>
         <translation>ロック</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="465"/>
+        <location filename="../../preferences.ui" line="473"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="476"/>
+        <location filename="../../preferences.ui" line="484"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="480"/>
+        <location filename="../../preferences.ui" line="488"/>
         <source>Fullwidth tab bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="532"/>
+        <location filename="../../preferences.ui" line="540"/>
         <source>Show in places</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="539"/>
+        <location filename="../../preferences.ui" line="547"/>
         <source>Home</source>
         <translation type="unfinished">ホーム</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="552"/>
+        <location filename="../../preferences.ui" line="560"/>
         <source>Desktop</source>
         <translation type="unfinished">デスクトップ</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="565"/>
+        <location filename="../../preferences.ui" line="573"/>
         <source>Trash can</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="578"/>
+        <location filename="../../preferences.ui" line="586"/>
         <source>Computer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="591"/>
+        <location filename="../../preferences.ui" line="599"/>
         <source>Applications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="599"/>
+        <location filename="../../preferences.ui" line="607"/>
         <source>Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="607"/>
+        <location filename="../../preferences.ui" line="615"/>
         <source>Network</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="673"/>
+        <location filename="../../preferences.ui" line="681"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="676"/>
+        <location filename="../../preferences.ui" line="684"/>
         <source>Show thumbnails of files</source>
         <translation>ファイルのサムネイルを表示</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="836"/>
+        <location filename="../../preferences.ui" line="844"/>
         <source>Templates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="842"/>
+        <location filename="../../preferences.ui" line="850"/>
         <source>Show only user defined templates in menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="849"/>
+        <location filename="../../preferences.ui" line="857"/>
         <source>Show only one template for each MIME type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="856"/>
+        <location filename="../../preferences.ui" line="864"/>
         <source>Run default application after creation from template</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="666"/>
+        <location filename="../../preferences.ui" line="674"/>
         <source>Only show thumbnails for local files</source>
         <translation>ローカルファイルのみサムネイル表示</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="649"/>
+        <location filename="../../preferences.ui" line="657"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>次のサイズを超える画像ファイルのサムネイルを生成しない:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="656"/>
+        <location filename="../../preferences.ui" line="664"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="733"/>
+        <location filename="../../preferences.ui" line="741"/>
         <source>When removable medium unmounted:</source>
         <translation>リムーバブルメディアもアンマウントする際に:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="789"/>
+        <location filename="../../preferences.ui" line="797"/>
         <source>Switch &amp;user command:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="813"/>
+        <location filename="../../preferences.ui" line="821"/>
         <source>Archiver in&amp;tegration:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1770,7 +1784,7 @@ above the folder-view and not above the left pane.</source>
         <translation type="vanished">そのタブのフォルダーをホームフォルダーに移動</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="782"/>
+        <location filename="../../preferences.ui" line="790"/>
         <source>Terminal emulator:</source>
         <translation>端末エミュレーター:</translation>
     </message>
@@ -1779,37 +1793,37 @@ above the folder-view and not above the left pane.</source>
         <translation type="vanished">次のサイズ(KB)を超えるファイルのサムネイルを生成しない:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="703"/>
+        <location filename="../../preferences.ui" line="711"/>
         <source>Auto Mount</source>
         <translation>自動マウント</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="709"/>
+        <location filename="../../preferences.ui" line="717"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>プログラム開始時にマウント可能なボリュームをマウントする</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="716"/>
+        <location filename="../../preferences.ui" line="724"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>リムーバブルメディアが接続された際に自動的にマウントする</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="723"/>
+        <location filename="../../preferences.ui" line="731"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>リムーバブルメディアが接続された際に、可能な処理を表示する</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="739"/>
+        <location filename="../../preferences.ui" line="747"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="746"/>
+        <location filename="../../preferences.ui" line="754"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="773"/>
+        <location filename="../../preferences.ui" line="781"/>
         <source>Programs</source>
         <translation>プログラム</translation>
     </message>
@@ -1822,7 +1836,7 @@ above the folder-view and not above the left pane.</source>
         <translation type="vanished">ユーザーを切り替えるためのコマンド</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="802"/>
+        <location filename="../../preferences.ui" line="810"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>例: 端末に &quot;xterm -e %s&quot; 、ユーザー切替に &quot;gksu %s&quot;
@@ -1837,7 +1851,7 @@ above the folder-view and not above the left pane.</source>
         <translation type="vanished">プログラムを実行する端末エミュレーターのコマンド:</translation>
     </message>
     <message>
-        <location filename="../../preferences.ui" line="319"/>
+        <location filename="../../preferences.ui" line="327"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>IEC二進接頭辞の代わりに、SI十進接頭辞を用いる</translation>
     </message>
