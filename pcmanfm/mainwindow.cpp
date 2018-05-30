@@ -1386,15 +1386,6 @@ void MainWindow::updateFromSettings(Settings& settings) {
     }
 }
 
-static const char* su_cmd_subst(char /*opt*/, gpointer user_data) {
-    return (const char*)user_data;
-}
-
-static FmAppCommandParseOption su_cmd_opts[] = {
-    { 's', su_cmd_subst },
-    { 0, nullptr }
-};
-
 void MainWindow::on_actionOpenAsRoot_triggered() {
     TabPage* page = currentPage();
 
@@ -1406,18 +1397,21 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
             // run the su command
             // FIXME: it's better to get the filename of the current process rather than hard-code pcmanfm-qt here.
             QByteArray suCommand = settings.suCommand().toLocal8Bit();
-            char* cmd = nullptr;
             QByteArray programCommand = app->applicationFilePath().toLocal8Bit();
             programCommand += " %U";
 
-            if(fm_app_command_parse(suCommand.constData(), su_cmd_opts, &cmd, gpointer(programCommand.constData())) == 0) {
+            // if %s exists in the su command, substitute it with the program
+            int substPos = suCommand.indexOf("%s");
+            if(substPos != -1) {
+                // replace %s with program
+                suCommand.replace(substPos, 2, programCommand);
+            }
+            else {
                 /* no %s found so just append to it */
-                g_free(cmd);
-                cmd = g_strconcat(suCommand.constData(), programCommand.constData(), nullptr);
+                suCommand += programCommand;
             }
 
-            Fm::GAppInfoPtr appInfo{g_app_info_create_from_commandline(cmd, nullptr, GAppInfoCreateFlags(0), nullptr), false};
-            g_free(cmd);
+            Fm::GAppInfoPtr appInfo{g_app_info_create_from_commandline(suCommand.constData(), nullptr, GAppInfoCreateFlags(0), nullptr), false};
 
             if(appInfo) {
                 auto cwd = page->path();
