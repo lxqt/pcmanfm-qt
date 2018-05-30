@@ -26,7 +26,7 @@
 #include <QApplication>
 #include "desktopwindow.h"
 #include <libfm-qt/utilities.h>
-#include <libfm-qt/folderconfig.h>
+#include <libfm-qt/core/folderconfig.h>
 #include <QStandardPaths>
 
 namespace PCManFM {
@@ -730,17 +730,17 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
             g_free(str);
         }
 
-        gboolean show_hidden;
+        bool show_hidden;
         if(cfg.getBoolean("ShowHidden", &show_hidden)) {
             settings.setShowHidden(show_hidden);
         }
 
-        gboolean folder_first;
+        bool folder_first;
         if(cfg.getBoolean("SortFolderFirst", &folder_first)) {
             settings.setSortFolderFirst(folder_first);
         }
 
-        gboolean case_sensitive;
+        bool case_sensitive;
         if(cfg.getBoolean("SortCaseSensitive", &case_sensitive)) {
             settings.setSortCaseSensitive(case_sensitive);
         }

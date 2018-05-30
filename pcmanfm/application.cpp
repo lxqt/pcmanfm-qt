@@ -43,6 +43,8 @@
 #include <libfm-qt/mountoperation.h>
 #include <libfm-qt/filesearchdialog.h>
 #include <libfm-qt/core/terminal.h>
+#include <libfm-qt/core/bookmarks.h>
+#include <libfm-qt/core/folderconfig.h>
 
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
@@ -101,14 +103,6 @@ Application::Application(int& argc, char** argv):
         connect(this, &Application::aboutToQuit, this, &Application::onAboutToQuit);
         // aboutToQuit() is not signalled on SIGTERM, install signal handler
         installSigtermHandler();
-        settings_.load(profileName_);
-
-        // decrease the cache size to reduce memory usage
-        QPixmapCache::setCacheLimit(2048);
-
-        if(settings_.useFallbackIconTheme()) {
-            QIcon::setThemeName(settings_.fallbackIconThemeName());
-        }
 
         // Check if LXQt Session is running. LXQt has it's own Desktop Folder
         // editor. We just hide our editor when LXQt is running.
@@ -212,8 +206,19 @@ bool Application::parseCommandLineArgs() {
             profileName_ = parser.value(profileOption);
         }
 
-        // load settings
+        // load app config
         settings_.load(profileName_);
+
+        // init per-folder config
+        QString perFolderConfigFile = settings_.profileDir(profileName_) + "/dir-settings.conf";
+        Fm::FolderConfig::init(perFolderConfigFile.toLocal8Bit().constData());
+
+        // decrease the cache size to reduce memory usage
+        QPixmapCache::setCacheLimit(2048);
+
+        if(settings_.useFallbackIconTheme()) {
+            QIcon::setThemeName(settings_.fallbackIconThemeName());
+        }
 
         // desktop icon management
         if(parser.isSet(desktopOption)) {
@@ -703,9 +708,7 @@ void Application::updateDesktopsFromSettings(bool changeSlide) {
 
 void Application::editBookmarks() {
     if(!editBookmarksialog_) {
-        FmBookmarks* bookmarks = fm_bookmarks_dup();
-        editBookmarksialog_ = new Fm::EditBookmarksDialog(bookmarks);
-        g_object_unref(bookmarks);
+        editBookmarksialog_ = new Fm::EditBookmarksDialog(Fm::Bookmarks::globalInstance());
     }
     editBookmarksialog_.data()->show();
 }
