@@ -1,4 +1,3 @@
-#include <libfm/fm.h>
 #include "application.h"
 #include <libfm-qt/libfmqt.h>
 
