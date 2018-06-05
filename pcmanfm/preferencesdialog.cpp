@@ -167,9 +167,6 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
 
     ui.showFullNames->setChecked(settings.showFullNames());
     ui.shadowHidden->setChecked(settings.shadowHidden());
-
-    // FIXME: Hide options that we don't support yet.
-    ui.shadowHidden->hide();
 }
 
 void PreferencesDialog::initUiPage(Settings& settings) {
