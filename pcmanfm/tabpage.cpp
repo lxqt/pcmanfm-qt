@@ -76,6 +76,7 @@ TabPage::TabPage(QWidget* parent):
 
     folderView_ = new View(settings.viewMode(), this);
     folderView_->setMargins(settings.folderViewCellMargins());
+    folderView_->setShadowHidden(settings.shadowHidden());
     // newView->setColumnWidth(Fm::FolderModel::ColumnName, 200);
     connect(folderView_, &View::openDirRequested, this, &TabPage::openDirRequested);
     connect(folderView_, &View::selChanged, this, &TabPage::onSelChanged);

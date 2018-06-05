@@ -108,6 +108,8 @@ DesktopWindow::DesktopWindow(int screenNum):
         loadItemPositions();
         Settings& settings = static_cast<Application* >(qApp)->settings();
 
+        setShadowHidden(settings.shadowHidden());
+
         auto desktopPath = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
         model_ = Fm::CachedFolderModel::modelFromPath(desktopPath);
         folder_ = model_->folder();
