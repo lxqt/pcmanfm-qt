@@ -23,7 +23,6 @@
 
 #include <QWidget>
 #include <QVBoxLayout>
-#include <libfm/fm.h>
 #include <libfm-qt/browsehistory.h>
 #include "view.h"
 #include "settings.h"

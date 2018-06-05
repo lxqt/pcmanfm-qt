@@ -26,7 +26,6 @@
 #include <QSortFilterProxyModel>
 #include <QLineEdit>
 #include <QTabWidget>
-#include <libfm/fm.h>
 #include <QMessageBox>
 #include <QTabBar>
 #include <QStackedWidget>
