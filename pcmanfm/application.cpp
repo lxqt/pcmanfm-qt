@@ -475,7 +475,7 @@ void Application::onConnectToServerAccepted() {
     ConnectServerDialog* dlg = static_cast<ConnectServerDialog*>(sender());
     QString uri = dlg->uriText();
     Fm::FilePathList paths;
-    paths.push_back(Fm::FilePath::fromDisplayName(uri.toUtf8().constData()));
+    paths.push_back(Fm::FilePath::fromUri(uri.toUtf8().constData()));
     MainWindow* window = MainWindow::lastActive();
     Launcher(window).launchPaths(nullptr, paths);
 }
