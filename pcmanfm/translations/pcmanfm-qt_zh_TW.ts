@@ -440,7 +440,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="337"/>
         <source>Go</source>
-        <translation>到</translation>
+        <translation>前往</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="346"/>
@@ -1344,7 +1344,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="240"/>
         <source>Icon theme:</source>
-        <translation>圖示佈景主題:</translation>
+        <translation>Icon 主題</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="464"/>
