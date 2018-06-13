@@ -1309,12 +1309,13 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
         <location filename="../preferences.ui" line="193"/>
         <source>Launch executable files without prompt
 (Requires application restart to take effect)</source>
-        <translation type="unfinished"></translation>
+        <translation>Paleisti vykdomuosius failus neklausiant
+(Tam, kad įsigaliotų, reikia paleisti programą iš naujo)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="201"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasirinkti naujai sukurtus failus</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="228"/>
