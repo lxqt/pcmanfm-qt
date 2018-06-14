@@ -18,7 +18,9 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation></translation>
+        <translation>程式：
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -161,7 +163,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation></translation>
+        <translation>形成</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -279,7 +281,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation>預設 3 像素</translation>
+        <translation>預設 3 像素。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="241"/>
@@ -296,8 +298,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>預設 1 像素
-還會額外保留三行文字高度的空間</translation>
+        <translation>預設 1 像素。
+還會額外保留三行文字高度的空間。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="278"/>
@@ -861,17 +863,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Folder</source>
-        <translation></translation>
+        <translation>資料夾 (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="736"/>
         <source>&amp;Blank File</source>
-        <translation></translation>
+        <translation>空白檔案 (&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="744"/>
         <source>&amp;Find Files</source>
-        <translation></translation>
+        <translation>尋找檔案 (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="747"/>
@@ -925,7 +927,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="162"/>
         <source>Name of configuration profile</source>
-        <translation></translation>
+        <translation>配置文件名稱</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="162"/>
@@ -1017,7 +1019,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="548"/>
         <source>Terminal emulator is not set.</source>
-        <translation>終端機模擬器尚未設定</translation>
+        <translation>終端機模擬器尚未設定。</translation>
     </message>
 </context>
 <context>
@@ -1053,7 +1055,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation></translation>
+        <translation>安全 WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1163,7 +1165,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1437"/>
         <source>Switch user command is not set.</source>
-        <translation>切換使用者指令尚未設定</translation>
+        <translation>切換使用者指令尚未設定。</translation>
     </message>
 </context>
 <context>
@@ -1354,12 +1356,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="509"/>
         <source>Default width of new windows:</source>
-        <translation>新視窗的預設寬度</translation>
+        <translation>新視窗的預設寬度：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="523"/>
         <source>Default height of new windows:</source>
-        <translation>新視窗的預設高度</translation>
+        <translation>新視窗的預設高度：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="477"/>
@@ -1414,7 +1416,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>將檔案移動到垃圾桶，而不直接刪除</translation>
+        <translation>將檔案移動到垃圾桶，而不直接刪除。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
@@ -1469,18 +1471,18 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="377"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>圖示檢視項目邊緣留空</translation>
+        <translation>圖示檢視項目邊緣留空：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="384"/>
         <source>3 px by default.</source>
-        <translation>預設 3 像素</translation>
+        <translation>預設 3 像素。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="387"/>
         <location filename="../preferences.ui" line="411"/>
         <source> px</source>
-        <translation> 像素 </translation>
+        <translation> 像素</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="400"/>
@@ -1491,7 +1493,8 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="407"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation></translation>
+        <translation>預設 3 像素。
+還會額外保留三行文字高度的空間。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="424"/>
@@ -1502,13 +1505,13 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="473"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation>若取消，分頁工具列只會在有多於一個分頁的時候顯示</translation>
+        <translation>若取消，分頁工具列只會在有多於一個分頁的時候顯示。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="484"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
-        <translation></translation>
+        <translation>若取消，分頁工具列只會資料夾檢視之上，而且不會在左窗格之上。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="488"/>
@@ -1518,7 +1521,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="540"/>
         <source>Show in places</source>
-        <translation></translation>
+        <translation>在地方顯示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="547"/>
@@ -1533,7 +1536,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Trash can</source>
-        <translation></translation>
+        <translation>垃圾桶</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="586"/>
@@ -1665,7 +1668,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="327"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation></translation>
+        <translation>使用SI小數前綴代替IEC二進制前綴。</translation>
     </message>
 </context>
 <context>
@@ -1704,7 +1707,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation>某些檔案無法被重新命名</translation>
+        <translation>某些檔案無法被重新命名。</translation>
     </message>
 </context>
 </TS>
