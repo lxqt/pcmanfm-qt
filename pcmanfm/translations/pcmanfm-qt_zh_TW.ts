@@ -1371,7 +1371,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="495"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>在分頁標籤上顯示「關閉」按鈕</translation>
+        <translation>在分頁標籤上顯示「關閉」按鈕	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="502"/>
