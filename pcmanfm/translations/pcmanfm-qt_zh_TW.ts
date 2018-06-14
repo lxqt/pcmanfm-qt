@@ -95,22 +95,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>批量重新命名</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># 將會被開始數量取代：</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>重新命名選取的檔案：</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>名稱#</translation>
     </message>
 </context>
 <context>
@@ -307,57 +307,57 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>幻燈片播放</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>啟用幻燈片播放</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>桌布圖片資料夾：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>瀏覽</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="347"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> 小時</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>和</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>小於5分鐘的區間將被忽略</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>區間：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="380"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> 分鐘</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>桌布資料夾</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>隨機幻燈片播放</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
@@ -660,17 +660,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>批量重新命名 (&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>批量重新命名</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
@@ -930,83 +930,83 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="162"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>簡介</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>Run PCManFM as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>執行PCManFM常駐程式</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Quit PCManFM</source>
-        <translation type="unfinished"></translation>
+        <translation>離開PCManFM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>啟動桌面管理器</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>關閉執行中的桌面管理器</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>在指定名稱的頁面上開啟桌面偏好設定對話框</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
         <location filename="../application.cpp" line="192"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>名稱</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>開啟新視窗</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="183"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>打開「尋找檔案」工具</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>從圖檔設定桌布</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>模式</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>設定桌布模式。模式=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>在指定名稱的頁面打開偏好設定對話框</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>開啟檔案或目錄</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[檔案1, 檔案2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="543"/>
@@ -1114,7 +1114,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="602"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>隱藏桌面項目</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="607"/>
@@ -1220,7 +1220,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../tabpage.cpp" line="494"/>
         <location filename="../tabpage.cpp" line="510"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>連結到</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="524"/>
@@ -1344,7 +1344,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="240"/>
         <source>Icon theme:</source>
-        <translation>Icon 主題</translation>
+        <translation>Icon 主題：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="464"/>
@@ -1420,12 +1420,13 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="193"/>
         <source>Launch executable files without prompt
 (Requires application restart to take effect)</source>
-        <translation type="unfinished"></translation>
+        <translation>啟動可執行檔時略過提示
+(需要重啟應用程式才有效果)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="201"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇新建立的檔案</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="257"/>
@@ -1463,7 +1464,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="354"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>陰影化顯示隱藏檔案的圖示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="377"/>
@@ -1602,7 +1603,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="741"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished">當卸載可移除裝置時:</translation>
+        <translation>當卸載可移除裝置時：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>
@@ -1672,22 +1673,22 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>重新命名檔案...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>關於</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>警告</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>重新命名被中止。</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
@@ -1698,12 +1699,12 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>沒有檔案可被重新命名。</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>某些檔案無法被重新命名</translation>
     </message>
 </context>
 </TS>
