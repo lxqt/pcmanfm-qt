@@ -332,7 +332,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation>Ενεργοποίηση του διαποράματος προβολή διαφανειών</translation>
+        <translation>Ενεργοποίηση του διαποράματος</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
@@ -1224,19 +1224,15 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="309"/>
         <source>%n item(s)</source>
-        <translation>
-            <numerusform>%n αντικείμενο(α)</numerusform>
-            <numerusform>%n αντικείμενο(α)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n αντικείμενο</numerusform>
+        <numerusform>%n αντικείμενα</numerusform>
+        </translation></message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="311"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform> (%n κρυφό(ά))</numerusform>
-            <numerusform> (%n κρυφό(ά))</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform> (%n κρυφό)</numerusform>
+        <numerusform> (%n κρυφά)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="316"/>
         <location filename="../tabpage.cpp" line="494"/>
@@ -1247,11 +1243,9 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="524"/>
         <source>%n item(s) selected</source>
-        <translation>
-            <numerusform>%n επιλεγμένο(α) αντικείμενο(α)</numerusform>
-            <numerusform>%n επιλεγμένο(α) αντικείμενο(α)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n επιλεγμένο αντικείμενο</numerusform>
+        <numerusform>%n επιλεγμένα αντικείμενα</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
@@ -1414,7 +1408,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Μετακίνηση των διαγραμμένων αρχείων στον κάδο των απορριμμάτων αντί τη διαγραφή τους από το δίσκο. </translation>
+        <translation>Μετακίνηση των διαγραμμένων αρχείων στον κάδο απορριμμάτων αντί για διαγραφή από τον δίσκο.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="684"/>
