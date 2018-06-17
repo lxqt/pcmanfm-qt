@@ -115,22 +115,22 @@ USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Μαζική μετονομασία</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># θα αντικατασταθεί από αριθμούς ξεκινώντας με:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετονομασία των επιλεγμένων αρχείων σε:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Όνομα#</translation>
     </message>
 </context>
 <context>
@@ -690,17 +690,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Μα&amp;ζική μετονομασία</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Μαζική μετονομασία</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
@@ -1134,7 +1134,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="602"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Απόκρυψη των αντικειμένων της επιφάνειας εργασίας</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="607"/>
@@ -1242,7 +1242,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../tabpage.cpp" line="494"/>
         <location filename="../tabpage.cpp" line="510"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεσμός σε</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="524"/>
@@ -1308,12 +1308,13 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="193"/>
         <source>Launch executable files without prompt
 (Requires application restart to take effect)</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκτέλεση των εκτελέσιμων αρχείων χωρίς προτροπή
+(Απαιτείται επανεκκίνηση της εφαρμογής για να λάβει χώρα η ρύθμιση)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="201"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλογή των πρόσφατα δημιουργημένων αρχείων</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="228"/>
@@ -1413,7 +1414,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Μετακίνηση των διαγραμμένων αρχείων στον κάδο των απορριμμάτων αντί τη διαγραφή τους από το δίσκο. </translation>
+        <translation>Μετακίνηση των διαγραμμένων αρχείων στον κάδο των απορριμμάτων αντί τη διαγραφή τους από το δίσκο.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="684"/>
@@ -1698,38 +1699,38 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετονομασία αρχείων...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Εγκατάλειψη</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η μετονομασία εγκαταλείφθηκε.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Σφάλμα</translation>
+        <translation>Σφάλμα</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Κανένα αρχείο δεν μετονομάσθηκε.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Μερικά αρχεία δεν μπόρεσαν να μετονομασθούν.</translation>
     </message>
 </context>
 </TS>
