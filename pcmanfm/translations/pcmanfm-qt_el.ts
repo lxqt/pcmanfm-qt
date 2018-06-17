@@ -1343,7 +1343,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="240"/>
         <source>Icon theme:</source>
-        <translation>Θέματα εικονιδίων:</translation>
+        <translation>Θέμα εικονιδίων:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="464"/>
