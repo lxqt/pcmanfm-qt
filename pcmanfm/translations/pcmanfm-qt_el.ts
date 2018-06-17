@@ -327,12 +327,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation>Προβολή διαφανειών</translation>
+        <translation>Διαπόραμα</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation>Ενεργοποίηση της προβολή διαφανειών</translation>
+        <translation>Ενεργοποίηση του διαποράματος προβολή διαφανειών</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
@@ -377,7 +377,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation>Τυχαιοποίηση της προβολής διαφανειών</translation>
+        <translation>Τυχαιοποίηση του διαποράματος</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
@@ -1414,7 +1414,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Μετακίνηση των διαγραμμένων αρχείων στον κάδο των απορριμμάτων αντί τη διαγραφή τους από το δίσκο.</translation>
+        <translation>Μετακίνηση των διαγραμμένων αρχείων στον κάδο των απορριμμάτων αντί τη διαγραφή τους από το δίσκο. </translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="684"/>
