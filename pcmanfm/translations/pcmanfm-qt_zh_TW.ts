@@ -163,7 +163,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation>形成</translation>
+        <translation>表單</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -1668,7 +1668,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="327"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>使用SI小數前綴代替IEC二進制前綴。</translation>
+        <translation>使用SI小數前綴代替IEC二進制前綴</translation>
     </message>
 </context>
 <context>
