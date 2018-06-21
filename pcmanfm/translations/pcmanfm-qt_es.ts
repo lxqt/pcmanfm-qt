@@ -1289,12 +1289,13 @@ También se reserva espacio para 3 líneas de texto.</translation>
         <location filename="../preferences.ui" line="193"/>
         <source>Launch executable files without prompt
 (Requires application restart to take effect)</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanzar archivos ejecutables sin avisar
+(Requiere reiniciar la aplicación para tener efecto)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="201"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionar los archivos recién creados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="228"/>
