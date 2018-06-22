@@ -1127,17 +1127,17 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="576"/>
+        <location filename="../desktopwindow.cpp" line="578"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Tetap Pada Posisi Saat Ini</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="602"/>
+        <location filename="../desktopwindow.cpp" line="604"/>
         <source>Hide Desktop Items</source>
         <translation>Sembunyikan Item Desktop</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="607"/>
+        <location filename="../desktopwindow.cpp" line="609"/>
         <source>Desktop Preferences</source>
         <translation>Preferensi Desktop</translation>
     </message>
@@ -1175,13 +1175,13 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
         <translation>Hapus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1429"/>
-        <location filename="../mainwindow.cpp" line="1437"/>
+        <location filename="../mainwindow.cpp" line="1423"/>
+        <location filename="../mainwindow.cpp" line="1431"/>
         <source>Error</source>
         <translation>Kesalahan</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1437"/>
+        <location filename="../mainwindow.cpp" line="1431"/>
         <source>Switch user command is not set.</source>
         <translation>Perintah beralih pengguna belum diatur.</translation>
     </message>
@@ -1189,22 +1189,22 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="194"/>
+        <location filename="../preferencesdialog.cpp" line="190"/>
         <source>Icon View</source>
         <translation>Tampilan Ikon</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="195"/>
+        <location filename="../preferencesdialog.cpp" line="191"/>
         <source>Compact View</source>
         <translation>Tampilan Kompak</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="196"/>
+        <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Thumbnail View</source>
         <translation>Tampilan Gambar Kecil</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="197"/>
+        <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Detailed List View</source>
         <translation>Tampilan Daftar Terperinci</translation>
     </message>
@@ -1212,38 +1212,38 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="279"/>
+        <location filename="../tabpage.cpp" line="280"/>
         <source>Error</source>
         <translation>Kesalahan</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="292"/>
+        <location filename="../tabpage.cpp" line="289"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Ruang bebas: %1 (Jumlah: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="309"/>
+        <location filename="../tabpage.cpp" line="306"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n item(s)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="311"/>
+        <location filename="../tabpage.cpp" line="308"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n tersembunyi)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="316"/>
-        <location filename="../tabpage.cpp" line="494"/>
-        <location filename="../tabpage.cpp" line="510"/>
+        <location filename="../tabpage.cpp" line="313"/>
+        <location filename="../tabpage.cpp" line="492"/>
+        <location filename="../tabpage.cpp" line="508"/>
         <source>Link to</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="524"/>
+        <location filename="../tabpage.cpp" line="522"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n item(s) terpilih</numerusform>
@@ -1287,7 +1287,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="651"/>
+        <location filename="../preferences.ui" line="653"/>
         <source>Thumbnail</source>
         <translation>Gambar Kecil</translation>
     </message>
@@ -1302,73 +1302,67 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
         <translation>Ahli</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="193"/>
-        <source>Launch executable files without prompt
-(Requires application restart to take effect)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="201"/>
+        <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="228"/>
+        <location filename="../preferences.ui" line="230"/>
         <source>Icons</source>
         <translation>Ikon</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="260"/>
+        <location filename="../preferences.ui" line="262"/>
         <source>Size of big icons:</source>
         <translation>Ukuran ikon besar:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="277"/>
+        <location filename="../preferences.ui" line="279"/>
         <source>Size of small icons:</source>
         <translation>Ukuran ikon kecil:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="294"/>
+        <location filename="../preferences.ui" line="296"/>
         <source>Size of thumbnails:</source>
         <translation>Ukuran gambar kecil:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="308"/>
+        <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
         <translation>Ukuran ikon panel samping:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="240"/>
+        <location filename="../preferences.ui" line="242"/>
         <source>Icon theme:</source>
         <translation>Tema ikon:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="464"/>
+        <location filename="../preferences.ui" line="466"/>
         <source>Window</source>
         <translation>Jendela</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="477"/>
+        <location filename="../preferences.ui" line="479"/>
         <source>Always show the tab bar</source>
         <translation>Selalu tampilkan bilah tab</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="495"/>
+        <location filename="../preferences.ui" line="497"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Tampilkan tombol &apos;Tutup&apos; pada tab	</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="502"/>
+        <location filename="../preferences.ui" line="504"/>
         <source>Remember the size of the last closed window</source>
         <translation>Ingat ukuran jendela terakhir yang ditutup</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="509"/>
+        <location filename="../preferences.ui" line="511"/>
         <source>Default width of new windows:</source>
         <translation>Lebar baku untuk jendela baru:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="523"/>
+        <location filename="../preferences.ui" line="525"/>
         <source>Default height of new windows:</source>
         <translation>Tinggi baku untuk jendela baru:</translation>
     </message>
@@ -1413,12 +1407,12 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
         <translation>Pindahkan berkas yang dihapus ke &quot;tempat sampah&quot; alih-alih menghapusnya dari disk.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="684"/>
+        <location filename="../preferences.ui" line="686"/>
         <source>Show thumbnails of files</source>
         <translation>Tampilkan gambar kecil dari berkas</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="674"/>
+        <location filename="../preferences.ui" line="676"/>
         <source>Only show thumbnails for local files</source>
         <translation>Hanya tampilkan gambar kecil untuk berkas lokal</translation>
     </message>
@@ -1458,234 +1452,246 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
         <translation>Konfirmasi sebelum memindahkan kedalam &quot;tempat sampah&quot;</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="257"/>
-        <location filename="../preferences.ui" line="267"/>
+        <location filename="../preferences.ui" line="193"/>
+        <location filename="../preferences.ui" line="343"/>
+        <location filename="../preferences.ui" line="353"/>
+        <source>Requires application restart to take effect completely</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="196"/>
+        <source>Launch executable files without prompt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="259"/>
+        <location filename="../preferences.ui" line="269"/>
         <source>Used by Icon View</source>
         <translation>Digunakan oleh Tampilan Ikon</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="274"/>
-        <location filename="../preferences.ui" line="284"/>
+        <location filename="../preferences.ui" line="276"/>
+        <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>Digunakan oleh Tampilan Kompak dan Tampilan Daftar Terperinci</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="291"/>
-        <location filename="../preferences.ui" line="301"/>
+        <location filename="../preferences.ui" line="293"/>
+        <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
         <translation>Digunakan oleh Tampilan Gambar Kecil</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="321"/>
+        <location filename="../preferences.ui" line="323"/>
         <source>User interface</source>
         <translation>Antarmuka pengguna</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="334"/>
+        <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
         <translation>Perlakukan berkas cadangan sebagai tersembunyi</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="344"/>
+        <location filename="../preferences.ui" line="346"/>
         <source>Always show full file names</source>
         <translation>Selalu tampilkan nama berkas lengkap</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="354"/>
+        <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Tampilkan ikon dari file tersembunyi yang dibayangi</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="377"/>
+        <location filename="../preferences.ui" line="379"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Margin item minimum dalam tampilan ikon:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="384"/>
+        <location filename="../preferences.ui" line="386"/>
         <source>3 px by default.</source>
         <translation>3 px secara default.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="387"/>
-        <location filename="../preferences.ui" line="411"/>
+        <location filename="../preferences.ui" line="389"/>
+        <location filename="../preferences.ui" line="413"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="400"/>
+        <location filename="../preferences.ui" line="402"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="407"/>
+        <location filename="../preferences.ui" line="409"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>3 px secara default.
 Spasi juga disediakan untuk 3 baris teks.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="424"/>
+        <location filename="../preferences.ui" line="426"/>
         <source>Lock</source>
         <translation>Kunci</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="473"/>
+        <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Bila tidak dicentang, bilah tab akan ditampilkan
 hanya jika ada lebih dari satu tab.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="484"/>
+        <location filename="../preferences.ui" line="486"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
         <translation>Jika tidak dicentang, bilah tab hanya akan diposisikan
 di atas tampilan folder dan tidak di atas panel kiri.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="488"/>
+        <location filename="../preferences.ui" line="490"/>
         <source>Fullwidth tab bar</source>
         <translation>Bilah tab lebar penuh</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="540"/>
+        <location filename="../preferences.ui" line="542"/>
         <source>Show in places</source>
         <translation>Tampilkan di tempat</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="547"/>
+        <location filename="../preferences.ui" line="549"/>
         <source>Home</source>
         <translation>Beranda</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="560"/>
+        <location filename="../preferences.ui" line="562"/>
         <source>Desktop</source>
         <translation>Desktop</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="573"/>
+        <location filename="../preferences.ui" line="575"/>
         <source>Trash can</source>
         <translation>Tampat sampah</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="586"/>
+        <location filename="../preferences.ui" line="588"/>
         <source>Computer</source>
         <translation>Komputer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="599"/>
+        <location filename="../preferences.ui" line="601"/>
         <source>Applications</source>
         <translation>Aplikasi</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="607"/>
+        <location filename="../preferences.ui" line="609"/>
         <source>Devices</source>
         <translation>Perangkat</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="615"/>
+        <location filename="../preferences.ui" line="617"/>
         <source>Network</source>
         <translation>Jaringan</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="657"/>
+        <location filename="../preferences.ui" line="659"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Jangan membuat gambar kecil untuk berkas gambar yang melebihi ukuran ini:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="664"/>
+        <location filename="../preferences.ui" line="666"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="681"/>
+        <location filename="../preferences.ui" line="683"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Butuh ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="711"/>
+        <location filename="../preferences.ui" line="713"/>
         <source>Auto Mount</source>
         <translation>Auto Mount</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="717"/>
+        <location filename="../preferences.ui" line="719"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Mount volume yang dapat dimount secara otomatis saat memulai program</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="724"/>
+        <location filename="../preferences.ui" line="726"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Mount media yang dapat dilepas secara otomatis saat mereka dimasukkan</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="731"/>
+        <location filename="../preferences.ui" line="733"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Tampilkan opsi yang tersedia untuk media yang dapat dilepas saat mereka dimasukkan</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="741"/>
+        <location filename="../preferences.ui" line="743"/>
         <source>When removable medium unmounted:</source>
         <translation>Saat media yang dapat dilepas di unmount:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="747"/>
+        <location filename="../preferences.ui" line="749"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Tutup &amp;tab yang berisi media yang dapat dilepas</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="754"/>
+        <location filename="../preferences.ui" line="756"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Ganti folder di tab ini ke folder home</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="781"/>
+        <location filename="../preferences.ui" line="783"/>
         <source>Programs</source>
         <translation>Program</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="790"/>
+        <location filename="../preferences.ui" line="792"/>
         <source>Terminal emulator:</source>
         <translation>Emulator terminal:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="797"/>
+        <location filename="../preferences.ui" line="799"/>
         <source>Switch &amp;user command:</source>
         <translation>Perintah pengg&amp;una beralih:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="810"/>
+        <location filename="../preferences.ui" line="812"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Contoh: &quot;xterm -e %s&quot; untuk terminal atau &quot;gksu %s&quot; untuk beralih pengguna.
 %s = baris perintah yang ingin Anda eksekusi dengan terminal atau su.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="821"/>
+        <location filename="../preferences.ui" line="823"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>In&amp;tegrasi Archiver:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="844"/>
+        <location filename="../preferences.ui" line="846"/>
         <source>Templates</source>
         <translation>Templat</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="850"/>
+        <location filename="../preferences.ui" line="852"/>
         <source>Show only user defined templates in menu</source>
         <translation>Tampilkan hanya templat yang ditentukan pengguna dalam menu</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="857"/>
+        <location filename="../preferences.ui" line="859"/>
         <source>Show only one template for each MIME type</source>
         <translation>Tampilkan hanya satu templat untuk masing-masing MIME type</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="864"/>
+        <location filename="../preferences.ui" line="866"/>
         <source>Run default application after creation from template</source>
         <translation>Jalankan aplikasi default setelah pembuatan dari templat</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="327"/>
+        <location filename="../preferences.ui" line="329"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Gunakan prefiks desimal SI sebagai pengganti prefiks biner IEC</translation>
     </message>
