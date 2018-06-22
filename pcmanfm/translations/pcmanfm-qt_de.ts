@@ -19,7 +19,8 @@
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
         <translation>Programmierung:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;</translation>
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -29,7 +30,7 @@
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="78"/>
@@ -60,7 +61,26 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt File Manager
+
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Dieses Programm ist freie Software; Weiterverteilung und/oder 
+Modifizierung unter den Richtlinien der GNU General Public License 
+gemäß der Free Software Foundation ist gestattet; siehe ab 
+Richtlinienversion 2 und spätere.
+
+Dieses Programm wird zur Verfügung gestellt, in der Hoffnung, 
+dass es seinen Nutzern hilfreich sein möge, 
+jedoch OHNE EINE GARANTIE und ohne eine implizierte Garantie auf 
+MARKTGÄNGIGKEIT oder einer ZWECKGGEBUNDENEN 
+FUNKTIONSFÄHIGKEIT. Siehe die GNU General Public License 
+für weitere Details.
+
+Eine Kopie der GNU General Public License sollte mit diesem 
+Programm enthalten sein. Falls nicht, schreiben Sie bitte der 
+Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, 
+Boston, MA  02110-1301, USA.</translation>
     </message>
 </context>
 <context>
@@ -96,22 +116,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Massenumbenennen</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># wird ersetzt durch Zahlen beginnend mit:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Benenne ausgewählte Dateien um nach:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Name#</translation>
     </message>
 </context>
 <context>
@@ -119,22 +139,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Verbinde zu Remote-Server</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Anonymes &amp;Einloggen</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>Einloggen als &amp;Benutzer:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Spezifiziere rechnerfernen Ordner um zu Verbinden</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
@@ -144,17 +164,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Port:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pfad:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Host:</translation>
     </message>
 </context>
 <context>
@@ -162,7 +182,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Dialogfenster</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -436,12 +456,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="337"/>
         <source>Go</source>
-        <translation>Los</translation>
+        <translation>Gehe zu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="346"/>
         <source>Quit</source>
-        <translation>Verlassen</translation>
+        <translation>Beenden</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="355"/>
@@ -702,7 +722,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="364"/>
         <source>&amp;New Window</source>
-        <translation>Neues &amp;Fenster</translation>
+        <translation>&amp;Neues Fenster</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="440"/>
@@ -1213,11 +1233,9 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="308"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform>(%n versteckt)</numerusform>
-            <numerusform>(%n versteckt)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform> (%n versteckt)</numerusform>
+        <numerusform> (%n versteckt)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="313"/>
         <location filename="../tabpage.cpp" line="492"/>
@@ -1373,7 +1391,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="120"/>
         <source> sec</source>
-        <translation> sec</translation>
+        <translation> Sek</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
@@ -1586,7 +1604,7 @@ mit der eigentlichen Verzeichnis- und Dateiansicht angezeigt und nicht
     <message>
         <location filename="../preferences.ui" line="666"/>
         <source> KB</source>
-        <translation>KB</translation>
+        <translation> KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="683"/>

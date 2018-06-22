@@ -115,22 +115,22 @@ USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Μαζική μετονομασία</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># θα αντικατασταθεί από αριθμούς ξεκινώντας με:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετονομασία των επιλεγμένων αρχείων σε:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Όνομα#</translation>
     </message>
 </context>
 <context>
@@ -200,7 +200,7 @@ USA.</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
-        <source>Folder path</source>
+       <source>Folder path</source>
         <translation>Διαδρομή του φακέλου</translation>
     </message>
     <message>
@@ -327,12 +327,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation>Προβολή διαφανειών</translation>
+        <translation>Διαπόραμα</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation>Ενεργοποίηση της προβολή διαφανειών</translation>
+        <translation>Ενεργοποίηση του διαποράματος</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
@@ -377,7 +377,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation>Τυχαιοποίηση της προβολής διαφανειών</translation>
+        <translation>Τυχαιοποίηση του διαποράματος</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
@@ -690,17 +690,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Μα&amp;ζική μετονομασία</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Μαζική μετονομασία</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
@@ -1134,7 +1134,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="604"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Απόκρυψη των αντικειμένων της επιφάνειας εργασίας</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="609"/>
@@ -1224,34 +1224,28 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="306"/>
         <source>%n item(s)</source>
-        <translation>
-            <numerusform>%n αντικείμενο(α)</numerusform>
-            <numerusform>%n αντικείμενο(α)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n αντικείμενο</numerusform>
+        <numerusform>%n αντικείμενα</numerusform>
+        </translation></message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="308"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform> (%n κρυφό(ά))</numerusform>
-            <numerusform> (%n κρυφό(ά))</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform> (%n κρυφό)</numerusform>
+        <numerusform> (%n κρυφά)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="313"/>
         <location filename="../tabpage.cpp" line="492"/>
         <location filename="../tabpage.cpp" line="508"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεσμός σε</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="522"/>
         <source>%n item(s) selected</source>
-        <translation>
-            <numerusform>%n επιλεγμένο(α) αντικείμενο(α)</numerusform>
-            <numerusform>%n επιλεγμένο(α) αντικείμενο(α)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n επιλεγμένο αντικείμενο</numerusform>
+        <numerusform>%n επιλεγμένα αντικείμενα</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
@@ -1305,9 +1299,16 @@ A space is also reserved for 3 lines of text.</source>
         <translation>Προηγμένα</translation>
     </message>
     <message>
+        <location filename="../preferences.ui" line="193"/>
+        <source>Launch executable files without prompt
+(Requires application restart to take effect)</source>
+        <translation>Εκτέλεση των εκτελέσιμων αρχείων χωρίς προτροπή
+(Απαιτείται επανεκκίνηση της εφαρμογής για να λάβει χώρα η ρύθμιση)</translation>
+    </message>
+    <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλογή των πρόσφατα δημιουργημένων αρχείων</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1337,7 +1338,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="242"/>
         <source>Icon theme:</source>
-        <translation>Θέματα εικονιδίων:</translation>
+        <translation>Θέμα εικονιδίων:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
@@ -1407,7 +1408,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Μετακίνηση των διαγραμμένων αρχείων στον κάδο των απορριμμάτων αντί τη διαγραφή τους από το δίσκο. </translation>
+        <translation>Μετακίνηση των διαγραμμένων αρχείων στον κάδο απορριμμάτων αντί για διαγραφή από τον δίσκο.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="686"/>
@@ -1704,38 +1705,38 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετονομασία αρχείων...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Εγκατάλειψη</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η μετονομασία εγκαταλείφθηκε.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Σφάλμα</translation>
+        <translation>Σφάλμα</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Κανένα αρχείο δεν μετονομάσθηκε.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Μερικά αρχεία δεν μπόρεσαν να μετονομασθούν.</translation>
     </message>
 </context>
 </TS>
