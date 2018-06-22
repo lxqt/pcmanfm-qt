@@ -447,12 +447,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="355"/>
         <source>&amp;About</source>
-        <translation>&amp;عن</translation>
+        <translation>عن</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="364"/>
         <source>&amp;New Window</source>
-        <translation>نافذة &amp;جديدة</translation>
+        <translation>نافذة جديدة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
@@ -778,7 +778,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="636"/>
         <source>&amp;Delete</source>
-        <translation>ا&amp;حذف</translation>
+        <translation>حذف</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="639"/>
@@ -873,7 +873,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="120"/>
         <source>&amp;File</source>
-        <translation>&amp;ملفّ</translation>
+        <translation>ملفّ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="124"/>
@@ -883,7 +883,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Help</source>
-        <translation>م&amp;ساعدة</translation>
+        <translation>مساعدة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="148"/>
@@ -899,7 +899,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="202"/>
         <source>&amp;Edit</source>
-        <translation>ت&amp;حرير</translation>
+        <translation>تحرير</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="220"/>
@@ -1109,17 +1109,17 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="576"/>
+        <location filename="../desktopwindow.cpp" line="578"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>ت&amp;شبّث بالمكان الحاليّ</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="602"/>
+        <location filename="../desktopwindow.cpp" line="604"/>
         <source>Hide Desktop Items</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="607"/>
+        <location filename="../desktopwindow.cpp" line="609"/>
         <source>Desktop Preferences</source>
         <translation>تفضيلات سطح المكتب</translation>
     </message>
@@ -1157,13 +1157,13 @@ A space is also reserved for 3 lines of text.</source>
         <translation>ا&amp;حذف</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1429"/>
-        <location filename="../mainwindow.cpp" line="1437"/>
+        <location filename="../mainwindow.cpp" line="1423"/>
+        <location filename="../mainwindow.cpp" line="1431"/>
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1437"/>
+        <location filename="../mainwindow.cpp" line="1431"/>
         <source>Switch user command is not set.</source>
         <translation>لم يُضبط أمر تبديل المستخدم.</translation>
     </message>
@@ -1171,22 +1171,22 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="194"/>
+        <location filename="../preferencesdialog.cpp" line="190"/>
         <source>Icon View</source>
         <translation>منظور أيقوناتيّ</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="195"/>
+        <location filename="../preferencesdialog.cpp" line="191"/>
         <source>Compact View</source>
         <translation>منظور متراصّ</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="196"/>
+        <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Thumbnail View</source>
         <translation>منظور مصغّراتيّ</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="197"/>
+        <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Detailed List View</source>
         <translation>منظور قوائميّ مفصّل</translation>
     </message>
@@ -1194,17 +1194,17 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="279"/>
+        <location filename="../tabpage.cpp" line="280"/>
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="292"/>
+        <location filename="../tabpage.cpp" line="289"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>المساحة الحرّة: %1 (المجموع: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="309"/>
+        <location filename="../tabpage.cpp" line="306"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>لا عناصر</numerusform>
@@ -1216,7 +1216,7 @@ A space is also reserved for 3 lines of text.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="311"/>
+        <location filename="../tabpage.cpp" line="308"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform>(لا شيء مخفيّ)</numerusform>
@@ -1228,14 +1228,14 @@ A space is also reserved for 3 lines of text.</source>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="316"/>
-        <location filename="../tabpage.cpp" line="494"/>
-        <location filename="../tabpage.cpp" line="510"/>
+        <location filename="../tabpage.cpp" line="313"/>
+        <location filename="../tabpage.cpp" line="492"/>
+        <location filename="../tabpage.cpp" line="508"/>
         <source>Link to</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="524"/>
+        <location filename="../tabpage.cpp" line="522"/>
         <source>%n item(s) selected</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -1284,7 +1284,7 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="651"/>
+        <location filename="../preferences.ui" line="653"/>
         <source>Thumbnail</source>
         <translation>المصغّرات</translation>
     </message>
@@ -1299,73 +1299,67 @@ A space is also reserved for 3 lines of text.</source>
         <translation>متقدّم</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="193"/>
-        <source>Launch executable files without prompt
-(Requires application restart to take effect)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="201"/>
+        <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="228"/>
+        <location filename="../preferences.ui" line="230"/>
         <source>Icons</source>
         <translation>الأيقونات</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="260"/>
+        <location filename="../preferences.ui" line="262"/>
         <source>Size of big icons:</source>
         <translation>مقاس الأيقونات الكبيرة:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="277"/>
+        <location filename="../preferences.ui" line="279"/>
         <source>Size of small icons:</source>
         <translation>مقاس الأيقونات الصّغيرة:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="294"/>
+        <location filename="../preferences.ui" line="296"/>
         <source>Size of thumbnails:</source>
         <translation>مقاس المصغّرات:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="308"/>
+        <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
         <translation>مقاس أيقونات الشّريط الجانبيّ:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="240"/>
+        <location filename="../preferences.ui" line="242"/>
         <source>Icon theme:</source>
-        <translation>سمة الأيقونات:</translation>
+        <translation>سمة الأيقونات :</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="464"/>
+        <location filename="../preferences.ui" line="466"/>
         <source>Window</source>
         <translation>النّافذة</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="477"/>
+        <location filename="../preferences.ui" line="479"/>
         <source>Always show the tab bar</source>
         <translation>أظهر شريط الألسنة دائمًا</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="495"/>
+        <location filename="../preferences.ui" line="497"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>أظهر أزرار &quot;أغلق&quot; على الألسنة</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="502"/>
+        <location filename="../preferences.ui" line="504"/>
         <source>Remember the size of the last closed window</source>
         <translation>تذكّر حجم آخر نافذة مُغلقة</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="509"/>
+        <location filename="../preferences.ui" line="511"/>
         <source>Default width of new windows:</source>
         <translation>العرض الافتراضيّ للنّوافذ الجديدة:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="523"/>
+        <location filename="../preferences.ui" line="525"/>
         <source>Default height of new windows:</source>
         <translation>الارتفاع الافتراضيّ للنّوافذ الجديدة:</translation>
     </message>
@@ -1410,12 +1404,12 @@ A space is also reserved for 3 lines of text.</source>
         <translation>انقل الملفّات المحذوفة إلى &quot;سلّة المهملات&quot; بدل مسحها من القرص.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="684"/>
+        <location filename="../preferences.ui" line="686"/>
         <source>Show thumbnails of files</source>
         <translation>أظهر مصغّرات للملفّات</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="674"/>
+        <location filename="../preferences.ui" line="676"/>
         <source>Only show thumbnails for local files</source>
         <translation>أظهر مصغّرات للملفّات المحليّة فقط</translation>
     </message>
@@ -1455,232 +1449,244 @@ A space is also reserved for 3 lines of text.</source>
         <translation>أكّد قبل نقل الملفّات إلى &quot;سلّة المهملات&quot;</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="257"/>
-        <location filename="../preferences.ui" line="267"/>
+        <location filename="../preferences.ui" line="193"/>
+        <location filename="../preferences.ui" line="343"/>
+        <location filename="../preferences.ui" line="353"/>
+        <source>Requires application restart to take effect completely</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="196"/>
+        <source>Launch executable files without prompt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="259"/>
+        <location filename="../preferences.ui" line="269"/>
         <source>Used by Icon View</source>
         <translation>يستخدمه المنظور الأيقوناتيّ</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="274"/>
-        <location filename="../preferences.ui" line="284"/>
+        <location filename="../preferences.ui" line="276"/>
+        <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>يستخدمه المنظورين المتراصّ والقوائميّ المفصّل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="291"/>
-        <location filename="../preferences.ui" line="301"/>
+        <location filename="../preferences.ui" line="293"/>
+        <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
         <translation>يستخدمه المنظور المصغّراتيّ</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="321"/>
+        <location filename="../preferences.ui" line="323"/>
         <source>User interface</source>
         <translation>واجهة المستخدم</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="334"/>
+        <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
         <translation>عامِل ملفّات النّسخ الاحتياطيّ كمخفيّة</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="344"/>
+        <location filename="../preferences.ui" line="346"/>
         <source>Always show full file names</source>
         <translation>أظهر أسماء الملفّات كاملة دائمًا</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="354"/>
+        <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>أظهر أيقونات الملفّات المخفيّة مظلّلة</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="377"/>
+        <location filename="../preferences.ui" line="379"/>
         <source>Minimum item margins in icon view:</source>
         <translation>أدنى هوامش للعناصر في المنظور الأيقوناتيّ:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="384"/>
+        <location filename="../preferences.ui" line="386"/>
         <source>3 px by default.</source>
         <translation>3 بكسل افتراضيًّا.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="387"/>
-        <location filename="../preferences.ui" line="411"/>
+        <location filename="../preferences.ui" line="389"/>
+        <location filename="../preferences.ui" line="413"/>
         <source> px</source>
         <translation> بكسل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="400"/>
+        <location filename="../preferences.ui" line="402"/>
         <source>x</source>
         <translation>×</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="407"/>
+        <location filename="../preferences.ui" line="409"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>بكسل واحد افتراضيًّا.
 سيُحجز أيضًا مكان لنصّ بثلاث أسطر.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="424"/>
+        <location filename="../preferences.ui" line="426"/>
         <source>Lock</source>
         <translation>اقفل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="473"/>
+        <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>إن لم يُؤشّر، فسيظهر شريط الألسنة فقط إن كان هناك أكثر من لسان واحد.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="484"/>
+        <location filename="../preferences.ui" line="486"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
         <translation>إن لم يُؤشّر، فسيكون شريط الألسنة موجودًا فوق منظور المجلّد فقط وليس فوق اللوحة اليمنى أيضًا.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="488"/>
+        <location filename="../preferences.ui" line="490"/>
         <source>Fullwidth tab bar</source>
         <translation>شريط ألسنة كامل العرض</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="540"/>
+        <location filename="../preferences.ui" line="542"/>
         <source>Show in places</source>
         <translation>أظهر في الأماكن</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="547"/>
+        <location filename="../preferences.ui" line="549"/>
         <source>Home</source>
         <translation>المنزل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="560"/>
+        <location filename="../preferences.ui" line="562"/>
         <source>Desktop</source>
         <translation>سطح المكتب</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="573"/>
+        <location filename="../preferences.ui" line="575"/>
         <source>Trash can</source>
         <translation>سلّة المهملات</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="586"/>
+        <location filename="../preferences.ui" line="588"/>
         <source>Computer</source>
         <translation>الحاسوب</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="599"/>
+        <location filename="../preferences.ui" line="601"/>
         <source>Applications</source>
         <translation>التّطبيقات</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="607"/>
+        <location filename="../preferences.ui" line="609"/>
         <source>Devices</source>
         <translation>الأجهزة</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="615"/>
+        <location filename="../preferences.ui" line="617"/>
         <source>Network</source>
         <translation>الشّبكة</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="657"/>
+        <location filename="../preferences.ui" line="659"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>لا تولّد مصغّرات لملفّات الصّور الأكبر من:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="664"/>
+        <location filename="../preferences.ui" line="666"/>
         <source> KB</source>
         <translation> ك.بايت</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="681"/>
+        <location filename="../preferences.ui" line="683"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>تحتاج المصغّرات ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="711"/>
+        <location filename="../preferences.ui" line="713"/>
         <source>Auto Mount</source>
         <translation>الضّمّ الآليّ</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="717"/>
+        <location filename="../preferences.ui" line="719"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>ضُمّ الأقراص المنفصلة آليًّا عند بدء البرنامج</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="724"/>
+        <location filename="../preferences.ui" line="726"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>ضُمّ آليًّا الوسيط المنفصل عندما يُدخل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="731"/>
+        <location filename="../preferences.ui" line="733"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>أظهر الخيارات المتوفّرة للوسيط المنفصل عندما يُدخل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="741"/>
+        <location filename="../preferences.ui" line="743"/>
         <source>When removable medium unmounted:</source>
         <translation>عند إزالة ضمّ وسيط منفصل:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="747"/>
+        <location filename="../preferences.ui" line="749"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>أغلق ال&amp;سان الذي فيه الوسيط المنفصل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="754"/>
+        <location filename="../preferences.ui" line="756"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>&amp;غيّر المجلّد في اللسان ليكون مجلّد المنزل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="781"/>
+        <location filename="../preferences.ui" line="783"/>
         <source>Programs</source>
         <translation>البرامج</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="790"/>
+        <location filename="../preferences.ui" line="792"/>
         <source>Terminal emulator:</source>
         <translation>محاكي الطّرفيّة:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="797"/>
+        <location filename="../preferences.ui" line="799"/>
         <source>Switch &amp;user command:</source>
         <translation>أمر تبديل الم&amp;ستخدم:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="810"/>
+        <location filename="../preferences.ui" line="812"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>أمثلة: &quot;xterm -e %s&quot; للطّرفيّة أو &quot;gksu %s&quot; لتبديل المستخدم.
 ‏‎%s = هو سطر الأوامر الذي ستنفّذه بالطّرفيّة أو su.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="821"/>
+        <location filename="../preferences.ui" line="823"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>ت&amp;كامل الأرشفة:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="844"/>
+        <location filename="../preferences.ui" line="846"/>
         <source>Templates</source>
         <translation>القوالب</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="850"/>
+        <location filename="../preferences.ui" line="852"/>
         <source>Show only user defined templates in menu</source>
         <translation>أظهر القوالب التي عرّفها المستخدم فقط</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="857"/>
+        <location filename="../preferences.ui" line="859"/>
         <source>Show only one template for each MIME type</source>
         <translation>أظهر قالبًا واحدًا فقط لكلّ نوع MIME</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="864"/>
+        <location filename="../preferences.ui" line="866"/>
         <source>Run default application after creation from template</source>
         <translation>شغّل التّطبيق الافتراضيّ بعد الإنشاء من قالب</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="327"/>
+        <location filename="../preferences.ui" line="329"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>استخدم بادئات SI العشريّة بدل بادئات IEC الثّنائيّة</translation>
     </message>

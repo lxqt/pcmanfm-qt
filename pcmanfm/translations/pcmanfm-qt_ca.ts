@@ -1126,17 +1126,17 @@ També es reserva un espai per a 3 línies de text.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="576"/>
+        <location filename="../desktopwindow.cpp" line="578"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Fi&amp;xa a la posició actual</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="602"/>
+        <location filename="../desktopwindow.cpp" line="604"/>
         <source>Hide Desktop Items</source>
         <translation>Oculta els ítems de l&apos;escriptori</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="607"/>
+        <location filename="../desktopwindow.cpp" line="609"/>
         <source>Desktop Preferences</source>
         <translation>Preferències de l&apos;escriptori</translation>
     </message>
@@ -1174,13 +1174,13 @@ També es reserva un espai per a 3 línies de text.</translation>
         <translation>&amp;Suprimeix</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1429"/>
-        <location filename="../mainwindow.cpp" line="1437"/>
+        <location filename="../mainwindow.cpp" line="1423"/>
+        <location filename="../mainwindow.cpp" line="1431"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1437"/>
+        <location filename="../mainwindow.cpp" line="1431"/>
         <source>Switch user command is not set.</source>
         <translation>L&apos;ordre de canvi d&apos;usuari no està establerta.</translation>
     </message>
@@ -1188,22 +1188,22 @@ També es reserva un espai per a 3 línies de text.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="194"/>
+        <location filename="../preferencesdialog.cpp" line="190"/>
         <source>Icon View</source>
         <translation>Vista d&apos;icones</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="195"/>
+        <location filename="../preferencesdialog.cpp" line="191"/>
         <source>Compact View</source>
         <translation>Vista compacta</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="196"/>
+        <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Thumbnail View</source>
         <translation>Vista de miniatures</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="197"/>
+        <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Detailed List View</source>
         <translation>Vista de llista detallada</translation>
     </message>
@@ -1211,17 +1211,17 @@ També es reserva un espai per a 3 línies de text.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="279"/>
+        <location filename="../tabpage.cpp" line="280"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="292"/>
+        <location filename="../tabpage.cpp" line="289"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Espai lliure: %1 (Total: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="309"/>
+        <location filename="../tabpage.cpp" line="306"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n ítem</numerusform>
@@ -1229,7 +1229,7 @@ També es reserva un espai per a 3 línies de text.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="311"/>
+        <location filename="../tabpage.cpp" line="308"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n ocult)</numerusform>
@@ -1237,14 +1237,14 @@ També es reserva un espai per a 3 línies de text.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="316"/>
-        <location filename="../tabpage.cpp" line="494"/>
-        <location filename="../tabpage.cpp" line="510"/>
+        <location filename="../tabpage.cpp" line="313"/>
+        <location filename="../tabpage.cpp" line="492"/>
+        <location filename="../tabpage.cpp" line="508"/>
         <source>Link to</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="524"/>
+        <location filename="../tabpage.cpp" line="522"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n ítem seleccionat</numerusform>
@@ -1290,7 +1290,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="651"/>
+        <location filename="../preferences.ui" line="653"/>
         <source>Thumbnail</source>
         <translation>Miniatura</translation>
     </message>
@@ -1305,73 +1305,67 @@ També es reserva un espai per a 3 línies de text.</translation>
         <translation>Avançat</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="193"/>
-        <source>Launch executable files without prompt
-(Requires application restart to take effect)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="201"/>
+        <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="228"/>
+        <location filename="../preferences.ui" line="230"/>
         <source>Icons</source>
         <translation>Icones</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="260"/>
+        <location filename="../preferences.ui" line="262"/>
         <source>Size of big icons:</source>
         <translation>Mida de les icones grans:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="277"/>
+        <location filename="../preferences.ui" line="279"/>
         <source>Size of small icons:</source>
         <translation>Mida de les icones petites:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="294"/>
+        <location filename="../preferences.ui" line="296"/>
         <source>Size of thumbnails:</source>
         <translation>Mida de les miniatures:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="308"/>
+        <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
         <translation>Mida de les icones del plafó lateral:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="240"/>
+        <location filename="../preferences.ui" line="242"/>
         <source>Icon theme:</source>
         <translation>Tema de les icones:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="464"/>
+        <location filename="../preferences.ui" line="466"/>
         <source>Window</source>
         <translation>Finestra</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="477"/>
+        <location filename="../preferences.ui" line="479"/>
         <source>Always show the tab bar</source>
         <translation>Mostra sempre la barra de les pestanyes</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="495"/>
+        <location filename="../preferences.ui" line="497"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Mostra els botons de &apos;Tanca&apos; en les pestanyes	</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="502"/>
+        <location filename="../preferences.ui" line="504"/>
         <source>Remember the size of the last closed window</source>
         <translation>Recorda la mida de l&apos;última finestra tancada</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="509"/>
+        <location filename="../preferences.ui" line="511"/>
         <source>Default width of new windows:</source>
         <translation>Amplada predeterminada de les finestres noves:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="523"/>
+        <location filename="../preferences.ui" line="525"/>
         <source>Default height of new windows:</source>
         <translation>Alçada predeterminada de les finestres noves:</translation>
     </message>
@@ -1417,12 +1411,12 @@ També es reserva un espai per a 3 línies de text.</translation>
         <translation>Mou els fitxers suprimits a la &quot;paperera&quot; en lloc d&apos;eliminar-los del disc.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="684"/>
+        <location filename="../preferences.ui" line="686"/>
         <source>Show thumbnails of files</source>
         <translation>Mostra les miniatures dels fitxers</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="674"/>
+        <location filename="../preferences.ui" line="676"/>
         <source>Only show thumbnails for local files</source>
         <translation>Mostra únicament les miniatures per als fitxers locals</translation>
     </message>
@@ -1462,234 +1456,246 @@ També es reserva un espai per a 3 línies de text.</translation>
         <translation>Confirmació abans de moure fitxers a la &quot;paperera&quot;</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="257"/>
-        <location filename="../preferences.ui" line="267"/>
+        <location filename="../preferences.ui" line="193"/>
+        <location filename="../preferences.ui" line="343"/>
+        <location filename="../preferences.ui" line="353"/>
+        <source>Requires application restart to take effect completely</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="196"/>
+        <source>Launch executable files without prompt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="259"/>
+        <location filename="../preferences.ui" line="269"/>
         <source>Used by Icon View</source>
         <translation>Utilitzat amb la vista d&apos;icones</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="274"/>
-        <location filename="../preferences.ui" line="284"/>
+        <location filename="../preferences.ui" line="276"/>
+        <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>Utilitzat amb la vista compacta i la vista de llista detallada</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="291"/>
-        <location filename="../preferences.ui" line="301"/>
+        <location filename="../preferences.ui" line="293"/>
+        <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
         <translation>Utilitzat amb la vista de miniatures</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="321"/>
+        <location filename="../preferences.ui" line="323"/>
         <source>User interface</source>
         <translation>Interfície d&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="334"/>
+        <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
         <translation>Tracta els fitxers de còpia de seguretat com a ocults</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="344"/>
+        <location filename="../preferences.ui" line="346"/>
         <source>Always show full file names</source>
         <translation>Mostra sempre el nom complet dels fitxers</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="354"/>
+        <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Mostra ombrejades les icones dels fitxers ocults</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="377"/>
+        <location filename="../preferences.ui" line="379"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Marges mínims de l&apos;ítem a la vista d&apos;icones:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="384"/>
+        <location filename="../preferences.ui" line="386"/>
         <source>3 px by default.</source>
         <translation>3 px per defecte.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="387"/>
-        <location filename="../preferences.ui" line="411"/>
+        <location filename="../preferences.ui" line="389"/>
+        <location filename="../preferences.ui" line="413"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="400"/>
+        <location filename="../preferences.ui" line="402"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="407"/>
+        <location filename="../preferences.ui" line="409"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>1 px per defecte.
 També es reserva un espai per a 3 línies de text.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="424"/>
+        <location filename="../preferences.ui" line="426"/>
         <source>Lock</source>
         <translation>Bloqueja</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="473"/>
+        <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Quan es desmarca, únicament es mostrarà la
 barra de tasques si hi ha més d&apos;una pestanya.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="484"/>
+        <location filename="../preferences.ui" line="486"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
         <translation>Si es desmarca, únicament es posicionarà la barra de pestanyes
 sobre de la vista de la carpeta i no sobre el plafó esquerre.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="488"/>
+        <location filename="../preferences.ui" line="490"/>
         <source>Fullwidth tab bar</source>
         <translation>Barra de pestanyes amb tot l&apos;ample</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="540"/>
+        <location filename="../preferences.ui" line="542"/>
         <source>Show in places</source>
         <translation>Mostra-ho als llocs</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="547"/>
+        <location filename="../preferences.ui" line="549"/>
         <source>Home</source>
         <translation>Carpeta de l&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="560"/>
+        <location filename="../preferences.ui" line="562"/>
         <source>Desktop</source>
         <translation>Escriptori</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="573"/>
+        <location filename="../preferences.ui" line="575"/>
         <source>Trash can</source>
         <translation>Paperera</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="586"/>
+        <location filename="../preferences.ui" line="588"/>
         <source>Computer</source>
         <translation>Ordinador</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="599"/>
+        <location filename="../preferences.ui" line="601"/>
         <source>Applications</source>
         <translation>Aplicacions</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="607"/>
+        <location filename="../preferences.ui" line="609"/>
         <source>Devices</source>
         <translation>Dispositius</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="615"/>
+        <location filename="../preferences.ui" line="617"/>
         <source>Network</source>
         <translation>Xarxa</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="657"/>
+        <location filename="../preferences.ui" line="659"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>No generis les miniatures per als fitxers d&apos;imatges que superin aquesta mida:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="664"/>
+        <location filename="../preferences.ui" line="666"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="681"/>
+        <location filename="../preferences.ui" line="683"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Necessita ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="711"/>
+        <location filename="../preferences.ui" line="713"/>
         <source>Auto Mount</source>
         <translation>Munta automàticament</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="717"/>
+        <location filename="../preferences.ui" line="719"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Munta automàticament els volums muntables amb la inicialització del programa</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="724"/>
+        <location filename="../preferences.ui" line="726"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Munta automàticament els mitjans extraïbles quan aquests són inserits</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="731"/>
+        <location filename="../preferences.ui" line="733"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Mostra les opcions disponibles per als mitjans extraïbles quan s&apos;insereixin</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="741"/>
+        <location filename="../preferences.ui" line="743"/>
         <source>When removable medium unmounted:</source>
         <translation>Quan es desmunta un mitjà extraïble:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="747"/>
+        <location filename="../preferences.ui" line="749"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Tanca la pes&amp;tanya que conté el mitjà extraïble</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="754"/>
+        <location filename="../preferences.ui" line="756"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Can&amp;via la carpeta a la pestanya amb la carpeta de l&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="781"/>
+        <location filename="../preferences.ui" line="783"/>
         <source>Programs</source>
         <translation>Programes</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="790"/>
+        <location filename="../preferences.ui" line="792"/>
         <source>Terminal emulator:</source>
         <translation>Emulador de terminal:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="797"/>
+        <location filename="../preferences.ui" line="799"/>
         <source>Switch &amp;user command:</source>
         <translation>Ordre per al canvi d&apos;&amp;usuari:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="810"/>
+        <location filename="../preferences.ui" line="812"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Exemples: &quot;xterm -e %s&quot; per al terminal, o &quot;gksu %s&quot; per al canvi d&apos;usuari.
 %s = la línia d&apos;ordres que voleu executar amb el terminal o amb su.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="821"/>
+        <location filename="../preferences.ui" line="823"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>In&amp;tegració amb l&apos;arxivador:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="844"/>
+        <location filename="../preferences.ui" line="846"/>
         <source>Templates</source>
         <translation>Plantilles</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="850"/>
+        <location filename="../preferences.ui" line="852"/>
         <source>Show only user defined templates in menu</source>
         <translation>Mostra al menú únicament les plantilles definides de l&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="857"/>
+        <location filename="../preferences.ui" line="859"/>
         <source>Show only one template for each MIME type</source>
         <translation>Mostra únicament una plantilla per a cadascun dels tipus MIME</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="864"/>
+        <location filename="../preferences.ui" line="866"/>
         <source>Run default application after creation from template</source>
         <translation>Executa l&apos;aplicació predeterminada després de la creació a partir de la plantilla</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="327"/>
+        <location filename="../preferences.ui" line="329"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Utilitza els prefixes decimals del SI en lloc dels prefixes binaris de l&apos;IEC</translation>
     </message>
