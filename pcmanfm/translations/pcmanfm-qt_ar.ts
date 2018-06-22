@@ -447,12 +447,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="355"/>
         <source>&amp;About</source>
-        <translation>&amp;عن</translation>
+        <translation>عن</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="364"/>
         <source>&amp;New Window</source>
-        <translation>نافذة &amp;جديدة</translation>
+        <translation>نافذة جديدة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
@@ -778,7 +778,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="636"/>
         <source>&amp;Delete</source>
-        <translation>ا&amp;حذف</translation>
+        <translation>حذف</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="639"/>
@@ -873,7 +873,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="120"/>
         <source>&amp;File</source>
-        <translation>&amp;ملفّ</translation>
+        <translation>ملفّ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="124"/>
@@ -883,7 +883,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Help</source>
-        <translation>م&amp;ساعدة</translation>
+        <translation>مساعدة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="148"/>
@@ -899,7 +899,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="202"/>
         <source>&amp;Edit</source>
-        <translation>ت&amp;حرير</translation>
+        <translation>تحرير</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="220"/>
@@ -1337,7 +1337,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="240"/>
         <source>Icon theme:</source>
-        <translation>سمة الأيقونات:</translation>
+        <translation>سمة الأيقونات :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="464"/>
