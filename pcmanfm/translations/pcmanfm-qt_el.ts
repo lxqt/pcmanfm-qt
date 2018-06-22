@@ -200,7 +200,7 @@ USA.</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
-       <source>Folder path</source>
+        <source>Folder path</source>
         <translation>Διαδρομή του φακέλου</translation>
     </message>
     <message>
@@ -1224,15 +1224,19 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="306"/>
         <source>%n item(s)</source>
-        <translation><numerusform>%n αντικείμενο</numerusform>
-        <numerusform>%n αντικείμενα</numerusform>
-        </translation></message>
+        <translation>
+            <numerusform>%n αντικείμενο</numerusform>
+            <numerusform>%n αντικείμενα</numerusform>
+        </translation>
+    </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="308"/>
         <source> (%n hidden)</source>
-        <translation><numerusform> (%n κρυφό)</numerusform>
-        <numerusform> (%n κρυφά)</numerusform>
-        </translation></message>
+        <translation>
+            <numerusform> (%n κρυφό)</numerusform>
+            <numerusform> (%n κρυφά)</numerusform>
+        </translation>
+    </message>
     <message>
         <location filename="../tabpage.cpp" line="313"/>
         <location filename="../tabpage.cpp" line="492"/>
@@ -1243,9 +1247,11 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="522"/>
         <source>%n item(s) selected</source>
-        <translation><numerusform>%n επιλεγμένο αντικείμενο</numerusform>
-        <numerusform>%n επιλεγμένα αντικείμενα</numerusform>
-        </translation></message>
+        <translation>
+            <numerusform>%n επιλεγμένο αντικείμενο</numerusform>
+            <numerusform>%n επιλεγμένα αντικείμενα</numerusform>
+        </translation>
+    </message>
 </context>
 <context>
     <name>PCManFM::View</name>
@@ -1299,10 +1305,9 @@ A space is also reserved for 3 lines of text.</source>
         <translation>Προηγμένα</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="193"/>
         <source>Launch executable files without prompt
 (Requires application restart to take effect)</source>
-        <translation>Εκτέλεση των εκτελέσιμων αρχείων χωρίς προτροπή
+        <translation type="vanished">Εκτέλεση των εκτελέσιμων αρχείων χωρίς προτροπή
 (Απαιτείται επανεκκίνηση της εφαρμογής για να λάβει χώρα η ρύθμιση)</translation>
     </message>
     <message>

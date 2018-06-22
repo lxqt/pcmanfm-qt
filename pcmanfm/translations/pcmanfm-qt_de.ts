@@ -676,7 +676,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Massenumbenennen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
@@ -1233,9 +1233,11 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="308"/>
         <source> (%n hidden)</source>
-        <translation><numerusform> (%n versteckt)</numerusform>
-        <numerusform> (%n versteckt)</numerusform>
-        </translation></message>
+        <translation>
+            <numerusform> (%n versteckt)</numerusform>
+            <numerusform> (%n versteckt)</numerusform>
+        </translation>
+    </message>
     <message>
         <location filename="../tabpage.cpp" line="313"/>
         <location filename="../tabpage.cpp" line="492"/>
