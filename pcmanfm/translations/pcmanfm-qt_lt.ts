@@ -1466,12 +1466,12 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Tam, kad pilnai įsigaliotų, reikia paleisti programą iš naujo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Paleisti vykdomuosius failus neklausiant</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
