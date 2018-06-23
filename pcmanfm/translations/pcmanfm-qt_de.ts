@@ -61,24 +61,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>PCManFM-Qt File Manager
+        <translation>PCManFM-Qt Dateiverwaltung
 
-Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+Urheberrecht (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
 Dieses Programm ist freie Software; Weiterverteilung und/oder 
-Modifizierung unter den Richtlinien der GNU General Public License 
-gemäß der Free Software Foundation ist gestattet; siehe ab 
-Richtlinienversion 2 und spätere.
+Modifizierung unter den Richtlinien der &apos;GNU General Public License&apos; 
+gemäß der Free Software Foundation ist gestattet, ersichtlich in 
+Lizenzversion 2 und in weiteren Neuauflagen der Lizenz.
 
-Dieses Programm wird zur Verfügung gestellt, in der Hoffnung, 
-dass es seinen Nutzern hilfreich sein möge, 
-jedoch OHNE EINE GARANTIE und ohne eine implizierte Garantie auf 
-MARKTGÄNGIGKEIT oder einer ZWECKGGEBUNDENEN 
-FUNKTIONSFÄHIGKEIT. Siehe die GNU General Public License 
-für weitere Details.
+Dieses Programm wird zur Verfügung gestellt, in der Hoffnung 
+seinen Nutzern hilfreich zu sein, jedoch OHNE EINE GARANTIE 
+und ohne einer implizierten Garantie auf MARKTGÄNGIGKEIT 
+oder ZWECKGEBUNDENER FUNKTIONSFÄHIGKEIT. Weitere 
+Einzelheiten sind in der &apos;GNU General Public License&apos; ersichtlich.
 
-Eine Kopie der GNU General Public License sollte mit diesem 
-Programm enthalten sein. Falls nicht, schreiben Sie bitte der 
+Eine Kopie der &apos;GNU General Public License&apos; ist mit diesem 
+Programm enthalten. Falls nicht, schreiben Sie bitte der 
 Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, 
 Boston, MA  02110-1301, USA.</translation>
     </message>
@@ -676,7 +675,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished">Massenumbenennen</translation>
+        <translation>Massenumbenennen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
