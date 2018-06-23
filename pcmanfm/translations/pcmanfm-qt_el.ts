@@ -1465,12 +1465,12 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Απαιτείται επανεκκίνηση της εφαρμογής για να λάβει χώρα ολοκληρωτικά η ρύθμιση</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκτέλεση των εκτελέσιμων αρχείων χωρίς προτροπή</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
