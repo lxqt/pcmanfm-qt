@@ -453,7 +453,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../main-win.ui" line="337"/>
         <source>Go</source>
-        <translation>Eiti</translation>
+        <translation>Pereiti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="346"/>
