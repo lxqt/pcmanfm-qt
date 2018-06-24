@@ -342,32 +342,32 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Durchsuchen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="347"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> Stunde(n)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>und</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Intervalle unter 5 Minuten werden ignoriert</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Intervall:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="380"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> Minute(n)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
@@ -377,12 +377,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Zufällige Diaschau</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Window Manager</source>
-        <translation>Fenstermanager</translation>
+        <translation>Fensterverwaltung</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
@@ -435,12 +435,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="178"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Werkzeugleisten</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="185"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Pfad &amp;Leiste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="313"/>
@@ -640,37 +640,37 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="767"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließe &amp;bisherige Tabs</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="776"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließe &amp;folgende Tabs</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="815"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bewahre Einstellungen für diesen Ordner</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Verbinde &amp;Server</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="828"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ort</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pfadschaltflächen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Massenumbenennen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
@@ -680,7 +680,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
@@ -690,7 +690,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="789"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Menüleiste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="792"/>
@@ -751,12 +751,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="586"/>
         <source>New &amp;Tab</source>
-        <translation>Neuer &amp;Tab</translation>
+        <translation>Neue &amp;Registerkarte</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="589"/>
         <source>New Tab</source>
-        <translation>Neuer Tab</translation>
+        <translation>Neue Registerkarte</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="592"/>
@@ -806,7 +806,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="652"/>
         <source>C&amp;lose Tab</source>
-        <translation>Tab &amp;schließen</translation>
+        <translation>&amp;Reiter schließen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
@@ -1058,32 +1058,32 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>Sicheres WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1116,7 +1116,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Vollbildansicht</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="204"/>
@@ -1134,7 +1134,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktopwindow.cpp" line="604"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Desktopelemente verbergen</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="609"/>
@@ -1242,23 +1242,21 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
         <location filename="../tabpage.cpp" line="492"/>
         <location filename="../tabpage.cpp" line="508"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Verknüpfe mit</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="522"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n Element(e) ausgewählt</numerusform>
+        <numerusform>%n Elemente ausgewählt</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
     <message>
         <location filename="../view.cpp" line="102"/>
         <source>Open in New T&amp;ab</source>
-        <translation>Öffnen in neuem &amp;Tab</translation>
+        <translation>Öffnen in neuem &amp;Reiter</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="106"/>
@@ -1307,7 +1305,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Markierung neu erstellter Dateien</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1357,7 +1355,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="479"/>
         <source>Always show the tab bar</source>
-        <translation>Tableiste immer anzeigen</translation>
+        <translation>Reiterleiste immer anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="497"/>
@@ -1432,12 +1430,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="138"/>
         <source>Open in current tab</source>
-        <translation>Öffnen in aktuellem Tab</translation>
+        <translation>Öffnen in aktuellen Reiter</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="143"/>
         <source>Open in new tab</source>
-        <translation>Öffnen in neuem Tab</translation>
+        <translation>Öffnen in neuem Reiter</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="148"/>
@@ -1459,12 +1457,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Anwendungsneustart für vollständige Einstellungsübernahme erforderlich</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Ausführbare Dateien ohne Bedienerhinweis starten</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1640,12 +1638,12 @@ mit der eigentlichen Verzeichnis- und Dateiansicht angezeigt und nicht
     <message>
         <location filename="../preferences.ui" line="749"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>Den Rei&amp;ter des Wechseldatenträgers schließen</translation>
+        <translation>Schließe &amp;Registerkarte des Wechseldatenträgers</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="756"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>Im Tab des Wechsledatenträgers das Nutze&amp;rverzeichnis anzeigen</translation>
+        <translation type="unfinished">Im Tab des Wechsledatenträgers das Nutze&amp;rverzeichnis anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="799"/>
@@ -1705,22 +1703,22 @@ mit der eigentlichen Verzeichnis- und Dateiansicht angezeigt und nicht
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Benenne Dateien um...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Abbruch</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Warnung</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Umbenennen ist abgebrochen.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
@@ -1731,12 +1729,12 @@ mit der eigentlichen Verzeichnis- und Dateiansicht angezeigt und nicht
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine der Dateien konnte umbenannt werden.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Einige Dateien konnten nicht umbenannt werden.</translation>
     </message>
 </context>
 </TS>
