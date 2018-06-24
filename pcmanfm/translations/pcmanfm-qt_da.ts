@@ -226,7 +226,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../desktop-preferences.ui" line="65"/>
         <source>Wallpaper image file:</source>
-        <translation>Tapetbilledfil:</translation>
+        <translation>Fil til tapetbilled:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="85"/>
@@ -302,7 +302,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../desktop-preferences.ui" line="241"/>
         <location filename="../desktop-preferences.ui" line="265"/>
         <source> px</source>
-        <translation>px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="254"/>
@@ -334,7 +334,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation>Tapetbilledmappe:</translation>
+        <translation>Mappe til tapetbilled:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
@@ -379,12 +379,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Window Manager</source>
-        <translation>Window Manager</translation>
+        <translation>Vindueshåndtering</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Vis menuer fra window managerne når der klikkes på skrivebordet</translation>
+        <translation>Vis menuer fra vindueshåndteringer når der klikkes på skrivebordet</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="453"/>
@@ -697,7 +697,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="836"/>
         <source>&amp;Path Buttons</source>
-        <translation>&amp;Sti-knapper</translation>
+        <translation>&amp;Stiknapper</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
@@ -1409,7 +1409,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="686"/>
         <source>Show thumbnails of files</source>
-        <translation>Brug  forhåndsvisninger</translation>
+        <translation>Vis forhåndsvisninger af filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="676"/>
@@ -1515,7 +1515,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <location filename="../preferences.ui" line="389"/>
         <location filename="../preferences.ui" line="413"/>
         <source> px</source>
-        <translation>px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
