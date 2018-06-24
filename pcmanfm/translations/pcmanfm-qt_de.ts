@@ -327,17 +327,17 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Diaschau</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktiviere Diaschau</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hintergrundbild Ordner:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
@@ -372,7 +372,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Hintergrundbild Ordner</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
@@ -590,7 +590,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="577"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortierung für diesen Ordner &amp;beibehalten</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="627"/>
