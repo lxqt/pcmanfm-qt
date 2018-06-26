@@ -29,7 +29,8 @@
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
         <translation>Programmering:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;</translation>
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="109"/>
@@ -1304,7 +1305,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Vælg nyligt oprettede filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1389,7 +1390,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="120"/>
         <source> sec</source>
-        <translation>Sek</translation>
+        <translation> sek.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
@@ -1456,12 +1457,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Kræver at programmet genstartes for helt at træde i kraft</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Start eksekverbare filer uden at spørge</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1601,7 +1602,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../preferences.ui" line="666"/>
         <source> KB</source>
-        <translation>KB</translation>
+        <translation> KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="683"/>
