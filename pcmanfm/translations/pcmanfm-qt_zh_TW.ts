@@ -1323,12 +1323,12 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>需要重新啟動應用程式才能完全生效</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>啟動可執行檔時不提示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
