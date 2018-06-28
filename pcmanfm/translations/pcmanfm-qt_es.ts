@@ -34,7 +34,8 @@
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
         <translation>Programación:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;</translation>
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="100"/>
@@ -1054,7 +1055,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation></translation>
+        <translation>WebDav seguro</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1447,12 +1448,12 @@ También se reserva espacio para 3 líneas de texto.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Requiere el reinicio de la aplicación para tener efecto por completo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanzar los archivos ejecutables sin preguntar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
