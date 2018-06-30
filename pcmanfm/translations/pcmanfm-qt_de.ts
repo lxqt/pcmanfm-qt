@@ -535,7 +535,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="497"/>
         <source>&amp;Paste</source>
-        <translation>E&amp;infügen</translation>
+        <translation>&amp;Einfügen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="500"/>
@@ -605,7 +605,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="644"/>
         <source>&amp;Rename</source>
-        <translation>Um&amp;benennen</translation>
+        <translation>&amp;Umbenennen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
