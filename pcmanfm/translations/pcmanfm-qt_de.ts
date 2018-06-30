@@ -445,7 +445,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="313"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nutzerverzeichnis</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="325"/>
@@ -1633,17 +1633,17 @@ mit der eigentlichen Verzeichnis- und Dateiansicht angezeigt und nicht
     <message>
         <location filename="../preferences.ui" line="743"/>
         <source>When removable medium unmounted:</source>
-        <translation>Wenn Wechseldatenträger entfernt werden:</translation>
+        <translation>Beim Aushängen eines Wechseldatenträgers:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="749"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>Schließe &amp;Registerkarte des Wechseldatenträgers</translation>
+        <translation>Registerkarten des Wechseldatenträgers &amp;schließen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="756"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished">Im Tab des Wechsledatenträgers das Nutze&amp;rverzeichnis anzeigen</translation>
+        <translation>Registerkarten des Wechseldatenträgers zum Nutzerverzeichnis &amp;wechseln</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="799"/>
