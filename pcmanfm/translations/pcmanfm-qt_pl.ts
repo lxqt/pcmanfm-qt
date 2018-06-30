@@ -1466,12 +1466,12 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Wymaga ponownego uruchomienia aplikacji, aby uzyskać pełny efekt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Uruchamiaj pliki wykonywalne bez potwierdzenia</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
