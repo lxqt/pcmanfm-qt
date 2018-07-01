@@ -474,7 +474,7 @@ També es reserva un espai per a 3 línies de text.</translation>
         <location filename="../main-win.ui" line="367"/>
         <source>New Window</source>
         <translatorcomment>Finestra nova</translatorcomment>
-        <translation></translation>
+        <translation>Finestra nova</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="370"/>
@@ -1263,7 +1263,7 @@ També es reserva un espai per a 3 línies de text.</translation>
         <location filename="../view.cpp" line="106"/>
         <source>Open in New Win&amp;dow</source>
         <translatorcomment>Obre en una fines&amp;tra nova</translatorcomment>
-        <translation></translation>
+        <translation>Obre en una fines&amp;tra nova</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="114"/>
@@ -1393,7 +1393,7 @@ També es reserva un espai per a 3 línies de text.</translation>
         <location filename="../preferences.ui" line="120"/>
         <source> sec</source>
         <translatorcomment> s</translatorcomment>
-        <translation></translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
@@ -1465,7 +1465,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Inicia els fitxers executables sense preguntar-ho</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
