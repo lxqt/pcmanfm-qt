@@ -448,7 +448,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="325"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Odśwież</translation>
+        <translation>&amp;Załaduj ponownie</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="337"/>
@@ -458,7 +458,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="346"/>
         <source>Quit</source>
-        <translation>Zamknij</translation>
+        <translation>Wyjdź</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="355"/>
@@ -598,7 +598,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="636"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Usuń</translation>
+        <translation>&amp; Usuń</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="644"/>
@@ -744,7 +744,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="473"/>
         <source>Cu&amp;t</source>
-        <translation>W&amp;ytnij</translation>
+        <translation>Wy&amp;tnij</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="586"/>
@@ -909,7 +909,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Help</source>
-        <translation>Po&amp;moc</translation>
+        <translation>&amp;Pomoc</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="148"/>
