@@ -60,3 +60,10 @@ All switches (command line options) mentioned above are explained in detail in
 ## Development
 
 Issues should go to the tracker of PCManFM-Qt at https://github.com/lxqt/pcmanfm-qt/issues.
+
+
+### Translation (Weblate)
+
+<a href="https://weblate.lxqt.org/projects/lxqt/pcmanfm-qt/">
+<img src="https://weblate.lxqt.org/widgets/lxqt/-/pcmanfm-qt/multi-auto.svg" alt="Translation status" />
+</a>
