@@ -723,7 +723,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="485"/>
         <source>&amp;Copy</source>
-        <translation>複製(&amp;C)</translation>
+        <translation>複製 (&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="488"/>
