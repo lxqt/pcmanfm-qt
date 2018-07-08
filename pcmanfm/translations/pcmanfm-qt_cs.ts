@@ -695,7 +695,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="364"/>
         <source>&amp;New Window</source>
-        <translation>Nové &amp;okno</translation>
+        <translation>&amp;Nové okno</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="440"/>
@@ -1095,7 +1095,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Zvětšit obrázek tak, aby vyplnil obrazovku</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="204"/>
@@ -1113,7 +1113,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="604"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrýt zástupce</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="609"/>
@@ -1175,7 +1175,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="191"/>
         <source>Compact View</source>
-        <translation>Celistvý pohled</translation>
+        <translation>Zhuštěný pohled</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="192"/>
@@ -1228,19 +1228,17 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="522"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>vybrána %n položka</numerusform>
+        <numerusform>vybrány %n položky</numerusform>
+        <numerusform>vybráno %n položek</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
     <message>
         <location filename="../view.cpp" line="102"/>
         <source>Open in New T&amp;ab</source>
-        <translation>Otevřít v nové &amp;kartě</translation>
+        <translation>Otevřít v nové k&amp;artě</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="106"/>
@@ -1250,7 +1248,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../view.cpp" line="114"/>
         <source>Open in Termina&amp;l</source>
-        <translation>Otevřít v &amp;terminálu</translation>
+        <translation>Otevřít v terminá&amp;lu</translation>
     </message>
 </context>
 <context>
@@ -1258,7 +1256,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Nastavení</translation>
+        <translation>Předvolby</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -1279,7 +1277,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation>Nosič dat</translation>
+        <translation>Svazek</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
@@ -1289,7 +1287,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrat nově vytvořené soubory</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1359,7 +1357,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>Open files with single click</source>
-        <translation>Otvírat soubory jedním klepnutím</translation>
+        <translation>Otvírat soubory jedním kliknutím</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="100"/>
@@ -1441,12 +1439,12 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Aby se změna projevila, je třeba aplikaci zavřít a spustit znovu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Spouštět spustitelné soubory bez potvrzování</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1474,17 +1472,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Považovat záložní soubory za skryté</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="346"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Vždy zobrazovat celé názvy souborů</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobrazovat ikony skrytých souborů stínovaně</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
@@ -1511,7 +1509,8 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="409"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ve výchozím stavu 3 obrazové body.
+Je také vyhrazeno místo pro tři řádky textu.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="426"/>
@@ -1533,7 +1532,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="490"/>
         <source>Fullwidth tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Pruh karet plné šíře</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="542"/>
@@ -1543,7 +1542,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="549"/>
         <source>Home</source>
-        <translation>Domovský adresář</translation>
+        <translation>Domovská složka</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="562"/>
@@ -1588,7 +1587,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="683"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation>Potřebuje ffmpegthumbnailer</translation>
+        <translation>Vyžaduje ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="713"/>
@@ -1623,7 +1622,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="756"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>Změnit adresář v kartě na &amp;domovský</translation>
+        <translation>Změnit složku v kartě na &amp;domovskou</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="799"/>
@@ -1633,27 +1632,27 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="823"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>Archivní &amp;správa:</translation>
+        <translation>Začlenění správce arch&amp;ivů:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="846"/>
         <source>Templates</source>
-        <translation>Předlohy</translation>
+        <translation>Šablony</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="852"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>V nabídce zobrazovat pouze uživatelem určené šablony</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="859"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobrazit pro každý MIME typ pouze jednu šablonu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="866"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Po vytvoření ze šablony spustit výchozí aplikaci</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="783"/>
@@ -1669,13 +1668,13 @@ above the folder-view and not above the left pane.</source>
         <location filename="../preferences.ui" line="812"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation>Příklady: &quot;xterm -e %s&quot; pro terminál nebo &quot;gksu %s&quot; pro přepnutí uživatele.
+        <translation>Příklady: „xterm -e %s“ pro terminál nebo „gksu %s“ pro přepnutí uživatele.
 %s = příkazový řádek, který chcete spustit pomocí terminálu nebo su.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="329"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>Použít SI desítkové předpony namísto IEC dvojkových</translation>
     </message>
 </context>
 <context>
@@ -1683,38 +1682,38 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Přejmenování souborů…</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Přerušit</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Varování</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Přejmenování bylo zrušeno.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Chyba</translation>
+        <translation>Chyba</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodařilo se přejmenovat ani jeden soubor.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Některé soubory se nepodařilo přejmenovat.</translation>
     </message>
 </context>
 </TS>
