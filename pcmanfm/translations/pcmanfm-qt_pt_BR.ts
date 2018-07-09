@@ -456,7 +456,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="370"/>
         <source>Ctrl+N</source>
-        <translation>Ctrl+N</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="378"/>
@@ -527,7 +527,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../main-win.ui" line="505"/>
         <source>Select &amp;All</source>
         <translatorcomment>Selecion&amp;ar tudo</translatorcomment>
-        <translation></translation>
+        <translation>Selecionar &amp;tudo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="513"/>
@@ -688,7 +688,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="508"/>
         <source>Ctrl+A</source>
-        <translation>Ctrl+A</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="298"/>
@@ -753,7 +753,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="607"/>
         <source>Alt+Left</source>
-        <translation>Alt+Left</translation>
+        <translation>Alt+Seta esquerda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="616"/>
@@ -773,7 +773,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="639"/>
         <source>Del</source>
-        <translation>Del</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="647"/>
@@ -828,7 +828,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="655"/>
         <source>Ctrl+W</source>
-        <translation>Ctrl+W</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="663"/>
@@ -888,18 +888,18 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="120"/>
         <source>&amp;File</source>
-        <translation type="unfinished">&amp;Arquivo</translation>
+        <translation>&amp;Arquivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Help</source>
-        <translation>Aj&amp;uda</translation>
+        <translation>&amp;Ajuda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="148"/>
         <location filename="../main-win.ui" line="168"/>
         <source>&amp;View</source>
-        <translation>&amp;Visualizar</translation>
+        <translation>&amp;Exibir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="202"/>
@@ -1154,7 +1154,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1360"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Deletarr</translation>
+        <translation>&amp;Deletar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1423"/>
@@ -1214,11 +1214,9 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="308"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform>(%n oculto)</numerusform>
-            <numerusform>(%n ocultos)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform> (%n oculto)</numerusform>
+        <numerusform> (%n ocultos)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="313"/>
         <location filename="../tabpage.cpp" line="492"/>
@@ -1284,7 +1282,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation>Volume</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
