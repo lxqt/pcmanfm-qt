@@ -893,13 +893,13 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Help</source>
-        <translation>&amp;Ajuda</translation>
+        <translation>Aj&amp;uda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="148"/>
         <location filename="../main-win.ui" line="168"/>
         <source>&amp;View</source>
-        <translation>&amp;Exibir</translation>
+        <translation>E&amp;xibir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="202"/>
@@ -909,7 +909,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="220"/>
         <source>&amp;Bookmarks</source>
-        <translation>&amp;Marcadores</translation>
+        <translation>&amp;Favoritos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="227"/>
@@ -919,7 +919,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="244"/>
         <source>&amp;Tool</source>
-        <translation>Ferramen&amp;tas</translation>
+        <translation>Ferra&amp;mentas</translation>
     </message>
 </context>
 <context>
@@ -942,7 +942,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Quit PCManFM</source>
-        <translation>Fechar PCManFM</translation>
+        <translation>Fechar</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
