@@ -888,7 +888,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="120"/>
         <source>&amp;File</source>
-        <translation>&amp;Arquivo</translation>
+        <translation type="unfinished">&amp;Arquivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="142"/>
@@ -899,7 +899,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../main-win.ui" line="148"/>
         <location filename="../main-win.ui" line="168"/>
         <source>&amp;View</source>
-        <translation>&amp;Ver</translation>
+        <translation>&amp;Visualizar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="202"/>
