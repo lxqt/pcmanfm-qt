@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>O programu</translation>
+        <translation>O aplikaci</translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
@@ -69,27 +69,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Vloženo vyjímatelné médium</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Je vloženo vyjímatelné médium&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>Typ média:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Zjišťování…</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte co má být provedeno:</translation>
     </message>
 </context>
 <context>
@@ -97,22 +97,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Dávkové přejmenování</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># bude nahrazeno čísly začínajícími od:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Přejmenovat označené soubory na:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Název#</translation>
     </message>
 </context>
 <context>
@@ -120,42 +120,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Připojit ke vzdálenému serveru</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Anonymní přih&amp;lášení</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>Přihlásit se jako &amp;uživatel:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Zadejte vzdálenou složku do které se připojit</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Typ:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Port:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Umístění:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Stroj:</translation>
     </message>
 </context>
 <context>
@@ -163,7 +163,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formulář</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -173,7 +173,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Složka pracovní plochy:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -183,7 +183,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Umístění složky</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
@@ -196,7 +196,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>Nastavení pracovní plochy</translation>
+        <translation>Předvolby pracovní plochy</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
@@ -226,7 +226,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="100"/>
         <source>Image file path</source>
-        <translation>Cesta k souboru s obrázkem</translation>
+        <translation>Umístění souboru s obrázkem</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="107"/>
@@ -246,7 +246,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="138"/>
         <source>Label Text</source>
-        <translation>Text</translation>
+        <translation>Text štítku</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
@@ -281,7 +281,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Výchozí jsou tři obrazové body.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="241"/>
@@ -298,7 +298,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Výchozí je jeden obrazový bod.
+Je také vyhrazeno místo pro 3 řádky textu.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="278"/>
@@ -308,57 +309,57 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Prezentace</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapnout prezentaci</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Složka obrázku na pozadí:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Procházet</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="347"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> hodin</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>a</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Intervaly kratší než 5 minut budou ignorovány</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Interval:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="380"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> minuty</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Složka s obrázky na plochu</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Náhodné pořadí prezentace</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
@@ -368,7 +369,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation type="unfinished"></translation>
+        <translation>Při kliknutí na plochu zobrazit nabídky poskytované správci oken</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="453"/>
@@ -391,7 +392,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="304"/>
         <source>Alt+Up</source>
-        <translation>Alt+Up</translation>
+        <translation>Alt + šipka nahoru</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="316"/>
@@ -401,7 +402,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="432"/>
         <source>Reload</source>
-        <translation>Obnovit</translation>
+        <translation>Načíst znovu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="328"/>
@@ -416,12 +417,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="178"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>Pruh nás&amp;trojů</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="185"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pruh popisů umístění</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="313"/>
@@ -431,7 +432,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="325"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Obnovit</translation>
+        <translation>&amp;Načíst znovu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="337"/>
@@ -446,7 +447,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="355"/>
         <source>&amp;About</source>
-        <translation>&amp;O programu</translation>
+        <translation>&amp;O aplikaci</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
@@ -491,12 +492,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="422"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation>&amp;Přidat do záložek</translation>
+        <translation>Přid&amp;at do záložek</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="427"/>
         <source>&amp;Applications</source>
-        <translation>P&amp;rogramy</translation>
+        <translation>&amp;Aplikace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="476"/>
@@ -541,17 +542,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="529"/>
         <source>&amp;Descending</source>
-        <translation>&amp;Sesupně</translation>
+        <translation>&amp;Sestupně</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="537"/>
         <source>&amp;By File Name</source>
-        <translation>Podle &amp;jména</translation>
+        <translation>Podle &amp;názvu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="545"/>
         <source>By &amp;Modification Time</source>
-        <translation>Podle č&amp;asu</translation>
+        <translation>Podle č&amp;asu změny</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="553"/>
@@ -566,17 +567,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="569"/>
         <source>&amp;Folder First</source>
-        <translation>&amp;Adresáře jako pvní</translation>
+        <translation>&amp;Složky jako první</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="577"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Zachovat řazení &amp;pro tuto složku</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="627"/>
         <source>&amp;Invert Selection</source>
-        <translation>&amp;Invertovat výběr</translation>
+        <translation>Převrát&amp;it výběr</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -596,7 +597,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="684"/>
         <source>By File &amp;Size</source>
-        <translation>Podle v&amp;elikosti</translation>
+        <translation>Podle veliko&amp;sti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="689"/>
@@ -616,57 +617,57 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="767"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřít &amp;předchozí karty</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="776"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřít &amp;následující karty</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="815"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Zachovat nastavení &amp;pro tuto složku</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Připojit k &amp;serveru</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="828"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Umístění</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>Tlačítka &amp;popisu umístění</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Hromadné přejmenování</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Hromadné přejmenování</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
         <source>Close &amp;other tabs</source>
-        <translation>Zavřít &amp;jiné karty</translation>
+        <translation>Zavřít &amp;ostatní karty</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="789"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pruh nabídek</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="792"/>
@@ -692,7 +693,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="298"/>
         <source>Go &amp;Up</source>
-        <translation>&amp;Nahoru</translation>
+        <translation>Nahor&amp;u</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="364"/>
@@ -707,7 +708,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="448"/>
         <source>&amp;Compact View</source>
-        <translation>&amp;Celistvý pohled</translation>
+        <translation>&amp;Zhuštěný pohled</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="456"/>
@@ -722,12 +723,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="473"/>
         <source>Cu&amp;t</source>
-        <translation>V&amp;yjmout</translation>
+        <translation>Vyjmou&amp;t</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="586"/>
         <source>New &amp;Tab</source>
-        <translation>Nová &amp;karta</translation>
+        <translation>Nová kar&amp;ta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="589"/>
@@ -752,7 +753,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="607"/>
         <source>Alt+Left</source>
-        <translation>Alt+vlevo</translation>
+        <translation>Alt + šipka vlevo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="616"/>
@@ -767,7 +768,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="622"/>
         <source>Alt+Right</source>
-        <translation>Alt+vpravo</translation>
+        <translation>Alt + šipka vpravo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="639"/>
@@ -782,7 +783,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="652"/>
         <source>C&amp;lose Tab</source>
-        <translation>Zavřít kartu</translation>
+        <translation>&amp;Zavřít kartu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
@@ -832,7 +833,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Alt+Return</source>
-        <translation>Alt+Return</translation>
+        <translation>Alt+Enter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="697"/>
@@ -852,7 +853,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="710"/>
         <source>Open as &amp;Root</source>
-        <translation>Otevřít jako &amp;superuživatel</translation>
+        <translation>Otevřít jako &amp;správce systému</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="715"/>
@@ -882,7 +883,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="93"/>
         <source>Filter by string...</source>
-        <translation>Filtrovat podle řetězce...</translation>
+        <translation>Filtrovat podle řetězce…</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="120"/>
@@ -913,7 +914,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="227"/>
         <source>&amp;Go</source>
-        <translation>Po&amp;hyb</translation>
+        <translation>&amp;Jít na</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="244"/>
@@ -926,88 +927,88 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="162"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Název profilu nastavení</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="162"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>PROFIL</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>Run PCManFM as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustit PCManFM jako proces služby</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Quit PCManFM</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukončit PCManFM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustit správce desktopu</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokud je spuštěný, vypnout správce desktopu</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevřít dialog předvoleb desktopu na stránce, které název byl zadán</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
         <location filename="../application.cpp" line="192"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>NAZEV</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevřít nové okno</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="183"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevřít nástroj pro hledání souborů</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavit pozadí plochy ze SOUBORU s obrázkem</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>SOUBOR</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>REZIM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavit režim obrázku na pozadí plochy. MODE=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevřít dialog předvoleb na stránce které byl zadán název</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Files or directories to open</source>
-        <translation>Soubory nebo adresáře k otevření</translation>
+        <translation>Soubory nebo složky k otevření</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation>[SOUBOR1, SOUBOR2,...]</translation>
+        <translation>[SOUBOR1, SOUBOR2,…]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="543"/>
@@ -1031,7 +1032,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../autorundialog.cpp" line="135"/>
         <source>Removable Disk</source>
-        <translation>Odstranitelný disk</translation>
+        <translation>Vyjímatelné datové úložiště</translation>
     </message>
 </context>
 <context>
@@ -1039,32 +1040,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>Zabezpečený WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1072,12 +1073,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
-        <translation>Vyplnit pouze barvou pozadí</translation>
+        <translation>Pouze vyplnit barvou pozadí</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>Vyplnit celou obrazovku</translation>
+        <translation>Roztáhnout aby vyplnilo celou obrazovku</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
@@ -1110,7 +1111,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="578"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>&amp;Připíchnout v nynější poloze</translation>
+        <translation>&amp;Připíchnout ve stávající poloze</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="604"/>
@@ -1138,7 +1139,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="366"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>Tímto bude pruh s nabídkou úplně skryt. Použijte Ctrl+M pro jeho opětovné ukázání.</translation>
+        <translation>Tímto bude pruh s nabídkou úplně skryt. Pro jeho opětovné zobrazení použijte Ctrl+M.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="651"/>
@@ -1164,7 +1165,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1431"/>
         <source>Switch user command is not set.</source>
-        <translation>Příkaz ke změně uživatele není nastaven.</translation>
+        <translation>Příkaz pro přenutí uživatele není nastaven.</translation>
     </message>
 </context>
 <context>
@@ -1225,7 +1226,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../tabpage.cpp" line="492"/>
         <location filename="../tabpage.cpp" line="508"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Odkaz na</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="522"/>
@@ -1349,7 +1350,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="504"/>
         <source>Remember the size of the last closed window</source>
-        <translation>Pamatovat si rozměry naposedy zavřeného okna</translation>
+        <translation>Pamatovat si rozměry naposledy zavřeného okna</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
@@ -1364,7 +1365,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="100"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation>Zpoždění automatického výběru v režimu jednoho klepnutí (0 pro zákaz)</translation>
+        <translation>Zpoždění automatického výběru v režimu jednoho kliknutí (0 pro vypnutí)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="107"/>
@@ -1384,7 +1385,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Confirm before deleting files</source>
-        <translation>Potvrdit mazání souborů</translation>
+        <translation>Vyžadovat potvrzení před smazáním souborů</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="172"/>
@@ -1399,7 +1400,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="676"/>
         <source>Only show thumbnails for local files</source>
-        <translation>Zobrazovat náhled jen u lokálních souborů</translation>
+        <translation>Zobrazovat náhledy jen u souborů nacházejících se přímo v počítači</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
@@ -1414,7 +1415,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="138"/>
         <source>Open in current tab</source>
-        <translation>Otevřít v nynější kartě</translation>
+        <translation>Otevřít ve stávající kartě</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="143"/>
@@ -1429,12 +1430,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Soubory na vyjímatelných médiích rovnou mazat namísto vytváření Koše</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyžadovat potvrzení před přesunutím souborů do Koše</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
@@ -1452,19 +1453,19 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="259"/>
         <location filename="../preferences.ui" line="269"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Využíváno ikonovým zobrazením</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="276"/>
         <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Využíváno zhuštěným a podrobným zobrazením</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="293"/>
         <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Využíváno zobrazením s náhledy</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
@@ -1489,12 +1490,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="379"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>Minimální okraje položky v zobrazení s ikonami:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="386"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>výchozí jsou tři obrazové body.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
@@ -1523,13 +1524,15 @@ Je také vyhrazeno místo pro tři řádky textu.</translation>
         <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokud není zaškrtnuto, bude pruh karet zobrazen
+pouze pokud je více než jedna karta.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="486"/>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokud není zaškrtnuto, pruh karet bude umístěn
+pouze nad složkový pohled a ne nad levé podokno.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="490"/>
@@ -1539,7 +1542,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="542"/>
         <source>Show in places</source>
-        <translation>Ukázat pod Místa</translation>
+        <translation>Zobrazovat v Místa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="549"/>
@@ -1599,12 +1602,12 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="719"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>Připojit přenosná úložiště automaticky při spuštění programu</translation>
+        <translation>Při spouštění aplikaci připojit ty svazky, které lze</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="726"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>Připojit přenosná úložiště automaticky, když jsou vložena</translation>
+        <translation>Při vložení/připojení vyjímatelného média ho automaticky připojit (mount)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="733"/>
