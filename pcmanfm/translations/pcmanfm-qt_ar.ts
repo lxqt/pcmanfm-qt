@@ -437,7 +437,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="337"/>
         <source>Go</source>
-        <translation>تنقّل</translation>
+        <translation>تنقّل إلى</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="346"/>
@@ -1218,15 +1218,13 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="308"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform>(لا شيء مخفيّ)</numerusform>
-            <numerusform>(واحد مخفيّ)</numerusform>
-            <numerusform>(إثنان مخفيّان)</numerusform>
-            <numerusform>(%n مخفيّة)</numerusform>
-            <numerusform>(%n مخفيًّا)</numerusform>
-            <numerusform>(%n مخفيّ)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform> (لا شيء مخفيّ)</numerusform>
+        <numerusform> (واحد مخفيّ)</numerusform>
+        <numerusform> (إثنان مخفيّان)</numerusform>
+        <numerusform> (%n مخفيّة)</numerusform>
+        <numerusform> (%n مخفيًّا)</numerusform>
+        <numerusform> (%n مخفيّ)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="313"/>
         <location filename="../tabpage.cpp" line="492"/>
@@ -1717,7 +1715,7 @@ above the folder-view and not above the left pane.</source>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">خطأ</translation>
+        <translation>خطأ</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
