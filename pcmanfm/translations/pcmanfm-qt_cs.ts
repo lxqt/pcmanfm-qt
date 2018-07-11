@@ -61,7 +61,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>Správce souborů PCManFM-Qt
+
+Autorské právo © 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Tato aplikace je svobodný software, můžete ji šířit dále a/nebo
+upravovat za podmínek GNU obecné veřejné licence
+jak je vydaná nadací Free Software Foundation, buď verze 2
+této licence, nebo (jako vaše volba) jakékoli pozdější.
+
+Tato aplikace je šířena v naději, že bude užitečná,
+ale BEZ JAKÝCHKOLI ZÁRUK, bez ani předpokládané záruky
+PRODEJNOSTI nebo VHODNOSTI PRO KONKRÉTNÍ ÚČEL.
+Podrobnosti naleznete v GNU obecné veřejné licenci.
+
+Společně s touto aplikací byste měli obdržet kopii
+GNU obecné veřejné licence, pokud tomu tak není, napište do nadace Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
 </context>
 <context>
