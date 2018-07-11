@@ -91,6 +91,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     listView_->setMovement(QListView::Snap);
     listView_->setResizeMode(QListView::Adjust);
     listView_->setFlow(QListView::TopToBottom);
+    listView_->setDropIndicatorShown(false); // we draw the drop indicator ourself
 
     // This is to workaround Qt bug 54384 which affects Qt >= 5.6
     // https://bugreports.qt.io/browse/QTBUG-54384
@@ -128,7 +129,6 @@ DesktopWindow::DesktopWindow(int screenNum):
         connect(proxyModel_, &Fm::ProxyFolderModel::layoutChanged, this, &DesktopWindow::onLayoutChanged);
         connect(proxyModel_, &Fm::ProxyFolderModel::sortFilterChanged, this, &DesktopWindow::onModelSortFilterChanged);
         connect(proxyModel_, &Fm::ProxyFolderModel::dataChanged, this, &DesktopWindow::onDataChanged);
-        connect(listView_, &QListView::indexesMoved, this, &DesktopWindow::onIndexesMoved);
     }
 
     // remove frame
@@ -712,41 +712,6 @@ void DesktopWindow::onDataChanged(const QModelIndex& topLeft, const QModelIndex&
     }
 }
 
-void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
-    auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
-    auto itemSize = delegate->itemSize();
-    // remember the custom position for the items
-    for(const QModelIndex& index : indexes) {
-        // Under some circumstances, Qt might emit indexMoved for
-        // every single cells in the same row. (when QAbstractItemView::SelectItems is set)
-        // So indexes list may contain several indixes for the same row.
-        // Since we only care about rows, not individual cells,
-        // let's handle column 0 of every row here.
-        if(index.column() == 0) {
-            auto file = proxyModel_->fileInfoFromIndex(index);
-            QRect itemRect = listView_->rectForIndex(index);
-            QPoint tl = itemRect.topLeft();
-            QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
-            workArea.adjust(12, 12, -12, -12);
-
-            // check if the position is occupied by another item
-            auto existingItem = std::find_if(customItemPos_.cbegin(), customItemPos_.cend(), [tl](const std::pair<std::string, QPoint>& elem){
-                return elem.second == tl;
-            });
-
-            if(existingItem == customItemPos_.cend() // don't put items on each other
-                    && tl.x() >= workArea.x() && tl.y() >= workArea.y()
-                    && tl.x() + itemSize.width() <= workArea.right() + 1 // for historical reasons (-> Qt doc)
-                    && tl.y() + itemSize.height() <= workArea.bottom() + 1) { // as above
-                customItemPos_[file->name()] = tl;
-                // qDebug() << "indexMoved:" << name << index << itemRect;
-            }
-        }
-    }
-    saveItemPositions();
-    queueRelayout();
-}
-
 void DesktopWindow::onFolderStartLoading() { // desktop may be reloaded
     if(model_) {
         disconnect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
@@ -1249,11 +1214,44 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
                 }
             }
             break;
+        case QEvent::Paint:
+            // NOTE: The drop indicator isn't drawn/updated automatically, perhaps,
+            // because we paint desktop ourself. So, we draw it here.
+            paintDropIndicator();
+            break;
         default:
             break;
         }
     }
     return Fm::FolderView::eventFilter(watched, event);
+}
+
+void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) {
+    // see DesktopWindow::eventFilter for an explanation
+    QRect oldDropRect = dropRect_;
+    dropRect_ = QRect();
+    QModelIndex index = listView_->indexAt(e->pos());
+    if(index.isValid() && index.model()) {
+        QVariant data = index.model()->data(index, Fm::FolderModel::Role::FileInfoRole);
+        auto info = data.value<std::shared_ptr<const Fm::FileInfo>>();
+        if(info && info->isDir()) {
+            dropRect_ = listView_->rectForIndex(index);
+        }
+    }
+    if(oldDropRect != dropRect_){
+        listView_->viewport()->update();
+    }
+}
+
+void DesktopWindow::paintDropIndicator()
+{
+    if(!dropRect_.isNull()) {
+        QPainter painter(listView_->viewport());
+        QStyleOption opt;
+        opt.init(listView_->viewport());
+        opt.rect = dropRect_;
+        style()->drawPrimitive(QStyle::PE_IndicatorItemViewItemDrop, &opt, &painter, listView_);
+    }
 }
 
 void DesktopWindow::childDropEvent(QDropEvent* e) {
@@ -1266,45 +1264,59 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             QModelIndex dropIndex = listView_->indexAt(e->pos());
             if(dropIndex.isValid()) { // drop on an item
                 QModelIndexList selected = selectedIndexes(); // the dragged items
-                if(selected.contains(dropIndex)) { // drop on self, ignore
-                    moveItem = true;
+                if(!selected.contains(dropIndex)) { // not a drop on self
+                    if(auto file = proxyModel_->fileInfoFromIndex(dropIndex)) {
+                        if(!file->isDir()) { // drop on a non-directory file
+                            moveItem = true;
+                        }
+                    }
                 }
             }
-            else { // drop on a blank area
+            else { // drop on a blank area (maybe, between other items)
                 moveItem = true;
             }
         }
     }
     if(moveItem) {
         e->accept();
-    }
-    else {
+        // move selected items to the drop position, putting them successively
         auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
         auto grid = delegate->itemSize();
+        QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
+        workArea.adjust(12, 12, -12, -12);
+        QPoint pos = mapFromGlobal(e->pos());
+        const QModelIndexList indexes = selectedIndexes();
+        for(const QModelIndex& indx : indexes) {
+            if(auto file = proxyModel_->fileInfoFromIndex(indx)) {
+                stickToPosition(QString::fromStdString(file->name()), pos, workArea, grid);
+            }
+        }
+        saveItemPositions();
+        queueRelayout();
+    }
+    else {
         Fm::FolderView::childDropEvent(e);
+        // remove the drop indicator
+        dropRect_ = QRect();
+        listView_->viewport()->update();
         // position dropped items successively, starting with the drop rectangle
         if(mimeData->hasUrls()
            && (e->dropAction() == Qt::CopyAction
                || e->dropAction() == Qt::MoveAction
                || e->dropAction() == Qt::LinkAction)) {
-            QList<QUrl> urlList = mimeData->urls();
-            for(int i = 0; i < urlList.count(); ++i) {
-                std::string name = urlList.at(i).fileName().toUtf8().constData();
-                if(!name.empty()) { // respect the positions of existing files
-                    QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
-                    if(!QFile::exists(desktopDir + QString::fromStdString(name))) {
-                        QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
-                        workArea.adjust(12, 12, -12, -12);
-                        QPoint pos = mapFromGlobal(e->pos());
-                        alignToGrid(pos, workArea.topLeft(), grid, listView_->spacing());
-                        if(i > 0)
-                            pos.setY(pos.y() + grid.height() + listView_->spacing());
-                        if(pos.y() + grid.height() > workArea.bottom() + 1) {
-                            pos.setX(pos.x() + grid.width() + listView_->spacing());
-                            pos.setY(workArea.top());
-                        }
-                        customItemPos_[name] = pos;
-                    }
+            auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
+            auto grid = delegate->itemSize();
+            QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
+            workArea.adjust(12, 12, -12, -12);
+            const QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
+            QPoint pos = mapFromGlobal(e->pos());
+            const QList<QUrl> urlList = mimeData->urls();
+            for(const QUrl& url : urlList) {
+                QString name = url.fileName();
+                if(!name.isEmpty()
+                   // don't stick to the position if there is an overwrite prompt
+                   && !QFile::exists(desktopDir + name)) {
+                    stickToPosition(name, pos, workArea, grid);
                 }
             }
             saveItemPositions();
@@ -1312,10 +1324,39 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
     }
 }
 
+// This function recursively repositions next sticky items if needed.
+void DesktopWindow::stickToPosition(const QString& file, QPoint& pos, const QRect& workArea, const QSize& grid) {
+    // normalize the position
+    alignToGrid(pos, workArea.topLeft(), grid, listView_->spacing());
+    if(pos.y() + grid.height() > workArea.bottom() + 1) {
+        pos.setX(pos.x() + grid.width() + listView_->spacing());
+        pos.setY(workArea.top());
+    }
+    // find if there is a sticky item at this position
+    QString otherFile;
+    auto oldItem = std::find_if(customItemPos_.cbegin(),
+                                customItemPos_.cend(),
+                                [pos](const std::pair<std::string, QPoint>& elem) {
+                                    return elem.second == pos;
+                                });
+    if(oldItem != customItemPos_.cend()) {
+        otherFile = QString::fromStdString(oldItem->first);
+    }
+    // stick to the position
+    customItemPos_[file.toStdString()] = pos;
+    // find the next position
+    pos.setY(pos.y() + grid.height() + listView_->spacing());
+    // if there was another sticky item at the same position, move it to the next position
+    if(!otherFile.isEmpty() && otherFile != file) {
+        QPoint nextPos = pos;
+        stickToPosition(otherFile, nextPos, workArea, grid);
+    }
+}
+
 void DesktopWindow::alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize& grid, const int spacing) {
     qreal w = qAbs((qreal)pos.x() - (qreal)topLeft.x())
               / (qreal)(grid.width() + spacing);
-    qreal h = qAbs(pos.y() - (qreal)topLeft.y())
+    qreal h = qAbs((qreal)pos.y() - (qreal)topLeft.y())
               / (qreal)(grid.height() + spacing);
     pos.setX(topLeft.x() + qRound(w) * (grid.width() + spacing));
     pos.setY(topLeft.y() + qRound(h) * (grid.height() + spacing));
@@ -1326,7 +1367,7 @@ void DesktopWindow::closeEvent(QCloseEvent* event) {
     event->ignore();
 }
 
-void DesktopWindow::paintEvent(QPaintEvent *event) {
+void DesktopWindow::paintEvent(QPaintEvent* event) {
     paintBackground(event);
     QWidget::paintEvent(event);
 }

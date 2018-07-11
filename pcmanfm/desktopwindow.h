@@ -98,9 +98,10 @@ protected:
     virtual bool event(QEvent* event) override;
     virtual bool eventFilter(QObject* watched, QEvent* event) override;
 
+    virtual void childDragMoveEvent(QDragMoveEvent* e) override;
     virtual void childDropEvent(QDropEvent* e) override;
     virtual void closeEvent(QCloseEvent* event) override;
-    virtual void paintEvent(QPaintEvent *event) override;
+    virtual void paintEvent(QPaintEvent* event) override;
 
 protected Q_SLOTS:
     void onOpenDirRequested(const Fm::FilePath& path, int target);
@@ -112,7 +113,6 @@ protected Q_SLOTS:
     void onRowsInserted(const QModelIndex& parent, int start, int end);
     void onLayoutChanged();
     void onModelSortFilterChanged();
-    void onIndexesMoved(const QModelIndexList& indexes);
     void onDataChanged(const QModelIndex& topLeft, const QModelIndex& bottomRight);
     void onFolderStartLoading();
     void onFolderFinishLoading();
@@ -136,6 +136,8 @@ private:
     void removeBottomGap();
     void addDesktopActions(QMenu* menu);
     void paintBackground(QPaintEvent* event);
+    void paintDropIndicator();
+    void stickToPosition(const QString& file, QPoint& pos, const QRect& workArea, const QSize& grid);
     static void alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize& grid, const int spacing);
 
 private:
@@ -164,6 +166,8 @@ private:
     QHash<QModelIndex, QString> displayNames_; // only for desktop entries and shortcuts
     QTimer* relayoutTimer_;
     QTimer* selectionTimer_;
+
+    QRect dropRect_;
 };
 
 }
