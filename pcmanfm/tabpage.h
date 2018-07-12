@@ -203,6 +203,7 @@ Q_SIGNALS:
     void sortFilterChanged();
     void forwardRequested();
     void backwardRequested();
+    void folderUnmounted();
 
 protected Q_SLOTS:
     void onSelChanged();
