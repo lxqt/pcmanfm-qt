@@ -44,6 +44,7 @@
 #include <libfm-qt/pathedit.h>
 #include <libfm-qt/pathbar.h>
 #include <libfm-qt/core/fileinfo.h>
+#include <libfm-qt/mountoperation.h>
 #include "ui_about.h"
 #include "application.h"
 #include "bulkrename.h"
@@ -337,6 +338,7 @@ int MainWindow::addTabWithPage(TabPage* page, Fm::FilePath path) {
     connect(page, &TabPage::sortFilterChanged, this, &MainWindow::onTabPageSortFilterChanged);
     connect(page, &TabPage::backwardRequested, this, &MainWindow::on_actionGoBack_triggered);
     connect(page, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
+    connect(page, &TabPage::folderUnmounted, this, &MainWindow::onFolderUnmounted);
 
     if(path) {
         page->chdir(path, true);
@@ -696,6 +698,39 @@ void MainWindow::onTabBarTabMoved(int from, int to) {
         ui.stackedWidget->insertWidget(to, page); // insert the page to the new position
         ui.stackedWidget->blockSignals(false); // unblock signals
         ui.stackedWidget->setCurrentWidget(page);
+    }
+}
+
+void MainWindow::onFolderUnmounted() {
+    TabPage* tabPage = static_cast<TabPage*>(sender());
+    QList<MountOperation*> ops = ui.sidePane->findChildren<MountOperation*>();
+    if(ops.isEmpty()) { // unmounting is done somewhere else
+        Settings& settings = static_cast<Application*>(qApp)->settings();
+        if(settings.closeOnUnmount()) {
+            ui.stackedWidget->removeWidget(tabPage);
+            delete tabPage;
+        }
+        else {
+            tabPage->chdir(Fm::FilePath::homeDir());
+            updateUIForCurrentPage();
+        }
+    }
+    else { // wait for all (un-)mount operations to be finished
+        for(const MountOperation* op : ops) {
+            connect(op, &QObject::destroyed, tabPage, [this, tabPage] {
+                if(ui.sidePane->findChildren<MountOperation*>().isEmpty()) {
+                    Settings& settings = static_cast<Application*>(qApp)->settings();
+                    if(settings.closeOnUnmount()) {
+                        ui.stackedWidget->removeWidget(tabPage);
+                        delete tabPage;
+                    }
+                    else {
+                        tabPage->chdir(Fm::FilePath::homeDir());
+                        updateUIForCurrentPage();
+                    }
+                }
+            });
+        }
     }
 }
 

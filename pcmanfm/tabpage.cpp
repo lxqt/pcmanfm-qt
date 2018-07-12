@@ -337,21 +337,12 @@ void TabPage::onFolderRemoved() {
 void TabPage::onFolderUnmount() {
     // the folder we're showing is unmounted, destroy the widget
     qDebug("folder unmount");
-    // NOTE: call deleteLater() directly from this GObject signal handler
-    // does not work but I don't know why.
-    // Maybe it's the problem of glib mainloop integration?
-    // Call it when idle works, though.
-    Settings& settings = static_cast<Application*>(qApp)->settings();
-    // NOTE: call deleteLater() directly from this GObject signal handler
-    // does not work but I don't know why.
-    // Maybe it's the problem of glib mainloop integration?
-    // Call it when idle works, though.
-    if(settings.closeOnUnmount()) {
-        QTimer::singleShot(0, this, SLOT(deleteLater()));
-    }
-    else {
-        chdir(Fm::FilePath::homeDir());
-    }
+    // NOTE: We cannot delete the page or change its directory here
+    // because unmounting might be done from places view, in which case,
+    // the mount operation is a child of the places view and should be
+    // finished before doing anything else.
+    freeFolder();
+    Q_EMIT folderUnmounted();
 }
 
 void TabPage::onFolderContentChanged() {
