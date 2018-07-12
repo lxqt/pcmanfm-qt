@@ -463,7 +463,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="355"/>
         <source>&amp;About</source>
-        <translation>&amp;O aplikaci</translation>
+        <translation>&amp;O programu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
