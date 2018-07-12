@@ -703,7 +703,7 @@ void MainWindow::onTabBarTabMoved(int from, int to) {
 
 void MainWindow::onFolderUnmounted() {
     TabPage* tabPage = static_cast<TabPage*>(sender());
-    QList<MountOperation*> ops = ui.sidePane->findChildren<MountOperation*>();
+    const QList<MountOperation*> ops = ui.sidePane->findChildren<MountOperation*>();
     if(ops.isEmpty()) { // unmounting is done somewhere else
         Settings& settings = static_cast<Application*>(qApp)->settings();
         if(settings.closeOnUnmount()) {
