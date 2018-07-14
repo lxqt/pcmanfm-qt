@@ -59,6 +59,7 @@
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
 
+#define WORK_AREA_MARGIN 12 // margin of the work area
 #define MIN_SLIDE_INTERVAL 5*60000 // 5 min
 #define MAX_SLIDE_INTERVAL (24*60+55)*60000 // 24 h and 55 min
 
@@ -753,7 +754,7 @@ void DesktopWindow::removeBottomGap() {
     //qDebug() << "delegate:" << delegate->itemSize();
     QSize cellMargins = getMargins();
     int workAreaHeight = qApp->desktop()->availableGeometry(screenNum_).height()
-                         - 24; // a 12-pix margin will be considered everywhere
+                         - 2 * WORK_AREA_MARGIN;
     int cellHeight = itemSize.height() + listView_->spacing();
     int iconNumber = workAreaHeight / cellHeight;
     int bottomGap = workAreaHeight % cellHeight;
@@ -829,7 +830,7 @@ void DesktopWindow::relayoutItems() {
             screen = screenNum_;
         }
         QRect workArea = desktop->availableGeometry(screen);
-        workArea.adjust(12, 12, -12, -12); // add a 12 pixel margin to the work area
+        workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
         // qDebug() << "workArea" << screen <<  workArea;
         // FIXME: we use an internal class declared in a private header here, which is pretty bad.
         QPoint pos = workArea.topLeft();
@@ -904,7 +905,7 @@ void DesktopWindow::loadItemPositions() {
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
     auto grid = delegate->itemSize();
     QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
-    workArea.adjust(12, 12, -12, -12);
+    workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
     QString desktopDir = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
     desktopDir += '/';
     std::vector<QPoint> usedPos;
@@ -1283,8 +1284,8 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
         auto grid = delegate->itemSize();
         QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
-        workArea.adjust(12, 12, -12, -12);
-        QPoint pos = mapFromGlobal(e->pos());
+        workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+        QPoint pos = e->pos();
         const QModelIndexList indexes = selectedIndexes();
         for(const QModelIndex& indx : indexes) {
             if(auto file = proxyModel_->fileInfoFromIndex(indx)) {
@@ -1307,9 +1308,9 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
             auto grid = delegate->itemSize();
             QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
-            workArea.adjust(12, 12, -12, -12);
+            workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
             const QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
-            QPoint pos = mapFromGlobal(e->pos());
+            QPoint pos = e->pos();
             const QList<QUrl> urlList = mimeData->urls();
             for(const QUrl& url : urlList) {
                 QString name = url.fileName();
@@ -1354,12 +1355,10 @@ void DesktopWindow::stickToPosition(const QString& file, QPoint& pos, const QRec
 }
 
 void DesktopWindow::alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize& grid, const int spacing) {
-    qreal w = qAbs((qreal)pos.x() - (qreal)topLeft.x())
-              / (qreal)(grid.width() + spacing);
-    qreal h = qAbs((qreal)pos.y() - (qreal)topLeft.y())
-              / (qreal)(grid.height() + spacing);
-    pos.setX(topLeft.x() + qRound(w) * (grid.width() + spacing));
-    pos.setY(topLeft.y() + qRound(h) * (grid.height() + spacing));
+    int w = qAbs(pos.x() - topLeft.x()) / (grid.width() + spacing);
+    int h = qAbs(pos.y() - topLeft.y()) / (grid.height() + spacing);
+    pos.setX(topLeft.x() + w * (grid.width() + spacing));
+    pos.setY(topLeft.y() + h * (grid.height() + spacing));
 }
 
 void DesktopWindow::closeEvent(QCloseEvent* event) {
