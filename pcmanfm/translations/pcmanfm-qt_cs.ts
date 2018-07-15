@@ -113,7 +113,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation>Dávkové přejmenování</translation>
+        <translation>Hromadné přejmenování</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
@@ -232,7 +232,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="85"/>
         <source>Select background color:</source>
-        <translation>Vyberte barvu pozadí:</translation>
+        <translation>Vyberat barvu pozadí:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="94"/>
@@ -287,7 +287,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
         <source>Spacing</source>
-        <translation>Mezery</translation>
+        <translation>Rozestupy</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="231"/>
@@ -330,7 +330,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation>Zapnout prezentaci</translation>
+        <translation>Měnit obrázky na pozadí</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
@@ -463,7 +463,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="355"/>
         <source>&amp;About</source>
-        <translation>&amp;O programu</translation>
+        <translation>O &amp;aplikaci</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
@@ -548,7 +548,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="513"/>
         <source>Pr&amp;eferences</source>
-        <translation>&amp;Předvolby</translation>
+        <translation>Př&amp;edvolby</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="521"/>
@@ -568,7 +568,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="545"/>
         <source>By &amp;Modification Time</source>
-        <translation>Podle č&amp;asu změny</translation>
+        <translation>Podle oka&amp;mžiku změny</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="553"/>
@@ -578,7 +578,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="561"/>
         <source>By &amp;Owner</source>
-        <translation>Podle v&amp;lastníka</translation>
+        <translation>P&amp;odle vlastníka</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="569"/>
@@ -608,7 +608,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="676"/>
         <source>&amp;Case Sensitive</source>
-        <translation>&amp;Zohlednit velikost písmen</translation>
+        <translation>&amp;Rozlišovat malá/VELKÁ písmena</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="684"/>
@@ -688,7 +688,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="792"/>
         <source>Menu bar</source>
-        <translation>Pruh s nabídkou</translation>
+        <translation>Pruh nabídek</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="795"/>
@@ -724,12 +724,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="448"/>
         <source>&amp;Compact View</source>
-        <translation>&amp;Zhuštěný pohled</translation>
+        <translation>&amp;Kompaktní pohled</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="456"/>
         <source>&amp;Detailed List</source>
-        <translation>&amp;Podrobnosti</translation>
+        <translation>Seznam s po&amp;drobnostmi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="464"/>
@@ -869,7 +869,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="710"/>
         <source>Open as &amp;Root</source>
-        <translation>Otevřít jako &amp;správce systému</translation>
+        <translation>Otevřít jako sp&amp;rávce systému</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="715"/>
@@ -915,7 +915,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
         <location filename="../main-win.ui" line="148"/>
         <location filename="../main-win.ui" line="168"/>
         <source>&amp;View</source>
-        <translation>&amp;Pohled</translation>
+        <translation>&amp;Zobrazení</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="202"/>
@@ -968,12 +968,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>Pokud je spuštěný, vypnout správce desktopu</translation>
+        <translation>Pokud je spuštěný, vypnout správce plochy</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Otevřít dialog předvoleb desktopu na stránce, které název byl zadán</translation>
+        <translation>Otevřít dialog předvoleb plochy na stránce, které název byl zadán</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -1155,7 +1155,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="366"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>Tímto bude pruh s nabídkou úplně skryt. Pro jeho opětovné zobrazení použijte Ctrl+M.</translation>
+        <translation>Tímto bude pruh s nabídkou úplně skryt. Opět ho zobrazíte stisknutím Ctrl+M.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="651"/>
@@ -1181,7 +1181,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1431"/>
         <source>Switch user command is not set.</source>
-        <translation>Příkaz pro přenutí uživatele není nastaven.</translation>
+        <translation>Příkaz pro přepnutí uživatele není nastaven.</translation>
     </message>
 </context>
 <context>
@@ -1189,22 +1189,22 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="190"/>
         <source>Icon View</source>
-        <translation>Pohled s ikonami</translation>
+        <translation>Zobrazení s ikonami</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="191"/>
         <source>Compact View</source>
-        <translation>Zhuštěný pohled</translation>
+        <translation>Kompaktní zobrazení</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Thumbnail View</source>
-        <translation>Pohled s náhledy</translation>
+        <translation>Zobrazení s náhledy</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Detailed List View</source>
-        <translation>Podrobný pohled se seznamem</translation>
+        <translation>Zobrazení seznamu s podrobnostmi</translation>
     </message>
 </context>
 <context>
@@ -1331,7 +1331,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
-        <translation>Velikost ikon v postranním panelu:</translation>
+        <translation>Velikost ikon v postranním podokně:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="242"/>
@@ -1361,7 +1361,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="497"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Zobrazovat tlačítko Zavřít na kartách	</translation>
+        <translation>Zobrazovat na kartách tlačítko Zavřít	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="504"/>
@@ -1386,7 +1386,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="107"/>
         <source>Default view mode:</source>
-        <translation>Výchozí režim pohledu:</translation>
+        <translation>Výchozí režim zobrazení:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="120"/>
@@ -1406,7 +1406,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Přesunout mazané soubory do koše místo smazání z disku.</translation>
+        <translation>Přesouvat mazané soubory do koše namísto smazání z disku.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="686"/>
@@ -1475,13 +1475,13 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
         <location filename="../preferences.ui" line="276"/>
         <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>Využíváno zhuštěným a podrobným zobrazením</translation>
+        <translation>Využíváno v kompaktním a podrobném zobrazení</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="293"/>
         <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
-        <translation>Využíváno zobrazením s náhledy</translation>
+        <translation>Využíváno v zobrazení s náhledy</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
@@ -1491,7 +1491,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
-        <translation>Považovat záložní soubory za skryté</translation>
+        <translation>Zacházet se záložními soubory jako s těmi skrytými</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="346"/>
@@ -1511,7 +1511,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="386"/>
         <source>3 px by default.</source>
-        <translation>výchozí jsou tři obrazové body.</translation>
+        <translation>výchozí jsou tři obraz. body.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
@@ -1528,7 +1528,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
         <location filename="../preferences.ui" line="409"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>Ve výchozím stavu 3 obrazové body.
+        <translation>Ve výchozím stavu 3 obraz. body.
 Je také vyhrazeno místo pro tři řádky textu.</translation>
     </message>
     <message>
@@ -1618,7 +1618,7 @@ pouze nad složkový pohled a ne nad levé podokno.</translation>
     <message>
         <location filename="../preferences.ui" line="719"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>Při spouštění aplikaci připojit ty svazky, které lze</translation>
+        <translation>Při spouštění aplikaci připojit všechny svazky, které jsou k dispozici</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="726"/>
@@ -1628,32 +1628,32 @@ pouze nad složkový pohled a ne nad levé podokno.</translation>
     <message>
         <location filename="../preferences.ui" line="733"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation>Zobrazit pokročilé volby pro přenosná úložiště, když jsou vložena</translation>
+        <translation>Při vložení/připojení vyjímatelného média, zobrazit možnosti co s ním</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="743"/>
         <source>When removable medium unmounted:</source>
-        <translation>Když je přenosné úložiště odpojeno:</translation>
+        <translation>Při odpojení (umount) vyjímatelného média:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="749"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>&amp;Zavřít kartu obsahující přenosné úložiště</translation>
+        <translation>Zavřít kar&amp;tu obsahující vyjímatelné médium</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="756"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>Změnit složku v kartě na &amp;domovskou</translation>
+        <translation>V jemu příslušné &amp;kartě přepnout do domovské složky</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="799"/>
         <source>Switch &amp;user command:</source>
-        <translation>Příkaz k přepnutí &amp;uživatele:</translation>
+        <translation>Příkaz kterým přepnout &amp;uživatele:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="823"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>Začlenění správce arch&amp;ivů:</translation>
+        <translation>In&amp;tegrace správce archivů:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="846"/>
@@ -1663,7 +1663,7 @@ pouze nad složkový pohled a ne nad levé podokno.</translation>
     <message>
         <location filename="../preferences.ui" line="852"/>
         <source>Show only user defined templates in menu</source>
-        <translation>V nabídce zobrazovat pouze uživatelem určené šablony</translation>
+        <translation>V nabídce zobrazovat pouze uživatelem vytvořené šablony</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="859"/>
@@ -1695,7 +1695,7 @@ pouze nad složkový pohled a ne nad levé podokno.</translation>
     <message>
         <location filename="../preferences.ui" line="329"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>Použít SI desítkové předpony namísto IEC dvojkových</translation>
+        <translation>Používat SI desítkové předpony namísto IEC dvojkových</translation>
     </message>
 </context>
 <context>
