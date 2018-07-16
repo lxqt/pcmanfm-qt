@@ -543,7 +543,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Select &amp;All</source>
-        <translation>Vybr&amp;at všechno</translation>
+        <translation>Vybr&amp;at vše</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="513"/>
@@ -724,7 +724,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="448"/>
         <source>&amp;Compact View</source>
-        <translation>&amp;Kompaktní pohled</translation>
+        <translation>&amp;Kompaktní</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="456"/>
@@ -1306,7 +1306,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation>Vybrat nově vytvořené soubory</translation>
+        <translation>Nově vytvořené soubory rovnou vybrat</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1376,7 +1376,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>Open files with single click</source>
-        <translation>Otvírat soubory jedním kliknutím</translation>
+        <translation>Otevírat soubory jedním kliknutím</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="100"/>
