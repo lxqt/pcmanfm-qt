@@ -443,7 +443,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../main-win.ui" line="325"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Recarrega</translation>
+        <translation>To&amp;rna a carregar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="328"/>
@@ -463,7 +463,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../main-win.ui" line="355"/>
         <source>&amp;About</source>
-        <translation>Qu&amp;ant a</translation>
+        <translation>&amp;Quant a</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="364"/>
@@ -569,7 +569,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../main-win.ui" line="497"/>
         <source>&amp;Paste</source>
-        <translation>En&amp;ganxa</translation>
+        <translation>Engan&amp;xa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="500"/>
@@ -795,7 +795,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../main-win.ui" line="636"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Suprimeix</translation>
+        <translation>&amp;Elimina</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="639"/>
@@ -805,7 +805,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../main-win.ui" line="644"/>
         <source>&amp;Rename</source>
-        <translation>Can&amp;via el nom</translation>
+        <translation>&amp;Reanomena</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="647"/>
@@ -906,7 +906,7 @@ També es reserva un espai per a 3 línies de text.</translation>
         <location filename="../main-win.ui" line="148"/>
         <location filename="../main-win.ui" line="168"/>
         <source>&amp;View</source>
-        <translation>&amp;Vista</translation>
+        <translation>&amp;Visualitza</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="152"/>
@@ -1218,7 +1218,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../tabpage.cpp" line="289"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espai lliure: %1 (Total: %2)</translation>
+        <translation>Espai lliure: %1 (total: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="306"/>
@@ -1241,7 +1241,7 @@ També es reserva un espai per a 3 línies de text.</translation>
         <location filename="../tabpage.cpp" line="492"/>
         <location filename="../tabpage.cpp" line="508"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>enllaç a</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="522"/>
@@ -1307,7 +1307,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecciona els fitxers creats recentment</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1460,7 +1460,7 @@ També es reserva un espai per a 3 línies de text.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Requereix reiniciar l&apos;aplicació perquè tingui efecte completament</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
