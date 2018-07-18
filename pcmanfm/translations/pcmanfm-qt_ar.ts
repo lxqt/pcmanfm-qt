@@ -882,7 +882,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="93"/>
         <source>Filter by string...</source>
-        <translation>رشّح حسب نصّ...</translation>
+        <translation>رشّح حسب نص…</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="120"/>
@@ -977,7 +977,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../application.cpp" line="177"/>
         <location filename="../application.cpp" line="192"/>
         <source>NAME</source>
-        <translation>الاسم</translation>
+        <translation>NAME</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
@@ -997,32 +997,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>FILE</source>
-        <translation>ملف</translation>
+        <translation>FILE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>MODE</source>
-        <translation>وضع</translation>
+        <translation>MODE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation>اضبط وضع خلفيّة سطح المكتب. MODE=(%1)‎</translation>
+        <translation>اضبط وضع خلفية سطح المكتب. MODE=(%1)‎</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>افتح حواريّ التفضيلات على الصّفحة بالاسم المحدّد</translation>
+        <translation>افتح حواريّ التفضيلات على الصفحة بالاسم المحدد</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Files or directories to open</source>
-        <translation>الملفّات أو الأدلّة لفتحها</translation>
+        <translation>الملفات أو الأدلّة لفتحها</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation>[ملفّ1، ملفّ2،...]</translation>
+        <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="543"/>
