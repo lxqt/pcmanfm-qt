@@ -447,7 +447,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="355"/>
         <source>&amp;About</source>
-        <translation>&amp;Informazioni</translation>
+        <translation>Inform&amp;azioni</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
@@ -893,7 +893,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Help</source>
-        <translation>A&amp;iuto</translation>
+        <translation>&amp;Aiuto</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="148"/>
@@ -1593,7 +1593,7 @@ sopra la vista cartella e non sopra il pannello sinistro.</translation>
     <message>
         <location filename="../preferences.ui" line="666"/>
         <source> KB</source>
-        <translation> KB</translation>
+        <translation> · KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="683"/>
