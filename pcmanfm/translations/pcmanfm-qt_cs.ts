@@ -523,7 +523,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="485"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Kopírovat</translation>
+        <translation>&amp;Zkopírovat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="488"/>
@@ -603,7 +603,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="644"/>
         <source>&amp;Rename</source>
-        <translation>Pře&amp;jmenovat</translation>
+        <translation>&amp;Přejmenovat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
@@ -789,7 +789,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="639"/>
         <source>Del</source>
-        <translation>Delete</translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="647"/>
@@ -915,12 +915,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
         <location filename="../main-win.ui" line="148"/>
         <location filename="../main-win.ui" line="168"/>
         <source>&amp;View</source>
-        <translation>&amp;Zobrazení</translation>
+        <translation>&amp;Zobrazit</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="202"/>
         <source>&amp;Edit</source>
-        <translation>Úp&amp;ravy</translation>
+        <translation>&amp;Upravit</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="220"/>
