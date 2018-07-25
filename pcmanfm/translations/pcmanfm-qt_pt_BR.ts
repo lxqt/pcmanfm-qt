@@ -42,7 +42,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>Gerenciador de Arquivos PCManFM-Qt
+
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Esse programa é um software livre: você pode distribuí-lo e/ou
+modificá-lo sob os termos da Licença Pública Geral GNU
+publicada pela Free Software Foundation, tanto na versão 2
+da licença ou, como opção, qualquer versão posterior.
+
+Esse programa é distrubuído na esperança de ser útil,
+mas não possui NENHUMA GARANTIA, nem mesmo a garantia implícita
+de COMERCIALIDADE ou PARA USO PARTICULAR. Veja a
+Licença Pública Geral GNU para mais detalhes.
+
+Você deve ter recebido uma cópia da Licença Pública Geral GNU
+juntamente com esse programa. Se não, escreva para a Free Software
+Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="87"/>
