@@ -65,7 +65,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Desenvolvido por:
+        <translation>Pragramação:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -85,12 +85,12 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>Mídia removível está inserida</translation>
+        <translation>Mídia removível inserida</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Mídia removível está inserida&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Mídia removível inserida&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
@@ -113,22 +113,22 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomear em Massa</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># será substituído por números que começam com:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomear os arquivos selecionados para:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome#</translation>
     </message>
 </context>
 <context>
@@ -136,42 +136,42 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Conectar a um servidor remoto</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Login Anônimo</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>Entrar como  &amp;usuário:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Especifique a pasta remota para conectar</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Porta:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Caminho:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hospedeiro:</translation>
     </message>
 </context>
 <context>
@@ -204,7 +204,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation>Nav&amp;egar</translation>
+        <translation>&amp;Navegar</translation>
     </message>
 </context>
 <context>
