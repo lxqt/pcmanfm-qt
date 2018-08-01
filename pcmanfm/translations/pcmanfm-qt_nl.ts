@@ -66,7 +66,7 @@ License voor meer bijzonderheden.
 Een exemplaar van de GNU General Public License heeft u, als het 
 goed is, samen met dit programma gekregen; schrijf anders naar de 
 Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, 
-Boston, MA 02110-1301 USA</translation>
+Boston, MA 02110-1301 USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="78"/>
@@ -145,7 +145,7 @@ Boston, MA 02110-1301 USA</translation>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation>Aanmelden als gebruiker</translation>
+        <translation>Aanmelden als &amp;gebruiker:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
@@ -1229,11 +1229,9 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="308"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform>(%n verborgen)</numerusform>
-            <numerusform>(%n verborgen)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform> (%n verborgen)</numerusform>
+        <numerusform> (%n verborgen)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="313"/>
         <location filename="../tabpage.cpp" line="492"/>
@@ -1244,11 +1242,9 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="522"/>
         <source>%n item(s) selected</source>
-        <translation>
-            <numerusform>%n element(en) gekozen</numerusform>
-            <numerusform>%n element(en) gekozen</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n element(en) gekozen</numerusform>
+        <numerusform>%n elementen gekozen</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
