@@ -112,22 +112,22 @@ Boston, MA 02110-1301 USA</translation>
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Massaal hernoemen</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># zal worden vervangen door nummers, om te beginnen met:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hernoem gekozen bestanden naar:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Naam#</translation>
     </message>
 </context>
 <context>
@@ -324,57 +324,57 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Diavertoning</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Diavertoning inschakelen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Map voor bureaubladachtergronden:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Verkennen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="347"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> u(u)r(en)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>en</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Tussenpozen van minder dan 5 minuten zullen worden genegeerd</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tussenpoze:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="380"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> minu(u)t(en)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Map voor bureaubladachtergrond</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Diavertoning in willekeurige volgorde</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
@@ -452,7 +452,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="337"/>
         <source>Go</source>
-        <translation>Ga</translation>
+        <translation>Ga naar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="346"/>
@@ -702,17 +702,17 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Massaal hernoemen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Massaal hernoemen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
@@ -798,7 +798,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="639"/>
         <source>Del</source>
-        <translation>Del</translation>
+        <translation>Wis</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="644"/>
@@ -1131,7 +1131,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="604"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Bureaubladelementen verbergen</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="609"/>
@@ -1239,7 +1239,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <location filename="../tabpage.cpp" line="492"/>
         <location filename="../tabpage.cpp" line="508"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Koppelen naar</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="522"/>
@@ -1304,7 +1304,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Kies recent aangemaakte bestanden</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1334,7 +1334,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="242"/>
         <source>Icon theme:</source>
-        <translation>Pictogramthema: </translation>
+        <translation>Pictogramthema:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
@@ -1456,12 +1456,12 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Vereist een herstart van de toepassing om volledig in werking te treden</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Uitvoerbare bestanden starten zonder melding</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1701,38 +1701,38 @@ werkbalk alleen boven de mapweergave geplaatst en niet boven het linkerpaneel.</
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bestanden hernoemen...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Afbreken</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Waarschuwing</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hernoemen is afgebroken.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Fout</translation>
+        <translation>Fout</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Geen enkel bestand kon worden hernoemd.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sommige bestanden konden niet worden hernoemd.</translation>
     </message>
 </context>
 </TS>
