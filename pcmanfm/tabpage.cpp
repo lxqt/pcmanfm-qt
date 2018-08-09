@@ -654,7 +654,12 @@ void TabPage::applyFilter() {
     if(!proxyModel_) {
         return;
     }
+    int prevSelSize = folderView_->selectionModel()->selectedIndexes().size();
     proxyModel_->updateFilters();
+    // if some selected files are filtered out, "View::selChanged()" won't be emitted
+    if(prevSelSize > folderView_->selectionModel()->selectedIndexes().size()) {
+        onSelChanged();
+    }
     statusText_[StatusTextNormal] = formatStatusText();
     Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
 }
