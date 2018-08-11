@@ -890,6 +890,22 @@ above the folder-view and not above the left pane.</string>
     </layout>
    </item>
    <item>
+    <widget class="QLabel" name="warningLabel">
+     <property name="styleSheet">
+      <string notr="true">background-color:#7d0000; color:white; font-weight:bold; border-radius:3px; margin:2px; padding:5px;</string>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string>Application restart is needed for changes to take effect.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>

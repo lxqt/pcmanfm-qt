@@ -36,6 +36,8 @@ PreferencesDialog::PreferencesDialog(QString activePage, QWidget* parent):
     QDialog(parent) {
     ui.setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
+    warningCounter_ = 0;
+    ui.warningLabel->hide();
 
     // resize the list widget according to the width of its content.
     ui.listWidget->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
@@ -167,6 +169,14 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
 
     ui.showFullNames->setChecked(settings.showFullNames());
     ui.shadowHidden->setChecked(settings.shadowHidden());
+
+    // app restart warning
+    connect(ui.showFullNames, &QAbstractButton::toggled, [this, &settings] (bool checked) {
+       restartWarning(settings.showFullNames() != checked);
+    });
+    connect(ui.shadowHidden, &QAbstractButton::toggled, [this, &settings] (bool checked) {
+       restartWarning(settings.shadowHidden() != checked);
+    });
 }
 
 void PreferencesDialog::initUiPage(Settings& settings) {
@@ -217,6 +227,11 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
     ui.confirmTrash->setChecked(settings.confirmTrash());
     ui.quickExec->setChecked(settings.quickExec());
     ui.selectNewFiles->setChecked(settings.selectNewFiles());
+
+    // app restart warning
+    connect(ui.quickExec, &QAbstractButton::toggled, [this, &settings] (bool checked) {
+       restartWarning(settings.quickExec() != checked);
+    });
 }
 
 void PreferencesDialog::initThumbnailPage(Settings& settings) {
@@ -391,6 +406,16 @@ void PreferencesDialog::lockMargins(bool lock) {
     else {
         disconnect(ui.hMargin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), ui.vMargin, &QSpinBox::setValue);
     }
+}
+
+void PreferencesDialog::restartWarning(bool warn) {
+    if(warn) {
+        ++warningCounter_;
+    }
+    else {
+        --warningCounter_;
+    }
+    ui.warningLabel->setVisible(warningCounter_ > 0);
 }
 
 } // namespace PCManFM
