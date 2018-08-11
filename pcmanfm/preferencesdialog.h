@@ -65,8 +65,11 @@ private:
     void initFromSettings();
     void applySettings();
 
+    void restartWarning(bool warn);
+
 private:
     Ui::PreferencesDialog ui;
+    int warningCounter_;
 };
 
 }
