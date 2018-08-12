@@ -30,6 +30,9 @@
 #include <QCursor>
 #include <QMessageBox>
 #include <QScrollBar>
+#include <QToolButton>
+#include <QLabel>
+#include <QShortcut>
 #include <QDir>
 #include "settings.h"
 #include "application.h"
@@ -52,6 +55,44 @@ bool ProxyFilter::filterAcceptsRow(const Fm::ProxyFolderModel* model, const std:
     return true;
 }
 
+//==================================================
+
+FilterEdit::FilterEdit(QWidget* parent) : QLineEdit(parent) {
+    setClearButtonEnabled(true);
+    if(QToolButton *clearButton = findChild<QToolButton*>()) {
+        clearButton->setToolTip(tr("Clear text (Ctrl+K)"));
+        QShortcut* shortcut = new QShortcut(Qt::CTRL + Qt::Key_K, this);
+        connect(shortcut, &QShortcut::activated, this, &QLineEdit::clear);
+    }
+}
+
+void FilterEdit::keyPressed(QKeyEvent* event) {
+    // Because the cursor of an unfocused line-edit isn't visible,
+    // movement and delete keys should be left to the view.
+    // Copy/paste shortcuts are taken by the view but they aren't needed here.
+    // (Shift+Insert works for pasting but, since most users may not be familiar
+    // with it, an action is added to the main window for showing an empty bar.)
+    if(!hasFocus()
+       && event->key() != Qt::Key_Left && event->key() != Qt::Key_Right
+       && event->key() != Qt::Key_Home && event->key() != Qt::Key_End
+       && event->key() != Qt::Key_Delete) {
+        keyPressEvent(event);
+    }
+}
+
+FilterBar::FilterBar(QWidget* parent) : QWidget(parent) {
+    QHBoxLayout* HLayout = new QHBoxLayout(this);
+    HLayout->setSpacing(5);
+    filterEdit_ = new FilterEdit();
+    QLabel *label = new QLabel(tr("Filter:"));
+    HLayout->addWidget(label);
+    HLayout->addWidget(filterEdit_);
+    connect(filterEdit_, &QLineEdit::textChanged, this, &FilterBar::textChanged);
+    connect(filterEdit_, &FilterEdit::lostFocus, this, &FilterBar::lostFocus);
+}
+
+//==================================================
+
 TabPage::TabPage(QWidget* parent):
     QWidget(parent),
     folderView_{nullptr},
@@ -60,7 +101,8 @@ TabPage::TabPage(QWidget* parent):
     proxyFilter_{nullptr},
     verticalLayout{nullptr},
     overrideCursor_(false),
-    selectionTimer_(nullptr) {
+    selectionTimer_(nullptr),
+    filterBar_(nullptr) {
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
 
@@ -89,6 +131,14 @@ TabPage::TabPage(QWidget* parent):
     // FIXME: this is very dirty
     folderView_->setModel(proxyModel_);
     verticalLayout->addWidget(folderView_);
+
+    // filter-bar and its settings
+    filterBar_ = new FilterBar();
+    verticalLayout->addWidget(filterBar_);
+    if(!settings.showFilter()){
+        transientFilterBar(true);
+    }
+    connect(filterBar_, &FilterBar::textChanged, this, &TabPage::onFilterStringChanged);
 }
 
 TabPage::~TabPage() {
@@ -107,6 +157,75 @@ TabPage::~TabPage() {
 
     if(overrideCursor_) {
         QApplication::restoreOverrideCursor(); // remove busy cursor
+    }
+}
+
+void TabPage::transientFilterBar(bool transient) {
+    if(filterBar_) {
+        filterBar_->clear();
+        if(transient) {
+            filterBar_->hide();
+            folderView_->childView()->removeEventFilter(this);
+            folderView_->childView()->installEventFilter(this);
+            connect(filterBar_, &FilterBar::lostFocus, this, &TabPage::onLosingFilterBarFocus);
+        }
+        else {
+            filterBar_->show();
+            folderView_->childView()->removeEventFilter(this);
+            disconnect(filterBar_, &FilterBar::lostFocus, this, &TabPage::onLosingFilterBarFocus);
+        }
+    }
+}
+
+void TabPage::onLosingFilterBarFocus() {
+    // hide the empty transient filter-bar when it loses focus
+    if(getFilterStr().isEmpty()) {
+        filterBar_->hide();
+    }
+}
+
+void TabPage::showFilterBar() {
+    if(filterBar_) {
+        filterBar_->show();
+        if(isVisibleTo(this)) { // the page itself may be in an inactive tab
+            filterBar_->focusBar();
+        }
+    }
+}
+
+bool TabPage::eventFilter(QObject* watched, QEvent* event) {
+    // when a text is typed inside the view, type it inside the filter-bar
+    if(filterBar_ && watched == folderView_->childView() &&  event->type() == QEvent::KeyPress) {
+        if(QKeyEvent* ke = static_cast<QKeyEvent*>(event)) {
+            filterBar_->keyPressed(ke);
+        }
+    }
+    return QWidget::eventFilter(watched, event);
+}
+
+void TabPage::backspacePressed() {
+    if(filterBar_ && filterBar_->isVisible()) {
+        QKeyEvent bs = QKeyEvent(QEvent::KeyPress, Qt::Key_Backspace, Qt::NoModifier);
+        filterBar_->keyPressed(&bs);
+    }
+}
+
+void TabPage::onFilterStringChanged(QString str) {
+    if(filterBar_ && str != getFilterStr()) {
+        setFilterStr(str);
+        applyFilter();
+        // show/hide the on transient filter-bar appropriately
+        if(!static_cast<Application*>(qApp)->settings().showFilter()) {
+            if(filterBar_->isVisibleTo(this)) { // the page itself may be in an inactive tab
+                if(str.isEmpty()) {
+                    filterBar_->hide();
+                    folderView()->childView()->setFocus();
+                }
+            }
+            else if(!str.isEmpty()) {
+                filterBar_->show();
+            }
+        }
     }
 }
 
@@ -360,6 +479,9 @@ QString TabPage::pathName() {
 
 void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     // qDebug() << "TABPAGE CHDIR:" << newPath.toString().get();
+    if(filterBar_){
+        filterBar_->clear();
+    }
     if(folder_) {
         // we're already in the specified dir
         if(newPath == folder_->path()) {
