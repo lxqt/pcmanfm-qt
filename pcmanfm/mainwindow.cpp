@@ -120,10 +120,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     connect(ui.tabBar, &TabBar::tabDetached, this, &MainWindow::detachTab);
     connect(ui.stackedWidget, &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
 
-    // FIXME: should we make the filter bar a per-view configuration?
-    ui.filterBar->setVisible(settings.showFilter());
     ui.actionFilter->setChecked(settings.showFilter());
-    connect(ui.filterBar, &QLineEdit::textChanged, this, &MainWindow::onFilterStringChanged);
 
     // side pane
     ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
@@ -260,23 +257,21 @@ MainWindow::MainWindow(Fm::FilePath path):
     }
 
     shortcut = new QShortcut(QKeySequence(Qt::Key_Backspace), this);
-    connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionGoUp_triggered);
+    connect(shortcut, &QShortcut::activated, [this, &settings] {
+        // pass Backspace to current page if it has a visible, transient filter-bar
+        if(!settings.showFilter() && currentPage() && currentPage()->isFilterBarVisible()) {
+            currentPage()->backspacePressed();
+            return;
+        }
+        on_actionGoUp_triggered();
+    });
 
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDelete_triggered);
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_I), this);
-    connect(shortcut, &QShortcut::activated, this, &MainWindow::focusFilterBar);
-
     // in addition to F3, for convenience
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_F), this);
     connect(shortcut, &QShortcut::activated, ui.actionFindFiles, &QAction::trigger);
-
-    if(QToolButton* clearButton = ui.filterBar->findChild<QToolButton*>()) {
-        clearButton->setToolTip(tr("Clear text (Ctrl+K)"));
-        shortcut = new QShortcut(Qt::CTRL + Qt::Key_K, this);
-        connect(shortcut, &QShortcut::activated, ui.filterBar, &QLineEdit::clear);
-    }
 
     if(path) {
         addTab(path);
@@ -303,7 +298,6 @@ void MainWindow::chdir(Fm::FilePath path) {
     // wait until queued events are processed
     QTimer::singleShot(0, this, [this, path] {
         if(TabPage* page = currentPage()) {
-            ui.filterBar->clear();
             page->chdir(path, true);
             updateUIForCurrentPage();
         }
@@ -386,8 +380,6 @@ void MainWindow::onPathEntryReturnPressed() {
 }
 
 void MainWindow::onPathBarChdir(const Fm::FilePath& dirPath) {
-    // call chdir() only when needed because otherwise
-    // filter bar will be cleard on changing current tab
     TabPage* page = currentPage();
     if(page && dirPath != page->path()) {
         chdir(dirPath);
@@ -401,7 +393,6 @@ void MainWindow::onPathBarMiddleClickChdir(const Fm::FilePath& dirPath) {
 void MainWindow::on_actionGoUp_triggered() {
     QTimer::singleShot(0, this, [this] {
         if(TabPage* page = currentPage()) {
-            ui.filterBar->clear();
             page->up();
             updateUIForCurrentPage();
         }
@@ -411,7 +402,6 @@ void MainWindow::on_actionGoUp_triggered() {
 void MainWindow::on_actionGoBack_triggered() {
     QTimer::singleShot(0, this, [this] {
         if(TabPage* page = currentPage()) {
-            ui.filterBar->clear();
             page->backward();
             updateUIForCurrentPage();
         }
@@ -421,7 +411,6 @@ void MainWindow::on_actionGoBack_triggered() {
 void MainWindow::on_actionGoForward_triggered() {
     QTimer::singleShot(0, this, [this] {
         if(TabPage* page = currentPage()) {
-            ui.filterBar->clear();
             page->forward();
             updateUIForCurrentPage();
         }
@@ -561,24 +550,40 @@ void MainWindow::on_actionPreserveView_triggered(bool /*checked*/) {
 }
 
 void MainWindow::on_actionFilter_triggered(bool checked) {
-    ui.filterBar->setVisible(checked);
-    if(checked) {
-        ui.filterBar->setFocus();
-    }
-    else if(TabPage* tabPage = currentPage()) {
-        ui.filterBar->clear();
-        tabPage->folderView()->childView()->setFocus();
-        // clear filter string for all tabs
-        int n = ui.stackedWidget->count();
-        for(int i = 0; i < n; ++i) {
-            TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
-            if(!page->getFilterStr().isEmpty()) {
-                page->setFilterStr(QString());
-                page->applyFilter();
+    static_cast<Application*>(qApp)->settings().setShowFilter(checked);
+    // show/hide filter-bars and disable/enable their transience for
+    // all tabs in all windows because this is a global setting
+    QWidgetList windows = static_cast<Application*>(qApp)->topLevelWidgets();
+    QWidgetList::iterator it;
+    for(it = windows.begin(); it != windows.end(); ++it) {
+        QWidget* window = *it;
+        if(window->inherits("PCManFM::MainWindow")) {
+            MainWindow* mainWindow = static_cast<MainWindow*>(window);
+            mainWindow->ui.actionFilter->setChecked(checked); // doesn't call this function
+            int n = mainWindow->ui.stackedWidget->count();
+            for(int i = 0; i < n; ++i) {
+                if(TabPage* page = static_cast<TabPage*>(mainWindow->ui.stackedWidget->widget(i))) {
+                    page->transientFilterBar(!checked);
+                }
             }
         }
     }
-    static_cast<Application*>(qApp)->settings().setShowFilter(checked);
+}
+
+void MainWindow::on_actionUnfilter_triggered() {
+    // clear filters for all tabs
+    int n = ui.stackedWidget->count();
+    for(int i = 0; i < n; ++i) {
+        if(TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i))) {
+            page->clearFilter();
+        }
+    }
+}
+
+void MainWindow::on_actionShowFilter_triggered() {
+    if(TabPage* page = currentPage()) {
+        page->showFilterBar();
+    }
 }
 
 void MainWindow::on_actionLocationBar_triggered(bool checked) {
@@ -734,25 +739,6 @@ void MainWindow::onFolderUnmounted() {
     }
 }
 
-void MainWindow::focusFilterBar() {
-    if(!ui.filterBar->isVisible()) {
-        ui.actionFilter->trigger();
-    }
-    else {
-        ui.filterBar->setFocus();
-    }
-}
-
-void MainWindow::onFilterStringChanged(QString str) {
-    if(TabPage* tabPage = currentPage()) {
-        // appy filter only if needed (not if tab is changed)
-        if(str != tabPage->getFilterStr()) {
-            tabPage->setFilterStr(str);
-            tabPage->applyFilter();
-        }
-    }
-}
-
 void MainWindow::closeTab(int index) {
     QWidget* page = ui.stackedWidget->widget(index);
     if(page) {
@@ -795,9 +781,6 @@ void MainWindow::closeEvent(QCloseEvent* event) {
 
 void MainWindow::onTabBarCurrentChanged(int index) {
     ui.stackedWidget->setCurrentIndex(index);
-    if(TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(index))) {
-        ui.filterBar->setText(page->getFilterStr());
-    }
     updateUIForCurrentPage();
 }
 
@@ -1266,7 +1249,6 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
     QAction* selectedAction = menu.exec(btn->mapToGlobal(pos));
     if(selectedAction) {
         int index = menu.actions().indexOf(selectedAction);
-        ui.filterBar->clear();
         page->jumpToHistory(index);
         updateUIForCurrentPage();
     }

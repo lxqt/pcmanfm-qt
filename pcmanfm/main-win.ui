@@ -84,19 +84,6 @@
           </property>
          </widget>
         </item>
-        <item>
-         <widget class="QLineEdit" name="filterBar">
-          <property name="toolTip">
-           <string>Focus with Ctrl+I</string>
-          </property>
-          <property name="placeholderText">
-           <string>Filter by string...</string>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
        </layout>
       </widget>
      </widget>
@@ -187,6 +174,13 @@
      <addaction name="actionLocationBar"/>
      <addaction name="actionPathButtons"/>
     </widget>
+    <widget class="QMenu" name="menuFiltering">
+     <property name="title">
+      <string>&amp;Filtering</string>
+     </property>
+     <addaction name="actionShowFilter"/>
+     <addaction name="actionUnfilter"/>
+    </widget>
     <addaction name="actionReload"/>
     <addaction name="separator"/>
     <addaction name="actionShowHidden"/>
@@ -196,6 +190,8 @@
     <addaction name="separator"/>
     <addaction name="menuToolbars"/>
     <addaction name="menuPathBarStyle"/>
+    <addaction name="separator"/>
+    <addaction name="menuFiltering"/>
    </widget>
    <widget class="QMenu" name="menu_Edit">
     <property name="title">
@@ -752,10 +748,18 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>&amp;Filter</string>
+    <string>Permanent &amp;filter bar</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionUnfilter">
+   <property name="text">
+    <string>&amp;Clear All Filters</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+K</string>
    </property>
   </action>
   <action name="actionCloseLeft">
@@ -845,6 +849,17 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+F2</string>
+   </property>
+  </action>
+  <action name="actionShowFilter">
+   <property name="text">
+    <string>&amp;Show/Focus Filter Bar</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Filter Bar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
    </property>
   </action>
  </widget>

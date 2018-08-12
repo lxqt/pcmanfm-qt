@@ -114,6 +114,8 @@ protected Q_SLOTS:
     void on_actionFolderFirst_triggered(bool checked);
     void on_actionCaseSensitive_triggered(bool checked);
     void on_actionFilter_triggered(bool checked);
+    void on_actionUnfilter_triggered();
+    void on_actionShowFilter_triggered();
 
     void on_actionLocationBar_triggered(bool checked);
     void on_actionPathButtons_triggered(bool checked);
@@ -137,9 +139,6 @@ protected Q_SLOTS:
     void onTabBarCloseRequested(int index);
     void onTabBarCurrentChanged(int index);
     void onTabBarTabMoved(int from, int to);
-
-    void focusFilterBar();
-    void onFilterStringChanged(QString str);
 
     void onShortcutPrevTab();
     void onShortcutNextTab();

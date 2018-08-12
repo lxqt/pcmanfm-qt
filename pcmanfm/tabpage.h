@@ -23,6 +23,7 @@
 
 #include <QWidget>
 #include <QVBoxLayout>
+#include <QLineEdit>
 #include <libfm-qt/browsehistory.h>
 #include "view.h"
 #include "settings.h"
@@ -56,6 +57,51 @@ public:
 private:
     QString filterStr_;
 };
+
+//==================================================
+
+class FilterEdit : public QLineEdit {
+    Q_OBJECT
+public:
+    FilterEdit(QWidget *parent = nullptr);
+    ~FilterEdit() {};
+    void keyPressed(QKeyEvent* event);
+
+protected:
+    virtual void focusOutEvent(QFocusEvent* event) override {
+        Q_EMIT lostFocus();
+        QLineEdit::focusOutEvent(event);
+    }
+
+Q_SIGNALS:
+    void lostFocus();
+};
+
+class FilterBar : public QWidget {
+    Q_OBJECT
+public:
+    FilterBar(QWidget *parent = nullptr);
+    ~FilterBar() {};
+
+    void focusBar() {
+        filterEdit_->setFocus();
+    }
+    void clear() {
+        filterEdit_->clear();
+    }
+    void keyPressed(QKeyEvent* event) {
+        filterEdit_->keyPressed(event);
+    }
+
+Q_SIGNALS:
+    void textChanged(const QString &text);
+    void lostFocus();
+
+private:
+    FilterEdit* filterEdit_;
+};
+
+//==================================================
 
 class TabPage : public QWidget {
     Q_OBJECT
@@ -196,6 +242,20 @@ public:
 
     void setCustomizedView(bool value);
 
+    void transientFilterBar(bool transient);
+
+    void showFilterBar();
+    bool isFilterBarVisible() const {
+        return (filterBar_ && filterBar_->isVisible());
+    }
+    void clearFilter() {
+        if(filterBar_) {
+            filterBar_->clear();
+        }
+    }
+
+    void backspacePressed();
+
 Q_SIGNALS:
     void statusChanged(int type, QString statusText);
     void titleChanged(QString title);
@@ -205,11 +265,16 @@ Q_SIGNALS:
     void backwardRequested();
     void folderUnmounted();
 
+protected:
+    virtual bool eventFilter(QObject* watched, QEvent* event);
+
 protected Q_SLOTS:
     void onSelChanged();
     void onUiUpdated();
     void onFileSizeChanged(const QModelIndex& index);
     void onFilesAdded(const Fm::FileInfoList files);
+    void onFilterStringChanged(QString str);
+    void onLosingFilterBarFocus();
 
 private:
     void freeFolder();
@@ -242,6 +307,7 @@ private:
     bool overrideCursor_;
     FolderSettings folderSettings_;
     QTimer* selectionTimer_;
+    FilterBar* filterBar_;
 };
 
 }
