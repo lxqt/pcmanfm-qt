@@ -711,13 +711,20 @@ void TabPage::updateFromSettings(Settings& settings) {
 }
 
 void TabPage::setViewMode(Fm::FolderView::ViewMode mode) {
+    Settings& settings = static_cast<Application*>(qApp)->settings();
     if(folderSettings_.viewMode() != mode) {
         folderSettings_.setViewMode(mode);
         if(folderSettings_.isCustomized()) {
-            static_cast<Application*>(qApp)->settings().saveFolderSettings(path(), folderSettings_);
+            settings.saveFolderSettings(path(), folderSettings_);
         }
     }
     folderView_->setViewMode(mode);
+    if(!settings.showFilter()) {
+        // FolderView::setViewMode() may delete the view to switch between list and tree.
+        // So, the event filter should be re-installed.
+        folderView_->childView()->removeEventFilter(this);
+        folderView_->childView()->installEventFilter(this);
+    }
 }
 
 void TabPage::sort(int col, Qt::SortOrder order) {
