@@ -719,6 +719,7 @@ void TabPage::setViewMode(Fm::FolderView::ViewMode mode) {
         }
     }
     folderView_->setViewMode(mode);
+    folderView_->childView()->setFocus();
     if(!settings.showFilter()) {
         // FolderView::setViewMode() may delete the view to switch between list and tree.
         // So, the event filter should be re-installed.
