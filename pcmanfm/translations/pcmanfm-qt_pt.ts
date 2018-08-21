@@ -113,22 +113,22 @@ Se tal não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomear em lote</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># será substituído por números começando em:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomear seleção para:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome#</translation>
     </message>
 </context>
 <context>
@@ -663,17 +663,17 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomear em &amp;lote</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomear em lote</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
@@ -1132,7 +1132,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="604"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Ocultar itens da área de trabalho</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="609"/>
@@ -1240,7 +1240,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
         <location filename="../tabpage.cpp" line="492"/>
         <location filename="../tabpage.cpp" line="508"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ligação para</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="522"/>
@@ -1342,12 +1342,12 @@ Será reservado um espaço para 3 linhas de texto.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Tem que reiniciar a aplicação para aplicar as alterações</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Iniciar ficheiros executáveis (sem confirmação)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1452,7 +1452,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecionar ficheiros criados recentemente</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1702,38 +1702,38 @@ colocada acima da vista de pastas e não no painel da esquerda.</translation>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>A renomear ficheiros...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Abortar</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Aviso</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>A operação foi abortada.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Erro</translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nenhum ficheiro foi renomeado.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Alguns ficheiros não foram renomeados.</translation>
     </message>
 </context>
 </TS>
