@@ -1217,7 +1217,7 @@ Ruumi varuti ka 3 tekstirea jaoks.</translation>
     <message>
         <location filename="../tabpage.cpp" line="289"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vaba ruum:% 1 (kokku:% 2)</translation>
+        <translation>Vaba ruum:%1 (kokku:%2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="306"/>
