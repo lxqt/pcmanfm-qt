@@ -72,6 +72,7 @@ protected:
         Q_EMIT lostFocus();
         QLineEdit::focusOutEvent(event);
     }
+    virtual void keyPressEvent(QKeyEvent* event) override;
 
 Q_SIGNALS:
     void lostFocus();

@@ -29,23 +29,31 @@ namespace PCManFM {
 
 TabBar::TabBar(QWidget *parent):
     QTabBar(parent),
-    dragStarted_(false)
+    dragStarted_(false),
+    detachable_(true)
 {
 }
 
 void TabBar::mousePressEvent(QMouseEvent *event) {
     QTabBar::mousePressEvent (event);
-    if(event->button() == Qt::LeftButton
-       && tabAt(event->pos()) > -1) {
-        dragStartPosition_ = event->pos();
+    if(detachable_){
+        if(event->button() == Qt::LeftButton
+        && tabAt(event->pos()) > -1) {
+            dragStartPosition_ = event->pos();
+        }
+        dragStarted_ = false;
     }
-    dragStarted_ = false;
 }
 
 void TabBar::mouseMoveEvent(QMouseEvent *event)
 {
+    if(!detachable_) {
+        QTabBar::mouseMoveEvent(event);
+        return;
+    }
+
     if(!dragStartPosition_.isNull()
-       && (event->pos() - dragStartPosition_).manhattanLength() < QApplication::startDragDistance()) {
+       && (event->pos() - dragStartPosition_).manhattanLength() >= QApplication::startDragDistance()) {
         dragStarted_ = true;
     }
 
@@ -102,7 +110,7 @@ void TabBar::mouseReleaseEvent(QMouseEvent *event) {
 
 // Let the main window receive dragged tabs!
 void TabBar::dragEnterEvent(QDragEnterEvent *event) {
-    if(event->mimeData()->hasFormat("application/pcmanfm-qt-tab")) {
+    if(detachable_ && event->mimeData()->hasFormat("application/pcmanfm-qt-tab")) {
         event->ignore();
     }
 }

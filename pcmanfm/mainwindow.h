@@ -31,6 +31,7 @@
 #include <QStackedWidget>
 #include <QSplitter>
 #include "launcher.h"
+#include "tabbar.h"
 #include <libfm-qt/core/filepath.h>
 #include <libfm-qt/core/bookmarks.h>
 
@@ -41,6 +42,33 @@ class PathBar;
 
 namespace PCManFM {
 
+class ViewFrame : public QFrame {
+    Q_OBJECT
+public:
+    ViewFrame(QWidget* parent = nullptr);
+    ~ViewFrame() {};
+
+    void createTopBar(bool usePathButtons);
+    void removeTopBar();
+
+    QWidget* getTopBar() const {
+        return topBar_;
+    }
+    TabBar* getTabBar() const {
+        return tabBar_;
+    }
+    QStackedWidget* getStackedWidget() const {
+        return stackedWidget_;
+    }
+
+private:
+    QWidget* topBar_;
+    TabBar* tabBar_;
+    QStackedWidget* stackedWidget_;
+};
+
+//======================================================================
+
 class TabPage;
 class Settings;
 
@@ -50,11 +78,21 @@ public:
     MainWindow(Fm::FilePath path = Fm::FilePath());
     virtual ~MainWindow();
 
-    void chdir(Fm::FilePath path);
-    int addTab(Fm::FilePath path);
+    void chdir(Fm::FilePath path, ViewFrame* viewFrame);
+    void chdir(Fm::FilePath path) {
+        chdir(path, activeViewFrame_);
+    }
 
+    int addTab(Fm::FilePath path, ViewFrame* viewFrame);
+    int addTab(Fm::FilePath path) {
+        return addTab(path, activeViewFrame_);
+    }
+
+    TabPage* currentPage(ViewFrame* viewFrame) {
+        return reinterpret_cast<TabPage*>(viewFrame->getStackedWidget()->currentWidget());
+    }
     TabPage* currentPage() {
-        return reinterpret_cast<TabPage*>(ui.stackedWidget->currentWidget());
+        return currentPage(activeViewFrame_);
     }
 
     void updateFromSettings(Settings& settings);
@@ -102,6 +140,7 @@ protected Q_SLOTS:
 
     void on_actionGo_triggered();
     void on_actionShowHidden_triggered(bool check);
+    void on_actionSplitView_triggered(bool check);
     void on_actionPreserveView_triggered(bool checked);
 
     void on_actionByFileName_triggered(bool checked);
@@ -182,21 +221,27 @@ protected Q_SLOTS:
 protected:
     bool event(QEvent* event) override;
     void changeEvent(QEvent* event) override;
-    void closeTab(int index);
+    void closeTab(int index, ViewFrame* viewFrame);
+    void closeTab(int index) {
+        closeTab(index, activeViewFrame_);
+    }
     virtual void resizeEvent(QResizeEvent* event) override;
     virtual void closeEvent(QCloseEvent* event) override;
     virtual void dragEnterEvent(QDragEnterEvent* event) override;
     virtual void dropEvent(QDropEvent* event) override;
+    virtual bool eventFilter(QObject* watched, QEvent* event);
 
 private:
     void loadBookmarksMenu();
-    void updateUIForCurrentPage();
+    void updateUIForCurrentPage(bool setFocus = true);
     void updateViewMenuForCurrentPage();
     void updateEditSelectedActions();
     void updateStatusBarForCurrentPage();
     void setRTLIcons(bool isRTL);
     void createPathBar(bool usePathButtons);
-    int addTabWithPage(TabPage* page, Fm::FilePath path = Fm::FilePath());
+    void addViewFrame(const Fm::FilePath& path);
+    ViewFrame* viewFrameForTabPage(TabPage* page);
+    int addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path = Fm::FilePath());
     void dropTab();
 
 private:
@@ -209,6 +254,12 @@ private:
     int rightClickIndex_;
     bool updatingViewMenu_;
     QAction* menuSep_;
+    QAction* menuSpacer_;
+
+    ViewFrame* activeViewFrame_;
+    // The split mode of this window is changed only from its settings,
+    // not from another window. So, we get the mode at the start and keep it.
+    bool splitView_;
 
     static MainWindow* lastActive_;
 };
