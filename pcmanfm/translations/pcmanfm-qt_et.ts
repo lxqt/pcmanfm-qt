@@ -16,7 +16,7 @@
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation>Kergekaaluline failihaldur</translation>
+        <translation>Ressursisäästlik failihaldur</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
