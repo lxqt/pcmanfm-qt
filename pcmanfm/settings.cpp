@@ -88,7 +88,7 @@ Settings::Settings():
     splitterPos_(120),
     sidePaneMode_(Fm::SidePane::ModePlaces),
     showMenuBar_(true),
-    fullWidthTabBar_(true),
+    splitView_(false),
     viewMode_(Fm::FolderView::IconMode),
     showHidden_(false),
     sortOrder_(Qt::AscendingOrder),
@@ -302,7 +302,7 @@ bool Settings::loadFile(QString filePath) {
     splitterPos_ = settings.value("SplitterPos", 150).toInt();
     sidePaneMode_ = sidePaneModeFromString(settings.value("SidePaneMode").toString());
     showMenuBar_ = settings.value("ShowMenuBar", true).toBool();
-    fullWidthTabBar_ = settings.value("FullWidthTabBar", true).toBool();
+    splitView_ = settings.value("SplitView", false).toBool();
     pathBarButtons_ = settings.value("PathBarButtons", true).toBool();
     settings.endGroup();
 
@@ -434,7 +434,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue("SplitterPos", splitterPos_);
     settings.setValue("SidePaneMode", sidePaneModeToString(sidePaneMode_));
     settings.setValue("ShowMenuBar", showMenuBar_);
-    settings.setValue("FullWidthTabBar", fullWidthTabBar_);
+    settings.setValue("SplitView", splitView_);
     settings.setValue("PathBarButtons", pathBarButtons_);
     settings.endGroup();
 

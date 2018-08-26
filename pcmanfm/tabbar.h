@@ -35,6 +35,10 @@ public:
     void finishMouseMoveEvent();
     void releaseMouse();
 
+    void setDetachable(bool detachable) {
+        detachable_ = detachable;
+    }
+
 Q_SIGNALS:
     void tabDetached();
 
@@ -48,6 +52,7 @@ protected:
 private:
     QPoint dragStartPosition_;
     bool dragStarted_;
+    bool detachable_;
 };
 
 }

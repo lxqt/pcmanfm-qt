@@ -32,7 +32,6 @@
 #include <QScrollBar>
 #include <QToolButton>
 #include <QLabel>
-#include <QShortcut>
 #include <QDir>
 #include "settings.h"
 #include "application.h"
@@ -61,17 +60,23 @@ FilterEdit::FilterEdit(QWidget* parent) : QLineEdit(parent) {
     setClearButtonEnabled(true);
     if(QToolButton *clearButton = findChild<QToolButton*>()) {
         clearButton->setToolTip(tr("Clear text (Ctrl+K)"));
-        QShortcut* shortcut = new QShortcut(Qt::CTRL + Qt::Key_K, this);
-        connect(shortcut, &QShortcut::activated, this, &QLineEdit::clear);
     }
 }
 
+void FilterEdit::keyPressEvent(QKeyEvent* event) {
+    // since two views can be shown in the split mode, Ctrl+K can't be
+    // used as a QShortcut but can come here for clearing the text
+    if(event->modifiers() == Qt::ControlModifier && event->key() == Qt::Key_K) {
+        clear();
+    }
+    QLineEdit::keyPressEvent(event);
+}
+
 void FilterEdit::keyPressed(QKeyEvent* event) {
-    // Because the cursor of an unfocused line-edit isn't visible,
-    // movement and delete keys should be left to the view.
-    // Copy/paste shortcuts are taken by the view but they aren't needed here.
+    // NOTE: Movement and delete keys should be left to the view.
+    // Copy/paste shortcuts are taken by the view but they aren't needed here
     // (Shift+Insert works for pasting but, since most users may not be familiar
-    // with it, an action is added to the main window for showing an empty bar.)
+    // with it, an action is added to the main window for focusing an empty bar).
     if(!hasFocus()
        && event->key() != Qt::Key_Left && event->key() != Qt::Key_Right
        && event->key() != Qt::Key_Home && event->key() != Qt::Key_End
@@ -214,12 +219,15 @@ void TabPage::onFilterStringChanged(QString str) {
     if(filterBar_ && str != getFilterStr()) {
         setFilterStr(str);
         applyFilter();
-        // show/hide the on transient filter-bar appropriately
+        // show/hide the transient filter-bar appropriately
         if(!static_cast<Application*>(qApp)->settings().showFilter()) {
             if(filterBar_->isVisibleTo(this)) { // the page itself may be in an inactive tab
                 if(str.isEmpty()) {
-                    filterBar_->hide();
+                    // focus the view BEFORE hiding the filter-bar to avoid redundant "FocusIn" events;
+                    // otherwise, another widget inside the main window might gain focus immediately
+                    // after the filter-bar is hidden and only after that, the view will be focused.
                     folderView()->childView()->setFocus();
+                    filterBar_->hide();
                 }
             }
             else if(!str.isEmpty()) {
