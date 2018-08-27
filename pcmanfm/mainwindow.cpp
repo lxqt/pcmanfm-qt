@@ -375,14 +375,15 @@ bool MainWindow::eventFilter(QObject* watched, QEvent* event) {
                         palette.setColor(QPalette::Active, QPalette::ButtonText, txtCol);
                         palette.setColor(QPalette::Inactive, QPalette::ButtonText, txtCol);
 
+                        // There are various ways of getting a distinct color near the base color
+                        // but this one gives the best results with almost all palettes:
                         QColor baseCol = palette.color(QPalette::Base);
-                        if(qGray(baseCol.rgb()) <= 100) { // dark theme (supposedly)
-                            baseCol = baseCol.lighter(110);
-                        }
-                        else { // light theme (supposedly)
-                            baseCol = baseCol.darker(110);
-                        }
+                        baseCol.setRgbF(0.9 * baseCol.redF()   + 0.1 * txtCol.redF(),
+                                        0.9 * baseCol.greenF() + 0.1 * txtCol.greenF(),
+                                        0.9 * baseCol.blueF()  + 0.1 * txtCol.blueF(),
+                                        baseCol.alphaF());
                         palette.setColor(QPalette::Base, baseCol);
+
                         viewFrame->setPalette(palette);
                     }
                 }
