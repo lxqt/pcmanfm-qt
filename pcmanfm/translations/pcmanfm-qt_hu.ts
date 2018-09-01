@@ -112,7 +112,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA c
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Csoportos átnevezés</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
@@ -642,7 +642,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="689"/>
         <source>&amp;Close Window</source>
-        <translation>A&amp;blak bezárás</translation>
+        <translation>A&amp;blak bezárása</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
@@ -672,12 +672,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="767"/>
         <source>Close &amp;previous tabs</source>
-        <translation>Előzö la&amp;p bezárása</translation>
+        <translation>Előző la&amp;pok bezárása</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="776"/>
         <source>Close &amp;next tabs</source>
-        <translation>&amp;Következő lap bezárása</translation>
+        <translation>&amp;Következő lapok bezárása</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="815"/>
@@ -717,7 +717,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="781"/>
         <source>Close &amp;other tabs</source>
-        <translation>Más lap&amp;ok bezárása</translation>
+        <translation>Többi lap bezárása</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="789"/>
@@ -813,7 +813,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="652"/>
         <source>C&amp;lose Tab</source>
-        <translation>Fü&amp;l bezárás</translation>
+        <translation>Fü&amp;l bezárása</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="655"/>
@@ -1633,7 +1633,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../preferences.ui" line="749"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>Cserélhe&amp;tő adathortozós fül bezárása</translation>
+        <translation>Cserélhe&amp;tő adathordozó fülének bezárása</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="756"/>
