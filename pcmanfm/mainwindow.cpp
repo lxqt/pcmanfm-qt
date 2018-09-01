@@ -60,6 +60,7 @@ ViewFrame::ViewFrame(QWidget* parent):
     vBox->setContentsMargins(0, 0, 0, 0);
 
     tabBar_ = new TabBar;
+    tabBar_->setFocusPolicy(Qt::NoFocus);
     stackedWidget_ = new QStackedWidget;
     vBox->addWidget(tabBar_);
     vBox->addWidget(stackedWidget_, 1);
@@ -104,7 +105,7 @@ void ViewFrame::createTopBar(bool usePathButtons) {
 }
 
 void ViewFrame::removeTopBar() {
-    if(topBar_ != nullptr){
+    if(topBar_ != nullptr) {
         if(QVBoxLayout* vBox = qobject_cast<QVBoxLayout*>(layout())) {
             vBox->removeWidget(topBar_);
             delete topBar_;
@@ -142,12 +143,6 @@ MainWindow::MainWindow(Fm::FilePath path):
     if(!settings.supportTrash()) {
         ui.actionTrash->setVisible(false);
     }
-
-    // FIXME: add an option to hide network:///
-    // We cannot use uriExists() here since calling this on "network:///"
-    // is very slow and blocking.
-    //if(!uriExists("network:///"))
-    //  ui.actionNetwork->setVisible(false);
 
     // add a context menu for showing browse history to back and forward buttons
     QToolButton* forwardButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoForward));
@@ -348,7 +343,7 @@ MainWindow::~MainWindow() {
 // NOTE: This function is called only with the split mode.
 bool MainWindow::eventFilter(QObject* watched, QEvent* event) {
     if(qobject_cast<QWidget*>(watched)) {
-        if((event->type() == QEvent::FocusIn)
+        if(event->type() == QEvent::FocusIn
            // the event has happened inside the splitter
            && ui.viewSplitter->isAncestorOf(qobject_cast<QWidget*>(watched))) {
             for(int i = 0; i < ui.viewSplitter->count(); ++i) {
@@ -357,13 +352,15 @@ bool MainWindow::eventFilter(QObject* watched, QEvent* event) {
                         // a widget inside this view frame has gained focus; ensure the view is active
                         if(activeViewFrame_ != viewFrame) {
                             activeViewFrame_ = viewFrame;
-                            updateUIForCurrentPage(false); // WARNING: never refocus!
+                            updateUIForCurrentPage(false); // WARNING: never set focus here!
                         }
-                        if(viewFrame->palette() != qApp->palette()) {
+                        if(viewFrame->palette().color(QPalette::Base)
+                           != qApp->palette().color(QPalette::Base)) {
                             viewFrame->setPalette(qApp->palette()); // restore the main palette
                         }
                     }
-                    else if (viewFrame->palette() == qApp->palette()) {
+                    else if (viewFrame->palette().color(QPalette::Base)
+                             == qApp->palette().color(QPalette::Base)) {
                         // Change the text and base palettes of an inactive view frame a little.
                         // NOTE: Style-sheets aren't used because they can interfere with QStyle.
                         QPalette palette = viewFrame->palette();
@@ -390,20 +387,20 @@ bool MainWindow::eventFilter(QObject* watched, QEvent* event) {
             }
         }
         // Use the Tab key for switching between view frames
-        else if (event->type() == QEvent::KeyPress
-                 && !qobject_cast<QTextEdit*>(watched) // not during inline renaming
-                 && ui.viewSplitter->isAncestorOf(qobject_cast<QWidget*>(watched))) {
+        else if (event->type() == QEvent::KeyPress) {
             if(QKeyEvent *ke = static_cast<QKeyEvent*>(event)) {
                 if(ke->key() == Qt::Key_Tab && ke->modifiers() == Qt::NoModifier) {
-                    // wrap the focus
-                    for(int i = 0; i < ui.viewSplitter->count(); ++i) {
-                        if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
-                            if(activeViewFrame_ == viewFrame) {
-                                activeViewFrame_ = i < ui.viewSplitter->count() - 1
-                                                    ? qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i + 1))
-                                                    : qobject_cast<ViewFrame*>(ui.viewSplitter->widget(0));
-                                updateUIForCurrentPage(); // focus the view and calls this function again
-                                return true;
+                    if(!qobject_cast<QTextEdit*>(watched) // not during inline renaming
+                       && ui.viewSplitter->isAncestorOf(qobject_cast<QWidget*>(watched))) {
+                        // wrap the focus
+                        for(int i = 0; i < ui.viewSplitter->count(); ++i) {
+                            if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
+                                if(activeViewFrame_ == viewFrame) {
+                                    int n = i < ui.viewSplitter->count() - 1 ? i + 1 : 0;
+                                    activeViewFrame_ = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(n));
+                                    updateUIForCurrentPage(); // focuses the view and calls this function again
+                                    return true;
+                                }
                             }
                         }
                     }
@@ -437,6 +434,7 @@ void MainWindow::addViewFrame(const Fm::FilePath& path) {
     connect(viewFrame->getTabBar(), &QTabBar::currentChanged, this, &MainWindow::onTabBarCurrentChanged);
     connect(viewFrame->getTabBar(), &QTabBar::tabCloseRequested, this, &MainWindow::onTabBarCloseRequested);
     connect(viewFrame->getTabBar(), &QTabBar::tabMoved, this, &MainWindow::onTabBarTabMoved);
+    connect(viewFrame->getTabBar(), &QTabBar::tabBarClicked, this, &MainWindow::onTabBarClicked);
     connect(viewFrame->getTabBar(), &QTabBar::customContextMenuRequested, this, &MainWindow::tabContextMenu);
     connect(viewFrame->getTabBar(), &TabBar::tabDetached, this, &MainWindow::detachTab);
     connect(viewFrame->getStackedWidget(), &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
@@ -534,7 +532,7 @@ void MainWindow::chdir(Fm::FilePath path, ViewFrame* viewFrame) {
     QTimer::singleShot(0, viewFrame, [this, path, viewFrame] {
         if(TabPage* page = currentPage(viewFrame)) {
             page->chdir(path, true);
-            if(viewFrame == activeViewFrame_){
+            if(viewFrame == activeViewFrame_) {
                 updateUIForCurrentPage();
             }
             else {
@@ -550,8 +548,7 @@ void MainWindow::chdir(Fm::FilePath path, ViewFrame* viewFrame) {
 }
 
 void MainWindow::createPathBar(bool usePathButtons) {
-    // NOTE: In the simple mode, path bars/entries are created before tab pages while
-    // in the split mode, they are created after tab pages and their paths/texts should be set.
+    // NOTE: Path bars/entries may be created after tab pages; so, their paths/texts should be set.
     if(splitView_) {
         for(int i = 0; i < ui.viewSplitter->count(); ++i) {
             if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
@@ -1296,7 +1293,13 @@ void MainWindow::onStackedWidgetWidgetRemoved(int index) {
                             if(ViewFrame* nextViewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(n))) {
                                 if(activeViewFrame_ != nextViewFrame) {
                                     activeViewFrame_ = nextViewFrame;
-                                    updateUIForCurrentPage(); // sets the focus too
+                                    updateUIForCurrentPage();
+                                    // if the window isn't active, eventFilter() won't be called,
+                                    // so we should revert to the main palette here
+                                    if(activeViewFrame_->palette().color(QPalette::Base)
+                                       != qApp->palette().color(QPalette::Base)) {
+                                        activeViewFrame_->setPalette(qApp->palette());
+                                    }
                                 }
                                 break;
                             }
@@ -1373,7 +1376,7 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
 
 void MainWindow::onTabPageOpenDirRequested(const Fm::FilePath& path, int target) {
     TabPage* tabPage = static_cast<TabPage*>(sender());
-    if(ViewFrame* viewFrame = viewFrameForTabPage(tabPage)){
+    if(ViewFrame* viewFrame = viewFrameForTabPage(tabPage)) {
         switch(target) {
         case OpenInCurrentTab:
             chdir(path, viewFrame);
@@ -1637,6 +1640,16 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
         int index = menu.actions().indexOf(selectedAction);
         page->jumpToHistory(index);
         updateUIForCurrentPage();
+    }
+}
+
+void MainWindow::onTabBarClicked(int /*index*/) {
+    TabBar* tabBar = static_cast<TabBar*>(sender());
+    if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
+        // focus the view on clicking the tab bar
+        if(TabPage* page = currentPage(viewFrame)) {
+            page->folderView()->childView()->setFocus();
+        }
     }
 }
 

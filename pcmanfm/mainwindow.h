@@ -204,6 +204,7 @@ protected Q_SLOTS:
     void onFolderUnmounted();
 
     void tabContextMenu(const QPoint& pos);
+    void onTabBarClicked(int index);
     void closeLeftTabs();
     void closeRightTabs();
     void closeOtherTabs() {
