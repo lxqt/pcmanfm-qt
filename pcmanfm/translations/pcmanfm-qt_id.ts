@@ -402,540 +402,587 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
         <translation>Manajer Berkas</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="90"/>
         <source>Focus with Ctrl+I</source>
-        <translation>Fokus dengan Ctrl+I</translation>
+        <translation type="vanished">Fokus dengan Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="178"/>
+        <location filename="../main-win.ui" line="128"/>
         <source>&amp;Toolbars</source>
         <translation>&amp;Bilah alat</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="185"/>
+        <location filename="../main-win.ui" line="135"/>
         <source>Path &amp;Bar</source>
         <translation>Bilah &amp;Jalur</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="298"/>
+        <location filename="../main-win.ui" line="142"/>
+        <source>&amp;Filtering</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="258"/>
         <source>Go &amp;Up</source>
         <translation>Ke &amp;Atas</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="301"/>
+        <location filename="../main-win.ui" line="261"/>
         <source>Go Up</source>
         <translation>Ke Atas</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="304"/>
+        <location filename="../main-win.ui" line="264"/>
         <source>Alt+Up</source>
         <translation>Alt+Up</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="313"/>
+        <location filename="../main-win.ui" line="273"/>
         <source>&amp;Home</source>
         <translation>&amp;Rumah</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="316"/>
+        <location filename="../main-win.ui" line="276"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="325"/>
+        <location filename="../main-win.ui" line="285"/>
         <source>&amp;Reload</source>
         <translation>&amp;Muat Ulang</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="328"/>
+        <location filename="../main-win.ui" line="288"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="337"/>
+        <location filename="../main-win.ui" line="297"/>
         <source>Go</source>
         <translation>Ke</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="346"/>
+        <location filename="../main-win.ui" line="306"/>
         <source>Quit</source>
         <translation>Keluar</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="355"/>
+        <location filename="../main-win.ui" line="315"/>
         <source>&amp;About</source>
         <translation>&amp;Tentang</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="364"/>
+        <location filename="../main-win.ui" line="324"/>
         <source>&amp;New Window</source>
         <translation>Jendela &amp;Baru</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="367"/>
+        <location filename="../main-win.ui" line="327"/>
         <source>New Window</source>
         <translation>Jendela Baru</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="370"/>
+        <location filename="../main-win.ui" line="330"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="378"/>
+        <location filename="../main-win.ui" line="338"/>
         <source>Show &amp;Hidden</source>
         <translation>Tampilkan yang Tersembunyi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="381"/>
+        <location filename="../main-win.ui" line="341"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="390"/>
+        <location filename="../main-win.ui" line="350"/>
         <source>&amp;Computer</source>
         <translation>&amp;Komputer</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="399"/>
+        <location filename="../main-win.ui" line="359"/>
         <source>&amp;Trash</source>
         <translation>&amp;Tempat Sampah</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="404"/>
+        <location filename="../main-win.ui" line="364"/>
         <source>&amp;Network</source>
         <translation>&amp;Jaringan</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="413"/>
+        <location filename="../main-win.ui" line="373"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Desktop</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="422"/>
+        <location filename="../main-win.ui" line="382"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Tambah ke Markah</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="427"/>
+        <location filename="../main-win.ui" line="387"/>
         <source>&amp;Applications</source>
         <translation>&amp;Aplikasi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="432"/>
+        <location filename="../main-win.ui" line="392"/>
         <source>Reload</source>
         <translation>Muat Ulang</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="440"/>
+        <location filename="../main-win.ui" line="400"/>
         <source>&amp;Icon View</source>
         <translation>Tampilan Ikon</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="448"/>
+        <location filename="../main-win.ui" line="408"/>
         <source>&amp;Compact View</source>
         <translation>Tampilan Kompak</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="456"/>
+        <location filename="../main-win.ui" line="416"/>
         <source>&amp;Detailed List</source>
         <translation>Daftar Terperinci</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="464"/>
+        <location filename="../main-win.ui" line="424"/>
         <source>&amp;Thumbnail View</source>
         <translation>Tampilan Gambar Kecil</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="473"/>
+        <location filename="../main-win.ui" line="433"/>
         <source>Cu&amp;t</source>
         <translation>Po&amp;tong</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="476"/>
+        <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="485"/>
+        <location filename="../main-win.ui" line="445"/>
         <source>&amp;Copy</source>
         <translation>Salin</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="488"/>
+        <location filename="../main-win.ui" line="448"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="497"/>
+        <location filename="../main-win.ui" line="457"/>
         <source>&amp;Paste</source>
         <translation>Tempel</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="500"/>
+        <location filename="../main-win.ui" line="460"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="505"/>
+        <location filename="../main-win.ui" line="465"/>
         <source>Select &amp;All</source>
         <translation>Pilih Semua</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="508"/>
+        <location filename="../main-win.ui" line="468"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="513"/>
+        <location filename="../main-win.ui" line="473"/>
         <source>Pr&amp;eferences</source>
         <translation>Preferensi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="521"/>
+        <location filename="../main-win.ui" line="481"/>
         <source>&amp;Ascending</source>
         <translation>Menaik</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="529"/>
+        <location filename="../main-win.ui" line="489"/>
         <source>&amp;Descending</source>
         <translation>Menurun</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="537"/>
+        <location filename="../main-win.ui" line="497"/>
         <source>&amp;By File Name</source>
         <translation>Oleh Nama Berkas</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="545"/>
+        <location filename="../main-win.ui" line="505"/>
         <source>By &amp;Modification Time</source>
         <translation>Oleh Tanggal Modifikasi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="553"/>
+        <location filename="../main-win.ui" line="513"/>
         <source>By File &amp;Type</source>
         <translation>Oleh &amp;Tipe Berkas</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="561"/>
+        <location filename="../main-win.ui" line="521"/>
         <source>By &amp;Owner</source>
         <translation>Oleh Pengguna</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="569"/>
+        <location filename="../main-win.ui" line="529"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Folder Pertama</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="577"/>
+        <location filename="../main-win.ui" line="537"/>
         <source>&amp;Preserve sorting for this folder</source>
         <translation>&amp;Pertahankan urutan untuk folder ini</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="676"/>
+        <location filename="../main-win.ui" line="636"/>
         <source>&amp;Case Sensitive</source>
         <translation>Sensitif Kata</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="684"/>
+        <location filename="../main-win.ui" line="644"/>
         <source>By File &amp;Size</source>
         <translation>Oleh Ukuran Berkas</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="689"/>
+        <location filename="../main-win.ui" line="649"/>
         <source>&amp;Close Window</source>
         <translation>Tutup Jendela</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="692"/>
+        <location filename="../main-win.ui" line="652"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="724"/>
+        <location filename="../main-win.ui" line="684"/>
         <source>&amp;Folder</source>
         <translation>&amp;Folder</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="736"/>
+        <location filename="../main-win.ui" line="696"/>
         <source>&amp;Blank File</source>
         <translation>Berkas &amp;Kosong</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="755"/>
-        <source>&amp;Filter</source>
-        <translation>&amp;Filter</translation>
+        <location filename="../main-win.ui" line="820"/>
+        <source>&amp;Show/Focus Filter Bar</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="758"/>
+        <location filename="../main-win.ui" line="823"/>
+        <source>Show Filter Bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="826"/>
+        <source>Ctrl+I</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="834"/>
+        <source>S&amp;plit View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="837"/>
+        <source>Split View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="840"/>
+        <source>F6</source>
+        <translation type="unfinished">F6</translation>
+    </message>
+    <message>
+        <source>&amp;Filter</source>
+        <translation type="vanished">&amp;Filter</translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="718"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="767"/>
+        <location filename="../main-win.ui" line="723"/>
+        <source>&amp;Clear All Filters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="726"/>
+        <source>Ctrl+Shift+K</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="735"/>
         <source>Close &amp;previous tabs</source>
         <translation>Tutup tab &amp;sebelumnya</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="776"/>
+        <location filename="../main-win.ui" line="744"/>
         <source>Close &amp;next tabs</source>
         <translation>Tutup tab &amp;berikutnya</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="815"/>
+        <location filename="../main-win.ui" line="783"/>
         <source>&amp;Preserve Settings for This Folder</source>
         <translation>&amp;Pertahankan Pengaturan untuk Folder Ini</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="820"/>
+        <location filename="../main-win.ui" line="788"/>
         <source>Connect to &amp;Server</source>
         <translation>Sambungkan ke &amp;Server</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="828"/>
+        <location filename="../main-win.ui" line="796"/>
         <source>&amp;Location</source>
         <translation>&amp;Lokasi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="836"/>
+        <location filename="../main-win.ui" line="804"/>
         <source>&amp;Path Buttons</source>
         <translation>Tombol &amp;Jalur</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="841"/>
+        <location filename="../main-win.ui" line="809"/>
         <source>&amp;Bulk Rename</source>
         <translation>&amp;Ganti nama massal</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="844"/>
+        <location filename="../main-win.ui" line="812"/>
         <source>Bulk Rename</source>
         <translation>Ganti Nama Massal</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="847"/>
+        <location filename="../main-win.ui" line="815"/>
         <source>Ctrl+F2</source>
         <oldsource>Ctrl+N</oldsource>
         <translation>Ctrl+F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="781"/>
+        <location filename="../main-win.ui" line="749"/>
         <source>Close &amp;other tabs</source>
         <translation>Tutup tab &amp;lainnya</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="789"/>
+        <location filename="../main-win.ui" line="715"/>
+        <source>Permanent &amp;filter bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="757"/>
         <source>&amp;Menu bar</source>
         <translation>Bilah &amp;menu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="792"/>
+        <location filename="../main-win.ui" line="760"/>
         <source>Menu bar</source>
         <translation>Bilah menu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="795"/>
+        <location filename="../main-win.ui" line="763"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="804"/>
-        <location filename="../main-win.ui" line="807"/>
+        <location filename="../main-win.ui" line="772"/>
+        <location filename="../main-win.ui" line="775"/>
         <source>Menu</source>
         <translation>Menu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="586"/>
+        <location filename="../main-win.ui" line="546"/>
         <source>New &amp;Tab</source>
         <translation>&amp;Tab Baru</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="589"/>
+        <location filename="../main-win.ui" line="549"/>
         <source>New Tab</source>
         <translation>Tab Baru</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="592"/>
+        <location filename="../main-win.ui" line="552"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="601"/>
+        <location filename="../main-win.ui" line="561"/>
         <source>Go &amp;Back</source>
         <translation>Kembali</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="604"/>
+        <location filename="../main-win.ui" line="564"/>
         <source>Go Back</source>
         <translation>Kembali</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="567"/>
         <source>Alt+Left</source>
         <translation>Alt+Left</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="616"/>
+        <location filename="../main-win.ui" line="576"/>
         <source>Go &amp;Forward</source>
         <translation>Maju</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="619"/>
+        <location filename="../main-win.ui" line="579"/>
         <source>Go Forward</source>
         <translation>Maju</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="622"/>
+        <location filename="../main-win.ui" line="582"/>
         <source>Alt+Right</source>
         <translation>Alt+Right</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="627"/>
+        <location filename="../main-win.ui" line="587"/>
         <source>&amp;Invert Selection</source>
         <translation>Balikkan Seleksi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="636"/>
+        <location filename="../main-win.ui" line="596"/>
         <source>&amp;Delete</source>
         <translation>Hapus</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="639"/>
+        <location filename="../main-win.ui" line="599"/>
         <source>Del</source>
         <translation>Del</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="644"/>
+        <location filename="../main-win.ui" line="604"/>
         <source>&amp;Rename</source>
         <translation>Ubah nama</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="647"/>
+        <location filename="../main-win.ui" line="607"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="652"/>
+        <location filename="../main-win.ui" line="612"/>
         <source>C&amp;lose Tab</source>
         <translation>Tutup Tab</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="655"/>
+        <location filename="../main-win.ui" line="615"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="660"/>
+        <location filename="../main-win.ui" line="620"/>
         <source>File &amp;Properties</source>
         <translation>&amp;Properti Berkas</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="663"/>
+        <location filename="../main-win.ui" line="623"/>
         <source>Alt+Return</source>
         <translation>Alt+Return</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="668"/>
+        <location filename="../main-win.ui" line="628"/>
         <source>&amp;Folder Properties</source>
         <translation>Properti &amp;Folder</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="697"/>
+        <location filename="../main-win.ui" line="657"/>
         <source>Edit Bookmarks</source>
         <translation>Sunting Markah</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="702"/>
+        <location filename="../main-win.ui" line="662"/>
         <source>Open &amp;Terminal</source>
         <translation>Buka &amp;Terminal</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="705"/>
+        <location filename="../main-win.ui" line="665"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="710"/>
+        <location filename="../main-win.ui" line="670"/>
         <source>Open as &amp;Root</source>
         <translation>Buka sebagai &amp;Root</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="715"/>
+        <location filename="../main-win.ui" line="675"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Sunting Markah</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="727"/>
+        <location filename="../main-win.ui" line="687"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="739"/>
+        <location filename="../main-win.ui" line="699"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="744"/>
+        <location filename="../main-win.ui" line="704"/>
         <source>&amp;Find Files</source>
         <translation>Cari Berkas</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="747"/>
+        <location filename="../main-win.ui" line="707"/>
         <source>F3</source>
         <translation>F3</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="93"/>
         <source>Filter by string...</source>
-        <translation>Filter berdasarkan string...</translation>
+        <translation type="vanished">Filter berdasarkan string...</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="120"/>
+        <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
         <translation>Berkas</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="124"/>
+        <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
         <translation>Buat Baru</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="142"/>
+        <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
         <translation>Bantuan</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="148"/>
-        <location filename="../main-win.ui" line="168"/>
+        <location filename="../main-win.ui" line="98"/>
+        <location filename="../main-win.ui" line="118"/>
         <source>&amp;View</source>
         <translation>Tampilan</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="152"/>
+        <location filename="../main-win.ui" line="102"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Pengurutan</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="202"/>
+        <location filename="../main-win.ui" line="162"/>
         <source>&amp;Edit</source>
         <translation>Sunting</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="220"/>
+        <location filename="../main-win.ui" line="180"/>
         <source>&amp;Bookmarks</source>
         <translation>Markah</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="227"/>
+        <location filename="../main-win.ui" line="187"/>
         <source>&amp;Go</source>
         <translation>Ke</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="244"/>
+        <location filename="../main-win.ui" line="204"/>
         <source>&amp;Tool</source>
         <translation>Alat</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="264"/>
+        <location filename="../main-win.ui" line="224"/>
         <source>Main Toolbar</source>
         <translation>Bilah Alat Utama</translation>
     </message>
@@ -1127,17 +1174,17 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="578"/>
+        <location filename="../desktopwindow.cpp" line="579"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Tetap Pada Posisi Saat Ini</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="604"/>
+        <location filename="../desktopwindow.cpp" line="605"/>
         <source>Hide Desktop Items</source>
         <translation>Sembunyikan Item Desktop</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="609"/>
+        <location filename="../desktopwindow.cpp" line="610"/>
         <source>Desktop Preferences</source>
         <translation>Preferensi Desktop</translation>
     </message>
@@ -1145,43 +1192,42 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
 <context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="275"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation>Bersihkan teks (Ctrl+K)</translation>
+        <translation type="vanished">Bersihkan teks (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="650"/>
         <source>Hide menu bar</source>
         <translation>Sembunyikan bilah menu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="651"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Ini akan menyembunyikan bilah menu sepenuhnya, gunakan Ctrl + M untuk menampilkannya lagi.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="651"/>
+        <location filename="../mainwindow.cpp" line="973"/>
         <source>Version: %1</source>
         <translation>Versi: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1360"/>
+        <location filename="../mainwindow.cpp" line="1790"/>
         <source>&amp;Move to Trash</source>
         <translation>Buang ke Te&amp;mpat Sampah</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1360"/>
+        <location filename="../mainwindow.cpp" line="1790"/>
         <source>&amp;Delete</source>
         <translation>Hapus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1423"/>
-        <location filename="../mainwindow.cpp" line="1431"/>
+        <location filename="../mainwindow.cpp" line="1847"/>
+        <location filename="../mainwindow.cpp" line="1855"/>
         <source>Error</source>
         <translation>Kesalahan</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1431"/>
+        <location filename="../mainwindow.cpp" line="1855"/>
         <source>Switch user command is not set.</source>
         <translation>Perintah beralih pengguna belum diatur.</translation>
     </message>
@@ -1189,22 +1235,22 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="190"/>
+        <location filename="../preferencesdialog.cpp" line="196"/>
         <source>Icon View</source>
         <translation>Tampilan Ikon</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="191"/>
+        <location filename="../preferencesdialog.cpp" line="197"/>
         <source>Compact View</source>
         <translation>Tampilan Kompak</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="192"/>
+        <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Thumbnail View</source>
         <translation>Tampilan Gambar Kecil</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="193"/>
+        <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Detailed List View</source>
         <translation>Tampilan Daftar Terperinci</translation>
     </message>
@@ -1212,38 +1258,38 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="280"/>
+        <location filename="../tabpage.cpp" line="407"/>
         <source>Error</source>
         <translation>Kesalahan</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="289"/>
+        <location filename="../tabpage.cpp" line="416"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Ruang bebas: %1 (Jumlah: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="306"/>
+        <location filename="../tabpage.cpp" line="433"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n item(s)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="308"/>
+        <location filename="../tabpage.cpp" line="435"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n tersembunyi)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="313"/>
-        <location filename="../tabpage.cpp" line="492"/>
-        <location filename="../tabpage.cpp" line="508"/>
+        <location filename="../tabpage.cpp" line="440"/>
+        <location filename="../tabpage.cpp" line="613"/>
+        <location filename="../tabpage.cpp" line="629"/>
         <source>Link to</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="522"/>
+        <location filename="../tabpage.cpp" line="643"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n item(s) terpilih</numerusform>
@@ -1287,7 +1333,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="653"/>
+        <location filename="../preferences.ui" line="548"/>
         <source>Thumbnail</source>
         <translation>Gambar Kecil</translation>
     </message>
@@ -1347,22 +1393,22 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
         <translation>Selalu tampilkan bilah tab</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="497"/>
+        <location filename="../preferences.ui" line="486"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Tampilkan tombol &apos;Tutup&apos; pada tab	</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="504"/>
+        <location filename="../preferences.ui" line="493"/>
         <source>Remember the size of the last closed window</source>
         <translation>Ingat ukuran jendela terakhir yang ditutup</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="511"/>
+        <location filename="../preferences.ui" line="500"/>
         <source>Default width of new windows:</source>
         <translation>Lebar baku untuk jendela baru:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="525"/>
+        <location filename="../preferences.ui" line="514"/>
         <source>Default height of new windows:</source>
         <translation>Tinggi baku untuk jendela baru:</translation>
     </message>
@@ -1407,12 +1453,12 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
         <translation>Pindahkan berkas yang dihapus ke &quot;tempat sampah&quot; alih-alih menghapusnya dari disk.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="686"/>
+        <location filename="../preferences.ui" line="581"/>
         <source>Show thumbnails of files</source>
         <translation>Tampilkan gambar kecil dari berkas</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="676"/>
+        <location filename="../preferences.ui" line="571"/>
         <source>Only show thumbnails for local files</source>
         <translation>Hanya tampilkan gambar kecil untuk berkas lokal</translation>
     </message>
@@ -1542,151 +1588,146 @@ only if there are more than one tab.</source>
 hanya jika ada lebih dari satu tab.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="486"/>
+        <location filename="../preferences.ui" line="796"/>
+        <source>Application restart is needed for changes to take effect.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>If unchecked, the tab bar will be positioned only
 above the folder-view and not above the left pane.</source>
-        <translation>Jika tidak dicentang, bilah tab hanya akan diposisikan
+        <translation type="vanished">Jika tidak dicentang, bilah tab hanya akan diposisikan
 di atas tampilan folder dan tidak di atas panel kiri.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="490"/>
         <source>Fullwidth tab bar</source>
-        <translation>Bilah tab lebar penuh</translation>
+        <translation type="vanished">Bilah tab lebar penuh</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="542"/>
         <source>Show in places</source>
-        <translation>Tampilkan di tempat</translation>
+        <translation type="vanished">Tampilkan di tempat</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="549"/>
         <source>Home</source>
-        <translation>Beranda</translation>
+        <translation type="vanished">Beranda</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="562"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation type="vanished">Desktop</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="575"/>
         <source>Trash can</source>
-        <translation>Tampat sampah</translation>
+        <translation type="vanished">Tampat sampah</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="588"/>
         <source>Computer</source>
-        <translation>Komputer</translation>
+        <translation type="vanished">Komputer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="601"/>
         <source>Applications</source>
-        <translation>Aplikasi</translation>
+        <translation type="vanished">Aplikasi</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="609"/>
         <source>Devices</source>
-        <translation>Perangkat</translation>
+        <translation type="vanished">Perangkat</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="617"/>
         <source>Network</source>
-        <translation>Jaringan</translation>
+        <translation type="vanished">Jaringan</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="659"/>
+        <location filename="../preferences.ui" line="554"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Jangan membuat gambar kecil untuk berkas gambar yang melebihi ukuran ini:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="666"/>
+        <location filename="../preferences.ui" line="561"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="683"/>
+        <location filename="../preferences.ui" line="578"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Butuh ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="713"/>
+        <location filename="../preferences.ui" line="608"/>
         <source>Auto Mount</source>
         <translation>Auto Mount</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="719"/>
+        <location filename="../preferences.ui" line="614"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Mount volume yang dapat dimount secara otomatis saat memulai program</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="726"/>
+        <location filename="../preferences.ui" line="621"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Mount media yang dapat dilepas secara otomatis saat mereka dimasukkan</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="733"/>
+        <location filename="../preferences.ui" line="628"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Tampilkan opsi yang tersedia untuk media yang dapat dilepas saat mereka dimasukkan</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="743"/>
+        <location filename="../preferences.ui" line="638"/>
         <source>When removable medium unmounted:</source>
         <translation>Saat media yang dapat dilepas di unmount:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="749"/>
+        <location filename="../preferences.ui" line="644"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Tutup &amp;tab yang berisi media yang dapat dilepas</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="756"/>
+        <location filename="../preferences.ui" line="651"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Ganti folder di tab ini ke folder home</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="783"/>
+        <location filename="../preferences.ui" line="678"/>
         <source>Programs</source>
         <translation>Program</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="792"/>
+        <location filename="../preferences.ui" line="687"/>
         <source>Terminal emulator:</source>
         <translation>Emulator terminal:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="799"/>
+        <location filename="../preferences.ui" line="694"/>
         <source>Switch &amp;user command:</source>
         <translation>Perintah pengg&amp;una beralih:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="812"/>
+        <location filename="../preferences.ui" line="707"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Contoh: &quot;xterm -e %s&quot; untuk terminal atau &quot;gksu %s&quot; untuk beralih pengguna.
 %s = baris perintah yang ingin Anda eksekusi dengan terminal atau su.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="823"/>
+        <location filename="../preferences.ui" line="718"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>In&amp;tegrasi Archiver:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="846"/>
+        <location filename="../preferences.ui" line="741"/>
         <source>Templates</source>
         <translation>Templat</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="852"/>
+        <location filename="../preferences.ui" line="747"/>
         <source>Show only user defined templates in menu</source>
         <translation>Tampilkan hanya templat yang ditentukan pengguna dalam menu</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="859"/>
+        <location filename="../preferences.ui" line="754"/>
         <source>Show only one template for each MIME type</source>
         <translation>Tampilkan hanya satu templat untuk masing-masing MIME type</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="866"/>
+        <location filename="../preferences.ui" line="761"/>
         <source>Run default application after creation from template</source>
         <translation>Jalankan aplikasi default setelah pembuatan dari templat</translation>
     </message>
@@ -1733,6 +1774,22 @@ di atas tampilan folder dan tidak di atas panel kiri.</translation>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
         <translation>Beberapa berkas tidak dapat diubah namanya.</translation>
+    </message>
+</context>
+<context>
+    <name>PCManFM::FilterEdit</name>
+    <message>
+        <location filename="../tabpage.cpp" line="62"/>
+        <source>Clear text (Ctrl+K)</source>
+        <translation type="unfinished">Bersihkan teks (Ctrl+K)</translation>
+    </message>
+</context>
+<context>
+    <name>PCManFM::FilterBar</name>
+    <message>
+        <location filename="../tabpage.cpp" line="92"/>
+        <source>Filter:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
