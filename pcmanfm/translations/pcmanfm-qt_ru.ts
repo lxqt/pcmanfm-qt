@@ -115,22 +115,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Групповое переименование</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># будет заменен на числа, начиная с:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Переименовать выделенные файлы в:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя#</translation>
     </message>
 </context>
 <context>
@@ -327,57 +327,57 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Показ слайдов</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Разрешить показ слайдов</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Папка с обоями:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Обзор</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="347"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> час.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>и</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Интервал короче 5 минут будет проигнорирован</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Интервал:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="380"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> мин.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Папка с обоями</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Случайный порядок слайдов</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
@@ -526,7 +526,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="346"/>
         <source>Quit</source>
-        <translation>Выйти</translation>
+        <translation>Выход</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="355"/>
@@ -781,17 +781,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Групповое переименование</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Групповое переименование</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="847"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
@@ -1134,7 +1134,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="604"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрыть значки рабочего стола</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="609"/>
@@ -1244,7 +1244,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../tabpage.cpp" line="492"/>
         <location filename="../tabpage.cpp" line="508"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ссылка на</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="522"/>
@@ -1310,7 +1310,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Выделять только что созданные файлы</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1462,12 +1462,12 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Для полного применения настроек нужно перезапустить приложение</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Запускать исполняемые файлы без запроса</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1707,38 +1707,38 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Переименование файлов…</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Прервать</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Предупреждение</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Переименование прервано.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось переименовать ни один файл.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось переименовать некоторые файлы.</translation>
     </message>
 </context>
 </TS>
