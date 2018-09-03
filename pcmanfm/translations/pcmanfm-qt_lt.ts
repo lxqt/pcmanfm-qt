@@ -417,7 +417,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtravimas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="258"/>
@@ -582,7 +582,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../main-win.ui" line="465"/>
         <source>Select &amp;All</source>
-        <translation>Pažymėti vis&amp;ką</translation>
+        <translation>Žymėti vis&amp;ką</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="468"/>
@@ -667,32 +667,32 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Rodyti/Fokusuoti filtro juostą</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodyti filtro juostą</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="826"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl(Vald)+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="834"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Suskai&amp;dytas rodinys</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="837"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Suskaidytas rodinys</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <source>&amp;Filter</source>
@@ -726,17 +726,17 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuolatinė &amp;filtro juosta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="723"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Išvalyti visus filtrus</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl(Vald)+Shift(Lyg2)+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="744"/>
@@ -771,7 +771,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../main-win.ui" line="757"/>
         <source>&amp;Menu bar</source>
-        <translation>&amp;meniu juosta</translation>
+        <translation>&amp;Meniu juosta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="760"/>
@@ -1601,7 +1601,7 @@ viena kortelė.</translation>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tam, kad įsigaliotų pakeitimai, reikia paleisti programą iš naujo.</translation>
     </message>
     <message>
         <source>If unchecked, the tab bar will be positioned only
@@ -1793,7 +1793,7 @@ kairiajame polangyje.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">Išvalyti tekstą (Ctrl(Vald)+K)</translation>
+        <translation>Išvalyti tekstą (Ctrl(Vald)+K)</translation>
     </message>
 </context>
 <context>
@@ -1801,7 +1801,7 @@ kairiajame polangyje.</translation>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtras:</translation>
     </message>
 </context>
 </TS>
