@@ -417,7 +417,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtratge</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="258"/>
@@ -668,32 +668,32 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mo&amp;stra/Enfoca la barra de filtratge</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra la barra de filtratge</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="826"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="834"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Dividei&amp;x la vista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="837"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Divideix la vista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <source>&amp;Filter</source>
@@ -707,12 +707,12 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../main-win.ui" line="723"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Neteja tots els filtres</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Maj+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
@@ -767,7 +767,7 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra de &amp;filtratge permanent</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="757"/>
@@ -1594,7 +1594,7 @@ barra de tasques si hi ha més d&apos;una pestanya.</translation>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Es necessita reiniciar l&apos;aplicació perquè els canvis tinguin efecte.</translation>
     </message>
     <message>
         <source>If unchecked, the tab bar will be positioned only
@@ -1785,7 +1785,7 @@ sobre de la vista de la carpeta i no sobre el plafó esquerre.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">Neteja el text (Ctrl+K)</translation>
+        <translation>Neteja el text (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1793,7 +1793,7 @@ sobre de la vista de la carpeta i no sobre el plafó esquerre.</translation>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtre:</translation>
     </message>
 </context>
 </TS>
