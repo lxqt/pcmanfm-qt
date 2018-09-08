@@ -417,7 +417,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtrering</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="258"/>
@@ -667,32 +667,32 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vis/Giv fokus til filterlinje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis filterlinje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="826"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="834"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Opdelt visning</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="837"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Opdelt visning</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <source>&amp;Filter</source>
@@ -706,12 +706,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="723"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ryd alle filtre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Skift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
@@ -766,7 +766,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Permanent &amp;filterlinje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="757"/>
@@ -1591,7 +1591,7 @@ hvis der er mere end et faneblad.</translation>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Programmet skal genstartes før ændringerne kan træde i kraft.</translation>
     </message>
     <message>
         <source>If unchecked, the tab bar will be positioned only
@@ -1782,7 +1782,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">Ryd tekst (Ctrl+K)</translation>
+        <translation>Ryd tekst (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1790,7 +1790,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter:</translation>
     </message>
 </context>
 </TS>
