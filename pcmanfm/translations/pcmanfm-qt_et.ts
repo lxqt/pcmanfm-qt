@@ -412,7 +412,7 @@ Ruumi varuti ka 3 tekstirea jaoks.</translation>
     <message>
         <location filename="../main-win.ui" line="135"/>
         <source>Path &amp;Bar</source>
-        <translation>Rada &amp;riba</translation>
+        <translation>Asukoha&amp;riba</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="142"/>
@@ -672,12 +672,12 @@ Ruumi varuti ka 3 tekstirea jaoks.</translation>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuva filtririba</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="826"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="834"/>
@@ -687,12 +687,12 @@ Ruumi varuti ka 3 tekstirea jaoks.</translation>
     <message>
         <location filename="../main-win.ui" line="837"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Poolitatud vaade</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>F6</source>
-        <translation type="unfinished"></translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="718"/>
@@ -702,12 +702,12 @@ Ruumi varuti ka 3 tekstirea jaoks.</translation>
     <message>
         <location filename="../main-win.ui" line="723"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kustuta kõik filtrid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
@@ -762,7 +762,7 @@ Ruumi varuti ka 3 tekstirea jaoks.</translation>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Püsiv &amp;filtririba</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="757"/>
@@ -1586,7 +1586,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Muudatuste rakendamiseks tuleb prorgramm uuesti käivitada.</translation>
     </message>
     <message>
         <source>If unchecked, the tab bar will be positioned only
@@ -1783,7 +1783,7 @@ above the folder-view and not above the left pane.</source>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter:</translation>
     </message>
 </context>
 </TS>
