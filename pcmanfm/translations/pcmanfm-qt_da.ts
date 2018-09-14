@@ -179,7 +179,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation>Skrivebordsmappe</translation>
+        <translation>Formular</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -297,7 +297,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation>Stander er 3 pixels.</translation>
+        <translation>Standard er 3 pixels.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="241"/>
@@ -432,7 +432,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="264"/>
         <source>Alt+Up</source>
-        <translation>Alt+pilop</translation>
+        <translation>Alt+op</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="273"/>
@@ -457,7 +457,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="297"/>
         <source>Go</source>
-        <translation>Gå til</translation>
+        <translation>Gå</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="306"/>
@@ -542,12 +542,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="416"/>
         <source>&amp;Detailed List</source>
-        <translation>&amp;Detaljeret visning</translation>
+        <translation>&amp;Detaljeret liste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="424"/>
         <source>&amp;Thumbnail View</source>
-        <translation>&amp;Forhåndsvisninger</translation>
+        <translation>&amp;Miniaturevisning</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="433"/>
@@ -807,32 +807,32 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="561"/>
         <source>Go &amp;Back</source>
-        <translation>Til&amp;bage</translation>
+        <translation>Gå til&amp;bage</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="564"/>
         <source>Go Back</source>
-        <translation>Tilbage</translation>
+        <translation>Gå tilbage</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="567"/>
         <source>Alt+Left</source>
-        <translation>Alt+venstrepil</translation>
+        <translation>Alt+venstre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="576"/>
         <source>Go &amp;Forward</source>
-        <translation>&amp;Fremad</translation>
+        <translation>Gå &amp;fremad</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="579"/>
         <source>Go Forward</source>
-        <translation>Fremad</translation>
+        <translation>gå fremad</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
         <source>Alt+Right</source>
-        <translation>Alt+Højrepil</translation>
+        <translation>Alt+højre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="587"/>
@@ -1071,7 +1071,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation>[FIL1,FIL2,...]</translation>
+        <translation>[FIL1, FIL2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="543"/>
@@ -1211,7 +1211,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1790"/>
         <source>&amp;Move to Trash</source>
-        <translation>Smid i &amp;papirkurv</translation>
+        <translation>Smid i &amp;papirkurven</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1790"/>
@@ -1245,12 +1245,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Thumbnail View</source>
-        <translation>Forhåndsvisninger</translation>
+        <translation>Miniaturevisning</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Detailed List View</source>
-        <translation>Detaljeret visning</translation>
+        <translation>Detaljeret listevisning</translation>
     </message>
 </context>
 <context>
@@ -1336,7 +1336,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="548"/>
         <source>Thumbnail</source>
-        <translation>Forhåndsvisning</translation>
+        <translation>Miniature</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
@@ -1361,22 +1361,22 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="262"/>
         <source>Size of big icons:</source>
-        <translation>Storikonstørrelse:</translation>
+        <translation>Størrelse på store ikoner:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="279"/>
         <source>Size of small icons:</source>
-        <translation>Ikonstørrelse:</translation>
+        <translation>Størrelse på små ikoner:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Size of thumbnails:</source>
-        <translation>Forhåndsvisningsstørrelse:</translation>
+        <translation>Størrelse på miniaturer:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
-        <translation>Ikonstørrelse på sidepanel:</translation>
+        <translation>Størrelse på ikoner i sidepanel:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="242"/>
@@ -1396,7 +1396,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="486"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Vis &apos;Luk&apos;-knapper på faneblade</translation>
+        <translation>Vis &apos;Luk&apos;-knapper på faneblade	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="493"/>
@@ -1456,12 +1456,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="581"/>
         <source>Show thumbnails of files</source>
-        <translation>Vis forhåndsvisninger af filer</translation>
+        <translation>Vis miniaturer af filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Only show thumbnails for local files</source>
-        <translation>Vis kun forhåndsvisninger for lokale filer</translation>
+        <translation>Vis kun miniaturer for lokale filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
@@ -1520,13 +1520,13 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <location filename="../preferences.ui" line="276"/>
         <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>Brugt af kompakt- og detaljeretvisning</translation>
+        <translation>Brugt af kompakt- og detaljeret listevisning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="293"/>
         <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
-        <translation>Brug af forhåndsvisninger</translation>
+        <translation>Brugt af miniaturevisning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
@@ -1638,7 +1638,7 @@ over mappevisningen og ikke over det venstre panel.</translation>
     <message>
         <location filename="../preferences.ui" line="554"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Generer ikke forhåndsvisninger for billeder større end:</translation>
+        <translation>Generer ikke miniaturer for billeder større end:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="561"/>
