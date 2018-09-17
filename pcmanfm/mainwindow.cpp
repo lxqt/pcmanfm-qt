@@ -1521,9 +1521,13 @@ void MainWindow::on_actionDelete_triggered() {
     Settings& settings = app->settings();
     TabPage* page = currentPage();
     auto paths = page->selectedFilePaths();
+    auto path_it = paths.cbegin();
+    bool trashed(path_it != paths.cend() && (*path_it).hasUriScheme("trash"));
 
     bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
-    if(settings.useTrash() && !shiftPressed) {
+    if(settings.useTrash() && !shiftPressed
+       // trashed files should be deleted
+       && !trashed) {
         FileOperation::trashFiles(paths, settings.confirmTrash(), this);
     }
     else {
