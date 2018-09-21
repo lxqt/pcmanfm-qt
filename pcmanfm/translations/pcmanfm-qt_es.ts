@@ -467,7 +467,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtrado</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="162"/>
@@ -742,12 +742,12 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mo&amp;strar/Enfocar la barra del filtro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar la barra del filtro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="826"/>
@@ -757,17 +757,17 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="834"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Dividir la vista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="837"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Dividir la vista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation></translation>
     </message>
     <message>
         <source>&amp;Filter</source>
@@ -781,7 +781,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="723"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Limpiar todos los filtros</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
@@ -841,7 +841,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra del &amp;filtro permanente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="757"/>
@@ -1597,7 +1597,7 @@ solo si hay más de una pestaña.</translation>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Es necesario reiniciar la aplicación para que los cambios tenga efecto.</translation>
     </message>
     <message>
         <source>If unchecked, the tab bar will be positioned only
@@ -1788,7 +1788,7 @@ sobre la vista carpetas y no sobre el panel izquierdo.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">Borrar el texto (Ctrl+K)</translation>
+        <translation>Borrar el texto (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1796,7 +1796,7 @@ sobre la vista carpetas y no sobre el panel izquierdo.</translation>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtro:</translation>
     </message>
 </context>
 </TS>
