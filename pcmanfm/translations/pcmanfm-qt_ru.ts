@@ -929,7 +929,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="604"/>
         <source>&amp;Rename</source>
-        <translation>&amp;Переименовать</translation>
+        <translation>Пере&amp;именовать</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="607"/>
