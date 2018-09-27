@@ -442,7 +442,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtrowanie</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="273"/>
@@ -637,27 +637,27 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokaż pasek filtrowania</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="826"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="834"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Podziel widok</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="837"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Podziel widok</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <source>&amp;Filter</source>
@@ -671,12 +671,12 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="723"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Wy&amp;czyść wszystkie filtry</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
@@ -731,7 +731,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Stały pasek &amp;filtrowania</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="757"/>
@@ -1600,7 +1600,7 @@ tylko jeżeli jest więcej niż jedna karta.</translation>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aby uzyskać efekt, musisz uruchomić aplikację ponownie.</translation>
     </message>
     <message>
         <source>If unchecked, the tab bar will be positioned only
@@ -1791,7 +1791,7 @@ nad widokiem, nie nad prawym panelem.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">Usuń tekst (Ctrl+K)</translation>
+        <translation>Wyczyść tekst (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1799,7 +1799,7 @@ nad widokiem, nie nad prawym panelem.</translation>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtr:</translation>
     </message>
 </context>
 </TS>
