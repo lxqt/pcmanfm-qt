@@ -11,7 +11,7 @@
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation>Ressourcen schonender Dateimanager</translation>
+        <translation>Leichtgewichtiger Dateimanager</translation>
     </message>
     <message>
         <location filename="../about.ui" line="87"/>
@@ -61,7 +61,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>PCManFM-Qt Dateiverwaltung
+        <translation>PCManFM-Qt Dateimanager
 
 Urheberrecht (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
