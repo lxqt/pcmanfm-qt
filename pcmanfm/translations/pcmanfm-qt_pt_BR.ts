@@ -179,7 +179,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formulário</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -222,7 +222,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../desktop-preferences.ui" line="52"/>
         <source>Wallpaper mode:</source>
-        <translation>Modo de papel de parede:</translation>
+        <translation>Modo do papel de parede:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="65"/>
@@ -262,7 +262,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../desktop-preferences.ui" line="138"/>
         <source>Label Text</source>
-        <translation>Texto</translation>
+        <translation>Texto do rótulo</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
@@ -335,7 +335,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation>Pasta de imagem do papel de parede:</translation>
+        <translation>Pasta de imagem de papel de parede:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
@@ -355,27 +355,27 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Intervalos com menos de 5min serão ignorados</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Intervalo:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="380"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> minuto(s)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasta de papel de parede</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Apresentação de slides aleatória</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
@@ -385,7 +385,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Mostrar menu do gerenciador de janelas quando a área de trabalho for clicada</translation>
+        <translation>Exibir menu do gerenciador de janelas quando a área de trabalho for clicada</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="453"/>
@@ -403,7 +403,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="261"/>
         <source>Go Up</source>
-        <translation>Subir</translation>
+        <translation>Ir Acima</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="264"/>
@@ -428,22 +428,22 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="128"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Barra de ferramentas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="135"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Barra de endereço</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtrando</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="273"/>
         <source>&amp;Home</source>
-        <translation>&amp;Pasta pessoal</translation>
+        <translation>&amp;Pasta principal</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="285"/>
@@ -478,7 +478,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="338"/>
         <source>Show &amp;Hidden</source>
-        <translation>Mostrar &amp;ocultos</translation>
+        <translation>Exibir &amp;ocultos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="341"/>
@@ -503,12 +503,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="373"/>
         <source>&amp;Desktop</source>
-        <translation>Área &amp;de trabalho</translation>
+        <translation>&amp;Área de trabalho</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="382"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation>&amp;Adicionar aos marcadores</translation>
+        <translation>&amp;Adicionar aos favoritos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="387"/>
@@ -533,7 +533,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="457"/>
         <source>&amp;Paste</source>
-        <translation>Co&amp;lar</translation>
+        <translation>&amp;Colar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="460"/>
@@ -554,42 +554,42 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="481"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ascendente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="489"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Descendente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="497"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Por nome do arquivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Por Data de &amp;Modificação</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="513"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Por &amp;tipo de arquivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="521"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Por &amp;proprietário</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="529"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pasta primeiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="537"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Preservar a classificação para esta pasta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="587"/>
@@ -599,7 +599,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="596"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Deletar</translation>
+        <translation>&amp;Excluir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="604"/>
@@ -609,138 +609,138 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="636"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Maiúsculas e minúsculas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="644"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Por &amp;tamanho do arquivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="649"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fechar janela</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra de &amp;filtro permanente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Exibir/Foco Barra de Filtro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Exibir Barra de Filtros</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="826"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="834"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Visualização D&amp;ividida</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="837"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Visualização Dividida</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="718"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="723"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Limpar Todos os Filtros</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar aba &amp;anterior</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="744"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar &amp;próxima aba</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="749"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar &amp;outras abas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="757"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Barra de Menu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="760"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra de Menu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="763"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="772"/>
         <location filename="../main-win.ui" line="775"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="783"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Preservar configurações para esta pasta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="788"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Conectar ao &amp;Servidor</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="796"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Localização</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Botões de Atalho</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="809"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Renomear em massa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="812"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished">Renomear em Massa</translation>
+        <translation>Renomear em Massa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="815"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="468"/>
@@ -750,7 +750,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="258"/>
         <source>Go &amp;Up</source>
-        <translation>S&amp;ubir</translation>
+        <translation>Ir &amp;Acima</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="324"/>
@@ -760,22 +760,22 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="400"/>
         <source>&amp;Icon View</source>
-        <translation>V&amp;isão em ícones</translation>
+        <translation>Visualização em &amp;Ícones</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="408"/>
         <source>&amp;Compact View</source>
-        <translation>Visão &amp;compacta</translation>
+        <translation>Visualização &amp;Compacta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="416"/>
         <source>&amp;Detailed List</source>
-        <translation>&amp;Visão de lista detalhada</translation>
+        <translation>Lista &amp;Detalhada</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="424"/>
         <source>&amp;Thumbnail View</source>
-        <translation>Visão em minia&amp;turas</translation>
+        <translation>Visualização em &amp;Miniaturas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="433"/>
@@ -785,12 +785,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="546"/>
         <source>New &amp;Tab</source>
-        <translation>Nova &amp;aba</translation>
+        <translation>Nova &amp;Aba</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <source>New Tab</source>
-        <translation>Nova abar</translation>
+        <translation>Nova Aba</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="552"/>
@@ -825,7 +825,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="582"/>
         <source>Alt+Right</source>
-        <translation>Alt+Right</translation>
+        <translation>Alt+Seta direita</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="599"/>
@@ -840,7 +840,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="612"/>
         <source>C&amp;lose Tab</source>
-        <translation>&amp;Fechar aba</translation>
+        <translation>F&amp;echar Aba</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="620"/>
@@ -850,37 +850,37 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>&amp;Folder Properties</source>
-        <translation>Propried&amp;ades da pasta</translation>
+        <translation>Propriedades da &amp;Pasta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="652"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="687"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="699"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>C&amp;riar Novo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
         <source>&amp;Sorting</source>
-        <translation>&amp;Ordenação</translation>
+        <translation>&amp;Classificação</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="224"/>
         <source>Main Toolbar</source>
-        <translation>Barra de ferramentas</translation>
+        <translation>Barra de Ferramentas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="615"/>
@@ -890,17 +890,17 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="623"/>
         <source>Alt+Return</source>
-        <translation>Alt+Return</translation>
+        <translation>Alt+Enter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="657"/>
         <source>Edit Bookmarks</source>
-        <translation>Editar marcadores</translation>
+        <translation>Editar Favoritos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="662"/>
         <source>Open &amp;Terminal</source>
-        <translation>Abrir &amp;terminal</translation>
+        <translation>Abrir &amp;Terminal</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="665"/>
@@ -910,32 +910,32 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="670"/>
         <source>Open as &amp;Root</source>
-        <translation>Abrir como &amp;root</translation>
+        <translation>Abrir como &amp;Root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="675"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation>&amp;Editar marcadores</translation>
+        <translation>&amp;Editar Favoritos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="684"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pasta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="696"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivo em &amp;Branco</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="704"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Encontrar Arquivos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -945,13 +945,13 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation>Aj&amp;uda</translation>
+        <translation>&amp;Ajuda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
         <location filename="../main-win.ui" line="118"/>
         <source>&amp;View</source>
-        <translation>E&amp;xibir</translation>
+        <translation>&amp;Exibir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="162"/>
@@ -984,7 +984,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../application.cpp" line="162"/>
         <source>PROFILE</source>
-        <translation>Perfil</translation>
+        <translation>PERFIL</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="165"/>
@@ -994,12 +994,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Quit PCManFM</source>
-        <translation>Fechar</translation>
+        <translation>Sair do PCManFM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Launch desktop manager</source>
-        <translation>Abrir o gerenciador da área de trabalho</translation>
+        <translation>Iniciar o gerenciador da área de trabalho</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1015,17 +1015,17 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         <location filename="../application.cpp" line="177"/>
         <location filename="../application.cpp" line="192"/>
         <source>NAME</source>
-        <translation>Nome</translation>
+        <translation>NOME</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>Definir papel de parede com base em um arquivo</translation>
+        <translation>Definir papel de parede de um ARQUIVO de imagem</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>FILE</source>
-        <translation>Arquivo</translation>
+        <translation>ARQUIVO</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
@@ -1050,7 +1050,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Definir o modo de papel de parede da área de trabalho. MODO=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
@@ -1092,32 +1092,32 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav Seguro</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1150,7 +1150,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Ampliar a imagem para preencher a tela inteira</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="204"/>
@@ -1168,7 +1168,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="605"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Ocultar itens da área de trabalho</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="610"/>
@@ -1181,12 +1181,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Ocultar Barra de Menu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="651"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Isso ocultará completamente a barra de menus, use Ctrl+M para exibi-la novamente.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="973"/>
@@ -1225,7 +1225,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="197"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>Visualização Compacta</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
@@ -1271,16 +1271,14 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         <location filename="../tabpage.cpp" line="613"/>
         <location filename="../tabpage.cpp" line="629"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Link para</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="643"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n item(ns) selecionado(s)</numerusform>
+        <numerusform>%n itens selecionados</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
@@ -1320,7 +1318,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Exibição</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
@@ -1341,44 +1339,44 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="130"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoritos:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="138"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir na aba atual</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="143"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir em nova aba</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="148"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir em nova janela</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Apagar arquivos em mídia removível em vez da criação de &quot;lixeira&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirme antes de mover os arquivos para a &quot;lixeira&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Requer reinicialização do aplicativo para ter efeito completamente</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Lançar arquivos executáveis sem prompt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1483,89 +1481,90 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecione arquivos criados recentemente</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
         <location filename="../preferences.ui" line="269"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Usado pela visualização de ícones</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="276"/>
         <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Usado pela Visualização Compacta e pela Visualização de Lista Detalhada</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="293"/>
         <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Usado pela visualização de miniaturas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Interface de usuário</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Tratar arquivos de backup como oculto</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="346"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Exibir sempre os nomes completos dos arquivos</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Exibir ícones de arquivos ocultos sombreados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>Margens mínimas de itens na visualização de ícones:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="386"/>
         <source>3 px by default.</source>
-        <translation type="unfinished">3 px por padrão.</translation>
+        <translation>3 px por padrão.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <location filename="../preferences.ui" line="413"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="409"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished">1 px por padrão.
-Um espaço também é reservado para 3 linhas de texto. {3 ?} {3 ?}</translation>
+        <translation>3 px por padrão.
+Um espaço também é reservado para 3 linhas de texto.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="426"/>
         <source>Lock</source>
-        <translation type="unfinished">Trancar</translation>
+        <translation>Trancar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Quando desmarcada, a barra de abas será exibida
+somente se houver mais de uma aba.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>A reinicialização do aplicativo é necessária para que as alterações entrem em vigor.</translation>
     </message>
     <message>
         <source>Home</source>
@@ -1578,7 +1577,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="578"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>Necessita de ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="581"/>
@@ -1588,22 +1587,22 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="741"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Modelos</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="747"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Exibir apenas modelos definidos pelo usuário no menu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Exibir apenas um modelo para cada tipo MIME</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="761"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar o aplicativo padrão após a criação do modelo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
@@ -1628,12 +1627,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="694"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Alternar comando do &amp;usuário:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="718"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>In&amp;tegração do arquivador:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="687"/>
@@ -1663,12 +1662,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="644"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar &amp;aba contendo mídia removível</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterar pasta na aba para a pasta principal</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
@@ -1693,38 +1692,38 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomear arquivos...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Abortar</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Atenção</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>A renomeação é abortada.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Erro</translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nenhum arquivo pode ser renomeado.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Alguns arquivos não puderam ser renomeados.</translation>
     </message>
 </context>
 <context>
@@ -1732,7 +1731,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Limpar texto (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1740,7 +1739,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrar:</translation>
     </message>
 </context>
 </TS>
