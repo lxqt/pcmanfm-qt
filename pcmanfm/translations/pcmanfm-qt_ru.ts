@@ -1295,12 +1295,10 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="643"/>
         <source>%n item(s) selected</source>
-        <translation>
-            <numerusform>%1 объект выделен</numerusform>
-            <numerusform>%1 объекта выделено</numerusform>
-            <numerusform>%1 объектов выделено</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n объект выделен</numerusform>
+        <numerusform>%n объекта выделено</numerusform>
+        <numerusform>%n объектов выделено</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
