@@ -1030,12 +1030,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>MODE</source>
-        <translation>Modo</translation>
+        <translation>MODO</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Abrir o diálogo de preferências na página especificada</translation>
+        <translation>Abrir a caixa de diálogo de preferências na página com o nome especificado</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
@@ -1055,12 +1055,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation>[Ficheiro1, ficheiro2,...]</translation>
+        <translation>[ARQUIVO1, ARQUIVO2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Files or directories to open</source>
-        <translation>Ficheiros ou diretórios a abrir</translation>
+        <translation>Arquivos ou diretórios para abrir</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="543"/>
@@ -1130,12 +1130,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>Esticar para preencher a tela toda</translation>
+        <translation>Esticar para preencher a tela inteira</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
-        <translation>Esticar para ajustar a tela</translation>
+        <translation>Esticar para ajustar na tela</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
@@ -1145,7 +1145,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>Repetir a imagem para ocupar toda a tela</translation>
+        <translation>Repetir a imagem para preencher a tela inteira</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
@@ -1163,7 +1163,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="579"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>Fi&amp;xar na posiçao atual</translation>
+        <translation>Fi&amp;xar na posição atual</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="605"/>
@@ -1186,7 +1186,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="651"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>Isso ocultará completamente a barra de menus, use Ctrl+M para exibi-la novamente.</translation>
+        <translation>Isto ocultará completamente a barra de menus, use Ctrl+M para exibi-la novamente.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="973"/>
@@ -1220,7 +1220,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="196"/>
         <source>Icon View</source>
-        <translation>Visão em ícones</translation>
+        <translation>Visualização em ícones</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="197"/>
@@ -1230,12 +1230,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Thumbnail View</source>
-        <translation>Visão em miniaturas</translation>
+        <translation>Visualização em miniaturas</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Detailed List View</source>
-        <translation>Lista detalhada</translation>
+        <translation>Visualização Lista detalhada</translation>
     </message>
 </context>
 <context>
@@ -1253,11 +1253,9 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="433"/>
         <source>%n item(s)</source>
-        <translation>
-            <numerusform>%n item</numerusform>
-            <numerusform>%n itens</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n item(ns)</numerusform>
+        <numerusform>%n itens</numerusform>
+        </translation></message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="435"/>
         <source> (%n hidden)</source>
@@ -1290,12 +1288,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../view.cpp" line="106"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>Abrir em &amp;nova janela</translation>
+        <translation>Abrir em Nova &amp;Janela</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="114"/>
         <source>Open in Termina&amp;l</source>
-        <translation>Abrir no termina&amp;l</translation>
+        <translation>Abrir no Termina&amp;l</translation>
     </message>
 </context>
 <context>
@@ -1308,7 +1306,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation>Interface</translation>
+        <translation>Interface do usuário</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
@@ -1371,7 +1369,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation>Requer reinicialização do aplicativo para ter efeito completamente</translation>
+        <translation>Requer reinicialização do aplicativo para obter efeito completamente</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
@@ -1401,7 +1399,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
-        <translation>Tamanho dos ícones no painel lateral:</translation>
+        <translation>Tamanho dos ícones do painel lateral:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="242"/>
@@ -1416,22 +1414,22 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="500"/>
         <source>Default width of new windows:</source>
-        <translation>Largura para as novas janelas:</translation>
+        <translation>Largura padrão de novas janelas:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="514"/>
         <source>Default height of new windows:</source>
-        <translation>Altura para as novas janeas:</translation>
+        <translation>Altura padrão de novas janelas:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="479"/>
         <source>Always show the tab bar</source>
-        <translation>Mostrar sempre a barra de abas</translation>
+        <translation>Sempre exibir a barra de abas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="486"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Mostrar botão &quot;Fechar&quot; nas abas</translation>
+        <translation>Exibir botão &quot;Fechar&quot; nas abas	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="493"/>
@@ -1451,12 +1449,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="100"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation>Intervalo para autosseleção no modo de clique-único (0 para desabilitar)</translation>
+        <translation>Atraso de seleção automática no modo de clique único (0 para desabilitar)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="107"/>
         <source>Default view mode:</source>
-        <translation>Modo de visualização:</translation>
+        <translation>Modo de visualização padrão:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="120"/>
@@ -1466,17 +1464,17 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="159"/>
         <source>File Operations</source>
-        <translation>Operações de ficheiros</translation>
+        <translation>Operações de Arquivos</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Confirm before deleting files</source>
-        <translation>Confirmar antes de deletar</translation>
+        <translation>Confirmar antes de excluir arquivos</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Mover arquivos para a lixeira ao invés de eliminá-los do disco.</translation>
+        <translation>Mover os arquivos excluídos para &quot;lixeira&quot; em vez de apagar do disco.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="203"/>
@@ -1582,7 +1580,7 @@ somente se houver mais de uma aba.</translation>
     <message>
         <location filename="../preferences.ui" line="581"/>
         <source>Show thumbnails of files</source>
-        <translation>Mostrar miniaturas dos arquivos</translation>
+        <translation>Exibir miniaturas dos arquivos</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="741"/>
@@ -1607,12 +1605,12 @@ somente se houver mais de uma aba.</translation>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Only show thumbnails for local files</source>
-        <translation>Mostrar miniaturas apenas para arquivos locais</translation>
+        <translation>Exibir miniaturas apenas para arquivos locais</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="554"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Não gerar miniaturas para as imagens que ultrapasem este tamanho:</translation>
+        <translation>Não gerar miniaturas para arquivos de imagens que ultrapassem este tamanho:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="561"/>
@@ -1622,7 +1620,7 @@ somente se houver mais de uma aba.</translation>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <source>When removable medium unmounted:</source>
-        <translation>Ao desmontar uma mídia removível:</translation>
+        <translation>Quando o dispositivo removível desmontado:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="694"/>
@@ -1647,7 +1645,7 @@ somente se houver mais de uma aba.</translation>
     <message>
         <location filename="../preferences.ui" line="614"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>Montar discos amovíveis ao iniciar a aplicação</translation>
+        <translation>Montar volumes automaticamente na inicialização do programa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
@@ -1667,7 +1665,7 @@ somente se houver mais de uma aba.</translation>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>Alterar pasta na aba para a pasta principal</translation>
+        <translation>Alterar pasta na aba para a pasta pessoal</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
@@ -1678,8 +1676,8 @@ somente se houver mais de uma aba.</translation>
         <location filename="../preferences.ui" line="707"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation>Exemplo: &quot;xterm -e %s&quot; para terminal ou &quot;gksu %s&quot; para  trocar de usuário.
-%s = a linha de comando que você deseja executar no terminal ou com o comando su.</translation>
+        <translation>Exemplo: &quot;xterm -e %s&quot; para terminal ou &quot;gksu %s&quot; para trocar de usuário.
+%s = a linha de comando que você deseja executar com terminal ou com o comando su.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="329"/>
