@@ -1,5 +1,8 @@
-cmake_minimum_required(VERSION 3.0.2)
 project(pcmanfm-qt)
+# CMP0000 - A minimum required CMake version must be specified.
+# Note that the command invocation must appear in the CMakeLists.txt
+# file itself; a call in an included file is not sufficient.
+cmake_minimum_required(VERSION 3.6.2 FATAL_ERROR)
 
 # PcmanFm-Qt Version
 set(PCMANFM_QT_VERSION_MAJOR 0)
