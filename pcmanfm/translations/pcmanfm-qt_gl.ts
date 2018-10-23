@@ -178,7 +178,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation type="unfinished">Ficheiro de imaxe</translation>
+        <translation>Ficheiro de imaxe</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
@@ -188,7 +188,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">&amp;Examinar</translation>
+        <translation>&amp;Examinar</translation>
     </message>
 </context>
 <context>
@@ -236,7 +236,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="119"/>
         <source>Icons</source>
-        <translation type="unfinished">Iconas</translation>
+        <translation>Iconas</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="125"/>
@@ -436,7 +436,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="297"/>
         <source>Go</source>
-        <translation>Ir para</translation>
+        <translation>Ir a</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="306"/>
@@ -631,7 +631,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="718"/>
@@ -917,7 +917,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -1002,7 +1002,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>Estabelecer o fondo de pantalla do escritorio desde o FICHEIRO de imaxe</translation>
+        <translation>Estabelecer o fondo de pantalla do escritorio dende o FICHEIRO de imaxe</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
@@ -1053,7 +1053,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="548"/>
         <source>Terminal emulator is not set.</source>
-        <translation>Non foi estabelecido o emulador de terminal</translation>
+        <translation>Non foi estabelecido o emulador de terminal.</translation>
     </message>
 </context>
 <context>
@@ -1243,11 +1243,9 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="435"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform>&#xa0;(%n agochado)</numerusform>
-            <numerusform>&#xa0;(%n agochados)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform> (%n agochado)</numerusform>
+        <numerusform> (%n agochados)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="440"/>
         <location filename="../tabpage.cpp" line="613"/>
@@ -1570,7 +1568,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="561"/>
         <source> KB</source>
-        <translation>&#xa0;KB</translation>
+        <translation> KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="578"/>
@@ -1662,7 +1660,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="329"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>Utilizar prefixos decimais SI no canto de prefixos binarios IEC </translation>
+        <translation>Utilizar prefixos decimais SI no canto de prefixos binarios IEC</translation>
     </message>
 </context>
 <context>
@@ -1691,7 +1689,7 @@ only if there are more than one tab.</source>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Erro</translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
