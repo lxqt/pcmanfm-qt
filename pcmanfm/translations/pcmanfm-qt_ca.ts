@@ -1738,7 +1738,7 @@ sobre de la vista de la carpeta i no sobre el plafó esquerre.</translation>
     <message>
         <location filename="../preferences.ui" line="329"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>Utilitza els prefixes decimals del SI en lloc dels prefixes binaris de l&apos;IEC</translation>
+        <translation>Utilitza els prefixos decimals del SI en lloc dels prefixos binaris de l&apos;IEC</translation>
     </message>
 </context>
 <context>
