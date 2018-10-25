@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation></translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -54,12 +54,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="78"/>
         <source>Authors</source>
-        <translation></translation>
+        <translation>Opphavsmenn</translation>
     </message>
     <message>
         <location filename="../about.ui" line="100"/>
         <source>License</source>
-        <translation></translation>
+        <translation>Lisens</translation>
     </message>
 </context>
 <context>
@@ -424,7 +424,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="285"/>
         <source>&amp;Reload</source>
-        <translation></translation>
+        <translation>&amp;Last på nytt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="288"/>
@@ -444,7 +444,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="315"/>
         <source>&amp;About</source>
-        <translation></translation>
+        <translation>&amp;Om</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="324"/>
@@ -529,7 +529,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="433"/>
         <source>Cu&amp;t</source>
-        <translation></translation>
+        <translation>Kl&amp;ipp ut</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="436"/>
@@ -539,7 +539,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="445"/>
         <source>&amp;Copy</source>
-        <translation></translation>
+        <translation>&amp;Kopier</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="448"/>
@@ -549,7 +549,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="457"/>
         <source>&amp;Paste</source>
-        <translation></translation>
+        <translation>&amp;Lim inn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="460"/>
@@ -815,7 +815,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="596"/>
         <source>&amp;Delete</source>
-        <translation></translation>
+        <translation>&amp;Slett</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="599"/>
@@ -825,7 +825,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="604"/>
         <source>&amp;Rename</source>
-        <translation></translation>
+        <translation>&amp;Gi nytt navn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="607"/>
@@ -905,7 +905,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation></translation>
+        <translation>&amp;Fil</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
@@ -915,13 +915,13 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation></translation>
+        <translation>&amp;Hjelp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
         <location filename="../main-win.ui" line="118"/>
         <source>&amp;View</source>
-        <translation></translation>
+        <translation>&amp;Visning</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
@@ -931,7 +931,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="162"/>
         <source>&amp;Edit</source>
-        <translation></translation>
+        <translation>&amp;Rediger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="180"/>
@@ -1681,7 +1681,7 @@ only if there are more than one tab.</source>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation></translation>
+        <translation>Feil</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
