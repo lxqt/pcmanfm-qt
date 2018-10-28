@@ -1734,7 +1734,9 @@ void MainWindow::focusPathEntry() {
 }
 
 void MainWindow::dragEnterEvent(QDragEnterEvent* event) {
-    if(event->mimeData()->hasFormat("application/pcmanfm-qt-tab")) {
+    if(event->mimeData()->hasFormat("application/pcmanfm-qt-tab")
+       // ensure that the tab drag source is ours (and not a root window, for example)
+       && lastActive_ && lastActive_->isActiveWindow()) {
         event->acceptProposedAction();
     }
 }
