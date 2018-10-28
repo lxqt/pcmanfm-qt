@@ -135,6 +135,16 @@ MainWindow::MainWindow(Fm::FilePath path):
     // setup user interface
     ui.setupUi(this);
 
+    // add a warning label to the root instance
+    if(geteuid() == 0) {
+        QLabel *warningLabel = new QLabel(tr("Root Instance"));
+        warningLabel->setAlignment(Qt::AlignCenter);
+        warningLabel->setTextInteractionFlags(Qt::NoTextInteraction);
+        warningLabel->setStyleSheet(QLatin1String("QLabel {background-color: #7d0000; color: white; font-weight:bold; border-radius: 3px; margin: 2px; padding: 5px;}"));
+        ui.verticalLayout->addWidget(warningLabel);
+        ui.verticalLayout->setStretch(0, 1);
+    }
+
     splitView_ = settings.splitView();
 
     // hide menu items that are not usable
