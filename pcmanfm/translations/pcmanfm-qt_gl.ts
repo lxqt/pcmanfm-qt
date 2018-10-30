@@ -11,7 +11,7 @@
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
@@ -21,7 +21,7 @@
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="109"/>
@@ -42,7 +42,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>Xestor de ficheiros PCManFM-Qt
+
+Dereitos de autoría (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Este programa é software libre; pode redistribuílo e/ou
+modificalo baixo os termos da Licenza Pública Xeral de GNU
+conforme o publicado pola Free Software Foundation; na súa versión 2
+da Licenza, ou (ao seu criterio) calquera versión posterior.
+
+Este programa é distribuído coa esperanza de que será de utilidade,
+mais SEN NINGUNHA GARANTÍA; sen sequera a garantía implícita de
+COMERCIALIZACIÓN ou IDONEIDADE PARA UN PROPÓSITO PARTICULAR. Vexa a
+Licenza Pública Xeral de GNU para máis detalles.
+
+Vostede debeu recibir unha copia da Licenza Pública Xeral de GNU
+xunto con este programa; se non foi así, escriba á Free Software 
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="87"/>
@@ -97,22 +113,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomeado masivo</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Substituirase # con números, comezando polo:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomear os ficheiros seleccionados a:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome#</translation>
     </message>
 </context>
 <context>
@@ -120,42 +136,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Conectar a un servidor remoto</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Inicio de &amp;sesión anónimo</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>Iniciar sesión como o &amp;usuario:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Especificar o cartafol remoto a conectar</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Porto:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruta:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Servidor:</translation>
     </message>
 </context>
 <context>
@@ -163,17 +179,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formulario</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Escritorio</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cartafol de escritorio:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -183,7 +199,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruta ao cartafol</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
@@ -241,7 +257,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="125"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamaño da icona:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="138"/>
@@ -271,99 +287,100 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Espazado</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Marxes mínimos dos elementos:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 px por omisión.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="241"/>
         <location filename="../desktop-preferences.ui" line="265"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="254"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>1 px por omisión.
+Tamén se reserva espazo para 3 liñas de texto.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="278"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloquear</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Diaporama</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Activar o diaporama</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cartafol de imaxes de fondo de pantalla:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Examinar</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="347"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> hora(s)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>e</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignóranse os intervalos de menos de 5min</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Intervalo:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="380"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> minuto(s)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Cartafol de fondos de pantalla</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasar ao chou o diaporama</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Window Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Xestor de xanelas</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
@@ -411,22 +428,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="128"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>Barras de ferramen&amp;tas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="135"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Barra de rutas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtrado</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="273"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Cartafol &amp;persoal</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="285"/>
@@ -536,42 +553,42 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="481"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ascendente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="489"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Descendente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="497"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Polo &amp;nome de ficheiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Pola data de &amp;modificación</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="513"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Polo &amp;tipo de ficheiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="521"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Polo &amp;propietario</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="529"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>Primeiro os &amp;cartafoles</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="537"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Conservar a &amp;ordenación para este cartafol</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="587"/>
@@ -591,42 +608,42 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="636"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Distinguir maiús&amp;culas de minúsculas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="644"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Polo &amp;tamaño do ficheiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="649"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pechar a xanela</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Amo&amp;sar/Enfocar a barra de filtros</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Amosar a barra de filtros</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="826"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="834"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Di&amp;vidir a vista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="837"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Dividir a vista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
@@ -636,93 +653,93 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="718"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="723"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Limpar todos os filtros</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Pechar as la&amp;pelas anteriores</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="744"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Pechar as lapelas segui&amp;ntes</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="783"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Conservar os &amp;axustes para este cartafol</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="788"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Conectar ao &amp;servidor</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="796"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Localización</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>Botóns de &amp;ruta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="809"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomeado &amp;masivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="812"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomeado masivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="815"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="749"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Pechar as &amp;outras lapelas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra permanente de &amp;filtros</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="757"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra de &amp;menú</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="760"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra de menú</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="763"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="772"/>
         <location filename="../main-win.ui" line="775"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Menú</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="468"/>
@@ -837,22 +854,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="652"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="687"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Maiús+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="699"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>C&amp;rear novo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
@@ -902,17 +919,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="684"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Cartafol</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="696"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>Ficheiro &amp;baleiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="704"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Buscar ficheiros</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="707"/>
@@ -1032,7 +1049,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Estabelecer o modo do fondo de pantalla do escritorio. MODO=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
@@ -1042,7 +1059,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Ficheiros ou directorios a abrir</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="543"/>
@@ -1074,32 +1091,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav seguro</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1132,7 +1149,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Ampliar a imaxe para encher a pantalla completa</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="204"/>
@@ -1150,7 +1167,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="605"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Agachar os elementos do escritorio</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="610"/>
@@ -1163,12 +1180,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Agachar a barra de menú</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="651"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Agacha completamente a barra de menú; use Ctrl+M para volver amosala.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="973"/>
