@@ -426,7 +426,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="273"/>
@@ -596,32 +596,32 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Mostra barra del filtro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra barra del filtro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="826"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Cltr+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="834"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista &amp;divisa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="837"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista divisa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <source>&amp;Filter</source>
@@ -635,7 +635,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="723"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pulisci tutti filtri</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
@@ -700,7 +700,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra di filtro &amp;permanente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="760"/>
@@ -1103,7 +1103,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation></translation>
+        <translation>WebDav sicuro</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1495,12 +1495,12 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Necessario il riavvio dell&apos; applicazione per avere effetto</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Esegui file eseguibili senza conferma</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1582,7 +1582,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>E&apos; necessario il riavvio dell&apos;applicazione per attivare le modifiche.</translation>
     </message>
     <message>
         <source>If unchecked, the tab bar will be positioned only
@@ -1634,7 +1634,7 @@ sopra la vista cartella e non sopra il pannello sinistro.</translation>
     <message>
         <location filename="../preferences.ui" line="561"/>
         <source> KB</source>
-        <translation> ·&#xa0;KB</translation>
+        <translation> · KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="578"/>
@@ -1773,7 +1773,7 @@ sopra la vista cartella e non sopra il pannello sinistro.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">Cancella il testo (Ctrl+K)</translation>
+        <translation>Cancella il testo (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1781,7 +1781,7 @@ sopra la vista cartella e non sopra il pannello sinistro.</translation>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtro:</translation>
     </message>
 </context>
 </TS>
