@@ -418,7 +418,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="258"/>
@@ -668,32 +668,32 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tampil/Fokus Bilah Filter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan Bilah Filter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="826"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="834"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilan &amp;Pisah</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="837"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilan Pisah</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <source>&amp;Filter</source>
@@ -707,12 +707,12 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="723"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bersihkan Semua Filter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
@@ -768,7 +768,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilah &amp;filter permanen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="757"/>
@@ -1286,7 +1286,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
         <location filename="../tabpage.cpp" line="613"/>
         <location filename="../tabpage.cpp" line="629"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Tautan ke</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="643"/>
@@ -1350,7 +1350,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih berkas yang baru dibuat</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1502,12 +1502,12 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Perlu menjalankan ulang aplikasi untuk melihat perubahannya</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Luncurkan berkas yang dapat dieksekusi tanpa prompt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1590,7 +1590,7 @@ hanya jika ada lebih dari satu tab.</translation>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Diperlukan menjalankan ulang aplikasi agar perubahan diterapkan.</translation>
     </message>
     <message>
         <source>If unchecked, the tab bar will be positioned only
@@ -1781,7 +1781,7 @@ di atas tampilan folder dan tidak di atas panel kiri.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">Bersihkan teks (Ctrl+K)</translation>
+        <translation>Bersihkan teks (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1789,7 +1789,7 @@ di atas tampilan folder dan tidak di atas panel kiri.</translation>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter:</translation>
     </message>
 </context>
 </TS>
