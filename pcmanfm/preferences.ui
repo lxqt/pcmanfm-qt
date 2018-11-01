@@ -28,7 +28,7 @@
         <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="currentRow">
-        <number>-1</number>
+        <number>0</number>
        </property>
        <item>
         <property name="text">
