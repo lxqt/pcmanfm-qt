@@ -602,7 +602,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="596"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Apagar</translation>
+        <translation>&amp;Excluir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="604"/>
@@ -762,7 +762,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="324"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Nova janela</translation>
+        <translation>&amp;Nova Janela</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="400"/>
@@ -951,7 +951,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation>&amp;Ficheiro</translation>
+        <translation>&amp;Arquivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="92"/>
@@ -962,7 +962,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
         <location filename="../main-win.ui" line="98"/>
         <location filename="../main-win.ui" line="118"/>
         <source>&amp;View</source>
-        <translation>&amp;Ver</translation>
+        <translation>&amp;Exibir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="162"/>
@@ -1423,7 +1423,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="242"/>
         <source>Icon theme:</source>
-        <translation>Tema de ícones:</translation>
+        <translation>Tema de Ícones:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
