@@ -1190,7 +1190,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="973"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versión: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1790"/>
@@ -1224,7 +1224,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="197"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista compacta</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
@@ -1268,16 +1268,14 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
         <location filename="../tabpage.cpp" line="613"/>
         <location filename="../tabpage.cpp" line="629"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ligar con</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="643"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n elemento seleccionado</numerusform>
+        <numerusform>%n elementos seleccionados</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
@@ -1333,7 +1331,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionar os ficheiros creados recentemente</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1393,7 +1391,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="493"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>Lembrar o tamaño da última xanela pechada</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
@@ -1408,7 +1406,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="100"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Demora na selección automática no modo de un só clic (0 para desactivar)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="107"/>
@@ -1418,7 +1416,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="120"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> seg</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
@@ -1448,130 +1446,132 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Amosar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="130"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Marcadores:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="138"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir na lapela actual</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="143"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir nunha lapela nova</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="148"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir nunha xanela nova</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrar os ficheiros de medios removíbeis no canto de crear un «cesto do lixo»</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Pedir confirmación antes de mover os ficheiros ao «cesto do lixo»</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Require reiniciar a aplicación para obter o efecto completo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanzar os ficheiros executábeis sen preguntar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
         <location filename="../preferences.ui" line="269"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Usado pola vista de iconas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="276"/>
         <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Usado pola vista compacta e a vista de lista detallada</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="293"/>
         <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Usado pola vista de miniaturas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Interface de usuario</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Tratar os ficheiros de copia de seguridade como agachados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="346"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Amosar sempre os nomes de ficheiro completos</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Amosar sombreadas as iconas dos ficheiros agochados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>Marxes mínimos do elemento na vista de iconas:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="386"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 px por omisión.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <location filename="../preferences.ui" line="413"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="409"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 px por omisión.
+Tamén se reserva espazo para 3 liñas de texto.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="426"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloquear</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Se está desmarcada, a barra de lapelas
+amosase só se hai máis dunha lapela.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>É necesario reiniciar a aplicación para que os cambios teñan efecto.</translation>
     </message>
     <message>
         <source>Home</source>
@@ -1590,7 +1590,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="578"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>Necesita «ffmpegthumbnailer»</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="608"/>
@@ -1615,47 +1615,47 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cando se desconecta un medio removíbel:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="644"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Pechar a &amp;lapela do medio removíbel</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambiar o cartafol na lapela para o cartafol &amp;persoal</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="694"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Orde para cambiar de &amp;usuario:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="718"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>In&amp;tegración do arquivador:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="741"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Modelos</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="747"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Amosar no menú só os modelos do usuario</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Amosar só un modelo para cada tipo MIME</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="761"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar a aplicación predeterminada tras crear un modelo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
@@ -1685,22 +1685,22 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomeando ficheiros...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Interromper</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Aviso</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Interrompeuse o renomeado.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
@@ -1711,12 +1711,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Non foi posíbel renomear ningún ficheiro.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Non foi posíbel renomear algúns ficheiros.</translation>
     </message>
 </context>
 <context>
@@ -1724,7 +1724,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Limpar o texto (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1732,7 +1732,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtro:</translation>
     </message>
 </context>
 </TS>
