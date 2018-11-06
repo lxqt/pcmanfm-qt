@@ -819,7 +819,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="579"/>
         <source>Go Forward</source>
-        <translation>Adiante</translation>
+        <translation>Ir cara adiante</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
