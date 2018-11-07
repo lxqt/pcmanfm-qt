@@ -290,7 +290,7 @@ void DesktopWindow::createTrashShortcut(int items) {
     else {
         name = tr("Trash (Empty)");
     }
-    g_key_file_set_string(kf, "Desktop Entry", "Name", name.toLatin1().constData());
+    g_key_file_set_string(kf, "Desktop Entry", "Name", name.toStdString().c_str());
 
     auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str()).localPath();
     auto trash_can = Fm::CStrPtr{g_build_filename(path.get(), "trash-can.desktop", nullptr)};
@@ -303,7 +303,8 @@ void DesktopWindow::createHomeShortcut() {
     g_key_file_set_string(kf, "Desktop Entry", "Type", "Application");
     g_key_file_set_string(kf, "Desktop Entry", "Exec", "pcmanfm-qt");
     g_key_file_set_string(kf, "Desktop Entry", "Icon", "user-home");
-    g_key_file_set_string(kf, "Desktop Entry", "Name", "Home");
+    const QString name = tr("Home");
+    g_key_file_set_string(kf, "Desktop Entry", "Name", name.toStdString().c_str());
 
     auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str()).localPath();
     auto trash_can = Fm::CStrPtr{g_build_filename(path.get(), "user-home.desktop", nullptr)};
@@ -316,7 +317,8 @@ void DesktopWindow::createComputerShortcut() {
     g_key_file_set_string(kf, "Desktop Entry", "Type", "Application");
     g_key_file_set_string(kf, "Desktop Entry", "Exec", "pcmanfm-qt computer:///");
     g_key_file_set_string(kf, "Desktop Entry", "Icon", "computer");
-    g_key_file_set_string(kf, "Desktop Entry", "Name", "Computer");
+    const QString name = tr("Computer");
+    g_key_file_set_string(kf, "Desktop Entry", "Name", name.toStdString().c_str());
 
     auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str()).localPath();
     auto trash_can = Fm::CStrPtr{g_build_filename(path.get(), "computer.desktop", nullptr)};
@@ -329,7 +331,8 @@ void DesktopWindow::createNetworkShortcut() {
     g_key_file_set_string(kf, "Desktop Entry", "Type", "Application");
     g_key_file_set_string(kf, "Desktop Entry", "Exec", "pcmanfm-qt network:///");
     g_key_file_set_string(kf, "Desktop Entry", "Icon", "folder-network");
-    g_key_file_set_string(kf, "Desktop Entry", "Name", "Network");
+    const QString name = tr("Network");
+    g_key_file_set_string(kf, "Desktop Entry", "Name", name.toStdString().c_str());
 
     auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str()).localPath();
     auto trash_can = Fm::CStrPtr{g_build_filename(path.get(), "network.desktop", nullptr)};
