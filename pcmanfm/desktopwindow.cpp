@@ -78,7 +78,8 @@ DesktopWindow::DesktopWindow(int screenNum):
     desktopHideItems_(false),
     screenNum_(screenNum),
     relayoutTimer_(nullptr),
-    selectionTimer_(nullptr) {
+    selectionTimer_(nullptr),
+    trashMonitor_(nullptr) {
 
     QDesktopWidget* desktopWidget = QApplication::desktop();
     setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
@@ -101,6 +102,8 @@ DesktopWindow::DesktopWindow(int screenNum):
     // Then we paint desktop's background ourselves by using its paint event handling method.
     listView_->viewport()->setAutoFillBackground(false);
 
+    Settings& settings = static_cast<Application* >(qApp)->settings();
+
     // NOTE: When XRandR is in use, the all screens are actually combined to form a
     // large virtual desktop and only one DesktopWindow needs to be created and screenNum is -1.
     // In some older multihead setups, such as xinerama, every physical screen
@@ -108,7 +111,6 @@ DesktopWindow::DesktopWindow(int screenNum):
     // In this case we only want to show desktop icons on the primary screen.
     if(desktopWidget->isVirtualDesktop() || screenNum_ == desktopWidget->primaryScreen()) {
         loadItemPositions();
-        Settings& settings = static_cast<Application* >(qApp)->settings();
 
         setShadowHidden(settings.shadowHidden());
 
@@ -174,6 +176,12 @@ DesktopWindow::DesktopWindow(int screenNum):
 }
 
 DesktopWindow::~DesktopWindow() {
+    if(trashMonitor_) {
+        g_signal_handlers_disconnect_by_func(trashMonitor_, (gpointer)G_CALLBACK(onTrashChanged), this);
+        g_object_unref(trashMonitor_);
+        trashMonitor_ = nullptr;
+    }
+
     listView_->viewport()->removeEventFilter(this);
     listView_->removeEventFilter(this);
 
@@ -197,6 +205,206 @@ DesktopWindow::~DesktopWindow() {
         disconnect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
         model_->unref();
     }
+}
+
+void DesktopWindow::updateShortcutsFromSettings(Settings& settings) {
+    // Shortcuts should be deleted only when the user removes them
+    // in the Preferences dialog, not when the desktop is created.
+    static bool firstCall = true;
+
+    const QStringList ds = settings.desktopShortcuts();
+    Fm::FilePathList paths;
+    // Trash
+    if(ds.contains(QLatin1String("Trash")) && settings.useTrash()) {
+        createTrash();
+    }
+    else {
+        if (trashMonitor_) {
+            g_signal_handlers_disconnect_by_func(trashMonitor_, (gpointer)G_CALLBACK(onTrashChanged), this);
+            g_object_unref(trashMonitor_);
+            trashMonitor_ = nullptr;
+        }
+        if(!firstCall) {
+            QString trash = XdgDir::readDesktopDir() + QLatin1String("/trash-can.desktop");
+            if(QFile::exists(trash)) {
+                paths.push_back(Fm::FilePath::fromLocalPath(trash.toStdString().c_str()));
+            }
+        }
+    }
+    // Home
+    if(ds.contains(QLatin1String("Home"))) {
+        createHomeShortcut();
+    }
+    else if(!firstCall) {
+        QString home = XdgDir::readDesktopDir() + QLatin1String("/user-home.desktop");
+        if(QFile::exists(home)) {
+            paths.push_back(Fm::FilePath::fromLocalPath(home.toStdString().c_str()));
+        }
+    }
+    // Computer
+    if(ds.contains(QLatin1String("Computer"))) {
+        createComputerShortcut();
+    }
+    else if(!firstCall) {
+        QString computer = XdgDir::readDesktopDir() + QLatin1String("/computer.desktop");
+        if(QFile::exists(computer)) {
+            paths.push_back(Fm::FilePath::fromLocalPath(computer.toStdString().c_str()));
+        }
+    }
+    // Network
+    if(ds.contains(QLatin1String("Network"))) {
+        createNetworkShortcut();
+    }
+    else if(!firstCall) {
+        QString network = XdgDir::readDesktopDir() + QLatin1String("/network.desktop");
+        if(QFile::exists(network)) {
+            paths.push_back(Fm::FilePath::fromLocalPath(network.toStdString().c_str()));
+        }
+    }
+
+    // WARNING: QFile::remove() is not compatible with libfm-qt and should not be used.
+    if(!paths.empty()) {
+        Fm::FileOperation::deleteFiles(paths, false);
+    }
+
+    firstCall = false; // desktop is created
+}
+
+void DesktopWindow::createTrashShortcut(int items) {
+    GKeyFile* kf = g_key_file_new();
+    g_key_file_set_string(kf, "Desktop Entry", "Type", "Application");
+    g_key_file_set_string(kf, "Desktop Entry", "Exec", "pcmanfm-qt trash:///");
+    // icon
+    const char* icon_name = items > 0 ? "user-trash-full" : "user-trash";
+    g_key_file_set_string(kf, "Desktop Entry", "Icon", icon_name);
+    // name
+    QString name;
+    if(items > 0) {
+        if (items == 1){
+            name = tr("Trash (One item)");
+        }
+        else {
+            name = tr("Trash (%1 items)").arg(items);
+        }
+    }
+    else {
+        name = tr("Trash (Empty)");
+    }
+    g_key_file_set_string(kf, "Desktop Entry", "Name", name.toLatin1().constData());
+
+    auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str()).localPath();
+    auto trash_can = Fm::CStrPtr{g_build_filename(path.get(), "trash-can.desktop", nullptr)};
+    g_key_file_save_to_file(kf, trash_can.get(), nullptr);
+    g_key_file_free(kf);
+}
+
+void DesktopWindow::createHomeShortcut() {
+    GKeyFile* kf = g_key_file_new();
+    g_key_file_set_string(kf, "Desktop Entry", "Type", "Application");
+    g_key_file_set_string(kf, "Desktop Entry", "Exec", "pcmanfm-qt");
+    g_key_file_set_string(kf, "Desktop Entry", "Icon", "user-home");
+    g_key_file_set_string(kf, "Desktop Entry", "Name", "Home");
+
+    auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str()).localPath();
+    auto trash_can = Fm::CStrPtr{g_build_filename(path.get(), "user-home.desktop", nullptr)};
+    g_key_file_save_to_file(kf, trash_can.get(), nullptr);
+    g_key_file_free(kf);
+}
+
+void DesktopWindow::createComputerShortcut() {
+    GKeyFile* kf = g_key_file_new();
+    g_key_file_set_string(kf, "Desktop Entry", "Type", "Application");
+    g_key_file_set_string(kf, "Desktop Entry", "Exec", "pcmanfm-qt computer:///");
+    g_key_file_set_string(kf, "Desktop Entry", "Icon", "computer");
+    g_key_file_set_string(kf, "Desktop Entry", "Name", "Computer");
+
+    auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str()).localPath();
+    auto trash_can = Fm::CStrPtr{g_build_filename(path.get(), "computer.desktop", nullptr)};
+    g_key_file_save_to_file(kf, trash_can.get(), nullptr);
+    g_key_file_free(kf);
+}
+
+void DesktopWindow::createNetworkShortcut() {
+    GKeyFile* kf = g_key_file_new();
+    g_key_file_set_string(kf, "Desktop Entry", "Type", "Application");
+    g_key_file_set_string(kf, "Desktop Entry", "Exec", "pcmanfm-qt network:///");
+    g_key_file_set_string(kf, "Desktop Entry", "Icon", "folder-network");
+    g_key_file_set_string(kf, "Desktop Entry", "Name", "Network");
+
+    auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str()).localPath();
+    auto trash_can = Fm::CStrPtr{g_build_filename(path.get(), "network.desktop", nullptr)};
+    g_key_file_save_to_file(kf, trash_can.get(), nullptr);
+    g_key_file_free(kf);
+}
+
+void DesktopWindow::createTrash() {
+    if(trashMonitor_) {
+        return;
+    }
+    Fm::FilePath trashPath = Fm::FilePath::fromUri("trash:///");
+    // check if trash is supported by the current vfs
+    // if gvfs is not installed, this can be unavailable.
+    if(!g_file_query_exists(trashPath.gfile().get(), nullptr)) {
+        trashMonitor_ = nullptr;
+        return;
+    }
+
+    trashMonitor_ = g_file_monitor_directory(trashPath.gfile().get(), G_FILE_MONITOR_NONE, nullptr, nullptr);
+    if(trashMonitor_) {
+        updateTrashIcon();
+        g_signal_connect(trashMonitor_, "changed", G_CALLBACK(onTrashChanged), this);
+    }
+}
+
+// static
+void DesktopWindow::onTrashChanged(GFileMonitor* /*monitor*/, GFile* /*gf*/, GFile* /*other*/, GFileMonitorEvent /*evt*/, DesktopWindow* pThis) {
+    QTimer::singleShot(0, pThis, SLOT(updateTrashIcon()));
+}
+
+void DesktopWindow::updateTrashIcon() {
+    struct UpdateTrashData {
+        QPointer<DesktopWindow> desktop;
+        Fm::FilePath trashPath;
+        UpdateTrashData(DesktopWindow* _desktop) : desktop(_desktop) {
+            trashPath = Fm::FilePath::fromUri("trash:///");
+        }
+    };
+
+    UpdateTrashData* data = new UpdateTrashData(this);
+    g_file_query_info_async(data->trashPath.gfile().get(), G_FILE_ATTRIBUTE_TRASH_ITEM_COUNT, G_FILE_QUERY_INFO_NONE, G_PRIORITY_LOW, nullptr,
+    [](GObject * /*source_object*/, GAsyncResult * res, gpointer user_data) {
+        // the callback lambda function is called when the asyn query operation is finished
+        UpdateTrashData* data = reinterpret_cast<UpdateTrashData*>(user_data);
+        DesktopWindow* _this = data->desktop.data();
+        if(_this != nullptr) {
+            Fm::GFileInfoPtr inf{g_file_query_info_finish(data->trashPath.gfile().get(), res, nullptr), false};
+            if(inf) {
+                guint32 n = g_file_info_get_attribute_uint32(inf.get(), G_FILE_ATTRIBUTE_TRASH_ITEM_COUNT);
+                _this->createTrashShortcut(static_cast<int>(n));
+            }
+        }
+        delete data; // free the data used for this async operation.
+    }, data);
+}
+
+bool DesktopWindow::isTrashCan(std::shared_ptr<const Fm::FileInfo> file) {
+    bool ret(false);
+    if(file && (file->isDesktopEntry() || file->isShortcut()) && trashMonitor_) {
+        const QString fileName = QString::fromStdString(file->name());
+        const char* execStr = fileName == QLatin1String("trash-can.desktop")
+                                ? "pcmanfm-qt trash:///" : nullptr;
+        if(execStr) {
+            GKeyFile* kf = g_key_file_new();
+            if(g_key_file_load_from_file(kf, file->path().toString().get(), G_KEY_FILE_NONE, nullptr)) {
+                Fm::CStrPtr str{g_key_file_get_string(kf, "Desktop Entry", "Exec", nullptr)};
+                if(str && strcmp(str.get(), execStr) == 0) {
+                    ret = true;
+                }
+            }
+            g_key_file_free(kf);
+        }
+    }
+    return ret;
 }
 
 void DesktopWindow::setBackground(const QColor& color) {
@@ -508,6 +716,7 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     setFont(settings.desktopFont());
     setIconSize(Fm::FolderView::IconMode, QSize(settings.desktopIconSize(), settings.desktopIconSize()));
     setMargins(settings.desktopCellMargins());
+    updateShortcutsFromSettings(settings);
     // setIconSize and setMargins may trigger relayout of items by QListView, so we need to do the layout again.
     queueRelayout();
     setForeground(settings.desktopFgColor());
@@ -569,6 +778,54 @@ void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm::File
         delete menu;
     }
     else {
+        // special right-click menus for our desktop shortcuts
+        if(fileInfo && (fileInfo->isDesktopEntry() || fileInfo->isShortcut())
+           && type == Fm::FolderView::ContextMenuClick) {
+            Settings& settings = static_cast<Application* >(qApp)->settings();
+            const QStringList ds = settings.desktopShortcuts();
+            if(!ds.isEmpty()) {
+                const QString fileName = QString::fromStdString(fileInfo->name());
+                if((fileName == QLatin1String("trash-can.desktop") && ds.contains(QLatin1String("Trash")))
+                   || (fileName == QLatin1String("user-home.desktop") && ds.contains(QLatin1String("Home")))
+                   || (fileName == QLatin1String("computer.desktop") && ds.contains(QLatin1String("Computer")))
+                   || (fileName == QLatin1String("network.desktop") && ds.contains(QLatin1String("Network")))) {
+                    QMenu* menu = new QMenu(this);
+                    // "Open" action for all
+                    QAction* action = menu->addAction(tr("Open"));
+                    connect(action, &QAction::triggered, this, [this, fileInfo] {
+                        onFileClicked(Fm::FolderView::ActivatedClick, fileInfo);
+                    });
+                    // "Stick" action for all
+                    action = menu->addAction(tr("Stic&k to Current Position"));
+                    action->setCheckable(true);
+                    action->setChecked(customItemPos_.find(fileInfo->name()) != customItemPos_.cend());
+                    connect(action, &QAction::toggled, this, &DesktopWindow::onStickToCurrentPos);
+                    // "Empty Trash" action for Trash shortcut
+                    if(fileName == QLatin1String("trash-can.desktop")) {
+                        menu->addSeparator();
+                        action = menu->addAction(tr("Empty Trash"));
+                        // disable the item is Trash is empty
+                        GKeyFile* kf = g_key_file_new();
+                        if(g_key_file_load_from_file(kf, fileInfo->path().toString().get(), G_KEY_FILE_NONE, nullptr)) {
+                            Fm::CStrPtr str{g_key_file_get_string(kf, "Desktop Entry", "Icon", nullptr)};
+                            if(str && strcmp(str.get(), "user-trash") == 0) {
+                                action->setEnabled(false);
+                            }
+                        }
+                        g_key_file_free(kf);
+                        // empty Trash on clicking the item
+                        connect(action, &QAction::triggered, this, [] {
+                            Fm::FilePathList files;
+                            files.push_back(Fm::FilePath::fromUri("trash:///"));
+                            Fm::FileOperation::deleteFiles(std::move(files));
+                        });
+                    }
+                    menu->exec(QCursor::pos());
+                    delete menu;
+                    return;
+                }
+            }
+        }
         View::onFileClicked(type, fileInfo);
     }
 }
@@ -800,6 +1057,32 @@ void DesktopWindow::paintBackground(QPaintEvent* event) {
     }
 }
 
+void DesktopWindow::trustOurDesktopShortcut(std::shared_ptr<const Fm::FileInfo> file) {
+    if(file->isTrustable()) {
+        return;
+    }
+    Settings& settings = static_cast<Application*>(qApp)->settings();
+    const QStringList ds = settings.desktopShortcuts();
+    if(ds.isEmpty()) {
+        return;
+    }
+    const QString fileName = QString::fromStdString(file->name());
+    const char* execStr = fileName == QLatin1String("trash-can.desktop") && ds.contains(QLatin1String("Trash")) ? "pcmanfm-qt trash:///" :
+                          fileName == QLatin1String("user-home.desktop") && ds.contains(QLatin1String("Home")) ? "pcmanfm-qt" :
+                          fileName == QLatin1String("computer.desktop") && ds.contains(QLatin1String("Computer")) ? "pcmanfm-qt computer:///" :
+                          fileName == QLatin1String("network.desktop") && ds.contains(QLatin1String("Network")) ? "pcmanfm-qt network:///" : nullptr;
+    if(execStr) {
+        GKeyFile* kf = g_key_file_new();
+        if(g_key_file_load_from_file(kf, file->path().toString().get(), G_KEY_FILE_NONE, nullptr)) {
+            Fm::CStrPtr str{g_key_file_get_string(kf, "Desktop Entry", "Exec", nullptr)};
+            if(str && strcmp(str.get(), execStr) == 0) {
+                file->setTrustable(true);
+            }
+        }
+        g_key_file_free(kf);
+    }
+}
+
 // QListView does item layout in a very inflexible way, so let's do our custom layout again.
 // FIXME: this is very inefficient, but due to the design flaw of QListView, this is currently the only workaround.
 void DesktopWindow::relayoutItems() {
@@ -841,6 +1124,7 @@ void DesktopWindow::relayoutItems() {
             // remember display names of desktop entries and shortcuts
             if(file->isDesktopEntry() || file->isShortcut()) {
                 displayNames_[index] = file->displayName();
+                trustOurDesktopShortcut(file);
             }
             auto name = file->name();
             auto find_it = customItemPos_.find(name);
@@ -1235,7 +1519,7 @@ void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) {
     if(index.isValid() && index.model()) {
         QVariant data = index.model()->data(index, Fm::FolderModel::Role::FileInfoRole);
         auto info = data.value<std::shared_ptr<const Fm::FileInfo>>();
-        if(info && info->isDir()) {
+        if(info && (info->isDir() || isTrashCan(info))) {
             dropRect_ = listView_->rectForIndex(index);
         }
     }
@@ -1268,6 +1552,20 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                 if(!selected.contains(dropIndex)) { // not a drop on self
                     if(auto file = proxyModel_->fileInfoFromIndex(dropIndex)) {
                         if(!file->isDir()) { // drop on a non-directory file
+                            // if the files are dropped on our Trash shortcut item,
+                            // move them to Trash instead of moving them on desktop
+                            if(isTrashCan(file)) {
+                                auto paths = selectedFilePaths();
+                                if(!paths.empty()) {
+                                    e->accept();
+                                    Settings& settings = static_cast<Application*>(qApp)->settings();
+                                    Fm::FileOperation::trashFiles(paths, settings.confirmTrash());
+                                    // remove the drop indicator
+                                    dropRect_ = QRect();
+                                    listView_->viewport()->update();
+                                    return;
+                                }
+                            }
                             moveItem = true;
                         }
                     }
@@ -1296,10 +1594,36 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         queueRelayout();
     }
     else {
-        Fm::FolderView::childDropEvent(e);
         // remove the drop indicator
         dropRect_ = QRect();
         listView_->viewport()->update();
+
+        // move items to Trash if they are dropped on Trash shortcut
+        QModelIndex dropIndex = listView_->indexAt(e->pos());
+        if(dropIndex.isValid()) {
+            if(auto file = proxyModel_->fileInfoFromIndex(dropIndex)) {
+                if(isTrashCan(file)) {
+                    if(mimeData->hasUrls()) {
+                        Fm::FilePathList paths;
+                        const QList<QUrl> urlList = mimeData->urls();
+                        for(const QUrl& url : urlList) {
+                            QString uri = url.toDisplayString();
+                            if(!uri.isEmpty()) {
+                                paths.push_back(Fm::FilePath::fromUri(uri.toStdString().c_str()));
+                            }
+                        }
+                        if(!paths.empty()) {
+                            e->accept();
+                            Settings& settings = static_cast<Application*>(qApp)->settings();
+                            Fm::FileOperation::trashFiles(paths, settings.confirmTrash());
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+
+        Fm::FolderView::childDropEvent(e);
         // position dropped items successively, starting with the drop rectangle
         if(mimeData->hasUrls()
            && (e->dropAction() == Qt::CopyAction

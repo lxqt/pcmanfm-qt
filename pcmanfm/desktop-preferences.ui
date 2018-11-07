@@ -454,6 +454,59 @@ A space is also reserved for 3 lines of text.</string>
       </attribute>
       <layout class="QVBoxLayout" name="advancedPageLayout">
        <item>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="title">
+          <string>Visible Shortcuts</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QCheckBox" name="homeBox">
+            <property name="text">
+             <string>Home</string>
+            </property>
+            <property name="icon">
+             <iconset theme="user-home">
+              <normaloff>.</normaloff>.</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="trashBox">
+            <property name="text">
+             <string>Trash</string>
+            </property>
+            <property name="icon">
+             <iconset theme="user-trash">
+              <normaloff>.</normaloff>.</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="computerBox">
+            <property name="text">
+             <string>Computer</string>
+            </property>
+            <property name="icon">
+             <iconset theme="computer">
+              <normaloff>.</normaloff>.</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="networkBox">
+            <property name="text">
+             <string>Network</string>
+            </property>
+            <property name="icon">
+             <iconset theme="folder-network">
+              <normaloff>.</normaloff>.</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
         <widget class="QGroupBox" name="groupBox_4">
          <property name="title">
           <string>Window Manager</string>

@@ -313,6 +313,14 @@ public:
         desktopIconSize_ = desktopIconSize;
     }
 
+    QStringList desktopShortcuts() const {
+        return desktopShortcuts_;
+    }
+
+    void setDesktopShortcuts(const QStringList& list) {
+        desktopShortcuts_ = list;
+    }
+
     bool showWmMenu() const {
         return showWmMenu_;
     }
@@ -899,6 +907,7 @@ private:
     QColor desktopShadowColor_;
     QFont desktopFont_;
     int desktopIconSize_;
+    QStringList desktopShortcuts_;
     bool showWmMenu_;
 
     bool desktopShowHidden_;

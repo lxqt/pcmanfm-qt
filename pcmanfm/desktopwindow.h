@@ -132,6 +132,8 @@ protected Q_SLOTS:
     void onDeleteActivated();
     void onFilePropertiesActivated();
 
+    void updateTrashIcon();
+
 private:
     void removeBottomGap();
     void addDesktopActions(QMenu* menu);
@@ -139,6 +141,17 @@ private:
     void paintDropIndicator();
     void stickToPosition(const QString& file, QPoint& pos, const QRect& workArea, const QSize& grid);
     static void alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize& grid, const int spacing);
+
+    void updateShortcutsFromSettings(Settings& settings);
+    void createTrashShortcut(int items);
+    void createHomeShortcut();
+    void createComputerShortcut();
+    void createNetworkShortcut();
+
+    void createTrash();
+    static void onTrashChanged(GFileMonitor* monitor, GFile* gf, GFile* other, GFileMonitorEvent evt, DesktopWindow* pThis);
+    void trustOurDesktopShortcut(std::shared_ptr<const Fm::FileInfo> file);
+    bool isTrashCan(std::shared_ptr<const Fm::FileInfo> file);
 
 private:
     Fm::ProxyFolderModel* proxyModel_;
@@ -168,6 +181,8 @@ private:
     QTimer* selectionTimer_;
 
     QRect dropRect_;
+
+    GFileMonitor* trashMonitor_;
 };
 
 }
