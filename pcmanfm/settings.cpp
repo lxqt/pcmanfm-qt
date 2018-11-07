@@ -231,6 +231,7 @@ bool Settings::loadFile(QString filePath) {
         desktopFont_ = QApplication::font();
     }
     desktopIconSize_ = settings.value("DesktopIconSize", 48).toInt();
+    desktopShortcuts_ = settings.value("DesktopShortcuts").toStringList();
     showWmMenu_ = settings.value("ShowWmMenu", false).toBool();
     desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
     desktopHideItems_ = settings.value("HideItems", false).toBool();
@@ -361,6 +362,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue("ShadowColor", desktopShadowColor_.name());
     settings.setValue("Font", desktopFont_.toString());
     settings.setValue("DesktopIconSize", desktopIconSize_);
+    settings.setValue("DesktopShortcuts", desktopShortcuts_);
     settings.setValue("ShowWmMenu", showWmMenu_);
     settings.setValue("ShowHidden", desktopShowHidden_);
     settings.setValue("HideItems", desktopHideItems_);

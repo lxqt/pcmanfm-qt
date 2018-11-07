@@ -104,6 +104,13 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.backgroundColor->setColor(settings.desktopBgColor());
   ui.textColor->setColor(settings.desktopFgColor());
   ui.shadowColor->setColor(settings.desktopShadowColor());
+
+  const QStringList ds = settings.desktopShortcuts();
+  ui.homeBox->setChecked(ds.contains(QLatin1String("Home")));
+  ui.trashBox->setChecked(ds.contains(QLatin1String("Trash")));
+  ui.computerBox->setChecked(ds.contains(QLatin1String("Computer")));
+  ui.networkBox->setChecked(ds.contains(QLatin1String("Network")));
+
   ui.showWmMenu->setChecked(settings.showWmMenu());
 
   connect(ui.buttonBox->button(QDialogButtonBox::Apply), &QPushButton::clicked,
@@ -167,6 +174,22 @@ void DesktopPreferencesDialog::applySettings()
   settings.setDesktopBgColor(ui.backgroundColor->color());
   settings.setDesktopFgColor(ui.textColor->color());
   settings.setDesktopShadowColor(ui.shadowColor->color());
+
+  QStringList ds;
+  if(ui.homeBox->isChecked()) {
+      ds << QLatin1String("Home");
+  }
+  if(ui.trashBox->isChecked()) {
+      ds << QLatin1String("Trash");
+  }
+  if(ui.computerBox->isChecked()) {
+      ds << QLatin1String("Computer");
+  }
+  if(ui.networkBox->isChecked()) {
+      ds << QLatin1String("Network");
+  }
+  settings.setDesktopShortcuts(ds);
+
   settings.setShowWmMenu(ui.showWmMenu->isChecked());
 
   settings.setDesktopCellMargins(QSize(ui.hMargin->value(), ui.vMargin->value()));
