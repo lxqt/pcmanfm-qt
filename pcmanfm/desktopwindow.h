@@ -182,6 +182,7 @@ private:
 
     QRect dropRect_;
 
+    QTimer* trashUpdateTimer_;
     GFileMonitor* trashMonitor_;
 };
 
