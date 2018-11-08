@@ -79,6 +79,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     screenNum_(screenNum),
     relayoutTimer_(nullptr),
     selectionTimer_(nullptr),
+    trashUpdateTimer_(nullptr),
     trashMonitor_(nullptr) {
 
     QDesktopWidget* desktopWidget = QApplication::desktop();
@@ -219,7 +220,12 @@ void DesktopWindow::updateShortcutsFromSettings(Settings& settings) {
         createTrash();
     }
     else {
-        if (trashMonitor_) {
+        if(trashUpdateTimer_) {
+            trashUpdateTimer_->stop();
+            delete trashUpdateTimer_;
+            trashUpdateTimer_ = nullptr;
+        }
+        if(trashMonitor_) {
             g_signal_handlers_disconnect_by_func(trashMonitor_, (gpointer)G_CALLBACK(onTrashChanged), this);
             g_object_unref(trashMonitor_);
             trashMonitor_ = nullptr;
@@ -280,7 +286,7 @@ void DesktopWindow::createTrashShortcut(int items) {
     // name
     QString name;
     if(items > 0) {
-        if (items == 1){
+        if (items == 1) {
             name = tr("Trash (One item)");
         }
         else {
@@ -354,6 +360,11 @@ void DesktopWindow::createTrash() {
 
     trashMonitor_ = g_file_monitor_directory(trashPath.gfile().get(), G_FILE_MONITOR_NONE, nullptr, nullptr);
     if(trashMonitor_) {
+        if(trashUpdateTimer_ == nullptr) {
+            trashUpdateTimer_ = new QTimer(this);
+            trashUpdateTimer_->setSingleShot(true);
+            connect(trashUpdateTimer_, &QTimer::timeout, this, &DesktopWindow::updateTrashIcon);
+        }
         updateTrashIcon();
         g_signal_connect(trashMonitor_, "changed", G_CALLBACK(onTrashChanged), this);
     }
@@ -361,7 +372,9 @@ void DesktopWindow::createTrash() {
 
 // static
 void DesktopWindow::onTrashChanged(GFileMonitor* /*monitor*/, GFile* /*gf*/, GFile* /*other*/, GFileMonitorEvent /*evt*/, DesktopWindow* pThis) {
-    QTimer::singleShot(0, pThis, SLOT(updateTrashIcon()));
+    if(pThis->trashUpdateTimer_ != nullptr && !pThis->trashUpdateTimer_->isActive()) {
+        pThis->trashUpdateTimer_->start(250); // don't update trash very fast
+    }
 }
 
 void DesktopWindow::updateTrashIcon() {
@@ -1526,7 +1539,7 @@ void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) {
             dropRect_ = listView_->rectForIndex(index);
         }
     }
-    if(oldDropRect != dropRect_){
+    if(oldDropRect != dropRect_) {
         listView_->viewport()->update();
     }
 }
