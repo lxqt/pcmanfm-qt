@@ -32,6 +32,7 @@
 #include <QSettings>
 #include <QMimeData>
 #include <QStandardPaths>
+#include <QClipboard>
 #include <QDebug>
 
 #include "tabpage.h"
@@ -1222,6 +1223,7 @@ void MainWindow::updateEditSelectedActions() {
                 break;
             }
         }
+        ui.actionCopyFullPath->setEnabled(files.size() == 1);
     }
     ui.actionCopy->setEnabled(hasAccessible);
     ui.actionCut->setEnabled(hasDeletable);
@@ -1896,6 +1898,16 @@ void MainWindow::on_actionOpenTerminal_triggered() {
     if(page) {
         Application* app = static_cast<Application*>(qApp);
         app->openFolderInTerminal(page->path());
+    }
+}
+
+void MainWindow::on_actionCopyFullPath_triggered() {
+    TabPage* page = currentPage();
+    if(page) {
+        auto paths = page->selectedFilePaths();
+        if(paths.size() == 1) {
+            QApplication::clipboard()->setText(QString(paths.front().toString().get()), QClipboard::Clipboard);
+        }
     }
 }
 
