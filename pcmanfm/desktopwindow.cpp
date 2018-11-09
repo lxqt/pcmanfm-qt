@@ -39,6 +39,7 @@
 #include <QMimeData>
 #include <QPaintEvent>
 #include <QStandardPaths>
+#include <QClipboard>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -153,6 +154,9 @@ DesktopWindow::DesktopWindow(int screenNum):
 
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_C), this); // copy
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCopyActivated);
+
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_C), this); // copy full path
+    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCopyFullPathActivated);
 
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_V), this); // paste
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onPasteActivated);
@@ -1320,6 +1324,16 @@ void DesktopWindow::onCopyActivated() {
     auto paths = selectedFilePaths();
     if(!paths.empty()) {
         Fm::copyFilesToClipboard(paths);
+    }
+}
+
+void DesktopWindow::onCopyFullPathActivated() {
+    if(desktopHideItems_) {
+        return;
+    }
+    auto paths = selectedFilePaths();
+    if(paths.size() == 1) {
+        QApplication::clipboard()->setText(QString(paths.front().toString().get()), QClipboard::Clipboard);
     }
 }
 

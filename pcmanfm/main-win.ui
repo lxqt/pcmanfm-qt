@@ -205,6 +205,7 @@
     </property>
     <addaction name="actionOpenTerminal"/>
     <addaction name="actionOpenAsRoot"/>
+    <addaction name="actionCopyFullPath"/>
     <addaction name="actionFindFiles"/>
    </widget>
    <addaction name="menu_File"/>
@@ -838,6 +839,14 @@
    </property>
    <property name="shortcut">
     <string>F6</string>
+   </property>
+  </action>
+  <action name="actionCopyFullPath">
+   <property name="text">
+    <string>&amp;Copy Full Path</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
    </property>
   </action>
  </widget>

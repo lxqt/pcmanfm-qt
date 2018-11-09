@@ -126,6 +126,7 @@ protected Q_SLOTS:
     // file operations
     void onCutActivated();
     void onCopyActivated();
+    void onCopyFullPathActivated();
     void onPasteActivated();
     void onRenameActivated();
     void onBulkRenameActivated();
