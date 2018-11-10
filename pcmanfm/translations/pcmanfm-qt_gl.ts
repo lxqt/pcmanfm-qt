@@ -924,7 +924,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="696"/>
         <source>&amp;Blank File</source>
-        <translation>Ficheiro &amp;baleiro</translation>
+        <translation>Ficheiro ba&amp;leiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="704"/>
@@ -1260,8 +1260,8 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="435"/>
         <source> (%n hidden)</source>
-        <translation><numerusform> (%n agochado)</numerusform>
-        <numerusform> (%n agochados)</numerusform>
+        <translation><numerusform> (%n agachado)</numerusform>
+        <numerusform> (%n agachados)</numerusform>
         </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="440"/>
@@ -1488,7 +1488,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation>Lanzar os ficheiros executábeis sen preguntar</translation>
+        <translation>Iniciar os ficheiros executábeis sen preguntar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1526,7 +1526,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Amosar sombreadas as iconas dos ficheiros agochados</translation>
+        <translation>Amosar sombreadas as iconas dos ficheiros agachados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
