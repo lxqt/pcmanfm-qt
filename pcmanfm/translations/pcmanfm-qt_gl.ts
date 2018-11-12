@@ -1396,7 +1396,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation>Navegando</translation>
+        <translation>Examinando</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
@@ -1426,7 +1426,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Confirm before deleting files</source>
-        <translation>Confirmar antes de eliminar os ficheiros</translation>
+        <translation>Pedir confirmación antes de eliminar os ficheiros</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="172"/>
