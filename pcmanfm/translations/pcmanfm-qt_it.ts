@@ -640,7 +640,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Maiusc+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
