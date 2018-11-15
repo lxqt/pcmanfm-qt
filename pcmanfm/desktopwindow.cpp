@@ -1609,32 +1609,30 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         e->accept();
         // move selected items to the drop position, preserving their relative positions
         const QPoint dropPos = e->pos();
-        if(curIndx.isValid() && curIndx.model()) {
+        if(curIndx.isValid()) {
             auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
             auto grid = delegate->itemSize();
             QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
             workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+            QPoint curPoint = listView_->visualRect(curIndx).topLeft();
 
             // first move the current item to the drop position
-            QPoint curPoint = listView_->visualRect(curIndx).topLeft();
-            QVariant data = curIndx.model()->data(curIndx, Fm::FolderModel::Role::FileInfoRole);
-            auto info = data.value<std::shared_ptr<const Fm::FileInfo>>();
-            if(info) {
+            auto file = proxyModel_->fileInfoFromIndex(curIndx);
+            if(file) {
                 QPoint pos = dropPos;
-                stickToPosition(info->name(), pos, workArea, grid);
+                stickToPosition(file->name(), pos, workArea, grid);
             }
 
             // then move the other items so that their relative postions are preserved
             const QModelIndexList selected = selectedIndexes();
             for(const QModelIndex& indx : selected) {
-                if(indx == curIndx || indx.model() == nullptr) {
+                if(indx == curIndx) {
                     continue;
                 }
-                data = indx.model()->data(indx, Fm::FolderModel::Role::FileInfoRole);
-                info = data.value<std::shared_ptr<const Fm::FileInfo>>();
-                if(info) {
+                file = proxyModel_->fileInfoFromIndex(indx);
+                if(file) {
                     QPoint nxtDropPos = dropPos + listView_->visualRect(indx).topLeft() - curPoint;
-                    stickToPosition(info->name(), nxtDropPos, workArea, grid);
+                    stickToPosition(file->name(), nxtDropPos, workArea, grid);
                 }
             }
         }
