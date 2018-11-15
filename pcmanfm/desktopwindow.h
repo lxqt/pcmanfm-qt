@@ -140,7 +140,7 @@ private:
     void addDesktopActions(QMenu* menu);
     void paintBackground(QPaintEvent* event);
     void paintDropIndicator();
-    void stickToPosition(const QString& file, QPoint& pos, const QRect& workArea, const QSize& grid);
+    void stickToPosition(const std::string& file, QPoint& pos, const QRect& workArea, const QSize& grid);
     static void alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize& grid, const int spacing);
 
     void updateShortcutsFromSettings(Settings& settings);
