@@ -27,6 +27,7 @@
 #include "desktopwindow.h"
 #include <libfm-qt/utilities.h>
 #include <libfm-qt/core/folderconfig.h>
+#include <libfm-qt/core/terminal.h>
 #include <QStandardPaths>
 
 namespace PCManFM {
@@ -688,9 +689,7 @@ static Fm::SidePane::Mode sidePaneModeFromString(const QString& str) {
 
 void Settings::setTerminal(QString terminalCommand) {
     terminal_ = terminalCommand;
-    // override the settings in libfm FmConfig.
-    g_free(fm_config->terminal);
-    fm_config->terminal = g_strdup(terminal_.toLocal8Bit().constData());
+    Fm::setDefaultTerminal(terminal_.toStdString());
 }
 
 
