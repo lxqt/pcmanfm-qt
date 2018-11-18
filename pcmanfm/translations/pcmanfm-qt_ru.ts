@@ -61,25 +61,25 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>Файловый менеджер PCMan-Qt
+        <translation>Диспетчер файлов PCMan-Qt
 
 Авторское право (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
 Эта программа является свободным программным обеспечением;
-вы можете распространять и/или модифицировать ее согласно
+вы можете распространять и/или модифицировать её согласно
 условиям стандартной общественной лицензии GNU, опубликованной
 Фондом свободного ПО; либо версии 2 лицензии, либо
 (по вашему выбору) любой более поздней версии.
 
-Эта программа распространяется в надежде что она будет полезной,
-но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий
-КОММЕРЧЕСКОЙ ЦЕННОСТИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.
-Смотрите Стандартную Общественную Лицензию GNU для большего
-количества деталей.
+Эта программа распространяется в надежде, что она будет полезной,
+но БЕЗ КАКИХ БЫ ТО НИ БЫЛО ГАРАНТИЙНЫХ ОБЯЗАТЕЛЬСТВ; даже без
+косвенных гарантийных обязательств, связанных с ПОТРЕБИТЕЛЬСКИМИ
+СВОЙСТВАМИ и ПРИГОДНОСТЬЮ ДЛЯ ОПРЕДЕЛЁННЫХ ЦЕЛЕЙ. Подробности
+читайте в Стандартной Общественной Лицензии GNU.
 
 Вы должны были получить копию Стандартной Общественной Лицензии GNU
-вместе с этой программой; если лицензии не было, напишите в Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301, США.</translation>
+вместе с этой программой. Если лицензии не было, напишите по адресу
+Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
 </context>
 <context>
@@ -107,7 +107,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Выберите действие, которое хотите совершить:</translation>
+        <translation>Выберите действие, которое следует совершить:</translation>
     </message>
 </context>
 <context>
@@ -125,7 +125,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation>Переименовать выделенные файлы в:</translation>
+        <translation>Переименовать выбранные файлы в:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
@@ -138,7 +138,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>Подключение к удаленному серверу</translation>
+        <translation>Подключение к удалённому серверу</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
@@ -153,7 +153,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation>Укажите удаленную папку для подключения</translation>
+        <translation>Укажите удалённую папку для подключения</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
@@ -181,7 +181,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation></translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -744,17 +744,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Показать/скрыть панель фильтра</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Показать панель фильтра</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="826"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="834"/>
@@ -783,12 +783,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="723"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Отменить все фильтры</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
