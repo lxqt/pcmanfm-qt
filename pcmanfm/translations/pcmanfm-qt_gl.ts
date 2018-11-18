@@ -929,7 +929,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="704"/>
         <source>&amp;Find Files</source>
-        <translation>&amp;Buscar ficheiros</translation>
+        <translation>&amp;Atopar ficheiros</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="707"/>
@@ -1044,7 +1044,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../application.cpp" line="183"/>
         <source>Open Find Files utility</source>
-        <translation>Abrir a utilidade de busca de ficheiros</translation>
+        <translation>Abrir a utilidade para atopar ficheiros</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
