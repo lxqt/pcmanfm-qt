@@ -434,7 +434,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="297"/>
         <source>Go</source>
-        <translation></translation>
+        <translation>Dra</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="306"/>
@@ -449,7 +449,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="324"/>
         <source>&amp;New Window</source>
-        <translation></translation>
+        <translation>&amp;Nytt vindu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="327"/>
@@ -1282,7 +1282,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation></translation>
+        <translation>Innstillinger</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -1343,7 +1343,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="242"/>
         <source>Icon theme:</source>
-        <translation></translation>
+        <translation>Symboltema:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
