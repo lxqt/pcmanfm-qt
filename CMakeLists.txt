@@ -8,20 +8,21 @@ project(pcmanfm-qt)
 
 # PcmanFm-Qt Version
 set(PCMANFM_QT_VERSION_MAJOR 0)
-set(PCMANFM_QT_VERSION_MINOR 13)
+set(PCMANFM_QT_VERSION_MINOR 14)
 set(PCMANFM_QT_VERSION_PATCH 0)
 
 set(PCMANFM_QT_VERSION ${PCMANFM_QT_VERSION_MAJOR}.${PCMANFM_QT_VERSION_MINOR}.${PCMANFM_QT_VERSION_PATCH})
 
-set(QT_MINIMUM_VERSION "5.7.1")
-set(LXQTBT_MINIMUM_VERSION "0.5.0")
+# Minimum versions
 set(LIBFMQT_MINIMUM_VERSION "0.14.0")
+set(LXQTBT_MINIMUM_VERSION "0.6.0")
+set(QT_MINIMUM_VERSION "5.7.1")
 
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
-find_package(Qt5Widgets ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt5DBus ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt5LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt5Widgets ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt5X11Extras ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(fm-qt ${LIBFMQT_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
@@ -69,6 +70,5 @@ if(BUILD_DOCUMENTATION)
     install(DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/docs" DESTINATION "${CMAKE_INSTALL_DOCDIR}")
 endif()
 
-# merged from lxqt-common
 add_subdirectory(autostart)
 add_subdirectory(config)
