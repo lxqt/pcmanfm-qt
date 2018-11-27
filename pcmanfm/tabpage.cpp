@@ -551,7 +551,7 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     proxyModel_->setSortCaseSensitivity(folderSettings_.sortCaseSensitive() ? Qt::CaseSensitive : Qt::CaseInsensitive);
     proxyModel_->setSourceModel(folderModel_);
 
-    folderView_->setViewMode(folderSettings_.viewMode());
+    setViewMode(folderSettings_.viewMode());
 
     if(folder_->isLoaded()) {
         onFolderStartLoading();
@@ -726,9 +726,10 @@ void TabPage::setViewMode(Fm::FolderView::ViewMode mode) {
             settings.saveFolderSettings(path(), folderSettings_);
         }
     }
+    Fm::FolderView::ViewMode prevMode = folderView_->viewMode();
     folderView_->setViewMode(mode);
     folderView_->childView()->setFocus();
-    if(!settings.showFilter()) {
+    if(!settings.showFilter() && prevMode != folderView_->viewMode()) {
         // FolderView::setViewMode() may delete the view to switch between list and tree.
         // So, the event filter should be re-installed.
         folderView_->childView()->removeEventFilter(this);
