@@ -1,3 +1,23 @@
+0.14.0 / 2018-11-28
+============================
+
+ * Removed the use of libfm C APIs.
+ * An option for showing full names (instead of display names).
+ * Prefer theme icons for view actions.
+ * Shadow hidden icons optionally.
+ * Fixed DND and drop indicator on desktop.
+ * Fixed closing tab on ejecting/unmounting.
+ * Fixed status-bar message when some selected files were filtered out.
+ * Restart warning bar for Preferences.
+ * A (warning) bar for the root instance.
+ * Transient filter-bar by default.
+ * Added split view.
+ * Delete trashed files with Delete key.
+ * Select the first row of Preferences by default.
+ * Optional Desktop shortcuts (Trash, Home, Computer, and Network). The Trash shortcut is interactive.
+ * A Tool menu item (and shortcut) to copy the full path of the selected file.
+ * Really use the terminal emulator chosen by user when launching desktop files.
+ * Preserve relative positions of Desktop items with DND.
 
 pcmanfm-qt-0.13.0 / 2018-05-21
 ==============================
