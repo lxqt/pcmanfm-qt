@@ -23,7 +23,7 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programmation&#xa0;:
+        <translation>Programmation :
 Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -96,7 +96,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>Type de média&#xa0;:</translation>
+        <translation>Type de média :</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
@@ -106,7 +106,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Veuillez sélectionner l&apos;action que vous voulez effectuer&#xa0;:</translation>
+        <translation>Veuillez sélectionner l&apos;action que vous voulez effectuer :</translation>
     </message>
 </context>
 <context>
@@ -233,7 +233,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="85"/>
         <source>Select background color:</source>
-        <translation>Sélectionnez la couleur d&apos;arrière-plan&#xa0;:</translation>
+        <translation>Sélectionnez la couleur d&apos;arrière-plan :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="94"/>
@@ -268,17 +268,17 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select  text color:</source>
-        <translation>Sélectionnez la couleur du texte&#xa0;:</translation>
+        <translation>Sélectionnez la couleur du texte :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Select shadow color:</source>
-        <translation>Sélectionnez la couleur de l&apos;ombre&#xa0;:</translation>
+        <translation>Sélectionnez la couleur de l&apos;ombre :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="202"/>
         <source>Select font:</source>
-        <translation>Sélectionnez la police&#xa0;:</translation>
+        <translation>Sélectionnez la police :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -443,7 +443,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtrage</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="273"/>
@@ -1264,7 +1264,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../tabpage.cpp" line="416"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espace libre: %1 (total&#xa0;: %2)</translation>
+        <translation>Espace libre: %1 (total : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="433"/>
@@ -1368,22 +1368,22 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="262"/>
         <source>Size of big icons:</source>
-        <translation>Taille des grandes icônes&#xa0;:</translation>
+        <translation>Taille des grandes icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="279"/>
         <source>Size of small icons:</source>
-        <translation>Taille des petites icônes&#xa0;:</translation>
+        <translation>Taille des petites icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Size of thumbnails:</source>
-        <translation>Taille des vignettes&#xa0;:</translation>
+        <translation>Taille des vignettes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
-        <translation>Taille des icônes de panneau latéral&#xa0;:</translation>
+        <translation>Taille des icônes de panneau latéral :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="242"/>
@@ -1398,12 +1398,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="500"/>
         <source>Default width of new windows:</source>
-        <translation>Largeur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Largeur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="514"/>
         <source>Default height of new windows:</source>
-        <translation>Hauteur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Hauteur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="479"/>
@@ -1413,7 +1413,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="486"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Afficher le bouton «&#xa0;Fermer&#xa0;» sur les onglets	</translation>
+        <translation>Afficher le bouton « Fermer » sur les onglets	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="493"/>
@@ -1438,7 +1438,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="107"/>
         <source>Default view mode:</source>
-        <translation>Mode d&apos;affichage par défaut&#xa0;:</translation>
+        <translation>Mode d&apos;affichage par défaut :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="120"/>
@@ -1645,7 +1645,7 @@ du panneau d&apos;affichage du dossier et non au-dessus du panneau de gauche.</t
     <message>
         <location filename="../preferences.ui" line="554"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Ne pas générer de vignettes pour les fichiers image excédant cette taille&#xa0;:</translation>
+        <translation>Ne pas générer de vignettes pour les fichiers image excédant cette taille :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="561"/>
@@ -1730,7 +1730,7 @@ du panneau d&apos;affichage du dossier et non au-dessus du panneau de gauche.</t
     <message>
         <location filename="../preferences.ui" line="687"/>
         <source>Terminal emulator:</source>
-        <translation>Émulateur de terminal&#xa0;:</translation>
+        <translation>Émulateur de terminal :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="707"/>
