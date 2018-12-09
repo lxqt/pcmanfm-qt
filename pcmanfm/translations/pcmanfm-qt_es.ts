@@ -786,7 +786,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="726"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Mayús+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
