@@ -378,11 +378,36 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
+        <source>Visible Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="465"/>
+        <source>Home</source>
+        <translation type="unfinished">Persoonlijke map</translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="476"/>
+        <source>Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="487"/>
+        <source>Computer</source>
+        <translation type="unfinished">Computer</translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="498"/>
+        <source>Network</source>
+        <translation type="unfinished">Netwerk</translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="512"/>
         <source>Window Manager</source>
         <translation>Vensterbeheerder</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="465"/>
+        <location filename="../desktop-preferences.ui" line="518"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
         <translation>Toon menu&apos;s aangeboden door vensterbeheerders wanneer er op bureaublad wordt geklikt</translation>
     </message>
@@ -400,10 +425,6 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>Bestandsbeheerder</translation>
     </message>
     <message>
-        <source>Focus with Ctrl+I</source>
-        <translation type="vanished">Stel scherp met Ctrl+I</translation>
-    </message>
-    <message>
         <location filename="../main-win.ui" line="128"/>
         <source>&amp;Toolbars</source>
         <translation>&amp;Werkbalken</translation>
@@ -419,518 +440,520 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>&amp;Filteren</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="258"/>
+        <location filename="../main-win.ui" line="259"/>
         <source>Go &amp;Up</source>
         <translation>Om&amp;hoog</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="261"/>
+        <location filename="../main-win.ui" line="262"/>
         <source>Go Up</source>
         <translation>Omhoog</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="264"/>
+        <location filename="../main-win.ui" line="265"/>
         <source>Alt+Up</source>
         <translation>Alt+PageUp</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="273"/>
+        <location filename="../main-win.ui" line="274"/>
         <source>&amp;Home</source>
         <translation>&amp;Persoonlijke map</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="276"/>
+        <location filename="../main-win.ui" line="277"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="285"/>
+        <location filename="../main-win.ui" line="286"/>
         <source>&amp;Reload</source>
         <translation>Her&amp;laden</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="288"/>
+        <location filename="../main-win.ui" line="289"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="297"/>
+        <location filename="../main-win.ui" line="298"/>
         <source>Go</source>
         <translation>Ga naar</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="306"/>
+        <location filename="../main-win.ui" line="307"/>
         <source>Quit</source>
         <translation>Afsluiten</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="315"/>
+        <location filename="../main-win.ui" line="316"/>
         <source>&amp;About</source>
         <translation>&amp;Over</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="324"/>
+        <location filename="../main-win.ui" line="325"/>
         <source>&amp;New Window</source>
         <translation>&amp;Nieuw venster</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="327"/>
+        <location filename="../main-win.ui" line="328"/>
         <source>New Window</source>
         <translation>Nieuw venster</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="330"/>
+        <location filename="../main-win.ui" line="331"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="338"/>
+        <location filename="../main-win.ui" line="339"/>
         <source>Show &amp;Hidden</source>
         <translation>Toon &amp;verborgen elementen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="341"/>
+        <location filename="../main-win.ui" line="342"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="350"/>
+        <location filename="../main-win.ui" line="351"/>
         <source>&amp;Computer</source>
         <translation>&amp;Computer</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="359"/>
+        <location filename="../main-win.ui" line="360"/>
         <source>&amp;Trash</source>
         <translation>&amp;Prullenbak</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="364"/>
+        <location filename="../main-win.ui" line="365"/>
         <source>&amp;Network</source>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="373"/>
+        <location filename="../main-win.ui" line="374"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Bureaublad</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="382"/>
+        <location filename="../main-win.ui" line="383"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>Voeg &amp;toe aan bladwijzers</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="387"/>
+        <location filename="../main-win.ui" line="388"/>
         <source>&amp;Applications</source>
         <translation>Toe&amp;passingen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="392"/>
+        <location filename="../main-win.ui" line="393"/>
         <source>Reload</source>
         <translation>Herladen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="400"/>
+        <location filename="../main-win.ui" line="401"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Pictogramweergave</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="408"/>
+        <location filename="../main-win.ui" line="409"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Compacte weergave</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="416"/>
+        <location filename="../main-win.ui" line="417"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Gedetailleerde lijst</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="424"/>
+        <location filename="../main-win.ui" line="425"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Miniaturenweergave</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="433"/>
+        <location filename="../main-win.ui" line="434"/>
         <source>Cu&amp;t</source>
         <translation>&amp;Knippen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="436"/>
+        <location filename="../main-win.ui" line="437"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="445"/>
+        <location filename="../main-win.ui" line="446"/>
         <source>&amp;Copy</source>
         <translation>K&amp;opiëren</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="448"/>
+        <location filename="../main-win.ui" line="449"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="457"/>
+        <location filename="../main-win.ui" line="458"/>
         <source>&amp;Paste</source>
         <translation>&amp;Plakken</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="460"/>
+        <location filename="../main-win.ui" line="461"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="465"/>
+        <location filename="../main-win.ui" line="466"/>
         <source>Select &amp;All</source>
         <translation>Selecteer &amp;alles</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="468"/>
+        <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="473"/>
+        <location filename="../main-win.ui" line="474"/>
         <source>Pr&amp;eferences</source>
         <translation>Voorkeur&amp;en</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="481"/>
+        <location filename="../main-win.ui" line="482"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Oplopend</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="489"/>
+        <location filename="../main-win.ui" line="490"/>
         <source>&amp;Descending</source>
         <translation>&amp;Aflopend</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="497"/>
+        <location filename="../main-win.ui" line="498"/>
         <source>&amp;By File Name</source>
         <translation>Op bestandnaam</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="505"/>
+        <location filename="../main-win.ui" line="506"/>
         <source>By &amp;Modification Time</source>
         <translation>Op &amp;bewerkingstijdstip</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="513"/>
+        <location filename="../main-win.ui" line="514"/>
         <source>By File &amp;Type</source>
         <translation>Op bestandsoort</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="521"/>
+        <location filename="../main-win.ui" line="522"/>
         <source>By &amp;Owner</source>
         <translation>Op &amp;eigenaar</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="529"/>
+        <location filename="../main-win.ui" line="530"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Mappen eerst</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="537"/>
+        <location filename="../main-win.ui" line="538"/>
         <source>&amp;Preserve sorting for this folder</source>
         <translation>Behoud rangschikking voor deze map</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="636"/>
+        <location filename="../main-win.ui" line="637"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;Hoofdlettergevoelig</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="644"/>
+        <location filename="../main-win.ui" line="645"/>
         <source>By File &amp;Size</source>
         <translation>Op bestandgrootte</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="649"/>
+        <location filename="../main-win.ui" line="650"/>
         <source>&amp;Close Window</source>
         <translation>Sluit &amp;venster</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="652"/>
+        <location filename="../main-win.ui" line="653"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="684"/>
+        <location filename="../main-win.ui" line="685"/>
         <source>&amp;Folder</source>
         <translation>&amp;Map</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="696"/>
+        <location filename="../main-win.ui" line="697"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Leeg bestand</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="820"/>
+        <location filename="../main-win.ui" line="821"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation>Filterbalk tonen/&amp;scherpstellen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="823"/>
+        <location filename="../main-win.ui" line="824"/>
         <source>Show Filter Bar</source>
         <translation>Filterbalk tonen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="826"/>
+        <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="834"/>
+        <location filename="../main-win.ui" line="835"/>
         <source>S&amp;plit View</source>
         <translation>Gesplitste weergave</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="837"/>
+        <location filename="../main-win.ui" line="838"/>
         <source>Split View</source>
         <translation>Gesplitste weergave</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="840"/>
+        <location filename="../main-win.ui" line="841"/>
         <source>F6</source>
         <translation>F6</translation>
     </message>
     <message>
-        <source>&amp;Filter</source>
-        <translation type="vanished">&amp;Filter</translation>
+        <location filename="../main-win.ui" line="846"/>
+        <source>&amp;Copy Full Path</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="718"/>
+        <location filename="../main-win.ui" line="849"/>
+        <source>Ctrl+Shift+C</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="719"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="723"/>
+        <location filename="../main-win.ui" line="724"/>
         <source>&amp;Clear All Filters</source>
         <translation>Alle filters wissen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="726"/>
+        <location filename="../main-win.ui" line="727"/>
         <source>Ctrl+Shift+K</source>
         <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="735"/>
+        <location filename="../main-win.ui" line="736"/>
         <source>Close &amp;previous tabs</source>
         <translation>Sluit vorige tabbladen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="744"/>
+        <location filename="../main-win.ui" line="745"/>
         <source>Close &amp;next tabs</source>
         <translation>Sluit volgende tabbladen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="783"/>
+        <location filename="../main-win.ui" line="784"/>
         <source>&amp;Preserve Settings for This Folder</source>
         <translation>Behoud instellingen voor deze map</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="788"/>
+        <location filename="../main-win.ui" line="789"/>
         <source>Connect to &amp;Server</source>
         <translation>Verbinden met server</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="796"/>
+        <location filename="../main-win.ui" line="797"/>
         <source>&amp;Location</source>
         <translation>&amp;Locatie</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="804"/>
+        <location filename="../main-win.ui" line="805"/>
         <source>&amp;Path Buttons</source>
         <translation>&amp;Padknoppen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="809"/>
+        <location filename="../main-win.ui" line="810"/>
         <source>&amp;Bulk Rename</source>
         <translation>&amp;Massaal hernoemen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="812"/>
+        <location filename="../main-win.ui" line="813"/>
         <source>Bulk Rename</source>
         <translation>Massaal hernoemen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="815"/>
+        <location filename="../main-win.ui" line="816"/>
         <source>Ctrl+F2</source>
         <translation>Ctrl+F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="749"/>
+        <location filename="../main-win.ui" line="750"/>
         <source>Close &amp;other tabs</source>
         <translation>Sluit &amp;andere tabbladen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="715"/>
+        <location filename="../main-win.ui" line="716"/>
         <source>Permanent &amp;filter bar</source>
         <translation>Blijvende filterbalk</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="757"/>
+        <location filename="../main-win.ui" line="758"/>
         <source>&amp;Menu bar</source>
         <translation>&amp;Menubalk</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="760"/>
+        <location filename="../main-win.ui" line="761"/>
         <source>Menu bar</source>
         <translation>Menubalk</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="763"/>
+        <location filename="../main-win.ui" line="764"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="772"/>
-        <location filename="../main-win.ui" line="775"/>
+        <location filename="../main-win.ui" line="773"/>
+        <location filename="../main-win.ui" line="776"/>
         <source>Menu</source>
         <translation>Menu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="546"/>
+        <location filename="../main-win.ui" line="547"/>
         <source>New &amp;Tab</source>
         <translation>Nieuw &amp;tabblad</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="549"/>
+        <location filename="../main-win.ui" line="550"/>
         <source>New Tab</source>
         <translation>Nieuw tabblad</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="552"/>
+        <location filename="../main-win.ui" line="553"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="561"/>
+        <location filename="../main-win.ui" line="562"/>
         <source>Go &amp;Back</source>
         <translation>&amp;Terug</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="564"/>
+        <location filename="../main-win.ui" line="565"/>
         <source>Go Back</source>
         <translation>Terug</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="567"/>
+        <location filename="../main-win.ui" line="568"/>
         <source>Alt+Left</source>
         <translation>Alt+Links</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="576"/>
+        <location filename="../main-win.ui" line="577"/>
         <source>Go &amp;Forward</source>
         <translation>&amp;Verder</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="579"/>
+        <location filename="../main-win.ui" line="580"/>
         <source>Go Forward</source>
         <translation>Verder</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="582"/>
+        <location filename="../main-win.ui" line="583"/>
         <source>Alt+Right</source>
         <translation>Alt+Rechts</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="587"/>
+        <location filename="../main-win.ui" line="588"/>
         <source>&amp;Invert Selection</source>
         <translation>&amp;Draai selectie om</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="596"/>
+        <location filename="../main-win.ui" line="597"/>
         <source>&amp;Delete</source>
         <translation>&amp;Wissen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="599"/>
+        <location filename="../main-win.ui" line="600"/>
         <source>Del</source>
         <translation>Wis</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="604"/>
+        <location filename="../main-win.ui" line="605"/>
         <source>&amp;Rename</source>
         <translation>&amp;Hernoemen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="608"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="612"/>
+        <location filename="../main-win.ui" line="613"/>
         <source>C&amp;lose Tab</source>
         <translation>S&amp;luit tabblad</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="615"/>
+        <location filename="../main-win.ui" line="616"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="620"/>
+        <location filename="../main-win.ui" line="621"/>
         <source>File &amp;Properties</source>
         <translation>&amp;Bestandeigenschappen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="623"/>
+        <location filename="../main-win.ui" line="624"/>
         <source>Alt+Return</source>
         <translation>Alt+Enter</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="628"/>
+        <location filename="../main-win.ui" line="629"/>
         <source>&amp;Folder Properties</source>
         <translation>&amp;Mapeigenschappen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="657"/>
+        <location filename="../main-win.ui" line="658"/>
         <source>Edit Bookmarks</source>
         <translation>Bladwijzers bewerken</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="662"/>
+        <location filename="../main-win.ui" line="663"/>
         <source>Open &amp;Terminal</source>
         <translation>Open &amp;terminalvenster</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="665"/>
+        <location filename="../main-win.ui" line="666"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="670"/>
+        <location filename="../main-win.ui" line="671"/>
         <source>Open as &amp;Root</source>
         <translation>Open als &amp;root</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="675"/>
+        <location filename="../main-win.ui" line="676"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>Bladwijzers b&amp;ewerken</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="687"/>
+        <location filename="../main-win.ui" line="688"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="699"/>
+        <location filename="../main-win.ui" line="700"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="704"/>
+        <location filename="../main-win.ui" line="705"/>
         <source>&amp;Find Files</source>
         <translation>&amp;Zoek bestanden</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="707"/>
+        <location filename="../main-win.ui" line="708"/>
         <source>F3</source>
         <translation>F3</translation>
-    </message>
-    <message>
-        <source>Filter by string...</source>
-        <translation type="vanished">Filter op tekenreeks...</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -979,7 +1002,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>Ge&amp;reedschap</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="224"/>
+        <location filename="../main-win.ui" line="225"/>
         <source>Main Toolbar</source>
         <translation>Hoofdwerkbalk</translation>
     </message>
@@ -1163,7 +1186,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
         <translation>Vergroot de afbeelding om haar schermvullend te maken</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="204"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="227"/>
         <source>Image Files</source>
         <translation>Afbeeldingsbestanden</translation>
     </message>
@@ -1171,60 +1194,118 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="579"/>
+        <location filename="../desktopwindow.cpp" line="294"/>
+        <source>Trash (One item)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="297"/>
+        <source>Trash (%1 items)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="301"/>
+        <source>Trash (Empty)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="316"/>
+        <source>Home</source>
+        <translation type="unfinished">Persoonlijke map</translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="330"/>
+        <source>Computer</source>
+        <translation type="unfinished">Computer</translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="344"/>
+        <source>Network</source>
+        <translation type="unfinished">Netwerk</translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="814"/>
+        <source>Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="819"/>
+        <location filename="../desktopwindow.cpp" line="856"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Blijf op de huidige positie</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="605"/>
+        <location filename="../desktopwindow.cpp" line="826"/>
+        <source>Empty Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="882"/>
         <source>Hide Desktop Items</source>
         <translation>Bureaubladelementen verbergen</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="610"/>
+        <location filename="../desktopwindow.cpp" line="887"/>
         <source>Desktop Preferences</source>
         <translation>Bureaubladvoorkeuren</translation>
     </message>
 </context>
 <context>
+    <name>PCManFM::FilterBar</name>
+    <message>
+        <location filename="../tabpage.cpp" line="92"/>
+        <source>Filter:</source>
+        <translation>Filter:</translation>
+    </message>
+</context>
+<context>
+    <name>PCManFM::FilterEdit</name>
+    <message>
+        <location filename="../tabpage.cpp" line="62"/>
+        <source>Clear text (Ctrl+K)</source>
+        <translation>Wis tekst (Ctrl+K)</translation>
+    </message>
+</context>
+<context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <source>Clear text (Ctrl+K)</source>
-        <translation type="vanished">Wis tekst (Ctrl+K)</translation>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <source>Root Instance</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="650"/>
+        <location filename="../mainwindow.cpp" line="661"/>
         <source>Hide menu bar</source>
         <translation>Verberg menubalk</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="651"/>
+        <location filename="../mainwindow.cpp" line="662"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Dit zal de menubalk volledig verbergen, gebruik Ctrl+M om hem opnieuw weer te geven.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="973"/>
+        <location filename="../mainwindow.cpp" line="984"/>
         <source>Version: %1</source>
         <translation>Versie: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1790"/>
+        <location filename="../mainwindow.cpp" line="1808"/>
         <source>&amp;Move to Trash</source>
         <translation>Verplaats naar &amp;prullenbak</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1790"/>
+        <location filename="../mainwindow.cpp" line="1808"/>
         <source>&amp;Delete</source>
         <translation>&amp;Verwijderen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1847"/>
-        <location filename="../mainwindow.cpp" line="1855"/>
+        <location filename="../mainwindow.cpp" line="1865"/>
+        <location filename="../mainwindow.cpp" line="1873"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1855"/>
+        <location filename="../mainwindow.cpp" line="1873"/>
         <source>Switch user command is not set.</source>
         <translation>De opdracht voor gebruikerswissel is niet ingesteld.</translation>
     </message>
@@ -1262,7 +1343,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../tabpage.cpp" line="416"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="433"/>
@@ -1593,48 +1674,6 @@ tabbladwerkbalk alleen weergegeven als er meer dan één tabblad is.</translatio
         <translation>Herstart van toepassing is nodig voordat de wijzigingen effect hebben.</translation>
     </message>
     <message>
-        <source>If unchecked, the tab bar will be positioned only
-above the folder-view and not above the left pane.</source>
-        <translation type="vanished">Wanneer niet aangevinkt, wordt de tabblad-
-werkbalk alleen boven de mapweergave geplaatst en niet boven het linkerpaneel.</translation>
-    </message>
-    <message>
-        <source>Fullwidth tab bar</source>
-        <translation type="vanished">Tabbladwerkbalk met volledige breedte</translation>
-    </message>
-    <message>
-        <source>Show in places</source>
-        <translation type="vanished">Toon in locaties</translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation type="vanished">Persoonlijke map</translation>
-    </message>
-    <message>
-        <source>Desktop</source>
-        <translation type="vanished">Bureaublad</translation>
-    </message>
-    <message>
-        <source>Trash can</source>
-        <translation type="vanished">Prullenbak</translation>
-    </message>
-    <message>
-        <source>Computer</source>
-        <translation type="vanished">Computer</translation>
-    </message>
-    <message>
-        <source>Applications</source>
-        <translation type="vanished">Toepassingen</translation>
-    </message>
-    <message>
-        <source>Devices</source>
-        <translation type="vanished">Apparaten</translation>
-    </message>
-    <message>
-        <source>Network</source>
-        <translation type="vanished">Netwerk</translation>
-    </message>
-    <message>
         <location filename="../preferences.ui" line="554"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Maak geen miniaturen aan voor afbeeldingsbestanden groter dan:</translation>
@@ -1774,22 +1813,6 @@ werkbalk alleen boven de mapweergave geplaatst en niet boven het linkerpaneel.</
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
         <translation>Sommige bestanden konden niet worden hernoemd.</translation>
-    </message>
-</context>
-<context>
-    <name>PCManFM::FilterEdit</name>
-    <message>
-        <location filename="../tabpage.cpp" line="62"/>
-        <source>Clear text (Ctrl+K)</source>
-        <translation>Wis tekst (Ctrl+K)</translation>
-    </message>
-</context>
-<context>
-    <name>PCManFM::FilterBar</name>
-    <message>
-        <location filename="../tabpage.cpp" line="92"/>
-        <source>Filter:</source>
-        <translation>Filter:</translation>
     </message>
 </context>
 </TS>
