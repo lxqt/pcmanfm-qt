@@ -377,11 +377,36 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
+        <source>Visible Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="465"/>
+        <source>Home</source>
+        <translation type="unfinished">المنزل</translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="476"/>
+        <source>Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="487"/>
+        <source>Computer</source>
+        <translation type="unfinished">الحاسوب</translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="498"/>
+        <source>Network</source>
+        <translation type="unfinished">الشبكة</translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="512"/>
         <source>Window Manager</source>
         <translation>مدير النوافذ</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="465"/>
+        <location filename="../desktop-preferences.ui" line="518"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
         <translation>اعرض القوائم التي يوفّرها مدير النوافذ عند نقر سطح المكتب</translation>
     </message>
@@ -399,10 +424,6 @@ A space is also reserved for 3 lines of text.</source>
         <translation>مدير الملفات</translation>
     </message>
     <message>
-        <source>Focus with Ctrl+I</source>
-        <translation type="vanished">ركّز باستخدام Ctrl+I</translation>
-    </message>
-    <message>
         <location filename="../main-win.ui" line="128"/>
         <source>&amp;Toolbars</source>
         <translation>أ&amp;شرطة الأدوات</translation>
@@ -418,518 +439,520 @@ A space is also reserved for 3 lines of text.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="258"/>
+        <location filename="../main-win.ui" line="259"/>
         <source>Go &amp;Up</source>
         <translation>انتقل لأ&amp;على</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="261"/>
+        <location filename="../main-win.ui" line="262"/>
         <source>Go Up</source>
         <translation>انتقل لأعلى</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="264"/>
+        <location filename="../main-win.ui" line="265"/>
         <source>Alt+Up</source>
         <translation>Alt+Up</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="273"/>
+        <location filename="../main-win.ui" line="274"/>
         <source>&amp;Home</source>
         <translation>الم&amp;نزل</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="276"/>
+        <location filename="../main-win.ui" line="277"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="285"/>
+        <location filename="../main-win.ui" line="286"/>
         <source>&amp;Reload</source>
         <translation>أ&amp;عِد التحميل</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="288"/>
+        <location filename="../main-win.ui" line="289"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="297"/>
+        <location filename="../main-win.ui" line="298"/>
         <source>Go</source>
         <translation>تنقّل</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="306"/>
+        <location filename="../main-win.ui" line="307"/>
         <source>Quit</source>
         <translation>أنهِ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="315"/>
+        <location filename="../main-win.ui" line="316"/>
         <source>&amp;About</source>
         <translation>&amp;عن</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="324"/>
+        <location filename="../main-win.ui" line="325"/>
         <source>&amp;New Window</source>
         <translation>نافذة &amp;جديدة</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="327"/>
+        <location filename="../main-win.ui" line="328"/>
         <source>New Window</source>
         <translation>نافذة جديدة</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="330"/>
+        <location filename="../main-win.ui" line="331"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="338"/>
+        <location filename="../main-win.ui" line="339"/>
         <source>Show &amp;Hidden</source>
         <translation>اعرض الم&amp;خفي</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="341"/>
+        <location filename="../main-win.ui" line="342"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="350"/>
+        <location filename="../main-win.ui" line="351"/>
         <source>&amp;Computer</source>
         <translation>ال&amp;حاسوب</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="359"/>
+        <location filename="../main-win.ui" line="360"/>
         <source>&amp;Trash</source>
         <translation>الم&amp;هملات</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="364"/>
+        <location filename="../main-win.ui" line="365"/>
         <source>&amp;Network</source>
         <translation>ال&amp;شبكة</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="373"/>
+        <location filename="../main-win.ui" line="374"/>
         <source>&amp;Desktop</source>
         <translation>س&amp;طح المكتب</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="382"/>
+        <location filename="../main-win.ui" line="383"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>أ&amp;ضِف إلى العلامات</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="387"/>
+        <location filename="../main-win.ui" line="388"/>
         <source>&amp;Applications</source>
         <translation>التطبي&amp;قات</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="392"/>
+        <location filename="../main-win.ui" line="393"/>
         <source>Reload</source>
         <translation>أعِد التحميل</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="400"/>
+        <location filename="../main-win.ui" line="401"/>
         <source>&amp;Icon View</source>
         <translation>منظور أي&amp;قوناتي</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="408"/>
+        <location filename="../main-win.ui" line="409"/>
         <source>&amp;Compact View</source>
         <translation>منظور مترا&amp;ص</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="416"/>
+        <location filename="../main-win.ui" line="417"/>
         <source>&amp;Detailed List</source>
         <translation>قائمة مف&amp;صّلة</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="424"/>
+        <location filename="../main-win.ui" line="425"/>
         <source>&amp;Thumbnail View</source>
         <translation>منظور مص&amp;غّراتي</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="433"/>
+        <location filename="../main-win.ui" line="434"/>
         <source>Cu&amp;t</source>
         <translation>&amp;قصّ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="436"/>
+        <location filename="../main-win.ui" line="437"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="445"/>
+        <location filename="../main-win.ui" line="446"/>
         <source>&amp;Copy</source>
         <translation>ا&amp;نسخ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="448"/>
+        <location filename="../main-win.ui" line="449"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="457"/>
+        <location filename="../main-win.ui" line="458"/>
         <source>&amp;Paste</source>
         <translation>أل&amp;صِق</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="460"/>
+        <location filename="../main-win.ui" line="461"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="465"/>
+        <location filename="../main-win.ui" line="466"/>
         <source>Select &amp;All</source>
         <translation>حدّد ال&amp;كل</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="468"/>
+        <location filename="../main-win.ui" line="469"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="473"/>
+        <location filename="../main-win.ui" line="474"/>
         <source>Pr&amp;eferences</source>
         <translation>التف&amp;ضيلات</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="481"/>
+        <location filename="../main-win.ui" line="482"/>
         <source>&amp;Ascending</source>
         <translation>ت&amp;صاعديا</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="489"/>
+        <location filename="../main-win.ui" line="490"/>
         <source>&amp;Descending</source>
         <translation>ت&amp;نازليا</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="497"/>
+        <location filename="../main-win.ui" line="498"/>
         <source>&amp;By File Name</source>
         <translation>باسم المل&amp;ف</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="505"/>
+        <location filename="../main-win.ui" line="506"/>
         <source>By &amp;Modification Time</source>
         <translation>بوقت الت&amp;عديل</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="513"/>
+        <location filename="../main-win.ui" line="514"/>
         <source>By File &amp;Type</source>
         <translation>ب&amp;نوع الملف</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="521"/>
+        <location filename="../main-win.ui" line="522"/>
         <source>By &amp;Owner</source>
         <translation>بال&amp;مالك</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="529"/>
+        <location filename="../main-win.ui" line="530"/>
         <source>&amp;Folder First</source>
         <translation>الم&amp;جلدات أولا</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="537"/>
+        <location filename="../main-win.ui" line="538"/>
         <source>&amp;Preserve sorting for this folder</source>
         <translation>ا&amp;حفظ طريقة الفرز في هذا المجلد</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="636"/>
+        <location filename="../main-win.ui" line="637"/>
         <source>&amp;Case Sensitive</source>
         <translation>ح&amp;سّاس للحالة</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="644"/>
+        <location filename="../main-win.ui" line="645"/>
         <source>By File &amp;Size</source>
         <translation>بح&amp;جم الملف</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="649"/>
+        <location filename="../main-win.ui" line="650"/>
         <source>&amp;Close Window</source>
         <translation>أ&amp;غلِق النافذة</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="652"/>
+        <location filename="../main-win.ui" line="653"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="684"/>
+        <location filename="../main-win.ui" line="685"/>
         <source>&amp;Folder</source>
         <translation>م&amp;جلد</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="696"/>
+        <location filename="../main-win.ui" line="697"/>
         <source>&amp;Blank File</source>
         <translation>مل&amp;ف فارغ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="820"/>
+        <location filename="../main-win.ui" line="821"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="823"/>
+        <location filename="../main-win.ui" line="824"/>
         <source>Show Filter Bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="826"/>
+        <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+I</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="834"/>
+        <location filename="../main-win.ui" line="835"/>
         <source>S&amp;plit View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="837"/>
+        <location filename="../main-win.ui" line="838"/>
         <source>Split View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="840"/>
+        <location filename="../main-win.ui" line="841"/>
         <source>F6</source>
         <translation type="unfinished">F6</translation>
     </message>
     <message>
-        <source>&amp;Filter</source>
-        <translation type="vanished">ر&amp;شّح</translation>
+        <location filename="../main-win.ui" line="846"/>
+        <source>&amp;Copy Full Path</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="718"/>
+        <location filename="../main-win.ui" line="849"/>
+        <source>Ctrl+Shift+C</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="719"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="723"/>
+        <location filename="../main-win.ui" line="724"/>
         <source>&amp;Clear All Filters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="726"/>
+        <location filename="../main-win.ui" line="727"/>
         <source>Ctrl+Shift+K</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="735"/>
+        <location filename="../main-win.ui" line="736"/>
         <source>Close &amp;previous tabs</source>
         <translation>أغلِق الألسنة ال&amp;سابقة</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="744"/>
+        <location filename="../main-win.ui" line="745"/>
         <source>Close &amp;next tabs</source>
         <translation>أغلِق الألسنة ال&amp;تالية</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="783"/>
+        <location filename="../main-win.ui" line="784"/>
         <source>&amp;Preserve Settings for This Folder</source>
         <translation>ا&amp;حفظ الإعدادات في هذا المجلد</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="788"/>
+        <location filename="../main-win.ui" line="789"/>
         <source>Connect to &amp;Server</source>
         <translation>اتّصل ب&amp;خادوم</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="796"/>
+        <location filename="../main-win.ui" line="797"/>
         <source>&amp;Location</source>
         <translation>الم&amp;كان</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="804"/>
+        <location filename="../main-win.ui" line="805"/>
         <source>&amp;Path Buttons</source>
         <translation>أزرار الم&amp;سار</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="809"/>
+        <location filename="../main-win.ui" line="810"/>
         <source>&amp;Bulk Rename</source>
         <translation>ت&amp;غيير الأسماء بالجملة</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="812"/>
+        <location filename="../main-win.ui" line="813"/>
         <source>Bulk Rename</source>
         <translation>تغيير الأسماء بالجملة</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="815"/>
+        <location filename="../main-win.ui" line="816"/>
         <source>Ctrl+F2</source>
         <translation>Ctrl+F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="749"/>
+        <location filename="../main-win.ui" line="750"/>
         <source>Close &amp;other tabs</source>
         <translation>أغلِق الألسنة الأ&amp;خرى</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="715"/>
+        <location filename="../main-win.ui" line="716"/>
         <source>Permanent &amp;filter bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="757"/>
+        <location filename="../main-win.ui" line="758"/>
         <source>&amp;Menu bar</source>
         <translation>شريط ال&amp;قوائم</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="760"/>
+        <location filename="../main-win.ui" line="761"/>
         <source>Menu bar</source>
         <translation>شريط القوائم</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="763"/>
+        <location filename="../main-win.ui" line="764"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="772"/>
-        <location filename="../main-win.ui" line="775"/>
+        <location filename="../main-win.ui" line="773"/>
+        <location filename="../main-win.ui" line="776"/>
         <source>Menu</source>
         <translation>القائمة</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="546"/>
+        <location filename="../main-win.ui" line="547"/>
         <source>New &amp;Tab</source>
         <translation>ل&amp;سان جديد</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="549"/>
+        <location filename="../main-win.ui" line="550"/>
         <source>New Tab</source>
         <translation>لسان جديد</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="552"/>
+        <location filename="../main-win.ui" line="553"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="561"/>
+        <location filename="../main-win.ui" line="562"/>
         <source>Go &amp;Back</source>
         <translation>&amp;عُد</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="564"/>
+        <location filename="../main-win.ui" line="565"/>
         <source>Go Back</source>
         <translation>عُد</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="567"/>
+        <location filename="../main-win.ui" line="568"/>
         <source>Alt+Left</source>
         <translation>Alt+Left</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="576"/>
+        <location filename="../main-win.ui" line="577"/>
         <source>Go &amp;Forward</source>
         <translation>ت&amp;قدّم</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="579"/>
+        <location filename="../main-win.ui" line="580"/>
         <source>Go Forward</source>
         <translation>تقدّم</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="582"/>
+        <location filename="../main-win.ui" line="583"/>
         <source>Alt+Right</source>
         <translation>Alt+Right</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="587"/>
+        <location filename="../main-win.ui" line="588"/>
         <source>&amp;Invert Selection</source>
         <translation>ا&amp;عكس التحديد</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="596"/>
+        <location filename="../main-win.ui" line="597"/>
         <source>&amp;Delete</source>
         <translation>ا&amp;حذف</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="599"/>
+        <location filename="../main-win.ui" line="600"/>
         <source>Del</source>
         <translation>Del</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="604"/>
+        <location filename="../main-win.ui" line="605"/>
         <source>&amp;Rename</source>
         <translation>&amp;غيّر الاسم</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="608"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="612"/>
+        <location filename="../main-win.ui" line="613"/>
         <source>C&amp;lose Tab</source>
         <translation>أ&amp;غلِق اللسان</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="615"/>
+        <location filename="../main-win.ui" line="616"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="620"/>
+        <location filename="../main-win.ui" line="621"/>
         <source>File &amp;Properties</source>
         <translation>&amp;خصائص الملف</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="623"/>
+        <location filename="../main-win.ui" line="624"/>
         <source>Alt+Return</source>
         <translation>Alt+Enter</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="628"/>
+        <location filename="../main-win.ui" line="629"/>
         <source>&amp;Folder Properties</source>
         <translation>خصائص الم&amp;جلد</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="657"/>
+        <location filename="../main-win.ui" line="658"/>
         <source>Edit Bookmarks</source>
         <translation>حرّر العلامات</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="662"/>
+        <location filename="../main-win.ui" line="663"/>
         <source>Open &amp;Terminal</source>
         <translation>افتح ال&amp;طرفية</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="665"/>
+        <location filename="../main-win.ui" line="666"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="670"/>
+        <location filename="../main-win.ui" line="671"/>
         <source>Open as &amp;Root</source>
         <translation>افتح ك&amp;جذر</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="675"/>
+        <location filename="../main-win.ui" line="676"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;حرّر العلامات</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="687"/>
+        <location filename="../main-win.ui" line="688"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="699"/>
+        <location filename="../main-win.ui" line="700"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="704"/>
+        <location filename="../main-win.ui" line="705"/>
         <source>&amp;Find Files</source>
         <translation>اب&amp;حث عن ملفات</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="707"/>
+        <location filename="../main-win.ui" line="708"/>
         <source>F3</source>
         <translation>F3</translation>
-    </message>
-    <message>
-        <source>Filter by string...</source>
-        <translation type="vanished">رشّح حسب نص…</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -978,7 +1001,7 @@ A space is also reserved for 3 lines of text.</source>
         <translation>أ&amp;دوات</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="224"/>
+        <location filename="../main-win.ui" line="225"/>
         <source>Main Toolbar</source>
         <translation>شريط الأدوات الرئيسي</translation>
     </message>
@@ -1162,7 +1185,7 @@ A space is also reserved for 3 lines of text.</source>
         <translation>كبّر الصورة لتملأ الشاشة كاملة</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="204"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="227"/>
         <source>Image Files</source>
         <translation>ملفات الصور</translation>
     </message>
@@ -1170,60 +1193,118 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="579"/>
+        <location filename="../desktopwindow.cpp" line="294"/>
+        <source>Trash (One item)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="297"/>
+        <source>Trash (%1 items)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="301"/>
+        <source>Trash (Empty)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="316"/>
+        <source>Home</source>
+        <translation type="unfinished">المنزل</translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="330"/>
+        <source>Computer</source>
+        <translation type="unfinished">الحاسوب</translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="344"/>
+        <source>Network</source>
+        <translation type="unfinished">الشبكة</translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="814"/>
+        <source>Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="819"/>
+        <location filename="../desktopwindow.cpp" line="856"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>ت&amp;شبّث بالمكان الحالي</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="605"/>
+        <location filename="../desktopwindow.cpp" line="826"/>
+        <source>Empty Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopwindow.cpp" line="882"/>
         <source>Hide Desktop Items</source>
         <translation>أخفِ عناصر سطح المكتب</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="610"/>
+        <location filename="../desktopwindow.cpp" line="887"/>
         <source>Desktop Preferences</source>
         <translation>تفضيلات سطح المكتب</translation>
     </message>
 </context>
 <context>
+    <name>PCManFM::FilterBar</name>
+    <message>
+        <location filename="../tabpage.cpp" line="92"/>
+        <source>Filter:</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PCManFM::FilterEdit</name>
+    <message>
+        <location filename="../tabpage.cpp" line="62"/>
+        <source>Clear text (Ctrl+K)</source>
+        <translation type="unfinished">امسح النص (Ctrl+K)</translation>
+    </message>
+</context>
+<context>
     <name>PCManFM::MainWindow</name>
     <message>
-        <source>Clear text (Ctrl+K)</source>
-        <translation type="vanished">امسح النص (Ctrl+K)</translation>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <source>Root Instance</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="650"/>
+        <location filename="../mainwindow.cpp" line="661"/>
         <source>Hide menu bar</source>
         <translation>أخفِ شريط القوائم</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="651"/>
+        <location filename="../mainwindow.cpp" line="662"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>سيُخفي هذا شريط القوائم تماما، استخدم Ctrl+M لعرضه ثانية.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="973"/>
+        <location filename="../mainwindow.cpp" line="984"/>
         <source>Version: %1</source>
         <translation>الإصدارة: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1790"/>
+        <location filename="../mainwindow.cpp" line="1808"/>
         <source>&amp;Move to Trash</source>
         <translation>ا&amp;نقل إلى المهملات</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1790"/>
+        <location filename="../mainwindow.cpp" line="1808"/>
         <source>&amp;Delete</source>
         <translation>ا&amp;حذف</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1847"/>
-        <location filename="../mainwindow.cpp" line="1855"/>
+        <location filename="../mainwindow.cpp" line="1865"/>
+        <location filename="../mainwindow.cpp" line="1873"/>
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1855"/>
+        <location filename="../mainwindow.cpp" line="1873"/>
         <source>Switch user command is not set.</source>
         <translation>لم يُضبط أمر تبديل المستخدم.</translation>
     </message>
@@ -1603,47 +1684,6 @@ only if there are more than one tab.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>If unchecked, the tab bar will be positioned only
-above the folder-view and not above the left pane.</source>
-        <translation type="vanished">إن لم يُؤشّر، فسيكون شريط الألسنة موجودا فوق منظور المجلد فقط وليس فوق اللوحة اليمنى أيضا.</translation>
-    </message>
-    <message>
-        <source>Fullwidth tab bar</source>
-        <translation type="vanished">شريط ألسنة كامل العرض</translation>
-    </message>
-    <message>
-        <source>Show in places</source>
-        <translation type="vanished">اعرض في الأماكن</translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation type="vanished">المنزل</translation>
-    </message>
-    <message>
-        <source>Desktop</source>
-        <translation type="vanished">سطح المكتب</translation>
-    </message>
-    <message>
-        <source>Trash can</source>
-        <translation type="vanished">سلة المهملات</translation>
-    </message>
-    <message>
-        <source>Computer</source>
-        <translation type="vanished">الحاسوب</translation>
-    </message>
-    <message>
-        <source>Applications</source>
-        <translation type="vanished">التطبيقات</translation>
-    </message>
-    <message>
-        <source>Devices</source>
-        <translation type="vanished">الأجهزة</translation>
-    </message>
-    <message>
-        <source>Network</source>
-        <translation type="vanished">الشبكة</translation>
-    </message>
-    <message>
         <location filename="../preferences.ui" line="554"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>لا تولّد مصغّرات لملفات الصور الأكبر من:</translation>
@@ -1783,22 +1823,6 @@ above the folder-view and not above the left pane.</source>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
         <translation>تعذر تغيير أسماء بعض الملفات.</translation>
-    </message>
-</context>
-<context>
-    <name>PCManFM::FilterEdit</name>
-    <message>
-        <location filename="../tabpage.cpp" line="62"/>
-        <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">امسح النص (Ctrl+K)</translation>
-    </message>
-</context>
-<context>
-    <name>PCManFM::FilterBar</name>
-    <message>
-        <location filename="../tabpage.cpp" line="92"/>
-        <source>Filter:</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
