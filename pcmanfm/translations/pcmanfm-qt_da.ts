@@ -380,27 +380,27 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Synlige genveje</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">Hjem</translation>
+        <translation>Hjem</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Papirkurv</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">Computer</translation>
+        <translation>Computer</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">Netværk</translation>
+        <translation>Netværk</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -718,12 +718,12 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kopiér fuld sti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Skift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
@@ -1197,37 +1197,37 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="294"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Papirkurv (et objekt)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (%1 items)</source>
-        <translation type="unfinished"></translation>
+        <translation>Papirkurv (%1 objekter)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="301"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Papirkurv (tom)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="316"/>
         <source>Home</source>
-        <translation type="unfinished">Hjem</translation>
+        <translation>Hjem</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="330"/>
         <source>Computer</source>
-        <translation type="unfinished">Computer</translation>
+        <translation>Computer</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="344"/>
         <source>Network</source>
-        <translation type="unfinished">Netværk</translation>
+        <translation>Netværk</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="814"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Åbn</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="819"/>
@@ -1238,7 +1238,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="826"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Tøm papirkurv</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="882"/>
@@ -1272,7 +1272,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Root-instans</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
