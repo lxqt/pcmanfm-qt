@@ -904,7 +904,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Alt+Return</source>
-        <translation>Alt+Enter</translation>
+        <translation>Alt+Return</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="629"/>
@@ -1799,7 +1799,7 @@ only if there are more than one tab.</source>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">Hata</translation>
+        <translation>Hata</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
