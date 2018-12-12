@@ -385,22 +385,22 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">Namai</translation>
+        <translation>Namai</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Šiukšlinė</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">Kompiuteris</translation>
+        <translation>Kompiuteris</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">Tinklas</translation>
+        <translation>Tinklas</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -1212,22 +1212,22 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="316"/>
         <source>Home</source>
-        <translation type="unfinished">Namai</translation>
+        <translation>Namai</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="330"/>
         <source>Computer</source>
-        <translation type="unfinished">Kompiuteris</translation>
+        <translation>Kompiuteris</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="344"/>
         <source>Network</source>
-        <translation type="unfinished">Tinklas</translation>
+        <translation>Tinklas</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="814"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Atverti</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="819"/>
@@ -1238,7 +1238,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="826"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Išvalyti šiukšlinę</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="882"/>
