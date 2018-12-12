@@ -380,7 +380,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Atallos visíbeis</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
@@ -473,7 +473,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="286"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Cargar de novo</translation>
+        <translation>&amp;Recargar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="298"/>
@@ -1272,7 +1272,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Instancia de root</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
