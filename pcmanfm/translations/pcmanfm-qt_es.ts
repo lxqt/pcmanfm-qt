@@ -355,7 +355,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation>Los intervalos de menos de 5min se ignoran</translation>
+        <translation>Los intervalos de menos de 5 minutos se ignoran</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -380,27 +380,27 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Atajos visibles</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">Carpeta personal</translation>
+        <translation>Carpeta personal</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Papelera</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">Sistema</translation>
+        <translation>Sistema</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">Red</translation>
+        <translation>Red</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -789,12 +789,12 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Copiar la ruta completa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Mayús+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
@@ -1197,37 +1197,37 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="294"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Papelera (un elemento)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (%1 items)</source>
-        <translation type="unfinished"></translation>
+        <translation>Papelera (%1 elementos)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="301"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Papelera (vacía)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="316"/>
         <source>Home</source>
-        <translation type="unfinished">Carpeta personal</translation>
+        <translation>Carpeta personal</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="330"/>
         <source>Computer</source>
-        <translation type="unfinished">Sistema</translation>
+        <translation>Sistema</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="344"/>
         <source>Network</source>
-        <translation type="unfinished">Red</translation>
+        <translation>Red</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="814"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="819"/>
@@ -1238,7 +1238,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="826"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaciar la papelera</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="882"/>
@@ -1272,7 +1272,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Instancia de root</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -1502,7 +1502,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>Open files with single click</source>
-        <translation>Abrir archivos con un solo clic</translation>
+        <translation>Abrir los archivos con un solo clic</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="100"/>
