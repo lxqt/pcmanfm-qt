@@ -380,7 +380,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Matomi šaukiniai</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
@@ -718,12 +718,12 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kopijuoti pilną kelią</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl(Vald)+Shift(Lyg2)+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
@@ -1197,17 +1197,17 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="294"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Šiukšlinė (Vienas elementas)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (%1 items)</source>
-        <translation type="unfinished"></translation>
+        <translation>Šiukšlinė (%1 elementų(-ai))</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="301"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Šiukšlinė (Tuščia)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="316"/>
@@ -1272,7 +1272,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Šaknies egzempliorius</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
