@@ -1532,7 +1532,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Mover archivos a la papelera en lugar de eliminarlos del disco.</translation>
+        <translation>Mover archivos a la papelera en lugar de eliminarlos del disco</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="581"/>
