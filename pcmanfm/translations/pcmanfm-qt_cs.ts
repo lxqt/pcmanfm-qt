@@ -390,7 +390,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Koš</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
@@ -678,7 +678,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zkopírovat celou cestu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
@@ -1207,7 +1207,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="301"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Koš (prázdný)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="316"/>
