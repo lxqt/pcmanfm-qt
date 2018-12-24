@@ -65,7 +65,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Pragramação:
+        <translation>Programação:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -105,7 +105,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Por favor, selecione uma ação que deseja executar:</translation>
+        <translation>Por favor, selecione a ação que deseja executar:</translation>
     </message>
 </context>
 <context>
@@ -113,7 +113,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation>Renomear em Massa</translation>
+        <translation>Renomear em massa</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
@@ -141,12 +141,12 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation>&amp;Login Anônimo</translation>
+        <translation>&amp;Login anônimo</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation>Entrar como  &amp;usuário:</translation>
+        <translation>Entrar como &amp;usuário:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
@@ -292,7 +292,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation>Margens mínimas  dos itens:</translation>
+        <translation>Margens mínimas dos itens:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="238"/>
@@ -980,7 +980,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation>&amp;Ajuda</translation>
+        <translation>Aj&amp;uda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
@@ -991,7 +991,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="162"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Editar</translation>
+        <translation>E&amp;ditar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="180"/>
