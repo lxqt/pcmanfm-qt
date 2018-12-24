@@ -1197,12 +1197,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="294"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Koš (1 položka)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (%1 items)</source>
-        <translation type="unfinished"></translation>
+        <translation>Koš (%1 položek)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="301"/>
@@ -1238,7 +1238,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="826"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyprázdnit koš</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="882"/>
