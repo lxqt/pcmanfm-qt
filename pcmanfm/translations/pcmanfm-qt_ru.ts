@@ -382,27 +382,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Отображаемые ярлыки</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">Дом</translation>
+        <translation>Home</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Корзина</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">Компьютер</translation>
+        <translation>Компьютер</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">Сеть</translation>
+        <translation>Сеть</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -476,7 +476,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Фильтр</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="162"/>
@@ -556,7 +556,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="325"/>
         <source>&amp;New Window</source>
-        <translation>Новое &amp;окно</translation>
+        <translation>&amp;Новое окно</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="328"/>
@@ -786,7 +786,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="846"/>
@@ -1214,17 +1214,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="316"/>
         <source>Home</source>
-        <translation type="unfinished">Дом</translation>
+        <translation>Home</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="330"/>
         <source>Computer</source>
-        <translation type="unfinished">Компьютер</translation>
+        <translation>Компьютер</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="344"/>
         <source>Network</source>
-        <translation type="unfinished">Сеть</translation>
+        <translation>Сеть</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="814"/>
