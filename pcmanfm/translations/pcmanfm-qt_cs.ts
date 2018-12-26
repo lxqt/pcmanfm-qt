@@ -678,7 +678,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation>&amp;Zkopírovat celou cestu</translation>
+        <translation>Zkopírovat &amp;celý popis umístění</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
