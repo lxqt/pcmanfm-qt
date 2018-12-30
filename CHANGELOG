@@ -7,6 +7,7 @@
  * Shadow hidden icons optionally.
  * Fixed DND and drop indicator on desktop.
  * Fixed closing tab on ejecting/unmounting.
+ * Fixed filtering for detailed list mode
  * Fixed status-bar message when some selected files were filtered out.
  * Restart warning bar for Preferences.
  * A (warning) bar for the root instance.
