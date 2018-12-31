@@ -125,7 +125,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation>Benenne ausgewählte Dateien um nach:</translation>
+        <translation>Ausgewählte Dateien umbenennen zu:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
@@ -138,17 +138,17 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>Verbinde zu Remote-Server</translation>
+        <translation>Mit entferntem Server verbinden</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation>Anonymes &amp;Einloggen</translation>
+        <translation>Anonyme Anme&amp;ldung</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation>Einloggen als &amp;Benutzer:</translation>
+        <translation>Als Ben&amp;utzer anmelden:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
@@ -201,7 +201,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation>Pfad des Ordners</translation>
+        <translation>Ordnerpfad</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
@@ -229,12 +229,12 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="65"/>
         <source>Wallpaper image file:</source>
-        <translation>Hintergrundbild:</translation>
+        <translation>Hintergrundbilddatei:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="85"/>
         <source>Select background color:</source>
-        <translation>Hintergrundfarbe:</translation>
+        <translation>Hintergrundfarbe auswählen:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="94"/>
@@ -244,7 +244,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="100"/>
         <source>Image file path</source>
-        <translation>Pfad zur Bilddatei</translation>
+        <translation>Bilddateipfad</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="107"/>
@@ -269,22 +269,22 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select  text color:</source>
-        <translation>Farbe der Beschriftung:</translation>
+        <translation>Textfarbe auswählen:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Select shadow color:</source>
-        <translation>Farbe des Schattens:</translation>
+        <translation>Schattenfarbe auswählen:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="202"/>
         <source>Select font:</source>
-        <translation>Schrift für Beschriftung:</translation>
+        <translation>Schriftart auswählen:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation>Allgemeines</translation>
+        <translation>Allgemein</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -322,7 +322,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="278"/>
         <source>Lock</source>
-        <translation>Sperren (vertikaler Abstand = horizontaler Abstand)</translation>
+        <translation>Sperren</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="315"/>
@@ -332,12 +332,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation>Aktiviere Diaschau</translation>
+        <translation>Diaschau aktivieren</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation>Hintergrundbild Ordner:</translation>
+        <translation>Hintergrundbildordner:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
@@ -372,7 +372,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation>Hintergrundbild Ordner</translation>
+        <translation>Hintergrundbild-Ordner</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
@@ -387,22 +387,22 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">Nutzerverzeichnis</translation>
+        <translation>Benutzerverzeichnis</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Papierkorb</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">Rechner</translation>
+        <translation>Rechner</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">Netzwerk</translation>
+        <translation>Netzwerk</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -412,7 +412,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="518"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Beim Klicken auf den Schreibtisch die Menüs des Fenstermanagers anzeigen</translation>
+        <translation>Beim Klicken auf den Schreibtisch die von der Fensterverwaltung bereitgestellten Menüs anzeigen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="453"/>
@@ -455,12 +455,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="128"/>
         <source>&amp;Toolbars</source>
-        <translation>&amp;Werkzeugleisten</translation>
+        <translation>Werkzeugleis&amp;ten</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="135"/>
         <source>Path &amp;Bar</source>
-        <translation>Pfad &amp;Leiste</translation>
+        <translation>Pfad&amp;leiste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="142"/>
@@ -470,7 +470,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="274"/>
         <source>&amp;Home</source>
-        <translation>&amp;Nutzerverzeichnis</translation>
+        <translation>&amp;Benutzerverzeichnis</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>
@@ -515,7 +515,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="351"/>
         <source>&amp;Computer</source>
-        <translation>&amp;Geräte</translation>
+        <translation>Re&amp;chner</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="360"/>
@@ -570,7 +570,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="466"/>
         <source>Select &amp;All</source>
-        <translation>&amp;Alles markieren</translation>
+        <translation>&amp;Alles auswählen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="474"/>
@@ -585,17 +585,17 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="490"/>
         <source>&amp;Descending</source>
-        <translation>A&amp;bsteigend</translation>
+        <translation>Absteigen&amp;d</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="498"/>
         <source>&amp;By File Name</source>
-        <translation>Nach &amp;Namen</translation>
+        <translation>Nach &amp;Dateiname</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="506"/>
         <source>By &amp;Modification Time</source>
-        <translation>Nach &amp;Zeitpunkt von Modifikationen</translation>
+        <translation>Nach &amp;Änderungszeit</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="514"/>
@@ -605,12 +605,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="522"/>
         <source>By &amp;Owner</source>
-        <translation>Nach &amp;Eigentümer</translation>
+        <translation>Nach &amp;Besitzer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="530"/>
         <source>&amp;Folder First</source>
-        <translation>&amp;Verzeichnisse zuerst</translation>
+        <translation>&amp;Ordner zuerst</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="538"/>
@@ -635,7 +635,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="637"/>
         <source>&amp;Case Sensitive</source>
-        <translation>Groß- und &amp;Kleinbuchstaben berücksichtigen</translation>
+        <translation>Groß- /Kleinschreibung bea&amp;chten</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="645"/>
@@ -645,7 +645,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="650"/>
         <source>&amp;Close Window</source>
-        <translation>Fe&amp;nster schließen</translation>
+        <translation>Fenster s&amp;chließen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="653"/>
@@ -685,12 +685,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Vollständigen Pfad &amp;kopieren</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+Umschalt+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
@@ -700,7 +700,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Clear All Filters</source>
-        <translation>Alle Filter &amp;löschen</translation>
+        <translation>Alle Filter lös&amp;chen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="727"/>
@@ -720,7 +720,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="784"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation>&amp;Bewahre Einstellungen für diesen Ordner</translation>
+        <translation>Einstellungen für diesen Ordner &amp;beibehalten</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="789"/>
@@ -1181,12 +1181,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>Nebeneinander</translation>
+        <translation>Bild nebeneinander anzeigen, um den gesamten Bildschirm zu füllen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation>Vollbildansicht</translation>
+        <translation>Bild vergrößern, um den gesamten Bildschirm zu füllen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="227"/>
@@ -1199,37 +1199,37 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktopwindow.cpp" line="294"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Papierkorb (ein Element)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (%1 items)</source>
-        <translation type="unfinished"></translation>
+        <translation>Papierkorb (%1 Elemente)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="301"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Papierkorb (Leer)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="316"/>
         <source>Home</source>
-        <translation type="unfinished">Nutzerverzeichnis</translation>
+        <translation>Benutzerverzeichnis</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="330"/>
         <source>Computer</source>
-        <translation type="unfinished">Rechner</translation>
+        <translation>Rechner</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="344"/>
         <source>Network</source>
-        <translation type="unfinished">Netzwerk</translation>
+        <translation>Netzwerk</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="814"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffnen</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="819"/>
@@ -1240,12 +1240,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktopwindow.cpp" line="826"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Papierkorb leeren</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="882"/>
         <source>Hide Desktop Items</source>
-        <translation>Desktopelemente verbergen</translation>
+        <translation>Schreibtischelemente ausblenden</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="887"/>
@@ -1279,12 +1279,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>Hide menu bar</source>
-        <translation>Menüleiste verbergen</translation>
+        <translation>Menüleiste ausblenden</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="662"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>Die Menüleiste wird vollständig verborgen. Sie kann mit der Tastenkombination Strg+M wieder aktiviert werden.</translation>
+        <translation>Dadurch wird die Menüleiste komplett ausgeblendet, mit Strg+M können Sie sie wieder einblenden.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="984"/>
@@ -1294,7 +1294,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../mainwindow.cpp" line="1808"/>
         <source>&amp;Move to Trash</source>
-        <translation>In den &amp;Papierkorb verschieben</translation>
+        <translation>In den Papierkorb &amp;verschieben</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1808"/>
@@ -1323,7 +1323,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferencesdialog.cpp" line="197"/>
         <source>Compact View</source>
-        <translation>Listenansicht</translation>
+        <translation>Kompaktansicht</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
