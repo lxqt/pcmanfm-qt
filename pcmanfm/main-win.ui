@@ -781,7 +781,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>&amp;Preserve Settings for This Folder</string>
+    <string>&amp;Preserve Settings for this Folder</string>
    </property>
   </action>
   <action name="actionConnectToServer">
