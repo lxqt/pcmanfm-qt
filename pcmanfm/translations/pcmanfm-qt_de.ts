@@ -725,7 +725,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="789"/>
         <source>Connect to &amp;Server</source>
-        <translation>Verbinde &amp;Server</translation>
+        <translation>Mit &amp;Server verbinden</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="797"/>
@@ -806,12 +806,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="409"/>
         <source>&amp;Compact View</source>
-        <translation>&amp;Listenansicht</translation>
+        <translation>&amp;Kompaktansicht</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="417"/>
         <source>&amp;Detailed List</source>
-        <translation>&amp;Detailansicht</translation>
+        <translation>&amp;Detaillierte Liste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="425"/>
@@ -851,7 +851,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="568"/>
         <source>Alt+Left</source>
-        <translation>Alt+Pfeil links</translation>
+        <translation>Alt+Links</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="577"/>
@@ -866,7 +866,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="583"/>
         <source>Alt+Right</source>
-        <translation>Alt+Pfeil rechts</translation>
+        <translation>Alt+Rechts</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="600"/>
@@ -891,7 +891,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="629"/>
         <source>&amp;Folder Properties</source>
-        <translation>&amp;Eigenschaften des aktuellen Ordners</translation>
+        <translation>&amp;Ordnereigenschaften</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="688"/>
@@ -911,7 +911,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="102"/>
         <source>&amp;Sorting</source>
-        <translation>S&amp;ortierung</translation>
+        <translation>&amp;Sortierung</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="225"/>
@@ -951,7 +951,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="676"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation>&amp;Lesezeichen bearbeiten</translation>
+        <translation>Lesezeichen b&amp;earbeiten</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="685"/>
@@ -961,12 +961,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="697"/>
         <source>&amp;Blank File</source>
-        <translation>Leere &amp;Datei</translation>
+        <translation>&amp;Leere Datei</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="705"/>
         <source>&amp;Find Files</source>
-        <translation>&amp;Dateien suchen</translation>
+        <translation>Dateien &amp;suchen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="708"/>
@@ -1007,7 +1007,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="204"/>
         <source>&amp;Tool</source>
-        <translation>&amp;Werkzeuge</translation>
+        <translation>&amp;Werkzeug</translation>
     </message>
 </context>
 <context>
@@ -1035,7 +1035,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Launch desktop manager</source>
-        <translation>Verwaltung der Arbeitsfläche starten</translation>
+        <translation>Schreibtischverwaltung starten</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1091,7 +1091,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Files or directories to open</source>
-        <translation>Zu öfnende Dateien oder Ordner</translation>
+        <translation>Zu öffnende Dateien oder Verzeichnisse</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
@@ -1176,7 +1176,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
-        <translation>Zentriert</translation>
+        <translation>Auf dem Bildschirm zentrieren</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
@@ -1390,12 +1390,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../view.cpp" line="106"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>Öffnen in neuem &amp;Fenster</translation>
+        <translation>In neuem &amp;Fenster öffnen</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="114"/>
         <source>Open in Termina&amp;l</source>
-        <translation>Öffnen in &amp;Terminal</translation>
+        <translation>Im Termina&amp;l öffnen</translation>
     </message>
 </context>
 <context>
@@ -1434,7 +1434,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation>Markierung neu erstellter Dateien</translation>
+        <translation>Neu erstellte Dateien auswählen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1444,12 +1444,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="262"/>
         <source>Size of big icons:</source>
-        <translation>Größe für große Symbole:</translation>
+        <translation>Größe der großen Symbole:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="279"/>
         <source>Size of small icons:</source>
-        <translation>Größe für kleine Symbole:</translation>
+        <translation>Größe der kleinen Symbole:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
@@ -1474,12 +1474,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="500"/>
         <source>Default width of new windows:</source>
-        <translation>Breite für neue Fenster:</translation>
+        <translation>Standardbreite neuer Fenster:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="514"/>
         <source>Default height of new windows:</source>
-        <translation>Höhe für neue Fenster:</translation>
+        <translation>Standardhöhe neuer Fenster:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="479"/>
@@ -1504,7 +1504,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>Open files with single click</source>
-        <translation>Einfacher Klick zum Öffnen von Dateien</translation>
+        <translation>Dateien mit einem einfachen Klick öffnen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="100"/>
@@ -1514,7 +1514,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="107"/>
         <source>Default view mode:</source>
-        <translation>Standardansicht:</translation>
+        <translation>Standard-Ansichtsmodus:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="120"/>
@@ -1524,7 +1524,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="159"/>
         <source>File Operations</source>
-        <translation>Handhabung von Dateien</translation>
+        <translation>Dateioperationen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
@@ -1569,7 +1569,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="148"/>
         <source>Open in new window</source>
-        <translation>Öffnen in neuem Fenster</translation>
+        <translation>In neuem Fenster öffnen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="179"/>
@@ -1624,12 +1624,12 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="346"/>
         <source>Always show full file names</source>
-        <translation>Dateinamen immer vollständig anzeigen</translation>
+        <translation>Immer vollständige Dateinamen anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Icons versteckter Dateien schattiert anzeigen</translation>
+        <translation>Symbole versteckter Dateien schattiert anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
