@@ -414,7 +414,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>&amp;Detailed List</string>
+    <string>&amp;Detailed List View</string>
    </property>
   </action>
   <action name="actionThumbnailView">
