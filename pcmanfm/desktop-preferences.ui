@@ -173,7 +173,7 @@
              </sizepolicy>
             </property>
             <property name="text">
-             <string>Select  text color:</string>
+             <string>Select text color:</string>
             </property>
            </widget>
           </item>
