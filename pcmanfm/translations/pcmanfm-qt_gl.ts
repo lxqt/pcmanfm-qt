@@ -538,7 +538,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="388"/>
         <source>&amp;Applications</source>
-        <translation>&amp;Aplicacións</translation>
+        <translation>&amp;Aplicativos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
@@ -1584,7 +1584,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation>Require reiniciar a aplicación para obter o efecto completo</translation>
+        <translation>Require reiniciar o aplicativo para obter o efecto completo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
@@ -1617,7 +1617,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
-        <translation>Tratar os ficheiros de copia de seguridade como agachados</translation>
+        <translation>Tratar os ficheiros de copia de seguranza como agachados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="346"/>
@@ -1672,7 +1672,7 @@ amosase só se hai máis dunha lapela.</translation>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation>É necesario reiniciar a aplicación para que os cambios teñan efecto.</translation>
+        <translation>É necesario reiniciar o aplicativo para que os cambios teñan efecto.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="554"/>
@@ -1752,7 +1752,7 @@ amosase só se hai máis dunha lapela.</translation>
     <message>
         <location filename="../preferences.ui" line="761"/>
         <source>Run default application after creation from template</source>
-        <translation>Executar a aplicación predeterminada trala creación a partires dun modelo</translation>
+        <translation>Executar o aplicativo predeterminado trala creación a partires dun modelo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
