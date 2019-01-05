@@ -1546,7 +1546,9 @@ void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) {
     QRect oldDropRect = dropRect_;
     dropRect_ = QRect();
     QModelIndex index = listView_->indexAt(e->pos());
-    if(index.isValid() && index.model()) {
+    QModelIndex curIndx = listView_->currentIndex();
+    if(index.isValid() && curIndx.isValid() && curIndx != index // not on self
+       && index.model()) {
         QVariant data = index.model()->data(index, Fm::FolderModel::Role::FileInfoRole);
         auto info = data.value<std::shared_ptr<const Fm::FileInfo>>();
         if(info && (info->isDir() || isTrashCan(info))) {
