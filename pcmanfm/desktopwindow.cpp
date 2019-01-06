@@ -1155,7 +1155,7 @@ void DesktopWindow::relayoutItems() {
                 // qDebug() << "set custom pos:" << name << row << index << customPos;
                 continue;
             }
-            // check if the current pos is alredy occupied by a custom item
+            // check if the current pos is already occupied by a custom item
             bool used = false;
             for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend(); ++it) {
                 QPoint customPos = it->second;
@@ -1534,6 +1534,9 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
             // because we paint desktop ourself. So, we draw it here.
             paintDropIndicator();
             break;
+        case QEvent::Wheel:
+            // removal of scrollbars is not enough to prevent scrolling
+            return true;
         default:
             break;
         }
@@ -1632,6 +1635,8 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                 file = proxyModel_->fileInfoFromIndex(indx);
                 if(file) {
                     QPoint nxtDropPos = dropPos + listView_->visualRect(indx).topLeft() - curPoint;
+                    nxtDropPos.setX(qBound(workArea.left(), nxtDropPos.x(), workArea.right() + 1));
+                    nxtDropPos.setY(qBound(workArea.top(), nxtDropPos.y(), workArea.bottom() + 1));
                     stickToPosition(file->name(), nxtDropPos, workArea, grid);
                 }
             }
@@ -1682,12 +1687,13 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             const QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
             QPoint dropPos = e->pos();
             const QList<QUrl> urlList = mimeData->urls();
+            bool reachedLastCell = false;
             for(const QUrl& url : urlList) {
                 QString name = url.fileName();
                 if(!name.isEmpty()
                    // don't stick to the position if there is an overwrite prompt
                    && !QFile::exists(desktopDir + name)) {
-                    stickToPosition(name.toStdString(), dropPos, workArea, grid);
+                    reachedLastCell = stickToPosition(name.toStdString(), dropPos, workArea, grid, reachedLastCell);
                 }
             }
             saveItemPositions();
@@ -1695,14 +1701,42 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
     }
 }
 
-// This function recursively repositions next sticky items if needed.
-void DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const QRect& workArea, const QSize& grid) {
-    // normalize the position
-    alignToGrid(pos, workArea.topLeft(), grid, listView_->spacing());
-    if(pos.y() + grid.height() > workArea.bottom() + 1) {
-        pos.setX(pos.x() + grid.width() + listView_->spacing());
-        pos.setY(workArea.top());
+// NOTE: This function positions items from top to bottom and left to right,
+// starting from the drop point, and carries the existing sticky items with them,
+// until it reaches the last cell and then puts the remaining items in the opposite
+// direction. In this way, it creates a natural DND, especially with multiple files.
+bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const QRect& workArea, const QSize& grid, bool reachedLastCell) {
+    // normalize the position, depending on the positioning direction
+    if(!reachedLastCell) { // default direction: top -> bottom, left -> right
+
+        // put the drop point inside the work area to prevent unnatural jumps
+        if(pos.y() + grid.height() > workArea.bottom() + 1) {
+            pos.setY(workArea.bottom() + 1 - grid.height());
+        }
+        if(pos.x() + grid.width() > workArea.right() + 1) {
+            pos.setX(workArea.right() + 1 - grid.width());
+        }
+        pos.setX(qMax(workArea.left(), pos.x()));
+        pos.setY(qMax(workArea.top(), pos.y()));
+
+        alignToGrid(pos, workArea.topLeft(), grid, listView_->spacing());
     }
+    else { // backward direction: bottom -> top, right -> left
+        if(pos.y() < workArea.top()) {
+            // reached the top; go to the left bottom
+            pos.setY(workArea.bottom() + 1 - grid.height());
+            pos.setX(pos.x() - grid.width() - listView_->spacing());
+        }
+
+        alignToGrid(pos, workArea.topLeft(), grid, listView_->spacing());
+
+        if (pos.x() < workArea.left()) {
+            // there's no space to the left, which means that
+            // the work area is exhausted, so ignore stickiness
+            return reachedLastCell;
+        }
+    }
+
     // find if there is a sticky item at this position
     std::string otherFile;
     auto oldItem = std::find_if(customItemPos_.cbegin(),
@@ -1713,20 +1747,45 @@ void DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const 
     if(oldItem != customItemPos_.cend()) {
         otherFile = oldItem->first;
     }
+
     // stick to the position
     customItemPos_[file] = pos;
+
+    // check whether we are in the last visible cell if it isn't reached already
+    if(!reachedLastCell
+       && pos.y() + 2 * grid.height() + listView_->spacing() > workArea.bottom() + 1
+       && pos.x() + 2 * grid.width() + listView_->spacing() > workArea.right() + 1) {
+        reachedLastCell = true;
+    }
+
     // find the next position
-    pos.setY(pos.y() + grid.height() + listView_->spacing());
+    if(reachedLastCell) {
+        // when this is the last visible cell, reverse the positioning direction
+        // to avoid off-screen items later
+        pos.setY(pos.y() - grid.height() - listView_->spacing());
+    }
+    else {
+        // the last visible cell is not reached yet; go forward
+        if(pos.y() + 2 * grid.height() + listView_->spacing() > workArea.bottom() + 1) {
+            pos.setY(workArea.top());
+            pos.setX(pos.x() + grid.width() + listView_->spacing());
+        }
+        else {
+            pos.setY(pos.y() + grid.height() + listView_->spacing());
+        }
+    }
+
     // if there was another sticky item at the same position, move it to the next position
     if(!otherFile.empty() && otherFile != file) {
-        QPoint nextPos = pos;
-        stickToPosition(otherFile, nextPos, workArea, grid);
+        reachedLastCell = stickToPosition(otherFile, pos, workArea, grid, reachedLastCell);
     }
+
+    return reachedLastCell;
 }
 
 void DesktopWindow::alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize& grid, const int spacing) {
-    int w = qAbs(pos.x() - topLeft.x()) / (grid.width() + spacing);
-    int h = qAbs(pos.y() - topLeft.y()) / (grid.height() + spacing);
+    int w = (pos.x() - topLeft.x()) / (grid.width() + spacing); // can be negative with DND
+    int h = (pos.y() - topLeft.y()) / (grid.height() + spacing); // can be negative with DND
     pos.setX(topLeft.x() + w * (grid.width() + spacing));
     pos.setY(topLeft.y() + h * (grid.height() + spacing));
 }
