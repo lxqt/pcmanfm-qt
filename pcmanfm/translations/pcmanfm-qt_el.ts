@@ -1724,7 +1724,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>Α&amp;λλαγή του φακέλου της καρτέλα στον προσωπικό κατάλογο</translation>
+        <translation>Α&amp;λλαγή του φακέλου της καρτέλας στον προσωπικό κατάλογο</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
