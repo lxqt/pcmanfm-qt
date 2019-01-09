@@ -1600,7 +1600,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="259"/>
         <location filename="../preferences.ui" line="269"/>
         <source>Used by Icon View</source>
-        <translation>Используется в режиме значков</translation>
+        <translation>Используется в режиме просмотра значками</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="276"/>
@@ -1612,7 +1612,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="293"/>
         <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
-        <translation>Используется в режиме эскизов</translation>
+        <translation>Используется в режиме просмотра эскизов</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
