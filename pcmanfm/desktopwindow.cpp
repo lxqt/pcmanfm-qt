@@ -294,7 +294,7 @@ void DesktopWindow::createTrashShortcut(int items) {
             name = tr("Trash (One item)");
         }
         else {
-            name = tr("Trash (%1 items)").arg(items);
+            name = tr("Trash (%Ln items)", "", items);
         }
     }
     else {
