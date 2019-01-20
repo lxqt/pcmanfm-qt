@@ -102,20 +102,20 @@ protected Q_SLOTS:
 
     void onLastWindowClosed();
     void onSaveStateRequest(QSessionManager& manager);
-    void onScreenResized(int num);
-    void onScreenCountChanged(int newCount);
     void initVolumeManager();
 
     void onVirtualGeometryChanged(const QRect& rect);
+    void onAvailableGeometryChanged(const QRect& rect);
     void onScreenDestroyed(QObject* screenObj);
     void onScreenAdded(QScreen* newScreen);
+    void onScreenRemoved(QScreen* oldScreen);
     void reloadDesktopsAsNeeded();
 
     void onFindFileAccepted();
     void onConnectToServerAccepted();
 
 protected:
-    virtual bool eventFilter(QObject* watched, QEvent* event);
+    //virtual bool eventFilter(QObject* watched, QEvent* event);
     bool parseCommandLineArgs();
     DesktopWindow* createDesktopWindow(int screenNum);
     bool autoMountVolume(GVolume* volume, bool interactive = true);

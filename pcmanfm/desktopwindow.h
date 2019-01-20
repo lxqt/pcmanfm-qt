@@ -29,6 +29,7 @@
 #include <QHash>
 #include <QPoint>
 #include <QByteArray>
+#include <QScreen>
 #include <xcb/xcb.h>
 #include <libfm-qt/core/folder.h>
 
@@ -83,6 +84,8 @@ public:
     }
 
     void setScreenNum(int num);
+
+    QScreen* getDesktopScreen() const;
 
 protected:
     virtual void prepareFolderMenu(Fm::FolderMenu* menu) override;
