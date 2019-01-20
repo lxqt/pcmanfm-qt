@@ -24,7 +24,6 @@
 #include <QDBusConnection>
 #include <QDBusInterface>
 #include <QDir>
-#include <QDesktopWidget>
 #include <QVector>
 #include <QLocale>
 #include <QLibraryInfo>
@@ -95,7 +94,7 @@ Application::Application(int& argc, char** argv):
         // we successfully registered the service
         isPrimaryInstance = true;
         setStyle(new ProxyStyle());
-        desktop()->installEventFilter(this);
+        //desktop()->installEventFilter(this);
 
         new ApplicationAdaptor(this);
         dbus.registerObject("/Application", this);
@@ -127,7 +126,7 @@ Application::Application(int& argc, char** argv):
 }
 
 Application::~Application() {
-    desktop()->removeEventFilter(this);
+    //desktop()->removeEventFilter(this);
 
     if(volumeMonitor_) {
         g_signal_handlers_disconnect_by_func(volumeMonitor_, gpointer(onVolumeAdded), this);
@@ -368,7 +367,7 @@ void Application::onAboutToQuit() {
     settings_.save();
 }
 
-bool Application::eventFilter(QObject* watched, QEvent* event) {
+/*bool Application::eventFilter(QObject* watched, QEvent* event) {
     if(watched == desktop()) {
         if(event->type() == QEvent::StyleChange ||
                 event->type() == QEvent::ThemeChange) {
@@ -376,7 +375,7 @@ bool Application::eventFilter(QObject* watched, QEvent* event) {
         }
     }
     return QObject::eventFilter(watched, event);
-}
+}*/
 
 void Application::onLastWindowClosed() {
 
@@ -388,29 +387,28 @@ void Application::onSaveStateRequest(QSessionManager& /*manager*/) {
 
 void Application::desktopManager(bool enabled) {
     // TODO: turn on or turn off desktpo management (desktop icons & wallpaper)
-    qDebug("desktopManager: %d", enabled);
-    QDesktopWidget* desktopWidget = desktop();
+    //qDebug("desktopManager: %d", enabled);
     if(enabled) {
         if(!enableDesktopManager_) {
             // installNativeEventFilter(this);
             const auto allScreens = screens();
             for(QScreen* screen : allScreens) {
                 connect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
+                connect(screen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
                 connect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
             }
             connect(this, &QApplication::screenAdded, this, &Application::onScreenAdded);
-            connect(desktopWidget, &QDesktopWidget::resized, this, &Application::onScreenResized);
-            connect(desktopWidget, &QDesktopWidget::screenCountChanged, this, &Application::onScreenCountChanged);
+            connect(this, &QApplication::screenRemoved, this, &Application::onScreenRemoved);
 
             // NOTE: there are two modes
             // When virtual desktop is used (all screens are combined to form a large virtual desktop),
             // we only create one DesktopWindow. Otherwise, we create one for each screen.
-            if(desktopWidget->isVirtualDesktop()) {
+            if(primaryScreen() && primaryScreen()->virtualSiblings().size() > 1) {
                 DesktopWindow* window = createDesktopWindow(-1);
                 desktopWindows_.push_back(window);
             }
             else {
-                int n = desktopWidget->numScreens();
+                int n = qMax(allScreens.size(), 1);
                 desktopWindows_.reserve(n);
                 for(int i = 0; i < n; ++i) {
                     DesktopWindow* window = createDesktopWindow(i);
@@ -421,8 +419,6 @@ void Application::desktopManager(bool enabled) {
     }
     else {
         if(enableDesktopManager_) {
-            disconnect(desktopWidget, &QDesktopWidget::resized, this, &Application::onScreenResized);
-            disconnect(desktopWidget, &QDesktopWidget::screenCountChanged, this, &Application::onScreenCountChanged);
             int n = desktopWindows_.size();
             for(int i = 0; i < n; ++i) {
                 DesktopWindow* window = desktopWindows_.at(i);
@@ -432,9 +428,11 @@ void Application::desktopManager(bool enabled) {
             const auto allScreens = screens();
             for(QScreen* screen : allScreens) {
                 disconnect(screen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
+                disconnect(screen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
                 disconnect(screen, &QObject::destroyed, this, &Application::onScreenDestroyed);
             }
             disconnect(this, &QApplication::screenAdded, this, &Application::onScreenAdded);
+            disconnect(this, &QApplication::screenRemoved, this, &Application::onScreenRemoved);
             // removeNativeEventFilter(this);
         }
     }
@@ -591,91 +589,39 @@ void Application::setWallpaper(QString path, QString modeString) {
     // update wallpaper
     if(changed) {
         if(enableDesktopManager_) {
-            for(DesktopWindow* desktopWindow :  qAsConst(desktopWindows_)) {
+            for(DesktopWindow* desktopWin :  qAsConst(desktopWindows_)) {
                 if(!path.isEmpty()) {
-                    desktopWindow->setWallpaperFile(path);
+                    desktopWin->setWallpaperFile(path);
                 }
                 if(mode != settings_.wallpaperMode()) {
-                    desktopWindow->setWallpaperMode(mode);
+                    desktopWin->setWallpaperMode(mode);
                 }
-                desktopWindow->updateWallpaper();
+                desktopWin->updateWallpaper();
             }
             settings_.save(); // save the settings to the config file
         }
     }
 }
 
-void Application::onScreenResized(int num) {
-    if(desktop()->isVirtualDesktop()) {
-        // in virtual desktop mode, we only have one desktop window. that is the first one.
-        DesktopWindow* window = desktopWindows_.at(0);
-        window->setGeometry(desktop()->geometry());
-    }
-    else {
-        DesktopWindow* window = desktopWindows_.at(num);
-        QRect rect = desktop()->screenGeometry(num);
-        window->setGeometry(rect);
-    }
-}
-
 DesktopWindow* Application::createDesktopWindow(int screenNum) {
     DesktopWindow* window = new DesktopWindow(screenNum);
+
     if(screenNum == -1) { // one large virtual desktop only
-        QRect rect = desktop()->geometry();
+        QRect rect = primaryScreen()->virtualGeometry();
         window->setGeometry(rect);
     }
     else {
-        QRect rect = desktop()->screenGeometry(screenNum);
+        QRect rect;
+        const auto allScreens = screens();
+        if(auto screen = window->getDesktopScreen()) {
+            rect = screen->geometry();
+        }
         window->setGeometry(rect);
     }
+
     window->updateFromSettings(settings_);
     window->show();
     return window;
-}
-
-void Application::onScreenCountChanged(int newCount) {
-    QDesktopWidget* desktopWidget = desktop();
-    bool oldVirtual = (desktopWindows_.size() == 1 && desktopWindows_.at(0)->screenNum() == -1);
-    bool isVirtual = desktopWidget->isVirtualDesktop();
-
-    if(oldVirtual && isVirtual) {
-        // if we are using virtual desktop mode previously, and the new mode is sitll virtual
-        // no further change is needed, only do relayout.
-        desktopWindows_.at(0)->queueRelayout();
-        return;
-    }
-
-    // we used non-virtual mode originally, but now we're switched to virtual mode
-    if(isVirtual) {
-        newCount = 1;    // we only want one desktop window for all screens in virtual mode
-    }
-
-    if(newCount > desktopWindows_.size()) {
-        // add more desktop windows
-        for(int i = desktopWindows_.size(); i < newCount; ++i) {
-            DesktopWindow* desktop = createDesktopWindow(i);
-            desktopWindows_.push_back(desktop);
-        }
-    }
-    else if(newCount < desktopWindows_.size()) {
-        // delete excessive desktop windows
-        for(int i = newCount; i < desktopWindows_.size(); ++i) {
-            DesktopWindow* desktop = desktopWindows_.at(i);
-            delete desktop;
-        }
-        desktopWindows_.resize(newCount);
-    }
-
-    if(newCount == 1) { // now only 1 screen is in use
-        DesktopWindow* desktop = desktopWindows_.at(0);
-        if(isVirtual) {
-            desktop->setScreenNum(-1);
-        }
-        else { // non-virtual mode, and we only have 1 screen
-            desktop->setScreenNum(0);
-        }
-        desktop->updateWallpaper();
-    }
 }
 
 // called when Settings is changed to update UI
@@ -701,8 +647,8 @@ void Application::updateFromSettings() {
 void Application::updateDesktopsFromSettings(bool changeSlide) {
     QVector<DesktopWindow*>::iterator it;
     for(it = desktopWindows_.begin(); it != desktopWindows_.end(); ++it) {
-        DesktopWindow* desktopWindow = static_cast<DesktopWindow*>(*it);
-        desktopWindow->updateFromSettings(settings_, changeSlide);
+        DesktopWindow* desktopWin = static_cast<DesktopWindow*>(*it);
+        desktopWin->updateFromSettings(settings_, changeSlide);
     }
 }
 
@@ -783,7 +729,58 @@ bool Application::nativeEventFilter(const QByteArray& eventType, void* message, 
 void Application::onScreenAdded(QScreen* newScreen) {
     if(enableDesktopManager_) {
         connect(newScreen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
+        connect(newScreen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
         connect(newScreen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+        const auto siblings = primaryScreen()->virtualSiblings();
+        if(siblings.contains(newScreen)) { // the primary screen is changed
+            if(desktopWindows_.size() == 1) {
+                desktopWindows_.at(0)->setGeometry(newScreen->virtualGeometry());
+                if(siblings.size() > 1) { // a virtual desktop is created
+                    desktopWindows_.at(0)->setScreenNum(-1);
+                }
+            }
+            else if(desktopWindows_.isEmpty()) { // for the sake of certainty
+                DesktopWindow* window = createDesktopWindow(desktopWindows_.size());
+                desktopWindows_.push_back(window);
+            }
+        }
+        else { // a separate screen is added
+            DesktopWindow* window = createDesktopWindow(desktopWindows_.size());
+            desktopWindows_.push_back(window);
+        }
+    }
+}
+
+void Application::onScreenRemoved(QScreen* oldScreen) {
+    if(enableDesktopManager_){
+        disconnect(oldScreen, &QScreen::virtualGeometryChanged, this, &Application::onVirtualGeometryChanged);
+        disconnect(oldScreen, &QScreen::availableGeometryChanged, this, &Application::onAvailableGeometryChanged);
+        disconnect(oldScreen, &QObject::destroyed, this, &Application::onScreenDestroyed);
+        if(desktopWindows_.isEmpty()) {
+            return;
+        }
+        if(desktopWindows_.size() == 1) { // a single desktop is changed
+            if(primaryScreen() != nullptr) {
+                desktopWindows_.at(0)->setGeometry(primaryScreen()->virtualGeometry());
+                if(primaryScreen()->virtualSiblings().size() == 1) {
+                    desktopWindows_.at(0)->setScreenNum(0); // there is no virtual desktop anymore
+                }
+            }
+            else if (screens().isEmpty()) { // for the sake of certainty
+                desktopWindows_.at(0)->setScreenNum(0);
+            }
+        }
+        else { // a separate desktop is removed
+            int n = desktopWindows_.size();
+            for(int i = 0; i < n; ++i) {
+                DesktopWindow* window = desktopWindows_.at(i);
+                if(window->getDesktopScreen() == oldScreen) {
+                    desktopWindows_.remove(i);
+                    delete window;
+                    break;
+                }
+            }
+        }
     }
 }
 
@@ -815,9 +812,9 @@ void Application::onScreenDestroyed(QObject* screenObj) {
     if(enableDesktopManager_) {
         bool reloadNeeded = false;
         // FIXME: add workarounds for Qt5 bug #40681 and #40791 here.
-        for(DesktopWindow* desktop :  qAsConst(desktopWindows_)) {
-            if(desktop->windowHandle()->screen() == screenObj) {
-                desktop->destroy(); // destroy the underlying native window
+        for(DesktopWindow* desktopWin :  qAsConst(desktopWindows_)) {
+            if(desktopWin->windowHandle()->screen() == screenObj) {
+                desktopWin->destroy(); // destroy the underlying native window
                 reloadNeeded = true;
             }
         }
@@ -830,31 +827,33 @@ void Application::onScreenDestroyed(QObject* screenObj) {
 void Application::reloadDesktopsAsNeeded() {
     if(enableDesktopManager_) {
         // workarounds for Qt5 bug #40681 and #40791 here.
-        for(DesktopWindow* desktop : qAsConst(desktopWindows_)) {
-            if(!desktop->windowHandle()) {
-                desktop->create(); // re-create the underlying native window
-                desktop->queueRelayout();
-                desktop->show();
+        for(DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
+            if(!desktopWin->windowHandle()) {
+                desktopWin->create(); // re-create the underlying native window
+                desktopWin->queueRelayout();
+                desktopWin->show();
             }
         }
     }
 }
 
-// This slot is for Qt 5 onlt, but the stupid Qt moc cannot do conditional compilation
-// so we have to define it for Qt 4 as well.
 void Application::onVirtualGeometryChanged(const QRect& /*rect*/) {
-    // NOTE: the following is a workaround for Qt bug 32567.
-    // https://bugreports.qt-project.org/browse/QTBUG-32567
-    // Though the status of the bug report is closed, it's not yet fixed for X11.
-    // In theory, QDesktopWidget should emit "workAreaResized()" signal when the work area
-    // of any screen is changed, but in fact it does not do it.
-    // However, QScreen provided since Qt5 does not have the bug and
-    // virtualGeometryChanged() is emitted correctly when the workAreas changed.
-    // So we use it in Qt5.
+    // update desktop geometries
     if(enableDesktopManager_) {
-        // qDebug() << "onVirtualGeometryChanged";
-        for(DesktopWindow* desktop : qAsConst(desktopWindows_)) {
-            desktop->queueRelayout();
+        for(DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
+            auto desktopScreen = desktopWin->getDesktopScreen();
+            if(desktopScreen) {
+                desktopWin->setGeometry(desktopScreen->virtualGeometry());
+            }
+        }
+    }
+}
+
+void Application::onAvailableGeometryChanged(const QRect& /*rect*/) {
+    // update desktop layouts
+    if(enableDesktopManager_) {
+        for(DesktopWindow* desktopWin : qAsConst(desktopWindows_)) {
+            desktopWin->queueRelayout();
         }
     }
 }

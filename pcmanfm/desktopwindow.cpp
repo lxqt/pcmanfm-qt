@@ -19,7 +19,6 @@
 
 #include "desktopwindow.h"
 #include <QWidget>
-#include <QDesktopWidget>
 #include <QPainter>
 #include <QImage>
 #include <QImageReader>
@@ -40,6 +39,7 @@
 #include <QPaintEvent>
 #include <QStandardPaths>
 #include <QClipboard>
+#include <QWindow>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -83,7 +83,6 @@ DesktopWindow::DesktopWindow(int screenNum):
     trashUpdateTimer_(nullptr),
     trashMonitor_(nullptr) {
 
-    QDesktopWidget* desktopWidget = QApplication::desktop();
     setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
     setAttribute(Qt::WA_DeleteOnClose);
@@ -111,7 +110,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     // In some older multihead setups, such as xinerama, every physical screen
     // is treated as a separate desktop so many instances of DesktopWindow may be created.
     // In this case we only want to show desktop icons on the primary screen.
-    if(desktopWidget->isVirtualDesktop() || screenNum_ == desktopWidget->primaryScreen()) {
+    if((screenNum_ == 0 || qApp->primaryScreen()->virtualSiblings().size() > 1)) {
         loadItemPositions();
 
         setShadowHidden(settings.shadowHidden());
@@ -1020,6 +1019,10 @@ void DesktopWindow::onFilesAdded(const Fm::FileInfoList files) {
 }
 
 void DesktopWindow::removeBottomGap() {
+    auto screen = getDesktopScreen();
+    if(screen == nullptr) {
+        return;
+    }
     /************************************************************
      NOTE: Desktop is an area bounded from below while icons snap
      to its grid srarting from above. Therefore, we try to adjust
@@ -1030,7 +1033,7 @@ void DesktopWindow::removeBottomGap() {
     auto itemSize = delegate->itemSize();
     //qDebug() << "delegate:" << delegate->itemSize();
     QSize cellMargins = getMargins();
-    int workAreaHeight = qApp->desktop()->availableGeometry(screenNum_).height()
+    int workAreaHeight = screen->availableVirtualGeometry().height()
                          - 2 * WORK_AREA_MARGIN;
     int cellHeight = itemSize.height() + listView_->spacing();
     int iconNumber = workAreaHeight / cellHeight;
@@ -1106,6 +1109,10 @@ void DesktopWindow::trustOurDesktopShortcut(std::shared_ptr<const Fm::FileInfo> 
 // QListView does item layout in a very inflexible way, so let's do our custom layout again.
 // FIXME: this is very inefficient, but due to the design flaw of QListView, this is currently the only workaround.
 void DesktopWindow::relayoutItems() {
+    auto screen = getDesktopScreen();
+    if(screen == nullptr) {
+        return;
+    }
     displayNames_.clear();
     loadItemPositions(); // something may have changed
     // qDebug("relayoutItems()");
@@ -1115,82 +1122,58 @@ void DesktopWindow::relayoutItems() {
         relayoutTimer_ = nullptr;
     }
 
-    QDesktopWidget* desktop = qApp->desktop();
-    int screen = 0;
     int row = 0;
     int rowCount = proxyModel_->rowCount();
 
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
     auto itemSize = delegate->itemSize();
 
-    for(;;) {
-        if(desktop->isVirtualDesktop()) {
-            if(screen >= desktop->numScreens()) {
+    QRect workArea = screen->availableVirtualGeometry();
+    workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+    // qDebug() << "workArea" << screenNum_ <<  workArea;
+    // FIXME: we use an internal class declared in a private header here, which is pretty bad.
+    QPoint pos = workArea.topLeft();
+    for(; row < rowCount; ++row) {
+        QModelIndex index = proxyModel_->index(row, 0);
+        int itemWidth = delegate->sizeHint(listView_->getViewOptions(), index).width();
+        auto file = proxyModel_->fileInfoFromIndex(index);
+        // remember display names of desktop entries and shortcuts
+        if(file->isDesktopEntry() || file->isShortcut()) {
+            displayNames_[index] = file->displayName();
+            trustOurDesktopShortcut(file);
+        }
+        auto name = file->name();
+        auto find_it = customItemPos_.find(name);
+        if(find_it != customItemPos_.cend()) { // the item has a custom position
+            QPoint customPos = find_it->second;
+            // center the contents vertically
+            listView_->setPositionForIndex(customPos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
+            // qDebug() << "set custom pos:" << name << row << index << customPos;
+            continue;
+        }
+        // check if the current pos is already occupied by a custom item
+        bool used = false;
+        for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend(); ++it) {
+            QPoint customPos = it->second;
+            if(QRect(customPos, itemSize).contains(pos)) {
+                used = true;
                 break;
             }
         }
+        if(used) { // go to next pos
+            --row;
+        }
         else {
-            screen = screenNum_;
+            // center the contents vertically
+            listView_->setPositionForIndex(pos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
+            // qDebug() << "set pos" << name << row << index << pos;
         }
-        QRect workArea = desktop->availableGeometry(screen);
-        workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
-        // qDebug() << "workArea" << screen <<  workArea;
-        // FIXME: we use an internal class declared in a private header here, which is pretty bad.
-        QPoint pos = workArea.topLeft();
-        for(; row < rowCount; ++row) {
-            QModelIndex index = proxyModel_->index(row, 0);
-            int itemWidth = delegate->sizeHint(listView_->getViewOptions(), index).width();
-            auto file = proxyModel_->fileInfoFromIndex(index);
-            // remember display names of desktop entries and shortcuts
-            if(file->isDesktopEntry() || file->isShortcut()) {
-                displayNames_[index] = file->displayName();
-                trustOurDesktopShortcut(file);
-            }
-            auto name = file->name();
-            auto find_it = customItemPos_.find(name);
-            if(find_it != customItemPos_.cend()) { // the item has a custom position
-                QPoint customPos = find_it->second;
-                // center the contents vertically
-                listView_->setPositionForIndex(customPos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
-                // qDebug() << "set custom pos:" << name << row << index << customPos;
-                continue;
-            }
-            // check if the current pos is already occupied by a custom item
-            bool used = false;
-            for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend(); ++it) {
-                QPoint customPos = it->second;
-                if(QRect(customPos, itemSize).contains(pos)) {
-                    used = true;
-                    break;
-                }
-            }
-            if(used) { // go to next pos
-                --row;
-            }
-            else {
-                // center the contents vertically
-                listView_->setPositionForIndex(pos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
-                // qDebug() << "set pos" << name << row << index << pos;
-            }
-            // move to next cell in the column
-            pos.setY(pos.y() + itemSize.height() + listView_->spacing());
-            if(pos.y() + itemSize.height() > workArea.bottom() + 1) {
-                // if the next position may exceed the bottom of work area, go to the top of next column
-                pos.setX(pos.x() + itemSize.width() + listView_->spacing());
-                pos.setY(workArea.top());
-
-                // check if the new column exceeds the right margin of work area
-                if(pos.x() + itemSize.width() > workArea.right() + 1) {
-                    if(desktop->isVirtualDesktop()) {
-                        // in virtual desktop mode, go to next screen
-                        ++screen;
-                        break;
-                    }
-                }
-            }
-        }
-        if(row >= rowCount) {
-            break;
+        // move to next cell in the column
+        pos.setY(pos.y() + itemSize.height() + listView_->spacing());
+        if(pos.y() + itemSize.height() > workArea.bottom() + 1) {
+            // if the next position may exceed the bottom of work area, go to the top of next column
+            pos.setX(pos.x() + itemSize.width() + listView_->spacing());
+            pos.setY(workArea.top());
         }
     }
 
@@ -1200,6 +1183,10 @@ void DesktopWindow::relayoutItems() {
 }
 
 void DesktopWindow::loadItemPositions() {
+    auto screen = getDesktopScreen();
+    if(screen == nullptr) {
+        return;
+    }
     // load custom item positions
     customItemPos_.clear();
     Settings& settings = static_cast<Application*>(qApp)->settings();
@@ -1208,7 +1195,7 @@ void DesktopWindow::loadItemPositions() {
 
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
     auto grid = delegate->itemSize();
-    QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
+    QRect workArea = screen->availableVirtualGeometry();
     workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
     QString desktopDir = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
     desktopDir += '/';
@@ -1611,13 +1598,17 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         }
     }
     if(moveItem) {
+        auto screen = getDesktopScreen();
+        if(screen == nullptr) {
+            return;
+        }
         e->accept();
         // move selected items to the drop position, preserving their relative positions
         const QPoint dropPos = e->pos();
         if(curIndx.isValid()) {
             auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
             auto grid = delegate->itemSize();
-            QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
+            QRect workArea = screen->availableVirtualGeometry();
             workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
             QPoint curPoint = listView_->visualRect(curIndx).topLeft();
 
@@ -1682,9 +1673,13 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
            && (e->dropAction() == Qt::CopyAction
                || e->dropAction() == Qt::MoveAction
                || e->dropAction() == Qt::LinkAction)) {
+            auto screen = getDesktopScreen();
+            if(screen == nullptr) {
+                return;
+            }
             auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
             auto grid = delegate->itemSize();
-            QRect workArea = qApp->desktop()->availableGeometry(screenNum_);
+            QRect workArea = screen->availableVirtualGeometry();
             workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
             const QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
             QPoint dropPos = e->pos();
@@ -1807,6 +1802,23 @@ void DesktopWindow::setScreenNum(int num) {
         screenNum_ = num;
         queueRelayout();
     }
+}
+
+QScreen* DesktopWindow::getDesktopScreen() const {
+    QScreen* desktopScreen = nullptr;
+    if(screenNum_ == -1) {
+        desktopScreen = qApp->primaryScreen();
+    }
+    else {
+        const auto allScreens = qApp->screens();
+        if(allScreens.size() > screenNum_) {
+            desktopScreen = allScreens.at(screenNum_);
+        }
+        if(desktopScreen == nullptr && windowHandle()) {
+            desktopScreen = windowHandle()->screen();
+        }
+    }
+    return desktopScreen;
 }
 
 } // namespace PCManFM
