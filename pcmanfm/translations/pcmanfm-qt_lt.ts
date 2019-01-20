@@ -265,11 +265,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Etikečių tekstas</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="176"/>
-        <source>Select  text color:</source>
-        <translation>Pasirinkite teksto spalvą:</translation>
-    </message>
-    <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Select shadow color:</source>
         <translation>Pasirinkite šešėlio spalvą:</translation>
@@ -283,6 +278,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
         <translation>Bendra</translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="176"/>
+        <source>Select text color:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -1011,99 +1011,99 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="161"/>
         <source>Name of configuration profile</source>
         <translation>Konfigūracijos profilio pavadinimas</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="161"/>
         <source>PROFILE</source>
         <translation>PROFILIS</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="164"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Vykdyti PCManFM kaip tarnybą</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="167"/>
         <source>Quit PCManFM</source>
         <translation>Išeiti iš PCManFM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="170"/>
         <source>Launch desktop manager</source>
         <translation>Paleisti darbalaukio tvarkytuvę</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="174"/>
+        <location filename="../application.cpp" line="173"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Išjungti darbalaukio tvarkytuvę, jeigu ji yra vykdoma</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
+        <location filename="../application.cpp" line="176"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Atverti darbalaukio nuostatų dialogą nurodyto pavadinimo puslapyje</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="176"/>
+        <location filename="../application.cpp" line="191"/>
         <source>NAME</source>
         <translation>PAVADINIMAS</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="179"/>
         <source>Open new window</source>
         <translation>Atverti naują langą</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
+        <location filename="../application.cpp" line="182"/>
         <source>Open Find Files utility</source>
         <translation>Atverti failų paieškos paslaugų programą</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="185"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Nustatyti darbalaukio foną iš paveikslo FAILO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="185"/>
         <source>FILE</source>
         <translation>FAILAS</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="188"/>
         <source>MODE</source>
         <translation>VEIKSENA</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="188"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Nustatyti darbalaukio fono veikseną. VEIKSENA=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="191"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Atverti nuostatų dialogą nurodyto pavadinimo puslapyje</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="194"/>
         <source>Files or directories to open</source>
         <translation>Failai ar katalogai, kuriuos atverti</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="194"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FAILAS1, FAILAS2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="543"/>
-        <location filename="../application.cpp" line="548"/>
+        <location filename="../application.cpp" line="541"/>
+        <location filename="../application.cpp" line="546"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="548"/>
+        <location filename="../application.cpp" line="546"/>
         <source>Terminal emulator is not set.</source>
         <translation>Terminalo emuliatorius nėra nustatytas.</translation>
     </message>
@@ -1195,58 +1195,62 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="294"/>
+        <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
         <translation>Šiukšlinė (Vienas elementas)</translation>
     </message>
-    <message>
-        <location filename="../desktopwindow.cpp" line="297"/>
-        <source>Trash (%1 items)</source>
-        <translation>Šiukšlinė (%1 elementų(-ai))</translation>
+    <message numerus="yes">
+        <location filename="../desktopwindow.cpp" line="296"/>
+        <source>Trash (%Ln items)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="301"/>
+        <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
         <translation>Šiukšlinė (Tuščia)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="316"/>
+        <location filename="../desktopwindow.cpp" line="315"/>
         <source>Home</source>
         <translation>Namai</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="330"/>
+        <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
         <translation>Kompiuteris</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="344"/>
+        <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
         <translation>Tinklas</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="814"/>
+        <location filename="../desktopwindow.cpp" line="813"/>
         <source>Open</source>
         <translation>Atverti</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="819"/>
-        <location filename="../desktopwindow.cpp" line="856"/>
+        <location filename="../desktopwindow.cpp" line="818"/>
+        <location filename="../desktopwindow.cpp" line="855"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Pritvirtinti prie esamos &amp;vietos</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="826"/>
+        <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
         <translation>Išvalyti šiukšlinę</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="882"/>
+        <location filename="../desktopwindow.cpp" line="881"/>
         <source>Hide Desktop Items</source>
         <translation>Slėpti darbalaukio elementus</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="887"/>
+        <location filename="../desktopwindow.cpp" line="886"/>
         <source>Desktop Preferences</source>
         <translation>Darbalaukio nuostatos</translation>
     </message>

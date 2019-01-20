@@ -272,11 +272,6 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
         <translation>Текст ярлыков</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="176"/>
-        <source>Select  text color:</source>
-        <translation>Выбрать цвет текста:</translation>
-    </message>
-    <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Select shadow color:</source>
         <translation>Выбрать цвет тени:</translation>
@@ -413,6 +408,11 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="453"/>
         <source>Advanced</source>
         <translation>Расширенные</translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="176"/>
+        <source>Select text color:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="518"/>
@@ -1013,99 +1013,99 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="161"/>
         <source>Name of configuration profile</source>
         <translation>Имя профиля конфигурации</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="161"/>
         <source>PROFILE</source>
         <translation>ПРОФИЛЬ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="164"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Запустить PCManFM как демон</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="167"/>
         <source>Quit PCManFM</source>
         <translation>Выйти из PCManFM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="170"/>
         <source>Launch desktop manager</source>
         <translation>Запустить менеджер рабочего стола</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="174"/>
+        <location filename="../application.cpp" line="173"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Отключить менеджер рабочего стола, если он запущен</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
+        <location filename="../application.cpp" line="176"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Открыть диалог настроек рабочего стола на странице с указанным именем</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="176"/>
+        <location filename="../application.cpp" line="191"/>
         <source>NAME</source>
         <translation>ИМЯ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="185"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Выбрать обои рабочего стола из ФАЙЛА изображения</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="185"/>
         <source>FILE</source>
         <translation>ФАЙЛ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="188"/>
         <source>MODE</source>
         <translation>РЕЖИМ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="191"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Открыть диалог настроек на странице с указанным именем</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="179"/>
         <source>Open new window</source>
         <translation>Открыть новое окно</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
+        <location filename="../application.cpp" line="182"/>
         <source>Open Find Files utility</source>
         <translation>Открыть утилиту поиска файлов</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="188"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Задать режим обоев рабочего стола. РЕЖИМ=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="194"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[ФАЙЛ1, ФАЙЛ2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="194"/>
         <source>Files or directories to open</source>
         <translation>Файлы или папки для открытия</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="543"/>
-        <location filename="../application.cpp" line="548"/>
+        <location filename="../application.cpp" line="541"/>
+        <location filename="../application.cpp" line="546"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="548"/>
+        <location filename="../application.cpp" line="546"/>
         <source>Terminal emulator is not set.</source>
         <translation>Эмулятор терминала не указан.</translation>
     </message>
@@ -1197,58 +1197,62 @@ A space is also reserved for 3 lines of text.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="294"/>
+        <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
         <translation>Корзина (1 элемент)</translation>
     </message>
-    <message>
-        <location filename="../desktopwindow.cpp" line="297"/>
-        <source>Trash (%1 items)</source>
-        <translation>Корзина (%1 элементов)</translation>
+    <message numerus="yes">
+        <location filename="../desktopwindow.cpp" line="296"/>
+        <source>Trash (%Ln items)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="301"/>
+        <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
         <translation>Корзина (пусто)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="316"/>
+        <location filename="../desktopwindow.cpp" line="315"/>
         <source>Home</source>
         <translation>Home</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="330"/>
+        <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
         <translation>Компьютер</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="344"/>
+        <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
         <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="814"/>
+        <location filename="../desktopwindow.cpp" line="813"/>
         <source>Open</source>
         <translation>Открыть</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="819"/>
-        <location filename="../desktopwindow.cpp" line="856"/>
+        <location filename="../desktopwindow.cpp" line="818"/>
+        <location filename="../desktopwindow.cpp" line="855"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Прикрепить к текущему положению</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="826"/>
+        <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
         <translation>Очистить корзину</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="882"/>
+        <location filename="../desktopwindow.cpp" line="881"/>
         <source>Hide Desktop Items</source>
         <translation>Скрыть значки рабочего стола</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="887"/>
+        <location filename="../desktopwindow.cpp" line="886"/>
         <source>Desktop Preferences</source>
         <translation>Настройки рабочего стола</translation>
     </message>

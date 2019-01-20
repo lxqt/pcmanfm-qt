@@ -264,11 +264,6 @@ Boston, MA 02110-1301 USA.</translation>
         <translation>Etikettekst</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="176"/>
-        <source>Select  text color:</source>
-        <translation>Kies tekstkleur:</translation>
-    </message>
-    <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Select shadow color:</source>
         <translation>Kies schaduwkleur:</translation>
@@ -282,6 +277,11 @@ Boston, MA 02110-1301 USA.</translation>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
         <translation>Algemeen</translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="176"/>
+        <source>Select text color:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -1010,99 +1010,99 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="161"/>
         <source>Name of configuration profile</source>
         <translation>Naam van instellingenprofiel</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="162"/>
+        <location filename="../application.cpp" line="161"/>
         <source>PROFILE</source>
         <translation>PROFIEL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="165"/>
+        <location filename="../application.cpp" line="164"/>
         <source>Run PCManFM as a daemon</source>
         <translation>Draai PCManFM als achtergronddienst</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="167"/>
         <source>Quit PCManFM</source>
         <translation>Sluit PCManFM af</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="170"/>
         <source>Launch desktop manager</source>
         <translation>Start bureaubladbeheerder</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="174"/>
+        <location filename="../application.cpp" line="173"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Schakel bureaubladbeheerder uit als deze draait</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
+        <location filename="../application.cpp" line="176"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Open dialoogvenster met bureaubladvoorkeuren op de pagina met de opgegeven naam</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="176"/>
+        <location filename="../application.cpp" line="191"/>
         <source>NAME</source>
         <translation>NAAM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="179"/>
         <source>Open new window</source>
         <translation>Open nieuw venster</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
+        <location filename="../application.cpp" line="182"/>
         <source>Open Find Files utility</source>
         <translation>Start de bestandenzoeker</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="185"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Stel afbeeldingsBESTAND in als bureaubladachtergrond</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="185"/>
         <source>FILE</source>
         <translation>BESTAND</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="188"/>
         <source>MODE</source>
         <translation>MODUS</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="188"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Stel modus van bureaubladachtergrond in. MODUS=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="191"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Open dialoogvenster met voorkeuren op de pagina met de opgegeven naam</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="194"/>
         <source>Files or directories to open</source>
         <translation>Te openen bestanden of mappen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="194"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[BESTAND1, BESTAND2, enz.]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="543"/>
-        <location filename="../application.cpp" line="548"/>
+        <location filename="../application.cpp" line="541"/>
+        <location filename="../application.cpp" line="546"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="548"/>
+        <location filename="../application.cpp" line="546"/>
         <source>Terminal emulator is not set.</source>
         <translation>Terminalnabootser is niet ingesteld.</translation>
     </message>
@@ -1194,58 +1194,61 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="294"/>
+        <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../desktopwindow.cpp" line="297"/>
-        <source>Trash (%1 items)</source>
-        <translation type="unfinished"></translation>
+    <message numerus="yes">
+        <location filename="../desktopwindow.cpp" line="296"/>
+        <source>Trash (%Ln items)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="301"/>
+        <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="316"/>
+        <location filename="../desktopwindow.cpp" line="315"/>
         <source>Home</source>
         <translation type="unfinished">Persoonlijke map</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="330"/>
+        <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
         <translation type="unfinished">Computer</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="344"/>
+        <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
         <translation type="unfinished">Netwerk</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="814"/>
+        <location filename="../desktopwindow.cpp" line="813"/>
         <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="819"/>
-        <location filename="../desktopwindow.cpp" line="856"/>
+        <location filename="../desktopwindow.cpp" line="818"/>
+        <location filename="../desktopwindow.cpp" line="855"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Blijf op de huidige positie</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="826"/>
+        <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="882"/>
+        <location filename="../desktopwindow.cpp" line="881"/>
         <source>Hide Desktop Items</source>
         <translation>Bureaubladelementen verbergen</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="887"/>
+        <location filename="../desktopwindow.cpp" line="886"/>
         <source>Desktop Preferences</source>
         <translation>Bureaubladvoorkeuren</translation>
     </message>
