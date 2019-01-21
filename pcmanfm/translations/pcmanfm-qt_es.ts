@@ -410,7 +410,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Elija el color del texto:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="518"/>
@@ -1202,11 +1202,9 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>Papelera (%Ln elemento)</numerusform>
+        <numerusform>Papelera (%Ln elementos)</numerusform>
+        </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
