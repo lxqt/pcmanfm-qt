@@ -1535,14 +1535,21 @@ void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) {
     // see DesktopWindow::eventFilter for an explanation
     QRect oldDropRect = dropRect_;
     dropRect_ = QRect();
-    QModelIndex index = listView_->indexAt(e->pos());
-    QModelIndex curIndx = listView_->currentIndex();
-    if(index.isValid() && curIndx.isValid() && curIndx != index // not on self
-       && index.model()) {
-        QVariant data = index.model()->data(index, Fm::FolderModel::Role::FileInfoRole);
-        auto info = data.value<std::shared_ptr<const Fm::FileInfo>>();
-        if(info && (info->isDir() || isTrashCan(info))) {
-            dropRect_ = listView_->rectForIndex(index);
+    QModelIndex dropIndex = listView_->indexAt(e->pos());
+    if(dropIndex.isValid()) {
+        bool dragOnSelf = false;
+        if(e->source() == listView_ && e->keyboardModifiers() == Qt::NoModifier) { // drag source is desktop
+            QModelIndex curIndx = listView_->currentIndex();
+            if(curIndx.isValid() && curIndx == dropIndex) {
+                dragOnSelf = true;
+            }
+        }
+        if(!dragOnSelf && dropIndex.model()) {
+            QVariant data = dropIndex.model()->data(dropIndex, Fm::FolderModel::Role::FileInfoRole);
+            auto info = data.value<std::shared_ptr<const Fm::FileInfo>>();
+            if(info && (info->isDir() || isTrashCan(info))) {
+                dropRect_ = listView_->rectForIndex(dropIndex);
+            }
         }
     }
     if(oldDropRect != dropRect_) {
