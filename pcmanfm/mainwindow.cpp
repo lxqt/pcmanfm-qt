@@ -1046,21 +1046,24 @@ void MainWindow::onFolderUnmounted() {
             Settings& settings = static_cast<Application*>(qApp)->settings();
             if(settings.closeOnUnmount()) {
                 viewFrame->getStackedWidget()->removeWidget(tabPage);
-                delete tabPage;
+                // NOTE: Since Fm::Folder queues a folder reload after emitting the unmount signal,
+                // pending events may be waiting to be delivered at this very moment. Therefore,
+                // if the tab page is deleted immediately, a crash will be imminent for various reasons.
+                tabPage->deleteLater();
             }
             else {
                 tabPage->chdir(Fm::FilePath::homeDir(), viewFrame);
                 updateUIForCurrentPage();
             }
         }
-        else { // wait for all (un-)mount operations to be finished
+        else { // wait for all (un-)mount operations to be finished (otherwise, they might be cancelled)
             for(const MountOperation* op : ops) {
                 connect(op, &QObject::destroyed, tabPage, [this, tabPage, viewFrame] {
                     if(ui.sidePane->findChildren<MountOperation*>().isEmpty()) {
                         Settings& settings = static_cast<Application*>(qApp)->settings();
                         if(settings.closeOnUnmount()) {
                             viewFrame->getStackedWidget()->removeWidget(tabPage);
-                            delete tabPage;
+                            tabPage->deleteLater();
                         }
                         else {
                             tabPage->chdir(Fm::FilePath::homeDir(), viewFrame);
