@@ -412,7 +412,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Выберите цвет текста:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="518"/>
@@ -1199,17 +1199,15 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
-        <translation>Корзина (1 элемент)</translation>
+        <translation>Корзина (1 объект)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>Корзина (%Ln объект)</numerusform>
+        <numerusform>Корзина (%Ln объекта)</numerusform>
+        <numerusform>Корзина (%Ln объектов)</numerusform>
+        </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
