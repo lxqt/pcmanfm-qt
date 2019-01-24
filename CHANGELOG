@@ -1,3 +1,26 @@
+pcmanfm-qt-0.14.0 / 2019-01-25
+==============================
+
+ * Removed the use of libfm C APIs.
+ * An option for showing full names (instead of display names).
+ * Prefer theme icons for view actions.
+ * Shadow hidden icons optionally.
+ * Fixed DND and drop indicator on desktop.
+ * Fixed closing tab on ejecting/unmounting.
+ * Fixed a rare crash on unmounting.
+ * Fixed filtering for detailed list mode
+ * Fixed status-bar message when some selected files were filtered out.
+ * Restart warning bar for Preferences.
+ * A (warning) bar for the root instance.
+ * Transient filter-bar by default.
+ * Added split view.
+ * Delete trashed files with Delete key.
+ * Select the first row of Preferences by default.
+ * Optional Desktop shortcuts (Trash, Home, Computer, and Network). The Trash shortcut is interactive.
+ * A Tool menu item (and shortcut) to copy the full path of the selected file.
+ * Really use the terminal emulator chosen by user when launching desktop files.
+ * Preserve relative positions of Desktop items with DND.
+ * Dropped QDesktopWidget, and used QScreen instead.
 
 pcmanfm-qt-0.13.0 / 2018-05-21
 ==============================
@@ -50,8 +73,8 @@ pcmanfm-qt-0.13.0 / 2018-05-21
   * Tab DND
   * View tool-buttons
 
-0.12.0 / 2017-10-21
-===================
+pcmanfm-qt-0.12.0 / 2017-10-21
+==============================
 
   * Release 0.12.0: Update changelog
   * Set Version
@@ -136,8 +159,8 @@ pcmanfm-qt-0.13.0 / 2018-05-21
   * Use const iterators
   * Checks bookmarks iterators validity (#444)
 
-0.11.3 / 2017-01-14
-===================
+pcmanfm-qt-0.11.3 / 2017-01-14
+==============================
 
   * Release 0.11.3: Update changelog
   * remove 0.11.3 changelog entries
@@ -146,8 +169,8 @@ pcmanfm-qt-0.13.0 / 2018-05-21
   * Add a workaround for the Qt5 bug which causes broken wallpaper background.
   * Update AUTHORS
 
-0.11.2 / 2016-12-21
-===================
+pcmanfm-qt-0.11.2 / 2016-12-21
+==============================
 
   * Release 0.11.2: Update changelog
   * Use static_cast instead of the C style cast
@@ -179,8 +202,8 @@ pcmanfm-qt-0.13.0 / 2018-05-21
   * Add Catalan translations
   * Added Brazilian Portuguese Translation (pt_BR)
 
-0.11.1 / 2016-09-24
-===================
+pcmanfm-qt-0.11.1 / 2016-09-24
+==============================
 
   * Release 0.11.1: Add changelog
   * Bump version to 0.11.1 (#399)
@@ -208,8 +231,8 @@ pcmanfm-qt-0.13.0 / 2018-05-21
   * Add setting for Desktop con size
   * Fix a few compiler warnings
 
-0.11.0 / 2016-03-13
-===================
+pcmanfm-qt-0.11.0 / 2016-03-13
+==============================
 
   * Switch automatically to newly opened tabs
   * Fixes libfm-qt dependency contradiction on README.md
@@ -247,8 +270,8 @@ pcmanfm-qt-0.13.0 / 2018-05-21
   * Add config values for customizing "places" (not implemented yet).
   * Updated Russian translation Removed ru_RU files
 
-0.10.1 / 2015-12-05
-===================
+pcmanfm-qt-0.10.1 / 2015-12-05
+==============================
 
   * hide 'Create New...' menu for files
   * Russian translation update
