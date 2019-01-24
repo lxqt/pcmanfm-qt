@@ -7,6 +7,7 @@ pcmanfm-qt-0.14.0 / 2019-01-25
  * Shadow hidden icons optionally.
  * Fixed DND and drop indicator on desktop.
  * Fixed closing tab on ejecting/unmounting.
+ * Fixed a rare crash on unmounting.
  * Fixed filtering for detailed list mode
  * Fixed status-bar message when some selected files were filtered out.
  * Restart warning bar for Preferences.
@@ -19,6 +20,7 @@ pcmanfm-qt-0.14.0 / 2019-01-25
  * A Tool menu item (and shortcut) to copy the full path of the selected file.
  * Really use the terminal emulator chosen by user when launching desktop files.
  * Preserve relative positions of Desktop items with DND.
+ * Dropped QDesktopWidget, and used QScreen instead.
 
 pcmanfm-qt-0.13.0 / 2018-05-21
 ==============================
