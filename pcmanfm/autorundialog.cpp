@@ -45,6 +45,8 @@ AutoRunDialog::AutoRunDialog(GVolume* volume, GMount* mount, QWidget* parent, Qt
     ui.listWidget->addItem(item);
 
     g_mount_guess_content_type(mount, TRUE, cancellable, (GAsyncReadyCallback)onContentTypeFinished, this);
+
+    connect(ui.listWidget, &QListWidget::itemDoubleClicked, this, &QDialog::accept);
 }
 
 AutoRunDialog::~AutoRunDialog() {
