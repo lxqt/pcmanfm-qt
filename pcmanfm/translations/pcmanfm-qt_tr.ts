@@ -29,7 +29,8 @@
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
         <translation>Programcı:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;</translation>
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="109"/>
@@ -105,7 +106,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Gerçekleştireceğiniz eylemi seçiniz:</translation>
+        <translation>Gerçekleştirmek istediğiniz eylemi seçiniz:</translation>
     </message>
 </context>
 <context>
@@ -118,7 +119,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation># aşağıdakinden başlayarak sayılarla değiştirilecek:</translation>
+        <translation># şununla başlayarak sayılarla değiştirilecek:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
@@ -222,7 +223,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="52"/>
         <source>Wallpaper mode:</source>
-        <translation>Duvarkağıdı kipi:</translation>
+        <translation>Duvar kağıdı kipi:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="65"/>
@@ -282,7 +283,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Metin rengini seç:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -292,7 +293,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation>Minimum parça marjları:</translation>
+        <translation>En az öge boyutları:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="238"/>
@@ -325,27 +326,27 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation>Slayt Gösterimi</translation>
+        <translation>Slayt Gösterisi</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation>Slayt Gösterimi etkinleştir</translation>
+        <translation>Slayt Gösterisini Etkinleştir</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation>Duvarkağıdı klasörü:</translation>
+        <translation>Duvar kağıdı resim dizini:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
         <source>Browse</source>
-        <translation>Ara</translation>
+        <translation>Gözat</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="347"/>
         <source> hour(s)</source>
-        <translation type="unfinished"> .saat(ler)</translation>
+        <translation> .saat(ler)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
@@ -370,37 +371,37 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation>Duvarkağıdı klasörü</translation>
+        <translation>Duvar kağıdı dizini</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation>Duvarkağıdı rasgele seçilsin</translation>
+        <translation>Duvar kağıdı rasgele seçilsin</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Kısayolları Göster</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">Ev Dizini</translation>
+        <translation>Ev Dizini</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Çöp Kutusu</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">Bilgisayar</translation>
+        <translation>Bilgisayar</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">Ağ</translation>
+        <translation>Ağ</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -523,7 +524,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="360"/>
         <source>&amp;Trash</source>
-        <translation>&amp;Çöp</translation>
+        <translation>&amp;Çöp Kutusu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="365"/>
@@ -628,22 +629,22 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="498"/>
         <source>&amp;By File Name</source>
-        <translation>&amp;Dosya Adı</translation>
+        <translation>&amp;Dosya Adına Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="506"/>
         <source>By &amp;Modification Time</source>
-        <translation>&amp;Değiştirme Zamanı</translation>
+        <translation>&amp;Değiştirme Zamanına Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="514"/>
         <source>By File &amp;Type</source>
-        <translation>&amp;Dosya Tipi</translation>
+        <translation>&amp;Dosya Türüne Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="522"/>
         <source>By &amp;Owner</source>
-        <translation>&amp;Sahiplik</translation>
+        <translation>&amp;Sahibine Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="530"/>
@@ -658,12 +659,12 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="637"/>
         <source>&amp;Case Sensitive</source>
-        <translation>&amp;Alfabetik</translation>
+        <translation>&amp;Büyük/Küçük Harf Duyarlı</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="645"/>
         <source>By File &amp;Size</source>
-        <translation>Dosya &amp;Boyutu</translation>
+        <translation>Dosya &amp;Boyutuna Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="650"/>
@@ -688,42 +689,42 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtre Çubuğunu &amp;Göster/Odakla</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Süzgeç Çubuğunu Göster</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Görünümü &amp;Böl</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Görünümü Böl</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Tüm Yolu &amp;Kopyala</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
@@ -733,12 +734,12 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Tüm Süzgeçleri &amp;Temizle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="727"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="736"/>
@@ -773,17 +774,17 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="810"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Toplu Yeniden Adlandır</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="813"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished">Çoklu yeniden adlandırma</translation>
+        <translation>Toplu Yeniden Adlandır</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="750"/>
@@ -919,7 +920,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Open &amp;Terminal</source>
-        <translation>Uçbirim &amp;Aç</translation>
+        <translation>Uçbirimi &amp;Aç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="666"/>
@@ -929,7 +930,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="671"/>
         <source>Open as &amp;Root</source>
-        <translation>&amp;Yetkili Olarak PCManFM Aç</translation>
+        <translation>&amp;Yetkili Olarak Aç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
@@ -949,7 +950,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="705"/>
         <source>&amp;Find Files</source>
-        <translation>Dosya &amp;Bul</translation>
+        <translation>Dosyaları &amp;Bul</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="708"/>
@@ -990,7 +991,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="180"/>
         <source>&amp;Bookmarks</source>
-        <translation>&amp;Yer imleri</translation>
+        <translation>&amp;Yer İmleri</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="187"/>
@@ -1033,7 +1034,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../application.cpp" line="170"/>
         <source>Launch desktop manager</source>
-        <translation>Masaüstü yöneticiyi başlat</translation>
+        <translation>Masaüstü yöneticisini başlat</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="173"/>
@@ -1197,39 +1198,38 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Çöp Kutusu (Bir öge)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>Çöp Kutusu (%Ln öge)</numerusform>
+        <numerusform>Çöp Kutusu (%Ln öge)</numerusform>
+        </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Çöp Kutusu (Boş)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
         <source>Home</source>
-        <translation type="unfinished">Ev Dizini</translation>
+        <translation>Ev Dizini</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
-        <translation type="unfinished">Bilgisayar</translation>
+        <translation>Bilgisayar</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
-        <translation type="unfinished">Ağ</translation>
+        <translation>Ağ</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="813"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Aç</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="818"/>
@@ -1240,12 +1240,12 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Çöpü Boşalt</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Masaüstü Ögelerini Gizle</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="886"/>
@@ -1258,7 +1258,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Süzgeç:</translation>
     </message>
 </context>
 <context>
@@ -1266,7 +1266,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">Metni temizle (Ctrl+K)</translation>
+        <translation>Metni temizle (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1367,7 +1367,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
         <location filename="../tabpage.cpp" line="613"/>
         <location filename="../tabpage.cpp" line="629"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Bağlantı</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="643"/>
@@ -1431,7 +1431,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>En son oluşturulan dosyaları seç</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1583,7 +1583,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayarların etkin olabilmesi için istenilen uygulama yeniden başlatılacak</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
@@ -1780,22 +1780,22 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Dosyalar yeniden adlandırılıyor...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>İptal</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Uyarı</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeniden isimlendirme iptal edildi.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
@@ -1806,12 +1806,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeniden isimlendirilecek dosya yok.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bazı dosyalar yeniden isimlendirilemedi.</translation>
     </message>
 </context>
 </TS>
