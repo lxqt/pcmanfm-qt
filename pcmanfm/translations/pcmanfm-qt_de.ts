@@ -107,7 +107,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Bitte wählen Sie die Handlung, welche Sie ausführen möchten:</translation>
+        <translation>Bitte wählen Sie, welche Handlung Sie ausführen möchten:</translation>
     </message>
 </context>
 <context>
@@ -264,7 +264,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="138"/>
         <source>Label Text</source>
-        <translation>Text</translation>
+        <translation>Beschriftung</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
@@ -435,7 +435,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../main-win.ui" line="265"/>
         <source>Alt+Up</source>
-        <translation>Alt+Bild hoch</translation>
+        <translation>Alt+Bild-Auf</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="277"/>
