@@ -382,7 +382,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Verknüpfungen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
