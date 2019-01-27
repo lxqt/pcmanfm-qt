@@ -282,7 +282,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecionar cor do texto:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -1203,11 +1203,9 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>Lixeira (%Ln item)</numerusform>
+        <numerusform>Lixeira (%Ln itens)</numerusform>
+        </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
