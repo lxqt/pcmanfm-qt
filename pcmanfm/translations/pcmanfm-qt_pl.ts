@@ -282,7 +282,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolor tekstu:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -380,27 +380,27 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Widoczne skróty</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">Katalog użytkownika</translation>
+        <translation>Katalog domowy</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Kosz</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">Komputer</translation>
+        <translation>Komputer</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">Sieć</translation>
+        <translation>Sieć</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -653,7 +653,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokaż/zaznacz pa&amp;sek filtrowania</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
@@ -683,12 +683,12 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiuj pełną ś&amp;cieżkę</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
@@ -1197,41 +1197,39 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kosz (jeden element)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>Kosz (%Ln element)</numerusform>
+        <numerusform>Kosz (%Ln elementy)</numerusform>
+        <numerusform>Kosz (%Ln elementów)</numerusform>
+        </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kosz (pusty)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
         <source>Home</source>
-        <translation type="unfinished">Katalog użytkownika</translation>
+        <translation>Katalog domowy</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
-        <translation type="unfinished">Komputer</translation>
+        <translation>Komputer</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
-        <translation type="unfinished">Sieć</translation>
+        <translation>Sieć</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="813"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="818"/>
@@ -1242,7 +1240,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Pusty kosz</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
@@ -1276,7 +1274,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Główna instancja</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
