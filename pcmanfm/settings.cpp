@@ -580,6 +580,9 @@ static const char* sortColumnToString(Fm::FolderModel::ColumnId value) {
     case Fm::FolderModel::ColumnFileOwner:
         ret = "owner";
         break;
+    case Fm::FolderModel::ColumnFileGroup:
+        ret = "group";
+        break;
     }
     return ret;
 }
@@ -600,6 +603,9 @@ static Fm::FolderModel::ColumnId sortColumnFromString(const QString str) {
     }
     else if(str == "owner") {
         ret = Fm::FolderModel::ColumnFileOwner;
+    }
+    else if(str == "group") {
+        ret = Fm::FolderModel::ColumnFileGroup;
     }
     else {
         ret = Fm::FolderModel::ColumnFileName;

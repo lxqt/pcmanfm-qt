@@ -146,6 +146,7 @@ protected Q_SLOTS:
     void on_actionByFileName_triggered(bool checked);
     void on_actionByMTime_triggered(bool checked);
     void on_actionByOwner_triggered(bool checked);
+    void on_actionByGroup_triggered(bool checked);
     void on_actionByFileType_triggered(bool checked);
     void on_actionByFileSize_triggered(bool checked);
     void on_actionAscending_triggered(bool checked);
