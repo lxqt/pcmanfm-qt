@@ -106,6 +106,7 @@
      <addaction name="actionByFileSize"/>
      <addaction name="actionByFileType"/>
      <addaction name="actionByOwner"/>
+     <addaction name="actionByGroup"/>
      <addaction name="separator"/>
      <addaction name="actionAscending"/>
      <addaction name="actionDescending"/>
@@ -520,6 +521,14 @@
    </property>
    <property name="text">
     <string>By &amp;Owner</string>
+   </property>
+  </action>
+  <action name="actionByGroup">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>By &amp;Group</string>
    </property>
   </action>
   <action name="actionFolderFirst">

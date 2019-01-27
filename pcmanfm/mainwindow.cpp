@@ -221,6 +221,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     group->addAction(ui.actionByFileSize);
     group->addAction(ui.actionByFileType);
     group->addAction(ui.actionByOwner);
+    group->addAction(ui.actionByGroup);
 
     group = new QActionGroup(ui.menuSorting);
     group->setExclusive(true);
@@ -848,6 +849,10 @@ void MainWindow::on_actionByOwner_triggered(bool /*checked*/) {
     currentPage()->sort(Fm::FolderModel::ColumnFileOwner, currentPage()->sortOrder());
 }
 
+void MainWindow::on_actionByGroup_triggered(bool /*checked*/) {
+    currentPage()->sort(Fm::FolderModel::ColumnFileGroup, currentPage()->sortOrder());
+}
+
 void MainWindow::on_actionByFileSize_triggered(bool /*checked*/) {
     currentPage()->sort(Fm::FolderModel::ColumnFileSize, currentPage()->sortOrder());
 }
@@ -1191,6 +1196,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
         sortActions[Fm::FolderModel::ColumnFileSize] = ui.actionByFileSize;
         sortActions[Fm::FolderModel::ColumnFileType] = ui.actionByFileType;
         sortActions[Fm::FolderModel::ColumnFileOwner] = ui.actionByOwner;
+        sortActions[Fm::FolderModel::ColumnFileGroup] = ui.actionByGroup;
         sortActions[tabPage->sortColumn()]->setChecked(true);
 
         if(tabPage->sortOrder() == Qt::AscendingOrder) {
