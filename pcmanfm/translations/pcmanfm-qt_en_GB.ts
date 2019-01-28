@@ -59,7 +59,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="100"/>
         <source>License</source>
-        <translation></translation>
+        <translation>Licence</translation>
     </message>
 </context>
 <context>
@@ -214,7 +214,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="85"/>
         <source>Select background color:</source>
-        <translation></translation>
+        <translation>Select background colour:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="94"/>
@@ -249,7 +249,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Select shadow color:</source>
-        <translation></translation>
+        <translation>Select shadow colour:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="202"/>
@@ -264,7 +264,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Select text colour:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -356,7 +356,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source>Randomize the slide show</source>
-        <translation></translation>
+        <translation>Randomise the slide show</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
@@ -1140,7 +1140,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
-        <translation></translation>
+        <translation>Fill with background colour only</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
@@ -1155,7 +1155,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
-        <translation></translation>
+        <translation>Centre on the screen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
@@ -1183,11 +1183,9 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>Trash (%Ln item)</numerusform>
+        <numerusform>Trash (%Ln items)</numerusform>
+        </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
