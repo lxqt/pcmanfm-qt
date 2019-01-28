@@ -391,7 +391,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="518"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation></translation>
+        <translation>Show menus provided by window managers when the desktop is clicked</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="453"/>
@@ -1117,12 +1117,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation></translation>
+        <translation>WebDAV</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation></translation>
+        <translation>Secure WebDAV</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1393,7 +1393,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation></translation>
+        <translation>Behaviour</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
@@ -1566,7 +1566,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation></translation>
+        <translation>Requires application restart to fully take effect</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
@@ -1647,7 +1647,8 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation></translation>
+        <translation>When unchecked, the tab bar will be shown
+only if there is more than one tab.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="796"/>
@@ -1682,12 +1683,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="621"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation></translation>
+        <translation>Mount removable media automatically when inserted</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="628"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation></translation>
+        <translation>Show available options for removable media when inserted</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
