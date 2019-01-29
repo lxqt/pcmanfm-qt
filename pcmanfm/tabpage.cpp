@@ -130,6 +130,16 @@ TabPage::TabPage(QWidget* parent):
     connect(folderView_, &View::clickedBack, this, &TabPage::backwardRequested);
     connect(folderView_, &View::clickedForward, this, &TabPage::forwardRequested);
 
+    // customization of columns of detailed list view
+    folderView_->setCustomColumnWidths(settings.getCustomColumnWidths());
+    folderView_->setHiddenColumns(settings.getHiddenColumns());
+    connect(folderView_, &View::columnResizedByUser, this, [this, &settings]() {
+        settings.setCustomColumnWidths(folderView_->getCustomColumnWidths());
+    });
+    connect(folderView_, &View::columnHiddenByUser, this, [this, &settings]() {
+        settings.setHiddenColumns(folderView_->getHiddenColumns());
+    });
+
     proxyFilter_ = new ProxyFilter();
     proxyModel_->addFilter(proxyFilter_);
 

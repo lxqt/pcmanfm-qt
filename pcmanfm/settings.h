@@ -878,6 +878,36 @@ public:
         searchhHidden_ = hidden;
     }
 
+    QList<int> getCustomColumnWidths() const {
+        QList<int> l;
+        for(auto width : qAsConst(customColumnWidths_)) {
+            l << width.toInt();
+        }
+        return l;
+    }
+
+    void setCustomColumnWidths(const QList<int> &widths) {
+        customColumnWidths_.clear();
+        for(auto width : widths) {
+            customColumnWidths_ << QVariant(width);
+        }
+    }
+
+    QList<int> getHiddenColumns() const {
+        QList<int> l;
+        for(auto width : qAsConst(hiddenColumns_)) {
+            l << width.toInt();
+        }
+        return l;
+    }
+
+    void setHiddenColumns(const QList<int> &columns) {
+        hiddenColumns_.clear();
+        for(auto column : columns) {
+            hiddenColumns_ << QVariant(column);
+        }
+    }
+
 private:
     int toIconSize(int size, IconType type) const;
 
@@ -984,6 +1014,10 @@ private:
     bool searchContentRegexp_;
     bool searchRecursive_;
     bool searchhHidden_;
+
+    // detailed list columns
+    QList<QVariant> customColumnWidths_;
+    QList<QVariant> hiddenColumns_;
 };
 
 }
