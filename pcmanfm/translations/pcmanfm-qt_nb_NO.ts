@@ -1278,38 +1278,38 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>Hide menu bar</source>
-        <translation></translation>
+        <translation>Skjul menylinje</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="662"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation></translation>
+        <translation>Dette vil skjule menylinjen helt. Bruk Ctrl+M for å vise den igjen.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="984"/>
         <source>Version: %1</source>
-        <translation></translation>
+        <translation>Versjon: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1808"/>
         <source>&amp;Move to Trash</source>
-        <translation></translation>
+        <translation>Flytt til &amp;papirkurven</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1808"/>
         <source>&amp;Delete</source>
-        <translation></translation>
+        <translation>&amp;Slett</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1865"/>
         <location filename="../mainwindow.cpp" line="1873"/>
         <source>Error</source>
-        <translation></translation>
+        <translation>Feil</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1873"/>
         <source>Switch user command is not set.</source>
-        <translation></translation>
+        <translation>Skiftbrukerkommando er ikke innstilt.</translation>
     </message>
 </context>
 <context>
@@ -1317,22 +1317,22 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="196"/>
         <source>Icon View</source>
-        <translation></translation>
+        <translation>Symbolvisning</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="197"/>
         <source>Compact View</source>
-        <translation></translation>
+        <translation>Kompakt visning</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Thumbnail View</source>
-        <translation></translation>
+        <translation>Minibildevisning</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Detailed List View</source>
-        <translation></translation>
+        <translation>Detaljert listevisning</translation>
     </message>
 </context>
 <context>
@@ -1340,61 +1340,55 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../tabpage.cpp" line="407"/>
         <source>Error</source>
-        <translation></translation>
+        <translation>Feil</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="416"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation></translation>
+        <translation>Ledig plass: %1 (Totalt: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="433"/>
         <source>%n item(s)</source>
-        <translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n objekt</numerusform>
+        <numerusform>%n objekter</numerusform>
+        </translation></message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="435"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform> (%n skjult)</numerusform>
+        <numerusform> (%n skjulte)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="440"/>
         <location filename="../tabpage.cpp" line="613"/>
         <location filename="../tabpage.cpp" line="629"/>
         <source>Link to</source>
-        <translation></translation>
+        <translation>Lenke til</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="643"/>
         <source>%n item(s) selected</source>
-        <translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n valgt objekt</numerusform>
+        <numerusform>%n valgte objekter</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
     <message>
         <location filename="../view.cpp" line="102"/>
         <source>Open in New T&amp;ab</source>
-        <translation></translation>
+        <translation>Åpne i ny f&amp;ane</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="106"/>
         <source>Open in New Win&amp;dow</source>
-        <translation></translation>
+        <translation>Åpne i nytt &amp;vindu</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="114"/>
         <source>Open in Termina&amp;l</source>
-        <translation></translation>
+        <translation>Åpne i termina&amp;l</translation>
     </message>
 </context>
 <context>
@@ -1407,58 +1401,58 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation></translation>
+        <translation>Brukergrensesnitt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation></translation>
+        <translation>Oppførsel</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="548"/>
         <source>Thumbnail</source>
-        <translation></translation>
+        <translation>Minibilde</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation></translation>
+        <translation>Volum</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation></translation>
+        <translation>Avansert</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation></translation>
+        <translation>Velg nylig opprettede filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
         <source>Icons</source>
-        <translation></translation>
+        <translation>Symboler</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="262"/>
         <source>Size of big icons:</source>
-        <translation></translation>
+        <translation>Størrelse på store symboler:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="279"/>
         <source>Size of small icons:</source>
-        <translation></translation>
+        <translation>Størrelse på små symboler:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Size of thumbnails:</source>
-        <translation></translation>
+        <translation>Størrelse på minibilder:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
-        <translation></translation>
+        <translation>Størrelse på symboler i sidepanelet:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="242"/>
@@ -1468,183 +1462,183 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>Window</source>
-        <translation></translation>
+        <translation>Vindu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="479"/>
         <source>Always show the tab bar</source>
-        <translation></translation>
+        <translation>Alltid vis fanelinjen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="486"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation></translation>
+        <translation>Vis lukkeknapper i faner	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="493"/>
         <source>Remember the size of the last closed window</source>
-        <translation></translation>
+        <translation>Husk størrelsen på det sist lukkede vinduet</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="500"/>
         <source>Default width of new windows:</source>
-        <translation></translation>
+        <translation>Standardbredde for nye vinduer:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="514"/>
         <source>Default height of new windows:</source>
-        <translation></translation>
+        <translation>Standardhøyde for nye vinduer:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation></translation>
+        <translation>Gjennomsyn</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>Open files with single click</source>
-        <translation></translation>
+        <translation>Åpne filer med ett klikk</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="100"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation></translation>
+        <translation>Forsinkelse for automarkering i ettklikksmodus (0 for å deaktivere)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="107"/>
         <source>Default view mode:</source>
-        <translation></translation>
+        <translation>Standardvisning:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="120"/>
         <source> sec</source>
-        <translation></translation>
+        <translation> sek.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
         <source>File Operations</source>
-        <translation></translation>
+        <translation>Filhandlinger</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Confirm before deleting files</source>
-        <translation></translation>
+        <translation>Bekreft før sletting av filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation></translation>
+        <translation>Flytt slettede filer til papirkurven i stedet for å slette dem fra disken.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="581"/>
         <source>Show thumbnails of files</source>
-        <translation></translation>
+        <translation>Vis minibilder av filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Only show thumbnails for local files</source>
-        <translation></translation>
+        <translation>Bare vis minibilder for lokale filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation></translation>
+        <translation>Visning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="130"/>
         <source>Bookmarks:</source>
-        <translation></translation>
+        <translation>Bokmerker:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="138"/>
         <source>Open in current tab</source>
-        <translation></translation>
+        <translation>Åpne i nåværende fane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="143"/>
         <source>Open in new tab</source>
-        <translation></translation>
+        <translation>Åpne i ny fane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="148"/>
         <source>Open in new window</source>
-        <translation></translation>
+        <translation>Åpne i nytt vindu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation></translation>
+        <translation>Slett filer på uttagbare medier i stedet for å legge dem i papirkurven</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation></translation>
+        <translation>Bekreft før filer flyttes til papirkurven</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation></translation>
+        <translation>Krever omstart av programmet for å tre helt i kraft</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation></translation>
+        <translation>Kjør kjørbare filer uten å spør</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
         <location filename="../preferences.ui" line="269"/>
         <source>Used by Icon View</source>
-        <translation></translation>
+        <translation>Brukt av symbolvisning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="276"/>
         <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation></translation>
+        <translation>Brukt av kompaktvisning og detaljert listevisning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="293"/>
         <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
-        <translation></translation>
+        <translation>Brukt av minibildevisning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
         <source>User interface</source>
-        <translation></translation>
+        <translation>Brukergrensesnitt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
-        <translation></translation>
+        <translation>Behandle sikkerhetskopifiler som skjulte</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="346"/>
         <source>Always show full file names</source>
-        <translation></translation>
+        <translation>Alltid vis fulle filnavn</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation></translation>
+        <translation>Vis skyggelagte symboler for skjulte filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
         <source>Minimum item margins in icon view:</source>
-        <translation></translation>
+        <translation>Minimum marg i symbolvisning:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="386"/>
         <source>3 px by default.</source>
-        <translation></translation>
+        <translation>Standard er 3 punkter.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <location filename="../preferences.ui" line="413"/>
         <source> px</source>
-        <translation></translation>
+        <translation> p</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
@@ -1655,124 +1649,127 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
         <location filename="../preferences.ui" line="409"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation></translation>
+        <translation>3 punkter er standard.
+Et mellomrom er også reservert for tre linjers tekst.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="426"/>
         <source>Lock</source>
-        <translation></translation>
+        <translation>Lås</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation></translation>
+        <translation>Når ikke avkrysset vil fanelinjen bare vises
+hvis det er mer enn en fane.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation></translation>
+        <translation>Programmet må omstartes for at endringer skal tre i kraft.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="554"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation></translation>
+        <translation>Ikke lag minibilder for bildefiler større enn:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="561"/>
         <source> KB</source>
-        <translation></translation>
+        <translation> kB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="578"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation></translation>
+        <translation>Trenger ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="608"/>
         <source>Auto Mount</source>
-        <translation></translation>
+        <translation>Automontering</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="614"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation></translation>
+        <translation>Monter automatisk monterbare disker ved programstart</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation></translation>
+        <translation>Monter automatisk uttagbare medier når de settes inn</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="628"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation></translation>
+        <translation>Vis valg for uttagbare medier når de settes inn</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <source>When removable medium unmounted:</source>
-        <translation></translation>
+        <translation>Når et uttagbart medium avmonteres:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="644"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation></translation>
+        <translation>Lukk &amp;faner der uttagbare medier er åpne</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation></translation>
+        <translation>Skift mappe i fanen til h&amp;jemmemappen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
         <source>Programs</source>
-        <translation></translation>
+        <translation>Programmer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="687"/>
         <source>Terminal emulator:</source>
-        <translation></translation>
+        <translation>Terminalemulator:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="694"/>
         <source>Switch &amp;user command:</source>
-        <translation></translation>
+        <translation>Skiftbr&amp;uker-kommando:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="707"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation></translation>
+        <translation>Eksempler: &quot;xterm -e %s&quot; for terminal eller &quot;gksu %s&quot; for å bytte bruker.
+%s = kommandoen du vil kjøre med terminalen eller med su.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="718"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation></translation>
+        <translation>Komprimeringsin&amp;tegrasjon:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="741"/>
         <source>Templates</source>
-        <translation></translation>
+        <translation>Maler</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="747"/>
         <source>Show only user defined templates in menu</source>
-        <translation></translation>
+        <translation>Vis bare brukerdefinerte maler i meny</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Show only one template for each MIME type</source>
-        <translation></translation>
+        <translation>Vis bare en mal for hver MIME-type</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="761"/>
         <source>Run default application after creation from template</source>
-        <translation></translation>
+        <translation>Kjør standardprogram etter oppretelse fra mal</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="329"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation></translation>
+        <translation>Bruk SI desimalprefiks i stedet for IEC binærprefiks</translation>
     </message>
 </context>
 <context>
@@ -1780,22 +1777,22 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation></translation>
+        <translation>Gir nytt navn til filer..</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation></translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation></translation>
+        <translation>Advarsel</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation></translation>
+        <translation>Bytte av navn er avbrutt.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
@@ -1806,12 +1803,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation></translation>
+        <translation>Ingen fil kunne gis nytt navn.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation></translation>
+        <translation>Noen filler kunne ikke gis nytt navn.</translation>
     </message>
 </context>
 </TS>
