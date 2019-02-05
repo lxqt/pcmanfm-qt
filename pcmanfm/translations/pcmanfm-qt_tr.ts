@@ -794,7 +794,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalıcı &amp;filtre çubuğu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="758"/>
@@ -1274,7 +1274,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kök Örneği</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -1588,7 +1588,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Yürütülebilir dosyaları istemsiz başlat</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1665,12 +1665,13 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
         <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation>Seçimi kaldırdığınızda,sekme çubuğu  yalnızca birden fazla sekme var ise görünür</translation>
+        <translation>Seçimi kaldırdığınızda, sekme çubuğu yalnızca
+birden fazla sekme var ise görünür.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Değişikliklerin etkili olması için uygulamanın yeniden başlatılması gerekiyor.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="554"/>
@@ -1680,7 +1681,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="561"/>
         <source> KB</source>
-        <translation>.KB</translation>
+        <translation> .KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="578"/>
