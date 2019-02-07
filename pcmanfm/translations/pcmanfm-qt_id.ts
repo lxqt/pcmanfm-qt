@@ -283,7 +283,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih warna teks:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -381,7 +381,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Pintasan yang Terlihat</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
@@ -391,7 +391,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Tempat Sampah</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
@@ -719,12 +719,12 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Salin Path Lengkap</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
@@ -1199,7 +1199,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Sampah (Satu barang)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
@@ -1211,7 +1211,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Sampah (Kosong)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
@@ -1231,7 +1231,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="813"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="818"/>
@@ -1242,7 +1242,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Kosongkan Tempat Sampah</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
@@ -1276,7 +1276,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Root Instance</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
