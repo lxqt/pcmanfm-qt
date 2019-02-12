@@ -781,7 +781,7 @@ void MainWindow::on_actionNewFolder_triggered() {
     if(TabPage* tabPage = currentPage()) {
         auto dirPath = tabPage->folderView()->path();
         if(dirPath) {
-            createFileOrFolder(CreateNewFolder, dirPath);
+            createFileOrFolder(CreateNewFolder, dirPath, nullptr, this);
         }
     }
 }
@@ -790,7 +790,7 @@ void MainWindow::on_actionNewBlankFile_triggered() {
     if(TabPage* tabPage = currentPage()) {
         auto dirPath = tabPage->folderView()->path();
         if(dirPath) {
-            createFileOrFolder(CreateNewTextFile, dirPath);
+            createFileOrFolder(CreateNewTextFile, dirPath, nullptr, this);
         }
     }
 }
@@ -1452,7 +1452,7 @@ void MainWindow::onSidePaneOpenFolderInTerminalRequested(const Fm::FilePath &pat
 }
 
 void MainWindow::onSidePaneCreateNewFolderRequested(const Fm::FilePath &path) {
-    createFileOrFolder(CreateNewFolder, path);
+    createFileOrFolder(CreateNewFolder, path, nullptr, this);
 }
 
 void MainWindow::onSidePaneModeChanged(Fm::SidePane::Mode mode) {

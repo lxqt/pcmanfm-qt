@@ -833,10 +833,10 @@ void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm::File
                         }
                         g_key_file_free(kf);
                         // empty Trash on clicking the item
-                        connect(action, &QAction::triggered, this, [] {
+                        connect(action, &QAction::triggered, this, [this, &settings] {
                             Fm::FilePathList files;
                             files.push_back(Fm::FilePath::fromUri("trash:///"));
-                            Fm::FileOperation::deleteFiles(std::move(files));
+                            Fm::FileOperation::deleteFiles(std::move(files), settings.confirmDelete(), this);
                         });
                     }
                     menu->exec(QCursor::pos());
@@ -1340,10 +1340,10 @@ void DesktopWindow::onDeleteActivated() {
         Settings& settings = static_cast<Application*>(qApp)->settings();
         bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
         if(settings.useTrash() && !shiftPressed) {
-            Fm::FileOperation::trashFiles(paths, settings.confirmTrash());
+            Fm::FileOperation::trashFiles(paths, settings.confirmTrash(), this);
         }
         else {
-            Fm::FileOperation::deleteFiles(paths, settings.confirmDelete());
+            Fm::FileOperation::deleteFiles(paths, settings.confirmDelete(), this);
         }
     }
 }
@@ -1588,7 +1588,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                             if(!paths.empty()) {
                                 e->accept();
                                 Settings& settings = static_cast<Application*>(qApp)->settings();
-                                Fm::FileOperation::trashFiles(paths, settings.confirmTrash());
+                                Fm::FileOperation::trashFiles(paths, settings.confirmTrash(), this);
                                 // remove the drop indicator
                                 dropRect_ = QRect();
                                 listView_->viewport()->update();
@@ -1666,7 +1666,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                         if(!paths.empty()) {
                             e->accept();
                             Settings& settings = static_cast<Application*>(qApp)->settings();
-                            Fm::FileOperation::trashFiles(paths, settings.confirmTrash());
+                            Fm::FileOperation::trashFiles(paths, settings.confirmTrash(), this);
                             return;
                         }
                     }
