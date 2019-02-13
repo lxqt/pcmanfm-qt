@@ -844,7 +844,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="568"/>
         <source>Alt+Left</source>
-        <translation>Alt+Frecha esquerda</translation>
+        <translation>Alt+Esquerda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="577"/>
@@ -859,7 +859,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="583"/>
         <source>Alt+Right</source>
-        <translation>Alt+Frecha dereita</translation>
+        <translation>Alt+Dereita</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="600"/>
