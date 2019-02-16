@@ -294,7 +294,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation>Minimaler Rand der Objekte:</translation>
+        <translation>Minimaler Objektabstand:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="238"/>
@@ -317,7 +317,7 @@ Boston, MA  02110-1301, USA.</translation>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>Standardwert 1 px.
-Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translation>
+Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="278"/>
