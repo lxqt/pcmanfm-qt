@@ -337,7 +337,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation>Hintergrundbildordner:</translation>
+        <translation>Desktophintergrund-Ordner</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
@@ -372,7 +372,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation>Hintergrundbild-Ordner</translation>
+        <translation>Desktophintergrund-Ordner</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
@@ -1435,7 +1435,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation>Neu erstellte Dateien auswählen</translation>
+        <translation>Markiere neu erstellte Dateien</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
