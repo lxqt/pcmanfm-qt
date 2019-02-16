@@ -1275,7 +1275,7 @@ Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translat
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation>Wurzelinstanz</translation>
+        <translation>Instanz mit Administratorrechten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
