@@ -102,7 +102,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation>Erkennungsvorgang...</translation>
+        <translation>Erkennung läuft...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
