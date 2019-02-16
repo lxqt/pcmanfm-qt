@@ -107,7 +107,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Bitte wählen Sie, welche Handlung Sie ausführen möchten:</translation>
+        <translation>Bitte wählen Sie die Aktion aus, die Sie ausführen möchten:</translation>
     </message>
 </context>
 <context>
@@ -153,7 +153,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation>Spezifiziere rechnerfernen Ordner um zu Verbinden</translation>
+        <translation>Geben Sie den Remote-Ordner zum Verbinden an</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
