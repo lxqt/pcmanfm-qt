@@ -23,7 +23,7 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programmation&#xa0;:
+        <translation>Programmation :
 Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -35,7 +35,7 @@ Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot;font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="100"/>
@@ -96,7 +96,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>Type de média&#xa0;:</translation>
+        <translation>Type de média :</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
@@ -106,7 +106,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Veuillez sélectionner l&apos;action que vous voulez effectuer&#xa0;:</translation>
+        <translation>Veuillez sélectionner l&apos;action que vous voulez effectuer :</translation>
     </message>
 </context>
 <context>
@@ -233,7 +233,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="85"/>
         <source>Select background color:</source>
-        <translation>Sélectionnez la couleur d&apos;arrière-plan&#xa0;:</translation>
+        <translation>Sélectionnez la couleur d&apos;arrière-plan :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="94"/>
@@ -268,12 +268,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Select shadow color:</source>
-        <translation>Sélectionnez la couleur de l&apos;ombre&#xa0;:</translation>
+        <translation>Sélectionnez la couleur de l&apos;ombre :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="202"/>
         <source>Select font:</source>
-        <translation>Sélectionnez la police&#xa0;:</translation>
+        <translation>Sélectionnez la police :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -283,7 +283,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionner la couleur du texte :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -381,27 +381,27 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Raccourcis visibles</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">Page d&apos;accueil</translation>
+        <translation>Accueil</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Corbeille</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">Ordinateur</translation>
+        <translation>Ordinateur</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">Réseau</translation>
+        <translation>Réseau</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -464,7 +464,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation>&amp;Filtrage</translation>
+        <translation>&amp;Filtrer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="274"/>
@@ -649,42 +649,42 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Montrer/Barre de filtre du focus</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher la barre de filtre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Vue &amp;partagée</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Vue partagée</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Copier le chemin d&apos;accès complet</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
@@ -694,12 +694,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Effacer tous les filtres</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="727"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="736"/>
@@ -759,7 +759,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barre permanente et filtre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="761"/>
@@ -986,12 +986,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
         <location filename="../main-win.ui" line="98"/>
         <location filename="../main-win.ui" line="118"/>
         <source>&amp;View</source>
-        <translation>&amp;Affichage</translation>
+        <translation>&amp;Afficher</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="162"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Édition</translation>
+        <translation>&amp;Éditer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="180"/>
@@ -1198,40 +1198,38 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Corbeille (Un élément)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>Corbeille (%Ln élément)</numerusform>
+        <numerusform>Corbeille (%Ln éléments)</numerusform>
+        </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Corbeille (Vide)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
         <source>Home</source>
-        <translation type="unfinished">Page d&apos;accueil</translation>
+        <translation>Accueil</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
-        <translation type="unfinished">Ordinateur</translation>
+        <translation>Ordinateur</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
-        <translation type="unfinished">Réseau</translation>
+        <translation>Réseau</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="813"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="818"/>
@@ -1242,7 +1240,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Corbeille vide</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
@@ -1260,7 +1258,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtre :</translation>
     </message>
 </context>
 <context>
@@ -1268,7 +1266,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">Effacer le texte (Ctrl+K)</translation>
+        <translation>Effacer le texte (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1276,7 +1274,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Instance Root</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -1348,7 +1346,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../tabpage.cpp" line="416"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espace libre: %1 (total&#xa0;: %2)</translation>
+        <translation>Espace libre: %1 (total : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="433"/>
@@ -1376,11 +1374,9 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="643"/>
         <source>%n item(s) selected</source>
-        <translation>
-            <numerusform>%n item(s) sélectionné(s)</numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n élément sélectionné</numerusform>
+        <numerusform>%n éléments sélectionnés</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
@@ -1446,27 +1442,27 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="262"/>
         <source>Size of big icons:</source>
-        <translation>Taille des grandes icônes&#xa0;:</translation>
+        <translation>Taille des grandes icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="279"/>
         <source>Size of small icons:</source>
-        <translation>Taille des petites icônes&#xa0;:</translation>
+        <translation>Taille des petites icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Size of thumbnails:</source>
-        <translation>Taille des vignettes&#xa0;:</translation>
+        <translation>Taille des vignettes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
-        <translation>Taille des icônes de panneau latéral&#xa0;:</translation>
+        <translation>Taille des icônes de panneau latéral :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="242"/>
         <source>Icon theme:</source>
-        <translation>Thème d&apos;icônes :</translation>
+        <translation>Thème des icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
@@ -1476,12 +1472,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="500"/>
         <source>Default width of new windows:</source>
-        <translation>Largeur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Largeur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="514"/>
         <source>Default height of new windows:</source>
-        <translation>Hauteur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Hauteur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="479"/>
@@ -1491,7 +1487,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="486"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Afficher le bouton «&#xa0;Fermer&#xa0;» sur les onglets	</translation>
+        <translation>Afficher le bouton « Fermer » sur les onglets	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="493"/>
@@ -1516,7 +1512,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="107"/>
         <source>Default view mode:</source>
-        <translation>Mode d&apos;affichage par défaut&#xa0;:</translation>
+        <translation>Mode d&apos;affichage par défaut :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="120"/>
@@ -1588,12 +1584,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Requiert le redémarrage de l&apos;application pour prendre complètement effet</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Lancer des fichiers exécutables sans invite</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1676,12 +1672,12 @@ ne sera affichée que s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le redémarrage de l&apos;application est nécessaire pour que les modifications prennent effet.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="554"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Ne pas générer de vignettes pour les fichiers image excédant cette taille&#xa0;:</translation>
+        <translation>Ne pas générer de vignettes pour les fichiers image excédant cette taille :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="561"/>
@@ -1766,7 +1762,7 @@ ne sera affichée que s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="687"/>
         <source>Terminal emulator:</source>
-        <translation>Émulateur de terminal&#xa0;:</translation>
+        <translation>Émulateur de terminal :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="707"/>
