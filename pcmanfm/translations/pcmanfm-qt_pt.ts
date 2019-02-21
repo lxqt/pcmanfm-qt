@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>Sobre</translation>
+        <translation>Acerca</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -42,23 +42,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>Gestor de ficheiros PCMan-Qt
+        <translation>Gestor de ficheiros PCManFM-Qt
 
-Direitos de autor (C) 2009 - 2016  洪任諭 (Hong Jen Yee)
+Copyright (C) 2009 - 2019 洪任諭 (Hong Jen Yee)
 
-Esta aplicação é um programa livre. Pode distribuir e/ou modificar
-a aplicação nos termos da GNU General Public License, conforme publicada
-pela Free Software Foundation; tanto na sua versão 2 ou, por opção,
-qualquer versão mais recente.
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
 
-Este programa é disponibilizado na expectativa de que sejar útil. mas não possui
-qualquer garantia. Nem mesmo a garantia implícita de comercialização ou
-adaptação a algum caso em concreto. Consulte a GNU General Public License
-para mais detalhes.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-Deve ter recebido uma cópia da GNU General Public License com o programa.
-Se tal não ocorreu, escreva para a Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="87"/>
@@ -105,7 +105,7 @@ Se tal não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Por favor escolha a ação que pretende executar:</translation>
+        <translation>Por favor escolha a ação a executar:</translation>
     </message>
 </context>
 <context>
@@ -136,7 +136,7 @@ Se tal não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>Estabelecer ligação a um servidor remoto</translation>
+        <translation>Conectar a um servidor remoto</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
@@ -282,7 +282,7 @@ Se tal não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecione a cor do texto:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -380,27 +380,27 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Atalhos visíveis</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">Pasta pessoal</translation>
+        <translation>Pasta pessoal</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Lixo</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">Computador</translation>
+        <translation>Computador</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">Rede</translation>
+        <translation>Rede</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -463,7 +463,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtrar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="274"/>
@@ -488,7 +488,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="316"/>
         <source>&amp;About</source>
-        <translation>&amp;Sobre</translation>
+        <translation>&amp;Acerca</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="328"/>
@@ -603,12 +603,12 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="522"/>
         <source>By &amp;Owner</source>
-        <translation>Por &amp;dono</translation>
+        <translation>Por d&amp;ono</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="530"/>
         <source>&amp;Folder First</source>
-        <translation>&amp;Pastas no início</translation>
+        <translation>&amp;Pastas primeiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="538"/>
@@ -623,7 +623,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="597"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Excluir</translation>
+        <translation>&amp;Apagar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="605"/>
@@ -648,42 +648,42 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mo&amp;strar/focar barra de filtro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar barra de filtro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista du&amp;pla</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista dupla</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Copiar caminho completo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
@@ -693,12 +693,12 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Limpar todos os filtros</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="727"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="736"/>
@@ -718,7 +718,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="789"/>
         <source>Connect to &amp;Server</source>
-        <translation>Estabelecer ligação a um &amp;servidor</translation>
+        <translation>Conectar a um &amp;servidor</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="797"/>
@@ -753,7 +753,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra de &amp;filtro permanente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="758"/>
@@ -789,7 +789,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="325"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Nova Janela</translation>
+        <translation>&amp;Nova janela</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="401"/>
@@ -974,7 +974,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation>&amp;Arquivo</translation>
+        <translation>&amp;Ficheiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="92"/>
@@ -985,7 +985,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
         <location filename="../main-win.ui" line="98"/>
         <location filename="../main-win.ui" line="118"/>
         <source>&amp;View</source>
-        <translation>&amp;Exibir</translation>
+        <translation>&amp;Ver</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="162"/>
@@ -1023,12 +1023,12 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../application.cpp" line="164"/>
         <source>Run PCManFM as a daemon</source>
-        <translation>Executar o PCManFM como serviço</translation>
+        <translation>Executar PCManFM-Qt como serviço</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="167"/>
         <source>Quit PCManFM</source>
-        <translation>Fechar o PCManFM</translation>
+        <translation>Fechar o PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="170"/>
@@ -1038,12 +1038,12 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../application.cpp" line="173"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>Desativar o gestor da área de trabalho, se em execução</translation>
+        <translation>Desativar gestor da área de trabalho, se em execução</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="176"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Abrir diálogo de preferências da área de trabalho na página especificada</translation>
+        <translation>Abrir preferências da área de trabalho na página especificada</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="176"/>
@@ -1079,12 +1079,12 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../application.cpp" line="182"/>
         <source>Open Find Files utility</source>
-        <translation>Abrir o utilitário &apos;Localizar ficheiros&apos;</translation>
+        <translation>Abrir utilitário &apos;Localizar ficheiros&apos;</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="188"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation>Definir o modo do papel de parede. Modo=(%1)</translation>
+        <translation>Definir modo do papel de parede. Modo=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="194"/>
@@ -1197,40 +1197,40 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Lixo (1 item)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Lixo (%Ln item)</numerusform>
+            <numerusform>Lixo (%Ln itens)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Lixo (vazio)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
         <source>Home</source>
-        <translation type="unfinished">Pasta pessoal</translation>
+        <translation>Pasta pessoal</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
-        <translation type="unfinished">Computador</translation>
+        <translation>Computador</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
-        <translation type="unfinished">Rede</translation>
+        <translation>Rede</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="813"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="818"/>
@@ -1241,7 +1241,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Esvaziar lixo</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
@@ -1259,7 +1259,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrar:</translation>
     </message>
 </context>
 <context>
@@ -1267,7 +1267,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">Limpar texto (Ctrl+K)</translation>
+        <translation>Limpar texto (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1275,7 +1275,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Instância root</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -1311,7 +1311,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1873"/>
         <source>Switch user command is not set.</source>
-        <translation>Comando para troca de utilizadores não definido.</translation>
+        <translation>Comando para trocar de utilizadores não está definido.</translation>
     </message>
 </context>
 <context>
@@ -1507,7 +1507,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="242"/>
         <source>Icon theme:</source>
-        <translation>Tema de Ícones:</translation>
+        <translation>Tema de ícones:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
@@ -1522,7 +1522,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="514"/>
         <source>Default height of new windows:</source>
-        <translation>Altura para as novas janeas:</translation>
+        <translation>Altura para as novas janelas:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="479"/>
@@ -1532,7 +1532,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="486"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Mostrar botão &quot;Fechar&quot; nos separadores	</translation>
+        <translation>Mostrar botão &quot;Fechar&quot; nos separadoress	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="493"/>
@@ -1665,7 +1665,7 @@ será mostrada se existir mais do que um separador.</translation>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tem que reiniciar a aplicação para aplicar as alterações.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="578"/>
@@ -1695,7 +1695,7 @@ será mostrada se existir mais do que um separador.</translation>
     <message>
         <location filename="../preferences.ui" line="761"/>
         <source>Run default application after creation from template</source>
-        <translation>Iniciar a aplicação padrão após a criação baseada no modelo</translation>
+        <translation>Iniciar aplicação padrão após a criação baseada no modelo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
