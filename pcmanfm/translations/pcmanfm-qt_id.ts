@@ -86,12 +86,12 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>Media yang dapat dilepas dimasukkan</translation>
+        <translation>Perangkat media dimasukkan</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Media yang dapat dilepas dimasukkan&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Perangkat media dimasukkan&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
@@ -142,7 +142,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation>&amp;Masuk secara anonim</translation>
+        <translation>Masuk secara anonim</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
@@ -180,7 +180,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation>Bentuk</translation>
+        <translation>Formulir</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -223,12 +223,12 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="52"/>
         <source>Wallpaper mode:</source>
-        <translation>Mode kertas dinding:</translation>
+        <translation>Mode wallpaper:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="65"/>
         <source>Wallpaper image file:</source>
-        <translation>Berkas gambar kertas dinding:</translation>
+        <translation>Berkas gambar wallpaper:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="85"/>
@@ -288,7 +288,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
         <source>Spacing</source>
-        <translation>Spasi</translation>
+        <translation>Jarak</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="231"/>
@@ -386,7 +386,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">Beranda</translation>
+        <translation>Beranda</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
@@ -396,12 +396,12 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">Komputer</translation>
+        <translation>Komputer</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">Jaringan</translation>
+        <translation>Jaringan</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -494,7 +494,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="325"/>
         <source>&amp;New Window</source>
-        <translation>Jendela &amp;Baru</translation>
+        <translation>Je&amp;ndela Baru</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="328"/>
@@ -977,7 +977,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
         <location filename="../main-win.ui" line="98"/>
         <location filename="../main-win.ui" line="118"/>
         <source>&amp;View</source>
-        <translation>Tampilan</translation>
+        <translation>Lihat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
@@ -1204,10 +1204,8 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>Sampah (%Ln item)</numerusform>
+        </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
@@ -1216,17 +1214,17 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
         <source>Home</source>
-        <translation type="unfinished">Beranda</translation>
+        <translation>Beranda</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
-        <translation type="unfinished">Komputer</translation>
+        <translation>Komputer</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
-        <translation type="unfinished">Jaringan</translation>
+        <translation>Jaringan</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="813"/>
@@ -1276,7 +1274,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished">Root Instance</translation>
+        <translation>Instansi Root</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
