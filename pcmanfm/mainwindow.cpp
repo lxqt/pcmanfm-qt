@@ -832,9 +832,6 @@ void MainWindow::on_actionFolderProperties_triggered() {
 void MainWindow::on_actionShowHidden_triggered(bool checked) {
     currentPage()->setShowHidden(checked);
     ui.sidePane->setShowHidden(checked);
-    if(!currentPage()->hasCustomizedView()) {
-        static_cast<Application*>(qApp)->settings().setShowHidden(checked);  // remember globally
-    }
 }
 
 void MainWindow::on_actionByFileName_triggered(bool /*checked*/) {
@@ -1414,19 +1411,18 @@ void MainWindow::onTabPageOpenDirRequested(const Fm::FilePath& path, int target)
     }
 }
 
-void MainWindow::onTabPageSortFilterChanged() {
+void MainWindow::onTabPageSortFilterChanged() { // NOTE: This may be called from context menu too.
     TabPage* tabPage = static_cast<TabPage*>(sender());
     if(tabPage == currentPage()) {
         updateViewMenuForCurrentPage();
-        if(!tabPage->hasCustomizedView()) {
+        if(!tabPage->hasCustomizedView()) { // remember sort settings globally
             Settings& settings = static_cast<Application*>(qApp)->settings();
             settings.setSortColumn(static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn()));
             settings.setSortOrder(tabPage->sortOrder());
             settings.setSortFolderFirst(tabPage->sortFolderFirst());
             settings.setSortCaseSensitive(tabPage->sortCaseSensitive());
-            settings.setShowHidden(tabPage->showHidden()); // remember globally , as in on_actionShowHidden_triggered()
+            settings.setShowHidden(tabPage->showHidden());
         }
-        tabPage->setShowHidden(tabPage->showHidden()); // change status text and perfolder setting
     }
 }
 
