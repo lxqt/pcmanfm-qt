@@ -154,6 +154,8 @@ public:
 
     void setShowHidden(bool showHidden);
 
+    void saveFolderSorting();
+
     Fm::FilePath path() {
         return folder_ ? folder_->path() : Fm::FilePath();
     }
