@@ -264,7 +264,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>选择文本颜色：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -362,27 +362,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>可见的快捷键</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">主页</translation>
+        <translation type="unfinished">主文件夹</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>垃圾桶</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">计算机</translation>
+        <translation>计算机</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">网络</translation>
+        <translation>网络</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -420,7 +420,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>过滤(F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="259"/>
@@ -670,42 +670,42 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>显示/聚焦过滤条(S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>显示过滤条</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>分屏浏览(S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>分屏浏览</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>F6</source>
-        <translation type="unfinished"></translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>复制完整路径(C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
@@ -715,12 +715,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>清除所有过滤(C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="727"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="736"/>
@@ -775,7 +775,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>永久过滤器栏(F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="758"/>
@@ -1179,39 +1179,37 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>垃圾桶(单个项目)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>垃圾桶(%Ln个项目)</numerusform>
+        </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>垃圾桶(空)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
         <source>Home</source>
-        <translation type="unfinished">主页</translation>
+        <translation>主文件夹</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
-        <translation type="unfinished">计算机</translation>
+        <translation>计算机</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
-        <translation type="unfinished">网络</translation>
+        <translation>网络</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="813"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>打开</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="818"/>
@@ -1222,7 +1220,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>清空垃圾桶</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
@@ -1240,7 +1238,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>过滤器：</translation>
     </message>
 </context>
 <context>
@@ -1248,7 +1246,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">清除文本(Ctrl+K)</translation>
+        <translation>清除文本(Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1256,7 +1254,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Root实例</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -1413,7 +1411,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>选择新创建的文件</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1565,12 +1563,12 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>应用程序需重新启动才能完全生效</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>启动可执行文件时不提示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1652,7 +1650,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>应用程序需要重新启动以使更改生效。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="554"/>
