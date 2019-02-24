@@ -539,7 +539,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="388"/>
         <source>&amp;Applications</source>
-        <translation>&amp;Applications</translation>
+        <translation>&amp;Application(s)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
@@ -1137,7 +1137,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation>WebDav</translation>
+        <translation>Web Dav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
