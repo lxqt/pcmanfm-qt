@@ -47,7 +47,27 @@ void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fi
         }
     }
     else {
-        Fm::FolderView::onFileClicked(type, fileInfo);
+        if(type == ActivatedClick) {
+            if(fileLauncher()) { // launch all selected files
+                auto files = selectedFiles();
+                if(!files.empty()) {
+                    if(files.size() > 20) {
+                        QMessageBox::StandardButton r = QMessageBox::question(window(),
+                                                        tr("Many files"),
+                                                        tr("Do you want to open these %1 file?").arg(files.size()),
+                                                        QMessageBox::Yes | QMessageBox::No,
+                                                        QMessageBox::No);
+                        if(r == QMessageBox::No) {
+                            return;
+                        }
+                    }
+                    fileLauncher()->launchFiles(nullptr, std::move(files));
+                }
+            }
+        }
+        else {
+            Fm::FolderView::onFileClicked(type, fileInfo);
+        }
     }
 }
 
