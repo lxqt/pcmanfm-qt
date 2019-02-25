@@ -17,6 +17,7 @@
 */
 
 #include "bulkrename.h"
+#include <QRegularExpression>
 #include <QTimer>
 #include <QPushButton>
 #include <QMessageBox>
@@ -72,6 +73,8 @@ BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
     QProgressDialog progress(QObject::tr("Renaming files..."), QObject::tr("Abort"), 0, files.size(), parent);
     progress.setWindowModality(Qt::WindowModal);
     int i = 0, failed = 0;
+    const QRegularExpression extension("\\.[^.#]+$");
+    bool noExtension(baseName.indexOf(extension) == -1);
     for(auto& file: files) {
         progress.setValue(i);
         if(progress.wasCanceled()) {
@@ -81,6 +84,15 @@ BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
         }
         auto fileName = QString::fromStdString(file->name());
         QString newName = baseName;
+
+        // keep the extension if the new name doesn't have one
+        if(noExtension) {
+            QRegularExpressionMatch match;
+            if(fileName.indexOf(extension, 0, &match) > -1) {
+                newName += match.captured();
+            }
+        }
+
         newName.replace(QLatin1Char('#'), QString::number(start + i));
         if (newName == fileName || !Fm::changeFileName(file->path(), newName, nullptr, false)) {
             ++failed;
