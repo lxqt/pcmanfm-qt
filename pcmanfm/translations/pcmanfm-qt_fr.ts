@@ -24,7 +24,7 @@
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
         <translation>Programmation :
-Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
     <message>
@@ -61,24 +61,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>Gestionnaire de fichiers de PCMan
+        <translation>PCManFM-Qt Gestionnaire de fichiers
 
-Copyright © 2009 - 2014 洪任諭 (Hong Jen Yee)
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
 Ce programme est un logiciel libre ; vous pouvez le redistribuer et/ou
- le modifier suivant les termes de la “GNU General Public License”
- telle que publiée par la Free Software Foundation, soit en version 2,
- soit (à votre gré) toute version ultérieure.
+le modifier selon les termes de la licence publique générale GNU
+tel que publié par la Free Software Foundation ; soit la version 2
+de la licence, ou (à votre choix) toute version ultérieure.
 
-Ce programme est distribué dans l&apos;espoir qu&apos;il vous sera utile,
- mais SANS AUCUNE GARANTIE ; sans même la garantie implicite
- de COMMERCIALISABILITÉ, ni d’ADÉQUATION À UN OBJECTIF PARTICULIER
-. Consultez la Licence Générale Publique GNU pour plus de détails.
+Ce programme est distribué dans l’espoir qu’il sera utile,
+mais SANS AUCUNE GARANTIE ; sans même la garantie implicite de
+QUALITÉ MARCHANDE ou ADAPTATION À UN USAGE PARTICULIER. Voir le
+Licence publique générale GNU pour plus de détails.
 
 Vous devriez avoir reçu une copie de la licence publique générale GNU
- avec ce programme ; si ce n&apos;est pas le cas, écrivez à la fondation pour le logiciel libre à l&apos;adresse ci-dessous :
-Free Software Foundation, Inc.n 51 Franklin Street,
-Fifth Floor, Boston, MA 02110-1301, USA.</translation>
+avec ce programme ; sinon écriver à la Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
 </context>
 <context>
@@ -106,7 +105,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Veuillez sélectionner l&apos;action que vous voulez effectuer :</translation>
+        <translation>Veuillez sélectionner l&apos;action que vous souhaitez effectuer :</translation>
     </message>
 </context>
 <context>
@@ -114,17 +113,17 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation>Renommage en vrac</translation>
+        <translation>Renommer en masse</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation># sera remplacé par un nombre commençant par :</translation>
+        <translation># sera remplacé par un numéro commençant par :</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation>Renommer les fichiers sélectionnés par :</translation>
+        <translation>Renommer les fichiers sélectionnés en :</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
@@ -137,7 +136,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>Connexion au serveur distant</translation>
+        <translation>Se connecter au serveur distant</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
@@ -147,12 +146,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation>Connexion en &amp;utilisateur :</translation>
+        <translation>Connectez-vous en tant qu&apos;utilisateur :</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation>Spécifier le répertoire distant auquel connecter</translation>
+        <translation>Spécifier le répertoire distant à connecter</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
@@ -180,7 +179,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation>Dialogue</translation>
+        <translation>Formulaire</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -200,7 +199,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation>Chemin vers le répertoire</translation>
+        <translation>Chemin du répertoire</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
@@ -228,12 +227,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="65"/>
         <source>Wallpaper image file:</source>
-        <translation>Fichier image du papier-peint :</translation>
+        <translation>Fichier image du papier peint :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="85"/>
         <source>Select background color:</source>
-        <translation>Sélectionnez la couleur d&apos;arrière-plan :</translation>
+        <translation>Sélectionner la couleur de l&apos;arrière-plan :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="94"/>
@@ -293,7 +292,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation>Marge minimale entre les items :</translation>
+        <translation>Marges minimales entre les éléments :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="238"/>
@@ -316,7 +315,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>1 px par défaut
-Un espace pour 3 lignes de texte est également réservé.</translation>
+Un espace est également réservé pour 3 lignes de texte.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="278"/>
@@ -326,12 +325,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="315"/>
         <source>Slide Show</source>
-        <translation>Vision de diapositives</translation>
+        <translation>Diaporama</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>Enable Slide Show</source>
-        <translation>Valider la vision de diapositives</translation>
+        <translation>Activer le diaporama</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
@@ -356,7 +355,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation>Des intervalles inférieurs à 5 mn sont ignorés</translation>
+        <translation>Les intervalles inférieurs à 5 minutes seront ignorés</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -411,7 +410,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="518"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>Afficher les menus fournis par les gestionnaires de fenêtres lorsqu&apos;on clique sur le bureau</translation>
+        <translation>Afficher les menus fournis par les gestionnaires de fenêtres lorsque l&apos;utilisateur clique sur le bureau</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="453"/>
@@ -439,7 +438,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="277"/>
         <source>Alt+Home</source>
-        <translation>Alt+Début / Origine</translation>
+        <translation>Alt+Accueil (début)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="393"/>
@@ -469,7 +468,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="274"/>
         <source>&amp;Home</source>
-        <translation>&amp;Origine</translation>
+        <translation>&amp;Accueil</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>
@@ -539,7 +538,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="388"/>
         <source>&amp;Applications</source>
-        <translation>&amp;Application(s)</translation>
+        <translation>&amp;Applications</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
@@ -739,12 +738,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="810"/>
         <source>&amp;Bulk Rename</source>
-        <translation>&amp;Renommer en vrac</translation>
+        <translation>&amp;Renommer en masse</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="813"/>
         <source>Bulk Rename</source>
-        <translation>Renommer en vrac</translation>
+        <translation>Renommer en masse</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
@@ -759,7 +758,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Permanent &amp;filter bar</source>
-        <translation>Barre permanente et filtre</translation>
+        <translation>Barre de filtre permanente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="761"/>
@@ -840,7 +839,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../main-win.ui" line="565"/>
         <source>Go Back</source>
-        <translation>Reculer</translation>
+        <translation>Retourner</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="568"/>
@@ -1024,7 +1023,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../application.cpp" line="164"/>
         <source>Run PCManFM as a daemon</source>
-        <translation>Lancer PCManFM comme démon</translation>
+        <translation>Lancer PCManFM comme processus</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="167"/>
@@ -1039,28 +1038,28 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../application.cpp" line="173"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>Éteindre le gestionnaire de bureau s&apos;il fonctionne</translation>
+        <translation>Désactiver le gestionnaire de bureau s&apos;il est en cours d&apos;exécution</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="176"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Ouvrir la boîte de dialogue des préférences du bureau sur la page avec le nom spécifié</translation>
+        <translation>Ouvrir la boîte de dialogue des préférences du bureau sur la page portant le nom spécifié</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="176"/>
         <location filename="../application.cpp" line="191"/>
         <source>NAME</source>
-        <translation>NAME</translation>
+        <translation>NOM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="185"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>Définir le fond d&apos;écran de bureau depuis l&apos;image FILE</translation>
+        <translation>Définir le fond d&apos;écran à partir de l&apos;image FILE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="185"/>
         <source>FILE</source>
-        <translation>FILE</translation>
+        <translation>FICHIER</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="188"/>
@@ -1070,7 +1069,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../application.cpp" line="191"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Ouvrir la boîte de dialogue des préférences sur la page avec le nom spécifié</translation>
+        <translation>Ouvrir la boîte de dialogue des préférences sur la page portant le nom spécifié</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="179"/>
@@ -1090,7 +1089,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../application.cpp" line="194"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation>[FICHIER1, FICHIER2, etc.]</translation>
+        <translation>[FICHIER1, FICHIER2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="194"/>
@@ -1180,12 +1179,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>Faire une mosaïque avec l&apos;image pour remplir l&apos;écran entier</translation>
+        <translation>Faire une mosaïque avec l&apos;image pour remplir l&apos;écran en entier</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation>Zoomer l&apos;image pour remplir l&apos;écran</translation>
+        <translation>Zoomer l&apos;image pour remplir tout l&apos;écran</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="227"/>
@@ -1245,7 +1244,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
         <source>Hide Desktop Items</source>
-        <translation>Cacher les items Desktop</translation>
+        <translation>Masquer les éléments du bureau</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="886"/>
@@ -1284,7 +1283,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="662"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>Cela permet de masquer complètement la barre de menus, utilisez Ctrl + M pour la montrer à nouveau.</translation>
+        <translation>Cela masquera complètement la barre de menus, utiliser Ctrl+M pour l&apos;afficher à nouveau.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="984"/>
@@ -1310,7 +1309,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1873"/>
         <source>Switch user command is not set.</source>
-        <translation>La commande de changement d’utilisateur n&apos;est pas configurée.</translation>
+        <translation>La commande de changement d&apos;utilisateur n&apos;est pas définie.</translation>
     </message>
 </context>
 <context>
@@ -1346,7 +1345,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../tabpage.cpp" line="416"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espace libre: %1 (total : %2)</translation>
+        <translation>Espace libre : %1 (total : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="433"/>
@@ -1457,7 +1456,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
-        <translation>Taille des icônes de panneau latéral :</translation>
+        <translation>Taille des icônes du volet latéral :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="242"/>
@@ -1487,7 +1486,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="486"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Afficher le bouton « Fermer » sur les onglets	</translation>
+        <translation>Afficher les boutons &apos;Fermer&apos; sur les onglets	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="493"/>
@@ -1502,12 +1501,12 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>Open files with single click</source>
-        <translation>Ouvrir les fichiers avec un simple clic</translation>
+        <translation>Ouvrir des fichiers en un simple clic</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="100"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation>Délai avant auto-sélection en mode simple click (0 pour désactiver)</translation>
+        <translation>Délai de sélection automatique en mode simple clic (0 pour désactiver)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="107"/>
@@ -1517,7 +1516,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="120"/>
         <source> sec</source>
-        <translation> s</translation>
+        <translation> sec</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
@@ -1532,7 +1531,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Mettre les fichiers supprimés à la corbeille au lieu de les effacer du disque.</translation>
+        <translation>Déplacer les fichiers supprimés vers la corbeille au lieu de les effacer du disque.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="581"/>
@@ -1572,7 +1571,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Effacer les fichiers sur des supports amovibles au lieu de les mettre dans la corbeille</translation>
+        <translation>Effacer les fichiers des supports amovibles au lieu de les mettre dans la corbeille</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="186"/>
@@ -1601,13 +1600,13 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
         <location filename="../preferences.ui" line="276"/>
         <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>Utilisé lors de l&apos;affichage compact et détaillé</translation>
+        <translation>Utilisé par la vue compacte et la vue en liste détaillée</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="293"/>
         <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
-        <translation>Utilisé lors de l&apos;affichage par vignettes</translation>
+        <translation>Utilisé par la vue miniature</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
@@ -1617,22 +1616,22 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
     <message>
         <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
-        <translation>Cacher les fichiers de sauvegarde</translation>
+        <translation>Traiter les fichiers de sauvegarde comme cachés</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="346"/>
         <source>Always show full file names</source>
-        <translation>Toujours montrer le nom complet des fichiers</translation>
+        <translation>Toujours afficher le nom complet des fichiers</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Montrer les icônes de fichiers cachés ombragées</translation>
+        <translation>Afficher les icônes des fichiers cachés ombrés</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>Marge minimale entre items pour l&apos;affichage par icônes :</translation>
+        <translation>Marges minimales des éléments dans la vue en icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="386"/>
@@ -1655,7 +1654,7 @@ Un espace pour 3 lignes de texte est également réservé.</translation>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>3 px par défaut.
-Un espace de 3 lignes est également prévu pour du texte.</translation>
+Un espace est également réservé pour 3 lignes de texte.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="426"/>
@@ -1666,8 +1665,8 @@ Un espace de 3 lignes est également prévu pour du texte.</translation>
         <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation>Lorsque la case est décochée, la barre d&apos;onglet
-ne sera affichée que s&apos;il y a plus d&apos;un onglet.</translation>
+        <translation>Lorsqu&apos;elle est décochée, la barre d&apos;onglets sera affichée
+seulement s&apos;il y a plus d&apos;un onglet.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="796"/>
@@ -1677,7 +1676,7 @@ ne sera affichée que s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="554"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Ne pas générer de vignettes pour les fichiers image excédant cette taille :</translation>
+        <translation>Ne générer pas de vignettes pour les fichiers image dépassant cette taille :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="561"/>
@@ -1702,22 +1701,22 @@ ne sera affichée que s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="621"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>Monter automatiquement les médias amovibles lorsqu&apos;ils sont insérés</translation>
+        <translation>Monter automatiquement les supports amovibles lorsqu&apos;ils sont insérés</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="628"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation>Montrer les options disponibles pour les médias amovibles lorsqu&apos;ils sont insérés</translation>
+        <translation>Afficher les options disponibles pour les supports amovibles lorsqu&apos;ils sont insérés</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <source>When removable medium unmounted:</source>
-        <translation>Lorsque les médias amovibles sont démontés :</translation>
+        <translation>Lorsque le support amovible est non monté :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="644"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>&amp;Fermer les onglets contenant un média démontable</translation>
+        <translation>&amp;Fermer les onglets contenant un support amovible</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
@@ -1742,7 +1741,7 @@ ne sera affichée que s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="747"/>
         <source>Show only user defined templates in menu</source>
-        <translation>Ne montrer que les modèles définis par l&apos;utilisateur dans le menu</translation>
+        <translation>Afficher uniquement les modèles définis par l&apos;utilisateur dans le menu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
@@ -1752,7 +1751,7 @@ ne sera affichée que s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="761"/>
         <source>Run default application after creation from template</source>
-        <translation>Exécuter l&apos;application par défaut, après la création depuis le modèle</translation>
+        <translation>Exécuter l&apos;application par défaut après la création à partir d&apos;un modèle</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
@@ -1768,13 +1767,13 @@ ne sera affichée que s&apos;il y a plus d&apos;un onglet.</translation>
         <location filename="../preferences.ui" line="707"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation>Exemples : « xterm -e %s » pour le terminal ; « gksu %s » pour changer d’utilisateur.
+        <translation>Exemples : &quot;xterm -e %s&quot; pour le terminal ; &quot;gksu %s&quot; pour le changement d&apos;utilisateur.
 %s = la ligne de commande que vous voulez exécuter avec le terminal ou su.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="329"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>Utiliser les préfixes de décimales du système international d&apos;unités au lieu des préfixes binaires de l&apos;IEC</translation>
+        <translation>Utiliser les préfixes de décimales du système international au lieu des préfixes binaires CEI</translation>
     </message>
 </context>
 <context>
@@ -1808,12 +1807,12 @@ ne sera affichée que s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation>le fichier ne peut pas être renommé.</translation>
+        <translation>Aucun fichier ne peut être renommé.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation>Certains fichiers n&apos;ont pu être renommés.</translation>
+        <translation>Certains fichiers n&apos;ont pas pu être renommés.</translation>
     </message>
 </context>
 </TS>
