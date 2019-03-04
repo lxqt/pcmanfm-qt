@@ -38,7 +38,7 @@ class View : public Fm::FolderView {
     Q_OBJECT
 public:
 
-    explicit View(Fm::FolderView::ViewMode _mode = IconMode, QWidget* parent = 0);
+    explicit View(Fm::FolderView::ViewMode _mode = IconMode, QWidget* parent = nullptr);
     virtual ~View();
 
     void updateFromSettings(Settings& settings);

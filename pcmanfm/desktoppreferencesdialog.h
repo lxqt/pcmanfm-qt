@@ -32,7 +32,7 @@ class DesktopPreferencesDialog : public QDialog {
 Q_OBJECT
 
 public:
-  explicit DesktopPreferencesDialog(QWidget* parent = 0, Qt::WindowFlags f = 0);
+  explicit DesktopPreferencesDialog(QWidget* parent = nullptr, Qt::WindowFlags f = 0);
   virtual ~DesktopPreferencesDialog();
 
   virtual void accept();

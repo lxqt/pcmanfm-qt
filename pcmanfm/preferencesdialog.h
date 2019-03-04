@@ -34,7 +34,7 @@ class PreferencesDialog : public QDialog {
 
 public:
     // activePage is the name of page to select (general, display, advanced...)
-    explicit PreferencesDialog(QString activePage = QString(), QWidget* parent = 0);
+    explicit PreferencesDialog(QString activePage = QString(), QWidget* parent = nullptr);
     virtual ~PreferencesDialog();
 
     virtual void accept();

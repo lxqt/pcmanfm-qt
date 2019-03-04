@@ -27,7 +27,7 @@ class Label : public QLabel {
 Q_OBJECT
 
 public:
-    explicit Label(QWidget *parent = 0, Qt::WindowFlags f = Qt::WindowFlags());
+    explicit Label(QWidget *parent = nullptr, Qt::WindowFlags f = Qt::WindowFlags());
 
 protected:
     void paintEvent(QPaintEvent *event) override;
@@ -42,7 +42,7 @@ class StatusBar : public QStatusBar {
 Q_OBJECT
 
 public:
-    explicit StatusBar(QWidget *parent = 0);
+    explicit StatusBar(QWidget *parent = nullptr);
     ~StatusBar();
 
 public Q_SLOTS:
