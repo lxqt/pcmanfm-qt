@@ -26,12 +26,12 @@ paths are dealt with on 64bit systems variables like `CMAKE_INSTALL_LIBDIR` may
 have to be set as well.   
 
 To build run `make`, to install `make install` which accepts variable `DESTDIR` 
-as usual.   
+as usual.
 
 ### Binary packages
 
 Official binary packages are available in Arch Linux, Debian (as of Debian stretch), 
-Fedora (version 0.10.0 only so far) and openSUSE (Leap 42.1 and Tumbleweed).   
+Fedora (version 0.10.0 only so far) and openSUSE (Leap and Tumbleweed).   
 
 ## Usage
 
