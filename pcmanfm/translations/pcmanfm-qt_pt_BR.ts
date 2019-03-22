@@ -558,7 +558,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Colar</translation>
+        <translation>Col&amp;ar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="461"/>
