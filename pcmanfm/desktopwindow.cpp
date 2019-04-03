@@ -58,6 +58,7 @@
 #include <QX11Info>
 #include <QScreen>
 #include <xcb/xcb.h>
+#include <xcb/xinput.h>
 #include <X11/Xlib.h>
 
 #define WORK_AREA_MARGIN 12 // margin of the work area
@@ -75,7 +76,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     wallpaperTimer_(nullptr),
     wallpaperRandomize_(false),
     fileLauncher_(nullptr),
-    passButtonsToRoot_(false),
+    showWmMenu_(false),
     passWheelToRoot_(false),
     desktopHideItems_(false),
     screenNum_(screenNum),
@@ -741,7 +742,7 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     setForeground(settings.desktopFgColor());
     setBackground(settings.desktopBgColor());
     setShadow(settings.desktopShadowColor());
-    passButtonsToRoot_ = settings.passButtonsToRoot();
+    showWmMenu_ = settings.passButtonsToRoot();
     passWheelToRoot_ = settings.passWheelToRoot();
     desktopHideItems_ = settings.desktopHideItems();
     if(desktopHideItems_) {
@@ -785,7 +786,7 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
 }
 
 void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) {
-    if(!fileInfo && passButtonsToRoot_) {
+    if(!fileInfo && showWmMenu_) {
         return;    // do not show the popup if we want to use the desktop menu provided by the WM.
     }
     if(desktopHideItems_) { // only a context menu with desktop actions
@@ -1476,19 +1477,23 @@ static void forwardWheelEventToRoot(QWheelEvent* event) {
     // since this isn't specified by the specs.
     // In the same manner wheel left and right are usually mapped to button 6 and 7.
     // Since this only triggers by wheel, we can ignore possible 'normal' buttons mapped to 4-7.
-    if ((!numPixels.isNull() && numPixels.y() > 0) || (!numDegrees.isNull() && numDegrees.y() > 0)) {
+    if((!numPixels.isNull() && numPixels.y() > 0) || (!numDegrees.isNull() && numDegrees.y() > 0)) {
         xcb_event.detail = 4;
         xcb_event.state |= XCB_BUTTON_MASK_4;
-    } else if ((!numPixels.isNull() && numPixels.y() < 0) || (!numDegrees.isNull() && numDegrees.y() < 0)) {
+    }
+    else if((!numPixels.isNull() && numPixels.y() < 0) || (!numDegrees.isNull() && numDegrees.y() < 0)) {
         xcb_event.detail = 5;
         xcb_event.state |= XCB_BUTTON_MASK_5;
-    } else if ((!numPixels.isNull() && numPixels.x() > 0) || (!numDegrees.isNull() && numDegrees.x() > 0)) {
+    }
+    else if((!numPixels.isNull() && numPixels.x() > 0) || (!numDegrees.isNull() && numDegrees.x() > 0)) {
         xcb_event.detail = 6;
         xcb_event.state |= 32768;
-    } else if ((!numPixels.isNull() && numPixels.x() < 0) || (!numDegrees.isNull() && numDegrees.x() < 0)) {
+    }
+    else if((!numPixels.isNull() && numPixels.x() < 0) || (!numDegrees.isNull() && numDegrees.x() < 0)) {
         xcb_event.detail = 7;
         xcb_event.state |= 32768;
-    } else {
+    }
+    else {
         xcb_event.detail = 0;
     }
 
@@ -1561,7 +1566,7 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
         switch(event->type()) {
         case QEvent::MouseButtonPress:
         case QEvent::MouseButtonRelease:
-            if(passButtonsToRoot_) {
+            if(showWmMenu_) {
                 QMouseEvent* e = static_cast<QMouseEvent*>(event);
                 // If we want to show the desktop menus provided by the window manager instead of ours,
                 // we have to forward the mouse events we received to the root window.
@@ -1586,6 +1591,7 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
                 QModelIndex index = listView_->indexAt(e->pos());
                 if(!index.isValid()) {
                     forwardWheelEventToRoot(e);
+                    return true;
                 }
             }
             break;
