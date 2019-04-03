@@ -321,12 +321,12 @@ public:
         desktopShortcuts_ = list;
     }
 
-    bool passButtonsToRoot() const {
-        return passButtonsToRoot_;
+    bool showWmMenu() const {
+        return showWmMenu_;
     }
     
-    void setPassButtonsToRoot(bool value) {
-        passButtonsToRoot_ = value;
+    void setShowWmMenu(bool value) {
+        showWmMenu_ = value;
     }
     
     bool passWheelToRoot() const {
@@ -946,7 +946,7 @@ private:
     QFont desktopFont_;
     int desktopIconSize_;
     QStringList desktopShortcuts_;
-    bool passButtonsToRoot_;
+    bool showWmMenu_;
     bool passWheelToRoot_;
 
     bool desktopShowHidden_;
