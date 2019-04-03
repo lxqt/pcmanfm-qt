@@ -742,7 +742,7 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     setForeground(settings.desktopFgColor());
     setBackground(settings.desktopBgColor());
     setShadow(settings.desktopShadowColor());
-    showWmMenu_ = settings.passButtonsToRoot();
+    showWmMenu_ = settings.showWmMenu();
     passWheelToRoot_ = settings.passWheelToRoot();
     desktopHideItems_ = settings.desktopHideItems();
     if(desktopHideItems_) {
@@ -1591,10 +1591,8 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
                 QModelIndex index = listView_->indexAt(e->pos());
                 if(!index.isValid()) {
                     forwardWheelEventToRoot(e);
-                    return true;
                 }
             }
-            break;
             return true;
         default:
             break;
