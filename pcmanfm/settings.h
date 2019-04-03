@@ -321,14 +321,22 @@ public:
         desktopShortcuts_ = list;
     }
 
-    bool showWmMenu() const {
-        return showWmMenu_;
+    bool passButtonsToRoot() const {
+        return passButtonsToRoot_;
+    }
+    
+    void setPassButtonsToRoot(bool value) {
+        passButtonsToRoot_ = value;
+    }
+    
+    bool passWheelToRoot() const {
+        return passWheelToRoot_;
     }
 
-    void setShowWmMenu(bool value) {
-        showWmMenu_ = value;
+    void setPassWheelToRoot(bool value) {
+        passWheelToRoot_ = value;
     }
-
+    
     bool desktopShowHidden() const {
         return desktopShowHidden_;
     }
@@ -938,7 +946,8 @@ private:
     QFont desktopFont_;
     int desktopIconSize_;
     QStringList desktopShortcuts_;
-    bool showWmMenu_;
+    bool passButtonsToRoot_;
+    bool passWheelToRoot_;
 
     bool desktopShowHidden_;
     bool desktopHideItems_;
