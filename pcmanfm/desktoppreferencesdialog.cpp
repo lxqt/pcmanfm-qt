@@ -111,7 +111,8 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.computerBox->setChecked(ds.contains(QLatin1String("Computer")));
   ui.networkBox->setChecked(ds.contains(QLatin1String("Network")));
 
-  ui.showWmMenu->setChecked(settings.showWmMenu());
+  ui.passButtonsToRoot->setChecked(settings.passButtonsToRoot());
+  ui.passWheelToRoot->setChecked(settings.passWheelToRoot());
 
   connect(ui.buttonBox->button(QDialogButtonBox::Apply), &QPushButton::clicked,
           this, &DesktopPreferencesDialog::onApplyClicked);
@@ -190,7 +191,8 @@ void DesktopPreferencesDialog::applySettings()
   }
   settings.setDesktopShortcuts(ds);
 
-  settings.setShowWmMenu(ui.showWmMenu->isChecked());
+  settings.setPassButtonsToRoot(ui.passButtonsToRoot->isChecked());
+  settings.setPassWheelToRoot(ui.passWheelToRoot->isChecked());
 
   settings.setDesktopCellMargins(QSize(ui.hMargin->value(), ui.vMargin->value()));
 
