@@ -511,11 +511,18 @@ A space is also reserved for 3 lines of text.</string>
          <property name="title">
           <string>Window Manager</string>
          </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <layout class="QVBoxLayout" name="horizontalLayout_3">
           <item>
-           <widget class="QCheckBox" name="showWmMenu">
+           <widget class="QCheckBox" name="passButtonsToRoot">
             <property name="text">
-             <string>Show menus provided by window managers when desktop is clicked</string>
+             <string>Pass clicks on the desktop to the window manager.</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="passWheelToRoot">
+            <property name="text">
+             <string>Pass scroll wheel actions on the desktop to the window manager.</string>
             </property>
            </widget>
           </item>
