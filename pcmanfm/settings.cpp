@@ -72,7 +72,7 @@ Settings::Settings():
     desktopFgColor_(),
     desktopShadowColor_(),
     desktopIconSize_(48),
-    passButtonsToRoot_(false),
+    showWmMenu_(false),
     passWheelToRoot_(false),
     desktopShowHidden_(false),
     desktopHideItems_(false),
@@ -234,8 +234,8 @@ bool Settings::loadFile(QString filePath) {
     }
     desktopIconSize_ = settings.value("DesktopIconSize", 48).toInt();
     desktopShortcuts_ = settings.value("DesktopShortcuts").toStringList();
-    passButtonsToRoot_ = settings.value("passButtonsToRoot", false).toBool();
-    passWheelToRoot_ = settings.value("passWheelToRoot", false).toBool();
+    showWmMenu_ = settings.value("ShowWmMenu", false).toBool();
+    passWheelToRoot_ = settings.value("PassWheelToRoot", false).toBool();
     desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
     desktopHideItems_ = settings.value("HideItems", false).toBool();
 
@@ -371,8 +371,8 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue("Font", desktopFont_.toString());
     settings.setValue("DesktopIconSize", desktopIconSize_);
     settings.setValue("DesktopShortcuts", desktopShortcuts_);
-    settings.setValue("passButtonsToRoot", passButtonsToRoot_);
-    settings.setValue("passWheelToRoot", passWheelToRoot_);
+    settings.setValue("ShowWmMenu", showWmMenu_);
+    settings.setValue("PassWheelToRoot", passWheelToRoot_);
     settings.setValue("ShowHidden", desktopShowHidden_);
     settings.setValue("HideItems", desktopHideItems_);
     settings.setValue("SortOrder", sortOrderToString(desktopSortOrder_));
