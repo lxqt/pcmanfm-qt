@@ -175,7 +175,7 @@ private:
     bool wallpaperRandomize_;
     QPixmap wallpaperPixmap_;
     Launcher fileLauncher_;
-    bool passButtonsToRoot_;
+    bool showWmMenu_;
     bool passWheelToRoot_;
     bool desktopHideItems_;
 
