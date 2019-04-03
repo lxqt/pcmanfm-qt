@@ -513,9 +513,9 @@ A space is also reserved for 3 lines of text.</string>
          </property>
          <layout class="QVBoxLayout" name="horizontalLayout_3">
           <item>
-           <widget class="QCheckBox" name="passButtonsToRoot">
+           <widget class="QCheckBox" name="showWmMenu">
             <property name="text">
-             <string>Pass clicks on the desktop to the window manager.</string>
+             <string>Show menus provided by window managers when desktop is clicked.</string>
             </property>
            </widget>
           </item>
