@@ -58,7 +58,6 @@
 #include <QX11Info>
 #include <QScreen>
 #include <xcb/xcb.h>
-#include <xcb/xinput.h>
 #include <X11/Xlib.h>
 
 #define WORK_AREA_MARGIN 12 // margin of the work area
