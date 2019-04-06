@@ -281,7 +281,7 @@ Boston, MA 02110-1301 USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecteer tekstkleur:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -379,7 +379,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Snelkoppelingen zichtbaar</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
@@ -389,17 +389,17 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Prullenbak</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished">Computer</translation>
+        <translation>Computer</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished">Netwerk</translation>
+        <translation>Netwerk</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -717,12 +717,12 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopieer volledig pad</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
@@ -1196,20 +1196,18 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Prullenbak (één item)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>Prullenbak (%Ln item)</numerusform>
+        <numerusform>Prullenbak (%Ln items)</numerusform>
+        </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Prullenbak (leeg)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
@@ -1219,17 +1217,17 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
-        <translation type="unfinished">Computer</translation>
+        <translation>Computer</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
-        <translation type="unfinished">Netwerk</translation>
+        <translation>Netwerk</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="813"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Open</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="818"/>
@@ -1240,7 +1238,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Prullenbak leegmaken</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
@@ -1346,7 +1344,7 @@ Er is ook een spatie gereserveerd voor drie regels tekst.</translation>
     <message>
         <location filename="../tabpage.cpp" line="416"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="433"/>
