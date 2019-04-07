@@ -663,7 +663,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation>&amp;Copia indirizzo intero</translation>
+        <translation>&amp;Copia percorso completo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
