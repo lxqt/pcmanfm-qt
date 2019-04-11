@@ -597,6 +597,7 @@ void Application::setWallpaper(QString path, QString modeString) {
                     desktopWin->setWallpaperMode(mode);
                 }
                 desktopWin->updateWallpaper();
+                desktopWin->update();
             }
             settings_.save(); // save the settings to the config file
         }
