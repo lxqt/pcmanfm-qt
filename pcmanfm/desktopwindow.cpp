@@ -75,7 +75,6 @@ DesktopWindow::DesktopWindow(int screenNum):
     wallpaperTimer_(nullptr),
     wallpaperRandomize_(false),
     fileLauncher_(nullptr),
-    showWmMenu_(false),
     desktopHideItems_(false),
     screenNum_(screenNum),
     relayoutTimer_(nullptr),
@@ -740,7 +739,6 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     setForeground(settings.desktopFgColor());
     setBackground(settings.desktopBgColor());
     setShadow(settings.desktopShadowColor());
-    showWmMenu_ = settings.showWmMenu();
     desktopHideItems_ = settings.desktopHideItems();
     if(desktopHideItems_) {
         // hide all items by hiding the list view and also
@@ -783,9 +781,6 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
 }
 
 void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) {
-    if(!fileInfo && showWmMenu_) {
-        return;    // do not show the popup if we want to use the desktop menu provided by the WM.
-    }
     if(desktopHideItems_) { // only a context menu with desktop actions
         if(type == Fm::FolderView::ActivatedClick) {
             return;
@@ -1388,72 +1383,6 @@ void DesktopWindow::onFilePropertiesActivated() {
     }
 }
 
-static void forwardMouseEventToRoot(QMouseEvent* event) {
-    xcb_ungrab_pointer(QX11Info::connection(), event->timestamp());
-    // forward the event to the root window
-    xcb_button_press_event_t xcb_event;
-    uint32_t mask = 0;
-    xcb_event.state = 0;
-    switch(event->type()) {
-    case QEvent::MouseButtonPress:
-        xcb_event.response_type = XCB_BUTTON_PRESS;
-        mask = XCB_EVENT_MASK_BUTTON_PRESS;
-        break;
-    case QEvent::MouseButtonRelease:
-        xcb_event.response_type = XCB_BUTTON_RELEASE;
-        mask = XCB_EVENT_MASK_BUTTON_RELEASE;
-        break;
-    default:
-        return;
-    }
-
-    // convert Qt button to XCB button
-    switch(event->button()) {
-    case Qt::LeftButton:
-        xcb_event.detail = 1;
-        xcb_event.state |= XCB_BUTTON_MASK_1;
-        break;
-    case Qt::MiddleButton:
-        xcb_event.detail = 2;
-        xcb_event.state |= XCB_BUTTON_MASK_2;
-        break;
-    case Qt::RightButton:
-        xcb_event.detail = 3;
-        xcb_event.state |= XCB_BUTTON_MASK_3;
-        break;
-    default:
-        xcb_event.detail = 0;
-    }
-
-    // convert Qt modifiers to XCB states
-    if(event->modifiers() & Qt::ShiftModifier) {
-        xcb_event.state |= XCB_MOD_MASK_SHIFT;
-    }
-    if(event->modifiers() & Qt::ControlModifier) {
-        xcb_event.state |= XCB_MOD_MASK_SHIFT;
-    }
-    if(event->modifiers() & Qt::AltModifier) {
-        xcb_event.state |= XCB_MOD_MASK_1;
-    }
-
-    xcb_event.sequence = 0;
-    xcb_event.time = event->timestamp();
-
-    WId root = QX11Info::appRootWindow(QX11Info::appScreen());
-    xcb_event.event = root;
-    xcb_event.root = root;
-    xcb_event.child = 0;
-
-    xcb_event.root_x = event->globalX();
-    xcb_event.root_y = event->globalY();
-    xcb_event.event_x = event->x();
-    xcb_event.event_y = event->y();
-    xcb_event.same_screen = 1;
-
-    xcb_send_event(QX11Info::connection(), 0, root, mask, (char*)&xcb_event);
-    xcb_flush(QX11Info::connection());
-}
-
 bool DesktopWindow::event(QEvent* event) {
     switch(event->type()) {
     case QEvent::WinIdChange: {
@@ -1503,19 +1432,6 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
     }
     else if(watched == listView_->viewport()) {
         switch(event->type()) {
-        case QEvent::MouseButtonPress:
-        case QEvent::MouseButtonRelease:
-            if(showWmMenu_) {
-                QMouseEvent* e = static_cast<QMouseEvent*>(event);
-                // If we want to show the desktop menus provided by the window manager instead of ours,
-                // we have to forward the mouse events we received to the root window.
-                // check if the user click on blank area
-                QModelIndex index = listView_->indexAt(e->pos());
-                if(!index.isValid() && e->button() != Qt::LeftButton) {
-                    forwardMouseEventToRoot(e);
-                }
-            }
-            break;
         case QEvent::Paint:
             // NOTE: The drop indicator isn't drawn/updated automatically, perhaps,
             // because we paint desktop ourself. So, we draw it here.

@@ -321,14 +321,6 @@ public:
         desktopShortcuts_ = list;
     }
 
-    bool showWmMenu() const {
-        return showWmMenu_;
-    }
-
-    void setShowWmMenu(bool value) {
-        showWmMenu_ = value;
-    }
-
     bool desktopShowHidden() const {
         return desktopShowHidden_;
     }
@@ -938,7 +930,6 @@ private:
     QFont desktopFont_;
     int desktopIconSize_;
     QStringList desktopShortcuts_;
-    bool showWmMenu_;
 
     bool desktopShowHidden_;
     bool desktopHideItems_;
