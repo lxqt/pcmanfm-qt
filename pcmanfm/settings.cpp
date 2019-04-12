@@ -72,7 +72,6 @@ Settings::Settings():
     desktopFgColor_(),
     desktopShadowColor_(),
     desktopIconSize_(48),
-    showWmMenu_(false),
     desktopShowHidden_(false),
     desktopHideItems_(false),
     desktopSortOrder_(Qt::AscendingOrder),
@@ -233,7 +232,6 @@ bool Settings::loadFile(QString filePath) {
     }
     desktopIconSize_ = settings.value("DesktopIconSize", 48).toInt();
     desktopShortcuts_ = settings.value("DesktopShortcuts").toStringList();
-    showWmMenu_ = settings.value("ShowWmMenu", false).toBool();
     desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
     desktopHideItems_ = settings.value("HideItems", false).toBool();
 
@@ -369,7 +367,6 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue("Font", desktopFont_.toString());
     settings.setValue("DesktopIconSize", desktopIconSize_);
     settings.setValue("DesktopShortcuts", desktopShortcuts_);
-    settings.setValue("ShowWmMenu", showWmMenu_);
     settings.setValue("ShowHidden", desktopShowHidden_);
     settings.setValue("HideItems", desktopHideItems_);
     settings.setValue("SortOrder", sortOrderToString(desktopSortOrder_));

@@ -175,7 +175,6 @@ private:
     bool wallpaperRandomize_;
     QPixmap wallpaperPixmap_;
     Launcher fileLauncher_;
-    bool showWmMenu_;
     bool desktopHideItems_;
 
     int screenNum_;
