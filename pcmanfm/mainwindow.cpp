@@ -72,11 +72,9 @@ ViewFrame::ViewFrame(QWidget* parent):
     tabBar_->setElideMode(Qt::ElideRight);
     tabBar_->setExpanding(false);
     tabBar_->setMovable(true); // reorder the tabs by dragging
-#if QT_VERSION >= QT_VERSION_CHECK(5, 4, 0)
     // switch to the tab under the cursor during dnd.
     tabBar_->setChangeCurrentOnDrag(true);
     tabBar_->setAcceptDrops(true);
-#endif
     tabBar_->setContextMenuPolicy(Qt::CustomContextMenu);
 }
 
