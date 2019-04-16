@@ -201,7 +201,7 @@ MainWindow::MainWindow(Fm::FilePath path):
 
     // use generic icons for view actions only if theme icons don't exist
     ui.actionIconView->setIcon(QIcon::fromTheme(QLatin1String("view-list-icons"), style()->standardIcon(QStyle::SP_FileDialogContentsView)));
-    ui.actionThumbnailView->setIcon(QIcon::fromTheme(QLatin1String("dialog-information"), style()->standardIcon(QStyle::SP_FileDialogInfoView)));
+    ui.actionThumbnailView->setIcon(QIcon::fromTheme(QLatin1String("view-preview"), style()->standardIcon(QStyle::SP_FileDialogInfoView)));
     ui.actionCompactView->setIcon(QIcon::fromTheme(QLatin1String("view-list-text"), style()->standardIcon(QStyle::SP_FileDialogListView)));
     ui.actionDetailedList->setIcon(QIcon::fromTheme(QLatin1String("view-list-details"), style()->standardIcon(QStyle::SP_FileDialogDetailedView)));
 
