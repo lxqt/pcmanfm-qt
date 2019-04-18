@@ -1185,14 +1185,31 @@ void MainWindow::updateViewMenuForCurrentPage() {
         modeAction->setChecked(true);
 
         // sort menu
+        // WARNING: Since libfm-qt may have a column that is not handled here,
+        // we should prevent a crash by setting all actions to null first and
+        // check their action group later.
         QAction* sortActions[Fm::FolderModel::NumOfColumns];
+        for(int i = 0; i < Fm::FolderModel::NumOfColumns; ++i) {
+            sortActions[i] = nullptr;
+        }
         sortActions[Fm::FolderModel::ColumnFileName] = ui.actionByFileName;
         sortActions[Fm::FolderModel::ColumnFileMTime] = ui.actionByMTime;
         sortActions[Fm::FolderModel::ColumnFileSize] = ui.actionByFileSize;
         sortActions[Fm::FolderModel::ColumnFileType] = ui.actionByFileType;
         sortActions[Fm::FolderModel::ColumnFileOwner] = ui.actionByOwner;
         sortActions[Fm::FolderModel::ColumnFileGroup] = ui.actionByGroup;
-        sortActions[tabPage->sortColumn()]->setChecked(true);
+        if (auto group = ui.actionByFileName->actionGroup()) {
+            const auto actions = group->actions();
+            auto action = sortActions[tabPage->sortColumn()];
+            if(actions.contains(action)) {
+                action->setChecked(true);
+            }
+            else {
+                for(auto a : actions) {
+                    a->setChecked(false);
+                }
+            }
+        }
 
         if(tabPage->sortOrder() == Qt::AscendingOrder) {
             ui.actionAscending->setChecked(true);
