@@ -59,7 +59,7 @@ bool ProxyFilter::filterAcceptsRow(const Fm::ProxyFolderModel* model, const std:
 FilterEdit::FilterEdit(QWidget* parent) : QLineEdit(parent) {
     setClearButtonEnabled(true);
     if(QToolButton *clearButton = findChild<QToolButton*>()) {
-        clearButton->setToolTip(tr("Clear text (Ctrl+K)"));
+        clearButton->setToolTip(tr("Clear text (Ctrl+K or Esc)"));
     }
 }
 

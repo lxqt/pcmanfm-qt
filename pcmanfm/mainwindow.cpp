@@ -261,7 +261,12 @@ MainWindow::MainWindow(Fm::FilePath path):
     // create shortcuts
     QShortcut* shortcut;
     shortcut = new QShortcut(QKeySequence(Qt::Key_Escape), this);
-    connect(shortcut, &QShortcut::activated, this, &MainWindow::onResetFocus);
+    connect(shortcut, &QShortcut::activated, [this] {
+        if(currentPage()) {
+            currentPage()->clearFilter();
+            currentPage()->folderView()->childView()->setFocus();
+        }
+    });
 
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_L), this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::focusPathEntry);
