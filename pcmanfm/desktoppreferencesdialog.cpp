@@ -30,6 +30,7 @@
 #include <QRegExp>
 #include <QDebug>
 #include <QStandardPaths>
+#include <libfm-qt/filedialog.h>
 
 namespace PCManFM {
 
@@ -214,10 +215,16 @@ void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
 }
 
 void DesktopPreferencesDialog::onBrowseClicked() {
-  QFileDialog dlg;
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+
+  // use LXQt file dialog directly to set its view to thumbnail mode
+  Fm::FileDialog dlg(this);
+  dlg.resize(settings.wallpaperDialogSize());
+  dlg.setSplitterPos(settings.wallpaperDialogSplitterPos());
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
   dlg.setFileMode(QFileDialog::ExistingFile);
-  // compose a name fileter from QImageReader
+  dlg.setWindowTitle(tr("Select Wallpaper"));
+  // compose a name filter from QImageReader
   QString filter;
   filter.reserve(256);
   filter = tr("Image Files");
@@ -229,13 +236,32 @@ void DesktopPreferencesDialog::onBrowseClicked() {
     filter += ' ';
   }
   filter += ')';
-  dlg.setNameFilter(filter);
-  dlg.setNameFilterDetailsVisible(false);
-  if(dlg.exec() == QDialog::Accepted) {
-    QString filename;
-    filename = dlg.selectedFiles().constFirst();
-    ui.imageFile->setText(filename);
+  dlg.setNameFilters(QStringList() << filter);
+  dlg.setViewMode(Fm::FolderView::ThumbnailMode);
+
+  // select an appropriate file
+  QString path = ui.imageFile->text();
+  if(path.isEmpty() || !QFile::exists(path)) {
+      dlg.setDirectory(QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::PicturesLocation)));
   }
+  else if(QFileInfo(path).isDir()) {
+      dlg.setDirectory(QUrl::fromLocalFile(path));
+  }
+  else { // the path is a file
+      dlg.setDirectory(QUrl::fromLocalFile(path.section(QLatin1String("/"), 0, -2)));
+      dlg.selectFile(QUrl::fromLocalFile(path));
+  }
+
+  connect(&dlg, &QDialog::finished, [this, &dlg, &settings](int result) {
+    if(result == QDialog::Accepted) {
+      QString filename;
+      filename = dlg.selectedFiles().constFirst().toLocalFile();
+      ui.imageFile->setText(filename);
+    }
+    settings.setWallpaperDialogSplitterPos(dlg.splitterPos());
+    settings.setWallpaperDialogSize(dlg.size());
+  });
+  dlg.exec();
 }
 
 void DesktopPreferencesDialog::onFolderBrowseClicked() {
@@ -243,7 +269,18 @@ void DesktopPreferencesDialog::onFolderBrowseClicked() {
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
   dlg.setFileMode(QFileDialog::Directory);
   dlg.setOption(QFileDialog::ShowDirsOnly);
-  dlg.setDirectory(QDir::home().path());
+
+  // select an appropriate dir
+  QString path = ui.imageFolder->text();
+  if(path.isEmpty() || !QFile::exists(path)) {
+      path = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation);
+  }
+  else if(!QFileInfo(path).isDir()) {
+      path = path.section(QLatin1String("/"), 0, -2);
+  }
+  dlg.setDirectory(path.section(QLatin1String("/"), 0, -2));
+  dlg.selectFile(path);
+
   if(dlg.exec() == QDialog::Accepted) {
     QString foldername;
     foldername = dlg.selectedFiles().constFirst();

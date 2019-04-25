@@ -64,6 +64,8 @@ Settings::Settings():
     closeOnUnmount_(false),
     wallpaperMode_(0),
     wallpaper_(),
+    wallpaperDialogSize_(QSize(700, 500)),
+    wallpaperDialogSplitterPos_(200),
     lastSlide_(),
     wallpaperDir_(),
     slideShowInterval_(0),
@@ -217,6 +219,8 @@ bool Settings::loadFile(QString filePath) {
     settings.beginGroup("Desktop");
     wallpaperMode_ = wallpaperModeFromString(settings.value("WallpaperMode").toString());
     wallpaper_ = settings.value("Wallpaper").toString();
+    wallpaperDialogSize_ = settings.value("WallpaperDialogSize", QSize(700, 500)).toSize();
+    wallpaperDialogSplitterPos_ = settings.value("WallpaperDialogSplitterPos", 200).toInt();
     lastSlide_ = settings.value("LastSlide").toString();
     wallpaperDir_ = settings.value("WallpaperDirectory").toString();
     slideShowInterval_ = settings.value("SlideShowInterval", 0).toInt();
@@ -357,6 +361,8 @@ bool Settings::saveFile(QString filePath) {
     settings.beginGroup("Desktop");
     settings.setValue("WallpaperMode", wallpaperModeToString(wallpaperMode_));
     settings.setValue("Wallpaper", wallpaper_);
+    settings.setValue("WallpaperDialogSize", wallpaperDialogSize_);
+    settings.setValue("WallpaperDialogSplitterPos", wallpaperDialogSplitterPos_);
     settings.setValue("LastSlide", lastSlide_);
     settings.setValue("WallpaperDirectory", wallpaperDir_);
     settings.setValue("SlideShowInterval", slideShowInterval_);

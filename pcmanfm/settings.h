@@ -241,6 +241,22 @@ public:
         wallpaper_ = wallpaper;
     }
 
+    QSize wallpaperDialogSize() const {
+        return wallpaperDialogSize_;
+    }
+
+    void setWallpaperDialogSize(const QSize& size) {
+        wallpaperDialogSize_ = size;
+    }
+
+    int wallpaperDialogSplitterPos() const {
+        return wallpaperDialogSplitterPos_;
+    }
+
+    void setWallpaperDialogSplitterPos(int pos) {
+        wallpaperDialogSplitterPos_ = pos;
+    }
+
     QString wallpaperDir() const {
         return wallpaperDir_;
     }
@@ -920,6 +936,8 @@ private:
 
     int wallpaperMode_;
     QString wallpaper_;
+    QSize wallpaperDialogSize_;
+    int wallpaperDialogSplitterPos_;
     QString lastSlide_;
     QString wallpaperDir_;
     int slideShowInterval_;
