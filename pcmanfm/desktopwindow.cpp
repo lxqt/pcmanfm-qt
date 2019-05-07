@@ -1505,9 +1505,11 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                                 e->accept();
                                 Settings& settings = static_cast<Application*>(qApp)->settings();
                                 Fm::FileOperation::trashFiles(paths, settings.confirmTrash(), this);
-                                // remove the drop indicator
-                                dropRect_ = QRect();
-                                listView_->viewport()->update();
+                                // remove the drop indicator after the drop is finished
+                                QTimer::singleShot(0, listView_, [this] {
+                                    dropRect_ = QRect();
+                                    listView_->viewport()->update();
+                                });
                                 return;
                             }
                         }
@@ -1561,10 +1563,6 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         queueRelayout();
     }
     else {
-        // remove the drop indicator
-        dropRect_ = QRect();
-        listView_->viewport()->update();
-
         // move items to Trash if they are dropped on Trash shortcut
         QModelIndex dropIndex = listView_->indexAt(e->pos());
         if(dropIndex.isValid()) {
@@ -1583,6 +1581,11 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                             e->accept();
                             Settings& settings = static_cast<Application*>(qApp)->settings();
                             Fm::FileOperation::trashFiles(paths, settings.confirmTrash(), this);
+                            // remove the drop indicator after the drop is finished
+                            QTimer::singleShot(0, listView_, [this] {
+                                dropRect_ = QRect();
+                                listView_->viewport()->update();
+                            });
                             return;
                         }
                     }
@@ -1591,6 +1594,11 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         }
 
         Fm::FolderView::childDropEvent(e);
+
+        // remove the drop indicator after the drop is finished
+        dropRect_ = QRect();
+        listView_->viewport()->update();
+
         // position dropped items successively, starting with the drop rectangle
         if(mimeData->hasUrls()
            && (e->dropAction() == Qt::CopyAction
