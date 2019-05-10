@@ -534,7 +534,7 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
         freeFolder();
     }
 
-    Q_EMIT titleChanged(newPath.baseName().get());  // FIXME: display name
+    Q_EMIT titleChanged(QString::fromUtf8(newPath.baseName().get()));  // FIXME: display name
 
     folder_ = Fm::Folder::fromPath(newPath);
     if(addHistory) {
@@ -626,7 +626,7 @@ void TabPage::onSelChanged() {
                     msg = QStringLiteral("%5\"%1\" %5(%2) %5%3 %5(%4)")
                           .arg(encloseWithBidiMarks(fi->displayName()),
                           encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit)),
-                          encloseWithBidiMarks(fi->mimeType()->desc()),
+                          encloseWithBidiMarks(QString::fromUtf8(fi->mimeType()->desc())),
                           encloseWithBidiMarks(tr("Link to") + QChar(QChar::Space) + QString::fromStdString(fi->target())),
                           (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
                 }
@@ -634,7 +634,7 @@ void TabPage::onSelChanged() {
                     msg = QStringLiteral("%4\"%1\" %4(%2) %4%3")
                           .arg(encloseWithBidiMarks(fi->displayName()),
                           encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit)), // FIXME: deprecate fm_config
-                          encloseWithBidiMarks(fi->mimeType()->desc()),
+                          encloseWithBidiMarks(QString::fromUtf8(fi->mimeType()->desc())),
                           (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
                 }
             }
@@ -642,14 +642,14 @@ void TabPage::onSelChanged() {
                 if(fi->isSymlink()) {
                     msg = QStringLiteral("%4\"%1\" %4%2 %4(%3)")
                           .arg(encloseWithBidiMarks(fi->displayName()),
-                          encloseWithBidiMarks(fi->mimeType()->desc()),
+                          encloseWithBidiMarks(QString::fromUtf8(fi->mimeType()->desc())),
                           encloseWithBidiMarks(tr("Link to") + QChar(QChar::Space) + QString::fromStdString(fi->target())),
                           (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
                 }
                 else {
                     msg = QStringLiteral("%3\"%1\" %3%2")
                           .arg(encloseWithBidiMarks(fi->displayName()),
-                          encloseWithBidiMarks(fi->mimeType()->desc()),
+                          encloseWithBidiMarks(QString::fromUtf8(fi->mimeType()->desc())),
                           (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
                 }
             }

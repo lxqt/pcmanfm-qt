@@ -152,14 +152,14 @@ QString Settings::xdgUserConfigDir() {
 QString Settings::profileDir(QString profile, bool useFallback) {
     // try user-specific config file first
     QString dirName = xdgUserConfigDir();
-    dirName = dirName % "/pcmanfm-qt/" % profile;
+    dirName = dirName + QStringLiteral("/pcmanfm-qt/") + profile;
     QDir dir(dirName);
 
     // if user config dir does not exist, try system-wide config dirs instead
     if(!dir.exists() && useFallback) {
         QString fallbackDir;
         for(const char* const* configDir = g_get_system_config_dirs(); *configDir; ++configDir) {
-            fallbackDir = QString(*configDir) % "/pcmanfm-qt/" % profile;
+            fallbackDir = QString::fromUtf8(*configDir)  + QStringLiteral("/pcmanfm-qt/") + profile;
             dir.setPath(fallbackDir);
             if(dir.exists()) {
                 dirName = fallbackDir;
@@ -172,12 +172,12 @@ QString Settings::profileDir(QString profile, bool useFallback) {
 
 bool Settings::load(QString profile) {
     profileName_ = profile;
-    QString fileName = profileDir(profile, true) % "/settings.conf";
+    QString fileName = profileDir(profile, true) + QStringLiteral("/settings.conf");
     return loadFile(fileName);
 }
 
 bool Settings::save(QString profile) {
-    QString fileName = profileDir(profile.isEmpty() ? profileName_ : profile) % "/settings.conf";
+    QString fileName = profileDir(profile.isEmpty() ? profileName_ : profile) + QStringLiteral("/settings.conf");
     return saveFile(fileName);
 }
 
@@ -190,9 +190,9 @@ bool Settings::loadFile(QString filePath) {
         // the value from XSETTINGS instead of hard code a fallback value.
         fallbackIconThemeName_ = QLatin1String("oxygen"); // fallback icon theme name
     }
-    suCommand_ = settings.value(QStringLiteral("SuCommand"), "lxqt-sudo %s").toString();
-    setTerminal(settings.value(QStringLiteral("Terminal"), "xterm").toString());
-    setArchiver(settings.value(QStringLiteral("Archiver"), "file-roller").toString());
+    suCommand_ = settings.value(QStringLiteral("SuCommand"), QStringLiteral("lxqt-sudo %s")).toString();
+    setTerminal(settings.value(QStringLiteral("Terminal"), QStringLiteral("xterm")).toString());
+    setArchiver(settings.value(QStringLiteral("Archiver"), QStringLiteral("file-roller")).toString());
     setSiUnit(settings.value(QStringLiteral("SIUnit"), false).toBool());
 
     setOnlyUserTemplates(settings.value(QStringLiteral("OnlyUserTemplates"), false).toBool());
@@ -225,9 +225,9 @@ bool Settings::loadFile(QString filePath) {
     wallpaperDir_ = settings.value(QStringLiteral("WallpaperDirectory")).toString();
     slideShowInterval_ = settings.value(QStringLiteral("SlideShowInterval"), 0).toInt();
     wallpaperRandomize_ = settings.value(QStringLiteral("WallpaperRandomize")).toBool();
-    desktopBgColor_.setNamedColor(settings.value(QStringLiteral("BgColor"), "#000000").toString());
-    desktopFgColor_.setNamedColor(settings.value(QStringLiteral("FgColor"), "#ffffff").toString());
-    desktopShadowColor_.setNamedColor(settings.value(QStringLiteral("ShadowColor"), "#000000").toString());
+    desktopBgColor_.setNamedColor(settings.value(QStringLiteral("BgColor"), QStringLiteral("#000000")).toString());
+    desktopFgColor_.setNamedColor(settings.value(QStringLiteral("FgColor"), QStringLiteral("#ffffff")).toString());
+    desktopShadowColor_.setNamedColor(settings.value(QStringLiteral("ShadowColor"), QStringLiteral("#000000")).toString());
     if(settings.contains(QStringLiteral("Font"))) {
         desktopFont_.fromString(settings.value(QStringLiteral("Font")).toString());
     }
@@ -344,7 +344,7 @@ bool Settings::saveFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Behavior"));
-    settings.setValue(QStringLiteral("BookmarkOpenMethod"), bookmarkOpenMethodToString(bookmarkOpenMethod_));
+    settings.setValue(QStringLiteral("BookmarkOpenMethod"), QString::fromUtf8(bookmarkOpenMethodToString(bookmarkOpenMethod_)));
     // settings for use with libfm
     settings.setValue(QStringLiteral("UseTrash"), useTrash_);
     settings.setValue(QStringLiteral("SingleClick"), singleClick_);
@@ -359,7 +359,7 @@ bool Settings::saveFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Desktop"));
-    settings.setValue(QStringLiteral("WallpaperMode"), wallpaperModeToString(wallpaperMode_));
+    settings.setValue(QStringLiteral("WallpaperMode"), QString::fromUtf8(wallpaperModeToString(wallpaperMode_)));
     settings.setValue(QStringLiteral("Wallpaper"), wallpaper_);
     settings.setValue(QStringLiteral("WallpaperDialogSize"), wallpaperDialogSize_);
     settings.setValue(QStringLiteral("WallpaperDialogSplitterPos"), wallpaperDialogSplitterPos_);
@@ -375,8 +375,8 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("DesktopShortcuts"), desktopShortcuts_);
     settings.setValue(QStringLiteral("ShowHidden"), desktopShowHidden_);
     settings.setValue(QStringLiteral("HideItems"), desktopHideItems_);
-    settings.setValue(QStringLiteral("SortOrder"), sortOrderToString(desktopSortOrder_));
-    settings.setValue(QStringLiteral("SortColumn"), sortColumnToString(desktopSortColumn_));
+    settings.setValue(QStringLiteral("SortOrder"), QString::fromUtf8(sortOrderToString(desktopSortOrder_)));
+    settings.setValue(QStringLiteral("SortColumn"), QString::fromUtf8(sortColumnToString(desktopSortColumn_)));
     settings.setValue(QStringLiteral("SortFolderFirst"), desktopSortFolderFirst_);
     settings.setValue(QStringLiteral("DesktopCellMargins"), desktopCellMargins_);
     settings.endGroup();
@@ -395,10 +395,10 @@ bool Settings::saveFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("FolderView"));
-    settings.setValue(QStringLiteral("Mode"), viewModeToString(viewMode_));
+    settings.setValue(QStringLiteral("Mode"), QString::fromUtf8(viewModeToString(viewMode_)));
     settings.setValue(QStringLiteral("ShowHidden"), showHidden_);
-    settings.setValue(QStringLiteral("SortOrder"), sortOrderToString(sortOrder_));
-    settings.setValue(QStringLiteral("SortColumn"), sortColumnToString(sortColumn_));
+    settings.setValue(QStringLiteral("SortOrder"), QString::fromUtf8(sortOrderToString(sortOrder_)));
+    settings.setValue(QStringLiteral("SortColumn"), QString::fromUtf8(sortColumnToString(sortColumn_)));
     settings.setValue(QStringLiteral("SortFolderFirst"), sortFolderFirst_);
     settings.setValue(QStringLiteral("SortCaseSensitive"), sortCaseSensitive_);
     settings.setValue(QStringLiteral("ShowFilter"), showFilter_);
@@ -449,7 +449,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("AlwaysShowTabs"), alwaysShowTabs_);
     settings.setValue(QStringLiteral("ShowTabClose"), showTabClose_);
     settings.setValue(QStringLiteral("SplitterPos"), splitterPos_);
-    settings.setValue(QStringLiteral("SidePaneMode"), sidePaneModeToString(sidePaneMode_));
+    settings.setValue(QStringLiteral("SidePaneMode"), QString::fromUtf8(sidePaneModeToString(sidePaneMode_)));
     settings.setValue(QStringLiteral("ShowMenuBar"), showMenuBar_);
     settings.setValue(QStringLiteral("SplitView"), splitView_);
     settings.setValue(QStringLiteral("PathBarButtons"), pathBarButtons_);
@@ -733,20 +733,20 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
         // load sorting
         str = cfg.getString("SortOrder");
         if(str != nullptr) {
-            settings.setSortOrder(sortOrderFromString(str));
+            settings.setSortOrder(sortOrderFromString(QString::fromUtf8(str)));
             g_free(str);
         }
 
         str = cfg.getString("SortColumn");
         if(str != nullptr) {
-            settings.setSortColumn(sortColumnFromString(str));
+            settings.setSortColumn(sortColumnFromString(QString::fromUtf8(str)));
             g_free(str);
         }
 
         str = cfg.getString("ViewMode");
         if(str != nullptr) {
             // set view mode
-            settings.setViewMode(viewModeFromString(str));
+            settings.setViewMode(viewModeFromString(QString::fromUtf8(str)));
             g_free(str);
         }
 

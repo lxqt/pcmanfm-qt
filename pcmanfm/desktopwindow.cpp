@@ -532,7 +532,7 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
 
         // read info file
         QString origin;
-        info.setFileName(cacheFileName % ".info");
+        info.setFileName(cacheFileName + QStringLiteral(".info"));
         if(info.open(QIODevice::ReadOnly)) {
             // FIXME: we need to compare mtime to see if the cache is out of date
             origin = QString::fromLocal8Bit(info.readLine());
@@ -648,7 +648,7 @@ bool DesktopWindow::pickWallpaper() {
     QList<QByteArray> formats = QImageReader::supportedImageFormats();
     QStringList formatsFilters;
     for (const QByteArray& format: formats)
-        formatsFilters << QStringLiteral("*.") + format;
+        formatsFilters << QStringLiteral("*.") + QString::fromUtf8(format);
     QDir folder(wallpaperDir_);
     QStringList files = folder.entryList(formatsFilters,
                                          QDir::Files | QDir::NoDotAndDotDot,
@@ -926,7 +926,7 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
         // aren't removed yet, files are already removed.
         bool changed = false;
         QString desktopDir = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
-        desktopDir += '/';
+        desktopDir += QLatin1Char('/');
         for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend();) {
             auto& name = it->first;
             if(!QFile::exists(desktopDir + QString::fromStdString(name))) {
@@ -1193,7 +1193,7 @@ void DesktopWindow::loadItemPositions() {
     QRect workArea = screen->availableVirtualGeometry();
     workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
     QString desktopDir = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
-    desktopDir += '/';
+    desktopDir += QLatin1Char('/');
     std::vector<QPoint> usedPos;
     for(auto& item: customItemPos_) {
         usedPos.push_back(item.second);
@@ -1202,7 +1202,7 @@ void DesktopWindow::loadItemPositions() {
     // FIXME: this is inefficient
     const auto names = file.childGroups();
     for(const QString& name : names) {
-        if(!QFile::exists(desktopDir + name.toUtf8())) {
+        if(!QFile::exists(desktopDir + name)) {
             // the file may have been removed from outside LXQT
             continue;
         }
@@ -1315,7 +1315,7 @@ void DesktopWindow::onCopyFullPathActivated() {
     }
     auto paths = selectedFilePaths();
     if(paths.size() == 1) {
-        QApplication::clipboard()->setText(QString(paths.front().toString().get()), QClipboard::Clipboard);
+        QApplication::clipboard()->setText(QString::fromUtf8(paths.front().toString().get()), QClipboard::Clipboard);
     }
 }
 

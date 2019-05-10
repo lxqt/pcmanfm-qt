@@ -43,19 +43,19 @@ QString ConnectServerDialog::uriText() {
   uri += QStringLiteral("://");
   if(ui.loginAsUser->isChecked()) {
     uri += ui.userName->text();
-    uri += '@';
+    uri += QLatin1Char('@');
   }
 
   uri += ui.host->text();
   int port = ui.port->value();
   if(port != serverType.defaultPort) {
-    uri += ':';
+    uri += QLatin1Char(':');
     uri += QString::number(port);
   }
 
   QString path = ui.path->text();
-  if(path.isEmpty() || path[0] != '/') {
-    uri += '/';
+  if(path.isEmpty() || path[0] != QLatin1Char('/')) {
+    uri += QLatin1Char('/');
   }
   uri += path;
   return uri;

@@ -52,13 +52,13 @@ void XdgDir::setDesktopDir(QString path) {
         path = QStringLiteral("$HOME") + path.mid(home.length());
     QString str = readUserDirsFile();
     QRegExp reg(QStringLiteral("XDG_DESKTOP_DIR=\"([^\n]*)\""));
-    QString line = QStringLiteral("XDG_DESKTOP_DIR=\"") + path + '\"';
+    QString line = QStringLiteral("XDG_DESKTOP_DIR=\"") + path + QLatin1Char('\"');
     if(reg.indexIn(str) != -1)
         str.replace(reg, line);
     else {
-        if(!str.endsWith('\n'))
-            str += '\n';
-        str += line + '\n';
+        if(!str.endsWith(QLatin1Char('\n')))
+            str += QLatin1Char('\n');
+        str += line + QLatin1Char('\n');
     }
     QString dir = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation);
     if(QDir().mkpath(dir)) { // write the file

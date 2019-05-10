@@ -86,11 +86,11 @@ Application::Application(int& argc, char** argv):
     argc_ = argc;
     argv_ = argv;
 
-    setApplicationVersion(PCMANFM_QT_VERSION);
+    setApplicationVersion(QStringLiteral(PCMANFM_QT_VERSION));
 
     // QDBusConnection::sessionBus().registerObject("/org/pcmanfm/Application", this);
     QDBusConnection dbus = QDBusConnection::sessionBus();
-    if(dbus.registerService(serviceName)) {
+    if(dbus.registerService(QLatin1String(serviceName))) {
         // we successfully registered the service
         isPrimaryInstance = true;
         setStyle(new ProxyStyle());
@@ -209,7 +209,7 @@ bool Application::parseCommandLineArgs() {
         settings_.load(profileName_);
 
         // init per-folder config
-        QString perFolderConfigFile = settings_.profileDir(profileName_) + "/dir-settings.conf";
+        QString perFolderConfigFile = settings_.profileDir(profileName_) + QStringLiteral("/dir-settings.conf");
         Fm::FolderConfig::init(perFolderConfigFile.toLocal8Bit().constData());
 
         // decrease the cache size to reduce memory usage
@@ -262,7 +262,7 @@ bool Application::parseCommandLineArgs() {
     }
     else {
         QDBusConnection dbus = QDBusConnection::sessionBus();
-        QDBusInterface iface(serviceName, QStringLiteral("/Application"), ifaceName, dbus, this);
+        QDBusInterface iface(QLatin1String(serviceName), QStringLiteral("/Application"), QLatin1String(ifaceName), dbus, this);
         if(parser.isSet(quitOption)) {
             iface.call(QStringLiteral("quit"));
             return false;
@@ -303,14 +303,14 @@ bool Application::parseCommandLineArgs() {
 void Application::init() {
 
     // install the translations built-into Qt itself
-    qtTranslator.load("qt_" + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+    qtTranslator.load(QStringLiteral("qt_") + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
     installTranslator(&qtTranslator);
 
     // install libfm-qt translator
     installTranslator(libFm_.translator());
 
     // install our own tranlations
-    translator.load("pcmanfm-qt_" + QLocale::system().name(), PCMANFM_DATA_DIR "/translations");
+    translator.load(QStringLiteral("pcmanfm-qt_") + QLocale::system().name(), QStringLiteral(PCMANFM_DATA_DIR) + QStringLiteral("/translations"));
     installTranslator(&translator);
 }
 
@@ -574,7 +574,7 @@ void Application::setWallpaper(QString path, QString modeString) {
     }
     // convert mode string to value
     for(std::size_t i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
-        if(modeString == valid_wallpaper_modes[i]) {
+        if(modeString == QLatin1String(valid_wallpaper_modes[i])) {
             // We don't take safety checks because valid_wallpaper_modes[] is
             // defined in this function and we can clearly see that it does not
             // overflow.

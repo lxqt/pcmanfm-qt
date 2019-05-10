@@ -232,10 +232,10 @@ void DesktopPreferencesDialog::onBrowseClicked() {
   const QList<QByteArray> formats = QImageReader::supportedImageFormats();
   for(const QByteArray& format : formats) {
     filter += QLatin1String("*.");
-    filter += format.toLower();
-    filter += ' ';
+    filter += QString::fromUtf8(format.toLower());
+    filter += QLatin1Char(' ');
   }
-  filter += ')';
+  filter += QLatin1Char(')');
   dlg.setNameFilters(QStringList() << filter);
   dlg.setViewMode(Fm::FolderView::ThumbnailMode);
 
@@ -302,7 +302,7 @@ void DesktopPreferencesDialog::onBrowseDesktopFolderClicked()
 }
 
 void DesktopPreferencesDialog::selectPage(QString name) {
-  QWidget* page = findChild<QWidget*>(name + "Page");
+  QWidget* page = findChild<QWidget*>(name + QStringLiteral("Page"));
   if(page)
     ui.tabWidget->setCurrentWidget(page);
 }
