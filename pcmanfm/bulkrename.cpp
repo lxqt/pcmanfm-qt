@@ -73,7 +73,7 @@ BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
     QProgressDialog progress(QObject::tr("Renaming files..."), QObject::tr("Abort"), 0, files.size(), parent);
     progress.setWindowModality(Qt::WindowModal);
     int i = 0, failed = 0;
-    const QRegularExpression extension("\\.[^.#]+$");
+    const QRegularExpression extension(QStringLiteral("\\.[^.#]+$"));
     bool noExtension(baseName.indexOf(extension) == -1);
     for(auto& file: files) {
         progress.setValue(i);

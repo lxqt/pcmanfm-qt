@@ -449,7 +449,7 @@ QString TabPage::formatStatusText() {
         }
         auto fi = folder_->info();
         if (fi && fi->isSymlink()) {
-            text += QString(" %2(%1)")
+            text += QStringLiteral(" %2(%1)")
                     .arg(encloseWithBidiMarks(tr("Link to") + QChar(QChar::Space) + QString::fromStdString(fi->target())),
                     (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
         }
@@ -623,7 +623,7 @@ void TabPage::onSelChanged() {
             auto& fi = files.front();
             if(!fi->isDir()) {
                 if(fi->isSymlink()) {
-                    msg = QString("%5\"%1\" %5(%2) %5%3 %5(%4)")
+                    msg = QStringLiteral("%5\"%1\" %5(%2) %5%3 %5(%4)")
                           .arg(encloseWithBidiMarks(fi->displayName()),
                           encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit)),
                           encloseWithBidiMarks(fi->mimeType()->desc()),
@@ -631,7 +631,7 @@ void TabPage::onSelChanged() {
                           (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
                 }
                 else {
-                    msg = QString("%4\"%1\" %4(%2) %4%3")
+                    msg = QStringLiteral("%4\"%1\" %4(%2) %4%3")
                           .arg(encloseWithBidiMarks(fi->displayName()),
                           encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit)), // FIXME: deprecate fm_config
                           encloseWithBidiMarks(fi->mimeType()->desc()),
@@ -640,14 +640,14 @@ void TabPage::onSelChanged() {
             }
             else {
                 if(fi->isSymlink()) {
-                    msg = QString("%4\"%1\" %4%2 %4(%3)")
+                    msg = QStringLiteral("%4\"%1\" %4%2 %4(%3)")
                           .arg(encloseWithBidiMarks(fi->displayName()),
                           encloseWithBidiMarks(fi->mimeType()->desc()),
                           encloseWithBidiMarks(tr("Link to") + QChar(QChar::Space) + QString::fromStdString(fi->target())),
                           (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
                 }
                 else {
-                    msg = QString("%3\"%1\" %3%2")
+                    msg = QStringLiteral("%3\"%1\" %3%2")
                           .arg(encloseWithBidiMarks(fi->displayName()),
                           encloseWithBidiMarks(fi->mimeType()->desc()),
                           (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
@@ -671,7 +671,7 @@ void TabPage::onSelChanged() {
                     sum += fi->size();
                 }
                 if(sum >= 0) {
-                    msg += QString(" (%1)").arg(Fm::formatFileSize(sum, fm_config->si_unit)); // FIXME: deprecate fm_config
+                    msg += QStringLiteral(" (%1)").arg(Fm::formatFileSize(sum, fm_config->si_unit)); // FIXME: deprecate fm_config
                 }
                 /* FIXME: should we support statusbar plugins as in the gtk+ version? */
             }

@@ -88,7 +88,7 @@ void PreferencesDialog::initIconThemes(Settings& settings) {
             findIconThemesInDir(iconThemes, QString(*dataDir) % "/icons");
         }
 
-        iconThemes.remove("hicolor"); // remove hicolor, which is only a fallback
+        iconThemes.remove(QStringLiteral("hicolor")); // remove hicolor, which is only a fallback
         QHash<QString, QString>::const_iterator it;
         for(it = iconThemes.constBegin(); it != iconThemes.constEnd(); ++it) {
             ui.iconTheme->addItem(it.value(), it.key());
@@ -135,7 +135,7 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
     // icon sizes
     int i = 0;
     for (const auto & size : Settings::iconSizes(Settings::Big)) {
-        ui.bigIconSize->addItem(QString("%1 x %1").arg(size), size);
+        ui.bigIconSize->addItem(QStringLiteral("%1 x %1").arg(size), size);
         if(settings.bigIconSize() == size) {
             ui.bigIconSize->setCurrentIndex(i);
         }
@@ -143,7 +143,7 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
     }
     i = 0;
     for (const auto & size : Settings::iconSizes(Settings::Small)) {
-        QString text = QString("%1 x %1").arg(size);
+        QString text = QStringLiteral("%1 x %1").arg(size);
         ui.smallIconSize->addItem(text, size);
         if(settings.smallIconSize() == size) {
             ui.smallIconSize->setCurrentIndex(i);
@@ -157,7 +157,7 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
     }
     i = 0;
     for (const auto & size : Settings::iconSizes(Settings::Thumbnail)) {
-        ui.thumbnailIconSize->addItem(QString("%1 x %1").arg(size), size);
+        ui.thumbnailIconSize->addItem(QStringLiteral("%1 x %1").arg(size), size);
         if(settings.thumbnailIconSize() == size) {
             ui.thumbnailIconSize->setCurrentIndex(i);
         }

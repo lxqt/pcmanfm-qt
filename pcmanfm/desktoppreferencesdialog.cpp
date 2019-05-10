@@ -95,7 +95,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
 
   for(std::size_t i = 0; i < G_N_ELEMENTS(iconSizes); ++i) {
     int size = iconSizes[i];
-    ui.iconSize->addItem(QString("%1 x %1").arg(size), size);
+    ui.iconSize->addItem(QStringLiteral("%1 x %1").arg(size), size);
     if(settings.desktopIconSize() == size)
       ui.iconSize->setCurrentIndex(i);
   }
@@ -228,10 +228,10 @@ void DesktopPreferencesDialog::onBrowseClicked() {
   QString filter;
   filter.reserve(256);
   filter = tr("Image Files");
-  filter += " (";
+  filter += QLatin1String(" (");
   const QList<QByteArray> formats = QImageReader::supportedImageFormats();
   for(const QByteArray& format : formats) {
-    filter += "*.";
+    filter += QLatin1String("*.");
     filter += format.toLower();
     filter += ' ';
   }

@@ -66,7 +66,7 @@ void TabBar::mouseMoveEvent(QMouseEvent *event)
 
         QPointer<QDrag> drag = new QDrag(this);
         QMimeData *mimeData = new QMimeData;
-        mimeData->setData("application/pcmanfm-qt-tab", QByteArray());
+        mimeData->setData(QStringLiteral("application/pcmanfm-qt-tab"), QByteArray());
         drag->setMimeData(mimeData);
         Qt::DropAction dragged = drag->exec();
         if(dragged == Qt::IgnoreAction) { // a tab is dropped outside all windows
@@ -110,7 +110,7 @@ void TabBar::mouseReleaseEvent(QMouseEvent *event) {
 
 // Let the main window receive dragged tabs!
 void TabBar::dragEnterEvent(QDragEnterEvent *event) {
-    if(detachable_ && event->mimeData()->hasFormat("application/pcmanfm-qt-tab")) {
+    if(detachable_ && event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))) {
         event->ignore();
     }
 }

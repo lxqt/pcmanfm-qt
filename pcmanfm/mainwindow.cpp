@@ -246,7 +246,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     menu->addMenu(ui.menu_Help);
     ui.actionMenu->setMenu(menu);
     if(ui.actionMenu->icon().isNull()) {
-        ui.actionMenu->setIcon(QIcon::fromTheme("applications-system"));
+        ui.actionMenu->setIcon(QIcon::fromTheme(QStringLiteral("applications-system")));
     }
     QToolButton* menuBtn = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionMenu));
     menuBtn->setPopupMode(QToolButton::InstantPopup);
@@ -1761,7 +1761,7 @@ void MainWindow::focusPathEntry() {
 }
 
 void MainWindow::dragEnterEvent(QDragEnterEvent* event) {
-    if(event->mimeData()->hasFormat("application/pcmanfm-qt-tab")
+    if(event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))
        // ensure that the tab drag source is ours (and not a root window, for example)
        && lastActive_ && lastActive_->isActiveWindow()) {
         event->acceptProposedAction();
@@ -1769,7 +1769,7 @@ void MainWindow::dragEnterEvent(QDragEnterEvent* event) {
 }
 
 void MainWindow::dropEvent(QDropEvent* event) {
-    if(event->mimeData()->hasFormat("application/pcmanfm-qt-tab")) {
+    if(event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))) {
         dropTab();
     }
     event->acceptProposedAction();
@@ -1896,7 +1896,7 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
         else {
             // show an error message and ask the user to set the command
             QMessageBox::critical(this, tr("Error"), tr("Switch user command is not set."));
-            app->preferences("advanced");
+            app->preferences(QStringLiteral("advanced"));
         }
     }
 }
