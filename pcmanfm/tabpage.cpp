@@ -825,10 +825,18 @@ void TabPage::setCustomizedView(bool value) {
     }
     else { // use default folder view settings
         settings.clearFolderSettings(path());
-        setShowHidden(settings.showHidden());
-        setSortCaseSensitive(settings.sortCaseSensitive());
-        setSortFolderFirst(settings.sortFolderFirst());
-        sort(settings.sortColumn(), settings.sortOrder());
+        // settings may change temporarily by connecting to the signal TabPage::sortFilterChanged,
+        // which will be emitted below (that happens in MainWindow::onTabPageSortFilterChanged,
+        // for example), so we should remember its relevant values before proceeding
+        bool showHidden = settings.showHidden();
+        bool sortCaseSensitive = settings.sortCaseSensitive();
+        bool sortFolderFirst = settings.sortFolderFirst();
+        Fm::FolderModel::ColumnId sortColumn = settings.sortColumn();
+        Qt::SortOrder sortOrder = settings.sortOrder();
+        setShowHidden(showHidden);
+        setSortCaseSensitive(sortCaseSensitive);
+        setSortFolderFirst(sortFolderFirst);
+        sort(sortColumn, sortOrder);
     }
 }
 
