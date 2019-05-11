@@ -1,6 +1,6 @@
 [System]
 IconThemeName=elementary
-SuCommand=lxqt-sudo %s
+SuCommand=lxsudo dbus-run-session -- %s
 TerminalCommand=
 Archiver=file-roller
 SIUnit=false
