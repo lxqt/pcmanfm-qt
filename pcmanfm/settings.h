@@ -131,7 +131,7 @@ public:
     Settings();
     virtual ~Settings();
 
-    bool load(QString profile = "default");
+    bool load(QString profile = QStringLiteral("default"));
     bool save(QString profile = QString());
 
     bool loadFile(QString filePath);

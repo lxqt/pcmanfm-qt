@@ -532,7 +532,7 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
 
         // read info file
         QString origin;
-        info.setFileName(cacheFileName % ".info");
+        info.setFileName(cacheFileName + QStringLiteral(".info"));
         if(info.open(QIODevice::ReadOnly)) {
             // FIXME: we need to compare mtime to see if the cache is out of date
             origin = QString::fromLocal8Bit(info.readLine());
@@ -648,7 +648,7 @@ bool DesktopWindow::pickWallpaper() {
     QList<QByteArray> formats = QImageReader::supportedImageFormats();
     QStringList formatsFilters;
     for (const QByteArray& format: formats)
-        formatsFilters << QString("*.") + format;
+        formatsFilters << QStringLiteral("*.") + QString::fromUtf8(format);
     QDir folder(wallpaperDir_);
     QStringList files = folder.entryList(formatsFilters,
                                          QDir::Files | QDir::NoDotAndDotDot,
@@ -926,7 +926,7 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
         // aren't removed yet, files are already removed.
         bool changed = false;
         QString desktopDir = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
-        desktopDir += '/';
+        desktopDir += QLatin1Char('/');
         for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend();) {
             auto& name = it->first;
             if(!QFile::exists(desktopDir + QString::fromStdString(name))) {
@@ -1185,7 +1185,7 @@ void DesktopWindow::loadItemPositions() {
     // load custom item positions
     customItemPos_.clear();
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    QString configFile = QString("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
+    QString configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
     QSettings file(configFile, QSettings::IniFormat);
 
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
@@ -1193,7 +1193,7 @@ void DesktopWindow::loadItemPositions() {
     QRect workArea = screen->availableVirtualGeometry();
     workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
     QString desktopDir = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
-    desktopDir += '/';
+    desktopDir += QLatin1Char('/');
     std::vector<QPoint> usedPos;
     for(auto& item: customItemPos_) {
         usedPos.push_back(item.second);
@@ -1202,12 +1202,12 @@ void DesktopWindow::loadItemPositions() {
     // FIXME: this is inefficient
     const auto names = file.childGroups();
     for(const QString& name : names) {
-        if(!QFile::exists(desktopDir + name.toUtf8())) {
+        if(!QFile::exists(desktopDir + name)) {
             // the file may have been removed from outside LXQT
             continue;
         }
         file.beginGroup(name);
-        QVariant var = file.value("pos");
+        QVariant var = file.value(QStringLiteral("pos"));
         if(var.isValid()) {
             QPoint customPos = var.toPoint();
             if(customPos.x() >= workArea.x() && customPos.y() >= workArea.y()
@@ -1234,7 +1234,7 @@ void DesktopWindow::loadItemPositions() {
 void DesktopWindow::saveItemPositions() {
     Settings& settings = static_cast<Application*>(qApp)->settings();
     // store custom item positions
-    QString configFile = QString("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
+    QString configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
     // FIXME: using QSettings here is inefficient and it's not friendly to UTF-8.
     QSettings file(configFile, QSettings::IniFormat);
     file.clear(); // remove all existing entries
@@ -1244,7 +1244,7 @@ void DesktopWindow::saveItemPositions() {
         auto& name = it->first;
         auto& pos = it->second;
         file.beginGroup(QString::fromStdString(name));
-        file.setValue("pos", pos);
+        file.setValue(QStringLiteral("pos"), pos);
         file.endGroup();
     }
 }
@@ -1315,7 +1315,7 @@ void DesktopWindow::onCopyFullPathActivated() {
     }
     auto paths = selectedFilePaths();
     if(paths.size() == 1) {
-        QApplication::clipboard()->setText(QString(paths.front().toString().get()), QClipboard::Clipboard);
+        QApplication::clipboard()->setText(QString::fromUtf8(paths.front().toString().get()), QClipboard::Clipboard);
     }
 }
 
@@ -1491,7 +1491,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
     if(e->source() == listView_ && e->keyboardModifiers() == Qt::NoModifier) {
         // drag source is our list view, and no other modifier keys are pressed
         // => we're dragging desktop items
-        if(mimeData->hasFormat("application/x-qabstractitemmodeldatalist")) {
+        if(mimeData->hasFormat(QStringLiteral("application/x-qabstractitemmodeldatalist"))) {
             QModelIndex dropIndex = listView_->indexAt(e->pos());
             if(dropIndex.isValid() // drop on an item
                && curIndx.isValid() && curIndx != dropIndex) { // not a drop on self

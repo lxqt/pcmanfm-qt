@@ -41,7 +41,7 @@ AutoRunDialog::AutoRunDialog(GVolume* volume, GMount* mount, QWidget* parent, Qt
     ui.icon->setPixmap(icon.pixmap(QSize(48, 48)));
 
     // add actions
-    QListWidgetItem* item = new QListWidgetItem(QIcon::fromTheme("system-file-manager"), tr("Open in file manager"));
+    QListWidgetItem* item = new QListWidgetItem(QIcon::fromTheme(QStringLiteral("system-file-manager")), tr("Open in file manager"));
     ui.listWidget->addItem(item);
 
     g_mount_guess_content_type(mount, TRUE, cancellable, (GAsyncReadyCallback)onContentTypeFinished, this);

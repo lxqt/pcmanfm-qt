@@ -73,7 +73,7 @@ Application::Application(int& argc, char** argv):
     QApplication(argc, argv),
     libFm_(),
     settings_(),
-    profileName_("default"),
+    profileName_(QStringLiteral("default")),
     daemonMode_(false),
     enableDesktopManager_(false),
     desktopWindows_(),
@@ -86,18 +86,18 @@ Application::Application(int& argc, char** argv):
     argc_ = argc;
     argv_ = argv;
 
-    setApplicationVersion(PCMANFM_QT_VERSION);
+    setApplicationVersion(QStringLiteral(PCMANFM_QT_VERSION));
 
     // QDBusConnection::sessionBus().registerObject("/org/pcmanfm/Application", this);
     QDBusConnection dbus = QDBusConnection::sessionBus();
-    if(dbus.registerService(serviceName)) {
+    if(dbus.registerService(QLatin1String(serviceName))) {
         // we successfully registered the service
         isPrimaryInstance = true;
         setStyle(new ProxyStyle());
         //desktop()->installEventFilter(this);
 
         new ApplicationAdaptor(this);
-        dbus.registerObject("/Application", this);
+        dbus.registerObject(QStringLiteral("/Application"), this);
 
         connect(this, &Application::aboutToQuit, this, &Application::onAboutToQuit);
         // aboutToQuit() is not signalled on SIGTERM, install signal handler
@@ -158,40 +158,40 @@ bool Application::parseCommandLineArgs() {
     parser.addHelpOption();
     parser.addVersionOption();
 
-    QCommandLineOption profileOption(QStringList() << "p" << "profile", tr("Name of configuration profile"), tr("PROFILE"));
+    QCommandLineOption profileOption(QStringList() << QStringLiteral("p") << QStringLiteral("profile"), tr("Name of configuration profile"), tr("PROFILE"));
     parser.addOption(profileOption);
 
-    QCommandLineOption daemonOption(QStringList() << "d" << "daemon-mode", tr("Run PCManFM as a daemon"));
+    QCommandLineOption daemonOption(QStringList() << QStringLiteral("d") << QStringLiteral("daemon-mode"), tr("Run PCManFM as a daemon"));
     parser.addOption(daemonOption);
 
-    QCommandLineOption quitOption(QStringList() << "q" << "quit", tr("Quit PCManFM"));
+    QCommandLineOption quitOption(QStringList() << QStringLiteral("q") << QStringLiteral("quit"), tr("Quit PCManFM"));
     parser.addOption(quitOption);
 
-    QCommandLineOption desktopOption("desktop", tr("Launch desktop manager"));
+    QCommandLineOption desktopOption(QStringLiteral("desktop"), tr("Launch desktop manager"));
     parser.addOption(desktopOption);
 
-    QCommandLineOption desktopOffOption("desktop-off", tr("Turn off desktop manager if it's running"));
+    QCommandLineOption desktopOffOption(QStringLiteral("desktop-off"), tr("Turn off desktop manager if it's running"));
     parser.addOption(desktopOffOption);
 
-    QCommandLineOption desktopPrefOption("desktop-pref", tr("Open desktop preference dialog on the page with the specified name"), tr("NAME"));
+    QCommandLineOption desktopPrefOption(QStringLiteral("desktop-pref"), tr("Open desktop preference dialog on the page with the specified name"), tr("NAME"));
     parser.addOption(desktopPrefOption);
 
-    QCommandLineOption newWindowOption(QStringList() << "n" << "new-window", tr("Open new window"));
+    QCommandLineOption newWindowOption(QStringList() << QStringLiteral("n") << QStringLiteral("new-window"), tr("Open new window"));
     parser.addOption(newWindowOption);
 
-    QCommandLineOption findFilesOption(QStringList() << "f" << "find-files", tr("Open Find Files utility"));
+    QCommandLineOption findFilesOption(QStringList() << QStringLiteral("f") << QStringLiteral("find-files"), tr("Open Find Files utility"));
     parser.addOption(findFilesOption);
 
-    QCommandLineOption setWallpaperOption(QStringList() << "w" << "set-wallpaper", tr("Set desktop wallpaper from image FILE"), tr("FILE"));
+    QCommandLineOption setWallpaperOption(QStringList() << QStringLiteral("w") << QStringLiteral("set-wallpaper"), tr("Set desktop wallpaper from image FILE"), tr("FILE"));
     parser.addOption(setWallpaperOption);
 
-    QCommandLineOption wallpaperModeOption("wallpaper-mode", tr("Set mode of desktop wallpaper. MODE=(%1)").arg("color|stretch|fit|center|tile|zoom"), tr("MODE"));
+    QCommandLineOption wallpaperModeOption(QStringLiteral("wallpaper-mode"), tr("Set mode of desktop wallpaper. MODE=(%1)").arg(QStringLiteral("color|stretch|fit|center|tile|zoom")), tr("MODE"));
     parser.addOption(wallpaperModeOption);
 
-    QCommandLineOption showPrefOption("show-pref", tr("Open Preferences dialog on the page with the specified name"), tr("NAME"));
+    QCommandLineOption showPrefOption(QStringLiteral("show-pref"), tr("Open Preferences dialog on the page with the specified name"), tr("NAME"));
     parser.addOption(showPrefOption);
 
-    parser.addPositionalArgument("files", tr("Files or directories to open"), tr("[FILE1, FILE2,...]"));
+    parser.addPositionalArgument(QStringLiteral("files"), tr("Files or directories to open"), tr("[FILE1, FILE2,...]"));
 
     parser.process(arguments());
 
@@ -209,7 +209,7 @@ bool Application::parseCommandLineArgs() {
         settings_.load(profileName_);
 
         // init per-folder config
-        QString perFolderConfigFile = settings_.profileDir(profileName_) + "/dir-settings.conf";
+        QString perFolderConfigFile = settings_.profileDir(profileName_) + QStringLiteral("/dir-settings.conf");
         Fm::FolderConfig::init(perFolderConfigFile.toLocal8Bit().constData());
 
         // decrease the cache size to reduce memory usage
@@ -262,30 +262,30 @@ bool Application::parseCommandLineArgs() {
     }
     else {
         QDBusConnection dbus = QDBusConnection::sessionBus();
-        QDBusInterface iface(serviceName, "/Application", ifaceName, dbus, this);
+        QDBusInterface iface(QLatin1String(serviceName), QStringLiteral("/Application"), QLatin1String(ifaceName), dbus, this);
         if(parser.isSet(quitOption)) {
-            iface.call("quit");
+            iface.call(QStringLiteral("quit"));
             return false;
         }
 
         if(parser.isSet(desktopOption)) {
-            iface.call("desktopManager", true);
+            iface.call(QStringLiteral("desktopManager"), true);
         }
         else if(parser.isSet(desktopOffOption)) {
-            iface.call("desktopManager", false);
+            iface.call(QStringLiteral("desktopManager"), false);
         }
 
         if(parser.isSet(desktopPrefOption)) { // desktop preference dialog
-            iface.call("desktopPrefrences", parser.value(desktopPrefOption));
+            iface.call(QStringLiteral("desktopPrefrences"), parser.value(desktopPrefOption));
         }
         else if(parser.isSet(findFilesOption)) { // file searching utility
-            iface.call("findFiles", parser.positionalArguments());
+            iface.call(QStringLiteral("findFiles"), parser.positionalArguments());
         }
         else if(parser.isSet(showPrefOption)) { // preferences dialog
-            iface.call("preferences", parser.value(showPrefOption));
+            iface.call(QStringLiteral("preferences"), parser.value(showPrefOption));
         }
         else if(parser.isSet(setWallpaperOption) || parser.isSet(wallpaperModeOption)) { // set wall paper
-            iface.call("setWallpaper", parser.value(setWallpaperOption), parser.value(wallpaperModeOption));
+            iface.call(QStringLiteral("setWallpaper"), parser.value(setWallpaperOption), parser.value(wallpaperModeOption));
         }
         else {
             if(!parser.isSet(desktopOption) && !parser.isSet(desktopOffOption)) {
@@ -293,7 +293,7 @@ bool Application::parseCommandLineArgs() {
                 if(paths.isEmpty()) {
                     paths.push_back(QDir::currentPath());
                 }
-                iface.call("launchFiles", QDir::currentPath(), paths, parser.isSet(newWindowOption));
+                iface.call(QStringLiteral("launchFiles"), QDir::currentPath(), paths, parser.isSet(newWindowOption));
             }
         }
     }
@@ -303,14 +303,14 @@ bool Application::parseCommandLineArgs() {
 void Application::init() {
 
     // install the translations built-into Qt itself
-    qtTranslator.load("qt_" + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+    qtTranslator.load(QStringLiteral("qt_") + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
     installTranslator(&qtTranslator);
 
     // install libfm-qt translator
     installTranslator(libFm_.translator());
 
     // install our own tranlations
-    translator.load("pcmanfm-qt_" + QLocale::system().name(), PCMANFM_DATA_DIR "/translations");
+    translator.load(QStringLiteral("pcmanfm-qt_") + QLocale::system().name(), QStringLiteral(PCMANFM_DATA_DIR) + QStringLiteral("/translations"));
     installTranslator(&translator);
 }
 
@@ -544,7 +544,7 @@ void Application::openFolderInTerminal(Fm::FilePath path) {
     else {
         // show an error message and ask the user to set the command
         QMessageBox::critical(nullptr, tr("Error"), tr("Terminal emulator is not set."));
-        preferences("advanced");
+        preferences(QStringLiteral("advanced"));
     }
 }
 
@@ -574,7 +574,7 @@ void Application::setWallpaper(QString path, QString modeString) {
     }
     // convert mode string to value
     for(std::size_t i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
-        if(modeString == valid_wallpaper_modes[i]) {
+        if(modeString == QLatin1String(valid_wallpaper_modes[i])) {
             // We don't take safety checks because valid_wallpaper_modes[] is
             // defined in this function and we can clearly see that it does not
             // overflow.

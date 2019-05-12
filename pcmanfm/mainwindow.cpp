@@ -246,7 +246,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     menu->addMenu(ui.menu_Help);
     ui.actionMenu->setMenu(menu);
     if(ui.actionMenu->icon().isNull()) {
-        ui.actionMenu->setIcon(QIcon::fromTheme("applications-system"));
+        ui.actionMenu->setIcon(QIcon::fromTheme(QStringLiteral("applications-system")));
     }
     QToolButton* menuBtn = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionMenu));
     menuBtn->setPopupMode(QToolButton::InstantPopup);
@@ -970,7 +970,7 @@ void MainWindow::on_actionAddToBookmarks_triggered() {
         auto cwd = page->path();
         if(cwd) {
             auto dispName = cwd.baseName();
-            bookmarks_->insert(cwd, dispName.get(), -1);
+            bookmarks_->insert(cwd, QString::fromUtf8(dispName.get()), -1);
         }
     }
 }
@@ -986,7 +986,7 @@ void MainWindow::on_actionAbout_triggered() {
     public:
         explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) : QDialog(parent, f) {
             ui.setupUi(this);
-            ui.version->setText(tr("Version: %1").arg(PCMANFM_QT_VERSION));
+            ui.version->setText(tr("Version: %1").arg(QStringLiteral(PCMANFM_QT_VERSION)));
         }
     private:
         Ui::AboutDialog ui;
@@ -1618,8 +1618,8 @@ void MainWindow::on_actionPreferences_triggered() {
 
 // change some icons according to layout direction
 void MainWindow::setRTLIcons(bool isRTL) {
-    QIcon nxtIcn = QIcon::fromTheme("go-next");
-    QIcon prevIcn = QIcon::fromTheme("go-previous");
+    QIcon nxtIcn = QIcon::fromTheme(QStringLiteral("go-next"));
+    QIcon prevIcn = QIcon::fromTheme(QStringLiteral("go-previous"));
     if(isRTL) {
         ui.actionGoBack->setIcon(nxtIcn);
         ui.actionCloseLeft->setIcon(nxtIcn);
@@ -1666,7 +1666,7 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
         const BrowseHistoryItem& item = history.at(i);
         auto path = item.path();
         auto name = path.displayName();
-        QAction* action = menu.addAction(name.get());
+        QAction* action = menu.addAction(QString::fromUtf8(name.get()));
         if(i == static_cast<size_t>(current)) {
             // make the current path bold and checked
             action->setCheckable(true);
@@ -1761,7 +1761,7 @@ void MainWindow::focusPathEntry() {
 }
 
 void MainWindow::dragEnterEvent(QDragEnterEvent* event) {
-    if(event->mimeData()->hasFormat("application/pcmanfm-qt-tab")
+    if(event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))
        // ensure that the tab drag source is ours (and not a root window, for example)
        && lastActive_ && lastActive_->isActiveWindow()) {
         event->acceptProposedAction();
@@ -1769,7 +1769,7 @@ void MainWindow::dragEnterEvent(QDragEnterEvent* event) {
 }
 
 void MainWindow::dropEvent(QDropEvent* event) {
-    if(event->mimeData()->hasFormat("application/pcmanfm-qt-tab")) {
+    if(event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))) {
         dropTab();
     }
     event->acceptProposedAction();
@@ -1831,7 +1831,7 @@ void MainWindow::updateFromSettings(Settings& settings) {
 
     // menu
     ui.actionDelete->setText(settings.useTrash() ? tr("&Move to Trash") : tr("&Delete"));
-    ui.actionDelete->setIcon(settings.useTrash() ? QIcon::fromTheme("user-trash") : QIcon::fromTheme("edit-delete"));
+    ui.actionDelete->setIcon(settings.useTrash() ? QIcon::fromTheme(QStringLiteral("user-trash")) : QIcon::fromTheme(QStringLiteral("edit-delete")));
 
     // side pane
     ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
@@ -1896,7 +1896,7 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
         else {
             // show an error message and ask the user to set the command
             QMessageBox::critical(this, tr("Error"), tr("Switch user command is not set."));
-            app->preferences("advanced");
+            app->preferences(QStringLiteral("advanced"));
         }
     }
 }
@@ -1909,7 +1909,7 @@ void MainWindow::on_actionFindFiles_triggered() {
         for(auto& path: selectedPaths) {
             // FIXME: is it ok to use display name here?
             // This might be broken on filesystems with non-UTF-8 filenames.
-            paths.append(path.displayName().get());
+            paths.append(QString::fromUtf8(path.displayName().get()));
         }
     }
     else {
@@ -1931,7 +1931,7 @@ void MainWindow::on_actionCopyFullPath_triggered() {
     if(page) {
         auto paths = page->selectedFilePaths();
         if(paths.size() == 1) {
-            QApplication::clipboard()->setText(QString(paths.front().toString().get()), QClipboard::Clipboard);
+            QApplication::clipboard()->setText(QString::fromUtf8(paths.front().toString().get()), QClipboard::Clipboard);
         }
     }
 }

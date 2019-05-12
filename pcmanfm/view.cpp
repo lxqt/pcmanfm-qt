@@ -119,11 +119,11 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
     }
 
     if(all_directory) {
-        QAction* action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New T&ab"), menu);
+        QAction* action = new QAction(QIcon::fromTheme(QStringLiteral("window-new")), tr("Open in New T&ab"), menu);
         connect(action, &QAction::triggered, this, &View::onNewTab);
         menu->insertAction(menu->separator1(), action);
 
-        action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
+        action = new QAction(QIcon::fromTheme(QStringLiteral("window-new")), tr("Open in New Win&dow"), menu);
         connect(action, &QAction::triggered, this, &View::onNewWindow);
         menu->insertAction(menu->separator1(), action);
 
@@ -131,7 +131,7 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
         // action = menu->addAction(_("Search"));
 
         if(all_native) {
-            action = new QAction(QIcon::fromTheme("utilities-terminal"), tr("Open in Termina&l"), menu);
+            action = new QAction(QIcon::fromTheme(QStringLiteral("utilities-terminal")), tr("Open in Termina&l"), menu);
             connect(action, &QAction::triggered, this, &View::onOpenInTerminal);
             menu->insertAction(menu->separator1(), action);
         }

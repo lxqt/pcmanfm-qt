@@ -54,7 +54,7 @@ Settings::Settings():
     QObject(),
     supportTrash_(Fm::uriExists("trash:///")), // check if trash:/// is supported
     fallbackIconThemeName_(),
-    useFallbackIconTheme_(QIcon::themeName().isEmpty() || QIcon::themeName() == "hicolor"),
+    useFallbackIconTheme_(QIcon::themeName().isEmpty() || QIcon::themeName() == QLatin1String("hicolor")),
     bookmarkOpenMethod_(OpenInCurrentTab),
     suCommand_(),
     terminal_(),
@@ -152,14 +152,14 @@ QString Settings::xdgUserConfigDir() {
 QString Settings::profileDir(QString profile, bool useFallback) {
     // try user-specific config file first
     QString dirName = xdgUserConfigDir();
-    dirName = dirName % "/pcmanfm-qt/" % profile;
+    dirName = dirName + QStringLiteral("/pcmanfm-qt/") + profile;
     QDir dir(dirName);
 
     // if user config dir does not exist, try system-wide config dirs instead
     if(!dir.exists() && useFallback) {
         QString fallbackDir;
         for(const char* const* configDir = g_get_system_config_dirs(); *configDir; ++configDir) {
-            fallbackDir = QString(*configDir) % "/pcmanfm-qt/" % profile;
+            fallbackDir = QString::fromUtf8(*configDir)  + QStringLiteral("/pcmanfm-qt/") + profile;
             dir.setPath(fallbackDir);
             if(dir.exists()) {
                 dirName = fallbackDir;
@@ -172,156 +172,156 @@ QString Settings::profileDir(QString profile, bool useFallback) {
 
 bool Settings::load(QString profile) {
     profileName_ = profile;
-    QString fileName = profileDir(profile, true) % "/settings.conf";
+    QString fileName = profileDir(profile, true) + QStringLiteral("/settings.conf");
     return loadFile(fileName);
 }
 
 bool Settings::save(QString profile) {
-    QString fileName = profileDir(profile.isEmpty() ? profileName_ : profile) % "/settings.conf";
+    QString fileName = profileDir(profile.isEmpty() ? profileName_ : profile) + QStringLiteral("/settings.conf");
     return saveFile(fileName);
 }
 
 bool Settings::loadFile(QString filePath) {
     QSettings settings(filePath, QSettings::IniFormat);
-    settings.beginGroup("System");
-    fallbackIconThemeName_ = settings.value("FallbackIconThemeName").toString();
+    settings.beginGroup(QStringLiteral("System"));
+    fallbackIconThemeName_ = settings.value(QStringLiteral("FallbackIconThemeName")).toString();
     if(fallbackIconThemeName_.isEmpty()) {
         // FIXME: we should choose one from installed icon themes or get
         // the value from XSETTINGS instead of hard code a fallback value.
-        fallbackIconThemeName_ = "oxygen"; // fallback icon theme name
+        fallbackIconThemeName_ = QLatin1String("oxygen"); // fallback icon theme name
     }
-    suCommand_ = settings.value("SuCommand", "lxqt-sudo %s").toString();
-    setTerminal(settings.value("Terminal", "xterm").toString());
-    setArchiver(settings.value("Archiver", "file-roller").toString());
-    setSiUnit(settings.value("SIUnit", false).toBool());
+    suCommand_ = settings.value(QStringLiteral("SuCommand"), QStringLiteral("lxqt-sudo %s")).toString();
+    setTerminal(settings.value(QStringLiteral("Terminal"), QStringLiteral("xterm")).toString());
+    setArchiver(settings.value(QStringLiteral("Archiver"), QStringLiteral("file-roller")).toString());
+    setSiUnit(settings.value(QStringLiteral("SIUnit"), false).toBool());
 
-    setOnlyUserTemplates(settings.value("OnlyUserTemplates", false).toBool());
-    setTemplateTypeOnce(settings.value("TemplateTypeOnce", false).toBool());
-    setTemplateRunApp(settings.value("TemplateRunApp", false).toBool());
+    setOnlyUserTemplates(settings.value(QStringLiteral("OnlyUserTemplates"), false).toBool());
+    setTemplateTypeOnce(settings.value(QStringLiteral("TemplateTypeOnce"), false).toBool());
+    setTemplateRunApp(settings.value(QStringLiteral("TemplateRunApp"), false).toBool());
 
     settings.endGroup();
 
-    settings.beginGroup("Behavior");
-    bookmarkOpenMethod_ = bookmarkOpenMethodFromString(settings.value("BookmarkOpenMethod").toString());
+    settings.beginGroup(QStringLiteral("Behavior"));
+    bookmarkOpenMethod_ = bookmarkOpenMethodFromString(settings.value(QStringLiteral("BookmarkOpenMethod")).toString());
     // settings for use with libfm
-    useTrash_ = settings.value("UseTrash", true).toBool();
-    singleClick_ = settings.value("SingleClick", false).toBool();
-    autoSelectionDelay_ = settings.value("AutoSelectionDelay", 600).toInt();
-    confirmDelete_ = settings.value("ConfirmDelete", true).toBool();
-    setNoUsbTrash(settings.value("NoUsbTrash", false).toBool());
-    confirmTrash_ = settings.value("ConfirmTrash", false).toBool();
-    setQuickExec(settings.value("QuickExec", false).toBool());
-    selectNewFiles_ = settings.value("SelectNewFiles", false).toBool();
+    useTrash_ = settings.value(QStringLiteral("UseTrash"), true).toBool();
+    singleClick_ = settings.value(QStringLiteral("SingleClick"), false).toBool();
+    autoSelectionDelay_ = settings.value(QStringLiteral("AutoSelectionDelay"), 600).toInt();
+    confirmDelete_ = settings.value(QStringLiteral("ConfirmDelete"), true).toBool();
+    setNoUsbTrash(settings.value(QStringLiteral("NoUsbTrash"), false).toBool());
+    confirmTrash_ = settings.value(QStringLiteral("ConfirmTrash"), false).toBool();
+    setQuickExec(settings.value(QStringLiteral("QuickExec"), false).toBool());
+    selectNewFiles_ = settings.value(QStringLiteral("SelectNewFiles"), false).toBool();
     // bool thumbnailLocal_;
     // bool thumbnailMax;
     settings.endGroup();
 
-    settings.beginGroup("Desktop");
-    wallpaperMode_ = wallpaperModeFromString(settings.value("WallpaperMode").toString());
-    wallpaper_ = settings.value("Wallpaper").toString();
-    wallpaperDialogSize_ = settings.value("WallpaperDialogSize", QSize(700, 500)).toSize();
-    wallpaperDialogSplitterPos_ = settings.value("WallpaperDialogSplitterPos", 200).toInt();
-    lastSlide_ = settings.value("LastSlide").toString();
-    wallpaperDir_ = settings.value("WallpaperDirectory").toString();
-    slideShowInterval_ = settings.value("SlideShowInterval", 0).toInt();
-    wallpaperRandomize_ = settings.value("WallpaperRandomize").toBool();
-    desktopBgColor_.setNamedColor(settings.value("BgColor", "#000000").toString());
-    desktopFgColor_.setNamedColor(settings.value("FgColor", "#ffffff").toString());
-    desktopShadowColor_.setNamedColor(settings.value("ShadowColor", "#000000").toString());
-    if(settings.contains("Font")) {
-        desktopFont_.fromString(settings.value("Font").toString());
+    settings.beginGroup(QStringLiteral("Desktop"));
+    wallpaperMode_ = wallpaperModeFromString(settings.value(QStringLiteral("WallpaperMode")).toString());
+    wallpaper_ = settings.value(QStringLiteral("Wallpaper")).toString();
+    wallpaperDialogSize_ = settings.value(QStringLiteral("WallpaperDialogSize"), QSize(700, 500)).toSize();
+    wallpaperDialogSplitterPos_ = settings.value(QStringLiteral("WallpaperDialogSplitterPos"), 200).toInt();
+    lastSlide_ = settings.value(QStringLiteral("LastSlide")).toString();
+    wallpaperDir_ = settings.value(QStringLiteral("WallpaperDirectory")).toString();
+    slideShowInterval_ = settings.value(QStringLiteral("SlideShowInterval"), 0).toInt();
+    wallpaperRandomize_ = settings.value(QStringLiteral("WallpaperRandomize")).toBool();
+    desktopBgColor_.setNamedColor(settings.value(QStringLiteral("BgColor"), QStringLiteral("#000000")).toString());
+    desktopFgColor_.setNamedColor(settings.value(QStringLiteral("FgColor"), QStringLiteral("#ffffff")).toString());
+    desktopShadowColor_.setNamedColor(settings.value(QStringLiteral("ShadowColor"), QStringLiteral("#000000")).toString());
+    if(settings.contains(QStringLiteral("Font"))) {
+        desktopFont_.fromString(settings.value(QStringLiteral("Font")).toString());
     }
     else {
         desktopFont_ = QApplication::font();
     }
-    desktopIconSize_ = settings.value("DesktopIconSize", 48).toInt();
-    desktopShortcuts_ = settings.value("DesktopShortcuts").toStringList();
-    desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
-    desktopHideItems_ = settings.value("HideItems", false).toBool();
+    desktopIconSize_ = settings.value(QStringLiteral("DesktopIconSize"), 48).toInt();
+    desktopShortcuts_ = settings.value(QStringLiteral("DesktopShortcuts")).toStringList();
+    desktopShowHidden_ = settings.value(QStringLiteral("ShowHidden"), false).toBool();
+    desktopHideItems_ = settings.value(QStringLiteral("HideItems"), false).toBool();
 
-    desktopSortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
-    desktopSortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
-    desktopSortFolderFirst_ = settings.value("SortFolderFirst", true).toBool();
+    desktopSortOrder_ = sortOrderFromString(settings.value(QStringLiteral("SortOrder")).toString());
+    desktopSortColumn_ = sortColumnFromString(settings.value(QStringLiteral("SortColumn")).toString());
+    desktopSortFolderFirst_ = settings.value(QStringLiteral("SortFolderFirst"), true).toBool();
 
-    desktopCellMargins_ = (settings.value("DesktopCellMargins", QSize(3, 1)).toSize()
+    desktopCellMargins_ = (settings.value(QStringLiteral("DesktopCellMargins"), QSize(3, 1)).toSize()
                            .expandedTo(QSize(0, 0))).boundedTo(QSize(48, 48));
     settings.endGroup();
 
-    settings.beginGroup("Volume");
-    mountOnStartup_ = settings.value("MountOnStartup", true).toBool();
-    mountRemovable_ = settings.value("MountRemovable", true).toBool();
-    autoRun_ = settings.value("AutoRun", true).toBool();
-    closeOnUnmount_ = settings.value("CloseOnUnmount", true).toBool();
+    settings.beginGroup(QStringLiteral("Volume"));
+    mountOnStartup_ = settings.value(QStringLiteral("MountOnStartup"), true).toBool();
+    mountRemovable_ = settings.value(QStringLiteral("MountRemovable"), true).toBool();
+    autoRun_ = settings.value(QStringLiteral("AutoRun"), true).toBool();
+    closeOnUnmount_ = settings.value(QStringLiteral("CloseOnUnmount"), true).toBool();
     settings.endGroup();
 
-    settings.beginGroup("Thumbnail");
-    showThumbnails_ = settings.value("ShowThumbnails", true).toBool();
-    setMaxThumbnailFileSize(settings.value("MaxThumbnailFileSize", 4096).toInt());
-    setThumbnailLocalFilesOnly(settings.value("ThumbnailLocalFilesOnly", true).toBool());
+    settings.beginGroup(QStringLiteral("Thumbnail"));
+    showThumbnails_ = settings.value(QStringLiteral("ShowThumbnails"), true).toBool();
+    setMaxThumbnailFileSize(settings.value(QStringLiteral("MaxThumbnailFileSize"), 4096).toInt());
+    setThumbnailLocalFilesOnly(settings.value(QStringLiteral("ThumbnailLocalFilesOnly"), true).toBool());
     settings.endGroup();
 
-    settings.beginGroup("FolderView");
-    viewMode_ = viewModeFromString(settings.value("Mode", Fm::FolderView::IconMode).toString());
-    showHidden_ = settings.value("ShowHidden", false).toBool();
-    sortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
-    sortColumn_ = sortColumnFromString(settings.value("SortColumn").toString());
-    sortFolderFirst_ = settings.value("SortFolderFirst", true).toBool();
-    sortCaseSensitive_ = settings.value("SortCaseSensitive", false).toBool();
-    showFilter_ = settings.value("ShowFilter", false).toBool();
+    settings.beginGroup(QStringLiteral("FolderView"));
+    viewMode_ = viewModeFromString(settings.value(QStringLiteral("Mode"), Fm::FolderView::IconMode).toString());
+    showHidden_ = settings.value(QStringLiteral("ShowHidden"), false).toBool();
+    sortOrder_ = sortOrderFromString(settings.value(QStringLiteral("SortOrder")).toString());
+    sortColumn_ = sortColumnFromString(settings.value(QStringLiteral("SortColumn")).toString());
+    sortFolderFirst_ = settings.value(QStringLiteral("SortFolderFirst"), true).toBool();
+    sortCaseSensitive_ = settings.value(QStringLiteral("SortCaseSensitive"), false).toBool();
+    showFilter_ = settings.value(QStringLiteral("ShowFilter"), false).toBool();
 
-    setBackupAsHidden(settings.value("BackupAsHidden", false).toBool());
-    showFullNames_ = settings.value("ShowFullNames", false).toBool();
-    shadowHidden_ = settings.value("ShadowHidden", false).toBool();
+    setBackupAsHidden(settings.value(QStringLiteral("BackupAsHidden"), false).toBool());
+    showFullNames_ = settings.value(QStringLiteral("ShowFullNames"), false).toBool();
+    shadowHidden_ = settings.value(QStringLiteral("ShadowHidden"), false).toBool();
 
     // override config in libfm's FmConfig
-    bigIconSize_ = toIconSize(settings.value("BigIconSize", 48).toInt(), Big);
-    smallIconSize_ = toIconSize(settings.value("SmallIconSize", 24).toInt(), Small);
-    sidePaneIconSize_ = toIconSize(settings.value("SidePaneIconSize", 24).toInt(), Small);
-    thumbnailIconSize_ = toIconSize(settings.value("ThumbnailIconSize", 128).toInt(), Thumbnail);
+    bigIconSize_ = toIconSize(settings.value(QStringLiteral("BigIconSize"), 48).toInt(), Big);
+    smallIconSize_ = toIconSize(settings.value(QStringLiteral("SmallIconSize"), 24).toInt(), Small);
+    sidePaneIconSize_ = toIconSize(settings.value(QStringLiteral("SidePaneIconSize"), 24).toInt(), Small);
+    thumbnailIconSize_ = toIconSize(settings.value(QStringLiteral("ThumbnailIconSize"), 128).toInt(), Thumbnail);
 
-    folderViewCellMargins_ = (settings.value("FolderViewCellMargins", QSize(3, 3)).toSize()
+    folderViewCellMargins_ = (settings.value(QStringLiteral("FolderViewCellMargins"), QSize(3, 3)).toSize()
                               .expandedTo(QSize(0, 0))).boundedTo(QSize(48, 48));
 
     // detailed list columns
-    customColumnWidths_ = settings.value("CustomColumnWidths").toList();
-    hiddenColumns_ = settings.value("HiddenColumns").toList();
+    customColumnWidths_ = settings.value(QStringLiteral("CustomColumnWidths")).toList();
+    hiddenColumns_ = settings.value(QStringLiteral("HiddenColumns")).toList();
 
     settings.endGroup();
 
-    settings.beginGroup("Places");
-    placesHome_ = settings.value("PlacesHome", true).toBool();
-    placesDesktop_ = settings.value("PlacesDesktop", true).toBool();
-    placesApplications_ = settings.value("PlacesApplications", true).toBool();
-    placesTrash_ = settings.value("PlacesTrash", true).toBool();
-    placesRoot_ = settings.value("PlacesRoot", true).toBool();
-    placesComputer_ = settings.value("PlacesComputer", true).toBool();
-    placesNetwork_ = settings.value("PlacesNetwork", true).toBool();
-    hiddenPlaces_ = settings.value("HiddenPlaces").toStringList().toSet();
+    settings.beginGroup(QStringLiteral("Places"));
+    placesHome_ = settings.value(QStringLiteral("PlacesHome"), true).toBool();
+    placesDesktop_ = settings.value(QStringLiteral("PlacesDesktop"), true).toBool();
+    placesApplications_ = settings.value(QStringLiteral("PlacesApplications"), true).toBool();
+    placesTrash_ = settings.value(QStringLiteral("PlacesTrash"), true).toBool();
+    placesRoot_ = settings.value(QStringLiteral("PlacesRoot"), true).toBool();
+    placesComputer_ = settings.value(QStringLiteral("PlacesComputer"), true).toBool();
+    placesNetwork_ = settings.value(QStringLiteral("PlacesNetwork"), true).toBool();
+    hiddenPlaces_ = settings.value(QStringLiteral("HiddenPlaces")).toStringList().toSet();
     settings.endGroup();
 
-    settings.beginGroup("Window");
-    fixedWindowWidth_ = settings.value("FixedWidth", 640).toInt();
-    fixedWindowHeight_ = settings.value("FixedHeight", 480).toInt();
-    lastWindowWidth_ = settings.value("LastWindowWidth", 640).toInt();
-    lastWindowHeight_ = settings.value("LastWindowHeight", 480).toInt();
-    lastWindowMaximized_ = settings.value("LastWindowMaximized", false).toBool();
-    rememberWindowSize_ = settings.value("RememberWindowSize", true).toBool();
-    alwaysShowTabs_ = settings.value("AlwaysShowTabs", true).toBool();
-    showTabClose_ = settings.value("ShowTabClose", true).toBool();
-    splitterPos_ = settings.value("SplitterPos", 150).toInt();
-    sidePaneMode_ = sidePaneModeFromString(settings.value("SidePaneMode").toString());
-    showMenuBar_ = settings.value("ShowMenuBar", true).toBool();
-    splitView_ = settings.value("SplitView", false).toBool();
-    pathBarButtons_ = settings.value("PathBarButtons", true).toBool();
+    settings.beginGroup(QStringLiteral("Window"));
+    fixedWindowWidth_ = settings.value(QStringLiteral("FixedWidth"), 640).toInt();
+    fixedWindowHeight_ = settings.value(QStringLiteral("FixedHeight"), 480).toInt();
+    lastWindowWidth_ = settings.value(QStringLiteral("LastWindowWidth"), 640).toInt();
+    lastWindowHeight_ = settings.value(QStringLiteral("LastWindowHeight"), 480).toInt();
+    lastWindowMaximized_ = settings.value(QStringLiteral("LastWindowMaximized"), false).toBool();
+    rememberWindowSize_ = settings.value(QStringLiteral("RememberWindowSize"), true).toBool();
+    alwaysShowTabs_ = settings.value(QStringLiteral("AlwaysShowTabs"), true).toBool();
+    showTabClose_ = settings.value(QStringLiteral("ShowTabClose"), true).toBool();
+    splitterPos_ = settings.value(QStringLiteral("SplitterPos"), 150).toInt();
+    sidePaneMode_ = sidePaneModeFromString(settings.value(QStringLiteral("SidePaneMode")).toString());
+    showMenuBar_ = settings.value(QStringLiteral("ShowMenuBar"), true).toBool();
+    splitView_ = settings.value(QStringLiteral("SplitView"), false).toBool();
+    pathBarButtons_ = settings.value(QStringLiteral("PathBarButtons"), true).toBool();
     settings.endGroup();
 
-    settings.beginGroup("Search");
-    searchNameCaseInsensitive_ = settings.value("searchNameCaseInsensitive", false).toBool();
-    searchContentCaseInsensitive_ = settings.value("searchContentCaseInsensitive", false).toBool();
-    searchNameRegexp_ = settings.value("searchNameRegexp", true).toBool();
-    searchContentRegexp_ = settings.value("searchContentRegexp", true).toBool();
-    searchRecursive_ = settings.value("searchRecursive", false).toBool();
-    searchhHidden_ = settings.value("searchhHidden", false).toBool();
+    settings.beginGroup(QStringLiteral("Search"));
+    searchNameCaseInsensitive_ = settings.value(QStringLiteral("searchNameCaseInsensitive"), false).toBool();
+    searchContentCaseInsensitive_ = settings.value(QStringLiteral("searchContentCaseInsensitive"), false).toBool();
+    searchNameRegexp_ = settings.value(QStringLiteral("searchNameRegexp"), true).toBool();
+    searchContentRegexp_ = settings.value(QStringLiteral("searchContentRegexp"), true).toBool();
+    searchRecursive_ = settings.value(QStringLiteral("searchRecursive"), false).toBool();
+    searchhHidden_ = settings.value(QStringLiteral("searchhHidden"), false).toBool();
     settings.endGroup();
 
     return true;
@@ -330,141 +330,141 @@ bool Settings::loadFile(QString filePath) {
 bool Settings::saveFile(QString filePath) {
     QSettings settings(filePath, QSettings::IniFormat);
 
-    settings.beginGroup("System");
-    settings.setValue("FallbackIconThemeName", fallbackIconThemeName_);
-    settings.setValue("SuCommand", suCommand_);
-    settings.setValue("Terminal", terminal_);
-    settings.setValue("Archiver", archiver_);
-    settings.setValue("SIUnit", siUnit_);
+    settings.beginGroup(QStringLiteral("System"));
+    settings.setValue(QStringLiteral("FallbackIconThemeName"), fallbackIconThemeName_);
+    settings.setValue(QStringLiteral("SuCommand"), suCommand_);
+    settings.setValue(QStringLiteral("Terminal"), terminal_);
+    settings.setValue(QStringLiteral("Archiver"), archiver_);
+    settings.setValue(QStringLiteral("SIUnit"), siUnit_);
 
-    settings.setValue("OnlyUserTemplates", onlyUserTemplates_);
-    settings.setValue("TemplateTypeOnce", templateTypeOnce_);
-    settings.setValue("TemplateRunApp", templateRunApp_);
+    settings.setValue(QStringLiteral("OnlyUserTemplates"), onlyUserTemplates_);
+    settings.setValue(QStringLiteral("TemplateTypeOnce"), templateTypeOnce_);
+    settings.setValue(QStringLiteral("TemplateRunApp"), templateRunApp_);
 
     settings.endGroup();
 
-    settings.beginGroup("Behavior");
-    settings.setValue("BookmarkOpenMethod", bookmarkOpenMethodToString(bookmarkOpenMethod_));
+    settings.beginGroup(QStringLiteral("Behavior"));
+    settings.setValue(QStringLiteral("BookmarkOpenMethod"), QString::fromUtf8(bookmarkOpenMethodToString(bookmarkOpenMethod_)));
     // settings for use with libfm
-    settings.setValue("UseTrash", useTrash_);
-    settings.setValue("SingleClick", singleClick_);
-    settings.setValue("AutoSelectionDelay", autoSelectionDelay_);
-    settings.setValue("ConfirmDelete", confirmDelete_);
-    settings.setValue("NoUsbTrash", noUsbTrash_);
-    settings.setValue("ConfirmTrash", confirmTrash_);
-    settings.setValue("QuickExec", quickExec_);
-    settings.setValue("SelectNewFiles", selectNewFiles_);
+    settings.setValue(QStringLiteral("UseTrash"), useTrash_);
+    settings.setValue(QStringLiteral("SingleClick"), singleClick_);
+    settings.setValue(QStringLiteral("AutoSelectionDelay"), autoSelectionDelay_);
+    settings.setValue(QStringLiteral("ConfirmDelete"), confirmDelete_);
+    settings.setValue(QStringLiteral("NoUsbTrash"), noUsbTrash_);
+    settings.setValue(QStringLiteral("ConfirmTrash"), confirmTrash_);
+    settings.setValue(QStringLiteral("QuickExec"), quickExec_);
+    settings.setValue(QStringLiteral("SelectNewFiles"), selectNewFiles_);
     // bool thumbnailLocal_;
     // bool thumbnailMax;
     settings.endGroup();
 
-    settings.beginGroup("Desktop");
-    settings.setValue("WallpaperMode", wallpaperModeToString(wallpaperMode_));
-    settings.setValue("Wallpaper", wallpaper_);
-    settings.setValue("WallpaperDialogSize", wallpaperDialogSize_);
-    settings.setValue("WallpaperDialogSplitterPos", wallpaperDialogSplitterPos_);
-    settings.setValue("LastSlide", lastSlide_);
-    settings.setValue("WallpaperDirectory", wallpaperDir_);
-    settings.setValue("SlideShowInterval", slideShowInterval_);
-    settings.setValue("WallpaperRandomize", wallpaperRandomize_);
-    settings.setValue("BgColor", desktopBgColor_.name());
-    settings.setValue("FgColor", desktopFgColor_.name());
-    settings.setValue("ShadowColor", desktopShadowColor_.name());
-    settings.setValue("Font", desktopFont_.toString());
-    settings.setValue("DesktopIconSize", desktopIconSize_);
-    settings.setValue("DesktopShortcuts", desktopShortcuts_);
-    settings.setValue("ShowHidden", desktopShowHidden_);
-    settings.setValue("HideItems", desktopHideItems_);
-    settings.setValue("SortOrder", sortOrderToString(desktopSortOrder_));
-    settings.setValue("SortColumn", sortColumnToString(desktopSortColumn_));
-    settings.setValue("SortFolderFirst", desktopSortFolderFirst_);
-    settings.setValue("DesktopCellMargins", desktopCellMargins_);
+    settings.beginGroup(QStringLiteral("Desktop"));
+    settings.setValue(QStringLiteral("WallpaperMode"), QString::fromUtf8(wallpaperModeToString(wallpaperMode_)));
+    settings.setValue(QStringLiteral("Wallpaper"), wallpaper_);
+    settings.setValue(QStringLiteral("WallpaperDialogSize"), wallpaperDialogSize_);
+    settings.setValue(QStringLiteral("WallpaperDialogSplitterPos"), wallpaperDialogSplitterPos_);
+    settings.setValue(QStringLiteral("LastSlide"), lastSlide_);
+    settings.setValue(QStringLiteral("WallpaperDirectory"), wallpaperDir_);
+    settings.setValue(QStringLiteral("SlideShowInterval"), slideShowInterval_);
+    settings.setValue(QStringLiteral("WallpaperRandomize"), wallpaperRandomize_);
+    settings.setValue(QStringLiteral("BgColor"), desktopBgColor_.name());
+    settings.setValue(QStringLiteral("FgColor"), desktopFgColor_.name());
+    settings.setValue(QStringLiteral("ShadowColor"), desktopShadowColor_.name());
+    settings.setValue(QStringLiteral("Font"), desktopFont_.toString());
+    settings.setValue(QStringLiteral("DesktopIconSize"), desktopIconSize_);
+    settings.setValue(QStringLiteral("DesktopShortcuts"), desktopShortcuts_);
+    settings.setValue(QStringLiteral("ShowHidden"), desktopShowHidden_);
+    settings.setValue(QStringLiteral("HideItems"), desktopHideItems_);
+    settings.setValue(QStringLiteral("SortOrder"), QString::fromUtf8(sortOrderToString(desktopSortOrder_)));
+    settings.setValue(QStringLiteral("SortColumn"), QString::fromUtf8(sortColumnToString(desktopSortColumn_)));
+    settings.setValue(QStringLiteral("SortFolderFirst"), desktopSortFolderFirst_);
+    settings.setValue(QStringLiteral("DesktopCellMargins"), desktopCellMargins_);
     settings.endGroup();
 
-    settings.beginGroup("Volume");
-    settings.setValue("MountOnStartup", mountOnStartup_);
-    settings.setValue("MountRemovable", mountRemovable_);
-    settings.setValue("AutoRun", autoRun_);
-    settings.setValue("CloseOnUnmount", closeOnUnmount_);
+    settings.beginGroup(QStringLiteral("Volume"));
+    settings.setValue(QStringLiteral("MountOnStartup"), mountOnStartup_);
+    settings.setValue(QStringLiteral("MountRemovable"), mountRemovable_);
+    settings.setValue(QStringLiteral("AutoRun"), autoRun_);
+    settings.setValue(QStringLiteral("CloseOnUnmount"), closeOnUnmount_);
     settings.endGroup();
 
-    settings.beginGroup("Thumbnail");
-    settings.setValue("ShowThumbnails", showThumbnails_);
-    settings.setValue("MaxThumbnailFileSize", maxThumbnailFileSize());
-    settings.setValue("ThumbnailLocalFilesOnly", thumbnailLocalFilesOnly());
+    settings.beginGroup(QStringLiteral("Thumbnail"));
+    settings.setValue(QStringLiteral("ShowThumbnails"), showThumbnails_);
+    settings.setValue(QStringLiteral("MaxThumbnailFileSize"), maxThumbnailFileSize());
+    settings.setValue(QStringLiteral("ThumbnailLocalFilesOnly"), thumbnailLocalFilesOnly());
     settings.endGroup();
 
-    settings.beginGroup("FolderView");
-    settings.setValue("Mode", viewModeToString(viewMode_));
-    settings.setValue("ShowHidden", showHidden_);
-    settings.setValue("SortOrder", sortOrderToString(sortOrder_));
-    settings.setValue("SortColumn", sortColumnToString(sortColumn_));
-    settings.setValue("SortFolderFirst", sortFolderFirst_);
-    settings.setValue("SortCaseSensitive", sortCaseSensitive_);
-    settings.setValue("ShowFilter", showFilter_);
+    settings.beginGroup(QStringLiteral("FolderView"));
+    settings.setValue(QStringLiteral("Mode"), QString::fromUtf8(viewModeToString(viewMode_)));
+    settings.setValue(QStringLiteral("ShowHidden"), showHidden_);
+    settings.setValue(QStringLiteral("SortOrder"), QString::fromUtf8(sortOrderToString(sortOrder_)));
+    settings.setValue(QStringLiteral("SortColumn"), QString::fromUtf8(sortColumnToString(sortColumn_)));
+    settings.setValue(QStringLiteral("SortFolderFirst"), sortFolderFirst_);
+    settings.setValue(QStringLiteral("SortCaseSensitive"), sortCaseSensitive_);
+    settings.setValue(QStringLiteral("ShowFilter"), showFilter_);
 
-    settings.setValue("BackupAsHidden", backupAsHidden_);
-    settings.setValue("ShowFullNames", showFullNames_);
-    settings.setValue("ShadowHidden", shadowHidden_);
+    settings.setValue(QStringLiteral("BackupAsHidden"), backupAsHidden_);
+    settings.setValue(QStringLiteral("ShowFullNames"), showFullNames_);
+    settings.setValue(QStringLiteral("ShadowHidden"), shadowHidden_);
 
     // override config in libfm's FmConfig
-    settings.setValue("BigIconSize", bigIconSize_);
-    settings.setValue("SmallIconSize", smallIconSize_);
-    settings.setValue("SidePaneIconSize", sidePaneIconSize_);
-    settings.setValue("ThumbnailIconSize", thumbnailIconSize_);
+    settings.setValue(QStringLiteral("BigIconSize"), bigIconSize_);
+    settings.setValue(QStringLiteral("SmallIconSize"), smallIconSize_);
+    settings.setValue(QStringLiteral("SidePaneIconSize"), sidePaneIconSize_);
+    settings.setValue(QStringLiteral("ThumbnailIconSize"), thumbnailIconSize_);
 
-    settings.setValue("FolderViewCellMargins", folderViewCellMargins_);
+    settings.setValue(QStringLiteral("FolderViewCellMargins"), folderViewCellMargins_);
 
     // detailed list columns
-    settings.setValue("CustomColumnWidths", customColumnWidths_);
+    settings.setValue(QStringLiteral("CustomColumnWidths"), customColumnWidths_);
     std::sort(hiddenColumns_.begin(), hiddenColumns_.end());
-    settings.setValue("HiddenColumns", hiddenColumns_);
+    settings.setValue(QStringLiteral("HiddenColumns"), hiddenColumns_);
 
     settings.endGroup();
 
-    settings.beginGroup("Places");
-    settings.setValue("PlacesHome", placesHome_);
-    settings.setValue("PlacesDesktop", placesDesktop_);
-    settings.setValue("PlacesApplications", placesApplications_);
-    settings.setValue("PlacesTrash", placesTrash_);
-    settings.setValue("PlacesRoot", placesRoot_);
-    settings.setValue("PlacesComputer", placesComputer_);
-    settings.setValue("PlacesNetwork", placesNetwork_);
+    settings.beginGroup(QStringLiteral("Places"));
+    settings.setValue(QStringLiteral("PlacesHome"), placesHome_);
+    settings.setValue(QStringLiteral("PlacesDesktop"), placesDesktop_);
+    settings.setValue(QStringLiteral("PlacesApplications"), placesApplications_);
+    settings.setValue(QStringLiteral("PlacesTrash"), placesTrash_);
+    settings.setValue(QStringLiteral("PlacesRoot"), placesRoot_);
+    settings.setValue(QStringLiteral("PlacesComputer"), placesComputer_);
+    settings.setValue(QStringLiteral("PlacesNetwork"), placesNetwork_);
     if (hiddenPlaces_.isEmpty()) {  // don't save "@Invalid()"
-        settings.remove("HiddenPlaces");
+        settings.remove(QStringLiteral("HiddenPlaces"));
     }
     else {
         QStringList hiddenPlaces = hiddenPlaces_.toList();
-        settings.setValue("HiddenPlaces", hiddenPlaces);
+        settings.setValue(QStringLiteral("HiddenPlaces"), hiddenPlaces);
     }
     settings.endGroup();
 
-    settings.beginGroup("Window");
-    settings.setValue("FixedWidth", fixedWindowWidth_);
-    settings.setValue("FixedHeight", fixedWindowHeight_);
-    settings.setValue("LastWindowWidth", lastWindowWidth_);
-    settings.setValue("LastWindowHeight", lastWindowHeight_);
-    settings.setValue("LastWindowMaximized", lastWindowMaximized_);
-    settings.setValue("RememberWindowSize", rememberWindowSize_);
-    settings.setValue("AlwaysShowTabs", alwaysShowTabs_);
-    settings.setValue("ShowTabClose", showTabClose_);
-    settings.setValue("SplitterPos", splitterPos_);
-    settings.setValue("SidePaneMode", sidePaneModeToString(sidePaneMode_));
-    settings.setValue("ShowMenuBar", showMenuBar_);
-    settings.setValue("SplitView", splitView_);
-    settings.setValue("PathBarButtons", pathBarButtons_);
+    settings.beginGroup(QStringLiteral("Window"));
+    settings.setValue(QStringLiteral("FixedWidth"), fixedWindowWidth_);
+    settings.setValue(QStringLiteral("FixedHeight"), fixedWindowHeight_);
+    settings.setValue(QStringLiteral("LastWindowWidth"), lastWindowWidth_);
+    settings.setValue(QStringLiteral("LastWindowHeight"), lastWindowHeight_);
+    settings.setValue(QStringLiteral("LastWindowMaximized"), lastWindowMaximized_);
+    settings.setValue(QStringLiteral("RememberWindowSize"), rememberWindowSize_);
+    settings.setValue(QStringLiteral("AlwaysShowTabs"), alwaysShowTabs_);
+    settings.setValue(QStringLiteral("ShowTabClose"), showTabClose_);
+    settings.setValue(QStringLiteral("SplitterPos"), splitterPos_);
+    settings.setValue(QStringLiteral("SidePaneMode"), QString::fromUtf8(sidePaneModeToString(sidePaneMode_)));
+    settings.setValue(QStringLiteral("ShowMenuBar"), showMenuBar_);
+    settings.setValue(QStringLiteral("SplitView"), splitView_);
+    settings.setValue(QStringLiteral("PathBarButtons"), pathBarButtons_);
     settings.endGroup();
 
     // save per-folder settings
     Fm::FolderConfig::saveCache();
 
-    settings.beginGroup("Search");
-    settings.setValue("searchNameCaseInsensitive", searchNameCaseInsensitive_);
-    settings.setValue("searchContentCaseInsensitive", searchContentCaseInsensitive_);
-    settings.setValue("searchNameRegexp", searchNameRegexp_);
-    settings.setValue("searchContentRegexp", searchContentRegexp_);
-    settings.setValue("searchRecursive", searchRecursive_);
-    settings.setValue("searchhHidden", searchhHidden_);
+    settings.beginGroup(QStringLiteral("Search"));
+    settings.setValue(QStringLiteral("searchNameCaseInsensitive"), searchNameCaseInsensitive_);
+    settings.setValue(QStringLiteral("searchContentCaseInsensitive"), searchContentCaseInsensitive_);
+    settings.setValue(QStringLiteral("searchNameRegexp"), searchNameRegexp_);
+    settings.setValue(QStringLiteral("searchContentRegexp"), searchContentRegexp_);
+    settings.setValue(QStringLiteral("searchRecursive"), searchRecursive_);
+    settings.setValue(QStringLiteral("searchhHidden"), searchhHidden_);
     settings.endGroup();
 
     return true;
@@ -549,16 +549,16 @@ static const char* viewModeToString(Fm::FolderView::ViewMode value) {
 
 Fm::FolderView::ViewMode viewModeFromString(const QString str) {
     Fm::FolderView::ViewMode ret;
-    if(str == "icon") {
+    if(str == QLatin1String("icon")) {
         ret = Fm::FolderView::IconMode;
     }
-    else if(str == "compact") {
+    else if(str == QLatin1String("compact")) {
         ret = Fm::FolderView::CompactMode;
     }
-    else if(str == "detailed") {
+    else if(str == QLatin1String("detailed")) {
         ret = Fm::FolderView::DetailedListMode;
     }
-    else if(str == "thumbnail") {
+    else if(str == QLatin1String("thumbnail")) {
         ret = Fm::FolderView::ThumbnailMode;
     }
     else {
@@ -572,7 +572,7 @@ static const char* sortOrderToString(Qt::SortOrder order) {
 }
 
 static Qt::SortOrder sortOrderFromString(const QString str) {
-    return (str == "descending" ? Qt::DescendingOrder : Qt::AscendingOrder);
+    return (str == QLatin1String("descending") ? Qt::DescendingOrder : Qt::AscendingOrder);
 }
 
 static const char* sortColumnToString(Fm::FolderModel::ColumnId value) {
@@ -603,22 +603,22 @@ static const char* sortColumnToString(Fm::FolderModel::ColumnId value) {
 
 static Fm::FolderModel::ColumnId sortColumnFromString(const QString str) {
     Fm::FolderModel::ColumnId ret;
-    if(str == "name") {
+    if(str == QLatin1String("name")) {
         ret = Fm::FolderModel::ColumnFileName;
     }
-    else if(str == "type") {
+    else if(str == QLatin1String("type")) {
         ret = Fm::FolderModel::ColumnFileType;
     }
-    else if(str == "size") {
+    else if(str == QLatin1String("size")) {
         ret = Fm::FolderModel::ColumnFileSize;
     }
-    else if(str == "mtime") {
+    else if(str == QLatin1String("mtime")) {
         ret = Fm::FolderModel::ColumnFileMTime;
     }
-    else if(str == "owner") {
+    else if(str == QLatin1String("owner")) {
         ret = Fm::FolderModel::ColumnFileOwner;
     }
-    else if(str == "group") {
+    else if(str == QLatin1String("group")) {
         ret = Fm::FolderModel::ColumnFileGroup;
     }
     else {
@@ -655,19 +655,19 @@ static const char* wallpaperModeToString(int value) {
 
 static int wallpaperModeFromString(const QString str) {
     int ret;
-    if(str == "stretch") {
+    if(str == QLatin1String("stretch")) {
         ret = DesktopWindow::WallpaperStretch;
     }
-    else if(str == "fit") {
+    else if(str == QLatin1String("fit")) {
         ret = DesktopWindow::WallpaperFit;
     }
-    else if(str == "center") {
+    else if(str == QLatin1String("center")) {
         ret = DesktopWindow::WallpaperCenter;
     }
-    else if(str == "tile") {
+    else if(str == QLatin1String("tile")) {
         ret = DesktopWindow::WallpaperTile;
     }
-    else if(str == "zoom") {
+    else if(str == QLatin1String("zoom")) {
         ret = DesktopWindow::WallpaperZoom;
     }
     else {
@@ -695,10 +695,10 @@ static const char* sidePaneModeToString(Fm::SidePane::Mode value) {
 
 static Fm::SidePane::Mode sidePaneModeFromString(const QString& str) {
     Fm::SidePane::Mode ret;
-    if(str == "none") {
+    if(str == QLatin1String("none")) {
         ret = Fm::SidePane::ModeNone;
     }
-    else if(str == "dirtree") {
+    else if(str == QLatin1String("dirtree")) {
         ret = Fm::SidePane::ModeDirTree;
     }
     else {
@@ -733,20 +733,20 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
         // load sorting
         str = cfg.getString("SortOrder");
         if(str != nullptr) {
-            settings.setSortOrder(sortOrderFromString(str));
+            settings.setSortOrder(sortOrderFromString(QString::fromUtf8(str)));
             g_free(str);
         }
 
         str = cfg.getString("SortColumn");
         if(str != nullptr) {
-            settings.setSortColumn(sortColumnFromString(str));
+            settings.setSortColumn(sortColumnFromString(QString::fromUtf8(str)));
             g_free(str);
         }
 
         str = cfg.getString("ViewMode");
         if(str != nullptr) {
             // set view mode
-            settings.setViewMode(viewModeFromString(str));
+            settings.setViewMode(viewModeFromString(QString::fromUtf8(str)));
             g_free(str);
         }
 
