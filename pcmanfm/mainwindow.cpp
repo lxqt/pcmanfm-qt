@@ -216,6 +216,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     group->setExclusive(true);
     group->addAction(ui.actionByFileName);
     group->addAction(ui.actionByMTime);
+    group->addAction(ui.actionByDTime);
     group->addAction(ui.actionByFileSize);
     group->addAction(ui.actionByFileType);
     group->addAction(ui.actionByOwner);
@@ -845,6 +846,10 @@ void MainWindow::on_actionByMTime_triggered(bool /*checked*/) {
     currentPage()->sort(Fm::FolderModel::ColumnFileMTime, currentPage()->sortOrder());
 }
 
+void MainWindow::on_actionByDTime_triggered(bool /*checked*/) {
+    currentPage()->sort(Fm::FolderModel::ColumnFileDTime, currentPage()->sortOrder());
+}
+
 void MainWindow::on_actionByOwner_triggered(bool /*checked*/) {
     currentPage()->sort(Fm::FolderModel::ColumnFileOwner, currentPage()->sortOrder());
 }
@@ -1199,6 +1204,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
         }
         sortActions[Fm::FolderModel::ColumnFileName] = ui.actionByFileName;
         sortActions[Fm::FolderModel::ColumnFileMTime] = ui.actionByMTime;
+        sortActions[Fm::FolderModel::ColumnFileDTime] = ui.actionByDTime;
         sortActions[Fm::FolderModel::ColumnFileSize] = ui.actionByFileSize;
         sortActions[Fm::FolderModel::ColumnFileType] = ui.actionByFileType;
         sortActions[Fm::FolderModel::ColumnFileOwner] = ui.actionByOwner;
@@ -1214,6 +1220,10 @@ void MainWindow::updateViewMenuForCurrentPage() {
                     a->setChecked(false);
                 }
             }
+        }
+
+        if(auto path = tabPage->path()) {
+            ui.actionByDTime->setVisible(strcmp(path.toString().get(), "trash:///") == 0);
         }
 
         if(tabPage->sortOrder() == Qt::AscendingOrder) {
