@@ -103,6 +103,7 @@
      </property>
      <addaction name="actionByFileName"/>
      <addaction name="actionByMTime"/>
+     <addaction name="actionByDTime"/>
      <addaction name="actionByFileSize"/>
      <addaction name="actionByFileType"/>
      <addaction name="actionByOwner"/>
@@ -505,6 +506,14 @@
    </property>
    <property name="text">
     <string>By &amp;Modification Time</string>
+   </property>
+  </action>
+  <action name="actionByDTime">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>By Deletio&amp;n Time</string>
    </property>
   </action>
   <action name="actionByFileType">
