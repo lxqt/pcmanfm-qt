@@ -80,7 +80,7 @@ void PreferencesDialog::initIconThemes(Settings& settings) {
         // load xdg icon themes and select the current one
         QHash<QString, QString> iconThemes;
         // user customed icon themes
-        findIconThemesInDir(iconThemes, QFile::decodeName(g_get_home_dir()) + QStringLiteral("/.icons"));
+        findIconThemesInDir(iconThemes, QString::fromUtf8(g_get_home_dir()) + QStringLiteral("/.icons"));
 
         // search for icons in system data dir
         const char* const* dataDirs = g_get_system_data_dirs();

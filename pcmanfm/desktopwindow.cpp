@@ -523,10 +523,10 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
         // see if we have a scaled version cached on disk
         cacheFileName = QString::fromLocal8Bit(qgetenv("XDG_CACHE_HOME"));
         if(cacheFileName.isEmpty()) {
-            cacheFileName = QDir::homePath() % QLatin1String("/.cache");
+            cacheFileName = QDir::homePath() + QLatin1String("/.cache");
         }
         Application* app = static_cast<Application*>(qApp);
-        cacheFileName += QLatin1String("/pcmanfm-qt/") % app->profileName();
+        cacheFileName += QLatin1String("/pcmanfm-qt/") + app->profileName();
         QDir().mkpath(cacheFileName); // ensure that the cache dir exists
         cacheFileName += QLatin1String("/wallpaper.cache");
 
