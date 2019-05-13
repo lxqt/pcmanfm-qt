@@ -144,7 +144,7 @@ QString Settings::xdgUserConfigDir() {
         dirName = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation);
     }
     if(dirName.isEmpty()) {
-        dirName = QDir::homePath() % QLatin1String("/.config");
+        dirName = QDir::homePath() + QLatin1String("/.config");
     }
     return dirName;
 }
@@ -771,7 +771,7 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
 void Settings::saveFolderSettings(const Fm::FilePath& path, const FolderSettings& settings) {
     if(path) {
         // ensure that we have the libfm dir
-        QString dirName = xdgUserConfigDir() % QStringLiteral("/libfm");
+        QString dirName = xdgUserConfigDir() + QStringLiteral("/libfm");
         QDir().mkpath(dirName);  // if libfm config dir does not exist, create it
 
         Fm::FolderConfig cfg(path);
