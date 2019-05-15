@@ -487,7 +487,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="316"/>
         <source>&amp;About</source>
-        <translation>Ról&amp;am</translation>
+        <translation>Névjegy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="325"/>
