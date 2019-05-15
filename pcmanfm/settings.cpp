@@ -70,6 +70,7 @@ Settings::Settings():
     wallpaperDir_(),
     slideShowInterval_(0),
     wallpaperRandomize_(false),
+    transformWallpaper_(false),
     desktopBgColor_(),
     desktopFgColor_(),
     desktopShadowColor_(),
@@ -225,6 +226,7 @@ bool Settings::loadFile(QString filePath) {
     wallpaperDir_ = settings.value(QStringLiteral("WallpaperDirectory")).toString();
     slideShowInterval_ = settings.value(QStringLiteral("SlideShowInterval"), 0).toInt();
     wallpaperRandomize_ = settings.value(QStringLiteral("WallpaperRandomize")).toBool();
+    transformWallpaper_ = settings.value(QStringLiteral("TransformWallpaper")).toBool();
     desktopBgColor_.setNamedColor(settings.value(QStringLiteral("BgColor"), QStringLiteral("#000000")).toString());
     desktopFgColor_.setNamedColor(settings.value(QStringLiteral("FgColor"), QStringLiteral("#ffffff")).toString());
     desktopShadowColor_.setNamedColor(settings.value(QStringLiteral("ShadowColor"), QStringLiteral("#000000")).toString());
@@ -367,6 +369,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("WallpaperDirectory"), wallpaperDir_);
     settings.setValue(QStringLiteral("SlideShowInterval"), slideShowInterval_);
     settings.setValue(QStringLiteral("WallpaperRandomize"), wallpaperRandomize_);
+    settings.setValue(QStringLiteral("TransformWallpaper"), transformWallpaper_);
     settings.setValue(QStringLiteral("BgColor"), desktopBgColor_.name());
     settings.setValue(QStringLiteral("FgColor"), desktopFgColor_.name());
     settings.setValue(QStringLiteral("ShadowColor"), desktopShadowColor_.name());
