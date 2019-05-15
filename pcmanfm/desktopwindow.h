@@ -157,6 +157,8 @@ private:
     void trustOurDesktopShortcut(std::shared_ptr<const Fm::FileInfo> file);
     bool isTrashCan(std::shared_ptr<const Fm::FileInfo> file);
 
+    QImage getWallpaperImage() const;
+
 private:
     Fm::ProxyFolderModel* proxyModel_;
     Fm::CachedFolderModel* model_;

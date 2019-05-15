@@ -514,6 +514,34 @@ void DesktopWindow::setWallpaperRandomize(bool randomize) {
     wallpaperRandomize_ = randomize;
 }
 
+QImage DesktopWindow::getWallpaperImage() const {
+    QImage image(wallpaperFile_);
+    Settings& settings = static_cast<Application* >(qApp)->settings();
+    if(settings.transformWallpaper()
+       && (wallpaperFile_.endsWith(QLatin1String(".jpg"), Qt::CaseInsensitive)
+           || wallpaperFile_.endsWith(QLatin1String(".jpeg"), Qt::CaseInsensitive))) {
+        // auto-transform jpeg images based on their EXIF data
+        QImageReader reader(wallpaperFile_);
+        QImageIOHandler::Transformations tr = reader.transformation();
+        QMatrix m;
+        // mirroring
+        if(tr & QImageIOHandler::TransformationMirror) {
+            m.scale(-1, 1);
+        }
+        if(tr & QImageIOHandler::TransformationFlip) {
+            m.scale(1, -1);
+        }
+        // rotation
+        if(tr & QImageIOHandler::TransformationRotate90) {
+            m.rotate(90);
+        }
+        if(!m.isIdentity()) {
+            image = image.transformed(m);
+        }
+    }
+    return image;
+}
+
 QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
     // NOTE: for ease of programming, we only use the cache for the primary screen.
     bool useCache = (screenNum_ == -1 || screenNum_ == 0);
@@ -558,7 +586,7 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
     }
 
     // we don't have a cached scaled image, load the original file
-    QImage image(wallpaperFile_);
+    QImage image = getWallpaperImage();
     qDebug() << "size of original image" << image.size();
     if(image.isNull() || image.size() == requiredSize) { // if the original size is what we want
         return image;
@@ -596,7 +624,7 @@ void DesktopWindow::updateWallpaper() {
         QPixmap pixmap;
         QImage image;
         if(wallpaperMode_ == WallpaperTile) { // use the original size
-            image = QImage(wallpaperFile_);
+            image = getWallpaperImage();
             // Note: We can't use the QPainter::drawTiledPixmap(), because it doesn't tile
             // correctly for background pixmaps bigger than the current screen size.
             const QSize s = size();
@@ -614,11 +642,20 @@ void DesktopWindow::updateWallpaper() {
         }
         else { // WallpaperCenter || WallpaperFit
             if(wallpaperMode_ == WallpaperCenter) {
-                image = QImage(wallpaperFile_); // load original image
+                image = getWallpaperImage(); // load original image
             }
             else if(wallpaperMode_ == WallpaperFit || wallpaperMode_ == WallpaperZoom) {
                 // calculate the desired size
-                QSize origSize = QImageReader(wallpaperFile_).size(); // get the size of the original file
+                QImageReader reader(wallpaperFile_);
+                QSize origSize = reader.size(); // get the size of the original file
+                if(reader.transformation() & QImageIOHandler::TransformationRotate90) {
+                    Settings& settings = static_cast<Application* >(qApp)->settings();
+                    if(settings.transformWallpaper()
+                       && (wallpaperFile_.endsWith(QLatin1String(".jpg"), Qt::CaseInsensitive)
+                           || wallpaperFile_.endsWith(QLatin1String(".jpeg"), Qt::CaseInsensitive))) {
+                        origSize.transpose();
+                    }
+                }
                 if(origSize.isValid()) {
                     QSize desiredSize = origSize;
                     Qt::AspectRatioMode mode = (wallpaperMode_ == WallpaperFit ? Qt::KeepAspectRatio : Qt::KeepAspectRatioByExpanding);

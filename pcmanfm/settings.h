@@ -289,6 +289,14 @@ public:
         wallpaperRandomize_ = randomize;
     }
 
+    bool transformWallpaper() const {
+       return transformWallpaper_;
+    }
+
+    void setTransformWallpaper(bool tr) {
+        transformWallpaper_ = tr;
+    }
+
     const QColor& desktopBgColor() const {
         return desktopBgColor_;
     }
@@ -942,6 +950,7 @@ private:
     QString wallpaperDir_;
     int slideShowInterval_;
     bool wallpaperRandomize_;
+    bool transformWallpaper_;
     QColor desktopBgColor_;
     QColor desktopFgColor_;
     QColor desktopShadowColor_;
