@@ -1244,7 +1244,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
         <source>Hide Desktop Items</source>
-        <translation>Agachar os elementos do escritorio</translation>
+        <translation>Agochar os elementos do escritorio</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="886"/>
@@ -1278,12 +1278,12 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>Hide menu bar</source>
-        <translation>Agachar a barra de menú</translation>
+        <translation>Agochar a barra de menú</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="662"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>Agacha completamente a barra de menú; use Ctrl+M para volver amosala.</translation>
+        <translation>Agocha completamente a barra de menú; use Ctrl+M para volver amosala.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="984"/>
@@ -1358,11 +1358,9 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="435"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform> (%n agachado)</numerusform>
-            <numerusform> (%n agachados)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform> (%n agochado)</numerusform>
+        <numerusform> (%n agochados)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="440"/>
         <location filename="../tabpage.cpp" line="613"/>
@@ -1618,7 +1616,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
-        <translation>Tratar os ficheiros de copia de seguranza como agachados</translation>
+        <translation>Tratar os ficheiros de copia de seguranza como agochados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="346"/>
@@ -1628,7 +1626,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Amosar sombreadas as iconas dos ficheiros agachados</translation>
+        <translation>Amosar sombreadas as iconas dos ficheiros agochados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
