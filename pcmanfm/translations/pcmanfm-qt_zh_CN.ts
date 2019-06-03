@@ -367,7 +367,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">主文件夹</translation>
+        <translation>主目录</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
