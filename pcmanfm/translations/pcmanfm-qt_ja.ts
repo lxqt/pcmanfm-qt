@@ -6,12 +6,12 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>情報</translation>
+        <translation>このアプリケーションについて</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
@@ -21,7 +21,7 @@
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="109"/>
@@ -97,22 +97,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>一括名前変更</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation>＃は以下で始まる数字に置き換えられます:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>選択したファイルの名前を次のように変更します:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>NewName#</translation>
     </message>
 </context>
 <context>
@@ -140,12 +140,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>タイプ:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>ポート:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
@@ -266,7 +266,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>文字色を選択:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -287,12 +287,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="241"/>
         <location filename="../desktop-preferences.ui" line="265"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> ピクセル</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="254"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="261"/>
@@ -364,7 +364,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>ショートカットを表示</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
@@ -374,17 +374,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>ゴミ箱</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="487"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>コンピューター</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>ネットワーク</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="512"/>
@@ -394,7 +394,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="518"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>デスクトップのクリック時にウインドウマネージャーのメニューを表示</translation>
+        <translation>デスクトップのクリック時にウィンドウマネージャーのメニューを表示</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="453"/>
@@ -447,7 +447,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>フィルター(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="274"/>
@@ -632,27 +632,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>フィルターバーを表示・入力(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>フィルターバーを表示</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>分割表示(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>分割表示</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
@@ -662,27 +662,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>フルパスの名前をコピー(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>すべてのフィルターを解除(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="727"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="736"/>
@@ -717,17 +717,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="810"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>一括に名前を変更(&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="813"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>一括名前変更</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="750"/>
@@ -737,7 +737,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>フィルターバーを固定(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="758"/>
@@ -752,7 +752,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="764"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
@@ -773,7 +773,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="325"/>
         <source>&amp;New Window</source>
-        <translation>新しいウインドウ(&amp;N)</translation>
+        <translation>新しいウィンドウ(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="401"/>
@@ -873,17 +873,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="653"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="688"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="700"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
@@ -984,7 +984,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="187"/>
         <source>&amp;Go</source>
-        <translation>開く(&amp;G)</translation>
+        <translation>移動(&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="204"/>
@@ -1110,32 +1110,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>セキュアWebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1181,19 +1181,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>ゴミ箱(1個)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>ゴミ箱(%Ln 個)</numerusform>
+        </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>ゴミ箱(空)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
@@ -1203,17 +1201,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>コンピューター</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>ネットワーク</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="813"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>開く</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="818"/>
@@ -1224,12 +1222,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>ゴミ箱を空にする</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>デスクトップのアイテムを表示しない</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="886"/>
@@ -1242,7 +1240,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>フィルタ:</translation>
     </message>
 </context>
 <context>
@@ -1307,7 +1305,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="197"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>コンパクト表示</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
@@ -1351,7 +1349,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../tabpage.cpp" line="613"/>
         <location filename="../tabpage.cpp" line="629"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>リンク先</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="643"/>
@@ -1399,7 +1397,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation>ディスプレイ</translation>
+        <translation>表示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
@@ -1452,12 +1450,12 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="343"/>
         <location filename="../preferences.ui" line="353"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>完全に有効にするためにアプリケーションを再起動して下さい</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>実行可能なファイルを実行するときに確認しない</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="230"/>
@@ -1482,7 +1480,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
-        <translation>サイドペインのアイコンの大きさ</translation>
+        <translation>サイドペインのアイコンの大きさ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="242"/>
@@ -1497,12 +1495,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="500"/>
         <source>Default width of new windows:</source>
-        <translation>新しいウインドウのデフォルト幅</translation>
+        <translation>新しいウィンドウのデフォルト幅:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="514"/>
         <source>Default height of new windows:</source>
-        <translation>新しいウインドウのデフォルトの高さ</translation>
+        <translation>新しいウィンドウのデフォルトの高さ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="479"/>
@@ -1562,7 +1560,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="203"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>新しく作成したファイルを選択する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1590,7 +1588,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
-        <translation>バックアップガイルを隠しファイルと同様に扱う</translation>
+        <translation>バックアップファイルを隠しファイルと同様に扱う</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="346"/>
@@ -1610,25 +1608,25 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="386"/>
         <source>3 px by default.</source>
-        <translation>既定で 3 px。</translation>
+        <translation>既定は３ピクセルです。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
         <location filename="../preferences.ui" line="413"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> ピクセル</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="402"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>×</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="409"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished">既定では1 px。
-また3行分のテキストのため空白が確保されます。 {3 ?} {3 ?}</translation>
+        <translation>既定は３ピクセルです。
+また文字のために３行分の間隔が確保されます。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="426"/>
@@ -1639,17 +1637,18 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>チェックを外すと、
+複数のタブがある場合にのみタブバーを表示します。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>変更を有効にするにはアプリケーションを再起動します。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="578"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>ffmpegthumbnailer が必要です</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="581"/>
@@ -1659,22 +1658,22 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="741"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>テンプレート</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="747"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>メニューにユーザー定義のテンプレートのみを表示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>MIMEタイプごとにテンプレートを1つだけを表示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="761"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>テンプレートから作成した後にデフォルトのアプリケーションを実行</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
@@ -1699,12 +1698,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="694"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザー切替のコマンド(&amp;U):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="718"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>アーカイバーの統合:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="687"/>
@@ -1734,12 +1733,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="644"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>リムーバブルメディアを含むタブを閉じる(&amp;T)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>タブ内のフォルダをホームフォルダに移動(&amp;G)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
@@ -1751,7 +1750,7 @@ only if there are more than one tab.</source>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>例: 端末に &quot;xterm -e %s&quot; 、ユーザー切替に &quot;gksu %s&quot;
-%s には、端末やsuで実行するコマンドが代入されます</translation>
+%s には、端末やsuで実行するコマンドが代入されます。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="329"/>
@@ -1764,22 +1763,22 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイル名を変更しています...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="72"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>中止</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>警告</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="79"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>名前の変更は中止されました。</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
@@ -1790,12 +1789,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイル名を変更できませんでした。</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>一部のファイルは名前を変更できませんでした。</translation>
     </message>
 </context>
 </TS>
