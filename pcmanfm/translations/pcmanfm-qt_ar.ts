@@ -967,13 +967,13 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation>م&amp;ساعدة</translation>
+        <translation>&amp;مساعدة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
         <location filename="../main-win.ui" line="118"/>
         <source>&amp;View</source>
-        <translation>من&amp;ظور</translation>
+        <translation>&amp;منظور</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
@@ -983,7 +983,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="162"/>
         <source>&amp;Edit</source>
-        <translation>ت&amp;حرير</translation>
+        <translation>&amp;تحرير</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="180"/>
