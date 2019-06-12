@@ -167,6 +167,10 @@ MainWindow::MainWindow(Fm::FilePath path):
 
     ui.actionFilter->setChecked(settings.showFilter());
 
+    // menu
+    ui.actionDelete->setText(settings.useTrash() ? tr("&Move to Trash") : tr("&Delete"));
+    ui.actionDelete->setIcon(settings.useTrash() ? QIcon::fromTheme(QStringLiteral("user-trash")) : QIcon::fromTheme(QStringLiteral("edit-delete")));
+
     // side pane
     ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
     ui.sidePane->setMode(settings.sidePaneMode());
