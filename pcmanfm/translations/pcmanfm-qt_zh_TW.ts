@@ -380,7 +380,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>可見的快捷方式</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
@@ -463,7 +463,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="142"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>篩選(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="259"/>
@@ -663,12 +663,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示/聚焦篩選條(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示篩選欄</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
@@ -678,17 +678,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>分割視圖(&amp;p)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>分割視圖</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>F6</source>
-        <translation type="unfinished"></translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="846"/>
@@ -708,7 +708,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>清空全部篩選條件(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="727"/>
@@ -768,7 +768,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>固定篩選欄(&amp;f)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="758"/>
@@ -1212,17 +1212,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
         <source>Home</source>
-        <translation type="unfinished">家目錄</translation>
+        <translation>家目錄</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="329"/>
         <source>Computer</source>
-        <translation type="unfinished">電腦</translation>
+        <translation>電腦</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="343"/>
         <source>Network</source>
-        <translation type="unfinished">網路</translation>
+        <translation>網路</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="813"/>
@@ -1238,7 +1238,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="825"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>清空垃圾箱</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
@@ -1256,7 +1256,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>篩選:</translation>
     </message>
 </context>
 <context>
@@ -1264,7 +1264,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">清除文字(Ctrl+K)</translation>
+        <translation>清空文字(Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1272,7 +1272,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">根實例</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -1501,7 +1501,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>程式需要重新啓動以使變更生效。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="242"/>
