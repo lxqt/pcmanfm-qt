@@ -116,6 +116,7 @@ DesktopWindow::DesktopWindow(int screenNum):
 
         auto desktopPath = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
         model_ = Fm::CachedFolderModel::modelFromPath(desktopPath);
+        model_->setShowFullName(settings.showFullNames());
         folder_ = model_->folder();
         connect(folder_.get(), &Fm::Folder::startLoading, this, &DesktopWindow::onFolderStartLoading);
         connect(folder_.get(), &Fm::Folder::finishLoading, this, &DesktopWindow::onFolderFinishLoading);
@@ -477,6 +478,7 @@ void DesktopWindow::setDesktopFolder() {
 
     auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
     model_ = Fm::CachedFolderModel::modelFromPath(path);
+    model_->setShowFullName(static_cast<Application* >(qApp)->settings().showFullNames());
     folder_ = model_->folder();
     connect(folder_.get(), &Fm::Folder::startLoading, this, &DesktopWindow::onFolderStartLoading);
     connect(folder_.get(), &Fm::Folder::finishLoading, this, &DesktopWindow::onFolderFinishLoading);
