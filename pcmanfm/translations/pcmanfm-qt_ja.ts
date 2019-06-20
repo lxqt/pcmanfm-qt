@@ -477,7 +477,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="328"/>
         <source>New Window</source>
-        <translation>新しいウインドウ</translation>
+        <translation>新しいウィンドウ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="331"/>
@@ -1058,7 +1058,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="179"/>
         <source>Open new window</source>
-        <translation>新しいウインドウを開く</translation>
+        <translation>新しいウィンドウを開く</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="182"/>
@@ -1369,7 +1369,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../view.cpp" line="106"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>新しいウインドウを開く(&amp;D)</translation>
+        <translation>新しいウィンドウを開く(&amp;D)</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="114"/>
@@ -1490,7 +1490,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>Window</source>
-        <translation>ウインドウ</translation>
+        <translation>ウィンドウ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="500"/>
@@ -1515,7 +1515,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="493"/>
         <source>Remember the size of the last closed window</source>
-        <translation>直前に閉じたウインドウのサイズを記憶</translation>
+        <translation>直前に閉じたウィンドウのサイズを記憶</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
