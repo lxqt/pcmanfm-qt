@@ -271,7 +271,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
         <source>Spacing</source>
-        <translation>空白</translation>
+        <translation>間隔</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="231"/>
@@ -298,8 +298,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>既定では1 px。
-また3行分のテキストのため空白が確保されます。</translation>
+        <translation>既定では 1 ピクセルです。
+また 3 行分のテキストのために間隔が確保されます。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="278"/>
@@ -334,7 +334,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation> </translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="370"/>
@@ -369,7 +369,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
         <source>Home</source>
-        <translation type="unfinished">ホーム</translation>
+        <translation>ホーム</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="476"/>
@@ -472,7 +472,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="316"/>
         <source>&amp;About</source>
-        <translation>このアプリケーションについて（&amp;A）</translation>
+        <translation>このアプリケーションについて(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="328"/>
@@ -657,7 +657,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="846"/>
@@ -888,7 +888,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation>新規作成(&amp;r)</translation>
+        <translation>新規作成(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
@@ -943,7 +943,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="697"/>
         <source>&amp;Blank File</source>
-        <translation>空白のファイル(&amp;B)</translation>
+        <translation>空のファイル(&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="705"/>
@@ -1196,7 +1196,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
         <source>Home</source>
-        <translation type="unfinished">ホーム</translation>
+        <translation>ホーム</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="329"/>
@@ -1248,7 +1248,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished">テキストを消去 (Ctrl+K)</translation>
+        <translation>テキストを消去 (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1256,7 +1256,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Root 権限</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -1784,7 +1784,7 @@ only if there are more than one tab.</source>
         <location filename="../bulkrename.cpp" line="92"/>
         <location filename="../bulkrename.cpp" line="95"/>
         <source>Error</source>
-        <translation type="unfinished">エラー</translation>
+        <translation>エラー</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="92"/>
