@@ -472,7 +472,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="316"/>
         <source>&amp;About</source>
-        <translation>情報(&amp;A)</translation>
+        <translation>このアプリケーションについて（&amp;A）</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="328"/>
