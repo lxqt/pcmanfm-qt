@@ -1703,7 +1703,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="718"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>アーカイバーの統合:</translation>
+        <translation>アーカイバーの統合(&amp;T):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="687"/>
