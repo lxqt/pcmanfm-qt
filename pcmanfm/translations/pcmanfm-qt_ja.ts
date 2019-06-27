@@ -42,7 +42,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt File Manager
+
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License、or (at your option) any later version。
+
+This program is distributed in the hope that it will be useful、
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE。 See the
+GNU General Public License for more details。
+
+You should have received a copy of the GNU General Public License
+along with this program; if not、write to the Free Software
+Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301、USA。</translation>
     </message>
     <message>
         <location filename="../about.ui" line="87"/>
@@ -97,12 +113,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation>一括名前変更</translation>
+        <translation>名前の一括変更</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation>＃は以下で始まる数字に置き換えられます:</translation>
+        <translation># は 次で始まる数字に置き換えられます:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
@@ -125,12 +141,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation>Anonymousでログイン(&amp;l)</translation>
+        <translation>Anonymousでログイン(&amp;L)</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation>ユーザーでログイン(&amp;u):</translation>
+        <translation>ユーザーでログイン(&amp;U):</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
@@ -281,7 +297,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation>既定では3 px。</translation>
+        <translation>既定では 3 px。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="241"/>
@@ -662,7 +678,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>&amp;Copy Full Path</source>
-        <translation>フルパスの名前をコピー(&amp;C)</translation>
+        <translation>名前のフルパスをコピー(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
@@ -687,12 +703,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="736"/>
         <source>Close &amp;previous tabs</source>
-        <translation>前のタブを閉じる(&amp;p)</translation>
+        <translation>前のタブを閉じる(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="745"/>
         <source>Close &amp;next tabs</source>
-        <translation>後ろのタブを閉じる(&amp;n)</translation>
+        <translation>後ろのタブを閉じる(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="784"/>
@@ -717,12 +733,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="810"/>
         <source>&amp;Bulk Rename</source>
-        <translation>一括に名前を変更(&amp;B)</translation>
+        <translation>名前の一括変更(&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="813"/>
         <source>Bulk Rename</source>
-        <translation>一括名前変更</translation>
+        <translation>名前の一括変更</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
@@ -732,7 +748,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="750"/>
         <source>Close &amp;other tabs</source>
-        <translation>他のタブを閉じる(&amp;o)</translation>
+        <translation>他のタブを閉じる(&amp;O)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="716"/>
@@ -918,7 +934,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Open &amp;Terminal</source>
-        <translation>端末で開く(&amp;T)</translation>
+        <translation>ここを端末で開く(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="666"/>
@@ -928,7 +944,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="671"/>
         <source>Open as &amp;Root</source>
-        <translation>rootで開く(&amp;R)</translation>
+        <translation>ここを root として開く(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
@@ -1181,17 +1197,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="293"/>
         <source>Trash (One item)</source>
-        <translation>ゴミ箱(1個)</translation>
+        <translation>ゴミ箱 ( 1 個)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (%Ln items)</source>
-        <translation><numerusform>ゴミ箱(%Ln 個)</numerusform>
+        <translation><numerusform>ゴミ箱 (%Ln 個)</numerusform>
         </translation></message>
     <message>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (Empty)</source>
-        <translation>ゴミ箱(空)</translation>
+        <translation>ゴミ箱 (空)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="315"/>
@@ -1217,7 +1233,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktopwindow.cpp" line="818"/>
         <location filename="../desktopwindow.cpp" line="855"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>現在の場所に固定(&amp;k)</translation>
+        <translation>現在の場所に固定(&amp;K)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="825"/>
@@ -1256,7 +1272,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation>Root 権限</translation>
+        <translation>Root 権限 インスタンス</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -1354,10 +1370,8 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="643"/>
         <source>%n item(s) selected</source>
-        <translation>
-            <numerusform>%n アイテムが選択されました</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n 個のアイテムが選択されました</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
@@ -1438,12 +1452,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>ゴミ箱を作らずに、リムーバブルメディア上のファイルを消去する</translation>
+        <translation>『ゴミ箱』を作らずに、リムーバブルメディア上のファイルを消去する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>ゴミ箱に入れる前に確認する</translation>
+        <translation>『ゴミ箱』に移動する前に確認する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
@@ -1510,7 +1524,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="486"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>閉じるボタンをタブに表示</translation>
+        <translation>閉じるボタン をタブに表示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="493"/>
@@ -1550,12 +1564,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Confirm before deleting files</source>
-        <translation>ファイルを削除する前に確認</translation>
+        <translation>ファイルを削除する前に確認する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>ディスクから削除せずに&quot;ゴミ箱&quot;へ入れる。</translation>
+        <translation>ディスクから削除せずに『ゴミ箱』へ移動する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="203"/>
@@ -1598,7 +1612,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>隠しファイルのアイコンに影をつける</translation>
+        <translation>隠しファイルのアイコンをグレー色にする</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
@@ -1693,7 +1707,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <source>When removable medium unmounted:</source>
-        <translation>リムーバブルメディアもアンマウントする際に:</translation>
+        <translation>リムーバブルメディアをアンマウントする際に:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="694"/>
@@ -1723,7 +1737,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="621"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>リムーバブルメディアが接続された際に自動的にマウントする</translation>
+        <translation>リムーバブルメディアが接続された際に、自動的にマウントする</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="628"/>
@@ -1755,7 +1769,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="329"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>IEC二進接頭辞の代わりに、SI十進接頭辞を用いる</translation>
+        <translation>サイズ単位には IEC 二進接頭辞の代わりに SI 十進接頭辞を用いる</translation>
     </message>
 </context>
 <context>
