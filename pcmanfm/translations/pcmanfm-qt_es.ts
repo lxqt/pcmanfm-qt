@@ -1557,7 +1557,7 @@ Puede revertirlo utilizando Ctrl+M para mostrar la barra de nuevo.</translation>
     <message>
         <location filename="../preferences.ui" line="130"/>
         <source>Bookmarks:</source>
-        <translation>Como seabren los marcadores:</translation>
+        <translation>Como desea que se abran los marcadores:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="138"/>
