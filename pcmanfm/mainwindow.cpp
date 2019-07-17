@@ -320,6 +320,10 @@ MainWindow::MainWindow(Fm::FilePath path):
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_F), this);
     connect(shortcut, &QShortcut::activated, ui.actionFindFiles, &QAction::trigger);
 
+    // in addition to Alt+Return, for convenience
+    shortcut = new QShortcut(Qt::ALT + Qt::Key_Enter, this);
+    connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionFileProperties_triggered);
+
     addViewFrame(path);
     if(splitView_) {
         // put the menu button on the right (there's no path bar/entry on the toolbar)

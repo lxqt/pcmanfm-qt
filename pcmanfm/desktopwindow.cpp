@@ -174,6 +174,8 @@ DesktopWindow::DesktopWindow(int screenNum):
 
     shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_Return), this); // properties
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onFilePropertiesActivated);
+    shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_Enter), this); // properties
+    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onFilePropertiesActivated);
 
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this); // force delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
