@@ -166,6 +166,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     connect(ui.actionCloseOther, &QAction::triggered, this, &MainWindow::closeOtherTabs);
 
     ui.actionFilter->setChecked(settings.showFilter());
+    ui.actionShowThumbnails->setChecked(settings.showThumbnails());
 
     // menu
     ui.actionDelete->setText(settings.useTrash() ? tr("&Move to Trash") : tr("&Delete"));
@@ -844,6 +845,10 @@ void MainWindow::on_actionFolderProperties_triggered() {
 void MainWindow::on_actionShowHidden_triggered(bool checked) {
     currentPage()->setShowHidden(checked);
     ui.sidePane->setShowHidden(checked);
+}
+
+void MainWindow::on_actionShowThumbnails_triggered(bool checked) {
+    currentPage()->setShowThumbnails(checked);
 }
 
 void MainWindow::on_actionByFileName_triggered(bool /*checked*/) {

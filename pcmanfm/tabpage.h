@@ -154,6 +154,8 @@ public:
 
     void setShowHidden(bool showHidden);
 
+    void setShowThumbnails(bool showThumbnails);
+
     void saveFolderSorting();
 
     Fm::FilePath path() {
