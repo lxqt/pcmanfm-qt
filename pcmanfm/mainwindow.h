@@ -140,6 +140,7 @@ protected Q_SLOTS:
 
     void on_actionGo_triggered();
     void on_actionShowHidden_triggered(bool check);
+    void on_actionShowThumbnails_triggered(bool check);
     void on_actionSplitView_triggered(bool check);
     void on_actionPreserveView_triggered(bool checked);
 

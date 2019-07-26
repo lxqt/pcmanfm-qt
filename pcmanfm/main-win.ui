@@ -149,6 +149,7 @@
     <addaction name="actionReload"/>
     <addaction name="separator"/>
     <addaction name="actionShowHidden"/>
+    <addaction name="actionShowThumbnails"/>
     <addaction name="actionSplitView"/>
     <addaction name="menuSorting"/>
     <addaction name="menu_View_2"/>
@@ -865,6 +866,20 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="actionShowThumbnails">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Thumb&amp;nails</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Thumbnails</string>
    </property>
   </action>
  </widget>

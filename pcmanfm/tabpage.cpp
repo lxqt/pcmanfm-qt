@@ -781,6 +781,14 @@ void TabPage::setShowHidden(bool showHidden) {
     }
 }
 
+void TabPage::setShowThumbnails(bool showThumbnails) {
+    Settings& settings = static_cast<Application*>(qApp)->settings();
+    settings.setShowThumbnails(showThumbnails);
+    if(proxyModel_) {
+        proxyModel_->setShowThumbnails(showThumbnails);
+    }
+}
+
 void TabPage::saveFolderSorting() {
     if (proxyModel_ == nullptr) {
         return;
