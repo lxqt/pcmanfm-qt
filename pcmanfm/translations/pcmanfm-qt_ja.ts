@@ -297,7 +297,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../desktop-preferences.ui" line="238"/>
         <source>3 px by default.</source>
-        <translation>既定では 3 px。</translation>
+        <translation>既定は 3 ピクセルです。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="241"/>
@@ -314,7 +314,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
         <location filename="../desktop-preferences.ui" line="261"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>既定では 1 ピクセルです。
+        <translation>既定は 1 ピクセルです。
 また 3 行分のテキストのために間隔が確保されます。</translation>
     </message>
     <message>
@@ -503,7 +503,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="339"/>
         <source>Show &amp;Hidden</source>
-        <translation>隠しファイルを表示(&amp;H)</translation>
+        <translation>隠しファイルの表示(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="342"/>
@@ -1184,7 +1184,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation>画像をスクリーン全体に拡大</translation>
+        <translation>画像を画面全体に拡大</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="227"/>
@@ -1248,7 +1248,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="886"/>
         <source>Desktop Preferences</source>
-        <translation>デスクトップ設定</translation>
+        <translation>デスクトップの設定</translation>
     </message>
 </context>
 <context>
@@ -1256,7 +1256,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation>フィルタ:</translation>
+        <translation>フィルター:</translation>
     </message>
 </context>
 <context>
@@ -1308,7 +1308,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1873"/>
         <source>Switch user command is not set.</source>
-        <translation>ユーザー切替コマンドを未設定です。</translation>
+        <translation>ユーザー切替のコマンドが設定されていません。</translation>
     </message>
 </context>
 <context>
@@ -1344,7 +1344,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="416"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>空き領域: %1 (全体: %2)</translation>
+        <translation>空き容量: %1 (全体: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="433"/>
@@ -1370,7 +1370,7 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="643"/>
         <source>%n item(s) selected</source>
-        <translation><numerusform>%n 個のアイテムが選択されました</numerusform>
+        <translation><numerusform>%n 個のアイテムが選択されています</numerusform>
         </translation></message>
 </context>
 <context>
@@ -1378,12 +1378,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../view.cpp" line="102"/>
         <source>Open in New T&amp;ab</source>
-        <translation>新しいタブを開く(&amp;T)</translation>
+        <translation>新しいタブで開く(&amp;T)</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="106"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>新しいウィンドウを開く(&amp;D)</translation>
+        <translation>新しいウィンドウで開く(&amp;D)</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="114"/>
@@ -1509,7 +1509,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="500"/>
         <source>Default width of new windows:</source>
-        <translation>新しいウィンドウのデフォルト幅:</translation>
+        <translation>新しいウィンドウのデフォルトの幅:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="514"/>
@@ -1519,17 +1519,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="479"/>
         <source>Always show the tab bar</source>
-        <translation>タブバーを常に表示</translation>
+        <translation>タブバーを常に表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="486"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>閉じるボタン をタブに表示</translation>
+        <translation>[閉じる]ボタンをタブに表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="493"/>
         <source>Remember the size of the last closed window</source>
-        <translation>直前に閉じたウィンドウのサイズを記憶</translation>
+        <translation>最後に閉じたウィンドウのサイズを記憶する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
@@ -1607,7 +1607,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="346"/>
         <source>Always show full file names</source>
-        <translation>常にファイル名をフルに表示する</translation>
+        <translation>常にフルのファイル名を表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="356"/>
@@ -1617,7 +1617,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="379"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>アイコン表示における最小のアイテムの余白:</translation>
+        <translation>アイコン表示におけるアイテムの最小余白:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="386"/>
@@ -1667,7 +1667,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="581"/>
         <source>Show thumbnails of files</source>
-        <translation>ファイルのサムネイルを表示</translation>
+        <translation>ファイルのサムネイルを表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="741"/>
@@ -1677,22 +1677,22 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="747"/>
         <source>Show only user defined templates in menu</source>
-        <translation>メニューにユーザー定義のテンプレートのみを表示</translation>
+        <translation>メニューにユーザー定義のテンプレートのみを表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Show only one template for each MIME type</source>
-        <translation>MIMEタイプごとにテンプレートを1つだけを表示</translation>
+        <translation>MIME タイプごとにテンプレートを１つだけを表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="761"/>
         <source>Run default application after creation from template</source>
-        <translation>テンプレートから作成した後にデフォルトのアプリケーションを実行</translation>
+        <translation>テンプレートから作成した後にデフォルトのアプリケーションを実行する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Only show thumbnails for local files</source>
-        <translation>ローカルファイルのみサムネイル表示</translation>
+        <translation>ローカルファイルのみサムネイルを表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="554"/>
@@ -1764,7 +1764,7 @@ only if there are more than one tab.</source>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>例: 端末に &quot;xterm -e %s&quot; 、ユーザー切替に &quot;gksu %s&quot;
-%s には、端末やsuで実行するコマンドが代入されます。</translation>
+%s には、端末や su で実行するコマンドが代入されます。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="329"/>
