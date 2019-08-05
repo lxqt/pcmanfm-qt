@@ -119,6 +119,8 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.hMargin->setValue(settings.desktopCellMargins().width());
   ui.vMargin->setValue(settings.desktopCellMargins().height());
   connect(ui.lockMargins, &QAbstractButton::clicked, this, &DesktopPreferencesDialog::lockMargins);
+
+  resize(sizeHint()); // show it compact
 }
 
 DesktopPreferencesDialog::~DesktopPreferencesDialog() {

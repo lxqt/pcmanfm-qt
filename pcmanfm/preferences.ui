@@ -607,22 +607,22 @@ only if there are more than one tab.</string>
            <property name="title">
             <string>Auto Mount</string>
            </property>
-           <layout class="QFormLayout" name="formLayout_4">
-            <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
              <widget class="QCheckBox" name="mountOnStartup">
               <property name="text">
                <string>Mount mountable volumes automatically on program startup</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="0">
+            <item>
              <widget class="QCheckBox" name="mountRemovable">
               <property name="text">
                <string>Mount removable media automatically when they are inserted</string>
               </property>
              </widget>
             </item>
-            <item row="2" column="0">
+            <item>
              <widget class="QCheckBox" name="autoRun">
               <property name="text">
                <string>Show available options for removable media when they are inserted</string>
