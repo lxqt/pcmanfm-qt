@@ -276,8 +276,8 @@ bool Settings::loadFile(QString filePath) {
     showFilter_ = settings.value(QStringLiteral("ShowFilter"), false).toBool();
 
     setBackupAsHidden(settings.value(QStringLiteral("BackupAsHidden"), false).toBool());
-    showFullNames_ = settings.value(QStringLiteral("ShowFullNames"), false).toBool();
-    shadowHidden_ = settings.value(QStringLiteral("ShadowHidden"), false).toBool();
+    showFullNames_ = settings.value(QStringLiteral("ShowFullNames"), true).toBool();
+    shadowHidden_ = settings.value(QStringLiteral("ShadowHidden"), true).toBool();
 
     // override config in libfm's FmConfig
     bigIconSize_ = toIconSize(settings.value(QStringLiteral("BigIconSize"), 48).toInt(), Big);

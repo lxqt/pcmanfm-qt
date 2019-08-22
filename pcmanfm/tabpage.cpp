@@ -554,7 +554,12 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
     folderModel_ = CachedFolderModel::modelFromFolder(folder_);
-    folderModel_->setShowFullName(settings.showFullNames());
+    if(strcmp(newPath.uriScheme().get(), "menu") == 0) {
+        folderModel_->setShowFullName(false); // always show display name in menu://applications
+    }
+    else {
+        folderModel_->setShowFullName(settings.showFullNames());
+    }
 
     // folderSettings_ will be set by saveFolderSorting() when the sort filter is changed below
     // (and also by setViewMode()); here, we only need to know whether it should be saved

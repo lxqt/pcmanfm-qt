@@ -161,7 +161,7 @@ private:
 
 private:
     Fm::ProxyFolderModel* proxyModel_;
-    Fm::CachedFolderModel* model_;
+    Fm::FolderModel* model_;
     std::shared_ptr<Fm::Folder> folder_;
     Fm::FolderViewListView* listView_;
 

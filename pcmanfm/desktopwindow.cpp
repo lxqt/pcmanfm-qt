@@ -115,8 +115,9 @@ DesktopWindow::DesktopWindow(int screenNum):
         setShadowHidden(settings.shadowHidden());
 
         auto desktopPath = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
-        model_ = Fm::CachedFolderModel::modelFromPath(desktopPath);
-        model_->setShowFullName(settings.showFullNames());
+        model_ = new Fm::FolderModel();
+        model_->setFolder(Fm::Folder::fromPath(desktopPath));
+        model_->setShowFullName(false); // always show display name on Desktop
         folder_ = model_->folder();
         connect(folder_.get(), &Fm::Folder::startLoading, this, &DesktopWindow::onFolderStartLoading);
         connect(folder_.get(), &Fm::Folder::finishLoading, this, &DesktopWindow::onFolderFinishLoading);
@@ -209,7 +210,7 @@ DesktopWindow::~DesktopWindow() {
 
     if(model_) {
         disconnect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
-        model_->unref();
+        delete model_;
     }
 }
 
@@ -471,7 +472,7 @@ void DesktopWindow::setDesktopFolder() {
         if(model_) {
             disconnect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
             proxyModel_->setSourceModel(nullptr);
-            model_->unref(); // unref the cached model
+            delete model_;
             model_ = nullptr;
         }
         disconnect(folder_.get(), nullptr, this, nullptr);
@@ -479,8 +480,9 @@ void DesktopWindow::setDesktopFolder() {
     }
 
     auto path = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
-    model_ = Fm::CachedFolderModel::modelFromPath(path);
-    model_->setShowFullName(static_cast<Application* >(qApp)->settings().showFullNames());
+    model_ = new Fm::FolderModel();
+    model_->setFolder(Fm::Folder::fromPath(path));
+    model_->setShowFullName(false);
     folder_ = model_->folder();
     connect(folder_.get(), &Fm::Folder::startLoading, this, &DesktopWindow::onFolderStartLoading);
     connect(folder_.get(), &Fm::Folder::finishLoading, this, &DesktopWindow::onFolderFinishLoading);
