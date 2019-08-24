@@ -68,19 +68,22 @@ void TabBar::mouseMoveEvent(QMouseEvent *event)
         QMimeData *mimeData = new QMimeData;
         mimeData->setData(QStringLiteral("application/pcmanfm-qt-tab"), QByteArray());
         drag->setMimeData(mimeData);
-        Qt::DropAction dragged = drag->exec();
-        if(dragged == Qt::IgnoreAction) { // a tab is dropped outside all windows
-            if(count() > 1) {
+        int N = count();
+        Qt::DropAction dragged = drag->exec(Qt::MoveAction);
+        if(dragged != Qt::MoveAction) { // a tab is dropped outside all windows
+            if(N > 1) {
                 Q_EMIT tabDetached();
             }
             else {
                 finishMouseMoveEvent();
             }
-            event->accept();
         }
-        else if(dragged == Qt::MoveAction) { // a tab is dropped into another window
-            event->accept();
+        else { // a tab is dropped into another window
+            if(count() == N) {
+                releaseMouse(); // release the mouse if the drop isn't accepted
+            }
         }
+        event->accept();
         drag->deleteLater();
     }
     else {
