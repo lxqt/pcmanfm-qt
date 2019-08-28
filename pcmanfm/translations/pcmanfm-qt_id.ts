@@ -469,7 +469,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="286"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Muat Ulang</translation>
+        <translation>Muat Ulang</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="289"/>
@@ -489,7 +489,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="316"/>
         <source>&amp;About</source>
-        <translation>&amp;Tentang</translation>
+        <translation>Tentang</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="325"/>
@@ -574,7 +574,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="434"/>
         <source>Cu&amp;t</source>
-        <translation>Po&amp;tong</translation>
+        <translation>Potong</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
@@ -594,7 +594,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="458"/>
         <source>&amp;Paste</source>
-        <translation>Tempel</translation>
+        <translation>Tem&amp;pel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="461"/>
@@ -881,7 +881,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="605"/>
         <source>&amp;Rename</source>
-        <translation>Ubah nama</translation>
+        <translation>Ubah Nama</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="608"/>
