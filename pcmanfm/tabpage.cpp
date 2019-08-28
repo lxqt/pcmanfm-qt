@@ -627,9 +627,13 @@ void TabPage::onSelChanged() {
         if(numSel == 1) { /* only one file is selected (also, tell if it is a symlink)*/
             auto& fi = files.front();
             if(!fi->isDir()) {
+                QString name = static_cast<Application*>(qApp)->settings().showFullNames()
+                               && strcmp(fi->dirPath().uriScheme().get(), "menu") != 0
+                                   ? QString::fromStdString(fi->name())
+                                   : fi->displayName();
                 if(fi->isSymlink()) {
                     msg = QStringLiteral("%5\"%1\" %5(%2) %5%3 %5(%4)")
-                          .arg(encloseWithBidiMarks(fi->displayName()),
+                          .arg(encloseWithBidiMarks(name),
                           encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit)),
                           encloseWithBidiMarks(QString::fromUtf8(fi->mimeType()->desc())),
                           encloseWithBidiMarks(tr("Link to") + QChar(QChar::Space) + QString::fromStdString(fi->target())),
@@ -637,7 +641,7 @@ void TabPage::onSelChanged() {
                 }
                 else {
                     msg = QStringLiteral("%4\"%1\" %4(%2) %4%3")
-                          .arg(encloseWithBidiMarks(fi->displayName()),
+                          .arg(encloseWithBidiMarks(name),
                           encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit)), // FIXME: deprecate fm_config
                           encloseWithBidiMarks(QString::fromUtf8(fi->mimeType()->desc())),
                           (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
