@@ -28,7 +28,9 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation></translation>
+        <translation>编程:
+* 洪任谕 (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="109"/>
@@ -1401,7 +1403,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation>音量</translation>
+        <translation type="unfinished">卷</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
