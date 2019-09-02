@@ -151,7 +151,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation>接続時にリモートフォルダを指定</translation>
+        <translation>接続時にリモートフォルダーを指定</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
@@ -189,7 +189,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation>デスクトップフォルダ:</translation>
+        <translation>デスクトップフォルダー:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -199,7 +199,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation>フォルダのパス</translation>
+        <translation>フォルダーのパス</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
@@ -232,7 +232,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../desktop-preferences.ui" line="85"/>
         <source>Select background color:</source>
-        <translation>背景色を選択:</translation>
+        <translation>背景色の選択:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="94"/>
@@ -257,7 +257,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../desktop-preferences.ui" line="125"/>
         <source>Icon size:</source>
-        <translation>アイコンの大きさ:</translation>
+        <translation>アイコンのサイズ:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="138"/>
@@ -272,7 +272,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../desktop-preferences.ui" line="202"/>
         <source>Select font:</source>
-        <translation>フォントを選択:</translation>
+        <translation>フォントの選択:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -282,7 +282,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source>Select text color:</source>
-        <translation>文字色を選択:</translation>
+        <translation>文字色の選択:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="225"/>
@@ -292,7 +292,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../desktop-preferences.ui" line="231"/>
         <source>Minimum item margins:</source>
-        <translation>アイテムの最小のマージン:</translation>
+        <translation>アイテムの最小マージン:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="238"/>
@@ -335,7 +335,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation>壁紙画像のフォルダ:</translation>
+        <translation>壁紙画像のフォルダー:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
@@ -355,7 +355,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="370"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation>5分以内の間隔は無視されます</translation>
+        <translation>5 分以内の間隔は無視されます</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -370,7 +370,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
         <source>Wallpaper folder</source>
-        <translation>壁紙のフォルダ</translation>
+        <translation>壁紙のフォルダー</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
@@ -380,7 +380,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="459"/>
         <source>Visible Shortcuts</source>
-        <translation>ショートカットを表示</translation>
+        <translation>ショートカットの表示</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="465"/>
@@ -410,7 +410,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="518"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation>デスクトップのクリック時にウィンドウマネージャーのメニューを表示</translation>
+        <translation>デスクトップのクリック時にウィンドウマネージャーのメニューを表示する</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="453"/>
@@ -568,7 +568,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="466"/>
         <source>Select &amp;All</source>
-        <translation>すべてを選択(&amp;A)</translation>
+        <translation>すべて選択(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="474"/>
@@ -593,12 +593,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="506"/>
         <source>By &amp;Modification Time</source>
-        <translation>更新時間順(&amp;M)</translation>
+        <translation>更新日時順(&amp;M)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="514"/>
         <source>By File &amp;Type</source>
-        <translation>ファイルの種類順(&amp;T)</translation>
+        <translation>種類順(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="522"/>
@@ -608,17 +608,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="530"/>
         <source>&amp;Folder First</source>
-        <translation>フォルダを最初に並べる(&amp;F)</translation>
+        <translation>フォルダーを最初に並べる(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="538"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation>このフォルダのソートを保存する(&amp;P)</translation>
+        <translation>このフォルダーのソートを保存する(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="588"/>
         <source>&amp;Invert Selection</source>
-        <translation>選択を反転(&amp;I)</translation>
+        <translation>選択の反転(&amp;I)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="597"/>
@@ -628,7 +628,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="605"/>
         <source>&amp;Rename</source>
-        <translation>名前を変更(&amp;R)</translation>
+        <translation>名前の変更(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="637"/>
@@ -638,7 +638,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="645"/>
         <source>By File &amp;Size</source>
-        <translation>ファイルのサイズ順(&amp;S)</translation>
+        <translation>サイズ順(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="650"/>
@@ -648,12 +648,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation>フィルターバーを表示・入力(&amp;S)</translation>
+        <translation>フィルターバーの表示と入力(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Show Filter Bar</source>
-        <translation>フィルターバーを表示</translation>
+        <translation>フィルターバーの表示</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
@@ -713,7 +713,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="784"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation>このフォルダの設定を保存する(&amp;P)</translation>
+        <translation>このフォルダーの設定を保存する(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="789"/>
@@ -879,12 +879,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="621"/>
         <source>File &amp;Properties</source>
-        <translation>ファイルのプロパティー(&amp;P)</translation>
+        <translation>ファイルのプロパティ(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="629"/>
         <source>&amp;Folder Properties</source>
-        <translation>フォルダーのプロパティー(&amp;F)</translation>
+        <translation>フォルダーのプロパティ(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="653"/>
@@ -924,12 +924,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Alt+Return</source>
-        <translation>Alt+Return</translation>
+        <translation>Alt+Enter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="658"/>
         <source>Edit Bookmarks</source>
-        <translation>ブックマークを編集</translation>
+        <translation>ブックマークの編集</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="663"/>
@@ -949,12 +949,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="676"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation>ブックマークを編集(&amp;E)</translation>
+        <translation>ブックマークの編集(&amp;E)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="685"/>
         <source>&amp;Folder</source>
-        <translation>フォルダ(&amp;F)</translation>
+        <translation>フォルダー(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="697"/>
@@ -964,7 +964,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="705"/>
         <source>&amp;Find Files</source>
-        <translation>ファイルを検索(&amp;F)</translation>
+        <translation>ファイルの検索(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="708"/>
@@ -1023,27 +1023,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="164"/>
         <source>Run PCManFM as a daemon</source>
-        <translation>PCManFMをデーモンとして実行</translation>
+        <translation>PCManFM をデーモンとして実行する</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="167"/>
         <source>Quit PCManFM</source>
-        <translation>PCManFMを終了</translation>
+        <translation>PCManFM を終了する</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="170"/>
         <source>Launch desktop manager</source>
-        <translation>デスクトップマネージャーを起動</translation>
+        <translation>デスクトップマネージャーを起動する</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="173"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>実行中のデスクトップマネージャーを終了</translation>
+        <translation>実行中のデスクトップマネージャーを終了する</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="176"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>特定の名前のページ上でデスクトップ設定ダイアログを開く</translation>
+        <translation>指定した名前のページでデスクトップ設定のダイアログを開く</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="176"/>
@@ -1054,7 +1054,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="185"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>画像ファイルからデスクトップの壁紙を設定</translation>
+        <translation>画像 FILE からデスクトップの壁紙を設定する</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="185"/>
@@ -1069,7 +1069,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="191"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>特定の名前のページで設定ダイアログを開く</translation>
+        <translation>指定した名前のページで設定ダイアログを開く</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="179"/>
@@ -1094,7 +1094,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="194"/>
         <source>Files or directories to open</source>
-        <translation>開くファイルまたはディレクトリー</translation>
+        <translation>開くファイルまたはディレクトリ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="541"/>
@@ -1141,7 +1141,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation>セキュアWebDav</translation>
+        <translation>セキュア WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1159,32 +1159,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
-        <translation>背景色のみで埋める</translation>
+        <translation>背景色のみで塗りつぶす</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>画面全部に引き伸ばす</translation>
+        <translation>画面内に引きのばす</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
-        <translation>画面に合わせて調節</translation>
+        <translation>画面内に拡大縮小</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
-        <translation>画面の中央に表示</translation>
+        <translation>中央</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>画面全体に並べる</translation>
+        <translation>並べる</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation>画像を画面全体に拡大</translation>
+        <translation>拡大縮小</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="227"/>
@@ -1264,7 +1264,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation>テキストを消去 (Ctrl+K)</translation>
+        <translation>テキストの消去 (Ctrl+K)</translation>
     </message>
 </context>
 <context>
@@ -1282,7 +1282,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="662"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>メニューバーが完全に隠れます。Ctrl+Mにより再表示されます。</translation>
+        <translation>メニューバーが完全に隠れます。Ctrl+M により再表示されます。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="984"/>
@@ -1331,7 +1331,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Detailed List View</source>
-        <translation>詳細なリスト表示</translation>
+        <translation>詳細リスト表示</translation>
     </message>
 </context>
 <context>
@@ -1479,22 +1479,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="262"/>
         <source>Size of big icons:</source>
-        <translation>大きいアイコンの大きさ:</translation>
+        <translation>大きいアイコンのサイズ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="279"/>
         <source>Size of small icons:</source>
-        <translation>小さいアイコンの大きさ:</translation>
+        <translation>小さいアイコンのサイズ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Size of thumbnails:</source>
-        <translation>サムネイルの大きさ:</translation>
+        <translation>サムネイルのサイズ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="310"/>
         <source>Size of side pane icons:</source>
-        <translation>サイドペインのアイコンの大きさ:</translation>
+        <translation>サイドペインのアイコンのサイズ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="242"/>
@@ -1580,19 +1580,19 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="259"/>
         <location filename="../preferences.ui" line="269"/>
         <source>Used by Icon View</source>
-        <translation>アイコン表示を使用</translation>
+        <translation>アイコン表示で使用します</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="276"/>
         <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>コンパクト表示及び詳細リスト表示の際に使用</translation>
+        <translation>コンパクト表示および詳細リスト表示で使用します</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="293"/>
         <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
-        <translation>サムネイル表示を使用</translation>
+        <translation>サムネイル表示で使用します</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
@@ -1622,7 +1622,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="386"/>
         <source>3 px by default.</source>
-        <translation>既定は３ピクセルです。</translation>
+        <translation>既定は 3 ピクセルです。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
@@ -1639,8 +1639,8 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="409"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>既定は３ピクセルです。
-また文字のために３行分の間隔が確保されます。</translation>
+        <translation>既定は 3 ピクセルです。
+また文字のために 3 行分の間隔が確保されます。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="426"/>
@@ -1752,7 +1752,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>タブ内のフォルダをホームフォルダに移動(&amp;G)</translation>
+        <translation>タブ内のフォルダーをホームフォルダーに移動する(&amp;G)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
