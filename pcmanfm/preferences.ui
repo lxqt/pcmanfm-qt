@@ -86,6 +86,9 @@
             </property>
             <item row="0" column="0" colspan="2">
              <widget class="QCheckBox" name="singleClick">
+              <property name="toolTip">
+               <string>If this is unchecked, the DE setting will be used.</string>
+              </property>
               <property name="text">
                <string>Open files with single click</string>
               </property>
