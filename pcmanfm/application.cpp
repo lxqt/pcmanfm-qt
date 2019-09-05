@@ -64,7 +64,11 @@ static const char* ifaceName = "org.pcmanfm.Application";
 int ProxyStyle::styleHint(StyleHint hint, const QStyleOption* option, const QWidget* widget, QStyleHintReturn* returnData) const {
     Application* app = static_cast<Application*>(qApp);
     if(hint == QStyle::SH_ItemView_ActivateItemOnSingleClick) {
-        return app->settings().singleClick();
+        if (app->settings().singleClick()) {
+            return true;
+        }
+        // follow the style
+        return QCommonStyle::styleHint(hint,option,widget,returnData);
     }
     return QProxyStyle::styleHint(hint, option, widget, returnData);
 }
