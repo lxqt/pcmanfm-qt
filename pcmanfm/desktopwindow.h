@@ -155,9 +155,11 @@ private:
     void createTrash();
     static void onTrashChanged(GFileMonitor* monitor, GFile* gf, GFile* other, GFileMonitorEvent evt, DesktopWindow* pThis);
     void trustOurDesktopShortcut(std::shared_ptr<const Fm::FileInfo> file);
-    bool isTrashCan(std::shared_ptr<const Fm::FileInfo> file);
+    bool isTrashCan(std::shared_ptr<const Fm::FileInfo> file) const;
 
     QImage getWallpaperImage() const;
+
+    QModelIndex indexForPos(bool* isTrash, const QPoint& pos, const QRect& workArea, const QSize& grid) const;
 
 private:
     Fm::ProxyFolderModel* proxyModel_;
