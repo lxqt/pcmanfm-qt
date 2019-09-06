@@ -408,7 +408,7 @@ void DesktopWindow::updateTrashIcon() {
     }, data);
 }
 
-bool DesktopWindow::isTrashCan(std::shared_ptr<const Fm::FileInfo> file) {
+bool DesktopWindow::isTrashCan(std::shared_ptr<const Fm::FileInfo> file) const {
     bool ret(false);
     if(file && (file->isDesktopEntry() || file->isShortcut()) && trashMonitor_) {
         const QString fileName = QString::fromStdString(file->name());
@@ -1490,11 +1490,19 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
     return Fm::FolderView::eventFilter(watched, event);
 }
 
-void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) {
-    // see DesktopWindow::eventFilter for an explanation
+void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) { // see DesktopWindow::eventFilter for an explanation
+    auto screen = getDesktopScreen();
+    if(screen == nullptr) {
+        return;
+    }
+    auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
+    auto grid = delegate->itemSize();
+    QRect workArea = screen->availableVirtualGeometry();
+    workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+    bool isTrash;
     QRect oldDropRect = dropRect_;
     dropRect_ = QRect();
-    QModelIndex dropIndex = listView_->indexAt(e->pos());
+    QModelIndex dropIndex = indexForPos(&isTrash, e->pos(), workArea, grid);
     if(dropIndex.isValid()) {
         bool dragOnSelf = false;
         if(e->source() == listView_ && e->keyboardModifiers() == Qt::NoModifier) { // drag source is desktop
@@ -1503,11 +1511,16 @@ void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) {
                 dragOnSelf = true;
             }
         }
-        if(!dragOnSelf && dropIndex.model()) {
-            QVariant data = dropIndex.model()->data(dropIndex, Fm::FolderModel::Role::FileInfoRole);
-            auto info = data.value<std::shared_ptr<const Fm::FileInfo>>();
-            if(info && (info->isDir() || isTrashCan(info))) {
+        if(!dragOnSelf) {
+            if(isTrash) {
                 dropRect_ = listView_->rectForIndex(dropIndex);
+            }
+            else if(dropIndex.model()) {
+                QVariant data = dropIndex.model()->data(dropIndex, Fm::FolderModel::Role::FileInfoRole);
+                auto info = data.value<std::shared_ptr<const Fm::FileInfo>>();
+                if(info && info->isDir()) {
+                    dropRect_ = listView_->rectForIndex(dropIndex);
+                }
             }
         }
     }
@@ -1528,6 +1541,15 @@ void DesktopWindow::paintDropIndicator()
 }
 
 void DesktopWindow::childDropEvent(QDropEvent* e) {
+    auto screen = getDesktopScreen();
+    if(screen == nullptr) {
+        return;
+    }
+    auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
+    auto grid = delegate->itemSize();
+    QRect workArea = screen->availableVirtualGeometry();
+    workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+
     const QMimeData* mimeData = e->mimeData();
     bool moveItem = false;
     QModelIndex curIndx = listView_->currentIndex();
@@ -1535,14 +1557,15 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         // drag source is our list view, and no other modifier keys are pressed
         // => we're dragging desktop items
         if(mimeData->hasFormat(QStringLiteral("application/x-qabstractitemmodeldatalist"))) {
-            QModelIndex dropIndex = listView_->indexAt(e->pos());
+            bool isTrash;
+            QModelIndex dropIndex = indexForPos(&isTrash, e->pos(), workArea, grid);
             if(dropIndex.isValid() // drop on an item
                && curIndx.isValid() && curIndx != dropIndex) { // not a drop on self
                 if(auto file = proxyModel_->fileInfoFromIndex(dropIndex)) {
                     if(!file->isDir()) { // drop on a non-directory file
-                        // if the files are dropped on our Trash shortcut item,
+                        // if the files are dropped on our Trash shortcut cell,
                         // move them to Trash instead of moving them on desktop
-                        if(isTrashCan(file)) {
+                        if(isTrash) {
                             auto paths = selectedFilePaths();
                             if(!paths.empty()) {
                                 e->accept();
@@ -1566,18 +1589,10 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         }
     }
     if(moveItem) {
-        auto screen = getDesktopScreen();
-        if(screen == nullptr) {
-            return;
-        }
         e->accept();
         // move selected items to the drop position, preserving their relative positions
         const QPoint dropPos = e->pos();
         if(curIndx.isValid()) {
-            auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
-            auto grid = delegate->itemSize();
-            QRect workArea = screen->availableVirtualGeometry();
-            workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
             QPoint curPoint = listView_->visualRect(curIndx).topLeft();
 
             // first move the current item to the drop position
@@ -1606,32 +1621,29 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         queueRelayout();
     }
     else {
-        // move items to Trash if they are dropped on Trash shortcut
-        QModelIndex dropIndex = listView_->indexAt(e->pos());
-        if(dropIndex.isValid()) {
-            if(auto file = proxyModel_->fileInfoFromIndex(dropIndex)) {
-                if(isTrashCan(file)) {
-                    if(mimeData->hasUrls()) {
-                        Fm::FilePathList paths;
-                        const QList<QUrl> urlList = mimeData->urls();
-                        for(const QUrl& url : urlList) {
-                            QString uri = url.toDisplayString();
-                            if(!uri.isEmpty()) {
-                                paths.push_back(Fm::FilePath::fromUri(uri.toStdString().c_str()));
-                            }
-                        }
-                        if(!paths.empty()) {
-                            e->accept();
-                            Settings& settings = static_cast<Application*>(qApp)->settings();
-                            Fm::FileOperation::trashFiles(paths, settings.confirmTrash(), this);
-                            // remove the drop indicator after the drop is finished
-                            QTimer::singleShot(0, listView_, [this] {
-                                dropRect_ = QRect();
-                                listView_->viewport()->update();
-                            });
-                            return;
-                        }
+        // move items to Trash if they are dropped on Trash cell
+        bool isTrash;
+        QModelIndex dropIndex = indexForPos(&isTrash, e->pos(), workArea, grid);
+        if(dropIndex.isValid() && isTrash) {
+            if(mimeData->hasUrls()) {
+                Fm::FilePathList paths;
+                const QList<QUrl> urlList = mimeData->urls();
+                for(const QUrl& url : urlList) {
+                    QString uri = url.toDisplayString();
+                    if(!uri.isEmpty()) {
+                        paths.push_back(Fm::FilePath::fromUri(uri.toStdString().c_str()));
                     }
+                }
+                if(!paths.empty()) {
+                    e->accept();
+                    Settings& settings = static_cast<Application*>(qApp)->settings();
+                    Fm::FileOperation::trashFiles(paths, settings.confirmTrash(), this);
+                    // remove the drop indicator after the drop is finished
+                    QTimer::singleShot(0, listView_, [this] {
+                        dropRect_ = QRect();
+                        listView_->viewport()->update();
+                    });
+                    return;
                 }
             }
         }
@@ -1647,14 +1659,6 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
            && (e->dropAction() == Qt::CopyAction
                || e->dropAction() == Qt::MoveAction
                || e->dropAction() == Qt::LinkAction)) {
-            auto screen = getDesktopScreen();
-            if(screen == nullptr) {
-                return;
-            }
-            auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
-            auto grid = delegate->itemSize();
-            QRect workArea = screen->availableVirtualGeometry();
-            workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
             const QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
             QPoint dropPos = e->pos();
             const QList<QUrl> urlList = mimeData->urls();
@@ -1710,6 +1714,7 @@ bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const 
 
     // find if there is a sticky item at this position
     std::string otherFile;
+    bool isTrash = false;
     auto oldItem = std::find_if(customItemPos_.cbegin(),
                                 customItemPos_.cend(),
                                 [pos](const std::pair<std::string, QPoint>& elem) {
@@ -1717,10 +1722,16 @@ bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const 
                                 });
     if(oldItem != customItemPos_.cend()) {
         otherFile = oldItem->first;
+        if(trashMonitor_ && otherFile != file && otherFile == "trash-can.desktop") {
+            isTrash = true; // occupied by a sticky Trash
+        }
     }
 
-    // stick to the position
-    customItemPos_[file] = pos;
+    if(!isTrash) {
+        // stick to the position if it is not occupied by Trash
+        // NOTE: In this way, a sticky Trash can be moved only explicitly.
+        customItemPos_[file] = pos;
+    }
 
     // check whether we are in the last visible cell if it isn't reached already
     if(!reachedLastCell
@@ -1746,8 +1757,12 @@ bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const 
         }
     }
 
-    // if there was another sticky item at the same position, move it to the next position
-    if(!otherFile.empty() && otherFile != file) {
+    // if the position was ocupied by Trash, go to the next postiton
+    if(isTrash) {
+        reachedLastCell = stickToPosition(file, pos, workArea, grid, reachedLastCell);
+    }
+    // but if there was another sticky item at the same position, move it to the next position
+    else if(!otherFile.empty() && otherFile != file) {
         reachedLastCell = stickToPosition(otherFile, pos, workArea, grid, reachedLastCell);
     }
 
@@ -1759,6 +1774,40 @@ void DesktopWindow::alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize&
     int h = (pos.y() - topLeft.y()) / (grid.height() + spacing); // can be negative with DND
     pos.setX(topLeft.x() + w * (grid.width() + spacing));
     pos.setY(topLeft.y() + h * (grid.height() + spacing));
+}
+
+// "FolderViewListView::indexAt()" finds the index only when the point is inside
+// the text or icon rectangle but we make an exception for Trash because we want
+// to trash dropped items once the drop point is inside the Trash cell.
+QModelIndex DesktopWindow::indexForPos(bool* isTrash, const QPoint& pos, const QRect& workArea, const QSize& grid) const {
+    // first normalize the position
+    QPoint p(pos);
+    if(p.y() + grid.height() > workArea.bottom() + 1) {
+        p.setY(workArea.bottom() + 1 - grid.height());
+    }
+    if(p.x() + grid.width() > workArea.right() + 1) {
+        p.setX(workArea.right() + 1 - grid.width());
+    }
+    p.setX(qMax(workArea.left(), p.x()));
+    p.setY(qMax(workArea.top(), p.y()));
+    alignToGrid(p, workArea.topLeft(), grid, listView_->spacing());
+    // then put the point where the icon rectangle may be
+    // (if there is any item, its icon is immediately below the middle of the top side)
+    p.setX(p.x() + (grid.width() + listView_->spacing()) / 2);
+    p.setY(p.y() + listView_->spacing() / 2 + 1);
+    // if this is the Trash cell, return its index
+    QModelIndex indx = listView_->indexAt(p);
+    if(indx.isValid() && indx.model()) {
+        QVariant data = indx.model()->data(indx, Fm::FolderModel::Role::FileInfoRole);
+        auto info = data.value<std::shared_ptr<const Fm::FileInfo>>();
+        if(isTrashCan(info)) {
+            *isTrash = true;
+            return indx;
+        }
+    }
+    // if this is not the Trash cell, find the index in the usual way
+    *isTrash = false;
+    return listView_->indexAt(pos);
 }
 
 void DesktopWindow::closeEvent(QCloseEvent* event) {
