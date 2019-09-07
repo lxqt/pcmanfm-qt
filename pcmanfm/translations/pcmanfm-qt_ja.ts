@@ -443,7 +443,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="393"/>
         <source>Reload</source>
-        <translation>再読込み</translation>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="289"/>
@@ -473,7 +473,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="286"/>
         <source>&amp;Reload</source>
-        <translation>再読込み(&amp;R)</translation>
+        <translation>再読み込み(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="298"/>
@@ -613,7 +613,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="538"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation>このフォルダーのソートを保存する(&amp;P)</translation>
+        <translation>このフォルダーのソートを保存(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="588"/>
@@ -633,7 +633,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="637"/>
         <source>&amp;Case Sensitive</source>
-        <translation>大文字小文字を区別する(&amp;C)</translation>
+        <translation>大文字と小文字の区別(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="645"/>
@@ -713,7 +713,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="784"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation>このフォルダーの設定を保存する(&amp;P)</translation>
+        <translation>このフォルダーの設定を保存(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="789"/>
