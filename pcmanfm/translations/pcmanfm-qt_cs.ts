@@ -11,7 +11,7 @@
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation>Lehký správce souborů</translation>
+        <translation>Nenáročný správce souborů</translation>
     </message>
     <message>
         <location filename="../about.ui" line="87"/>
@@ -232,7 +232,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="85"/>
         <source>Select background color:</source>
-        <translation>Vyberat barvu pozadí:</translation>
+        <translation>Vyberte barvu pozadí:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="94"/>
@@ -335,7 +335,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="333"/>
         <source>Wallpaper image folder:</source>
-        <translation>Složka obrázku na pozadí:</translation>
+        <translation>Složka s obrázky pro pozadí:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="340"/>
@@ -598,7 +598,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="514"/>
         <source>By File &amp;Type</source>
-        <translation>Podle &amp;typu</translation>
+        <translation>Podle &amp;typu souboru</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="522"/>
@@ -703,12 +703,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="736"/>
         <source>Close &amp;previous tabs</source>
-        <translation>Zavřít &amp;předchozí karty</translation>
+        <translation>Zavřít &amp;panely nalevo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="745"/>
         <source>Close &amp;next tabs</source>
-        <translation>Zavřít &amp;následující karty</translation>
+        <translation>Zavřít panely &amp;napravo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="784"/>
@@ -748,22 +748,22 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="750"/>
         <source>Close &amp;other tabs</source>
-        <translation>Zavřít &amp;ostatní karty</translation>
+        <translation>Zavřít &amp;ostatní panely</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Permanent &amp;filter bar</source>
-        <translation>Trvalá lišta &amp;filtrování</translation>
+        <translation>Trvale zobrazovaná lišta &amp;filtrování</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="758"/>
         <source>&amp;Menu bar</source>
-        <translation>&amp;Pruh nabídek</translation>
+        <translation>Lišta &amp;nabídek</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="761"/>
         <source>Menu bar</source>
-        <translation>Pruh nabídek</translation>
+        <translation>Lišta nabídek</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
@@ -819,12 +819,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="547"/>
         <source>New &amp;Tab</source>
-        <translation>Nová kar&amp;ta</translation>
+        <translation>Nový &amp;panel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>New Tab</source>
-        <translation>Nová karta</translation>
+        <translation>Nový panel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="553"/>
@@ -874,7 +874,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="613"/>
         <source>C&amp;lose Tab</source>
-        <translation>&amp;Zavřít kartu</translation>
+        <translation>&amp;Zavřít panel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="621"/>
@@ -909,12 +909,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="102"/>
         <source>&amp;Sorting</source>
-        <translation>Ř&amp;adit</translation>
+        <translation>Ř&amp;azení</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="225"/>
         <source>Main Toolbar</source>
-        <translation>Hlavní nástrojový pruh</translation>
+        <translation>Hlavní nástrojová lišta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="616"/>
@@ -1005,7 +1005,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="204"/>
         <source>&amp;Tool</source>
-        <translation>Nás&amp;troje</translation>
+        <translation>Nás&amp;troj</translation>
     </message>
 </context>
 <context>
@@ -1033,7 +1033,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../application.cpp" line="170"/>
         <source>Launch desktop manager</source>
-        <translation>Spustit správce desktopu</translation>
+        <translation>Spustit správce plochy</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="173"/>
@@ -1074,7 +1074,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../application.cpp" line="188"/>
         <source>MODE</source>
-        <translation>REZIM</translation>
+        <translation>REŽIM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="188"/>
@@ -1105,7 +1105,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../application.cpp" line="546"/>
         <source>Terminal emulator is not set.</source>
-        <translation>Emulátor terminál není nastaven.</translation>
+        <translation>Není nastaven emulátor terminálu.</translation>
     </message>
 </context>
 <context>
@@ -1141,7 +1141,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation>Zabezpečený WebDav</translation>
+        <translation>Zabezpečené WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1189,7 +1189,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="227"/>
         <source>Image Files</source>
-        <translation>Obrázkové soubory</translation>
+        <translation>Soubory s obrázky</translation>
     </message>
 </context>
 <context>
@@ -1235,7 +1235,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
         <location filename="../desktopwindow.cpp" line="818"/>
         <location filename="../desktopwindow.cpp" line="855"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>&amp;Připíchnout ve stávající poloze</translation>
+        <translation>Připnout &amp;ke stávající poloze</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="825"/>
@@ -1245,12 +1245,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="881"/>
         <source>Hide Desktop Items</source>
-        <translation>Skrýt zástupce</translation>
+        <translation>Skrýt položky plochy</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="886"/>
         <source>Desktop Preferences</source>
-        <translation>Nastavení pracovní plochy</translation>
+        <translation>Předvolby pracovní plochy</translation>
     </message>
 </context>
 <context>
@@ -1279,12 +1279,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>Hide menu bar</source>
-        <translation>Skrýt pruh s nabídkou</translation>
+        <translation>Skrýt lištu nabídky</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="662"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>Tímto bude pruh s nabídkou úplně skryt. Opět ho zobrazíte stisknutím Ctrl+M.</translation>
+        <translation>Tímto bude lišta nabídky úplně skryta. Opět ji zobrazíte stisknutím Ctrl+M.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="984"/>
@@ -1360,12 +1360,10 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="435"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform> (%n skryta)</numerusform>
-            <numerusform> (%n skryty)</numerusform>
-            <numerusform> (%n skryto)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform> (%n skrytá)</numerusform>
+        <numerusform> (%n skryté)</numerusform>
+        <numerusform> (%n skrytých)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="440"/>
         <location filename="../tabpage.cpp" line="613"/>
@@ -1388,7 +1386,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../view.cpp" line="102"/>
         <source>Open in New T&amp;ab</source>
-        <translation>Otevřít v nové k&amp;artě</translation>
+        <translation>Otevřít v novém p&amp;anelu</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="106"/>
@@ -1487,12 +1485,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="479"/>
         <source>Always show the tab bar</source>
-        <translation>Vždycky zobrazovat pruh s kartami</translation>
+        <translation>Vždy zobrazovat lištu s panely</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="486"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Zobrazovat na kartách tlačítko Zavřít	</translation>
+        <translation>Zobrazovat na panelech tlačítko Zavřít	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="493"/>
@@ -1502,7 +1500,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation>Prohlížení</translation>
+        <translation>Procházení</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
@@ -1562,12 +1560,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="138"/>
         <source>Open in current tab</source>
-        <translation>Otevřít ve stávající kartě</translation>
+        <translation>Otevřít ve stávajícím panelu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="143"/>
         <source>Open in new tab</source>
-        <translation>Otevřít v nové kartě</translation>
+        <translation>Otevřít v novém panelu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="148"/>
@@ -1632,7 +1630,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="356"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Zobrazovat ikony skrytých souborů stínovaně</translation>
+        <translation>Zobrazovat ikony skrytých souborů vyšedlé</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
@@ -1671,8 +1669,8 @@ Je také vyhrazeno místo pro tři řádky textu.</translation>
         <location filename="../preferences.ui" line="475"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation>Pokud není zaškrtnuto, bude pruh karet zobrazen
-pouze pokud je více než jedna karta.</translation>
+        <translation>Pokud není zaškrtnuto, bude lišta panelů zobrazena
+pouze pokud je více než jeden panel.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="796"/>
@@ -1727,7 +1725,7 @@ pouze pokud je více než jedna karta.</translation>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>V jemu příslušné &amp;kartě přepnout do domovské složky</translation>
+        <translation>V jemu příslušném &amp;panelu přepnout do domovské složky</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="694"/>
@@ -1737,7 +1735,7 @@ pouze pokud je více než jedna karta.</translation>
     <message>
         <location filename="../preferences.ui" line="718"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>In&amp;tegrace správce archivů:</translation>
+        <translation>&amp;Napojení na správce archivů:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="741"/>
