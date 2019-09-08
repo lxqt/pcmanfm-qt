@@ -453,12 +453,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="128"/>
         <source>&amp;Toolbars</source>
-        <translation>Pruh nás&amp;trojů</translation>
+        <translation>Lišta nás&amp;trojů</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="135"/>
         <source>Path &amp;Bar</source>
-        <translation>&amp;Pruh popisů umístění</translation>
+        <translation>Lišta &amp;popisů umístění</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="142"/>
@@ -503,7 +503,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="339"/>
         <source>Show &amp;Hidden</source>
-        <translation>Zobrazit &amp;skryté</translation>
+        <translation>Zobrazit &amp;skryté soubory a složky</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="342"/>
@@ -784,7 +784,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="259"/>
         <source>Go &amp;Up</source>
-        <translation>Nahor&amp;u</translation>
+        <translation>&amp;O úroveň výš</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="325"/>
@@ -990,7 +990,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="162"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Upravit</translation>
+        <translation>&amp;Úpravy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="180"/>
@@ -1005,7 +1005,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="204"/>
         <source>&amp;Tool</source>
-        <translation>Nás&amp;troj</translation>
+        <translation>Nás&amp;troje</translation>
     </message>
 </context>
 <context>
@@ -1318,22 +1318,22 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="196"/>
         <source>Icon View</source>
-        <translation>Zobrazení s ikonami</translation>
+        <translation>S ikonami</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="197"/>
         <source>Compact View</source>
-        <translation>Kompaktní zobrazení</translation>
+        <translation>Kompaktní</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Thumbnail View</source>
-        <translation>Zobrazení s náhledy</translation>
+        <translation>S náhledy</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Detailed List View</source>
-        <translation>Zobrazení seznamu s podrobnostmi</translation>
+        <translation>Seznam s podrobnostmi</translation>
     </message>
 </context>
 <context>
