@@ -589,37 +589,37 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="498"/>
         <source>&amp;By File Name</source>
-        <translation>Por &amp;nome do arquivo</translation>
+        <translation>Por &amp;Nome do Arquivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="506"/>
         <source>By &amp;Modification Time</source>
-        <translation>Por data de &amp;modificação</translation>
+        <translation>Por Data de &amp;Modificação</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="514"/>
         <source>By File &amp;Type</source>
-        <translation>Por &amp;tipo de arquivo</translation>
+        <translation>Por &amp;Tipo de Arquivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="522"/>
         <source>By &amp;Owner</source>
-        <translation>Por proprietári&amp;o</translation>
+        <translation>Por Proprietári&amp;o</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="530"/>
         <source>&amp;Folder First</source>
-        <translation>Pastas prim&amp;eiro</translation>
+        <translation>&amp;Pastas Primeiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="538"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation>&amp;Preservar a organização desta pasta</translation>
+        <translation>P&amp;reservar a organização desta pasta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="588"/>
         <source>&amp;Invert Selection</source>
-        <translation>&amp;Inverter seleção</translation>
+        <translation>&amp;Inverter Seleção</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="597"/>
@@ -634,7 +634,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="637"/>
         <source>&amp;Case Sensitive</source>
-        <translation>Distinguir maiús&amp;culas e minúsculas</translation>
+        <translation>Diferenciar Maiús&amp;culas e Minúsculas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="645"/>
