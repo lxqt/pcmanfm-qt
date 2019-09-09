@@ -15,6 +15,7 @@ set(pcmanfm_SRCS
     connectserverdialog.cpp
     settings.cpp
     bulkrename.cpp
+    desktopentrydialog.cpp
 )
 
 qt5_add_dbus_adaptor(pcmanfm_DBUS_SRCS
@@ -39,6 +40,7 @@ set(pcmanfm_UIS
     autorun.ui
     connect.ui
     bulk-rename.ui
+    desktopentrydialog.ui
 )
 
 # add translation for pcmanfm-qt

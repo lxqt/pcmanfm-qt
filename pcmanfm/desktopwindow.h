@@ -109,6 +109,7 @@ protected:
 protected Q_SLOTS:
     void onOpenDirRequested(const Fm::FilePath& path, int target);
     void onDesktopPreferences();
+    void onCreatingShortcut();
     void selectAll();
     void toggleDesktop();
 
@@ -191,6 +192,8 @@ private:
 
     QTimer* trashUpdateTimer_;
     GFileMonitor* trashMonitor_;
+
+    QStringList filesToTrust_;
 };
 
 }

@@ -54,6 +54,7 @@
 #include <libfm-qt/core/fileinfo.h>
 #include "xdgdir.h"
 #include "bulkrename.h"
+#include "desktopentrydialog.h"
 
 #include <QX11Info>
 #include <QScreen>
@@ -920,6 +921,10 @@ void DesktopWindow::addDesktopActions(QMenu* menu) {
     action->setChecked(desktopHideItems_);
     menu->addSeparator();
     connect(action, &QAction::triggered, this, &DesktopWindow::toggleDesktop);
+    if(!desktopHideItems_) {
+        action = menu->addAction(tr("Create Launcher"));
+        connect(action, &QAction::triggered, this, &DesktopWindow::onCreatingShortcut);
+    }
     action = menu->addAction(tr("Desktop Preferences"));
     connect(action, &QAction::triggered, this, &DesktopWindow::onDesktopPreferences);
 }
@@ -944,6 +949,17 @@ void DesktopWindow::selectAll() {
     if(!desktopHideItems_) {
         FolderView::selectAll();
     }
+}
+
+void DesktopWindow::onCreatingShortcut() {
+    DesktopEntryDialog* dlg = new DesktopEntryDialog(this);
+    dlg->setAttribute(Qt::WA_DeleteOnClose);
+    connect(dlg, &DesktopEntryDialog::desktopEntryCreated, [this] (const QString& name) {
+        filesToTrust_ << name;
+    });
+    dlg->show();
+    dlg->raise();
+    dlg->activateWindow();
 }
 
 void DesktopWindow::onDesktopPreferences() {
@@ -1175,12 +1191,16 @@ void DesktopWindow::relayoutItems() {
         QModelIndex index = proxyModel_->index(row, 0);
         int itemWidth = delegate->sizeHint(listView_->getViewOptions(), index).width();
         auto file = proxyModel_->fileInfoFromIndex(index);
-        // remember display names of desktop entries and shortcuts
+        auto name = file->name();
+        if(filesToTrust_.contains(QString::fromStdString(name))) {
+            file->setTrustable(true);
+            filesToTrust_.removeAll(QString::fromStdString(name));
+        }
         if(file->isDesktopEntry() || file->isShortcut()) {
+            // remember display names of desktop entries and shortcuts
             displayNames_[index] = file->displayName();
             trustOurDesktopShortcut(file);
-        }
-        auto name = file->name();
+         }
         auto find_it = customItemPos_.find(name);
         if(find_it != customItemPos_.cend()) { // the item has a custom position
             QPoint customPos = find_it->second;
