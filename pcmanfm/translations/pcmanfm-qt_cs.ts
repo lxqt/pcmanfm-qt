@@ -478,7 +478,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="298"/>
         <source>Go</source>
-        <translation>Jít na</translation>
+        <translation>Přejít na</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="307"/>
@@ -548,7 +548,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="446"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Zkopírovat</translation>
+        <translation>&amp;Kopírovat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="449"/>
@@ -613,7 +613,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="538"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation>Zachovat řazení &amp;pro tuto složku</translation>
+        <translation>Zapamatovat si řazení &amp;pro tuto složku</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="588"/>
@@ -713,7 +713,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="784"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation>Zachovat nastavení &amp;pro tuto složku</translation>
+        <translation>Zapamatovat si nastavení &amp;pro tuto složku</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="789"/>
@@ -1000,7 +1000,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../main-win.ui" line="187"/>
         <source>&amp;Go</source>
-        <translation>&amp;Jít na</translation>
+        <translation>Pře&amp;jít na</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="204"/>
