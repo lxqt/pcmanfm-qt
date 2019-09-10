@@ -694,7 +694,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Show Filter Bar</source>
-        <translation>Süzgeç Çubuğunu Göster</translation>
+        <translation>Filtre Çubuğunu Göster</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
@@ -734,7 +734,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Clear All Filters</source>
-        <translation>Tüm Süzgeçleri &amp;Temizle</translation>
+        <translation>Tüm Filtreleri &amp;Temizle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="727"/>
@@ -845,7 +845,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="568"/>
         <source>Alt+Left</source>
-        <translation>Alt+Left</translation>
+        <translation>Alt+Sol</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="577"/>
@@ -1044,7 +1044,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../application.cpp" line="176"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Aynı adı taşıyan sayfa yada dosya varsa masaüstünde bir tercih öner</translation>
+        <translation>Sayfadaki masaüstü tercihleri iletişim kutusunu belirtilen adla aç</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="176"/>
@@ -1060,12 +1060,12 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../application.cpp" line="182"/>
         <source>Open Find Files utility</source>
-        <translation>Açık Dosya Bulmaya yarar</translation>
+        <translation>Dosya Bul aracını aç</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="185"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>DOSYA masaüstü duvarkağıdı olarak ayarlansın</translation>
+        <translation>Görüntü DOSYASINI masaüstü duvar kağıdı olarak ayarla</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="185"/>
@@ -1085,17 +1085,17 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../application.cpp" line="191"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Aynı adı taşıyan sayfa yada dosya varsa bir tercih öner</translation>
+        <translation>Sayfadaki masaüstü tercihleri iletişim kutusunu belirtilen adla aç</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="194"/>
         <source>Files or directories to open</source>
-        <translation>Dosya veya dizin aç</translation>
+        <translation>Açılacak dosyalar veya dizinler</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="194"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation>[DOSYA1, DOSYA,...]</translation>
+        <translation>[DOSYA1, DOSYA2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="541"/>
@@ -1106,7 +1106,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../application.cpp" line="546"/>
         <source>Terminal emulator is not set.</source>
-        <translation>Uçbirim uygulaması ayarlanmadı.</translation>
+        <translation>Uçbirim öykünücüsü ayarlanmadı.</translation>
     </message>
 </context>
 <context>
@@ -1119,7 +1119,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../autorundialog.cpp" line="135"/>
         <source>Removable Disk</source>
-        <translation>Çıkarılabilir Bellek</translation>
+        <translation>Çıkarılabilir Disk</translation>
     </message>
 </context>
 <context>
@@ -1142,7 +1142,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation></translation>
+        <translation>Güvenli WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1160,32 +1160,32 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
-        <translation>Arkaplan sadece renk dolgusu olsun</translation>
+        <translation>Sadece arkaplan rengi ile doldur</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>Tüm ekranı kaplayacak şekilde ger</translation>
+        <translation>Tüm ekranı doldurmak için genişlet</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
-        <translation>Ekran boyutuna uzat ve uydur</translation>
+        <translation>Ekran doldurmak için genişlet</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
-        <translation>Ekranı ortala</translation>
+        <translation>Ekrana ortala</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>Tüm ekranı dolduracak şekilde döşe</translation>
+        <translation>Tüm ekranı dolduracak şekilde resmi döşe</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation>Remi tüm ekranı dolduracak şekilde ayarla</translation>
+        <translation>Tüm ekranı doldurmak için resmi yakınlaştır</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="227"/>
@@ -1258,7 +1258,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation>Süzgeç:</translation>
+        <translation>Filtre:</translation>
     </message>
 </context>
 <context>
@@ -1274,7 +1274,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished">Kök Örneği</translation>
+        <translation>Kök Örneği</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -1318,7 +1318,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="196"/>
         <source>Icon View</source>
-        <translation>Simgeler</translation>
+        <translation>Simge Görünümü</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="197"/>
@@ -1333,7 +1333,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Detailed List View</source>
-        <translation>Detaylı Liste</translation>
+        <translation>Detaylı Liste Görünümü</translation>
     </message>
 </context>
 <context>
@@ -1351,17 +1351,15 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="433"/>
         <source>%n item(s)</source>
-        <translation>
-            <numerusform>%n nesne(ler)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n nesne</numerusform>
+        <numerusform>%n nesne</numerusform>
+        </translation></message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="435"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform> (%n gizli)</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform> (%n gizli)</numerusform>
+        <numerusform> (%n gizli)</numerusform>
+        </translation></message>
     <message>
         <location filename="../tabpage.cpp" line="440"/>
         <location filename="../tabpage.cpp" line="613"/>
@@ -1372,10 +1370,9 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="643"/>
         <source>%n item(s) selected</source>
-        <translation>
-            <numerusform>%n nesne seçildi</numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>%n nesne seçildi</numerusform>
+        <numerusform>%n nesne seçildi</numerusform>
+        </translation></message>
 </context>
 <context>
     <name>PCManFM::View</name>
@@ -1421,7 +1418,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation>Disk Yönetimi</translation>
+        <translation>Disk Bölümü</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
@@ -1481,17 +1478,17 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="493"/>
         <source>Remember the size of the last closed window</source>
-        <translation>Son kapatılan pencere boyutunu anımsa</translation>
+        <translation>Son kapatılan pencerenin boyutunu anımsa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="500"/>
         <source>Default width of new windows:</source>
-        <translation>Yeni pencereleri varsayılan genişlikte aç:</translation>
+        <translation>Yeni pencerelerin varsayılan genişliği:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="514"/>
         <source>Default height of new windows:</source>
-        <translation>Yeni pencereleri varsayılan yükseklikte aç:</translation>
+        <translation>Yeni pencerelerin varsayılan yüksekliği:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
@@ -1501,12 +1498,12 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>Open files with single click</source>
-        <translation>Dosyaları çift tıklama ile aç</translation>
+        <translation>Dosyaları tek tıklama ile aç</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="100"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation>İmleç üzerinde bekleyince kendiliğinden seç ve tek tıkla (0 etkisizleştirir)</translation>
+        <translation>Tek tıklatma kipinde otomatik seçim gecikmesi (0 devre dışı bırakır)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="107"/>
@@ -1531,7 +1528,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="172"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Silinen dosyaları &quot;çöpe atmadan&quot; diskten sil.</translation>
+        <translation>Silinen dosyaları diskten silmek yerine &quot;çöp kutusu&quot;na taşı.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="581"/>
@@ -1541,7 +1538,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Only show thumbnails for local files</source>
-        <translation>Yerel dosyalar için önizleme göster</translation>
+        <translation>Sadece yerel dosyalar için önizleme göster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
@@ -1571,12 +1568,12 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="179"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Çıkarılabilir bellek takılınca kendiliğinden oluşan &quot;kalıntıları&quot; sil</translation>
+        <translation>&quot;Çöp kutusu&quot; oluşturmak yerine çıkarılabilir medyadaki dosyaları sil</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="186"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>Dosyalar &quot;çöpe&quot; gönderilmeden önce onay iste</translation>
+        <translation>Dosyalar &quot;çöp kutusuna&quot; taşımadan önce onay iste</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
@@ -1588,25 +1585,25 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Launch executable files without prompt</source>
-        <translation>Yürütülebilir dosyaları istemsiz başlat</translation>
+        <translation>Yürütülebilir dosyaları sormadan başlat</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
         <location filename="../preferences.ui" line="269"/>
         <source>Used by Icon View</source>
-        <translation></translation>
+        <translation>Simge Görünümü tarafından kullanılır</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="276"/>
         <location filename="../preferences.ui" line="286"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation></translation>
+        <translation>Sıkışık Görünüm ve Ayrıntılı Liste Görünümü tarafından kullanılır</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="293"/>
         <location filename="../preferences.ui" line="303"/>
         <source>Used by Thumbnail View</source>
-        <translation></translation>
+        <translation>Önizleme Görünümü tarafından kullanılır</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
@@ -1616,12 +1613,12 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="336"/>
         <source>Treat backup files as hidden</source>
-        <translation>Yedekleme dosyalarını gizle</translation>
+        <translation>Yedek dosyaları gizli olarak kabul et</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="346"/>
         <source>Always show full file names</source>
-        <translation>Her zaman dosya adının tamamını göster</translation>
+        <translation>Her zaman tam dosya adını göster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="356"/>
@@ -1631,7 +1628,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="379"/>
         <source>Minimum item margins in icon view:</source>
-        <translation></translation>
+        <translation>Simge görünümünde en küçük nesne aralığı:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="386"/>
@@ -1716,7 +1713,7 @@ birden fazla sekme var ise görünür.</translation>
     <message>
         <location filename="../preferences.ui" line="644"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>Bellek çıkarılınca &amp;sekme kapansın</translation>
+        <translation>Çıkarılabilir ortamı içeren &amp;sekmeyi kapat</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="651"/>
@@ -1731,12 +1728,12 @@ birden fazla sekme var ise görünür.</translation>
     <message>
         <location filename="../preferences.ui" line="687"/>
         <source>Terminal emulator:</source>
-        <translation>Uçbirim emülatörü:</translation>
+        <translation>Uçbirim öykünücüsü:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="694"/>
         <source>Switch &amp;user command:</source>
-        <translation>&amp;Kullanıcı değiştirme-komutu:</translation>
+        <translation>&amp;Kullanıcı değiştirme komutu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="707"/>
@@ -1768,7 +1765,7 @@ birden fazla sekme var ise görünür.</translation>
     <message>
         <location filename="../preferences.ui" line="761"/>
         <source>Run default application after creation from template</source>
-        <translation>Şablonu uygulama çalıştıktan sonra oluştur</translation>
+        <translation>Şablondan oluşturulduktan sonra varsayılan uygulamayı çalıştır</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="329"/>
