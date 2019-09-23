@@ -181,59 +181,59 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Starter erstellen</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Name:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Beschreibung:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentar:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Befehl:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>…</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Symbol:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>In Terminal ausführen?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Nein</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ja</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
@@ -243,12 +243,12 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Anwendung</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Verknüpfung</translation>
     </message>
 </context>
 <context>
@@ -403,12 +403,12 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="264"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Hintergrundbild</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="330"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Bild basierend auf EXIF-Daten transformieren</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
@@ -676,7 +676,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nach Löschzeit</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -691,7 +691,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nach &amp;Gruppe</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
@@ -781,12 +781,12 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorschaubilder a&amp;nzeigen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorschaubilder anzeigen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
@@ -1012,7 +1012,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../main-win.ui" line="228"/>
         <source>Main Toolbar</source>
-        <translation>Hauptwerkzeugleiste</translation>
+        <translation>Werkzeugleiste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="635"/>
@@ -1257,32 +1257,32 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktopentrydialog.cpp" line="26"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Befehl:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>Adresse:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="54"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Symbol auswählen</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="56"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilder (*.png *.xpm *.svg *.svgz)</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="78"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Wählen Sie eine ausführbare Datei</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="86"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Eine Datei auswählen</translation>
     </message>
 </context>
 <context>
@@ -1320,7 +1320,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="231"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Hintergrundbild auswählen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="235"/>
@@ -1382,7 +1382,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktopwindow.cpp" line="925"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Starter erstellen</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="928"/>
@@ -1524,12 +1524,12 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../view.cpp" line="56"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Viele Dateien</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="57"/>
         <source>Do you want to open these %1 file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Möchten Sie diese %1-Datei öffnen?</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
@@ -1703,7 +1703,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Wenn dies nicht markiert ist, wird die DE-Einstellung verwendet.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="133"/>
