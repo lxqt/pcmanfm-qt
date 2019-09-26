@@ -104,14 +104,14 @@
               </property>
              </widget>
             </item>
-            <item row="3" column="0">
+            <item row="4" column="0">
              <widget class="QLabel" name="label_11">
               <property name="text">
                <string>Default view mode:</string>
               </property>
              </widget>
             </item>
-            <item row="3" column="1">
+            <item row="4" column="1">
              <widget class="QComboBox" name="viewMode"/>
             </item>
             <item row="1" column="1">
@@ -127,14 +127,14 @@
               </property>
              </widget>
             </item>
-            <item row="2" column="0">
+            <item row="3" column="0">
              <widget class="QLabel" name="label_2">
               <property name="text">
                <string>Bookmarks:</string>
               </property>
              </widget>
             </item>
-            <item row="2" column="1">
+            <item row="3" column="1">
              <widget class="QComboBox" name="bookmarkOpenMethod">
               <item>
                <property name="text">
@@ -151,6 +151,13 @@
                 <string>Open in new window</string>
                </property>
               </item>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QCheckBox" name="ctrlRightClick">
+              <property name="text">
+               <string>Show folder context menu with Ctrl + right click</string>
+              </property>
              </widget>
             </item>
            </layout>

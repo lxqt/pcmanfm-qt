@@ -940,8 +940,9 @@ void DesktopWindow::toggleDesktop() {
         listView_->setFocus(); // refocus the view
         queueRelayout();
     }
-    else { // prevent the current item from being changed by arrow keys
-        listView_->clearFocus();
+    else {
+        listView_->clearFocus(); // prevent the current item from being changed by arrow keys
+        setCursor(Qt::ArrowCursor); // ensure arrow cursor on an empty desktop
     }
 }
 
