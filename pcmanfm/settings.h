@@ -648,6 +648,14 @@ public:
         autoSelectionDelay_ = value;
     }
 
+    bool ctrlRightClick() const {
+        return ctrlRightClick_;
+    }
+
+    void setCtrlRightClick(bool value) {
+        ctrlRightClick_ = value;
+    }
+
     bool useTrash() const {
         if(!supportTrash_) {
             return false;
@@ -989,6 +997,7 @@ private:
     // settings for use with libfm
     bool singleClick_;
     int autoSelectionDelay_;
+    bool ctrlRightClick_;
     bool useTrash_;
     bool confirmDelete_;
     bool noUsbTrash_; // do not trash files on usb removable devices

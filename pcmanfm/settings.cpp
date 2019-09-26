@@ -103,6 +103,7 @@ Settings::Settings():
     // settings for use with libfm
     singleClick_(false),
     autoSelectionDelay_(600),
+    ctrlRightClick_(false),
     useTrash_(true),
     confirmDelete_(true),
     noUsbTrash_(false),
@@ -212,6 +213,7 @@ bool Settings::loadFile(QString filePath) {
     useTrash_ = settings.value(QStringLiteral("UseTrash"), true).toBool();
     singleClick_ = settings.value(QStringLiteral("SingleClick"), false).toBool();
     autoSelectionDelay_ = settings.value(QStringLiteral("AutoSelectionDelay"), 600).toInt();
+    ctrlRightClick_ = settings.value(QStringLiteral("CtrlRightClick"), false).toBool();
     confirmDelete_ = settings.value(QStringLiteral("ConfirmDelete"), true).toBool();
     setNoUsbTrash(settings.value(QStringLiteral("NoUsbTrash"), false).toBool());
     confirmTrash_ = settings.value(QStringLiteral("ConfirmTrash"), false).toBool();
@@ -355,6 +357,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("UseTrash"), useTrash_);
     settings.setValue(QStringLiteral("SingleClick"), singleClick_);
     settings.setValue(QStringLiteral("AutoSelectionDelay"), autoSelectionDelay_);
+    settings.setValue(QStringLiteral("CtrlRightClick"), ctrlRightClick_);
     settings.setValue(QStringLiteral("ConfirmDelete"), confirmDelete_);
     settings.setValue(QStringLiteral("NoUsbTrash"), noUsbTrash_);
     settings.setValue(QStringLiteral("ConfirmTrash"), confirmTrash_);

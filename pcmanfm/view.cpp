@@ -160,6 +160,8 @@ void View::updateFromSettings(Settings& settings) {
 
     setAutoSelectionDelay(settings.autoSelectionDelay());
 
+    setCtrlRightClick(settings.ctrlRightClick());
+
     Fm::ProxyFolderModel* proxyModel = model();
     if(proxyModel) {
         proxyModel->setShowThumbnails(settings.showThumbnails());

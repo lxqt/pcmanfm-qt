@@ -190,6 +190,7 @@ void PreferencesDialog::initUiPage(Settings& settings) {
 void PreferencesDialog::initBehaviorPage(Settings& settings) {
     ui.singleClick->setChecked(settings.singleClick());
     ui.autoSelectionDelay->setValue(double(settings.autoSelectionDelay()) / 1000);
+    ui.ctrlRightClick->setChecked(settings.ctrlRightClick());
 
     ui.bookmarkOpenMethod->setCurrentIndex(settings.bookmarkOpenMethod());
 
@@ -320,6 +321,7 @@ void PreferencesDialog::applyUiPage(Settings& settings) {
 void PreferencesDialog::applyBehaviorPage(Settings& settings) {
     settings.setSingleClick(ui.singleClick->isChecked());
     settings.setAutoSelectionDelay(int(ui.autoSelectionDelay->value() * 1000));
+    settings.setCtrlRightClick(ui.ctrlRightClick->isChecked());
 
     settings.setBookmarkOpenMethod(OpenDirTargetType(ui.bookmarkOpenMethod->currentIndex()));
 
