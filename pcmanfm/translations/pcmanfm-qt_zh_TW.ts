@@ -236,7 +236,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">型態:</translation>
+        <translation type="unfinished">類型:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
@@ -1400,7 +1400,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>清除文字 (Ctrl+K 或 Esc)</translation>
     </message>
 </context>
 <context>
