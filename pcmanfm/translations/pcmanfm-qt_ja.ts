@@ -49,16 +49,16 @@ Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
-of the License、or (at your option) any later version。
+of the License, or (at your option) any later version.
 
-This program is distributed in the hope that it will be useful、
+This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE。 See the
-GNU General Public License for more details。
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program; if not、write to the Free Software
-Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301、USA。</translation>
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="87"/>
@@ -136,7 +136,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>リモートサーバーに接続</translation>
+        <translation>リモートサーバーへの接続</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
@@ -151,7 +151,7 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation>接続時にリモートフォルダーを指定</translation>
+        <translation>接続するリモートフォルダーを指定します</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
@@ -179,74 +179,74 @@ Foundation、Inc.、51 Franklin Street、Fifth Floor、Boston、MA  02110-1301�
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>ランチャーの作成</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>名前:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>簡略説明:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>コメント:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>コマンド:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>アイコン:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>端末内で実行しますか？</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>端末:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>いいえ</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>はい</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">タイプ:</translation>
+        <translation>種類:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>アプリケーション</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>リンク</translation>
     </message>
 </context>
 <context>
@@ -401,12 +401,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="264"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>壁紙</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="330"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>EXIF データに基づいて画像を変換する</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
@@ -649,7 +649,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="477"/>
         <source>Pr&amp;eferences</source>
-        <translation>設定(&amp;R)</translation>
+        <translation>設定(&amp;E)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="485"/>
@@ -674,7 +674,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>削除日時順</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -689,7 +689,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>グループ順(&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
@@ -774,12 +774,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>サムネイルの表示(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>サムネイルの表示</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
@@ -814,7 +814,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="808"/>
         <source>Connect to &amp;Server</source>
-        <translation>サーバーに接続(&amp;S)</translation>
+        <translation>サーバーへの接続(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
@@ -1201,7 +1201,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="550"/>
         <source>Terminal emulator is not set.</source>
-        <translation>端末エミュレーターを未設定です。</translation>
+        <translation>端末エミュレーターを設定していません。</translation>
     </message>
 </context>
 <context>
@@ -1255,32 +1255,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="26"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>コマンド:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="54"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>アイコンの選択</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="56"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>画像 (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="78"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>実行可能ファイルの選択</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="86"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルの選択</translation>
     </message>
 </context>
 <context>
@@ -1318,7 +1318,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="231"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>壁紙の選択</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="235"/>
@@ -1331,7 +1331,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (One item)</source>
-        <translation>ゴミ箱 ( 1 個)</translation>
+        <translation>ゴミ箱 (1 個)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="300"/>
@@ -1379,7 +1379,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="925"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>ランチャーの作成</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="928"/>
@@ -1400,7 +1400,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストの消去 (Ctrl+K または Esc)</translation>
     </message>
 </context>
 <context>
@@ -1446,7 +1446,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1921"/>
         <source>Switch user command is not set.</source>
-        <translation>ユーザー切替のコマンドが設定されていません。</translation>
+        <translation>ユーザー切り替えのコマンドが設定されていません。</translation>
     </message>
 </context>
 <context>
@@ -1518,12 +1518,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../view.cpp" line="56"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>多数のファイル</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="57"/>
         <source>Do you want to open these %1 file?</source>
-        <translation type="unfinished"></translation>
+        <translation>これらの %1 個のファイルを開きますか？</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
@@ -1689,7 +1689,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>このチェックをオフにすると、デスクトップ環境の設定が使用されます。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
@@ -1812,7 +1812,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="710"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>例:&lt;br&gt;端末の場合: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;ユーザー切り替えの場合: &lt;i&gt;lxsudo %s&lt;/i&gt; または &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; は、端末またはユーザー切り替えで実行するコマンドラインです。&lt;br&gt;重要: sudo では設定ファイルのアクセス権が壊れることがあるので、lxsudo を使用して下さい。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="801"/>
@@ -1872,7 +1872,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="697"/>
         <source>Switch &amp;user command:</source>
-        <translation>ユーザー切替のコマンド(&amp;U):</translation>
+        <translation>ユーザー切り替えのコマンド(&amp;U):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="723"/>
