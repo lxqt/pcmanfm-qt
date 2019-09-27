@@ -179,74 +179,74 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Crear lanzador</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Descrición:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Comentario:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Orde:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Icona:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar nun terminal?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Non</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Si</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">Tipo:</translation>
+        <translation>Tipo:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicación</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Ligazón</translation>
     </message>
 </context>
 <context>
@@ -401,12 +401,12 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="264"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Fondo de escritorio</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="330"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Transformar imaxe baseada en datos EXIF</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
@@ -614,7 +614,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="391"/>
         <source>&amp;Applications</source>
-        <translation>&amp;Aplicativos</translation>
+        <translation>&amp;Aplicacións</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="440"/>
@@ -674,7 +674,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Pola data de eliminació&amp;n</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -689,7 +689,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Polo &amp;grupo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
@@ -774,12 +774,12 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Amosar mi&amp;niaturas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Amosar miniaturas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
@@ -935,7 +935,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="584"/>
         <source>Go Back</source>
-        <translation>Ir cara atrás</translation>
+        <translation>Ir cara a atrás</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="587"/>
@@ -950,7 +950,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="599"/>
         <source>Go Forward</source>
-        <translation>Ir cara adiante</translation>
+        <translation>Ir cara a adiante</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="602"/>
@@ -1255,32 +1255,32 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="26"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Orde:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="54"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccione unha icona</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="56"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Imaxes (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="78"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccione un ficheiro executábel</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="86"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccione un ficheiro</translation>
     </message>
 </context>
 <context>
@@ -1318,7 +1318,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="231"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccione un fondo de pantalla</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="235"/>
@@ -1380,7 +1380,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="925"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Crear un lanzador</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="928"/>
@@ -1401,7 +1401,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Limpar o texto (Ctrl+K ou Esc)</translation>
     </message>
 </context>
 <context>
@@ -1522,12 +1522,12 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../view.cpp" line="56"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Moitos ficheiros</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="57"/>
         <source>Do you want to open these %1 file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Quere abrir estes %1 ficheiros?</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
@@ -1701,7 +1701,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Se isto non está marcado, usarase a configuración DE.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="133"/>
@@ -1738,7 +1738,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
         <location filename="../preferences.ui" line="346"/>
         <location filename="../preferences.ui" line="356"/>
         <source>Requires application restart to take effect completely</source>
-        <translation>Require reiniciar o aplicativo para obter o efecto completo</translation>
+        <translation>Require reiniciar a aplicación para obter o efecto completo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="199"/>
@@ -1771,7 +1771,7 @@ Tamén se reserva espazo para 3 liñas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="339"/>
         <source>Treat backup files as hidden</source>
-        <translation>Tratar os ficheiros de copia de seguranza como agochados</translation>
+        <translation>Tratar os ficheiros de copia de seguridade como agochados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="349"/>
@@ -1826,12 +1826,12 @@ amosase só se hai máis dunha lapela.</translation>
     <message>
         <location filename="../preferences.ui" line="710"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Exemplos:&lt;br&gt;Para o terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Para cambiar de usuario: &lt;i&gt;lxsudo %s&lt;/i&gt; ou &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; liña de ordes que quere executar co terminal ou como superusario.&lt;br&gt; Importante: Use lxsudo, sudo só estragrá os permisos do ficheiro de axustes.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="801"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation>É necesario reiniciar o aplicativo para que os cambios teñan efecto.</translation>
+        <translation>É necesario reiniciar a aplicación para que os cambios teñan efecto.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="557"/>
@@ -1911,7 +1911,7 @@ amosase só se hai máis dunha lapela.</translation>
     <message>
         <location filename="../preferences.ui" line="766"/>
         <source>Run default application after creation from template</source>
-        <translation>Executar o aplicativo predeterminado trala creación a partires dun modelo</translation>
+        <translation>Executar a aplicación predeterminada trala creación a partires dun modelo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="681"/>
