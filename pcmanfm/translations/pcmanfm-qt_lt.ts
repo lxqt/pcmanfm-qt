@@ -179,74 +179,74 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Sukurti paleidyklę</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pavadinimas:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprašas:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Komentaras:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Komanda:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Piktograma:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Paleisti terminale?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminalas:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Taip</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">Tipas:</translation>
+        <translation>Tipas:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Programa</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuoroda</translation>
     </message>
 </context>
 <context>
@@ -401,12 +401,12 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="264"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Darbalaukio fonas</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="330"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Pertvarkyti paveikslą pagal EXIF duomenis</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
@@ -714,7 +714,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Pagal iš&amp;trynimo laiką</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -729,7 +729,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Pagal &amp;grupę</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
@@ -814,12 +814,12 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodyti &amp;miniatiūras</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodyti miniatiūras</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
@@ -1255,32 +1255,32 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="26"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Komanda:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="54"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasirinkti piktogramą</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="56"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Paveikslai (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="78"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasirinkti vykdomąjį failą</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="86"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasirinkti failą</translation>
     </message>
 </context>
 <context>
@@ -1318,7 +1318,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="231"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasirinkti darbalaukio foną</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="235"/>
@@ -1381,7 +1381,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="925"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Sukurti paleidyklę</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="928"/>
@@ -1402,7 +1402,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Išvalyti tekstą (Vald+K arba Gr)</translation>
     </message>
 </context>
 <context>
@@ -1526,12 +1526,12 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../view.cpp" line="56"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Daug failų</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="57"/>
         <source>Do you want to open these %1 file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ar norite atverti šiuos %1 failus?</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
@@ -1705,7 +1705,7 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jei žymėjimas nuimtas, bus naudojamas darbalaukio aplinkos nustatymas.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="133"/>
@@ -1831,7 +1831,7 @@ viena kortelė.</translation>
     <message>
         <location filename="../preferences.ui" line="710"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pavyzdžiai:&lt;br&gt;Terminalui: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Naudotojo perjungimui: &lt;i&gt;lxsudo %s&lt;/i&gt; arba &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; yra komandų eilutė, kurią norite vykdyti naudojant terminalą ar su.&lt;br&gt; Svarbu: Naudokite lxsudo, nes vien tik sudo sugadins nustatymų failo leidimus.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="801"/>
