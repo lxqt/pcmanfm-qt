@@ -274,6 +274,7 @@ void DesktopPreferencesDialog::onFolderBrowseClicked() {
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
   dlg.setFileMode(QFileDialog::Directory);
   dlg.setOption(QFileDialog::ShowDirsOnly);
+  dlg.setWindowTitle(tr("Select Wallpaper Folder"));
 
   // select an appropriate dir
   QString path = ui.imageFolder->text();
