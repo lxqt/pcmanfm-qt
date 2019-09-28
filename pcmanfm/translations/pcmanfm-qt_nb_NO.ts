@@ -136,7 +136,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>Koble opp til server</translation>
+        <translation>Koble til fjern-server</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
@@ -151,7 +151,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation>Spesifiser mappe å koble opp til</translation>
+        <translation>Spesifiser mappe å koble til</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
@@ -166,7 +166,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation>Filsti:</translation>
+        <translation>Sti:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
@@ -179,74 +179,74 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Skap oppstarter</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Navn:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Beskrivelse:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentar:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommando:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Symbol:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Kjør i terminal?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Nei</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ja</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Type:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Program</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Lenke</translation>
     </message>
 </context>
 <context>
@@ -254,7 +254,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation></translation>
+        <translation>Formular</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -298,7 +298,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="276"/>
         <source>Wallpaper mode:</source>
-        <translation>Skrivebordsbakgrunnsmodus:</translation>
+        <translation>Skrivebordsbakgrunnstype:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="299"/>
@@ -379,7 +379,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source> px</source>
-        <translation> p</translation>
+        <translation> pk</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="165"/>
@@ -401,12 +401,12 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="264"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivebordsbakgrunn</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="330"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Forandre bilde basert på EXIF-data</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
@@ -466,7 +466,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="504"/>
         <source>Visible Shortcuts</source>
-        <translation>Synlige snarveier</translation>
+        <translation>Synlige snareveier</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="510"/>
@@ -476,7 +476,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="521"/>
         <source>Trash</source>
-        <translation>Papirkurv</translation>
+        <translation>Søppeldunk</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="532"/>
@@ -509,7 +509,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="137"/>
         <source>Path &amp;Bar</source>
-        <translation>Filsti&amp;linje</translation>
+        <translation>Sti&amp;linje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="144"/>
@@ -544,7 +544,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="289"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Last på nytt</translation>
+        <translation>&amp;Last inn på nytt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="292"/>
@@ -599,7 +599,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="363"/>
         <source>&amp;Trash</source>
-        <translation>&amp;Papirkurv</translation>
+        <translation>&amp;Søppeldunk</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="368"/>
@@ -714,7 +714,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Etter &amp;tid slettet</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -729,7 +729,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Etter &amp;gruppe</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
@@ -804,7 +804,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="865"/>
         <source>&amp;Copy Full Path</source>
-        <translation>&amp;Kopier hele filstien</translation>
+        <translation>&amp;Kopier hele stien</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="868"/>
@@ -814,12 +814,12 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis forhå&amp;ndsvisninger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis forhåndsvisninger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
@@ -864,7 +864,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>&amp;Path Buttons</source>
-        <translation>&amp;Filstiknapper</translation>
+        <translation>&amp;Stiknapper</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="829"/>
@@ -970,7 +970,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="619"/>
         <source>Del</source>
-        <translation>Slett</translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="624"/>
@@ -1255,32 +1255,32 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="26"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommando:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nettadresse:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="54"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg et symbol</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="56"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilder (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="78"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg en kjørbar fil</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="86"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg en fil</translation>
     </message>
 </context>
 <context>
@@ -1318,7 +1318,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="231"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg skrivebordsbakgrunn</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="235"/>
@@ -1331,20 +1331,20 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (One item)</source>
-        <translation>Papirkurv (et objekt)</translation>
+        <translation>Søppeldunk (et objekt)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
         <translation>
-            <numerusform>Papirkurv (&amp;Ln objekt)</numerusform>
-            <numerusform>Papirkurv (&amp;Ln objekter)</numerusform>
+            <numerusform>Søppeldunk (&amp;Ln objekt)</numerusform>
+            <numerusform>Søppeldunk (&amp;Ln objekter)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="304"/>
         <source>Trash (Empty)</source>
-        <translation>Papirkurv (tom)</translation>
+        <translation>Søppeldunk (tom)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="332"/>
@@ -1370,7 +1370,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="863"/>
         <source>Empty Trash</source>
-        <translation>Tøm papirkurv</translation>
+        <translation>Tøm søppeldunk</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="919"/>
@@ -1380,7 +1380,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="925"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Skap oppstarter</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="928"/>
@@ -1401,7 +1401,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Slett tekst (Ctrl+K eller Esc)</translation>
     </message>
 </context>
 <context>
@@ -1430,7 +1430,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
         <location filename="../mainwindow.cpp" line="172"/>
         <location filename="../mainwindow.cpp" line="1856"/>
         <source>&amp;Move to Trash</source>
-        <translation>Flytt til &amp;papirkurven</translation>
+        <translation>Flytt til &amp;søppeldunken</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
@@ -1489,8 +1489,8 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
         <location filename="../tabpage.cpp" line="446"/>
         <source>%n item(s)</source>
         <translation>
-            <numerusform>%n objekt</numerusform>
-            <numerusform>%n objekter</numerusform>
+            <numerusform>%n element</numerusform>
+            <numerusform>%n elementer</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1512,8 +1512,8 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
         <location filename="../tabpage.cpp" line="669"/>
         <source>%n item(s) selected</source>
         <translation>
-            <numerusform>%n valgt objekt</numerusform>
-            <numerusform>%n valgte objekter</numerusform>
+            <numerusform>%n valgt element</numerusform>
+            <numerusform>%n valgte elementer</numerusform>
         </translation>
     </message>
 </context>
@@ -1522,12 +1522,12 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../view.cpp" line="56"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Mange filer</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="57"/>
         <source>Do you want to open these %1 file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ønsker du å åpne disse %1 filene?</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
@@ -1681,7 +1681,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Flytt slettede filer til papirkurven i stedet for å slette dem fra disken.</translation>
+        <translation>Flytt slettede filer til søppeldunken i stedet for å slette dem fra disken.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="584"/>
@@ -1701,7 +1701,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvis umarkert vil innstillingene fra skrivebordsmiljøet brukes.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="133"/>
@@ -1726,12 +1726,12 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../preferences.ui" line="182"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Slett filer på uttagbare medier i stedet for å legge dem i papirkurven</translation>
+        <translation>Slett filer på uttagbare medier i stedet for å legge dem i søppeldunken</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="189"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>Bekreft før filer flyttes til papirkurven</translation>
+        <translation>Bekreft før filer flyttes til søppeldunken</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
@@ -1797,7 +1797,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
         <location filename="../preferences.ui" line="392"/>
         <location filename="../preferences.ui" line="416"/>
         <source> px</source>
-        <translation> p</translation>
+        <translation> pk</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="405"/>
@@ -1826,7 +1826,7 @@ hvis det er mer enn en fane.</translation>
     <message>
         <location filename="../preferences.ui" line="710"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Eksempler:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For å bytte bruker: &lt;i&gt;lxsudo %s&lt;/i&gt; eller &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; er kommandoen du ønsker å kjøre med terminal eller su.&lt;br&gt; Viktig: Vennligst bruk lxsudo, sudo alene ødelegger tillatelser på innstillingsfilen.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="801"/>
@@ -1851,17 +1851,17 @@ hvis det er mer enn en fane.</translation>
     <message>
         <location filename="../preferences.ui" line="611"/>
         <source>Auto Mount</source>
-        <translation>Automontering</translation>
+        <translation>Automatisk innlasting</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="617"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>Monter automatisk monterbare disker ved programstart</translation>
+        <translation>Last inn monterbare disker autmatisk ved programstart</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="624"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>Monter automatisk uttagbare medier når de settes inn</translation>
+        <translation>Lst inn uttagbare medier automatisk når de settes inn</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="631"/>
@@ -1921,7 +1921,7 @@ hvis det er mer enn en fane.</translation>
     <message>
         <location filename="../preferences.ui" line="766"/>
         <source>Run default application after creation from template</source>
-        <translation>Kjør standardprogram etter oppretelse fra mal</translation>
+        <translation>Kjør standardprogram etter opprettelse fra mal</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="332"/>
@@ -1934,7 +1934,7 @@ hvis det er mer enn en fane.</translation>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Renaming files...</source>
-        <translation>Gir nytt navn til filer..</translation>
+        <translation>Gir nytt navn til filer...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
