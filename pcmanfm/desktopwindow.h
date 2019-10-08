@@ -107,7 +107,6 @@ protected:
     virtual void paintEvent(QPaintEvent* event) override;
 
 protected Q_SLOTS:
-    void onOpenDirRequested(const Fm::FilePath& path, int target);
     void onDesktopPreferences();
     void onCreatingShortcut();
     void selectAll();

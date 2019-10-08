@@ -42,8 +42,15 @@ View::~View() {
 
 void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) {
     if(type == MiddleClick) {
-        if(fileInfo->isDir()) {
-            Q_EMIT openDirRequested(fileInfo->path(), OpenInNewTab);
+        if(fileInfo->isDir() && fileLauncher()) {
+            // fileInfo->path() shouldn't be used directly because
+            // it won't work in places like computer:/// or network:///
+            Fm::FileInfoList files;
+            files.emplace_back(fileInfo);
+            if(auto launcher = dynamic_cast<Launcher*>(fileLauncher())) {
+                launcher->openInNewTab();
+            }
+            fileLauncher()->launchFiles(nullptr, std::move(files));
         }
     }
     else {
@@ -79,10 +86,13 @@ void View::onNewWindow() {
 }
 
 void View::onNewTab() {
-    Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
-    auto files = menu->files();
-    for(auto& file: files) {
-        Q_EMIT openDirRequested(file->path(), OpenInNewTab);
+    if(fileLauncher()) {
+        Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
+        auto files = menu->files();
+        if(auto launcher = dynamic_cast<Launcher*>(fileLauncher())) {
+            launcher->openInNewTab();
+        }
+        fileLauncher()->launchFiles(nullptr, std::move(files));
     }
 }
 

@@ -191,7 +191,6 @@ protected Q_SLOTS:
 
     void onTabPageTitleChanged(QString title);
     void onTabPageStatusChanged(int type, QString statusText);
-    void onTabPageOpenDirRequested(const Fm::FilePath &path, int target);
     void onTabPageSortFilterChanged();
 
     void onSidePaneChdirRequested(int type, const Fm::FilePath &path);

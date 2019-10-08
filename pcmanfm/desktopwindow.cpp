@@ -143,8 +143,6 @@ DesktopWindow::DesktopWindow(int screenNum):
     listView_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     listView_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-    connect(this, &DesktopWindow::openDirRequested, this, &DesktopWindow::onOpenDirRequested);
-
     listView_->installEventFilter(this);
     listView_->viewport()->installEventFilter(this);
 
@@ -444,16 +442,6 @@ void DesktopWindow::setShadow(const QColor& color) {
     shadowColor_ = color;
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(Fm::FolderModel::ColumnFileName));
     delegate->setShadowColor(color);
-}
-
-void DesktopWindow::onOpenDirRequested(const Fm::FilePath& path, int target) {
-    Q_UNUSED(target);
-    // open in new window unconditionally.
-    Application* app = static_cast<Application*>(qApp);
-    MainWindow* newWin = new MainWindow(path);
-    // apply window size from app->settings
-    newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
-    newWin->show();
 }
 
 void DesktopWindow::resizeEvent(QResizeEvent* event) {
