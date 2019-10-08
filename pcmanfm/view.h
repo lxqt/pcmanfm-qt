@@ -50,9 +50,6 @@ public:
         Fm::FolderView::setMargins(size);
     }
 
-Q_SIGNALS:
-    void openDirRequested(const Fm::FilePath& path, int target);
-
 protected Q_SLOTS:
     void onNewWindow();
     void onNewTab();

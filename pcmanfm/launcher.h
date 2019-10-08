@@ -32,11 +32,16 @@ public:
     Launcher(MainWindow* mainWindow = nullptr);
     ~Launcher();
 
+    void openInNewTab() {
+        openInNewTab_ = true;
+    }
+
 protected:
     bool openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folderInfos, Fm::GErrorPtr& err) override;
 
 private:
     MainWindow* mainWindow_;
+    bool openInNewTab_;
 };
 
 }

@@ -264,7 +264,6 @@ public:
 Q_SIGNALS:
     void statusChanged(int type, QString statusText);
     void titleChanged(QString title);
-    void openDirRequested(const Fm::FilePath& path, int target);
     void sortFilterChanged();
     void forwardRequested();
     void backwardRequested();

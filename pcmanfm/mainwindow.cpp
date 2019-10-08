@@ -642,7 +642,6 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     int index = viewFrame->getStackedWidget()->addWidget(page);
     connect(page, &TabPage::titleChanged, this, &MainWindow::onTabPageTitleChanged);
     connect(page, &TabPage::statusChanged, this, &MainWindow::onTabPageStatusChanged);
-    connect(page, &TabPage::openDirRequested, this, &MainWindow::onTabPageOpenDirRequested);
     connect(page, &TabPage::sortFilterChanged, this, &MainWindow::onTabPageSortFilterChanged);
     connect(page, &TabPage::backwardRequested, this, &MainWindow::on_actionGoBack_triggered);
     connect(page, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
@@ -1433,25 +1432,6 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
     // Since TabPage::statusChanged is always emitted after View::selChanged,
     // there is no need to connect a separate slot to the latter signal
     updateEditSelectedActions();
-}
-
-void MainWindow::onTabPageOpenDirRequested(const Fm::FilePath& path, int target) {
-    TabPage* tabPage = static_cast<TabPage*>(sender());
-    if(ViewFrame* viewFrame = viewFrameForTabPage(tabPage)) {
-        switch(target) {
-        case OpenInCurrentTab:
-            chdir(path, viewFrame);
-            break;
-
-        case OpenInNewTab:
-            addTab(path, viewFrame);
-            break;
-
-        case OpenInNewWindow:
-            (new MainWindow(path))->show();
-            break;
-        }
-    }
 }
 
 void MainWindow::onTabPageSortFilterChanged() { // NOTE: This may be called from context menu too.

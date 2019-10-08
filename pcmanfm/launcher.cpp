@@ -27,7 +27,8 @@ namespace PCManFM {
 
 Launcher::Launcher(PCManFM::MainWindow* mainWindow):
     Fm::FileLauncher(),
-    mainWindow_(mainWindow) {
+    mainWindow_(mainWindow),
+    openInNewTab_(false) {
 
     Application* app = static_cast<Application*>(qApp);
     setQuickExec(app->settings().quickExec());
@@ -51,7 +52,12 @@ bool Launcher::openFolder(GAppLaunchContext* /*ctx*/, const Fm::FileInfoList& fo
         }
     }
     else {
-        mainWindow->chdir(std::move(path));
+        if(openInNewTab_) {
+            mainWindow->addTab(std::move(path));
+        }
+        else {
+            mainWindow->chdir(std::move(path));
+        }
     }
 
     for(size_t i = 1; i < folderInfos.size(); ++i) {
@@ -61,6 +67,7 @@ bool Launcher::openFolder(GAppLaunchContext* /*ctx*/, const Fm::FileInfoList& fo
     }
     mainWindow->show();
     mainWindow->raise();
+    openInNewTab_ = false;
     return true;
 }
 
