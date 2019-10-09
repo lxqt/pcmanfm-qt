@@ -554,11 +554,15 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
     folderModel_ = CachedFolderModel::modelFromFolder(folder_);
-    if(strcmp(newPath.uriScheme().get(), "menu") == 0) {
-        folderModel_->setShowFullName(false); // always show display name in menu://applications
+    // always show display names in special places because real names may be unusual
+    // (e.g., real names of trashed files may contain trash path with backslash)
+    if(!settings.showFullNames()
+       || newPath.hasUriScheme("menu") || newPath.hasUriScheme("trash")
+       || newPath.hasUriScheme("network") || newPath.hasUriScheme("computer")) {
+        folderModel_->setShowFullName(false);
     }
     else {
-        folderModel_->setShowFullName(settings.showFullNames());
+        folderModel_->setShowFullName(true);
     }
 
     // folderSettings_ will be set by saveFolderSorting() when the sort filter is changed below
