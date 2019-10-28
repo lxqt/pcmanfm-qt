@@ -572,6 +572,7 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     // set sorting
     proxyModel_->sort(folderSettings.sortColumn(), folderSettings.sortOrder());
     proxyModel_->setFolderFirst(folderSettings.sortFolderFirst());
+    proxyModel_->setHiddenLast(folderSettings.sortHiddenLast());
     proxyModel_->setShowHidden(folderSettings.showHidden());
     proxyModel_->setSortCaseSensitivity(folderSettings.sortCaseSensitive() ? Qt::CaseSensitive : Qt::CaseInsensitive);
     proxyModel_->setSourceModel(folderModel_);
@@ -781,6 +782,12 @@ void TabPage::setSortFolderFirst(bool value) {
     }
 }
 
+void TabPage::setSortHiddenLast(bool value) {
+    if(proxyModel_) {
+        proxyModel_->setHiddenLast(value);
+    }
+}
+
 void TabPage::setSortCaseSensitive(bool value) {
     if(proxyModel_) {
         proxyModel_->setSortCaseSensitivity(value ? Qt::CaseSensitive : Qt::CaseInsensitive);
@@ -808,6 +815,7 @@ void TabPage::saveFolderSorting() {
     folderSettings_.setSortOrder(proxyModel_->sortOrder());
     folderSettings_.setSortColumn(static_cast<Fm::FolderModel::ColumnId>(proxyModel_->sortColumn()));
     folderSettings_.setSortFolderFirst(proxyModel_->folderFirst());
+    folderSettings_.setSortHiddenLast(proxyModel_->hiddenLast());
     folderSettings_.setSortCaseSensitive(proxyModel_->sortCaseSensitivity());
     if(folderSettings_.showHidden() != proxyModel_->showHidden()) {
         folderSettings_.setShowHidden(proxyModel_->showHidden());
@@ -851,11 +859,13 @@ void TabPage::setCustomizedView(bool value) {
         bool showHidden = settings.showHidden();
         bool sortCaseSensitive = settings.sortCaseSensitive();
         bool sortFolderFirst = settings.sortFolderFirst();
+        bool sortHiddenLast = settings.sortHiddenLast();
         Fm::FolderModel::ColumnId sortColumn = settings.sortColumn();
         Qt::SortOrder sortOrder = settings.sortOrder();
         setShowHidden(showHidden);
         setSortCaseSensitive(sortCaseSensitive);
         setSortFolderFirst(sortFolderFirst);
+        setSortHiddenLast(sortHiddenLast);
         sort(sortColumn, sortOrder);
     }
 }

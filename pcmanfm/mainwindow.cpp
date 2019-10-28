@@ -894,6 +894,10 @@ void MainWindow::on_actionFolderFirst_triggered(bool checked) {
     currentPage()->setSortFolderFirst(checked);
 }
 
+void MainWindow::on_actionHiddenLast_triggered(bool checked) {
+    currentPage()->setSortHiddenLast(checked);
+}
+
 void MainWindow::on_actionPreserveView_triggered(bool /*checked*/) {
     TabPage* page = currentPage();
     page->setCustomizedView(!page->hasCustomizedView());
@@ -1246,6 +1250,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
         }
         ui.actionCaseSensitive->setChecked(tabPage->sortCaseSensitive());
         ui.actionFolderFirst->setChecked(tabPage->sortFolderFirst());
+        ui.actionHiddenLast->setChecked(tabPage->sortHiddenLast());
     }
     updatingViewMenu_ = false;
 }
@@ -1443,6 +1448,7 @@ void MainWindow::onTabPageSortFilterChanged() { // NOTE: This may be called from
             settings.setSortColumn(static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn()));
             settings.setSortOrder(tabPage->sortOrder());
             settings.setSortFolderFirst(tabPage->sortFolderFirst());
+            settings.setSortHiddenLast(tabPage->sortHiddenLast());
             settings.setSortCaseSensitive(tabPage->sortCaseSensitive());
             settings.setShowHidden(tabPage->showHidden());
         }

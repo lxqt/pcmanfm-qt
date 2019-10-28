@@ -128,6 +128,7 @@ DesktopWindow::DesktopWindow(int screenNum):
         proxyModel_->setShowThumbnails(settings.showThumbnails());
         proxyModel_->sort(settings.desktopSortColumn(), settings.desktopSortOrder());
         proxyModel_->setFolderFirst(settings.desktopSortFolderFirst());
+        proxyModel_->setHiddenLast(settings.desktopSortHiddenLast());
         setModel(proxyModel_);
 
         connect(proxyModel_, &Fm::ProxyFolderModel::rowsInserted, this, &DesktopWindow::onRowsInserted);
@@ -1002,6 +1003,7 @@ void DesktopWindow::onModelSortFilterChanged() {
     settings.setDesktopSortColumn(static_cast<Fm::FolderModel::ColumnId>(proxyModel_->sortColumn()));
     settings.setDesktopSortOrder(proxyModel_->sortOrder());
     settings.setDesktopSortFolderFirst(proxyModel_->folderFirst());
+    settings.setDesktopSortHiddenLast(proxyModel_->hiddenLast());
 }
 
 void DesktopWindow::onDataChanged(const QModelIndex& topLeft, const QModelIndex& bottomRight) {

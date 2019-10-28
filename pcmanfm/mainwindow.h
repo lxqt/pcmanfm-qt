@@ -154,6 +154,7 @@ protected Q_SLOTS:
     void on_actionAscending_triggered(bool checked);
     void on_actionDescending_triggered(bool checked);
     void on_actionFolderFirst_triggered(bool checked);
+    void on_actionHiddenLast_triggered(bool checked);
     void on_actionCaseSensitive_triggered(bool checked);
     void on_actionFilter_triggered(bool checked);
     void on_actionUnfilter_triggered();
