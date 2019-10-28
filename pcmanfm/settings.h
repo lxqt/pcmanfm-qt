@@ -43,11 +43,14 @@ class FolderSettings {
 public:
     FolderSettings():
         isCustomized_(false),
+        // NOTE: The default values of the following variables should be
+        // the same as those of their corresponding variables in Settings:
         sortOrder_(Qt::AscendingOrder),
         sortColumn_(Fm::FolderModel::ColumnFileName),
         viewMode_(Fm::FolderView::IconMode),
         showHidden_(false),
         sortFolderFirst_(true),
+        sortHiddenLast_(false),
         sortCaseSensitive_(true) {
     }
 
@@ -91,6 +94,14 @@ public:
         sortFolderFirst_ = value;
     }
 
+    bool sortHiddenLast() const {
+        return sortHiddenLast_;
+    }
+
+    void setSortHiddenLast(bool value) {
+        sortHiddenLast_ = value;
+    }
+
     bool showHidden() const {
         return showHidden_;
     }
@@ -114,6 +125,7 @@ private:
     Fm::FolderView::ViewMode viewMode_;
     bool showHidden_;
     bool sortFolderFirst_;
+    bool sortHiddenLast_;
     bool sortCaseSensitive_;
     // columns?
 };
@@ -385,6 +397,14 @@ public:
         desktopSortFolderFirst_ = desktopFolderFirst;
     }
 
+    bool desktopSortHiddenLast() const {
+        return desktopSortHiddenLast_;
+    }
+
+    void setDesktopSortHiddenLast(bool desktopHiddenLast) {
+        desktopSortHiddenLast_ = desktopHiddenLast;
+    }
+
     bool alwaysShowTabs() const {
         return alwaysShowTabs_;
     }
@@ -613,6 +633,14 @@ public:
 
     void setSortFolderFirst(bool folderFirst) {
         sortFolderFirst_ = folderFirst;
+    }
+
+    bool sortHiddenLast() const {
+        return sortHiddenLast_;
+    }
+
+    void setSortHiddenLast(bool hiddenLast) {
+        sortHiddenLast_ = hiddenLast;
     }
 
     bool showFilter() const {
@@ -971,6 +999,7 @@ private:
     Qt::SortOrder desktopSortOrder_;
     Fm::FolderModel::ColumnId desktopSortColumn_;
     bool desktopSortFolderFirst_;
+    bool desktopSortHiddenLast_;
 
     bool alwaysShowTabs_;
     bool showTabClose_;
@@ -990,6 +1019,7 @@ private:
     Qt::SortOrder sortOrder_;
     Fm::FolderModel::ColumnId sortColumn_;
     bool sortFolderFirst_;
+    bool sortHiddenLast_;
     bool sortCaseSensitive_;
     bool showFilter_;
     bool pathBarButtons_;

@@ -142,6 +142,11 @@ public:
     }
     void setSortFolderFirst(bool value);
 
+    bool sortHiddenLast() {
+        return folderSettings_.sortHiddenLast();
+    }
+    void setSortHiddenLast(bool value);
+
     bool sortCaseSensitive() {
         return folderSettings_.sortCaseSensitive();
     }

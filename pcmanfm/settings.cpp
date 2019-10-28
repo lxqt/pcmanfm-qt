@@ -80,6 +80,7 @@ Settings::Settings():
     desktopSortOrder_(Qt::AscendingOrder),
     desktopSortColumn_(Fm::FolderModel::ColumnFileMTime),
     desktopSortFolderFirst_(true),
+    desktopSortHiddenLast_(false),
     alwaysShowTabs_(true),
     showTabClose_(true),
     rememberWindowSize_(true),
@@ -97,6 +98,7 @@ Settings::Settings():
     sortOrder_(Qt::AscendingOrder),
     sortColumn_(Fm::FolderModel::ColumnFileName),
     sortFolderFirst_(true),
+    sortHiddenLast_(false),
     sortCaseSensitive_(false),
     showFilter_(false),
     pathBarButtons_(true),
@@ -250,6 +252,7 @@ bool Settings::loadFile(QString filePath) {
     desktopSortOrder_ = sortOrderFromString(settings.value(QStringLiteral("SortOrder")).toString());
     desktopSortColumn_ = sortColumnFromString(settings.value(QStringLiteral("SortColumn")).toString());
     desktopSortFolderFirst_ = settings.value(QStringLiteral("SortFolderFirst"), true).toBool();
+    desktopSortHiddenLast_ = settings.value(QStringLiteral("SortHiddenLast"), false).toBool();
 
     desktopCellMargins_ = (settings.value(QStringLiteral("DesktopCellMargins"), QSize(3, 1)).toSize()
                            .expandedTo(QSize(0, 0))).boundedTo(QSize(48, 48));
@@ -274,6 +277,7 @@ bool Settings::loadFile(QString filePath) {
     sortOrder_ = sortOrderFromString(settings.value(QStringLiteral("SortOrder")).toString());
     sortColumn_ = sortColumnFromString(settings.value(QStringLiteral("SortColumn")).toString());
     sortFolderFirst_ = settings.value(QStringLiteral("SortFolderFirst"), true).toBool();
+    sortHiddenLast_ = settings.value(QStringLiteral("SortHiddenLast"), false).toBool();
     sortCaseSensitive_ = settings.value(QStringLiteral("SortCaseSensitive"), false).toBool();
     showFilter_ = settings.value(QStringLiteral("ShowFilter"), false).toBool();
 
@@ -388,6 +392,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("SortOrder"), QString::fromUtf8(sortOrderToString(desktopSortOrder_)));
     settings.setValue(QStringLiteral("SortColumn"), QString::fromUtf8(sortColumnToString(desktopSortColumn_)));
     settings.setValue(QStringLiteral("SortFolderFirst"), desktopSortFolderFirst_);
+    settings.setValue(QStringLiteral("SortHiddenLast"), desktopSortHiddenLast_);
     settings.setValue(QStringLiteral("DesktopCellMargins"), desktopCellMargins_);
     settings.endGroup();
 
@@ -410,6 +415,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("SortOrder"), QString::fromUtf8(sortOrderToString(sortOrder_)));
     settings.setValue(QStringLiteral("SortColumn"), QString::fromUtf8(sortColumnToString(sortColumn_)));
     settings.setValue(QStringLiteral("SortFolderFirst"), sortFolderFirst_);
+    settings.setValue(QStringLiteral("SortHiddenLast"), sortHiddenLast_);
     settings.setValue(QStringLiteral("SortCaseSensitive"), sortCaseSensitive_);
     settings.setValue(QStringLiteral("ShowFilter"), showFilter_);
 
@@ -733,16 +739,18 @@ void Settings::setTerminal(QString terminalCommand) {
 FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
     FolderSettings settings;
     Fm::FolderConfig cfg(path);
-    // set defaults
-    settings.setSortOrder(sortOrder());
-    settings.setSortColumn(sortColumn());
-    settings.setViewMode(viewMode());
-    settings.setShowHidden(showHidden());
-    settings.setSortFolderFirst(sortFolderFirst());
-    settings.setSortCaseSensitive(sortCaseSensitive());
-    // columns?
-    if(!cfg.isEmpty()) {
-        // load folder-specific settings
+    if(cfg.isEmpty()) {
+        // the folder is not customized; use the general settings
+        settings.setSortOrder(sortOrder());
+        settings.setSortColumn(sortColumn());
+        settings.setViewMode(viewMode());
+        settings.setShowHidden(showHidden());
+        settings.setSortFolderFirst(sortFolderFirst());
+        settings.setSortHiddenLast(sortHiddenLast());
+        settings.setSortCaseSensitive(sortCaseSensitive());
+    }
+    else {
+        // the folder is customized; load folder-specific settings
         settings.setCustomized(true);
 
         char* str;
@@ -776,6 +784,11 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
             settings.setSortFolderFirst(folder_first);
         }
 
+        bool hidden_last;
+        if(cfg.getBoolean("SortHiddenLast", &hidden_last)) {
+            settings.setSortHiddenLast(hidden_last);
+        }
+
         bool case_sensitive;
         if(cfg.getBoolean("SortCaseSensitive", &case_sensitive)) {
             settings.setSortCaseSensitive(case_sensitive);
@@ -796,6 +809,7 @@ void Settings::saveFolderSettings(const Fm::FilePath& path, const FolderSettings
         cfg.setString("ViewMode", viewModeToString(settings.viewMode()));
         cfg.setBoolean("ShowHidden", settings.showHidden());
         cfg.setBoolean("SortFolderFirst", settings.sortFolderFirst());
+        cfg.setBoolean("SortHiddenLast", settings.sortHiddenLast());
         cfg.setBoolean("SortCaseSensitive", settings.sortCaseSensitive());
     }
 }
