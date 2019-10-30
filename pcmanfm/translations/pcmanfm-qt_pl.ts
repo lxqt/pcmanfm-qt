@@ -1010,7 +1010,7 @@ Zarezerwowane jest też miejsce dla 3 linii tekstu.</translation>
     <message>
         <location filename="../main-win.ui" line="228"/>
         <source>Main Toolbar</source>
-        <translation>Pasek narzędziowy</translation>
+        <translation>Główny pasek narzędzi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="635"/>
