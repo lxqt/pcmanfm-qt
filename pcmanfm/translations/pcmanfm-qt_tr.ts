@@ -820,7 +820,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Önizlemeleri Göster</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
