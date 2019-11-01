@@ -401,7 +401,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="330"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished">Transformar la imagen en base a los datos EXIF</translation>
+        <translation>Transformar la imagen a partir de los datos EXIF</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
@@ -785,7 +785,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished">Por fecha de borrado</translation>
+        <translation>Por fecha de eliminació&amp;n</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -1265,7 +1265,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="54"/>
         <source>Select an icon</source>
-        <translation type="unfinished">Elija un icono</translation>
+        <translation>Seleccione un icono</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="56"/>
@@ -1275,12 +1275,12 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="78"/>
         <source>Select an executable file</source>
-        <translation type="unfinished">Elija un archivo ejecutable</translation>
+        <translation>Seleccione un archivo ejecutable</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="86"/>
         <source>Select a file</source>
-        <translation type="unfinished">Elija un archivo</translation>
+        <translation>Seleccione un archivo</translation>
     </message>
 </context>
 <context>
@@ -1318,7 +1318,7 @@ También se reserva espacio para 3 líneas de texto.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="231"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished">Elija un fondo de pantalla</translation>
+        <translation>Seleccione un fondo de pantalla</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="235"/>
@@ -1531,7 +1531,7 @@ Puede revertirlo utilizando Ctrl+M para mostrar la barra de nuevo.</translation>
     <message>
         <location filename="../view.cpp" line="57"/>
         <source>Do you want to open these %1 file?</source>
-        <translation type="unfinished">¿Quiere abrir esos %1 archivo(s)?</translation>
+        <translation>¿Quiere abrir esos %1 archivos?</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
