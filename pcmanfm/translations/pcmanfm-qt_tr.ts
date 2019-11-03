@@ -790,7 +790,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="854"/>
         <source>S&amp;plit View</source>
-        <translation>Görünümü &amp;Böl</translation>
+        <translation>Bölünmüş Görünüm</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="857"/>
@@ -815,7 +815,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Ö&amp;nizlemeleri Göster</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
@@ -1698,7 +1698,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilmediğinde Masaüstü Ortamı ayarları kullanılır.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="133"/>
