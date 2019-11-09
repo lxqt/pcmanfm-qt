@@ -261,12 +261,12 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation>Schreibtisch</translation>
+        <translation>Arbeitsfläche</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation>Schreibtischordner:</translation>
+        <translation>Arbeitsflächen-Ordner:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -289,7 +289,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>Schreibtischeinstellungen</translation>
+        <translation>Arbeitsflächeneinstellungen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="229"/>
@@ -423,7 +423,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="375"/>
         <source>Wallpaper image folder:</source>
-        <translation>Desktophintergrund-Ordner</translation>
+        <translation>Hintergrundbild-Ordner:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="382"/>
@@ -458,7 +458,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="448"/>
         <source>Wallpaper folder</source>
-        <translation>Desktophintergrund-Ordner</translation>
+        <translation>Hintergrundbild-Ordner</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="471"/>
@@ -468,7 +468,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="504"/>
         <source>Visible Shortcuts</source>
-        <translation>Verknüpfungen auf dem Schreibtisch</translation>
+        <translation>Sichtbare Verknüfungen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="510"/>
@@ -1131,7 +1131,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
-        <translation>Schreibtischverwaltung starten</translation>
+        <translation>Arbeitsflächenverwaltung starten</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -1377,7 +1377,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktopwindow.cpp" line="919"/>
         <source>Hide Desktop Items</source>
-        <translation>Schreibtischelemente ausblenden</translation>
+        <translation>Arbeitsflächenelemente ausblenden</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="925"/>
@@ -1387,7 +1387,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktopwindow.cpp" line="928"/>
         <source>Desktop Preferences</source>
-        <translation>Schreibtischeinstellungen</translation>
+        <translation>Arbeitsflächeneinstellungen</translation>
     </message>
 </context>
 <context>
