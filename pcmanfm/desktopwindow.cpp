@@ -67,6 +67,26 @@
 
 namespace PCManFM {
 
+bool DesktopWindow::isExpanded() {
+/*Check if is expanded or unified bases on initial point of sceen as used in fastmenu.cpp in lxq-config-monitor*/
+    bool isExpanded = false;
+    int screen_n = screens.length();
+    if(screen_n > 1) {
+        int x_old = 0;
+        int y_old = 0;
+        QScreen* scr;
+        for(int i = 0; i < screen_n; i++) {
+            scr = screens[i];
+            if(scr->geometry().x() != x_old || scr->geometry().y() != y_old)
+                isExpanded = true;
+
+            x_old = scr->geometry().x();
+            y_old = scr->geometry().y();
+        }
+    }
+    return isExpanded;
+}
+
 DesktopWindow::DesktopWindow(int screenNum):
     View(Fm::FolderView::IconMode),
     proxyModel_(nullptr),
@@ -633,8 +653,25 @@ void DesktopWindow::updateWallpaper() {
             }
         }
         else if(wallpaperMode_ == WallpaperStretch) {
-            image = loadWallpaperFile(size());
-            pixmap = QPixmap::fromImage(image);
+            screens = QGuiApplication::screens();
+            if(isExpanded()) {
+                const QSize s = size();
+                pixmap = QPixmap{s};
+                QPainter painter{&pixmap};
+                image = getWallpaperImage(); //when multiple files this need to go inside the for loop to change images.
+                QScreen* scr;
+                QImage scaled;
+                int screen_n = screens.length();
+                for(int i = 0; i < screen_n; i++) {
+                    scr = screens[i];
+                    scaled = image.scaled(scr->size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+                    painter.drawImage(scr->geometry().x(), scr->geometry().y(), scaled);
+                }
+            }
+            else {
+                image = loadWallpaperFile(size());
+                pixmap = QPixmap::fromImage(image);
+            }
         }
         else { // WallpaperCenter || WallpaperFit
             if(wallpaperMode_ == WallpaperCenter) {
