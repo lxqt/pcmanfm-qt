@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -16,7 +16,7 @@
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Resurssnål filhanterare</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -28,7 +28,9 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Programmering:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="109"/>
@@ -54,12 +56,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="78"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>Författare</translation>
     </message>
     <message>
         <location filename="../about.ui" line="100"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licens</translation>
     </message>
 </context>
 <context>
@@ -77,17 +79,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>Enhetstyp:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Detekterar...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj åtgärd:</translation>
     </message>
 </context>
 <context>
@@ -95,22 +97,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Massnamnbyte</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># kommer ersätta nummer som börjar med:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Byt namn på vald fil till:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Namn#</translation>
     </message>
 </context>
 <context>
@@ -118,17 +120,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Koppla till fjärrserver</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Anonym &amp;inloggning</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>Logga in som &amp;användare:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
@@ -138,22 +140,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Typ:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Port:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sökväg:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Värd:</translation>
     </message>
 </context>
 <context>
@@ -166,69 +168,69 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Namn:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Beskrivning:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentera:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommand:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikon:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Kör i terminal?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Nej</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ja</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Typ:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Program</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Länk</translation>
     </message>
 </context>
 <context>
@@ -241,12 +243,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivbord</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivbordsmapp:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -256,7 +258,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Mappsökväg</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
@@ -275,32 +277,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="229"/>
         <location filename="../desktop-preferences.ui" line="235"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Bakgrund</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="276"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Läge för bakgrundsbild:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="299"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bakgrundsbild:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="241"/>
         <source>Select background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj bakgrundsfärg:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="308"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildfil</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildfilssökväg</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
@@ -310,12 +312,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikoner</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikonstorlek:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
@@ -325,22 +327,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skuggfärg:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj teckensnitt:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Allmänt</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Textfärg:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
@@ -350,39 +352,40 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="142"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Minsta marginaler:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="149"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Standard 3 pixlar.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> pixlar</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="165"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="172"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Standard 1 pixel.
+Ett mellanrum är också reserverat vid 3 rader text.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Lås</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="264"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Bakgrund</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="330"/>
@@ -392,17 +395,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildspel</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="363"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Starta bildspel</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="375"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mapp med bakgrundsbilder:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="382"/>
@@ -412,67 +415,67 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="389"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> timmar</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="399"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>och</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="412"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Intervall under 5 min ignoreras</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="415"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Intervall:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="422"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> minuter</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="448"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Mapp för bakgrundsbilder</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="471"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Slumpa bildspelet</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="504"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Synliga genvägar</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="510"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Hem</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="521"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Papperskorgen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="532"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Dator</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="543"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Nätverk</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Avancerat</translation>
     </message>
 </context>
 <context>
@@ -480,12 +483,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Filhanterare</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="130"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Verktygsfält</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="137"/>
@@ -495,7 +498,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="144"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtrering</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="262"/>
@@ -505,7 +508,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="265"/>
         <source>Go Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå upp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="268"/>
@@ -515,7 +518,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="277"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Hem</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="280"/>
@@ -525,7 +528,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="289"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Uppdatera</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="292"/>
@@ -535,27 +538,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="301"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="310"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Avsluta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="319"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Om</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="328"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nytt fönster</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="331"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Nytt fönster</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="334"/>
@@ -565,7 +568,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="342"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa &amp;Dölj</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="345"/>
@@ -575,52 +578,52 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="354"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Dator</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="363"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Papperskorg</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="368"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nätverk</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="377"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Skrivbord</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="386"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Lägg till bokmärken</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="391"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Program</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="396"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppdatera</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="404"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ikonvy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="412"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kompaktvy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="420"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Detaljerad lista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="428"/>
@@ -640,7 +643,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="449"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kopiera</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="452"/>
@@ -650,7 +653,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="461"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Klistra in</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="464"/>
@@ -660,7 +663,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>Markera &amp;allt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="472"/>
@@ -675,22 +678,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="485"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fallande</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="493"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fallande</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="501"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Av filnamn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="509"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Av &amp;Senast ändrad</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="517"/>
@@ -730,12 +733,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="664"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Av filstorlek</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="669"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Stäng fönster</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="672"/>
@@ -745,12 +748,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="704"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Mapp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tom fil</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
@@ -775,7 +778,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="857"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Delad vy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="860"/>
@@ -785,7 +788,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="865"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kopiera full sökväg</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="868"/>
@@ -810,7 +813,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="743"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Rensa alla filter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="746"/>
@@ -820,42 +823,42 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="755"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng &amp;förra flikarna</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng &amp;nästa flikar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="803"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Behåll inställningarna för den här mappen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="808"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Koppla till &amp;server</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Plats</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Platsknappar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="829"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Massnamnbyte</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Massnamnbyte</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="835"/>
@@ -875,12 +878,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="777"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Menyfält</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="780"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Menyfält</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="783"/>
@@ -891,17 +894,17 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../main-win.ui" line="792"/>
         <location filename="../main-win.ui" line="795"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Meny</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny &amp;flik</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="569"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny flik</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="572"/>
@@ -911,12 +914,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="581"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå &amp;tillbaka</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="584"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå tillbaka</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="587"/>
@@ -926,12 +929,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="596"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå &amp;framåt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="599"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå framåt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="602"/>
@@ -941,12 +944,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="607"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Invertera markering</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="616"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ta bort</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="619"/>
@@ -956,7 +959,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Byt namn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="627"/>
@@ -986,17 +989,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="648"/>
         <source>&amp;Folder Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Mappalternativ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="677"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Redigera bokmärken</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="682"/>
         <source>Open &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna &amp;terminal</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="685"/>
@@ -1011,7 +1014,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="695"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Redigera bokmärken</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="707"/>
@@ -1026,7 +1029,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Hitta filer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="727"/>
@@ -1036,7 +1039,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fil</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
@@ -1046,43 +1049,43 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Hjälp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
         <location filename="../main-win.ui" line="120"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Visa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sortera</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="165"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Redigera</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="183"/>
         <source>&amp;Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bokmärken</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="190"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Gå</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="207"/>
         <source>&amp;Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Verktyg</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="228"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Huvudverktygsfält</translation>
     </message>
 </context>
 <context>
@@ -1090,12 +1093,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurationsprofilsnamn</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>PROFIL</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
@@ -1105,7 +1108,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM</source>
-        <translation type="unfinished"></translation>
+        <translation>Avsluta PCManFM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1131,7 +1134,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="183"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna i nytt fönster</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
