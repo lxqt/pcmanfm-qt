@@ -85,6 +85,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
   ui.imageFile->setText(settings.wallpaper());
   ui.transformImage->setChecked(settings.transformWallpaper());
+  ui.individualWallpaper->setChecked(settings.individualWallpaper());
 
   ui.slideShow->setChecked(settings.slideShowInterval() > 0);
   ui.imageFolder->setText(settings.wallpaperDir());
@@ -161,6 +162,7 @@ void DesktopPreferencesDialog::applySettings()
 
   settings.setWallpaper(ui.imageFile->text());
   settings.setTransformWallpaper(ui.transformImage->isChecked());
+  settings.setIndividualWallpaper(ui.individualWallpaper->isChecked());
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
   settings.setWallpaperMode(mode);
 

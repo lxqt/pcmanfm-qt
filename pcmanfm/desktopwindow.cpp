@@ -67,30 +67,6 @@
 
 namespace PCManFM {
 
-bool DesktopWindow::isIndividual() {
-/*Check if is expanded or unified bases on initial point of sceen as used in fastmenu.cpp in lxq-config-monitor*/
-    bool isIndividual = false;
-    /*
-    if(!setting.individualWallpaper())
-        return false;
-    */
-    int screen_n = screens.length();
-    if(screen_n > 1) {
-        int x_old = 0;
-        int y_old = 0;
-        QScreen* scr;
-        for(int i = 0; i < screen_n; i++) {
-            scr = screens[i];
-            if(scr->geometry().x() != x_old || scr->geometry().y() != y_old)
-                isIndividual = true;
-
-            x_old = scr->geometry().x();
-            y_old = scr->geometry().y();
-        }
-    }
-    return isIndividual;
-}
-
 DesktopWindow::DesktopWindow(int screenNum):
     View(Fm::FolderView::IconMode),
     proxyModel_(nullptr),
@@ -236,6 +212,31 @@ DesktopWindow::~DesktopWindow() {
         disconnect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
         delete model_;
     }
+}
+
+bool DesktopWindow::isIndividual() {
+/*Check if is expanded or unified bases on initial point of sceen as used in fastmenu.cpp in lxq-config-monitor*/
+    bool isIndividual = false;
+    Settings& settings = static_cast<Application* >(qApp)->settings();
+    bool individual = settings.individualWallpaper();
+
+    if(individual){
+        int screen_n = screens.length();
+        if(screen_n > 1) {
+            int x_old = 0;
+            int y_old = 0;
+            QScreen* scr;
+            for(int i = 0; i < screen_n; i++) {
+                scr = screens[i];
+                if(scr->geometry().x() != x_old || scr->geometry().y() != y_old)
+                    isIndividual = true;
+
+                x_old = scr->geometry().x();
+                y_old = scr->geometry().y();
+            }
+        }
+    }
+    return isIndividual;
 }
 
 void DesktopWindow::updateShortcutsFromSettings(Settings& settings) {
