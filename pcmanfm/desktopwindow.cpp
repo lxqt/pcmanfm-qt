@@ -218,9 +218,8 @@ bool DesktopWindow::isIndividual() {
 /*Check if is expanded or unified bases on initial point of sceen as used in fastmenu.cpp in lxq-config-monitor*/
     bool isIndividual = false;
     Settings& settings = static_cast<Application* >(qApp)->settings();
-    bool individual = settings.individualWallpaper();
 
-    if(individual){
+    if(settings.individualWallpaper()){
         int screen_n = screens.length();
         if(screen_n > 1) {
             int x_old = 0;
