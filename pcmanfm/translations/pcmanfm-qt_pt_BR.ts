@@ -785,7 +785,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation>Mostrar Miniaturas</translation>
+        <translation>Exibir Miniaturas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
