@@ -70,7 +70,7 @@ public:
     void setWallpaperDir(QString dirname);
     void setSlideShowInterval(int interval);
     void setWallpaperRandomize(bool randomize);
-    bool isExpanded();
+    bool isIndividual();
 
     // void setWallpaperAlpha(qreal alpha);
     void updateWallpaper();

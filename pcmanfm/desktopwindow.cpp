@@ -67,9 +67,13 @@
 
 namespace PCManFM {
 
-bool DesktopWindow::isExpanded() {
+bool DesktopWindow::isIndividual() {
 /*Check if is expanded or unified bases on initial point of sceen as used in fastmenu.cpp in lxq-config-monitor*/
-    bool isExpanded = false;
+    bool isIndividual = false;
+    /*
+    if(!setting.individualWallpaper())
+        return false;
+    */
     int screen_n = screens.length();
     if(screen_n > 1) {
         int x_old = 0;
@@ -78,13 +82,13 @@ bool DesktopWindow::isExpanded() {
         for(int i = 0; i < screen_n; i++) {
             scr = screens[i];
             if(scr->geometry().x() != x_old || scr->geometry().y() != y_old)
-                isExpanded = true;
+                isIndividual = true;
 
             x_old = scr->geometry().x();
             y_old = scr->geometry().y();
         }
     }
-    return isExpanded;
+    return isIndividual;
 }
 
 DesktopWindow::DesktopWindow(int screenNum):
@@ -654,7 +658,7 @@ void DesktopWindow::updateWallpaper() {
         }
         else if(wallpaperMode_ == WallpaperStretch) {
             screens = QGuiApplication::screens();
-            if(isExpanded()) {
+            if(isIndividual()) {
                 const QSize s = size();
                 pixmap = QPixmap{s};
                 QPainter painter{&pixmap};
