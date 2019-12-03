@@ -216,7 +216,7 @@ DesktopWindow::~DesktopWindow() {
 
 bool DesktopWindow::isIndividual() {
 /*Check if individual wallpaper is needed and if screen is expanded or unified
- based on initial point of sceen as used in fastmenu.cpp in lxq-config-monitor*/
+ based on initial point of screen as used in fastmenu.cpp in lxqt-config-monitor*/
     bool isIndividual = false;
     Settings& settings = static_cast<Application* >(qApp)->settings();
 
