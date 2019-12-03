@@ -70,11 +70,6 @@ target_compile_definitions(pcmanfm-qt
         PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/pcmanfm-qt"
         PCMANFM_QT_VERSION="${PCMANFM_QT_VERSION}"
         LIBFM_DATA_DIR="${PKG_FM_PREFIX}/share/libfm"
-        QT_USE_QSTRINGBUILDER
-        QT_NO_CAST_FROM_ASCII
-        QT_NO_CAST_TO_ASCII
-        QT_NO_URL_CAST_FROM_STRING
-        QT_NO_CAST_FROM_BYTEARRAY
 )
 
 target_include_directories(pcmanfm-qt
