@@ -406,7 +406,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="330"/>
         <source>Transform image based on EXIF data</source>
-        <translation>Transformar imagem com base em dados EXIF</translation>
+        <translation>Transformar imagem baseado nos dados EXIF</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
@@ -675,7 +675,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By Deletio&amp;n Time</source>
-        <translation>Por tempo de exclusão</translation>
+        <translation>Por Te&amp;mpo de Exclusão</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -780,7 +780,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation>Mostrar Miniaturas</translation>
+        <translation>Exibir Mi&amp;niaturas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
@@ -1266,7 +1266,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="54"/>
         <source>Select an icon</source>
-        <translation>Selecione um icone</translation>
+        <translation>Selecione um ícone</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="56"/>
@@ -1523,12 +1523,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../view.cpp" line="56"/>
         <source>Many files</source>
-        <translation>Vários arquivos</translation>
+        <translation>Muitos arquivos</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="57"/>
         <source>Do you want to open these %1 file?</source>
-        <translation>Deseja abrir esse %1 arquivo?</translation>
+        <translation>Você deseja abrir esse arquivo %1?</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
@@ -1694,7 +1694,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation>Se não estiver marcado,  a configuração DE será usada.</translation>
+        <translation>Se isso não estiver marcado,  a configuração DE será usada.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
