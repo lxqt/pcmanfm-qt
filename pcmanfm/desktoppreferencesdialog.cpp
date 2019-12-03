@@ -82,7 +82,8 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.wallpaperMode->setCurrentIndex(i);
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
 
-  if (mode == DesktopWindow::WallpaperStretch || mode == DesktopWindow::WallpaperCenter || mode == DesktopWindow::WallpaperFit) {
+  if (mode == DesktopWindow::WallpaperStretch || mode == DesktopWindow::WallpaperCenter
+      || mode == DesktopWindow::WallpaperFit || mode == DesktopWindow::WallpaperZoom) {
     ui.individualWallpaper->setEnabled(true);
   }
   else
@@ -227,7 +228,8 @@ void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
   ui.browse->setEnabled(enable);
   ui.transformImage->setEnabled(enable);
 
-  if (mode == DesktopWindow::WallpaperStretch || mode == DesktopWindow::WallpaperCenter || mode == DesktopWindow::WallpaperFit) {
+  if (mode == DesktopWindow::WallpaperStretch || mode == DesktopWindow::WallpaperCenter
+      || mode == DesktopWindow::WallpaperFit || mode == DesktopWindow::WallpaperZoom) {
     ui.individualWallpaper->setEnabled(true);
   }
   else

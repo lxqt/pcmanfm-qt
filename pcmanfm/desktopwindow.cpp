@@ -660,7 +660,6 @@ void DesktopWindow::updateWallpaper() {
         else if(wallpaperMode_ == WallpaperStretch) {
             screens = QGuiApplication::screens();
             if(isIndividual()) {
-                qDebug() << "is Individual";
                 const QSize s = size();
                 pixmap = QPixmap{s};
                 QPainter painter{&pixmap};
@@ -691,11 +690,10 @@ void DesktopWindow::updateWallpaper() {
                 QScreen* scr;
                 QImage scaled;
                 int screen_n = screens.length();
-                qDebug() << "is Individual";
                 if(wallpaperMode_ == WallpaperCenter) {
                     for(int i = 0; i < screen_n; i++) {
                         scr = screens[i];
-                        //get gap between image and screen to crop and displace.
+                        //get gap between image and screen for crop to avoid superposition and displace.
                         int x_gap = (image.width() - scr->geometry().width()) / 2;
                         int y_gap = (image.height() - scr->geometry().height()) / 2;
                         scaled = image.copy(std::max(x_gap, 0), std::max(y_gap, 0), scr->geometry().width(), scr->geometry().height());
@@ -719,9 +717,30 @@ void DesktopWindow::updateWallpaper() {
                             painter.drawImage(x, y, scaled);
                         }
                         if(w_ratio > h_ratio && wallpaperMode_ == WallpaperFit){
-                           //fit vertical, space on sides.
+                            //fit vertical, space on sides.
                             scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
                             int x = scr->geometry().x() + (scr->geometry().width() - scaled.width()) / 2;
+                            int y = scr->geometry().y();
+                            painter.drawImage(x, y, scaled);
+                        }
+                        //zoom
+                        if(w_ratio <= h_ratio && wallpaperMode_ == WallpaperZoom){
+                            //fit vertical, sides leftovers
+                            scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
+                            //crop to avoid superposition
+                            int x_gap = (scaled.width() - scr->geometry().width()) / 2;
+                            scaled = scaled.copy(x_gap, 0, scaled.width(), scaled.height());
+                            int x = scr->geometry().x();
+                            int y = scr->geometry().y();
+                            painter.drawImage(x, y, scaled);
+                        }
+                        if(w_ratio > h_ratio && wallpaperMode_ == WallpaperZoom){
+                           //fit horizonatal, up and down leftovers
+                            scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
+                            //crop to avoid superposition
+                            int y_gap = (scaled.height() - scr->geometry().height()) / 2;
+                            scaled = scaled.copy(0, y_gap, scaled.width(), scaled.height());
+                            int x = scr->geometry().x();
                             int y = scr->geometry().y();
                             painter.drawImage(x, y, scaled);
                         }
