@@ -215,7 +215,8 @@ DesktopWindow::~DesktopWindow() {
 }
 
 bool DesktopWindow::isIndividual() {
-/*Check if is expanded or unified bases on initial point of sceen as used in fastmenu.cpp in lxq-config-monitor*/
+/*Check if individual wallpaper is needed and if screen is expanded or unified
+ based on initial point of sceen as used in fastmenu.cpp in lxq-config-monitor*/
     bool isIndividual = false;
     Settings& settings = static_cast<Application* >(qApp)->settings();
 
@@ -659,9 +660,11 @@ void DesktopWindow::updateWallpaper() {
         else if(wallpaperMode_ == WallpaperStretch) {
             screens = QGuiApplication::screens();
             if(isIndividual()) {
+                qDebug() << "is Individual";
                 const QSize s = size();
                 pixmap = QPixmap{s};
                 QPainter painter{&pixmap};
+                pixmap.fill(bgColor_);
                 image = getWallpaperImage(); //when multiple files this need to go inside the for loop to change images.
                 QScreen* scr;
                 QImage scaled;
@@ -678,35 +681,60 @@ void DesktopWindow::updateWallpaper() {
             }
         }
         else { // WallpaperCenter || WallpaperFit
-            if(wallpaperMode_ == WallpaperCenter) {
-                image = getWallpaperImage(); // load original image
-            }
-            else if(wallpaperMode_ == WallpaperFit || wallpaperMode_ == WallpaperZoom) {
-                // calculate the desired size
-                QImageReader reader(wallpaperFile_);
-                QSize origSize = reader.size(); // get the size of the original file
-                if(reader.transformation() & QImageIOHandler::TransformationRotate90) {
-                    Settings& settings = static_cast<Application* >(qApp)->settings();
-                    if(settings.transformWallpaper()
-                       && (wallpaperFile_.endsWith(QLatin1String(".jpg"), Qt::CaseInsensitive)
-                           || wallpaperFile_.endsWith(QLatin1String(".jpeg"), Qt::CaseInsensitive))) {
-                        origSize.transpose();
+            screens = QGuiApplication::screens();
+            if(isIndividual()) {
+                qDebug() << "is Individual";
+                if(wallpaperMode_ == WallpaperCenter) {
+                    const QSize s = size();
+                    pixmap = QPixmap{s};
+                    QPainter painter{&pixmap};
+                    pixmap.fill(bgColor_);
+                    image = getWallpaperImage(); //when multiple files this need to go inside the for loop to change images.
+                    QScreen* scr;
+                    QImage scaled;
+                    int screen_n = screens.length();
+                    for(int i = 0; i < screen_n; i++) {
+                        scr = screens[i];
+                        int x_gap = (image.width() - scr->geometry().width()) / 2;
+                        int y_gap = (image.height() - scr->geometry().height()) / 2;
+                        //if ( x> ) //image is bigger that the individual screen needs to be cropped
+                        scaled = image.copy(std::max(x_gap, 0), std::max(y_gap, 0), scr->geometry().width(), scr->geometry().height());
+                        qDebug() << scr->geometry();
+                        painter.drawImage(scr->geometry().x() + std::max(0, -x_gap), scr->geometry().y() + std::max(0, -y_gap), scaled);
                     }
                 }
-                if(origSize.isValid()) {
-                    QSize desiredSize = origSize;
-                    Qt::AspectRatioMode mode = (wallpaperMode_ == WallpaperFit ? Qt::KeepAspectRatio : Qt::KeepAspectRatioByExpanding);
-                    desiredSize.scale(width(), height(), mode);
-                    image = loadWallpaperFile(desiredSize); // load the scaled image
-                }
             }
-            if(!image.isNull()) {
-                pixmap = QPixmap(size());
-                QPainter painter(&pixmap);
-                pixmap.fill(bgColor_);
-                int x = (width() - image.width()) / 2;
-                int y = (height() - image.height()) / 2;
-                painter.drawImage(x, y, image);
+            else {
+                if(wallpaperMode_ == WallpaperCenter) {
+                    image = getWallpaperImage(); // load original image
+                }
+                else if(wallpaperMode_ == WallpaperFit || wallpaperMode_ == WallpaperZoom) {
+                    // calculate the desired size
+                    QImageReader reader(wallpaperFile_);
+                    QSize origSize = reader.size(); // get the size of the original file
+                    if(reader.transformation() & QImageIOHandler::TransformationRotate90) {
+                        Settings& settings = static_cast<Application* >(qApp)->settings();
+                        if(settings.transformWallpaper()
+                        && (wallpaperFile_.endsWith(QLatin1String(".jpg"), Qt::CaseInsensitive)
+                            || wallpaperFile_.endsWith(QLatin1String(".jpeg"), Qt::CaseInsensitive))) {
+                            origSize.transpose();
+                        }
+                    }
+                    if(origSize.isValid()) {
+                        QSize desiredSize = origSize;
+                        Qt::AspectRatioMode mode = (wallpaperMode_ == WallpaperFit ? Qt::KeepAspectRatio : Qt::KeepAspectRatioByExpanding);
+                        desiredSize.scale(width(), height(), mode);
+                        image = loadWallpaperFile(desiredSize); // load the scaled image
+                    }
+                }
+                if(!image.isNull()) {
+                    pixmap = QPixmap(size());
+                    QPainter painter(&pixmap);
+                    pixmap.fill(bgColor_);
+                    int x = (width() - image.width()) / 2;
+                    int y = (height() - image.height()) / 2;
+                    painter.drawImage(x, y, image);
+                }
             }
         }
         wallpaperPixmap_ = pixmap;
