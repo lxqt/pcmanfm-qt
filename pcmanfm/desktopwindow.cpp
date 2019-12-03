@@ -683,24 +683,48 @@ void DesktopWindow::updateWallpaper() {
         else { // WallpaperCenter || WallpaperFit
             screens = QGuiApplication::screens();
             if(isIndividual()) {
+                const QSize s = size();
+                pixmap = QPixmap{s};
+                QPainter painter{&pixmap};
+                pixmap.fill(bgColor_);
+                image = getWallpaperImage(); //when multiple files this need to go inside the for loop to change images.
+                QScreen* scr;
+                QImage scaled;
+                int screen_n = screens.length();
                 qDebug() << "is Individual";
                 if(wallpaperMode_ == WallpaperCenter) {
-                    const QSize s = size();
-                    pixmap = QPixmap{s};
-                    QPainter painter{&pixmap};
-                    pixmap.fill(bgColor_);
-                    image = getWallpaperImage(); //when multiple files this need to go inside the for loop to change images.
-                    QScreen* scr;
-                    QImage scaled;
-                    int screen_n = screens.length();
                     for(int i = 0; i < screen_n; i++) {
                         scr = screens[i];
+                        //get gap between image and screen to crop and displace.
                         int x_gap = (image.width() - scr->geometry().width()) / 2;
                         int y_gap = (image.height() - scr->geometry().height()) / 2;
-                        //if ( x> ) //image is bigger that the individual screen needs to be cropped
                         scaled = image.copy(std::max(x_gap, 0), std::max(y_gap, 0), scr->geometry().width(), scr->geometry().height());
                         qDebug() << scr->geometry();
-                        painter.drawImage(scr->geometry().x() + std::max(0, -x_gap), scr->geometry().y() + std::max(0, -y_gap), scaled);
+                        int x = scr->geometry().x() + std::max(0, -x_gap);
+                        int y = scr->geometry().y() + std::max(0, - y_gap);
+                        painter.drawImage(x, y, scaled);
+                    }
+                }
+                else if(wallpaperMode_ == WallpaperFit || wallpaperMode_ == WallpaperZoom) {
+                    for(int i = 0; i < screen_n; i++) {
+                        scr = screens[i];
+                        //get the image to screen ratio to calculate the scale factors
+                        float w_ratio = float(scr->geometry().width()) / image.width();
+                        float h_ratio = float(scr->geometry().height()) / image.height();
+                        if(w_ratio <= h_ratio && wallpaperMode_ == WallpaperFit){
+                           //fit horizontal, space up and down.
+                            scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
+                            int x = scr->geometry().x();
+                            int y = scr->geometry().y() + (scr->geometry().height() - scaled.height()) / 2;
+                            painter.drawImage(x, y, scaled);
+                        }
+                        if(w_ratio > h_ratio && wallpaperMode_ == WallpaperFit){
+                           //fit vertical, space on sides.
+                            scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
+                            int x = scr->geometry().x() + (scr->geometry().width() - scaled.width()) / 2;
+                            int y = scr->geometry().y();
+                            painter.drawImage(x, y, scaled);
+                        }
                     }
                 }
             }
