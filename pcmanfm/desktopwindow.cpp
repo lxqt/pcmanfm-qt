@@ -621,7 +621,7 @@ void DesktopWindow::updateWallpaper() {
         QImage image;
         Settings& settings = static_cast<Application* >(qApp)->settings();
         auto screen = getDesktopScreen();
-        bool perScreenWallpaper(screen != nullptr && screen->virtualSiblings().size() > 1 && settings.individualWallpaper());
+        bool perScreenWallpaper(screen != nullptr && screen->virtualSiblings().size() > 1 && settings.perScreenWallpaper());
         if(wallpaperMode_ == WallpaperTile) { // use the original size
             image = getWallpaperImage();
             // Note: We can't use the QPainter::drawTiledPixmap(), because it doesn't tile

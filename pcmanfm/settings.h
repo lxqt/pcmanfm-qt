@@ -305,16 +305,16 @@ public:
        return transformWallpaper_;
     }
 
-    bool individualWallpaper() const {
-       return individualWallpaper_;
-    }
-
     void setTransformWallpaper(bool tr) {
         transformWallpaper_ = tr;
     }
 
-    void setIndividualWallpaper(bool tr) {
-        individualWallpaper_ = tr;
+    bool perScreenWallpaper() const {
+       return perScreenWallpaper_;
+    }
+
+    void setPerScreenWallpaper(bool tr) {
+        perScreenWallpaper_ = tr;
     }
 
     const QColor& desktopBgColor() const {
@@ -995,7 +995,7 @@ private:
     int slideShowInterval_;
     bool wallpaperRandomize_;
     bool transformWallpaper_;
-    bool individualWallpaper_;
+    bool perScreenWallpaper_;
     QColor desktopBgColor_;
     QColor desktopFgColor_;
     QColor desktopShadowColor_;
