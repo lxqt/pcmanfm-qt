@@ -70,7 +70,6 @@ public:
     void setWallpaperDir(QString dirname);
     void setSlideShowInterval(int interval);
     void setWallpaperRandomize(bool randomize);
-    bool isIndividual();
 
     // void setWallpaperAlpha(qreal alpha);
     void updateWallpaper();
@@ -87,7 +86,6 @@ public:
     void setScreenNum(int num);
 
     QScreen* getDesktopScreen() const;
-    QList<QScreen*> screens;
 
 protected:
     virtual void prepareFolderMenu(Fm::FolderMenu* menu) override;

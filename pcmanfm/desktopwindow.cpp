@@ -214,31 +214,6 @@ DesktopWindow::~DesktopWindow() {
     }
 }
 
-bool DesktopWindow::isIndividual() {
-/*Check if individual wallpaper is needed and if screen is expanded or unified
- based on initial point of screen as used in fastmenu.cpp in lxqt-config-monitor*/
-    bool isIndividual = false;
-    Settings& settings = static_cast<Application* >(qApp)->settings();
-
-    if(settings.individualWallpaper()){
-        int screen_n = screens.length();
-        if(screen_n > 1) {
-            int x_old = 0;
-            int y_old = 0;
-            QScreen* scr;
-            for(int i = 0; i < screen_n; i++) {
-                scr = screens[i];
-                if(scr->geometry().x() != x_old || scr->geometry().y() != y_old)
-                    isIndividual = true;
-
-                x_old = scr->geometry().x();
-                y_old = scr->geometry().y();
-            }
-        }
-    }
-    return isIndividual;
-}
-
 void DesktopWindow::updateShortcutsFromSettings(Settings& settings) {
     // Shortcuts should be deleted only when the user removes them
     // in the Preferences dialog, not when the desktop is created.
@@ -644,6 +619,9 @@ void DesktopWindow::updateWallpaper() {
     if(wallpaperMode_ != WallpaperNone) {  // use wallpaper
         QPixmap pixmap;
         QImage image;
+        Settings& settings = static_cast<Application* >(qApp)->settings();
+        auto screen = getDesktopScreen();
+        bool perScreenWallpaper(screen != nullptr && screen->virtualSiblings().size() > 1 && settings.individualWallpaper());
         if(wallpaperMode_ == WallpaperTile) { // use the original size
             image = getWallpaperImage();
             // Note: We can't use the QPainter::drawTiledPixmap(), because it doesn't tile
@@ -658,18 +636,15 @@ void DesktopWindow::updateWallpaper() {
             }
         }
         else if(wallpaperMode_ == WallpaperStretch) {
-            screens = QGuiApplication::screens();
-            if(isIndividual()) {
+            if(perScreenWallpaper) {
                 const QSize s = size();
                 pixmap = QPixmap{s};
                 QPainter painter{&pixmap};
                 pixmap.fill(bgColor_);
                 image = getWallpaperImage(); //when multiple files this need to go inside the for loop to change images.
-                QScreen* scr;
                 QImage scaled;
-                int screen_n = screens.length();
-                for(int i = 0; i < screen_n; i++) {
-                    scr = screens[i];
+                const auto screens = screen->virtualSiblings();
+                for(const auto& scr : screens) {
                     scaled = image.scaled(scr->size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
                     painter.drawImage(scr->geometry().x(), scr->geometry().y(), scaled);
                 }
@@ -680,19 +655,16 @@ void DesktopWindow::updateWallpaper() {
             }
         }
         else { // WallpaperCenter || WallpaperFit
-            screens = QGuiApplication::screens();
-            if(isIndividual()) {
+            if(perScreenWallpaper) {
                 const QSize s = size();
                 pixmap = QPixmap{s};
                 QPainter painter{&pixmap};
                 pixmap.fill(bgColor_);
                 image = getWallpaperImage(); //when multiple files this need to go inside the for loop to change images.
-                QScreen* scr;
                 QImage scaled;
-                int screen_n = screens.length();
+                const auto screens = screen->virtualSiblings();
                 if(wallpaperMode_ == WallpaperCenter) {
-                    for(int i = 0; i < screen_n; i++) {
-                        scr = screens[i];
+                    for(const auto& scr : screens) {
                         //get gap between image and screen for crop to avoid superposition and displace.
                         int x_gap = (image.width() - scr->geometry().width()) / 2;
                         int y_gap = (image.height() - scr->geometry().height()) / 2;
@@ -704,8 +676,7 @@ void DesktopWindow::updateWallpaper() {
                     }
                 }
                 else if(wallpaperMode_ == WallpaperFit || wallpaperMode_ == WallpaperZoom) {
-                    for(int i = 0; i < screen_n; i++) {
-                        scr = screens[i];
+                    for(const auto& scr : screens) {
                         //get the image to screen ratio to calculate the scale factors
                         float w_ratio = float(scr->geometry().width()) / image.width();
                         float h_ratio = float(scr->geometry().height()) / image.height();
