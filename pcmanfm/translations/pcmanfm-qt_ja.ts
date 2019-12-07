@@ -1556,7 +1556,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation>挙動</translation>
+        <translation>動作</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
