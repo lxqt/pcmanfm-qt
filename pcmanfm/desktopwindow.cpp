@@ -624,14 +624,24 @@ void DesktopWindow::updateWallpaper() {
         bool perScreenWallpaper(screen != nullptr && screen->virtualSiblings().size() > 1 && settings.perScreenWallpaper());
         if(wallpaperMode_ == WallpaperTile) { // use the original size
             image = getWallpaperImage();
-            // Note: We can't use the QPainter::drawTiledPixmap(), because it doesn't tile
+            if (!image.isNull()) {
+                // Note: We can't use the QPainter::drawTiledPixmap(), because it doesn't tile
+                // correctly for background pixmaps bigger than the current screen size.
+                const QSize s = size();
+                pixmap = QPixmap{s};
+                QPainter painter{&pixmap};
+                for (int x = 0; x < s.width(); x += image.width()) {
+                    for (int y = 0; y < s.height(); y += image.height()) {
+                        painter.drawImage(x, y, image);
+                    }
+/*            // Note: We can't use the QPainter::drawTiledPixmap(), because it doesn't tile
             // correctly for background pixmaps bigger than the current screen size.
             const QSize s = size();
             pixmap = QPixmap{s};
             QPainter painter{&pixmap};
             for (int x = 0; x < s.width(); x += image.width()) {
                 for (int y = 0; y < s.height(); y += image.height()) {
-                    painter.drawImage(x, y, image);
+                    painter.drawImage(x, y, image);*/
                 }
             }
         }
