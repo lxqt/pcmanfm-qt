@@ -727,7 +727,6 @@ void DesktopWindow::updateWallpaper() {
                     QImageReader reader(wallpaperFile_);
                     QSize origSize = reader.size(); // get the size of the original file
                     if(reader.transformation() & QImageIOHandler::TransformationRotate90) {
-                        Settings& settings = static_cast<Application* >(qApp)->settings();
                         if(settings.transformWallpaper()
                         && (wallpaperFile_.endsWith(QLatin1String(".jpg"), Qt::CaseInsensitive)
                             || wallpaperFile_.endsWith(QLatin1String(".jpeg"), Qt::CaseInsensitive))) {
