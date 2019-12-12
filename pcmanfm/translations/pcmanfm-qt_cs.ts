@@ -1655,12 +1655,12 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation>Otevírat soubory jedním kliknutím</translation>
+        <translation>Otevírat soubory jedním klepnutím</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation>Zpoždění automatického výběru v režimu jednoho kliknutí (0 pro vypnutí)</translation>
+        <translation>Zpoždění automatického výběru v režimu jednoho klepnutí (0 pro vypnutí)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="110"/>
