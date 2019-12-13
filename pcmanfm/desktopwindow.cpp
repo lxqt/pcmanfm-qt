@@ -643,7 +643,7 @@ void DesktopWindow::updateWallpaper() {
                 pixmap = QPixmap{s};
                 QPainter painter{&pixmap};
                 pixmap.fill(bgColor_);
-                image = getWallpaperImage(); //when multiple files this need to go inside the for loop to change images.
+                image = getWallpaperImage();
                 QImage scaled;
                 const auto screens = screen->virtualSiblings();
                 for(const auto& scr : screens) {
@@ -662,61 +662,61 @@ void DesktopWindow::updateWallpaper() {
                 pixmap = QPixmap{s};
                 QPainter painter{&pixmap};
                 pixmap.fill(bgColor_);
-                image = getWallpaperImage(); //when multiple files this need to go inside the for loop to change images.
+                image = getWallpaperImage();
                 QImage scaled;
+                int x, y;
                 const auto screens = screen->virtualSiblings();
                 if(wallpaperMode_ == WallpaperCenter) {
                     for(const auto& scr : screens) {
-                        //get gap between image and screen for crop to avoid superposition and displace.
+                        // get the gap between image and screen to avoid overlapping and displacement
                         int x_gap = (image.width() - scr->geometry().width()) / 2;
                         int y_gap = (image.height() - scr->geometry().height()) / 2;
-                        scaled = image.copy(std::max(x_gap, 0), std::max(y_gap, 0), scr->geometry().width(), scr->geometry().height());
-                        qDebug() << scr->geometry();
-                        int x = scr->geometry().x() + std::max(0, -x_gap);
-                        int y = scr->geometry().y() + std::max(0, - y_gap);
+                        scaled = image.copy(qMax(x_gap, 0), qMax(y_gap, 0), scr->geometry().width(), scr->geometry().height());
+                        x = scr->geometry().x() + qMax(0, -x_gap);
+                        y = scr->geometry().y() + qMax(0, - y_gap);
                         painter.drawImage(x, y, scaled);
                     }
                 }
                 else if(wallpaperMode_ == WallpaperFit || wallpaperMode_ == WallpaperZoom) {
                     for(const auto& scr : screens) {
-                        //get the image to screen ratio to calculate the scale factors
-                        float w_ratio = float(scr->geometry().width()) / image.width();
-                        float h_ratio = float(scr->geometry().height()) / image.height();
-                        if(w_ratio <= h_ratio && wallpaperMode_ == WallpaperFit){
-                           //fit horizontal, space up and down.
-                            scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
-                            int x = scr->geometry().x();
-                            int y = scr->geometry().y() + (scr->geometry().height() - scaled.height()) / 2;
-                            painter.drawImage(x, y, scaled);
+                        // get the screen-to-image ratio to calculate the scale factors
+                        const qreal w_ratio = static_cast<qreal>(scr->geometry().width()) / image.width();
+                        const qreal h_ratio = static_cast<qreal>(scr->geometry().height()) / image.height();
+                        if(w_ratio <= h_ratio) {
+                           if(wallpaperMode_ == WallpaperFit) {
+                                // fit horizontally
+                                scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
+                                x = scr->geometry().x();
+                                y = scr->geometry().y() + (scr->geometry().height() - scaled.height()) / 2;
+                           }
+                           else { // zoom
+                                // fit vertically
+                                scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
+                                // crop to avoid overlapping
+                                int x_gap = (scaled.width() - scr->geometry().width()) / 2;
+                                scaled = scaled.copy(x_gap, 0, scr->geometry().width(), scaled.height());
+                                x = scr->geometry().x();
+                                y = scr->geometry().y();
+                           }
                         }
-                        if(w_ratio > h_ratio && wallpaperMode_ == WallpaperFit){
-                            //fit vertical, space on sides.
-                            scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
-                            int x = scr->geometry().x() + (scr->geometry().width() - scaled.width()) / 2;
-                            int y = scr->geometry().y();
-                            painter.drawImage(x, y, scaled);
+                        else  { // w_ratio > h_ratio
+                            if(wallpaperMode_ == WallpaperFit) {
+                                // fit vertically
+                                scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
+                                x = scr->geometry().x() + (scr->geometry().width() - scaled.width()) / 2;
+                                y = scr->geometry().y();
+                            }
+                            else { // zoom
+                                // fit horizonatally
+                                scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
+                                // crop to avoid overlapping
+                                int y_gap = (scaled.height() - scr->geometry().height()) / 2;
+                                scaled = scaled.copy(0, y_gap, scaled.width(), scr->geometry().height());
+                                x = scr->geometry().x();
+                                y = scr->geometry().y();
+                            }
                         }
-                        //zoom
-                        if(w_ratio <= h_ratio && wallpaperMode_ == WallpaperZoom){
-                            //fit vertical, sides leftovers
-                            scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
-                            //crop to avoid superposition
-                            int x_gap = (scaled.width() - scr->geometry().width()) / 2;
-                            scaled = scaled.copy(x_gap, 0, scaled.width(), scaled.height());
-                            int x = scr->geometry().x();
-                            int y = scr->geometry().y();
-                            painter.drawImage(x, y, scaled);
-                        }
-                        if(w_ratio > h_ratio && wallpaperMode_ == WallpaperZoom){
-                           //fit horizonatal, up and down leftovers
-                            scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
-                            //crop to avoid superposition
-                            int y_gap = (scaled.height() - scr->geometry().height()) / 2;
-                            scaled = scaled.copy(0, y_gap, scaled.width(), scaled.height());
-                            int x = scr->geometry().x();
-                            int y = scr->geometry().y();
-                            painter.drawImage(x, y, scaled);
-                        }
+                        painter.drawImage(x, y, scaled);
                     }
                 }
             }
@@ -1174,8 +1174,8 @@ void DesktopWindow::removeBottomGap() {
     // So, we can add an icon to the bottom once this inequality holds:
     // bottomGap + 2*n*iconNumber >= cellHeight - 2*n
     // From here, we get our "subtrahend":
-    qreal exactNumber = ((qreal)cellHeight - (qreal)bottomGap)
-                        / (2.0 * (qreal)iconNumber + 2.0);
+    qreal exactNumber = (static_cast<qreal>(cellHeight) - static_cast<qreal>(bottomGap))
+                        / (2 * static_cast<qreal>(iconNumber) + static_cast<qreal>(2));
     int subtrahend = (int)exactNumber + ((int)exactNumber == exactNumber ? 0 : 1);
     Settings& settings = static_cast<Application*>(qApp)->settings();
     int minCellHeight = settings.desktopCellMargins().height();
