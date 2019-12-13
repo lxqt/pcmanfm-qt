@@ -331,6 +331,13 @@ A space is also reserved for 3 lines of text.</string>
             </property>
            </widget>
           </item>
+          <item row="4" column="0" colspan="2">
+           <widget class="QCheckBox" name="perScreenWallpaper">
+            <property name="text">
+             <string>Individual wallpaper for each monitor</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>

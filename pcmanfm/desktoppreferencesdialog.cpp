@@ -80,11 +80,20 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
       i = 0;
   }
   ui.wallpaperMode->setCurrentIndex(i);
+  int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
+
+  if (mode == DesktopWindow::WallpaperStretch || mode == DesktopWindow::WallpaperCenter
+      || mode == DesktopWindow::WallpaperFit || mode == DesktopWindow::WallpaperZoom) {
+    ui.perScreenWallpaper->setEnabled(true);
+  }
+  else
+    ui.perScreenWallpaper->setEnabled(false);
 
   connect(ui.browse, &QPushButton::clicked, this, &DesktopPreferencesDialog::onBrowseClicked);
   qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
   ui.imageFile->setText(settings.wallpaper());
   ui.transformImage->setChecked(settings.transformWallpaper());
+  ui.perScreenWallpaper->setChecked(settings.perScreenWallpaper());
 
   ui.slideShow->setChecked(settings.slideShowInterval() > 0);
   ui.imageFolder->setText(settings.wallpaperDir());
@@ -161,6 +170,7 @@ void DesktopPreferencesDialog::applySettings()
 
   settings.setWallpaper(ui.imageFile->text());
   settings.setTransformWallpaper(ui.transformImage->isChecked());
+  settings.setPerScreenWallpaper(ui.perScreenWallpaper->isChecked());
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
   settings.setWallpaperMode(mode);
 
@@ -217,6 +227,13 @@ void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
   ui.imageFile->setEnabled(enable);
   ui.browse->setEnabled(enable);
   ui.transformImage->setEnabled(enable);
+
+  if (mode == DesktopWindow::WallpaperStretch || mode == DesktopWindow::WallpaperCenter
+      || mode == DesktopWindow::WallpaperFit || mode == DesktopWindow::WallpaperZoom) {
+    ui.perScreenWallpaper->setEnabled(true);
+  }
+  else
+    ui.perScreenWallpaper->setEnabled(false);
 }
 
 void DesktopPreferencesDialog::onBrowseClicked() {
