@@ -236,7 +236,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">Type :</translation>
+        <translation>Type :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
@@ -674,7 +674,7 @@ Un espace est également réservé pour 3 lignes de texte.</translation>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished">Par date de suppression</translation>
+        <translation>Par date de suppressio&amp;n</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -689,7 +689,7 @@ Un espace est également réservé pour 3 lignes de texte.</translation>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished">Par groupe</translation>
+        <translation>Par &amp;groupe</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
@@ -774,7 +774,7 @@ Un espace est également réservé pour 3 lignes de texte.</translation>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished">Afficher les miniatures</translation>
+        <translation>Afficher les mi&amp;niatures</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
