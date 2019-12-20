@@ -24,6 +24,7 @@ find_package(Qt5DBus ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt5LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt5Widgets ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt5X11Extras ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt5Network "${QT_MINIMUM_VERSION}" REQUIRED)
 find_package(fm-qt ${LIBFMQT_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 

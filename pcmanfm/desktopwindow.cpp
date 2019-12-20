@@ -40,6 +40,7 @@
 #include <QStandardPaths>
 #include <QClipboard>
 #include <QWindow>
+#include <QtNetwork/QLocalSocket>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -1457,11 +1458,73 @@ void DesktopWindow::onCopyFullPathActivated() {
     }
 }
 
+void sendRawOrderList(const QStringList & order, QLocalSocket &socket, int idNextOrder)
+{
+    QByteArray block;
+    QDataStream out(&block, QIODevice::WriteOnly);
+    out.setVersion(QDataStream::Qt_4_4);
+    out << int(0);
+    out << idNextOrder;
+    out << order;
+    out.device()->seek(0);
+    out << block.size();
+    do //cut string list and send it as block of 32KB
+    {
+        QByteArray blockToSend;
+        int byteWriten;
+        blockToSend=block.left(32*1024);//32KB
+        block.remove(0,blockToSend.size());
+        byteWriten = socket.write(blockToSend);
+    }
+    while(block.size());
+}
+
 void DesktopWindow::onPasteActivated() {
     if(desktopHideItems_) {
         return;
     }
-    Fm::pasteFilesFromClipboard(path());
+    QClipboard* clipboard = QApplication::clipboard();
+    const QMimeData* data = clipboard->mimeData();
+    Fm::FilePathList paths;
+    bool isCut = false;
+
+    std::tie(paths, isCut) = Fm::parseClipboardData(*data);
+
+    if(!paths.empty()) {
+        QLocalSocket socket;
+        socket.connectToServer(QString::fromStdString("advanced-copier-"+std::to_string(getuid())));
+        socket.waitForConnected();
+        if(socket.state()==QLocalSocket::ConnectedState)
+        {
+            sendRawOrderList(QStringList() << "protocol" << "0002", socket, 1);
+            socket.waitForReadyRead();
+            socket.readAll();
+            QStringList l;
+            if(isCut) {
+                l << "mv";
+                clipboard->clear(QClipboard::Clipboard);
+            }
+            else {
+                l << "cp";
+            }
+            for(const Fm::FilePath &n : paths)
+                l << n.toString().get();
+            l << path().toString().get();
+            sendRawOrderList(l, socket, 2);
+            socket.waitForBytesWritten();
+            socket.close();
+        }
+        else
+        {
+            if(isCut) {
+                Fm::FileOperation::moveFiles(paths, path(), nullptr);
+                clipboard->clear(QClipboard::Clipboard);
+            }
+            else {
+                Fm::FileOperation::copyFiles(paths, path(), nullptr);
+            }
+        }
+    }
 }
 
 void DesktopWindow::onDeleteActivated() {

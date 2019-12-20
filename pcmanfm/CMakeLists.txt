@@ -81,6 +81,7 @@ target_link_libraries(pcmanfm-qt
     Qt5::X11Extras
     Qt5::Widgets
     Qt5::DBus
+    Qt5::Network
     fm-qt
 )
 
