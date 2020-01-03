@@ -500,6 +500,14 @@ public:
         splitterPos_ = splitterPos;
     }
 
+    bool isSidePaneVisible() const {
+        return sidePaneVisible_;
+    }
+
+    void showSidePane(bool show) {
+        sidePaneVisible_ = show;
+    }
+
     Fm::SidePane::Mode sidePaneMode() const {
         return sidePaneMode_;
     }
@@ -1019,6 +1027,7 @@ private:
     int lastWindowHeight_;
     bool lastWindowMaximized_;
     int splitterPos_;
+    bool sidePaneVisible_;
     Fm::SidePane::Mode sidePaneMode_;
     bool showMenuBar_;
     bool splitView_;

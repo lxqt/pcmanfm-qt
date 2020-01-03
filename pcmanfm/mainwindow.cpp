@@ -173,6 +173,8 @@ MainWindow::MainWindow(Fm::FilePath path):
     ui.actionDelete->setIcon(settings.useTrash() ? QIcon::fromTheme(QStringLiteral("user-trash")) : QIcon::fromTheme(QStringLiteral("edit-delete")));
 
     // side pane
+    ui.sidePane->setVisible(settings.isSidePaneVisible());
+    ui.actionSidePane->setChecked(settings.isSidePaneVisible());
     ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
     ui.sidePane->setMode(settings.sidePaneMode());
     ui.sidePane->restoreHiddenPlaces(settings.getHiddenPlaces());
@@ -1492,6 +1494,12 @@ void MainWindow::onSidePaneModeChanged(Fm::SidePane::Mode mode) {
 
 void MainWindow::onSettingHiddenPlace(const QString& str, bool hide) {
     static_cast<Application*>(qApp)->settings().setHiddenPlace(str, hide);
+}
+
+void MainWindow::on_actionSidePane_triggered(bool checked) {
+    Application* app = static_cast<Application*>(qApp);
+    app->settings().showSidePane(checked);
+    ui.sidePane->setVisible(checked);
 }
 
 void MainWindow::onSplitterMoved(int pos, int /*index*/) {
