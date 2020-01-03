@@ -200,6 +200,7 @@ protected Q_SLOTS:
     void onSidePaneOpenFolderInTerminalRequested(const Fm::FilePath &path);
     void onSidePaneCreateNewFolderRequested(const Fm::FilePath &path);
     void onSidePaneModeChanged(Fm::SidePane::Mode mode);
+    void on_actionSidePane_triggered(bool check);
     void onSplitterMoved(int pos, int index);
     void onResetFocus();
 

@@ -91,6 +91,7 @@ Settings::Settings():
     lastWindowHeight_(480),
     lastWindowMaximized_(false),
     splitterPos_(120),
+    sidePaneVisible_(true),
     sidePaneMode_(Fm::SidePane::ModePlaces),
     showMenuBar_(true),
     splitView_(false),
@@ -323,6 +324,7 @@ bool Settings::loadFile(QString filePath) {
     alwaysShowTabs_ = settings.value(QStringLiteral("AlwaysShowTabs"), true).toBool();
     showTabClose_ = settings.value(QStringLiteral("ShowTabClose"), true).toBool();
     splitterPos_ = settings.value(QStringLiteral("SplitterPos"), 150).toInt();
+    sidePaneVisible_ = settings.value(QStringLiteral("SidePaneVisible"), true).toBool();
     sidePaneMode_ = sidePaneModeFromString(settings.value(QStringLiteral("SidePaneMode")).toString());
     showMenuBar_ = settings.value(QStringLiteral("ShowMenuBar"), true).toBool();
     splitView_ = settings.value(QStringLiteral("SplitView"), false).toBool();
@@ -468,6 +470,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("AlwaysShowTabs"), alwaysShowTabs_);
     settings.setValue(QStringLiteral("ShowTabClose"), showTabClose_);
     settings.setValue(QStringLiteral("SplitterPos"), splitterPos_);
+    settings.setValue(QStringLiteral("SidePaneVisible"), sidePaneVisible_);
     settings.setValue(QStringLiteral("SidePaneMode"), QString::fromUtf8(sidePaneModeToString(sidePaneMode_)));
     settings.setValue(QStringLiteral("ShowMenuBar"), showMenuBar_);
     settings.setValue(QStringLiteral("SplitView"), splitView_);

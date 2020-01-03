@@ -156,6 +156,7 @@
     <addaction name="menu_View_2"/>
     <addaction name="actionPreserveView"/>
     <addaction name="separator"/>
+    <addaction name="actionSidePane"/>
     <addaction name="menuToolbars"/>
     <addaction name="menuPathBarStyle"/>
     <addaction name="separator"/>
@@ -889,6 +890,17 @@
    </property>
    <property name="toolTip">
     <string>Show Thumbnails</string>
+   </property>
+  </action>
+  <action name="actionSidePane">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>S&amp;ide Pane</string>
+   </property>
+   <property name="shortcut">
+    <string>F9</string>
    </property>
   </action>
  </widget>
