@@ -238,7 +238,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">Typ:</translation>
+        <translation>Typ:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
@@ -691,7 +691,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished">Nach &amp;Gruppe</translation>
+        <translation>Nach &amp;Gruppe</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
@@ -1403,7 +1403,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Text löschen (Strg+K oder Esc)</translation>
     </message>
 </context>
 <context>
