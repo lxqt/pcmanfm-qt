@@ -990,8 +990,19 @@ void MainWindow::on_actionAddToBookmarks_triggered() {
     if(page) {
         auto cwd = page->path();
         if(cwd) {
-            auto dispName = cwd.baseName();
-            bookmarks_->insert(cwd, QString::fromUtf8(dispName.get()), -1);
+            QString bookmarkName;
+            auto parent = cwd.parent();
+            if(!parent.isValid() || parent == cwd) { // a root path
+                bookmarkName = QString::fromUtf8(cwd.displayName().get());
+                auto parts = bookmarkName.split(QLatin1Char('/'), QString::SkipEmptyParts);
+                if(!parts.isEmpty()) {
+                    bookmarkName = parts.last();
+                }
+            }
+            else {
+                bookmarkName = QString::fromUtf8(cwd.baseName().get());
+            }
+            bookmarks_->insert(cwd, bookmarkName, -1);
         }
     }
 }
