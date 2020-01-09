@@ -563,12 +563,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="319"/>
         <source>&amp;About</source>
-        <translation>Névjegy</translation>
+        <translation>&amp;Névjegy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="328"/>
         <source>&amp;New Window</source>
-        <translation>Ú&amp;J ablak</translation>
+        <translation>&amp;Új ablak</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="331"/>
@@ -964,7 +964,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="616"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Töröl</translation>
+        <translation>&amp;Törlés</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="619"/>
@@ -1080,7 +1080,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="165"/>
         <source>&amp;Edit</source>
-        <translation>Sz&amp;erkeszt</translation>
+        <translation>&amp;Szerkesztés</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="183"/>
