@@ -577,7 +577,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="228"/>
         <source>Main Toolbar</source>
-        <translation>Главная панель инструментов</translation>
+        <translation>Панель инструментов</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="262"/>
