@@ -407,7 +407,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="330"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>EXIF verilerine dayalı olarak resmi dönüştür</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
@@ -1519,7 +1519,7 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message>
         <location filename="../view.cpp" line="56"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Birçok dosya</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="57"/>
