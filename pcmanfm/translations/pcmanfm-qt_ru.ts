@@ -892,7 +892,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Показывать эскизы</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
