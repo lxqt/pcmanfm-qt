@@ -1823,7 +1823,7 @@ birden fazla sekme var ise görünür.</translation>
     <message>
         <location filename="../preferences.ui" line="710"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Örnekler: &lt;br&gt; Terminal için: &lt;i&gt;xterm -e% s&lt;/i&gt; &lt;br&gt; Kullanıcı değiştirmek için: &lt;i&gt;lxsudo %s&lt;/i&gt; veya &lt;i&gt;lxsudo dbus-run-session --%s&lt;/i&gt; &lt;br&gt; &lt;i&gt;%s&lt;/i&gt; , terminal veya su ile yürütmek istediğiniz komut satırıdır. &lt;br&gt; Önemli: Lütfen lxsudo kullanın, tek başına sudo ayarlar dosyasının izinlerini bozacaktır.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="801"/>
