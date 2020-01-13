@@ -82,7 +82,11 @@ BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
             QMessageBox::warning(parent, QObject::tr("Warning"), QObject::tr("Renaming is aborted."));
             return;
         }
-        auto fileName = QString::fromStdString(file->name());
+        // NOTE: "Edit name" seems to be the best way of handling non-UTF8 filename encoding.
+        auto fileName = QString::fromUtf8(g_file_info_get_edit_name(file->gFileInfo().get()));
+        if(fileName.isEmpty()) {
+            fileName = QString::fromStdString(file->name());
+        }
         QString newName = baseName;
 
         // keep the extension if the new name doesn't have one
