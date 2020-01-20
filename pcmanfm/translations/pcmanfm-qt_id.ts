@@ -1057,7 +1057,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation>Berkas</translation>
+        <translation>&amp;Berkas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
