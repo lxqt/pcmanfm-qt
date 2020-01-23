@@ -1803,7 +1803,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="392"/>
         <location filename="../preferences.ui" line="416"/>
         <source> px</source>
-        <translation> пикс.</translation>
+        <translation> пикс</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="405"/>
