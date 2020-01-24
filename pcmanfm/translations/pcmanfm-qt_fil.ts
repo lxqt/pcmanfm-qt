@@ -6,29 +6,31 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Tungkol dito</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Magaan na file manager</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="87"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>May akda:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="109"/>
@@ -49,17 +51,33 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt File Manager
+
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Ang program na ito ay libreng software; maaari mo itong muling ipamahagi at/o
+baguhin nang naaayon sa mga tuntunin ng GNU General Public License
+ayon sa nailathala ng Free Software Foundation; sa ikalawa (version 2) mang salin
+ng Lisensya, o (ayon sa iyong opsyon) anumang kinamamayaang salin.
+
+Ang program na ito ay ipinamamahagi sa pag-asa na ito ay magiging kapaki-pakinabang,
+ngunit WALANG ANUMANG GARANTIYA; nang walang kahit na anumang pagpapahiwatig na
+garantiya ng MERCHANTABILITY o FITNESS FOR A PARTICULAR PURPOSE. Tingnan ang
+GNU General Public License para sa karagdagang detalye.
+
+Dapat ay nakatanggap ka ng isang kopya ng GNU General Public License
+kasama ang program na ito; kung hindi, sumulat sa Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="78"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>May akda</translation>
     </message>
     <message>
         <location filename="../about.ui" line="100"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisensya</translation>
     </message>
 </context>
 <context>
@@ -67,27 +85,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Naaalis na medium ay ipinasok</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Naaalis na medium ay ipinasok&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>Uri ng medium:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Tinutuklas...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pumili ng kilos na nais gawin:</translation>
     </message>
 </context>
 <context>
@@ -95,22 +113,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Maramihang pagpapalit ng pangalan</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># ay mapapalitan ng numero na nagsisimula sa:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Palitan ang pangalan ng napiling mga file ng:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Pangalan#</translation>
     </message>
 </context>
 <context>
@@ -118,27 +136,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Kumonekta sa remote server</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Mag &amp;login nang hindi nagpapakilala</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mag login &amp;bilang:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Tukuyin ang remote folder na kokonektahan</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Uri:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
@@ -161,64 +179,64 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Gumawa ng Launcher</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pangalan:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Deskripsyon:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Komento:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Utos:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Icon:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Itakbo sa terminal?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Hindi</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Oo</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Uri:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
@@ -700,7 +718,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayon sa &amp;Uri ng File</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
@@ -1026,7 +1044,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Maghanap ng &amp;Files</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="727"/>
@@ -1041,28 +1059,28 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>Gumawa ng bago</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Saklolo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
         <location filename="../main-win.ui" line="120"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>Tingnan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>Pag&amp;sasaayos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="165"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>I-&amp;edit</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="183"/>
@@ -1072,7 +1090,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="190"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Tumuloy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="207"/>
@@ -1100,22 +1118,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Itakbo ang PCManFM bilang daemon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM</source>
-        <translation type="unfinished"></translation>
+        <translation>Umalis ng PCManFM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Ilunsad ang desktop manager</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>Ihinto ang desktop manager tumatakbo ito</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
@@ -1126,22 +1144,22 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../application.cpp" line="180"/>
         <location filename="../application.cpp" line="195"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>PANGALAN</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="183"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Magbukas ng panibagong window</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>Magbukas ng Find Files utility</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>I-set bilang desktop wallpaper ang image FILE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
@@ -1901,7 +1919,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="332"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>Gamitin ang SI decimal prefixes sa halip na IEC binary prefixes</translation>
     </message>
 </context>
 <context>
@@ -1909,38 +1927,38 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Pinapalitan ang pangalan ng files...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Ihinto</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Babala</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ang pagpapalit ng pangalan ay inihinto.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="104"/>
         <location filename="../bulkrename.cpp" line="107"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Mali</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="104"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Walang file ang maaaring palitan ng pangalan.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="107"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ang ibang file ay hindi maaaring palitan ng pangalan.</translation>
     </message>
 </context>
 </TS>
