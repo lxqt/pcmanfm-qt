@@ -186,69 +186,69 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Описание:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарий:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Значок:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Запускать в терминале?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Терминал:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Нет</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Да</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">Тип:</translation>
+        <translation>Тип:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Приложение</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Ссылка</translation>
     </message>
 </context>
 <context>
@@ -398,12 +398,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="264"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Обои</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="330"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Поворачивать и отражать изображение согласно EXIF-данным</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
