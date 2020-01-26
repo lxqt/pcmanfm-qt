@@ -161,12 +161,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Port:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Path:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
@@ -241,12 +241,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplikasyon</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Link</translation>
     </message>
 </context>
 <context>
@@ -254,17 +254,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Pormularyo</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Folder ng desktop:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -279,7 +279,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Mag-&amp;browse</translation>
     </message>
 </context>
 <context>
@@ -308,7 +308,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../desktop-preferences.ui" line="241"/>
         <source>Select background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pumili ng kulay ng background:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="308"/>
@@ -323,7 +323,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Mag-&amp;browse</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
@@ -343,37 +343,37 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pumili ng kulay ng anino:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pumili ng font:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Pangkalahatan</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pumili ng kulay ng text:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Agwat</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="142"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pinakamaliit na puwang sa paligid ng  item:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="149"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ang default ay 3 px.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
@@ -390,7 +390,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../desktop-preferences.ui" line="172"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ang default ay 1 px.
+Mayroon ding puwang na nakalaan sa 3 linya ng text.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
@@ -430,22 +431,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="389"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> oras</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="399"/>
         <source>and</source>
-        <translation type="unfinished"></translation>
+        <translation>at</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="412"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Ang pagitan na mababa sa 5minuto ay ipagsasawalang-bahala</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="415"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pagitan:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="422"/>
@@ -475,22 +476,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="521"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Basurahan</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="532"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompyuter</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="543"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Network</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Advanced</translation>
     </message>
 </context>
 <context>
@@ -513,17 +514,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="144"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>Pagsasala</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="262"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>P&amp;umataas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="265"/>
         <source>Go Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Pumataas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="268"/>
@@ -543,7 +544,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="289"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>I-load muli</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="292"/>
@@ -563,72 +564,72 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="319"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>Tungkol dito</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="328"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Bagong Wi&amp;ndow</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="331"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Bagong Window</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="334"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="342"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Ipakita ang Nakatago</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="345"/>
         <source>Ctrl+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="354"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompyuter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="363"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Basurahan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="368"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Network</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="377"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Desktop</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="386"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Id&amp;agdag sa mga Bookmark</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="391"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Mga &amp;Aplikasyon</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="396"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>I-load muli</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="404"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Icon View</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="412"/>
@@ -653,37 +654,37 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="440"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="449"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopyahin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="452"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="461"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>I-&amp;paste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="464"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>Piliin l&amp;ahat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="472"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
@@ -693,27 +694,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="485"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>Paakyat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="493"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>Pababa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="501"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayon sa Pangalan ng File</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="509"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayon sa Oras ng Pagbago</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayon sa Oras &amp;ng Pagbura</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -723,22 +724,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Ay&amp;on sa May-ari</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayon sa Grupo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>Mauna ang &amp;Folder</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Panatilihin ang ayos ng folder na ito</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="656"/>
@@ -748,27 +749,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="664"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayon &amp;sa Laki ng File</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="669"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Isara ang Window</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="672"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="704"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Folder</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Blankong File</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
@@ -783,47 +784,47 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="854"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Magkahiwalay Tingnan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="857"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Magkahiwalay Tingnan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="860"/>
         <source>F6</source>
-        <translation type="unfinished"></translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="865"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopyahin ang Buong Path</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="868"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Ipakita ang mga Thumb&amp;nail</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Ipakita ang mga Thumbnail</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="743"/>
@@ -833,37 +834,37 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="746"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Isara ang mga naunang tab</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Isara ang mga susu&amp;nod na tab</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="803"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Panatilihin ang mga Setting sa Folder na ito</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="808"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Kumonekta sa &amp;Server</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Lugar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>Pindutan na &amp;Path</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="829"/>
@@ -878,12 +879,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="769"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Isara ang iba pang mga tab</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
@@ -903,58 +904,58 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="783"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="792"/>
         <location filename="../main-win.ui" line="795"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Bagong &amp;Tab</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="569"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Bagong Tab</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="572"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="581"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bumalik</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="584"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Bumalik</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="587"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="596"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasulong</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="599"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasulong</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="602"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="607"/>
