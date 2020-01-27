@@ -287,7 +287,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Kagustuhan sa Desktop</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="229"/>
