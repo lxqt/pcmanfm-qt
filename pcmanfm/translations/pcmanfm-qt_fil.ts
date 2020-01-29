@@ -293,17 +293,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../desktop-preferences.ui" line="229"/>
         <location filename="../desktop-preferences.ui" line="235"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Background</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="276"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode ng wallpaper:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="299"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>File na larawan ng wallpaper:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="241"/>
