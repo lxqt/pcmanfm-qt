@@ -777,7 +777,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>По времени &amp;удаления</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -887,7 +887,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Показывать &amp;эскизы</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
@@ -1277,12 +1277,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="78"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Выберите исполняемый файл</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="86"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Выберите файл</translation>
     </message>
 </context>
 <context>
@@ -1320,7 +1320,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="231"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Выберите обои</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="235"/>
@@ -1404,7 +1404,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистить текст (Ctrl+K или Esc)</translation>
     </message>
 </context>
 <context>
@@ -1528,12 +1528,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../view.cpp" line="56"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Множество файлов</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="57"/>
         <source>Do you want to open these %1 file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы действительно хотите открыть эти %1 файл(ов)?</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
@@ -1707,7 +1707,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если данный флажок не установлен, будут использоваться настройки среды рабочего стола.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="133"/>
@@ -1832,7 +1832,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="710"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Примеры:&lt;br&gt;Для терминала: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Для переключения пользователя: &lt;i&gt;lxsudo %s&lt;/i&gt; или &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;где &lt;i&gt;%s&lt;/i&gt; — это команда, которую вы хотите выполнить в терминале или с помощью su.&lt;br&gt; Важно: Используйте lxsudo, т.к. sudo само по себе испортит установленные разрешения на файл настроек.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="801"/>
