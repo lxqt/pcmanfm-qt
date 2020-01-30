@@ -61,7 +61,7 @@ void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fi
                     if(files.size() > 20) {
                         QMessageBox::StandardButton r = QMessageBox::question(window(),
                                                         tr("Many files"),
-                                                        tr("Do you want to open these %1 file?").arg(files.size()),
+                                                        tr("Do you want to open these %1 files?", nullptr, files.size()).arg(files.size()),
                                                         QMessageBox::Yes | QMessageBox::No,
                                                         QMessageBox::No);
                         if(r == QMessageBox::No) {
