@@ -426,8 +426,8 @@ void TabPage::onFolderFsInfo() {
     QString& msg = statusText_[StatusTextFSInfo];
     if(folder_->getFilesystemInfo(&total, &free)) {
         msg = tr("Free space: %1 (Total: %2)")
-              .arg(formatFileSize(free, fm_config->si_unit))
-              .arg(formatFileSize(total, fm_config->si_unit));
+              .arg(formatFileSize(free, fm_config->si_unit),
+                   formatFileSize(total, fm_config->si_unit));
     }
     else {
         msg.clear();
