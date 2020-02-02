@@ -1707,7 +1707,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation>Если данный флажок не установлен, будут использоваться настройки среды рабочего стола.</translation>
+        <translation>Если не отмечено, будут использоваться настройки среды рабочего стола.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="133"/>
