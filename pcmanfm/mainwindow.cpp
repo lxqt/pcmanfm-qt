@@ -1347,6 +1347,10 @@ void MainWindow::updateUIForCurrentPage(bool setFocus) {
         }
     }
     ui.actionPaste->setEnabled(isWritable);
+    ui.menuCreateNew->setEnabled(isWritable);
+    // disable creation shortcuts too
+    ui.actionNewFolder->setEnabled(isWritable);
+    ui.actionNewBlankFile->setEnabled(isWritable);
 }
 
 void MainWindow::onStackedWidgetWidgetRemoved(int index) {
@@ -1418,6 +1422,9 @@ void MainWindow::onTabPageTitleChanged(QString title) {
                     }
                 }
                 ui.actionPaste->setEnabled(isWritable);
+                ui.menuCreateNew->setEnabled(isWritable);
+                ui.actionNewFolder->setEnabled(isWritable);
+                ui.actionNewBlankFile->setEnabled(isWritable);
             }
         }
     }
