@@ -1867,12 +1867,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="624"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>Подключать съёмные тома автоматически при их вставлении</translation>
+        <translation>Подключать съёмные тома автоматически когда они вставлены</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="631"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation>Показывать доступные варианты для съёмных устройств при их вставлении</translation>
+        <translation>Показывать доступные варианты для съёмных устройств когда они вставлены</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="641"/>
