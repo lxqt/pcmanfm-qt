@@ -1100,7 +1100,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="228"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished">Fő eszköztár</translation>
+        <translation>Fő eszköztár</translation>
     </message>
 </context>
 <context>
