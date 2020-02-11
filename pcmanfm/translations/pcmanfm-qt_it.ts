@@ -564,7 +564,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="319"/>
         <source>&amp;About</source>
-        <translation>Inform&amp;azioni</translation>
+        <translation>&amp;Informazioni</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="331"/>
@@ -1030,7 +1030,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="228"/>
         <source>Main Toolbar</source>
-        <translation>Barra degli strumenti principale</translation>
+        <translation>Barra strumenti principale</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="635"/>
