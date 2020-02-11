@@ -1013,7 +1013,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="587"/>
         <source>Alt+Left</source>
-        <translation>Alt+Стрелка_влево</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="596"/>
