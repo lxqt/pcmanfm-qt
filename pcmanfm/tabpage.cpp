@@ -860,19 +860,30 @@ void TabPage::applyFilter() {
     if(proxyModel_ == nullptr) {
         return;
     }
+
     int prevSelSize = folderView_->selectionModel()->selectedIndexes().size();
+    bool selectFirst = false;
+
     proxyModel_->updateFilters();
-    // if some selected files are filtered out, "View::selChanged()" won't be emitted
-    if(prevSelSize > folderView_->selectionModel()->selectedIndexes().size()) {
-        onSelChanged();
+
+    QModelIndex firstIndx = proxyModel_->index(0, 0);
+    if (firstIndx.isValid()) {
+        if(proxyFilter_->getFilterStr().isEmpty()) {
+            // if the filter is removed and there is no current item, set the first item as current
+            if (!folderView_->selectionModel()->currentIndex().isValid()) {
+                folderView_->selectionModel()->setCurrentIndex(firstIndx, QItemSelectionModel::NoUpdate);
+            }
+        }
+        else if (!folderView_->hasSelection()) {
+            // if there is a filter but no selection, select the first item
+            folderView_->childView()->setCurrentIndex(firstIndx);
+            selectFirst = true;
+        }
     }
 
-    // if the filter is removed and there is no current item, set the first item as current
-    if(proxyFilter_->getFilterStr().isEmpty() && !folderView_->selectionModel()->currentIndex().isValid()) {
-        QModelIndex firstIndx = proxyModel_->index(0, 0);
-        if (firstIndx.isValid()) {
-            folderView_->selectionModel()->setCurrentIndex(firstIndx, QItemSelectionModel::NoUpdate);
-        }
+    // if some selected files are filtered out, "View::selChanged()" won't be emitted
+    if(!selectFirst && prevSelSize > folderView_->selectionModel()->selectedIndexes().size()) {
+        onSelChanged();
     }
 
     statusText_[StatusTextNormal] = formatStatusText();
