@@ -229,10 +229,25 @@ void TabPage::backspacePressed() {
 
 void TabPage::onFilterStringChanged(QString str) {
     if(filterBar_ && str != getFilterStr()) {
+        bool transientFilterBar = !static_cast<Application*>(qApp)->settings().showFilter();
+
+        // with a transient filter-bar, let the current index be selected by Qt
+        // if the first pressed key is a space
+        if(transientFilterBar && !filterBar_->isVisibleTo(this)
+           && folderView()->childView()->hasFocus()
+           && str == QString(QChar(QChar::Space))) {
+            QModelIndex index = folderView_->selectionModel()->currentIndex();
+            if (index.isValid() && !folderView_->selectionModel()->isSelected(index)) {
+                filterBar_->clear();
+                folderView_->childView()->scrollTo(index, QAbstractItemView::EnsureVisible);
+                return;
+            }
+        }
+
         setFilterStr(str);
         applyFilter();
         // show/hide the transient filter-bar appropriately
-        if(!static_cast<Application*>(qApp)->settings().showFilter()) {
+        if(transientFilterBar) {
             if(filterBar_->isVisibleTo(this)) { // the page itself may be in an inactive tab
                 if(str.isEmpty()) {
                     // focus the view BEFORE hiding the filter-bar to avoid redundant "FocusIn" events;
@@ -304,6 +319,13 @@ void TabPage::onUiUpdated() {
             folderView_->childView()->setCurrentIndex(index);
         }
     }
+    else { // set the first item as current
+        QModelIndex firstIndx = proxyModel_->index(0, 0);
+        if (firstIndx.isValid()) {
+            folderView_->selectionModel()->setCurrentIndex(firstIndx, QItemSelectionModel::NoUpdate);
+        }
+    }
+
     if(folderModel_) {
         // update selection statusbar info when needed
         connect(folderModel_, &Fm::FolderModel::fileSizeChanged, this, &TabPage::onFileSizeChanged);
@@ -333,6 +355,13 @@ void TabPage::onFilesAdded(Fm::FileInfoList files) {
         else {
             folderView_->selectFiles(files, selectionTimer_->isActive());
             selectionTimer_->start(200);
+        }
+    }
+    else if (!folderView_->selectionModel()->currentIndex().isValid()) {
+        // set the first item as current if there is no current item
+        QModelIndex firstIndx = proxyModel_->index(0, 0);
+        if (firstIndx.isValid()) {
+            folderView_->selectionModel()->setCurrentIndex(firstIndx, QItemSelectionModel::NoUpdate);
         }
     }
 }
@@ -837,6 +866,15 @@ void TabPage::applyFilter() {
     if(prevSelSize > folderView_->selectionModel()->selectedIndexes().size()) {
         onSelChanged();
     }
+
+    // if the filter is removed and there is no current item, set the first item as current
+    if(proxyFilter_->getFilterStr().isEmpty() && !folderView_->selectionModel()->currentIndex().isValid()) {
+        QModelIndex firstIndx = proxyModel_->index(0, 0);
+        if (firstIndx.isValid()) {
+            folderView_->selectionModel()->setCurrentIndex(firstIndx, QItemSelectionModel::NoUpdate);
+        }
+    }
+
     statusText_[StatusTextNormal] = formatStatusText();
     Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
 }
