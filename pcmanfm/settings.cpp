@@ -677,6 +677,9 @@ static const char* wallpaperModeToString(int value) {
     case DesktopWindow::WallpaperZoom:
         ret = "zoom";
         break;
+    case DesktopWindow::WallpaperTransparent:
+        ret = "transparent";
+        break;
     }
     return ret;
 }
@@ -697,6 +700,9 @@ static int wallpaperModeFromString(const QString str) {
     }
     else if(str == QLatin1String("zoom")) {
         ret = DesktopWindow::WallpaperZoom;
+    }
+    else if(str == QLatin1String("transparent")) {
+        ret = DesktopWindow::WallpaperTransparent;
     }
     else {
         ret = DesktopWindow::WallpaperNone;

@@ -56,6 +56,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.wallpaperMode->addItem(tr("Center on the screen"), DesktopWindow::WallpaperCenter);
   ui.wallpaperMode->addItem(tr("Tile the image to fill the entire screen"), DesktopWindow::WallpaperTile);
   ui.wallpaperMode->addItem(tr("Zoom the image to fill the entire screen"), DesktopWindow::WallpaperZoom);
+  ui.wallpaperMode->addItem(tr("Transparent background (requires compositor)"), DesktopWindow::WallpaperTransparent);
   int i;
   switch(settings.wallpaperMode()) {
     case DesktopWindow::WallpaperNone:
@@ -75,6 +76,9 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
       break;
     case DesktopWindow::WallpaperZoom:
       i = 5;
+      break;
+    case DesktopWindow::WallpaperTransparent:
+      i = 6;
       break;
     default:
       i = 0;
@@ -223,7 +227,7 @@ void DesktopPreferencesDialog::accept() {
 void DesktopPreferencesDialog::onWallpaperModeChanged(int index) {
   int mode = ui.wallpaperMode->itemData(index).toInt();
 
-  bool enable = (mode != DesktopWindow::WallpaperNone);
+  bool enable = (mode != DesktopWindow::WallpaperNone && mode != DesktopWindow::WallpaperTransparent);
   ui.imageFile->setEnabled(enable);
   ui.browse->setEnabled(enable);
   ui.transformImage->setEnabled(enable);

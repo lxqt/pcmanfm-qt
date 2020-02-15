@@ -54,7 +54,8 @@ public:
         WallpaperFit,
         WallpaperCenter,
         WallpaperTile,
-        WallpaperZoom
+        WallpaperZoom,
+        WallpaperTransparent
     };
 
     explicit DesktopWindow(int screenNum);

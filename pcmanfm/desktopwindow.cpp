@@ -86,6 +86,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
     setAttribute(Qt::WA_DeleteOnClose);
+    setAttribute(Qt::WA_TranslucentBackground);
 
     // set our custom file launcher
     View::setFileLauncher(&fileLauncher_);
@@ -449,7 +450,7 @@ void DesktopWindow::resizeEvent(QResizeEvent* event) {
     QWidget::resizeEvent(event);
 
     // resize wall paper if needed
-    if(isVisible() && wallpaperMode_ != WallpaperNone && wallpaperMode_ != WallpaperTile) {
+    if(isVisible() && wallpaperMode_ != WallpaperNone && wallpaperMode_ != WallpaperTile && wallpaperMode_ != WallpaperTransparent) {
         updateWallpaper();
         update();
     }
@@ -616,7 +617,7 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
 
 // really generate the background pixmap according to current settings and apply it.
 void DesktopWindow::updateWallpaper() {
-    if(wallpaperMode_ != WallpaperNone) {  // use wallpaper
+    if(wallpaperMode_ != WallpaperNone && wallpaperMode_ != WallpaperTransparent) {  // use wallpaper
         QPixmap pixmap;
         QImage image;
         Settings& settings = static_cast<Application* >(qApp)->settings();
@@ -1201,6 +1202,10 @@ void DesktopWindow::paintBackground(QPaintEvent* event) {
     // https://bugreports.qt.io/browse/QTBUG-54384
     QPainter painter(this);
     if(wallpaperMode_ == WallpaperNone || wallpaperPixmap_.isNull()) {
+        painter.fillRect(event->rect(), QBrush(bgColor_));
+    }
+    else if (wallpaperMode_ == WallpaperTransparent) {
+        painter.setOpacity(0.0);
         painter.fillRect(event->rect(), QBrush(bgColor_));
     }
     else {
