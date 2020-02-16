@@ -177,6 +177,7 @@ protected Q_SLOTS:
     void on_actionFindFiles_triggered();
 
     void on_actionAbout_triggered();
+    void on_actionHiddenShortcuts_triggered();
 
     void onBookmarkActionTriggered();
 

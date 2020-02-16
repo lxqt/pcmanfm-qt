@@ -92,6 +92,7 @@
      <string>&amp;Help</string>
     </property>
     <addaction name="actionAbout"/>
+    <addaction name="actionHiddenShortcuts"/>
    </widget>
    <widget class="QMenu" name="menu_View">
     <property name="title">
@@ -901,6 +902,11 @@
    </property>
    <property name="shortcut">
     <string>F9</string>
+   </property>
+  </action>
+  <action name="actionHiddenShortcuts">
+   <property name="text">
+    <string>Hidden &amp;Shortcuts</string>
    </property>
   </action>
  </widget>
