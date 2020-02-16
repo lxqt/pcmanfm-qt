@@ -34,6 +34,7 @@ set_source_files_properties(${pcmanfm_DBUS_SRCS} PROPERTIES SKIP_AUTOGEN ON)
 set(pcmanfm_UIS
     main-win.ui
     about.ui
+    shortcuts.ui
     preferences.ui
     desktop-preferences.ui
     desktop-folder.ui

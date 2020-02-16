@@ -47,6 +47,7 @@
 #include <libfm-qt/core/fileinfo.h>
 #include <libfm-qt/mountoperation.h>
 #include "ui_about.h"
+#include "ui_shortcuts.h"
 #include "application.h"
 #include "bulkrename.h"
 
@@ -1026,6 +1027,24 @@ void MainWindow::on_actionAbout_triggered() {
         Ui::AboutDialog ui;
     };
     AboutDialog dialog(this);
+    dialog.exec();
+}
+
+void MainWindow::on_actionHiddenShortcuts_triggered() {
+    class HiddenShortcutsDialog : public QDialog {
+    public:
+        explicit HiddenShortcutsDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) : QDialog(parent, f) {
+            ui.setupUi(this);
+            ui.treeWidget->setRootIsDecorated(false);
+            ui.treeWidget->header()->setSectionResizeMode(QHeaderView::Stretch);
+            ui.treeWidget->header()->setSectionsClickable(true);
+            ui.treeWidget->sortByColumn(1, Qt::AscendingOrder);
+            ui.treeWidget->setSortingEnabled(true);
+        }
+    private:
+        Ui::HiddenShortcutsDialog ui;
+    };
+    HiddenShortcutsDialog dialog(this);
     dialog.exec();
 }
 
