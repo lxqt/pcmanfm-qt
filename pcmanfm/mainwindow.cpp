@@ -276,6 +276,13 @@ MainWindow::MainWindow(Fm::FilePath path):
         }
     });
 
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Escape), this);
+    connect(shortcut, &QShortcut::activated, [this] {
+        if(ui.sidePane->isVisible() && ui.sidePane->view()) {
+            ui.sidePane->view()->setFocus();
+        }
+    });
+
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_L), this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::focusPathEntry);
 
