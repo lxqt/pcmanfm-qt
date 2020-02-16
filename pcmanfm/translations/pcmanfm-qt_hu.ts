@@ -818,7 +818,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation>Bélyegképek megjelenítése</translation>
+        <translation>Bélyegképek</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
