@@ -1846,7 +1846,7 @@ hvis der er mere end et faneblad.</translation>
     <message>
         <location filename="../preferences.ui" line="581"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation>Dette behøver programmet  ffmpegthumbnailer</translation>
+        <translation>Dette behøver programmet ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="611"/>
