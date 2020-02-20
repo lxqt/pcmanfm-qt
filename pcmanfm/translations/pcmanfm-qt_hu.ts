@@ -1785,7 +1785,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="382"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>Ikon nézet legkisebb helyköze:</translation>
+        <translation>Ikonnézet legkisebb helyköze:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
@@ -1808,7 +1808,7 @@ A space is also reserved for 3 lines of text.</source>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>Az alap 3 pixel.
-Egy szóköz lefoglalva 3 szöveges sorhoz.</translation>
+Hely lefoglalva 3 sor szöveghez.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
