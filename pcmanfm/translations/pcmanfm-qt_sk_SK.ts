@@ -236,7 +236,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">Typ:</translation>
+        <translation>Typ:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
@@ -259,12 +259,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation>Pracovná plocha</translation>
+        <translation>Plocha</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation>Zložka pracovnej plochy:</translation>
+        <translation>Priečinok plochy:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -274,7 +274,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation>Umiestnenie zložky</translation>
+        <translation>Umiestnenie priečinka</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
@@ -298,12 +298,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="276"/>
         <source>Wallpaper mode:</source>
-        <translation>Režim obrázku na pozadí:</translation>
+        <translation>Režim obrázku pozadia:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="299"/>
         <source>Wallpaper image file:</source>
-        <translation>Súbor s obrázkom na pozadí:</translation>
+        <translation>Súbor s obrázkom pozadia:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="241"/>
@@ -333,7 +333,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation>Veľkosť ikony:</translation>
+        <translation>Veľkosť ikon:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
@@ -348,7 +348,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>Písmo popisku:</translation>
+        <translation>Font:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -358,7 +358,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation>Vybrať farbu textu:</translation>
+        <translation>Farba textu:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
@@ -368,12 +368,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="142"/>
         <source>Minimum item margins:</source>
-        <translation>Najmenšie okraje položky:</translation>
+        <translation>Najmenšie okraje položiek:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="149"/>
         <source>3 px by default.</source>
-        <translation>Východzie sú tri obrazové body.</translation>
+        <translation>Pôvodné nastavenie: 3 px.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
@@ -390,8 +390,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="172"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>Východzí je jeden obrazový bod.
-Je vyhradené miesto pre 3 riadky textu.</translation>
+        <translation>Pôvodné nastavenie: 1 px.
+Navyše je rezervované miesto pre 3 riadky textu.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
