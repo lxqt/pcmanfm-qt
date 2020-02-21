@@ -177,38 +177,38 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>أنشِئ مطلِقًا</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>الاسم:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>الوصف:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>التعليق:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>الأمر:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>…</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>الأيقونة:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
@@ -219,32 +219,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>الطرفية:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>لا</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">النوع:</translation>
+        <translation>النوع:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>تطبيق</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>رابط</translation>
     </message>
 </context>
 <context>
@@ -356,7 +356,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>اختر لون النص:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
@@ -469,22 +469,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="510"/>
         <source>Home</source>
-        <translation type="unfinished">المنزل</translation>
+        <translation>المنزل</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="521"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>المهملات</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="532"/>
         <source>Computer</source>
-        <translation type="unfinished">الحاسوب</translation>
+        <translation>الحاسوب</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="543"/>
         <source>Network</source>
-        <translation type="unfinished">الشبكة</translation>
+        <translation>الشبكة</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="498"/>
@@ -712,7 +712,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>بوقت الح&amp;ذف</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -727,7 +727,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>بالمجمو&amp;عة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
@@ -772,52 +772,52 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>ا&amp;عرض/أخفِ شريط الترشيح</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="843"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>اعرض شريط الترشيح</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="854"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>ا&amp;قسم المنظور</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="857"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>اقسم المنظور</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="860"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="865"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>ا&amp;نسخ المسار كاملًا</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="868"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>اعرض المص&amp;غّرات</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>اعرض المصغّرات</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
@@ -827,12 +827,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="743"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>ام&amp;سح كلّ المرشّحات</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="746"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
@@ -1253,32 +1253,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="26"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>الأمر:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>المسار:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="54"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>اختر أيقونة</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="56"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>الصور (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="78"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>اختر ملفًا تنفيذيًا</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="86"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>اختر ملفًا</translation>
     </message>
 </context>
 <context>
@@ -1329,39 +1329,39 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>المهملات (عنصر واحد)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>المهملات (فارغة)</numerusform>
+            <numerusform>المهملات (عنصر واحد)</numerusform>
+            <numerusform>المهملات (عنصران)</numerusform>
+            <numerusform>المهملات (%Ln عناصر)</numerusform>
+            <numerusform>المهملات (%Ln عنصرًا)</numerusform>
+            <numerusform>المهملات (%Ln عنصر)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="304"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>المهملات (فارغة)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="332"/>
         <source>Computer</source>
-        <translation type="unfinished">الحاسوب</translation>
+        <translation>الحاسوب</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="346"/>
         <source>Network</source>
-        <translation type="unfinished">الشبكة</translation>
+        <translation>الشبكة</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="851"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>افتح</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="856"/>
@@ -1372,7 +1372,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="863"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>أفرِغ المهملات</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="919"/>
@@ -1382,7 +1382,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="925"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>أنشِئ مطلِقًا</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="928"/>
@@ -1395,7 +1395,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>رشّح:</translation>
     </message>
 </context>
 <context>
@@ -1403,7 +1403,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>امسح النص (Ctrl+K أو Esc)</translation>
     </message>
 </context>
 <context>
