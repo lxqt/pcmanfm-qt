@@ -117,7 +117,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA c
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"># számokkal lesz helyettesítve ezzel kezdve:</translation>
+        <translation type="unfinished"># számokkal lesz helyettesítve ettől kezdve:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
@@ -415,7 +415,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="363"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished">Diavetítés engedélyezése</translation>
+        <translation>Diavetítés bekapcsolása</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="375"/>
@@ -460,7 +460,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="471"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished">Véletlenszerű diavetítés</translation>
+        <translation>Véletlenszerű</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="504"/>
@@ -1526,7 +1526,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../view.cpp" line="57"/>
         <source>Do you want to open these %1 file?</source>
-        <translation type="unfinished">Szeretné megnyitni ezt a(z) %1 fájlt?</translation>
+        <translation>Szeretné megnyitni ezt a(z) %1 fájlt?</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
@@ -1595,7 +1595,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="282"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished">Kicsi méret:</translation>
+        <translation>Kicsi ikonok mérete:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="299"/>
@@ -1625,7 +1625,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="489"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation type="unfinished">Bezárás gomb a lapokon	</translation>
+        <translation>Bezárás gomb a lapokon	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="496"/>
@@ -1635,12 +1635,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="503"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished">Új ablak alapértelmezett szélessége:</translation>
+        <translation>Új ablak alapértelmezett szélessége:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="517"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished">Új ablak alapértelmezett magassága:</translation>
+        <translation>Új ablak alapértelmezett magassága:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
@@ -1680,12 +1680,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation type="unfinished">Fájlok áthelyezése kukába, a lemezről törlés helyett.</translation>
+        <translation>Fájlok áthelyezése kukába, a lemezről törlés helyett.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="584"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished">Fájloknál</translation>
+        <translation>Fájloknál</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="574"/>
@@ -1700,7 +1700,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished">Ha ez nincs bejelölve, akkor az asztali környezet beállításait használja.</translation>
+        <translation>Ha ez nincs bejelölve, akkor az asztali környezet beállításait használja.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="133"/>
@@ -1725,7 +1725,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="182"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished">Cserélhető adathordozón a fájlok törlése a kukába helyezés helyett</translation>
+        <translation>Cserélhető adathordozón a fájlok törlése a kukába helyezés helyett</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="189"/>
@@ -1737,12 +1737,12 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="346"/>
         <location filename="../preferences.ui" line="356"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished">Az alkalmazás újraindítása szükséges a változtatások érvénybelépéséhez</translation>
+        <translation>Az alkalmazás újraindítása szükséges a változtatások érvénybelépéséhez</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="199"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished">Futtatható fájlok futtatása rákérdezés nélkül</translation>
+        <translation>Futtatható fájlok futtatása rákérdezés nélkül</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="262"/>
@@ -1824,12 +1824,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="710"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Példák:&lt;br&gt;Terminál megnyitására: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Felhasználóváltásra: &lt;i&gt;lxsudo %s&lt;/i&gt; vagy &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; a parancs amit terminálban akar futtatni vagy su-val.&lt;br&gt; Fontos: használjon lxsudo-t, a sudo magában tönkreteheti a beállítófájlt.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="801"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished">A változtatások érvényesítéhez újra kell indítani az alkalmazást.</translation>
+        <translation>A változtatások érvényesítéhez újra kell indítani az alkalmazást.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="557"/>
