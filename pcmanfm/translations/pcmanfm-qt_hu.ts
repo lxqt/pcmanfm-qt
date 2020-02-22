@@ -11,7 +11,7 @@
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt; PCManFM-Qt &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
@@ -117,7 +117,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA c
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"># számokkal lesz helyettesítve ettől kezdve:</translation>
+        <translation># számokkal lesz helyettesítve ettől kezdve:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
@@ -395,7 +395,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Lock</source>
-        <translation type="unfinished">Zárolás</translation>
+        <translation>Zárolás</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="264"/>
@@ -648,7 +648,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="437"/>
         <source>Cu&amp;t</source>
-        <translation>Kivá&amp;gás</translation>
+        <translation>&amp;Kivágás</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="440"/>
@@ -668,7 +668,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="461"/>
         <source>&amp;Paste</source>
-        <translation>B&amp;eillesztés</translation>
+        <translation>&amp;Beillesztés</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="464"/>
@@ -738,7 +738,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished">Mappa &amp;rendezésének megőrzése</translation>
+        <translation>Mappa &amp;rendezésének megőrzése</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="656"/>
@@ -1179,7 +1179,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished">Beállítások megnyitása a megadott nevű lapon</translation>
+        <translation>Beállítások megnyitása a megadott nevű lapon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
@@ -1236,7 +1236,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation></translation>
+        <translation>Biztonságos WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1297,7 +1297,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished">Illesztés</translation>
+        <translation>Illesztés</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
@@ -1364,7 +1364,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktopwindow.cpp" line="856"/>
         <location filename="../desktopwindow.cpp" line="893"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished">&amp;Rögzítés ebbe a helyzetbe</translation>
+        <translation>&amp;Rögzítés ebbe a helyzetbe</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="863"/>
@@ -1446,7 +1446,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1921"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished">Felhasználóváltó parancs meghatározatlan.</translation>
+        <translation>Felhasználóváltó parancs meghatározatlan.</translation>
     </message>
 </context>
 <context>
@@ -1824,7 +1824,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="710"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished">Példák:&lt;br&gt;Terminál megnyitására: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Felhasználóváltásra: &lt;i&gt;lxsudo %s&lt;/i&gt; vagy &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; a parancs amit terminálban akar futtatni vagy su-val.&lt;br&gt; Fontos: használjon lxsudo-t, a sudo magában tönkreteheti a beállítófájlt.</translation>
+        <translation>Példák:&lt;br&gt;Terminál megnyitására: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Felhasználóváltásra: &lt;i&gt;lxsudo %s&lt;/i&gt; vagy &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; a parancs amit terminálban akar futtatni vagy su-val.&lt;br&gt; Fontos: használjon lxsudo-t, a sudo magában tönkreteheti a beállítófájlt.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="801"/>
