@@ -1694,7 +1694,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation>Se isso não estiver marcado,  a configuração DE será usada.</translation>
+        <translation>Se isso estiver desmarcado, a configuração DE será usada.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
