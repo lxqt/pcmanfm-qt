@@ -220,7 +220,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA c
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished">Terminál:</translation>
+        <translation>Terminál:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
@@ -352,12 +352,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA c
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation>Fő</translation>
+        <translation>Alap</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished">Szövegszín kiválasztása:</translation>
+        <translation>Szövegszín kiválasztása:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
@@ -405,12 +405,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="330"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished">A kép átalakítása EXIF-adatok alapján</translation>
+        <translation>A kép átalakítása EXIF-adatok alapján</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="357"/>
         <source>Slide Show</source>
-        <translation type="unfinished">Diavetítés</translation>
+        <translation>Diavetítés</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="363"/>
@@ -778,7 +778,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="843"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished">Szűrősáv megjelenítése</translation>
+        <translation>Szűrősáv megjelenítése</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="846"/>
@@ -828,7 +828,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="743"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished">Minden s&amp;zűrő törlése</translation>
+        <translation>Minden s&amp;zűrő törlése</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="746"/>
@@ -848,7 +848,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="803"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished">Ma&amp;ppa beállításai megmaradnak</translation>
+        <translation>Ma&amp;ppa beállításai megmaradnak</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="808"/>
@@ -1374,7 +1374,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="919"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished">Asztali elemek elrejtése</translation>
+        <translation>Asztali elemek elrejtése</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="925"/>
@@ -1505,7 +1505,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../tabpage.cpp" line="639"/>
         <location filename="../tabpage.cpp" line="655"/>
         <source>Link to</source>
-        <translation type="unfinished">Hivatkozás</translation>
+        <translation>Hivatkozás</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="669"/>
@@ -1521,7 +1521,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../view.cpp" line="56"/>
         <source>Many files</source>
-        <translation type="unfinished">Bármely fájl</translation>
+        <translation>Bármely fájl</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="57"/>
@@ -1947,7 +1947,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished">Az átnevezés megszakítva.</translation>
+        <translation>Az átnevezés megszakítva.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="104"/>
@@ -1958,12 +1958,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="104"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished">Egyetlen fájl sem nevezhető át.</translation>
+        <translation>Egyetlen fájl sem nevezhető át.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="107"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished">Néhány fájlt nem lehet átnevezni.</translation>
+        <translation>Néhány fájlt nem lehet átnevezni.</translation>
     </message>
 </context>
 </TS>
