@@ -553,7 +553,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="301"/>
         <source>Go</source>
-        <translation>Ugrás</translation>
+        <translation>&amp;Ugrás</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="310"/>
