@@ -6,29 +6,31 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>על אודות</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>מנהל קבצים קליל</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="87"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>פיתוח:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;‎
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="109"/>
@@ -54,12 +56,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="78"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>יוצרים</translation>
     </message>
     <message>
         <location filename="../about.ui" line="100"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>רישיון</translation>
     </message>
 </context>
 <context>
@@ -67,27 +69,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>הוכנסה מדיה נתיקה</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;הוכנסה מדיה נתיקה&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>סוג המדיה:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>מתבצע זיהוי…</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>נא לבחור את הפעולה לביצוע:</translation>
     </message>
 </context>
 <context>
@@ -95,22 +97,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>שינוי שם בכמות</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># יוחלף במספרים החל מ־:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>שינוי שם הקבצים הנבחרים לשם:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>שם#</translation>
     </message>
 </context>
 <context>
@@ -118,42 +120,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>התחברות לשרת מרוחק</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>כניסה &amp;אלמונית</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>כניסה בתור מ&amp;שתמש:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>נא לציין את התיקייה המרוחקת לחיבור</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>סוג:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>פתחה:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>נתיב:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>מארח:</translation>
     </message>
 </context>
 <context>
@@ -161,74 +163,74 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>יצירת משגר</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>שם:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>תיאור:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>הערה:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>פקודה:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>…</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>סמל:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>להריץ במסוף?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>מסוף:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>לא</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>כן</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>סוג:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>יישום</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>קישור</translation>
     </message>
 </context>
 <context>
@@ -236,32 +238,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>טופס</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>שולחן עבודה</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>תיקיית שולחן העבודה:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>קובץ תמונה</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>נתיב התיקייה</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;עיון</translation>
     </message>
 </context>
 <context>
@@ -269,99 +271,99 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>העדפות שולחן העבודה</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="229"/>
         <location filename="../desktop-preferences.ui" line="235"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>רקע</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="276"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>מצב רקע:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="299"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>קובץ תמונת רקע:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="241"/>
         <source>Select background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>נא לבחור צבע רקע:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="308"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>קובץ תמונה</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>נתיב קובץ תמונה</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="321"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;עיון</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>סמלים</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation type="unfinished"></translation>
+        <translation>גודל סמל:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
         <source>Label Text</source>
-        <translation type="unfinished"></translation>
+        <translation>טקסט תווית</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>בחירת צבע צללית:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation type="unfinished"></translation>
+        <translation>בחירת גופן:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>כללי</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>בחירת צבע טקסט:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>ריווח</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="142"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>שולי הפריט המזעריים:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="149"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 פיקסלים כבררת מחדל.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> פיקסלים</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="165"/>
@@ -525,32 +527,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="289"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;רענון</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="292"/>
         <source>F5</source>
-        <translation type="unfinished"></translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="301"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>קדימה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="310"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>יציאה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="319"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>על &amp;אודות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="328"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;חלון חדש</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="331"/>
@@ -560,7 +562,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="334"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="342"/>
@@ -630,32 +632,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="437"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>ג&amp;זירה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="440"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="449"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>ה&amp;עתקה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="452"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="461"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>ה&amp;דבקה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="464"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="469"/>
@@ -665,7 +667,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="472"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
@@ -740,7 +742,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="672"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="704"/>
@@ -800,7 +802,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת תמונות ממוזערות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
@@ -946,22 +948,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="616"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>מ&amp;חיקה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="619"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;שינוי שם</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="627"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="632"/>
@@ -971,7 +973,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="635"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="640"/>
@@ -981,7 +983,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>Alt+Return</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Return</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -1036,7 +1038,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;קובץ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
@@ -1046,13 +1048,13 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>ע&amp;זרה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
         <location filename="../main-win.ui" line="120"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>ת&amp;צוגה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="102"/>
@@ -1062,7 +1064,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="165"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>ע&amp;ריכה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="183"/>
@@ -1082,7 +1084,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="228"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>סרגל כלים ראשי</translation>
     </message>
 </context>
 <context>
@@ -1527,7 +1529,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>העדפות</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -1588,7 +1590,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="245"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>ערכת סמלים:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
