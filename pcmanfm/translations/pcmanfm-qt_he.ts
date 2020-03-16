@@ -738,22 +738,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;קיבוע אופן סידור התיקייה הזאת</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="656"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;תלוי רישיות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>לפי &amp;גודל קובץ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="669"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;סגירת חלון</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="672"/>
@@ -763,7 +763,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="704"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;תיקייה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="716"/>
