@@ -543,7 +543,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="289"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Újratöltés</translation>
+        <translation>Ú&amp;jratöltés</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="292"/>
@@ -568,7 +568,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="328"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Új ablak</translation>
+        <translation>Ú&amp;j ablak</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="331"/>
