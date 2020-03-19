@@ -51,7 +51,7 @@ modificá-lo sob os termos da Licença Pública Geral GNU
 publicada pela Free Software Foundation, tanto na versão 2
 da licença ou, como opção, qualquer versão posterior.
 
-Esse programa é distrubuído na esperança de ser útil,
+Esse programa é distribuído na esperança de ser útil,
 mas não possui NENHUMA GARANTIA, nem mesmo a garantia implícita
 de COMERCIALIDADE ou PARA USO PARTICULAR. Veja a
 Licença Pública Geral GNU para mais detalhes.
