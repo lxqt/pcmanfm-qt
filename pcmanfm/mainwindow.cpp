@@ -1045,7 +1045,7 @@ void MainWindow::on_actionHiddenShortcuts_triggered() {
             ui.treeWidget->setRootIsDecorated(false);
             ui.treeWidget->header()->setSectionResizeMode(QHeaderView::Stretch);
             ui.treeWidget->header()->setSectionsClickable(true);
-            ui.treeWidget->sortByColumn(1, Qt::AscendingOrder);
+            ui.treeWidget->sortByColumn(0, Qt::AscendingOrder);
             ui.treeWidget->setSortingEnabled(true);
         }
     private:
