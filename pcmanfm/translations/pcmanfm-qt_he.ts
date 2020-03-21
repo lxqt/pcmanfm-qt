@@ -768,52 +768,52 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>קובץ &amp;ריק</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>ה&amp;צגה/התמקדות של סרגל הסינון</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="843"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת סרגל סינון</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="854"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>תצוגה מ&amp;פוצלת</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="857"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>תצוגה מפוצלת</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="860"/>
         <source>F6</source>
-        <translation type="unfinished"></translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="865"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>העתקת ה&amp;נתיב המלא</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="868"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת תמונות ממו&amp;זערות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
@@ -823,7 +823,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="738"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="743"/>
