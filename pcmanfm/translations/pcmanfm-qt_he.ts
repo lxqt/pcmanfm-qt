@@ -838,32 +838,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="755"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>סגירת הלשוניות ה&amp;קודמות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>סגירת הלשוניות ה&amp;באות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="803"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;שמירת ההגדרות של התיקייה הזאת</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="808"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>התחברות לש&amp;רת</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>מי&amp;קום</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>כפתור &amp;נתיב</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="829"/>
