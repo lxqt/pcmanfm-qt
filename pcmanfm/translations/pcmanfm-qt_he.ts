@@ -868,98 +868,98 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="829"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>שינוי שם &amp;כמותי</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>שינוי שם כמותי</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="769"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>לסגור לשוניות א&amp;חרות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>סרגל סינון &amp;קבוע</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="777"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>סרגל &amp;תפריטים</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="780"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>סרגל תפריטים</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="783"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="792"/>
         <location filename="../main-win.ui" line="795"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>תפריט</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>לשונית &amp;חדשה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="569"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>לשונית חדשה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="572"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="581"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>ח&amp;זרה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="584"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>חזר אחורה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="587"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation>‪Alt+שמאלה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="596"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>הת&amp;קדמות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="599"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>התקדמות קדימה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="602"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation>‪Alt+ימינה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="607"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>הי&amp;פוך בחירה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="616"/>
