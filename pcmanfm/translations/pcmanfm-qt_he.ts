@@ -984,7 +984,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="632"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;סגירת לשונית</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="635"/>
