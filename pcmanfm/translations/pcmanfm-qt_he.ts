@@ -994,7 +994,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="640"/>
         <source>File &amp;Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>מ&amp;אפייני קובץ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
@@ -1004,52 +1004,52 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="648"/>
         <source>&amp;Folder Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>מאפייני &amp;תיקייה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="677"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>עריכת סימניות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="682"/>
         <source>Open &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחת מ&amp;סוף</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="685"/>
         <source>F4</source>
-        <translation type="unfinished"></translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="690"/>
         <source>Open as &amp;Root</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחה כמשתמש &amp;על (root)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="695"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;עריכת סימניות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;איתור קבצים</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="727"/>
         <source>F3</source>
-        <translation type="unfinished"></translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -1059,7 +1059,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>י&amp;צירת חדש</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="92"/>
@@ -1075,7 +1075,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="102"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;מיון</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="165"/>
@@ -1085,17 +1085,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="183"/>
         <source>&amp;Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;סימניות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="190"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation>ל&amp;גשת</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="207"/>
         <source>&amp;Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;כלי</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="228"/>
@@ -1108,7 +1108,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>שם פרופיל התצורה</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="165"/>
@@ -1118,22 +1118,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>הפעלת PCManFM כסוכן רקע</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM</source>
-        <translation type="unfinished"></translation>
+        <translation>יציאה מ־PCManFM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>הפעלת מנהל שולחן עבודה</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>כיבוי מנהל שולחן עבודה אם הוא פעיל</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
