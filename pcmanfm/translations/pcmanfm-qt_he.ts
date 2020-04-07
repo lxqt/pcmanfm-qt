@@ -430,7 +430,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="389"/>
         <source> hour(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> שעות</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="399"/>
@@ -450,7 +450,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="422"/>
         <source> minute(s)</source>
-        <translation type="unfinished"></translation>
+        <translation> דקות</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="448"/>
@@ -1113,7 +1113,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>פרופיל</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
@@ -1138,43 +1138,43 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="180"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחת דו־שיח העדפות שולחן עבודה בעמוד עם השם שמצוין</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
         <location filename="../application.cpp" line="195"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>שם</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="183"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחת חלון חדש</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחת כלי חיפוש קבצים</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>הגדרת רקע שולחן עבודה מקובץ תמונה</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>קובץ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>מצב</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>הגדרת מצב רקע שולחן העבודה. מצב=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
@@ -1184,18 +1184,18 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>קבצים או תיקיות לפתיחה</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[קובץ1, קובץ2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="545"/>
         <location filename="../application.cpp" line="550"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="550"/>
