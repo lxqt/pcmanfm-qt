@@ -214,6 +214,16 @@
               </property>
              </widget>
             </item>
+            <item>
+             <widget class="QCheckBox" name="singleWindowMode">
+              <property name="toolTip">
+               <string>Open folders in new tabs as far as possible</string>
+              </property>
+              <property name="text">
+               <string>Single window mode</string>
+              </property>
+             </widget>
+            </item>
            </layout>
           </widget>
          </item>
@@ -469,7 +479,7 @@ A space is also reserved for 3 lines of text.</string>
         </layout>
        </widget>
        <widget class="QWidget" name="uiPage">
-        <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0,1">
+        <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,1">
          <item>
           <widget class="QGroupBox" name="groupBox_5">
            <property name="title">

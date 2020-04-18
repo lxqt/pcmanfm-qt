@@ -224,6 +224,7 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
     ui.confirmTrash->setChecked(settings.confirmTrash());
     ui.quickExec->setChecked(settings.quickExec());
     ui.selectNewFiles->setChecked(settings.selectNewFiles());
+    ui.singleWindowMode->setChecked(settings.singleWindowMode());
 
     // app restart warning
     connect(ui.quickExec, &QAbstractButton::toggled, [this, &settings] (bool checked) {
@@ -338,6 +339,7 @@ void PreferencesDialog::applyBehaviorPage(Settings& settings) {
     settings.setConfirmTrash(ui.confirmTrash->isChecked());
     settings.setQuickExec(ui.quickExec->isChecked());
     settings.setSelectNewFiles(ui.selectNewFiles->isChecked());
+    settings.setSingleWindowMode(ui.singleWindowMode->isChecked());
 }
 
 void PreferencesDialog::applyThumbnailPage(Settings& settings) {

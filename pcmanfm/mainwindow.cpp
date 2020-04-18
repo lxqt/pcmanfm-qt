@@ -117,7 +117,7 @@ void ViewFrame::removeTopBar() {
 //======================================================================
 
 // static
-MainWindow* MainWindow::lastActive_ = nullptr;
+QPointer<MainWindow> MainWindow::lastActive_;
 
 MainWindow::MainWindow(Fm::FilePath path):
     QMainWindow(),

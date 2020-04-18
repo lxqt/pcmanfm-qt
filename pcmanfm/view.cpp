@@ -42,15 +42,12 @@ View::~View() {
 
 void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) {
     if(type == MiddleClick) {
-        if(fileInfo->isDir() && fileLauncher()) {
+        if(fileInfo->isDir()) {
             // fileInfo->path() shouldn't be used directly because
             // it won't work in places like computer:/// or network:///
             Fm::FileInfoList files;
             files.emplace_back(fileInfo);
-            if(auto launcher = dynamic_cast<Launcher*>(fileLauncher())) {
-                launcher->openInNewTab();
-            }
-            fileLauncher()->launchFiles(nullptr, std::move(files));
+            launchFiles(std::move(files), true);
         }
     }
     else {
@@ -68,7 +65,7 @@ void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fi
                             return;
                         }
                     }
-                    fileLauncher()->launchFiles(nullptr, std::move(files));
+                    launchFiles(std::move(files));
                 }
             }
         }
@@ -80,20 +77,14 @@ void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fi
 
 void View::onNewWindow() {
     Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
-    // FIXME: open the files in a new window
     Application* app = static_cast<Application*>(qApp);
     app->openFolders(menu->files());
 }
 
 void View::onNewTab() {
-    if(fileLauncher()) {
-        Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
-        auto files = menu->files();
-        if(auto launcher = dynamic_cast<Launcher*>(fileLauncher())) {
-            launcher->openInNewTab();
-        }
-        fileLauncher()->launchFiles(nullptr, std::move(files));
-    }
+    Fm::FileMenu* menu = static_cast<Fm::FileMenu*>(sender()->parent());
+    auto files = menu->files();
+    launchFiles(std::move(files), true);
 }
 
 void View::onOpenInTerminal() {
@@ -176,6 +167,38 @@ void View::updateFromSettings(Settings& settings) {
     if(proxyModel) {
         proxyModel->setShowThumbnails(settings.showThumbnails());
         proxyModel->setBackupAsHidden(settings.backupAsHidden());
+    }
+}
+
+void View::launchFiles(Fm::FileInfoList files, bool inNewTabs) {
+    if(fileLauncher()) {
+        if(auto launcher = dynamic_cast<Launcher*>(fileLauncher())) {
+           // this happens on desktop
+           if(!launcher->hasMainWindow()
+              && (inNewTabs
+                  || static_cast<Application*>(qApp)->settings().singleWindowMode())) {
+                MainWindow* window = MainWindow::lastActive();
+                // if there is no last active window, find the last created window
+                if(window == nullptr) {
+                    QWidgetList windows = qApp->topLevelWidgets();
+                    for(int i = 0; i < windows.size(); ++i) {
+                        auto win = windows.at(windows.size() - 1 - i);
+                        if(win->inherits("PCManFM::MainWindow")) {
+                            window = static_cast<MainWindow*>(win);
+                            break;
+                        }
+                    }
+                }
+                auto tempLauncher = Launcher(window);
+                tempLauncher.openInNewTab();
+                tempLauncher.launchFiles(nullptr, std::move(files));
+                return;
+            }
+            if(inNewTabs) {
+                launcher->openInNewTab();
+            }
+        }
+        fileLauncher()->launchFiles(nullptr, std::move(files));
     }
 }
 

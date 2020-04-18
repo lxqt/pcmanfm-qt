@@ -32,6 +32,10 @@ public:
     Launcher(MainWindow* mainWindow = nullptr);
     ~Launcher();
 
+    bool hasMainWindow() const {
+        return mainWindow_ != nullptr;
+    }
+
     void openInNewTab() {
         openInNewTab_ = true;
     }
