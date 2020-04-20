@@ -508,7 +508,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="137"/>
         <source>Path &amp;Bar</source>
-        <translation>Út &amp;Sáv</translation>
+        <translation>Útvonal&amp;sáv</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="144"/>
@@ -543,7 +543,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="289"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Újratöltés</translation>
+        <translation>Ú&amp;jratöltés</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="292"/>
@@ -553,7 +553,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="301"/>
         <source>Go</source>
-        <translation>Ugrás</translation>
+        <translation>&amp;Ugrás</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="310"/>
@@ -568,7 +568,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="328"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Új ablak</translation>
+        <translation>Új &amp;ablak</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="331"/>
@@ -853,12 +853,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="808"/>
         <source>Connect to &amp;Server</source>
-        <translation>&amp;Szerverhez csatlakozás</translation>
+        <translation>&amp;Csatlakozás szerverhez</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
         <source>&amp;Location</source>
-        <translation>He&amp;ly</translation>
+        <translation>&amp;Útvonal szöveg</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
@@ -1014,7 +1014,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="682"/>
         <source>Open &amp;Terminal</source>
-        <translation>&amp;Terminál megnyitása</translation>
+        <translation>&amp;Terminál megnyitása itt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="685"/>
@@ -1292,7 +1292,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished">Nyújtás</translation>
+        <translation>Nyújtás</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
@@ -1429,7 +1429,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../mainwindow.cpp" line="172"/>
         <location filename="../mainwindow.cpp" line="1856"/>
         <source>&amp;Move to Trash</source>
-        <translation>&amp;Áthelyezés kukába</translation>
+        <translation>Á&amp;thelyezés kukába</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>

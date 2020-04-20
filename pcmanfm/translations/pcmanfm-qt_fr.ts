@@ -1370,7 +1370,7 @@ Un espace est également réservé pour 3 lignes de texte.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="863"/>
         <source>Empty Trash</source>
-        <translation>Corbeille vide</translation>
+        <translation>Vider la corbeille</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="919"/>

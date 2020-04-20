@@ -839,7 +839,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
     <message>
         <location filename="../main-win.ui" line="755"/>
         <source>Close &amp;previous tabs</source>
-        <translation>Lukk  &amp;forrige fane</translation>
+        <translation>Lukk &amp;forrige fane</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
