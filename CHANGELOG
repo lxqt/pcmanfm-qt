@@ -1,3 +1,41 @@
+pcmanfm-qt-0.15.0 / 2020-04-21
+==============================
+  * Keep original extensions in bulk renaming.
+  * Open selected files by pressing Enter.
+  * Update desktop on setting wallpaper with commandline.
+  * Removed WM menu from desktop.
+  * Remove unneeded Qt version check.
+  * Clear filter text on pressing Esc.
+  * Enhanced wallpaper browsing dialog.
+  * Restore sorting on removing folder customization.
+  * Take all standard config paths into account.
+  * Added deletion time to Trash.
+  * Added option to transform jpeg wallpapers based on EXIF info.
+  * Set text and icon of delete action of Edit menu on startup.
+  * Respect full file name setting on desktop too.
+  * Added Alt+Enter in addition to Alt+Return for properties.
+  * Added menu item to toggle showing of thumbnails on the fly.
+  * More compact and tidy Desktop preferences dialog.
+  * Always show display names on Desktop.
+  * Respect view setting when showing selected file name on status bar.
+  * Follow DE click setting if single-click is not chosen.
+  * More stable position for sticky Desktop Trash.
+  * Added context menu item to create launchers on Desktop.
+  * An option to show folder context menu with Ctrl + right click.
+  * Do not show trash path in trashed file names.
+  * Use file launcher to open a folder in new tab to guarantee it is always opened correctly.
+  * Added "Hidden Last" to Sorting submenu.
+  * Multimonitor wallpaper support.
+  * Choose an appropriate name for root bookmarks (like SMB).
+  * Use "edit name" in bulk renaming.
+  * Use QString multi-arg.
+  * Disable Create New in File menu when not possible.
+  * Focus side-pane with `Ctrl+Esc`.
+  * Added Hidden Shortcuts dialog.
+  * Try to have a "current item" inside view as far as possible. This guarantees a correct behavior for keys like `End`, `PgDn` and `Right`.
+  * Select first item on filtering if nothing is selected.
+  * Added an option for single window mode.
+
 pcmanfm-qt-0.14.1 / 2019-02-24
 ==============================
 
