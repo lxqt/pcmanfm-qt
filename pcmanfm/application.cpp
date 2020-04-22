@@ -505,7 +505,7 @@ void Application::connectToServer() {
     dlg->show();
 }
 
-void Application::launchFiles(QString cwd, QStringList paths, bool /*inNewWindow*/) {
+void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) {
     Fm::FilePathList pathList;
     Fm::FilePath cwd_path;
     QStringList::iterator it;
@@ -530,7 +530,26 @@ void Application::launchFiles(QString cwd, QStringList paths, bool /*inNewWindow
        pathList.push_back(std::move(path));
     }
 
-    Launcher(nullptr).launchPaths(nullptr, pathList);
+    if(!inNewWindow && settings_.singleWindowMode()) {
+        MainWindow* window = MainWindow::lastActive();
+        // if there is no last active window, find the last created window
+        if(window == nullptr) {
+            QWidgetList windows = topLevelWidgets();
+            for(int i = 0; i < windows.size(); ++i) {
+                auto win = windows.at(windows.size() - 1 - i);
+                if(win->inherits("PCManFM::MainWindow")) {
+                    window = static_cast<MainWindow*>(win);
+                    break;
+                }
+            }
+        }
+        auto launcher = Launcher(window);
+        launcher.openInNewTab();
+        launcher.launchPaths(nullptr, pathList);
+    }
+    else {
+        Launcher(nullptr).launchPaths(nullptr, pathList);
+    }
 }
 
 void Application::openFolders(Fm::FileInfoList files) {

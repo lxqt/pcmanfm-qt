@@ -21,6 +21,7 @@
 #define FM_MAIN_WINDOW_H
 
 #include "ui_main-win.h"
+#include <QPointer>
 #include <QMainWindow>
 #include <QListView>
 #include <QSortFilterProxyModel>
@@ -268,7 +269,7 @@ private:
     // not from another window. So, we get the mode at the start and keep it.
     bool splitView_;
 
-    static MainWindow* lastActive_;
+    static QPointer<MainWindow> lastActive_;
 };
 
 }

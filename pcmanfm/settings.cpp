@@ -55,6 +55,7 @@ Settings::Settings():
     supportTrash_(Fm::uriExists("trash:///")), // check if trash:/// is supported
     fallbackIconThemeName_(),
     useFallbackIconTheme_(QIcon::themeName().isEmpty() || QIcon::themeName() == QLatin1String("hicolor")),
+    singleWindowMode_(false),
     bookmarkOpenMethod_(OpenInCurrentTab),
     suCommand_(),
     terminal_(),
@@ -212,6 +213,7 @@ bool Settings::loadFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Behavior"));
+    singleWindowMode_ = settings.value(QStringLiteral("SingleWindowMode"), false).toBool();
     bookmarkOpenMethod_ = bookmarkOpenMethodFromString(settings.value(QStringLiteral("BookmarkOpenMethod")).toString());
     // settings for use with libfm
     useTrash_ = settings.value(QStringLiteral("UseTrash"), true).toBool();
@@ -360,6 +362,7 @@ bool Settings::saveFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Behavior"));
+    settings.setValue(QStringLiteral("SingleWindowMode"), singleWindowMode_);
     settings.setValue(QStringLiteral("BookmarkOpenMethod"), QString::fromUtf8(bookmarkOpenMethodToString(bookmarkOpenMethod_)));
     // settings for use with libfm
     settings.setValue(QStringLiteral("UseTrash"), useTrash_);

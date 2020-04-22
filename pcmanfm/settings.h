@@ -175,6 +175,14 @@ public:
         fallbackIconThemeName_ = iconThemeName;
     }
 
+    bool singleWindowMode() const {
+        return singleWindowMode_;
+    }
+
+    void setSingleWindowMode(bool singleWindowMode) {
+        singleWindowMode_ = singleWindowMode;
+    }
+
     OpenDirTargetType bookmarkOpenMethod() {
         return bookmarkOpenMethod_;
     }
@@ -986,6 +994,7 @@ private:
     QString fallbackIconThemeName_;
     bool useFallbackIconTheme_;
 
+    bool singleWindowMode_;
     OpenDirTargetType bookmarkOpenMethod_;
     QString suCommand_;
     QString terminal_;

@@ -62,6 +62,7 @@ protected:
     virtual void prepareFolderMenu(Fm::FolderMenu* menu);
 
 private:
+    void launchFiles(Fm::FileInfoList files, bool inNewTabs = false);
 
 };
 
