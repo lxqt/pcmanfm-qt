@@ -2,7 +2,7 @@
 IconThemeName=elementary
 SuCommand=lxsudo dbus-run-session -- %s
 TerminalCommand=
-Archiver=file-roller
+Archiver=lxqt-archiver
 SIUnit=false
 TerminalDirCommand=xterm
 TerminalExecCommand=xterm -e %s
