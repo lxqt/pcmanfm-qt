@@ -509,7 +509,14 @@ void TabPage::onFolderUnmount() {
     // because unmounting might be done from places view, in which case,
     // the mount operation is a child of the places view and should be
     // finished before doing anything else.
-    freeFolder();
+    if(static_cast<Application*>(qApp)->settings().closeOnUnmount()) {
+        freeFolder();
+    }
+    else if (folder_) {
+        // the folder shouldn't be freed here because the dir will be changed by
+        // the slot of MainWindow but it should be disconnected from all signals
+        disconnect(folder_.get(), nullptr, this, nullptr);
+    }
     Q_EMIT folderUnmounted();
 }
 
