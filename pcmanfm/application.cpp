@@ -684,7 +684,40 @@ void Application::editBookmarks() {
 }
 
 void Application::initVolumeManager() {
+    // WARNING: If the user tries to mount a volume before auto-mounting is started —
+    // and that is especially possible with an encrypted volume — a complete freeze might
+    // happen because MountOperation::wait() uses a local QEventLoop. Therefore, we need
+    // to start auto-mounting only after all probable GUI mount operations are finished.
+    QList<Fm::MountOperation*> ops;
+    const auto windows = topLevelWidgets();
+    for(const auto& win : windows) {
+        if(win->inherits("PCManFM::MainWindow")) {
+            MainWindow* mainWindow = static_cast<MainWindow*>(win);
+            ops << mainWindow->pendingMountOperations();
+        }
+    }
+    if(ops.isEmpty()) { // no pending mount operation
+        reallyInitVolumeManager();
+        return;
+    }
+    for(const Fm::MountOperation* op : ops) {
+        connect(op, &QObject::destroyed, this, [this] {
+            const auto windows = topLevelWidgets();
+            for(const auto& win : windows) {
+                if(win->inherits("PCManFM::MainWindow")) {
+                    MainWindow* mainWindow = static_cast<MainWindow*>(win);
+                    if(!mainWindow->pendingMountOperations().isEmpty()) {
+                        return;
+                    }
+                }
+            }
+            // now, there is no pending mount operation
+            reallyInitVolumeManager();
+        });
+    }
+}
 
+void Application::reallyInitVolumeManager() {
     g_signal_connect(volumeMonitor_, "volume-added", G_CALLBACK(onVolumeAdded), this);
 
     if(settings_.mountOnStartup()) {
