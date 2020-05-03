@@ -149,6 +149,10 @@ TabPage::TabPage(QWidget* parent):
     folderView_->setModel(proxyModel_);
     verticalLayout->addWidget(folderView_);
 
+    if(settings.noItemTooltip()) {
+        folderView_->childView()->viewport()->installEventFilter(this);
+    }
+
     // filter-bar and its settings
     filterBar_ = new FilterBar();
     verticalLayout->addWidget(filterBar_);
@@ -212,10 +216,13 @@ void TabPage::showFilterBar() {
 
 bool TabPage::eventFilter(QObject* watched, QEvent* event) {
     // when a text is typed inside the view, type it inside the filter-bar
-    if(filterBar_ && watched == folderView_->childView() &&  event->type() == QEvent::KeyPress) {
+    if(filterBar_ && watched == folderView_->childView() && event->type() == QEvent::KeyPress) {
         if(QKeyEvent* ke = static_cast<QKeyEvent*>(event)) {
             filterBar_->keyPressed(ke);
         }
+    }
+    else if (watched == folderView_->childView()->viewport() && event->type() == QEvent::ToolTip) {
+        return true;
     }
     return QWidget::eventFilter(watched, event);
 }
@@ -782,6 +789,13 @@ void TabPage::up() {
 
 void TabPage::updateFromSettings(Settings& settings) {
     folderView_->updateFromSettings(settings);
+    if(settings.noItemTooltip()) {
+        folderView_->childView()->viewport()->removeEventFilter(this);
+        folderView_->childView()->viewport()->installEventFilter(this);
+    }
+    else {
+        folderView_->childView()->viewport()->removeEventFilter(this);
+    }
 }
 
 void TabPage::setViewMode(Fm::FolderView::ViewMode mode) {
@@ -801,6 +815,10 @@ void TabPage::setViewMode(Fm::FolderView::ViewMode mode) {
         if(!settings.showFilter()) {
             folderView_->childView()->removeEventFilter(this);
             folderView_->childView()->installEventFilter(this);
+        }
+        if(settings.noItemTooltip()) {
+            folderView_->childView()->viewport()->removeEventFilter(this);
+            folderView_->childView()->viewport()->installEventFilter(this);
         }
         onSelChanged();
     }
