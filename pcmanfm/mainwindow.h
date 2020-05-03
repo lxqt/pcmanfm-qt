@@ -35,6 +35,7 @@
 #include "tabbar.h"
 #include <libfm-qt/core/filepath.h>
 #include <libfm-qt/core/bookmarks.h>
+#include <libfm-qt/mountoperation.h>
 
 namespace Fm {
 class PathEdit;
@@ -101,6 +102,8 @@ public:
     static MainWindow* lastActive() {
         return lastActive_;
     }
+
+    QList<Fm::MountOperation*> pendingMountOperations() const;
 
 protected Q_SLOTS:
 
