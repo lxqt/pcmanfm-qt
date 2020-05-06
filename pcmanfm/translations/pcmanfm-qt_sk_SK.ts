@@ -409,89 +409,256 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         <translation>Transformovať obrázok na základe dát EXIF</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="357"/>
+        <location filename="../desktop-preferences.ui" line="337"/>
+        <source>Individual wallpaper for each monitor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="364"/>
         <source>Slide Show</source>
         <translation>Prezentovať</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="363"/>
+        <location filename="../desktop-preferences.ui" line="370"/>
         <source>Enable Slide Show</source>
         <translation>Meniť obrázky na pozadí</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="375"/>
+        <location filename="../desktop-preferences.ui" line="382"/>
         <source>Wallpaper image folder:</source>
         <translation>Zložka obrázku na pozadí:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="382"/>
+        <location filename="../desktop-preferences.ui" line="389"/>
         <source>Browse</source>
         <translation>Prechádzať</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="389"/>
+        <location filename="../desktop-preferences.ui" line="396"/>
         <source> hour(s)</source>
         <translation> .hodin</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="399"/>
+        <location filename="../desktop-preferences.ui" line="406"/>
         <source>and</source>
         <translation>a</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="412"/>
+        <location filename="../desktop-preferences.ui" line="419"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>Interval kratší ako 5 minúť bude ignorovaný</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="415"/>
+        <location filename="../desktop-preferences.ui" line="422"/>
         <source>Interval:</source>
         <translation>Interval:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="422"/>
+        <location filename="../desktop-preferences.ui" line="429"/>
         <source> minute(s)</source>
         <translation> .minúty</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="448"/>
+        <location filename="../desktop-preferences.ui" line="455"/>
         <source>Wallpaper folder</source>
         <translation>Zložka s obrázkom na plochu</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="471"/>
+        <location filename="../desktop-preferences.ui" line="478"/>
         <source>Randomize the slide show</source>
         <translation>Náhodné poradie, prezentácia</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="504"/>
+        <location filename="../desktop-preferences.ui" line="511"/>
         <source>Visible Shortcuts</source>
         <translation>Viditeľné skratky</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="510"/>
+        <location filename="../desktop-preferences.ui" line="517"/>
         <source>Home</source>
         <translation>Domovská zložka</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="521"/>
+        <location filename="../desktop-preferences.ui" line="528"/>
         <source>Trash</source>
         <translation>Kôš</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="532"/>
+        <location filename="../desktop-preferences.ui" line="539"/>
         <source>Computer</source>
         <translation>Môj počítač</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="543"/>
+        <location filename="../desktop-preferences.ui" line="550"/>
         <source>Network</source>
         <translation>Sieť</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="498"/>
+        <location filename="../desktop-preferences.ui" line="505"/>
         <source>Advanced</source>
         <translation>Pokročilé</translation>
+    </message>
+</context>
+<context>
+    <name>HiddenShortcutsDialog</name>
+    <message>
+        <location filename="../shortcuts.ui" line="14"/>
+        <source>Hidden Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="21"/>
+        <source>Shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="26"/>
+        <source>Action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="31"/>
+        <source>Esc</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="34"/>
+        <source>Focus view, clear filter bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="39"/>
+        <source>Ctrl+Esc</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="42"/>
+        <source>Focus side-pane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="47"/>
+        <source>Ctrl+L</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="50"/>
+        <location filename="../shortcuts.ui" line="58"/>
+        <source>Focus path entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="55"/>
+        <source>Alt+D</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="63"/>
+        <source>Ctrl+Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="66"/>
+        <location filename="../shortcuts.ui" line="82"/>
+        <source>Next tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="71"/>
+        <source>Ctrl+Shift+Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="74"/>
+        <location filename="../shortcuts.ui" line="90"/>
+        <source>Previous tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="79"/>
+        <source>Ctrl+PageDown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="87"/>
+        <source>Ctrl+PageUp</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="95"/>
+        <source>Ctrl+Number</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="98"/>
+        <location filename="../shortcuts.ui" line="106"/>
+        <source>Jump to tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="103"/>
+        <source>Alt+Number</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="111"/>
+        <source>Backspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="114"/>
+        <source>Go up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="119"/>
+        <source>Ctrl+F</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="122"/>
+        <source>Search dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="127"/>
+        <source>Shift+Insert</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="130"/>
+        <source>Paste into transient filter bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="135"/>
+        <source>Drag+Shift</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="138"/>
+        <source>Move file on dropping</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="143"/>
+        <source>Drag+Ctrl</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="146"/>
+        <source>Copy file on dropping</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="151"/>
+        <source>Drag+Shift+Ctrl</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../shortcuts.ui" line="154"/>
+        <source>Make a symlink on dropping</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -502,553 +669,573 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         <translation>Správca súborov</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="130"/>
+        <location filename="../main-win.ui" line="132"/>
         <source>&amp;Toolbars</source>
         <translation>Pruh nás&amp;trojov</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="137"/>
+        <location filename="../main-win.ui" line="139"/>
         <source>Path &amp;Bar</source>
         <translation>&amp;Pruh popisu umiestnenia</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="144"/>
+        <location filename="../main-win.ui" line="146"/>
         <source>&amp;Filtering</source>
         <translation>&amp;Filtrovanie</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="262"/>
+        <location filename="../main-win.ui" line="265"/>
         <source>Go &amp;Up</source>
         <translation>Hor&amp;e</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="265"/>
+        <location filename="../main-win.ui" line="268"/>
         <source>Go Up</source>
         <translation>Hore</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="268"/>
+        <location filename="../main-win.ui" line="271"/>
         <source>Alt+Up</source>
         <translation>Alt + šípka hore</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="277"/>
+        <location filename="../main-win.ui" line="280"/>
         <source>&amp;Home</source>
         <translation>&amp;Domov</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="280"/>
+        <location filename="../main-win.ui" line="283"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="289"/>
+        <location filename="../main-win.ui" line="292"/>
         <source>&amp;Reload</source>
         <translation>&amp;Znovu načítať</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="292"/>
+        <location filename="../main-win.ui" line="295"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="301"/>
+        <location filename="../main-win.ui" line="304"/>
         <source>Go</source>
         <translation>Ísť na</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="310"/>
+        <location filename="../main-win.ui" line="313"/>
         <source>Quit</source>
         <translation>Ukončiť</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="319"/>
+        <location filename="../main-win.ui" line="322"/>
         <source>&amp;About</source>
         <translation>O &amp;aplikácii</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="328"/>
+        <location filename="../main-win.ui" line="331"/>
         <source>&amp;New Window</source>
         <translation>&amp;Nové okno</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="331"/>
+        <location filename="../main-win.ui" line="334"/>
         <source>New Window</source>
         <translation>Nové okno</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="334"/>
+        <location filename="../main-win.ui" line="337"/>
         <source>Ctrl+N</source>
         <translation>Strg+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="342"/>
+        <location filename="../main-win.ui" line="345"/>
         <source>Show &amp;Hidden</source>
         <translation>Zobraziť &amp;skryté</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="345"/>
+        <location filename="../main-win.ui" line="348"/>
         <source>Ctrl+H</source>
         <translation>Strg+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="354"/>
+        <location filename="../main-win.ui" line="357"/>
         <source>&amp;Computer</source>
         <translation>P&amp;očítač</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="363"/>
+        <location filename="../main-win.ui" line="366"/>
         <source>&amp;Trash</source>
         <translation>&amp;Kôš</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="368"/>
+        <location filename="../main-win.ui" line="371"/>
         <source>&amp;Network</source>
         <translation>&amp;Sieť</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="377"/>
+        <location filename="../main-win.ui" line="380"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Plocha</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="386"/>
+        <location filename="../main-win.ui" line="389"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Pridať do záložiek</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="391"/>
+        <location filename="../main-win.ui" line="394"/>
         <source>&amp;Applications</source>
         <translation>&amp;Aplikácie</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="396"/>
+        <location filename="../main-win.ui" line="399"/>
         <source>Reload</source>
         <translation>Znovu načítať</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="404"/>
+        <location filename="../main-win.ui" line="407"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Ikony</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="412"/>
+        <location filename="../main-win.ui" line="415"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Kompaktné</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="420"/>
+        <location filename="../main-win.ui" line="423"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Zoznam s podrobnosťami</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="428"/>
+        <location filename="../main-win.ui" line="431"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Náhľad</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="437"/>
+        <location filename="../main-win.ui" line="440"/>
         <source>Cu&amp;t</source>
         <translation>&amp;Vybrať</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="440"/>
+        <location filename="../main-win.ui" line="443"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="449"/>
+        <location filename="../main-win.ui" line="452"/>
         <source>&amp;Copy</source>
         <translation>&amp;Skopírovať</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="452"/>
+        <location filename="../main-win.ui" line="455"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="461"/>
+        <location filename="../main-win.ui" line="464"/>
         <source>&amp;Paste</source>
         <translation>&amp;Vložiť</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="464"/>
+        <location filename="../main-win.ui" line="467"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="469"/>
+        <location filename="../main-win.ui" line="472"/>
         <source>Select &amp;All</source>
         <translation>&amp;Vybrať všetko</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="472"/>
+        <location filename="../main-win.ui" line="475"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="477"/>
+        <location filename="../main-win.ui" line="480"/>
         <source>Pr&amp;eferences</source>
         <translation>&amp;Predvoľby</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="485"/>
+        <location filename="../main-win.ui" line="488"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Vzostupne</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="493"/>
+        <location filename="../main-win.ui" line="496"/>
         <source>&amp;Descending</source>
         <translation>&amp;Zostupne</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="501"/>
+        <location filename="../main-win.ui" line="504"/>
         <source>&amp;By File Name</source>
         <translation>&amp;Podľa názvu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="509"/>
+        <location filename="../main-win.ui" line="512"/>
         <source>By &amp;Modification Time</source>
         <translation>&amp;Podľa okamžiku zmeny</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="517"/>
+        <location filename="../main-win.ui" line="520"/>
         <source>By Deletio&amp;n Time</source>
         <translation>&amp;Podľa okamihu zmazania</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="525"/>
+        <location filename="../main-win.ui" line="528"/>
         <source>By File &amp;Type</source>
         <translation>&amp;Podľa typu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="533"/>
+        <location filename="../main-win.ui" line="536"/>
         <source>By &amp;Owner</source>
         <translation>&amp;Podľa vlastníka</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="541"/>
+        <location filename="../main-win.ui" line="544"/>
         <source>By &amp;Group</source>
         <translation>&amp;Podľa skupiny</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="549"/>
+        <location filename="../main-win.ui" line="552"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Zložka ako prvá</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="557"/>
+        <location filename="../main-win.ui" line="560"/>
+        <source>&amp;Hidden Last</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="568"/>
         <source>&amp;Preserve sorting for this folder</source>
         <translation>&amp;Zachovať usporiadanie pre túto zložku</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="656"/>
+        <location filename="../main-win.ui" line="667"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;Rozlišovať malé/veľké písmena</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="664"/>
+        <location filename="../main-win.ui" line="675"/>
         <source>By File &amp;Size</source>
         <translation>&amp;Podľa veľkosti</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="669"/>
+        <location filename="../main-win.ui" line="680"/>
         <source>&amp;Close Window</source>
         <translation>&amp;Zavrieť okno</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="672"/>
+        <location filename="../main-win.ui" line="683"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="704"/>
+        <location filename="../main-win.ui" line="715"/>
         <source>&amp;Folder</source>
         <translation>&amp;Zložka</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="716"/>
+        <location filename="../main-win.ui" line="727"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Prázdny súbor</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="840"/>
+        <location filename="../main-win.ui" line="851"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation>&amp;Zobraziť/skryť lištu filtrovania</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="843"/>
+        <location filename="../main-win.ui" line="854"/>
         <source>Show Filter Bar</source>
         <translation>Zobraziť lištu filtrovania</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="846"/>
+        <location filename="../main-win.ui" line="857"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="854"/>
+        <location filename="../main-win.ui" line="865"/>
         <source>S&amp;plit View</source>
         <translation>&amp;Zdieľať pohľad</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="857"/>
+        <location filename="../main-win.ui" line="868"/>
         <source>Split View</source>
         <translation>Rozdelené zobrazenie</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="860"/>
+        <location filename="../main-win.ui" line="871"/>
         <source>F6</source>
         <translation>F6</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="865"/>
+        <location filename="../main-win.ui" line="876"/>
         <source>&amp;Copy Full Path</source>
         <translation>&amp;Skopírovať celý popis umiestnenia</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="868"/>
+        <location filename="../main-win.ui" line="879"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="879"/>
+        <location filename="../main-win.ui" line="890"/>
         <source>Show Thumb&amp;nails</source>
         <translation>&amp;Zobraziť náhľady</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="882"/>
+        <location filename="../main-win.ui" line="893"/>
         <source>Show Thumbnails</source>
         <translation>Zobraziť náhľady</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="738"/>
+        <location filename="../main-win.ui" line="901"/>
+        <source>S&amp;ide Pane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="904"/>
+        <source>F9</source>
+        <translation type="unfinished">F9</translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="909"/>
+        <source>Hidden &amp;Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="749"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="743"/>
+        <location filename="../main-win.ui" line="754"/>
         <source>&amp;Clear All Filters</source>
         <translation>&amp;Zrušiť všetky filtre</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="746"/>
+        <location filename="../main-win.ui" line="757"/>
         <source>Ctrl+Shift+K</source>
         <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="755"/>
+        <location filename="../main-win.ui" line="766"/>
         <source>Close &amp;previous tabs</source>
         <translation>&amp;Zatvoriť predchádzajúce karty</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="764"/>
+        <location filename="../main-win.ui" line="775"/>
         <source>Close &amp;next tabs</source>
         <translation>&amp;Zatvoriť následujúce karty</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="803"/>
+        <location filename="../main-win.ui" line="814"/>
         <source>&amp;Preserve Settings for This Folder</source>
         <translation>&amp;Zachovať nastavenie pre túto zložku</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="808"/>
+        <location filename="../main-win.ui" line="819"/>
         <source>Connect to &amp;Server</source>
         <translation>&amp;Pripojiť k serveru</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="816"/>
+        <location filename="../main-win.ui" line="827"/>
         <source>&amp;Location</source>
         <translation>&amp;Umiestnenie</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="824"/>
+        <location filename="../main-win.ui" line="835"/>
         <source>&amp;Path Buttons</source>
         <translation>&amp;Tlačítka popisu umiestnení</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="829"/>
+        <location filename="../main-win.ui" line="840"/>
         <source>&amp;Bulk Rename</source>
         <translation>&amp;Hromadné premenovanie</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="832"/>
+        <location filename="../main-win.ui" line="843"/>
         <source>Bulk Rename</source>
         <translation>Hromadné premenovanie</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="835"/>
+        <location filename="../main-win.ui" line="846"/>
         <source>Ctrl+F2</source>
         <translation>Ctrl+F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="769"/>
+        <location filename="../main-win.ui" line="780"/>
         <source>Close &amp;other tabs</source>
         <translation>&amp;Zatvoriť ostatné karty</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="735"/>
+        <location filename="../main-win.ui" line="746"/>
         <source>Permanent &amp;filter bar</source>
         <translation>Trvalé&amp;lišta filtrovania</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="777"/>
+        <location filename="../main-win.ui" line="788"/>
         <source>&amp;Menu bar</source>
         <translation>&amp;Panel ponúk</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="780"/>
+        <location filename="../main-win.ui" line="791"/>
         <source>Menu bar</source>
         <translation>Panel ponúk</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="783"/>
+        <location filename="../main-win.ui" line="794"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="792"/>
-        <location filename="../main-win.ui" line="795"/>
+        <location filename="../main-win.ui" line="803"/>
+        <location filename="../main-win.ui" line="806"/>
         <source>Menu</source>
         <translation>Ponuka</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="566"/>
+        <location filename="../main-win.ui" line="577"/>
         <source>New &amp;Tab</source>
         <translation>&amp;Nová karta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="569"/>
+        <location filename="../main-win.ui" line="580"/>
         <source>New Tab</source>
         <translation>Nová karta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="572"/>
+        <location filename="../main-win.ui" line="583"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="581"/>
+        <location filename="../main-win.ui" line="592"/>
         <source>Go &amp;Back</source>
         <translation>&amp;Späť</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="584"/>
+        <location filename="../main-win.ui" line="595"/>
         <source>Go Back</source>
         <translation>Späť</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="587"/>
+        <location filename="../main-win.ui" line="598"/>
         <source>Alt+Left</source>
         <translation>Alt + šípka vľavo</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="596"/>
+        <location filename="../main-win.ui" line="607"/>
         <source>Go &amp;Forward</source>
         <translation>&amp;Dopredu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="599"/>
+        <location filename="../main-win.ui" line="610"/>
         <source>Go Forward</source>
         <translation>Dopredu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="602"/>
+        <location filename="../main-win.ui" line="613"/>
         <source>Alt+Right</source>
         <translation>Alt + šípka vpravo</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="618"/>
         <source>&amp;Invert Selection</source>
         <translation>&amp;Prevrátiť výber</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="616"/>
+        <location filename="../main-win.ui" line="627"/>
         <source>&amp;Delete</source>
         <translation>&amp;Zmazať</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="619"/>
+        <location filename="../main-win.ui" line="630"/>
         <source>Del</source>
         <translation>Del</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="624"/>
+        <location filename="../main-win.ui" line="635"/>
         <source>&amp;Rename</source>
         <translation>&amp;Premenovať</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="627"/>
+        <location filename="../main-win.ui" line="638"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="632"/>
+        <location filename="../main-win.ui" line="643"/>
         <source>C&amp;lose Tab</source>
         <translation>&amp;Zavrieť kartu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="635"/>
+        <location filename="../main-win.ui" line="646"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="640"/>
+        <location filename="../main-win.ui" line="651"/>
         <source>File &amp;Properties</source>
         <translation>&amp;Vlastnosti súboru</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="643"/>
+        <location filename="../main-win.ui" line="654"/>
         <source>Alt+Return</source>
         <translation>Alt+Return</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="648"/>
+        <location filename="../main-win.ui" line="659"/>
         <source>&amp;Folder Properties</source>
         <translation>@Vlastnosti zložky</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="677"/>
+        <location filename="../main-win.ui" line="688"/>
         <source>Edit Bookmarks</source>
         <translation>Upraviť záložky</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="682"/>
+        <location filename="../main-win.ui" line="693"/>
         <source>Open &amp;Terminal</source>
         <translation>&amp;Otvoriť terminál</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="685"/>
+        <location filename="../main-win.ui" line="696"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="690"/>
+        <location filename="../main-win.ui" line="701"/>
         <source>Open as &amp;Root</source>
         <translation>&amp;Otvoriť ako správca systému</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="695"/>
+        <location filename="../main-win.ui" line="706"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Upraviť záložky</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="707"/>
+        <location filename="../main-win.ui" line="718"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="719"/>
+        <location filename="../main-win.ui" line="730"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="724"/>
+        <location filename="../main-win.ui" line="735"/>
         <source>&amp;Find Files</source>
         <translation>&amp;Nájsť súbory</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="727"/>
+        <location filename="../main-win.ui" line="738"/>
         <source>F3</source>
         <translation>F3</translation>
     </message>
@@ -1068,38 +1255,38 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="98"/>
-        <location filename="../main-win.ui" line="120"/>
+        <location filename="../main-win.ui" line="99"/>
+        <location filename="../main-win.ui" line="122"/>
         <source>&amp;View</source>
         <translation>&amp;Zobraziť</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="102"/>
+        <location filename="../main-win.ui" line="103"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Zoradiť</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="165"/>
+        <location filename="../main-win.ui" line="168"/>
         <source>&amp;Edit</source>
         <translation>&amp;Upraviť</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="183"/>
+        <location filename="../main-win.ui" line="186"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Záložky</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="190"/>
+        <location filename="../main-win.ui" line="193"/>
         <source>&amp;Go</source>
         <translation>&amp;Ísť na</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="207"/>
+        <location filename="../main-win.ui" line="210"/>
         <source>&amp;Tool</source>
         <translation>&amp;Nástroje</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="228"/>
+        <location filename="../main-win.ui" line="231"/>
         <source>Main Toolbar</source>
         <translation>Hlavný panel nástrojov</translation>
     </message>
@@ -1193,13 +1380,13 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="545"/>
-        <location filename="../application.cpp" line="550"/>
+        <location filename="../application.cpp" line="564"/>
+        <location filename="../application.cpp" line="569"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="550"/>
+        <location filename="../application.cpp" line="569"/>
         <source>Terminal emulator is not set.</source>
         <translation>Emulátor terminálu nie je nastavený.</translation>
     </message>
@@ -1316,25 +1503,30 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         <translation>Zväčšiť obrázok tak, aby vyplnil obrazovku</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="231"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="248"/>
         <source>Select Wallpaper</source>
         <translation>Vybrať tapetu plochy</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="235"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="252"/>
         <source>Image Files</source>
         <translation>Obrázkové súbory</translation>
+    </message>
+    <message>
+        <location filename="../desktoppreferencesdialog.cpp" line="294"/>
+        <source>Select Wallpaper Folder</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="297"/>
+        <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (One item)</source>
         <translation>Kôš (1 položka)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="300"/>
+        <location filename="../desktopwindow.cpp" line="299"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Kôš (%Ln položka)</numerusform>
@@ -1343,48 +1535,48 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="304"/>
+        <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (Empty)</source>
         <translation>Koš (prázdny)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="332"/>
+        <location filename="../desktopwindow.cpp" line="331"/>
         <source>Computer</source>
         <translation>Môj počítač</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="346"/>
+        <location filename="../desktopwindow.cpp" line="345"/>
         <source>Network</source>
         <translation>Sieť</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="851"/>
+        <location filename="../desktopwindow.cpp" line="924"/>
         <source>Open</source>
         <translation>Otvoriť</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="856"/>
-        <location filename="../desktopwindow.cpp" line="893"/>
+        <location filename="../desktopwindow.cpp" line="929"/>
+        <location filename="../desktopwindow.cpp" line="966"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Pripnúť v aktuálnej polohe</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="863"/>
+        <location filename="../desktopwindow.cpp" line="936"/>
         <source>Empty Trash</source>
         <translation>Vyprázdniť kôš</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="919"/>
+        <location filename="../desktopwindow.cpp" line="992"/>
         <source>Hide Desktop Items</source>
         <translation>Skryť zástupcu</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="925"/>
+        <location filename="../desktopwindow.cpp" line="998"/>
         <source>Create Launcher</source>
         <translation>Vytvoriť spúšťač</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="928"/>
+        <location filename="../desktopwindow.cpp" line="1001"/>
         <source>Desktop Preferences</source>
         <translation>Nastavenia pracovnej plochy</translation>
     </message>
@@ -1413,40 +1605,40 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         <translation>Správcovská (root) inštancia</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="675"/>
+        <location filename="../mainwindow.cpp" line="683"/>
         <source>Hide menu bar</source>
         <translation>Skryť panel ponuky</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="676"/>
+        <location filename="../mainwindow.cpp" line="684"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Týmto bude panel ponuky úplne skrytý. Opätovné ho zobrazíte kombináciou klávesnice Ctrl+M.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1007"/>
+        <location filename="../mainwindow.cpp" line="1030"/>
         <source>Version: %1</source>
         <translation>Verzia: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1856"/>
+        <location filename="../mainwindow.cpp" line="1897"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Presunúť do koša</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1856"/>
+        <location filename="../mainwindow.cpp" line="1897"/>
         <source>&amp;Delete</source>
         <translation>&amp;Zmazať</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1913"/>
-        <location filename="../mainwindow.cpp" line="1921"/>
+        <location filename="../mainwindow.cpp" line="1954"/>
+        <location filename="../mainwindow.cpp" line="1962"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1921"/>
+        <location filename="../mainwindow.cpp" line="1962"/>
         <source>Switch user command is not set.</source>
         <translation>Príkaz na prepnutie užívateľa nie je nastavený.</translation>
     </message>
@@ -1454,22 +1646,22 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="196"/>
+        <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Icon View</source>
         <translation>Zobrazenie s ikonami</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="197"/>
+        <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Compact View</source>
         <translation>Kompaktné zobrazenie</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="198"/>
+        <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Thumbnail View</source>
         <translation>Zobrazenie s náhľadom</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="199"/>
+        <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Detailed List View</source>
         <translation>Zobrazenie zoznamu s podrobnosťami</translation>
     </message>
@@ -1477,17 +1669,17 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="420"/>
+        <location filename="../tabpage.cpp" line="455"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="429"/>
+        <location filename="../tabpage.cpp" line="464"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Voľné miesto: %1 (celkovo: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="446"/>
+        <location filename="../tabpage.cpp" line="481"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n položka</numerusform>
@@ -1496,7 +1688,7 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="448"/>
+        <location filename="../tabpage.cpp" line="483"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n skrytá)</numerusform>
@@ -1505,14 +1697,14 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="453"/>
-        <location filename="../tabpage.cpp" line="639"/>
-        <location filename="../tabpage.cpp" line="655"/>
+        <location filename="../tabpage.cpp" line="488"/>
+        <location filename="../tabpage.cpp" line="686"/>
+        <location filename="../tabpage.cpp" line="702"/>
         <source>Link to</source>
         <translation>Odkaz na</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="669"/>
+        <location filename="../tabpage.cpp" line="716"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>vybraná %n položka</numerusform>
@@ -1524,27 +1716,31 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
 <context>
     <name>PCManFM::View</name>
     <message>
-        <location filename="../view.cpp" line="56"/>
+        <location filename="../view.cpp" line="60"/>
         <source>Many files</source>
         <translation>Mnoho súborov</translation>
     </message>
-    <message>
-        <location filename="../view.cpp" line="57"/>
-        <source>Do you want to open these %1 file?</source>
-        <translation>Prajete si otvoriť tieto %1 súbory?</translation>
+    <message numerus="yes">
+        <location filename="../view.cpp" line="61"/>
+        <source>Do you want to open these %1 files?</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="122"/>
+        <location filename="../view.cpp" line="123"/>
         <source>Open in New T&amp;ab</source>
         <translation>&amp;Otvoriť na novej karte</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="126"/>
+        <location filename="../view.cpp" line="127"/>
         <source>Open in New Win&amp;dow</source>
         <translation>&amp;Otvoriť v novom okne</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="134"/>
+        <location filename="../view.cpp" line="135"/>
         <source>Open in Termina&amp;l</source>
         <translation>&amp;Otvoriť v terminále</translation>
     </message>
@@ -1568,7 +1764,7 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="551"/>
+        <location filename="../preferences.ui" line="575"/>
         <source>Thumbnail</source>
         <translation>Náhľad</translation>
     </message>
@@ -1583,67 +1779,67 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         <translation>Pokročilé</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="206"/>
+        <location filename="../preferences.ui" line="213"/>
         <source>Select newly created files</source>
         <translation>Vybrať novovytvorené súbory</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="233"/>
+        <location filename="../preferences.ui" line="250"/>
         <source>Icons</source>
         <translation>Ikony</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="265"/>
+        <location filename="../preferences.ui" line="282"/>
         <source>Size of big icons:</source>
         <translation>Veľkosť veľkých ikon:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="282"/>
+        <location filename="../preferences.ui" line="299"/>
         <source>Size of small icons:</source>
         <translation>Veľkosť malých ikôn:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="299"/>
+        <location filename="../preferences.ui" line="316"/>
         <source>Size of thumbnails:</source>
         <translation>Veľkosť náhľadov:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="313"/>
+        <location filename="../preferences.ui" line="330"/>
         <source>Size of side pane icons:</source>
         <translation>Veľkosť ikôn z bočného pohľadu:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="245"/>
+        <location filename="../preferences.ui" line="262"/>
         <source>Icon theme:</source>
         <translation>Vzhľad ikôn:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="469"/>
+        <location filename="../preferences.ui" line="493"/>
         <source>Window</source>
         <translation>Okno</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="482"/>
+        <location filename="../preferences.ui" line="506"/>
         <source>Always show the tab bar</source>
         <translation>Vždycky zobraziť panel s kartami</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="489"/>
+        <location filename="../preferences.ui" line="513"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Zobraziť na kartách tlačítko Zavrieť	</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="496"/>
+        <location filename="../preferences.ui" line="520"/>
         <source>Remember the size of the last closed window</source>
         <translation>Pamätať si rozmery naposledy zatvoreného okna</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="503"/>
+        <location filename="../preferences.ui" line="527"/>
         <source>Default width of new windows:</source>
         <translation>Východzia šírka nových okien:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="517"/>
+        <location filename="../preferences.ui" line="541"/>
         <source>Default height of new windows:</source>
         <translation>Východzia šírka nových okien:</translation>
     </message>
@@ -1673,27 +1869,27 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         <translation> s</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="162"/>
+        <location filename="../preferences.ui" line="169"/>
         <source>File Operations</source>
         <translation>Operácie so súbormi</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="168"/>
+        <location filename="../preferences.ui" line="175"/>
         <source>Confirm before deleting files</source>
         <translation>Vyžadovať potvrdenie pred zmazaním súboru</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="175"/>
+        <location filename="../preferences.ui" line="182"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation>Presunúť súbor do koša namiesto zmazania súboru na disku.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="584"/>
+        <location filename="../preferences.ui" line="608"/>
         <source>Show thumbnails of files</source>
         <translation>Zobraziť náhľady súborov</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="574"/>
+        <location filename="../preferences.ui" line="598"/>
         <source>Only show thumbnails for local files</source>
         <translation>Zobraziť náhľady iba pre súbory nachadzajúcich sa priamo v počítači</translation>
     </message>
@@ -1728,207 +1924,227 @@ Navyše je rezervované miesto pre 3 riadky textu.</translation>
         <translation>Otvoriť v novom okne</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="182"/>
+        <location filename="../preferences.ui" line="189"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
         <translation>Súbory na vymeniteľných médiach rovno mazať namiesto presúvania do koša</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="189"/>
+        <location filename="../preferences.ui" line="196"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
         <translation>Vyžadovať potvrdenie pred presunutím do koša</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="196"/>
-        <location filename="../preferences.ui" line="346"/>
-        <location filename="../preferences.ui" line="356"/>
+        <location filename="../preferences.ui" line="203"/>
+        <location filename="../preferences.ui" line="363"/>
+        <location filename="../preferences.ui" line="373"/>
         <source>Requires application restart to take effect completely</source>
         <translation>Aby sa zmena prejavila, je potrebné aplikáciu zatvoriť a spustiť znovu</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="199"/>
+        <location filename="../preferences.ui" line="206"/>
         <source>Launch executable files without prompt</source>
         <translation>Spúšťať spustiteľné súbory bez potvrdenia</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="262"/>
-        <location filename="../preferences.ui" line="272"/>
+        <location filename="../preferences.ui" line="279"/>
+        <location filename="../preferences.ui" line="289"/>
         <source>Used by Icon View</source>
         <translation>Využívané ikonovým zobrazením</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="279"/>
-        <location filename="../preferences.ui" line="289"/>
+        <location filename="../preferences.ui" line="296"/>
+        <location filename="../preferences.ui" line="306"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>Využívané v kompaktnom a podrobnom zobrazení</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="296"/>
-        <location filename="../preferences.ui" line="306"/>
+        <location filename="../preferences.ui" line="313"/>
+        <location filename="../preferences.ui" line="323"/>
         <source>Used by Thumbnail View</source>
         <translation>Využívané v zobrazení s náhľadmi</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="326"/>
+        <location filename="../preferences.ui" line="343"/>
         <source>User interface</source>
         <translation>Užívateľské rozhranie</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="339"/>
+        <location filename="../preferences.ui" line="356"/>
         <source>Treat backup files as hidden</source>
         <translation>Zaobchádzať so záložnými súbormi ako s tými skrytými</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="349"/>
-        <source>Always show full file names</source>
-        <translation>Vždy zobrazovať celé názvy súborov</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="359"/>
+        <location filename="../preferences.ui" line="376"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Tieňované zobrazenie ikôn skrytých súborov</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="382"/>
+        <location filename="../preferences.ui" line="406"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Minimálne okraje položky v zobrazení s ikonami:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="389"/>
+        <location filename="../preferences.ui" line="413"/>
         <source>3 px by default.</source>
         <translation>Štandardne sú 3 px.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="392"/>
         <location filename="../preferences.ui" line="416"/>
+        <location filename="../preferences.ui" line="440"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="405"/>
+        <location filename="../preferences.ui" line="429"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="412"/>
+        <location filename="../preferences.ui" line="436"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>Štandardne sú tri pixely. 
 Je vyhradené miesto pre tri riadky textu.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="429"/>
+        <location filename="../preferences.ui" line="453"/>
         <source>Lock</source>
         <translation>Uzamknúť</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="478"/>
+        <location filename="../preferences.ui" line="502"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Pokiaľ nie je zaškrtnuté, bude panel kariet zobrazený
 iba ak je viac ako jedna karta.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="710"/>
+        <location filename="../preferences.ui" line="734"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>Príklady:&lt;br&gt;Pre terminál: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Pre prepnutie užívateľa: &lt;i&gt;lxsudo %s&lt;/i&gt; alebo &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; je príkazový riadok, ktorý chcete vykonať v terminále alebo za pomoci su.&lt;br&gt; Dôležité: použite lxsudo, sudo samotné pokazí oprávnenie na súbore s nastaveniami.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="801"/>
+        <location filename="../preferences.ui" line="825"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Aby sa zmeny prejavili, je potrebné reštartovať aplikáciu.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="557"/>
+        <location filename="../preferences.ui" line="581"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Nevytvárať náhľady obrázkov presahujúcich túto veľkosť:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="564"/>
+        <location filename="../preferences.ui" line="159"/>
+        <source>Show folder context menu with Ctrl + right click</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="220"/>
+        <source>Open folders in new tabs as far as possible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="223"/>
+        <source>Single window mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="366"/>
+        <source>Always show real file names</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="383"/>
+        <source>Do not show file tooltips</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="588"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="581"/>
+        <location filename="../preferences.ui" line="605"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Vyžaduje ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="611"/>
+        <location filename="../preferences.ui" line="635"/>
         <source>Auto Mount</source>
         <translation>Automatické pripojenie</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="617"/>
+        <location filename="../preferences.ui" line="641"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Pri spúšťaní aplikácii pripojiť všetky zväzky, ktoré sú k dispozícii</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="624"/>
+        <location filename="../preferences.ui" line="648"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Pri vložení/pripojení vymeniteľného média ho automaticky pripojiť</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="631"/>
+        <location filename="../preferences.ui" line="655"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Pri vložení/pripojení vymeniteľného média zobraziť možnosti</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="641"/>
+        <location filename="../preferences.ui" line="665"/>
         <source>When removable medium unmounted:</source>
         <translation>Pri odpojení vymeniteľného média:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="647"/>
+        <location filename="../preferences.ui" line="671"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>&amp;Zavrieť kartu obsahujúcu vymeniteľné médium</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="654"/>
+        <location filename="../preferences.ui" line="678"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>&amp;Na príslušnej karte prepnúť do domovskej zložky</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="681"/>
+        <location filename="../preferences.ui" line="705"/>
         <source>Programs</source>
         <translation>Programy</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="690"/>
+        <location filename="../preferences.ui" line="714"/>
         <source>Terminal emulator:</source>
         <translation>Emulátor terminálu:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="697"/>
+        <location filename="../preferences.ui" line="721"/>
         <source>Switch &amp;user command:</source>
         <translation>&amp;Príkaz na prepnutie užívateľa:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="723"/>
+        <location filename="../preferences.ui" line="747"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>&amp;Integrácia správcu archívu:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="746"/>
+        <location filename="../preferences.ui" line="770"/>
         <source>Templates</source>
         <translation>Šablóny</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="752"/>
+        <location filename="../preferences.ui" line="776"/>
         <source>Show only user defined templates in menu</source>
         <translation>V ponuke zobraziť iba šablóny vytvorené užívateľom</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="759"/>
+        <location filename="../preferences.ui" line="783"/>
         <source>Show only one template for each MIME type</source>
         <translation>Zobraziť pre každý MIME typ iba jednu šablónu</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="766"/>
+        <location filename="../preferences.ui" line="790"/>
         <source>Run default application after creation from template</source>
         <translation>Po vytvorení zo šablóny spustiť menu aplikácii</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="332"/>
+        <location filename="../preferences.ui" line="349"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Používať SI desiatkové predpony namiesto IEC dvojkových</translation>
     </message>
@@ -1956,18 +2172,18 @@ iba ak je viac ako jedna karta.</translation>
         <translation>Premenovanie bolo zrušené.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="104"/>
-        <location filename="../bulkrename.cpp" line="107"/>
+        <location filename="../bulkrename.cpp" line="108"/>
+        <location filename="../bulkrename.cpp" line="111"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="104"/>
+        <location filename="../bulkrename.cpp" line="108"/>
         <source>No file could be renamed.</source>
         <translation>Nepodarilo sa pripojiť žiaden súbor.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="107"/>
+        <location filename="../bulkrename.cpp" line="111"/>
         <source>Some files could not be renamed.</source>
         <translation>Niektoré súbory sa nepodarilo pripojiť.</translation>
     </message>
