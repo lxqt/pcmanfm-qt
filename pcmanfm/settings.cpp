@@ -118,6 +118,10 @@ Settings::Settings():
     showThumbnails_(true),
     archiver_(),
     siUnit_(false),
+    backupAsHidden_(false),
+    showFullNames_(true),
+    shadowHidden_(true),
+    noItemTooltip_(false),
     placesHome_(true),
     placesDesktop_(true),
     placesApplications_(true),
@@ -289,6 +293,7 @@ bool Settings::loadFile(QString filePath) {
     setBackupAsHidden(settings.value(QStringLiteral("BackupAsHidden"), false).toBool());
     showFullNames_ = settings.value(QStringLiteral("ShowFullNames"), true).toBool();
     shadowHidden_ = settings.value(QStringLiteral("ShadowHidden"), true).toBool();
+    noItemTooltip_ = settings.value(QStringLiteral("NoItemTooltip"), false).toBool();
 
     // override config in libfm's FmConfig
     bigIconSize_ = toIconSize(settings.value(QStringLiteral("BigIconSize"), 48).toInt(), Big);
@@ -430,6 +435,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("BackupAsHidden"), backupAsHidden_);
     settings.setValue(QStringLiteral("ShowFullNames"), showFullNames_);
     settings.setValue(QStringLiteral("ShadowHidden"), shadowHidden_);
+    settings.setValue(QStringLiteral("NoItemTooltip"), noItemTooltip_);
 
     // override config in libfm's FmConfig
     settings.setValue(QStringLiteral("BigIconSize"), bigIconSize_);

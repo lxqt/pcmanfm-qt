@@ -872,6 +872,14 @@ public:
         shadowHidden_ = value;
     }
 
+    bool noItemTooltip() const {
+        return noItemTooltip_;
+    }
+
+    void setNoItemTooltip(bool noTooltip) {
+        noItemTooltip_ = noTooltip;
+    }
+
     bool onlyUserTemplates() const {
         return onlyUserTemplates_;
     }
@@ -1069,6 +1077,7 @@ private:
     bool backupAsHidden_;
     bool showFullNames_;
     bool shadowHidden_;
+    bool noItemTooltip_;
 
     bool placesHome_;
     bool placesDesktop_;
