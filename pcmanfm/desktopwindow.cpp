@@ -512,27 +512,29 @@ void DesktopWindow::setWallpaperRandomize(bool randomize) {
 
 QImage DesktopWindow::getWallpaperImage() const {
     QImage image(wallpaperFile_);
-    Settings& settings = static_cast<Application* >(qApp)->settings();
-    if(settings.transformWallpaper()
-       && (wallpaperFile_.endsWith(QLatin1String(".jpg"), Qt::CaseInsensitive)
-           || wallpaperFile_.endsWith(QLatin1String(".jpeg"), Qt::CaseInsensitive))) {
-        // auto-transform jpeg images based on their EXIF data
-        QImageReader reader(wallpaperFile_);
-        QImageIOHandler::Transformations tr = reader.transformation();
-        QMatrix m;
-        // mirroring
-        if(tr & QImageIOHandler::TransformationMirror) {
-            m.scale(-1, 1);
-        }
-        if(tr & QImageIOHandler::TransformationFlip) {
-            m.scale(1, -1);
-        }
-        // rotation
-        if(tr & QImageIOHandler::TransformationRotate90) {
-            m.rotate(90);
-        }
-        if(!m.isIdentity()) {
-            image = image.transformed(m);
+    if(!image.isNull()) {
+        Settings& settings = static_cast<Application* >(qApp)->settings();
+        if(settings.transformWallpaper()
+        && (wallpaperFile_.endsWith(QLatin1String(".jpg"), Qt::CaseInsensitive)
+            || wallpaperFile_.endsWith(QLatin1String(".jpeg"), Qt::CaseInsensitive))) {
+            // auto-transform jpeg images based on their EXIF data
+            QImageReader reader(wallpaperFile_);
+            QImageIOHandler::Transformations tr = reader.transformation();
+            QMatrix m;
+            // mirroring
+            if(tr & QImageIOHandler::TransformationMirror) {
+                m.scale(-1, 1);
+            }
+            if(tr & QImageIOHandler::TransformationFlip) {
+                m.scale(1, -1);
+            }
+            // rotation
+            if(tr & QImageIOHandler::TransformationRotate90) {
+                m.rotate(90);
+            }
+            if(!m.isIdentity()) {
+                image = image.transformed(m);
+            }
         }
     }
     return image;
@@ -624,7 +626,7 @@ void DesktopWindow::updateWallpaper() {
         bool perScreenWallpaper(screen != nullptr && screen->virtualSiblings().size() > 1 && settings.perScreenWallpaper());
         if(wallpaperMode_ == WallpaperTile) { // use the original size
             image = getWallpaperImage();
-            if (!image.isNull()) {
+            if(!image.isNull()) {
                 // Note: We can't use the QPainter::drawTiledPixmap(), because it doesn't tile
                 // correctly for background pixmaps bigger than the current screen size.
                 const QSize s = size();
@@ -644,11 +646,13 @@ void DesktopWindow::updateWallpaper() {
                 QPainter painter{&pixmap};
                 pixmap.fill(bgColor_);
                 image = getWallpaperImage();
-                QImage scaled;
-                const auto screens = screen->virtualSiblings();
-                for(const auto& scr : screens) {
-                    scaled = image.scaled(scr->size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
-                    painter.drawImage(scr->geometry().x(), scr->geometry().y(), scaled);
+                if(!image.isNull()) {
+                    QImage scaled;
+                    const auto screens = screen->virtualSiblings();
+                    for(const auto& scr : screens) {
+                        scaled = image.scaled(scr->size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+                        painter.drawImage(scr->geometry().x(), scr->geometry().y(), scaled);
+                    }
                 }
             }
             else {
@@ -663,60 +667,63 @@ void DesktopWindow::updateWallpaper() {
                 QPainter painter{&pixmap};
                 pixmap.fill(bgColor_);
                 image = getWallpaperImage();
-                QImage scaled;
-                int x, y;
-                const auto screens = screen->virtualSiblings();
-                if(wallpaperMode_ == WallpaperCenter) {
-                    for(const auto& scr : screens) {
-                        // get the gap between image and screen to avoid overlapping and displacement
-                        int x_gap = (image.width() - scr->geometry().width()) / 2;
-                        int y_gap = (image.height() - scr->geometry().height()) / 2;
-                        scaled = image.copy(qMax(x_gap, 0), qMax(y_gap, 0), scr->geometry().width(), scr->geometry().height());
-                        x = scr->geometry().x() + qMax(0, -x_gap);
-                        y = scr->geometry().y() + qMax(0, - y_gap);
-                        painter.drawImage(x, y, scaled);
+                if(!image.isNull()) {
+                    QImage scaled;
+                    int x, y;
+                    const auto screens = screen->virtualSiblings();
+                    if(wallpaperMode_ == WallpaperCenter) {
+                        for(const auto& scr : screens) {
+                            // get the gap between image and screen to avoid overlapping and displacement
+                            int x_gap = (image.width() - scr->geometry().width()) / 2;
+                            int y_gap = (image.height() - scr->geometry().height()) / 2;
+                            scaled = image.copy(qMax(x_gap, 0), qMax(y_gap, 0), scr->geometry().width(), scr->geometry().height());
+                            x = scr->geometry().x() + qMax(0, -x_gap);
+                            y = scr->geometry().y() + qMax(0, - y_gap);
+                            painter.drawImage(x, y, scaled);
+                        }
                     }
-                }
-                else if(wallpaperMode_ == WallpaperFit || wallpaperMode_ == WallpaperZoom) {
-                    for(const auto& scr : screens) {
-                        // get the screen-to-image ratio to calculate the scale factors
-                        const qreal w_ratio = static_cast<qreal>(scr->geometry().width()) / image.width();
-                        const qreal h_ratio = static_cast<qreal>(scr->geometry().height()) / image.height();
-                        if(w_ratio <= h_ratio) {
-                           if(wallpaperMode_ == WallpaperFit) {
-                                // fit horizontally
-                                scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
-                                x = scr->geometry().x();
-                                y = scr->geometry().y() + (scr->geometry().height() - scaled.height()) / 2;
-                           }
-                           else { // zoom
-                                // fit vertically
-                                scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
-                                // crop to avoid overlapping
-                                int x_gap = (scaled.width() - scr->geometry().width()) / 2;
-                                scaled = scaled.copy(x_gap, 0, scr->geometry().width(), scaled.height());
-                                x = scr->geometry().x();
-                                y = scr->geometry().y();
-                           }
-                        }
-                        else  { // w_ratio > h_ratio
-                            if(wallpaperMode_ == WallpaperFit) {
-                                // fit vertically
-                                scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
-                                x = scr->geometry().x() + (scr->geometry().width() - scaled.width()) / 2;
-                                y = scr->geometry().y();
+                    else if((wallpaperMode_ == WallpaperFit || wallpaperMode_ == WallpaperZoom)
+                            && image.width() > 0 && image.height() > 0) {
+                        for(const auto& scr : screens) {
+                            // get the screen-to-image ratio to calculate the scale factors
+                            const qreal w_ratio = static_cast<qreal>(scr->geometry().width()) / image.width();
+                            const qreal h_ratio = static_cast<qreal>(scr->geometry().height()) / image.height();
+                            if(w_ratio <= h_ratio) {
+                                if(wallpaperMode_ == WallpaperFit) {
+                                    // fit horizontally
+                                    scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
+                                    x = scr->geometry().x();
+                                    y = scr->geometry().y() + (scr->geometry().height() - scaled.height()) / 2;
+                                }
+                                else { // zoom
+                                    // fit vertically
+                                    scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
+                                    // crop to avoid overlapping
+                                    int x_gap = (scaled.width() - scr->geometry().width()) / 2;
+                                    scaled = scaled.copy(x_gap, 0, scr->geometry().width(), scaled.height());
+                                    x = scr->geometry().x();
+                                    y = scr->geometry().y();
+                                }
                             }
-                            else { // zoom
-                                // fit horizonatally
-                                scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
-                                // crop to avoid overlapping
-                                int y_gap = (scaled.height() - scr->geometry().height()) / 2;
-                                scaled = scaled.copy(0, y_gap, scaled.width(), scr->geometry().height());
-                                x = scr->geometry().x();
-                                y = scr->geometry().y();
+                            else  { // w_ratio > h_ratio
+                                if(wallpaperMode_ == WallpaperFit) {
+                                    // fit vertically
+                                    scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
+                                    x = scr->geometry().x() + (scr->geometry().width() - scaled.width()) / 2;
+                                    y = scr->geometry().y();
+                                }
+                                else { // zoom
+                                    // fit horizonatally
+                                    scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
+                                    // crop to avoid overlapping
+                                    int y_gap = (scaled.height() - scr->geometry().height()) / 2;
+                                    scaled = scaled.copy(0, y_gap, scaled.width(), scr->geometry().height());
+                                    x = scr->geometry().x();
+                                    y = scr->geometry().y();
+                                }
                             }
+                            painter.drawImage(x, y, scaled);
                         }
-                        painter.drawImage(x, y, scaled);
                     }
                 }
             }
