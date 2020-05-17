@@ -1,3 +1,11 @@
+pcmanfm-qt-0.15.1 / 2020-05-16
+==============================
+  * Fixed remounting of remote folders with its bookmark under special circumstances.
+  * Prevented a total freeze on mounting encrypted volumes when auto-mounting is also enabled.
+  * Added an option to disable file tooltips.
+  * Changed the About link to pcmanfm-qt's GitHub page.
+  * Safeguard against null images with multi-screen wallpapers.
+
 pcmanfm-qt-0.15.0 / 2020-04-21
 ==============================
   * Keep original extensions in bulk renaming.
