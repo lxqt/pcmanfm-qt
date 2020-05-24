@@ -236,7 +236,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">Tipo:</translation>
+        <translation>Tipo:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
@@ -411,7 +411,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="337"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Immagini di sfondo diversi per ciascun monitor</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="364"/>
@@ -504,161 +504,161 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Scorciatoie nascoste</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation type="unfinished"></translation>
+        <translation>Scorciatoia</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Azione</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Attiva vista, pulisci barra del filtro</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Attiva pannello laterale</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Attiva barra di indirizzi</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Prossima scheda</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda precedente</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+numero</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Passa alla scheda</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+numero</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Indietro</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>Vai su</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Finestra di ricerca</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Incolla in barra del filtro attiva</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Maiusc+trascina</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Sposta file al rilascio</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+trascina</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia fila al rilascio</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+maiusc+trascina</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea un collegamento al rilascio</translation>
     </message>
 </context>
 <context>
@@ -866,7 +866,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="560"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>Nascosti &amp;ultimi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="568"/>
@@ -931,7 +931,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="890"/>
         <source>Show Thumb&amp;nails</source>
-        <translation>Mostra anteprime</translation>
+        <translation>Mostra &amp;anteprime</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="893"/>
@@ -941,17 +941,17 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../main-win.ui" line="901"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Pannello &amp;laterale</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="904"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Scorciatoie &amp;nascoste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="749"/>
@@ -1516,7 +1516,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="294"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleziona cartella sfondi</translation>
     </message>
 </context>
 <context>
@@ -1721,8 +1721,8 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message numerus="yes">
         <location filename="../view.cpp" line="61"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Aprire questi %1 file?</numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -1923,7 +1923,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../preferences.ui" line="159"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra menu contestuale della cartella con ctrl+clic destro</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="189"/>
@@ -1950,12 +1950,12 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../preferences.ui" line="220"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri cartelle in nuove schede se possibile</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="223"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Modalità finestra singola</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="279"/>
@@ -2047,12 +2047,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="366"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra sempre nomi reali dei file</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="383"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Non mostrare tooltip per i file</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="588"/>
