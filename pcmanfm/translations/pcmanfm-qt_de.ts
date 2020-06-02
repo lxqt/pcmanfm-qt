@@ -413,7 +413,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="337"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Individuelles Hintergrundbild für jeden Monitor</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="364"/>
@@ -506,161 +506,161 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Versteckte Tastaturkürzel</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation type="unfinished"></translation>
+        <translation>Kürzel</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktion</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Ansicht fokussieren, Filterleiste säubern</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Seitenleiste fokussieren</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Den Pfadeintrag fokussieren</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+D</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+Tabulator</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Nächster Reiter</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+Umschalt+Tabulator</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorheriger Reiter</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+BildRunter</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+BildRauf</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+Zahl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Springe zu Reiter</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Zahl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Rücktaste</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>Gehe hinauf</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+F</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchdialog</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Umshalt+Einfügen</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>In die Filterleiste einfügen</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Ziehen+Umschalt</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei beim Loslassen verschieben</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Ziehen+Strg</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Datein beim Loslassen kopieren</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Ziehen+Umschalt+Strg</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Beim Loslassen einen symbolischen Link erstellen</translation>
     </message>
 </context>
 <context>
@@ -748,7 +748,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../main-win.ui" line="345"/>
         <source>Show &amp;Hidden</source>
-        <translation>&amp;Versteckte anzeigen</translation>
+        <translation>&amp;Versteckte Dateien anzeigen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="348"/>
@@ -868,7 +868,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../main-win.ui" line="560"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>Versteckte Dateien zuletzt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="568"/>
@@ -963,17 +963,17 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../main-win.ui" line="901"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>S&amp;eitenleiste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="904"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Versteckte &amp;Tastaturkürzel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="749"/>
@@ -1517,7 +1517,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="294"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordner mit Hintergrundbildern auswählen</translation>
     </message>
 </context>
 <context>
@@ -1721,9 +1721,9 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message numerus="yes">
         <location filename="../view.cpp" line="61"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Möchten Sie diese %1 Datei öffnen?</numerusform>
+            <numerusform>Möchten Sie diese %1 Dateien öffnen?</numerusform>
         </translation>
     </message>
     <message>
@@ -1923,7 +1923,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../preferences.ui" line="159"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordnerkontextmenü mit Strg + Rechtsklick anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="189"/>
@@ -1950,12 +1950,12 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../preferences.ui" line="220"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzeichnisse, wenn möglich, in neuen Reitern öffnen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="223"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Einzelfenstermodus</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="279"/>
@@ -2033,7 +2033,7 @@ wenn mehr als einer geöffnet ist.</translation>
     <message>
         <location filename="../preferences.ui" line="734"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Beispiele:&lt;br&gt;Für das Terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Zum Wechseln des Benutzers: &lt;i&gt;lxsudo %s&lt;/i&gt; oder &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; ist der Befehl, den Sie im Terminal oder mit su ausführen möchten.&lt;br&gt; Wichtig: Bitte nutzen Sie lxsudo, da sudo allein die Berechtigungen der Konfigurationsdatei zerstören wird.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="825"/>
@@ -2048,12 +2048,12 @@ wenn mehr als einer geöffnet ist.</translation>
     <message>
         <location filename="../preferences.ui" line="366"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Immer die tatsächlichen Dateinamen anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="383"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Kurzinfo zu Dateien anzeigen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="588"/>
