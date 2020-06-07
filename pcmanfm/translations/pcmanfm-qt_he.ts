@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>על אודות</translation>
+        <translation>אודות</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -455,7 +455,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="429"/>
         <source> minute(s)</source>
-        <translation> דקות</translation>
+        <translation> דקה/ות</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="455"/>
@@ -513,7 +513,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation type="פעולה"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
@@ -560,7 +560,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="הלשונית הבאה"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
@@ -607,7 +607,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation type="לך למעלה"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
@@ -617,7 +617,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation type="דו־שיח חיפוש"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
@@ -1810,7 +1810,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="493"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation type="חלון"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
@@ -1840,7 +1840,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation type="עיון"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
@@ -1855,7 +1855,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="110"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"></translation>
+        <translation type="מצב צפייה רגיל"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="123"/>
@@ -1890,7 +1890,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation type="תצוגה"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
@@ -1900,22 +1900,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="133"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation type="סימניות"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="141"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="פתח בלשונית הנוכחית"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="146"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="פתח בלשונית חדשה"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="151"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation type="פתח בחלון חדש"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="189"/>
@@ -1980,7 +1980,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="413"/>
         <source>3 px by default.</source>
-        <translation type="unfinished">3 פיקסלים כבררת מחדל.</translation>
+        <translation type="unfinished">3 פיקסלים כברירת מחדל.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="416"/>
@@ -2009,7 +2009,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="502"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation type="כאשר מסומן, הלשונית תוצג רק אם ישנן יותר מלשונית אחת."></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="734"/>
@@ -2039,7 +2039,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="223"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation type="מצב חלון יחיד"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="366"/>
@@ -2099,12 +2099,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="705"/>
         <source>Programs</source>
-        <translation type="unfinished"></translation>
+        <translation type="תוכנות"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="714"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
+        <translation type="מדמה מסוף"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="721"/>
@@ -2119,7 +2119,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="770"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation type="תבניות"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="776"/>
@@ -2173,7 +2173,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="אין קבצים שניתן לשנות את שמם."></translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="111"/>
