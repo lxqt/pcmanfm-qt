@@ -66,7 +66,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 לתכנית זו אמור היה להיות מצורף עותק של הרישיון הציבורי הכללי של GNU,
 אם לא צורף אחד כזה, ניתן לכתוב אל Free Software Foundation, Inc.‎,‎
-51‎ Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.‎</translation>
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="78"/>
@@ -410,7 +410,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="337"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>רקע ייחודי לכל צג נפרד</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="364"/>
@@ -435,7 +435,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="396"/>
         <source> hour(s)</source>
-        <translation> שעות</translation>
+        <translation> שעה/ות</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="406"/>
@@ -503,22 +503,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>קיצורי דרך מוסתרים</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation type="unfinished"></translation>
+        <translation>קיצור דרך</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="פעולה"></translation>
+        <translation>פעולה</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
@@ -528,7 +528,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
@@ -538,7 +538,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
@@ -549,80 +549,80 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+D</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="הלשונית הבאה"></translation>
+        <translation>הלשונית הבאה</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>הלשונית הקודמת</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageDown</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageUp</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+מספר</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>קפיצה ללשונית</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+מספר</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>כפתור מחיקה</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="לך למעלה"></translation>
+        <translation>לך למעלה</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="דו־שיח חיפוש"></translation>
+        <translation>דו־שיח חיפוש</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+Insert</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
@@ -637,7 +637,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>העברת הקובץ בשחרור</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
@@ -647,7 +647,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>העתקת הקובץ בשחרור</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
@@ -657,7 +657,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>יצירת symlink בשחרור</translation>
     </message>
 </context>
 <context>
@@ -905,7 +905,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="560"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;הוסתר לאחרונה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="568"/>
@@ -995,17 +995,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="901"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>חלונית צ&amp;ד</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="904"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;קיצורי דרך מוסתרים</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="749"/>
@@ -1366,7 +1366,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>פתח את דו־שיח ההעדפות בעמוד עם השם שצויין</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
@@ -1387,7 +1387,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../application.cpp" line="569"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>מדמה המסוף לא הוגדר.</translation>
     </message>
 </context>
 <context>
@@ -1395,12 +1395,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>פתח במנהל הקבצים</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="137"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>דיסק נשלף</translation>
     </message>
 </context>
 <context>
@@ -1408,32 +1408,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav מאובטח</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1441,32 +1441,32 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="26"/>
         <source>Command:</source>
-        <translation type="unfinished">פקודה:</translation>
+        <translation>פקודה:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>קישור:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="54"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>נא לבחור סמל</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="56"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>תמונות (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="78"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>נא לבחור קובץ בר הרצה</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="86"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>נא לבחור קובץ</translation>
     </message>
 </context>
 <context>
@@ -1474,47 +1474,47 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>מילוי עם צבע הרקע בלבד</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>מתיחה על מנת למלא את כל המסך</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>מתיחה על מנת להתאים למסך</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>מרכוז על המסך</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>הפיכת התמונה לאריח על מנת למלא את כל המסך</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="58"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>הגדלת התמונה על מנת למלא את כל המסך</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="248"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>נא לבחור רקע</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="252"/>
         <source>Image Files</source>
-        <translation type="unfinished"></translation>
+        <translation>קבצי תמונה</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="294"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>נא לבחור תיקיית רקעים</translation>
     </message>
 </context>
 <context>
@@ -1522,61 +1522,61 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="296"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>אשפה (פריט אחד)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="299"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>אשפה (פריט %Ln)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>אשפה (ריק)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="331"/>
         <source>Computer</source>
-        <translation type="unfinished">מחשב</translation>
+        <translation>מחשב</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="345"/>
         <source>Network</source>
-        <translation type="unfinished">רשת</translation>
+        <translation>רשת</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="924"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחה</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="929"/>
         <location filename="../desktopwindow.cpp" line="966"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>היצמדו&amp;ת לאזור הנוכחי</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="936"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>ריקון האשפה</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="992"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>הסתרת פריטי שולחן העבודה</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="998"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">יצירת משגר</translation>
+        <translation>יצירת משגר</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1001"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished">העדפות שולחן העבודה</translation>
+        <translation>העדפות שולחן העבודה</translation>
     </message>
 </context>
 <context>
@@ -1584,7 +1584,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>מסנן:</translation>
     </message>
 </context>
 <context>
@@ -1592,7 +1592,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>ניקוי טקסט (Ctrl+K או Esc)</translation>
     </message>
 </context>
 <context>
@@ -1600,45 +1600,45 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../mainwindow.cpp" line="139"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>מופע חשבון שורש</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>הסתר את שורת התפריט</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="684"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>שורת התפריט תוסתר לגמרי, נא להשתמש במקשים Ctrl+M על מנת להציגה.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1030"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>גרסה: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
         <location filename="../mainwindow.cpp" line="1897"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;העברה לאשפה</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
         <location filename="../mainwindow.cpp" line="1897"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished">מ&amp;חיקה</translation>
+        <translation>מ&amp;חיקה</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1954"/>
         <location filename="../mainwindow.cpp" line="1962"/>
         <source>Error</source>
-        <translation type="unfinished">שגיאה</translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1962"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>פקודת החלפת המשתמש לא נקבעה.</translation>
     </message>
 </context>
 <context>
@@ -1646,22 +1646,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>תצוגת סמלים</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>תצוגה קומפקטית</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>תצוגת תמונות ממוזערות</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>תצוגת רשימה מפורטת</translation>
     </message>
 </context>
 <context>
@@ -1669,27 +1669,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../tabpage.cpp" line="455"/>
         <source>Error</source>
-        <translation type="unfinished">שגיאה</translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="464"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation type="unfinished"></translation>
+        <translation>שטח פנוי: %1 (בסך הכול: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="481"/>
         <source>%n item(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>פריט %n</numerusform>
+            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="483"/>
         <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform> (%n מוסתר)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1697,7 +1697,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../tabpage.cpp" line="686"/>
         <location filename="../tabpage.cpp" line="702"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>קישור אל</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="716"/>
@@ -1718,25 +1718,25 @@ A space is also reserved for 3 lines of text.</source>
     <message numerus="yes">
         <location filename="../view.cpp" line="61"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>האם ברצונך לפתוח את הקובץ ה־ %1 הזה?</numerusform>
+            <numerusform>האם ברצונך לפתוח את %1 הקבצים האלה?</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../view.cpp" line="123"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחה בלשונית חד&amp;שה</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="127"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחה בחלון ח&amp;דש</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="135"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחה במסו&amp;ף</translation>
     </message>
 </context>
 <context>
@@ -1749,28 +1749,28 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>ממשק משתמש</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>התנהגות</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="575"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"></translation>
+        <translation>תמונה ממוזערת</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>עוצמת שמע</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation type="unfinished">מתקדם</translation>
+        <translation>מתקדם</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="213"/>
@@ -1780,22 +1780,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="250"/>
         <source>Icons</source>
-        <translation type="unfinished">סמלים</translation>
+        <translation>סמלים</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="282"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>גודל סמלים גדולים:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="299"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>גודל סמלים קטנים:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="316"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation>גודל תמונות ממוזערות:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="330"/>
@@ -1810,22 +1810,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="493"/>
         <source>Window</source>
-        <translation type="חלון"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
         <source>Always show the tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>הצג את שורת הלשוניות תמיד</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="513"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת כפתורי &quot;סגירה&quot; בלשוניות	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="520"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>זכור את גודל החלון האחרון שנסגר</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="527"/>
@@ -1840,27 +1840,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation type="עיון"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחת קבצים עם קליק אחד</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation type="unfinished"></translation>
+        <translation>עיכוב של בחירה אוטומטית במצב קליק אחד (0 להשבתה)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="110"/>
         <source>Default view mode:</source>
-        <translation type="מצב צפייה רגיל"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="123"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> שניות</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="169"/>
@@ -1870,27 +1870,27 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
+        <translation>אישור לפני מחיקת קבצים</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="182"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>העברת קבצים אל &quot;סל האשפה&quot; במקום מחיקתם מהכונן.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="608"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת תמונות ממוזערות של קבצים</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="598"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת תמונות ממוזערות עבור קבצים מקומיים בלבד</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="תצוגה"></translation>
+        <translation>צג</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
@@ -1900,22 +1900,22 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="133"/>
         <source>Bookmarks:</source>
-        <translation type="סימניות"></translation>
+        <translation>סימניות:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="141"/>
         <source>Open in current tab</source>
-        <translation type="פתח בלשונית הנוכחית"></translation>
+        <translation>פתיחה בלשונית הנוכחית</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="146"/>
         <source>Open in new tab</source>
-        <translation type="פתח בלשונית חדשה"></translation>
+        <translation>פתיחה בלשונית חדשה</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="151"/>
         <source>Open in new window</source>
-        <translation type="פתח בחלון חדש"></translation>
+        <translation>פתיחה בחלון חדש</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="189"/>
@@ -1932,12 +1932,12 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="363"/>
         <location filename="../preferences.ui" line="373"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>הפעלת היישום מחדש נחוצה על מנת לקבל את כל ההשפעה</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="206"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>הפעלת קבצים ברי הרצה בלי שורת פקודה</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="279"/>
@@ -1960,7 +1960,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="343"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>ממשק משתמש</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="356"/>
@@ -1980,41 +1980,41 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="413"/>
         <source>3 px by default.</source>
-        <translation type="unfinished">3 פיקסלים כברירת מחדל.</translation>
+        <translation>3 פיקסלים כברירת המחדל.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="416"/>
         <location filename="../preferences.ui" line="440"/>
         <source> px</source>
-        <translation type="unfinished"> פיקסלים</translation>
+        <translation> פיקסלים</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>x</source>
-        <translation type="unfinished">×</translation>
+        <translation>×</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished">פיקסל אחד כבררת מחדל.
-נשמר גם רווח ל־3 שורות טקסט. {3 ?} {3 ?}</translation>
+        <translation>3 פיקסלים כברירת המחדל.
+גם רווח מיועד ל־3 שורות טקסט.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="453"/>
         <source>Lock</source>
-        <translation type="unfinished">נעילה</translation>
+        <translation>נעילה</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="502"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="כאשר מסומן, הלשונית תוצג רק אם ישנן יותר מלשונית אחת."></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="734"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>דוגמאות: s:&lt;br&gt;למסוף: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;להחלפת משתמש: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt;היא שורת הפקודה שתרצו להריץ עום המסוף או עם su.&lt;br&gt; הערה חשובה: נא להשתמש ב־ lxsudo, sudo alone will wreck permissions of the settings file.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="825"/>
@@ -2029,22 +2029,22 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="159"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת תפריט תוכן התיקייה עם Ctrl+קליק ימני</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="220"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחת תיקיות בלשוניות חדשות ככל שאפשר</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="223"/>
         <source>Single window mode</source>
-        <translation type="מצב חלון יחיד"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="366"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>הצג את שמות הקבצים האמיתיים תמיד</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="383"/>
@@ -2059,12 +2059,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="605"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>צריך את ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="635"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>עגינה אוטומטית</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="641"/>
@@ -2084,7 +2084,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="665"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>כשהמדיה הניתקת מוסרת:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
@@ -2094,22 +2094,22 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="678"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>שינ&amp;וי התיקייה בלשונית לתיקיית הבית</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="705"/>
         <source>Programs</source>
-        <translation type="תוכנות"></translation>
+        <translation>תוכניות</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="714"/>
         <source>Terminal emulator:</source>
-        <translation type="מדמה מסוף"></translation>
+        <translation>מדמה מסוף:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="721"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>פקודת החלפת &amp;משתמש:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="747"/>
@@ -2119,7 +2119,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="770"/>
         <source>Templates</source>
-        <translation type="תבניות"></translation>
+        <translation>תבניות</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="776"/>
@@ -2129,7 +2129,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="783"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת תבנית אחת בלבד לכל סוג MIME נפרד</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="790"/>
@@ -2173,12 +2173,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <source>No file could be renamed.</source>
-        <translation type="אין קבצים שניתן לשנות את שמם."></translation>
+        <translation>שם אף קובץ לא יכול להשתנות.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="111"/>
         <source>Some files could not be renamed.</source>
-        <translation>שינוי שמם של חלק מהקבצים לא הצליח.</translation>
+        <translation>שמם של כמה קבצים לא יכול להשתנות.</translation>
     </message>
 </context>
 </TS>
