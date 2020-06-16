@@ -1025,7 +1025,7 @@ void MainWindow::on_actionAbout_triggered() {
     // the about dialog
     class AboutDialog : public QDialog {
     public:
-        explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) : QDialog(parent, f) {
+        explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = Qt::WindowFlags()) : QDialog(parent, f) {
             ui.setupUi(this);
             ui.version->setText(tr("Version: %1").arg(QStringLiteral(PCMANFM_QT_VERSION)));
         }
@@ -1039,7 +1039,7 @@ void MainWindow::on_actionAbout_triggered() {
 void MainWindow::on_actionHiddenShortcuts_triggered() {
     class HiddenShortcutsDialog : public QDialog {
     public:
-        explicit HiddenShortcutsDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) : QDialog(parent, f) {
+        explicit HiddenShortcutsDialog(QWidget* parent = 0, Qt::WindowFlags f = Qt::WindowFlags()) : QDialog(parent, f) {
             ui.setupUi(this);
             ui.treeWidget->setRootIsDecorated(false);
             ui.treeWidget->header()->setSectionResizeMode(QHeaderView::Stretch);

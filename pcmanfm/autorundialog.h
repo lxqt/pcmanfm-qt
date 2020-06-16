@@ -31,7 +31,7 @@ class AutoRunDialog : public QDialog {
 Q_OBJECT
 
 public:
-  explicit AutoRunDialog(GVolume* volume, GMount* mount, QWidget* parent = 0, Qt::WindowFlags f = 0);
+  explicit AutoRunDialog(GVolume* volume, GMount* mount, QWidget* parent = 0, Qt::WindowFlags f = Qt::WindowFlags());
   virtual ~AutoRunDialog();
 
   virtual void accept();
