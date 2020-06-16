@@ -84,12 +84,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>הוכנסה מדיה נתיקה</translation>
+        <translation>מדיה נתיקה הוכנסה</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;הוכנסה מדיה נתיקה&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;מדיה נתיקה הוכנסה&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
@@ -104,7 +104,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>נא לבחור את הפעולה לביצוע:</translation>
+        <translation>נא לבחור את הפעולה שברצונך לבצע:</translation>
     </message>
 </context>
 <context>
@@ -389,7 +389,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="172"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>פיקסל אחד כבררת מחדל.
+        <translation>פיקסל אחד כברירת המחדל.
 נשמר גם רווח ל־3 שורות טקסט.</translation>
     </message>
     <message>
@@ -523,7 +523,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>תצוגת התמקדות, ניקוי סרגל הסינון</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -533,7 +533,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>התמקדות חלונית־הצד</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -544,7 +544,7 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>התמקדות בהכנסת נתיב</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -602,7 +602,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation>כפתור מחיקה</translation>
+        <translation>כפתור מחיקה (Backscape)</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
@@ -627,12 +627,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>הדבקה לתוך סרגל הסינון הזמני</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>גרירה+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -642,7 +642,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>גרירה+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
@@ -652,7 +652,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>גרירה+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
@@ -1651,7 +1651,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Compact View</source>
-        <translation>תצוגה קומפקטית</translation>
+        <translation>תצוגה חסכונית</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="200"/>
@@ -1775,7 +1775,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="213"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>בחירת קבצים חדשים שנוצרו</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="250"/>
@@ -1800,7 +1800,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="330"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>גודל סמלי חלוניות צד:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="262"/>
@@ -1810,7 +1810,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="493"/>
         <source>Window</source>
-        <translation></translation>
+        <translation>חלון</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
@@ -1830,17 +1830,17 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="527"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>רוחב ברירת־המחדל של חלונות חדשים:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="541"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>גובה ברירת־המחדל של חלונות חדשים:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation></translation>
+        <translation>דפדוף</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
@@ -1855,7 +1855,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="110"/>
         <source>Default view mode:</source>
-        <translation></translation>
+        <translation>מצב תצוגת ברירת־המחדל:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="123"/>
@@ -1865,7 +1865,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="169"/>
         <source>File Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>פעולות קובץ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="175"/>
@@ -1895,7 +1895,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>כשהאפשרות לא מסומנת, הגדרת DE תהיה בשימוש.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="133"/>
@@ -1920,12 +1920,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="189"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>מחיקת קבצים במדיה הנתיקה במקום יצירת &quot;פח אשפה&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>אישור לפני העברה לתוך &quot;פח האשפה&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="203"/>
@@ -1943,19 +1943,19 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="279"/>
         <location filename="../preferences.ui" line="289"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>בשימוש על ידי תצוגת הסמלים</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <location filename="../preferences.ui" line="306"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>בשימוש על ידי התצוגה החסכונית ותצוגת הרשימה המפורטת</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="313"/>
         <location filename="../preferences.ui" line="323"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>בשימוש על ידי תצוגת התמונות הממוזערות</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="343"/>
@@ -1965,7 +1965,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="356"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>התייחסות אל קבצי גיבוי כמוסתרים</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
@@ -1975,7 +1975,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="406"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>השוליים המינימליים של פריט בתצוגת הסמלים:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="413"/>
@@ -2009,7 +2009,8 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="502"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation></translation>
+        <translation>כשהאפשרות לא מסומנת, סרגל הלשוניות יוצג
+רק אם ישנה יותר מלשונית אחת.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="734"/>
@@ -2019,12 +2020,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="825"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>הפעלת היישום מחדש נחוצה על מנת שהשפעת השינויים תחול.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="581"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>לא ליצור תמונות ממוזערות לקבצי תמונה שחרגו מהגודל:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
@@ -2039,7 +2040,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="223"/>
         <source>Single window mode</source>
-        <translation></translation>
+        <translation>מצב חלון יחיד</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="366"/>
@@ -2054,7 +2055,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="588"/>
         <source> KB</source>
-        <translation type="unfinished"></translation>
+        <translation> קילו־בייט</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="605"/>
@@ -2089,7 +2090,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>סגירת ה&amp;כרטיסיה שכוללת את המדיה הנתיקה</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
@@ -2114,7 +2115,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="747"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>חיבור מנהל אר&amp;כיונים:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="770"/>
@@ -2124,7 +2125,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="776"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת תבניות שמוגדרות למשתמש בלבד בתפריט</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="783"/>
@@ -2134,7 +2135,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>הרצת יישום ברירת־מחדל אחרי יצירה מתבנית</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="349"/>
