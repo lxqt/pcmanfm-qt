@@ -30,7 +30,7 @@ class BulkRenameDialog : public QDialog {
 Q_OBJECT
 
 public:
-    explicit BulkRenameDialog(QWidget* parent = nullptr, Qt::WindowFlags flags = 0);
+    explicit BulkRenameDialog(QWidget* parent = nullptr, Qt::WindowFlags flags = Qt::WindowFlags());
 
     QString getBaseName() const {
         return ui.lineEdit->text();
