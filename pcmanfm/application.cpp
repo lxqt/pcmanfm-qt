@@ -508,7 +508,6 @@ void Application::connectToServer() {
 void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) {
     Fm::FilePathList pathList;
     Fm::FilePath cwd_path;
-    QStringList::iterator it;
     for(const QString& it : qAsConst(paths)) {
         QByteArray pathName = it.toLocal8Bit();
         Fm::FilePath path;
@@ -636,7 +635,6 @@ DesktopWindow* Application::createDesktopWindow(int screenNum) {
     }
     else {
         QRect rect;
-        const auto allScreens = screens();
         if(auto screen = window->getDesktopScreen()) {
             rect = screen->geometry();
         }
