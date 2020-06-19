@@ -40,6 +40,7 @@
 #include <QStandardPaths>
 #include <QClipboard>
 #include <QWindow>
+#include <QRandomGenerator>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -810,8 +811,13 @@ bool DesktopWindow::pickWallpaper() {
                        files.removeOne(ls); // choose from other images
                }
                // this is needed for the randomness, especially when choosing the first wallpaper
-               qsrand((uint)QTime::currentTime().msec());
-               int randomValue = qrand() % files.size();
+
+               // Conversion notes:
+               // The random generated value can be safely converted to an int because it's max
+               // value is also an int (files.size() - 1).
+               // files.size() - 1 (the highest random value) is always => 1
+               // files.at(0) -> valid, files.at(size) -> invalid
+               int randomValue = static_cast<int>(QRandomGenerator::global()->bounded(static_cast<quint32>(files.size())));
                wallpaperFile_ = dir + files.at(randomValue);
            }
            else {
