@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
 <TS version="2.1" language="he">
 <context>
@@ -10,8 +10,8 @@
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html>&lt;head/>&lt;body>&lt;p>&lt;span style=" font-size:16pt; font-weight:600;">PCManFM-Qt&lt;/span>&lt;/p>&lt;/body>&lt;/html></source>
+        <translation>&lt;html>&lt;head/>&lt;body>&lt;p>&lt;span style=" font-size:16pt; font-weight:600;">PCManFM-Qt&lt;/span>&lt;/p>&lt;/body>&lt;/html></translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
@@ -20,16 +20,16 @@
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html>&lt;head/>&lt;body>&lt;p>&lt;a href="https://lxqt.org/">&lt;span style=" text-decoration: underline; color:#0000ff;">https://lxqt.org/&lt;/span>&lt;/a>&lt;/p>&lt;/body>&lt;/html></source>
+        <translation>&lt;html>&lt;head/>&lt;body>&lt;p>&lt;a href="https://lxqt.org/">&lt;span style=" text-decoration: underline; color:#0000ff;">https://lxqt.org/&lt;/span>&lt;/a>&lt;/p>&lt;/body>&lt;/html></translation>
     </message>
     <message>
         <location filename="../about.ui" line="87"/>
         <source>Programming:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com>
 </source>
         <translation>פיתוח:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;‎
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com>‎
 </translation>
     </message>
     <message>
@@ -88,8 +88,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
-        <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;מדיה נתיקה הוכנסה&lt;/b&gt;</translation>
+        <source>&lt;b>Removable medium is inserted&lt;/b></source>
+        <translation>&lt;b>מדיה נתיקה הוכנסה&lt;/b></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
@@ -1319,7 +1319,7 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
-        <source>Turn off desktop manager if it&apos;s running</source>
+        <source>Turn off desktop manager if it's running</source>
         <translation>כיבוי מנהל שולחן עבודה אם הוא פעיל</translation>
     </message>
     <message>
@@ -1819,8 +1819,8 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="513"/>
-        <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>הצגת כפתורי &quot;סגירה&quot; בלשוניות	</translation>
+        <source>Show 'Close' buttons on tabs	</source>
+        <translation>הצגת כפתורי "סגירה" בלשוניות	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="520"/>
@@ -1874,8 +1874,8 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="182"/>
-        <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>העברת קבצים אל &quot;סל האשפה&quot; במקום מחיקתם מהכונן.</translation>
+        <source>Move deleted files to "trash bin" instead of erasing from disk.</source>
+        <translation>העברת קבצים אל "סל האשפה" במקום מחיקתם מהכונן.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="608"/>
@@ -1919,13 +1919,13 @@ A space is also reserved for 3 lines of text.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="189"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>מחיקת קבצים במדיה הנתיקה במקום יצירת &quot;פח אשפה&quot;</translation>
+        <source>Erase files on removable media instead of "trash can" creation</source>
+        <translation>מחיקת קבצים במדיה הנתיקה במקום יצירת "פח אשפה"</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="196"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>אישור לפני העברה לתוך &quot;פח האשפה&quot;</translation>
+        <source>Confirm before moving files into "trash can"</source>
+        <translation>אישור לפני העברה לתוך "פח האשפה"</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="203"/>
@@ -1970,7 +1970,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="376"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת סמלים מוצללים של קבצים מוסתרים</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="406"/>
@@ -2014,8 +2014,8 @@ only if there are more than one tab.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="734"/>
-        <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation>דוגמאות: s:&lt;br&gt;למסוף: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;להחלפת משתמש: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt;היא שורת הפקודה שתרצו להריץ עום המסוף או עם su.&lt;br&gt; הערה חשובה: נא להשתמש ב־ lxsudo, sudo alone will wreck permissions of the settings file.</translation>
+        <source>Examples:&lt;br>For terminal: &lt;i>xterm -e %s&lt;/i>&lt;br>For switching user: &lt;i>lxsudo %s&lt;/i> or &lt;i>lxsudo dbus-run-session -- %s&lt;/i>&lt;br>&lt;i>%s&lt;/i> is the command line you want to execute with terminal or su.&lt;br> Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
+        <translation>דוגמאות: s:&lt;br>למסוף: &lt;i>xterm -e %s&lt;/i>&lt;br>להחלפת משתמש: &lt;i>lxsudo %s&lt;/i> or &lt;i>lxsudo dbus-run-session -- %s&lt;/i>&lt;br>&lt;i>%s&lt;/i>היא שורת הפקודה שתרצו להריץ עום המסוף או עם su.&lt;br> הערה חשובה: נא להשתמש ב־ lxsudo, sudo alone will wreck permissions of the settings file.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="825"/>
@@ -2050,7 +2050,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="383"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>לא להציג תיבות צצות של קבצים</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="588"/>
@@ -2070,17 +2070,17 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="641"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>עגינת אמצעים לעגינה באופן אוטומטי בהתחלת התכנית</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>עגינת מדיה נתיקה באופן אוטומטי כאשר היא מוכנסת</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="655"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת אפשרויות זמינות למדיה נתיקה כאשר היא מוכנסת</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2140,7 +2140,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="349"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>שימוש בתחיליות SI עשרוניות במקום בתחיליות IEC בינאריות</translation>
     </message>
 </context>
 <context>
