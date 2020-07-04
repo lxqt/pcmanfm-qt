@@ -1716,8 +1716,8 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
     <message numerus="yes">
         <location filename="../view.cpp" line="61"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Bu %1 dosyayı açmak istiyor musunuz?</numerusform>
         </translation>
     </message>
     <message>
