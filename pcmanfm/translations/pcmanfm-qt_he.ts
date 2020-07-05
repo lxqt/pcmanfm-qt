@@ -602,7 +602,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation>כפתור מחיקה (Backscape)</translation>
+        <translation>כפתור Backspace</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
@@ -720,7 +720,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="304"/>
         <source>Go</source>
-        <translation>קדימה</translation>
+        <translation>לגשת אל</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="313"/>
@@ -730,7 +730,8 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="322"/>
         <source>&amp;About</source>
-        <translation>על &amp;אודות</translation>
+        <translatorcomment>המילה &quot;על&quot; לא נחוצה, אז הסרתי אותה.</translatorcomment>
+        <translation>&amp;אודות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="331"/>
@@ -785,7 +786,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="394"/>
         <source>&amp;Applications</source>
-        <translation>יי&amp;שומים</translation>
+        <translation>&amp;יישומים</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="399"/>
@@ -1277,7 +1278,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="193"/>
         <source>&amp;Go</source>
-        <translation>ל&amp;גשת</translation>
+        <translation>ל&amp;גשת אל</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="210"/>
@@ -1970,7 +1971,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../preferences.ui" line="376"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת סמלים של קבצים מוסתרים כמוצללים</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="406"/>
@@ -2050,7 +2051,9 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="383"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>התרגום למחרוזת הזה לא טוב ב־100%, לדעתי הוא דורש שיפור.
+The translation of this string isn&apos;t 100% well.</translatorcomment>
+        <translation>לא להציג תיבות צצות בקבצים</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="588"/>
@@ -2070,17 +2073,17 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="641"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>עגינת אמצעי אחסון נתיקים באופן אוטומטי בהפעלת התכנית</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>עגינת מדיה נתיקה באופן אוטומטי כאשר היא מוכנסת</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="655"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת אפשרויות זמינות עבור מדיה נתיקה כאשר היא מוכנסת</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2140,7 +2143,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="349"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>שימוש בקידומות עשרוניות של SI במקום בקידומות בינאריות של IEC</translation>
     </message>
 </context>
 <context>
