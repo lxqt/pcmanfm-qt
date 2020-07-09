@@ -1262,7 +1262,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../main-win.ui" line="193"/>
         <source>&amp;Go</source>
-        <translation>이동(*G)</translation>
+        <translation>이동(&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="210"/>
