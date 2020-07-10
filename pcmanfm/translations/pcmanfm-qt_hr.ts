@@ -1568,7 +1568,7 @@ Rezerviran je i prostor za 3 retka teksta.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="992"/>
         <source>Hide Desktop Items</source>
-        <translation>Sakrij ikone radne površine</translation>
+        <translation>Sakrij elemente radne površine</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="998"/>
@@ -1684,7 +1684,7 @@ Rezerviran je i prostor za 3 retka teksta.</translation>
         <translation>
             <numerusform>%n element</numerusform>
             <numerusform>%n elementa</numerusform>
-            <numerusform>%n elementa</numerusform>
+            <numerusform>%n elemenata</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1709,7 +1709,7 @@ Rezerviran je i prostor za 3 retka teksta.</translation>
         <translation>
             <numerusform>%n element odabran</numerusform>
             <numerusform>%n elementa odabrana</numerusform>
-            <numerusform>%n elementa odabrano</numerusform>
+            <numerusform>%n elemenata odabrano</numerusform>
         </translation>
     </message>
 </context>
