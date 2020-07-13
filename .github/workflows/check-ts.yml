@@ -1,0 +1,14 @@
+name: Check ts with lrelease
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: '**_*.ts'
+
+jobs:
+  check_ts:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.3.1
+    - run: sudo apt install qttools5-dev-tools
+    - run: QT_SELECT=5 lrelease $(find . -name \*_\*.ts)
