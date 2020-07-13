@@ -136,7 +136,6 @@ DesktopWindow::DesktopWindow(int screenNum):
         connect(proxyModel_, &Fm::ProxyFolderModel::rowsAboutToBeRemoved, this, &DesktopWindow::onRowsAboutToBeRemoved);
         connect(proxyModel_, &Fm::ProxyFolderModel::layoutChanged, this, &DesktopWindow::onLayoutChanged);
         connect(proxyModel_, &Fm::ProxyFolderModel::sortFilterChanged, this, &DesktopWindow::onModelSortFilterChanged);
-        connect(proxyModel_, &Fm::ProxyFolderModel::dataChanged, this, &DesktopWindow::onDataChanged);
     }
 
     // remove frame
@@ -411,7 +410,7 @@ void DesktopWindow::updateTrashIcon() {
 
 bool DesktopWindow::isTrashCan(std::shared_ptr<const Fm::FileInfo> file) const {
     bool ret(false);
-    if(file && (file->isDesktopEntry() || file->isShortcut()) && trashMonitor_) {
+    if(file && file->isDesktopEntry() && trashMonitor_) {
         const QString fileName = QString::fromStdString(file->name());
         const char* execStr = fileName == QLatin1String("trash-can.desktop")
                                 ? "pcmanfm-qt trash:///" : nullptr;
@@ -922,8 +921,7 @@ void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm::File
     }
     else {
         // special right-click menus for our desktop shortcuts
-        if(fileInfo && (fileInfo->isDesktopEntry() || fileInfo->isShortcut())
-           && type == Fm::FolderView::ContextMenuClick) {
+        if(fileInfo && fileInfo->isDesktopEntry() && type == Fm::FolderView::ContextMenuClick) {
             Settings& settings = static_cast<Application* >(qApp)->settings();
             const QStringList ds = settings.desktopShortcuts();
             if(!ds.isEmpty()) {
@@ -1103,33 +1101,6 @@ void DesktopWindow::onModelSortFilterChanged() {
     settings.setDesktopSortHiddenLast(proxyModel_->hiddenLast());
 }
 
-void DesktopWindow::onDataChanged(const QModelIndex& topLeft, const QModelIndex& bottomRight) {
-    /****************************************************************************
-     NOTE: The display names of desktop entries and shortcuts may change without
-     their files being renamed and, on such occasions, a relayout will be needed.
-     Since there is no signal for that, we use the signal dataChanged() and the
-     QHash displayNames_, which remembers such display names with every relayout.
-     ****************************************************************************/
-    if(topLeft.column() == 0) {
-        bool relayout(false);
-        for(int i = topLeft.row(); i <= bottomRight.row(); ++i) {
-            QModelIndex index = topLeft.sibling(i, 0);
-            if(index.isValid() && displayNames_.contains(index)) {
-                auto file = proxyModel_->fileInfoFromIndex(index);
-                if(displayNames_[index] != file->displayName()) {
-                    relayout = true;
-                    break;
-                }
-            }
-        }
-        if(relayout) {
-            queueRelayout();
-            // parts of the old display name might still be visible if it's long
-            listView_->viewport()->update();
-        }
-    }
-}
-
 void DesktopWindow::onFolderStartLoading() { // desktop may be reloaded
     if(model_) {
         disconnect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
@@ -1255,7 +1226,6 @@ void DesktopWindow::relayoutItems() {
     if(screen == nullptr) {
         return;
     }
-    displayNames_.clear();
     loadItemPositions(); // something may have changed
     // qDebug("relayoutItems()");
     if(relayoutTimer_) {
@@ -1284,9 +1254,7 @@ void DesktopWindow::relayoutItems() {
             file->setTrustable(true);
             filesToTrust_.removeAll(QString::fromStdString(name));
         }
-        if(file->isDesktopEntry() || file->isShortcut()) {
-            // remember display names of desktop entries and shortcuts
-            displayNames_[index] = file->displayName();
+        else if(file->isDesktopEntry()) {
             trustOurDesktopShortcut(file);
          }
         auto find_it = customItemPos_.find(name);
