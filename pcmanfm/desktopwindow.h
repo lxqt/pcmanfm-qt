@@ -116,7 +116,6 @@ protected Q_SLOTS:
     void onRowsInserted(const QModelIndex& parent, int start, int end);
     void onLayoutChanged();
     void onModelSortFilterChanged();
-    void onDataChanged(const QModelIndex& topLeft, const QModelIndex& bottomRight);
     void onFolderStartLoading();
     void onFolderFinishLoading();
     void onFilesAdded(const Fm::FileInfoList files);
@@ -183,7 +182,6 @@ private:
 
     int screenNum_;
     std::unordered_map<std::string, QPoint> customItemPos_;
-    QHash<QModelIndex, QString> displayNames_; // only for desktop entries and shortcuts
     QTimer* relayoutTimer_;
     QTimer* selectionTimer_;
 
