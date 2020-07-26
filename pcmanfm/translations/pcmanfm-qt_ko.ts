@@ -1545,7 +1545,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="936"/>
         <source>Empty Trash</source>
-        <translation>빈 휴지통</translation>
+        <translation>휴지통 비우기</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="992"/>
