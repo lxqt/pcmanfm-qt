@@ -437,6 +437,14 @@ public:
         showTabClose_ = showTabClose;
     }
 
+    bool switchToNewTab() const {
+        return switchToNewTab_;
+    }
+
+    void setSwitchToNewTab(bool showTabClose) {
+        switchToNewTab_ = showTabClose;
+    }
+
     bool rememberWindowSize() const {
         return rememberWindowSize_;
     }
@@ -1037,6 +1045,7 @@ private:
 
     bool alwaysShowTabs_;
     bool showTabClose_;
+    bool switchToNewTab_;
     bool rememberWindowSize_;
     int fixedWindowWidth_;
     int fixedWindowHeight_;

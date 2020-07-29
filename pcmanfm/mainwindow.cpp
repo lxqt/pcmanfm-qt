@@ -662,6 +662,9 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     viewFrame->getTabBar()->insertTab(index, page->windowTitle());
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
+    if(settings.switchToNewTab()) {
+        viewFrame->getTabBar()->setCurrentIndex(index);
+    }
     if(!settings.alwaysShowTabs()) {
         viewFrame->getTabBar()->setVisible(viewFrame->getTabBar()->count() > 1);
     }
@@ -790,8 +793,7 @@ void MainWindow::on_actionGo_triggered() {
 
 void MainWindow::on_actionNewTab_triggered() {
     auto path = currentPage()->path();
-    int index = addTab(path);
-    activeViewFrame_->getTabBar()->setCurrentIndex(index);
+    addTab(path);
 }
 
 void MainWindow::on_actionNewWin_triggered() {
