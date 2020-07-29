@@ -385,6 +385,12 @@ public:
         showTabClose_ = showTabClose;
     }
 
+    bool reopenLastTabs() const {return reopenLastTabs_;}
+    void setReopenLastTabs(bool reopenLastTabs) {reopenLastTabs_ = reopenLastTabs;}
+
+    QStringList tabPaths() const {return tabPaths_;}
+    void setTabPaths(QStringList &tabPaths) {tabPaths_ = tabPaths;}
+
     bool rememberWindowSize() const {
         return rememberWindowSize_;
     }
@@ -948,6 +954,8 @@ private:
 
     bool alwaysShowTabs_;
     bool showTabClose_;
+    bool reopenLastTabs_;
+    QStringList tabPaths_;
     bool rememberWindowSize_;
     int fixedWindowWidth_;
     int fixedWindowHeight_;

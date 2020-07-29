@@ -80,6 +80,8 @@ Settings::Settings():
     desktopSortFolderFirst_(true),
     alwaysShowTabs_(true),
     showTabClose_(true),
+    reopenLastTabs_(true),
+    tabPaths_(),
     rememberWindowSize_(true),
     fixedWindowWidth_(640),
     fixedWindowHeight_(480),
@@ -306,6 +308,8 @@ bool Settings::loadFile(QString filePath) {
     rememberWindowSize_ = settings.value("RememberWindowSize", true).toBool();
     alwaysShowTabs_ = settings.value("AlwaysShowTabs", true).toBool();
     showTabClose_ = settings.value("ShowTabClose", true).toBool();
+    reopenLastTabs_ = settings.value("ReopenLastTabs", true).toBool();
+    tabPaths_ = settings.value("TabPaths", QStringList()).toStringList();
     splitterPos_ = settings.value("SplitterPos", 150).toInt();
     sidePaneMode_ = sidePaneModeFromString(settings.value("SidePaneMode").toString());
     showMenuBar_ = settings.value("ShowMenuBar", true).toBool();
@@ -445,6 +449,8 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue("RememberWindowSize", rememberWindowSize_);
     settings.setValue("AlwaysShowTabs", alwaysShowTabs_);
     settings.setValue("ShowTabClose", showTabClose_);
+    settings.setValue("ReopenLastTabs", reopenLastTabs_);
+    settings.setValue("TabPaths", tabPaths_);
     settings.setValue("SplitterPos", splitterPos_);
     settings.setValue("SidePaneMode", sidePaneModeToString(sidePaneMode_));
     settings.setValue("ShowMenuBar", showMenuBar_);

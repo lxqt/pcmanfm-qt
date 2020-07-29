@@ -522,6 +522,13 @@ only if there are more than one tab.</string>
               </property>
              </widget>
             </item>
+            <item row="5" column="0">
+             <widget class="QCheckBox" name="reopenLastTabs">
+              <property name="text">
+               <string>Reopen last tabs</string>
+              </property>
+             </widget>
+            </item>
            </layout>
           </widget>
          </item>
