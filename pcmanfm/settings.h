@@ -445,11 +445,21 @@ public:
         switchToNewTab_ = showTabClose;
     }
 
-    bool reopenLastTabs() const {return reopenLastTabs_;}
-    void setReopenLastTabs(bool reopenLastTabs) {reopenLastTabs_ = reopenLastTabs;}
+    bool reopenLastTabs() const {
+        return reopenLastTabs_;
+    }
 
-    QStringList tabPaths() const {return tabPaths_;}
-    void setTabPaths(QStringList &tabPaths) {tabPaths_ = tabPaths;}
+    void setReopenLastTabs(bool reopenLastTabs) {
+        reopenLastTabs_ = reopenLastTabs;
+    }
+
+    QStringList tabPaths() const {
+        return tabPaths_;
+    }
+
+    void setTabPaths(QStringList &tabPaths) {
+        tabPaths_ = tabPaths;
+    }
 
     bool rememberWindowSize() const {
         return rememberWindowSize_;
