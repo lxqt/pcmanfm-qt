@@ -67,6 +67,8 @@ private:
 
     void restartWarning(bool warn);
 
+    void showEvent(QShowEvent *event);
+
 private:
     Ui::PreferencesDialog ui;
     int warningCounter_;
