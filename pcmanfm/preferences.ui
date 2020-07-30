@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>685</width>
-    <height>440</height>
+    <height>549</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -71,7 +71,7 @@
         </sizepolicy>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>2</number>
        </property>
        <widget class="QWidget" name="behaviorPage">
         <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,1">
@@ -553,6 +553,13 @@ only if there are more than one tab.</string>
              <widget class="QSpinBox" name="fixedWindowHeight">
               <property name="maximum">
                <number>32768</number>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QCheckBox" name="reopenLastTabs">
+              <property name="text">
+               <string>Reopen last tabs</string>
               </property>
              </widget>
             </item>

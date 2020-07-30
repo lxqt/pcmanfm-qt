@@ -335,6 +335,18 @@ MainWindow::MainWindow(Fm::FilePath path):
     connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionFileProperties_triggered);
 
     addViewFrame(path);
+    if(settings.reopenLastTabs())
+    {
+      QStringList ps = settings.tabPaths();
+      setUpdatesEnabled(false);
+      for(QString &p : ps)
+      {
+        QByteArray b = p.toLocal8Bit();
+        if(strcmp(b.data(), path.uri().get()) == 0) continue;
+        addTab(Fm::FilePath::fromPathStr(b.constData()));
+      }
+      setUpdatesEnabled(true);
+    }
     if(splitView_) {
         // put the menu button on the right (there's no path bar/entry on the toolbar)
         QWidget* w = new QWidget(this);
@@ -1183,6 +1195,18 @@ void MainWindow::closeEvent(QCloseEvent* event) {
             settings.setLastWindowWidth(width());
             settings.setLastWindowHeight(height());
         }
+    }
+    if(settings.reopenLastTabs())
+    {
+      QStringList l;
+      for(int i = 0; i < activeViewFrame_->getTabBar()->count(); i++)
+      {
+        TabPage *p = reinterpret_cast<TabPage*>(
+              activeViewFrame_->getStackedWidget()->widget(i));
+        QString s;
+        l.append(s.fromLocal8Bit(p->path().uri().get()));
+      }
+      settings.setTabPaths(l);
     }
 }
 

@@ -86,6 +86,8 @@ Settings::Settings():
     alwaysShowTabs_(true),
     showTabClose_(true),
     switchToNewTab_(false),
+    reopenLastTabs_(true),
+    tabPaths_(),
     rememberWindowSize_(true),
     fixedWindowWidth_(640),
     fixedWindowHeight_(480),
@@ -332,6 +334,8 @@ bool Settings::loadFile(QString filePath) {
     alwaysShowTabs_ = settings.value(QStringLiteral("AlwaysShowTabs"), true).toBool();
     showTabClose_ = settings.value(QStringLiteral("ShowTabClose"), true).toBool();
     switchToNewTab_ = settings.value(QStringLiteral("SwitchToNewTab"), false).toBool();
+    reopenLastTabs_ = settings.value(QStringLiteral("ReopenLastTabs"), true).toBool();
+    tabPaths_ = settings.value(QStringLiteral("TabPaths"), QStringList()).toStringList();
     splitterPos_ = settings.value(QStringLiteral("SplitterPos"), 150).toInt();
     sidePaneVisible_ = settings.value(QStringLiteral("SidePaneVisible"), true).toBool();
     sidePaneMode_ = sidePaneModeFromString(settings.value(QStringLiteral("SidePaneMode")).toString());
@@ -481,6 +485,8 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("AlwaysShowTabs"), alwaysShowTabs_);
     settings.setValue(QStringLiteral("ShowTabClose"), showTabClose_);
     settings.setValue(QStringLiteral("SwitchToNewTab"), switchToNewTab_);
+    settings.setValue(QStringLiteral("ReopenLastTabs"), reopenLastTabs_);
+    settings.setValue(QStringLiteral("TabPaths"), tabPaths_);
     settings.setValue(QStringLiteral("SplitterPos"), splitterPos_);
     settings.setValue(QStringLiteral("SidePaneVisible"), sidePaneVisible_);
     settings.setValue(QStringLiteral("SidePaneMode"), QString::fromUtf8(sidePaneModeToString(sidePaneMode_)));
