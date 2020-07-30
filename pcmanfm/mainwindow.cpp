@@ -664,6 +664,10 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     Settings& settings = static_cast<Application*>(qApp)->settings();
     if(settings.switchToNewTab()) {
         viewFrame->getTabBar()->setCurrentIndex(index);
+        if (isMinimized()) {
+            setWindowState((windowState() & ~Qt::WindowMinimized) | Qt::WindowActive);
+            show();
+        }
     }
     if(!settings.alwaysShowTabs()) {
         viewFrame->getTabBar()->setVisible(viewFrame->getTabBar()->count() > 1);
