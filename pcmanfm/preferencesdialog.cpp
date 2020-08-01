@@ -48,34 +48,6 @@ PreferencesDialog::PreferencesDialog(QString activePage, QWidget* parent):
 
     selectPage(activePage);
     adjustSize();
-    auto applyEnable = [](PreferencesDialog &d){
-        d.ui.buttonBox->button(QDialogButtonBox::Ok)->setEnabled(true);
-    };
-    QList<QWidget *> widgets = findChildren<QWidget *>();
-    for(QWidget *w : widgets)
-    {
-        if(w->inherits("QCheckBox") || w->inherits("QRadioButton"))
-            connect(reinterpret_cast<QCheckBox*>(w), &QAbstractButton::toggled,
-            [&]{
-                applyEnable(*this);
-            });
-        else if(w->inherits("QComboBox"))
-            connect(reinterpret_cast<QComboBox*>(w),
-                  qOverload<const QString&>(&QComboBox::currentTextChanged),
-            [&]{
-                applyEnable(*this);
-            });
-        else if(w->inherits("QSpinBox"))
-            connect(reinterpret_cast<QSpinBox*>(w), qOverload<int>(&QSpinBox::valueChanged),
-            [&]{
-                applyEnable(*this);
-            });
-        else if(w->inherits("QLineEdit"))
-            connect(reinterpret_cast<QLineEdit*>(w), qOverload<const QString&>(&QLineEdit::textChanged),
-            [&]{
-                applyEnable(*this);
-            });
-    }
 }
 
 PreferencesDialog::~PreferencesDialog() {
@@ -450,12 +422,6 @@ void PreferencesDialog::restartWarning(bool warn) {
         --warningCounter_;
     }
     ui.warningLabel->setVisible(warningCounter_ > 0);
-}
-
-void PreferencesDialog::showEvent(QShowEvent *event)
-{
-    QDialog::showEvent(event);
-    ui.buttonBox->button(QDialogButtonBox::Ok)->setEnabled(false);
 }
 
 } // namespace PCManFM
