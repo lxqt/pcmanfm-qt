@@ -1188,6 +1188,23 @@ void MainWindow::closeEvent(QCloseEvent* event) {
             settings.setLastWindowHeight(height());
         }
     }
+
+    // remember last tab paths only if this is the last window
+    QStringList tabPaths;
+    if(lastActive_ == nullptr && settings.reopenLastTabs()) {
+        for(int i = 0; i < ui.viewSplitter->count(); ++i) {
+            if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i))) {
+                int n = viewFrame->getStackedWidget()->count();
+                for(int j = 0; j < n; ++j) {
+                    if(TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j))) {
+                        tabPaths.append(QString::fromUtf8(page->path().toString().get()));
+                    }
+                }
+            }
+        }
+        tabPaths.removeDuplicates();
+    }
+    settings.setTabPaths(tabPaths);
 }
 
 void MainWindow::onTabBarCurrentChanged(int index) {
