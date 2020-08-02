@@ -119,7 +119,9 @@ public:
     explicit TabPage(QWidget* parent = nullptr);
     virtual ~TabPage();
 
-    void chdir(Fm::FilePath newPath, bool addHistory = true);
+    /// inBackground: open the path later when user will select the tab
+    ///   to avoid time-consuming operations at a wrong time
+    void chdir(Fm::FilePath newPath, bool addHistory = true, bool inBackground = false);
 
     Fm::FolderView::ViewMode viewMode() {
         return folderSettings_.viewMode();
@@ -317,6 +319,9 @@ private:
     FolderSettings folderSettings_;
     QTimer* selectionTimer_;
     FilterBar* filterBar_;
+    /// the tab page is in background state continue opening new path when a user
+    /// actually switch to the tab
+    bool delayedChdir_ = false;
 };
 
 }

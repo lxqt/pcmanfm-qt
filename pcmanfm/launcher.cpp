@@ -44,7 +44,7 @@ bool Launcher::openFolder(GAppLaunchContext* /*ctx*/, const Fm::FileInfoList& fo
     MainWindow* mainWindow = mainWindow_;
     Fm::FilePath path = fi->path();
     if(!mainWindow) {
-        mainWindow = new MainWindow(std::move(path));
+        mainWindow = new MainWindow(std::move(path), true);
         mainWindow->resize(app->settings().windowWidth(), app->settings().windowHeight());
 
         if(app->settings().windowMaximized()) {

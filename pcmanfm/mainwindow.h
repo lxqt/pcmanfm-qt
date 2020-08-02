@@ -77,7 +77,8 @@ class Settings;
 class MainWindow : public QMainWindow {
     Q_OBJECT
 public:
-    MainWindow(Fm::FilePath path = Fm::FilePath());
+    /// don't reopen last tabs in some cases like d&d
+    MainWindow(Fm::FilePath path = Fm::FilePath(), bool allowReopenLastTabs = false);
     virtual ~MainWindow();
 
     void chdir(Fm::FilePath path, ViewFrame* viewFrame);
@@ -85,7 +86,7 @@ public:
         chdir(path, activeViewFrame_);
     }
 
-    int addTab(Fm::FilePath path, ViewFrame* viewFrame);
+    int addTab(Fm::FilePath path, ViewFrame* viewFrame, bool toBackground = false);
     int addTab(Fm::FilePath path) {
         return addTab(path, activeViewFrame_);
     }
@@ -252,7 +253,9 @@ private:
     void createPathBar(bool usePathButtons);
     void addViewFrame(const Fm::FilePath& path);
     ViewFrame* viewFrameForTabPage(TabPage* page);
-    int addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path = Fm::FilePath());
+    /// toBackground arg: create background tab & don't try to open the path
+    int addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path = Fm::FilePath(),
+                       bool toBackground = false);
     void dropTab();
 
 private:

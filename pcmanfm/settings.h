@@ -1063,6 +1063,7 @@ private:
     bool showTabClose_;
     bool switchToNewTab_;
     bool reopenLastTabs_;
+    /// format: for split view use one empty string to delimit two lists
     QStringList tabPaths_;
     bool rememberWindowSize_;
     int fixedWindowWidth_;

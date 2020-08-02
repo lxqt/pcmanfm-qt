@@ -540,8 +540,11 @@ QString TabPage::pathName() {
     return QString::fromUtf8(disp_path.get());
 }
 
-void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
+void TabPage::chdir(Fm::FilePath newPath, bool addHistory, bool inBackground) {
     // qDebug() << "TABPAGE CHDIR:" << newPath.toString().get();
+    if(newPath == Fm::FilePath() && !delayedChdir_) {
+        return; // empty newPath is for continuing loading of background tab only
+    }
     if(filterBar_){
         filterBar_->clear();
     }
@@ -549,6 +552,9 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
         // we're already in the specified dir
         if(newPath == folder_->path()) {
             return;
+        }
+        if(delayedChdir_) {  // continue loading background tab
+            newPath = folder_->path();
         }
 
         // reset the status selected text
@@ -576,13 +582,23 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
         freeFolder();
     }
 
-    Q_EMIT titleChanged(QString::fromUtf8(newPath.baseName().get()));  // FIXME: display name
-
     folder_ = Fm::Folder::fromPath(newPath);
-    if(addHistory) {
+    if(addHistory && !delayedChdir_) { // don't add history second time when delayed chdir
         // add current path to browse history
         history_.add(path());
     }
+
+    delayedChdir_ = false;
+    if(inBackground) {
+        // set temp name before continue loading
+        //setWindowTitle(QString::fromUtf8(folder_->path().displayName().get()));
+        setWindowTitle(QString::fromUtf8(folder_->path().baseName().get()));
+        delayedChdir_ = true;
+        return; //interrupt loading until user selects the tab
+    }
+
+    Q_EMIT titleChanged(QString::fromUtf8(newPath.baseName().get()));  // FIXME: display name
+
     connect(folder_.get(), &Fm::Folder::startLoading, this, &TabPage::onFolderStartLoading);
     connect(folder_.get(), &Fm::Folder::finishLoading, this, &TabPage::onFolderFinishLoading);
 

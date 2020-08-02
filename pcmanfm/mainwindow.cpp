@@ -118,7 +118,7 @@ void ViewFrame::removeTopBar() {
 // static
 QPointer<MainWindow> MainWindow::lastActive_;
 
-MainWindow::MainWindow(Fm::FilePath path):
+MainWindow::MainWindow(Fm::FilePath path, bool allowReopenLastTabs):
     QMainWindow(),
     pathEntry_(nullptr),
     pathBar_(nullptr),
@@ -335,18 +335,6 @@ MainWindow::MainWindow(Fm::FilePath path):
     connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionFileProperties_triggered);
 
     addViewFrame(path);
-    if(settings.reopenLastTabs())
-    {
-        QStringList ps = settings.tabPaths();
-        setUpdatesEnabled(false);
-        for(QString &p : ps)
-        {
-            QByteArray b = p.toLocal8Bit();
-            if(strcmp(b.data(), path.uri().get()) == 0) continue;
-            addTab(Fm::FilePath::fromPathStr(b.constData()));
-        }
-        setUpdatesEnabled(true);
-    }
     if(splitView_) {
         // put the menu button on the right (there's no path bar/entry on the toolbar)
         QWidget* w = new QWidget(this);
@@ -361,6 +349,31 @@ MainWindow::MainWindow(Fm::FilePath path):
     else {
         ui.actionSplitView->setChecked(false);
         setAcceptDrops(true); // we want tab dnd in the simple mode
+    }
+    if(allowReopenLastTabs && settings.reopenLastTabs()) {
+        QStringList l = settings.tabPaths();
+        setUpdatesEnabled(false);
+        int i = 0;
+        for(QString &p : l) {
+            if(p == QLatin1String()) {
+                if(i < ui.viewSplitter->count() - 1) i++; //fill next view frame
+                continue;
+            }
+            QByteArray b = p.toLocal8Bit();
+            FilePath fp = Fm::FilePath::fromPathStr(b.constData()); //p.toLatin1().data());
+            // dont try to check network path as it's time-consuming op
+            if(QLatin1String(fp.uriScheme().get()) != QLatin1String("network")) {
+                if(!Fm::uriExists(b.constData())) {
+                    continue;
+                }
+            }
+            if(path != Fm::FilePath())
+                if(strcmp(b.data(), path.uri().get()) == 0) continue; // remove dups
+            ViewFrame* f = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i));
+            // add reopened tabs to background and avoid to load time-consuming uris like smb://
+            addTab(fp, f, true);
+        }
+        setUpdatesEnabled(true);
     }
     createPathBar(settings.pathBarButtons());
 
@@ -655,7 +668,8 @@ void MainWindow::createPathBar(bool usePathButtons) {
     }
 }
 
-int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path) {
+int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path,
+                               bool toBackground) {
     if(page == nullptr || viewFrame == nullptr) {
         return -1;
     }
@@ -669,12 +683,12 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     connect(page, &TabPage::folderUnmounted, this, &MainWindow::onFolderUnmounted);
 
     if(path) {
-        page->chdir(path, true);
+        page->chdir(path, true, toBackground);
     }
     viewFrame->getTabBar()->insertTab(index, page->windowTitle());
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    if(settings.switchToNewTab()) {
+    if(!toBackground && settings.switchToNewTab()) {
         viewFrame->getTabBar()->setCurrentIndex(index);
     }
     if(!settings.alwaysShowTabs()) {
@@ -684,9 +698,9 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
 }
 
 // add a new tab
-int MainWindow::addTab(Fm::FilePath path, ViewFrame* viewFrame) {
+int MainWindow::addTab(Fm::FilePath path, ViewFrame* viewFrame, bool toBackground) {
     TabPage* newPage = new TabPage(this);
-    return addTabWithPage(newPage, viewFrame, path);
+    return addTabWithPage(newPage, viewFrame, path, toBackground);
 }
 
 void MainWindow::toggleMenuBar(bool /*checked*/) {
@@ -1196,15 +1210,23 @@ void MainWindow::closeEvent(QCloseEvent* event) {
             settings.setLastWindowHeight(height());
         }
     }
-    if(settings.reopenLastTabs())
-    {
+    if(settings.reopenLastTabs()) {
+        // don't save single tab. it will be replaced with newly opened path
+        if(ui.viewSplitter->count() <= 1 && activeViewFrame_->getTabBar()->count() <= 1)
+            return;
         QStringList l;
-        for(int i = 0; i < activeViewFrame_->getTabBar()->count(); i++)
-        {
-            TabPage *p = reinterpret_cast<TabPage*>(
-                  activeViewFrame_->getStackedWidget()->widget(i));
-            QString s;
-            l.append(s.fromLocal8Bit(p->path().uri().get()));
+        for(int i = 0; ;) { //consider splitView
+            ViewFrame* f = qobject_cast<ViewFrame*>(ui.viewSplitter->widget(i));
+            if(!f) continue;
+            for(int i = 0; i < f->getTabBar()->count(); i++) {
+                TabPage *p = reinterpret_cast<TabPage*>(f->getStackedWidget()->widget(i));
+                l.append(QLatin1String(p->path().uri().get()));
+            }
+            i++;
+            if(i < ui.viewSplitter->count())
+                l.append(QLatin1String());
+            else
+                break;
         }
         settings.setTabPaths(l);
     }
@@ -1391,6 +1413,7 @@ void MainWindow::updateUIForCurrentPage(bool setFocus) {
 
         updateViewMenuForCurrentPage();
         updateStatusBarForCurrentPage();
+        tabPage->chdir(Fm::FilePath()); // continue loading a path for backgroud tab
     }
 
     // also update the enabled state of Edit actions
