@@ -362,7 +362,7 @@ MainWindow::MainWindow(Fm::FilePath path, bool allowReopenLastTabs):
             QByteArray b = p.toLocal8Bit();
             FilePath fp = Fm::FilePath::fromPathStr(b.constData()); //p.toLatin1().data());
             // dont try to check network path as it's time-consuming op
-            if(QLatin1String(fp.uriScheme().get()) != QLatin1String("network")) {
+            if(!fp.hasUriScheme("network")) {
                 if(!Fm::uriExists(b.constData())) {
                     continue;
                 }

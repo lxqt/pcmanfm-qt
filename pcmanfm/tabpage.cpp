@@ -592,7 +592,9 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory, bool inBackground) {
     if(inBackground) {
         // set temp name before continue loading
         //setWindowTitle(QString::fromUtf8(folder_->path().displayName().get()));
-        setWindowTitle(QString::fromUtf8(folder_->path().baseName().get()));
+        QString t = QString::fromUtf8((folder_->path().hasUriScheme("network") ?
+                    folder_->path().displayName() : folder_->path().baseName()).get());
+        setWindowTitle(t);
         delayedChdir_ = true;
         return; //interrupt loading until user selects the tab
     }
