@@ -249,16 +249,18 @@ bool Application::parseCommandLineArgs() {
         }
         else {
             if(!parser.isSet(desktopOption) && !parser.isSet(desktopOffOption)) {
+                bool reopenLastTabs = false;
                 QStringList paths = parser.positionalArguments();
                 if(paths.isEmpty()) {
                     // if no path is specified and we're using daemon mode,
                     // don't open current working directory
                     if(!daemonMode_) {
+                        reopenLastTabs = true; // open last tab paths only if no path is specified
                         paths.push_back(QDir::currentPath());
                     }
                 }
                 if(!paths.isEmpty()) {
-                    launchFiles(QDir::currentPath(), paths, parser.isSet(newWindowOption));
+                    launchFiles(QDir::currentPath(), paths, parser.isSet(newWindowOption), reopenLastTabs);
                 }
                 keepRunning = true;
             }
@@ -293,11 +295,13 @@ bool Application::parseCommandLineArgs() {
         }
         else {
             if(!parser.isSet(desktopOption) && !parser.isSet(desktopOffOption)) {
+                bool reopenLastTabs = false;
                 QStringList paths = parser.positionalArguments();
                 if(paths.isEmpty()) {
+                    reopenLastTabs = true; // open last tab paths only if no path is specified
                     paths.push_back(QDir::currentPath());
                 }
-                iface.call(QStringLiteral("launchFiles"), QDir::currentPath(), paths, parser.isSet(newWindowOption));
+                iface.call(QStringLiteral("launchFiles"), QDir::currentPath(), paths, parser.isSet(newWindowOption), reopenLastTabs);
             }
         }
     }
@@ -505,9 +509,18 @@ void Application::connectToServer() {
     dlg->show();
 }
 
-void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) {
+void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow, bool reopenLastTabs) {
     Fm::FilePathList pathList;
     Fm::FilePath cwd_path;
+
+    reopenLastTabs = reopenLastTabs && settings_.reopenLastTabs() && !settings_.tabPaths().isEmpty();
+    if(reopenLastTabs) {
+        paths = settings_.tabPaths();
+        paths.removeDuplicates();
+        // forget tab paths with next windows until the last one is closed
+        settings_.setTabPaths(QStringList());
+    }
+
     for(const QString& it : qAsConst(paths)) {
         QByteArray pathName = it.toLocal8Bit();
         Fm::FilePath path;
@@ -548,6 +561,24 @@ void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow) 
     }
     else {
         Launcher(nullptr).launchPaths(nullptr, pathList);
+    }
+
+    // if none of the last tabs can be opened and there is no main window yet,
+    // open the current directory
+    if(reopenLastTabs) {
+        bool hasWindow = false;
+        const QWidgetList windows = topLevelWidgets();
+        for(const auto& win : windows) {
+            if(win->inherits("PCManFM::MainWindow")) {
+                hasWindow = true;
+                break;
+            }
+        }
+        if(!hasWindow) {
+            paths.clear();
+            paths.push_back(QDir::currentPath());
+            launchFiles(QDir::currentPath(), paths, inNewWindow, false);
+        }
     }
 }
 
