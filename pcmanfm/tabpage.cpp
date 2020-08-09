@@ -314,9 +314,7 @@ void TabPage::onFolderStartLoading() {
 }
 
 void TabPage::onUiUpdated() {
-    // scroll to recorded position
-    folderView_->childView()->verticalScrollBar()->setValue(browseHistory().currentScrollPos());
-
+    bool scrolled = false;
     // if the current folder is the parent folder of the last browsed folder,
     // select the folder item in current view.
     if(lastFolderPath_ && lastFolderPath_.parent() == path()) {
@@ -324,13 +322,17 @@ void TabPage::onUiUpdated() {
         if(index.isValid()) {
             folderView_->childView()->scrollTo(index, QAbstractItemView::EnsureVisible);
             folderView_->childView()->setCurrentIndex(index);
+            scrolled = true;
         }
     }
-    else { // set the first item as current
+    if(!scrolled) {
+        // set the first item as current
         QModelIndex firstIndx = proxyModel_->index(0, 0);
         if (firstIndx.isValid()) {
             folderView_->selectionModel()->setCurrentIndex(firstIndx, QItemSelectionModel::NoUpdate);
         }
+        // scroll to recorded position
+        folderView_->childView()->verticalScrollBar()->setValue(browseHistory().currentScrollPos());
     }
 
     if(folderModel_) {
