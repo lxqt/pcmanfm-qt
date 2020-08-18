@@ -1048,13 +1048,6 @@ private:
     bool shadowHidden_;
     bool noItemTooltip_;
 
-    bool placesHome_;
-    bool placesDesktop_;
-    bool placesApplications_;
-    bool placesTrash_;
-    bool placesRoot_;
-    bool placesComputer_;
-    bool placesNetwork_;
     QSet<QString> hiddenPlaces_;
 
     int bigIconSize_;
