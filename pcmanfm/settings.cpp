@@ -124,13 +124,6 @@ Settings::Settings():
     showFullNames_(true),
     shadowHidden_(true),
     noItemTooltip_(false),
-    placesHome_(true),
-    placesDesktop_(true),
-    placesApplications_(true),
-    placesTrash_(true),
-    placesRoot_(true),
-    placesComputer_(true),
-    placesNetwork_(true),
     bigIconSize_(48),
     smallIconSize_(24),
     sidePaneIconSize_(24),
@@ -313,13 +306,6 @@ bool Settings::loadFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Places"));
-    placesHome_ = settings.value(QStringLiteral("PlacesHome"), true).toBool();
-    placesDesktop_ = settings.value(QStringLiteral("PlacesDesktop"), true).toBool();
-    placesApplications_ = settings.value(QStringLiteral("PlacesApplications"), true).toBool();
-    placesTrash_ = settings.value(QStringLiteral("PlacesTrash"), true).toBool();
-    placesRoot_ = settings.value(QStringLiteral("PlacesRoot"), true).toBool();
-    placesComputer_ = settings.value(QStringLiteral("PlacesComputer"), true).toBool();
-    placesNetwork_ = settings.value(QStringLiteral("PlacesNetwork"), true).toBool();
     hiddenPlaces_ = settings.value(QStringLiteral("HiddenPlaces")).toStringList().toSet();
     settings.endGroup();
 
@@ -458,13 +444,6 @@ bool Settings::saveFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Places"));
-    settings.setValue(QStringLiteral("PlacesHome"), placesHome_);
-    settings.setValue(QStringLiteral("PlacesDesktop"), placesDesktop_);
-    settings.setValue(QStringLiteral("PlacesApplications"), placesApplications_);
-    settings.setValue(QStringLiteral("PlacesTrash"), placesTrash_);
-    settings.setValue(QStringLiteral("PlacesRoot"), placesRoot_);
-    settings.setValue(QStringLiteral("PlacesComputer"), placesComputer_);
-    settings.setValue(QStringLiteral("PlacesNetwork"), placesNetwork_);
     if(hiddenPlaces_.isEmpty()) { // don't save "@Invalid()"
         settings.remove(QStringLiteral("HiddenPlaces"));
     }
