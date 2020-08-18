@@ -588,63 +588,6 @@ public:
         sortCaseSensitive_ = value;
     }
 
-
-    bool placesHome() const {
-        return placesHome_;
-    }
-
-    void setPlacesHome(bool placesHome) {
-        placesHome_ = placesHome;
-    }
-
-    bool placesDesktop() const {
-        return placesDesktop_;
-    }
-
-    void setPlacesDesktop(bool placesDesktop) {
-        placesDesktop_ = placesDesktop;
-    }
-
-    bool placesApplications() const {
-        return placesApplications_;
-    }
-
-    void setPlacesApplications(bool placesApplications) {
-        placesApplications_ = placesApplications;
-    }
-
-    bool placesTrash() const {
-        return placesTrash_;
-    }
-
-    void setPlacesTrash(bool placesTrash) {
-        placesTrash_ = placesTrash;
-    }
-
-    bool placesRoot() const {
-        return placesRoot_;
-    }
-
-    void setPlacesRoot(bool placesRoot) {
-        placesRoot_ = placesRoot;
-    }
-
-    bool placesComputer() const {
-        return placesComputer_;
-    }
-
-    void setPlacesComputer(bool placesComputer) {
-        placesComputer_ = placesComputer;
-    }
-
-    bool placesNetwork() const {
-        return placesNetwork_;
-    }
-
-    void setPlacesNetwork(bool placesNetwork) {
-        placesNetwork_ = placesNetwork;
-    }
-
     QSet<QString> getHiddenPlaces() const {
         return hiddenPlaces_;
     }
@@ -657,7 +600,6 @@ public:
             hiddenPlaces_.remove(str);
         }
     }
-
 
     Qt::SortOrder sortOrder() const {
         return sortOrder_;
