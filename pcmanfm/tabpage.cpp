@@ -36,7 +36,6 @@
 #include "settings.h"
 #include "application.h"
 #include <QTimer>
-#include <QTextStream>
 #include <QDebug>
 
 using namespace Fm;
@@ -340,6 +339,21 @@ void TabPage::onUiUpdated() {
         connect(folderModel_, &Fm::FolderModel::fileSizeChanged, this, &TabPage::onFileSizeChanged);
         // get ready to select files that may be added later
         connect(folderModel_, &Fm::FolderModel::filesAdded, this, &TabPage::onFilesAdded);
+    }
+
+    // in the single-click mode, set the cursor shape of the view to a pointing hand
+    // only if there is an item under it
+    if(folderView_->style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick)) {
+        QTimer::singleShot(0, folderView_, [this] {
+            QPoint pos = folderView_->childView()->mapFromGlobal(QCursor::pos());
+            QModelIndex index = folderView_->childView()->indexAt(pos);
+            if(index.isValid()) {
+                folderView_->setCursor(Qt::PointingHandCursor);
+            }
+            else {
+                folderView_->setCursor(Qt::ArrowCursor);
+            }
+        });
     }
 }
 
