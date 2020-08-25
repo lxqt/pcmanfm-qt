@@ -444,13 +444,8 @@ bool Settings::saveFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Places"));
-    if(hiddenPlaces_.isEmpty()) { // don't save "@Invalid()"
-        settings.remove(QStringLiteral("HiddenPlaces"));
-    }
-    else {
-        QStringList hiddenPlaces = hiddenPlaces_.toList();
-        settings.setValue(QStringLiteral("HiddenPlaces"), hiddenPlaces);
-    }
+    QStringList hiddenPlaces = hiddenPlaces_.toList();
+    settings.setValue(QStringLiteral("HiddenPlaces"), hiddenPlaces);
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Window"));
@@ -464,12 +459,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("ShowTabClose"), showTabClose_);
     settings.setValue(QStringLiteral("SwitchToNewTab"), switchToNewTab_);
     settings.setValue(QStringLiteral("ReopenLastTabs"), reopenLastTabs_);
-    if(tabPaths_.isEmpty()) { // don't save "@Invalid()" {
-        settings.remove(QStringLiteral("TabPaths"));
-    }
-    else {
-        settings.setValue(QStringLiteral("TabPaths"), tabPaths_);
-    }
+    settings.setValue(QStringLiteral("TabPaths"), tabPaths_);
     settings.setValue(QStringLiteral("SplitterPos"), splitterPos_);
     settings.setValue(QStringLiteral("SidePaneVisible"), sidePaneVisible_);
     settings.setValue(QStringLiteral("SidePaneMode"), QString::fromUtf8(sidePaneModeToString(sidePaneMode_)));
