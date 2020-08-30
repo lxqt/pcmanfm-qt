@@ -8,11 +8,11 @@ before_install:
   - sudo apt-get update -qq
 
 install:
-  - sudo apt-get -y install qt510base qt510x11extras qt510tools qt510translations libgl1-mesa-dev libfm-dev
+  - sudo apt-get -y install qt510base qt510x11extras qt510tools qt510translations libgl1-mesa-dev libfm-dev libmenu-cache-dev
   - source /opt/qt*/bin/qt*-env.sh
 
 script:
-  - Forked off 0.10.0 in an effort that it is simpler, needs fewer and less recent deps
+  # Forked off 0.10.0 in an effort that it is simpler, needs fewer and less recent deps
   - cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
   - make -j$(nproc)
   - make DESTDIR=appdir -j$(nproc) install ; find appdir/
