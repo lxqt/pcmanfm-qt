@@ -24,3 +24,13 @@ script:
   - chmod +x appimagetool-*.AppImage
   - ./appimagetool-*.AppImage deploy appdir/usr/share/applications/*.desktop --appimage-extract-and-run # Bundle EVERYTHING
   - ./appimagetool-*.AppImage appdir/ --appimage-extract-and-run # turn AppDir into AppImage
+  - rm -rf ./appimagetool-*.AppImage
+
+after_success:
+  - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
+  - bash upload.sh *.AppImage*
+  
+branches:
+  except:
+    - # Do not build tags that we create when we upload to GitHub Releases
+    - /^(?i:continuous)/
