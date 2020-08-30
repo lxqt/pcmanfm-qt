@@ -15,7 +15,11 @@ script:
   # Forked off 0.10.0 in an effort that it is simpler, needs fewer and less recent deps
   - cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
   - make -j$(nproc)
-  - make DESTDIR=appdir -j$(nproc) install ; find appdir/
+  - make DESTDIR=appdir -j$(nproc) install
+  - mkdir -p appdir/usr/share/icons/hicolor/256x256/apps
+  - wget "https://user-images.githubusercontent.com/2480569/91666346-3cbe8b00-eafc-11ea-8fcb-40c2c7f034dc.png" -O appdir/usr/share/icons/hicolor/256x256/apps/system-file-manager.png
+  - cp appdir/usr/share/icons/hicolor/256x256/apps/system-file-manager.png appdir/
+  - find appdir/
   - wget -c -q https://github.com/$(wget -q https://github.com/probonopd/go-appimage/releases -O - | grep "appimagetool-.*-x86_64.AppImage" | head -n 1 | cut -d '"' -f 2)
   - chmod +x appimagetool-*.AppImage
   - ./appimagetool-*.AppImage deploy appdir/usr/share/applications/*.desktop --appimage-extract-and-run # Bundle EVERYTHING
