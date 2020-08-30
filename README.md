@@ -1,4 +1,4 @@
-# Filer
+# Filer [![Build Status](https://travis-ci.com/probonopd/filer.svg?branch=fork)](https://travis-ci.com/probonopd/filer)
 
 A file manager that can also render the desktop. Intended to become a key component of https://github.com/probonopd/hello one day.
 
