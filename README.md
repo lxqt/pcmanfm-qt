@@ -1,15 +1,5 @@
-# PCManFM-Qt
+# Filer
 
-The Qt port of the LXDE file manager PCManFM.
+A file manager that can also render the desktop. Intended to become a key component of https://github.com/probonopd/hello one day.
 
-Includes libfm-qt, the qt port of the libfm-qt - a library providing components
-to build desktop file managers.
-
-Issue tracker:
-  https://github.com/lxde/pcmanfm-qt/issues
-
-LXQt website:
-  http://lxqt.org
-
-LXDE website:
-  http://lxde.org
+This is a fork of an earlier version of https://github.com/lxde/pcmanfm-qt, a Qt port of the LXDE file manager PCManFM.
