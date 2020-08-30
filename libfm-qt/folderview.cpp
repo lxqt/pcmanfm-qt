@@ -324,7 +324,7 @@ void FolderViewTreeView::reset() {
   // This is for performance reason so in this case rowsInserted() and rowsAboutToBeRemoved()
   // might not be called. Hence we also have to re-layout the columns when the model is reset.
   // This fixes bug #190
-  // https://github.com/lxde/pcmanfm-qt/issues/190
+  // https://github.com/lxde/filer-qt/issues/190
   QTreeView::reset();
   queueLayoutColumns();
 }

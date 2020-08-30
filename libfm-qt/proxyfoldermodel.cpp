@@ -120,7 +120,7 @@ bool ProxyFolderModel::lessThan(const QModelIndex& left, const QModelIndex& righ
 
     if(Q_UNLIKELY(!leftInfo || !rightInfo)) {
       // In theory, this should not happen, but it's safer to add the null check.
-      // This is reported in https://github.com/lxde/pcmanfm-qt/issues/205
+      // This is reported in https://github.com/lxde/filer-qt/issues/205
       return false;
     }
 

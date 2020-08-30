@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(pcmanfm-qt)
+project(filer-qt)
 
 set(PCMANFM_QT_VERSION_MAJOR 0)
 set(PCMANFM_QT_VERSION_MINOR 10)
@@ -56,16 +56,16 @@ set(CMAKE_AUTOMOC TRUE)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 add_subdirectory(libfm-qt)
-add_subdirectory(pcmanfm)
+add_subdirectory(filer)
 
-# manpage for pcmanfm-qt
+# manpage for filer-qt
 configure_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/pcmanfm-qt.1.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt.1"
+    "${CMAKE_CURRENT_SOURCE_DIR}/filer-qt.1.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/filer-qt.1"
     @ONLY
 )
 install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/pcmanfm-qt.1"
+    "${CMAKE_CURRENT_BINARY_DIR}/filer-qt.1"
     DESTINATION "${CMAKE_INSTALL_MANDIR}/man1"
 )
 

@@ -13,7 +13,8 @@ install:
 
 script:
   # Forked off 0.10.0 in an effort that it is simpler, needs fewer and less recent deps
-  - cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+  - mkdir build ; cd build
+  - cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
   - make -j$(nproc)
   - make DESTDIR=appdir -j$(nproc) install
   - mkdir -p appdir/usr/share/icons/hicolor/256x256/apps

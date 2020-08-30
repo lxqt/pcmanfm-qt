@@ -28,7 +28,7 @@ DOXYFILE_ENCODING = UTF-8
 # identify the project. Note that if you do not use Doxywizard you need
 # to put quotes around the project name if it contains spaces.
 
-PROJECT_NAME = "PCManFM-Qt"
+PROJECT_NAME = "Filer-Qt"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number.
 # This could be handy for archiving the generated documentation or
@@ -654,7 +654,7 @@ WARN_LOGFILE =
 # directories like "/usr/src/myproject". Separate the files or directories
 # with spaces.
 
-INPUT = "@PROJECT_SOURCE_DIR@/libfm-qt" "@PROJECT_SOURCE_DIR@/pcmanfm"
+INPUT = "@PROJECT_SOURCE_DIR@/libfm-qt" "@PROJECT_SOURCE_DIR@/filer"
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding, which is
