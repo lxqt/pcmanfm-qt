@@ -1,0 +1,51 @@
+name: "CI"
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-16.04
+
+    steps:
+
+    - name: Environment
+      run: |
+        env
+        
+    - uses: actions/checkout@v1
+    
+    - name: Install Dependencies and get source code
+      run: |
+        sudo add-apt-repository ppa:beineri/opt-qt-5.10.1-xenial -y
+        sudo apt-get update -qq
+        sudo apt-get -y install qt510base qt510x11extras qt510tools qt510translations libgl1-mesa-dev libfm-dev libmenu-cache-dev
+        source /opt/qt*/bin/qt*-env.sh
+        
+    - name: Build
+      run: |
+        cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+        make -j$(nproc)
+        make DESTDIR=appdir -j$(nproc) install ; find appdir/
+        
+    - name: Put together AppDir
+      run: | 
+        find ./appdir
+        
+    - name: Generate AppImage
+      run: |
+        APPDIR=$(readlink -f appdir) # Why is this needed?
+        wget -c -q https://github.com/$(wget -q https://github.com/probonopd/go-appimage/releases -O - | grep "appimagetool-.*-x86_64.AppImage" | head -n 1 | cut -d '"' -f 2)
+        chmod +x appimagetool-*.AppImage
+        ./appimagetool-*.AppImage deploy "$APPDIR"/usr/share/applications/*.desktop --appimage-extract-and-run # Bundle EVERYTHING
+        ./appimagetool-*.AppImage "$APPDIR" --appimage-extract-and-run # turn AppDir into AppImage
+    - name: Release AppImage
+      uses: marvinpinto/action-automatic-releases@latest
+      with:
+        title: AppImage
+        automatic_release_tag: continuous
+        prerelease: true
+        draft: false
+        files: |
+          P*.AppImage*
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
