@@ -1,0 +1,18 @@
+freebsd_instance:
+  image: freebsd-11-1-release-amd64
+
+task:
+  # This name gets reported as a build status in GitHub
+  name: stable x86_64-unknown-freebsd
+  setup_script:
+    - pkg install -y fcmanfm cmake
+  test_script:
+    - mkdir build ; cd build
+    - cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+    - make -j$(nproc)
+    - make DESTDIR=appdir -j$(nproc) install
+    - mkdir -p appdir/usr/share/icons/hicolor/256x256/apps
+    - wget "https://user-images.githubusercontent.com/2480569/91666346-3cbe8b00-eafc-11ea-8fcb-40c2c7f034dc.png" -O appdir/usr/share/icons/hicolor/256x256/apps/system-file-manager.png
+    - cp appdir/usr/share/icons/hicolor/256x256/apps/system-file-manager.png appdir/
+    - rm -rf appdir/usr/include
+    - find appdir/
