@@ -61,22 +61,24 @@ PlacesModel::PlacesModel(QObject* parent):
   else
     computerItem = NULL;
 
-  // FIXME: add an option to hide applications:///
-  const char* applicaion_icon_names[] = {"system-software-install", "applications-accessories", "application-x-executable"};
-  // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
-  GIcon* gicon = g_themed_icon_new_from_names((char**)applicaion_icon_names, G_N_ELEMENTS(applicaion_icon_names));
-  FmIcon* fmicon = fm_icon_from_gicon(gicon);
-  g_object_unref(gicon);
-  applicationsItem = new PlacesModelItem(fmicon, tr("Applications"), fm_path_get_apps_menu());
-  fm_icon_unref(fmicon);
-  placesRoot->appendRow(applicationsItem);
+  // probono: We want to use the file manager itself to launch the apps, hence we do not show Applications in the sidebar
+  // probono: TODO: Show it but jump to something like /Applications and/or ~/Applications instead
+  //  // FIXME: add an option to hide applications:///
+  //  const char* applicaion_icon_names[] = {"system-software-install", "applications-accessories", "application-x-executable"};
+  //  // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
+  //  GIcon* gicon = g_themed_icon_new_from_names((char**)applicaion_icon_names, G_N_ELEMENTS(applicaion_icon_names));
+  //  FmIcon* fmicon = fm_icon_from_gicon(gicon);
+  //  g_object_unref(gicon);
+  //  applicationsItem = new PlacesModelItem(fmicon, tr("Applications"), fm_path_get_apps_menu());
+  //  fm_icon_unref(fmicon);
+  // placesRoot->appendRow(applicationsItem);
 
   // FIXME: add an option to hide network:///
   if(true) {
     const char* network_icon_names[] = {"network", "folder-network", "folder"};
     // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
-    gicon = g_themed_icon_new_from_names((char**)network_icon_names, G_N_ELEMENTS(network_icon_names));
-    fmicon = fm_icon_from_gicon(gicon);
+    GIcon* gicon = g_themed_icon_new_from_names((char**)network_icon_names, G_N_ELEMENTS(network_icon_names));
+    FmIcon* fmicon = fm_icon_from_gicon(gicon);
     g_object_unref(gicon);
     path = fm_path_new_for_uri("network:///");
     networkItem = new PlacesModelItem(fmicon, tr("Network"), path);

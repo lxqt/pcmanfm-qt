@@ -43,6 +43,7 @@ FolderModel::FolderModel() :
     ColumnMTime,
     NumOfColumns
 */
+  qDebug("probono: FolderModel created");
   thumbnailRefCounts.reserve(4);
 
   // reload all icons when the icon theme is changed
@@ -50,7 +51,7 @@ FolderModel::FolderModel() :
 }
 
 FolderModel::~FolderModel() {
-  qDebug("delete FolderModel");
+  qDebug("probono: FolderModel destroyed");
 
   if(folder_)
     setFolder(NULL);

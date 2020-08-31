@@ -21,6 +21,7 @@ link_directories(
 )
 
 set(libfm_SRCS
+    bundle.cpp # probono
     libfmqt.cpp
     bookmarkaction.cpp
     sidepane.cpp

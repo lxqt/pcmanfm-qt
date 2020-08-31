@@ -59,7 +59,7 @@ Settings::Settings():
   mountOnStartup_(true),
   mountRemovable_(true),
   autoRun_(true),
-  closeOnUnmount_(false),
+  closeOnUnmount_(true), // probono: Closes the window when the device/network share is unmounted. This is awesome!
   wallpaperMode_(0),
   wallpaper_(),
   desktopBgColor_(),
@@ -69,7 +69,7 @@ Settings::Settings():
   desktopShowHidden_(false),
   desktopSortOrder_(Qt::AscendingOrder),
   desktopSortColumn_(Fm::FolderModel::ColumnFileName),
-  alwaysShowTabs_(true),
+  alwaysShowTabs_(false), // probono: Do not show tabs when there is only one tab
   showTabClose_(true),
   rememberWindowSize_(true),
   fixedWindowWidth_(640),
@@ -92,13 +92,13 @@ Settings::Settings():
   confirmDelete_(true),
   noUsbTrash_(false),
   confirmTrash_(false),
-  quickExec_(false),
+  quickExec_(true), // probono: By default execute executable files without asking the user questions
   showThumbnails_(true),
   archiver_(),
   siUnit_(false),
   bigIconSize_(48),
   smallIconSize_(24),
-  sidePaneIconSize_(24),
+  sidePaneIconSize_(16), // probono: Use 16 instead of 24
   thumbnailIconSize_(128) {
 }
 
@@ -151,7 +151,7 @@ bool Settings::loadFile(QString filePath) {
     fallbackIconThemeName_ = "elementary"; // fallback icon theme name
   }
   suCommand_ = settings.value("SuCommand", "gksu %s").toString();
-  setTerminal(settings.value("Terminal", "xterm").toString());
+  setTerminal(settings.value("Terminal", "xterm").toString()); // probono: TODO: Check if qterminal is on the $PATH and if it is, prefer it over xterm
   setArchiver(settings.value("Archiver", "file-roller").toString());
   setSiUnit(settings.value("SIUnit", false).toBool());
 
@@ -170,7 +170,7 @@ bool Settings::loadFile(QString filePath) {
   confirmDelete_ = settings.value("ConfirmDelete", true).toBool();
   setNoUsbTrash(settings.value("NoUsbTrash", false).toBool());
   confirmTrash_ = settings.value("ConfirmTrash", false).toBool();
-  setQuickExec(settings.value("QuickExec", false).toBool());
+  setQuickExec(settings.value("QuickExec", true).toBool()); // probono: Do not ask what to do with executable files when they are double-clicked and have the executable bit set
   // bool thumbnailLocal_;
   // bool thumbnailMax;
   settings.endGroup();
@@ -220,7 +220,7 @@ bool Settings::loadFile(QString filePath) {
   // override config in libfm's FmConfig
   bigIconSize_ = settings.value("BigIconSize", 48).toInt();
   smallIconSize_ = settings.value("SmallIconSize", 24).toInt();
-  sidePaneIconSize_ = settings.value("SidePaneIconSize", 24).toInt();
+  sidePaneIconSize_ = settings.value("SidePaneIconSize", 16).toInt(); // probono: 16 instead of 24
   thumbnailIconSize_ = settings.value("ThumbnailIconSize", 128).toInt();
   settings.endGroup();
 

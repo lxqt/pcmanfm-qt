@@ -25,97 +25,142 @@
 #include "execfiledialog_p.h"
 #include "appchooserdialog.h"
 #include "utilities.h"
+#include "bundle.h"
 
 using namespace Fm;
 
 FmFileLauncher FileLauncher::funcs = {
-  FileLauncher::_getApp,
-  /* gboolean (*before_open)(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data); */
-  (FmLaunchFolderFunc)FileLauncher::_openFolder,
-  FileLauncher::_execFile,
-  FileLauncher::_error,
-  FileLauncher::_ask
+    FileLauncher::_getApp,
+    /* gboolean (*before_open)(GAppLaunchContext* ctx, GList* folder_infos, gpointer user_data); */
+    (FmLaunchFolderFunc)FileLauncher::_openFolder,
+    FileLauncher::_execFile,
+    FileLauncher::_error,
+    FileLauncher::_ask
 };
 
 FileLauncher::FileLauncher():
-  quickExec_(false) {
+    quickExec_(false) {
+    qDebug() << "probono: FileLauncher created";
 }
 
 FileLauncher::~FileLauncher() {
+    qDebug() << "probono: FileLauncher freed";
 }
 
 //static
 bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
-  FmAppLaunchContext* context = fm_app_launch_context_new_for_widget(parent);
-  bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), file_infos, &funcs, this);
-  g_object_unref(context);
-  return ret;
+    qDebug() << "probono: FileLauncher::launchFiles called";
+    qDebug() << "probono: LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+    qDebug() << "probono: TODO: Determine whether it is an AppDir/.app bundle and if so, set the path that is handed over to fm_launch_files to the file that should actually be executed";
+    // probono: This gets invoked when an icon is double clicked or "Open" is selected from the context menu
+    // but not if "Open with..." is selected from the context menu
+    // GAppLaunchContext is a concept from
+    // GIO - GLib Input, Output and Streaming Library
+    // by Red Hat, Inc.
+    // https://developer.gnome.org/gio/stable/GAppInfo.html
+    // probono: Is there a way to get rid of any remnants of Red Hat and Gnome? This would mean replacing libfm and glib
+    // probono: file_infos is a GList of FileInfos. For each of the FileInfos we need to get the path and from that we need to determine whether we have an AppDir/.app bundle and if so, take action
+    // probono: Maybe instead of using fm_launch_files we should use fm_launch_desktop_entry to get things like "pin in Dock" which possibly only works when an application was launched through a desktop file?
+    //
+    // probono: Look at the implementations of fm_launch_files and fm_launch_desktop_entry to see what they are doing internally, and do similar things for AppDir/.app bundle
+    // probono: Interestingly, for the actual launching they call back to this file
+    // probono: See https://github.com/lxde/libfm/blob/master/src/base/fm-file-launcher.c
+
+    FmAppLaunchContext* context = fm_app_launch_context_new_for_widget(parent);
+    // Since fm_launch_files needs all items to be opened in multiple tabs at once, we need
+    // to construct a list that contains those that are not bundles
+    GList* itemsToBeLaunched = NULL;
+    for(GList* l = file_infos; l; l = l->next) {
+        FmFileInfo* info = FM_FILE_INFO(l->data);
+        bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
+        if(isAppDirOrBundle == false) {
+            itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data);
+        } else {
+
+            QString launchableExecutable = getLaunchableExecutable(info);
+            qDebug() << "probono: Construct FmFileInfo* for" << launchableExecutable << "and add it to itemsToBeLaunched";
+            FmFileInfo* launchableExecutableFileInfo = fm_file_info_new_from_native_file(nullptr, launchableExecutable.toUtf8(),nullptr);
+            itemsToBeLaunched = g_list_append(itemsToBeLaunched, launchableExecutableFileInfo);
+        }
+    }
+    bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), itemsToBeLaunched, &funcs, this);
+    g_list_free(itemsToBeLaunched);
+    g_object_unref(context);
+    return ret;
 }
 
 bool FileLauncher::launchPaths(QWidget* parent, GList* paths) {
-  FmAppLaunchContext* context = fm_app_launch_context_new_for_widget(parent);
-  bool ret = fm_launch_paths(G_APP_LAUNCH_CONTEXT(context), paths, &funcs, this);
-  g_object_unref(context);
-  return ret;
+    qDebug() << "probono: FileLauncher::launchPaths called on " << paths;
+    FmAppLaunchContext* context = fm_app_launch_context_new_for_widget(parent);
+    bool ret = fm_launch_paths(G_APP_LAUNCH_CONTEXT(context), paths, &funcs, this);
+    g_object_unref(context);
+    return ret;
 }
 
 GAppInfo* FileLauncher::getApp(GList* file_infos, FmMimeType* mime_type, GError** err) {
-  AppChooserDialog dlg(NULL);
-  if(mime_type)
-    dlg.setMimeType(mime_type);
-  else
-    dlg.setCanSetDefault(false);
-  // FIXME: show error properly?
-  if(execModelessDialog(&dlg) == QDialog::Accepted) {
-    return dlg.selectedApp();
-  }
-  return NULL;
+    AppChooserDialog dlg(NULL);
+    qDebug() << "probono: FileLauncher::getApp called on " << file_infos;
+    if(mime_type)
+        dlg.setMimeType(mime_type);
+    else
+        dlg.setCanSetDefault(false);
+    // FIXME: show error properly?
+    if(execModelessDialog(&dlg) == QDialog::Accepted) {
+        return dlg.selectedApp();
+    }
+    return NULL;
 }
 
 bool FileLauncher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err) {
-  for(GList* l = folder_infos; l; l = l->next) {
-    FmFileInfo* fi = FM_FILE_INFO(l->data);
-    qDebug() << "  folder:" << QString::fromUtf8(fm_file_info_get_disp_name(fi));
-  }
-  return false;
+    qDebug() << "probono: FileLauncher::openFolder called";
+    for(GList* l = folder_infos; l; l = l->next) {
+        FmFileInfo* fi = FM_FILE_INFO(l->data);
+        qDebug() << "  folder:" << QString::fromUtf8(fm_file_info_get_disp_name(fi));
+    }
+    return false;
 }
 
 FmFileLauncherExecAction FileLauncher::execFile(FmFileInfo* file) {
-  if (quickExec_) {
-    /* SF bug#838: open terminal for each script may be just a waste.
+    qDebug() << "probono: FileLauncher::execFile called";
+    qDebug() << "probono: TODO: check if execute bit is set and if not ask the user whether to set it";
+
+    if (quickExec_) {
+        /* SF bug#838: open terminal for each script may be just a waste.
        User should open a terminal and start the script there
        in case if user wants to see the script output anyway.
     if (fm_file_info_is_text(file))
         return FM_FILE_LAUNCHER_EXEC_IN_TERMINAL; */
-    return FM_FILE_LAUNCHER_EXEC;
-  }
+        return FM_FILE_LAUNCHER_EXEC;
+    }
 
-  FmFileLauncherExecAction res = FM_FILE_LAUNCHER_EXEC_CANCEL;
-  ExecFileDialog dlg(file);
-  if(execModelessDialog(&dlg) == QDialog::Accepted) {
-    res = dlg.result();
-  }
-  return res;
+    FmFileLauncherExecAction res = FM_FILE_LAUNCHER_EXEC_CANCEL;
+    ExecFileDialog dlg(file);
+    if(execModelessDialog(&dlg) == QDialog::Accepted) {
+        res = dlg.result();
+    }
+    return res;
 }
 
 int FileLauncher::ask(const char* msg, char* const* btn_labels, int default_btn) {
-  /* FIXME: set default button properly */
-  // return fm_askv(data->parent, NULL, msg, btn_labels);
-  return -1;
+    qDebug() << "probono: FileLauncher::ask called";
+    /* FIXME: set default button properly */
+    // return fm_askv(data->parent, NULL, msg, btn_labels);
+    return -1;
 }
 
 bool FileLauncher::error(GAppLaunchContext* ctx, GError* err, FmPath* path) {
-  /* ask for mount if trying to launch unmounted path */
-  if(err->domain == G_IO_ERROR) {
-    if(path && err->code == G_IO_ERROR_NOT_MOUNTED) {
-      //if(fm_mount_path(data->parent, path, TRUE))
-      //  return FALSE; /* ask to retry */
+    qDebug() << "probono: FileLauncher::error called";
+    /* ask for mount if trying to launch unmounted path */
+    if(err->domain == G_IO_ERROR) {
+        if(path && err->code == G_IO_ERROR_NOT_MOUNTED) {
+            //if(fm_mount_path(data->parent, path, TRUE))
+            //  return FALSE; /* ask to retry */
+        }
+        else if(err->code == G_IO_ERROR_FAILED_HANDLED)
+            return true; /* don't show error message */
     }
-    else if(err->code == G_IO_ERROR_FAILED_HANDLED)
-      return true; /* don't show error message */
-  }
-  QMessageBox dlg(QMessageBox::Critical, QObject::tr("Error"), QString::fromUtf8(err->message), QMessageBox::Ok);
-  execModelessDialog(&dlg);
-  return true;
+    QMessageBox dlg(QMessageBox::Critical, QObject::tr("Error"), QString::fromUtf8(err->message), QMessageBox::Ok);
+    execModelessDialog(&dlg);
+    return true;
 }
 

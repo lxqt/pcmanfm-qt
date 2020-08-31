@@ -36,10 +36,11 @@ FolderItemDelegate::FolderItemDelegate(QAbstractItemView* view, QObject* parent)
   QStyledItemDelegate(parent ? parent : view),
   symlinkIcon_(QIcon::fromTheme("emblem-symbolic-link")),
   view_(view) {
+    qDebug() << "probono: FolderItemDelegate::FolderItemDelegate created";
 }
 
 FolderItemDelegate::~FolderItemDelegate() {
-
+    qDebug() << "probono: FolderItemDelegate::FolderItemDelegate destroyed";
 }
 
 QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QModelIndex& index) const {

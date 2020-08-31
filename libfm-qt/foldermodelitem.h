@@ -64,6 +64,7 @@ public:
   QIcon icon;
   FmFileInfo* info;
   QVector<Thumbnail> thumbnails;
+  bool isAppDirOrBundle; // probono
 };
 
 }
