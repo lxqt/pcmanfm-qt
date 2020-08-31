@@ -5,6 +5,6 @@ GenericName=File Manager
 Comment=Browse the file system and manage the files
 Exec=filer-qt %U
 MimeType=inode/directory;
-Icon=system-file-manager
+Icon=filer
 Categories=FileManager;Utility;Core;Qt;
 StartupNotify=true
