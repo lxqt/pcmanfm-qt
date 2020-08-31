@@ -5,7 +5,7 @@ task:
   # This name gets reported as a build status in GitHub
   name: freebsd-12-1-release-amd64
   setup_script:
-    - pkg install -y cmake libfm qt5-core qt5-x11extras qt5-widgets qt5-qmake qt5-buildtools
+    - pkg install -y cmake libfm qt5-core qt5-x11extras qt5-widgets qt5-qmake qt5-buildtools qt5-linguisttools
   test_script:
     - mkdir build ; cd build
     - cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
