@@ -13,9 +13,10 @@ Locally builds successfully on FreeBSD 12.1-RELEASE-p8.
 Minimalistic simplicity, see [hello](https://github.com/probonopd/hello) for the background
 
 * Appeal to users coming from macOS
+* Cross platform: Builds for Linux, FreeBSD, macOS,... (work in progess)
 * Can handle ROX AppDirs (work in progess)
 * Can handle GNUstep `.app` bundles (work in progess)
 * Can handle macOS `.app` bundles (not started yet)
 * Can handle ELF files that are lacking the executable bit (not started yet)
-* Can handle AppImages (not started yet)
+* Can handle AppImages (not started yet; will only be useful when running on macOS)
 * Context menu can be extended using file manager actions (like Nautilus)
