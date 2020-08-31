@@ -231,7 +231,7 @@ bool Settings::loadFile(QString filePath) {
   lastWindowHeight_ = settings.value("LastWindowHeight", 480).toInt();
   lastWindowMaximized_ = settings.value("LastWindowMaximized", false).toBool();
   rememberWindowSize_ = settings.value("RememberWindowSize", true).toBool();
-  alwaysShowTabs_ = settings.value("AlwaysShowTabs", true).toBool();
+  alwaysShowTabs_ = settings.value("AlwaysShowTabs", false).toBool(); // probonod: false instead of true, here too (like further above)
   showTabClose_ = settings.value("ShowTabClose", true).toBool();
   splitterPos_ = settings.value("SplitterPos", 150).toInt();
   sidePaneMode_ = sidePaneModeFromString(settings.value("SidePaneMode").toString());
