@@ -25,7 +25,7 @@ script:
   - wget -c -q https://github.com/$(wget -q https://github.com/probonopd/go-appimage/releases -O - | grep "appimagetool-.*-x86_64.AppImage" | head -n 1 | cut -d '"' -f 2)
   - chmod +x appimagetool-*.AppImage
   - ./appimagetool-*.AppImage deploy appdir/usr/share/applications/*.desktop --appimage-extract-and-run # Bundle EVERYTHING
-  - ( cd appdir/usr/bin ; ln -s ../* . ) # FIXME: Workaround for https://github.com/probonopd/go-appimage/issues/45
+  - ( cd appdir/usr/ ; ln -s ../opt . ) # FIXME: Workaround for https://github.com/probonopd/go-appimage/issues/45
   - ./appimagetool-*.AppImage appdir/ --appimage-extract-and-run # turn AppDir into AppImage
   - rm -rf ./appimagetool-*.AppImage
 
