@@ -9,7 +9,7 @@ task:
   test_script:
     - mkdir build ; cd build
     - cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
-    - make -j$(nproc)
+    - make -j$(sysctl -n hw.ncpu)
     - make DESTDIR=appdir -j$(sysctl -n hw.ncpu) install
     - mkdir -p appdir/usr/share/icons/hicolor/256x256/apps
     - wget "https://user-images.githubusercontent.com/2480569/91666346-3cbe8b00-eafc-11ea-8fcb-40c2c7f034dc.png" -O appdir/usr/share/icons/hicolor/256x256/apps/system-file-manager.png
