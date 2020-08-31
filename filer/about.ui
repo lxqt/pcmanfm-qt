@@ -15,8 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset theme="help-about">
-    <normaloff/>
-   </iconset>
+    <normaloff>.</normaloff>.</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -55,7 +54,7 @@
    <item>
     <widget class="QLabel" name="label_3">
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/probonopd/filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/probonopd/filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -68,7 +67,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <property name="tabsClosable">
       <bool>false</bool>
@@ -85,8 +84,8 @@
          </property>
          <property name="plainText">
           <string>Programming:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
-</string>
+* Simon Peter (probono)
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;</string>
          </property>
          <property name="backgroundVisible">
           <bool>false</bool>
@@ -106,9 +105,13 @@
           <bool>true</bool>
          </property>
          <property name="plainText">
-          <string>PCMan File Manager
+          <string>Filer
 
-Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+Copyright (C) 2020 Simon Peter
+
+Portions based on PCMan File Manager
+
+Copyright (C) 2009-2014 洪任諭 (Hong Jen Yee)
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
