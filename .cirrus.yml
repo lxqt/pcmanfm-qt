@@ -17,6 +17,7 @@ task:
     - cp appdir/usr/share/icons/hicolor/256x256/apps/filer.png appdir/.DirIcon
     - ( cd appdir/ ; ln -s ./usr/bin/filer-qt ./AppRun )
     - rm -rf appdir/usr/include
+    - cp /usr/local/lib/libfm.so* appdir/usr/lib # Those may not be on the target systems...
     - find appdir/
     - zip --symlinks -r Filer_FreeBSD.zip appdir/
     - curl --upload-file ./Filer_FreeBSD.zip https://transfersh.com/Filer_FreeBSD.zip
