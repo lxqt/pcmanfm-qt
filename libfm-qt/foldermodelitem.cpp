@@ -55,16 +55,15 @@ FolderModelItem::FolderModelItem(FmFileInfo* _info):
       // Actually there may be foo.app/Resources/foo.desktop files which point to Icon= and we could use that; just be sure to convert the absolute path there into a relative one?
       QFile tiffFile1(path.toUtf8() + "/Resources/" + nameWithoutSuffix.toUtf8() + ".tiff");
       if (tiffFile1.exists()) {
-          qDebug("probono: Found GNUstep TIFF icon; TODO: Use it");
-          // icon = QIcon(QFileInfo(tiffFile1).path()); // This results in a blank icon, so clearly this is not the correct way to do it
+          icon = QIcon(QFileInfo(tiffFile1).canonicalFilePath());
       }
       QFile tiffFile2(path.toUtf8() + "/.dir.tiff");
       if (tiffFile2.exists()) {
-          qDebug("probono: Found GNUstep .dir.tiff; TODO: Use it");
+          icon = QIcon(QFileInfo(tiffFile2).canonicalFilePath());
       }
       QFile dirIconFile(path.toUtf8() + "/.DirIcon");
       if (dirIconFile.exists()) {
-          qDebug("probono: Found ROX .DirIcon; TODO: Use it");
+          icon = QIcon(QFileInfo(dirIconFile).canonicalFilePath());
       }
 
       // probono: Set display name
