@@ -15,6 +15,7 @@ task:
     - mkdir -p appdir/usr/share/icons/hicolor/256x256/apps
     - cp ../filer/icons/filer-256.png appdir/usr/share/icons/hicolor/256x256/apps/filer.png
     - cp appdir/usr/share/icons/hicolor/256x256/apps/filer.png appdir/
+    - ( cd appdir/ ; ln -s ./usr/bin/filer-qt ./AppRun )
     - rm -rf appdir/usr/include
     - find appdir/
     - zip -r Filer_FreeBSD.zip appdir/

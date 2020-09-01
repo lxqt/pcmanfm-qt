@@ -66,6 +66,15 @@ lxqt_translate_desktop(DESKTOP_FILES
         filer-qt-desktop-pref.desktop.in
 )
 
+# Let CMake handle the rpath setting for us
+# https://github.com/conan-io/conan/issues/3996
+if(APPLE)
+    set(CMAKE_INSTALL_RPATH "@executable_path")
+else()
+    set(CMAKE_INSTALL_RPATH "$ORIGIN")
+endif()
+set(CMAKE_BUILD_WITH_INSTALL_RPATH ON)
+
 add_executable(filer-qt
     ${filer_SRCS}
     ${filer_UIS_H}
