@@ -18,3 +18,4 @@ task:
     - find appdir/
     - zip -r Filer_FreeBSD.zip appdir/
     - curl --upload-file ./Filer_FreeBSD.zip https://transfersh.com/Filer_FreeBSD.zip
+  only_if: $CIRRUS_BRANCH == 'master'
