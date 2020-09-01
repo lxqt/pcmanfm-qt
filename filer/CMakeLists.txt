@@ -69,11 +69,13 @@ lxqt_translate_desktop(DESKTOP_FILES
 # Let CMake handle the rpath setting for us
 # https://github.com/conan-io/conan/issues/3996
 if(APPLE)
-    set(CMAKE_INSTALL_RPATH "@executable_path")
+    set(CMAKE_INSTALL_RPATH "@executable_path") # Darwin, macOS
 else()
-    set(CMAKE_INSTALL_RPATH "$ORIGIN")
+    set(CMAKE_INSTALL_RPATH "$ORIGIN/../lib") # FreeBSD
 endif()
-set(CMAKE_BUILD_WITH_INSTALL_RPATH ON)
+if(NOT LINUX)
+  set(CMAKE_BUILD_WITH_INSTALL_RPATH ON) # On Linux we let appimagetool handle it
+endif()
 
 add_executable(filer-qt
     ${filer_SRCS}

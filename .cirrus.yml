@@ -14,10 +14,10 @@ task:
     - make DESTDIR=appdir -j$(sysctl -n hw.ncpu) install
     - mkdir -p appdir/usr/share/icons/hicolor/256x256/apps
     - cp ../filer/icons/filer-256.png appdir/usr/share/icons/hicolor/256x256/apps/filer.png
-    - cp appdir/usr/share/icons/hicolor/256x256/apps/filer.png appdir/
+    - cp appdir/usr/share/icons/hicolor/256x256/apps/filer.png appdir/.DirIcon
     - ( cd appdir/ ; ln -s ./usr/bin/filer-qt ./AppRun )
     - rm -rf appdir/usr/include
     - find appdir/
-    - zip -r Filer_FreeBSD.zip appdir/
+    - zip --symlinks -r Filer_FreeBSD.zip appdir/
     - curl --upload-file ./Filer_FreeBSD.zip https://transfersh.com/Filer_FreeBSD.zip
   only_if: $CIRRUS_BRANCH == 'master'
