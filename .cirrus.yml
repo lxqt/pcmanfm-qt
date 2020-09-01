@@ -4,6 +4,7 @@ freebsd_instance:
 task:
   # This name gets reported as a build status in GitHub
   name: freebsd-12-1-release-amd64
+  stateful: false
   setup_script:
     - pkg install -y curl zip cmake pkgconf libfm qt5-core qt5-x11extras qt5-widgets qt5-qmake qt5-buildtools qt5-linguisttools
   test_script:
