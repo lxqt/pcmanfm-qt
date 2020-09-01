@@ -32,6 +32,15 @@ bool checkWhetherAppDirOrBundle(FmFileInfo* _info)
         }
     }
 
+    // Check whether we have a macOS .app bundle
+    if (path.toLower().endsWith(".app")) {
+        QFile infoPlistFIle(path.toUtf8() + "/Contents/Info.plist");
+        QFile resourcesDirectory(path.toUtf8() + "/Contents/Resources");
+        if (infoPlistFIle.exists() && resourcesDirectory.exists()) {
+            isAppDirOrBundle = true;
+        }
+    }
+
     // Check whether we have a ROX AppDir
     QFile appRunFile(path.toUtf8() + "/AppRun");
     if ((appRunFile.exists()) && QFileInfo(appRunFile).isExecutable()) {
@@ -60,6 +69,15 @@ QString getLaunchableExecutable(FmFileInfo* _info) {
         QFile executableFile(path.toUtf8() + "/" + nameWithoutSuffix);
         if (executableFile.exists() && QFileInfo(executableFile).isExecutable()) {
             launchableExecutable = QString(path + "/" + nameWithoutSuffix);
+        }
+    }
+
+    // macOS .app bundle
+    if (path.toLower().endsWith(".app")) {
+        // TODO: Before falling back to foo.app/Contents/MacOS/foo, parse Info.plist and get the CFBundleExecutable from there
+        QFile executableFile(path.toUtf8() + "/Contents/MacOS/" + nameWithoutSuffix);
+        if (executableFile.exists() && QFileInfo(executableFile).isExecutable() && QSysInfo::productType() == "osx") {
+            launchableExecutable = QString(path + "/Contents/MacOS/" + nameWithoutSuffix);
         }
     }
 
