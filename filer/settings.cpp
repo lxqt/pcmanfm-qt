@@ -178,7 +178,7 @@ bool Settings::loadFile(QString filePath) {
   settings.beginGroup("Desktop");
   wallpaperMode_ = wallpaperModeFromString(settings.value("WallpaperMode").toString());
   wallpaper_ = settings.value("Wallpaper").toString();
-  desktopBgColor_.setNamedColor(settings.value("BgColor", "#000000").toString());
+  desktopBgColor_.setNamedColor(settings.value("BgColor", "#4e7fb4").toString());
   desktopFgColor_.setNamedColor(settings.value("FgColor", "#ffffff").toString());
   desktopShadowColor_.setNamedColor(settings.value("ShadowColor", "#000000").toString());
   if(settings.contains("Font"))
