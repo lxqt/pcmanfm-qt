@@ -10,7 +10,7 @@ namespace Fm {
 
 bool checkWhetherAppDirOrBundle(FmFileInfo* _info);
 QString getLaunchableExecutable(FmFileInfo* _info);
-
+QIcon getIconForBundle(FmFileInfo* _info);
 }
 
 

@@ -29,6 +29,9 @@
 #include <qdial.h>
 #include <sys/types.h>
 #include <time.h>
+#include <QDebug>
+#include <QFileInfo>
+#include "bundle.h"
 
 #define DIFFERENT_UIDS    ((uid)-1)
 #define DIFFERENT_GIDS    ((gid)-1)
@@ -226,23 +229,37 @@ void FilePropsDialog::initPermissionsPage() {
 }
 
 void FilePropsDialog::initGeneralPage() {
+
+    bool isAppDirOrBundle = checkWhetherAppDirOrBundle(fileInfo);
+
+    // probono: Set some things differently for AppDir/app bundle than for normal folder
+    if(isAppDirOrBundle) {
+        qDebug("probono: AppDir/app bundle detected iiiiiiiiiiiiiiiiiiiiiiiii" );
+    }
+    qDebug() << "probono: FilePropsDialog::initGeneralPage called";
   // update UI
   if(singleType) { // all files are of the same mime-type
-    FmIcon* icon = NULL;
+    // FmIcon* icon = NULL;
+    QIcon icon = IconTheme::icon(fm_file_info_get_icon(fileInfo));
     // FIXME: handle custom icons for some files
     // FIXME: display special property pages for special files or
     // some specified mime-types.
     if(singleFile) { // only one file is selected.
-      icon = fm_file_info_get_icon(fileInfo);
+
+      qDebug() << "probono: fm_file_info_get_icon(fileInfo) called";
+      if(isAppDirOrBundle){
+          icon = getIconForBundle(fileInfo);
+      }
     }
     if(mimeType) {
-      if(!icon) // get an icon from mime type if needed
-        icon = fm_mime_type_get_icon(mimeType);
+      if(icon.isNull()) // get an icon from mime type if needed
+        icon = IconTheme::icon(fm_mime_type_get_icon(mimeType));
+        qDebug() << "probono: fm_mime_type_get_icon(mimeType) called";
       ui->fileType->setText(QString::fromUtf8(fm_mime_type_get_desc(mimeType)));
       ui->mimeType->setText(QString::fromUtf8(fm_mime_type_get_type(mimeType)));
     }
-    if(icon) {
-      ui->iconButton->setIcon(IconTheme::icon(icon));
+    if(icon.isNull() == false) {
+      ui->iconButton->setIcon(icon);
     }
 
     if(singleFile && fm_file_info_is_symlink(fileInfo)) {
@@ -264,7 +281,7 @@ void FilePropsDialog::initGeneralPage() {
     FmPath* parent_path = fm_path_get_parent(fm_file_info_get_path(fileInfo));
     char* parent_str = parent_path ? fm_path_display_name(parent_path, true) : NULL;
 
-    ui->fileName->setText(QString::fromUtf8(fm_file_info_get_disp_name(fileInfo)));
+    ui->fileName->setText(QString::fromUtf8(fm_file_info_get_name(fileInfo))); // probono: Was fm_file_info_get_disp_name but we want the real filename in the file properties dialog
     if(parent_str) {
       ui->location->setText(QString::fromUtf8(parent_str));
       g_free(parent_str);

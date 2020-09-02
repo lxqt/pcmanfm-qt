@@ -41,7 +41,7 @@ DirTreeModelItem::DirTreeModelItem(FmFileInfo* info, DirTreeModel* model, DirTre
   expanded_(false),
   loaded_(false),
   fileInfo_(fm_file_info_ref(info)),
-  displayName_(QString::fromUtf8(fm_file_info_get_disp_name(info))),
+  displayName_(QString::fromUtf8(fm_file_info_get_name(info))), // probono: Was fm_file_info_get_disp_name but we want the real name in tree view
   icon_(IconTheme::icon(fm_file_info_get_icon(info))),
   placeHolderChild_(NULL),
   parent_(parent) {
