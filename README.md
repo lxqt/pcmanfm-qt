@@ -14,5 +14,9 @@ Minimalistic simplicity, see [hello](https://github.com/probonopd/hello) for the
 * Can handle GNUstep `.app` bundles (work in progess)
 * Can handle macOS `.app` bundles (not started yet)
 * Can handle ELF files that are lacking the executable bit (not started yet)
-* Can handle AppImages (not started yet; will only be useful when running on macOS)
+* Can handle AppImages (not started yet)
 * Context menu can be extended using file manager actions
+
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/2480569/92018367-5dcde880-ed55-11ea-82b7-98007bea388d.png)
