@@ -907,18 +907,37 @@ void TabPage::applyFilter() {
 
     proxyModel_->updateFilters();
 
+    QModelIndex curIndex = folderView_->selectionModel()->currentIndex();
     QModelIndex firstIndx = proxyModel_->index(0, 0);
-    if (firstIndx.isValid()) {
-        if(proxyFilter_->getFilterStr().isEmpty()) {
-            // if the filter is removed and there is no current item, set the first item as current
-            if (!folderView_->selectionModel()->currentIndex().isValid()) {
-                folderView_->selectionModel()->setCurrentIndex(firstIndx, QItemSelectionModel::NoUpdate);
-            }
+    if(proxyFilter_->getFilterStr().isEmpty()) {
+        if (curIndex.isValid()) {
+            // scroll to the current item on removing filter
+            folderView_->childView()->scrollTo(curIndex, QAbstractItemView::EnsureVisible);
         }
-        else if (!folderView_->hasSelection()) {
-            // if there is a filter but no selection, select the first item
+        else if (firstIndx.isValid()) {
+            // if the filter is removed and there is no current item, set the first item as current
+            folderView_->selectionModel()->setCurrentIndex(firstIndx, QItemSelectionModel::NoUpdate);
+        }
+    }
+    else if (!folderView_->hasSelection()) {
+        // if there is a filter but no selection, select the first item
+        if(firstIndx.isValid()) {
             folderView_->childView()->setCurrentIndex(firstIndx);
             selectFirst = true;
+        }
+    }
+    else {
+        // if there is a filter and a selection, ensure the current index is visible
+        if (curIndex.isValid()) {
+            folderView_->childView()->scrollTo(curIndex, QAbstractItemView::EnsureVisible);
+        }
+        else { // should never happen
+            QModelIndexList selIndexes = folderView_->selectionModel()->selectedIndexes();
+            if(!selIndexes.isEmpty()) { // always true
+                QModelIndex lastIndex = selIndexes.last();
+                folderView_->selectionModel()->setCurrentIndex(lastIndex, QItemSelectionModel::NoUpdate);
+                folderView_->childView()->scrollTo(lastIndex, QAbstractItemView::EnsureVisible);
+            }
         }
     }
 
