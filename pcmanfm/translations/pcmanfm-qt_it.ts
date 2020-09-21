@@ -1594,7 +1594,7 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation>Pulisci  (Ctrl+K o Esc)</translation>
+        <translation>Pulisci (Ctrl+K o Esc)</translation>
     </message>
 </context>
 <context>
@@ -1722,8 +1722,8 @@ E&apos; predisposto anche uno spazio per tre righe di testo.</translation>
         <location filename="../view.cpp" line="61"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
+            <numerusform>Aprire questo %1 file?</numerusform>
             <numerusform>Aprire questi %1 file?</numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -2057,7 +2057,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="588"/>
         <source> KB</source>
-        <translation> ·&#xa0;KB</translation>
+        <translation> · KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="605"/>
