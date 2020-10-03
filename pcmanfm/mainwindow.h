@@ -87,7 +87,7 @@ public:
 
     void addTab(Fm::FilePath path, ViewFrame* viewFrame);
     void addTab(Fm::FilePath path) {
-        return addTab(path, activeViewFrame_);
+        addTab(path, activeViewFrame_);
     }
 
     TabPage* currentPage(ViewFrame* viewFrame) {
