@@ -61,6 +61,6 @@ Issues should go to the tracker of PCManFM-Qt at https://github.com/lxqt/pcmanfm
 
 ### Translation (Weblate)
 
-<a href="https://weblate.lxqt.org/projects/lxqt/pcmanfm-qt/">
-<img src="https://weblate.lxqt.org/widgets/lxqt/-/pcmanfm-qt/multi-auto.svg" alt="Translation status" />
+<a href="https://translate.lxqt-project.org/projects/lxqt-desktop/pcmanfm-qt/">
+<img src="https://translate.lxqt-project.org/widgets/lxqt-desktop/-/pcmanfm-qt/multi-auto.svg" alt="Stato traduzione" />
 </a>
