@@ -824,7 +824,9 @@ void TabPage::setViewMode(Fm::FolderView::ViewMode mode) {
     }
     Fm::FolderView::ViewMode prevMode = folderView_->viewMode();
     folderView_->setViewMode(mode);
-    folderView_->childView()->setFocus();
+    if(folderView_->isVisible()) { // in the current tab
+        folderView_->childView()->setFocus();
+    }
     if(prevMode != folderView_->viewMode()) {
         // FolderView::setViewMode() may delete the view to switch between list and tree.
         // So, the event filter should be re-installed and the status message should be updated.

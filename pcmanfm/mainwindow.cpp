@@ -676,9 +676,9 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
 }
 
 // add a new tab
-int MainWindow::addTab(Fm::FilePath path, ViewFrame* viewFrame) {
+void MainWindow::addTab(Fm::FilePath path, ViewFrame* viewFrame) {
     TabPage* newPage = new TabPage(this);
-    return addTabWithPage(newPage, viewFrame, path);
+    addTabWithPage(newPage, viewFrame, path);
 }
 
 void MainWindow::toggleMenuBar(bool /*checked*/) {

@@ -85,9 +85,9 @@ public:
         chdir(path, activeViewFrame_);
     }
 
-    int addTab(Fm::FilePath path, ViewFrame* viewFrame);
-    int addTab(Fm::FilePath path) {
-        return addTab(path, activeViewFrame_);
+    void addTab(Fm::FilePath path, ViewFrame* viewFrame);
+    void addTab(Fm::FilePath path) {
+        addTab(path, activeViewFrame_);
     }
 
     TabPage* currentPage(ViewFrame* viewFrame) {
