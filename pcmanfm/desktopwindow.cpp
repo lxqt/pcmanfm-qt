@@ -1868,9 +1868,9 @@ QModelIndex DesktopWindow::indexForPos(bool* isTrash, const QPoint& pos, const Q
     p.setY(qMax(workArea.top(), p.y()));
     alignToGrid(p, workArea.topLeft(), grid, listView_->spacing());
     // then put the point where the icon rectangle may be
-    // (if there is any item, its icon is immediately below the middle of the top side)
+    // (if there is any item, its icon is immediately below the middle of its top side)
     p.setX(p.x() + (grid.width() + listView_->spacing()) / 2);
-    p.setY(p.y() + listView_->spacing() / 2 + 1);
+    p.setY(p.y() + listView_->spacing() / 2 + getMargins().height() + 1);
     // if this is the Trash cell, return its index
     QModelIndex indx = listView_->indexAt(p);
     if(indx.isValid() && indx.model()) {
