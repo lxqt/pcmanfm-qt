@@ -2,8 +2,6 @@
 
 A file manager that can also render the desktop. Intended to become a key component of https://github.com/probonopd/hello one day.
 
-![](filer/icons/filer-128.png)
-
 ## Features
 
 Minimalistic simplicity, see [hello](https://github.com/probonopd/hello) for the background
