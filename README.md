@@ -59,8 +59,11 @@ All switches (command line options) mentioned above are explained in detail in
 Issues should go to the tracker of PCManFM-Qt at https://github.com/lxqt/pcmanfm-qt/issues.
 
 
-### Translation (Weblate)
+### Translation
 
-<a href="https://weblate.lxqt.org/projects/lxqt/pcmanfm-qt/">
-<img src="https://weblate.lxqt.org/widgets/lxqt/-/pcmanfm-qt/multi-auto.svg" alt="Translation status" />
+Translations can be done in [LXQt-Weblate](https://translate.lxqt-project.org/projects/lxqt-desktop/pcmanfm-qt/)
+
+<a href="https://translate.lxqt-project.org/projects/lxqt-desktop/pcmanfm-qt/">
+<img src="https://translate.lxqt-project.org/widgets/lxqt-desktop/-/pcmanfm-qt/multi-auto.svg" alt="Translation status" />
 </a>
+

@@ -1531,6 +1531,8 @@ A space is also reserved for 3 lines of text.</source>
         <translation>
             <numerusform>אשפה (פריט %Ln)</numerusform>
             <numerusform>אשפה (%Ln פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1683,6 +1685,8 @@ A space is also reserved for 3 lines of text.</source>
         <translation>
             <numerusform>פריט %n</numerusform>
             <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1690,6 +1694,8 @@ A space is also reserved for 3 lines of text.</source>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n מוסתר)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
             <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
@@ -1704,7 +1710,9 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../tabpage.cpp" line="716"/>
         <source>%n item(s) selected</source>
         <translation>
-            <numerusform>פריט אחד נבחר</numerusform>
+            <numerusform>פריט %n נבחר</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
             <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
@@ -1720,7 +1728,9 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../view.cpp" line="61"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>האם ברצונך לפתוח את הקובץ ה־ %1 הזה?</numerusform>
+            <numerusform>האם ברצונך לפתוח את הקובץ ה־%1 הזה?</numerusform>
+            <numerusform>האם ברצונך לפתוח את %1 הקבצים האלה?</numerusform>
+            <numerusform>האם ברצונך לפתוח את %1 הקבצים האלה?</numerusform>
             <numerusform>האם ברצונך לפתוח את %1 הקבצים האלה?</numerusform>
         </translation>
     </message>

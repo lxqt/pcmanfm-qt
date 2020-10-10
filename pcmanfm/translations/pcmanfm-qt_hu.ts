@@ -56,16 +56,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
 Ez egy szabad szoftver, ami a Free Software Foundation által
-megjelentetett GNU General Public Licensz 2-es, vagy későbbi
+megjelentetett GNU General Public License 2-es, vagy későbbi
 verzióiban felsorolt feltételekkel szabadon terjeszthető, módosítható.
 
 A megjelentetők remélik, hogy a program hasznos, viszont
 SEMMILYEN GARANCIÁT NEM VÁLLALNAK, beleértve áttételesen az
 ÜZLETI célú hasznosítására, továbbá a SPECIÁLIS CÉLRA TÖRTÉNŐ
-HASZNÁLHATÓSÁGÁRA sem. További részletek a GNU General Public Licensz soraiban.
+HASZNÁLHATÓSÁGÁRA sem. További részletek a GNU General Public License soraiban.
 
 Ezzel a programmal együtt meg kellett kapnia a GNU General
-Public Licensz másolatát is, ha nem, akkor írjon a Free Software
+Public License másolatát is, ha nem, akkor írjon a Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA címre.</translation>
     </message>
     <message>
@@ -76,7 +76,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA c
     <message>
         <location filename="../about.ui" line="100"/>
         <source>License</source>
-        <translation>Licensz</translation>
+        <translation>Licenc</translation>
     </message>
 </context>
 <context>
