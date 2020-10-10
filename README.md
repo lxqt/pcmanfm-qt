@@ -19,4 +19,4 @@ Minimalistic simplicity, see [hello](https://github.com/probonopd/hello) for the
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/2480569/92018367-5dcde880-ed55-11ea-82b7-98007bea388d.png)
+![image](https://user-images.githubusercontent.com/2480569/95656231-2d742980-0b0d-11eb-9b85-b4500a518862.png)
