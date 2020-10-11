@@ -20,5 +20,5 @@ task:
     - cp /usr/local/lib/libfm.so* Filer.AppDir/usr/lib # Those may not be on the target systems...
     - find Filer.AppDir/
     - zip --symlinks -r Filer_FreeBSD.zip Filer.AppDir/
-    - curl --upload-file ./Filer_FreeBSD.zip https://transfersh.com/Filer_FreeBSD.zip
+    - curl --upload-file ./Filer_FreeBSD.zip https://transfer.sh/Filer_FreeBSD.zip
   only_if: $CIRRUS_BRANCH == 'master'
