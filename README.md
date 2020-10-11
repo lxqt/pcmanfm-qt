@@ -1,4 +1,4 @@
-# Filer [![Build Status](https://travis-ci.com/helloSystem/Filer.svg)](https://travis-ci.com/helloSystem/Filer) [![Build Status](https://api.cirrus-ci.com/github/helloSystem/Filer.svg)](https://cirrus-ci.com/github/helloSystem/Filer)
+# Filer [![Build Status](https://api.cirrus-ci.com/github/helloSystem/Filer.svg)](https://cirrus-ci.com/github/helloSystem/Filer)
 
 A file manager that can also render the desktop. Intended to become a key component of https://github.com/helloSystem/hello one day.
 
