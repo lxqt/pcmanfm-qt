@@ -500,9 +500,8 @@ QString TabPage::formatStatusText() {
         }
         auto fi = folder_->info();
         if (fi && fi->isSymlink()) {
-            text += QStringLiteral(" %2(%1)")
-                    .arg(encloseWithBidiMarks(tr("Link to") + QChar(QChar::Space) + QString::fromStdString(fi->target())),
-                    (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
+            text += QStringLiteral(" (%1)")
+                    .arg(tr("Link to") + QChar(QChar::Space) + QString::fromStdString(fi->target()));
         }
         return text;
     }
@@ -669,17 +668,6 @@ void TabPage::reload() {
     }
 }
 
-// 200e LEFT-TO-RIGHT MARK
-// 200f RIGHT-TO-LEFT MARK
-// 202a LEFT-TO-RIGHT EMBEDDING
-// 202b RIGHT-TO-LEFT EMBEDDING
-// 202c POP DIRECTIONAL FORMATTING
-QString TabPage::encloseWithBidiMarks(const QString& text) {
-    QChar bidiMark = text.isRightToLeft() ? QChar(0x200f) : QChar(0x200e);
-    QChar embedBidiMark = text.isRightToLeft() ? QChar(0x202b) : QChar(0x202a);
-    return embedBidiMark+text+bidiMark+QChar(0x202c);
-}
-
 // when the current selection in the folder view is changed
 void TabPage::onSelChanged() {
     QString msg;
@@ -695,34 +683,30 @@ void TabPage::onSelChanged() {
                                    ? QString::fromStdString(fi->name())
                                    : fi->displayName();
                 if(fi->isSymlink()) {
-                    msg = QStringLiteral("%5\"%1\" %5(%2) %5%3 %5(%4)")
-                          .arg(encloseWithBidiMarks(name),
-                          encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit)),
-                          encloseWithBidiMarks(QString::fromUtf8(fi->mimeType()->desc())),
-                          encloseWithBidiMarks(tr("Link to") + QChar(QChar::Space) + QString::fromStdString(fi->target())),
-                          (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
+                    msg = QStringLiteral("\"%1\" (%2) %3 (%4)")
+                          .arg(name,
+                          Fm::formatFileSize(fi->size(), fm_config->si_unit),
+                          QString::fromUtf8(fi->mimeType()->desc()),
+                          tr("Link to") + QChar(QChar::Space) + QString::fromStdString(fi->target()));
                 }
                 else {
-                    msg = QStringLiteral("%4\"%1\" %4(%2) %4%3")
-                          .arg(encloseWithBidiMarks(name),
-                          encloseWithBidiMarks(Fm::formatFileSize(fi->size(), fm_config->si_unit)), // FIXME: deprecate fm_config
-                          encloseWithBidiMarks(QString::fromUtf8(fi->mimeType()->desc())),
-                          (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
+                    msg = QStringLiteral("\"%1\" (%2) %3")
+                          .arg(name,
+                          Fm::formatFileSize(fi->size(), fm_config->si_unit), // FIXME: deprecate fm_config
+                          QString::fromUtf8(fi->mimeType()->desc()));
                 }
             }
             else {
                 if(fi->isSymlink()) {
-                    msg = QStringLiteral("%4\"%1\" %4%2 %4(%3)")
-                          .arg(encloseWithBidiMarks(fi->displayName()),
-                          encloseWithBidiMarks(QString::fromUtf8(fi->mimeType()->desc())),
-                          encloseWithBidiMarks(tr("Link to") + QChar(QChar::Space) + QString::fromStdString(fi->target())),
-                          (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
+                    msg = QStringLiteral("\"%1\" %2 (%3)")
+                          .arg(fi->displayName(),
+                          QString::fromUtf8(fi->mimeType()->desc()),
+                          tr("Link to") + QChar(QChar::Space) + QString::fromStdString(fi->target()));
                 }
                 else {
-                    msg = QStringLiteral("%3\"%1\" %3%2")
-                          .arg(encloseWithBidiMarks(fi->displayName()),
-                          encloseWithBidiMarks(QString::fromUtf8(fi->mimeType()->desc())),
-                          (layoutDirection() == Qt::RightToLeft) ? QChar(0x200f) : QChar(0x200e));
+                    msg = QStringLiteral("\"%1\" %2")
+                          .arg(fi->displayName(),
+                          QString::fromUtf8(fi->mimeType()->desc()));
                 }
             }
             /* FIXME: should we support statusbar plugins as in the gtk+ version? */
