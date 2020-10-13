@@ -411,7 +411,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="337"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Papel de parede único para cada monitor</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="364"/>
@@ -504,161 +504,161 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Atalhos ocultos</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation type="unfinished"></translation>
+        <translation>Atalho</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Ação</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista de foco, limpar barra de filtro</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Foco, painel lateral</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Foco, caminho de entrada</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+D</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Separador seguinte</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Separador anterior</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageDown</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageUp</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Número</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ira para o separador</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Número</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Backspace</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ir para cima</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Caixa de diálogo de pesquisa</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+Insert</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Colar na barra de filtro</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrastar+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Mover ficheiros ao largar</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrastar+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Copiar ficheiros ao largar</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrastar+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Criar ligação simbólica ao largar</translation>
     </message>
 </context>
 <context>
@@ -866,7 +866,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="560"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Oculto por último</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="568"/>
@@ -956,17 +956,17 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../main-win.ui" line="901"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Pa&amp;inel lateral</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="904"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Atalho&amp;s ocultos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="749"/>
@@ -1515,7 +1515,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="294"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecionar pasta da imagem de fundo</translation>
     </message>
 </context>
 <context>
@@ -1719,9 +1719,9 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message numerus="yes">
         <location filename="../view.cpp" line="61"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Deseja abrir %1 ficheiro?</numerusform>
+            <numerusform>Deseja abrir %1 ficheiros?</numerusform>
         </translation>
     </message>
     <message>
@@ -1801,7 +1801,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="159"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar menu de contexto da pasta com Ctrl+clique direito</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="189"/>
@@ -1828,12 +1828,12 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="220"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Se possível abrir pastas em separadores distintos</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="223"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Modo de janela única</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="250"/>
@@ -1981,7 +1981,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="383"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Não mostrar dicas para ficheiros</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="406"/>
@@ -2101,7 +2101,7 @@ será mostrada se existir mais do que um separador.</translation>
     <message>
         <location filename="../preferences.ui" line="366"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar sempre o nome real dos ficheiros</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="635"/>
