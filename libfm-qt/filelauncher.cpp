@@ -22,6 +22,8 @@
 #include "applaunchcontext.h"
 #include <QMessageBox>
 #include <QDebug>
+#include <QProcess>
+#include <QStandardPaths>
 #include "execfiledialog_p.h"
 #include "appchooserdialog.h"
 #include "utilities.h"
@@ -51,7 +53,7 @@ FileLauncher::~FileLauncher() {
 bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
     qDebug() << "probono: FileLauncher::launchFiles called";
     qDebug() << "probono: LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
-    qDebug() << "probono: TODO: Determine whether it is an AppDir/.app bundle and if so, set the path that is handed over to fm_launch_files to the file that should actually be executed";
+    qDebug() << "probono: Determining whether it is an AppDir/.app bundle";
     // probono: This gets invoked when an icon is double clicked or "Open" is selected from the context menu
     // but not if "Open with..." is selected from the context menu
     // GAppLaunchContext is a concept from
@@ -74,13 +76,21 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
         FmFileInfo* info = FM_FILE_INFO(l->data);
         bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
         if(isAppDirOrBundle == false) {
+            qDebug() << "probono: Not an .AppDir or .app bundle. TODO: Make it possible to use the 'launch' command for those, too";
+            // probono: URLs like network://, sftp:// and so on will continue to be handled like this in any case since they need GIO,
+            // but documents, non-bundle executables etc. could all be handled by 'launch' if we make 'launch' understand them
             itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data);
         } else {
-
             QString launchableExecutable = getLaunchableExecutable(info);
-            qDebug() << "probono: Construct FmFileInfo* for" << launchableExecutable << "and add it to itemsToBeLaunched";
-            FmFileInfo* launchableExecutableFileInfo = fm_file_info_new_from_native_file(nullptr, launchableExecutable.toUtf8(),nullptr);
-            itemsToBeLaunched = g_list_append(itemsToBeLaunched, launchableExecutableFileInfo);
+            if(QStandardPaths::findExecutable("launch") != "") {
+                qDebug() << "probono: Launching using the 'launch' command";
+                QProcess::startDetached("launch", {launchableExecutable});
+            } else {
+                qDebug() << "probono: The 'launch' command is not available on the $PATH, otherwise it would be used";
+                qDebug() << "probono: Construct FmFileInfo* for" << launchableExecutable << "and add it to itemsToBeLaunched";
+                FmFileInfo* launchableExecutableFileInfo = fm_file_info_new_from_native_file(nullptr, launchableExecutable.toUtf8(),nullptr);
+                itemsToBeLaunched = g_list_append(itemsToBeLaunched, launchableExecutableFileInfo);
+            }
         }
     }
     bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), itemsToBeLaunched, &funcs, this);
