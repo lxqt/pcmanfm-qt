@@ -289,9 +289,6 @@ private:
     void freeFolder();
     QString formatStatusText();
 
-    // Adds bidi marks (RLM/LRM/RLE/LRE/POP) around the text for the statusbar.
-    QString encloseWithBidiMarks(const QString& text);
-
     void onFolderStartLoading();
     void onFolderFinishLoading();
 
