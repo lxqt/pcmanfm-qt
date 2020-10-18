@@ -85,8 +85,9 @@ void StatusBar::showMessage(const QString &message, int timeout) {
 void StatusBar::reallyShowMessage() {
     if(lastTimeOut_ == 0) {
         // set the text on the label to prevent its disappearance on focusing menubar items
-        // and also ensure that it contsains no newline (because file names may contain it)
-        statusLabel_->setText(lastMessage_.replace(QLatin1Char('\n'), QLatin1Char(' ')));
+        // and also remove newlines and text tabs because they result in a wrong eliding
+        statusLabel_->setText(lastMessage_.replace(QLatin1Char('\n'), QLatin1Char(' '))
+                                          .replace(QLatin1Char('\t'), QLatin1Char(' ')));
     }
     else {
         QStatusBar::showMessage(lastMessage_, lastTimeOut_);
