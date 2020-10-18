@@ -195,7 +195,7 @@ protected Q_SLOTS:
 
     void onStackedWidgetWidgetRemoved(int index);
 
-    void onTabPageTitleChanged(QString title);
+    void onTabPageTitleChanged();
     void onTabPageStatusChanged(int type, QString statusText);
     void onTabPageSortFilterChanged();
 
