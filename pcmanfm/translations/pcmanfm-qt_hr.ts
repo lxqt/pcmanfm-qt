@@ -1882,7 +1882,7 @@ Rezerviran je i prostor za 3 retka teksta.</translation>
     <message>
         <location filename="../preferences.ui" line="182"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Premjesti izbrisane datoteke u smeće, umjesto brisanja s diska</translation>
+        <translation>Premjesti izbrisane datoteke u smeće, umjesto brisanja s diska.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="608"/>
@@ -1998,7 +1998,7 @@ Rezerviran je i prostor za 3 retka teksta.</translation>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>x</source>
-        <translation> × </translation>
+        <translation>×</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
