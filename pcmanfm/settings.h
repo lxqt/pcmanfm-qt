@@ -774,6 +774,13 @@ public:
         desktopCellMargins_ = size;
     }
 
+    bool openWithDefaultFileManager() const {
+        return openWithDefaultFileManager_;
+    }
+
+    void setOpenWithDefaultFileManager(bool open) {
+        openWithDefaultFileManager_ = open;
+    }
 
     bool showThumbnails() {
         return showThumbnails_;
@@ -1061,6 +1068,8 @@ private:
 
     QSize folderViewCellMargins_;
     QSize desktopCellMargins_;
+
+    bool openWithDefaultFileManager_;
 
     // search settings
     bool searchNameCaseInsensitive_;

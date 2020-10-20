@@ -129,6 +129,8 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.vMargin->setValue(settings.desktopCellMargins().height());
   connect(ui.lockMargins, &QAbstractButton::clicked, this, &DesktopPreferencesDialog::lockMargins);
 
+  ui.defaultFileManager->setChecked(settings.openWithDefaultFileManager());
+
   resize(sizeHint()); // show it compact
 }
 
@@ -204,6 +206,8 @@ void DesktopPreferencesDialog::applySettings()
   settings.setDesktopShortcuts(ds);
 
   settings.setDesktopCellMargins(QSize(ui.hMargin->value(), ui.vMargin->value()));
+
+  settings.setOpenWithDefaultFileManager(ui.defaultFileManager->isChecked());
 
   settings.save();
 }

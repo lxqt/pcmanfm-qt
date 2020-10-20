@@ -868,6 +868,7 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     setForeground(settings.desktopFgColor());
     setBackground(settings.desktopBgColor());
     setShadow(settings.desktopShadowColor());
+    fileLauncher_.setOpenWithDefaultFileManager(settings.openWithDefaultFileManager());
     desktopHideItems_ = settings.desktopHideItems();
     if(desktopHideItems_) {
         // hide all items by hiding the list view and also

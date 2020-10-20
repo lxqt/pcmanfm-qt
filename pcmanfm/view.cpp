@@ -173,26 +173,30 @@ void View::updateFromSettings(Settings& settings) {
 void View::launchFiles(Fm::FileInfoList files, bool inNewTabs) {
     if(fileLauncher()) {
         if(auto launcher = dynamic_cast<Launcher*>(fileLauncher())) {
-           // this happens on desktop
-           if(!launcher->hasMainWindow()
-              && (inNewTabs
-                  || static_cast<Application*>(qApp)->settings().singleWindowMode())) {
-                MainWindow* window = MainWindow::lastActive();
-                // if there is no last active window, find the last created window
-                if(window == nullptr) {
-                    QWidgetList windows = qApp->topLevelWidgets();
-                    for(int i = 0; i < windows.size(); ++i) {
-                        auto win = windows.at(windows.size() - 1 - i);
-                        if(win->inherits("PCManFM::MainWindow")) {
-                            window = static_cast<MainWindow*>(win);
-                            break;
+            // this happens on desktop
+            if(!launcher->hasMainWindow()) {
+                if(!inNewTabs && launcher->openWithDefaultFileManager()) {
+                    launcher->launchFiles(nullptr, std::move(files));
+                    return;
+                }
+                if(inNewTabs || static_cast<Application*>(qApp)->settings().singleWindowMode()) {
+                    MainWindow* window = MainWindow::lastActive();
+                    // if there is no last active window, find the last created window
+                    if(window == nullptr) {
+                        QWidgetList windows = qApp->topLevelWidgets();
+                        for(int i = 0; i < windows.size(); ++i) {
+                            auto win = windows.at(windows.size() - 1 - i);
+                            if(win->inherits("PCManFM::MainWindow")) {
+                                window = static_cast<MainWindow*>(win);
+                                break;
+                            }
                         }
                     }
+                    auto tempLauncher = Launcher(window);
+                    tempLauncher.openInNewTab();
+                    tempLauncher.launchFiles(nullptr, std::move(files));
+                    return;
                 }
-                auto tempLauncher = Launcher(window);
-                tempLauncher.openInNewTab();
-                tempLauncher.launchFiles(nullptr, std::move(files));
-                return;
             }
             if(inNewTabs) {
                 launcher->openInNewTab();
