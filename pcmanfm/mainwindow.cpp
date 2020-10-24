@@ -659,7 +659,12 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     if(path) {
         page->chdir(path, true);
     }
-    viewFrame->getTabBar()->insertTab(index, page->windowTitle());
+
+    QString tabText = page->title();
+    // remove newline (not all styles can handle it) and distinguish ampersand from mnemonic
+    tabText.replace(QLatin1Char('\n'), QLatin1Char(' '))
+           .replace(QLatin1Char('&'), QLatin1String("&&"));
+    viewFrame->getTabBar()->insertTab(index, tabText);
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
     if(settings.switchToNewTab()) {
@@ -1354,7 +1359,7 @@ void MainWindow::updateUIForCurrentPage(bool setFocus) {
     TabPage* tabPage = currentPage();
 
     if(tabPage) {
-        setWindowTitle(tabPage->windowTitle());
+        setWindowTitle(tabPage->title());
         if(splitView_) {
             if(Fm::PathBar* pathBar = qobject_cast<Fm::PathBar*>(activeViewFrame_->getTopBar())) {
                 pathBar->setPath(tabPage->path());
@@ -1453,17 +1458,21 @@ void MainWindow::onStackedWidgetWidgetRemoved(int index) {
     }
 }
 
-void MainWindow::onTabPageTitleChanged(QString title) {
+void MainWindow::onTabPageTitleChanged() {
     TabPage* tabPage = static_cast<TabPage*>(sender());
     if(ViewFrame* viewFrame = viewFrameForTabPage(tabPage)) {
         int index = viewFrame->getStackedWidget()->indexOf(tabPage);
         if(index >= 0) {
-            viewFrame->getTabBar()->setTabText(index, title);
+            QString tabText = tabPage->title();
+            // remove newline and distinguish ampersand from mnemonic
+            tabText.replace(QLatin1Char('\n'), QLatin1Char(' '))
+                   .replace(QLatin1Char('&'), QLatin1String("&&"));
+            viewFrame->getTabBar()->setTabText(index, tabText);
         }
 
         if(viewFrame == activeViewFrame_) {
             if(tabPage == currentPage()) {
-                setWindowTitle(title);
+                setWindowTitle(tabPage->title());
 
                 // Since TabPage::titleChanged is emitted on changing directory,
                 // the enabled state of Paste action should be updated here

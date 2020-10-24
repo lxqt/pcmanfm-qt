@@ -392,8 +392,8 @@ void TabPage::onFilesAdded(Fm::FileInfoList files) {
 void TabPage::onFolderFinishLoading() {
     auto fi = folder_->info();
     if(fi) { // if loading of the folder fails, it's possible that we don't have FmFileInfo.
-        setWindowTitle(fi->displayName());
-        Q_EMIT titleChanged(fi->displayName());
+        title_ = fi->displayName();
+        Q_EMIT titleChanged();
     }
 
     folder_->queryFilesystemInfo(); // FIXME: is this needed?
@@ -591,7 +591,9 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
         freeFolder();
     }
 
-    Q_EMIT titleChanged(QString::fromUtf8(newPath.baseName().get()));  // FIXME: display name
+    // set title as with path button (will change if the new folder is loaded)
+    title_ = QString::fromUtf8(newPath.baseName().get());
+    Q_EMIT titleChanged();
 
     folder_ = Fm::Folder::fromPath(newPath);
     if(addHistory) {

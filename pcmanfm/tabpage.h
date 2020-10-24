@@ -199,6 +199,10 @@ public:
 
     void reload();
 
+    QString title() const {
+        return title_;
+    }
+
     QString statusText(StatusTextType type = StatusTextNormal) const {
         return statusText_[type];
     }
@@ -268,7 +272,7 @@ public:
 
 Q_SIGNALS:
     void statusChanged(int type, QString statusText);
-    void titleChanged(QString title);
+    void titleChanged();
     void sortFilterChanged();
     void forwardRequested();
     void backwardRequested();
@@ -307,6 +311,7 @@ private:
     ProxyFilter* proxyFilter_;
     QVBoxLayout* verticalLayout;
     std::shared_ptr<Fm::Folder> folder_;
+    QString title_;
     QString statusText_[StatusTextNum];
     Fm::BrowseHistory history_; // browsing history
     Fm::FilePath lastFolderPath_; // last browsed folder
