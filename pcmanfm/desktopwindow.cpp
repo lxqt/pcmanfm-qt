@@ -313,7 +313,11 @@ void DesktopWindow::createTrashShortcut(int items) {
 void DesktopWindow::createHomeShortcut() {
     GKeyFile* kf = g_key_file_new();
     g_key_file_set_string(kf, "Desktop Entry", "Type", "Application");
-    g_key_file_set_string(kf, "Desktop Entry", "Exec", Fm::CStrPtr(g_strconcat("pcmanfm-qt ", Fm::FilePath::homeDir().toString().get(), nullptr)).get());
+    if (pcmanfmApp->lxqtRunning()) {
+        g_key_file_set_string(kf, "Desktop Entry", "Exec", Fm::CStrPtr(g_strconcat("qtxdg-mat open ", Fm::FilePath::homeDir().toString().get(), nullptr)).get());
+    } else {
+        g_key_file_set_string(kf, "Desktop Entry", "Exec", Fm::CStrPtr(g_strconcat("pcmanfm-qt ", Fm::FilePath::homeDir().toString().get(), nullptr)).get());
+    }
     g_key_file_set_string(kf, "Desktop Entry", "Icon", "user-home");
     g_key_file_set_string(kf, "Desktop Entry", "Name", g_get_user_name());
 

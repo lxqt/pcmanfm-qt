@@ -96,6 +96,10 @@ public:
         return profileName_;
     }
 
+    bool lxqtRunning() {
+        return lxqtRunning_;
+    }
+
 protected Q_SLOTS:
     void onAboutToQuit();
     void onSigtermNotified();
@@ -153,6 +157,10 @@ private:
     char** argv_;
 };
 
+#if defined(pcmanfmApp)
+#undef pcmanfmApp
+#endif
+#define pcmanfmApp (static_cast<PCManFM::Application *>(qApp))
 }
 
 #endif // PCMANFM_APPLICATION_H
