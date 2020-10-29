@@ -312,8 +312,15 @@ void DesktopWindow::createTrashShortcut(int items) {
 
 void DesktopWindow::createHomeShortcut() {
     GKeyFile* kf = g_key_file_new();
-    g_key_file_set_string(kf, "Desktop Entry", "Type", "Application");
-    g_key_file_set_string(kf, "Desktop Entry", "Exec", Fm::CStrPtr(g_strconcat("pcmanfm-qt ", Fm::FilePath::homeDir().toString().get(), nullptr)).get());
+    if(static_cast<Application* >(qApp)->settings().openWithDefaultFileManager()) {
+        // let the default file manager open the home folder
+        g_key_file_set_string(kf, "Desktop Entry", "Type", "Link");
+        g_key_file_set_string(kf, "Desktop Entry", "URL", Fm::FilePath::homeDir().toString().get());
+    }
+    else {
+        g_key_file_set_string(kf, "Desktop Entry", "Type", "Application");
+        g_key_file_set_string(kf, "Desktop Entry", "Exec", Fm::CStrPtr(g_strconcat("pcmanfm-qt ", Fm::FilePath::homeDir().toString().get(), nullptr)).get());
+    }
     g_key_file_set_string(kf, "Desktop Entry", "Icon", "user-home");
     g_key_file_set_string(kf, "Desktop Entry", "Name", g_get_user_name());
 
@@ -868,6 +875,7 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     setForeground(settings.desktopFgColor());
     setBackground(settings.desktopBgColor());
     setShadow(settings.desktopShadowColor());
+    fileLauncher_.setOpenWithDefaultFileManager(settings.openWithDefaultFileManager());
     desktopHideItems_ = settings.desktopHideItems();
     if(desktopHideItems_) {
         // hide all items by hiding the list view and also
@@ -1202,15 +1210,21 @@ void DesktopWindow::trustOurDesktopShortcut(std::shared_ptr<const Fm::FileInfo> 
         return;
     }
     const QString fileName = QString::fromStdString(file->name());
-    auto homeExec = Fm::CStrPtr(g_strconcat("pcmanfm-qt ", Fm::FilePath::homeDir().toString().get(), nullptr));
-    const char* execStr = fileName == QLatin1String("trash-can.desktop") && ds.contains(QLatin1String("Trash")) ? "pcmanfm-qt trash:///" :
-                          fileName == QLatin1String("user-home.desktop") && ds.contains(QLatin1String("Home")) ? homeExec.get() :
+    bool isHome(fileName == QLatin1String("user-home.desktop") && ds.contains(QLatin1String("Home")));
+    // we need this in advance because we get execStr with a nested ternary operator below
+    auto homeExec = isHome && settings.openWithDefaultFileManager()
+                        ? Fm::FilePath::homeDir().toString()
+                        : Fm::CStrPtr(g_strconcat("pcmanfm-qt ", Fm::FilePath::homeDir().toString().get(), nullptr));
+    const char* execStr = isHome ? homeExec.get() :
+                          fileName == QLatin1String("trash-can.desktop") && ds.contains(QLatin1String("Trash")) ? "pcmanfm-qt trash:///" :
                           fileName == QLatin1String("computer.desktop") && ds.contains(QLatin1String("Computer")) ? "pcmanfm-qt computer:///" :
                           fileName == QLatin1String("network.desktop") && ds.contains(QLatin1String("Network")) ? "pcmanfm-qt network:///" : nullptr;
     if(execStr) {
         GKeyFile* kf = g_key_file_new();
         if(g_key_file_load_from_file(kf, file->path().toString().get(), G_KEY_FILE_NONE, nullptr)) {
-            Fm::CStrPtr str{g_key_file_get_string(kf, "Desktop Entry", "Exec", nullptr)};
+            Fm::CStrPtr str{g_key_file_get_string(kf, "Desktop Entry",
+                                                  isHome && settings.openWithDefaultFileManager() ? "URL" : "Exec",
+                                                  nullptr)};
             if(str && strcmp(str.get(), execStr) == 0) {
                 file->setTrustable(true);
             }
