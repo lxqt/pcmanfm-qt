@@ -861,16 +861,6 @@ void MainWindow::on_actionPreferences_triggered() {
   app->preferences(QString());
 }
 
-/*
-void MainWindow::changeEvent(QEvent* event) {
-  switch(event->type()) {
-    case QEvent::StyleChange:
-      break;
-  }
-  QWidget::changeEvent(event);
-}
-*/
-
 void MainWindow::onBackForwardContextMenu(QPoint pos) {
   // show a popup menu for browsing history here.
   QToolButton* btn = static_cast<QToolButton*>(sender());

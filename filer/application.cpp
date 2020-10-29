@@ -56,13 +56,6 @@ using namespace Filer;
 static const char* serviceName = "org.filer.Filer";
 static const char* ifaceName = "org.filer.Application";
 
-int ProxyStyle::styleHint(StyleHint hint, const QStyleOption* option, const QWidget* widget, QStyleHintReturn* returnData) const {
-  Application* app = static_cast<Application*>(qApp);
-  if(hint == QStyle::SH_ItemView_ActivateItemOnSingleClick)
-    return app->settings().singleClick();
-  return QProxyStyle::styleHint(hint, option, widget, returnData);
-}
-
 Application::Application(int& argc, char** argv):
   QApplication(argc, argv),
   libFm_(),
@@ -85,7 +78,6 @@ Application::Application(int& argc, char** argv):
   if(dbus.registerService(serviceName)) {
     // we successfully registered the service
     isPrimaryInstance = true;
-    setStyle(new ProxyStyle());
     desktop()->installEventFilter(this);
 
     new ApplicationAdaptor(this);
@@ -352,13 +344,6 @@ void Application::onAboutToQuit() {
 }
 
 bool Application::eventFilter(QObject* watched, QEvent* event) {
-  if(watched == desktop()) {
-    switch(event->type()) {
-      case QEvent::StyleChange:
-      case QEvent::ThemeChange:
-        setStyle(new ProxyStyle());
-    };
-  }
   return QObject::eventFilter(watched, event);
 }
 

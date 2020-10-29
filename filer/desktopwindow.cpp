@@ -724,7 +724,6 @@ bool DesktopWindow::event(QEvent* event)
         break;
     }
 #undef FontChange // FontChange is defined in the headers of XLib and clashes with Qt, let's undefine it.
-    case QEvent::StyleChange:
     case QEvent::FontChange:
         queueRelayout();
         break;
@@ -741,7 +740,6 @@ bool DesktopWindow::event(QEvent* event)
 bool DesktopWindow::eventFilter(QObject * watched, QEvent * event) {
     if(watched == listView_) {
         switch(event->type()) {
-        case QEvent::StyleChange:
         case QEvent::FontChange:
             if(model_)
                 queueRelayout();

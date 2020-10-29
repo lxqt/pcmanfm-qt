@@ -4,6 +4,7 @@
 
 #include <QIcon>
 #include <QIcon>
+#include <QDebug>
 
 using namespace Fm;
 
@@ -20,7 +21,7 @@ bool checkWhetherAppDirOrBundle(FmFileInfo* _info)
     }
 
     QString path = QString(fm_path_to_str(fm_file_info_get_path(_info)));
-    qDebug("probono: checkWhetherAppDirOrBundle " + path.toUtf8());
+    qDebug() << "probono: checkWhetherAppDirOrBundle" << path.toUtf8();
 
     QFileInfo fileInfo = QFileInfo(path);
     QString nameWithoutSuffix = QFileInfo(fileInfo.completeBaseName()).fileName();
@@ -90,7 +91,7 @@ QString getLaunchableExecutable(FmFileInfo* _info)
         launchableExecutable = QString(path + "/AppRun");
     }
 
-    qDebug("probono: launchableExecutable: " + launchableExecutable.toUtf8());
+    qDebug() << "probono: launchableExecutable:" << launchableExecutable.toUtf8();
     return(launchableExecutable);
 }
 
@@ -113,6 +114,10 @@ QIcon getIconForBundle(FmFileInfo* _info)
     QFile tiffFile2(path.toUtf8() + "/.dir.tiff");
     if (tiffFile2.exists()) {
         icon = QIcon(QFileInfo(tiffFile2).canonicalFilePath());
+    }
+    QFile pngFile1(path.toUtf8() + "/Resources/" + nameWithoutSuffix.toUtf8() + ".png");
+    if (pngFile1.exists()) {
+        icon = QIcon(QFileInfo(pngFile1).canonicalFilePath());
     }
 
     // probono: ROX AppDir
