@@ -40,12 +40,20 @@ public:
         openInNewTab_ = true;
     }
 
+    bool openWithDefaultFileManager() const {
+        return openWithDefaultFileManager_;
+    }
+    void setOpenWithDefaultFileManager(bool open) {
+        openWithDefaultFileManager_ = open;
+    }
+
 protected:
     bool openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folderInfos, Fm::GErrorPtr& err) override;
 
 private:
     MainWindow* mainWindow_;
     bool openInNewTab_;
+    bool openWithDefaultFileManager_;
 };
 
 }

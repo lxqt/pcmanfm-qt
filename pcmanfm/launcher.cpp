@@ -28,7 +28,8 @@ namespace PCManFM {
 Launcher::Launcher(PCManFM::MainWindow* mainWindow):
     Fm::FileLauncher(),
     mainWindow_(mainWindow),
-    openInNewTab_(false) {
+    openInNewTab_(false),
+    openWithDefaultFileManager_(false) {
 
     Application* app = static_cast<Application*>(qApp);
     setQuickExec(app->settings().quickExec());
@@ -38,12 +39,26 @@ Launcher::~Launcher() {
 
 }
 
-bool Launcher::openFolder(GAppLaunchContext* /*ctx*/, const Fm::FileInfoList& folderInfos, Fm::GErrorPtr& /*err*/) {
+bool Launcher::openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folderInfos, Fm::GErrorPtr& /*err*/) {
     auto fi = folderInfos[0];
     Application* app = static_cast<Application*>(qApp);
     MainWindow* mainWindow = mainWindow_;
     Fm::FilePath path = fi->path();
     if(!mainWindow) {
+        // Launch folders with the default file manager if:
+        //   1. There is no main window (i.e., folders are on desktop),
+        //   2. The folders are not supposed to be opened in new tabs, and
+        //   3. The default file manager exists and is not PCManFM-Qt.
+        if(openWithDefaultFileManager_ && !openInNewTab_) {
+            auto defaultApp = Fm::GAppInfoPtr{g_app_info_get_default_for_type("inode/directory", FALSE), false};
+            if(defaultApp != nullptr
+               && strcmp(g_app_info_get_id(defaultApp.get()), "pcmanfm-qt.desktop") != 0) {
+                for(const auto folder : folderInfos) {
+                    Fm::FileLauncher::launchWithDefaultApp(folder, ctx);
+                }
+                return true;
+            }
+        }
         mainWindow = new MainWindow(std::move(path));
         mainWindow->resize(app->settings().windowWidth(), app->settings().windowHeight());
 

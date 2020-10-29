@@ -207,6 +207,17 @@ A space is also reserved for 3 lines of text.</string>
         </widget>
        </item>
        <item>
+        <widget class="QCheckBox" name="defaultFileManager">
+         <property name="toolTip">
+          <string>By default, desktop folders will be opened in PCManFM-Qt if they
+are left clicked, even when it is not the default file manager.</string>
+         </property>
+         <property name="text">
+          <string>Open desktop folders in default file manager by left clicking</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <spacer name="verticalSpacer_2">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
