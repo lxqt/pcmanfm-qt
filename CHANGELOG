@@ -1,3 +1,19 @@
+pcmanfm-qt-0.16.0 / 2020-11-01
+==============================
+  * Removed a redundant method from desktop code.
+  * Added an option to switch to newly opened tab.
+  * Added an option to open tabs of last window.
+  * Fixed a regression in restoring vertical scroll position.
+  * Guarantee a correct cursor shape on opening a folder.
+  * Scroll to current item on removing/changing filter.
+  * ￼Keep the current focus when opening new tab in background.
+  * ￼Reversed the workaround for RTL statusbar text because it isn't needed anymore.
+  * ￼Fixed DND into desktop trash.
+  * ￼Handle ampersand and newline in tab text.
+  * ￼Handle text tabs in statusbar.
+  * ￼Added an option to open desktop folders in default file manager.
+  * ￼Code cleanup.
+
 pcmanfm-qt-0.15.1 / 2020-05-16
 ==============================
   * Fixed remounting of remote folders with its bookmark under special circumstances.

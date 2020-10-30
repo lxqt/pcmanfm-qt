@@ -19,12 +19,7 @@
         <translation>Gerenciador de arquivos leve</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="58"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="109"/>
+        <location filename="../about.ui" line="113"/>
         <source>PCManFM-Qt File Manager
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
@@ -61,7 +56,7 @@ juntamente com esse programa. Se não, escreva para a Free Software
 Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="87"/>
+        <location filename="../about.ui" line="91"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
@@ -70,12 +65,18 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
 </translation>
     </message>
     <message>
-        <location filename="../about.ui" line="78"/>
+        <location filename="../about.ui" line="58"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="82"/>
         <source>Authors</source>
         <translation>Autores</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="100"/>
+        <location filename="../about.ui" line="104"/>
         <source>License</source>
         <translation>Licença</translation>
     </message>
@@ -290,38 +291,38 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
         <translation>Preferências da Área de Trabalho</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="229"/>
-        <location filename="../desktop-preferences.ui" line="235"/>
+        <location filename="../desktop-preferences.ui" line="240"/>
+        <location filename="../desktop-preferences.ui" line="246"/>
         <source>Background</source>
         <translation>Papel de parede</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="276"/>
+        <location filename="../desktop-preferences.ui" line="287"/>
         <source>Wallpaper mode:</source>
         <translation>Modo do papel de parede:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="299"/>
+        <location filename="../desktop-preferences.ui" line="310"/>
         <source>Wallpaper image file:</source>
         <translation>Arquivo do papel de parede:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="241"/>
+        <location filename="../desktop-preferences.ui" line="252"/>
         <source>Select background color:</source>
         <translation>Cor do papel de parede:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="308"/>
+        <location filename="../desktop-preferences.ui" line="319"/>
         <source>Image file</source>
         <translation>Arquivo de imagem</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="314"/>
+        <location filename="../desktop-preferences.ui" line="325"/>
         <source>Image file path</source>
         <translation>Caminho do arquivo de imagem</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="321"/>
+        <location filename="../desktop-preferences.ui" line="332"/>
         <source>&amp;Browse</source>
         <translation>Navega&amp;r</translation>
     </message>
@@ -399,102 +400,113 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         <translation>Travar</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="264"/>
+        <location filename="../desktop-preferences.ui" line="212"/>
+        <source>By default, desktop folders will be opened in PCManFM-Qt if they
+are left clicked, even when it is not the default file manager.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="216"/>
+        <source>Open desktop folders in default file manager by left clicking</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="275"/>
         <source>Wallpaper</source>
         <translation>Papel de parede</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="330"/>
+        <location filename="../desktop-preferences.ui" line="341"/>
         <source>Transform image based on EXIF data</source>
         <translation>Transformar imagem baseado nos dados EXIF</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="337"/>
+        <location filename="../desktop-preferences.ui" line="348"/>
         <source>Individual wallpaper for each monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="364"/>
+        <location filename="../desktop-preferences.ui" line="375"/>
         <source>Slide Show</source>
         <translation>Apresentação de slides</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="370"/>
+        <location filename="../desktop-preferences.ui" line="381"/>
         <source>Enable Slide Show</source>
         <translation>Habilitar apresentação de slides</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="382"/>
+        <location filename="../desktop-preferences.ui" line="393"/>
         <source>Wallpaper image folder:</source>
         <translation>Pasta dos papéis de parede:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="389"/>
+        <location filename="../desktop-preferences.ui" line="400"/>
         <source>Browse</source>
         <translation>Procurar</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="396"/>
+        <location filename="../desktop-preferences.ui" line="407"/>
         <source> hour(s)</source>
         <translation> hora(s)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="406"/>
+        <location filename="../desktop-preferences.ui" line="417"/>
         <source>and</source>
         <translation>e</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="419"/>
+        <location filename="../desktop-preferences.ui" line="430"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>Intervalos menores que 5min serão ignorados</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="422"/>
+        <location filename="../desktop-preferences.ui" line="433"/>
         <source>Interval:</source>
         <translation>Intervalo:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="429"/>
+        <location filename="../desktop-preferences.ui" line="440"/>
         <source> minute(s)</source>
         <translation> minuto(s)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="455"/>
+        <location filename="../desktop-preferences.ui" line="466"/>
         <source>Wallpaper folder</source>
         <translation>Pasta de papel de parede</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="478"/>
+        <location filename="../desktop-preferences.ui" line="489"/>
         <source>Randomize the slide show</source>
         <translation>Apresentação de slides aleatória</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="511"/>
+        <location filename="../desktop-preferences.ui" line="522"/>
         <source>Visible Shortcuts</source>
         <translation>Atalhos visíveis</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="517"/>
+        <location filename="../desktop-preferences.ui" line="528"/>
         <source>Home</source>
         <translation>Pasta pessoal</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="528"/>
+        <location filename="../desktop-preferences.ui" line="539"/>
         <source>Trash</source>
         <translation>Lixeira</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="539"/>
+        <location filename="../desktop-preferences.ui" line="550"/>
         <source>Computer</source>
         <translation>Computador</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="550"/>
+        <location filename="../desktop-preferences.ui" line="561"/>
         <source>Network</source>
         <translation>Rede</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="505"/>
+        <location filename="../desktop-preferences.ui" line="516"/>
         <source>Advanced</source>
         <translation>Avançado</translation>
     </message>
@@ -1381,13 +1393,13 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         <translation>Arquivos ou diretórios para abrir</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="564"/>
-        <location filename="../application.cpp" line="569"/>
+        <location filename="../application.cpp" line="594"/>
+        <location filename="../application.cpp" line="599"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="569"/>
+        <location filename="../application.cpp" line="599"/>
         <source>Terminal emulator is not set.</source>
         <translation>O emulador de terminal não foi definido.</translation>
     </message>
@@ -1504,17 +1516,17 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         <translation>Ampliar a imagem para preencher a tela inteira</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="248"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="252"/>
         <source>Select Wallpaper</source>
         <translation>Selecionar Papel de parede</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="252"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="256"/>
         <source>Image Files</source>
         <translation>Arquivos de imagem</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="294"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="298"/>
         <source>Select Wallpaper Folder</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1540,43 +1552,43 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         <translation>Lixeira (vazia)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="331"/>
+        <location filename="../desktopwindow.cpp" line="338"/>
         <source>Computer</source>
         <translation>Computador</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="345"/>
+        <location filename="../desktopwindow.cpp" line="352"/>
         <source>Network</source>
         <translation>Rede</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="924"/>
+        <location filename="../desktopwindow.cpp" line="943"/>
         <source>Open</source>
         <translation>Abrir</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="929"/>
-        <location filename="../desktopwindow.cpp" line="966"/>
+        <location filename="../desktopwindow.cpp" line="948"/>
+        <location filename="../desktopwindow.cpp" line="985"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>F&amp;ixar na posição atual</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="936"/>
+        <location filename="../desktopwindow.cpp" line="955"/>
         <source>Empty Trash</source>
         <translation>Esvaziar lixeira</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="992"/>
+        <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Hide Desktop Items</source>
         <translation>Ocultar itens da área de trabalho</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="998"/>
+        <location filename="../desktopwindow.cpp" line="1017"/>
         <source>Create Launcher</source>
         <translation>Criar Lançador</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1001"/>
+        <location filename="../desktopwindow.cpp" line="1020"/>
         <source>Desktop Preferences</source>
         <translation>Preferências da área de trabalho</translation>
     </message>
@@ -1584,7 +1596,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="92"/>
+        <location filename="../tabpage.cpp" line="91"/>
         <source>Filter:</source>
         <translation>Filtrar:</translation>
     </message>
@@ -1592,7 +1604,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="62"/>
+        <location filename="../tabpage.cpp" line="61"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>Limpar texto (Ctrl+K ou Esc)</translation>
     </message>
@@ -1605,40 +1617,40 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         <translation>Abrir como Root</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="683"/>
+        <location filename="../mainwindow.cpp" line="695"/>
         <source>Hide menu bar</source>
         <translation>Ocultar a barra de menu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="684"/>
+        <location filename="../mainwindow.cpp" line="696"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Isto ocultará completamente a barra de menus, use Ctrl+M para exibi-la novamente.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1030"/>
+        <location filename="../mainwindow.cpp" line="1041"/>
         <source>Version: %1</source>
         <translation>Versão: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1897"/>
+        <location filename="../mainwindow.cpp" line="1929"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mover para a lixeira</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1897"/>
+        <location filename="../mainwindow.cpp" line="1929"/>
         <source>&amp;Delete</source>
         <translation>&amp;Excluir</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1954"/>
-        <location filename="../mainwindow.cpp" line="1962"/>
+        <location filename="../mainwindow.cpp" line="1986"/>
+        <location filename="../mainwindow.cpp" line="1994"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1962"/>
+        <location filename="../mainwindow.cpp" line="1994"/>
         <source>Switch user command is not set.</source>
         <translation>O comando para trocar de usuário não está definido.</translation>
     </message>
@@ -1646,22 +1658,22 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="198"/>
+        <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Icon View</source>
         <translation>Visualização em ícones</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="199"/>
+        <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Compact View</source>
         <translation>Visualização compacta</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="200"/>
+        <location filename="../preferencesdialog.cpp" line="202"/>
         <source>Thumbnail View</source>
         <translation>Visualização em miniaturas</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="201"/>
+        <location filename="../preferencesdialog.cpp" line="203"/>
         <source>Detailed List View</source>
         <translation>Lista detalhada</translation>
     </message>
@@ -1669,17 +1681,17 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="455"/>
+        <location filename="../tabpage.cpp" line="471"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="464"/>
+        <location filename="../tabpage.cpp" line="480"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Espaço livre: %1 (Total: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="481"/>
+        <location filename="../tabpage.cpp" line="497"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n item</numerusform>
@@ -1687,7 +1699,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="483"/>
+        <location filename="../tabpage.cpp" line="499"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n oculto)</numerusform>
@@ -1695,14 +1707,14 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="488"/>
-        <location filename="../tabpage.cpp" line="686"/>
-        <location filename="../tabpage.cpp" line="702"/>
+        <location filename="../tabpage.cpp" line="504"/>
+        <location filename="../tabpage.cpp" line="692"/>
+        <location filename="../tabpage.cpp" line="706"/>
         <source>Link to</source>
         <translation>Link para</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="716"/>
+        <location filename="../tabpage.cpp" line="718"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n item(ns) selecionado(s)</numerusform>
@@ -1765,7 +1777,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="575"/>
+        <location filename="../preferences.ui" line="589"/>
         <source>Thumbnail</source>
         <translation>Miniaturas</translation>
     </message>
@@ -1872,12 +1884,12 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         <translation>Janela</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="527"/>
+        <location filename="../preferences.ui" line="534"/>
         <source>Default width of new windows:</source>
         <translation>Largura padrão de novas janelas:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="541"/>
+        <location filename="../preferences.ui" line="548"/>
         <source>Default height of new windows:</source>
         <translation>Altura padrão de novas janelas:</translation>
     </message>
@@ -1892,7 +1904,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
         <translation>Exibir botão &quot;Fechar&quot; nas abas	</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="520"/>
+        <location filename="../preferences.ui" line="527"/>
         <source>Remember the size of the last closed window</source>
         <translation>Memorizar tamanho da última janela fechada</translation>
     </message>
@@ -2025,77 +2037,87 @@ only if there are more than one tab.</source>
 somente se houver mais de uma aba.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="734"/>
+        <location filename="../preferences.ui" line="520"/>
+        <source>Switch to newly opened tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="562"/>
+        <source>Reopen last window tabs in a new window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="748"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>Exemplos:&lt;br&gt;Para terminal:&lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Para trocar o usuário:&lt;i&gt;lxsudo %s&lt;/i&gt; ou &lt;i&gt;lxsudo dbus-run-session --%s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; é a linha de comando que você deseja executar no terminal ou su. &lt;br&gt;Importante: Por favor use lxsudo, o sudo sozinho irá corromper as permissões do arquivo de configurações.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="825"/>
+        <location filename="../preferences.ui" line="839"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>A reinicialização do aplicativo é necessária para que as alterações entrem em vigor.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="605"/>
+        <location filename="../preferences.ui" line="619"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Necessita do ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="608"/>
+        <location filename="../preferences.ui" line="622"/>
         <source>Show thumbnails of files</source>
         <translation>Exibir miniaturas dos arquivos</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="770"/>
+        <location filename="../preferences.ui" line="784"/>
         <source>Templates</source>
         <translation>Modelos</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="776"/>
+        <location filename="../preferences.ui" line="790"/>
         <source>Show only user defined templates in menu</source>
         <translation>Exibir no menu apenas os modelos definidos pelo usuário</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="783"/>
+        <location filename="../preferences.ui" line="797"/>
         <source>Show only one template for each MIME type</source>
         <translation>Exibir apenas um modelo para cada tipo MIME</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="790"/>
+        <location filename="../preferences.ui" line="804"/>
         <source>Run default application after creation from template</source>
         <translation>Executar o aplicativo padrão após a criação do modelo</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="598"/>
+        <location filename="../preferences.ui" line="612"/>
         <source>Only show thumbnails for local files</source>
         <translation>Exibir miniaturas apenas para arquivos locais</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="581"/>
+        <location filename="../preferences.ui" line="595"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Não gerar miniaturas para arquivos de imagens que ultrapassem este tamanho:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="588"/>
+        <location filename="../preferences.ui" line="602"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="665"/>
+        <location filename="../preferences.ui" line="679"/>
         <source>When removable medium unmounted:</source>
         <translation>Quando uma mídia removível for desmontada:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="721"/>
+        <location filename="../preferences.ui" line="735"/>
         <source>Switch &amp;user command:</source>
         <translation>Alternar comando do &amp;usuário:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="747"/>
+        <location filename="../preferences.ui" line="761"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>In&amp;tegração do arquivador:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="714"/>
+        <location filename="../preferences.ui" line="728"/>
         <source>Terminal emulator:</source>
         <translation>Emulador de terminal:</translation>
     </message>
@@ -2105,37 +2127,37 @@ somente se houver mais de uma aba.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="635"/>
+        <location filename="../preferences.ui" line="649"/>
         <source>Auto Mount</source>
         <translation>Montar automaticamente</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="641"/>
+        <location filename="../preferences.ui" line="655"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Montar volumes automaticamente na inicialização do programa</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="648"/>
+        <location filename="../preferences.ui" line="662"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Montar mídias removíveis automaticamente ao serem inseridas</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="655"/>
+        <location filename="../preferences.ui" line="669"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Mostrar opções disponíveis para mídias removíveis ao serem inseridas</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="671"/>
+        <location filename="../preferences.ui" line="685"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Fechar &amp;aba contendo mídia removível</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="678"/>
+        <location filename="../preferences.ui" line="692"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Alterar pasta na aba para a pasta pessoal</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="705"/>
+        <location filename="../preferences.ui" line="719"/>
         <source>Programs</source>
         <translation>Programas</translation>
     </message>
