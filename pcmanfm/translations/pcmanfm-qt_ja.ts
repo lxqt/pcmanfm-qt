@@ -577,12 +577,12 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation>Ctrl+PageDown</translation>
+        <translation>Ctrl+PgDown</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation>Ctrl+PageUp</translation>
+        <translation>Ctrl+PgUp</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
