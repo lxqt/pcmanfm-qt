@@ -591,12 +591,12 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation></translation>
+        <translation>Ctrl+Pagina giù</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation></translation>
+        <translation>Ctrl+Pagina insù</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
