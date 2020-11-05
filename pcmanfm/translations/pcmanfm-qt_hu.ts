@@ -402,12 +402,13 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Alapértelmezés szerint az asztali mappák a PCManFM-Qt-ban nyílnak meg,
+ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett fájlkezelő.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Bal gombbal nyissa meg az asztali mappákat az alapértelmezett fájlkezelőben</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -2021,12 +2022,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="520"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Átváltás az újonnan megnyitott lapra</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="562"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Legutolsó ablak lapjainak megnyitása az új ablakban</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="748"/>
