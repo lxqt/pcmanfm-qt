@@ -18,7 +18,7 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programmation&#xa0;:
+        <translation>Programmation :
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -36,7 +36,8 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="104"/>
@@ -96,7 +97,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>Type de média&#xa0;:</translation>
+        <translation>Type de média :</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
@@ -309,7 +310,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="252"/>
         <source>Select background color:</source>
-        <translation>Sélection de la couleur de l&apos;arrière-plan&#xa0;:</translation>
+        <translation>Sélection de la couleur de l&apos;arrière-plan :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="319"/>
@@ -344,12 +345,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>Sélection de la couleur de l&apos;ombre&#xa0;:</translation>
+        <translation>Sélection de la couleur de l&apos;ombre :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>Sélection de la police&#xa0;:</translation>
+        <translation>Sélection de la police :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -403,7 +404,8 @@ Un espace est également réservé pour 3 lignes de texte.</translation>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Par défaut, les dossiers de bureau s&apos;ouvrent dans PCManFM-Qt 
+par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini par défaut.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
@@ -1687,7 +1689,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="480"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espace libre : %1 (total&#xa0;: %2)</translation>
+        <translation>Espace libre : %1 (total : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="497"/>
@@ -1798,17 +1800,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="282"/>
         <source>Size of big icons:</source>
-        <translation>Taille des grandes icônes&#xa0;:</translation>
+        <translation>Taille des grandes icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="299"/>
         <source>Size of small icons:</source>
-        <translation>Taille des petites icônes&#xa0;:</translation>
+        <translation>Taille des petites icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="316"/>
         <source>Size of thumbnails:</source>
-        <translation>Taille des vignettes&#xa0;:</translation>
+        <translation>Taille des vignettes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="330"/>
@@ -1828,12 +1830,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="534"/>
         <source>Default width of new windows:</source>
-        <translation>Largeur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Largeur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="548"/>
         <source>Default height of new windows:</source>
-        <translation>Hauteur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Hauteur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
@@ -1868,7 +1870,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="110"/>
         <source>Default view mode:</source>
-        <translation>Mode d&apos;affichage par défaut&#xa0;:</translation>
+        <translation>Mode d&apos;affichage par défaut :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="123"/>
@@ -2158,7 +2160,7 @@ seulement s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="728"/>
         <source>Terminal emulator:</source>
-        <translation>Émulateur de terminal&#xa0;:</translation>
+        <translation>Émulateur de terminal :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="349"/>
