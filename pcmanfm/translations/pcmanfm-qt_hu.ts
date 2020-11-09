@@ -1568,7 +1568,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
         <location filename="../desktopwindow.cpp" line="948"/>
         <location filename="../desktopwindow.cpp" line="985"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>&amp;Rögzítés ebbe a helyzetbe</translation>
+        <translation>&amp;Rögzítés a jelenlegi helyre</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="955"/>
