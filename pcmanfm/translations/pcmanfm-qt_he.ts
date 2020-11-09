@@ -72,7 +72,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="104"/>
@@ -402,12 +403,13 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>כבררת מחדל, תיקיות שולחן העבודה תיפתחנה עם PCManFM-Qt
+בלחיצה שמאלית, אפילו אם זה אינו מנהל הקבצים כבררת המחדל.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>לפתוח את תיקיות שולחן העבודה במנהל הקבצים כבררת המחדל בלחיצה שמאלית</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -1543,6 +1545,8 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>
             <numerusform>אשפה (פריט %Ln)</numerusform>
             <numerusform>אשפה (%Ln פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1695,6 +1699,8 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>
             <numerusform>פריט %n</numerusform>
             <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1702,6 +1708,8 @@ are left clicked, even when it is not the default file manager.</source>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n מוסתר)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
             <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
@@ -1716,7 +1724,9 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../tabpage.cpp" line="718"/>
         <source>%n item(s) selected</source>
         <translation>
-            <numerusform>פריט %n נבחר</numerusform>
+            <numerusform>נבחר פריט %n</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
             <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
@@ -1732,8 +1742,10 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../view.cpp" line="61"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>האם ברצונך לפתוח את הקובץ ה־%1 הזה?</numerusform>
-            <numerusform>האם ברצונך לפתוח את %1 הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את הקובץ ה־%1 הזה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
         </translation>
     </message>
     <message>
@@ -2028,12 +2040,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="520"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>מעבר ללשונית החדשה שנפתחה</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="562"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>לפתוח מחדש את הלשוניות מהחלון האחרון בחלון חדש</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="748"/>
