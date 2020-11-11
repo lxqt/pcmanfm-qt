@@ -11,7 +11,7 @@
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
@@ -57,7 +57,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="104"/>
@@ -264,7 +265,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bläddra</translation>
     </message>
 </context>
 <context>
@@ -272,7 +273,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivbordsinställningar</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="240"/>
@@ -308,7 +309,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="332"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bläddra</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
@@ -348,7 +349,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Mellanrum</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="142"/>
@@ -402,12 +403,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="341"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändra bild baserat på EXIF data</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="348"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Individuell bakgrundsbild för varje bildskärm</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="375"/>
@@ -427,7 +428,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="400"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Bläddra</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="407"/>
@@ -500,42 +501,42 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Gömda Genvägar</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation type="unfinished"></translation>
+        <translation>Genväg</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Handling</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Fokusera vy, återställ filterribba</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Fokuseringssidopanel</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
@@ -546,80 +547,80 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+D</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Nästa flik</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Föregående flik</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageDown</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageUp</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Number</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoppa till flik</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Number</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Blanksteg</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå uppåt</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Sökdialog</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+Insert</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
@@ -629,32 +630,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Dra+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Flytta fil när den släpps</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Dra+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera fil när den släpps</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Dra+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Skapa en symlänk när filen släpps</translation>
     </message>
 </context>
 <context>
@@ -682,7 +683,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="265"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå &amp;Upp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="268"/>
@@ -692,7 +693,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="271"/>
         <source>Alt+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Pil upp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="280"/>
@@ -702,7 +703,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="283"/>
         <source>Alt+Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="292"/>
@@ -712,7 +713,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="295"/>
         <source>F5</source>
-        <translation type="unfinished"></translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="304"/>
@@ -742,7 +743,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="337"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="345"/>
@@ -752,7 +753,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="348"/>
         <source>Ctrl+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="357"/>
@@ -807,17 +808,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="431"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tumnagelvy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="440"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>Kl&amp;ipp ut</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="443"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="452"/>
@@ -827,7 +828,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="455"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="464"/>
@@ -837,7 +838,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="467"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="472"/>
@@ -847,12 +848,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="475"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="480"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation>In&amp;ställningar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="488"/>
@@ -882,22 +883,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="528"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Efter Fil &amp;typ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="536"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Efter &amp;Ägare</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="544"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Efter &amp;Grupp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="552"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Mappar först</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="560"/>
@@ -927,7 +928,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="683"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="715"/>
@@ -952,7 +953,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="857"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="865"/>
@@ -967,7 +968,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="871"/>
         <source>F6</source>
-        <translation type="unfinished"></translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="876"/>
@@ -977,17 +978,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="890"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa Tum&amp;naglar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="893"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa Tumnaglar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="901"/>
@@ -997,7 +998,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="904"/>
         <source>F9</source>
-        <translation type="unfinished"></translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
@@ -1007,7 +1008,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="749"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="754"/>
@@ -1017,7 +1018,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="757"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="766"/>
@@ -1062,12 +1063,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="846"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="780"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng &amp;andra flikar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="746"/>
@@ -1087,7 +1088,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="794"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="803"/>
@@ -1108,7 +1109,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="583"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="592"/>
@@ -1123,7 +1124,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="598"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Vänsterpil</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="607"/>
@@ -1138,7 +1139,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="613"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Högerpil</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="618"/>
@@ -1153,7 +1154,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="630"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="635"/>
@@ -1163,27 +1164,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="638"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>S&amp;täng flik</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="646"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>File &amp;Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>Fil &amp;Egenskaper</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
         <source>Alt+Return</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Enter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="659"/>
@@ -1203,12 +1204,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="696"/>
         <source>F4</source>
-        <translation type="unfinished"></translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="701"/>
         <source>Open as &amp;Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna som &amp;Root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="706"/>
@@ -1218,12 +1219,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="718"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="730"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
@@ -1233,7 +1234,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="738"/>
         <source>F3</source>
-        <translation type="unfinished"></translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -1243,7 +1244,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>S&amp;kapa Ny</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="92"/>
@@ -1328,7 +1329,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../application.cpp" line="180"/>
         <location filename="../application.cpp" line="195"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>NAMN</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="183"/>
@@ -1348,12 +1349,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>FIL</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>LÄGE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
@@ -1368,18 +1369,18 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer eller mappar att öppna</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[FIL1, FIL2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="594"/>
         <location filename="../application.cpp" line="599"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Fel</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="599"/>
@@ -1392,7 +1393,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna i filhanterare</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="137"/>
@@ -1405,32 +1406,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation type="unfinished"></translation>
+        <translation>SSH</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation type="unfinished"></translation>
+        <translation>FTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation type="unfinished"></translation>
+        <translation>Säker WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTPS</translation>
     </message>
 </context>
 <context>
@@ -1443,17 +1444,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="54"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj en ikon</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="56"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilder (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="78"/>
@@ -1463,7 +1464,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="86"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj en fil</translation>
     </message>
 </context>
 <context>
@@ -1501,12 +1502,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="252"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj Skrivbordsbakgrund</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="256"/>
         <source>Image Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildfiler</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="298"/>
@@ -1547,7 +1548,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="943"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="948"/>
@@ -1589,7 +1590,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="61"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Rensa text (Ctrl+K eller Esc)</translation>
     </message>
 </context>
 <context>
@@ -1597,7 +1598,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="139"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Root instans</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="695"/>
@@ -1612,7 +1613,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1041"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Version: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
@@ -1630,7 +1631,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="1986"/>
         <location filename="../mainwindow.cpp" line="1994"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Fel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1994"/>
@@ -1643,17 +1644,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikonvy</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompaktvy</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="202"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Tumnagelvy</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="203"/>
@@ -1666,7 +1667,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="471"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Fel</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="480"/>
@@ -1710,7 +1711,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../view.cpp" line="60"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Många filer</translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="61"/>
@@ -1723,17 +1724,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../view.cpp" line="123"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna i en ny F&amp;lik</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="127"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna i nytt fön&amp;ster</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="135"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna i Termina&amp;l</translation>
     </message>
 </context>
 <context>
@@ -1741,7 +1742,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -1757,7 +1758,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="589"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"></translation>
+        <translation>Tumnagel</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
@@ -1782,17 +1783,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="282"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Storlek på stora ikoner:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="299"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Storlek på mindre ikoner:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="316"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation>Storlek på tumnaglar:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="330"/>
@@ -1802,12 +1803,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="262"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikontema:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="493"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Fönster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
@@ -1857,7 +1858,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="123"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sek</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="169"/>
@@ -1877,12 +1878,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="622"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa tumnaglar för filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="612"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa endast tumnaglar för lokala filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
@@ -1897,7 +1898,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="133"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bokmärken:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="141"/>
@@ -1907,12 +1908,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="146"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna i en ny flik</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="151"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna i ett nytt fönster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="189"/>
@@ -2061,12 +2062,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="602"/>
         <source> KB</source>
-        <translation type="unfinished"></translation>
+        <translation> KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="619"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>Behöver ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="649"/>
@@ -2106,12 +2107,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="719"/>
         <source>Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>Program</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="728"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal emulator:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="735"/>
@@ -2126,7 +2127,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="784"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Mallar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="790"/>
@@ -2164,7 +2165,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Varning</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
@@ -2175,7 +2176,7 @@ only if there are more than one tab.</source>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Fel</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
