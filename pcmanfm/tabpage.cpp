@@ -32,6 +32,7 @@
 #include <QScrollBar>
 #include <QToolButton>
 #include <QLabel>
+#include <QToolTip>
 #include <QDir>
 #include "settings.h"
 #include "application.h"
@@ -116,6 +117,7 @@ TabPage::TabPage(QWidget* parent):
     proxyModel_->setBackupAsHidden(settings.backupAsHidden());
     proxyModel_->setShowThumbnails(settings.showThumbnails());
     connect(proxyModel_, &ProxyFolderModel::sortFilterChanged, this, [this] {
+        QToolTip::showText(QPoint(), QString()); // remove the tooltip, if any
         saveFolderSorting();
         Q_EMIT sortFilterChanged();
     });
@@ -148,6 +150,7 @@ TabPage::TabPage(QWidget* parent):
     folderView_->setModel(proxyModel_);
     verticalLayout->addWidget(folderView_);
 
+    folderView_->childView()->installEventFilter(this);
     if(settings.noItemTooltip()) {
         folderView_->childView()->viewport()->installEventFilter(this);
     }
@@ -185,13 +188,10 @@ void TabPage::transientFilterBar(bool transient) {
         filterBar_->clear();
         if(transient) {
             filterBar_->hide();
-            folderView_->childView()->removeEventFilter(this);
-            folderView_->childView()->installEventFilter(this);
             connect(filterBar_, &FilterBar::lostFocus, this, &TabPage::onLosingFilterBarFocus);
         }
         else {
             filterBar_->show();
-            folderView_->childView()->removeEventFilter(this);
             disconnect(filterBar_, &FilterBar::lostFocus, this, &TabPage::onLosingFilterBarFocus);
         }
     }
@@ -214,10 +214,13 @@ void TabPage::showFilterBar() {
 }
 
 bool TabPage::eventFilter(QObject* watched, QEvent* event) {
-    // when a text is typed inside the view, type it inside the filter-bar
-    if(filterBar_ && watched == folderView_->childView() && event->type() == QEvent::KeyPress) {
-        if(QKeyEvent* ke = static_cast<QKeyEvent*>(event)) {
-            filterBar_->keyPressed(ke);
+    if(watched == folderView_->childView() && event->type() == QEvent::KeyPress) {
+        QToolTip::showText(QPoint(), QString()); // remove the tooltip, if any
+        // when a text is typed inside the view, type it inside the transient filter-bar
+        if(filterBar_ && !static_cast<Application*>(qApp)->settings().showFilter()) {
+            if(QKeyEvent* ke = static_cast<QKeyEvent*>(event)) {
+                filterBar_->keyPressed(ke);
+            }
         }
     }
     else if (watched == folderView_->childView()->viewport() && event->type() == QEvent::ToolTip) {
@@ -235,6 +238,8 @@ void TabPage::backspacePressed() {
 
 void TabPage::onFilterStringChanged(QString str) {
     if(filterBar_ && str != getFilterStr()) {
+        QToolTip::showText(QPoint(), QString()); // remove the tooltip, if any
+
         bool transientFilterBar = !static_cast<Application*>(qApp)->settings().showFilter();
 
         // with a transient filter-bar, let the current index be selected by Qt
@@ -591,6 +596,8 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
         freeFolder();
     }
 
+    // remove the tooltip, if any
+    QToolTip::showText(QPoint(), QString());
     // set title as with path button (will change if the new folder is loaded)
     title_ = QString::fromUtf8(newPath.baseName().get());
     Q_EMIT titleChanged();
@@ -816,10 +823,8 @@ void TabPage::setViewMode(Fm::FolderView::ViewMode mode) {
     if(prevMode != folderView_->viewMode()) {
         // FolderView::setViewMode() may delete the view to switch between list and tree.
         // So, the event filter should be re-installed and the status message should be updated.
-        if(!settings.showFilter()) {
-            folderView_->childView()->removeEventFilter(this);
-            folderView_->childView()->installEventFilter(this);
-        }
+        folderView_->childView()->removeEventFilter(this);
+        folderView_->childView()->installEventFilter(this);
         if(settings.noItemTooltip()) {
             folderView_->childView()->viewport()->removeEventFilter(this);
             folderView_->childView()->viewport()->installEventFilter(this);
