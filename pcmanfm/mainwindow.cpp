@@ -370,8 +370,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     }
 }
 
-MainWindow::~MainWindow() {
-}
+MainWindow::~MainWindow() = default;
 
 // Activate a view frame appropriately and give a special style to the inactive one(s).
 // NOTE: This function is called only with the split mode.

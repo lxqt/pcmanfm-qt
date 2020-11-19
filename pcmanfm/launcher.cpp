@@ -35,9 +35,7 @@ Launcher::Launcher(PCManFM::MainWindow* mainWindow):
     setQuickExec(app->settings().quickExec());
 }
 
-Launcher::~Launcher() {
-
-}
+Launcher::~Launcher() = default;
 
 bool Launcher::openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folderInfos, Fm::GErrorPtr& /*err*/) {
     auto fi = folderInfos[0];

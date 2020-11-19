@@ -134,8 +134,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   resize(sizeHint()); // show it compact
 }
 
-DesktopPreferencesDialog::~DesktopPreferencesDialog() {
-}
+DesktopPreferencesDialog::~DesktopPreferencesDialog() = default;
 
 void DesktopPreferencesDialog::setupDesktopFolderUi()
 {

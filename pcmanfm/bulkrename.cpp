@@ -112,8 +112,6 @@ BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
     }
 }
 
-BulkRenamer::~BulkRenamer() {
-
-}
+BulkRenamer::~BulkRenamer() = default;
 
 } //namespace PCManFM
