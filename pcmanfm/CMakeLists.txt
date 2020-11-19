@@ -56,6 +56,7 @@ lxqt_translate_desktop(DESKTOP_FILES
     SOURCES
         pcmanfm-qt.desktop.in
         pcmanfm-qt-desktop-pref.desktop.in
+    USE_YAML
 )
 
 add_executable(pcmanfm-qt

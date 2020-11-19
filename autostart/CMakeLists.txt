@@ -4,6 +4,7 @@ file(GLOB DESKTOP_FILES_IN *.desktop.in)
 lxqt_translate_desktop(DESKTOP_FILES
     SOURCES
         ${DESKTOP_FILES_IN}
+    USE_YAML
 )
 add_custom_target(autostart_desktop_files ALL DEPENDS ${DESKTOP_FILES})
 #************************************************
