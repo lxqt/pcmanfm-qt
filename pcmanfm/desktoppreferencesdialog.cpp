@@ -39,7 +39,7 @@ static int iconSizes[] = {96, 72, 64, 48, 36, 32, 24, 20};
 DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFlags f):
   QDialog(parent, f),
   editDesktopFolderEnabled(false),
-  desktopFolderWidget(0),
+  desktopFolderWidget(nullptr),
   desktopFolder() {
 
 

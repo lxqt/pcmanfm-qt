@@ -119,7 +119,7 @@ Application::Application(int& argc, char** argv):
                 initWatch();
             }
             delete lxqtSessionIface;
-            lxqtSessionIface = 0;
+            lxqtSessionIface = nullptr;
         }
     }
     else {
@@ -961,7 +961,7 @@ void Application::installSigtermHandler() {
         action.sa_handler = sigtermHandler;
         ::sigemptyset(&action.sa_mask);
         action.sa_flags = SA_RESTART;
-        if(::sigaction(SIGTERM, &action, 0) != 0) {
+        if(::sigaction(SIGTERM, &action, nullptr) != 0) {
             qWarning("Couldn't install SIGTERM handler");
         }
     }
