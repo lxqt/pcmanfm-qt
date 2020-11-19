@@ -31,7 +31,8 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="82"/>
@@ -405,12 +406,13 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Desktopordner werden per Linksklink standardmäßig in PCManFM-Qt 
+geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Mit einem Linksklick können sie Desktopordner in ihrem Standard-Dateimanager öffnen.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -2045,12 +2047,12 @@ wenn mehr als einer geöffnet ist.</translation>
     <message>
         <location filename="../preferences.ui" line="520"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zum neuen Tab wechseln</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="562"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Zuletzt aktiven Tab in neuem Fenster öffnen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="748"/>
