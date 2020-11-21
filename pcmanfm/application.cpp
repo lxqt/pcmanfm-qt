@@ -975,6 +975,15 @@ void Application::onSigtermNotified() {
         notifier->setEnabled(false);
         char c;
         ::read(sigterm_fd[1], &c, sizeof(c));
+        // close all windows cleanly; otherwise, we might get this warning:
+        // "QBasicTimer::start: QBasicTimer can only be used with threads started with QThread"
+        const auto windows = topLevelWidgets();
+        for(const auto& win : windows) {
+            if(win->inherits("PCManFM::MainWindow")) {
+                MainWindow* mainWindow = static_cast<MainWindow*>(win);
+                mainWindow->close();
+            }
+        }
         quit();
         notifier->setEnabled(true);
     }
