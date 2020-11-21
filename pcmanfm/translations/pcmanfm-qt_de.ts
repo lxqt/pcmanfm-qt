@@ -31,7 +31,7 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
     <message>
@@ -987,7 +987,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="909"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished">Versteckte &amp;Tastaturkürzel</translation>
+        <translation>Versteckte &amp;Tastenkürzel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="749"/>
