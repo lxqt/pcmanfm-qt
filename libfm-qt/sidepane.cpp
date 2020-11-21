@@ -47,7 +47,7 @@ SidePane::SidePane(QWidget* parent):
   combo_->addItem(tr("Places"));
   combo_->addItem(tr("Directory Tree"));
   connect(combo_, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &SidePane::onComboCurrentIndexChanged);
-  verticalLayout->addWidget(combo_);
+  // verticalLayout->addWidget(combo_); // probono: Hide for now. TODO: Move this setting to the menu bar
 }
 
 SidePane::~SidePane() {
