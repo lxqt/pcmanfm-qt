@@ -37,8 +37,7 @@ View::View(Fm::FolderView::ViewMode _mode, QWidget* parent):
     updateFromSettings(settings);
 }
 
-View::~View() {
-}
+View::~View() = default;
 
 void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) {
     if(type == MiddleClick) {

@@ -29,8 +29,7 @@ ConnectServerDialog::ConnectServerDialog(QWidget *parent): QDialog(parent) {
   onCurrentIndexChanged(0);
 }
 
-ConnectServerDialog::~ConnectServerDialog() {
-}
+ConnectServerDialog::~ConnectServerDialog() = default;
 
 
 QString ConnectServerDialog::uriText() {

@@ -49,9 +49,7 @@ PreferencesDialog::PreferencesDialog(QString activePage, QWidget* parent):
     adjustSize();
 }
 
-PreferencesDialog::~PreferencesDialog() {
-
-}
+PreferencesDialog::~PreferencesDialog() = default;
 
 static void findIconThemesInDir(QHash<QString, QString>& iconThemes, QString dirName) {
     QDir dir(dirName);

@@ -370,8 +370,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     }
 }
 
-MainWindow::~MainWindow() {
-}
+MainWindow::~MainWindow() = default;
 
 // Activate a view frame appropriately and give a special style to the inactive one(s).
 // NOTE: This function is called only with the split mode.
@@ -1036,7 +1035,7 @@ void MainWindow::on_actionAbout_triggered() {
     // the about dialog
     class AboutDialog : public QDialog {
     public:
-        explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = Qt::WindowFlags()) : QDialog(parent, f) {
+        explicit AboutDialog(QWidget* parent = nullptr, Qt::WindowFlags f = Qt::WindowFlags()) : QDialog(parent, f) {
             ui.setupUi(this);
             ui.version->setText(tr("Version: %1").arg(QStringLiteral(PCMANFM_QT_VERSION)));
         }
@@ -1050,7 +1049,7 @@ void MainWindow::on_actionAbout_triggered() {
 void MainWindow::on_actionHiddenShortcuts_triggered() {
     class HiddenShortcutsDialog : public QDialog {
     public:
-        explicit HiddenShortcutsDialog(QWidget* parent = 0, Qt::WindowFlags f = Qt::WindowFlags()) : QDialog(parent, f) {
+        explicit HiddenShortcutsDialog(QWidget* parent = nullptr, Qt::WindowFlags f = Qt::WindowFlags()) : QDialog(parent, f) {
             ui.setupUi(this);
             ui.treeWidget->setRootIsDecorated(false);
             ui.treeWidget->header()->setSectionResizeMode(QHeaderView::Stretch);

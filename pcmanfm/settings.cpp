@@ -139,9 +139,7 @@ Settings::Settings():
     searchhHidden_(false) {
 }
 
-Settings::~Settings() {
-
-}
+Settings::~Settings() = default;
 
 QString Settings::xdgUserConfigDir() {
     QString dirName;

@@ -18,8 +18,7 @@ DesktopEntryDialog::DesktopEntryDialog(QWidget* parent):
     connect(ui.commandButton, &QAbstractButton::clicked, this, &DesktopEntryDialog::onClickingCommandButton);
 }
 
-DesktopEntryDialog::~DesktopEntryDialog() {
-}
+DesktopEntryDialog::~DesktopEntryDialog() = default;
 
 void DesktopEntryDialog::onChangingType(int type) {
     if(type == 0) {
