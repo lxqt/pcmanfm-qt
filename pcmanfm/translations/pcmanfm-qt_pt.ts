@@ -68,7 +68,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="82"/>
@@ -260,12 +261,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation>Área de trabalho</translation>
+        <translation>Ambiente de trabalho</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation>Pasta da área de trabalho:</translation>
+        <translation>Pasta do ambiente de trabalho:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -288,7 +289,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>Preferências da área de trabalho</translation>
+        <translation>Preferências do ambiente de trabalho</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="240"/>
@@ -403,12 +404,13 @@ Será reservado um espaço para 3 linhas de texto.</translation>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Por definição, as pastas do ambiente de trabalho serão abertas com PCManFM-Qt
+se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de ficheiros padrão.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir pastas do ambiente de trabalho no gestor de ficheiros padrão</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -783,7 +785,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="380"/>
         <source>&amp;Desktop</source>
-        <translation>Área &amp;de trabalho</translation>
+        <translation>Ambiente &amp;de trabalho</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="389"/>
@@ -1328,17 +1330,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
-        <translation>Abrir gestor da área de trabalho</translation>
+        <translation>Abrir gestor do ambiente de trabalho</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>Desativar gestor da área de trabalho, se em execução</translation>
+        <translation>Desativar gestor do ambiente de trabalho, se em execução</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Abrir preferências da área de trabalho na página especificada</translation>
+        <translation>Abrir preferências do ambiente de trabalho, na página especificada</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
@@ -1579,7 +1581,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1011"/>
         <source>Hide Desktop Items</source>
-        <translation>Ocultar itens da área de trabalho</translation>
+        <translation>Ocultar itens do ambiente de trabalho</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1017"/>
@@ -1589,7 +1591,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1020"/>
         <source>Desktop Preferences</source>
-        <translation>Preferências da área de trabalho</translation>
+        <translation>Preferências do ambiente de trabalho</translation>
     </message>
 </context>
 <context>
@@ -2038,12 +2040,12 @@ será mostrada se existir mais do que um separador.</translation>
     <message>
         <location filename="../preferences.ui" line="520"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Trocar para o separador recém aberto</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="562"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Reabrir últimos separadores de uma janela em outra janela</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="748"/>
