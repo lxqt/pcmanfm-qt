@@ -5,6 +5,7 @@
 #include <QIcon>
 #include <QIcon>
 #include <QDebug>
+#include <QDir>
 
 using namespace Fm;
 
@@ -98,6 +99,8 @@ QString getLaunchableExecutable(FmFileInfo* _info)
 QIcon getIconForBundle(FmFileInfo* _info)
 {
     QString path = QString(fm_path_to_str(fm_file_info_get_path(_info)));
+    QDir appDirPath(path);
+    path = appDirPath.canonicalPath(); // Resolve symlinks and get absolute path
     QIcon icon = QIcon::fromTheme("do"); // probono: In the elementary theme, this is a folder with an executable icon inside it; TODO: Find more suitable one
     QFileInfo fileInfo = QFileInfo(path);
     QString nameWithoutSuffix = QFileInfo(fileInfo.completeBaseName()).fileName();
@@ -116,6 +119,11 @@ QIcon getIconForBundle(FmFileInfo* _info)
         icon = QIcon(QFileInfo(tiffFile2).canonicalFilePath());
     }
     QFile pngFile1(path.toUtf8() + "/Resources/" + nameWithoutSuffix.toUtf8() + ".png");
+    QFile svgFile1(path.toUtf8() + "/Resources/" + nameWithoutSuffix.toUtf8() + ".svg");
+    if (svgFile1.exists()) {
+        // icon = QIcon(QFileInfo(svgFile1).canonicalFilePath());
+        qDebug() << "probono: FIXME: There is a svg but we are not using it yet";
+    }
     if (pngFile1.exists()) {
         icon = QIcon(QFileInfo(pngFile1).canonicalFilePath());
     }
