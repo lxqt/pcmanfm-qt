@@ -41,6 +41,7 @@
 #include <QClipboard>
 #include <QWindow>
 #include <QRandomGenerator>
+#include <QToolTip>
 
 #include "./application.h"
 #include "mainwindow.h"
@@ -871,6 +872,8 @@ void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
     setMargins(settings.desktopCellMargins());
     updateShortcutsFromSettings(settings);
     // setIconSize and setMargins may trigger relayout of items by QListView, so we need to do the layout again.
+    // We also clear the current index to set it to the visually first item.
+    selectionModel()->clearCurrentIndex();
     queueRelayout();
     setForeground(settings.desktopFgColor());
     setBackground(settings.desktopBgColor());
@@ -1305,6 +1308,25 @@ void DesktopWindow::relayoutItems() {
         }
     }
 
+    // make the visually first item be the current item if there is no current index
+    if(rowCount > 0 && !listView_->currentIndex().isValid()) {
+        pos = workArea.topLeft();
+        while(workArea.contains(pos)) {
+            QPoint insidePoint(pos.x() + (itemSize.width() + listView_->spacing()) / 2,
+                               pos.y() + listView_->spacing() / 2 + getMargins().height() + 1);
+            QModelIndex index = listView_->indexAt(insidePoint);
+            if(index.isValid()) {
+                selectionModel()->setCurrentIndex(index, QItemSelectionModel::Current);
+                break;
+            }
+            pos.setY(pos.y() + itemSize.height() + listView_->spacing());
+            if(pos.y() + itemSize.height() > workArea.bottom() + 1) {
+                pos.setX(pos.x() + itemSize.width() + listView_->spacing());
+                pos.setY(workArea.top());
+            }
+        }
+    }
+
     if(!listView_->updatesEnabled()) {
         listView_->setUpdatesEnabled(true);
     }
@@ -1516,6 +1538,140 @@ void DesktopWindow::onFilePropertiesActivated() {
     }
 }
 
+QModelIndex DesktopWindow::navigateWithKey(int key, Qt::KeyboardModifiers modifiers, const QModelIndex& start) {
+    QModelIndex curIndx;
+    if(!start.isValid()) { // start with the current index
+        curIndx = listView_->currentIndex();
+        if(!curIndx.isValid()) {
+            return QModelIndex();
+        }
+    }
+    else {
+        curIndx = start;
+    }
+    QPoint pos = listView_->visualRect(curIndx).topLeft();
+    QModelIndex index;
+    bool withShift((modifiers & Qt::ShiftModifier) && !(modifiers & Qt::ControlModifier));
+
+    switch(key) {
+    case Qt::Key_PageDown:
+        while(curIndx.isValid() && listView_->visualRect(curIndx).left() == pos.x()) {
+            if(withShift) {
+                selectionModel()->setCurrentIndex(curIndx, QItemSelectionModel::Select);
+            }
+            else {
+                index = curIndx;
+            }
+            curIndx = navigateWithKey(Qt::Key_Down, modifiers, curIndx);
+        }
+        break;
+    case Qt::Key_PageUp: {
+        while(curIndx.isValid() && listView_->visualRect(curIndx).left() == pos.x()) {
+            if(withShift) {
+                selectionModel()->setCurrentIndex(curIndx, QItemSelectionModel::Select);
+            }
+            else {
+                index = curIndx;
+            }
+            curIndx = navigateWithKey(Qt::Key_Up, modifiers, curIndx);
+        }
+        break;
+    }
+    case Qt::Key_End: {
+        while(curIndx.isValid()) {
+            if(withShift) {
+                selectionModel()->setCurrentIndex(curIndx, QItemSelectionModel::Select);;
+            }
+            else {
+                index = curIndx;
+            }
+            curIndx = navigateWithKey(Qt::Key_Down, modifiers, curIndx);
+        }
+        break;
+    }
+    case Qt::Key_Home: {
+        while(curIndx.isValid()) {
+            if(withShift) {
+                selectionModel()->setCurrentIndex(curIndx, QItemSelectionModel::Select);
+            }
+            else {
+                index = curIndx;
+            }
+            curIndx = navigateWithKey(Qt::Key_Up, modifiers, curIndx);
+        }
+        break;
+    }
+    default: { // arrow keys
+        auto screen = getDesktopScreen();
+        if(screen == nullptr) {
+            return QModelIndex();
+        }
+        auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
+        auto itemSize = delegate->itemSize();
+        QRect workArea = screen->availableVirtualGeometry();
+        workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+        int columns = workArea.width() / (itemSize.width() + listView_->spacing());
+        int rows = workArea.height() / (itemSize.height() + listView_->spacing());
+        while(!index.isValid() && workArea.contains(pos)) {
+            switch(key) {
+            case Qt::Key_Up:
+                pos.setY(pos.y() - itemSize.height() - listView_->spacing());
+                if(pos.y() < workArea.top()) {
+                    pos.setX(pos.x() - itemSize.width() - listView_->spacing());
+                    pos.setY(workArea.top() + (rows - 1) * (itemSize.height() + listView_->spacing()));
+                }
+                break;
+            case Qt::Key_Right:
+                pos.setX(pos.x() + itemSize.width() + listView_->spacing());
+                if(pos.x() + itemSize.width() > workArea.right() + 1) {
+                    pos.setY(pos.y() + itemSize.height() + listView_->spacing());
+                    pos.setX(workArea.left());
+                }
+                break;
+            case Qt::Key_Left:
+                pos.setX(pos.x() - itemSize.width() - listView_->spacing());
+                if(pos.x() < workArea.left()) {
+                    pos.setY(pos.y() - itemSize.height() - listView_->spacing());
+                    pos.setX(workArea.left() + (columns - 1) * (itemSize.width() + listView_->spacing()));
+                }
+                break;
+            default: // consider any other value as Qt::Key_Down
+                pos.setY(pos.y() + itemSize.height() + listView_->spacing());
+                if(pos.y() + itemSize.height() > workArea.bottom() + 1) {
+                    pos.setX(pos.x() + itemSize.width() + listView_->spacing());
+                    pos.setY(workArea.top());
+                }
+                break;
+            }
+            QPoint insidePoint(pos.x() + (itemSize.width() + listView_->spacing()) / 2,
+                               pos.y() + listView_->spacing() / 2 + getMargins().height() + 1);
+            index = listView_->indexAt(insidePoint);
+        }
+        break;
+    }
+    }
+
+    if(!start.isValid() && index.isValid()
+       // for compatibility with Qt's behavior, in the case of an impossible movement,
+       // don't select an unselected current index
+       && index != listView_->currentIndex()) {
+        if(modifiers & Qt::ControlModifier) {
+            // only change the current item
+            selectionModel()->setCurrentIndex(index, QItemSelectionModel::Current);
+        }
+        else if(modifiers & Qt::ShiftModifier) {
+            // add items to the the selection
+            selectionModel()->select(curIndx, QItemSelectionModel::Select);
+            selectionModel()->setCurrentIndex(index, QItemSelectionModel::Select);
+        }
+        else {
+            // clear the previous selection and select the item
+            selectionModel()->setCurrentIndex(index, QItemSelectionModel::ClearAndSelect);
+        }
+    }
+    return index;
+}
+
 bool DesktopWindow::event(QEvent* event) {
     switch(event->type()) {
     case QEvent::WinIdChange: {
@@ -1549,6 +1705,7 @@ bool DesktopWindow::event(QEvent* event) {
 }
 
 #undef FontChange // this seems to be defined in Xlib headers as a macro, undef it!
+#undef KeyPress // like above
 
 bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
     if(watched == listView_) {
@@ -1559,6 +1716,19 @@ bool DesktopWindow::eventFilter(QObject* watched, QEvent* event) {
                 queueRelayout();
             }
             break;
+        case QEvent::KeyPress: {
+            QToolTip::showText(QPoint(), QString()); // remove the tooltip, if any
+            QKeyEvent* keyEvent = static_cast<QKeyEvent*>(event);
+            int k = keyEvent->key();
+            if(k == Qt::Key_Down || k == Qt::Key_Up
+               || k == Qt::Key_Right || k == Qt::Key_Left
+               || k == Qt::Key_PageUp || k == Qt::Key_PageDown
+               || k == Qt::Key_Home || k == Qt::Key_End) {
+                navigateWithKey(k, keyEvent->modifiers());
+                return true;
+            }
+            break;
+        }
         default:
             break;
         }

@@ -158,6 +158,8 @@ private:
 
     QImage getWallpaperImage() const;
 
+    QModelIndex navigateWithKey(int key, Qt::KeyboardModifiers modifiers, const QModelIndex& start = QModelIndex());
+
     QModelIndex indexForPos(bool* isTrash, const QPoint& pos, const QRect& workArea, const QSize& grid) const;
 
 private:
