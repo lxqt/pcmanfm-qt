@@ -854,7 +854,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="520"/>
         <source>By Deletio&amp;n Time</source>
-        <translation>削除日時順</translation>
+        <translation>削除日時順(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="528"/>
@@ -1220,7 +1220,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="654"/>
         <source>Alt+Return</source>
-        <translation>Alt+Enter</translation>
+        <translation>Alt+Return</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="688"/>
