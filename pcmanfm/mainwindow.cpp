@@ -1998,16 +1998,18 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
 
 void MainWindow::on_actionFindFiles_triggered() {
     Application* app = static_cast<Application*>(qApp);
-    auto selectedPaths = currentPage()->selectedFilePaths();
+    const auto files = currentPage()->selectedFiles();
     QStringList paths;
-    if(!selectedPaths.empty()) {
-        for(auto& path: selectedPaths) {
+    if(!files.empty()) {
+        for(const auto& file: files) {
             // FIXME: is it ok to use display name here?
             // This might be broken on filesystems with non-UTF-8 filenames.
-            paths.append(QString::fromUtf8(path.displayName().get()));
+            if(file->isDir()) {
+                paths.append(QString::fromUtf8(file->path().displayName().get()));
+            }
         }
     }
-    else {
+    if(paths.isEmpty()) {
         paths.append(currentPage()->pathName());
     }
     app->findFiles(paths);
