@@ -1225,7 +1225,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="701"/>
         <source>Open as &amp;Root</source>
-        <translation>&amp;Megnyitás rendszergazdaként</translation>
+        <translation>&amp;Megnyitás rootként</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="706"/>
@@ -1613,7 +1613,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../mainwindow.cpp" line="139"/>
         <source>Root Instance</source>
-        <translation>Rendszergazdaként</translation>
+        <translation>Root példány</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="695"/>
