@@ -74,7 +74,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="104"/>
@@ -404,12 +405,13 @@ Ayrıca, 3 satırlık metin için bir boşluk ayrılmıştır.</translation>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Varsayılan olarak, masaüstü klasörleri, varsayılan dosya yöneticisi
+olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Sol tıklayarak masaüstü klasörlerini varsayılan dosya yöneticisinde açın</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -1543,6 +1545,7 @@ are left clicked, even when it is not the default file manager.</source>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Çöp Kutusu (%Ln öge)</numerusform>
+            <numerusform>Çöp Kutusu (%Ln öge)</numerusform>
         </translation>
     </message>
     <message>
@@ -1694,12 +1697,14 @@ are left clicked, even when it is not the default file manager.</source>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n nesne</numerusform>
+            <numerusform>%n nesne</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="499"/>
         <source> (%n hidden)</source>
         <translation>
+            <numerusform> (%n gizli)</numerusform>
             <numerusform> (%n gizli)</numerusform>
         </translation>
     </message>
@@ -1715,6 +1720,7 @@ are left clicked, even when it is not the default file manager.</source>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n nesne seçildi</numerusform>
+            <numerusform>%n nesne seçildi</numerusform>
         </translation>
     </message>
 </context>
@@ -1729,7 +1735,8 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../view.cpp" line="61"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>Bu %1 dosyayı açmak istiyor musunuz?</numerusform>
+            <numerusform>%1 dosyayı açmak istiyor musunuz?</numerusform>
+            <numerusform>%1 dosyayı açmak istiyor musunuz?</numerusform>
         </translation>
     </message>
     <message>
@@ -2024,12 +2031,12 @@ birden fazla sekme var ise görünür.</translation>
     <message>
         <location filename="../preferences.ui" line="520"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeni açılan sekmeye geç</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="562"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Son pencere sekmelerini yeni bir pencerede yeniden aç</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="748"/>
@@ -2159,7 +2166,7 @@ birden fazla sekme var ise görünür.</translation>
     <message>
         <location filename="../preferences.ui" line="349"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>SI  onluk önekleri yerine IEC ikili önekleri kullan</translation>
+        <translation>SI onluk önekleri yerine IEC ikili önekleri kullan</translation>
     </message>
 </context>
 <context>
