@@ -1013,7 +1013,11 @@ void MainWindow::on_actionAddToBookmarks_triggered() {
             auto parent = cwd.parent();
             if(!parent.isValid() || parent == cwd) { // a root path
                 bookmarkName = QString::fromUtf8(cwd.displayName().get());
+#if (QT_VERSION >= QT_VERSION_CHECK(5,15,0))
+                auto parts = bookmarkName.split(QLatin1Char('/'), Qt::SkipEmptyParts);
+#else
                 auto parts = bookmarkName.split(QLatin1Char('/'), QString::SkipEmptyParts);
+#endif
                 if(!parts.isEmpty()) {
                     bookmarkName = parts.last();
                 }
