@@ -1141,7 +1141,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="598"/>
         <source>Alt+Left</source>
-        <translation>Alt+Left</translation>
+        <translation>Alt+Esquerda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="607"/>
@@ -1211,7 +1211,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="231"/>
         <source>Main Toolbar</source>
-        <translation>Barra principal</translation>
+        <translation>Barra de ferramentas principal</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="646"/>
