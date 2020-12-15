@@ -880,7 +880,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="560"/>
         <source>&amp;Hidden Last</source>
-        <translation>Nascosti &amp;ultimi</translation>
+        <translation>Nascosti in &amp;fondo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="568"/>
@@ -1782,7 +1782,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation>Volume</translation>
+        <translation>Volumi</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
@@ -1867,7 +1867,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation>Ritardo per la selezione automatica in modalità con clic singolo (0 per disabilitare)</translation>
+        <translation>Ritardo selezione automatica in modalità clic singolo (0 per disabilitare)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="110"/>
@@ -1887,7 +1887,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>Confirm before deleting files</source>
-        <translation>Conferma prima di rimuovere i file</translation>
+        <translation>Conferma prima di eliminare i file</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="182"/>
