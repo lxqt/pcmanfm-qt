@@ -651,9 +651,6 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
         onFolderFinishLoading();
         onFolderFsInfo();
     }
-    else {
-        onFolderStartLoading();
-    }
 }
 
 void TabPage::selectAll() {
