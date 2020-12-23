@@ -18,7 +18,7 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programmation :
+        <translation>Programmation&#xa0;:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -97,7 +97,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>Type de média :</translation>
+        <translation>Type de média&#xa0;:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
@@ -310,7 +310,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="252"/>
         <source>Select background color:</source>
-        <translation>Sélection de la couleur de l&apos;arrière-plan :</translation>
+        <translation>Sélection de la couleur de l&apos;arrière-plan&#xa0;:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="319"/>
@@ -345,12 +345,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>Sélection de la couleur de l&apos;ombre :</translation>
+        <translation>Sélection de la couleur de l&apos;ombre&#xa0;:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>Sélection de la police :</translation>
+        <translation>Sélection de la police&#xa0;:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -1454,32 +1454,32 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
 <context>
     <name>PCManFM::DesktopEntryDialog</name>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="26"/>
+        <location filename="../desktopentrydialog.cpp" line="25"/>
         <source>Command:</source>
         <translation>Commande :</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="29"/>
+        <location filename="../desktopentrydialog.cpp" line="28"/>
         <source>URL:</source>
         <translation>Lien du site :</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="54"/>
+        <location filename="../desktopentrydialog.cpp" line="53"/>
         <source>Select an icon</source>
         <translation>Sélectionner une icône</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="56"/>
+        <location filename="../desktopentrydialog.cpp" line="55"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
         <translation>Images (*.png *.xpm *.svg *.svgz)</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="78"/>
+        <location filename="../desktopentrydialog.cpp" line="81"/>
         <source>Select an executable file</source>
         <translation>Sélectionner un fichier exécutable</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="86"/>
+        <location filename="../desktopentrydialog.cpp" line="89"/>
         <source>Select a file</source>
         <translation>Sélectionner un fichier</translation>
     </message>
@@ -1517,17 +1517,17 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <translation>Zoomer l&apos;image pour remplir tout l&apos;écran</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="252"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="251"/>
         <source>Select Wallpaper</source>
         <translation>Sélectionner un fond d&apos;écran</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="256"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="255"/>
         <source>Image Files</source>
         <translation>Fichiers image</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="298"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="297"/>
         <source>Select Wallpaper Folder</source>
         <translation>Sélectionnez le dossier de papier peint</translation>
     </message>
@@ -1535,12 +1535,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="296"/>
+        <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (One item)</source>
         <translation>Corbeille (Un élément)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Corbeille (%Ln élément)</numerusform>
@@ -1548,48 +1548,48 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="304"/>
         <source>Trash (Empty)</source>
         <translation>Corbeille (Vide)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="338"/>
+        <location filename="../desktopwindow.cpp" line="339"/>
         <source>Computer</source>
         <translation>Ordinateur</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="352"/>
+        <location filename="../desktopwindow.cpp" line="353"/>
         <source>Network</source>
         <translation>Réseau</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="943"/>
+        <location filename="../desktopwindow.cpp" line="946"/>
         <source>Open</source>
         <translation>Ouvrir</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="948"/>
-        <location filename="../desktopwindow.cpp" line="985"/>
+        <location filename="../desktopwindow.cpp" line="951"/>
+        <location filename="../desktopwindow.cpp" line="988"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Res&amp;ter à la position actuelle</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="955"/>
+        <location filename="../desktopwindow.cpp" line="958"/>
         <source>Empty Trash</source>
         <translation>Vider la corbeille</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1011"/>
+        <location filename="../desktopwindow.cpp" line="1014"/>
         <source>Hide Desktop Items</source>
         <translation>Masquer les éléments du bureau</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1017"/>
+        <location filename="../desktopwindow.cpp" line="1020"/>
         <source>Create Launcher</source>
         <translation>Créer un launcher</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1020"/>
+        <location filename="../desktopwindow.cpp" line="1023"/>
         <source>Desktop Preferences</source>
         <translation>Préférences du bureau</translation>
     </message>
@@ -1597,7 +1597,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="91"/>
+        <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
         <translation>Filtre :</translation>
     </message>
@@ -1605,7 +1605,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="61"/>
+        <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>Effacer le texte (Ctrl+K ou Ech)</translation>
     </message>
@@ -1618,40 +1618,40 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <translation>Instance Root</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="695"/>
+        <location filename="../mainwindow.cpp" line="694"/>
         <source>Hide menu bar</source>
         <translation>Cacher la barre des menus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="696"/>
+        <location filename="../mainwindow.cpp" line="695"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Cela masquera complètement la barre de menus, utiliser Ctrl+M pour l&apos;afficher à nouveau.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1041"/>
+        <location filename="../mainwindow.cpp" line="1044"/>
         <source>Version: %1</source>
         <translation>Version : %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1929"/>
+        <location filename="../mainwindow.cpp" line="1932"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mettre à la corbeille</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1929"/>
+        <location filename="../mainwindow.cpp" line="1932"/>
         <source>&amp;Delete</source>
         <translation>&amp;Supprimer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1986"/>
-        <location filename="../mainwindow.cpp" line="1994"/>
+        <location filename="../mainwindow.cpp" line="1989"/>
+        <location filename="../mainwindow.cpp" line="1997"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1994"/>
+        <location filename="../mainwindow.cpp" line="1997"/>
         <source>Switch user command is not set.</source>
         <translation>La commande de changement d&apos;utilisateur n&apos;est pas définie.</translation>
     </message>
@@ -1659,22 +1659,22 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="200"/>
+        <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Icon View</source>
         <translation>Vue en icônes</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="201"/>
+        <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Compact View</source>
         <translation>Vue compacte</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="202"/>
+        <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Thumbnail View</source>
         <translation>Vue en vignettes</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="203"/>
+        <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Detailed List View</source>
         <translation>Vue en liste détaillée</translation>
     </message>
@@ -1682,17 +1682,17 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="471"/>
+        <location filename="../tabpage.cpp" line="476"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="480"/>
+        <location filename="../tabpage.cpp" line="485"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espace libre : %1 (total : %2)</translation>
+        <translation>Espace libre : %1 (total&#xa0;: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="497"/>
+        <location filename="../tabpage.cpp" line="502"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n élément</numerusform>
@@ -1700,7 +1700,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="499"/>
+        <location filename="../tabpage.cpp" line="504"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n caché)</numerusform>
@@ -1708,14 +1708,14 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="504"/>
-        <location filename="../tabpage.cpp" line="692"/>
-        <location filename="../tabpage.cpp" line="706"/>
+        <location filename="../tabpage.cpp" line="509"/>
+        <location filename="../tabpage.cpp" line="699"/>
+        <location filename="../tabpage.cpp" line="713"/>
         <source>Link to</source>
         <translation>Lien vers</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="718"/>
+        <location filename="../tabpage.cpp" line="725"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n élément sélectionné</numerusform>
@@ -1726,12 +1726,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
 <context>
     <name>PCManFM::View</name>
     <message>
-        <location filename="../view.cpp" line="60"/>
+        <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
         <translation>Beaucoup de fichiers</translation>
     </message>
     <message numerus="yes">
-        <location filename="../view.cpp" line="61"/>
+        <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
             <numerusform>Voulez vous ouvrir ce %1 fichier ?</numerusform>
@@ -1739,17 +1739,17 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         </translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="123"/>
+        <location filename="../view.cpp" line="122"/>
         <source>Open in New T&amp;ab</source>
         <translation>Ouvrir dans un nouvel ongle&amp;t</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="127"/>
+        <location filename="../view.cpp" line="126"/>
         <source>Open in New Win&amp;dow</source>
         <translation>Ouvrir &amp;dans une nouvelle fenêtre</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="135"/>
+        <location filename="../view.cpp" line="134"/>
         <source>Open in Termina&amp;l</source>
         <translation>Ouvrir dans &amp;le terminal</translation>
     </message>
@@ -1773,7 +1773,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="589"/>
+        <location filename="../preferences.ui" line="592"/>
         <source>Thumbnail</source>
         <translation>Vignette</translation>
     </message>
@@ -1788,67 +1788,67 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <translation>Avancé</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="213"/>
+        <location filename="../preferences.ui" line="216"/>
         <source>Select newly created files</source>
         <translation>Sélectionner les fichiers nouvellement créés</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="250"/>
+        <location filename="../preferences.ui" line="253"/>
         <source>Icons</source>
         <translation>Icônes</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="282"/>
+        <location filename="../preferences.ui" line="285"/>
         <source>Size of big icons:</source>
-        <translation>Taille des grandes icônes :</translation>
+        <translation>Taille des grandes icônes&#xa0;:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="299"/>
+        <location filename="../preferences.ui" line="302"/>
         <source>Size of small icons:</source>
-        <translation>Taille des petites icônes :</translation>
+        <translation>Taille des petites icônes&#xa0;:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="316"/>
+        <location filename="../preferences.ui" line="319"/>
         <source>Size of thumbnails:</source>
-        <translation>Taille des vignettes :</translation>
+        <translation>Taille des vignettes&#xa0;:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="330"/>
+        <location filename="../preferences.ui" line="333"/>
         <source>Size of side pane icons:</source>
         <translation>Taille des icônes du volet latéral :</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="262"/>
+        <location filename="../preferences.ui" line="265"/>
         <source>Icon theme:</source>
         <translation>Thème des icônes :</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="493"/>
+        <location filename="../preferences.ui" line="496"/>
         <source>Window</source>
         <translation>Fenêtre</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="534"/>
+        <location filename="../preferences.ui" line="537"/>
         <source>Default width of new windows:</source>
-        <translation>Largeur par défaut des nouvelles fenêtres :</translation>
+        <translation>Largeur par défaut des nouvelles fenêtres&#xa0;:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="548"/>
+        <location filename="../preferences.ui" line="551"/>
         <source>Default height of new windows:</source>
-        <translation>Hauteur par défaut des nouvelles fenêtres :</translation>
+        <translation>Hauteur par défaut des nouvelles fenêtres&#xa0;:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="506"/>
+        <location filename="../preferences.ui" line="509"/>
         <source>Always show the tab bar</source>
         <translation>Toujours afficher la barre des onglets</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="513"/>
+        <location filename="../preferences.ui" line="516"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Afficher les boutons &apos;Fermer&apos; sur les onglets	</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="527"/>
+        <location filename="../preferences.ui" line="530"/>
         <source>Remember the size of the last closed window</source>
         <translation>Mémoriser la taille de la dernière fenêtre fermée</translation>
     </message>
@@ -1870,7 +1870,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../preferences.ui" line="110"/>
         <source>Default view mode:</source>
-        <translation>Mode d&apos;affichage par défaut :</translation>
+        <translation>Mode d&apos;affichage par défaut&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="123"/>
@@ -1893,12 +1893,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <translation>Déplacer les fichiers supprimés vers la corbeille au lieu de les effacer du disque.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="622"/>
+        <location filename="../preferences.ui" line="625"/>
         <source>Show thumbnails of files</source>
         <translation>Montrer les vignettes des fichiers</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="612"/>
+        <location filename="../preferences.ui" line="615"/>
         <source>Only show thumbnails for local files</source>
         <translation>Montrer les vignettes seulement pour les fichiers locaux</translation>
     </message>
@@ -1911,11 +1911,6 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
         <translation>Si cette case est décochée, le paramètre de l&apos;environnement sera utilisé.</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="133"/>
-        <source>Bookmarks:</source>
-        <translation>Marque-pages :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="141"/>
@@ -1949,8 +1944,8 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     </message>
     <message>
         <location filename="../preferences.ui" line="203"/>
-        <location filename="../preferences.ui" line="363"/>
-        <location filename="../preferences.ui" line="373"/>
+        <location filename="../preferences.ui" line="366"/>
+        <location filename="../preferences.ui" line="376"/>
         <source>Requires application restart to take effect completely</source>
         <translation>Requiert le redémarrage de l&apos;application pour prendre complètement effet</translation>
     </message>
@@ -1960,210 +1955,220 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <translation>Lancer des fichiers exécutables sans invite</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="220"/>
+        <location filename="../preferences.ui" line="213"/>
+        <source>Renamed files will also be selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="223"/>
         <source>Open folders in new tabs as far as possible</source>
         <translation>Ouvrez les dossiers dans de nouveaux onglets autant que possible</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="223"/>
+        <location filename="../preferences.ui" line="226"/>
         <source>Single window mode</source>
         <translation>Mode fenêtre unique</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="279"/>
-        <location filename="../preferences.ui" line="289"/>
+        <location filename="../preferences.ui" line="282"/>
+        <location filename="../preferences.ui" line="292"/>
         <source>Used by Icon View</source>
         <translation>Utilisé lors de l&apos;affichage par icônes</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="296"/>
-        <location filename="../preferences.ui" line="306"/>
+        <location filename="../preferences.ui" line="299"/>
+        <location filename="../preferences.ui" line="309"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>Utilisé par la vue compacte et la vue en liste détaillée</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="313"/>
-        <location filename="../preferences.ui" line="323"/>
+        <location filename="../preferences.ui" line="316"/>
+        <location filename="../preferences.ui" line="326"/>
         <source>Used by Thumbnail View</source>
         <translation>Utilisé par la vue miniature</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="343"/>
+        <location filename="../preferences.ui" line="346"/>
         <source>User interface</source>
         <translation>Interface utilisateur</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="356"/>
+        <location filename="../preferences.ui" line="359"/>
         <source>Treat backup files as hidden</source>
         <translation>Traiter les fichiers de sauvegarde comme cachés</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="376"/>
+        <location filename="../preferences.ui" line="379"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Afficher les icônes des fichiers cachés ombrés</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="406"/>
+        <location filename="../preferences.ui" line="409"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Marges minimales des éléments dans la vue en icônes :</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="413"/>
+        <location filename="../preferences.ui" line="416"/>
         <source>3 px by default.</source>
         <translation>3 px par défaut.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="416"/>
-        <location filename="../preferences.ui" line="440"/>
+        <location filename="../preferences.ui" line="419"/>
+        <location filename="../preferences.ui" line="443"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="429"/>
+        <location filename="../preferences.ui" line="432"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="436"/>
+        <location filename="../preferences.ui" line="439"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>3 px par défaut.
 Un espace est également réservé pour 3 lignes de texte.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="453"/>
+        <location filename="../preferences.ui" line="456"/>
         <source>Lock</source>
         <translation>Verrouiller</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="502"/>
+        <location filename="../preferences.ui" line="505"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Lorsqu&apos;elle est décochée, la barre d&apos;onglets sera affichée
 seulement s&apos;il y a plus d&apos;un onglet.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="520"/>
+        <location filename="../preferences.ui" line="523"/>
         <source>Switch to newly opened tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="562"/>
+        <location filename="../preferences.ui" line="565"/>
         <source>Reopen last window tabs in a new window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="748"/>
+        <location filename="../preferences.ui" line="751"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>Exemples:&lt;br&gt;Pour le terminal : &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For basculer d&apos;utilisateur : &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; est la commende que vous devez exécuter dans le terminal avec accès root.&lt;br&gt; Important : veuillez utilisez lxsudo, car sudo seul peut casser les permission du fichier de configuration.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="839"/>
+        <location filename="../preferences.ui" line="842"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Le redémarrage de l&apos;application est nécessaire pour que les modifications prennent effet.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="595"/>
+        <location filename="../preferences.ui" line="598"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Ne générer pas de vignettes pour les fichiers image dépassant cette taille :</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="366"/>
+        <location filename="../preferences.ui" line="133"/>
+        <source>Bookmarks menu:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="369"/>
         <source>Always show real file names</source>
         <translation>Toujours afficher les noms réels des fichiers</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="383"/>
+        <location filename="../preferences.ui" line="386"/>
         <source>Do not show file tooltips</source>
         <translation>Ne pas afficher les info-bulles de fichier</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="602"/>
+        <location filename="../preferences.ui" line="605"/>
         <source> KB</source>
         <translation> Ko</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="619"/>
+        <location filename="../preferences.ui" line="622"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Nécessite ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="649"/>
+        <location filename="../preferences.ui" line="652"/>
         <source>Auto Mount</source>
         <translation>Monter automatiquement</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="655"/>
+        <location filename="../preferences.ui" line="658"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Monter automatiquement les volumes au démarrage du programme</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="662"/>
+        <location filename="../preferences.ui" line="665"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Monter automatiquement les supports amovibles lorsqu&apos;ils sont insérés</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="669"/>
+        <location filename="../preferences.ui" line="672"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Afficher les options disponibles pour les supports amovibles lorsqu&apos;ils sont insérés</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="679"/>
+        <location filename="../preferences.ui" line="682"/>
         <source>When removable medium unmounted:</source>
         <translation>Lorsque le support amovible est non monté :</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="685"/>
+        <location filename="../preferences.ui" line="688"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>&amp;Fermer les onglets contenant un support amovible</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="692"/>
+        <location filename="../preferences.ui" line="695"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>&amp;Basculer l&apos;onglet sur le répertoire de base de l&apos;utilisateur</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="735"/>
+        <location filename="../preferences.ui" line="738"/>
         <source>Switch &amp;user command:</source>
         <translation>Basculer en commande &amp;utilisateur :</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="761"/>
+        <location filename="../preferences.ui" line="764"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>In&amp;tégration de l&apos;archiveur :</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="784"/>
+        <location filename="../preferences.ui" line="787"/>
         <source>Templates</source>
         <translation>Modèles</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="790"/>
+        <location filename="../preferences.ui" line="793"/>
         <source>Show only user defined templates in menu</source>
         <translation>Afficher uniquement les modèles définis par l&apos;utilisateur dans le menu</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="797"/>
+        <location filename="../preferences.ui" line="800"/>
         <source>Show only one template for each MIME type</source>
         <translation>Ne montrer qu&apos;un modèle pour chaque type MIME</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="804"/>
+        <location filename="../preferences.ui" line="807"/>
         <source>Run default application after creation from template</source>
         <translation>Exécuter l&apos;application par défaut après la création à partir d&apos;un modèle</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="719"/>
+        <location filename="../preferences.ui" line="722"/>
         <source>Programs</source>
         <translation>Programmes</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="728"/>
+        <location filename="../preferences.ui" line="731"/>
         <source>Terminal emulator:</source>
-        <translation>Émulateur de terminal :</translation>
+        <translation>Émulateur de terminal&#xa0;:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="349"/>
+        <location filename="../preferences.ui" line="352"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Utiliser les préfixes de décimales du système international au lieu des préfixes binaires CEI</translation>
     </message>

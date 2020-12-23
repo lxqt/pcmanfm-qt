@@ -1450,32 +1450,32 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopEntryDialog</name>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="26"/>
+        <location filename="../desktopentrydialog.cpp" line="25"/>
         <source>Command:</source>
         <translation>الأمر:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="29"/>
+        <location filename="../desktopentrydialog.cpp" line="28"/>
         <source>URL:</source>
         <translation>المسار:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="54"/>
+        <location filename="../desktopentrydialog.cpp" line="53"/>
         <source>Select an icon</source>
         <translation>اختر أيقونة</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="56"/>
+        <location filename="../desktopentrydialog.cpp" line="55"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
         <translation>الصور (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="78"/>
+        <location filename="../desktopentrydialog.cpp" line="81"/>
         <source>Select an executable file</source>
         <translation>اختر ملفًا تنفيذيًا</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="86"/>
+        <location filename="../desktopentrydialog.cpp" line="89"/>
         <source>Select a file</source>
         <translation>اختر ملفًا</translation>
     </message>
@@ -1513,17 +1513,17 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>كبّر الصورة لتملأ الشاشة كاملة</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="252"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="251"/>
         <source>Select Wallpaper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="256"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="255"/>
         <source>Image Files</source>
         <translation>ملفات الصور</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="298"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="297"/>
         <source>Select Wallpaper Folder</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1531,12 +1531,12 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="296"/>
+        <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (One item)</source>
         <translation>المهملات (عنصر واحد)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>المهملات (فارغة)</numerusform>
@@ -1548,48 +1548,48 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="304"/>
         <source>Trash (Empty)</source>
         <translation>المهملات (فارغة)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="338"/>
+        <location filename="../desktopwindow.cpp" line="339"/>
         <source>Computer</source>
         <translation>الحاسوب</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="352"/>
+        <location filename="../desktopwindow.cpp" line="353"/>
         <source>Network</source>
         <translation>الشبكة</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="943"/>
+        <location filename="../desktopwindow.cpp" line="946"/>
         <source>Open</source>
         <translation>افتح</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="948"/>
-        <location filename="../desktopwindow.cpp" line="985"/>
+        <location filename="../desktopwindow.cpp" line="951"/>
+        <location filename="../desktopwindow.cpp" line="988"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>ت&amp;شبّث بالمكان الحالي</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="955"/>
+        <location filename="../desktopwindow.cpp" line="958"/>
         <source>Empty Trash</source>
         <translation>أفرِغ المهملات</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1011"/>
+        <location filename="../desktopwindow.cpp" line="1014"/>
         <source>Hide Desktop Items</source>
         <translation>أخفِ عناصر سطح المكتب</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1017"/>
+        <location filename="../desktopwindow.cpp" line="1020"/>
         <source>Create Launcher</source>
         <translation>أنشِئ مطلِقًا</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1020"/>
+        <location filename="../desktopwindow.cpp" line="1023"/>
         <source>Desktop Preferences</source>
         <translation>تفضيلات سطح المكتب</translation>
     </message>
@@ -1597,7 +1597,7 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="91"/>
+        <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
         <translation>رشّح:</translation>
     </message>
@@ -1605,7 +1605,7 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="61"/>
+        <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>امسح النص (Ctrl+K أو Esc)</translation>
     </message>
@@ -1618,40 +1618,40 @@ are left clicked, even when it is not the default file manager.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="695"/>
+        <location filename="../mainwindow.cpp" line="694"/>
         <source>Hide menu bar</source>
         <translation>أخفِ شريط القوائم</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="696"/>
+        <location filename="../mainwindow.cpp" line="695"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>سيُخفي هذا شريط القوائم تماما، استخدم Ctrl+M لعرضه ثانية.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1041"/>
+        <location filename="../mainwindow.cpp" line="1044"/>
         <source>Version: %1</source>
         <translation>الإصدارة: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1929"/>
+        <location filename="../mainwindow.cpp" line="1932"/>
         <source>&amp;Move to Trash</source>
         <translation>ا&amp;نقل إلى المهملات</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1929"/>
+        <location filename="../mainwindow.cpp" line="1932"/>
         <source>&amp;Delete</source>
         <translation>ا&amp;حذف</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1986"/>
-        <location filename="../mainwindow.cpp" line="1994"/>
+        <location filename="../mainwindow.cpp" line="1989"/>
+        <location filename="../mainwindow.cpp" line="1997"/>
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1994"/>
+        <location filename="../mainwindow.cpp" line="1997"/>
         <source>Switch user command is not set.</source>
         <translation>لم يُضبط أمر تبديل المستخدم.</translation>
     </message>
@@ -1659,22 +1659,22 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="200"/>
+        <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Icon View</source>
         <translation>منظور أيقوناتي</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="201"/>
+        <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Compact View</source>
         <translation>منظور متراص</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="202"/>
+        <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Thumbnail View</source>
         <translation>منظور مصغّراتي</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="203"/>
+        <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Detailed List View</source>
         <translation>منظور قوائمي مفصّل</translation>
     </message>
@@ -1682,17 +1682,17 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="471"/>
+        <location filename="../tabpage.cpp" line="476"/>
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="480"/>
+        <location filename="../tabpage.cpp" line="485"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>المساحة الحرة: %1 (المجموع: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="497"/>
+        <location filename="../tabpage.cpp" line="502"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>لا عناصر</numerusform>
@@ -1704,7 +1704,7 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="499"/>
+        <location filename="../tabpage.cpp" line="504"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (لا شيء مخفي)</numerusform>
@@ -1716,14 +1716,14 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="504"/>
-        <location filename="../tabpage.cpp" line="692"/>
-        <location filename="../tabpage.cpp" line="706"/>
+        <location filename="../tabpage.cpp" line="509"/>
+        <location filename="../tabpage.cpp" line="699"/>
+        <location filename="../tabpage.cpp" line="713"/>
         <source>Link to</source>
         <translation>رابط إلى</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="718"/>
+        <location filename="../tabpage.cpp" line="725"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>لا عناصر محددة</numerusform>
@@ -1738,12 +1738,12 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::View</name>
     <message>
-        <location filename="../view.cpp" line="60"/>
+        <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../view.cpp" line="61"/>
+        <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -1755,17 +1755,17 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="123"/>
+        <location filename="../view.cpp" line="122"/>
         <source>Open in New T&amp;ab</source>
         <translation>افتح في ل&amp;سان جديد</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="127"/>
+        <location filename="../view.cpp" line="126"/>
         <source>Open in New Win&amp;dow</source>
         <translation>افتح في &amp;نافذة جديدة</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="135"/>
+        <location filename="../view.cpp" line="134"/>
         <source>Open in Termina&amp;l</source>
         <translation>افتح في ال&amp;طرفية</translation>
     </message>
@@ -1789,7 +1789,7 @@ are left clicked, even when it is not the default file manager.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="589"/>
+        <location filename="../preferences.ui" line="592"/>
         <source>Thumbnail</source>
         <translation>المصغّرات</translation>
     </message>
@@ -1804,67 +1804,67 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>متقدم</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="213"/>
+        <location filename="../preferences.ui" line="216"/>
         <source>Select newly created files</source>
         <translation>حدّد الملفات المنشأة حديثا</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="250"/>
+        <location filename="../preferences.ui" line="253"/>
         <source>Icons</source>
         <translation>الأيقونات</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="282"/>
+        <location filename="../preferences.ui" line="285"/>
         <source>Size of big icons:</source>
         <translation>مقاس الأيقونات الكبيرة:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="299"/>
+        <location filename="../preferences.ui" line="302"/>
         <source>Size of small icons:</source>
         <translation>مقاس الأيقونات الصغيرة:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="316"/>
+        <location filename="../preferences.ui" line="319"/>
         <source>Size of thumbnails:</source>
         <translation>مقاس المصغّرات:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="330"/>
+        <location filename="../preferences.ui" line="333"/>
         <source>Size of side pane icons:</source>
         <translation>مقاس أيقونات الشريط الجانبي:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="262"/>
+        <location filename="../preferences.ui" line="265"/>
         <source>Icon theme:</source>
         <translation>سمة الأيقونات:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="493"/>
+        <location filename="../preferences.ui" line="496"/>
         <source>Window</source>
         <translation>النافذة</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="506"/>
+        <location filename="../preferences.ui" line="509"/>
         <source>Always show the tab bar</source>
         <translation>اعرض شريط الألسنة دوما</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="513"/>
+        <location filename="../preferences.ui" line="516"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>اعرض أزرار ”أغلِق“ على الألسنة	</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="527"/>
+        <location filename="../preferences.ui" line="530"/>
         <source>Remember the size of the last closed window</source>
         <translation>تذكّر حجم آخر نافذة مُغلقة</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="534"/>
+        <location filename="../preferences.ui" line="537"/>
         <source>Default width of new windows:</source>
         <translation>العرض المبدئي للنوافذ الجديدة:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="548"/>
+        <location filename="../preferences.ui" line="551"/>
         <source>Default height of new windows:</source>
         <translation>الارتفاع المبدئي للنوافذ الجديدة:</translation>
     </message>
@@ -1909,12 +1909,12 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>انقل الملفات المحذوفة إلى ”سلة المهملات“ بدل مسحها من القرص.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="622"/>
+        <location filename="../preferences.ui" line="625"/>
         <source>Show thumbnails of files</source>
         <translation>اعرض مصغّرات للملفات</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="612"/>
+        <location filename="../preferences.ui" line="615"/>
         <source>Only show thumbnails for local files</source>
         <translation>اعرض مصغّرات للملفات المحلية فقط</translation>
     </message>
@@ -1927,11 +1927,6 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="133"/>
-        <source>Bookmarks:</source>
-        <translation>العلامات:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="141"/>
@@ -1960,8 +1955,8 @@ are left clicked, even when it is not the default file manager.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="203"/>
-        <location filename="../preferences.ui" line="363"/>
-        <location filename="../preferences.ui" line="373"/>
+        <location filename="../preferences.ui" line="366"/>
+        <location filename="../preferences.ui" line="376"/>
         <source>Requires application restart to take effect completely</source>
         <translation>إعادة تشغيل التطبيق مطلوبة ليأخذ الخيار مفعوله تماما</translation>
     </message>
@@ -1971,101 +1966,111 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>أطلِق الملفات التنفيذية دون سؤال</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="279"/>
-        <location filename="../preferences.ui" line="289"/>
+        <location filename="../preferences.ui" line="213"/>
+        <source>Renamed files will also be selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="282"/>
+        <location filename="../preferences.ui" line="292"/>
         <source>Used by Icon View</source>
         <translation>يستخدمه المنظور الأيقوناتي</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="296"/>
-        <location filename="../preferences.ui" line="306"/>
+        <location filename="../preferences.ui" line="299"/>
+        <location filename="../preferences.ui" line="309"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>يستخدمه المنظورين المتراص والقوائمي المفصّل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="313"/>
-        <location filename="../preferences.ui" line="323"/>
+        <location filename="../preferences.ui" line="316"/>
+        <location filename="../preferences.ui" line="326"/>
         <source>Used by Thumbnail View</source>
         <translation>يستخدمه المنظور المصغّراتي</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="343"/>
+        <location filename="../preferences.ui" line="346"/>
         <source>User interface</source>
         <translation>واجهة المستخدم</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="356"/>
+        <location filename="../preferences.ui" line="359"/>
         <source>Treat backup files as hidden</source>
         <translation>عامِل ملفات النسخ الاحتياطي كمخفية</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="376"/>
+        <location filename="../preferences.ui" line="379"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>اعرض أيقونات الملفات المخفية مظلّلة</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="406"/>
+        <location filename="../preferences.ui" line="409"/>
         <source>Minimum item margins in icon view:</source>
         <translation>أدنى هوامش للعناصر في المنظور الأيقوناتي:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="413"/>
+        <location filename="../preferences.ui" line="416"/>
         <source>3 px by default.</source>
         <translation>٣ بكسل مبدئيا.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="416"/>
-        <location filename="../preferences.ui" line="440"/>
+        <location filename="../preferences.ui" line="419"/>
+        <location filename="../preferences.ui" line="443"/>
         <source> px</source>
         <translation> بكسل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="429"/>
+        <location filename="../preferences.ui" line="432"/>
         <source>x</source>
         <translation>×</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="436"/>
+        <location filename="../preferences.ui" line="439"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>بكسل واحد مبدئيا.
 سيُحجز أيضا مكان لنص بثلاث أسطر.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="453"/>
+        <location filename="../preferences.ui" line="456"/>
         <source>Lock</source>
         <translation>اقفل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="502"/>
+        <location filename="../preferences.ui" line="505"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>إن لم يُؤشّر، فسيظهر شريط الألسنة فقط إن كان هناك أكثر من لسان واحد.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="520"/>
+        <location filename="../preferences.ui" line="523"/>
         <source>Switch to newly opened tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="562"/>
+        <location filename="../preferences.ui" line="565"/>
         <source>Reopen last window tabs in a new window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="748"/>
+        <location filename="../preferences.ui" line="751"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="839"/>
+        <location filename="../preferences.ui" line="842"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="595"/>
+        <location filename="../preferences.ui" line="598"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>لا تولّد مصغّرات لملفات الصور الأكبر من:</translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="133"/>
+        <source>Bookmarks menu:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
@@ -2073,112 +2078,112 @@ only if there are more than one tab.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="220"/>
+        <location filename="../preferences.ui" line="223"/>
         <source>Open folders in new tabs as far as possible</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="223"/>
+        <location filename="../preferences.ui" line="226"/>
         <source>Single window mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="366"/>
+        <location filename="../preferences.ui" line="369"/>
         <source>Always show real file names</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="383"/>
+        <location filename="../preferences.ui" line="386"/>
         <source>Do not show file tooltips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="602"/>
+        <location filename="../preferences.ui" line="605"/>
         <source> KB</source>
         <translation> ك.بايت</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="619"/>
+        <location filename="../preferences.ui" line="622"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>تحتاج المصغّرات ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="649"/>
+        <location filename="../preferences.ui" line="652"/>
         <source>Auto Mount</source>
         <translation>الضمّ الآلي</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="655"/>
+        <location filename="../preferences.ui" line="658"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>ضُمّ الأقراص المنفصلة آليا عند بدء البرنامج</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="662"/>
+        <location filename="../preferences.ui" line="665"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>ضُمّ آليا الوسيط المنفصل عندما يُدخل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="669"/>
+        <location filename="../preferences.ui" line="672"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>اعرض الخيارات المتوفرة للوسيط المنفصل عندما يُدخل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="679"/>
+        <location filename="../preferences.ui" line="682"/>
         <source>When removable medium unmounted:</source>
         <translation>عند إزالة ضمّ وسيط منفصل:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="685"/>
+        <location filename="../preferences.ui" line="688"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>أغلِق ال&amp;سان الذي فيه الوسيط المنفصل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="692"/>
+        <location filename="../preferences.ui" line="695"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>&amp;غيّر المجلد في اللسان ليكون مجلد المنزل</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="719"/>
+        <location filename="../preferences.ui" line="722"/>
         <source>Programs</source>
         <translation>البرامج</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="728"/>
+        <location filename="../preferences.ui" line="731"/>
         <source>Terminal emulator:</source>
         <translation>محاكي الطرفية:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="735"/>
+        <location filename="../preferences.ui" line="738"/>
         <source>Switch &amp;user command:</source>
         <translation>أمر تبديل الم&amp;ستخدم:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="761"/>
+        <location filename="../preferences.ui" line="764"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>ت&amp;كامل الأرشفة:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="784"/>
+        <location filename="../preferences.ui" line="787"/>
         <source>Templates</source>
         <translation>القوالب</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="790"/>
+        <location filename="../preferences.ui" line="793"/>
         <source>Show only user defined templates in menu</source>
         <translation>اعرض في القائمة القوالبَ التي عرّفها المستخدم فقط</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="797"/>
+        <location filename="../preferences.ui" line="800"/>
         <source>Show only one template for each MIME type</source>
         <translation>اعرض قالبا واحدا فقط لكل نوع MIME</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="804"/>
+        <location filename="../preferences.ui" line="807"/>
         <source>Run default application after creation from template</source>
         <translation>شغّل التطبيق المبدئي بعد الإنشاء من قالب</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="349"/>
+        <location filename="../preferences.ui" line="352"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>استخدم بادئات SI العشرية بدل بادئات IEC الثنائية</translation>
     </message>
