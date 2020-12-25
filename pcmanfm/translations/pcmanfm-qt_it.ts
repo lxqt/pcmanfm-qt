@@ -1959,7 +1959,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../preferences.ui" line="213"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>File rinominati saranno anche selezionati</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="223"/>
@@ -2071,7 +2071,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="133"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu segnalibri:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="369"/>
@@ -2086,7 +2086,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="605"/>
         <source> KB</source>
-        <translation> ·&#xa0;KB</translation>
+        <translation> · KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="622"/>
