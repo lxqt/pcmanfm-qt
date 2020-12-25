@@ -1931,7 +1931,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="133"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>メニューのブックマーク:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="169"/>
@@ -1951,12 +1951,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="213"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>名前が変更されたファイルも選択されます</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="216"/>
         <source>Select newly created files</source>
-        <translation>新しく作成したファイルを選択する</translation>
+        <translation>新しく作成されたファイルを選択する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="282"/>
