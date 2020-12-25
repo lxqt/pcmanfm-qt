@@ -1948,7 +1948,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../preferences.ui" line="213"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeniden adlandırılmış dosyalar da seçilecek</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="282"/>
@@ -2051,7 +2051,7 @@ birden fazla sekme var ise görünür.</translation>
     <message>
         <location filename="../preferences.ui" line="133"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Yer İmleri menüsü:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
