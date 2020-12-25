@@ -1959,7 +1959,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../preferences.ui" line="213"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Umbenannte Dateien werden ebenfalls ausgewählt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="223"/>
@@ -2072,7 +2072,7 @@ wenn mehr als einer geöffnet ist.</translation>
     <message>
         <location filename="../preferences.ui" line="133"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen-Menü:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="369"/>
@@ -2180,7 +2180,7 @@ wenn mehr als einer geöffnet ist.</translation>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Renaming files...</source>
-        <translation>Benenne Dateien um...</translation>
+        <translation>Dateien werden umbenannt ...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
