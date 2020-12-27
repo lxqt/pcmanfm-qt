@@ -207,10 +207,13 @@
    </widget>
    <widget class="QMenu" name="menu_Tool">
     <property name="title">
-     <string>&amp;Tool</string>
+     <string>&amp;Tools</string>
     </property>
     <addaction name="actionOpenTerminal"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpenAsAdmin"/>
     <addaction name="actionOpenAsRoot"/>
+    <addaction name="separator"/>
     <addaction name="actionCopyFullPath"/>
     <addaction name="actionFindFiles"/>
    </widget>
@@ -698,7 +701,7 @@
   </action>
   <action name="actionOpenAsRoot">
    <property name="text">
-    <string>Open as &amp;Root</string>
+    <string>Open Tab in &amp;Root Instance</string>
    </property>
   </action>
   <action name="actionEditBookmarks">
@@ -907,6 +910,11 @@
   <action name="actionHiddenShortcuts">
    <property name="text">
     <string>Hidden &amp;Shortcuts</string>
+   </property>
+  </action>
+  <action name="actionOpenAsAdmin">
+   <property name="text">
+    <string>Open Tab in &amp;Admin Mode</string>
    </property>
   </action>
  </widget>

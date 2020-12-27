@@ -1394,6 +1394,8 @@ void MainWindow::updateUIForCurrentPage(bool setFocus) {
         ui.actionGoBack->setEnabled(tabPage->canBackward());
         ui.actionGoForward->setEnabled(tabPage->canForward());
 
+        ui.actionOpenAsAdmin->setEnabled(tabPage->path() && tabPage->path().isNative());
+
         updateViewMenuForCurrentPage();
         updateStatusBarForCurrentPage();
     }
@@ -1478,7 +1480,8 @@ void MainWindow::onTabPageTitleChanged() {
                 setWindowTitle(tabPage->title());
 
                 // Since TabPage::titleChanged is emitted on changing directory,
-                // the enabled state of Paste action should be updated here
+                // the enabled state of some actions should be updated here
+                ui.actionOpenAsAdmin->setEnabled(tabPage->path() && tabPage->path().isNative());
                 bool isWritable(false);
                 if(tabPage && tabPage->folder()) {
                     if(auto info = tabPage->folder()->info()) {
@@ -1947,6 +1950,17 @@ void MainWindow::updateFromSettings(Settings& settings) {
             for(int j = 0; j < n; ++j) {
                 TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j));
                 page->updateFromSettings(settings);
+            }
+        }
+    }
+}
+
+void MainWindow::on_actionOpenAsAdmin_triggered() {
+    if(TabPage* page = currentPage()) {
+        if(auto path = page->path()) {
+            if(path.isNative()) {
+                CStrPtr admin{g_strconcat("admin://", path.localPath().get(), nullptr)};
+                chdir(Fm::FilePath::fromPathStr(admin.get()));
             }
         }
     }

@@ -176,6 +176,7 @@ protected Q_SLOTS:
     void on_actionEditBookmarks_triggered();
 
     void on_actionOpenTerminal_triggered();
+    void on_actionOpenAsAdmin_triggered();
     void on_actionOpenAsRoot_triggered();
     void on_actionCopyFullPath_triggered();
     void on_actionFindFiles_triggered();
