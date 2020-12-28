@@ -1937,7 +1937,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../preferences.ui" line="133"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu de marcadores:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="169"/>
@@ -1957,7 +1957,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../preferences.ui" line="213"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Os ficheiros renomeados serão também selecionados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="216"/>
