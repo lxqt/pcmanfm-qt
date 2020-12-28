@@ -696,558 +696,573 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Pagsasala</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="265"/>
+        <location filename="../main-win.ui" line="210"/>
+        <source>&amp;Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="268"/>
         <source>Go &amp;Up</source>
         <translation>P&amp;umataas</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="268"/>
+        <location filename="../main-win.ui" line="271"/>
         <source>Go Up</source>
         <translation>Pumataas</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="271"/>
+        <location filename="../main-win.ui" line="274"/>
         <source>Alt+Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="280"/>
+        <location filename="../main-win.ui" line="283"/>
         <source>&amp;Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="283"/>
+        <location filename="../main-win.ui" line="286"/>
         <source>Alt+Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="292"/>
+        <location filename="../main-win.ui" line="295"/>
         <source>&amp;Reload</source>
         <translation>I-load muli</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="295"/>
+        <location filename="../main-win.ui" line="298"/>
         <source>F5</source>
         <translation type="unfinished">F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="304"/>
+        <location filename="../main-win.ui" line="307"/>
         <source>Go</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="313"/>
+        <location filename="../main-win.ui" line="316"/>
         <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="322"/>
+        <location filename="../main-win.ui" line="325"/>
         <source>&amp;About</source>
         <translation>Tungkol dito</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="331"/>
+        <location filename="../main-win.ui" line="334"/>
         <source>&amp;New Window</source>
         <translation>Bagong Wi&amp;ndow</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="334"/>
+        <location filename="../main-win.ui" line="337"/>
         <source>New Window</source>
         <translation>Bagong Window</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="337"/>
+        <location filename="../main-win.ui" line="340"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="345"/>
+        <location filename="../main-win.ui" line="348"/>
         <source>Show &amp;Hidden</source>
         <translation>Ipakita ang Nakatago</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="348"/>
+        <location filename="../main-win.ui" line="351"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="357"/>
+        <location filename="../main-win.ui" line="360"/>
         <source>&amp;Computer</source>
         <translation>Kompyuter</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="366"/>
+        <location filename="../main-win.ui" line="369"/>
         <source>&amp;Trash</source>
         <translation>Basurahan</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="371"/>
+        <location filename="../main-win.ui" line="374"/>
         <source>&amp;Network</source>
         <translation>&amp;Network</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="380"/>
+        <location filename="../main-win.ui" line="383"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Desktop</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="389"/>
+        <location filename="../main-win.ui" line="392"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>Id&amp;agdag sa mga Bookmark</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="394"/>
+        <location filename="../main-win.ui" line="397"/>
         <source>&amp;Applications</source>
         <translation>Mga &amp;Aplikasyon</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="399"/>
+        <location filename="../main-win.ui" line="402"/>
         <source>Reload</source>
         <translation>I-load muli</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="407"/>
+        <location filename="../main-win.ui" line="410"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Icon View</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="415"/>
+        <location filename="../main-win.ui" line="418"/>
         <source>&amp;Compact View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="423"/>
+        <location filename="../main-win.ui" line="426"/>
         <source>&amp;Detailed List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="431"/>
+        <location filename="../main-win.ui" line="434"/>
         <source>&amp;Thumbnail View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="440"/>
+        <location filename="../main-win.ui" line="443"/>
         <source>Cu&amp;t</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="443"/>
+        <location filename="../main-win.ui" line="446"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="452"/>
+        <location filename="../main-win.ui" line="455"/>
         <source>&amp;Copy</source>
         <translation>Kopyahin</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="455"/>
+        <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="464"/>
+        <location filename="../main-win.ui" line="467"/>
         <source>&amp;Paste</source>
         <translation>I-&amp;paste</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="467"/>
+        <location filename="../main-win.ui" line="470"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="472"/>
+        <location filename="../main-win.ui" line="475"/>
         <source>Select &amp;All</source>
         <translation>Piliin l&amp;ahat</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="475"/>
+        <location filename="../main-win.ui" line="478"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="480"/>
+        <location filename="../main-win.ui" line="483"/>
         <source>Pr&amp;eferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="488"/>
+        <location filename="../main-win.ui" line="491"/>
         <source>&amp;Ascending</source>
         <translation>Paakyat</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="496"/>
+        <location filename="../main-win.ui" line="499"/>
         <source>&amp;Descending</source>
         <translation>Pababa</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="504"/>
+        <location filename="../main-win.ui" line="507"/>
         <source>&amp;By File Name</source>
         <translation>Ayon sa Pangalan ng File</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="512"/>
+        <location filename="../main-win.ui" line="515"/>
         <source>By &amp;Modification Time</source>
         <translation>Ayon sa Oras ng Pagbago</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="520"/>
+        <location filename="../main-win.ui" line="523"/>
         <source>By Deletio&amp;n Time</source>
         <translation>Ayon sa Oras &amp;ng Pagbura</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="528"/>
+        <location filename="../main-win.ui" line="531"/>
         <source>By File &amp;Type</source>
         <translation>Ayon sa &amp;Uri ng File</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="536"/>
+        <location filename="../main-win.ui" line="539"/>
         <source>By &amp;Owner</source>
         <translation>Ay&amp;on sa May-ari</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="544"/>
+        <location filename="../main-win.ui" line="547"/>
         <source>By &amp;Group</source>
         <translation>Ayon sa Grupo</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="552"/>
+        <location filename="../main-win.ui" line="555"/>
         <source>&amp;Folder First</source>
         <translation>Mauna ang &amp;Folder</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="560"/>
+        <location filename="../main-win.ui" line="563"/>
         <source>&amp;Hidden Last</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="568"/>
+        <location filename="../main-win.ui" line="571"/>
         <source>&amp;Preserve sorting for this folder</source>
         <translation>&amp;Panatilihin ang ayos ng folder na ito</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="667"/>
+        <location filename="../main-win.ui" line="624"/>
+        <source>Ctrl+Shift+A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="673"/>
         <source>&amp;Case Sensitive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="675"/>
+        <location filename="../main-win.ui" line="681"/>
         <source>By File &amp;Size</source>
         <translation>Ayon &amp;sa Laki ng File</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="680"/>
+        <location filename="../main-win.ui" line="686"/>
         <source>&amp;Close Window</source>
         <translation>Isara ang Window</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="683"/>
+        <location filename="../main-win.ui" line="689"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="715"/>
+        <location filename="../main-win.ui" line="707"/>
+        <source>Open Tab in &amp;Root Instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="721"/>
         <source>&amp;Folder</source>
         <translation>&amp;Folder</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="727"/>
+        <location filename="../main-win.ui" line="733"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Blankong File</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="851"/>
+        <location filename="../main-win.ui" line="857"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="854"/>
+        <location filename="../main-win.ui" line="860"/>
         <source>Show Filter Bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="857"/>
+        <location filename="../main-win.ui" line="863"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="865"/>
+        <location filename="../main-win.ui" line="871"/>
         <source>S&amp;plit View</source>
         <translation>Magkahiwalay Tingnan</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="868"/>
+        <location filename="../main-win.ui" line="874"/>
         <source>Split View</source>
         <translation>Magkahiwalay Tingnan</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="871"/>
+        <location filename="../main-win.ui" line="877"/>
         <source>F6</source>
         <translation>F6</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="876"/>
+        <location filename="../main-win.ui" line="882"/>
         <source>&amp;Copy Full Path</source>
         <translation>Kopyahin ang Buong Path</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="879"/>
+        <location filename="../main-win.ui" line="885"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="890"/>
+        <location filename="../main-win.ui" line="896"/>
         <source>Show Thumb&amp;nails</source>
         <translation>Ipakita ang mga Thumb&amp;nail</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="893"/>
+        <location filename="../main-win.ui" line="899"/>
         <source>Show Thumbnails</source>
         <translation>Ipakita ang mga Thumbnail</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="901"/>
+        <location filename="../main-win.ui" line="907"/>
         <source>S&amp;ide Pane</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="904"/>
+        <location filename="../main-win.ui" line="910"/>
         <source>F9</source>
         <translation type="unfinished">F9</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="909"/>
+        <location filename="../main-win.ui" line="915"/>
         <source>Hidden &amp;Shortcuts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="749"/>
+        <location filename="../main-win.ui" line="920"/>
+        <source>Open Tab in &amp;Admin Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="755"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="754"/>
+        <location filename="../main-win.ui" line="760"/>
         <source>&amp;Clear All Filters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="757"/>
+        <location filename="../main-win.ui" line="763"/>
         <source>Ctrl+Shift+K</source>
         <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="766"/>
+        <location filename="../main-win.ui" line="772"/>
         <source>Close &amp;previous tabs</source>
         <translation>Isara ang mga naunang tab</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="775"/>
+        <location filename="../main-win.ui" line="781"/>
         <source>Close &amp;next tabs</source>
         <translation>Isara ang mga susu&amp;nod na tab</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="814"/>
+        <location filename="../main-win.ui" line="820"/>
         <source>&amp;Preserve Settings for This Folder</source>
         <translation>Panatilihin ang mga Setting sa Folder na ito</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="819"/>
+        <location filename="../main-win.ui" line="825"/>
         <source>Connect to &amp;Server</source>
         <translation>Kumonekta sa &amp;Server</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="827"/>
+        <location filename="../main-win.ui" line="833"/>
         <source>&amp;Location</source>
         <translation>&amp;Lugar</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="835"/>
+        <location filename="../main-win.ui" line="841"/>
         <source>&amp;Path Buttons</source>
         <translation>Pindutan na &amp;Path</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="840"/>
+        <location filename="../main-win.ui" line="846"/>
         <source>&amp;Bulk Rename</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="843"/>
+        <location filename="../main-win.ui" line="849"/>
         <source>Bulk Rename</source>
         <translation type="unfinished">Maramihang pagpapalit ng pangalan</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="846"/>
+        <location filename="../main-win.ui" line="852"/>
         <source>Ctrl+F2</source>
         <translation>Ctrl+F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="780"/>
+        <location filename="../main-win.ui" line="786"/>
         <source>Close &amp;other tabs</source>
         <translation>Isara ang iba pang mga tab</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="746"/>
+        <location filename="../main-win.ui" line="752"/>
         <source>Permanent &amp;filter bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="788"/>
+        <location filename="../main-win.ui" line="794"/>
         <source>&amp;Menu bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="791"/>
+        <location filename="../main-win.ui" line="797"/>
         <source>Menu bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="794"/>
+        <location filename="../main-win.ui" line="800"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="803"/>
-        <location filename="../main-win.ui" line="806"/>
+        <location filename="../main-win.ui" line="809"/>
+        <location filename="../main-win.ui" line="812"/>
         <source>Menu</source>
         <translation>Menu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="577"/>
+        <location filename="../main-win.ui" line="580"/>
         <source>New &amp;Tab</source>
         <translation>Bagong &amp;Tab</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="580"/>
+        <location filename="../main-win.ui" line="583"/>
         <source>New Tab</source>
         <translation>Bagong Tab</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="583"/>
+        <location filename="../main-win.ui" line="586"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="592"/>
+        <location filename="../main-win.ui" line="595"/>
         <source>Go &amp;Back</source>
         <translation>&amp;Bumalik</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="595"/>
+        <location filename="../main-win.ui" line="598"/>
         <source>Go Back</source>
         <translation>Bumalik</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="598"/>
+        <location filename="../main-win.ui" line="601"/>
         <source>Alt+Left</source>
         <translation>Alt+Left</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="610"/>
         <source>Go &amp;Forward</source>
         <translation>Pasulong</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="610"/>
+        <location filename="../main-win.ui" line="613"/>
         <source>Go Forward</source>
         <translation>Pasulong</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="613"/>
+        <location filename="../main-win.ui" line="616"/>
         <source>Alt+Right</source>
         <translation>Alt+Right</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="618"/>
+        <location filename="../main-win.ui" line="621"/>
         <source>&amp;Invert Selection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="627"/>
+        <location filename="../main-win.ui" line="633"/>
         <source>&amp;Delete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="630"/>
+        <location filename="../main-win.ui" line="636"/>
         <source>Del</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="635"/>
+        <location filename="../main-win.ui" line="641"/>
         <source>&amp;Rename</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="638"/>
+        <location filename="../main-win.ui" line="644"/>
         <source>F2</source>
         <translation type="unfinished">F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="643"/>
+        <location filename="../main-win.ui" line="649"/>
         <source>C&amp;lose Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="646"/>
+        <location filename="../main-win.ui" line="652"/>
         <source>Ctrl+W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="651"/>
+        <location filename="../main-win.ui" line="657"/>
         <source>File &amp;Properties</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="654"/>
+        <location filename="../main-win.ui" line="660"/>
         <source>Alt+Return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="659"/>
+        <location filename="../main-win.ui" line="665"/>
         <source>&amp;Folder Properties</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="688"/>
+        <location filename="../main-win.ui" line="694"/>
         <source>Edit Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="693"/>
+        <location filename="../main-win.ui" line="699"/>
         <source>Open &amp;Terminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="696"/>
+        <location filename="../main-win.ui" line="702"/>
         <source>F4</source>
         <translation type="unfinished">F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="701"/>
-        <source>Open as &amp;Root</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="706"/>
+        <location filename="../main-win.ui" line="712"/>
         <source>&amp;Edit Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="718"/>
+        <location filename="../main-win.ui" line="724"/>
         <source>Ctrl+Shift+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="730"/>
+        <location filename="../main-win.ui" line="736"/>
         <source>Ctrl+Alt+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="735"/>
+        <location filename="../main-win.ui" line="741"/>
         <source>&amp;Find Files</source>
         <translation>Maghanap ng &amp;Files</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="738"/>
+        <location filename="../main-win.ui" line="744"/>
         <source>F3</source>
         <translation type="unfinished">F3</translation>
     </message>
@@ -1293,12 +1308,7 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Tumuloy</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="210"/>
-        <source>&amp;Tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="231"/>
+        <location filename="../main-win.ui" line="234"/>
         <source>Main Toolbar</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1632,24 +1642,24 @@ are left clicked, even when it is not the default file manager.</source>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1932"/>
+        <location filename="../mainwindow.cpp" line="1935"/>
         <source>&amp;Move to Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1932"/>
+        <location filename="../mainwindow.cpp" line="1935"/>
         <source>&amp;Delete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1989"/>
-        <location filename="../mainwindow.cpp" line="1997"/>
+        <location filename="../mainwindow.cpp" line="2003"/>
+        <location filename="../mainwindow.cpp" line="2011"/>
         <source>Error</source>
         <translation type="unfinished">Mali</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1997"/>
+        <location filename="../mainwindow.cpp" line="2011"/>
         <source>Switch user command is not set.</source>
         <translation type="unfinished"></translation>
     </message>

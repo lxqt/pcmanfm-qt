@@ -689,558 +689,573 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>&amp;Φιλτράρισμα</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="265"/>
+        <location filename="../main-win.ui" line="210"/>
+        <source>&amp;Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="268"/>
         <source>Go &amp;Up</source>
         <translation>Μετάβαση &amp;πάνω</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="268"/>
+        <location filename="../main-win.ui" line="271"/>
         <source>Go Up</source>
         <translation>Μετάβαση&#xa0;πάνω</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="271"/>
+        <location filename="../main-win.ui" line="274"/>
         <source>Alt+Up</source>
         <translation>Alt+Πάνω</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="280"/>
+        <location filename="../main-win.ui" line="283"/>
         <source>&amp;Home</source>
         <translation>&amp;Προσωπικός φάκελος</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="283"/>
+        <location filename="../main-win.ui" line="286"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="292"/>
+        <location filename="../main-win.ui" line="295"/>
         <source>&amp;Reload</source>
         <translation>&amp;Επαναφόρτωση</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="295"/>
+        <location filename="../main-win.ui" line="298"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="304"/>
+        <location filename="../main-win.ui" line="307"/>
         <source>Go</source>
         <translation>Μετάβαση</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="313"/>
+        <location filename="../main-win.ui" line="316"/>
         <source>Quit</source>
         <translation>Έξοδος</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="322"/>
+        <location filename="../main-win.ui" line="325"/>
         <source>&amp;About</source>
         <translation>&amp;Σχετικά</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="331"/>
+        <location filename="../main-win.ui" line="334"/>
         <source>&amp;New Window</source>
         <translation>&amp;Νέο παράθυρο</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="334"/>
+        <location filename="../main-win.ui" line="337"/>
         <source>New Window</source>
         <translation>Νέο παράθυρο</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="337"/>
+        <location filename="../main-win.ui" line="340"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="345"/>
+        <location filename="../main-win.ui" line="348"/>
         <source>Show &amp;Hidden</source>
         <translation>Εμφάνιση των &amp;κρυφών</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="348"/>
+        <location filename="../main-win.ui" line="351"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="357"/>
+        <location filename="../main-win.ui" line="360"/>
         <source>&amp;Computer</source>
         <translation>&amp;Υπολογιστής</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="366"/>
+        <location filename="../main-win.ui" line="369"/>
         <source>&amp;Trash</source>
         <translation>&amp;Απορρίμματα</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="371"/>
+        <location filename="../main-win.ui" line="374"/>
         <source>&amp;Network</source>
         <translation>&amp;Δίκτυο</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="380"/>
+        <location filename="../main-win.ui" line="383"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Επιφάνεια εργασίας</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="389"/>
+        <location filename="../main-win.ui" line="392"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Προσθήκη στους σελιδοδείκτες</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="394"/>
+        <location filename="../main-win.ui" line="397"/>
         <source>&amp;Applications</source>
         <translation>Ε&amp;φαρμογές</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="399"/>
+        <location filename="../main-win.ui" line="402"/>
         <source>Reload</source>
         <translation>Επαναφόρτωση</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="407"/>
+        <location filename="../main-win.ui" line="410"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Εικονιδία</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="415"/>
+        <location filename="../main-win.ui" line="418"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Συμπαγής</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="423"/>
+        <location filename="../main-win.ui" line="426"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Λεπτομερής λίστα</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="431"/>
+        <location filename="../main-win.ui" line="434"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Εικόνες επισκόπησης</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="440"/>
+        <location filename="../main-win.ui" line="443"/>
         <source>Cu&amp;t</source>
         <translation>Α&amp;ποκοπή</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="443"/>
+        <location filename="../main-win.ui" line="446"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="452"/>
+        <location filename="../main-win.ui" line="455"/>
         <source>&amp;Copy</source>
         <translation>&amp;Αντιγραφή</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="455"/>
+        <location filename="../main-win.ui" line="458"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="464"/>
+        <location filename="../main-win.ui" line="467"/>
         <source>&amp;Paste</source>
         <translation>Επι&amp;κόλληση</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="467"/>
+        <location filename="../main-win.ui" line="470"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="472"/>
+        <location filename="../main-win.ui" line="475"/>
         <source>Select &amp;All</source>
         <translation>Επιλογή ό&amp;λων</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="475"/>
+        <location filename="../main-win.ui" line="478"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="480"/>
+        <location filename="../main-win.ui" line="483"/>
         <source>Pr&amp;eferences</source>
         <translation>&amp;Προτιμήσεις</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="488"/>
+        <location filename="../main-win.ui" line="491"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Αύξουσα</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="496"/>
+        <location filename="../main-win.ui" line="499"/>
         <source>&amp;Descending</source>
         <translation>&amp;Φθίνουσα</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="504"/>
+        <location filename="../main-win.ui" line="507"/>
         <source>&amp;By File Name</source>
         <translation>&amp;Ανά όνομα αρχείου</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="512"/>
+        <location filename="../main-win.ui" line="515"/>
         <source>By &amp;Modification Time</source>
         <translation>Ανά &amp;χρόνο τροποποίησης</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="520"/>
+        <location filename="../main-win.ui" line="523"/>
         <source>By Deletio&amp;n Time</source>
         <translation>Ανά χρόνο &amp;διαγραφής</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="528"/>
+        <location filename="../main-win.ui" line="531"/>
         <source>By File &amp;Type</source>
         <translation>Ανά &amp;τύπο αρχείου</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="536"/>
+        <location filename="../main-win.ui" line="539"/>
         <source>By &amp;Owner</source>
         <translation>Ανά ι&amp;διοκτήτη</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="544"/>
+        <location filename="../main-win.ui" line="547"/>
         <source>By &amp;Group</source>
         <translation>Ανά &amp;ομάδα</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="552"/>
+        <location filename="../main-win.ui" line="555"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Πρώτα οι φάκελοι</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="560"/>
+        <location filename="../main-win.ui" line="563"/>
         <source>&amp;Hidden Last</source>
         <translation>Τα &amp;κρυφά τελευταία</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="568"/>
+        <location filename="../main-win.ui" line="571"/>
         <source>&amp;Preserve sorting for this folder</source>
         <translation>Διατήρηση της &amp;ταξινόμησης του φακέλου</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="667"/>
+        <location filename="../main-win.ui" line="624"/>
+        <source>Ctrl+Shift+A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="673"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;Διάκριση πεζών/κεφαλαίων</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="675"/>
+        <location filename="../main-win.ui" line="681"/>
         <source>By File &amp;Size</source>
         <translation>Ανά &amp;μέγεθος αρχείου</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="680"/>
+        <location filename="../main-win.ui" line="686"/>
         <source>&amp;Close Window</source>
         <translation>&amp;Κλείσιμο παραθύρου</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="683"/>
+        <location filename="../main-win.ui" line="689"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="715"/>
+        <location filename="../main-win.ui" line="707"/>
+        <source>Open Tab in &amp;Root Instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="721"/>
         <source>&amp;Folder</source>
         <translation>&amp;Φάκελος</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="727"/>
+        <location filename="../main-win.ui" line="733"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Κενό αρχείο</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="851"/>
+        <location filename="../main-win.ui" line="857"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation>&amp;Εμφάνιση/Εστίαση της γραμμής φίλτρου</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="854"/>
+        <location filename="../main-win.ui" line="860"/>
         <source>Show Filter Bar</source>
         <translation>Εμφάνιση της γραμμής φίλτρου</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="857"/>
+        <location filename="../main-win.ui" line="863"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="865"/>
+        <location filename="../main-win.ui" line="871"/>
         <source>S&amp;plit View</source>
         <translation>&amp;Διαχωρισμός προβολής</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="868"/>
+        <location filename="../main-win.ui" line="874"/>
         <source>Split View</source>
         <translation>Διαχωρισμός προβολής</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="871"/>
+        <location filename="../main-win.ui" line="877"/>
         <source>F6</source>
         <translation>F6</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="876"/>
+        <location filename="../main-win.ui" line="882"/>
         <source>&amp;Copy Full Path</source>
         <translation>&amp;Αντιγραφή της πλήρους διαδρομής</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="879"/>
+        <location filename="../main-win.ui" line="885"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="890"/>
+        <location filename="../main-win.ui" line="896"/>
         <source>Show Thumb&amp;nails</source>
         <translation>Εμφάνιση εικόνων ε&amp;πισκόπησης</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="893"/>
+        <location filename="../main-win.ui" line="899"/>
         <source>Show Thumbnails</source>
         <translation>Εμφάνιση εικόνων επισκόπησης</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="901"/>
+        <location filename="../main-win.ui" line="907"/>
         <source>S&amp;ide Pane</source>
         <translation>&amp;Πλευρικός πίνακας</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="904"/>
+        <location filename="../main-win.ui" line="910"/>
         <source>F9</source>
         <translation>F9</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="909"/>
+        <location filename="../main-win.ui" line="915"/>
         <source>Hidden &amp;Shortcuts</source>
         <translation>Κρυφές &amp;συντομεύσεις</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="749"/>
+        <location filename="../main-win.ui" line="920"/>
+        <source>Open Tab in &amp;Admin Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="755"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="754"/>
+        <location filename="../main-win.ui" line="760"/>
         <source>&amp;Clear All Filters</source>
         <translation>&amp;Εκκαθάριση όλων των φίλτρων</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="757"/>
+        <location filename="../main-win.ui" line="763"/>
         <source>Ctrl+Shift+K</source>
         <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="766"/>
+        <location filename="../main-win.ui" line="772"/>
         <source>Close &amp;previous tabs</source>
         <translation>Κλείσιμο των &amp;προηγούμενων καρτελών</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="775"/>
+        <location filename="../main-win.ui" line="781"/>
         <source>Close &amp;next tabs</source>
         <translation>Κλείσιμο των &amp;επόμενων καρτελών</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="814"/>
+        <location filename="../main-win.ui" line="820"/>
         <source>&amp;Preserve Settings for This Folder</source>
         <translation>&amp;Διατήρηση των ρυθμίσεων του φακέλου</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="819"/>
+        <location filename="../main-win.ui" line="825"/>
         <source>Connect to &amp;Server</source>
         <translation>Σύνδεση στον &amp;διακομιστή</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="827"/>
+        <location filename="../main-win.ui" line="833"/>
         <source>&amp;Location</source>
         <translation>&amp;Τοποθεσία</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="835"/>
+        <location filename="../main-win.ui" line="841"/>
         <source>&amp;Path Buttons</source>
         <translation>&amp;Κουμπιά διαδρομής</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="840"/>
+        <location filename="../main-win.ui" line="846"/>
         <source>&amp;Bulk Rename</source>
         <translation>Μα&amp;ζική μετονομασία</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="843"/>
+        <location filename="../main-win.ui" line="849"/>
         <source>Bulk Rename</source>
         <translation>Μαζική μετονομασία</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="846"/>
+        <location filename="../main-win.ui" line="852"/>
         <source>Ctrl+F2</source>
         <translation>Ctrl+F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="780"/>
+        <location filename="../main-win.ui" line="786"/>
         <source>Close &amp;other tabs</source>
         <translation>Κλείσιμο των ά&amp;λλων καρτελών</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="746"/>
+        <location filename="../main-win.ui" line="752"/>
         <source>Permanent &amp;filter bar</source>
         <translation>Μόνιμη ράβδος &amp;φίλτρου</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="788"/>
+        <location filename="../main-win.ui" line="794"/>
         <source>&amp;Menu bar</source>
         <translation>&amp;Γραμμή μενού</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="791"/>
+        <location filename="../main-win.ui" line="797"/>
         <source>Menu bar</source>
         <translation>Γραμμή μενού</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="794"/>
+        <location filename="../main-win.ui" line="800"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="803"/>
-        <location filename="../main-win.ui" line="806"/>
+        <location filename="../main-win.ui" line="809"/>
+        <location filename="../main-win.ui" line="812"/>
         <source>Menu</source>
         <translation>Μενού</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="577"/>
+        <location filename="../main-win.ui" line="580"/>
         <source>New &amp;Tab</source>
         <translation>Νέα &amp;καρτέλα</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="580"/>
+        <location filename="../main-win.ui" line="583"/>
         <source>New Tab</source>
         <translation>Νέα καρτέλα</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="583"/>
+        <location filename="../main-win.ui" line="586"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="592"/>
+        <location filename="../main-win.ui" line="595"/>
         <source>Go &amp;Back</source>
         <translation>Μετάβαση &amp;πίσω</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="595"/>
+        <location filename="../main-win.ui" line="598"/>
         <source>Go Back</source>
         <translation>Μετάβαση πίσω</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="598"/>
+        <location filename="../main-win.ui" line="601"/>
         <source>Alt+Left</source>
         <translation>Alt+Αριστερά</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="610"/>
         <source>Go &amp;Forward</source>
         <translation>Μετάβαση &amp;εμπρός</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="610"/>
+        <location filename="../main-win.ui" line="613"/>
         <source>Go Forward</source>
         <translation>Μετάβαση εμπρός</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="613"/>
+        <location filename="../main-win.ui" line="616"/>
         <source>Alt+Right</source>
         <translation>Alt+Δεξιά</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="618"/>
+        <location filename="../main-win.ui" line="621"/>
         <source>&amp;Invert Selection</source>
         <translation>Αντιστρο&amp;φή επιλογής</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="627"/>
+        <location filename="../main-win.ui" line="633"/>
         <source>&amp;Delete</source>
         <translation>&amp;Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="630"/>
+        <location filename="../main-win.ui" line="636"/>
         <source>Del</source>
         <translation>Del</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="635"/>
+        <location filename="../main-win.ui" line="641"/>
         <source>&amp;Rename</source>
         <translation>&amp;Μετονομασία</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="638"/>
+        <location filename="../main-win.ui" line="644"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="643"/>
+        <location filename="../main-win.ui" line="649"/>
         <source>C&amp;lose Tab</source>
         <translation>Κλείσιμο καρ&amp;τέλας</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="646"/>
+        <location filename="../main-win.ui" line="652"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="651"/>
+        <location filename="../main-win.ui" line="657"/>
         <source>File &amp;Properties</source>
         <translation>Αρχεία και ι&amp;διότητες</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="654"/>
+        <location filename="../main-win.ui" line="660"/>
         <source>Alt+Return</source>
         <translation>Alt+Return</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="659"/>
+        <location filename="../main-win.ui" line="665"/>
         <source>&amp;Folder Properties</source>
         <translation>Ιδιότητες &amp;φακέλου</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="688"/>
+        <location filename="../main-win.ui" line="694"/>
         <source>Edit Bookmarks</source>
         <translation>Επεξεργασία σελιδοδεικτών</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="693"/>
+        <location filename="../main-win.ui" line="699"/>
         <source>Open &amp;Terminal</source>
         <translation>Άνοιγμα του &amp;τερματικού</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="696"/>
+        <location filename="../main-win.ui" line="702"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="701"/>
-        <source>Open as &amp;Root</source>
-        <translation>Άνοιγμα ως δια&amp;χειριστής</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="706"/>
+        <location filename="../main-win.ui" line="712"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>Επε&amp;ξεργασία σελιδοδεικτών</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="718"/>
+        <location filename="../main-win.ui" line="724"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="730"/>
+        <location filename="../main-win.ui" line="736"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="735"/>
+        <location filename="../main-win.ui" line="741"/>
         <source>&amp;Find Files</source>
         <translation>&amp;Αναζήτηση αρχείων</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="738"/>
+        <location filename="../main-win.ui" line="744"/>
         <source>F3</source>
         <translation>F3</translation>
     </message>
@@ -1296,12 +1311,7 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>&amp;Μετάβαση</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="210"/>
-        <source>&amp;Tool</source>
-        <translation>&amp;Εργαλεία</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="231"/>
+        <location filename="../main-win.ui" line="234"/>
         <source>Main Toolbar</source>
         <translation>Κύρια εργαλειοθήκη</translation>
     </message>
@@ -1635,24 +1645,24 @@ are left clicked, even when it is not the default file manager.</source>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1932"/>
+        <location filename="../mainwindow.cpp" line="1935"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Μετακίνηση στα απορρίμματα</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1932"/>
+        <location filename="../mainwindow.cpp" line="1935"/>
         <source>&amp;Delete</source>
         <translation>&amp;Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1989"/>
-        <location filename="../mainwindow.cpp" line="1997"/>
+        <location filename="../mainwindow.cpp" line="2003"/>
+        <location filename="../mainwindow.cpp" line="2011"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1997"/>
+        <location filename="../mainwindow.cpp" line="2011"/>
         <source>Switch user command is not set.</source>
         <translation>Η εντολή εναλλαγής του χρήστη δεν έχει οριστεί.</translation>
     </message>
