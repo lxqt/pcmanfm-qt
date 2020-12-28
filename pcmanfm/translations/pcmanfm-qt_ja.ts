@@ -1528,7 +1528,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="297"/>
         <source>Select Wallpaper Folder</source>
-        <translation>壁紙フォルダの選択</translation>
+        <translation>壁紙フォルダーの選択</translation>
     </message>
 </context>
 <context>
@@ -1831,7 +1831,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="223"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation>できる限り新しいタブでフォルダを開く</translation>
+        <translation>できる限り新しいタブでフォルダーを開く</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="226"/>
