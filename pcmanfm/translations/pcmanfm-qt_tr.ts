@@ -1703,6 +1703,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n gizli)</numerusform>
+            <numerusform> (%n gizli)</numerusform>
         </translation>
     </message>
     <message>
@@ -1716,6 +1717,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <location filename="../tabpage.cpp" line="725"/>
         <source>%n item(s) selected</source>
         <translation>
+            <numerusform>%n nesne seçildi</numerusform>
             <numerusform>%n nesne seçildi</numerusform>
         </translation>
     </message>
@@ -1731,6 +1733,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
+            <numerusform>%1 dosyayı açmak istiyor musunuz?</numerusform>
             <numerusform>%1 dosyayı açmak istiyor musunuz?</numerusform>
         </translation>
     </message>
