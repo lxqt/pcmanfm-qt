@@ -1240,7 +1240,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="630"/>
         <source>Del</source>
-        <translation>Supr</translation>
+        <translation type="unfinished">Supr</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="635"/>
