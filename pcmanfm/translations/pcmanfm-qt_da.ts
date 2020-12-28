@@ -404,7 +404,8 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Som standard åbnes skrivebordsmapper i PCManFM-Qt hvis de
+venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
@@ -537,7 +538,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Fokusér visning, ryd filterlinje</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -547,7 +548,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Fokusér siderude</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -558,7 +559,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Fokusér stiindtastning</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -631,7 +632,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Søgedialog</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
@@ -641,7 +642,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Indsæt i forbigående filterlinje</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -1732,9 +1733,9 @@ are left clicked, even when it is not the default file manager.</source>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Vil du åbne denne %1 file?</numerusform>
+            <numerusform>Vil du åbne disse %1 filer?</numerusform>
         </translation>
     </message>
     <message>
@@ -1951,7 +1952,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="213"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Omdøbte filer markeres også</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="282"/>
@@ -2064,7 +2065,7 @@ hvis der er mere end et faneblad.</translation>
     <message>
         <location filename="../preferences.ui" line="223"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Åbn mapper i nye faneblade så længe det er muligt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="226"/>
