@@ -1,0 +1,48 @@
+<h3 id="features">Features</h3>
+<h3 id="file-operations">File operations</h3>
+<ul>
+<li>Hide items (without prefixing their names with a dot) ?</li>
+<li>Bulk rename: Select files and from Menu &gt; Modify, Bulk rename or Cltr+F2 open bulk rename dialog</li>
+<li>Trusting executables: by right click on file &gt; trust executable</li>
+<li>Permanently deleting files (without moving them to Trash): Shift+Delete; needs confirmation</li>
+<li>Open Tab as Admin: useful for transferring root files without opening a root instance</li>
+<li>Open Tab as Root: open root instance; check settings for Switching-User-Command in Preferences &gt; Advanced</li>
+</ul>
+<h3 id="search-filter">Search &amp; Filter</h3>
+<ul>
+<li>Ctrl+F</li>
+<li>F3 opens File Search in folder</li>
+<li>Filter Bar (search as you type)</li>
+</ul>
+<h4 id="custom-actions">Custom actions</h4>
+<p>Custom actions can be created as &#39;*.desktop files&#39; in &#39;~/.local/share/file-manager/actions/&#39;</p>
+<p>Commented example for an custom action to edit text files:</p>
+<pre><code><span class="hljs-section">[Desktop Entry]</span>
+<span class="hljs-attr">Type</span>=Action
+<span class="hljs-attr">Icon</span>=accessories-text-editor
+<span class="hljs-comment">#Shown as title</span>
+<span class="hljs-attr">Name</span>=Open as Text
+<span class="hljs-comment">#Same as above, translated</span>
+<span class="hljs-attr">Name[es]</span>=Abrir como texto 
+
+<span class="hljs-comment">#Specifies for which mimetypes action will be shown</span>
+<span class="hljs-attr">MimeTypes</span>=text/*;application/x-bsh;application/x-sh;text/x-script.sh;application/x-desktop;application/x-shellscript;
+<span class="hljs-attr">Profiles</span>=profile-zero;
+<span class="hljs-section">[X-Action-Profile profile-zero]</span>
+<span class="hljs-comment"># Application acts on the file</span>
+<span class="hljs-attr">Exec</span>=featherpad %F
+</code></pre><p>how to sort them?</p>
+<ul>
+<li>Adding/removing emblems (can be done by custom actions)?</li>
+</ul>
+<h4 id="custom-folder-icons">Custom folder icons</h4>
+<p>From File &gt; Folder Properties or right click on folder &gt; properties: click the icon to change it.</p>
+<h4 id="tab-features">Tab features</h4>
+<ul>
+<li>Tab DND (tabs can be dragged from a window and dropped into another)</li>
+<li>Split view (very helpful, especially when used temporarily with F6)</li>
+<li>See Help &gt; Hidden Shortcuts for Shortcuts</li>
+</ul>
+<ul>
+<li>Adding video, PDF and DjVu thumbnailers.</li>
+</ul>
