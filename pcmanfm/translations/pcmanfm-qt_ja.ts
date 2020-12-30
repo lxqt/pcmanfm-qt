@@ -153,7 +153,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation>接続するリモートフォルダーを指定します</translation>
+        <translation>接続するリモートフォルダーを指定して下さい</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
@@ -724,7 +724,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="210"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>ツール(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="283"/>
@@ -879,7 +879,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="555"/>
         <source>&amp;Folder First</source>
-        <translation>フォルダーを最初に並べる(&amp;F)</translation>
+        <translation>フォルダーを最初に(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="563"/>
@@ -899,7 +899,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -929,7 +929,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Root インスタンスでタブを開く(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="857"/>
@@ -999,7 +999,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>管理者モードでタブを開く(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
