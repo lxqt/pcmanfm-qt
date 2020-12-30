@@ -639,7 +639,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation>Umshalt+Einfügen</translation>
+        <translation>Umschalt+Einfügen</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>

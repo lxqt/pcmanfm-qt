@@ -725,7 +725,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="210"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Strumenti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="283"/>
@@ -915,7 +915,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri scheda come &amp;root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="857"/>
@@ -985,7 +985,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri scheda in modalità amministratore</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
@@ -2096,7 +2096,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="605"/>
         <source> KB</source>
-        <translation> ·&#xa0;KB</translation>
+        <translation> · KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="622"/>
