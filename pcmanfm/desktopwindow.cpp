@@ -469,7 +469,9 @@ void DesktopWindow::setDesktopFolder() {
         // free the previous model and folder
         if(model_) {
             disconnect(model_, &Fm::FolderModel::filesAdded, this, &DesktopWindow::onFilesAdded);
-            proxyModel_->setSourceModel(nullptr);
+            if(proxyModel_) {
+                proxyModel_->setSourceModel(nullptr);
+            }
             delete model_;
             model_ = nullptr;
         }
@@ -484,7 +486,17 @@ void DesktopWindow::setDesktopFolder() {
     folder_ = model_->folder();
     connect(folder_.get(), &Fm::Folder::startLoading, this, &DesktopWindow::onFolderStartLoading);
     connect(folder_.get(), &Fm::Folder::finishLoading, this, &DesktopWindow::onFolderFinishLoading);
+
+    if(proxyModel_ == nullptr) {
+        proxyModel_ = new Fm::ProxyFolderModel();
+        setModel(proxyModel_);
+        connect(proxyModel_, &Fm::ProxyFolderModel::rowsInserted, this, &DesktopWindow::onRowsInserted);
+        connect(proxyModel_, &Fm::ProxyFolderModel::rowsAboutToBeRemoved, this, &DesktopWindow::onRowsAboutToBeRemoved);
+        connect(proxyModel_, &Fm::ProxyFolderModel::layoutChanged, this, &DesktopWindow::onLayoutChanged);
+        connect(proxyModel_, &Fm::ProxyFolderModel::sortFilterChanged, this, &DesktopWindow::onModelSortFilterChanged);
+    }
     proxyModel_->setSourceModel(model_);
+
     if(folder_->isLoaded()) {
         onFolderStartLoading();
         onFolderFinishLoading();
