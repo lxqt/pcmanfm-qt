@@ -701,7 +701,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="210"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Araçlar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="268"/>
@@ -961,7 +961,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekmeyi &amp;Kök Örneğinde aç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="721"/>
@@ -1041,7 +1041,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekmeyi &amp;Yönetici Modunda aç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
@@ -1192,7 +1192,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="636"/>
         <source>Del</source>
-        <translation>Sil</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="641"/>

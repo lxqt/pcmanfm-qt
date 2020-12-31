@@ -700,7 +700,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="210"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>工具(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="268"/>
@@ -935,7 +935,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="673"/>
@@ -960,7 +960,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>在根实例中打开选项卡(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="721"/>
@@ -1040,7 +1040,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>在管理员模式中打开选项卡&amp;(A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
@@ -1957,7 +1957,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="213"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>重命名的文件也会被选中</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="282"/>
@@ -2059,7 +2059,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="133"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>书签菜单：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
