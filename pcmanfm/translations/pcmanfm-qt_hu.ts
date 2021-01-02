@@ -699,7 +699,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="210"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Eszközök</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="268"/>
@@ -934,7 +934,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="673"/>
@@ -959,7 +959,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Root lap megnyitása</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="721"/>
@@ -1039,7 +1039,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Adminisztrátori lap megnyitása</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
@@ -1956,7 +1956,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../preferences.ui" line="213"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Az átnevezett fájlok ki lesznek választva</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="282"/>
@@ -2058,7 +2058,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="133"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Könyvjelzők menü:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="159"/>
