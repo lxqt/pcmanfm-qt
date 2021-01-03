@@ -959,7 +959,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>&amp;Root lap megnyitása</translation>
+        <translation>Lap megnyitása &amp;rootként</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="721"/>
@@ -1004,7 +1004,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="882"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished">Ú&amp;tvonal másolása</translation>
+        <translation>Út&amp;vonal másolása</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="885"/>
@@ -1039,7 +1039,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>&amp;Adminisztrátori lap megnyitása</translation>
+        <translation>Lap megnyitása &amp;adminisztrátorként</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
