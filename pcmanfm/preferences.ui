@@ -99,8 +99,11 @@
               <property name="enabled">
                <bool>false</bool>
               </property>
+              <property name="toolTip">
+               <string>Set to zero to disable auto-selection.</string>
+              </property>
               <property name="text">
-               <string>Delay of auto-selection in single click mode (0 to disable)</string>
+               <string>Delay of auto-selection in single click mode:</string>
               </property>
              </widget>
             </item>
@@ -124,6 +127,9 @@
               </property>
               <property name="singleStep">
                <double>0.100000000000000</double>
+              </property>
+              <property name="toolTip">
+               <string>Set to zero to disable auto-selection.</string>
               </property>
              </widget>
             </item>
