@@ -1785,7 +1785,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="592"/>
+        <location filename="../preferences.ui" line="598"/>
         <source>Thumbnail</source>
         <translation>Vorschaubild</translation>
     </message>
@@ -1800,67 +1800,67 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <translation>Erweitert</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="216"/>
+        <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
         <translation>Markiere neu erstellte Dateien</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="253"/>
+        <location filename="../preferences.ui" line="259"/>
         <source>Icons</source>
         <translation>Symbole</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="285"/>
+        <location filename="../preferences.ui" line="291"/>
         <source>Size of big icons:</source>
         <translation>Größe der großen Symbole:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="302"/>
+        <location filename="../preferences.ui" line="308"/>
         <source>Size of small icons:</source>
         <translation>Größe der kleinen Symbole:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="319"/>
+        <location filename="../preferences.ui" line="325"/>
         <source>Size of thumbnails:</source>
         <translation>Größe von Vorschaubildern:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="333"/>
+        <location filename="../preferences.ui" line="339"/>
         <source>Size of side pane icons:</source>
         <translation>Größe der Symbole in der Seitenleiste:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="265"/>
+        <location filename="../preferences.ui" line="271"/>
         <source>Icon theme:</source>
         <translation>Symbolthema:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="496"/>
+        <location filename="../preferences.ui" line="502"/>
         <source>Window</source>
         <translation>Fenster</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="537"/>
+        <location filename="../preferences.ui" line="543"/>
         <source>Default width of new windows:</source>
         <translation>Standardbreite neuer Fenster:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="551"/>
+        <location filename="../preferences.ui" line="557"/>
         <source>Default height of new windows:</source>
         <translation>Standardhöhe neuer Fenster:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="509"/>
+        <location filename="../preferences.ui" line="515"/>
         <source>Always show the tab bar</source>
         <translation>Reiterleiste immer anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="516"/>
+        <location filename="../preferences.ui" line="522"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>&apos;Schließen&apos;-Knopf an Tabs zeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="530"/>
+        <location filename="../preferences.ui" line="536"/>
         <source>Remember the size of the last closed window</source>
         <translation>Größe des zuletzt geschlossenen Fensters merken</translation>
     </message>
@@ -1875,42 +1875,37 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <translation>Dateien mit einem einfachen Klick öffnen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="103"/>
-        <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation>Wartezeit für die automatische Auswahl im Einzelklickmodus (0 zum Abschalten)</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="110"/>
+        <location filename="../preferences.ui" line="113"/>
         <source>Default view mode:</source>
         <translation>Standard-Ansichtsmodus:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="123"/>
+        <location filename="../preferences.ui" line="126"/>
         <source> sec</source>
         <translation> Sek</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="169"/>
+        <location filename="../preferences.ui" line="175"/>
         <source>File Operations</source>
         <translation>Dateioperationen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="175"/>
+        <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
         <translation>Löschen von Dateien bestätigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="182"/>
+        <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation>Gelöschte Dateien in den &quot;Papierkorb&quot; verschieben anstatt sie von der Festplatte zu löschen.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="625"/>
+        <location filename="../preferences.ui" line="631"/>
         <source>Show thumbnails of files</source>
         <translation>Vorschaubilder von Dateien anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="615"/>
+        <location filename="../preferences.ui" line="621"/>
         <source>Only show thumbnails for local files</source>
         <translation>Vorschaubilder nur für lokale Dateien anzeigen</translation>
     </message>
@@ -1925,262 +1920,273 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <translation>Wenn dies nicht markiert ist, wird die DE-Einstellung verwendet.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="141"/>
+        <location filename="../preferences.ui" line="103"/>
+        <location filename="../preferences.ui" line="132"/>
+        <source>Set to zero to disable auto-selection.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="106"/>
+        <source>Delay of auto-selection in single click mode:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="147"/>
         <source>Open in current tab</source>
         <translation>Öffnen in aktuellen Reiter</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="146"/>
+        <location filename="../preferences.ui" line="152"/>
         <source>Open in new tab</source>
         <translation>Öffnen in neuem Reiter</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="151"/>
+        <location filename="../preferences.ui" line="157"/>
         <source>Open in new window</source>
         <translation>In neuem Fenster öffnen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="159"/>
+        <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
         <translation>Ordnerkontextmenü mit Strg + Rechtsklick anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="189"/>
+        <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
         <translation>Dateien auf Wechseldatenträgern löschen anstatt sie in den Papierkorb zu verschieben</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="196"/>
+        <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
         <translation>Bestätigung vor Verschieben in den Papierkorb</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="203"/>
-        <location filename="../preferences.ui" line="366"/>
-        <location filename="../preferences.ui" line="376"/>
+        <location filename="../preferences.ui" line="209"/>
+        <location filename="../preferences.ui" line="372"/>
+        <location filename="../preferences.ui" line="382"/>
         <source>Requires application restart to take effect completely</source>
         <translation>Anwendungsneustart für vollständige Einstellungsübernahme erforderlich</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="206"/>
+        <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
         <translation>Ausführbare Dateien ohne Bedienerhinweis starten</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="213"/>
+        <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
         <translation>Umbenannte Dateien werden ebenfalls ausgewählt</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="223"/>
+        <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
         <translation>Verzeichnisse, wenn möglich, in neuen Reitern öffnen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="226"/>
+        <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
         <translation>Einzelfenstermodus</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="282"/>
-        <location filename="../preferences.ui" line="292"/>
+        <location filename="../preferences.ui" line="288"/>
+        <location filename="../preferences.ui" line="298"/>
         <source>Used by Icon View</source>
         <translation>Wird in der Symbolansicht verwendet</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="299"/>
-        <location filename="../preferences.ui" line="309"/>
+        <location filename="../preferences.ui" line="305"/>
+        <location filename="../preferences.ui" line="315"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>Wird in der Listen- und detaillierten Listenansicht verwendet</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="316"/>
-        <location filename="../preferences.ui" line="326"/>
+        <location filename="../preferences.ui" line="322"/>
+        <location filename="../preferences.ui" line="332"/>
         <source>Used by Thumbnail View</source>
         <translation>Wird in der Miniaturansicht verwendet</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="346"/>
+        <location filename="../preferences.ui" line="352"/>
         <source>User interface</source>
         <translation>Benutzeroberfläche</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="359"/>
+        <location filename="../preferences.ui" line="365"/>
         <source>Treat backup files as hidden</source>
         <translation>Sicherungsdateien wie versteckte handhaben</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="379"/>
+        <location filename="../preferences.ui" line="385"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Symbole versteckter Dateien schattiert anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="409"/>
+        <location filename="../preferences.ui" line="415"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Minimaler Rand der Objekte in Symbolansicht:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="416"/>
+        <location filename="../preferences.ui" line="422"/>
         <source>3 px by default.</source>
         <translation>Standardwert 3 px.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="419"/>
-        <location filename="../preferences.ui" line="443"/>
+        <location filename="../preferences.ui" line="425"/>
+        <location filename="../preferences.ui" line="449"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="432"/>
+        <location filename="../preferences.ui" line="438"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="439"/>
+        <location filename="../preferences.ui" line="445"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>Standardwert 3 px.
 Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="456"/>
+        <location filename="../preferences.ui" line="462"/>
         <source>Lock</source>
         <translation>Sperren</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="505"/>
+        <location filename="../preferences.ui" line="511"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Bei Deaktivierung wird die Leiste der Reiter (Tabs) nur angezeigt,
 wenn mehr als einer geöffnet ist.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="523"/>
+        <location filename="../preferences.ui" line="529"/>
         <source>Switch to newly opened tab</source>
         <translation>Zum neuen Tab wechseln</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="565"/>
+        <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
         <translation>Zuletzt aktiven Tab in neuem Fenster öffnen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="751"/>
+        <location filename="../preferences.ui" line="757"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>Beispiele:&lt;br&gt;Für das Terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Zum Wechseln des Benutzers: &lt;i&gt;lxsudo %s&lt;/i&gt; oder &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; ist der Befehl, den Sie im Terminal oder mit su ausführen möchten.&lt;br&gt; Wichtig: Bitte nutzen Sie lxsudo, da sudo allein die Berechtigungen der Konfigurationsdatei zerstören wird.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="842"/>
+        <location filename="../preferences.ui" line="848"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Damit die Änderungen wirksam werden, ist ein Neustart der Anwendung erforderlich.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="598"/>
+        <location filename="../preferences.ui" line="604"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Keine Vorschaubilder erzeugen für Dateien größer als:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="133"/>
+        <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
         <translation>Lesezeichen-Menü:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="369"/>
+        <location filename="../preferences.ui" line="375"/>
         <source>Always show real file names</source>
         <translation>Immer die tatsächlichen Dateinamen anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="386"/>
+        <location filename="../preferences.ui" line="392"/>
         <source>Do not show file tooltips</source>
         <translation>Keine Kurzinfo zu Dateien anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="605"/>
+        <location filename="../preferences.ui" line="611"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="622"/>
+        <location filename="../preferences.ui" line="628"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Benötigt ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="652"/>
+        <location filename="../preferences.ui" line="658"/>
         <source>Auto Mount</source>
         <translation>Automatisches Einbinden</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="658"/>
+        <location filename="../preferences.ui" line="664"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Datenträger bei Programmstart automatisch einhängen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="665"/>
+        <location filename="../preferences.ui" line="671"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Wechseldatenträger automatisch beim Einlegen einbinden</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="672"/>
+        <location filename="../preferences.ui" line="678"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Verfügbare Optionen für Wechseldatenträger beim Einlegen anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="682"/>
+        <location filename="../preferences.ui" line="688"/>
         <source>When removable medium unmounted:</source>
         <translation>Beim Aushängen eines Wechseldatenträgers:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="688"/>
+        <location filename="../preferences.ui" line="694"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Registerkarten des Wechseldatenträgers &amp;schließen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="695"/>
+        <location filename="../preferences.ui" line="701"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Registerkarten des Wechseldatenträgers zum Nutzerverzeichnis &amp;wechseln</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="738"/>
+        <location filename="../preferences.ui" line="744"/>
         <source>Switch &amp;user command:</source>
         <translation>Befehl zum N&amp;utzerwechsel:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="764"/>
+        <location filename="../preferences.ui" line="770"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>Archivverwal&amp;tung:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="787"/>
+        <location filename="../preferences.ui" line="793"/>
         <source>Templates</source>
         <translation>Vorlagen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="793"/>
+        <location filename="../preferences.ui" line="799"/>
         <source>Show only user defined templates in menu</source>
         <translation>Ausschließlich benutzerdefinierte im Menü anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="800"/>
+        <location filename="../preferences.ui" line="806"/>
         <source>Show only one template for each MIME type</source>
         <translation>Nur eine Vorlage pro MIME-Typ anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="807"/>
+        <location filename="../preferences.ui" line="813"/>
         <source>Run default application after creation from template</source>
         <translation>Aus Vorlagen erstellte Dokumente in Standardanwendung öffnen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="722"/>
+        <location filename="../preferences.ui" line="728"/>
         <source>Programs</source>
         <translation>Programme</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="731"/>
+        <location filename="../preferences.ui" line="737"/>
         <source>Terminal emulator:</source>
         <translation>Terminalemulator:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="352"/>
+        <location filename="../preferences.ui" line="358"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>SI-Dezimalpräfixe anstatt IEC-Binärpräfixe verwenden</translation>
     </message>

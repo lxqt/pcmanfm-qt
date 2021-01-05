@@ -1781,7 +1781,7 @@ are left clicked, even when it is not the default file manager.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="592"/>
+        <location filename="../preferences.ui" line="598"/>
         <source>Thumbnail</source>
         <translation>Миниатюри</translation>
     </message>
@@ -1796,67 +1796,67 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Разширени</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="216"/>
+        <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
         <translation>Избиране на новосъздадените файлове</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="253"/>
+        <location filename="../preferences.ui" line="259"/>
         <source>Icons</source>
         <translation>Икони</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="285"/>
+        <location filename="../preferences.ui" line="291"/>
         <source>Size of big icons:</source>
         <translation>Размер на големите икони:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="302"/>
+        <location filename="../preferences.ui" line="308"/>
         <source>Size of small icons:</source>
         <translation>Размер на малките икони:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="319"/>
+        <location filename="../preferences.ui" line="325"/>
         <source>Size of thumbnails:</source>
         <translation>Размер на миниатюрите:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="333"/>
+        <location filename="../preferences.ui" line="339"/>
         <source>Size of side pane icons:</source>
         <translation>Размер на икони на страничния панел:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="265"/>
+        <location filename="../preferences.ui" line="271"/>
         <source>Icon theme:</source>
         <translation>Икони:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="496"/>
+        <location filename="../preferences.ui" line="502"/>
         <source>Window</source>
         <translation>Прозорец</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="509"/>
+        <location filename="../preferences.ui" line="515"/>
         <source>Always show the tab bar</source>
         <translation>Лентата с инструменти винаги да се показва</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="516"/>
+        <location filename="../preferences.ui" line="522"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Показване бутон за затваряне в полетата на разделите	</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="530"/>
+        <location filename="../preferences.ui" line="536"/>
         <source>Remember the size of the last closed window</source>
         <translation>Запомняне на размера на последния затворен прозорец</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="537"/>
+        <location filename="../preferences.ui" line="543"/>
         <source>Default width of new windows:</source>
         <translation>Ширина по подразбиране на новите прозорци:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="551"/>
+        <location filename="../preferences.ui" line="557"/>
         <source>Default height of new windows:</source>
         <translation>Височина по подразбиране на новите прозорци:</translation>
     </message>
@@ -1871,42 +1871,37 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Отваряне на файловете с единично кликване</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="103"/>
-        <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation>Забавяне на автоселекцията при единично кликване (0 за отмяна)</translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="110"/>
+        <location filename="../preferences.ui" line="113"/>
         <source>Default view mode:</source>
         <translation>Изглед по подразбиране:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="123"/>
+        <location filename="../preferences.ui" line="126"/>
         <source> sec</source>
         <translation> s</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="169"/>
+        <location filename="../preferences.ui" line="175"/>
         <source>File Operations</source>
         <translation>Файлови операции</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="175"/>
+        <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
         <translation>Потвърждаване преди изтриване на файлове</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="182"/>
+        <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
         <translation>Преместване на изтритите файлове в кошчето.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="625"/>
+        <location filename="../preferences.ui" line="631"/>
         <source>Show thumbnails of files</source>
         <translation>Показване на миниатюри на файловете</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="615"/>
+        <location filename="../preferences.ui" line="621"/>
         <source>Only show thumbnails for local files</source>
         <translation>Показване на миниатюри само на локалните файлове</translation>
     </message>
@@ -1921,262 +1916,273 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Ако опцията не е избрана, ще се използват стандартните настройки.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="141"/>
+        <location filename="../preferences.ui" line="103"/>
+        <location filename="../preferences.ui" line="132"/>
+        <source>Set to zero to disable auto-selection.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="106"/>
+        <source>Delay of auto-selection in single click mode:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="147"/>
         <source>Open in current tab</source>
         <translation>Отваряне в текущия раздел</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="146"/>
+        <location filename="../preferences.ui" line="152"/>
         <source>Open in new tab</source>
         <translation>Отваряне в нов раздел</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="151"/>
+        <location filename="../preferences.ui" line="157"/>
         <source>Open in new window</source>
         <translation>Отваряне в нов прозорец</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="189"/>
+        <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
         <translation>Изтриване на файлове от сменяем носител без създаване на кошче</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="196"/>
+        <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
         <translation>Потвърждаване преди преместване на файлове в кошчето</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="203"/>
-        <location filename="../preferences.ui" line="366"/>
-        <location filename="../preferences.ui" line="376"/>
+        <location filename="../preferences.ui" line="209"/>
+        <location filename="../preferences.ui" line="372"/>
+        <location filename="../preferences.ui" line="382"/>
         <source>Requires application restart to take effect completely</source>
         <translation>Изисква рестартиране на приложението, за да има пълен ефект</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="206"/>
+        <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
         <translation>Стартиране на изпълними файлове без запитване</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="213"/>
+        <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="282"/>
-        <location filename="../preferences.ui" line="292"/>
+        <location filename="../preferences.ui" line="288"/>
+        <location filename="../preferences.ui" line="298"/>
         <source>Used by Icon View</source>
         <translation>Използван при Изглед Икони</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="299"/>
-        <location filename="../preferences.ui" line="309"/>
+        <location filename="../preferences.ui" line="305"/>
+        <location filename="../preferences.ui" line="315"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>Използван при Компактен и Подробен изглед</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="316"/>
-        <location filename="../preferences.ui" line="326"/>
+        <location filename="../preferences.ui" line="322"/>
+        <location filename="../preferences.ui" line="332"/>
         <source>Used by Thumbnail View</source>
         <translation>Използван при Изглед Миниатури</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="346"/>
+        <location filename="../preferences.ui" line="352"/>
         <source>User interface</source>
         <translation>Потребителски интерфейс</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="359"/>
+        <location filename="../preferences.ui" line="365"/>
         <source>Treat backup files as hidden</source>
         <translation>Третирай backup файловете като скрити</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="379"/>
+        <location filename="../preferences.ui" line="385"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Покажи иконите на скритите файлове засенчени</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="409"/>
+        <location filename="../preferences.ui" line="415"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Минимален кант на елементите в изглед икони:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="416"/>
+        <location filename="../preferences.ui" line="422"/>
         <source>3 px by default.</source>
         <translation>3 px по подразбиране.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="419"/>
-        <location filename="../preferences.ui" line="443"/>
+        <location filename="../preferences.ui" line="425"/>
+        <location filename="../preferences.ui" line="449"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="432"/>
+        <location filename="../preferences.ui" line="438"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="439"/>
+        <location filename="../preferences.ui" line="445"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>3 px по подразбиране.
 Място за 3 линии текст също е запазено.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="456"/>
+        <location filename="../preferences.ui" line="462"/>
         <source>Lock</source>
         <translation>Заключване</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="505"/>
+        <location filename="../preferences.ui" line="511"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Ако опцията не е избрана, табулаторът на раздела ще се показва,
 само ако има повече от един раздел.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="523"/>
+        <location filename="../preferences.ui" line="529"/>
         <source>Switch to newly opened tab</source>
         <translation>Преминаване към новоотворения раздел</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="565"/>
+        <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
         <translation>Повторно отваряне на последния раздел в нов прозорец</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="751"/>
+        <location filename="../preferences.ui" line="757"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>Например:&lt;br&gt;За терминал: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;За смяна на потребител: &lt;i&gt;lxsudo %s&lt;/i&gt; или &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; е командният ред за изпълнение в терминал или su.&lt;br&gt; Важно: Моля, използвайте lxsudo, защото sudo ще доведе до объркване на файловите разрешения.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="842"/>
+        <location filename="../preferences.ui" line="848"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Изисква рестартиране на приложението, за да има ефект на промените.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="598"/>
+        <location filename="../preferences.ui" line="604"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Да не се генерира миниатюрен вид на изображения, надвишаващи този размер:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="133"/>
+        <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="159"/>
+        <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
         <translation>Показване на контекстното меню на директориите с Ctrl + десен бутон на мишката</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="223"/>
+        <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
         <translation>Отваряне на директориите в нови раздели доколко е възможно</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="226"/>
+        <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
         <translation>Режим с единичен прозорец</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="369"/>
+        <location filename="../preferences.ui" line="375"/>
         <source>Always show real file names</source>
         <translation>Винаги показване на истинските имена на файловете</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="386"/>
+        <location filename="../preferences.ui" line="392"/>
         <source>Do not show file tooltips</source>
         <translation>Без показване на подсказките на файловете</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="605"/>
+        <location filename="../preferences.ui" line="611"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="622"/>
+        <location filename="../preferences.ui" line="628"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Изисква ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="652"/>
+        <location filename="../preferences.ui" line="658"/>
         <source>Auto Mount</source>
         <translation>Автоматично монтиране</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="658"/>
+        <location filename="../preferences.ui" line="664"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Автоматично монтиране на възможните за монтиране дялове</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="665"/>
+        <location filename="../preferences.ui" line="671"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Автоматично монтиране на сменяемите устройства, когато са свързани</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="672"/>
+        <location filename="../preferences.ui" line="678"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Показване на наличните опции за сменяемите устройства, когато са свързани</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="682"/>
+        <location filename="../preferences.ui" line="688"/>
         <source>When removable medium unmounted:</source>
         <translation>Когато сменяемо устройство е демонтирано:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="688"/>
+        <location filename="../preferences.ui" line="694"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>&amp;Затваряне на раздела, показващ сменяемото устроство</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="695"/>
+        <location filename="../preferences.ui" line="701"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>&amp;Преминаване в домашната директория</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="722"/>
+        <location filename="../preferences.ui" line="728"/>
         <source>Programs</source>
         <translation>Програми</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="731"/>
+        <location filename="../preferences.ui" line="737"/>
         <source>Terminal emulator:</source>
         <translation>Терминален емулатор:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="738"/>
+        <location filename="../preferences.ui" line="744"/>
         <source>Switch &amp;user command:</source>
         <translation>Команда за &amp;смяна на потребител:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="764"/>
+        <location filename="../preferences.ui" line="770"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>&amp;Архивираща програма:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="787"/>
+        <location filename="../preferences.ui" line="793"/>
         <source>Templates</source>
         <translation>Шаблони</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="793"/>
+        <location filename="../preferences.ui" line="799"/>
         <source>Show only user defined templates in menu</source>
         <translation>Показване в менюто само на шаблони, дефинирани от потребителя</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="800"/>
+        <location filename="../preferences.ui" line="806"/>
         <source>Show only one template for each MIME type</source>
         <translation>Показване само на един шаблон за всеки MIME тип</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="807"/>
+        <location filename="../preferences.ui" line="813"/>
         <source>Run default application after creation from template</source>
         <translation>Изпълняване на приложението по подразбиране след създаване от шаблон</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="352"/>
+        <location filename="../preferences.ui" line="358"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Използване на SI децимални префикси вместо IEC бинарни префикси</translation>
     </message>
