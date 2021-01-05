@@ -712,7 +712,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="274"/>
         <source>Alt+Up</source>
-        <translation>Alt+PageUp</translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="283"/>
@@ -1158,7 +1158,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="601"/>
         <source>Alt+Left</source>
-        <translation>Alt+Links</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="610"/>
@@ -1173,7 +1173,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="616"/>
         <source>Alt+Right</source>
-        <translation>Alt+Rechts</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="621"/>
@@ -1188,7 +1188,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="636"/>
         <source>Del</source>
-        <translation>Wis</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="641"/>
@@ -1696,7 +1696,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="485"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="502"/>
