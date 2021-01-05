@@ -687,12 +687,12 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="271"/>
         <source>Go Up</source>
-        <translation>Hoch</translation>
+        <translation type="unfinished">Hoch</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="274"/>
         <source>Alt+Up</source>
-        <translation>Alt+Bild-Auf</translation>
+        <translation>Alt+Hoch</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>
