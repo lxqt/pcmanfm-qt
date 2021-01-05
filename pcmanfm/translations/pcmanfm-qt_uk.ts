@@ -129,7 +129,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Назва#</translation>
     </message>
 </context>
 <context>
@@ -185,7 +185,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Назва:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
@@ -237,7 +237,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">Тип:</translation>
+        <translation>Тип:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
@@ -380,7 +380,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source> px</source>
-        <translation>пт</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="165"/>
@@ -488,7 +488,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="528"/>
         <source>Home</source>
-        <translation type="unfinished">Домашня тека</translation>
+        <translation>Домашня тека</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="539"/>
@@ -498,12 +498,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="550"/>
         <source>Computer</source>
-        <translation type="unfinished">Комп&apos;ютер</translation>
+        <translation>Комп&apos;ютер</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="561"/>
         <source>Network</source>
-        <translation type="unfinished">Мережа</translation>
+        <translation>Мережа</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="516"/>
@@ -998,7 +998,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="877"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="882"/>
@@ -1028,7 +1028,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="910"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="915"/>
@@ -1159,7 +1159,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="601"/>
         <source>Alt+Left</source>
-        <translation>Alt+Left</translation>
+        <translation>Alt+Вліво</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="610"/>
@@ -1333,7 +1333,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM</source>
-        <translation>Завершити PCManFM </translation>
+        <translation>Завершити PCManFM</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1564,12 +1564,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="339"/>
         <source>Computer</source>
-        <translation type="unfinished">Комп&apos;ютер</translation>
+        <translation>Комп&apos;ютер</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="353"/>
         <source>Network</source>
-        <translation type="unfinished">Мережа</translation>
+        <translation>Мережа</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="946"/>
@@ -2014,7 +2014,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="419"/>
         <location filename="../preferences.ui" line="443"/>
         <source> px</source>
-        <translation>пт</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="432"/>
@@ -2025,8 +2025,8 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="439"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>3 пт типово.
-Зарезервовано також область для 3 лінійок тексту. </translation>
+        <translation>3 px типово.
+Простір також зарезервовано для 3 рядків тексту.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="456"/>
@@ -2098,12 +2098,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="605"/>
         <source> KB</source>
-        <translation>КБ</translation>
+        <translation> КБ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="622"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation>Потрібно ffmpegthumbnailer </translation>
+        <translation>Потрібно ffmpegthumbnailer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="652"/>
@@ -2212,7 +2212,7 @@ only if there are more than one tab.</source>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
         <source>Error</source>
-        <translation type="unfinished">Помилка</translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
