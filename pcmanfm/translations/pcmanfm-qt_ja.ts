@@ -1739,7 +1739,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>これらの %1 ファイルを開きますか？</numerusform>
+            <numerusform>これらの %1 個のファイルを開きますか？</numerusform>
         </translation>
     </message>
     <message>
@@ -1800,12 +1800,12 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="132"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>自動選択を無効にするには 0 に設定します。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>シングルクリックモードでの自動選択の遅延:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1825,7 +1825,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation>Ctrl + 右クリック でフォルダーのコンテキストメニューを表示する</translation>
+        <translation>Ctrl+右クリック でフォルダーのコンテキストメニューを表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
@@ -1847,12 +1847,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation>実行可能なファイルを実行するときに確認しない</translation>
+        <translation>確認なしで実行可能ファイルを起動する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation>できる限り新しいタブでフォルダーを開く</translation>
+        <translation>可能な限りフォルダーを新しいタブで開きます</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
@@ -2015,7 +2015,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="415"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>アイコン表示におけるアイテムの最小余白:</translation>
+        <translation>アイコン表示でのアイテムの最小余白:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
@@ -2060,7 +2060,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation>最後のウィンドウのタブを新しいウィンドウで開く</translation>
+        <translation>最後に開いていたウィンドウのタブを新しいウィンドウで開く</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="757"/>
@@ -2110,7 +2110,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="604"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>次のサイズを超える画像ファイルのサムネイルを生成しない:</translation>
+        <translation>サムネイルを作成する画像ファイルの最大サイズ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="611"/>

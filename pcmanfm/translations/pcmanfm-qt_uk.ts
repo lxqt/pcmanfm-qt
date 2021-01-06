@@ -270,7 +270,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation>Файл малюнку</translation>
+        <translation>Файл зображення</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
@@ -304,7 +304,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="310"/>
         <source>Wallpaper image file:</source>
-        <translation>Файл малюнка тла:</translation>
+        <translation>Файл зображення тла:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="252"/>
@@ -314,12 +314,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="319"/>
         <source>Image file</source>
-        <translation>Файл малюнка</translation>
+        <translation>Файл зображення</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="325"/>
         <source>Image file path</source>
-        <translation>Шлях до файлу малюнка</translation>
+        <translation>Шлях до файлу зображення</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="332"/>
@@ -329,12 +329,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
         <source>Icons</source>
-        <translation>Значки</translation>
+        <translation>Піктограми</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation>Розмір значка:</translation>
+        <translation>Розмір піктограм:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
@@ -813,7 +813,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="410"/>
         <source>&amp;Icon View</source>
-        <translation>&amp;Вигляд значками</translation>
+        <translation>&amp;Подання піктограмами</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="418"/>
@@ -1008,7 +1008,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="885"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="896"/>
@@ -1018,7 +1018,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="899"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Показати ескізи</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="907"/>
@@ -1053,17 +1053,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="763"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="772"/>
         <source>Close &amp;previous tabs</source>
-        <translation>Замкнути &amp;попередні вкладки</translation>
+        <translation>Закрити &amp;попередні вкладки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
         <source>Close &amp;next tabs</source>
-        <translation>Замкнути наступні &amp;вкладки</translation>
+        <translation>Закрити &amp;наступні вкладки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
@@ -1078,12 +1078,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="833"/>
         <source>&amp;Location</source>
-        <translation>&amp;Знаходження</translation>
+        <translation>&amp;Розташування</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <source>&amp;Path Buttons</source>
-        <translation></translation>
+        <translation>&amp;Кнопки шляху</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="846"/>
@@ -1098,7 +1098,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="852"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="786"/>
@@ -1159,7 +1159,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="601"/>
         <source>Alt+Left</source>
-        <translation>Alt+Вліво</translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="610"/>
@@ -1179,7 +1179,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="621"/>
         <source>&amp;Invert Selection</source>
-        <translation>&amp;Інвертувати обране</translation>
+        <translation>&amp;Інвертувати вибране</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -1369,7 +1369,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>Встановити тло стільниці з ФАЙЛУ малюнку</translation>
+        <translation>Встановити тло стільниці з ФАЙЛУ зображення</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
@@ -1522,7 +1522,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="58"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation>Змінити розмір малюнку щоб заповнити весь екран</translation>
+        <translation>Змінити розмір зображення, щоб заповнити весь екран</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="251"/>
@@ -1532,7 +1532,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="255"/>
         <source>Image Files</source>
-        <translation>Файли малюнків</translation>
+        <translation>Файли зображень</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="297"/>
@@ -1670,7 +1670,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Icon View</source>
-        <translation>Вигляд значками</translation>
+        <translation>Подання піктограмами</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
@@ -1808,17 +1808,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="259"/>
         <source>Icons</source>
-        <translation>Значки</translation>
+        <translation>Піктограми</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="291"/>
         <source>Size of big icons:</source>
-        <translation>Розмір великих значків:</translation>
+        <translation>Розмір великих піктограм:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Size of small icons:</source>
-        <translation>Розмір малих значків:</translation>
+        <translation>Розмір малих піктограм:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -1828,12 +1828,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="339"/>
         <source>Size of side pane icons:</source>
-        <translation>Розмір значків бічної панелі:</translation>
+        <translation>Розмір піктограм бічної панелі:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="271"/>
         <source>Icon theme:</source>
-        <translation>Тема значка:</translation>
+        <translation>Тема піктограм:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="502"/>
@@ -1977,7 +1977,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="288"/>
         <location filename="../preferences.ui" line="298"/>
         <source>Used by Icon View</source>
-        <translation>Використано Переглядом значків</translation>
+        <translation>Використано поданням піктограмами</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="305"/>
@@ -2004,12 +2004,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="385"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Показати значки прихованих файлів як затінені</translation>
+        <translation>Показати піктограми прихованих файлів затіненими</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="415"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>Мінімальний проміжок в перегляді значками:</translation>
+        <translation>Найменший відступ у поданні піктограмами:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
@@ -2069,7 +2069,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="604"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Не створювати мініатюри для файлів малюнків, що мають розмір більший ніж:</translation>
+        <translation>Не створювати мініатюри файлів зображень, що мають розмір понад:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="139"/>

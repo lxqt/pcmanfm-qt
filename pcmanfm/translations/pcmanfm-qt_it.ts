@@ -695,7 +695,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="286"/>
         <source>Alt+Home</source>
-        <translation>Alt+Inizio</translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="402"/>
@@ -900,7 +900,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -1923,12 +1923,12 @@ sinistro anche se non è il gestore file predefinito.</translation>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="132"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mettere a zero disabilita la selezione automatica.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ritardo della selezione automatica in modalità clic singolo:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -2102,7 +2102,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="611"/>
         <source> KB</source>
-        <translation> ·&#xa0;KB</translation>
+        <translation> · KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="628"/>
