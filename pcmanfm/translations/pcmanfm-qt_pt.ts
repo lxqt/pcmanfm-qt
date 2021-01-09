@@ -1161,7 +1161,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="601"/>
         <source>Alt+Left</source>
-        <translation>Alt+Esquerda</translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="610"/>
@@ -1806,12 +1806,12 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="132"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Definir para zero para desativar a auto-selecção.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Atraso da auto-selecção no modo de clique único:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
