@@ -36,7 +36,7 @@
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
         <translation>Программирование:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+* Хун Жэньюй (Hong Jen Yee, PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
     <message>
@@ -65,7 +65,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
         <translation>Диспетчер файлов PCMan-Qt
 
-Авторское право (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+Авторское право (C) 2009 - 2014 洪任諭 (Хун Жэньюй, Hong Jen Yee)
 
 Эта программа является свободным программным обеспечением;
 вы можете распространять и/или модифицировать её согласно
@@ -378,7 +378,7 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
         <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source> px</source>
-        <translation> пикс.</translation>
+        <translation> пикс</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="165"/>
@@ -423,7 +423,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="348"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation>Отдельный фоновый рисунок для каждого монитора</translation>
+        <translation>Свои собственные обои для каждого монитора</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="375"/>
@@ -989,7 +989,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="673"/>
@@ -1014,7 +1014,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть вкладку от &amp;root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="721"/>
@@ -1104,7 +1104,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть вкладку в режиме &amp;администратора</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
@@ -1205,7 +1205,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="210"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Инструменты</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="583"/>
@@ -1542,7 +1542,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="297"/>
         <source>Select Wallpaper Folder</source>
-        <translation>Выбор каталога фоновых рисунков</translation>
+        <translation>Выбор папки с обоями</translation>
     </message>
 </context>
 <context>
@@ -1929,12 +1929,12 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="132"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Задайте ноль, чтобы отключить автовыделение.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Задержка автовыделения при открытии файлов одним щелчком:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1981,7 +1981,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Переименованные файлы также будут выделены</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2094,7 +2094,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Меню закладок:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="375"/>

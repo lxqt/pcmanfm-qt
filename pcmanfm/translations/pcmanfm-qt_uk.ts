@@ -888,42 +888,42 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="507"/>
         <source>&amp;By File Name</source>
-        <translation>&amp;По назві файлу</translation>
+        <translation>&amp;За назвою файлу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="515"/>
         <source>By &amp;Modification Time</source>
-        <translation>По часу з&amp;міни</translation>
+        <translation>За часом з&amp;міни</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="523"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>За часом видале&amp;ння</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="531"/>
         <source>By File &amp;Type</source>
-        <translation>По типу &amp;файлу</translation>
+        <translation>За типом &amp;файлу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="539"/>
         <source>By &amp;Owner</source>
-        <translation>По вла&amp;снику</translation>
+        <translation>За вла&amp;сником</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="547"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>За &amp;групою</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="555"/>
         <source>&amp;Folder First</source>
-        <translation>Те&amp;ки спершу</translation>
+        <translation>Спочатку те&amp;ки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="563"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Приховані в кінці</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="571"/>
@@ -933,7 +933,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="673"/>
@@ -943,7 +943,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="681"/>
         <source>By File &amp;Size</source>
-        <translation>По р&amp;озміру файлу</translation>
+        <translation>За р&amp;озміром файлу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="686"/>
@@ -1013,17 +1013,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="896"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Показати е&amp;скізи</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="899"/>
         <source>Show Thumbnails</source>
-        <translation>Показати ескізи</translation>
+        <translation>Показувати ескізи</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="907"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Бі&amp;чна панель</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="910"/>
@@ -1574,7 +1574,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="946"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="951"/>
@@ -1590,7 +1590,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1014"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Сховати елементи стільниці</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1020"/>
@@ -1685,7 +1685,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Detailed List View</source>
-        <translation>Детальний вигляд списком</translation>
+        <translation>Подання детального переліку</translation>
     </message>
 </context>
 <context>
@@ -1823,7 +1823,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="325"/>
         <source>Size of thumbnails:</source>
-        <translation>Розмір мініатюр:</translation>
+        <translation>Розмір ескізів:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="339"/>
@@ -1883,12 +1883,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="126"/>
         <source> sec</source>
-        <translation> сек</translation>
+        <translation> с</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>File Operations</source>
-        <translation>Операції над файлами</translation>
+        <translation>Дії з файлами</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="181"/>
@@ -2014,7 +2014,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>3 px by default.</source>
-        <translation>3 пт типово.</translation>
+        <translation>3 px типово.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="425"/>

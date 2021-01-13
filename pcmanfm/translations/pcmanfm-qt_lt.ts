@@ -834,7 +834,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="443"/>
         <source>Cu&amp;t</source>
-        <translation>&amp;Iškirpti</translation>
+        <translation>Iškirp&amp;ti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="446"/>
