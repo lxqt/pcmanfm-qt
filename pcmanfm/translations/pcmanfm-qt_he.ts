@@ -56,12 +56,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 כל מהדורה עדכנית יותר שלו.
 
 תכנית זו מופצת בתקווה שתביא תועלת אך ללא כל אחריות, אפילו לא מרומזת,
-להתאמה לצרכי מסחר או התאמה למטרה ייעודית. ניתן לעיין ברישיון הציבורי
+להתאמה לצורכי מסחר או התאמה למטרה ייעודית. ניתן לעיין ברישיון הציבורי
 הכללי של GNU לקבלת פרטים נוספים.
 
 לתכנית זו אמור היה להיות מצורף עותק של הרישיון הציבורי הכללי של GNU,
-אם לא צורף אחד כזה, ניתן לכתוב אל Free Software Foundation, Inc.‎,‎
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
+אם לא צורף אחד כזה, ניתן לכתוב אל Free Software Foundation, Inc.,‎
+ 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="82"/>
@@ -699,7 +699,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="210"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;כלים</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="268"/>
@@ -935,7 +935,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="673"/>
@@ -960,7 +960,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחת לשונית במופע מ&amp;שתמש על</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="721"/>
@@ -1040,7 +1040,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחת לשונית במצב &amp;ניהול</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
@@ -1420,7 +1420,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation>פתח במנהל הקבצים</translation>
+        <translation>פתיחה במנהל הקבצים</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="137"/>
@@ -1471,7 +1471,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="28"/>
         <source>URL:</source>
-        <translation>קישור:</translation>
+        <translation>כתובת:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="53"/>
@@ -1481,7 +1481,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="55"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation>תמונות (*.png *.xpm *.svg *.svgz )</translation>
+        <translation>תמונות (‎*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="81"/>
@@ -1504,7 +1504,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>מתיחה על מנת למלא את כל המסך</translation>
+        <translation>למתוח כדי למלא את כל המסך</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
@@ -1534,7 +1534,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="255"/>
         <source>Image Files</source>
-        <translation>קבצי תמונה</translation>
+        <translation>קובצי תמונה</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="297"/>
@@ -1553,7 +1553,9 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
         <translation>
-            <numerusform>אשפה (פריט %Ln)</numerusform>
+            <numerusform>אשפה (פריט אחד)</numerusform>
+            <numerusform>אשפה (שני פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
             <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
@@ -1625,7 +1627,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="139"/>
         <source>Root Instance</source>
-        <translation>מופע חשבון שורש</translation>
+        <translation>מופע חשבון על</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="694"/>
@@ -1705,7 +1707,9 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../tabpage.cpp" line="502"/>
         <source>%n item(s)</source>
         <translation>
-            <numerusform>פריט %n</numerusform>
+            <numerusform>פריט אחד</numerusform>
+            <numerusform>שני פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
             <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
@@ -1713,7 +1717,9 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../tabpage.cpp" line="504"/>
         <source> (%n hidden)</source>
         <translation>
-            <numerusform> (%n מוסתר)</numerusform>
+            <numerusform> (אחד מוסתר)</numerusform>
+            <numerusform> (שניים מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
             <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
@@ -1728,7 +1734,9 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../tabpage.cpp" line="725"/>
         <source>%n item(s) selected</source>
         <translation>
-            <numerusform>נבחר פריט %n</numerusform>
+            <numerusform>נבחר פריט אחד</numerusform>
+            <numerusform>נבחרו שני פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
             <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
@@ -1744,8 +1752,10 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>לפתוח את הקובץ ה־%1 הזה?</numerusform>
-            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את קובץ ה־%1 הזה?</numerusform>
+            <numerusform>לפתוח את קובצי ה־%1 האלה?</numerusform>
+            <numerusform>לפתוח את קובצי ה־%1 האלה?</numerusform>
+            <numerusform>לפתוח את קובצי ה־%1 האלה?</numerusform>
         </translation>
     </message>
     <message>
@@ -1921,12 +1931,12 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="132"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>יש להגדיר לאפס כדי להשבית בחירה אוטומטית.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>השהיית הבחירה אוטומטית במצב לחיצה בודדת:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1968,7 +1978,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>גם קבצים ששמם השתנה ייבחרו</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="288"/>
@@ -2071,7 +2081,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>תפריט סימניות:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
