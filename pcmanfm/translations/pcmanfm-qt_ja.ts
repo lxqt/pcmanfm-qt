@@ -355,7 +355,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation>一般</translation>
+        <translation>全般</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
@@ -370,7 +370,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="142"/>
         <source>Minimum item margins:</source>
-        <translation>アイテムの最小マージン:</translation>
+        <translation>アイテムの最小余白:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="149"/>
@@ -404,12 +404,13 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>既定では、デスクトップのフォルダーは PCManFM-Qt が既定のファイルマネージャーでなくても、左クリックすると PCManFM-Qt で開きます。</translation>
+        <translation>既定では、デスクトップ上のフォルダーは PCManFM-Qt が既定の
+ファイルマネージャーでなくても、左クリックすると PCManFM-Qt で開きます。</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>左クリックによってデスクトップのフォルダーを既定のファイルマネージャーで開く</translation>
+        <translation>デスクトップ上のフォルダーを左クリックして既定のファイルマネージャーで開く</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -509,7 +510,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="516"/>
         <source>Advanced</source>
-        <translation>高度</translation>
+        <translation>詳細</translation>
     </message>
 </context>
 <context>
