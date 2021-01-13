@@ -1738,8 +1738,9 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform>Biztos meg szeretné nyitni ezeket a(z) %1 fájlokat?</numerusform>
+        <translation>
+            <numerusform>Biztosan meg szeretné nyitni ezt a fájlt?</numerusform>
+            <numerusform>Biztosan meg szeretné nyitni ezt a %1 fájlt?</numerusform>
         </translation>
     </message>
     <message>
