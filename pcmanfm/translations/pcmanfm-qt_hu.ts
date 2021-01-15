@@ -547,7 +547,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished">Fókuszálás az oldalsávra</translation>
+        <translation>Fókuszálás az oldalsávra</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -558,7 +558,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished">Fókuszálás az útvonalsávra</translation>
+        <translation>Fókuszálás az útvonalsávra</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -794,7 +794,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="383"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished">&amp;Asztal</translation>
+        <translation>&amp;Asztal</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="392"/>
@@ -804,7 +804,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="397"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished">A&amp;lkalmazások</translation>
+        <translation>A&amp;lkalmazások</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="402"/>
@@ -1349,7 +1349,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../application.cpp" line="180"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished">Asztalbeállítások megnyitása a megadott nevű lapon</translation>
+        <translation>Asztalbeállítások megnyitása a megadott nevű lapon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
@@ -1385,7 +1385,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished">Háttér mód. MODE=(%1)</translation>
+        <translation>Asztali háttérkép módjának beállítása. MODE=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
@@ -1395,7 +1395,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished">Megnyitandó fájlok vagy mappák</translation>
+        <translation>Megnyitandó fájlok vagy mappák</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
@@ -1508,7 +1508,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished">Illesztés</translation>
+        <translation>Illesztés</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
@@ -1552,6 +1552,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
         <translation>
+            <numerusform>Kuka (%Ln elem)</numerusform>
             <numerusform>Kuka (%Ln elem)</numerusform>
         </translation>
     </message>
@@ -1704,12 +1705,14 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n elem</numerusform>
+            <numerusform>%n elem</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="504"/>
         <source> (%n hidden)</source>
         <translation>
+            <numerusform> (%n rejtett)</numerusform>
             <numerusform> (%n rejtett)</numerusform>
         </translation>
     </message>
@@ -1724,6 +1727,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
         <location filename="../tabpage.cpp" line="725"/>
         <source>%n item(s) selected</source>
         <translation>
+            <numerusform>%n elem kiválasztva</numerusform>
             <numerusform>%n elem kiválasztva</numerusform>
         </translation>
     </message>
@@ -1740,7 +1744,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
         <source>Do you want to open these %1 files?</source>
         <translation>
             <numerusform>Biztosan meg szeretné nyitni ezt a fájlt?</numerusform>
-            <numerusform>Biztosan meg szeretné nyitni ezt a %1 fájlt?</numerusform>
+            <numerusform>Biztosan meg szeretné nyitni ezeket a %1 fájlokat?</numerusform>
         </translation>
     </message>
     <message>
@@ -1916,12 +1920,12 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="132"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Állítsa 0-ra, hogy letiltsa az automatikus kijelölést.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatikus kiválasztás késleltetése egykattintásos módban:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1941,7 +1945,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished">Cserélhető adathordozón a fájlok törlése kukába helyezés helyett</translation>
+        <translation>Cserélhető adathordozón a fájlok törlése kukába helyezés helyett</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
@@ -2040,12 +2044,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="529"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished">Átváltás az újonnan megnyitott lapra</translation>
+        <translation>Átváltás az újonnan megnyitott lapra</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished">Legutolsó ablak lapjainak megnyitása az új ablakban</translation>
+        <translation>Utolsó ablak lapjainak megnyitása az új ablakban</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="757"/>
@@ -2075,7 +2079,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished">Mappák megnyitása új lapokon amennyire lehetséges</translation>
+        <translation>Mappák megnyitása új lapokon amennyire lehetséges</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
@@ -2120,7 +2124,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="678"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished">Cserélhető adathordozók behelyezésekor az elérhető lehetőségek megjelenítése</translation>
+        <translation>Cserélhető adathordozók behelyezésekor az elérhető lehetőségek megjelenítése</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="688"/>
@@ -2165,7 +2169,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="799"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished">Menüben csak felhasználói sablonok</translation>
+        <translation>Menüben csak felhasználói sablonok</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="806"/>
