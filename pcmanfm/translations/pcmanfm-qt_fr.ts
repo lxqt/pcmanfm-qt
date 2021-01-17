@@ -18,7 +18,7 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programmation&#xa0;:
+        <translation>Programmation :
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -97,7 +97,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>Type de média&#xa0;:</translation>
+        <translation>Type de média :</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
@@ -310,7 +310,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="252"/>
         <source>Select background color:</source>
-        <translation>Sélection de la couleur de l&apos;arrière-plan&#xa0;:</translation>
+        <translation>Sélection de la couleur de l&apos;arrière-plan :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="319"/>
@@ -345,12 +345,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>Sélection de la couleur de l&apos;ombre&#xa0;:</translation>
+        <translation>Sélection de la couleur de l&apos;ombre :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>Sélection de la police&#xa0;:</translation>
+        <translation>Sélection de la police :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -410,7 +410,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrez les dossiers du bureau dans le gestionnaire de fichiers par défaut avec un clique gauche</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -538,7 +538,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished">Vue concentrée, nettoyer la bar de filtres</translation>
+        <translation>Vue concentrée, nettoyer la bar de filtres</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -647,17 +647,17 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation type="unfinished">Glisser+Maj</translation>
+        <translation>Glisser+Maj</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished">Déplacer le fichier lors du dépôt</translation>
+        <translation>Déplacer le fichier lors du dépôt</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation type="unfinished">Glisser+Ctrl</translation>
+        <translation>Ctrl+Glisser</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
@@ -667,12 +667,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation type="unfinished">Glisser+Maj+Ctrl</translation>
+        <translation>Maj+Ctrl+Glisser</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished">Créer un lien symbolique lors de la suppression</translation>
+        <translation>Créer un lien symbolique lors de la suppression</translation>
     </message>
 </context>
 <context>
@@ -900,7 +900,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -930,7 +930,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ouvrir l&apos;onglet en tant que &amp;Root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="857"/>
@@ -990,7 +990,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="910"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="915"/>
@@ -1699,7 +1699,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../tabpage.cpp" line="485"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espace libre : %1 (total&#xa0;: %2)</translation>
+        <translation>Espace libre : %1 (total : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="502"/>
@@ -1810,17 +1810,17 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../preferences.ui" line="291"/>
         <source>Size of big icons:</source>
-        <translation>Taille des grandes icônes&#xa0;:</translation>
+        <translation>Taille des grandes icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Size of small icons:</source>
-        <translation>Taille des petites icônes&#xa0;:</translation>
+        <translation>Taille des petites icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
         <source>Size of thumbnails:</source>
-        <translation>Taille des vignettes&#xa0;:</translation>
+        <translation>Taille des vignettes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="339"/>
@@ -1840,12 +1840,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../preferences.ui" line="543"/>
         <source>Default width of new windows:</source>
-        <translation>Largeur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Largeur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="557"/>
         <source>Default height of new windows:</source>
-        <translation>Hauteur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Hauteur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="515"/>
@@ -1875,7 +1875,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../preferences.ui" line="113"/>
         <source>Default view mode:</source>
-        <translation>Mode d&apos;affichage par défaut&#xa0;:</translation>
+        <translation>Mode d&apos;affichage par défaut :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="126"/>
@@ -1921,12 +1921,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="132"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Réglez à zéro pour désactiver la sélection automatique.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Délai de sélection automatique avec un simple clic :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1973,7 +1973,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Les fichiers renommés seront aussi sélectionnés</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2061,12 +2061,12 @@ seulement s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="529"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Passer à l&apos;onglet nouvellement ouvert</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Rouvrir les derniers onglets de la fenêtre dans une nouvelle fenêtre</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="757"/>
@@ -2086,7 +2086,7 @@ seulement s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Menu des marques pages :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="375"/>
@@ -2181,7 +2181,7 @@ seulement s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="737"/>
         <source>Terminal emulator:</source>
-        <translation>Émulateur de terminal&#xa0;:</translation>
+        <translation>Émulateur de terminal :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="358"/>

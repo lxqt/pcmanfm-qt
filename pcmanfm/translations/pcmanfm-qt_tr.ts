@@ -1917,12 +1917,12 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="132"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Devre dışı otomatik seçimi için sıfıra ayarlayın.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tek tıklama modunda otomatik seçimin gecikmesi:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
