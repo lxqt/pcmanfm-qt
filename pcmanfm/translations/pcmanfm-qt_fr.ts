@@ -1020,12 +1020,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="772"/>
         <source>Close &amp;previous tabs</source>
-        <translation>Fermer l&apos;onglet &amp;précédent</translation>
+        <translation>Fermer les onglets &amp;précédents</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
         <source>Close &amp;next tabs</source>
-        <translation>Fermer l&apos;onglet &amp;suivant</translation>
+        <translation>Fermer les onglets &amp;suivants</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="794"/>
