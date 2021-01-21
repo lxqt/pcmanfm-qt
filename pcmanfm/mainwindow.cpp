@@ -667,11 +667,14 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
     if(settings.switchToNewTab()) {
-        viewFrame->getTabBar()->setCurrentIndex(index);
+        viewFrame->getTabBar()->setCurrentIndex(index); // also focuses the view
         if (isMinimized()) {
             setWindowState((windowState() & ~Qt::WindowMinimized) | Qt::WindowActive);
             show();
         }
+    }
+    else if(TabPage* tabPage = currentPage()) {
+        tabPage->folderView()->childView()->setFocus();
     }
     if(!settings.alwaysShowTabs()) {
         viewFrame->getTabBar()->setVisible(viewFrame->getTabBar()->count() > 1);
