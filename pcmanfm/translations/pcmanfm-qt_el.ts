@@ -691,7 +691,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="210"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>Ερ&amp;γαλεία</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="268"/>
@@ -701,7 +701,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="271"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="274"/>
@@ -926,7 +926,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="673"/>
@@ -951,7 +951,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Άνοιγμα καρτέλας σε εκτέλεση &amp;διαχειριστή</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="721"/>
@@ -1031,7 +1031,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Άνοιγμα της καρτέλας σε λειτουργία &amp;διαχειριστή</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
@@ -1922,12 +1922,12 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="132"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ορίστε το σε μηδέν για απενεργοποίηση της αυτόματης επιλογής.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Καθυστέρηση αυτόματης επιλογής σε λειτουργία μονού κλικ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1969,7 +1969,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα μετονομασμένα αρχεία θα επιλεγούν επίσης</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="288"/>
@@ -2072,7 +2072,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Μενού σελιδοδεικτών:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
