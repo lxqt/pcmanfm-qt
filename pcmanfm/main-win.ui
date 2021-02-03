@@ -104,6 +104,7 @@
      </property>
      <addaction name="actionByFileName"/>
      <addaction name="actionByMTime"/>
+     <addaction name="actionByCrTime"/>
      <addaction name="actionByDTime"/>
      <addaction name="actionByFileSize"/>
      <addaction name="actionByFileType"/>
@@ -513,6 +514,14 @@
    </property>
    <property name="text">
     <string>By &amp;Modification Time</string>
+   </property>
+  </action>
+  <action name="actionByCrTime">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>By C&amp;reation Time</string>
    </property>
   </action>
   <action name="actionByDTime">

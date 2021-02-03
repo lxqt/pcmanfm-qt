@@ -605,6 +605,9 @@ static const char* sortColumnToString(Fm::FolderModel::ColumnId value) {
     case Fm::FolderModel::ColumnFileMTime:
         ret = "mtime";
         break;
+    case Fm::FolderModel::ColumnFileCrTime:
+        ret = "crtime";
+        break;
     case Fm::FolderModel::ColumnFileDTime:
         ret = "dtime";
         break;
@@ -631,6 +634,9 @@ static Fm::FolderModel::ColumnId sortColumnFromString(const QString str) {
     }
     else if(str == QLatin1String("mtime")) {
         ret = Fm::FolderModel::ColumnFileMTime;
+    }
+    else if(str == QLatin1String("crtime")) {
+        ret = Fm::FolderModel::ColumnFileCrTime;
     }
     else if(str == QLatin1String("dtime")) {
         ret = Fm::FolderModel::ColumnFileDTime;

@@ -223,6 +223,7 @@ MainWindow::MainWindow(Fm::FilePath path):
     group->setExclusive(true);
     group->addAction(ui.actionByFileName);
     group->addAction(ui.actionByMTime);
+    group->addAction(ui.actionByCrTime);
     group->addAction(ui.actionByDTime);
     group->addAction(ui.actionByFileSize);
     group->addAction(ui.actionByFileType);
@@ -880,6 +881,10 @@ void MainWindow::on_actionByMTime_triggered(bool /*checked*/) {
     currentPage()->sort(Fm::FolderModel::ColumnFileMTime, currentPage()->sortOrder());
 }
 
+void MainWindow::on_actionByCrTime_triggered(bool /*checked*/) {
+    currentPage()->sort(Fm::FolderModel::ColumnFileCrTime, currentPage()->sortOrder());
+}
+
 void MainWindow::on_actionByDTime_triggered(bool /*checked*/) {
     currentPage()->sort(Fm::FolderModel::ColumnFileDTime, currentPage()->sortOrder());
 }
@@ -1296,6 +1301,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
         }
         sortActions[Fm::FolderModel::ColumnFileName] = ui.actionByFileName;
         sortActions[Fm::FolderModel::ColumnFileMTime] = ui.actionByMTime;
+        sortActions[Fm::FolderModel::ColumnFileCrTime] = ui.actionByCrTime;
         sortActions[Fm::FolderModel::ColumnFileDTime] = ui.actionByDTime;
         sortActions[Fm::FolderModel::ColumnFileSize] = ui.actionByFileSize;
         sortActions[Fm::FolderModel::ColumnFileType] = ui.actionByFileType;
