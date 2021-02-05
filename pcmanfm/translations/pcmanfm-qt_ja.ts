@@ -518,7 +518,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>非表示のショートカット</translation>
+        <translation>隠しショートカット</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
@@ -995,7 +995,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="915"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>非表示のショートカット(&amp;S)</translation>
+        <translation>隠しショートカット(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="920"/>
@@ -1725,7 +1725,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../tabpage.cpp" line="725"/>
         <source>%n item(s) selected</source>
         <translation>
-            <numerusform>%n 個のアイテムが選択されています</numerusform>
+            <numerusform>%n 個のアイテムを選択しています</numerusform>
         </translation>
     </message>
 </context>
