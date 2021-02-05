@@ -725,7 +725,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="210"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>%Ferramentas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="283"/>
@@ -901,7 +901,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -931,7 +931,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir guia na instância &amp;Root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="752"/>
@@ -1006,7 +1006,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir guia no modo &amp;Admin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
@@ -1807,12 +1807,12 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="132"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Defina como zero para desativar a seleção automática.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Atraso da seleção automática no modo de clique único:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1954,7 +1954,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu de favoritos:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="175"/>
@@ -1974,7 +1974,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivos renomeados também serão selecionados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
