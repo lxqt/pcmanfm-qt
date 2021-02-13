@@ -109,7 +109,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="76"/>
         <source>Desktop</source>
-        <translation type="unfinished">Schreibtisch</translation>
+        <translation>Schreibtisch</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="77"/>
@@ -119,12 +119,12 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="79"/>
         <source>Image file</source>
-        <translation type="unfinished">Bilddatei</translation>
+        <translation>Bild-Datei</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="84"/>
         <source>Folder path</source>
-        <translation type="unfinished">Pfad des Ordners</translation>
+        <translation>Pfad des Ordners</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="85"/>
@@ -488,12 +488,12 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="597"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>Aufsteigend</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="598"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>Absteigend</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="599"/>
