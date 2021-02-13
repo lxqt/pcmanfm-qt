@@ -304,6 +304,8 @@ private:
     void onFolderUnmount();
     void onFolderContentChanged();
 
+    bool canOpenAdmin();
+
 private:
     View* folderView_;
     Fm::CachedFolderModel* folderModel_;
