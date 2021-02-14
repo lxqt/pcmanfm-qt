@@ -6,17 +6,17 @@
     <message>
         <location filename="../../build/filer/ui_about.h" line="134"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="135"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="137"/>
         <source>Lightweight file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Lett filbehandler</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="138"/>
