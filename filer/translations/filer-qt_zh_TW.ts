@@ -46,13 +46,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
  ( GNU General Public License ) 第二版來修改和重新發佈
 這一個程式，或者自由選擇使用任何更新的版本。
 
-發佈這一個程式的目的是希望它能有用。
+發佈這一個程式的目的是希望它有用。
 但沒有任何擔保，甚至沒有適合特定目的而隱含的擔保。
 更詳細的情況請參閱 GNU 通用公共許可證。
 
 
 您應該已經和程式一起收到一份 GNU 通用公共許可證的副本。
-如果還沒有，請寫信致函給:
+如果還沒有收到，請寫信致函給:
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
@@ -100,7 +100,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="114"/>
         <source>Detecting...</source>
-        <translation>正在偵測...</translation>
+        <translation>偵測中...</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="115"/>
@@ -113,7 +113,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>格式</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="76"/>
@@ -268,17 +268,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="563"/>
         <source>&amp;Home</source>
-        <translation></translation>
+        <translation>家目錄(&amp;H)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="565"/>
         <source>&amp;Reload</source>
-        <translation>重新讀取(&amp;)</translation>
+        <translation>重新讀取(&amp;R)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="567"/>
         <source>Go</source>
-        <translation>到</translation>
+        <translation>執行</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="568"/>
@@ -383,27 +383,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="599"/>
         <source>&amp;By File Name</source>
-        <translation>按檔案名稱 (&amp;B)</translation>
+        <translation>按檔案名稱(&amp;B)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="600"/>
         <source>By &amp;Modification Time</source>
-        <translation>按修改時間 (&amp;M)</translation>
+        <translation>按修改時間(&amp;M)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="601"/>
         <source>By File &amp;Type</source>
-        <translation>按檔案類型 (&amp;T)</translation>
+        <translation>按檔案類型(&amp;T)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="602"/>
         <source>By &amp;Owner</source>
-        <translation>按擁有者 (&amp;O)</translation>
+        <translation>按擁有者(&amp;O)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="603"/>
         <source>&amp;Folder First</source>
-        <translation>檔案夾優先 (&amp;F)</translation>
+        <translation>檔案夾優先(&amp;F)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="624"/>
@@ -413,37 +413,37 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="626"/>
         <source>File &amp;Properties</source>
-        <translation>檔案屬性 (&amp;P)</translation>
+        <translation>檔案屬性(&amp;P)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="628"/>
         <source>&amp;Folder Properties</source>
-        <translation>資料夾屬性 (&amp;F)</translation>
+        <translation>資料夾屬性(&amp;F)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="629"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>區分大小寫(&amp;C)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="630"/>
         <source>By File &amp;Size</source>
-        <translation>按檔案大小 (&amp;S)</translation>
+        <translation>按檔案大小(&amp;S)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="631"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>關閉視窗(&amp;C)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="638"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="640"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="643"/>
@@ -453,7 +453,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="646"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>建立新的(&amp;L)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="649"/>
@@ -463,7 +463,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="654"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>工具列</translation>
     </message>
     <message>
         <source>Icon View</source>
@@ -488,7 +488,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="589"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="590"/>
@@ -498,7 +498,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="591"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="592"/>
@@ -508,7 +508,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="593"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="594"/>
@@ -589,7 +589,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="608"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="609"/>
@@ -604,7 +604,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="613"/>
         <source>Alt+Left</source>
-        <translation></translation>
+        <translation>Alt+左鍵</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="614"/>
@@ -619,7 +619,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="618"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+右鍵</translation>
     </message>
     <message>
         <source>Invert Selection</source>
@@ -632,7 +632,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="621"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation>Del</translation>
     </message>
     <message>
         <source>Rename</source>
@@ -641,7 +641,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="623"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation>F2</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -650,7 +650,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="625"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <source>File Properties</source>
@@ -659,7 +659,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="627"/>
         <source>Alt+Return</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Return\Enter</translation>
     </message>
     <message>
         <source>Folder Properties</source>
@@ -690,7 +690,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="634"/>
         <source>F4</source>
-        <translation type="unfinished"></translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="635"/>
@@ -710,27 +710,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="639"/>
         <source>&amp;Blank File</source>
-        <translation>空白檔案 (&amp;B)</translation>
+        <translation>空白檔案(&amp;B)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="641"/>
         <source>&amp;Find Files</source>
-        <translation>搜尋檔案 (&amp;F)</translation>
+        <translation>搜尋檔案(&amp;F)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="642"/>
         <source>F3</source>
-        <translation type="unfinished"></translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="644"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>按字串過濾...</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="645"/>
         <source>&amp;File</source>
-        <translation>檔案 (&amp;F)</translation>
+        <translation>檔案(&amp;F)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="647"/>
@@ -777,7 +777,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="162"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>設定檔</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="165"/>
@@ -802,7 +802,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>在具有指定名稱的頁面上打開桌面偏好的對話框</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -823,27 +823,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>從圖片檔案夾設置為桌面背景</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>FILE</source>
-        <translation>檔案</translation>
+        <translation>檔案夾</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation type="unfinished"></translation>
+        <translation>桌面牆紙的設置模式。 類別 =（顏色|延展|縮放|置中|並排）</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>MODE</source>
-        <translation>模式</translation>
+        <translation>類別</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>使用指定名稱在頁面上打開偏好的對話框</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="196"/>
@@ -853,7 +853,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[新增檔案夾1, 新增檔案夾2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="500"/>
@@ -890,12 +890,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>延展以填滿整個螢幕</translation>
+        <translation>延展到整個螢幕</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Stretch to fit the screen</source>
-        <translation>延展到適合螢幕大小</translation>
+        <translation>縮放到適合螢幕大小</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
@@ -905,7 +905,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>連續拼貼鋪滿整個螢幕</translation>
+        <translation>並排排滿整個螢幕</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="157"/>
@@ -918,7 +918,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopwindow.cpp" line="366"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>維持目前的位置 (&amp;K)</translation>
+        <translation>維持目前的位置(&amp;K)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="388"/>
@@ -941,12 +941,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="907"/>
         <source>&amp;Move to Trash</source>
-        <translation>移至垃圾桶 (&amp;M)</translation>
+        <translation>移至垃圾桶(&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="907"/>
         <source>&amp;Delete</source>
-        <translation>刪除 (&amp;D)</translation>
+        <translation>刪除(&amp;D)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="969"/>
@@ -1024,17 +1024,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../view.cpp" line="103"/>
         <source>Open in New T&amp;ab</source>
-        <translation>在新分頁開啟 (&amp;A)</translation>
+        <translation>在新分頁開啟(&amp;A)</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="107"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>在新視窗開啟 (&amp;D)</translation>
+        <translation>在新視窗開啟(&amp;D)</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="114"/>
         <source>Open in Termina&amp;l</source>
-        <translation>在終端機內開啟 (&amp;L)</translation>
+        <translation>在終端機內開啟(&amp;L)</translation>
     </message>
 </context>
 <context>
@@ -1148,12 +1148,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="757"/>
         <source>Default width of new windows:</source>
-        <translation>新視窗的預設寬度</translation>
+        <translation>新視窗的預設寬度:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="758"/>
         <source>Default height of new windows:</source>
-        <translation>新視窗的預設高度</translation>
+        <translation>新視窗的預設高度:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="754"/>
@@ -1178,12 +1178,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="725"/>
         <source>Open files with single click</source>
-        <translation>點擊開啟檔案</translation>
+        <translation>單擊開啟檔案</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="726"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation type="unfinished"></translation>
+        <translation>單擊模式下自動選擇延遲(0為禁用)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="727"/>
@@ -1233,7 +1233,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="759"/>
         <source>Show in places</source>
-        <translation type="unfinished"></translation>
+        <translation>在地方上顯示</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="764"/>
@@ -1283,17 +1283,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="798"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>在功能表中只顯示使用者定義的模板</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="799"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>每個 MIME 類型僅顯示一個模板</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="800"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>從模板建立後執行預設應用程序</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="782"/>
@@ -1318,12 +1318,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="793"/>
         <source>Switch &amp;user command:</source>
-        <translation>切換使用者的指令 (&amp;U):</translation>
+        <translation>切換使用者的指令(&amp;U):</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="796"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>壓縮程式整合 (&amp;T):</translation>
+        <translation>壓縮程式整合(&amp;T):</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="792"/>
@@ -1357,12 +1357,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="789"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>關閉包含外接儲存裝置中的標籤</translation>
+        <translation>關閉包含外接儲存裝置中的標籤(&amp;T)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="790"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>將選項卡中的檔案夾更改為家目錄檔案夾(&amp;G)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="791"/>
@@ -1395,7 +1395,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="749"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation></translation>
+        <translation>使用SI十進位制而不是IEC二進位制</translation>
     </message>
 </context>
 </TS>
