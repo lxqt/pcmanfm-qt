@@ -493,7 +493,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="539"/>
         <source>Trash</source>
-        <translation>Søppeldunk</translation>
+        <translation>Papirkurv</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="550"/>
@@ -783,7 +783,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="369"/>
         <source>&amp;Trash</source>
-        <translation>&amp;Søppeldunk</translation>
+        <translation>&amp;Papirkurv</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="374"/>
@@ -1545,20 +1545,20 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (One item)</source>
-        <translation>Søppeldunk (et objekt)</translation>
+        <translation>Papirkurv (ett objekt)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
         <translation>
-            <numerusform>Søppeldunk (&amp;Ln objekt)</numerusform>
-            <numerusform>Søppeldunk (&amp;Ln objekter)</numerusform>
+            <numerusform>Papirkurv (%Ln objekt)</numerusform>
+            <numerusform>Papirkurv (%Ln objekter)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="304"/>
         <source>Trash (Empty)</source>
-        <translation>Søppeldunk (tom)</translation>
+        <translation>Papirkurv (tom)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="339"/>
@@ -1584,7 +1584,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="958"/>
         <source>Empty Trash</source>
-        <translation>Tøm søppeldunk</translation>
+        <translation>Tøm papirkurv</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1014"/>
@@ -1644,7 +1644,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="172"/>
         <location filename="../mainwindow.cpp" line="1935"/>
         <source>&amp;Move to Trash</source>
-        <translation>Flytt til &amp;søppeldunken</translation>
+        <translation>Flytt til &amp;papirkurven</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
@@ -1893,7 +1893,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Flytt slettede filer til søppeldunken i stedet for å slette dem fra disken.</translation>
+        <translation>Flytt slettede filer til papirkurven i stedet for å for å slette dem fra disken.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="631"/>
@@ -1944,12 +1944,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Slett filer på uttagbare medier i stedet for å legge dem i søppeldunken</translation>
+        <translation>Slett filer på flyttbare medier i stedet for å legge dem i papirkurven</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>Bekreft før filer flyttes til søppeldunken</translation>
+        <translation>Bekreft flytting av filer til papirkurven</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>

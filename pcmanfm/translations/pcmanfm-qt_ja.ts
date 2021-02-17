@@ -485,7 +485,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="522"/>
         <source>Visible Shortcuts</source>
-        <translation>ショートカットの表示</translation>
+        <translation>表示するショートカット</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="528"/>
@@ -1795,7 +1795,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation>高度</translation>
+        <translation>詳細</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
