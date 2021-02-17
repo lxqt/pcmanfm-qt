@@ -374,7 +374,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="149"/>
         <source>3 px by default.</source>
-        <translation>3 пт типово.</translation>
+        <translation>Типово 3 пікселі.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
@@ -2119,7 +2119,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="664"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>Монтувати розділи автоматично при старті програми</translation>
+        <translation>Монтувати розділи автоматично коли програма запускається</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
