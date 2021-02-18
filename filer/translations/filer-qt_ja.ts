@@ -168,22 +168,22 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="76"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>デスクトップ</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="77"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>デスクトップ フォルダ:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="79"/>
         <source>Image file</source>
-        <translation type="unfinished">画像ファイル</translation>
+        <translation>画像ファイル</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="84"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">フォルダパス</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="85"/>
@@ -261,7 +261,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="276"/>
         <source>Window Manager</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ウィンドウマネージャ</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="277"/>
