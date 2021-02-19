@@ -51,15 +51,22 @@ bool Launcher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** 
         mainWindow->setWindowState(mainWindow->windowState() | Qt::WindowMaximized);
     }
   }
-  else
-    mainWindow->chdir(fm_file_info_get_path(fi));
+  else {
+    if (app->settings().spatialMode())
+        mainWindow->addWindow(fm_file_info_get_path(fi));
+    else
+        mainWindow->chdir(fm_file_info_get_path(fi));
+  }
   l = l->next;
   for(; l; l = l->next) {
     fi = FM_FILE_INFO(l->data);
     mainWindow->addTab(fm_file_info_get_path(fi));
   }
   mainWindow->show();
-  mainWindow->raise();
+
+  // otherwise the 'parent' window gets raised again on opening a child
+  if (! app->settings().spatialMode())
+    mainWindow->raise();
   return true;
 }
 
