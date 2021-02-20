@@ -354,6 +354,14 @@ public:
     showFilter_ = value;
   }
 
+  bool spatialMode() const {
+    return spatialMode_;
+  }
+
+  void setSpatialMode(bool value) {
+    spatialMode_ = value;
+  }
+
   // settings for use with libfm
   bool singleClick() const {
     return singleClick_;
@@ -581,6 +589,7 @@ private:
   Fm::FolderModel::ColumnId sortColumn_;
   bool sortFolderFirst_;
   bool showFilter_;
+  bool spatialMode_;
 
   // settings for use with libfm
   bool singleClick_;

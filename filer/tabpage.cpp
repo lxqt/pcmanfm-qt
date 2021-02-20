@@ -22,6 +22,7 @@
 #include "filelauncher.h"
 #include "filemenu.h"
 #include "mountoperation.h"
+#include "windowregistry.h"
 #include <QApplication>
 #include <QCursor>
 #include <QMessageBox>
@@ -328,6 +329,10 @@ void TabPage::chdir(FmPath* newPath, bool addHistory) {
     // we're already in the specified dir
     if(fm_path_equal(newPath, fm_folder_get_path(folder_)))
       return;
+
+    // update registry
+    QString oldPath = fm_path_to_str(fm_folder_get_path(folder_));
+    WindowRegistry::instance().updatePath(oldPath, fm_path_to_str(newPath));
 
     if(addHistory) {
       // store current scroll pos in the browse history

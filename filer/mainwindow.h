@@ -46,6 +46,7 @@ public:
 
   void chdir(FmPath* path);
   void addTab(FmPath* path);
+  void addWindow(FmPath* path);
 
   TabPage* currentPage() {
     return reinterpret_cast<TabPage*>(ui.stackedWidget->currentWidget());
@@ -143,10 +144,13 @@ protected Q_SLOTS:
 
   void onBackForwardContextMenu(QPoint pos);
 
+  void onRaiseWindow(const QString& path);
+
 protected:
   // void changeEvent( QEvent * event);
   void closeTab(int index);
   virtual void resizeEvent(QResizeEvent *event);
+  virtual void moveEvent(QMoveEvent* event);
   virtual void closeEvent(QCloseEvent *event);
 
 private:

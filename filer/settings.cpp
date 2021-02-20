@@ -85,6 +85,7 @@ Settings::Settings():
   sortColumn_(Fm::FolderModel::ColumnFileName),
   sortFolderFirst_(true),
   showFilter_(false),
+  spatialMode_(false),
   // settings for use with libfm
   singleClick_(false),
   autoSelectionDelay_(600),
@@ -163,6 +164,7 @@ bool Settings::loadFile(QString filePath) {
 
   settings.beginGroup("Behavior");
   bookmarkOpenMethod_ = bookmarkOpenMethodFromString(settings.value("BookmarkOpenMethod").toString());
+  spatialMode_ = settings.value("SpatialMode", false).toBool();
   // settings for use with libfm
   useTrash_ = settings.value("UseTrash", true).toBool();
   singleClick_ = settings.value("SingleClick", false).toBool();
@@ -261,6 +263,7 @@ bool Settings::saveFile(QString filePath) {
   // settings for use with libfm
   settings.setValue("UseTrash", useTrash_);
   settings.setValue("SingleClick", singleClick_);
+  settings.setValue("SpatialMode", spatialMode_);
   settings.setValue("AutoSelectionDelay", autoSelectionDelay_);
   settings.setValue("ConfirmDelete", confirmDelete_);
   settings.setValue("NoUsbTrash", noUsbTrash_);

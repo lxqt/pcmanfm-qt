@@ -42,6 +42,8 @@
 #include "ui_about.h"
 #include "application.h"
 #include "../libfm-qt/path.h"
+#include "metadata.h"
+#include "windowregistry.h"
 
 // #include "qmodeltest/modeltest.h"
 
@@ -195,15 +197,44 @@ MainWindow::MainWindow(FmPath* path):
   if(path)
     addTab(path);
 
-  // size from settings
-  if(settings.rememberWindowSize()) {
+  // size from spatial mode or from settings
+  if (settings.spatialMode()) {
+    // hide the things we don't want in spatial mode
+    ui.tabBar->hide();
+    ui.sidePane->hide();
+    ui.toolBar->hide();
+    MetaData metaData(fm_path_to_str(path));
+    int x, y, width, height;
+    bool ok;
+    x = metaData.getWindowOriginX(ok);
+    if (ok)
+      y = metaData.getWindowOriginY(ok);
+    if (ok)
+      width = metaData.getWindowWidth(ok);
+    if (ok)
+      height = metaData.getWindowHeight(ok);
+    if (ok)
+      setGeometry(x, y, width, height);
+  }
+  else if(settings.rememberWindowSize()) {
     resize(settings.windowWidth(), settings.windowHeight());
     if(settings.windowMaximized())
       setWindowState(windowState() | Qt::WindowMaximized);
   }
+
+  // register current path with the window registry
+  WindowRegistry::instance().registerPath(fm_path_to_str(path));
+  connect(&WindowRegistry::instance(), &WindowRegistry::raiseWindow,
+          this, &MainWindow::onRaiseWindow);
 }
 
 MainWindow::~MainWindow() {
+  // update registry
+  TabPage* page = currentPage();
+  if(page) {
+    QString path = page->pathName();
+    WindowRegistry::instance().deregisterPath(path);
+  }
   if(bookmarks)
     g_object_unref(bookmarks);
 }
@@ -237,6 +268,14 @@ void MainWindow::addTab(FmPath* path) {
   if(!settings.alwaysShowTabs()) {
     ui.tabBar->setVisible(ui.tabBar->count() > 1);
   }
+
+  // update registry
+  WindowRegistry::instance().registerPath(fm_path_to_str(path));
+}
+
+void MainWindow::addWindow(FmPath *path)
+{
+  (new MainWindow(path))->show();
 }
 
 void MainWindow::onPathEntryReturnPressed() {
@@ -508,6 +547,11 @@ void MainWindow::onFilterStringChanged(QString str) {
 }
 
 void MainWindow::closeTab(int index) {
+  // update registry
+  if (TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(index))) {
+    WindowRegistry::instance().deregisterPath(page->pathName());
+  }
+
   QWidget* page = ui.stackedWidget->widget(index);
   if(page) {
     ui.stackedWidget->removeWidget(page); // this does not delete the page widget
@@ -520,12 +564,36 @@ void MainWindow::closeTab(int index) {
 void MainWindow::resizeEvent(QResizeEvent *event) {
   QMainWindow::resizeEvent(event);
   Settings& settings = static_cast<Application*>(qApp)->settings();
-  if(settings.rememberWindowSize()) {
+  if (settings.spatialMode()) {
+    TabPage* page = currentPage();
+    if(page) {
+      QString path = page->pathName();
+      MetaData metaData(path);
+      metaData.setWindowHeight(height());
+      metaData.setWindowWidth(width());
+    }
+  }
+  else if(settings.rememberWindowSize()) {
     settings.setLastWindowMaximized(isMaximized());
 
     if(!isMaximized()) {
         settings.setLastWindowWidth(width());
         settings.setLastWindowHeight(height());
+    }
+  }
+}
+
+void MainWindow::moveEvent(QMoveEvent *event)
+{
+  QMainWindow::moveEvent(event);
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  if (settings.spatialMode()) {
+    TabPage* page = currentPage();
+    if(page) {
+      QString path = page->pathName();
+      MetaData metaData(path);
+      metaData.setWindowOriginX(geometry().x());
+      metaData.setWindowOriginY(geometry().y());
     }
   }
 }
@@ -890,6 +958,23 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
   }
 }
 
+void MainWindow::onRaiseWindow(const QString& path)
+{
+  // all tab pages
+  int n = ui.stackedWidget->count();
+  for(int i = 0; i < n; ++i) {
+    TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
+    if (page) {
+      QString ourPath = page->pathName();
+      if (path == ourPath) {
+        raise();
+        activateWindow();
+        break;
+      }
+    }
+  }
+}
+
 void MainWindow::updateFromSettings(Settings& settings) {
   // apply settings
 
@@ -914,6 +999,11 @@ void MainWindow::updateFromSettings(Settings& settings) {
     TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
     page->updateFromSettings(settings);
   }
+
+  // spatial mode
+  ui.tabBar->setVisible( ! settings.spatialMode() );
+  ui.sidePane->setVisible( ! settings.spatialMode() );
+  ui.toolBar->setVisible( ! settings.spatialMode() );
 }
 
 static const char* su_cmd_subst(char opt, gpointer user_data) {

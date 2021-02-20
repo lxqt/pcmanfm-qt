@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>685</width>
+    <width>701</width>
     <height>440</height>
    </rect>
   </property>
@@ -81,13 +81,24 @@
             <string>Browsing</string>
            </property>
            <layout class="QFormLayout" name="formLayout_5">
-            <property name="fieldGrowthPolicy">
-             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-            </property>
-            <item row="0" column="0" colspan="2">
+            <item row="0" column="0">
              <widget class="QCheckBox" name="singleClick">
               <property name="text">
                <string>Open files with single click</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>Default view mode:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QCheckBox" name="spatialMode">
+              <property name="text">
+               <string>Spatial browsing mode (folders open in a new window)</string>
               </property>
              </widget>
             </item>
@@ -100,16 +111,6 @@
                <string>Delay of auto-selection in single click mode (0 to disable)</string>
               </property>
              </widget>
-            </item>
-            <item row="3" column="0">
-             <widget class="QLabel" name="label_11">
-              <property name="text">
-               <string>Default view mode:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="QComboBox" name="viewMode"/>
             </item>
             <item row="1" column="1">
              <widget class="QDoubleSpinBox" name="autoSelectionDelay">
@@ -124,14 +125,14 @@
               </property>
              </widget>
             </item>
-            <item row="2" column="0">
+            <item row="4" column="0">
              <widget class="QLabel" name="label_2">
               <property name="text">
                <string>Bookmarks:</string>
               </property>
              </widget>
             </item>
-            <item row="2" column="1">
+            <item row="4" column="1">
              <widget class="QComboBox" name="bookmarkOpenMethod">
               <item>
                <property name="text">
@@ -149,6 +150,9 @@
                </property>
               </item>
              </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QComboBox" name="viewMode"/>
             </item>
            </layout>
           </widget>
@@ -424,8 +428,7 @@
                </property>
                <property name="icon">
                 <iconset theme="user-home">
-                 <normaloff/>
-                </iconset>
+                 <normaloff>.</normaloff>.</iconset>
                </property>
               </item>
               <item>
@@ -437,8 +440,7 @@
                </property>
                <property name="icon">
                 <iconset theme="user-desktop">
-                 <normaloff/>
-                </iconset>
+                 <normaloff>.</normaloff>.</iconset>
                </property>
               </item>
               <item>
@@ -450,8 +452,7 @@
                </property>
                <property name="icon">
                 <iconset theme="user-trash">
-                 <normaloff/>
-                </iconset>
+                 <normaloff>.</normaloff>.</iconset>
                </property>
               </item>
               <item>
@@ -463,8 +464,7 @@
                </property>
                <property name="icon">
                 <iconset theme="computer">
-                 <normaloff/>
-                </iconset>
+                 <normaloff>.</normaloff>.</iconset>
                </property>
               </item>
               <item>
@@ -492,8 +492,7 @@
                </property>
                <property name="icon">
                 <iconset theme="folder-network">
-                 <normaloff/>
-                </iconset>
+                 <normaloff>.</normaloff>.</iconset>
                </property>
               </item>
              </widget>
@@ -777,8 +776,6 @@
   <tabstop>fixedWindowWidth</tabstop>
   <tabstop>fixedWindowHeight</tabstop>
   <tabstop>singleClick</tabstop>
-  <tabstop>autoSelectionDelay</tabstop>
-  <tabstop>viewMode</tabstop>
   <tabstop>configmDelete</tabstop>
   <tabstop>useTrash</tabstop>
   <tabstop>mountOnStartup</tabstop>
