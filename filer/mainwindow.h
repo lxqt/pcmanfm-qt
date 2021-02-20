@@ -144,6 +144,8 @@ protected Q_SLOTS:
 
   void onBackForwardContextMenu(QPoint pos);
 
+  void onRaiseWindow(const QString& path);
+
 protected:
   // void changeEvent( QEvent * event);
   void closeTab(int index);

@@ -33,6 +33,7 @@ set(filer_SRCS
     autorundialog.cpp
     settings.cpp
     metadata.cpp
+    windowregistry.cpp
 )
 
 qt5_add_dbus_adaptor(filer_SRCS

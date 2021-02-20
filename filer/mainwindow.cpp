@@ -43,6 +43,7 @@
 #include "application.h"
 #include "../libfm-qt/path.h"
 #include "metadata.h"
+#include "windowregistry.h"
 
 // #include "qmodeltest/modeltest.h"
 
@@ -220,9 +221,20 @@ MainWindow::MainWindow(FmPath* path):
     if(settings.windowMaximized())
       setWindowState(windowState() | Qt::WindowMaximized);
   }
+
+  // register current path with the window registry
+  WindowRegistry::instance().registerPath(fm_path_to_str(path));
+  connect(&WindowRegistry::instance(), &WindowRegistry::raiseWindow,
+          this, &MainWindow::onRaiseWindow);
 }
 
 MainWindow::~MainWindow() {
+  // update registry
+  TabPage* page = currentPage();
+  if(page) {
+    QString path = page->pathName();
+    WindowRegistry::instance().deregisterPath(path);
+  }
   if(bookmarks)
     g_object_unref(bookmarks);
 }
@@ -256,6 +268,9 @@ void MainWindow::addTab(FmPath* path) {
   if(!settings.alwaysShowTabs()) {
     ui.tabBar->setVisible(ui.tabBar->count() > 1);
   }
+
+  // update registry
+  WindowRegistry::instance().registerPath(fm_path_to_str(path));
 }
 
 void MainWindow::addWindow(FmPath *path)
@@ -532,6 +547,11 @@ void MainWindow::onFilterStringChanged(QString str) {
 }
 
 void MainWindow::closeTab(int index) {
+  // update registry
+  if (TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(index))) {
+    WindowRegistry::instance().deregisterPath(page->pathName());
+  }
+
   QWidget* page = ui.stackedWidget->widget(index);
   if(page) {
     ui.stackedWidget->removeWidget(page); // this does not delete the page widget
@@ -935,6 +955,23 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
     ui.filterBar->clear();
     page->jumpToHistory(index);
     updateUIForCurrentPage();
+  }
+}
+
+void MainWindow::onRaiseWindow(const QString& path)
+{
+  // all tab pages
+  int n = ui.stackedWidget->count();
+  for(int i = 0; i < n; ++i) {
+    TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
+    if (page) {
+      QString ourPath = page->pathName();
+      if (path == ourPath) {
+        raise();
+        activateWindow();
+        break;
+      }
+    }
   }
 }
 

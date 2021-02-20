@@ -21,6 +21,7 @@
 #include "launcher.h"
 #include "mainwindow.h"
 #include "application.h"
+#include "windowregistry.h"
 
 namespace Filer {
 
@@ -39,8 +40,15 @@ Launcher::~Launcher() {
 bool Launcher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err) {
   qDebug("probono: Launcher::openFolder called");
   qDebug("probono: ffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+
   GList* l = folder_infos;
   FmFileInfo* fi = FM_FILE_INFO(l->data);
+
+  // just raise the window if it's already open
+  if (WindowRegistry::instance().checkPathAndRaise(fm_path_to_str(fm_file_info_get_path(fi)))) {
+    return true;
+  }
+
   Application* app = static_cast<Application*>(qApp);
   MainWindow* mainWindow = mainWindow_;
   if(!mainWindow) {
