@@ -17,7 +17,13 @@
  */
 
 #include "metadata.h"
+#include <sys/param.h> // for checking BSD definition
+#if defined(BSD)
 #include <sys/extattr.h>
+#else
+#include <sys/types.h>
+#include <sys/xattr.h>
+#endif
 #include <QDebug>
 
 namespace {
@@ -27,6 +33,7 @@ static const QString WINDOW_ORIGIN_X  = "window.originx";
 static const QString WINDOW_ORIGIN_Y  = "window.originy";
 static const QString WINDOW_HEIGHT    = "window.height";
 static const QString WINDOW_WIDTH     = "window.width";
+static const QString XATTR_NAMESPACE  = "user";
 
 /*
  * get the attibute value from the extended attribute for the path as int
@@ -36,8 +43,15 @@ int getAttributeValueInt(const QString& path, const QString& attribute, bool& ok
 
   // get the value from the extended attribute for the path
   char data[ATTR_VAL_SIZE];
+#if defined(BSD)
   ssize_t bytesRetrieved = extattr_get_file(path.toLatin1().data(), EXTATTR_NAMESPACE_USER,
-                                            attribute.toLatin1().data(), data, ATTR_VAL_SIZE);
+                                                    attribute.toLatin1().data(), data, ATTR_VAL_SIZE);
+#else
+  QString namespacedAttr;
+  namespacedAttr.append(XATTR_NAMESPACE).append(".").append(attribute);
+  ssize_t bytesRetrieved = getxattr(path.toLatin1().data(), 
+                                            namespacedAttr.toLatin1().data(), data, ATTR_VAL_SIZE);
+#endif
   // check if we got the attribute value
   if (bytesRetrieved <= 0)
     ok = false;
@@ -60,11 +74,21 @@ int getAttributeValueInt(const QString& path, const QString& attribute, bool& ok
 bool setAttributeValueInt(const QString& path, const QString& attribute, int value) {
   // set the value from the extended attribute for the path
   QString data = QString::number(value);
+#if defined(BSD)
   ssize_t bytesSet = extattr_set_file(path.toLatin1().data(), EXTATTR_NAMESPACE_USER,
                                       attribute.toLatin1().data(), data.toLatin1().data(),
                                       data.length() + 1); // include \0 termination char
   // check if we set the attribute value
   return (bytesSet > 0);
+#else
+  QString namespacedAttr;
+  namespacedAttr.append(XATTR_NAMESPACE).append(".").append(attribute);
+  int success = setxattr(path.toLatin1().data(), 
+                                      namespacedAttr.toLatin1().data(), data.toLatin1().data(),
+                                      data.length() + 1, 0); // include \0 termination char
+  // check if we set the attribute value
+  return (success == 0);
+#endif
 }
 
 } // anonymous namespace
