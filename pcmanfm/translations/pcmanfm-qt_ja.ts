@@ -930,7 +930,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>Root インスタンスでタブを開く(&amp;R)</translation>
+        <translation>タブを Root インスタンスで開く(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="857"/>
@@ -1000,7 +1000,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>管理者モードでタブを開く(&amp;A)</translation>
+        <translation>タブを管理者モードで開く(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
@@ -1121,7 +1121,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="426"/>
         <source>&amp;Detailed List</source>
-        <translation>詳細リスト(&amp;D)</translation>
+        <translation>詳細リスト表示(&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="434"/>
@@ -1191,7 +1191,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="649"/>
         <source>C&amp;lose Tab</source>
-        <translation>タブを閉じる(&amp;C)</translation>
+        <translation>タブを閉じる(&amp;L)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="657"/>
@@ -2151,7 +2151,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="664"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>プログラム開始時にマウント可能なボリュームをマウントする</translation>
+        <translation>起動時にマウント可能なボリュームを自動的にマウントする</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
