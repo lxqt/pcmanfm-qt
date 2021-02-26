@@ -410,7 +410,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>デスクトップ上のフォルダーを左クリックして既定のファイルマネージャーで開く</translation>
+        <translation>デスクトップ上のフォルダーを左クリックで開く場合、既定のファイルマネージャーで開く</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
