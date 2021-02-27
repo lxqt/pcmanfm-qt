@@ -449,18 +449,25 @@ void TabPage::onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity sev
     if(err.domain() == G_IO_ERROR) {
         if(err.code() == G_IO_ERROR_NOT_MOUNTED && severity < Fm::Job::ErrorSeverity::CRITICAL) {
             auto& path = folder_->path();
-            MountOperation* op = new MountOperation(true);
-            op->mountEnclosingVolume(path);
-            if(op->wait()) { // blocking event loop, wait for mount operation to finish.
-                // This will reload the folder, which generates a new "start-loading"
-                // signal, so we get more "start-loading" signals than "finish-loading"
-                // signals. FIXME: This is a bug of libfm.
-                // Because the two signals are not correctly paired, we need to
-                // remove busy cursor here since "finish-loading" is not emitted.
-                QApplication::restoreOverrideCursor(); // remove busy cursor
-                overrideCursor_ = false;
-                response = Fm::Job::ErrorAction::RETRY;
-                return;
+            // WARNING: GVFS admin backend has a bug that tries to mount an admin path with
+            // a double slash, like "admin://X", even when Admin is already mounted. The mount
+            // is always completed successfully, so that it can cause an infinite loop here.
+            // Since "admin" is already handled by canOpenAdmin(), it can be safely excluded
+            // here, as a workaround.
+            if(!path.hasUriScheme("admin")) {
+                MountOperation* op = new MountOperation(true);
+                op->mountEnclosingVolume(path);
+                if(op->wait()) { // blocking event loop, wait for mount operation to finish.
+                    // This will reload the folder, which generates a new "start-loading"
+                    // signal, so we get more "start-loading" signals than "finish-loading"
+                    // signals. FIXME: This is a bug of libfm.
+                    // Because the two signals are not correctly paired, we need to
+                    // remove busy cursor here since "finish-loading" is not emitted.
+                    QApplication::restoreOverrideCursor(); // remove busy cursor
+                    overrideCursor_ = false;
+                    response = Fm::Job::ErrorAction::RETRY;
+                    return;
+                }
             }
         }
     }
@@ -569,6 +576,10 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
         // we're already in the specified dir
         if(newPath == folder_->path()) {
             return;
+        }
+
+        if (newPath.hasUriScheme("admin") && !canOpenAdmin()) {
+            return; // see canOpenAdmin() for a thorough explanation
         }
 
         // reset the status selected text
@@ -970,6 +981,42 @@ void TabPage::setCustomizedView(bool value) {
         setSortHiddenLast(sortHiddenLast);
         sort(sortColumn, sortOrder);
     }
+}
+
+bool TabPage::canOpenAdmin() {
+    /* NOTE: "admin:///" requires a special handling because it first needs an invisible mount
+       and then the password. Since its password prompt is shown with all GIO functions that
+       query file info, a direct call to chdir() will show two password prompts if the first one
+       is cancelled.
+
+       Fm::uriExists() (= g_file_query_exists) is used to check Admin. It calls the password prompt
+       if Admin is mounted. Four scenarios are possible:
+
+       1. Admin is not supported. Then, the mount operation fails and this method returns "false"
+          after showing an error message.
+
+       2. Admin is supported but not mounted yet. Then, the first call to Fm::uriExists()
+          does not show a password prompt. We mount Admin and ask for the password by calling
+          Fm::uriExists() again.
+
+       3. If Admin is already mounted but the correct password is not entered yet, the password
+          will be asked by the first call to Fm::uriExists(). If the password is correct, "true"
+          will be returned; if not, MountOperation::wait() will return "false" (because a repeated
+          mount fails) and so, another password prompt will not be shown.
+
+       4. If Admin is already mounted and the password was entered before, "true" will be returned.
+    */
+    const char* admin = "admin:///";
+    if(Fm::uriExists(admin)) {
+        return true;
+    }
+    MountOperation* op = new MountOperation(false);
+    op->mountEnclosingVolume(Fm::FilePath::fromUri(admin));
+    if(op->wait() && Fm::uriExists(admin)) {
+        return true;
+    }
+    QMessageBox::critical(parentWidget()->window(), QObject::tr("Error"), QObject::tr("Cannot open as Admin."));
+    return false;
 }
 
 } // namespace PCManFM
