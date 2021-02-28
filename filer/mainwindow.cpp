@@ -240,12 +240,20 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::chdir(FmPath* path) {
-  TabPage* page = currentPage();
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  if (settings.spatialMode()) {
+    if ( ! WindowRegistry::instance().checkPathAndRaise(fm_path_to_str(path))) {
+        (new MainWindow(path))->show();
+    }
+  }
+  else {
+    TabPage* page = currentPage();
 
-  if(page) {
-    ui.filterBar->clear();
-    page->chdir(path, true);
-    updateUIForCurrentPage();
+    if(page) {
+      ui.filterBar->clear();
+      page->chdir(path, true);
+      updateUIForCurrentPage();
+    }
   }
 }
 
@@ -291,7 +299,9 @@ void MainWindow::on_actionGoUp_triggered() {
 
   if(page) {
     ui.filterBar->clear();
-    page->up();
+    FmPath* parent = fm_path_get_parent(page->path());
+    if (parent)
+      chdir(parent);
     updateUIForCurrentPage();
   }
 }
