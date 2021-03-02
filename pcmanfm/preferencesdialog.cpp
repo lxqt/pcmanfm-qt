@@ -236,7 +236,12 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
 void PreferencesDialog::initThumbnailPage(Settings& settings) {
     ui.showThumbnails->setChecked(settings.showThumbnails());
     ui.thumbnailLocal->setChecked(settings.thumbnailLocalFilesOnly());
-    ui.maxThumbnailFileSize->setValue(settings.maxThumbnailFileSize());
+    // the max. thumbnail size spinbox is in MiB, with a precision of 0.1
+    double v = settings.maxThumbnailFileSize();
+    if(v > 0.0) {
+        v = qMax(v / 1024, 0.1);
+    }
+    ui.maxThumbnailFileSize->setValue(v);
 }
 
 void PreferencesDialog::initVolumePage(Settings& settings) {
@@ -349,7 +354,8 @@ void PreferencesDialog::applyBehaviorPage(Settings& settings) {
 void PreferencesDialog::applyThumbnailPage(Settings& settings) {
     settings.setShowThumbnails(ui.showThumbnails->isChecked());
     settings.setThumbnailLocalFilesOnly(ui.thumbnailLocal->isChecked());
-    settings.setMaxThumbnailFileSize(ui.maxThumbnailFileSize->value());
+    // the max. thumbnail size spinbox is in MiB
+    settings.setMaxThumbnailFileSize(qRound(ui.maxThumbnailFileSize->value() * 1024));
 }
 
 void PreferencesDialog::applyVolumePage(Settings& settings) {
