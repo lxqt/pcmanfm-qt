@@ -88,7 +88,7 @@ lxqt_translate_ts(QM_FILES
     TEMPLATE ${libfm_TRANSLATION_TEMPLATE}
 )
 
-add_library(${LIBRARY_NAME} SHARED
+add_library(${LIBRARY_NAME} STATIC
     ${libfm_SRCS}
     ${libfm_UIS_H}
     ${QM_FILES}
