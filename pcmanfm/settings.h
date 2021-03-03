@@ -727,9 +727,6 @@ public:
         selectNewFiles_ = value;
     }
 
-    // bool thumbnailLocal_;
-    // bool thumbnailMax;
-
     int bigIconSize() const {
         return bigIconSize_;
     }

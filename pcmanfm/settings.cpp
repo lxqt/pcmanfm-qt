@@ -223,8 +223,6 @@ bool Settings::loadFile(QString filePath) {
     confirmTrash_ = settings.value(QStringLiteral("ConfirmTrash"), false).toBool();
     setQuickExec(settings.value(QStringLiteral("QuickExec"), false).toBool());
     selectNewFiles_ = settings.value(QStringLiteral("SelectNewFiles"), false).toBool();
-    // bool thumbnailLocal_;
-    // bool thumbnailMax;
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Desktop"));
@@ -370,8 +368,6 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("ConfirmTrash"), confirmTrash_);
     settings.setValue(QStringLiteral("QuickExec"), quickExec_);
     settings.setValue(QStringLiteral("SelectNewFiles"), selectNewFiles_);
-    // bool thumbnailLocal_;
-    // bool thumbnailMax;
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Desktop"));
