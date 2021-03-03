@@ -540,7 +540,7 @@ QImage DesktopWindow::getWallpaperImage() const {
             // auto-transform jpeg images based on their EXIF data
             QImageReader reader(wallpaperFile_);
             QImageIOHandler::Transformations tr = reader.transformation();
-            QMatrix m;
+            QTransform m;
             // mirroring
             if(tr & QImageIOHandler::TransformationMirror) {
                 m.scale(-1, 1);
