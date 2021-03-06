@@ -17,6 +17,7 @@ bool checkWhetherAppDirOrBundle(FmFileInfo* _info)
 
     bool isAppDirOrBundle = false;
 
+    // TODO: Replace by using QFileInfo that we are using anyway below; get rid of fm_...
     if((fm_file_info_is_dir(_info) || fm_file_info_is_symlink(_info))  == false) {
         return(isAppDirOrBundle);
     }
@@ -32,7 +33,7 @@ bool checkWhetherAppDirOrBundle(FmFileInfo* _info)
         // TODO: Before falling back to foo.app/foo, parse the Info-gnustep.plist/Info.plist and get the NSExecutable from there
         // as described in http://www.gnustep.org/resources/documentation/Developer/Gui/ProgrammingManual/AppKit_1.html
         QFile executableFile(path.toUtf8() + "/" + nameWithoutSuffix);
-        if (executableFile.exists() && QFileInfo(executableFile).isExecutable()) {
+        if (QFileInfo(executableFile).isExecutable()) {
             isAppDirOrBundle = true;
         }
     }
@@ -48,7 +49,7 @@ bool checkWhetherAppDirOrBundle(FmFileInfo* _info)
 
     // Check whether we have a ROX AppDir
     QFile appRunFile(path.toUtf8() + "/AppRun");
-    if ((appRunFile.exists()) && QFileInfo(appRunFile).isExecutable()) {
+    if (QFileInfo(appRunFile).isExecutable()) {
         isAppDirOrBundle = true;
     }
 
@@ -111,26 +112,26 @@ QIcon getIconForBundle(FmFileInfo* _info)
     // TODO: Implement plist parsing. For now we just check for foo.app/Resources/foo.tiff’ and ’foo.app/.dir.tiff’
     // Actually there may be foo.app/Resources/foo.desktop files which point to Icon= and we could use that; just be sure to convert the absolute path there into a relative one?
     QFile tiffFile1(path.toUtf8() + "/Resources/" + nameWithoutSuffix.toUtf8() + ".tiff");
-    if (tiffFile1.exists()) {
+    if (QFile::exists((QFileInfo(tiffFile1).canonicalFilePath()))) {
         icon = QIcon(QFileInfo(tiffFile1).canonicalFilePath());
     }
     QFile tiffFile2(path.toUtf8() + "/.dir.tiff");
-    if (tiffFile2.exists()) {
+    if (QFile::exists((QFileInfo(tiffFile2).canonicalFilePath()))) {
         icon = QIcon(QFileInfo(tiffFile2).canonicalFilePath());
     }
     QFile pngFile1(path.toUtf8() + "/Resources/" + nameWithoutSuffix.toUtf8() + ".png");
     QFile svgFile1(path.toUtf8() + "/Resources/" + nameWithoutSuffix.toUtf8() + ".svg");
-    if (svgFile1.exists()) {
+    if (QFile::exists((QFileInfo(svgFile1).canonicalFilePath()))) {
         // icon = QIcon(QFileInfo(svgFile1).canonicalFilePath());
         qDebug() << "probono: FIXME: There is a svg but we are not using it yet";
     }
-    if (pngFile1.exists()) {
+    if (QFile::exists((QFileInfo(pngFile1).canonicalFilePath()))) {
         icon = QIcon(QFileInfo(pngFile1).canonicalFilePath());
     }
 
     // probono: ROX AppDir
     QFile dirIconFile(path.toUtf8() + "/.DirIcon");
-    if (dirIconFile.exists()) {
+    if (QFile::exists((QFileInfo(dirIconFile).canonicalFilePath()))) {
         icon = QIcon(QFileInfo(dirIconFile).canonicalFilePath());
     }
 
@@ -138,7 +139,7 @@ QIcon getIconForBundle(FmFileInfo* _info)
     // TODO: Implement plist parsing. For now we just check for foo.app/Contents/Resources/foo.icns’
     // TODO: Need to actually use CFBundleIconFile from Info.plist instead
     QFile icnsFile(path.toUtf8() + "/Contents/Resources/" + nameWithoutSuffix.toUtf8() + ".icns");
-    if (icnsFile.exists()) {
+    if (QFile::exists((QFileInfo(icnsFile).canonicalFilePath()))) {
         icon = QIcon(QFileInfo(icnsFile).canonicalFilePath());
     }
     return(icon);
