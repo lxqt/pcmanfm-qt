@@ -25,7 +25,7 @@ bool checkWhetherAppDirOrBundle(FmFileInfo* _info)
     QString path = QString(fm_path_to_str(fm_file_info_get_path(_info)));
     qDebug() << "probono: checkWhetherAppDirOrBundle" << path.toUtf8();
 
-    QFileInfo fileInfo = QFileInfo(path);
+    QFileInfo fileInfo = QFileInfo(QDir(path).canonicalPath());
     QString nameWithoutSuffix = QFileInfo(fileInfo.completeBaseName()).fileName();
 
     // Check whether we have a GNUstep .app bundle
