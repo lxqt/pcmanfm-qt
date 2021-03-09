@@ -18,6 +18,7 @@
 
 #include "metadata.h"
 #include <sys/param.h> // for checking BSD definition
+#include <unistd.h>
 #if defined(BSD)
 #include <sys/extattr.h>
 #else
@@ -25,15 +26,21 @@
 #include <sys/xattr.h>
 #endif
 #include <QDebug>
+#include <QDir>
+#include <QStandardPaths>
 
 namespace {
 
-static const int ATTR_VAL_SIZE        = 10;
-static const QString WINDOW_ORIGIN_X  = "window.originx";
-static const QString WINDOW_ORIGIN_Y  = "window.originy";
-static const QString WINDOW_HEIGHT    = "window.height";
-static const QString WINDOW_WIDTH     = "window.width";
-static const QString XATTR_NAMESPACE  = "user";
+static const int ATTR_VAL_SIZE                  = 10;
+
+static const QString READ_ONLY_FS_METADATA_PATH = QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation)
+                                                  + "/" + "filer-qt/default/metadata";
+
+static const QString WINDOW_ORIGIN_X            = "window.originx";
+static const QString WINDOW_ORIGIN_Y            = "window.originy";
+static const QString WINDOW_HEIGHT              = "window.height";
+static const QString WINDOW_WIDTH               = "window.width";
+static const QString XATTR_NAMESPACE            = "user";
 
 /*
  * get the attibute value from the extended attribute for the path as int
@@ -105,56 +112,71 @@ MetaData::~MetaData() {
 
 int MetaData::getWindowOriginX(bool &ok) const
 {
-  int val = getAttributeValueInt(path_, WINDOW_ORIGIN_X, ok);
+  int val = getMetadataInt(path_, WINDOW_ORIGIN_X, ok);
   return val;
 }
 
 int MetaData::getWindowOriginY(bool& ok) const
 {
-  int val = getAttributeValueInt(path_, WINDOW_ORIGIN_Y, ok);
+  int val = getMetadataInt(path_, WINDOW_ORIGIN_Y, ok);
   return val;
 }
 
 int MetaData::getWindowHeight(bool& ok) const
 {
-  int val = getAttributeValueInt(path_, WINDOW_HEIGHT, ok);
+  int val = getMetadataInt(path_, WINDOW_HEIGHT, ok);
   return val;
 }
 
 int MetaData::getWindowWidth(bool& ok) const
 {
-  int val = getAttributeValueInt(path_, WINDOW_WIDTH, ok);
+  int val = getMetadataInt(path_, WINDOW_WIDTH, ok);
   return val;
 }
 
 void MetaData::setWindowOriginX(int x)
 {
-  bool success = setAttributeValueInt(path_, WINDOW_ORIGIN_X, x);
-  if ( ! success ) {
-    qWarning() << "MetaData::setWindowOriginX: unable to set attribute";
-  }
+  setMetadataInt(path_, WINDOW_ORIGIN_X, x);
 }
 
 void MetaData::setWindowOriginY(int y)
 {
-  bool success = setAttributeValueInt(path_, WINDOW_ORIGIN_Y, y);
-  if ( ! success ) {
-    qWarning() << "MetaData::setWindowOriginX: unable to set attribute";
-  }
+  setMetadataInt(path_, WINDOW_ORIGIN_Y, y);
 }
 
 void MetaData::setWindowHeight(int height)
 {
-  bool success = setAttributeValueInt(path_, WINDOW_HEIGHT, height);
-  if ( ! success ) {
-    qWarning() << "MetaData::setWindowOriginX: unable to set attribute";
-  }
+  setMetadataInt(path_, WINDOW_HEIGHT, height);
 }
 
 void MetaData::setWindowWidth(int width)
 {
-  bool success = setAttributeValueInt(path_, WINDOW_WIDTH, width);
-  if ( ! success ) {
-    qWarning() << "MetaData::setWindowOriginX: unable to set attribute";
+  setMetadataInt(path_, WINDOW_WIDTH, width);
+}
+
+int MetaData::getMetadataInt(const QString& path, const QString& attribute, bool &ok) const
+{
+  int val = 0;
+  // Check if we can write to the path - if so, use the extattrs directly, otherwise
+  // read from the mirror under ~
+  int result = access(path.toLatin1().data(), W_OK);
+  if (result == 0) {
+      val = getAttributeValueInt(path_, attribute, ok);
   }
+  else {
+      val = getAttributeValueInt(READ_ONLY_FS_METADATA_PATH + "/" + path, attribute, ok);
+  }
+  return val;
+}
+
+void MetaData::setMetadataInt(const QString& path, const QString& attribute, int value)
+{
+  bool success = setAttributeValueInt(path_, attribute, value);
+  if ( ! success ) {
+    QString mirrorPath = READ_ONLY_FS_METADATA_PATH + "/" + path;
+    QDir().mkpath(mirrorPath);
+    success = setAttributeValueInt(mirrorPath, attribute, value);
+  }
+  if ( ! success )
+    qWarning() << "MetaData::setMetadataInt: unable to set attribute: " << attribute;
 }

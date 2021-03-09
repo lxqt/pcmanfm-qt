@@ -39,6 +39,10 @@ public:
   void setWindowWidth(int width);
 
 private:
+  int getMetadataInt(const QString& path, const QString& attribute, bool& ok) const;
+  void setMetadataInt(const QString& path, const QString& attribute, int value);
+
+private:
   QString path_;
 };
 
