@@ -122,14 +122,14 @@
               <property name="enabled">
                <bool>false</bool>
               </property>
+              <property name="toolTip">
+               <string>Set to zero to disable auto-selection.</string>
+              </property>
               <property name="suffix">
                <string> sec</string>
               </property>
               <property name="singleStep">
                <double>0.100000000000000</double>
-              </property>
-              <property name="toolTip">
-               <string>Set to zero to disable auto-selection.</string>
               </property>
              </widget>
             </item>
@@ -598,20 +598,13 @@ only if there are more than one tab.</string>
             <string>Thumbnail</string>
            </property>
            <layout class="QFormLayout" name="formLayout_3">
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_10">
+            <item row="0" column="0" colspan="2">
+             <widget class="QCheckBox" name="showThumbnails">
+              <property name="toolTip">
+               <string>Needs ffmpegthumbnailer</string>
+              </property>
               <property name="text">
-               <string>Do not generate thumbnails for image files exceeding this size:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QSpinBox" name="maxThumbnailFileSize">
-              <property name="suffix">
-               <string> KB</string>
-              </property>
-              <property name="maximum">
-               <number>1048576</number>
+               <string>Show thumbnails of files</string>
               </property>
              </widget>
             </item>
@@ -622,13 +615,72 @@ only if there are more than one tab.</string>
               </property>
              </widget>
             </item>
-            <item row="0" column="0" colspan="2">
-             <widget class="QCheckBox" name="showThumbnails">
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_10">
               <property name="toolTip">
-               <string>Needs ffmpegthumbnailer</string>
+               <string>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
+
+Usually, most image types are supported. The default size limit is 4 MiB.</string>
               </property>
               <property name="text">
-               <string>Show thumbnails of files</string>
+               <string>Image size limit for built-in thumbnailer:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QDoubleSpinBox" name="maxThumbnailFileSize">
+              <property name="toolTip">
+               <string>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
+
+Usually, most image types are supported. The default size limit is 4 MiB.</string>
+              </property>
+              <property name="suffix">
+               <string> MiB</string>
+              </property>
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <double>1024.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>4.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_17">
+              <property name="toolTip">
+               <string>If existing, external thumbnailers are used for videos, PDF documents, etc.
+
+A value of -1 means that there is no limit for the file size (the default).</string>
+              </property>
+              <property name="text">
+               <string>File size limit for external thumbnailers:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="maxExternalThumbnailFileSize">
+              <property name="toolTip">
+               <string>If existing, external thumbnailers are used for videos, PDF documents, etc.
+
+A value of -1 means that there is no limit for the file size (the default).</string>
+              </property>
+              <property name="specialValueText">
+               <string>No limit</string>
+              </property>
+              <property name="suffix">
+               <string> MiB</string>
+              </property>
+              <property name="minimum">
+               <number>-1</number>
+              </property>
+              <property name="maximum">
+               <number>2048</number>
+              </property>
+              <property name="value">
+               <number>-1</number>
               </property>
              </widget>
             </item>

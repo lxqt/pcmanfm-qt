@@ -223,8 +223,6 @@ bool Settings::loadFile(QString filePath) {
     confirmTrash_ = settings.value(QStringLiteral("ConfirmTrash"), false).toBool();
     setQuickExec(settings.value(QStringLiteral("QuickExec"), false).toBool());
     selectNewFiles_ = settings.value(QStringLiteral("SelectNewFiles"), false).toBool();
-    // bool thumbnailLocal_;
-    // bool thumbnailMax;
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Desktop"));
@@ -272,6 +270,7 @@ bool Settings::loadFile(QString filePath) {
     settings.beginGroup(QStringLiteral("Thumbnail"));
     showThumbnails_ = settings.value(QStringLiteral("ShowThumbnails"), true).toBool();
     setMaxThumbnailFileSize(settings.value(QStringLiteral("MaxThumbnailFileSize"), 4096).toInt());
+    setMaxExternalThumbnailFileSize(settings.value(QStringLiteral("MaxExternalThumbnailFileSize"), -1).toInt());
     setThumbnailLocalFilesOnly(settings.value(QStringLiteral("ThumbnailLocalFilesOnly"), true).toBool());
     settings.endGroup();
 
@@ -370,8 +369,6 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("ConfirmTrash"), confirmTrash_);
     settings.setValue(QStringLiteral("QuickExec"), quickExec_);
     settings.setValue(QStringLiteral("SelectNewFiles"), selectNewFiles_);
-    // bool thumbnailLocal_;
-    // bool thumbnailMax;
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Desktop"));
@@ -411,6 +408,7 @@ bool Settings::saveFile(QString filePath) {
     settings.beginGroup(QStringLiteral("Thumbnail"));
     settings.setValue(QStringLiteral("ShowThumbnails"), showThumbnails_);
     settings.setValue(QStringLiteral("MaxThumbnailFileSize"), maxThumbnailFileSize());
+    settings.setValue(QStringLiteral("MaxExternalThumbnailFileSize"), maxExternalThumbnailFileSize());
     settings.setValue(QStringLiteral("ThumbnailLocalFilesOnly"), thumbnailLocalFilesOnly());
     settings.endGroup();
 

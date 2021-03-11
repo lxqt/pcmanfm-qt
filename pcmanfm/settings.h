@@ -727,9 +727,6 @@ public:
         selectNewFiles_ = value;
     }
 
-    // bool thumbnailLocal_;
-    // bool thumbnailMax;
-
     int bigIconSize() const {
         return bigIconSize_;
     }
@@ -804,6 +801,14 @@ public:
 
     void setMaxThumbnailFileSize(int size) {
         Fm::ThumbnailJob::setMaxThumbnailFileSize(size);
+    }
+
+    int maxExternalThumbnailFileSize() const {
+        return Fm::ThumbnailJob::maxExternalThumbnailFileSize();
+    }
+
+    void setMaxExternalThumbnailFileSize(int size) {
+        Fm::ThumbnailJob::setMaxExternalThumbnailFileSize(size);
     }
 
     void setThumbnailIconSize(int thumbnailIconSize) {
