@@ -1787,7 +1787,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="598"/>
         <source>Thumbnail</source>
-        <translation>Miniatura</translation>
+        <translation>Miniature</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
@@ -1912,7 +1912,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation>Visualizza</translation>
+        <translation>Visualizzazione</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
