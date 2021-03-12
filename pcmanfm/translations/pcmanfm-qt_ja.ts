@@ -107,7 +107,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>実行させる処理を選んでください:</translation>
+        <translation>実行させる処理を選んで下さい:</translation>
     </message>
 </context>
 <context>
@@ -1898,12 +1898,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="543"/>
         <source>Default width of new windows:</source>
-        <translation>新しいウィンドウのデフォルトの幅:</translation>
+        <translation>新しいウィンドウの既定の幅:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="557"/>
         <source>Default height of new windows:</source>
-        <translation>新しいウィンドウのデフォルトの高さ:</translation>
+        <translation>新しいウィンドウの既定の高さ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="515"/>
@@ -1938,7 +1938,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="113"/>
         <source>Default view mode:</source>
-        <translation>デフォルトの表示モード:</translation>
+        <translation>既定の表示モード:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="126"/>
@@ -2101,12 +2101,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="813"/>
         <source>Run default application after creation from template</source>
-        <translation>テンプレートから作成した後にデフォルトのアプリケーションを実行する</translation>
+        <translation>テンプレートから作成した後に既定のアプリケーションを実行する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
         <source>Only show thumbnails for local files</source>
-        <translation>ローカルファイルのみサムネイルを表示する</translation>
+        <translation>ローカルファイルのサムネイルのみを表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="604"/>
@@ -2171,7 +2171,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="701"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>タブ内のフォルダーをホームフォルダーに移動する(&amp;G)</translation>
+        <translation>タブ内のフォルダーをホームフォルダーに変更する(&amp;G)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="728"/>
@@ -2181,7 +2181,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="358"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>サイズ単位には IEC 二進接頭辞の代わりに SI 十進接頭辞を用いる</translation>
+        <translation>サイズ単位には IEC 二進接頭辞の代わりに SI 十進接頭辞を使用する</translation>
     </message>
 </context>
 <context>
