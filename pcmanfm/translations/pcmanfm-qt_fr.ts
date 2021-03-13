@@ -410,7 +410,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Ouvrez les dossiers du bureau dans le gestionnaire de fichiers par défaut avec un clique gauche</translation>
+        <translation>Ouvrir le dossier du bureau dans le gestionnaire de fichier par défaut avec un clic gauche</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -548,7 +548,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Mise au point sur le volet latéral</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -632,7 +632,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished">Boîte de dialogue de recherche</translation>
+        <translation>Boîte de dialogue de recherche</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
@@ -662,7 +662,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished">Copier le fichier lors du dépôt</translation>
+        <translation>Copier le fichier lors du dépôt</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
@@ -710,7 +710,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="132"/>
         <source>&amp;Toolbars</source>
-        <translation>Barre des &amp;outils</translation>
+        <translation type="unfinished">Barre d&apos; ou&amp;tils</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -725,7 +725,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="210"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ou&amp;tils</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="283"/>
@@ -750,7 +750,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="325"/>
         <source>&amp;About</source>
-        <translation>&amp;À propos</translation>
+        <translation>&amp;A propos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="337"/>
@@ -820,7 +820,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="467"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Coller</translation>
+        <translation>C&amp;oller</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="470"/>
@@ -885,7 +885,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="563"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Cachés en dernier</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="571"/>
@@ -900,7 +900,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="624"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished">Ctrl+Shift+A</translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -930,7 +930,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished">Ouvrir l&apos;onglet en tant que &amp;Root</translation>
+        <translation>Ouvrir l&apos;onglet en tant que &amp;Root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="857"/>
@@ -985,7 +985,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="907"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>vollet &amp;latéral</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="910"/>
@@ -995,12 +995,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="915"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Raccourcis cachés</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ouvrir un onglet en mode &amp;Admin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
@@ -1297,12 +1297,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <location filename="../main-win.ui" line="99"/>
         <location filename="../main-win.ui" line="122"/>
         <source>&amp;View</source>
-        <translation>&amp;Afficher</translation>
+        <translation>&amp;Vue</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="168"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Éditer</translation>
+        <translation>&amp;Editer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="186"/>
@@ -2086,7 +2086,7 @@ seulement s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished">Menu des marques pages :</translation>
+        <translation>Menu des marques pages :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="375"/>
