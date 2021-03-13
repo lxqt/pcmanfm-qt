@@ -19,6 +19,7 @@
 #ifndef PCMANFM_METADATA_H
 #define PCMANFM_METADATA_H
 
+#include <QMap>
 #include <QObject>
 
 class MetaData : public QObject {
@@ -41,9 +42,13 @@ public:
 private:
   int getMetadataInt(const QString& path, const QString& attribute, bool& ok) const;
   void setMetadataInt(const QString& path, const QString& attribute, int value);
+  void loadDirInfo();
+  void saveDirInfo();
+  bool dirInfoDisabledForPath() const;
 
 private:
   QString path_;
+  QMap<QString, QVariant> windowAttributes_;
 };
 
 #endif // PCMANFM_METADATA_H

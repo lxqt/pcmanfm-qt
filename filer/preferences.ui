@@ -80,25 +80,11 @@
            <property name="title">
             <string>Browsing</string>
            </property>
-           <layout class="QFormLayout" name="formLayout_5">
+           <layout class="QGridLayout" name="gridLayout">
             <item row="0" column="0">
              <widget class="QCheckBox" name="singleClick">
               <property name="text">
                <string>Open files with single click</string>
-              </property>
-             </widget>
-            </item>
-            <item row="8" column="0">
-             <widget class="QLabel" name="label_11">
-              <property name="text">
-               <string>Default view mode:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0">
-             <widget class="QCheckBox" name="spatialMode">
-              <property name="text">
-               <string>Spatial browsing mode (folders open in a new window)</string>
               </property>
              </widget>
             </item>
@@ -122,6 +108,23 @@
               </property>
               <property name="singleStep">
                <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="spatialMode">
+              <property name="text">
+               <string>Spatial browsing mode (folders open in a new window)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0" colspan="2">
+             <widget class="QCheckBox" name="dirInfoWrite">
+              <property name="text">
+               <string>Save metadata to directories (.DirInfo files)</string>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
               </property>
              </widget>
             </item>
@@ -151,7 +154,14 @@
               </item>
              </widget>
             </item>
-            <item row="8" column="1">
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>Default view mode:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
              <widget class="QComboBox" name="viewMode"/>
             </item>
            </layout>

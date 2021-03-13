@@ -184,6 +184,7 @@ void PreferencesDialog::initUiPage(Settings& settings) {
 void PreferencesDialog::initBehaviorPage(Settings& settings) {
   ui.singleClick->setChecked(settings.singleClick());
   ui.spatialMode->setChecked(settings.spatialMode());
+  ui.dirInfoWrite->setChecked(settings.dirInfoWrite());
   ui.autoSelectionDelay->setValue(double(settings.autoSelectionDelay()) / 1000);
 
   ui.bookmarkOpenMethod->setCurrentIndex(settings.bookmarkOpenMethod());
@@ -303,6 +304,7 @@ void PreferencesDialog::applyUiPage(Settings& settings) {
 void PreferencesDialog::applyBehaviorPage(Settings& settings) {
   settings.setSingleClick(ui.singleClick->isChecked());
   settings.setSpatialMode(ui.spatialMode->isChecked());
+  settings.setDirInfoWrite(ui.dirInfoWrite->isChecked());
   settings.setAutoSelectionDelay(int(ui.autoSelectionDelay->value() * 1000));
 
   settings.setBookmarkOpenMethod(OpenDirTargetType(ui.bookmarkOpenMethod->currentIndex()));

@@ -362,6 +362,14 @@ public:
     spatialMode_ = value;
   }
 
+  bool dirInfoWrite() const {
+    return dirInfoWrite_;
+  }
+
+  void setDirInfoWrite(bool value) {
+    dirInfoWrite_ = value;
+  }
+
   // settings for use with libfm
   bool singleClick() const {
     return singleClick_;
@@ -590,6 +598,7 @@ private:
   bool sortFolderFirst_;
   bool showFilter_;
   bool spatialMode_;
+  bool dirInfoWrite_;
 
   // settings for use with libfm
   bool singleClick_;
