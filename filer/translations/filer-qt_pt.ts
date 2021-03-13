@@ -125,7 +125,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="110"/>
         <source>Removable medium is inserted</source>
-        <translation>Disco amovível inserido</translation>
+        <translation>Disco removível inserido</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="112"/>
@@ -153,32 +153,32 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formulário</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="76"/>
         <source>Desktop</source>
-        <translation type="unfinished">Área de trabalho</translation>
+        <translation>Ambiente de trabalho</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="77"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished">Pasta da área de trabalho:</translation>
+        <translation>Pasta do ambiente de trabalho:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="79"/>
         <source>Image file</source>
-        <translation type="unfinished">Ficheiro de imagem</translation>
+        <translation>Ficheiro de imagem</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="84"/>
         <source>Folder path</source>
-        <translation type="unfinished">Caminho da pasta</translation>
+        <translation>Caminho da pasta</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="85"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">E&amp;xplorar</translation>
+        <translation>E&amp;xplorar</translation>
     </message>
 </context>
 <context>
@@ -186,7 +186,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="254"/>
         <source>Desktop Preferences</source>
-        <translation>Preferências da área de trabalho</translation>
+        <translation>Preferências do ambiente de trabalho</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="255"/>
@@ -315,7 +315,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="563"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pasta pessoal</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="565"/>
@@ -416,7 +416,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         <location filename="../../build/filer/ui_main-win.h" line="594"/>
         <source>Select &amp;All</source>
         <translatorcomment>Selecion&amp;ar tudo</translatorcomment>
-        <translation></translation>
+        <translation>Selecion&amp;ar tudo</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="596"/>
@@ -426,37 +426,37 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="597"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ascendente</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="598"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Descendente</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="599"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Por nome de ficheiro</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="600"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Por data de &amp;modificação</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="601"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Por &amp;tipo de ficheiro</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="602"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Por Pr&amp;oprietário</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="603"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pastas primeiro</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="619"/>
@@ -476,17 +476,17 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="629"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Sensível a maiús&amp;culas e minúsculas</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="630"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Por tamanho de ficheiro</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="631"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Fe&amp;char janela</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="595"/>
@@ -584,7 +584,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="613"/>
         <source>Alt+Left</source>
-        <translation>Alt+Left</translation>
+        <translation>Alt+Esquerda</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="614"/>
@@ -721,7 +721,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="642"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="644"/>
@@ -1008,8 +1008,8 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         <location filename="../tabpage.cpp" line="278"/>
         <source> (%n hidden)</source>
         <translation>
-            <numerusform>(%n oculto)</numerusform>
-            <numerusform>(%n ocultos)</numerusform>
+            <numerusform> (%n oculto)</numerusform>
+            <numerusform> (%n ocultos)</numerusform>
         </translation>
     </message>
     <message>
@@ -1237,12 +1237,12 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="764"/>
         <source>Home</source>
-        <translation type="unfinished">Pasta pessoal</translation>
+        <translation>Pasta pessoal</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="766"/>
         <source>Desktop</source>
-        <translation type="unfinished">Área de trabalho</translation>
+        <translation>Ambiente de trabalho</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="768"/>
@@ -1388,7 +1388,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         <location filename="../../build/filer/ui_preferences.h" line="794"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation>Exemplo: &quot;xterm -e %s&quot; para terminal ou &quot;gksu %s&quot; para  trocar de utilizador.
+        <translation>Exemplo: &quot;xterm -e %s&quot; para terminal ou &quot;gksu %s&quot; para trocar de utilizador.
 %s = a linha de comandos a executar no terminal ou com o comando su.</translation>
     </message>
     <message>
