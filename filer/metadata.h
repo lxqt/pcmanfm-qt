@@ -26,6 +26,43 @@ class MetaData : public QObject {
   Q_OBJECT
 
 public:
+
+  enum FolderView {
+    Icons = 1,
+    Compact = 2,
+    List = 3,
+    Thumbnail = 4,
+    Columns = 5
+  };
+
+  enum SortItem {
+    FileName = 1,
+    FileType = 2,
+    FileSize = 3,
+    ModifiedTime = 4,
+    Owner = 5
+  };
+
+  enum SortOrder {
+    Ascending = 1,
+    Descending = 2
+  };
+
+  enum SortCase {
+    CaseSensitive = 1,
+    NotCaseSensitive = 2
+  };
+
+  enum SortFolderFirst {
+    FoldersFirst = 1,
+    NotFoldersFirst = 2
+  };
+
+  enum Filter {
+    FilterActive = 1,
+    FilterInactive = 2
+  };
+
   explicit MetaData(const QString& path);
   virtual ~MetaData();
 
@@ -34,10 +71,24 @@ public:
   int getWindowHeight(bool& ok) const;
   int getWindowWidth(bool& ok) const;
 
+  FolderView getWindowView(bool& ok) const;
+  SortItem getWindowSortItem(bool& ok) const;
+  SortOrder getWindowSortOrder(bool& ok) const;
+  SortCase getWindowSortCase(bool& ok) const;
+  SortFolderFirst getWindowSortFolderFirst(bool& ok) const;
+  Filter getWindowFilter(bool& ok) const;
+
   void setWindowOriginX(int x);
   void setWindowOriginY(int y);
   void setWindowHeight(int height);
   void setWindowWidth(int width);
+
+  void setWindowView(FolderView view);
+  void setWindowSortItem(SortItem sortItem);
+  void setWindowSortOrder(SortOrder sortOrder);
+  void setWindowSortCase(SortCase sortCase);
+  void setWindowSortFolderFirst(SortFolderFirst sortFolderFirst);
+  void setWindowFilter(Filter filter);
 
 private:
   int getMetadataInt(const QString& path, const QString& attribute, bool& ok) const;

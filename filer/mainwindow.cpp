@@ -202,10 +202,13 @@ MainWindow::MainWindow(FmPath* path):
 
   // size from spatial mode or from settings
   if (settings.spatialMode()) {
+
     // hide the things we don't want in spatial mode
     ui.tabBar->hide();
     ui.sidePane->hide();
     ui.toolBar->hide();
+
+    // Set the window position and size
     MetaData metaData(fm_path_to_str(path));
     int x, y, width, height;
     bool ok;
@@ -218,6 +221,91 @@ MainWindow::MainWindow(FmPath* path):
       height = metaData.getWindowHeight(ok);
     if (ok)
       setGeometry(x, y, width, height);
+
+    // Set the window view mode
+    MetaData::FolderView view = metaData.getWindowView(ok);
+    if (ok) {
+      switch (view) {
+      case MetaData::Icons:
+        ui.actionIconView->trigger();
+        break;
+      case MetaData::Compact:
+        ui.actionCompactView->trigger();
+        break;
+      case MetaData::List:
+        ui.actionDetailedList->trigger();
+        break;
+      case MetaData::Thumbnail:
+        ui.actionThumbnailView->trigger();
+        break;
+      case MetaData::Columns:
+        // not implemented
+        ui.actionDetailedList->trigger();
+        break;
+      }
+    }
+
+    // Set the window sort item
+    MetaData::SortItem sortItem = metaData.getWindowSortItem(ok);
+    if (ok) {
+      switch (sortItem) {
+      case MetaData::FileName:
+        ui.actionByFileName->trigger();
+        break;
+      case MetaData::FileType:
+        ui.actionByFileType->trigger();
+        break;
+      case MetaData::FileSize:
+        ui.actionByFileSize->trigger();
+        break;
+      case MetaData::ModifiedTime:
+        ui.actionByMTime->trigger();
+        break;
+      case MetaData::Owner:
+        ui.actionByOwner->trigger();
+        break;
+      }
+    }
+
+    // Set the window sort order
+    MetaData::SortOrder sortOrder = metaData.getWindowSortOrder(ok);
+    if (ok) {
+      switch (sortOrder) {
+      case MetaData::Ascending:
+        ui.actionAscending->trigger();
+        break;
+      case MetaData::Descending:
+        ui.actionDescending->trigger();
+        break;
+      }
+    }
+
+    // Set the window sort case sensitivity
+    MetaData::SortCase sortCase = metaData.getWindowSortCase(ok);
+    if (ok) {
+      switch (sortCase) {
+      case MetaData::CaseSensitive:
+        ui.actionCaseSensitive->setChecked(true);
+        break;
+      case MetaData::NotCaseSensitive:
+        ui.actionCaseSensitive->setChecked(false);
+        break;
+      }
+    }
+
+    // Set the window 'folder first' sort option
+    MetaData::SortFolderFirst folderFirst = metaData.getWindowSortFolderFirst(ok);
+    if (ok) {
+      switch (folderFirst) {
+      case MetaData::FoldersFirst:
+        ui.actionFolderFirst->setChecked(true);
+        break;
+      case MetaData::NotFoldersFirst:
+        ui.actionFolderFirst->setChecked(false);
+        break;
+      }
+    }
+
   }
   else if(settings.rememberWindowSize()) {
     resize(settings.windowWidth(), settings.windowHeight());
@@ -243,8 +331,7 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::chdir(FmPath* path) {
-  Settings& settings = static_cast<Application*>(qApp)->settings();
-  if (settings.spatialMode()) {
+  if (isSpatialMode()) {
     if ( ! WindowRegistry::instance().checkPathAndRaise(fm_path_to_str(path))) {
         (new MainWindow(path))->show();
     }
@@ -416,38 +503,87 @@ void MainWindow::on_actionShowHidden_triggered(bool checked) {
 
 void MainWindow::on_actionByFileName_triggered(bool checked) {
   currentPage()->sort(Fm::FolderModel::ColumnFileName, currentPage()->sortOrder());
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowSortItem(MetaData::SortItem::FileName);
+  }
 }
 
 void MainWindow::on_actionByMTime_triggered(bool checked) {
   currentPage()->sort(Fm::FolderModel::ColumnFileMTime, currentPage()->sortOrder());
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowSortItem(MetaData::SortItem::ModifiedTime);
+  }
 }
 
 void MainWindow::on_actionByOwner_triggered(bool checked) {
   currentPage()->sort(Fm::FolderModel::ColumnFileOwner, currentPage()->sortOrder());
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowSortItem(MetaData::SortItem::Owner);
+  }
 }
 
 void MainWindow::on_actionByFileSize_triggered(bool checked) {
   currentPage()->sort(Fm::FolderModel::ColumnFileSize, currentPage()->sortOrder());
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowSortItem(MetaData::SortItem::FileSize);
+  }
 }
 
 void MainWindow::on_actionByFileType_triggered(bool checked) {
   currentPage()->sort(Fm::FolderModel::ColumnFileType, currentPage()->sortOrder());
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowSortItem(MetaData::SortItem::FileType);
+  }
 }
 
 void MainWindow::on_actionAscending_triggered(bool checked) {
   currentPage()->sort(currentPage()->sortColumn(), Qt::AscendingOrder);
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowSortOrder(MetaData::SortOrder::Ascending);
+  }
 }
 
 void MainWindow::on_actionDescending_triggered(bool checked) {
   currentPage()->sort(currentPage()->sortColumn(), Qt::DescendingOrder);
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowSortOrder(MetaData::SortOrder::Descending);
+  }
 }
 
 void MainWindow::on_actionCaseSensitive_triggered(bool checked) {
   currentPage()->setSortCaseSensitive(checked);
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowSortCase(checked ?
+                                 MetaData::SortCase::CaseSensitive
+                               : MetaData::SortCase::NotCaseSensitive);
+  }
 }
 
 void MainWindow::on_actionFolderFirst_triggered(bool checked) {
   currentPage()->setSortFolderFirst(checked);
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowSortFolderFirst(checked ?
+                                 MetaData::SortFolderFirst::FoldersFirst
+                               : MetaData::SortFolderFirst::NotFoldersFirst);
+  }
 }
 
 void MainWindow::on_actionFilter_triggered(bool checked) {
@@ -515,18 +651,38 @@ void MainWindow::on_actionAbout_triggered() {
 
 void MainWindow::on_actionIconView_triggered() {
   currentPage()->setViewMode(Fm::FolderView::IconMode);
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowView(MetaData::Icons);
+  }
 }
 
 void MainWindow::on_actionCompactView_triggered() {
   currentPage()->setViewMode(Fm::FolderView::CompactMode);
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowView(MetaData::Compact);
+  }
 }
 
 void MainWindow::on_actionDetailedList_triggered() {
   currentPage()->setViewMode(Fm::FolderView::DetailedListMode);
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowView(MetaData::List);
+  }
 }
 
 void MainWindow::on_actionThumbnailView_triggered() {
   currentPage()->setViewMode(Fm::FolderView::ThumbnailMode);
+  if (isSpatialMode()) {
+    QString path = currentPage()->pathName();
+    MetaData metaData(path);
+    metaData.setWindowView(MetaData::Thumbnail);
+  }
 }
 
 void MainWindow::on_actionGoToFolder_triggered() {
@@ -609,8 +765,7 @@ void MainWindow::resizeEvent(QResizeEvent *event) {
 void MainWindow::moveEvent(QMoveEvent *event)
 {
   QMainWindow::moveEvent(event);
-  Settings& settings = static_cast<Application*>(qApp)->settings();
-  if (settings.spatialMode()) {
+  if (isSpatialMode()) {
     TabPage* page = currentPage();
     if(page) {
       QString path = page->pathName();
@@ -652,6 +807,12 @@ void MainWindow::updateStatusBarForCurrentPage() {
   text = tabPage->statusText(TabPage::StatusTextFSInfo);
   fsInfoLabel->setText(text);
   fsInfoLabel->setVisible(!text.isEmpty());
+}
+
+bool MainWindow::isSpatialMode() const
+{
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  return settings.spatialMode();
 }
 
 void MainWindow::updateViewMenuForCurrentPage() {
@@ -803,6 +964,48 @@ void MainWindow::onTabPageSortFilterChanged() {
     settings.setSortColumn(static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn()));
     settings.setSortOrder(tabPage->sortOrder());
     settings.setSortFolderFirst(tabPage->sortFolderFirst());
+
+    // Update metadata - this is when the user click on column headings to
+    // sort, rather than selecting items to sort in the menu
+    if (isSpatialMode()) {
+
+      QString path = currentPage()->pathName();
+      MetaData metaData(path);
+
+      switch (static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn())) {
+      case Fm::FolderModel::ColumnFileName:
+        metaData.setWindowSortItem(MetaData::SortItem::FileName);
+        break;
+      case Fm::FolderModel::ColumnFileType:
+        metaData.setWindowSortItem(MetaData::SortItem::FileType);
+        break;
+      case Fm::FolderModel::ColumnFileSize:
+        metaData.setWindowSortItem(MetaData::SortItem::FileSize);
+        break;
+      case Fm::FolderModel::ColumnFileMTime:
+        metaData.setWindowSortItem(MetaData::SortItem::ModifiedTime);
+        break;
+      case Fm::FolderModel::ColumnFileOwner:
+        metaData.setWindowSortItem(MetaData::SortItem::Owner);
+        break;
+      case Fm::FolderModel::NumOfColumns:
+        break;
+      }
+
+      switch (tabPage->sortOrder()) {
+      case Qt::AscendingOrder:
+        metaData.setWindowSortOrder(MetaData::SortOrder::Ascending);
+        break;
+      case Qt::DescendingOrder:
+        metaData.setWindowSortOrder(MetaData::SortOrder::Descending);
+        break;
+      }
+
+      metaData.setWindowSortFolderFirst(tabPage->sortFolderFirst() ?
+                                          MetaData::SortFolderFirst::FoldersFirst
+                                        : MetaData::SortFolderFirst::NotFoldersFirst);
+
+    }
   }
 }
 

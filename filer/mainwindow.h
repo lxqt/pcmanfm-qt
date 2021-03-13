@@ -160,6 +160,7 @@ private:
   void updateUIForCurrentPage();
   void updateViewMenuForCurrentPage();
   void updateStatusBarForCurrentPage();
+  bool isSpatialMode() const;
 
 private:
   Ui::MainWindow ui;
