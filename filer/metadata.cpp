@@ -17,6 +17,8 @@
  */
 
 #include "metadata.h"
+#include <application.h>
+#include "settings.h"
 #include <sys/param.h> // for checking BSD definition
 #include <unistd.h>
 #if defined(BSD)
@@ -27,7 +29,11 @@
 #endif
 #include <QDebug>
 #include <QDir>
+#include <QJsonDocument>
+#include <QJsonObject>
 #include <QStandardPaths>
+
+using namespace Filer;
 
 namespace {
 
@@ -36,10 +42,10 @@ static const int ATTR_VAL_SIZE                  = 10;
 static const QString READ_ONLY_FS_METADATA_PATH = QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation)
                                                   + "/" + "filer-qt/default/metadata";
 
-static const QString WINDOW_ORIGIN_X            = "window.originx";
-static const QString WINDOW_ORIGIN_Y            = "window.originy";
-static const QString WINDOW_HEIGHT              = "window.height";
-static const QString WINDOW_WIDTH               = "window.width";
+static const QString WINDOW_ORIGIN_X            = "WindowX";
+static const QString WINDOW_ORIGIN_Y            = "WindowY";
+static const QString WINDOW_HEIGHT              = "WindowHeight";
+static const QString WINDOW_WIDTH               = "WindowWidth";
 static const QString XATTR_NAMESPACE            = "user";
 
 /*
@@ -102,56 +108,77 @@ bool setAttributeValueInt(const QString& path, const QString& attribute, int val
 
 MetaData::MetaData(const QString &path):
   QObject(),
-  path_(path) {
-  // do nothing
+  path_(path),
+  windowAttributes_(){
+  loadDirInfo();
 }
 
 MetaData::~MetaData() {
-  // do nothing
+  saveDirInfo();
 }
 
 int MetaData::getWindowOriginX(bool &ok) const
 {
   int val = getMetadataInt(path_, WINDOW_ORIGIN_X, ok);
+  if (!ok) {
+    ok = windowAttributes_.contains(WINDOW_ORIGIN_X);
+    val = windowAttributes_[WINDOW_ORIGIN_X].toInt();
+  }
   return val;
 }
 
 int MetaData::getWindowOriginY(bool& ok) const
 {
   int val = getMetadataInt(path_, WINDOW_ORIGIN_Y, ok);
+  if (!ok) {
+    ok = windowAttributes_.contains(WINDOW_ORIGIN_Y);
+    val = windowAttributes_[WINDOW_ORIGIN_Y].toInt();
+  }
   return val;
 }
 
 int MetaData::getWindowHeight(bool& ok) const
 {
   int val = getMetadataInt(path_, WINDOW_HEIGHT, ok);
+  if (!ok) {
+    ok = windowAttributes_.contains(WINDOW_HEIGHT);
+    val = windowAttributes_[WINDOW_HEIGHT].toInt();
+  }
   return val;
 }
 
 int MetaData::getWindowWidth(bool& ok) const
 {
   int val = getMetadataInt(path_, WINDOW_WIDTH, ok);
+  if (!ok) {
+    ok = windowAttributes_.contains(WINDOW_WIDTH);
+    val = windowAttributes_[WINDOW_WIDTH].toInt();
+  }
   return val;
 }
 
 void MetaData::setWindowOriginX(int x)
 {
   setMetadataInt(path_, WINDOW_ORIGIN_X, x);
+  windowAttributes_[WINDOW_ORIGIN_X] = x;
 }
 
 void MetaData::setWindowOriginY(int y)
 {
   setMetadataInt(path_, WINDOW_ORIGIN_Y, y);
+  windowAttributes_[WINDOW_ORIGIN_Y] = y;
 }
 
 void MetaData::setWindowHeight(int height)
 {
   setMetadataInt(path_, WINDOW_HEIGHT, height);
+  windowAttributes_[WINDOW_HEIGHT] = height;
 }
 
 void MetaData::setWindowWidth(int width)
 {
   setMetadataInt(path_, WINDOW_WIDTH, width);
+  windowAttributes_[WINDOW_WIDTH] = width;
 }
 
 int MetaData::getMetadataInt(const QString& path, const QString& attribute, bool &ok) const
@@ -164,7 +191,7 @@ int MetaData::getMetadataInt(const QString& path, const QString& attribute, bool
       val = getAttributeValueInt(path_, attribute, ok);
   }
   else {
-      val = getAttributeValueInt(READ_ONLY_FS_METADATA_PATH + "/" + path, attribute, ok);
+      val = getAttributeValueInt(READ_ONLY_FS_METADATA_PATH + path, attribute, ok);
   }
   return val;
 }
@@ -173,10 +200,107 @@ void MetaData::setMetadataInt(const QString& path, const QString& attribute, int
 {
   bool success = setAttributeValueInt(path_, attribute, value);
   if ( ! success ) {
-    QString mirrorPath = READ_ONLY_FS_METADATA_PATH + "/" + path;
+    QString mirrorPath = READ_ONLY_FS_METADATA_PATH + path;
     QDir().mkpath(mirrorPath);
     success = setAttributeValueInt(mirrorPath, attribute, value);
   }
   if ( ! success )
     qWarning() << "MetaData::setMetadataInt: unable to set attribute: " << attribute;
+}
+
+void MetaData::loadDirInfo()
+{
+  // Check if we can write to the path - if so, use the .DirInfo directly, otherwise
+  // read from the mirror under ~
+  QString path = path_;
+  int result = access(path_.toLatin1().data(), W_OK);
+  if (result != 0)
+    path = READ_ONLY_FS_METADATA_PATH + path_;
+
+  QFile dirInfoFile(path + "/" + ".DirInfo");
+  if ( ! dirInfoFile.open(QIODevice::ReadOnly) ) {
+    qDebug() << "MetaData::loadDirInfo: no .DirInfo found at path: " << path;
+    return;
+  }
+
+  QByteArray dirInfoData = dirInfoFile.readAll();
+  QJsonDocument dirInfoDoc(QJsonDocument::fromJson(dirInfoData));
+  QJsonObject json = dirInfoDoc.object();
+
+  if (json.contains("Window") && json["Window"].isObject())
+  {
+    QJsonObject windowJson = json["Window"].toObject();
+
+    if (windowJson.contains(WINDOW_ORIGIN_X) && windowJson[WINDOW_ORIGIN_X].isDouble())
+      windowAttributes_.insert(WINDOW_ORIGIN_X, windowJson[WINDOW_ORIGIN_X].toInt());
+
+    if (windowJson.contains(WINDOW_ORIGIN_Y) && windowJson[WINDOW_ORIGIN_Y].isDouble())
+      windowAttributes_.insert(WINDOW_ORIGIN_Y, windowJson[WINDOW_ORIGIN_Y].toInt());
+
+    if (windowJson.contains(WINDOW_HEIGHT) && windowJson[WINDOW_HEIGHT].isDouble())
+      windowAttributes_.insert(WINDOW_HEIGHT, windowJson[WINDOW_HEIGHT].toInt());
+
+    if (windowJson.contains(WINDOW_WIDTH) && windowJson[WINDOW_WIDTH].isDouble())
+      windowAttributes_.insert(WINDOW_WIDTH, windowJson[WINDOW_WIDTH].toInt());
+  }
+}
+
+void MetaData::saveDirInfo()
+{
+  // Don't write if user turned off the option in preferences
+  Settings& settings = static_cast<Application*>(qApp)->settings();
+  if ( ! settings.dirInfoWrite() )
+    return;
+
+  // Don't write if there's a flag in the volume root directory
+  if (dirInfoDisabledForPath()) {
+    qDebug() << "MetaData::saveDirInfo: found a .DisableDirInfo - not writing";
+    return;
+  }
+
+  QFile dirInfoFile(path_ + "/" + ".DirInfo");
+  if ( ! dirInfoFile.open(QIODevice::WriteOnly) ) {
+    qDebug() << "MetaData::saveDirInfo: could not open .DirInfo to write at path: " << path_
+             << ", writing to mirror under ~";
+    QString mirrorPath = READ_ONLY_FS_METADATA_PATH + path_;
+    QDir().mkpath(mirrorPath);
+    dirInfoFile.setFileName(mirrorPath + "/" + ".DirInfo");
+    if ( ! dirInfoFile.open(QIODevice::WriteOnly) ) {
+      qWarning() << "MetaData::saveDirInfo: could not open .DirInfo to write at path: " << mirrorPath;
+      return;
+    }
+  }
+
+  QJsonObject json;
+  QJsonObject windowJson;
+
+  if (windowAttributes_.contains(WINDOW_ORIGIN_X))
+    windowJson[WINDOW_ORIGIN_X] = windowAttributes_[WINDOW_ORIGIN_X].toInt();
+
+  if (windowAttributes_.contains(WINDOW_ORIGIN_Y))
+    windowJson[WINDOW_ORIGIN_Y] = windowAttributes_[WINDOW_ORIGIN_Y].toInt();
+
+  if (windowAttributes_.contains(WINDOW_HEIGHT))
+    windowJson[WINDOW_HEIGHT] = windowAttributes_[WINDOW_HEIGHT].toInt();
+
+  if (windowAttributes_.contains(WINDOW_WIDTH))
+    windowJson[WINDOW_WIDTH] = windowAttributes_[WINDOW_WIDTH].toInt();
+
+  json["Window"] = windowJson;
+  QJsonDocument dirInfoDoc(json);
+  dirInfoFile.write(dirInfoDoc.toJson());
+}
+
+bool MetaData::dirInfoDisabledForPath() const
+{
+  // check for a .DisableDirInfo file in the path
+  QStringList splitPath = QDir::toNativeSeparators(path_).split(QDir::separator(), Qt::SkipEmptyParts);
+  QString walkedPath = "/";
+  for (QString directory : splitPath) {
+    walkedPath.append(directory + "/");
+    QFile file(walkedPath + "/" + ".DisableDirInfo");
+    if (file.exists())
+        return true;
+  }
+  return false;
 }
