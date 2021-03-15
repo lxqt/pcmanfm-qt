@@ -263,7 +263,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="563"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Inizio</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="565"/>
@@ -373,12 +373,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="597"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Ascendente</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="598"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Discendente</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="599"/>
@@ -561,7 +561,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="629"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Sensibile alle maiuscole</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="630"/>
@@ -571,12 +571,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="631"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Esci</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="637"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Cartella</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="638"/>
