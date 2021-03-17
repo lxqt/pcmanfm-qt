@@ -6,7 +6,7 @@
     <message>
         <location filename="../../build/filer/ui_about.h" line="134"/>
         <source>About</source>
-        <translation>Sobre</translation>
+        <translation>Acerca</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="135"/>
@@ -629,22 +629,22 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="638"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="640"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="643"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtro</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="646"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>C&amp;riar novo</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="649"/>
@@ -706,17 +706,17 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="637"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pasta</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="639"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>Ficheiro em &amp;branco</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="641"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Localizar &amp;ficheiros</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="642"/>
@@ -726,7 +726,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="644"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrar por linha...</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="645"/>
@@ -928,7 +928,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Limpar texto (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
@@ -1056,7 +1056,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="713"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Ecrã</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="717"/>
@@ -1077,37 +1077,37 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="729"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoritos:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="732"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir no separador atual</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="733"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir em novo separador</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="734"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir em nova janela</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="739"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Apagar ficheiros em suportes removíveis em vez de criação de &quot;caixote do lixo&quot;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="740"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmar antes de mover ficheiros para &quot;caixote do lixo&quot;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="741"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Não perguntar opções no lançamento de ficheiro executável</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="742"/>
@@ -1212,27 +1212,27 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="748"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Interface do utilizador</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="750"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Tratar ficheiros de cópia de segurança como ocultos</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="751"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar sempre os nomes completos dos ficheiros</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="752"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar ícones de ficheiros ocultos sombreados</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="759"/>
         <source>Show in places</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar em locais</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="764"/>
@@ -1247,27 +1247,27 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="768"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation>Caixote do lixo</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="770"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Computador</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="772"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicações</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="774"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Dispositivos</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="776"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Rede</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="783"/>
@@ -1277,22 +1277,22 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="797"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Modelos</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="798"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar apenas modelos definidos pelo utilizador no menu</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="799"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar apenas um modelo para cada tipo MIME</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="800"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar aplicação predefinida após a criação a partir do modelo</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="782"/>
@@ -1317,12 +1317,12 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="793"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Comando de trocar &amp;utilizador:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="796"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>In&amp;tegração do arquivador:</translation>
     </message>
     <message>
         <source>Close tab containing removable medium</source>
@@ -1364,12 +1364,12 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="789"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar separador con&amp;tendo meio removível</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="790"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterar pasta no separador para pasta pessoal</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="791"/>
