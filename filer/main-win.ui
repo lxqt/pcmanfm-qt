@@ -106,7 +106,7 @@
      <x>0</x>
      <y>0</y>
      <width>460</width>
-     <height>24</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -200,6 +200,7 @@
     <addaction name="actionTrash"/>
     <addaction name="actionNetwork"/>
     <addaction name="actionApplications"/>
+    <addaction name="actionGoToFolder"/>
     <addaction name="separator"/>
     <addaction name="actionGoBack"/>
     <addaction name="actionGoForward"/>
@@ -718,6 +719,20 @@
    </property>
    <property name="text">
     <string>Filter</string>
+   </property>
+  </action>
+  <action name="actionGoToFolder">
+   <property name="icon">
+    <iconset theme="folder-open"/>
+   </property>
+   <property name="text">
+    <string>&amp;Go To Folder</string>
+   </property>
+   <property name="toolTip">
+    <string>Go To Folder</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+G</string>
    </property>
   </action>
  </widget>

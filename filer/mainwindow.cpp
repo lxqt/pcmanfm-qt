@@ -30,6 +30,8 @@
 #include <QShortcut>
 #include <QKeySequence>
 #include <QDebug>
+#include <QCompleter>
+#include <QFileSystemModel>
 
 #include "tabpage.h"
 #include "filelauncher.h"
@@ -44,6 +46,7 @@
 #include "../libfm-qt/path.h"
 #include "metadata.h"
 #include "windowregistry.h"
+#include "gotofolderwindow.h"
 
 // #include "qmodeltest/modeltest.h"
 
@@ -524,6 +527,16 @@ void MainWindow::on_actionDetailedList_triggered() {
 
 void MainWindow::on_actionThumbnailView_triggered() {
   currentPage()->setViewMode(Fm::FolderView::ThumbnailMode);
+}
+
+void MainWindow::on_actionGoToFolder_triggered() {
+  GotoFolderDialog* gotoFolderDialog = new GotoFolderDialog(this);
+  int code = gotoFolderDialog->exec();
+  if (code == QDialog::Accepted) {
+    FmPath* path = fm_path_new_for_path(gotoFolderDialog->getPath().toLatin1().data());
+    chdir(path);
+    fm_path_unref(path);
+  }
 }
 
 void MainWindow::onTabBarCloseRequested(int index) {
