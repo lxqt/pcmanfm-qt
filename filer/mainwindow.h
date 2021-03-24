@@ -86,6 +86,7 @@ protected Q_SLOTS:
   void on_actionCompactView_triggered();
   void on_actionDetailedList_triggered();
   void on_actionThumbnailView_triggered();
+  void on_actionGoToFolder_triggered();
 
   void on_actionGo_triggered();
   void on_actionShowHidden_triggered(bool check);
