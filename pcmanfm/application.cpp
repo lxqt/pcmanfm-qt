@@ -339,7 +339,7 @@ int Application::exec() {
     // So initially g_volume_monitor_get_volumes() returns nothing, but shortly after that
     // we get volume-added signals for all of the volumes. This is not what we want.
     // So, we wait for 3 seconds here to let it finish device discovery.
-    QTimer::singleShot(3000, this, SLOT(initVolumeManager()));
+    QTimer::singleShot(3000, this, &Application::initVolumeManager);
 
     return QCoreApplication::exec();
 }
@@ -905,7 +905,7 @@ void Application::onScreenDestroyed(QObject* screenObj) {
             }
         }
         if(reloadNeeded) {
-            QTimer::singleShot(0, this, SLOT(reloadDesktopsAsNeeded()));
+            QTimer::singleShot(0, this, &Application::reloadDesktopsAsNeeded);
         }
     }
 }

@@ -442,7 +442,7 @@ void TabPage::onFolderFinishLoading() {
     // After finishing loading the folder, the model is updated, but Qt delays the UI update
     // for performance reasons. Therefore at this point the UI is not up to date.
     // For example, the scrollbar ranges are not updated yet. We solve this by installing an Qt timeout handler.
-    QTimer::singleShot(10, this, SLOT(onUiUpdated()));
+    QTimer::singleShot(10, this, &TabPage::onUiUpdated);
 }
 
 void TabPage::onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity severity, Fm::Job::ErrorAction& response) {
@@ -529,7 +529,7 @@ void TabPage::onFolderRemoved() {
     // Maybe it's the problem of glib mainloop integration?
     // Call it when idle works, though.
     if(settings.closeOnUnmount()) {
-        QTimer::singleShot(0, this, SLOT(deleteLater()));
+        QTimer::singleShot(0, this, &TabPage::deleteLater);
     }
     else {
         chdir(Fm::FilePath::homeDir());
