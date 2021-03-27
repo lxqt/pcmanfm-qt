@@ -84,7 +84,7 @@
             <item row="2" column="0">
              <widget class="QCheckBox" name="spatialMode">
               <property name="text">
-               <string>Spatial browsing mode (folders open in a new window)</string>
+               <string>Spatial mode (folders open in a new window)</string>
               </property>
              </widget>
             </item>
