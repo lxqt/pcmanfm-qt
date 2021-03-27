@@ -448,8 +448,12 @@ bool Settings::saveFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Places"));
-    QStringList hiddenPlaces = hiddenPlaces_.values();
-    settings.setValue(QStringLiteral("HiddenPlaces"), hiddenPlaces);
+#if (QT_VERSION >= QT_VERSION_CHECK(5,14,0))
+    QStringList hiddenPlacesList(hiddenPlaces_.begin(), hiddenPlaces_.end());
+#else
+    QStringList hiddenPlacesList = hiddenPlaces_.values();
+#endif
+    settings.setValue(QStringLiteral("HiddenPlaces"), hiddenPlacesList);
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Window"));
