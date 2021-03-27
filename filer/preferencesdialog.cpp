@@ -120,6 +120,7 @@ void PreferencesDialog::initIconThemes(Settings& settings) {
   }
 }
 
+/*
 void PreferencesDialog::initArchivers(Settings& settings) {
   const GList* allArchivers = fm_archiver_get_all();
   int i = 0;
@@ -130,6 +131,7 @@ void PreferencesDialog::initArchivers(Settings& settings) {
       ui.archiver->setCurrentIndex(i);
   }
 }
+*/
 
 void PreferencesDialog::initDisplayPage(Settings& settings) {
     initIconThemes(settings);
@@ -182,10 +184,8 @@ void PreferencesDialog::initUiPage(Settings& settings) {
 }
 
 void PreferencesDialog::initBehaviorPage(Settings& settings) {
-  ui.singleClick->setChecked(settings.singleClick());
   ui.spatialMode->setChecked(settings.spatialMode());
   ui.dirInfoWrite->setChecked(settings.dirInfoWrite());
-  ui.autoSelectionDelay->setValue(double(settings.autoSelectionDelay()) / 1000);
 
   ui.bookmarkOpenMethod->setCurrentIndex(settings.bookmarkOpenMethod());
 
@@ -243,7 +243,7 @@ void PreferencesDialog::initTerminals(Settings& settings) {
 }
 
 void PreferencesDialog::initAdvancedPage(Settings& settings) {
-  initArchivers(settings);
+  // initArchivers(settings);
   initTerminals(settings);
   ui.suCommand->setText(settings.suCommand());
 
@@ -302,10 +302,8 @@ void PreferencesDialog::applyUiPage(Settings& settings) {
 }
 
 void PreferencesDialog::applyBehaviorPage(Settings& settings) {
-  settings.setSingleClick(ui.singleClick->isChecked());
   settings.setSpatialMode(ui.spatialMode->isChecked());
   settings.setDirInfoWrite(ui.dirInfoWrite->isChecked());
-  settings.setAutoSelectionDelay(int(ui.autoSelectionDelay->value() * 1000));
 
   settings.setBookmarkOpenMethod(OpenDirTargetType(ui.bookmarkOpenMethod->currentIndex()));
 
@@ -338,7 +336,7 @@ void PreferencesDialog::applyVolumePage(Settings& settings) {
 void PreferencesDialog::applyAdvancedPage(Settings& settings) {
   settings.setTerminal(ui.terminal->currentText());
   settings.setSuCommand(ui.suCommand->text());
-  settings.setArchiver(ui.archiver->itemData(ui.archiver->currentIndex()).toString());
+  // settings.setArchiver(ui.archiver->itemData(ui.archiver->currentIndex()).toString());
 
   settings.setOnlyUserTemplates(ui.onlyUserTemplates->isChecked());
   settings.setTemplateTypeOnce(ui.templateTypeOnce->isChecked());

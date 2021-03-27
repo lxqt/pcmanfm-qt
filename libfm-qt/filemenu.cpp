@@ -189,6 +189,8 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   g_list_foreach(items, (GFunc)fm_file_action_item_unref, NULL);
   g_list_free(items);
 #endif
+
+/*
   // archiver integration
   // FIXME: we need to modify upstream libfm to include some Qt-based archiver programs.
   if(!allVirtual_) {
@@ -215,6 +217,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
       }
     }
   }
+*/
 
   separator2_ = addSeparator();
 
@@ -366,6 +369,7 @@ void FileMenu::setUseTrash(bool trash) {
   }
 }
 
+/*
 void FileMenu::onCompress() {
   FmArchiver* archiver = fm_archiver_get_default();
   if(archiver) {
@@ -392,5 +396,6 @@ void FileMenu::onExtractHere() {
     fm_path_list_unref(paths);
   }
 }
+*/
 
 } // namespace Fm

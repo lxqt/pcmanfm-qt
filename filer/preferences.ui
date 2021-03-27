@@ -81,36 +81,6 @@
             <string>Browsing</string>
            </property>
            <layout class="QGridLayout" name="gridLayout">
-            <item row="0" column="0">
-             <widget class="QCheckBox" name="singleClick">
-              <property name="text">
-               <string>Open files with single click</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="label">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
-              <property name="text">
-               <string>Delay of auto-selection in single click mode (0 to disable)</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QDoubleSpinBox" name="autoSelectionDelay">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
-              <property name="suffix">
-               <string> sec</string>
-              </property>
-              <property name="singleStep">
-               <double>0.100000000000000</double>
-              </property>
-             </widget>
-            </item>
             <item row="2" column="0">
              <widget class="QCheckBox" name="spatialMode">
               <property name="text">
@@ -694,19 +664,6 @@
               </property>
              </widget>
             </item>
-            <item row="3" column="0">
-             <widget class="QLabel" name="label_5">
-              <property name="text">
-               <string>Archiver in&amp;tegration:</string>
-              </property>
-              <property name="buddy">
-               <cstring>archiver</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="QComboBox" name="archiver"/>
-            </item>
             <item row="0" column="1">
              <widget class="QComboBox" name="terminal">
               <property name="editable">
@@ -785,7 +742,6 @@
   <tabstop>rememberWindowSize</tabstop>
   <tabstop>fixedWindowWidth</tabstop>
   <tabstop>fixedWindowHeight</tabstop>
-  <tabstop>singleClick</tabstop>
   <tabstop>configmDelete</tabstop>
   <tabstop>useTrash</tabstop>
   <tabstop>mountOnStartup</tabstop>
@@ -795,7 +751,6 @@
   <tabstop>goHomeOnUnmount</tabstop>
   <tabstop>terminal</tabstop>
   <tabstop>suCommand</tabstop>
-  <tabstop>archiver</tabstop>
  </tabstops>
  <resources/>
  <connections>
@@ -848,22 +803,6 @@
    </hints>
   </connection>
   <connection>
-   <sender>singleClick</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>label</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>237</x>
-     <y>39</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>237</x>
-     <y>39</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>rememberWindowSize</sender>
    <signal>toggled(bool)</signal>
    <receiver>fixedWindowWidth</receiver>
@@ -876,22 +815,6 @@
     <hint type="destinationlabel">
      <x>462</x>
      <y>386</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>singleClick</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>autoSelectionDelay</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>237</x>
-     <y>39</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>237</x>
-     <y>39</y>
     </hint>
    </hints>
   </connection>

@@ -163,10 +163,11 @@ protected Q_SLOTS:
 #ifdef CUSTOM_ACTIONS
   void onCustomActionTrigerred();
 #endif
+/*
   void onCompress();
   void onExtract();
   void onExtractHere();
-
+*/
   void onCutTriggered();
   void onCopyTriggered();
   void onPasteTriggered();
