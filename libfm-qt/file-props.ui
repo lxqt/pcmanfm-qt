@@ -17,7 +17,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>File Properties</string>
+   <string>Info</string>
   </property>
   <property name="windowIcon">
    <iconset theme="document-properties">

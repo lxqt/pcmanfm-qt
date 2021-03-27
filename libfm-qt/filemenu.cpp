@@ -218,7 +218,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
 
   separator2_ = addSeparator();
 
-  propertiesAction_ = new QAction(QIcon::fromTheme("document-properties"), tr("Properties"), this);
+  propertiesAction_ = new QAction(QIcon::fromTheme("document-properties"), tr("Get Info"), this);
   connect(propertiesAction_, &QAction::triggered, this, &FileMenu::onFilePropertiesTriggered);
   addAction(propertiesAction_);
 }

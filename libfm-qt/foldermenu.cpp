@@ -70,7 +70,7 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
 
   separator4_ = addSeparator();
 
-  propertiesAction_ = new QAction(tr("Folder Pr&operties"), this);
+  propertiesAction_ = new QAction(tr("Get Info"), this);
   addAction(propertiesAction_);
   connect(propertiesAction_, &QAction::triggered, this, &FolderMenu::onPropertiesActionTriggered);
 }

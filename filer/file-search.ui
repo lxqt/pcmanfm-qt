@@ -249,7 +249,7 @@
      </widget>
      <widget class="QWidget" name="tab_3">
       <attribute name="title">
-       <string>Properties</string>
+       <string>Info</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_9">
        <item>

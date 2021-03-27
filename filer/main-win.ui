@@ -126,7 +126,6 @@
     <addaction name="menuCreateNew"/>
     <addaction name="separator"/>
     <addaction name="actionFileProperties"/>
-    <addaction name="actionFolderProperties"/>
     <addaction name="separator"/>
     <addaction name="actionCloseTab"/>
     <addaction name="actionCloseWindow"/>
@@ -626,15 +625,10 @@
   </action>
   <action name="actionFileProperties">
    <property name="text">
-    <string>File &amp;Properties</string>
+    <string>Get &amp;Info</string>
    </property>
    <property name="shortcut">
-    <string>Alt+Return</string>
-   </property>
-  </action>
-  <action name="actionFolderProperties">
-   <property name="text">
-    <string>&amp;Folder Properties</string>
+    <string>Ctrl+I</string>
    </property>
   </action>
   <action name="actionCaseSensitive">
