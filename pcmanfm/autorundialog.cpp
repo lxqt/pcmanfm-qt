@@ -123,7 +123,8 @@ void AutoRunDialog::onContentTypeFinished(GMount* mount, GAsyncResult* res, Auto
                 QIcon icon = Fm::IconInfo::fromGIcon(gicon)->qicon();
                 QString text = QString::fromUtf8(g_app_info_get_name(app));
                 QListWidgetItem* item = new QListWidgetItem(icon, text);
-                item->setData(Qt::UserRole, qVariantFromValue<void*>(app));
+                // NOTE (void*) casting is needed as GAppInfo does not inherit from QObject
+                item->setData(Qt::UserRole, QVariant::fromValue((void*)app));
                 pThis->ui.listWidget->insertItem(pos, item);
             }
         }

@@ -305,7 +305,12 @@ bool Settings::loadFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Places"));
-    hiddenPlaces_ = settings.value(QStringLiteral("HiddenPlaces")).toStringList().toSet();
+    QStringList hiddenPlacesList = settings.value(QStringLiteral("HiddenPlaces")).toStringList();
+#if (QT_VERSION >= QT_VERSION_CHECK(5,14,0))
+    hiddenPlaces_ = QSet<QString>(hiddenPlacesList.begin(), hiddenPlacesList.end());
+#else
+    hiddenPlaces_ = hiddenPlacesList.toSet();
+#endif
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Window"));
@@ -443,8 +448,12 @@ bool Settings::saveFile(QString filePath) {
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Places"));
-    QStringList hiddenPlaces = hiddenPlaces_.toList();
-    settings.setValue(QStringLiteral("HiddenPlaces"), hiddenPlaces);
+#if (QT_VERSION >= QT_VERSION_CHECK(5,14,0))
+    QStringList hiddenPlacesList(hiddenPlaces_.begin(), hiddenPlaces_.end());
+#else
+    QStringList hiddenPlacesList = hiddenPlaces_.values();
+#endif
+    settings.setValue(QStringLiteral("HiddenPlaces"), hiddenPlacesList);
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Window"));
