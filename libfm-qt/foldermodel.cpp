@@ -35,7 +35,8 @@
 using namespace Fm;
 
 FolderModel::FolderModel() :
-  folder_(NULL) {
+  folder_(NULL),
+  computerFolder_(NULL) {
 /*
     ColumnIcon,
     ColumnName,
@@ -55,6 +56,9 @@ FolderModel::~FolderModel() {
 
   if(folder_)
     setFolder(NULL);
+
+  if (computerFolder_)
+    g_object_unref(computerFolder_);
 
   // if the thumbnail requests list is not empty, cancel them
   if(!thumbnailResults.empty()) {
@@ -474,6 +478,23 @@ void FolderModel::releaseThumbnails(int size) {
         FolderModelItem& item = *itemIt;
         item.removeThumbnail(size);
       }
+    }
+  }
+}
+
+void FolderModel::addComputerFiles()
+{
+  if ( ! computerFolder_ ) {
+    computerFolder_ = fm_folder_from_path(fm_path_new_for_uri("computer://"));
+    if (computerFolder_) {
+      g_signal_connect(computerFolder_, "start-loading", G_CALLBACK(onStartLoading), this);
+      g_signal_connect(computerFolder_, "finish-loading", G_CALLBACK(onFinishLoading), this);
+      g_signal_connect(computerFolder_, "files-added", G_CALLBACK(onFilesAdded), this);
+      g_signal_connect(computerFolder_, "files-changed", G_CALLBACK(onFilesChanged), this);
+      g_signal_connect(computerFolder_, "files-removed", G_CALLBACK(onFilesRemoved), this);
+      // handle the case if the folder is already loaded
+      if(fm_folder_is_loaded(computerFolder_))
+        insertFiles(0, fm_folder_get_files(computerFolder_));
     }
   }
 }
