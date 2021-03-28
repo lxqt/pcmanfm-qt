@@ -52,7 +52,7 @@ PlacesModel::PlacesModel(QObject* parent):
 
   FmPath* path;
   // FIXME: add an option to hide network:///
-  if(true) {
+  if(false) {
     path = fm_path_new_for_uri("computer:///");
     computerItem = new PlacesModelItem("computer", tr("Computer"), path);
     fm_path_unref(path);
