@@ -91,6 +91,7 @@ DesktopWindow::DesktopWindow(int screenNum):
         Settings& settings = static_cast<Application* >(qApp)->settings();
 
         model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
+        model_->addComputerFiles();
         folder_ = reinterpret_cast<FmFolder*>(g_object_ref(model_->folder()));
 
         proxyModel_ = new Fm::ProxyFolderModel();

@@ -86,6 +86,8 @@ public:
   void cacheThumbnails(int size);
   void releaseThumbnails(int size);
 
+  void addComputerFiles();
+
 Q_SIGNALS:
   void thumbnailLoaded(const QModelIndex& index, int size);
 
@@ -108,6 +110,7 @@ protected:
 
 private:
   FmFolder* folder_;
+  FmFolder* computerFolder_; // the items added for drives on the desktop
   // FIXME: should we use a hash table here so item lookup becomes much faster?
   QList<FolderModelItem> items;
 
