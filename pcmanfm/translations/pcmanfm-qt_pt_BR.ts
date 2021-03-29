@@ -861,7 +861,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="524"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Por tempo de c&amp;riação</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
@@ -2080,18 +2080,20 @@ somente se houver mais de uma aba.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">O thumbnailer embutido cria miniaturas de imagens que são suportadas pelo Qt.
+
+Normalmente, a maioria dos tipos de imagem é compatível. O limite de tamanho padrão é 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Limite de tamanho de imagem para miniaturizador integrado:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2099,17 +2101,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Se existentes, miniaturas externas são usadas para vídeos, documentos PDF, etc.
+
+Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Limite de tamanho de arquivo para miniaturizadores externos:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nenhum limite</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2264,7 +2268,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1018"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Não é possível abrir como Admin.</translation>
     </message>
 </context>
 </TS>
