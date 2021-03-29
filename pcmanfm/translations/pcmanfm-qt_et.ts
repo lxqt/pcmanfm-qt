@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>Teave</translation>
+        <translation>Rakenduse teave</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -518,7 +518,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>Peidetud otseteed</translation>
+        <translation>Peidetud kiirklahvid</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
@@ -538,141 +538,141 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Tühjenda ja eemalda filtririba</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Säti fookus külgpaneelile</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Säti fookus asukoharibale</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+D</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Järgmine kaart</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Eelmine kaart</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageDown</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageUp</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Number</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Säti fookus kaardile</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Number</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Backspace</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>Liigu üles</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Otsinguvaade</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+Insert</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Aseta ajutisele filtriribale</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Drag+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Lohistamisel tõsta fail uude kohta</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drag+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Lohistamisel kopeeri fail uude kohta</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Drag+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Lohistamisel tee failist sümbolviide</translation>
     </message>
 </context>
 <context>
@@ -700,7 +700,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tööriistad</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="269"/>
@@ -715,7 +715,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="275"/>
         <source>Alt+Up</source>
-        <translation>Alt + üles</translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="284"/>
@@ -740,7 +740,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="308"/>
         <source>Go</source>
-        <translation>Mine</translation>
+        <translation>Liigu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="317"/>
@@ -900,12 +900,12 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="524"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Loomisaja alusel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kustutamise aja alusel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="540"/>
@@ -920,7 +920,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="556"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Rühma alusel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="564"/>
@@ -930,7 +930,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="572"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Peidetud failid lõpus</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="580"/>
@@ -940,7 +940,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="633"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="682"/>
@@ -965,7 +965,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Ava kaart juu&amp;rkasutajana</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="730"/>
@@ -980,7 +980,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="866"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Ava filtririba ja &amp;säti fookus sinna</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1020,17 +1020,17 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="905"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Näita pisipilte</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="908"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Näita pisipilte</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="916"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Külgpaneel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="919"/>
@@ -1040,12 +1040,12 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="924"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Peidetud &amp;kiirklahvid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="929"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Ava kaart &amp;administraatorina</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
@@ -1166,7 +1166,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="610"/>
         <source>Alt+Left</source>
-        <translation>Alt+vasak</translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="619"/>
@@ -1286,13 +1286,13 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation>&amp;Spikker</translation>
+        <translation>&amp;Abiteave</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="99"/>
         <location filename="../main-win.ui" line="123"/>
         <source>&amp;View</source>
-        <translation>&amp;Vaade</translation>
+        <translation>&amp;Vaata</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="103"/>
@@ -1302,7 +1302,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="169"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Redigeeri</translation>
+        <translation>&amp;Muuda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="187"/>
@@ -1471,32 +1471,32 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../desktopentrydialog.cpp" line="25"/>
         <source>Command:</source>
-        <translation type="unfinished">Käsk:</translation>
+        <translation>Käsk:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="28"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="53"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali ikoon</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="55"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Pildid (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="81"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali käivitusfail</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="89"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali fail</translation>
     </message>
 </context>
 <context>
@@ -1534,7 +1534,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="251"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali taustapilt</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="255"/>
@@ -1544,7 +1544,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="297"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali taustapiltide kaust</translation>
     </message>
 </context>
 <context>
@@ -1601,7 +1601,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../desktopwindow.cpp" line="1032"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Loo käivitaja</translation>
+        <translation>Loo käivitaja</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1035"/>
@@ -1622,7 +1622,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kustuta tekst (Ctrl+K või Esc)</translation>
     </message>
 </context>
 <context>
@@ -1630,7 +1630,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../mainwindow.cpp" line="139"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Juurkasutaja vaade</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="698"/>
@@ -1743,14 +1743,14 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Palju faile</translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Kas sa soovid avada selle %1 faili?</numerusform>
+            <numerusform>Kas sa soovid avada need %1 faili?</numerusform>
         </translation>
     </message>
     <message>
@@ -1920,18 +1920,18 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kui see valik on tegemata, siis kasutame töölauakeskonna seadistusi.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaatse valimise väljalülitamiseks kirjuta väärtuseks 0.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Viivitus automaatsel valimisel ühe klõpsu režiimis:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1973,7 +1973,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali ka ümbernimetatud failid</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="288"/>
@@ -2001,7 +2001,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../preferences.ui" line="365"/>
         <source>Treat backup files as hidden</source>
-        <translation>Varufaile koheldakse peidetuina</translation>
+        <translation>Varundatud faile koheldakse peidetuina</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="385"/>
@@ -2050,12 +2050,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="529"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Säti fookus viimati avatud kaardile</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Uues aknas ava viimati avatud olnud kaardid</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
@@ -2063,18 +2063,20 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lõimitud pisipildistaja teeb pisipilte kõikidest pildifailidest, mida Qt suudab lugeda.
+
+Enamus tavalisi pildifaile on seega toetatud. Vaikimisi failisuurus on 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pisipildistaja failisuuruse ülempiir:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2082,22 +2084,24 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Kui nad on olemas, siis kasutame väliseid pisipildistajaid videote, pdf-failide ja muude sarnaste failide jaoks.
+
+Väärtus -1 tähendab, et failisuuruse piir puudub (see on ka vaikimisi väärtus).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Välise pisipildistaja failisuurus:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Piir puudub</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Näited:&lt;br&gt;Terminali jaoks: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Kasutaja vahetamiseks: &lt;i&gt;lxsudo %s&lt;/i&gt; või &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; on käsurea näited, mida saad kasutada terminalis.&lt;br&gt; Oluline: Kuna ainult sudo kasutamine tekitab kaose seadistuste faili õigustes, siis palun kasuta rakendust lxsudo.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="900"/>
@@ -2107,32 +2111,32 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Järjehoidjate menüü:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Näita kaustade kontekstimenüüd Ctrl + hiire parema klahvi klõpsamisel</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Ava kaustad uute kaartidena nii kaugel kui võimalik</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasuta ühe akna režiimi</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="375"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Alati näita tegelikke failinimesid</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="392"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Ära näita failide teabemulle</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="604"/>
@@ -2262,7 +2266,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1018"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei saa avada administraatorina.</translation>
     </message>
 </context>
 </TS>
