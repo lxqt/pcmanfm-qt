@@ -420,32 +420,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="341"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Перетворити зображення на основі даних EXIF</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="348"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Власне тло для кожного монітора</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="375"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Слайд-шоу</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="381"/>
         <source>Enable Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Увімкнути слайд-шоу</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="393"/>
         <source>Wallpaper image folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Тека зображень тла:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="400"/>
         <source>Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>Переглянути</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="407"/>
@@ -460,12 +460,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation type="unfinished"></translation>
+        <translation>Інтервали менше 5 хвилин не враховуватимуться</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="433"/>
         <source>Interval:</source>
-        <translation type="unfinished"></translation>
+        <translation>Інтервал:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="440"/>
@@ -480,12 +480,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="489"/>
         <source>Randomize the slide show</source>
-        <translation type="unfinished"></translation>
+        <translation>Випадковий порядок показу слайдів</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="522"/>
         <source>Visible Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Видимі ярлики</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="528"/>
@@ -538,7 +538,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Сфокусуватися на перегляді, очистити панель фільтра</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -548,7 +548,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Сфокусуватися на бічній панелі</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -559,7 +559,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Сфокусуватися на полі шляху</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -622,7 +622,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>Вгору</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
@@ -632,7 +632,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Вікно пошуку</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
@@ -642,7 +642,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Вставити до тимчасового фільтра</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -672,7 +672,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Створювати символічне посилання перетягуванням</translation>
     </message>
 </context>
 <context>
@@ -900,7 +900,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="524"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>За часом ст&amp;ворення</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
@@ -965,7 +965,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="716"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити вкладку в режимі &amp;root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="730"/>
@@ -980,27 +980,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="866"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Показати/сфокусуватися на панелі фільтру</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Показати панель фільтра</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="872"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="880"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>Р&amp;озділити вікно</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="883"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Розділити вікно</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="886"/>
@@ -1010,7 +1010,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="891"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Копіювати повний шлях</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="894"/>
@@ -1025,7 +1025,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="908"/>
         <source>Show Thumbnails</source>
-        <translation>Показувати ескізи</translation>
+        <translation>Показувати мініатюри</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="916"/>
@@ -1040,12 +1040,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="924"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Сховані &amp;комбінації клавіш</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="929"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити вкладку в режимі &amp;адміністратора</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
@@ -1055,7 +1055,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="769"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Очистити всі фільтри</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="772"/>
@@ -1095,12 +1095,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="855"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Масове перейменування</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="858"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished">Групове перейменування</translation>
+        <translation>Масове перейменування</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="861"/>
@@ -1115,7 +1115,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="761"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Закріпити панель &amp;фільтрів</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="803"/>
@@ -1471,32 +1471,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="25"/>
         <source>Command:</source>
-        <translation type="unfinished">Команда:</translation>
+        <translation>Команда:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="28"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL-адреса:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="53"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати піктограму</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="55"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Зображення (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="81"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати виконуваний файл</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="89"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати файл</translation>
     </message>
 </context>
 <context>
@@ -1504,12 +1504,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Fill with background color only</source>
-        <translation>Заповнити тільки кольором фону</translation>
+        <translation>Заповнити лише кольором фону</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>Розтягнути для заповнення цілого екрану</translation>
+        <translation>Розтягнути для заповнення цілого екрана</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
@@ -1524,7 +1524,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>Розмножити малюнок для заповнення всього екрану</translation>
+        <translation>Розмножити малюнок для заповнення всього екрана</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="58"/>
@@ -1534,7 +1534,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="251"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати тло</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="255"/>
@@ -1544,7 +1544,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="297"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати теку зображень тла</translation>
     </message>
 </context>
 <context>
@@ -1552,21 +1552,21 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Смітник (один елемент)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Смітник (%Ln елемент)</numerusform>
+            <numerusform>Смітник (%Ln елементи)</numerusform>
+            <numerusform>Смітник (%Ln елементів)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="304"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Смітник (порожній)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="339"/>
@@ -1592,7 +1592,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="970"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Спорожнити смітник</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1026"/>
@@ -1602,7 +1602,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1032"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Створити кнопку запуску</translation>
+        <translation>Створити запускач</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1035"/>
@@ -1615,7 +1615,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="92"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Фільтр:</translation>
     </message>
 </context>
 <context>
@@ -1623,7 +1623,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="62"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистити текст (Ctrl+K або Esc)</translation>
     </message>
 </context>
 <context>
@@ -1631,7 +1631,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="139"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Режим root</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="698"/>
@@ -1730,7 +1730,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../tabpage.cpp" line="710"/>
         <location filename="../tabpage.cpp" line="724"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Посилання на</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="736"/>
@@ -1747,15 +1747,15 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Багато файлів</translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Бажаєте відкрити цей %1 файл?</numerusform>
+            <numerusform>Бажаєте відкрити ці %1 файли?</numerusform>
+            <numerusform>Бажаєте відкрити ці %1 файлів?</numerusform>
         </translation>
     </message>
     <message>
@@ -1810,7 +1810,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати новостворені файли</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1830,7 +1830,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="325"/>
         <source>Size of thumbnails:</source>
-        <translation>Розмір ескізів:</translation>
+        <translation>Розмір мініатюр:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="339"/>
@@ -1915,7 +1915,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="614"/>
         <source>Only show thumbnails for local files</source>
-        <translation>Показати мініатюри тільки для локальних файлів</translation>
+        <translation>Показувати мініатюри лише для локальних файлів</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
@@ -1925,18 +1925,18 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Якщо це не позначено, буде використано параметр стільничного середовища.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановіть нуль, щоб вимкнути автовибір.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Затримка автовибору в режимі одинарного клацання:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1968,17 +1968,17 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="372"/>
         <location filename="../preferences.ui" line="382"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Потрібно перезапустити програму, щоб всі зміни набули чинності</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Запускати виконувані файли без підтвердження</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейменовані файли також буде вибрано</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="288"/>
@@ -2050,18 +2050,18 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="511"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation>Коли невідмічено, панель вкладок буде показано
-тільки тоді, якщо є більше ніж одна вкладка.</translation>
+        <translation>Коли не позначено, панель вкладок буде показано
+лише якщо є більше ніж одна вкладка.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="529"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемикатися на щойно відкриту вкладку</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Повторно відкрити останні вкладки вікна в новому вікні</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
@@ -2069,18 +2069,20 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Вбудований створювач мініатюр створює мініатюри зображень підтримуваних Qt.
+
+Зазвичай підтримуються більшість типів зображень. Типове обмеження розміру — 4 Мб.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Обмеження розміру зображення для вбудованого створювача мініатюр:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> МіБ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2088,57 +2090,59 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Якщо наявні, зовнішні створювачі мініатюр застосовуються для відео, PDF-документів тощо.
+
+Значення «1» означає, що розмір файлу не обмежено (типово).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Обмеження розміру файлу для зовнішніх створювачів мініатюр:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Без обмеження</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Приклади:&lt;br&gt;Для термінала: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Для зміни користувача: &lt;i&gt;lxsudo %s&lt;/i&gt; або &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; — це командний рядок, який ви хочете виконати за допомогою термінала або su.&lt;br&gt; Важливо: Застосовуйте lxsudo, окреме sudo зламає дозволи файлу налаштувань.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="900"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Щоб зміни набрали чинності, потрібно перезапустити програму.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Меню закладок:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Показувати контекстне меню натисканням Ctrl + клацнути правою кнопкою миші</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкривати теки в нових вкладках якнайдалі</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Режим одного вікна</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="375"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Завжди показувати справжні назви файлів</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="392"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Не показувати підказки до файлів</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="604"/>
@@ -2208,12 +2212,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="851"/>
         <source>Show only user defined templates in menu</source>
-        <translation>Показати тільки користувацькі шаблони в меню</translation>
+        <translation>Показувати лише користувацькі шаблони в меню</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="858"/>
         <source>Show only one template for each MIME type</source>
-        <translation>Показати тільки шаблони для кожного типу MIME</translation>
+        <translation>Показувати лише один шаблон для кожного типу MIME</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="865"/>
@@ -2231,22 +2235,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейменування файлів...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Перервати</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Попередження</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейменування перервано.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
@@ -2258,17 +2262,17 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося перейменувати жодного файлу.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="111"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалось перейменувати деякі файли.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1018"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдається відкрити в режимі адміністратора.</translation>
     </message>
 </context>
 </TS>
