@@ -701,7 +701,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="272"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="275"/>
@@ -891,7 +891,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="524"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Ανά &amp;χρόνο δημιουργίας</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
@@ -2065,18 +2065,20 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο ενσωματωμένος δημιουργός εικόνων επισκόπησης δημιουργεί εικόνες επισκόπησης υποστηριζόμενες απο την Qt.
+
+Συνήθως, υποστηρίζονται οι περισσότεροι τύποι εικόνων. Το προκαθορισμένο μέγεθος είναι 4MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Όριο μεγέθους εικόνας για την δημιουργία επισκόπησης:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2084,17 +2086,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν ισχύει, χρησιμοποιούνται εξωτερικές εικόνες επισκόπησης για βίντεο, έγγραφα PDF, κλπ.
+
+Η τιμή 1 σημαίνει ότι δεν υπάρχει όριο για το μέγεθος του αρχείου (η προκαθορισμένη).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Όριο μεγέθους αρχείου για εξωτερικές εικόνες επισκόπησης:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Χωρίς όριο</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2264,7 +2268,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1018"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδυναμία ανοίγματος ως Διαχειριστής.</translation>
     </message>
 </context>
 </TS>
