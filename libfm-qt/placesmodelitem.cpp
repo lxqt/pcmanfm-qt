@@ -21,6 +21,8 @@
 #include "placesmodelitem.h"
 #include "icontheme.h"
 #include <gio/gio.h>
+#include <QDebug>
+#include <QProcess>
 
 namespace Fm {
 
@@ -131,7 +133,9 @@ PlacesModelVolumeItem::PlacesModelVolumeItem(GVolume* volume):
 void PlacesModelVolumeItem::update() {
   // set title
   char* volumeName = g_volume_get_name(volume_);
+  qDebug() << "probono: PlacesModelVolumeItem::update";
   setText(QString::fromUtf8(volumeName));
+  qDebug() << "probono: volumeName", QString::fromUtf8(volumeName);
   g_free(volumeName);
 
   // set icon
@@ -141,10 +145,12 @@ void PlacesModelVolumeItem::update() {
 
   // set dir path
   GMount* mount = g_volume_get_mount(volume_);
+  qDebug() << "probono: // set dir path";
   if(mount) {
     GFile* mount_root = g_mount_get_root(mount);
     FmPath* mount_path = fm_path_new_for_gfile(mount_root);
     setPath(mount_path);
+    qDebug() << "probono: mount_path:", mount_path;
     fm_path_unref(mount_path);
     g_object_unref(mount_root);
     g_object_unref(mount);
@@ -172,7 +178,36 @@ PlacesModelMountItem::PlacesModelMountItem(GMount* mount):
 
 void PlacesModelMountItem::update() {
   // set title
-  setText(QString::fromUtf8(g_mount_get_name(mount_)));
+  QString mount_name = QString::fromUtf8(g_mount_get_name(mount_));
+  setText(mount_name);
+  qDebug() << "probono: Get the 'Volume label' for the volume";
+  QString displayName;
+#ifdef __FreeBSD__
+  qDebug() << "probono: Using 'fstyp -l /dev/" + mount_name + "' on FreeBSD";
+  // NOTE: foldermodelitem.cpp has similar code for what gets shown in computer:///
+  // NOTE: Alternatively, we could just use mountpoints that have the volume label as their name
+  QProcess p;
+  QString program = "fstyp";
+  QStringList arguments;
+  arguments << "-l" << "/dev/" + mount_name;
+  p.start(program, arguments);
+  p.waitForFinished();
+  QString result(p.readAllStandardOutput());
+  result.replace("\n", "");
+  result = result.trimmed();
+  qDebug() << "probono: result:" << result;
+  if (result.split(" ").length() == 1) {
+      // We got a filesystem but no volume label back, so use the filesystem
+      displayName = result.split(" ")[0];
+      setText(displayName);
+  } else if (result.split(" ").length() == 2) {
+      // We got a filesystem and a volume label back, so use the volume label
+      displayName = result.split(" ")[1];
+      setText(displayName);
+  }
+#else
+  qDebug() << "probono: TODO: To be implemented for this OS";
+#endif
 
   // set path
   GFile* mount_root = g_mount_get_root(mount_);

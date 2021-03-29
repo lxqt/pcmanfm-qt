@@ -19,7 +19,9 @@
 
 
 #include "foldermodelitem.h"
-# include <QFileInfo>
+#include <QFileInfo>
+#include <QDebug>
+#include <QProcess>
 #include "bundle.h"
 
 using namespace Fm;
@@ -27,9 +29,7 @@ using namespace Fm;
 FolderModelItem::FolderModelItem(FmFileInfo* _info):
   info(fm_file_info_ref(_info)) {
   displayName = QString::fromUtf8(fm_file_info_get_disp_name(info));
-  // qDebug("probono: FolderModelItem created for");
-  // qDebug(fm_file_info_get_disp_name(info));
-
+  // qDebug() << "probono: (1) FolderModelItem created for" << displayName;
 
   bool isAppDirOrBundle = checkWhetherAppDirOrBundle(_info);
 
@@ -37,7 +37,6 @@ FolderModelItem::FolderModelItem(FmFileInfo* _info):
 
   // probono: Set some things differently for AppDir/app bundle than for normal folder
   if(isAppDirOrBundle) {
-
 
       QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
       QFileInfo fileInfo = QFileInfo(path);
@@ -63,8 +62,43 @@ FolderModelItem::FolderModelItem(FmFileInfo* _info):
 FolderModelItem::FolderModelItem(const FolderModelItem& other) {
   info = other.info ? fm_file_info_ref(other.info) : NULL;
   displayName = QString::fromUtf8(fm_file_info_get_disp_name(info));
-  // qDebug("probono: FolderModelItem created for");
-  // qDebug(fm_file_info_get_disp_name(info));
+
+  if (displayName == "File System") {
+    displayName = "Startvolume";
+  }
+
+  QString mimetype;
+  mimetype = QString::fromUtf8(fm_mime_type_get_type(fm_mime_type_ref(fm_file_info_get_mime_type(info))));
+  if (mimetype == "inode/mount-point") {
+    qDebug() << "probono: Get the 'Volume label' for the volume";
+#ifdef __FreeBSD__
+    qDebug() << "probono: Using 'fstyp -l /dev/" + displayName + "' on FreeBSD";
+    // NOTE: placesmodelitem.cpp has similar code for what gets shown in the sidebar
+    // NOTE: Alternatively, we could just use mountpoints that have the volume label as their name
+    QProcess p;
+    QString program = "fstyp";
+    QStringList arguments;
+    arguments << "-l" << "/dev/" + displayName;
+    p.start(program, arguments);
+    p.waitForFinished();
+    QString result(p.readAllStandardOutput());
+    result.replace("\n", "");
+    result = result.trimmed();
+    qDebug() << "probono: result:" << result;
+    if (result.split(" ").length() == 1) {
+        // We got a filesystem but no volume label back, so use the filesystem
+        displayName = result.split(" ")[0];
+    } else if (result.split(" ").length() == 2) {
+        // We got a filesystem and a volume label back, so use the volume label
+        displayName = result.split(" ")[1];
+    }
+#else
+    qDebug() << "probono: TODO: To be implemented for this OS";
+#endif
+  }
+
+  // qDebug() << "probono: (2) FolderModelItem created for" << displayName;
+
   icon = other.icon;
   thumbnails = other.thumbnails;
 }
