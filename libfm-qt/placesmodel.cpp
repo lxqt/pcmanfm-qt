@@ -37,58 +37,6 @@ PlacesModel::PlacesModel(QObject* parent):
 
   setColumnCount(2);
 
-  placesRoot = new QStandardItem(tr("Places"));
-  placesRoot->setSelectable(false);
-  placesRoot->setColumnCount(2);
-  appendRow(placesRoot);
-
-  homeItem = new PlacesModelItem("user-home", g_get_user_name(), fm_path_get_home());
-  placesRoot->appendRow(homeItem);
-
-  desktopItem = new PlacesModelItem("user-desktop", tr("Desktop"), fm_path_get_desktop());
-  placesRoot->appendRow(desktopItem);
-
-  createTrashItem();
-
-  FmPath* path;
-  // FIXME: add an option to hide network:///
-  if(false) {
-    path = fm_path_new_for_uri("computer:///");
-    computerItem = new PlacesModelItem("computer", tr("Computer"), path);
-    fm_path_unref(path);
-    placesRoot->appendRow(computerItem);
-  }
-  else
-    computerItem = NULL;
-
-  // probono: We want to use the file manager itself to launch the apps, hence we do not show Applications in the sidebar
-  // probono: TODO: Show it but jump to something like /Applications and/or ~/Applications instead
-  //  // FIXME: add an option to hide applications:///
-  //  const char* applicaion_icon_names[] = {"system-software-install", "applications-accessories", "application-x-executable"};
-  //  // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
-  //  GIcon* gicon = g_themed_icon_new_from_names((char**)applicaion_icon_names, G_N_ELEMENTS(applicaion_icon_names));
-  //  FmIcon* fmicon = fm_icon_from_gicon(gicon);
-  //  g_object_unref(gicon);
-  //  applicationsItem = new PlacesModelItem(fmicon, tr("Applications"), fm_path_get_apps_menu());
-  //  fm_icon_unref(fmicon);
-  // placesRoot->appendRow(applicationsItem);
-
-  // FIXME: add an option to hide network:///
-  if(true) {
-    const char* network_icon_names[] = {"network", "folder-network", "folder"};
-    // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
-    GIcon* gicon = g_themed_icon_new_from_names((char**)network_icon_names, G_N_ELEMENTS(network_icon_names));
-    FmIcon* fmicon = fm_icon_from_gicon(gicon);
-    g_object_unref(gicon);
-    path = fm_path_new_for_uri("network:///");
-    networkItem = new PlacesModelItem(fmicon, tr("Network"), path);
-    fm_icon_unref(fmicon);
-    fm_path_unref(path);
-    placesRoot->appendRow(networkItem);
-  }
-  else
-    networkItem = NULL;
-
   devicesRoot = new QStandardItem(tr("Devices"));
   devicesRoot->setSelectable(false);
   devicesRoot->setColumnCount(2);
@@ -109,6 +57,7 @@ PlacesModel::PlacesModel(QObject* parent):
     GList* l;
     for(l = vols; l; l = l->next) {
         GVolume* volume = G_VOLUME(l->data);
+        qDebug() << "probono: volume:" << volume;
         onVolumeAdded(volumeMonitor, volume, this);
         g_object_unref(volume);
     }
@@ -128,6 +77,60 @@ PlacesModel::PlacesModel(QObject* parent):
         g_object_unref(mount);
     }
     g_list_free(vols);
+
+
+    placesRoot = new QStandardItem(tr("Places"));
+    placesRoot->setSelectable(false);
+    placesRoot->setColumnCount(2);
+    appendRow(placesRoot);
+
+    homeItem = new PlacesModelItem("user-home", g_get_user_name(), fm_path_get_home());
+    placesRoot->appendRow(homeItem);
+
+    desktopItem = new PlacesModelItem("user-desktop", tr("Desktop"), fm_path_get_desktop());
+    placesRoot->appendRow(desktopItem);
+
+    createTrashItem();
+
+    FmPath* path;
+    // FIXME: add an option to hide network:///
+    if(false) {
+      path = fm_path_new_for_uri("computer:///");
+      computerItem = new PlacesModelItem("computer", tr("Computer"), path);
+      fm_path_unref(path);
+      placesRoot->appendRow(computerItem);
+    }
+    else
+      computerItem = NULL;
+
+    // probono: We want to use the file manager itself to launch the apps, hence we do not show Applications in the sidebar
+    // probono: TODO: Show it but jump to something like /Applications and/or ~/Applications instead
+    //  // FIXME: add an option to hide applications:///
+    //  const char* applicaion_icon_names[] = {"system-software-install", "applications-accessories", "application-x-executable"};
+    //  // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
+    //  GIcon* gicon = g_themed_icon_new_from_names((char**)applicaion_icon_names, G_N_ELEMENTS(applicaion_icon_names));
+    //  FmIcon* fmicon = fm_icon_from_gicon(gicon);
+    //  g_object_unref(gicon);
+    //  applicationsItem = new PlacesModelItem(fmicon, tr("Applications"), fm_path_get_apps_menu());
+    //  fm_icon_unref(fmicon);
+    // placesRoot->appendRow(applicationsItem);
+
+    // FIXME: add an option to hide network:///
+    if(true) {
+      const char* network_icon_names[] = {"network", "folder-network", "folder"};
+      // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
+      GIcon* gicon = g_themed_icon_new_from_names((char**)network_icon_names, G_N_ELEMENTS(network_icon_names));
+      FmIcon* fmicon = fm_icon_from_gicon(gicon);
+      g_object_unref(gicon);
+      path = fm_path_new_for_uri("network:///");
+      networkItem = new PlacesModelItem(fmicon, tr("Network"), path);
+      fm_icon_unref(fmicon);
+      fm_path_unref(path);
+      placesRoot->appendRow(networkItem);
+    }
+    else
+      networkItem = NULL;
+
   }
 
   // bookmarks
