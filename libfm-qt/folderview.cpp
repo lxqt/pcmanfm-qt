@@ -556,21 +556,10 @@ void FolderView::updateGridSize() {
   switch(mode) {
     case IconMode:
     case ThumbnailMode: {
-      // NOTE by PCMan about finding the optimal text label size:
-      // The average filename length on my root filesystem is roughly 18-20 chars.
-      // So, a reasonable size for the text label is about 10 chars each line since string of this length
-      // can be shown in two lines. If you consider word wrap, then the result is around 10 chars per word.
-      // In average, 10 char per line should be enough to display a "word" in the filename without breaking.
-      // The values can be estimated with this command:
-      // > find / | xargs  basename -a | sed -e s'/[_-]/ /g' | wc -mcw
-      // However, this average only applies to English. For some Asian characters, such as Chinese chars,
-      // each char actually takes doubled space. To be safe, we use 13 chars per line x average char width
-      // to get a nearly optimal width for the text label. As most of the filenames have less than 40 chars
-      // 13 chars x 3 lines should be enough to show the full filenames for most files.
-      int textWidth = fm.averageCharWidth() * 12 + 4; // add 2 px padding for left and right border
-      int textHeight = fm.height() * 3 + 4; // add 2 px padding for top and bottom border
-      grid.setWidth(qMax(icon.width(), textWidth) + 8); // add a margin 4 px for every cell
-      grid.setHeight(icon.height() + textHeight + 8); // add a margin 4 px for every cell
+      int textWidth = fm.averageCharWidth() * 20 + 4; // add 2 px padding for left and right border // probono: Changed to 20 characters
+      int textHeight = fm.height() * 2 + 4; // add 2 px padding for top and bottom border // probono: Changed from 3 lines height
+      grid.setWidth(qMax(icon.width(), textWidth) + 32); // add a margin 4 px for every cell // probono: Changed from 8
+      grid.setHeight(icon.height() + textHeight + 8); // add a margin 4 px for every cell // probono: Changed from 8
       break;
     }
     default:

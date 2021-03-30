@@ -152,6 +152,7 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItemV4& opt
     if((height + line.height() + textRect.y()) > textRect.bottom()) {
       // if part of this line falls outside the textRect, ignore it and quit.
       QTextLine lastLine = layout.lineAt(visibleLines - 1);
+      opt.textElideMode = Qt::ElideMiddle; // probono: Put ... in the middle, not at the end so that we can see the suffix
       elidedText = opt.text.mid(lastLine.textStart());
       elidedText = opt.fontMetrics.elidedText(elidedText, opt.textElideMode, textRect.width());
       if(visibleLines == 1) // this is the only visible line

@@ -99,6 +99,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
       // if part of this line falls outside the textRect, ignore it and quit.
       QTextLine lastLine = layout.lineAt(visibleLines - 1);
       elidedText = opt.text.mid(lastLine.textStart());
+      opt.textElideMode = Qt::ElideMiddle; // probono: Put ... in the middle, not at the end so that we can see the suffix
       elidedText = opt.fontMetrics.elidedText(elidedText, opt.textElideMode, textRect.width());
       break;
     }
