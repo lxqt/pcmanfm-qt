@@ -143,7 +143,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation>Anonymousでログイン(&amp;L)</translation>
+        <translation>匿名ログイン(&amp;L)</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
@@ -158,7 +158,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation>タイプ:</translation>
+        <translation>種類:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
@@ -860,7 +860,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="524"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>作成日時順(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
@@ -1595,7 +1595,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1026"/>
         <source>Hide Desktop Items</source>
-        <translation>デスクトップのアイテムを表示しない</translation>
+        <translation>デスクトップのアイテムを非表示</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1032"/>
@@ -1639,7 +1639,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="699"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>メニューバーが完全に隠れます。Ctrl+M により再表示されます。</translation>
+        <translation>メニューバーが完全に隠れますので、再表示するには Ctrl+M を使用して下さい。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1052"/>
@@ -2074,18 +2074,20 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>内蔵サムネイル作成プログラムは Qt でサポートされている画像のサムネイルを作成します。
+
+通常、ほとんどの画像タイプがサポートされています。既定のサイズ制限は 4 MiB です。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>内蔵サムネイル作成プログラムの画像サイズ制限:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2093,17 +2095,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>外部サムネイル作成プログラムが存在する場合は、外部サムネイルプログラムがビデオや PDF ドキュメント等に使用されます。
+
+-1 の値はファイルサイズに制限がないことを意味します。(既定値)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>外部サムネイル作成プログラムのファイルサイズ制限:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>無制限</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2258,7 +2262,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1018"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>管理者として開けません。</translation>
     </message>
 </context>
 </TS>

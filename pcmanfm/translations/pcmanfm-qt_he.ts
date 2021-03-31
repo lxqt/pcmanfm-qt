@@ -900,7 +900,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="524"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>לפי מועד הי&amp;צירה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
@@ -1560,6 +1560,8 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>
             <numerusform>אשפה (פריט אחד)</numerusform>
             <numerusform>אשפה (שני פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1712,6 +1714,8 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>
             <numerusform>פריט אחד</numerusform>
             <numerusform>שני פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1720,6 +1724,8 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
             <numerusform> (שניים מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1735,6 +1741,8 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>
             <numerusform>נבחר פריט אחד</numerusform>
             <numerusform>נבחרו שני פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
 </context>
@@ -1750,6 +1758,8 @@ are left clicked, even when it is not the default file manager.</source>
         <source>Do you want to open these %1 files?</source>
         <translation>
             <numerusform>לפתוח את קובץ ה־%1 הזה?</numerusform>
+            <numerusform>לפתוח את קובצי ה־%1 האלה?</numerusform>
+            <numerusform>לפתוח את קובצי ה־%1 האלה?</numerusform>
             <numerusform>לפתוח את קובצי ה־%1 האלה?</numerusform>
         </translation>
     </message>
@@ -2069,13 +2079,13 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>הגבלת גודל תמונות ממוזערות בממזער המובנה:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2088,12 +2098,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>מגבלת גודל קובץ לממזערים חיצוניים:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>ללא מגבלה</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2265,7 +2275,7 @@ The translation of this string isn&apos;t 100% well.</translatorcomment>
     <message>
         <location filename="../tabpage.cpp" line="1018"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>לא ניתן לפתוח במצב ניהול.</translation>
     </message>
 </context>
 </TS>

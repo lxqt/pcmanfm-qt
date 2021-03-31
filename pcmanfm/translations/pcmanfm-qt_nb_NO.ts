@@ -73,7 +73,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
     <message>
@@ -404,7 +404,7 @@ Et mellomrom er også reservert for 3 linjers tekst.</translation>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished">Som forvalg vil skrivebordsmapper åpnes i PCManFM-Qt hvis de
+        <translation>Som forvalg vil skrivebordsmapper åpnes i PCManFM-Qt hvis de
 venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     </message>
     <message>
@@ -642,7 +642,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished">Lim inn i forbigående filterlinje</translation>
+        <translation>Lim inn i forbigående filterlinje</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -900,7 +900,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="524"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Ette&amp;r dato</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
@@ -1748,7 +1748,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>Ønsker å åpne denne %1 filen?</numerusform>
             <numerusform>Ønsker du å åpne disse %1 filene?</numerusform>
         </translation>
@@ -1931,7 +1931,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished">Forsinkelse for auto-markering i enkeltklikksmodus:</translation>
+        <translation>Forsinkelse for auto-markering i enkeltklikksmodus:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -2056,7 +2056,7 @@ hvis det er mer enn en fane.</translation>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished">Gjenåpne siste vindus faner i et nytt vindu</translation>
+        <translation>Gjenåpne siste vindus faner i et nytt vindu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
@@ -2064,18 +2064,20 @@ hvis det er mer enn en fane.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Programmet som lager småikoner gjør det bare av bilder som er støttet av Qt.
+
+Vanligvis er de fleste bildetyper støttet. Begrensningen i størrelse er 4 MiB som standard.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Maks størrelse for innebygde små-ikoner:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2083,17 +2085,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvis de fins brukes eksterne småikonsprogrammer for videoer, PDF-dokumenter osv.
+
+En verdi på -1 betyr at det ikke er noen begrensning på filstørrelsen (standard).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Maksimal filstørrelse for eksterne småikonsprogrammer:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen begrensning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2113,12 +2117,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished">Vis mappeomgivelsesmeny med Ctrl+høyreklikk</translation>
+        <translation>Vis mappens snareveismeny med Ctrl + høyreklikk</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished">Åpne mapper i nye faner sålangt det er mulig</translation>
+        <translation>Åpne mapper i nye faner så langt det er mulig</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
@@ -2128,7 +2132,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="375"/>
         <source>Always show real file names</source>
-        <translation type="unfinished">Alltid vis ekte filnavn</translation>
+        <translation>Vis alltid ordentlige filnavn</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="392"/>
@@ -2263,7 +2267,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1018"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan ikke åpnes som Admin.</translation>
     </message>
 </context>
 </TS>

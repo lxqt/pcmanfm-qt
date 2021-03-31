@@ -18,7 +18,7 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programmation&#xa0;:
+        <translation>Programmation :
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -97,7 +97,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>Type de média&#xa0;:</translation>
+        <translation>Type de média :</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
@@ -181,7 +181,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation>Créer un launcher</translation>
+        <translation>Créer un lanceur</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
@@ -310,7 +310,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="252"/>
         <source>Select background color:</source>
-        <translation>Sélection de la couleur de l&apos;arrière-plan&#xa0;:</translation>
+        <translation>Sélection de la couleur de l&apos;arrière-plan :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="319"/>
@@ -345,12 +345,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>Sélection de la couleur de l&apos;ombre&#xa0;:</translation>
+        <translation>Sélection de la couleur de l&apos;ombre :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>Sélection de la police&#xa0;:</translation>
+        <translation>Sélection de la police :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
@@ -559,7 +559,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Focus sur l&apos;entrée du chemin</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -642,7 +642,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished">Coller dans la barre de filtre transitoire</translation>
+        <translation>Coller dans la barre de filtre temporaire</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -860,7 +860,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="524"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Par date de cr&amp;éation</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
@@ -940,7 +940,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="866"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation>&amp;Montrer/Barre de filtre du focus</translation>
+        <translation>&amp;Montrer/Focus sur la barre de filtre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1000,12 +1000,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="924"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished">&amp;Raccourcis cachés</translation>
+        <translation>&amp;Raccourcis cachés</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="929"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished">Ouvrir un onglet en mode &amp;Admin</translation>
+        <translation>Ouvrir un onglet en mode &amp;Admin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
@@ -1080,7 +1080,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="761"/>
         <source>Permanent &amp;filter bar</source>
-        <translation>Barre de filtre permanente</translation>
+        <translation>Barre de &amp;filtre permanente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="806"/>
@@ -1156,12 +1156,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="604"/>
         <source>Go &amp;Back</source>
-        <translation>Re&amp;culer</translation>
+        <translation>Reto&amp;ur</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="607"/>
         <source>Go Back</source>
-        <translation>Retourner</translation>
+        <translation>Retour</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="610"/>
@@ -1366,7 +1366,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>Définir le fond d&apos;écran à partir de l&apos;image FILE</translation>
+        <translation>Définir le fond d&apos;écran à partir d&apos;un FICHIER image</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
@@ -1601,7 +1601,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../desktopwindow.cpp" line="1032"/>
         <source>Create Launcher</source>
-        <translation>Créer un launcher</translation>
+        <translation>Créer un lanceur</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1035"/>
@@ -1704,7 +1704,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../tabpage.cpp" line="492"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espace libre : %1 (total&#xa0;: %2)</translation>
+        <translation>Espace libre : %1 (total : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="509"/>
@@ -1815,17 +1815,17 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../preferences.ui" line="291"/>
         <source>Size of big icons:</source>
-        <translation>Taille des grandes icônes&#xa0;:</translation>
+        <translation>Taille des grandes icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Size of small icons:</source>
-        <translation>Taille des petites icônes&#xa0;:</translation>
+        <translation>Taille des petites icônes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
         <source>Size of thumbnails:</source>
-        <translation>Taille des vignettes&#xa0;:</translation>
+        <translation>Taille des vignettes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="339"/>
@@ -1845,12 +1845,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../preferences.ui" line="543"/>
         <source>Default width of new windows:</source>
-        <translation>Largeur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Largeur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="557"/>
         <source>Default height of new windows:</source>
-        <translation>Hauteur par défaut des nouvelles fenêtres&#xa0;:</translation>
+        <translation>Hauteur par défaut des nouvelles fenêtres :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="515"/>
@@ -1880,7 +1880,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../preferences.ui" line="113"/>
         <source>Default view mode:</source>
-        <translation>Mode d&apos;affichage par défaut&#xa0;:</translation>
+        <translation>Mode d&apos;affichage par défaut :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
@@ -1920,7 +1920,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation>Si cette case est décochée, le paramètre de l&apos;environnement sera utilisé.</translation>
+        <translation>Si cette case est décochée, le paramètre de l&apos;environnement de bureau sera utilisé.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
@@ -1931,12 +1931,12 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished">Délai de sélection automatique avec un simple clic :</translation>
+        <translation>Délai de sélection automatique avec un simple clic :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
         <source>Open in current tab</source>
-        <translation>Ouvrir dans l&apos;onglet courant</translation>
+        <translation>Ouvrir dans l&apos;onglet actuel</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="152"/>
@@ -1961,7 +1961,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>Confirmer avant de déplacer des fichiers à la poubelle</translation>
+        <translation>Confirmer avant de déplacer des fichiers à la corbeille</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
@@ -1994,7 +1994,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <location filename="../preferences.ui" line="288"/>
         <location filename="../preferences.ui" line="298"/>
         <source>Used by Icon View</source>
-        <translation>Utilisé lors de l&apos;affichage par icônes</translation>
+        <translation>Utilisé par la vue en icônes</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="305"/>
@@ -2071,7 +2071,7 @@ seulement s&apos;il y a plus d&apos;un onglet.</translation>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished">Rouvrir les derniers onglets de la fenêtre dans une nouvelle fenêtre</translation>
+        <translation>Rouvrir les derniers onglets de la fenêtre dans une nouvelle fenêtre</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
@@ -2079,18 +2079,20 @@ seulement s&apos;il y a plus d&apos;un onglet.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>La vignette intégrée crée des vignettes d&apos;images prises en charge par Qt.
+
+Habituellement, la plupart des types d&apos;images sont pris en charge. La limite de taille par défaut est de 4 Mio.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Limite de taille d&apos;image pour la vignette intégrée :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> Mio</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2098,22 +2100,24 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Le cas échéant, des vignettes externes sont utilisées pour les vidéos, les documents PDF, etc.
+
+Une valeur de -1 signifie qu&apos;il n&apos;y a pas de limite pour la taille du fichier (valeur par défaut).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Limite de taille de fichier pour les miniatures externes :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Pas de limite</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation>Exemples:&lt;br&gt;Pour le terminal : &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For basculer d&apos;utilisateur : &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; est la commende que vous devez exécuter dans le terminal avec accès root.&lt;br&gt; Important : veuillez utilisez lxsudo, car sudo seul peut casser les permission du fichier de configuration.</translation>
+        <translation>Exemples :&lt;br&gt;Pour le terminal : &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Pour changer d&apos;utilisateur : &lt;i&gt;lxsudo %s&lt;/i&gt; ou &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; est la commande que vous devez exécuter dans le terminal avec accès root.&lt;br&gt; Important : veuillez utilisez lxsudo, car sudo seul peut casser les permission du fichier de configuration.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="900"/>
@@ -2163,17 +2167,17 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="740"/>
         <source>When removable medium unmounted:</source>
-        <translation>Lorsque le support amovible est non monté :</translation>
+        <translation>Lorsque le support amovible est démonté :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="746"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>&amp;Fermer les onglets contenant un support amovible</translation>
+        <translation>&amp;Fermer les onglets contenant le support amovible</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="753"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>&amp;Basculer l&apos;onglet sur le répertoire de base de l&apos;utilisateur</translation>
+        <translation>Remplacer le dossier de l&apos;on&amp;glet par le dossier home</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="796"/>
@@ -2213,7 +2217,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="789"/>
         <source>Terminal emulator:</source>
-        <translation>Émulateur de terminal&#xa0;:</translation>
+        <translation>Émulateur de terminal :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="358"/>
@@ -2263,7 +2267,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1018"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;ouvrir en tant qu&apos;administrateur.</translation>
     </message>
 </context>
 </TS>

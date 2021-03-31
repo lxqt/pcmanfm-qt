@@ -900,7 +900,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="524"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>按创建(&amp;C)时间</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
@@ -2058,18 +2058,20 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>内置的缩略图器可制作Qt支持的图像的缩略图。
+
+通常，支持大多数图像类型。默认大小限制为4 MiB。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>内置缩略图的图像大小限制：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2077,17 +2079,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>如果存在，则外部缩略图会用于视频，PDF文档等。
+
+值-1表示文件大小没有限制（默认值）。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>外部缩略图的文件大小限制：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>不限制</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2257,7 +2261,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1018"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>无法以管理员身份打开。</translation>
     </message>
 </context>
 </TS>
