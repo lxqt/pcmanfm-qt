@@ -42,7 +42,7 @@
 #include "desktopitemdelegate.h"
 #include "foldermenu.h"
 #include "filemenu.h"
-#include "cachedfoldermodel.h"
+#include "foldermodel.h"
 #include "folderview_p.h"
 #include "fileoperation.h"
 #include "filepropsdialog.h"
@@ -90,8 +90,9 @@ DesktopWindow::DesktopWindow(int screenNum):
         loadItemPositions();
         Settings& settings = static_cast<Application* >(qApp)->settings();
 
-        model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
-        model_->addComputerFiles();
+        FmFolder* folder = fm_folder_from_path(fm_path_get_desktop());
+        model_ = new Fm::FolderModel();
+        model_->setFolder(folder, true);
         folder_ = reinterpret_cast<FmFolder*>(g_object_ref(model_->folder()));
 
         proxyModel_ = new Fm::ProxyFolderModel();
@@ -164,7 +165,7 @@ DesktopWindow::~DesktopWindow() {
         delete proxyModel_;
 
     if(model_)
-        model_->unref();
+        delete model_;
 
     if(folder_)
         g_object_unref(folder_);
@@ -208,7 +209,12 @@ void DesktopWindow::resizeEvent(QResizeEvent* event) {
 
 void DesktopWindow::setDesktopFolder() {
     FmPath *path = fm_path_new_for_path(XdgDir::readDesktopDir().toStdString().c_str());
-    model_ = Fm::CachedFolderModel::modelFromPath(path);
+    FmFolder* folder = fm_folder_from_path(path);
+    if (model_)
+      delete model_;
+    model_ = new Fm::FolderModel();
+    model_->setFolder(folder, true);
+    folder_ = reinterpret_cast<FmFolder*>(g_object_ref(model_->folder()));
     proxyModel_->setSourceModel(model_);
 }
 

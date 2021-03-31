@@ -58,7 +58,7 @@ public:
   FmFolder* folder() {
     return folder_;
   }
-  void setFolder(FmFolder* new_folder);
+  void setFolder(FmFolder* new_folder, bool add_devices = false);
 
   FmPath* path() {
     return folder_ ? fm_folder_get_path(folder_) : NULL;
@@ -85,8 +85,6 @@ public:
 
   void cacheThumbnails(int size);
   void releaseThumbnails(int size);
-
-  void addComputerFiles();
 
 Q_SIGNALS:
   void thumbnailLoaded(const QModelIndex& index, int size);
