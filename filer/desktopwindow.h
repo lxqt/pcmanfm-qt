@@ -29,7 +29,7 @@
 #include <xcb/xcb.h>
 
 namespace Fm {
-  class CachedFolderModel;
+  class FolderModel;
   class ProxyFolderModel;
   class FolderViewListView;
 }
@@ -115,7 +115,7 @@ protected Q_SLOTS:
 
 private:
   Fm::ProxyFolderModel* proxyModel_;
-  Fm::CachedFolderModel* model_;
+  Fm::FolderModel* model_;
   FmFolder* folder_;
   Fm::FolderViewListView* listView_;
 

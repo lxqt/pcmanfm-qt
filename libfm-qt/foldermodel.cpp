@@ -68,7 +68,7 @@ FolderModel::~FolderModel() {
   }
 }
 
-void FolderModel::setFolder(FmFolder* new_folder) {
+void FolderModel::setFolder(FmFolder* new_folder, bool add_devices) {
   if(folder_) {
     removeAll();        // remove old items
     g_signal_handlers_disconnect_by_func(folder_, gpointer(onStartLoading), this);
@@ -77,6 +77,15 @@ void FolderModel::setFolder(FmFolder* new_folder) {
     g_signal_handlers_disconnect_by_func(folder_, gpointer(onFilesChanged), this);
     g_signal_handlers_disconnect_by_func(folder_, gpointer(onFilesRemoved), this);
     g_object_unref(folder_);
+  }
+  if (computerFolder_) {
+      // these need to get added again
+      g_signal_handlers_disconnect_by_func(computerFolder_, gpointer(onStartLoading), this);
+      g_signal_handlers_disconnect_by_func(computerFolder_, gpointer(onFinishLoading), this);
+      g_signal_handlers_disconnect_by_func(computerFolder_, gpointer(onFilesAdded), this);
+      g_signal_handlers_disconnect_by_func(computerFolder_, gpointer(onFilesChanged), this);
+      g_signal_handlers_disconnect_by_func(computerFolder_, gpointer(onFilesRemoved), this);
+      g_object_unref(computerFolder_);
   }
   if(new_folder) {
     folder_ = FM_FOLDER(g_object_ref(new_folder));
@@ -91,6 +100,23 @@ void FolderModel::setFolder(FmFolder* new_folder) {
   }
   else
     folder_ = NULL;
+
+  if (add_devices) {
+    computerFolder_ = fm_folder_from_path(fm_path_new_for_uri("computer://"));
+    if (computerFolder_) {
+      g_signal_connect(computerFolder_, "start-loading", G_CALLBACK(onStartLoading), this);
+      g_signal_connect(computerFolder_, "finish-loading", G_CALLBACK(onFinishLoading), this);
+      g_signal_connect(computerFolder_, "files-added", G_CALLBACK(onFilesAdded), this);
+      g_signal_connect(computerFolder_, "files-changed", G_CALLBACK(onFilesChanged), this);
+      g_signal_connect(computerFolder_, "files-removed", G_CALLBACK(onFilesRemoved), this);
+      // handle the case if the folder is already loaded
+      if(fm_folder_is_loaded(computerFolder_))
+        insertFiles(0, fm_folder_get_files(computerFolder_));
+    }
+  }
+  else {
+      computerFolder_ = NULL;
+  }
 }
 
 void FolderModel::onStartLoading(FmFolder* folder, gpointer user_data) {
@@ -478,23 +504,6 @@ void FolderModel::releaseThumbnails(int size) {
         FolderModelItem& item = *itemIt;
         item.removeThumbnail(size);
       }
-    }
-  }
-}
-
-void FolderModel::addComputerFiles()
-{
-  if ( ! computerFolder_ ) {
-    computerFolder_ = fm_folder_from_path(fm_path_new_for_uri("computer://"));
-    if (computerFolder_) {
-      g_signal_connect(computerFolder_, "start-loading", G_CALLBACK(onStartLoading), this);
-      g_signal_connect(computerFolder_, "finish-loading", G_CALLBACK(onFinishLoading), this);
-      g_signal_connect(computerFolder_, "files-added", G_CALLBACK(onFilesAdded), this);
-      g_signal_connect(computerFolder_, "files-changed", G_CALLBACK(onFilesChanged), this);
-      g_signal_connect(computerFolder_, "files-removed", G_CALLBACK(onFilesRemoved), this);
-      // handle the case if the folder is already loaded
-      if(fm_folder_is_loaded(computerFolder_))
-        insertFiles(0, fm_folder_get_files(computerFolder_));
     }
   }
 }
