@@ -132,6 +132,23 @@ void FolderModel::onFinishLoading(FmFolder* folder, gpointer user_data) {
 
 void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_data) {
   FolderModel* model = static_cast<FolderModel*>(user_data);
+
+  // OK, in this very specific case where the files are refreshed
+  // the model is emptied in onStartLoading and we need to add the
+  // device files again when it is reconstructed
+  if (model->computerFolder()
+      && (folder != model->computerFolder())
+      && (model->items.count() == 0)) {
+    FmFileInfoList* computerFiles = fm_folder_get_files(model->computerFolder());
+    int n_files = fm_file_info_list_get_length(computerFiles);
+    model->beginInsertRows(QModelIndex(), 0, n_files - 1);
+    for(GList* l = fm_file_info_list_peek_head_link(computerFiles); l; l = l->next) {
+      FolderModelItem item(FM_FILE_INFO(l->data));
+      model->items.append(item);
+    }
+    model->endInsertRows();
+  }
+
   int n_files = g_slist_length(files);
   model->beginInsertRows(QModelIndex(), model->items.count(), model->items.count() + n_files - 1);
   for(GSList* l = files; l; l = l->next) {
