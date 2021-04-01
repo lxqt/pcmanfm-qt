@@ -58,6 +58,11 @@ public:
   FmFolder* folder() {
     return folder_;
   }
+
+  FmFolder* computerFolder() {
+    return computerFolder_;
+  }
+
   void setFolder(FmFolder* new_folder, bool add_devices = false);
 
   FmPath* path() {
