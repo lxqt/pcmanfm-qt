@@ -98,14 +98,8 @@ DesktopWindow::DesktopWindow(int screenNum):
         proxyModel_ = new Fm::ProxyFolderModel();
         proxyModel_->setSourceModel(model_);
         proxyModel_->setShowThumbnails(settings.showThumbnails());
-
-        // the following two lines make the devices show first - disable folder first option
-        // or mountpoints are shown last, and then order by owner because the owner for the
-        // file system shows up as a numeric value :) so we have those first followed by the
-        // users name as the owner for all the other items
-        proxyModel_->setFolderFirst(false);
-        proxyModel_->sort(Fm::FolderModel::ColumnFileOwner);
-
+        proxyModel_->sort(Fm::FolderModel::ColumnFileMTime);
+        proxyModel_->setDesktopMode();
         setModel(proxyModel_);
 
         connect(proxyModel_, &Fm::ProxyFolderModel::rowsInserted, this, &DesktopWindow::onRowsInserted);

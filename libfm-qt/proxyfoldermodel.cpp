@@ -21,6 +21,7 @@
 #include "proxyfoldermodel.h"
 #include "foldermodel.h"
 #include <QCollator>
+#include <QDebug>
 
 using namespace Fm;
 
@@ -29,9 +30,17 @@ ProxyFolderModel::ProxyFolderModel(QObject * parent):
   thumbnailSize_(0),
   showHidden_(false),
   showThumbnails_(false),
-  folderFirst_(true) {
+  folderFirst_(true),
+  userName_(),
+  desktopMode_(false){
   setDynamicSortFilter(true);
   setSortCaseSensitivity(Qt::CaseInsensitive);
+
+  // get the user name so we can sort devices separately
+  userName_ = qgetenv("USER");
+  if (userName_.isEmpty())
+    userName_ = qgetenv("USERNAME");
+  qDebug() << "username: " << userName_;
 }
 
 ProxyFolderModel::~ProxyFolderModel() {
@@ -117,6 +126,20 @@ bool ProxyFolderModel::lessThan(const QModelIndex& left, const QModelIndex& righ
   if(srcModel) {
     FmFileInfo* leftInfo = srcModel->fileInfoFromIndex(left);
     FmFileInfo* rightInfo = srcModel->fileInfoFromIndex(right);
+
+    if (desktopMode_) {
+      // where the owner is different, always sort by owner first to keep devices before files
+      if (QString(fm_file_info_get_disp_owner(leftInfo)) != QString(fm_file_info_get_disp_owner(rightInfo))) {
+        if (sortOrder() == Qt::AscendingOrder)
+          return QString(fm_file_info_get_disp_owner(leftInfo)) < QString(fm_file_info_get_disp_owner(rightInfo));
+        else
+          return QString(fm_file_info_get_disp_owner(leftInfo)) > QString(fm_file_info_get_disp_owner(rightInfo));
+      }
+      else if (QString(fm_file_info_get_disp_owner(leftInfo)) != userName_) {
+        // these are devices, sort them by modification date always
+        return fm_file_info_get_mtime(leftInfo) < fm_file_info_get_mtime(rightInfo);
+      }
+    }
 
     if(Q_UNLIKELY(!leftInfo || !rightInfo)) {
       // In theory, this should not happen, but it's safer to add the null check.
@@ -257,6 +280,11 @@ void ProxyFolderModel::removeFilter(ProxyFolderModelFilter* filter) {
 void ProxyFolderModel::updateFilters() {
   invalidate();
   Q_EMIT sortFilterChanged();
+}
+
+void ProxyFolderModel::setDesktopMode()
+{
+  desktopMode_ = true;
 }
 
 #if 0
