@@ -83,6 +83,8 @@ public:
   void removeFilter(ProxyFolderModelFilter* filter);
   void updateFilters();
 
+  void setDesktopMode();
+
 Q_SIGNALS:
   void sortFilterChanged();
 
@@ -102,6 +104,8 @@ private:
   bool showThumbnails_;
   int thumbnailSize_;
   QList<ProxyFolderModelFilter*> filters_;
+  QString userName_;
+  bool desktopMode_;
 };
 
 }
