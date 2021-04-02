@@ -1412,9 +1412,11 @@ void MainWindow::updateUIForCurrentPage(bool setFocus) {
     // also update the enabled state of Edit actions
     updateEditSelectedActions();
     bool isWritable(false);
+    bool isNative(false);
     if(tabPage && tabPage->folder()) {
         if(auto info = tabPage->folder()->info()) {
             isWritable = info->isWritable();
+            isNative = info->isNative();
         }
     }
     ui.actionPaste->setEnabled(isWritable);
@@ -1422,6 +1424,7 @@ void MainWindow::updateUIForCurrentPage(bool setFocus) {
     // disable creation shortcuts too
     ui.actionNewFolder->setEnabled(isWritable);
     ui.actionNewBlankFile->setEnabled(isWritable);
+    ui.actionCreateLauncher->setEnabled(isWritable && isNative);
 }
 
 void MainWindow::onStackedWidgetWidgetRemoved(int index) {
@@ -1490,7 +1493,8 @@ void MainWindow::onTabPageTitleChanged() {
 
                 // Since TabPage::titleChanged is emitted on changing directory,
                 // the enabled state of some actions should be updated here
-                ui.actionOpenAsAdmin->setEnabled(tabPage->path() && tabPage->path().isNative());
+                bool isNative(tabPage->path() && tabPage->path().isNative());
+                ui.actionOpenAsAdmin->setEnabled(isNative);
                 bool isWritable(false);
                 if(tabPage && tabPage->folder()) {
                     if(auto info = tabPage->folder()->info()) {
@@ -1501,6 +1505,7 @@ void MainWindow::onTabPageTitleChanged() {
                 ui.menuCreateNew->setEnabled(isWritable);
                 ui.actionNewFolder->setEnabled(isWritable);
                 ui.actionNewBlankFile->setEnabled(isWritable);
+                ui.actionCreateLauncher->setEnabled(isWritable && isNative);
             }
         }
     }
@@ -2047,6 +2052,13 @@ void MainWindow::on_actionOpenTerminal_triggered() {
     if(page) {
         Application* app = static_cast<Application*>(qApp);
         app->openFolderInTerminal(page->path());
+    }
+}
+
+void MainWindow::on_actionCreateLauncher_triggered() {
+    TabPage* page = currentPage();
+    if(page) {
+        page->ceateShortcut();
     }
 }
 

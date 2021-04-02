@@ -211,6 +211,7 @@
      <string>&amp;Tools</string>
     </property>
     <addaction name="actionOpenTerminal"/>
+    <addaction name="actionCreateLauncher"/>
     <addaction name="separator"/>
     <addaction name="actionOpenAsAdmin"/>
     <addaction name="actionOpenAsRoot"/>
@@ -927,6 +928,14 @@
   <action name="actionOpenAsAdmin">
    <property name="text">
     <string>Open Tab in &amp;Admin Mode</string>
+   </property>
+  </action>
+  <action name="actionCreateLauncher">
+   <property name="text">
+    <string>Create Launcher</string>
+   </property>
+   <property name="toolTip">
+    <string>Create Launcher</string>
    </property>
   </action>
  </widget>

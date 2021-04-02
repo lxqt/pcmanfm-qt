@@ -9,9 +9,14 @@
 
 namespace PCManFM {
 
-DesktopEntryDialog::DesktopEntryDialog(QWidget* parent):
-    QDialog(parent) {
+DesktopEntryDialog::DesktopEntryDialog(QWidget* parent, const Fm::FilePath& dirPath):
+    QDialog(parent),
+    dirPath_{dirPath} {
     ui.setupUi(this);
+
+    if(!dirPath_.isValid() || !dirPath_.isNative()) { // Desktop is the default place
+        dirPath_ = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str());
+    }
 
     connect(ui.typeCombo, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &DesktopEntryDialog::onChangingType);
     connect(ui.iconButton, &QAbstractButton::clicked, this, &DesktopEntryDialog::onClickingIconButton);
@@ -127,23 +132,25 @@ void DesktopEntryDialog::accept() {
     g_key_file_set_string(kf, "Desktop Entry", "Terminal",
                           ui.terminalCombo->currentIndex() == 0 ? "false" : "true");
 
+    auto pathStrPtr = dirPath_.toString();
+
     // make file name from entry name but so that it doesn't exist on Desktop
     name = name.simplified();
     name.replace(QChar(QChar::Space), QLatin1Char('_'));
     QString suffix;
     int i = 0;
-    while(QFile::exists(XdgDir::readDesktopDir() + QLatin1String("/") + name + suffix + QLatin1String(".desktop"))) {
+    while(QFile::exists(QString::fromUtf8(pathStrPtr.get())
+                        + QLatin1String("/") + name + suffix + QLatin1String(".desktop"))) {
         suffix = QString::number(i);
         i++;
     }
     name += suffix + QLatin1String(".desktop");
 
-    auto desktopPath = Fm::FilePath::fromLocalPath(XdgDir::readDesktopDir().toStdString().c_str()).localPath();
-    auto launcher = Fm::CStrPtr{g_build_filename(desktopPath.get(), name.toStdString().c_str(), nullptr)};
-    g_key_file_save_to_file(kf, launcher.get(), nullptr);
+    auto launcher = Fm::CStrPtr{g_build_filename(pathStrPtr.get(), name.toStdString().c_str(), nullptr)};
+    if(g_key_file_save_to_file(kf, launcher.get(), nullptr)) {
+        Q_EMIT desktopEntryCreated(name);
+    }
     g_key_file_free(kf);
-
-    Q_EMIT desktopEntryCreated(name);
 
     QDialog::accept();
 }

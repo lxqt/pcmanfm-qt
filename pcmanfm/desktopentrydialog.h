@@ -9,7 +9,7 @@ namespace PCManFM {
 class LIBFM_QT_API DesktopEntryDialog : public QDialog {
     Q_OBJECT
 public:
-    explicit DesktopEntryDialog(QWidget *parent = nullptr);
+    explicit DesktopEntryDialog(QWidget *parent = nullptr, const Fm::FilePath& dirPath = Fm::FilePath());
 
     virtual ~DesktopEntryDialog();
 
@@ -25,6 +25,7 @@ private Q_SLOTS:
 
 private:
     Ui::DesktopEntryDialog ui;
+    Fm::FilePath dirPath_;
 
 };
 
