@@ -46,6 +46,12 @@ static const QString WINDOW_ORIGIN_X            = "WindowX";
 static const QString WINDOW_ORIGIN_Y            = "WindowY";
 static const QString WINDOW_HEIGHT              = "WindowHeight";
 static const QString WINDOW_WIDTH               = "WindowWidth";
+static const QString WINDOW_VIEW                = "WindowView";
+static const QString WINDOW_SORT_ITEM           = "WindowSortItem";
+static const QString WINDOW_SORT_ORDER          = "WindowSortOrder";
+static const QString WINDOW_SORT_CASE           = "WindowSortCase";
+static const QString WINDOW_SORT_FOLDER_FIRST   = "WindowSortFolderFirst";
+static const QString WINDOW_FILTER              = "WindowFilter";
 static const QString XATTR_NAMESPACE            = "user";
 
 /*
@@ -157,6 +163,66 @@ int MetaData::getWindowWidth(bool& ok) const
   return val;
 }
 
+MetaData::FolderView MetaData::getWindowView(bool& ok) const
+{
+  int val = getMetadataInt(path_, WINDOW_VIEW, ok);
+  if (!ok) {
+    ok = windowAttributes_.contains(WINDOW_VIEW);
+    val = windowAttributes_[WINDOW_VIEW].toInt();
+  }
+  return static_cast<MetaData::FolderView>(val);
+}
+
+MetaData::SortItem MetaData::getWindowSortItem(bool& ok) const
+{
+  int val = getMetadataInt(path_, WINDOW_SORT_ITEM, ok);
+  if (!ok) {
+    ok = windowAttributes_.contains(WINDOW_SORT_ITEM);
+    val = windowAttributes_[WINDOW_SORT_ITEM].toInt();
+  }
+  return static_cast<MetaData::SortItem>(val);
+}
+
+MetaData::SortOrder MetaData::getWindowSortOrder(bool& ok) const
+{
+  int val = getMetadataInt(path_, WINDOW_SORT_ORDER, ok);
+  if (!ok) {
+    ok = windowAttributes_.contains(WINDOW_SORT_ORDER);
+    val = windowAttributes_[WINDOW_SORT_ORDER].toInt();
+  }
+  return static_cast<MetaData::SortOrder>(val);
+}
+
+MetaData::SortCase MetaData::getWindowSortCase(bool& ok) const
+{
+  int val = getMetadataInt(path_, WINDOW_SORT_CASE, ok);
+  if (!ok) {
+    ok = windowAttributes_.contains(WINDOW_SORT_CASE);
+    val = windowAttributes_[WINDOW_SORT_CASE].toInt();
+  }
+  return static_cast<MetaData::SortCase>(val);
+}
+
+MetaData::SortFolderFirst MetaData::getWindowSortFolderFirst(bool& ok) const
+{
+  int val = getMetadataInt(path_, WINDOW_SORT_FOLDER_FIRST, ok);
+  if (!ok) {
+    ok = windowAttributes_.contains(WINDOW_SORT_FOLDER_FIRST);
+    val = windowAttributes_[WINDOW_SORT_FOLDER_FIRST].toInt();
+  }
+  return static_cast<MetaData::SortFolderFirst>(val);
+}
+
+MetaData::Filter MetaData::getWindowFilter(bool &ok) const
+{
+  int val = getMetadataInt(path_, WINDOW_FILTER, ok);
+  if (!ok) {
+    ok = windowAttributes_.contains(WINDOW_FILTER);
+    val = windowAttributes_[WINDOW_FILTER].toInt();
+  }
+  return static_cast<MetaData::Filter>(val);
+}
+
 void MetaData::setWindowOriginX(int x)
 {
   setMetadataInt(path_, WINDOW_ORIGIN_X, x);
@@ -179,6 +245,42 @@ void MetaData::setWindowWidth(int width)
 {
   setMetadataInt(path_, WINDOW_WIDTH, width);
   windowAttributes_[WINDOW_WIDTH] = width;
+}
+
+void MetaData::setWindowView(MetaData::FolderView view)
+{
+  setMetadataInt(path_, WINDOW_VIEW, static_cast<int>(view));
+  windowAttributes_[WINDOW_VIEW] = view;
+}
+
+void MetaData::setWindowSortItem(MetaData::SortItem sortItem)
+{
+  setMetadataInt(path_, WINDOW_SORT_ITEM, static_cast<int>(sortItem));
+  windowAttributes_[WINDOW_SORT_ITEM] = sortItem;
+}
+
+void MetaData::setWindowSortOrder(MetaData::SortOrder sortOrder)
+{
+  setMetadataInt(path_, WINDOW_SORT_ORDER, static_cast<int>(sortOrder));
+  windowAttributes_[WINDOW_SORT_ORDER] = sortOrder;
+}
+
+void MetaData::setWindowSortCase(MetaData::SortCase sortCase)
+{
+  setMetadataInt(path_, WINDOW_SORT_CASE, static_cast<int>(sortCase));
+  windowAttributes_[WINDOW_SORT_CASE] = sortCase;
+}
+
+void MetaData::setWindowSortFolderFirst(MetaData::SortFolderFirst sortFolderFirst)
+{
+  setMetadataInt(path_, WINDOW_SORT_FOLDER_FIRST, static_cast<int>(sortFolderFirst));
+  windowAttributes_[WINDOW_SORT_FOLDER_FIRST] = sortFolderFirst;
+}
+
+void MetaData::setWindowFilter(MetaData::Filter filter)
+{
+  setMetadataInt(path_, WINDOW_FILTER, static_cast<int>(filter));
+  windowAttributes_[WINDOW_FILTER] = filter;
 }
 
 int MetaData::getMetadataInt(const QString& path, const QString& attribute, bool &ok) const
@@ -242,6 +344,24 @@ void MetaData::loadDirInfo()
 
     if (windowJson.contains(WINDOW_WIDTH) && windowJson[WINDOW_WIDTH].isDouble())
       windowAttributes_.insert(WINDOW_WIDTH, windowJson[WINDOW_WIDTH].toInt());
+
+    if (windowJson.contains(WINDOW_VIEW) && windowJson[WINDOW_VIEW].isDouble())
+      windowAttributes_.insert(WINDOW_VIEW, windowJson[WINDOW_VIEW].toInt());
+
+    if (windowJson.contains(WINDOW_SORT_ITEM) && windowJson[WINDOW_SORT_ITEM].isDouble())
+      windowAttributes_.insert(WINDOW_SORT_ITEM, windowJson[WINDOW_SORT_ITEM].toInt());
+
+    if (windowJson.contains(WINDOW_SORT_ORDER) && windowJson[WINDOW_SORT_ORDER].isDouble())
+      windowAttributes_.insert(WINDOW_SORT_ORDER, windowJson[WINDOW_SORT_ORDER].toInt());
+
+    if (windowJson.contains(WINDOW_SORT_CASE) && windowJson[WINDOW_SORT_CASE].isDouble())
+      windowAttributes_.insert(WINDOW_SORT_CASE, windowJson[WINDOW_SORT_CASE].toInt());
+
+    if (windowJson.contains(WINDOW_SORT_FOLDER_FIRST) && windowJson[WINDOW_SORT_FOLDER_FIRST].isDouble())
+      windowAttributes_.insert(WINDOW_SORT_FOLDER_FIRST, windowJson[WINDOW_SORT_FOLDER_FIRST].toInt());
+
+    if (windowJson.contains(WINDOW_FILTER) && windowJson[WINDOW_FILTER].isDouble())
+      windowAttributes_.insert(WINDOW_FILTER, windowJson[WINDOW_FILTER].toInt());
   }
 }
 
@@ -285,6 +405,24 @@ void MetaData::saveDirInfo()
 
   if (windowAttributes_.contains(WINDOW_WIDTH))
     windowJson[WINDOW_WIDTH] = windowAttributes_[WINDOW_WIDTH].toInt();
+
+  if (windowAttributes_.contains(WINDOW_VIEW))
+    windowJson[WINDOW_VIEW] = windowAttributes_[WINDOW_VIEW].toInt();
+
+  if (windowAttributes_.contains(WINDOW_SORT_ITEM))
+    windowJson[WINDOW_SORT_ITEM] = windowAttributes_[WINDOW_SORT_ITEM].toInt();
+
+  if (windowAttributes_.contains(WINDOW_SORT_ORDER))
+    windowJson[WINDOW_SORT_ORDER] = windowAttributes_[WINDOW_SORT_ORDER].toInt();
+
+  if (windowAttributes_.contains(WINDOW_SORT_CASE))
+    windowJson[WINDOW_SORT_CASE] = windowAttributes_[WINDOW_SORT_CASE].toInt();
+
+  if (windowAttributes_.contains(WINDOW_SORT_FOLDER_FIRST))
+    windowJson[WINDOW_SORT_FOLDER_FIRST] = windowAttributes_[WINDOW_SORT_FOLDER_FIRST].toInt();
+
+  if (windowAttributes_.contains(WINDOW_FILTER))
+    windowJson[WINDOW_FILTER] = windowAttributes_[WINDOW_FILTER].toInt();
 
   json["Window"] = windowJson;
   QJsonDocument dirInfoDoc(json);
