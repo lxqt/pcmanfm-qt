@@ -1,4 +1,3 @@
-#include <libfm-qt/core/filepath.h>
 #include "desktopentrydialog.h"
 #include "ui_desktopentrydialog.h"
 #include "xdgdir.h"

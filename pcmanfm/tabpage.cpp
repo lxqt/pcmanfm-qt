@@ -1006,7 +1006,10 @@ void TabPage::ceateShortcut() {
             DesktopEntryDialog* dlg = new DesktopEntryDialog(this, folderPath);
             dlg->setAttribute(Qt::WA_DeleteOnClose);
             connect(dlg, &DesktopEntryDialog::desktopEntryCreated, [this] (const QString& name) {
-                if(folder_ && folder_->hasFileMonitor()) { // otherwise, there will be no point to tracking it
+                // if the current directory does not have a file monitor or is changed,
+                // there will be no point to tracking the created shortcut
+                if(folder_ && folder_->hasFileMonitor()
+                   && folder_->path().isParentOf(Fm::FilePath::fromLocalPath(name.toLocal8Bit().constData()))) {
                     filesToTrust_ << name;
                 }
             });

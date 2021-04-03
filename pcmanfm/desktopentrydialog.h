@@ -4,6 +4,8 @@
 #include <QDialog>
 #include "ui_desktopentrydialog.h"
 
+#include <libfm-qt/core/filepath.h>
+
 namespace PCManFM {
 
 class LIBFM_QT_API DesktopEntryDialog : public QDialog {
