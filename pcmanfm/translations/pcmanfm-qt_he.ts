@@ -2074,7 +2074,9 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>ממזער התמונות המובנה מייצר גרסאות מוקטנות של תמונות שנתמכות על ידי Qt.
+
+בדרך כלל, רוב סוגי התמונות נתמכים. מגבלת הגודל כבררת מחדל היא 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
@@ -2093,7 +2095,9 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>אם הם קיימים, מקטיני תמונות חיצוניים משמשים לסרטונים, מסמכי PDF וכו׳.
+
+ערך של ‎-1 משמעו שאין מגבלה על גודל הקובץ (בררת המחדל).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
