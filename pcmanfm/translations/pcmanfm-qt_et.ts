@@ -750,7 +750,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="326"/>
         <source>&amp;About</source>
-        <translation>&amp;Teave</translation>
+        <translation>&amp;Rakenduse teave</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="335"/>
@@ -835,7 +835,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="444"/>
         <source>Cu&amp;t</source>
-        <translation>Lõi&amp;ka</translation>
+        <translation>L&amp;õika</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="447"/>
@@ -1201,7 +1201,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="650"/>
         <source>&amp;Rename</source>
-        <translation>&amp;Nimeta ümber</translation>
+        <translation>&amp;Muuda nime</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="653"/>
