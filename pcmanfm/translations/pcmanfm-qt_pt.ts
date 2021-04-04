@@ -860,7 +860,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="524"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Por data de c&amp;riação</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
@@ -2079,18 +2079,20 @@ será mostrada se existir mais do que um separador.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>O gerador de miniaturas nativo apenas cria as miniaturas que forem suportadas por Qt.
+
+Por norma, a maioria dos tipos de imagens são suportados. O tamanho padrão das miniaturas é 4 Mib.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Limitar tamanho de imagens criadas pelo gerador nativo:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2098,17 +2100,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Se existente, os geradores de miniaturas externos são utilizados para vídeos, documentos PDF etc.
+
+O valor -1 implica que não existirá limite para o tamanho dos ficheiros (padrão).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Limitar tamanho dos ficheiros criados pelos geradores externos:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Sem limite</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2263,7 +2267,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1018"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Não é possível abrir como administrador.</translation>
     </message>
 </context>
 </TS>
