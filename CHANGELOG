@@ -1,3 +1,21 @@
+pcmanfm-qt-0.17.0 / 2021-04-15
+==============================
+  * Close a file tooltip on key pressing or changing directory/filter/sorting.
+  * Always close windows before quitting.
+  * Natural keyboard navigation on Desktop.
+  * Don't put a non-directory path into search dialog.
+  * Used Qt5.15's Qt::SplitBehavior.
+  * Changed a label and added a tooltip to Preferences.
+  * Added a Tool menu-item to open current directory as admin.
+  * Added nullity check for proxy model when setting desktop folder.
+  * Always focus visible view on opening a new tab.
+  * Workaround an issue with glibc 2.33 on old Docker engines.
+  * Completed support for creation time.
+  * Handle GVFS' Admin separately and appropriately.
+  * Silenced most compilation warnings.
+  * Added an option for max. file size with external thumbnailers.
+  * Added "Create Launcher" to Tools menu.
+
 pcmanfm-qt-0.16.0 / 2020-11-01
 ==============================
   * Removed a redundant method from desktop code.
