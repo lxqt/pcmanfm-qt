@@ -28,6 +28,9 @@ bool checkWhetherAppDirOrBundle(FmFileInfo* _info)
     QFileInfo fileInfo = QFileInfo(QDir(path).canonicalPath());
     QString nameWithoutSuffix = QFileInfo(fileInfo.completeBaseName()).fileName();
 
+    // NOTE: Checking for the prefix speeds up things significantly,
+    // e.g., when checking whether /net is an AppDir
+
     // Check whether we have a GNUstep .app bundle
     if (path.toLower().endsWith(".app")) {
         // TODO: Before falling back to foo.app/foo, parse the Info-gnustep.plist/Info.plist and get the NSExecutable from there
@@ -36,21 +39,21 @@ bool checkWhetherAppDirOrBundle(FmFileInfo* _info)
         if (QFileInfo(executableFile).isExecutable()) {
             isAppDirOrBundle = true;
         }
-    }
 
-    // Check whether we have a macOS .app bundle
-    if (path.toLower().endsWith(".app")) {
-        QFile infoPlistFIle(path.toUtf8() + "/Contents/Info.plist");
+        // Check whether we have a macOS .app bundle
+        QFile infoPlistFile(path.toUtf8() + "/Contents/Info.plist");
         QFile resourcesDirectory(path.toUtf8() + "/Contents/Resources");
-        if (infoPlistFIle.exists() && resourcesDirectory.exists()) {
+        if (infoPlistFile.exists() && resourcesDirectory.exists()) {
             isAppDirOrBundle = true;
         }
     }
 
     // Check whether we have a ROX AppDir
-    QFile appRunFile(path.toUtf8() + "/AppRun");
-    if (QFileInfo(appRunFile).isExecutable()) {
-        isAppDirOrBundle = true;
+    if (path.toLower().endsWith(".appdir")) {
+        QFile appRunFile(path.toUtf8() + "/AppRun");
+        if (QFileInfo(appRunFile).isExecutable()) {
+            isAppDirOrBundle = true;
+        }
     }
 
     return(isAppDirOrBundle);
@@ -76,21 +79,21 @@ QString getLaunchableExecutable(FmFileInfo* _info)
         if (executableFile.exists() && QFileInfo(executableFile).isExecutable()) {
             launchableExecutable = QString(path + "/" + nameWithoutSuffix);
         }
-    }
 
-    // macOS .app bundle
-    if (path.toLower().endsWith(".app")) {
+        // macOS .app bundle
         // TODO: Before falling back to foo.app/Contents/MacOS/foo, parse Info.plist and get the CFBundleExecutable from there
-        QFile executableFile(path.toUtf8() + "/Contents/MacOS/" + nameWithoutSuffix);
-        if (executableFile.exists() && QFileInfo(executableFile).isExecutable() && QSysInfo::productType() == "osx") {
+        QFile executableFile2(path.toUtf8() + "/Contents/MacOS/" + nameWithoutSuffix);
+        if (executableFile2.exists() && QFileInfo(executableFile2).isExecutable() && QSysInfo::productType() == "osx") {
             launchableExecutable = QString(path + "/Contents/MacOS/" + nameWithoutSuffix);
         }
     }
 
     // ROX AppDir
-    QFile appRunFile(path.toUtf8() + "/AppRun");
-    if ((appRunFile.exists()) && QFileInfo(appRunFile).isExecutable()) {
-        launchableExecutable = QString(path + "/AppRun");
+    if (path.toLower().endsWith(".appdir")) {
+        QFile appRunFile(path.toUtf8() + "/AppRun");
+        if ((appRunFile.exists()) && QFileInfo(appRunFile).isExecutable()) {
+            launchableExecutable = QString(path + "/AppRun");
+        }
     }
 
     qDebug() << "probono: launchableExecutable:" << launchableExecutable.toUtf8();
