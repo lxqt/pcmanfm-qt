@@ -3,3 +3,5 @@ build
 .DirInfo
 CMakeLists.txt.user*
 *.diff
+*.autosave
+*.DirInfo

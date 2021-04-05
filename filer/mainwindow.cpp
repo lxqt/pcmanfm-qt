@@ -32,6 +32,7 @@
 #include <QDebug>
 #include <QCompleter>
 #include <QFileSystemModel>
+#include <QStandardPaths>
 
 #include "tabpage.h"
 #include "filelauncher.h"
@@ -598,7 +599,33 @@ void MainWindow::on_actionComputer_triggered() {
 }
 
 void MainWindow::on_actionApplications_triggered() {
-  chdir(fm_path_get_apps_menu());
+  // chdir(fm_path_get_apps_menu());
+  // probono: Use hardcoded /Applications for now
+  FmPath* path = fm_path_new_for_uri("file:///Applications");
+  chdir(path);
+  fm_path_unref(path);
+}
+
+void MainWindow::on_actionUtilities_triggered() {
+  FmPath* path = fm_path_new_for_uri("file:///Applications/Utilities");
+  chdir(path);
+  fm_path_unref(path);
+}
+
+void MainWindow::on_actionDocuments_triggered() {
+  // chdir(fm_path_get_apps_menu());
+  FmPath* path;
+  path = fm_path_new_for_str(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation).toLocal8Bit().data());
+  chdir(path);
+  fm_path_unref(path);
+}
+
+void MainWindow::on_actionDownloads_triggered() {
+  // chdir(fm_path_get_apps_menu());
+  FmPath* path;
+  path = fm_path_new_for_str(QStandardPaths::writableLocation(QStandardPaths::DownloadLocation).toLocal8Bit().data());
+  chdir(path);
+  fm_path_unref(path);
 }
 
 void MainWindow::on_actionTrash_triggered() {

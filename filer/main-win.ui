@@ -193,17 +193,21 @@
     <property name="title">
      <string>&amp;Go</string>
     </property>
-    <addaction name="actionHome"/>
-    <addaction name="actionDesktop"/>
-    <addaction name="actionComputer"/>
-    <addaction name="actionTrash"/>
-    <addaction name="actionNetwork"/>
-    <addaction name="actionApplications"/>
-    <addaction name="actionGoToFolder"/>
-    <addaction name="separator"/>
     <addaction name="actionGoBack"/>
     <addaction name="actionGoForward"/>
     <addaction name="actionGoUp"/>
+    <addaction name="separator"/>
+    <addaction name="actionHome"/>
+    <addaction name="actionDocuments"/>
+    <addaction name="actionDesktop"/>
+    <addaction name="actionDownloads"/>
+    <addaction name="actionComputer"/>
+    <addaction name="actionNetwork"/>
+    <addaction name="actionApplications"/>
+    <addaction name="actionUtilities"/>
+    <addaction name="actionTrash"/>
+    <addaction name="separator"/>
+    <addaction name="actionGoToFolder"/>
    </widget>
    <widget class="QMenu" name="menu_Tool">
     <property name="title">
@@ -268,7 +272,7 @@
     <string>&amp;Home</string>
    </property>
    <property name="shortcut">
-    <string>Alt+Home</string>
+    <string>Ctrl+Shift+H</string>
    </property>
   </action>
   <action name="actionReload">
@@ -350,6 +354,9 @@
    <property name="text">
     <string>&amp;Computer</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
+   </property>
   </action>
   <action name="actionTrash">
    <property name="icon">
@@ -359,10 +366,16 @@
    <property name="text">
     <string>&amp;Trash</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+T</string>
+   </property>
   </action>
   <action name="actionNetwork">
    <property name="text">
     <string>&amp;Network</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
    </property>
   </action>
   <action name="actionDesktop">
@@ -372,6 +385,9 @@
    </property>
    <property name="text">
     <string>&amp;Desktop</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+D</string>
    </property>
   </action>
   <action name="actionAddToBookmarks">
@@ -387,8 +403,11 @@
    <property name="text">
     <string>&amp;Applications</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+A</string>
+   </property>
    <property name="visible">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
   </action>
   <action name="actionReload_2">
@@ -402,6 +421,9 @@
    </property>
    <property name="text">
     <string>&amp;Icon View</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
    </property>
   </action>
   <action name="actionCompactView">
@@ -418,6 +440,9 @@
    </property>
    <property name="text">
     <string>&amp;Detailed List</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
    </property>
   </action>
   <action name="actionThumbnailView">
@@ -717,7 +742,8 @@
   </action>
   <action name="actionGoToFolder">
    <property name="icon">
-    <iconset theme="folder-open"/>
+    <iconset theme="folder-open">
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;Go To Folder</string>
@@ -727,6 +753,48 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+G</string>
+   </property>
+  </action>
+  <action name="actionDownloads">
+   <property name="text">
+    <string>&amp;Downloads</string>
+   </property>
+   <property name="toolTip">
+    <string>Downloads</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionUtilities">
+   <property name="text">
+    <string>&amp;Utilities</string>
+   </property>
+   <property name="toolTip">
+    <string>Utilities</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+U</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionDocuments">
+   <property name="text">
+    <string>&amp;Documents</string>
+   </property>
+   <property name="toolTip">
+    <string>Documents</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
    </property>
   </action>
  </widget>
