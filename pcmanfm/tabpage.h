@@ -270,6 +270,8 @@ public:
 
     void backspacePressed();
 
+    void ceateShortcut();
+
 Q_SIGNALS:
     void statusChanged(int type, QString statusText);
     void titleChanged();
@@ -321,6 +323,7 @@ private:
     FolderSettings folderSettings_;
     QTimer* selectionTimer_;
     FilterBar* filterBar_;
+    QStringList filesToTrust_;
 };
 
 }

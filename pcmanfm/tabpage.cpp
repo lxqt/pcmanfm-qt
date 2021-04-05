@@ -36,6 +36,7 @@
 #include <QDir>
 #include "settings.h"
 #include "application.h"
+#include "desktopentrydialog.h"
 #include <QTimer>
 #include <QDebug>
 
@@ -283,6 +284,7 @@ void TabPage::freeFolder() {
         }
         disconnect(folder_.get(), nullptr, this, nullptr); // disconnect from all signals
         folder_ = nullptr;
+        filesToTrust_.clear();
     }
 }
 
@@ -390,6 +392,20 @@ void TabPage::onFilesAdded(Fm::FileInfoList files) {
         QModelIndex firstIndx = proxyModel_->index(0, 0);
         if (firstIndx.isValid()) {
             folderView_->selectionModel()->setCurrentIndex(firstIndx, QItemSelectionModel::NoUpdate);
+        }
+    }
+
+    // trust the files that are added by ceateShortcut()
+    if(!filesToTrust_.isEmpty()) {
+        for(const auto& file : files) {
+            const QString fileName = QString::fromStdString(file->name());
+            if(filesToTrust_.contains(fileName)) {
+                file->setTrustable(true);
+                filesToTrust_.removeAll(fileName);
+                if(filesToTrust_.isEmpty()) {
+                    break;
+                }
+            }
         }
     }
 }
@@ -980,6 +996,27 @@ void TabPage::setCustomizedView(bool value) {
         setSortFolderFirst(sortFolderFirst);
         setSortHiddenLast(sortHiddenLast);
         sort(sortColumn, sortOrder);
+    }
+}
+
+void TabPage::ceateShortcut() {
+    if(folder_ && folder_->isLoaded()) {
+        auto folderPath = folder_->path();
+        if(folderPath && folderPath.isNative()) {
+            DesktopEntryDialog* dlg = new DesktopEntryDialog(this, folderPath);
+            dlg->setAttribute(Qt::WA_DeleteOnClose);
+            connect(dlg, &DesktopEntryDialog::desktopEntryCreated, [this] (const QString& name) {
+                // if the current directory does not have a file monitor or is changed,
+                // there will be no point to tracking the created shortcut
+                if(folder_ && folder_->hasFileMonitor()
+                   && folder_->path().isParentOf(Fm::FilePath::fromLocalPath(name.toLocal8Bit().constData()))) {
+                    filesToTrust_ << name;
+                }
+            });
+            dlg->show();
+            dlg->raise();
+            dlg->activateWindow();
+        }
     }
 }
 
