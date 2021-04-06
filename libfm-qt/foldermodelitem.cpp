@@ -86,11 +86,15 @@ FolderModelItem::FolderModelItem(const FolderModelItem& other) {
     result = result.trimmed();
     qDebug() << "probono: result:" << result;
     if (result.split(" ").length() == 1) {
-        // We got a filesystem but no volume label back, so use the filesystem
-        displayName = result.split(" ")[0];
+        if (result.split(" ")[0] != "" && result.split(" ")[0] != nullptr) {
+            // We got a filesystem but no volume label back, so use the filesystem
+            displayName = result.split(" ")[0];
+        }
     } else if (result.split(" ").length() == 2) {
-        // We got a filesystem and a volume label back, so use the volume label
-        displayName = result.split(" ")[1];
+        if (result.split(" ")[1] != "" && result.split(" ")[1] != nullptr) {
+            // We got a filesystem and a volume label back, so use the volume label
+            displayName = result.split(" ")[1];
+        }
     }
 #else
     qDebug() << "probono: TODO: To be implemented for this OS";
