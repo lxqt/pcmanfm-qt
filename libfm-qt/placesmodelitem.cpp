@@ -200,11 +200,13 @@ void PlacesModelMountItem::update() {
       if (result.split(" ")[0] != "" && result.split(" ")[0] != nullptr) {
           // We got a filesystem but no volume label back, so use the filesystem
           displayName = result.split(" ")[0];
+          setText(displayName);
       }
   } else if (result.split(" ").length() == 2) {
       if (result.split(" ")[1] != "" && result.split(" ")[1] != nullptr) {
           // We got a filesystem and a volume label back, so use the volume label
           displayName = result.split(" ")[1];
+          setText(displayName);
       }
   }
 #else
