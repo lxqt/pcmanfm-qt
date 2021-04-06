@@ -702,574 +702,580 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>&amp;כלים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="269"/>
+        <location filename="../main-win.ui" line="270"/>
         <source>Go &amp;Up</source>
         <translation>ל&amp;עלות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="272"/>
+        <location filename="../main-win.ui" line="273"/>
         <source>Go Up</source>
         <translation>לעלות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="275"/>
+        <location filename="../main-win.ui" line="276"/>
         <source>Alt+Up</source>
         <translation>‪Alt+למעלה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="284"/>
+        <location filename="../main-win.ui" line="285"/>
         <source>&amp;Home</source>
         <translation>&amp;בית</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="287"/>
+        <location filename="../main-win.ui" line="288"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="296"/>
+        <location filename="../main-win.ui" line="297"/>
         <source>&amp;Reload</source>
         <translation>&amp;רענון</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="299"/>
+        <location filename="../main-win.ui" line="300"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="308"/>
+        <location filename="../main-win.ui" line="309"/>
         <source>Go</source>
         <translation>לגשת אל</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="317"/>
+        <location filename="../main-win.ui" line="318"/>
         <source>Quit</source>
         <translation>יציאה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="326"/>
+        <location filename="../main-win.ui" line="327"/>
         <source>&amp;About</source>
         <translatorcomment>המילה &quot;על&quot; לא נחוצה, אז הסרתי אותה.</translatorcomment>
         <translation>&amp;אודות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="335"/>
+        <location filename="../main-win.ui" line="336"/>
         <source>&amp;New Window</source>
         <translation>&amp;חלון חדש</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="338"/>
+        <location filename="../main-win.ui" line="339"/>
         <source>New Window</source>
         <translation>חלון חדש</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="341"/>
+        <location filename="../main-win.ui" line="342"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="349"/>
+        <location filename="../main-win.ui" line="350"/>
         <source>Show &amp;Hidden</source>
         <translation>הצגת מוס&amp;תרים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="352"/>
+        <location filename="../main-win.ui" line="353"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="361"/>
+        <location filename="../main-win.ui" line="362"/>
         <source>&amp;Computer</source>
         <translation>מ&amp;חשב</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="370"/>
+        <location filename="../main-win.ui" line="371"/>
         <source>&amp;Trash</source>
         <translation>&amp;אשפה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="375"/>
+        <location filename="../main-win.ui" line="376"/>
         <source>&amp;Network</source>
         <translation>&amp;רשת</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="384"/>
+        <location filename="../main-win.ui" line="385"/>
         <source>&amp;Desktop</source>
         <translation>שו&amp;לחן עבודה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="393"/>
+        <location filename="../main-win.ui" line="394"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>הוספה לסימ&amp;ניות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="398"/>
+        <location filename="../main-win.ui" line="399"/>
         <source>&amp;Applications</source>
         <translation>&amp;יישומים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="403"/>
+        <location filename="../main-win.ui" line="404"/>
         <source>Reload</source>
         <translation>רענון</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="411"/>
+        <location filename="../main-win.ui" line="412"/>
         <source>&amp;Icon View</source>
         <translation>תצוגת סמ&amp;לים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="419"/>
+        <location filename="../main-win.ui" line="420"/>
         <source>&amp;Compact View</source>
         <translation>תצוגה &amp;חסכונית</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="427"/>
+        <location filename="../main-win.ui" line="428"/>
         <source>&amp;Detailed List</source>
         <translation>רשימה מ&amp;פורטת</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="435"/>
+        <location filename="../main-win.ui" line="436"/>
         <source>&amp;Thumbnail View</source>
         <translation>תצוגת &amp;תמונות ממוזערות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="444"/>
+        <location filename="../main-win.ui" line="445"/>
         <source>Cu&amp;t</source>
         <translation>ג&amp;זירה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="447"/>
+        <location filename="../main-win.ui" line="448"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="456"/>
+        <location filename="../main-win.ui" line="457"/>
         <source>&amp;Copy</source>
         <translation>ה&amp;עתקה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="459"/>
+        <location filename="../main-win.ui" line="460"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="468"/>
+        <location filename="../main-win.ui" line="469"/>
         <source>&amp;Paste</source>
         <translation>ה&amp;דבקה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="471"/>
+        <location filename="../main-win.ui" line="472"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="476"/>
+        <location filename="../main-win.ui" line="477"/>
         <source>Select &amp;All</source>
         <translation>לבחור ה&amp;כול</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="479"/>
+        <location filename="../main-win.ui" line="480"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="484"/>
+        <location filename="../main-win.ui" line="485"/>
         <source>Pr&amp;eferences</source>
         <translation>ה&amp;עדפות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="492"/>
+        <location filename="../main-win.ui" line="493"/>
         <source>&amp;Ascending</source>
         <translation>עו&amp;לה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="500"/>
+        <location filename="../main-win.ui" line="501"/>
         <source>&amp;Descending</source>
         <translation>יו&amp;רד</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="508"/>
+        <location filename="../main-win.ui" line="509"/>
         <source>&amp;By File Name</source>
         <translation>לפי שם &amp;קובץ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="516"/>
+        <location filename="../main-win.ui" line="517"/>
         <source>By &amp;Modification Time</source>
         <translation>לפי מועד &amp;שינוי</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="524"/>
+        <location filename="../main-win.ui" line="525"/>
         <source>By C&amp;reation Time</source>
         <translation>לפי מועד הי&amp;צירה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="532"/>
+        <location filename="../main-win.ui" line="533"/>
         <source>By Deletio&amp;n Time</source>
         <translation>לפי מועד מ&amp;חיקה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="540"/>
+        <location filename="../main-win.ui" line="541"/>
         <source>By File &amp;Type</source>
         <translation>לפי &amp;סוג קובץ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="548"/>
+        <location filename="../main-win.ui" line="549"/>
         <source>By &amp;Owner</source>
         <translation>לפי &amp;בעלות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="556"/>
+        <location filename="../main-win.ui" line="557"/>
         <source>By &amp;Group</source>
         <translation>לפי &amp;קבוצה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="564"/>
+        <location filename="../main-win.ui" line="565"/>
         <source>&amp;Folder First</source>
         <translation>&amp;תיקיות בהתחלה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="572"/>
+        <location filename="../main-win.ui" line="573"/>
         <source>&amp;Hidden Last</source>
         <translation>&amp;הוסתר לאחרונה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="580"/>
+        <location filename="../main-win.ui" line="581"/>
         <source>&amp;Preserve sorting for this folder</source>
         <translation>&amp;קיבוע אופן סידור התיקייה הזאת</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="633"/>
+        <location filename="../main-win.ui" line="634"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="682"/>
+        <location filename="../main-win.ui" line="683"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;תלוי רישיות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="690"/>
+        <location filename="../main-win.ui" line="691"/>
         <source>By File &amp;Size</source>
         <translation>לפי &amp;גודל קובץ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="695"/>
+        <location filename="../main-win.ui" line="696"/>
         <source>&amp;Close Window</source>
         <translation>&amp;סגירת חלון</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="698"/>
+        <location filename="../main-win.ui" line="699"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="716"/>
+        <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
         <translation>פתיחת לשונית במופע מ&amp;שתמש על</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="730"/>
+        <location filename="../main-win.ui" line="731"/>
         <source>&amp;Folder</source>
         <translation>&amp;תיקייה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="742"/>
+        <location filename="../main-win.ui" line="743"/>
         <source>&amp;Blank File</source>
         <translation>קובץ &amp;ריק</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="866"/>
+        <location filename="../main-win.ui" line="867"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation>ה&amp;צגה/התמקדות של סרגל הסינון</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="869"/>
+        <location filename="../main-win.ui" line="870"/>
         <source>Show Filter Bar</source>
         <translation>הצגת סרגל סינון</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="872"/>
+        <location filename="../main-win.ui" line="873"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="880"/>
+        <location filename="../main-win.ui" line="881"/>
         <source>S&amp;plit View</source>
         <translation>תצוגה מ&amp;פוצלת</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="883"/>
+        <location filename="../main-win.ui" line="884"/>
         <source>Split View</source>
         <translation>תצוגה מפוצלת</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="886"/>
+        <location filename="../main-win.ui" line="887"/>
         <source>F6</source>
         <translation>F6</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="891"/>
+        <location filename="../main-win.ui" line="892"/>
         <source>&amp;Copy Full Path</source>
         <translation>העתקת ה&amp;נתיב המלא</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="894"/>
+        <location filename="../main-win.ui" line="895"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="905"/>
+        <location filename="../main-win.ui" line="906"/>
         <source>Show Thumb&amp;nails</source>
         <translation>הצגת תמונות ממו&amp;זערות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="908"/>
+        <location filename="../main-win.ui" line="909"/>
         <source>Show Thumbnails</source>
         <translation>הצגת תמונות ממוזערות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="916"/>
+        <location filename="../main-win.ui" line="917"/>
         <source>S&amp;ide Pane</source>
         <translation>חלונית צ&amp;ד</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="919"/>
+        <location filename="../main-win.ui" line="920"/>
         <source>F9</source>
         <translation>F9</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="924"/>
+        <location filename="../main-win.ui" line="925"/>
         <source>Hidden &amp;Shortcuts</source>
         <translation>&amp;קיצורי דרך מוסתרים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="929"/>
+        <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
         <translation>פתיחת לשונית במצב &amp;ניהול</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="764"/>
+        <location filename="../main-win.ui" line="935"/>
+        <location filename="../main-win.ui" line="938"/>
+        <source>Create Launcher</source>
+        <translation type="unfinished">יצירת משגר</translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="765"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="769"/>
+        <location filename="../main-win.ui" line="770"/>
         <source>&amp;Clear All Filters</source>
         <translation>פינוי &amp;כל המסננים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="772"/>
+        <location filename="../main-win.ui" line="773"/>
         <source>Ctrl+Shift+K</source>
         <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="781"/>
+        <location filename="../main-win.ui" line="782"/>
         <source>Close &amp;previous tabs</source>
         <translation>סגירת הלשוניות ה&amp;קודמות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="790"/>
+        <location filename="../main-win.ui" line="791"/>
         <source>Close &amp;next tabs</source>
         <translation>סגירת הלשוניות ה&amp;באות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="829"/>
+        <location filename="../main-win.ui" line="830"/>
         <source>&amp;Preserve Settings for This Folder</source>
         <translation>&amp;שמירת ההגדרות של התיקייה הזאת</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="834"/>
+        <location filename="../main-win.ui" line="835"/>
         <source>Connect to &amp;Server</source>
         <translation>התחברות לש&amp;רת</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="842"/>
+        <location filename="../main-win.ui" line="843"/>
         <source>&amp;Location</source>
         <translation>מי&amp;קום</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="850"/>
+        <location filename="../main-win.ui" line="851"/>
         <source>&amp;Path Buttons</source>
         <translation>כפתור &amp;נתיב</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="855"/>
+        <location filename="../main-win.ui" line="856"/>
         <source>&amp;Bulk Rename</source>
         <translation>שינוי שם &amp;כמותי</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="858"/>
+        <location filename="../main-win.ui" line="859"/>
         <source>Bulk Rename</source>
         <translation>שינוי שם כמותי</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="861"/>
+        <location filename="../main-win.ui" line="862"/>
         <source>Ctrl+F2</source>
         <translation>Ctrl+F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="795"/>
+        <location filename="../main-win.ui" line="796"/>
         <source>Close &amp;other tabs</source>
         <translation>לסגור לשוניות א&amp;חרות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="761"/>
+        <location filename="../main-win.ui" line="762"/>
         <source>Permanent &amp;filter bar</source>
         <translation>סרגל סינון &amp;קבוע</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="803"/>
+        <location filename="../main-win.ui" line="804"/>
         <source>&amp;Menu bar</source>
         <translation>סרגל &amp;תפריטים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="806"/>
+        <location filename="../main-win.ui" line="807"/>
         <source>Menu bar</source>
         <translation>סרגל תפריטים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="809"/>
+        <location filename="../main-win.ui" line="810"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="818"/>
-        <location filename="../main-win.ui" line="821"/>
+        <location filename="../main-win.ui" line="819"/>
+        <location filename="../main-win.ui" line="822"/>
         <source>Menu</source>
         <translation>תפריט</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="589"/>
+        <location filename="../main-win.ui" line="590"/>
         <source>New &amp;Tab</source>
         <translation>לשונית &amp;חדשה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="592"/>
+        <location filename="../main-win.ui" line="593"/>
         <source>New Tab</source>
         <translation>לשונית חדשה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="595"/>
+        <location filename="../main-win.ui" line="596"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="604"/>
+        <location filename="../main-win.ui" line="605"/>
         <source>Go &amp;Back</source>
         <translation>ח&amp;זרה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="608"/>
         <source>Go Back</source>
         <translation>חזר אחורה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="610"/>
+        <location filename="../main-win.ui" line="611"/>
         <source>Alt+Left</source>
         <translation>‪Alt+שמאלה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="619"/>
+        <location filename="../main-win.ui" line="620"/>
         <source>Go &amp;Forward</source>
         <translation>הת&amp;קדמות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="622"/>
+        <location filename="../main-win.ui" line="623"/>
         <source>Go Forward</source>
         <translation>התקדמות קדימה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="625"/>
+        <location filename="../main-win.ui" line="626"/>
         <source>Alt+Right</source>
         <translation>‪Alt+ימינה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="630"/>
+        <location filename="../main-win.ui" line="631"/>
         <source>&amp;Invert Selection</source>
         <translation>הי&amp;פוך בחירה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="642"/>
+        <location filename="../main-win.ui" line="643"/>
         <source>&amp;Delete</source>
         <translation>מ&amp;חיקה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="645"/>
+        <location filename="../main-win.ui" line="646"/>
         <source>Del</source>
         <translation>Del</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="650"/>
+        <location filename="../main-win.ui" line="651"/>
         <source>&amp;Rename</source>
         <translation>&amp;שינוי שם</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="653"/>
+        <location filename="../main-win.ui" line="654"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="658"/>
+        <location filename="../main-win.ui" line="659"/>
         <source>C&amp;lose Tab</source>
         <translation>&amp;סגירת לשונית</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="661"/>
+        <location filename="../main-win.ui" line="662"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="666"/>
+        <location filename="../main-win.ui" line="667"/>
         <source>File &amp;Properties</source>
         <translation>מ&amp;אפייני קובץ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="669"/>
+        <location filename="../main-win.ui" line="670"/>
         <source>Alt+Return</source>
         <translation>Alt+Return</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="674"/>
+        <location filename="../main-win.ui" line="675"/>
         <source>&amp;Folder Properties</source>
         <translation>מאפייני &amp;תיקייה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="703"/>
+        <location filename="../main-win.ui" line="704"/>
         <source>Edit Bookmarks</source>
         <translation>עריכת סימניות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="708"/>
+        <location filename="../main-win.ui" line="709"/>
         <source>Open &amp;Terminal</source>
         <translation>פתיחת מ&amp;סוף</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="711"/>
+        <location filename="../main-win.ui" line="712"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="721"/>
+        <location filename="../main-win.ui" line="722"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;עריכת סימניות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="733"/>
+        <location filename="../main-win.ui" line="734"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="745"/>
+        <location filename="../main-win.ui" line="746"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="750"/>
+        <location filename="../main-win.ui" line="751"/>
         <source>&amp;Find Files</source>
         <translation>&amp;איתור קבצים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="753"/>
+        <location filename="../main-win.ui" line="754"/>
         <source>F3</source>
         <translation>F3</translation>
     </message>
@@ -1315,7 +1321,7 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>ל&amp;גשת אל</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="235"/>
+        <location filename="../main-win.ui" line="236"/>
         <source>Main Toolbar</source>
         <translation>סרגל כלים ראשי</translation>
     </message>
@@ -1428,7 +1434,7 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>פתיחה במנהל הקבצים</translation>
     </message>
     <message>
-        <location filename="../autorundialog.cpp" line="137"/>
+        <location filename="../autorundialog.cpp" line="138"/>
         <source>Removable Disk</source>
         <translation>דיסק נשלף</translation>
     </message>
@@ -1469,32 +1475,32 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopEntryDialog</name>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="25"/>
+        <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>Command:</source>
         <translation>פקודה:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="28"/>
+        <location filename="../desktopentrydialog.cpp" line="32"/>
         <source>URL:</source>
         <translation>כתובת:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="53"/>
+        <location filename="../desktopentrydialog.cpp" line="57"/>
         <source>Select an icon</source>
         <translation>נא לבחור סמל</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="55"/>
+        <location filename="../desktopentrydialog.cpp" line="59"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
         <translation>תמונות (‎*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="81"/>
+        <location filename="../desktopentrydialog.cpp" line="85"/>
         <source>Select an executable file</source>
         <translation>נא לבחור קובץ בר הרצה</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="89"/>
+        <location filename="../desktopentrydialog.cpp" line="93"/>
         <source>Select a file</source>
         <translation>נא לבחור קובץ</translation>
     </message>
@@ -1560,8 +1566,6 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>
             <numerusform>אשפה (פריט אחד)</numerusform>
             <numerusform>אשפה (שני פריטים)</numerusform>
-            <numerusform>אשפה (%Ln פריטים)</numerusform>
-            <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1614,7 +1618,7 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="92"/>
+        <location filename="../tabpage.cpp" line="93"/>
         <source>Filter:</source>
         <translation>מסנן:</translation>
     </message>
@@ -1622,7 +1626,7 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="62"/>
+        <location filename="../tabpage.cpp" line="63"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>ניקוי טקסט (Ctrl+K או Esc)</translation>
     </message>
@@ -1651,24 +1655,24 @@ are left clicked, even when it is not the default file manager.</source>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1944"/>
+        <location filename="../mainwindow.cpp" line="1949"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;העברה לאשפה</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1944"/>
+        <location filename="../mainwindow.cpp" line="1949"/>
         <source>&amp;Delete</source>
         <translation>מ&amp;חיקה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2012"/>
-        <location filename="../mainwindow.cpp" line="2020"/>
+        <location filename="../mainwindow.cpp" line="2017"/>
+        <location filename="../mainwindow.cpp" line="2025"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2020"/>
+        <location filename="../mainwindow.cpp" line="2025"/>
         <source>Switch user command is not set.</source>
         <translation>פקודת החלפת המשתמש לא נקבעה.</translation>
     </message>
@@ -1699,50 +1703,44 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="483"/>
+        <location filename="../tabpage.cpp" line="499"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="492"/>
+        <location filename="../tabpage.cpp" line="508"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>שטח פנוי: %1 (בסך הכול: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="509"/>
+        <location filename="../tabpage.cpp" line="525"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>פריט אחד</numerusform>
             <numerusform>שני פריטים</numerusform>
-            <numerusform>%n פריטים</numerusform>
-            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="511"/>
+        <location filename="../tabpage.cpp" line="527"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
             <numerusform> (שניים מוסתרים)</numerusform>
-            <numerusform> (%n מוסתרים)</numerusform>
-            <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="516"/>
-        <location filename="../tabpage.cpp" line="710"/>
-        <location filename="../tabpage.cpp" line="724"/>
+        <location filename="../tabpage.cpp" line="532"/>
+        <location filename="../tabpage.cpp" line="726"/>
+        <location filename="../tabpage.cpp" line="740"/>
         <source>Link to</source>
         <translation>קישור אל</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="736"/>
+        <location filename="../tabpage.cpp" line="752"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>נבחר פריט אחד</numerusform>
             <numerusform>נבחרו שני פריטים</numerusform>
-            <numerusform>נבחרו %n פריטים</numerusform>
-            <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
 </context>
@@ -1758,8 +1756,6 @@ are left clicked, even when it is not the default file manager.</source>
         <source>Do you want to open these %1 files?</source>
         <translation>
             <numerusform>לפתוח את קובץ ה־%1 הזה?</numerusform>
-            <numerusform>לפתוח את קובצי ה־%1 האלה?</numerusform>
-            <numerusform>לפתוח את קובצי ה־%1 האלה?</numerusform>
             <numerusform>לפתוח את קובצי ה־%1 האלה?</numerusform>
         </translation>
     </message>
@@ -2262,7 +2258,7 @@ The translation of this string isn&apos;t 100% well.</translatorcomment>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1018"/>
+        <location filename="../tabpage.cpp" line="1055"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
@@ -2277,7 +2273,7 @@ The translation of this string isn&apos;t 100% well.</translatorcomment>
         <translation>שמם של כמה קבצים לא יכול להשתנות.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1018"/>
+        <location filename="../tabpage.cpp" line="1055"/>
         <source>Cannot open as Admin.</source>
         <translation>לא ניתן לפתוח במצב ניהול.</translation>
     </message>
