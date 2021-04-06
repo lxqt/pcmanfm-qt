@@ -745,7 +745,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="317"/>
         <source>Quit</source>
-        <translation>Välju</translation>
+        <translation>Sulge</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="326"/>
@@ -1317,7 +1317,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="235"/>
         <source>Main Toolbar</source>
-        <translation>Põhitööriistariba</translation>
+        <translation>Põhiline tööriistariba</translation>
     </message>
 </context>
 <context>
