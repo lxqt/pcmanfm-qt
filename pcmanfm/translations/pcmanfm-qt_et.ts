@@ -703,573 +703,579 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
         <translation>&amp;Tööriistad</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="269"/>
+        <location filename="../main-win.ui" line="270"/>
         <source>Go &amp;Up</source>
         <translation>Liigu &amp;üles</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="272"/>
+        <location filename="../main-win.ui" line="273"/>
         <source>Go Up</source>
         <translation>Liigu üles</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="275"/>
+        <location filename="../main-win.ui" line="276"/>
         <source>Alt+Up</source>
         <translation>Alt+Up</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="284"/>
+        <location filename="../main-win.ui" line="285"/>
         <source>&amp;Home</source>
         <translation>&amp;Avaleht</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="287"/>
+        <location filename="../main-win.ui" line="288"/>
         <source>Alt+Home</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="296"/>
+        <location filename="../main-win.ui" line="297"/>
         <source>&amp;Reload</source>
         <translation>&amp;Laadi uuesti</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="299"/>
+        <location filename="../main-win.ui" line="300"/>
         <source>F5</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="308"/>
+        <location filename="../main-win.ui" line="309"/>
         <source>Go</source>
         <translation>Liigu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="317"/>
+        <location filename="../main-win.ui" line="318"/>
         <source>Quit</source>
         <translation>Sulge</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="326"/>
+        <location filename="../main-win.ui" line="327"/>
         <source>&amp;About</source>
         <translation>&amp;Rakenduse teave</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="335"/>
+        <location filename="../main-win.ui" line="336"/>
         <source>&amp;New Window</source>
         <translation>&amp;Uus aken</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="338"/>
+        <location filename="../main-win.ui" line="339"/>
         <source>New Window</source>
         <translation>Uus aken</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="341"/>
+        <location filename="../main-win.ui" line="342"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="349"/>
+        <location filename="../main-win.ui" line="350"/>
         <source>Show &amp;Hidden</source>
         <translation>Kuva &amp;peidetud failid</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="352"/>
+        <location filename="../main-win.ui" line="353"/>
         <source>Ctrl+H</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="361"/>
+        <location filename="../main-win.ui" line="362"/>
         <source>&amp;Computer</source>
         <translation>&amp;Arvuti</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="370"/>
+        <location filename="../main-win.ui" line="371"/>
         <source>&amp;Trash</source>
         <translation>&amp;Prügikast</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="375"/>
+        <location filename="../main-win.ui" line="376"/>
         <source>&amp;Network</source>
         <translation>&amp;Võrk</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="384"/>
+        <location filename="../main-win.ui" line="385"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Töölaud</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="393"/>
+        <location filename="../main-win.ui" line="394"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Lisa järjehoidjaks</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="398"/>
+        <location filename="../main-win.ui" line="399"/>
         <source>&amp;Applications</source>
         <translation>&amp;Rakendused</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="403"/>
+        <location filename="../main-win.ui" line="404"/>
         <source>Reload</source>
         <translation>Lae uuesti</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="411"/>
+        <location filename="../main-win.ui" line="412"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Ikoonivaade</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="419"/>
+        <location filename="../main-win.ui" line="420"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Kompaktne vaade</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="427"/>
+        <location filename="../main-win.ui" line="428"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Üksikasjalik nimekiri</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="435"/>
+        <location filename="../main-win.ui" line="436"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Pisipildivaade</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="444"/>
+        <location filename="../main-win.ui" line="445"/>
         <source>Cu&amp;t</source>
         <translation>L&amp;õika</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="447"/>
+        <location filename="../main-win.ui" line="448"/>
         <source>Ctrl+X</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="456"/>
+        <location filename="../main-win.ui" line="457"/>
         <source>&amp;Copy</source>
         <translation>&amp;Kopeeri</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="459"/>
+        <location filename="../main-win.ui" line="460"/>
         <source>Ctrl+C</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="468"/>
+        <location filename="../main-win.ui" line="469"/>
         <source>&amp;Paste</source>
         <translation>&amp;Aseta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="471"/>
+        <location filename="../main-win.ui" line="472"/>
         <source>Ctrl+V</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="476"/>
+        <location filename="../main-win.ui" line="477"/>
         <source>Select &amp;All</source>
         <translation>Vali &amp;kõik</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="479"/>
+        <location filename="../main-win.ui" line="480"/>
         <source>Ctrl+A</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="484"/>
+        <location filename="../main-win.ui" line="485"/>
         <source>Pr&amp;eferences</source>
         <translation>Ee&amp;listused</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="492"/>
+        <location filename="../main-win.ui" line="493"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Kasvav</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="500"/>
+        <location filename="../main-win.ui" line="501"/>
         <source>&amp;Descending</source>
         <translation>&amp;Kahanev</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="508"/>
+        <location filename="../main-win.ui" line="509"/>
         <source>&amp;By File Name</source>
         <translation>&amp;Faili nime järgi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="516"/>
+        <location filename="../main-win.ui" line="517"/>
         <source>By &amp;Modification Time</source>
         <translation>&amp;Muutmise aja järgi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="524"/>
+        <location filename="../main-win.ui" line="525"/>
         <source>By C&amp;reation Time</source>
         <translation>&amp;Loomisaja alusel</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="532"/>
+        <location filename="../main-win.ui" line="533"/>
         <source>By Deletio&amp;n Time</source>
         <translation>&amp;Kustutamise aja alusel</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="540"/>
+        <location filename="../main-win.ui" line="541"/>
         <source>By File &amp;Type</source>
         <translation>Faili &amp;tüübi järgi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="548"/>
+        <location filename="../main-win.ui" line="549"/>
         <source>By &amp;Owner</source>
         <translation>&amp;Omaniku järgi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="556"/>
+        <location filename="../main-win.ui" line="557"/>
         <source>By &amp;Group</source>
         <translation>&amp;Rühma alusel</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="564"/>
+        <location filename="../main-win.ui" line="565"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Kaustad ees</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="572"/>
+        <location filename="../main-win.ui" line="573"/>
         <source>&amp;Hidden Last</source>
         <translation>&amp;Peidetud failid lõpus</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="580"/>
+        <location filename="../main-win.ui" line="581"/>
         <source>&amp;Preserve sorting for this folder</source>
         <translation>&amp;Salvesta selle kausta sortimine</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="633"/>
+        <location filename="../main-win.ui" line="634"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="682"/>
+        <location filename="../main-win.ui" line="683"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;Tõstutundlik</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="690"/>
+        <location filename="../main-win.ui" line="691"/>
         <source>By File &amp;Size</source>
         <translation>Faili &amp;suuruse järgi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="695"/>
+        <location filename="../main-win.ui" line="696"/>
         <source>&amp;Close Window</source>
         <translation>&amp;Sulge aken</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="698"/>
+        <location filename="../main-win.ui" line="699"/>
         <source>Ctrl+Q</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="716"/>
+        <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
         <translation>Ava kaart juu&amp;rkasutajana</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="730"/>
+        <location filename="../main-win.ui" line="731"/>
         <source>&amp;Folder</source>
         <translation>&amp;Kaust</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="742"/>
+        <location filename="../main-win.ui" line="743"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Tühi fail</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="866"/>
+        <location filename="../main-win.ui" line="867"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation>Ava filtririba ja &amp;säti fookus sinna</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="869"/>
+        <location filename="../main-win.ui" line="870"/>
         <source>Show Filter Bar</source>
         <translation>Kuva filtririba</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="872"/>
+        <location filename="../main-win.ui" line="873"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="880"/>
+        <location filename="../main-win.ui" line="881"/>
         <source>S&amp;plit View</source>
         <translation>J&amp;aotatud vaade</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="883"/>
+        <location filename="../main-win.ui" line="884"/>
         <source>Split View</source>
         <translation>Poolitatud vaade</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="886"/>
+        <location filename="../main-win.ui" line="887"/>
         <source>F6</source>
         <translation>F6</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="891"/>
+        <location filename="../main-win.ui" line="892"/>
         <source>&amp;Copy Full Path</source>
         <translation>&amp;Kopeeri kogu rada</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="894"/>
+        <location filename="../main-win.ui" line="895"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="905"/>
+        <location filename="../main-win.ui" line="906"/>
         <source>Show Thumb&amp;nails</source>
         <translation>&amp;Näita pisipilte</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="908"/>
+        <location filename="../main-win.ui" line="909"/>
         <source>Show Thumbnails</source>
         <translation>Näita pisipilte</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="916"/>
+        <location filename="../main-win.ui" line="917"/>
         <source>S&amp;ide Pane</source>
         <translation>&amp;Külgpaneel</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="919"/>
+        <location filename="../main-win.ui" line="920"/>
         <source>F9</source>
         <translation>F9</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="924"/>
+        <location filename="../main-win.ui" line="925"/>
         <source>Hidden &amp;Shortcuts</source>
         <translation>Peidetud &amp;kiirklahvid</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="929"/>
+        <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
         <translation>Ava kaart &amp;administraatorina</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="764"/>
+        <location filename="../main-win.ui" line="935"/>
+        <location filename="../main-win.ui" line="938"/>
+        <source>Create Launcher</source>
+        <translation type="unfinished">Loo käivitaja</translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="765"/>
         <source>Ctrl+B</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="769"/>
+        <location filename="../main-win.ui" line="770"/>
         <source>&amp;Clear All Filters</source>
         <translation>&amp;Kustuta kõik filtrid</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="772"/>
+        <location filename="../main-win.ui" line="773"/>
         <source>Ctrl+Shift+K</source>
         <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="781"/>
+        <location filename="../main-win.ui" line="782"/>
         <source>Close &amp;previous tabs</source>
         <translation>Sulge &amp;eelmised kaardid</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="790"/>
+        <location filename="../main-win.ui" line="791"/>
         <source>Close &amp;next tabs</source>
         <translation>Sulge &amp;järgmised kaardid</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="829"/>
+        <location filename="../main-win.ui" line="830"/>
         <source>&amp;Preserve Settings for This Folder</source>
         <translation>&amp;Salvesta selle kausta sätted</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="834"/>
+        <location filename="../main-win.ui" line="835"/>
         <source>Connect to &amp;Server</source>
         <translation>Ühenda &amp;serveriga</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="842"/>
+        <location filename="../main-win.ui" line="843"/>
         <source>&amp;Location</source>
         <translation>&amp;Asukoht</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="850"/>
+        <location filename="../main-win.ui" line="851"/>
         <source>&amp;Path Buttons</source>
         <translation>&amp;Asukoha nupud</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="855"/>
+        <location filename="../main-win.ui" line="856"/>
         <source>&amp;Bulk Rename</source>
         <translation>&amp;Hulgi ümbernimetamine</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="858"/>
+        <location filename="../main-win.ui" line="859"/>
         <source>Bulk Rename</source>
         <translation>Hulgi ümbernimetamine</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="861"/>
+        <location filename="../main-win.ui" line="862"/>
         <source>Ctrl+F2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="795"/>
+        <location filename="../main-win.ui" line="796"/>
         <source>Close &amp;other tabs</source>
         <translation>Sulge &amp;muud kaardid</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="761"/>
+        <location filename="../main-win.ui" line="762"/>
         <source>Permanent &amp;filter bar</source>
         <translation>Püsiv &amp;filtririba</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="803"/>
+        <location filename="../main-win.ui" line="804"/>
         <source>&amp;Menu bar</source>
         <translation>&amp;Menüüriba</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="806"/>
+        <location filename="../main-win.ui" line="807"/>
         <source>Menu bar</source>
         <translation>Menüüriba</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="809"/>
+        <location filename="../main-win.ui" line="810"/>
         <source>Ctrl+M</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="818"/>
-        <location filename="../main-win.ui" line="821"/>
+        <location filename="../main-win.ui" line="819"/>
+        <location filename="../main-win.ui" line="822"/>
         <source>Menu</source>
         <translation>Menüü</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="589"/>
+        <location filename="../main-win.ui" line="590"/>
         <source>New &amp;Tab</source>
         <translation>Uus &amp;kaart</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="592"/>
+        <location filename="../main-win.ui" line="593"/>
         <source>New Tab</source>
         <translation>Uus kaart</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="595"/>
+        <location filename="../main-win.ui" line="596"/>
         <source>Ctrl+T</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="604"/>
+        <location filename="../main-win.ui" line="605"/>
         <source>Go &amp;Back</source>
         <translation>Mine &amp;tagasi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="608"/>
         <source>Go Back</source>
         <translation>Mine tagasi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="610"/>
+        <location filename="../main-win.ui" line="611"/>
         <source>Alt+Left</source>
         <translation>Alt+Left</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="619"/>
+        <location filename="../main-win.ui" line="620"/>
         <source>Go &amp;Forward</source>
         <translation>Liigu &amp;edasi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="622"/>
+        <location filename="../main-win.ui" line="623"/>
         <source>Go Forward</source>
         <translation>Liigu edasi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="625"/>
+        <location filename="../main-win.ui" line="626"/>
         <source>Alt+Right</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="630"/>
+        <location filename="../main-win.ui" line="631"/>
         <source>&amp;Invert Selection</source>
         <translation>&amp;Pööra valik</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="642"/>
+        <location filename="../main-win.ui" line="643"/>
         <source>&amp;Delete</source>
         <translation>&amp;Kustuta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="645"/>
+        <location filename="../main-win.ui" line="646"/>
         <source>Del</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="650"/>
+        <location filename="../main-win.ui" line="651"/>
         <source>&amp;Rename</source>
         <translation>&amp;Muuda nime</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="653"/>
+        <location filename="../main-win.ui" line="654"/>
         <source>F2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="658"/>
+        <location filename="../main-win.ui" line="659"/>
         <source>C&amp;lose Tab</source>
         <translation>S&amp;ulge kaart</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="661"/>
+        <location filename="../main-win.ui" line="662"/>
         <source>Ctrl+W</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="666"/>
+        <location filename="../main-win.ui" line="667"/>
         <source>File &amp;Properties</source>
         <translation>Faili &amp;omadused</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="669"/>
+        <location filename="../main-win.ui" line="670"/>
         <source>Alt+Return</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="674"/>
+        <location filename="../main-win.ui" line="675"/>
         <source>&amp;Folder Properties</source>
         <translation>&amp;Kausta omadused</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="703"/>
+        <location filename="../main-win.ui" line="704"/>
         <source>Edit Bookmarks</source>
         <translation>Muuda järjehoidjaid</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="708"/>
+        <location filename="../main-win.ui" line="709"/>
         <source>Open &amp;Terminal</source>
         <translation>Ava &amp;terminal</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="711"/>
+        <location filename="../main-win.ui" line="712"/>
         <source>F4</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="721"/>
+        <location filename="../main-win.ui" line="722"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Muuda järjehoidjaid</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="733"/>
+        <location filename="../main-win.ui" line="734"/>
         <source>Ctrl+Shift+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="745"/>
+        <location filename="../main-win.ui" line="746"/>
         <source>Ctrl+Alt+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="750"/>
+        <location filename="../main-win.ui" line="751"/>
         <source>&amp;Find Files</source>
         <translation>&amp;Otsi faile</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="753"/>
+        <location filename="../main-win.ui" line="754"/>
         <source>F3</source>
         <translation></translation>
     </message>
@@ -1315,7 +1321,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
         <translation>&amp;Mine</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="235"/>
+        <location filename="../main-win.ui" line="236"/>
         <source>Main Toolbar</source>
         <translation>Põhiline tööriistariba</translation>
     </message>
@@ -1428,7 +1434,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
         <translation>Ava failihalduris</translation>
     </message>
     <message>
-        <location filename="../autorundialog.cpp" line="137"/>
+        <location filename="../autorundialog.cpp" line="138"/>
         <source>Removable Disk</source>
         <translation>Eemaldatav ketas</translation>
     </message>
@@ -1469,32 +1475,32 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
 <context>
     <name>PCManFM::DesktopEntryDialog</name>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="25"/>
+        <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>Command:</source>
         <translation>Käsk:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="28"/>
+        <location filename="../desktopentrydialog.cpp" line="32"/>
         <source>URL:</source>
         <translation>URL:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="53"/>
+        <location filename="../desktopentrydialog.cpp" line="57"/>
         <source>Select an icon</source>
         <translation>Vali ikoon</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="55"/>
+        <location filename="../desktopentrydialog.cpp" line="59"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
         <translation>Pildid (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="81"/>
+        <location filename="../desktopentrydialog.cpp" line="85"/>
         <source>Select an executable file</source>
         <translation>Vali käivitusfail</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="89"/>
+        <location filename="../desktopentrydialog.cpp" line="93"/>
         <source>Select a file</source>
         <translation>Vali fail</translation>
     </message>
@@ -1612,7 +1618,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="92"/>
+        <location filename="../tabpage.cpp" line="93"/>
         <source>Filter:</source>
         <translation>Filter:</translation>
     </message>
@@ -1620,7 +1626,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="62"/>
+        <location filename="../tabpage.cpp" line="63"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>Kustuta tekst (Ctrl+K või Esc)</translation>
     </message>
@@ -1649,24 +1655,24 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1944"/>
+        <location filename="../mainwindow.cpp" line="1949"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Liiguta prügikasti</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1944"/>
+        <location filename="../mainwindow.cpp" line="1949"/>
         <source>&amp;Delete</source>
         <translation>&amp;Kustuta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2012"/>
-        <location filename="../mainwindow.cpp" line="2020"/>
+        <location filename="../mainwindow.cpp" line="2017"/>
+        <location filename="../mainwindow.cpp" line="2025"/>
         <source>Error</source>
         <translation>Viga</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2020"/>
+        <location filename="../mainwindow.cpp" line="2025"/>
         <source>Switch user command is not set.</source>
         <translation>Kasutaja vahetamise käsku pole määratud.</translation>
     </message>
@@ -1697,17 +1703,17 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="483"/>
+        <location filename="../tabpage.cpp" line="499"/>
         <source>Error</source>
         <translation>Viga</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="492"/>
+        <location filename="../tabpage.cpp" line="508"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Vaba ruum:%1 (kokku:%2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="509"/>
+        <location filename="../tabpage.cpp" line="525"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n element</numerusform>
@@ -1715,7 +1721,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="511"/>
+        <location filename="../tabpage.cpp" line="527"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n peidetud)</numerusform>
@@ -1723,14 +1729,14 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="516"/>
-        <location filename="../tabpage.cpp" line="710"/>
-        <location filename="../tabpage.cpp" line="724"/>
+        <location filename="../tabpage.cpp" line="532"/>
+        <location filename="../tabpage.cpp" line="726"/>
+        <location filename="../tabpage.cpp" line="740"/>
         <source>Link to</source>
         <translation>Ühenda</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="736"/>
+        <location filename="../tabpage.cpp" line="752"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n element valitud</numerusform>
@@ -2249,7 +2255,7 @@ Väärtus -1 tähendab, et failisuuruse piir puudub (see on ka vaikimisi väärt
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1018"/>
+        <location filename="../tabpage.cpp" line="1055"/>
         <source>Error</source>
         <translation>Viga</translation>
     </message>
@@ -2264,7 +2270,7 @@ Väärtus -1 tähendab, et failisuuruse piir puudub (see on ka vaikimisi väärt
         <translation>Mõningaid faile ei saanud ümber nimetada.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1018"/>
+        <location filename="../tabpage.cpp" line="1055"/>
         <source>Cannot open as Admin.</source>
         <translation>Ei saa avada administraatorina.</translation>
     </message>
