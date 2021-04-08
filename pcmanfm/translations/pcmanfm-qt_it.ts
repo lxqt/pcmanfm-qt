@@ -996,7 +996,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Crea lanciatore</translation>
+        <translation>Crea lanciatore</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
@@ -2098,7 +2098,7 @@ Generalmente gran parte dei formati è supportato. Il limite predefinito è di 4
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"> MiB</translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
