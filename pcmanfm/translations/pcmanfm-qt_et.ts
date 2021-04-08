@@ -1051,7 +1051,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Loo käivitaja</translation>
+        <translation>Loo käivitaja</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
