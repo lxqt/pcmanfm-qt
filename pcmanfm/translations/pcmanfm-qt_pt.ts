@@ -1011,7 +1011,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Criar lançador</translation>
+        <translation>Criar lançador</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>

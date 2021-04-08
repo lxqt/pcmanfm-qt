@@ -1011,7 +1011,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">ランチャーの作成</translation>
+        <translation>ランチャーの作成</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
