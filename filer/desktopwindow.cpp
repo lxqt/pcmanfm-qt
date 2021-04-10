@@ -757,7 +757,7 @@ bool DesktopWindow::eventFilter(QObject * watched, QEvent * event) {
             break;
         }
     }
-    else if(watched == listView_->viewport()) {
+    else if(listView_ && (watched == listView_->viewport())) {
         switch(event->type()) {
         case QEvent::MouseButtonPress:
         case QEvent::MouseButtonRelease:
