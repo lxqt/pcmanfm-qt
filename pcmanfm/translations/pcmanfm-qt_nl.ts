@@ -1022,7 +1022,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="909"/>
         <source>Show Thumbnails</source>
-        <translation>Toon miniaturen</translation>
+        <translation>Miniaturen tonen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="917"/>
@@ -1194,7 +1194,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Wis</translation>
+        <translation>Verwij&amp;deren</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="646"/>
@@ -1295,7 +1295,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="99"/>
         <location filename="../main-win.ui" line="123"/>
         <source>&amp;View</source>
-        <translation>&amp;Tonen</translation>
+        <translation>&amp;Beeld</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="103"/>
@@ -1305,7 +1305,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="169"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Bewerken</translation>
+        <translation>B&amp;ewerken</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="187"/>
@@ -1707,7 +1707,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="508"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="525"/>
@@ -1777,7 +1777,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Voorkeuren</translation>
+        <translation>Instellingen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -2072,13 +2072,13 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Groottebeperking van ingebouwde miniatuurweergave:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2251,7 +2251,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <location filename="../bulkrename.cpp" line="111"/>
         <location filename="../tabpage.cpp" line="1055"/>
         <source>Error</source>
-        <translation>Fout</translation>
+        <translation>Foutmelding</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
