@@ -75,7 +75,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
 
   // draw text
   QRectF textRect(opt.rect.x(), opt.rect.y() + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
-  QTextLayout layout(opt.text, opt.font);
+  QTextLayout layout(opt.text, font_);
 
   QTextOption textOption;
   textOption.setAlignment(opt.displayAlignment);
@@ -93,14 +93,15 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     if(!line.isValid())
       break;
     line.setLineWidth(textRect.width());
-    height += opt.fontMetrics.leading();
+    QFontMetrics fontMetrics(font_);
+    height += fontMetrics.leading();
     line.setPosition(QPointF(0, height));
     if((height + line.height() + textRect.y()) > textRect.bottom()) {
       // if part of this line falls outside the textRect, ignore it and quit.
       QTextLine lastLine = layout.lineAt(visibleLines - 1);
       elidedText = opt.text.mid(lastLine.textStart());
       opt.textElideMode = Qt::ElideMiddle; // probono: Put ... in the middle, not at the end so that we can see the suffix
-      elidedText = opt.fontMetrics.elidedText(elidedText, opt.textElideMode, textRect.width());
+      elidedText = fontMetrics.elidedText(elidedText, opt.textElideMode, textRect.width());
       break;
     }
     height += line.height();
@@ -114,6 +115,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   if((opt.state & QStyle::State_Selected) && opt.widget) {
     QPalette palette = opt.widget->palette();
     // qDebug("w: %f, h:%f, m:%f", boundRect.width(), boundRect.height(), layout.minimumWidth());
+    painter->setFont(font_);
     painter->fillRect(boundRect, palette.highlight());
   }
   else { // only draw shadow for non-selected items
@@ -124,6 +126,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
       QTextLine line = layout.lineAt(i);
       if(i == (visibleLines - 1) && !elidedText.isEmpty()) { // the last line, draw elided text
         QPointF pos(textRect.x() + line.position().x() + 1, textRect.y() + line.y() + line.ascent() + 1);
+        painter->setFont(font_);
         painter->drawText(pos, elidedText);
       }
       else {
@@ -136,6 +139,8 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   // draw text
   for(int i = 0; i < visibleLines; ++i) {
     QTextLine line = layout.lineAt(i);
+    QPen prevPen = painter->pen();
+    painter->setPen(QPen(textColor_));
     if(i == (visibleLines - 1) && !elidedText.isEmpty()) { // the last line, draw elided text
       QPointF pos(textRect.x() + line.position().x(), textRect.y() + line.y() + line.ascent());
       painter->drawText(pos, elidedText);
@@ -143,6 +148,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     else {
       line.draw(painter, textRect.topLeft());
     }
+    painter->setPen(prevPen);
   }
 
   if(opt.state & QStyle::State_HasFocus) {

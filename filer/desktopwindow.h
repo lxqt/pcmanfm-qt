@@ -124,7 +124,6 @@ private:
   QColor shadowColor_;
   QString wallpaperFile_;
   WallpaperMode wallpaperMode_;
-  QPixmap wallpaperPixmap_;
   DesktopItemDelegate* delegate_;
   Launcher fileLauncher_;
   bool showWmMenu_;
