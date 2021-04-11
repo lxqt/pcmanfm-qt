@@ -46,10 +46,23 @@ public:
     return shadowColor_;
   }
 
+  void setTextColor(const QColor& textColor) {
+    textColor_ = textColor;
+  }
+  const QColor& textColor() const {
+    return textColor_;
+  }
+
+  void setFont(const QFont& font) {
+    font_ = font;
+  }
+
 private:
   QListView* view_;
   QIcon symlinkIcon_;
   QColor shadowColor_;
+  QColor textColor_;
+  QFont font_;
 };
 
 }

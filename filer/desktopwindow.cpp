@@ -170,10 +170,8 @@ void DesktopWindow::setBackground(const QColor& color) {
 }
 
 void DesktopWindow::setForeground(const QColor& color) {
-    QPalette p = listView_->palette();
-    p.setBrush(QPalette::Text, color);
-    listView_->setPalette(p);
     fgColor_ = color;
+    delegate_->setTextColor(color);
 }
 
 void DesktopWindow::setShadow(const QColor& color) {
@@ -293,57 +291,30 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
 
 // really generate the background pixmap according to current settings and apply it.
 void DesktopWindow::updateWallpaper() {
-    // reset the brush
-    // QPalette palette(listView_->palette());
-    QPalette palette(Fm::FolderView::palette());
-
-    if(wallpaperMode_ == WallpaperNone) { // use background color only
-        palette.setBrush(QPalette::Base, bgColor_);
+    setStyleSheet("");
+    switch (wallpaperMode_) {
+        case Filer::DesktopWindow::WallpaperNone:
+          setStyleSheet("background-color: " + bgColor_.name());
+          break;
+    case Filer::DesktopWindow::WallpaperStretch:
+          if (! wallpaperFile_.isEmpty())
+              setStyleSheet("border-image: url(" + wallpaperFile_ + ") stretch stretch;");
+          break;
+    case Filer::DesktopWindow::WallpaperFit: // FIXME - how do we fit with correct aspect in qt stylesheets?
+          if (! wallpaperFile_.isEmpty())
+              setStyleSheet("border-image: url(" + wallpaperFile_ + ") stretch;");
+          break;
+    case Filer::DesktopWindow::WallpaperCenter:
+          if (! wallpaperFile_.isEmpty())
+              setStyleSheet("background-image: url(" + wallpaperFile_
+                            + "); background-repeat: no-repeat; background-position: center; background-color: "
+                            + bgColor_.name() + ";");
+          break;
+    case Filer::DesktopWindow::WallpaperTile:
+          if (! wallpaperFile_.isEmpty())
+              setStyleSheet("background-image: url(" + wallpaperFile_ + ");");
+          break;
     }
-    else { // use wallpaper
-        QPixmap pixmap;
-        QImage image;
-        if(wallpaperMode_ == WallpaperTile) { // use the original size
-            image = QImage(wallpaperFile_);
-            pixmap = QPixmap::fromImage(image);
-        }
-        else if(wallpaperMode_ == WallpaperStretch) {
-            image = loadWallpaperFile(size());
-            pixmap = QPixmap::fromImage(image);
-        }
-        else { // WallpaperCenter || WallpaperFit
-            if(wallpaperMode_ == WallpaperCenter) {
-                image = QImage(wallpaperFile_); // load original image
-            }
-            else if(wallpaperMode_ == WallpaperFit) {
-                // calculate the desired size
-                QSize origSize = QImageReader(wallpaperFile_).size(); // get the size of the original file
-                if(origSize.isValid()) {
-                    QSize desiredSize = origSize;
-                    desiredSize.scale(width(), height(), Qt::KeepAspectRatio);
-                    image = loadWallpaperFile(desiredSize); // load the scaled image
-                }
-            }
-            if(!image.isNull()) {
-                pixmap = QPixmap(size());
-                QPainter painter(&pixmap);
-                pixmap.fill(bgColor_);
-                int x = (width() - image.width()) / 2;
-                int y = (height() - image.height()) / 2;
-                painter.drawImage(x, y, image);
-            }
-        }
-        wallpaperPixmap_ = pixmap;
-        if(!pixmap.isNull()) {
-            QBrush brush(pixmap);
-            palette.setBrush(QPalette::Base, brush);
-        }
-        else // if the image is not loaded, fallback to use background color only
-            palette.setBrush(QPalette::Base, bgColor_);
-    }
-
-    //FIXME: we should set the pixmap to X11 root window?
-    setPalette(palette);
 }
 
 void DesktopWindow::updateFromSettings(Settings& settings) {
@@ -351,6 +322,7 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
     setWallpaperFile(settings.wallpaper());
     setWallpaperMode(settings.wallpaperMode());
     setFont(settings.desktopFont());
+    delegate_->setFont(settings.desktopFont());
     setIconSize(Fm::FolderView::IconMode, QSize(settings.bigIconSize(), settings.bigIconSize()));
     // setIconSize may trigger relayout of items by QListView, so we need to do the layout again.
     queueRelayout();
