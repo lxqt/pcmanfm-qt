@@ -24,6 +24,8 @@
 #include <QImage>
 #include <QImageReader>
 #include <QFile>
+#include <QMainWindow>
+#include <QMenuBar>
 #include <QPixmap>
 #include <QPalette>
 #include <QBrush>
@@ -49,9 +51,15 @@
 #include "utilities.h"
 #include "path.h"
 #include "xdgdir.h"
+#include "desktopmainwindow.h"
+#include "../libfm-qt/path.h"
+#include "../libfm-qt/utilities.h"
+#include "windowregistry.h"
+#include "ui_about.h"
 
 #include <QX11Info>
 #include <QScreen>
+#include <QStandardPaths>
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
 
@@ -66,7 +74,8 @@ DesktopWindow::DesktopWindow(int screenNum):
     fileLauncher_(NULL),
     showWmMenu_(false),
     wallpaperMode_(WallpaperNone),
-    relayoutTimer_(NULL) {
+    relayoutTimer_(NULL),
+    desktopMainWindow_(NULL){
 
     QDesktopWidget* desktopWidget = QApplication::desktop();
     setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
@@ -147,6 +156,41 @@ DesktopWindow::DesktopWindow(int screenNum):
 
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this); // force delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
+
+    desktopMainWindow_ = new DesktopMainWindow(nullptr);
+    layout()->setMenuBar(desktopMainWindow_->getMenuBar());
+
+    updateMenu();
+
+    connect(desktopMainWindow_, &DesktopMainWindow::fileProperties, this, &DesktopWindow::onFilePropertiesActivated);
+    connect(desktopMainWindow_, &DesktopMainWindow::preferences, this, &DesktopWindow::onFilerPreferences);
+    connect(desktopMainWindow_, &DesktopMainWindow::openFolder, this, &DesktopWindow::onOpenFolder);
+    connect(desktopMainWindow_, &DesktopMainWindow::openTrash, this, &DesktopWindow::onOpenTrash);
+    connect(desktopMainWindow_, &DesktopMainWindow::openDesktop, this, &DesktopWindow::onOpenDesktop);
+    connect(desktopMainWindow_, &DesktopMainWindow::openDocuments, this, &DesktopWindow::onOpenDocuments);
+    connect(desktopMainWindow_, &DesktopMainWindow::openDownloads, this, &DesktopWindow::onOpenDownloads);
+    connect(desktopMainWindow_, &DesktopMainWindow::openHome, this, &DesktopWindow::onOpenHome);
+    connect(desktopMainWindow_, &DesktopMainWindow::goUp, this, &DesktopWindow::onGoUp);
+    connect(desktopMainWindow_, &DesktopMainWindow::cut, this, &DesktopWindow::onCutActivated);
+    connect(desktopMainWindow_, &DesktopMainWindow::copy, this, &DesktopWindow::onCopyActivated);
+    connect(desktopMainWindow_, &DesktopMainWindow::paste, this, &DesktopWindow::onPasteActivated);
+    connect(desktopMainWindow_, &DesktopMainWindow::del, this, &DesktopWindow::onDeleteActivated);
+    connect(desktopMainWindow_, &DesktopMainWindow::rename, this, &DesktopWindow::onRenameActivated);
+    connect(desktopMainWindow_, &DesktopMainWindow::selectAll, listView_, &QListView::selectAll);
+    connect(desktopMainWindow_, &DesktopMainWindow::invert, this, &FolderView::invertSelection);
+    connect(desktopMainWindow_, &DesktopMainWindow::newFolder, this, &DesktopWindow::onNewFolder);
+    connect(desktopMainWindow_, &DesktopMainWindow::newBlankFile, this, &DesktopWindow::onNewBlankFile);
+    connect(desktopMainWindow_, &DesktopMainWindow::openTerminal, this, &DesktopWindow::onOpenTerminal);
+    connect(desktopMainWindow_, &DesktopMainWindow::search, this, &DesktopWindow::onFindFiles);
+    connect(desktopMainWindow_, &DesktopMainWindow::about, this, &DesktopWindow::onAbout);
+    connect(desktopMainWindow_, &DesktopMainWindow::editBookmarks, this, &DesktopWindow::onEditBookmarks);
+    connect(desktopMainWindow_, &DesktopMainWindow::showHidden, this, &DesktopWindow::onShowHidden);
+    connect(proxyModel_, &Fm::ProxyFolderModel::sortFilterChanged, this, &DesktopWindow::updateMenu);
+    connect(desktopMainWindow_, &DesktopMainWindow::sortColumn, this, &DesktopWindow::onSortColumn);
+    connect(desktopMainWindow_, &DesktopMainWindow::sortOrder, this, &DesktopWindow::onSortOrder);
+    connect(desktopMainWindow_, &DesktopMainWindow::folderFirst, this, &DesktopWindow::onFolderFirst);
+    connect(desktopMainWindow_, &DesktopMainWindow::caseSensitive, this, &DesktopWindow::onCaseSensitive);
+    connect(desktopMainWindow_, &DesktopMainWindow::reload, this, &DesktopWindow::onReload);
 }
 
 DesktopWindow::~DesktopWindow() {
@@ -180,11 +224,21 @@ void DesktopWindow::setShadow(const QColor& color) {
 }
 
 void DesktopWindow::onOpenDirRequested(FmPath* path, int target) {
-    // open in new window unconditionally.
+
+    // just raise the window if it's already open
+    if (WindowRegistry::instance().checkPathAndRaise(fm_path_to_str(path))) {
+      return;
+    }
+
     Application* app = static_cast<Application*>(qApp);
     MainWindow* newWin = new MainWindow(path);
     // apply window size from app->settings
-    newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
+    if ( ! app->settings().spatialMode() ) {
+      newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
+      if(app->settings().windowMaximized()) {
+              newWin->setWindowState(newWin->windowState() | Qt::WindowMaximized);
+      }
+    }
     newWin->show();
 }
 
@@ -371,6 +425,121 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
 
 void DesktopWindow::onDesktopPreferences() {
     static_cast<Application* >(qApp)->desktopPrefrences(QString());
+}
+
+void DesktopWindow::onFilerPreferences()
+{
+    static_cast<Application* >(qApp)->preferences(QString());
+}
+
+void DesktopWindow::onGoUp()
+{
+    FmPath* path = fm_path_new_for_path(XdgDir::readDesktopDir().toStdString().c_str());
+    FmPath* parent = fm_path_get_parent(path);
+    if (parent)
+      onOpenFolder(fm_path_to_str(parent));
+}
+
+void DesktopWindow::onNewFolder()
+{
+    FmPath* path = fm_path_new_for_path(XdgDir::readDesktopDir().toStdString().c_str());
+    createFileOrFolder(Fm::CreateNewFolder, path);
+}
+
+void DesktopWindow::onNewBlankFile()
+{
+    FmPath* path = fm_path_new_for_path(XdgDir::readDesktopDir().toStdString().c_str());
+    createFileOrFolder(Fm::CreateNewTextFile, path);
+}
+
+void DesktopWindow::onOpenTerminal()
+{
+    FmPath* path = fm_path_new_for_path(XdgDir::readDesktopDir().toStdString().c_str());
+    Application* app = static_cast<Application*>(qApp);
+    app->openFolderInTerminal(path);
+}
+
+void DesktopWindow::onFindFiles()
+{
+    Application* app = static_cast<Application*>(qApp);
+    FmPathList* selectedPaths = selectedFilePaths();
+    QStringList paths;
+    if(selectedPaths) {
+      for(GList* l = fm_path_list_peek_head_link(selectedPaths); l; l = l->next) {
+        // FIXME: is it ok to use display name here?
+        // This might be broken on filesystems with non-UTF-8 filenames.
+        Fm::Path path(FM_PATH(l->data));
+        paths.append(path.displayName(false));
+      }
+      fm_path_list_unref(selectedPaths);
+    }
+    else {
+      paths.append(XdgDir::readDesktopDir().toStdString().c_str());
+    }
+    app->findFiles(paths);
+}
+
+void DesktopWindow::onAbout()
+{
+    // the about dialog
+    class AboutDialog : public QDialog {
+    public:
+      explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) {
+        ui.setupUi(this);
+        ui.version->setText(tr("Version: %1").arg(PCMANFM_QT_VERSION));
+      }
+    private:
+      Ui::AboutDialog ui;
+    };
+    AboutDialog dialog(this);
+    dialog.exec();
+}
+
+void DesktopWindow::onEditBookmarks()
+{
+    Application* app = static_cast<Application*>(qApp);
+    app->editBookmarks();
+}
+
+void DesktopWindow::onShowHidden(bool hidden)
+{
+    proxyModel_->setShowHidden(hidden);
+}
+
+void DesktopWindow::onSortColumn(int column)
+{
+    proxyModel_->sort(column, proxyModel_->sortOrder());
+}
+
+void DesktopWindow::onSortOrder(Qt::SortOrder order)
+{
+    proxyModel_->sort(proxyModel_->sortColumn(), order);
+}
+
+void DesktopWindow::onFolderFirst(bool first)
+{
+    proxyModel_->setFolderFirst(first);
+}
+
+void DesktopWindow::onCaseSensitive(Qt::CaseSensitivity sensitivity)
+{
+    proxyModel_->setSortCaseSensitivity(sensitivity);
+}
+
+void DesktopWindow::onReload()
+{
+  if(folder_) {
+    fm_folder_reload(folder_);
+  }
+}
+
+void DesktopWindow::updateMenu()
+{
+    desktopMainWindow_->setShowHidden(proxyModel_->showHidden());
+    desktopMainWindow_->setSortColumn(proxyModel_->sortColumn());
+    desktopMainWindow_->setSortOrder(proxyModel_->sortOrder());
+    desktopMainWindow_->setFolderFirst(proxyModel_->folderFirst());
+    desktopMainWindow_->setCaseSensitive(proxyModel_->sortCaseSensitivity());
 }
 
 void DesktopWindow::onRowsInserted(const QModelIndex& parent, int start, int end) {
@@ -778,7 +947,46 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
 
 void DesktopWindow::closeEvent(QCloseEvent *event) {
     // prevent the desktop window from being closed.
-    event->ignore();
+  event->ignore();
+}
+
+void DesktopWindow::onOpenFolder(QString folder)
+{
+    qDebug() << "DesktopWindow::onOpenFolder: " << folder;
+    FmPath* path = fm_path_new_for_str(folder.toLocal8Bit().data());
+    onOpenDirRequested(path, 0);
+    fm_path_unref(path);
+}
+
+void DesktopWindow::onOpenTrash()
+{
+    onOpenDirRequested(fm_path_get_trash(), 0);
+}
+
+void DesktopWindow::onOpenDesktop()
+{
+    onOpenDirRequested(fm_path_get_desktop(), 0);
+}
+
+void DesktopWindow::onOpenDocuments()
+{
+    FmPath* path;
+    path = fm_path_new_for_str(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation).toLocal8Bit().data());
+    onOpenDirRequested(path, 0);
+    fm_path_unref(path);
+}
+
+void DesktopWindow::onOpenDownloads()
+{
+    FmPath* path;
+    path = fm_path_new_for_str(QStandardPaths::writableLocation(QStandardPaths::DownloadLocation).toLocal8Bit().data());
+    onOpenDirRequested(path, 0);
+    fm_path_unref(path);
+}
+
+void DesktopWindow::onOpenHome()
+{
+    onOpenDirRequested(fm_path_get_home(), 0);
 }
 
 void DesktopWindow::setScreenNum(int num) {
