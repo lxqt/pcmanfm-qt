@@ -1602,7 +1602,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../desktopwindow.cpp" line="1026"/>
         <source>Hide Desktop Items</source>
-        <translation>Peida töölauakirjeid</translation>
+        <translation>Peida töölauakirjed</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1032"/>
