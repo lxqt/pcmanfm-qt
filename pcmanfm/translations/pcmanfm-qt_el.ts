@@ -701,12 +701,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="273"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="276"/>
         <source>Alt+Up</source>
-        <translation>Alt+Πάνω</translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="285"/>
@@ -1042,7 +1042,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Δημιουργία εκτελεστή</translation>
+        <translation>Δημιουργία εκτελεστή</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
@@ -1163,7 +1163,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="611"/>
         <source>Alt+Left</source>
-        <translation>Alt+Αριστερά</translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="620"/>
@@ -1178,7 +1178,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>Alt+Right</source>
-        <translation>Alt+Δεξιά</translation>
+        <translation>Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
@@ -1565,7 +1565,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
         <translation>
-            <numerusform>Απορρίμματα (%Ln αντικείμενα)</numerusform>
+            <numerusform>Απορρίμματα (%Ln αντικείμενο)</numerusform>
             <numerusform>Απορρίμματα (%Ln αντικείμενα)</numerusform>
         </translation>
     </message>
@@ -1927,7 +1927,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation>Αν είναι επιλεγμένο θα χρησιμοποιηθεί η ρύθμιση του περιβάλλοντος εργασίας</translation>
+        <translation>Αν είναι επιλεγμένο θα χρησιμοποιηθεί η ρύθμιση του περιβάλλοντος εργασίας.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
