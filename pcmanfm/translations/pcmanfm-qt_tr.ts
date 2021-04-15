@@ -726,7 +726,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="288"/>
         <source>Alt+Home</source>
-        <translation>Alt+Home</translation>
+        <translation>Alt+Ev</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="297"/>
@@ -901,7 +901,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Oluşturma Zamanına Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
@@ -1052,7 +1052,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Başlatıcı Oluştur</translation>
+        <translation>Başlatıcı Oluştur</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
@@ -1188,7 +1188,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>Alt+Right</source>
-        <translation>Alt+Right</translation>
+        <translation>Alt+Sağ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
@@ -1203,7 +1203,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="646"/>
         <source>Del</source>
-        <translation></translation>
+        <translation>Sil</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
@@ -1565,7 +1565,8 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
         <translation>
-            <numerusform>Çöp Kutusu (%Ln öge)</numerusform>
+            <numerusform>Çöp Kutusu (%Ln öğe)</numerusform>
+            <numerusform>Çöp Kutusu (%Ln öğe)</numerusform>
         </translation>
     </message>
     <message>
@@ -1717,12 +1718,14 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n nesne</numerusform>
+            <numerusform>%n nesne</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="527"/>
         <source> (%n hidden)</source>
         <translation>
+            <numerusform> (%n gizli)</numerusform>
             <numerusform> (%n gizli)</numerusform>
         </translation>
     </message>
@@ -1737,6 +1740,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <location filename="../tabpage.cpp" line="752"/>
         <source>%n item(s) selected</source>
         <translation>
+            <numerusform>%n nesne seçildi</numerusform>
             <numerusform>%n nesne seçildi</numerusform>
         </translation>
     </message>
@@ -1753,6 +1757,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <source>Do you want to open these %1 files?</source>
         <translation>
             <numerusform>%1 dosyayı açmak istiyor musunuz?</numerusform>
+            <numerusform>%1 dosyaları açmak istiyor musunuz?</numerusform>
         </translation>
     </message>
     <message>
@@ -2066,18 +2071,20 @@ birden fazla sekme var ise görünür.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Yerleşik küçük resim oluşturucu, Qt tarafından desteklenen görüntülerin küçük resimlerini oluşturur.
+
+Genellikle çoğu görüntü türü desteklenir. Varsayılan boyut sınırı 4 MiB&apos;dir.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Yerleşik küçük resim için görüntü boyutu sınırı:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2085,17 +2092,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Harici küçük resim varsa video, PDF belgesi vb. için kullanılır.
+
+-1 değeri, dosya boyutu için bir sınır olmadığı anlamına gelir (varsayılan).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Harici küçük resim için dosya boyutu sınırı:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınır yok</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2265,7 +2274,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1055"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Yönetici olarak açılamıyor.</translation>
     </message>
 </context>
 </TS>
