@@ -412,7 +412,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Mit einem Linksklick können sie Desktopordner in ihrem Standard-Dateimanager öffnen.</translation>
+        <translation>Mit einem Linksklick können sie Desktopordner in ihrem Standard-Dateimanager öffnen</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -687,7 +687,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="273"/>
         <source>Go Up</source>
-        <translation type="unfinished">Hoch</translation>
+        <translation>Nach oben</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="276"/>
@@ -727,7 +727,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Werkzeuge</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="285"/>
@@ -862,7 +862,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach Erstellungszeit</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
@@ -907,7 +907,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
@@ -942,7 +942,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Reiter im &amp;Root-Modus öffnen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -1012,13 +1012,13 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Reiter als &amp;Admin öffnen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Starter erstellen</translation>
+        <translation>Starter erstellen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
@@ -1934,12 +1934,12 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Auf null setzen um automatische Auswahl zu deaktivieren.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzögerung der automatischen Auswahl bei Einfach-Klicks:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -2087,18 +2087,20 @@ wenn mehr als einer geöffnet ist.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Die eingebaute Miniaturansicht erstellt Bildchen, die von Qt unterstützt werden.
+
+Es werden die meisten Bilddateien unterstützt, bis 4MiB Dateigröße.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Größenbegrenzung für eingebaute Miniaturansicht:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2106,17 +2108,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Wenn externe Anzeigeprogramme verwendet werden für Videos, PDFs, usw.
+
+Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Größenbegrenzung für externe Miniaturansicht:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>keine Begrenzung</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2271,7 +2275,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1055"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Admin kann es nicht öffnen.</translation>
     </message>
 </context>
 </TS>
