@@ -725,7 +725,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nástroje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="285"/>
@@ -860,7 +860,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Podle času &amp;vytvoření</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
@@ -2095,13 +2095,13 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Omezení velikosti obrázku pro vestavěný náhled:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
