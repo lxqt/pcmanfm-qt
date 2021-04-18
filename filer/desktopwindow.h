@@ -28,6 +28,8 @@
 #include <QByteArray>
 #include <xcb/xcb.h>
 
+class QMenuBar;
+
 namespace Fm {
   class FolderModel;
   class ProxyFolderModel;
@@ -37,6 +39,7 @@ namespace Fm {
 namespace Filer {
 
 class DesktopItemDelegate;
+class DesktopMainWindow;
 class Settings;
 
 class DesktopWindow : public View {
@@ -92,8 +95,31 @@ protected:
   virtual void closeEvent(QCloseEvent *event);
 
 protected Q_SLOTS:
+  void onOpenFolder(QString folder);
+  void onOpenTrash();
+  void onOpenDesktop();
+  void onOpenDocuments();
+  void onOpenDownloads();
+  void onOpenHome();
   void onOpenDirRequested(FmPath* path, int target);
   void onDesktopPreferences();
+  void onFilerPreferences();
+  void onGoUp();
+  void onNewFolder();
+  void onNewBlankFile();
+  void onOpenTerminal();
+  void onFindFiles();
+  void onAbout();
+  void onEditBookmarks();
+
+  void onShowHidden(bool hidden);
+  void onSortColumn(int column);
+  void onSortOrder(Qt::SortOrder order);
+  void onFolderFirst(bool first);
+  void onCaseSensitive(Qt::CaseSensitivity sensitivity);
+  void onReload();
+
+  void updateMenu();
 
   void onRowsAboutToBeRemoved(const QModelIndex& parent, int start, int end);
   void onRowsInserted(const QModelIndex& parent, int start, int end);
@@ -131,6 +157,7 @@ private:
   int screenNum_;
   QHash<QByteArray, QPoint> customItemPos_;
   QTimer* relayoutTimer_;
+  DesktopMainWindow* desktopMainWindow_;
 };
 
 }

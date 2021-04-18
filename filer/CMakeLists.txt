@@ -28,6 +28,7 @@ set(filer_SRCS
     preferencesdialog.cpp
     xdgdir.cpp
     desktoppreferencesdialog.cpp
+    desktopmainwindow.cpp
     desktopwindow.cpp
     desktopitemdelegate.cpp
     autorundialog.cpp
