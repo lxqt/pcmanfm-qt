@@ -71,12 +71,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Flyttbart media är inkopplat</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Flyttbart media är inkopplat/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
@@ -240,7 +240,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -324,7 +324,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
         <source>Label Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Etikett text</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
@@ -683,7 +683,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Verktyg</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="270"/>
@@ -923,7 +923,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="683"/>
@@ -1324,7 +1324,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Kör PCManFM som en daemon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
@@ -1460,7 +1460,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>Command:</source>
-        <translation type="unfinished">Kommand:</translation>
+        <translation>Kommando:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="32"/>
@@ -1480,7 +1480,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="85"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj en exekverbar fil</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="93"/>
@@ -1559,12 +1559,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="339"/>
         <source>Computer</source>
-        <translation type="unfinished">Dator</translation>
+        <translation>Dator</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="353"/>
         <source>Network</source>
-        <translation type="unfinished">Nätverk</translation>
+        <translation>Nätverk</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="958"/>
@@ -1595,7 +1595,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1035"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished">Skrivbordsinställningar</translation>
+        <translation>Skrivbordsinställningar</translation>
     </message>
 </context>
 <context>
@@ -1603,7 +1603,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="93"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter:</translation>
     </message>
 </context>
 <context>
@@ -1646,7 +1646,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="172"/>
         <location filename="../mainwindow.cpp" line="1949"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished">&amp;Ta bort</translation>
+        <translation>&amp;Ta bort</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2017"/>
@@ -1698,17 +1698,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="525"/>
         <source>%n item(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n objekt</numerusform>
+            <numerusform>%n objekt</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="527"/>
         <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform> (%n dold)</numerusform>
+            <numerusform> (%n dolda)</numerusform>
         </translation>
     </message>
     <message>
@@ -1721,9 +1721,9 @@ are left clicked, even when it is not the default file manager.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="752"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n objekt vald</numerusform>
+            <numerusform>%n objekt valda</numerusform>
         </translation>
     </message>
 </context>
@@ -1784,12 +1784,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>Volym</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation type="unfinished">Avancerat</translation>
+        <translation>Avancerat</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
@@ -1799,7 +1799,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="259"/>
         <source>Icons</source>
-        <translation type="unfinished">Ikoner</translation>
+        <translation>Ikoner</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="291"/>
@@ -2005,18 +2005,18 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>3 px by default.</source>
-        <translation type="unfinished">Standard 3 pixlar.</translation>
+        <translation>3 pixlar som standard.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="425"/>
         <location filename="../preferences.ui" line="449"/>
         <source> px</source>
-        <translation type="unfinished"> pixlar</translation>
+        <translation> pixlar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="438"/>
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="445"/>
@@ -2028,7 +2028,7 @@ Ett mellanrum är också reserverat vid 3 rader text. {3 ?} {3 ?}</translation>
     <message>
         <location filename="../preferences.ui" line="462"/>
         <source>Lock</source>
-        <translation type="unfinished">Lås</translation>
+        <translation>Lås</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="511"/>
