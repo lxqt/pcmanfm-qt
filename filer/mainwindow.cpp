@@ -1225,6 +1225,12 @@ void MainWindow::onRaiseWindow(const QString& path)
       if (path == ourPath) {
         raise();
         activateWindow();
+        bool maximized = isMaximized();
+        if (isMinimized()) {
+          showNormal();
+          if (maximized) // window was maximized before being minimized - showNormal restores it
+            showMaximized();
+        }
         break;
       }
     }
