@@ -37,7 +37,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>Gerenciador de Arquivos PCManFM-Qt
+        <translation>Gerenciador de arquivos PCManFM-Qt
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
@@ -107,7 +107,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Por favor, selecione a ação que deseja executar:</translation>
+        <translation>Selecione a ação que deseja executar:</translation>
     </message>
 </context>
 <context>
@@ -181,7 +181,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation>Criar Lançador</translation>
+        <translation>Criar lançador</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
@@ -243,7 +243,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation>Aplicação</translation>
+        <translation>Aplicativo</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
@@ -289,7 +289,7 @@ Foundation: Inc., 51 Franklin Street, 5º Andar, Boston, MA  02110-1301, EUA.</t
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>Preferências da Área de Trabalho</translation>
+        <translation>Preferências da área de trabalho</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="240"/>
@@ -398,7 +398,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Lock</source>
-        <translation>Travar</translation>
+        <translation>Bloquear</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="212"/>
@@ -518,7 +518,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>Ocultar Atalhos</translation>
+        <translation>Atalhos ocultos</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
@@ -601,7 +601,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation>Ctrl+Número</translation>
+        <translation>Ctrl+número</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
@@ -612,7 +612,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation>Alt+Número</translation>
+        <translation>Alt+número</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
@@ -680,7 +680,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation>Gerenciador de Arquivos</translation>
+        <translation>Gerenciador de arquivos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="273"/>
@@ -765,7 +765,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="350"/>
         <source>Show &amp;Hidden</source>
-        <translation>Exibir itens &amp;ocultos</translation>
+        <translation>Exibir &amp;ocultos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>
@@ -851,47 +851,47 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="509"/>
         <source>&amp;By File Name</source>
-        <translation>Por &amp;Nome do Arquivo</translation>
+        <translation>Pelo &amp;nome do arquivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By &amp;Modification Time</source>
-        <translation>Por Data de &amp;Modificação</translation>
+        <translation>Pela data de &amp;modificação</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished">Por tempo de c&amp;riação</translation>
+        <translation>Pela hora de c&amp;riação</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <source>By Deletio&amp;n Time</source>
-        <translation>Por Te&amp;mpo de Exclusão</translation>
+        <translation>Pela &amp;hora da exclusão</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By File &amp;Type</source>
-        <translation>Por &amp;Tipo de Arquivo</translation>
+        <translation>Pelo &amp;tipo de arquivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <source>By &amp;Owner</source>
-        <translation>Por Proprietári&amp;o</translation>
+        <translation>Pelo proprietári&amp;o</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <source>By &amp;Group</source>
-        <translation>Por &amp;Grupo</translation>
+        <translation>Pelo &amp;grupo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="565"/>
         <source>&amp;Folder First</source>
-        <translation>&amp;Pastas Primeiro</translation>
+        <translation>&amp;Pastas primeiro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="573"/>
         <source>&amp;Hidden Last</source>
-        <translation>&amp;Ocultar Último</translation>
+        <translation>&amp;Ocultar último</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="581"/>
@@ -901,7 +901,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="631"/>
         <source>&amp;Invert Selection</source>
-        <translation>&amp;Inverter Seleção</translation>
+        <translation>&amp;Inverter seleção</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -921,12 +921,12 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="683"/>
         <source>&amp;Case Sensitive</source>
-        <translation>Diferenciar Maiús&amp;culas e Minúsculas</translation>
+        <translation>Diferenciar maiús&amp;culas e minúsculas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
         <source>By File &amp;Size</source>
-        <translation>Por tamanho do arqu&amp;ivo</translation>
+        <translation>Pelo tamanho do arqu&amp;ivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="696"/>
@@ -936,7 +936,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>Abrir guia na instância &amp;Root</translation>
+        <translation>Abrir guia na instância &amp;root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="762"/>
@@ -986,17 +986,17 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="906"/>
         <source>Show Thumb&amp;nails</source>
-        <translation>Exibir Mi&amp;niaturas</translation>
+        <translation>Exibir mi&amp;niaturas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
         <source>Show Thumbnails</source>
-        <translation>Exibir Miniaturas</translation>
+        <translation>Exibir miniaturas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="917"/>
         <source>S&amp;ide Pane</source>
-        <translation>Pa&amp;inel Lateral</translation>
+        <translation>Pa&amp;inel lateral</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="920"/>
@@ -1006,7 +1006,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="925"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Ocultar &amp;Atalhos</translation>
+        <translation>&amp;Atalhos ocultos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="930"/>
@@ -1017,7 +1017,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Criar Lançador</translation>
+        <translation>Criar lançador</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
@@ -1078,7 +1078,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>Connect to &amp;Server</source>
-        <translation>Conectar a um &amp;Servidor</translation>
+        <translation>Conectar ao &amp;servidor</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="843"/>
@@ -1173,7 +1173,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="611"/>
         <source>Alt+Left</source>
-        <translation>Alt+Seta esquerda</translation>
+        <translation>Alt+esquerda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="620"/>
@@ -1188,7 +1188,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>Alt+Right</source>
-        <translation>Alt+Seta direita</translation>
+        <translation>Alt+direita</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="646"/>
@@ -1233,7 +1233,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation>C&amp;riar novo(a)</translation>
+        <translation>C&amp;riar novo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="103"/>
@@ -1263,7 +1263,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="709"/>
         <source>Open &amp;Terminal</source>
-        <translation>Abrir &amp;Terminal</translation>
+        <translation>Abrir &amp;terminal</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="712"/>
@@ -1273,7 +1273,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="722"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation>&amp;Editar Favoritos</translation>
+        <translation>&amp;Editar favoritos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="731"/>
@@ -1413,7 +1413,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Files or directories to open</source>
-        <translation>Arquivos ou diretórios para abrir</translation>
+        <translation>Arquivos ou pastas para abrir</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="594"/>
@@ -1460,7 +1460,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation>WebDav Seguro</translation>
+        <translation>WebDav seguro</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1541,7 +1541,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="251"/>
         <source>Select Wallpaper</source>
-        <translation>Selecionar Papel de parede</translation>
+        <translation>Selecionar papel de parede</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="255"/>
@@ -1551,7 +1551,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="297"/>
         <source>Select Wallpaper Folder</source>
-        <translation>Selecionar Pasta de Papel de Parede</translation>
+        <translation>Selecionar pasta do papel de parede</translation>
     </message>
 </context>
 <context>
@@ -1608,7 +1608,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../desktopwindow.cpp" line="1032"/>
         <source>Create Launcher</source>
-        <translation>Criar Lançador</translation>
+        <translation>Criar lançador</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1035"/>
@@ -1637,12 +1637,12 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../mainwindow.cpp" line="139"/>
         <source>Root Instance</source>
-        <translation>Abrir como Root</translation>
+        <translation>Abrir como root</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="698"/>
         <source>Hide menu bar</source>
-        <translation>Ocultar a barra de menu</translation>
+        <translation>Ocultar barra de menu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="699"/>
@@ -1698,7 +1698,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Detailed List View</source>
-        <translation>Lista detalhada</translation>
+        <translation>Visualização em lista detalhada</translation>
     </message>
 </context>
 <context>
@@ -1711,7 +1711,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../tabpage.cpp" line="508"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espaço livre: %1 (Total: %2)</translation>
+        <translation>Espaço livre: %1 (total: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="525"/>
@@ -1773,7 +1773,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../view.cpp" line="134"/>
         <source>Open in Termina&amp;l</source>
-        <translation>Abrir no Termina&amp;l</translation>
+        <translation>Abrir no termina&amp;l</translation>
     </message>
 </context>
 <context>
@@ -1960,7 +1960,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source> sec</source>
-        <translation> seg</translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="139"/>
@@ -2002,7 +2002,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
         <location filename="../preferences.ui" line="305"/>
         <location filename="../preferences.ui" line="315"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>Usado por ambas Visualização Compacta e Lista Detalhada</translation>
+        <translation>Usado por ambas visualização compacta e lista detalhada</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="322"/>
@@ -2018,7 +2018,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../preferences.ui" line="365"/>
         <source>Treat backup files as hidden</source>
-        <translation>Ocultar arquivos de backup</translation>
+        <translation>Tratar arquivos de backup como oculto</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="385"/>
@@ -2061,7 +2061,7 @@ Um espaço também é reservado para 3 linhas de texto.</translation>
     <message>
         <location filename="../preferences.ui" line="462"/>
         <source>Lock</source>
-        <translation>Travar</translation>
+        <translation>Bloquear</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="511"/>
@@ -2086,20 +2086,20 @@ somente se houver mais de uma aba.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished">O thumbnailer embutido cria miniaturas de imagens que são suportadas pelo Qt.
+        <translation>O miniaturizador embutido cria miniaturas de imagens que são suportadas pelo Qt.
 
 Normalmente, a maioria dos tipos de imagem é compatível. O limite de tamanho padrão é 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished">Limite de tamanho de imagem para miniaturizador integrado:</translation>
+        <translation>Limite de tamanho de imagem para miniaturizador integrado:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"> MiB</translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2107,19 +2107,19 @@ Normalmente, a maioria dos tipos de imagem é compatível. O limite de tamanho p
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished">Se existentes, miniaturas externas são usadas para vídeos, documentos PDF, etc.
+        <translation>Se existentes, miniaturizadores externos são usados para vídeos, documentos PDF, etc.
 
 Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished">Limite de tamanho de arquivo para miniaturizadores externos:</translation>
+        <translation>Limite de tamanho de arquivo para miniaturizadores externos:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished">Nenhum limite</translation>
+        <translation>Sem limite</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2209,7 +2209,7 @@ Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).
     <message>
         <location filename="../preferences.ui" line="730"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation>Mostrar opções disponíveis para mídias removíveis ao serem inseridas</translation>
+        <translation>Exibir opções disponíveis para mídias removíveis ao serem inseridas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="746"/>
@@ -2242,7 +2242,7 @@ Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Abort</source>
-        <translation>Abortar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
@@ -2274,7 +2274,7 @@ Um valor -1 significa que não há limite para o tamanho do arquivo (o padrão).
     <message>
         <location filename="../tabpage.cpp" line="1055"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished">Não é possível abrir como Admin.</translation>
+        <translation>Não foi possível abrir como Admin.</translation>
     </message>
 </context>
 </TS>
