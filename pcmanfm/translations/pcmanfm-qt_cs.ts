@@ -905,7 +905,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
@@ -935,7 +935,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevřít kartu jako &amp;Root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -1005,13 +1005,13 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevřít kartu v módu &amp;Správce</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Vytvořit spouštěč</translation>
+        <translation>Vytvořit spouštěč</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
@@ -1937,12 +1937,12 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavením na nulu deaktivujete automatický výběr.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zpoždění automatického výběru v režimu jednoho kliknutí:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1989,7 +1989,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Budou také vybrány přejmenované soubory</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2090,7 +2090,9 @@ pouze pokud je více než jeden panel.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vestavěný tvůrce náhledů vytvoří miniatury obrázků, které jsou podporovány Qt.
+
+Obvykle je podporována většina typů obrázků. Výchozí limit velikosti je 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
@@ -2109,17 +2111,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokud externí náhledy existují, používají se pro videa, dokumenty PDF atd.
+
+Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchozí).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Limit velikosti souboru pro externí miniatury:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Bez limitu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2134,7 +2138,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nabídka záložek:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="375"/>
@@ -2274,7 +2278,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1055"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nelze otevřít jako správce.</translation>
     </message>
 </context>
 </TS>
