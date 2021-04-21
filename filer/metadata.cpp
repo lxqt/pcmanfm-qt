@@ -432,7 +432,7 @@ void MetaData::saveDirInfo()
 bool MetaData::dirInfoDisabledForPath() const
 {
   // check for a .DisableDirInfo file in the path
-  QStringList splitPath = QDir::toNativeSeparators(path_).split(QDir::separator(), Qt::SkipEmptyParts);
+  QStringList splitPath = QDir::toNativeSeparators(path_).split(QDir::separator());
   QString walkedPath = "/";
   for (QString directory : splitPath) {
     walkedPath.append(directory + "/");
