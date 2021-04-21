@@ -43,8 +43,9 @@ jobs:
       uses: marvinpinto/action-automatic-releases@latest
       with:
         title: AppImage
-        automatic_release_tag: continuous
+        automatic_release_tag: continuous-appimage
         prerelease: true
+        delete: true
         draft: false
         files: |
           P*.AppImage*
