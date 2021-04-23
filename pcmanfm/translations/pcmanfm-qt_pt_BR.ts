@@ -725,7 +725,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Tools</source>
-        <translation>%Ferramentas</translation>
+        <translation>&amp;Ferramentas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="285"/>
