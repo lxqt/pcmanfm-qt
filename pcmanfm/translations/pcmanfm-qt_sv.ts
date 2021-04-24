@@ -2022,7 +2022,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="445"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished">Standard 1 pixel.
+        <translation>Standard 3 pixlar.
 Ett mellanrum är också reserverat vid 3 rader text. {3 ?} {3 ?}</translation>
     </message>
     <message>
