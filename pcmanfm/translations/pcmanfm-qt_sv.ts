@@ -137,7 +137,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Specificera fjärrmapp att ansluta</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
@@ -255,7 +255,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation type="unfinished">Bildfil</translation>
+        <translation>Bildfil</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
@@ -393,7 +393,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna skrivbordsmappar i standardfilhanteraren genom att vänsterklicka</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -918,7 +918,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="581"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bevara sortering för den här mappen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -928,7 +928,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="683"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Skiftlägeskänsliga</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
@@ -978,7 +978,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="881"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>D&amp;elad vy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="884"/>
@@ -1013,7 +1013,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="917"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>S&amp;ido panel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="920"/>
@@ -1023,7 +1023,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="925"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Dolda &amp;genvägar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="930"/>
@@ -1334,17 +1334,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Starta skrivbordshanteraren</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng av skrivbordshanteraren om den körs</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna dialogrutan för skrivbordsinställningar på sidan med det angivna namnet</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
@@ -1360,12 +1360,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna Hitta filer verktyget</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>Ställ in skrivbordsunderlägg från en bild FIL</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
@@ -1380,12 +1380,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange läge för skrivbordsunderlägg. LÄGE= (%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna dialogrutan Inställningar på sidan med det angivna namnet</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
@@ -1406,7 +1406,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="599"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminalemulator är inte inställd.</translation>
     </message>
 </context>
 <context>
@@ -1419,7 +1419,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../autorundialog.cpp" line="138"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Flyttbar disk</translation>
     </message>
 </context>
 <context>
@@ -1493,12 +1493,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>Fyll med bakgrundsfärg endast</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Sträck för att fylla hela skärmen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
@@ -1508,7 +1508,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Centrera på skärmen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
@@ -1518,7 +1518,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="58"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Zooma bilden för att fylla hela skärmen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="251"/>
@@ -1533,7 +1533,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="297"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj Bakgrundsmapp</translation>
     </message>
 </context>
 <context>
@@ -1541,20 +1541,20 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (One item)</source>
-        <translation type="unfinished"></translation>
+        <translation>Papperskorg (ett objekt)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Papperskorg (%Ln objekt)</numerusform>
+            <numerusform>Papperskorg (%Ln objekt)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="304"/>
         <source>Trash (Empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Papperskorg (tom)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="339"/>
@@ -1580,12 +1580,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="970"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Töm papperskorgen</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1026"/>
         <source>Hide Desktop Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Dölj skrivbordsobjekt</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1032"/>
@@ -1624,12 +1624,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="698"/>
         <source>Hide menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Dölj menyrad</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="699"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Detta döljer menyraden helt, använd Ctrl+M för att visa den igen.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1052"/>
@@ -1640,7 +1640,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="172"/>
         <location filename="../mainwindow.cpp" line="1949"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Flytta till papperskorg</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
@@ -1657,7 +1657,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2025"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Byta användarkommandon är inte inställt.</translation>
     </message>
 </context>
 <context>
@@ -1680,7 +1680,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Detaljerad listvy</translation>
     </message>
 </context>
 <context>
@@ -1693,7 +1693,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="508"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ledigt utrymme: %1 (totalt:%2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="525"/>
@@ -1716,7 +1716,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../tabpage.cpp" line="726"/>
         <location filename="../tabpage.cpp" line="740"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Länk till</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="752"/>
@@ -1737,9 +1737,9 @@ are left clicked, even when it is not the default file manager.</source>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Vill du öppna denna %1 fil?</numerusform>
+            <numerusform>Vill du öppna dessa %1 filer?</numerusform>
         </translation>
     </message>
     <message>
@@ -1768,12 +1768,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Användargränssnitt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>Beteende</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
@@ -1794,7 +1794,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj nyskapade filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1834,42 +1834,42 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="515"/>
         <source>Always show the tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa alltid flikfältet</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="522"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa &apos;Stäng&apos;-knappar på flikar	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="536"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>Kom ihåg storleken på det senast stängda fönstret</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="543"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardbredd för nya fönster:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="557"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardhöjd för nya fönster:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Bläddring</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna filer med enkelklick</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="113"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardvisningsläge:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
@@ -1884,12 +1884,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
+        <translation>Bekräfta innan du tar bort filer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>Flytta raderade filer till &quot;papperskorg&quot; istället för att radera från disk.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="607"/>
@@ -1904,7 +1904,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
@@ -1915,17 +1915,17 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ställ in på noll för att inaktivera automatiskt val.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fördröjning av automatiskt val i enkelklickläge:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna i aktuell flik</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="152"/>
@@ -1940,19 +1940,19 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Radera filer på flyttbara medier istället för att skapa &quot;papperskorg&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Bekräfta innan du flyttar filer till &quot;papperskorg&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
         <location filename="../preferences.ui" line="372"/>
         <location filename="../preferences.ui" line="382"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>Kräver att programmet startas om för att träda i kraft helt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
@@ -1968,13 +1968,13 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="288"/>
         <location filename="../preferences.ui" line="298"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Används av Ikonvy</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="305"/>
         <location filename="../preferences.ui" line="315"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Används av kompaktvy och detaljerad listvy</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="322"/>
@@ -1985,17 +1985,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="352"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Användargränssnitt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="365"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Behandla säkerhetskopierade filer som dolda</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="385"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa ikoner för dolda filer skuggade</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="415"/>
@@ -2039,7 +2039,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="529"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändra till nyligen öppna flikar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
@@ -2063,7 +2063,7 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2081,7 +2081,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen gräns</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2091,12 +2091,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="900"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Omstart av program krävs för att ändringar ska träda i kraft.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bokmärkesmeny:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
@@ -2106,17 +2106,17 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna mappar i nya flikar så långt som möjligt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Enkelt fönsterläge</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="375"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa alltid riktiga filnamn</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="392"/>
@@ -2146,7 +2146,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="730"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa tillgängliga alternativ för flyttbara media när de sätts in</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="740"/>
@@ -2161,7 +2161,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="753"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>By&amp;t mapp i fliken till hemmapp</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="780"/>
@@ -2176,7 +2176,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Växla &amp;användarkommando:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="822"/>
@@ -2191,22 +2191,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="851"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa endast användardefinierade mallar i menyn</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="858"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa bara en mall för varje MIME-typ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="865"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Kör standardprogram efter skapande från mall</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="358"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>Använd SI decimalprefix istället för IEC binära prefix</translation>
     </message>
 </context>
 <context>
@@ -2214,12 +2214,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Renaming files...</source>
-        <translation type="unfinished"></translation>
+        <translation>Byter namn på filer...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
@@ -2241,17 +2241,17 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <source>No file could be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen fil kunde döpas om.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="111"/>
         <source>Some files could not be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vissa filer kunde inte döpas om.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1055"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte öppna som Admin.</translation>
     </message>
 </context>
 </TS>
