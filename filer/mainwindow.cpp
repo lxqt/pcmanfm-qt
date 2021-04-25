@@ -208,6 +208,7 @@ MainWindow::MainWindow(FmPath* path):
     ui.tabBar->hide();
     ui.sidePane->hide();
     ui.toolBar->hide();
+    ui.frame->layout()->setContentsMargins(0, 0, 0, 0);
 
     // Set the window position and size
     MetaData metaData(fm_path_to_str(path));
@@ -1266,6 +1267,7 @@ void MainWindow::updateFromSettings(Settings& settings) {
   ui.tabBar->setVisible( ! settings.spatialMode() );
   ui.sidePane->setVisible( ! settings.spatialMode() );
   ui.toolBar->setVisible( ! settings.spatialMode() );
+  ui.frame->layout()->setContentsMargins(settings.spatialMode() ? 0 : 1, 0, 0, 0);
 }
 
 static const char* su_cmd_subst(char opt, gpointer user_data) {
