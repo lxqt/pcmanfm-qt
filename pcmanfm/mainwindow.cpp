@@ -398,22 +398,32 @@ bool MainWindow::eventFilter(QObject* watched, QEvent* event) {
                         // Change the text and base palettes of an inactive view frame a little.
                         // NOTE: Style-sheets aren't used because they can interfere with QStyle.
                         QPalette palette = viewFrame->palette();
-                        QColor txtCol = palette.color(QPalette::Text);
-                        txtCol.setAlphaF(txtCol.alphaF() * 0.7);
-                        palette.setColor(QPalette::Text, txtCol);
-                        palette.setColor(QPalette::WindowText, txtCol); // tabs
-                        // the disabled text color of path-bars shouldn't change because it may be used by arrows
-                        palette.setColor(QPalette::Active, QPalette::ButtonText, txtCol);
-                        palette.setColor(QPalette::Inactive, QPalette::ButtonText, txtCol);
 
                         // There are various ways of getting a distinct color near the base color
                         // but this one gives the best results with almost all palettes:
+                        QColor txtCol = palette.color(QPalette::Text);
                         QColor baseCol = palette.color(QPalette::Base);
                         baseCol.setRgbF(0.9 * baseCol.redF()   + 0.1 * txtCol.redF(),
                                         0.9 * baseCol.greenF() + 0.1 * txtCol.greenF(),
                                         0.9 * baseCol.blueF()  + 0.1 * txtCol.blueF(),
                                         baseCol.alphaF());
                         palette.setColor(QPalette::Base, baseCol);
+
+                        // view text
+                        txtCol.setAlphaF(txtCol.alphaF() * 0.7);
+                        palette.setColor(QPalette::Text, txtCol);
+
+                        // window text (used in tabs)
+                        txtCol = palette.color(QPalette::WindowText);
+                        txtCol.setAlphaF(txtCol.alphaF() * 0.7);
+                        palette.setColor(QPalette::WindowText, txtCol);
+
+                        // button text (the disabled text color isn't changed because it may be
+                        // used by some styles for drawing disabled path-bar arrow)
+                        txtCol = palette.color(QPalette::ButtonText);
+                        txtCol.setAlphaF(txtCol.alphaF() * 0.7);
+                        palette.setColor(QPalette::Active, QPalette::ButtonText, txtCol);
+                        palette.setColor(QPalette::Inactive, QPalette::ButtonText, txtCol);
 
                         viewFrame->setPalette(palette);
                     }
