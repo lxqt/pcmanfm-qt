@@ -185,6 +185,8 @@ FolderViewTreeView::FolderViewTreeView(QWidget* parent):
   setIndentation(0);
 
   connect(this, &QTreeView::activated, this, &FolderViewTreeView::activation);
+
+  this->setAlternatingRowColors(true); // probono
 }
 
 FolderViewTreeView::~FolderViewTreeView() {
