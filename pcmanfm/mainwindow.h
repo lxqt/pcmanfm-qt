@@ -243,7 +243,7 @@ protected:
     virtual void closeEvent(QCloseEvent* event) override;
     virtual void dragEnterEvent(QDragEnterEvent* event) override;
     virtual void dropEvent(QDropEvent* event) override;
-    virtual bool eventFilter(QObject* watched, QEvent* event);
+    virtual bool eventFilter(QObject* watched, QEvent* event) override;
 
 private:
     void loadBookmarksMenu();
