@@ -16,7 +16,7 @@
     <message>
         <location filename="../../build/filer/ui_about.h" line="137"/>
         <source>Lightweight file manager</source>
-        <translation>Administrador de archivos liviano</translation>
+        <translation>Administrador de archivos ligero</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="138"/>
@@ -35,7 +35,9 @@
 </source>
         <translatorcomment>Programado por:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;</translatorcomment>
-        <translation></translation>
+        <translation>Programación:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="160"/>
@@ -90,12 +92,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="112"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Disco removible insertado&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Medio extraíble insertado&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="113"/>
         <source>Type of medium:</source>
-        <translation>Tipo de disco:</translation>
+        <translation>Tipo de medio:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="114"/>
@@ -113,12 +115,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Forma</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="76"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Escritorio</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="77"/>
