@@ -834,7 +834,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="445"/>
         <source>Cu&amp;t</source>
-        <translation>&amp;Knippen</translation>
+        <translation>Kni&amp;ppen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="448"/>
@@ -844,7 +844,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="457"/>
         <source>&amp;Copy</source>
-        <translation>K&amp;opiëren</translation>
+        <translation>&amp;Kopiëren</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="460"/>
@@ -1206,7 +1206,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>&amp;Rename</source>
-        <translation>Naam &amp;wijzigen</translation>
+        <translation>Naam wij&amp;zigen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
