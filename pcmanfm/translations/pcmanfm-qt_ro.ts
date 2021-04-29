@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<TS version="2.1" language="ro">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>Over</translation>
+        <translation>Despre</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -16,14 +16,14 @@
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation>Lichte bestandsbeheerder</translation>
+        <translation>Manager de fișiere „ușor”</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programmeur:
+        <translation>Programare:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -46,27 +46,28 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>Copyright © 2009 - 2014 洪任諭 (Hong Jen Yee)
+        <translation>Managerul de Fișiere PCManFM-Qt 
 
-Dit programma is vrije programmatuur; u kunt het verspreiden en/of 
-aanpassen binnen de voorwaarden van de GNU General Public License 
-zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 
-van die licentie hetzij (naar uw eigen keuze) een nieuwere versie.
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
-Dit programma wordt verspreid in de hoop dat het bruikbaar is, maar 
-ZONDER ENIGE GARANTIE; zelfs zonder de garantie van VERKOOPBAARHEID 
-of BRUIKBAARHEID VOOR EEN BEPAALD DOEL. Zie de GNU General Public 
-License voor meer bijzonderheden.
+Acest program este software gratuit; îl puteți redistribui și / sau
+modificați-l în condițiile licenței publice generale GNU
+publicat de Free Software Foundation; fie versiunea 2
+a Licenței sau (la alegerea dvs.) orice versiune ulterioară.
 
-Een exemplaar van de GNU General Public License heeft u, als het 
-goed is, samen met dit programma gekregen; schrijf anders naar de 
-Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, 
-Boston, MA 02110-1301 USA.</translation>
+Acest program este distribuit în speranța că va fi util,
+dar FĂRĂ NICI O GARANȚIE; fără măcar garanția implicită a
+VANZABILITATE sau ADECVARE PENTRU UN SCOP PARTICULAR. Vezi
+GNU General Public License pentru mai multe detalii. 
+
+Ar fi trebuit să primiți o copie a Licenței Publice Generale GNU
+împreună cu acest program; dacă nu, scrieți ,Free Software
+Foundation Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, SUA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="82"/>
         <source>Authors</source>
-        <translation>Makers</translation>
+        <translation>Autori</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -78,7 +79,7 @@ Boston, MA 02110-1301 USA.</translation>
     <message>
         <location filename="../about.ui" line="104"/>
         <source>License</source>
-        <translation>Licentie</translation>
+        <translation>Licență</translation>
     </message>
 </context>
 <context>
@@ -86,27 +87,27 @@ Boston, MA 02110-1301 USA.</translation>
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>Er is een verwijderbare schijf ingevoerd</translation>
+        <translation>Mediul amovabil este introdus</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Er is een verwijderbare schijf ingevoerd&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Mediul amovabil este introdus&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>Soort schijf:</translation>
+        <translation>Tipul mediului:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation>Bezig met herkennen…</translation>
+        <translation>Se detectează...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Kies de te ondernemen actie:</translation>
+        <translation>Vă rugăm selectați acțiunea pe care doriți să o efectuați:</translation>
     </message>
 </context>
 <context>
@@ -114,22 +115,22 @@ Boston, MA 02110-1301 USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation>Meerdere namen wijzigen</translation>
+        <translation>Redenumire în masă</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation># zal worden vervangen door nummers, te beginnen met:</translation>
+        <translation># va fi înlocuit cu numere care încep cu:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation>Gekozen bestandsnamen wijzigen naar:</translation>
+        <translation>Redenumește fișierele selectate la:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation>Naam#</translation>
+        <translation>Nume#</translation>
     </message>
 </context>
 <context>
@@ -137,42 +138,42 @@ Boston, MA 02110-1301 USA.</translation>
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>Verbinden met server op afstand</translation>
+        <translation>Conectează-te la un server de la distanță</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation>Anoniem aanme&amp;lden</translation>
+        <translation>&amp;Logare Anonimă</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation>Aanmelden als &amp;gebruiker:</translation>
+        <translation>Logează-te ca &amp;utilizatorul:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation>Geef op met welke map op afstand moet worden verbonden</translation>
+        <translation>Specificați folderul la distanță pentru conectare</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation>Soort:</translation>
+        <translation>Tip:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation>Poort:</translation>
+        <translation>Port:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation>Pad:</translation>
+        <translation>Cale:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation>Host:</translation>
+        <translation>Gazdă:</translation>
     </message>
 </context>
 <context>
@@ -180,69 +181,69 @@ Boston, MA 02110-1301 USA.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation>Starter aanmaken</translation>
+        <translation>Crează Lansator</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation>Naam:</translation>
+        <translation>Nume:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation>Beschrijving:</translation>
+        <translation>Descriere:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation>Opdracht:</translation>
+        <translation>Comentariu:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation>Opdracht:</translation>
+        <translation>Comandă:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation>…</translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation>Pictogram:</translation>
+        <translation>Pictogramă:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation>Uitvoeren in terminalvenster?</translation>
+        <translation>Rulează în terminal?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation>Terminalvenster:</translation>
+        <translation>Terminal:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation>Nee</translation>
+        <translation>Nu</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation>Ja</translation>
+        <translation>Da</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation>Soort:</translation>
+        <translation>Tip:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation>Programma</translation>
+        <translation>Aplicație</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
@@ -255,32 +256,32 @@ Boston, MA 02110-1301 USA.</translation>
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation>Vorm</translation>
+        <translation type="unfinished">Formular</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation>Bureaublad</translation>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation>Bureaubladmap:</translation>
+        <translation>Folder Desktop:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation>Afbeeldingsbestand</translation>
+        <translation>Fișier imagine</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation>Mappad</translation>
+        <translation>Calea Folderul-ui</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation>&amp;Verkennen</translation>
+        <translation>&amp;Navighează</translation>
     </message>
 </context>
 <context>
@@ -288,93 +289,93 @@ Boston, MA 02110-1301 USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>Bureaubladinstellingen</translation>
+        <translation>Preferințe Desktop</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="240"/>
         <location filename="../desktop-preferences.ui" line="246"/>
         <source>Background</source>
-        <translation>Achtergrond</translation>
+        <translation>Fundal</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="287"/>
         <source>Wallpaper mode:</source>
-        <translation>Achtergrondmodus:</translation>
+        <translation>Modul Wallpaperului:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="310"/>
         <source>Wallpaper image file:</source>
-        <translation>Achtergrondafbeeldingsbestand:</translation>
+        <translation>Fișierul de imagine al Wallpaperului:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="252"/>
         <source>Select background color:</source>
-        <translation>Kies een achtergrondkleur:</translation>
+        <translation>Selectează culoarea fundalului:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="319"/>
         <source>Image file</source>
-        <translation>Afbeeldingsbestand</translation>
+        <translation>Fișierul de imagine</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="325"/>
         <source>Image file path</source>
-        <translation>Pad naar afbeeldingsbestand</translation>
+        <translation>Calea fișierului de imagine</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="332"/>
         <source>&amp;Browse</source>
-        <translation>&amp;Verkennen</translation>
+        <translation>&amp;Navighează</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
         <source>Icons</source>
-        <translation>Pictogrammen</translation>
+        <translation>Pictograme</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation>Pictogramgrootte:</translation>
+        <translation>Mărimea pictogramelor:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
         <source>Label Text</source>
-        <translation>Labeltekst</translation>
+        <translation>Etichetează Textul</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>Kies een schaduwkleur:</translation>
+        <translation>Selectează culoarea umbrei:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>Kies een lettertype:</translation>
+        <translation>Selectează fontul:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation>Algemeen</translation>
+        <translation>General</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation>Kies een tekstkleur:</translation>
+        <translation>Selectează culoarea textului:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation>Afstand</translation>
+        <translation>Spațiere</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="142"/>
         <source>Minimum item margins:</source>
-        <translation>Minimale marges tussen elementen:</translation>
+        <translation>Marginile minime ale elementelor:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="149"/>
         <source>3 px by default.</source>
-        <translation>Standaard: 3 px.</translation>
+        <translation>3 px implicit.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
@@ -391,110 +392,110 @@ Boston, MA 02110-1301 USA.</translation>
         <location filename="../desktop-preferences.ui" line="172"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>Standaard: 1 px.
-Er is tevens ruimte gereserveerd voor drie regels tekst.</translation>
+        <translation>1 px în mod implicit.
+Un spațiu este rezervat și pentru 3 rânduri de text.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Lock</source>
-        <translation>Vergrendelen</translation>
+        <translation>Blochează</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>Standaard worden bureaubladmappen na links klikken geopend in PCManFM-Qt,
-zelfs als dat niet de standaard bestandsbeheerder is.</translation>
+        <translation>În mod implicit, folderele de pe desktop vor fi deschise în PCManFM-Qt dacă acestea 
+sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere implicit.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Buereaubladmappen na links klikken openen in standaard bestandsbeheerder</translation>
+        <translation>Deschideți folderele desktop în managerul de fișiere implicit făcând clic stânga</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
         <source>Wallpaper</source>
-        <translation>Achtergrond</translation>
+        <translation>Wallpaper</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="341"/>
         <source>Transform image based on EXIF data</source>
-        <translation>Afbeelding transformeren aan de hand van exif-gegevens</translation>
+        <translation>Transformați imaginea pe baza datelor EXIF</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="348"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation>Elk beeldscherm voorzien van andere achtergrond</translation>
+        <translation>Wallpaper individual pentru fiecare monitor</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="375"/>
         <source>Slide Show</source>
-        <translation>Diavoorstelling</translation>
+        <translation>Slide Show</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="381"/>
         <source>Enable Slide Show</source>
-        <translation>Diavoorstelling tonen</translation>
+        <translation>Activați Slide-Show-ul</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="393"/>
         <source>Wallpaper image folder:</source>
-        <translation>Map met bureaubladachtergronden:</translation>
+        <translation>Folderul Imaginii Wallpaper:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="400"/>
         <source>Browse</source>
-        <translation>Verkennen</translation>
+        <translation>Navighează</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="407"/>
         <source> hour(s)</source>
-        <translation> uur</translation>
+        <translation> oră(e)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
         <source>and</source>
-        <translation>en</translation>
+        <translation>și</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation>Tussenpozen van minder dan 5 minuten worden genegeerd</translation>
+        <translation>Intervale mai mici de 5 minute vor fi ignorate</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="433"/>
         <source>Interval:</source>
-        <translation>Tussenpoos:</translation>
+        <translation>Interval:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="440"/>
         <source> minute(s)</source>
-        <translation> minu(u)t(en)</translation>
+        <translation> minut(e)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="466"/>
         <source>Wallpaper folder</source>
-        <translation>Map met bureaubladachtergrond</translation>
+        <translation>Folderul Wallpaperul-ui</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="489"/>
         <source>Randomize the slide show</source>
-        <translation>Dia&apos;s in willekeurige volgorde tonen</translation>
+        <translation>Randomizați slide-show-ul</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="522"/>
         <source>Visible Shortcuts</source>
-        <translation>Getoonde snelkoppelingen</translation>
+        <translation>Scurtături vizibile</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="528"/>
         <source>Home</source>
-        <translation>Persoonlijke map</translation>
+        <translation>Acasă</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="539"/>
         <source>Trash</source>
-        <translation>Prullenbak</translation>
+        <translation>Gunoi</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="550"/>
@@ -504,12 +505,12 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="561"/>
         <source>Network</source>
-        <translation>Netwerk</translation>
+        <translation>Rețea</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="516"/>
         <source>Advanced</source>
-        <translation>Geavanceerd</translation>
+        <translation>Avansat</translation>
     </message>
 </context>
 <context>
@@ -517,17 +518,17 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>Verborgen snelkoppelingen</translation>
+        <translation>Scurtături ascunse</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>Snelkoppeling</translation>
+        <translation>Scurtătură</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation>Actie</translation>
+        <translation>Acțiune</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
@@ -537,7 +538,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation>Focussen op weergave en filterbalk leegmaken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -547,7 +548,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation>Focussen op zijpaneel</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -558,7 +559,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation>Focussen op locatie-invoer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -574,18 +575,18 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation>Volgend tabblad</translation>
+        <translation>Next tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation>Ctrl+Shift+Tab</translation>
+        <translation type="unfinished">Ctrl+Shift+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation>Vorig tabblad</translation>
+        <translation>Tab-ul anterior</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
@@ -600,78 +601,78 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation>Ctrl+getal</translation>
+        <translation>Ctrl+Număr</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation>Ga naar tabblad</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation>Alt+getal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation>Backspace</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation>Ga omhoog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation>Ctrl+F</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation>Zoekvenster tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation>Shift+Insert</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation>Plakken op filterbalk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation>Shift+verslepen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation>Bestand na loslaten verplaatsen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation>Ctrl+verslepen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation>Bestand na loslaten kopiëren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation>Shift+Ctrl+verslepen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation>Snelkoppeling maken na loslaten</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -679,650 +680,650 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation>Bestandsbeheerder</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="133"/>
         <source>&amp;Toolbars</source>
-        <translation>&amp;Werkbalken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="140"/>
         <source>Path &amp;Bar</source>
-        <translation>Locatie&amp;balk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="147"/>
         <source>&amp;Filtering</source>
-        <translation>&amp;Filteren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Tools</source>
-        <translation>Hulpmi&amp;ddelen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="270"/>
         <source>Go &amp;Up</source>
-        <translation>Ga om&amp;hoog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="273"/>
         <source>Go Up</source>
-        <translation>Ga omhoog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="276"/>
         <source>Alt+Up</source>
-        <translation>Alt+pijltje omhoog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="285"/>
         <source>&amp;Home</source>
-        <translation>&amp;Persoonlijke map</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="288"/>
         <source>Alt+Home</source>
-        <translation>Alt+Home</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="297"/>
         <source>&amp;Reload</source>
-        <translation>He&amp;rladen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="300"/>
         <source>F5</source>
-        <translation>F5</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="309"/>
         <source>Go</source>
-        <translation>Ga naar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="318"/>
         <source>Quit</source>
-        <translation>Afsluiten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="327"/>
         <source>&amp;About</source>
-        <translation>&amp;Over</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="336"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Nieuw venster</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="339"/>
         <source>New Window</source>
-        <translation>Nieuw venster</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="342"/>
         <source>Ctrl+N</source>
-        <translation>Ctrl+N</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="350"/>
         <source>Show &amp;Hidden</source>
-        <translation>&amp;Verborgen bestanden/mappen tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>
         <source>Ctrl+H</source>
-        <translation>Ctrl+H</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="362"/>
         <source>&amp;Computer</source>
-        <translation>&amp;Computer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="371"/>
         <source>&amp;Trash</source>
-        <translation>&amp;Prullenbak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="376"/>
         <source>&amp;Network</source>
-        <translation>&amp;Netwerk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="385"/>
         <source>&amp;Desktop</source>
-        <translation>&amp;Bureaublad</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="394"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation>Toevoegen &amp;aan bladwijzers</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="399"/>
         <source>&amp;Applications</source>
-        <translation>Progr&amp;amma&apos;s</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="404"/>
         <source>Reload</source>
-        <translation>Herladen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="412"/>
         <source>&amp;Icon View</source>
-        <translation>P&amp;ictogramweergave</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="420"/>
         <source>&amp;Compact View</source>
-        <translation>&amp;Compacte weergave</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="428"/>
         <source>&amp;Detailed List</source>
-        <translation>Uitgebrei&amp;de lijst</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>&amp;Thumbnail View</source>
-        <translation>Minia&amp;tuurweergave</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="445"/>
         <source>Cu&amp;t</source>
-        <translation>Kni&amp;ppen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="448"/>
         <source>Ctrl+X</source>
-        <translation>Ctrl+X</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="457"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Kopiëren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="460"/>
         <source>Ctrl+C</source>
-        <translation>Ctrl+C</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Plakken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="472"/>
         <source>Ctrl+V</source>
-        <translation>Ctrl+V</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
         <source>Select &amp;All</source>
-        <translation>&amp;Alles selecteren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="480"/>
         <source>Ctrl+A</source>
-        <translation>Ctrl+A</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="485"/>
         <source>Pr&amp;eferences</source>
-        <translation>Inst&amp;ellingen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="493"/>
         <source>&amp;Ascending</source>
-        <translation>&amp;Oplopend</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="501"/>
         <source>&amp;Descending</source>
-        <translation>&amp;Aflopend</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="509"/>
         <source>&amp;By File Name</source>
-        <translation>Op &amp;bestandsnaam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By &amp;Modification Time</source>
-        <translation>Op &amp;bewerkingstijdstip</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>By C&amp;reation Time</source>
-        <translation>Op aa&amp;nmaaktijdstip</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <source>By Deletio&amp;n Time</source>
-        <translation>Op verwijd&amp;ertijdstip</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By File &amp;Type</source>
-        <translation>Op bestands&amp;type</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <source>By &amp;Owner</source>
-        <translation>&amp;Op eigenaar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <source>By &amp;Group</source>
-        <translation>Op &amp;groep</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="565"/>
         <source>&amp;Folder First</source>
-        <translation>&amp;Mappen bovenaan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="573"/>
         <source>&amp;Hidden Last</source>
-        <translation>Verbor&amp;gen onderaan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="581"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation>Sorteervolgorde van deze ma&amp;p behouden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Shift+A</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="683"/>
         <source>&amp;Case Sensitive</source>
-        <translation>&amp;Hoofdlettergevoelig</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
         <source>By File &amp;Size</source>
-        <translation>Op bestand&amp;sgrootte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="696"/>
         <source>&amp;Close Window</source>
-        <translation>&amp;Venster sluiten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="699"/>
         <source>Ctrl+Q</source>
-        <translation>Ctrl+Q</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>Tabblad openen in behee&amp;rdersmodus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="731"/>
         <source>&amp;Folder</source>
-        <translation>&amp;Map</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="743"/>
         <source>&amp;Blank File</source>
-        <translation>&amp;Leeg bestand</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation>Filterbalk tonen/focu&amp;ssen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Show Filter Bar</source>
-        <translation>Filterbalk tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="873"/>
         <source>Ctrl+I</source>
-        <translation>Ctrl+I</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="881"/>
         <source>S&amp;plit View</source>
-        <translation>Weergave s&amp;plitsen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="884"/>
         <source>Split View</source>
-        <translation>Weergave splitsen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="887"/>
         <source>F6</source>
-        <translation>F6</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="892"/>
         <source>&amp;Copy Full Path</source>
-        <translation>Volledig pad &amp;kopiëren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="895"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Shift+C</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="906"/>
         <source>Show Thumb&amp;nails</source>
-        <translation>Miniature&amp;n tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
         <source>Show Thumbnails</source>
-        <translation>Miniaturen tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="917"/>
         <source>S&amp;ide Pane</source>
-        <translation>Z&amp;ijpaneel</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>F9</source>
-        <translation>F9</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="925"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Verborgen &amp;snelkoppelingen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>T&amp;abblad openen in beheerdersmodus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation>Starter aanmaken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
         <source>Ctrl+B</source>
-        <translation>Ctrl+B</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <source>&amp;Clear All Filters</source>
-        <translation>Alle filter&amp;s wissen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
         <source>Ctrl+Shift+K</source>
-        <translation>Ctrl+Shift+K</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
         <source>Close &amp;previous tabs</source>
-        <translation>Vorige tab&amp;bladen sluiten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="791"/>
         <source>Close &amp;next tabs</source>
-        <translation>Volge&amp;nde tabbladen sluiten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="830"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation>Ma&amp;pinstellingen behouden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>Connect to &amp;Server</source>
-        <translation>Verbinden met &amp;server</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="843"/>
         <source>&amp;Location</source>
-        <translation>&amp;Locatie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="851"/>
         <source>&amp;Path Buttons</source>
-        <translation>&amp;Padknoppen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="856"/>
         <source>&amp;Bulk Rename</source>
-        <translation>Meerdere na&amp;men wijzigen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="859"/>
         <source>Bulk Rename</source>
-        <translation>Meerdere namen wijzigen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="862"/>
         <source>Ctrl+F2</source>
-        <translation>Ctrl+F2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="796"/>
         <source>Close &amp;other tabs</source>
-        <translation>&amp;Overige tabbladen sluiten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="762"/>
         <source>Permanent &amp;filter bar</source>
-        <translation>&amp;Filterbalk altijd tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
         <source>&amp;Menu bar</source>
-        <translation>&amp;Menubalk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="807"/>
         <source>Menu bar</source>
-        <translation>Menubalk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="810"/>
         <source>Ctrl+M</source>
-        <translation>Ctrl+M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="819"/>
         <location filename="../main-win.ui" line="822"/>
         <source>Menu</source>
-        <translation>Menu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="590"/>
         <source>New &amp;Tab</source>
-        <translation>Nieuw &amp;tabblad</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="593"/>
         <source>New Tab</source>
-        <translation>Nieuw tabblad</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="596"/>
         <source>Ctrl+T</source>
-        <translation>Ctrl+T</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="605"/>
         <source>Go &amp;Back</source>
-        <translation>&amp;Ga terug</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="608"/>
         <source>Go Back</source>
-        <translation>Ga terug</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="611"/>
         <source>Alt+Left</source>
-        <translation>Alt+pijltje naar links</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="620"/>
         <source>Go &amp;Forward</source>
-        <translation>Ga &amp;vooruit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="623"/>
         <source>Go Forward</source>
-        <translation>Ga vooruit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>Alt+Right</source>
-        <translation>Alt+pijltje naar rechts</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
         <source>&amp;Invert Selection</source>
-        <translation>Select&amp;ie omdraaien</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>&amp;Delete</source>
-        <translation>Verwij&amp;deren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="646"/>
         <source>Del</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>&amp;Rename</source>
-        <translation>Naam wij&amp;zigen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
         <source>F2</source>
-        <translation>F2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="659"/>
         <source>C&amp;lose Tab</source>
-        <translation>Tabblad s&amp;luiten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="662"/>
         <source>Ctrl+W</source>
-        <translation>Ctrl+W</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="667"/>
         <source>File &amp;Properties</source>
-        <translation>Bestandseigenscha&amp;ppen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="670"/>
         <source>Alt+Return</source>
-        <translation>Alt+Enter</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="675"/>
         <source>&amp;Folder Properties</source>
-        <translation>&amp;Mapeigenschappen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="704"/>
         <source>Edit Bookmarks</source>
-        <translation>Bladwijzers aanpassen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="709"/>
         <source>Open &amp;Terminal</source>
-        <translation>&amp;Terminalvenster openen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="712"/>
         <source>F4</source>
-        <translation>F4</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="722"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation>Bladwijzers aanpass&amp;en</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="734"/>
         <source>Ctrl+Shift+N</source>
-        <translation>Ctrl+Shift+N</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="746"/>
         <source>Ctrl+Alt+N</source>
-        <translation>Ctrl+Alt+N</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="751"/>
         <source>&amp;Find Files</source>
-        <translation>&amp;Zoeken naar bestanden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="754"/>
         <source>F3</source>
-        <translation>F3</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation>&amp;Bestand</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
         <source>C&amp;reate New</source>
-        <translation>&amp;Nieuw</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation>&amp;Hulp</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="99"/>
         <location filename="../main-win.ui" line="123"/>
         <source>&amp;View</source>
-        <translation>&amp;Beeld</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="103"/>
         <source>&amp;Sorting</source>
-        <translation>&amp;Sorteren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="169"/>
         <source>&amp;Edit</source>
-        <translation>B&amp;ewerken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="187"/>
         <source>&amp;Bookmarks</source>
-        <translation>&amp;Bladwijzers</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="194"/>
         <source>&amp;Go</source>
-        <translation>&amp;Ga</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="236"/>
         <source>Main Toolbar</source>
-        <translation>Hoofdwerkbalk</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1330,99 +1331,99 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>Name of configuration profile</source>
-        <translation>Naam van instellingenprofiel</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>PROFILE</source>
-        <translation>PROFIEL</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM as a daemon</source>
-        <translation>PCManFM uitvoeren als achtergronddienst</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM</source>
-        <translation>PCManFM afsluiten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
-        <translation>Bureaubladbeheer openen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>Bureaubladbeheer uitschakelen indien actief</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Bureaubladinstellingen tonen op de pagina met de opgegeven naam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
         <location filename="../application.cpp" line="195"/>
         <source>NAME</source>
-        <translation>NAAM</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="183"/>
         <source>Open new window</source>
-        <translation>Nieuw venster openen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Open Find Files utility</source>
-        <translation>Bestandszoeker openen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>AfbeeldingsBESTAND instellen als bureaubladachtergrond</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>FILE</source>
-        <translation>BESTAND</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>MODE</source>
-        <translation>MODUS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation>Modus van bureaubladachtergrond instellen. MODUS=(%1)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Instellingenvenster tonen op de pagina met de opgegeven naam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Files or directories to open</source>
-        <translation>Te openen bestanden of mappen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation>[BESTAND1, BESTAND2, enz.]</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="594"/>
         <location filename="../application.cpp" line="599"/>
         <source>Error</source>
-        <translation>Foutmelding</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="599"/>
         <source>Terminal emulator is not set.</source>
-        <translation>Geen terminalemulator ingesteld.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1430,12 +1431,12 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../autorundialog.cpp" line="44"/>
         <source>Open in file manager</source>
-        <translation>Tonen in bestandsbeheerder</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="138"/>
         <source>Removable Disk</source>
-        <translation>Verwijderbare schijf</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1443,32 +1444,32 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../connectserverdialog.cpp" line="9"/>
         <source>SSH</source>
-        <translation>SSH</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="10"/>
         <source>FTP</source>
-        <translation>FTP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="11"/>
         <source>WebDav</source>
-        <translation>WebDav</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation>Beveiligde WebDav</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
         <source>HTTP</source>
-        <translation>HTTP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="14"/>
         <source>HTTPS</source>
-        <translation>HTTPS</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1476,32 +1477,32 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>Command:</source>
-        <translation>Opdracht:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="32"/>
         <source>URL:</source>
-        <translation>URL:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="57"/>
         <source>Select an icon</source>
-        <translation>Pictogram kiezen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="59"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation>Afbeeldingen (*.png *.xpm *.svg *.svgz )</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="85"/>
         <source>Select an executable file</source>
-        <translation>Kies een uitvoerbaar bestand</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="93"/>
         <source>Select a file</source>
-        <translation>Kies een bestand</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1509,47 +1510,47 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Fill with background color only</source>
-        <translation>Alleen opvullen met achtergrondkleur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>Uitrekken om het hele scherm te vullen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Stretch to fit the screen</source>
-        <translation>Uitrekken om op het scherm te passen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Center on the screen</source>
-        <translation>Centreren op het scherm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>Tegelen om het volledige scherm te vullen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="58"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation>Zoomen het volledige scherm op te vullen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="251"/>
         <source>Select Wallpaper</source>
-        <translation>Achtergrond kiezen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="255"/>
         <source>Image Files</source>
-        <translation>Afbeeldingsbestanden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="297"/>
         <source>Select Wallpaper Folder</source>
-        <translation>Achtergrondmap kiezen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1557,61 +1558,60 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (One item)</source>
-        <translation>Prullenbak (één item)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
-        <translation>
-            <numerusform>Prullenbak (%Ln item)</numerusform>
-            <numerusform>Prullenbak (%Ln items)</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="304"/>
         <source>Trash (Empty)</source>
-        <translation>Prullenbak (leeg)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="339"/>
         <source>Computer</source>
-        <translation>Computer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="353"/>
         <source>Network</source>
-        <translation>Netwerk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="958"/>
         <source>Open</source>
-        <translation>Openen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="963"/>
         <location filename="../desktopwindow.cpp" line="1000"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>Op huidige positie &amp;blijven</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="970"/>
         <source>Empty Trash</source>
-        <translation>Prullenbak legen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1026"/>
         <source>Hide Desktop Items</source>
-        <translation>Bureaubladitems verbergen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1032"/>
         <source>Create Launcher</source>
-        <translation>Starter aanmaken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1035"/>
         <source>Desktop Preferences</source>
-        <translation>Bureaubladinstellingen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1619,7 +1619,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../tabpage.cpp" line="93"/>
         <source>Filter:</source>
-        <translation>Filter:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1627,7 +1627,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../tabpage.cpp" line="63"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation>Tekst wissen (Ctrl+K of Esc)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1635,45 +1635,45 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="139"/>
         <source>Root Instance</source>
-        <translation>Beheerdersvenster</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="698"/>
         <source>Hide menu bar</source>
-        <translation>Menubalk verbergen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="699"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation>Hierdoor wordt de menubalk volledig verborgen. Druk op Ctrl+M om de menubalk te tonen.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1052"/>
         <source>Version: %1</source>
-        <translation>Versie: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
         <location filename="../mainwindow.cpp" line="1949"/>
         <source>&amp;Move to Trash</source>
-        <translation>Verplaatsen naar &amp;prullenbak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
         <location filename="../mainwindow.cpp" line="1949"/>
         <source>&amp;Delete</source>
-        <translation>Verwij&amp;deren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2017"/>
         <location filename="../mainwindow.cpp" line="2025"/>
         <source>Error</source>
-        <translation>Foutmelding</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2025"/>
         <source>Switch user command is not set.</source>
-        <translation>De opdracht omtrent gebruikerswissel is niet ingesteld.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1681,22 +1681,22 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Icon View</source>
-        <translation>Pictogramweergave</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Compact View</source>
-        <translation>Compacte weergave</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Thumbnail View</source>
-        <translation>Miniatuurweergave</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Detailed List View</source>
-        <translation>Uitgebreide lijstweergave</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1704,27 +1704,25 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../tabpage.cpp" line="499"/>
         <source>Error</source>
-        <translation>Foutmelding</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="508"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="525"/>
         <source>%n item(s)</source>
-        <translation>
-            <numerusform>%n item</numerusform>
-            <numerusform>%n items</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="527"/>
         <source> (%n hidden)</source>
-        <translation>
-            <numerusform> (%n verborgen)</numerusform>
-            <numerusform> (%n verborgen)</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -1732,14 +1730,13 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
         <location filename="../tabpage.cpp" line="726"/>
         <location filename="../tabpage.cpp" line="740"/>
         <source>Link to</source>
-        <translation>Koppelen aan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="752"/>
         <source>%n item(s) selected</source>
-        <translation>
-            <numerusform>%n item geselecteerd</numerusform>
-            <numerusform>%n items geselecteerd</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>
@@ -1748,30 +1745,29 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
-        <translation>Veel bestanden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation>
-            <numerusform>Wilt u %1 bestand openen?</numerusform>
-            <numerusform>Wilt u %1 bestanden openen?</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
         <source>Open in New T&amp;ab</source>
-        <translation>Openen op nieuw t&amp;abblad</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../view.cpp" line="126"/>
         <source>Open in New Win&amp;dow</source>
-        <translation>Openen in nieuw &amp;venster</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../view.cpp" line="134"/>
         <source>Open in Termina&amp;l</source>
-        <translation>Openen in termina&amp;lvenster</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1779,289 +1775,287 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Instellingen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation>Vormgeving</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation>Gedrag</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="598"/>
         <source>Thumbnail</source>
-        <translation>Miniatuur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation>Schijf</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation>Geavanceerd</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation>Onlangs aangemaakte bestanden selecteren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
         <source>Icons</source>
-        <translation>Pictogrammen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="291"/>
         <source>Size of big icons:</source>
-        <translation>Omvang van grote pictogrammen:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Size of small icons:</source>
-        <translation>Omvang van kleine pictogrammen:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
         <source>Size of thumbnails:</source>
-        <translation>Omvang van miniaturen:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="339"/>
         <source>Size of side pane icons:</source>
-        <translation>Omvang van zijbalkpictogrammen:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="271"/>
         <source>Icon theme:</source>
-        <translation>Pictogramthema:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="502"/>
         <source>Window</source>
-        <translation>Venster</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="515"/>
         <source>Always show the tab bar</source>
-        <translation>Tabbladbalk altijd tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="522"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Sluitknoppen tonen op tabbladen	</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="536"/>
         <source>Remember the size of the last closed window</source>
-        <translation>Afmetingen van laatst gesloten venster onthouden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="543"/>
         <source>Default width of new windows:</source>
-        <translation>Standaardbreedte van nieuwe vensters:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="557"/>
         <source>Default height of new windows:</source>
-        <translation>Standaardhoogte van nieuwe vensters:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="81"/>
         <source>Browsing</source>
-        <translation>Verkennen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation>Bestanden openen door eenmaal te klikken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="113"/>
         <source>Default view mode:</source>
-        <translation>Standaard weergavemodus:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source> sec</source>
-        <translation> sec</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>File Operations</source>
-        <translation>Bestandsacties</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
-        <translation>Vragen alvorens bestanden te verwijderen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>Verwijderde bestanden verplaatsen naar prullenbak in plaats van permanent verwijderen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="607"/>
         <source>Show thumbnails of files</source>
-        <translation>Miniaturen van bestanden tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="614"/>
         <source>Only show thumbnails for local files</source>
-        <translation>Alleen miniaturen van lokale bestanden tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
         <source>Display</source>
-        <translation>Weergave</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation>Schakel uit om de werkomgevingsinstelling te gebruiken.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation>Stel in op 0 om automatische selectie uit te schakelen.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation>Wachttijd alvorens automatisch te selecteren bij eenmaal-klikkenmodus:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
         <source>Open in current tab</source>
-        <translation>Openen op huidig tabblad</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="152"/>
         <source>Open in new tab</source>
-        <translation>Openen op nieuw tabblad</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="157"/>
         <source>Open in new window</source>
-        <translation>Openen in nieuw venster</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Bestanden op verwijderbare media verwijderen in plaats van prullenbak aan te maken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>Vragen om bevestiging alvorens bestanden te verplaatsen naar prullenbak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
         <location filename="../preferences.ui" line="372"/>
         <location filename="../preferences.ui" line="382"/>
         <source>Requires application restart to take effect completely</source>
-        <translation>Herstart PCManFM-Qt om de wijziging toe te passen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation>Uitvoerbare bestanden starten zonder melding te tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>Bestanden met gewijzigde namen worden eveneens geselecteerd</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="288"/>
         <location filename="../preferences.ui" line="298"/>
         <source>Used by Icon View</source>
-        <translation>Gebruikt door pictogramweergave</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="305"/>
         <location filename="../preferences.ui" line="315"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>Gebruikt door compacte en uitgebreide lijstweergave</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="322"/>
         <location filename="../preferences.ui" line="332"/>
         <source>Used by Thumbnail View</source>
-        <translation>Gebruikt door miniatuurweergave</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="352"/>
         <source>User interface</source>
-        <translation>Vormgeving</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="365"/>
         <source>Treat backup files as hidden</source>
-        <translation>Reservekopiebestanden verbergen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="385"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation>Pictogrammen van verborgen bestanden voorzien van schaduw</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="415"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>Minimale marges rond items in pictogramweergave:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>3 px by default.</source>
-        <translation>Standaard: 3 px.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="425"/>
         <location filename="../preferences.ui" line="449"/>
         <source> px</source>
-        <translation> px</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="438"/>
         <source>x</source>
-        <translation>x</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="445"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>Standaard: 3 px.
-Er is ruimte gereserveerd voor 3 regels tekst.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="462"/>
         <source>Lock</source>
-        <translation>Vergrendelen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="511"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation>Schakel uit om de tabbladbalk alleen te tonen
-als er meer dan één tabblad is.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="529"/>
         <source>Switch to newly opened tab</source>
-        <translation>Nieuw geopend tabblad focussen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation>Tabbladen uit vorig venster heropenen in nieuw venster</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
@@ -2069,20 +2063,18 @@ als er meer dan één tabblad is.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation>De ingebouwde miniatuurmaker maakt miniaturen van door Qt ondersteunde afbeeldingen.
-
-De meeste bestandstypes worden ondersteund, standaard met een max. bestandsgrootte van 4 MiB.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation>Groottebeperking van ingebouwde miniatuurmaker:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation> MiB</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2090,144 +2082,142 @@ De meeste bestandstypes worden ondersteund, standaard met een max. bestandsgroot
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation>Indien aanwezig worden externe miniatuurmakers gebruikt bij onder meer video- en pdf-bestanden.
-
-Een waarde van -1 betekent dat er geen beperking is (standaard).</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation>Bestandsgroottebeperking van externe miniatuurmakers:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation>Onbeperkt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation>Voorbeelden:&lt;br&gt;Voor terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Voor wisselen van gebruiker: &lt;i&gt;lxsudo %s&lt;/i&gt; of &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is de opdracht die u wilt uitvoeren in het terminalvenster of met su.&lt;br&gt; Let op: gebruik alleen lxsudo - sudo zal de rechten in het instellingenbestand vernaggelen.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="900"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation>Herstart PCManFM-Qt om de wijziging toe te passen.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation>Bladwijzermenu:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation>Rechtermuisknopmenu van mappen openen met Ctrl+rechtermuisklik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation>Mappen zo veel mogelijk op nieuwe tabbladen openen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation>Eénvenstermodus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="375"/>
         <source>Always show real file names</source>
-        <translation>Altijd daadwerkelijke bestandsnamen tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="392"/>
         <source>Do not show file tooltips</source>
-        <translation>Geen hulpballonnen van bestanden tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="604"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation>Hiervoor is ffmpegthumbnailer vereist</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="710"/>
         <source>Auto Mount</source>
-        <translation>Automatisch aankoppelen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="716"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>Aankoppelbare schijven automatisch aankoppelen na opstarten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="723"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>Verwijderbare schijven automatisch aankoppelen zodra ze worden ingevoerd</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="730"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation>Beschikbare opties omtrent verwijderbare schijven tonen zodra ze worden ingevoerd</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="740"/>
         <source>When removable medium unmounted:</source>
-        <translation>Na ontkoppelen van verwijderbare schijf:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="746"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation>&amp;Tabblad met verwijderbare schijf sluiten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="753"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>Persoonlijke map openen op huidi&amp;g tabblad</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="780"/>
         <source>Programs</source>
-        <translation>Programma&apos;s</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="789"/>
         <source>Terminal emulator:</source>
-        <translation>Terminalemulator:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Switch &amp;user command:</source>
-        <translation>Opdracht voor gebr&amp;uikerswissel:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="822"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>Archiveerin&amp;tegratie:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="845"/>
         <source>Templates</source>
-        <translation>Sjablonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="851"/>
         <source>Show only user defined templates in menu</source>
-        <translation>Alleen eigen sjablonen tonen in menu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="858"/>
         <source>Show only one template for each MIME type</source>
-        <translation>Slechts één sjabloon per bestandstype tonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="865"/>
         <source>Run default application after creation from template</source>
-        <translation>Standaardprogramma openen na aanmaken van sjabloon</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="358"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>Decimale SI-voorvoegsels gebruiken in plaats van binaire IEC-voorvoegsels</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2235,44 +2225,44 @@ Een waarde van -1 betekent dat er geen beperking is (standaard).</translation>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Renaming files...</source>
-        <translation>Bezig met wijzigen van bestandsnamen…</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Abort</source>
-        <translation>Afbreken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
         <source>Warning</source>
-        <translation>Waarschuwing</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
         <source>Renaming is aborted.</source>
-        <translation>Naamswijziging afgebroken.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
         <location filename="../tabpage.cpp" line="1055"/>
         <source>Error</source>
-        <translation>Foutmelding</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <source>No file could be renamed.</source>
-        <translation>Er kan geen enkele bestandsnaam worden gewijzigd.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="111"/>
         <source>Some files could not be renamed.</source>
-        <translation>Enkele bestandsnamen kunnen niet worden gewijzigd.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="1055"/>
         <source>Cannot open as Admin.</source>
-        <translation>Openen als beheerder mislukt.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
