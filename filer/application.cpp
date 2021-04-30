@@ -56,6 +56,16 @@ using namespace Filer;
 static const char* serviceName = "org.filer.Filer";
 static const char* ifaceName = "org.filer.Application";
 
+// https://stackoverflow.com/a/20894436
+void delay( int millisecondsToWait )
+{
+    QTime dieTime = QTime::currentTime().addMSecs( millisecondsToWait );
+    while( QTime::currentTime() < dieTime )
+    {
+        QCoreApplication::processEvents( QEventLoop::AllEvents, 100 );
+    }
+}
+
 Application::Application(int& argc, char** argv):
   QApplication(argc, argv),
   libFm_(),
@@ -94,6 +104,28 @@ Application::Application(int& argc, char** argv):
     if(settings_.useFallbackIconTheme()) {
       QIcon::setThemeName(settings_.fallbackIconThemeName());
       Fm::IconTheme::checkChanged();
+    }
+
+    // probono: On systems that are supposed to have a global menu bar, wait for the
+    // global menu bar service to appear on D-Bus before we do anything in order to
+    // prevent Filer from launching the desktop before the global menu is ready
+    QByteArray globalMenuEnv  = qgetenv("UBUNTU_MENUPROXY");
+    if (globalMenuEnv.data()!=NULL) {
+        qDebug("Waiting for global menu to appear on D-Bus...");
+        while(true) {
+            QDBusInterface* menuIface = new QDBusInterface(
+                        QStringLiteral("com.canonical.AppMenu.Registrar"),
+                        QStringLiteral("/com/canonical/AppMenu/Registrar"));
+            if (menuIface) {
+                if (menuIface->isValid()) {
+                    qDebug("Global menu is available");
+                    break;
+                }
+                delete menuIface;
+                menuIface = 0;
+            }
+            delay(100);
+        }
     }
 
     // Check if LXQt Session is running. LXQt has it's own Desktop Folder
