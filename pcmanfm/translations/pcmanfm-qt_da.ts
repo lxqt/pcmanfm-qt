@@ -900,7 +900,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Efter &amp;oprettelsestidspunkt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
@@ -1051,7 +1051,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Opret starter</translation>
+        <translation>Opret starter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
@@ -1932,12 +1932,12 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Indstil til nul for at deaktivere automatisk markering.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Forsinkelse af automatisk markering i enkeltklikstilstand:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -2081,7 +2081,7 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2099,7 +2099,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen grænse</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2269,7 +2269,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1055"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan ikke åbne som administrator.</translation>
     </message>
 </context>
 </TS>
