@@ -90,6 +90,10 @@ DesktopWindow::DesktopWindow(int screenNum):
     listView_->setResizeMode(QListView::Adjust);
     listView_->setFlow(QListView::TopToBottom);
 
+    // give listView_ an object name so we can refer to it in stylesheets -
+    // this is actually the widget that has the wallpaper background
+    listView_->setObjectName("DesktopListView");
+
     // NOTE: When XRnadR is in use, the all screens are actually combined to form a
     // large virtual desktop and only one DesktopWindow needs to be created and screenNum is -1.
     // In some older multihead setups, such as xinerama, every physical screen
@@ -348,25 +352,25 @@ void DesktopWindow::updateWallpaper() {
     setStyleSheet("");
     switch (wallpaperMode_) {
         case Filer::DesktopWindow::WallpaperNone:
-          setStyleSheet("background-color: " + bgColor_.name());
+          setStyleSheet("#DesktopListView { background-color: " + bgColor_.name() + " }");
           break;
     case Filer::DesktopWindow::WallpaperStretch:
           if (! wallpaperFile_.isEmpty())
-              setStyleSheet("border-image: url(" + wallpaperFile_ + ") stretch stretch;");
+              setStyleSheet("#DesktopListView { border-image: url(" + wallpaperFile_ + ") stretch stretch }");
           break;
     case Filer::DesktopWindow::WallpaperFit: // FIXME - how do we fit with correct aspect in qt stylesheets?
           if (! wallpaperFile_.isEmpty())
-              setStyleSheet("border-image: url(" + wallpaperFile_ + ") stretch;");
+              setStyleSheet("#DesktopListView { border-image: url(" + wallpaperFile_ + ") stretch }");
           break;
     case Filer::DesktopWindow::WallpaperCenter:
           if (! wallpaperFile_.isEmpty())
-              setStyleSheet("background-image: url(" + wallpaperFile_
+              setStyleSheet("#DesktopListView { background-image: url(" + wallpaperFile_
                             + "); background-repeat: no-repeat; background-position: center; background-color: "
-                            + bgColor_.name() + ";");
+                            + bgColor_.name() + " }");
           break;
     case Filer::DesktopWindow::WallpaperTile:
           if (! wallpaperFile_.isEmpty())
-              setStyleSheet("background-image: url(" + wallpaperFile_ + ");");
+              setStyleSheet("#DesktopListView { background-image: url(" + wallpaperFile_ + ") }");
           break;
     }
 }
