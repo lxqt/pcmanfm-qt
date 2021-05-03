@@ -837,7 +837,7 @@ void Application::installSigtermHandler() {
     QSocketNotifier* notifier = new QSocketNotifier(sigterm_fd[1], QSocketNotifier::Read, this);
     connect(notifier, &QSocketNotifier::activated, this, &Application::onSigtermNotified);
 
-    struct sigaction action;
+    struct sigaction action = {};
     action.sa_handler = sigtermHandler;
     ::sigemptyset(&action.sa_mask);
     action.sa_flags |= SA_RESTART;
