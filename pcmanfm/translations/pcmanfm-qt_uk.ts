@@ -50,18 +50,18 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 Всі права застережено (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
+ Ця програма є вільним ПЗ; Ви можете перевидати її та/чи 
+змінити її в межах GNU General Public License
+яку було опубліковано Free Software Foundation; версія 2
+або будь-яка пізніша.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+Ця програма постачається з надією, що вона буде корисною,
+але БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ; без навіть найменших гарантій
+ТОВАРНИХ чи будь яких інших, направлених для заробітку.
+Дивіться GNU General Public License для деталей.
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
+Ви мусите отримати копію GNU General Public License
+розом з цією програмою. Якщо ні, напишіть Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
@@ -243,7 +243,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation>Застосунок</translation>
+        <translation>Програма</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
