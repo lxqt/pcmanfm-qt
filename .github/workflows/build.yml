@@ -2,6 +2,10 @@ name: "CI"
 
 on: [push, pull_request]
 
+defaults:
+  run:
+    shell: bash
+    
 jobs:
   build:
 
@@ -23,7 +27,7 @@ jobs:
         add-apt-repository ppa:beineri/opt-qt-5.10.1-xenial -y
         apt-get update -qq
         apt-get -y install qt510base qt510x11extras qt510tools qt510translations libgl1-mesa-dev libfm-dev libmenu-cache-dev
-        . /opt/qt*/bin/qt*-env.sh
+        source /opt/qt*/bin/qt*-env.sh
         
     - name: Build
       run: |
