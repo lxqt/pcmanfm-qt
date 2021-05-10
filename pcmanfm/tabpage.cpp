@@ -257,7 +257,14 @@ void TabPage::onFilterStringChanged(QString str) {
         }
 
         setFilterStr(str);
-        applyFilter();
+
+        // Because the filter string may be typed inside the view, we should wait for Qt
+        // to select an item before deciding about the selection in applyFilter().
+        // Therefore, we use a single-shot timer to apply the filter.
+        QTimer::singleShot(0, folderView_, [this] {
+            applyFilter();
+        });
+
         // show/hide the transient filter-bar appropriately
         if(transientFilterBar) {
             if(filterBar_->isVisibleTo(this)) { // the page itself may be in an inactive tab
@@ -923,47 +930,49 @@ void TabPage::applyFilter() {
     }
 
     int prevSelSize = folderView_->selectionModel()->selectedIndexes().size();
-    bool selectFirst = false;
 
     proxyModel_->updateFilters();
 
-    QModelIndex curIndex = folderView_->selectionModel()->currentIndex();
     QModelIndex firstIndx = proxyModel_->index(0, 0);
     if(proxyFilter_->getFilterStr().isEmpty()) {
+        QModelIndex curIndex = folderView_->selectionModel()->currentIndex();
         if (curIndex.isValid()) {
             // scroll to the current item on removing filter
             folderView_->childView()->scrollTo(curIndex, QAbstractItemView::EnsureVisible);
         }
         else if (firstIndx.isValid()) {
-            // if the filter is removed and there is no current item, set the first item as current
+            // if there is no current item, set the first item as current without changing the selection
             folderView_->selectionModel()->setCurrentIndex(firstIndx, QItemSelectionModel::NoUpdate);
         }
     }
-    else if (!folderView_->hasSelection()) {
-        // if there is a filter but no selection, select the first item
-        if(firstIndx.isValid()) {
-            folderView_->childView()->setCurrentIndex(firstIndx);
-            selectFirst = true;
-        }
-    }
     else {
-        // if there is a filter and a selection, ensure the current index is visible
+        if(firstIndx.isValid()
+           && folderView_->childView()->hasFocus() // typing inside the view
+           && !folderView_->selectionModel()->isSelected(firstIndx)) {
+            // select the first item if typing happens inside the view
+            folderView_->childView()->setCurrentIndex(firstIndx);
+        }
+        else {
+            // if no new selection is made and some selected files are filtered out,
+            // "View::selChanged()" won't be emitted
+            if(prevSelSize > folderView_->selectionModel()->selectedIndexes().size()) {
+                onSelChanged();
+            }
+        }
+
+        // ensure that the current item exists and is visible
+        QModelIndex curIndex = folderView_->selectionModel()->currentIndex();
         if (curIndex.isValid()) {
             folderView_->childView()->scrollTo(curIndex, QAbstractItemView::EnsureVisible);
         }
-        else { // should never happen
+        else {
             QModelIndexList selIndexes = folderView_->selectionModel()->selectedIndexes();
-            if(!selIndexes.isEmpty()) { // always true
-                QModelIndex lastIndex = selIndexes.last();
-                folderView_->selectionModel()->setCurrentIndex(lastIndex, QItemSelectionModel::NoUpdate);
-                folderView_->childView()->scrollTo(lastIndex, QAbstractItemView::EnsureVisible);
+            curIndex = selIndexes.isEmpty() ? firstIndx : selIndexes.last();
+            if (curIndex.isValid()) {
+                folderView_->selectionModel()->setCurrentIndex(curIndex, QItemSelectionModel::NoUpdate);
+                folderView_->childView()->scrollTo(curIndex, QAbstractItemView::EnsureVisible);
             }
         }
-    }
-
-    // if some selected files are filtered out, "View::selChanged()" won't be emitted
-    if(!selectFirst && prevSelSize > folderView_->selectionModel()->selectedIndexes().size()) {
-        onSelChanged();
     }
 
     statusText_[StatusTextNormal] = formatStatusText();
