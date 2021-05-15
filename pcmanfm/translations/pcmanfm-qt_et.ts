@@ -2112,7 +2112,7 @@ Väärtus -1 tähendab, et failisuuruse piir puudub (see on ka vaikimisi väärt
     <message>
         <location filename="../preferences.ui" line="900"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation>Muudatuste rakendamiseks tuleb prorgramm uuesti käivitada.</translation>
+        <translation>Selle muudatuse jõustamiseks pead rakenduse uuesti käivitama.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="139"/>
