@@ -256,7 +256,7 @@ Foundation Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, SUA.</t
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">Formular</translation>
+        <translation>Formular</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -627,52 +627,52 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Dialog de căutare</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+Insert</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Inserați  în bara de filtrare tranzitorie</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Trage+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Mutați fișierul la eliberare</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Trageți+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Copiați fișierul la eliberare</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Trageți+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Faceți un symlink la elibereare</translation>
     </message>
 </context>
 <context>
@@ -680,12 +680,12 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Manager de fișiere</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="133"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bare de instrumente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="140"/>
@@ -695,142 +695,142 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="147"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filtrare</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Unelte</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="270"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Duceți-vă &amp;sus</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="273"/>
         <source>Go Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Duceți-vă sus</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="276"/>
         <source>Alt+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="285"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Acasă</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="288"/>
         <source>Alt+Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="297"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Reîncărcați</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="300"/>
         <source>F5</source>
-        <translation type="unfinished"></translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="309"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Duceți-vă</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="318"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Părăsiți</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="327"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Despre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="336"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fereastră Nouă</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="339"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Fereastră Nouă</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="342"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="350"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Arătați &amp;Ascunse</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>
         <source>Ctrl+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="362"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Computer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="371"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Gunoi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="376"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Rețea</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="385"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Desktop</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="394"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Adăugați la Marcaje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="399"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Aplicații</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="404"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Reîncărcați</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="412"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Afișare Picograme</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="420"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Afișare Compactă</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="428"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Listă Detaliată</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Afișare Miniaturi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="445"/>
@@ -840,112 +840,112 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="448"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="457"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Copiați</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="460"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="469"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Inserați</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="472"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>Selectați &amp;Toate</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="480"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="485"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Pr&amp;eferințe</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="493"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ascendent</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="501"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Descendent</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="509"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;După Numele Fișierelor</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>După &amp;Timpul Modificării</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>După T&amp;impul Creeării</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>După Timp&amp;ul Ștergerii</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>După Tipul &amp;Fișierului</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>După &amp;Deținător</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>După &amp;Grup</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="565"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Folderele Primele</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="573"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Cele Ascune Ultimele</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="581"/>
         <source>&amp;Preserve sorting for this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Păstrați sortarea pentru acest folder</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="683"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Case Sensitive</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
