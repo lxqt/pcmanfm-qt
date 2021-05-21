@@ -109,8 +109,8 @@ Application::Application(int& argc, char** argv):
     // probono: On systems that are supposed to have a global menu bar, wait for the
     // global menu bar service to appear on D-Bus before we do anything in order to
     // prevent Filer from launching the desktop before the global menu is ready
-    QByteArray globalMenuEnv  = qgetenv("UBUNTU_MENUPROXY");
-    if (globalMenuEnv.data()!=NULL) {
+    QString globalMenuEnv  = QString::fromLocal8Bit(qgetenv("UBUNTU_MENUPROXY"));
+    if ( ! globalMenuEnv.isEmpty() ) {
         qDebug("Waiting for global menu to appear on D-Bus...");
         while(true) {
             QDBusInterface* menuIface = new QDBusInterface(
