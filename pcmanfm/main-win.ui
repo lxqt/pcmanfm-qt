@@ -149,6 +149,14 @@
      <addaction name="actionShowFilter"/>
      <addaction name="actionUnfilter"/>
     </widget>
+    <widget class="QMenu" name="menuView_Settings">
+     <property name="title">
+      <string>Customized View Settings</string>
+     </property>
+     <addaction name="actionPreserveView"/>
+     <addaction name="actionPreserveViewRecursive"/>
+     <addaction name="actionGoToCustomizedViewSource"/>
+    </widget>
     <addaction name="actionReload"/>
     <addaction name="separator"/>
     <addaction name="actionShowHidden"/>
@@ -156,7 +164,7 @@
     <addaction name="actionSplitView"/>
     <addaction name="menuSorting"/>
     <addaction name="menu_View_2"/>
-    <addaction name="actionPreserveView"/>
+    <addaction name="menuView_Settings"/>
     <addaction name="separator"/>
     <addaction name="actionSidePane"/>
     <addaction name="menuToolbars"/>
@@ -573,14 +581,6 @@
     <string>&amp;Hidden Last</string>
    </property>
   </action>
-  <action name="actionPreserveSorting">
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
-   <property name="text">
-    <string>&amp;Preserve sorting for this folder</string>
-   </property>
-  </action>
   <action name="actionNewTab">
    <property name="icon">
     <iconset theme="window-new">
@@ -936,6 +936,19 @@
    </property>
    <property name="toolTip">
     <string>Create Launcher</string>
+   </property>
+  </action>
+  <action name="actionPreserveViewRecursive">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Preserve Settings Recursively from Here</string>
+   </property>
+  </action>
+  <action name="actionGoToCustomizedViewSource">
+   <property name="text">
+    <string>Go to Source of Inherited Settings</string>
    </property>
   </action>
  </widget>

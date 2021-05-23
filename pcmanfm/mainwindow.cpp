@@ -935,9 +935,27 @@ void MainWindow::on_actionHiddenLast_triggered(bool checked) {
     currentPage()->setSortHiddenLast(checked);
 }
 
-void MainWindow::on_actionPreserveView_triggered(bool /*checked*/) {
+void MainWindow::on_actionPreserveView_triggered(bool checked) {
     TabPage* page = currentPage();
-    page->setCustomizedView(!page->hasCustomizedView());
+    page->setCustomizedView(checked);
+    if(checked) {
+        ui.actionPreserveViewRecursive->setChecked(false);
+    }
+    ui.actionGoToCustomizedViewSource->setVisible(page->hasInheritedCustomizedView());
+}
+
+void MainWindow::on_actionPreserveViewRecursive_triggered(bool checked) {
+    TabPage* page = currentPage();
+    page->setCustomizedView(checked, true);
+    if(checked) {
+        ui.actionPreserveView->setChecked(false);
+    }
+    ui.actionGoToCustomizedViewSource->setVisible(page->hasInheritedCustomizedView());
+}
+
+void MainWindow::on_actionGoToCustomizedViewSource_triggered() {
+    currentPage()->goToCustomizedViewSource();
+    updateUIForCurrentPage();
 }
 
 void MainWindow::on_actionFilter_triggered(bool checked) {
@@ -1271,7 +1289,9 @@ void MainWindow::updateViewMenuForCurrentPage() {
     if(tabPage) {
         // update menus. FIXME: should we move this to another method?
         ui.actionShowHidden->setChecked(tabPage->showHidden());
-        ui.actionPreserveView->setChecked(tabPage->hasCustomizedView());
+        ui.actionPreserveView->setChecked(tabPage->hasCustomizedView() && !tabPage->hasRecursiveCustomizedView());
+        ui.actionPreserveViewRecursive->setChecked(tabPage->hasRecursiveCustomizedView());
+        ui.actionGoToCustomizedViewSource->setVisible(tabPage->hasInheritedCustomizedView());
 
         // view mode
         QAction* modeAction = nullptr;

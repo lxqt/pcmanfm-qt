@@ -669,6 +669,8 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     // (and also by setViewMode()); here, we only need to know whether it should be saved
     FolderSettings folderSettings = settings.loadFolderSettings(path());
     folderSettings_.setCustomized(folderSettings.isCustomized());
+    folderSettings_.setRecursive(folderSettings.recursive());
+    folderSettings_.seInheritedPath(folderSettings.inheritedPath());
 
     // set sorting
     proxyModel_->sort(folderSettings.sortColumn(), folderSettings.sortOrder());
@@ -979,13 +981,14 @@ void TabPage::applyFilter() {
     Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
 }
 
-void TabPage::setCustomizedView(bool value) {
-    if(folderSettings_.isCustomized() == value) {
+void TabPage::setCustomizedView(bool value, bool recursive) {
+    if(folderSettings_.isCustomized() == value && folderSettings_.recursive() == recursive) {
         return;
     }
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
     folderSettings_.setCustomized(value);
+    folderSettings_.setRecursive(recursive);
     if(value) { // save customized folder view settings
         settings.saveFolderSettings(path(), folderSettings_);
     }
@@ -1005,6 +1008,12 @@ void TabPage::setCustomizedView(bool value) {
         setSortFolderFirst(sortFolderFirst);
         setSortHiddenLast(sortHiddenLast);
         sort(sortColumn, sortOrder);
+    }
+}
+
+void TabPage::goToCustomizedViewSource() {
+    if(const auto inheritedPath = folderSettings_.inheritedPath()) {
+        chdir(inheritedPath);
     }
 }
 

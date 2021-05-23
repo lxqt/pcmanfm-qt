@@ -147,6 +147,8 @@ protected Q_SLOTS:
     void on_actionShowThumbnails_triggered(bool check);
     void on_actionSplitView_triggered(bool check);
     void on_actionPreserveView_triggered(bool checked);
+    void on_actionPreserveViewRecursive_triggered(bool checked);
+    void on_actionGoToCustomizedViewSource_triggered();
 
     void on_actionByFileName_triggered(bool checked);
     void on_actionByMTime_triggered(bool checked);
