@@ -987,27 +987,31 @@ void TabPage::setCustomizedView(bool value, bool recursive) {
     }
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    folderSettings_.setCustomized(value);
-    folderSettings_.setRecursive(recursive);
     if(value) { // save customized folder view settings
+        folderSettings_.setCustomized(value);
+        folderSettings_.setRecursive(recursive);
         settings.saveFolderSettings(path(), folderSettings_);
     }
-    else { // use default folder view settings
+    else { // use default or inherited folder view settings
         settings.clearFolderSettings(path());
+        // get folderSettings_ again because, although it isn't customized, it may be inherited
+        folderSettings_ = settings.loadFolderSettings(path());
         // settings may change temporarily by connecting to the signal TabPage::sortFilterChanged,
         // which will be emitted below (that happens in MainWindow::onTabPageSortFilterChanged,
         // for example), so we should remember its relevant values before proceeding
-        bool showHidden = settings.showHidden();
-        bool sortCaseSensitive = settings.sortCaseSensitive();
-        bool sortFolderFirst = settings.sortFolderFirst();
-        bool sortHiddenLast = settings.sortHiddenLast();
-        Fm::FolderModel::ColumnId sortColumn = settings.sortColumn();
-        Qt::SortOrder sortOrder = settings.sortOrder();
+        bool showHidden = folderSettings_.showHidden();
+        bool sortCaseSensitive = folderSettings_.sortCaseSensitive();
+        bool sortFolderFirst = folderSettings_.sortFolderFirst();
+        bool sortHiddenLast = folderSettings_.sortHiddenLast();
+        Fm::FolderModel::ColumnId sortColumn = folderSettings_.sortColumn();
+        Qt::SortOrder sortOrder = folderSettings_.sortOrder();
+        Fm::FolderView::ViewMode viewMode = folderSettings_.viewMode();
         setShowHidden(showHidden);
         setSortCaseSensitive(sortCaseSensitive);
         setSortFolderFirst(sortFolderFirst);
         setSortHiddenLast(sortHiddenLast);
         sort(sortColumn, sortOrder);
+        setViewMode(viewMode);
     }
 }
 
