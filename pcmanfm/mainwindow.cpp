@@ -1570,7 +1570,7 @@ void MainWindow::onTabPageSortFilterChanged() { // NOTE: This may be called from
     TabPage* tabPage = static_cast<TabPage*>(sender());
     if(tabPage == currentPage()) {
         updateViewMenuForCurrentPage();
-        if(!tabPage->hasCustomizedView()) { // remember sort settings globally
+        if(!tabPage->hasCustomizedView() && !tabPage->hasInheritedCustomizedView()) { // remember sort settings globally
             Settings& settings = static_cast<Application*>(qApp)->settings();
             settings.setSortColumn(static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn()));
             settings.setSortOrder(tabPage->sortOrder());
