@@ -44,12 +44,27 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation></translation>
+        <translation>PCManFM-Qt File Manager
+
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+이 프로그램은 무료 소프트웨어입니다; Free Software Foundation에서 
+발행한 GNU General Public License 조건에 따라 재배포 및/또는 
+수정할 수 있습니다; e라이센스 버전 2 또는 (선택사항에 따라) 
+최신 버전을 선택합니다.
+
+이 프로그램은 유용할 것이라는 희망으로 배포되지만 어떠한 보증도 
+없습니다; 상품성 또는 특정 목적에의 적합성에 대한 묵시적 보증도 
+없습니다. 자세한 내용은 GNU General Public License를 참조하십시오.
+
+이 프로그램과 함께 GNU General Public License 사본을 받았어야 합니다; 
+그렇지 않다면, Free Software Foundation, Inc., 51 Franklin Street, 
+Fifth Floor, Boston, MA  02110-1301, USA로 편지를 쓰세요.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="82"/>
         <source>Authors</source>
-        <translation>제작</translation>
+        <translation>작성자</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -97,12 +112,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished">전체 이름 바꾸기</translation>
+        <translation>일괄 이름 변경</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation>#은 다음으로 시작하는 숫자로 대체됨:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
@@ -163,7 +178,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">런쳐 만들기</translation>
+        <translation>시작 프로그램 만들기</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
@@ -173,12 +188,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished">설명:</translation>
+        <translation>설명:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished">주석:</translation>
+        <translation>주석:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
@@ -352,7 +367,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="142"/>
         <source>Minimum item margins:</source>
-        <translation>최소 항목간 간격</translation>
+        <translation>최소 항목 여백:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="149"/>
@@ -386,12 +401,13 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>기본적으로 데스크톱 폴더는 기본 파일 관리자가 아닌 경우에도 
+PCManFM-Qt에서 열립니다.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>마우스 왼쪽 버튼을 눌러 기본 파일 관리자에서 데스크톱 폴더 열기</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -431,7 +447,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="407"/>
         <source> hour(s)</source>
-        <translation>시간</translation>
+        <translation> 시간</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
@@ -451,12 +467,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="440"/>
         <source> minute(s)</source>
-        <translation>분</translation>
+        <translation> 분</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="466"/>
         <source>Wallpaper folder</source>
-        <translation type="unfinished">배경 화면 폴더</translation>
+        <translation>배경화면 폴더</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="489"/>
@@ -509,7 +525,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>동작</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
@@ -519,7 +535,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>초점 보기, 필터 표시줄 지우기</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -529,7 +545,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>초점 사이드 창</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -540,7 +556,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>초점 경로 항목</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -623,7 +639,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>임시 필터 막대에 붙여넣기</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -683,7 +699,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="211"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>도구(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="270"/>
@@ -883,7 +899,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>작성 시간별(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
@@ -923,7 +939,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="683"/>
@@ -948,7 +964,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>루트 인스턴스에서 탭 열기(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="731"/>
@@ -1028,13 +1044,13 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>관리 모드에서 탭 열기(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>시작 프로그램 만들기</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
@@ -1079,17 +1095,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="851"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished">경로 버튼(&amp;P)</translation>
+        <translation>경로 버튼(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="856"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished">전체 이름 바꾸기(&amp;B)</translation>
+        <translation>일괄 이름 변경(&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="859"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished">전체 이름 바꾸기</translation>
+        <translation>일괄 이름 변경</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="862"/>
@@ -1319,12 +1335,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;프로필&gt;</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM을 데몬으로 실행</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
@@ -1339,74 +1355,74 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>실행 중인 경우 바탕화면 관리자 끄기</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>지정된 이름으로 페이지에서 데스크톱 기본 설정 대화 상자 열기</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
         <location filename="../application.cpp" line="195"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;이름&gt;</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="183"/>
         <source>Open new window</source>
-        <translation>새 창에서 열기</translation>
+        <translation>새 창 열기</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 찾기 유틸리티 열기</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>이미지 파일에서 바탕화면 월페이퍼 지정하기</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;파일&gt;</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;모드&gt;</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>바탕화면 월페이퍼 모드 설정. 모드=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>지정된 이름의 페이지에서 기본설정 대화상자 열기</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>열 파일 또는 디렉토리</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[파일1, 파일2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="594"/>
         <location filename="../application.cpp" line="599"/>
         <source>Error</source>
-        <translation type="unfinished">오류</translation>
+        <translation>오류</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="599"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>터미널 에뮬레이터가 지정되지 않았습니다.</translation>
     </message>
 </context>
 <context>
@@ -1442,7 +1458,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../connectserverdialog.cpp" line="12"/>
         <source>Secure WebDav</source>
-        <translation></translation>
+        <translation>안전한 WebDav</translation>
     </message>
     <message>
         <location filename="../connectserverdialog.cpp" line="13"/>
@@ -1618,7 +1634,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="139"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>루트 인스턴스</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="698"/>
@@ -1656,7 +1672,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2025"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>사용자 전환 명령이 설정되지 않았습니다.</translation>
     </message>
 </context>
 <context>
@@ -1664,7 +1680,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>아이콘 보기</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
@@ -1674,12 +1690,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>썸네일 보기</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>자세한 목록 보기</translation>
     </message>
 </context>
 <context>
@@ -1713,7 +1729,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../tabpage.cpp" line="726"/>
         <location filename="../tabpage.cpp" line="740"/>
         <source>Link to</source>
-        <translation type="unfinished">연결 경로</translation>
+        <translation>링크:</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="752"/>
@@ -1768,7 +1784,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>동작</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
@@ -1789,7 +1805,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>새로 만든 파일 선택</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1814,7 +1830,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="339"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>측면 창 아이콘 크기:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="271"/>
@@ -1864,7 +1880,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="113"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>기본 보기 모드:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="129"/>
@@ -1874,12 +1890,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>File Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 작업</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="181"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
+        <translation>파일을 삭제하기 전에 확인</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="188"/>
@@ -1889,12 +1905,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="607"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 썸네일 표시</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="614"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>로컬 파일의 썸네일만 표시</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
@@ -1904,18 +1920,18 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>선택하지 않으면 DE 설정이 사용됩니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>자동 선택을 비활성화하려면 0으로 설정합니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>단일 클릭 모드에서 자동 선택 지연:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1980,50 +1996,50 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="352"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>사용자 인터페이스</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="365"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>백업 파일을 숨김으로 처리</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="385"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>숨겨진 파일의 아이콘 표시</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="415"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>아이콘 보기의 최소 항목 여백:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>3 px by default.</source>
-        <translation type="unfinished">3 px 기본값.</translation>
+        <translation>기본적으로 3픽셀입니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="425"/>
         <location filename="../preferences.ui" line="449"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> 픽셀</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="438"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="445"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished">1 xp 기본값
-3줄의 텍스트를 위한 공간도 확보됩니다. {3 ?} {3 ?}</translation>
+        <translation>기본적으로 3픽셀입니다
+3줄의 텍스트를 위한 공간도 확보되어 있습니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="462"/>
         <source>Lock</source>
-        <translation type="unfinished">잠금</translation>
+        <translation>잠금</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="511"/>
