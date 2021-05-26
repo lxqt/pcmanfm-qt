@@ -774,6 +774,7 @@ void MainWindow::on_actionGoUp_triggered() {
     QTimer::singleShot(0, this, [this] {
         if(TabPage* page = currentPage()) {
             page->up();
+            setTabIcon(page);
             updateUIForCurrentPage();
         }
     });
@@ -783,6 +784,7 @@ void MainWindow::on_actionGoBack_triggered() {
     QTimer::singleShot(0, this, [this] {
         if(TabPage* page = currentPage()) {
             page->backward();
+            setTabIcon(page);
             updateUIForCurrentPage();
         }
     });
@@ -792,6 +794,7 @@ void MainWindow::on_actionGoForward_triggered() {
     QTimer::singleShot(0, this, [this] {
         if(TabPage* page = currentPage()) {
             page->forward();
+            setTabIcon(page);
             updateUIForCurrentPage();
         }
     });
@@ -1839,6 +1842,7 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
     if(selectedAction) {
         int index = menu.actions().indexOf(selectedAction);
         page->jumpToHistory(index);
+        setTabIcon(page);
         updateUIForCurrentPage();
     }
 }
