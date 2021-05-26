@@ -259,6 +259,7 @@ private:
     ViewFrame* viewFrameForTabPage(TabPage* page);
     int addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath path = Fm::FilePath());
     void dropTab();
+    void setTabIcon(TabPage* tabPage);
 
 private:
     Ui::MainWindow ui;
