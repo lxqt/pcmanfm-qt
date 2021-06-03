@@ -580,7 +580,7 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished">Ctrl+Shift+Tab</translation>
+        <translation>Ctrl+Shift+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
@@ -607,22 +607,22 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Sari la filă</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Număr</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Backspace</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>Du-te în sus</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
@@ -835,7 +835,7 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="445"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta&amp;ie</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="448"/>
@@ -950,32 +950,32 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="691"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>După Fișier și &amp;Mărime</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="696"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Închide Fereastra</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="699"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Deschide fila în instanță f&amp;Root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="731"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Folder</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="743"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fișier gol</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -985,47 +985,47 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Arată Bara de Filtre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="873"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="881"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>V&amp;edere divizată</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="884"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>Vedere Divizată</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="887"/>
         <source>F6</source>
-        <translation type="unfinished"></translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="892"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Copiază Calea Întreagă</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="895"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="906"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Arată Pictogr&amp;ame</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="909"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Arată Pictograme</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="917"/>
@@ -1035,63 +1035,63 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="920"/>
         <source>F9</source>
-        <translation type="unfinished"></translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="925"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Scurtături Ascunse</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Deschide Filă în modul &amp;Admin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Crează Lansator</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Șterge toate filtrele</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="782"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Închide filele &amp;anterioare</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="791"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Închide filele &amp;următoare</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="830"/>
         <source>&amp;Preserve Settings for This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Păstrează Setările pentru Acest Folder</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Conectează-te la &amp;Server</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="843"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Locație</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="851"/>
@@ -1101,27 +1101,27 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="856"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Redenumire în &amp;Masă</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="859"/>
         <source>Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Redenumire în Masă</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="862"/>
         <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="796"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Închide &amp;alte file</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="762"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Bară de &amp;filtre permanentă</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
@@ -1136,28 +1136,28 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="810"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="819"/>
         <location filename="../main-win.ui" line="822"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Meniu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="590"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filă Nouă</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="593"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Filă Nouă</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="596"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="605"/>
@@ -1172,32 +1172,32 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="611"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="620"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Du-te &amp;Înainte</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="623"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Du-te înainte</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Inversează Selecția</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Șterge</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="646"/>
@@ -1207,27 +1207,27 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Redenumește</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="659"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Î&amp;nchide Fila</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="662"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="667"/>
         <source>File &amp;Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Proprietățile Fișierului</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="670"/>
@@ -1237,52 +1237,52 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="675"/>
         <source>&amp;Folder Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>Proprietățile &amp;Folderului</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="704"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Editează Marcaje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="709"/>
         <source>Open &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Deschide &amp;Terminal-ul</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="712"/>
         <source>F4</source>
-        <translation type="unfinished"></translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="722"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Editează Marcajele</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="734"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="746"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="751"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Găsește Fșiere</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="754"/>
         <source>F3</source>
-        <translation type="unfinished"></translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fișier</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
@@ -1292,7 +1292,7 @@ sunt apăsate  stânga, chiar și atunci când nu este managerul de fișiere imp
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ajutor</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="99"/>
