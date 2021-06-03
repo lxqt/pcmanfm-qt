@@ -165,10 +165,10 @@ bool Application::parseCommandLineArgs() {
     QCommandLineOption profileOption(QStringList() << QStringLiteral("p") << QStringLiteral("profile"), tr("Name of configuration profile"), tr("PROFILE"));
     parser.addOption(profileOption);
 
-    QCommandLineOption daemonOption(QStringList() << QStringLiteral("d") << QStringLiteral("daemon-mode"), tr("Run PCManFM as a daemon"));
+    QCommandLineOption daemonOption(QStringList() << QStringLiteral("d") << QStringLiteral("daemon-mode"), tr("Run PCManFM-Qt as a daemon"));
     parser.addOption(daemonOption);
 
-    QCommandLineOption quitOption(QStringList() << QStringLiteral("q") << QStringLiteral("quit"), tr("Quit PCManFM"));
+    QCommandLineOption quitOption(QStringList() << QStringLiteral("q") << QStringLiteral("quit"), tr("Quit PCManFM-Qt"));
     parser.addOption(quitOption);
 
     QCommandLineOption desktopOption(QStringLiteral("desktop"), tr("Launch desktop manager"));
