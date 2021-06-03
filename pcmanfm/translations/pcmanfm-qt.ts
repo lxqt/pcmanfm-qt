@@ -1319,12 +1319,12 @@ are left clicked, even when it is not the default file manager.</source>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
-        <source>Run PCManFM-Qt as a daemon</source>
+        <source>Run PCManFM as a daemon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
-        <source>Quit PCManFM-Qt</source>
+        <source>Quit PCManFM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
