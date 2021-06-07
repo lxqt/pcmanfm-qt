@@ -683,27 +683,27 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>ファイルマネージャー</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="273"/>
+        <location filename="../main-win.ui" line="281"/>
         <source>Go Up</source>
         <translation>上へ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="276"/>
+        <location filename="../main-win.ui" line="284"/>
         <source>Alt+Up</source>
         <translation>Alt+Up</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="288"/>
+        <location filename="../main-win.ui" line="296"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="404"/>
+        <location filename="../main-win.ui" line="412"/>
         <source>Reload</source>
         <translation>再読み込み</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="300"/>
+        <location filename="../main-win.ui" line="308"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
@@ -723,179 +723,189 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>フィルター(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="211"/>
+        <location filename="../main-win.ui" line="154"/>
+        <source>Customized View Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="219"/>
         <source>&amp;Tools</source>
         <translation>ツール(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="285"/>
+        <location filename="../main-win.ui" line="293"/>
         <source>&amp;Home</source>
         <translation>ホーム(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="297"/>
+        <location filename="../main-win.ui" line="305"/>
         <source>&amp;Reload</source>
         <translation>再読み込み(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="309"/>
+        <location filename="../main-win.ui" line="317"/>
         <source>Go</source>
         <translation>開く</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="318"/>
+        <location filename="../main-win.ui" line="326"/>
         <source>Quit</source>
         <translation>終了</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="327"/>
+        <location filename="../main-win.ui" line="335"/>
         <source>&amp;About</source>
         <translation>このアプリケーションについて(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="339"/>
+        <location filename="../main-win.ui" line="347"/>
         <source>New Window</source>
         <translation>新しいウィンドウ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="342"/>
+        <location filename="../main-win.ui" line="350"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="350"/>
+        <location filename="../main-win.ui" line="358"/>
         <source>Show &amp;Hidden</source>
         <translation>隠しファイルの表示(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="353"/>
+        <location filename="../main-win.ui" line="361"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="362"/>
+        <location filename="../main-win.ui" line="370"/>
         <source>&amp;Computer</source>
         <translation>コンピューター(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="371"/>
+        <location filename="../main-win.ui" line="379"/>
         <source>&amp;Trash</source>
         <translation>ゴミ箱(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="376"/>
+        <location filename="../main-win.ui" line="384"/>
         <source>&amp;Network</source>
         <translation>ネットワーク(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="385"/>
+        <location filename="../main-win.ui" line="393"/>
         <source>&amp;Desktop</source>
         <translation>デスクトップ(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="394"/>
+        <location filename="../main-win.ui" line="402"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>ブックマークに追加(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="399"/>
+        <location filename="../main-win.ui" line="407"/>
         <source>&amp;Applications</source>
         <translation>アプリケーション(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="448"/>
+        <location filename="../main-win.ui" line="456"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="457"/>
+        <location filename="../main-win.ui" line="465"/>
         <source>&amp;Copy</source>
         <translation>コピー(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="460"/>
+        <location filename="../main-win.ui" line="468"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="469"/>
+        <location filename="../main-win.ui" line="477"/>
         <source>&amp;Paste</source>
         <translation>貼り付け(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="472"/>
+        <location filename="../main-win.ui" line="480"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="477"/>
+        <location filename="../main-win.ui" line="485"/>
         <source>Select &amp;All</source>
         <translation>すべて選択(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="485"/>
+        <location filename="../main-win.ui" line="493"/>
         <source>Pr&amp;eferences</source>
         <translation>設定(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="493"/>
+        <location filename="../main-win.ui" line="501"/>
         <source>&amp;Ascending</source>
         <translation>昇順(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="501"/>
+        <location filename="../main-win.ui" line="509"/>
         <source>&amp;Descending</source>
         <translation>降順(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="509"/>
+        <location filename="../main-win.ui" line="517"/>
         <source>&amp;By File Name</source>
         <translation>名前順(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="517"/>
+        <location filename="../main-win.ui" line="525"/>
         <source>By &amp;Modification Time</source>
         <translation>更新日時順(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="525"/>
+        <location filename="../main-win.ui" line="533"/>
         <source>By C&amp;reation Time</source>
         <translation>作成日時順(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="533"/>
+        <location filename="../main-win.ui" line="541"/>
         <source>By Deletio&amp;n Time</source>
         <translation>削除日時順(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="541"/>
+        <location filename="../main-win.ui" line="549"/>
         <source>By File &amp;Type</source>
         <translation>種類順(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="549"/>
+        <location filename="../main-win.ui" line="557"/>
         <source>By &amp;Owner</source>
         <translation>作者順(&amp;O)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="557"/>
+        <location filename="../main-win.ui" line="565"/>
         <source>By &amp;Group</source>
         <translation>グループ順(&amp;G)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="565"/>
+        <location filename="../main-win.ui" line="573"/>
         <source>&amp;Folder First</source>
         <translation>フォルダーを最初に(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="573"/>
+        <location filename="../main-win.ui" line="581"/>
         <source>&amp;Hidden Last</source>
         <translation>隠しファイルを最後に(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="581"/>
-        <source>&amp;Preserve sorting for this folder</source>
-        <translation>このフォルダーのソートを保存(&amp;P)</translation>
+        <location filename="../main-win.ui" line="946"/>
+        <source>Preserve Settings Recursively from Here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="951"/>
+        <source>Go to Source of Inherited Settings</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
@@ -1105,42 +1115,42 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>メニュー</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="480"/>
+        <location filename="../main-win.ui" line="488"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="270"/>
+        <location filename="../main-win.ui" line="278"/>
         <source>Go &amp;Up</source>
         <translation>上へ(&amp;U)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="336"/>
+        <location filename="../main-win.ui" line="344"/>
         <source>&amp;New Window</source>
         <translation>新しいウィンドウ(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="412"/>
+        <location filename="../main-win.ui" line="420"/>
         <source>&amp;Icon View</source>
         <translation>アイコン表示(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="420"/>
+        <location filename="../main-win.ui" line="428"/>
         <source>&amp;Compact View</source>
         <translation>コンパクト表示(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="428"/>
+        <location filename="../main-win.ui" line="436"/>
         <source>&amp;Detailed List</source>
         <translation>詳細リスト表示(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="436"/>
+        <location filename="../main-win.ui" line="444"/>
         <source>&amp;Thumbnail View</source>
         <translation>サムネイル表示(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="445"/>
+        <location filename="../main-win.ui" line="453"/>
         <source>Cu&amp;t</source>
         <translation>切り取り(&amp;T)</translation>
     </message>
@@ -1240,7 +1250,7 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>ソート(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="236"/>
+        <location filename="../main-win.ui" line="244"/>
         <source>Main Toolbar</source>
         <translation>メインツールバー</translation>
     </message>
@@ -1311,17 +1321,17 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>表示(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="169"/>
+        <location filename="../main-win.ui" line="177"/>
         <source>&amp;Edit</source>
         <translation>編集(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="187"/>
+        <location filename="../main-win.ui" line="195"/>
         <source>&amp;Bookmarks</source>
         <translation>ブックマーク(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="194"/>
+        <location filename="../main-win.ui" line="202"/>
         <source>&amp;Go</source>
         <translation>移動(&amp;G)</translation>
     </message>
@@ -1337,16 +1347,6 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../application.cpp" line="165"/>
         <source>PROFILE</source>
         <translation>PROFILE</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="168"/>
-        <source>Run PCManFM as a daemon</source>
-        <translation>PCManFM をデーモンとして実行する</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="171"/>
-        <source>Quit PCManFM</source>
-        <translation>PCManFM を終了する</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1393,6 +1393,16 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../application.cpp" line="183"/>
         <source>Open new window</source>
         <translation>新しいウィンドウを開く</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="168"/>
+        <source>Run PCManFM-Qt as a daemon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="171"/>
+        <source>Quit PCManFM-Qt</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
@@ -1495,12 +1505,12 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>画像 (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="85"/>
+        <location filename="../desktopentrydialog.cpp" line="81"/>
         <source>Select an executable file</source>
         <translation>実行可能ファイルの選択</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="93"/>
+        <location filename="../desktopentrydialog.cpp" line="89"/>
         <source>Select a file</source>
         <translation>ファイルの選択</translation>
     </message>
@@ -1638,40 +1648,40 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Root 権限 インスタンス</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="698"/>
+        <location filename="../mainwindow.cpp" line="713"/>
         <source>Hide menu bar</source>
         <translation>メニューバーを隠す</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="714"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>メニューバーが完全に隠れますので、再表示するには Ctrl+M を使用して下さい。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1052"/>
+        <location filename="../mainwindow.cpp" line="1086"/>
         <source>Version: %1</source>
         <translation>バージョン: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1949"/>
+        <location filename="../mainwindow.cpp" line="2029"/>
         <source>&amp;Move to Trash</source>
         <translation>ゴミ箱へ移動(&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1949"/>
+        <location filename="../mainwindow.cpp" line="2029"/>
         <source>&amp;Delete</source>
         <translation>削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2017"/>
-        <location filename="../mainwindow.cpp" line="2025"/>
+        <location filename="../mainwindow.cpp" line="2097"/>
+        <location filename="../mainwindow.cpp" line="2105"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2025"/>
+        <location filename="../mainwindow.cpp" line="2105"/>
         <source>Switch user command is not set.</source>
         <translation>ユーザー切り替えのコマンドが設定されていません。</translation>
     </message>
@@ -1702,38 +1712,38 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="499"/>
+        <location filename="../tabpage.cpp" line="506"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="508"/>
+        <location filename="../tabpage.cpp" line="515"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>空き容量: %1 (全体: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="525"/>
+        <location filename="../tabpage.cpp" line="532"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n 個のアイテム</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="527"/>
+        <location filename="../tabpage.cpp" line="534"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n 個の隠しアイテム)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="532"/>
-        <location filename="../tabpage.cpp" line="726"/>
-        <location filename="../tabpage.cpp" line="740"/>
+        <location filename="../tabpage.cpp" line="539"/>
+        <location filename="../tabpage.cpp" line="735"/>
+        <location filename="../tabpage.cpp" line="749"/>
         <source>Link to</source>
         <translation>リンク先</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="752"/>
+        <location filename="../tabpage.cpp" line="761"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n 個のアイテムを選択しています</numerusform>
@@ -2251,7 +2261,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1055"/>
+        <location filename="../tabpage.cpp" line="1077"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
@@ -2266,7 +2276,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>一部のファイルは名前を変更できませんでした。</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1055"/>
+        <location filename="../tabpage.cpp" line="1077"/>
         <source>Cannot open as Admin.</source>
         <translation>管理者として開けません。</translation>
     </message>

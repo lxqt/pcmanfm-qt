@@ -681,244 +681,254 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>&amp;Filtrering</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="211"/>
+        <location filename="../main-win.ui" line="154"/>
+        <source>Customized View Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="219"/>
         <source>&amp;Tools</source>
         <translation>&amp;Verktyg</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="270"/>
+        <location filename="../main-win.ui" line="278"/>
         <source>Go &amp;Up</source>
         <translation>Gå &amp;Upp</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="273"/>
+        <location filename="../main-win.ui" line="281"/>
         <source>Go Up</source>
         <translation>Gå upp</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="276"/>
+        <location filename="../main-win.ui" line="284"/>
         <source>Alt+Up</source>
         <translation>Alt+Pil upp</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="285"/>
+        <location filename="../main-win.ui" line="293"/>
         <source>&amp;Home</source>
         <translation>&amp;Hem</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="288"/>
+        <location filename="../main-win.ui" line="296"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="297"/>
+        <location filename="../main-win.ui" line="305"/>
         <source>&amp;Reload</source>
         <translation>&amp;Uppdatera</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="300"/>
+        <location filename="../main-win.ui" line="308"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="309"/>
+        <location filename="../main-win.ui" line="317"/>
         <source>Go</source>
         <translation>Gå</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="318"/>
+        <location filename="../main-win.ui" line="326"/>
         <source>Quit</source>
         <translation>Avsluta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="327"/>
+        <location filename="../main-win.ui" line="335"/>
         <source>&amp;About</source>
         <translation>&amp;Om</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="336"/>
+        <location filename="../main-win.ui" line="344"/>
         <source>&amp;New Window</source>
         <translation>&amp;Nytt fönster</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="339"/>
+        <location filename="../main-win.ui" line="347"/>
         <source>New Window</source>
         <translation>Nytt fönster</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="342"/>
+        <location filename="../main-win.ui" line="350"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="350"/>
+        <location filename="../main-win.ui" line="358"/>
         <source>Show &amp;Hidden</source>
         <translation>Visa &amp;Dölj</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="353"/>
+        <location filename="../main-win.ui" line="361"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="362"/>
+        <location filename="../main-win.ui" line="370"/>
         <source>&amp;Computer</source>
         <translation>&amp;Dator</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="371"/>
+        <location filename="../main-win.ui" line="379"/>
         <source>&amp;Trash</source>
         <translation>&amp;Papperskorg</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="376"/>
+        <location filename="../main-win.ui" line="384"/>
         <source>&amp;Network</source>
         <translation>&amp;Nätverk</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="385"/>
+        <location filename="../main-win.ui" line="393"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Skrivbord</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="394"/>
+        <location filename="../main-win.ui" line="402"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Lägg till bokmärken</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="399"/>
+        <location filename="../main-win.ui" line="407"/>
         <source>&amp;Applications</source>
         <translation>&amp;Program</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="404"/>
+        <location filename="../main-win.ui" line="412"/>
         <source>Reload</source>
         <translation>Uppdatera</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="412"/>
+        <location filename="../main-win.ui" line="420"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Ikonvy</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="420"/>
+        <location filename="../main-win.ui" line="428"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Kompaktvy</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="428"/>
+        <location filename="../main-win.ui" line="436"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Detaljerad lista</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="436"/>
+        <location filename="../main-win.ui" line="444"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Tumnagelvy</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="445"/>
+        <location filename="../main-win.ui" line="453"/>
         <source>Cu&amp;t</source>
         <translation>Kl&amp;ipp ut</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="448"/>
+        <location filename="../main-win.ui" line="456"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="457"/>
+        <location filename="../main-win.ui" line="465"/>
         <source>&amp;Copy</source>
         <translation>&amp;Kopiera</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="460"/>
+        <location filename="../main-win.ui" line="468"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="469"/>
+        <location filename="../main-win.ui" line="477"/>
         <source>&amp;Paste</source>
         <translation>&amp;Klistra in</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="472"/>
+        <location filename="../main-win.ui" line="480"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="477"/>
+        <location filename="../main-win.ui" line="485"/>
         <source>Select &amp;All</source>
         <translation>Markera &amp;allt</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="480"/>
+        <location filename="../main-win.ui" line="488"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="485"/>
+        <location filename="../main-win.ui" line="493"/>
         <source>Pr&amp;eferences</source>
         <translation>In&amp;ställningar</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="493"/>
+        <location filename="../main-win.ui" line="501"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Fallande</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="501"/>
+        <location filename="../main-win.ui" line="509"/>
         <source>&amp;Descending</source>
         <translation>&amp;Fallande</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="509"/>
+        <location filename="../main-win.ui" line="517"/>
         <source>&amp;By File Name</source>
         <translation>&amp;Av filnamn</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="517"/>
+        <location filename="../main-win.ui" line="525"/>
         <source>By &amp;Modification Time</source>
         <translation>Av &amp;Senast ändrad</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="525"/>
+        <location filename="../main-win.ui" line="533"/>
         <source>By C&amp;reation Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="533"/>
+        <location filename="../main-win.ui" line="541"/>
         <source>By Deletio&amp;n Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="541"/>
+        <location filename="../main-win.ui" line="549"/>
         <source>By File &amp;Type</source>
         <translation>Efter Fil &amp;typ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="549"/>
+        <location filename="../main-win.ui" line="557"/>
         <source>By &amp;Owner</source>
         <translation>Efter &amp;Ägare</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="557"/>
+        <location filename="../main-win.ui" line="565"/>
         <source>By &amp;Group</source>
         <translation>Efter &amp;Grupp</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="565"/>
+        <location filename="../main-win.ui" line="573"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Mappar först</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="573"/>
+        <location filename="../main-win.ui" line="581"/>
         <source>&amp;Hidden Last</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="581"/>
-        <source>&amp;Preserve sorting for this folder</source>
-        <translation>&amp;Bevara sortering för den här mappen</translation>
+        <location filename="../main-win.ui" line="946"/>
+        <source>Preserve Settings Recursively from Here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="951"/>
+        <source>Go to Source of Inherited Settings</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -1289,22 +1299,22 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>&amp;Sortera</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="169"/>
+        <location filename="../main-win.ui" line="177"/>
         <source>&amp;Edit</source>
         <translation>&amp;Redigera</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="187"/>
+        <location filename="../main-win.ui" line="195"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Bokmärken</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="194"/>
+        <location filename="../main-win.ui" line="202"/>
         <source>&amp;Go</source>
         <translation>&amp;Gå</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="236"/>
+        <location filename="../main-win.ui" line="244"/>
         <source>Main Toolbar</source>
         <translation>Huvudverktygsfält</translation>
     </message>
@@ -1323,13 +1333,13 @@ are left clicked, even when it is not the default file manager.</source>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
-        <source>Run PCManFM as a daemon</source>
-        <translation>Kör PCManFM som en daemon</translation>
+        <source>Run PCManFM-Qt as a daemon</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
-        <source>Quit PCManFM</source>
-        <translation>Avsluta PCManFM</translation>
+        <source>Quit PCManFM-Qt</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1478,12 +1488,12 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Bilder (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="85"/>
+        <location filename="../desktopentrydialog.cpp" line="81"/>
         <source>Select an executable file</source>
         <translation>Välj en exekverbar fil</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="93"/>
+        <location filename="../desktopentrydialog.cpp" line="89"/>
         <source>Select a file</source>
         <translation>Välj en fil</translation>
     </message>
@@ -1622,40 +1632,40 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Root instans</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="698"/>
+        <location filename="../mainwindow.cpp" line="713"/>
         <source>Hide menu bar</source>
         <translation>Dölj menyrad</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="714"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Detta döljer menyraden helt, använd Ctrl+M för att visa den igen.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1052"/>
+        <location filename="../mainwindow.cpp" line="1086"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1949"/>
+        <location filename="../mainwindow.cpp" line="2029"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Flytta till papperskorg</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1949"/>
+        <location filename="../mainwindow.cpp" line="2029"/>
         <source>&amp;Delete</source>
         <translation>&amp;Ta bort</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2017"/>
-        <location filename="../mainwindow.cpp" line="2025"/>
+        <location filename="../mainwindow.cpp" line="2097"/>
+        <location filename="../mainwindow.cpp" line="2105"/>
         <source>Error</source>
         <translation>Fel</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2025"/>
+        <location filename="../mainwindow.cpp" line="2105"/>
         <source>Switch user command is not set.</source>
         <translation>Byta användarkommandon är inte inställt.</translation>
     </message>
@@ -1686,17 +1696,17 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="499"/>
+        <location filename="../tabpage.cpp" line="506"/>
         <source>Error</source>
         <translation>Fel</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="508"/>
+        <location filename="../tabpage.cpp" line="515"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Ledigt utrymme: %1 (totalt:%2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="525"/>
+        <location filename="../tabpage.cpp" line="532"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n objekt</numerusform>
@@ -1704,7 +1714,7 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="527"/>
+        <location filename="../tabpage.cpp" line="534"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n dold)</numerusform>
@@ -1712,14 +1722,14 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="532"/>
-        <location filename="../tabpage.cpp" line="726"/>
-        <location filename="../tabpage.cpp" line="740"/>
+        <location filename="../tabpage.cpp" line="539"/>
+        <location filename="../tabpage.cpp" line="735"/>
+        <location filename="../tabpage.cpp" line="749"/>
         <source>Link to</source>
         <translation>Länk till</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="752"/>
+        <location filename="../tabpage.cpp" line="761"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n objekt vald</numerusform>
@@ -2234,7 +2244,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1055"/>
+        <location filename="../tabpage.cpp" line="1077"/>
         <source>Error</source>
         <translation>Fel</translation>
     </message>
@@ -2249,7 +2259,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>Vissa filer kunde inte döpas om.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1055"/>
+        <location filename="../tabpage.cpp" line="1077"/>
         <source>Cannot open as Admin.</source>
         <translation>Kunde inte öppna som Admin.</translation>
     </message>

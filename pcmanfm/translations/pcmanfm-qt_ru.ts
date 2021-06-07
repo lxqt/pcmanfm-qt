@@ -737,259 +737,269 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>&amp;Фильтр</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="169"/>
+        <location filename="../main-win.ui" line="154"/>
+        <source>Customized View Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="177"/>
         <source>&amp;Edit</source>
         <translation>&amp;Правка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="187"/>
+        <location filename="../main-win.ui" line="195"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Закладки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="194"/>
+        <location filename="../main-win.ui" line="202"/>
         <source>&amp;Go</source>
         <translation>&amp;Перейти</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="236"/>
+        <location filename="../main-win.ui" line="244"/>
         <source>Main Toolbar</source>
         <translation>Панель инструментов</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="270"/>
+        <location filename="../main-win.ui" line="278"/>
         <source>Go &amp;Up</source>
         <translation>Перейти вв&amp;ерх</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="273"/>
+        <location filename="../main-win.ui" line="281"/>
         <source>Go Up</source>
         <translation>Перейти вверх</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="276"/>
+        <location filename="../main-win.ui" line="284"/>
         <source>Alt+Up</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="285"/>
+        <location filename="../main-win.ui" line="293"/>
         <source>&amp;Home</source>
         <translation>&amp;Домой</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="288"/>
+        <location filename="../main-win.ui" line="296"/>
         <source>Alt+Home</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="297"/>
+        <location filename="../main-win.ui" line="305"/>
         <source>&amp;Reload</source>
         <translation>&amp;Обновить</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="300"/>
+        <location filename="../main-win.ui" line="308"/>
         <source>F5</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="309"/>
+        <location filename="../main-win.ui" line="317"/>
         <source>Go</source>
         <translation>Перейти</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="318"/>
+        <location filename="../main-win.ui" line="326"/>
         <source>Quit</source>
         <translation>Выход</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="327"/>
+        <location filename="../main-win.ui" line="335"/>
         <source>&amp;About</source>
         <translation>&amp;О программе</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="336"/>
+        <location filename="../main-win.ui" line="344"/>
         <source>&amp;New Window</source>
         <translation>&amp;Новое окно</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="339"/>
+        <location filename="../main-win.ui" line="347"/>
         <source>New Window</source>
         <translation>Новое окно</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="342"/>
+        <location filename="../main-win.ui" line="350"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="350"/>
+        <location filename="../main-win.ui" line="358"/>
         <source>Show &amp;Hidden</source>
         <translation>Показать &amp;скрытые</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="353"/>
+        <location filename="../main-win.ui" line="361"/>
         <source>Ctrl+H</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="362"/>
+        <location filename="../main-win.ui" line="370"/>
         <source>&amp;Computer</source>
         <translation>&amp;Компьютер</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="371"/>
+        <location filename="../main-win.ui" line="379"/>
         <source>&amp;Trash</source>
         <translation>&amp;Корзина</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="376"/>
+        <location filename="../main-win.ui" line="384"/>
         <source>&amp;Network</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="385"/>
+        <location filename="../main-win.ui" line="393"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Рабочий стол</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="394"/>
+        <location filename="../main-win.ui" line="402"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Добавить в закладки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="399"/>
+        <location filename="../main-win.ui" line="407"/>
         <source>&amp;Applications</source>
         <translation>&amp;Приложения</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="404"/>
+        <location filename="../main-win.ui" line="412"/>
         <source>Reload</source>
         <translation>Обновить</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="412"/>
+        <location filename="../main-win.ui" line="420"/>
         <source>&amp;Icon View</source>
         <translation>Просмотр &amp;значками</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="420"/>
+        <location filename="../main-win.ui" line="428"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Компактный просмотр</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="428"/>
+        <location filename="../main-win.ui" line="436"/>
         <source>&amp;Detailed List</source>
         <translation>Просмотр &amp;подробным списком</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="436"/>
+        <location filename="../main-win.ui" line="444"/>
         <source>&amp;Thumbnail View</source>
         <translation>Просмотр &amp;эскизами</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="445"/>
+        <location filename="../main-win.ui" line="453"/>
         <source>Cu&amp;t</source>
         <translation>&amp;Вырезать</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="448"/>
+        <location filename="../main-win.ui" line="456"/>
         <source>Ctrl+X</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="457"/>
+        <location filename="../main-win.ui" line="465"/>
         <source>&amp;Copy</source>
         <translation>&amp;Копировать</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="460"/>
+        <location filename="../main-win.ui" line="468"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="469"/>
+        <location filename="../main-win.ui" line="477"/>
         <source>&amp;Paste</source>
         <translation>&amp;Вставить</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="472"/>
+        <location filename="../main-win.ui" line="480"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="477"/>
+        <location filename="../main-win.ui" line="485"/>
         <source>Select &amp;All</source>
         <translation>Выделить &amp;всё</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="480"/>
+        <location filename="../main-win.ui" line="488"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="485"/>
+        <location filename="../main-win.ui" line="493"/>
         <source>Pr&amp;eferences</source>
         <translation>&amp;Настройки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="493"/>
+        <location filename="../main-win.ui" line="501"/>
         <source>&amp;Ascending</source>
         <translation>По &amp;возрастанию</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="501"/>
+        <location filename="../main-win.ui" line="509"/>
         <source>&amp;Descending</source>
         <translation>По &amp;убыванию</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="509"/>
+        <location filename="../main-win.ui" line="517"/>
         <source>&amp;By File Name</source>
         <translation>&amp;По имени файла</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="517"/>
+        <location filename="../main-win.ui" line="525"/>
         <source>By &amp;Modification Time</source>
         <translation>По времени &amp;изменения</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="525"/>
+        <location filename="../main-win.ui" line="533"/>
         <source>By C&amp;reation Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="533"/>
+        <location filename="../main-win.ui" line="541"/>
         <source>By Deletio&amp;n Time</source>
         <translation>По времени &amp;удаления</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="541"/>
+        <location filename="../main-win.ui" line="549"/>
         <source>By File &amp;Type</source>
         <translation>По &amp;типу файла</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="549"/>
+        <location filename="../main-win.ui" line="557"/>
         <source>By &amp;Owner</source>
         <translation>По &amp;владельцу</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="557"/>
+        <location filename="../main-win.ui" line="565"/>
         <source>By &amp;Group</source>
         <translation>По &amp;группе</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="565"/>
+        <location filename="../main-win.ui" line="573"/>
         <source>&amp;Folder First</source>
         <translation>Сначала &amp;папки</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="573"/>
+        <location filename="../main-win.ui" line="581"/>
         <source>&amp;Hidden Last</source>
         <translation>Скр&amp;ытые элементы в конце</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="581"/>
-        <source>&amp;Preserve sorting for this folder</source>
-        <translation>&amp;Сохранять сортировку для этой папки</translation>
+        <location filename="../main-win.ui" line="946"/>
+        <source>Preserve Settings Recursively from Here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="951"/>
+        <source>Go to Source of Inherited Settings</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -1214,7 +1224,7 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Новая &amp;вкладка</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="211"/>
+        <location filename="../main-win.ui" line="219"/>
         <source>&amp;Tools</source>
         <translation>&amp;Инструменты</translation>
     </message>
@@ -1342,16 +1352,6 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>ПРОФИЛЬ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
-        <source>Run PCManFM as a daemon</source>
-        <translation>Запустить PCManFM как демон</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="171"/>
-        <source>Quit PCManFM</source>
-        <translation>Выйти из PCManFM</translation>
-    </message>
-    <message>
         <location filename="../application.cpp" line="174"/>
         <source>Launch desktop manager</source>
         <translation>Запустить менеджер рабочего стола</translation>
@@ -1396,6 +1396,16 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../application.cpp" line="183"/>
         <source>Open new window</source>
         <translation>Открыть новое окно</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="168"/>
+        <source>Run PCManFM-Qt as a daemon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="171"/>
+        <source>Quit PCManFM-Qt</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
@@ -1498,12 +1508,12 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Изображения (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="85"/>
+        <location filename="../desktopentrydialog.cpp" line="81"/>
         <source>Select an executable file</source>
         <translation>Выберите исполняемый файл</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="93"/>
+        <location filename="../desktopentrydialog.cpp" line="89"/>
         <source>Select a file</source>
         <translation>Выберите файл</translation>
     </message>
@@ -1643,40 +1653,40 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Запущено от root</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="698"/>
+        <location filename="../mainwindow.cpp" line="713"/>
         <source>Hide menu bar</source>
         <translation>Скрыть панель меню</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="714"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Полностью скрыть панель меню; нажмите Ctrl+M, чтобы вернуть ее.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1052"/>
+        <location filename="../mainwindow.cpp" line="1086"/>
         <source>Version: %1</source>
         <translation>Версия: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1949"/>
+        <location filename="../mainwindow.cpp" line="2029"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Переместить в корзину</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1949"/>
+        <location filename="../mainwindow.cpp" line="2029"/>
         <source>&amp;Delete</source>
         <translation>&amp;Удалить</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2017"/>
-        <location filename="../mainwindow.cpp" line="2025"/>
+        <location filename="../mainwindow.cpp" line="2097"/>
+        <location filename="../mainwindow.cpp" line="2105"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2025"/>
+        <location filename="../mainwindow.cpp" line="2105"/>
         <source>Switch user command is not set.</source>
         <translation>Команда переключения пользователя не задана.</translation>
     </message>
@@ -1707,17 +1717,17 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="499"/>
+        <location filename="../tabpage.cpp" line="506"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="508"/>
+        <location filename="../tabpage.cpp" line="515"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Свободное место: %1 (всего: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="525"/>
+        <location filename="../tabpage.cpp" line="532"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n объект</numerusform>
@@ -1726,7 +1736,7 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="527"/>
+        <location filename="../tabpage.cpp" line="534"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n скрыт)</numerusform>
@@ -1735,14 +1745,14 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="532"/>
-        <location filename="../tabpage.cpp" line="726"/>
-        <location filename="../tabpage.cpp" line="740"/>
+        <location filename="../tabpage.cpp" line="539"/>
+        <location filename="../tabpage.cpp" line="735"/>
+        <location filename="../tabpage.cpp" line="749"/>
         <source>Link to</source>
         <translation>Ссылка на</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="752"/>
+        <location filename="../tabpage.cpp" line="761"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n объект выделен</numerusform>
@@ -2264,7 +2274,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1055"/>
+        <location filename="../tabpage.cpp" line="1077"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
@@ -2279,7 +2289,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>Не удалось переименовать некоторые файлы.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1055"/>
+        <location filename="../tabpage.cpp" line="1077"/>
         <source>Cannot open as Admin.</source>
         <translation>Не удается открыть в качестве администратора.</translation>
     </message>
