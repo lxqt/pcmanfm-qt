@@ -742,8 +742,25 @@ void Settings::setTerminal(QString terminalCommand) {
 FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
     FolderSettings settings;
     Fm::FolderConfig cfg(path);
-    if(cfg.isEmpty()) {
-        // the folder is not customized; use the general settings
+    bool customized = !cfg.isEmpty();
+    Fm::FilePath inheritedPath;
+    if(!customized) {
+        inheritedPath = path.parent();
+        while(inheritedPath.isValid()) {
+            Fm::GErrorPtr err;
+            cfg.close(err);
+            cfg.open(inheritedPath);
+            if(!cfg.isEmpty()) {
+                bool recursive;
+                if(cfg.getBoolean("Recursive", &recursive) && recursive) {
+                    break;
+                }
+            }
+            inheritedPath = inheritedPath.parent();
+        }
+    }
+    if(!customized && !inheritedPath.isValid()) {
+        // the folder is not customized and does not inherit settings; use the general settings
         settings.setSortOrder(sortOrder());
         settings.setSortColumn(sortColumn());
         settings.setViewMode(viewMode());
@@ -753,8 +770,13 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
         settings.setSortCaseSensitive(sortCaseSensitive());
     }
     else {
-        // the folder is customized; load folder-specific settings
-        settings.setCustomized(true);
+        // either the folder is customized or it inherits settings; load folder-specific settings
+        if(!inheritedPath.isValid()) {
+            settings.setCustomized(true);
+        }
+        else {
+            settings.seInheritedPath(inheritedPath);
+        }
 
         char* str;
         // load sorting
@@ -796,6 +818,11 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
         if(cfg.getBoolean("SortCaseSensitive", &case_sensitive)) {
             settings.setSortCaseSensitive(case_sensitive);
         }
+
+        bool recursive;
+        if(cfg.getBoolean("Recursive", &recursive)) {
+            settings.setRecursive(recursive);
+        }
     }
     return settings;
 }
@@ -814,6 +841,7 @@ void Settings::saveFolderSettings(const Fm::FilePath& path, const FolderSettings
         cfg.setBoolean("SortFolderFirst", settings.sortFolderFirst());
         cfg.setBoolean("SortHiddenLast", settings.sortHiddenLast());
         cfg.setBoolean("SortCaseSensitive", settings.sortCaseSensitive());
+        cfg.setBoolean("Recursive", settings.recursive());
     }
 }
 

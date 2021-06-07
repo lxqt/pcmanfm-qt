@@ -576,6 +576,7 @@ void MainWindow::chdir(Fm::FilePath path, ViewFrame* viewFrame) {
     QTimer::singleShot(0, viewFrame, [this, path, viewFrame] {
         if(TabPage* page = currentPage(viewFrame)) {
             page->chdir(path, true);
+            setTabIcon(page);
             if(viewFrame == activeViewFrame_) {
                 updateUIForCurrentPage();
             }
@@ -690,6 +691,10 @@ int MainWindow::addTabWithPage(TabPage* page, ViewFrame* viewFrame, Fm::FilePath
     if(!settings.alwaysShowTabs()) {
         viewFrame->getTabBar()->setVisible(viewFrame->getTabBar()->count() > 1);
     }
+
+    // also set tab icon (if the folder is customized)
+    setTabIcon(page);
+
     return index;
 }
 
@@ -769,6 +774,7 @@ void MainWindow::on_actionGoUp_triggered() {
     QTimer::singleShot(0, this, [this] {
         if(TabPage* page = currentPage()) {
             page->up();
+            setTabIcon(page);
             updateUIForCurrentPage();
         }
     });
@@ -778,6 +784,7 @@ void MainWindow::on_actionGoBack_triggered() {
     QTimer::singleShot(0, this, [this] {
         if(TabPage* page = currentPage()) {
             page->backward();
+            setTabIcon(page);
             updateUIForCurrentPage();
         }
     });
@@ -787,6 +794,7 @@ void MainWindow::on_actionGoForward_triggered() {
     QTimer::singleShot(0, this, [this] {
         if(TabPage* page = currentPage()) {
             page->forward();
+            setTabIcon(page);
             updateUIForCurrentPage();
         }
     });
@@ -935,9 +943,29 @@ void MainWindow::on_actionHiddenLast_triggered(bool checked) {
     currentPage()->setSortHiddenLast(checked);
 }
 
-void MainWindow::on_actionPreserveView_triggered(bool /*checked*/) {
+void MainWindow::on_actionPreserveView_triggered(bool checked) {
     TabPage* page = currentPage();
-    page->setCustomizedView(!page->hasCustomizedView());
+    page->setCustomizedView(checked);
+    if(checked) {
+        ui.actionPreserveViewRecursive->setChecked(false);
+    }
+    ui.actionGoToCustomizedViewSource->setVisible(page->hasInheritedCustomizedView());
+    setTabIcon(page);
+}
+
+void MainWindow::on_actionPreserveViewRecursive_triggered(bool checked) {
+    TabPage* page = currentPage();
+    page->setCustomizedView(checked, true);
+    if(checked) {
+        ui.actionPreserveView->setChecked(false);
+    }
+    ui.actionGoToCustomizedViewSource->setVisible(page->hasInheritedCustomizedView());
+    setTabIcon(page);
+}
+
+void MainWindow::on_actionGoToCustomizedViewSource_triggered() {
+    currentPage()->goToCustomizedViewSource();
+    updateUIForCurrentPage();
 }
 
 void MainWindow::on_actionFilter_triggered(bool checked) {
@@ -1083,19 +1111,27 @@ void MainWindow::on_actionHiddenShortcuts_triggered() {
 }
 
 void MainWindow::on_actionIconView_triggered() {
-    currentPage()->setViewMode(Fm::FolderView::IconMode);
+    TabPage* page = currentPage();
+    page->setViewMode(Fm::FolderView::IconMode);
+    setTabIcon(page);
 }
 
 void MainWindow::on_actionCompactView_triggered() {
-    currentPage()->setViewMode(Fm::FolderView::CompactMode);
+    TabPage* page = currentPage();
+    page->setViewMode(Fm::FolderView::CompactMode);
+    setTabIcon(page);
 }
 
 void MainWindow::on_actionDetailedList_triggered() {
-    currentPage()->setViewMode(Fm::FolderView::DetailedListMode);
+    TabPage* page = currentPage();
+    page->setViewMode(Fm::FolderView::DetailedListMode);
+    setTabIcon(page);
 }
 
 void MainWindow::on_actionThumbnailView_triggered() {
-    currentPage()->setViewMode(Fm::FolderView::ThumbnailMode);
+    TabPage* page = currentPage();
+    page->setViewMode(Fm::FolderView::ThumbnailMode);
+    setTabIcon(page);
 }
 
 void MainWindow::onTabBarCloseRequested(int index) {
@@ -1148,7 +1184,8 @@ void MainWindow::onFolderUnmounted() {
                 tabPage->deleteLater();
             }
             else {
-                tabPage->chdir(Fm::FilePath::homeDir(), viewFrame);
+                tabPage->chdir(Fm::FilePath::homeDir(), true);
+                setTabIcon(tabPage);
                 updateUIForCurrentPage();
             }
         }
@@ -1162,7 +1199,8 @@ void MainWindow::onFolderUnmounted() {
                             tabPage->deleteLater();
                         }
                         else {
-                            tabPage->chdir(Fm::FilePath::homeDir(), viewFrame);
+                            tabPage->chdir(Fm::FilePath::homeDir(), true);
+                            setTabIcon(tabPage);
                             updateUIForCurrentPage();
                         }
                     }
@@ -1271,7 +1309,9 @@ void MainWindow::updateViewMenuForCurrentPage() {
     if(tabPage) {
         // update menus. FIXME: should we move this to another method?
         ui.actionShowHidden->setChecked(tabPage->showHidden());
-        ui.actionPreserveView->setChecked(tabPage->hasCustomizedView());
+        ui.actionPreserveView->setChecked(tabPage->hasCustomizedView() && !tabPage->hasRecursiveCustomizedView());
+        ui.actionPreserveViewRecursive->setChecked(tabPage->hasRecursiveCustomizedView());
+        ui.actionGoToCustomizedViewSource->setVisible(tabPage->hasInheritedCustomizedView());
 
         // view mode
         QAction* modeAction = nullptr;
@@ -1550,7 +1590,7 @@ void MainWindow::onTabPageSortFilterChanged() { // NOTE: This may be called from
     TabPage* tabPage = static_cast<TabPage*>(sender());
     if(tabPage == currentPage()) {
         updateViewMenuForCurrentPage();
-        if(!tabPage->hasCustomizedView()) { // remember sort settings globally
+        if(!tabPage->hasCustomizedView() && !tabPage->hasInheritedCustomizedView()) { // remember sort settings globally
             Settings& settings = static_cast<Application*>(qApp)->settings();
             settings.setSortColumn(static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn()));
             settings.setSortOrder(tabPage->sortOrder());
@@ -1802,6 +1842,7 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
     if(selectedAction) {
         int index = menu.actions().indexOf(selectedAction);
         page->jumpToHistory(index);
+        setTabIcon(page);
         updateUIForCurrentPage();
     }
 }
@@ -1945,6 +1986,39 @@ void MainWindow::detachTab() {
     }
     else {
         activeViewFrame_->getTabBar()->finishMouseMoveEvent(); // impossible
+    }
+}
+
+void MainWindow::setTabIcon(TabPage* tabPage) {
+    ViewFrame* viewFrame = viewFrameForTabPage(tabPage);
+    if(viewFrame == nullptr) {
+        return;
+    }
+    bool isCustomized = tabPage->hasCustomizedView() || tabPage->hasInheritedCustomizedView();
+    int index = viewFrame->getStackedWidget()->indexOf(tabPage);
+    auto tabBar = viewFrame->getTabBar();
+
+    if(!isCustomized) {
+        if(!tabBar->tabIcon(index).isNull()) {
+            tabBar->setTabIcon(index, QIcon());
+        }
+        return;
+    }
+
+    // set the tab icon of a customized folder to its view mode
+    switch(tabPage->viewMode()) {
+    case Fm::FolderView::IconMode:
+        tabBar->setTabIcon(index, QIcon::fromTheme(QLatin1String("view-list-icons"), style()->standardIcon(QStyle::SP_FileDialogContentsView)));
+        break;
+    case Fm::FolderView::CompactMode:
+        tabBar->setTabIcon(index, QIcon::fromTheme(QLatin1String("view-list-text"), style()->standardIcon(QStyle::SP_FileDialogListView)));
+        break;
+    case Fm::FolderView::DetailedListMode:
+        tabBar->setTabIcon(index, QIcon::fromTheme(QLatin1String("view-list-details"), style()->standardIcon(QStyle::SP_FileDialogDetailedView)));
+        break;
+    case Fm::FolderView::ThumbnailMode:
+        tabBar->setTabIcon(index, QIcon::fromTheme(QLatin1String("view-preview"), style()->standardIcon(QStyle::SP_FileDialogInfoView)));
+        break;
     }
 }
 

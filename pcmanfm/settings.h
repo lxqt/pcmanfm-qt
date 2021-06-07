@@ -51,7 +51,8 @@ public:
         showHidden_(false),
         sortFolderFirst_(true),
         sortHiddenLast_(false),
-        sortCaseSensitive_(true) {
+        sortCaseSensitive_(true),
+        recursive_(false) {
     }
 
     bool isCustomized() const {
@@ -118,6 +119,23 @@ public:
         sortCaseSensitive_ = value;
     }
 
+    bool recursive() const {
+        return recursive_;
+    }
+
+    void setRecursive(bool value) {
+        recursive_ = value;
+    }
+
+    Fm::FilePath inheritedPath() const {
+        return inheritedPath_;
+    }
+
+    void seInheritedPath(const Fm::FilePath& path) {
+        inheritedPath_ = std::move(path);
+    }
+
+
 private:
     bool isCustomized_;
     Qt::SortOrder sortOrder_;
@@ -127,6 +145,8 @@ private:
     bool sortFolderFirst_;
     bool sortHiddenLast_;
     bool sortCaseSensitive_;
+    bool recursive_;
+    Fm::FilePath inheritedPath_;
     // columns?
 };
 

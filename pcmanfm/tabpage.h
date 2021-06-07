@@ -250,11 +250,19 @@ public:
 
     void applyFilter();
 
-    bool hasCustomizedView() {
+    bool hasCustomizedView() const {
         return folderSettings_.isCustomized();
     }
+    bool hasRecursiveCustomizedView() const {
+        return folderSettings_.isCustomized() && folderSettings_.recursive();
+    }
+    bool hasInheritedCustomizedView() const {
+        return !folderSettings_.isCustomized() && folderSettings_.inheritedPath().isValid();
+    }
 
-    void setCustomizedView(bool value);
+    void setCustomizedView(bool value, bool recursive = false);
+
+    void goToCustomizedViewSource();
 
     void transientFilterBar(bool transient);
 

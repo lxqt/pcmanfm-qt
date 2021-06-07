@@ -669,6 +669,8 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
     // (and also by setViewMode()); here, we only need to know whether it should be saved
     FolderSettings folderSettings = settings.loadFolderSettings(path());
     folderSettings_.setCustomized(folderSettings.isCustomized());
+    folderSettings_.setRecursive(folderSettings.recursive());
+    folderSettings_.seInheritedPath(folderSettings.inheritedPath());
 
     // set sorting
     proxyModel_->sort(folderSettings.sortColumn(), folderSettings.sortOrder());
@@ -979,32 +981,43 @@ void TabPage::applyFilter() {
     Q_EMIT statusChanged(StatusTextNormal, statusText_[StatusTextNormal]);
 }
 
-void TabPage::setCustomizedView(bool value) {
-    if(folderSettings_.isCustomized() == value) {
+void TabPage::setCustomizedView(bool value, bool recursive) {
+    if(folderSettings_.isCustomized() == value && folderSettings_.recursive() == recursive) {
         return;
     }
 
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    folderSettings_.setCustomized(value);
     if(value) { // save customized folder view settings
+        folderSettings_.setCustomized(value);
+        folderSettings_.setRecursive(recursive);
         settings.saveFolderSettings(path(), folderSettings_);
     }
-    else { // use default folder view settings
+    else { // use default or inherited folder view settings
         settings.clearFolderSettings(path());
+        // get folderSettings_ again because, although it isn't customized, it may be inherited
+        folderSettings_ = settings.loadFolderSettings(path());
         // settings may change temporarily by connecting to the signal TabPage::sortFilterChanged,
         // which will be emitted below (that happens in MainWindow::onTabPageSortFilterChanged,
         // for example), so we should remember its relevant values before proceeding
-        bool showHidden = settings.showHidden();
-        bool sortCaseSensitive = settings.sortCaseSensitive();
-        bool sortFolderFirst = settings.sortFolderFirst();
-        bool sortHiddenLast = settings.sortHiddenLast();
-        Fm::FolderModel::ColumnId sortColumn = settings.sortColumn();
-        Qt::SortOrder sortOrder = settings.sortOrder();
+        bool showHidden = folderSettings_.showHidden();
+        bool sortCaseSensitive = folderSettings_.sortCaseSensitive();
+        bool sortFolderFirst = folderSettings_.sortFolderFirst();
+        bool sortHiddenLast = folderSettings_.sortHiddenLast();
+        Fm::FolderModel::ColumnId sortColumn = folderSettings_.sortColumn();
+        Qt::SortOrder sortOrder = folderSettings_.sortOrder();
+        Fm::FolderView::ViewMode viewMode = folderSettings_.viewMode();
         setShowHidden(showHidden);
         setSortCaseSensitive(sortCaseSensitive);
         setSortFolderFirst(sortFolderFirst);
         setSortHiddenLast(sortHiddenLast);
         sort(sortColumn, sortOrder);
+        setViewMode(viewMode);
+    }
+}
+
+void TabPage::goToCustomizedViewSource() {
+    if(const auto inheritedPath = folderSettings_.inheritedPath()) {
+        chdir(inheritedPath);
     }
 }
 
