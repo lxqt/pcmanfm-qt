@@ -681,27 +681,27 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>檔案管理程式</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="273"/>
+        <location filename="../main-win.ui" line="281"/>
         <source>Go Up</source>
         <translation>往上一層</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="276"/>
+        <location filename="../main-win.ui" line="284"/>
         <source>Alt+Up</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="288"/>
+        <location filename="../main-win.ui" line="296"/>
         <source>Alt+Home</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="404"/>
+        <location filename="../main-win.ui" line="412"/>
         <source>Reload</source>
         <translation>重新讀取</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="300"/>
+        <location filename="../main-win.ui" line="308"/>
         <source>F5</source>
         <translation></translation>
     </message>
@@ -721,179 +721,189 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>篩選(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="211"/>
+        <location filename="../main-win.ui" line="154"/>
+        <source>Customized View Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="219"/>
         <source>&amp;Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="270"/>
+        <location filename="../main-win.ui" line="278"/>
         <source>Go &amp;Up</source>
         <translation>上一層(&amp;U)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="285"/>
+        <location filename="../main-win.ui" line="293"/>
         <source>&amp;Home</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="297"/>
+        <location filename="../main-win.ui" line="305"/>
         <source>&amp;Reload</source>
         <translation>重新讀取(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="309"/>
+        <location filename="../main-win.ui" line="317"/>
         <source>Go</source>
         <translation>前往</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="318"/>
+        <location filename="../main-win.ui" line="326"/>
         <source>Quit</source>
         <translation>離開</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="327"/>
+        <location filename="../main-win.ui" line="335"/>
         <source>&amp;About</source>
         <translation>關於(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="336"/>
+        <location filename="../main-win.ui" line="344"/>
         <source>&amp;New Window</source>
         <translation>新視窗(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="339"/>
+        <location filename="../main-win.ui" line="347"/>
         <source>New Window</source>
         <translation>新視窗</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="342"/>
+        <location filename="../main-win.ui" line="350"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="350"/>
+        <location filename="../main-win.ui" line="358"/>
         <source>Show &amp;Hidden</source>
         <translation>顯示隱藏檔(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="353"/>
+        <location filename="../main-win.ui" line="361"/>
         <source>Ctrl+H</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="362"/>
+        <location filename="../main-win.ui" line="370"/>
         <source>&amp;Computer</source>
         <translation>電腦(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="371"/>
+        <location filename="../main-win.ui" line="379"/>
         <source>&amp;Trash</source>
         <translation>垃圾桶(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="376"/>
+        <location filename="../main-win.ui" line="384"/>
         <source>&amp;Network</source>
         <translation>網路(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="385"/>
+        <location filename="../main-win.ui" line="393"/>
         <source>&amp;Desktop</source>
         <translation>桌面(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="394"/>
+        <location filename="../main-win.ui" line="402"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>加入到書籤(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="399"/>
+        <location filename="../main-win.ui" line="407"/>
         <source>&amp;Applications</source>
         <translation>應用程式(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="412"/>
+        <location filename="../main-win.ui" line="420"/>
         <source>&amp;Icon View</source>
         <translation>圖示檢視(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="420"/>
+        <location filename="../main-win.ui" line="428"/>
         <source>&amp;Compact View</source>
         <translation>簡易檢視(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="428"/>
+        <location filename="../main-win.ui" line="436"/>
         <source>&amp;Detailed List</source>
         <translation>詳細清單(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="436"/>
+        <location filename="../main-win.ui" line="444"/>
         <source>&amp;Thumbnail View</source>
         <translation>縮圖檢視(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="445"/>
+        <location filename="../main-win.ui" line="453"/>
         <source>Cu&amp;t</source>
         <translation>剪下(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="493"/>
+        <location filename="../main-win.ui" line="501"/>
         <source>&amp;Ascending</source>
         <translation>升冪排列(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="501"/>
+        <location filename="../main-win.ui" line="509"/>
         <source>&amp;Descending</source>
         <translation>降冪排列(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="509"/>
+        <location filename="../main-win.ui" line="517"/>
         <source>&amp;By File Name</source>
         <translation>以檔案名稱( &amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="517"/>
+        <location filename="../main-win.ui" line="525"/>
         <source>By &amp;Modification Time</source>
         <translation>以最後修改時間 (&amp;M)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="525"/>
+        <location filename="../main-win.ui" line="533"/>
         <source>By C&amp;reation Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="533"/>
+        <location filename="../main-win.ui" line="541"/>
         <source>By Deletio&amp;n Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="541"/>
+        <location filename="../main-win.ui" line="549"/>
         <source>By File &amp;Type</source>
         <translation>以檔案型態 (&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="549"/>
+        <location filename="../main-win.ui" line="557"/>
         <source>By &amp;Owner</source>
         <translation>以擁有者 (&amp;O)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="557"/>
+        <location filename="../main-win.ui" line="565"/>
         <source>By &amp;Group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="565"/>
+        <location filename="../main-win.ui" line="573"/>
         <source>&amp;Folder First</source>
         <translation>資料夾優先 (&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="573"/>
+        <location filename="../main-win.ui" line="581"/>
         <source>&amp;Hidden Last</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="581"/>
-        <source>&amp;Preserve sorting for this folder</source>
-        <translation>保存這個目錄的排序設定</translation>
+        <location filename="../main-win.ui" line="946"/>
+        <source>Preserve Settings Recursively from Here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="951"/>
+        <source>Go to Source of Inherited Settings</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -1128,42 +1138,42 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>排序(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="236"/>
+        <location filename="../main-win.ui" line="244"/>
         <source>Main Toolbar</source>
         <translation>主要工具列</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="448"/>
+        <location filename="../main-win.ui" line="456"/>
         <source>Ctrl+X</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="457"/>
+        <location filename="../main-win.ui" line="465"/>
         <source>&amp;Copy</source>
         <translation>複製 (&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="460"/>
+        <location filename="../main-win.ui" line="468"/>
         <source>Ctrl+C</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="469"/>
+        <location filename="../main-win.ui" line="477"/>
         <source>&amp;Paste</source>
         <translation>貼上(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="472"/>
+        <location filename="../main-win.ui" line="480"/>
         <source>Ctrl+V</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="477"/>
+        <location filename="../main-win.ui" line="485"/>
         <source>Select &amp;All</source>
         <translation>全選(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="485"/>
+        <location filename="../main-win.ui" line="493"/>
         <source>Pr&amp;eferences</source>
         <translation>偏好設定(&amp;R)</translation>
     </message>
@@ -1183,7 +1193,7 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>重新命名(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="480"/>
+        <location filename="../main-win.ui" line="488"/>
         <source>Ctrl+A</source>
         <translation></translation>
     </message>
@@ -1309,17 +1319,17 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>檢視(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="169"/>
+        <location filename="../main-win.ui" line="177"/>
         <source>&amp;Edit</source>
         <translation>編輯(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="187"/>
+        <location filename="../main-win.ui" line="195"/>
         <source>&amp;Bookmarks</source>
         <translation>書籤(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="194"/>
+        <location filename="../main-win.ui" line="202"/>
         <source>&amp;Go</source>
         <translation>前往(&amp;G)</translation>
     </message>
@@ -1338,13 +1348,13 @@ are left clicked, even when it is not the default file manager.</source>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
-        <source>Run PCManFM as a daemon</source>
-        <translation>執行PCManFM常駐程式</translation>
+        <source>Run PCManFM-Qt as a daemon</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
-        <source>Quit PCManFM</source>
-        <translation>離開PCManFM</translation>
+        <source>Quit PCManFM-Qt</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1493,12 +1503,12 @@ are left clicked, even when it is not the default file manager.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="85"/>
+        <location filename="../desktopentrydialog.cpp" line="81"/>
         <source>Select an executable file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="93"/>
+        <location filename="../desktopentrydialog.cpp" line="89"/>
         <source>Select a file</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1636,40 +1646,40 @@ are left clicked, even when it is not the default file manager.</source>
         <translation type="unfinished">根實例</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="698"/>
+        <location filename="../mainwindow.cpp" line="713"/>
         <source>Hide menu bar</source>
         <translation>隱藏選單列</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="714"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>選單列將完全被隱藏，使用 Ctrl+M 可再次顯示。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1052"/>
+        <location filename="../mainwindow.cpp" line="1086"/>
         <source>Version: %1</source>
         <translation>版本: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1949"/>
+        <location filename="../mainwindow.cpp" line="2029"/>
         <source>&amp;Move to Trash</source>
         <translation>移動到垃圾桶(&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
-        <location filename="../mainwindow.cpp" line="1949"/>
+        <location filename="../mainwindow.cpp" line="2029"/>
         <source>&amp;Delete</source>
         <translation>刪除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2017"/>
-        <location filename="../mainwindow.cpp" line="2025"/>
+        <location filename="../mainwindow.cpp" line="2097"/>
+        <location filename="../mainwindow.cpp" line="2105"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2025"/>
+        <location filename="../mainwindow.cpp" line="2105"/>
         <source>Switch user command is not set.</source>
         <translation>切換使用者指令尚未設定。</translation>
     </message>
@@ -1700,38 +1710,38 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="499"/>
+        <location filename="../tabpage.cpp" line="506"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="508"/>
+        <location filename="../tabpage.cpp" line="515"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>可用空間 %1 (全部: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="525"/>
+        <location filename="../tabpage.cpp" line="532"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n 個項目</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="527"/>
+        <location filename="../tabpage.cpp" line="534"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n 個隱藏)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="532"/>
-        <location filename="../tabpage.cpp" line="726"/>
-        <location filename="../tabpage.cpp" line="740"/>
+        <location filename="../tabpage.cpp" line="539"/>
+        <location filename="../tabpage.cpp" line="735"/>
+        <location filename="../tabpage.cpp" line="749"/>
         <source>Link to</source>
         <translation>連結到</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="752"/>
+        <location filename="../tabpage.cpp" line="761"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>選取 %n 個項目</numerusform>
@@ -2244,7 +2254,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1055"/>
+        <location filename="../tabpage.cpp" line="1077"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
@@ -2259,7 +2269,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>某些檔案無法被重新命名。</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1055"/>
+        <location filename="../tabpage.cpp" line="1077"/>
         <source>Cannot open as Admin.</source>
         <translation type="unfinished"></translation>
     </message>
