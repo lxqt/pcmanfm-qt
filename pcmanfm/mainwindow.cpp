@@ -2202,4 +2202,16 @@ void MainWindow::onShortcutJumpToTab() {
     }
 }
 
+void MainWindow::on_actionCleanPerFolderConfig_triggered() {
+    QMessageBox::StandardButton r = QMessageBox::question(this,
+                                    tr("Cleaning Folder Settings"),
+                                    tr("Do you want to remove settings of nonexistent folders?\nThey might be useful if those folders are created again."),
+                                    QMessageBox::Yes | QMessageBox::No,
+                                    QMessageBox::No);
+    if(r == QMessageBox::Yes) {
+        Application* app = static_cast<Application*>(qApp);
+        app->cleanPerFolderConfig();
+    }
+}
+
 }

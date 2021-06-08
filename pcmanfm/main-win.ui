@@ -155,7 +155,9 @@
      </property>
      <addaction name="actionPreserveView"/>
      <addaction name="actionPreserveViewRecursive"/>
+     <addaction name="separator"/>
      <addaction name="actionGoToCustomizedViewSource"/>
+     <addaction name="actionCleanPerFolderConfig"/>
     </widget>
     <addaction name="actionReload"/>
     <addaction name="separator"/>
@@ -949,6 +951,11 @@
   <action name="actionGoToCustomizedViewSource">
    <property name="text">
     <string>Go to Source of Inherited Settings</string>
+   </property>
+  </action>
+  <action name="actionCleanPerFolderConfig">
+   <property name="text">
+    <string>Remove Settings of Nonexistent Folders</string>
    </property>
   </action>
  </widget>

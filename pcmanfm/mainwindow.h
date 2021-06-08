@@ -234,6 +234,8 @@ protected Q_SLOTS:
 
     void onSettingHiddenPlace(const QString& str, bool hide);
 
+    void on_actionCleanPerFolderConfig_triggered();
+
 protected:
     bool event(QEvent* event) override;
     void changeEvent(QEvent* event) override;

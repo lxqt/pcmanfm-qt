@@ -375,6 +375,31 @@ void Application::onAboutToQuit() {
     settings_.save();
 }
 
+void Application::cleanPerFolderConfig() {
+    // first save the perfolder config cache to have the list of all custom folders
+    Fm::FolderConfig::saveCache();
+    // then remove non-existent native folders from the list of custom folders
+    QByteArray perFolderConfig = (settings_.profileDir(profileName_) + QStringLiteral("/dir-settings.conf"))
+                                 .toLocal8Bit();
+    GKeyFile* kf = g_key_file_new();
+    if(g_key_file_load_from_file(kf, perFolderConfig.constData(), G_KEY_FILE_NONE, nullptr)) {
+        bool removed(false);
+        gchar **groups = g_key_file_get_groups(kf, nullptr);
+        for(int i = 0; groups[i] != nullptr; i++) {
+            const gchar *g = groups[i];
+            if(Fm::FilePath::fromPathStr(g).isNative() && !QDir(QString::fromUtf8(g)).exists()) {
+                g_key_file_remove_group(kf, g, nullptr);
+                removed = true;
+            }
+        }
+        g_strfreev(groups);
+        if(removed) {
+            g_key_file_save_to_file(kf, perFolderConfig.constData(), nullptr);
+        }
+    }
+    g_key_file_free(kf);
+}
+
 /*bool Application::eventFilter(QObject* watched, QEvent* event) {
     if(watched == desktop()) {
         if(event->type() == QEvent::StyleChange ||
