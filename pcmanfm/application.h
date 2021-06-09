@@ -96,6 +96,8 @@ public:
         return profileName_;
     }
 
+    void cleanPerFolderConfig();
+
 protected Q_SLOTS:
     void onAboutToQuit();
     void onSigtermNotified();
