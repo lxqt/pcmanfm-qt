@@ -884,7 +884,7 @@ void MainWindow::on_actionFolderProperties_triggered() {
 
 void MainWindow::on_actionShowHidden_triggered(bool checked) {
     currentPage()->setShowHidden(checked);
-    ui.sidePane->setShowHidden(checked);
+    // visibility of hidden folders in directory tree is toggled by onTabPageSortFilterChanged()
 }
 
 void MainWindow::on_actionShowThumbnails_triggered(bool checked) {
@@ -1590,6 +1590,7 @@ void MainWindow::onTabPageSortFilterChanged() { // NOTE: This may be called from
     TabPage* tabPage = static_cast<TabPage*>(sender());
     if(tabPage == currentPage()) {
         updateViewMenuForCurrentPage();
+        ui.sidePane->setShowHidden(tabPage->showHidden());
         if(!tabPage->hasCustomizedView() && !tabPage->hasInheritedCustomizedView()) { // remember sort settings globally
             Settings& settings = static_cast<Application*>(qApp)->settings();
             settings.setSortColumn(static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn()));
