@@ -700,7 +700,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaate kohandatud seadistused</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
@@ -940,12 +940,12 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasuta kohandatud seadistusi siit alates rekursiivselt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Mine seadistuste lähtepunkti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -1351,12 +1351,12 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Käivita PCManFM-Qt taustarakendusena</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Välju PCManFM-Qt rakendusest</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
