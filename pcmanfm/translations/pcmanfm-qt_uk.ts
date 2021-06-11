@@ -700,7 +700,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Власні налаштування вигляду</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
@@ -940,12 +940,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Зберегти налаштування рекурсивно починаючи звідси</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти до джерела успадкованих налаштувань</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -1351,12 +1351,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Запустити PCMANFM-QT як фоновий процес</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Вийти з PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
