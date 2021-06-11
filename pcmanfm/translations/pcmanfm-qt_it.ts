@@ -725,7 +725,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Impostazioni visualizzazione specifiche</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
@@ -900,12 +900,12 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Ricorda impostazioni per la cartella e le sottocartelle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vai alla cartella con le impostazioni specifiche</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
@@ -1398,12 +1398,12 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Esegui PcManFM-qt come demone</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Esci da PcManFm-qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
