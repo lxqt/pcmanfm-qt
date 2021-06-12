@@ -101,7 +101,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Modulo</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="76"/>
@@ -121,12 +121,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="84"/>
         <source>Folder path</source>
-        <translation type="unfinished">Percorso</translation>
+        <translation>Percorso</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="85"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">&amp;Sfoglia</translation>
+        <translation>&amp;Sfoglia</translation>
     </message>
 </context>
 <context>
@@ -373,42 +373,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="597"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished">&amp;Ascendente</translation>
+        <translation>&amp;Ascendente</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="598"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished">&amp;Discendente</translation>
+        <translation>&amp;Discendente</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="599"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Per Nome File</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="600"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Per Data di &amp;Modifica</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="601"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Per &amp;Tipo di File</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="602"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Per &amp;Proprietario</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="603"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Cartelle Prima</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="619"/>
         <source>&amp;Invert Selection</source>
-        <translation>&amp;Inverti selezione</translation>
+        <translation>&amp;Inverti Selezione</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="620"/>
@@ -428,7 +428,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="558"/>
         <source>Go &amp;Up</source>
-        <translation>Vai &amp;su</translation>
+        <translation>Vai &amp;Su</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="570"/>
@@ -438,22 +438,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="584"/>
         <source>&amp;Icon View</source>
-        <translation>Vista &amp;icone</translation>
+        <translation>Vista &amp;Icone</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="585"/>
         <source>&amp;Compact View</source>
-        <translation>Vista &amp;compatta</translation>
+        <translation>Vista &amp;Compatta</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="586"/>
         <source>&amp;Detailed List</source>
-        <translation>Elenco &amp;dettagliato</translation>
+        <translation>Elenco &amp;Dettagliato</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="587"/>
         <source>&amp;Thumbnail View</source>
-        <translation>Vista minia&amp;ture</translation>
+        <translation>Vista Minia&amp;ture</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="588"/>
@@ -491,7 +491,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="604"/>
         <source>New &amp;Tab</source>
-        <translation>Nuova sc&amp;heda</translation>
+        <translation>Nuova &amp;Scheda</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="606"/>
@@ -506,12 +506,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="609"/>
         <source>Go &amp;Back</source>
-        <translation>Vai in&amp;dietro</translation>
+        <translation>Vai In&amp;dietro</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="611"/>
         <source>Go Back</source>
-        <translation>Va indietro</translation>
+        <translation>Va Indietro</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="613"/>
@@ -521,12 +521,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="614"/>
         <source>Go &amp;Forward</source>
-        <translation>Vai &amp;avanti</translation>
+        <translation>Vai &amp;Avanti</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="616"/>
         <source>Go Forward</source>
-        <translation>Va avanti</translation>
+        <translation>Va Avanti</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="618"/>
@@ -546,27 +546,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="624"/>
         <source>C&amp;lose Tab</source>
-        <translation>C&amp;hiudi scheda</translation>
+        <translation>C&amp;hiudi Scheda</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="626"/>
         <source>File &amp;Properties</source>
-        <translation>&amp;Proprietà file</translation>
+        <translation>&amp;Proprietà File</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="628"/>
         <source>&amp;Folder Properties</source>
-        <translation>Proprietà &amp;cartella</translation>
+        <translation>Proprietà &amp;Cartella</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="629"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished">&amp;Sensibile alle maiuscole</translation>
+        <translation type="unfinished">&amp;Sensibile Alle Maiuscole</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="630"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Per &amp;Dimensione</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="631"/>
@@ -581,42 +581,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="638"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="639"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>File &amp;Vuoto</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="640"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="641"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Cerca File</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="642"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="643"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Filtra</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="644"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtra per stringa...</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="646"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>C&amp;rea Nuovo</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="649"/>
@@ -876,7 +876,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cancella testo (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
@@ -952,8 +952,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../tabpage.cpp" line="278"/>
         <source> (%n hidden)</source>
         <translation>
-            <numerusform> (%n nascosto)</numerusform>
-            <numerusform> (%n nascosti)</numerusform>
+            <numerusform>&#xa0;(%n nascosto)</numerusform>
+            <numerusform>&#xa0;(%n nascosti)</numerusform>
         </translation>
     </message>
     <message>
@@ -1126,72 +1126,72 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="713"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mostra</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="729"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Segnalibri:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="732"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri nella scheda corrente</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="733"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Apri in una nuova scheda</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="734"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri in una nuova finestra</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="739"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cancella i file sui dispositivi removibili invece della creazione del &quot;Cestino&quot;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="740"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Confema prima di spostare i file nel &quot;Cestino&quot;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="741"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Non chiedere opzioni all&apos;avvio di file eseguibili</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="748"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Interfaccia utente</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="750"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tratta i file di backup come nascosti</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="751"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mostra sempre i nomi dei file completi</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="752"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mostra le icone dei file nascosti ombreggiate</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="759"/>
         <source>Show in places</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mostra in Posizioni</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="764"/>
         <source>Home</source>
-        <translation type="unfinished">Cartella home</translation>
+        <translation type="unfinished">Cartella Home</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="766"/>
@@ -1201,27 +1201,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="768"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation>Cestino</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="770"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Computer</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="772"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Applicazioni</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="774"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Dispositivi</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="776"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Rete</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="780"/>
@@ -1231,7 +1231,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="781"/>
         <source> KB</source>
-        <translation> KB</translation>
+        <translation>&#xa0;KB</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="784"/>
@@ -1281,22 +1281,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="797"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Modelli</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="798"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra solo i modelli definiti dall&apos;utente nel menu</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="799"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mostra solo un modello per ogni tipo di MIME</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="800"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Esegui l&apos;applicazione predefinita dopo la creazione dal modello</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="791"/>
