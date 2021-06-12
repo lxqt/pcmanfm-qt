@@ -6,34 +6,36 @@
     <message>
         <location filename="../../build/filer/ui_about.h" line="134"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>על אודות</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="135"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="137"/>
         <source>Lightweight file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>מנהל קבצים קליל</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="138"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="139"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>פיתוח:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="142"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>יוצרים</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="143"/>
@@ -59,7 +61,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_about.h" line="160"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>רישיון</translation>
     </message>
 </context>
 <context>
