@@ -79,6 +79,8 @@ public:
 
     void queueRelayout(int delay = 0);
 
+    void saveItemPositions();
+
     int screenNum() const {
         return screenNum_;
     }
@@ -94,7 +96,8 @@ protected:
     virtual void onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) override;
 
     void loadItemPositions();
-    void saveItemPositions();
+    void retrieveCustomPos();
+    void storeCustomPos();
 
     QImage loadWallpaperFile(QSize requiredSize);
 
@@ -183,7 +186,8 @@ private:
     bool desktopHideItems_;
 
     int screenNum_;
-    std::unordered_map<std::string, QPoint> customItemPos_;
+    std::unordered_map<std::string, QPoint> customItemPos_; // real custom positions
+    std::unordered_map<std::string, QPoint> customPosStorage_; // savable custom positions
     QTimer* relayoutTimer_;
     QTimer* selectionTimer_;
 

@@ -391,6 +391,9 @@ void DesktopWindow::onTrashChanged(GFileMonitor* /*monitor*/, GFile* /*gf*/, GFi
 }
 
 void DesktopWindow::updateTrashIcon() {
+    if(listView_->isHidden()) {
+        return; // will be updated as soon as dekstop is shown
+    }
     struct UpdateTrashData {
         QPointer<DesktopWindow> desktop;
         Fm::FilePath trashPath;
@@ -1045,6 +1048,9 @@ void DesktopWindow::toggleDesktop() {
     // because the positions aren't updated while the view is hidden
     if(!desktopHideItems_) {
         listView_->setFocus(); // refocus the view
+        if(trashMonitor_) {
+            updateTrashIcon();
+        }
         queueRelayout();
     }
     else {
@@ -1105,7 +1111,7 @@ void DesktopWindow::onRowsAboutToBeRemoved(const QModelIndex& parent, int start,
             }
         }
         if(changed) {
-            saveItemPositions();
+            storeCustomPos();
         }
     }
     listView_->setUpdatesEnabled(false);
@@ -1255,7 +1261,7 @@ void DesktopWindow::relayoutItems() {
     if(screen == nullptr) {
         return;
     }
-    loadItemPositions(); // something may have changed
+    retrieveCustomPos(); // something may have changed
     // qDebug("relayoutItems()");
     if(relayoutTimer_) {
         // this slot might be called from the timer, so we cannot delete it directly here.
@@ -1344,17 +1350,36 @@ void DesktopWindow::relayoutItems() {
     }
 }
 
+// NOTE: We load custom positions from the config file at startup and store them in
+// customPosStorage_ to keep track of them without constantly saving them to the disk
+// during the session. customPosStorage_ should be written to the disk on exiting.
+//
+// In contrast, customItemPos_ reflects the real custom positions at the moment, which
+// may not be suitable for saving to the disk because it may be affected by temporary
+// changes to geometry that we do not want to remember at the next session.
+
 void DesktopWindow::loadItemPositions() {
-    auto screen = getDesktopScreen();
-    if(screen == nullptr) {
-        return;
-    }
-    // load custom item positions
-    customItemPos_.clear();
+    // load custom item positions from the config file and store them in the memory
+    customPosStorage_.clear();
     Settings& settings = static_cast<Application*>(qApp)->settings();
     QString configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
     QSettings file(configFile, QSettings::IniFormat);
 
+    const auto names = file.childGroups();
+    for(const QString& name : names) {
+        file.beginGroup(name);
+        customPosStorage_[name.toStdString()] = file.value(QStringLiteral("pos")).toPoint();
+        file.endGroup();
+    }
+}
+
+void DesktopWindow::retrieveCustomPos() {
+    // retrieve custom item positions from the memory and normalize them
+    auto screen = getDesktopScreen();
+    if(screen == nullptr) {
+        return;
+    }
+    customItemPos_.clear();
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
     auto grid = delegate->itemSize();
     QRect workArea = screen->availableVirtualGeometry();
@@ -1362,58 +1387,53 @@ void DesktopWindow::loadItemPositions() {
     QString desktopDir = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
     desktopDir += QLatin1Char('/');
     std::vector<QPoint> usedPos;
-    for(auto& item: customItemPos_) {
-        usedPos.push_back(item.second);
-    }
 
-    // FIXME: this is inefficient
-    const auto names = file.childGroups();
-    for(const QString& name : names) {
-        if(!QFile::exists(desktopDir + name)) {
-            // the file may have been removed from outside LXQT
+    for(auto it = customPosStorage_.cbegin(); it != customPosStorage_.cend(); ++it) {
+        auto& name = it->first;
+        if(!QFile::exists(desktopDir + QString::fromStdString(name))) {
             continue;
         }
-        file.beginGroup(name);
-        QVariant var = file.value(QStringLiteral("pos"));
-        if(var.isValid()) {
-            QPoint customPos = var.toPoint();
-            if(customPos.x() >= workArea.x() && customPos.y() >= workArea.y()
-                    && customPos.x() + grid.width() <= workArea.right() + 1
-                    && customPos.y() + grid.height() <= workArea.bottom() + 1) {
-                // correct positions that are't aligned to the grid
-                alignToGrid(customPos, workArea.topLeft(), grid, listView_->spacing());
-                // FIXME: this is very inefficient
-                while(std::find(usedPos.cbegin(), usedPos.cend(), customPos) != usedPos.cend()) {
-                    customPos.setY(customPos.y() + grid.height() + listView_->spacing());
-                    if(customPos.y() + grid.height() > workArea.bottom() + 1) {
-                        customPos.setX(customPos.x() + grid.width() + listView_->spacing());
-                        customPos.setY(workArea.top());
-                    }
+        auto customPos = it->second;
+        if(customPos.x() >= workArea.x() && customPos.y() >= workArea.y()
+            && customPos.x() + grid.width() <= workArea.right() + 1
+            && customPos.y() + grid.height() <= workArea.bottom() + 1) {
+            // correct positions that are't aligned to the grid
+            alignToGrid(customPos, workArea.topLeft(), grid, listView_->spacing());
+            while(std::find(usedPos.cbegin(), usedPos.cend(), customPos) != usedPos.cend()) {
+                customPos.setY(customPos.y() + grid.height() + listView_->spacing());
+                if(customPos.y() + grid.height() > workArea.bottom() + 1) {
+                    customPos.setX(customPos.x() + grid.width() + listView_->spacing());
+                    customPos.setY(workArea.top());
                 }
-                customItemPos_[name.toStdString()] = customPos;
-                usedPos.push_back(customPos);
             }
+            customItemPos_[name] = customPos;
+            usedPos.push_back(customPos);
         }
-        file.endGroup();
     }
 }
 
 void DesktopWindow::saveItemPositions() {
+    // write custom item positions to the config file
     Settings& settings = static_cast<Application*>(qApp)->settings();
-    // store custom item positions
     QString configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
     // FIXME: using QSettings here is inefficient and it's not friendly to UTF-8.
     QSettings file(configFile, QSettings::IniFormat);
     file.clear(); // remove all existing entries
 
     // FIXME: we have to remove dead entries not associated to any files?
-    for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend(); ++it) {
+    for(auto it = customPosStorage_.cbegin(); it != customPosStorage_.cend(); ++it) {
         auto& name = it->first;
         auto& pos = it->second;
         file.beginGroup(QString::fromStdString(name));
         file.setValue(QStringLiteral("pos"), pos);
         file.endGroup();
     }
+}
+
+void DesktopWindow::storeCustomPos() {
+    // store custom item positions in the memory
+    customPosStorage_.clear();
+    customPosStorage_ = customItemPos_;
 }
 
 void DesktopWindow::onStickToCurrentPos(bool toggled) {
@@ -1436,7 +1456,7 @@ void DesktopWindow::onStickToCurrentPos(bool toggled) {
                 }
             }
         }
-        saveItemPositions();
+        storeCustomPos();
         if(relayout) {
             relayoutItems();
         }
@@ -1889,7 +1909,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                 }
             }
         }
-        saveItemPositions();
+        storeCustomPos();
         queueRelayout();
     }
     else {
@@ -1943,7 +1963,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                     reachedLastCell = stickToPosition(name.toStdString(), dropPos, workArea, grid, reachedLastCell);
                 }
             }
-            saveItemPositions();
+            storeCustomPos();
         }
     }
 }
@@ -2095,6 +2115,7 @@ void DesktopWindow::paintEvent(QPaintEvent* event) {
 void DesktopWindow::setScreenNum(int num) {
     if(screenNum_ != num) {
         screenNum_ = num;
+        loadItemPositions(); // the config file is different
         queueRelayout();
     }
 }

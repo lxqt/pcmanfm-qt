@@ -372,6 +372,11 @@ void Application::onUserDirsChanged() {
 
 void Application::onAboutToQuit() {
     qDebug("aboutToQuit");
+    // save custom positions of desktop items
+    if(!desktopWindows_.isEmpty()) {
+        desktopWindows_.first()->saveItemPositions();
+    }
+
     settings_.save();
 }
 
