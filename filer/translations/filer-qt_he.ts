@@ -1244,7 +1244,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="799"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>להציג תבנית את לכל סוג MIME</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="800"/>
@@ -1254,7 +1254,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="749"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>להשתמש בקידומות עשרוניות לפי התקן הבינלאומי במקום תקן IEC</translation>
     </message>
 </context>
 </TS>
