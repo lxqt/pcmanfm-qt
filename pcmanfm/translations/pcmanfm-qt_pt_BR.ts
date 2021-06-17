@@ -672,7 +672,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation>Criar um link simbólico ao soltar</translation>
+        <translation>Criar um atalho ao soltar</translation>
     </message>
 </context>
 <context>
@@ -725,12 +725,12 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuração de Visualização Personalizada</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
         <source>&amp;Tools</source>
-        <translation>&amp;Ferramentas</translation>
+        <translation>Ferramen&amp;tas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="293"/>
@@ -901,12 +901,12 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Preservar Configurações Recursivamente a partir Daqui</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ir para a Fonte das Configurações Herdadas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
@@ -1183,7 +1183,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="611"/>
         <source>Alt+Left</source>
-        <translation>Alt+esquerda</translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="620"/>
@@ -1198,7 +1198,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>Alt+Right</source>
-        <translation>Alt+direita</translation>
+        <translation>Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="646"/>
@@ -1398,12 +1398,12 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodar PCManFM-Qt como um daemon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Sair do PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
