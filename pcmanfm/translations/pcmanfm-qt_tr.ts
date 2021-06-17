@@ -701,7 +701,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Özelleştirilmiş Görüntü Ayarları</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
@@ -946,7 +946,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Devralınan Ayarların Kaynağına Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -1352,12 +1352,12 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFm-Qt&apos;yi daemon olarak çalıştır</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt&apos;den Çıkış Yap</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1727,12 +1727,14 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n nesne</numerusform>
+            <numerusform>%n nesne</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="534"/>
         <source> (%n hidden)</source>
         <translation>
+            <numerusform> (%n gizli)</numerusform>
             <numerusform> (%n gizli)</numerusform>
         </translation>
     </message>
@@ -1747,6 +1749,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <location filename="../tabpage.cpp" line="761"/>
         <source>%n item(s) selected</source>
         <translation>
+            <numerusform>%n nesne seçildi</numerusform>
             <numerusform>%n nesne seçildi</numerusform>
         </translation>
     </message>
