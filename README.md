@@ -30,8 +30,8 @@ as usual.
 
 ### Binary packages
 
-Official binary packages are available in Arch Linux, Debian (as of Debian stretch), 
-Fedora (version 0.10.0 only so far) and openSUSE (Leap and Tumbleweed).   
+Official binary packages are available in Arch Linux, Debian, 
+Fedora and openSUSE (Leap and Tumbleweed) and most other distributions.   
 
 ## Usage
 
