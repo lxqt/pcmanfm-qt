@@ -744,7 +744,8 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
     Fm::FolderConfig cfg(path);
     bool customized = !cfg.isEmpty();
     Fm::FilePath inheritedPath;
-    if(!customized) {
+    if(!customized
+       && !path.isParentOf(path)) { // WARNING: menu://applications/ is its own parent
         inheritedPath = path.parent();
         while(inheritedPath.isValid()) {
             Fm::GErrorPtr err;
@@ -755,6 +756,10 @@ FolderSettings Settings::loadFolderSettings(const Fm::FilePath& path) const {
                 if(cfg.getBoolean("Recursive", &recursive) && recursive) {
                     break;
                 }
+            }
+            if(inheritedPath.isParentOf(inheritedPath)) {
+                inheritedPath = Fm::FilePath(); // invalidate it
+                break;
             }
             inheritedPath = inheritedPath.parent();
         }
