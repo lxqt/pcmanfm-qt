@@ -130,7 +130,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="79"/>
         <source>Image file</source>
-        <translation type="unfinished">Archivo de imagen</translation>
+        <translation>Archivo de imagen</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="84"/>
@@ -140,7 +140,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="85"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">E&amp;xaminar</translation>
+        <translation>E&amp;xaminar</translation>
     </message>
 </context>
 <context>
@@ -362,12 +362,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="642"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="643"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrar</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="644"/>
@@ -1303,7 +1303,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="764"/>
         <source>Home</source>
-        <translation type="unfinished">Carpeta personal</translation>
+        <translation>Carpeta personal</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="766"/>
