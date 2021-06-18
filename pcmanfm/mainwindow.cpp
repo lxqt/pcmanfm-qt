@@ -23,6 +23,7 @@
 #include <QMenu>
 #include <QMenuBar>
 #include <QAction>
+#include <QWidgetAction>
 #include <QVBoxLayout>
 #include <QMessageBox>
 #include <QSplitter>
@@ -1862,7 +1863,7 @@ void MainWindow::tabContextMenu(const QPoint& pos) {
     TabBar* tabBar = static_cast<TabBar*>(sender());
     if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(tabBar->parentWidget())) {
         int tabNum = viewFrame->getTabBar()->count();
-        if(tabNum <= 1) {
+        if(tabNum < 1) {
             return;
         }
 
@@ -1872,6 +1873,8 @@ void MainWindow::tabContextMenu(const QPoint& pos) {
         }
 
         QMenu menu;
+
+        // tab closing actions
         if(rightClickIndex_ > 0) {
             menu.addAction(ui.actionCloseLeft);
         }
@@ -1882,6 +1885,24 @@ void MainWindow::tabContextMenu(const QPoint& pos) {
                 menu.addAction(ui.actionCloseOther);
             }
         }
+
+        // per-folder actions for the current tab
+        if(viewFrame->getTabBar()->currentIndex() == rightClickIndex_) {
+            menu.addSeparator();
+            QWidgetAction* labelAction = new QWidgetAction(&menu);
+            QLabel *label = new QLabel(QStringLiteral("<center><b>")
+                                    + tr("Customized View Settings")
+                                    + QStringLiteral("</b></center>"));
+            label->setMargin(5);
+            labelAction->setDefaultWidget(label);
+            menu.addAction(labelAction);
+            menu.addAction(ui.actionPreserveView);
+            menu.addAction(ui.actionPreserveViewRecursive);
+            menu.addSeparator();
+            menu.addAction(ui.actionGoToCustomizedViewSource);
+            menu.addAction(ui.actionCleanPerFolderConfig);
+        }
+
         menu.exec(viewFrame->getTabBar()->mapToGlobal(pos));
     }
 }
