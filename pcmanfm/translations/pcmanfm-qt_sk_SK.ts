@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>O aplikácii</translation>
+        <translation>O aplikácií</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -720,7 +720,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="284"/>
         <source>Alt+Up</source>
-        <translation>Alt + šípka hore</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="293"/>
@@ -735,7 +735,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="305"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Znovu načítať</translation>
+        <translation>&amp;Načítať znova</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="308"/>
@@ -745,7 +745,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="317"/>
         <source>Go</source>
-        <translation>Ísť na</translation>
+        <translation>Prejsť na</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="326"/>
@@ -755,7 +755,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="335"/>
         <source>&amp;About</source>
-        <translation>O &amp;aplikácii</translation>
+        <translation>O &amp;aplikácií</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
@@ -770,7 +770,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="350"/>
         <source>Ctrl+N</source>
-        <translation>Strg+N</translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="358"/>
@@ -840,7 +840,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="453"/>
         <source>Cu&amp;t</source>
-        <translation>&amp;Vybrať</translation>
+        <translation>&amp;Vystrihnúť</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="456"/>
@@ -850,7 +850,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="465"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Skopírovať</translation>
+        <translation>&amp;Kopírovať</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="468"/>
@@ -860,7 +860,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="477"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Vložiť</translation>
+        <translation>&amp;Prilepiť</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="480"/>
@@ -940,7 +940,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation>Uchovať nastavenia od tohoto miesta rekurzívne</translation>
+        <translation>Uchovať nastavenia v podadresároch</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
@@ -1182,7 +1182,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="611"/>
         <source>Alt+Left</source>
-        <translation>Alt + šípka vľavo</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="620"/>
@@ -1197,7 +1197,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="626"/>
         <source>Alt+Right</source>
-        <translation>Alt + šípka vpravo</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
@@ -1207,7 +1207,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Zmazať</translation>
+        <translation>O&amp;dstrániť</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="646"/>
@@ -1217,7 +1217,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>&amp;Rename</source>
-        <translation>&amp;Premenovať</translation>
+        <translation>P&amp;remenovať</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
@@ -1318,7 +1318,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="177"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Upraviť</translation>
+        <translation>Úp&amp;ravy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="195"/>
@@ -1333,7 +1333,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="244"/>
         <source>Main Toolbar</source>
-        <translation>Hlavný panel nástrojov</translation>
+        <translation>Hlavná lišta nástrojov</translation>
     </message>
 </context>
 <context>
@@ -1795,7 +1795,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Predvoľby</translation>
+        <translation>Nastavenia</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -1856,7 +1856,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../preferences.ui" line="271"/>
         <source>Icon theme:</source>
-        <translation>Vzhľad ikôn:</translation>
+        <translation>Vzhľad ikon:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="502"/>
@@ -2091,7 +2091,7 @@ Bežne je väčšina typov obrázkov podporovaná. Predvolená maximálna veľko
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation>Obmedzenie veľkosti obrázku pre vstavaný náhľad:</translation>
+        <translation>Maximálna veľkosť obrázka na vytvorenie náhľadu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
