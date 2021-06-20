@@ -21,7 +21,7 @@
     <message>
         <location filename="../../build/filer/ui_about.h" line="138"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="143"/>
@@ -46,21 +46,21 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
 
-Ce programme est du logiciel libre ; vous le redistribuer
+Ce programme est du logiciel libre&#xa0;; vous le redistribuer
 avec ou sans modification sous les termes de la licence pu-
 blique générale GNU telle que publiée par le fondation pour
 le logiciel libre, soit en version 2, soit en n&apos;importe quelle
 version ultérieure (à votre discrétion).
 
 Ce programme est distribué dans l&apos;espoir qu&apos;il soit utile,
-mais SANS AUCUNE GARANTIE ; sans même la garantie impli-
+mais SANS AUCUNE GARANTIE&#xa0;; sans même la garantie impli-
 cite de QUALITÉ MARCHANDE ou d&apos;APTITUDE À UN CERTAIN
-BUT. Voir la licence publique générale GNU pour de plus am-
+BUT.&#xa0;Voir la licence publique générale GNU pour de plus am-
 ples détails.
 
 Vous devriez avoir reçu une copie de la licence publique géné-
-rale GNU avec ce programme ; si ce n&apos;est pas le cas, écrivez à la
-fondation pour le logiciel libre à l&apos;adresse ci-dessous :
+rale GNU avec ce programme&#xa0;; si ce n&apos;est pas le cas, écrivez à la
+fondation pour le logiciel libre à l&apos;adresse ci-dessous&#xa0;:
 Free Software Foundation, Inc.n 51 Franklin Street,
 Fifth Floor, Boston, MA 02110-1301, USA. {2009 ?} {2014 ?} {2
 ?} {51 ?} {02110-1301,?}</translation>
@@ -74,7 +74,7 @@ Fifth Floor, Boston, MA 02110-1301, USA. {2009 ?} {2014 ?} {2
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programmation :
+        <translation>Programmation&#xa0;:
 Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -105,21 +105,21 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
 
-Ce programme est du logiciel libre ; vous le redistribuer
+Ce programme est du logiciel libre&#xa0;; vous le redistribuer
 avec ou sans modification sous les termes de la licence pu-
 blique générale GNU telle que publiée par le fondation pour
 le logiciel libre, soit en version 2, soit en n&apos;importe quelle
 version ultérieure (à votre discrétion).
 
 Ce programme est distribué dans l&apos;espoir qu&apos;il soit utile,
-mais SANS AUCUNE GARANTIE ; sans même la garantie impli-
+mais SANS AUCUNE GARANTIE&#xa0;; sans même la garantie impli-
 cite de QUALITÉ MARCHANDE ou d&apos;APTITUDE À UN CERTAIN
-BUT. Voir la licence publique générale GNU pour de plus am-
+BUT.&#xa0;Voir la licence publique générale GNU pour de plus am-
 ples détails.
 
 Vous devriez avoir reçu une copie de la licence publique géné-
-rale GNU avec ce programme ; si ce n&apos;est pas le cas, écrivez à la
-fondation pour le logiciel libre à l&apos;adresse ci-dessous :
+rale GNU avec ce programme&#xa0;; si ce n&apos;est pas le cas, écrivez à la
+fondation pour le logiciel libre à l&apos;adresse ci-dessous&#xa0;:
 Free Software Foundation, Inc.n 51 Franklin Street,
 Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
@@ -144,7 +144,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="113"/>
         <source>Type of medium:</source>
-        <translation>Type de média :</translation>
+        <translation>Type de média&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="114"/>
@@ -154,7 +154,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="115"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Veuillez sélectionner l&apos;action que vous voulez effectuer :</translation>
+        <translation>Veuillez sélectionner l&apos;action que vous voulez effectuer&#xa0;:</translation>
     </message>
 </context>
 <context>
@@ -162,17 +162,17 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formulaire</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="76"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Bureau</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="77"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Dossier bureau :</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="79"/>
@@ -182,7 +182,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="84"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Chemin du dossier</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="85"/>
@@ -205,17 +205,17 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="256"/>
         <source>Wallpaper mode:</source>
-        <translation>Mode du fond d&apos;écran :</translation>
+        <translation>Mode du fond d&apos;écran&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="257"/>
         <source>Wallpaper image file:</source>
-        <translation>Fichier image du fond d&apos;écran :</translation>
+        <translation>Fichier image du fond d&apos;écran&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="259"/>
         <source>Select background color:</source>
-        <translation>Sélectionnez la couleur d&apos;arrière-plan :</translation>
+        <translation>Sélectionnez la couleur d&apos;arrière-plan&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="261"/>
@@ -240,17 +240,17 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="271"/>
         <source>Select  text color:</source>
-        <translation>Sélectionnez la couleur du texte :</translation>
+        <translation>Sélectionnez la couleur du texte&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="272"/>
         <source>Select shadow color:</source>
-        <translation>Sélectionnez la couleur de l&apos;ombre :</translation>
+        <translation>Sélectionnez la couleur de l&apos;ombre&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="273"/>
         <source>Select font:</source>
-        <translation>Sélectionnez la police :</translation>
+        <translation>Sélectionnez la police&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="275"/>
@@ -260,7 +260,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="276"/>
         <source>Window Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestionnaire de fenêtres</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="277"/>
@@ -312,7 +312,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="563"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Accueil</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="565"/>
@@ -422,37 +422,37 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="597"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Croissant</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="598"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Décroissant</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="599"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Par Nom de Fichier</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="600"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Par &amp;Date de Modification</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="601"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Par &amp;Type de Fichier</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="602"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Par propriétaire</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="603"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Dossier d&apos;abbord</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="619"/>
@@ -472,17 +472,17 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="629"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sensible à la Casse</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="630"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Par &amp;Taille de Fichier</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="631"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fermer la fenêtre</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="595"/>
@@ -625,22 +625,22 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="638"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Maj+N</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="640"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="643"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtre</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="646"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nouveau</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="649"/>
@@ -702,17 +702,17 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="637"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fichier</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="639"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fichier vierge</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="641"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Trouver des Fichiers</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="642"/>
@@ -722,7 +722,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="644"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrer par Chaîne de Caractères...</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="645"/>
@@ -737,7 +737,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="648"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Voir</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="650"/>
@@ -846,7 +846,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Fichiers ou répertoires à ouvrir</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="500"/>
@@ -924,12 +924,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Effacer le texte (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Version: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="907"/>
@@ -986,7 +986,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../tabpage.cpp" line="261"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Espace libre: %1 (total : %2)</translation>
+        <translation>Espace libre: %1 (total&#xa0;: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="276"/>
@@ -1007,7 +1007,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../tabpage.cpp" line="426"/>
         <source>%1 item(s) selected</source>
-        <translation>%1 élément(s) sélectionné(s)</translation>
+        <translation>%1&#xa0;élément(s) sélectionné(s)</translation>
     </message>
 </context>
 <context>
@@ -1069,27 +1069,27 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="744"/>
         <source>Size of big icons:</source>
-        <translation>Taille des grandes icônes :</translation>
+        <translation>Taille des grandes icônes&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="745"/>
         <source>Size of small icons:</source>
-        <translation>Taille des petites icônes :</translation>
+        <translation>Taille des petites icônes&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="746"/>
         <source>Size of thumbnails:</source>
-        <translation>Taille des vignettes :</translation>
+        <translation>Taille des vignettes&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="747"/>
         <source>Size of side pane icons:</source>
-        <translation>Taille des icônes de panneau latéral :</translation>
+        <translation>Taille des icônes de panneau latéral&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="743"/>
         <source>Icon theme:</source>
-        <translation>Thème d&apos;icônes : </translation>
+        <translation>Thème d&apos;icônes&#xa0;: </translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="753"/>
@@ -1099,12 +1099,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="757"/>
         <source>Default width of new windows:</source>
-        <translation>Largeur par défaut des nouvelles fenêtres :</translation>
+        <translation>Largeur par défaut des nouvelles fenêtres&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="758"/>
         <source>Default height of new windows:</source>
-        <translation>Hauteur par défaut des nouvelles fenêtres :</translation>
+        <translation>Hauteur par défaut des nouvelles fenêtres&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="754"/>
@@ -1114,12 +1114,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="755"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>Afficher le bouton « Fermer » sur les onglets	</translation>
+        <translation>Afficher le bouton «&#xa0;Fermer&#xa0;» sur les onglets	</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="756"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>Mémoriser la taille de la dernière fenêtre fermée</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="724"/>
@@ -1134,17 +1134,17 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="726"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Délai de sélection automatique en mode simple clic (0 pour désactiver)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="727"/>
         <source>Default view mode:</source>
-        <translation>Mode de vue par défaut :</translation>
+        <translation>Mode de vue par défaut&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="728"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sec</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="736"/>
@@ -1174,62 +1174,62 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="713"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Moniteur</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="729"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Marques pages :</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="732"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans l&apos;onglet actuel</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="733"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans un nouvel onglet</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="734"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans une nouvelle fenêtre</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="739"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Effacer les fichiers sur un support amovible au lieu de créer une «&#xa0;corbeille&#xa0;»</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="740"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmer avant de déplacer des fichiers dans la «&#xa0;corbeille&#xa0;»</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="741"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne demandez pas d’options au lancement d&apos;un exécutable</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="748"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Interface utilisateur</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="750"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Traiter les fichiers de sauvegarde comme cachés</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="751"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Toujours afficher le nom complet des fichiers</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="752"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher les icônes des fichiers cachés ombragés</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="759"/>
@@ -1274,7 +1274,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="780"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation>Ne pas générer de vignettes pour les fichiers image excédant cette taille :</translation>
+        <translation>Ne pas générer de vignettes pour les fichiers image excédant cette taille&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="781"/>
@@ -1354,11 +1354,11 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="792"/>
         <source>Terminal emulator:</source>
-        <translation>Émulateur de terminal :</translation>
+        <translation>Émulateur de terminal&#xa0;:</translation>
     </message>
     <message>
         <source>Switch user command:</source>
-        <translation type="vanished">Commande de changement d&apos;utilisateur :</translation>
+        <translation type="vanished">Commande de changement d&apos;utilisateur&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="794"/>
@@ -1369,7 +1369,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
     <message>
         <source>Archiver integration:</source>
-        <translation type="vanished">Intégration du logiciel de compression de données :</translation>
+        <translation type="vanished">Intégration du logiciel de compression de données&#xa0;:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="749"/>
