@@ -137,6 +137,8 @@ DesktopWindow::DesktopWindow(int screenNum):
         connect(proxyModel_, &Fm::ProxyFolderModel::rowsAboutToBeRemoved, this, &DesktopWindow::onRowsAboutToBeRemoved);
         connect(proxyModel_, &Fm::ProxyFolderModel::layoutChanged, this, &DesktopWindow::onLayoutChanged);
         connect(proxyModel_, &Fm::ProxyFolderModel::sortFilterChanged, this, &DesktopWindow::onModelSortFilterChanged);
+
+        connect(this, &Fm::FolderView::inlineRenamed, this, &DesktopWindow::onInlineRenaming);
     }
 
     // remove frame
@@ -1207,6 +1209,20 @@ void DesktopWindow::removeBottomGap() {
     setMargins(cellMargins);
     // in case the text shadow is reset to (0,0,0,0)
     setShadow(settings.desktopShadowColor());
+}
+
+void DesktopWindow::onInlineRenaming(const QString& oldName, const QString& newName) {
+    // preserve custom position on inline renaming
+    auto old_name = oldName.toStdString();
+    for(auto it = customItemPos_.cbegin(); it != customItemPos_.cend(); ++it) {
+        if(it->first == old_name) {
+            auto pos = it->second;
+            customItemPos_.erase(it);
+            customItemPos_[newName.toStdString()] = pos;
+            storeCustomPos();
+            break;
+        }
+    }
 }
 
 void DesktopWindow::paintBackground(QPaintEvent* event) {

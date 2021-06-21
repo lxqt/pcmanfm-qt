@@ -140,6 +140,8 @@ protected Q_SLOTS:
 
     void updateTrashIcon();
 
+    void onInlineRenaming(const QString& oldName, const QString& newName);
+
 private:
     void removeBottomGap();
     void addDesktopActions(QMenu* menu);
