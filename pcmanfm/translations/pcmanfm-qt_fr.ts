@@ -559,7 +559,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished">Focus sur l&apos;entrée du chemin</translation>
+        <translation>Focus sur l&apos;entrée du chemin</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -622,7 +622,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished">Monter</translation>
+        <translation>Monter</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
@@ -710,7 +710,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="133"/>
         <source>&amp;Toolbars</source>
-        <translation type="unfinished">Barre d&apos; ou&amp;tils</translation>
+        <translation>Barre d&apos;ou&amp;tils</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="140"/>
