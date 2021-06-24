@@ -16,7 +16,7 @@
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation>가벼운 파일 매니저</translation>
+        <translation>가벼운 파일 관리자</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
@@ -48,18 +48,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
-이 프로그램은 무료 소프트웨어입니다; Free Software Foundation에서 
-발행한 GNU General Public License 조건에 따라 재배포 및/또는 
-수정할 수 있습니다; e라이센스 버전 2 또는 (선택사항에 따라) 
-최신 버전을 선택합니다.
+이 프로그램은 자유 소프트웨어이므로 Free Software Foundation에서
+게시한 GNU General Public License의 조건에 따라 재배포 및/또는
+수정할 수 있습니다(라이센스의 버전 2 또는 원하는 대로).
 
-이 프로그램은 유용할 것이라는 희망으로 배포되지만 어떠한 보증도 
-없습니다; 상품성 또는 특정 목적에의 적합성에 대한 묵시적 보증도 
-없습니다. 자세한 내용은 GNU General Public License를 참조하십시오.
+본 프로그램은 유용하지만 상품성이나 특정 목적에 대한 적합성에 대한
+묵시적 보증도 없이 아무런 보증 없이 배포됩니다.
+자세한 내용은 GNU General Public License를 참조하십시오.
 
-이 프로그램과 함께 GNU General Public License 사본을 받았어야 합니다; 
+이 프로그램과 함께 GNU General Public License 사본을 받았어야 합니다.
 그렇지 않다면, Free Software Foundation, Inc., 51 Franklin Street, 
-Fifth Floor, Boston, MA  02110-1301, USA로 편지를 쓰세요.</translation>
+Fifth Floor, Boston, MA 02110-1301, USA로 편지를 쓰세요.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="82"/>
@@ -84,7 +83,7 @@ Fifth Floor, Boston, MA  02110-1301, USA로 편지를 쓰세요.</translation>
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>이동식 매체가 삽입되었습니다</translation>
+        <translation>이동식 미디어가 삽입되었습니다</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
@@ -94,7 +93,7 @@ Fifth Floor, Boston, MA  02110-1301, USA로 편지를 쓰세요.</translation>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>미디어 종류:</translation>
+        <translation>미디어 유형:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
@@ -104,7 +103,7 @@ Fifth Floor, Boston, MA  02110-1301, USA로 편지를 쓰세요.</translation>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>수행할 작업을 선택하세요:</translation>
+        <translation>수행할 작업을 선택하십시오:</translation>
     </message>
 </context>
 <context>
@@ -112,7 +111,7 @@ Fifth Floor, Boston, MA  02110-1301, USA로 편지를 쓰세요.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation>일괄 이름 변경</translation>
+        <translation>일괄 이름변경</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
@@ -122,7 +121,7 @@ Fifth Floor, Boston, MA  02110-1301, USA로 편지를 쓰세요.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation>선택된 파일을 변경할 이름:</translation>
+        <translation>선택한 파일의 이름을 다음으로 변경:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
@@ -135,7 +134,7 @@ Fifth Floor, Boston, MA  02110-1301, USA로 편지를 쓰세요.</translation>
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>원격 서버 접속</translation>
+        <translation>원격 서버에 연결</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
@@ -155,7 +154,7 @@ Fifth Floor, Boston, MA  02110-1301, USA로 편지를 쓰세요.</translation>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation>형삭:</translation>
+        <translation>유형:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
@@ -235,12 +234,12 @@ Fifth Floor, Boston, MA  02110-1301, USA로 편지를 쓰세요.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation>종류:</translation>
+        <translation>유형:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation>애플리케이션</translation>
+        <translation>응용프로그램</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
@@ -253,12 +252,12 @@ Fifth Floor, Boston, MA  02110-1301, USA로 편지를 쓰세요.</translation>
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">양식</translation>
+        <translation>양식</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation>바탕 화면</translation>
+        <translation>바탕화면</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
@@ -699,7 +698,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>사용자 지정된 보기 설정</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
@@ -879,7 +878,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="493"/>
         <source>Pr&amp;eferences</source>
-        <translation>속성(&amp;E)</translation>
+        <translation>기본설정(&amp;E)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="501"/>
@@ -894,57 +893,57 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>&amp;By File Name</source>
-        <translation>이름(&amp;B)</translation>
+        <translation>파일 이름별(&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>By &amp;Modification Time</source>
-        <translation>수정한 날짜(&amp;M)</translation>
+        <translation>수정 시간별(&amp;M)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <source>By C&amp;reation Time</source>
-        <translation>작성 시간별(&amp;R)</translation>
+        <translation>생성 시간별(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By Deletio&amp;n Time</source>
-        <translation>삭제한 날짜(&amp;N)</translation>
+        <translation>삭제 시간별(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <source>By File &amp;Type</source>
-        <translation>유형(&amp;T)</translation>
+        <translation>파일 유형별(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <source>By &amp;Owner</source>
-        <translation>소유자(&amp;O)</translation>
+        <translation>소유자별(&amp;O)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="565"/>
         <source>By &amp;Group</source>
-        <translation>그룹(&amp;G)</translation>
+        <translation>그룹별(&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="573"/>
         <source>&amp;Folder First</source>
-        <translation>폴더 먼저(&amp;F)</translation>
+        <translation>폴더 우선(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="581"/>
         <source>&amp;Hidden Last</source>
-        <translation>숨겨진 파일 나중에(&amp;H)</translation>
+        <translation>숨겨진 항목 마지막(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>여기서부터 설정을 반복적으로 유지</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>승계된 설정의 소스로 이동</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -989,12 +988,12 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="867"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation>필터바 보기/가리키기(&amp;S)</translation>
+        <translation>필터 표시줄 표시/가리키기(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Show Filter Bar</source>
-        <translation>필터바 보기</translation>
+        <translation>필터 표시줄 표시</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="873"/>
@@ -1004,12 +1003,12 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="881"/>
         <source>S&amp;plit View</source>
-        <translation>나눠 보기(&amp;P)</translation>
+        <translation>보기 창 분할(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="884"/>
         <source>Split View</source>
-        <translation>나눠 보기</translation>
+        <translation>보기 창 분할</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="887"/>
@@ -1049,7 +1048,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="925"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>바로가기 숨기기(&amp;S)</translation>
+        <translation>단축키 숨김(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="930"/>
@@ -1070,7 +1069,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <source>&amp;Clear All Filters</source>
-        <translation>모든 필터 초기화(&amp;C)</translation>
+        <translation>모든 필터 지우기(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
@@ -1095,7 +1094,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>Connect to &amp;Server</source>
-        <translation>서버 접속(&amp;S)</translation>
+        <translation>서버에 연결(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="843"/>
@@ -1130,7 +1129,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="762"/>
         <source>Permanent &amp;filter bar</source>
-        <translation>영구적인 필터바(&amp;F)</translation>
+        <translation>영구 필터 표시줄(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
@@ -1140,7 +1139,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="807"/>
         <source>Menu bar</source>
-        <translation>메뉴바</translation>
+        <translation>메뉴 표시줄</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="810"/>
@@ -1201,7 +1200,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="631"/>
         <source>&amp;Invert Selection</source>
-        <translation>선택 반전(&amp;I)</translation>
+        <translation>선택 항목 반전(&amp;I)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
@@ -1350,12 +1349,12 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>데몬으로 PCManFM-Qt 실행</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt 종료</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1600,7 +1599,7 @@ PCManFM-Qt에서 열립니다.</translation>
         <location filename="../desktopwindow.cpp" line="963"/>
         <location filename="../desktopwindow.cpp" line="1000"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>현재 위치 유지(&amp;K)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="970"/>
@@ -1620,7 +1619,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="1035"/>
         <source>Desktop Preferences</source>
-        <translation>데스크톱 속성</translation>
+        <translation>데스크톱 기본설정</translation>
     </message>
 </context>
 <context>
@@ -1649,12 +1648,12 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="713"/>
         <source>Hide menu bar</source>
-        <translation>메뉴바 숨기기</translation>
+        <translation>메뉴 모음 숨김</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="714"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
-        <translation type="unfinished"></translation>
+        <translation>이렇게하면 메뉴 표시줄이 완전히 숨겨지고, Ctrl + M을 사용하여 다시 표시합니다.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1086"/>
@@ -1695,7 +1694,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>작은 아이콘으로 보기</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="200"/>
@@ -1760,7 +1759,7 @@ PCManFM-Qt에서 열립니다.</translation>
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>%1 파일으르 여시겠습니까?</numerusform>
+            <numerusform>이 %1 파일을 여시겠습니까?</numerusform>
         </translation>
     </message>
     <message>
@@ -1784,7 +1783,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>속성</translation>
+        <translation>기본설정</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -1815,7 +1814,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation>새로 만든 파일 선택</translation>
+        <translation>최근 생성된 파일 선택</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1865,7 +1864,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../preferences.ui" line="536"/>
         <source>Remember the size of the last closed window</source>
-        <translation>마지막으로 종료된 창의 크기를 기억</translation>
+        <translation>마지막으로 닫힌 창의 크기 기억</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="543"/>
@@ -1910,7 +1909,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../preferences.ui" line="188"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>삭제된 파일을 디스크에서 지우는 대신 &quot;휴지통&quot;으로 이동합니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="607"/>
@@ -1961,47 +1960,47 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../preferences.ui" line="195"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;휴지통&quot; 생성 대신 이동식 미디어의 파일 지우기</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="202"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;휴지통&quot;으로 파일을 이동하기 전에 확인</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
         <location filename="../preferences.ui" line="372"/>
         <location filename="../preferences.ui" line="382"/>
         <source>Requires application restart to take effect completely</source>
-        <translation type="unfinished"></translation>
+        <translation>완전히 적용하려면 프로그램을 다시 시작해야합니다</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>프롬프트 없이 실행 파일 시작</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>이름이 변경된 파일도 선택됩니다</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="288"/>
         <location filename="../preferences.ui" line="298"/>
         <source>Used by Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>아이콘 보기에서 사용됨</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="305"/>
         <location filename="../preferences.ui" line="315"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>작은 아이콘으로 보기 및 상세 목록 보기에서 사용됨</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="322"/>
         <location filename="../preferences.ui" line="332"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>썸네일 보기에서 사용됨</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="352"/>
@@ -2055,17 +2054,18 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../preferences.ui" line="511"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>선택하지 않으면 탭이 두 개 이상 있는
+경우에만 탭 표시줄이 표시됩니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="529"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>새로 열린 탭으로 전환</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>새 창에서 마지막 창 탭 다시 열기</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
@@ -2073,18 +2073,20 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>기본 제공된 썸네일은 Qt에서 지원하는 이미지의 썸네일을 만듭니다.
+
+일반적으로 대부분의 이미지 유형이 지원됩니다. 기본 크기 제한은 4 MiB입니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>내장 썸네일에 대한 이미지 크기 제한:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2092,42 +2094,44 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>기존의 경우 비디오, PDF 문서 등에 외부 썸네일을 사용합니다.
+
+값이 -1이면 파일 크기에 제한이 없음을 의미합니다(기본값).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>외부 썸네일에 대한 파일 크기 제한:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>제한 없음</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>예:&lt;br&gt;터미널의 경우: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;사용자 전환의 경우: &lt;i&gt;lxsudo %s&lt;/i&gt; 또는 &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt;은(는) 터미널 또는 su를 사용하여 실행할 명령줄입니다&lt;br&gt; 중요: lxsudo를 사용하십시오. sudo만 사용하면 설정 파일의 사용 권한이 손상됩니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="900"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>변경 내용을 적용하려면 프로그램을 다시 시작해야 합니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>책갈피 메뉴:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl + 마우스 오른쪽 클릭으로 폴더 컨텍스트 메뉴 표시</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>가능한 한 멀리 새 탭에서 폴더 열기</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
@@ -2137,17 +2141,17 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="375"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>항상 실제 파일 이름 표시</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="392"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 도구 설명 표시 안함</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="604"/>
         <source>Needs ffmpegthumbnailer</source>
-        <translation type="unfinished"></translation>
+        <translation>ffmpegthumbnailer 필요</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="710"/>
@@ -2157,32 +2161,32 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="716"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>프로그램 시작 시 마운트 가능 볼륨 자동으로 마운트</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="723"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>이동식 미디어를 삽입할 때 자동으로 마운트</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="730"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>이동식 미디어를 삽입할 때 사용 가능한 옵션 표시</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="740"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>이동식 미디어가 마운트 해제된 경우:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="746"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>이동식 미디어가 포함된 탭 닫기(&amp;T)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="753"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>탭의 폴더를 홈 폴더로 변경(&amp;G)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="780"/>
@@ -2192,17 +2196,17 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="789"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
+        <translation>터미널 에뮬레이터:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="796"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>사용자 명령 전환(&amp;U):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="822"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>아카이브 통합(&amp;T):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="845"/>
@@ -2212,22 +2216,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="851"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>메뉴에 사용자 정의 템플릿만 표시</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="858"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>각 MIME 유형에 대해 하나의 템플릿만 표시</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="865"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>템플릿에서 생성한 후 기본 응용프로그램 실행</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="358"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>IEC 이진 접두사 대신 SI 소수 접두사 사용</translation>
     </message>
 </context>
 <context>
@@ -2235,12 +2239,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Renaming files...</source>
-        <translation>파일 이름 바꾸는 중...</translation>
+        <translation>파일 이름변경 중...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Abort</source>
-        <translation>중지</translation>
+        <translation>중단</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
@@ -2272,7 +2276,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1077"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>관리자로 열 수 없습니다.</translation>
     </message>
 </context>
 </TS>

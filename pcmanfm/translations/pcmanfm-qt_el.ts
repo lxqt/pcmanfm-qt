@@ -691,7 +691,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσαρμοσμένες ρυθμίσεις προβολής</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
@@ -706,7 +706,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="281"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="284"/>
@@ -931,12 +931,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Διατήρηση των ρυθμίσεων αναδρομικά από εδώ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάβαση στην πηγή των κληρονομημένων ρυθμίσεων</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -1352,12 +1352,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκτέλεση του PCManFM-Qt ως δαίμονα</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Έξοδος του PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
