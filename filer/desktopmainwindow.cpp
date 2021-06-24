@@ -86,6 +86,11 @@ void DesktopMainWindow::setCaseSensitive(Qt::CaseSensitivity sensitivity)
   ui.actionCaseSensitive->setChecked(sensitivity == Qt::CaseSensitive);
 }
 
+void Filer::DesktopMainWindow::on_actionOpen_triggered()
+{
+  Q_EMIT open();
+}
+
 void DesktopMainWindow::on_actionNewFolder_triggered()
 {
   Q_EMIT newFolder();

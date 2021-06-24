@@ -106,7 +106,7 @@
      <x>0</x>
      <y>0</y>
      <width>460</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -121,6 +121,8 @@
      <addaction name="actionNewBlankFile"/>
     </widget>
     <addaction name="actionNewTab"/>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
     <addaction name="actionNewWin"/>
     <addaction name="separator"/>
     <addaction name="menuCreateNew"/>
@@ -629,7 +631,7 @@
     <string>&amp;Delete</string>
    </property>
    <property name="shortcut">
-    <string>Del</string>
+    <string>Ctrl+Backspace</string>
    </property>
   </action>
   <action name="actionRename">
@@ -795,6 +797,14 @@
    </property>
    <property name="visible">
     <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
    </property>
   </action>
  </widget>

@@ -57,7 +57,7 @@ namespace Filer {
 
 MainWindow::MainWindow(FmPath* path):
   QMainWindow(),
-  fileLauncher_(this) {
+  fileLauncher_(NULL){
 
   Settings& settings = static_cast<Application*>(qApp)->settings();
   setAttribute(Qt::WA_DeleteOnClose);
@@ -185,6 +185,9 @@ MainWindow::MainWindow(FmPath* path):
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_0 + i), this);
     connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutJumpToTab);
   }
+
+  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down), this); // pronono: open
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionOpen_triggered); // probono
 
   shortcut = new QShortcut(QKeySequence(Qt::Key_Backspace), this);
   connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionGoUp_triggered);
@@ -466,6 +469,25 @@ void MainWindow::on_actionCloseWindow_triggered() {
   // FIXME: should we save state here?
   close();
   // the window will be deleted automatically on close
+}
+
+// probono
+void MainWindow::on_actionOpen_triggered() {
+    TabPage* page = currentPage();
+
+    if(page) {
+        FmFileInfoList* files = page->selectedFiles();
+
+        if(files) {
+            if(page->fileLauncher()) {
+                page->fileLauncher()->launchFiles(NULL, files);
+            }
+            else { // use the default launcher
+                Fm::FileLauncher launcher;
+                launcher.launchFiles(NULL, files);
+            }
+        }
+    }
 }
 
 void MainWindow::on_actionFileProperties_triggered() {

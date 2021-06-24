@@ -137,6 +137,10 @@ DesktopWindow::DesktopWindow(int screenNum):
 
     // setup shortcuts
     QShortcut* shortcut;
+
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down), this); // pronono: open
+    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onOpenActivated); // probono
+
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_X), this); // cut
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCutActivated);
 
@@ -161,11 +165,15 @@ DesktopWindow::DesktopWindow(int screenNum):
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this); // force delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
 
+    shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::CTRL + Qt::Key_Backspace), this); // probono: force delete
+    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
+
     desktopMainWindow_ = new DesktopMainWindow(nullptr);
     layout()->setMenuBar(desktopMainWindow_->getMenuBar());
 
     updateMenu();
 
+    connect(desktopMainWindow_, &DesktopMainWindow::open, this, &DesktopWindow::onOpenActivated);
     connect(desktopMainWindow_, &DesktopMainWindow::fileProperties, this, &DesktopWindow::onFilePropertiesActivated);
     connect(desktopMainWindow_, &DesktopMainWindow::preferences, this, &DesktopWindow::onFilerPreferences);
     connect(desktopMainWindow_, &DesktopMainWindow::openFolder, this, &DesktopWindow::onOpenFolder);
@@ -784,6 +792,20 @@ void DesktopWindow::onRenameActivated() {
             FmFileInfo* info = FM_FILE_INFO(l->data);
             Fm::renameFile(info, NULL);
             fm_file_info_list_unref(files);
+        }
+    }
+}
+
+// probono
+void DesktopWindow::onOpenActivated()
+{
+    if(FmFileInfoList* files = selectedFiles()) {
+        if(View::fileLauncher()) {
+            View::fileLauncher()->launchFiles(NULL, files);
+        }
+        else { // use the default launcher
+            Fm::FileLauncher launcher;
+            launcher.launchFiles(NULL, files);
         }
     }
 }

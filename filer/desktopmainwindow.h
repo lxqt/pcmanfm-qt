@@ -46,6 +46,8 @@ public:
   void setCaseSensitive(Qt::CaseSensitivity sensitivity);
 
 protected Q_SLOTS:
+  void on_actionOpen_triggered();
+
   void on_actionNewFolder_triggered();
   void on_actionNewBlankFile_triggered();
   void on_actionFileProperties_triggered();
@@ -95,6 +97,7 @@ protected Q_SLOTS:
   void onBookmarkActionTriggered();
 
 Q_SIGNALS:
+  void open();
   void newFolder();
   void newBlankFile();
   void fileProperties();

@@ -64,6 +64,7 @@ protected Q_SLOTS:
   void on_actionNewBlankFile_triggered();
   void on_actionCloseTab_triggered();
   void on_actionCloseWindow_triggered();
+  void on_actionOpen_triggered(); // probono
   void on_actionFileProperties_triggered();
   void on_actionFolderProperties_triggered();
 

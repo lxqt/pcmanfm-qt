@@ -105,6 +105,7 @@ protected Q_SLOTS:
   void onDesktopPreferences();
   void onFilerPreferences();
   void onGoUp();
+  void onOpenActivated(); // probono
   void onNewFolder();
   void onNewBlankFile();
   void onOpenTerminal();
