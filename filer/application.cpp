@@ -562,19 +562,10 @@ void Application::setWallpaper(QString path, QString modeString) {
       break;
     }
   }
-  // FIXME: support different wallpapers on different screen.
   // update wallpaper
   if(changed) {
-    if(enableDesktopManager_) {
-      Q_FOREACH(DesktopWindow * desktopWindow, desktopWindows_) {
-        if(!path.isEmpty())
-          desktopWindow->setWallpaperFile(path);
-        if(mode != settings_.wallpaperMode())
-          desktopWindow->setWallpaperMode(mode);
-        desktopWindow->updateWallpaper();
-      }
       settings_.save(); // save the settings to the config file
-    }
+      static_cast<Application*>(qApp)->updateDesktopsFromSettings(); // probono: Fixes https://github.com/helloSystem/Filer/issues/100
   }
 }
 
