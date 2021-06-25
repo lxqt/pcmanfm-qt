@@ -132,6 +132,7 @@ void DesktopEntryDialog::accept() {
     // make file name from entry name but so that it doesn't exist on Desktop
     name = name.simplified();
     name.replace(QChar(QChar::Space), QLatin1Char('_'));
+    name.replace(QLatin1Char('/'), QLatin1Char('_'));
     QString suffix;
     int i = 0;
     while(QFile::exists(QString::fromUtf8(pathStrPtr.get())
