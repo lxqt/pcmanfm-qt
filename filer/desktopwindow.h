@@ -153,7 +153,6 @@ private:
   WallpaperMode wallpaperMode_;
   DesktopItemDelegate* delegate_;
   Launcher fileLauncher_;
-  bool showWmMenu_;
 
   int screenNum_;
   QHash<QByteArray, QPoint> customItemPos_;

@@ -241,7 +241,7 @@ bool Application::parseCommandLineArgs() {
       desktopManager(false);
 
     if(parser.isSet(desktopPrefOption)) { // desktop preference dialog
-      desktopPrefrences(parser.value(desktopPrefOption));
+      desktopPrefrences();
       keepRunning = true;
     }
     else if(parser.isSet(findFilesOption)) { // file searching utility
@@ -440,15 +440,11 @@ void Application::desktopManager(bool enabled) {
   enableDesktopManager_ = enabled;
 }
 
-void Application::desktopPrefrences(QString page) {
+void Application::desktopPrefrences() {
   // show desktop preference window
   if(!desktopPreferencesDialog_) {
     desktopPreferencesDialog_ = new DesktopPreferencesDialog();
-
-    // Should be used only one time
-    desktopPreferencesDialog_->setEditDesktopFolder(!lxqtRunning_);
   }
-  desktopPreferencesDialog_.data()->selectPage(page);
   desktopPreferencesDialog_.data()->show();
   desktopPreferencesDialog_.data()->raise();
   desktopPreferencesDialog_.data()->activateWindow();

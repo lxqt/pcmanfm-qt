@@ -185,14 +185,6 @@ public:
     desktopFont_ = font;
   }
 
-  bool showWmMenu() const {
-    return showWmMenu_;
-  }
-
-  void setShowWmMenu(bool value) {
-    showWmMenu_ = value;
-  }
-
   bool desktopShowHidden() const {
     return desktopShowHidden_;
   }
@@ -574,7 +566,6 @@ private:
   QColor desktopFgColor_;
   QColor desktopShadowColor_;
   QFont desktopFont_;
-  bool showWmMenu_;
 
   bool desktopShowHidden_;
   Qt::SortOrder desktopSortOrder_;

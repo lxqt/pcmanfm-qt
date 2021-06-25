@@ -37,28 +37,15 @@ public:
 
   virtual void accept();
 
-  void selectPage(QString name);
-
-  // Should only be used one time.
-  void setEditDesktopFolder(const bool enabled);
-
 protected Q_SLOTS:
-  void onApplyClicked();
   void onWallpaperModeChanged(int index);
   void onBrowseClicked();
-  void onBrowseDesktopFolderClicked();
 
   void applySettings();
 
 private:
   Ui::DesktopPreferencesDialog ui;
-  Ui::DesktopFolder uiDesktopFolder;
-
-  bool editDesktopFolderEnabled;
-  QWidget* desktopFolderWidget;
   QString desktopFolder;
-
-  void setupDesktopFolderUi();
 };
 
 }

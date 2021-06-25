@@ -72,7 +72,6 @@ DesktopWindow::DesktopWindow(int screenNum):
     model_(NULL),
     proxyModel_(NULL),
     fileLauncher_(NULL),
-    showWmMenu_(false),
     wallpaperMode_(WallpaperNone),
     relayoutTimer_(NULL),
     desktopMainWindow_(NULL){
@@ -395,14 +394,11 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
     setForeground(settings.desktopFgColor());
     setBackground(settings.desktopBgColor());
     setShadow(settings.desktopShadowColor());
-    showWmMenu_ = settings.showWmMenu();
     updateWallpaper();
     update();
 }
 
 void DesktopWindow::onFileClicked(int type, FmFileInfo* fileInfo) {
-    if(!fileInfo && showWmMenu_)
-        return; // do not show the popup if we want to use the desktop menu provided by the WM.
     View::onFileClicked(type, fileInfo);
 }
 
@@ -436,7 +432,7 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
 }
 
 void DesktopWindow::onDesktopPreferences() {
-    static_cast<Application* >(qApp)->desktopPrefrences(QString());
+    static_cast<Application* >(qApp)->desktopPrefrences();
 }
 
 void DesktopWindow::onFilerPreferences()
@@ -919,25 +915,6 @@ bool DesktopWindow::eventFilter(QObject * watched, QEvent * event) {
         case QEvent::FontChange:
             if(model_)
                 queueRelayout();
-            break;
-        default:
-            break;
-        }
-    }
-    else if(listView_ && (watched == listView_->viewport())) {
-        switch(event->type()) {
-        case QEvent::MouseButtonPress:
-        case QEvent::MouseButtonRelease:
-            if(showWmMenu_) {
-                QMouseEvent* e = static_cast<QMouseEvent*>(event);
-                // If we want to show the desktop menus provided by the window manager instead of ours,
-                // we have to forward the mouse events we received to the root window.
-                // check if the user click on blank area
-                QModelIndex index = listView_->indexAt(e->pos());
-                if(!index.isValid() && e->button() != Qt::LeftButton) {
-                    forwardMouseEventToRoot(e);
-                }
-            }
             break;
         default:
             break;

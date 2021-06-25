@@ -64,7 +64,7 @@ public:
   void launchFiles(QString cwd, QStringList paths, bool inNewWindow);
   void setWallpaper(QString path, QString modeString);
   void preferences(QString page);
-  void desktopPrefrences(QString page);
+  void desktopPrefrences();
   void editBookmarks();
   void desktopManager(bool enabled);
   void findFiles(QStringList paths = QStringList());

@@ -65,7 +65,6 @@ Settings::Settings():
   desktopBgColor_(),
   desktopFgColor_(),
   desktopShadowColor_(),
-  showWmMenu_(false),
   desktopShowHidden_(false),
   desktopSortOrder_(Qt::AscendingOrder),
   desktopSortColumn_(Fm::FolderModel::ColumnFileName),
@@ -189,7 +188,6 @@ bool Settings::loadFile(QString filePath) {
     desktopFont_.fromString(settings.value("Font").toString());
   else
     desktopFont_ = QApplication::font();
-  showWmMenu_ = settings.value("ShowWmMenu", false).toBool();
   desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
 
   desktopSortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
@@ -222,9 +220,9 @@ bool Settings::loadFile(QString filePath) {
   shadowHidden_ = settings.value("ShadowHidden", false).toBool();
 
   // override config in libfm's FmConfig
-  bigIconSize_ = settings.value("BigIconSize", 48).toInt();
-  smallIconSize_ = settings.value("SmallIconSize", 24).toInt();
-  sidePaneIconSize_ = settings.value("SidePaneIconSize", 16).toInt(); // probono: 16 instead of 24
+  bigIconSize_ = settings.value("BigIconSize", 36).toInt(); // probono: 36 instead of 48
+  smallIconSize_ = settings.value("SmallIconSize", 16).toInt(); // probono: 16 instead of 24
+  sidePaneIconSize_ = settings.value("SidePaneIconSize", 12).toInt(); // probono: 12 instead of 24
   thumbnailIconSize_ = settings.value("ThumbnailIconSize", 128).toInt();
   settings.endGroup();
 
@@ -283,7 +281,6 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("FgColor", desktopFgColor_.name());
   settings.setValue("ShadowColor", desktopShadowColor_.name());
   settings.setValue("Font", desktopFont_.toString());
-  settings.setValue("ShowWmMenu", showWmMenu_);
   settings.setValue("ShowHidden", desktopShowHidden_);
   settings.setValue("SortOrder", sortOrderToString(desktopSortOrder_));
   settings.setValue("SortColumn", sortColumnToString(desktopSortColumn_));
