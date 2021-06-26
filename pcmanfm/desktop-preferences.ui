@@ -218,6 +218,13 @@ are left clicked, even when it is not the default file manager.</string>
         </widget>
        </item>
        <item>
+        <widget class="QCheckBox" name="allSticky">
+         <property name="text">
+          <string>Make all items stick to their positions</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <spacer name="verticalSpacer_2">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
