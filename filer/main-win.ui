@@ -82,6 +82,9 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
          </widget>
         </item>
         <item>
@@ -234,6 +237,12 @@
    </property>
    <property name="movable">
     <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
    </property>
    <property name="floatable">
     <bool>false</bool>

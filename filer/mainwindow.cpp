@@ -117,6 +117,8 @@ MainWindow::MainWindow(FmPath* path):
   connect(ui.sidePane, &Fm::SidePane::createNewFolderRequested, this, &MainWindow::onSidePaneCreateNewFolderRequested);
   connect(ui.sidePane, &Fm::SidePane::modeChanged, this, &MainWindow::onSidePaneModeChanged);
 
+  ui.splitter->setHandleWidth(0); // probono: No handles between side bar and main window content
+
   // detect change of splitter position
   connect(ui.splitter, &QSplitter::splitterMoved, this, &MainWindow::onSplitterMoved);
 

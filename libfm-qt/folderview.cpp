@@ -471,6 +471,8 @@ void FolderView::setViewMode(ViewMode _mode) {
     FolderViewTreeView* treeView = new FolderViewTreeView(this);
     connect(treeView, &FolderViewTreeView::activatedFiltered, this, &FolderView::onItemActivated);
 
+    treeView->setFrameStyle(QFrame::NoFrame); // probono: No border
+
     view = treeView;
     treeView->setItemsExpandable(false);
     treeView->setRootIsDecorated(false);
@@ -481,7 +483,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     treeView->setItemDelegateForColumn(FolderModel::ColumnFileName, delegate);
   }
   else {
-    FolderViewListView* listView;
+    FolderViewListView* listView;    
     if(view)
       listView = static_cast<FolderViewListView*>(view);
     else {
@@ -489,6 +491,9 @@ void FolderView::setViewMode(ViewMode _mode) {
       connect(listView, &FolderViewListView::activatedFiltered, this, &FolderView::onItemActivated);
       view = listView;
     }
+
+    listView->setFrameStyle(QFrame::NoFrame); // probono: No border
+
     // set our own custom delegate
     FolderItemDelegate* delegate = new FolderItemDelegate(listView);
     listView->setItemDelegateForColumn(FolderModel::ColumnFileName, delegate);

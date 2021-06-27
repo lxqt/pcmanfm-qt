@@ -42,6 +42,8 @@ SidePane::SidePane(QWidget* parent):
   verticalLayout = new QVBoxLayout(this);
   verticalLayout->setContentsMargins(0, 0, 0, 0);
 
+
+
   combo_ = new QComboBox(this);
   combo_->setFrame(false);
   combo_->addItem(tr("Places"));
@@ -90,9 +92,13 @@ void SidePane::setCurrentPath(FmPath* path) {
   switch(mode_) {
     case ModePlaces:
       static_cast<PlacesView*>(view_)->setCurrentPath(path);
+      static_cast<PlacesView*>(view_)->setFrameStyle(QFrame::NoFrame); // probono: No border
+      static_cast<PlacesView*>(view_)->setStyleSheet("background-color: #eef1f5;"); // probono: FIXME: Get from theme, do not hardcode
       break;
     case ModeDirTree:
       static_cast<DirTreeView*>(view_)->setCurrentPath(path);
+      static_cast<DirTreeView*>(view_)->setFrameStyle(QFrame::NoFrame); // probono: No border
+      static_cast<DirTreeView*>(view_)->setStyleSheet("background-color: #eef1f5;"); // probono: FIXME: Get from theme, do not hardcode
       break;
     default:;
   }
