@@ -697,7 +697,7 @@
     <string>Open &amp;Terminal</string>
    </property>
    <property name="shortcut">
-    <string>F4</string>
+    <string>Ctrl+T</string>
    </property>
   </action>
   <action name="actionOpenAsRoot">
