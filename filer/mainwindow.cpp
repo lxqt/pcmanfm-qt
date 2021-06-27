@@ -918,6 +918,12 @@ void MainWindow::updateViewMenuForCurrentPage() {
 }
 
 void MainWindow::updateUIForCurrentPage() {
+  // probono: Whenever we switch to a tab, see whether the user has items selected and enable/disable menu items accordingly
+  if(currentPage()->selectedFiles() == 0x0)
+    disableMenuItems();
+  else
+    enableMenuItems();
+
   TabPage* tabPage = currentPage();
 
   if(tabPage) {
@@ -968,6 +974,26 @@ void MainWindow::onTabPageTitleChanged(QString title) {
     setWindowTitle(title);
 }
 
+void Filer::MainWindow::disableMenuItems()
+{
+    // probono: No object has been selected by the user, so disable the actions that work on filesystem objects
+    ui.actionOpen->setEnabled(false);
+    ui.actionFileProperties->setEnabled(false);
+    ui.actionCut->setEnabled(false);
+    ui.actionCopy->setEnabled(false);
+    ui.actionRename->setEnabled(false);
+}
+
+void Filer::MainWindow::enableMenuItems()
+{
+    // probono: At least one object has been selected, so enable the actions that work on filesystem objects
+    ui.actionOpen->setEnabled(true);
+    ui.actionFileProperties->setEnabled(true);
+    ui.actionCut->setEnabled(true);
+    ui.actionCopy->setEnabled(true);
+    ui.actionRename->setEnabled(true);
+}
+
 void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
   TabPage* tabPage = static_cast<TabPage*>(sender());
   if(tabPage == currentPage()) {
@@ -976,10 +1002,13 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
     case TabPage::StatusTextSelectedFiles: {
       // FIXME: updating the status text so frequently is a little bit ineffiecient
       QString text = statusText = tabPage->statusText(TabPage::StatusTextSelectedFiles);
-      if(text.isEmpty())
+      if(text.isEmpty()) {
         ui.statusbar->showMessage(tabPage->statusText(TabPage::StatusTextNormal));
-      else
+        disableMenuItems(); // probono
+      } else {
         ui.statusbar->showMessage(text);
+        enableMenuItems(); // probono
+      }
       break;
     }
     case TabPage::StatusTextFSInfo:

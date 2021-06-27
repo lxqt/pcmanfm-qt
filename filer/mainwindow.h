@@ -54,6 +54,10 @@ public:
 
   void updateFromSettings(Settings& settings);
 
+  void disableMenuItems();
+
+  void enableMenuItems();
+
 protected Q_SLOTS:
 
   void onPathEntryReturnPressed();
