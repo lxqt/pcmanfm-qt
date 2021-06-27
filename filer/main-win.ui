@@ -165,7 +165,6 @@
     <addaction name="actionShowHidden"/>
     <addaction name="separator"/>
     <addaction name="actionIconView"/>
-    <addaction name="actionThumbnailView"/>
     <addaction name="actionCompactView"/>
     <addaction name="actionDetailedList"/>
     <addaction name="separator"/>
