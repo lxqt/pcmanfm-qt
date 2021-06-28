@@ -48,6 +48,7 @@
 #include "metadata.h"
 #include "windowregistry.h"
 #include "gotofolderwindow.h"
+#include "trash.h"
 
 // #include "qmodeltest/modeltest.h"
 
@@ -1210,6 +1211,10 @@ void MainWindow::on_actionPaste_triggered() {
 void MainWindow::on_actionDuplicate_triggered() {
   on_actionCopy_triggered();
   on_actionPaste_triggered();
+}
+
+void MainWindow::on_actionEmptyTrash_triggered() {
+  Fm::Trash::emptyTrash();
 }
 
 void MainWindow::on_actionDelete_triggered() {

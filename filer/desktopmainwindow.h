@@ -57,6 +57,7 @@ protected Q_SLOTS:
   void on_actionPaste_triggered();
   void on_actionDelete_triggered();
   void on_actionDuplicate_triggered();
+  void on_actionEmptyTrash_triggered();
   void on_actionRename_triggered();
   void on_actionSelectAll_triggered();
   void on_actionInvertSelection_triggered();
@@ -114,6 +115,7 @@ Q_SIGNALS:
   void copy();
   void paste();
   void duplicate();
+  void emptyTrash();
   void rename();
   void del();
   void selectAll();

@@ -56,6 +56,7 @@
 #include "../libfm-qt/utilities.h"
 #include "windowregistry.h"
 #include "ui_about.h"
+#include "trash.h"
 
 #include <QX11Info>
 #include <QScreen>
@@ -192,6 +193,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     connect(desktopMainWindow_, &DesktopMainWindow::copy, this, &DesktopWindow::onCopyActivated);
     connect(desktopMainWindow_, &DesktopMainWindow::paste, this, &DesktopWindow::onPasteActivated);
     connect(desktopMainWindow_, &DesktopMainWindow::duplicate, this, &DesktopWindow::onDuplicateActivated);
+    connect(desktopMainWindow_, &DesktopMainWindow::emptyTrash, this, &DesktopWindow::onEmptyTrashActivated);
     connect(desktopMainWindow_, &DesktopMainWindow::del, this, &DesktopWindow::onDeleteActivated);
     connect(desktopMainWindow_, &DesktopMainWindow::rename, this, &DesktopWindow::onRenameActivated);
     connect(desktopMainWindow_, &DesktopMainWindow::selectAll, listView_, &QListView::selectAll);
@@ -783,6 +785,10 @@ void DesktopWindow::onPasteActivated() {
 void DesktopWindow::onDuplicateActivated() {
     DesktopWindow::onCopyActivated();
     DesktopWindow::onPasteActivated();
+}
+
+void DesktopWindow::onEmptyTrashActivated() {
+    Fm::Trash::emptyTrash();
 }
 
 void DesktopWindow::onDeleteActivated() {

@@ -189,6 +189,7 @@ private:
   QAction* copyAction_;
   QAction* pasteAction_;
   QAction* deleteAction_;
+  QAction* emptyTrashAction_;
   QAction* unTrashAction_;
   QAction* renameAction_;
   QAction* separator2_;

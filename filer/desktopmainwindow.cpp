@@ -126,6 +126,11 @@ void DesktopMainWindow::on_actionDuplicate_triggered()
   Q_EMIT duplicate();
 }
 
+void DesktopMainWindow::on_actionEmptyTrash_triggered()
+{
+  Q_EMIT emptyTrash();
+}
+
 void DesktopMainWindow::on_actionDelete_triggered()
 {
   Q_EMIT del();

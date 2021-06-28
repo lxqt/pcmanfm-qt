@@ -185,6 +185,8 @@
     <addaction name="actionSelectAll"/>
     <addaction name="actionInvertSelection"/>
     <addaction name="separator"/>
+    <addaction name="actionEmptyTrash"/>
+    <addaction name="separator"/>
     <addaction name="actionPreferences"/>
    </widget>
    <widget class="QMenu" name="menu_Bookmarks">
@@ -822,6 +824,14 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionEmptyTrash">
+   <property name="text">
+    <string>Empty Trash</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Backspace</string>
    </property>
   </action>
  </widget>

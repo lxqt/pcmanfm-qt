@@ -81,6 +81,26 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   FmFileInfo* first = fm_file_info_list_peek_head(files);
   FmMimeType* mime_type = fm_file_info_get_mime_type(first);
   FmPath* path = fm_file_info_get_path(first);
+
+  GFile* gf;
+  gf = fm_file_new_for_uri("trash:///");
+
+  // probono: Find out whether the right-clicked item is the Trash so that we can show "Empty Trash" instead of "Move to Trash"
+  QString trashStr = QString::fromUtf8(g_file_get_parse_name(gf), false); // FIXME: Does not work; empty string. Why?
+  QString trashStr2 = QString::fromUtf8(g_file_get_path(gf), false); // FIXME: Does not work; empty string. Why?
+  g_object_unref(gf);
+  qDebug() << "probono: trashStr:" << trashStr; // FIXME: Does not work; empty string. Why?
+  qDebug() << "probono: trashStr2:" << trashStr2; // FIXME: Does not work; empty string. Why?
+
+  QString pathStr = QString::fromUtf8(fm_path_display_name(path, false));
+  qDebug() << "probono: pathStr:" << pathStr;
+
+  bool firstFileIsTrash = false;
+  if(pathStr == trashStr) {
+       // FIXME: Does not work; see above.
+      firstFileIsTrash = true;
+  }
+
   // check if the files are of the same type
   sameType_ = fm_file_info_list_is_same_type(files);
   // check if the files are on the same filesystem
@@ -165,9 +185,16 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
     connect(pasteAction_, &QAction::triggered, this, &FileMenu::onPasteTriggered);
     addAction(pasteAction_);
 
-    deleteAction_ = new QAction(QIcon::fromTheme("user-trash"), tr("&Move to Trash"), this);
-    connect(deleteAction_, &QAction::triggered, this, &FileMenu::onDeleteTriggered);
-    addAction(deleteAction_);
+    if(firstFileIsTrash == false){
+        deleteAction_ = new QAction(QIcon::fromTheme("user-trash"), tr("&Move to Trash"), this);
+        connect(deleteAction_, &QAction::triggered, this, &FileMenu::onDeleteTriggered);
+        addAction(deleteAction_);
+    } else {
+        qDebug() << "probono: TODO: add 'Empty Trash' menu item";
+        emptyTrashAction_ = new QAction(QIcon::fromTheme("user-trash"), tr("&Empty Trash"), this);
+        connect(emptyTrashAction_, &QAction::triggered, this, &FileMenu::onDeleteTriggered);
+        addAction(emptyTrashAction_);
+    }
 
     renameAction_ = new QAction(tr("Rename"), this);
     connect(renameAction_, &QAction::triggered, this, &FileMenu::onRenameTriggered);
