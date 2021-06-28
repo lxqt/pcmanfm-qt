@@ -66,6 +66,7 @@ set(libfm_SRCS
     appchooserdialog.cpp
     filesearchdialog.cpp
     fm-search.c # might be moved to libfm later
+    trash.cpp
 )
 
 set(libfm_UIS

@@ -72,8 +72,6 @@ protected Q_SLOTS:
   void onOpenNewTab();
   void onOpenNewWindow();
 
-  void onEmptyTrash();
-
   void onMountVolume();
   void onUnmountVolume();
   void onEjectVolume();

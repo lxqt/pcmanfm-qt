@@ -23,6 +23,7 @@
 #include "placesmodelitem.h"
 #include "mountoperation.h"
 #include "fileoperation.h"
+#include "trash.h"
 #include <QMenu>
 #include <QContextMenuEvent>
 #include <QHeaderView>
@@ -199,13 +200,6 @@ void PlacesView::dropEvent(QDropEvent* event) {
   QTreeView::dropEvent(event);
 }
 
-void PlacesView::onEmptyTrash() {
-  FmPathList* files = fm_path_list_new();
-  fm_path_list_push_tail(files, fm_path_get_trash());
-  Fm::FileOperation::deleteFiles(files);
-  fm_path_list_unref(files);
-}
-
 void PlacesView::onMoveBookmarkUp()
 {
   PlacesModel::ItemAction* action = static_cast<PlacesModel::ItemAction*>(sender());
@@ -356,7 +350,7 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
         FmPath* path = item->path();
         if(path && fm_path_equal(fm_path_get_trash(), path)) {
           action = new PlacesModel::ItemAction(item->index(), tr("Empty Trash"), menu);
-          connect(action, &QAction::triggered, this, &PlacesView::onEmptyTrash);
+          connect(action, &QAction::triggered, this, &Fm::Trash::emptyTrash);
           menu->addAction(action);
         }
         break;
