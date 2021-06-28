@@ -137,6 +137,7 @@ protected Q_SLOTS:
   void onCutActivated();
   void onCopyActivated();
   void onPasteActivated();
+  void onDuplicateActivated();
   void onRenameActivated();
   void onDeleteActivated();
   void onFilePropertiesActivated();

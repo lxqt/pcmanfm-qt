@@ -983,6 +983,7 @@ void Filer::MainWindow::disableMenuItems()
     ui.actionFileProperties->setEnabled(false);
     ui.actionCut->setEnabled(false);
     ui.actionCopy->setEnabled(false);
+    ui.actionDuplicate->setEnabled(false);
     ui.actionRename->setEnabled(false);
 }
 
@@ -994,6 +995,7 @@ void Filer::MainWindow::enableMenuItems()
     ui.actionFileProperties->setEnabled(true);
     ui.actionCut->setEnabled(true);
     ui.actionCopy->setEnabled(true);
+    ui.actionDuplicate->setEnabled(true);
     ui.actionRename->setEnabled(true);
 }
 
@@ -1201,6 +1203,12 @@ void MainWindow::on_actionCut_triggered() {
 void MainWindow::on_actionPaste_triggered() {
   pasteFilesFromClipboard(currentPage()->path(), this);
 }
+
+void MainWindow::on_actionDuplicate_triggered() {
+  on_actionCopy_triggered();
+  on_actionPaste_triggered();
+}
+
 
 void MainWindow::on_actionDelete_triggered() {
   Application* app = static_cast<Application*>(qApp);

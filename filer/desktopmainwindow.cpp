@@ -121,6 +121,11 @@ void DesktopMainWindow::on_actionPaste_triggered()
   Q_EMIT paste();
 }
 
+void DesktopMainWindow::on_actionDuplicate_triggered()
+{
+  Q_EMIT duplicate();
+}
+
 void DesktopMainWindow::on_actionDelete_triggered()
 {
   Q_EMIT del();

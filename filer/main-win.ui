@@ -178,6 +178,7 @@
     <addaction name="actionCut"/>
     <addaction name="actionCopy"/>
     <addaction name="actionPaste"/>
+    <addaction name="actionDuplicate"/>
     <addaction name="actionRename"/>
     <addaction name="actionDelete"/>
     <addaction name="separator"/>
@@ -813,6 +814,14 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionDuplicate">
+   <property name="text">
+    <string>&amp;Duplicate</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
    </property>
   </action>
  </widget>
