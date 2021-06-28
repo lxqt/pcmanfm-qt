@@ -49,6 +49,7 @@ public:
 
   enum WallpaperMode {
     WallpaperNone,
+    WallpaperTransparent,
     WallpaperStretch,
     WallpaperFit,
     WallpaperCenter,

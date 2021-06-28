@@ -47,6 +47,7 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   // setup wallpaper modes
   connect(ui.wallpaperMode, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &DesktopPreferencesDialog::onWallpaperModeChanged);
   ui.wallpaperMode->addItem(tr("Fill with background color only"), DesktopWindow::WallpaperNone);
+  ui.wallpaperMode->addItem(tr("Transparent"), DesktopWindow::WallpaperTransparent);
   ui.wallpaperMode->addItem(tr("Stretch to fill the entire screen"), DesktopWindow::WallpaperStretch);
   ui.wallpaperMode->addItem(tr("Stretch to fit the screen"), DesktopWindow::WallpaperFit);
   ui.wallpaperMode->addItem(tr("Center on the screen"), DesktopWindow::WallpaperCenter);
@@ -56,17 +57,20 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
     case DesktopWindow::WallpaperNone:
       i = 0;
       break;
-    case DesktopWindow::WallpaperStretch:
+    case DesktopWindow::WallpaperTransparent:
       i = 1;
       break;
-    case DesktopWindow::WallpaperFit:
+    case DesktopWindow::WallpaperStretch:
       i = 2;
       break;
-    case DesktopWindow::WallpaperCenter:
+    case DesktopWindow::WallpaperFit:
       i = 3;
       break;
-    case DesktopWindow::WallpaperTile:
+    case DesktopWindow::WallpaperCenter:
       i = 4;
+      break;
+    case DesktopWindow::WallpaperTile:
+      i = 5;
       break;
     default:
       i = 0;
@@ -119,7 +123,6 @@ void DesktopPreferencesDialog::applySettings()
 }
 
 void DesktopPreferencesDialog::accept() {
-  applySettings();
   QDialog::accept();
 }
 

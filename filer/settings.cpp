@@ -449,6 +449,9 @@ static const char* wallpaperModeToString(int value) {
     default:
       ret = "none";
       break;
+    case DesktopWindow::WallpaperTransparent:
+      ret = "transparent";
+     break;
     case DesktopWindow::WallpaperStretch:
       ret = "stretch";
       break;
@@ -467,7 +470,9 @@ static const char* wallpaperModeToString(int value) {
 
 static int wallpaperModeFromString(const QString str) {
   int ret;
-  if(str == "stretch")
+  if(str == "transparent")
+    ret = DesktopWindow::WallpaperTransparent;
+  else if(str == "stretch")
     ret = DesktopWindow::WallpaperStretch;
   else if(str == "fit")
     ret = DesktopWindow::WallpaperFit;
