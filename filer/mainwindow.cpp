@@ -191,11 +191,14 @@ MainWindow::MainWindow(FmPath* path):
   shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down), this); // pronono: open
   connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionOpen_triggered); // probono
 
-  shortcut = new QShortcut(QKeySequence(Qt::Key_Backspace), this);
-  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionGoUp_triggered);
-
-  shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this);
+  shortcut = new QShortcut(QKeySequence(Qt::Key_Delete), this); // probono: put in trash
   connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDelete_triggered);
+
+  shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this); // probono: force delete
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDeleteWithoutTrash_triggered);
+
+  shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::CTRL + Qt::Key_Backspace), this); // probono: force delete
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDeleteWithoutTrash_triggered);
 
   if(QToolButton* clearButton = ui.filterBar->findChild<QToolButton*>()) {
     clearButton->setToolTip(tr("Clear text (Ctrl+K)"));
@@ -1209,19 +1212,21 @@ void MainWindow::on_actionDuplicate_triggered() {
   on_actionPaste_triggered();
 }
 
-
 void MainWindow::on_actionDelete_triggered() {
   Application* app = static_cast<Application*>(qApp);
   Settings& settings = app->settings();
   TabPage* page = currentPage();
   FmPathList* paths = page->selectedFilePaths();
+  FileOperation::trashFiles(paths, settings.confirmTrash(), this);
+  fm_path_list_unref(paths);
+}
 
-  bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
-  if(settings.useTrash() && !shiftPressed)
-    FileOperation::trashFiles(paths, settings.confirmTrash(), this);
-  else
-    FileOperation::deleteFiles(paths, settings.confirmDelete(), this);
-
+void MainWindow::on_actionDeleteWithoutTrash_triggered() {
+  Application* app = static_cast<Application*>(qApp);
+  Settings& settings = app->settings();
+  TabPage* page = currentPage();
+  FmPathList* paths = page->selectedFilePaths();
+  FileOperation::deleteFiles(paths, settings.confirmDelete(), this);
   fm_path_list_unref(paths);
 }
 
@@ -1235,7 +1240,6 @@ void MainWindow::on_actionRename_triggered() {
   }
   fm_file_info_list_unref(files);
 }
-
 
 void MainWindow::on_actionSelectAll_triggered() {
   currentPage()->selectAll();

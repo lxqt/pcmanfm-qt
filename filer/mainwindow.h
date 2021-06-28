@@ -77,6 +77,7 @@ protected Q_SLOTS:
   void on_actionPaste_triggered();
   void on_actionDuplicate_triggered(); // probono
   void on_actionDelete_triggered();
+  void on_actionDeleteWithoutTrash_triggered(); // probono
   void on_actionRename_triggered();
   void on_actionSelectAll_triggered();
   void on_actionInvertSelection_triggered();
