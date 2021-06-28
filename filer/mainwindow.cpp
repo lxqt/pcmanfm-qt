@@ -918,15 +918,16 @@ void MainWindow::updateViewMenuForCurrentPage() {
 }
 
 void MainWindow::updateUIForCurrentPage() {
-  // probono: Whenever we switch to a tab, see whether the user has items selected and enable/disable menu items accordingly
-  if(currentPage()->selectedFiles() == 0x0)
-    disableMenuItems();
-  else
-    enableMenuItems();
 
   TabPage* tabPage = currentPage();
 
   if(tabPage) {
+    // probono: Whenever we switch to a tab, see whether the user has items selected and enable/disable menu items accordingly
+    if(currentPage()->selectedFiles() == 0x0)
+      disableMenuItems();
+    else
+      enableMenuItems();
+
     setWindowTitle(tabPage->title());
     pathEntry->setText(tabPage->pathName());
     ui.statusbar->showMessage(tabPage->statusText());
@@ -977,6 +978,7 @@ void MainWindow::onTabPageTitleChanged(QString title) {
 void Filer::MainWindow::disableMenuItems()
 {
     // probono: No object has been selected by the user, so disable the actions that work on filesystem objects
+    // qDebug() << "probono: disableMenuItems";
     ui.actionOpen->setEnabled(false);
     ui.actionFileProperties->setEnabled(false);
     ui.actionCut->setEnabled(false);
@@ -987,6 +989,7 @@ void Filer::MainWindow::disableMenuItems()
 void Filer::MainWindow::enableMenuItems()
 {
     // probono: At least one object has been selected, so enable the actions that work on filesystem objects
+    // qDebug() << "probono: enableMenuItems";
     ui.actionOpen->setEnabled(true);
     ui.actionFileProperties->setEnabled(true);
     ui.actionCut->setEnabled(true);
