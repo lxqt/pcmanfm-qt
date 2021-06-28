@@ -40,7 +40,7 @@ DesktopItemDelegate::DesktopItemDelegate(QListView* view, QObject* parent):
 // FIXME: we need to figure out a way to derive from Fm::FolderItemDelegate to avoid code duplication.
 void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const {
   Q_ASSERT(index.isValid());
-  QStyleOptionViewItemV4 opt = option;
+  QStyleOptionViewItem opt = option;
   initStyleOption(&opt, index);
 
   painter->save();
@@ -161,7 +161,7 @@ QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QM
   QVariant value = index.data(Qt::SizeHintRole);
   if(value.isValid())
     return qvariant_cast<QSize>(value);
-  QStyleOptionViewItemV4 opt = option;
+  QStyleOptionViewItem opt = option;
   initStyleOption(&opt, index);
 
   // use grid size as size hint
