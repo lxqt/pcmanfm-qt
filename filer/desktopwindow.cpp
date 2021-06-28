@@ -140,6 +140,10 @@ DesktopWindow::DesktopWindow(int screenNum):
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down), this); // pronono: open
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onOpenActivated); // probono
 
+    /*
+     * probono: Commenting these out
+     * for those that are alraedy defined in the Menu solves QAction::event: Ambiguous shortcut overload
+
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_X), this); // cut
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCutActivated);
 
@@ -160,6 +164,8 @@ DesktopWindow::DesktopWindow(int screenNum):
 
     shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_Return), this); // rename
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onFilePropertiesActivated);
+
+    */
 
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this); // force delete
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
@@ -257,7 +263,7 @@ void DesktopWindow::resizeEvent(QResizeEvent* event) {
     QWidget::resizeEvent(event);
 
     // resize wall paper if needed
-    if(isVisible() && wallpaperMode_ != WallpaperNone && wallpaperMode_ != WallpaperTile) {
+    if(isVisible() && wallpaperMode_ != WallpaperNone && wallpaperMode_ != WallpaperTransparent && wallpaperMode_ != WallpaperTile) {
         updateWallpaper();
         update();
     }
@@ -360,6 +366,9 @@ void DesktopWindow::updateWallpaper() {
     switch (wallpaperMode_) {
         case Filer::DesktopWindow::WallpaperNone:
           setStyleSheet("#DesktopListView { background-color: " + bgColor_.name() + " }");
+          break;
+    case Filer::DesktopWindow::WallpaperTransparent:
+          setStyleSheet("background-color: transparent");
           break;
     case Filer::DesktopWindow::WallpaperStretch:
           if (! wallpaperFile_.isEmpty())
