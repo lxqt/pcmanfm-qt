@@ -192,7 +192,7 @@ bool Application::parseCommandLineArgs() {
   QCommandLineOption quitOption(QStringList() << "q" << "quit", tr("Quit Filer"));
   parser.addOption(quitOption);
 
-  QCommandLineOption desktopOption("desktop", tr("Launch desktop manager"));
+  QCommandLineOption desktopOption("desktop", tr("Launch desktop manager (deprecated)"));
   parser.addOption(desktopOption);
 
   QCommandLineOption desktopOffOption("desktop-off", tr("Turn off desktop manager if it's running"));
@@ -233,7 +233,14 @@ bool Application::parseCommandLineArgs() {
     settings_.load(profileName_);
 
     // desktop icon management
-    if(parser.isSet(desktopOption)) {
+
+    // probono: We always want to show the desktop if we are the primary instance
+    QStringList paths = parser.positionalArguments();
+    bool implicitDesktopOption = false;
+
+    // if(parser.isSet(desktopOption)) {
+    if(parser.isSet(desktopOffOption) == false and paths.isEmpty()) {
+      implicitDesktopOption = true;
       desktopManager(true);
       keepRunning = true;
     }
@@ -255,8 +262,7 @@ bool Application::parseCommandLineArgs() {
     else if(parser.isSet(setWallpaperOption) || parser.isSet(wallpaperModeOption)) // set wall paper
       setWallpaper(parser.value(setWallpaperOption), parser.value(wallpaperModeOption));
     else {
-      if(!parser.isSet(desktopOption) && !parser.isSet(desktopOffOption)) {
-        QStringList paths = parser.positionalArguments();
+      if(!parser.isSet(desktopOption) && !parser.isSet(desktopOffOption) && !implicitDesktopOption) {
         if(paths.isEmpty()) {
           // if no path is specified and we're using daemon mode,
           // don't open current working directory
