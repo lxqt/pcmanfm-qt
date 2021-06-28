@@ -127,7 +127,7 @@ void FileOperation::showDialog() {
     }
     uiTimer->setInterval(500); // change the interval of the timer
     // now the timer is used to update current file display
-    dlg->show();
+    // dlg->show(); // probono: We only want to show the dialog after any errors/question dialogs, hence we do it when we update the progress bar
   }
 }
 

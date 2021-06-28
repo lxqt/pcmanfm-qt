@@ -72,7 +72,7 @@ FileOperationDialog::FileOperationDialog(FileOperation* _operation):
       ui->destLabel->hide();
       break;
   }
-  ui->message->setText(message);
+  // ui->message->setText(message);
   setWindowTitle(title);
 }
 
@@ -88,6 +88,7 @@ void FileOperationDialog::setDestPath(FmPath* dest) {
 }
 
 void FileOperationDialog::setSourceFiles(FmPathList* srcFiles) {
+  /* probono: Do not show list of source files in file operation dialog
   GList* l;
   for(l = fm_path_list_peek_head_link(srcFiles); l; l = l->next) {
     FmPath* path = FM_PATH(l->data);
@@ -95,6 +96,7 @@ void FileOperationDialog::setSourceFiles(FmPathList* srcFiles) {
     ui->sourceFiles->addItem(QString::fromUtf8(pathStr));
     g_free(pathStr);
   }
+  */
 }
 
 int FileOperationDialog::ask(QString question, char*const* options) {
@@ -147,6 +149,10 @@ void FileOperationDialog::setCurFile(QString cur_file) {
 
 void FileOperationDialog::setPercent(unsigned int percent) {
   ui->progressBar->setValue(percent);
+  // probono: Show the dialog once we have some progress since we don't show it from the beginning to allow any question/error boxes to appear first
+  if(percent != 0){
+      this->show();
+  }
 }
 
 void FileOperationDialog::setRemainingTime(unsigned int sec) {
