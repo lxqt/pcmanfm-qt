@@ -28,9 +28,12 @@
 #include <QByteArray>
 #include <QPixmap>
 #include <QPainter>
+#include <QDebug>
 #include "utilities.h"
 #include "fileoperation.h"
 #include "thumbnailloader.h"
+
+#include "fm-path.h"
 
 using namespace Fm;
 
@@ -449,12 +452,55 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
   if(data->hasUrls()) {
     qDebug("drop action: %d", action);
     FmPathList* srcPaths = pathListFromQUrls(data->urls());
+    bool identicalLocations = false;
     switch(action) {
+      GList* l;
       case Qt::CopyAction:
-        FileOperation::copyFiles(srcPaths, destPath);
+        // probono: Do not attempt to do a copy in the filesystem if source and destination paths are identical
+        // This is important for the Desktop, where apparently moving things on the desktop defaults to copying
+        // FIXME: Replace things like FmPathList* with QList.
+        // Why is it so complicated to do "For each in srcPaths, do..."?
+        // This is the issue I have with C++. Instead of a list being a list, we have now a "list of paths" that behaves unlike any other list.
+        // C++ is ok as long as one limits oneself to using what Qt provides.
+        // But as soon as other libraries such as libfm creep in, it becomes insanely cumbersome.
+        // We should drop all remnants of glib and libfm and do everything natively in Qt. Volunteers?
+        for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
+          FmPath* path = FM_PATH(l->data);
+          QString pathStr = QString::fromUtf8(fm_path_display_name(path, false)); // Unlike for MoveAction, do not use fm_path_get_parent here
+          QString destPathStr = QString::fromUtf8(fm_path_display_name(destPath, false));
+          qDebug() << "probono: pathStr" << pathStr;
+          qDebug() << "probono: destPathStr" << destPathStr;
+          if (pathStr == destPathStr){
+              identicalLocations = true;
+              break;
+          }
+        }
+        if(identicalLocations == true) {
+            qDebug() << "probono: Source and destination paths are identical";
+        } else {
+            FileOperation::copyFiles(srcPaths, destPath);
+        }
         break;
       case Qt::MoveAction:
-        FileOperation::moveFiles(srcPaths, destPath);
+        // probono: Do not attempt to do a move in the filesystem if source and destination paths are identical.
+        // This is important for Filer windows
+        // FIXME: Same as above in "case Qt::CopyAction"
+        for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
+          FmPath* path = FM_PATH(l->data);
+          QString pathStr = QString::fromUtf8(fm_path_display_name(fm_path_get_parent(path), false)); // Do use fm_path_get_parent here
+          QString destPathStr = QString::fromUtf8(fm_path_display_name(destPath, false));
+          qDebug() << "probono: pathStr" << pathStr;
+          qDebug() << "probono: destPathStr" << destPathStr;
+          if (pathStr == destPathStr){
+              identicalLocations = true;
+              break;
+          }
+        }
+        if(identicalLocations == true) {
+            qDebug() << "probono: Source and destination paths are identical";
+        } else {
+            FileOperation::moveFiles(srcPaths, destPath);
+        }
         break;
       case Qt::LinkAction:
         FileOperation::symlinkFiles(srcPaths, destPath);
