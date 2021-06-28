@@ -140,6 +140,7 @@ protected Q_SLOTS:
   void onDuplicateActivated();
   void onRenameActivated();
   void onDeleteActivated();
+  void onDeleteWithoutTrashActivated();
   void onFilePropertiesActivated();
 
 private:

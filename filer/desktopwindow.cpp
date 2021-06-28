@@ -168,10 +168,10 @@ DesktopWindow::DesktopWindow(int screenNum):
     */
 
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this); // force delete
-    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
+    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteWithoutTrashActivated);
 
     shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::CTRL + Qt::Key_Backspace), this); // probono: force delete
-    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteActivated);
+    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onDeleteWithoutTrashActivated);
 
     desktopMainWindow_ = new DesktopMainWindow(nullptr);
     layout()->setMenuBar(desktopMainWindow_->getMenuBar());
@@ -789,6 +789,14 @@ void DesktopWindow::onDeleteActivated() {
     if(FmPathList* paths = selectedFilePaths()) {
         Settings& settings = static_cast<Application*>(qApp)->settings();
         Fm::FileOperation::trashFiles(paths, settings.confirmTrash());
+        fm_path_list_unref(paths);
+    }
+}
+
+void DesktopWindow::onDeleteWithoutTrashActivated() {
+    if(FmPathList* paths = selectedFilePaths()) {
+        Settings& settings = static_cast<Application*>(qApp)->settings();
+        Fm::FileOperation::deleteFiles(paths, settings.confirmDelete(), this);
         fm_path_list_unref(paths);
     }
 }
