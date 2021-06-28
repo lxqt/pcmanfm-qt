@@ -42,12 +42,6 @@ public:
   explicit FileMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd, const QString& title, QWidget* parent = 0);
   ~FileMenu();
 
-  bool useTrash() {
-    return useTrash_;
-  }
-
-  void setUseTrash(bool trash);
-
   bool confirmDelete() {
     return confirmDelete_;
   }
@@ -179,7 +173,6 @@ private:
   FmFileInfoList* files_;
   FmFileInfo* info_;
   FmPath* cwd_;
-  bool useTrash_;
   bool confirmDelete_;
   bool confirmTrash_; // Confirm before moving files into "trash can"
 

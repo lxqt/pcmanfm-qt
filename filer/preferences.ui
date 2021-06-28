@@ -151,13 +151,6 @@
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="useTrash">
-              <property name="text">
-               <string>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</string>
-              </property>
-             </widget>
-            </item>
-            <item>
              <widget class="QCheckBox" name="noUsbTrash">
               <property name="text">
                <string>Erase files on removable media instead of &quot;trash can&quot; creation</string>
@@ -743,7 +736,6 @@
   <tabstop>fixedWindowWidth</tabstop>
   <tabstop>fixedWindowHeight</tabstop>
   <tabstop>configmDelete</tabstop>
-  <tabstop>useTrash</tabstop>
   <tabstop>mountOnStartup</tabstop>
   <tabstop>mountRemovable</tabstop>
   <tabstop>autoRun</tabstop>

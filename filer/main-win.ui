@@ -633,11 +633,11 @@
   </action>
   <action name="actionDelete">
    <property name="icon">
-    <iconset theme="edit-delete">
+    <iconset theme="user-trash">
      <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
-    <string>&amp;Delete</string>
+    <string>&amp;Move to Trash</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Backspace</string>

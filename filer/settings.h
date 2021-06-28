@@ -379,16 +379,6 @@ public:
     autoSelectionDelay_ = value;
   }
 
-  bool useTrash() const {
-    if(!supportTrash_)
-      return false;
-    return useTrash_;
-  }
-
-  void setUseTrash(bool useTrash) {
-    useTrash_ = useTrash;
-  }
-
   bool confirmDelete() const {
     return confirmDelete_;
   }
@@ -594,7 +584,6 @@ private:
   // settings for use with libfm
   bool singleClick_;
   int autoSelectionDelay_;
-  bool useTrash_;
   bool confirmDelete_;
   bool noUsbTrash_; // do not trash files on usb removable devices
   bool confirmTrash_; // Confirm before moving files into "trash can"

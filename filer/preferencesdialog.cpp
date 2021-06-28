@@ -208,12 +208,6 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
 
   ui.configmDelete->setChecked(settings.confirmDelete());
 
-  if(settings.supportTrash())
-    ui.useTrash->setChecked(settings.useTrash());
-  else {
-    ui.useTrash->hide();
-  }
-
   ui.noUsbTrash->setChecked(settings.noUsbTrash());
   ui.confirmTrash->setChecked(settings.confirmTrash());
   ui.quickExec->setChecked(settings.quickExec());
@@ -311,9 +305,6 @@ void PreferencesDialog::applyBehaviorPage(Settings& settings) {
   Fm::FolderView::ViewMode mode = Fm::FolderView::ViewMode(ui.viewMode->itemData(ui.viewMode->currentIndex()).toInt());
   settings.setViewMode(mode);
   settings.setConfirmDelete(ui.configmDelete->isChecked());
-
-  if(settings.supportTrash())
-    settings.setUseTrash(ui.useTrash->isChecked());
 
   settings.setNoUsbTrash(ui.noUsbTrash->isChecked());
   settings.setConfirmTrash(ui.confirmTrash->isChecked());

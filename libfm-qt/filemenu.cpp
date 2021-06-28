@@ -58,7 +58,6 @@ FileMenu::~FileMenu() {
 }
 
 void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) {
-  useTrash_ = true;
   confirmDelete_ = true;
   confirmTrash_ = false; // Confirm before moving files into "trash can"
 
@@ -336,10 +335,7 @@ void FileMenu::onCutTriggered() {
 
 void FileMenu::onDeleteTriggered() {
   FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
-  if(useTrash_)
-    FileOperation::trashFiles(paths, confirmTrash_);
-  else
-    FileOperation::deleteFiles(paths, confirmDelete_);
+  FileOperation::trashFiles(paths, confirmTrash_);
   fm_path_list_unref(paths);
 }
 
@@ -356,16 +352,6 @@ void FileMenu::onRenameTriggered() {
   for(GList* l = fm_file_info_list_peek_head_link(files_); l; l = l->next) {
     FmFileInfo* info = FM_FILE_INFO(l->data);
     Fm::renameFile(info, NULL);
-  }
-}
-
-void FileMenu::setUseTrash(bool trash) {
-  if(useTrash_ != trash) {
-    useTrash_ = trash;
-    if(deleteAction_) {
-      deleteAction_->setText(useTrash_ ? tr("&Move to Trash") : tr("&Delete"));
-      deleteAction_->setIcon(useTrash_ ? QIcon::fromTheme("user-trash") : QIcon::fromTheme("edit-delete"));
-    }
   }
 }
 

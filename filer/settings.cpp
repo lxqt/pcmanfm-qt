@@ -89,7 +89,6 @@ Settings::Settings():
   // settings for use with libfm
   singleClick_(false),
   autoSelectionDelay_(600),
-  useTrash_(true),
   confirmDelete_(true),
   noUsbTrash_(false),
   confirmTrash_(false),
@@ -167,7 +166,6 @@ bool Settings::loadFile(QString filePath) {
   spatialMode_ = settings.value("SpatialMode", false).toBool();
   dirInfoWrite_ = settings.value("DirInfoWrite", true).toBool();
   // settings for use with libfm
-  useTrash_ = settings.value("UseTrash", true).toBool();
   singleClick_ = settings.value("SingleClick", false).toBool();
   autoSelectionDelay_ = settings.value("AutoSelectionDelay", 600).toInt();
   confirmDelete_ = settings.value("ConfirmDelete", true).toBool();
@@ -261,7 +259,6 @@ bool Settings::saveFile(QString filePath) {
   settings.beginGroup("Behavior");
   settings.setValue("BookmarkOpenMethod", bookmarkOpenMethodToString(bookmarkOpenMethod_));
   // settings for use with libfm
-  settings.setValue("UseTrash", useTrash_);
   settings.setValue("SingleClick", singleClick_);
   settings.setValue("SpatialMode", spatialMode_);
   settings.setValue("DirInfoWrite", dirInfoWrite_);

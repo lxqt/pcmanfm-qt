@@ -780,7 +780,6 @@ void DesktopWindow::onPasteActivated() {
     Fm::pasteFilesFromClipboard(path());
 }
 
-
 void DesktopWindow::onDuplicateActivated() {
     DesktopWindow::onCopyActivated();
     DesktopWindow::onPasteActivated();
@@ -789,11 +788,7 @@ void DesktopWindow::onDuplicateActivated() {
 void DesktopWindow::onDeleteActivated() {
     if(FmPathList* paths = selectedFilePaths()) {
         Settings& settings = static_cast<Application*>(qApp)->settings();
-        bool shiftPressed = (qApp->keyboardModifiers() & Qt::ShiftModifier ? true : false);
-        if(settings.useTrash() && !shiftPressed)
-            Fm::FileOperation::trashFiles(paths, settings.confirmTrash());
-        else
-            Fm::FileOperation::deleteFiles(paths, settings.confirmDelete());
+        Fm::FileOperation::trashFiles(paths, settings.confirmTrash());
         fm_path_list_unref(paths);
     }
 }
