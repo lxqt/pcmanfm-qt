@@ -55,8 +55,7 @@ endif()
 set(CMAKE_AUTOMOC TRUE)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-add_subdirectory(libfm-qt)
-add_subdirectory(filer)
+add_subdirectory(src)
 
 # manpage for filer-qt
 configure_file(

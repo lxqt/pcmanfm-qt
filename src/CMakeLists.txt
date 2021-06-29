@@ -5,10 +5,10 @@ set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
 include_directories(
     ${QTX_INCLUDE_DIRS}
     ${LIBFM_INCLUDE_DIRS}
+    "${LIBFM_INCLUDEDIR}/libfm" # to workaround incorrect #include in fm-actions.
     ${LIBMENUCACHE_INCLUDE_DIRS}
     ${SYSTEM_LIBS_INCLUDE_DIRS}
     "${CMAKE_CURRENT_BINARY_DIR}"
-    "${PROJECT_SOURCE_DIR}/libfm-qt"
 )
 
 link_directories(
@@ -18,6 +18,52 @@ link_directories(
 )
 
 set(filer_SRCS
+    bundle.cpp # probono
+    libfmqt.cpp
+    bookmarkaction.cpp
+    sidepane.cpp
+    icontheme.cpp
+    filelauncher.cpp
+    foldermodel.cpp
+    foldermodelitem.cpp
+    cachedfoldermodel.cpp
+    proxyfoldermodel.cpp
+    folderview.cpp
+    folderitemdelegate.cpp
+    createnewmenu.cpp
+    filemenu.cpp
+    foldermenu.cpp
+    filepropsdialog.cpp
+    applaunchcontext.cpp
+    placesview.cpp
+    placesmodel.cpp
+    placesmodelitem.cpp
+    dirtreeview.cpp
+    dirtreemodel.cpp
+    dirtreemodelitem.cpp
+    dnddest.cpp
+    mountoperation.cpp
+    mountoperationpassworddialog.cpp
+    mountoperationquestiondialog.cpp
+    fileoperation.cpp
+    fileoperationdialog.cpp
+    renamedialog.cpp
+    pathedit.cpp
+    colorbutton.cpp
+    fontbutton.cpp
+    browsehistory.cpp
+    utilities.cpp
+    dndactionmenu.cpp
+    editbookmarksdialog.cpp
+    thumbnailloader.cpp
+    path.cpp
+    execfiledialog.cpp
+    appchoosercombobox.cpp
+    appmenuview.cpp
+    appchooserdialog.cpp
+    filesearchdialog.cpp
+    fm-search.c
+    trash.cpp
     application.cpp
     filer.cpp
     mainwindow.cpp
@@ -47,6 +93,14 @@ qt5_add_dbus_adaptor(filer_SRCS
 )
 
 set(filer_UIS
+    file-props.ui
+    file-operation-dialog.ui
+    rename-dialog.ui
+    mount-operation-password.ui
+    edit-bookmarks.ui
+    exec-file.ui
+    app-chooser-dialog.ui
+    filesearch.ui
     main-win.ui
     about.ui
     preferences.ui
