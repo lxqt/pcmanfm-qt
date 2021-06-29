@@ -17,7 +17,7 @@ task:
     - make -j$(sysctl -n hw.ncpu)
     - make DESTDIR=Filer.AppDir -j$(sysctl -n hw.ncpu) install
     - mkdir -p Filer.AppDir/usr/share/icons/hicolor/256x256/apps
-    - cp ../filer/icons/filer-256.png Filer.AppDir/usr/share/icons/hicolor/256x256/apps/filer.png
+    - cp ../src/icons/filer-256.png Filer.AppDir/usr/share/icons/hicolor/256x256/apps/filer.png
     - cp Filer.AppDir/usr/share/icons/hicolor/256x256/apps/filer.png Filer.AppDir/.DirIcon
     - ( cd Filer.AppDir/ ; ln -s usr/bin/filer-qt AppRun )
     - rm -rf Filer.AppDir/usr/include
