@@ -12,7 +12,6 @@ include_directories(
 )
 
 link_directories(
-    ${LIBFM_LIBRARY_DIRS}
     ${LIBMENUCACHE_LIBRARY_DIRS}
     ${SYSTEM_LIBS_LIBRARY_DIRS}
 )
@@ -155,7 +154,6 @@ target_link_libraries(filer-qt
     ${LIBFM_LIBRARIES}
     ${LIBMENUCACHE_LIBRARIES}
     ${SYSTEM_LIBS_LIBRARIES}
-    ${LIBFM_LIBRARY}
 )
 
 install(TARGETS filer-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
