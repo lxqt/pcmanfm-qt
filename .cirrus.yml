@@ -23,7 +23,6 @@ task:
     - rm -rf Filer.AppDir/usr/include
     - mkdir -p Filer.AppDir/usr/lib
     - cp /usr/local/lib/libfm.so.4 Filer.AppDir/usr/lib
-    - rm ./Filer.AppDir/usr/lib/*.a
     - find Filer.AppDir/
     - zip --symlinks -r Filer_FreeBSD.zip Filer.AppDir/
     # curl --upload-file ./Filer_FreeBSD.zip https://transfer.sh/Filer_FreeBSD.zip
