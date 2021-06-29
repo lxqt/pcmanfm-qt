@@ -206,6 +206,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
   GList* files_list = fm_file_info_list_peek_head_link(files);
   GList* items = fm_get_actions_for_files(files_list);
   if(items) {
+    addSeparator(); // probono
     GList* l;
     for(l=items; l; l=l->next) {
       FmFileActionItem* item = FM_FILE_ACTION_ITEM(l->data);
