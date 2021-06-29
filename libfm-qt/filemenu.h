@@ -153,6 +153,7 @@ protected Q_SLOTS:
   void onOpenTriggered();
   void onOpenWithTriggered();
   void onFilePropertiesTriggered();
+  void onEmptyTrashTriggered();
   void onApplicationTriggered();
 #ifdef CUSTOM_ACTIONS
   void onCustomActionTrigerred();
