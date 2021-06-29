@@ -82,6 +82,15 @@ DesktopWindow::DesktopWindow(int screenNum):
     setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
     setAttribute(Qt::WA_DeleteOnClose);
 
+    // probono: Show wallpaper immediately (before constructing the icons on the Desktop)
+    Settings& settings = static_cast<Application* >(qApp)->settings();
+    setWallpaperFile(settings.wallpaper());
+    setWallpaperMode(settings.wallpaperMode());
+    setBackground(settings.desktopBgColor());
+    updateWallpaper();
+    update();
+    this->show();
+
     // set our custom file launcher
     View::setFileLauncher(&fileLauncher_);
 
@@ -101,7 +110,6 @@ DesktopWindow::DesktopWindow(int screenNum):
     // In this case we only want to show desktop icons on the primary screen.
     if(desktopWidget->isVirtualDesktop() || screenNum_ == desktopWidget->primaryScreen()) {
         loadItemPositions();
-        Settings& settings = static_cast<Application* >(qApp)->settings();
 
         FmFolder* folder = fm_folder_from_path(fm_path_get_desktop());
         model_ = new Fm::FolderModel();
@@ -645,7 +653,7 @@ void DesktopWindow::relayoutItems() {
             if(it != customItemPos_.end()) { // the item has a custom position
                 QPoint customPos = *it;
                 listView_->setPositionForIndex(customPos, index);
-                qDebug() << "set custom pos:" << name << row << index << customPos;
+                // qDebug() << "set custom pos:" << name << row << index << customPos;
                 continue;
             }
             // check if the current pos is alredy occupied by a custom item
