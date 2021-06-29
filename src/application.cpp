@@ -319,9 +319,6 @@ void Application::init() {
   qtTranslator.load("qt_" + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
   installTranslator(&qtTranslator);
 
-  // install libfm-qt translator
-  installTranslator(libFm_.translator());
-
   // install our own tranlations
   translator.load("filer-qt_" + QLocale::system().name(), PCMANFM_DATA_DIR "/translations");
   // qDebug("probono: Use relative path from main executable so that this works when it is not installed system-wide, too:");

@@ -44,7 +44,7 @@
 #include "pathedit.h"
 #include "ui_about.h"
 #include "application.h"
-#include "../libfm-qt/path.h"
+#include "path.h"
 #include "metadata.h"
 #include "windowregistry.h"
 #include "gotofolderwindow.h"

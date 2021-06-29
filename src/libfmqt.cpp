@@ -47,7 +47,6 @@ LibFmQtData::LibFmQtData(): refCount(1) {
   // g_setenv("G_MESSAGES_DEBUG", "all", true);
   iconTheme = new IconTheme();
   thumbnailLoader = new ThumbnailLoader();
-  translator.load("libfm-qt_" + QLocale::system().name(), LIBFM_DATA_DIR "/translations");
 }
 
 LibFmQtData::~LibFmQtData() {
