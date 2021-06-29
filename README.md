@@ -8,13 +8,10 @@ Minimalistic simplicity, see [hello](https://github.com/probonopd/hello) for the
 
 * Appeal to users coming from macOS
 * Cross platform: Builds for Linux, FreeBSD
+* Spatial mode (each folder has its own window)
 * Can handle ROX AppDirs (work in progess)
 * Can handle GNUstep `.app` bundles (work in progess)
 * Can handle macOS `.app` bundles (not started yet)
 * Can handle ELF files that are lacking the executable bit (not started yet)
 * Can handle AppImages (not started yet)
 * Context menu can be extended using file manager actions
-
-## Screenshot
-
-![image](https://user-images.githubusercontent.com/2480569/95656231-2d742980-0b0d-11eb-9b85-b4500a518862.png)
