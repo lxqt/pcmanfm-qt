@@ -730,7 +730,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="219"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished">Ou&amp;tils</translation>
+        <translation>&amp;Outils</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="293"/>
