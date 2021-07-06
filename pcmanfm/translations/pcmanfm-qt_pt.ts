@@ -725,7 +725,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Definições de visualização personalizadas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
@@ -900,12 +900,12 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Preservar definições de forma recursiva a partir daqui</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ir para a origem das definições herdadas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
@@ -1397,12 +1397,12 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar o PCManFM-Qt como um daemon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Sair do PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
