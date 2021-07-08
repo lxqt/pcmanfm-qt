@@ -404,12 +404,14 @@ Taip pat rezervuojama vieta 3 teksto eilutėms.</translation>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pagal numatymą, spustelėjus kairiuoju pelės mygtuku, darbalaukio aplankai
+bus atveriami naudojant PCManFM-Qt, netgi, jei ši programa nėra
+numatytoji failų tvarkytuvė.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustelėjus kairiuoju pelės mygtuku, atverti darbalaukio aplankus numatytojoje failų tvarkytuvėje</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -517,7 +519,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Paslėpti spartieji klavišai</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
@@ -590,12 +592,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageDown</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageUp</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
@@ -641,7 +643,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Įdėti į laikiną filtro juostą</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -699,12 +701,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Tinkinto rodinio nustatymai</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>Į&amp;rankiai</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="278"/>
@@ -904,7 +906,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Pagal su&amp;kūrimo laiką</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
@@ -939,17 +941,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuo čia, rekursyviai išsaugoti nustatymus</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Pereiti prie paveldėtų nustatymų šaltinio</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="683"/>
@@ -974,7 +976,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Atverti kortelę ša&amp;knies egzemplioriuje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="731"/>
@@ -1049,18 +1051,18 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="925"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Paslėpti &amp;spartieji klavišai</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Atverti kortelę &amp;administratoriaus veiksenoje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Sukurti paleidyklę</translation>
+        <translation>Sukurti paleidyklę</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
@@ -1301,7 +1303,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation>Ži&amp;nynas</translation>
+        <translation>Ž&amp;inynas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="99"/>
@@ -1350,12 +1352,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Paleisti PCManFM-Qt kaip tarnybą</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Išeiti iš PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1946,12 +1948,12 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nustatykite į nulį, norėdami išjungti automatinį žymėjimą.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatinio žymėjimo delsa vienkarčio spustelėjimo veiksenoje:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1993,7 +1995,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Taip pat bus pažymėti ir pervadinti failai</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="288"/>
@@ -2085,18 +2087,20 @@ viena kortelė.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Įtaisytasis miniatiūrų kūrimo įrankis sukuria Qt palaikomų paveikslų miniatiūras.
+
+Įprastai, yra palaikoma dauguma paveikslų tipų. Numatytoji dydžio riba yra 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Paveikslų dydžio riba įtaisytajam miniatiūrų kūrimo įrankiui:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2104,17 +2108,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Jei yra, išoriniai miniatiūrų kūrimo įrankiai yra naudojami vaizdo įrašams, PDF dokumentams ir t.t.
+
+Reikšmė -1 reiškia, kad failų dydžiui nėra jokio apribojimo (pagal numatymą).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Failų dydžio riba išoriniams miniatiūrų kūrimo įrankiams:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Jokios ribos</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2129,7 +2135,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Žymelių meniu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
@@ -2139,22 +2145,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Atverti aplankus naujose kortelėse kaip įmanoma toliau</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Vieno lango veiksena</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="375"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Visada rodyti tikruosius failų pavadinimus</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="392"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Nerodyti failų paaiškinimų</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="604"/>
@@ -2284,7 +2290,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1077"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepavyko atverti administratoriaus teisėmis.</translation>
     </message>
 </context>
 </TS>
