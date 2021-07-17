@@ -799,6 +799,14 @@ public:
         openWithDefaultFileManager_ = open;
     }
 
+    bool allSticky() const {
+        return allSticky_;
+    }
+
+    void setAllSticky(bool sticky) {
+        allSticky_ = sticky;
+    }
+
     bool showThumbnails() {
         return showThumbnails_;
     }
@@ -1095,6 +1103,8 @@ private:
     QSize desktopCellMargins_;
 
     bool openWithDefaultFileManager_;
+
+    bool allSticky_;
 
     // search settings
     bool searchNameCaseInsensitive_;

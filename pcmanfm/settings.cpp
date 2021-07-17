@@ -131,6 +131,7 @@ Settings::Settings():
     folderViewCellMargins_(QSize(3, 3)),
     desktopCellMargins_(QSize(3, 1)),
     openWithDefaultFileManager_(false),
+    allSticky_(false),
     searchNameCaseInsensitive_(false),
     searchContentCaseInsensitive_(false),
     searchNameRegexp_(true),
@@ -258,6 +259,7 @@ bool Settings::loadFile(QString filePath) {
     desktopCellMargins_ = (settings.value(QStringLiteral("DesktopCellMargins"), QSize(3, 1)).toSize()
                            .expandedTo(QSize(0, 0))).boundedTo(QSize(48, 48));
     openWithDefaultFileManager_ = settings.value(QStringLiteral("OpenWithDefaultFileManager"), false).toBool();
+    allSticky_ = settings.value(QStringLiteral("AllSticky"), false).toBool();
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Volume"));
@@ -397,6 +399,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("SortHiddenLast"), desktopSortHiddenLast_);
     settings.setValue(QStringLiteral("DesktopCellMargins"), desktopCellMargins_);
     settings.setValue(QStringLiteral("OpenWithDefaultFileManager"), openWithDefaultFileManager_);
+    settings.setValue(QStringLiteral("AllSticky"), allSticky_);
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Volume"));

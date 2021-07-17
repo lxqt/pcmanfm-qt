@@ -131,6 +131,8 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
 
   ui.defaultFileManager->setChecked(settings.openWithDefaultFileManager());
 
+  ui.allSticky->setChecked(settings.allSticky());
+
   resize(sizeHint()); // show it compact
 }
 
@@ -207,6 +209,8 @@ void DesktopPreferencesDialog::applySettings()
   settings.setDesktopCellMargins(QSize(ui.hMargin->value(), ui.vMargin->value()));
 
   settings.setOpenWithDefaultFileManager(ui.defaultFileManager->isChecked());
+
+  settings.setAllSticky(ui.allSticky->isChecked());
 
   settings.save();
 }

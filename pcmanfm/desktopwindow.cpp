@@ -965,10 +965,12 @@ void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm::File
                         onFileClicked(Fm::FolderView::ActivatedClick, fileInfo);
                     });
                     // "Stick" action for all
-                    action = menu->addAction(tr("Stic&k to Current Position"));
-                    action->setCheckable(true);
-                    action->setChecked(customItemPos_.find(fileInfo->name()) != customItemPos_.cend());
-                    connect(action, &QAction::toggled, this, &DesktopWindow::onStickToCurrentPos);
+                    if(!settings.allSticky()) {
+                        action = menu->addAction(tr("Stic&k to Current Position"));
+                        action->setCheckable(true);
+                        action->setChecked(customItemPos_.find(fileInfo->name()) != customItemPos_.cend());
+                        connect(action, &QAction::toggled, this, &DesktopWindow::onStickToCurrentPos);
+                    }
                     // "Empty Trash" action for Trash shortcut
                     if(fileName == QLatin1String("trash-can.desktop")) {
                         menu->addSeparator();
@@ -1002,21 +1004,24 @@ void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm::File
 void DesktopWindow::prepareFileMenu(Fm::FileMenu* menu) {
     // qDebug("DesktopWindow::prepareFileMenu");
     PCManFM::View::prepareFileMenu(menu);
-    QAction* action = new QAction(tr("Stic&k to Current Position"), menu);
-    action->setCheckable(true);
-    menu->insertSeparator(menu->separator2());
-    menu->insertAction(menu->separator2(), action);
 
-    bool checked(true);
-    auto files = menu->files();
-    for(const auto& file : files) {
-        if(customItemPos_.find(file->name()) == customItemPos_.cend()) {
-            checked = false;
-            break;
+    if(!static_cast<Application*>(qApp)->settings().allSticky()) {
+        QAction* action = new QAction(tr("Stic&k to Current Position"), menu);
+        action->setCheckable(true);
+        menu->insertSeparator(menu->separator2());
+        menu->insertAction(menu->separator2(), action);
+
+        bool checked(true);
+        auto files = menu->files();
+        for(const auto& file : files) {
+            if(customItemPos_.find(file->name()) == customItemPos_.cend()) {
+                checked = false;
+                break;
+            }
         }
+        action->setChecked(checked);
+        connect(action, &QAction::toggled, this, &DesktopWindow::onStickToCurrentPos);
     }
-    action->setChecked(checked);
-    connect(action, &QAction::toggled, this, &DesktopWindow::onStickToCurrentPos);
 }
 
 void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
@@ -1285,6 +1290,8 @@ void DesktopWindow::relayoutItems() {
         relayoutTimer_ = nullptr;
     }
 
+    bool allSticky = static_cast<Application*>(qApp)->settings().allSticky();
+
     int row = 0;
     int rowCount = proxyModel_->rowCount();
 
@@ -1332,6 +1339,12 @@ void DesktopWindow::relayoutItems() {
             // center the contents vertically
             listView_->setPositionForIndex(pos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
             // qDebug() << "set pos" << name << row << index << pos;
+
+            // if all items should be sticky, add this item to custom postions
+            if(allSticky && pos.x() + itemSize.width() <= workArea.right() + 1) {
+                customItemPos_[name] = pos;
+                customPosStorage_[name] = pos;
+            }
         }
         // move to next cell in the column
         pos.setY(pos.y() + itemSize.height() + listView_->spacing());
