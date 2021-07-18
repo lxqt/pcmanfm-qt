@@ -52,6 +52,8 @@
 #include "xdgdir.h"
 #include <QFileSystemWatcher>
 
+#include "dbusinterface.h"
+
 using namespace Filer;
 static const char* serviceName = "org.filer.Filer";
 static const char* ifaceName = "org.filer.Application";
@@ -142,6 +144,8 @@ Application::Application(int& argc, char** argv):
       delete lxqtSessionIface;
       lxqtSessionIface = 0;
     }
+
+    DBusInterface();
   }
   else {
     // an service of the same name is already registered.

@@ -81,6 +81,7 @@ set(filer_SRCS
     metadata.cpp
     windowregistry.cpp
     gotofolderwindow.cpp
+    dbusinterface.cpp
 )
 
 qt5_add_dbus_adaptor(filer_SRCS
