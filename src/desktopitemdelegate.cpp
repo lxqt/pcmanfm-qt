@@ -27,6 +27,8 @@
 #include <QTextLayout>
 #include <QTextOption>
 #include <QTextLine>
+#include <QPainterPath>
+#include <QDebug>
 
 using namespace Filer;
 
@@ -61,6 +63,20 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   else
     iconMode = QIcon::Disabled;
   QPoint iconPos(opt.rect.x() + (opt.rect.width() - opt.decorationSize.width()) / 2, opt.rect.y());
+
+  // probono: If the icon is selected, draw a light rounded rect in the background
+  if(opt.state & QStyle::State_Selected) {
+    QRectF boundRect = QRectF();
+    boundRect.setTop(iconPos.y());
+    boundRect.setLeft(iconPos.x());
+    boundRect.setHeight(opt.decorationSize.height());
+    boundRect.setWidth(opt.decorationSize.width());
+    painter->setRenderHint(QPainter::Antialiasing);
+    QPainterPath path = QPainterPath();
+    path.addRoundedRect(boundRect, 4, 4);
+    painter->fillPath(path, QColor(196, 196, 196)); // Light gray
+  }
+
   QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
   painter->drawPixmap(iconPos, pixmap);
 
@@ -109,16 +125,26 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     ++ visibleLines;
   }
   layout.endLayout();
+
+  // probono: draw background rounded rect for selected item
   QRectF boundRect = layout.boundingRect();
-  boundRect.setWidth(width);
-  boundRect.moveTo(textRect.x() + (textRect.width() - width)/2, textRect.y());
+  int additionalSpace = 1;
+  boundRect.setWidth(width + 8*additionalSpace);
+  boundRect.setHeight(boundRect.height() + 2*additionalSpace);
+  boundRect.moveTo(textRect.x() - 4*additionalSpace + (textRect.width() - width)/2, textRect.y() - additionalSpace);
+
   if((opt.state & QStyle::State_Selected) && opt.widget) {
     QPalette palette = opt.widget->palette();
     // qDebug("w: %f, h:%f, m:%f", boundRect.width(), boundRect.height(), layout.minimumWidth());
     painter->setFont(font_);
-    painter->fillRect(boundRect, palette.highlight());
+    // painter->fillRect(boundRect, opt.palette.highlight());
+    painter->setRenderHint(QPainter::Antialiasing);
+    QPainterPath path = QPainterPath();
+    path.addRoundedRect(boundRect, 8, 8);
+    painter->fillPath(path, opt.palette.highlight());
+
   }
-  else { // only draw shadow for non-selected items
+
     // draw shadow, FIXME: is it possible to use QGraphicsDropShadowEffect here?
     QPen prevPen = painter->pen();
     painter->setPen(QPen(shadowColor_));
@@ -134,7 +160,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
       }
     }
     painter->setPen(prevPen);
-  }
+
 
   // draw text
   for(int i = 0; i < visibleLines; ++i) {

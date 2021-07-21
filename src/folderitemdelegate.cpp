@@ -17,18 +17,18 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-
 #include "folderitemdelegate.h"
 #include "foldermodel.h"
 #include <QPainter>
 #include <QModelIndex>
 #include <QStyleOptionViewItem>
-#include <QApplication>
 #include <QIcon>
 #include <QTextLayout>
 #include <QTextOption>
 #include <QTextLine>
 #include <QDebug>
+#include <QPainterPath>
+#include <QColor>
 
 namespace Fm {
 
@@ -99,6 +99,20 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     // draw the icon
     QIcon::Mode iconMode = iconModeFromState(opt.state);
     QPoint iconPos(opt.rect.x() + (opt.rect.width() - opt.decorationSize.width()) / 2, opt.rect.y());
+
+    // probono: If the icon is selected, draw a light rounded rect in the background
+    if(opt.state & QStyle::State_Selected) {
+      QRectF boundRect = QRectF();
+      boundRect.setTop(iconPos.y());
+      boundRect.setLeft(iconPos.x());
+      boundRect.setHeight(opt.decorationSize.height());
+      boundRect.setWidth(opt.decorationSize.width());
+      painter->setRenderHint(QPainter::Antialiasing);
+      QPainterPath path = QPainterPath();
+      path.addRoundedRect(boundRect, 4, 4);
+      painter->fillPath(path, QColor(196, 196, 196)); // Light gray
+    }
+
     QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
     painter->drawPixmap(iconPos, pixmap);
 
@@ -165,11 +179,12 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItem& opt, 
   }
   layout.endLayout();
 
-  // draw background for selected item
+  // probono: draw background rounded rect for selected item
   QRectF boundRect = layout.boundingRect();
-  //qDebug() << "bound rect: " << boundRect << "width: " << width;
-  boundRect.setWidth(width);
-  boundRect.moveTo(textRect.x() + (textRect.width() - width)/2, textRect.y());
+  int additionalSpace = 1;
+  boundRect.setWidth(width + 8*additionalSpace);
+  boundRect.setHeight(boundRect.height() + 2*additionalSpace);
+  boundRect.moveTo(textRect.x() - 4*additionalSpace + (textRect.width() - width)/2, textRect.y() - additionalSpace);
 
   if(!painter) { // no painter, calculate the bounding rect only
     textRect = boundRect;
@@ -178,7 +193,11 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItem& opt, 
 
   QPalette::ColorGroup cg = opt.state & QStyle::State_Enabled ? QPalette::Normal : QPalette::Disabled;
   if(opt.state & QStyle::State_Selected) {
-    painter->fillRect(boundRect, opt.palette.highlight());
+    // painter->fillRect(boundRect, opt.palette.highlight());
+    painter->setRenderHint(QPainter::Antialiasing);
+    QPainterPath path = QPainterPath();
+    path.addRoundedRect(boundRect, 8, 8);
+    painter->fillPath(path, opt.palette.highlight());
     painter->setPen(opt.palette.color(cg, QPalette::HighlightedText));
   }
   else
@@ -196,6 +215,7 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItem& opt, 
     }
   }
 
+  /* probono: We don't want FocusRects
   if(opt.state & QStyle::State_HasFocus) {
     // draw focus rect
     QStyleOptionFocusRect o;
@@ -212,6 +232,8 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItem& opt, 
       style->drawPrimitive(QStyle::PE_FrameFocusRect, &o, painter, widget);
     }
   }
+  */
+
 }
 
 
