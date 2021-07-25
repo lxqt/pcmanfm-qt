@@ -46,6 +46,7 @@
 #include <libfm-qt/pathedit.h>
 #include <libfm-qt/pathbar.h>
 #include <libfm-qt/core/fileinfo.h>
+#include <libfm-qt/mountoperation.h>
 #include "ui_about.h"
 #include "ui_shortcuts.h"
 #include "application.h"
@@ -1167,14 +1168,10 @@ void MainWindow::onTabBarTabMoved(int from, int to) {
     }
 }
 
-QList<Fm::MountOperation*> MainWindow::pendingMountOperations() const {
-    return ui.sidePane->findChildren<MountOperation*>();
-}
-
 void MainWindow::onFolderUnmounted() {
     TabPage* tabPage = static_cast<TabPage*>(sender());
     if(ViewFrame* viewFrame = viewFrameForTabPage(tabPage)) {
-        const QList<MountOperation*> ops = pendingMountOperations();
+        const QList<MountOperation*> ops = ui.sidePane->findChildren<MountOperation*>();
         if(ops.isEmpty()) { // unmounting is done somewhere else
             Settings& settings = static_cast<Application*>(qApp)->settings();
             if(settings.closeOnUnmount()) {
@@ -1193,7 +1190,7 @@ void MainWindow::onFolderUnmounted() {
         else { // wait for all (un-)mount operations to be finished (otherwise, they might be cancelled)
             for(const MountOperation* op : ops) {
                 connect(op, &QObject::destroyed, tabPage, [this, tabPage, viewFrame] {
-                    if(pendingMountOperations().isEmpty()) {
+                    if(ui.sidePane->findChildren<MountOperation*>().isEmpty()) {
                         Settings& settings = static_cast<Application*>(qApp)->settings();
                         if(settings.closeOnUnmount()) {
                             viewFrame->getStackedWidget()->removeWidget(tabPage);
