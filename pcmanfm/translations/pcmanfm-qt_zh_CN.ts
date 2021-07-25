@@ -23,7 +23,7 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>编程:
+        <translation>程序编写:
 * 洪任谕 (PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
@@ -48,21 +48,18 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
         <translation>PCManFM-Qt 文件管理器
 
-Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+Copyright (C) 2009 - 2014 洪任谕 (Hong Jen Yee)
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
+本程序是自由软件；您可以根据 GNU 通用公共许可证的条款重新发布它和（或）修改它。
+在自由软件基金会发布的 GNU 通用公共许可证的条款下对其进行修改。
+您可以根据自由软件基金会发布的 GNU 通用公共许可证（或许可证的第2版，或自行选择任何后来的版本）的条款重新发布和（或）修改它。
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+本程序的发布是希望它能起到作用。
+但没有任何保证；甚至没有隐含的保证。
+本程序的分发是希望它是有用的，但没有任何保证，甚至没有隐含的适销性或适用于某一特定目的的保证。 请参阅 GNU 通用公共许可证了解更多细节。
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
+您应该已经收到了一份 GNU 通用公共许可证的副本。
+如果没有，请写信给自由软件基金会，地址：51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA。</translation>
     </message>
     <message>
         <location filename="../about.ui" line="82"/>
@@ -495,7 +492,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="539"/>
         <source>Trash</source>
-        <translation>垃圾桶</translation>
+        <translation>回收站</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="550"/>
@@ -700,7 +697,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>自定义的视图设置</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
@@ -940,12 +937,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>从这里以递归方式保存设置</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>转到继承设置的源头</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -1351,12 +1348,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>以 Daemon 模式运行 PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>退出 PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1366,7 +1363,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>如桌面管理器正在运行，关闭之</translation>
+        <translation>如桌面管理器正在运行，请关闭</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
@@ -1392,7 +1389,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>从图像 FILE 设置桌面墙纸</translation>
+        <translation>从图像文件设置桌面墙纸</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
@@ -1407,7 +1404,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
-        <translation>设置桌面墙纸的模式 模式=(%1)</translation>
+        <translation>设置桌面墙纸的布局模式 模式=(%1)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
@@ -1568,19 +1565,19 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="297"/>
         <source>Trash (One item)</source>
-        <translation>垃圾桶(单个项目)</translation>
+        <translation>回收站( 1 个项目)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (%Ln items)</source>
         <translation>
-            <numerusform>垃圾桶(%Ln个项目)</numerusform>
+            <numerusform>回收站( %Ln 个项目)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="304"/>
         <source>Trash (Empty)</source>
-        <translation>垃圾桶(空)</translation>
+        <translation>回收站(空)</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="339"/>
@@ -1606,7 +1603,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="970"/>
         <source>Empty Trash</source>
-        <translation>清空垃圾桶</translation>
+        <translation>清空回收站</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1026"/>
@@ -1645,7 +1642,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="139"/>
         <source>Root Instance</source>
-        <translation>Root实例</translation>
+        <translation>您正在使用 Root 用户实例</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="713"/>
