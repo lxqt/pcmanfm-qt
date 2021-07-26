@@ -35,11 +35,13 @@ TabBar::TabBar(QWidget *parent):
 }
 
 void TabBar::mousePressEvent(QMouseEvent *event) {
-    QTabBar::mousePressEvent (event);
-    if(detachable_){
-        if(event->button() == Qt::LeftButton
-        && tabAt(event->pos()) > -1) {
+    QTabBar::mousePressEvent(event);
+    if(detachable_) {
+        if(event->button() == Qt::LeftButton && tabAt(event->pos()) > -1) {
             dragStartPosition_ = event->pos();
+        }
+        else {
+            dragStartPosition_ = QPoint();
         }
         dragStarted_ = false;
     }
@@ -52,7 +54,7 @@ void TabBar::mouseMoveEvent(QMouseEvent *event)
         return;
     }
 
-    if(!dragStartPosition_.isNull()
+    if(!dragStarted_ && !dragStartPosition_.isNull()
        && (event->pos() - dragStartPosition_).manhattanLength() >= QApplication::startDragDistance()) {
         dragStarted_ = true;
     }

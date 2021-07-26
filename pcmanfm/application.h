@@ -72,6 +72,10 @@ public:
         return libFm_;
     }
 
+    bool isX11() const {
+      return isX11_;
+    }
+
     // public interface exported via dbus
     void launchFiles(QString cwd, QStringList paths, bool inNewWindow, bool reopenLastTabs);
     void setWallpaper(QString path, QString modeString);
@@ -149,6 +153,8 @@ private:
     QString userDirsFile_;
     QString userDesktopFolder_;
     bool lxqtRunning_;
+
+    bool isX11_;
 
     int argc_;
     char** argv_;

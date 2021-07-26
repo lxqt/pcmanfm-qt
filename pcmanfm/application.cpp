@@ -87,6 +87,9 @@ Application::Application(int& argc, char** argv):
     userDirsWatcher_(nullptr),
     lxqtRunning_(false) {
 
+    // mainly used to disable tab DND outside X11 because Wayland has problem with QDrag
+    isX11_ = QGuiApplication::platformName() == QStringLiteral("xcb");
+
     argc_ = argc;
     argv_ = argv;
 

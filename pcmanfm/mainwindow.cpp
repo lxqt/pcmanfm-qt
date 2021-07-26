@@ -459,9 +459,12 @@ bool MainWindow::eventFilter(QObject* watched, QEvent* event) {
 
 void MainWindow::addViewFrame(const Fm::FilePath& path) {
     ui.actionGo->setVisible(false);
-    Settings& settings = static_cast<Application*>(qApp)->settings();
+    Application* app = static_cast<Application*>(qApp);
+    Settings& settings = app->settings();
     ViewFrame* viewFrame = new ViewFrame();
-    viewFrame->getTabBar()->setDetachable(!splitView_); // no tab DND with the split view
+    // No tab DND with the split view.
+    // WARNING: Wayland has a serious issue related to QDrag that can result in a crash.
+    viewFrame->getTabBar()->setDetachable(!splitView_ && app->isX11());
     viewFrame->getTabBar()->setTabsClosable(settings.showTabClose());
     ui.viewSplitter->addWidget(viewFrame); // the splitter takes ownership of viewFrame
     if(ui.viewSplitter->count() == 1) {
@@ -494,7 +497,8 @@ void MainWindow::on_actionSplitView_triggered(bool checked) {
     if(splitView_ == checked) {
         return;
     }
-    Settings& settings = static_cast<Application*>(qApp)->settings();
+    Application* app = static_cast<Application*>(qApp);
+    Settings& settings = app->settings();
     splitView_ = checked;
     settings.setSplitView(splitView_);
     if(splitView_) { // split the view
@@ -551,7 +555,7 @@ void MainWindow::on_actionSplitView_triggered(bool checked) {
         }
 
         // enable tab DND
-        activeViewFrame_->getTabBar()->setDetachable(true);
+        activeViewFrame_->getTabBar()->setDetachable(app->isX11());
         setAcceptDrops(true);
 
         activeViewFrame_->removeTopBar();
@@ -1945,37 +1949,38 @@ void MainWindow::focusPathEntry() {
 void MainWindow::dragEnterEvent(QDragEnterEvent* event) {
     if(event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))
        // ensure that the tab drag source is ours (and not a root window, for example)
-       && lastActive_ && lastActive_->isActiveWindow()) {
+       && event->source() != nullptr) {
         event->acceptProposedAction();
     }
 }
 
 void MainWindow::dropEvent(QDropEvent* event) {
     if(event->mimeData()->hasFormat(QStringLiteral("application/pcmanfm-qt-tab"))) {
-        dropTab();
+        dropTab(event->source());
     }
     event->acceptProposedAction();
 }
 
-void MainWindow::dropTab() {
-    if(lastActive_ == nullptr // impossible
-       || lastActive_ == this) { // don't drop on the same window
+void MainWindow::dropTab(QObject* source) {
+    QWidget* w = qobject_cast<QWidget*>(source);
+    MainWindow* dragSource = (w == nullptr ? nullptr : qobject_cast<MainWindow*>(w->window()));
+    if (dragSource == this // drop on itself
+        || dragSource == nullptr) {
         activeViewFrame_->getTabBar()->finishMouseMoveEvent();
         return;
     }
 
-    // close the tab in the first window and add
-    // its page to a new tab in the second window
-    TabPage* dropPage = lastActive_->currentPage();
+    // first close the tab in the drag window;
+    // then add its page to a new tab in the drop window
+    TabPage* dropPage = dragSource->currentPage();
     if(dropPage) {
-        disconnect(dropPage, nullptr, lastActive_, nullptr);
+        disconnect(dropPage, nullptr, dragSource, nullptr);
 
         // release mouse before tab removal because otherwise, the source tabbar
         // might not be updated properly with tab reordering during a fast drag-and-drop
-        lastActive_->activeViewFrame_->getTabBar()->releaseMouse();
+        dragSource->activeViewFrame_->getTabBar()->releaseMouse();
 
-        QWidget* page = lastActive_->activeViewFrame_->getStackedWidget()->currentWidget();
-        lastActive_->activeViewFrame_->getStackedWidget()->removeWidget(page);
+        dragSource->activeViewFrame_->getStackedWidget()->removeWidget(dropPage);
         int index = addTabWithPage(dropPage, activeViewFrame_);
         activeViewFrame_->getTabBar()->setCurrentIndex(index);
     }
@@ -1985,7 +1990,8 @@ void MainWindow::dropTab() {
 }
 
 void MainWindow::detachTab() {
-    if (activeViewFrame_->getStackedWidget()->count() == 1) { // don't detach a single tab
+    if (activeViewFrame_->getStackedWidget()->count() == 1 // don't detach a single tab
+        || static_cast<Application*>(qApp)->settings().splitView()) { // may have changed elsewhere
         activeViewFrame_->getTabBar()->finishMouseMoveEvent();
         return;
     }
@@ -1996,9 +2002,7 @@ void MainWindow::detachTab() {
         disconnect(dropPage, nullptr, this, nullptr);
 
         activeViewFrame_->getTabBar()->releaseMouse(); // as in dropTab()
-
-        QWidget* page = activeViewFrame_->getStackedWidget()->currentWidget();
-        activeViewFrame_->getStackedWidget()->removeWidget(page);
+        activeViewFrame_->getStackedWidget()->removeWidget(dropPage);
         MainWindow* newWin = new MainWindow();
         newWin->addTabWithPage(dropPage, newWin->activeViewFrame_);
         newWin->show();
