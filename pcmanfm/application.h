@@ -130,7 +130,6 @@ private Q_SLOTS:
 private:
     void initWatch();
     void installSigtermHandler();
-    void reallyInitVolumeManager();
 
     bool isPrimaryInstance;
     Fm::LibFmQt libFm_;
