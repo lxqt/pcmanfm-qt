@@ -698,12 +698,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Персонализиране на настройките за изглед</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Инструменти</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="278"/>
@@ -903,7 +903,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>По Д&amp;ата на създаване</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
@@ -938,17 +938,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Запази настроките рекурсивно от тук</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Отиди при източникът на наследените настройки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="683"/>
@@ -973,7 +973,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Отваряне на раздел в режим на привилегий</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="731"/>
@@ -1053,7 +1053,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Отваряне на раздел в &amp;Администраторен режим</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
@@ -1349,12 +1349,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Изпълни PCManFM-Qt на заден план</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Напусни PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1940,7 +1940,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройте на нула за да изключите автоматично избиране.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
@@ -1987,7 +1987,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Преименувани файлове също ще бъдат избрани</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="288"/>
@@ -2078,18 +2078,19 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Вграденият създател на миниатюри създава миниатюри на изображения които са поддържани от Qt.
+Обикновено, повечето типове изображения са поддържани. Разберът по подразбиране е 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Максимална големина на изображение за вграденият създател на миниатюри:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> Мибибайт</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
@@ -2107,7 +2108,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Без граница</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2122,7 +2123,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Меню с отметки:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
@@ -2277,7 +2278,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1077"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не може да бъде отворен, като Администратор.</translation>
     </message>
 </context>
 </TS>
