@@ -747,7 +747,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Personalizar la configuración de la vista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="177"/>
@@ -1002,12 +1002,12 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Mantener la configuración recursivamente desde aquí</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ir a la fuente de la configuración heredada</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
@@ -1037,7 +1037,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir pestaña en una instancia de &amp;root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="731"/>
@@ -1112,12 +1112,12 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="925"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Atajo&amp;s de teclado ocultos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Abri pestaña en modo de &amp;administrador</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
@@ -1352,12 +1352,12 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Ejecutar PCManFM-Qt como un demonio</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Salir de PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1968,7 +1968,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar el menú de contexto de la carpeta con Ctrl + clic derecho</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
@@ -1995,12 +1995,12 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Los archivos renombrados también serán seleccionados</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir las carpetas en pestañas nuevas cuando sea posible</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
@@ -2051,7 +2051,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
     <message>
         <location filename="../preferences.ui" line="422"/>
         <source>3 px by default.</source>
-        <translation>De 3&#xa0;px de manera predeterminada.</translation>
+        <translation>De 3 px de manera predeterminada.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="425"/>
@@ -2068,7 +2068,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
         <location filename="../preferences.ui" line="445"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>De 3&#xa0;px de manera predeterminada.
+        <translation>De 3 px de manera predeterminada.
 También se reserva espacio para 3 renglones de texto.</translation>
     </message>
     <message>
@@ -2101,7 +2101,7 @@ visible cuando haya más de una pestaña abierta.</translation>
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
         <translation>El miniaturizador integrado crea miniaturas de las imágenes que Qt admite.
 
-Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4&#xa0;MiB.</translation>
+Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
