@@ -1823,7 +1823,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation>Seleziona file creati recentemente</translation>
+        <translation>Seleziona file appena creati</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1996,7 +1996,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation>File rinominati saranno anche selezionati</translation>
+        <translation>Saranno anche selezionati file rinominati</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>

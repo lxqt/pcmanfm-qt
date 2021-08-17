@@ -2103,7 +2103,7 @@ Normalmente, a maioria dos tipos de imagem é compatível. O limite de tamanho p
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation>Limite de tamanho de imagem para miniaturizador integrado:</translation>
+        <translation>Limite do tamanho de imagem para o miniaturizador integrado:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
