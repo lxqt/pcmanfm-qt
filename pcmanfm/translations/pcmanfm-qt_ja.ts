@@ -725,7 +725,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">カスタマイズ表示設定</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
@@ -900,12 +900,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>設定をここから再帰的に保存</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">継承された設定のソースへ移動</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
@@ -1397,12 +1397,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt をデーモンとして実行する</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt を終了する</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
