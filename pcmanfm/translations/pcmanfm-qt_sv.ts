@@ -683,7 +683,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Anpassade vyinställningar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
