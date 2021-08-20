@@ -952,7 +952,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>Reiter im &amp;Root-Modus öffnen</translation>
+        <translation>Tab als &amp;Root-Instanz öffnen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -1022,7 +1022,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>Reiter als &amp;Admin öffnen</translation>
+        <translation>Tab im &amp;Admin-Modus öffnen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
@@ -1358,7 +1358,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation>PCManFM-Qt beenden</translation>
+        <translation>Beende PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1737,7 +1737,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n versteckt)</numerusform>
-            <numerusform> (%n versteckt)</numerusform>
+            <numerusform> (%n versteckte)</numerusform>
         </translation>
     </message>
     <message>
