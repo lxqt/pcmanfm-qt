@@ -1117,7 +1117,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>Abri pestaña en modo de &amp;administrador</translation>
+        <translation>Abrir pestaña en modo de &amp;administrador</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
