@@ -650,7 +650,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation>Premjesti datoteku pri otpuštanju</translation>
+        <translation>Premjesti datoteku pri ispuštanju</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
@@ -660,7 +660,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation>Kopiraj datoteku pri otpuštanju</translation>
+        <translation>Kopiraj datoteku pri ispuštanju</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
@@ -670,7 +670,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation>Stvori poveznicu pri otpuštanju</translation>
+        <translation>Stvori poveznicu pri ispuštanju</translation>
     </message>
 </context>
 <context>
@@ -698,12 +698,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Prilagođen prikaz – Postavke</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="219"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Alati</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="278"/>
@@ -1053,13 +1053,13 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="930"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Otvori karticu u &amp;administratorskom modusu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Stvori pokretača</translation>
+        <translation>Stvori pokretača</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
@@ -1129,7 +1129,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="762"/>
         <source>Permanent &amp;filter bar</source>
-        <translation>Traka stalnog &amp;filtra</translation>
+        <translation>Stalna traka &amp;filtra</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
@@ -1215,7 +1215,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>&amp;Rename</source>
-        <translation>&amp;Preimenuj</translation>
+        <translation>Prei&amp;menuj</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
@@ -2088,13 +2088,13 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
     <message>
         <location filename="../preferences.ui" line="626"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ograničenje veličine slika za ugrađeni alat za generiranje sličica:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>
