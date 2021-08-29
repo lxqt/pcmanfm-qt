@@ -73,7 +73,8 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="104"/>
@@ -403,12 +404,14 @@ Rezerviran je i prostor za 3 retka teksta.</translation>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ako se mape na radnoj površini pritisnu lijevom tipkom miša,
+one će se otvoriti u PCManFM-Qt, čak i ako to nije standardni
+upravljač datoteka.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Otvori mape na radnoj površini u standardnom upravljaču datoteka pritiskom lijeve tipke miša</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
@@ -903,7 +906,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Po datumu stva&amp;ranja</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
@@ -933,22 +936,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="581"/>
         <source>&amp;Hidden Last</source>
-        <translation>S&amp;krivene na kraju</translation>
+        <translation>S&amp;krivene na kraj</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="946"/>
         <source>Preserve Settings Recursively from Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Sačuvaj postavke rekurzivno odavde</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="951"/>
         <source>Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Idi na Izvor naslijeđenih postavki</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="683"/>
@@ -973,7 +976,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="717"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Otvo&amp;ri karticu u administratorskoj instanci</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="731"/>
@@ -1210,7 +1213,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="646"/>
         <source>Del</source>
-        <translation>Ukloni</translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
@@ -1339,7 +1342,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>Name of configuration profile</source>
-        <translation>Ime konfiguracijskog profila</translation>
+        <translation>Ime profila konfiguracije</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="165"/>
@@ -1349,12 +1352,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokreni PCManFM-Qt kao demona</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Zatvori PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
@@ -1415,7 +1418,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Files or directories to open</source>
-        <translation>Datoteke i mape koje želiš otvoriti</translation>
+        <translation>Datoteke ili mape koje želiš otvoriti</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
@@ -1523,27 +1526,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>Razvuci na veličinu ekrana</translation>
+        <translation>Razvuci</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Stretch to fit the screen</source>
-        <translation>Prilagodi veličini ekrana</translation>
+        <translation>Prilagodi</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Center on the screen</source>
-        <translation>Centriraj na ekranu</translation>
+        <translation>Centriraj</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation>Poploči ekran sa slikom</translation>
+        <translation>Poploči</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="58"/>
         <source>Zoom the image to fill the entire screen</source>
-        <translation>Promijeni veličinu slike na veličinu ekrana</translation>
+        <translation>Ispuni</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="251"/>
@@ -1601,7 +1604,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../desktopwindow.cpp" line="963"/>
         <location filename="../desktopwindow.cpp" line="1000"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation>O&amp;stani na trenutačnom položaju</translation>
+        <translation>Fi&amp;ksiraj na trenutačnom položaju</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="970"/>
@@ -1939,18 +1942,18 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation>Ako nije označeno, koristit će se postavke okruženja radne površine.</translation>
+        <translation>Ako ovo nije označeno, koristit će se DE postavka.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Za deaktiviranje automatskog biranja, postavi na nulu.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zadrška automatskog biranja u modusu jednostrukog pritiskanja:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -1992,7 +1995,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Preimenovane datoteke će se također odabrati</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="288"/>
@@ -2070,12 +2073,12 @@ s karticama samo, ako postoji više kartica.</translation>
     <message>
         <location filename="../preferences.ui" line="529"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Prijeđii na novootvorenu karticu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ponovo otvori kartice zadnjeg prozora u novom prozoru</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
@@ -2083,7 +2086,9 @@ s karticama samo, ako postoji više kartica.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ugrađeni program za izradu sličica stvara sličice slika koje podržava Qt.
+
+Podržana je većina vrsta slika. Standardno ograničenje veličine je 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="626"/>
@@ -2102,17 +2107,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Ako se postojeći vanjski programi za izradu sličica koriste za videozapise, PDF dokumente itd.
+
+Vrijednost -1 znači da ne postoji ograničenje za veličinu datoteke (standardno postavljeno).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="659"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ograničenje veličine datoteke za vanjske programe za izradu sličica :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="671"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Bez ograničenja</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="809"/>
@@ -2127,7 +2134,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbornik knjižnih oznaka:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
@@ -2182,7 +2189,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="740"/>
         <source>When removable medium unmounted:</source>
-        <translation>Prilikom izbacivanja prijenosnih medija:</translation>
+        <translation>Kad se prijenosni medij izbaci:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="746"/>
@@ -2272,7 +2279,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <source>No file could be renamed.</source>
-        <translation>Niti jednu datoteku nije bilo moguće preimenovati.</translation>
+        <translation>Nijednu datoteku nije bilo moguće preimenovati.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="111"/>
@@ -2282,7 +2289,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1077"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne može se otvoriti kao administrator.</translation>
     </message>
 </context>
 </TS>
