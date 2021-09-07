@@ -167,7 +167,7 @@ Boston, MA 02110-1301 USA.</translation>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation>Pad:</translation>
+        <translation>Locatie:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
@@ -275,7 +275,7 @@ Boston, MA 02110-1301 USA.</translation>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation>Mappad</translation>
+        <translation>Maplocatie</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
@@ -319,7 +319,7 @@ Boston, MA 02110-1301 USA.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="325"/>
         <source>Image file path</source>
-        <translation>Pad naar afbeeldingsbestand</translation>
+        <translation>Locatie van afbeeldingsbestand</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="332"/>
@@ -1019,7 +1019,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="892"/>
         <source>&amp;Copy Full Path</source>
-        <translation>Volledig pad &amp;kopiëren</translation>
+        <translation>Volledige lo&amp;catie kopiëren</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="895"/>
@@ -1105,7 +1105,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="851"/>
         <source>&amp;Path Buttons</source>
-        <translation>&amp;Padknoppen</translation>
+        <translation>&amp;Locatieknoppen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="856"/>
