@@ -375,6 +375,8 @@ void Application::onUserDirsChanged() {
 
 void Application::onAboutToQuit() {
     qDebug("aboutToQuit");
+    Fm::closeFloatingWindows();
+
     // save custom positions of desktop items
     if(!desktopWindows_.isEmpty()) {
         desktopWindows_.first()->saveItemPositions();
