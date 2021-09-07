@@ -44,6 +44,7 @@
 #include <libfm-qt/core/terminal.h>
 #include <libfm-qt/core/bookmarks.h>
 #include <libfm-qt/core/folderconfig.h>
+#include <libfm-qt/utilities.h>
 
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
