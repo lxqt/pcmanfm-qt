@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>Про</translation>
+        <translation>Про Стискач</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -67,7 +67,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="82"/>
         <source>Authors</source>
-        <translation>Автори</translation>
+        <translation>Розробники</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -755,7 +755,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="335"/>
         <source>&amp;About</source>
-        <translation>&amp;Про</translation>
+        <translation>Про &amp;Стискач</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
@@ -1302,13 +1302,13 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation>&amp;Допомога</translation>
+        <translation>&amp;Довідка</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="99"/>
         <location filename="../main-win.ui" line="123"/>
         <source>&amp;View</source>
-        <translation>&amp;Перегляд</translation>
+        <translation>&amp;Вигляд</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="103"/>
@@ -1318,7 +1318,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="177"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Редагувати</translation>
+        <translation>&amp;Правити</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="195"/>
