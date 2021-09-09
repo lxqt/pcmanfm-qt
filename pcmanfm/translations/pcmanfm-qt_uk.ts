@@ -1318,7 +1318,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="177"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Правити</translation>
+        <translation>&amp;Змінити</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="195"/>
