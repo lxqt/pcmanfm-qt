@@ -1125,7 +1125,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="935"/>
         <location filename="../main-win.ui" line="938"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Создать кнопку запуска</translation>
+        <translation>Создать ярлык</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
