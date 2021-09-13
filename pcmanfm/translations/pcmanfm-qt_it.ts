@@ -485,7 +485,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="522"/>
         <source>Visible Shortcuts</source>
-        <translation>Scorciatoie visibili</translation>
+        <translation>Scorciatoie mostrate</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="528"/>

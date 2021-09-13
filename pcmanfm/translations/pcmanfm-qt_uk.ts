@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>Про Стискач</translation>
+        <translation>Про</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -67,7 +67,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="82"/>
         <source>Authors</source>
-        <translation>Розробники</translation>
+        <translation>Автори</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -143,7 +143,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation>Анонімне &amp;логування</translation>
+        <translation>Анонімний &amp;вхід</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
@@ -181,7 +181,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation>Створити кнопку запуску</translation>
+        <translation>Створити запускач</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
@@ -243,7 +243,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation>Програма</translation>
+        <translation>Застосунок</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
@@ -705,7 +705,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="219"/>
         <source>&amp;Tools</source>
-        <translation>&amp;Засоби</translation>
+        <translation>Засо&amp;би</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="278"/>
@@ -735,7 +735,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="305"/>
         <source>&amp;Reload</source>
-        <translation>&amp;Перезавантажити</translation>
+        <translation>&amp;Оновити</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="308"/>
@@ -755,7 +755,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="335"/>
         <source>&amp;About</source>
-        <translation>Про &amp;Стискач</translation>
+        <translation>&amp;Про</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
@@ -775,7 +775,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="358"/>
         <source>Show &amp;Hidden</source>
-        <translation>Показати &amp;сховані</translation>
+        <translation>Показати при&amp;ховані</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="361"/>
@@ -790,7 +790,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="379"/>
         <source>&amp;Trash</source>
-        <translation>&amp;Смітник</translation>
+        <translation>Смі&amp;тник</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="384"/>
@@ -810,22 +810,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="407"/>
         <source>&amp;Applications</source>
-        <translation>&amp;Програми</translation>
+        <translation>П&amp;рограми</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="412"/>
         <source>Reload</source>
-        <translation>Перезавантажити</translation>
+        <translation>Оновити</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="420"/>
         <source>&amp;Icon View</source>
-        <translation>&amp;Подання піктограмами</translation>
+        <translation>&amp;Перегляд піктограм</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="428"/>
         <source>&amp;Compact View</source>
-        <translation>&amp;Компактний вигляд</translation>
+        <translation>&amp;Компактний перегляд</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="436"/>
@@ -835,12 +835,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="444"/>
         <source>&amp;Thumbnail View</source>
-        <translation>&amp;Вигляд мініатюрами</translation>
+        <translation>Перегляд &amp;мініатюр</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="453"/>
         <source>Cu&amp;t</source>
-        <translation>Ви&amp;різати</translation>
+        <translation>Виріза&amp;ти</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="456"/>
@@ -850,7 +850,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="465"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Копія</translation>
+        <translation>&amp;Копіювати</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="468"/>
@@ -860,7 +860,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="477"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Вставити</translation>
+        <translation>Вс&amp;тавити</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="480"/>
@@ -870,7 +870,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="485"/>
         <source>Select &amp;All</source>
-        <translation>Вибрати &amp;все</translation>
+        <translation>&amp;Вибрати все</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="488"/>
@@ -880,17 +880,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="493"/>
         <source>Pr&amp;eferences</source>
-        <translation>Пара&amp;метри</translation>
+        <translation>&amp;Налаштування</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="501"/>
         <source>&amp;Ascending</source>
-        <translation>В порядку &amp;зростання</translation>
+        <translation>В порядку з&amp;ростання</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="509"/>
         <source>&amp;Descending</source>
-        <translation>В порядку &amp;спадання</translation>
+        <translation>В порядку спа&amp;дання</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="517"/>
@@ -980,7 +980,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="731"/>
         <source>&amp;Folder</source>
-        <translation>&amp;Тека</translation>
+        <translation>&amp;Теку</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="743"/>
@@ -1005,7 +1005,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="881"/>
         <source>S&amp;plit View</source>
-        <translation>Р&amp;озділити вікно</translation>
+        <translation>Розділити &amp;вікно</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="884"/>
@@ -1096,7 +1096,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="835"/>
         <source>Connect to &amp;Server</source>
-        <translation>Зв&apos;язок з &amp;сервером</translation>
+        <translation>&amp;Зв&apos;язок із сервером</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="843"/>
@@ -1187,7 +1187,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="620"/>
         <source>Go &amp;Forward</source>
-        <translation>Перейти в&amp;перед</translation>
+        <translation>П&amp;ерейти вперед</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="623"/>
@@ -1207,7 +1207,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Вилучити</translation>
+        <translation>Ви&amp;далити</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="646"/>
@@ -1247,7 +1247,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="675"/>
         <source>&amp;Folder Properties</source>
-        <translation>В&amp;ластивості теки</translation>
+        <translation>&amp;Властивості теки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="704"/>
@@ -1308,17 +1308,17 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="99"/>
         <location filename="../main-win.ui" line="123"/>
         <source>&amp;View</source>
-        <translation>&amp;Вигляд</translation>
+        <translation>Пере&amp;гляд</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="103"/>
         <source>&amp;Sorting</source>
-        <translation>&amp;Сортування</translation>
+        <translation>Сор&amp;тування</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="177"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Змінити</translation>
+        <translation>З&amp;мінити</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="195"/>
@@ -1693,22 +1693,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="198"/>
         <source>Icon View</source>
-        <translation>Подання піктограмами</translation>
+        <translation>Перегляд піктограм</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Compact View</source>
-        <translation>Компактний вигляд</translation>
+        <translation>Компактний перегляд</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Thumbnail View</source>
-        <translation>Вигляд мініатюрами</translation>
+        <translation>Перегляд мініатюр</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Detailed List View</source>
-        <translation>Подання детального переліку</translation>
+        <translation>Детальний список</translation>
     </message>
 </context>
 <context>
@@ -2000,19 +2000,19 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../preferences.ui" line="288"/>
         <location filename="../preferences.ui" line="298"/>
         <source>Used by Icon View</source>
-        <translation>Використано поданням піктограмами</translation>
+        <translation>Використовується Переглядом піктограм</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="305"/>
         <location filename="../preferences.ui" line="315"/>
         <source>Used by Compact View and Detailed List View</source>
-        <translation>Використати Компактний перегляд або Детальний перегляд списком</translation>
+        <translation>Використовується Компактним переглядом або Детальним списком</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="322"/>
         <location filename="../preferences.ui" line="332"/>
         <source>Used by Thumbnail View</source>
-        <translation>Використано Переглядом мініатюрами</translation>
+        <translation>Використовується Переглядом мініатюр</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="352"/>
@@ -2022,7 +2022,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="365"/>
         <source>Treat backup files as hidden</source>
-        <translation>Трактувати файли бекапу як приховані</translation>
+        <translation>Позначити файли резервних копій прихованими</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="385"/>
