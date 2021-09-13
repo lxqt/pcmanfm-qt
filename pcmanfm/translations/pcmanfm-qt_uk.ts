@@ -67,7 +67,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="82"/>
         <source>Authors</source>
-        <translation>Розробники</translation>
+        <translation>Автори</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -2022,7 +2022,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../preferences.ui" line="365"/>
         <source>Treat backup files as hidden</source>
-        <translation>Помітити файли резервних копій як приховані</translation>
+        <translation>Позначити файли резервних копій прихованими</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="385"/>
