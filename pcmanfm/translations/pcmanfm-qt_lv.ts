@@ -46,7 +46,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt failu pārvaldnieks
+
+Autortiesības (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Šī programma ir bezmaksas programmatūra; to var izplatīt un/vai
+modificēt saskaņā ar GNU vispārējās publiskās licences noteikumiem
+kā publicējis Free Software Foundation; vai nu 2. licences versija, 
+vai (pēc jūsu izvēles) jebkura vēlāka versija.
+
+Šī programma tiek izplatīta, cerot, ka tā būs noderīga,
+bet BEZ JEBKĀDĀM GARANTIJĀM; pat bez netiešas garantijas
+Tirdzniecības iespējas vai ATBILSTĪBA KONKRĒTAM MĒRĶIM. Skatīt
+GNU vispārīgo publisko licenci sīkākai informācijai.
+
+Jums kopā ar šo programmu bija jāsaņem GNU vispārējās 
+publiskās licences kopija, ja nē, rakstiet uz Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="82"/>
@@ -344,12 +360,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Atlasīt teksta krāsu:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Atstarpe</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="142"/>
@@ -359,24 +375,25 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="149"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>3 px pēc noklusējuma.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="165"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="172"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation>1 px pēc noklusējuma.
+Vieta arī ir rezervēta priekš 3 teksta rindiņām.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
@@ -387,32 +404,34 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pēc noklusējuma ar peles kreiso taustiņu noklikšķinot uz 
+darbvirsmas mapēm, tas tiks atvērtas izmantojot PCManFM-Qt, 
+pat ja PCManFM-Qt nav noklusējuma failu pārvaldnieks.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Atvērt darbvirsmas mapes noklusējuma failu pārvaldniekā, noklikšķinot ar peles kreiso pogu</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="275"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Fona attēls</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="341"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Pārveidot attēlu, balstoties uz EXIF datiem</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="348"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Atšķirīgs fona attēls katram monitoram</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="375"/>
         <source>Slide Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Slaidrāde</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="381"/>
