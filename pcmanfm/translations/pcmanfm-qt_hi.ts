@@ -6,24 +6,26 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>परिचय</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>लाइटवेट फ़ाइल प्रबंधक</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>प्रोग्रामिंग:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="113"/>
@@ -49,7 +51,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="82"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>लेखकगण</translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
@@ -60,7 +62,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="104"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>लाइसेंस</translation>
     </message>
 </context>
 <context>
@@ -68,12 +70,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>हटाने योग्य माध्यम डाला गया है</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;हटाने योग्य माध्यम डाला गया है
+&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
@@ -111,7 +114,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>नाम#</translation>
     </message>
 </context>
 <context>
