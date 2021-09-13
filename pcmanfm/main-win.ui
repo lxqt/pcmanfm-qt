@@ -151,7 +151,7 @@
     </widget>
     <widget class="QMenu" name="menuView_Settings">
      <property name="title">
-      <string>Customized View Settings</string>
+      <string>&amp;Customized View Settings</string>
      </property>
      <addaction name="actionPreserveView"/>
      <addaction name="actionPreserveViewRecursive"/>
@@ -829,7 +829,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>&amp;Preserve Settings for This Folder</string>
+    <string>Preserve Settings for &amp;This Folder</string>
    </property>
   </action>
   <action name="actionConnectToServer">
@@ -945,17 +945,17 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Preserve Settings Recursively from Here</string>
+    <string>Preserve Settings Recursively from &amp;Here</string>
    </property>
   </action>
   <action name="actionGoToCustomizedViewSource">
    <property name="text">
-    <string>Go to Source of Inherited Settings</string>
+    <string>&amp;Go to Source of Inherited Settings</string>
    </property>
   </action>
   <action name="actionCleanPerFolderConfig">
    <property name="text">
-    <string>Remove Settings of Nonexistent Folders</string>
+    <string>&amp;Remove Settings of Nonexistent Folders</string>
    </property>
   </action>
  </widget>
