@@ -415,7 +415,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocca la posizione di tutti gli elementi</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -900,17 +900,17 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Ricorda impostazioni per &amp;cartella e sottocartelle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vai alla cartella delle impostazioni specifiche</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Rimuovi le impostazioni per cartelle non esistenti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -940,7 +940,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ricorda impostazioni per &amp;questa cartella</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1112,7 +1112,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazioni di</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="280"/>
@@ -1282,7 +1282,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="246"/>
         <source>Main Toolbar</source>
-        <translation>Barra strumenti principale</translation>
+        <translation>Barra degli strumenti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
@@ -1689,7 +1689,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1895"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Impostazioni visualizzazione specifiche</translation>
+        <translation>Impostazioni visualizzazioni &amp;specifiche</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2120"/>
@@ -1705,13 +1705,14 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2230"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Pulizia di impostazioni cartelle</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Desidera di rimuovere le impostazioni per le cartelle non esistenti?
+Potrebbero essere utili se le cartelle vengono ricreate.</translation>
     </message>
 </context>
 <context>

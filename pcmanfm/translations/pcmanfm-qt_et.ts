@@ -115,7 +115,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation>Hulgi ümbernimetamine</translation>
+        <translation>Muuda paljude failide nimesid</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
@@ -266,7 +266,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation>Töölauakataloog:</translation>
+        <translation>Töölauakaust:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -276,7 +276,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation>Kataloogi rada</translation>
+        <translation>Kausta asukoht</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
@@ -415,7 +415,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Muuda kõik kirjed oma asukohas kleepuvaks</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -445,7 +445,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../desktop-preferences.ui" line="400"/>
         <source>Wallpaper image folder:</source>
-        <translation>Taustapildi kataloog:</translation>
+        <translation>Taustapildi kaust:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="407"/>
@@ -480,7 +480,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
         <source>Wallpaper folder</source>
-        <translation>Taustapildi kataloog</translation>
+        <translation>Taustapildi kaust</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="496"/>
@@ -940,17 +940,17 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasuta siit &amp;alates rekursiivselt samu seadistusi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Mine rekursiivsete seadistuste algpunkti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Eemalda seadistused olematutest kaustadest</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -995,7 +995,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Säilita &amp;selle kausta seadistused</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1116,12 +1116,12 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="858"/>
         <source>&amp;Bulk Rename</source>
-        <translation>&amp;Hulgi ümbernimetamine</translation>
+        <translation>&amp;Muuda paljude failide nimesid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="861"/>
         <source>Bulk Rename</source>
-        <translation>Hulgi ümbernimetamine</translation>
+        <translation>Muuda paljude failide nimesid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="864"/>
@@ -1167,7 +1167,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaate &amp;kohandatud seadistused</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
@@ -1427,7 +1427,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../application.cpp" line="201"/>
         <source>Files or directories to open</source>
-        <translation>Avatavad failid või kataloogid</translation>
+        <translation>Avatavad failid või kaustad</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="201"/>
@@ -1688,7 +1688,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../mainwindow.cpp" line="1895"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Vaate kohandatud seadistused</translation>
+        <translation>Vaate kohandatud seadistused</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2120"/>
@@ -1704,13 +1704,14 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../mainwindow.cpp" line="2230"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Kustutan kausta seadistused</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kas sa soovid eemaldada olematute kaustade seadistused?
+Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</translation>
     </message>
 </context>
 <context>
@@ -1752,8 +1753,8 @@ They might be useful if those folders are created again.</source>
         <location filename="../tabpage.cpp" line="532"/>
         <source>%n item(s)</source>
         <translation>
-            <numerusform>%n element</numerusform>
-            <numerusform>%n elementi</numerusform>
+            <numerusform>%n kirje</numerusform>
+            <numerusform>%n kirjet</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1775,8 +1776,8 @@ They might be useful if those folders are created again.</source>
         <location filename="../tabpage.cpp" line="761"/>
         <source>%n item(s) selected</source>
         <translation>
-            <numerusform>%n element valitud</numerusform>
-            <numerusform>%n elementi valitud</numerusform>
+            <numerusform>%n kirje valitud</numerusform>
+            <numerusform>%n kirjet valitud</numerusform>
         </translation>
     </message>
 </context>
@@ -2053,7 +2054,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="415"/>
         <source>Minimum item margins in icon view:</source>
-        <translation>Vähim elementide vahemaa ikoonivaates:</translation>
+        <translation>Vähim kirjete vahemaa ikoonivaates:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
@@ -2218,7 +2219,7 @@ Väärtus -1 tähendab, et failisuuruse piir puudub (see on ka vaikimisi väärt
     <message>
         <location filename="../preferences.ui" line="753"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>Muud&amp;a kaardil olev kataloog kodukataloogiks</translation>
+        <translation>Muud&amp;a kaardil olev kaust kodukaustaks</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="780"/>
@@ -2271,7 +2272,7 @@ Väärtus -1 tähendab, et failisuuruse piir puudub (see on ka vaikimisi väärt
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
         <source>Renaming files...</source>
-        <translation>Failide ümbernimetamine ...</translation>
+        <translation>Muudan failide nimesid...</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="73"/>
