@@ -270,6 +270,14 @@ void DesktopWindow::onOpenDirRequested(FmPath* path, int target) {
       }
     }
     newWin->show();
+
+    // Bring Filer to front
+    newWin->activateWindow();
+    newWin->raise();
+    Display *dpy;
+    dpy = XOpenDisplay(NULL);
+    XRaiseWindow(dpy, newWin->effectiveWinId());
+    XCloseDisplay(dpy);
 }
 
 void DesktopWindow::resizeEvent(QResizeEvent* event) {

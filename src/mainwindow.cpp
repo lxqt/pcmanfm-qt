@@ -52,6 +52,8 @@
 
 // #include "qmodeltest/modeltest.h"
 
+#include <X11/Xlib.h>
+
 using namespace Fm;
 
 namespace Filer {
@@ -1301,6 +1303,11 @@ void MainWindow::onRaiseWindow(const QString& path)
       if (path == ourPath) {
         raise();
         activateWindow();
+        // Bring Filer to front
+        Display *dpy;
+        dpy = XOpenDisplay(NULL);
+        XRaiseWindow(dpy, effectiveWinId());
+        XCloseDisplay(dpy);
         bool maximized = isMaximized();
         if (isMinimized()) {
           showNormal();
