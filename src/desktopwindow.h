@@ -97,6 +97,7 @@ protected:
 
 protected Q_SLOTS:
   void onOpenFolder(QString folder);
+  void onOpenFolderAndSelectItems(QString folder, QStringList items);
   void onOpenTrash();
   void onOpenDesktop();
   void onOpenDocuments();

@@ -709,6 +709,58 @@ FmPathList* FolderView::selectedFilePaths() const {
   return NULL;
 }
 
+void FolderView::selectFiles(QStringList files, bool add) {
+  if(!model_ || files.count() == 0)
+    return;
+
+  // maybe the model is not loaded yet. if so, save our desired selections
+  // and this will be called again when loading is complete ^_^
+  int count = model_->rowCount();
+  if(count == 0) {
+    qDebug() << "FolderView::selectFiles() Deferring until loading complete";
+    ((FolderModel *)model_->sourceModel())->wantToSelect(files,add,this);
+    return;
+  }
+
+  bool singleFile(files.count() == 1);
+  QModelIndex index, firstIndex;
+
+  QItemSelectionModel::SelectionFlags flags = QItemSelectionModel::Select;
+  if(mode == DetailedListMode)
+    flags |= QItemSelectionModel::Rows;
+
+  for(int row = 0; row < count; ++row) {
+    if(files.count() == 0)
+      break;
+    index = model_->index(row, 0);
+    auto info = model_->fileInfoFromIndex(index);
+    FmPath *infopath = fm_file_info_get_path(info);
+    for(auto iter = files.begin(); iter != files.end(); ++iter) {
+      FmFileInfo *fi = fm_file_info_new_from_native_file(nullptr, iter->toUtf8(), nullptr);
+      FmPath *fipath = fm_file_info_get_path(fi);
+      //qDebug() << "COMPARING " << fm_path_display_name(infopath,false)
+      //	 << fm_path_display_name(fipath,false);
+      if(fm_path_equal(infopath, fipath)) {
+        if(!firstIndex.isValid()) {
+          firstIndex = index;
+          if(!add)
+            selectionModel()->clear();
+        }
+        selectionModel()->select(index, flags);
+        files.erase(iter);
+        break;
+      }
+    }
+  }
+
+  if(firstIndex.isValid()) {
+    view->scrollTo(firstIndex, QAbstractItemView::EnsureVisible);
+    if(singleFile) {
+      selectionModel()->setCurrentIndex(firstIndex, QItemSelectionModel::Current);
+    }
+  }
+}
+
 FmFileInfoList* FolderView::selectedFiles() const {
   if(model_) {
     QModelIndexList selIndexes = mode == DetailedListMode ? selectedRows() : selectedIndexes();

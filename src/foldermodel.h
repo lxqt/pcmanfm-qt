@@ -91,6 +91,8 @@ public:
   void cacheThumbnails(int size);
   void releaseThumbnails(int size);
 
+  void wantToSelect(QStringList files, bool add, void *view);
+
 Q_SIGNALS:
   void thumbnailLoaded(const QModelIndex& index, int size);
 
@@ -105,6 +107,7 @@ protected:
   static void onFilesRemoved(FmFolder* folder, GSList* files, gpointer user_data);
   static void onThumbnailLoaded(FmThumbnailLoader *res, gpointer user_data);
 
+  void onFinishedLoading();
   void insertFiles(int row, FmFileInfoList* files);
   void removeAll();
   QList<FolderModelItem>::iterator findItemByPath(FmPath* path, int* row);
@@ -120,6 +123,11 @@ private:
   // record what size of thumbnails we should cache in an array of <size, refCount> pairs.
   QVector<QPair<int, int> > thumbnailRefCounts;
   QLinkedList<FmThumbnailLoader*> thumbnailResults;
+
+  // for "ShowItems"
+  QStringList filesToSelect;
+  bool filesToSelectAdd;
+  void *filesToSelectView;
 };
 
 }

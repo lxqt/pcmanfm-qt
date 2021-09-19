@@ -56,6 +56,7 @@
 #include "utilities.h"
 #include "windowregistry.h"
 #include "ui_about.h"
+#include "tabpage.h"
 #include "trash.h"
 
 #include <QX11Info>
@@ -191,6 +192,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     connect(desktopMainWindow_, &DesktopMainWindow::fileProperties, this, &DesktopWindow::onFilePropertiesActivated);
     connect(desktopMainWindow_, &DesktopMainWindow::preferences, this, &DesktopWindow::onFilerPreferences);
     connect(desktopMainWindow_, &DesktopMainWindow::openFolder, this, &DesktopWindow::onOpenFolder);
+    connect(static_cast<Application*>(qApp), &Application::openFolderAndSelectItems, this, &DesktopWindow::onOpenFolderAndSelectItems);
     connect(desktopMainWindow_, &DesktopMainWindow::openTrash, this, &DesktopWindow::onOpenTrash);
     connect(desktopMainWindow_, &DesktopMainWindow::openDesktop, this, &DesktopWindow::onOpenDesktop);
     connect(desktopMainWindow_, &DesktopMainWindow::openDocuments, this, &DesktopWindow::onOpenDocuments);
@@ -991,6 +993,33 @@ void DesktopWindow::onOpenFolder(QString folder)
     qDebug() << "DesktopWindow::onOpenFolder: " << folder;
     FmPath* path = fm_path_new_for_str(folder.toLocal8Bit().data());
     onOpenDirRequested(path, 0);
+    fm_path_unref(path);
+}
+
+void DesktopWindow::onOpenFolderAndSelectItems(QString folder, QStringList items)
+{
+    FmPath* path = fm_path_new_for_str(folder.toLocal8Bit().data());
+
+    // just raise the window if it's already open
+    if (WindowRegistry::instance().checkPathAndSelectItems(fm_path_to_str(path), items)) {
+      return;
+    }
+
+    Application* app = static_cast<Application*>(qApp);
+    MainWindow* newWin = new MainWindow(path);
+    // apply window size from app->settings
+    if ( ! app->settings().spatialMode() ) {
+      newWin->resize(app->settings().windowWidth(), app->settings().windowHeight());
+      if(app->settings().windowMaximized()) {
+              newWin->setWindowState(newWin->windowState() | Qt::WindowMaximized);
+      }
+    }
+    newWin->show();
+    TabPage* page = newWin->currentPage();
+    if(page) {
+      page->folderView()->selectFiles(items, false);
+    }
+
     fm_path_unref(path);
 }
 

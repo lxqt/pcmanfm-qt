@@ -32,6 +32,7 @@
 #include "utilities.h"
 #include "fileoperation.h"
 #include "thumbnailloader.h"
+#include "folderview.h"
 
 #include "fm-path.h"
 
@@ -130,7 +131,20 @@ void FolderModel::onStartLoading(FmFolder* folder, gpointer user_data) {
 
 void FolderModel::onFinishLoading(FmFolder* folder, gpointer user_data) {
   Q_UNUSED(folder)
-  Q_UNUSED(user_data)
+  //Q_UNUSED(user_data)
+  ((FolderModel *)user_data)->onFinishedLoading();
+}
+
+void FolderModel::onFinishedLoading() {
+  if(filesToSelect.count() > 0)
+    ((FolderView *)filesToSelectView)->selectFiles(filesToSelect, filesToSelectAdd);
+  filesToSelect.clear();
+}
+
+void FolderModel::wantToSelect(QStringList files, bool add, void *view) {
+  filesToSelect = files;
+  filesToSelectAdd = add;
+  filesToSelectView = view;
 }
 
 void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_data) {

@@ -157,6 +157,7 @@ protected Q_SLOTS:
   void onBackForwardContextMenu(QPoint pos);
 
   void onRaiseWindow(const QString& path);
+  void onRaiseWindowAndSelectItems(const QString& path, const QStringList& items);
 
 protected:
   // void changeEvent( QEvent * event);

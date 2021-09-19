@@ -46,8 +46,12 @@ public:
    */
   bool checkPathAndRaise(const QString& path);
 
+  // for ShowItems, we need to select items in the raised window
+  bool checkPathAndSelectItems(const QString& path, const QStringList& items);
+
 Q_SIGNALS:
   void raiseWindow(const QString& path);
+  void raiseWindowAndSelectItems(const QString& path, const QStringList& items);
 
 private: // functions
   explicit WindowRegistry(QObject* parent = nullptr);

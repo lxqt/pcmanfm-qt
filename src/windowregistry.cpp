@@ -47,6 +47,14 @@ bool WindowRegistry::checkPathAndRaise(const QString& path)
   return false;
 }
 
+bool WindowRegistry::checkPathAndSelectItems(const QString& path, const QStringList& items) {
+  if (registry_.contains(path)) {
+    Q_EMIT raiseWindowAndSelectItems(path, items);
+    return true;
+  }
+  return false;
+}
+
 WindowRegistry::WindowRegistry(QObject* parent):
   QObject(),
   registry_() {

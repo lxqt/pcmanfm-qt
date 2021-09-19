@@ -18,6 +18,7 @@
  *
  */
 
+#include <QDebug>
 #include "launcher.h"
 #include "mainwindow.h"
 #include "application.h"

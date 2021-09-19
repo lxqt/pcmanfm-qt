@@ -328,6 +328,8 @@ MainWindow::MainWindow(FmPath* path):
   WindowRegistry::instance().registerPath(fm_path_to_str(path));
   connect(&WindowRegistry::instance(), &WindowRegistry::raiseWindow,
           this, &MainWindow::onRaiseWindow);
+  connect(&WindowRegistry::instance(), &WindowRegistry::raiseWindowAndSelectItems,
+          this, &MainWindow::onRaiseWindowAndSelectItems);
 }
 
 MainWindow::~MainWindow() {
@@ -1309,6 +1311,14 @@ void MainWindow::onRaiseWindow(const QString& path)
       }
     }
   }
+}
+
+void MainWindow::onRaiseWindowAndSelectItems(const QString& path, const QStringList& items) {
+    onRaiseWindow(path);
+    TabPage* page = currentPage();
+    if(page) {
+      page->folderView()->selectFiles(items, false);
+    }
 }
 
 void MainWindow::updateFromSettings(Settings& settings) {

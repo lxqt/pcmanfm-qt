@@ -95,6 +95,7 @@ public:
   QItemSelectionModel* selectionModel() const;
   FmFileInfoList* selectedFiles() const;
   FmPathList* selectedFilePaths() const;
+  void selectFiles(QStringList files, bool add = false);
 
   void selectAll();
 
