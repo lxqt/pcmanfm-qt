@@ -50,7 +50,7 @@ FileLauncher::~FileLauncher() {
 }
 
 //static
-bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
+bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_contents) {
     qDebug() << "probono: FileLauncher::launchFiles called";
     qDebug() << "probono: LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
     qDebug() << "probono: Determining whether it is an AppDir/.app bundle";
@@ -74,24 +74,26 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
     GList* itemsToBeLaunched = NULL;
     for(GList* l = file_infos; l; l = l->next) {
         FmFileInfo* info = FM_FILE_INFO(l->data);
-        bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
-        if(isAppDirOrBundle == false) {
-            qDebug() << "probono: Not an .AppDir or .app bundle. TODO: Make it possible to use the 'launch' command for those, too";
-            // probono: URLs like network://, sftp:// and so on will continue to be handled like this in any case since they need GIO,
-            // but documents, non-bundle executables etc. could all be handled by 'launch' if we make 'launch' understand them
-            itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data);
-        } else {
-            QString launchableExecutable = getLaunchableExecutable(info);
-            if(QStandardPaths::findExecutable("launch") != "") {
-                qDebug() << "probono: Launching using the 'launch' command";
-                QProcess::startDetached("launch", {launchableExecutable});
+
+            bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
+            if(isAppDirOrBundle == false or (show_contents == true)) {
+                qDebug() << "probono: Not an .AppDir or .app bundle. TODO: Make it possible to use the 'launch' command for those, too";
+                // probono: URLs like network://, sftp:// and so on will continue to be handled like this in any case since they need GIO,
+                // but documents, non-bundle executables etc. could all be handled by 'launch' if we make 'launch' understand them
+                itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data);
             } else {
-                qDebug() << "probono: The 'launch' command is not available on the $PATH, otherwise it would be used";
-                qDebug() << "probono: Construct FmFileInfo* for" << launchableExecutable << "and add it to itemsToBeLaunched";
-                FmFileInfo* launchableExecutableFileInfo = fm_file_info_new_from_native_file(nullptr, launchableExecutable.toUtf8(),nullptr);
-                itemsToBeLaunched = g_list_append(itemsToBeLaunched, launchableExecutableFileInfo);
+                QString launchableExecutable = getLaunchableExecutable(info);
+                if(QStandardPaths::findExecutable("launch") != "") {
+                    qDebug() << "probono: Launching using the 'launch' command";
+                    QProcess::startDetached("launch", {launchableExecutable});
+                } else {
+                    qDebug() << "probono: The 'launch' command is not available on the $PATH, otherwise it would be used";
+                    qDebug() << "probono: Construct FmFileInfo* for" << launchableExecutable << "and add it to itemsToBeLaunched";
+                    FmFileInfo* launchableExecutableFileInfo = fm_file_info_new_from_native_file(nullptr, launchableExecutable.toUtf8(),nullptr);
+                    itemsToBeLaunched = g_list_append(itemsToBeLaunched, launchableExecutableFileInfo);
+                }
             }
-        }
+
     }
     bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), itemsToBeLaunched, &funcs, this);
     g_list_free(itemsToBeLaunched);

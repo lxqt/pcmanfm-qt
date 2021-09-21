@@ -32,16 +32,16 @@ public:
   FileLauncher();
   virtual ~FileLauncher();
 
-  bool launchFiles(QWidget* parent, FmFileInfoList* file_infos) {
+  bool launchFiles(QWidget* parent, FmFileInfoList* file_infos, bool show_contents = false) {
     GList* fileList = fm_file_info_list_peek_head_link(file_infos);
-    return launchFiles(parent, fileList);
+    return launchFiles(parent, fileList, show_contents);
   }
   bool launchPaths(QWidget* parent, FmPathList* paths) {
     GList* pathList = fm_path_list_peek_head_link(paths);
     return launchPaths(parent, pathList);
   }
 
-  bool launchFiles(QWidget* parent, GList* file_infos);
+  bool launchFiles(QWidget* parent, GList* file_infos, bool show_contents = false);
   bool launchPaths(QWidget* parent, GList* paths);
 
   bool quickExec() const {

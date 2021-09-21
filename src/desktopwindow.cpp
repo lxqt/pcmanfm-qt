@@ -849,6 +849,19 @@ void DesktopWindow::onOpenActivated()
     }
 }
 
+void DesktopWindow::onShowContentsActivated()
+{
+    if(FmFileInfoList* files = selectedFiles()) {
+        if(View::fileLauncher()) {
+            View::fileLauncher()->launchFiles(NULL, files, true);
+        }
+        else { // use the default launcher
+            Fm::FileLauncher launcher;
+            launcher.launchFiles(NULL, files, true);
+        }
+    }
+}
+
 void DesktopWindow::onFilePropertiesActivated() {
     if(FmFileInfoList* files = selectedFiles()) {
         Fm::FilePropsDialog::showForFiles(files);

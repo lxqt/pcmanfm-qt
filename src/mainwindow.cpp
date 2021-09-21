@@ -500,6 +500,25 @@ void MainWindow::on_actionOpen_triggered() {
     }
 }
 
+// probono
+void MainWindow::on_actionShowContents_triggered() {
+    TabPage* page = currentPage();
+
+    if(page) {
+        FmFileInfoList* files = page->selectedFiles();
+
+        if(files) {
+            if(page->fileLauncher()) {
+                page->fileLauncher()->launchFiles(NULL, files, true);
+            }
+            else { // use the default launcher
+                Fm::FileLauncher launcher;
+                launcher.launchFiles(NULL, files, true);
+            }
+        }
+    }
+}
+
 void MainWindow::on_actionFileProperties_triggered() {
   TabPage* page = currentPage();
 

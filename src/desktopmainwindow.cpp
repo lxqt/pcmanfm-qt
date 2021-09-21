@@ -91,6 +91,11 @@ void Filer::DesktopMainWindow::on_actionOpen_triggered()
   Q_EMIT open();
 }
 
+void Filer::DesktopMainWindow::on_actionShowContents_triggered()
+{
+  Q_EMIT showContents();
+}
+
 void DesktopMainWindow::on_actionNewFolder_triggered()
 {
   Q_EMIT newFolder();

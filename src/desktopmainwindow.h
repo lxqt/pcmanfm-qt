@@ -47,6 +47,7 @@ public:
 
 protected Q_SLOTS:
   void on_actionOpen_triggered();
+  void on_actionShowContents_triggered();
 
   void on_actionNewFolder_triggered();
   void on_actionNewBlankFile_triggered();
@@ -100,6 +101,7 @@ protected Q_SLOTS:
 
 Q_SIGNALS:
   void open();
+  void showContents(); // probono
   void newFolder();
   void newBlankFile();
   void fileProperties();

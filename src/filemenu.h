@@ -151,6 +151,7 @@ protected:
 
 protected Q_SLOTS:
   void onOpenTriggered();
+  void onShowContentsTriggered();
   void onOpenWithTriggered();
   void onFilePropertiesTriggered();
   void onEmptyTrashTriggered();
@@ -183,6 +184,7 @@ private:
   bool allTrash_;
 
   QAction* openAction_;
+  QAction* showContentsAction_;
   QAction* openWithMenuAction_;
   QAction* openWithAction_;
   QAction* separator1_;

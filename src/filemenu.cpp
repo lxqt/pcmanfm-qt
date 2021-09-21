@@ -96,6 +96,13 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
     connect(openAction_ , &QAction::triggered, this, &FileMenu::onOpenTriggered);
     addAction(openAction_);
 
+    // probono: Show Contents for application bundles
+    if (QString(fm_path_to_str(path)).endsWith(".app") or QString(fm_path_to_str(path)).endsWith(".AppDir")) {
+        showContentsAction_ = new QAction(tr("Show Contents"), this);
+        connect(showContentsAction_ , &QAction::triggered, this, &FileMenu::onShowContentsTriggered);
+        addAction(showContentsAction_);
+    }
+
     // probono: Find out whether the right-clicked item contains the Trash
     // so that we can show "Empty Trash" instead of "Move to Trash"
     bool contains_trashcan = false;
@@ -283,6 +290,16 @@ void FileMenu::onOpenTriggered() {
     else { // use the default launcher
         Fm::FileLauncher launcher;
         launcher.launchFiles(NULL, files_);
+    }
+}
+
+void FileMenu::onShowContentsTriggered() {
+    if(fileLauncher_) {
+        fileLauncher_->launchFiles(NULL, files_, true);
+    }
+    else { // use the default launcher
+        Fm::FileLauncher launcher;
+        launcher.launchFiles(NULL, files_, true);
     }
 }
 

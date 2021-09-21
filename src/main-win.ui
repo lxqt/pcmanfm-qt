@@ -125,6 +125,7 @@
     </widget>
     <addaction name="actionNewTab"/>
     <addaction name="actionOpen"/>
+    <addaction name="actionShowContents"/>
     <addaction name="separator"/>
     <addaction name="actionNewWin"/>
     <addaction name="separator"/>
@@ -297,7 +298,7 @@
     <string>&amp;Reload</string>
    </property>
    <property name="shortcut">
-    <string>F5</string>
+    <string>Ctrl+Shift+R</string>
    </property>
    <property name="visible">
     <bool>true</bool>
@@ -832,6 +833,14 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Alt+Backspace</string>
+   </property>
+  </action>
+  <action name="actionShowContents">
+   <property name="text">
+    <string>Show Contents</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
    </property>
   </action>
  </widget>
