@@ -42,16 +42,16 @@ FolderModelItem::FolderModelItem(FmFileInfo* _info):
       QFileInfo fileInfo = QFileInfo(path);
       QString nameWithoutSuffix = QFileInfo(fileInfo.completeBaseName()).fileName();
 
-      qDebug("probono: AppDir/app bundle detected xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx " + path.toUtf8());
+      qDebug() << "probono: AppDir/app bundle detected:" << path;
 
-      qDebug("probono: Set different icon for AppDir/app bundle");
+      qDebug() << "probono: Set different icon for AppDir/app bundle";
       icon = getIconForBundle(info);
 
       // probono: Set display name
       fm_file_info_set_disp_name(_info, nameWithoutSuffix.toUtf8()); // probono: Remove the suffix from display name
-      qDebug("probono: TODO: Set the proper display name for AppDir based on Name= entries in desktop file. Similar to what happens when desktop files are displayed");
+      qDebug() << "probono: TODO: Set the proper display name for AppDir based on Name= entries in desktop file. Similar to what happens when desktop files are displayed";
 
-      qDebug("probono: TODO: Submit it to some Launch Services like database?");
+      qDebug() << "probono: TODO: Submit it to some Launch Services like database?";
 
   }
 

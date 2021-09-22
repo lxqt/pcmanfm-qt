@@ -133,7 +133,6 @@
     <addaction name="separator"/>
     <addaction name="actionFileProperties"/>
     <addaction name="separator"/>
-    <addaction name="actionCloseTab"/>
     <addaction name="actionCloseWindow"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
@@ -658,9 +657,6 @@
    <property name="text">
     <string>C&amp;lose Tab</string>
    </property>
-   <property name="shortcut">
-    <string>Ctrl+W</string>
-   </property>
   </action>
   <action name="actionFileProperties">
    <property name="text">
@@ -689,6 +685,9 @@
   <action name="actionCloseWindow">
    <property name="text">
     <string>&amp;Close Window</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
    </property>
   </action>
   <action name="actionEdit_Bookmarks">

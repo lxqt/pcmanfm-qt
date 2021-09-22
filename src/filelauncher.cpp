@@ -52,7 +52,6 @@ FileLauncher::~FileLauncher() {
 //static
 bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_contents) {
     qDebug() << "probono: FileLauncher::launchFiles called";
-    qDebug() << "probono: LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
     qDebug() << "probono: Determining whether it is an AppDir/.app bundle";
     // probono: This gets invoked when an icon is double clicked or "Open" is selected from the context menu
     // but not if "Open with..." is selected from the context menu
@@ -95,7 +94,20 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_con
             }
 
     }
-    bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), itemsToBeLaunched, &funcs, this);
+
+    // probono: Unlike PcManFM-Qt, we don't want that multiple selected files
+    // get opened in tabs. Instead, we want each to be opened inside its own window.
+    bool ret = true;
+    for(GList* l = itemsToBeLaunched; l; l = l->next) {
+        GList* itemToBeLaunched = NULL;
+        itemToBeLaunched = g_list_append(itemToBeLaunched, l->data);
+        bool result = fm_launch_files(nullptr, itemToBeLaunched, &funcs, this);
+        if (result == false) {
+            ret = false;
+        }
+        g_list_free(itemToBeLaunched);
+    }
+
     g_list_free(itemsToBeLaunched);
     g_object_unref(context);
     return ret;

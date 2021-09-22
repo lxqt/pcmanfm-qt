@@ -52,11 +52,6 @@
        </item>
        <item>
         <property name="text">
-         <string>Volume</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
          <string>Advanced</string>
         </property>
        </item>
@@ -71,7 +66,7 @@
         </sizepolicy>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>2</number>
        </property>
        <widget class="QWidget" name="behaviorPage">
         <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,1">
@@ -81,12 +76,15 @@
             <string>Browsing</string>
            </property>
            <layout class="QGridLayout" name="gridLayout">
-            <item row="2" column="0">
-             <widget class="QCheckBox" name="spatialMode">
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_11">
               <property name="text">
-               <string>Spatial mode (folders open in a new window)</string>
+               <string>Default view mode:</string>
               </property>
              </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QComboBox" name="viewMode"/>
             </item>
             <item row="3" column="0" colspan="2">
              <widget class="QCheckBox" name="dirInfoWrite">
@@ -98,41 +96,12 @@
               </property>
              </widget>
             </item>
-            <item row="4" column="0">
-             <widget class="QLabel" name="label_2">
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="spatialMode">
               <property name="text">
-               <string>Bookmarks:</string>
+               <string>Spatial mode (folders open in a new window)</string>
               </property>
              </widget>
-            </item>
-            <item row="4" column="1">
-             <widget class="QComboBox" name="bookmarkOpenMethod">
-              <item>
-               <property name="text">
-                <string>Open in current tab</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Open in new tab</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Open in new window</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-            <item row="5" column="0">
-             <widget class="QLabel" name="label_11">
-              <property name="text">
-               <string>Default view mode:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="5" column="1">
-             <widget class="QComboBox" name="viewMode"/>
             </item>
            </layout>
           </widget>
@@ -333,49 +302,35 @@
              <enum>QFormLayout::ExpandingFieldsGrow</enum>
             </property>
             <item row="0" column="0" colspan="2">
-             <widget class="QCheckBox" name="alwaysShowTabs">
-              <property name="text">
-               <string>Always show the tab bar</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0" colspan="2">
-             <widget class="QCheckBox" name="showTabClose">
-              <property name="text">
-               <string>Show 'Close' buttons on tabs	</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0" colspan="2">
              <widget class="QCheckBox" name="rememberWindowSize">
               <property name="text">
                <string>Remember the size of the last closed window</string>
               </property>
              </widget>
             </item>
-            <item row="3" column="0">
+            <item row="1" column="0">
              <widget class="QLabel" name="label_12">
               <property name="text">
                <string>Default width of new windows:</string>
               </property>
              </widget>
             </item>
-            <item row="4" column="0">
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="fixedWindowWidth">
+              <property name="maximum">
+               <number>32768</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
              <widget class="QLabel" name="label_13">
               <property name="text">
                <string>Default height of new windows:</string>
               </property>
              </widget>
             </item>
-            <item row="4" column="1">
+            <item row="2" column="1">
              <widget class="QSpinBox" name="fixedWindowHeight">
-              <property name="maximum">
-               <number>32768</number>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="QSpinBox" name="fixedWindowWidth">
               <property name="maximum">
                <number>32768</number>
               </property>
@@ -545,76 +500,6 @@
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="volumePage">
-        <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,1">
-         <item>
-          <widget class="QGroupBox" name="groupBox_3">
-           <property name="title">
-            <string>Auto Mount</string>
-           </property>
-           <layout class="QFormLayout" name="formLayout_4">
-            <item row="0" column="0">
-             <widget class="QCheckBox" name="mountOnStartup">
-              <property name="text">
-               <string>Mount mountable volumes automatically on program startup</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QCheckBox" name="mountRemovable">
-              <property name="text">
-               <string>Mount removable media automatically when they are inserted</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QCheckBox" name="autoRun">
-              <property name="text">
-               <string>Show available options for removable media when they are inserted</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="QGroupBox" name="groupBox_7">
-           <property name="title">
-            <string>When removable medium unmounted:</string>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_6">
-            <item>
-             <widget class="QRadioButton" name="closeOnUnmount">
-              <property name="text">
-               <string>Close &amp;tab containing removable medium</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QRadioButton" name="goHomeOnUnmount">
-              <property name="text">
-               <string>Chan&amp;ge folder in the tab to home folder</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <spacer name="verticalSpacer">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </widget>
        <widget class="QWidget" name="advancedPage">
         <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,1">
          <item>
@@ -712,6 +597,76 @@
          </item>
         </layout>
        </widget>
+       <widget class="QWidget" name="volumePage">
+        <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,1">
+         <item>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="title">
+            <string>Auto Mount</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout_4">
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="mountOnStartup">
+              <property name="text">
+               <string>Mount mountable volumes automatically on program startup</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QCheckBox" name="mountRemovable">
+              <property name="text">
+               <string>Mount removable media automatically when they are inserted</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="autoRun">
+              <property name="text">
+               <string>Show available options for removable media when they are inserted</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_7">
+           <property name="title">
+            <string>When removable medium unmounted:</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QRadioButton" name="closeOnUnmount">
+              <property name="text">
+               <string>Close &amp;tab containing removable medium</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="goHomeOnUnmount">
+              <property name="text">
+               <string>Chan&amp;ge folder in the tab to home folder</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
       </widget>
      </item>
     </layout>
@@ -730,8 +685,6 @@
  </widget>
  <tabstops>
   <tabstop>listWidget</tabstop>
-  <tabstop>alwaysShowTabs</tabstop>
-  <tabstop>showTabClose</tabstop>
   <tabstop>rememberWindowSize</tabstop>
   <tabstop>fixedWindowWidth</tabstop>
   <tabstop>fixedWindowHeight</tabstop>
@@ -779,34 +732,18 @@
    </hints>
   </connection>
   <connection>
-   <sender>listWidget</sender>
-   <signal>currentRowChanged(int)</signal>
-   <receiver>stackedWidget</receiver>
-   <slot>setCurrentIndex(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>94</x>
-     <y>157</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>359</x>
-     <y>145</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>rememberWindowSize</sender>
    <signal>toggled(bool)</signal>
-   <receiver>fixedWindowWidth</receiver>
+   <receiver>label_13</receiver>
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>506</x>
-     <y>351</y>
+     <x>183</x>
+     <y>338</y>
     </hint>
     <hint type="destinationlabel">
-     <x>462</x>
-     <y>386</y>
+     <x>187</x>
+     <y>404</y>
     </hint>
    </hints>
   </connection>
@@ -823,6 +760,22 @@
     <hint type="destinationlabel">
      <x>462</x>
      <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>359</x>
+     <y>145</y>
     </hint>
    </hints>
   </connection>
@@ -845,16 +798,16 @@
   <connection>
    <sender>rememberWindowSize</sender>
    <signal>toggled(bool)</signal>
-   <receiver>label_13</receiver>
+   <receiver>fixedWindowWidth</receiver>
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>183</x>
-     <y>338</y>
+     <x>506</x>
+     <y>351</y>
     </hint>
     <hint type="destinationlabel">
-     <x>187</x>
-     <y>404</y>
+     <x>462</x>
+     <y>386</y>
     </hint>
    </hints>
   </connection>

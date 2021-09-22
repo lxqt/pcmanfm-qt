@@ -205,9 +205,11 @@ void DirTreeView::onCustomContextMenuRequested(const QPoint& pos) {
       action->disconnect();
       action->setData(index);
       connect(action, &QAction::triggered, this, &DirTreeView::onOpen);
+      /*
       action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New T&ab"), menu);
       action->setData(pathData);
       connect(action, &QAction::triggered, this, &DirTreeView::onNewTab);
+      */
       menu->insertAction(menu->separator1(), action);
       action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
       action->setData(pathData);

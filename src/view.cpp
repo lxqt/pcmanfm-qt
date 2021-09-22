@@ -99,9 +99,13 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
   // hide "Open with" for selected dirs
   menu->openWithMenuAction()->setVisible(false);
 
-  QAction* action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New T&ab"), menu);
+  QAction* action;
+
+  /*
+  action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New T&ab"), menu);
   connect(action, &QAction::triggered, this, &View::onNewTab);
   menu->insertAction(menu->separator1(), action);
+  */
 
   action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
   connect(action, &QAction::triggered, this, &View::onNewWindow);

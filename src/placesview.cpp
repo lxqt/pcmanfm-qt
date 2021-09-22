@@ -337,9 +337,11 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
     if(item->type() != PlacesModelItem::Mount
         && (item->type() != PlacesModelItem::Volume
         || static_cast<PlacesModelVolumeItem*>(item)->isMounted())) {
+      /*
       action = new PlacesModel::ItemAction(item->index(), tr("Open in New Tab"), menu);
       connect(action, &QAction::triggered, this, &PlacesView::onOpenNewTab);
       menu->addAction(action);
+      */
       action = new PlacesModel::ItemAction(item->index(), tr("Open in New Window"), menu);
       connect(action, &QAction::triggered, this, &PlacesView::onOpenNewWindow);
       menu->addAction(action);

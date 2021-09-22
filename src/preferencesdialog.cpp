@@ -173,8 +173,8 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
 }
 
 void PreferencesDialog::initUiPage(Settings& settings) {
-  ui.alwaysShowTabs->setChecked(settings.alwaysShowTabs());
-  ui.showTabClose->setChecked(settings.showTabClose());
+  // ui.alwaysShowTabs->setChecked(settings.alwaysShowTabs());
+  // ui.showTabClose->setChecked(settings.showTabClose());
   ui.rememberWindowSize->setChecked(settings.rememberWindowSize());
   ui.fixedWindowWidth->setValue(settings.fixedWindowWidth());
   ui.fixedWindowHeight->setValue(settings.fixedWindowHeight());
@@ -187,7 +187,7 @@ void PreferencesDialog::initBehaviorPage(Settings& settings) {
   ui.spatialMode->setChecked(settings.spatialMode());
   ui.dirInfoWrite->setChecked(settings.dirInfoWrite());
 
-  ui.bookmarkOpenMethod->setCurrentIndex(settings.bookmarkOpenMethod());
+  // ui.bookmarkOpenMethod->setCurrentIndex(settings.bookmarkOpenMethod());
 
   ui.viewMode->addItem(tr("Icon View"), (int)Fm::FolderView::IconMode);
   ui.viewMode->addItem(tr("Compact Icon View"), (int)Fm::FolderView::CompactMode);
@@ -288,8 +288,8 @@ void PreferencesDialog::applyDisplayPage(Settings& settings) {
 }
 
 void PreferencesDialog::applyUiPage(Settings& settings) {
-  settings.setAlwaysShowTabs(ui.alwaysShowTabs->isChecked());
-  settings.setShowTabClose(ui.showTabClose->isChecked());
+  // settings.setAlwaysShowTabs(ui.alwaysShowTabs->isChecked());
+  // settings.setShowTabClose(ui.showTabClose->isChecked());
   settings.setRememberWindowSize(ui.rememberWindowSize->isChecked());
   settings.setFixedWindowWidth(ui.fixedWindowWidth->value());
   settings.setFixedWindowHeight(ui.fixedWindowHeight->value());
@@ -299,7 +299,7 @@ void PreferencesDialog::applyBehaviorPage(Settings& settings) {
   settings.setSpatialMode(ui.spatialMode->isChecked());
   settings.setDirInfoWrite(ui.dirInfoWrite->isChecked());
 
-  settings.setBookmarkOpenMethod(OpenDirTargetType(ui.bookmarkOpenMethod->currentIndex()));
+  // settings.setBookmarkOpenMethod(OpenDirTargetType(ui.bookmarkOpenMethod->currentIndex()));
 
   // FIXME: bug here?
   Fm::FolderView::ViewMode mode = Fm::FolderView::ViewMode(ui.viewMode->itemData(ui.viewMode->currentIndex()).toInt());
