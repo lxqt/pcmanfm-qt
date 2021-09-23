@@ -355,9 +355,6 @@
    <property name="text">
     <string>Show &amp;Hidden</string>
    </property>
-   <property name="shortcut">
-    <string>Ctrl+H</string>
-   </property>
   </action>
   <action name="actionComputer">
    <property name="icon">
