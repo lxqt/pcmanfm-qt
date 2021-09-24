@@ -415,7 +415,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Fazer com que todos os itens fiquem em suas posições</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -901,17 +901,17 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Preserve as configurações recursivamente a partir &amp;daqui</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ir para a fonte das configurações herdadas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Remover configurações de pastas inexistentes</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -961,7 +961,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Preservar configurações para &amp;esta pasta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1128,7 +1128,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Configurações de visualização personalizadas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="280"/>
@@ -1263,7 +1263,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="246"/>
         <source>Main Toolbar</source>
-        <translation>Barra de ferramentas</translation>
+        <translation>Barra de Ferramentas Principal</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
@@ -1689,7 +1689,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../mainwindow.cpp" line="1895"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Configuração de Visualização Personalizada</translation>
+        <translation>Configuração de Visualização Personalizada</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2120"/>
@@ -1705,13 +1705,14 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../mainwindow.cpp" line="2230"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configurações de limpeza de pastas</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Você deseja remover as configurações de pastas inexistentes?
+Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     </message>
 </context>
 <context>

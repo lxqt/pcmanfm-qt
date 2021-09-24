@@ -414,7 +414,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>הצמדת הפריטים למיקום שלהם</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -940,17 +940,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>שימור ההגדרות רקורסיבית מ&amp;כאן</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>מעבר למ&amp;קור של ההגדרות שהגיעו בירושה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>ה&amp;סרת הגדרות של תיקיות שאינן קיימות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -995,7 +995,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>שימור הגדרות לתיקייה ה&amp;זאת</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1167,7 +1167,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>הגדרות ת&amp;צוגה מותאמת</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
@@ -1343,7 +1343,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="246"/>
         <source>Main Toolbar</source>
-        <translation>סרגל כלים ראשי</translation>
+        <translation>סרגל הכלים הראשי</translation>
     </message>
 </context>
 <context>
@@ -1688,7 +1688,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1895"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">הגדרות תצוגה מותאמת</translation>
+        <translation>הגדרות תצוגה מותאמת</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2120"/>
@@ -1704,13 +1704,14 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2230"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>הגדרות ניקוי תיקייה</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>להסיר את ההגדרות של תיקיות שאינן קיימות?
+הן יכולות להועיל אם התיקיות תיווצרנה מחדש.</translation>
     </message>
 </context>
 <context>
