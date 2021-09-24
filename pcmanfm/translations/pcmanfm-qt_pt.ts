@@ -415,7 +415,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixar todos os itens nas suas posições</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -695,7 +695,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="286"/>
         <source>Alt+Up</source>
-        <translation>Alt+Up</translation>
+        <translation>Alt+Cima</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="298"/>
@@ -900,17 +900,17 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Preservar definições de forma recursiva a partir &amp;Daqui</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ir para fonte das definições herdadas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Remover Definições de Pastas Inexistentes</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -955,7 +955,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Preservar Definições para &amp;Esta Pasta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1127,7 +1127,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Definições de Vista &amp;Personalizada</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="280"/>
@@ -1192,7 +1192,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="613"/>
         <source>Alt+Left</source>
-        <translation>Alt+Left</translation>
+        <translation>Alt+Esquerda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="622"/>
@@ -1207,7 +1207,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Right</source>
-        <translation>Alt+Right</translation>
+        <translation>Alt+Direita</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -1688,7 +1688,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../mainwindow.cpp" line="1895"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Definições de visualização personalizadas</translation>
+        <translation>Definições de visualização personalizadas</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2120"/>
@@ -1704,13 +1704,14 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../mainwindow.cpp" line="2230"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Limpar definições de pastas</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Quer remover definições de pastas inexistentes?
+Elas podem ser úteis se essas pastas forem criadas novamente.</translation>
     </message>
 </context>
 <context>

@@ -415,7 +415,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation>Зробити усі елементи закріпленими на своїх позиціях</translation>
+        <translation>Закріпити всі елементи на своїх позиціях</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -950,7 +950,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation>&amp;Видалити налаштування неіснуючих тек</translation>
+        <translation>&amp;Вилучити налаштування відсутніх тек</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -1711,8 +1711,8 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation>Ви хочете видалити налаштування неіснуючих тек?
-Це може бути корисними, якщо ці теки будуть створені знову.</translation>
+        <translation>Ви хочете вилучити налаштування відсутніх тек?
+Вони можуть знадобитися, якщо ці теки буде повторно створено.</translation>
     </message>
 </context>
 <context>
