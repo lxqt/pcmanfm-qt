@@ -411,7 +411,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 항목이 위치에 고정되도록 합니다</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -938,17 +938,17 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>여기에서 설정을 재귀적으로 유지(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>상속된 설정의 소스로 이동(&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>존재하지 않는 폴더의 설정 제거(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -993,7 +993,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>이 폴더에 대한 설정 유지(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1165,7 +1165,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>사용자 정의 보기 설정(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
@@ -1685,7 +1685,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1895"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">사용자 지정된 보기 설정</translation>
+        <translation>사용자 정의 보기 설정</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2120"/>
@@ -1701,13 +1701,14 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2230"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>폴더 설정 정리하기</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>존재하지 않는 폴더의 설정을 제거하시겠습니까?
+해당 폴더가 다시 생성되는 경우 유용할 수 있습니다.</translation>
     </message>
 </context>
 <context>
