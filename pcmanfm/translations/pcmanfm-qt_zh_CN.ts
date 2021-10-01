@@ -412,7 +412,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>使所有项目都保持在自己的位置</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -937,17 +937,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>保留从此处重复设置(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">（&amp;G）转到继承设置源</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">（&amp;R）删除不存在文件夹的设置</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -992,7 +992,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">为这个（&amp;T）文件夹保存设置</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1164,7 +1164,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>（&amp;C）自定义视图设置</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
@@ -1684,7 +1684,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1895"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">自定义的视图设置</translation>
+        <translation>自定义的视图设置</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2120"/>
@@ -1700,13 +1700,13 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2230"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>清除文件夹设置</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>是否要删除不存在的文件夹的设置? 如果再次创建这些文件夹，它们可能会很有用。</translation>
     </message>
 </context>
 <context>

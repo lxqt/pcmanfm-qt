@@ -940,7 +940,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Păstrați Setările Recursiv de &amp;Aici</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
@@ -950,7 +950,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ștergeți Setările pentru Foldere Care Nu Există</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -995,12 +995,12 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Păstrați Setările pentru &amp;Acest Folder</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Arătați/Focusați Bara de Filtrare</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="872"/>
@@ -1050,7 +1050,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="919"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>P&amp;anou Lateral</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="922"/>
@@ -1111,7 +1111,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="853"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Butoanele Căii Fișierului</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="858"/>
@@ -1141,12 +1141,12 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="806"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bara de Meniu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="809"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Bara de Meniu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="812"/>
@@ -1167,7 +1167,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Setările de Vizualizare Personalizate</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
@@ -1182,12 +1182,12 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="607"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Duce-ți-vă &amp;Înapoi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="610"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Duce-ți-vă Înapoi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="613"/>
@@ -1222,7 +1222,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../main-win.ui" line="648"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="653"/>
@@ -1361,12 +1361,12 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Rulați PCManFM-Qt ca deamon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Ieșiți din PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -1381,7 +1381,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../application.cpp" line="183"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Deschideți dialogul de preferințe pentru desktop pe pagina cu numele specificat</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="183"/>
@@ -1689,7 +1689,7 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../mainwindow.cpp" line="1895"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Setările Personalizate pentru Vizualizare</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2120"/>
@@ -1705,13 +1705,14 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
     <message>
         <location filename="../mainwindow.cpp" line="2230"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Se Șterg Setările pentru Foldere</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Doriți să ștergeți setările folderelor inexistente?
+Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
     </message>
 </context>
 <context>
@@ -1852,7 +1853,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Selectați Fișierele Nou-Create</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="259"/>
@@ -1862,12 +1863,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="291"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mărimea pictogramelor mari:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mărimea pictogramelor mici:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>

@@ -416,7 +416,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Καρφίτσωμα όλων των αντικειμένων στη θέση τους</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -706,7 +706,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="283"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>
@@ -931,17 +931,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Διατήρηση των ρυθμίσεων αναδρομικά από εδώ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάβαση στην πηγή των κληρονομημένων ρυθμίσεων</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>Αφαίρεση των ρυθμίσεων ανύπαρκτων φακέλων</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -986,7 +986,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Διατήρηση των ρυθμίσεων &amp;του φακέλου</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1158,7 +1158,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Προσαρμοσμένες ρυθμίσεις προβολής</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
@@ -1689,7 +1689,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1895"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Προσαρμοσμένες ρυθμίσεις προβολής</translation>
+        <translation>Προσαρμοσμένες ρυθμίσεις προβολής</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2120"/>
@@ -1705,13 +1705,14 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2230"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκκαθάριση των ρυθμίσεων του φακέλου</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιθυμείτε την αφαίρεση των ρυθμίσεων ανύπαρκτων φακέλων;
+Μπορεί να είναι χρήσιμες αν αυτοί οι φάκελοι δημιουργηθούν ξανά.</translation>
     </message>
 </context>
 <context>
