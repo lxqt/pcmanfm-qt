@@ -1,4 +1,4 @@
-.TH Filer-Qt "1" "September 2014" "@CMAKE_PROJECT_NAME@ @PCMANFM_QT_VERSION@" "User Commands"
+.TH Filer-Qt "1" "September 2014" "@CMAKE_PROJECT_NAME@ @FILER_VERSION@" "User Commands"
 .SH NAME
 Filer-Qt \- A lightweight Qt based file manager for X Window.
 .SH SYNOPSIS

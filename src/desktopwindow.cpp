@@ -524,7 +524,7 @@ void DesktopWindow::onAbout()
     public:
       explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) {
         ui.setupUi(this);
-        ui.version->setText(tr("Version: %1").arg(PCMANFM_QT_VERSION));
+        ui.version->setText(tr("Version: %1").arg(FILER_VERSION));
       }
     private:
       Ui::AboutDialog ui;

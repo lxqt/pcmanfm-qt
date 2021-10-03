@@ -330,7 +330,7 @@
      <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
-    <string>&amp;About</string>
+    <string>&amp;About Filer</string>
    </property>
   </action>
   <action name="actionNewWin">

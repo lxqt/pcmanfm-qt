@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>543</width>
-    <height>418</height>
+    <height>520</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -57,7 +57,7 @@
    <item>
     <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>Lightweight file manager</string>
+      <string>The Desktop Experience</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -67,7 +67,7 @@
    <item>
     <widget class="QLabel" name="label_3">
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/probonopd/filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/probonopd/filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -127,8 +127,8 @@ Application icon:
 Copyright (C) 2020-21 Simon Peter
 Copyright (C) 2021 Chris Moore
 
-Based on PCMan File Manager
-Copyright (C) 2009-2014 洪任諭 (Hong Jen Yee)
+Originally based on PCMan File Manager
+Portions Copyright (C) 2009-14 洪任諭 (Hong Jen Yee)
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
