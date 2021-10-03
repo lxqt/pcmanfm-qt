@@ -29,11 +29,14 @@
 #include <QMessageBox>
 #include "fileoperation.h"
 #include <QEventLoop>
+#include <QDebug>
 
 #include <pwd.h>
 #include <grp.h>
 #include <stdlib.h>
 #include <glib.h>
+#include <QProcess>
+#include <QFileInfo>
 
 using namespace Fm;
 
@@ -120,11 +123,37 @@ void cutFilesToClipboard(FmPathList* files) {
 void renameFile(FmFileInfo *file, QWidget *parent) {
   FmPath* path = fm_file_info_get_path(file);
   FilenameDialog dlg(parent);
-  dlg.setWindowTitle(QObject::tr("Rename File"));
+  dlg.setWindowTitle(QObject::tr("Rename"));
   dlg.setLabelText(QObject::tr("Please enter a new name:"));
   // FIXME: what's the best way to handle non-UTF8 filename encoding here?
   QString old_name = QString::fromLocal8Bit(fm_path_get_basename(path));
+  // probono: FIXME: We cannot rename the root disk yet
+  if (old_name == "root.link") {
+      QMessageBox::critical(parent, QObject::tr("Error"), QObject::tr("The startvolume cannot be renamed."));
+      qDebug() << "probono: FIXME: We cannot rename the root disk yet";
+      return;
+  }
+  // probono: Remove suffix from mountpoints
+  if (old_name.endsWith(".mount")) {
+      int lastPoint = old_name.lastIndexOf(".");
+      old_name = old_name.left(lastPoint);
+  }
   dlg.setTextValue(old_name);
+
+  // QMimeDatabase db;
+  // QMimeType mimetype = db.mimeTypeForFile(QString::fromLocal8Bit(fm_path_get_basename(path)));
+  // qDebug() << "probono: mimetype:" << mimetype.name();
+  // Reports "text/x-systemd-unit"
+  // instead of "inode/mount-point"
+  // Why? Probably because we get the MIME type of the desktop file rather than the actual mountpoint
+  // Stuff like 'computer:///root.link' is just evil. Whoever invented it had no clue about "everything is a file"
+  // Seems like we need to use glib to get the correct result. Argh!
+  QString mimeType = QString::fromUtf8(fm_mime_type_get_type(fm_mime_type_ref(fm_file_info_get_mime_type(file))));
+  qDebug() << "probono: mimeType" << mimeType;
+
+  if(mimeType == "inode/mount-point") {
+    qDebug() << "probono: fm_file_info_is_mountable";
+  }
 
   if(fm_file_info_is_dir(file)) // select filename extension for directories
     dlg.setSelectExtension(true);
@@ -136,6 +165,59 @@ void renameFile(FmFileInfo *file, QWidget *parent) {
 
   if(new_name == old_name)
     return;
+
+  // probono: Implement renaming disks by calling the 'diskutil rename' command line tool
+  if(mimeType == "inode/mount-point") {
+    qDebug() << QString::fromLocal8Bit(fm_path_get_basename(path));
+    QString dispName = QString::fromUtf8(fm_file_info_get_disp_name(file));
+    // Using glib and libfm is as uncomfortable as it can get. How can we know the mountpoint?
+    // As a workaround, parse it out of the output of the 'mount' command. Can't get more crude than that.
+    // FIXME: Find a way to get the mountpoint directly from glib/libfm/Qt.
+    // In the meantime, do it in a really ugly manual way that probably
+    // doesn't handle escaped special characters correctly
+    qDebug() << "probono: dispName" << dispName;
+    QProcess p;
+    QString program = "mount";
+    QStringList arguments;
+    arguments << "-p";
+    p.start(program, arguments);
+    p.waitForFinished();
+    p.setReadChannel(QProcess::StandardOutput);
+    QString dev = nullptr;
+    while (p.canReadLine()) {
+       QString line = QString::fromLocal8Bit(p.readLine());
+       QStringList parts = line.split(QRegExp("\\t+"));
+       // qDebug() << "probono: parts[1]:" << parts[1];
+       QFileInfo fi = QFileInfo(parts[1]);
+       // qDebug() << "probono: fi.fileName():" << fi.fileName();
+       if(fi.fileName() == old_name){
+           dev = parts[0];
+       }
+    }
+
+    if(dev == nullptr) {
+        QMessageBox::critical(parent, QObject::tr("Error"), QObject::tr("Could not identify the mountpoint."));
+        return;
+    }
+
+    // sudo -E launch diskutil rename...
+    program = "sudo";
+    QStringList diskutilArgs;
+    // Note: for sudo to work in a GUI, SUDO_ASKPASS=/usr/local/bin/askpass must be set as an environment variable
+    diskutilArgs << "-E" << "launch" << "diskutil" << "rename" << dev << new_name.toLocal8Bit().data();
+    qDebug() << diskutilArgs;
+    p.start(program, diskutilArgs);
+    p.waitForFinished();
+    p.setReadChannel(QProcess::StandardError);
+    // TODO: Implement translatable error messages here.
+    while (p.canReadLine()) {
+       // Let the 'launch' command handle error messages for now
+       QString line = QString::fromLocal8Bit(p.readLine());
+       qDebug() << line;
+    }
+
+    return;
+  }
 
   GFile* gf = fm_path_to_gfile(path);
   GFile* parent_gf = g_file_get_parent(gf);
