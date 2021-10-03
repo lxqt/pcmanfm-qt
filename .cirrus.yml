@@ -19,7 +19,7 @@ task:
     - mkdir -p Filer.AppDir/usr/share/icons/hicolor/256x256/apps
     - cp ../src/icons/filer-256.png Filer.AppDir/usr/share/icons/hicolor/256x256/apps/filer.png
     - cp Filer.AppDir/usr/share/icons/hicolor/256x256/apps/filer.png Filer.AppDir/.DirIcon
-    - ( cd Filer.AppDir/ ; ln -s usr/bin/filer-qt AppRun )
+    - ( cd Filer.AppDir/ ; ln -s usr/bin/Filer AppRun )
     - rm -rf Filer.AppDir/usr/include
     - mkdir -p Filer.AppDir/usr/lib
     - cp /usr/local/lib/libfm.so.4 Filer.AppDir/usr/lib

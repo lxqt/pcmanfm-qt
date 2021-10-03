@@ -1,4 +1,4 @@
-set(LIBFM_LIBRARY "fm-qt5")
+# set(LIBFM_LIBRARY "fm-qt5")
 set(QTX_INCLUDE_DIRS "")
 set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
 
@@ -111,13 +111,13 @@ set(filer_UIS
 
 qt5_wrap_ui(filer_UIS_H ${filer_UIS})
 
-# add translation for filer-qt
+# add translation for Filer
 lxqt_translate_ts(QM_FILES
     UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
     SOURCES ${filer_SRCS} ${filer_UIS_H}
 )
 
-# translate desktop entry files for filer-qt and desktop preferences
+# translate desktop entry files for Filer and desktop preferences
 lxqt_translate_desktop(DESKTOP_FILES
     SOURCES
         filer-qt.desktop.in
@@ -135,37 +135,37 @@ if(NOT LINUX)
   set(CMAKE_BUILD_WITH_INSTALL_RPATH ON) # On Linux we let appimagetool handle it
 endif()
 
-add_executable(filer-qt
+add_executable(Filer
     ${filer_SRCS}
     ${filer_UIS_H}
     ${QM_FILES}
     ${DESKTOP_FILES}
 )
 set_property(
-     TARGET filer-qt APPEND
+     TARGET Filer APPEND
      PROPERTY COMPILE_DEFINITIONS
      LIBFM_QT_API=Q_DECL_IMPORT
-     PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/filer-qt"
+     PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/filer"
      LIBFM_DATA_DIR="${LIBFM_PREFIX}/share/libfm" # This is a little bit dirty
      FILER_VERSION="${FILER_VERSION}"
 )
 
-target_link_libraries(filer-qt
+target_link_libraries(Filer
     ${QTX_LIBRARIES}
     ${LIBFM_LIBRARIES}
     ${LIBMENUCACHE_LIBRARIES}
     ${SYSTEM_LIBS_LIBRARIES}
 )
 
-install(TARGETS filer-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+install(TARGETS Filer RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
-# install a desktop entry file for filer-qt and desktop preferences
+# install a desktop entry file for Filer and desktop preferences
 install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
 )
 
-install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/filer-qt/translations")
+install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/filer/translations")
 
 # prevent the generated files from being deleted during make clean
 set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)
 
-qt5_use_modules(filer-qt Widgets DBus)
+qt5_use_modules(Filer Widgets DBus)

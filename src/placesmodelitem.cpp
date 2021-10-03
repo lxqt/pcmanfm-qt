@@ -150,7 +150,7 @@ void PlacesModelVolumeItem::update() {
     GFile* mount_root = g_mount_get_root(mount);
     FmPath* mount_path = fm_path_new_for_gfile(mount_root);
     setPath(mount_path);
-    qDebug() << "probono: mount_path:", mount_path;
+    qDebug() << "probono: mount_path:" << mount_path;
     fm_path_unref(mount_path);
     g_object_unref(mount_root);
     g_object_unref(mount);

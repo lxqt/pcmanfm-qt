@@ -325,8 +325,8 @@ void Application::init() {
   // install our own tranlations
   translator.load("filer-qt_" + QLocale::system().name(), PCMANFM_DATA_DIR "/translations");
   // qDebug("probono: Use relative path from main executable so that this works when it is not installed system-wide, too:");
-  // qDebug((QCoreApplication::applicationDirPath() + QString("/../share/filer-qt/translations/")).toUtf8()); // probono
-  translator.load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath() + QString("/../share/filer-qt/translations/")); // probono
+  // qDebug((QCoreApplication::applicationDirPath() + QString("/../share/filer/translations/")).toUtf8()); // probono
+  translator.load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath() + QString("/../share/filer/translations/")); // probono
   installTranslator(&translator);
 }
 
