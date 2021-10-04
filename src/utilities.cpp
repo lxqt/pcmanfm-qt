@@ -37,6 +37,7 @@
 #include <glib.h>
 #include <QProcess>
 #include <QFileInfo>
+#include <QStorageInfo>
 
 using namespace Fm;
 
@@ -170,29 +171,19 @@ void renameFile(FmFileInfo *file, QWidget *parent) {
   if(mimeType == "inode/mount-point") {
     qDebug() << QString::fromLocal8Bit(fm_path_get_basename(path));
     QString dispName = QString::fromUtf8(fm_file_info_get_disp_name(file));
-    // Using glib and libfm is as uncomfortable as it can get. How can we know the mountpoint?
-    // As a workaround, parse it out of the output of the 'mount' command. Can't get more crude than that.
-    // FIXME: Find a way to get the mountpoint directly from glib/libfm/Qt.
-    // In the meantime, do it in a really ugly manual way that probably
-    // doesn't handle escaped special characters correctly
+    // Using glib and libfm is as uncomfortable as it can get. How can we know the device?
+    // FIXME: Get this directly from libfm. In the meantime we use QStorageInfo.
     qDebug() << "probono: dispName" << dispName;
-    QProcess p;
-    QString program = "mount";
-    QStringList arguments;
-    arguments << "-p";
-    p.start(program, arguments);
-    p.waitForFinished();
-    p.setReadChannel(QProcess::StandardOutput);
     QString dev = nullptr;
-    while (p.canReadLine()) {
-       QString line = QString::fromLocal8Bit(p.readLine());
-       QStringList parts = line.split(QRegExp("\\t+"));
-       // qDebug() << "probono: parts[1]:" << parts[1];
-       QFileInfo fi = QFileInfo(parts[1]);
-       // qDebug() << "probono: fi.fileName():" << fi.fileName();
-       if(fi.fileName() == old_name){
-           dev = parts[0];
-       }
+    QList<QStorageInfo> vols = QStorageInfo::mountedVolumes();
+    for ( const auto& vol : vols  ) {
+        if (vol.isValid() && vol.isReady()) {
+            // qDebug() << "probono: QFileInfo(vol.displayName()).fileName()" << QFileInfo(vol.displayName()).fileName();
+            if (QFileInfo(vol.displayName()).fileName() == dispName) {
+                dev = vol.device();
+                break;
+            }
+        }
     }
 
     if(dev == nullptr) {
@@ -201,7 +192,8 @@ void renameFile(FmFileInfo *file, QWidget *parent) {
     }
 
     // sudo -E launch diskutil rename...
-    program = "sudo";
+    QProcess p;
+    QString program = "sudo";
     QStringList diskutilArgs;
     // Note: for sudo to work in a GUI, SUDO_ASKPASS=/usr/local/bin/askpass must be set as an environment variable
     diskutilArgs << "-E" << "launch" << "diskutil" << "rename" << dev << new_name.toLocal8Bit().data();

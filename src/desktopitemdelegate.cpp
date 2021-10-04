@@ -29,6 +29,9 @@
 #include <QTextLine>
 #include <QPainterPath>
 #include <QDebug>
+#include <QProcess>
+#include <QFileInfo>
+#include <QStorageInfo>
 
 using namespace Filer;
 
@@ -77,14 +80,52 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     painter->fillPath(path, QColor(196, 196, 196)); // Light gray
   }
 
-  QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
-  painter->drawPixmap(iconPos, pixmap);
-
-  // draw some emblems for the item if needed
-  // we only support symlink emblem at the moment
   FmFileInfo* file = static_cast<FmFileInfo*>(index.data(Fm::FolderModel::FileInfoRole).value<void*>());
+
+  if(file) {
+      QString mimetype;
+      mimetype = QString::fromUtf8(fm_mime_type_get_type(fm_mime_type_ref(fm_file_info_get_mime_type(file))));
+      if (mimetype == "inode/mount-point") {
+          QString path = QString(fm_path_to_str(fm_file_info_get_path(file)));
+          qDebug() << "probono: inode/mount-point, path:" << path;
+          QString dispName = QString::fromUtf8(fm_file_info_get_disp_name(file));
+          // Using glib and libfm is as uncomfortable as it can get. How can we know the mountpoint?
+          // FIXME: Get this directly from libfm. In the meantime we use QStorageInfo.
+          qDebug() << "probono: dispName" << dispName;
+          QString mountpoint = nullptr;
+          QList<QStorageInfo> vols = QStorageInfo::mountedVolumes();
+          for ( const auto& vol : vols  ) {
+              if (vol.isValid() && vol.isReady()) {
+                  // qDebug() << "probono: vol.rootPath()" << vol.rootPath();
+                  // qDebug() << "probono: vol.displayName()" << vol.displayName();
+                  // qDebug() << "probono: QFileInfo(vol.displayName()).fileName()" << QFileInfo(vol.displayName()).fileName();
+                  if (QFileInfo(vol.displayName()).fileName() == dispName) {
+                      mountpoint = vol.rootPath();
+                      break;
+                  }
+              }
+          }
+          if(mountpoint != nullptr) {
+              qDebug() << "probono: mountpoint:" << mountpoint;
+              QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
+              if(QFile::exists(mountpoint + "/.VolumeIcon.icns")){
+                  qDebug() << "probono:" << mountpoint + "/.VolumeIcon.icns" << "exists, use it";
+                  QIcon *myicon = new QIcon( mountpoint + "/.VolumeIcon.icns");
+                  pixmap = myicon->pixmap(opt.decorationSize, iconMode);
+              }
+              painter->drawPixmap(iconPos, pixmap);
+          }
+        } else {
+          // Draw the icon for everything else but mountpoints
+          QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
+          painter->drawPixmap(iconPos, pixmap);
+        }
+  }
+
   if(file) {
     if(fm_file_info_is_symlink(file)) {
+      // draw some emblems for the item if needed
+      // we only support symlink emblem at the moment
       painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
     }
   }
