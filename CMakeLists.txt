@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(filer-qt)
+project(Filer)
 
 set(FILER_VERSION_MAJOR 0)
 set(FILER_VERSION_MINOR 10)
