@@ -753,7 +753,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="328"/>
         <source>Quit</source>
-        <translation>離開</translation>
+        <translation>退出</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="337"/>

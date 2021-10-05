@@ -528,7 +528,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>Otsetee</translation>
+        <translation>Kiirklahv</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
@@ -622,7 +622,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation>Backspace</translation>
+        <translation>Tagasisammuklahv</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
@@ -1060,7 +1060,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Peidetud &amp;kiirklahvid</translation>
+        <translation>&amp;Peidetud kiirklahvid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>

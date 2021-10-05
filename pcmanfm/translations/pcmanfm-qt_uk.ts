@@ -528,7 +528,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>Комбінації клавіш</translation>
+        <translation>Комбінація клавіш</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>

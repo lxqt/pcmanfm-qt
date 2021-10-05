@@ -1020,7 +1020,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Atalho&amp;s ocultos</translation>
+        <translation>&amp;Atalhos ocultos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>

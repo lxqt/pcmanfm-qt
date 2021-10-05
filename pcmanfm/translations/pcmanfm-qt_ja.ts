@@ -1127,7 +1127,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">カスタマイズ表示設定(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="280"/>
