@@ -520,7 +520,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>隐藏的快捷键</translation>
+        <translation>隐藏的快捷方式</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
@@ -619,7 +619,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation>退格键</translation>
+        <translation>Backspace</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
@@ -1057,7 +1057,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>隐藏的快捷键(&amp;S)</translation>
+        <translation>隐藏快捷键（&amp;S）</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>

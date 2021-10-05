@@ -522,12 +522,12 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>Verborgen snelkoppelingen</translation>
+        <translation>Verborgen sneltoetsen</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>Snelkoppeling</translation>
+        <translation>Sneltoets</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
@@ -1059,7 +1059,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Verborgen &amp;snelkoppelingen</translation>
+        <translation>Verborgen &amp;sneltoetsen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
