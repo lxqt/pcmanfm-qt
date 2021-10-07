@@ -21,19 +21,21 @@
     <message>
         <location filename="../../build/filer/ui_about.h" line="138"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt-project.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="139"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Programmering:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="142"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>Utviklere</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="143"/>
@@ -59,7 +61,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_about.h" line="160"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisens</translation>
     </message>
 </context>
 <context>
@@ -67,27 +69,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="110"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Flyttbart medium satt inn</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="112"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Flyttbart medium satt inn&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="113"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>Type medium:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="114"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Oppdager …</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="115"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg handlingen du ønske rå utføre:</translation>
     </message>
 </context>
 <context>
@@ -95,32 +97,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjema</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="76"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivebord</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="77"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivebordsmappe:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="79"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Bildefil</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="84"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Mappesti</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="85"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Utforsk</translation>
     </message>
 </context>
 <context>
@@ -128,72 +130,72 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="254"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivebordsinnstillinger</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="255"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Bakgrunn</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="256"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bakgrunnsbildemodus:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="257"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bakgrunnsbildefil:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="259"/>
         <source>Select background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg bakgrunnsbildefarge:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="261"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildefil</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="266"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildefil-sti</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="267"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Utforsk</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="268"/>
         <source>Label Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Etikett-tekst</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="271"/>
         <source>Select  text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg tekstfarge:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="272"/>
         <source>Select shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg skyggefarge:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="273"/>
         <source>Select font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg skrift:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="275"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Generelt</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="276"/>
         <source>Window Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Vindusbehandler</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="277"/>
@@ -203,7 +205,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="278"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Avansert</translation>
     </message>
 </context>
 <context>
@@ -211,7 +213,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="557"/>
         <source>File Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Filbehandler</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="558"/>
@@ -231,7 +233,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="563"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="564"/>
@@ -256,27 +258,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="568"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Avslutt</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="569"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Om</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="570"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nytt vindu</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="572"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Nytt vindu</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="574"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="575"/>
@@ -291,22 +293,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="577"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Datamaskin</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="578"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Papirkurv</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="579"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nettverk</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="580"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Skrivebord</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="581"/>
@@ -316,7 +318,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="582"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Programmer</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="583"/>
@@ -326,327 +328,327 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="584"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ikonvisning</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="585"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kompakt visning</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="586"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Detaljert liste</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="587"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Miniatyrbildevisning</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="588"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Klipp ut</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="589"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="590"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kopier</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="591"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="592"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Lim inn</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="593"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="594"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg &amp;alt</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="595"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="596"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Innstillinger</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="597"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Stigende</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="598"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Synkende</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="599"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Etter filnavn</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="600"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Etter &amp;endringsdato</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="601"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Etter fil&amp;type</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="602"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Etter &amp;eier</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="603"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Mapper først</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="629"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Forskjell på små og store bokstaver</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="630"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Etter fil&amp;størrelse</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="631"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Lukk vindu</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="637"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Mappe</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="639"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Blank fil</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="604"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny &amp;fane</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="606"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny fane</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="608"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="609"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå &amp;tilbake</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="611"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå tilbake</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="613"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+←</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="614"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå &amp;forover</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="616"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå forover</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="618"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+→</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="619"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Inverter utvalg</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="620"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Slett</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="621"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="622"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Gi nytt navn</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="623"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="624"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Lukk fane</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="625"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="626"/>
         <source>File &amp;Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>Fil &amp;egenskaper</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="627"/>
         <source>Alt+Return</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Alt+Enter</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="628"/>
         <source>&amp;Folder Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Mappeegenskaper</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="632"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Rediger bokmerker</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="633"/>
         <source>Open &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne &amp;terminal</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="634"/>
         <source>F4</source>
-        <translation type="unfinished"></translation>
+        <translation>F4</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="635"/>
         <source>Open as &amp;Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne som &amp;rot</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="636"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Rediger bokmerker</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="638"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="640"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="641"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Finn filer</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="642"/>
         <source>F3</source>
-        <translation type="unfinished"></translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="643"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="644"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrer etter streng …</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="645"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fil</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="646"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Opprett ny</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="647"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Hjelp</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="648"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vis</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="649"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sortering</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="650"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Rediger</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="651"/>
         <source>&amp;Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bokmerker</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="652"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Start</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="653"/>
         <source>&amp;Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Verktøy</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="654"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Hovedverktøylinje</translation>
     </message>
 </context>
 <context>
@@ -654,32 +656,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="162"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Navn på oppsettsprofil</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="162"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>Profil</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="165"/>
         <source>Run Filer as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Kjør Filer som nisse</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Quit Filer</source>
-        <translation type="unfinished"></translation>
+        <translation>Avslutt Filer</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Launch desktop manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Kjør skrivebordsbehandler</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>Skru av skrivebordsbehandler hvis den kjører</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -690,12 +692,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../application.cpp" line="177"/>
         <location filename="../application.cpp" line="193"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>Navn</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="180"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne nytt vindu</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="183"/>
@@ -710,7 +712,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>Fil</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
@@ -720,7 +722,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>Modus</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="193"/>
@@ -741,7 +743,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../application.cpp" line="500"/>
         <location filename="../application.cpp" line="507"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Feil</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="507"/>
@@ -754,12 +756,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorundialog.cpp" line="43"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne i filbehandler</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="133"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Flyttbar disk</translation>
     </message>
 </context>
 <context>
@@ -767,32 +769,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>Fyll kun med bakgrunnsfarge</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Strekk for å dekke hele skjermen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Strekk for å dekke skjermen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Sentrer på skjermen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Flislegg for å fylle hele skjermen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="157"/>
         <source>Image Files</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Bildefiler</translation>
     </message>
 </context>
 <context>
@@ -805,7 +807,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopwindow.cpp" line="388"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivebordsegenskaper</translation>
     </message>
 </context>
 <context>
@@ -813,28 +815,28 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tøm tekst (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versjon: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="907"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Flytt til papirkurv</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="907"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Slett</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="969"/>
         <location filename="../mainwindow.cpp" line="980"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Feil</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="980"/>
@@ -847,22 +849,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../preferencesdialog.cpp" line="190"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikonvisning</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="191"/>
         <source>Compact Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompakt ikonvisning</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Miniatyrbildevisning</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Detaljert listevisning</translation>
     </message>
 </context>
 <context>
@@ -870,31 +872,33 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../tabpage.cpp" line="248"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Feil</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="261"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ledig plass: %1 (Totalt: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="276"/>
         <source>%n item(s)</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
+            <numerusform>%n element</numerusform>
+            <numerusform>%n elementer</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform> (%n skjult)</numerusform>
+            <numerusform> (%n skjulte)</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="426"/>
         <source>%1 item(s) selected</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 element(er) valgt</translation>
     </message>
 </context>
 <context>
@@ -902,17 +906,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../view.cpp" line="103"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne i ny &amp;fane</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="107"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne i nytt &amp;vindu</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="114"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne i &amp;terminal</translation>
     </message>
 </context>
 <context>
@@ -920,78 +924,78 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="706"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Innstillinger</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="715"/>
         <source>User Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Brukergrensesnitt</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="711"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>Oppførsel</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="717"/>
         <location filename="../../build/filer/ui_preferences.h" line="779"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"></translation>
+        <translation>Miniatyrbilde</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="719"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>Lydstyrke</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="721"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Avansert</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="742"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikoner</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="744"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Stor ikonstørrelse:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="745"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Liten ikonstørrelse:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="746"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation>Miniatyrbildestørrelse:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="747"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sidefeltsikonstørrelse:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="743"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikondrakt:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="753"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Vindu</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="754"/>
         <source>Always show the tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Alltid vis i fanefeltet</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="755"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis «Lukk»-knaper i faner	</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="756"/>
@@ -1001,12 +1005,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="757"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Forvalgt bredde for nye vinduer:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="758"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Forvalgt høyde på nye vinduer:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="724"/>
@@ -1016,7 +1020,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="725"/>
         <source>Open files with single click</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne filer med ett klikk</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="726"/>
@@ -1026,22 +1030,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="727"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Forvalgt visningsmodus:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="728"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sek</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="736"/>
         <source>File Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>Filoperasjoner</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="737"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
+        <translation>Bekreft før sletting av filer</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="738"/>
@@ -1051,12 +1055,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="783"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis miniatyrbilder av filer</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="782"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>Kun vis miniatyrbilder for lokale filer</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="713"/>
@@ -1066,22 +1070,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="729"/>
         <source>Bookmarks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bokmerker:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="732"/>
         <source>Open in current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne i nåværende fane</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="733"/>
         <source>Open in new tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne i ny fane</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="734"/>
         <source>Open in new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne i nytt vindu</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="739"/>
@@ -1101,7 +1105,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="748"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Brukergrensesnitt</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="750"/>
@@ -1131,32 +1135,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="766"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivebord</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="768"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation>Papirkurv</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="770"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Datamaskin</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="772"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Programmer</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="774"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Enheter</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="776"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Nettverker</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="780"/>
@@ -1166,7 +1170,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="781"/>
         <source> KB</source>
-        <translation type="unfinished"></translation>
+        <translation> KB</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="784"/>
@@ -1206,12 +1210,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="791"/>
         <source>Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>Programmer</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="792"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminalemulator:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="793"/>
