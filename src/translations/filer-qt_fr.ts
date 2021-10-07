@@ -1323,7 +1323,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="797"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Modèles</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="798"/>
