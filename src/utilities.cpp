@@ -170,42 +170,25 @@ void renameFile(FmFileInfo *file, QWidget *parent) {
   // probono: Implement renaming disks by calling the 'diskutil rename' command line tool
   if(mimeType == "inode/mount-point") {
     qDebug() << QString::fromLocal8Bit(fm_path_get_basename(path));
-    QString dispName = QString::fromUtf8(fm_file_info_get_disp_name(file));
-    // Using glib and libfm is as uncomfortable as it can get. How can we know the device?
-    // FIXME: Get this directly from libfm. In the meantime we use QStorageInfo.
-    qDebug() << "probono: dispName" << dispName;
-    QString dev = nullptr;
-    QList<QStorageInfo> vols = QStorageInfo::mountedVolumes();
-    for ( const auto& vol : vols  ) {
-        if (vol.isValid() && vol.isReady()) {
-            // qDebug() << "probono: QFileInfo(vol.displayName()).fileName()" << QFileInfo(vol.displayName()).fileName();
-            if (QFileInfo(vol.displayName()).fileName() == dispName) {
-                dev = vol.device();
-                break;
-            }
+    QString mountpoint = QString::fromUtf8(fm_file_info_get_target(file));
+    // qDebug() << "probono: inode/mount-point, mountpoint:" << mountpoint;
+    if(mountpoint != nullptr) {
+        // sudo -E launch diskutil rename...
+        QProcess p;
+        QString program = "sudo";
+        QStringList diskutilArgs;
+        // Note: for sudo to work in a GUI, SUDO_ASKPASS=/usr/local/bin/askpass must be set as an environment variable
+        diskutilArgs << "-E" << "launch" << "diskutil" << "rename" << mountpoint << new_name.toLocal8Bit().data();
+        qDebug() << diskutilArgs;
+        p.start(program, diskutilArgs);
+        p.waitForFinished();
+        p.setReadChannel(QProcess::StandardError);
+        // TODO: Implement translatable error messages here.
+        while (p.canReadLine()) {
+           // Let the 'launch' command handle error messages for now
+           QString line = QString::fromLocal8Bit(p.readLine());
+           qDebug() << line;
         }
-    }
-
-    if(dev == nullptr) {
-        QMessageBox::critical(parent, QObject::tr("Error"), QObject::tr("Could not identify the mountpoint."));
-        return;
-    }
-
-    // sudo -E launch diskutil rename...
-    QProcess p;
-    QString program = "sudo";
-    QStringList diskutilArgs;
-    // Note: for sudo to work in a GUI, SUDO_ASKPASS=/usr/local/bin/askpass must be set as an environment variable
-    diskutilArgs << "-E" << "launch" << "diskutil" << "rename" << dev << new_name.toLocal8Bit().data();
-    qDebug() << diskutilArgs;
-    p.start(program, diskutilArgs);
-    p.waitForFinished();
-    p.setReadChannel(QProcess::StandardError);
-    // TODO: Implement translatable error messages here.
-    while (p.canReadLine()) {
-       // Let the 'launch' command handle error messages for now
-       QString line = QString::fromLocal8Bit(p.readLine());
-       qDebug() << line;
     }
 
     return;

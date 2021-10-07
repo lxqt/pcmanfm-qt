@@ -86,27 +86,11 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
       QString mimetype;
       mimetype = QString::fromUtf8(fm_mime_type_get_type(fm_mime_type_ref(fm_file_info_get_mime_type(file))));
       if (mimetype == "inode/mount-point") {
-          QString path = QString(fm_path_to_str(fm_file_info_get_path(file)));
-          qDebug() << "probono: inode/mount-point, path:" << path;
-          QString dispName = QString::fromUtf8(fm_file_info_get_disp_name(file));
-          // Using glib and libfm is as uncomfortable as it can get. How can we know the mountpoint?
-          // FIXME: Get this directly from libfm. In the meantime we use QStorageInfo.
-          qDebug() << "probono: dispName" << dispName;
-          QString mountpoint = nullptr;
-          QList<QStorageInfo> vols = QStorageInfo::mountedVolumes();
-          for ( const auto& vol : vols  ) {
-              if (vol.isValid() && vol.isReady()) {
-                  // qDebug() << "probono: vol.rootPath()" << vol.rootPath();
-                  // qDebug() << "probono: vol.displayName()" << vol.displayName();
-                  // qDebug() << "probono: QFileInfo(vol.displayName()).fileName()" << QFileInfo(vol.displayName()).fileName();
-                  if (QFileInfo(vol.displayName()).fileName() == dispName) {
-                      mountpoint = vol.rootPath();
-                      break;
-                  }
-              }
-          }
+          // QString path = QString(fm_path_to_str(fm_file_info_get_path(file)));
+          // qDebug() << "probono: inode/mount-point, path:" << path;
+          QString mountpoint = QString::fromUtf8(fm_file_info_get_target(file));
+          // qDebug() << "probono: inode/mount-point, mountpoint:" << mountpoint;
           if(mountpoint != nullptr) {
-              qDebug() << "probono: mountpoint:" << mountpoint;
               QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
               if(QFile::exists(mountpoint + "/.VolumeIcon.icns")){
                   qDebug() << "probono:" << mountpoint + "/.VolumeIcon.icns" << "exists, use it";
