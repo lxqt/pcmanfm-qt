@@ -1308,7 +1308,7 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="759"/>
         <source>Show in places</source>
-        <translation>Unter &quot;Orte&quot; anzeigen</translation>
+        <translation>Unter Orte anzeigen</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="764"/>
