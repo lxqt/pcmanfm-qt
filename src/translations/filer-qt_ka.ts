@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ar">
+<TS version="2.1" language="ka">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../../build/filer/ui_about.h" line="134"/>
         <source>About</source>
-        <translation>حول</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="135"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="137"/>
         <source>Lightweight file manager</source>
-        <translation>متصفح الملفات</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="138"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_about.h" line="139"/>
+        <source>Programming:
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_about.h" line="142"/>
+        <source>Authors</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="143"/>
@@ -42,18 +54,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_about.h" line="139"/>
-        <source>Programming:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_about.h" line="142"/>
-        <source>Authors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -214,6 +214,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/filer/ui_main-win.h" line="558"/>
+        <source>Go &amp;Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/filer/ui_main-win.h" line="560"/>
         <source>Go Up</source>
         <translation type="unfinished"></translation>
@@ -224,28 +229,23 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/filer/ui_main-win.h" line="564"/>
-        <source>Alt+Home</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="583"/>
-        <source>Reload</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="566"/>
-        <source>F5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../build/filer/ui_main-win.h" line="563"/>
         <source>&amp;Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/filer/ui_main-win.h" line="564"/>
+        <source>Alt+Home</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/filer/ui_main-win.h" line="565"/>
         <source>&amp;Reload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="566"/>
+        <source>F5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -261,6 +261,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="569"/>
         <source>&amp;About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="570"/>
+        <source>&amp;New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -314,6 +319,36 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/filer/ui_main-win.h" line="583"/>
+        <source>Reload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="584"/>
+        <source>&amp;Icon View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="585"/>
+        <source>&amp;Compact View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="586"/>
+        <source>&amp;Detailed List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="587"/>
+        <source>&amp;Thumbnail View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="588"/>
+        <source>Cu&amp;t</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/filer/ui_main-win.h" line="589"/>
         <source>Ctrl+X</source>
         <translation type="unfinished"></translation>
@@ -341,6 +376,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="594"/>
         <source>Select &amp;All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="595"/>
+        <source>Ctrl+A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -384,21 +424,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/filer/ui_main-win.h" line="619"/>
-        <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="620"/>
-        <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="622"/>
-        <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../build/filer/ui_main-win.h" line="629"/>
         <source>&amp;Case Sensitive</source>
         <translation type="unfinished"></translation>
@@ -414,43 +439,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/filer/ui_main-win.h" line="595"/>
-        <source>Ctrl+A</source>
+        <location filename="../../build/filer/ui_main-win.h" line="637"/>
+        <source>&amp;Folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/filer/ui_main-win.h" line="558"/>
-        <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="570"/>
-        <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="584"/>
-        <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="585"/>
-        <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="586"/>
-        <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="587"/>
-        <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="588"/>
-        <source>Cu&amp;t</source>
+        <location filename="../../build/filer/ui_main-win.h" line="639"/>
+        <source>&amp;Blank File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -499,8 +494,23 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/filer/ui_main-win.h" line="619"/>
+        <source>&amp;Invert Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="620"/>
+        <source>&amp;Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/filer/ui_main-win.h" line="621"/>
         <source>Del</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="622"/>
+        <source>&amp;Rename</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -514,53 +524,23 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/filer/ui_main-win.h" line="626"/>
-        <source>File &amp;Properties</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="628"/>
-        <source>&amp;Folder Properties</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="638"/>
-        <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="640"/>
-        <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="643"/>
-        <source>Filter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="646"/>
-        <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="649"/>
-        <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_main-win.h" line="654"/>
-        <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../build/filer/ui_main-win.h" line="625"/>
         <source>Ctrl+W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/filer/ui_main-win.h" line="626"/>
+        <source>File &amp;Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/filer/ui_main-win.h" line="627"/>
         <source>Alt+Return</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="628"/>
+        <source>&amp;Folder Properties</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -589,13 +569,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/filer/ui_main-win.h" line="637"/>
-        <source>&amp;Folder</source>
+        <location filename="../../build/filer/ui_main-win.h" line="638"/>
+        <source>Ctrl+Shift+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/filer/ui_main-win.h" line="639"/>
-        <source>&amp;Blank File</source>
+        <location filename="../../build/filer/ui_main-win.h" line="640"/>
+        <source>Ctrl+Alt+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -609,6 +589,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/filer/ui_main-win.h" line="643"/>
+        <source>Filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/filer/ui_main-win.h" line="644"/>
         <source>Filter by string...</source>
         <translation type="unfinished"></translation>
@@ -619,6 +604,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/filer/ui_main-win.h" line="646"/>
+        <source>C&amp;reate New</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/filer/ui_main-win.h" line="647"/>
         <source>&amp;Help</source>
         <translation type="unfinished"></translation>
@@ -626,6 +616,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="648"/>
         <source>&amp;View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="649"/>
+        <source>&amp;Sorting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -646,6 +641,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="653"/>
         <source>&amp;Tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_main-win.h" line="654"/>
+        <source>Main Toolbar</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -882,22 +882,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>%n item(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source> (%n hidden)</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -994,16 +984,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../build/filer/ui_preferences.h" line="757"/>
-        <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_preferences.h" line="758"/>
-        <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../build/filer/ui_preferences.h" line="754"/>
         <source>Always show the tab bar</source>
         <translation type="unfinished"></translation>
@@ -1016,6 +996,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="756"/>
         <source>Remember the size of the last closed window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_preferences.h" line="757"/>
+        <source>Default width of new windows:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_preferences.h" line="758"/>
+        <source>Default height of new windows:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1214,8 +1204,24 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../build/filer/ui_preferences.h" line="791"/>
+        <source>Programs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_preferences.h" line="792"/>
+        <source>Terminal emulator:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../build/filer/ui_preferences.h" line="793"/>
         <source>Switch &amp;user command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/filer/ui_preferences.h" line="794"/>
+        <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
+%s = the command line you want to execute with terminal or su.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1241,22 +1247,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="800"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_preferences.h" line="791"/>
-        <source>Programs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_preferences.h" line="792"/>
-        <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/filer/ui_preferences.h" line="794"/>
-        <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
-%s = the command line you want to execute with terminal or su.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1660,6 +1650,26 @@ What do you want to do with it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="98"/>
+        <source>Open With...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="126"/>
+        <source>Other Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="132"/>
+        <source>Create &amp;New</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="151"/>
+        <source>&amp;Restore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../filemenu.cpp" line="157"/>
         <source>Cut</source>
         <translation type="unfinished"></translation>
@@ -1681,38 +1691,8 @@ What do you want to do with it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="312"/>
-        <source>Output</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../filemenu.cpp" line="363"/>
-        <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../filemenu.cpp" line="173"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../filemenu.cpp" line="98"/>
-        <source>Open With...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../filemenu.cpp" line="126"/>
-        <source>Other Applications</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../filemenu.cpp" line="132"/>
-        <source>Create &amp;New</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../filemenu.cpp" line="151"/>
-        <source>&amp;Restore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1733,6 +1713,16 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="221"/>
         <source>Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="312"/>
+        <source>Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="363"/>
+        <source>&amp;Delete</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2055,11 +2045,6 @@ Do you want to delete them instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="207"/>
-        <source>Trash</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../placesmodel.cpp" line="57"/>
         <source>Computer</source>
         <translation type="unfinished"></translation>
@@ -2084,14 +2069,14 @@ Do you want to delete them instead?</source>
         <source>Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../placesmodel.cpp" line="207"/>
+        <source>Trash</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Fm::PlacesView</name>
-    <message>
-        <location filename="../placesview.cpp" line="358"/>
-        <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="../placesview.cpp" line="346"/>
         <source>Open in New Tab</source>
@@ -2100,6 +2085,11 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesview.cpp" line="349"/>
         <source>Open in New Window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../placesview.cpp" line="358"/>
+        <source>Empty Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2248,14 +2238,6 @@ Modified: %3</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../utilities.cpp" line="152"/>
-        <location filename="../utilities.cpp" line="228"/>
-        <location filename="../mountoperation.cpp" line="185"/>
-        <location filename="../filelauncher.cpp" line="117"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../utilities.cpp" line="123"/>
         <source>Rename File</source>
         <translation type="unfinished"></translation>
@@ -2266,8 +2248,21 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../utilities.cpp" line="152"/>
+        <location filename="../utilities.cpp" line="228"/>
+        <location filename="../mountoperation.cpp" line="185"/>
+        <location filename="../filelauncher.cpp" line="117"/>
+        <source>Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../utilities.cpp" line="164"/>
         <source>Create Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utilities.cpp" line="165"/>
+        <source>Create File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2293,11 +2288,6 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="180"/>
         <source>Enter a name for the new %1:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../utilities.cpp" line="165"/>
-        <source>Create File</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
