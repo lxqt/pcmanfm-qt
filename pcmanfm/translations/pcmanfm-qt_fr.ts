@@ -523,7 +523,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>Raccourcis masqués</translation>
+        <translation>Raccourcis cachés</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
@@ -622,7 +622,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation>Retour</translation>
+        <translation>Retour arrière</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
@@ -1020,7 +1020,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>&amp;Raccourcis cachés</translation>
+        <translation>Raccourci&amp;s cachés</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
@@ -1322,7 +1322,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation>&amp;Aide</translation>
+        <translation>A&amp;ide</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="99"/>

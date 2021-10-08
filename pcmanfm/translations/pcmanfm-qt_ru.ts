@@ -1124,7 +1124,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Скр&amp;ытые сочетания клавиш</translation>
+        <translation>Скрытые &amp;сочетания клавиш</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
