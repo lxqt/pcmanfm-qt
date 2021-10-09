@@ -56,7 +56,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>PCMan-filbehandler
+
+Opphavsrett © 2009–2014 洪任諭 (Hong Jen Yee)
+
+Dette programmet er fri programvare; du kan redistribuere det og/eller
+endre det i henhold til vilkårene i GNU General Public-lisensen
+som utgitt av Free Software-stiftelsen; enten versjon 2 av lisensen
+eller (etter eget valg) enhver senere versjon.
+
+Dette programmet distribueres i håp om at det skal være nyttig,
+men UTEN GARANTI AV NOEN ART; selv uten implisitt garanti om
+SALGBARHET eller FORMÅLSTJENLIGHET. Sjekk
+GNU General Public-lisensen for flere detaljer.
+
+Du skal ha mottatt en kopi av GNU General Public-lisensen
+sammen med programmet; hvis ikke, skriv til Free Software-stiftelsen
+Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="160"/>
@@ -200,7 +216,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="277"/>
         <source>Show menus provided by window managers when desktop is clicked</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis menyer angitt av vindusbehandlere når skrivebordet klikkes</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="278"/>
@@ -218,17 +234,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="558"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå &amp;oppover</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="560"/>
         <source>Go Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå oppover</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="562"/>
         <source>Alt+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+↑</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="563"/>
@@ -238,22 +254,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="564"/>
         <source>Alt+Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="565"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Last inn igjen</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="566"/>
         <source>F5</source>
-        <translation type="unfinished"></translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="567"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Start</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="568"/>
@@ -283,12 +299,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="575"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis &amp;skjulte</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="576"/>
         <source>Ctrl+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="577"/>
@@ -313,7 +329,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="581"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Legg til som bokmerke</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="582"/>
@@ -323,7 +339,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="583"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Last inn igjen</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="584"/>
@@ -686,7 +702,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="177"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Åpne skrivebordinnstillingsdialogen på siden med angitt navn</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -707,7 +723,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="186"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Sett bakgrunnsbilde fra bildefil</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="186"/>
@@ -732,12 +748,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer eller mapper å åpne</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="196"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[Fil1, fil2, …]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="500"/>
@@ -748,7 +764,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="507"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminalemulator er ikke satt.</translation>
     </message>
 </context>
 <context>
@@ -802,7 +818,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopwindow.cpp" line="366"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fest til nåværende posisjon</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="388"/>
@@ -841,7 +857,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="980"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommando for bytting av kommando er ikke satt.</translation>
     </message>
 </context>
 <context>
@@ -1015,7 +1031,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="724"/>
         <source>Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Utforskning</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="725"/>
@@ -1025,7 +1041,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="726"/>
         <source>Delay of auto-selection in single click mode (0 to disable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Forsinkelse på auto-velging i enkeltklikksmodus (0 for å skru av)</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="727"/>
@@ -1050,7 +1066,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="738"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation type="unfinished"></translation>
+        <translation>Flytt slettede filer til papirkurv istedenfor å slette dem fra disken.</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="783"/>
@@ -1095,7 +1111,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="740"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Bekreft før flytting av filer til papirkurv</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="741"/>
@@ -1110,12 +1126,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="750"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Behandle sikkerhetskopifiler som skjulte</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="751"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Alltid vis fullstendige filnavn</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="752"/>
@@ -1165,7 +1181,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="780"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikke generer miniatyrbilder for bildefiler som overstiger denne størrelsen:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="781"/>
@@ -1175,7 +1191,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="784"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Auto-montering</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="785"/>
@@ -1185,17 +1201,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="786"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Monter flyttbare media automatisk når de settes inn</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="787"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis tilgjengelige valg for flyttbar media når de settes inn</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="788"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>Når flyttbare media avmonteres:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="789"/>
@@ -1220,13 +1236,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="793"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommando for &amp;bytting av bruker.</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="794"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation type="unfinished"></translation>
+        <translation>Eksempler: &quot;xterm -e %s&quot; for terminal, eller &quot;gksu %s&quot; for bytting av bruker.
+%s = kommandolinjen du ønsker å kjøre med terminal eller su.</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="796"/>
@@ -1236,7 +1253,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="797"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Maler</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="798"/>
@@ -1246,12 +1263,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="799"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vis kun én mal for hver mediatype</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="800"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Kjør forvalgt program etter opprettelse fra mal</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="749"/>
