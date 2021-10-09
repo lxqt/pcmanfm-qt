@@ -95,7 +95,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="113"/>
         <source>Type of medium:</source>
-        <translation>儲存裝置種類:</translation>
+        <translation>儲存裝置種類：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="114"/>
@@ -105,7 +105,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="115"/>
         <source>Please select the action you want to perform:</source>
-        <translation>請選擇想要執行的動作:</translation>
+        <translation>請選擇想要執行的動作：</translation>
     </message>
 </context>
 <context>
@@ -123,7 +123,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="77"/>
         <source>Desktop folder:</source>
-        <translation>桌面資料夾:</translation>
+        <translation>桌面資料夾：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="79"/>
@@ -156,17 +156,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="256"/>
         <source>Wallpaper mode:</source>
-        <translation>桌布:</translation>
+        <translation>桌布：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="257"/>
         <source>Wallpaper image file:</source>
-        <translation>桌布影像檔:</translation>
+        <translation>桌布影像檔：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="259"/>
         <source>Select background color:</source>
-        <translation>選擇背景顏色:</translation>
+        <translation>選擇背景顏色：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="261"/>
@@ -191,17 +191,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="271"/>
         <source>Select  text color:</source>
-        <translation>選擇文字顏色:</translation>
+        <translation>選擇文字顏色：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="272"/>
         <source>Select shadow color:</source>
-        <translation>選擇陰影顏色:</translation>
+        <translation>選擇陰影顏色：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="273"/>
         <source>Select font:</source>
-        <translation>選擇字型:</translation>
+        <translation>選擇字型：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="275"/>
@@ -833,7 +833,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="190"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation>桌面牆紙的設置模式。 類別 =（顏色|延展|縮放|置中|並排）</translation>
+        <translation>桌面牆紙的設置模式。 類別 =(顏色|延展|縮放|置中|並排)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="190"/>
@@ -864,7 +864,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="507"/>
         <source>Terminal emulator is not set.</source>
-        <translation>終端機模擬器尚未設定</translation>
+        <translation>終端機模擬器尚未設定。</translation>
     </message>
 </context>
 <context>
@@ -936,7 +936,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
         <source>Version: %1</source>
-        <translation>版本: %1</translation>
+        <translation>版本：%1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="907"/>
@@ -957,7 +957,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../mainwindow.cpp" line="980"/>
         <source>Switch user command is not set.</source>
-        <translation>切換使用者指令尚未設定</translation>
+        <translation>切換使用者指令尚未設定。</translation>
     </message>
     <message>
         <source>Terminal emulator is not set.</source>
@@ -1078,7 +1078,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="729"/>
         <source>Bookmarks:</source>
-        <translation>書籤:</translation>
+        <translation>書籤：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="732"/>
@@ -1118,17 +1118,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="744"/>
         <source>Size of big icons:</source>
-        <translation>大圖示尺寸:</translation>
+        <translation>大圖示尺寸：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="745"/>
         <source>Size of small icons:</source>
-        <translation>小圖示尺寸:</translation>
+        <translation>小圖示尺寸：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="746"/>
         <source>Size of thumbnails:</source>
-        <translation>縮圖尺寸:</translation>
+        <translation>縮圖尺寸：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="747"/>
@@ -1138,7 +1138,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="743"/>
         <source>Icon theme:</source>
-        <translation>圖示佈景主題:</translation>
+        <translation>圖示主題：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="753"/>
@@ -1148,12 +1148,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="757"/>
         <source>Default width of new windows:</source>
-        <translation>新視窗的預設寬度:</translation>
+        <translation>新視窗的預設寬度：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="758"/>
         <source>Default height of new windows:</source>
-        <translation>新視窗的預設高度:</translation>
+        <translation>新視窗的預設高度：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="754"/>
@@ -1163,7 +1163,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="755"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>在分頁標籤上顯示「關閉」按鈕</translation>
+        <translation>在分頁標籤上顯示 &quot;關閉&quot; 按鈕	</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="756"/>
@@ -1188,7 +1188,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="727"/>
         <source>Default view mode:</source>
-        <translation>預設檢視模式:</translation>
+        <translation>預設檢視模式：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="728"/>
@@ -1208,7 +1208,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="738"/>
         <source>Move deleted files to &quot;trash bin&quot; instead of erasing from disk.</source>
-        <translation>將檔案移動至垃圾桶，而不直接在磁碟中刪除</translation>
+        <translation>將檔案移動至垃圾桶，而不直接在磁碟中刪除。</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="748"/>
@@ -1381,7 +1381,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../../build/filer/ui_preferences.h" line="794"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation>範例: 終端機指令可用 &quot;xterm -e %s&quot;而切換使用者指令可用 &quot;gksu %s&quot;。
+        <translation>範例: 終端機指令可用 &quot;xterm -e %s&quot; 而切換使用者指令可用 &quot;gksu %s&quot;。
 %s = 想要用終端機或是切換使用者執行的指令。</translation>
     </message>
     <message>
@@ -1418,12 +1418,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
         <source>Command line to execute:</source>
-        <translation>要執行的命令列:</translation>
+        <translation>要執行的命令列：</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
         <source>Application name:</source>
-        <translation>應用程式名稱:</translation>
+        <translation>應用程式名稱：</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
@@ -1524,7 +1524,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../file-operation-dialog.ui" line="32"/>
         <source>Destination:</source>
-        <translation>目的地:</translation>
+        <translation>目的地：</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="55"/>
@@ -1544,7 +1544,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../file-operation-dialog.ui" line="95"/>
         <source>Time remaining:</source>
-        <translation>剩餘時間:</translation>
+        <translation>剩餘時間：</translation>
     </message>
 </context>
 <context>
@@ -1562,47 +1562,47 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../file-props.ui" line="80"/>
         <source>Location:</source>
-        <translation>位置:</translation>
+        <translation>位置：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="106"/>
         <source>File type:</source>
-        <translation>檔案類型:</translation>
+        <translation>檔案類型：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="129"/>
         <source>Mime type:</source>
-        <translation>Mime 類型:</translation>
+        <translation>Mime 類型：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="152"/>
         <source>File size:</source>
-        <translation>檔案大小:</translation>
+        <translation>檔案大小：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="175"/>
         <source>On-disk size:</source>
-        <translation>磁碟上大小:</translation>
+        <translation>磁碟上大小：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="198"/>
         <source>Last modified:</source>
-        <translation>最後修改:</translation>
+        <translation>最後修改：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="221"/>
         <source>Link target:</source>
-        <translation>連結目標:</translation>
+        <translation>連結目標：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="247"/>
         <source>Open With:</source>
-        <translation>開啟:</translation>
+        <translation>開啟：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="267"/>
         <source>Last accessed:</source>
-        <translation>最後存取:</translation>
+        <translation>最後存取：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="285"/>
@@ -1619,14 +1619,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../file-props.ui" line="389"/>
         <location filename="../file-props.ui" line="503"/>
         <source>Group:</source>
-        <translation>群組:</translation>
+        <translation>群組：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="337"/>
         <location filename="../file-props.ui" line="372"/>
         <location filename="../file-props.ui" line="451"/>
         <source>Owner:</source>
-        <translation>擁有者:</translation>
+        <translation>擁有者：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="353"/>
@@ -1637,7 +1637,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../file-props.ui" line="406"/>
         <location filename="../file-props.ui" line="555"/>
         <source>Other:</source>
-        <translation>其他:</translation>
+        <translation>其他：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="423"/>
@@ -1668,17 +1668,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../file-props.ui" line="603"/>
         <source>Sticky</source>
-        <translation></translation>
+        <translation>標籤</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="610"/>
         <source>SetUID</source>
-        <translation></translation>
+        <translation>設置UID</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="617"/>
         <source>SetGID</source>
-        <translation></translation>
+        <translation>設置GID</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="653"/>
@@ -1699,7 +1699,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../appchooserdialog.cpp" line="262"/>
         <source>Select an application to open &quot;%1&quot; files</source>
-        <translation>選取用來開啟「%1」檔案的應用程式</translation>
+        <translation>選取用來開啟 &quot;%1&quot; 檔案的應用程式</translation>
     </message>
 </context>
 <context>
@@ -1707,12 +1707,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished">資料夾</translation>
+        <translation>資料夾</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished">空白檔案</translation>
+        <translation>空白檔案</translation>
     </message>
 </context>
 <context>
@@ -1733,17 +1733,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../dirtreeview.cpp" line="208"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>在新分頁中打開(&amp;A)</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="212"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>在新視窗中打開(&amp;D)</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>在終端機中打開(&amp;L)</translation>
     </message>
 </context>
 <context>
@@ -1816,7 +1816,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="132"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished">新建(&amp;N)</translation>
+        <translation>新建(&amp;N)</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="151"/>
@@ -1925,7 +1925,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="42"/>
         <source>Moving the following files to destination folder:</source>
-        <translation>正在移動下列檔案到目的資料夾:</translation>
+        <translation>正在移動以下檔案到目的資料夾：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="45"/>
@@ -1935,7 +1935,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="46"/>
         <source>Copying the following files to destination folder:</source>
-        <translation>正在複製下列檔案到目的資料夾:</translation>
+        <translation>正在複製以下檔案到目的資料夾：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="49"/>
@@ -1945,7 +1945,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="50"/>
         <source>Moving the following files to trash can:</source>
-        <translation>正在將下列檔案移動到垃圾桶:</translation>
+        <translation>正在將以下檔案移到垃圾桶：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="53"/>
@@ -1955,7 +1955,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="54"/>
         <source>Deleting the following files</source>
-        <translation>正在刪除下列檔案</translation>
+        <translation>正在刪除以下檔案</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="59"/>
@@ -1965,7 +1965,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="60"/>
         <source>Creating symlinks for the following files:</source>
-        <translation>正在建立下列檔案的符號連結:</translation>
+        <translation>正在建立以下檔案的符號連結：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="63"/>
@@ -1975,7 +1975,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="64"/>
         <source>Changing attributes of the following files:</source>
-        <translation>正在更改下列檔案的屬性:</translation>
+        <translation>正在變更以下檔案的屬性：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="69"/>
@@ -1985,7 +1985,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="70"/>
         <source>Restoring the following files from trash can:</source>
-        <translation>正在恢復下列被刪除的檔案</translation>
+        <translation>正在恢復以下被刪除的檔案：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="137"/>
@@ -2046,17 +2046,17 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>Error</source>
-        <translation type="unfinished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>You should add at least add one directory to search.</source>
-        <translation type="unfinished"></translation>
+        <translation>您應該至少添加一個要搜尋的目錄。</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="127"/>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇資料夾</translation>
     </message>
 </context>
 <context>
@@ -2136,12 +2136,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="115"/>
         <source>Ascending</source>
-        <translation>升冪排列</translation>
+        <translation>遞增排列</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="120"/>
         <source>Descending</source>
-        <translation>降冪排列</translation>
+        <translation>遞減排列</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="135"/>
@@ -2264,32 +2264,32 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesview.cpp" line="346"/>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>在新分頁中打開</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="349"/>
         <source>Open in New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>在新視窗中打開</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="367"/>
         <source>Move Bookmark Up</source>
-        <translation type="unfinished"></translation>
+        <translation>上移書籤</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="372"/>
         <source>Move Bookmark Down</source>
-        <translation type="unfinished"></translation>
+        <translation>下移書籤</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="376"/>
         <source>Rename Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>重新命名書籤</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="379"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>移除書籤</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="388"/>
@@ -2316,23 +2316,23 @@ Do you want to delete them instead?</source>
         <source>Type: %1
 Size: %2
 Modified: %3</source>
-        <translation>類型: %1
-大小: %2
-最後修改: %3</translation>
+        <translation>類型：%1
+大小：%2
+最後修改：%3</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="56"/>
         <source>Type: %1
 Modified: %2</source>
-        <translation>類型: %1
-最後修改: %2</translation>
+        <translation>類型：%1
+最後修改：%2</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="75"/>
         <source>Type: %1
 Modified: %3</source>
-        <translation>類型: %1
-最後修改: %3</translation>
+        <translation>類型：%1
+最後修改：%3</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="89"/>
@@ -2357,17 +2357,17 @@ Modified: %3</source>
         <location filename="../sidepane.cpp" line="48"/>
         <location filename="../sidepane.cpp" line="129"/>
         <source>Directory Tree</source>
-        <translation>目錄樹</translation>
+        <translation>樹狀目錄</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="137"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
-        <translation></translation>
+        <translation>在側邊欄中顯示常用位置、裝置和書籤列表</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="139"/>
         <source>Shows tree of directories in sidebar</source>
-        <translation></translation>
+        <translation>在側邊欄中顯示樹狀目錄</translation>
     </message>
 </context>
 <context>
@@ -2385,22 +2385,22 @@ Modified: %3</source>
     <message>
         <location filename="../mount-operation-password.ui" line="58"/>
         <source>Connect as u&amp;ser:</source>
-        <translation>以使用者帳號連線(&amp;S):</translation>
+        <translation>以使用者帳號連線(&amp;S)：</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="79"/>
         <source>&amp;Username:</source>
-        <translation>使用者名稱(&amp;U):</translation>
+        <translation>使用者名稱(&amp;U)：</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="102"/>
         <source>&amp;Password:</source>
-        <translation>密碼(&amp;P):</translation>
+        <translation>密碼(&amp;P)：</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="112"/>
         <source>&amp;Domain:</source>
-        <translation></translation>
+        <translation>網域(&amp;D)：</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="127"/>
@@ -2436,22 +2436,22 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="124"/>
         <source>Please enter a new name:</source>
-        <translation>請輸入一個新名稱:</translation>
+        <translation>請輸入一個新名稱：</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="164"/>
         <source>Create Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>建立資料夾</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="169"/>
         <source>Please enter a new file name:</source>
-        <translation>請輸入一個新檔名:</translation>
+        <translation>請輸入一個新檔名：</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="174"/>
         <source>Please enter a new folder name:</source>
-        <translation>請輸入一個新資料夾名稱:</translation>
+        <translation>請輸入一個新資料夾名稱：</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="175"/>
@@ -2466,7 +2466,7 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="180"/>
         <source>Enter a name for the new %1:</source>
-        <translation>幫新的 %1 輸入一個名稱:</translation>
+        <translation>幫新的 %1 輸入一個名稱：</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="165"/>
@@ -2484,37 +2484,37 @@ Modified: %3</source>
     <message>
         <location filename="../rename-dialog.ui" line="35"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;此位置已存在相同名稱的檔案&lt;/span&gt;&lt;/p&gt;&lt;p&gt;是否要取代現有檔案？&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
         <source>dest</source>
-        <translation type="unfinished"></translation>
+        <translation>目的地</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="63"/>
         <source>with the following file?</source>
-        <translation type="unfinished"></translation>
+        <translation>使用以下檔案？</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
         <source>src file info</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案來源內容</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
         <source>dest file info</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案目的地內容</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
         <source>src</source>
-        <translation type="unfinished"></translation>
+        <translation>來源</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
         <source>&amp;File name:</source>
-        <translation>檔名(&amp;F):</translation>
+        <translation>檔名(&amp;F)：</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="137"/>
@@ -2527,176 +2527,176 @@ Modified: %3</source>
     <message>
         <location filename="../filesearch.ui" line="14"/>
         <source>Search Files</source>
-        <translation type="unfinished"></translation>
+        <translation>搜尋檔案</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="29"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>名稱/位置</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="35"/>
         <source>File Name Patterns:</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案名稱圖案：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="41"/>
         <source>*</source>
-        <translation type="unfinished"></translation>
+        <translation>*</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="48"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>不分大小寫</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>用名稱排列</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="65"/>
         <source>Places to Search:</source>
-        <translation type="unfinished"></translation>
+        <translation>搜尋位置：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="78"/>
         <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
+        <translation>新增(&amp;A)</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="90"/>
         <source>&amp;Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>移除(&amp;R)</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="119"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>在子目錄中搜尋</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="126"/>
         <source>Search for hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>搜尋隱藏檔案</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="137"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案類型</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="143"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>只搜尋以下類型的檔案：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="149"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>文字檔</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="156"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>映像檔</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="163"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>音訊檔</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="170"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>影像檔</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="177"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="184"/>
         <source>Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>資料夾</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="208"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>內容</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="214"/>
         <source>File contains:</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案包含：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="223"/>
         <source>Case insensiti&amp;ve</source>
-        <translation type="unfinished"></translation>
+        <translation>不分大小寫(&amp;V)</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="230"/>
         <source>&amp;Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>用名稱排列(&amp;U)</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="254"/>
         <source>Properties</source>
-        <translation type="unfinished">屬性</translation>
+        <translation>屬性</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="260"/>
         <source>File Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案大小：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
         <source>Larger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>大於：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="282"/>
         <location filename="../filesearch.ui" line="323"/>
         <source>Bytes</source>
-        <translation type="unfinished"></translation>
+        <translation>位元</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="287"/>
         <location filename="../filesearch.ui" line="328"/>
         <source>KiB</source>
-        <translation type="unfinished"></translation>
+        <translation>KiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="292"/>
         <location filename="../filesearch.ui" line="333"/>
         <source>MiB</source>
-        <translation type="unfinished"></translation>
+        <translation>MiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="297"/>
         <location filename="../filesearch.ui" line="338"/>
         <source>GiB</source>
-        <translation type="unfinished"></translation>
+        <translation>GiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="307"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation>小於：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="351"/>
         <source>Last Modified Time:</source>
-        <translation type="unfinished"></translation>
+        <translation>最後修改時間：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="357"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>早於：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="364"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation>晚於：</translation>
     </message>
 </context>
 </TS>
