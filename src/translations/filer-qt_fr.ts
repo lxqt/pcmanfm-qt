@@ -21,7 +21,7 @@
     <message>
         <location filename="../../build/filer/ui_about.h" line="138"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lxqt.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://lxqt.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://lxqt-project.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_about.h" line="143"/>
@@ -42,28 +42,22 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished">Gestionnaire de fichiers de PCMan
+        <translation>Gestionnaire de fichiers de PCMan
 
-Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
+Copyright © 2009 - 2013 洪任諭 (Hong Jen Yee)
 
 Ce programme est du logiciel libre&#xa0;; vous le redistribuer
-avec ou sans modification sous les termes de la licence pu-
-blique générale GNU telle que publiée par le fondation pour
+avec ou sans modification sous les termes de la licence publique générale GNU telle que publiée par le fondation pour
 le logiciel libre, soit en version 2, soit en n&apos;importe quelle
 version ultérieure (à votre discrétion).
 
 Ce programme est distribué dans l&apos;espoir qu&apos;il soit utile,
-mais SANS AUCUNE GARANTIE&#xa0;; sans même la garantie impli-
-cite de QUALITÉ MARCHANDE ou d&apos;APTITUDE À UN CERTAIN
-BUT.&#xa0;Voir la licence publique générale GNU pour de plus am-
-ples détails.
+mais SANS AUCUNE GARANTIE&#xa0;; sans même la garantie implicite de QUALITÉ MARCHANDE ou d&apos;APTITUDE À UN CERTAIN
+BUT.&#xa0;Voir la licence publique générale GNU pour de plus amples détails.
 
-Vous devriez avoir reçu une copie de la licence publique géné-
-rale GNU avec ce programme&#xa0;; si ce n&apos;est pas le cas, écrivez à la
+Vous devriez avoir reçu une copie de la licence publique générale GNU avec ce programme&#xa0;; si ce n&apos;est pas le cas, écrivez à la
 fondation pour le logiciel libre à l&apos;adresse ci-dessous&#xa0;:
-Free Software Foundation, Inc.n 51 Franklin Street,
-Fifth Floor, Boston, MA 02110-1301, USA. {2009 ?} {2014 ?} {2
-?} {51 ?} {02110-1301,?}</translation>
+Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, États-Unis.</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://filer.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://filer.sourceforge.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
@@ -177,7 +171,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="79"/>
         <source>Image file</source>
-        <translation type="unfinished">Fichier image</translation>
+        <translation>Fichier image</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="84"/>
@@ -187,7 +181,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="85"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">&amp;Parcourir</translation>
+        <translation>&amp;Parcourir</translation>
     </message>
 </context>
 <context>
@@ -235,7 +229,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="268"/>
         <source>Label Text</source>
-        <translation type="unfinished">Texte de l&apos;étiquette</translation>
+        <translation>Texte de l&apos;étiquette</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-preferences.h" line="271"/>
@@ -717,7 +711,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="642"/>
         <source>F3</source>
-        <translation type="unfinished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="644"/>
@@ -1239,37 +1233,37 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="764"/>
         <source>Home</source>
-        <translation type="unfinished">Page d&apos;accueil</translation>
+        <translation>Accueil</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="766"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Bureau</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="768"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation>Corbeille</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="770"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordinateur</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="772"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Applications</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="774"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Appareils</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="776"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Réseau</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="780"/>
