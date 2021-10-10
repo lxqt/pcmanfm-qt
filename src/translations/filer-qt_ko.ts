@@ -274,7 +274,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="568"/>
         <source>Quit</source>
-        <translation>종료</translation>
+        <translation>사임하다</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="569"/>
