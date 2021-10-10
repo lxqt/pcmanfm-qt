@@ -112,14 +112,14 @@ QString Settings::profileDir(QString profile, bool useFallback) {
   QString dirName = QLatin1String(qgetenv("XDG_CONFIG_HOME"));
   if (dirName.isEmpty())
     dirName = QDir::homePath() % QLatin1String("/.config");
-  dirName = dirName % "/filer-qt/" % profile;
+  dirName = dirName % "/filer/" % profile;
   QDir dir(dirName);
 
   // if user config dir does not exist, try system-wide config dirs instead
   if(!dir.exists() && useFallback) {
     QString fallbackDir;
     for(const char* const* configDir = g_get_system_config_dirs(); *configDir; ++configDir) {
-      fallbackDir = QString(*configDir) % "/filer-qt/" % profile;
+      fallbackDir = QString(*configDir) % "/filer/" % profile;
       dir.setPath(fallbackDir);
       if(dir.exists()) {
 	dirName = fallbackDir;
