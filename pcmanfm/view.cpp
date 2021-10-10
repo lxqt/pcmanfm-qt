@@ -41,7 +41,7 @@ View::~View() = default;
 
 void View::onFileClicked(int type, const std::shared_ptr<const Fm::FileInfo>& fileInfo) {
     if(type == MiddleClick) {
-        if(fileInfo->isDir()) {
+        if(fileInfo && fileInfo->isDir()) {
             // fileInfo->path() shouldn't be used directly because
             // it won't work in places like computer:/// or network:///
             Fm::FileInfoList files;

@@ -949,7 +949,7 @@ void DesktopWindow::onFileClicked(int type, const std::shared_ptr<const Fm::File
     }
     else {
         // special right-click menus for our desktop shortcuts
-        if(fileInfo && fileInfo->isDesktopEntry() && type == Fm::FolderView::ContextMenuClick) {
+        if(fileInfo && fileInfo->isDesktopEntry() && type == Fm::FolderView::ContextMenuClick && hasSelection()) {
             Settings& settings = static_cast<Application* >(qApp)->settings();
             const QStringList ds = settings.desktopShortcuts();
             if(!ds.isEmpty()) {
