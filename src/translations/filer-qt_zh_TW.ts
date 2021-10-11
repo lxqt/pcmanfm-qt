@@ -95,7 +95,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="113"/>
         <source>Type of medium:</source>
-        <translation>儲存裝置種類：</translation>
+        <translation>儲存裝置類型：</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_autorun.h" line="114"/>
@@ -1098,7 +1098,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="739"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>擦除外接儲存裝置裡的檔案，而並非建立 &quot;垃圾桶&quot;</translation>
+        <translation>擦除外接儲存裝置裡面的檔案，而並不是移動到 &quot;垃圾桶&quot; 上</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_preferences.h" line="740"/>
