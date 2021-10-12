@@ -485,6 +485,11 @@ void MainWindow::addViewFrame(const Fm::FilePath& path) {
     connect(viewFrame->getTabBar(), &QTabBar::tabMoved, this, &MainWindow::onTabBarTabMoved);
     connect(viewFrame->getTabBar(), &QTabBar::tabBarClicked, this, &MainWindow::onTabBarClicked);
     connect(viewFrame->getTabBar(), &QTabBar::customContextMenuRequested, this, &MainWindow::tabContextMenu);
+    connect(viewFrame->getTabBar(), &QTabBar::tabBarDoubleClicked, this, [this](int index) {
+        if(index == -1) {
+            on_actionNewTab_triggered();
+        }
+    });
     connect(viewFrame->getTabBar(), &TabBar::tabDetached, this, &MainWindow::detachTab);
     connect(viewFrame->getStackedWidget(), &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
 
