@@ -115,32 +115,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="76"/>
         <source>Desktop</source>
-        <translation type="unfinished">Рабочий стол</translation>
+        <translation>Рабочий стол</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="77"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished">Папка рабочего стола:</translation>
+        <translation>Папка рабочего стола:</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="79"/>
         <source>Image file</source>
-        <translation type="unfinished">Файл изображения</translation>
+        <translation>Файл изображения</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="84"/>
         <source>Folder path</source>
-        <translation type="unfinished">Путь к папке</translation>
+        <translation>Путь к папке</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_desktop-folder.h" line="85"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">&amp;Обзор</translation>
+        <translation>&amp;Обзор</translation>
     </message>
 </context>
 <context>
@@ -369,12 +369,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="643"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Фильтр</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="644"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>Фильтр по строке…</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="645"/>
@@ -639,7 +639,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="629"/>
         <source>&amp;Case Sensitive</source>
-        <translation>&amp;Регистрочувствительная</translation>
+        <translation>&amp;Регистрозависимая</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="630"/>
@@ -699,7 +699,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="613"/>
         <source>Alt+Left</source>
-        <translation></translation>
+        <translation>Alt+Влево</translation>
     </message>
     <message>
         <location filename="../../build/filer/ui_main-win.h" line="614"/>
@@ -956,7 +956,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистить текст (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
@@ -2466,7 +2466,7 @@ Modified: %3</source>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
         <source>dest</source>
-        <translation type="unfinished"></translation>
+        <translation>назначение</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="63"/>
@@ -2476,17 +2476,17 @@ Modified: %3</source>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
         <source>src file info</source>
-        <translation type="unfinished"></translation>
+        <translation>информация о исходном файле</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
         <source>dest file info</source>
-        <translation type="unfinished"></translation>
+        <translation>информация о файле назначения</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
         <source>src</source>
-        <translation type="unfinished"></translation>
+        <translation>исходный</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
