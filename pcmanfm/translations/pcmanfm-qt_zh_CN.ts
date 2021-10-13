@@ -525,7 +525,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>快捷键</translation>
+        <translation>快捷方式</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
@@ -535,7 +535,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation>Esc</translation>
+        <translation>退出</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
@@ -619,7 +619,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation>Backspace</translation>
+        <translation>后退</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
@@ -942,12 +942,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished">（&amp;G）转到继承设置源</translation>
+        <translation>（&amp;G）转到继承设置源</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished">（&amp;R）删除不存在文件夹的设置</translation>
+        <translation>（&amp;R）删除不存在文件夹的设置</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -992,7 +992,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished">为这个（&amp;T）文件夹保存设置</translation>
+        <translation>为这个文件夹保存设置（&amp;T）</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1219,7 +1219,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="648"/>
         <source>Del</source>
-        <translation></translation>
+        <translation>删除</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="653"/>
@@ -2110,7 +2110,7 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <location filename="../preferences.ui" line="638"/>
         <location filename="../preferences.ui" line="674"/>
         <source> MiB</source>
-        <translation> MiB</translation>
+        <translation> 兆</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="654"/>

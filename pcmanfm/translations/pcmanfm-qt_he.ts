@@ -1060,7 +1060,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>&amp;קיצורי דרך מוסתרים</translation>
+        <translation>קיצורי דרך &amp;נסתרים</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
