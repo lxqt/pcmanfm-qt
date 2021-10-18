@@ -41,17 +41,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 版權所有 (C) 2009-2014 洪任諭 (Hong Jen Yee)
 
-本程式是自由軟體，您可以遵照自由軟體基金會
+此程式是自由軟體，您可以遵照自由軟體基金會
  ( Free Software Foundation ) 出版的 GNU 通用公共許可證條款
  ( GNU General Public License ) 第二版來修改和重新發佈
 這一個程式，或者自由選擇使用任何更新的版本。
 
-發佈這一個程式的目的是希望它有用。
+發佈此程式的目的是希望它是有用的軟體。
 但沒有任何擔保，甚至沒有適合特定目的而隱含的擔保。
-更詳細的情況請參閱 GNU 通用公共許可證。
+更詳細的情況  請參閱  GNU 通用公共許可證。
 
 
-您應該已經和程式一起收到一份 GNU 通用公共許可證的副本。
+您應該已經與程式一起收到一份 GNU 通用公共許可證的副本。
 如果還沒有收到，請寫信致函給:
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
@@ -61,7 +61,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
         <translation>程式設計:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+* 洪任諭 (Hong Jen Yee - PCMan) &lt;pcman.tw@gmail.com&gt;
 </translation>
     </message>
     <message>
