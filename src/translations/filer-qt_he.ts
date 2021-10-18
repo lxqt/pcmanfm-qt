@@ -7,7 +7,7 @@
         <location filename="../about.ui" line="14"/>
         <location filename="../../build/src/ui_about.h" line="140"/>
         <source>About</source>
-        <translation>אודות</translation>
+        <translation>על אודות</translation>
     </message>
     <message>
         <location filename="../about.ui" line="37"/>
@@ -19,13 +19,13 @@
         <location filename="../about.ui" line="60"/>
         <location filename="../../build/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
-        <translation type="unfinished"></translation>
+        <translation>חוויית שולחן העבודה</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
         <location filename="../../build/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="99"/>
@@ -144,31 +144,31 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../app-chooser-dialog.ui" line="14"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="150"/>
         <source>Choose an Application</source>
-        <translation type="unfinished"></translation>
+        <translation>נא לבחור יישום</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="151"/>
         <source>Installed Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>יישומים מותקנים</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="163"/>
         <source>Custom Command</source>
-        <translation type="unfinished"></translation>
+        <translation>פקודה מותאמת אישית</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="152"/>
         <source>Command line to execute:</source>
-        <translation type="unfinished"></translation>
+        <translation>שורת פקודה להפעלה:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="153"/>
         <source>Application name:</source>
-        <translation type="unfinished"></translation>
+        <translation>שם היישום:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
@@ -186,19 +186,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished"></translation>
+        <translation>להשאיר את חלון המסוף פתוח לאחר הפעלת הפקודה</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="162"/>
         <source>Execute in terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>להפעיל במדמה מסוף</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="164"/>
         <source>Set selected application as default action of this file type</source>
-        <translation type="unfinished"></translation>
+        <translation>הגדרת היישום הנבחר כפעולת בררת המחדל לסוג הקובץ הזה</translation>
     </message>
 </context>
 <context>
@@ -303,25 +303,25 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="75"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>צבע רקע:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="147"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="222"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>צבע טקסט:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="160"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="223"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>צבע הצללה:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="173"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="224"/>
         <source>Font:</source>
-        <translation type="unfinished"></translation>
+        <translation>גופן:</translation>
     </message>
     <message>
         <source>Select background color:</source>
@@ -386,37 +386,37 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../edit-bookmarks.ui" line="14"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="103"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished">עריכת סימניות</translation>
+        <translation>עריכת סימניות</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="42"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="106"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>שם</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="47"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="105"/>
         <source>Location</source>
-        <translation type="unfinished"></translation>
+        <translation>מיקום</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="67"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
-        <translation type="unfinished"></translation>
+        <translation>הוספת &amp;פריט</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
-        <translation type="unfinished"></translation>
+        <translation>ה&amp;סרת פריט</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="109"/>
         <source>Use drag and drop to reorder the items</source>
-        <translation type="unfinished"></translation>
+        <translation>גרירה תאפשר סידור של הפריטים מחדש</translation>
     </message>
 </context>
 <context>
@@ -425,31 +425,31 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../exec-file.ui" line="14"/>
         <location filename="../../build/src/ui_exec-file.h" line="114"/>
         <source>Execute file</source>
-        <translation type="unfinished"></translation>
+        <translation>הפעלת קובץ</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
         <location filename="../../build/src/ui_exec-file.h" line="116"/>
         <source>&amp;Open</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;פתיחה</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
         <location filename="../../build/src/ui_exec-file.h" line="117"/>
         <source>E&amp;xecute</source>
-        <translation type="unfinished"></translation>
+        <translation>הפ&amp;עלה</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
         <location filename="../../build/src/ui_exec-file.h" line="118"/>
         <source>Execute in &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>הפעלה במ&amp;סוף</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
         <location filename="../../build/src/ui_exec-file.h" line="119"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>ביטול</translation>
     </message>
 </context>
 <context>
@@ -458,31 +458,31 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../file-operation-dialog.ui" line="25"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="124"/>
         <source>Destination:</source>
-        <translation type="unfinished"></translation>
+        <translation>יעד:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="48"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="126"/>
         <source>Processing:</source>
-        <translation type="unfinished"></translation>
+        <translation>בעיבוד:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="61"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="127"/>
         <source>Preparing...</source>
-        <translation type="unfinished"></translation>
+        <translation>בהכנות…</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="68"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="128"/>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>תהליך</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="88"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="129"/>
         <source>Time remaining:</source>
-        <translation type="unfinished"></translation>
+        <translation>זמן שנותר:</translation>
     </message>
 </context>
 <context>
@@ -491,7 +491,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../file-props.ui" line="20"/>
         <location filename="../../build/src/ui_file-props.h" line="362"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>מידע</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
@@ -503,85 +503,85 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../file-props.ui" line="133"/>
         <location filename="../../build/src/ui_file-props.h" line="365"/>
         <source>General</source>
-        <translation type="unfinished">כללי</translation>
+        <translation>כללי</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="139"/>
         <location filename="../../build/src/ui_file-props.h" line="366"/>
         <source>File type:</source>
-        <translation type="unfinished"></translation>
+        <translation>סוג קובץ:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="162"/>
         <location filename="../../build/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
-        <translation type="unfinished"></translation>
+        <translation>גודל קובץ:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
         <location filename="../../build/src/ui_file-props.h" line="370"/>
         <source>On-disk size:</source>
-        <translation type="unfinished"></translation>
+        <translation>גודל בכונן:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="208"/>
         <location filename="../../build/src/ui_file-props.h" line="372"/>
         <source>Location:</source>
-        <translation type="unfinished"></translation>
+        <translation>מיקום:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
         <location filename="../../build/src/ui_file-props.h" line="374"/>
         <source>Link target:</source>
-        <translation type="unfinished"></translation>
+        <translation>יעד קישור:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="260"/>
         <location filename="../../build/src/ui_file-props.h" line="376"/>
         <source>Last modified:</source>
-        <translation type="unfinished"></translation>
+        <translation>שינוי אחרון:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="283"/>
         <location filename="../../build/src/ui_file-props.h" line="378"/>
         <source>Last accessed:</source>
-        <translation type="unfinished"></translation>
+        <translation>גישה אחרונה:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="317"/>
         <location filename="../../build/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחה עם</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
         <location filename="../../build/src/ui_file-props.h" line="381"/>
         <source>Mime type:</source>
-        <translation type="unfinished"></translation>
+        <translation>סוג Mime:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="346"/>
         <location filename="../../build/src/ui_file-props.h" line="383"/>
         <source>Open With:</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחה עם:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="380"/>
         <location filename="../../build/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
-        <translation type="unfinished"></translation>
+        <translation>בקרת גישה</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="423"/>
         <location filename="../../build/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
-        <translation type="unfinished"></translation>
+        <translation>כולם</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="440"/>
         <location filename="../../build/src/ui_file-props.h" line="386"/>
         <source>Make the file executable</source>
-        <translation type="unfinished"></translation>
+        <translation>הפיכת הקובץ לבר הפעלה</translation>
     </message>
 </context>
 <context>
@@ -613,7 +613,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Launch desktop manager (deprecated)</source>
-        <translation type="unfinished"></translation>
+        <translation>הפעלת מנהל שולחן העבודה (לא בשימוש עוד)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="201"/>
@@ -711,7 +711,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Transparent</source>
-        <translation type="unfinished"></translation>
+        <translation>שקוף</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
@@ -754,7 +754,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopwindow.cpp" line="527"/>
         <source>Version: %1</source>
-        <translation type="unfinished">גרסה: %1</translation>
+        <translation>גרסה: %1</translation>
     </message>
 </context>
 <context>
@@ -762,17 +762,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../gotofolderwindow.cpp" line="47"/>
         <source>Go</source>
-        <translation type="unfinished">לגשת אל</translation>
+        <translation>לגשת אל</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="48"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>ביטול</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="59"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>מעבר לתיקייה</translation>
     </message>
 </context>
 <context>
@@ -848,6 +848,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>
             <numerusform>פריט אחד</numerusform>
             <numerusform>שני פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -856,14 +858,18 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
             <numerusform> (שניים מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="428"/>
         <source>%1 item(s) selected</source>
-        <translation type="unfinished">
+        <translation>
+            <numerusform>פריט נבחר</numerusform>
+            <numerusform>שני פריטים נבחרו</numerusform>
             <numerusform>%1 פריטים נבחרו</numerusform>
-            <numerusform></numerusform>
+            <numerusform>%1 פריטים נבחרו</numerusform>
         </translation>
     </message>
 </context>
@@ -889,140 +895,140 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>איתור קבצים</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>שם/מיקום</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>תבניות שם קובץ</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="unfinished"></translation>
+        <translation>תבנית:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>ללא תלות ברישיות</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
         <location filename="../file-search.ui" line="228"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>להשתמש בביטוי רגולרי</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation type="unfinished"></translation>
+        <translation>מקומות לחיפוש</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>הוספה</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="88"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>הסרה</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="117"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>חיפוש בתת־תיקיות</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="124"/>
         <source>Search hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>חיפוש בקבצים הנסתרים</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="135"/>
         <location filename="../file-search.ui" line="141"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>סוג קובץ</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="147"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>לחפש רק אחר קבצים מהסוגים הבאים:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="154"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>קובצי טקסט</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="161"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>קובצי תמונה</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="168"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>קובצי שמע</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="175"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>קובצי וידאו</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="182"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>מסמכים</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="206"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>תוכן</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="212"/>
         <source>File contains</source>
-        <translation type="unfinished"></translation>
+        <translation>הקובץ מכיל</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="252"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>מידע</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="258"/>
         <source>File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>גודל הקובץ</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>גדול מ־:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation>קטן מ־:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="317"/>
         <source>Last Modified Time</source>
-        <translation type="unfinished"></translation>
+        <translation>מועד השינוי האחרון</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="323"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>לפני:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="340"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation>אחרי:</translation>
     </message>
 </context>
 <context>
@@ -1030,7 +1036,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>התאמה אישית</translation>
     </message>
 </context>
 <context>
@@ -1038,7 +1044,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../appchooserdialog.cpp" line="262"/>
         <source>Select an application to open &quot;%1&quot; files</source>
-        <translation type="unfinished"></translation>
+        <translation>נא לבחור יישום לפתיחת קובצי „%1”</translation>
     </message>
 </context>
 <context>
@@ -1046,12 +1052,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>תיקייה</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>קובץ ריק</translation>
     </message>
 </context>
 <context>
@@ -1059,12 +1065,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../dirtreemodelitem.cpp" line="77"/>
         <source>Loading...</source>
-        <translation type="unfinished"></translation>
+        <translation>בטעינה…</translation>
     </message>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="208"/>
         <source>&lt;No sub folders&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;אין תת־תיקיות&gt;</translation>
     </message>
 </context>
 <context>
@@ -1072,12 +1078,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../dirtreeview.cpp" line="214"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished">פתיחה בחלון ח&amp;דש</translation>
+        <translation>פתיחה בחלון ח&amp;דש</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="219"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished">פתיחה במסו&amp;ף</translation>
+        <translation>פתיחה במ&amp;סוף</translation>
     </message>
 </context>
 <context>
@@ -1085,22 +1091,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../dndactionmenu.cpp" line="26"/>
         <source>Copy here</source>
-        <translation type="unfinished"></translation>
+        <translation>העתקה לכאן</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="27"/>
         <source>Move here</source>
-        <translation type="unfinished"></translation>
+        <translation>העברה לכאן</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="28"/>
         <source>Create symlink here</source>
-        <translation type="unfinished"></translation>
+        <translation>יצירת קישור סמלי כאן</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="30"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>ביטול</translation>
     </message>
 </context>
 <context>
@@ -1108,7 +1114,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../editbookmarksdialog.cpp" line="96"/>
         <source>New bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>סימנייה חדשה</translation>
     </message>
 </context>
 <context>
@@ -1175,7 +1181,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="192"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished">&amp;העברה לאשפה</translation>
+        <translation>העברה ל&amp;אשפה</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="196"/>
@@ -1203,7 +1209,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperation.cpp" line="220"/>
         <source>Error</source>
-        <translation type="unfinished">שגיאה</translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="221"/>
@@ -1303,7 +1309,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="139"/>
         <source>Error</source>
-        <translation type="unfinished">שגיאה</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
@@ -1359,7 +1365,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>Error</source>
-        <translation type="unfinished">שגיאה</translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
@@ -1382,12 +1388,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="44"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished">ה&amp;דבקה</translation>
+        <translation>ה&amp;דבקה</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="50"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished">לבחור ה&amp;כול</translation>
+        <translation>לבחור ה&amp;כול</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="54"/>
@@ -1509,7 +1515,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesmodel.cpp" line="40"/>
         <source>Devices</source>
-        <translation type="unfinished">התקנים</translation>
+        <translation>התקנים</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="82"/>
@@ -1519,17 +1525,17 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesmodel.cpp" line="90"/>
         <source>Desktop</source>
-        <translation type="unfinished">שולחן עבודה</translation>
+        <translation>שולחן עבודה</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="99"/>
         <source>Computer</source>
-        <translation type="unfinished">מחשב</translation>
+        <translation>מחשב</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="126"/>
         <source>Network</source>
-        <translation type="unfinished">רשת</translation>
+        <translation>רשת</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="137"/>
@@ -1621,7 +1627,7 @@ Modified: %3</source>
     <message>
         <location filename="../renamedialog.cpp" line="91"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished">&amp;שינוי שם</translation>
+        <translation>&amp;שינוי שם</translation>
     </message>
 </context>
 <context>
@@ -1939,7 +1945,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="639"/>
         <location filename="../../build/src/ui_main-win.h" line="702"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished">&amp;העברה לאשפה</translation>
+        <translation>העברה ל&amp;אשפה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
@@ -2833,7 +2839,7 @@ Modified: %3</source>
         <location filename="../utilities.cpp" line="209"/>
         <location filename="../utilities.cpp" line="285"/>
         <source>Error</source>
-        <translation type="unfinished">שגיאה</translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="127"/>
