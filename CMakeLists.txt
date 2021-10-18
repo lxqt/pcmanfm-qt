@@ -49,7 +49,7 @@ include(LXQtTranslateDesktop)
 add_definitions(-DQT_NO_KEYWORDS)
 
 # Do not put qDebug() into Release builds
-if(NOT CMAKE_BUILD_TYPE_LOWER MATCHES debug)
+if(NOT CMAKE_BUILD_TYPE STREQUAL Debug)
     add_definitions(-DQT_NO_DEBUG_OUTPUT)
 endif()
 
