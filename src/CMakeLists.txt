@@ -111,11 +111,17 @@ set(filer_UIS
 
 qt5_wrap_ui(filer_UIS_H ${filer_UIS})
 
-# add translation for Filer
-lxqt_translate_ts(QM_FILES
-    UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
-    SOURCES ${filer_SRCS} ${filer_UIS_H}
-)
+# Create TS_FILES variable that contains all .ts files
+file(GLOB TS_FILES translations/*.ts)
+
+# Create/update .ts files from the source code
+qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
+# message(FATAL_ERROR "${QM_FILES}")
+
+# Compile .ts to .qm
+qt5_add_translation(TRANSLATION_QM ${TS_FILES})
+
+add_custom_target(translations ALL DEPENDS ${QM_FILES})
 
 # translate desktop entry files for Filer and desktop preferences
 lxqt_translate_desktop(DESKTOP_FILES
