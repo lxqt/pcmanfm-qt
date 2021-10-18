@@ -121,7 +121,9 @@ qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 # Compile .ts to .qm
 qt5_add_translation(TRANSLATION_QM ${TS_FILES})
 
-add_custom_target(translations ALL DEPENDS ${QM_FILES})
+add_custom_target(translations_update DEPENDS ${QM_FILES})
+
+add_custom_target(translations DEPENDS ${TRANSLATION_QM})
 
 # translate desktop entry files for Filer and desktop preferences
 lxqt_translate_desktop(DESKTOP_FILES
