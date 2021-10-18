@@ -48,6 +48,11 @@ include(LXQtTranslateDesktop)
 
 add_definitions(-DQT_NO_KEYWORDS)
 
+# Do not put qDebug() into Release builds
+if(NOT CMAKE_BUILD_TYPE_LOWER MATCHES debug)
+    add_definitions(-DQT_NO_DEBUG_OUTPUT)
+endif()
+
 if (CMAKE_COMPILER_IS_GNUCXX)
     # set visibility to hidden to hide symbols, unless they're exported manually in the code
     set(CMAKE_CXX_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions ${CMAKE_CXX_FLAGS}")
