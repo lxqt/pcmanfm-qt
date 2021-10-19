@@ -737,7 +737,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="337"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;A prepaus</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="346"/>
@@ -752,7 +752,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="352"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="360"/>
@@ -1284,7 +1284,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fichièr</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
@@ -1294,13 +1294,13 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="92"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ajuda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="99"/>
         <location filename="../main-win.ui" line="123"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="103"/>
@@ -1310,7 +1310,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="179"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Edicion</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="197"/>
@@ -1325,7 +1325,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="246"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra d’aisinas principala</translation>
     </message>
 </context>
 <context>
