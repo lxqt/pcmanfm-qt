@@ -1720,7 +1720,7 @@ void MainWindow::on_actionCut_triggered() {
 }
 
 void MainWindow::on_actionPaste_triggered() {
-    pasteFilesFromClipboard(currentPage()->path(), this);
+    pasteFilesFromClipboard(currentPage()->path());
 }
 
 void MainWindow::on_actionDelete_triggered() {
