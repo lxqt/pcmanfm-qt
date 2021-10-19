@@ -415,7 +415,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>すべてのアイテムをその位置に固定する</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -900,17 +900,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>ここから再帰的に設定を保持(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>継承された設定の元に移動(&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>存在しないフォルダーの設定を削除(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -955,7 +955,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>このフォルダーの設定を保存(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1020,7 +1020,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>隠しショートカット(&amp;S)</translation>
+        <translation>ショートカットを隠す(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
@@ -1127,7 +1127,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished">カスタマイズ表示設定(&amp;C)</translation>
+        <translation>表示設定のカスタマイズ(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="280"/>
@@ -1262,7 +1262,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="246"/>
         <source>Main Toolbar</source>
-        <translation>メインツールバー</translation>
+        <translation>メイン ツールバー</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
@@ -1687,7 +1687,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1895"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">カスタマイズ表示設定</translation>
+        <translation>表示設定のカスタマイズ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2120"/>
@@ -1703,13 +1703,14 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2230"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>フォルダー設定の消去</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>存在しないフォルダーの設定を削除しますか？
+それらのフォルダーが再度作成される場合に便利です。</translation>
     </message>
 </context>
 <context>
