@@ -415,7 +415,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Zamknúť poradie ikon na pracovnej ploche</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -445,7 +445,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../desktop-preferences.ui" line="400"/>
         <source>Wallpaper image folder:</source>
-        <translation>Zložka obrázku na pozadí:</translation>
+        <translation>Priečinok obrázka na pozadí:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="407"/>
@@ -495,7 +495,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../desktop-preferences.ui" line="535"/>
         <source>Home</source>
-        <translation>Domovská zložka</translation>
+        <translation>Domovský priečinok</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="546"/>
@@ -533,7 +533,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation>Akcia</translation>
+        <translation>Činnosť</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
@@ -940,17 +940,17 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Použiť tieto nastavenia &amp;rekurzívne od tohoto priečinka</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Choď na priečinok so zdrojovými nastaveniami</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Odstráň nastavenia pre neexistujúce priečinky</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -985,7 +985,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="733"/>
         <source>&amp;Folder</source>
-        <translation>&amp;Zložka</translation>
+        <translation>&amp;Priečinok</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="745"/>
@@ -995,7 +995,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ulož nastavenia pre &amp;tento priečinok</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1060,7 +1060,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Skryté &amp;klávesové skratky</translation>
+        <translation>Skryté &amp;Skratky</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
@@ -1167,7 +1167,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vlastné nastavenie zobrazenia</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
@@ -1343,7 +1343,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="246"/>
         <source>Main Toolbar</source>
-        <translation>Hlavná lišta nástrojov</translation>
+        <translation>Hlavná ponuka nástrojov</translation>
     </message>
 </context>
 <context>
@@ -1689,7 +1689,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../mainwindow.cpp" line="1895"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Vlastné nastavenie zobrazenia</translation>
+        <translation>Vlastné nastavenie zobrazenia</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2120"/>
@@ -1705,13 +1705,14 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../mainwindow.cpp" line="2230"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstrániť nastavenia priečinkov</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2231"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prajete si odstrániť nastavenia pre neexistujúce priečinky?
+Ak by ste vytvorili priečinky nanovo, riadili by sa súčasnými nastaveniami.</translation>
     </message>
 </context>
 <context>

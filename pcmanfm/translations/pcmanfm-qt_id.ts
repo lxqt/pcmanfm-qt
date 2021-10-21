@@ -565,7 +565,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Fokus ke entri path</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
