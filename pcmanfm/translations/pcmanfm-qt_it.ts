@@ -1112,7 +1112,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation>Impostazioni di</translation>
+        <translation>Impostazioni visualizzazione &amp;personalizzata</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="280"/>
