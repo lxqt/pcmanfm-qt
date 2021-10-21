@@ -124,6 +124,7 @@ Settings::Settings():
     showFullNames_(true),
     shadowHidden_(true),
     noItemTooltip_(false),
+    scrollPerPixel_(true),
     bigIconSize_(48),
     smallIconSize_(24),
     sidePaneIconSize_(24),
@@ -290,6 +291,7 @@ bool Settings::loadFile(QString filePath) {
     showFullNames_ = settings.value(QStringLiteral("ShowFullNames"), true).toBool();
     shadowHidden_ = settings.value(QStringLiteral("ShadowHidden"), true).toBool();
     noItemTooltip_ = settings.value(QStringLiteral("NoItemTooltip"), false).toBool();
+    scrollPerPixel_ = settings.value(QStringLiteral("ScrollPerPixel"), true).toBool();
 
     // override config in libfm's FmConfig
     bigIconSize_ = toIconSize(settings.value(QStringLiteral("BigIconSize"), 48).toInt(), Big);
@@ -430,6 +432,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("ShowFullNames"), showFullNames_);
     settings.setValue(QStringLiteral("ShadowHidden"), shadowHidden_);
     settings.setValue(QStringLiteral("NoItemTooltip"), noItemTooltip_);
+    settings.setValue(QStringLiteral("ScrollPerPixel"), scrollPerPixel_);
 
     // override config in libfm's FmConfig
     settings.setValue(QStringLiteral("BigIconSize"), bigIconSize_);

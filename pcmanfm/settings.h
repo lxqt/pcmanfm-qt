@@ -886,6 +886,14 @@ public:
         noItemTooltip_ = noTooltip;
     }
 
+    bool scrollPerPixel() const {
+        return scrollPerPixel_;
+    }
+
+    void setScrollPerPixel(bool perPixel) {
+        scrollPerPixel_ = perPixel;
+    }
+
     bool onlyUserTemplates() const {
         return onlyUserTemplates_;
     }
@@ -1087,6 +1095,7 @@ private:
     bool showFullNames_;
     bool shadowHidden_;
     bool noItemTooltip_;
+    bool scrollPerPixel_;
 
     QSet<QString> hiddenPlaces_;
 

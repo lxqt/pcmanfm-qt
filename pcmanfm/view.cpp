@@ -162,6 +162,8 @@ void View::updateFromSettings(Settings& settings) {
 
     setCtrlRightClick(settings.ctrlRightClick());
 
+    setScrollPerPixel(settings.scrollPerPixel());
+
     Fm::ProxyFolderModel* proxyModel = model();
     if(proxyModel) {
         proxyModel->setShowThumbnails(settings.showThumbnails());

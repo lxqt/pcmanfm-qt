@@ -168,6 +168,7 @@ void PreferencesDialog::initDisplayPage(Settings& settings) {
     ui.showFullNames->setChecked(settings.showFullNames());
     ui.shadowHidden->setChecked(settings.shadowHidden());
     ui.noItemTooltip->setChecked(settings.noItemTooltip());
+    ui.noScrollPerPixel->setChecked(!settings.scrollPerPixel());
 
     // app restart warning
     connect(ui.showFullNames, &QAbstractButton::toggled, [this, &settings] (bool checked) {
@@ -315,6 +316,7 @@ void PreferencesDialog::applyDisplayPage(Settings& settings) {
     settings.setShowFullNames(ui.showFullNames->isChecked());
     settings.setShadowHidden(ui.shadowHidden->isChecked());
     settings.setNoItemTooltip(ui.noItemTooltip->isChecked());
+    settings.setScrollPerPixel(!ui.noScrollPerPixel->isChecked());
     settings.setFolderViewCellMargins(QSize(ui.hMargin->value(), ui.vMargin->value()));
 }
 
