@@ -1661,55 +1661,55 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <translation>Instanz mit Administratorrechten</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="719"/>
+        <location filename="../mainwindow.cpp" line="724"/>
         <source>Hide menu bar</source>
         <translation>Menüleiste ausblenden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="720"/>
+        <location filename="../mainwindow.cpp" line="725"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Dadurch wird die Menüleiste komplett ausgeblendet, mit Strg+M können Sie sie wieder einblenden.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1092"/>
+        <location filename="../mainwindow.cpp" line="1097"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2052"/>
+        <location filename="../mainwindow.cpp" line="2057"/>
         <source>&amp;Move to Trash</source>
         <translation>In den Papierkorb &amp;verschieben</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2052"/>
+        <location filename="../mainwindow.cpp" line="2057"/>
         <source>&amp;Delete</source>
         <translation>&amp;Löschen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1895"/>
+        <location filename="../mainwindow.cpp" line="1900"/>
         <source>Customized View Settings</source>
         <translation type="unfinished">Personalisierte Ansicht einstellen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2120"/>
-        <location filename="../mainwindow.cpp" line="2128"/>
+        <location filename="../mainwindow.cpp" line="2125"/>
+        <location filename="../mainwindow.cpp" line="2133"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2128"/>
+        <location filename="../mainwindow.cpp" line="2133"/>
         <source>Switch user command is not set.</source>
         <translation>Befehl, um den Benutzer zu wechseln, ist nicht eingestellt.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2230"/>
+        <location filename="../mainwindow.cpp" line="2235"/>
         <source>Cleaning Folder Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2231"/>
+        <location filename="../mainwindow.cpp" line="2236"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation type="unfinished"></translation>
@@ -1718,22 +1718,22 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="198"/>
+        <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Icon View</source>
         <translation>Symbolansicht</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="199"/>
+        <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Compact View</source>
         <translation>Kompaktansicht</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="200"/>
+        <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Thumbnail View</source>
         <translation>Miniaturansicht</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="201"/>
+        <location filename="../preferencesdialog.cpp" line="202"/>
         <source>Detailed List View</source>
         <translation>Detaillierte Listenansicht</translation>
     </message>
@@ -1832,7 +1832,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="598"/>
+        <location filename="../preferences.ui" line="605"/>
         <source>Thumbnail</source>
         <translation>Vorschaubild</translation>
     </message>
@@ -1882,32 +1882,32 @@ They might be useful if those folders are created again.</source>
         <translation>Symbolthema:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="502"/>
+        <location filename="../preferences.ui" line="509"/>
         <source>Window</source>
         <translation>Fenster</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="543"/>
+        <location filename="../preferences.ui" line="550"/>
         <source>Default width of new windows:</source>
         <translation>Standardbreite neuer Fenster:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="557"/>
+        <location filename="../preferences.ui" line="564"/>
         <source>Default height of new windows:</source>
         <translation>Standardhöhe neuer Fenster:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="515"/>
+        <location filename="../preferences.ui" line="522"/>
         <source>Always show the tab bar</source>
         <translation>Reiterleiste immer anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="522"/>
+        <location filename="../preferences.ui" line="529"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>&apos;Schließen&apos;-Knopf an Tabs zeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="536"/>
+        <location filename="../preferences.ui" line="543"/>
         <source>Remember the size of the last closed window</source>
         <translation>Größe des zuletzt geschlossenen Fensters merken</translation>
     </message>
@@ -1947,12 +1947,12 @@ They might be useful if those folders are created again.</source>
         <translation>Gelöschte Dateien in den &quot;Papierkorb&quot; verschieben anstatt sie von der Festplatte zu löschen.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="607"/>
+        <location filename="../preferences.ui" line="614"/>
         <source>Show thumbnails of files</source>
         <translation>Vorschaubilder von Dateien anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="614"/>
+        <location filename="../preferences.ui" line="621"/>
         <source>Only show thumbnails for local files</source>
         <translation>Vorschaubilder nur für lokale Dateien anzeigen</translation>
     </message>
@@ -2068,58 +2068,63 @@ They might be useful if those folders are created again.</source>
         <translation>Symbole versteckter Dateien schattiert anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="415"/>
+        <location filename="../preferences.ui" line="399"/>
+        <source>Disable smooth scrolling in list and compact modes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="422"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Minimaler Rand der Objekte in Symbolansicht:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="422"/>
+        <location filename="../preferences.ui" line="429"/>
         <source>3 px by default.</source>
         <translation>Standardwert 3 px.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="425"/>
-        <location filename="../preferences.ui" line="449"/>
+        <location filename="../preferences.ui" line="432"/>
+        <location filename="../preferences.ui" line="456"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="438"/>
+        <location filename="../preferences.ui" line="445"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="445"/>
+        <location filename="../preferences.ui" line="452"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>Standardwert 3 px.
 Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="462"/>
+        <location filename="../preferences.ui" line="469"/>
         <source>Lock</source>
         <translation>Sperren</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="511"/>
+        <location filename="../preferences.ui" line="518"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Bei Deaktivierung wird die Leiste der Reiter (Tabs) nur angezeigt,
 wenn mehr als einer geöffnet ist.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="529"/>
+        <location filename="../preferences.ui" line="536"/>
         <source>Switch to newly opened tab</source>
         <translation>Zum neuen Tab wechseln</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="571"/>
+        <location filename="../preferences.ui" line="578"/>
         <source>Reopen last window tabs in a new window</source>
         <translation>Zuletzt aktiven Tab in neuem Fenster öffnen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="621"/>
-        <location filename="../preferences.ui" line="633"/>
+        <location filename="../preferences.ui" line="628"/>
+        <location filename="../preferences.ui" line="640"/>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
@@ -2128,19 +2133,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
 Es werden die meisten Bilddateien unterstützt, bis 4MiB Dateigröße.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="626"/>
+        <location filename="../preferences.ui" line="633"/>
         <source>Image size limit for built-in thumbnailer:</source>
         <translation>Größenbegrenzung für eingebaute Miniaturansicht:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="638"/>
-        <location filename="../preferences.ui" line="674"/>
+        <location filename="../preferences.ui" line="645"/>
+        <location filename="../preferences.ui" line="681"/>
         <source> MiB</source>
         <translation> MiB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="654"/>
-        <location filename="../preferences.ui" line="666"/>
+        <location filename="../preferences.ui" line="661"/>
+        <location filename="../preferences.ui" line="673"/>
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
@@ -2149,22 +2154,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
 Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="659"/>
+        <location filename="../preferences.ui" line="666"/>
         <source>File size limit for external thumbnailers:</source>
         <translation>Größenbegrenzung für externe Miniaturansicht:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="671"/>
+        <location filename="../preferences.ui" line="678"/>
         <source>No limit</source>
         <translation>keine Begrenzung</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="809"/>
+        <location filename="../preferences.ui" line="816"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>Beispiele:&lt;br&gt;Für das Terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Zum Wechseln des Benutzers: &lt;i&gt;lxsudo %s&lt;/i&gt; oder &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; ist der Befehl, den Sie im Terminal oder mit su ausführen möchten.&lt;br&gt; Wichtig: Bitte nutzen Sie lxsudo, da sudo allein die Berechtigungen der Konfigurationsdatei zerstören wird.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="900"/>
+        <location filename="../preferences.ui" line="907"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Damit die Änderungen wirksam werden, ist ein Neustart der Anwendung erforderlich.</translation>
     </message>
@@ -2184,82 +2189,82 @@ Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
         <translation>Keine Kurzinfo zu Dateien anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="604"/>
+        <location filename="../preferences.ui" line="611"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Benötigt ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="710"/>
+        <location filename="../preferences.ui" line="717"/>
         <source>Auto Mount</source>
         <translation>Automatisches Einbinden</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="716"/>
+        <location filename="../preferences.ui" line="723"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Datenträger bei Programmstart automatisch einhängen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="723"/>
+        <location filename="../preferences.ui" line="730"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Wechseldatenträger automatisch beim Einlegen einbinden</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="730"/>
+        <location filename="../preferences.ui" line="737"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Verfügbare Optionen für Wechseldatenträger beim Einlegen anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="740"/>
+        <location filename="../preferences.ui" line="747"/>
         <source>When removable medium unmounted:</source>
         <translation>Beim Aushängen eines Wechseldatenträgers:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="746"/>
+        <location filename="../preferences.ui" line="753"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Registerkarten des Wechseldatenträgers &amp;schließen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="753"/>
+        <location filename="../preferences.ui" line="760"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Registerkarten des Wechseldatenträgers zum Nutzerverzeichnis &amp;wechseln</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="796"/>
+        <location filename="../preferences.ui" line="803"/>
         <source>Switch &amp;user command:</source>
         <translation>Befehl zum N&amp;utzerwechsel:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="822"/>
+        <location filename="../preferences.ui" line="829"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>Archivverwal&amp;tung:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="845"/>
+        <location filename="../preferences.ui" line="852"/>
         <source>Templates</source>
         <translation>Vorlagen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="851"/>
+        <location filename="../preferences.ui" line="858"/>
         <source>Show only user defined templates in menu</source>
         <translation>Ausschließlich benutzerdefinierte im Menü anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="858"/>
+        <location filename="../preferences.ui" line="865"/>
         <source>Show only one template for each MIME type</source>
         <translation>Nur eine Vorlage pro MIME-Typ anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="865"/>
+        <location filename="../preferences.ui" line="872"/>
         <source>Run default application after creation from template</source>
         <translation>Aus Vorlagen erstellte Dokumente in Standardanwendung öffnen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="780"/>
+        <location filename="../preferences.ui" line="787"/>
         <source>Programs</source>
         <translation>Programme</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="789"/>
+        <location filename="../preferences.ui" line="796"/>
         <source>Terminal emulator:</source>
         <translation>Terminalemulator:</translation>
     </message>

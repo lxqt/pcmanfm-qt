@@ -1655,55 +1655,55 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>您正在使用 Root 用户实例</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="719"/>
+        <location filename="../mainwindow.cpp" line="724"/>
         <source>Hide menu bar</source>
         <translation>隐藏菜单栏</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="720"/>
+        <location filename="../mainwindow.cpp" line="725"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>这将完全隐藏菜单栏，请使用 Ctrl+M 以恢复显示。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1092"/>
+        <location filename="../mainwindow.cpp" line="1097"/>
         <source>Version: %1</source>
         <translation>版本: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2052"/>
+        <location filename="../mainwindow.cpp" line="2057"/>
         <source>&amp;Move to Trash</source>
         <translation>移至回收站(&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2052"/>
+        <location filename="../mainwindow.cpp" line="2057"/>
         <source>&amp;Delete</source>
         <translation>删除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1895"/>
+        <location filename="../mainwindow.cpp" line="1900"/>
         <source>Customized View Settings</source>
         <translation>自定义的视图设置</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2120"/>
-        <location filename="../mainwindow.cpp" line="2128"/>
+        <location filename="../mainwindow.cpp" line="2125"/>
+        <location filename="../mainwindow.cpp" line="2133"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2128"/>
+        <location filename="../mainwindow.cpp" line="2133"/>
         <source>Switch user command is not set.</source>
         <translation>切换用户命令尚未设置。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2230"/>
+        <location filename="../mainwindow.cpp" line="2235"/>
         <source>Cleaning Folder Settings</source>
         <translation>清除文件夹设置</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2231"/>
+        <location filename="../mainwindow.cpp" line="2236"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>是否要删除不存在的文件夹的设置? 如果再次创建这些文件夹，它们可能会很有用。</translation>
@@ -1712,22 +1712,22 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="198"/>
+        <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Icon View</source>
         <translation>图标视图</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="199"/>
+        <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Compact View</source>
         <translation>列表视图</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="200"/>
+        <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Thumbnail View</source>
         <translation>缩略图视图</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="201"/>
+        <location filename="../preferencesdialog.cpp" line="202"/>
         <source>Detailed List View</source>
         <translation>详细信息视图</translation>
     </message>
@@ -1822,7 +1822,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="598"/>
+        <location filename="../preferences.ui" line="605"/>
         <source>Thumbnail</source>
         <translation>缩略图</translation>
     </message>
@@ -1872,32 +1872,32 @@ They might be useful if those folders are created again.</source>
         <translation>图标主题:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="502"/>
+        <location filename="../preferences.ui" line="509"/>
         <source>Window</source>
         <translation>窗口</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="515"/>
+        <location filename="../preferences.ui" line="522"/>
         <source>Always show the tab bar</source>
         <translation>总是显示标签栏</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="522"/>
+        <location filename="../preferences.ui" line="529"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>在标签上显示“关闭”按钮	</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="536"/>
+        <location filename="../preferences.ui" line="543"/>
         <source>Remember the size of the last closed window</source>
         <translation>记住最后关闭的窗口的大小</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="543"/>
+        <location filename="../preferences.ui" line="550"/>
         <source>Default width of new windows:</source>
         <translation>新窗口的默认宽度:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="557"/>
+        <location filename="../preferences.ui" line="564"/>
         <source>Default height of new windows:</source>
         <translation>新窗口的默认高度:</translation>
     </message>
@@ -1937,12 +1937,12 @@ They might be useful if those folders are created again.</source>
         <translation>将要删除的文件移至“回收站”，而不直接从磁盘中删除。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="607"/>
+        <location filename="../preferences.ui" line="614"/>
         <source>Show thumbnails of files</source>
         <translation>显示文件缩略图</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="614"/>
+        <location filename="../preferences.ui" line="621"/>
         <source>Only show thumbnails for local files</source>
         <translation>仅显示本地文件的缩略图</translation>
     </message>
@@ -2043,57 +2043,62 @@ They might be useful if those folders are created again.</source>
         <translation>显示投影的隐藏文件的图标</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="415"/>
+        <location filename="../preferences.ui" line="399"/>
+        <source>Disable smooth scrolling in list and compact modes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="422"/>
         <source>Minimum item margins in icon view:</source>
         <translation>图标视图最小项目外边距:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="422"/>
+        <location filename="../preferences.ui" line="429"/>
         <source>3 px by default.</source>
         <translation>默认为3px。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="425"/>
-        <location filename="../preferences.ui" line="449"/>
+        <location filename="../preferences.ui" line="432"/>
+        <location filename="../preferences.ui" line="456"/>
         <source> px</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="438"/>
+        <location filename="../preferences.ui" line="445"/>
         <source>x</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="445"/>
+        <location filename="../preferences.ui" line="452"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>默认为1px。
 会保留三行文字高度的空间。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="462"/>
+        <location filename="../preferences.ui" line="469"/>
         <source>Lock</source>
         <translation>锁定</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="511"/>
+        <location filename="../preferences.ui" line="518"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>如不勾选，则标签栏仅会在有多于一个标签页时显示。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="529"/>
+        <location filename="../preferences.ui" line="536"/>
         <source>Switch to newly opened tab</source>
         <translation>切换到新打开的标签页</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="571"/>
+        <location filename="../preferences.ui" line="578"/>
         <source>Reopen last window tabs in a new window</source>
         <translation>在新窗口中重新打开最后一个标签页</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="621"/>
-        <location filename="../preferences.ui" line="633"/>
+        <location filename="../preferences.ui" line="628"/>
+        <location filename="../preferences.ui" line="640"/>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
@@ -2102,19 +2107,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
 通常，支持大多数图像类型。默认大小限制为4 MiB。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="626"/>
+        <location filename="../preferences.ui" line="633"/>
         <source>Image size limit for built-in thumbnailer:</source>
         <translation>内置缩略图的图像大小限制：</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="638"/>
-        <location filename="../preferences.ui" line="674"/>
+        <location filename="../preferences.ui" line="645"/>
+        <location filename="../preferences.ui" line="681"/>
         <source> MiB</source>
         <translation> 兆</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="654"/>
-        <location filename="../preferences.ui" line="666"/>
+        <location filename="../preferences.ui" line="661"/>
+        <location filename="../preferences.ui" line="673"/>
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
@@ -2123,22 +2128,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
 值-1表示文件大小没有限制（默认值）。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="659"/>
+        <location filename="../preferences.ui" line="666"/>
         <source>File size limit for external thumbnailers:</source>
         <translation>外部缩略图的文件大小限制：</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="671"/>
+        <location filename="../preferences.ui" line="678"/>
         <source>No limit</source>
         <translation>不限制</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="809"/>
+        <location filename="../preferences.ui" line="816"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>示例：&lt;br&gt;终端执行：&lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;切换用户执行: &lt;i&gt;lxsudo %s&lt;/i&gt; 或 &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; 是你想要用终端或者 su 运行的命令。&lt;br&gt; 重要提醒：请使用 lxsudo，仅使用 sudo 会破坏设置文件的权限。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="900"/>
+        <location filename="../preferences.ui" line="907"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>应用程序需要重新启动以使更改生效。</translation>
     </message>
@@ -2173,82 +2178,82 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>不要显示文件信息提示</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="604"/>
+        <location filename="../preferences.ui" line="611"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>需要 ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="710"/>
+        <location filename="../preferences.ui" line="717"/>
         <source>Auto Mount</source>
         <translation>自动挂载</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="716"/>
+        <location filename="../preferences.ui" line="723"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>程序启动时自动挂载可挂载的卷</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="723"/>
+        <location filename="../preferences.ui" line="730"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>插入可移动媒体时自动挂载</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="730"/>
+        <location filename="../preferences.ui" line="737"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>在可移动媒体插入时显示可用选项</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="740"/>
+        <location filename="../preferences.ui" line="747"/>
         <source>When removable medium unmounted:</source>
         <translation>卸载可移动媒体时:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="746"/>
+        <location filename="../preferences.ui" line="753"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>关闭包含可移动媒体的标签页(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="753"/>
+        <location filename="../preferences.ui" line="760"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>将标签页内容更改为主文件夹(&amp;G)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="780"/>
+        <location filename="../preferences.ui" line="787"/>
         <source>Programs</source>
         <translation>程序</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="789"/>
+        <location filename="../preferences.ui" line="796"/>
         <source>Terminal emulator:</source>
         <translation>终端模拟器:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="796"/>
+        <location filename="../preferences.ui" line="803"/>
         <source>Switch &amp;user command:</source>
         <translation>切换用户命令(&amp;U):</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="822"/>
+        <location filename="../preferences.ui" line="829"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>默认压缩程序(&amp;T):</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="845"/>
+        <location filename="../preferences.ui" line="852"/>
         <source>Templates</source>
         <translation>模板</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="851"/>
+        <location filename="../preferences.ui" line="858"/>
         <source>Show only user defined templates in menu</source>
         <translation>仅在菜单中显示用户定义的模板</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="858"/>
+        <location filename="../preferences.ui" line="865"/>
         <source>Show only one template for each MIME type</source>
         <translation>仅为每个 MIME 类型显示一个模板</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="865"/>
+        <location filename="../preferences.ui" line="872"/>
         <source>Run default application after creation from template</source>
         <translation>创建文件模板后运行默认应用程序</translation>
     </message>

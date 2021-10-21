@@ -1656,55 +1656,55 @@ PCManFM-Qt에서 열립니다.</translation>
         <translation>루트 인스턴스</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="719"/>
+        <location filename="../mainwindow.cpp" line="724"/>
         <source>Hide menu bar</source>
         <translation>메뉴 모음 숨김</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="720"/>
+        <location filename="../mainwindow.cpp" line="725"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>이렇게하면 메뉴 표시줄이 완전히 숨겨지고, Ctrl + M을 사용하여 다시 표시합니다.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1092"/>
+        <location filename="../mainwindow.cpp" line="1097"/>
         <source>Version: %1</source>
         <translation>버전: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2052"/>
+        <location filename="../mainwindow.cpp" line="2057"/>
         <source>&amp;Move to Trash</source>
         <translation>휴지통으로 이동(&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2052"/>
+        <location filename="../mainwindow.cpp" line="2057"/>
         <source>&amp;Delete</source>
         <translation>삭제(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1895"/>
+        <location filename="../mainwindow.cpp" line="1900"/>
         <source>Customized View Settings</source>
         <translation>사용자 정의 보기 설정</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2120"/>
-        <location filename="../mainwindow.cpp" line="2128"/>
+        <location filename="../mainwindow.cpp" line="2125"/>
+        <location filename="../mainwindow.cpp" line="2133"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2128"/>
+        <location filename="../mainwindow.cpp" line="2133"/>
         <source>Switch user command is not set.</source>
         <translation>사용자 전환 명령이 설정되지 않았습니다.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2230"/>
+        <location filename="../mainwindow.cpp" line="2235"/>
         <source>Cleaning Folder Settings</source>
         <translation>폴더 설정 정리하기</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2231"/>
+        <location filename="../mainwindow.cpp" line="2236"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>존재하지 않는 폴더의 설정을 제거하시겠습니까?
@@ -1714,22 +1714,22 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="198"/>
+        <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Icon View</source>
         <translation>아이콘 보기</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="199"/>
+        <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Compact View</source>
         <translation>작은 아이콘으로 보기</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="200"/>
+        <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Thumbnail View</source>
         <translation>썸네일 보기</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="201"/>
+        <location filename="../preferencesdialog.cpp" line="202"/>
         <source>Detailed List View</source>
         <translation>자세한 목록 보기</translation>
     </message>
@@ -1824,7 +1824,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="598"/>
+        <location filename="../preferences.ui" line="605"/>
         <source>Thumbnail</source>
         <translation>썸네일</translation>
     </message>
@@ -1874,32 +1874,32 @@ They might be useful if those folders are created again.</source>
         <translation>아이콘 테마:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="502"/>
+        <location filename="../preferences.ui" line="509"/>
         <source>Window</source>
         <translation>창</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="515"/>
+        <location filename="../preferences.ui" line="522"/>
         <source>Always show the tab bar</source>
         <translation>탭바를 항상 보기</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="522"/>
+        <location filename="../preferences.ui" line="529"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>탭에 닫기 버튼 보기</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="536"/>
+        <location filename="../preferences.ui" line="543"/>
         <source>Remember the size of the last closed window</source>
         <translation>마지막으로 닫힌 창의 크기 기억</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="543"/>
+        <location filename="../preferences.ui" line="550"/>
         <source>Default width of new windows:</source>
         <translation>새 창의 가로 크기 기본값:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="557"/>
+        <location filename="../preferences.ui" line="564"/>
         <source>Default height of new windows:</source>
         <translation>새 창의 세로 크기 기본값:</translation>
     </message>
@@ -1939,12 +1939,12 @@ They might be useful if those folders are created again.</source>
         <translation>삭제된 파일을 디스크에서 지우는 대신 &quot;휴지통&quot;으로 이동합니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="607"/>
+        <location filename="../preferences.ui" line="614"/>
         <source>Show thumbnails of files</source>
         <translation>파일 썸네일 표시</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="614"/>
+        <location filename="../preferences.ui" line="621"/>
         <source>Only show thumbnails for local files</source>
         <translation>로컬 파일의 썸네일만 표시</translation>
     </message>
@@ -2045,58 +2045,63 @@ They might be useful if those folders are created again.</source>
         <translation>숨겨진 파일의 아이콘 표시</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="415"/>
+        <location filename="../preferences.ui" line="399"/>
+        <source>Disable smooth scrolling in list and compact modes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="422"/>
         <source>Minimum item margins in icon view:</source>
         <translation>아이콘 보기의 최소 항목 여백:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="422"/>
+        <location filename="../preferences.ui" line="429"/>
         <source>3 px by default.</source>
         <translation>기본적으로 3픽셀입니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="425"/>
-        <location filename="../preferences.ui" line="449"/>
+        <location filename="../preferences.ui" line="432"/>
+        <location filename="../preferences.ui" line="456"/>
         <source> px</source>
         <translation> 픽셀</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="438"/>
+        <location filename="../preferences.ui" line="445"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="445"/>
+        <location filename="../preferences.ui" line="452"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>기본적으로 3픽셀입니다
 3줄의 텍스트를 위한 공간도 확보되어 있습니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="462"/>
+        <location filename="../preferences.ui" line="469"/>
         <source>Lock</source>
         <translation>잠금</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="511"/>
+        <location filename="../preferences.ui" line="518"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>선택하지 않으면 탭이 두 개 이상 있는
 경우에만 탭 표시줄이 표시됩니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="529"/>
+        <location filename="../preferences.ui" line="536"/>
         <source>Switch to newly opened tab</source>
         <translation>새로 열린 탭으로 전환</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="571"/>
+        <location filename="../preferences.ui" line="578"/>
         <source>Reopen last window tabs in a new window</source>
         <translation>새 창에서 마지막 창 탭 다시 열기</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="621"/>
-        <location filename="../preferences.ui" line="633"/>
+        <location filename="../preferences.ui" line="628"/>
+        <location filename="../preferences.ui" line="640"/>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
@@ -2105,19 +2110,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
 일반적으로 대부분의 이미지 유형이 지원됩니다. 기본 크기 제한은 4 MiB입니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="626"/>
+        <location filename="../preferences.ui" line="633"/>
         <source>Image size limit for built-in thumbnailer:</source>
         <translation>내장 썸네일에 대한 이미지 크기 제한:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="638"/>
-        <location filename="../preferences.ui" line="674"/>
+        <location filename="../preferences.ui" line="645"/>
+        <location filename="../preferences.ui" line="681"/>
         <source> MiB</source>
         <translation> MiB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="654"/>
-        <location filename="../preferences.ui" line="666"/>
+        <location filename="../preferences.ui" line="661"/>
+        <location filename="../preferences.ui" line="673"/>
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
@@ -2126,22 +2131,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
 값이 -1이면 파일 크기에 제한이 없음을 의미합니다(기본값).</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="659"/>
+        <location filename="../preferences.ui" line="666"/>
         <source>File size limit for external thumbnailers:</source>
         <translation>외부 썸네일에 대한 파일 크기 제한:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="671"/>
+        <location filename="../preferences.ui" line="678"/>
         <source>No limit</source>
         <translation>제한 없음</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="809"/>
+        <location filename="../preferences.ui" line="816"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>예:&lt;br&gt;터미널의 경우: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;사용자 전환의 경우: &lt;i&gt;lxsudo %s&lt;/i&gt; 또는 &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt;은(는) 터미널 또는 su를 사용하여 실행할 명령줄입니다&lt;br&gt; 중요: lxsudo를 사용하십시오. sudo만 사용하면 설정 파일의 사용 권한이 손상됩니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="900"/>
+        <location filename="../preferences.ui" line="907"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>변경 내용을 적용하려면 프로그램을 다시 시작해야 합니다.</translation>
     </message>
@@ -2176,82 +2181,82 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>파일 도구 설명 표시 안함</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="604"/>
+        <location filename="../preferences.ui" line="611"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>ffmpegthumbnailer 필요</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="710"/>
+        <location filename="../preferences.ui" line="717"/>
         <source>Auto Mount</source>
         <translation>자동 마운트</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="716"/>
+        <location filename="../preferences.ui" line="723"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>프로그램 시작 시 마운트 가능 볼륨 자동으로 마운트</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="723"/>
+        <location filename="../preferences.ui" line="730"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>이동식 미디어를 삽입할 때 자동으로 마운트</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="730"/>
+        <location filename="../preferences.ui" line="737"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>이동식 미디어를 삽입할 때 사용 가능한 옵션 표시</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="740"/>
+        <location filename="../preferences.ui" line="747"/>
         <source>When removable medium unmounted:</source>
         <translation>이동식 미디어가 마운트 해제된 경우:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="746"/>
+        <location filename="../preferences.ui" line="753"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>이동식 미디어가 포함된 탭 닫기(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="753"/>
+        <location filename="../preferences.ui" line="760"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>탭의 폴더를 홈 폴더로 변경(&amp;G)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="780"/>
+        <location filename="../preferences.ui" line="787"/>
         <source>Programs</source>
         <translation>프로그램</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="789"/>
+        <location filename="../preferences.ui" line="796"/>
         <source>Terminal emulator:</source>
         <translation>터미널 에뮬레이터:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="796"/>
+        <location filename="../preferences.ui" line="803"/>
         <source>Switch &amp;user command:</source>
         <translation>사용자 명령 전환(&amp;U):</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="822"/>
+        <location filename="../preferences.ui" line="829"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>아카이브 통합(&amp;T):</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="845"/>
+        <location filename="../preferences.ui" line="852"/>
         <source>Templates</source>
         <translation>탬플릿</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="851"/>
+        <location filename="../preferences.ui" line="858"/>
         <source>Show only user defined templates in menu</source>
         <translation>메뉴에 사용자 정의 템플릿만 표시</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="858"/>
+        <location filename="../preferences.ui" line="865"/>
         <source>Show only one template for each MIME type</source>
         <translation>각 MIME 유형에 대해 하나의 템플릿만 표시</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="865"/>
+        <location filename="../preferences.ui" line="872"/>
         <source>Run default application after creation from template</source>
         <translation>템플릿에서 생성한 후 기본 응용프로그램 실행</translation>
     </message>
