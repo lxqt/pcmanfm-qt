@@ -1658,55 +1658,55 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Root 権限 インスタンス</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="719"/>
+        <location filename="../mainwindow.cpp" line="724"/>
         <source>Hide menu bar</source>
         <translation>メニューバーを隠す</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="720"/>
+        <location filename="../mainwindow.cpp" line="725"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>メニューバーが完全に隠れますので、再表示するには Ctrl+M を使用して下さい。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1092"/>
+        <location filename="../mainwindow.cpp" line="1097"/>
         <source>Version: %1</source>
         <translation>バージョン: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2052"/>
+        <location filename="../mainwindow.cpp" line="2057"/>
         <source>&amp;Move to Trash</source>
         <translation>ゴミ箱へ移動(&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2052"/>
+        <location filename="../mainwindow.cpp" line="2057"/>
         <source>&amp;Delete</source>
         <translation>削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1895"/>
+        <location filename="../mainwindow.cpp" line="1900"/>
         <source>Customized View Settings</source>
         <translation>表示設定のカスタマイズ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2120"/>
-        <location filename="../mainwindow.cpp" line="2128"/>
+        <location filename="../mainwindow.cpp" line="2125"/>
+        <location filename="../mainwindow.cpp" line="2133"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2128"/>
+        <location filename="../mainwindow.cpp" line="2133"/>
         <source>Switch user command is not set.</source>
         <translation>ユーザー切り替えのコマンドが設定されていません。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2230"/>
+        <location filename="../mainwindow.cpp" line="2235"/>
         <source>Cleaning Folder Settings</source>
         <translation>フォルダー設定の消去</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2231"/>
+        <location filename="../mainwindow.cpp" line="2236"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>存在しないフォルダーの設定を削除しますか？
@@ -1716,22 +1716,22 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="198"/>
+        <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Icon View</source>
         <translation>アイコン表示</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="199"/>
+        <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Compact View</source>
         <translation>コンパクト表示</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="200"/>
+        <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Thumbnail View</source>
         <translation>サムネイル表示</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="201"/>
+        <location filename="../preferencesdialog.cpp" line="202"/>
         <source>Detailed List View</source>
         <translation>詳細リスト表示</translation>
     </message>
@@ -1831,7 +1831,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="598"/>
+        <location filename="../preferences.ui" line="605"/>
         <source>Thumbnail</source>
         <translation>サムネイル</translation>
     </message>
@@ -1939,32 +1939,32 @@ They might be useful if those folders are created again.</source>
         <translation>アイコンテーマ:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="502"/>
+        <location filename="../preferences.ui" line="509"/>
         <source>Window</source>
         <translation>ウィンドウ</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="543"/>
+        <location filename="../preferences.ui" line="550"/>
         <source>Default width of new windows:</source>
         <translation>新しいウィンドウの既定の幅:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="557"/>
+        <location filename="../preferences.ui" line="564"/>
         <source>Default height of new windows:</source>
         <translation>新しいウィンドウの既定の高さ:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="515"/>
+        <location filename="../preferences.ui" line="522"/>
         <source>Always show the tab bar</source>
         <translation>タブバーを常に表示する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="522"/>
+        <location filename="../preferences.ui" line="529"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>[閉じる]ボタンをタブに表示する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="536"/>
+        <location filename="../preferences.ui" line="543"/>
         <source>Remember the size of the last closed window</source>
         <translation>最後に閉じたウィンドウのサイズを記憶する</translation>
     </message>
@@ -2062,58 +2062,63 @@ They might be useful if those folders are created again.</source>
         <translation>ファイルのツールチップを表示しない</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="415"/>
+        <location filename="../preferences.ui" line="399"/>
+        <source>Disable smooth scrolling in list and compact modes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="422"/>
         <source>Minimum item margins in icon view:</source>
         <translation>アイコン表示でのアイテムの最小余白:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="422"/>
+        <location filename="../preferences.ui" line="429"/>
         <source>3 px by default.</source>
         <translation>既定は 3 ピクセルです。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="425"/>
-        <location filename="../preferences.ui" line="449"/>
+        <location filename="../preferences.ui" line="432"/>
+        <location filename="../preferences.ui" line="456"/>
         <source> px</source>
         <translation> ピクセル</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="438"/>
+        <location filename="../preferences.ui" line="445"/>
         <source>x</source>
         <translation>×</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="445"/>
+        <location filename="../preferences.ui" line="452"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>既定は 3 ピクセルです。
 また文字のために 3 行分の間隔が確保されます。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="462"/>
+        <location filename="../preferences.ui" line="469"/>
         <source>Lock</source>
         <translation>ロック</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="511"/>
+        <location filename="../preferences.ui" line="518"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>チェックを外すと、
 複数のタブがある場合にのみタブバーを表示します。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="529"/>
+        <location filename="../preferences.ui" line="536"/>
         <source>Switch to newly opened tab</source>
         <translation>新しく開くタブに切り換える</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="571"/>
+        <location filename="../preferences.ui" line="578"/>
         <source>Reopen last window tabs in a new window</source>
         <translation>最後に開いていたウィンドウのタブを新しいウィンドウで開く</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="621"/>
-        <location filename="../preferences.ui" line="633"/>
+        <location filename="../preferences.ui" line="628"/>
+        <location filename="../preferences.ui" line="640"/>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
@@ -2122,19 +2127,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
 通常、ほとんどの画像タイプがサポートされています。既定のサイズ制限は 4 MiB です。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="626"/>
+        <location filename="../preferences.ui" line="633"/>
         <source>Image size limit for built-in thumbnailer:</source>
         <translation>内蔵サムネイル作成プログラムの画像サイズ制限:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="638"/>
-        <location filename="../preferences.ui" line="674"/>
+        <location filename="../preferences.ui" line="645"/>
+        <location filename="../preferences.ui" line="681"/>
         <source> MiB</source>
         <translation> MiB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="654"/>
-        <location filename="../preferences.ui" line="666"/>
+        <location filename="../preferences.ui" line="661"/>
+        <location filename="../preferences.ui" line="673"/>
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
@@ -2143,77 +2148,77 @@ A value of -1 means that there is no limit for the file size (the default).</sou
 -1 の値はファイルサイズに制限がないことを意味します。(既定値)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="659"/>
+        <location filename="../preferences.ui" line="666"/>
         <source>File size limit for external thumbnailers:</source>
         <translation>外部サムネイル作成プログラムのファイルサイズ制限:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="671"/>
+        <location filename="../preferences.ui" line="678"/>
         <source>No limit</source>
         <translation>無制限</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="809"/>
+        <location filename="../preferences.ui" line="816"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>例:&lt;br&gt;端末の場合: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;ユーザー切り替えの場合: &lt;i&gt;lxsudo %s&lt;/i&gt; または &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; は、端末またはユーザー切り替えで実行するコマンドラインです。&lt;br&gt;重要: sudo では設定ファイルのアクセス権が壊れることがあるので、lxsudo を使用して下さい。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="900"/>
+        <location filename="../preferences.ui" line="907"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>変更を有効にするにはアプリケーションを再起動します。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="604"/>
+        <location filename="../preferences.ui" line="611"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>ffmpegthumbnailer が必要です</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="607"/>
+        <location filename="../preferences.ui" line="614"/>
         <source>Show thumbnails of files</source>
         <translation>ファイルのサムネイルを表示する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="845"/>
+        <location filename="../preferences.ui" line="852"/>
         <source>Templates</source>
         <translation>テンプレート</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="851"/>
+        <location filename="../preferences.ui" line="858"/>
         <source>Show only user defined templates in menu</source>
         <translation>メニューにユーザー定義のテンプレートのみを表示する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="858"/>
+        <location filename="../preferences.ui" line="865"/>
         <source>Show only one template for each MIME type</source>
         <translation>MIME タイプごとにテンプレートを１つだけを表示する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="865"/>
+        <location filename="../preferences.ui" line="872"/>
         <source>Run default application after creation from template</source>
         <translation>テンプレートから作成した後に既定のアプリケーションを実行する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="614"/>
+        <location filename="../preferences.ui" line="621"/>
         <source>Only show thumbnails for local files</source>
         <translation>ローカルファイルのサムネイルのみを表示する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="740"/>
+        <location filename="../preferences.ui" line="747"/>
         <source>When removable medium unmounted:</source>
         <translation>リムーバブルメディアをアンマウントする際に:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="796"/>
+        <location filename="../preferences.ui" line="803"/>
         <source>Switch &amp;user command:</source>
         <translation>ユーザー切り替えのコマンド(&amp;U):</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="822"/>
+        <location filename="../preferences.ui" line="829"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>アーカイバーの統合(&amp;T):</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="789"/>
+        <location filename="../preferences.ui" line="796"/>
         <source>Terminal emulator:</source>
         <translation>端末エミュレーター:</translation>
     </message>
@@ -2223,37 +2228,37 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>常に実際のファイル名を表示する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="710"/>
+        <location filename="../preferences.ui" line="717"/>
         <source>Auto Mount</source>
         <translation>自動マウント</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="716"/>
+        <location filename="../preferences.ui" line="723"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>起動時にマウント可能なボリュームを自動的にマウントする</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="723"/>
+        <location filename="../preferences.ui" line="730"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>リムーバブルメディアが接続された際に、自動的にマウントする</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="730"/>
+        <location filename="../preferences.ui" line="737"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>リムーバブルメディアが接続された際に、可能な処理を表示する</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="746"/>
+        <location filename="../preferences.ui" line="753"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>リムーバブルメディアを含むタブを閉じる(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="753"/>
+        <location filename="../preferences.ui" line="760"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>タブ内のフォルダーをホームフォルダーに変更する(&amp;G)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="780"/>
+        <location filename="../preferences.ui" line="787"/>
         <source>Programs</source>
         <translation>プログラム</translation>
     </message>
