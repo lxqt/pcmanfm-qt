@@ -13,7 +13,7 @@
         <location filename="../about.ui" line="37"/>
         <location filename="../../build/src/ui_about.h" line="142"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="60"/>
@@ -25,7 +25,7 @@
         <location filename="../about.ui" line="70"/>
         <location filename="../../build/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="99"/>
@@ -77,7 +77,35 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer
+
+Copyright (C) 2020-21 Simon Peter
+Copyright (C) 2021 Chris Moore
+
+Originally based on PCMan File Manager
+Portions Copyright (C) 2009-14 洪任諭 (Hong Jen Yee)
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+Application icon
+
+https://dribbble.com/shots/2541211--Pirate-Finder-icon#
+
+Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
+
+Used with permission of the creator https://raphaellopes.me/</translation>
     </message>
     <message>
         <location filename="../about.ui" line="90"/>
@@ -110,7 +138,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../app-chooser-dialog.ui" line="46"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="163"/>
         <source>Custom Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Bruger kommando</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
@@ -146,19 +174,19 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished"></translation>
+        <translation>Lad terminal vinduet forblive åbent efter kommandoens udførelse</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="162"/>
         <source>Execute in terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Kør i terminal emulatoren</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="164"/>
         <source>Set selected application as default action of this file type</source>
-        <translation type="unfinished"></translation>
+        <translation>Sæt det valgte program som forvalg for en fil af denne type</translation>
     </message>
 </context>
 <context>
@@ -167,31 +195,31 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../autorun.ui" line="14"/>
         <location filename="../../build/src/ui_autorun.h" line="108"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>En flytbart medie er indsat</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <location filename="../../build/src/ui_autorun.h" line="110"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Et flytbart medie er indsat&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <location filename="../../build/src/ui_autorun.h" line="111"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mediets type:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <location filename="../../build/src/ui_autorun.h" line="112"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Undersøger...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <location filename="../../build/src/ui_autorun.h" line="113"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vælg hvilken handling du ønsker at udføre:</translation>
     </message>
 </context>
 <context>
@@ -206,31 +234,31 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../desktop-folder.ui" line="23"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="73"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivebord</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="74"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivebords mappe:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="76"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Image fil</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="81"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Mappe sti</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="82"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Browse</translation>
     </message>
 </context>
 <context>
@@ -239,73 +267,73 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../desktop-preferences.ui" line="14"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="205"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivebords indstillinger</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="20"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="206"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Baggrund</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="42"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="207"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Indstillinger af baggrundsbillede:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="55"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="208"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bagrunds billedfil:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="75"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Baggrunds farve:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="147"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="222"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst farve:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="160"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="223"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skygge farve:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="173"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="224"/>
         <source>Font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrifttype:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="84"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="212"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Billedfil</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="90"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="217"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>Sti til billedfil</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="97"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="218"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Browse</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="109"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="219"/>
         <source>Label Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Overskrifts tekst</translation>
     </message>
 </context>
 <context>
@@ -314,37 +342,37 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../edit-bookmarks.ui" line="14"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="103"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Rediger bogmærker</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="42"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="106"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Navn</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="47"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="105"/>
         <source>Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Sted</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="67"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;tilføj punkt</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fjern punkt</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="109"/>
         <source>Use drag and drop to reorder the items</source>
-        <translation type="unfinished"></translation>
+        <translation>Brug træk og slip til at omgruppere tingene</translation>
     </message>
 </context>
 <context>
@@ -353,31 +381,31 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../exec-file.ui" line="14"/>
         <location filename="../../build/src/ui_exec-file.h" line="114"/>
         <source>Execute file</source>
-        <translation type="unfinished"></translation>
+        <translation>Kør fil</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
         <location filename="../../build/src/ui_exec-file.h" line="116"/>
         <source>&amp;Open</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Åbn</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
         <location filename="../../build/src/ui_exec-file.h" line="117"/>
         <source>E&amp;xecute</source>
-        <translation type="unfinished"></translation>
+        <translation>U&amp;dfør</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
         <location filename="../../build/src/ui_exec-file.h" line="118"/>
         <source>Execute in &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Udfør i @terminal</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
         <location filename="../../build/src/ui_exec-file.h" line="119"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Afbryd</translation>
     </message>
 </context>
 <context>
@@ -404,13 +432,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-operation-dialog.ui" line="68"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="128"/>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Fremskridt</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="88"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="129"/>
         <source>Time remaining:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tid tilbage:</translation>
     </message>
 </context>
 <context>
@@ -419,25 +447,25 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-props.ui" line="133"/>
         <location filename="../../build/src/ui_file-props.h" line="365"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Generelt</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="208"/>
         <location filename="../../build/src/ui_file-props.h" line="372"/>
         <source>Location:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sted:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="139"/>
         <location filename="../../build/src/ui_file-props.h" line="366"/>
         <source>File type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fil type:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="317"/>
         <location filename="../../build/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
-        <translation type="unfinished"></translation>
+        <translation>Åbn med</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
@@ -449,13 +477,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-props.ui" line="162"/>
         <location filename="../../build/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fil størrelse:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="20"/>
         <location filename="../../build/src/ui_file-props.h" line="362"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Info</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
@@ -473,13 +501,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-props.ui" line="260"/>
         <location filename="../../build/src/ui_file-props.h" line="376"/>
         <source>Last modified:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sidst ændret:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="423"/>
         <location filename="../../build/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
@@ -491,25 +519,25 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-props.ui" line="346"/>
         <location filename="../../build/src/ui_file-props.h" line="383"/>
         <source>Open With:</source>
-        <translation type="unfinished"></translation>
+        <translation>Åben med:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="283"/>
         <location filename="../../build/src/ui_file-props.h" line="378"/>
         <source>Last accessed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sidst tilgået:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="380"/>
         <location filename="../../build/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
-        <translation type="unfinished"></translation>
+        <translation>Adgangs kontrol</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="440"/>
         <location filename="../../build/src/ui_file-props.h" line="386"/>
         <source>Make the file executable</source>
-        <translation type="unfinished"></translation>
+        <translation>Gør filen kørbar</translation>
     </message>
 </context>
 <context>
@@ -517,22 +545,22 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Navnet på konfigurations profilen</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>PROFILE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Run Filer as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Kør Filer som en dæmon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Quit Filer</source>
-        <translation type="unfinished"></translation>
+        <translation>Afslut Filer</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
