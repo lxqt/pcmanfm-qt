@@ -7,7 +7,7 @@
         <location filename="../about.ui" line="14"/>
         <location filename="../../build/src/ui_about.h" line="140"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../about.ui" line="37"/>
@@ -19,7 +19,7 @@
         <location filename="../about.ui" line="60"/>
         <location filename="../../build/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
-        <translation type="unfinished"></translation>
+        <translation>Desktop oplevelsen</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
@@ -37,7 +37,13 @@
 
 Application icon:
 * Raphael Lopes (https://raphaellopes.me/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Programmering:
+* Simon Peter (probono)
+* Chris Moore (moochris)
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+
+Program ikoner:
+* Raphael Lopes (https://raphaellopes.me/)</translation>
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
@@ -77,13 +83,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../about.ui" line="90"/>
         <location filename="../../build/src/ui_about.h" line="153"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>Forfattere</translation>
     </message>
     <message>
         <location filename="../about.ui" line="116"/>
         <location filename="../../build/src/ui_about.h" line="184"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licens</translation>
     </message>
 </context>
 <context>
@@ -92,13 +98,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../app-chooser-dialog.ui" line="14"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="150"/>
         <source>Choose an Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Vælg et program</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="151"/>
         <source>Installed Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Installerede programmer</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
@@ -110,13 +116,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../app-chooser-dialog.ui" line="52"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="152"/>
         <source>Command line to execute:</source>
-        <translation type="unfinished"></translation>
+        <translation>Udfør følgende kommando:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="153"/>
         <source>Application name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Program navn:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
@@ -128,7 +134,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
 &lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represents a single URI of the file&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represents multiple URIs&lt;/li&gt;
 &lt;/ul&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Disse special tegn kan bruges på kommando linien:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: Viser et enkelt fil navn&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;: Viser flere fil navne&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Viser url&apos;en til filen&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Viser flere URL&apos;er&lt;/li&gt;
+&lt;/ul&gt;</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
