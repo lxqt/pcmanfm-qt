@@ -2778,7 +2778,7 @@ Modified: %3</source>
         <location filename="../rename-dialog.ui" line="102"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="162"/>
         <source>src</source>
-        <translation>src</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
