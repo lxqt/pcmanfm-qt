@@ -506,7 +506,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>Gömda Genvägar</translation>
+        <translation>Dolda genvägar</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
