@@ -1,3 +1,24 @@
+pcmanfm-qt-1.0.0 / 2021-11-04
+==============================
+ * Better text colors in inactive frame of split view.
+ * Fixed inconsistent item selection with transient filter-bar.
+ * Allow recursive customization of folders.
+ * Added an action to remove settings of nonexistent folders.
+ * Toggle visibility of directory tree's hidden folders from view's context menu.
+ * Updated README.md.
+ * Don't save/read custom positions of desktop items constantly.
+ * Added per-folder settings actions to current tab context menu.
+ * Allow creating of launchers with slash in their names.
+ * Keep custom position of desktop item on inline renaming.
+ * Added option to make desktop items sticky by default.
+ * Reversed an old workaround for automount freeze (it wasn't needed after a recent change in libfm-qt).
+ * Disable tab DND under Wayland.
+ * Added and changed accelerators for view settings.
+ * Added a nullity check to "view.cpp".
+ * Add new tab on double clicking empty space of tabbar.
+ * Never close file operation dialog on closing window.
+ * Added option to disable smooth scrolling in list and compact modes.
+
 pcmanfm-qt-0.17.0 / 2021-04-15
 ==============================
   * Close a file tooltip on key pressing or changing directory/filter/sorting.
