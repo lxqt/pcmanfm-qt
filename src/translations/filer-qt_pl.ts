@@ -1111,12 +1111,12 @@ Application icon:
 <context>
     <name>Fm::DirTreeView</name>
     <message>
-        <location filename="../dirtreeview.cpp" line="214"/>
+        <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in New Win&amp;dow</source>
         <translation type="unfinished">Otwórz w nowym &amp;oknie</translation>
     </message>
     <message>
-        <location filename="../dirtreeview.cpp" line="219"/>
+        <location filename="../dirtreeview.cpp" line="223"/>
         <source>Open in Termina&amp;l</source>
         <translation type="unfinished">Otwórz w &amp;terminalu</translation>
     </message>

@@ -970,12 +970,12 @@ Used with permission of the creator https://raphaellopes.me/</source>
 <context>
     <name>Fm::DirTreeView</name>
     <message>
-        <location filename="../dirtreeview.cpp" line="214"/>
+        <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in New Win&amp;dow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dirtreeview.cpp" line="219"/>
+        <location filename="../dirtreeview.cpp" line="223"/>
         <source>Open in Termina&amp;l</source>
         <translation type="unfinished"></translation>
     </message>

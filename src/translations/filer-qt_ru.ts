@@ -1141,12 +1141,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <translation type="vanished">Открыть в новой вкл&amp;адке</translation>
     </message>
     <message>
-        <location filename="../dirtreeview.cpp" line="214"/>
+        <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in New Win&amp;dow</source>
         <translation>Открыть в новом о&amp;кне</translation>
     </message>
     <message>
-        <location filename="../dirtreeview.cpp" line="219"/>
+        <location filename="../dirtreeview.cpp" line="223"/>
         <source>Open in Termina&amp;l</source>
         <translation>Открыть в термина&amp;ле</translation>
     </message>

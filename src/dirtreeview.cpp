@@ -27,6 +27,7 @@
 #include "dirtreemodel.h"
 #include "dirtreemodelitem.h"
 #include "filemenu.h"
+#include "application.h"
 
 using namespace Fm;
 
@@ -210,10 +211,16 @@ void DirTreeView::onCustomContextMenuRequested(const QPoint& pos) {
       action->setData(pathData);
       connect(action, &QAction::triggered, this, &DirTreeView::onNewTab);
       */
-      menu->insertAction(menu->separator1(), action);
-      action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
-      action->setData(pathData);
-      connect(action, &QAction::triggered, this, &DirTreeView::onNewWindow);
+
+      Filer::Application* app = static_cast<Filer::Application*>(qApp);
+      Filer::Settings& settings = app->settings();
+
+      if( ! settings.spatialMode() ){
+          menu->insertAction(menu->separator1(), action);
+          action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
+          action->setData(pathData);
+          connect(action, &QAction::triggered, this, &DirTreeView::onNewWindow);
+      }
       menu->insertAction(menu->separator1(), action);
       if(fm_file_info_is_native(fileInfo)) {
         action = new QAction(QIcon::fromTheme("utilities-terminal"), tr("Open in Termina&l"), menu);

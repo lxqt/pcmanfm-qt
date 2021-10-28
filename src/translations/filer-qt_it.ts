@@ -1149,12 +1149,12 @@ Application icon:
         <translation type="vanished">Apri in una nuova &amp;scheda</translation>
     </message>
     <message>
-        <location filename="../dirtreeview.cpp" line="214"/>
+        <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in New Win&amp;dow</source>
         <translation>Apri in una nuova &amp;finestra</translation>
     </message>
     <message>
-        <location filename="../dirtreeview.cpp" line="219"/>
+        <location filename="../dirtreeview.cpp" line="223"/>
         <source>Open in Termina&amp;l</source>
         <translation>Apri in un &amp;terminale</translation>
     </message>

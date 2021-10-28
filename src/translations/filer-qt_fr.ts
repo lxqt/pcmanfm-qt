@@ -1165,12 +1165,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
 <context>
     <name>Fm::DirTreeView</name>
     <message>
-        <location filename="../dirtreeview.cpp" line="214"/>
+        <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in New Win&amp;dow</source>
         <translation type="unfinished">Ouvrir &amp;dans une nouvelle fenêtre</translation>
     </message>
     <message>
-        <location filename="../dirtreeview.cpp" line="219"/>
+        <location filename="../dirtreeview.cpp" line="223"/>
         <source>Open in Termina&amp;l</source>
         <translation type="unfinished">Ouvrir dans &amp;le terminal</translation>
     </message>

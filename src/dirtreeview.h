@@ -26,6 +26,7 @@
 #include <libfm/fm.h>
 #include "path.h"
 
+
 class QItemSelection;
 
 namespace Fm {
@@ -36,7 +37,7 @@ class DirTreeModelItem;
 class LIBFM_QT_API DirTreeView : public QTreeView {
   Q_OBJECT
 
-public:
+public:  
   DirTreeView(QWidget* parent);
   ~DirTreeView();
 

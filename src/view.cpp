@@ -107,9 +107,11 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
   menu->insertAction(menu->separator1(), action);
   */
 
-  action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
-  connect(action, &QAction::triggered, this, &View::onNewWindow);
-  menu->insertAction(menu->separator1(), action);
+  if( ! app->settings().spatialMode() ){
+      action = new QAction(QIcon::fromTheme("window-new"), tr("Open in New Win&dow"), menu);
+      connect(action, &QAction::triggered, this, &View::onNewWindow);
+      menu->insertAction(menu->separator1(), action);
+  }
 
   // TODO: add search
   // action = menu->addAction(_("Search"));

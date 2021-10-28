@@ -29,6 +29,7 @@
 #include <QHeaderView>
 #include <QDebug>
 #include <QGuiApplication>
+#include "application.h"
 
 using namespace Fm;
 
@@ -335,16 +336,23 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
     PlacesModelItem* item = static_cast<PlacesModelItem*>(model_->itemFromIndex(index));
 
     if(item->type() != PlacesModelItem::Mount
-        && (item->type() != PlacesModelItem::Volume
-        || static_cast<PlacesModelVolumeItem*>(item)->isMounted())) {
-      /*
+            && (item->type() != PlacesModelItem::Volume
+                || static_cast<PlacesModelVolumeItem*>(item)->isMounted())) {
+        /*
       action = new PlacesModel::ItemAction(item->index(), tr("Open in New Tab"), menu);
       connect(action, &QAction::triggered, this, &PlacesView::onOpenNewTab);
       menu->addAction(action);
       */
-      action = new PlacesModel::ItemAction(item->index(), tr("Open in New Window"), menu);
-      connect(action, &QAction::triggered, this, &PlacesView::onOpenNewWindow);
-      menu->addAction(action);
+
+        Filer::Application* app = static_cast<Filer::Application*>(qApp);
+        Filer::Settings& settings = app->settings();
+
+        if( ! settings.spatialMode() ){
+            action = new PlacesModel::ItemAction(item->index(), tr("Open in New Window"), menu);
+            connect(action, &QAction::triggered, this, &PlacesView::onOpenNewWindow);
+            menu->addAction(action);
+        }
+
     }
 
     switch(item->type()) {

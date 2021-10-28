@@ -1179,12 +1179,12 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>Fm::DirTreeView</name>
     <message>
-        <location filename="../dirtreeview.cpp" line="214"/>
+        <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in New Win&amp;dow</source>
         <translation type="unfinished">新しいウインドウを開く(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../dirtreeview.cpp" line="219"/>
+        <location filename="../dirtreeview.cpp" line="223"/>
         <source>Open in Termina&amp;l</source>
         <translation type="unfinished">端末内で開く(&amp;L)</translation>
     </message>

@@ -1066,12 +1066,12 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
 <context>
     <name>Fm::DirTreeView</name>
     <message>
-        <location filename="../dirtreeview.cpp" line="214"/>
+        <location filename="../dirtreeview.cpp" line="217"/>
         <source>Open in New Win&amp;dow</source>
         <translation type="unfinished">Yeni Pe&amp;ncerede Aç</translation>
     </message>
     <message>
-        <location filename="../dirtreeview.cpp" line="219"/>
+        <location filename="../dirtreeview.cpp" line="223"/>
         <source>Open in Termina&amp;l</source>
         <translation type="unfinished">&amp;Uçbirimde Aç</translation>
     </message>
