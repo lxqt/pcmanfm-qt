@@ -19,13 +19,13 @@
         <location filename="../about.ui" line="60"/>
         <location filename="../../build/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
-        <translation type="unfinished"></translation>
+        <translation>Desktop Experience</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
         <location filename="../../build/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="99"/>
@@ -37,7 +37,13 @@
 
 Application icon:
 * Raphael Lopes (https://raphaellopes.me/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Разработка:
+* Симон Петер (probono)
+* Крис Мур (moochris)
+* Хон Жен Ии (PCMan) &lt;pcman.tw@gmail.com&gt;
+
+Значки приложений:
+* Рафаэль Лопез (https://raphaellopes.me/)</translation>
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
@@ -71,7 +77,35 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer
+
+Copyright (C) 2020-21 Симон Петер
+Copyright (C) 2021 Крис Мур
+
+Основано на PCMan File Manager
+Частичные права Copyright (C) 2009-14 洪任諭 (Хон Жен Ии)
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+Application icon
+
+https://dribbble.com/shots/2541211--Pirate-Finder-icon#
+
+Copyright (C) 2016 Рафаэль Лопез &lt;raphaellopes8@gmail.com&gt;
+
+Используется с разрешения автора https://raphaellopes.me/</translation>
     </message>
     <message>
         <source>Lightweight file manager</source>
@@ -319,7 +353,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <location filename="../desktop-preferences.ui" line="75"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Цвет фона:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="84"/>
@@ -349,19 +383,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <location filename="../desktop-preferences.ui" line="147"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="222"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Цвет текста:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="160"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="223"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Цвет затенения:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="173"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="224"/>
         <source>Font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Шрифт:</translation>
     </message>
     <message>
         <source>Select  text color:</source>
@@ -533,7 +567,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <location filename="../file-props.ui" line="317"/>
         <location filename="../../build/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть с помощью</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
@@ -551,13 +585,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <location filename="../file-props.ui" line="20"/>
         <location filename="../../build/src/ui_file-props.h" line="362"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Информация</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>Текстовая метка</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
@@ -575,7 +609,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <location filename="../file-props.ui" line="423"/>
         <location filename="../../build/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
-        <translation type="unfinished"></translation>
+        <translation>Любой</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
@@ -719,7 +753,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Launch desktop manager (deprecated)</source>
-        <translation type="unfinished"></translation>
+        <translation>Запустить менеджер рабочего стола (устарело)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="210"/>
@@ -771,7 +805,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Transparent</source>
-        <translation type="unfinished"></translation>
+        <translation>Прозрачность</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
@@ -814,7 +848,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../desktopwindow.cpp" line="527"/>
         <source>Version: %1</source>
-        <translation type="unfinished">Версия: %1</translation>
+        <translation>Версия: %1</translation>
     </message>
 </context>
 <context>
@@ -822,17 +856,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../gotofolderwindow.cpp" line="47"/>
         <source>Go</source>
-        <translation type="unfinished">Перейти</translation>
+        <translation>Перейти</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="48"/>
         <source>Cancel</source>
-        <translation type="unfinished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="59"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти в папку</translation>
     </message>
 </context>
 <context>
@@ -923,10 +957,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="428"/>
         <source>%1 item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform>%1 объекта(ов) выделено</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 объект выбран</numerusform>
+            <numerusform>%1 объекта выбрано</numerusform>
+            <numerusform>%1 объектов выбрано</numerusform>
         </translation>
     </message>
 </context>
@@ -1055,7 +1089,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../file-search.ui" line="252"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Информация</translation>
     </message>
     <message>
         <source>Properties</source>
@@ -1227,7 +1261,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="101"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>Показать содержимое</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="179"/>
@@ -1257,12 +1291,12 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="246"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Информация</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="251"/>
         <source>&amp;Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Очистить корзину</translation>
     </message>
     <message>
         <source>Extract to...</source>
@@ -1504,7 +1538,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="73"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Информация</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="99"/>
@@ -1770,25 +1804,25 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="276"/>
         <location filename="../../build/src/ui_main-win.h" line="603"/>
         <source>Ctrl+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Вверх</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="288"/>
         <location filename="../../build/src/ui_main-win.h" line="607"/>
         <source>Ctrl+Shift+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="300"/>
         <location filename="../../build/src/ui_main-win.h" line="611"/>
         <source>Ctrl+Shift+R</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+R</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="333"/>
         <location filename="../../build/src/ui_main-win.h" line="615"/>
         <source>&amp;About Filer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;О приложении</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="388"/>
@@ -1808,7 +1842,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="742"/>
         <location filename="../../build/src/ui_main-win.h" line="738"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="750"/>
@@ -1956,7 +1990,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="368"/>
         <location filename="../../build/src/ui_main-win.h" line="626"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="377"/>
@@ -1968,7 +2002,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="380"/>
         <location filename="../../build/src/ui_main-win.h" line="630"/>
         <source>Ctrl+Shift+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="385"/>
@@ -1986,7 +2020,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="400"/>
         <location filename="../../build/src/ui_main-win.h" line="638"/>
         <source>Ctrl+Shift+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="409"/>
@@ -2004,7 +2038,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="417"/>
         <location filename="../../build/src/ui_main-win.h" line="643"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="425"/>
@@ -2022,7 +2056,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="436"/>
         <location filename="../../build/src/ui_main-win.h" line="648"/>
         <source>Ctrl+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
@@ -2040,7 +2074,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="455"/>
         <location filename="../../build/src/ui_main-win.h" line="653"/>
         <source>Ctrl+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="463"/>
@@ -2148,31 +2182,31 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="639"/>
         <location filename="../../build/src/ui_main-win.h" line="702"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished">&amp;Переместить в корзину</translation>
+        <translation>&amp;Переместить в корзину</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
         <location filename="../../build/src/ui_main-win.h" line="704"/>
         <source>Ctrl+Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
         <location filename="../../build/src/ui_main-win.h" line="711"/>
         <source>Get &amp;Info</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Информация</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="663"/>
         <location filename="../../build/src/ui_main-win.h" line="713"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="671"/>
         <location filename="../../build/src/ui_main-win.h" line="715"/>
         <source>&amp;Case Sensitive</source>
-        <translation>&amp;Регистрозависимая</translation>
+        <translation>&amp;Регистр-чувствительная</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="679"/>
@@ -2208,121 +2242,121 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="759"/>
         <location filename="../../build/src/ui_main-win.h" line="741"/>
         <source>&amp;Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Перейти в папку</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="762"/>
         <location filename="../../build/src/ui_main-win.h" line="743"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти в папку</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
         <location filename="../../build/src/ui_main-win.h" line="746"/>
         <source>Ctrl+Shift+G</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+G</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <location filename="../../build/src/ui_main-win.h" line="748"/>
         <source>&amp;Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Загрузки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
         <location filename="../../build/src/ui_main-win.h" line="750"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="776"/>
         <location filename="../../build/src/ui_main-win.h" line="753"/>
         <source>Ctrl+Shift+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="784"/>
         <location filename="../../build/src/ui_main-win.h" line="755"/>
         <source>&amp;Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Утилиты</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="787"/>
         <location filename="../../build/src/ui_main-win.h" line="757"/>
         <source>Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>Утилиты</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="790"/>
         <location filename="../../build/src/ui_main-win.h" line="760"/>
         <source>Ctrl+Shift+U</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+U</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="798"/>
         <location filename="../../build/src/ui_main-win.h" line="762"/>
         <source>&amp;Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Документы</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="801"/>
         <location filename="../../build/src/ui_main-win.h" line="764"/>
         <source>Documents</source>
-        <translation type="unfinished">Документы</translation>
+        <translation>Документы</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
         <location filename="../../build/src/ui_main-win.h" line="767"/>
         <source>Ctrl+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="812"/>
         <location filename="../../build/src/ui_main-win.h" line="769"/>
         <source>Open</source>
-        <translation type="unfinished">Открыть</translation>
+        <translation>Открыть</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="815"/>
         <location filename="../../build/src/ui_main-win.h" line="771"/>
         <source>Ctrl+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <location filename="../../build/src/ui_main-win.h" line="773"/>
         <source>&amp;Duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Дублировать</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <location filename="../../build/src/ui_main-win.h" line="775"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="828"/>
         <location filename="../../build/src/ui_main-win.h" line="777"/>
         <source>Empty Trash</source>
-        <translation type="unfinished">Очистить корзину</translation>
+        <translation>Очистить корзину</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="831"/>
         <location filename="../../build/src/ui_main-win.h" line="779"/>
         <source>Ctrl+Alt+Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
         <location filename="../../build/src/ui_main-win.h" line="781"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>Показать содержимое</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="839"/>
         <location filename="../../build/src/ui_main-win.h" line="783"/>
         <source>Ctrl+Alt+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="577"/>
@@ -2546,13 +2580,13 @@ Modified: %3</source>
         <location filename="../preferences.ui" line="92"/>
         <location filename="../../build/src/ui_preferences.h" line="659"/>
         <source>Save metadata to directories (.DirInfo files)</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить метаданные в папку (файлы .DirInfo)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="102"/>
         <location filename="../../build/src/ui_preferences.h" line="660"/>
         <source>Spatial mode (folders open in a new window)</source>
-        <translation type="unfinished"></translation>
+        <translation>Открывать папки в новом окне</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="166"/>
@@ -2919,7 +2953,7 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="127"/>
         <source>Rename</source>
-        <translation type="unfinished">Переименовать</translation>
+        <translation>Переименовать</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="128"/>
@@ -2929,7 +2963,7 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="133"/>
         <source>The startvolume cannot be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Раздел не может быть переименован.</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="221"/>
