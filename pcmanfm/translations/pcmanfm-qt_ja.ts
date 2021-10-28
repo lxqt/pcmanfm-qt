@@ -415,7 +415,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation>すべてのアイテムをその位置に固定する</translation>
+        <translation type="unfinished">すべてのアイテムをその位置に固定する</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -1020,7 +1020,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>ショートカットを隠す(&amp;S)</translation>
+        <translation>隠しショートカット(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
@@ -2064,7 +2064,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="399"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>詳細リスト表示とコンパクト表示でスムーススクロールを無効にする</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>

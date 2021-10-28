@@ -415,7 +415,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Fest alle elementer til sine posisjoner</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -940,17 +940,17 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Behold innstillinger rekursivt &amp;herfra</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Gå til kilden for nedarvede innstillinger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fjern innstillinger for ikke-eksisterende mapper</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -995,7 +995,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Behold innstillinger for &amp;denne mappen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1167,7 +1167,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tilpassede visningsinnstillinger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
@@ -1578,13 +1578,13 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="299"/>
         <source>Trash (One item)</source>
-        <translation>Papirkurv (ett objekt)</translation>
+        <translation>Papirkurv (ett element)</translation>
     </message>
     <message numerus="yes">
         <location filename="../desktopwindow.cpp" line="302"/>
         <source>Trash (%Ln items)</source>
         <translation>
-            <numerusform>Papirkurv (%Ln objekt)</numerusform>
+            <numerusform>Papirkurv (%Ln elementer)</numerusform>
             <numerusform>Papirkurv (%Ln objekter)</numerusform>
         </translation>
     </message>
@@ -1622,7 +1622,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="1036"/>
         <source>Hide Desktop Items</source>
-        <translation>Skjul skrivebordsobjekter</translation>
+        <translation>Skjul skrivebordselementer</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1042"/>
@@ -1704,13 +1704,14 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2235"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Innstillinger for tømming av mapper</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2236"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fjern innstillinger for ikke-eksisterende mapper?
+De kan være nyttige hvis disse mappene opprettes igjen.</translation>
     </message>
 </context>
 <context>
@@ -2053,7 +2054,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="399"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Skru av myk rulling i kompakt- og listemodus</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>

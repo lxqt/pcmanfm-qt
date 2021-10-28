@@ -2054,7 +2054,7 @@ Kui need kaustad hiljem uuesti tekivad, siis võib-olla pole mõtet seda teha.</
     <message>
         <location filename="../preferences.ui" line="399"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompaktses ja üksikasjalikus vaates ära kasuta sujuvat kerimist</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>

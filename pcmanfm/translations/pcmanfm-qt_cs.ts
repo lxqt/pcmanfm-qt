@@ -415,7 +415,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Připnout veškeré položky k jejich pozicím</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -523,7 +523,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>Skryté klávesové zkratky</translation>
+        <translation>Skryté zkratky</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
@@ -533,7 +533,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation>Činnost</translation>
+        <translation>Akce</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
@@ -900,17 +900,17 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zachovat nastavení rekurzivně odsud</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Přejít na zdroj převzatých nastavení</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>Odeb&amp;rat nastavení pro neexistující složky</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -955,7 +955,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Zachovat nastavení pro &amp;tuto složku</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1020,7 +1020,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Skryté &amp;klávesové zkratky</translation>
+        <translation>&amp;Skryté zkratky</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
@@ -1127,7 +1127,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nastavení pro uživatelsky určené zobrazení</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="280"/>
@@ -1262,7 +1262,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="246"/>
         <source>Main Toolbar</source>
-        <translation>Hlavní lišta nástrojů</translation>
+        <translation>Hlavní pruh nástrojů</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
@@ -1361,12 +1361,12 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustit PCManFM-Qt jako proces služby</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukončit PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -1689,7 +1689,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../mainwindow.cpp" line="1900"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení uživatelsky určeného zobrazení</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2125"/>
@@ -1705,13 +1705,14 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../mainwindow.cpp" line="2235"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Čištění nastavení složek</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2236"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Opravdu chcete odebrat nastavení neexistujících složek?
+Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</translation>
     </message>
 </context>
 <context>
@@ -2073,7 +2074,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="399"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Vypnout plynulé posouvání v seznamu a kompaktních režimech</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>

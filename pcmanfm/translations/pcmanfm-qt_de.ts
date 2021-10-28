@@ -417,7 +417,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle Elemente sollen an ihren Positionen bleiben</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -530,7 +530,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>Kürzel</translation>
+        <translation>Tastaturkürzel</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
@@ -598,12 +598,12 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation>Strg+BildRunter</translation>
+        <translation>Strg+BildAb</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation>Strg+BildRauf</translation>
+        <translation>Strg+BildAuf</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
@@ -902,17 +902,17 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen rekursiv von &amp;hier beibehalten</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Zur Quelle der vererbten Einstellungen &amp;gehen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen von nicht existierenden Ordnern entfe&amp;rnen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -922,7 +922,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="636"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Shift+A</translation>
+        <translation>Strg+Umschalt+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="645"/>
@@ -962,7 +962,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen für &amp;diesen Ordner beibehalten</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1134,7 +1134,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Angepasste Ansichtseinstellungen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="280"/>
@@ -1264,7 +1264,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="246"/>
         <source>Main Toolbar</source>
-        <translation>Werkzeugleiste</translation>
+        <translation>Hauptwerkzeugleiste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
@@ -1690,7 +1690,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1900"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Personalisierte Ansicht einstellen</translation>
+        <translation>Angepasste Ansichtseinstellungen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2125"/>
@@ -1712,7 +1712,8 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <location filename="../mainwindow.cpp" line="2236"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Möchten Sie die Einstellungen von nicht existierenden Ordnern entfernen?
+Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translation>
     </message>
 </context>
 <context>
@@ -2070,7 +2071,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="399"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Sanften Bildlauf in den Modi Liste und Kompakt deaktivieren</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
