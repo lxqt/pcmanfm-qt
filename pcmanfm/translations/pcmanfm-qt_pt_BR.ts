@@ -1026,7 +1026,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>&amp;Atalhos ocultos</translation>
+        <translation>Atalhos ocultos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
@@ -2070,7 +2070,7 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="399"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Desativar rolagem suave nos modos de lista e compacta</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
