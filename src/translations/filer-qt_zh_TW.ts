@@ -59,7 +59,35 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer
+
+版權所有 (C) 2020-21 Simon Peter
+版權所有 (C) 2021 Chris Moore
+
+原始基於 PCMan 檔管理員
+部分版權 (C) 2009-14 洪任諭 (Hong Jen Yee)
+
+此程式是免費軟體：您可以根據 GNU 通用
+公共許可證條款重新分配和/或修改它，經由
+自由軟體基金會中發佈;許可證的第 2 版，或
+(由您選擇)任何更高的版本。
+
+此程式的發佈是希望它將是有用的，
+但沒有為此有任何保證;甚至沒有隱晦的保固商用性或
+合適的特定目的。 有關詳細資訊，請查看 GNU 通用
+公共許可證。
+
+您應該會收到 GNU 通用公共許可證的副本
+以及這個程式;如果沒有，請寫信致函給自由軟體基金會
+51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+應用程式圖示
+
+https://dribbble.com/shots/2541211--Pirate-Finder-icon#
+
+版權所有 (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
+
+經由建立者授權使用 https://raphaellopes.me/</translation>
     </message>
     <message>
         <source>Lightweight file manager</source>
@@ -129,7 +157,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 Application icon:
 * Raphael Lopes (https://raphaellopes.me/)</source>
-        <translation type="unfinished"></translation>
+        <translation>程式設計：
+* Simon Peter (probono)
+* Chris Moore (moochris)
+* 洪任諭 Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+
+應用程式圖示：
+* Raphael Lopes (https://raphaellopes.me/)</translation>
     </message>
     <message>
         <location filename="../about.ui" line="116"/>
@@ -309,19 +343,19 @@ Application icon:
         <location filename="../desktop-preferences.ui" line="75"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
         <source>Background color:</source>
-        <translation>‎背景顏色：‎</translation>
+        <translation>‎背景顏色：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="147"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="222"/>
         <source>Text color:</source>
-        <translation>文字顏色：‎</translation>
+        <translation>文字顏色：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="160"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="223"/>
         <source>Shadow color:</source>
-        <translation>陰影顏色：‎</translation>
+        <translation>陰影顏色：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="173"/>
@@ -1061,7 +1095,7 @@ Application icon:
     <message>
         <location filename="../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation>‎大於：‎</translation>
+        <translation>‎大於：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="289"/>
