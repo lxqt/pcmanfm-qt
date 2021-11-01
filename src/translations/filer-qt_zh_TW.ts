@@ -19,13 +19,13 @@
         <location filename="../about.ui" line="60"/>
         <location filename="../../build/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
-        <translation type="unfinished"></translation>
+        <translation>桌面體驗‎</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
         <location filename="../../build/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
@@ -264,7 +264,7 @@ Application icon:
         <location filename="../desktop-folder.ui" line="36"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="76"/>
         <source>Image file</source>
-        <translation>影像檔案</translation>
+        <translation>圖片檔案</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
@@ -303,31 +303,31 @@ Application icon:
         <location filename="../desktop-preferences.ui" line="55"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="208"/>
         <source>Wallpaper image file:</source>
-        <translation>桌布影像檔：</translation>
+        <translation>桌面背景圖片檔案：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="75"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>‎背景顏色：‎</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="147"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="222"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>文字顏色：‎</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="160"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="223"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>陰影顏色：‎</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="173"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="224"/>
         <source>Font:</source>
-        <translation type="unfinished"></translation>
+        <translation>文字：</translation>
     </message>
     <message>
         <source>Select background color:</source>
@@ -337,13 +337,13 @@ Application icon:
         <location filename="../desktop-preferences.ui" line="84"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="212"/>
         <source>Image file</source>
-        <translation>影像檔案</translation>
+        <translation>圖片檔案</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="90"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="217"/>
         <source>Image file path</source>
-        <translation>影像檔案路徑</translation>
+        <translation>圖片檔案路徑</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="97"/>
@@ -519,7 +519,7 @@ Application icon:
         <location filename="../file-props.ui" line="317"/>
         <location filename="../../build/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
-        <translation type="unfinished"></translation>
+        <translation>以其他程式開啟</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
@@ -537,13 +537,13 @@ Application icon:
         <location filename="../file-props.ui" line="20"/>
         <location filename="../../build/src/ui_file-props.h" line="362"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>內容</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>文字標籤</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
@@ -561,7 +561,7 @@ Application icon:
         <location filename="../file-props.ui" line="423"/>
         <location filename="../../build/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
-        <translation type="unfinished"></translation>
+        <translation>任何人</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
@@ -657,12 +657,12 @@ Application icon:
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Run Filer as a daemon</source>
-        <translation>將Filer作為守護行程</translation>
+        <translation>將 Filer 作為守護行程</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Quit Filer</source>
-        <translation>關閉Filer</translation>
+        <translation>關閉 Filer</translation>
     </message>
     <message>
         <source>Launch desktop manager</source>
@@ -671,7 +671,7 @@ Application icon:
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Launch desktop manager (deprecated)</source>
-        <translation type="unfinished"></translation>
+        <translation>‎啟動桌面管理員（已棄用）</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="201"/>
@@ -712,7 +712,7 @@ Application icon:
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation>桌面牆紙的設置模式。 類別 =(顏色|延展|縮放|置中|並排)</translation>
+        <translation>桌面背景的設置模式。 類別=(顏色|延展|縮放|置中|並排)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
@@ -769,7 +769,7 @@ Application icon:
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Transparent</source>
-        <translation type="unfinished"></translation>
+        <translation>透明度</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
@@ -794,7 +794,7 @@ Application icon:
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="145"/>
         <source>Image Files</source>
-        <translation>影像檔案</translation>
+        <translation>圖片檔</translation>
     </message>
 </context>
 <context>
@@ -812,7 +812,7 @@ Application icon:
     <message>
         <location filename="../desktopwindow.cpp" line="527"/>
         <source>Version: %1</source>
-        <translation type="unfinished">版本：%1</translation>
+        <translation>版本：%1</translation>
     </message>
 </context>
 <context>
@@ -820,17 +820,17 @@ Application icon:
     <message>
         <location filename="../gotofolderwindow.cpp" line="47"/>
         <source>Go</source>
-        <translation type="unfinished">執行</translation>
+        <translation>移至</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="48"/>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="59"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>移至資料夾‎</translation>
     </message>
 </context>
 <context>
@@ -921,8 +921,8 @@ Application icon:
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="428"/>
         <source>%1 item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform>選取 %1 個項目</numerusform>
+        <translation>
+            <numerusform>已選取 %1 個項目</numerusform>
         </translation>
     </message>
 </context>
@@ -948,140 +948,140 @@ Application icon:
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>搜尋檔案</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation type="unfinished">名稱/位置</translation>
+        <translation>名稱/位置</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>‎檔案名稱樣式</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="unfinished"></translation>
+        <translation>樣式：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation type="unfinished">不分大小寫</translation>
+        <translation>不分大小寫</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
         <location filename="../file-search.ui" line="228"/>
         <source>Use regular expression</source>
-        <translation type="unfinished">用名稱排列</translation>
+        <translation>依順序排列</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation type="unfinished"></translation>
+        <translation>搜尋位置</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>新增</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="88"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>移除</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="117"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished">在子目錄中搜尋</translation>
+        <translation>在子目錄中搜尋</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="124"/>
         <source>Search hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>搜尋隱藏的檔案</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="135"/>
         <location filename="../file-search.ui" line="141"/>
         <source>File Type</source>
-        <translation type="unfinished">檔案類型</translation>
+        <translation>檔案類型</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="147"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished">只搜尋以下類型的檔案：</translation>
+        <translation>只搜尋以下類型的檔案：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="154"/>
         <source>Text files</source>
-        <translation type="unfinished">文字檔</translation>
+        <translation>文字檔</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="161"/>
         <source>Image files</source>
-        <translation type="unfinished">映像檔</translation>
+        <translation>圖片檔</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="168"/>
         <source>Audio files</source>
-        <translation type="unfinished">音訊檔</translation>
+        <translation>音訊檔</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="175"/>
         <source>Video files</source>
-        <translation type="unfinished">影像檔</translation>
+        <translation>影像檔</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="182"/>
         <source>Documents</source>
-        <translation type="unfinished">文件</translation>
+        <translation>文件</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="206"/>
         <source>Content</source>
-        <translation type="unfinished">內容</translation>
+        <translation>內容</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="212"/>
         <source>File contains</source>
-        <translation type="unfinished"></translation>
+        <translation>‎檔案包含‎</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="252"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>‎資訊‎</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="258"/>
         <source>File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案大小</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>‎大於：‎</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation type="unfinished">小於：</translation>
+        <translation>小於：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="317"/>
         <source>Last Modified Time</source>
-        <translation type="unfinished"></translation>
+        <translation>‎上次修改時間‎</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="323"/>
         <source>Earlier than:</source>
-        <translation type="unfinished">早於：</translation>
+        <translation>早於：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="340"/>
         <source>Later than:</source>
-        <translation type="unfinished">晚於：</translation>
+        <translation>晚於：</translation>
     </message>
 </context>
 <context>
@@ -1223,7 +1223,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="101"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>‎顯示內容‎</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="179"/>
@@ -1248,12 +1248,12 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="246"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>取得資訊‎</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="251"/>
         <source>&amp;Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>清空垃圾桶(&amp;E)</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="354"/>
@@ -1516,7 +1516,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="73"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>取得資訊‎</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="99"/>
@@ -1811,7 +1811,7 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="276"/>
         <source>Ctrl+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="285"/>
@@ -1822,7 +1822,7 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="288"/>
         <source>Ctrl+Shift+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="297"/>
@@ -1833,7 +1833,7 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="300"/>
         <source>Ctrl+Shift+R</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+R</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="312"/>
@@ -1883,7 +1883,7 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="368"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="377"/>
@@ -1894,7 +1894,7 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="380"/>
         <source>Ctrl+Shift+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="385"/>
@@ -1911,7 +1911,7 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="400"/>
         <source>Ctrl+Shift+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="409"/>
@@ -1928,7 +1928,7 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="417"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="433"/>
@@ -1939,7 +1939,7 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>Ctrl+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
@@ -1956,7 +1956,7 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="455"/>
         <source>Ctrl+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="463"/>
@@ -2016,12 +2016,12 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="639"/>
         <location filename="../../build/src/ui_main-win.h" line="700"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>移動到垃圾桶(&amp;M)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="655"/>
@@ -2033,113 +2033,113 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="759"/>
         <location filename="../../build/src/ui_main-win.h" line="739"/>
         <source>&amp;Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>移至資料夾(&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="762"/>
         <location filename="../../build/src/ui_main-win.h" line="741"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>移至資料夾‎</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
         <source>Ctrl+Shift+G</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+G</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <location filename="../../build/src/ui_main-win.h" line="746"/>
         <source>&amp;Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>‎下載‎(&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
         <location filename="../../build/src/ui_main-win.h" line="748"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>‎下載‎</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="776"/>
         <source>Ctrl+Shift+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="784"/>
         <location filename="../../build/src/ui_main-win.h" line="753"/>
         <source>&amp;Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>工具程式(&amp;U)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="787"/>
         <location filename="../../build/src/ui_main-win.h" line="755"/>
         <source>Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>工具程式</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="790"/>
         <source>Ctrl+Shift+U</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+U</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="798"/>
         <location filename="../../build/src/ui_main-win.h" line="760"/>
         <source>&amp;Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>文件(&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="801"/>
         <location filename="../../build/src/ui_main-win.h" line="762"/>
         <source>Documents</source>
-        <translation type="unfinished">文件</translation>
+        <translation>文件</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
         <source>Ctrl+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="812"/>
         <location filename="../../build/src/ui_main-win.h" line="767"/>
         <source>Open</source>
-        <translation type="unfinished">開啟</translation>
+        <translation>開啟</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="815"/>
         <source>Ctrl+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <location filename="../../build/src/ui_main-win.h" line="771"/>
         <source>&amp;Duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>再製(&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="828"/>
         <location filename="../../build/src/ui_main-win.h" line="775"/>
         <source>Empty Trash</source>
-        <translation type="unfinished">清空垃圾桶</translation>
+        <translation>清空垃圾桶</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="831"/>
         <source>Ctrl+Alt+Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
         <location filename="../../build/src/ui_main-win.h" line="779"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>‎顯示內容‎</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="839"/>
         <source>Ctrl+Alt+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+O</translation>
     </message>
     <message>
         <source>File &amp;Properties</source>
@@ -2177,18 +2177,18 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="333"/>
         <location filename="../../build/src/ui_main-win.h" line="613"/>
         <source>&amp;About Filer</source>
-        <translation type="unfinished"></translation>
+        <translation>關於 Filer(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
         <location filename="../../build/src/ui_main-win.h" line="709"/>
         <source>Get &amp;Info</source>
-        <translation type="unfinished"></translation>
+        <translation>取得資訊(&amp;I)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="734"/>
@@ -2198,7 +2198,7 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="742"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="750"/>
@@ -3204,7 +3204,7 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="133"/>
         <source>The startvolume cannot be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>啟動卷不能重新命名。</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="221"/>
@@ -3234,7 +3234,7 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="127"/>
         <source>Rename</source>
-        <translation type="unfinished">重新命名</translation>
+        <translation>重新命名</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="237"/>
@@ -3394,7 +3394,7 @@ Modified: %3</source>
         <location filename="../filesearch.ui" line="156"/>
         <location filename="../../build/src/ui_filesearch.h" line="411"/>
         <source>Image files</source>
-        <translation>映像檔</translation>
+        <translation>圖片檔</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="163"/>
