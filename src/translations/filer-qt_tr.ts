@@ -823,7 +823,7 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
         <translation>Metni temizle (CTRL+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="722"/>
+        <location filename="../mainwindow.cpp" line="723"/>
         <source>Version: %1</source>
         <translation>Sürüm: %1</translation>
     </message>
@@ -836,13 +836,13 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
         <translation type="vanished">&amp;Sil</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1418"/>
-        <location filename="../mainwindow.cpp" line="1429"/>
+        <location filename="../mainwindow.cpp" line="1419"/>
+        <location filename="../mainwindow.cpp" line="1430"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1429"/>
+        <location filename="../mainwindow.cpp" line="1430"/>
         <source>Switch user command is not set.</source>
         <translation>Kullanıcı değiştir komutu ayarlanmamış.</translation>
     </message>
@@ -887,7 +887,6 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n öge</numerusform>
-            <numerusform>%n öge</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -895,14 +894,12 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n gizli)</numerusform>
-            <numerusform> (%n gizli)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="428"/>
         <source>%1 item(s) selected</source>
         <translation>
-            <numerusform>%1 öge seçili</numerusform>
             <numerusform>%1 öge seçili</numerusform>
         </translation>
     </message>
@@ -914,12 +911,12 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
         <translation type="vanished">Yeni Sek&amp;mede Aç</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="110"/>
+        <location filename="../view.cpp" line="111"/>
         <source>Open in New Win&amp;dow</source>
         <translation>Yeni Pe&amp;ncerede Aç</translation>
     </message>
     <message>
-        <location filename="../view.cpp" line="117"/>
+        <location filename="../view.cpp" line="119"/>
         <source>Open in Termina&amp;l</source>
         <translation>&amp;Uçbirimde Aç</translation>
     </message>
@@ -1110,12 +1107,12 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
 <context>
     <name>Fm::DirTreeView</name>
     <message>
-        <location filename="../dirtreeview.cpp" line="217"/>
+        <location filename="../dirtreeview.cpp" line="220"/>
         <source>Open in New Win&amp;dow</source>
         <translation>Yeni &amp;pencerede aç</translation>
     </message>
     <message>
-        <location filename="../dirtreeview.cpp" line="223"/>
+        <location filename="../dirtreeview.cpp" line="226"/>
         <source>Open in Termina&amp;l</source>
         <translation>&amp;Uçbirimde aç</translation>
     </message>
@@ -1587,48 +1584,48 @@ Bunun yerine onları silmek ister misiniz?</translation>
 <context>
     <name>Fm::PlacesView</name>
     <message>
-        <location filename="../placesview.cpp" line="345"/>
+        <location filename="../placesview.cpp" line="351"/>
         <source>Open in New Window</source>
         <translation>Yeni pencerede aç</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="354"/>
+        <location filename="../placesview.cpp" line="362"/>
         <source>Empty Trash</source>
         <translation>Çöpü boşalt</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="363"/>
+        <location filename="../placesview.cpp" line="371"/>
         <source>Move Bookmark Up</source>
         <translation>Yer imini yukarı taşı</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="368"/>
+        <location filename="../placesview.cpp" line="376"/>
         <source>Move Bookmark Down</source>
         <translation>Yer imini aşağı taşı</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="372"/>
+        <location filename="../placesview.cpp" line="380"/>
         <source>Rename Bookmark</source>
         <translation>Yer imini yeniden adlandır</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="375"/>
+        <location filename="../placesview.cpp" line="383"/>
         <source>Remove Bookmark</source>
         <translation>Yer imini kaldır</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="384"/>
-        <location filename="../placesview.cpp" line="401"/>
+        <location filename="../placesview.cpp" line="392"/>
+        <location filename="../placesview.cpp" line="409"/>
         <source>Unmount</source>
         <translation>Bağlantıyı kes</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="388"/>
+        <location filename="../placesview.cpp" line="396"/>
         <source>Mount</source>
         <translation>Bağla</translation>
     </message>
     <message>
-        <location filename="../placesview.cpp" line="394"/>
+        <location filename="../placesview.cpp" line="402"/>
         <source>Eject</source>
         <translation>Çıkar</translation>
     </message>
@@ -1699,19 +1696,19 @@ Değiştirme: %3</translation>
     <name>MainWindow</name>
     <message>
         <location filename="../main-win.ui" line="14"/>
-        <location filename="../../build/src/ui_main-win.h" line="597"/>
+        <location filename="../../build/src/ui_main-win.h" line="595"/>
         <source>File Manager</source>
         <translation>Dosya yöneticisi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="270"/>
-        <location filename="../../build/src/ui_main-win.h" line="598"/>
+        <location filename="../../build/src/ui_main-win.h" line="596"/>
         <source>Go &amp;Up</source>
         <translation>&amp;Yukarı git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="273"/>
-        <location filename="../../build/src/ui_main-win.h" line="600"/>
+        <location filename="../../build/src/ui_main-win.h" line="598"/>
         <source>Go Up</source>
         <translation>Yukarı git</translation>
     </message>
@@ -1721,7 +1718,7 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="285"/>
-        <location filename="../../build/src/ui_main-win.h" line="605"/>
+        <location filename="../../build/src/ui_main-win.h" line="603"/>
         <source>&amp;Home</source>
         <translation>&amp;Ev</translation>
     </message>
@@ -1731,7 +1728,7 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="297"/>
-        <location filename="../../build/src/ui_main-win.h" line="609"/>
+        <location filename="../../build/src/ui_main-win.h" line="607"/>
         <source>&amp;Reload</source>
         <translation>Y&amp;enile</translation>
     </message>
@@ -1741,13 +1738,13 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="312"/>
-        <location filename="../../build/src/ui_main-win.h" line="613"/>
+        <location filename="../../build/src/ui_main-win.h" line="611"/>
         <source>Go</source>
         <translation>Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="324"/>
-        <location filename="../../build/src/ui_main-win.h" line="614"/>
+        <location filename="../../build/src/ui_main-win.h" line="612"/>
         <source>Quit</source>
         <translation>Çık</translation>
     </message>
@@ -1757,25 +1754,24 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="342"/>
-        <location filename="../../build/src/ui_main-win.h" line="616"/>
+        <location filename="../../build/src/ui_main-win.h" line="614"/>
         <source>&amp;New Window</source>
         <translation>Yeni &amp;pencere</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="345"/>
-        <location filename="../../build/src/ui_main-win.h" line="618"/>
+        <location filename="../../build/src/ui_main-win.h" line="616"/>
         <source>New Window</source>
         <translation>Yeni pencere</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="348"/>
-        <location filename="../../build/src/ui_main-win.h" line="621"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="356"/>
-        <location filename="../../build/src/ui_main-win.h" line="623"/>
+        <location filename="../../build/src/ui_main-win.h" line="621"/>
         <source>Show &amp;Hidden</source>
         <translation>&amp;Gizli dosyaları ve klasörleri göster</translation>
     </message>
@@ -1785,465 +1781,437 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="365"/>
-        <location filename="../../build/src/ui_main-win.h" line="624"/>
+        <location filename="../../build/src/ui_main-win.h" line="622"/>
         <source>&amp;Computer</source>
         <translation>&amp;Bilgisayar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="368"/>
-        <location filename="../../build/src/ui_main-win.h" line="626"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="377"/>
-        <location filename="../../build/src/ui_main-win.h" line="628"/>
+        <location filename="../../build/src/ui_main-win.h" line="626"/>
         <source>&amp;Trash</source>
         <translation>&amp;Çöp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="380"/>
-        <location filename="../../build/src/ui_main-win.h" line="630"/>
         <source>Ctrl+Shift+T</source>
         <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="385"/>
-        <location filename="../../build/src/ui_main-win.h" line="632"/>
+        <location filename="../../build/src/ui_main-win.h" line="630"/>
         <source>&amp;Network</source>
         <translation>&amp;Ağ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="397"/>
-        <location filename="../../build/src/ui_main-win.h" line="636"/>
+        <location filename="../../build/src/ui_main-win.h" line="634"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Masaüstü</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="400"/>
-        <location filename="../../build/src/ui_main-win.h" line="638"/>
         <source>Ctrl+Shift+D</source>
         <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="409"/>
-        <location filename="../../build/src/ui_main-win.h" line="640"/>
+        <location filename="../../build/src/ui_main-win.h" line="638"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>Yer imlerine e&amp;kle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="414"/>
-        <location filename="../../build/src/ui_main-win.h" line="641"/>
+        <location filename="../../build/src/ui_main-win.h" line="639"/>
         <source>&amp;Applications</source>
         <translation>&amp;Uygulamalar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="417"/>
-        <location filename="../../build/src/ui_main-win.h" line="643"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="425"/>
-        <location filename="../../build/src/ui_main-win.h" line="645"/>
+        <location filename="../../build/src/ui_main-win.h" line="643"/>
         <source>Reload</source>
         <translation>Yenile</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="433"/>
-        <location filename="../../build/src/ui_main-win.h" line="646"/>
+        <location filename="../../build/src/ui_main-win.h" line="644"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Simge görünümü</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="436"/>
-        <location filename="../../build/src/ui_main-win.h" line="648"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
-        <location filename="../../build/src/ui_main-win.h" line="650"/>
+        <location filename="../../build/src/ui_main-win.h" line="648"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Kompakt görünüm</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="452"/>
-        <location filename="../../build/src/ui_main-win.h" line="651"/>
+        <location filename="../../build/src/ui_main-win.h" line="649"/>
         <source>&amp;Detailed List</source>
         <translation>Ay&amp;rıntılı Liste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="455"/>
-        <location filename="../../build/src/ui_main-win.h" line="653"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="463"/>
-        <location filename="../../build/src/ui_main-win.h" line="655"/>
+        <location filename="../../build/src/ui_main-win.h" line="653"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Küçük resim görünümü</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="472"/>
-        <location filename="../../build/src/ui_main-win.h" line="656"/>
+        <location filename="../../build/src/ui_main-win.h" line="654"/>
         <source>Cu&amp;t</source>
         <translation>Ke&amp;s</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="475"/>
-        <location filename="../../build/src/ui_main-win.h" line="658"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="484"/>
-        <location filename="../../build/src/ui_main-win.h" line="660"/>
+        <location filename="../../build/src/ui_main-win.h" line="658"/>
         <source>&amp;Copy</source>
         <translation>K&amp;opyala</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="487"/>
-        <location filename="../../build/src/ui_main-win.h" line="662"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="496"/>
-        <location filename="../../build/src/ui_main-win.h" line="664"/>
+        <location filename="../../build/src/ui_main-win.h" line="662"/>
         <source>&amp;Paste</source>
         <translation>Ya&amp;pıştır</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="499"/>
-        <location filename="../../build/src/ui_main-win.h" line="666"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="504"/>
-        <location filename="../../build/src/ui_main-win.h" line="668"/>
+        <location filename="../../build/src/ui_main-win.h" line="666"/>
         <source>Select &amp;All</source>
         <translation>Tümünü S&amp;eç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="507"/>
-        <location filename="../../build/src/ui_main-win.h" line="670"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="512"/>
-        <location filename="../../build/src/ui_main-win.h" line="672"/>
+        <location filename="../../build/src/ui_main-win.h" line="670"/>
         <source>Pr&amp;eferences</source>
         <translation>&amp;Tercihler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="520"/>
-        <location filename="../../build/src/ui_main-win.h" line="673"/>
+        <location filename="../../build/src/ui_main-win.h" line="671"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Artan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="528"/>
-        <location filename="../../build/src/ui_main-win.h" line="674"/>
+        <location filename="../../build/src/ui_main-win.h" line="672"/>
         <source>&amp;Descending</source>
         <translation>A&amp;zalan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="536"/>
-        <location filename="../../build/src/ui_main-win.h" line="675"/>
+        <location filename="../../build/src/ui_main-win.h" line="673"/>
         <source>&amp;By File Name</source>
         <translation>&amp;Dosya Adına Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="544"/>
-        <location filename="../../build/src/ui_main-win.h" line="676"/>
+        <location filename="../../build/src/ui_main-win.h" line="674"/>
         <source>By &amp;Modification Time</source>
         <translation>D&amp;eğiştirme Tarihine Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="552"/>
-        <location filename="../../build/src/ui_main-win.h" line="677"/>
+        <location filename="../../build/src/ui_main-win.h" line="675"/>
         <source>By File &amp;Type</source>
         <translation>Dosya &amp;Türüne Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="560"/>
-        <location filename="../../build/src/ui_main-win.h" line="678"/>
+        <location filename="../../build/src/ui_main-win.h" line="676"/>
         <source>By &amp;Owner</source>
         <translation>&amp;Sahibine Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="568"/>
-        <location filename="../../build/src/ui_main-win.h" line="679"/>
+        <location filename="../../build/src/ui_main-win.h" line="677"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Klasörler İlk Sırada</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="639"/>
-        <location filename="../../build/src/ui_main-win.h" line="702"/>
+        <location filename="../../build/src/ui_main-win.h" line="700"/>
         <source>&amp;Move to Trash</source>
         <translation>Çöpe &amp;at</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
-        <location filename="../../build/src/ui_main-win.h" line="704"/>
         <source>Ctrl+Backspace</source>
         <translation>Ctrl+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
-        <location filename="../../build/src/ui_main-win.h" line="711"/>
+        <location filename="../../build/src/ui_main-win.h" line="709"/>
         <source>Get &amp;Info</source>
         <translation>B&amp;ilgi al</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="663"/>
-        <location filename="../../build/src/ui_main-win.h" line="713"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="671"/>
-        <location filename="../../build/src/ui_main-win.h" line="715"/>
+        <location filename="../../build/src/ui_main-win.h" line="713"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;BÜYÜK/küçük Harf Duyarlı</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="679"/>
-        <location filename="../../build/src/ui_main-win.h" line="716"/>
+        <location filename="../../build/src/ui_main-win.h" line="714"/>
         <source>By File &amp;Size</source>
         <translation>Dosya &amp;Boyutuna Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="684"/>
-        <location filename="../../build/src/ui_main-win.h" line="717"/>
+        <location filename="../../build/src/ui_main-win.h" line="715"/>
         <source>&amp;Close Window</source>
         <translation>&amp;Pencereyi Kapat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="719"/>
-        <location filename="../../build/src/ui_main-win.h" line="728"/>
+        <location filename="../../build/src/ui_main-win.h" line="726"/>
         <source>&amp;Folder</source>
         <translation>&amp;Klasör</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="731"/>
-        <location filename="../../build/src/ui_main-win.h" line="732"/>
+        <location filename="../../build/src/ui_main-win.h" line="730"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Boş Dosya</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="742"/>
-        <location filename="../../build/src/ui_main-win.h" line="738"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="759"/>
-        <location filename="../../build/src/ui_main-win.h" line="741"/>
+        <location filename="../../build/src/ui_main-win.h" line="739"/>
         <source>&amp;Go To Folder</source>
         <translation>Klasöre &amp;git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="762"/>
-        <location filename="../../build/src/ui_main-win.h" line="743"/>
+        <location filename="../../build/src/ui_main-win.h" line="741"/>
         <source>Go To Folder</source>
         <translation>Klasöre git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="765"/>
-        <location filename="../../build/src/ui_main-win.h" line="746"/>
         <source>Ctrl+Shift+G</source>
         <translation>Ctrl+Shift+G</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
-        <location filename="../../build/src/ui_main-win.h" line="748"/>
+        <location filename="../../build/src/ui_main-win.h" line="746"/>
         <source>&amp;Downloads</source>
         <translation>İ&amp;ndirmeler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
-        <location filename="../../build/src/ui_main-win.h" line="750"/>
+        <location filename="../../build/src/ui_main-win.h" line="748"/>
         <source>Downloads</source>
         <translation>İndirmeler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="776"/>
-        <location filename="../../build/src/ui_main-win.h" line="753"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="784"/>
-        <location filename="../../build/src/ui_main-win.h" line="755"/>
+        <location filename="../../build/src/ui_main-win.h" line="753"/>
         <source>&amp;Utilities</source>
         <translation>İ&amp;zlenceler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="787"/>
-        <location filename="../../build/src/ui_main-win.h" line="757"/>
+        <location filename="../../build/src/ui_main-win.h" line="755"/>
         <source>Utilities</source>
         <translation>İzlenceler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="790"/>
-        <location filename="../../build/src/ui_main-win.h" line="760"/>
         <source>Ctrl+Shift+U</source>
         <translation>Ctrl+Shift+U</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="798"/>
-        <location filename="../../build/src/ui_main-win.h" line="762"/>
+        <location filename="../../build/src/ui_main-win.h" line="760"/>
         <source>&amp;Documents</source>
         <translation>&amp;Belgeler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="801"/>
-        <location filename="../../build/src/ui_main-win.h" line="764"/>
+        <location filename="../../build/src/ui_main-win.h" line="762"/>
         <source>Documents</source>
         <translation>Belgeler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
-        <location filename="../../build/src/ui_main-win.h" line="767"/>
         <source>Ctrl+Shift+O</source>
         <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="812"/>
-        <location filename="../../build/src/ui_main-win.h" line="769"/>
+        <location filename="../../build/src/ui_main-win.h" line="767"/>
         <source>Open</source>
         <translation>Aç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="815"/>
-        <location filename="../../build/src/ui_main-win.h" line="771"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
-        <location filename="../../build/src/ui_main-win.h" line="773"/>
+        <location filename="../../build/src/ui_main-win.h" line="771"/>
         <source>&amp;Duplicate</source>
         <translation>Ç&amp;oğalt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="823"/>
-        <location filename="../../build/src/ui_main-win.h" line="775"/>
         <source>Ctrl+D</source>
         <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="828"/>
-        <location filename="../../build/src/ui_main-win.h" line="777"/>
+        <location filename="../../build/src/ui_main-win.h" line="775"/>
         <source>Empty Trash</source>
         <translation>Çöpü boşalt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="831"/>
-        <location filename="../../build/src/ui_main-win.h" line="779"/>
         <source>Ctrl+Alt+Backspace</source>
         <translation>Ctrl+Alt+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
-        <location filename="../../build/src/ui_main-win.h" line="781"/>
+        <location filename="../../build/src/ui_main-win.h" line="779"/>
         <source>Show Contents</source>
         <translation>İçeriği göster</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="839"/>
-        <location filename="../../build/src/ui_main-win.h" line="783"/>
         <source>Ctrl+Alt+O</source>
         <translation>Ctrl+Alt+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="577"/>
-        <location filename="../../build/src/ui_main-win.h" line="680"/>
+        <location filename="../../build/src/ui_main-win.h" line="678"/>
         <source>New &amp;Tab</source>
         <translation>Yeni &amp;Sekme</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="276"/>
-        <location filename="../../build/src/ui_main-win.h" line="603"/>
         <source>Ctrl+Up</source>
         <translation>Ctrl+Yukarı</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="288"/>
-        <location filename="../../build/src/ui_main-win.h" line="607"/>
         <source>Ctrl+Shift+H</source>
         <translation>Ctrl+Shift+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="300"/>
-        <location filename="../../build/src/ui_main-win.h" line="611"/>
         <source>Ctrl+Shift+R</source>
         <translation>Ctrl+Shift+R</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="333"/>
-        <location filename="../../build/src/ui_main-win.h" line="615"/>
+        <location filename="../../build/src/ui_main-win.h" line="613"/>
         <source>&amp;About Filer</source>
         <translation>Dosyalayıcı &amp;hakkında</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="580"/>
-        <location filename="../../build/src/ui_main-win.h" line="682"/>
+        <location filename="../../build/src/ui_main-win.h" line="680"/>
         <source>New Tab</source>
         <translation>Yeni Sekme</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="583"/>
         <location filename="../main-win.ui" line="700"/>
-        <location filename="../../build/src/ui_main-win.h" line="685"/>
-        <location filename="../../build/src/ui_main-win.h" line="724"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
-        <location filename="../../build/src/ui_main-win.h" line="687"/>
+        <location filename="../../build/src/ui_main-win.h" line="685"/>
         <source>Go &amp;Back</source>
         <translation>Geri &amp;Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="598"/>
-        <location filename="../../build/src/ui_main-win.h" line="689"/>
+        <location filename="../../build/src/ui_main-win.h" line="687"/>
         <source>Go Back</source>
         <translation>Geri Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="601"/>
-        <location filename="../../build/src/ui_main-win.h" line="692"/>
         <source>Alt+Left</source>
         <translation>Alt+Sol ok</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="610"/>
-        <location filename="../../build/src/ui_main-win.h" line="694"/>
+        <location filename="../../build/src/ui_main-win.h" line="692"/>
         <source>Go &amp;Forward</source>
         <translation>İ&amp;leri Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="613"/>
-        <location filename="../../build/src/ui_main-win.h" line="696"/>
+        <location filename="../../build/src/ui_main-win.h" line="694"/>
         <source>Go Forward</source>
         <translation>İleri Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="616"/>
-        <location filename="../../build/src/ui_main-win.h" line="699"/>
         <source>Alt+Right</source>
         <translation>Alt+Sağ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="630"/>
-        <location filename="../../build/src/ui_main-win.h" line="701"/>
+        <location filename="../../build/src/ui_main-win.h" line="699"/>
         <source>&amp;Invert Selection</source>
         <translation>Seçimi Te&amp;rs Çevir</translation>
     </message>
@@ -2257,25 +2225,24 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="647"/>
-        <location filename="../../build/src/ui_main-win.h" line="706"/>
+        <location filename="../../build/src/ui_main-win.h" line="704"/>
         <source>&amp;Rename</source>
         <translation>Yeniden &amp;Adlandır</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="650"/>
-        <location filename="../../build/src/ui_main-win.h" line="708"/>
+        <location filename="../../build/src/ui_main-win.h" line="706"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="655"/>
-        <location filename="../../build/src/ui_main-win.h" line="710"/>
+        <location filename="../../build/src/ui_main-win.h" line="708"/>
         <source>C&amp;lose Tab</source>
         <translation>Sekmeyi &amp;Kapat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="687"/>
-        <location filename="../../build/src/ui_main-win.h" line="719"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
@@ -2293,13 +2260,13 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
-        <location filename="../../build/src/ui_main-win.h" line="721"/>
+        <location filename="../../build/src/ui_main-win.h" line="719"/>
         <source>Edit Bookmarks</source>
         <translation>Yer İmlerini Düzenle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="697"/>
-        <location filename="../../build/src/ui_main-win.h" line="722"/>
+        <location filename="../../build/src/ui_main-win.h" line="720"/>
         <source>Open &amp;Terminal</source>
         <translation>&amp;Uçbirimi Aç</translation>
     </message>
@@ -2309,33 +2276,30 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="705"/>
-        <location filename="../../build/src/ui_main-win.h" line="726"/>
+        <location filename="../../build/src/ui_main-win.h" line="724"/>
         <source>Open as &amp;Root</source>
         <translation>&amp;Kök Olarak Aç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="710"/>
-        <location filename="../../build/src/ui_main-win.h" line="727"/>
+        <location filename="../../build/src/ui_main-win.h" line="725"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>Y&amp;er İmlerini Düzenle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="388"/>
         <location filename="../main-win.ui" line="722"/>
-        <location filename="../../build/src/ui_main-win.h" line="634"/>
-        <location filename="../../build/src/ui_main-win.h" line="730"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="734"/>
-        <location filename="../../build/src/ui_main-win.h" line="734"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
-        <location filename="../../build/src/ui_main-win.h" line="736"/>
+        <location filename="../../build/src/ui_main-win.h" line="734"/>
         <source>&amp;Find Files</source>
         <translation>Dosya &amp;Bul</translation>
     </message>
@@ -2345,75 +2309,232 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="750"/>
-        <location filename="../../build/src/ui_main-win.h" line="740"/>
+        <location filename="../../build/src/ui_main-win.h" line="738"/>
         <source>Filter</source>
         <translation>Süzgeç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="93"/>
-        <location filename="../../build/src/ui_main-win.h" line="785"/>
+        <location filename="../../build/src/ui_main-win.h" line="783"/>
         <source>Filter by string...</source>
         <translation>Dizeye göre süz…</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="117"/>
-        <location filename="../../build/src/ui_main-win.h" line="786"/>
+        <location filename="../../build/src/ui_main-win.h" line="784"/>
         <source>&amp;File</source>
         <translation>%Dosya</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="121"/>
-        <location filename="../../build/src/ui_main-win.h" line="787"/>
+        <location filename="../../build/src/ui_main-win.h" line="785"/>
         <source>C&amp;reate New</source>
         <translation>Yeni &amp;Oluştur</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="140"/>
-        <location filename="../../build/src/ui_main-win.h" line="788"/>
+        <location filename="../../build/src/ui_main-win.h" line="786"/>
         <source>&amp;Help</source>
         <translation>&amp;Yardım</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="146"/>
-        <location filename="../../build/src/ui_main-win.h" line="789"/>
+        <location filename="../../build/src/ui_main-win.h" line="787"/>
         <source>&amp;View</source>
         <translation>&amp;Görünüm</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="150"/>
-        <location filename="../../build/src/ui_main-win.h" line="790"/>
+        <location filename="../../build/src/ui_main-win.h" line="788"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Sıralama</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="176"/>
-        <location filename="../../build/src/ui_main-win.h" line="791"/>
+        <location filename="../../build/src/ui_main-win.h" line="789"/>
         <source>&amp;Edit</source>
         <translation>&amp;Düzen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="194"/>
-        <location filename="../../build/src/ui_main-win.h" line="792"/>
+        <location filename="../../build/src/ui_main-win.h" line="790"/>
         <source>&amp;Bookmarks</source>
         <translation>Ye&amp;r İmleri</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="201"/>
-        <location filename="../../build/src/ui_main-win.h" line="793"/>
+        <location filename="../../build/src/ui_main-win.h" line="791"/>
         <source>&amp;Go</source>
         <translation>G&amp;it</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="221"/>
-        <location filename="../../build/src/ui_main-win.h" line="794"/>
+        <location filename="../../build/src/ui_main-win.h" line="792"/>
         <source>&amp;Tool</source>
         <translation>&amp;Araç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="238"/>
-        <location filename="../../build/src/ui_main-win.h" line="795"/>
+        <location filename="../../build/src/ui_main-win.h" line="793"/>
         <source>Main Toolbar</source>
         <translation>Ana Araç Çubuğu</translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="601"/>
+        <source>CtrlUp</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="605"/>
+        <source>CtrlShiftH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="609"/>
+        <source>CtrlShiftR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="619"/>
+        <source>CtrlN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="624"/>
+        <source>CtrlShiftC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="628"/>
+        <source>CtrlShiftT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="632"/>
+        <location filename="../../build/src/ui_main-win.h" line="728"/>
+        <source>CtrlShiftN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="636"/>
+        <source>CtrlShiftD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="641"/>
+        <source>CtrlShiftA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="646"/>
+        <source>Ctrl1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="651"/>
+        <source>Ctrl2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="656"/>
+        <source>CtrlX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="660"/>
+        <source>CtrlC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="664"/>
+        <source>CtrlV</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="668"/>
+        <source>CtrlA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="683"/>
+        <location filename="../../build/src/ui_main-win.h" line="722"/>
+        <source>CtrlT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="690"/>
+        <source>⌥Left</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="697"/>
+        <source>⌥Right</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="702"/>
+        <source>CtrlBackspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="711"/>
+        <source>CtrlI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="717"/>
+        <source>CtrlW</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="732"/>
+        <source>Ctrl⌥N</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="736"/>
+        <source>CtrlF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="744"/>
+        <source>CtrlShiftG</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="751"/>
+        <source>CtrlShiftL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="758"/>
+        <source>CtrlShiftU</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="765"/>
+        <source>CtrlShiftO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="769"/>
+        <source>CtrlO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="773"/>
+        <source>CtrlD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="777"/>
+        <source>Ctrl⌥Backspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../build/src/ui_main-win.h" line="781"/>
+        <source>Ctrl⌥O</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

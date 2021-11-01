@@ -220,6 +220,7 @@ MainWindow::MainWindow(FmPath* path):
     ui.sidePane->hide();
     ui.toolBar->hide();
     ui.frame->layout()->setContentsMargins(0, 0, 0, 0);
+    delete ui.actionNewWin; // Will be removed from menubar when window is opened next time; FIXME: Do immediately when Spatial mode mode is set
 
     // Set the window position and size
     MetaData metaData(fm_path_to_str(path));
@@ -1012,6 +1013,8 @@ void Filer::MainWindow::disableMenuItems()
     ui.actionCopy->setEnabled(false);
     ui.actionDuplicate->setEnabled(false);
     ui.actionRename->setEnabled(false);
+    ui.actionTrash->setEnabled(false);
+    ui.actionShowContents->setEnabled(false);
 }
 
 void Filer::MainWindow::enableMenuItems()
@@ -1024,6 +1027,8 @@ void Filer::MainWindow::enableMenuItems()
     ui.actionCopy->setEnabled(true);
     ui.actionDuplicate->setEnabled(true);
     ui.actionRename->setEnabled(true);
+    ui.actionTrash->setEnabled(true);
+    ui.actionShowContents->setEnabled(true);
 }
 
 void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
