@@ -146,8 +146,9 @@ DesktopWindow::DesktopWindow(int screenNum):
 
     // setup shortcuts
     QShortcut* shortcut;
-
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down), this); // pronono: open
+    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onOpenActivated); // probono
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_Down), this); // pronono: open
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onOpenActivated); // probono
 
     /*

@@ -194,6 +194,9 @@ MainWindow::MainWindow(FmPath* path):
   shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down), this); // pronono: open
   connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionOpen_triggered); // probono
 
+  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_Down), this); // pronono: open and close current window
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionOpenAndCloseCurrentWindow_triggered); // probono
+
   shortcut = new QShortcut(QKeySequence(Qt::Key_Delete), this); // probono: put in trash
   connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDelete_triggered);
 
@@ -212,6 +215,11 @@ MainWindow::MainWindow(FmPath* path):
   if(path)
     addTab(path);
 
+  // Will be reflected in menubar when window is opened next time;
+  // hence also treating this in MainWindow::updateFromSettings for immediate effect
+  ui.actionNewWin->setVisible( ! settings.spatialMode() ); // probono
+  ui.actionGoUpAndCloseCurrentWindow->setVisible( settings.spatialMode() ); // probono
+
   // size from spatial mode or from settings
   if (settings.spatialMode()) {
 
@@ -220,7 +228,6 @@ MainWindow::MainWindow(FmPath* path):
     ui.sidePane->hide();
     ui.toolBar->hide();
     ui.frame->layout()->setContentsMargins(0, 0, 0, 0);
-    delete ui.actionNewWin; // Will be removed from menubar when window is opened next time; FIXME: Do immediately when Spatial mode mode is set
 
     // Set the window position and size
     MetaData metaData(fm_path_to_str(path));
@@ -412,6 +419,22 @@ void MainWindow::on_actionGoUp_triggered() {
   }
 }
 
+// probono
+void MainWindow::on_actionGoUpAndCloseCurrentWindow_triggered() {
+    // Do not blindly close the window, but only when the path has a parent (= is not /)
+    TabPage* page = currentPage();
+
+    if(page) {
+      ui.filterBar->clear();
+      FmPath* parent = fm_path_get_parent(page->path());
+      if (parent)
+      {
+          MainWindow::on_actionGoUp_triggered();
+          close();
+      }
+    }
+}
+
 void MainWindow::on_actionGoBack_triggered() {
   TabPage* page = currentPage();
 
@@ -497,6 +520,21 @@ void MainWindow::on_actionOpen_triggered() {
                 Fm::FileLauncher launcher;
                 launcher.launchFiles(NULL, files);
             }
+        }
+    }
+}
+
+// probono
+void MainWindow::on_actionOpenAndCloseCurrentWindow_triggered() {
+    // Do not blindly do this, but only if files are selected
+    TabPage* page = currentPage();
+
+    if(page) {
+        FmFileInfoList* files = page->selectedFiles();
+
+        if(files) {
+            MainWindow::on_actionOpen_triggered();
+            close();
         }
     }
 }
@@ -968,6 +1006,7 @@ void MainWindow::updateUIForCurrentPage() {
 
     // update back/forward/up toolbar buttons
     ui.actionGoUp->setEnabled(tabPage->canUp());
+    ui.actionGoUpAndCloseCurrentWindow->setEnabled(tabPage->canUp());
     ui.actionGoBack->setEnabled(tabPage->canBackward());
     ui.actionGoForward->setEnabled(tabPage->canForward());
 
@@ -1374,6 +1413,8 @@ void MainWindow::updateFromSettings(Settings& settings) {
   }
 
   // spatial mode
+  ui.actionNewWin->setVisible( ! settings.spatialMode() ); // probono
+  ui.actionGoUpAndCloseCurrentWindow->setVisible( settings.spatialMode() ); // probono
   ui.tabBar->setVisible( ! settings.spatialMode() );
   ui.sidePane->setVisible( ! settings.spatialMode() );
   ui.toolBar->setVisible( ! settings.spatialMode() );

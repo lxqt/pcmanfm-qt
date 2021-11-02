@@ -69,6 +69,7 @@ protected Q_SLOTS:
   void on_actionCloseTab_triggered();
   void on_actionCloseWindow_triggered();
   void on_actionOpen_triggered(); // probono
+  void on_actionOpenAndCloseCurrentWindow_triggered(); // probono
   void on_actionShowContents_triggered(); // probono
   void on_actionFileProperties_triggered();
   void on_actionFolderProperties_triggered();
@@ -88,6 +89,7 @@ protected Q_SLOTS:
   void on_actionGoBack_triggered();
   void on_actionGoForward_triggered();
   void on_actionGoUp_triggered();
+  void on_actionGoUpAndCloseCurrentWindow_triggered(); // probono
   void on_actionHome_triggered();
   void on_actionReload_triggered();
 

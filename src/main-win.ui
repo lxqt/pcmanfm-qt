@@ -203,6 +203,7 @@
     <addaction name="actionGoBack"/>
     <addaction name="actionGoForward"/>
     <addaction name="actionGoUp"/>
+    <addaction name="actionGoUpAndCloseCurrentWindow"/>
     <addaction name="separator"/>
     <addaction name="actionHome"/>
     <addaction name="actionDocuments"/>
@@ -837,6 +838,21 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Alt+O</string>
+   </property>
+  </action>
+  <action name="actionGoUpAndCloseCurrentWindow">
+   <property name="icon">
+    <iconset theme="go-up">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Go Up and Close Current</string>
+   </property>
+   <property name="toolTip">
+    <string>Go Up and Close Current</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Up</string>
    </property>
   </action>
  </widget>
