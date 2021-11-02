@@ -1582,7 +1582,7 @@ Modified: %3</source>
         <location filename="../sidepane.cpp" line="50"/>
         <location filename="../sidepane.cpp" line="135"/>
         <source>Directory Tree</source>
-        <translation>Mappe træ</translation>
+        <translation>Mappetræ</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="143"/>
@@ -2784,7 +2784,7 @@ Modified: %3</source>
         <location filename="../rename-dialog.ui" line="122"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="163"/>
         <source>&amp;File name:</source>
-        <translation>&amp;Fil navn:</translation>
+        <translation>&amp;Filnavn:</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="137"/>
