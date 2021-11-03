@@ -888,6 +888,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>
             <numerusform>פריט אחד</numerusform>
             <numerusform>שני פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -896,6 +898,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
             <numerusform> (שניים מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -904,6 +908,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>
             <numerusform>פריט נבחר</numerusform>
             <numerusform>שני פריטים נבחרו</numerusform>
+            <numerusform>%1 פריטים נבחרו</numerusform>
+            <numerusform>%1 פריטים נבחרו</numerusform>
         </translation>
     </message>
 </context>
@@ -2537,7 +2543,7 @@ Modified: %3</source>
     <message>
         <location filename="../../build/src/ui_main-win.h" line="781"/>
         <source>Ctrl⌥O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl⌥O</translation>
     </message>
 </context>
 <context>
