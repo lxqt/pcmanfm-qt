@@ -405,7 +405,7 @@ Je také vyhrazeno místo pro 3 řádky textu.</translation>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
         <translation>Ve výchozím nastavení se složky plochy otevřou v PCManFM-Qt, pokud na ně
-klepnete levým tlačítkem, i když to není výchozí správce souborů.</translation>
+kliknete levým tlačítkem, i když to není výchozí správce souborů.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
@@ -647,7 +647,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation>Vložit do pole dočasného filtru</translation>
+        <translation>Vložit do kolonky v pruhu dočasného filtru</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -677,7 +677,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation>Udělat symbolický odkaz při upuštění</translation>
+        <translation>Při upuštění vytvořit symbolický odkaz</translation>
     </message>
 </context>
 <context>
@@ -730,7 +730,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="221"/>
         <source>&amp;Tools</source>
-        <translation>&amp;Nástroje</translation>
+        <translation>Nás&amp;troje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="295"/>
@@ -1272,7 +1272,7 @@ klepnete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="672"/>
         <source>Alt+Return</source>
-        <translation>Alt+Return</translation>
+        <translation>Alt+Enter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="706"/>
@@ -1923,7 +1923,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../preferences.ui" line="93"/>
         <source>Open files with single click</source>
-        <translation>Otevírat soubory jedním klepnutím</translation>
+        <translation>Otevírat soubory jedním kliknutím</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="113"/>
@@ -1999,7 +1999,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation>Ukázat související nabídku ke složce pomocí Ctrl + klepnutí pravým tlačítkem myši</translation>
+        <translation>Ukázat související nabídku ke složce pomocí Ctrl + kliknutí pravým tlačítkem myši</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
@@ -2124,7 +2124,7 @@ pouze pokud je více než jeden panel.</translation>
     <message>
         <location filename="../preferences.ui" line="578"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation>Otevřít karty posledního okna v novém okně</translation>
+        <translation>V novém okně znovu otevřít karty z posledního okna</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="628"/>
@@ -2132,7 +2132,7 @@ pouze pokud je více než jeden panel.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation>Vestavěný tvůrce náhledů vytvoří miniatury obrázků, které jsou podporovány Qt.
+        <translation>Vestavěný nástroj pro vytváření náhledů vyrábí miniatury obrázků z formátů, které jsou podporovány Qt.
 
 Obvykle je podporována většina typů obrázků. Výchozí limit velikosti je 4 MiB.</translation>
     </message>
@@ -2160,7 +2160,7 @@ Hodnota -1 znamená, že neexistuje žádný limit pro velikost souboru (výchoz
     <message>
         <location filename="../preferences.ui" line="666"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation>Limit velikosti souboru pro externí miniatury:</translation>
+        <translation>Limit velikosti souboru pro externí nástroje pro vytváření náhledů:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
