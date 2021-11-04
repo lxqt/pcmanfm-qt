@@ -2816,7 +2816,7 @@ Modified: %3</source>
         <location filename="../preferences.ui" line="102"/>
         <location filename="../../build/src/ui_preferences.h" line="660"/>
         <source>Spatial mode (folders open in a new window)</source>
-        <translation type="unfinished"></translation>
+        <translation>分層模式 (在新窗口中打開資料夾)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="298"/>
