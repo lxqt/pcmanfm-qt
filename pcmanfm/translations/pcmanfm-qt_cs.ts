@@ -410,7 +410,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Otevřít složky na ploše ve výchozím správci souborů klepnutím levým tlačítkem myši</translation>
+        <translation>Otevřít složky na ploše ve výchozím správci souborů kliknutím levým tlačítkem myši</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
@@ -1272,7 +1272,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="672"/>
         <source>Alt+Return</source>
-        <translation>Alt+Enter</translation>
+        <translation>Alt+Return</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="706"/>
