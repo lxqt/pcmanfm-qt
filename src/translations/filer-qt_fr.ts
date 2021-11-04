@@ -77,7 +77,35 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer
+
+Copyright (C) 2020-21 Simon Peter
+Copyright (C) 2021 Chris Moore
+
+Basé initialement sur PCMan File Manager
+Portions Copyright (C) 2009-14 洪任諭 (Hong Jen Yee)
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+Icône de l&apos;application
+
+https://dribbble.com/shots/2541211--Pirate-Finder-icon#
+
+Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
+
+Utilisé avec la permisson de son créateur https://raphaellopes.me/</translation>
     </message>
     <message>
         <source>Lightweight file manager</source>
@@ -504,7 +532,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         <location filename="../exec-file.ui" line="85"/>
         <location filename="../../build/src/ui_exec-file.h" line="119"/>
         <source>Cancel</source>
-        <translation type="unfinished">Annuler</translation>
+        <translation>Annuler</translation>
     </message>
 </context>
 <context>
@@ -592,7 +620,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
@@ -861,7 +889,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="528"/>
         <source>Version: %1</source>
-        <translation type="unfinished">Version: %1</translation>
+        <translation>Version : %1</translation>
     </message>
 </context>
 <context>
@@ -869,12 +897,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../gotofolderwindow.cpp" line="47"/>
         <source>Go</source>
-        <translation type="unfinished">Aller à…</translation>
+        <translation>Aller à</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="48"/>
         <source>Cancel</source>
-        <translation type="unfinished">Annuler</translation>
+        <translation>Annuler</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="59"/>
@@ -951,7 +979,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../tabpage.cpp" line="264"/>
         <source>%1 available</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 disponible</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="277"/>
@@ -972,9 +1000,9 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="431"/>
         <source>%1 item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform>%1&#xa0;élément(s) sélectionné(s)</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1&#xa0;élément sélectionné</numerusform>
+            <numerusform>%1 éléments sélectionnés</numerusform>
         </translation>
     </message>
 </context>
@@ -1010,12 +1038,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>Motifs pour nom de fichier</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="unfinished"></translation>
+        <translation>Motif :</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
@@ -1157,7 +1185,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished">Dossier</translation>
+        <translation>Dossier</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
@@ -1496,7 +1524,7 @@ Voulez-vous plutôt les supprimer ?</translation>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>Error</source>
-        <translation type="unfinished">Erreur</translation>
+        <translation>Erreur</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
@@ -2188,13 +2216,13 @@ Modification : %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="790"/>
         <location filename="../../build/src/ui_main-win.h" line="792"/>
         <source>Go Up and Close Current</source>
-        <translation type="unfinished"></translation>
+        <translation>Aller au dessus et fermer l&apos;actuel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="855"/>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Shift+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Up</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
@@ -3192,7 +3220,7 @@ Modification : %3</translation>
         <location filename="../filesearch.ui" line="35"/>
         <location filename="../../build/src/ui_filesearch.h" line="399"/>
         <source>File Name Patterns:</source>
-        <translation type="unfinished"></translation>
+        <translation>Motifs pour nom de fichier :</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="41"/>
