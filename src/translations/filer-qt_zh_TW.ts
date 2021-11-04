@@ -940,7 +940,7 @@ Application icon:
     <message>
         <location filename="../tabpage.cpp" line="264"/>
         <source>%1 available</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 可用</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="277"/>
@@ -2204,13 +2204,13 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="790"/>
         <location filename="../../build/src/ui_main-win.h" line="792"/>
         <source>Go Up and Close Current</source>
-        <translation type="unfinished"></translation>
+        <translation>往上以及關閉目前的視窗</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="855"/>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Shift+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Up</translation>
     </message>
     <message>
         <source>File &amp;Properties</source>
@@ -2810,13 +2810,13 @@ Modified: %3</source>
         <location filename="../preferences.ui" line="92"/>
         <location filename="../../build/src/ui_preferences.h" line="659"/>
         <source>Save metadata to directories (.DirInfo files)</source>
-        <translation type="unfinished"></translation>
+        <translation>將中繼資料儲存到目錄 (.DirInfo 檔案)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="102"/>
         <location filename="../../build/src/ui_preferences.h" line="660"/>
         <source>Spatial mode (folders open in a new window)</source>
-        <translation>分層模式 (在新窗口中打開資料夾)</translation>
+        <translation>分層模式 (在新視窗中打開資料夾)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="298"/>
@@ -3142,7 +3142,7 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="226"/>
         <source>Please enter a new file name:</source>
-        <translation>請輸入一個新檔名：</translation>
+        <translation>請輸入一個新檔案名稱：</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="231"/>
