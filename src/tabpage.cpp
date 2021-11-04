@@ -255,10 +255,14 @@ void TabPage::restoreScrollPos() {
     char total_str[64];
     char free_str[64];
     fm_file_size_to_str(free_str, sizeof(free_str), free, fm_config->si_unit);
+    /*
     fm_file_size_to_str(total_str, sizeof(total_str), total, fm_config->si_unit);
+
     msg = tr("Free space: %1 (Total: %2)")
           .arg(QString::fromUtf8(free_str))
           .arg(QString::fromUtf8(total_str));
+    */
+    msg = tr("%1 available").arg(QString::fromUtf8(free_str)); // probono: Simplified
   }
   else
     msg.clear();
@@ -271,9 +275,13 @@ QString TabPage::formatStatusText() {
     int total_files = fm_file_info_list_get_length(files);
     int shown_files = proxyModel_->rowCount();
     int hidden_files = total_files - shown_files;
-    QString text = tr("%n item(s)", "", shown_files);
+    QString text = tr("%n items", "", shown_files);
+    if(shown_files == 1)
+      text = tr("1 item");
+    /*
     if(hidden_files > 0)
       text += tr(" (%n hidden)", "", hidden_files);
+    */
     return text;
   }
   return QString();
@@ -425,7 +433,12 @@ void TabPage::onSelChanged(int numSel) {
     else {
       goffset sum;
       GList* l;
-      msg = tr("%1 item(s) selected", NULL, numSel).arg(numSel);
+      msg = tr("%1 items selected", NULL, numSel).arg(numSel);
+      if(numSel == 1) {
+          /* If only one item is selected, detailed information about that file is shown,
+          so that this should actually never be needed */
+          msg = tr("%1 item selected", NULL, numSel).arg(numSel);
+      }
       /* don't count if too many files are selected, that isn't lightweight */
       if(numSel < 1000) {
         sum = 0;

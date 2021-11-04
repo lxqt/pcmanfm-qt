@@ -782,17 +782,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>Filer::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="438"/>
+        <location filename="../desktopwindow.cpp" line="439"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>היצמדו&amp;ת לאזור הנוכחי</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="460"/>
+        <location filename="../desktopwindow.cpp" line="461"/>
         <source>Desktop Preferences</source>
         <translation>העדפות שולחן העבודה</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="527"/>
+        <location filename="../desktopwindow.cpp" line="528"/>
         <source>Version: %1</source>
         <translation>גרסה: %1</translation>
     </message>
@@ -818,12 +818,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>Filer::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="207"/>
+        <location filename="../mainwindow.cpp" line="210"/>
         <source>Clear text (Ctrl+K)</source>
         <translation>פינוי הטקסט (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="723"/>
+        <location filename="../mainwindow.cpp" line="761"/>
         <source>Version: %1</source>
         <translation>גרסה: %1</translation>
     </message>
@@ -836,13 +836,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="vanished">מ&amp;חיקה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1419"/>
-        <location filename="../mainwindow.cpp" line="1430"/>
+        <location filename="../mainwindow.cpp" line="1464"/>
+        <location filename="../mainwindow.cpp" line="1475"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1430"/>
+        <location filename="../mainwindow.cpp" line="1475"/>
         <source>Switch user command is not set.</source>
         <translation>פקודת החלפת המשתמש לא נקבעה.</translation>
     </message>
@@ -878,38 +878,36 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="259"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>שטח פנוי: %1 (בסך הכול: %2)</translation>
+        <translation type="vanished">שטח פנוי: %1 (בסך הכול: %2)</translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="264"/>
+        <source>%1 available</source>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="274"/>
+        <location filename="../tabpage.cpp" line="277"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>פריט אחד</numerusform>
             <numerusform>שני פריטים</numerusform>
-            <numerusform>%n פריטים</numerusform>
-            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="276"/>
+        <location filename="../tabpage.cpp" line="279"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
             <numerusform> (שניים מוסתרים)</numerusform>
-            <numerusform> (%n מוסתרים)</numerusform>
-            <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="428"/>
+        <location filename="../tabpage.cpp" line="431"/>
         <source>%1 item(s) selected</source>
         <translation>
             <numerusform>פריט נבחר</numerusform>
             <numerusform>שני פריטים נבחרו</numerusform>
-            <numerusform>%1 פריטים נבחרו</numerusform>
-            <numerusform>%1 פריטים נבחרו</numerusform>
         </translation>
     </message>
 </context>
@@ -1705,19 +1703,19 @@ Modified: %3</source>
     <name>MainWindow</name>
     <message>
         <location filename="../main-win.ui" line="14"/>
-        <location filename="../../build/src/ui_main-win.h" line="595"/>
+        <location filename="../../build/src/ui_main-win.h" line="602"/>
         <source>File Manager</source>
         <translation>מנהל קבצים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="270"/>
-        <location filename="../../build/src/ui_main-win.h" line="596"/>
+        <location filename="../main-win.ui" line="271"/>
+        <location filename="../../build/src/ui_main-win.h" line="603"/>
         <source>Go &amp;Up</source>
         <translation>ל&amp;עלות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="273"/>
-        <location filename="../../build/src/ui_main-win.h" line="598"/>
+        <location filename="../main-win.ui" line="274"/>
+        <location filename="../../build/src/ui_main-win.h" line="605"/>
         <source>Go Up</source>
         <translation>לעלות</translation>
     </message>
@@ -1726,8 +1724,8 @@ Modified: %3</source>
         <translation type="vanished">‪Alt+למעלה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="285"/>
-        <location filename="../../build/src/ui_main-win.h" line="603"/>
+        <location filename="../main-win.ui" line="286"/>
+        <location filename="../../build/src/ui_main-win.h" line="610"/>
         <source>&amp;Home</source>
         <translation>&amp;בית</translation>
     </message>
@@ -1736,8 +1734,8 @@ Modified: %3</source>
         <translation type="vanished">Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="297"/>
-        <location filename="../../build/src/ui_main-win.h" line="607"/>
+        <location filename="../main-win.ui" line="298"/>
+        <location filename="../../build/src/ui_main-win.h" line="614"/>
         <source>&amp;Reload</source>
         <translation>&amp;רענון</translation>
     </message>
@@ -1746,14 +1744,14 @@ Modified: %3</source>
         <translation type="vanished">F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="312"/>
-        <location filename="../../build/src/ui_main-win.h" line="611"/>
+        <location filename="../main-win.ui" line="313"/>
+        <location filename="../../build/src/ui_main-win.h" line="618"/>
         <source>Go</source>
         <translation>לגשת אל</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="324"/>
-        <location filename="../../build/src/ui_main-win.h" line="612"/>
+        <location filename="../main-win.ui" line="325"/>
+        <location filename="../../build/src/ui_main-win.h" line="619"/>
         <source>Quit</source>
         <translation>יציאה</translation>
     </message>
@@ -1762,25 +1760,26 @@ Modified: %3</source>
         <translation type="vanished">&amp;אודות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="342"/>
-        <location filename="../../build/src/ui_main-win.h" line="614"/>
+        <location filename="../main-win.ui" line="343"/>
+        <location filename="../../build/src/ui_main-win.h" line="621"/>
         <source>&amp;New Window</source>
         <translation>&amp;חלון חדש</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="345"/>
-        <location filename="../../build/src/ui_main-win.h" line="616"/>
+        <location filename="../main-win.ui" line="346"/>
+        <location filename="../../build/src/ui_main-win.h" line="623"/>
         <source>New Window</source>
         <translation>חלון חדש</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="348"/>
+        <location filename="../main-win.ui" line="349"/>
+        <location filename="../../build/src/ui_main-win.h" line="626"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="356"/>
-        <location filename="../../build/src/ui_main-win.h" line="621"/>
+        <location filename="../main-win.ui" line="357"/>
+        <location filename="../../build/src/ui_main-win.h" line="628"/>
         <source>Show &amp;Hidden</source>
         <translation>הצגת מוס&amp;תרים</translation>
     </message>
@@ -1789,438 +1788,480 @@ Modified: %3</source>
         <translation type="vanished">Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="365"/>
-        <location filename="../../build/src/ui_main-win.h" line="622"/>
+        <location filename="../main-win.ui" line="366"/>
+        <location filename="../../build/src/ui_main-win.h" line="629"/>
         <source>&amp;Computer</source>
         <translation>מ&amp;חשב</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="368"/>
+        <location filename="../main-win.ui" line="369"/>
+        <location filename="../../build/src/ui_main-win.h" line="631"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="377"/>
-        <location filename="../../build/src/ui_main-win.h" line="626"/>
+        <location filename="../main-win.ui" line="378"/>
+        <location filename="../../build/src/ui_main-win.h" line="633"/>
         <source>&amp;Trash</source>
         <translation>&amp;אשפה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="380"/>
+        <location filename="../main-win.ui" line="381"/>
+        <location filename="../../build/src/ui_main-win.h" line="635"/>
         <source>Ctrl+Shift+T</source>
         <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="385"/>
-        <location filename="../../build/src/ui_main-win.h" line="630"/>
+        <location filename="../main-win.ui" line="386"/>
+        <location filename="../../build/src/ui_main-win.h" line="637"/>
         <source>&amp;Network</source>
         <translation>&amp;רשת</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="397"/>
-        <location filename="../../build/src/ui_main-win.h" line="634"/>
+        <location filename="../main-win.ui" line="398"/>
+        <location filename="../../build/src/ui_main-win.h" line="641"/>
         <source>&amp;Desktop</source>
         <translation>שו&amp;לחן עבודה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="400"/>
+        <location filename="../main-win.ui" line="401"/>
+        <location filename="../../build/src/ui_main-win.h" line="643"/>
         <source>Ctrl+Shift+D</source>
         <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="409"/>
-        <location filename="../../build/src/ui_main-win.h" line="638"/>
+        <location filename="../main-win.ui" line="410"/>
+        <location filename="../../build/src/ui_main-win.h" line="645"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>הוספה לסימ&amp;ניות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="414"/>
-        <location filename="../../build/src/ui_main-win.h" line="639"/>
+        <location filename="../main-win.ui" line="415"/>
+        <location filename="../../build/src/ui_main-win.h" line="646"/>
         <source>&amp;Applications</source>
         <translation>&amp;יישומים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="417"/>
+        <location filename="../main-win.ui" line="418"/>
+        <location filename="../../build/src/ui_main-win.h" line="648"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="425"/>
-        <location filename="../../build/src/ui_main-win.h" line="643"/>
+        <location filename="../main-win.ui" line="426"/>
+        <location filename="../../build/src/ui_main-win.h" line="650"/>
         <source>Reload</source>
         <translation>רענון</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="433"/>
-        <location filename="../../build/src/ui_main-win.h" line="644"/>
+        <location filename="../main-win.ui" line="434"/>
+        <location filename="../../build/src/ui_main-win.h" line="651"/>
         <source>&amp;Icon View</source>
         <translation>תצוגת סמ&amp;לים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="436"/>
+        <location filename="../main-win.ui" line="437"/>
+        <location filename="../../build/src/ui_main-win.h" line="653"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="444"/>
-        <location filename="../../build/src/ui_main-win.h" line="648"/>
+        <location filename="../main-win.ui" line="445"/>
+        <location filename="../../build/src/ui_main-win.h" line="655"/>
         <source>&amp;Compact View</source>
         <translation>תצוגה &amp;חסכונית</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="452"/>
-        <location filename="../../build/src/ui_main-win.h" line="649"/>
+        <location filename="../main-win.ui" line="453"/>
+        <location filename="../../build/src/ui_main-win.h" line="656"/>
         <source>&amp;Detailed List</source>
         <translation>רשימה מ&amp;פורטת</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="455"/>
+        <location filename="../main-win.ui" line="456"/>
+        <location filename="../../build/src/ui_main-win.h" line="658"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="463"/>
-        <location filename="../../build/src/ui_main-win.h" line="653"/>
+        <location filename="../main-win.ui" line="464"/>
+        <location filename="../../build/src/ui_main-win.h" line="660"/>
         <source>&amp;Thumbnail View</source>
         <translation>תצוגת &amp;תמונות ממוזערות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="472"/>
-        <location filename="../../build/src/ui_main-win.h" line="654"/>
+        <location filename="../main-win.ui" line="473"/>
+        <location filename="../../build/src/ui_main-win.h" line="661"/>
         <source>Cu&amp;t</source>
         <translation>ג&amp;זירה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="475"/>
+        <location filename="../main-win.ui" line="476"/>
+        <location filename="../../build/src/ui_main-win.h" line="663"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="484"/>
-        <location filename="../../build/src/ui_main-win.h" line="658"/>
+        <location filename="../main-win.ui" line="485"/>
+        <location filename="../../build/src/ui_main-win.h" line="665"/>
         <source>&amp;Copy</source>
         <translation>ה&amp;עתקה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="487"/>
+        <location filename="../main-win.ui" line="488"/>
+        <location filename="../../build/src/ui_main-win.h" line="667"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="496"/>
-        <location filename="../../build/src/ui_main-win.h" line="662"/>
+        <location filename="../main-win.ui" line="497"/>
+        <location filename="../../build/src/ui_main-win.h" line="669"/>
         <source>&amp;Paste</source>
         <translation>ה&amp;דבקה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="499"/>
+        <location filename="../main-win.ui" line="500"/>
+        <location filename="../../build/src/ui_main-win.h" line="671"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="504"/>
-        <location filename="../../build/src/ui_main-win.h" line="666"/>
+        <location filename="../main-win.ui" line="505"/>
+        <location filename="../../build/src/ui_main-win.h" line="673"/>
         <source>Select &amp;All</source>
         <translation>לבחור ה&amp;כול</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="507"/>
+        <location filename="../main-win.ui" line="508"/>
+        <location filename="../../build/src/ui_main-win.h" line="675"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="512"/>
-        <location filename="../../build/src/ui_main-win.h" line="670"/>
+        <location filename="../main-win.ui" line="513"/>
+        <location filename="../../build/src/ui_main-win.h" line="677"/>
         <source>Pr&amp;eferences</source>
         <translation>ה&amp;עדפות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="520"/>
-        <location filename="../../build/src/ui_main-win.h" line="671"/>
+        <location filename="../main-win.ui" line="521"/>
+        <location filename="../../build/src/ui_main-win.h" line="678"/>
         <source>&amp;Ascending</source>
         <translation>עו&amp;לה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="528"/>
-        <location filename="../../build/src/ui_main-win.h" line="672"/>
+        <location filename="../main-win.ui" line="529"/>
+        <location filename="../../build/src/ui_main-win.h" line="679"/>
         <source>&amp;Descending</source>
         <translation>יו&amp;רד</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="536"/>
-        <location filename="../../build/src/ui_main-win.h" line="673"/>
+        <location filename="../main-win.ui" line="537"/>
+        <location filename="../../build/src/ui_main-win.h" line="680"/>
         <source>&amp;By File Name</source>
         <translation>לפי שם &amp;קובץ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="544"/>
-        <location filename="../../build/src/ui_main-win.h" line="674"/>
+        <location filename="../main-win.ui" line="545"/>
+        <location filename="../../build/src/ui_main-win.h" line="681"/>
         <source>By &amp;Modification Time</source>
         <translation>לפי מועד &amp;שינוי</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="552"/>
-        <location filename="../../build/src/ui_main-win.h" line="675"/>
+        <location filename="../main-win.ui" line="553"/>
+        <location filename="../../build/src/ui_main-win.h" line="682"/>
         <source>By File &amp;Type</source>
         <translation>לפי &amp;סוג קובץ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="560"/>
-        <location filename="../../build/src/ui_main-win.h" line="676"/>
+        <location filename="../main-win.ui" line="561"/>
+        <location filename="../../build/src/ui_main-win.h" line="683"/>
         <source>By &amp;Owner</source>
         <translation>לפי &amp;בעלות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="568"/>
-        <location filename="../../build/src/ui_main-win.h" line="677"/>
+        <location filename="../main-win.ui" line="569"/>
+        <location filename="../../build/src/ui_main-win.h" line="684"/>
         <source>&amp;Folder First</source>
         <translation>&amp;תיקיות בהתחלה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="639"/>
-        <location filename="../../build/src/ui_main-win.h" line="700"/>
+        <location filename="../main-win.ui" line="640"/>
+        <location filename="../../build/src/ui_main-win.h" line="707"/>
         <source>&amp;Move to Trash</source>
         <translation>העברה ל&amp;אשפה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="642"/>
+        <location filename="../main-win.ui" line="643"/>
+        <location filename="../../build/src/ui_main-win.h" line="709"/>
         <source>Ctrl+Backspace</source>
         <translation>Ctrl+Backspace</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="660"/>
-        <location filename="../../build/src/ui_main-win.h" line="709"/>
+        <location filename="../main-win.ui" line="661"/>
+        <location filename="../../build/src/ui_main-win.h" line="716"/>
         <source>Get &amp;Info</source>
         <translation>קבלת &amp;מידע</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="663"/>
+        <location filename="../main-win.ui" line="664"/>
+        <location filename="../../build/src/ui_main-win.h" line="718"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="671"/>
-        <location filename="../../build/src/ui_main-win.h" line="713"/>
+        <location filename="../main-win.ui" line="672"/>
+        <location filename="../../build/src/ui_main-win.h" line="720"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;תלוי רישיות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="679"/>
-        <location filename="../../build/src/ui_main-win.h" line="714"/>
+        <location filename="../main-win.ui" line="680"/>
+        <location filename="../../build/src/ui_main-win.h" line="721"/>
         <source>By File &amp;Size</source>
         <translation>לפי &amp;גודל קובץ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="684"/>
-        <location filename="../../build/src/ui_main-win.h" line="715"/>
+        <location filename="../main-win.ui" line="685"/>
+        <location filename="../../build/src/ui_main-win.h" line="722"/>
         <source>&amp;Close Window</source>
         <translation>&amp;סגירת חלון</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="719"/>
-        <location filename="../../build/src/ui_main-win.h" line="726"/>
+        <location filename="../main-win.ui" line="720"/>
+        <location filename="../../build/src/ui_main-win.h" line="733"/>
         <source>&amp;Folder</source>
         <translation>&amp;תיקייה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="731"/>
-        <location filename="../../build/src/ui_main-win.h" line="730"/>
+        <location filename="../main-win.ui" line="732"/>
+        <location filename="../../build/src/ui_main-win.h" line="737"/>
         <source>&amp;Blank File</source>
         <translation>קובץ &amp;ריק</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="742"/>
+        <location filename="../main-win.ui" line="743"/>
+        <location filename="../../build/src/ui_main-win.h" line="743"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="759"/>
-        <location filename="../../build/src/ui_main-win.h" line="739"/>
+        <location filename="../main-win.ui" line="760"/>
+        <location filename="../../build/src/ui_main-win.h" line="746"/>
         <source>&amp;Go To Folder</source>
         <translation>מ&amp;עבר לתיקייה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="762"/>
-        <location filename="../../build/src/ui_main-win.h" line="741"/>
+        <location filename="../main-win.ui" line="763"/>
+        <location filename="../../build/src/ui_main-win.h" line="748"/>
         <source>Go To Folder</source>
         <translation>מעבר לתיקייה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="765"/>
+        <location filename="../main-win.ui" line="766"/>
+        <location filename="../../build/src/ui_main-win.h" line="751"/>
         <source>Ctrl+Shift+G</source>
         <translation>Ctrl+Shift+G</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="770"/>
-        <location filename="../../build/src/ui_main-win.h" line="746"/>
+        <location filename="../main-win.ui" line="771"/>
+        <location filename="../../build/src/ui_main-win.h" line="753"/>
         <source>&amp;Downloads</source>
         <translation>הור&amp;דות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="773"/>
-        <location filename="../../build/src/ui_main-win.h" line="748"/>
+        <location filename="../main-win.ui" line="774"/>
+        <location filename="../../build/src/ui_main-win.h" line="755"/>
         <source>Downloads</source>
         <translation>הורדות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="776"/>
+        <location filename="../main-win.ui" line="777"/>
+        <location filename="../../build/src/ui_main-win.h" line="758"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="784"/>
-        <location filename="../../build/src/ui_main-win.h" line="753"/>
+        <location filename="../main-win.ui" line="785"/>
+        <location filename="../../build/src/ui_main-win.h" line="760"/>
         <source>&amp;Utilities</source>
         <translation>&amp;עזרים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="787"/>
-        <location filename="../../build/src/ui_main-win.h" line="755"/>
+        <location filename="../main-win.ui" line="788"/>
+        <location filename="../../build/src/ui_main-win.h" line="762"/>
         <source>Utilities</source>
         <translation>עזרים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="790"/>
+        <location filename="../main-win.ui" line="791"/>
+        <location filename="../../build/src/ui_main-win.h" line="765"/>
         <source>Ctrl+Shift+U</source>
         <translation>Ctrl+Shift+U</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="798"/>
-        <location filename="../../build/src/ui_main-win.h" line="760"/>
+        <location filename="../main-win.ui" line="799"/>
+        <location filename="../../build/src/ui_main-win.h" line="767"/>
         <source>&amp;Documents</source>
         <translation>מ&amp;סמכים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="801"/>
-        <location filename="../../build/src/ui_main-win.h" line="762"/>
+        <location filename="../main-win.ui" line="802"/>
+        <location filename="../../build/src/ui_main-win.h" line="769"/>
         <source>Documents</source>
         <translation>מסמכים</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="804"/>
+        <location filename="../main-win.ui" line="805"/>
+        <location filename="../../build/src/ui_main-win.h" line="772"/>
         <source>Ctrl+Shift+O</source>
         <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="812"/>
-        <location filename="../../build/src/ui_main-win.h" line="767"/>
+        <location filename="../main-win.ui" line="813"/>
+        <location filename="../../build/src/ui_main-win.h" line="774"/>
         <source>Open</source>
         <translation>פתיחה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="815"/>
+        <location filename="../main-win.ui" line="816"/>
+        <location filename="../../build/src/ui_main-win.h" line="776"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="820"/>
-        <location filename="../../build/src/ui_main-win.h" line="771"/>
+        <location filename="../main-win.ui" line="821"/>
+        <location filename="../../build/src/ui_main-win.h" line="778"/>
         <source>&amp;Duplicate</source>
         <translation>&amp;שכפול</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="823"/>
+        <location filename="../main-win.ui" line="824"/>
+        <location filename="../../build/src/ui_main-win.h" line="780"/>
         <source>Ctrl+D</source>
         <translation>Ctrl+D</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="828"/>
-        <location filename="../../build/src/ui_main-win.h" line="775"/>
+        <location filename="../main-win.ui" line="829"/>
+        <location filename="../../build/src/ui_main-win.h" line="782"/>
         <source>Empty Trash</source>
         <translation>פינוי האשפה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="831"/>
+        <location filename="../main-win.ui" line="832"/>
+        <location filename="../../build/src/ui_main-win.h" line="784"/>
         <source>Ctrl+Alt+Backspace</source>
         <translation>Ctrl+Alt+Backspace</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="836"/>
-        <location filename="../../build/src/ui_main-win.h" line="779"/>
+        <location filename="../main-win.ui" line="837"/>
+        <location filename="../../build/src/ui_main-win.h" line="786"/>
         <source>Show Contents</source>
         <translation>הצגת תוכן</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="839"/>
+        <location filename="../main-win.ui" line="840"/>
+        <location filename="../../build/src/ui_main-win.h" line="788"/>
         <source>Ctrl+Alt+O</source>
         <translation>Ctrl+Alt+O</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="577"/>
-        <location filename="../../build/src/ui_main-win.h" line="678"/>
+        <location filename="../main-win.ui" line="849"/>
+        <location filename="../main-win.ui" line="852"/>
+        <location filename="../../build/src/ui_main-win.h" line="790"/>
+        <location filename="../../build/src/ui_main-win.h" line="792"/>
+        <source>Go Up and Close Current</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="855"/>
+        <location filename="../../build/src/ui_main-win.h" line="795"/>
+        <source>Ctrl+Shift+Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="578"/>
+        <location filename="../../build/src/ui_main-win.h" line="685"/>
         <source>New &amp;Tab</source>
         <translation>לשונית &amp;חדשה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="276"/>
+        <location filename="../main-win.ui" line="277"/>
+        <location filename="../../build/src/ui_main-win.h" line="608"/>
         <source>Ctrl+Up</source>
         <translation>Ctrl+למעלה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="288"/>
+        <location filename="../main-win.ui" line="289"/>
+        <location filename="../../build/src/ui_main-win.h" line="612"/>
         <source>Ctrl+Shift+H</source>
         <translation>Ctrl+Shift+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="300"/>
+        <location filename="../main-win.ui" line="301"/>
+        <location filename="../../build/src/ui_main-win.h" line="616"/>
         <source>Ctrl+Shift+R</source>
         <translation>Ctrl+Shift+R</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="333"/>
-        <location filename="../../build/src/ui_main-win.h" line="613"/>
+        <location filename="../main-win.ui" line="334"/>
+        <location filename="../../build/src/ui_main-win.h" line="620"/>
         <source>&amp;About Filer</source>
         <translation>&amp;על Filer</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="580"/>
-        <location filename="../../build/src/ui_main-win.h" line="680"/>
+        <location filename="../main-win.ui" line="581"/>
+        <location filename="../../build/src/ui_main-win.h" line="687"/>
         <source>New Tab</source>
         <translation>לשונית חדשה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="583"/>
-        <location filename="../main-win.ui" line="700"/>
+        <location filename="../main-win.ui" line="584"/>
+        <location filename="../main-win.ui" line="701"/>
+        <location filename="../../build/src/ui_main-win.h" line="690"/>
+        <location filename="../../build/src/ui_main-win.h" line="729"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="595"/>
-        <location filename="../../build/src/ui_main-win.h" line="685"/>
+        <location filename="../main-win.ui" line="596"/>
+        <location filename="../../build/src/ui_main-win.h" line="692"/>
         <source>Go &amp;Back</source>
         <translation>ח&amp;זרה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="598"/>
-        <location filename="../../build/src/ui_main-win.h" line="687"/>
+        <location filename="../main-win.ui" line="599"/>
+        <location filename="../../build/src/ui_main-win.h" line="694"/>
         <source>Go Back</source>
         <translation>חזר אחורה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="601"/>
+        <location filename="../main-win.ui" line="602"/>
+        <location filename="../../build/src/ui_main-win.h" line="697"/>
         <source>Alt+Left</source>
         <translation>‪Alt+שמאלה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="610"/>
-        <location filename="../../build/src/ui_main-win.h" line="692"/>
+        <location filename="../main-win.ui" line="611"/>
+        <location filename="../../build/src/ui_main-win.h" line="699"/>
         <source>Go &amp;Forward</source>
         <translation>הת&amp;קדמות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="613"/>
-        <location filename="../../build/src/ui_main-win.h" line="694"/>
+        <location filename="../main-win.ui" line="614"/>
+        <location filename="../../build/src/ui_main-win.h" line="701"/>
         <source>Go Forward</source>
         <translation>התקדמות קדימה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="616"/>
+        <location filename="../main-win.ui" line="617"/>
+        <location filename="../../build/src/ui_main-win.h" line="704"/>
         <source>Alt+Right</source>
         <translation>‪Alt+ימינה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="630"/>
-        <location filename="../../build/src/ui_main-win.h" line="699"/>
+        <location filename="../main-win.ui" line="631"/>
+        <location filename="../../build/src/ui_main-win.h" line="706"/>
         <source>&amp;Invert Selection</source>
         <translation>הי&amp;פוך בחירה</translation>
     </message>
@@ -2233,25 +2274,26 @@ Modified: %3</source>
         <translation type="vanished">Del</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="647"/>
-        <location filename="../../build/src/ui_main-win.h" line="704"/>
+        <location filename="../main-win.ui" line="648"/>
+        <location filename="../../build/src/ui_main-win.h" line="711"/>
         <source>&amp;Rename</source>
         <translation>&amp;שינוי שם</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="650"/>
-        <location filename="../../build/src/ui_main-win.h" line="706"/>
+        <location filename="../main-win.ui" line="651"/>
+        <location filename="../../build/src/ui_main-win.h" line="713"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="655"/>
-        <location filename="../../build/src/ui_main-win.h" line="708"/>
+        <location filename="../main-win.ui" line="656"/>
+        <location filename="../../build/src/ui_main-win.h" line="715"/>
         <source>C&amp;lose Tab</source>
         <translation>&amp;סגירת לשונית</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="687"/>
+        <location filename="../main-win.ui" line="688"/>
+        <location filename="../../build/src/ui_main-win.h" line="724"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
@@ -2268,14 +2310,14 @@ Modified: %3</source>
         <translation type="vanished">מאפייני &amp;תיקייה</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="692"/>
-        <location filename="../../build/src/ui_main-win.h" line="719"/>
+        <location filename="../main-win.ui" line="693"/>
+        <location filename="../../build/src/ui_main-win.h" line="726"/>
         <source>Edit Bookmarks</source>
         <translation>עריכת סימניות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="697"/>
-        <location filename="../../build/src/ui_main-win.h" line="720"/>
+        <location filename="../main-win.ui" line="698"/>
+        <location filename="../../build/src/ui_main-win.h" line="727"/>
         <source>Open &amp;Terminal</source>
         <translation>פתיחת מ&amp;סוף</translation>
     </message>
@@ -2284,31 +2326,34 @@ Modified: %3</source>
         <translation type="vanished">F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="705"/>
-        <location filename="../../build/src/ui_main-win.h" line="724"/>
+        <location filename="../main-win.ui" line="706"/>
+        <location filename="../../build/src/ui_main-win.h" line="731"/>
         <source>Open as &amp;Root</source>
         <translation>פתיחה כמשתמש &amp;על</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="710"/>
-        <location filename="../../build/src/ui_main-win.h" line="725"/>
+        <location filename="../main-win.ui" line="711"/>
+        <location filename="../../build/src/ui_main-win.h" line="732"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;עריכת סימניות</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="388"/>
-        <location filename="../main-win.ui" line="722"/>
+        <location filename="../main-win.ui" line="389"/>
+        <location filename="../main-win.ui" line="723"/>
+        <location filename="../../build/src/ui_main-win.h" line="639"/>
+        <location filename="../../build/src/ui_main-win.h" line="735"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="734"/>
+        <location filename="../main-win.ui" line="735"/>
+        <location filename="../../build/src/ui_main-win.h" line="739"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="739"/>
-        <location filename="../../build/src/ui_main-win.h" line="734"/>
+        <location filename="../main-win.ui" line="740"/>
+        <location filename="../../build/src/ui_main-win.h" line="741"/>
         <source>&amp;Find Files</source>
         <translation>&amp;איתור קבצים</translation>
     </message>
@@ -2317,233 +2362,80 @@ Modified: %3</source>
         <translation type="vanished">F3</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="750"/>
-        <location filename="../../build/src/ui_main-win.h" line="738"/>
+        <location filename="../main-win.ui" line="751"/>
+        <location filename="../../build/src/ui_main-win.h" line="745"/>
         <source>Filter</source>
         <translation>מסנן</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="93"/>
-        <location filename="../../build/src/ui_main-win.h" line="783"/>
+        <location filename="../../build/src/ui_main-win.h" line="797"/>
         <source>Filter by string...</source>
         <translation>סינון לפי מחרוזת…</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="117"/>
-        <location filename="../../build/src/ui_main-win.h" line="784"/>
+        <location filename="../../build/src/ui_main-win.h" line="798"/>
         <source>&amp;File</source>
         <translation>&amp;קובץ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="121"/>
-        <location filename="../../build/src/ui_main-win.h" line="785"/>
+        <location filename="../../build/src/ui_main-win.h" line="799"/>
         <source>C&amp;reate New</source>
         <translation>י&amp;צירת חדש</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="140"/>
-        <location filename="../../build/src/ui_main-win.h" line="786"/>
+        <location filename="../../build/src/ui_main-win.h" line="800"/>
         <source>&amp;Help</source>
         <translation>ע&amp;זרה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="146"/>
-        <location filename="../../build/src/ui_main-win.h" line="787"/>
+        <location filename="../../build/src/ui_main-win.h" line="801"/>
         <source>&amp;View</source>
         <translation>ת&amp;צוגה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="150"/>
-        <location filename="../../build/src/ui_main-win.h" line="788"/>
+        <location filename="../../build/src/ui_main-win.h" line="802"/>
         <source>&amp;Sorting</source>
         <translation>&amp;מיון</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="176"/>
-        <location filename="../../build/src/ui_main-win.h" line="789"/>
+        <location filename="../../build/src/ui_main-win.h" line="803"/>
         <source>&amp;Edit</source>
         <translation>ע&amp;ריכה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="194"/>
-        <location filename="../../build/src/ui_main-win.h" line="790"/>
+        <location filename="../../build/src/ui_main-win.h" line="804"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;סימניות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="201"/>
-        <location filename="../../build/src/ui_main-win.h" line="791"/>
+        <location filename="../../build/src/ui_main-win.h" line="805"/>
         <source>&amp;Go</source>
         <translation>ל&amp;גשת אל</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="221"/>
-        <location filename="../../build/src/ui_main-win.h" line="792"/>
+        <location filename="../main-win.ui" line="222"/>
+        <location filename="../../build/src/ui_main-win.h" line="806"/>
         <source>&amp;Tool</source>
         <translation>&amp;כלי</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="238"/>
-        <location filename="../../build/src/ui_main-win.h" line="793"/>
+        <location filename="../main-win.ui" line="239"/>
+        <location filename="../../build/src/ui_main-win.h" line="807"/>
         <source>Main Toolbar</source>
         <translation>סרגל הכלים הראשי</translation>
     </message>
     <message>
-        <location filename="../../build/src/ui_main-win.h" line="601"/>
-        <source>CtrlUp</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="605"/>
-        <source>CtrlShiftH</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="609"/>
-        <source>CtrlShiftR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="619"/>
-        <source>CtrlN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="624"/>
-        <source>CtrlShiftC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="628"/>
-        <source>CtrlShiftT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="632"/>
-        <location filename="../../build/src/ui_main-win.h" line="728"/>
-        <source>CtrlShiftN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="636"/>
-        <source>CtrlShiftD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="641"/>
-        <source>CtrlShiftA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="646"/>
-        <source>Ctrl1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="651"/>
-        <source>Ctrl2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="656"/>
-        <source>CtrlX</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="660"/>
-        <source>CtrlC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="664"/>
-        <source>CtrlV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="668"/>
-        <source>CtrlA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="683"/>
-        <location filename="../../build/src/ui_main-win.h" line="722"/>
-        <source>CtrlT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="690"/>
-        <source>⌥Left</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="697"/>
-        <source>⌥Right</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="702"/>
-        <source>CtrlBackspace</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="711"/>
-        <source>CtrlI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="717"/>
-        <source>CtrlW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="732"/>
-        <source>Ctrl⌥N</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="736"/>
-        <source>CtrlF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="744"/>
-        <source>CtrlShiftG</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="751"/>
-        <source>CtrlShiftL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="758"/>
-        <source>CtrlShiftU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="765"/>
-        <source>CtrlShiftO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="769"/>
-        <source>CtrlO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="773"/>
-        <source>CtrlD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="777"/>
-        <source>Ctrl⌥Backspace</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../build/src/ui_main-win.h" line="781"/>
         <source>Ctrl⌥O</source>
-        <translation>Ctrl⌥O</translation>
+        <translation type="vanished">Ctrl⌥O</translation>
     </message>
 </context>
 <context>
