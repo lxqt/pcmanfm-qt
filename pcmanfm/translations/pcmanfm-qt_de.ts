@@ -1706,7 +1706,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2235"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordnereinstellungen bereinigen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2236"/>
