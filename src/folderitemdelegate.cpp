@@ -122,7 +122,7 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
       painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
 
     // draw the text
-    QRectF textRect(opt.rect.x(), opt.rect.y() + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
+    QRectF textRect(opt.rect.x(), opt.rect.y()+3 + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
     drawText(painter, opt, textRect);
     painter->restore();
   }
@@ -182,9 +182,9 @@ void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItem& opt, 
   // probono: draw background rounded rect for selected item
   QRectF boundRect = layout.boundingRect();
   int additionalSpace = 1;
-  boundRect.setWidth(width + 8*additionalSpace);
+  boundRect.setWidth(width + 16*additionalSpace);
   boundRect.setHeight(boundRect.height() + 2*additionalSpace);
-  boundRect.moveTo(textRect.x() - 4*additionalSpace + (textRect.width() - width)/2, textRect.y() - additionalSpace);
+  boundRect.moveTo(textRect.x() - 8*additionalSpace + (textRect.width() - width)/2, textRect.y() - additionalSpace);
 
   if(!painter) { // no painter, calculate the bounding rect only
     textRect = boundRect;

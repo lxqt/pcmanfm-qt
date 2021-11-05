@@ -115,7 +115,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   }
 
   // draw text
-  QRectF textRect(opt.rect.x(), opt.rect.y() + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
+  QRectF textRect(opt.rect.x(), opt.rect.y()+3 + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
   QTextLayout layout(opt.text, font_);
 
   QTextOption textOption;
@@ -154,9 +154,9 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   // probono: draw background rounded rect for selected item
   QRectF boundRect = layout.boundingRect();
   int additionalSpace = 1;
-  boundRect.setWidth(width + 8*additionalSpace);
+  boundRect.setWidth(width + 16*additionalSpace);
   boundRect.setHeight(boundRect.height() + 2*additionalSpace);
-  boundRect.moveTo(textRect.x() - 4*additionalSpace + (textRect.width() - width)/2, textRect.y() - additionalSpace);
+  boundRect.moveTo(textRect.x() - 8*additionalSpace + (textRect.width() - width)/2, textRect.y() - additionalSpace);
 
   if((opt.state & QStyle::State_Selected) && opt.widget) {
     QPalette palette = opt.widget->palette();
