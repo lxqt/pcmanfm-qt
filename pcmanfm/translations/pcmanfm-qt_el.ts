@@ -706,7 +706,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="283"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>
@@ -2055,7 +2055,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="399"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Απενεργοποίηση της εξομάλυνσης κύλισης στις λίστες και στη συμπαγή προβολή</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
