@@ -884,7 +884,7 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     <message>
         <location filename="../tabpage.cpp" line="264"/>
         <source>%1 available</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 kullanılabilir</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="277"/>
@@ -2168,13 +2168,13 @@ Değiştirme: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="790"/>
         <location filename="../../build/src/ui_main-win.h" line="792"/>
         <source>Go Up and Close Current</source>
-        <translation type="unfinished"></translation>
+        <translation>Yukarı git ve geçerliyi kapat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="855"/>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Shift+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Yukarı</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="578"/>
