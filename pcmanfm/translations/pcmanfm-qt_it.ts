@@ -1689,7 +1689,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1900"/>
         <source>Customized View Settings</source>
-        <translation>Impostazioni visualizzazioni &amp;specifiche</translation>
+        <translation>Impostazioni visualizzazioni specifiche</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2125"/>
