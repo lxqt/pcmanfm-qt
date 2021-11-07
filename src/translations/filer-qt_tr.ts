@@ -891,6 +891,7 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n öge</numerusform>
+            <numerusform>%n öge</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -898,12 +899,14 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n gizli)</numerusform>
+            <numerusform> (%n gizli)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="431"/>
         <source>%1 item(s) selected</source>
         <translation>
+            <numerusform>%1 öge seçili</numerusform>
             <numerusform>%1 öge seçili</numerusform>
         </translation>
     </message>
