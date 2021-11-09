@@ -194,7 +194,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../desktop-folder.ui" line="14"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="72"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formo</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -257,7 +257,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../desktop-preferences.ui" line="75"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fona koloro:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="147"/>
@@ -281,13 +281,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../desktop-preferences.ui" line="84"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="212"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilda dosiero</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="90"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="217"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>Loko de bilda dosiero</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="97"/>
@@ -326,13 +326,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../edit-bookmarks.ui" line="67"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Enmeti eron</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
-        <translation type="unfinished"></translation>
+        <translation>Fo&amp;rigi eron</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
@@ -392,7 +392,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-operation-dialog.ui" line="61"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="127"/>
         <source>Preparing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Preparante…</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="68"/>
@@ -404,7 +404,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-operation-dialog.ui" line="88"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="129"/>
         <source>Time remaining:</source>
-        <translation type="unfinished"></translation>
+        <translation>Restanta tempo:</translation>
     </message>
 </context>
 <context>
@@ -443,7 +443,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-props.ui" line="162"/>
         <location filename="../../build/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Grando de dosiero:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="20"/>
@@ -455,7 +455,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>Teksta etikedo</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
@@ -629,7 +629,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Transparent</source>
-        <translation type="unfinished"></translation>
+        <translation>Travidebla</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
@@ -722,22 +722,22 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Piktograma vido</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Compact Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompakta piktograma vido</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="194"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Miniatura vido</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="195"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Detala lista vido</translation>
     </message>
 </context>
 <context>
@@ -750,20 +750,22 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../tabpage.cpp" line="264"/>
         <source>%1 available</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 disponebla(j)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="277"/>
         <source>%n item(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n ero</numerusform>
+            <numerusform>%n eroj</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="279"/>
         <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform> (%n kaŝita)</numerusform>
+            <numerusform> (%n kaŝitaj)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -779,12 +781,12 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../view.cpp" line="111"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Malfermi en novan &amp;fenestron</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="119"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Malfermi per termina&amp;lo</translation>
     </message>
 </context>
 <context>
@@ -792,7 +794,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Trovi dosierojn</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
@@ -819,7 +821,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-search.ui" line="53"/>
         <location filename="../file-search.ui" line="228"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzi regulan esprimon</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="63"/>
@@ -834,7 +836,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../file-search.ui" line="88"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Forigi</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="117"/>
@@ -900,17 +902,17 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../file-search.ui" line="258"/>
         <source>File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Grando de dosiero</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pli granda ol:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Malpli granda ol:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="317"/>
@@ -988,12 +990,12 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../dndactionmenu.cpp" line="26"/>
         <source>Copy here</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopii ĉi tien</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="27"/>
         <source>Move here</source>
-        <translation type="unfinished"></translation>
+        <translation>Movi ĉi tien</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="28"/>
@@ -1058,7 +1060,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="101"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>Montri enhavon</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="179"/>
@@ -1088,12 +1090,12 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="246"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Akiri informojn</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="251"/>
         <source>&amp;Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Malpl&amp;enigi rubujon</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="354"/>
@@ -1136,12 +1138,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="41"/>
         <source>Move files</source>
-        <translation type="unfinished"></translation>
+        <translation>Movi dosierojn</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="42"/>
         <source>Moving the following files to destination folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Movante la jenajn dosierojn en la celan dosierujon:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="45"/>
@@ -1151,32 +1153,32 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="46"/>
         <source>Copying the following files to destination folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiante la jenajn dosierojn en la celan dosierujon:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="49"/>
         <source>Trash Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Forĵeti dosierojn</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="50"/>
         <source>Moving the following files to trash can:</source>
-        <translation type="unfinished"></translation>
+        <translation>Movante la jenajn dosierojn en la rubujon:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="53"/>
         <source>Delete Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Forviŝi dosierojn</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="54"/>
         <source>Deleting the following files</source>
-        <translation type="unfinished"></translation>
+        <translation>Forviŝante la jenajn dosierojn</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="59"/>
         <source>Create Symlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>Krei simbolajn ligojn</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="60"/>
@@ -1244,12 +1246,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filepropsdialog.cpp" line="304"/>
         <source>Multiple Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Pluraj dosieroj</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="432"/>
         <source>Apply changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Efektivigi ŝanĝojn</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="433"/>
@@ -2817,25 +2819,25 @@ Modified: %3</source>
         <location filename="../filesearch.ui" line="90"/>
         <location filename="../../build/src/ui_filesearch.h" line="405"/>
         <source>&amp;Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Fo&amp;rigi</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="119"/>
         <location filename="../../build/src/ui_filesearch.h" line="406"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Serĉi en subdosierujoj</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="126"/>
         <location filename="../../build/src/ui_filesearch.h" line="407"/>
         <source>Search for hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>Serĉi kaŝitajn dosierojn</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="137"/>
         <location filename="../../build/src/ui_filesearch.h" line="416"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Dosierformo</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="143"/>
@@ -2889,7 +2891,7 @@ Modified: %3</source>
         <location filename="../filesearch.ui" line="214"/>
         <location filename="../../build/src/ui_filesearch.h" line="417"/>
         <source>File contains:</source>
-        <translation type="unfinished"></translation>
+        <translation>Dosiero enhavas:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="223"/>
@@ -2901,7 +2903,7 @@ Modified: %3</source>
         <location filename="../filesearch.ui" line="230"/>
         <location filename="../../build/src/ui_filesearch.h" line="419"/>
         <source>&amp;Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Uzi regulan esprimon</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="254"/>
@@ -2969,13 +2971,13 @@ Modified: %3</source>
         <location filename="../filesearch.ui" line="357"/>
         <location filename="../../build/src/ui_filesearch.h" line="435"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pli frua ol:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="364"/>
         <location filename="../../build/src/ui_filesearch.h" line="436"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pli malfrua ol:</translation>
     </message>
 </context>
 </TS>
