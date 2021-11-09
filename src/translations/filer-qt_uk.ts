@@ -7,25 +7,25 @@
         <location filename="../about.ui" line="14"/>
         <location filename="../../build/src/ui_about.h" line="140"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Про Filer</translation>
     </message>
     <message>
         <location filename="../about.ui" line="37"/>
         <location filename="../../build/src/ui_about.h" line="142"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="60"/>
         <location filename="../../build/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
-        <translation type="unfinished"></translation>
+        <translation>Досвідченість серед стільниць</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
         <location filename="../../build/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="99"/>
@@ -37,7 +37,13 @@
 
 Application icon:
 * Raphael Lopes (https://raphaellopes.me/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Розробка застосунку:
+* Simon Peter (probono)
+* Chris Moore (moochris)
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+
+Піктограма застосунку:
+* Raphael Lopes (https://raphaellopes.me/)</translation>
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
@@ -71,19 +77,47 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer
+
+Авторське право (C) 2020-21 Simon Peter
+Авторське право (C) 2021 Chris Moore
+
+Заснований на PCMan File Manager
+Часткове авторське право (C) 2009-14 洪任諭 (Hong Jen Yee)
+
+Ця програма - вільне програмне забезпечення; Ви можете розповсюджувати її та/або
+вносити зміни відповідно до умов Загальної Публічної Ліцензії GNU у тому вигляді,
+у якому вона була опублікована Фундацією Вільного Програмного Забезпечення;
+або 2-ї версії Ліцензії, або (на Ваш розсуд) будь-якої більш пізньої версії.
+
+Ця програма розповсюджується із сподіванням, що вона виявиться корисною,
+але БЕЗ БУДЬ-ЯКОЇ ГАРАНТІЇ; без навіть уявної гарантії
+КОМЕРЦІЙНОЇ ПРИДАТНОСТІ чи ВІДПОВІДНОСТІ БУДЬ-ЯКОМУ ПЕВНОМУ ЗАСТОСУВАННЮ.
+Зверніться до Загальної Публічної Ліцензії GNU за подробицями.
+
+Ви мали отримати копію Загальної Публічної Ліцензії GNU
+разом з цією програмою. Якщо Ви не отримали копії ліцензії, напишіть за адресою:
+Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+
+Піктограма застосунку
+
+https://dribbble.com/shots/2541211--Pirate-Finder-icon#
+
+Авторське право (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
+
+Використання з дозволу автора https://raphaellopes.me/</translation>
     </message>
     <message>
         <location filename="../about.ui" line="90"/>
         <location filename="../../build/src/ui_about.h" line="153"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>Розробники</translation>
     </message>
     <message>
         <location filename="../about.ui" line="116"/>
         <location filename="../../build/src/ui_about.h" line="184"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Ліцензія</translation>
     </message>
 </context>
 <context>
@@ -92,31 +126,31 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../app-chooser-dialog.ui" line="14"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="150"/>
         <source>Choose an Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати застосунок</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="151"/>
         <source>Installed Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановлені застосунки</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="163"/>
         <source>Custom Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Власна команда</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="152"/>
         <source>Command line to execute:</source>
-        <translation type="unfinished"></translation>
+        <translation>Командний рядок для виконання:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="153"/>
         <source>Application name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Назва застосунку:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
@@ -128,25 +162,31 @@ Used with permission of the creator https://raphaellopes.me/</source>
 &lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represents a single URI of the file&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represents multiple URIs&lt;/li&gt;
 &lt;/ul&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Ці спеціальні коди можна використовувати у командному рядку:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: Представляє одне ім’я файлу&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;: Представляє декілька імен файлів&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Представляє одне URI-посилання на файл&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Представляє кілька URI-посилань&lt;/li&gt;
+&lt;/ul&gt;</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished"></translation>
+        <translation>Залишати вікно терміналу відкритим після виконання команди</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="162"/>
         <source>Execute in terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Виконати в емуляторі терміналу</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="164"/>
         <source>Set selected application as default action of this file type</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановити вибраний застосунок як типовий для цього типу файлів</translation>
     </message>
 </context>
 <context>
@@ -155,25 +195,25 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../autorun.ui" line="14"/>
         <location filename="../../build/src/ui_autorun.h" line="108"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Вставлено знімний носій</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <location filename="../../build/src/ui_autorun.h" line="110"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Вставлено знімний носій&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <location filename="../../build/src/ui_autorun.h" line="111"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>Тип носія:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <location filename="../../build/src/ui_autorun.h" line="112"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Розпізнавання...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
