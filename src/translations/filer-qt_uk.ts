@@ -219,7 +219,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../autorun.ui" line="56"/>
         <location filename="../../build/src/ui_autorun.h" line="113"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>Виберіть дію, яку потрібно виконати:</translation>
     </message>
 </context>
 <context>
