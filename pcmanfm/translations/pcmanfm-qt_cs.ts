@@ -543,7 +543,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation>Zaměřit pohled, vyprázdnit pole filtru</translation>
+        <translation>Zaměřit zobrazení, vyprázdnit kolonku filtru</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -1025,7 +1025,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="932"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>Otevřít kartu v módu &amp;Správce</translation>
+        <translation>Otevřít k&amp;artu v režimu správce</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="937"/>
@@ -1328,7 +1328,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
         <location filename="../main-win.ui" line="99"/>
         <location filename="../main-win.ui" line="123"/>
         <source>&amp;View</source>
-        <translation>&amp;Pohled</translation>
+        <translation>&amp;Zobrazení</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="179"/>

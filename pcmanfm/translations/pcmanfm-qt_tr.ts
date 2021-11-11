@@ -416,7 +416,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Tüm öğeleri konumlarına yapıştırın</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -623,7 +623,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation>Backspace</translation>
+        <translation>Geri</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
@@ -721,7 +721,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="286"/>
         <source>Alt+Up</source>
-        <translation>Alt+Yukarı</translation>
+        <translation>Alt+Yukarı Ok</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="295"/>
@@ -941,17 +941,17 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayarları &amp;Buradan İtibaren Aynen Koru</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Devralınan Ayarların Kaynağına Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Varolmayan Klasörlerin Ayarlarını Kaldır</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -996,7 +996,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bu Klasör için Ayarları Koru</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1061,7 +1061,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Gizli Kı&amp;sayollar</translation>
+        <translation>Gizli &amp;Kısayollar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
@@ -1168,7 +1168,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Özelleştirilmiş Görünüm Ayarları</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
@@ -1193,7 +1193,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="613"/>
         <source>Alt+Left</source>
-        <translation>Alt+Sol</translation>
+        <translation>Alt+Sol Ok</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="622"/>
@@ -1208,7 +1208,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Right</source>
-        <translation>Alt+Sağ</translation>
+        <translation>Alt+Sağ Ok</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="633"/>
@@ -1586,6 +1586,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Çöp Kutusu (%Ln öğe)</numerusform>
+            <numerusform>Çöp Kutusu (%Ln öğeler)</numerusform>
         </translation>
     </message>
     <message>
@@ -1688,7 +1689,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../mainwindow.cpp" line="1900"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Özelleştirilmiş Görüntü Ayarları</translation>
+        <translation>Özelleştirilmiş Görüntü Ayarları</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2125"/>
@@ -1704,13 +1705,14 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../mainwindow.cpp" line="2235"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Klasör Ayarlarını Temizleme</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2236"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Var olmayan klasörlerin ayarlarını kaldırmak istiyor musunuz?
+Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
     </message>
 </context>
 <context>
@@ -1753,12 +1755,14 @@ They might be useful if those folders are created again.</source>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n nesne</numerusform>
+            <numerusform>%n nesneler</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="534"/>
         <source> (%n hidden)</source>
         <translation>
+            <numerusform> (%n gizli)</numerusform>
             <numerusform> (%n gizli)</numerusform>
         </translation>
     </message>
@@ -1774,6 +1778,7 @@ They might be useful if those folders are created again.</source>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n nesne seçildi</numerusform>
+            <numerusform>%n nesne seçildi</numerusform>
         </translation>
     </message>
 </context>
@@ -1788,7 +1793,8 @@ They might be useful if those folders are created again.</source>
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>%1 dosyayı açmak istiyor musunuz?</numerusform>
+            <numerusform>%1 dosyasını açmak istiyor musunuz?</numerusform>
+            <numerusform>%1 dosyalarını açmak istiyor musunuz?</numerusform>
         </translation>
     </message>
     <message>
@@ -2049,7 +2055,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="399"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Liste ve sıkı modlarda yumuşak kaydırmayı devre dışı bırakın</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>

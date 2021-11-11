@@ -73,7 +73,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</trans
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="104"/>
@@ -180,74 +181,74 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</trans
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea un llançador</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Descripció:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Comentari:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordre:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Icona:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Vols executar al terminal?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>No</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">Tipus:</translation>
+        <translation>Tipus:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicació</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Enllaç</translation>
     </message>
 </context>
 <context>
@@ -403,32 +404,32 @@ També es reserva un espai per a 3 línies de text.</translation>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Per defecte, les carpetes de l&apos;escriptori s&apos;obriran a PCManFM-Qt si es prem amb el botó esquerre del ratolí, encara que no sigui el gestor de fitxers predeterminat.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation type="unfinished"></translation>
+        <translation>Obre les carpetes d&apos;escriptori en el gestor de fitxers per defecte fent clic esquerre</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Fes que tots els elements s&apos;ajustin a les seves posicions</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Fons de pantalla</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="348"/>
         <source>Transform image based on EXIF data</source>
-        <translation type="unfinished"></translation>
+        <translation>Transforma la imatge basada en dades EXIF</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="355"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Fons de pantalla individual per a cada monitor</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="382"/>
@@ -521,75 +522,75 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Dreceres ocultes</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation type="unfinished"></translation>
+        <translation>Drecera</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Acció</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Enfocar visualització, netegeu la barra de filtres</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Activa subfinestra lateral</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Habilita la barra d&apos;adreces</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
         <source>Alt+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+D</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
         <location filename="../shortcuts.ui" line="82"/>
         <source>Next tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanya següent</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Maj+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
         <location filename="../shortcuts.ui" line="90"/>
         <source>Previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanya anterior</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
@@ -630,12 +631,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="122"/>
         <source>Search dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Diàleg de cerca</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
@@ -650,7 +651,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrossega+Maj</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -703,7 +704,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="221"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Eines</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="280"/>
@@ -904,12 +905,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="535"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Per data de creació</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="543"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Per data d&apos;e&amp;liminació</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="551"/>
@@ -924,7 +925,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="567"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Per &amp;grup</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="575"/>
@@ -934,7 +935,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="583"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Oculta últim</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="948"/>
@@ -944,12 +945,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ves a la font dels ajustaments heretats</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Elimina els ajustaments de les carpetes inexistents</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -979,7 +980,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="719"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Obre la pestanya a la instància &amp;root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="733"/>
@@ -994,7 +995,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Preserva els ajustaments per a &amp;aquesta carpeta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1039,17 +1040,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="908"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra les mi&amp;niatures</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="911"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra les miniatures</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="919"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Subfinestra &amp;lateral</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="922"/>
@@ -1059,18 +1060,18 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Dreceres &amp;ocultes</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Obre la pestanya en mode d&apos;&amp;administrador</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="937"/>
         <location filename="../main-win.ui" line="940"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea un llançador</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="767"/>
@@ -1166,7 +1167,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Configuració de la vista personalitzada</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
@@ -1360,12 +1361,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Executa PCManFM-Qt com a dimoni</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortir de PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -1496,32 +1497,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordre:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="32"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="57"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccioneu una icona</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="59"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Imatges (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="81"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccioneu un fitxer executable</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="89"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccioneu un fitxer</translation>
     </message>
 </context>
 <context>
@@ -1559,7 +1560,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="255"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecciona un fons de pantalla</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="259"/>
@@ -1569,7 +1570,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="301"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecciona la carpeta del fons de pantalla</translation>
     </message>
 </context>
 <context>
@@ -1626,7 +1627,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1042"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea un llançador</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1045"/>
@@ -1647,7 +1648,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../tabpage.cpp" line="63"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Neteja el text (Ctrl+K o Esc)</translation>
     </message>
 </context>
 <context>
@@ -1687,7 +1688,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1900"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuració de la vista personalitzada</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2125"/>
@@ -1703,13 +1704,14 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2235"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Netejant la configuració de la carpeta</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2236"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Voleu suprimir la configuració de carpetes inexistents? 
+Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     </message>
 </context>
 <context>
@@ -1784,14 +1786,14 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Molts fitxers</translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Voleu obrir aquest %1 fitxer?</numerusform>
+            <numerusform>Voleu obrir aquests %1 fitxers?</numerusform>
         </translation>
     </message>
     <message>
@@ -1963,18 +1965,18 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si no està marcat, s&apos;utilitzarà la configuració de l&apos;entorn d&apos;escriptori.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Estableix a zero per desactivar la selecció automàtica.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Retard de la selecció automàtica en mode d&apos;un sol clic:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -2016,7 +2018,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>També se seleccionaran els fitxers reanomenats</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="288"/>
@@ -2054,7 +2056,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="399"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Desactiva el desplaçament suau en els modes de llista i compacte</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
@@ -2099,12 +2101,12 @@ barra de tasques si hi ha més d&apos;una pestanya.</translation>
     <message>
         <location filename="../preferences.ui" line="536"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Canvia a la pestanya oberta recentment</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="578"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Torna a obrir les pestanyes de l&apos;última finestra en una finestra nova</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="628"/>
@@ -2112,18 +2114,20 @@ barra de tasques si hi ha més d&apos;una pestanya.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>El generador integrat crea miniatures d&apos;imatges que són compatibles amb Qt.
+
+Normalment, la majoria dels tipus d&apos;imatge són compatibles. El límit de mida per defecte és 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="633"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Límit de mida de la imatge per al generador integrat de miniatures:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="645"/>
         <location filename="../preferences.ui" line="681"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="661"/>
