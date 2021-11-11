@@ -1343,7 +1343,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="246"/>
         <source>Main Toolbar</source>
-        <translation>Hovedverktøylinje</translation>
+        <translation>Hovedverktøyfelt</translation>
     </message>
 </context>
 <context>
