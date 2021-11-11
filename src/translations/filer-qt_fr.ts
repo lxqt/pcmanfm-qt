@@ -259,10 +259,10 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
 &lt;/ul&gt;</source>
         <translation>&lt;b&gt;Ces codes spéciaux peuvent être utilisés dans les lignes de commandes :&lt;/b&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: Représente un seul nom de fichier&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;: Représente plusieurs noms de fichiers&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Représente une seule URI du fichier&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Représente plusieurs URI&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt; : Représente un seul nom de fichier&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt; : Représente plusieurs noms de fichiers&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt; : Représente une seule URI du fichier&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt; : Représente plusieurs URI&lt;/li&gt;
 &lt;/ul&gt;</translation>
     </message>
     <message>
@@ -920,7 +920,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="761"/>
         <source>Version: %1</source>
-        <translation>Version: %1</translation>
+        <translation>Version : %1</translation>
     </message>
     <message>
         <source>&amp;Move to Trash</source>
@@ -1211,12 +1211,12 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <message>
         <location filename="../dirtreeview.cpp" line="220"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished">Ouvrir &amp;dans une nouvelle fenêtre</translation>
+        <translation>Ouvrir &amp;dans une nouvelle fenêtre</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="226"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished">Ouvrir dans &amp;le terminal</translation>
+        <translation>Ouvrir dans &amp;le terminal</translation>
     </message>
 </context>
 <context>
@@ -1338,7 +1338,7 @@ Que voulez-vous faire avec ?</translation>
     <message>
         <location filename="../filemenu.cpp" line="172"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished">Créer un &amp;nouveau</translation>
+        <translation>Créer un &amp;nouveau</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="130"/>
@@ -1823,7 +1823,7 @@ Modification : %3</translation>
         <location filename="../sidepane.cpp" line="49"/>
         <location filename="../sidepane.cpp" line="133"/>
         <source>Places</source>
-        <translation type="unfinished">Emplacements</translation>
+        <translation>Emplacements</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="50"/>
@@ -2166,7 +2166,7 @@ Modification : %3</translation>
         <location filename="../main-win.ui" line="813"/>
         <location filename="../../build/src/ui_main-win.h" line="774"/>
         <source>Open</source>
-        <translation type="unfinished">Ouvrir</translation>
+        <translation>Ouvrir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
@@ -2480,7 +2480,7 @@ Modification : %3</translation>
         <location filename="../main-win.ui" line="640"/>
         <location filename="../../build/src/ui_main-win.h" line="707"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished">&amp;Mettre à la corbeille</translation>
+        <translation>&amp;Mettre à la corbeille</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
@@ -2762,7 +2762,7 @@ Modification : %3</translation>
         <location filename="../preferences.ui" line="178"/>
         <location filename="../../build/src/ui_preferences.h" line="667"/>
         <source>Icon theme:</source>
-        <translation>Thème d&apos;icônes&#xa0;: </translation>
+        <translation>Thème d&apos;icônes&#xa0;:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="298"/>
@@ -3097,7 +3097,7 @@ Modification : %3</translation>
     <message>
         <location filename="../utilities.cpp" line="127"/>
         <source>Rename</source>
-        <translation type="unfinished">Renommer</translation>
+        <translation>Renommer</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="128"/>
@@ -3181,7 +3181,7 @@ Modification : %3</translation>
         <location filename="../rename-dialog.ui" line="89"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="161"/>
         <source>dest file info</source>
-        <translation>infos fichier dest.</translation>
+        <translation>Infos fichier de destination</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
@@ -3346,7 +3346,7 @@ Modification : %3</translation>
         <location filename="../filesearch.ui" line="254"/>
         <location filename="../../build/src/ui_filesearch.h" line="437"/>
         <source>Properties</source>
-        <translation type="unfinished">Propriétés</translation>
+        <translation>Propriétés</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="260"/>
