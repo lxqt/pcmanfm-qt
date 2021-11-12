@@ -269,6 +269,25 @@ MainWindow::MainWindow(Fm::FilePath path):
     ui.actionMenu_bar->setChecked(settings.showMenuBar());
     connect(ui.actionMenu_bar, &QAction::triggered, this, &MainWindow::toggleMenuBar);
 
+    // recent files
+    int recentNumber = settings.getRecentFilesNumber();
+    if(recentNumber == 0) {
+        ui.menuRecentFiles->setEnabled(false);
+    }
+    else {
+        QAction* recentAction = nullptr;
+        for(int i = 0; i < recentNumber; ++i) {
+            recentAction = new QAction(this);
+            recentAction->setVisible(false);
+            connect(recentAction, &QAction::triggered, this, &MainWindow::lanunchRecentFile);
+            ui.menuRecentFiles->addAction(recentAction);
+        }
+        ui.menuRecentFiles->addSeparator();
+        ui.menuRecentFiles->addAction(ui.actionClearRecent);
+    }
+    connect(ui.menuRecentFiles, &QMenu::aboutToShow, this, &MainWindow::updateRecenMenu);
+    connect(ui.actionClearRecent, &QAction::triggered, this, &MainWindow::clearRecentMenu);
+
     // create shortcuts
     QShortcut* shortcut;
     shortcut = new QShortcut(QKeySequence(Qt::Key_Escape), this);
@@ -734,6 +753,61 @@ void MainWindow::toggleMenuBar(bool /*checked*/) {
     menuSep_->setVisible(!showMenuBar);
     ui.actionMenu->setVisible(!showMenuBar);
     settings.setShowMenuBar(showMenuBar);
+}
+
+void MainWindow::updateRecenMenu() {
+    Settings& settings = static_cast<Application*>(qApp)->settings();
+    int recentNumber = settings.getRecentFilesNumber();
+    auto actions = ui.menuRecentFiles->actions();
+    if(actions.size() < recentNumber + 2) { // there is a separator and a clear action
+        return; // not really needed because we guarantee that it doesn't happen
+    }
+    auto recentFiles = settings.getRecentFiles();
+    int recentSize = recentFiles.size();
+    QFontMetrics metrics(ui.menuRecentFiles->font());
+    int w = 150 * metrics.horizontalAdvance(QLatin1Char(' ')); // for eliding long texts
+    for(int i = 0; i < recentNumber; ++i) {
+        if(i < recentSize) {
+            auto fileName = recentFiles.at(i);
+            actions.at(i)->setText(metrics.elidedText(fileName, Qt::ElideMiddle, w));
+            QIcon icon;
+            auto mimeType = Fm::MimeType::guessFromFileName(fileName.toLocal8Bit().constData());
+            if(!mimeType->isUnknownType()) {
+                if(auto icn = mimeType->icon()) {
+                    icon = icn->qicon();
+                }
+            }
+            actions.at(i)->setIcon(icon);
+            actions.at(i)->setData(fileName);
+            actions.at(i)->setVisible(true);
+        }
+        else {
+            actions.at(i)->setText(QString());
+            actions.at(i)->setIcon(QIcon());
+            actions.at(i)->setData(QVariant());
+            actions.at(i)->setVisible(false);
+        }
+    }
+    ui.actionClearRecent->setEnabled(recentSize != 0);
+}
+
+void MainWindow::clearRecentMenu() {
+    Settings& settings = static_cast<Application*>(qApp)->settings();
+    settings.clearRecentFiles();
+    updateRecenMenu();
+}
+
+void MainWindow::lanunchRecentFile() {
+    if(QAction *action = qobject_cast<QAction*>(QObject::sender())) {
+        Settings& settings = static_cast<Application*>(qApp)->settings();
+        auto pathStr = action->data().toString();
+        settings.addRecentFile(pathStr);
+        auto pathArray = pathStr.toLocal8Bit();
+        auto path = Fm::FilePath::fromLocalPath(pathArray.constData());
+        Fm::FilePathList pathList;
+        pathList.push_back(std::move(path));
+        fileLauncher_.launchPaths(nullptr, pathList);
+    }
 }
 
 void MainWindow::onPathEntryReturnPressed() {
@@ -2059,6 +2133,45 @@ void MainWindow::updateFromSettings(Settings& settings) {
 
     // side pane
     ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
+
+    // recent files
+    int recentNumber = settings.getRecentFilesNumber();
+    auto actions = ui.menuRecentFiles->actions();
+    int N = actions.isEmpty() ? 0 : actions.size() - 2; // there is a separator and a clear action
+    if(recentNumber > N) {
+        ui.menuRecentFiles->setEnabled(true);
+        QAction* sep = nullptr;
+        if(actions.size() >= 2) {
+            ui.menuRecentFiles->removeAction(ui.actionClearRecent);
+            sep = ui.menuRecentFiles->actions().last();
+            ui.menuRecentFiles->removeAction(sep);
+        }
+        QAction* recentAction = nullptr;
+        for(int i = N; i < recentNumber; ++i) {
+            recentAction = new QAction(this);
+            recentAction->setVisible(false);
+            connect(recentAction, &QAction::triggered, this, &MainWindow::lanunchRecentFile);
+            ui.menuRecentFiles->addAction(recentAction);
+        }
+        if(sep) {
+            ui.menuRecentFiles->addAction(sep);
+        }
+        else {
+            ui.menuRecentFiles->addSeparator();
+        }
+        ui.menuRecentFiles->addAction(ui.actionClearRecent);
+    }
+    else if(recentNumber < N) {
+        for(int i = 0; i < N - recentNumber; ++i) {
+            auto lastAction = ui.menuRecentFiles->actions().at(ui.menuRecentFiles->actions().size() - 3);
+            ui.menuRecentFiles->removeAction(lastAction);
+            delete lastAction;
+        }
+        if(recentNumber == 0) {
+            ui.menuRecentFiles->clear(); // also deletes the separator
+            ui.menuRecentFiles->setEnabled(false);
+        }
+    }
 
     // tabs
     for(int i = 0; i < ui.viewSplitter->count(); ++i) {

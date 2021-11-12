@@ -225,6 +225,9 @@ protected Q_SLOTS:
     }
     void focusPathEntry();
     void toggleMenuBar(bool checked);
+    void updateRecenMenu();
+    void clearRecentMenu();
+    void lanunchRecentFile();
     void detachTab();
 
     void onBookmarksChanged();

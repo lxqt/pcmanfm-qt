@@ -138,7 +138,8 @@ Settings::Settings():
     searchNameRegexp_(true),
     searchContentRegexp_(true),
     searchRecursive_(false),
-    searchhHidden_(false) {
+    searchhHidden_(false),
+    recentFilesNumber_(0) {
 }
 
 Settings::~Settings() = default;
@@ -184,12 +185,16 @@ QString Settings::profileDir(QString profile, bool useFallback) {
 bool Settings::load(QString profile) {
     profileName_ = profile;
     QString fileName = profileDir(profile, true) + QStringLiteral("/settings.conf");
-    return loadFile(fileName);
+    bool ret = loadFile(fileName);
+    loadRecentFiles();
+    return ret;
 }
 
 bool Settings::save(QString profile) {
     QString fileName = profileDir(profile.isEmpty() ? profileName_ : profile) + QStringLiteral("/settings.conf");
-    return saveFile(fileName);
+    bool ret = saveFile(fileName);
+    saveRecentFiles();
+    return ret;
 }
 
 bool Settings::loadFile(QString filePath) {
@@ -225,6 +230,7 @@ bool Settings::loadFile(QString filePath) {
     confirmTrash_ = settings.value(QStringLiteral("ConfirmTrash"), false).toBool();
     setQuickExec(settings.value(QStringLiteral("QuickExec"), false).toBool());
     selectNewFiles_ = settings.value(QStringLiteral("SelectNewFiles"), false).toBool();
+    recentFilesNumber_ = qBound(0, settings.value(QStringLiteral("RecentFilesNumber"), 0).toInt(), 50);
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Desktop"));
@@ -374,6 +380,7 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("ConfirmTrash"), confirmTrash_);
     settings.setValue(QStringLiteral("QuickExec"), quickExec_);
     settings.setValue(QStringLiteral("SelectNewFiles"), selectNewFiles_);
+    settings.setValue(QStringLiteral("RecentFilesNumber"), recentFilesNumber_);
     settings.endGroup();
 
     settings.beginGroup(QStringLiteral("Desktop"));
@@ -487,6 +494,55 @@ bool Settings::saveFile(QString filePath) {
     settings.endGroup();
 
     return true;
+}
+
+void Settings::setRecentFilesNumber(int n) {
+    recentFilesNumber_ = qBound(0, n, 50);
+    if(recentFilesNumber_ == 0) {
+        clearRecentFiles();
+    }
+}
+
+void Settings::clearRecentFiles() {
+    recentFiles_.clear();
+    saveRecentFiles();
+}
+
+void Settings::addRecentFile(const QString& file) {
+    if(recentFilesNumber_ > 0) {
+        recentFiles_.removeAll(file);
+        recentFiles_.prepend(file);
+        while(recentFiles_.size() > recentFilesNumber_)
+            recentFiles_.removeLast();
+    }
+}
+
+void Settings::loadRecentFiles() {
+    if(recentFilesNumber_ == 0) {
+        return;
+    }
+    // load only from the user-specific ppath
+    QString fileName = profileDir(profileName_) + QStringLiteral("/recent-files.conf");
+    QSettings settings(fileName, QSettings::IniFormat);
+
+    settings.beginGroup(QStringLiteral("Recent"));
+    recentFiles_ = settings.value(QStringLiteral("Files")).toStringList();
+    settings.endGroup();
+
+    recentFiles_.removeAll(QString());
+    recentFiles_.removeDuplicates();
+    while(recentFiles_.count() > recentFilesNumber_) {
+        recentFiles_.removeLast();
+    }
+}
+
+void Settings::saveRecentFiles() {
+    QString fileName = profileDir(profileName_) + QStringLiteral("/recent-files.conf");
+    QSettings settings(fileName, QSettings::IniFormat);
+
+    settings.beginGroup(QStringLiteral("Recent"));
+    settings.setValue(QStringLiteral("Files"), recentFiles_);
+    settings.endGroup();
 }
 
 const QList<int> & Settings::iconSizes(IconType type) {

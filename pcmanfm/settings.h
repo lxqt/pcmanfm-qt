@@ -166,9 +166,6 @@ public:
     bool load(QString profile = QStringLiteral("default"));
     bool save(QString profile = QString());
 
-    bool loadFile(QString filePath);
-    bool saveFile(QString filePath);
-
     static QString xdgUserConfigDir();
     static const QList<int> & iconSizes(IconType type);
 
@@ -1006,9 +1003,27 @@ public:
         }
     }
 
+    int getRecentFilesNumber() const {
+        return recentFilesNumber_;
+    }
+    void setRecentFilesNumber(int n);
+
+    QStringList getRecentFiles() const {
+        return recentFiles_;
+    }
+    void clearRecentFiles();
+    void addRecentFile(const QString& file);
+
+    void loadRecentFiles();
+    void saveRecentFiles();
+
 private:
+    bool loadFile(QString filePath);
+    bool saveFile(QString filePath);
+
     int toIconSize(int size, IconType type) const;
 
+private:
     QString profileName_;
     bool supportTrash_;
 
@@ -1126,6 +1141,10 @@ private:
     // detailed list columns
     QList<QVariant> customColumnWidths_;
     QList<QVariant> hiddenColumns_;
+
+    // recent files
+    int recentFilesNumber_;
+    QStringList recentFiles_;
 };
 
 }
