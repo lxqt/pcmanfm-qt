@@ -77,7 +77,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished">Filer
+        <translation>Filer
 
 Kopirajto © 2020–21 Simon Peter
 Kopirajto © 2021 Chris Moore
@@ -87,15 +87,15 @@ Partoj Kopirajto © 2009–14 洪任諭 (Hong Jen Yee)
 
 Ĉi tiu programo estas libera programaro; vi povas redistribui ĝin kaj/aŭ
 modifi ĝin laŭ la kondiĉoj de la Ĝenerala Publika Permesilo de GNU
-kiel eldonita de la Free Software Foundation; ĉu versio 2
-de la Permesilo, aŭ (laŭ via elekto) ajna posta versio.
+eldonita de Free Software Foundation — aŭ versio 2
+de la Permesilo aŭ (laŭ via elekto) ajna posta versio.
 
-Ĉi tiu programo estas distribuata kun la espero, ke ĝi estos utila,
+Ĉi tiu programo estas distribuata kun la espero, ke ĝi utilos,
 sed SEN AJNA GARANTIO; sen eĉ la implicita garantio de
 KOMERCEBLECO aŭ TAŬGECO POR APARTA CELO. Vidu la
 Ĝeneralan Publikan Permesilon de GNU por pliaj detaloj.
 
-Vi devus esti ricevinta kopion de la Ĝenerala Publika Permesilo de GNU
+Vi estu ricevinta kopion de la Ĝenerala Publika Permesilo de GNU
 kune kun ĉi tiu programo; se ne, skribu al Free Software
 Foundation, Inc., 51 Franklin St., 5a etaĝo, Bostono, Masaĉuseco 02110-1301, Usono.
 
@@ -105,7 +105,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 
 Kopirajto © 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
-Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
+Uzata laŭ permeso de la kreinto https://raphaellopes.me/</translation>
     </message>
     <message>
         <location filename="../about.ui" line="90"/>
@@ -138,7 +138,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
         <location filename="../app-chooser-dialog.ui" line="46"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="163"/>
         <source>Custom Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Propra komando</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
@@ -162,25 +162,31 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
 &lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represents a single URI of the file&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represents multiple URIs&lt;/li&gt;
 &lt;/ul&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;La jenaj specialaj kodoj estas uzeblaj en la terminalo:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: signifas unu dosieran nomon&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;: signifas plurajn dosierajn nomojn&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: signifas unu URI de dosiero&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: signifas plurajn URI-ojn&lt;/li&gt;
+&lt;/ul&gt;</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished"></translation>
+        <translation>Teni la terminalan fenestron malfermite post plenumo de komando</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="162"/>
         <source>Execute in terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruli per terminalimitilo</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="164"/>
         <source>Set selected application as default action of this file type</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzi la elektitan programon kiel la implicitan por ĉi tiu dosierformo</translation>
     </message>
 </context>
 <context>
@@ -189,19 +195,19 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
         <location filename="../autorun.ui" line="14"/>
         <location filename="../../build/src/ui_autorun.h" line="108"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Forigebla datenportilo estas konektita</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <location filename="../../build/src/ui_autorun.h" line="110"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Forigebla datenportilo estas konektita&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <location filename="../../build/src/ui_autorun.h" line="111"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>Speco de datenportilo:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
@@ -213,7 +219,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
         <location filename="../autorun.ui" line="56"/>
         <location filename="../../build/src/ui_autorun.h" line="113"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bonvolu elekti tion, kion vi volas fari:</translation>
     </message>
 </context>
 <context>
@@ -366,7 +372,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
         <location filename="../edit-bookmarks.ui" line="102"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="109"/>
         <source>Use drag and drop to reorder the items</source>
-        <translation type="unfinished"></translation>
+        <translation>Por ŝanĝi la ordon de la eroj, ŝovu kaj demetu</translation>
     </message>
 </context>
 <context>
@@ -414,7 +420,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
         <location filename="../file-operation-dialog.ui" line="48"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="126"/>
         <source>Processing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Traktante:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="61"/>
@@ -465,7 +471,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
         <location filename="../file-props.ui" line="323"/>
         <location filename="../../build/src/ui_file-props.h" line="381"/>
         <source>Mime type:</source>
-        <translation type="unfinished"></translation>
+        <translation>MIME-tipo:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="162"/>
@@ -525,7 +531,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
         <location filename="../file-props.ui" line="380"/>
         <location filename="../../build/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
-        <translation type="unfinished"></translation>
+        <translation>Atingokontrolo</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="440"/>
@@ -549,27 +555,27 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Run Filer as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruli Filer kiel demonon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Quit Filer</source>
-        <translation type="unfinished"></translation>
+        <translation>Forlasi Filer</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Launch desktop manager (deprecated)</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanĉi la labortabladministrilon (evitindan)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="201"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>Malŝalti la labortabladministrilon, se ĝi estas rulata</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="204"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Malfermi la dialogon pri labortablaj agordoj ĉe la paĝo de la jena nomo</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="204"/>
@@ -585,7 +591,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../application.cpp" line="210"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>Malfermi la ilaĵon «Serĉi dosierojn»</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="213"/>
@@ -610,7 +616,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Malfermi la dialogon «Agordoj» ĉe la paĝo de la jena nomo</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="223"/>
@@ -631,7 +637,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../application.cpp" line="519"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminalimitilo ne estas asignita.</translation>
     </message>
 </context>
 <context>
@@ -652,7 +658,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="49"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>Plenigi nur per fona koloro</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
@@ -662,22 +668,22 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Streĉi ĝis la tuta ekrano</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Streĉi ĝis la ekrano</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Centrigi en la ekrano</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaheli la ekranon</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="145"/>
@@ -690,7 +696,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../desktopwindow.cpp" line="439"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Fi&amp;ksi la aktualan pozicion</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="461"/>
@@ -726,7 +732,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../mainwindow.cpp" line="210"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Forviŝi tekston (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="761"/>
@@ -742,7 +748,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1475"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>La komando por ŝanĝi la uzanton estas ne asignita.</translation>
     </message>
 </context>
 <context>
@@ -799,8 +805,9 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="431"/>
         <source>%1 item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 elektita</numerusform>
+            <numerusform>%1 elektitaj</numerusform>
         </translation>
     </message>
 </context>
@@ -822,7 +829,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation>Trovi dosierojn</translation>
+        <translation>Serĉi dosierojn</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
@@ -832,12 +839,12 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>Ŝablonoj de dosieraj nomoj</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ŝablono:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
@@ -854,12 +861,12 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation type="unfinished"></translation>
+        <translation>Serĉotaj lokoj</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Aldoni</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="88"/>
@@ -869,7 +876,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../file-search.ui" line="117"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Serĉi subdosierujojn</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="124"/>
@@ -885,7 +892,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../file-search.ui" line="147"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nur serĉi la jenajn dosierformojn:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="154"/>
@@ -963,7 +970,7 @@ Uzite kun permeso de la kreinto https://raphaellopes.me/</translation>
     <message>
         <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>Tajlori</translation>
     </message>
 </context>
 <context>
@@ -1143,7 +1150,8 @@ Kion fari pri ĝi?</translation>
         <location filename="../fileoperation.cpp" line="221"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>Kelkaj dosieroj ne estas rubujenmoveblaj, ĉar iliaj dosiersistemoj ne ebligas tian operacion.
+Ĉu forviŝi ilin anstataŭe?</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="262"/>
@@ -1285,7 +1293,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filepropsdialog.cpp" line="433"/>
         <source>Do you want to recursively apply these changes to all files and sub-folders?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ĉu fari tion rikure al ĉiuj dosieroj kaj subdosierujoj?</translation>
     </message>
 </context>
 <context>
@@ -1298,7 +1306,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>You should add at least add one directory to search.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aldonu almenaŭ unu serĉotan dosierujon.</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="127"/>
@@ -1326,7 +1334,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="54"/>
         <source>Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Komplementigi elektitaĵaron</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="60"/>
@@ -1371,12 +1379,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="115"/>
         <source>Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>Kreske</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="120"/>
         <source>Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>Malkreske</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="135"/>
@@ -1522,7 +1530,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesview.cpp" line="402"/>
         <source>Eject</source>
-        <translation type="unfinished"></translation>
+        <translation>Eligi</translation>
     </message>
 </context>
 <context>
@@ -1579,12 +1587,12 @@ Tempo de modifo: %3</translation>
     <message>
         <location filename="../sidepane.cpp" line="143"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>Montri liston de oftaj lokoj, aparatoj kaj legosignoj en flankpanelo</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="145"/>
         <source>Shows tree of directories in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>Montri dosierujarbon en flankpanelo</translation>
     </message>
 </context>
 <context>
@@ -1815,13 +1823,13 @@ Tempo de modifo: %3</translation>
         <location filename="../main-win.ui" line="521"/>
         <location filename="../../build/src/ui_main-win.h" line="678"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kreske</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="529"/>
         <location filename="../../build/src/ui_main-win.h" line="679"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Malkreske</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="537"/>
@@ -2001,7 +2009,7 @@ Tempo de modifo: %3</translation>
         <location filename="../main-win.ui" line="821"/>
         <location filename="../../build/src/ui_main-win.h" line="778"/>
         <source>&amp;Duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>Fari &amp;duplikaton</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
@@ -2039,7 +2047,7 @@ Tempo de modifo: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="790"/>
         <location filename="../../build/src/ui_main-win.h" line="792"/>
         <source>Go Up and Close Current</source>
-        <translation type="unfinished"></translation>
+        <translation>Iri supren kaj fermi la aktualan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="855"/>
@@ -2131,7 +2139,7 @@ Tempo de modifo: %3</translation>
         <location filename="../main-win.ui" line="631"/>
         <location filename="../../build/src/ui_main-win.h" line="706"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Komplement&amp;igi elektitaĵaron</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -2369,13 +2377,13 @@ Tempo de modifo: %3</translation>
         <location filename="../preferences.ui" line="92"/>
         <location filename="../../build/src/ui_preferences.h" line="659"/>
         <source>Save metadata to directories (.DirInfo files)</source>
-        <translation type="unfinished"></translation>
+        <translation>Konservi metadatenojn (kiel .DirInfo-dosierojn) en dosierujojn</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="102"/>
         <location filename="../../build/src/ui_preferences.h" line="660"/>
         <source>Spatial mode (folders open in a new window)</source>
-        <translation type="unfinished"></translation>
+        <translation>Spaca reĝimo (malfermi dosierujojn en novajn fenestrojn)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="166"/>
@@ -2423,7 +2431,7 @@ Tempo de modifo: %3</translation>
         <location filename="../preferences.ui" line="307"/>
         <location filename="../../build/src/ui_preferences.h" line="678"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>Memori la grandon de la laste fermita fenestro</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="314"/>
@@ -2477,13 +2485,13 @@ Tempo de modifo: %3</translation>
         <location filename="../preferences.ui" line="40"/>
         <location filename="../../build/src/ui_preferences.h" line="648"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>Montrado</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="125"/>
         <location filename="../../build/src/ui_preferences.h" line="663"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>En forigebla datenportilo, forviŝi dosierojn anstataŭ krei rubujon</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="132"/>
@@ -2495,7 +2503,7 @@ Tempo de modifo: %3</translation>
         <location filename="../preferences.ui" line="139"/>
         <location filename="../../build/src/ui_preferences.h" line="665"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne demandi pri rulado de rulebla dosiero</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="238"/>
@@ -2507,7 +2515,7 @@ Tempo de modifo: %3</translation>
         <location filename="../preferences.ui" line="251"/>
         <location filename="../../build/src/ui_preferences.h" line="674"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Rigardi savkopiojn kaŝitaj</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="261"/>
@@ -2519,13 +2527,13 @@ Tempo de modifo: %3</translation>
         <location filename="../preferences.ui" line="271"/>
         <location filename="../../build/src/ui_preferences.h" line="676"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>Ombri piktogramojn de kaŝitaj dosieroj</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
         <location filename="../../build/src/ui_preferences.h" line="681"/>
         <source>Show in places</source>
-        <translation type="unfinished"></translation>
+        <translation>Montri en lokoj</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="352"/>
@@ -2591,37 +2599,37 @@ Tempo de modifo: %3</translation>
         <location filename="../preferences.ui" line="611"/>
         <location filename="../../build/src/ui_preferences.h" line="716"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Surmeti surmeteblaĵojn aŭtomate dum lanĉo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="618"/>
         <location filename="../../build/src/ui_preferences.h" line="717"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Aŭtomate surmeti forigeblan datenportilon, kiam ĝi estas konektita</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="625"/>
         <location filename="../../build/src/ui_preferences.h" line="718"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Montri opciojn pri forigebla datenportilo, kiam ĝi estas konektita</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="635"/>
         <location filename="../../build/src/ui_preferences.h" line="719"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>Se forigebla datenportilo estas demetata:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="641"/>
         <location filename="../../build/src/ui_preferences.h" line="720"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermi lange&amp;ton pri la forigebla datenportilo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
         <location filename="../../build/src/ui_preferences.h" line="721"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ŝanĝi la dosierujon en la langeto al la hejmdosierujo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="508"/>
@@ -2639,14 +2647,15 @@ Tempo de modifo: %3</translation>
         <location filename="../preferences.ui" line="524"/>
         <location filename="../../build/src/ui_preferences.h" line="708"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Komando por ŝanĝi la &amp;uzanton:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="537"/>
         <location filename="../../build/src/ui_preferences.h" line="709"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekzemple: «xterm -e %s» por terminalo aŭ «gksu %s» por ŝanĝi la uzanton.
+%s = la komando rulota terminale aŭ per «su».</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="558"/>
@@ -2658,19 +2667,19 @@ Tempo de modifo: %3</translation>
         <location filename="../preferences.ui" line="564"/>
         <location filename="../../build/src/ui_preferences.h" line="712"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Montri nur ŝablonojn difinitajn de la uzanto en la menuo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
         <location filename="../../build/src/ui_preferences.h" line="713"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>Montri nur unu ŝablonon por ĉiu MIME-tipo</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="578"/>
         <location filename="../../build/src/ui_preferences.h" line="714"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruli la implicitan programon post la kreo de dosiero per ŝablono</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
@@ -2703,7 +2712,7 @@ Tempo de modifo: %3</translation>
     <message>
         <location filename="../utilities.cpp" line="133"/>
         <source>The startvolume cannot be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>La nomo de la startodisko ne estas ŝanĝebla.</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="221"/>
@@ -2747,13 +2756,13 @@ Tempo de modifo: %3</translation>
         <location filename="../rename-dialog.ui" line="14"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="156"/>
         <source>Confirm to replace files</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfirmo pri anstataŭigo de dosieroj</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="35"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="157"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Jam ekzistas dosiero de la sama nomo en ĉi tiu loko.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Ĉu anstataŭigi la ekzistantan dosieron?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
@@ -2765,7 +2774,7 @@ Tempo de modifo: %3</translation>
         <location filename="../rename-dialog.ui" line="63"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="159"/>
         <source>with the following file?</source>
-        <translation type="unfinished"></translation>
+        <translation>per la jena dosiero?</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
@@ -2795,7 +2804,7 @@ Tempo de modifo: %3</translation>
         <location filename="../rename-dialog.ui" line="137"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="164"/>
         <source>Apply this option to all existing files</source>
-        <translation type="unfinished"></translation>
+        <translation>Fari tion pri ĉiuj jam ekzistantaj dosieroj</translation>
     </message>
 </context>
 <context>
@@ -2816,7 +2825,7 @@ Tempo de modifo: %3</translation>
         <location filename="../filesearch.ui" line="35"/>
         <location filename="../../build/src/ui_filesearch.h" line="399"/>
         <source>File Name Patterns:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ŝablonoj de dosieraj nomoj:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="41"/>
@@ -2846,7 +2855,7 @@ Tempo de modifo: %3</translation>
         <location filename="../filesearch.ui" line="78"/>
         <location filename="../../build/src/ui_filesearch.h" line="404"/>
         <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Aldoni</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="90"/>
@@ -2876,7 +2885,7 @@ Tempo de modifo: %3</translation>
         <location filename="../filesearch.ui" line="143"/>
         <location filename="../../build/src/ui_filesearch.h" line="409"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nur serĉi la jenajn dosierformojn:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="149"/>
