@@ -595,38 +595,38 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageDown</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+PageUp</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
         <source>Ctrl+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Número</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Salta a la pestanya</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
         <source>Alt+Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Número</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Retrocés</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
         <source>Go up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ves amunt</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="119"/>
@@ -641,12 +641,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Maj+Inser</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Enganxa a la barra de filtrat temporal</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -656,27 +656,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Mou el fitxer en deixar anar</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrossega+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia el fitxer en deixar anar</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrossega+Maj+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>Fes un enllaç simbòlic en deixar anar</translation>
     </message>
 </context>
 <context>
@@ -940,7 +940,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Conserva els paràmetres de manera recursiva des &amp;d&apos;aquí</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
@@ -955,7 +955,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="636"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Maj+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="685"/>
@@ -1055,7 +1055,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="922"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="927"/>
@@ -2135,22 +2135,24 @@ Normalment, la majoria dels tipus d&apos;imatge són compatibles. El límit de m
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Si existeixen, s&apos;utilitzen miniatures externes per a vídeos, documents PDF, etc.
+
+Un valor de -1 significa que no hi ha límit per a la mida del fitxer (per defecte).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="666"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mida del fitxer per a miniatures externes:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Sense límit</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="816"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Exemples:&lt;br&gt;Per a terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Per canviar d&apos;usuari: &lt;i&gt;lxsudo %s&lt;/i&gt; o &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; és la línia d&apos;ordres que heu d&apos;executar amb terminal o com super usuari. &lt;br&gt; Important: Si us plau useu lxsudo, només &quot;sudo&quot; destruirà els permisos del fitxer de configuració.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="907"/>
@@ -2160,32 +2162,32 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Menú d&apos;adreces d&apos;interès:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra el menú contextual de la carpeta amb Ctrl + clic dret</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Obre les carpetes en pestanyes noves en la mesura que sigui possible</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode de finestra única</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="375"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra sempre els noms dels fitxers reals</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="392"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>No mostra la informació emergent del fitxer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="611"/>
@@ -2315,7 +2317,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1077"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>No es pot obrir com a administrador.</translation>
     </message>
 </context>
 </TS>
