@@ -16,7 +16,7 @@
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation>Лек и икономичен на ресурси файлов маниджер</translation>
+        <translation>Лек и икономичен на ресурси файлов мениджър</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
@@ -408,12 +408,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>Отваряне на папките на работния плот с файловия мениджър по подразбиране</translation>
+        <translation>Отваряне на папките на работния плот с файловия мениджър по подразбиране при кликване с ляв бутон</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Накарайте всички елементи да се прикрепят към техните позиции</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -433,12 +433,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="382"/>
         <source>Slide Show</source>
-        <translation>Сменяеми изображения</translation>
+        <translation>Автоматична смяна (слайд шоу)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="388"/>
         <source>Enable Slide Show</source>
-        <translation>Активиране на сменяеми изображения</translation>
+        <translation>Активиране на слайд шоу</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="400"/>
@@ -473,7 +473,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="447"/>
         <source> minute(s)</source>
-        <translation> минути</translation>
+        <translation> минута (и)</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
@@ -483,7 +483,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="496"/>
         <source>Randomize the slide show</source>
-        <translation>Показване на изображенията в случаен ред</translation>
+        <translation>Автоматична смяна на изображенията в случаен ред</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="529"/>
@@ -521,12 +521,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>Допълнителни клавишни комбинации</translation>
+        <translation>Скрити клавишни комбинации</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>Комбинация</translation>
+        <translation>Клавишна комбинация</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
@@ -675,7 +675,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation>Създаване на връзка при влачене</translation>
+        <translation>Създаване на символна връзка при влачене</translation>
     </message>
 </context>
 <context>
@@ -683,7 +683,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation>Файлов маниджер</translation>
+        <translation>Файлов мениджър</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="133"/>
@@ -938,17 +938,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="948"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Запазване на настройките рекурсивно от &amp;тук</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="953"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Отидете до Източник на наследените настройки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="958"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Премахнете настройките на несъществуващите папки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="636"/>
@@ -993,7 +993,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="832"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Запазване на настройките за &amp;тази папка</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="869"/>
@@ -1058,7 +1058,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="927"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Допълнителни комбинации</translation>
+        <translation>Скриване &amp;Клавишни комбинации</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="932"/>
@@ -1069,7 +1069,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="937"/>
         <location filename="../main-win.ui" line="940"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Създаване на стартер</translation>
+        <translation>Създаване на стартер</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="767"/>
@@ -1165,7 +1165,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="154"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Персонализирани настройки на изгледа</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="595"/>
@@ -1341,7 +1341,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="246"/>
         <source>Main Toolbar</source>
-        <translation>Основна лента с инструменти</translation>
+        <translation>Главна лента с меню</translation>
     </message>
 </context>
 <context>
@@ -1686,7 +1686,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1900"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Персонализиране на настройките за изглед</translation>
+        <translation>Персонализиране на настройките на изгледа</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2125"/>
@@ -1702,13 +1702,14 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2235"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Изчистване настройките на директория</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2236"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Искате ли да премахнете настройките на несъществуващите папки?
+Те може да са полезни, ако тези папки бъдат създадени отново.</translation>
     </message>
 </context>
 <context>
@@ -1971,7 +1972,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Забавяне на автоматичния избор в режим с едно кликване:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -2051,7 +2052,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="399"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Деактивиране на плавното превъртане в списък и компактен режим</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
@@ -2129,12 +2130,14 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Ако съществуват, външни миниатюри се използват за видеоклипове, PDF документи и др.
+
+Стойност от -1 означава, че няма ограничение за размера на файла (по подразбиране).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="666"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ограничение за размера на файла за външни миниатюри:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="678"/>
