@@ -7,25 +7,25 @@
         <location filename="../about.ui" line="14"/>
         <location filename="../../build/src/ui_about.h" line="140"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Sobre</translation>
     </message>
     <message>
         <location filename="../about.ui" line="37"/>
         <location filename="../../build/src/ui_about.h" line="142"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="60"/>
         <location filename="../../build/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
-        <translation type="unfinished"></translation>
+        <translation>A Experiência de Desktop</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
         <location filename="../../build/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="99"/>
@@ -37,7 +37,13 @@
 
 Application icon:
 * Raphael Lopes (https://raphaellopes.me/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Programação:
+* Simon Peter (probono)
+* Chris Moore (moochris)
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+
+Ícone do aplicativo:
+* Raphael Lopes (https://raphaellopes.me/)</translation>
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
@@ -71,19 +77,47 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer
+
+Copyright (C) 2020-21 Simon Peter
+Copyright (C) 2021 Chris Moore
+
+Baseado originalmente no PCMan File Manager
+Partes do Copyright (C) 2009-14 洪任諭 (Hong Jen Yee)
+
+Este programa é um software livre; você pode redistribuí-lo e/ou
+modificá-lo sob os termos da Licença Pública Geral GNU, conforme
+publicado pela Free Software Foundation, seja a versão 2 da Licença
+ou (a seu critério) qualquer versão posterior.
+
+Este programa é distribuído na esperança de que seja útil,
+mas SEM QUALQUER GARANTIA; nem mesmo a garantia implícita de
+COMERCIALIZAÇÃO OU ADEQUAÇÃO A UM DETERMINADO PROPÓSITO. Veja a
+Licença Pública Geral GNU para obter mais detalhes.
+
+Você deve ter recebido uma cópia da Licença Pública Geral GNU
+junto com este programa. Se não, escreva para a Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+Ícone do aplicativo
+
+https://dribbble.com/shots/2541211--Pirate-Finder-icon#
+
+Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
+
+Usado com permissão do criador https://raphaellopes.me/</translation>
     </message>
     <message>
         <location filename="../about.ui" line="90"/>
         <location filename="../../build/src/ui_about.h" line="153"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
+        <translation>Autores</translation>
     </message>
     <message>
         <location filename="../about.ui" line="116"/>
         <location filename="../../build/src/ui_about.h" line="184"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licença</translation>
     </message>
 </context>
 <context>
@@ -92,31 +126,31 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../app-chooser-dialog.ui" line="14"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="150"/>
         <source>Choose an Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Escolha um Aplicativo</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="151"/>
         <source>Installed Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicativos Instalados</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="163"/>
         <source>Custom Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Comando Personalizado</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="152"/>
         <source>Command line to execute:</source>
-        <translation type="unfinished"></translation>
+        <translation>Linha de comando para executar:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="153"/>
         <source>Application name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome do aplicativo:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
@@ -128,25 +162,31 @@ Used with permission of the creator https://raphaellopes.me/</source>
 &lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represents a single URI of the file&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represents multiple URIs&lt;/li&gt;
 &lt;/ul&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Você pode utilizar os seguintes códigos na linha de comando:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: é o nome de um arquivo&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;: é o nome de vários arquivos&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: é o URI do arquivo&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: é o URI de vários arquivos&lt;/li&gt;
+&lt;/ul&gt;</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished"></translation>
+        <translation>Manter janela de terminal aberta depois de executar o comando</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="162"/>
         <source>Execute in terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar no emulador de terminal</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="164"/>
         <source>Set selected application as default action of this file type</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizar o aplicativo selecionado como padrão para este tipo de arquivo</translation>
     </message>
 </context>
 <context>
@@ -155,31 +195,31 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../autorun.ui" line="14"/>
         <location filename="../../build/src/ui_autorun.h" line="108"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Disco removível inserido</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <location filename="../../build/src/ui_autorun.h" line="110"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Disco removível inserido&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <location filename="../../build/src/ui_autorun.h" line="111"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo de dispositivo:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <location filename="../../build/src/ui_autorun.h" line="112"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Detectando...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <location filename="../../build/src/ui_autorun.h" line="113"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>Por favor, selecione a ação que deseja realizar:</translation>
     </message>
 </context>
 <context>
@@ -188,37 +228,37 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../desktop-folder.ui" line="14"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="72"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formulário</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="73"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Área de trabalho</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="74"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasta da área de trabalho:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="76"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivo de imagem</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="81"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Caminho da pasta</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="82"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>E&amp;xplorar</translation>
     </message>
 </context>
 <context>
@@ -227,73 +267,73 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../desktop-preferences.ui" line="14"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="205"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferências da Área de Trabalho</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="20"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="206"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Fundo</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="42"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="207"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Modo do papel de parede:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="55"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="208"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivo do papel de parede:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="75"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cor de fundo:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="147"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="222"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cor do texto:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="160"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="223"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cor da sombra:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="173"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="224"/>
         <source>Font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fonte:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="84"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="212"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivo da imagem</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="90"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="217"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>Caminho do arquivo da imagem</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="97"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="218"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>E&amp;xplorar</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="109"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="219"/>
         <source>Label Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Texto</translation>
     </message>
 </context>
 <context>
@@ -302,37 +342,37 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../edit-bookmarks.ui" line="14"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="103"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Editar Favoritos</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="42"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="106"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="47"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="105"/>
         <source>Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Localização</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="67"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Adicionar item</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Remover item</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="109"/>
         <source>Use drag and drop to reorder the items</source>
-        <translation type="unfinished"></translation>
+        <translation>Arraste e solte para organizar os itens</translation>
     </message>
 </context>
 <context>
@@ -341,31 +381,31 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../exec-file.ui" line="14"/>
         <location filename="../../build/src/ui_exec-file.h" line="114"/>
         <source>Execute file</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar arquivo</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
         <location filename="../../build/src/ui_exec-file.h" line="116"/>
         <source>&amp;Open</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Abrir</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
         <location filename="../../build/src/ui_exec-file.h" line="117"/>
         <source>E&amp;xecute</source>
-        <translation type="unfinished"></translation>
+        <translation>E&amp;xecutar</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
         <location filename="../../build/src/ui_exec-file.h" line="118"/>
         <source>Execute in &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar no &amp;Terminal</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
         <location filename="../../build/src/ui_exec-file.h" line="119"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancelar</translation>
     </message>
 </context>
 <context>
@@ -374,31 +414,31 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-operation-dialog.ui" line="25"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="124"/>
         <source>Destination:</source>
-        <translation type="unfinished"></translation>
+        <translation>Destino:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="48"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="126"/>
         <source>Processing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Processamento:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="61"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="127"/>
         <source>Preparing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Preparando...</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="68"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="128"/>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Progresso</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="88"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="129"/>
         <source>Time remaining:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tempo restante:</translation>
     </message>
 </context>
 <context>
@@ -407,97 +447,97 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../file-props.ui" line="133"/>
         <location filename="../../build/src/ui_file-props.h" line="365"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Geral</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="208"/>
         <location filename="../../build/src/ui_file-props.h" line="372"/>
         <source>Location:</source>
-        <translation type="unfinished"></translation>
+        <translation>Localização:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="139"/>
         <location filename="../../build/src/ui_file-props.h" line="366"/>
         <source>File type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo de arquivo:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="317"/>
         <location filename="../../build/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir com</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
         <location filename="../../build/src/ui_file-props.h" line="381"/>
         <source>Mime type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo Mime:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="162"/>
         <location filename="../../build/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamanho do arquivo:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="20"/>
         <location filename="../../build/src/ui_file-props.h" line="362"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Informações</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>Texto</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
         <location filename="../../build/src/ui_file-props.h" line="370"/>
         <source>On-disk size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamanho no disco:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="260"/>
         <location filename="../../build/src/ui_file-props.h" line="376"/>
         <source>Last modified:</source>
-        <translation type="unfinished"></translation>
+        <translation>Última modificação:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="423"/>
         <location filename="../../build/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
-        <translation type="unfinished"></translation>
+        <translation>Todos</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
         <location filename="../../build/src/ui_file-props.h" line="374"/>
         <source>Link target:</source>
-        <translation type="unfinished"></translation>
+        <translation>Destino do link:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="346"/>
         <location filename="../../build/src/ui_file-props.h" line="383"/>
         <source>Open With:</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir com:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="283"/>
         <location filename="../../build/src/ui_file-props.h" line="378"/>
         <source>Last accessed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Último acesso:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="380"/>
         <location filename="../../build/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
-        <translation type="unfinished"></translation>
+        <translation>Controle de acesso</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="440"/>
         <location filename="../../build/src/ui_file-props.h" line="386"/>
         <source>Make the file executable</source>
-        <translation type="unfinished"></translation>
+        <translation>Marcar como executável</translation>
     </message>
 </context>
 <context>
@@ -505,99 +545,99 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome do perfil</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>PERFIL</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Run Filer as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Executar Filer como serviço</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Quit Filer</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar Filer</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Launch desktop manager (deprecated)</source>
-        <translation type="unfinished"></translation>
+        <translation>Iniciar gerenciador da área de trabalho (obsoleto)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="201"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar gerenciador da área de trabalho se estiver em execução</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="204"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir diálogo de preferências da área de trabalho na página especificada</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="204"/>
         <location filename="../application.cpp" line="220"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>NOME</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="207"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir nova janela</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="210"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir o utilitário Procurar Arquivos</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="213"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>Definir papel de parede a partir de um arquivo</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="213"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>ARQUIVO</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation type="unfinished"></translation>
+        <translation>Definir modo do papel de parede. MODO=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>MODO</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir diálogo de preferências na página especificada</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="223"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivos ou pastas para abrir</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="223"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[ARQUIVO1, ARQUIVO2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="512"/>
         <location filename="../application.cpp" line="519"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="519"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>O emulador de terminal não está definido.</translation>
     </message>
 </context>
 <context>
@@ -605,12 +645,12 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../autorundialog.cpp" line="43"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir no gerenciador de arquivos</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="133"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Disco Removível</translation>
     </message>
 </context>
 <context>
@@ -618,37 +658,37 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="49"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>Preencher apenas com a cor de fundo</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Transparent</source>
-        <translation type="unfinished"></translation>
+        <translation>Transparente</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Esticar para preencher a tela</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Esticar para ajustar à tela</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Centralizar na tela</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Imagens em mosaico para preencher a tela</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="145"/>
         <source>Image Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivos de Imagem</translation>
     </message>
 </context>
 <context>
@@ -656,17 +696,17 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../desktopwindow.cpp" line="439"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Fi&amp;xar na Posição Atual</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="461"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferências da Área de Trabalho</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="528"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versão: %1</translation>
     </message>
 </context>
 <context>
@@ -674,17 +714,17 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../gotofolderwindow.cpp" line="47"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Ir</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="48"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="59"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ir à Pasta</translation>
     </message>
 </context>
 <context>
@@ -692,23 +732,23 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../mainwindow.cpp" line="210"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Limpar texto (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="761"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versão: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1464"/>
         <location filename="../mainwindow.cpp" line="1475"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1475"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>O comando para trocar de usuário não está definido.</translation>
     </message>
 </context>
 <context>
@@ -716,22 +756,22 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Exibição em Ícones</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Compact Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Exibição Compacta em Ícones</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="194"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Exibição em Miniaturas</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="195"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Lista Detalhada</translation>
     </message>
 </context>
 <context>
@@ -739,32 +779,35 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../tabpage.cpp" line="246"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="264"/>
         <source>%1 available</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 disponível</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="277"/>
         <source>%n item(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n item</numerusform>
+            <numerusform>%n itens</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="279"/>
         <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform> (%n oculto)</numerusform>
+            <numerusform> (%n ocultos)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="431"/>
         <source>%1 item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 item selecionado</numerusform>
+            <numerusform>%1 itens selecionados</numerusform>
         </translation>
     </message>
 </context>
@@ -773,12 +816,12 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../view.cpp" line="111"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir em &amp;Nova Janela</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="119"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir no Termina&amp;l</translation>
     </message>
 </context>
 <context>
@@ -786,140 +829,140 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Buscar arquivos</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome/Posição</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>Padrões de nome de arquivos</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="unfinished"></translation>
+        <translation>Padrão:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorar maiúsculas</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
         <location filename="../file-search.ui" line="228"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Usar expressão regular</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation type="unfinished"></translation>
+        <translation>Lugares para procurar</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Adicionar</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="88"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Remover</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="117"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Procurar em subpastas</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="124"/>
         <source>Search hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>Procurar arquivos ocultos</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="135"/>
         <location filename="../file-search.ui" line="141"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo de Arquivo</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="147"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>Buscar somente os seguintes tipos de arquivo:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="154"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivos de texto</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="161"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivos de imagens</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="168"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivos de áudio</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="175"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivos de vídeo</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="182"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Documentos</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="206"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>Conteúdo</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="212"/>
         <source>File contains</source>
-        <translation type="unfinished"></translation>
+        <translation>Conteúdo do arquivo</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="252"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Informações</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="258"/>
         <source>File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamanho do Arquivo</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Maior que:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Menor que:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="317"/>
         <source>Last Modified Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Data da Última Modificação</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="323"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Antes de:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="340"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Depois de:</translation>
     </message>
 </context>
 <context>
@@ -927,7 +970,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>Personalizar</translation>
     </message>
 </context>
 <context>
@@ -935,7 +978,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../appchooserdialog.cpp" line="262"/>
         <source>Select an application to open &quot;%1&quot; files</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecione um aplicativo para abrir os arquivos &quot;%1&quot;</translation>
     </message>
 </context>
 <context>
@@ -943,12 +986,12 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasta</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivo Vazio</translation>
     </message>
 </context>
 <context>
@@ -956,12 +999,12 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="77"/>
         <source>Loading...</source>
-        <translation type="unfinished"></translation>
+        <translation>Carregando...</translation>
     </message>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="208"/>
         <source>&lt;No sub folders&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Não existem subpastas&gt;</translation>
     </message>
 </context>
 <context>
@@ -969,12 +1012,12 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../dirtreeview.cpp" line="220"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir em Nova Jan&amp;ela</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="226"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir no Termina&amp;l</translation>
     </message>
 </context>
 <context>
@@ -982,22 +1025,22 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../dndactionmenu.cpp" line="26"/>
         <source>Copy here</source>
-        <translation type="unfinished"></translation>
+        <translation>Copiar aqui</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="27"/>
         <source>Move here</source>
-        <translation type="unfinished"></translation>
+        <translation>Mover aqui</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="28"/>
         <source>Create symlink here</source>
-        <translation type="unfinished"></translation>
+        <translation>Criar link simbólico aqui</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="30"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancelar</translation>
     </message>
 </context>
 <context>
@@ -1005,7 +1048,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../editbookmarksdialog.cpp" line="96"/>
         <source>New bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Novo favorito</translation>
     </message>
 </context>
 <context>
@@ -1014,12 +1057,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../execfiledialog.cpp" line="40"/>
         <source>This text file &apos;%1&apos; seems to be an executable script.
 What do you want to do with it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Parece que o arquivo de texto &quot;%1&quot; é um script executável.
+O que você deseja fazer com ele?</translation>
     </message>
     <message>
         <location filename="../execfiledialog.cpp" line="45"/>
         <source>This file &apos;%1&apos; is executable. Do you want to execute it?</source>
-        <translation type="unfinished"></translation>
+        <translation>O arquivo %1 é um executável. Deseja executá-lo?</translation>
     </message>
 </context>
 <context>
@@ -1027,67 +1071,67 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="95"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="138"/>
         <source>Open With...</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir com...</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="166"/>
         <source>Other Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Outros Aplicativos</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="172"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished"></translation>
+        <translation>Criar &amp;Novo</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="130"/>
         <source>&amp;Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Restaurar</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="101"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar Conteúdo</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="179"/>
         <source>Cut</source>
-        <translation type="unfinished"></translation>
+        <translation>Cortar</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="183"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Copiar</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="187"/>
         <source>Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Colar</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="192"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Move para a Lixeira</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="196"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomear</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="246"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Obter Informações</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="251"/>
         <source>&amp;Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Esvaziar Lixeira</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="354"/>
@@ -1279,7 +1323,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="44"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Co&amp;lar</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="50"/>
@@ -1431,7 +1475,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesmodel.cpp" line="137"/>
         <source>Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoritos</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="212"/>
@@ -1454,22 +1498,22 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesview.cpp" line="371"/>
         <source>Move Bookmark Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Mover Favorito para Cima</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="376"/>
         <source>Move Bookmark Down</source>
-        <translation type="unfinished"></translation>
+        <translation>Mover Favorito para Cima</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="380"/>
         <source>Rename Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Renomear Favorito</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="383"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Remover Favorito</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="392"/>
@@ -1538,7 +1582,7 @@ Modified: %3</source>
     <message>
         <location filename="../sidepane.cpp" line="143"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra a lista de locais comuns, dispositivos e favoritos na barra lateral</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="145"/>
@@ -1660,7 +1704,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="410"/>
         <location filename="../../build/src/ui_main-win.h" line="645"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Adicionar aos Favoritos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="415"/>
@@ -1768,7 +1812,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="513"/>
         <location filename="../../build/src/ui_main-win.h" line="677"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Pr&amp;eferências</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="521"/>
@@ -2120,7 +2164,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="693"/>
         <location filename="../../build/src/ui_main-win.h" line="726"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Editar Favoritos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="698"/>
@@ -2138,7 +2182,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="711"/>
         <location filename="../../build/src/ui_main-win.h" line="732"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Editar Favoritos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="389"/>
@@ -2158,7 +2202,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="740"/>
         <location filename="../../build/src/ui_main-win.h" line="741"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Procurar Arquivos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="751"/>
@@ -2206,13 +2250,13 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="176"/>
         <location filename="../../build/src/ui_main-win.h" line="803"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Editar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="194"/>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <source>&amp;Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Favoritos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="201"/>
