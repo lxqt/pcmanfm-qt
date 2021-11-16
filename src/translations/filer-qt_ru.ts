@@ -990,7 +990,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation>Найnb файлы</translation>
+        <translation>Найти файлы</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
@@ -1011,7 +1011,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation>Регистрочувствительный</translation>
+        <translation>Нечувствительный к регистру</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
