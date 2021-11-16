@@ -19,6 +19,7 @@
  */
 
 #include "launcher.h"
+#include <QFileInfo>
 #include "mainwindow.h"
 #include "application.h"
 #include <libfm-qt/core/filepath.h>
@@ -83,6 +84,30 @@ bool Launcher::openFolder(GAppLaunchContext* ctx, const Fm::FileInfoList& folder
     mainWindow->activateWindow();
     openInNewTab_ = false;
     return true;
+}
+
+void Launcher::launchedFiles(const Fm::FileInfoList& files) const {
+    Application* app = static_cast<Application*>(qApp);
+    if(app->settings().getRecentFilesNumber() > 0) {
+        for(const auto& file : files) {
+            if(file->isNative() && !file->isDir()) {
+                app->settings().addRecentFile(QString::fromUtf8(file->path().localPath().get()));
+            }
+        }
+    }
+}
+void Launcher::launchedPaths(const Fm::FilePathList& paths) const {
+    Application* app = static_cast<Application*>(qApp);
+    if(app->settings().getRecentFilesNumber() > 0) {
+        for(const auto& path : paths) {
+            if(path.isNative()) {
+                auto pathStr = QString::fromUtf8(path.localPath().get());
+                if(!QFileInfo(pathStr).isDir()) { // this is fast because the path is native
+                    app->settings().addRecentFile(pathStr);
+                }
+            }
+        }
+    }
 }
 
 } //namespace PCManFM
