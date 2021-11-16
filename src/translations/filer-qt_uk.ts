@@ -228,37 +228,37 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../desktop-folder.ui" line="14"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="72"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="73"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Стільниця</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="74"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Тека стільниці:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="76"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл зображення</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="81"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Шлях до теки</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="82"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Огляд</translation>
     </message>
 </context>
 <context>
@@ -267,73 +267,73 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../desktop-preferences.ui" line="14"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="205"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Налаштування стільниці</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="20"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="206"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Тло</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="42"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="207"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Режим шпалер:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="55"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="208"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл зображення шпалер:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="75"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Колір тла:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="147"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="222"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Колір тексту:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="160"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="223"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Колір тіні:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="173"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="224"/>
         <source>Font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Шрифт:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="84"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="212"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл зображення</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="90"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="217"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>Шлях до файлу зображення</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="97"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="218"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Огляд</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="109"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="219"/>
         <source>Label Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Текст ярлика</translation>
     </message>
 </context>
 <context>
@@ -342,37 +342,37 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../edit-bookmarks.ui" line="14"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="103"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Змінити закладки</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="42"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="106"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Ім&apos;я</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="47"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="105"/>
         <source>Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Розташування</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="67"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Додати елемент</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Видалити елемент</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="109"/>
         <source>Use drag and drop to reorder the items</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовуйте перетягування для зміни порядку елементів</translation>
     </message>
 </context>
 <context>
@@ -381,31 +381,31 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../exec-file.ui" line="14"/>
         <location filename="../../build/src/ui_exec-file.h" line="114"/>
         <source>Execute file</source>
-        <translation type="unfinished"></translation>
+        <translation>Виконати файл</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
         <location filename="../../build/src/ui_exec-file.h" line="116"/>
         <source>&amp;Open</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Відкрити</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
         <location filename="../../build/src/ui_exec-file.h" line="117"/>
         <source>E&amp;xecute</source>
-        <translation type="unfinished"></translation>
+        <translation>Ви&amp;конати</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
         <location filename="../../build/src/ui_exec-file.h" line="118"/>
         <source>Execute in &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Виконати у &amp;терміналі</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
         <location filename="../../build/src/ui_exec-file.h" line="119"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Скасувати</translation>
     </message>
 </context>
 <context>
@@ -414,31 +414,31 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../file-operation-dialog.ui" line="25"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="124"/>
         <source>Destination:</source>
-        <translation type="unfinished"></translation>
+        <translation>Призначення:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="48"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="126"/>
         <source>Processing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Обробка:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="61"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="127"/>
         <source>Preparing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Підготовка...</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="68"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="128"/>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Перебіг</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="88"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="129"/>
         <source>Time remaining:</source>
-        <translation type="unfinished"></translation>
+        <translation>Час, що залишився:</translation>
     </message>
 </context>
 <context>
@@ -447,97 +447,97 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../file-props.ui" line="133"/>
         <location filename="../../build/src/ui_file-props.h" line="365"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Загальні</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="208"/>
         <location filename="../../build/src/ui_file-props.h" line="372"/>
         <source>Location:</source>
-        <translation type="unfinished"></translation>
+        <translation>Розташування:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="139"/>
         <location filename="../../build/src/ui_file-props.h" line="366"/>
         <source>File type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Тип файлу:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="317"/>
         <location filename="../../build/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити з</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
         <location filename="../../build/src/ui_file-props.h" line="381"/>
         <source>Mime type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Тип Mime:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="162"/>
         <location filename="../../build/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Розмір файлу:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="20"/>
         <location filename="../../build/src/ui_file-props.h" line="362"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Інформація</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>Текстова мітка</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
         <location filename="../../build/src/ui_file-props.h" line="370"/>
         <source>On-disk size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Розмір на диску:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="260"/>
         <location filename="../../build/src/ui_file-props.h" line="376"/>
         <source>Last modified:</source>
-        <translation type="unfinished"></translation>
+        <translation>Остання зміна:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="423"/>
         <location filename="../../build/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
-        <translation type="unfinished"></translation>
+        <translation>Кожний</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
         <location filename="../../build/src/ui_file-props.h" line="374"/>
         <source>Link target:</source>
-        <translation type="unfinished"></translation>
+        <translation>Посилання на об&apos;єкт:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="346"/>
         <location filename="../../build/src/ui_file-props.h" line="383"/>
         <source>Open With:</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити з:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="283"/>
         <location filename="../../build/src/ui_file-props.h" line="378"/>
         <source>Last accessed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Останній доступ:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="380"/>
         <location filename="../../build/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
-        <translation type="unfinished"></translation>
+        <translation>Управління доступом</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="440"/>
         <location filename="../../build/src/ui_file-props.h" line="386"/>
         <source>Make the file executable</source>
-        <translation type="unfinished"></translation>
+        <translation>Зробити файл виконуваним</translation>
     </message>
 </context>
 <context>
@@ -545,99 +545,99 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Назва профілю налаштувань</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="189"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>ПРОФІЛЬ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="192"/>
         <source>Run Filer as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Запустити Filer як службу</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="195"/>
         <source>Quit Filer</source>
-        <translation type="unfinished"></translation>
+        <translation>Вийти з Filer</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="198"/>
         <source>Launch desktop manager (deprecated)</source>
-        <translation type="unfinished"></translation>
+        <translation>Запустити менеджер стільниці (більше не підтримується)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="201"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>Вимкнути диспетчер стільниці, якщо він запущений</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="204"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити діалогове вікно налаштувань стільниці на сторінці із вказаною назвою</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="204"/>
         <location filename="../application.cpp" line="220"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>ІМ&apos;Я</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="207"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити нове вікно</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="210"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити утиліту пошуку файлів</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="213"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановити шпалери для стільниці з ФАЙЛу зображення</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="213"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>ФАЙЛ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановити режим шпалер стільниці. РЕЖИМ=(color|stretch|fit|center|tile)(укр.: колір|розтягнути|підігнати|по центру|плиткою)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="217"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>РЕЖИМ</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="220"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити діалогове вікно налаштувань на сторінці із вказаною назвою</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="223"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Файли або теки для відкриття</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="223"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[ФАЙЛ1, ФАЙЛ2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="512"/>
         <location filename="../application.cpp" line="519"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="519"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Емулятор терміналу не визначено.</translation>
     </message>
 </context>
 <context>
@@ -645,12 +645,12 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../autorundialog.cpp" line="43"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити у менеджері файлів</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="133"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Знімний диск</translation>
     </message>
 </context>
 <context>
@@ -658,37 +658,37 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="49"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>Залити лише кольором тла</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Transparent</source>
-        <translation type="unfinished"></translation>
+        <translation>Прозорість</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Розтягнути для заповнення всього екрану</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Розтягнути до розміру екрану</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>По центру екрану</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Розмістити зображення плиткою для заповнення всього екрану</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="145"/>
         <source>Image Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Файли зображень</translation>
     </message>
 </context>
 <context>
@@ -696,17 +696,17 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../desktopwindow.cpp" line="439"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Дотримуватись поточної позиції</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="461"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Налаштування стільниці</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="528"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Версія: %1</translation>
     </message>
 </context>
 <context>
@@ -714,17 +714,17 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../gotofolderwindow.cpp" line="47"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="48"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="59"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти до теки</translation>
     </message>
 </context>
 <context>
@@ -732,23 +732,23 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../mainwindow.cpp" line="210"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистити текст (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="761"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Версія: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1464"/>
         <location filename="../mainwindow.cpp" line="1475"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1475"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда перемикання користувача не визначена.</translation>
     </message>
 </context>
 <context>
@@ -756,22 +756,22 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Перегляд піктограм</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Compact Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Перегляд малих піктограм</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="194"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Перегляд ескізів</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="195"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Перегляд детального списку</translation>
     </message>
 </context>
 <context>
@@ -779,38 +779,38 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../tabpage.cpp" line="246"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="264"/>
         <source>%1 available</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 доступний</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="277"/>
         <source>%n item(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n елемент</numerusform>
+            <numerusform>%n елементи</numerusform>
+            <numerusform>%n елементів</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="279"/>
         <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform> (%n прихований)</numerusform>
+            <numerusform> (%n прихованих)</numerusform>
+            <numerusform> (%n прихованих)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="431"/>
         <source>%1 item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 вибраний елемент</numerusform>
+            <numerusform>%1 вибраних елемента</numerusform>
+            <numerusform>%1 вибраних елементів</numerusform>
         </translation>
     </message>
 </context>
@@ -819,12 +819,12 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../view.cpp" line="111"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Ві&amp;дкрити у новому вікні</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="119"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити у терміна&amp;лі</translation>
     </message>
 </context>
 <context>
@@ -832,140 +832,140 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Знайти файли</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Ім&apos;я/Розташування</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>Шаблони імен файлів</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="unfinished"></translation>
+        <translation>Шаблон:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Не чутливий до регістру</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
         <location filename="../file-search.ui" line="228"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати регулярний вираз</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation type="unfinished"></translation>
+        <translation>Місця для пошуку</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="88"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="117"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Шукати у підтеках</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="124"/>
         <source>Search hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>Шукати приховані файли</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="135"/>
         <location filename="../file-search.ui" line="141"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Тип файлу</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="147"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>Шукати файли лише таких типів:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="154"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>Текстові файли</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="161"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>Файли зображень</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="168"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>Аудіофайли</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="175"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>Відеофайли</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="182"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Документи</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="206"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>Вміст</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="212"/>
         <source>File contains</source>
-        <translation type="unfinished"></translation>
+        <translation>Вміст файлу</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="252"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Інформація</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="258"/>
         <source>File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Розмір файлу</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Більший за:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Менший за:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="317"/>
         <source>Last Modified Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Час останньої зміни</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="323"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Раніше ніж:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="340"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Пізніше ніж:</translation>
     </message>
 </context>
 <context>
@@ -973,7 +973,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>Налаштування</translation>
     </message>
 </context>
 <context>
@@ -981,7 +981,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../appchooserdialog.cpp" line="262"/>
         <source>Select an application to open &quot;%1&quot; files</source>
-        <translation type="unfinished"></translation>
+        <translation>Виберіть застосунок, щоб відкрити файли &quot;%1&quot;</translation>
     </message>
 </context>
 <context>
@@ -989,12 +989,12 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Тека</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>Порожній файл</translation>
     </message>
 </context>
 <context>
@@ -1002,12 +1002,12 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../dirtreemodelitem.cpp" line="77"/>
         <source>Loading...</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантаження...</translation>
     </message>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="208"/>
         <source>&lt;No sub folders&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Підтеки відсутні&gt;</translation>
     </message>
 </context>
 <context>
@@ -1015,12 +1015,12 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../dirtreeview.cpp" line="220"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Ві&amp;дкрити у новому вікні</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="226"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити у терміна&amp;лі</translation>
     </message>
 </context>
 <context>
@@ -1028,22 +1028,22 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../dndactionmenu.cpp" line="26"/>
         <source>Copy here</source>
-        <translation type="unfinished"></translation>
+        <translation>Скопіювати сюди</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="27"/>
         <source>Move here</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемістити сюди</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="28"/>
         <source>Create symlink here</source>
-        <translation type="unfinished"></translation>
+        <translation>Створити тут символічне посилання</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="30"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Скасувати</translation>
     </message>
 </context>
 <context>
@@ -1051,7 +1051,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
     <message>
         <location filename="../editbookmarksdialog.cpp" line="96"/>
         <source>New bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Нова закладка</translation>
     </message>
 </context>
 <context>
@@ -1060,12 +1060,13 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../execfiledialog.cpp" line="40"/>
         <source>This text file &apos;%1&apos; seems to be an executable script.
 What do you want to do with it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Цей текстовий файл &apos;%1&apos; схожий на виконуваний сценарій.
+Що ви хочете з ним зробити?</translation>
     </message>
     <message>
         <location filename="../execfiledialog.cpp" line="45"/>
         <source>This file &apos;%1&apos; is executable. Do you want to execute it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Цей файл &apos;%1&apos; є виконуваним. Ви хочете його виконати?</translation>
     </message>
 </context>
 <context>
@@ -1073,72 +1074,72 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="95"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="138"/>
         <source>Open With...</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити з...</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="166"/>
         <source>Other Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Інші застосунки</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="172"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished"></translation>
+        <translation>Створити &amp;новий</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="130"/>
         <source>&amp;Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Відновити</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="101"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>Показати вміст</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="179"/>
         <source>Cut</source>
-        <translation type="unfinished"></translation>
+        <translation>Вирізати</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="183"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювати</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="187"/>
         <source>Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Вставити</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="192"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Пере&amp;містити до смітника</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="196"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейменувати</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="246"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Отримати інформацію</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="251"/>
         <source>&amp;Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Очистити смітник</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="354"/>
         <source>Output</source>
-        <translation type="unfinished"></translation>
+        <translation>Виведення</translation>
     </message>
 </context>
 <context>
@@ -1146,29 +1147,30 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperation.cpp" line="220"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="221"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>Деякі файли не можна перемістити до смітника, оскільки основні файлові системи не підтримують цю операцію.
+Натомість видалити їх?</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="262"/>
         <location filename="../fileoperation.cpp" line="278"/>
         <source>Confirm</source>
-        <translation type="unfinished"></translation>
+        <translation>Підтвердити</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="263"/>
         <source>Do you want to delete the selected files?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ви хочете видалити вибрані файли?</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="279"/>
         <source>Do you want to move the selected files to trash can?</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемістити вибрані файли до смітника?</translation>
     </message>
 </context>
 <context>
@@ -1176,77 +1178,77 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="41"/>
         <source>Move files</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемістити файли</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="42"/>
         <source>Moving the following files to destination folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Переміщення таких файлів до цільової теки:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="45"/>
         <source>Copy Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювати файли</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="46"/>
         <source>Copying the following files to destination folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювання таких файлів до цільової теки:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="49"/>
         <source>Trash Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемістити файли до смітника</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="50"/>
         <source>Moving the following files to trash can:</source>
-        <translation type="unfinished"></translation>
+        <translation>Переміщення таких файлів до смітника:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="53"/>
         <source>Delete Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити файли</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="54"/>
         <source>Deleting the following files</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалення таких файлів:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="59"/>
         <source>Create Symlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>Створити символічні посилання</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="60"/>
         <source>Creating symlinks for the following files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Створення символічних посилань для таких файлів:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="63"/>
         <source>Change Attributes</source>
-        <translation type="unfinished"></translation>
+        <translation>Змінити атрибути</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="64"/>
         <source>Changing attributes of the following files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Зміна атрибутів таких файлів:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="69"/>
         <source>Restore Trashed Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Відновити файли із смітника</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="70"/>
         <source>Restoring the following files from trash can:</source>
-        <translation type="unfinished"></translation>
+        <translation>Відновлення таких файлів із смітника:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="139"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>G</translation>
     </message>
 </context>
 <context>
@@ -1254,47 +1256,47 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filepropsdialog.cpp" line="148"/>
         <source>View folder content</source>
-        <translation type="unfinished"></translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="149"/>
         <source>View and modify folder content</source>
-        <translation type="unfinished"></translation>
+        <translation>Перегляд і зміна вмісту теки</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="153"/>
         <source>Read</source>
-        <translation type="unfinished"></translation>
+        <translation>Читання</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="154"/>
         <source>Read and write</source>
-        <translation type="unfinished"></translation>
+        <translation>Читання та запис</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="156"/>
         <source>Forbidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Заборона</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="274"/>
         <source>Files of different types</source>
-        <translation type="unfinished"></translation>
+        <translation>Файли різних типів</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="304"/>
         <source>Multiple Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Кілька файлів</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="432"/>
         <source>Apply changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Застосувати зміни</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="433"/>
         <source>Do you want to recursively apply these changes to all files and sub-folders?</source>
-        <translation type="unfinished"></translation>
+        <translation>Застосувати ці зміни рекурсивно до всіх файлів та вкладених тек?</translation>
     </message>
 </context>
 <context>
@@ -1302,17 +1304,17 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>You should add at least add one directory to search.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ви повинні додати принаймні одну теку для пошуку.</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="127"/>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Виберіть теку</translation>
     </message>
 </context>
 <context>
@@ -1320,82 +1322,82 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="37"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished"></translation>
+        <translation>Створити &amp;нову</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="44"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Вс&amp;тавити</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="50"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибр&amp;ати все</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="54"/>
         <source>Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Обернути виділення</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="60"/>
         <source>Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>Сортування</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="65"/>
         <source>Show Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Показати приховані</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="73"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Отримати інформацію</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="99"/>
         <source>By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>За назвою файлу</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="100"/>
         <source>By Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>За часом зміни</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="101"/>
         <source>By File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>За розміром файлу</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="102"/>
         <source>By File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>За типом файлу</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="103"/>
         <source>By File Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>За власником файлу</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="115"/>
         <source>Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>В порядку зростання</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="120"/>
         <source>Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>В порядку спадання</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="135"/>
         <source>Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>Спочатку теки</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="144"/>
         <source>Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Чутливий до регістру</translation>
     </message>
 </context>
 <context>
@@ -1403,27 +1405,27 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermodel.cpp" line="313"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Ім&apos;я</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="316"/>
         <source>Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="319"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Розмір</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="322"/>
         <source>Modified</source>
-        <translation type="unfinished"></translation>
+        <translation>Змінений</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="325"/>
         <source>Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Власник</translation>
     </message>
 </context>
 <context>
@@ -1431,12 +1433,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fontbutton.cpp" line="46"/>
         <source>Bold</source>
-        <translation type="unfinished"></translation>
+        <translation>Жирний</translation>
     </message>
     <message>
         <location filename="../fontbutton.cpp" line="50"/>
         <source>Italic</source>
-        <translation type="unfinished"></translation>
+        <translation>Курсив</translation>
     </message>
 </context>
 <context>
@@ -1444,7 +1446,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../mountoperationpassworddialog.cpp" line="40"/>
         <source>&amp;Connect</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Під&apos;єднати</translation>
     </message>
 </context>
 <context>
@@ -1452,37 +1454,37 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesmodel.cpp" line="82"/>
         <source>Places</source>
-        <translation type="unfinished"></translation>
+        <translation>Місця</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="90"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Стільниця</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="99"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Комп&apos;ютер</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="126"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Мережа</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="40"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Пристрої</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="137"/>
         <source>Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Закладки</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="212"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Смітник</translation>
     </message>
 </context>
 <context>
@@ -1490,48 +1492,48 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesview.cpp" line="351"/>
         <source>Open in New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити у новому вікні</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="362"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистити смітник</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="371"/>
         <source>Move Bookmark Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемістити закладку вгору</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="376"/>
         <source>Move Bookmark Down</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемістити закладку вниз</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="380"/>
         <source>Rename Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейменувати закладку</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="383"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити закладку</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="392"/>
         <location filename="../placesview.cpp" line="409"/>
         <source>Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation>Демонтувати</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="396"/>
         <source>Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Монтувати</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="402"/>
         <source>Eject</source>
-        <translation type="unfinished"></translation>
+        <translation>Вилучити</translation>
     </message>
 </context>
 <context>
@@ -1542,29 +1544,33 @@ Do you want to delete them instead?</source>
         <source>Type: %1
 Size: %2
 Modified: %3</source>
-        <translation type="unfinished"></translation>
+        <translation>Тип: %1
+Розмір: %2
+Змінено: %3</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="56"/>
         <source>Type: %1
 Modified: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Тип: %1
+Змінено: %2</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="75"/>
         <source>Type: %1
 Modified: %3</source>
-        <translation type="unfinished"></translation>
+        <translation>Тип: %1
+Змінено: %3</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="89"/>
         <source>&amp;Overwrite</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Перезаписати</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="91"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Перейменувати</translation>
     </message>
 </context>
 <context>
@@ -1573,23 +1579,23 @@ Modified: %3</source>
         <location filename="../sidepane.cpp" line="49"/>
         <location filename="../sidepane.cpp" line="133"/>
         <source>Places</source>
-        <translation type="unfinished"></translation>
+        <translation>Місця</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="50"/>
         <location filename="../sidepane.cpp" line="135"/>
         <source>Directory Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>Дерево тек</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="143"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>Показує на бічній панелі список поширених місць, пристроїв та закладок</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="145"/>
         <source>Shows tree of directories in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>Показує дерево тек на бічній панелі</translation>
     </message>
 </context>
 <context>
@@ -1598,265 +1604,265 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="14"/>
         <location filename="../../build/src/ui_main-win.h" line="602"/>
         <source>File Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Менеджер файлів</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="271"/>
         <location filename="../../build/src/ui_main-win.h" line="603"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Перейти вище</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="274"/>
         <location filename="../../build/src/ui_main-win.h" line="605"/>
         <source>Go Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти вище</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>
         <location filename="../../build/src/ui_main-win.h" line="610"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Додому</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="298"/>
         <location filename="../../build/src/ui_main-win.h" line="614"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Пе&amp;резавантажити</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="313"/>
         <location filename="../../build/src/ui_main-win.h" line="618"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="325"/>
         <location filename="../../build/src/ui_main-win.h" line="619"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Вийти</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="343"/>
         <location filename="../../build/src/ui_main-win.h" line="621"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Нове вікно</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="346"/>
         <location filename="../../build/src/ui_main-win.h" line="623"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Нове вікно</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="349"/>
         <location filename="../../build/src/ui_main-win.h" line="626"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="357"/>
         <location filename="../../build/src/ui_main-win.h" line="628"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Показати при&amp;ховані</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="366"/>
         <location filename="../../build/src/ui_main-win.h" line="629"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Комп&apos;ютер</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="369"/>
         <location filename="../../build/src/ui_main-win.h" line="631"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="378"/>
         <location filename="../../build/src/ui_main-win.h" line="633"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Ко&amp;шик</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="381"/>
         <location filename="../../build/src/ui_main-win.h" line="635"/>
         <source>Ctrl+Shift+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="386"/>
         <location filename="../../build/src/ui_main-win.h" line="637"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Мере&amp;жа</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="398"/>
         <location filename="../../build/src/ui_main-win.h" line="641"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Сті&amp;льниця</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="401"/>
         <location filename="../../build/src/ui_main-win.h" line="643"/>
         <source>Ctrl+Shift+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="410"/>
         <location filename="../../build/src/ui_main-win.h" line="645"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати в закладки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="415"/>
         <location filename="../../build/src/ui_main-win.h" line="646"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>З&amp;астосунки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="418"/>
         <location filename="../../build/src/ui_main-win.h" line="648"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="426"/>
         <location filename="../../build/src/ui_main-win.h" line="650"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Оновити</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="434"/>
         <location filename="../../build/src/ui_main-win.h" line="651"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Перегляд піктограм</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
         <location filename="../../build/src/ui_main-win.h" line="653"/>
         <source>Ctrl+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="445"/>
         <location filename="../../build/src/ui_main-win.h" line="655"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Компактний перегляд</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="453"/>
         <location filename="../../build/src/ui_main-win.h" line="656"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Детальний список</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="456"/>
         <location filename="../../build/src/ui_main-win.h" line="658"/>
         <source>Ctrl+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="464"/>
         <location filename="../../build/src/ui_main-win.h" line="660"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Перегляд &amp;мініатюр</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="473"/>
         <location filename="../../build/src/ui_main-win.h" line="661"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>В&amp;ирізати</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="476"/>
         <location filename="../../build/src/ui_main-win.h" line="663"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="485"/>
         <location filename="../../build/src/ui_main-win.h" line="665"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Копіювати</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="488"/>
         <location filename="../../build/src/ui_main-win.h" line="667"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="497"/>
         <location filename="../../build/src/ui_main-win.h" line="669"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Вс&amp;тавити</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="500"/>
         <location filename="../../build/src/ui_main-win.h" line="671"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <location filename="../../build/src/ui_main-win.h" line="673"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Вибрати все</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="508"/>
         <location filename="../../build/src/ui_main-win.h" line="675"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="513"/>
         <location filename="../../build/src/ui_main-win.h" line="677"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Налаштування</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="521"/>
         <location filename="../../build/src/ui_main-win.h" line="678"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>В порядку з&amp;ростання</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="529"/>
         <location filename="../../build/src/ui_main-win.h" line="679"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>В порядку спа&amp;дання</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="537"/>
         <location filename="../../build/src/ui_main-win.h" line="680"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;За назвою файлу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="545"/>
         <location filename="../../build/src/ui_main-win.h" line="681"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>За часом з&amp;міни</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="553"/>
         <location filename="../../build/src/ui_main-win.h" line="682"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>За типом &amp;файлу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="561"/>
         <location filename="../../build/src/ui_main-win.h" line="683"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>За вла&amp;сником файлу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="569"/>
         <location filename="../../build/src/ui_main-win.h" line="684"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>Спочатку те&amp;ки</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="640"/>
@@ -2234,7 +2240,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="140"/>
         <location filename="../../build/src/ui_main-win.h" line="800"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Д&amp;овідка</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="146"/>
@@ -2833,7 +2839,7 @@ Modified: %3</source>
         <location filename="../filesearch.ui" line="48"/>
         <location filename="../../build/src/ui_filesearch.h" line="401"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Не чутливий до регістру</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
