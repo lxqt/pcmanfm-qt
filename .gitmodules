@@ -1,0 +1,4 @@
+[submodule "src/sounds"]
+	path = src/sounds
+	url = https://github.com/helloSystem/Sounds
+	branch = main

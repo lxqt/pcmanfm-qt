@@ -742,27 +742,32 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="264"/>
+        <location filename="../tabpage.cpp" line="265"/>
         <source>%1 available</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="277"/>
-        <source>%n item(s)</source>
+        <location filename="../tabpage.cpp" line="278"/>
+        <source>%n items</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="280"/>
+        <source>1 item</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../tabpage.cpp" line="436"/>
+        <source>%1 items selected</source>
         <translation type="unfinished">
             <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="279"/>
-        <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../tabpage.cpp" line="431"/>
-        <source>%1 item(s) selected</source>
+        <location filename="../tabpage.cpp" line="440"/>
+        <source>%1 item selected</source>
         <translation type="unfinished">
             <numerusform></numerusform>
         </translation>
@@ -1098,29 +1103,29 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileOperation</name>
     <message>
-        <location filename="../fileoperation.cpp" line="220"/>
+        <location filename="../fileoperation.cpp" line="221"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="221"/>
+        <location filename="../fileoperation.cpp" line="222"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="262"/>
-        <location filename="../fileoperation.cpp" line="278"/>
+        <location filename="../fileoperation.cpp" line="263"/>
+        <location filename="../fileoperation.cpp" line="279"/>
         <source>Confirm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="263"/>
+        <location filename="../fileoperation.cpp" line="264"/>
         <source>Do you want to delete the selected files?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="279"/>
+        <location filename="../fileoperation.cpp" line="280"/>
         <source>Do you want to move the selected files to trash can?</source>
         <translation type="unfinished"></translation>
     </message>

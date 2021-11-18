@@ -24,6 +24,7 @@
 #include <QElapsedTimer>
 #include <QMessageBox>
 #include <QDebug>
+#include <sound.h>
 
 using namespace Fm;
 
@@ -285,6 +286,7 @@ FileOperation* FileOperation::trashFiles(FmPathList* srcFiles, bool prompt, QWid
 
   FileOperation* op = new FileOperation(FileOperation::Trash, srcFiles);
   op->run();
+  sound::playSound("ffft.wav");
   return op;
 }
 

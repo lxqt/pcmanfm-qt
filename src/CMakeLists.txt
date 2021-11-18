@@ -1,6 +1,6 @@
 # set(LIBFM_LIBRARY "fm-qt5")
 set(QTX_INCLUDE_DIRS "")
-set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
+set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras Qt5::Multimedia)
 
 include_directories(
     ${QTX_INCLUDE_DIRS}
@@ -82,6 +82,8 @@ set(filer_SRCS
     windowregistry.cpp
     gotofolderwindow.cpp
     dbusinterface.cpp
+    resources.qrc
+    sound.cpp # probono
 )
 
 qt5_add_dbus_adaptor(filer_SRCS
@@ -107,6 +109,11 @@ set(filer_UIS
     desktop-preferences.ui
     desktop-folder.ui
     autorun.ui
+)
+
+set(SOUND_FILES
+    sounds/rustle.wav
+    sounds/ffft.wav
 )
 
 qt5_wrap_ui(filer_UIS_H ${filer_UIS})
@@ -172,6 +179,8 @@ install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/application
 )
 
 install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/filer/translations")
+
+install(FILES ${SOUND_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/filer/sounds")
 
 # prevent the generated files from being deleted during make clean
 set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)
