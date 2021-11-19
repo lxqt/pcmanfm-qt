@@ -85,14 +85,13 @@
     <addaction name="actionNewWin"/>
     <addaction name="separator"/>
     <addaction name="menuCreateNew"/>
+    <addaction name="menuRecentFiles"/>
     <addaction name="separator"/>
     <addaction name="actionFileProperties"/>
     <addaction name="actionFolderProperties"/>
     <addaction name="separator"/>
     <addaction name="actionCloseTab"/>
     <addaction name="actionCloseWindow"/>
-    <addaction name="separator"/>
-    <addaction name="menuRecentFiles"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
