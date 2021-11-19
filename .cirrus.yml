@@ -12,6 +12,7 @@ task:
   setup_script:
     - pkg install -y curl wget zip cmake pkgconf libfm qt5-core qt5-x11extras qt5-widgets qt5-qmake qt5-buildtools qt5-linguisttools
   test_script:
+    - git submodule init
     - mkdir build ; cd build
     - cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
     - make -j$(sysctl -n hw.ncpu)
