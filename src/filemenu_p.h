@@ -21,9 +21,7 @@
 #define FM_FILEMENU_P_H
 
 #include "icontheme.h"
-#ifdef CUSTOM_ACTIONS
 #include <libfm/fm-actions.h>
-#endif
 #include <QDebug>
 
 namespace Fm {
@@ -53,7 +51,6 @@ private:
   GAppInfo* appInfo_;
 };
 
-#ifdef CUSTOM_ACTIONS
 class CustomAction : public QAction {
   Q_OBJECT
 public:
@@ -76,8 +73,6 @@ public:
 private:
   FmFileActionItem* item_;
 };
-
-#endif
 
 } // namespace Fm
 

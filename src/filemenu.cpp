@@ -26,9 +26,7 @@
 #include "fileoperation.h"
 #include "filelauncher.h"
 #include "appchooserdialog.h"
-#ifdef CUSTOM_ACTIONS
 #include <libfm/fm-actions.h>
-#endif
 #include <QMessageBox>
 #include <QDebug>
 #include "filemenu_p.h"
@@ -197,7 +195,6 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
             connect(renameAction_, &QAction::triggered, this, &FileMenu::onRenameTriggered);
             addAction(renameAction_);
 
-#ifdef CUSTOM_ACTIONS
             // DES-EMA custom actions integration
             GList* files_list = fm_file_info_list_peek_head_link(files);
             GList* items = fm_get_actions_for_files(files_list);
@@ -211,7 +208,6 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
             }
             g_list_foreach(items, (GFunc)fm_file_action_item_unref, NULL);
             g_list_free(items);
-#endif
             /*
             // archiver integration
             // FIXME: we need to modify upstream libfm to include some Qt-based archiver programs.
@@ -255,7 +251,6 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
     }
 }
 
-#ifdef CUSTOM_ACTIONS
 void FileMenu::addCustomActionItem(QMenu* menu, FmFileActionItem* item) {
     if(!item) { // separator
         addSeparator();
@@ -281,7 +276,6 @@ void FileMenu::addCustomActionItem(QMenu* menu, FmFileActionItem* item) {
         connect(action, &QAction::triggered, this, &FileMenu::onCustomActionTrigerred);
     }
 }
-#endif
 
 void FileMenu::onOpenTriggered() {
     if(fileLauncher_) {
@@ -340,7 +334,6 @@ void FileMenu::onApplicationTriggered() {
     openFilesWithApp(action->appInfo());
 }
 
-#ifdef CUSTOM_ACTIONS
 void FileMenu::onCustomActionTrigerred() {
     CustomAction* action = static_cast<CustomAction*>(sender());
     FmFileActionItem* item = action->item();
@@ -355,7 +348,6 @@ void FileMenu::onCustomActionTrigerred() {
         g_free(output);
     }
 }
-#endif
 
 void FileMenu::onFilePropertiesTriggered() {
     FilePropsDialog::showForFiles(files_);
