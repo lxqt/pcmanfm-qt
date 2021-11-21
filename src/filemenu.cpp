@@ -262,12 +262,14 @@ void FileMenu::addCustomActionItem(QMenu* menu, FmFileActionItem* item) {
         return;
 
     CustomAction* action = new CustomAction(item, menu);
+    action->setIconVisibleInMenu(true);
     menu->addAction(action);
     if(fm_file_action_item_is_menu(item)) {
         GList* subitems = fm_file_action_item_get_sub_items(item);
         for(GList* l = subitems; l; l = l->next) {
             FmFileActionItem* subitem = FM_FILE_ACTION_ITEM(l->data);
             QMenu* submenu = new QMenu(menu);
+            action->setIconVisibleInMenu(true);
             addCustomActionItem(submenu, subitem);
             action->setMenu(submenu);
         }
