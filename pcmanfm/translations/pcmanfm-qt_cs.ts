@@ -695,7 +695,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="286"/>
         <source>Alt+Up</source>
-        <translation>Alt + šipka nahoru</translation>
+        <translation>Alt+nahoru</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="298"/>
@@ -815,7 +815,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="467"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Kopírovat</translation>
+        <translation>&amp;Zkopírovat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="470"/>
@@ -1192,7 +1192,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="613"/>
         <source>Alt+Left</source>
-        <translation>Alt + šipka vlevo</translation>
+        <translation>Alt+vlevo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="622"/>
@@ -1207,7 +1207,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Right</source>
-        <translation>Alt + šipka vpravo</translation>
+        <translation>Alt+vpravo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -1262,7 +1262,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="246"/>
         <source>Main Toolbar</source>
-        <translation>Hlavní pruh nástrojů</translation>
+        <translation>Hlavní lišta nástrojů</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
