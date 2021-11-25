@@ -1300,6 +1300,12 @@ void DesktopWindow::relayoutItems() {
 
     QRect workArea = screen->availableVirtualGeometry();
     workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+
+    // switch between right and left with RTL to use the usual LTR calculations
+    if(layoutDirection() == Qt::RightToLeft) {
+        workArea.moveLeft(rect().right() - workArea.right());
+    }
+
     // qDebug() << "workArea" << screenNum_ <<  workArea;
     // FIXME: we use an internal class declared in a private header here, which is pretty bad.
     QPoint pos = workArea.topLeft();
@@ -1413,6 +1419,9 @@ void DesktopWindow::retrieveCustomPos() {
     auto grid = delegate->itemSize();
     QRect workArea = screen->availableVirtualGeometry();
     workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+    if(layoutDirection() == Qt::RightToLeft) { // see relayoutItems
+        workArea.moveLeft(rect().right() - workArea.right());
+    }
     QString desktopDir = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
     desktopDir += QLatin1Char('/');
     std::vector<QPoint> usedPos;
@@ -1671,6 +1680,9 @@ QModelIndex DesktopWindow::navigateWithKey(int key, Qt::KeyboardModifiers modifi
         auto itemSize = delegate->itemSize();
         QRect workArea = screen->availableVirtualGeometry();
         workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+        if(layoutDirection() == Qt::RightToLeft) { // see relayoutItems
+            workArea.moveLeft(rect().right() - workArea.right());
+        }
         int columns = workArea.width() / (itemSize.width() + listView_->spacing());
         int rows = workArea.height() / (itemSize.height() + listView_->spacing());
         while(!index.isValid() && workArea.contains(pos)) {
@@ -1820,6 +1832,9 @@ void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) { // see DesktopWindow
     auto grid = delegate->itemSize();
     QRect workArea = screen->availableVirtualGeometry();
     workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+    if(layoutDirection() == Qt::RightToLeft) { // see relayoutItems
+        workArea.moveLeft(rect().right() - workArea.right());
+    }
     bool isTrash;
     QRect oldDropRect = dropRect_;
     dropRect_ = QRect();
@@ -1870,7 +1885,9 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
     auto grid = delegate->itemSize();
     QRect workArea = screen->availableVirtualGeometry();
     workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
-
+    if(layoutDirection() == Qt::RightToLeft) { // see relayoutItems
+        workArea.moveLeft(rect().right() - workArea.right());
+    }
     const QMimeData* mimeData = e->mimeData();
     bool moveItem = false;
     QModelIndex curIndx = listView_->currentIndex();
@@ -1918,7 +1935,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         // Therefore, to have the same calculations regardless of the layout direction,
         // we reverse the x-coordinate with RTL.
         if(layoutDirection() == Qt::RightToLeft) {
-            dropPos.setX(workArea.width() + 2 * WORK_AREA_MARGIN - dropPos.x());
+            dropPos.setX(width() - dropPos.x());
         }
 
         if(curIndx.isValid()) {
@@ -1991,7 +2008,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             const QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
             QPoint dropPos = e->pos();
             if(layoutDirection() == Qt::RightToLeft) { // see the previous case for the reason
-                dropPos.setX(workArea.width() + 2 * WORK_AREA_MARGIN - dropPos.x());
+                dropPos.setX(width() - dropPos.x());
             }
             const QList<QUrl> urlList = mimeData->urls();
             bool reachedLastCell = false;
@@ -2119,7 +2136,7 @@ QModelIndex DesktopWindow::indexForPos(bool* isTrash, const QPoint& pos, const Q
     // provided by "pos". Therefore, to have the same normalizing calculations regardless of
     // the layout direction, we reverse the x-coordinate with RTL and restore it in the end.
     if(layoutDirection() == Qt::RightToLeft) {
-        p.setX(workArea.width() + 2 * WORK_AREA_MARGIN - p.x());
+        p.setX(width() - p.x());
     }
 
     if(p.y() + grid.height() > workArea.bottom() + 1) {
@@ -2138,7 +2155,7 @@ QModelIndex DesktopWindow::indexForPos(bool* isTrash, const QPoint& pos, const Q
 
     // restore the x-coordinate with RTL
     if(layoutDirection() == Qt::RightToLeft) {
-        p.setX(workArea.width() + 2 * WORK_AREA_MARGIN - p.x());
+        p.setX(width() - p.x());
     }
 
     // if this is the Trash cell, return its index
