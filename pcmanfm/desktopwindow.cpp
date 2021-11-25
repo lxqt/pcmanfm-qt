@@ -1912,7 +1912,15 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
     if(moveItem) {
         e->accept();
         // move selected items to the drop position, preserving their relative positions
-        const QPoint dropPos = e->pos();
+        QPoint dropPos = e->pos();
+
+        // NOTE: DND always reports the position in the usual (LTR) coordinates.
+        // Therefore, to have the same calculations regardless of the layout direction,
+        // we reverse the x-coordinate with RTL.
+        if(layoutDirection() == Qt::RightToLeft) {
+            dropPos.setX(workArea.width() + 2 * WORK_AREA_MARGIN - dropPos.x());
+        }
+
         if(curIndx.isValid()) {
             QPoint curPoint = listView_->visualRect(curIndx).topLeft();
 
@@ -1982,6 +1990,9 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                || e->dropAction() == Qt::LinkAction)) {
             const QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
             QPoint dropPos = e->pos();
+            if(layoutDirection() == Qt::RightToLeft) { // see the previous case for the reason
+                dropPos.setX(workArea.width() + 2 * WORK_AREA_MARGIN - dropPos.x());
+            }
             const QList<QUrl> urlList = mimeData->urls();
             bool reachedLastCell = false;
             for(const QUrl& url : urlList) {
@@ -2103,6 +2114,14 @@ void DesktopWindow::alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize&
 QModelIndex DesktopWindow::indexForPos(bool* isTrash, const QPoint& pos, const QRect& workArea, const QSize& grid) const {
     // first normalize the position
     QPoint p(pos);
+
+    // QAbstractItemView::indexAt() always refers to the usual (LTR) coordinates, which is
+    // provided by "pos". Therefore, to have the same normalizing calculations regardless of
+    // the layout direction, we reverse the x-coordinate with RTL and restore it in the end.
+    if(layoutDirection() == Qt::RightToLeft) {
+        p.setX(workArea.width() + 2 * WORK_AREA_MARGIN - p.x());
+    }
+
     if(p.y() + grid.height() > workArea.bottom() + 1) {
         p.setY(workArea.bottom() + 1 - grid.height());
     }
@@ -2116,6 +2135,12 @@ QModelIndex DesktopWindow::indexForPos(bool* isTrash, const QPoint& pos, const Q
     // (if there is any item, its icon is immediately below the middle of its top side)
     p.setX(p.x() + (grid.width() + listView_->spacing()) / 2);
     p.setY(p.y() + listView_->spacing() / 2 + getMargins().height() + 1);
+
+    // restore the x-coordinate with RTL
+    if(layoutDirection() == Qt::RightToLeft) {
+        p.setX(workArea.width() + 2 * WORK_AREA_MARGIN - p.x());
+    }
+
     // if this is the Trash cell, return its index
     QModelIndex indx = listView_->indexAt(p);
     if(indx.isValid() && indx.model()) {
