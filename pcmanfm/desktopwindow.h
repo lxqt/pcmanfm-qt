@@ -144,7 +144,7 @@ protected Q_SLOTS:
 
 private:
     void removeBottomGap();
-    QRect getWorkiArea(QScreen* screen) const;
+    QRect getWorkArea(QScreen* screen) const;
     void addDesktopActions(QMenu* menu);
     void paintBackground(QPaintEvent* event);
     void paintDropIndicator();
