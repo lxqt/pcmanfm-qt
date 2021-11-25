@@ -1275,6 +1275,16 @@ void DesktopWindow::trustOurDesktopShortcut(std::shared_ptr<const Fm::FileInfo> 
     }
 }
 
+QRect DesktopWindow::getWorkiArea(QScreen* screen) const {
+    QRect workArea = screen->availableVirtualGeometry();
+    workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+    // switch between right and left with RTL to use the usual (LTR) calculations later
+    if(layoutDirection() == Qt::RightToLeft) {
+        workArea.moveLeft(rect().right() - workArea.right());
+    }
+    return workArea;
+}
+
 // QListView does item layout in a very inflexible way, so let's do our custom layout again.
 // FIXME: this is very inefficient, but due to the design flaw of QListView, this is currently the only workaround.
 void DesktopWindow::relayoutItems() {
@@ -1298,13 +1308,7 @@ void DesktopWindow::relayoutItems() {
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
     auto itemSize = delegate->itemSize();
 
-    QRect workArea = screen->availableVirtualGeometry();
-    workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
-
-    // switch between right and left with RTL to use the usual LTR calculations
-    if(layoutDirection() == Qt::RightToLeft) {
-        workArea.moveLeft(rect().right() - workArea.right());
-    }
+    QRect workArea = getWorkiArea(screen);
 
     // qDebug() << "workArea" << screenNum_ <<  workArea;
     // FIXME: we use an internal class declared in a private header here, which is pretty bad.
@@ -1417,11 +1421,7 @@ void DesktopWindow::retrieveCustomPos() {
     customItemPos_.clear();
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
     auto grid = delegate->itemSize();
-    QRect workArea = screen->availableVirtualGeometry();
-    workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
-    if(layoutDirection() == Qt::RightToLeft) { // see relayoutItems
-        workArea.moveLeft(rect().right() - workArea.right());
-    }
+    QRect workArea = getWorkiArea(screen);
     QString desktopDir = QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
     desktopDir += QLatin1Char('/');
     std::vector<QPoint> usedPos;
@@ -1678,11 +1678,7 @@ QModelIndex DesktopWindow::navigateWithKey(int key, Qt::KeyboardModifiers modifi
         }
         auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
         auto itemSize = delegate->itemSize();
-        QRect workArea = screen->availableVirtualGeometry();
-        workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
-        if(layoutDirection() == Qt::RightToLeft) { // see relayoutItems
-            workArea.moveLeft(rect().right() - workArea.right());
-        }
+        QRect workArea = getWorkiArea(screen);
         int columns = workArea.width() / (itemSize.width() + listView_->spacing());
         int rows = workArea.height() / (itemSize.height() + listView_->spacing());
         while(!index.isValid() && workArea.contains(pos)) {
@@ -1830,11 +1826,7 @@ void DesktopWindow::childDragMoveEvent(QDragMoveEvent* e) { // see DesktopWindow
     }
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
     auto grid = delegate->itemSize();
-    QRect workArea = screen->availableVirtualGeometry();
-    workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
-    if(layoutDirection() == Qt::RightToLeft) { // see relayoutItems
-        workArea.moveLeft(rect().right() - workArea.right());
-    }
+    QRect workArea = getWorkiArea(screen);
     bool isTrash;
     QRect oldDropRect = dropRect_;
     dropRect_ = QRect();
@@ -1883,11 +1875,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
     }
     auto delegate = static_cast<Fm::FolderItemDelegate*>(listView_->itemDelegateForColumn(0));
     auto grid = delegate->itemSize();
-    QRect workArea = screen->availableVirtualGeometry();
-    workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
-    if(layoutDirection() == Qt::RightToLeft) { // see relayoutItems
-        workArea.moveLeft(rect().right() - workArea.right());
-    }
+    QRect workArea = getWorkiArea(screen);
     const QMimeData* mimeData = e->mimeData();
     bool moveItem = false;
     QModelIndex curIndx = listView_->currentIndex();
