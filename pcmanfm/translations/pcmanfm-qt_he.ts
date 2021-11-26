@@ -2054,7 +2054,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="399"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>השבתת הגלילה החלקה במצב הרשימה ובמצב החסכוני</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="422"/>
