@@ -502,17 +502,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>සැඟවුනු කෙටිමං</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation type="unfinished"></translation>
+        <translation>කෙටිමග</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>ක්‍රියාමාර්ගය</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
