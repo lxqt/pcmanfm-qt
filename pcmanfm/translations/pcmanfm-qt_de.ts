@@ -14,6 +14,12 @@
         <translation>Leichtgewichtiger Dateimanager</translation>
     </message>
     <message>
+        <location filename="../about.ui" line="58"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../about.ui" line="91"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
@@ -26,13 +32,6 @@
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="58"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
     </message>
     <message>
         <location filename="../about.ui" line="82"/>
@@ -690,564 +689,574 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <translation>Dateimanager</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="283"/>
+        <location filename="../main-win.ui" line="289"/>
         <source>Go Up</source>
         <translation>Nach oben</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="286"/>
+        <location filename="../main-win.ui" line="292"/>
         <source>Alt+Up</source>
         <translation>Alt+Hoch</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="298"/>
+        <location filename="../main-win.ui" line="304"/>
         <source>Alt+Home</source>
         <translation>Alt+Pos1</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="414"/>
+        <location filename="../main-win.ui" line="420"/>
         <source>Reload</source>
         <translation>Neu laden</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="310"/>
+        <location filename="../main-win.ui" line="316"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="133"/>
+        <location filename="../main-win.ui" line="81"/>
+        <source>Recent F&amp;iles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="139"/>
         <source>&amp;Toolbars</source>
         <translation>Werkzeugleis&amp;ten</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="140"/>
+        <location filename="../main-win.ui" line="146"/>
         <source>Path &amp;Bar</source>
         <translation>Pfad&amp;leiste</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="147"/>
+        <location filename="../main-win.ui" line="153"/>
         <source>&amp;Filtering</source>
         <translation>&amp;Filterung</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="221"/>
+        <location filename="../main-win.ui" line="227"/>
         <source>&amp;Tools</source>
         <translation>&amp;Werkzeuge</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="295"/>
+        <location filename="../main-win.ui" line="301"/>
         <source>&amp;Home</source>
         <translation>&amp;Benutzerverzeichnis</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="307"/>
+        <location filename="../main-win.ui" line="313"/>
         <source>&amp;Reload</source>
         <translation>Neu &amp;laden</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="319"/>
+        <location filename="../main-win.ui" line="325"/>
         <source>Go</source>
         <translation>Gehe zu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="328"/>
+        <location filename="../main-win.ui" line="334"/>
         <source>Quit</source>
         <translation>Beenden</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="337"/>
+        <location filename="../main-win.ui" line="343"/>
         <source>&amp;About</source>
         <translation>&amp;Über</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="349"/>
+        <location filename="../main-win.ui" line="355"/>
         <source>New Window</source>
         <translation>Neues Fenster</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="352"/>
+        <location filename="../main-win.ui" line="358"/>
         <source>Ctrl+N</source>
         <translation>Strg+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="360"/>
+        <location filename="../main-win.ui" line="366"/>
         <source>Show &amp;Hidden</source>
         <translation>&amp;Versteckte Dateien anzeigen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="363"/>
+        <location filename="../main-win.ui" line="369"/>
         <source>Ctrl+H</source>
         <translation>Strg+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="372"/>
+        <location filename="../main-win.ui" line="378"/>
         <source>&amp;Computer</source>
         <translation>Re&amp;chner</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="381"/>
+        <location filename="../main-win.ui" line="387"/>
         <source>&amp;Trash</source>
         <translation>&amp;Papierkorb</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="386"/>
+        <location filename="../main-win.ui" line="392"/>
         <source>&amp;Network</source>
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="395"/>
+        <location filename="../main-win.ui" line="401"/>
         <source>&amp;Desktop</source>
         <translation>Schreib&amp;tisch</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="404"/>
+        <location filename="../main-win.ui" line="410"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>Zu Lesezeichen &amp;hinzufügen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="409"/>
+        <location filename="../main-win.ui" line="415"/>
         <source>&amp;Applications</source>
         <translation>&amp;Anwendungen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="458"/>
+        <location filename="../main-win.ui" line="464"/>
         <source>Ctrl+X</source>
         <translation>Strg+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="467"/>
+        <location filename="../main-win.ui" line="473"/>
         <source>&amp;Copy</source>
         <translation>&amp;Kopieren</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="470"/>
+        <location filename="../main-win.ui" line="476"/>
         <source>Ctrl+C</source>
         <translation>Strg+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="479"/>
+        <location filename="../main-win.ui" line="485"/>
         <source>&amp;Paste</source>
         <translation>&amp;Einfügen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="482"/>
+        <location filename="../main-win.ui" line="488"/>
         <source>Ctrl+V</source>
         <translation>Strg+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="487"/>
+        <location filename="../main-win.ui" line="493"/>
         <source>Select &amp;All</source>
         <translation>&amp;Alles auswählen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="495"/>
+        <location filename="../main-win.ui" line="501"/>
         <source>Pr&amp;eferences</source>
         <translation>&amp;Einstellungen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="503"/>
+        <location filename="../main-win.ui" line="509"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Aufsteigend</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="511"/>
+        <location filename="../main-win.ui" line="517"/>
         <source>&amp;Descending</source>
         <translation>Absteigen&amp;d</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="519"/>
+        <location filename="../main-win.ui" line="525"/>
         <source>&amp;By File Name</source>
         <translation>Nach &amp;Dateiname</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="527"/>
+        <location filename="../main-win.ui" line="533"/>
         <source>By &amp;Modification Time</source>
         <translation>Nach &amp;Änderungszeit</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="535"/>
+        <location filename="../main-win.ui" line="541"/>
         <source>By C&amp;reation Time</source>
         <translation>Nach Erstellungszeit</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="543"/>
+        <location filename="../main-win.ui" line="549"/>
         <source>By Deletio&amp;n Time</source>
         <translation>&amp;Nach Löschzeit</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="551"/>
+        <location filename="../main-win.ui" line="557"/>
         <source>By File &amp;Type</source>
         <translation>Nach Datei&amp;typ</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="559"/>
+        <location filename="../main-win.ui" line="565"/>
         <source>By &amp;Owner</source>
         <translation>Nach &amp;Besitzer</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="567"/>
+        <location filename="../main-win.ui" line="573"/>
         <source>By &amp;Group</source>
         <translation>Nach &amp;Gruppe</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="575"/>
+        <location filename="../main-win.ui" line="581"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Ordner zuerst</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="583"/>
+        <location filename="../main-win.ui" line="589"/>
         <source>&amp;Hidden Last</source>
         <translation>Versteckte Dateien zuletzt</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="948"/>
+        <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
         <translation>Einstellungen rekursiv von &amp;hier beibehalten</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="953"/>
+        <location filename="../main-win.ui" line="959"/>
         <source>&amp;Go to Source of Inherited Settings</source>
         <translation>Zur Quelle der vererbten Einstellungen &amp;gehen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="958"/>
+        <location filename="../main-win.ui" line="964"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
         <translation>Einstellungen von nicht existierenden Ordnern entfe&amp;rnen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="633"/>
+        <location filename="../main-win.ui" line="972"/>
+        <source>&amp;Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="639"/>
         <source>&amp;Invert Selection</source>
         <translation>Auswahl &amp;umkehren</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="636"/>
+        <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
         <translation>Strg+Umschalt+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="645"/>
+        <location filename="../main-win.ui" line="651"/>
         <source>&amp;Delete</source>
         <translation>&amp;Löschen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="653"/>
+        <location filename="../main-win.ui" line="659"/>
         <source>&amp;Rename</source>
         <translation>&amp;Umbenennen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="685"/>
+        <location filename="../main-win.ui" line="691"/>
         <source>&amp;Case Sensitive</source>
         <translation>Groß- /Kleinschreibung bea&amp;chten</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="693"/>
+        <location filename="../main-win.ui" line="699"/>
         <source>By File &amp;Size</source>
         <translation>Nach Datei&amp;größe</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="698"/>
+        <location filename="../main-win.ui" line="704"/>
         <source>&amp;Close Window</source>
         <translation>Fenster s&amp;chließen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="701"/>
+        <location filename="../main-win.ui" line="707"/>
         <source>Ctrl+Q</source>
         <translation>Strg+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="719"/>
+        <location filename="../main-win.ui" line="725"/>
         <source>Open Tab in &amp;Root Instance</source>
         <translation>Tab als &amp;Root-Instanz öffnen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="832"/>
+        <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
         <translation>Einstellungen für &amp;diesen Ordner beibehalten</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="869"/>
+        <location filename="../main-win.ui" line="875"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation>Filterleiste &amp;anzeigen/fokussieren</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="872"/>
+        <location filename="../main-win.ui" line="878"/>
         <source>Show Filter Bar</source>
         <translation>Filterleiste anzeigen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="875"/>
+        <location filename="../main-win.ui" line="881"/>
         <source>Ctrl+I</source>
         <translation>Strg+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="883"/>
+        <location filename="../main-win.ui" line="889"/>
         <source>S&amp;plit View</source>
         <translation>Ansicht &amp;teilen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="886"/>
+        <location filename="../main-win.ui" line="892"/>
         <source>Split View</source>
         <translation>Ansicht teilen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="889"/>
+        <location filename="../main-win.ui" line="895"/>
         <source>F6</source>
         <translation>F6</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="894"/>
+        <location filename="../main-win.ui" line="900"/>
         <source>&amp;Copy Full Path</source>
         <translation>Vollständigen Pfad &amp;kopieren</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="897"/>
+        <location filename="../main-win.ui" line="903"/>
         <source>Ctrl+Shift+C</source>
         <translation>Strg+Umschalt+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="908"/>
+        <location filename="../main-win.ui" line="914"/>
         <source>Show Thumb&amp;nails</source>
         <translation>Vorschaubilder a&amp;nzeigen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="911"/>
+        <location filename="../main-win.ui" line="917"/>
         <source>Show Thumbnails</source>
         <translation>Vorschaubilder anzeigen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="919"/>
+        <location filename="../main-win.ui" line="925"/>
         <source>S&amp;ide Pane</source>
         <translation>S&amp;eitenleiste</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="922"/>
+        <location filename="../main-win.ui" line="928"/>
         <source>F9</source>
         <translation>F9</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="927"/>
+        <location filename="../main-win.ui" line="933"/>
         <source>Hidden &amp;Shortcuts</source>
         <translation>Versteckte &amp;Tastenkürzel</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="932"/>
+        <location filename="../main-win.ui" line="938"/>
         <source>Open Tab in &amp;Admin Mode</source>
         <translation>Tab im &amp;Admin-Modus öffnen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="937"/>
-        <location filename="../main-win.ui" line="940"/>
+        <location filename="../main-win.ui" line="943"/>
+        <location filename="../main-win.ui" line="946"/>
         <source>Create Launcher</source>
         <translation>Starter erstellen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="767"/>
+        <location filename="../main-win.ui" line="773"/>
         <source>Ctrl+B</source>
         <translation>Strg+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="772"/>
+        <location filename="../main-win.ui" line="778"/>
         <source>&amp;Clear All Filters</source>
         <translation>Alle Filter lös&amp;chen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="775"/>
+        <location filename="../main-win.ui" line="781"/>
         <source>Ctrl+Shift+K</source>
         <translation>Strg+Umschalt+K</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="784"/>
+        <location filename="../main-win.ui" line="790"/>
         <source>Close &amp;previous tabs</source>
         <translation>Schließe &amp;bisherige Tabs</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="793"/>
+        <location filename="../main-win.ui" line="799"/>
         <source>Close &amp;next tabs</source>
         <translation>Schließe &amp;folgende Tabs</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="837"/>
+        <location filename="../main-win.ui" line="843"/>
         <source>Connect to &amp;Server</source>
         <translation>Mit &amp;Server verbinden</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="845"/>
+        <location filename="../main-win.ui" line="851"/>
         <source>&amp;Location</source>
         <translation>&amp;Ort</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="853"/>
+        <location filename="../main-win.ui" line="859"/>
         <source>&amp;Path Buttons</source>
         <translation>&amp;Pfadschaltflächen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="858"/>
+        <location filename="../main-win.ui" line="864"/>
         <source>&amp;Bulk Rename</source>
         <translation>&amp;Massenumbenennen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="861"/>
+        <location filename="../main-win.ui" line="867"/>
         <source>Bulk Rename</source>
         <translation>Massenumbenennen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="864"/>
+        <location filename="../main-win.ui" line="870"/>
         <source>Ctrl+F2</source>
         <translation>Strg+F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="798"/>
+        <location filename="../main-win.ui" line="804"/>
         <source>Close &amp;other tabs</source>
         <translation>Alle Tabs außer dem &amp;aktiven schließen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="764"/>
+        <location filename="../main-win.ui" line="770"/>
         <source>Permanent &amp;filter bar</source>
         <translation>Permanente &amp;Filterleiste</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="806"/>
+        <location filename="../main-win.ui" line="812"/>
         <source>&amp;Menu bar</source>
         <translation>&amp;Menüleiste</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="809"/>
+        <location filename="../main-win.ui" line="815"/>
         <source>Menu bar</source>
         <translation>Menüleiste</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="812"/>
+        <location filename="../main-win.ui" line="818"/>
         <source>Ctrl+M</source>
         <translation>Strg+M</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="821"/>
-        <location filename="../main-win.ui" line="824"/>
+        <location filename="../main-win.ui" line="827"/>
+        <location filename="../main-win.ui" line="830"/>
         <source>Menu</source>
         <translation>Menü</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="490"/>
+        <location filename="../main-win.ui" line="496"/>
         <source>Ctrl+A</source>
         <translation>Strg+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="154"/>
+        <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
         <translation>&amp;Angepasste Ansichtseinstellungen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="280"/>
+        <location filename="../main-win.ui" line="286"/>
         <source>Go &amp;Up</source>
         <translation>&amp;Übergeordneter Ordner</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="346"/>
+        <location filename="../main-win.ui" line="352"/>
         <source>&amp;New Window</source>
         <translation>&amp;Neues Fenster</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="422"/>
+        <location filename="../main-win.ui" line="428"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Symbolansicht</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="430"/>
+        <location filename="../main-win.ui" line="436"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Kompaktansicht</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="438"/>
+        <location filename="../main-win.ui" line="444"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Detaillierte Liste</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="446"/>
+        <location filename="../main-win.ui" line="452"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Miniaturansicht</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="455"/>
+        <location filename="../main-win.ui" line="461"/>
         <source>Cu&amp;t</source>
         <translation>&amp;Ausschneiden</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="592"/>
+        <location filename="../main-win.ui" line="598"/>
         <source>New &amp;Tab</source>
         <translation>Neue &amp;Registerkarte</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="595"/>
+        <location filename="../main-win.ui" line="601"/>
         <source>New Tab</source>
         <translation>Neue Registerkarte</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="598"/>
+        <location filename="../main-win.ui" line="604"/>
         <source>Ctrl+T</source>
         <translation>Strg+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="613"/>
         <source>Go &amp;Back</source>
         <translation>&amp;Zurück</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="610"/>
+        <location filename="../main-win.ui" line="616"/>
         <source>Go Back</source>
         <translation>Zurück</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="613"/>
+        <location filename="../main-win.ui" line="619"/>
         <source>Alt+Left</source>
         <translation>Alt+Links</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="622"/>
+        <location filename="../main-win.ui" line="628"/>
         <source>Go &amp;Forward</source>
         <translation>&amp;Vorwärts</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="625"/>
+        <location filename="../main-win.ui" line="631"/>
         <source>Go Forward</source>
         <translation>Vorwärts</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="628"/>
+        <location filename="../main-win.ui" line="634"/>
         <source>Alt+Right</source>
         <translation>Alt+Rechts</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="648"/>
+        <location filename="../main-win.ui" line="654"/>
         <source>Del</source>
         <translation>Entf</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="656"/>
+        <location filename="../main-win.ui" line="662"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="661"/>
+        <location filename="../main-win.ui" line="667"/>
         <source>C&amp;lose Tab</source>
         <translation>&amp;Reiter schließen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="669"/>
+        <location filename="../main-win.ui" line="675"/>
         <source>File &amp;Properties</source>
         <translation>&amp;Dateieigenschaften</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="677"/>
+        <location filename="../main-win.ui" line="683"/>
         <source>&amp;Folder Properties</source>
         <translation>&amp;Ordnereigenschaften</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="736"/>
+        <location filename="../main-win.ui" line="742"/>
         <source>Ctrl+Shift+N</source>
         <translation>Strg+Umschalt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="748"/>
+        <location filename="../main-win.ui" line="754"/>
         <source>Ctrl+Alt+N</source>
         <translation>Strg+Alt+N</translation>
     </message>
@@ -1257,62 +1266,62 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <translation>Neu e&amp;rstellen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="103"/>
+        <location filename="../main-win.ui" line="109"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Sortierung</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="246"/>
+        <location filename="../main-win.ui" line="252"/>
         <source>Main Toolbar</source>
         <translation>Hauptwerkzeugleiste</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="664"/>
+        <location filename="../main-win.ui" line="670"/>
         <source>Ctrl+W</source>
         <translation>Strg+W</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="672"/>
+        <location filename="../main-win.ui" line="678"/>
         <source>Alt+Return</source>
         <translation>Alt+Return</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="706"/>
+        <location filename="../main-win.ui" line="712"/>
         <source>Edit Bookmarks</source>
         <translation>Lesezeichen bearbeiten</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="711"/>
+        <location filename="../main-win.ui" line="717"/>
         <source>Open &amp;Terminal</source>
         <translation>&amp;Terminal öffnen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="714"/>
+        <location filename="../main-win.ui" line="720"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="724"/>
+        <location filename="../main-win.ui" line="730"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>Lesezeichen b&amp;earbeiten</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="733"/>
+        <location filename="../main-win.ui" line="739"/>
         <source>&amp;Folder</source>
         <translation>&amp;Ordner</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="745"/>
+        <location filename="../main-win.ui" line="751"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Leere Datei</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="753"/>
+        <location filename="../main-win.ui" line="759"/>
         <source>&amp;Find Files</source>
         <translation>Dateien &amp;suchen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="756"/>
+        <location filename="../main-win.ui" line="762"/>
         <source>F3</source>
         <translation>F3</translation>
     </message>
@@ -1322,28 +1331,28 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <translation>&amp;Datei</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="92"/>
+        <location filename="../main-win.ui" line="98"/>
         <source>&amp;Help</source>
         <translation>&amp;Hilfe</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="99"/>
-        <location filename="../main-win.ui" line="123"/>
+        <location filename="../main-win.ui" line="105"/>
+        <location filename="../main-win.ui" line="129"/>
         <source>&amp;View</source>
         <translation>&amp;Ansicht</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="179"/>
+        <location filename="../main-win.ui" line="185"/>
         <source>&amp;Edit</source>
         <translation>&amp;Bearbeiten</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="197"/>
+        <location filename="../main-win.ui" line="203"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Lesezeichen</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="204"/>
+        <location filename="../main-win.ui" line="210"/>
         <source>&amp;Go</source>
         <translation>&amp;Gehe zu</translation>
     </message>
@@ -1661,55 +1670,55 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <translation>Instanz mit Administratorrechten</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="724"/>
+        <location filename="../mainwindow.cpp" line="743"/>
         <source>Hide menu bar</source>
         <translation>Menüleiste ausblenden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="725"/>
+        <location filename="../mainwindow.cpp" line="744"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Dadurch wird die Menüleiste komplett ausgeblendet, mit Strg+M können Sie sie wieder einblenden.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1097"/>
+        <location filename="../mainwindow.cpp" line="1171"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2057"/>
+        <location filename="../mainwindow.cpp" line="2131"/>
         <source>&amp;Move to Trash</source>
         <translation>In den Papierkorb &amp;verschieben</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2057"/>
+        <location filename="../mainwindow.cpp" line="2131"/>
         <source>&amp;Delete</source>
         <translation>&amp;Löschen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1900"/>
+        <location filename="../mainwindow.cpp" line="1974"/>
         <source>Customized View Settings</source>
         <translation>Angepasste Ansichtseinstellungen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2125"/>
-        <location filename="../mainwindow.cpp" line="2133"/>
+        <location filename="../mainwindow.cpp" line="2238"/>
+        <location filename="../mainwindow.cpp" line="2246"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2133"/>
+        <location filename="../mainwindow.cpp" line="2246"/>
         <source>Switch user command is not set.</source>
         <translation>Befehl, um den Benutzer zu wechseln, ist nicht eingestellt.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2235"/>
+        <location filename="../mainwindow.cpp" line="2348"/>
         <source>Cleaning Folder Settings</source>
         <translation>Ordnereinstellungen bereinigen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2236"/>
+        <location filename="../mainwindow.cpp" line="2349"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Möchten Sie die Einstellungen von nicht existierenden Ordnern entfernen?
@@ -1833,7 +1842,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="605"/>
+        <location filename="../preferences.ui" line="642"/>
         <source>Thumbnail</source>
         <translation>Vorschaubild</translation>
     </message>
@@ -1853,62 +1862,62 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
         <translation>Markiere neu erstellte Dateien</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="259"/>
+        <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
         <translation>Symbole</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="291"/>
+        <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
         <translation>Größe der großen Symbole:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="308"/>
+        <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
         <translation>Größe der kleinen Symbole:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="325"/>
+        <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
         <translation>Größe von Vorschaubildern:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="339"/>
+        <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
         <translation>Größe der Symbole in der Seitenleiste:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="271"/>
+        <location filename="../preferences.ui" line="308"/>
         <source>Icon theme:</source>
         <translation>Symbolthema:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="509"/>
+        <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
         <translation>Fenster</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="550"/>
+        <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
         <translation>Standardbreite neuer Fenster:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="564"/>
+        <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
         <translation>Standardhöhe neuer Fenster:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="522"/>
+        <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
         <translation>Reiterleiste immer anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="529"/>
+        <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>&apos;Schließen&apos;-Knopf an Tabs zeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="543"/>
+        <location filename="../preferences.ui" line="580"/>
         <source>Remember the size of the last closed window</source>
         <translation>Größe des zuletzt geschlossenen Fensters merken</translation>
     </message>
@@ -1948,12 +1957,12 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
         <translation>Gelöschte Dateien in den &quot;Papierkorb&quot; verschieben anstatt sie von der Festplatte zu löschen.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="614"/>
+        <location filename="../preferences.ui" line="651"/>
         <source>Show thumbnails of files</source>
         <translation>Vorschaubilder von Dateien anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="621"/>
+        <location filename="../preferences.ui" line="658"/>
         <source>Only show thumbnails for local files</source>
         <translation>Vorschaubilder nur für lokale Dateien anzeigen</translation>
     </message>
@@ -2010,8 +2019,8 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
-        <location filename="../preferences.ui" line="372"/>
-        <location filename="../preferences.ui" line="382"/>
+        <location filename="../preferences.ui" line="409"/>
+        <location filename="../preferences.ui" line="419"/>
         <source>Requires application restart to take effect completely</source>
         <translation>Anwendungsneustart für vollständige Einstellungsübernahme erforderlich</translation>
     </message>
@@ -2036,96 +2045,101 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
         <translation>Einzelfenstermodus</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="288"/>
-        <location filename="../preferences.ui" line="298"/>
+        <location filename="../preferences.ui" line="244"/>
+        <source>Number of recent files:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="325"/>
+        <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
         <translation>Wird in der Symbolansicht verwendet</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="305"/>
-        <location filename="../preferences.ui" line="315"/>
+        <location filename="../preferences.ui" line="342"/>
+        <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>Wird in der Listen- und detaillierten Listenansicht verwendet</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="322"/>
-        <location filename="../preferences.ui" line="332"/>
+        <location filename="../preferences.ui" line="359"/>
+        <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
         <translation>Wird in der Miniaturansicht verwendet</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="352"/>
+        <location filename="../preferences.ui" line="389"/>
         <source>User interface</source>
         <translation>Benutzeroberfläche</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="365"/>
+        <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
         <translation>Sicherungsdateien wie versteckte handhaben</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="385"/>
+        <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Symbole versteckter Dateien schattiert anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="399"/>
+        <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
         <translation>Sanften Bildlauf in den Modi Liste und Kompakt deaktivieren</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="422"/>
+        <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Minimaler Rand der Objekte in Symbolansicht:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="429"/>
+        <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
         <translation>Standardwert 3 px.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="432"/>
-        <location filename="../preferences.ui" line="456"/>
+        <location filename="../preferences.ui" line="469"/>
+        <location filename="../preferences.ui" line="493"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="445"/>
+        <location filename="../preferences.ui" line="482"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="452"/>
+        <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>Standardwert 3 px.
 Zusätzlich wird ein 3 Textzeilen entsprechender Abstand freigehalten.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="469"/>
+        <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
         <translation>Sperren</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="518"/>
+        <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Bei Deaktivierung wird die Leiste der Reiter (Tabs) nur angezeigt,
 wenn mehr als einer geöffnet ist.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="536"/>
+        <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
         <translation>Zum neuen Tab wechseln</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="578"/>
+        <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
         <translation>Zuletzt aktiven Tab in neuem Fenster öffnen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="628"/>
-        <location filename="../preferences.ui" line="640"/>
+        <location filename="../preferences.ui" line="665"/>
+        <location filename="../preferences.ui" line="677"/>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
@@ -2134,19 +2148,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
 Es werden die meisten Bilddateien unterstützt, bis 4MiB Dateigröße.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="633"/>
+        <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
         <translation>Größenbegrenzung für eingebaute Miniaturansicht:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="645"/>
-        <location filename="../preferences.ui" line="681"/>
+        <location filename="../preferences.ui" line="682"/>
+        <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
         <translation> MiB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="661"/>
-        <location filename="../preferences.ui" line="673"/>
+        <location filename="../preferences.ui" line="698"/>
+        <location filename="../preferences.ui" line="710"/>
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
@@ -2155,22 +2169,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
 Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="666"/>
+        <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
         <translation>Größenbegrenzung für externe Miniaturansicht:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="678"/>
+        <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
         <translation>keine Begrenzung</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="816"/>
+        <location filename="../preferences.ui" line="853"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>Beispiele:&lt;br&gt;Für das Terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Zum Wechseln des Benutzers: &lt;i&gt;lxsudo %s&lt;/i&gt; oder &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; ist der Befehl, den Sie im Terminal oder mit su ausführen möchten.&lt;br&gt; Wichtig: Bitte nutzen Sie lxsudo, da sudo allein die Berechtigungen der Konfigurationsdatei zerstören wird.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="907"/>
+        <location filename="../preferences.ui" line="944"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Damit die Änderungen wirksam werden, ist ein Neustart der Anwendung erforderlich.</translation>
     </message>
@@ -2180,97 +2194,97 @@ Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
         <translation>Lesezeichen-Menü:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="375"/>
+        <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
         <translation>Immer die tatsächlichen Dateinamen anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="392"/>
+        <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
         <translation>Keine Kurzinfo zu Dateien anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="611"/>
+        <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Benötigt ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="717"/>
+        <location filename="../preferences.ui" line="754"/>
         <source>Auto Mount</source>
         <translation>Automatisches Einbinden</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="723"/>
+        <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Datenträger bei Programmstart automatisch einhängen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="730"/>
+        <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Wechseldatenträger automatisch beim Einlegen einbinden</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="737"/>
+        <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Verfügbare Optionen für Wechseldatenträger beim Einlegen anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="747"/>
+        <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
         <translation>Beim Aushängen eines Wechseldatenträgers:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="753"/>
+        <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Registerkarten des Wechseldatenträgers &amp;schließen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="760"/>
+        <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Registerkarten des Wechseldatenträgers zum Nutzerverzeichnis &amp;wechseln</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="803"/>
+        <location filename="../preferences.ui" line="840"/>
         <source>Switch &amp;user command:</source>
         <translation>Befehl zum N&amp;utzerwechsel:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="829"/>
+        <location filename="../preferences.ui" line="866"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>Archivverwal&amp;tung:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="852"/>
+        <location filename="../preferences.ui" line="889"/>
         <source>Templates</source>
         <translation>Vorlagen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="858"/>
+        <location filename="../preferences.ui" line="895"/>
         <source>Show only user defined templates in menu</source>
         <translation>Ausschließlich benutzerdefinierte im Menü anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="865"/>
+        <location filename="../preferences.ui" line="902"/>
         <source>Show only one template for each MIME type</source>
         <translation>Nur eine Vorlage pro MIME-Typ anzeigen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="872"/>
+        <location filename="../preferences.ui" line="909"/>
         <source>Run default application after creation from template</source>
         <translation>Aus Vorlagen erstellte Dokumente in Standardanwendung öffnen</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="787"/>
+        <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
         <translation>Programme</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="796"/>
+        <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator:</source>
         <translation>Terminalemulator:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="358"/>
+        <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>SI-Dezimalpräfixe anstatt IEC-Binärpräfixe verwenden</translation>
     </message>

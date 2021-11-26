@@ -19,6 +19,12 @@
         <translation>Gestor de fitxers lleuger</translation>
     </message>
     <message>
+        <location filename="../about.ui" line="58"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../about.ui" line="91"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
@@ -68,13 +74,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</trans
         <location filename="../about.ui" line="82"/>
         <source>Authors</source>
         <translation>Autors</translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="58"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
     </message>
     <message>
         <location filename="../about.ui" line="104"/>
@@ -687,615 +686,625 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Gestor de fitxers</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="133"/>
+        <location filename="../main-win.ui" line="81"/>
+        <source>Recent F&amp;iles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="139"/>
         <source>&amp;Toolbars</source>
         <translation>&amp;Barres d&apos;eines</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="140"/>
+        <location filename="../main-win.ui" line="146"/>
         <source>Path &amp;Bar</source>
         <translation>&amp;Barra del camí</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="147"/>
+        <location filename="../main-win.ui" line="153"/>
         <source>&amp;Filtering</source>
         <translation>&amp;Filtratge</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="221"/>
+        <location filename="../main-win.ui" line="227"/>
         <source>&amp;Tools</source>
         <translation>&amp;Eines</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="280"/>
+        <location filename="../main-win.ui" line="286"/>
         <source>Go &amp;Up</source>
         <translation>Vés a&amp;munt</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="283"/>
+        <location filename="../main-win.ui" line="289"/>
         <source>Go Up</source>
         <translation>Vés amunt</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="286"/>
+        <location filename="../main-win.ui" line="292"/>
         <source>Alt+Up</source>
         <translation>Alt+Amunt</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="295"/>
+        <location filename="../main-win.ui" line="301"/>
         <source>&amp;Home</source>
         <translation>Carpeta de l&apos;&amp;usuari</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="298"/>
+        <location filename="../main-win.ui" line="304"/>
         <source>Alt+Home</source>
         <translation>Alt+Inici</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="307"/>
+        <location filename="../main-win.ui" line="313"/>
         <source>&amp;Reload</source>
         <translation>To&amp;rna a carregar</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="310"/>
+        <location filename="../main-win.ui" line="316"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="319"/>
+        <location filename="../main-win.ui" line="325"/>
         <source>Go</source>
         <translation>Vés</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="328"/>
+        <location filename="../main-win.ui" line="334"/>
         <source>Quit</source>
         <translation>Surt</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="337"/>
+        <location filename="../main-win.ui" line="343"/>
         <source>&amp;About</source>
         <translation>&amp;Quant a</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="346"/>
+        <location filename="../main-win.ui" line="352"/>
         <source>&amp;New Window</source>
         <translation>Finestra &amp;nova</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="349"/>
+        <location filename="../main-win.ui" line="355"/>
         <source>New Window</source>
         <translatorcomment>Finestra nova</translatorcomment>
         <translation>Finestra nova</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="352"/>
+        <location filename="../main-win.ui" line="358"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="360"/>
+        <location filename="../main-win.ui" line="366"/>
         <source>Show &amp;Hidden</source>
         <translation>Mostra els oc&amp;ults</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="363"/>
+        <location filename="../main-win.ui" line="369"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="372"/>
+        <location filename="../main-win.ui" line="378"/>
         <source>&amp;Computer</source>
         <translation>&amp;Ordinador</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="381"/>
+        <location filename="../main-win.ui" line="387"/>
         <source>&amp;Trash</source>
         <translation>&amp;Paperera</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="386"/>
+        <location filename="../main-win.ui" line="392"/>
         <source>&amp;Network</source>
         <translation>&amp;Xarxa</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="395"/>
+        <location filename="../main-win.ui" line="401"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Escriptori</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="404"/>
+        <location filename="../main-win.ui" line="410"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Afegeix als marcadors</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="409"/>
+        <location filename="../main-win.ui" line="415"/>
         <source>&amp;Applications</source>
         <translation>&amp;Aplicacions</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="414"/>
+        <location filename="../main-win.ui" line="420"/>
         <source>Reload</source>
         <translation>Recarrega</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="422"/>
+        <location filename="../main-win.ui" line="428"/>
         <source>&amp;Icon View</source>
         <translation>Vista d&apos;&amp;icones</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="430"/>
+        <location filename="../main-win.ui" line="436"/>
         <source>&amp;Compact View</source>
         <translation>Vista &amp;compacta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="438"/>
+        <location filename="../main-win.ui" line="444"/>
         <source>&amp;Detailed List</source>
         <translation>Llista &amp;detallada</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="446"/>
+        <location filename="../main-win.ui" line="452"/>
         <source>&amp;Thumbnail View</source>
         <translation>Vis&amp;ta de miniatures</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="455"/>
+        <location filename="../main-win.ui" line="461"/>
         <source>Cu&amp;t</source>
         <translation>Re&amp;talla</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="458"/>
+        <location filename="../main-win.ui" line="464"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="467"/>
+        <location filename="../main-win.ui" line="473"/>
         <source>&amp;Copy</source>
         <translation>&amp;Copia</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="470"/>
+        <location filename="../main-win.ui" line="476"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="479"/>
+        <location filename="../main-win.ui" line="485"/>
         <source>&amp;Paste</source>
         <translation>Engan&amp;xa</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="482"/>
+        <location filename="../main-win.ui" line="488"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="487"/>
+        <location filename="../main-win.ui" line="493"/>
         <source>Select &amp;All</source>
         <translation>Seleccion&amp;a-ho tot</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="490"/>
+        <location filename="../main-win.ui" line="496"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="495"/>
+        <location filename="../main-win.ui" line="501"/>
         <source>Pr&amp;eferences</source>
         <translation>Pr&amp;eferències</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="503"/>
+        <location filename="../main-win.ui" line="509"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Ascendent</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="511"/>
+        <location filename="../main-win.ui" line="517"/>
         <source>&amp;Descending</source>
         <translation>&amp;Descendent</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="519"/>
+        <location filename="../main-win.ui" line="525"/>
         <source>&amp;By File Name</source>
         <translation>Pel &amp;nom del fitxer</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="527"/>
+        <location filename="../main-win.ui" line="533"/>
         <source>By &amp;Modification Time</source>
         <translation>Per la data de &amp;modificació</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="535"/>
+        <location filename="../main-win.ui" line="541"/>
         <source>By C&amp;reation Time</source>
         <translation>Per data de creació</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="543"/>
+        <location filename="../main-win.ui" line="549"/>
         <source>By Deletio&amp;n Time</source>
         <translation>Per data d&apos;e&amp;liminació</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="551"/>
+        <location filename="../main-win.ui" line="557"/>
         <source>By File &amp;Type</source>
         <translation>Pel &amp;tipus de fitxer</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="559"/>
+        <location filename="../main-win.ui" line="565"/>
         <source>By &amp;Owner</source>
         <translation>Pel pr&amp;opietari</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="567"/>
+        <location filename="../main-win.ui" line="573"/>
         <source>By &amp;Group</source>
         <translation>Per &amp;grup</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="575"/>
+        <location filename="../main-win.ui" line="581"/>
         <source>&amp;Folder First</source>
         <translation>Primer les &amp;carpetes</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="583"/>
+        <location filename="../main-win.ui" line="589"/>
         <source>&amp;Hidden Last</source>
         <translation>&amp;Oculta últim</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="948"/>
+        <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
         <translation>Conserva els paràmetres de manera recursiva des &amp;d&apos;aquí</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="953"/>
+        <location filename="../main-win.ui" line="959"/>
         <source>&amp;Go to Source of Inherited Settings</source>
         <translation>Ves a la font dels ajustaments heretats</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="958"/>
+        <location filename="../main-win.ui" line="964"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
         <translation>&amp;Elimina els ajustaments de les carpetes inexistents</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="636"/>
+        <location filename="../main-win.ui" line="972"/>
+        <source>&amp;Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Maj+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="685"/>
+        <location filename="../main-win.ui" line="691"/>
         <source>&amp;Case Sensitive</source>
         <translation>Distin&amp;ció de majúscules i minúscules</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="693"/>
+        <location filename="../main-win.ui" line="699"/>
         <source>By File &amp;Size</source>
         <translation>Per la m&amp;ida del fitxer</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="698"/>
+        <location filename="../main-win.ui" line="704"/>
         <source>&amp;Close Window</source>
         <translation>Tan&amp;ca la finestra</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="701"/>
+        <location filename="../main-win.ui" line="707"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="719"/>
+        <location filename="../main-win.ui" line="725"/>
         <source>Open Tab in &amp;Root Instance</source>
         <translation>Obre la pestanya a la instància &amp;root</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="733"/>
+        <location filename="../main-win.ui" line="739"/>
         <source>&amp;Folder</source>
         <translation>&amp;Carpeta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="745"/>
+        <location filename="../main-win.ui" line="751"/>
         <source>&amp;Blank File</source>
         <translation>Fitxer en &amp;blanc</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="832"/>
+        <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
         <translation>Preserva els ajustaments per a &amp;aquesta carpeta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="869"/>
+        <location filename="../main-win.ui" line="875"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation>Mo&amp;stra/Enfoca la barra de filtratge</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="872"/>
+        <location filename="../main-win.ui" line="878"/>
         <source>Show Filter Bar</source>
         <translation>Mostra la barra de filtratge</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="875"/>
+        <location filename="../main-win.ui" line="881"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="883"/>
+        <location filename="../main-win.ui" line="889"/>
         <source>S&amp;plit View</source>
         <translation>Dividei&amp;x la vista</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="886"/>
+        <location filename="../main-win.ui" line="892"/>
         <source>Split View</source>
         <translation>Divideix la vista</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="889"/>
+        <location filename="../main-win.ui" line="895"/>
         <source>F6</source>
         <translation>F6</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="894"/>
+        <location filename="../main-win.ui" line="900"/>
         <source>&amp;Copy Full Path</source>
         <translation>&amp;Copia el camí complet</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="897"/>
+        <location filename="../main-win.ui" line="903"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Maj+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="908"/>
+        <location filename="../main-win.ui" line="914"/>
         <source>Show Thumb&amp;nails</source>
         <translation>Mostra les mi&amp;niatures</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="911"/>
+        <location filename="../main-win.ui" line="917"/>
         <source>Show Thumbnails</source>
         <translation>Mostra les miniatures</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="919"/>
+        <location filename="../main-win.ui" line="925"/>
         <source>S&amp;ide Pane</source>
         <translation>Subfinestra &amp;lateral</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="922"/>
+        <location filename="../main-win.ui" line="928"/>
         <source>F9</source>
         <translation>F9</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="927"/>
+        <location filename="../main-win.ui" line="933"/>
         <source>Hidden &amp;Shortcuts</source>
         <translation>Dreceres &amp;ocultes</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="932"/>
+        <location filename="../main-win.ui" line="938"/>
         <source>Open Tab in &amp;Admin Mode</source>
         <translation>Obre la pestanya en mode d&apos;&amp;administrador</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="937"/>
-        <location filename="../main-win.ui" line="940"/>
+        <location filename="../main-win.ui" line="943"/>
+        <location filename="../main-win.ui" line="946"/>
         <source>Create Launcher</source>
         <translation>Crea un llançador</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="767"/>
+        <location filename="../main-win.ui" line="773"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="772"/>
+        <location filename="../main-win.ui" line="778"/>
         <source>&amp;Clear All Filters</source>
         <translation>&amp;Neteja tots els filtres</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="775"/>
+        <location filename="../main-win.ui" line="781"/>
         <source>Ctrl+Shift+K</source>
         <translation>Ctrl+Maj+K</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="784"/>
+        <location filename="../main-win.ui" line="790"/>
         <source>Close &amp;previous tabs</source>
         <translation>Tanca les &amp;pestanyes anteriors</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="793"/>
+        <location filename="../main-win.ui" line="799"/>
         <source>Close &amp;next tabs</source>
         <translation>Tanca les pestanyes següe&amp;nts</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="837"/>
+        <location filename="../main-win.ui" line="843"/>
         <source>Connect to &amp;Server</source>
         <translation>Connecta&apos;t al &amp;servidor</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="845"/>
+        <location filename="../main-win.ui" line="851"/>
         <source>&amp;Location</source>
         <translation>&amp;Ubicació</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="853"/>
+        <location filename="../main-win.ui" line="859"/>
         <source>&amp;Path Buttons</source>
         <translation>Botons del &amp;camí</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="858"/>
+        <location filename="../main-win.ui" line="864"/>
         <source>&amp;Bulk Rename</source>
         <translation>Can&amp;vi de nom massiu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="861"/>
+        <location filename="../main-win.ui" line="867"/>
         <source>Bulk Rename</source>
         <translation>Canvi de nom massiu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="864"/>
+        <location filename="../main-win.ui" line="870"/>
         <source>Ctrl+F2</source>
         <translation>Ctrl+F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="798"/>
+        <location filename="../main-win.ui" line="804"/>
         <source>Close &amp;other tabs</source>
         <translation>Tanca les altr&amp;es pestanyes</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="764"/>
+        <location filename="../main-win.ui" line="770"/>
         <source>Permanent &amp;filter bar</source>
         <translation>Barra de &amp;filtratge permanent</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="806"/>
+        <location filename="../main-win.ui" line="812"/>
         <source>&amp;Menu bar</source>
         <translation>Barra del &amp;menú</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="809"/>
+        <location filename="../main-win.ui" line="815"/>
         <source>Menu bar</source>
         <translation>Barra de menús</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="812"/>
+        <location filename="../main-win.ui" line="818"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="821"/>
-        <location filename="../main-win.ui" line="824"/>
+        <location filename="../main-win.ui" line="827"/>
+        <location filename="../main-win.ui" line="830"/>
         <source>Menu</source>
         <translation>Menú</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="592"/>
+        <location filename="../main-win.ui" line="598"/>
         <source>New &amp;Tab</source>
         <translation>Pes&amp;tanya nova</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="154"/>
+        <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
         <translation>&amp;Configuració de la vista personalitzada</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="595"/>
+        <location filename="../main-win.ui" line="601"/>
         <source>New Tab</source>
         <translation>Pestanya nova</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="598"/>
+        <location filename="../main-win.ui" line="604"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="613"/>
         <source>Go &amp;Back</source>
         <translation>Vés enda&amp;rrere</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="610"/>
+        <location filename="../main-win.ui" line="616"/>
         <source>Go Back</source>
         <translation>Vés endarrere</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="613"/>
+        <location filename="../main-win.ui" line="619"/>
         <source>Alt+Left</source>
         <translation>Alt+Esquerra</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="622"/>
+        <location filename="../main-win.ui" line="628"/>
         <source>Go &amp;Forward</source>
         <translation>Vés enda&amp;vant</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="625"/>
+        <location filename="../main-win.ui" line="631"/>
         <source>Go Forward</source>
         <translation>Vés endavant</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="628"/>
+        <location filename="../main-win.ui" line="634"/>
         <source>Alt+Right</source>
         <translation>Alt+Dreta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="633"/>
+        <location filename="../main-win.ui" line="639"/>
         <source>&amp;Invert Selection</source>
         <translation>&amp;Inverteix la selecció</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="645"/>
+        <location filename="../main-win.ui" line="651"/>
         <source>&amp;Delete</source>
         <translation>&amp;Elimina</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="648"/>
+        <location filename="../main-win.ui" line="654"/>
         <source>Del</source>
         <translation>Supr</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="653"/>
+        <location filename="../main-win.ui" line="659"/>
         <source>&amp;Rename</source>
         <translation>&amp;Reanomena</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="656"/>
+        <location filename="../main-win.ui" line="662"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="661"/>
+        <location filename="../main-win.ui" line="667"/>
         <source>C&amp;lose Tab</source>
         <translation>Tanca &amp;la pestanya</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="664"/>
+        <location filename="../main-win.ui" line="670"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="669"/>
+        <location filename="../main-win.ui" line="675"/>
         <source>File &amp;Properties</source>
         <translation>&amp;Propietats del fitxer</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="672"/>
+        <location filename="../main-win.ui" line="678"/>
         <source>Alt+Return</source>
         <translation>Alt+Retorn</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="677"/>
+        <location filename="../main-win.ui" line="683"/>
         <source>&amp;Folder Properties</source>
         <translation>Propietats de la c&amp;arpeta</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="706"/>
+        <location filename="../main-win.ui" line="712"/>
         <source>Edit Bookmarks</source>
         <translation>Edita els marcadors</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="711"/>
+        <location filename="../main-win.ui" line="717"/>
         <source>Open &amp;Terminal</source>
         <translation>Obre el &amp;terminal</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="714"/>
+        <location filename="../main-win.ui" line="720"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="724"/>
+        <location filename="../main-win.ui" line="730"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Edita els marcadors</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="736"/>
+        <location filename="../main-win.ui" line="742"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Majúscules+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="748"/>
+        <location filename="../main-win.ui" line="754"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="753"/>
+        <location filename="../main-win.ui" line="759"/>
         <source>&amp;Find Files</source>
         <translation>Troba &amp;fitxers</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="756"/>
+        <location filename="../main-win.ui" line="762"/>
         <source>F3</source>
         <translation>F3</translation>
     </message>
@@ -1310,38 +1319,38 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>C&amp;rea nou</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="92"/>
+        <location filename="../main-win.ui" line="98"/>
         <source>&amp;Help</source>
         <translation>&amp;Ajuda</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="99"/>
-        <location filename="../main-win.ui" line="123"/>
+        <location filename="../main-win.ui" line="105"/>
+        <location filename="../main-win.ui" line="129"/>
         <source>&amp;View</source>
         <translation>&amp;Visualitza</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="103"/>
+        <location filename="../main-win.ui" line="109"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Ordenació</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="179"/>
+        <location filename="../main-win.ui" line="185"/>
         <source>&amp;Edit</source>
         <translation>&amp;Edita</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="197"/>
+        <location filename="../main-win.ui" line="203"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Marcadors</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="204"/>
+        <location filename="../main-win.ui" line="210"/>
         <source>&amp;Go</source>
         <translation>&amp;Vés</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="246"/>
+        <location filename="../main-win.ui" line="252"/>
         <source>Main Toolbar</source>
         <translation>Barra d&apos;eines principal</translation>
     </message>
@@ -1659,55 +1668,55 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>Instància de root</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="724"/>
+        <location filename="../mainwindow.cpp" line="743"/>
         <source>Hide menu bar</source>
         <translation>Oculta la barra de menús</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="725"/>
+        <location filename="../mainwindow.cpp" line="744"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>Això ocultarà completament la barra de menús, utilitzeu Ctrl+M per tornar-la a mostrar.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1097"/>
+        <location filename="../mainwindow.cpp" line="1171"/>
         <source>Version: %1</source>
         <translation>Versió: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2057"/>
+        <location filename="../mainwindow.cpp" line="2131"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mou a la paperera</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2057"/>
+        <location filename="../mainwindow.cpp" line="2131"/>
         <source>&amp;Delete</source>
         <translation>&amp;Suprimeix</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1900"/>
+        <location filename="../mainwindow.cpp" line="1974"/>
         <source>Customized View Settings</source>
         <translation>Configuració de la vista personalitzada</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2125"/>
-        <location filename="../mainwindow.cpp" line="2133"/>
+        <location filename="../mainwindow.cpp" line="2238"/>
+        <location filename="../mainwindow.cpp" line="2246"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2133"/>
+        <location filename="../mainwindow.cpp" line="2246"/>
         <source>Switch user command is not set.</source>
         <translation>L&apos;ordre de canvi d&apos;usuari no està establerta.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2235"/>
+        <location filename="../mainwindow.cpp" line="2348"/>
         <source>Cleaning Folder Settings</source>
         <translation>Netejant la configuració de la carpeta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2236"/>
+        <location filename="../mainwindow.cpp" line="2349"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Voleu suprimir la configuració de carpetes inexistents? 
@@ -1832,7 +1841,7 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="605"/>
+        <location filename="../preferences.ui" line="642"/>
         <source>Thumbnail</source>
         <translation>Miniatura</translation>
     </message>
@@ -1852,62 +1861,62 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
         <translation>Selecciona els fitxers creats recentment</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="259"/>
+        <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
         <translation>Icones</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="291"/>
+        <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
         <translation>Mida de les icones grans:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="308"/>
+        <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
         <translation>Mida de les icones petites:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="325"/>
+        <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
         <translation>Mida de les miniatures:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="339"/>
+        <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
         <translation>Mida de les icones del plafó lateral:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="271"/>
+        <location filename="../preferences.ui" line="308"/>
         <source>Icon theme:</source>
         <translation>Tema de les icones:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="509"/>
+        <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
         <translation>Finestra</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="522"/>
+        <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
         <translation>Mostra sempre la barra de les pestanyes</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="529"/>
+        <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>Mostra els botons de &apos;Tanca&apos; en les pestanyes	</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="543"/>
+        <location filename="../preferences.ui" line="580"/>
         <source>Remember the size of the last closed window</source>
         <translation>Recorda la mida de l&apos;última finestra tancada</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="550"/>
+        <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
         <translation>Amplada predeterminada de les finestres noves:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="564"/>
+        <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
         <translation>Alçada predeterminada de les finestres noves:</translation>
     </message>
@@ -1948,12 +1957,12 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
         <translation>Mou els fitxers suprimits a la &quot;paperera&quot; en lloc d&apos;eliminar-los del disc.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="614"/>
+        <location filename="../preferences.ui" line="651"/>
         <source>Show thumbnails of files</source>
         <translation>Mostra les miniatures dels fitxers</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="621"/>
+        <location filename="../preferences.ui" line="658"/>
         <source>Only show thumbnails for local files</source>
         <translation>Mostra únicament les miniatures per als fitxers locals</translation>
     </message>
@@ -2005,8 +2014,8 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
-        <location filename="../preferences.ui" line="372"/>
-        <location filename="../preferences.ui" line="382"/>
+        <location filename="../preferences.ui" line="409"/>
+        <location filename="../preferences.ui" line="419"/>
         <source>Requires application restart to take effect completely</source>
         <translation>Requereix reiniciar l&apos;aplicació perquè tingui efecte completament</translation>
     </message>
@@ -2021,96 +2030,101 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
         <translation>També se seleccionaran els fitxers reanomenats</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="288"/>
-        <location filename="../preferences.ui" line="298"/>
+        <location filename="../preferences.ui" line="244"/>
+        <source>Number of recent files:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="325"/>
+        <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
         <translation>Utilitzat amb la vista d&apos;icones</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="305"/>
-        <location filename="../preferences.ui" line="315"/>
+        <location filename="../preferences.ui" line="342"/>
+        <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>Utilitzat amb la vista compacta i la vista de llista detallada</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="322"/>
-        <location filename="../preferences.ui" line="332"/>
+        <location filename="../preferences.ui" line="359"/>
+        <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
         <translation>Utilitzat amb la vista de miniatures</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="352"/>
+        <location filename="../preferences.ui" line="389"/>
         <source>User interface</source>
         <translation>Interfície d&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="365"/>
+        <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
         <translation>Tracta els fitxers de còpia de seguretat com a ocults</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="385"/>
+        <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Mostra ombrejades les icones dels fitxers ocults</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="399"/>
+        <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
         <translation>Desactiva el desplaçament suau en els modes de llista i compacte</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="422"/>
+        <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
         <translation>Marges mínims de l&apos;ítem a la vista d&apos;icones:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="429"/>
+        <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
         <translation>3 px per defecte.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="432"/>
-        <location filename="../preferences.ui" line="456"/>
+        <location filename="../preferences.ui" line="469"/>
+        <location filename="../preferences.ui" line="493"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="445"/>
+        <location filename="../preferences.ui" line="482"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="452"/>
+        <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>1 px per defecte.
 També es reserva un espai per a 3 línies de text.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="469"/>
+        <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
         <translation>Bloqueja</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="518"/>
+        <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>Quan es desmarca, únicament es mostrarà la
 barra de tasques si hi ha més d&apos;una pestanya.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="536"/>
+        <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
         <translation>Canvia a la pestanya oberta recentment</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="578"/>
+        <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
         <translation>Torna a obrir les pestanyes de l&apos;última finestra en una finestra nova</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="628"/>
-        <location filename="../preferences.ui" line="640"/>
+        <location filename="../preferences.ui" line="665"/>
+        <location filename="../preferences.ui" line="677"/>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
@@ -2119,19 +2133,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
 Normalment, la majoria dels tipus d&apos;imatge són compatibles. El límit de mida per defecte és 4 MiB.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="633"/>
+        <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
         <translation>Límit de mida de la imatge per al generador integrat de miniatures:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="645"/>
-        <location filename="../preferences.ui" line="681"/>
+        <location filename="../preferences.ui" line="682"/>
+        <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
         <translation> MiB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="661"/>
-        <location filename="../preferences.ui" line="673"/>
+        <location filename="../preferences.ui" line="698"/>
+        <location filename="../preferences.ui" line="710"/>
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
@@ -2140,22 +2154,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
 Un valor de -1 significa que no hi ha límit per a la mida del fitxer (per defecte).</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="666"/>
+        <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
         <translation>Mida del fitxer per a miniatures externes:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="678"/>
+        <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
         <translation>Sense límit</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="816"/>
+        <location filename="../preferences.ui" line="853"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>Exemples:&lt;br&gt;Per a terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Per canviar d&apos;usuari: &lt;i&gt;lxsudo %s&lt;/i&gt; o &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; és la línia d&apos;ordres que heu d&apos;executar amb terminal o com super usuari. &lt;br&gt; Important: Si us plau useu lxsudo, només &quot;sudo&quot; destruirà els permisos del fitxer de configuració.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="907"/>
+        <location filename="../preferences.ui" line="944"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Es necessita reiniciar l&apos;aplicació perquè els canvis tinguin efecte.</translation>
     </message>
@@ -2180,97 +2194,97 @@ Un valor de -1 significa que no hi ha límit per a la mida del fitxer (per defec
         <translation>Mode de finestra única</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="375"/>
+        <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
         <translation>Mostra sempre els noms dels fitxers reals</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="392"/>
+        <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
         <translation>No mostra la informació emergent del fitxer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="611"/>
+        <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>Necessita ffmpegthumbnailer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="717"/>
+        <location filename="../preferences.ui" line="754"/>
         <source>Auto Mount</source>
         <translation>Munta automàticament</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="723"/>
+        <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Munta automàticament els volums muntables amb la inicialització del programa</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="730"/>
+        <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Munta automàticament els mitjans extraïbles quan aquests són inserits</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="737"/>
+        <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Mostra les opcions disponibles per als mitjans extraïbles quan s&apos;insereixin</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="747"/>
+        <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
         <translation>Quan es desmunta un mitjà extraïble:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="753"/>
+        <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Tanca la pes&amp;tanya que conté el mitjà extraïble</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="760"/>
+        <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Can&amp;via la carpeta a la pestanya amb la carpeta de l&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="787"/>
+        <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
         <translation>Programes</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="796"/>
+        <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator:</source>
         <translation>Emulador de terminal:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="803"/>
+        <location filename="../preferences.ui" line="840"/>
         <source>Switch &amp;user command:</source>
         <translation>Ordre per al canvi d&apos;&amp;usuari:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="829"/>
+        <location filename="../preferences.ui" line="866"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>In&amp;tegració amb l&apos;arxivador:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="852"/>
+        <location filename="../preferences.ui" line="889"/>
         <source>Templates</source>
         <translation>Plantilles</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="858"/>
+        <location filename="../preferences.ui" line="895"/>
         <source>Show only user defined templates in menu</source>
         <translation>Mostra al menú únicament les plantilles definides de l&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="865"/>
+        <location filename="../preferences.ui" line="902"/>
         <source>Show only one template for each MIME type</source>
         <translation>Mostra únicament una plantilla per a cadascun dels tipus MIME</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="872"/>
+        <location filename="../preferences.ui" line="909"/>
         <source>Run default application after creation from template</source>
         <translation>Executa l&apos;aplicació predeterminada després de la creació a partir de la plantilla</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="358"/>
+        <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Utilitza els prefixos decimals del SI en lloc dels prefixos binaris de l&apos;IEC</translation>
     </message>

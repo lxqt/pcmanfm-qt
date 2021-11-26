@@ -19,6 +19,12 @@
         <translation>가벼운 파일 관리자</translation>
     </message>
     <message>
+        <location filename="../about.ui" line="58"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../about.ui" line="91"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
@@ -64,13 +70,6 @@ Fifth Floor, Boston, MA 02110-1301, USA로 편지를 쓰세요.</translation>
         <location filename="../about.ui" line="82"/>
         <source>Authors</source>
         <translation>작성자</translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="58"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
     </message>
     <message>
         <location filename="../about.ui" line="104"/>
@@ -686,614 +685,624 @@ PCManFM-Qt에서 열립니다.</translation>
         <translation>파일 매니저</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="133"/>
+        <location filename="../main-win.ui" line="81"/>
+        <source>Recent F&amp;iles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="139"/>
         <source>&amp;Toolbars</source>
         <translation>도구바(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="140"/>
+        <location filename="../main-win.ui" line="146"/>
         <source>Path &amp;Bar</source>
         <translation>경로바(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="147"/>
+        <location filename="../main-win.ui" line="153"/>
         <source>&amp;Filtering</source>
         <translation>필터링(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="221"/>
+        <location filename="../main-win.ui" line="227"/>
         <source>&amp;Tools</source>
         <translation>도구(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="280"/>
+        <location filename="../main-win.ui" line="286"/>
         <source>Go &amp;Up</source>
         <translation>위로(&amp;U)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="283"/>
+        <location filename="../main-win.ui" line="289"/>
         <source>Go Up</source>
         <translation>위로</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="286"/>
+        <location filename="../main-win.ui" line="292"/>
         <source>Alt+Up</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="295"/>
+        <location filename="../main-win.ui" line="301"/>
         <source>&amp;Home</source>
         <translation>홈(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="298"/>
+        <location filename="../main-win.ui" line="304"/>
         <source>Alt+Home</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="307"/>
+        <location filename="../main-win.ui" line="313"/>
         <source>&amp;Reload</source>
         <translation>새로고침(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="310"/>
+        <location filename="../main-win.ui" line="316"/>
         <source>F5</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="319"/>
+        <location filename="../main-win.ui" line="325"/>
         <source>Go</source>
         <translation>이동</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="328"/>
+        <location filename="../main-win.ui" line="334"/>
         <source>Quit</source>
         <translation>종료</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="337"/>
+        <location filename="../main-win.ui" line="343"/>
         <source>&amp;About</source>
         <translation>정보(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="346"/>
+        <location filename="../main-win.ui" line="352"/>
         <source>&amp;New Window</source>
         <translation>새 창(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="349"/>
+        <location filename="../main-win.ui" line="355"/>
         <source>New Window</source>
         <translation>새 창</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="352"/>
+        <location filename="../main-win.ui" line="358"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="360"/>
+        <location filename="../main-win.ui" line="366"/>
         <source>Show &amp;Hidden</source>
         <translation>숨김 파일 보기(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="363"/>
+        <location filename="../main-win.ui" line="369"/>
         <source>Ctrl+H</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="372"/>
+        <location filename="../main-win.ui" line="378"/>
         <source>&amp;Computer</source>
         <translation>컴퓨터(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="381"/>
+        <location filename="../main-win.ui" line="387"/>
         <source>&amp;Trash</source>
         <translation>휴지통(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="386"/>
+        <location filename="../main-win.ui" line="392"/>
         <source>&amp;Network</source>
         <translation>네트워크(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="395"/>
+        <location filename="../main-win.ui" line="401"/>
         <source>&amp;Desktop</source>
         <translation>바탕 화면(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="404"/>
+        <location filename="../main-win.ui" line="410"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>북마크 추가(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="409"/>
+        <location filename="../main-win.ui" line="415"/>
         <source>&amp;Applications</source>
         <translation>애플리케이션(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="414"/>
+        <location filename="../main-win.ui" line="420"/>
         <source>Reload</source>
         <translation>새로고침</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="422"/>
+        <location filename="../main-win.ui" line="428"/>
         <source>&amp;Icon View</source>
         <translation>아이콘(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="430"/>
+        <location filename="../main-win.ui" line="436"/>
         <source>&amp;Compact View</source>
         <translation>간단히(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="438"/>
+        <location filename="../main-win.ui" line="444"/>
         <source>&amp;Detailed List</source>
         <translation>자세히(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="446"/>
+        <location filename="../main-win.ui" line="452"/>
         <source>&amp;Thumbnail View</source>
         <translation>썸네일(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="455"/>
+        <location filename="../main-win.ui" line="461"/>
         <source>Cu&amp;t</source>
         <translation>잘라내기(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="458"/>
+        <location filename="../main-win.ui" line="464"/>
         <source>Ctrl+X</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="467"/>
+        <location filename="../main-win.ui" line="473"/>
         <source>&amp;Copy</source>
         <translation>복사(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="470"/>
+        <location filename="../main-win.ui" line="476"/>
         <source>Ctrl+C</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="479"/>
+        <location filename="../main-win.ui" line="485"/>
         <source>&amp;Paste</source>
         <translation>붙여넣기(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="482"/>
+        <location filename="../main-win.ui" line="488"/>
         <source>Ctrl+V</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="487"/>
+        <location filename="../main-win.ui" line="493"/>
         <source>Select &amp;All</source>
         <translation>모두 선택(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="490"/>
+        <location filename="../main-win.ui" line="496"/>
         <source>Ctrl+A</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="495"/>
+        <location filename="../main-win.ui" line="501"/>
         <source>Pr&amp;eferences</source>
         <translation>기본설정(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="503"/>
+        <location filename="../main-win.ui" line="509"/>
         <source>&amp;Ascending</source>
         <translation>오름차순(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="511"/>
+        <location filename="../main-win.ui" line="517"/>
         <source>&amp;Descending</source>
         <translation>내림차순(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="519"/>
+        <location filename="../main-win.ui" line="525"/>
         <source>&amp;By File Name</source>
         <translation>파일 이름별(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="527"/>
+        <location filename="../main-win.ui" line="533"/>
         <source>By &amp;Modification Time</source>
         <translation>수정 시간별(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="535"/>
+        <location filename="../main-win.ui" line="541"/>
         <source>By C&amp;reation Time</source>
         <translation>생성 시간별(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="543"/>
+        <location filename="../main-win.ui" line="549"/>
         <source>By Deletio&amp;n Time</source>
         <translation>삭제 시간별(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="551"/>
+        <location filename="../main-win.ui" line="557"/>
         <source>By File &amp;Type</source>
         <translation>파일 유형별(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="559"/>
+        <location filename="../main-win.ui" line="565"/>
         <source>By &amp;Owner</source>
         <translation>소유자별(&amp;O)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="567"/>
+        <location filename="../main-win.ui" line="573"/>
         <source>By &amp;Group</source>
         <translation>그룹별(&amp;G)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="575"/>
+        <location filename="../main-win.ui" line="581"/>
         <source>&amp;Folder First</source>
         <translation>폴더 우선(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="583"/>
+        <location filename="../main-win.ui" line="589"/>
         <source>&amp;Hidden Last</source>
         <translation>숨겨진 항목 마지막(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="948"/>
+        <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
         <translation>여기에서 설정을 재귀적으로 유지(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="953"/>
+        <location filename="../main-win.ui" line="959"/>
         <source>&amp;Go to Source of Inherited Settings</source>
         <translation>상속된 설정의 소스로 이동(&amp;G)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="958"/>
+        <location filename="../main-win.ui" line="964"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
         <translation>존재하지 않는 폴더의 설정 제거(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="636"/>
+        <location filename="../main-win.ui" line="972"/>
+        <source>&amp;Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="685"/>
+        <location filename="../main-win.ui" line="691"/>
         <source>&amp;Case Sensitive</source>
         <translation>대/소문자 구별(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="693"/>
+        <location filename="../main-win.ui" line="699"/>
         <source>By File &amp;Size</source>
         <translation>크기(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="698"/>
+        <location filename="../main-win.ui" line="704"/>
         <source>&amp;Close Window</source>
         <translation>창 닫기(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="701"/>
+        <location filename="../main-win.ui" line="707"/>
         <source>Ctrl+Q</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="719"/>
+        <location filename="../main-win.ui" line="725"/>
         <source>Open Tab in &amp;Root Instance</source>
         <translation>루트 인스턴스에서 탭 열기(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="733"/>
+        <location filename="../main-win.ui" line="739"/>
         <source>&amp;Folder</source>
         <translation>폴더(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="745"/>
+        <location filename="../main-win.ui" line="751"/>
         <source>&amp;Blank File</source>
         <translation>빈 파일(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="832"/>
+        <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
         <translation>이 폴더에 대한 설정 유지(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="869"/>
+        <location filename="../main-win.ui" line="875"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation>필터 표시줄 표시/가리키기(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="872"/>
+        <location filename="../main-win.ui" line="878"/>
         <source>Show Filter Bar</source>
         <translation>필터 표시줄 표시</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="875"/>
+        <location filename="../main-win.ui" line="881"/>
         <source>Ctrl+I</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="883"/>
+        <location filename="../main-win.ui" line="889"/>
         <source>S&amp;plit View</source>
         <translation>보기 창 분할(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="886"/>
+        <location filename="../main-win.ui" line="892"/>
         <source>Split View</source>
         <translation>보기 창 분할</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="889"/>
+        <location filename="../main-win.ui" line="895"/>
         <source>F6</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="894"/>
+        <location filename="../main-win.ui" line="900"/>
         <source>&amp;Copy Full Path</source>
         <translation>전체 경로 복사(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="897"/>
+        <location filename="../main-win.ui" line="903"/>
         <source>Ctrl+Shift+C</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="908"/>
+        <location filename="../main-win.ui" line="914"/>
         <source>Show Thumb&amp;nails</source>
         <translation>썸네일 보기(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="911"/>
+        <location filename="../main-win.ui" line="917"/>
         <source>Show Thumbnails</source>
         <translation>썸네일 보기</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="919"/>
+        <location filename="../main-win.ui" line="925"/>
         <source>S&amp;ide Pane</source>
         <translation>세부 정보 창(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="922"/>
+        <location filename="../main-win.ui" line="928"/>
         <source>F9</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="927"/>
+        <location filename="../main-win.ui" line="933"/>
         <source>Hidden &amp;Shortcuts</source>
         <translation>단축키 숨김(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="932"/>
+        <location filename="../main-win.ui" line="938"/>
         <source>Open Tab in &amp;Admin Mode</source>
         <translation>관리 모드에서 탭 열기(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="937"/>
-        <location filename="../main-win.ui" line="940"/>
+        <location filename="../main-win.ui" line="943"/>
+        <location filename="../main-win.ui" line="946"/>
         <source>Create Launcher</source>
         <translation>시작 프로그램 만들기</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="767"/>
+        <location filename="../main-win.ui" line="773"/>
         <source>Ctrl+B</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="772"/>
+        <location filename="../main-win.ui" line="778"/>
         <source>&amp;Clear All Filters</source>
         <translation>모든 필터 지우기(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="775"/>
+        <location filename="../main-win.ui" line="781"/>
         <source>Ctrl+Shift+K</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="784"/>
+        <location filename="../main-win.ui" line="790"/>
         <source>Close &amp;previous tabs</source>
         <translation>이전 탭 닫기(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="793"/>
+        <location filename="../main-win.ui" line="799"/>
         <source>Close &amp;next tabs</source>
         <translation>다음 탭 닫기(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="837"/>
+        <location filename="../main-win.ui" line="843"/>
         <source>Connect to &amp;Server</source>
         <translation>서버에 연결(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="845"/>
+        <location filename="../main-win.ui" line="851"/>
         <source>&amp;Location</source>
         <translation>위치(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="853"/>
+        <location filename="../main-win.ui" line="859"/>
         <source>&amp;Path Buttons</source>
         <translation>경로 버튼(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="858"/>
+        <location filename="../main-win.ui" line="864"/>
         <source>&amp;Bulk Rename</source>
         <translation>일괄 이름 변경(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="861"/>
+        <location filename="../main-win.ui" line="867"/>
         <source>Bulk Rename</source>
         <translation>일괄 이름 변경</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="864"/>
+        <location filename="../main-win.ui" line="870"/>
         <source>Ctrl+F2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="798"/>
+        <location filename="../main-win.ui" line="804"/>
         <source>Close &amp;other tabs</source>
         <translation>다른 탭 닫기(&amp;O)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="764"/>
+        <location filename="../main-win.ui" line="770"/>
         <source>Permanent &amp;filter bar</source>
         <translation>영구 필터 표시줄(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="806"/>
+        <location filename="../main-win.ui" line="812"/>
         <source>&amp;Menu bar</source>
         <translation>메뉴바(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="809"/>
+        <location filename="../main-win.ui" line="815"/>
         <source>Menu bar</source>
         <translation>메뉴 표시줄</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="812"/>
+        <location filename="../main-win.ui" line="818"/>
         <source>Ctrl+M</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="821"/>
-        <location filename="../main-win.ui" line="824"/>
+        <location filename="../main-win.ui" line="827"/>
+        <location filename="../main-win.ui" line="830"/>
         <source>Menu</source>
         <translation>메뉴</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="592"/>
+        <location filename="../main-win.ui" line="598"/>
         <source>New &amp;Tab</source>
         <translation>새 탭(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="154"/>
+        <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
         <translation>사용자 정의 보기 설정(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="595"/>
+        <location filename="../main-win.ui" line="601"/>
         <source>New Tab</source>
         <translation>새 탭</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="598"/>
+        <location filename="../main-win.ui" line="604"/>
         <source>Ctrl+T</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="607"/>
+        <location filename="../main-win.ui" line="613"/>
         <source>Go &amp;Back</source>
         <translation>뒤로 가기(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="610"/>
+        <location filename="../main-win.ui" line="616"/>
         <source>Go Back</source>
         <translation>뒤로 가기</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="613"/>
+        <location filename="../main-win.ui" line="619"/>
         <source>Alt+Left</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="622"/>
+        <location filename="../main-win.ui" line="628"/>
         <source>Go &amp;Forward</source>
         <translation>앞으로 가기(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="625"/>
+        <location filename="../main-win.ui" line="631"/>
         <source>Go Forward</source>
         <translation>앞으로 가기</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="628"/>
+        <location filename="../main-win.ui" line="634"/>
         <source>Alt+Right</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="633"/>
+        <location filename="../main-win.ui" line="639"/>
         <source>&amp;Invert Selection</source>
         <translation>선택 항목 반전(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="645"/>
+        <location filename="../main-win.ui" line="651"/>
         <source>&amp;Delete</source>
         <translation>삭제(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="648"/>
+        <location filename="../main-win.ui" line="654"/>
         <source>Del</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="653"/>
+        <location filename="../main-win.ui" line="659"/>
         <source>&amp;Rename</source>
         <translation>이름 바꾸기(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="656"/>
+        <location filename="../main-win.ui" line="662"/>
         <source>F2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="661"/>
+        <location filename="../main-win.ui" line="667"/>
         <source>C&amp;lose Tab</source>
         <translation>탭 닫기(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="664"/>
+        <location filename="../main-win.ui" line="670"/>
         <source>Ctrl+W</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="669"/>
+        <location filename="../main-win.ui" line="675"/>
         <source>File &amp;Properties</source>
         <translation>파일 속성(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="672"/>
+        <location filename="../main-win.ui" line="678"/>
         <source>Alt+Return</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="677"/>
+        <location filename="../main-win.ui" line="683"/>
         <source>&amp;Folder Properties</source>
         <translation>폴더 속성(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="706"/>
+        <location filename="../main-win.ui" line="712"/>
         <source>Edit Bookmarks</source>
         <translation>북마크 편집</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="711"/>
+        <location filename="../main-win.ui" line="717"/>
         <source>Open &amp;Terminal</source>
         <translation>터미널 열기(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="714"/>
+        <location filename="../main-win.ui" line="720"/>
         <source>F4</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="724"/>
+        <location filename="../main-win.ui" line="730"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>북마크 편집(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="736"/>
+        <location filename="../main-win.ui" line="742"/>
         <source>Ctrl+Shift+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="748"/>
+        <location filename="../main-win.ui" line="754"/>
         <source>Ctrl+Alt+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="753"/>
+        <location filename="../main-win.ui" line="759"/>
         <source>&amp;Find Files</source>
         <translation>파일 찾기(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="756"/>
+        <location filename="../main-win.ui" line="762"/>
         <source>F3</source>
         <translation></translation>
     </message>
@@ -1308,38 +1317,38 @@ PCManFM-Qt에서 열립니다.</translation>
         <translation>새로 만들기(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="92"/>
+        <location filename="../main-win.ui" line="98"/>
         <source>&amp;Help</source>
         <translation>도움말(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="99"/>
-        <location filename="../main-win.ui" line="123"/>
+        <location filename="../main-win.ui" line="105"/>
+        <location filename="../main-win.ui" line="129"/>
         <source>&amp;View</source>
         <translation>보기(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="103"/>
+        <location filename="../main-win.ui" line="109"/>
         <source>&amp;Sorting</source>
         <translation>정렬(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="179"/>
+        <location filename="../main-win.ui" line="185"/>
         <source>&amp;Edit</source>
         <translation>편집(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="197"/>
+        <location filename="../main-win.ui" line="203"/>
         <source>&amp;Bookmarks</source>
         <translation>북마크(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="204"/>
+        <location filename="../main-win.ui" line="210"/>
         <source>&amp;Go</source>
         <translation>이동(&amp;G)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="246"/>
+        <location filename="../main-win.ui" line="252"/>
         <source>Main Toolbar</source>
         <translation>메인 도구바</translation>
     </message>
@@ -1656,55 +1665,55 @@ PCManFM-Qt에서 열립니다.</translation>
         <translation>루트 인스턴스</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="724"/>
+        <location filename="../mainwindow.cpp" line="743"/>
         <source>Hide menu bar</source>
         <translation>메뉴 모음 숨김</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="725"/>
+        <location filename="../mainwindow.cpp" line="744"/>
         <source>This will hide the menu bar completely, use Ctrl+M to show it again.</source>
         <translation>이렇게하면 메뉴 표시줄이 완전히 숨겨지고, Ctrl + M을 사용하여 다시 표시합니다.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1097"/>
+        <location filename="../mainwindow.cpp" line="1171"/>
         <source>Version: %1</source>
         <translation>버전: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2057"/>
+        <location filename="../mainwindow.cpp" line="2131"/>
         <source>&amp;Move to Trash</source>
         <translation>휴지통으로 이동(&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2057"/>
+        <location filename="../mainwindow.cpp" line="2131"/>
         <source>&amp;Delete</source>
         <translation>삭제(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1900"/>
+        <location filename="../mainwindow.cpp" line="1974"/>
         <source>Customized View Settings</source>
         <translation>사용자 정의 보기 설정</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2125"/>
-        <location filename="../mainwindow.cpp" line="2133"/>
+        <location filename="../mainwindow.cpp" line="2238"/>
+        <location filename="../mainwindow.cpp" line="2246"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2133"/>
+        <location filename="../mainwindow.cpp" line="2246"/>
         <source>Switch user command is not set.</source>
         <translation>사용자 전환 명령이 설정되지 않았습니다.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2235"/>
+        <location filename="../mainwindow.cpp" line="2348"/>
         <source>Cleaning Folder Settings</source>
         <translation>폴더 설정 정리하기</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2236"/>
+        <location filename="../mainwindow.cpp" line="2349"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>존재하지 않는 폴더의 설정을 제거하시겠습니까?
@@ -1824,7 +1833,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="605"/>
+        <location filename="../preferences.ui" line="642"/>
         <source>Thumbnail</source>
         <translation>썸네일</translation>
     </message>
@@ -1844,62 +1853,62 @@ They might be useful if those folders are created again.</source>
         <translation>최근 생성된 파일 선택</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="259"/>
+        <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
         <translation>아이콘</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="291"/>
+        <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
         <translation>큰 아이콘 크기:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="308"/>
+        <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
         <translation>작은 아이콘 크기:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="325"/>
+        <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
         <translation>썸네일 크기:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="339"/>
+        <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
         <translation>측면 창 아이콘 크기:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="271"/>
+        <location filename="../preferences.ui" line="308"/>
         <source>Icon theme:</source>
         <translation>아이콘 테마:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="509"/>
+        <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
         <translation>창</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="522"/>
+        <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
         <translation>탭바를 항상 보기</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="529"/>
+        <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
         <translation>탭에 닫기 버튼 보기</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="543"/>
+        <location filename="../preferences.ui" line="580"/>
         <source>Remember the size of the last closed window</source>
         <translation>마지막으로 닫힌 창의 크기 기억</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="550"/>
+        <location filename="../preferences.ui" line="587"/>
         <source>Default width of new windows:</source>
         <translation>새 창의 가로 크기 기본값:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="564"/>
+        <location filename="../preferences.ui" line="601"/>
         <source>Default height of new windows:</source>
         <translation>새 창의 세로 크기 기본값:</translation>
     </message>
@@ -1939,12 +1948,12 @@ They might be useful if those folders are created again.</source>
         <translation>삭제된 파일을 디스크에서 지우는 대신 &quot;휴지통&quot;으로 이동합니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="614"/>
+        <location filename="../preferences.ui" line="651"/>
         <source>Show thumbnails of files</source>
         <translation>파일 썸네일 표시</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="621"/>
+        <location filename="../preferences.ui" line="658"/>
         <source>Only show thumbnails for local files</source>
         <translation>로컬 파일의 썸네일만 표시</translation>
     </message>
@@ -1996,8 +2005,8 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="209"/>
-        <location filename="../preferences.ui" line="372"/>
-        <location filename="../preferences.ui" line="382"/>
+        <location filename="../preferences.ui" line="409"/>
+        <location filename="../preferences.ui" line="419"/>
         <source>Requires application restart to take effect completely</source>
         <translation>완전히 적용하려면 프로그램을 다시 시작해야합니다</translation>
     </message>
@@ -2012,96 +2021,101 @@ They might be useful if those folders are created again.</source>
         <translation>이름이 변경된 파일도 선택됩니다</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="288"/>
-        <location filename="../preferences.ui" line="298"/>
+        <location filename="../preferences.ui" line="244"/>
+        <source>Number of recent files:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="325"/>
+        <location filename="../preferences.ui" line="335"/>
         <source>Used by Icon View</source>
         <translation>아이콘 보기에서 사용됨</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="305"/>
-        <location filename="../preferences.ui" line="315"/>
+        <location filename="../preferences.ui" line="342"/>
+        <location filename="../preferences.ui" line="352"/>
         <source>Used by Compact View and Detailed List View</source>
         <translation>작은 아이콘으로 보기 및 상세 목록 보기에서 사용됨</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="322"/>
-        <location filename="../preferences.ui" line="332"/>
+        <location filename="../preferences.ui" line="359"/>
+        <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
         <translation>썸네일 보기에서 사용됨</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="352"/>
+        <location filename="../preferences.ui" line="389"/>
         <source>User interface</source>
         <translation>사용자 인터페이스</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="365"/>
+        <location filename="../preferences.ui" line="402"/>
         <source>Treat backup files as hidden</source>
         <translation>백업 파일을 숨김으로 처리</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="385"/>
+        <location filename="../preferences.ui" line="422"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>숨겨진 파일의 아이콘 표시</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="399"/>
+        <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="422"/>
+        <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
         <translation>아이콘 보기의 최소 항목 여백:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="429"/>
+        <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
         <translation>기본적으로 3픽셀입니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="432"/>
-        <location filename="../preferences.ui" line="456"/>
+        <location filename="../preferences.ui" line="469"/>
+        <location filename="../preferences.ui" line="493"/>
         <source> px</source>
         <translation> 픽셀</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="445"/>
+        <location filename="../preferences.ui" line="482"/>
         <source>x</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="452"/>
+        <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>기본적으로 3픽셀입니다
 3줄의 텍스트를 위한 공간도 확보되어 있습니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="469"/>
+        <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
         <translation>잠금</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="518"/>
+        <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
         <translation>선택하지 않으면 탭이 두 개 이상 있는
 경우에만 탭 표시줄이 표시됩니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="536"/>
+        <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
         <translation>새로 열린 탭으로 전환</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="578"/>
+        <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
         <translation>새 창에서 마지막 창 탭 다시 열기</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="628"/>
-        <location filename="../preferences.ui" line="640"/>
+        <location filename="../preferences.ui" line="665"/>
+        <location filename="../preferences.ui" line="677"/>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
@@ -2110,19 +2124,19 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
 일반적으로 대부분의 이미지 유형이 지원됩니다. 기본 크기 제한은 4 MiB입니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="633"/>
+        <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
         <translation>내장 썸네일에 대한 이미지 크기 제한:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="645"/>
-        <location filename="../preferences.ui" line="681"/>
+        <location filename="../preferences.ui" line="682"/>
+        <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
         <translation> MiB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="661"/>
-        <location filename="../preferences.ui" line="673"/>
+        <location filename="../preferences.ui" line="698"/>
+        <location filename="../preferences.ui" line="710"/>
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
@@ -2131,22 +2145,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
 값이 -1이면 파일 크기에 제한이 없음을 의미합니다(기본값).</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="666"/>
+        <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
         <translation>외부 썸네일에 대한 파일 크기 제한:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="678"/>
+        <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
         <translation>제한 없음</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="816"/>
+        <location filename="../preferences.ui" line="853"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
         <translation>예:&lt;br&gt;터미널의 경우: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;사용자 전환의 경우: &lt;i&gt;lxsudo %s&lt;/i&gt; 또는 &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt;은(는) 터미널 또는 su를 사용하여 실행할 명령줄입니다&lt;br&gt; 중요: lxsudo를 사용하십시오. sudo만 사용하면 설정 파일의 사용 권한이 손상됩니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="907"/>
+        <location filename="../preferences.ui" line="944"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>변경 내용을 적용하려면 프로그램을 다시 시작해야 합니다.</translation>
     </message>
@@ -2171,97 +2185,97 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>단일 창 모드</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="375"/>
+        <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
         <translation>항상 실제 파일 이름 표시</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="392"/>
+        <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
         <translation>파일 도구 설명 표시 안함</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="611"/>
+        <location filename="../preferences.ui" line="648"/>
         <source>Needs ffmpegthumbnailer</source>
         <translation>ffmpegthumbnailer 필요</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="717"/>
+        <location filename="../preferences.ui" line="754"/>
         <source>Auto Mount</source>
         <translation>자동 마운트</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="723"/>
+        <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>프로그램 시작 시 마운트 가능 볼륨 자동으로 마운트</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="730"/>
+        <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>이동식 미디어를 삽입할 때 자동으로 마운트</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="737"/>
+        <location filename="../preferences.ui" line="774"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>이동식 미디어를 삽입할 때 사용 가능한 옵션 표시</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="747"/>
+        <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
         <translation>이동식 미디어가 마운트 해제된 경우:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="753"/>
+        <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>이동식 미디어가 포함된 탭 닫기(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="760"/>
+        <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>탭의 폴더를 홈 폴더로 변경(&amp;G)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="787"/>
+        <location filename="../preferences.ui" line="824"/>
         <source>Programs</source>
         <translation>프로그램</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="796"/>
+        <location filename="../preferences.ui" line="833"/>
         <source>Terminal emulator:</source>
         <translation>터미널 에뮬레이터:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="803"/>
+        <location filename="../preferences.ui" line="840"/>
         <source>Switch &amp;user command:</source>
         <translation>사용자 명령 전환(&amp;U):</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="829"/>
+        <location filename="../preferences.ui" line="866"/>
         <source>Archiver in&amp;tegration:</source>
         <translation>아카이브 통합(&amp;T):</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="852"/>
+        <location filename="../preferences.ui" line="889"/>
         <source>Templates</source>
         <translation>탬플릿</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="858"/>
+        <location filename="../preferences.ui" line="895"/>
         <source>Show only user defined templates in menu</source>
         <translation>메뉴에 사용자 정의 템플릿만 표시</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="865"/>
+        <location filename="../preferences.ui" line="902"/>
         <source>Show only one template for each MIME type</source>
         <translation>각 MIME 유형에 대해 하나의 템플릿만 표시</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="872"/>
+        <location filename="../preferences.ui" line="909"/>
         <source>Run default application after creation from template</source>
         <translation>템플릿에서 생성한 후 기본 응용프로그램 실행</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="358"/>
+        <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>IEC 이진 접두사 대신 SI 소수 접두사 사용</translation>
     </message>
