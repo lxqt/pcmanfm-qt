@@ -5,26 +5,31 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../about.ui" line="14"/>
+        <location filename="../../build/src/ui_about.h" line="140"/>
         <source>About</source>
         <translation>Hakkında</translation>
     </message>
     <message>
         <location filename="../about.ui" line="37"/>
+        <location filename="../../build/src/ui_about.h" line="142"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Dosyalayıcı&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="60"/>
+        <location filename="../../build/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
         <translation>Masaüstü Deneyimi</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
+        <location filename="../../build/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="99"/>
+        <location filename="../../build/src/ui_about.h" line="146"/>
         <source>Programming:
 * Simon Peter (probono)
 * Chris Moore (moochris)
@@ -42,6 +47,7 @@ Uygulama simgesi:
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
+        <location filename="../../build/src/ui_about.h" line="154"/>
         <source>Filer
 
 Copyright (C) 2020-21 Simon Peter
@@ -120,6 +126,7 @@ Sanatçının izni ile kullanılmıştır (https://raphaellopes.me/).</translati
     </message>
     <message>
         <location filename="../about.ui" line="90"/>
+        <location filename="../../build/src/ui_about.h" line="153"/>
         <source>Authors</source>
         <translation>Geliştiriciler</translation>
     </message>
@@ -160,6 +167,7 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     </message>
     <message>
         <location filename="../about.ui" line="116"/>
+        <location filename="../../build/src/ui_about.h" line="184"/>
         <source>License</source>
         <translation>Lisans</translation>
     </message>
@@ -168,31 +176,37 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     <name>AppChooserDialog</name>
     <message>
         <location filename="../app-chooser-dialog.ui" line="14"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="150"/>
         <source>Choose an Application</source>
         <translation>Uygulama seçin</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="151"/>
         <source>Installed Applications</source>
         <translation>Yüklü uygulamalar</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="163"/>
         <source>Custom Command</source>
         <translation>Özel komut</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="152"/>
         <source>Command line to execute:</source>
         <translation>Çalıştırılacak komut satırı:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="153"/>
         <source>Application name:</source>
         <translation>Uygulama adı:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="154"/>
         <source>&lt;b&gt;These special codes can be used in the command line:&lt;/b&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: Represents a single file name&lt;/li&gt;
@@ -210,16 +224,19 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
         <translation>Komutun çalıştırılmasından sonra uçbirim penceresini açık tut</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="162"/>
         <source>Execute in terminal emulator</source>
         <translation>Uçbirim öykünücüsünde çalıştır</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="164"/>
         <source>Set selected application as default action of this file type</source>
         <translation>Seçili uygulamayı bu dosya türü için öntanımlı eylem olarak ayarla</translation>
     </message>
@@ -228,26 +245,31 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     <name>AutoRunDialog</name>
     <message>
         <location filename="../autorun.ui" line="14"/>
+        <location filename="../../build/src/ui_autorun.h" line="108"/>
         <source>Removable medium is inserted</source>
         <translation>Çıkarılabilir ortam takıldı</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
+        <location filename="../../build/src/ui_autorun.h" line="110"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
         <translation>&lt;b&gt;Çıkarılabilir ortam takıldı&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
+        <location filename="../../build/src/ui_autorun.h" line="111"/>
         <source>Type of medium:</source>
         <translation>Ortam türü:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
+        <location filename="../../build/src/ui_autorun.h" line="112"/>
         <source>Detecting...</source>
         <translation>Algılanıyor…</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
+        <location filename="../../build/src/ui_autorun.h" line="113"/>
         <source>Please select the action you want to perform:</source>
         <translation>Gerçekleştirmek istediğiniz eylemi seçin:</translation>
     </message>
@@ -256,31 +278,37 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     <name>DesktopFolder</name>
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="72"/>
         <source>Form</source>
         <translation>Form</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="73"/>
         <source>Desktop</source>
         <translation>Masaüstü</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="74"/>
         <source>Desktop folder:</source>
         <translation>Masaüstü klasörü:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="76"/>
         <source>Image file</source>
         <translation>Görsel dosyası</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="81"/>
         <source>Folder path</source>
         <translation>Klasör yolu</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="82"/>
         <source>&amp;Browse</source>
         <translation>&amp;Göz at</translation>
     </message>
@@ -289,41 +317,49 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     <name>DesktopPreferencesDialog</name>
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="205"/>
         <source>Desktop Preferences</source>
         <translation>Masaüstü Tercihleri</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="20"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="206"/>
         <source>Background</source>
         <translation>Arka plan</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="42"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="207"/>
         <source>Wallpaper mode:</source>
         <translation>Duvar kağıdı kipi:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="55"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="208"/>
         <source>Wallpaper image file:</source>
         <translation>Duvar kağıdı görsel dosyası:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="75"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
         <source>Background color:</source>
         <translation>Arka plan rengi:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="147"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="222"/>
         <source>Text color:</source>
         <translation>Metin rengi:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="160"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="223"/>
         <source>Shadow color:</source>
         <translation>Gölge rengi:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="173"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="224"/>
         <source>Font:</source>
         <translation>Yazıtipi:</translation>
     </message>
@@ -333,21 +369,25 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="84"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="212"/>
         <source>Image file</source>
         <translation>Görsel dosyası</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="90"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="217"/>
         <source>Image file path</source>
         <translation>Görsel dosyası yolu</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="97"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="218"/>
         <source>&amp;Browse</source>
         <translation>&amp;Göz at</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="109"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="219"/>
         <source>Label Text</source>
         <translation>Etiket Metni</translation>
     </message>
@@ -384,31 +424,37 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     <name>EditBookmarksDialog</name>
     <message>
         <location filename="../edit-bookmarks.ui" line="14"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="103"/>
         <source>Edit Bookmarks</source>
         <translation>Yer imlerini düzenle</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="42"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="106"/>
         <source>Name</source>
         <translation>Ad</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="47"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="105"/>
         <source>Location</source>
         <translation>Konum</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="67"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
         <translation>Öge &amp;ekle</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
         <translation>Ögeyi &amp;kaldır</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="109"/>
         <source>Use drag and drop to reorder the items</source>
         <translation>Ögeleri yeniden sıralamak için sürükle-bırak kullanın</translation>
     </message>
@@ -417,26 +463,31 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     <name>ExecFileDialog</name>
     <message>
         <location filename="../exec-file.ui" line="14"/>
+        <location filename="../../build/src/ui_exec-file.h" line="114"/>
         <source>Execute file</source>
         <translation>Dosya çalıştır</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
+        <location filename="../../build/src/ui_exec-file.h" line="116"/>
         <source>&amp;Open</source>
         <translation>&amp;Aç</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
+        <location filename="../../build/src/ui_exec-file.h" line="117"/>
         <source>E&amp;xecute</source>
         <translation>Çalıştı&amp;r</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
+        <location filename="../../build/src/ui_exec-file.h" line="118"/>
         <source>Execute in &amp;Terminal</source>
         <translation>&amp;Uçbirimde çalıştır</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
+        <location filename="../../build/src/ui_exec-file.h" line="119"/>
         <source>Cancel</source>
         <translation>İptal</translation>
     </message>
@@ -445,26 +496,31 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     <name>FileOperationDialog</name>
     <message>
         <location filename="../file-operation-dialog.ui" line="25"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="124"/>
         <source>Destination:</source>
         <translation>Hedef:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="48"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="126"/>
         <source>Processing:</source>
         <translation>İşleniyor:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="61"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="127"/>
         <source>Preparing...</source>
         <translation>Hazırlanıyor…</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="68"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="128"/>
         <source>Progress</source>
         <translation>İlerleme</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="88"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="129"/>
         <source>Time remaining:</source>
         <translation>Kalan süre:</translation>
     </message>
@@ -473,81 +529,97 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
     <name>FilePropsDialog</name>
     <message>
         <location filename="../file-props.ui" line="20"/>
+        <location filename="../../build/src/ui_file-props.h" line="362"/>
         <source>Info</source>
         <translation>Bilgi</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
+        <location filename="../../build/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
         <translation>Metin etiketi</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="133"/>
+        <location filename="../../build/src/ui_file-props.h" line="365"/>
         <source>General</source>
         <translation>Genel</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="139"/>
+        <location filename="../../build/src/ui_file-props.h" line="366"/>
         <source>File type:</source>
         <translation>Dosya türü:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="162"/>
+        <location filename="../../build/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
         <translation>Dosya boyutu:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
+        <location filename="../../build/src/ui_file-props.h" line="370"/>
         <source>On-disk size:</source>
         <translation>Diskteki boyut:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="208"/>
+        <location filename="../../build/src/ui_file-props.h" line="372"/>
         <source>Location:</source>
         <translation>Konum:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
+        <location filename="../../build/src/ui_file-props.h" line="374"/>
         <source>Link target:</source>
         <translation>Bağlantı hedefi:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="260"/>
+        <location filename="../../build/src/ui_file-props.h" line="376"/>
         <source>Last modified:</source>
         <translation>Son değiştirme:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="283"/>
+        <location filename="../../build/src/ui_file-props.h" line="378"/>
         <source>Last accessed:</source>
         <translation>Son erişim:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="317"/>
+        <location filename="../../build/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
         <translation>Birlikte aç</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
+        <location filename="../../build/src/ui_file-props.h" line="381"/>
         <source>Mime type:</source>
         <translation>MIME türü:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="346"/>
+        <location filename="../../build/src/ui_file-props.h" line="383"/>
         <source>Open With:</source>
         <translation>Birlikte aç:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="380"/>
+        <location filename="../../build/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
         <translation>Erişim denetimi</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="423"/>
+        <location filename="../../build/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
         <translation>Herkes</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="440"/>
+        <location filename="../../build/src/ui_file-props.h" line="386"/>
         <source>Make the file executable</source>
         <translation>Dosyayı çalıştırılabilir yap</translation>
     </message>
@@ -1121,72 +1193,72 @@ Bununla ne yapmak istersiniz?</translation>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="95"/>
+        <location filename="../filemenu.cpp" line="93"/>
         <source>Open</source>
         <translation>Aç</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="101"/>
+        <location filename="../filemenu.cpp" line="99"/>
         <source>Show Contents</source>
         <translation>İçeriğini göster</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="130"/>
+        <location filename="../filemenu.cpp" line="128"/>
         <source>&amp;Restore</source>
         <translation>&amp;Eski haline döndür</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="138"/>
+        <location filename="../filemenu.cpp" line="136"/>
         <source>Open With...</source>
         <translation>Birlikte aç…</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="166"/>
+        <location filename="../filemenu.cpp" line="164"/>
         <source>Other Applications</source>
         <translation>Diğer uygulamalar</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="172"/>
+        <location filename="../filemenu.cpp" line="170"/>
         <source>Create &amp;New</source>
         <translation>&amp;Yeni oluştur</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="179"/>
+        <location filename="../filemenu.cpp" line="177"/>
         <source>Cut</source>
         <translation>Kes</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="183"/>
+        <location filename="../filemenu.cpp" line="181"/>
         <source>Copy</source>
         <translation>Kopyala</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="187"/>
+        <location filename="../filemenu.cpp" line="185"/>
         <source>Paste</source>
         <translation>Yapıştır</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="192"/>
+        <location filename="../filemenu.cpp" line="190"/>
         <source>&amp;Move to Trash</source>
         <translation>Çöp&amp;e at</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="196"/>
+        <location filename="../filemenu.cpp" line="194"/>
         <source>Rename</source>
         <translation>Yeniden adlandır</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="246"/>
+        <location filename="../filemenu.cpp" line="242"/>
         <source>Get Info</source>
         <translation>Bilgi al</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="251"/>
+        <location filename="../filemenu.cpp" line="247"/>
         <source>&amp;Empty Trash</source>
         <translation>Çöpü &amp;boşalt</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="354"/>
+        <location filename="../filemenu.cpp" line="349"/>
         <source>Output</source>
         <translation>Çıktı</translation>
     </message>
@@ -1651,16 +1723,19 @@ Değiştirme: %3</translation>
     <name>MainWindow</name>
     <message>
         <location filename="../main-win.ui" line="14"/>
+        <location filename="../../build/src/ui_main-win.h" line="602"/>
         <source>File Manager</source>
         <translation>Dosya yöneticisi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="271"/>
+        <location filename="../../build/src/ui_main-win.h" line="603"/>
         <source>Go &amp;Up</source>
         <translation>&amp;Yukarı git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="274"/>
+        <location filename="../../build/src/ui_main-win.h" line="605"/>
         <source>Go Up</source>
         <translation>Yukarı git</translation>
     </message>
@@ -1670,6 +1745,7 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>
+        <location filename="../../build/src/ui_main-win.h" line="610"/>
         <source>&amp;Home</source>
         <translation>&amp;Ev</translation>
     </message>
@@ -1679,6 +1755,7 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="298"/>
+        <location filename="../../build/src/ui_main-win.h" line="614"/>
         <source>&amp;Reload</source>
         <translation>Y&amp;enile</translation>
     </message>
@@ -1688,11 +1765,13 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="313"/>
+        <location filename="../../build/src/ui_main-win.h" line="618"/>
         <source>Go</source>
         <translation>Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="325"/>
+        <location filename="../../build/src/ui_main-win.h" line="619"/>
         <source>Quit</source>
         <translation>Çık</translation>
     </message>
@@ -1702,21 +1781,25 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="343"/>
+        <location filename="../../build/src/ui_main-win.h" line="621"/>
         <source>&amp;New Window</source>
         <translation>Yeni &amp;pencere</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="346"/>
+        <location filename="../../build/src/ui_main-win.h" line="623"/>
         <source>New Window</source>
         <translation>Yeni pencere</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="349"/>
+        <location filename="../../build/src/ui_main-win.h" line="626"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="357"/>
+        <location filename="../../build/src/ui_main-win.h" line="628"/>
         <source>Show &amp;Hidden</source>
         <translation>&amp;Gizli dosyaları ve klasörleri göster</translation>
     </message>
@@ -1726,398 +1809,479 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="366"/>
+        <location filename="../../build/src/ui_main-win.h" line="629"/>
         <source>&amp;Computer</source>
         <translation>&amp;Bilgisayar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="369"/>
+        <location filename="../../build/src/ui_main-win.h" line="631"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="378"/>
+        <location filename="../../build/src/ui_main-win.h" line="633"/>
         <source>&amp;Trash</source>
         <translation>&amp;Çöp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="381"/>
+        <location filename="../../build/src/ui_main-win.h" line="635"/>
         <source>Ctrl+Shift+T</source>
         <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="386"/>
+        <location filename="../../build/src/ui_main-win.h" line="637"/>
         <source>&amp;Network</source>
         <translation>&amp;Ağ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="398"/>
+        <location filename="../../build/src/ui_main-win.h" line="641"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Masaüstü</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="401"/>
+        <location filename="../../build/src/ui_main-win.h" line="643"/>
         <source>Ctrl+Shift+D</source>
         <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="410"/>
+        <location filename="../../build/src/ui_main-win.h" line="645"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>Yer imlerine e&amp;kle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="415"/>
+        <location filename="../../build/src/ui_main-win.h" line="646"/>
         <source>&amp;Applications</source>
         <translation>&amp;Uygulamalar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="418"/>
+        <location filename="../../build/src/ui_main-win.h" line="648"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="426"/>
+        <location filename="../../build/src/ui_main-win.h" line="650"/>
         <source>Reload</source>
         <translation>Yenile</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="434"/>
+        <location filename="../../build/src/ui_main-win.h" line="651"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Simge görünümü</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
+        <location filename="../../build/src/ui_main-win.h" line="653"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="445"/>
+        <location filename="../../build/src/ui_main-win.h" line="655"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Kompakt görünüm</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="453"/>
+        <location filename="../../build/src/ui_main-win.h" line="656"/>
         <source>&amp;Detailed List</source>
         <translation>Ay&amp;rıntılı Liste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="456"/>
+        <location filename="../../build/src/ui_main-win.h" line="658"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="464"/>
+        <location filename="../../build/src/ui_main-win.h" line="660"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Küçük resim görünümü</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="473"/>
+        <location filename="../../build/src/ui_main-win.h" line="661"/>
         <source>Cu&amp;t</source>
         <translation>Ke&amp;s</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="476"/>
+        <location filename="../../build/src/ui_main-win.h" line="663"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="485"/>
+        <location filename="../../build/src/ui_main-win.h" line="665"/>
         <source>&amp;Copy</source>
         <translation>K&amp;opyala</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="488"/>
+        <location filename="../../build/src/ui_main-win.h" line="667"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="497"/>
+        <location filename="../../build/src/ui_main-win.h" line="669"/>
         <source>&amp;Paste</source>
         <translation>Ya&amp;pıştır</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="500"/>
+        <location filename="../../build/src/ui_main-win.h" line="671"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
+        <location filename="../../build/src/ui_main-win.h" line="673"/>
         <source>Select &amp;All</source>
         <translation>Tümünü S&amp;eç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="508"/>
+        <location filename="../../build/src/ui_main-win.h" line="675"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="513"/>
+        <location filename="../../build/src/ui_main-win.h" line="677"/>
         <source>Pr&amp;eferences</source>
         <translation>&amp;Tercihler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="521"/>
+        <location filename="../../build/src/ui_main-win.h" line="678"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Artan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="529"/>
+        <location filename="../../build/src/ui_main-win.h" line="679"/>
         <source>&amp;Descending</source>
         <translation>A&amp;zalan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="537"/>
+        <location filename="../../build/src/ui_main-win.h" line="680"/>
         <source>&amp;By File Name</source>
         <translation>&amp;Dosya Adına Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="545"/>
+        <location filename="../../build/src/ui_main-win.h" line="681"/>
         <source>By &amp;Modification Time</source>
         <translation>D&amp;eğiştirme Tarihine Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="553"/>
+        <location filename="../../build/src/ui_main-win.h" line="682"/>
         <source>By File &amp;Type</source>
         <translation>Dosya &amp;Türüne Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="561"/>
+        <location filename="../../build/src/ui_main-win.h" line="683"/>
         <source>By &amp;Owner</source>
         <translation>&amp;Sahibine Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="569"/>
+        <location filename="../../build/src/ui_main-win.h" line="684"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Klasörler İlk Sırada</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="640"/>
+        <location filename="../../build/src/ui_main-win.h" line="707"/>
         <source>&amp;Move to Trash</source>
         <translation>Çöpe &amp;at</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
+        <location filename="../../build/src/ui_main-win.h" line="709"/>
         <source>Ctrl+Backspace</source>
         <translation>Ctrl+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="661"/>
+        <location filename="../../build/src/ui_main-win.h" line="716"/>
         <source>Get &amp;Info</source>
         <translation>B&amp;ilgi al</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
+        <location filename="../../build/src/ui_main-win.h" line="718"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="672"/>
+        <location filename="../../build/src/ui_main-win.h" line="720"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;BÜYÜK/küçük Harf Duyarlı</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="680"/>
+        <location filename="../../build/src/ui_main-win.h" line="721"/>
         <source>By File &amp;Size</source>
         <translation>Dosya &amp;Boyutuna Göre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="685"/>
+        <location filename="../../build/src/ui_main-win.h" line="722"/>
         <source>&amp;Close Window</source>
         <translation>&amp;Pencereyi Kapat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="720"/>
+        <location filename="../../build/src/ui_main-win.h" line="733"/>
         <source>&amp;Folder</source>
         <translation>&amp;Klasör</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="732"/>
+        <location filename="../../build/src/ui_main-win.h" line="737"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Boş Dosya</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="743"/>
+        <location filename="../../build/src/ui_main-win.h" line="743"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="760"/>
+        <location filename="../../build/src/ui_main-win.h" line="746"/>
         <source>&amp;Go To Folder</source>
         <translation>Klasöre &amp;git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="763"/>
+        <location filename="../../build/src/ui_main-win.h" line="748"/>
         <source>Go To Folder</source>
         <translation>Klasöre git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="766"/>
+        <location filename="../../build/src/ui_main-win.h" line="751"/>
         <source>Ctrl+Shift+G</source>
         <translation>Ctrl+Shift+G</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="771"/>
+        <location filename="../../build/src/ui_main-win.h" line="753"/>
         <source>&amp;Downloads</source>
         <translation>İ&amp;ndirmeler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="774"/>
+        <location filename="../../build/src/ui_main-win.h" line="755"/>
         <source>Downloads</source>
         <translation>İndirmeler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="777"/>
+        <location filename="../../build/src/ui_main-win.h" line="758"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="785"/>
+        <location filename="../../build/src/ui_main-win.h" line="760"/>
         <source>&amp;Utilities</source>
         <translation>İ&amp;zlenceler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="788"/>
+        <location filename="../../build/src/ui_main-win.h" line="762"/>
         <source>Utilities</source>
         <translation>İzlenceler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="791"/>
+        <location filename="../../build/src/ui_main-win.h" line="765"/>
         <source>Ctrl+Shift+U</source>
         <translation>Ctrl+Shift+U</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="799"/>
+        <location filename="../../build/src/ui_main-win.h" line="767"/>
         <source>&amp;Documents</source>
         <translation>&amp;Belgeler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="802"/>
+        <location filename="../../build/src/ui_main-win.h" line="769"/>
         <source>Documents</source>
         <translation>Belgeler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="805"/>
+        <location filename="../../build/src/ui_main-win.h" line="772"/>
         <source>Ctrl+Shift+O</source>
         <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="813"/>
+        <location filename="../../build/src/ui_main-win.h" line="774"/>
         <source>Open</source>
         <translation>Aç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
+        <location filename="../../build/src/ui_main-win.h" line="776"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="821"/>
+        <location filename="../../build/src/ui_main-win.h" line="778"/>
         <source>&amp;Duplicate</source>
         <translation>Ç&amp;oğalt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
+        <location filename="../../build/src/ui_main-win.h" line="780"/>
         <source>Ctrl+D</source>
         <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="829"/>
+        <location filename="../../build/src/ui_main-win.h" line="782"/>
         <source>Empty Trash</source>
         <translation>Çöpü boşalt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="832"/>
+        <location filename="../../build/src/ui_main-win.h" line="784"/>
         <source>Ctrl+Alt+Backspace</source>
         <translation>Ctrl+Alt+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="837"/>
+        <location filename="../../build/src/ui_main-win.h" line="786"/>
         <source>Show Contents</source>
         <translation>İçeriği göster</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
+        <location filename="../../build/src/ui_main-win.h" line="788"/>
         <source>Ctrl+Alt+O</source>
         <translation>Ctrl+Alt+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="849"/>
         <location filename="../main-win.ui" line="852"/>
+        <location filename="../../build/src/ui_main-win.h" line="790"/>
+        <location filename="../../build/src/ui_main-win.h" line="792"/>
         <source>Go Up and Close Current</source>
         <translation>Yukarı git ve geçerliyi kapat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="855"/>
+        <location filename="../../build/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Shift+Up</source>
         <translation>Ctrl+Shift+Yukarı</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="578"/>
+        <location filename="../../build/src/ui_main-win.h" line="685"/>
         <source>New &amp;Tab</source>
         <translation>Yeni &amp;Sekme</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="277"/>
+        <location filename="../../build/src/ui_main-win.h" line="608"/>
         <source>Ctrl+Up</source>
         <translation>Ctrl+Yukarı</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="289"/>
+        <location filename="../../build/src/ui_main-win.h" line="612"/>
         <source>Ctrl+Shift+H</source>
         <translation>Ctrl+Shift+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="301"/>
+        <location filename="../../build/src/ui_main-win.h" line="616"/>
         <source>Ctrl+Shift+R</source>
         <translation>Ctrl+Shift+R</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="334"/>
+        <location filename="../../build/src/ui_main-win.h" line="620"/>
         <source>&amp;About Filer</source>
         <translation>Dosyalayıcı &amp;hakkında</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="581"/>
+        <location filename="../../build/src/ui_main-win.h" line="687"/>
         <source>New Tab</source>
         <translation>Yeni Sekme</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="584"/>
         <location filename="../main-win.ui" line="701"/>
+        <location filename="../../build/src/ui_main-win.h" line="690"/>
+        <location filename="../../build/src/ui_main-win.h" line="729"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="596"/>
+        <location filename="../../build/src/ui_main-win.h" line="692"/>
         <source>Go &amp;Back</source>
         <translation>Geri &amp;Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="599"/>
+        <location filename="../../build/src/ui_main-win.h" line="694"/>
         <source>Go Back</source>
         <translation>Geri Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="602"/>
+        <location filename="../../build/src/ui_main-win.h" line="697"/>
         <source>Alt+Left</source>
         <translation>Alt+Sol ok</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="611"/>
+        <location filename="../../build/src/ui_main-win.h" line="699"/>
         <source>Go &amp;Forward</source>
         <translation>İ&amp;leri Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="614"/>
+        <location filename="../../build/src/ui_main-win.h" line="701"/>
         <source>Go Forward</source>
         <translation>İleri Git</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="617"/>
+        <location filename="../../build/src/ui_main-win.h" line="704"/>
         <source>Alt+Right</source>
         <translation>Alt+Sağ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
+        <location filename="../../build/src/ui_main-win.h" line="706"/>
         <source>&amp;Invert Selection</source>
         <translation>Seçimi Te&amp;rs Çevir</translation>
     </message>
@@ -2131,21 +2295,25 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
+        <location filename="../../build/src/ui_main-win.h" line="711"/>
         <source>&amp;Rename</source>
         <translation>Yeniden &amp;Adlandır</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
+        <location filename="../../build/src/ui_main-win.h" line="713"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="656"/>
+        <location filename="../../build/src/ui_main-win.h" line="715"/>
         <source>C&amp;lose Tab</source>
         <translation>Sekmeyi &amp;Kapat</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="688"/>
+        <location filename="../../build/src/ui_main-win.h" line="724"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
@@ -2163,11 +2331,13 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="693"/>
+        <location filename="../../build/src/ui_main-win.h" line="726"/>
         <source>Edit Bookmarks</source>
         <translation>Yer İmlerini Düzenle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="698"/>
+        <location filename="../../build/src/ui_main-win.h" line="727"/>
         <source>Open &amp;Terminal</source>
         <translation>&amp;Uçbirimi Aç</translation>
     </message>
@@ -2177,27 +2347,33 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="706"/>
+        <location filename="../../build/src/ui_main-win.h" line="731"/>
         <source>Open as &amp;Root</source>
         <translation>&amp;Kök Olarak Aç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="711"/>
+        <location filename="../../build/src/ui_main-win.h" line="732"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>Y&amp;er İmlerini Düzenle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="389"/>
         <location filename="../main-win.ui" line="723"/>
+        <location filename="../../build/src/ui_main-win.h" line="639"/>
+        <location filename="../../build/src/ui_main-win.h" line="735"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
+        <location filename="../../build/src/ui_main-win.h" line="739"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="740"/>
+        <location filename="../../build/src/ui_main-win.h" line="741"/>
         <source>&amp;Find Files</source>
         <translation>Dosya &amp;Bul</translation>
     </message>
@@ -2207,61 +2383,73 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="751"/>
+        <location filename="../../build/src/ui_main-win.h" line="745"/>
         <source>Filter</source>
         <translation>Süzgeç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="93"/>
+        <location filename="../../build/src/ui_main-win.h" line="797"/>
         <source>Filter by string...</source>
         <translation>Dizeye göre süz…</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="117"/>
+        <location filename="../../build/src/ui_main-win.h" line="798"/>
         <source>&amp;File</source>
         <translation>%Dosya</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="121"/>
+        <location filename="../../build/src/ui_main-win.h" line="799"/>
         <source>C&amp;reate New</source>
         <translation>Yeni &amp;Oluştur</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="140"/>
+        <location filename="../../build/src/ui_main-win.h" line="800"/>
         <source>&amp;Help</source>
         <translation>&amp;Yardım</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="146"/>
+        <location filename="../../build/src/ui_main-win.h" line="801"/>
         <source>&amp;View</source>
         <translation>&amp;Görünüm</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="150"/>
+        <location filename="../../build/src/ui_main-win.h" line="802"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Sıralama</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="176"/>
+        <location filename="../../build/src/ui_main-win.h" line="803"/>
         <source>&amp;Edit</source>
         <translation>&amp;Düzen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="194"/>
+        <location filename="../../build/src/ui_main-win.h" line="804"/>
         <source>&amp;Bookmarks</source>
         <translation>Ye&amp;r İmleri</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="201"/>
+        <location filename="../../build/src/ui_main-win.h" line="805"/>
         <source>&amp;Go</source>
         <translation>G&amp;it</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="222"/>
+        <location filename="../../build/src/ui_main-win.h" line="806"/>
         <source>&amp;Tool</source>
         <translation>&amp;Araç</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="239"/>
+        <location filename="../../build/src/ui_main-win.h" line="807"/>
         <source>Main Toolbar</source>
         <translation>Ana Araç Çubuğu</translation>
     </message>
@@ -2270,46 +2458,55 @@ Değiştirme: %3</translation>
     <name>MountOperationPasswordDialog</name>
     <message>
         <location filename="../mount-operation-password.ui" line="20"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="172"/>
         <source>Mount</source>
         <translation>Bağla</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="48"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="174"/>
         <source>Connect &amp;anonymously</source>
         <translation>Anonim &amp;olarak bağlan</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="58"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="175"/>
         <source>Connect as u&amp;ser:</source>
         <translation>Şu &amp;kullanıcı olarak bağlan:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="79"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="176"/>
         <source>&amp;Username:</source>
         <translation>K&amp;ullanıcı adı:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="102"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="177"/>
         <source>&amp;Password:</source>
         <translation>&amp;Parola:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="112"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="178"/>
         <source>&amp;Domain:</source>
         <translation>A&amp;lan adı:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="127"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="179"/>
         <source>Forget password &amp;immediately</source>
         <translation>Parolayı anında &amp;unut</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="137"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="180"/>
         <source>Remember password until you &amp;logout</source>
         <translation>Parolayı çıkış yapılana kadar &amp;hatırla</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="147"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="181"/>
         <source>Remember &amp;forever</source>
         <translation>Sonsuza dek hatı&amp;rla</translation>
     </message>
@@ -2318,22 +2515,27 @@ Değiştirme: %3</translation>
     <name>PreferencesDialog</name>
     <message>
         <location filename="../preferences.ui" line="14"/>
+        <location filename="../../build/src/ui_preferences.h" line="641"/>
         <source>Preferences</source>
         <translation>Tercihler</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
+        <location filename="../../build/src/ui_preferences.h" line="650"/>
         <source>User Interface</source>
         <translation>Kullanıcı arayüzü</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
+        <location filename="../../build/src/ui_preferences.h" line="646"/>
         <source>Behavior</source>
         <translation>Davranış</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="451"/>
+        <location filename="../../build/src/ui_preferences.h" line="652"/>
+        <location filename="../../build/src/ui_preferences.h" line="701"/>
         <source>Thumbnail</source>
         <translation>Küçük resim</translation>
     </message>
@@ -2343,51 +2545,61 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
+        <location filename="../../build/src/ui_preferences.h" line="654"/>
         <source>Advanced</source>
         <translation>Gelişmiş</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="92"/>
+        <location filename="../../build/src/ui_preferences.h" line="659"/>
         <source>Save metadata to directories (.DirInfo files)</source>
         <translation>Üst veriyi dizinlere kaydet (.DirInfo dosyası)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="102"/>
+        <location filename="../../build/src/ui_preferences.h" line="660"/>
         <source>Spatial mode (folders open in a new window)</source>
         <translation>Uzamsal kip (klasörler yeni pencerede açılır)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="166"/>
+        <location filename="../../build/src/ui_preferences.h" line="666"/>
         <source>Icons</source>
         <translation>Simgeler</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
+        <location filename="../../build/src/ui_preferences.h" line="668"/>
         <source>Size of big icons:</source>
         <translation>Büyük simgelerin boyutu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="205"/>
+        <location filename="../../build/src/ui_preferences.h" line="669"/>
         <source>Size of small icons:</source>
         <translation>Küçük simgelerin boyutu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="215"/>
+        <location filename="../../build/src/ui_preferences.h" line="670"/>
         <source>Size of thumbnails:</source>
         <translation>Küçük resimlerin boyutu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="225"/>
+        <location filename="../../build/src/ui_preferences.h" line="671"/>
         <source>Size of side pane icons:</source>
         <translation>Kenar çubuğu simgelerinin boyutu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="178"/>
+        <location filename="../../build/src/ui_preferences.h" line="667"/>
         <source>Icon theme:</source>
         <translation>Simge teması:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="298"/>
+        <location filename="../../build/src/ui_preferences.h" line="677"/>
         <source>Window</source>
         <translation>Pencere</translation>
     </message>
@@ -2401,21 +2613,25 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="307"/>
+        <location filename="../../build/src/ui_preferences.h" line="678"/>
         <source>Remember the size of the last closed window</source>
         <translation>Son kapatılan pencerenin boyutunu anımsa</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="314"/>
+        <location filename="../../build/src/ui_preferences.h" line="679"/>
         <source>Default width of new windows:</source>
         <translation>Yeni pencerelerin öntanımlı genişliği:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
+        <location filename="../../build/src/ui_preferences.h" line="680"/>
         <source>Default height of new windows:</source>
         <translation>Yeni pencerelerin öntanımlı yüksekliği:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="76"/>
+        <location filename="../../build/src/ui_preferences.h" line="657"/>
         <source>Browsing</source>
         <translation>Önizleme</translation>
     </message>
@@ -2429,6 +2645,7 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="82"/>
+        <location filename="../../build/src/ui_preferences.h" line="658"/>
         <source>Default view mode:</source>
         <translation>Öntanımlı görünüm kipi:</translation>
     </message>
@@ -2438,11 +2655,13 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="112"/>
+        <location filename="../../build/src/ui_preferences.h" line="661"/>
         <source>File Operations</source>
         <translation>Dosya İşlemleri</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="118"/>
+        <location filename="../../build/src/ui_preferences.h" line="662"/>
         <source>Confirm before deleting files</source>
         <translation>Dosyaları silmeden önce onayla</translation>
     </message>
@@ -2452,16 +2671,19 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="481"/>
+        <location filename="../../build/src/ui_preferences.h" line="705"/>
         <source>Show thumbnails of files</source>
         <translation>Dosyaların önizlemesini küçük görsel olarak göster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="474"/>
+        <location filename="../../build/src/ui_preferences.h" line="704"/>
         <source>Only show thumbnails for local files</source>
         <translation>Yalnızca yerel dosyalar için küçük görseller göster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
+        <location filename="../../build/src/ui_preferences.h" line="648"/>
         <source>Display</source>
         <translation>Görüntü</translation>
     </message>
@@ -2483,141 +2705,169 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="125"/>
+        <location filename="../../build/src/ui_preferences.h" line="663"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
         <translation>Çıkarılabilir ortamdaki dosyaları bir &quot;çöp sepeti&quot;ne taşımak yerine hemen sil</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="132"/>
+        <location filename="../../build/src/ui_preferences.h" line="664"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
         <translation>Dosyaları &quot;çöp sepetine&quot; taşımadan önce onayla</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="139"/>
+        <location filename="../../build/src/ui_preferences.h" line="665"/>
         <source>Don&apos;t ask options on launch executable file</source>
         <translation>Çalıştırılabilir dosyayı açarken herhangi bir soru sorma</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="238"/>
+        <location filename="../../build/src/ui_preferences.h" line="672"/>
         <source>User interface</source>
         <translation>Kullanıcı arabirimi</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="251"/>
+        <location filename="../../build/src/ui_preferences.h" line="674"/>
         <source>Treat backup files as hidden</source>
         <translation>Yedek dosyalarına gizli dosyaymış gibi davran</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="261"/>
+        <location filename="../../build/src/ui_preferences.h" line="675"/>
         <source>Always show full file names</source>
         <translation>Her zaman tam dosya adını göster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="271"/>
+        <location filename="../../build/src/ui_preferences.h" line="676"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Gizli dosyaların simgelerini gölgelendirilmiş biçimde görüntüle</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
+        <location filename="../../build/src/ui_preferences.h" line="681"/>
         <source>Show in places</source>
         <translation>&quot;Yerler&quot;de göster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="352"/>
+        <location filename="../../build/src/ui_preferences.h" line="686"/>
         <source>Home</source>
         <translation>Ev</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="364"/>
+        <location filename="../../build/src/ui_preferences.h" line="688"/>
         <source>Desktop</source>
         <translation>Masaüstü</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
+        <location filename="../../build/src/ui_preferences.h" line="690"/>
         <source>Trash can</source>
         <translation>Çöp Sepeti</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="388"/>
+        <location filename="../../build/src/ui_preferences.h" line="692"/>
         <source>Computer</source>
         <translation>Bilgisayar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="400"/>
+        <location filename="../../build/src/ui_preferences.h" line="694"/>
         <source>Applications</source>
         <translation>Uygulamalar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="408"/>
+        <location filename="../../build/src/ui_preferences.h" line="696"/>
         <source>Devices</source>
         <translation>Aygıtlar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="416"/>
+        <location filename="../../build/src/ui_preferences.h" line="698"/>
         <source>Network</source>
         <translation>Ağ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="457"/>
+        <location filename="../../build/src/ui_preferences.h" line="702"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Bu boyutu aşan dosyalar için küçük görsel önizlemesi oluşturma:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="464"/>
+        <location filename="../../build/src/ui_preferences.h" line="703"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="605"/>
+        <location filename="../../build/src/ui_preferences.h" line="715"/>
         <source>Auto Mount</source>
         <translation>Kendiliğinden Bağla</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="611"/>
+        <location filename="../../build/src/ui_preferences.h" line="716"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Program başlangıcında bağlanabilir disk bölümlerini bağla</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="618"/>
+        <location filename="../../build/src/ui_preferences.h" line="717"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Çıkarılabilir ortamı takıldığında kendiliğinden bağla</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="625"/>
+        <location filename="../../build/src/ui_preferences.h" line="718"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Çıkarılabilir ortam takıldığında kullanılabilir seçenekleri göster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="635"/>
+        <location filename="../../build/src/ui_preferences.h" line="719"/>
         <source>When removable medium unmounted:</source>
         <translation>Çıkarılabilir ortam bağlantısı kesildiğinde:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="641"/>
+        <location filename="../../build/src/ui_preferences.h" line="720"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Çıkarılabilir ortamı içeren &amp;sekmeyi kapat</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
+        <location filename="../../build/src/ui_preferences.h" line="721"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Sekmedeki klasörü ev klasörüne değiştir</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="508"/>
+        <location filename="../../build/src/ui_preferences.h" line="706"/>
         <source>Programs</source>
         <translation>Programlar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="517"/>
+        <location filename="../../build/src/ui_preferences.h" line="707"/>
         <source>Terminal emulator:</source>
         <translation>Uçbirim öykünücüsü:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="524"/>
+        <location filename="../../build/src/ui_preferences.h" line="708"/>
         <source>Switch &amp;user command:</source>
         <translation>Kullanıcı &amp;değiştir komutu:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="537"/>
+        <location filename="../../build/src/ui_preferences.h" line="709"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Örnek: Uçbirim için &quot;xterm -e %s&quot; veya kullanıcı değiştirmek için &quot;gksu %s&quot;.
@@ -2629,26 +2879,31 @@ Değiştirme: %3</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="558"/>
+        <location filename="../../build/src/ui_preferences.h" line="711"/>
         <source>Templates</source>
         <translation>Şablonlar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="564"/>
+        <location filename="../../build/src/ui_preferences.h" line="712"/>
         <source>Show only user defined templates in menu</source>
         <translation>Menüde yalnızca kullanıcı tanımlı şablonları göster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="571"/>
+        <location filename="../../build/src/ui_preferences.h" line="713"/>
         <source>Show only one template for each MIME type</source>
         <translation>Her bir MIME türü için yalnızca bir şablon göster</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="578"/>
+        <location filename="../../build/src/ui_preferences.h" line="714"/>
         <source>Run default application after creation from template</source>
         <translation>Şablon oluşturulduktan sonra öntanımlı uygulamayı çalıştır</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
+        <location filename="../../build/src/ui_preferences.h" line="673"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>IEC ikili önekleri yerine SI ondalık öneklerini kullan</translation>
     </message>
@@ -2719,46 +2974,55 @@ Değiştirme: %3</translation>
     <name>RenameDialog</name>
     <message>
         <location filename="../rename-dialog.ui" line="14"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="156"/>
         <source>Confirm to replace files</source>
         <translation>Dosyaları başkalarıyla değiştirmeyi onayla</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="35"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="157"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Bu konumda aynı adlı bir dosya halihazırda var.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Mevcut dosyayı değiştirmek mi istiyorsunuz?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="158"/>
         <source>dest</source>
         <translation>hedef</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="63"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="159"/>
         <source>with the following file?</source>
         <translation>(aşağıdaki dosya ile)?</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="160"/>
         <source>src file info</source>
         <translation>kaynak dosya bilgisi</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="161"/>
         <source>dest file info</source>
         <translation>hedef dosya bilgisi</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="162"/>
         <source>src</source>
         <translation>kaynak</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="163"/>
         <source>&amp;File name:</source>
         <translation>&amp;Dosya adı:</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="137"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="164"/>
         <source>Apply this option to all existing files</source>
         <translation>Bu seçeneği tüm mevcut dosyalara uygula</translation>
     </message>
@@ -2767,175 +3031,213 @@ Değiştirme: %3</translation>
     <name>SearchDialog</name>
     <message>
         <location filename="../filesearch.ui" line="14"/>
+        <location filename="../../build/src/ui_filesearch.h" line="398"/>
         <source>Search Files</source>
         <translation>Dosyaları ara</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="29"/>
+        <location filename="../../build/src/ui_filesearch.h" line="408"/>
         <source>Name/Location</source>
         <translation>Ad/Konum</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="35"/>
+        <location filename="../../build/src/ui_filesearch.h" line="399"/>
         <source>File Name Patterns:</source>
         <translation>Dosya adı dizgeleri:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="41"/>
+        <location filename="../../build/src/ui_filesearch.h" line="400"/>
         <source>*</source>
         <translation>*</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="48"/>
+        <location filename="../../build/src/ui_filesearch.h" line="401"/>
         <source>Case insensitive</source>
         <translation>BÜYÜK/küçük harf duyarsız</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
+        <location filename="../../build/src/ui_filesearch.h" line="402"/>
         <source>Use regular expression</source>
         <translation>Düzenli ifade kullan</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="65"/>
+        <location filename="../../build/src/ui_filesearch.h" line="403"/>
         <source>Places to Search:</source>
         <translation>Aranacak konumlar:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="78"/>
+        <location filename="../../build/src/ui_filesearch.h" line="404"/>
         <source>&amp;Add</source>
         <translation>&amp;Ekle</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="90"/>
+        <location filename="../../build/src/ui_filesearch.h" line="405"/>
         <source>&amp;Remove</source>
         <translation>&amp;Kaldır</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="119"/>
+        <location filename="../../build/src/ui_filesearch.h" line="406"/>
         <source>Search in sub directories</source>
         <translation>Alt dizinlerde ara</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="126"/>
+        <location filename="../../build/src/ui_filesearch.h" line="407"/>
         <source>Search for hidden files</source>
         <translation>Gizli dosyalarda ara</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="137"/>
+        <location filename="../../build/src/ui_filesearch.h" line="416"/>
         <source>File Type</source>
         <translation>Dosya türü</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="143"/>
+        <location filename="../../build/src/ui_filesearch.h" line="409"/>
         <source>Only search for files of following types:</source>
         <translation>Yalnızca aşağıdaki türdeki dosyaları ara:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="149"/>
+        <location filename="../../build/src/ui_filesearch.h" line="410"/>
         <source>Text files</source>
         <translation>Metin dosyaları</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="156"/>
+        <location filename="../../build/src/ui_filesearch.h" line="411"/>
         <source>Image files</source>
         <translation>Resim dosyaları</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="163"/>
+        <location filename="../../build/src/ui_filesearch.h" line="412"/>
         <source>Audio files</source>
         <translation>Ses dosyaları</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="170"/>
+        <location filename="../../build/src/ui_filesearch.h" line="413"/>
         <source>Video files</source>
         <translation>Video dosyaları</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="177"/>
+        <location filename="../../build/src/ui_filesearch.h" line="414"/>
         <source>Documents</source>
         <translation>Belgeler</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="184"/>
+        <location filename="../../build/src/ui_filesearch.h" line="415"/>
         <source>Folders</source>
         <translation>Klasörler</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="208"/>
+        <location filename="../../build/src/ui_filesearch.h" line="420"/>
         <source>Content</source>
         <translation>İçerik</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="214"/>
+        <location filename="../../build/src/ui_filesearch.h" line="417"/>
         <source>File contains:</source>
         <translation>Dosya şunu içerir:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="223"/>
+        <location filename="../../build/src/ui_filesearch.h" line="418"/>
         <source>Case insensiti&amp;ve</source>
         <translation>BÜYÜK/küçük harf &amp;duyarsız</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="230"/>
+        <location filename="../../build/src/ui_filesearch.h" line="419"/>
         <source>&amp;Use regular expression</source>
         <translation>Dü&amp;zenli ifade kullan</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="254"/>
+        <location filename="../../build/src/ui_filesearch.h" line="437"/>
         <source>Properties</source>
         <translation>Özellikler</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="260"/>
+        <location filename="../../build/src/ui_filesearch.h" line="421"/>
         <source>File Size:</source>
         <translation>Dosya boyutu:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
+        <location filename="../../build/src/ui_filesearch.h" line="422"/>
         <source>Larger than:</source>
         <translation>Şundan daha büyük:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="282"/>
         <location filename="../filesearch.ui" line="323"/>
+        <location filename="../../build/src/ui_filesearch.h" line="423"/>
+        <location filename="../../build/src/ui_filesearch.h" line="429"/>
         <source>Bytes</source>
         <translation>Bayt</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="287"/>
         <location filename="../filesearch.ui" line="328"/>
+        <location filename="../../build/src/ui_filesearch.h" line="424"/>
+        <location filename="../../build/src/ui_filesearch.h" line="430"/>
         <source>KiB</source>
         <translation>KiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="292"/>
         <location filename="../filesearch.ui" line="333"/>
+        <location filename="../../build/src/ui_filesearch.h" line="425"/>
+        <location filename="../../build/src/ui_filesearch.h" line="431"/>
         <source>MiB</source>
         <translation>MiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="297"/>
         <location filename="../filesearch.ui" line="338"/>
+        <location filename="../../build/src/ui_filesearch.h" line="426"/>
+        <location filename="../../build/src/ui_filesearch.h" line="432"/>
         <source>GiB</source>
         <translation>GiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="307"/>
+        <location filename="../../build/src/ui_filesearch.h" line="428"/>
         <source>Smaller than:</source>
         <translation>Şundan daha küçük:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="351"/>
+        <location filename="../../build/src/ui_filesearch.h" line="434"/>
         <source>Last Modified Time:</source>
         <translation>Son değiştirme zamanı:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="357"/>
+        <location filename="../../build/src/ui_filesearch.h" line="435"/>
         <source>Earlier than:</source>
         <translation>Şundan daha önce:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="364"/>
+        <location filename="../../build/src/ui_filesearch.h" line="436"/>
         <source>Later than:</source>
         <translation>Şundan daha sonra:</translation>
     </message>

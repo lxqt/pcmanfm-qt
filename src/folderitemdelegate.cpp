@@ -30,6 +30,8 @@
 #include <QPainterPath>
 #include <QColor>
 
+# include "extattrs.h"
+
 namespace Fm {
 
 FolderItemDelegate::FolderItemDelegate(QAbstractItemView* view, QObject* parent):
@@ -116,10 +118,23 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
     painter->drawPixmap(iconPos, pixmap);
 
+    QPoint symlinkPos = iconPos;
+    symlinkPos.setY(symlinkPos.y() + opt.decorationSize.height() / 2);
+
     // draw some emblems for the item if needed
     // we only support symlink emblem at the moment
     if(isSymlink)
-      painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
+      painter->drawPixmap(symlinkPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
+
+    // probono: Draw label emblems
+    QString path = QString::fromUtf8(fm_path_to_str(fm_file_info_get_path(file))); // argh! So complicated!
+    bool ok;
+    QString emblem = Fm::getAttributeValueQString(path, "EMBLEM", ok);
+    if (ok) {
+        QIcon emblemIcon = QIcon::fromTheme(emblem);
+        QPoint emblemIconPos(opt.decorationSize.width() * 0.75 + opt.rect.x() + (opt.rect.width() - opt.decorationSize.width()) / 2, opt.rect.y());
+        painter->drawPixmap(emblemIconPos, emblemIcon.pixmap(opt.decorationSize / 2, iconMode));
+    }
 
     // draw the text
     QRectF textRect(opt.rect.x(), opt.rect.y()+3 + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
@@ -130,15 +145,28 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     // let QStyledItemDelegate does its default painting
     QStyledItemDelegate::paint(painter, option, index);
 
+    QStyleOptionViewItem opt = option;
+    initStyleOption(&opt, index);
+    QIcon::Mode iconMode = iconModeFromState(opt.state);
+
     // draw emblems if needed
     if(isSymlink) {
-      QStyleOptionViewItem opt = option;
-      initStyleOption(&opt, index);
-      QIcon::Mode iconMode = iconModeFromState(opt.state);
       QPoint iconPos(opt.rect.x(), opt.rect.y() + (opt.rect.height() - opt.decorationSize.height()) / 2);
       // draw some emblems for the item if needed
       // we only support symlink emblem at the moment
-      painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
+      QPoint symlinkPos = iconPos;
+      symlinkPos.setY(symlinkPos.y() + opt.decorationSize.height() / 2);
+      painter->drawPixmap(symlinkPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
+    }
+
+    // probono: Draw label emblems
+    QString path = QString::fromUtf8(fm_path_to_str(fm_file_info_get_path(file))); // argh! So complicated!
+    bool ok;
+    QString emblem = Fm::getAttributeValueQString(path, "EMBLEM", ok);
+    if (ok) {
+        QIcon emblemIcon = QIcon::fromTheme(emblem);
+        QPoint emblemIconPos(opt.decorationSize.width() * 0.75 + opt.rect.x() + (opt.rect.width() - opt.decorationSize.width()) / 2, opt.rect.y());
+        painter->drawPixmap(emblemIconPos, emblemIcon.pixmap(opt.decorationSize / 2, iconMode));
     }
   }
 }

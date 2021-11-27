@@ -112,23 +112,20 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     if(fm_file_info_is_symlink(file)) {
       // draw some emblems for the item if needed
       // we only support symlink emblem at the moment
-      painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
+      QPoint symlinkPos = iconPos;
+      symlinkPos.setY(symlinkPos.y() + opt.decorationSize.height() / 2);
+      painter->drawPixmap(symlinkPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
     }
   }
 
   // probono: Draw label emblems
-  // TODO: Is there a standard convention how they are stored by other file managers?
-  // TODO: Different visualization
-  // TODO: Also implement for non-desktop views
   QString path = QString::fromUtf8(fm_path_to_str(fm_file_info_get_path(file))); // argh! So complicated!
   bool ok;
-  int val = 0;
-  val = Fm::getAttributeValueInt(path, "EMBLEM", ok);
-  qDebug() << "probono: path:" << path << ", val:" << val;
+  QString emblem = Fm::getAttributeValueQString(path, "EMBLEM", ok);
   if (ok) {
-      QIcon emblemIcon = QIcon::fromTheme("emblem-colors-red");
-      QPoint emblemIconPos(opt.rect.x() + (opt.rect.width() - opt.decorationSize.width()) / 2, opt.rect.y());
-      painter->drawPixmap(iconPos, emblemIcon.pixmap(opt.decorationSize / 2, iconMode));
+      QIcon emblemIcon = QIcon::fromTheme(emblem);
+      QPoint emblemIconPos(opt.decorationSize.width() * 0.75 + opt.rect.x() + (opt.rect.width() - opt.decorationSize.width()) / 2, opt.rect.y());
+      painter->drawPixmap(emblemIconPos, emblemIcon.pixmap(opt.decorationSize / 2, iconMode));
   }
 
   // draw text
