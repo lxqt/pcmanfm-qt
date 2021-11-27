@@ -33,6 +33,8 @@
 #include <QFileInfo>
 #include <QStorageInfo>
 
+#include "extattrs.h"
+
 using namespace Filer;
 
 DesktopItemDelegate::DesktopItemDelegate(QListView* view, QObject* parent):
@@ -112,6 +114,21 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
       // we only support symlink emblem at the moment
       painter->drawPixmap(iconPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
     }
+  }
+
+  // probono: Draw label emblems
+  // TODO: Is there a standard convention how they are stored by other file managers?
+  // TODO: Different visualization
+  // TODO: Also implement for non-desktop views
+  QString path = QString::fromUtf8(fm_path_to_str(fm_file_info_get_path(file))); // argh! So complicated!
+  bool ok;
+  int val = 0;
+  val = Fm::getAttributeValueInt(path, "EMBLEM", ok);
+  qDebug() << "probono: path:" << path << ", val:" << val;
+  if (ok) {
+      QIcon emblemIcon = QIcon::fromTheme("emblem-colors-red");
+      QPoint emblemIconPos(opt.rect.x() + (opt.rect.width() - opt.decorationSize.width()) / 2, opt.rect.y());
+      painter->drawPixmap(iconPos, emblemIcon.pixmap(opt.decorationSize / 2, iconMode));
   }
 
   // draw text

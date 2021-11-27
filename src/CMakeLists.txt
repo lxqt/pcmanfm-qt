@@ -84,6 +84,7 @@ set(filer_SRCS
     dbusinterface.cpp
     resources.qrc
     sound.cpp # probono
+    extattrs.cpp # probono
 )
 
 qt5_add_dbus_adaptor(filer_SRCS

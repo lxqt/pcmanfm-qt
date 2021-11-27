@@ -19,19 +19,14 @@
 #include "metadata.h"
 #include <application.h>
 #include "settings.h"
-#include <sys/param.h> // for checking BSD definition
 #include <unistd.h>
-#if defined(BSD)
-#include <sys/extattr.h>
-#else
-#include <sys/types.h>
-#include <sys/xattr.h>
-#endif
 #include <QDebug>
 #include <QDir>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QStandardPaths>
+
+#include <extattrs.h>
 
 using namespace Filer;
 
@@ -53,62 +48,6 @@ static const QString WINDOW_SORT_CASE           = "WindowSortCase";
 static const QString WINDOW_SORT_FOLDER_FIRST   = "WindowSortFolderFirst";
 static const QString WINDOW_FILTER              = "WindowFilter";
 static const QString XATTR_NAMESPACE            = "user";
-
-/*
- * get the attibute value from the extended attribute for the path as int
- */
-int getAttributeValueInt(const QString& path, const QString& attribute, bool& ok) {
-  int value = 0;
-
-  // get the value from the extended attribute for the path
-  char data[ATTR_VAL_SIZE];
-#if defined(BSD)
-  ssize_t bytesRetrieved = extattr_get_file(path.toLatin1().data(), EXTATTR_NAMESPACE_USER,
-                                                    attribute.toLatin1().data(), data, ATTR_VAL_SIZE);
-#else
-  QString namespacedAttr;
-  namespacedAttr.append(XATTR_NAMESPACE).append(".").append(attribute);
-  ssize_t bytesRetrieved = getxattr(path.toLatin1().data(), 
-                                            namespacedAttr.toLatin1().data(), data, ATTR_VAL_SIZE);
-#endif
-  // check if we got the attribute value
-  if (bytesRetrieved <= 0)
-    ok = false;
-  else {
-    // convert the value to int via QString
-    QString strValue(data);
-    bool intOK;
-    int val = strValue.toInt(&intOK);
-    if (intOK) {
-      ok = true;
-      value = val;
-    }
-  }
-  return value;
-}
-
-/*
- * set the attibute value in the extended attribute for the path as int
- */
-bool setAttributeValueInt(const QString& path, const QString& attribute, int value) {
-  // set the value from the extended attribute for the path
-  QString data = QString::number(value);
-#if defined(BSD)
-  ssize_t bytesSet = extattr_set_file(path.toLatin1().data(), EXTATTR_NAMESPACE_USER,
-                                      attribute.toLatin1().data(), data.toLatin1().data(),
-                                      data.length() + 1); // include \0 termination char
-  // check if we set the attribute value
-  return (bytesSet > 0);
-#else
-  QString namespacedAttr;
-  namespacedAttr.append(XATTR_NAMESPACE).append(".").append(attribute);
-  int success = setxattr(path.toLatin1().data(), 
-                                      namespacedAttr.toLatin1().data(), data.toLatin1().data(),
-                                      data.length() + 1, 0); // include \0 termination char
-  // check if we set the attribute value
-  return (success == 0);
-#endif
-}
 
 } // anonymous namespace
 
@@ -290,21 +229,21 @@ int MetaData::getMetadataInt(const QString& path, const QString& attribute, bool
   // read from the mirror under ~
   int result = access(path.toLatin1().data(), W_OK);
   if (result == 0) {
-      val = getAttributeValueInt(path_, attribute, ok);
+      val = Fm::getAttributeValueInt(path_, attribute, ok);
   }
   else {
-      val = getAttributeValueInt(READ_ONLY_FS_METADATA_PATH + path, attribute, ok);
+      val = Fm::getAttributeValueInt(READ_ONLY_FS_METADATA_PATH + path, attribute, ok);
   }
   return val;
 }
 
 void MetaData::setMetadataInt(const QString& path, const QString& attribute, int value)
 {
-  bool success = setAttributeValueInt(path_, attribute, value);
+  bool success = Fm::setAttributeValueInt(path_, attribute, value);
   if ( ! success ) {
     QString mirrorPath = READ_ONLY_FS_METADATA_PATH + path;
     QDir().mkpath(mirrorPath);
-    success = setAttributeValueInt(mirrorPath, attribute, value);
+    success = Fm::setAttributeValueInt(mirrorPath, attribute, value);
   }
   if ( ! success )
     qWarning() << "MetaData::setMetadataInt: unable to set attribute: " << attribute;
