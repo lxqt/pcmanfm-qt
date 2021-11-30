@@ -17,7 +17,8 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
@@ -714,7 +715,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Nedávné &amp;soubory</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -919,7 +920,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vyčistit</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="639"/>
@@ -2050,7 +2051,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet nedávných souborů:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
