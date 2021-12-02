@@ -22,7 +22,8 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
@@ -415,7 +416,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Postavi sve elemente tako ostanu na svojim pozicijama</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -690,7 +691,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Nedavne &amp;datoteke</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -945,22 +946,22 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Sačuvaj postavke rekurzivno odavde</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="959"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Idi na izvor naslijeđenih postavki</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="964"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ukloni postavke nepostojećih mapa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Izbriši</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
@@ -1005,7 +1006,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Sačuvaj postavke za ovu &amp;mapu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="875"/>
@@ -1161,7 +1162,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="818"/>
         <source>Ctrl+M</source>
-        <translation>Ctrl+B</translation>
+        <translation>Ctrl+G</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
@@ -1177,7 +1178,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Postavke prilagođenog prikaza</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="601"/>
@@ -1353,7 +1354,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="252"/>
         <source>Main Toolbar</source>
-        <translation>Glavna alatna traka</translation>
+        <translation>Glavna traka alata</translation>
     </message>
 </context>
 <context>
@@ -1699,7 +1700,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1974"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Prilagođen prikaz – Postavke</translation>
+        <translation>Postavke prilagođenog prikaza</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2238"/>
@@ -1715,13 +1716,14 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2348"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Postavke čišćenja mape</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2349"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Želiš li ukloniti postavke nepostojećih mapa?
+Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
     </message>
 </context>
 <context>
@@ -2035,7 +2037,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Broj nedavnih datoteka:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2073,7 +2075,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Deaktiviraj neprekidno pomicanje u popisu i kompaktnom načinu rada</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
