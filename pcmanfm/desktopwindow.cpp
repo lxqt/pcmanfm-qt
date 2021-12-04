@@ -1154,13 +1154,13 @@ void DesktopWindow::onFolderFinishLoading() {
 void DesktopWindow::onFilesAdded(const Fm::FileInfoList files) {
     if(static_cast<Application*>(qApp)->settings().selectNewFiles()) {
         if(!selectionTimer_) {
-            selectFiles(files, false);
             selectionTimer_ = new QTimer (this);
             selectionTimer_->setSingleShot(true);
-            selectionTimer_->start(200);
+            if(selectFiles(files, false)) {
+                selectionTimer_->start(200);
+            }
         }
-        else {
-            selectFiles(files, selectionTimer_->isActive());
+        else if(selectFiles(files, selectionTimer_->isActive())) {
             selectionTimer_->start(200);
         }
     }

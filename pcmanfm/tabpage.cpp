@@ -384,13 +384,13 @@ void TabPage::onFileSizeChanged(const QModelIndex& index) {
 void TabPage::onFilesAdded(Fm::FileInfoList files) {
     if(static_cast<Application*>(qApp)->settings().selectNewFiles()) {
         if(!selectionTimer_) {
-            folderView_->selectFiles(files, false);
             selectionTimer_ = new QTimer (this);
             selectionTimer_->setSingleShot(true);
-            selectionTimer_->start(200);
+            if(folderView_->selectFiles(files, false)) {
+                selectionTimer_->start(200);
+            }
         }
-        else {
-            folderView_->selectFiles(files, selectionTimer_->isActive());
+        else if(folderView_->selectFiles(files, selectionTimer_->isActive())) {
             selectionTimer_->start(200);
         }
     }
