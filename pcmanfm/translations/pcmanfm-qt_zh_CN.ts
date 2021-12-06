@@ -22,7 +22,8 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
@@ -686,7 +687,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>最近的文件(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -701,7 +702,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="153"/>
         <source>&amp;Filtering</source>
-        <translation>过滤(F)</translation>
+        <translation>过滤(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="227"/>
@@ -956,7 +957,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>清除(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
@@ -2021,7 +2022,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>最近的文件数：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2059,7 +2060,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>列表视图和详情视图下禁用平滑滚动</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
@@ -2086,7 +2087,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>默认为1px。
+        <translation>默认为3px。
 会保留三行文字高度的空间。</translation>
     </message>
     <message>
@@ -2129,7 +2130,7 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation> 兆</translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
