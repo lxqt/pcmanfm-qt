@@ -22,7 +22,8 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt#readme&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
@@ -238,7 +239,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation type="unfinished">Tipe:</translation>
+        <translation>Tipe:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
@@ -405,7 +406,7 @@ Spasi juga disediakan untuk 3 baris teks.</translation>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
         <translation>Secara standar, folder desktop akan dibuka di PCManFM-Qt 
-jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar</translation>
+jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
@@ -420,7 +421,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
         <source>Wallpaper</source>
-        <translation>Wallpaper</translation>
+        <translation>Kertas Dinding</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="348"/>
@@ -470,7 +471,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../desktop-preferences.ui" line="440"/>
         <source>Interval:</source>
-        <translation>Interval:</translation>
+        <translation>Jeda waktu:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="447"/>
@@ -543,17 +544,17 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilan fokus, bersihkan bilah filter</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation>Focus side-pane</translation>
+        <translation>Fokus panel-sisi</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -564,7 +565,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished">Fokus ke entri path</translation>
+        <translation>Fokus ke entri path</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -647,7 +648,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Tempel ke bilah filter sementara</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -690,7 +691,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Berkas T&amp;erbaru</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -940,32 +941,32 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="589"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tersembunyi Diakhir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Pertahankan Pengaturan Secara Rekursif dari &amp;Sini</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="959"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Buka Sumber Pengaturan yang Diwariskan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="964"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Hapus Pengaturan Folder yang Tidak Ada</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bersihkan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
@@ -990,7 +991,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="725"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka Tab dalam Instance &amp;Root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
@@ -1005,7 +1006,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Pertahankan Pengaturan untuk Folder &amp;Ini</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="875"/>
@@ -1050,22 +1051,22 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="914"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan Thumb&amp;nail</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="917"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan Thumbnail</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="925"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>Panel S&amp;isi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="928"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="933"/>
@@ -1075,13 +1076,13 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="938"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka Tab dalam Mode &amp;Admin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="943"/>
         <location filename="../main-win.ui" line="946"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Ciptakan Peluncur</translation>
+        <translation>Ciptakan Peluncur</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
@@ -1178,7 +1179,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Pengaturan Tampilan yang Disesuaikan</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="601"/>
@@ -1372,12 +1373,12 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Jalankan PCManFM-Qt sebagai daemon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Keluar PCManFM -Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -1508,32 +1509,32 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>Command:</source>
-        <translation type="unfinished">Perintah:</translation>
+        <translation>Perintah:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="32"/>
         <source>URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="57"/>
         <source>Select an icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih ikon</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="59"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
-        <translation type="unfinished"></translation>
+        <translation>Gambar (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="81"/>
         <source>Select an executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih berkas yang dapat dieksekusi</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="89"/>
         <source>Select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih berkas</translation>
     </message>
 </context>
 <context>
@@ -1571,7 +1572,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="255"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih Kertas Dinding</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="259"/>
@@ -1581,7 +1582,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="301"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih Folder Kertas Dinding</translation>
     </message>
 </context>
 <context>
@@ -1637,7 +1638,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../desktopwindow.cpp" line="1042"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Ciptakan Peluncur</translation>
+        <translation>Ciptakan Peluncur</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1045"/>
@@ -1658,7 +1659,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../tabpage.cpp" line="63"/>
         <source>Clear text (Ctrl+K or Esc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bersihkan teks (Ctrl+K atau Esc)</translation>
     </message>
 </context>
 <context>
@@ -1698,7 +1699,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../mainwindow.cpp" line="1974"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Tampilan yang Disesuaikan</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2238"/>
@@ -1714,13 +1715,14 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../mainwindow.cpp" line="2348"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Pembersihan Folder</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2349"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Apakah Anda ingin menghapus pengaturan folder yang tidak ada?
+Mereka mungkin berguna jika folder itu dibuat lagi.</translation>
     </message>
 </context>
 <context>
@@ -1792,13 +1794,13 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Banyak berkas</translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Apakah Anda ingin membuka %1 berkas ini?</numerusform>
         </translation>
     </message>
     <message>
@@ -1968,18 +1970,18 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jika ini tidak dicentang, pengaturan DE akan digunakan.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Setel ke nol untuk menonaktifkan pemilihan otomatis.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Penundaan pemilihan otomatis dalam mode klik tunggal:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -2021,12 +2023,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Berkas yang diganti namanya juga akan dipilih</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jumlah berkas terbaru:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2064,7 +2066,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Nonaktifkan gulir halus dalam mode daftar dan mode ringkas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
@@ -2109,12 +2111,12 @@ hanya jika ada lebih dari satu tab.</translation>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Beralih ke tab yang baru dibuka</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka kembali tab jendela terakhir di jendela baru</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2122,12 +2124,14 @@ hanya jika ada lebih dari satu tab.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Thumbnail internal membuat thumbnail gambar yang didukung oleh Qt.
+
+Biasanya, sebagian besar jenis gambar didukung. Batas ukuran bawaan adalah 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Batas ukuran gambar untuk thumbnail bawaan:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
@@ -2141,22 +2145,24 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Jika ada, thumbnail eksternal digunakan untuk video, dokumen PDF, dll.
+
+Nilai -1 berarti tidak ada batasan untuk ukuran berkas (bawaan).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Batas ukuran berkas untuk thumbnail eksternal:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanpa batasan</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="853"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Contoh:&lt;br&gt;Untuk terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Untuk mengganti pengguna: &lt;i&gt;lxsudo %s&lt;/i&gt; atau &lt;i&gt;lxsudo dbus-run-session -- % s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; adalah baris perintah yang perlu Anda jalankan dengan terminal atau su.&lt;br&gt; Penting: Harap gunakan lxsudo, sudo saja akan merusak izin berkas pengaturan.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="944"/>
@@ -2166,32 +2172,32 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu bookmark:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan menu konteks folder dengan Ctrl + klik kanan</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka folder di tab baru sejauh mungkin</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode jendela tunggal</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>Selalu tampilkan nama asli berkas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Jangan tampilkan tooltip berkas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
@@ -2321,7 +2327,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1077"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak dapat membuka sebagai Admin.</translation>
     </message>
 </context>
 </TS>
