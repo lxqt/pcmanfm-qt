@@ -162,7 +162,7 @@
             <item row="2" column="0" colspan="2">
              <widget class="QCheckBox" name="ctrlRightClick">
               <property name="text">
-               <string>Show folder context menu with Ctrl + right click</string>
+               <string>Show folder context menu with Ctrl+right click</string>
               </property>
              </widget>
             </item>
@@ -899,7 +899,7 @@ A value of -1 means that there is no limit for the file size (the default).</str
             <item>
              <widget class="QCheckBox" name="templateTypeOnce">
               <property name="text">
-               <string>Show only one template for each MIME type</string>
+               <string>Show only one template for each media type</string>
               </property>
              </widget>
             </item>
