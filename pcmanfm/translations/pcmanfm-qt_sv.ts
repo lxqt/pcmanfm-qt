@@ -22,7 +22,8 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
@@ -546,7 +547,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Fokus-sökvägsinmatning</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -672,7 +673,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Senaste F&amp;iler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -892,12 +893,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Efter S&amp;kapningstid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Efter Borttag&amp;ningstid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
@@ -922,7 +923,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="589"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Dolda sist</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
@@ -932,17 +933,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="959"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Gå till Källa för ärvda inställningar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="964"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ta bort inställningar för obefintliga mappar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Rensa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
@@ -1063,7 +1064,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="943"/>
         <location filename="../main-win.ui" line="946"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Skapa programstartare</translation>
+        <translation>Skapa Startare</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
@@ -1159,7 +1160,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Anpassade vyinställningar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="601"/>
@@ -1353,12 +1354,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Kör PCManFM-Qt som en demon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Avsluta PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -1619,7 +1620,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1042"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Skapa programstartare</translation>
+        <translation>Skapa Startare</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1045"/>
@@ -1680,7 +1681,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1974"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Anpassade vyinställningar</translation>
+        <translation>Anpassade vyinställningar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2238"/>
@@ -1864,7 +1865,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Storlek på sidopanelikoner:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
@@ -1924,7 +1925,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="175"/>
         <source>File Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>Filoperationer</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="181"/>
@@ -2007,12 +2008,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Omdöpta filer kommer också att väljas</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Antal senaste filer:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2156,7 +2157,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa mappkontextmeny med Ctrl + högerklick</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
@@ -2176,7 +2177,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa inte filverktygstips</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
@@ -2191,12 +2192,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Montera monteringsbara volymer automatiskt vid programstart</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="767"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Montera borttagbara media automatiskt när de sätts in</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="774"/>
