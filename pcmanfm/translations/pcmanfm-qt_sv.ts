@@ -893,12 +893,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By C&amp;reation Time</source>
-        <translation>Efter S&amp;kapningstid</translation>
+        <translation>Efter s&amp;kapningstid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <source>By Deletio&amp;n Time</source>
-        <translation>Efter Borttag&amp;ningstid</translation>
+        <translation>Efter borttag&amp;ningstid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
@@ -933,7 +933,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="959"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation>&amp;Gå till Källa för ärvda inställningar</translation>
+        <translation>&amp;Gå till källa för ärvda inställningar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="964"/>
@@ -1064,7 +1064,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="943"/>
         <location filename="../main-win.ui" line="946"/>
         <source>Create Launcher</source>
-        <translation>Skapa Startare</translation>
+        <translation>Skapa startare</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
@@ -2157,7 +2157,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation>Visa mappkontextmeny med Ctrl + högerklick</translation>
+        <translation>Visa mappkontextmeny med Ctrl+högerklick</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
