@@ -22,7 +22,8 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
@@ -689,7 +690,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nedávne súbory</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -959,7 +960,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vyčistiť</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
@@ -2035,7 +2036,7 @@ Ak by ste vytvorili priečinky nanovo, riadili by sa súčasnými nastaveniami.<
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet posledných súborov:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2073,7 +2074,7 @@ Ak by ste vytvorili priečinky nanovo, riadili by sa súčasnými nastaveniami.<
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Zakázať plynulé rolovanie v zoznamoch a kompaktných režimoch</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>

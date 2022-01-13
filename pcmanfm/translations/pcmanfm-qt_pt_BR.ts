@@ -22,7 +22,8 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="113"/>
@@ -714,7 +715,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Arquivos R&amp;ecentes</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -920,7 +921,7 @@ clicadas com o botão esquerdo, mesmo quando não for o gerenciador de arquivos 
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Limpar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="639"/>
@@ -2041,7 +2042,7 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Número de arquivos recentes:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
