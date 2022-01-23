@@ -867,7 +867,7 @@
     <string>Bulk Rename</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+F2</string>
+    <string>Shift+F2</string>
    </property>
   </action>
   <action name="actionShowFilter">
