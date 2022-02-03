@@ -146,7 +146,17 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
     }
 }
 
-void View::prepareFolderMenu(Fm::FolderMenu* /*menu*/) {
+void View::prepareFolderMenu(Fm::FolderMenu* menu) {
+    auto folder = folderInfo();
+    if(folder && folder->isNative()) {
+        QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("utilities-terminal")), tr("Open in Termina&l"), menu);
+        connect(action, &QAction::triggered, this, [folder] {
+            Application* app = static_cast<Application*>(qApp);
+            app->openFolderInTerminal(folder->path());
+        });
+        menu->insertAction(menu->createAction(), action);
+        menu->insertSeparator(menu->createAction());
+    }
 }
 
 void View::updateFromSettings(Settings& settings) {
