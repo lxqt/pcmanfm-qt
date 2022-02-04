@@ -21,6 +21,7 @@
 #include "application.h"
 #include "mainwindow.h"
 #include "desktopwindow.h"
+#include "tabpage.h"
 #include <QDBusConnection>
 #include <QDBusInterface>
 #include <QDir>
@@ -48,6 +49,7 @@
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
 #include "desktoppreferencesdialog.h"
+#include <libfm-qt/filepropsdialog.h>
 #include "autorundialog.h"
 #include "launcher.h"
 #include "xdgdir.h"
@@ -58,8 +60,8 @@
 
 namespace PCManFM {
 
-static const char* serviceName = "org.pcmanfm.PCManFM";
-static const char* ifaceName = "org.pcmanfm.Application";
+static const char* serviceName = "org.freedesktop.FileManager1";
+static const char* ifaceName = "org.freedesktop.FileManager1";
 
 int ProxyStyle::styleHint(StyleHint hint, const QStyleOption* option, const QWidget* widget, QStyleHintReturn* returnData) const {
     Application* app = static_cast<Application*>(qApp);
@@ -104,7 +106,7 @@ Application::Application(int& argc, char** argv):
         //desktop()->installEventFilter(this);
 
         new ApplicationAdaptor(this);
-        dbus.registerObject(QStringLiteral("/Application"), this);
+        dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this);
 
         connect(this, &Application::aboutToQuit, this, &Application::onAboutToQuit);
         // aboutToQuit() is not signalled on SIGTERM, install signal handler
@@ -687,6 +689,124 @@ void Application::setWallpaper(QString path, QString modeString) {
             }
             settings_.save(); // save the settings to the config file
         }
+    }
+}
+
+/* This method receives a list of file:// URIs from DBus and for each URI opens
+ * a tab showing its content (it could be in a new window or in the main window
+ * based on the settings).
+ */
+void Application::ShowFolders(const QStringList uriList, const QString startupId __attribute__((unused)))
+{
+    // list that's going to contain the valid paths from uriList
+    QStringList paths;
+
+    // loop in uriList and only if the URI is valid and is a directory
+    // then it gets added to the paths list
+    for(QString u : uriList) {
+        QFileInfo info(QUrl(u).path());
+        if(info.exists() && info.isDir()) {
+            paths.append(info.filePath());
+        }
+    }
+
+    if(paths.isEmpty()) {
+        return;
+    }
+
+    PCManFM::MainWindow *window = MainWindow::lastActive();
+    if(!window || !settings_.singleWindowMode()) {
+        // a new window is created if there's none or if the
+        // setting for single window mode is disabled
+        window = new MainWindow();
+    }
+
+    // for each path we add a new tab
+    for(QString p : paths) {
+        Fm::FilePath path = Fm::FilePath::fromPathStr(p.toStdString().c_str());
+        window->addTab(path);
+    }
+    // if the window is not visible show it and activate it
+    if(!window->isVisible()) {
+        window->show();
+        window->activateWindow();
+    }
+    window->raise();
+}
+
+/* This method receives a list of file:// URIs from DBus and opens a new tab
+ * for each folder, highlighting all listed items within each.
+ */
+void Application::ShowItems(const QStringList uriList, const QString startupId __attribute__((unused)))
+{
+    // map that's going to contain the valid paths and its items to sekect
+    QMap<QString,QStringList> groups;
+
+    // loop in uriList and only if the URI is valid then it gets added to the groups map
+    for(QString u : uriList) {
+        QFileInfo info(QUrl(u).path());
+        QString folder(QDir(info.dir()).absolutePath());
+        if(info.exists()) {
+            if(groups.empty() || !groups.contains(folder))
+                groups[folder] = QStringList();
+            groups[folder].append(info.filePath());
+        }
+    }
+
+    if(groups.isEmpty()) {
+        return;
+    }
+
+    PCManFM::MainWindow *window = MainWindow::lastActive();
+    if(!window || !settings_.singleWindowMode()) {
+        // a new window is created if there's none or if the
+        // setting for single window mode is disabled
+        window = new MainWindow();
+    }
+
+    // for each group we open its path in a new tab and then
+    // the items to select are highlighted
+    for(QString k : groups.keys()) {
+        Fm::FilePath path = Fm::FilePath::fromPathStr(k.toStdString().c_str());
+        window->addTab(path);
+        PCManFM::TabPage *page = window->currentPage();
+        page->setFilesToSelect(groups[k]);
+        page->selectItems();
+    }
+    // if the window is not visible show it and activate it
+    if(!window->isVisible()) {
+        window->show();
+        window->activateWindow();
+    }
+    window->raise();
+}
+
+/* This method receives a list of file:// URIs from DBus and
+ * for each valid URI opens a property dialog showing its information
+ */
+void Application::ShowItemProperties(const QStringList uriList, const QString startupId __attribute__((unused)))
+{
+    // list that's going to contain the valid paths from uriList
+    QStringList paths;
+
+    // loop in uriList and only if the URI is valid and is a directory 
+    // or a file then it gets added to the paths list
+    for(QString u : uriList) {
+        QFileInfo info(QUrl(u).path());
+        if(info.exists()) {
+            paths.append(info.filePath());
+        }
+    }
+
+    // loop in the paths list and open a property dialog for each one
+    for(QString p : paths) {
+        Fm::FilePath filePath(Fm::FilePath::fromPathStr(p.toStdString().c_str()));
+        GFileInfo* gFileInfo = g_file_query_info(filePath.gfile().get(), "*", G_FILE_QUERY_INFO_NONE, NULL, NULL);
+        Fm::GFileInfoPtr gFileInfoPtr(gFileInfo);
+        Fm::FileInfo* fileInfo = new Fm::FileInfo(gFileInfoPtr, filePath);
+        Fm::FileInfoPtr fileInfoPtr(fileInfo);
+        auto dialog = Fm::FilePropsDialog::showForFile(fileInfoPtr);
+        dialog->raise();
     }
 }
 

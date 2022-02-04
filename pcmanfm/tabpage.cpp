@@ -163,6 +163,11 @@ TabPage::TabPage(QWidget* parent):
         transientFilterBar(true);
     }
     connect(filterBar_, &FilterBar::textChanged, this, &TabPage::onFilterStringChanged);
+    
+    connect(this, &TabPage::selectItems, this, [this]() {
+        if(this->folder_->isLoaded())
+            this->onSelectItems();
+    });
 }
 
 TabPage::~TabPage() {
@@ -466,6 +471,11 @@ void TabPage::onFolderFinishLoading() {
     // for performance reasons. Therefore at this point the UI is not up to date.
     // For example, the scrollbar ranges are not updated yet. We solve this by installing an Qt timeout handler.
     QTimer::singleShot(10, this, &TabPage::onUiUpdated);
+    
+    // After finishing loading the folder we check if there's anything to select
+    if(filesToSelect_.length() > 0) {
+        onSelectItems();
+    }
 }
 
 void TabPage::onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity severity, Fm::Job::ErrorAction& response) {
@@ -1076,6 +1086,16 @@ bool TabPage::canOpenAdmin() {
     }
     QMessageBox::critical(parentWidget()->window(), QObject::tr("Error"), QObject::tr("Cannot open as Admin."));
     return false;
+}
+
+void TabPage::onSelectItems() {
+    Fm::FileInfoList filesToSelect;
+    for(QString item : filesToSelect_) {
+        Fm::FilePath itemPath(Fm::FilePath::fromPathStr(item.toStdString().c_str()));
+        Fm::FileInfoPtr fileInfoPtr = proxyModel_->fileInfoFromPath(itemPath);
+        filesToSelect.push_back(std::move(fileInfoPtr));
+    }
+    folderView_->selectFiles(filesToSelect);
 }
 
 } // namespace PCManFM

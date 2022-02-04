@@ -280,6 +280,12 @@ public:
 
     void ceateShortcut();
 
+    void setFilesToSelect(QStringList files) {
+        filesToSelect_ = files;
+    }
+
+    void onSelectItems();
+
 Q_SIGNALS:
     void statusChanged(int type, QString statusText);
     void titleChanged();
@@ -287,6 +293,7 @@ Q_SIGNALS:
     void forwardRequested();
     void backwardRequested();
     void folderUnmounted();
+    void selectItems();
 
 protected:
     virtual bool eventFilter(QObject* watched, QEvent* event);
@@ -332,6 +339,7 @@ private:
     QTimer* selectionTimer_;
     FilterBar* filterBar_;
     QStringList filesToTrust_;
+    QStringList filesToSelect_; // files to select
 };
 
 }

@@ -84,6 +84,9 @@ public:
     void editBookmarks();
     void desktopManager(bool enabled);
     void findFiles(QStringList paths = QStringList());
+    void ShowFolders(QStringList uriList, QString startupId);
+    void ShowItems(QStringList uriList, QString startupId);
+    void ShowItemProperties(QStringList uriList, QString startupId);
     void connectToServer();
 
     bool desktopManagerEnabled() {
