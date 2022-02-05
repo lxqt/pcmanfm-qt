@@ -40,6 +40,7 @@
 #include <sys/socket.h>
 
 #include <libfm-qt/mountoperation.h>
+#include <libfm-qt/filepropsdialog.h>
 #include <libfm-qt/filesearchdialog.h>
 #include <libfm-qt/core/terminal.h>
 #include <libfm-qt/core/bookmarks.h>
@@ -48,7 +49,6 @@
 #include "applicationadaptor.h"
 #include "preferencesdialog.h"
 #include "desktoppreferencesdialog.h"
-#include <libfm-qt/filepropsdialog.h>
 #include "autorundialog.h"
 #include "launcher.h"
 #include "xdgdir.h"
