@@ -695,40 +695,9 @@ void Application::setWallpaper(QString path, QString modeString) {
  * a tab showing its content.
  */
 void Application::ShowFolders(const QStringList uriList, const QString startupId __attribute__((unused))) {
-    // list that's going to contain the valid paths from uriList
-    QStringList paths;
-
-    // loop in uriList and only if the URI is valid and is a directory
-    // then it gets added to the paths list
-    for(QString u : uriList) {
-        QFileInfo info = QUrl(u).path();
-        if(info.exists() && info.isDir()) {
-            paths.append(info.filePath());
-        }
+    if(!uriList.isEmpty()) {
+        launchFiles(QDir::currentPath(), uriList, false, false);
     }
-
-    // if the paths are empty there's nothing to show
-    if(paths.isEmpty())
-        return;
-
-    PCManFM::MainWindow *window = MainWindow::lastActive();
-    if(!window || !settings_.singleWindowMode()) {
-        // a new window is created if there's none or if the
-        // setting for single window mode is disabled
-        window = new MainWindow();
-    }
-
-    // for each path we add a new tab
-    for(QString p : paths) {
-        Fm::FilePath path = Fm::FilePath::fromPathStr(p.toStdString().c_str());
-        window->addTab(path);
-    }
-    // if the window is not visible show it and activate it
-    if(!window->isVisible()) {
-        window->show();
-        window->activateWindow();
-    }
-    window->raise();
 }
 
 /* This method receives a list of file:// URIs from DBus and opens windows
