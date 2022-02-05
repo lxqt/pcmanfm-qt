@@ -21,7 +21,6 @@
 #include "application.h"
 #include "mainwindow.h"
 #include "desktopwindow.h"
-#include "tabpage.h"
 #include <QDBusConnection>
 #include <QDBusInterface>
 #include <QDir>
@@ -693,23 +692,22 @@ void Application::setWallpaper(QString path, QString modeString) {
 }
 
 /* This method receives a list of file:// URIs from DBus and for each URI opens
- * a tab showing its content (it could be in a new window or in the main window
- * based on the settings).
+ * a tab showing its content.
  */
-void Application::ShowFolders(const QStringList uriList, const QString startupId __attribute__((unused)))
-{
+void Application::ShowFolders(const QStringList uriList, const QString startupId __attribute__((unused))) {
     // list that's going to contain the valid paths from uriList
     QStringList paths;
 
     // loop in uriList and only if the URI is valid and is a directory
     // then it gets added to the paths list
     for(QString u : uriList) {
-        QFileInfo info(QUrl(u).path());
+        QFileInfo info = QUrl(u).path();
         if(info.exists() && info.isDir()) {
             paths.append(info.filePath());
         }
     }
 
+    // if the paths are empty there's nothing to show
     if(paths.isEmpty()) {
         return;
     }
@@ -734,18 +732,19 @@ void Application::ShowFolders(const QStringList uriList, const QString startupId
     window->raise();
 }
 
-/* This method receives a list of file:// URIs from DBus and opens a new tab
- * for each folder, highlighting all listed items within each.
+/* This method receives a list of file:// URIs from DBus and opens windows
+ * or tabs for each folder, highlighting all listed items within each. The
+ * input list is not sorted or grouped so we need to marshal it into groups
+ * by folder, then call our "reveal" method to show each group
  */
-void Application::ShowItems(const QStringList uriList, const QString startupId __attribute__((unused)))
-{
-    // map that's going to contain the valid paths and its items to sekect
+void Application::ShowItems(const QStringList uriList, const QString startupId __attribute__((unused))) {
+    // map that's going to contain the valid paths and its items to select
     QMap<QString,QStringList> groups;
 
     // loop in uriList and only if the URI is valid then it gets added to the groups map
     for(QString u : uriList) {
-        QFileInfo info(QUrl(u).path());
-        QString folder(QDir(info.dir()).absolutePath());
+        QFileInfo info = QUrl(u).path();
+        QString folder = QDir(info.dir()).absolutePath();
         if(info.exists()) {
             if(groups.empty() || !groups.contains(folder))
                 groups[folder] = QStringList();
@@ -753,6 +752,7 @@ void Application::ShowItems(const QStringList uriList, const QString startupId _
         }
     }
 
+    // if the map is empty there's nothing to show
     if(groups.isEmpty()) {
         return;
     }
@@ -764,14 +764,11 @@ void Application::ShowItems(const QStringList uriList, const QString startupId _
         window = new MainWindow();
     }
 
-    // for each group we open its path in a new tab and then
-    // the items to select are highlighted
+    // for each group we call the method on the window to
+    // open each key on a new tab and then its items to
+    // select are highlighted
     for(QString k : groups.keys()) {
-        Fm::FilePath path = Fm::FilePath::fromPathStr(k.toStdString().c_str());
-        window->addTab(path);
-        PCManFM::TabPage *page = window->currentPage();
-        page->setFilesToSelect(groups[k]);
-        page->selectItems();
+        window->openFolderAndSelectItems(k, groups[k]);
     }
     // if the window is not visible show it and activate it
     if(!window->isVisible()) {
@@ -784,8 +781,7 @@ void Application::ShowItems(const QStringList uriList, const QString startupId _
 /* This method receives a list of file:// URIs from DBus and
  * for each valid URI opens a property dialog showing its information
  */
-void Application::ShowItemProperties(const QStringList uriList, const QString startupId __attribute__((unused)))
-{
+void Application::ShowItemProperties(const QStringList uriList, const QString startupId __attribute__((unused))) {
     // list that's going to contain the valid paths from uriList
     QStringList paths;
 
@@ -800,12 +796,12 @@ void Application::ShowItemProperties(const QStringList uriList, const QString st
 
     // loop in the paths list and open a property dialog for each one
     for(QString p : paths) {
-        Fm::FilePath filePath(Fm::FilePath::fromPathStr(p.toStdString().c_str()));
+        Fm::FilePath filePath = Fm::FilePath::fromPathStr(p.toStdString().c_str());
         GFileInfo* gFileInfo = g_file_query_info(filePath.gfile().get(), "*", G_FILE_QUERY_INFO_NONE, NULL, NULL);
-        Fm::GFileInfoPtr gFileInfoPtr(gFileInfo);
+        Fm::GFileInfoPtr gFileInfoPtr = Fm::GFileInfoPtr(gFileInfo);
         Fm::FileInfo* fileInfo = new Fm::FileInfo(gFileInfoPtr, filePath);
-        Fm::FileInfoPtr fileInfoPtr(fileInfo);
-        auto dialog = Fm::FilePropsDialog::showForFile(fileInfoPtr);
+        Fm::FileInfoPtr fileInfoPtr = Fm::FileInfoPtr(fileInfo);
+        Fm::FilePropsDialog* dialog = Fm::FilePropsDialog::showForFile(fileInfoPtr);
         dialog->raise();
     }
 }

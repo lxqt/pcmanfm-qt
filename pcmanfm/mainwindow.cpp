@@ -2355,4 +2355,11 @@ void MainWindow::on_actionCleanPerFolderConfig_triggered() {
     }
 }
 
+void MainWindow::openFolderAndSelectItems(QString folder, QStringList items) {
+    Fm::FilePath path = Fm::FilePath::fromPathStr(folder.toStdString().c_str());
+    TabPage* newPage = new TabPage(this);
+    addTabWithPage(newPage, activeViewFrame_, path);
+    newPage->setFilesToSelect(items);
+}
+
 }

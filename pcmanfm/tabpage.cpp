@@ -163,11 +163,6 @@ TabPage::TabPage(QWidget* parent):
         transientFilterBar(true);
     }
     connect(filterBar_, &FilterBar::textChanged, this, &TabPage::onFilterStringChanged);
-    
-    connect(this, &TabPage::selectItems, this, [this]() {
-        if(this->folder_->isLoaded())
-            this->onSelectItems();
-    });
 }
 
 TabPage::~TabPage() {
@@ -470,12 +465,12 @@ void TabPage::onFolderFinishLoading() {
     // After finishing loading the folder, the model is updated, but Qt delays the UI update
     // for performance reasons. Therefore at this point the UI is not up to date.
     // For example, the scrollbar ranges are not updated yet. We solve this by installing an Qt timeout handler.
-    QTimer::singleShot(10, this, &TabPage::onUiUpdated);
-    
-    // After finishing loading the folder we check if there's anything to select
-    if(filesToSelect_.length() > 0) {
-        onSelectItems();
-    }
+    QTimer::singleShot(10, this, [this] {
+        onUiUpdated();
+        // When the UI is fully loaded if there are files to select we select them
+        if(!filesToSelect_.isEmpty())
+            onSelectItems();
+    });
 }
 
 void TabPage::onFolderError(const Fm::GErrorPtr& err, Fm::Job::ErrorSeverity severity, Fm::Job::ErrorAction& response) {
@@ -1091,11 +1086,12 @@ bool TabPage::canOpenAdmin() {
 void TabPage::onSelectItems() {
     Fm::FileInfoList filesToSelect;
     for(QString item : filesToSelect_) {
-        Fm::FilePath itemPath(Fm::FilePath::fromPathStr(item.toStdString().c_str()));
-        Fm::FileInfoPtr fileInfoPtr = proxyModel_->fileInfoFromPath(itemPath);
+        Fm::FilePath path = Fm::FilePath::fromPathStr(item.toStdString().c_str());
+        Fm::FileInfoPtr fileInfoPtr = proxyModel_->fileInfoFromPath(path);
         filesToSelect.push_back(std::move(fileInfoPtr));
     }
     folderView_->selectFiles(filesToSelect);
+    filesToSelect_.clear();
 }
 
 } // namespace PCManFM

@@ -284,8 +284,6 @@ public:
         filesToSelect_ = files;
     }
 
-    void onSelectItems();
-
 Q_SIGNALS:
     void statusChanged(int type, QString statusText);
     void titleChanged();
@@ -293,7 +291,6 @@ Q_SIGNALS:
     void forwardRequested();
     void backwardRequested();
     void folderUnmounted();
-    void selectItems();
 
 protected:
     virtual bool eventFilter(QObject* watched, QEvent* event);
@@ -322,6 +319,7 @@ private:
     void onFolderContentChanged();
 
     bool canOpenAdmin();
+    void onSelectItems();
 
 private:
     View* folderView_;
