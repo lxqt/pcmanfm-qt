@@ -738,10 +738,9 @@ void Application::ShowItems(const QStringList uriList, const QString startupId _
         window->openFolderAndSelectItems(k, groups[k]);
 
     // if the window is not visible show it and activate it
-    if(!window->isVisible()) {
+    if(!window->isVisible())
         window->show();
-        window->activateWindow();
-    }
+    window->activateWindow();
     window->raise();
 }
 
@@ -769,6 +768,7 @@ void Application::ShowItemProperties(const QStringList uriList, const QString st
         Fm::FileInfo* fileInfo = new Fm::FileInfo(gFileInfoPtr, filePath);
         Fm::FileInfoPtr fileInfoPtr = Fm::FileInfoPtr(fileInfo);
         Fm::FilePropsDialog* dialog = Fm::FilePropsDialog::showForFile(fileInfoPtr);
+        dialog->activateWindow();
         dialog->raise();
     }
 }

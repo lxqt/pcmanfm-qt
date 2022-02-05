@@ -327,7 +327,7 @@ void TabPage::onFolderStartLoading() {
 }
 
 void TabPage::onUiUpdated() {
-    bool scrolled = false;
+    bool scrolled = !filesToSelect_.empty();
     // if the current folder is the parent folder of the last browsed folder,
     // select the folder item in current view.
     if(lastFolderPath_ && lastFolderPath_.parent() == path()) {
