@@ -708,9 +708,8 @@ void Application::ShowFolders(const QStringList uriList, const QString startupId
     }
 
     // if the paths are empty there's nothing to show
-    if(paths.isEmpty()) {
+    if(paths.isEmpty())
         return;
-    }
 
     PCManFM::MainWindow *window = MainWindow::lastActive();
     if(!window || !settings_.singleWindowMode()) {
@@ -753,9 +752,8 @@ void Application::ShowItems(const QStringList uriList, const QString startupId _
     }
 
     // if the map is empty there's nothing to show
-    if(groups.isEmpty()) {
+    if(groups.isEmpty())
         return;
-    }
 
     PCManFM::MainWindow *window = MainWindow::lastActive();
     if(!window || !settings_.singleWindowMode()) {
@@ -767,9 +765,9 @@ void Application::ShowItems(const QStringList uriList, const QString startupId _
     // for each group we call the method on the window to
     // open each key on a new tab and then its items to
     // select are highlighted
-    for(QString k : groups.keys()) {
+    for(QString k : groups.keys())
         window->openFolderAndSelectItems(k, groups[k]);
-    }
+
     // if the window is not visible show it and activate it
     if(!window->isVisible()) {
         window->show();
