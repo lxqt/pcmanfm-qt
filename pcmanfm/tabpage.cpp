@@ -1091,18 +1091,14 @@ void TabPage::onSelectItems() {
         filesToSelect.push_back(std::move(fileInfoPtr));
     }
     folderView_->selectFiles(filesToSelect);
-    // workaround to scroll and select the first item when tehre's multile files to select
+    // workaround to scroll and select the first item when there's multile files to select
     if(filesToSelect_.count() > 1) {
         Fm::FilePath path = Fm::FilePath::fromPathStr(filesToSelect_[0].toStdString().c_str()); // path of first item
-        QModelIndex index;
-        for(int row = 0; row < proxyModel_->rowCount(); row++) {
-            index = proxyModel_->index(row, 0);
-            auto info = proxyModel_->fileInfoFromIndex(index);
-            if(info.get()->path() == path)
-                break;
+        QModelIndex index = proxyModel_->indexFromPath(path);
+        if(index.isValid()) {
+            folderView_->childView()->scrollTo(index, QAbstractItemView::EnsureVisible);
+            folderView_->selectionModel()->setCurrentIndex(index, QItemSelectionModel::Current);
         }
-        folderView_->childView()->scrollTo(index, QAbstractItemView::EnsureVisible);
-        folderView_->selectionModel()->setCurrentIndex(index, QItemSelectionModel::Current);
     }
     filesToSelect_.clear();
 }
