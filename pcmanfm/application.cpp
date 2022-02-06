@@ -272,7 +272,7 @@ bool Application::parseCommandLineArgs() {
     }
     else {
         QDBusConnection dbus = QDBusConnection::sessionBus();
-        QDBusInterface iface(QLatin1String(serviceName), QStringLiteral("/Application"), QLatin1String(ifaceName), dbus, this);
+        QDBusInterface iface(QLatin1String(serviceName), QStringLiteral("/org/freedesktop/FileManager1"), QLatin1String(ifaceName), dbus, this);
         if(parser.isSet(quitOption)) {
             iface.call(QStringLiteral("quit"));
             return false;
