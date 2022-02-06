@@ -146,7 +146,7 @@ MainWindow::MainWindow(Fm::FilePath path):
         ui.verticalLayout->setStretch(0, 1);
     }
 
-    splitView_ = settings.splitView();
+    splitView_ = path && settings.splitView(); // splt view needs a path
 
     // hide menu items that are not usable
     //if(!uriExists("computer:///"))
