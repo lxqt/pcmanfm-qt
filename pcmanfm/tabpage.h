@@ -280,8 +280,9 @@ public:
 
     void ceateShortcut();
 
-    void setFilesToSelect(QStringList files) {
+    void setFilesToSelect(const QStringList& files) {
         filesToSelect_ = files;
+        filesToSelect_.removeDuplicates();
     }
 
 Q_SIGNALS:
