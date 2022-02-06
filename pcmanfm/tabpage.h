@@ -319,7 +319,6 @@ private:
     void onFolderContentChanged();
 
     bool canOpenAdmin();
-    void onSelectItems();
 
 private:
     View* folderView_;

@@ -327,7 +327,25 @@ void TabPage::onFolderStartLoading() {
 }
 
 void TabPage::onUiUpdated() {
-    bool scrolled = !filesToSelect_.empty();
+    bool scrolled = false;
+    // if there are files to select, select them
+    if(!filesToSelect_.isEmpty()) {
+        Fm::FileInfoList filesToSelect;
+        for(const auto& file : filesToSelect_) {
+            Fm::FilePath path = Fm::FilePath::fromPathStr(file.toStdString().c_str());
+            if(auto info = proxyModel_->fileInfoFromPath(path)) {
+                filesToSelect.push_back(proxyModel_->fileInfoFromPath(path));
+            }
+        }
+        filesToSelect_.clear();
+        if(folderView_->selectFiles(filesToSelect)) {
+            scrolled = true; // scrolling is done by FolderView::selectFiles()
+            QModelIndexList indexes = folderView_->selectionModel()->selectedIndexes();
+            if(!indexes.isEmpty()) {
+                folderView_->selectionModel()->setCurrentIndex(indexes.first(), QItemSelectionModel::NoUpdate);
+            }
+        }
+    }
     // if the current folder is the parent folder of the last browsed folder,
     // select the folder item in current view.
     if(lastFolderPath_ && lastFolderPath_.parent() == path()) {
@@ -369,9 +387,6 @@ void TabPage::onUiUpdated() {
             }
         });
     }
-    // When the UI is fully loaded if there are files to select we select them
-    if(!filesToSelect_.isEmpty())
-        onSelectItems();
 }
 
 void TabPage::onFileSizeChanged(const QModelIndex& index) {
@@ -1079,26 +1094,6 @@ bool TabPage::canOpenAdmin() {
     }
     QMessageBox::critical(parentWidget()->window(), QObject::tr("Error"), QObject::tr("Cannot open as Admin."));
     return false;
-}
-
-void TabPage::onSelectItems() {
-    Fm::FileInfoList filesToSelect;
-    for(QString item : filesToSelect_) {
-        Fm::FilePath path = Fm::FilePath::fromPathStr(item.toStdString().c_str());
-        Fm::FileInfoPtr fileInfoPtr = proxyModel_->fileInfoFromPath(path);
-        filesToSelect.push_back(std::move(fileInfoPtr));
-    }
-    folderView_->selectFiles(filesToSelect);
-    // workaround to scroll and select the first item when there's multile files to select
-    if(filesToSelect_.count() > 1) {
-        Fm::FilePath path = Fm::FilePath::fromPathStr(filesToSelect_[0].toStdString().c_str()); // path of first item
-        QModelIndex index = proxyModel_->indexFromPath(path);
-        if(index.isValid()) {
-            folderView_->childView()->scrollTo(index, QAbstractItemView::EnsureVisible);
-            folderView_->selectionModel()->setCurrentIndex(index, QItemSelectionModel::Current);
-        }
-    }
-    filesToSelect_.clear();
 }
 
 } // namespace PCManFM

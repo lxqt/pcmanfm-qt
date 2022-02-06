@@ -709,47 +709,51 @@ void Application::ShowFolders(const QStringList uriList, const QString startupId
 }
 
 /* This method receives a list of file:// URIs from DBus and opens windows
- * or tabs for each folder, highlighting all listed items within each. The
- * input list is not sorted or grouped so we need to marshal it into groups
- * by folder, then call our "reveal" method to show each group
+ * or tabs for each folder, highlighting all listed items within each.
  */
 void Application::ShowItems(const QStringList uriList, const QString startupId __attribute__((unused))) {
-    // map that's going to contain the valid paths and its items to select
     QMap<QString,QStringList> groups;
-
-    // loop in uriList and only if the URI is valid then it gets added to the groups map
-    for(QString u : uriList) {
-        QFileInfo info = QUrl(u).path();
-        QString folder = QDir(info.dir()).absolutePath();
-        if(info.exists()) {
-            if(groups.empty() || !groups.contains(folder))
+    QStringList keys;
+    for(const auto& u : uriList) {
+        QString folder = u.section(QLatin1Char('/'), 0, -2);
+        if(!folder.isEmpty()) {
+            if(!keys.contains(folder)) {
                 groups[folder] = QStringList();
-            groups[folder].append(info.filePath());
+                keys << folder; // keep the original order (QMap is sorted by key)
+            }
+            groups[folder].append(u);
         }
     }
 
-    // if the map is empty there's nothing to show
-    if(groups.isEmpty())
+    if(groups.isEmpty()) {
         return;
+    }
 
-    PCManFM::MainWindow *window = MainWindow::lastActive();
-    if(!window || !settings_.singleWindowMode()) {
-        // a new window is created if there's none or if the
-        // setting for single window mode is disabled
+    PCManFM::MainWindow* window = nullptr;
+    if(settings_.singleWindowMode()) {
+        window = MainWindow::lastActive();
+        if(window == nullptr) {
+            QWidgetList windows = topLevelWidgets();
+            for(int i = 0; i < windows.size(); ++i) {
+                auto win = windows.at(windows.size() - 1 - i);
+                if(win->inherits("PCManFM::MainWindow")) {
+                    window = static_cast<MainWindow*>(win);
+                    break;
+                }
+            }
+        }
+    }
+    if(window == nullptr) {
         window = new MainWindow();
     }
 
-    // for each group we call the method on the window to
-    // open each key on a new tab and then its items to
-    // select are highlighted
-    for(QString k : groups.keys())
+    for(const auto& k : qAsConst(keys)) {
         window->openFolderAndSelectItems(k, groups[k]);
+    }
 
-    // if the window is not visible show it and activate it
-    if(!window->isVisible())
-        window->show();
-    window->activateWindow();
+    window->show();
     window->raise();
+    window->activateWindow();
 }
 
 /* This method receives a list of file:// URIs from DBus and
