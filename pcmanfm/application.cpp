@@ -47,6 +47,7 @@
 #include <libfm-qt/core/folderconfig.h>
 
 #include "applicationadaptor.h"
+#include "applicationadaptorfreedesktopfilemanager.h"
 #include "preferencesdialog.h"
 #include "desktoppreferencesdialog.h"
 #include "autorundialog.h"
@@ -59,8 +60,8 @@
 
 namespace PCManFM {
 
-static const char* serviceName = "org.freedesktop.FileManager1";
-static const char* ifaceName = "org.freedesktop.FileManager1";
+static const char* serviceName = "org.pcmanfm.PCManFM";
+static const char* ifaceName = "org.pcmanfm.Application";
 
 int ProxyStyle::styleHint(StyleHint hint, const QStyleOption* option, const QWidget* widget, QStyleHintReturn* returnData) const {
     Application* app = static_cast<Application*>(qApp);
@@ -105,7 +106,7 @@ Application::Application(int& argc, char** argv):
         //desktop()->installEventFilter(this);
 
         new ApplicationAdaptor(this);
-        dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this);
+        dbus.registerObject(QStringLiteral("/Application"), this);
 
         connect(this, &Application::aboutToQuit, this, &Application::onAboutToQuit);
         // aboutToQuit() is not signalled on SIGTERM, install signal handler
@@ -130,6 +131,13 @@ Application::Application(int& argc, char** argv):
         // an service of the same name is already registered.
         // we're not the first instance
         isPrimaryInstance = false;
+    }
+    // we try to register the service org.freedesktop.FileManager1
+    // if it fails is because there's another file manager with that
+    // service registered already
+    if(dbus.registerService(QLatin1String("org.freedesktop.FileManager1"))) {
+        new ApplicationAdaptorFreeDesktopFileManager(this);
+        dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this);
     }
 }
 
@@ -272,7 +280,7 @@ bool Application::parseCommandLineArgs() {
     }
     else {
         QDBusConnection dbus = QDBusConnection::sessionBus();
-        QDBusInterface iface(QLatin1String(serviceName), QStringLiteral("/org/freedesktop/FileManager1"), QLatin1String(ifaceName), dbus, this);
+        QDBusInterface iface(QLatin1String(serviceName), QStringLiteral("/Application"), QLatin1String(ifaceName), dbus, this);
         if(parser.isSet(quitOption)) {
             iface.call(QStringLiteral("quit"));
             return false;
