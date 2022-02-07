@@ -133,6 +133,7 @@ protected:
 
 private Q_SLOTS:
     void onUserDirsChanged();
+    void onPropJobFinished();
 
 private:
     void initWatch();

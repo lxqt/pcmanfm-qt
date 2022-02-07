@@ -45,6 +45,7 @@
 #include <libfm-qt/core/terminal.h>
 #include <libfm-qt/core/bookmarks.h>
 #include <libfm-qt/core/folderconfig.h>
+#include <libfm-qt/core/fileinfojob.h>
 
 #include "applicationadaptor.h"
 #include "applicationadaptorfreedesktopfilemanager.h"
@@ -760,28 +761,29 @@ void Application::ShowItems(const QStringList uriList, const QString startupId _
  * for each valid URI opens a property dialog showing its information
  */
 void Application::ShowItemProperties(const QStringList uriList, const QString startupId __attribute__((unused))) {
-    // list that's going to contain the valid paths from uriList
-    QStringList paths;
-
-    // loop in uriList and only if the URI is valid and is a directory 
-    // or a file then it gets added to the paths list
-    for(QString u : uriList) {
-        QFileInfo info(QUrl(u).path());
-        if(info.exists()) {
-            paths.append(info.filePath());
+    // FIXME: Should we add "Fm::FilePropsDialog::showForPath()" to libfm-qt, instead of doing this?
+    Fm::FilePathList paths;
+    for(const auto& u : uriList) {
+        Fm::FilePath path = Fm::FilePath::fromPathStr(u.toStdString().c_str());
+        if(path) {
+            paths.push_back(std::move(path));
         }
     }
+    if(paths.empty()) {
+        return;
+    }
+    auto job = new Fm::FileInfoJob{std::move(paths)};
+    job->setAutoDelete(true);
+    connect(job, &Fm::FileInfoJob::finished, this, &Application::onPropJobFinished, Qt::BlockingQueuedConnection);
+    job->runAsync();
+}
 
-    // loop in the paths list and open a property dialog for each one
-    for(QString p : paths) {
-        Fm::FilePath filePath = Fm::FilePath::fromPathStr(p.toStdString().c_str());
-        GFileInfo* gFileInfo = g_file_query_info(filePath.gfile().get(), "*", G_FILE_QUERY_INFO_NONE, NULL, NULL);
-        Fm::GFileInfoPtr gFileInfoPtr = Fm::GFileInfoPtr(gFileInfo);
-        Fm::FileInfo* fileInfo = new Fm::FileInfo(gFileInfoPtr, filePath);
-        Fm::FileInfoPtr fileInfoPtr = Fm::FileInfoPtr(fileInfo);
-        Fm::FilePropsDialog* dialog = Fm::FilePropsDialog::showForFile(fileInfoPtr);
-        dialog->activateWindow();
+void Application::onPropJobFinished() {
+    auto job = static_cast<Fm::FileInfoJob*>(sender());
+    for(auto file: job->files()) {
+        auto dialog = Fm::FilePropsDialog::showForFile(std::move(file));
         dialog->raise();
+        dialog->activateWindow();
     }
 }
 
