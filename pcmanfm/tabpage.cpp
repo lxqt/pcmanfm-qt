@@ -328,9 +328,27 @@ void TabPage::onFolderStartLoading() {
 
 void TabPage::onUiUpdated() {
     bool scrolled = false;
+    // if there are files to select, select them
+    if(!filesToSelect_.isEmpty()) {
+        Fm::FileInfoList filesToSelect;
+        for(const auto& file : filesToSelect_) {
+            Fm::FilePath path = Fm::FilePath::fromPathStr(file.toStdString().c_str());
+            if(auto info = proxyModel_->fileInfoFromPath(path)) {
+                filesToSelect.push_back(proxyModel_->fileInfoFromPath(path));
+            }
+        }
+        filesToSelect_.clear();
+        if(folderView_->selectFiles(filesToSelect)) {
+            scrolled = true; // scrolling is done by FolderView::selectFiles()
+            QModelIndexList indexes = folderView_->selectionModel()->selectedIndexes();
+            if(!indexes.isEmpty()) {
+                folderView_->selectionModel()->setCurrentIndex(indexes.first(), QItemSelectionModel::NoUpdate);
+            }
+        }
+    }
     // if the current folder is the parent folder of the last browsed folder,
     // select the folder item in current view.
-    if(lastFolderPath_ && lastFolderPath_.parent() == path()) {
+    if(!scrolled && lastFolderPath_ && lastFolderPath_.parent() == path()) {
         QModelIndex index = folderView_->indexFromFolderPath(lastFolderPath_);
         if(index.isValid()) {
             folderView_->childView()->scrollTo(index, QAbstractItemView::EnsureVisible);

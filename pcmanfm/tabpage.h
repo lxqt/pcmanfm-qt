@@ -280,6 +280,11 @@ public:
 
     void ceateShortcut();
 
+    void setFilesToSelect(const QStringList& files) {
+        filesToSelect_ = files;
+        filesToSelect_.removeDuplicates();
+    }
+
 Q_SIGNALS:
     void statusChanged(int type, QString statusText);
     void titleChanged();
@@ -332,6 +337,7 @@ private:
     QTimer* selectionTimer_;
     FilterBar* filterBar_;
     QStringList filesToTrust_;
+    QStringList filesToSelect_; // files to select
 };
 
 }

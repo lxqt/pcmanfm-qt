@@ -40,12 +40,15 @@
 #include <sys/socket.h>
 
 #include <libfm-qt/mountoperation.h>
+#include <libfm-qt/filepropsdialog.h>
 #include <libfm-qt/filesearchdialog.h>
 #include <libfm-qt/core/terminal.h>
 #include <libfm-qt/core/bookmarks.h>
 #include <libfm-qt/core/folderconfig.h>
+#include <libfm-qt/core/fileinfojob.h>
 
 #include "applicationadaptor.h"
+#include "applicationadaptorfreedesktopfilemanager.h"
 #include "preferencesdialog.h"
 #include "desktoppreferencesdialog.h"
 #include "autorundialog.h"
@@ -129,6 +132,13 @@ Application::Application(int& argc, char** argv):
         // an service of the same name is already registered.
         // we're not the first instance
         isPrimaryInstance = false;
+    }
+    // we try to register the service org.freedesktop.FileManager1
+    // if it fails is because there's another file manager with that
+    // service registered already
+    if(dbus.registerService(QLatin1String("org.freedesktop.FileManager1"))) {
+        new ApplicationAdaptorFreeDesktopFileManager(this);
+        dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this);
     }
 }
 
@@ -687,6 +697,93 @@ void Application::setWallpaper(QString path, QString modeString) {
             }
             settings_.save(); // save the settings to the config file
         }
+    }
+}
+
+/* This method receives a list of file:// URIs from DBus and for each URI opens
+ * a tab showing its content.
+ */
+void Application::ShowFolders(const QStringList uriList, const QString startupId __attribute__((unused))) {
+    if(!uriList.isEmpty()) {
+        launchFiles(QDir::currentPath(), uriList, false, false);
+    }
+}
+
+/* This method receives a list of file:// URIs from DBus and opens windows
+ * or tabs for each folder, highlighting all listed items within each.
+ */
+void Application::ShowItems(const QStringList uriList, const QString startupId __attribute__((unused))) {
+    QMap<QString,QStringList> groups;
+    QStringList keys;
+    for(const auto& u : uriList) {
+        QString folder = u.section(QLatin1Char('/'), 0, -2);
+        if(!folder.isEmpty()) {
+            if(!keys.contains(folder)) {
+                groups[folder] = QStringList();
+                keys << folder; // keep the original order (QMap is sorted by key)
+            }
+            groups[folder].append(u);
+        }
+    }
+
+    if(groups.isEmpty()) {
+        return;
+    }
+
+    PCManFM::MainWindow* window = nullptr;
+    if(settings_.singleWindowMode()) {
+        window = MainWindow::lastActive();
+        if(window == nullptr) {
+            QWidgetList windows = topLevelWidgets();
+            for(int i = 0; i < windows.size(); ++i) {
+                auto win = windows.at(windows.size() - 1 - i);
+                if(win->inherits("PCManFM::MainWindow")) {
+                    window = static_cast<MainWindow*>(win);
+                    break;
+                }
+            }
+        }
+    }
+    if(window == nullptr) {
+        window = new MainWindow();
+    }
+
+    for(const auto& k : qAsConst(keys)) {
+        window->openFolderAndSelectItems(k, groups[k]);
+    }
+
+    window->show();
+    window->raise();
+    window->activateWindow();
+}
+
+/* This method receives a list of file:// URIs from DBus and
+ * for each valid URI opens a property dialog showing its information
+ */
+void Application::ShowItemProperties(const QStringList uriList, const QString startupId __attribute__((unused))) {
+    // FIXME: Should we add "Fm::FilePropsDialog::showForPath()" to libfm-qt, instead of doing this?
+    Fm::FilePathList paths;
+    for(const auto& u : uriList) {
+        Fm::FilePath path = Fm::FilePath::fromPathStr(u.toStdString().c_str());
+        if(path) {
+            paths.push_back(std::move(path));
+        }
+    }
+    if(paths.empty()) {
+        return;
+    }
+    auto job = new Fm::FileInfoJob{std::move(paths)};
+    job->setAutoDelete(true);
+    connect(job, &Fm::FileInfoJob::finished, this, &Application::onPropJobFinished, Qt::BlockingQueuedConnection);
+    job->runAsync();
+}
+
+void Application::onPropJobFinished() {
+    auto job = static_cast<Fm::FileInfoJob*>(sender());
+    for(auto file: job->files()) {
+        auto dialog = Fm::FilePropsDialog::showForFile(std::move(file));
+        dialog->raise();
+        dialog->activateWindow();
     }
 }
 

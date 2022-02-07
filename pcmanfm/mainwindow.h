@@ -102,6 +102,8 @@ public:
         return lastActive_;
     }
 
+    void openFolderAndSelectItems(const QString& folder, const QStringList& items);
+
 protected Q_SLOTS:
 
     void onPathEntryReturnPressed();

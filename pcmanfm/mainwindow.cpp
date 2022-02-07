@@ -146,7 +146,7 @@ MainWindow::MainWindow(Fm::FilePath path):
         ui.verticalLayout->setStretch(0, 1);
     }
 
-    splitView_ = settings.splitView();
+    splitView_ = path && settings.splitView(); // splt view needs a path
 
     // hide menu items that are not usable
     //if(!uriExists("computer:///"))
@@ -2353,6 +2353,13 @@ void MainWindow::on_actionCleanPerFolderConfig_triggered() {
         Application* app = static_cast<Application*>(qApp);
         app->cleanPerFolderConfig();
     }
+}
+
+void MainWindow::openFolderAndSelectItems(const QString& folder, const QStringList& items) {
+    Fm::FilePath path = Fm::FilePath::fromPathStr(folder.toStdString().c_str());
+    TabPage* newPage = new TabPage(this);
+    addTabWithPage(newPage, activeViewFrame_, path);
+    newPage->setFilesToSelect(items);
 }
 
 }
