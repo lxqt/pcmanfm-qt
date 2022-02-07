@@ -331,7 +331,7 @@ void DesktopPreferencesDialog::onBrowseDesktopFolderClicked()
   }
 }
 
-void DesktopPreferencesDialog::selectPage(QString name) {
+void DesktopPreferencesDialog::selectPage(const QString& name) {
   QWidget* page = findChild<QWidget*>(name + QStringLiteral("Page"));
   if(page)
     ui.tabWidget->setCurrentWidget(page);

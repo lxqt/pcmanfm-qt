@@ -37,7 +37,7 @@ public:
 
   virtual void accept();
 
-  void selectPage(QString name);
+  void selectPage(const QString& name);
 
   // Should only be used one time.
   void setEditDesktopFolder(const bool enabled);
