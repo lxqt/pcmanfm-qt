@@ -22,6 +22,7 @@
 #include "mainwindow.h"
 #include "desktopwindow.h"
 #include <QDBusConnection>
+#include <QDBusConnectionInterface>
 #include <QDBusInterface>
 #include <QDir>
 #include <QVector>
@@ -128,12 +129,21 @@ Application::Application(int& argc, char** argv):
             lxqtSessionIface = nullptr;
         }
 
+
         // We also try to register the service "org.freedesktop.FileManager1".
-        // If that fails, another file manager has already registered it.
-        if(dbus.registerService(QLatin1String("org.freedesktop.FileManager1"))) {
-            new ApplicationAdaptorFreeDesktopFileManager(this);
-            dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this);
-        }
+        // We allow queuing of our request for case another file manager has already registered it.
+        static const QString fileManagerService = QStringLiteral("org.freedesktop.FileManager1");
+        connect(dbus.interface(), &QDBusConnectionInterface::serviceRegistered, this, [this](const QString& service) {
+                if (fileManagerService == service)
+                {
+                    QDBusConnection dbus = QDBusConnection::sessionBus();
+                    disconnect(dbus.interface(), &QDBusConnectionInterface::serviceRegistered, this, nullptr);
+                    new ApplicationAdaptorFreeDesktopFileManager(this);
+                    if (!dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this))
+                        qDebug() << "Can't register /org/freedesktop/FileManager1:" << dbus.lastError().message();
+                }
+        });
+        dbus.interface()->registerService(fileManagerService, QDBusConnectionInterface::QueueService);
     }
     else {
         // an service of the same name is already registered.
