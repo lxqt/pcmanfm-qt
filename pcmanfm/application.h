@@ -50,7 +50,7 @@ class ProxyStyle: public QProxyStyle {
 public:
     ProxyStyle() : QProxyStyle() {}
     virtual ~ProxyStyle() {}
-    virtual int styleHint(StyleHint hint, const QStyleOption* option = 0, const QWidget* widget = 0, QStyleHintReturn* returnData = 0) const;
+    virtual int styleHint(StyleHint hint, const QStyleOption* option = nullptr, const QWidget* widget = nullptr, QStyleHintReturn* returnData = nullptr) const;
 };
 
 class Application : public QApplication {
