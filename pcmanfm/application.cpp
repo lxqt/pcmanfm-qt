@@ -127,18 +127,18 @@ Application::Application(int& argc, char** argv):
             delete lxqtSessionIface;
             lxqtSessionIface = nullptr;
         }
+
+        // We also try to register the service "org.freedesktop.FileManager1".
+        // If that fails, another file manager has already registered it.
+        if(dbus.registerService(QLatin1String("org.freedesktop.FileManager1"))) {
+            new ApplicationAdaptorFreeDesktopFileManager(this);
+            dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this);
+        }
     }
     else {
         // an service of the same name is already registered.
         // we're not the first instance
         isPrimaryInstance = false;
-    }
-    // we try to register the service org.freedesktop.FileManager1
-    // if it fails is because there's another file manager with that
-    // service registered already
-    if(dbus.registerService(QLatin1String("org.freedesktop.FileManager1"))) {
-        new ApplicationAdaptorFreeDesktopFileManager(this);
-        dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this);
     }
 }
 
@@ -490,7 +490,7 @@ void Application::desktopManager(bool enabled) {
     enableDesktopManager_ = enabled;
 }
 
-void Application::desktopPrefrences(QString page) {
+void Application::desktopPrefrences(const QString& page) {
     // show desktop preference window
     if(!desktopPreferencesDialog_) {
         desktopPreferencesDialog_ = new DesktopPreferencesDialog();
@@ -552,19 +552,20 @@ void Application::connectToServer() {
     dlg->show();
 }
 
-void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow, bool reopenLastTabs) {
+void Application::launchFiles(const QString& cwd, const QStringList& paths, bool inNewWindow, bool reopenLastTabs) {
     Fm::FilePathList pathList;
     Fm::FilePath cwd_path;
+    auto _paths = paths;
 
     reopenLastTabs = reopenLastTabs && settings_.reopenLastTabs() && !settings_.tabPaths().isEmpty();
     if(reopenLastTabs) {
-        paths = settings_.tabPaths();
-        paths.removeDuplicates();
+        _paths = settings_.tabPaths();
+        _paths.removeDuplicates();
         // forget tab paths with next windows until the last one is closed
         settings_.setTabPaths(QStringList());
     }
 
-    for(const QString& it : qAsConst(paths)) {
+    for(const QString& it : qAsConst(_paths)) {
         QByteArray pathName = it.toLocal8Bit();
         Fm::FilePath path;
         if(pathName == "~") { // special case for home dir
@@ -582,7 +583,7 @@ void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow, 
             }
             path = cwd_path.relativePath(pathName.constData());
         }
-       pathList.push_back(std::move(path));
+        pathList.push_back(std::move(path));
     }
 
     if(!inNewWindow && settings_.singleWindowMode()) {
@@ -618,9 +619,9 @@ void Application::launchFiles(QString cwd, QStringList paths, bool inNewWindow, 
             }
         }
         if(!hasWindow) {
-            paths.clear();
-            paths.push_back(QDir::currentPath());
-            launchFiles(QDir::currentPath(), paths, inNewWindow, false);
+            _paths.clear();
+            _paths.push_back(QDir::currentPath());
+            launchFiles(QDir::currentPath(), _paths, inNewWindow, false);
         }
     }
 }
@@ -644,7 +645,7 @@ void Application::openFolderInTerminal(Fm::FilePath path) {
     }
 }
 
-void Application::preferences(QString page) {
+void Application::preferences(const QString& page) {
     // open preference dialog
     if(!preferencesDialog_) {
         preferencesDialog_ = new PreferencesDialog(page);
@@ -657,7 +658,7 @@ void Application::preferences(QString page) {
     preferencesDialog_.data()->activateWindow();
 }
 
-void Application::setWallpaper(QString path, QString modeString) {
+void Application::setWallpaper(const QString& path, const QString& modeString) {
     static const char* valid_wallpaper_modes[] = {"color", "stretch", "fit", "center", "tile"};
     DesktopWindow::WallpaperMode mode = settings_.wallpaperMode();
     bool changed = false;
@@ -703,7 +704,7 @@ void Application::setWallpaper(QString path, QString modeString) {
 /* This method receives a list of file:// URIs from DBus and for each URI opens
  * a tab showing its content.
  */
-void Application::ShowFolders(const QStringList uriList, const QString startupId __attribute__((unused))) {
+void Application::ShowFolders(const QStringList& uriList, const QString& startupId __attribute__((unused))) {
     if(!uriList.isEmpty()) {
         launchFiles(QDir::currentPath(), uriList, false, false);
     }
@@ -712,7 +713,7 @@ void Application::ShowFolders(const QStringList uriList, const QString startupId
 /* This method receives a list of file:// URIs from DBus and opens windows
  * or tabs for each folder, highlighting all listed items within each.
  */
-void Application::ShowItems(const QStringList uriList, const QString startupId __attribute__((unused))) {
+void Application::ShowItems(const QStringList& uriList, const QString& startupId __attribute__((unused))) {
     QMap<QString,QStringList> groups;
     QStringList keys;
     for(const auto& u : uriList) {
@@ -760,7 +761,7 @@ void Application::ShowItems(const QStringList uriList, const QString startupId _
 /* This method receives a list of file:// URIs from DBus and
  * for each valid URI opens a property dialog showing its information
  */
-void Application::ShowItemProperties(const QStringList uriList, const QString startupId __attribute__((unused))) {
+void Application::ShowItemProperties(const QStringList& uriList, const QString& startupId __attribute__((unused))) {
     // FIXME: Should we add "Fm::FilePropsDialog::showForPath()" to libfm-qt, instead of doing this?
     Fm::FilePathList paths;
     for(const auto& u : uriList) {

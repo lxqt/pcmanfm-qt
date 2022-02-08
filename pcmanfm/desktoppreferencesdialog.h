@@ -32,12 +32,12 @@ class DesktopPreferencesDialog : public QDialog {
 Q_OBJECT
 
 public:
-  explicit DesktopPreferencesDialog(QWidget* parent = 0, Qt::WindowFlags f = Qt::WindowFlags());
+  explicit DesktopPreferencesDialog(QWidget* parent = nullptr, Qt::WindowFlags f = Qt::WindowFlags());
   virtual ~DesktopPreferencesDialog();
 
   virtual void accept();
 
-  void selectPage(QString name);
+  void selectPage(const QString& name);
 
   // Should only be used one time.
   void setEditDesktopFolder(const bool enabled);

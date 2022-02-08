@@ -64,10 +64,10 @@ public:
     void setShadow(const QColor& color);
     void setBackground(const QColor& color);
     void setDesktopFolder();
-    void setWallpaperFile(QString filename);
+    void setWallpaperFile(const QString& filename);
     void setWallpaperMode(WallpaperMode mode = WallpaperStretch);
-    void setLastSlide(QString filename);
-    void setWallpaperDir(QString dirname);
+    void setLastSlide(const QString& filename);
+    void setWallpaperDir(const QString& dirname);
     void setSlideShowInterval(int interval);
     void setWallpaperRandomize(bool randomize);
 

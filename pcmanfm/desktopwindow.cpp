@@ -511,7 +511,7 @@ void DesktopWindow::setDesktopFolder() {
     }
 }
 
-void DesktopWindow::setWallpaperFile(QString filename) {
+void DesktopWindow::setWallpaperFile(const QString& filename) {
     wallpaperFile_ = filename;
 }
 
@@ -519,11 +519,11 @@ void DesktopWindow::setWallpaperMode(WallpaperMode mode) {
     wallpaperMode_ = mode;
 }
 
-void DesktopWindow::setLastSlide(QString filename) {
+void DesktopWindow::setLastSlide(const QString& filename) {
     lastSlide_ = filename;
 }
 
-void DesktopWindow::setWallpaperDir(QString dirname) {
+void DesktopWindow::setWallpaperDir(const QString& dirname) {
     wallpaperDir_ = dirname;
 }
 

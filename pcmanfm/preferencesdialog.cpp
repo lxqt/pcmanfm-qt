@@ -32,7 +32,7 @@
 
 namespace PCManFM {
 
-PreferencesDialog::PreferencesDialog(QString activePage, QWidget* parent):
+PreferencesDialog::PreferencesDialog(const QString& activePage, QWidget* parent):
     QDialog(parent) {
     ui.setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
@@ -402,7 +402,7 @@ void PreferencesDialog::accept() {
     QDialog::accept();
 }
 
-void PreferencesDialog::selectPage(QString name) {
+void PreferencesDialog::selectPage(const QString& name) {
     if(!name.isEmpty()) {
         QWidget* page = findChild<QWidget*>(name + QStringLiteral("Page"));
         if(page) {

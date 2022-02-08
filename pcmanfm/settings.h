@@ -274,7 +274,7 @@ public:
         return wallpaper_;
     }
 
-    void setWallpaper(QString wallpaper) {
+    void setWallpaper(const QString& wallpaper) {
         wallpaper_ = wallpaper;
     }
 
