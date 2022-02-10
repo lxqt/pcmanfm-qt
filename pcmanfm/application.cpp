@@ -131,16 +131,16 @@ Application::Application(int& argc, char** argv):
 
 
         // We also try to register the service "org.freedesktop.FileManager1".
-        // We allow queuing of our request for case another file manager has already registered it.
+        // We allow queuing of our request in case another file manager has already registered it.
         static const QString fileManagerService = QStringLiteral("org.freedesktop.FileManager1");
         connect(dbus.interface(), &QDBusConnectionInterface::serviceRegistered, this, [this](const QString& service) {
-                if (fileManagerService == service)
-                {
+                if(fileManagerService == service) {
                     QDBusConnection dbus = QDBusConnection::sessionBus();
                     disconnect(dbus.interface(), &QDBusConnectionInterface::serviceRegistered, this, nullptr);
                     new ApplicationAdaptorFreeDesktopFileManager(this);
-                    if (!dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this))
+                    if(!dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this)) {
                         qDebug() << "Can't register /org/freedesktop/FileManager1:" << dbus.lastError().message();
+                    }
                 }
         });
         dbus.interface()->registerService(fileManagerService, QDBusConnectionInterface::QueueService);
@@ -724,20 +724,24 @@ void Application::ShowFolders(const QStringList& uriList, const QString& startup
  * or tabs for each folder, highlighting all listed items within each.
  */
 void Application::ShowItems(const QStringList& uriList, const QString& startupId __attribute__((unused))) {
-    QMap<QString,QStringList> groups;
-    QStringList keys;
+    std::unordered_map<Fm::FilePath, Fm::FilePathList, Fm::FilePathHash> groups;
+    Fm::FilePathList folders; // used only for keeping the original order
     for(const auto& u : uriList) {
-        QString folder = u.section(QLatin1Char('/'), 0, -2);
-        if(!folder.isEmpty()) {
-            if(!keys.contains(folder)) {
-                groups[folder] = QStringList();
-                keys << folder; // keep the original order (QMap is sorted by key)
+        if(auto path = Fm::FilePath::fromPathStr(u.toStdString().c_str())) {
+            if(auto parent = path.parent()) {
+                auto paths = groups[parent];
+                if(std::find(paths.cbegin(), paths.cend(), path) == paths.cend()) {
+                    groups[parent].push_back(std::move(path));
+                }
+                // also remember the order of parent folders
+                if(std::find(folders.cbegin(), folders.cend(), parent) == folders.cend()) {
+                    folders.push_back(std::move(parent));
+                }
             }
-            groups[folder].append(u);
         }
     }
 
-    if(groups.isEmpty()) {
+    if(groups.empty()) {
         return;
     }
 
@@ -759,8 +763,8 @@ void Application::ShowItems(const QStringList& uriList, const QString& startupId
         window = new MainWindow();
     }
 
-    for(const auto& k : qAsConst(keys)) {
-        window->openFolderAndSelectItems(k, groups[k]);
+    for(const auto& folder : folders) {
+        window->openFolderAndSelectFles(groups[folder]);
     }
 
     window->show();

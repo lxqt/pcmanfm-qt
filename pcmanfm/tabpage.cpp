@@ -329,16 +329,15 @@ void TabPage::onFolderStartLoading() {
 void TabPage::onUiUpdated() {
     bool scrolled = false;
     // if there are files to select, select them
-    if(!filesToSelect_.isEmpty()) {
-        Fm::FileInfoList filesToSelect;
+    if(!filesToSelect_.empty()) {
+        Fm::FileInfoList infos;
         for(const auto& file : filesToSelect_) {
-            Fm::FilePath path = Fm::FilePath::fromPathStr(file.toStdString().c_str());
-            if(auto info = proxyModel_->fileInfoFromPath(path)) {
-                filesToSelect.push_back(proxyModel_->fileInfoFromPath(path));
+            if(auto info = proxyModel_->fileInfoFromPath(file)) {
+                infos.push_back(proxyModel_->fileInfoFromPath(file));
             }
         }
         filesToSelect_.clear();
-        if(folderView_->selectFiles(filesToSelect)) {
+        if(folderView_->selectFiles(infos)) {
             scrolled = true; // scrolling is done by FolderView::selectFiles()
             QModelIndexList indexes = folderView_->selectionModel()->selectedIndexes();
             if(!indexes.isEmpty()) {
