@@ -333,7 +333,7 @@ void TabPage::onUiUpdated() {
         Fm::FileInfoList infos;
         for(const auto& file : filesToSelect_) {
             if(auto info = proxyModel_->fileInfoFromPath(file)) {
-                infos.push_back(proxyModel_->fileInfoFromPath(file));
+                infos.push_back(info);
             }
         }
         filesToSelect_.clear();
