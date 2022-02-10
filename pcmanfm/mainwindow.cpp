@@ -2355,11 +2355,14 @@ void MainWindow::on_actionCleanPerFolderConfig_triggered() {
     }
 }
 
-void MainWindow::openFolderAndSelectItems(const QString& folder, const QStringList& items) {
-    Fm::FilePath path = Fm::FilePath::fromPathStr(folder.toStdString().c_str());
-    TabPage* newPage = new TabPage(this);
-    addTabWithPage(newPage, activeViewFrame_, path);
-    newPage->setFilesToSelect(items);
+void MainWindow::openFolderAndSelectFles(const Fm::FilePathList& files) {
+    if(!files.empty()) {
+        if(auto path = files.front().parent()) {
+            TabPage* newPage = new TabPage(this);
+            addTabWithPage(newPage, activeViewFrame_, std::move(path));
+            newPage->setFilesToSelect(files);
+        }
+    }
 }
 
 }

@@ -280,9 +280,8 @@ public:
 
     void ceateShortcut();
 
-    void setFilesToSelect(const QStringList& files) {
+    void setFilesToSelect(const Fm::FilePathList& files) {
         filesToSelect_ = files;
-        filesToSelect_.removeDuplicates();
     }
 
 Q_SIGNALS:
@@ -337,7 +336,7 @@ private:
     QTimer* selectionTimer_;
     FilterBar* filterBar_;
     QStringList filesToTrust_;
-    QStringList filesToSelect_; // files to select
+    Fm::FilePathList filesToSelect_; // files to select
 };
 
 }

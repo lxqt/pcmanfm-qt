@@ -102,7 +102,7 @@ public:
         return lastActive_;
     }
 
-    void openFolderAndSelectItems(const QString& folder, const QStringList& items);
+    void openFolderAndSelectFles(const Fm::FilePathList& files);
 
 protected Q_SLOTS:
 
