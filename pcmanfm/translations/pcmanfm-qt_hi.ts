@@ -52,7 +52,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt फ़ाइल प्रबंधक
+
+कॉपीराइट (C) 2009 - 2014 洪任諭 (हांग जेन यी)
+
+यह  प्रोग्राम एक मुफ्त सॉफ्टवेयर है; आप इसे पुनर्वितरित कर सकते हैं और/या
+जीएनयू जनरल पब्लिक लाइसेंस की शर्तों के तहत इसे संशोधित कर सकते हैं
+जैसा कि फ्री सॉफ्टवेयर फाउंडेशन द्वारा प्रकाशित किया गया है; या तो लाइसेंस के
+ संस्करण 2, या (आपकी इच्छानुसार), किसी बाद के संस्करण में.
+
+यह प्रोग्राम इस उम्मीद में वितरित किया जाता है कि यह उपयोगी होगा,
+लेकिन बिना किसी वारंटी के; किसी विशेष उद्देश्य के लिए अनुरूपता या फिटनेस 
+संबंधी किसी भी निहित वारंटी के बिना. अधिक जानकारी के लिए जीएनयू जनरल
+पब्लिक लाइसेंस देखें.
+
+इस प्रोग्राम के साथ आपको GNU जनरल पब्लिक लाइसेंस की एक प्रति प्राप्त होनी
+चाहिए थी; यदि नहीं, तो निम्न पते पर लिखें.
+फ्री सॉफ्टवेयर फाउंडेशन, इंक., 51 फ्रैंकलिन स्ट्रीट, पांचवीं मंजिल, बोस्टन, एमए 02110-1301, यूएसए.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="82"/>
@@ -86,7 +102,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>पता लगा रहे हैं...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
@@ -122,42 +138,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>रिमोट सर्वर से कनेक्ट करें</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>बेनामी &amp;लॉगिन</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;उपयोगकर्ता के रूप में लॉगिन करें :</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>कनेक्ट करने के लिए दूरस्थ फ़ोल्डर निर्दिष्ट करें</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>प्रकार :</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>पोर्ट :</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>पथ :</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>होस्ट :</translation>
     </message>
 </context>
 <context>
@@ -165,7 +181,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>लॉन्चर बनाएं</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
