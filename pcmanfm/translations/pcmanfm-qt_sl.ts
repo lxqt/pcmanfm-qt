@@ -1,38 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="hi">
+<TS version="2.1" language="sl">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>परिचय</translation>
+        <translation>O opravljalniku</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="48"/>
         <source>Lightweight file manager</source>
-        <translation>लाइटवेट फ़ाइल प्रबंधक</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>प्रोग्रामिंग:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="113"/>
@@ -53,33 +50,17 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>PCManFM-Qt फ़ाइल प्रबंधक
-
-कॉपीराइट (C) 2009 - 2014 洪任諭 (हांग जेन यी)
-
-यह  प्रोग्राम एक मुफ्त सॉफ्टवेयर है; आप इसे पुनर्वितरित कर सकते हैं और/या
-जीएनयू जनरल पब्लिक लाइसेंस की शर्तों के तहत इसे संशोधित कर सकते हैं
-जैसा कि फ्री सॉफ्टवेयर फाउंडेशन द्वारा प्रकाशित किया गया है; या तो लाइसेंस के
- संस्करण 2, या (आपकी इच्छानुसार), किसी बाद के संस्करण में.
-
-यह प्रोग्राम इस उम्मीद में वितरित किया जाता है कि यह उपयोगी होगा,
-लेकिन बिना किसी वारंटी के; किसी विशेष उद्देश्य के लिए अनुरूपता या फिटनेस 
-संबंधी किसी भी निहित वारंटी के बिना. अधिक जानकारी के लिए जीएनयू जनरल
-पब्लिक लाइसेंस देखें.
-
-इस प्रोग्राम के साथ आपको GNU जनरल पब्लिक लाइसेंस की एक प्रति प्राप्त होनी
-चाहिए थी; यदि नहीं, तो निम्न पते पर लिखें.
-फ्री सॉफ्टवेयर फाउंडेशन, इंक., 51 फ्रैंकलिन स्ट्रीट, पांचवीं मंजिल, बोस्टन, एमए 02110-1301, यूएसए.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="82"/>
         <source>Authors</source>
-        <translation>लेखकगण</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="104"/>
         <source>License</source>
-        <translation>लाइसेंस</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -87,28 +68,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>हटाने योग्य माध्यम डाला गया है</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;हटाने योग्य माध्यम डाला गया है
-&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <source>Type of medium:</source>
-        <translation>माध्यम प्रकार :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <source>Detecting...</source>
-        <translation>पता लगा रहे हैं...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>कृपया वह क्रिया चुनें जिसे आप करना चाहते हैं :</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -116,22 +96,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="6"/>
         <source>Bulk Rename</source>
-        <translation>अनेक नामकरण</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="48"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation># को इनसे शुरू होने वाली संख्याओं से प्रतिस्थापित किया जाएगा :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation>चयनित फ़ाइलों का नाम बदलें :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
         <source>Name#</source>
-        <translation>नाम#</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -139,42 +119,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>रिमोट सर्वर से कनेक्ट करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation>बेनामी &amp;लॉगिन</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation>&amp;उपयोगकर्ता के रूप में लॉगिन करें :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation>कनेक्ट करने के लिए दूरस्थ फ़ोल्डर निर्दिष्ट करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation>प्रकार :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation>पोर्ट :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation>पथ :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation>होस्ट :</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -182,74 +162,74 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation>लॉन्चर बनाएं</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation>नाम :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="55"/>
         <source>Description:</source>
-        <translation>विवरण :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="69"/>
         <source>Comment:</source>
-        <translation>टिप्पणी :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="83"/>
         <source>Command:</source>
-        <translation>आदेश :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="99"/>
         <location filename="../desktopentrydialog.ui" line="127"/>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="108"/>
         <source>Icon:</source>
-        <translation>चिह्न :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation>टर्मिनल में चलाएं?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
         <source>Terminal:</source>
-        <translation>टर्मिनल :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="150"/>
         <source>No</source>
-        <translation>नहीं</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Yes</source>
-        <translation>हाँ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="163"/>
         <source>Type:</source>
-        <translation>प्रकार :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="171"/>
         <source>Application</source>
-        <translation>अनुप्रयोग</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="176"/>
         <source>Link</source>
-        <translation>लिंक</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -257,32 +237,32 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation>फारम</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation>डेस्कटॉप</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation>डेस्कटॉप फ़ोल्डर :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation>छवि फ़ाइल</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation>फ़ोल्डर पथ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation>&amp;ब्राउज़ करें</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -290,233 +270,231 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation>डेस्कटॉप वरीयताएँ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="247"/>
         <location filename="../desktop-preferences.ui" line="253"/>
         <source>Background</source>
-        <translation>पृष्ठभूमि</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="294"/>
         <source>Wallpaper mode:</source>
-        <translation>वॉलपेपर मोड :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="317"/>
         <source>Wallpaper image file:</source>
-        <translation>वॉलपेपर छवि फ़ाइल :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="259"/>
         <source>Select background color:</source>
-        <translation>पृष्ठभूमि का रंग चुनें :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="326"/>
         <source>Image file</source>
-        <translation>छवि फ़ाइल</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="332"/>
         <source>Image file path</source>
-        <translation>छवि फ़ाइल का पथ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="339"/>
         <source>&amp;Browse</source>
-        <translation>&amp;ब्राउज़ करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="30"/>
         <source>Icons</source>
-        <translation>आइकन्स</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="36"/>
         <source>Icon size:</source>
-        <translation>आइकन का आकार :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="49"/>
         <source>Label Text</source>
-        <translation>लेबल टेक्स्ट</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="113"/>
         <source>Select shadow color:</source>
-        <translation>छाया रंग चुनें :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="61"/>
         <source>Select font:</source>
-        <translation>फ़ॉन्ट चुनें :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="24"/>
         <source>General</source>
-        <translation>सामान्य</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation>टेक्स्ट का रंग चुनें :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation>रिक्ति</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="142"/>
         <source>Minimum item margins:</source>
-        <translation>न्यूनतम आइटम मार्जिन :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="149"/>
         <source>3 px by default.</source>
-        <translation>3 px आरंभिक मान.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="165"/>
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="172"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>1 px आरंभिक मान.
-3 पंक्तियों के आलेख के लिए भी स्थान आरक्षित है.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>Lock</source>
-        <translation>ताला</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>आरंभिक रूप में, बाएँ क्लिक से डेस्कटॉप फ़ोल्डर PCManFM-Qt में खोले जाएंगे, यदि वह
-आरंभिक फ़ाइल प्रबंधक न हो तब भी.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>डेस्कटॉप फ़ोल्डर को बायाँ क्लिक करके डिफ़ॉल्ट फ़ाइल प्रबंधक में खोलें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation>सभी वस्तुओं को उनके स्थान पर टिकाएं</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
         <source>Wallpaper</source>
-        <translation>वॉलपेपर</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="348"/>
         <source>Transform image based on EXIF data</source>
-        <translation>EXIF डेटा के आधार पर छवि को रूपांतरित करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="355"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation>प्रत्येक मॉनिटर के लिए अलग-अलग वॉलपेपर</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="382"/>
         <source>Slide Show</source>
-        <translation>स्लाइड प्रदर्शन</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="388"/>
         <source>Enable Slide Show</source>
-        <translation>स्लाइड प्रदर्शन सक्षम करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="400"/>
         <source>Wallpaper image folder:</source>
-        <translation>वॉलपेपर छवि फ़ोल्डर :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="407"/>
         <source>Browse</source>
-        <translation>ब्राउज़</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="414"/>
         <source> hour(s)</source>
-        <translation> घंटे</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="424"/>
         <source>and</source>
-        <translation>और</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="437"/>
         <source>Intervals less than 5min will be ignored</source>
-        <translation>5 मिनट से कम के अंतराल पर ध्यान नहीं दिया जाएगा</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="440"/>
         <source>Interval:</source>
-        <translation>अंतराल :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="447"/>
         <source> minute(s)</source>
-        <translation> मिनट</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
         <source>Wallpaper folder</source>
-        <translation>वॉलपेपर फ़ोल्डर</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="496"/>
         <source>Randomize the slide show</source>
-        <translation>स्लाइड प्रदर्शन को रैंडमाइज करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="529"/>
         <source>Visible Shortcuts</source>
-        <translation>दृश्यमान शॉर्टकट</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="535"/>
         <source>Home</source>
-        <translation>घर</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="546"/>
         <source>Trash</source>
-        <translation>कचरा</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="557"/>
         <source>Computer</source>
-        <translation>कम्प्यूटर</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="568"/>
         <source>Network</source>
-        <translation>नेटवर्क</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="523"/>
         <source>Advanced</source>
-        <translation>उन्नत</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -524,42 +502,42 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>छिपे हुए शॉर्टकट</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>शॉर्टकट</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation>कार्रवाई</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished">Esc</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation>फ़ोकस दृश्य, फ़िल्टर बार हटाएं</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished">Ctrl+Esc</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation>साइड-पेन पर फ़ोकस करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished">Ctrl+L</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
@@ -1132,7 +1110,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="867"/>
         <source>Bulk Rename</source>
-        <translation>अनेक नामकरण</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="870"/>
@@ -1596,7 +1574,6 @@ are left clicked, even when it is not the default file manager.</source>
         <source>Trash (%Ln items)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -1764,14 +1741,12 @@ They might be useful if those folders are created again.</source>
         <source>%n item(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="534"/>
         <source> (%n hidden)</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -1787,7 +1762,6 @@ They might be useful if those folders are created again.</source>
         <source>%n item(s) selected</source>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
 </context>
@@ -1802,7 +1776,6 @@ They might be useful if those folders are created again.</source>
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
