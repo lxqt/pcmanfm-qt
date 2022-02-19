@@ -22,7 +22,8 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
@@ -689,7 +690,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Nylige F&amp;iler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -724,7 +725,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="292"/>
         <source>Alt+Up</source>
-        <translation>Alt+op</translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="301"/>
@@ -959,7 +960,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ryd</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
@@ -1004,7 +1005,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Bevar indstillinger for &amp;denne mappe</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="875"/>
@@ -1069,7 +1070,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="933"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Skjulte &amp;genveje</translation>
+        <translation>Skjulte&amp;Genveje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="938"/>
@@ -1176,7 +1177,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tilpassede indstillinger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="601"/>
@@ -1201,7 +1202,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="619"/>
         <source>Alt+Left</source>
-        <translation>Alt+venstre</translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="628"/>
@@ -1216,7 +1217,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Alt+Right</source>
-        <translation>Alt+højre</translation>
+        <translation>Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="639"/>
@@ -1352,7 +1353,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="252"/>
         <source>Main Toolbar</source>
-        <translation>Hovedværktøjslinje</translation>
+        <translation>Hoved værtøjslinje</translation>
     </message>
 </context>
 <context>
@@ -1370,12 +1371,12 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../application.cpp" line="171"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>Kør PCManFM-Qt  som en dæmon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="174"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Afslut PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="177"/>
@@ -1697,7 +1698,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1974"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilpassede indstillinger</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2238"/>
@@ -1713,13 +1714,14 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2348"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ryd mappe indstillinger</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2349"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ønsker du at rydde indstillingerne af ikke eksisterende mapper?
+De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
     </message>
 </context>
 <context>
@@ -2029,7 +2031,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Antalet af nylige filer:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
