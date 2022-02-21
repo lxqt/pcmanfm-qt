@@ -688,7 +688,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation>Последни файлове</translation>
+        <translation>Последни &amp;файлове</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -703,7 +703,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="153"/>
         <source>&amp;Filtering</source>
-        <translation>Филтри</translation>
+        <translation>&amp;Филтри</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="227"/>
@@ -863,7 +863,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="485"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Поставане</translation>
+        <translation>&amp;Поставяне</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="488"/>
