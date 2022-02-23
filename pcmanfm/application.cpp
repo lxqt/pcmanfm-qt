@@ -200,7 +200,7 @@ bool Application::parseCommandLineArgs() {
     QCommandLineOption desktopOffOption(QStringLiteral("desktop-off"), tr("Turn off desktop manager if it's running"));
     parser.addOption(desktopOffOption);
 
-    QCommandLineOption desktopPrefOption(QStringLiteral("desktop-pref"), tr("Open desktop preference dialog on the page with the specified name"), tr("NAME"));
+    QCommandLineOption desktopPrefOption(QStringLiteral("desktop-pref"), tr("Open desktop preference dialog on the page with the specified name") + QStringLiteral("\n") + tr("NAME") + QStringLiteral("=(general|bg|slide|advanced)"), tr("NAME"));
     parser.addOption(desktopPrefOption);
 
     QCommandLineOption newWindowOption(QStringList() << QStringLiteral("n") << QStringLiteral("new-window"), tr("Open new window"));
@@ -215,7 +215,7 @@ bool Application::parseCommandLineArgs() {
     QCommandLineOption wallpaperModeOption(QStringLiteral("wallpaper-mode"), tr("Set mode of desktop wallpaper. MODE=(%1)").arg(QStringLiteral("color|stretch|fit|center|tile|zoom")), tr("MODE"));
     parser.addOption(wallpaperModeOption);
 
-    QCommandLineOption showPrefOption(QStringLiteral("show-pref"), tr("Open Preferences dialog on the page with the specified name"), tr("NAME"));
+    QCommandLineOption showPrefOption(QStringLiteral("show-pref"), tr("Open Preferences dialog on the page with the specified name") + QStringLiteral("\n") + tr("NAME") + QStringLiteral("=(behavior|display|ui|thumbnail|volume|advanced)"), tr("NAME"));
     parser.addOption(showPrefOption);
 
     parser.addPositionalArgument(QStringLiteral("files"), tr("Files or directories to open"), tr("[FILE1, FILE2,...]"));
