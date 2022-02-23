@@ -17,7 +17,7 @@ ConfirmDelete=true
 [Desktop]
 DesktopShortcuts=Home, Trash, Computer, Network
 WallpaperMode=stretch
-Wallpaper=@LXQT_SHARE_DIR@/wallpapers/plasma-logo-dark.png
+Wallpaper=@LXQT_SHARE_DIR@/wallpapers/waves-logo.png
 BgColor=#000000
 FgColor=#ffffff
 ShadowColor=#000000
