@@ -22,7 +22,8 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="91"/>
@@ -69,12 +70,12 @@ Fifth Floor, Boston, MA 02110-1301, USA로 편지를 쓰세요.</translation>
     <message>
         <location filename="../about.ui" line="82"/>
         <source>Authors</source>
-        <translation>작성자</translation>
+        <translation>개발자</translation>
     </message>
     <message>
         <location filename="../about.ui" line="104"/>
         <source>License</source>
-        <translation>라이센스</translation>
+        <translation>라이선스</translation>
     </message>
 </context>
 <context>
@@ -518,12 +519,12 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>숨겨진 바로가기</translation>
+        <translation>숨겨진 단축키</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>바로가기</translation>
+        <translation>단축키</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
@@ -548,7 +549,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
         <source>Focus side-pane</source>
-        <translation>초점 사이드 창</translation>
+        <translation>초점 측면 창</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
@@ -607,7 +608,7 @@ PCManFM-Qt에서 열립니다.</translation>
         <location filename="../shortcuts.ui" line="98"/>
         <location filename="../shortcuts.ui" line="106"/>
         <source>Jump to tab</source>
-        <translation>탭 건너 뛰기</translation>
+        <translation>탭으로 이동</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="103"/>
@@ -653,7 +654,7 @@ PCManFM-Qt에서 열립니다.</translation>
         <location filename="../shortcuts.ui" line="138"/>
         <source>Move file on dropping</source>
         <translatorcomment>관습적으로 사용하는 말로 의역함.</translatorcomment>
-        <translation>여기로 이동</translation>
+        <translation>드롭 시 파일 이동</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
@@ -687,7 +688,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>최근 파일(&amp;I)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -737,7 +738,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="313"/>
         <source>&amp;Reload</source>
-        <translation>새로고침(&amp;R)</translation>
+        <translation>다시 불러오기(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="316"/>
@@ -747,7 +748,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="325"/>
         <source>Go</source>
-        <translation>이동</translation>
+        <translation>가기</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="334"/>
@@ -812,7 +813,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="415"/>
         <source>&amp;Applications</source>
-        <translation>애플리케이션(&amp;A)</translation>
+        <translation>응용프로그램(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="420"/>
@@ -852,7 +853,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="473"/>
         <source>&amp;Copy</source>
-        <translation>복사(&amp;C)</translation>
+        <translation>복사하기(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="476"/>
@@ -957,7 +958,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>지우기(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
@@ -1052,7 +1053,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="917"/>
         <source>Show Thumbnails</source>
-        <translation>썸네일 보기</translation>
+        <translation>마중그림 표시</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="925"/>
@@ -1224,7 +1225,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>&amp;Delete</source>
-        <translation>삭제(&amp;D)</translation>
+        <translation>삭제하기(&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
@@ -1350,7 +1351,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="252"/>
         <source>Main Toolbar</source>
-        <translation>메인 도구바</translation>
+        <translation>기본 도구 모음</translation>
     </message>
 </context>
 <context>
@@ -1819,7 +1820,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>기본설정</translation>
+        <translation>기본 설정</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -2023,7 +2024,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>최근 파일 수:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2061,7 +2062,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>목록 및 압축 모드에서 부드러운 스크롤 비활성화</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
