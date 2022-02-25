@@ -1,5 +1,6 @@
 [System]
 IconThemeName=elementary
+FallbackIconThemeName=breeze
 SuCommand=lxsudo dbus-run-session -- %s
 TerminalCommand=
 Archiver=lxqt-archiver
@@ -14,15 +15,16 @@ SingleClick=false
 ConfirmDelete=true
 
 [Desktop]
+DesktopShortcuts=Home, Trash, Computer, Network
 WallpaperMode=stretch
-Wallpaper=@LXQT_SHARE_DIR@/themes/frost/lxqt-origami-light.png
+Wallpaper=@LXQT_SHARE_DIR@/wallpapers/waves-logo.png
 BgColor=#000000
 FgColor=#ffffff
 ShadowColor=#000000
 ShowHidden=false
 SortOrder=ascending
 SortColumn=name
-Font="Sans Serif,10,-1,5,50,0,0,0,0,0"
+Font="Sans Serif,12,-1,5,50,0,0,0,0,0"
 
 [Volume]
 MountOnStartup=true
@@ -40,11 +42,14 @@ SidePaneIconSize=24
 ThumbnailIconSize=128
 
 [Window]
-Width=640
-Height=480
+FixedHeight=600
+FixedWidth=800
+LastWindowHeight=600
+LastWindowWidth=800
+RememberWindowSize=true
 AlwaysShowTabs=false
 ShowTabClose=true
-SplitterPos=150
+SplitterPos=250
 SidePaneMode=0
 
 [Thumbnail]
