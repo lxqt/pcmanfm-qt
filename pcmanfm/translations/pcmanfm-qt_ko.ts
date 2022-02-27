@@ -371,7 +371,7 @@ Fifth Floor, Boston, MA 02110-1301, USA로 편지를 쓰세요.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="149"/>
         <source>3 px by default.</source>
-        <translation>3 px 기본값.</translation>
+        <translation>기본적으로 3픽셀입니다.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
@@ -388,7 +388,7 @@ Fifth Floor, Boston, MA 02110-1301, USA로 편지를 쓰세요.</translation>
         <location filename="../desktop-preferences.ui" line="172"/>
         <source>1 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>1 xp 기본값
+        <translation>기본적으로 1픽셀입니다.
 3줄의 텍스트를 위한 공간도 확보됩니다.</translation>
     </message>
     <message>
@@ -778,7 +778,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="366"/>
         <source>Show &amp;Hidden</source>
-        <translation>숨김 파일 보기(&amp;H)</translation>
+        <translation>숨김 파일 표시(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="369"/>
@@ -838,7 +838,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="452"/>
         <source>&amp;Thumbnail View</source>
-        <translation>썸네일(&amp;T)</translation>
+        <translation>마중그림 보기(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="461"/>
@@ -898,37 +898,37 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>&amp;By File Name</source>
-        <translation>파일 이름별(&amp;B)</translation>
+        <translation>파일 이름순(&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <source>By &amp;Modification Time</source>
-        <translation>수정 시간별(&amp;M)</translation>
+        <translation>수정 시간순(&amp;M)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By C&amp;reation Time</source>
-        <translation>생성 시간별(&amp;R)</translation>
+        <translation>생성 시간순(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <source>By Deletio&amp;n Time</source>
-        <translation>삭제 시간별(&amp;N)</translation>
+        <translation>삭제 시간순(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <source>By File &amp;Type</source>
-        <translation>파일 유형별(&amp;T)</translation>
+        <translation>파일 유형순(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="565"/>
         <source>By &amp;Owner</source>
-        <translation>소유자별(&amp;O)</translation>
+        <translation>소유자순(&amp;O)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="573"/>
         <source>By &amp;Group</source>
-        <translation>그룹별(&amp;G)</translation>
+        <translation>그룹순(&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="581"/>
@@ -973,7 +973,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="699"/>
         <source>By File &amp;Size</source>
-        <translation>크기(&amp;S)</translation>
+        <translation>파일 크기순(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="704"/>
@@ -1048,7 +1048,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../main-win.ui" line="914"/>
         <source>Show Thumb&amp;nails</source>
-        <translation>썸네일 보기(&amp;N)</translation>
+        <translation>마중그림 표시(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="917"/>
@@ -1359,7 +1359,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../application.cpp" line="168"/>
         <source>Name of configuration profile</source>
-        <translation>설정 프로필 이름</translation>
+        <translation>구성 프로필의 이름</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="168"/>
@@ -1736,7 +1736,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Thumbnail View</source>
-        <translation>썸네일 보기</translation>
+        <translation>마중그림 보기</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="202"/>
@@ -1836,7 +1836,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="642"/>
         <source>Thumbnail</source>
-        <translation>썸네일</translation>
+        <translation>마중그림</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
@@ -1871,7 +1871,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
-        <translation>썸네일 크기:</translation>
+        <translation>마중그림 크기:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
@@ -1891,12 +1891,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="559"/>
         <source>Always show the tab bar</source>
-        <translation>탭바를 항상 보기</translation>
+        <translation>항상 탭 표시줄 표시</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="566"/>
         <source>Show &apos;Close&apos; buttons on tabs	</source>
-        <translation>탭에 닫기 버튼 보기</translation>
+        <translation>탭에 &apos;닫기&apos; 버튼 표시	</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="580"/>
@@ -1951,12 +1951,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="651"/>
         <source>Show thumbnails of files</source>
-        <translation>파일 썸네일 표시</translation>
+        <translation>파일의 마중그림 표시</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="658"/>
         <source>Only show thumbnails for local files</source>
-        <translation>로컬 파일의 썸네일만 표시</translation>
+        <translation>로컬 파일의 마중그림만 표시</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="40"/>
@@ -2042,7 +2042,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
-        <translation>썸네일 보기에서 사용됨</translation>
+        <translation>마중그림 보기에서 사용됨</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
@@ -2089,7 +2089,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>기본적으로 3픽셀입니다
+        <translation>기본적으로 3픽셀입니다.
 3줄의 텍스트를 위한 공간도 확보되어 있습니다.</translation>
     </message>
     <message>
@@ -2120,14 +2120,14 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation>기본 제공된 썸네일은 Qt에서 지원하는 이미지의 썸네일을 만듭니다.
+        <translation>기본 제공된 마중그림은 Qt에서 지원하는 이미지의 썸네일을 만듭니다.
 
 일반적으로 대부분의 이미지 유형이 지원됩니다. 기본 크기 제한은 4 MiB입니다.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation>내장 썸네일에 대한 이미지 크기 제한:</translation>
+        <translation>기본 제공 마중그림에 대한 이미지 크기 제한:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
@@ -2141,14 +2141,14 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation>기존의 경우 비디오, PDF 문서 등에 외부 썸네일을 사용합니다.
+        <translation>기존의 경우 비디오, PDF 문서 등에 외부 마중그림을 사용합니다.
 
 값이 -1이면 파일 크기에 제한이 없음을 의미합니다(기본값).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation>외부 썸네일에 대한 파일 크기 제한:</translation>
+        <translation>외부 마중그림에 대한 파일 크기 제한:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
@@ -2253,7 +2253,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="866"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation>아카이브 통합(&amp;T):</translation>
+        <translation>압축파일 도구 통합(&amp;T):</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="889"/>
