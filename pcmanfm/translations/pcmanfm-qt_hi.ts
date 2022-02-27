@@ -22,7 +22,7 @@
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
     <message>
@@ -382,12 +382,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="165"/>
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="172"/>
@@ -701,57 +701,57 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="146"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>पथ &amp;बार</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="153"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;फ़िल्टरिंग</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="227"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;टूल्स</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ऊपर जाएं</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="289"/>
         <source>Go Up</source>
-        <translation type="unfinished"></translation>
+        <translation>ऊपर जाएं</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="292"/>
         <source>Alt+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="301"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;घर</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="304"/>
         <source>Alt+Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+Home</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="313"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;रीलोड करें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="316"/>
         <source>F5</source>
-        <translation type="unfinished"></translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="325"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>जाएं</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="334"/>
@@ -766,137 +766,137 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="352"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;नया विंडो</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="355"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>नया विंडो</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="358"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="366"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;छुपा हुआ दिखाएं</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="369"/>
         <source>Ctrl+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="378"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;कम्प्यूटर</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="387"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;कचरा</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="392"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;नेटवर्क</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="401"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;डेस्कटॉप</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="410"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;बुकमार्क्स में जोड़ें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="415"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;अनुप्रयोग</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="420"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>रीलोड करें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="428"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;आइकन दृश्य</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="436"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;कॉम्पैक्ट दृश्य</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="444"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;विस्तृत सूची</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="452"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;थंबनेल दृश्य</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="461"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;काटें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="464"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="473"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;प्रतिलिपि</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="476"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="485"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;चिपकाएं</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="488"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="493"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;सबको चुनें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="496"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="501"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation>वरीयताएँ (&amp;e)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="509"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>आरोही क्रम (&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>अवरोही क्रम (&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
