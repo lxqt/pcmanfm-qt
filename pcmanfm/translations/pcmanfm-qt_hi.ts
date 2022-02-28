@@ -539,7 +539,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished">Esc</translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
@@ -901,107 +901,107 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइल के नाम से (&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;संशोधन समय के अनुसार</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;निर्माण समय के अनुसार</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;हटाए जाने के समय से</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइल &amp;प्रकार के अनुसार</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="565"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;स्वामी द्वारा</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="573"/>
         <source>By &amp;Group</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;समूह द्वारा</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="581"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;फ़ोल्डर सबसे पहले</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="589"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;छुपा हुआ अंत में</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;यहाँ से सेटिंग्स को पुनरावृत्ति रूप से सुरक्षित रखें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="959"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>विरासत में मिली सेटिंग्स के स्रोत पर &amp;जाएं</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="964"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;अनुपलब्ध फ़ोल्डर की सेटिंग हटाएँ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;साफ़-सुथरा</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;अक्षर संवेदनशील</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="699"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइल &amp;आकार द्वारा</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="704"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>विंडो &amp;बंद करें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="725"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;रूट इंस्टेंस में टैब खोलें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;फ़ोल्डर</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="751"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;रिक्त फ़ाइल</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="838"/>
