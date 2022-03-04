@@ -942,6 +942,11 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>&amp;Oculta últim</translation>
     </message>
     <message>
+        <location filename="../main-win.ui" line="870"/>
+        <source>Shift+F2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
         <translation>Conserva els paràmetres de manera recursiva des &amp;d&apos;aquí</translation>
@@ -1131,11 +1136,6 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="867"/>
         <source>Bulk Rename</source>
         <translation>Canvi de nom massiu</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="870"/>
-        <source>Ctrl+F2</source>
-        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
@@ -1358,99 +1358,99 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="188"/>
         <source>Name of configuration profile</source>
         <translation>Nom del perfil de la configuració</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="188"/>
         <source>PROFILE</source>
         <translation>PERFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="191"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>Executa PCManFM-Qt com a dimoni</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="174"/>
+        <location filename="../application.cpp" line="194"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Sortir de PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
+        <location filename="../application.cpp" line="197"/>
         <source>Launch desktop manager</source>
         <translation>Llança el gestor d&apos;escriptoris</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="200"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Apaga el gestor d&apos;escriptoris si s&apos;està executant</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
+        <location filename="../application.cpp" line="203"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Obre el diàleg de preferències de l&apos;escriptori en la pàgina amb el nom especificat</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="203"/>
+        <location filename="../application.cpp" line="218"/>
         <source>NAME</source>
         <translation>NOM</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="206"/>
         <source>Open new window</source>
         <translation>Obre una finestra nova</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="209"/>
         <source>Open Find Files utility</source>
         <translation>Obre la utilitat Troba fitxers</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="212"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Estableix la imatge del fons de l&apos;escriptori a partir del FITXER de la imatge</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="212"/>
         <source>FILE</source>
         <translation>FITXER</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="215"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="215"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Estableix el mode de la imatge del fons de l&apos;escriptori. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="218"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Obre el diàleg de preferències en la pàgina amb el nom especificat</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="221"/>
         <source>Files or directories to open</source>
         <translation>Els fitxers o els directoris a obrir</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="221"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FITXER1, FITXER2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="627"/>
-        <location filename="../application.cpp" line="632"/>
+        <location filename="../application.cpp" line="648"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="632"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Terminal emulator is not set.</source>
         <translation>L&apos;emulador del terminal no està establert.</translation>
     </message>
@@ -1749,17 +1749,17 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="506"/>
+        <location filename="../tabpage.cpp" line="523"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="515"/>
+        <location filename="../tabpage.cpp" line="532"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Espai lliure: %1 (total: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="532"/>
+        <location filename="../tabpage.cpp" line="549"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n ítem</numerusform>
@@ -1767,7 +1767,7 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="534"/>
+        <location filename="../tabpage.cpp" line="551"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n ocult)</numerusform>
@@ -1775,14 +1775,14 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="539"/>
-        <location filename="../tabpage.cpp" line="735"/>
-        <location filename="../tabpage.cpp" line="749"/>
+        <location filename="../tabpage.cpp" line="556"/>
+        <location filename="../tabpage.cpp" line="752"/>
+        <location filename="../tabpage.cpp" line="766"/>
         <source>Link to</source>
         <translation>enllaç a</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="761"/>
+        <location filename="../tabpage.cpp" line="778"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n ítem seleccionat</numerusform>
@@ -1818,6 +1818,7 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="134"/>
+        <location filename="../view.cpp" line="152"/>
         <source>Open in Termina&amp;l</source>
         <translation>Obre al termina&amp;l</translation>
     </message>
@@ -2314,7 +2315,7 @@ Un valor de -1 significa que no hi ha límit per a la mida del fitxer (per defec
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1077"/>
+        <location filename="../tabpage.cpp" line="1094"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -2329,7 +2330,7 @@ Un valor de -1 significa que no hi ha límit per a la mida del fitxer (per defec
         <translation>No s&apos;ha pogut canviar el nom d&apos;alguns fitxers.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1077"/>
+        <location filename="../tabpage.cpp" line="1094"/>
         <source>Cannot open as Admin.</source>
         <translation>No es pot obrir com a administrador.</translation>
     </message>

@@ -944,6 +944,11 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>&amp;छुपा हुआ अंत में</translation>
     </message>
     <message>
+        <location filename="../main-win.ui" line="870"/>
+        <source>Shift+F2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
         <translation>&amp;यहाँ से सेटिंग्स को पुनरावृत्ति रूप से सुरक्षित रखें</translation>
@@ -1036,7 +1041,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="895"/>
         <source>F6</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="900"/>
@@ -1066,7 +1071,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="928"/>
         <source>F9</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="933"/>
@@ -1082,7 +1087,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="943"/>
         <location filename="../main-win.ui" line="946"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">लॉन्चर बनाएं</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
@@ -1133,11 +1138,6 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="867"/>
         <source>Bulk Rename</source>
         <translation>अनेक नामकरण</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="870"/>
-        <source>Ctrl+F2</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
@@ -1243,7 +1243,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="662"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="667"/>
@@ -1283,7 +1283,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="720"/>
         <source>F4</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">F4</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="730"/>
@@ -1308,7 +1308,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="762"/>
         <source>F3</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">F3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="70"/>
@@ -1360,99 +1360,99 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="188"/>
         <source>Name of configuration profile</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="188"/>
         <source>PROFILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="191"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="174"/>
+        <location filename="../application.cpp" line="194"/>
         <source>Quit PCManFM-Qt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
+        <location filename="../application.cpp" line="197"/>
         <source>Launch desktop manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="200"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
+        <location filename="../application.cpp" line="203"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="203"/>
+        <location filename="../application.cpp" line="218"/>
         <source>NAME</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="206"/>
         <source>Open new window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="209"/>
         <source>Open Find Files utility</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="212"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="212"/>
         <source>FILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="215"/>
         <source>MODE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="215"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="218"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="221"/>
         <source>Files or directories to open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="221"/>
         <source>[FILE1, FILE2,...]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="627"/>
-        <location filename="../application.cpp" line="632"/>
+        <location filename="../application.cpp" line="648"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="632"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Terminal emulator is not set.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1508,7 +1508,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="29"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">आदेश :</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="32"/>
@@ -1607,12 +1607,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="341"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">कम्प्यूटर</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="355"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">नेटवर्क</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="963"/>
@@ -1638,12 +1638,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="1042"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">लॉन्चर बनाएं</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1045"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">डेस्कटॉप वरीयताएँ</translation>
     </message>
 </context>
 <context>
@@ -1750,17 +1750,17 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="506"/>
+        <location filename="../tabpage.cpp" line="523"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="515"/>
+        <location filename="../tabpage.cpp" line="532"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="532"/>
+        <location filename="../tabpage.cpp" line="549"/>
         <source>%n item(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -1768,7 +1768,7 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="534"/>
+        <location filename="../tabpage.cpp" line="551"/>
         <source> (%n hidden)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -1776,14 +1776,14 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="539"/>
-        <location filename="../tabpage.cpp" line="735"/>
-        <location filename="../tabpage.cpp" line="749"/>
+        <location filename="../tabpage.cpp" line="556"/>
+        <location filename="../tabpage.cpp" line="752"/>
+        <location filename="../tabpage.cpp" line="766"/>
         <source>Link to</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="761"/>
+        <location filename="../tabpage.cpp" line="778"/>
         <source>%n item(s) selected</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -1818,6 +1818,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../view.cpp" line="134"/>
+        <location filename="../view.cpp" line="152"/>
         <source>Open in Termina&amp;l</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1853,7 +1854,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">उन्नत</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
@@ -1863,7 +1864,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">आइकन्स</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
@@ -2079,29 +2080,30 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">3 px आरंभिक मान.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
         <location filename="../preferences.ui" line="493"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"> px</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="482"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">x</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">1 px आरंभिक मान.
+3 पंक्तियों के आलेख के लिए भी स्थान आरक्षित है. {3 ?} {3 ?}</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ताला</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="555"/>
@@ -2307,7 +2309,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1077"/>
+        <location filename="../tabpage.cpp" line="1094"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2322,7 +2324,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1077"/>
+        <location filename="../tabpage.cpp" line="1094"/>
         <source>Cannot open as Admin.</source>
         <translation type="unfinished"></translation>
     </message>

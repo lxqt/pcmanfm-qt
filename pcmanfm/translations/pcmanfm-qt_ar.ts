@@ -939,6 +939,11 @@ are left clicked, even when it is not the default file manager.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../main-win.ui" line="870"/>
+        <source>Shift+F2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
         <translation type="unfinished"></translation>
@@ -1128,11 +1133,6 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="867"/>
         <source>Bulk Rename</source>
         <translation>تغيير الأسماء بالجملة</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="870"/>
-        <source>Ctrl+F2</source>
-        <translation>Ctrl+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
@@ -1355,99 +1355,99 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="188"/>
         <source>Name of configuration profile</source>
         <translation>اسم لاحة الضبط</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="188"/>
         <source>PROFILE</source>
         <translation>لاحة</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="191"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="174"/>
+        <location filename="../application.cpp" line="194"/>
         <source>Quit PCManFM-Qt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
+        <location filename="../application.cpp" line="197"/>
         <source>Launch desktop manager</source>
         <translation>أطلِق مدير سطح المكتب</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="200"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>أوقِف مدير سطح المكتب إن كان يعمل</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
+        <location filename="../application.cpp" line="203"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>افتح حواريّ تفضيلات سطح المكتب على الصفحة بالاسم المحدد</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="203"/>
+        <location filename="../application.cpp" line="218"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="206"/>
         <source>Open new window</source>
         <translation>افتح نافذة جديدة</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="209"/>
         <source>Open Find Files utility</source>
         <translation>افتح أداة البحث عن ملفات</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="212"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>اضبط خلفية سطح المكتب من ملف الصورة FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="212"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="215"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="215"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>اضبط وضع خلفية سطح المكتب. MODE=(%1)‎</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="218"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>افتح حواريّ التفضيلات على الصفحة بالاسم المحدد</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="221"/>
         <source>Files or directories to open</source>
         <translation>الملفات أو الأدلّة لفتحها</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="221"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="627"/>
-        <location filename="../application.cpp" line="632"/>
+        <location filename="../application.cpp" line="648"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="632"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Terminal emulator is not set.</source>
         <translation>لم يُضبط محاكي الطرفية.</translation>
     </message>
@@ -1749,17 +1749,17 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="506"/>
+        <location filename="../tabpage.cpp" line="523"/>
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="515"/>
+        <location filename="../tabpage.cpp" line="532"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>المساحة الحرة: %1 (المجموع: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="532"/>
+        <location filename="../tabpage.cpp" line="549"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>لا عناصر</numerusform>
@@ -1771,7 +1771,7 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="534"/>
+        <location filename="../tabpage.cpp" line="551"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (لا شيء مخفي)</numerusform>
@@ -1783,14 +1783,14 @@ They might be useful if those folders are created again.</source>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="539"/>
-        <location filename="../tabpage.cpp" line="735"/>
-        <location filename="../tabpage.cpp" line="749"/>
+        <location filename="../tabpage.cpp" line="556"/>
+        <location filename="../tabpage.cpp" line="752"/>
+        <location filename="../tabpage.cpp" line="766"/>
         <source>Link to</source>
         <translation>رابط إلى</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="761"/>
+        <location filename="../tabpage.cpp" line="778"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>لا عناصر محددة</numerusform>
@@ -1833,6 +1833,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../view.cpp" line="134"/>
+        <location filename="../view.cpp" line="152"/>
         <source>Open in Termina&amp;l</source>
         <translation>افتح في ال&amp;طرفية</translation>
     </message>
@@ -2323,7 +2324,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1077"/>
+        <location filename="../tabpage.cpp" line="1094"/>
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
@@ -2338,7 +2339,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>تعذر تغيير أسماء بعض الملفات.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1077"/>
+        <location filename="../tabpage.cpp" line="1094"/>
         <source>Cannot open as Admin.</source>
         <translation type="unfinished"></translation>
     </message>

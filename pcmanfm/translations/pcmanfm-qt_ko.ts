@@ -941,6 +941,11 @@ PCManFM-Qt에서 열립니다.</translation>
         <translation>숨겨진 항목 마지막(&amp;H)</translation>
     </message>
     <message>
+        <location filename="../main-win.ui" line="870"/>
+        <source>Shift+F2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
         <translation>여기에서 설정을 재귀적으로 유지(&amp;H)</translation>
@@ -1130,11 +1135,6 @@ PCManFM-Qt에서 열립니다.</translation>
         <location filename="../main-win.ui" line="867"/>
         <source>Bulk Rename</source>
         <translation>일괄 이름 변경</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="870"/>
-        <source>Ctrl+F2</source>
-        <translation></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
@@ -1357,99 +1357,99 @@ PCManFM-Qt에서 열립니다.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="188"/>
         <source>Name of configuration profile</source>
         <translation>구성 프로필의 이름</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="188"/>
         <source>PROFILE</source>
         <translation>&lt;프로필&gt;</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="191"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>데몬으로 PCManFM-Qt 실행</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="174"/>
+        <location filename="../application.cpp" line="194"/>
         <source>Quit PCManFM-Qt</source>
         <translation>PCManFM-Qt 종료</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
+        <location filename="../application.cpp" line="197"/>
         <source>Launch desktop manager</source>
         <translation>데스크톱 매니저 실행</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="200"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>실행 중인 경우 바탕화면 관리자 끄기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
+        <location filename="../application.cpp" line="203"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>지정된 이름으로 페이지에서 데스크톱 기본 설정 대화 상자 열기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="203"/>
+        <location filename="../application.cpp" line="218"/>
         <source>NAME</source>
         <translation>&lt;이름&gt;</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="206"/>
         <source>Open new window</source>
         <translation>새 창 열기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="209"/>
         <source>Open Find Files utility</source>
         <translation>파일 찾기 유틸리티 열기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="212"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>이미지 파일에서 바탕화면 월페이퍼 지정하기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="212"/>
         <source>FILE</source>
         <translation>&lt;파일&gt;</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="215"/>
         <source>MODE</source>
         <translation>&lt;모드&gt;</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="215"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>바탕화면 월페이퍼 모드 설정. 모드=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="218"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>지정된 이름의 페이지에서 기본설정 대화상자 열기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="221"/>
         <source>Files or directories to open</source>
         <translation>열 파일 또는 디렉토리</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="221"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[파일1, 파일2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="627"/>
-        <location filename="../application.cpp" line="632"/>
+        <location filename="../application.cpp" line="648"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="632"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Terminal emulator is not set.</source>
         <translation>터미널 에뮬레이터가 지정되지 않았습니다.</translation>
     </message>
@@ -1747,38 +1747,38 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="506"/>
+        <location filename="../tabpage.cpp" line="523"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="515"/>
+        <location filename="../tabpage.cpp" line="532"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>빈 공간: %1 (전체: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="532"/>
+        <location filename="../tabpage.cpp" line="549"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n개 항목</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="534"/>
+        <location filename="../tabpage.cpp" line="551"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n개 숨김)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="539"/>
-        <location filename="../tabpage.cpp" line="735"/>
-        <location filename="../tabpage.cpp" line="749"/>
+        <location filename="../tabpage.cpp" line="556"/>
+        <location filename="../tabpage.cpp" line="752"/>
+        <location filename="../tabpage.cpp" line="766"/>
         <source>Link to</source>
         <translation>링크:</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="761"/>
+        <location filename="../tabpage.cpp" line="778"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n개 항목 선택됨</numerusform>
@@ -1811,6 +1811,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../view.cpp" line="134"/>
+        <location filename="../view.cpp" line="152"/>
         <source>Open in Termina&amp;l</source>
         <translation>터미널에서 열기(&amp;L)</translation>
     </message>
@@ -2306,7 +2307,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1077"/>
+        <location filename="../tabpage.cpp" line="1094"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
@@ -2321,7 +2322,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>일부 파일의 이름을 바꾸지 못했습니다.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1077"/>
+        <location filename="../tabpage.cpp" line="1094"/>
         <source>Cannot open as Admin.</source>
         <translation>관리자로 열 수 없습니다.</translation>
     </message>

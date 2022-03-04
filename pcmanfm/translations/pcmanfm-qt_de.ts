@@ -904,6 +904,11 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <translation>Versteckte Dateien zuletzt</translation>
     </message>
     <message>
+        <location filename="../main-win.ui" line="870"/>
+        <source>Shift+F2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
         <translation>Einstellungen rekursiv von &amp;hier beibehalten</translation>
@@ -1098,11 +1103,6 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
         <location filename="../main-win.ui" line="867"/>
         <source>Bulk Rename</source>
         <translation>Massenumbenennen</translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="870"/>
-        <source>Ctrl+F2</source>
-        <translation>Strg+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="804"/>
@@ -1360,99 +1360,99 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
 <context>
     <name>PCManFM::Application</name>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="188"/>
         <source>Name of configuration profile</source>
         <translation>Name des Konfigurationsprofils</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="188"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="171"/>
+        <location filename="../application.cpp" line="191"/>
         <source>Run PCManFM-Qt as a daemon</source>
         <translation>PCManFM-Qt als daemon laufen lassen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="174"/>
+        <location filename="../application.cpp" line="194"/>
         <source>Quit PCManFM-Qt</source>
         <translation>Beende PCManFM-Qt</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="177"/>
+        <location filename="../application.cpp" line="197"/>
         <source>Launch desktop manager</source>
         <translation>Arbeitsflächenverwaltung starten</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="180"/>
+        <location filename="../application.cpp" line="200"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Verwaltung der Arbeitsfläche beenden, falls aktiv</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
+        <location filename="../application.cpp" line="203"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Einstellungsdialog der Arbeitsfläche mit dem angegebenen Tab öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="183"/>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="203"/>
+        <location filename="../application.cpp" line="218"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="186"/>
+        <location filename="../application.cpp" line="206"/>
         <source>Open new window</source>
         <translation>Neues Fenster öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="209"/>
         <source>Open Find Files utility</source>
         <translation>Dateisuche öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="212"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Angegebene DATEI als Hintergrundbild einstellen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="212"/>
         <source>FILE</source>
         <translation>DATEI</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="215"/>
         <source>MODE</source>
         <translation>MODUS</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="215"/>
         <source>Set mode of desktop wallpaper. MODE=(%1)</source>
         <translation>Modus des Hintergrundbildes einstellen. MODE=(%1)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="218"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Einstellungsdialog auf dem angegebenen Tab öffnen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="221"/>
         <source>Files or directories to open</source>
         <translation>Zu öffnende Dateien oder Verzeichnisse</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="221"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[DATEI1, DATEI2, ...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="627"/>
-        <location filename="../application.cpp" line="632"/>
+        <location filename="../application.cpp" line="648"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="632"/>
+        <location filename="../application.cpp" line="653"/>
         <source>Terminal emulator is not set.</source>
         <translation>Es ist kein Terminalemulator eingestellt.</translation>
     </message>
@@ -1751,17 +1751,17 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="506"/>
+        <location filename="../tabpage.cpp" line="523"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="515"/>
+        <location filename="../tabpage.cpp" line="532"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Freier Speicherplatz: %1 (Gesamt: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="532"/>
+        <location filename="../tabpage.cpp" line="549"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n Objekt</numerusform>
@@ -1769,7 +1769,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="534"/>
+        <location filename="../tabpage.cpp" line="551"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n versteckt)</numerusform>
@@ -1777,14 +1777,14 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="539"/>
-        <location filename="../tabpage.cpp" line="735"/>
-        <location filename="../tabpage.cpp" line="749"/>
+        <location filename="../tabpage.cpp" line="556"/>
+        <location filename="../tabpage.cpp" line="752"/>
+        <location filename="../tabpage.cpp" line="766"/>
         <source>Link to</source>
         <translation>Verknüpfe mit</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="761"/>
+        <location filename="../tabpage.cpp" line="778"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n Element(e) ausgewählt</numerusform>
@@ -1819,6 +1819,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     </message>
     <message>
         <location filename="../view.cpp" line="134"/>
+        <location filename="../view.cpp" line="152"/>
         <source>Open in Termina&amp;l</source>
         <translation>Im Termina&amp;l öffnen</translation>
     </message>
@@ -2314,7 +2315,7 @@ Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1077"/>
+        <location filename="../tabpage.cpp" line="1094"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
@@ -2329,7 +2330,7 @@ Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
         <translation>Einige Dateien konnten nicht umbenannt werden.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1077"/>
+        <location filename="../tabpage.cpp" line="1094"/>
         <source>Cannot open as Admin.</source>
         <translation>Admin kann es nicht öffnen.</translation>
     </message>
