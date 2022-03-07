@@ -724,7 +724,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="292"/>
         <source>Alt+Up</source>
-        <translation>Alt+pijltje omhoog</translation>
+        <translation>Alt+Pijl omhoog</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="301"/>
@@ -944,7 +944,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
@@ -1201,7 +1201,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="619"/>
         <source>Alt+Left</source>
-        <translation>Alt+pijltje naar links</translation>
+        <translation>Alt+Pijl links</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="628"/>
@@ -1216,7 +1216,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Alt+Right</source>
-        <translation>Alt+pijltje naar rechts</translation>
+        <translation>Alt+Pijl rechts</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="639"/>
@@ -1756,7 +1756,7 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../tabpage.cpp" line="532"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="549"/>
