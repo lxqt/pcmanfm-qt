@@ -905,7 +905,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Maiusc+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>

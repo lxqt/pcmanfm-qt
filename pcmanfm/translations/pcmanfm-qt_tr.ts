@@ -946,7 +946,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
