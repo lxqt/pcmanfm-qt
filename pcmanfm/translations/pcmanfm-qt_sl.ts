@@ -666,7 +666,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="14"/>
         <source>File Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Upravljalnik datotek</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="81"/>

@@ -711,7 +711,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="289"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="292"/>
@@ -936,7 +936,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
