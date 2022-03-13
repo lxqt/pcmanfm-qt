@@ -502,22 +502,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Lối tắt bị ẩn</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation type="unfinished"></translation>
+        <translation>Lối tắt</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Thực hiện</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="31"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Thoát</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
@@ -601,7 +601,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="111"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Xóa trái</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="114"/>
@@ -729,7 +729,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="325"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Đi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="334"/>
@@ -739,12 +739,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="343"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>Về</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="352"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Cửa sổ mới</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="355"/>
@@ -1039,7 +1039,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="917"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Hiện ảnh thu nhỏ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="925"/>
@@ -1054,7 +1054,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="933"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>Lối tắt ẩn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="938"/>
@@ -1206,12 +1206,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Xóa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation>Xóa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="659"/>
@@ -1291,7 +1291,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>Tập tin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
@@ -1301,13 +1301,13 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="98"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Trợ giúp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="105"/>
         <location filename="../main-win.ui" line="129"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>Xem</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="109"/>
@@ -1317,7 +1317,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="185"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Chỉnh sửa</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="203"/>
@@ -1332,7 +1332,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="252"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Thanh công cụ chính</translation>
     </message>
 </context>
 <context>
@@ -1801,7 +1801,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Tham chiếu</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -1862,12 +1862,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Giao diện biểu tượng:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Cửa sổ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
@@ -2283,7 +2283,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <location filename="../bulkrename.cpp" line="111"/>
         <location filename="../tabpage.cpp" line="1094"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Lỗi</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
