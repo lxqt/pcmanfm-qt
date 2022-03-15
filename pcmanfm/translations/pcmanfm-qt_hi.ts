@@ -946,7 +946,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
@@ -1011,32 +1011,32 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;इस फ़ोल्डर के लिए सेटिंग्स को सुरक्षित रखें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="875"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़िल्टर बार &amp;दिखाएँ/केन्द्रित करें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="878"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़िल्टर बार दिखाएँ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="881"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="889"/>
         <source>S&amp;plit View</source>
-        <translation type="unfinished"></translation>
+        <translation>वि&amp;भाजित दृश्य</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="892"/>
         <source>Split View</source>
-        <translation type="unfinished"></translation>
+        <translation>विभाजित दृश्य</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="895"/>
@@ -1046,27 +1046,27 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="900"/>
         <source>&amp;Copy Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>पूर्ण पथ की &amp;प्रतिलिपि बनाएँ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="903"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="914"/>
         <source>Show Thumb&amp;nails</source>
-        <translation type="unfinished"></translation>
+        <translation>थंबने&amp;ल दिखाएँ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="917"/>
         <source>Show Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>थंबनेल दिखाएँ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="925"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>साइड पेन</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="928"/>
@@ -1076,12 +1076,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="933"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>छिपे हुए &amp;शॉर्टकट</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="938"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;व्यवस्थापक मोड में टैब खोलें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="943"/>
@@ -1092,47 +1092,47 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="773"/>
         <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+B</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="778"/>
         <source>&amp;Clear All Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;सभी फ़िल्टर साफ़ करें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
         <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="790"/>
         <source>Close &amp;previous tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>पिछले टैब्स बंद करें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="799"/>
         <source>Close &amp;next tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;अगले टैब बंद करें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="843"/>
         <source>Connect to &amp;Server</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;सर्वर से जुड़ें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="851"/>
         <source>&amp;Location</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;स्थान</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="859"/>
         <source>&amp;Path Buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;पथ-बटन</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="864"/>
         <source>&amp;Bulk Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;थोक में नाम बदलें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -1142,88 +1142,88 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="804"/>
         <source>Close &amp;other tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;अन्य टैब बंद करें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>स्थायी &amp;फ़िल्टर बार</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="812"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;मेनू पट्टी</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="815"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>मेनू पट्टी</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="818"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <location filename="../main-win.ui" line="830"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>मेनू</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="598"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>नया &amp;टैब</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;अनुकूलित दृश्य सेटिंग्स</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="601"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>नया टैब</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="604"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="613"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;पीछे जाएँ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="616"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>पीछे जाएँ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="619"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>आगे &amp;बढ़ें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="631"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>आगे बढ़ें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="639"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>चयन को उल्टा करें</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
