@@ -695,7 +695,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="292"/>
         <source>Alt+Up</source>
-        <translation>Alt+Góra</translation>
+        <translation>Alt+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="304"/>
@@ -905,7 +905,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
@@ -935,7 +935,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
@@ -1035,7 +1035,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="928"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="933"/>
@@ -1207,7 +1207,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="619"/>
         <source>Alt+Left</source>
-        <translation>Alt+Lewo</translation>
+        <translation>Alt+Left</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="628"/>
@@ -1222,7 +1222,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../main-win.ui" line="634"/>
         <source>Alt+Right</source>
-        <translation>Alt+Prawo</translation>
+        <translation>Alt+Right</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
@@ -1376,7 +1376,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../application.cpp" line="194"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyjdź z PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="197"/>
@@ -1580,7 +1580,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="301"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Wybierz folder tapety</translation>
     </message>
 </context>
 <context>
@@ -1638,7 +1638,7 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../desktopwindow.cpp" line="1042"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">Utwórz aktywator</translation>
+        <translation>Utwórz aktywator</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="1045"/>
@@ -1715,13 +1715,14 @@ są klikane lewym przyciskiem, nawet jeśli nie jest to domyślny menedżer plik
     <message>
         <location filename="../mainwindow.cpp" line="2348"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ustawienia folderu czyszczenia</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2349"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Czy chcesz usunąć ustawienia nieistniejących folderów?
+Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translation>
     </message>
 </context>
 <context>
@@ -1804,10 +1805,10 @@ They might be useful if those folders are created again.</source>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Czy chcesz otworzyć ten %1 plik?</numerusform>
+            <numerusform>Czy chcesz otworzyć te %1 pliki?</numerusform>
+            <numerusform>Czy chcesz otworzyć te %1 plików?</numerusform>
         </translation>
     </message>
     <message>
@@ -1984,7 +1985,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ustaw na zero aby wyłączyć auto-zaznaczanie.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
@@ -2009,7 +2010,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz menu kontekstowe folderu za pomocą Ctrl + prawy przycisk myszy</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="195"/>
@@ -2036,22 +2037,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Pliki ze zmienioną nazwą również zostaną wybrane</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz foldery w nowych kartach tak daleko jak to możliwe</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryb pojedynczego okna</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ilość niedawnych plików:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2089,7 +2090,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyłącz gładkie przewijanie w trybie listy i kompaktowym</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
@@ -2134,12 +2135,12 @@ tylko jeżeli jest więcej niż jedna karta.</translation>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Przełącz do nowo otwartej karty</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz ponownie ostatnie karty okna w nowym oknie</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2147,7 +2148,9 @@ tylko jeżeli jest więcej niż jedna karta.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Wbudowany miniaturownik robi miniaturki obrazów, które są wspierane przez Qt.
+
+Zazwyczaj, większość typów obrazów jest wspierana. Domyślny limit wielkości to 4MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
