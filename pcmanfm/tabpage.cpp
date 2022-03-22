@@ -966,9 +966,9 @@ void TabPage::applyFilter() {
     }
     else {
         if(firstIndx.isValid()
-           && folderView_->childView()->hasFocus() // typing inside the view
+           && !static_cast<Application*>(qApp)->settings().showFilter()
            && !folderView_->selectionModel()->isSelected(firstIndx)) {
-            // select the first item if typing happens inside the view
+            // select the first item if the filter-bar is transient
             folderView_->childView()->setCurrentIndex(firstIndx);
         }
         else {
