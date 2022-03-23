@@ -1054,6 +1054,7 @@ void DesktopWindow::toggleDesktop() {
     // a relayout is needed on showing the items for the first time
     // because the positions aren't updated while the view is hidden
     if(!desktopHideItems_) {
+        listView_->setUpdatesEnabled(false); // prevent items from shaking
         listView_->setFocus(); // refocus the view
         if(trashMonitor_) {
             updateTrashIcon();
@@ -1328,7 +1329,7 @@ void DesktopWindow::relayoutItems() {
         auto find_it = customItemPos_.find(name);
         if(find_it != customItemPos_.cend()) { // the item has a custom position
             QPoint customPos = find_it->second;
-            // center the contents vertically
+            // center the contents horizontally
             listView_->setPositionForIndex(customPos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
             // qDebug() << "set custom pos:" << name << row << index << customPos;
             continue;
@@ -1346,7 +1347,7 @@ void DesktopWindow::relayoutItems() {
             --row;
         }
         else {
-            // center the contents vertically
+            // center the contents horizontally
             listView_->setPositionForIndex(pos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
             // qDebug() << "set pos" << name << row << index << pos;
 
@@ -1432,11 +1433,14 @@ void DesktopWindow::retrieveCustomPos() {
             continue;
         }
         auto customPos = it->second;
-        if(customPos.x() >= workArea.x() && customPos.y() >= workArea.y()
-            && customPos.x() + grid.width() <= workArea.right() + 1
-            && customPos.y() + grid.height() <= workArea.bottom() + 1) {
+        // skip positions before the left edge, above the top edge or
+        // below the bottom edge of the work area
+        if(customPos.x() >= workArea.left()
+           && customPos.y() >= workArea.top()
+           && customPos.y() + grid.height() <= workArea.bottom() + 1) {
             // correct positions that are't aligned to the grid
             alignToGrid(customPos, workArea.topLeft(), grid, listView_->spacing());
+            // guarantee different positions for different items
             while(std::find(usedPos.cbegin(), usedPos.cend(), customPos) != usedPos.cend()) {
                 customPos.setY(customPos.y() + grid.height() + listView_->spacing());
                 if(customPos.y() + grid.height() > workArea.bottom() + 1) {
@@ -1444,8 +1448,11 @@ void DesktopWindow::retrieveCustomPos() {
                     customPos.setY(workArea.top());
                 }
             }
-            customItemPos_[name] = customPos;
-            usedPos.push_back(customPos);
+            // also, skip positions after the right edge of the work area
+            if(customPos.x() + grid.width() <= workArea.right() + 1) {
+                customItemPos_[name] = customPos;
+                usedPos.push_back(customPos);
+            }
         }
     }
 }
@@ -1454,11 +1461,9 @@ void DesktopWindow::saveItemPositions() {
     // write custom item positions to the config file
     Settings& settings = static_cast<Application*>(qApp)->settings();
     QString configFile = QStringLiteral("%1/desktop-items-%2.conf").arg(settings.profileDir(settings.profileName())).arg(screenNum_);
-    // FIXME: using QSettings here is inefficient and it's not friendly to UTF-8.
     QSettings file(configFile, QSettings::IniFormat);
     file.clear(); // remove all existing entries
 
-    // FIXME: we have to remove dead entries not associated to any files?
     for(auto it = customPosStorage_.cbegin(); it != customPosStorage_.cend(); ++it) {
         auto& name = it->first;
         auto& pos = it->second;
