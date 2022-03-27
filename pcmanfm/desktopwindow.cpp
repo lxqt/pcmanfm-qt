@@ -1289,17 +1289,16 @@ QRect DesktopWindow::getWorkArea(QScreen* screen) const {
 // QListView does item layout in a very inflexible way, so let's do our custom layout again.
 // FIXME: this is very inefficient, but due to the design flaw of QListView, this is currently the only workaround.
 void DesktopWindow::relayoutItems() {
-    auto screen = getDesktopScreen();
-    if(screen == nullptr) {
-        return;
-    }
-    retrieveCustomPos(); // something may have changed
-    // qDebug("relayoutItems()");
     if(relayoutTimer_) {
         // this slot might be called from the timer, so we cannot delete it directly here.
         relayoutTimer_->deleteLater();
         relayoutTimer_ = nullptr;
     }
+    auto screen = getDesktopScreen();
+    if(screen == nullptr) {
+        return;
+    }
+    retrieveCustomPos(); // something may have changed
 
     bool allSticky = static_cast<Application*>(qApp)->settings().allSticky();
 
@@ -1311,13 +1310,15 @@ void DesktopWindow::relayoutItems() {
 
     QRect workArea = getWorkArea(screen);
 
-    // qDebug() << "workArea" << screenNum_ <<  workArea;
     // FIXME: we use an internal class declared in a private header here, which is pretty bad.
     QPoint pos = workArea.topLeft();
     for(; row < rowCount; ++row) {
         QModelIndex index = proxyModel_->index(row, 0);
         int itemWidth = delegate->sizeHint(listView_->getViewOptions(), index).width();
         auto file = proxyModel_->fileInfoFromIndex(index);
+        if(file == nullptr) {
+            continue;
+        }
         auto name = file->name();
         if(filesToTrust_.contains(QString::fromStdString(name))) {
             file->setTrustable(true);
@@ -1325,13 +1326,12 @@ void DesktopWindow::relayoutItems() {
         }
         else if(file->isDesktopEntry()) {
             trustOurDesktopShortcut(file);
-         }
+        }
         auto find_it = customItemPos_.find(name);
         if(find_it != customItemPos_.cend()) { // the item has a custom position
             QPoint customPos = find_it->second;
             // center the contents horizontally
             listView_->setPositionForIndex(customPos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
-            // qDebug() << "set custom pos:" << name << row << index << customPos;
             continue;
         }
         // check if the current pos is already occupied by a custom item
@@ -1349,7 +1349,6 @@ void DesktopWindow::relayoutItems() {
         else {
             // center the contents horizontally
             listView_->setPositionForIndex(pos + QPoint((itemSize.width() - itemWidth) / 2, 0), index);
-            // qDebug() << "set pos" << name << row << index << pos;
 
             // if all items should be sticky, add this item to custom postions
             if(allSticky && pos.x() + itemSize.width() <= workArea.right() + 1) {
@@ -1438,7 +1437,7 @@ void DesktopWindow::retrieveCustomPos() {
         if(customPos.x() >= workArea.left()
            && customPos.y() >= workArea.top()
            && customPos.y() + grid.height() <= workArea.bottom() + 1) {
-            // correct positions that are't aligned to the grid
+            // correct positions that aren't aligned to the grid
             alignToGrid(customPos, workArea.topLeft(), grid, listView_->spacing());
             // guarantee different positions for different items
             while(std::find(usedPos.cbegin(), usedPos.cend(), customPos) != usedPos.cend()) {
@@ -1485,17 +1484,18 @@ void DesktopWindow::onStickToCurrentPos(bool toggled) {
         bool relayout(false);
         QModelIndexList::const_iterator it;
         for(it = indexes.constBegin(); it != indexes.constEnd(); ++it) {
-            auto file = proxyModel_->fileInfoFromIndex(*it);
-            auto name = file->name();
-            if(toggled) { // remember the current custom position
-                QRect itemRect = listView_->rectForIndex(*it);
-                customItemPos_[name] = itemRect.topLeft();
-            }
-            else { // cancel custom position and perform relayout
-                auto item = customItemPos_.find(name);
-                if(item != customItemPos_.end()) {
-                    customItemPos_.erase(item);
-                    relayout = true;
+            if(auto file = proxyModel_->fileInfoFromIndex(*it)) {
+                auto name = file->name();
+                if(toggled) { // remember the current custom position
+                    QRect itemRect = listView_->rectForIndex(*it);
+                    customItemPos_[name] = itemRect.topLeft();
+                }
+                else { // cancel custom position and perform relayout
+                    auto item = customItemPos_.find(name);
+                    if(item != customItemPos_.end()) {
+                        customItemPos_.erase(item);
+                        relayout = true;
+                    }
                 }
             }
         }
@@ -1992,6 +1992,13 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         // remove the drop indicator after the drop is finished
         dropRect_ = QRect();
         listView_->viewport()->update();
+
+        // do not proceed if items are dropped on a directory
+        if(auto file = proxyModel_->fileInfoFromIndex(dropIndex)) {
+            if(file->isDir()) {
+                return;
+            }
+        }
 
         // position dropped items successively, starting with the drop rectangle
         if(mimeData->hasUrls()
