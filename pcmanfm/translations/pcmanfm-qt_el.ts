@@ -1137,7 +1137,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <source>Permanent &amp;filter bar</source>
-        <translation>Μόνιμη ράβδος &amp;φίλτρου</translation>
+        <translation>Μόνιμη γραμμή &amp;φίλτρου</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="812"/>
