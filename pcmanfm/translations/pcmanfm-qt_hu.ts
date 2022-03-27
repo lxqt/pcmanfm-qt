@@ -1073,7 +1073,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../main-win.ui" line="933"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>&amp;Rejtett gyorsbillentyűk</translation>
+        <translation>Rejtett &amp;gyorsbillentyűk</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="938"/>
