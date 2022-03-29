@@ -153,7 +153,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation>Zadať vzdialenú zložku do ktorej sa chcete pripojiť</translation>
+        <translation>Zadajte vzdialený priečinok, do ktorého sa chcete pripojiť</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
@@ -261,12 +261,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation>Plocha</translation>
+        <translation>Pracovná plocha</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation>Priečinok plochy:</translation>
+        <translation>Priečinok pracovnej plochy:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
@@ -281,7 +281,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation>&amp;Prechádzať</translation>
+        <translation>&amp;Prehľadávať</translation>
     </message>
 </context>
 <context>
@@ -445,7 +445,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../desktop-preferences.ui" line="400"/>
         <source>Wallpaper image folder:</source>
-        <translation>Priečinok obrázka na pozadí:</translation>
+        <translation>Priečinok s tapetami:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="407"/>
@@ -480,7 +480,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
         <source>Wallpaper folder</source>
-        <translation>Zložka s obrázkom na plochu</translation>
+        <translation>Priečinok s tapetami</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="496"/>
@@ -935,7 +935,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="581"/>
         <source>&amp;Folder First</source>
-        <translation>&amp;Zložka ako prvá</translation>
+        <translation>&amp;Priečinky na vrchu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="589"/>
@@ -945,7 +945,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
@@ -1267,7 +1267,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../main-win.ui" line="683"/>
         <source>&amp;Folder Properties</source>
-        <translation>@Vlastnosti zložky</translation>
+        <translation>Vlastnosti &amp;priečinka</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="712"/>
@@ -1580,7 +1580,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="301"/>
         <source>Select Wallpaper Folder</source>
-        <translation>Vybrať priečinok s pozadiami plochy</translation>
+        <translation>Vybrať priečinok s tapetami</translation>
     </message>
 </context>
 <context>
@@ -1722,7 +1722,7 @@ kliknete ľavým tlačidlom myši, aj keď nejde o predvoleného správcu súbor
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Prajete si odstrániť nastavenia pre neexistujúce priečinky?
-Ak by ste vytvorili priečinky nanovo, riadili by sa súčasnými nastaveniami.</translation>
+Ak ich odstránite, nebudú sa dať použiť pri znovuvytvorení priečinkov.</translation>
     </message>
 </context>
 <context>
@@ -2245,7 +2245,7 @@ Hodnota -1 určuje neobmedzenú veľkosť súboru na vytvorenie náhľadu (predv
     <message>
         <location filename="../preferences.ui" line="797"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation>&amp;Na príslušnej karte prepnúť do domovskej zložky</translation>
+        <translation>&amp;Na príslušnej karte prepnúť do domáceho priečinka</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="824"/>
