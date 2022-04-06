@@ -1686,33 +1686,56 @@ QModelIndex DesktopWindow::navigateWithKey(int key, Qt::KeyboardModifiers modifi
         QRect workArea = getWorkArea(screen);
         int columns = workArea.width() / (itemSize.width() + listView_->spacing());
         int rows = workArea.height() / (itemSize.height() + listView_->spacing());
+        bool rtl(layoutDirection() == Qt::RightToLeft);
         while(!index.isValid() && workArea.contains(pos)) {
             switch(key) {
             case Qt::Key_Up:
                 pos.setY(pos.y() - itemSize.height() - listView_->spacing());
                 if(pos.y() < workArea.top()) {
-                    pos.setX(pos.x() - itemSize.width() - listView_->spacing());
+                    if(rtl) {
+                        pos.setX(pos.x() + itemSize.width() + listView_->spacing());
+                    }
+                    else {
+                        pos.setX(pos.x() - itemSize.width() - listView_->spacing());
+                    }
                     pos.setY(workArea.top() + (rows - 1) * (itemSize.height() + listView_->spacing()));
                 }
                 break;
             case Qt::Key_Right:
                 pos.setX(pos.x() + itemSize.width() + listView_->spacing());
                 if(pos.x() + itemSize.width() > workArea.right() + 1) {
-                    pos.setY(pos.y() + itemSize.height() + listView_->spacing());
-                    pos.setX(workArea.left());
+                    if(rtl) {
+                        pos.setY(pos.y() - itemSize.height() - listView_->spacing());
+                        pos.setX(workArea.right() + 1 - (columns - 1) * (itemSize.width() + listView_->spacing()));
+                    }
+                    else {
+                        pos.setY(pos.y() + itemSize.height() + listView_->spacing());
+                        pos.setX(workArea.left());
+                    }
                 }
                 break;
             case Qt::Key_Left:
                 pos.setX(pos.x() - itemSize.width() - listView_->spacing());
                 if(pos.x() < workArea.left()) {
-                    pos.setY(pos.y() - itemSize.height() - listView_->spacing());
-                    pos.setX(workArea.left() + (columns - 1) * (itemSize.width() + listView_->spacing()));
+                    if(rtl) {
+                        pos.setY(pos.y() + itemSize.height() + listView_->spacing());
+                        pos.setX(workArea.right() + 1 - itemSize.width() - listView_->spacing());
+                    }
+                    else {
+                        pos.setY(pos.y() - itemSize.height() - listView_->spacing());
+                        pos.setX(workArea.left() + (columns - 1) * (itemSize.width() + listView_->spacing()));
+                    }
                 }
                 break;
             default: // consider any other value as Qt::Key_Down
                 pos.setY(pos.y() + itemSize.height() + listView_->spacing());
                 if(pos.y() + itemSize.height() > workArea.bottom() + 1) {
-                    pos.setX(pos.x() + itemSize.width() + listView_->spacing());
+                    if(rtl) {
+                        pos.setX(pos.x() - itemSize.width() - listView_->spacing());
+                    }
+                    else {
+                        pos.setX(pos.x() + itemSize.width() + listView_->spacing());
+                    }
                     pos.setY(workArea.top());
                 }
                 break;
@@ -1919,17 +1942,11 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             }
         }
     }
+    bool rtl(layoutDirection() == Qt::RightToLeft);
     if(moveItem) {
         e->accept();
         // move selected items to the drop position, preserving their relative positions
         QPoint dropPos = e->pos();
-
-        // NOTE: DND always reports the position in the usual (LTR) coordinates.
-        // Therefore, to have the same calculations regardless of the layout direction,
-        // we reverse the x-coordinate with RTL.
-        if(layoutDirection() == Qt::RightToLeft) {
-            dropPos.setX(width() - dropPos.x());
-        }
 
         if(curIndx.isValid()) {
             QPoint curPoint = listView_->visualRect(curIndx).topLeft();
@@ -1938,6 +1955,12 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
             auto file = proxyModel_->fileInfoFromIndex(curIndx);
             if(file) {
                 QPoint pos = dropPos;
+                // NOTE: DND always reports the drop position in the usual (LTR) coordinates.
+                // Therefore, to have the same calculations regardless of the layout direction,
+                // we reverse the x-coordinate with RTL.
+                if(rtl) {
+                    pos.setX(width() - pos.x());
+                }
                 stickToPosition(file->name(), pos, workArea, grid);
             }
 
@@ -1950,6 +1973,9 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                 file = proxyModel_->fileInfoFromIndex(indx);
                 if(file) {
                     QPoint nxtDropPos = dropPos + listView_->visualRect(indx).topLeft() - curPoint;
+                    if(rtl) { // like above
+                        nxtDropPos.setX(width() - nxtDropPos.x());
+                    }
                     nxtDropPos.setX(qBound(workArea.left(), nxtDropPos.x(), workArea.right() + 1));
                     nxtDropPos.setY(qBound(workArea.top(), nxtDropPos.y(), workArea.bottom() + 1));
                     stickToPosition(file->name(), nxtDropPos, workArea, grid);
@@ -2007,7 +2033,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
                || e->dropAction() == Qt::LinkAction)) {
             const QString desktopDir = XdgDir::readDesktopDir() + QString(QLatin1String("/"));
             QPoint dropPos = e->pos();
-            if(layoutDirection() == Qt::RightToLeft) { // see the previous case for the reason
+            if(rtl) { // see the previous case for the reason
                 dropPos.setX(width() - dropPos.x());
             }
             const QList<QUrl> urlList = mimeData->urls();
