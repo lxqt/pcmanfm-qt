@@ -1,3 +1,16 @@
+pcmanfm-qt-1.1.0 / 2022-04-15
+==============================
+ * Added "Recent Files" to File menu.
+ * Initialized three Boolean variables in `settings.cpp`.
+ * Removed hard-coded link style in About dialog.
+ * Fixed DND and keyboard navigation on RTL desktops.
+ * Fixed a rare issue in selection of new files.
+ * Added "Open in Terminal" to the top of folder context menu.
+ * Implemented `org.freedesktop.FileManager1` (for apps that call the default file manager to show files inside a directory or to do other jobs).
+ * Added page names to the descriptions of pref command-line options.
+ * Corrected a condition for transient filter-bar.
+ * Fixed an issue in positioning of sticky items on Desktop.
+
 pcmanfm-qt-1.0.0 / 2021-11-04
 ==============================
  * Better text colors in inactive frame of split view.
