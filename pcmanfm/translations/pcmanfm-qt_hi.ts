@@ -549,7 +549,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
         <source>Ctrl+Esc</source>
-        <translation type="unfinished">Ctrl+Esc</translation>
+        <translation>Ctrl+Esc</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="42"/>
@@ -559,7 +559,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="47"/>
         <source>Ctrl+L</source>
-        <translation type="unfinished">Ctrl+L</translation>
+        <translation>Ctrl+L</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="50"/>
@@ -586,7 +586,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation type="unfinished">Ctrl+Shift+Tab</translation>
+        <translation>Ctrl+Shift+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
@@ -663,7 +663,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation type="unfinished">Drag+Ctrl</translation>
+        <translation>Drag+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
@@ -673,7 +673,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation type="unfinished">Drag+Shift+Ctrl</translation>
+        <translation>Drag+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
@@ -851,7 +851,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="464"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished">Ctrl+X</translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="473"/>
@@ -946,7 +946,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished">Shift+F2</translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
@@ -991,7 +991,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="707"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished">Ctrl+Q</translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="725"/>
@@ -1026,7 +1026,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="881"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished">Ctrl+I</translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="889"/>
@@ -1041,7 +1041,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="895"/>
         <source>F6</source>
-        <translation type="unfinished">F6</translation>
+        <translation>F6</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="900"/>
@@ -1051,7 +1051,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="903"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished">Ctrl+Shift+C</translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="914"/>
@@ -1071,7 +1071,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="928"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="933"/>
