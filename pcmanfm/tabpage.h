@@ -45,6 +45,7 @@ class Launcher;
 
 class ProxyFilter : public Fm::ProxyFolderModelFilter {
 public:
+    ProxyFilter() : fullName_{true} {}
     bool filterAcceptsRow(const Fm::ProxyFolderModel* model, const std::shared_ptr<const Fm::FileInfo>& info) const;
     virtual ~ProxyFilter() {}
     QString getFilterStr() {
@@ -53,8 +54,12 @@ public:
     void setFilterStr(QString str) {
         filterStr_ = str;
     }
+    void filterFullName(bool fullName) {
+        fullName_ = fullName;
+    }
 
 private:
+    bool fullName_;
     QString filterStr_;
 };
 
