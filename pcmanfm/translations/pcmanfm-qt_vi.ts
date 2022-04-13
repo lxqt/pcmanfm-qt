@@ -25,14 +25,20 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.ui" line="91"/>
+        <location filename="../about.ui" line="62"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="95"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.ui" line="113"/>
+        <location filename="../about.ui" line="117"/>
         <source>PCManFM-Qt File Manager
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
@@ -53,12 +59,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.ui" line="82"/>
+        <location filename="../about.ui" line="86"/>
         <source>Authors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.ui" line="104"/>
+        <location filename="../about.ui" line="108"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1427,7 +1433,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../application.cpp" line="648"/>
         <location filename="../application.cpp" line="653"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Lỗi</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="653"/>
@@ -1671,7 +1677,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="174"/>
         <location filename="../mainwindow.cpp" line="2131"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Xóa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1974"/>
@@ -1682,7 +1688,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="2238"/>
         <location filename="../mainwindow.cpp" line="2246"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Lỗi</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2246"/>
@@ -1729,7 +1735,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="523"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Lỗi</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="532"/>

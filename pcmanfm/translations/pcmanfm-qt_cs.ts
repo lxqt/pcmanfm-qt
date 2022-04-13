@@ -21,7 +21,13 @@
 </translation>
     </message>
     <message>
-        <location filename="../about.ui" line="91"/>
+        <location filename="../about.ui" line="62"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="95"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
@@ -35,17 +41,17 @@
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PCManFM-Qt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="82"/>
+        <location filename="../about.ui" line="86"/>
         <source>Authors</source>
         <translation>Autoři</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="104"/>
+        <location filename="../about.ui" line="108"/>
         <source>License</source>
         <translation>Licence</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="113"/>
+        <location filename="../about.ui" line="117"/>
         <source>PCManFM-Qt File Manager
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
