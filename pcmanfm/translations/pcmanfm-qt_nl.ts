@@ -26,7 +26,13 @@
 </translation>
     </message>
     <message>
-        <location filename="../about.ui" line="91"/>
+        <location filename="../about.ui" line="62"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="95"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
@@ -35,7 +41,7 @@
 </translation>
     </message>
     <message>
-        <location filename="../about.ui" line="113"/>
+        <location filename="../about.ui" line="117"/>
         <source>PCManFM-Qt File Manager
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
@@ -71,12 +77,12 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 Boston, MA 02110-1301 USA.</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="82"/>
+        <location filename="../about.ui" line="86"/>
         <source>Authors</source>
         <translation>Makers</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="104"/>
+        <location filename="../about.ui" line="108"/>
         <source>License</source>
         <translation>Licentie</translation>
     </message>
@@ -1756,7 +1762,7 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../tabpage.cpp" line="532"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="549"/>
