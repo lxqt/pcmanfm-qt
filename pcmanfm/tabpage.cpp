@@ -48,7 +48,8 @@ bool ProxyFilter::filterAcceptsRow(const Fm::ProxyFolderModel* model, const std:
     if(!model || !info) {
         return true;
     }
-    QString baseName = QString::fromStdString(info->name());
+    QString baseName = fullName_ && !info->name().empty() ? QString::fromStdString(info->name())
+                                                          : info->displayName();
     if(!filterStr_.isEmpty() && !baseName.contains(filterStr_, Qt::CaseInsensitive)) {
         return false;
     }
@@ -677,9 +678,11 @@ void TabPage::chdir(Fm::FilePath newPath, bool addHistory) {
        || newPath.hasUriScheme("menu") || newPath.hasUriScheme("trash")
        || newPath.hasUriScheme("network") || newPath.hasUriScheme("computer")) {
         folderModel_->setShowFullName(false);
+        proxyFilter_->filterFullName(false);
     }
     else {
         folderModel_->setShowFullName(true);
+        proxyFilter_->filterFullName(true);
     }
 
     // folderSettings_ will be set by saveFolderSorting() when the sort filter is changed below
@@ -965,18 +968,28 @@ void TabPage::applyFilter() {
         }
     }
     else {
+        bool selectionMade = false;
         if(firstIndx.isValid()
-           && !static_cast<Application*>(qApp)->settings().showFilter()
-           && !folderView_->selectionModel()->isSelected(firstIndx)) {
-            // select the first item if the filter-bar is transient
-            folderView_->childView()->setCurrentIndex(firstIndx);
-        }
-        else {
-            // if no new selection is made and some selected files are filtered out,
-            // "View::selChanged()" won't be emitted
-            if(prevSelSize > folderView_->selectionModel()->selectedIndexes().size()) {
-                onSelChanged();
+           && !static_cast<Application*>(qApp)->settings().showFilter()) {
+            // preselect an appropriate item if the filter-bar is transient
+            auto indexList = proxyModel_->match(firstIndx, Qt::DisplayRole, proxyFilter_->getFilterStr());
+            if(!indexList.isEmpty()) {
+                if(!folderView_->selectionModel()->isSelected(indexList.at(0))) {
+                    folderView_->childView()->setCurrentIndex(indexList.at(0));
+                    selectionMade = true;
+                }
             }
+            else if(!folderView_->selectionModel()->isSelected(firstIndx)) {
+                folderView_->childView()->setCurrentIndex(firstIndx);
+                selectionMade = true;
+            }
+        }
+
+        // if no new selection is made and some selected files are filtered out,
+        // "View::selChanged()" won't be emitted
+        if(!selectionMade
+           && prevSelSize > folderView_->selectionModel()->selectedIndexes().size()) {
+                onSelChanged();
         }
 
         // ensure that the current item exists and is visible
