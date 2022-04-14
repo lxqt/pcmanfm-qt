@@ -29,7 +29,8 @@
         <location filename="../about.ui" line="62"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="95"/>
@@ -492,7 +493,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="496"/>
         <source>Randomize the slide show</source>
-        <translation>Τυχαιοποίηση του διαποράματος</translation>
+        <translation>Τυχαιοποίηση των διαφανειών</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="529"/>
@@ -717,7 +718,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="289"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="292"/>
@@ -2283,7 +2284,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="902"/>
         <source>Show only one template for each MIME type</source>
-        <translation>Εμφάνιση μόνο ενός πρότυπου για έκαστον τύπο MIME</translation>
+        <translation>Εμφάνιση ενός μόνο πρότυπου για κάθε τύπο MIME</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="909"/>
@@ -2293,7 +2294,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="395"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation>Χρήση προθεμάτων δεκαδικών SI αντί για δυαδικά προθέματα IEC</translation>
+        <translation>Χρήση δεκαδικών προθεμάτων SI αντί για δυαδικά προθέματα IEC</translation>
     </message>
 </context>
 <context>
