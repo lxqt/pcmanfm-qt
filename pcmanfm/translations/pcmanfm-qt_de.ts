@@ -722,7 +722,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Neueste Date&amp;ien</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -912,7 +912,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Umschalt+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
@@ -2054,7 +2054,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Anzahl der neuen Dateien:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
