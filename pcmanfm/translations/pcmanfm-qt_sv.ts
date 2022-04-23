@@ -29,7 +29,8 @@
         <location filename="../about.ui" line="62"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
     </message>
     <message>
         <location filename="../about.ui" line="95"/>
@@ -59,7 +60,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation type="unfinished"></translation>
+        <translation>PCManFM-Qt Filhanterare
+
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
+
+Detta program är fri programvara. Du kan distribuera det och/eller
+ändra det under villkoren i GNU General Public License, publicerad 
+av Free Software Foundation, antingen version 2 av licensen, 
+eller (om du så önskar) någon senare version.
+
+Detta program distribueras i hopp om att det ska vara användbart, 
+men UTAN NÅGON SOM HELST GARANTI, även utan underförstådd
+garanti om SÄLJBARHET eller LÄMPLIGHET FÖR NÅGOT SPECIELLT
+ÄNDAMÅL. Se GNU General Public License för ytterligare information.
+
+Du ska ha fått en kopia av GNU General Public License tillsammans
+med detta program. Om inte, skriv till Free Software Foundation, Inc., 
+51 Franklin Steet, Fifth Floor, Boston, MA 02110- 1301, USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="86"/>
@@ -934,12 +951,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Bevara inställningar rekursivt från &amp;Här</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="959"/>
@@ -984,7 +1001,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="725"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna flik i &amp;Root instans</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
@@ -999,7 +1016,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Bevara inställningarna för &amp;denna mappen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="875"/>
@@ -1069,7 +1086,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="938"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna flik i &amp;Admin läge</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="943"/>
@@ -1549,7 +1566,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Placera bilden så att den fyller hela skärmen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="58"/>
@@ -2038,7 +2055,7 @@ They might be useful if those folders are created again.</source>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../preferences.ui" line="369"/>
         <source>Used by Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Används av Tumnagelvy</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="389"/>
@@ -2058,7 +2075,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Inaktivera smidig rullning i listläge och kompaktläge</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
@@ -2194,7 +2211,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="754"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatisk montering</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="760"/>
@@ -2214,12 +2231,12 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="784"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>När borttagningsbar media avmonteras:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="790"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng &amp;flik innehållande borttagningsbar media</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="797"/>
@@ -2244,7 +2261,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="866"/>
         <source>Archiver in&amp;tegration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Arkiverings in&amp;tegration:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="889"/>
@@ -2292,7 +2309,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="82"/>
         <source>Renaming is aborted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Namnbyte avbröts.</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
