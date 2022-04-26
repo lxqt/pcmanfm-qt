@@ -2096,7 +2096,7 @@ Mohly by se ještě hodit v případě znovuvytvoření těchto složek.</transl
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Vypnout plynulé posouvání v seznamu a kompaktních režimech</translation>
     </message>
     <message>

@@ -433,7 +433,7 @@
             <item row="5" column="0" colspan="5">
              <widget class="QCheckBox" name="noScrollPerPixel">
               <property name="text">
-               <string>Disable smooth scrolling in list and compact modes</string>
+               <string>Disable smooth scrolling</string>
               </property>
              </widget>
             </item>

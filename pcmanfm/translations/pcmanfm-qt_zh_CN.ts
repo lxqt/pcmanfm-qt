@@ -2066,7 +2066,7 @@ They might be useful if those folders are created again.</source>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>列表视图和详情视图下禁用平滑滚动</translation>
     </message>
     <message>

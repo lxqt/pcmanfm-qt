@@ -2080,7 +2080,7 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Išjungti glotnų slinkimą sąrašo ir glaustoje veiksenoje</translation>
     </message>
     <message>

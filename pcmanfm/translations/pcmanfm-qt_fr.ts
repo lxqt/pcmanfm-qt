@@ -2091,7 +2091,7 @@ Ils peuvent être utiles si ces dossiers sont à nouveau créés.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Désactiver le défilement doux dans les listes et en mode compact</translation>
     </message>
     <message>

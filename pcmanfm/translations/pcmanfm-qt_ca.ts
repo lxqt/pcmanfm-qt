@@ -2076,7 +2076,7 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Desactiva el desplaçament suau en els modes de llista i compacte</translation>
     </message>
     <message>

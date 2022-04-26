@@ -2095,7 +2095,7 @@ Mogą się one przydać jeśli te foldery zostaną stworzone ponownie.</translat
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Wyłącz gładkie przewijanie w trybie listy i kompaktowym</translation>
     </message>
     <message>

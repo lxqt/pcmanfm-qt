@@ -2092,7 +2092,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

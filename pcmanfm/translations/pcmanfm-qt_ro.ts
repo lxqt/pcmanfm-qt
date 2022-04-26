@@ -2079,7 +2079,7 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

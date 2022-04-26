@@ -2092,7 +2092,7 @@ Eles podem ser úteis se essas pastas forem criadas novamente.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Desativar rolagem suave nos modos de lista e compacta</translation>
     </message>
     <message>

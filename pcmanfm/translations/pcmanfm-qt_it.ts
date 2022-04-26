@@ -2093,7 +2093,7 @@ Potrebbero essere utili se le cartelle vengono ricreate.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Disabilita scorrimento fluido in modalità elenco e compatto</translation>
     </message>
     <message>

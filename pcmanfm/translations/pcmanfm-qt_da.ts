@@ -2075,7 +2075,7 @@ De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

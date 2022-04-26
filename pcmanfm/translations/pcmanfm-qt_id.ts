@@ -2071,7 +2071,7 @@ Mereka mungkin berguna jika folder itu dibuat lagi.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Nonaktifkan gulir halus dalam mode daftar dan mode ringkas</translation>
     </message>
     <message>

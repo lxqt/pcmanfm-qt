@@ -2081,7 +2081,7 @@ Ak ich odstránite, nebudú sa dať použiť pri znovuvytvorení priečinkov.</t
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Zakázať plynulé rolovanie v zoznamoch a kompaktných režimoch</translation>
     </message>
     <message>

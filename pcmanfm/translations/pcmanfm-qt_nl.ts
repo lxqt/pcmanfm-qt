@@ -2075,7 +2075,7 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Vloeiend schuiven uitschakelen in compacte en lijstmodus</translation>
     </message>
     <message>

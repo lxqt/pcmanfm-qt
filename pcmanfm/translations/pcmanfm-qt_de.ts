@@ -2091,7 +2091,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Sanften Bildlauf in den Modi Liste und Kompakt deaktivieren</translation>
     </message>
     <message>

@@ -2075,7 +2075,7 @@ De kan være nyttige hvis disse mappene opprettes igjen.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Skru av myk rulling i kompakt- og listemodus</translation>
     </message>
     <message>

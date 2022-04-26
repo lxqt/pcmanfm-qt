@@ -2072,7 +2072,7 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Liste ve sıkı modlarda yumuşak kaydırmayı devre dışı bırakın</translation>
     </message>
     <message>

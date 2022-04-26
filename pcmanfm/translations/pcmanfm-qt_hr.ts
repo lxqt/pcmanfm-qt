@@ -2081,7 +2081,7 @@ Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="436"/>
-        <source>Disable smooth scrolling in list and compact modes</source>
+        <source>Disable smooth scrolling</source>
         <translation>Deaktiviraj neprekidno pomicanje u popisu i kompaktnom načinu rada</translation>
     </message>
     <message>
