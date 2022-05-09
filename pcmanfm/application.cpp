@@ -523,6 +523,8 @@ void Application::onFindFileAccepted() {
     settings_.setSearchContentRegexp(dlg->contentRegexp());
     settings_.setSearchRecursive(dlg->recursive());
     settings_.setSearchhHidden(dlg->searchhHidden());
+    settings_.addNamePattern(dlg->namePattern());
+    settings_.addContentPattern(dlg->contentPattern());
 
     Fm::FilePathList paths;
     paths.emplace_back(dlg->searchUri());
@@ -551,6 +553,8 @@ void Application::findFiles(QStringList paths) {
     dlg->setContentRegexp(settings_.searchContentRegexp());
     dlg->setRecursive(settings_.searchRecursive());
     dlg->setSearchhHidden(settings_.searchhHidden());
+    dlg->addNamePatterns(settings_.namePatterns());
+    dlg->addContentPatterns(settings_.contentPatterns());
 
     dlg->show();
 }
