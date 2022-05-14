@@ -19,21 +19,7 @@
         <translation>轻量级文件管理器</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="58"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="62"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="95"/>
+        <location filename="../about.ui" line="122"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
@@ -42,7 +28,7 @@
 </translation>
     </message>
     <message>
-        <location filename="../about.ui" line="117"/>
+        <location filename="../about.ui" line="144"/>
         <source>PCManFM-Qt File Manager
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
@@ -76,12 +62,22 @@ Copyright (C) 2009 - 2014 洪任谕 (Hong Jen Yee)
 如果没有，请写信给自由软件基金会，地址：51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA。</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="86"/>
+        <location filename="../about.ui" line="113"/>
         <source>Authors</source>
         <translation>作者</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="108"/>
+        <location filename="../about.ui" line="58"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="74"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="135"/>
         <source>License</source>
         <translation>协议</translation>
     </message>
@@ -1449,13 +1445,13 @@ are left clicked, even when it is not the default file manager.</source>
         <translation>[文件1, 文件2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="648"/>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="652"/>
+        <location filename="../application.cpp" line="657"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="657"/>
         <source>Terminal emulator is not set.</source>
         <translation>终端模拟器未设置。</translation>
     </message>
@@ -1651,7 +1647,7 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="93"/>
+        <location filename="../tabpage.cpp" line="94"/>
         <source>Filter:</source>
         <translation>过滤器：</translation>
     </message>
@@ -1659,7 +1655,7 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="63"/>
+        <location filename="../tabpage.cpp" line="64"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>清除文字 (Ctrl+K 或 Esc)</translation>
     </message>
@@ -1752,38 +1748,43 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="523"/>
+        <location filename="../tabpage.cpp" line="442"/>
+        <source>Search Results</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="529"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="532"/>
+        <location filename="../tabpage.cpp" line="538"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>可用空间: %1 (总容量: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="549"/>
+        <location filename="../tabpage.cpp" line="555"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n 个项目</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="551"/>
+        <location filename="../tabpage.cpp" line="557"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n 个隐藏)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="556"/>
-        <location filename="../tabpage.cpp" line="752"/>
-        <location filename="../tabpage.cpp" line="766"/>
+        <location filename="../tabpage.cpp" line="562"/>
+        <location filename="../tabpage.cpp" line="760"/>
+        <location filename="../tabpage.cpp" line="774"/>
         <source>Link to</source>
         <translation>链接至</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="778"/>
+        <location filename="../tabpage.cpp" line="786"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>已选中 %n 个项目</numerusform>
@@ -2166,7 +2167,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>示例：&lt;br&gt;终端执行：&lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;切换用户执行: &lt;i&gt;lxsudo %s&lt;/i&gt; 或 &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; 是你想要用终端或者 su 运行的命令。&lt;br&gt; 重要提醒：请使用 lxsudo，仅使用 sudo 会破坏设置文件的权限。</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="944"/>
+        <location filename="../preferences.ui" line="919"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="934"/>
+        <source>Maximum search history:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="948"/>
+        <source>Clear search history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="983"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>应用程序需要重新启动以使更改生效。</translation>
     </message>
@@ -2311,7 +2327,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1094"/>
+        <location filename="../tabpage.cpp" line="1112"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
@@ -2326,7 +2342,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>某些文件不能被重命名。</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1094"/>
+        <location filename="../tabpage.cpp" line="1112"/>
         <source>Cannot open as Admin.</source>
         <translation>无法以管理员身份打开。</translation>
     </message>
