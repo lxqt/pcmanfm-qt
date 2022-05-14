@@ -438,7 +438,12 @@ void TabPage::onFilesAdded(Fm::FileInfoList files) {
 void TabPage::onFolderFinishLoading() {
     auto fi = folder_->info();
     if(fi) { // if loading of the folder fails, it's possible that we don't have FmFileInfo.
-        title_ = fi->displayName();
+        if(folder_->path().hasUriScheme("search")) {
+            title_ = tr("Search Results"); // FIXME: Localize it in libfm-qt!
+        }
+        else {
+            title_ = fi->displayName();
+        }
         Q_EMIT titleChanged();
     }
 
