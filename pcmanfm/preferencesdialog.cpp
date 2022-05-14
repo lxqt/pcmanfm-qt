@@ -278,6 +278,8 @@ void PreferencesDialog::initAdvancedPage(Settings& settings) {
 
     // FIXME: Hide options that we don't support yet.
     ui.templateRunApp->hide();
+
+    ui.maxSearchHistory->setValue(settings.maxSearchHistory());
 }
 
 void PreferencesDialog::initFromSettings() {
@@ -288,6 +290,10 @@ void PreferencesDialog::initFromSettings() {
     initThumbnailPage(settings);
     initVolumePage(settings);
     initAdvancedPage(settings);
+
+    connect(ui.clearSearchHistory, &QAbstractButton::clicked, [this, &settings] {
+        settings.clearSearchHistory();
+    });
 }
 
 void PreferencesDialog::applyDisplayPage(Settings& settings) {
@@ -379,6 +385,8 @@ void PreferencesDialog::applyAdvancedPage(Settings& settings) {
     settings.setOnlyUserTemplates(ui.onlyUserTemplates->isChecked());
     settings.setTemplateTypeOnce(ui.templateTypeOnce->isChecked());
     settings.setTemplateRunApp(ui.templateRunApp->isChecked());
+
+    settings.setMaxSearchHistory(ui.maxSearchHistory->value());
 }
 
 

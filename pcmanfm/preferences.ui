@@ -817,7 +817,7 @@ A value of -1 means that there is no limit for the file size (the default).</str
         </layout>
        </widget>
        <widget class="QWidget" name="advancedPage">
-        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,1">
+        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,1">
          <item>
           <widget class="QGroupBox" name="groupBox">
            <property name="title">
@@ -907,6 +907,45 @@ A value of -1 means that there is no limit for the file size (the default).</str
              <widget class="QCheckBox" name="templateRunApp">
               <property name="text">
                <string>Run default application after creation from template</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_10">
+           <property name="title">
+            <string>Search</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout_4">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::ExpandingFieldsGrow</enum>
+            </property>
+            <property name="horizontalSpacing">
+             <number>5</number>
+            </property>
+            <property name="verticalSpacing">
+             <number>5</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>Maximum search history:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="maxSearchHistory">
+              <property name="maximum">
+               <number>50</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QToolButton" name="clearSearchHistory">
+              <property name="text">
+               <string>Clear search history</string>
               </property>
              </widget>
             </item>

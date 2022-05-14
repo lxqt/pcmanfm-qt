@@ -142,6 +142,7 @@ Settings::Settings():
     searchContentRegexp_(true),
     searchRecursive_(false),
     searchhHidden_(false),
+    maxSearchHistory_(0),
     recentFilesNumber_(0) {
 }
 
@@ -349,6 +350,11 @@ bool Settings::loadFile(QString filePath) {
     searchContentRegexp_ = settings.value(QStringLiteral("searchContentRegexp"), true).toBool();
     searchRecursive_ = settings.value(QStringLiteral("searchRecursive"), false).toBool();
     searchhHidden_ = settings.value(QStringLiteral("searchhHidden"), false).toBool();
+    maxSearchHistory_ = qBound(0, settings.value(QStringLiteral("MaxSearchHistory"), 0).toInt(), 50);
+    namePatterns_ = settings.value(QStringLiteral("NamePatterns")).toStringList();
+    namePatterns_.removeDuplicates();
+    contentPatterns_ = settings.value(QStringLiteral("ContentPatterns")).toStringList();
+    contentPatterns_.removeDuplicates();
     settings.endGroup();
 
     return true;
@@ -494,6 +500,9 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("searchContentRegexp"), searchContentRegexp_);
     settings.setValue(QStringLiteral("searchRecursive"), searchRecursive_);
     settings.setValue(QStringLiteral("searchhHidden"), searchhHidden_);
+    settings.setValue(QStringLiteral("MaxSearchHistory"), maxSearchHistory_);
+    settings.setValue(QStringLiteral("NamePatterns"), namePatterns_);
+    settings.setValue(QStringLiteral("ContentPatterns"), contentPatterns_);
     settings.endGroup();
 
     return true;
@@ -546,6 +555,52 @@ void Settings::saveRecentFiles() {
     settings.beginGroup(QStringLiteral("Recent"));
     settings.setValue(QStringLiteral("Files"), recentFiles_);
     settings.endGroup();
+}
+
+void Settings::clearSearchHistory() {
+    namePatterns_.clear();
+    contentPatterns_.clear();
+}
+
+void Settings::setMaxSearchHistory(int max) {
+    maxSearchHistory_ = qMax(max, 0);
+    if(maxSearchHistory_ == 0) {
+        namePatterns_.clear();
+        contentPatterns_.clear();
+    }
+    else {
+        while(namePatterns_.size() > maxSearchHistory_) {
+            namePatterns_.removeLast();
+        }
+        while(contentPatterns_.size() > maxSearchHistory_) {
+            contentPatterns_.removeLast();
+        }
+    }
+}
+
+void Settings::addNamePattern(const QString& pattern) {
+    if(maxSearchHistory_ == 0 || pattern.isEmpty()
+       // "*" is too trivial with a regex search
+       || (searchNameRegexp_ && pattern == QLatin1String("*"))) {
+        return;
+    }
+    namePatterns_.removeOne(pattern);
+    namePatterns_.prepend(pattern);
+    while(namePatterns_.size() > maxSearchHistory_) {
+        namePatterns_.removeLast();
+    }
+}
+
+void Settings::addContentPattern(const QString& pattern) {
+    if(maxSearchHistory_ == 0 || pattern.isEmpty()
+       || (searchContentRegexp_ && pattern == QLatin1String("*"))) {
+        return;
+    }
+    contentPatterns_.removeOne(pattern);
+    contentPatterns_.prepend(pattern);
+    while(contentPatterns_.size() > maxSearchHistory_) {
+        contentPatterns_.removeLast();
+    }
 }
 
 const QList<int> & Settings::iconSizes(IconType type) {
