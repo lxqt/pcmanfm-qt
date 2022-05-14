@@ -1236,7 +1236,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="654"/>
         <source>Del</source>
-        <translation>删除</translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="659"/>
