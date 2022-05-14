@@ -19,21 +19,7 @@
         <translation>Hafif bir dosya yöneticisi</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="58"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="62"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="95"/>
+        <location filename="../about.ui" line="122"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
@@ -42,7 +28,7 @@
 </translation>
     </message>
     <message>
-        <location filename="../about.ui" line="117"/>
+        <location filename="../about.ui" line="144"/>
         <source>PCManFM-Qt File Manager
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
@@ -80,12 +66,22 @@ VAKIF, Inc., 51 Franklin Caddesi, Beşinci Kat, Boston, MA  02110-1301, ABD.
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="86"/>
+        <location filename="../about.ui" line="113"/>
         <source>Authors</source>
         <translation>Yazarlar</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="108"/>
+        <location filename="../about.ui" line="58"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="74"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="135"/>
         <source>License</source>
         <translation>Lisans</translation>
     </message>
@@ -1453,13 +1449,13 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <translation>[DOSYA1, DOSYA2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="648"/>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="652"/>
+        <location filename="../application.cpp" line="657"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="657"/>
         <source>Terminal emulator is not set.</source>
         <translation>Uçbirim öykünücüsü ayarlanmadı.</translation>
     </message>
@@ -1655,7 +1651,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="93"/>
+        <location filename="../tabpage.cpp" line="94"/>
         <source>Filter:</source>
         <translation>Filtre:</translation>
     </message>
@@ -1663,7 +1659,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="63"/>
+        <location filename="../tabpage.cpp" line="64"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>Metni Temizle (Ctrl+K veya Esc)</translation>
     </message>
@@ -1757,38 +1753,43 @@ Bu klasörler yeniden oluşturulursa faydalı olabilirler.</translation>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="523"/>
+        <location filename="../tabpage.cpp" line="442"/>
+        <source>Search Results</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="529"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="532"/>
+        <location filename="../tabpage.cpp" line="538"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Boş alan: %1 (Toplam %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="549"/>
+        <location filename="../tabpage.cpp" line="555"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n nesne</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="551"/>
+        <location filename="../tabpage.cpp" line="557"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n gizli)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="556"/>
-        <location filename="../tabpage.cpp" line="752"/>
-        <location filename="../tabpage.cpp" line="766"/>
+        <location filename="../tabpage.cpp" line="562"/>
+        <location filename="../tabpage.cpp" line="760"/>
+        <location filename="../tabpage.cpp" line="774"/>
         <source>Link to</source>
         <translation>Bağlantı</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="778"/>
+        <location filename="../tabpage.cpp" line="786"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n nesne seçildi</numerusform>
@@ -2172,7 +2173,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>Örnekler: &lt;br&gt; Terminal için: &lt;i&gt;xterm -e% s&lt;/i&gt; &lt;br&gt; Kullanıcı değiştirmek için: &lt;i&gt;lxsudo %s&lt;/i&gt; veya &lt;i&gt;lxsudo dbus-run-session --%s&lt;/i&gt; &lt;br&gt; &lt;i&gt;%s&lt;/i&gt; , terminal veya su ile yürütmek istediğiniz komut satırıdır. &lt;br&gt; Önemli: Lütfen lxsudo kullanın, tek başına sudo ayarlar dosyasının izinlerini bozacaktır.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="944"/>
+        <location filename="../preferences.ui" line="919"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="934"/>
+        <source>Maximum search history:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="948"/>
+        <source>Clear search history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="983"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Değişikliklerin etkili olması için uygulamanın yeniden başlatılması gerekiyor.</translation>
     </message>
@@ -2317,7 +2333,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1094"/>
+        <location filename="../tabpage.cpp" line="1112"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
@@ -2332,7 +2348,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>Bazı dosyalar yeniden isimlendirilemedi.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1094"/>
+        <location filename="../tabpage.cpp" line="1112"/>
         <source>Cannot open as Admin.</source>
         <translation>Yönetici olarak açılamıyor.</translation>
     </message>

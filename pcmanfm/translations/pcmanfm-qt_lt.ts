@@ -19,19 +19,7 @@
         <translation>Supaprastinta failų tvarkytuvė</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="58"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="62"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="95"/>
+        <location filename="../about.ui" line="122"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
@@ -40,7 +28,7 @@
 </translation>
     </message>
     <message>
-        <location filename="../about.ui" line="117"/>
+        <location filename="../about.ui" line="144"/>
         <source>PCManFM-Qt File Manager
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
@@ -77,12 +65,22 @@ Licencijos kopiją; jeigu jos negavote, rašykite Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="86"/>
+        <location filename="../about.ui" line="113"/>
         <source>Authors</source>
         <translation>Autoriai</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="108"/>
+        <location filename="../about.ui" line="58"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="74"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="135"/>
         <source>License</source>
         <translation>Licencija</translation>
     </message>
@@ -1451,13 +1449,13 @@ numatytoji failų tvarkytuvė.</translation>
         <translation>[FAILAS1, FAILAS2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="648"/>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="652"/>
+        <location filename="../application.cpp" line="657"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="657"/>
         <source>Terminal emulator is not set.</source>
         <translation>Terminalo emuliatorius nėra nustatytas.</translation>
     </message>
@@ -1655,7 +1653,7 @@ numatytoji failų tvarkytuvė.</translation>
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="93"/>
+        <location filename="../tabpage.cpp" line="94"/>
         <source>Filter:</source>
         <translation>Filtras:</translation>
     </message>
@@ -1663,7 +1661,7 @@ numatytoji failų tvarkytuvė.</translation>
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="63"/>
+        <location filename="../tabpage.cpp" line="64"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>Išvalyti tekstą (Ctrl+K arba Esc)</translation>
     </message>
@@ -1757,17 +1755,22 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="523"/>
+        <location filename="../tabpage.cpp" line="442"/>
+        <source>Search Results</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="529"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="532"/>
+        <location filename="../tabpage.cpp" line="538"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>Laisva vieta: %1 (Viso: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="549"/>
+        <location filename="../tabpage.cpp" line="555"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n elementas</numerusform>
@@ -1776,7 +1779,7 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="551"/>
+        <location filename="../tabpage.cpp" line="557"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n paslėptas)</numerusform>
@@ -1785,14 +1788,14 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="556"/>
-        <location filename="../tabpage.cpp" line="752"/>
-        <location filename="../tabpage.cpp" line="766"/>
+        <location filename="../tabpage.cpp" line="562"/>
+        <location filename="../tabpage.cpp" line="760"/>
+        <location filename="../tabpage.cpp" line="774"/>
         <source>Link to</source>
         <translation>Nuoroda į</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="778"/>
+        <location filename="../tabpage.cpp" line="786"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>Pažymėtas %n elementas</numerusform>
@@ -2181,7 +2184,22 @@ Reikšmė -1 reiškia, kad failų dydžiui nėra jokio apribojimo (pagal numatym
         <translation>Pavyzdžiai:&lt;br&gt;Terminalui: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;Naudotojo perjungimui: &lt;i&gt;lxsudo %s&lt;/i&gt; arba &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; yra komandų eilutė, kurią norite vykdyti naudojant terminalą ar su.&lt;br&gt; Svarbu: Naudokite lxsudo, nes vien tik sudo sugadins nustatymų failo leidimus.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="944"/>
+        <location filename="../preferences.ui" line="919"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="934"/>
+        <source>Maximum search history:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="948"/>
+        <source>Clear search history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="983"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>Tam, kad įsigaliotų pakeitimai, reikia paleisti programą iš naujo.</translation>
     </message>
@@ -2326,7 +2344,7 @@ Reikšmė -1 reiškia, kad failų dydžiui nėra jokio apribojimo (pagal numatym
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1094"/>
+        <location filename="../tabpage.cpp" line="1112"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
@@ -2341,7 +2359,7 @@ Reikšmė -1 reiškia, kad failų dydžiui nėra jokio apribojimo (pagal numatym
         <translation>Kai kurių failų pervadinti nepavyko.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1094"/>
+        <location filename="../tabpage.cpp" line="1112"/>
         <source>Cannot open as Admin.</source>
         <translation>Nepavyko atverti administratoriaus teisėmis.</translation>
     </message>

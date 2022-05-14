@@ -19,28 +19,14 @@
         <translation>가벼운 파일 관리자</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="58"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="62"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;Wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="95"/>
+        <location filename="../about.ui" line="122"/>
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../about.ui" line="117"/>
+        <location filename="../about.ui" line="144"/>
         <source>PCManFM-Qt File Manager
 
 Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
@@ -75,12 +61,22 @@ Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 Fifth Floor, Boston, MA 02110-1301, USA로 편지를 쓰세요.</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="86"/>
+        <location filename="../about.ui" line="113"/>
         <source>Authors</source>
         <translation>개발자</translation>
     </message>
     <message>
-        <location filename="../about.ui" line="108"/>
+        <location filename="../about.ui" line="58"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="74"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="135"/>
         <source>License</source>
         <translation>라이선스</translation>
     </message>
@@ -1450,13 +1446,13 @@ PCManFM-Qt에서 열립니다.</translation>
         <translation>[파일1, 파일2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="648"/>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="652"/>
+        <location filename="../application.cpp" line="657"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="653"/>
+        <location filename="../application.cpp" line="657"/>
         <source>Terminal emulator is not set.</source>
         <translation>터미널 에뮬레이터가 지정되지 않았습니다.</translation>
     </message>
@@ -1652,7 +1648,7 @@ PCManFM-Qt에서 열립니다.</translation>
 <context>
     <name>PCManFM::FilterBar</name>
     <message>
-        <location filename="../tabpage.cpp" line="93"/>
+        <location filename="../tabpage.cpp" line="94"/>
         <source>Filter:</source>
         <translation>필터:</translation>
     </message>
@@ -1660,7 +1656,7 @@ PCManFM-Qt에서 열립니다.</translation>
 <context>
     <name>PCManFM::FilterEdit</name>
     <message>
-        <location filename="../tabpage.cpp" line="63"/>
+        <location filename="../tabpage.cpp" line="64"/>
         <source>Clear text (Ctrl+K or Esc)</source>
         <translation>텍스트 지우기 (Ctrl+K 또는 ESC)</translation>
     </message>
@@ -1754,38 +1750,43 @@ They might be useful if those folders are created again.</source>
 <context>
     <name>PCManFM::TabPage</name>
     <message>
-        <location filename="../tabpage.cpp" line="523"/>
+        <location filename="../tabpage.cpp" line="442"/>
+        <source>Search Results</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="529"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="532"/>
+        <location filename="../tabpage.cpp" line="538"/>
         <source>Free space: %1 (Total: %2)</source>
         <translation>빈 공간: %1 (전체: %2)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="549"/>
+        <location filename="../tabpage.cpp" line="555"/>
         <source>%n item(s)</source>
         <translation>
             <numerusform>%n개 항목</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="551"/>
+        <location filename="../tabpage.cpp" line="557"/>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (%n개 숨김)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="556"/>
-        <location filename="../tabpage.cpp" line="752"/>
-        <location filename="../tabpage.cpp" line="766"/>
+        <location filename="../tabpage.cpp" line="562"/>
+        <location filename="../tabpage.cpp" line="760"/>
+        <location filename="../tabpage.cpp" line="774"/>
         <source>Link to</source>
         <translation>링크:</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="778"/>
+        <location filename="../tabpage.cpp" line="786"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n개 항목 선택됨</numerusform>
@@ -2169,7 +2170,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>예:&lt;br&gt;터미널의 경우: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;사용자 전환의 경우: &lt;i&gt;lxsudo %s&lt;/i&gt; 또는 &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt;은(는) 터미널 또는 su를 사용하여 실행할 명령줄입니다&lt;br&gt; 중요: lxsudo를 사용하십시오. sudo만 사용하면 설정 파일의 사용 권한이 손상됩니다.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="944"/>
+        <location filename="../preferences.ui" line="919"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="934"/>
+        <source>Maximum search history:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="948"/>
+        <source>Clear search history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="983"/>
         <source>Application restart is needed for changes to take effect.</source>
         <translation>변경 내용을 적용하려면 프로그램을 다시 시작해야 합니다.</translation>
     </message>
@@ -2314,7 +2330,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="108"/>
         <location filename="../bulkrename.cpp" line="111"/>
-        <location filename="../tabpage.cpp" line="1094"/>
+        <location filename="../tabpage.cpp" line="1112"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
@@ -2329,7 +2345,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation>일부 파일의 이름을 바꾸지 못했습니다.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1094"/>
+        <location filename="../tabpage.cpp" line="1112"/>
         <source>Cannot open as Admin.</source>
         <translation>관리자로 열 수 없습니다.</translation>
     </message>
