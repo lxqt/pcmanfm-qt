@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>אודות</translation>
+        <translation>על אודות</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -127,7 +127,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="71"/>
         <source>Rename selected files to:</source>
-        <translation>שינוי שם הקבצים הנבחרים לשם:</translation>
+        <translation>שינוי שמות הקבצים הנבחרים לשמות:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="84"/>
@@ -763,7 +763,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../main-win.ui" line="343"/>
         <source>&amp;About</source>
         <translatorcomment>המילה &quot;על&quot; לא נחוצה, אז הסרתי אותה.</translatorcomment>
-        <translation>&amp;אודות</translation>
+        <translation>על &amp;אודות</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="352"/>
@@ -1598,7 +1598,9 @@ are left clicked, even when it is not the default file manager.</source>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>אשפה (פריט אחד)</numerusform>
-            <numerusform>אשפה (שני פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1772,7 +1774,9 @@ They might be useful if those folders are created again.</source>
         <source>%n item(s)</source>
         <translation>
             <numerusform>פריט אחד</numerusform>
-            <numerusform>שני פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1780,7 +1784,9 @@ They might be useful if those folders are created again.</source>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
-            <numerusform> (שניים מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
     <message>
@@ -1795,7 +1801,9 @@ They might be useful if those folders are created again.</source>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>נבחר פריט אחד</numerusform>
-            <numerusform>נבחרו שני פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
 </context>
@@ -1810,8 +1818,10 @@ They might be useful if those folders are created again.</source>
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>לפתוח את קובץ ה־%1 הזה?</numerusform>
-            <numerusform>לפתוח את קובצי ה־%1 האלה?</numerusform>
+            <numerusform>לפתוח את הקובץ הזה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
         </translation>
     </message>
     <message>
@@ -2241,7 +2251,7 @@ The translation of this string isn&apos;t 100% well.</translatorcomment>
     <message>
         <location filename="../preferences.ui" line="760"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>עגינת אמצעי אחסון נתיקים באופן אוטומטי בהפעלת התכנית</translation>
+        <translation>עגינת אמצעי אחסון נתיקים באופן אוטומטי בהפעלת התוכנית</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="767"/>
