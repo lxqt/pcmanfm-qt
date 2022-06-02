@@ -644,88 +644,107 @@ QImage DesktopWindow::loadWallpaperFile(QSize requiredSize) {
 // really generate the background pixmap according to current settings and apply it.
 void DesktopWindow::updateWallpaper() {
     if(wallpaperMode_ != WallpaperNone) {  // use wallpaper
+        auto screen = getDesktopScreen();
+        if(screen == nullptr) {
+            return;
+        }
         QPixmap pixmap;
         QImage image;
         Settings& settings = static_cast<Application* >(qApp)->settings();
-        auto screen = getDesktopScreen();
-        bool perScreenWallpaper(screen != nullptr && screen->virtualSiblings().size() > 1 && settings.perScreenWallpaper());
+        const auto screens = screen->virtualSiblings();
+        bool perScreenWallpaper(screens.size() > 1 && settings.perScreenWallpaper());
+
+        // the pixmap's size should be calculated by considering
+        // the positions and device pixel ratios of all screens
+        QRect pixmapRect;
+        for(const auto& scr : screens) {
+            pixmapRect |= QRect(scr->geometry().topLeft(), scr->size() * scr->devicePixelRatio());
+        }
+        const QSize pixmapSize = pixmapRect.size();
+
+        // the pixmap's device pixel ratio
+        qreal DPRatio = windowHandle() ? windowHandle()->devicePixelRatio() : qApp->devicePixelRatio();
+
         if(wallpaperMode_ == WallpaperTile) { // use the original size
             image = getWallpaperImage();
             if(!image.isNull()) {
                 // Note: We can't use the QPainter::drawTiledPixmap(), because it doesn't tile
                 // correctly for background pixmaps bigger than the current screen size.
-                const QSize s = size();
-                pixmap = QPixmap{s};
+                pixmap = QPixmap{pixmapSize};
                 QPainter painter{&pixmap};
-                for (int x = 0; x < s.width(); x += image.width()) {
-                    for (int y = 0; y < s.height(); y += image.height()) {
+                for (int x = 0; x < pixmapSize.width(); x += image.width()) {
+                    for (int y = 0; y < pixmapSize.height(); y += image.height()) {
                         painter.drawImage(x, y, image);
                     }
                 }
+                pixmap.setDevicePixelRatio(DPRatio);
             }
         }
         else if(wallpaperMode_ == WallpaperStretch) {
             if(perScreenWallpaper) {
-                const QSize s = size();
-                pixmap = QPixmap{s};
+                pixmap = QPixmap{pixmapSize};
                 QPainter painter{&pixmap};
                 pixmap.fill(bgColor_);
                 image = getWallpaperImage();
                 if(!image.isNull()) {
                     QImage scaled;
-                    const auto screens = screen->virtualSiblings();
                     for(const auto& scr : screens) {
-                        scaled = image.scaled(scr->size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+                        scaled = image.scaled(scr->size() * scr->devicePixelRatio(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
                         painter.drawImage(scr->geometry().x(), scr->geometry().y(), scaled);
                     }
                 }
+                pixmap.setDevicePixelRatio(DPRatio);
             }
             else {
-                image = loadWallpaperFile(size());
+                image = loadWallpaperFile(pixmapSize);
                 pixmap = QPixmap::fromImage(image);
+                pixmap.setDevicePixelRatio(DPRatio);
             }
         }
         else { // WallpaperCenter || WallpaperFit
             if(perScreenWallpaper) {
-                const QSize s = size();
-                pixmap = QPixmap{s};
+                pixmap = QPixmap{pixmapSize};
                 QPainter painter{&pixmap};
                 pixmap.fill(bgColor_);
                 image = getWallpaperImage();
                 if(!image.isNull()) {
                     QImage scaled;
                     int x, y;
-                    const auto screens = screen->virtualSiblings();
                     if(wallpaperMode_ == WallpaperCenter) {
                         for(const auto& scr : screens) {
+                            const auto scrSize = scr->size() * scr->devicePixelRatio();
                             // get the gap between image and screen to avoid overlapping and displacement
-                            int x_gap = (image.width() - scr->geometry().width()) / 2;
-                            int y_gap = (image.height() - scr->geometry().height()) / 2;
-                            scaled = image.copy(qMax(x_gap, 0), qMax(y_gap, 0), scr->geometry().width(), scr->geometry().height());
+                            int x_gap = (image.width() - scrSize.width()) / 2;
+                            int y_gap = (image.height() - scrSize.height()) / 2;
+                            scaled = image.copy(qMax(x_gap, 0), qMax(y_gap, 0), scrSize.width(), scrSize.height());
                             x = scr->geometry().x() + qMax(0, -x_gap);
-                            y = scr->geometry().y() + qMax(0, - y_gap);
+                            y = scr->geometry().y() + qMax(0, -y_gap);
+                            painter.save();
+                            painter.setClipRect(QRect(x, y, image.width(), image.height()));
                             painter.drawImage(x, y, scaled);
+                            painter.restore();
                         }
                     }
                     else if((wallpaperMode_ == WallpaperFit || wallpaperMode_ == WallpaperZoom)
                             && image.width() > 0 && image.height() > 0) {
                         for(const auto& scr : screens) {
+                            const auto scrSize = scr->size() * scr->devicePixelRatio();
                             // get the screen-to-image ratio to calculate the scale factors
-                            const qreal w_ratio = static_cast<qreal>(scr->geometry().width()) / image.width();
-                            const qreal h_ratio = static_cast<qreal>(scr->geometry().height()) / image.height();
+                            const qreal w_ratio = static_cast<qreal>(scrSize.width()) / image.width();
+                            const qreal h_ratio = static_cast<qreal>(scrSize.height()) / image.height();
                             if(w_ratio <= h_ratio) {
                                 if(wallpaperMode_ == WallpaperFit) {
                                     // fit horizontally
-                                    scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
+                                    scaled = image.scaledToWidth(scrSize.width(), Qt::SmoothTransformation);
                                     x = scr->geometry().x();
-                                    y = scr->geometry().y() + (scr->geometry().height() - scaled.height()) / 2;
+                                    y = scr->geometry().y() + (scrSize.height() - scaled.height()) / 2;
                                 }
                                 else { // zoom
                                     // fit vertically
-                                    scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
+                                    scaled = image.scaledToHeight(scrSize.height(), Qt::SmoothTransformation);
                                     // crop to avoid overlapping
-                                    int x_gap = (scaled.width() - scr->geometry().width()) / 2;
-                                    scaled = scaled.copy(x_gap, 0, scr->geometry().width(), scaled.height());
+                                    int x_gap = (scaled.width() - scrSize.width()) / 2;
+                                    scaled = scaled.copy(x_gap, 0, scrSize.width(), scaled.height());
                                     x = scr->geometry().x();
                                     y = scr->geometry().y();
                                 }
@@ -733,16 +752,16 @@ void DesktopWindow::updateWallpaper() {
                             else  { // w_ratio > h_ratio
                                 if(wallpaperMode_ == WallpaperFit) {
                                     // fit vertically
-                                    scaled = image.scaledToHeight(scr->geometry().height(), Qt::SmoothTransformation);
-                                    x = scr->geometry().x() + (scr->geometry().width() - scaled.width()) / 2;
+                                    scaled = image.scaledToHeight(scrSize.height(), Qt::SmoothTransformation);
+                                    x = scr->geometry().x() + (scrSize.width() - scaled.width()) / 2;
                                     y = scr->geometry().y();
                                 }
                                 else { // zoom
                                     // fit horizonatally
-                                    scaled = image.scaledToWidth(scr->geometry().width(), Qt::SmoothTransformation);
+                                    scaled = image.scaledToWidth(scrSize.width(), Qt::SmoothTransformation);
                                     // crop to avoid overlapping
-                                    int y_gap = (scaled.height() - scr->geometry().height()) / 2;
-                                    scaled = scaled.copy(0, y_gap, scaled.width(), scr->geometry().height());
+                                    int y_gap = (scaled.height() - scrSize.height()) / 2;
+                                    scaled = scaled.copy(0, y_gap, scaled.width(), scrSize.height());
                                     x = scr->geometry().x();
                                     y = scr->geometry().y();
                                 }
@@ -751,6 +770,7 @@ void DesktopWindow::updateWallpaper() {
                         }
                     }
                 }
+                pixmap.setDevicePixelRatio(DPRatio);
             }
             else {
                 if(wallpaperMode_ == WallpaperCenter) {
@@ -770,17 +790,18 @@ void DesktopWindow::updateWallpaper() {
                     if(origSize.isValid()) {
                         QSize desiredSize = origSize;
                         Qt::AspectRatioMode mode = (wallpaperMode_ == WallpaperFit ? Qt::KeepAspectRatio : Qt::KeepAspectRatioByExpanding);
-                        desiredSize.scale(width(), height(), mode);
+                        desiredSize.scale(pixmapSize, mode);
                         image = loadWallpaperFile(desiredSize); // load the scaled image
                     }
                 }
                 if(!image.isNull()) {
-                    pixmap = QPixmap(size());
+                    pixmap = QPixmap{pixmapSize};
                     QPainter painter(&pixmap);
                     pixmap.fill(bgColor_);
-                    int x = (width() - image.width()) / 2;
-                    int y = (height() - image.height()) / 2;
+                    int x = (pixmapSize.width() - image.width()) / 2;
+                    int y = (pixmapSize.height() - image.height()) / 2;
                     painter.drawImage(x, y, image);
+                    pixmap.setDevicePixelRatio(DPRatio);
                 }
             }
         }
@@ -1239,7 +1260,9 @@ void DesktopWindow::paintBackground(QPaintEvent* event) {
         painter.fillRect(event->rect(), QBrush(bgColor_));
     }
     else {
-        painter.drawPixmap(event->rect(), wallpaperPixmap_, event->rect());
+        QRectF r(QPointF(event->rect().topLeft()) * wallpaperPixmap_.devicePixelRatio(),
+                 QSizeF(event->rect().size()) * wallpaperPixmap_.devicePixelRatio());
+        painter.drawPixmap(event->rect(), wallpaperPixmap_, r.toRect());
     }
 }
 
