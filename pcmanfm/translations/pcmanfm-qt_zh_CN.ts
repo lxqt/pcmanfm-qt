@@ -1750,7 +1750,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="442"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索结果</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="529"/>
