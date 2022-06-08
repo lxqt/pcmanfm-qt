@@ -27,7 +27,6 @@
 #include <QFile>
 #include <QDir>
 #include <QSaveFile>
-#include <QRegExp>
 #include <QDebug>
 #include <QStandardPaths>
 #include <libfm-qt/filedialog.h>
