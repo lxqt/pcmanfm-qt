@@ -530,7 +530,7 @@ ha bal gombbal kattintanak rájuk, még akkor is, ha az nem az alapértelmezett 
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>Kombináció</translation>
+        <translation>Gyorsbillentyű</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>

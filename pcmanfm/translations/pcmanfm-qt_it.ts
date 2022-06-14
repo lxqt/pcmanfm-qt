@@ -2198,7 +2198,7 @@ Un valore di -1 significa nessun limite (predefinito).</translation>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished">Numero massimo di ricerche salvate:</translation>
+        <translation>Storico ricerche massimo:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
