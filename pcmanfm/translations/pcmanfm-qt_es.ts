@@ -414,7 +414,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Mantener todos los elementos en su posición</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -589,7 +589,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../shortcuts.ui" line="71"/>
         <source>Ctrl+Shift+Tab</source>
-        <translation>Ctrl+Mayús+Tab</translation>
+        <translation>Ctrl+Mayúsculas+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="74"/>
@@ -646,7 +646,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../shortcuts.ui" line="127"/>
         <source>Shift+Insert</source>
-        <translation>Mayús+Insertar</translation>
+        <translation>Mayúsculas+Insertar</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
@@ -656,7 +656,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation>Arrastrar+Mayús</translation>
+        <translation>Arrastrar+Mayúsculas</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -676,7 +676,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation>Arrastrar+Mayús+Ctrl</translation>
+        <translation>Arrastrar+Mayúsculas+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
@@ -694,7 +694,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="742"/>
         <source>Ctrl+Shift+N</source>
-        <translation>Ctrl+Mayús+N</translation>
+        <translation>Ctrl+Mayúsculas+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="754"/>
@@ -724,7 +724,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Ficheros Recientes</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
@@ -1035,7 +1035,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Mayús+A</translation>
+        <translation>Ctrl+Mayúsculas+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
@@ -1090,7 +1090,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="881"/>
         <source>Ctrl+I</source>
-        <translation>Ctrl+L</translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="889"/>
@@ -1115,7 +1115,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="903"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Mayús+C</translation>
+        <translation>Ctrl+Mayúsculas+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="914"/>
@@ -1166,7 +1166,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="781"/>
         <source>Ctrl+Shift+K</source>
-        <translation>Ctrl+Mayús+K</translation>
+        <translation>Ctrl+Mayúsculas+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="790"/>
@@ -1302,7 +1302,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="654"/>
         <source>Del</source>
-        <translation>Supr</translation>
+        <translation>Suprimir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="659"/>
@@ -2106,7 +2106,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation>De 3&#xa0;px de manera predeterminada.</translation>
+        <translation>De 3 px de manera predeterminada.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2123,7 +2123,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>De 3&#xa0;px de manera predeterminada.
+        <translation>De 3 px de manera predeterminada.
 También se reserva espacio para 3 renglones de texto.</translation>
     </message>
     <message>
@@ -2156,7 +2156,7 @@ visible cuando haya más de una pestaña abierta.</translation>
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
         <translation>El miniaturizador integrado crea miniaturas de las imágenes que Qt admite.
 
-Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4&#xa0;MiB.</translation>
+Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
