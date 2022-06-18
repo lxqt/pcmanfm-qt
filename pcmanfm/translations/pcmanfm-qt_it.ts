@@ -1049,7 +1049,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="781"/>
         <source>Ctrl+Shift+K</source>
-        <translation>Ctrl+Maiusc+K</translation>
+        <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="790"/>
