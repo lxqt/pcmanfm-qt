@@ -129,6 +129,11 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   ui.vMargin->setValue(settings.desktopCellMargins().height());
   connect(ui.lockMargins, &QAbstractButton::clicked, this, &DesktopPreferencesDialog::lockMargins);
 
+  ui.leftMargin->setValue(settings.workAreaMargins().left());
+  ui.topMargin->setValue(settings.workAreaMargins().top());
+  ui.rightMargin->setValue(settings.workAreaMargins().right());
+  ui.bottomMargin->setValue(settings.workAreaMargins().bottom());
+
   ui.defaultFileManager->setChecked(settings.openWithDefaultFileManager());
 
   ui.allSticky->setChecked(settings.allSticky());
@@ -207,6 +212,11 @@ void DesktopPreferencesDialog::applySettings()
   settings.setDesktopShortcuts(ds);
 
   settings.setDesktopCellMargins(QSize(ui.hMargin->value(), ui.vMargin->value()));
+
+  settings.setWorkAreaMargins(QMargins(ui.leftMargin->value(),
+                                       ui.topMargin->value(),
+                                       ui.rightMargin->value(),
+                                       ui.bottomMargin->value()));
 
   settings.setOpenWithDefaultFileManager(ui.defaultFileManager->isChecked());
 

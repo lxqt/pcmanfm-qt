@@ -134,6 +134,7 @@ Settings::Settings():
     templateRunApp_(false),
     folderViewCellMargins_(QSize(3, 3)),
     desktopCellMargins_(QSize(3, 1)),
+    workAreaMargins_(QMargins(12, 12, 12, 12)),
     openWithDefaultFileManager_(false),
     allSticky_(false),
     searchNameCaseInsensitive_(false),
@@ -269,6 +270,14 @@ bool Settings::loadFile(QString filePath) {
 
     desktopCellMargins_ = (settings.value(QStringLiteral("DesktopCellMargins"), QSize(3, 1)).toSize()
                            .expandedTo(QSize(0, 0))).boundedTo(QSize(48, 48));
+    auto l = settings.value(QStringLiteral("WorkAreaMargins")).toList();
+    if(l.size() >= 4) {
+        workAreaMargins_.setLeft(qBound(0, l.at(0).toInt(), 200));
+        workAreaMargins_.setTop(qBound(0, l.at(1).toInt(), 200));
+        workAreaMargins_.setRight(qBound(0, l.at(2).toInt(), 200));
+        workAreaMargins_.setBottom(qBound(0, l.at(3).toInt(), 200));
+    }
+
     openWithDefaultFileManager_ = settings.value(QStringLiteral("OpenWithDefaultFileManager"), false).toBool();
     allSticky_ = settings.value(QStringLiteral("AllSticky"), false).toBool();
     settings.endGroup();
@@ -416,6 +425,11 @@ bool Settings::saveFile(QString filePath) {
     settings.setValue(QStringLiteral("SortFolderFirst"), desktopSortFolderFirst_);
     settings.setValue(QStringLiteral("SortHiddenLast"), desktopSortHiddenLast_);
     settings.setValue(QStringLiteral("DesktopCellMargins"), desktopCellMargins_);
+    QList<QVariant> l{workAreaMargins_.left(),
+                      workAreaMargins_.top(),
+                      workAreaMargins_.right(),
+                      workAreaMargins_.bottom()};
+    settings.setValue(QStringLiteral("WorkAreaMargins"), l);
     settings.setValue(QStringLiteral("OpenWithDefaultFileManager"), openWithDefaultFileManager_);
     settings.setValue(QStringLiteral("AllSticky"), allSticky_);
     settings.endGroup();
