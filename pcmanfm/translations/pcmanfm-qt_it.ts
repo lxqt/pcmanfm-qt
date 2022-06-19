@@ -973,7 +973,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="881"/>
         <source>Ctrl+I</source>
-        <translation>Cltr+I</translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="889"/>
