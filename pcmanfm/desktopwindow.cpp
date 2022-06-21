@@ -63,7 +63,6 @@
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
 
-#define WORK_AREA_MARGIN 12 // margin of the work area
 #define MIN_SLIDE_INTERVAL 5*60000 // 5 min
 #define MAX_SLIDE_INTERVAL (24*60+55)*60000 // 24 h and 55 min
 
@@ -1203,8 +1202,13 @@ void DesktopWindow::removeBottomGap() {
     auto itemSize = delegate->itemSize();
     //qDebug() << "delegate:" << delegate->itemSize();
     QSize cellMargins = getMargins();
+    Settings& settings = static_cast<Application* >(qApp)->settings();
     int workAreaHeight = screen->availableVirtualGeometry().height()
-                         - 2 * WORK_AREA_MARGIN;
+                         - settings.workAreaMargins().top()
+                         - settings.workAreaMargins().bottom();
+    if(workAreaHeight <= 0) {
+        return;
+    }
     int cellHeight = itemSize.height() + listView_->spacing();
     int iconNumber = workAreaHeight / cellHeight;
     int bottomGap = workAreaHeight % cellHeight;
@@ -1219,7 +1223,6 @@ void DesktopWindow::removeBottomGap() {
     qreal exactNumber = (static_cast<qreal>(cellHeight) - static_cast<qreal>(bottomGap))
                         / (2 * static_cast<qreal>(iconNumber) + static_cast<qreal>(2));
     int subtrahend = (int)exactNumber + ((int)exactNumber == exactNumber ? 0 : 1);
-    Settings& settings = static_cast<Application*>(qApp)->settings();
     int minCellHeight = settings.desktopCellMargins().height();
     if(subtrahend > 0
             && cellMargins.height() - subtrahend >= minCellHeight) {
@@ -1301,10 +1304,17 @@ void DesktopWindow::trustOurDesktopShortcut(std::shared_ptr<const Fm::FileInfo> 
 
 QRect DesktopWindow::getWorkArea(QScreen* screen) const {
     QRect workArea = screen->availableVirtualGeometry();
-    workArea.adjust(WORK_AREA_MARGIN, WORK_AREA_MARGIN, -WORK_AREA_MARGIN, -WORK_AREA_MARGIN);
+    QMargins margins = static_cast<Application* >(qApp)->settings().workAreaMargins();
     // switch between right and left with RTL to use the usual (LTR) calculations later
     if(layoutDirection() == Qt::RightToLeft) {
+        int right = margins.right();
+        margins.setRight(margins.left());
+        margins.setLeft(right);
+        workArea = workArea.marginsRemoved(margins);
         workArea.moveLeft(rect().right() - workArea.right());
+    }
+    else {
+        workArea = workArea.marginsRemoved(margins);
     }
     return workArea;
 }
@@ -1709,6 +1719,9 @@ QModelIndex DesktopWindow::navigateWithKey(int key, Qt::KeyboardModifiers modifi
         QRect workArea = getWorkArea(screen);
         int columns = workArea.width() / (itemSize.width() + listView_->spacing());
         int rows = workArea.height() / (itemSize.height() + listView_->spacing());
+        if(columns <= 0 || rows <= 0) {
+            break;
+        }
         bool rtl(layoutDirection() == Qt::RightToLeft);
         while(!index.isValid() && workArea.contains(pos)) {
             switch(key) {
@@ -1971,7 +1984,7 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         // move selected items to the drop position, preserving their relative positions
         QPoint dropPos = e->pos();
 
-        if(curIndx.isValid()) {
+        if(curIndx.isValid() && !workArea.isEmpty()) {
             QPoint curPoint = listView_->visualRect(curIndx).topLeft();
 
             // first move the current item to the drop position
@@ -2050,7 +2063,8 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
         }
 
         // position dropped items successively, starting with the drop rectangle
-        if(mimeData->hasUrls()
+        if(!workArea.isEmpty()
+           && mimeData->hasUrls()
            && (e->dropAction() == Qt::CopyAction
                || e->dropAction() == Qt::MoveAction
                || e->dropAction() == Qt::LinkAction)) {
@@ -2079,6 +2093,10 @@ void DesktopWindow::childDropEvent(QDropEvent* e) {
 // until it reaches the last cell and then puts the remaining items in the opposite
 // direction. In this way, it creates a natural DND, especially with multiple files.
 bool DesktopWindow::stickToPosition(const std::string& file, QPoint& pos, const QRect& workArea, const QSize& grid, bool reachedLastCell) {
+    if(workArea.isEmpty()) {
+        return reachedLastCell;
+    }
+
     // normalize the position, depending on the positioning direction
     if(!reachedLastCell) { // default direction: top -> bottom, left -> right
 
@@ -2178,6 +2196,10 @@ void DesktopWindow::alignToGrid(QPoint& pos, const QPoint& topLeft, const QSize&
 // the text or icon rectangle but we make an exception for Trash because we want
 // to trash dropped items once the drop point is inside the Trash cell.
 QModelIndex DesktopWindow::indexForPos(bool* isTrash, const QPoint& pos, const QRect& workArea, const QSize& grid) const {
+    if(workArea.isEmpty()) {
+        return QModelIndex();
+    }
+
     // first normalize the position
     QPoint p(pos);
 

@@ -788,6 +788,14 @@ public:
         desktopCellMargins_ = size;
     }
 
+    QMargins workAreaMargins() const {
+        return workAreaMargins_;
+    }
+
+    void setWorkAreaMargins(QMargins margins) {
+        workAreaMargins_ = margins;
+    }
+
     bool openWithDefaultFileManager() const {
         return openWithDefaultFileManager_;
     }
@@ -1145,6 +1153,7 @@ private:
 
     QSize folderViewCellMargins_;
     QSize desktopCellMargins_;
+    QMargins workAreaMargins_;
 
     bool openWithDefaultFileManager_;
 
