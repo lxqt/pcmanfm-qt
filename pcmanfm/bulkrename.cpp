@@ -25,6 +25,9 @@
 
 #include <libfm-qt/utilities.h>
 
+#include <math.h>
+#include <string.h>
+
 namespace PCManFM {
 
 BulkRenameDialog::BulkRenameDialog(QWidget* parent, Qt::WindowFlags flags) :
@@ -44,6 +47,19 @@ void BulkRenameDialog::showEvent(QShowEvent* event) {
             ui.lineEdit->setSelection(0, ui.lineEdit->text().size() - 1);
         });
     }
+}
+
+QString BulkRenamer::withLeadingZeros(int n, int size){
+    QString str = QString::number(n);
+
+    // Don't prepend zeros for big numbers
+    if(size - str.size() <= 0){
+        return str;
+    }
+
+    std::string zeros(size - str.size(), '0');
+
+    return (QString::fromStdString(zeros) + str);
 }
 
 BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
@@ -96,8 +112,11 @@ BulkRenamer::BulkRenamer(const Fm::FileInfoList& files, QWidget* parent) {
                 newName += match.captured();
             }
         }
+        QString replacement = dlg.useLeadingZeros()
+            ? withLeadingZeros(start + i, log10(files.size()) + 1)
+            : QString::number(start + i);
 
-        newName.replace(QLatin1Char('#'), QString::number(start + i));
+        newName.replace(QLatin1Char('#'), replacement);
         if (newName == fileName || !Fm::changeFileName(file->path(), newName, nullptr, false)) {
             ++failed;
         }

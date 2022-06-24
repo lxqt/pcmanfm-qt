@@ -38,6 +38,9 @@ public:
     int getStart() const {
         return ui.spinBox->value();
     }
+    bool useLeadingZeros() const {
+        return ui.leadingZeros->isChecked();
+    }
 
 protected:
     virtual void showEvent(QShowEvent* event) override;
@@ -50,6 +53,9 @@ class BulkRenamer {
 public:
     BulkRenamer(const Fm::FileInfoList& files, QWidget* parent = nullptr);
     ~BulkRenamer();
+
+private:
+    QString withLeadingZeros(int n, int size);
 };
 
 }
