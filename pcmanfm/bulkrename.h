@@ -38,6 +38,12 @@ public:
     int getStart() const {
         return ui.spinBox->value();
     }
+    bool getZeroPadding() const {
+        return ui.zeroBox->isChecked();
+    }
+    bool getRespectLocale() const {
+        return ui.localeBox->isChecked();
+    }
 
 protected:
     virtual void showEvent(QShowEvent* event) override;
