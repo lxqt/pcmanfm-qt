@@ -72,12 +72,12 @@ med detta program. Om inte, skriv till Free Software Foundation, Inc.,
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
@@ -407,7 +407,8 @@ Ett mellanrum är också reserverat vid 3 rader text.</translation>
         <location filename="../desktop-preferences.ui" line="212"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished"></translation>
+        <translation>Som standard så kommer mappar på skrivbordet öppnas i PCManFM-Qt om dom
+vänsterklickas, även när den inte är standard filhanterare.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="216"/>
@@ -417,7 +418,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="223"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Få alla föremål att stanna på sina platser</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="282"/>
@@ -1624,7 +1625,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../desktopwindow.cpp" line="969"/>
         <location filename="../desktopwindow.cpp" line="1009"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Fäs&amp;t i Nuvarande Position</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="977"/>
@@ -1722,7 +1723,8 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../mainwindow.cpp" line="2349"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vill du rensa inställningarna av mappar som inte finns längre?
+Det kan vara bra att behålla dom om mapparna återskapas.</translation>
     </message>
 </context>
 <context>
@@ -1753,7 +1755,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="442"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Sökresultat</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="529"/>
@@ -1980,7 +1982,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Om detta inte är markerat, så kommer DE;ens inställningar användas.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
@@ -2028,7 +2030,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <source>Launch executable files without prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Kör startbara filer utan varning</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
@@ -2081,7 +2083,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="459"/>
         <source>Minimum item margins in icon view:</source>
-        <translation type="unfinished"></translation>
+        <translation>Minsta föremålsmarginaler i ikonvisning:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="466"/>
@@ -2115,7 +2117,8 @@ Ett mellanrum är också reserverat vid 3 rader text. {3 ?} {3 ?}</translation>
         <location filename="../preferences.ui" line="555"/>
         <source>When unchecked, the tab bar will be shown
 only if there are more than one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>När omarkerad, så kommer bara flikraden visas
+om det finns mer än en flik.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="573"/>
@@ -2125,7 +2128,7 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna det förra fönstrets flikar i det nya fönstret</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2133,12 +2136,14 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Den innbyggda förhandsvisningsgeneratorn skapar förhandsvisningar av bilder som stödjs av Qt.
+
+Vanligtvis så stödjs dom flesta bilder. Den vanliga storleksgränsen är 4 MIB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildstorleksbegränsning för inbyggd förhandsvisningsgenerator:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
@@ -2152,12 +2157,14 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Om det finns så används externa förhandsvisningsgeneratorer för videor, PDF dokument, etc.
+
+Värdet 1 betyder att det inte finns en begränsad storlek (förval).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filstorleksbegränsning för externa miniatyrare:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
@@ -2167,22 +2174,22 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="853"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Exempel:&lt;br&gt;För terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;För att byta användare: &lt;i&gt;lxsudo %s&lt;/i&gt; eller &lt;i&gt; lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; är kommandona du ska köra med en terminal eller su. &lt;br&gt; Viktigt: Vänligen använd lxsudo, bara sudo kommer sabotera rättigheterna för inställningsfilen.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Maximal sökhistorik:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Rensa sökhistorik</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
