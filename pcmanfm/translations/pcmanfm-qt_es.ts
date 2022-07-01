@@ -121,17 +121,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Renombrar varios archivos</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="48"/>
+        <location filename="../bulk-rename.ui" line="47"/>
         <source># will be replaced by numbers starting with:</source>
         <translation># se reemplazará por números empezando por:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="71"/>
+        <location filename="../bulk-rename.ui" line="80"/>
+        <source>Pad numbers with zero if possible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="87"/>
+        <source>Use localized numbers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
         <translation>Renombrar los archivos seleccionados a:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="84"/>
+        <location filename="../bulk-rename.ui" line="40"/>
         <source>Name#</source>
         <translation>Nombre#</translation>
     </message>
@@ -300,38 +310,38 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>General</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="247"/>
-        <location filename="../desktop-preferences.ui" line="253"/>
+        <location filename="../desktop-preferences.ui" line="338"/>
+        <location filename="../desktop-preferences.ui" line="344"/>
         <source>Background</source>
         <translation>Fondo de pantalla</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="294"/>
+        <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
         <translation>Modo del fondo de pantalla:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="317"/>
+        <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
         <translation>Seleccionar una imagen de fondo de pantalla:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="259"/>
+        <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
         <translation>Seleccionar color de fondo:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="326"/>
+        <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
         <translation>Archivo de imagen</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="332"/>
+        <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
         <translation>Dirección del archivo de imagen</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="339"/>
+        <location filename="../desktop-preferences.ui" line="430"/>
         <source>&amp;Browse</source>
         <translation>E&amp;xaminar</translation>
     </message>
@@ -366,23 +376,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Espaciado</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="142"/>
+        <location filename="../desktop-preferences.ui" line="152"/>
         <source>Minimum item margins:</source>
         <translation>Márgenes mínimos de los elementos:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="149"/>
+        <location filename="../desktop-preferences.ui" line="189"/>
         <source>3 px by default.</source>
         <translation>De 3 px de manera predeterminada.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
+        <location filename="../desktop-preferences.ui" line="192"/>
+        <location filename="../desktop-preferences.ui" line="237"/>
+        <location filename="../desktop-preferences.ui" line="249"/>
+        <location filename="../desktop-preferences.ui" line="275"/>
+        <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="165"/>
+        <location filename="../desktop-preferences.ui" line="205"/>
         <source>x</source>
         <translation>x</translation>
     </message>
@@ -394,12 +408,17 @@ A space is also reserved for 3 lines of text.</source>
 También se reserva espacio para 3 renglones de texto.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="189"/>
+        <location filename="../desktop-preferences.ui" line="145"/>
         <source>Lock</source>
         <translation>Bloquear</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="212"/>
+        <location filename="../desktop-preferences.ui" line="230"/>
+        <source>Margins of work area:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
         <translation>De manera predeterminada, las carpetas del escritorio se abrirán en
@@ -407,112 +426,112 @@ PCManFM-Qt si se las pulsa con el botón principal del ratón, aun si no
 es el gestor de archivos predeterminado.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="216"/>
+        <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
         <translation>Abrir carpetas de escritorio en gestor de archivos predeterminado con una pulsación izquierda</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="223"/>
+        <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
         <translation>Mantener todos los elementos en su posición</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="282"/>
+        <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
         <translation>Fondo de escritorio</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="348"/>
+        <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
         <translation>Transformar la imagen a partir de los datos EXIF</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="355"/>
+        <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
         <translation>Fondo de pantalla individual para cada monitor</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="382"/>
+        <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
         <translation>Pase de diapositivas</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="388"/>
+        <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
         <translation>Activar el cambio de imagen automático</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="400"/>
+        <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
         <translation>Carpeta con imágenes de fondo:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="407"/>
+        <location filename="../desktop-preferences.ui" line="498"/>
         <source>Browse</source>
         <translation>Examinar</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="414"/>
+        <location filename="../desktop-preferences.ui" line="505"/>
         <source> hour(s)</source>
         <translation> hora(s)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="424"/>
+        <location filename="../desktop-preferences.ui" line="515"/>
         <source>and</source>
         <translation>y</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="437"/>
+        <location filename="../desktop-preferences.ui" line="528"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>Se ignoran los intervalos menores de 5 minutos</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="440"/>
+        <location filename="../desktop-preferences.ui" line="531"/>
         <source>Interval:</source>
         <translation>Intervalo:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="447"/>
+        <location filename="../desktop-preferences.ui" line="538"/>
         <source> minute(s)</source>
         <translation> minuto(s)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="473"/>
+        <location filename="../desktop-preferences.ui" line="564"/>
         <source>Wallpaper folder</source>
         <translation>Carpeta de fondos de pantalla</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="496"/>
+        <location filename="../desktop-preferences.ui" line="587"/>
         <source>Randomize the slide show</source>
         <translation>Cambio de imagenes aleatorio</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="529"/>
+        <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
         <translation>Atajos del panel de navegación</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="535"/>
+        <location filename="../desktop-preferences.ui" line="626"/>
         <source>Home</source>
         <translation>Carpeta personal</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="546"/>
+        <location filename="../desktop-preferences.ui" line="637"/>
         <source>Trash</source>
         <translation>Papelera</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="557"/>
+        <location filename="../desktop-preferences.ui" line="648"/>
         <source>Computer</source>
         <translation>Sistema</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="568"/>
+        <location filename="../desktop-preferences.ui" line="659"/>
         <source>Network</source>
         <translation>Red</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="523"/>
+        <location filename="../desktop-preferences.ui" line="614"/>
         <source>Advanced</source>
         <translation>Avanzado</translation>
     </message>
@@ -1542,47 +1561,47 @@ es el gestor de archivos predeterminado.</translation>
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
         <translation>Utilizar un color solido de fondo de escritorio</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Expandir estirando la imagen hasta los bordes</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
         <translation>Ajustar la imagen hasta el borde sin estirar</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
         <translation>Centrar la imagen en la pantalla sin ajustar</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Mosaico repitiendo la imagen en la pantalla</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="58"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
         <translation>Rellenar la pantalla ampliando la imagen</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="255"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="264"/>
         <source>Select Wallpaper</source>
         <translation>Seleccione un fondo de pantalla</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="259"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="268"/>
         <source>Image Files</source>
         <translation>Archivos de imagen</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="301"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="310"/>
         <source>Select Wallpaper Folder</source>
         <translation>Seleccionar carpeta de fondos</translation>
     </message>
@@ -1590,12 +1609,12 @@ es el gestor de archivos predeterminado.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="298"/>
         <source>Trash (One item)</source>
         <translation>Papelera (un elemento)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="302"/>
+        <location filename="../desktopwindow.cpp" line="301"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Papelera (%Ln elemento)</numerusform>
@@ -1603,48 +1622,48 @@ es el gestor de archivos predeterminado.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="305"/>
         <source>Trash (Empty)</source>
         <translation>Papelera</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="340"/>
         <source>Computer</source>
         <translation>Sistema</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="355"/>
+        <location filename="../desktopwindow.cpp" line="354"/>
         <source>Network</source>
         <translation>Red</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="963"/>
+        <location filename="../desktopwindow.cpp" line="983"/>
         <source>Open</source>
         <translation>Abrir</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="969"/>
-        <location filename="../desktopwindow.cpp" line="1009"/>
+        <location filename="../desktopwindow.cpp" line="989"/>
+        <location filename="../desktopwindow.cpp" line="1029"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Fijar icono en la posición actual</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="977"/>
+        <location filename="../desktopwindow.cpp" line="997"/>
         <source>Empty Trash</source>
         <translation>Vaciar la papelera</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1036"/>
+        <location filename="../desktopwindow.cpp" line="1056"/>
         <source>Hide Desktop Items</source>
         <translation>Ocultar los elementos del escritorio</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1042"/>
+        <location filename="../desktopwindow.cpp" line="1062"/>
         <source>Create Launcher</source>
         <translation>Crear un lanzador</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1045"/>
+        <location filename="../desktopwindow.cpp" line="1065"/>
         <source>Desktop Preferences</source>
         <translation>Preferencias del escritorio</translation>
     </message>
@@ -2106,7 +2125,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation>De 3 px de manera predeterminada.</translation>
+        <translation>De 3&#xa0;px de manera predeterminada.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2123,7 +2142,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>De 3 px de manera predeterminada.
+        <translation>De 3&#xa0;px de manera predeterminada.
 También se reserva espacio para 3 renglones de texto.</translation>
     </message>
     <message>
@@ -2156,7 +2175,7 @@ visible cuando haya más de una pestaña abierta.</translation>
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
         <translation>El miniaturizador integrado crea miniaturas de las imágenes que Qt admite.
 
-Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4 MiB.</translation>
+Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4&#xa0;MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
@@ -2318,39 +2337,39 @@ Un valor de −1 indica que no hay límite de tamaño de archivos (lo predetermi
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="73"/>
+        <location filename="../bulkrename.cpp" line="86"/>
         <source>Renaming files...</source>
         <translation>Cambiando el nombre de los archivos…</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="73"/>
+        <location filename="../bulkrename.cpp" line="86"/>
         <source>Abort</source>
         <translation>Interrumpir</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="82"/>
+        <location filename="../bulkrename.cpp" line="95"/>
         <source>Warning</source>
         <translation>Atención</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="82"/>
+        <location filename="../bulkrename.cpp" line="95"/>
         <source>Renaming is aborted.</source>
         <translation>Se han cancelado los cambios en los nombres.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="108"/>
-        <location filename="../bulkrename.cpp" line="111"/>
+        <location filename="../bulkrename.cpp" line="121"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1112"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="108"/>
+        <location filename="../bulkrename.cpp" line="121"/>
         <source>No file could be renamed.</source>
         <translation>No se ha podido cambiar el nombre de ningún archivo.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="111"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <source>Some files could not be renamed.</source>
         <translation>No se pudo cambiar el nombre de algunos archivos.</translation>
     </message>

@@ -122,17 +122,27 @@ Boston, MA  02110-1301, USA.</translation>
         <translation>Ganti nama massal</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="48"/>
+        <location filename="../bulk-rename.ui" line="47"/>
         <source># will be replaced by numbers starting with:</source>
         <translation># akan diganti dengan angka yang dimulai dengan:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="71"/>
+        <location filename="../bulk-rename.ui" line="80"/>
+        <source>Pad numbers with zero if possible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="87"/>
+        <source>Use localized numbers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
         <translation>Ganti nama berkas terpilih menjadi:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="84"/>
+        <location filename="../bulk-rename.ui" line="40"/>
         <source>Name#</source>
         <translation>Nama#</translation>
     </message>
@@ -296,38 +306,38 @@ Boston, MA  02110-1301, USA.</translation>
         <translation>Preferensi Desktop</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="247"/>
-        <location filename="../desktop-preferences.ui" line="253"/>
+        <location filename="../desktop-preferences.ui" line="338"/>
+        <location filename="../desktop-preferences.ui" line="344"/>
         <source>Background</source>
         <translation>Latar Belakang</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="294"/>
+        <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
         <translation>Mode wallpaper:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="317"/>
+        <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
         <translation>Berkas gambar wallpaper:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="259"/>
+        <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
         <translation>Pilih warna latar belakang:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="326"/>
+        <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
         <translation>Berkas gambar</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="332"/>
+        <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
         <translation>Jalur berkas gambar</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="339"/>
+        <location filename="../desktop-preferences.ui" line="430"/>
         <source>&amp;Browse</source>
         <translation>&amp;Telusur</translation>
     </message>
@@ -372,23 +382,27 @@ Boston, MA  02110-1301, USA.</translation>
         <translation>Jarak</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="142"/>
+        <location filename="../desktop-preferences.ui" line="152"/>
         <source>Minimum item margins:</source>
         <translation>Batas item minimum:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="149"/>
+        <location filename="../desktop-preferences.ui" line="189"/>
         <source>3 px by default.</source>
         <translation>3 px secara default.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
+        <location filename="../desktop-preferences.ui" line="192"/>
+        <location filename="../desktop-preferences.ui" line="237"/>
+        <location filename="../desktop-preferences.ui" line="249"/>
+        <location filename="../desktop-preferences.ui" line="275"/>
+        <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="165"/>
+        <location filename="../desktop-preferences.ui" line="205"/>
         <source>x</source>
         <translation>x</translation>
     </message>
@@ -400,124 +414,129 @@ A space is also reserved for 3 lines of text.</source>
 Spasi juga disediakan untuk 3 baris teks.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="189"/>
+        <location filename="../desktop-preferences.ui" line="145"/>
         <source>Lock</source>
         <translation>Kunci</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="212"/>
+        <location filename="../desktop-preferences.ui" line="230"/>
+        <source>Margins of work area:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
         <translation>Secara standar, folder desktop akan dibuka di PCManFM-Qt 
 jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="216"/>
+        <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
         <translation>Buka folder desktop di file manager standar dengan klik kiri</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="223"/>
+        <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
         <translation>Buat semua item tetap pada posisinya</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="282"/>
+        <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
         <translation>Kertas Dinding</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="348"/>
+        <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
         <translation>Ubah gambar sesuai data EXIF</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="355"/>
+        <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
         <translation>Wallpaper berbeda untuk setiap monitor</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="382"/>
+        <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
         <translation>Tampilan Slide</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="388"/>
+        <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
         <translation>Aktifkan Tampilan Slide</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="400"/>
+        <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
         <translation>Folder gambar kertas dinding:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="407"/>
+        <location filename="../desktop-preferences.ui" line="498"/>
         <source>Browse</source>
         <translation>Telusuri</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="414"/>
+        <location filename="../desktop-preferences.ui" line="505"/>
         <source> hour(s)</source>
         <translation> jam</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="424"/>
+        <location filename="../desktop-preferences.ui" line="515"/>
         <source>and</source>
         <translation>dan</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="437"/>
+        <location filename="../desktop-preferences.ui" line="528"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>Interval kurang dari 5 menit akan diabaikan</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="440"/>
+        <location filename="../desktop-preferences.ui" line="531"/>
         <source>Interval:</source>
         <translation>Jeda waktu:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="447"/>
+        <location filename="../desktop-preferences.ui" line="538"/>
         <source> minute(s)</source>
         <translation> menit</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="473"/>
+        <location filename="../desktop-preferences.ui" line="564"/>
         <source>Wallpaper folder</source>
         <translation>Folder kertas dinding</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="496"/>
+        <location filename="../desktop-preferences.ui" line="587"/>
         <source>Randomize the slide show</source>
         <translation>Mengacak tampilan slide</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="529"/>
+        <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
         <translation>Pintasan yang Terlihat</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="535"/>
+        <location filename="../desktop-preferences.ui" line="626"/>
         <source>Home</source>
         <translation>Beranda</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="546"/>
+        <location filename="../desktop-preferences.ui" line="637"/>
         <source>Trash</source>
         <translation>Tempat Sampah</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="557"/>
+        <location filename="../desktop-preferences.ui" line="648"/>
         <source>Computer</source>
         <translation>Komputer</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="568"/>
+        <location filename="../desktop-preferences.ui" line="659"/>
         <source>Network</source>
         <translation>Jaringan</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="523"/>
+        <location filename="../desktop-preferences.ui" line="614"/>
         <source>Advanced</source>
         <translation>Lanjutan</translation>
     </message>
@@ -1542,47 +1561,47 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
         <translation>Isi dengan warna latar saja</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Rentangkan untuk mengisi seluruh layar</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
         <translation>Rentangkan agar sesuai dengan layar</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
         <translation>Tengah layar</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Susun gambar agar sesuai dengan seluruh layar</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="58"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
         <translation>Perbesar gambar agar sesuai dengan seluruh layar</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="255"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="264"/>
         <source>Select Wallpaper</source>
         <translation>Pilih Kertas Dinding</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="259"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="268"/>
         <source>Image Files</source>
         <translation>Berkas Gambar</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="301"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="310"/>
         <source>Select Wallpaper Folder</source>
         <translation>Pilih Folder Kertas Dinding</translation>
     </message>
@@ -1590,60 +1609,60 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="298"/>
         <source>Trash (One item)</source>
         <translation>Sampah (Satu barang)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="302"/>
+        <location filename="../desktopwindow.cpp" line="301"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Sampah (%Ln item)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="305"/>
         <source>Trash (Empty)</source>
         <translation>Sampah (Kosong)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="340"/>
         <source>Computer</source>
         <translation>Komputer</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="355"/>
+        <location filename="../desktopwindow.cpp" line="354"/>
         <source>Network</source>
         <translation>Jaringan</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="963"/>
+        <location filename="../desktopwindow.cpp" line="983"/>
         <source>Open</source>
         <translation>Buka</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="969"/>
-        <location filename="../desktopwindow.cpp" line="1009"/>
+        <location filename="../desktopwindow.cpp" line="989"/>
+        <location filename="../desktopwindow.cpp" line="1029"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Tetap Pada Posisi Saat Ini</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="977"/>
+        <location filename="../desktopwindow.cpp" line="997"/>
         <source>Empty Trash</source>
         <translation>Kosongkan Tempat Sampah</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1036"/>
+        <location filename="../desktopwindow.cpp" line="1056"/>
         <source>Hide Desktop Items</source>
         <translation>Sembunyikan Item Desktop</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1042"/>
+        <location filename="../desktopwindow.cpp" line="1062"/>
         <source>Create Launcher</source>
         <translation>Ciptakan Peluncur</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1045"/>
+        <location filename="../desktopwindow.cpp" line="1065"/>
         <source>Desktop Preferences</source>
         <translation>Preferensi Desktop</translation>
     </message>
@@ -2311,39 +2330,39 @@ Nilai -1 berarti tidak ada batasan untuk ukuran berkas (bawaan).</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="73"/>
+        <location filename="../bulkrename.cpp" line="86"/>
         <source>Renaming files...</source>
         <translation>Mengubah nama berkas...</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="73"/>
+        <location filename="../bulkrename.cpp" line="86"/>
         <source>Abort</source>
         <translation>Tentang</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="82"/>
+        <location filename="../bulkrename.cpp" line="95"/>
         <source>Warning</source>
         <translation>Peringatan</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="82"/>
+        <location filename="../bulkrename.cpp" line="95"/>
         <source>Renaming is aborted.</source>
         <translation>Mengubah nama dibatalkan.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="108"/>
-        <location filename="../bulkrename.cpp" line="111"/>
+        <location filename="../bulkrename.cpp" line="121"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1112"/>
         <source>Error</source>
         <translation>Kesalahan</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="108"/>
+        <location filename="../bulkrename.cpp" line="121"/>
         <source>No file could be renamed.</source>
         <translation>Tidak ada berkas yang bisa diganti namanya.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="111"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <source>Some files could not be renamed.</source>
         <translation>Beberapa berkas tidak dapat diubah namanya.</translation>
     </message>

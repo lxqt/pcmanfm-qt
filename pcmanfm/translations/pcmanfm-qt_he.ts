@@ -120,17 +120,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>שינוי שם בכמות</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="48"/>
+        <location filename="../bulk-rename.ui" line="47"/>
         <source># will be replaced by numbers starting with:</source>
         <translation># יוחלף במספרים החל מ־:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="71"/>
+        <location filename="../bulk-rename.ui" line="80"/>
+        <source>Pad numbers with zero if possible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="87"/>
+        <source>Use localized numbers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
         <translation>שינוי שמות הקבצים הנבחרים לשמות:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="84"/>
+        <location filename="../bulk-rename.ui" line="40"/>
         <source>Name#</source>
         <translation>שם#</translation>
     </message>
@@ -294,38 +304,38 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>העדפות שולחן העבודה</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="247"/>
-        <location filename="../desktop-preferences.ui" line="253"/>
+        <location filename="../desktop-preferences.ui" line="338"/>
+        <location filename="../desktop-preferences.ui" line="344"/>
         <source>Background</source>
         <translation>רקע</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="294"/>
+        <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
         <translation>מצב רקע:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="317"/>
+        <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
         <translation>קובץ תמונת רקע:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="259"/>
+        <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
         <translation>נא לבחור צבע רקע:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="326"/>
+        <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
         <translation>קובץ תמונה</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="332"/>
+        <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
         <translation>נתיב קובץ תמונה</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="339"/>
+        <location filename="../desktop-preferences.ui" line="430"/>
         <source>&amp;Browse</source>
         <translation>&amp;עיון</translation>
     </message>
@@ -370,23 +380,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>ריווח</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="142"/>
+        <location filename="../desktop-preferences.ui" line="152"/>
         <source>Minimum item margins:</source>
         <translation>שולי הפריט המזעריים:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="149"/>
+        <location filename="../desktop-preferences.ui" line="189"/>
         <source>3 px by default.</source>
         <translation>3 פיקסלים כבררת מחדל.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
+        <location filename="../desktop-preferences.ui" line="192"/>
+        <location filename="../desktop-preferences.ui" line="237"/>
+        <location filename="../desktop-preferences.ui" line="249"/>
+        <location filename="../desktop-preferences.ui" line="275"/>
+        <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
         <translation> פיקסלים</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="165"/>
+        <location filename="../desktop-preferences.ui" line="205"/>
         <source>x</source>
         <translation>×</translation>
     </message>
@@ -398,124 +412,129 @@ A space is also reserved for 3 lines of text.</source>
 נשמר גם רווח ל־3 שורות טקסט.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="189"/>
+        <location filename="../desktop-preferences.ui" line="145"/>
         <source>Lock</source>
         <translation>נעילה</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="212"/>
+        <location filename="../desktop-preferences.ui" line="230"/>
+        <source>Margins of work area:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
         <translation>כבררת מחדל, תיקיות שולחן העבודה תיפתחנה עם PCManFM-Qt
 בלחיצה שמאלית, אפילו אם זה אינו מנהל הקבצים כבררת המחדל.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="216"/>
+        <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
         <translation>לפתוח את תיקיות שולחן העבודה במנהל הקבצים כבררת המחדל בלחיצה שמאלית</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="223"/>
+        <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
         <translation>הצמדת הפריטים למיקום שלהם</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="282"/>
+        <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
         <translation>רקע</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="348"/>
+        <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
         <translation>התמרת תמונה על בסיס נתוני EXIF</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="355"/>
+        <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
         <translation>רקע ייחודי לכל צג נפרד</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="382"/>
+        <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
         <translation>מצגת</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="388"/>
+        <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
         <translation>הפעלת מצגת</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="400"/>
+        <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
         <translation>תיקיית תמונות הרקע:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="407"/>
+        <location filename="../desktop-preferences.ui" line="498"/>
         <source>Browse</source>
         <translation>עיון</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="414"/>
+        <location filename="../desktop-preferences.ui" line="505"/>
         <source> hour(s)</source>
         <translation> שעה/ות</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="424"/>
+        <location filename="../desktop-preferences.ui" line="515"/>
         <source>and</source>
         <translation>וגם</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="437"/>
+        <location filename="../desktop-preferences.ui" line="528"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>הפרשים של פחות מ־5 דקות לא ייחשבו</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="440"/>
+        <location filename="../desktop-preferences.ui" line="531"/>
         <source>Interval:</source>
         <translation>הפרש:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="447"/>
+        <location filename="../desktop-preferences.ui" line="538"/>
         <source> minute(s)</source>
         <translation> דקה/ות</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="473"/>
+        <location filename="../desktop-preferences.ui" line="564"/>
         <source>Wallpaper folder</source>
         <translation>תיקיית רקע</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="496"/>
+        <location filename="../desktop-preferences.ui" line="587"/>
         <source>Randomize the slide show</source>
         <translation>הרצת המצגת בסדר אקראי</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="529"/>
+        <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
         <translation>קיצורי דרך גלויים</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="535"/>
+        <location filename="../desktop-preferences.ui" line="626"/>
         <source>Home</source>
         <translation>בית</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="546"/>
+        <location filename="../desktop-preferences.ui" line="637"/>
         <source>Trash</source>
         <translation>אשפה</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="557"/>
+        <location filename="../desktop-preferences.ui" line="648"/>
         <source>Computer</source>
         <translation>מחשב</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="568"/>
+        <location filename="../desktop-preferences.ui" line="659"/>
         <source>Network</source>
         <translation>רשת</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="523"/>
+        <location filename="../desktop-preferences.ui" line="614"/>
         <source>Advanced</source>
         <translation>מתקדם</translation>
     </message>
@@ -1541,47 +1560,47 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
         <translation>מילוי עם צבע הרקע בלבד</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
         <translation>למתוח כדי למלא את כל המסך</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
         <translation>מתיחה על מנת להתאים למסך</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
         <translation>מרכוז על המסך</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>הפיכת התמונה לאריח על מנת למלא את כל המסך</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="58"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
         <translation>הגדלת התמונה על מנת למלא את כל המסך</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="255"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="264"/>
         <source>Select Wallpaper</source>
         <translation>נא לבחור רקע</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="259"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="268"/>
         <source>Image Files</source>
         <translation>קובצי תמונה</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="301"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="310"/>
         <source>Select Wallpaper Folder</source>
         <translation>נא לבחור תיקיית רקעים</translation>
     </message>
@@ -1589,63 +1608,61 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="298"/>
         <source>Trash (One item)</source>
         <translation>אשפה (פריט אחד)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="302"/>
+        <location filename="../desktopwindow.cpp" line="301"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>אשפה (פריט אחד)</numerusform>
             <numerusform>אשפה (%Ln פריטים)</numerusform>
-            <numerusform>אשפה (%Ln פריטים)</numerusform>
-            <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="305"/>
         <source>Trash (Empty)</source>
         <translation>אשפה (ריק)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="340"/>
         <source>Computer</source>
         <translation>מחשב</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="355"/>
+        <location filename="../desktopwindow.cpp" line="354"/>
         <source>Network</source>
         <translation>רשת</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="963"/>
+        <location filename="../desktopwindow.cpp" line="983"/>
         <source>Open</source>
         <translation>פתיחה</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="969"/>
-        <location filename="../desktopwindow.cpp" line="1009"/>
+        <location filename="../desktopwindow.cpp" line="989"/>
+        <location filename="../desktopwindow.cpp" line="1029"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>היצמדו&amp;ת לאזור הנוכחי</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="977"/>
+        <location filename="../desktopwindow.cpp" line="997"/>
         <source>Empty Trash</source>
         <translation>ריקון האשפה</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1036"/>
+        <location filename="../desktopwindow.cpp" line="1056"/>
         <source>Hide Desktop Items</source>
         <translation>הסתרת פריטי שולחן העבודה</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1042"/>
+        <location filename="../desktopwindow.cpp" line="1062"/>
         <source>Create Launcher</source>
         <translation>יצירת משגר</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1045"/>
+        <location filename="../desktopwindow.cpp" line="1065"/>
         <source>Desktop Preferences</source>
         <translation>העדפות שולחן העבודה</translation>
     </message>
@@ -1775,8 +1792,6 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform>פריט אחד</numerusform>
             <numerusform>%n פריטים</numerusform>
-            <numerusform>%n פריטים</numerusform>
-            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1784,8 +1799,6 @@ They might be useful if those folders are created again.</source>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
-            <numerusform> (%n מוסתרים)</numerusform>
-            <numerusform> (%n מוסתרים)</numerusform>
             <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
@@ -1802,8 +1815,6 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform>נבחר פריט אחד</numerusform>
             <numerusform>נבחרו %n פריטים</numerusform>
-            <numerusform>נבחרו %n פריטים</numerusform>
-            <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
 </context>
@@ -1819,8 +1830,6 @@ They might be useful if those folders are created again.</source>
         <source>Do you want to open these %1 files?</source>
         <translation>
             <numerusform>לפתוח את הקובץ הזה?</numerusform>
-            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
-            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
             <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
         </translation>
     </message>
@@ -2327,39 +2336,39 @@ The translation of this string isn&apos;t 100% well.</translatorcomment>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="73"/>
+        <location filename="../bulkrename.cpp" line="86"/>
         <source>Renaming files...</source>
         <translation>שמות הקבצים משתנים…</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="73"/>
+        <location filename="../bulkrename.cpp" line="86"/>
         <source>Abort</source>
         <translation>ביטול</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="82"/>
+        <location filename="../bulkrename.cpp" line="95"/>
         <source>Warning</source>
         <translation>אזהרה</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="82"/>
+        <location filename="../bulkrename.cpp" line="95"/>
         <source>Renaming is aborted.</source>
         <translation>שינוי השם בוטל.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="108"/>
-        <location filename="../bulkrename.cpp" line="111"/>
+        <location filename="../bulkrename.cpp" line="121"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1112"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="108"/>
+        <location filename="../bulkrename.cpp" line="121"/>
         <source>No file could be renamed.</source>
         <translation>שם אף קובץ לא יכול להשתנות.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="111"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <source>Some files could not be renamed.</source>
         <translation>שמם של כמה קבצים לא יכול להשתנות.</translation>
     </message>

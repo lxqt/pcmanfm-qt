@@ -119,17 +119,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>تغيير الأسماء بالجملة</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="48"/>
+        <location filename="../bulk-rename.ui" line="47"/>
         <source># will be replaced by numbers starting with:</source>
         <translation>ستُستبدل # بالأرقام بدءا من:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="71"/>
+        <location filename="../bulk-rename.ui" line="80"/>
+        <source>Pad numbers with zero if possible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="87"/>
+        <source>Use localized numbers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
         <translation>غيّر اسم الملفات المحددة إلى:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="84"/>
+        <location filename="../bulk-rename.ui" line="40"/>
         <source>Name#</source>
         <translation>الاسم#</translation>
     </message>
@@ -293,38 +303,38 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>تفضيلات سطح المكتب</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="247"/>
-        <location filename="../desktop-preferences.ui" line="253"/>
+        <location filename="../desktop-preferences.ui" line="338"/>
+        <location filename="../desktop-preferences.ui" line="344"/>
         <source>Background</source>
         <translation>الخلفية</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="294"/>
+        <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
         <translation>وضع الخلفية:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="317"/>
+        <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
         <translation>ملف صورة الخلفية:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="259"/>
+        <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
         <translation>اختر لون الخلفية:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="326"/>
+        <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
         <translation>ملف صورة</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="332"/>
+        <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
         <translation>مسار ملف الصورة</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="339"/>
+        <location filename="../desktop-preferences.ui" line="430"/>
         <source>&amp;Browse</source>
         <translation>ت&amp;صفّح</translation>
     </message>
@@ -369,23 +379,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>التباعد</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="142"/>
+        <location filename="../desktop-preferences.ui" line="152"/>
         <source>Minimum item margins:</source>
         <translation>أدنى هوامش للعناصر:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="149"/>
+        <location filename="../desktop-preferences.ui" line="189"/>
         <source>3 px by default.</source>
         <translation>٣ بكسل مبدئيا.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
+        <location filename="../desktop-preferences.ui" line="192"/>
+        <location filename="../desktop-preferences.ui" line="237"/>
+        <location filename="../desktop-preferences.ui" line="249"/>
+        <location filename="../desktop-preferences.ui" line="275"/>
+        <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
         <translation> بكسل</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="165"/>
+        <location filename="../desktop-preferences.ui" line="205"/>
         <source>x</source>
         <translation>×</translation>
     </message>
@@ -397,123 +411,128 @@ A space is also reserved for 3 lines of text.</source>
 سيُحجز أيضا مكان لنص بثلاث أسطر.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="189"/>
+        <location filename="../desktop-preferences.ui" line="145"/>
         <source>Lock</source>
         <translation>اقفل</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="212"/>
+        <location filename="../desktop-preferences.ui" line="230"/>
+        <source>Margins of work area:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="216"/>
+        <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="223"/>
+        <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="282"/>
+        <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="348"/>
+        <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="355"/>
+        <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="382"/>
+        <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
         <translation>عرض الشرائح</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="388"/>
+        <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
         <translation>فعّل عرض الشرائح</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="400"/>
+        <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
         <translation>مجلد صور الخلفية:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="407"/>
+        <location filename="../desktop-preferences.ui" line="498"/>
         <source>Browse</source>
         <translation>تصفّح</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="414"/>
+        <location filename="../desktop-preferences.ui" line="505"/>
         <source> hour(s)</source>
         <translation> سا</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="424"/>
+        <location filename="../desktop-preferences.ui" line="515"/>
         <source>and</source>
         <translation>و</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="437"/>
+        <location filename="../desktop-preferences.ui" line="528"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>ستُتجاهل الفترات الأقل من ٥ دقائق</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="440"/>
+        <location filename="../desktop-preferences.ui" line="531"/>
         <source>Interval:</source>
         <translation>الفترة:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="447"/>
+        <location filename="../desktop-preferences.ui" line="538"/>
         <source> minute(s)</source>
         <translation> دق</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="473"/>
+        <location filename="../desktop-preferences.ui" line="564"/>
         <source>Wallpaper folder</source>
         <translation>مجلد الخلفيات</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="496"/>
+        <location filename="../desktop-preferences.ui" line="587"/>
         <source>Randomize the slide show</source>
         <translation>عرض الشرائح عشوائي</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="529"/>
+        <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="535"/>
+        <location filename="../desktop-preferences.ui" line="626"/>
         <source>Home</source>
         <translation>المنزل</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="546"/>
+        <location filename="../desktop-preferences.ui" line="637"/>
         <source>Trash</source>
         <translation>المهملات</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="557"/>
+        <location filename="../desktop-preferences.ui" line="648"/>
         <source>Computer</source>
         <translation>الحاسوب</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="568"/>
+        <location filename="../desktop-preferences.ui" line="659"/>
         <source>Network</source>
         <translation>الشبكة</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="523"/>
+        <location filename="../desktop-preferences.ui" line="614"/>
         <source>Advanced</source>
         <translation>متقدم</translation>
     </message>
@@ -1538,47 +1557,47 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
         <translation>املأ بلون الخلفية فقط</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
         <translation>مدّد لملء الشاشة كاملة</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
         <translation>مدّد لتناسب الشاشة</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
         <translation>وسّط في الشاشة</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>كرّر الصورة قِطعا لتملأ الشاشة كاملة</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="58"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
         <translation>كبّر الصورة لتملأ الشاشة كاملة</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="255"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="264"/>
         <source>Select Wallpaper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="259"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="268"/>
         <source>Image Files</source>
         <translation>ملفات الصور</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="301"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="310"/>
         <source>Select Wallpaper Folder</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1586,12 +1605,12 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="298"/>
         <source>Trash (One item)</source>
         <translation>المهملات (عنصر واحد)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="302"/>
+        <location filename="../desktopwindow.cpp" line="301"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>المهملات (فارغة)</numerusform>
@@ -1603,48 +1622,48 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="305"/>
         <source>Trash (Empty)</source>
         <translation>المهملات (فارغة)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="340"/>
         <source>Computer</source>
         <translation>الحاسوب</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="355"/>
+        <location filename="../desktopwindow.cpp" line="354"/>
         <source>Network</source>
         <translation>الشبكة</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="963"/>
+        <location filename="../desktopwindow.cpp" line="983"/>
         <source>Open</source>
         <translation>افتح</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="969"/>
-        <location filename="../desktopwindow.cpp" line="1009"/>
+        <location filename="../desktopwindow.cpp" line="989"/>
+        <location filename="../desktopwindow.cpp" line="1029"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>ت&amp;شبّث بالمكان الحالي</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="977"/>
+        <location filename="../desktopwindow.cpp" line="997"/>
         <source>Empty Trash</source>
         <translation>أفرِغ المهملات</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1036"/>
+        <location filename="../desktopwindow.cpp" line="1056"/>
         <source>Hide Desktop Items</source>
         <translation>أخفِ عناصر سطح المكتب</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1042"/>
+        <location filename="../desktopwindow.cpp" line="1062"/>
         <source>Create Launcher</source>
         <translation>أنشِئ مطلِقًا</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1045"/>
+        <location filename="../desktopwindow.cpp" line="1065"/>
         <source>Desktop Preferences</source>
         <translation>تفضيلات سطح المكتب</translation>
     </message>
@@ -2326,39 +2345,39 @@ A value of -1 means that there is no limit for the file size (the default).</sou
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="73"/>
+        <location filename="../bulkrename.cpp" line="86"/>
         <source>Renaming files...</source>
         <translation>يُغيّر أسماء الملفات…</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="73"/>
+        <location filename="../bulkrename.cpp" line="86"/>
         <source>Abort</source>
         <translation>أجهِض</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="82"/>
+        <location filename="../bulkrename.cpp" line="95"/>
         <source>Warning</source>
         <translation>تحذير</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="82"/>
+        <location filename="../bulkrename.cpp" line="95"/>
         <source>Renaming is aborted.</source>
         <translation>أُجهض تغيير الأسماء.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="108"/>
-        <location filename="../bulkrename.cpp" line="111"/>
+        <location filename="../bulkrename.cpp" line="121"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1112"/>
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="108"/>
+        <location filename="../bulkrename.cpp" line="121"/>
         <source>No file could be renamed.</source>
         <translation>تعذر تغيير اسم أي ملف.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="111"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <source>Some files could not be renamed.</source>
         <translation>تعذر تغيير أسماء بعض الملفات.</translation>
     </message>

@@ -121,17 +121,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Групове перейменування</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="48"/>
+        <location filename="../bulk-rename.ui" line="47"/>
         <source># will be replaced by numbers starting with:</source>
         <translation># буде замінено цифрами, починаючи з:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="71"/>
+        <location filename="../bulk-rename.ui" line="80"/>
+        <source>Pad numbers with zero if possible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="87"/>
+        <source>Use localized numbers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
         <translation>Перейменувати вибрані файли на:</translation>
     </message>
     <message>
-        <location filename="../bulk-rename.ui" line="84"/>
+        <location filename="../bulk-rename.ui" line="40"/>
         <source>Name#</source>
         <translation>Назва#</translation>
     </message>
@@ -295,38 +305,38 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Налаштування стільниці</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="247"/>
-        <location filename="../desktop-preferences.ui" line="253"/>
+        <location filename="../desktop-preferences.ui" line="338"/>
+        <location filename="../desktop-preferences.ui" line="344"/>
         <source>Background</source>
         <translation>Тло</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="294"/>
+        <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
         <translation>Режим тла:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="317"/>
+        <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
         <translation>Файл зображення тла:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="259"/>
+        <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
         <translation>Вибрати колір фону:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="326"/>
+        <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
         <translation>Файл зображення</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="332"/>
+        <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
         <translation>Шлях до файлу зображення</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="339"/>
+        <location filename="../desktop-preferences.ui" line="430"/>
         <source>&amp;Browse</source>
         <translation>&amp;Переглянути</translation>
     </message>
@@ -371,23 +381,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Пропуски</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="142"/>
+        <location filename="../desktop-preferences.ui" line="152"/>
         <source>Minimum item margins:</source>
         <translation>Мінімальні поля:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="149"/>
+        <location filename="../desktop-preferences.ui" line="189"/>
         <source>3 px by default.</source>
         <translation>Типово 3 пікселі.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="152"/>
         <location filename="../desktop-preferences.ui" line="176"/>
+        <location filename="../desktop-preferences.ui" line="192"/>
+        <location filename="../desktop-preferences.ui" line="237"/>
+        <location filename="../desktop-preferences.ui" line="249"/>
+        <location filename="../desktop-preferences.ui" line="275"/>
+        <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="165"/>
+        <location filename="../desktop-preferences.ui" line="205"/>
         <source>x</source>
         <translation>х</translation>
     </message>
@@ -399,124 +413,129 @@ A space is also reserved for 3 lines of text.</source>
 Також залишено простір для 3 рядків тексту.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="189"/>
+        <location filename="../desktop-preferences.ui" line="145"/>
         <source>Lock</source>
         <translation>Заблокувати</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="212"/>
+        <location filename="../desktop-preferences.ui" line="230"/>
+        <source>Margins of work area:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
         <translation>Усталено, теки стільниці відкриватимуться в PCManFM-Qt, якщо їх
 клацнуто лівою кнопкою миші, навіть якщо це не типовий файловий менеджер.</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="216"/>
+        <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
         <translation>Відкривати теки стільниці в типовому менеджері файлів, клацнувши лівою кнопкою миші</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="223"/>
+        <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
         <translation>Закріпити всі елементи на своїх позиціях</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="282"/>
+        <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
         <translation>Тло</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="348"/>
+        <location filename="../desktop-preferences.ui" line="439"/>
         <source>Transform image based on EXIF data</source>
         <translation>Перетворити зображення на основі даних EXIF</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="355"/>
+        <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
         <translation>Власне тло для кожного монітора</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="382"/>
+        <location filename="../desktop-preferences.ui" line="473"/>
         <source>Slide Show</source>
         <translation>Слайд-шоу</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="388"/>
+        <location filename="../desktop-preferences.ui" line="479"/>
         <source>Enable Slide Show</source>
         <translation>Увімкнути слайд-шоу</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="400"/>
+        <location filename="../desktop-preferences.ui" line="491"/>
         <source>Wallpaper image folder:</source>
         <translation>Тека зображень тла:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="407"/>
+        <location filename="../desktop-preferences.ui" line="498"/>
         <source>Browse</source>
         <translation>Переглянути</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="414"/>
+        <location filename="../desktop-preferences.ui" line="505"/>
         <source> hour(s)</source>
         <translation> годин(и)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="424"/>
+        <location filename="../desktop-preferences.ui" line="515"/>
         <source>and</source>
         <translation>і</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="437"/>
+        <location filename="../desktop-preferences.ui" line="528"/>
         <source>Intervals less than 5min will be ignored</source>
         <translation>Інтервали менше 5 хвилин не враховуватимуться</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="440"/>
+        <location filename="../desktop-preferences.ui" line="531"/>
         <source>Interval:</source>
         <translation>Інтервал:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="447"/>
+        <location filename="../desktop-preferences.ui" line="538"/>
         <source> minute(s)</source>
         <translation> хвилин(и)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="473"/>
+        <location filename="../desktop-preferences.ui" line="564"/>
         <source>Wallpaper folder</source>
         <translation>Тека зоражень тла</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="496"/>
+        <location filename="../desktop-preferences.ui" line="587"/>
         <source>Randomize the slide show</source>
         <translation>Випадковий порядок показу слайдів</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="529"/>
+        <location filename="../desktop-preferences.ui" line="620"/>
         <source>Visible Shortcuts</source>
         <translation>Видимі ярлики</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="535"/>
+        <location filename="../desktop-preferences.ui" line="626"/>
         <source>Home</source>
         <translation>Домашня тека</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="546"/>
+        <location filename="../desktop-preferences.ui" line="637"/>
         <source>Trash</source>
         <translation>Смітник</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="557"/>
+        <location filename="../desktop-preferences.ui" line="648"/>
         <source>Computer</source>
         <translation>Комп&apos;ютер</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="568"/>
+        <location filename="../desktop-preferences.ui" line="659"/>
         <source>Network</source>
         <translation>Мережа</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="523"/>
+        <location filename="../desktop-preferences.ui" line="614"/>
         <source>Advanced</source>
         <translation>Більше</translation>
     </message>
@@ -1541,47 +1560,47 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopPreferencesDialog</name>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Fill with background color only</source>
         <translation>Заповнити лише кольором фону</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Stretch to fill the entire screen</source>
         <translation>Розтягнути для заповнення цілого екрана</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
         <translation>Розтягнути для вміщення в екран</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="55"/>
         <source>Center on the screen</source>
         <translation>Центрувати на екрані</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="56"/>
         <source>Tile the image to fill the entire screen</source>
         <translation>Розмножити малюнок для заповнення всього екрана</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="58"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="57"/>
         <source>Zoom the image to fill the entire screen</source>
         <translation>Змінити розмір зображення, щоб заповнити весь екран</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="255"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="264"/>
         <source>Select Wallpaper</source>
         <translation>Вибрати тло</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="259"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="268"/>
         <source>Image Files</source>
         <translation>Файли зображень</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="301"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="310"/>
         <source>Select Wallpaper Folder</source>
         <translation>Вибрати теку зображень тла</translation>
     </message>
@@ -1589,12 +1608,12 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="299"/>
+        <location filename="../desktopwindow.cpp" line="298"/>
         <source>Trash (One item)</source>
         <translation>Смітник (один елемент)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="302"/>
+        <location filename="../desktopwindow.cpp" line="301"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Смітник (%Ln елемент)</numerusform>
@@ -1603,48 +1622,48 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="306"/>
+        <location filename="../desktopwindow.cpp" line="305"/>
         <source>Trash (Empty)</source>
         <translation>Смітник (порожній)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="341"/>
+        <location filename="../desktopwindow.cpp" line="340"/>
         <source>Computer</source>
         <translation>Комп&apos;ютер</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="355"/>
+        <location filename="../desktopwindow.cpp" line="354"/>
         <source>Network</source>
         <translation>Мережа</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="963"/>
+        <location filename="../desktopwindow.cpp" line="983"/>
         <source>Open</source>
         <translation>Відкрити</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="969"/>
-        <location filename="../desktopwindow.cpp" line="1009"/>
+        <location filename="../desktopwindow.cpp" line="989"/>
+        <location filename="../desktopwindow.cpp" line="1029"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Прип&amp;нути до поточної позиції</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="977"/>
+        <location filename="../desktopwindow.cpp" line="997"/>
         <source>Empty Trash</source>
         <translation>Спорожнити смітник</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1036"/>
+        <location filename="../desktopwindow.cpp" line="1056"/>
         <source>Hide Desktop Items</source>
         <translation>Сховати елементи стільниці</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1042"/>
+        <location filename="../desktopwindow.cpp" line="1062"/>
         <source>Create Launcher</source>
         <translation>Створити запускач</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1045"/>
+        <location filename="../desktopwindow.cpp" line="1065"/>
         <source>Desktop Preferences</source>
         <translation>Налаштування стільниці</translation>
     </message>
@@ -2320,39 +2339,39 @@ A value of -1 means that there is no limit for the file size (the default).</sou
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bulkrename.cpp" line="73"/>
+        <location filename="../bulkrename.cpp" line="86"/>
         <source>Renaming files...</source>
         <translation>Перейменування файлів...</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="73"/>
+        <location filename="../bulkrename.cpp" line="86"/>
         <source>Abort</source>
         <translation>Перервати</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="82"/>
+        <location filename="../bulkrename.cpp" line="95"/>
         <source>Warning</source>
         <translation>Попередження</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="82"/>
+        <location filename="../bulkrename.cpp" line="95"/>
         <source>Renaming is aborted.</source>
         <translation>Перейменування перервано.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="108"/>
-        <location filename="../bulkrename.cpp" line="111"/>
+        <location filename="../bulkrename.cpp" line="121"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1112"/>
         <source>Error</source>
         <translation>Помилка</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="108"/>
+        <location filename="../bulkrename.cpp" line="121"/>
         <source>No file could be renamed.</source>
         <translation>Не вдалося перейменувати жодного файлу.</translation>
     </message>
     <message>
-        <location filename="../bulkrename.cpp" line="111"/>
+        <location filename="../bulkrename.cpp" line="124"/>
         <source>Some files could not be renamed.</source>
         <translation>Не вдалось перейменувати деякі файли.</translation>
     </message>
