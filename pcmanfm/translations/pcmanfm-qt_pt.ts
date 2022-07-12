@@ -128,12 +128,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Números do teclado numérico com zero, se possível</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Usar números localizados</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -420,7 +420,7 @@ Será reservado um espaço para 3 linhas de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Margens de área de trabalho:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
