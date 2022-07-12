@@ -126,12 +126,12 @@ Foundation, Inc., ул. Франклин 51, пети етаж, Бостън, М
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Попълнете числа с нула, ако е възможно</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Използвайте локализирани номера</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -418,7 +418,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Граници на работната област:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
