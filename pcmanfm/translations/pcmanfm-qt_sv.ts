@@ -128,12 +128,12 @@ med detta program. Om inte, skriv till Free Software Foundation, Inc.,
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Fyll siffror i med noll om möjligt</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Använd lokaliserade siffror</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -420,7 +420,7 @@ Ett mellanrum är också reserverat vid 3 rader text.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Marginaler för arbetsyta:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -669,7 +669,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Klistra in i en transient filtermeny</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -722,7 +722,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../main-win.ui" line="146"/>
         <source>Path &amp;Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Sökvägs&amp;meny</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="153"/>
@@ -747,7 +747,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../main-win.ui" line="292"/>
         <source>Alt+Up</source>
-        <translation>Alt+Pil upp</translation>
+        <translation>Alt+Upp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="301"/>
@@ -1037,12 +1037,12 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../main-win.ui" line="875"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Visa/fokusera filterlista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="878"/>
         <source>Show Filter Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa filterlista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="881"/>
@@ -1168,7 +1168,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Permanent &amp;filterlista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="812"/>
@@ -1572,7 +1572,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Anpassa efter bildskärm</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="55"/>
@@ -2125,7 +2125,7 @@ Det kan vara bra att behålla dom om mapparna återskapas.</translation>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
         <translation>Standard 3 pixlar.
-Ett mellanrum är också reserverat vid 3 rader text. {3 ?} {3 ?}</translation>
+Ett mellanrum är också reserverat vid 3 rader text.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="506"/>
