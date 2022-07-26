@@ -1672,7 +1672,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../tabpage.cpp" line="94"/>
         <source>Filter:</source>
-        <translation>Filtre:</translation>
+        <translation>Süzgeç:</translation>
     </message>
 </context>
 <context>
