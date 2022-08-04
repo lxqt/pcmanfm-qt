@@ -124,12 +124,12 @@ Fifth Floor, Boston, MA 02110-1301, USA 로 서면 문의하십시오.</translat
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>가능하면 숫자를 0으로 채우기</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>현지화된 숫자 사용</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -416,7 +416,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>작업 영역 여백:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
