@@ -168,7 +168,7 @@ void View::updateFromSettings(Settings& settings) {
 
     setMargins(settings.folderViewCellMargins());
 
-    setAutoSelectionDelay(settings.autoSelectionDelay());
+    setAutoSelectionDelay(settings.singleClick() ? settings.autoSelectionDelay() : 0);
 
     setCtrlRightClick(settings.ctrlRightClick());
 
