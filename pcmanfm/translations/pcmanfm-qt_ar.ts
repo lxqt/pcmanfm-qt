@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>عن</translation>
+        <translation>حول</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>

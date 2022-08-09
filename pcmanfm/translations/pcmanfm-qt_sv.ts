@@ -1736,7 +1736,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2348"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Rensar mapp inställningar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2349"/>
