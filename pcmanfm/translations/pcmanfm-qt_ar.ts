@@ -424,8 +424,8 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>كاختيار إفتراضى, سيتم فتح مجلدات سطح المكتب ببرنامج PCManFM-Qt إذا
-تم الضغط عليها بالزر الأيسر للفأرة, حتى عندما لا يكون البرنامج الإفتراضى لإدارة الملفات.</translation>
+        <translation>كاختيار افتراضي, سيتم فتح مجلدات سطح المكتب ببرنامج PCManFM-Qt إذا
+تم الضغط عليها بالزر الأيسر للفأرة, حتى عندما لا يكون البرنامج الافتراضي لإدارة الملفات.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
@@ -970,7 +970,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation>الاحتفاظ بالإعدادات بشكل متكرر من هنا</translation>
+        <translation>الاحتفاظ بالإعدادات بشكل متكرر من &amp;هنا</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="959"/>
@@ -1030,7 +1030,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation>الاحتفاظ بالإعدادات لهذا المجلد</translation>
+        <translation>الاحتفاظ بالإعدادات لهذا &amp;المجلد</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="875"/>
@@ -1282,7 +1282,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="678"/>
         <source>Alt+Return</source>
-        <translation>Alt+Enter</translation>
+        <translation>Alt+Return</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="683"/>
