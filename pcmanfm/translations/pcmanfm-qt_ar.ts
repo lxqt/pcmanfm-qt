@@ -60,7 +60,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 من المفترض أن تكون قد استلمت نسخة من رخصة جنو العامة مع هذا البرنامج؛ في حال
 عدم استلامك لذلك، يمكنك مكاتبة:
-⁨Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA⁨.⁩</translation>
+⁨Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA⁨.⁩.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="113"/>
@@ -149,17 +149,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>اتّصل بخادوم بعيد</translation>
+        <translation>اتّصل بخادم عن بعد</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation>ولوج مج&amp;هّل</translation>
+        <translation>ولوج مجهّل</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation>لِج بالمست&amp;خدم:</translation>
+        <translation>لِج بالمستخدم:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
@@ -229,7 +229,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktopentrydialog.ui" line="136"/>
         <location filename="../desktopentrydialog.ui" line="146"/>
         <source>Run in terminal?</source>
-        <translation>تشغيل في المحطة؟</translation>
+        <translation>تشغيل فى الطرفية؟</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="139"/>
@@ -424,12 +424,13 @@ A space is also reserved for 3 lines of text.</source>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation>بشكل افتراضي ، سيتم فتح مجلدات سطح المكتب في PCManFM-Qt إذا تم النقر فوقها ، حتى عندما لا يكون مدير الملفات الافتراضي.</translation>
+        <translation>كاختيار إفتراضى, سيتم فتح مجلدات سطح المكتب ببرنامج PCManFM-Qt إذا
+تم الضغط عليها بالزر الأيسر للفأرة, حتى عندما لا يكون البرنامج الإفتراضى لإدارة الملفات.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
         <source>Open desktop folders in default file manager by left clicking</source>
-        <translation>افتح مجلدات سطح المكتب في مدير الملفات الافتراضي بالنقر بزر الماوس الأيسر</translation>
+        <translation>فتح مجلدات سطح المكتب في مدير الملفات الإفتراضي بالنقر على الزر الأيسر</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
@@ -439,7 +440,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
         <source>Wallpaper</source>
-        <translation>ورق الجدران</translation>
+        <translation>الخلفية</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="439"/>
@@ -449,7 +450,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="446"/>
         <source>Individual wallpaper for each monitor</source>
-        <translation>خلفية فردية لكل شاشة</translation>
+        <translation>خلفية خاصة لكل شاشة</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="473"/>
@@ -547,7 +548,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
         <source>Shortcut</source>
-        <translation>الاختصار</translation>
+        <translation>إختصار</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="26"/>
@@ -615,12 +616,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="79"/>
         <source>Ctrl+PageDown</source>
-        <translation>Ctrl+PageDown</translation>
+        <translation>Ctrl+صفحة للاسفل</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="87"/>
         <source>Ctrl+PageUp</source>
-        <translation>Ctrl+PageUp</translation>
+        <translation>Ctrl+صفحة للأعلى</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="95"/>
@@ -671,7 +672,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
         <source>Drag+Shift</source>
-        <translation>Drag+Shift</translation>
+        <translation>سحب+Shift</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="138"/>
@@ -681,22 +682,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="143"/>
         <source>Drag+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>سحب+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="146"/>
         <source>Copy file on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>انسخ الملف عند الترك</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="151"/>
         <source>Drag+Shift+Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>سحب+Shift+Ctrl</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="154"/>
         <source>Make a symlink on dropping</source>
-        <translation type="unfinished"></translation>
+        <translation>قم بعمل ارتباط رمزي عند الترك</translation>
     </message>
 </context>
 <context>
@@ -709,7 +710,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp; الملفات الأخيرة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -724,12 +725,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="153"/>
         <source>&amp;Filtering</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;الفلتره</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="227"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;أدوات</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>
@@ -774,7 +775,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="334"/>
         <source>Quit</source>
-        <translation>أنهِ</translation>
+        <translation>إنهِ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="343"/>
@@ -834,7 +835,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="415"/>
         <source>&amp;Applications</source>
-        <translation>التطبي&amp;قات</translation>
+        <translation>&amp;التطبيقات</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="420"/>
@@ -844,7 +845,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="428"/>
         <source>&amp;Icon View</source>
-        <translation>منظور أي&amp;قوناتي</translation>
+        <translation>&amp;منظور الأيقونات</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="436"/>
@@ -929,7 +930,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>حسب وقت الاستحداث</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
@@ -959,37 +960,37 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="589"/>
         <source>&amp;Hidden Last</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp; مخفي أخيرًا</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>الاحتفاظ بالإعدادات بشكل متكرر من هنا</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="959"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>اذهب إلى مصدر الإعدادات الموروثة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="964"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>إزالة إعدادات المجلدات غير الموجودة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>امسح</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
@@ -1014,7 +1015,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="725"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>افتح علامة التبويب في نافذة صلاحية root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
@@ -1029,7 +1030,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>الاحتفاظ بالإعدادات لهذا المجلد</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="875"/>
@@ -1084,28 +1085,28 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="925"/>
         <source>S&amp;ide Pane</source>
-        <translation type="unfinished"></translation>
+        <translation>لوحة جانبية</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="928"/>
         <source>F9</source>
-        <translation type="unfinished">F9</translation>
+        <translation>F9</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="933"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>الاختصارات المخفية</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="938"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>افتح علامة التبويب في صلاحية المسؤول</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="943"/>
         <location filename="../main-win.ui" line="946"/>
         <source>Create Launcher</source>
-        <translation type="unfinished">أنشِئ مطلِقًا</translation>
+        <translation>أنشِئ مطلِقًا</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="773"/>
@@ -1165,7 +1166,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <source>Permanent &amp;filter bar</source>
-        <translation type="unfinished"></translation>
+        <translation>شريط مرشح دائم</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="812"/>
@@ -1196,7 +1197,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>إعدادات العرض المخصصة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="601"/>
@@ -1390,12 +1391,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="191"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>قم بتشغيل PCManFM-Qt كبرنامج في الخلفية</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="194"/>
         <source>Quit PCManFM-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>إنهاء PCManFM-Qt</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="197"/>
@@ -1589,7 +1590,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="264"/>
         <source>Select Wallpaper</source>
-        <translation type="unfinished"></translation>
+        <translation>حدد الخلفية</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="268"/>
@@ -1599,7 +1600,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="310"/>
         <source>Select Wallpaper Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>حدد مجلد الخلفية</translation>
     </message>
 </context>
 <context>
@@ -1689,7 +1690,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Root Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>نافذة root</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="743"/>
@@ -1721,7 +1722,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1974"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>إعدادات العرض المخصصة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2238"/>
@@ -1737,13 +1738,14 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../mainwindow.cpp" line="2348"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>مسح إعدادات المجلد</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2349"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>هل تريد إزالة إعدادات المجلدات غير الموجودة؟
+قد تكون مفيدة إذا تم إنشاء هذه المجلدات مرة أخرى.</translation>
     </message>
 </context>
 <context>
@@ -1774,7 +1776,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="442"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>نتائج البحث</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="529"/>
@@ -1835,18 +1837,18 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>ملفات عديدة</translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>هل تريد فتح هذه الـ٪ 1 الملف؟</numerusform>
+            <numerusform>هل تريد فتح هذا الملف؟</numerusform>
+            <numerusform>هل تريد فتح هذين الـملفين؟</numerusform>
+            <numerusform>هل تريد فتح هذه الـ٪ 1 الملفات؟</numerusform>
+            <numerusform>هل تريد فتح هذه الـ٪ 1 الملفات؟</numerusform>
+            <numerusform>هل تريد فتح هذه الـ٪ 1 الملفات؟</numerusform>
         </translation>
     </message>
     <message>
@@ -2017,18 +2019,18 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <source>If this is unchecked, the DE setting will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>إذا لم يتم تحديد ذلك ، فسيتم استخدام إعداد DE.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="103"/>
         <location filename="../preferences.ui" line="126"/>
         <source>Set to zero to disable auto-selection.</source>
-        <translation type="unfinished"></translation>
+        <translation>اضبط على صفر لتعطيل التحديد التلقائي.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="106"/>
         <source>Delay of auto-selection in single click mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>تأخير التحديد التلقائي في وضع النقرة الواحدة:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="147"/>
@@ -2070,12 +2072,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <source>Renamed files will also be selected</source>
-        <translation type="unfinished"></translation>
+        <translation>سيتم أيضًا تحديد الملفات المعاد تسميتها</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>عدد الملفات الأخيرة:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2113,7 +2115,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>تعطيل التمرير السلس في أوضاع القائمة والمضغوطة</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
@@ -2157,12 +2159,12 @@ only if there are more than one tab.</source>
     <message>
         <location filename="../preferences.ui" line="573"/>
         <source>Switch to newly opened tab</source>
-        <translation type="unfinished"></translation>
+        <translation>قم بالتبديل إلى لسان التبويب المفتوحة حديثًا</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <source>Reopen last window tabs in a new window</source>
-        <translation type="unfinished"></translation>
+        <translation>أعد فتح السنة التبويب للنافذة الأخيرة في نافذة جديدة</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="665"/>
@@ -2170,18 +2172,20 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>يقوم المصغر المدمج بعمل صور مصغرة للصور التي يدعمها Qt.
+
+عادةً ، يتم دعم معظم أنواع الصور. حد الحجم الافتراضي هو 4 ميكا بايت.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>حد حجم الصورة للمصغر المدمج:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
@@ -2189,72 +2193,74 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>إذا تم استخدام مصغر خارجي موجود لمقاطع الفيديو ومستندات PDF وما إلى ذلك.
+
+تعني القيمة -1 أنه لا يوجد حد لحجم الملف (الافتراضي).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>حد حجم الملف للمصغرات الخارجية:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
         <source>No limit</source>
-        <translation type="unfinished"></translation>
+        <translation>لا حدود</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="853"/>
         <source>Examples:&lt;br&gt;For terminal: &lt;i&gt;xterm -e %s&lt;/i&gt;&lt;br&gt;For switching user: &lt;i&gt;lxsudo %s&lt;/i&gt; or &lt;i&gt;lxsudo dbus-run-session -- %s&lt;/i&gt;&lt;br&gt;&lt;i&gt;%s&lt;/i&gt; is the command line you want to execute with terminal or su.&lt;br&gt; Important: Please use lxsudo, sudo alone will wreck permissions of the settings file.</source>
-        <translation type="unfinished"></translation>
+        <translation>أمثلة: &lt;br&gt; للمحطة الطرفية: &lt;i&gt; xterm -e%s &lt;/i&gt; &lt;br&gt; لتبديل المستخدم: &lt;i&gt; lxsudo%s &lt;/i&gt; أو &lt;i&gt; lxsudo dbus-run-session -%s &lt;/i&gt; &lt;br&gt; &lt;i&gt;%s &lt;/i&gt; هو سطر الأوامر الذي تريد تنفيذه مع Terminal أو su. &lt;br&gt; هام: الرجاء استخدام lxsudo ، فإن sudo وحده سيحطم أذونات ملف الإعدادات.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>بحث</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>تاريخ البحث الأقصى:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>امسح البحث السابق</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
         <source>Application restart is needed for changes to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>يلزم إعادة تشغيل التطبيق لتصبح التغييرات سارية المفعول.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="139"/>
         <source>Bookmarks menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>قائمة الإشارات المرجعية:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="165"/>
         <source>Show folder context menu with Ctrl + right click</source>
-        <translation type="unfinished"></translation>
+        <translation>إظهار قائمة سياق المجلد باستخدام Ctrl + النقر بزر الماوس الأيمن</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <source>Open folders in new tabs as far as possible</source>
-        <translation type="unfinished"></translation>
+        <translation>افتح المجلدات في السنة جديدة بقدر الإمكان</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="232"/>
         <source>Single window mode</source>
-        <translation type="unfinished"></translation>
+        <translation>وضع النافذة الواحدة</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="412"/>
         <source>Always show real file names</source>
-        <translation type="unfinished"></translation>
+        <translation>دائما اعرض أسماء الملفات الحقيقية</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="429"/>
         <source>Do not show file tooltips</source>
-        <translation type="unfinished"></translation>
+        <translation>لا تظهر تلميحات الملف</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="648"/>
@@ -2352,7 +2358,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="86"/>
         <source>Abort</source>
-        <translation>أجهِض</translation>
+        <translation>اترك</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="95"/>
@@ -2384,7 +2390,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1112"/>
         <source>Cannot open as Admin.</source>
-        <translation type="unfinished"></translation>
+        <translation>لا يمكن فتح كمسؤول.</translation>
     </message>
 </context>
 </TS>
