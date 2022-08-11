@@ -1096,7 +1096,7 @@ void DesktopWindow::selectAll() {
 void DesktopWindow::onCreatingShortcut() {
     DesktopEntryDialog* dlg = new DesktopEntryDialog(this);
     dlg->setAttribute(Qt::WA_DeleteOnClose);
-    connect(dlg, &DesktopEntryDialog::desktopEntryCreated, [this] (const QString& name) {
+    connect(dlg, &DesktopEntryDialog::desktopEntryCreated, [this] (const Fm::FilePath&, const QString& name) {
         filesToTrust_ << name;
     });
     dlg->show();

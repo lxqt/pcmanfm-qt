@@ -18,7 +18,7 @@ public:
     virtual void accept() override;
 
 Q_SIGNALS:
-    void desktopEntryCreated(const QString& name);
+    void desktopEntryCreated(const Fm::FilePath& parent, const QString& name);
 
 private Q_SLOTS:
     void onChangingType(int type);
