@@ -6,7 +6,7 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <source>About</source>
-        <translation>حول</translation>
+        <translation>عن</translation>
     </message>
     <message>
         <location filename="../about.ui" line="25"/>
@@ -875,7 +875,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="473"/>
         <source>&amp;Copy</source>
-        <translation>ا&amp;نسخ</translation>
+        <translation>&amp;انسخ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="476"/>
@@ -885,7 +885,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="485"/>
         <source>&amp;Paste</source>
-        <translation>أل&amp;صِق</translation>
+        <translation>&amp;ألصِق</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="488"/>
@@ -1247,7 +1247,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>&amp;Delete</source>
-        <translation>ا&amp;حذف</translation>
+        <translation>&amp;احذف</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
@@ -1342,13 +1342,13 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="98"/>
         <source>&amp;Help</source>
-        <translation>م&amp;ساعدة</translation>
+        <translation>&amp;مساعدة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="105"/>
         <location filename="../main-win.ui" line="129"/>
         <source>&amp;View</source>
-        <translation>من&amp;ظور</translation>
+        <translation>&amp;منظور</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="109"/>
@@ -1358,7 +1358,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="185"/>
         <source>&amp;Edit</source>
-        <translation>ت&amp;حرير</translation>
+        <translation>&amp;تحرير</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="203"/>
