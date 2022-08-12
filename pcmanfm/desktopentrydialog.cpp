@@ -31,6 +31,8 @@ void DesktopEntryDialog::onChangingType(int type) {
     else if(type == 1) {
         ui.commandLabel->setText(tr("URL:"));
     }
+    ui.catLabel->setVisible(type == 0);
+    ui.catEdit->setVisible(type == 0);
 }
 
 void DesktopEntryDialog::onClickingIconButton() {
@@ -106,6 +108,15 @@ void DesktopEntryDialog::accept() {
     if(ui.typeCombo->currentIndex() == 0) {
         g_key_file_set_string(kf, "Desktop Entry", "Exec", ui.commandEdit->text().toStdString().c_str());
         g_key_file_set_string(kf, "Desktop Entry", "Type", "Application");
+
+        // categories
+        auto categories = ui.catEdit->text();
+        if(!categories.isEmpty()) {
+            if(!categories.endsWith(QLatin1Char(';'))) {
+                categories.append(QLatin1Char(';'));
+            }
+            g_key_file_set_string(kf, "Desktop Entry", "Categories", categories.toStdString().c_str());
+        }
     }
     else {
         QString cmd = ui.commandEdit->text();
@@ -144,7 +155,7 @@ void DesktopEntryDialog::accept() {
 
     auto launcher = Fm::CStrPtr{g_build_filename(pathStrPtr.get(), name.toStdString().c_str(), nullptr)};
     if(g_key_file_save_to_file(kf, launcher.get(), nullptr)) {
-        Q_EMIT desktopEntryCreated(name);
+        Q_EMIT desktopEntryCreated(dirPath_, name);
     }
     g_key_file_free(kf);
 
