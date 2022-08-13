@@ -130,12 +130,12 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Wenn möglich, Zahlen mit Nullen auffüllen</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Lokalisierte Zahlen verwenden</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -422,7 +422,7 @@ Zusätzlich wird ein Abstand freigehalten, der drei Textzeilen entspricht.</tran
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ränder des Arbeitsbereichs:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -949,7 +949,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>Lös&amp;chen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="639"/>
@@ -1776,7 +1776,7 @@ Sie könnten nützlich sein, wenn diese Ordner erneut erstellt werden.</translat
     <message>
         <location filename="../tabpage.cpp" line="442"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchergebnisse</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="529"/>
@@ -2215,17 +2215,17 @@ Wert -1 bedeutet ohne Größenbegrenzung (als Standard).</translation>
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Maximaler Suchverlauf:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchverlauf löschen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>

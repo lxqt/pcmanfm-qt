@@ -154,12 +154,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation>ولوج مجهّل</translation>
+        <translation>&amp;ولوج مجهّل</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation>لِج بالمستخدم:</translation>
+        <translation>&amp;لِج بالمستخدم:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
@@ -710,7 +710,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation>&amp; الملفات الأخيرة</translation>
+        <translation>&amp;الملفات الأخيرة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -930,7 +930,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <source>By C&amp;reation Time</source>
-        <translation>حسب وقت الاستحداث</translation>
+        <translation>&amp;حسب وقت الاستحداث</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
@@ -960,7 +960,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="589"/>
         <source>&amp;Hidden Last</source>
-        <translation>&amp; مخفي أخيرًا</translation>
+        <translation>&amp;مخفي أخيرًا</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="870"/>
@@ -975,17 +975,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="959"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation>اذهب إلى مصدر الإعدادات الموروثة</translation>
+        <translation>&amp;اذهب إلى مصدر الإعدادات الموروثة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="964"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation>إزالة إعدادات المجلدات غير الموجودة</translation>
+        <translation>&amp;إزالة إعدادات المجلدات غير الموجودة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation>امسح</translation>
+        <translation>&amp;امسح</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
@@ -1015,7 +1015,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="725"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>افتح علامة التبويب في نافذة صلاحية root</translation>
+        <translation>&amp;افتح علامة التبويب في نافذة صلاحية root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
@@ -1085,7 +1085,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="925"/>
         <source>S&amp;ide Pane</source>
-        <translation>لوحة جانبية</translation>
+        <translation>&amp;لوحة جانبية</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="928"/>
@@ -1095,12 +1095,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="933"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>الاختصارات المخفية</translation>
+        <translation>&amp;الاختصارات المخفية</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="938"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>افتح علامة التبويب في صلاحية المسؤول</translation>
+        <translation>&amp;افتح علامة التبويب في صلاحية المسؤول</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="943"/>
@@ -1166,7 +1166,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <source>Permanent &amp;filter bar</source>
-        <translation>شريط مرشح دائم</translation>
+        <translation>&amp;شريط مرشح دائم</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="812"/>
@@ -1197,7 +1197,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation>إعدادات العرض المخصصة</translation>
+        <translation>&amp;إعدادات العرض المخصصة</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="601"/>
@@ -1843,12 +1843,12 @@ They might be useful if those folders are created again.</source>
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
         <translation>
-            <numerusform>هل تريد فتح هذه الـ٪ 1 الملف؟</numerusform>
-            <numerusform>هل تريد فتح هذا الملف؟</numerusform>
-            <numerusform>هل تريد فتح هذين الـملفين؟</numerusform>
-            <numerusform>هل تريد فتح هذه الـ٪ 1 الملفات؟</numerusform>
-            <numerusform>هل تريد فتح هذه الـ٪ 1 الملفات؟</numerusform>
-            <numerusform>هل تريد فتح هذه الـ٪ 1 الملفات؟</numerusform>
+            <numerusform>%1؟</numerusform>
+            <numerusform>هل تريد فتح هذا الملف%1؟</numerusform>
+            <numerusform>هل تريد فتح هذين الـملفين%1؟</numerusform>
+            <numerusform>%nهل تريد فتح هذه الـ%1 الملفات؟</numerusform>
+            <numerusform>%nهل تريد فتح هذه الـ%1 الملفات؟</numerusform>
+            <numerusform>%nهل تريد فتح هذه الـ%1 الملفات؟</numerusform>
         </translation>
     </message>
     <message>
