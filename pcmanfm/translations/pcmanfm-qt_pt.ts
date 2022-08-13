@@ -202,66 +202,114 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <translation>Nome:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="55"/>
+        <location filename="../desktopentrydialog.ui" line="45"/>
+        <source>Specific name of this launcher.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopentrydialog.ui" line="58"/>
         <source>Description:</source>
         <translation>Descrição:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="69"/>
+        <location filename="../desktopentrydialog.ui" line="65"/>
+        <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
+
+It can be left empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopentrydialog.ui" line="77"/>
         <source>Comment:</source>
         <translation>Comentário:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="83"/>
+        <location filename="../desktopentrydialog.ui" line="84"/>
+        <source>A short comment.
+
+It can be left empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Command:</source>
         <translation>Comando:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="99"/>
-        <location filename="../desktopentrydialog.ui" line="127"/>
+        <location filename="../desktopentrydialog.ui" line="112"/>
+        <location filename="../desktopentrydialog.ui" line="143"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="108"/>
+        <location filename="../desktopentrydialog.ui" line="121"/>
         <source>Icon:</source>
         <translation>Ícone:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="136"/>
-        <location filename="../desktopentrydialog.ui" line="146"/>
+        <location filename="../desktopentrydialog.ui" line="130"/>
+        <source>Icon to display in file manager, menus, etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopentrydialog.ui" line="152"/>
+        <location filename="../desktopentrydialog.ui" line="162"/>
         <source>Run in terminal?</source>
         <translation>Executar no terminal?</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="139"/>
+        <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Terminal:</source>
         <translation>Terminal:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="150"/>
+        <location filename="../desktopentrydialog.ui" line="165"/>
+        <source>Whether the launched program should run in a terminal window.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopentrydialog.ui" line="169"/>
         <source>No</source>
         <translation>Não</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="155"/>
+        <location filename="../desktopentrydialog.ui" line="174"/>
         <source>Yes</source>
         <translation>Sim</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="163"/>
+        <location filename="../desktopentrydialog.ui" line="182"/>
         <source>Type:</source>
         <translation>Tipo:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="171"/>
+        <location filename="../desktopentrydialog.ui" line="189"/>
+        <source>Whether this is a link or executes a command.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopentrydialog.ui" line="193"/>
         <source>Application</source>
         <translation>Aplicação</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.ui" line="176"/>
+        <location filename="../desktopentrydialog.ui" line="198"/>
         <source>Link</source>
         <translation>Ligação</translation>
+    </message>
+    <message>
+        <location filename="../desktopentrydialog.ui" line="206"/>
+        <source>Categories:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopentrydialog.ui" line="213"/>
+        <source>Semicolon separated categories in which the entry should be shown if it is used by the DE&apos;s main menu (e.g., when put inside ~/.local/share/applications).
+
+It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
+
+Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1527,32 +1575,42 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
 <context>
     <name>PCManFM::DesktopEntryDialog</name>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="29"/>
+        <location filename="../desktopentrydialog.cpp" line="35"/>
         <source>Command:</source>
         <translation>Comando:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="32"/>
+        <location filename="../desktopentrydialog.cpp" line="36"/>
+        <source>The command to execute.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopentrydialog.cpp" line="39"/>
         <source>URL:</source>
         <translation>URL:</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="57"/>
+        <location filename="../desktopentrydialog.cpp" line="40"/>
+        <source>The URL to access.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktopentrydialog.cpp" line="67"/>
         <source>Select an icon</source>
         <translation>Selecione um ícone</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="59"/>
+        <location filename="../desktopentrydialog.cpp" line="69"/>
         <source>Images (*.png *.xpm *.svg *.svgz )</source>
         <translation>Imagens (*.png *.xpm *.svg *.svgz )</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="81"/>
+        <location filename="../desktopentrydialog.cpp" line="91"/>
         <source>Select an executable file</source>
         <translation>Selecione um executável</translation>
     </message>
     <message>
-        <location filename="../desktopentrydialog.cpp" line="89"/>
+        <location filename="../desktopentrydialog.cpp" line="99"/>
         <source>Select a file</source>
         <translation>Selecione um ficheiro</translation>
     </message>
@@ -2356,7 +2414,7 @@ O valor -1 implica que não existirá limite para o tamanho dos ficheiros (padr�
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1112"/>
+        <location filename="../tabpage.cpp" line="1111"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
@@ -2371,7 +2429,7 @@ O valor -1 implica que não existirá limite para o tamanho dos ficheiros (padr�
         <translation>Alguns ficheiros não foram renomeados.</translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1112"/>
+        <location filename="../tabpage.cpp" line="1111"/>
         <source>Cannot open as Admin.</source>
         <translation>Não é possível abrir como administrador.</translation>
     </message>
