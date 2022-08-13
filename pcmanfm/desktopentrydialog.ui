@@ -41,6 +41,9 @@
      </item>
      <item row="0" column="1">
       <widget class="QLineEdit" name="nameEdit">
+       <property name="whatsThis">
+        <string>Specific name of this launcher.</string>
+       </property>
        <property name="placeholderText">
         <string/>
        </property>
@@ -58,6 +61,11 @@
      </item>
      <item row="1" column="1">
       <widget class="QLineEdit" name="descriptionEdit">
+       <property name="whatsThis">
+        <string>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
+
+It can be left empty.</string>
+       </property>
        <property name="clearButtonEnabled">
         <bool>true</bool>
        </property>
@@ -72,6 +80,11 @@
      </item>
      <item row="2" column="1">
       <widget class="QLineEdit" name="commentEdit">
+       <property name="whatsThis">
+        <string>A short comment.
+
+It can be left empty.</string>
+       </property>
        <property name="clearButtonEnabled">
         <bool>true</bool>
        </property>
@@ -113,6 +126,9 @@
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="QLineEdit" name="iconEdit">
+         <property name="whatsThis">
+          <string>Icon to display in file manager, menus, etc.</string>
+         </property>
          <property name="text">
           <string notr="true">application-x-desktop</string>
          </property>
@@ -145,6 +161,9 @@
        <property name="toolTip">
         <string>Run in terminal?</string>
        </property>
+       <property name="whatsThis">
+        <string>Whether the launched program should run in a terminal window.</string>
+       </property>
        <item>
         <property name="text">
          <string>No</string>
@@ -166,6 +185,9 @@
      </item>
      <item row="7" column="1">
       <widget class="QComboBox" name="typeCombo">
+       <property name="whatsThis">
+        <string>Whether this is a link or executes a command.</string>
+       </property>
        <item>
         <property name="text">
          <string>Application</string>
@@ -187,6 +209,13 @@
      </item>
      <item row="3" column="1">
       <widget class="QLineEdit" name="catEdit">
+       <property name="whatsThis">
+        <string>Semicolon separated categories in which the entry should be shown if it is used by the DE's main menu (e.g., when put inside ~/.local/share/applications).
+
+It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
+
+Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</string>
+       </property>
        <property name="clearButtonEnabled">
         <bool>true</bool>
        </property>
@@ -200,7 +229,7 @@
       <enum>Qt::Horizontal</enum>
      </property>
      <property name="standardButtons">
-      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Help|QDialogButtonBox::Ok</set>
      </property>
     </widget>
    </item>

@@ -5,6 +5,7 @@
 #include <QDir>
 #include <QStandardPaths>
 #include <QFileDialog>
+#include <QWhatsThis>
 
 namespace PCManFM {
 
@@ -20,6 +21,11 @@ DesktopEntryDialog::DesktopEntryDialog(QWidget* parent, const Fm::FilePath& dirP
     connect(ui.typeCombo, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &DesktopEntryDialog::onChangingType);
     connect(ui.iconButton, &QAbstractButton::clicked, this, &DesktopEntryDialog::onClickingIconButton);
     connect(ui.commandButton, &QAbstractButton::clicked, this, &DesktopEntryDialog::onClickingCommandButton);
+
+    connect(ui.buttonBox, &QDialogButtonBox::helpRequested, this, [] {
+        QWhatsThis::enterWhatsThisMode();
+    });
+    onChangingType(0);
 }
 
 DesktopEntryDialog::~DesktopEntryDialog() = default;
@@ -27,9 +33,11 @@ DesktopEntryDialog::~DesktopEntryDialog() = default;
 void DesktopEntryDialog::onChangingType(int type) {
     if(type == 0) {
         ui.commandLabel->setText(tr("Command:"));
+        ui.commandEdit->setWhatsThis(tr("The command to execute."));
     }
     else if(type == 1) {
         ui.commandLabel->setText(tr("URL:"));
+        ui.commandEdit->setWhatsThis(tr("The URL to access."));
     }
     ui.catLabel->setVisible(type == 0);
     ui.catEdit->setVisible(type == 0);
