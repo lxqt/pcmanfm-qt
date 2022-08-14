@@ -126,6 +126,7 @@ protected Q_SLOTS:
     void on_actionRename_triggered();
     void on_actionBulkRename_triggered();
     void on_actionSelectAll_triggered();
+    void on_actionDeselectAll_triggered();
     void on_actionInvertSelection_triggered();
     void on_actionPreferences_triggered();
 

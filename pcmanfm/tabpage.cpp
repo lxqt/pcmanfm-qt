@@ -721,6 +721,10 @@ void TabPage::selectAll() {
     folderView_->selectAll();
 }
 
+void TabPage::deselectAll() {
+    folderView_->selectionModel()->clearSelection();
+}
+
 void TabPage::invertSelection() {
     folderView_->invertSelection();
 }
