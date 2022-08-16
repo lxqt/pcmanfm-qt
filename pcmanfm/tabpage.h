@@ -200,6 +200,8 @@ public:
 
     void selectAll();
 
+    void deselectAll();
+
     void invertSelection();
 
     void reload();

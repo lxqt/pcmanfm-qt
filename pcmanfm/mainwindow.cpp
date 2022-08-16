@@ -1851,6 +1851,10 @@ void MainWindow::on_actionSelectAll_triggered() {
     currentPage()->selectAll();
 }
 
+void MainWindow::on_actionDeselectAll_triggered() {
+    currentPage()->deselectAll();
+}
+
 void MainWindow::on_actionInvertSelection_triggered() {
     currentPage()->invertSelection();
 }

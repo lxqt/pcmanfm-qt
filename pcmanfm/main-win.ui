@@ -191,6 +191,7 @@
     <addaction name="actionDelete"/>
     <addaction name="separator"/>
     <addaction name="actionSelectAll"/>
+    <addaction name="actionDeselectAll"/>
     <addaction name="actionInvertSelection"/>
     <addaction name="separator"/>
     <addaction name="separator"/>
@@ -494,6 +495,14 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionDeselectAll">
+   <property name="text">
+    <string>De&amp;select All</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
    </property>
   </action>
   <action name="actionPreferences">
