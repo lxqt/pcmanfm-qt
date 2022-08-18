@@ -200,7 +200,7 @@ Fifth Floor, Boston, MA 02110-1301, USA 로 서면 문의하십시오.</translat
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>이 런처의 특정 이름입니다.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -212,7 +212,9 @@ Fifth Floor, Boston, MA 02110-1301, USA 로 서면 문의하십시오.</translat
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;웹 브라우저&quot; 또는 &quot;홈 디렉토리&quot;와 같은 간단한 설명 또는 일반적인 이름입니다.
+
+비워둘 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -224,7 +226,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>짧은 코멘트.
+
+비워둘 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -245,7 +249,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 관리자, 메뉴 등에 표시할 아이콘.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -261,7 +265,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>시작된 프로그램이 터미널 창에서 실행되어야 하는지에 대한 판단.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
@@ -281,7 +285,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>이것이 링크인지 또는 명령을 실행할지를 결정짓기.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
@@ -296,7 +300,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>카테고리:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -305,7 +309,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>항목이 DE의 기본 메뉴에서 사용되는 경우 항목이 표시되어야 하는 세미콜론으로 분류되는 카테고리(예: ~/.local/share/applications 안에 넣을 때).
+
+생성된 파일을 메인 메뉴에서 사용하고자 할 때만 필요합니다. 그렇지 않으면 비워 둘 수 있습니다.
+
+예: 오디오 비디오, 오디오, 비디오, 개발, 교육, 게임, 그래픽, 네트워크, 사무실, 설정, 시스템, 유틸리티, Qt.</translation>
     </message>
 </context>
 <context>
@@ -1580,7 +1588,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>실행할 명령입니다.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1590,7 +1598,7 @@ PCManFM-Qt에서 열립니다.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>접속할 URL입니다.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
