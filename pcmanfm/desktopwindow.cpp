@@ -172,7 +172,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     shortcut = new QShortcut(QKeySequence(Qt::Key_F2), this); // rename
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onRenameActivated);
 
-    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_F2), this); // bulk rename
+    shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_F2), this); // bulk rename
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onBulkRenameActivated);
 
     shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_Return), this); // properties
