@@ -2,11 +2,9 @@
 IconThemeName=elementary
 FallbackIconThemeName=breeze
 SuCommand=lxsudo dbus-run-session -- %s
-TerminalCommand=
 Archiver=lxqt-archiver
 SIUnit=false
-TerminalDirCommand=xterm
-TerminalExecCommand=xterm -e %s
+Terminal=qterminal
 
 [Behavior]
 BookmarkOpenMethod=0
