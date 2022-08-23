@@ -1013,7 +1013,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Shift+A</translation>
+        <translation>Ctrl+Maj+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
@@ -1088,7 +1088,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="903"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Shift+C</translation>
+        <translation>Ctrl+Maj+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="914"/>
