@@ -973,7 +973,27 @@ void MainWindow::on_actionShowHidden_triggered(bool checked) {
 }
 
 void MainWindow::on_actionShowThumbnails_triggered(bool checked) {
-    currentPage()->setShowThumbnails(checked);
+    QWidgetList windows = qApp->topLevelWidgets();
+    QWidgetList::iterator it;
+    for(it = windows.begin(); it != windows.end(); ++it) {
+        QWidget* window = *it;
+        if(window->inherits("PCManFM::MainWindow")) {
+            MainWindow* mainWindow = static_cast<MainWindow*>(window);
+            mainWindow->ui.actionShowThumbnails->setChecked(checked); // doesn't call this function
+            for(int i = 0; i < mainWindow->ui.viewSplitter->count(); ++i) {
+                if(ViewFrame* viewFrame = qobject_cast<ViewFrame*>(mainWindow->ui.viewSplitter->widget(i))) {
+                    int n = viewFrame->getStackedWidget()->count();
+                    for(int j = 0; j < n; ++j) {
+                        if(TabPage* page = static_cast<TabPage*>(viewFrame->getStackedWidget()->widget(j))) {
+                            page->setShowThumbnails(checked);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // this setting is shared by Desktop too
+    static_cast<Application*>(qApp)->updateDesktopsFromSettings(false);
 }
 
 void MainWindow::on_actionByFileName_triggered(bool /*checked*/) {
@@ -1057,7 +1077,7 @@ void MainWindow::on_actionFilter_triggered(bool checked) {
     static_cast<Application*>(qApp)->settings().setShowFilter(checked);
     // show/hide filter-bars and disable/enable their transience for all tabs
     // (of all view frames) in all windows because this is a global setting
-    QWidgetList windows = static_cast<Application*>(qApp)->topLevelWidgets();
+    QWidgetList windows = qApp->topLevelWidgets();
     QWidgetList::iterator it;
     for(it = windows.begin(); it != windows.end(); ++it) {
         QWidget* window = *it;

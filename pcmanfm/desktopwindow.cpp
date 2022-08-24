@@ -127,6 +127,7 @@ DesktopWindow::DesktopWindow(int screenNum):
         proxyModel_ = new Fm::ProxyFolderModel();
         proxyModel_->setSourceModel(model_);
         proxyModel_->setShowThumbnails(settings.showThumbnails());
+        proxyModel_->setBackupAsHidden(settings.backupAsHidden());
         proxyModel_->sort(settings.desktopSortColumn(), settings.desktopSortOrder());
         proxyModel_->setFolderFirst(settings.desktopSortFolderFirst());
         proxyModel_->setHiddenLast(settings.desktopSortHiddenLast());
@@ -888,6 +889,14 @@ void DesktopWindow::nextWallpaper() {
 }
 
 void DesktopWindow::updateFromSettings(Settings& settings, bool changeSlide) {
+    // geneeral PCManFM::View settings
+    setAutoSelectionDelay(settings.singleClick() ? settings.autoSelectionDelay() : 0);
+    setCtrlRightClick(settings.ctrlRightClick());
+    if(proxyModel_) {
+        proxyModel_->setShowThumbnails(settings.showThumbnails());
+        proxyModel_->setBackupAsHidden(settings.backupAsHidden());
+    }
+
     setDesktopFolder();
     setWallpaperFile(settings.wallpaper());
     setWallpaperMode(settings.wallpaperMode());
