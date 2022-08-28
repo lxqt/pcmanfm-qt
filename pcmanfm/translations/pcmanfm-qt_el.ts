@@ -206,7 +206,7 @@ USA.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ειδικό όνομα του εκκινητή.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -218,7 +218,9 @@ USA.</translation>
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Μια σύντομη περιγραφή ή ένα γενικό όνομα, όπως &quot;Φυλλομετρητής ιστού&quot; ή &quot;Προσωπικός κατάλογος&quot;.
+
+Μπορεί να αφεθεί κενό.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -230,7 +232,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ένα σύντομο σχόλιο.
+
+Μπορεί να αφεθεί κενό.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -251,7 +255,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Εικονίδιο προς εμφάνιση στον διαχειριστή αρχείων, τα μενού, κλπ.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -267,7 +271,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν το εκκινημένο πρόγραμμα θα πρέπει να εκτελείται σε παράθυρο τερματικού.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
@@ -287,7 +291,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν πρόκειται για έναν σύνδεσμο ή την εκτέλεση μιας εντολής.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
@@ -302,7 +306,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατηγορίες:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -311,7 +315,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατηγορίες διαχωρισμένες με κόμμα στις οποίες στην καταχώρηση θα πρέπει να υποδεικνύεται αν χρησιμοποιείται από το κύριο μενού του γραφικού περιβάλλοντος (π.χ., όταν βρίσκεται στο ~/.local/share/applications).
+
+Αυτό χρειάζεται μόνο όταν θέλετε να χρησιμοποιήσετε το δημιουργημένο αρχείο στο κύριο μενού. Διαφορετικά, μπορείτε να το αφήσετε κενό.
+
+Παραδείγματα: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -781,7 +789,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="289"/>
         <source>Go Up</source>
-        <translation>Μετάβαση&#xa0;πάνω</translation>
+        <translation>Μετάβαση πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="292"/>
@@ -1583,7 +1591,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η εντολή προς εκτέλεση.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1593,7 +1601,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το URL πρόσβασης.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
