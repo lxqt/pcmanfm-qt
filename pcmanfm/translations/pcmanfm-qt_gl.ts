@@ -592,7 +592,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../shortcuts.ui" line="14"/>
         <source>Hidden Shortcuts</source>
-        <translation>Atallos agochados</translation>
+        <translation>Atallos ocultos</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="21"/>
@@ -1004,7 +1004,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Maiús+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
@@ -1079,7 +1079,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="903"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Maiús+C</translation>
+        <translation type="unfinished">Ctrl+Maiús+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="914"/>
@@ -1104,7 +1104,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="933"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Atallos agochado&amp;s</translation>
+        <translation type="unfinished">Atallos agochados</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="938"/>
@@ -1296,7 +1296,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="662"/>
         <source>F2</source>
-        <translation>F2</translation>
+        <translation type="unfinished">F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="667"/>
@@ -1341,7 +1341,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="252"/>
         <source>Main Toolbar</source>
-        <translation>Barra de ferramentas principal</translation>
+        <translation type="unfinished">Barra de ferramentas principal</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="670"/>
@@ -1977,7 +1977,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
-        <translation>Xanela</translation>
+        <translation type="unfinished">Xanela</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="587"/>
@@ -2237,7 +2237,7 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
@@ -2410,7 +2410,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <location filename="../bulkrename.cpp" line="124"/>
         <location filename="../tabpage.cpp" line="1111"/>
         <source>Error</source>
-        <translation>Erro</translation>
+        <translation type="unfinished">Erro</translation>
     </message>
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
