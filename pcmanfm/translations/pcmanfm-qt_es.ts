@@ -21,12 +21,12 @@
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="113"/>
@@ -128,12 +128,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Rellenar los números con ceros si es posible</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Usar números localizados</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -204,7 +204,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre específico de este lanzador.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -216,7 +216,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Una breve descripción o nombre genérico, como |«Navegador web» o «Carpeta personal».
+
+Puede dejarse vacío.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -228,7 +230,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Un breve comentario.
+
+Se puede dejar vacío.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -249,7 +253,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Icono que se mostrará en el gestor de archivos, los menús, etc.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -265,7 +269,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si el programa que se lanza se debe ejecutar en una ventana del terminal.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
@@ -285,7 +289,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si es un enlace o ejecuta un comando.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
@@ -300,7 +304,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Categorías:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -309,7 +313,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Categorías separadas por punto y coma en las que se mostrará la entrada en el menú principal del entorno de escritorio (por ejemplo, cuando se sitúa en ~/.local/share/applications).
+
+Solo es necesario cuando se quiere usar el archivo creado en el menú principal. De lo contrario, puede dejarse vacío.
+
+Ejemplos: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -463,7 +471,7 @@ También se reserva espacio para 3 renglones de texto.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Márgenes del área de trabajo:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -635,7 +643,7 @@ es el gestor de archivos predeterminado.</translation>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation>Dar foco a cuadro de ruta</translation>
+        <translation>Foco en la entrada de la ruta</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -645,7 +653,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../shortcuts.ui" line="63"/>
         <source>Ctrl+Tab</source>
-        <translation> Ctrl+Tab</translation>
+        <translation>Ctrl+Tab</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="66"/>
@@ -791,7 +799,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation>Ficheros Recientes</translation>
+        <translation>Archivos &amp;recientes</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="98"/>
@@ -1077,32 +1085,32 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Mayús+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation type="unfinished"></translation>
+        <translation>Conservar la configuración de forma recursiva desde &amp;aquí</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="959"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ir a la fuente de los ajustes heredados</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="964"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Eliminar la configuración de las carpetas inexistentes</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Borrar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Mayúsculas+A</translation>
+        <translation>Ctrl+Mayús+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
@@ -1127,7 +1135,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="725"/>
         <source>Open Tab in &amp;Root Instance</source>
-        <translation>Abrir pestaña en una instancia de &amp;root</translation>
+        <translation>Abrir la pestaña en una instancia del &amp;superusuario</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
@@ -1142,7 +1150,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Conservar la configuración de esta carpeta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="875"/>
@@ -1182,7 +1190,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="903"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Mayúsculas+C</translation>
+        <translation>Ctrl+Mayús+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="914"/>
@@ -1212,7 +1220,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="938"/>
         <source>Open Tab in &amp;Admin Mode</source>
-        <translation>Abrir pestaña en modo de &amp;administrador</translation>
+        <translation>Abrir la pestaña en modo &amp;administrador</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="943"/>
@@ -1309,7 +1317,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Personalizar la configuración de la vista</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="227"/>
@@ -1583,7 +1591,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>La orden que se ejecutará.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1593,7 +1601,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>El URL de acceso.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -1779,7 +1787,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="1974"/>
         <source>Customized View Settings</source>
-        <translation type="unfinished">Personalizar la configuración de la vista</translation>
+        <translation>Personalizar la configuración de la vista</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2238"/>
@@ -1795,13 +1803,14 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="2348"/>
         <source>Cleaning Folder Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrar la configuración de la carpeta</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2349"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
-        <translation type="unfinished"></translation>
+        <translation>¿Quiere eliminar la configuración de las carpetas inexistentes?
+Podrían ser útiles si esas carpetas se crean de nuevo.</translation>
     </message>
 </context>
 <context>
@@ -1832,7 +1841,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="442"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Resultados de la búsqueda</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="529"/>
@@ -2132,7 +2141,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Número de archivos recientes:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2173,7 +2182,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Desactivar el desplazamiento suave en las listas y en el modo compacto</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
@@ -2183,7 +2192,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation>De 3&#xa0;px de manera predeterminada.</translation>
+        <translation>De 3 px de manera predeterminada.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2200,7 +2209,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>De 3&#xa0;px de manera predeterminada.
+        <translation>De 3 px de manera predeterminada.
 También se reserva espacio para 3 renglones de texto.</translation>
     </message>
     <message>
@@ -2233,7 +2242,7 @@ visible cuando haya más de una pestaña abierta.</translation>
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
         <translation>El miniaturizador integrado crea miniaturas de las imágenes que Qt admite.
 
-Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4&#xa0;MiB.</translation>
+Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
@@ -2274,17 +2283,17 @@ Un valor de −1 indica que no hay límite de tamaño de archivos (lo predetermi
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Buscar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Historial de búsqueda máximo:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrar el historial de búsqueda</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
