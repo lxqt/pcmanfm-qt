@@ -37,9 +37,9 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</source>
-        <translation>Gestor de ficheiros PCManFM-Qt
+        <translation>PCManFM-Qt File Manager
 
-Copyright (C) 2009 - 2019 洪任諭 (Hong Jen Yee)
+Copyright (C) 2009 - 2014 洪任諭 (Hong Jen Yee)
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -90,12 +90,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="14"/>
         <source>Removable medium is inserted</source>
-        <translation>Disco amovível inserido</translation>
+        <translation>Disco removível inserido</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Disco amovível inserido&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Disco removível inserido&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
@@ -110,7 +110,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../autorun.ui" line="56"/>
         <source>Please select the action you want to perform:</source>
-        <translation>Por favor escolha a ação a executar:</translation>
+        <translation>Escolha a ação a executar:</translation>
     </message>
 </context>
 <context>
@@ -151,17 +151,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation>Conectar a um servidor remoto</translation>
+        <translation>Ligar a um servidor remoto</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation>Sessã&amp;o anónima</translation>
+        <translation>Acess&amp;o anónimo</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation>Sessão com o &amp;utilizador:</translation>
+        <translation>Aceder como &amp;utilizador:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
@@ -988,7 +988,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="954"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
-        <translation>Preservar definições de forma recursiva a partir &amp;Daqui</translation>
+        <translation>Preservar definições de forma recursiva a partir &amp;daqui</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="959"/>
@@ -998,7 +998,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="964"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
-        <translation>&amp;Remover Definições de Pastas Inexistentes</translation>
+        <translation>&amp;Remover definições de pastas inexistentes</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="972"/>
@@ -1048,7 +1048,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="838"/>
         <source>Preserve Settings for &amp;This Folder</source>
-        <translation>Preservar Definições para &amp;Esta Pasta</translation>
+        <translation>Preservar definições para &amp;esta pasta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="875"/>
@@ -1215,7 +1215,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="160"/>
         <source>&amp;Customized View Settings</source>
-        <translation>Definições de Vista &amp;Personalizada</translation>
+        <translation>Definições de vista &amp;personalizada</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>

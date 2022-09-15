@@ -204,7 +204,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</trans
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom específic d&apos;aquest llançador.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -216,7 +216,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</trans
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Breu descripció o nom genèric, com ara «Navegador web» o «Carpeta d&apos;usuari».
+
+Podeu deixar-ho en blanc.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -228,7 +230,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Un breu comentari.
+
+Podeu deixar-ho en blanc.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -249,7 +253,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Icona a mostrar en el gestor d&apos;arxius, els menús, etc.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -265,7 +269,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Defineix si el programa s&apos;ha d&apos;executar en una finestra del terminal.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
@@ -285,7 +289,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si el text és un enllaç o executa una ordre.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
@@ -300,7 +304,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Catergories:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -468,13 +472,15 @@ També es reserva un espai per a 3 línies de text.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Marges de l&apos;àrea de treball:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
         <source>By default, desktop folders will be opened in PCManFM-Qt if they
 are left clicked, even when it is not the default file manager.</source>
-        <translation type="unfinished">Per defecte, les carpetes de l&apos;escriptori s&apos;obriran a PCManFM-Qt si es prem amb el botó esquerre del ratolí, encara que no sigui el gestor de fitxers predeterminat.</translation>
+        <translation>Per defecte, les carpetes de l&apos;escriptori s&apos;obriran a PCManFM-Qt
+si es prem amb el botó esquerre del ratolí, encara que no sigui
+el gestor de fitxers predeterminat.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="307"/>
@@ -633,7 +639,7 @@ are left clicked, even when it is not the default file manager.</source>
         <location filename="../shortcuts.ui" line="50"/>
         <location filename="../shortcuts.ui" line="58"/>
         <source>Focus path entry</source>
-        <translation type="unfinished">Habilita la barra d&apos;adreces</translation>
+        <translation>Focus a l&apos;entrada de la ruta</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="55"/>
@@ -759,7 +765,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="81"/>
         <source>Recent F&amp;iles</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxers &amp;recents</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="139"/>
@@ -1015,7 +1021,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Maj+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
@@ -1035,7 +1041,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Esborra</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
@@ -1362,7 +1368,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="742"/>
         <source>Ctrl+Shift+N</source>
-        <translation>Ctrl+Majúscules+N</translation>
+        <translation>Ctrl+Maj+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="754"/>
@@ -1582,7 +1588,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;ordre a executar.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1592,7 +1598,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>La URL d&apos;accés.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -1832,7 +1838,7 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     <message>
         <location filename="../tabpage.cpp" line="442"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Resultats de la cerca</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="529"/>
@@ -2119,7 +2125,7 @@ Pot ser útil si es tornen a crear aquestes carpetes.</translation>
     <message>
         <location filename="../preferences.ui" line="244"/>
         <source>Number of recent files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre de fitxers recents:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="325"/>
@@ -2258,17 +2264,17 @@ Un valor de -1 significa que no hi ha límit per a la mida del fitxer (per defec
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerca</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Límit de l&apos;historial de cerca:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Esborra l&apos;historial de cerques</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
