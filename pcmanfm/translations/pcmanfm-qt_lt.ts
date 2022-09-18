@@ -228,7 +228,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Trumpas komentaras.
+
+Gali būti paliktas tuščias.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -249,7 +251,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Piktograma, kuri bus rodoma failų tvarkytuvėje, meniu ir t.t.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -300,7 +302,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kategorijos:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -1016,7 +1018,7 @@ numatytoji failų tvarkytuvė.</translation>
     <message>
         <location filename="../main-win.ui" line="870"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="954"/>
@@ -1036,7 +1038,7 @@ numatytoji failų tvarkytuvė.</translation>
     <message>
         <location filename="../main-win.ui" line="972"/>
         <source>&amp;Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>Iš&amp;valyti</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="642"/>
@@ -1583,7 +1585,7 @@ numatytoji failų tvarkytuvė.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Komanda, kurią vykdyti.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1834,7 +1836,7 @@ Jie gali praversti tuo atveju, jeigu aplankai bus sukurti iš naujo.</translatio
     <message>
         <location filename="../tabpage.cpp" line="442"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Paieškos rezultatai</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="529"/>
@@ -2263,7 +2265,7 @@ Reikšmė -1 reiškia, kad failų dydžiui nėra jokio apribojimo (pagal numatym
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Paieška</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
@@ -2273,7 +2275,7 @@ Reikšmė -1 reiškia, kad failų dydžiui nėra jokio apribojimo (pagal numatym
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Išvalyti paieškos istoriją</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
