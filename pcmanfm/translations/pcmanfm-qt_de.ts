@@ -30,12 +30,12 @@
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="113"/>
@@ -206,7 +206,7 @@ Boston, MA  02110-1301, USA.</translation>
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Konkreter Name für diesen Starter.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -218,7 +218,9 @@ Boston, MA  02110-1301, USA.</translation>
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Eine kurze Beschreibung oder ein generischer Name wie &quot;Webbrowser&quot; oder &quot;Benutzerverzeichnis&quot;.
+
+Kann leer gelassen werden.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -230,7 +232,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ein kurzer Kommentar.
+
+Kann leer gelassen werden.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -251,7 +255,8 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Icon to display in file manager, menus, etc.
+Symbol um Dateimanager, Menüs, etc. darzustellen.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -267,7 +272,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ob das gestartete Programm in einem neuen Terminal-Fenster ausgeführt werden soll.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
@@ -287,7 +292,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ob es sich dabei um eine Verknüpfung handelt oder es einen Befehl ausführt.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
@@ -302,7 +307,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kategorien:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -311,7 +316,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mittels Semicolon getrennte Kategorien, welche anzeigen sollen ob sie vom Hauptmenü verwendet werden (z.B. wenn sie in ~/.local/share/applications gelegt werden).
+
+Dies wird nur benötigt, wenn Sie die erstellte Datei im Hauptmenü verwenden wollen. Anderenfalls kann es leer gelassen werden.
+
+Beispiele: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -1007,7 +1016,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="642"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Strg+Umschalt+A</translation>
+        <translation>Strg+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
@@ -1087,7 +1096,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../main-win.ui" line="903"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Strg+Umschalt+C</translation>
+        <translation>Strg+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="914"/>
@@ -1584,7 +1593,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Befehl, der ausgeführt werden soll.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1594,7 +1603,7 @@ geöffnet, selbst wenn dies nicht der Standard-Dateimanager ist.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>Url, die abgerufen werden soll.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
