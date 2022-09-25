@@ -37,6 +37,9 @@ public:
 
     void setDetachable(bool detachable) {
         detachable_ = detachable;
+        // also, reset drag info
+        dragStarted_ = false;
+        dragStartPosition_ = QPoint();
     }
 
 Q_SIGNALS:

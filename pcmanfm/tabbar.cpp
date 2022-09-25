@@ -104,6 +104,11 @@ void TabBar::releaseMouse() {
 }
 
 void TabBar::mouseReleaseEvent(QMouseEvent *event) {
+    if(detachable_) { // reset drag info
+        dragStarted_ = false;
+        dragStartPosition_ = QPoint();
+    }
+
     if (event->button() == Qt::MiddleButton) {
         int index = tabAt(event->pos());
         if (index != -1) {
