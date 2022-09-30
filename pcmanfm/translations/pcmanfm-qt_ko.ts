@@ -23,12 +23,7 @@
         <source>Programming:
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
 </source>
-        <translation>Programming:
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
-
-한국어 번역: 
-* 이정희 &lt;daemul72@gmail.com&gt;
-</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../about.ui" line="144"/>
