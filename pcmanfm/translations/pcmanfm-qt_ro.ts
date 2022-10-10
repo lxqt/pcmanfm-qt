@@ -778,469 +778,479 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
         <translation>&amp;Filtrare</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="227"/>
+        <location filename="../main-win.ui" line="228"/>
         <source>&amp;Tools</source>
         <translation>&amp;Unelte</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="286"/>
+        <location filename="../main-win.ui" line="287"/>
         <source>Go &amp;Up</source>
         <translation>Duceți-vă &amp;sus</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="289"/>
+        <location filename="../main-win.ui" line="290"/>
         <source>Go Up</source>
         <translation>Duceți-vă sus</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="292"/>
+        <location filename="../main-win.ui" line="293"/>
         <source>Alt+Up</source>
         <translation>Alt+Up</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="301"/>
+        <location filename="../main-win.ui" line="302"/>
         <source>&amp;Home</source>
         <translation>&amp;Acasă</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="304"/>
+        <location filename="../main-win.ui" line="305"/>
         <source>Alt+Home</source>
         <translation>Alt+Home</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="313"/>
+        <location filename="../main-win.ui" line="314"/>
         <source>&amp;Reload</source>
         <translation>&amp;Reîncărcați</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="316"/>
+        <location filename="../main-win.ui" line="317"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="325"/>
+        <location filename="../main-win.ui" line="326"/>
         <source>Go</source>
         <translation>Duceți-vă</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="334"/>
+        <location filename="../main-win.ui" line="335"/>
         <source>Quit</source>
         <translation>Părăsiți</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="343"/>
+        <location filename="../main-win.ui" line="344"/>
         <source>&amp;About</source>
         <translation>&amp;Despre</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="352"/>
+        <location filename="../main-win.ui" line="353"/>
         <source>&amp;New Window</source>
         <translation>&amp;Fereastră Nouă</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="355"/>
+        <location filename="../main-win.ui" line="356"/>
         <source>New Window</source>
         <translation>Fereastră Nouă</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="358"/>
+        <location filename="../main-win.ui" line="359"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="366"/>
+        <location filename="../main-win.ui" line="367"/>
         <source>Show &amp;Hidden</source>
         <translation>Arătați &amp;Ascunse</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="369"/>
+        <location filename="../main-win.ui" line="370"/>
         <source>Ctrl+H</source>
         <translation>Ctrl+H</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="378"/>
+        <location filename="../main-win.ui" line="379"/>
         <source>&amp;Computer</source>
         <translation>&amp;Computer</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="387"/>
+        <location filename="../main-win.ui" line="388"/>
         <source>&amp;Trash</source>
         <translation>&amp;Gunoi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="392"/>
+        <location filename="../main-win.ui" line="393"/>
         <source>&amp;Network</source>
         <translation>&amp;Rețea</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="401"/>
+        <location filename="../main-win.ui" line="402"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Desktop</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="410"/>
+        <location filename="../main-win.ui" line="411"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Adăugați la Marcaje</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="415"/>
+        <location filename="../main-win.ui" line="416"/>
         <source>&amp;Applications</source>
         <translation>&amp;Aplicații</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="420"/>
+        <location filename="../main-win.ui" line="421"/>
         <source>Reload</source>
         <translation>Reîncărcați</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="428"/>
+        <location filename="../main-win.ui" line="429"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Afișare Picograme</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="436"/>
+        <location filename="../main-win.ui" line="437"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Afișare Compactă</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="444"/>
+        <location filename="../main-win.ui" line="445"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Listă Detaliată</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="452"/>
+        <location filename="../main-win.ui" line="453"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Afișare Miniaturi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="461"/>
+        <location filename="../main-win.ui" line="462"/>
         <source>Cu&amp;t</source>
         <translation>Ta&amp;ie</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="464"/>
+        <location filename="../main-win.ui" line="465"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="473"/>
+        <location filename="../main-win.ui" line="474"/>
         <source>&amp;Copy</source>
         <translation>&amp;Copiați</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="476"/>
+        <location filename="../main-win.ui" line="477"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="485"/>
+        <location filename="../main-win.ui" line="486"/>
         <source>&amp;Paste</source>
         <translation>&amp;Inserați</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="488"/>
+        <location filename="../main-win.ui" line="489"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="493"/>
+        <location filename="../main-win.ui" line="494"/>
         <source>Select &amp;All</source>
         <translation>Selectați &amp;Toate</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="496"/>
+        <location filename="../main-win.ui" line="497"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="501"/>
+        <location filename="../main-win.ui" line="502"/>
+        <source>De&amp;select All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="505"/>
+        <source>Ctrl+D</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="510"/>
         <source>Pr&amp;eferences</source>
         <translation>Pr&amp;eferințe</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="509"/>
+        <location filename="../main-win.ui" line="518"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Ascendent</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="517"/>
+        <location filename="../main-win.ui" line="526"/>
         <source>&amp;Descending</source>
         <translation>&amp;Descendent</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="525"/>
+        <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
         <translation>&amp;După Numele Fișierelor</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="533"/>
+        <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
         <translation>După &amp;Timpul Modificării</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="541"/>
+        <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
         <translation>După T&amp;impul Creeării</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="549"/>
+        <location filename="../main-win.ui" line="558"/>
         <source>By Deletio&amp;n Time</source>
         <translation>După Timp&amp;ul Ștergerii</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="557"/>
+        <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
         <translation>După Tipul &amp;Fișierului</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="565"/>
+        <location filename="../main-win.ui" line="574"/>
         <source>By &amp;Owner</source>
         <translation>După &amp;Deținător</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="573"/>
+        <location filename="../main-win.ui" line="582"/>
         <source>By &amp;Group</source>
         <translation>După &amp;Grup</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="581"/>
+        <location filename="../main-win.ui" line="590"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Folderele Primele</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="589"/>
+        <location filename="../main-win.ui" line="598"/>
         <source>&amp;Hidden Last</source>
         <translation>&amp;Cele Ascune Ultimele</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="870"/>
+        <location filename="../main-win.ui" line="879"/>
         <source>Shift+F2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="954"/>
+        <location filename="../main-win.ui" line="963"/>
         <source>Preserve Settings Recursively from &amp;Here</source>
         <translation>Păstrați Setările Recursiv de &amp;Aici</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="959"/>
+        <location filename="../main-win.ui" line="968"/>
         <source>&amp;Go to Source of Inherited Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="964"/>
+        <location filename="../main-win.ui" line="973"/>
         <source>&amp;Remove Settings of Nonexistent Folders</source>
         <translation>&amp;Ștergeți Setările pentru Foldere Care Nu Există</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="972"/>
+        <location filename="../main-win.ui" line="981"/>
         <source>&amp;Clear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="642"/>
+        <location filename="../main-win.ui" line="651"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="691"/>
+        <location filename="../main-win.ui" line="700"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;Case Sensitive</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="699"/>
+        <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
         <translation>După Fișier și &amp;Mărime</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="704"/>
+        <location filename="../main-win.ui" line="713"/>
         <source>&amp;Close Window</source>
         <translation>&amp;Închide Fereastra</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="707"/>
+        <location filename="../main-win.ui" line="716"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="725"/>
+        <location filename="../main-win.ui" line="734"/>
         <source>Open Tab in &amp;Root Instance</source>
         <translation>Deschide fila în instanță f&amp;Root</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="739"/>
+        <location filename="../main-win.ui" line="748"/>
         <source>&amp;Folder</source>
         <translation>&amp;Folder</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="751"/>
+        <location filename="../main-win.ui" line="760"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Fișier gol</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="838"/>
+        <location filename="../main-win.ui" line="847"/>
         <source>Preserve Settings for &amp;This Folder</source>
         <translation>Păstrați Setările pentru &amp;Acest Folder</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="875"/>
+        <location filename="../main-win.ui" line="884"/>
         <source>&amp;Show/Focus Filter Bar</source>
         <translation>&amp;Arătați/Focusați Bara de Filtrare</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="878"/>
+        <location filename="../main-win.ui" line="887"/>
         <source>Show Filter Bar</source>
         <translation>Arată Bara de Filtre</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="881"/>
+        <location filename="../main-win.ui" line="890"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="889"/>
+        <location filename="../main-win.ui" line="898"/>
         <source>S&amp;plit View</source>
         <translation>V&amp;edere divizată</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="892"/>
+        <location filename="../main-win.ui" line="901"/>
         <source>Split View</source>
         <translation>Vedere Divizată</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="895"/>
+        <location filename="../main-win.ui" line="904"/>
         <source>F6</source>
         <translation>F6</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="900"/>
+        <location filename="../main-win.ui" line="909"/>
         <source>&amp;Copy Full Path</source>
         <translation>&amp;Copiază Calea Întreagă</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="903"/>
+        <location filename="../main-win.ui" line="912"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="914"/>
+        <location filename="../main-win.ui" line="923"/>
         <source>Show Thumb&amp;nails</source>
         <translation>Arată Pictogr&amp;ame</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="917"/>
+        <location filename="../main-win.ui" line="926"/>
         <source>Show Thumbnails</source>
         <translation>Arată Pictograme</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="925"/>
+        <location filename="../main-win.ui" line="934"/>
         <source>S&amp;ide Pane</source>
         <translation>P&amp;anou Lateral</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="928"/>
+        <location filename="../main-win.ui" line="937"/>
         <source>F9</source>
         <translation>F9</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="933"/>
+        <location filename="../main-win.ui" line="942"/>
         <source>Hidden &amp;Shortcuts</source>
         <translation>&amp;Scurtături Ascunse</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="938"/>
+        <location filename="../main-win.ui" line="947"/>
         <source>Open Tab in &amp;Admin Mode</source>
         <translation>Deschide Filă în modul &amp;Admin</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="943"/>
-        <location filename="../main-win.ui" line="946"/>
+        <location filename="../main-win.ui" line="952"/>
+        <location filename="../main-win.ui" line="955"/>
         <source>Create Launcher</source>
         <translation>Crează Lansator</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="773"/>
+        <location filename="../main-win.ui" line="782"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="778"/>
+        <location filename="../main-win.ui" line="787"/>
         <source>&amp;Clear All Filters</source>
         <translation>&amp;Șterge toate filtrele</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="781"/>
+        <location filename="../main-win.ui" line="790"/>
         <source>Ctrl+Shift+K</source>
         <translation>Ctrl+Shift+K</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="790"/>
+        <location filename="../main-win.ui" line="799"/>
         <source>Close &amp;previous tabs</source>
         <translation>Închide filele &amp;anterioare</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="799"/>
+        <location filename="../main-win.ui" line="808"/>
         <source>Close &amp;next tabs</source>
         <translation>Închide filele &amp;următoare</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="843"/>
+        <location filename="../main-win.ui" line="852"/>
         <source>Connect to &amp;Server</source>
         <translation>Conectează-te la &amp;Server</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="851"/>
+        <location filename="../main-win.ui" line="860"/>
         <source>&amp;Location</source>
         <translation>&amp;Locație</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="859"/>
+        <location filename="../main-win.ui" line="868"/>
         <source>&amp;Path Buttons</source>
         <translation>&amp;Butoanele Căii Fișierului</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="864"/>
+        <location filename="../main-win.ui" line="873"/>
         <source>&amp;Bulk Rename</source>
         <translation>Redenumire în &amp;Masă</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="867"/>
+        <location filename="../main-win.ui" line="876"/>
         <source>Bulk Rename</source>
         <translation>Redenumire în Masă</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="804"/>
+        <location filename="../main-win.ui" line="813"/>
         <source>Close &amp;other tabs</source>
         <translation>Închide &amp;alte file</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="770"/>
+        <location filename="../main-win.ui" line="779"/>
         <source>Permanent &amp;filter bar</source>
         <translation>Bară de &amp;filtre permanentă</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="812"/>
+        <location filename="../main-win.ui" line="821"/>
         <source>&amp;Menu bar</source>
         <translation>&amp;Bara de Meniu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="815"/>
+        <location filename="../main-win.ui" line="824"/>
         <source>Menu bar</source>
         <translation>Bara de Meniu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="818"/>
+        <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="827"/>
-        <location filename="../main-win.ui" line="830"/>
+        <location filename="../main-win.ui" line="836"/>
+        <location filename="../main-win.ui" line="839"/>
         <source>Menu</source>
         <translation>Meniu</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="598"/>
+        <location filename="../main-win.ui" line="607"/>
         <source>New &amp;Tab</source>
         <translation>&amp;Filă Nouă</translation>
     </message>
@@ -1250,132 +1260,132 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
         <translation>&amp;Setările de Vizualizare Personalizate</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="601"/>
+        <location filename="../main-win.ui" line="610"/>
         <source>New Tab</source>
         <translation>Filă Nouă</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="604"/>
+        <location filename="../main-win.ui" line="613"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="613"/>
+        <location filename="../main-win.ui" line="622"/>
         <source>Go &amp;Back</source>
         <translation>Duce-ți-vă &amp;Înapoi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="616"/>
+        <location filename="../main-win.ui" line="625"/>
         <source>Go Back</source>
         <translation>Duce-ți-vă Înapoi</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="619"/>
+        <location filename="../main-win.ui" line="628"/>
         <source>Alt+Left</source>
         <translation>Alt+Left</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="628"/>
+        <location filename="../main-win.ui" line="637"/>
         <source>Go &amp;Forward</source>
         <translation>Du-te &amp;Înainte</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="631"/>
+        <location filename="../main-win.ui" line="640"/>
         <source>Go Forward</source>
         <translation>Du-te înainte</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="634"/>
+        <location filename="../main-win.ui" line="643"/>
         <source>Alt+Right</source>
         <translation>Alt+Right</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="639"/>
+        <location filename="../main-win.ui" line="648"/>
         <source>&amp;Invert Selection</source>
         <translation>&amp;Inversează Selecția</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="651"/>
+        <location filename="../main-win.ui" line="660"/>
         <source>&amp;Delete</source>
         <translation>&amp;Șterge</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="654"/>
+        <location filename="../main-win.ui" line="663"/>
         <source>Del</source>
         <translation>Del</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="659"/>
+        <location filename="../main-win.ui" line="668"/>
         <source>&amp;Rename</source>
         <translation>&amp;Redenumește</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="662"/>
+        <location filename="../main-win.ui" line="671"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="667"/>
+        <location filename="../main-win.ui" line="676"/>
         <source>C&amp;lose Tab</source>
         <translation>Î&amp;nchide Fila</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="670"/>
+        <location filename="../main-win.ui" line="679"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="675"/>
+        <location filename="../main-win.ui" line="684"/>
         <source>File &amp;Properties</source>
         <translation>&amp;Proprietățile Fișierului</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="678"/>
+        <location filename="../main-win.ui" line="687"/>
         <source>Alt+Return</source>
         <translation>Alt+Return</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="683"/>
+        <location filename="../main-win.ui" line="692"/>
         <source>&amp;Folder Properties</source>
         <translation>Proprietățile &amp;Folderului</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="712"/>
+        <location filename="../main-win.ui" line="721"/>
         <source>Edit Bookmarks</source>
         <translation>Editează Marcaje</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="717"/>
+        <location filename="../main-win.ui" line="726"/>
         <source>Open &amp;Terminal</source>
         <translation>Deschide &amp;Terminal-ul</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="720"/>
+        <location filename="../main-win.ui" line="729"/>
         <source>F4</source>
         <translation>F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="730"/>
+        <location filename="../main-win.ui" line="739"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Editează Marcajele</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="742"/>
+        <location filename="../main-win.ui" line="751"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="754"/>
+        <location filename="../main-win.ui" line="763"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="759"/>
+        <location filename="../main-win.ui" line="768"/>
         <source>&amp;Find Files</source>
         <translation>&amp;Găsește Fșiere</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="762"/>
+        <location filename="../main-win.ui" line="771"/>
         <source>F3</source>
         <translation>F3</translation>
     </message>
@@ -1411,17 +1421,17 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
         <translation>&amp;Edit</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="203"/>
+        <location filename="../main-win.ui" line="204"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Marcaje</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="210"/>
+        <location filename="../main-win.ui" line="211"/>
         <source>&amp;Go</source>
         <translation>&amp;Du-te</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="252"/>
+        <location filename="../main-win.ui" line="253"/>
         <source>Main Toolbar</source>
         <translation>Bara de instrumente Principală</translation>
     </message>
@@ -1666,12 +1676,12 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="298"/>
+        <location filename="../desktopwindow.cpp" line="300"/>
         <source>Trash (One item)</source>
         <translation>Coș de gunoi (Un articol)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="301"/>
+        <location filename="../desktopwindow.cpp" line="303"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Coș de gunoi (%Ln articol)</numerusform>
@@ -1680,48 +1690,48 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="305"/>
+        <location filename="../desktopwindow.cpp" line="307"/>
         <source>Trash (Empty)</source>
         <translation>Coș de gunoi (gol)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="340"/>
+        <location filename="../desktopwindow.cpp" line="342"/>
         <source>Computer</source>
         <translation>Computer</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="354"/>
+        <location filename="../desktopwindow.cpp" line="356"/>
         <source>Network</source>
         <translation>Rețea</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="983"/>
+        <location filename="../desktopwindow.cpp" line="993"/>
         <source>Open</source>
         <translation>Deschide</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="989"/>
-        <location filename="../desktopwindow.cpp" line="1029"/>
+        <location filename="../desktopwindow.cpp" line="999"/>
+        <location filename="../desktopwindow.cpp" line="1039"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Rămâ&amp;i la Poziția Curentă</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="997"/>
+        <location filename="../desktopwindow.cpp" line="1007"/>
         <source>Empty Trash</source>
         <translation>Golește Coșul de gunoi</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1056"/>
+        <location filename="../desktopwindow.cpp" line="1066"/>
         <source>Hide Desktop Items</source>
         <translation>Ascunde Articolele de Desktop</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1062"/>
+        <location filename="../desktopwindow.cpp" line="1072"/>
         <source>Create Launcher</source>
         <translation>Creează Lansator</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1065"/>
+        <location filename="../desktopwindow.cpp" line="1075"/>
         <source>Desktop Preferences</source>
         <translation>Preferințe Desktop</translation>
     </message>
@@ -1760,45 +1770,45 @@ sunt apăsate stânga, chiar și atunci când nu este managerul de fișiere impl
         <translation>Acest lucru va ascunde bara de meniu complet, folosiți Ctrl+M pentru a o arăta din nou.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1171"/>
+        <location filename="../mainwindow.cpp" line="1191"/>
         <source>Version: %1</source>
         <translation>Versiune: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2131"/>
+        <location filename="../mainwindow.cpp" line="2155"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mută la Coșul de gunoi</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="2131"/>
+        <location filename="../mainwindow.cpp" line="2155"/>
         <source>&amp;Delete</source>
         <translation>&amp;Șterge</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1974"/>
+        <location filename="../mainwindow.cpp" line="1998"/>
         <source>Customized View Settings</source>
         <translation>Setările Personalizate pentru Vizualizare</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2238"/>
-        <location filename="../mainwindow.cpp" line="2246"/>
+        <location filename="../mainwindow.cpp" line="2262"/>
+        <location filename="../mainwindow.cpp" line="2270"/>
         <source>Error</source>
         <translation>Eroare</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2246"/>
+        <location filename="../mainwindow.cpp" line="2270"/>
         <source>Switch user command is not set.</source>
         <translation>Comanda de schimbare utilizator nu este setată.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2348"/>
+        <location filename="../mainwindow.cpp" line="2372"/>
         <source>Cleaning Folder Settings</source>
         <translation>Se Șterg Setările pentru Foldere</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2349"/>
+        <location filename="../mainwindow.cpp" line="2373"/>
         <source>Do you want to remove settings of nonexistent folders?
 They might be useful if those folders are created again.</source>
         <translation>Doriți să ștergeți setările folderelor inexistente?
@@ -1865,13 +1875,13 @@ Ar putea fi utile dacă acele foldere sunt create din nou.</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="562"/>
-        <location filename="../tabpage.cpp" line="760"/>
-        <location filename="../tabpage.cpp" line="774"/>
+        <location filename="../tabpage.cpp" line="764"/>
+        <location filename="../tabpage.cpp" line="778"/>
         <source>Link to</source>
         <translation>Leagă la</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="786"/>
+        <location filename="../tabpage.cpp" line="790"/>
         <source>%n item(s) selected</source>
         <translation>
             <numerusform>%n obiect selectat</numerusform>
@@ -2414,7 +2424,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../bulkrename.cpp" line="121"/>
         <location filename="../bulkrename.cpp" line="124"/>
-        <location filename="../tabpage.cpp" line="1111"/>
+        <location filename="../tabpage.cpp" line="1115"/>
         <source>Error</source>
         <translation type="unfinished">Eroare</translation>
     </message>
@@ -2429,7 +2439,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabpage.cpp" line="1111"/>
+        <location filename="../tabpage.cpp" line="1115"/>
         <source>Cannot open as Admin.</source>
         <translation type="unfinished"></translation>
     </message>
