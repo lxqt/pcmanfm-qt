@@ -1095,7 +1095,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Shift+F2</source>
-        <translation>Mayús+F2</translation>
+        <translation>Mayúsculas+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="963"/>
@@ -1120,7 +1120,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Mayús+A</translation>
+        <translation>Ctrl+Mayúsculas+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="700"/>
@@ -1200,7 +1200,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="912"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Mayús+C</translation>
+        <translation>Ctrl+Mayúsculas+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="923"/>
@@ -2202,7 +2202,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
     <message>
         <location filename="../preferences.ui" line="466"/>
         <source>3 px by default.</source>
-        <translation>De 3&#xa0;px de manera predeterminada.</translation>
+        <translation>De 3 px de manera predeterminada.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="469"/>
@@ -2219,7 +2219,7 @@ miniaturas grandes, afecta tanto a las imagenes como a las carpetas</translation
         <location filename="../preferences.ui" line="489"/>
         <source>3 px by default.
 A space is also reserved for 3 lines of text.</source>
-        <translation>De 3&#xa0;px de manera predeterminada.
+        <translation>De 3 px de manera predeterminada.
 También se reserva espacio para 3 renglones de texto.</translation>
     </message>
     <message>
@@ -2252,7 +2252,7 @@ visible cuando haya más de una pestaña abierta.</translation>
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
         <translation>El miniaturizador integrado crea miniaturas de las imágenes que Qt admite.
 
-Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4&#xa0;MiB.</translation>
+Por lo general, la mayoría de los tipos de imagen es compatible. El límite de tamaño predeterminado es de 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
