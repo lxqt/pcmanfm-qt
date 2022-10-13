@@ -313,7 +313,7 @@ Non necessario.</translation>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation>Categorie -  separate da punta e virgola - sotto quali il lanciatore deve essere mostrato se usato nel menu del DE (per esempio se viene salvato in ~/.local/share/applications)
+        <translation>Categorie - separate da punta e virgola - sotto quali il lanciatore deve essere mostrato se usato nel menu del DE (per esempio se viene salvato in ~/.local/share/applications)
 
 E&apos; necessario soltanto se si vuole usare il file creato nel menu delle applicazioni. Altrimenti può essere lasciato vuoto.
 
@@ -923,12 +923,12 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Deseleziona tutto</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
