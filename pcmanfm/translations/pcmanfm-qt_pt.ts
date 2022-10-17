@@ -923,12 +923,12 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Des&amp;selecionar tudo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
