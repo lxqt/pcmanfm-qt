@@ -72,12 +72,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
@@ -128,12 +128,12 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Ako je moguće, dopuni brojeve nulom</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Koristi lokalizirane brojeve</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -204,7 +204,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Određeno ime ovog pokretača.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -216,7 +216,9 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</translation
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kratki opis ili opće ime, npr. „Web preglednik“ ili „Početna mapa“.
+
+Može ostati prazno.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -228,7 +230,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kratki komentar.
+
+Može ostati prazno.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -249,7 +253,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikona za prikaz u upravljaču datoteka, izbornicima itd.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -265,7 +269,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Treba li se pokrenuti program izvoditi u prozoru terminala.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
@@ -285,7 +289,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Radi li se o poveznici ili izvršava naredbu.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
@@ -300,7 +304,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kategorije:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -309,7 +313,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kategorije odvojene točka-zarezom u kojima bi se unos trebao prikazati ako ga koristi glavni izbornik DE-a (npr. kada se stavi unutar ~/.local/share/applications).
+
+Potrebno je samo kad želiš koristiti stvorenu datoteku u glavnom izborniku. Inače, polje možeš ostaviti praznim.
+
+Primjeri: AudioVideo, Audio, Video, Razvoj, Obrazovanje, Igra, Grafike, Mreža, Ured, Postavke, Sustav, Uslužni program, Qt.</translation>
     </message>
 </context>
 <context>
@@ -468,7 +476,7 @@ Rezerviran je i prostor za 3 retka teksta.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Margine radnog područja:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -946,7 +954,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="494"/>
         <source>Select &amp;All</source>
-        <translation>Odaberi &amp;sve</translation>
+        <translation>Od&amp;aberi sve</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="497"/>
@@ -956,12 +964,12 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Odznači &amp;sve</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -1026,7 +1034,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="879"/>
         <source>Shift+F2</source>
-        <translation type="unfinished"></translation>
+        <translation>Shift+F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="963"/>
@@ -1051,7 +1059,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Shift+A</translation>
+        <translation>Ctrl+Shift+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="700"/>
@@ -1131,7 +1139,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../main-win.ui" line="912"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Shift+C</translation>
+        <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="923"/>
@@ -1593,7 +1601,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Naredba za izvršavanje.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1603,7 +1611,7 @@ upravljač datoteka.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>URL za pristup.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -1844,7 +1852,7 @@ Mogle bi biti korisne, ako se te mape ponovo kreiraju.</translation>
     <message>
         <location filename="../tabpage.cpp" line="442"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Rezultati pretrage</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="529"/>
@@ -2272,17 +2280,17 @@ Vrijednost -1 znači da ne postoji ograničenje za veličinu datoteke (standardn
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Pretraga</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Maksimalna povijest pretraživanja:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbriši povijest pretraživanja</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
