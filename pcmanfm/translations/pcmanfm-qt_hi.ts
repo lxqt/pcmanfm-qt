@@ -821,7 +821,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="326"/>
         <source>Go</source>
-        <translation>जाएं</translation>
+        <translation>जाएँ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="335"/>
@@ -831,12 +831,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="344"/>
         <source>&amp;About</source>
-        <translation>&amp;परिचय</translation>
+        <translation>परिचय (&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="353"/>
         <source>&amp;New Window</source>
-        <translation>&amp;नया विंडो</translation>
+        <translation>नई विंडो (&amp;N)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="356"/>
@@ -961,7 +961,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -1156,7 +1156,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="942"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>छिपे हुए &amp;शॉर्टकट</translation>
+        <translation>अदृश्य शॉर्टकट (&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="947"/>
@@ -1242,7 +1242,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished">Ctrl+M</translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
@@ -1308,12 +1308,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="660"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>मिटाएँ (&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Del</source>
-        <translation type="unfinished"></translation>
+        <translation>Del</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
@@ -1323,7 +1323,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="671"/>
         <source>F2</source>
-        <translation type="unfinished">F2</translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
@@ -1333,7 +1333,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="679"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="684"/>
@@ -1393,7 +1393,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="70"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ाइल (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="74"/>
@@ -1403,13 +1403,13 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="98"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>मदद (&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="105"/>
         <location filename="../main-win.ui" line="129"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>देखें (&amp;V)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="109"/>
@@ -1419,7 +1419,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="185"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>संपादन (&amp;E)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="204"/>
@@ -1434,7 +1434,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="253"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>मुख्य टूलबार</translation>
     </message>
 </context>
 <context>
@@ -1923,7 +1923,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>पसंद</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
@@ -1984,12 +1984,12 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>आइकन थीम :</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>विंडो</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
@@ -2233,7 +2233,7 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <location filename="../preferences.ui" line="682"/>
         <location filename="../preferences.ui" line="718"/>
         <source> MiB</source>
-        <translation type="unfinished"></translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="698"/>
