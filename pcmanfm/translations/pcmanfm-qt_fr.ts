@@ -133,7 +133,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished">Utiliser des numéros localisés</translation>
+        <translation>Utiliser des numéros localisés</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
