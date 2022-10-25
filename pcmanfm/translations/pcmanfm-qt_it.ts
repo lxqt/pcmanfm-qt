@@ -1023,7 +1023,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Shift+A</translation>
+        <translation>Ctrl+Maiusc+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
@@ -1083,7 +1083,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="912"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Shift+C</translation>
+        <translation>Ctrl+Maiusc+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="923"/>
