@@ -1,3 +1,20 @@
+pcmanfm-qt-1.2.0 / 2022-11-05
+==============================
+ * Fixed the links of About dialog.
+ * Added search history.
+ * Localize "Search Results".
+ * Consider device pixel ratio when drawing wallpaper. Also, an old problem is fixed in centering per-screen wallpapers with multi-screen setups.
+ * Prevent an empty desktop path.
+ * Allow customizing workspace margins on Desktop.
+ * Added options for locale-awareness and zero-padding to bulk renaming.
+ * Ignore auto-selection delay when single-click activation isn't chosen.
+ * Added an entry for Categories to launcher creator.
+ * Added "What's-This" help to launcher creator.
+ * Added an action with `Ctrl+D` as its shortcut to Edit menu for deselecting all items.
+ * Corrected bulk renaming shortcut on Desktop.
+ * Set QTerminal in default config file for LXQt.
+ * Apply changes in settings shared by Desktop and windows to Desktop too (auto-delay selection, right-click behavior, showing of thumbnails and treating backup files as hidden).
+
 pcmanfm-qt-1.1.0 / 2022-04-15
 ==============================
  * Added "Recent Files" to File menu.
