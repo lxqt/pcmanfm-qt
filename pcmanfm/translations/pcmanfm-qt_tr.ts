@@ -964,12 +964,12 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Hepsinin &amp;Seçimini Kaldır</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
