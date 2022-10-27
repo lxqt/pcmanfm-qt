@@ -993,12 +993,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>За часом з&amp;міни</translation>
+        <translation>За часом &amp;модифікації</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>За часом ст&amp;ворення</translation>
+        <translation>За часом &amp;створення</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1008,7 +1008,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>За типом &amp;файлу</translation>
+        <translation>За &amp;типом файлу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1068,7 +1068,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>За р&amp;озміром файлу</translation>
+        <translation>За &amp;розміром файлу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
