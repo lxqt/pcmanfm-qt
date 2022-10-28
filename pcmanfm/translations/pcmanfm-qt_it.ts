@@ -948,12 +948,12 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>&amp;Per nome file</translation>
+        <translation>Per &amp;nome file</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Per data di &amp;modifica</translation>
+        <translation>Per  &amp;data di modifica</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
@@ -968,7 +968,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Per &amp;tipo di file</translation>
+        <translation>Per &amp;tipo file</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1325,7 +1325,7 @@ sinistro anche se non è il gestore file predefinito.</translation>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Per dimen&amp;sione del file</translation>
+        <translation>Per di&amp;mensione file</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>

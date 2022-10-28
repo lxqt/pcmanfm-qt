@@ -986,12 +986,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>باسم المل&amp;ف</translation>
+        <translation>&amp;حسب اسم الملف</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>بوقت الت&amp;عديل</translation>
+        <translation>&amp;حسب وقت التعديل</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
@@ -1006,7 +1006,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>ب&amp;نوع الملف</translation>
+        <translation>&amp;حسب نوع الملف</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1066,7 +1066,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>بح&amp;جم الملف</translation>
+        <translation>&amp;حسب حجم الملف</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>

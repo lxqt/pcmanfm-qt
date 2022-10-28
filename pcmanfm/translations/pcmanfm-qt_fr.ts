@@ -958,7 +958,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Par date de cr&amp;éation</translation>
+        <translation>Par date de c&amp;réation</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1043,7 +1043,7 @@ par un clic gauche, même si aucun gestionnaire de fichiers n&apos;est défini p
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Par &amp;taille de fichier</translation>
+        <translation>Par taille de &amp;fichier</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>

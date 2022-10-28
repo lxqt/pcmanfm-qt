@@ -987,17 +987,17 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>Op &amp;bestandsnaam</translation>
+        <translation>&amp;Bestandsnaam</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Op &amp;bewerkingstijdstip</translation>
+        <translation>&amp;Wijzigingstijdstip</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Op aa&amp;nmaaktijdstip</translation>
+        <translation>Aan&amp;maakdatum</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1007,7 +1007,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Op bestands&amp;type</translation>
+        <translation>Bestands&amp;type</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1067,7 +1067,7 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Op bestand&amp;sgrootte</translation>
+        <translation>Bestand&amp;sgrootte</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
