@@ -948,7 +948,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>Por nome de &amp;ficheiro</translation>
+        <translation>&amp;Por nome</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
@@ -968,7 +968,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Por &amp;tipo de ficheiro</translation>
+        <translation>Por &amp;tipo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1043,7 +1043,7 @@ se clicar com o botão esquerdo do rato - mesmo que este não seja o gestor de f
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Por tama&amp;ho do ficheiro</translation>
+        <translation>Por &amp;tamanho</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>

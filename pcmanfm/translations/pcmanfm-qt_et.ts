@@ -988,17 +988,17 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>&amp;Faili nime järgi</translation>
+        <translation>&amp;Failinime alusel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>&amp;Muutmise aja järgi</translation>
+        <translation>&amp;Muutmise aja alusel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>&amp;Loomisaja alusel</translation>
+        <translation>&amp;Loomise aja alusel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1008,7 +1008,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Faili &amp;tüübi järgi</translation>
+        <translation>Faili&amp;tüübi alusel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1068,7 +1068,7 @@ on olemas klõpsatakse vasakul, isegi kui see pole vaikefailihaldur.</translatio
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Faili &amp;suuruse järgi</translation>
+        <translation>Faili &amp;suuruse alusel</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
