@@ -1056,7 +1056,7 @@ el gestor de fitxers predeterminat.</translation>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Maj+A</translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="700"/>
@@ -1136,7 +1136,7 @@ el gestor de fitxers predeterminat.</translation>
     <message>
         <location filename="../main-win.ui" line="912"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Maj+C</translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="923"/>

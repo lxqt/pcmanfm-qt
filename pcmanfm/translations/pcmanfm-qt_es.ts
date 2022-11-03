@@ -622,7 +622,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../shortcuts.ui" line="34"/>
         <source>Focus view, clear filter bar</source>
-        <translation>Enfocar vista, despejar barra de filtrado</translation>
+        <translation>Enfocar la vista, borrar la barra de filtro</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="39"/>
@@ -726,7 +726,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../shortcuts.ui" line="130"/>
         <source>Paste into transient filter bar</source>
-        <translation>Pegar en la barra de filtrado temporal</translation>
+        <translation>Pegar en la barra de filtro temporal</translation>
     </message>
     <message>
         <location filename="../shortcuts.ui" line="135"/>
@@ -830,7 +830,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="153"/>
         <source>&amp;Filtering</source>
-        <translation>&amp;Filtrado</translation>
+        <translation>&amp;Filtrar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="185"/>
@@ -1025,12 +1025,12 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>De&amp;seleccionar todo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -1050,17 +1050,17 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>Por nombre de archivo</translation>
+        <translation>Por &amp;nombre de archivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Por fecha de &amp;modificación</translation>
+        <translation>Por &amp;fecha de modificación</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Por hora de c&amp;reación</translation>
+        <translation>Por fecha de &amp;creación</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1120,7 +1120,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="651"/>
         <source>Ctrl+Shift+A</source>
-        <translation>Ctrl+Mayúsculas+A</translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="700"/>
@@ -1130,7 +1130,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Por tamaño de archivo</translation>
+        <translation>Por ta&amp;maño de archivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
@@ -1165,12 +1165,12 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="884"/>
         <source>&amp;Show/Focus Filter Bar</source>
-        <translation>Mo&amp;strar/Enfocar la barra de filtrado</translation>
+        <translation>Mo&amp;strar/enfocar la barra de filtro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="887"/>
         <source>Show Filter Bar</source>
-        <translation>Mostrar la barra de filtrado</translation>
+        <translation>Mostrar la barra de filtro</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="890"/>
@@ -1200,7 +1200,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="912"/>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Mayúsculas+C</translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="923"/>
@@ -1225,7 +1225,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="942"/>
         <source>Hidden &amp;Shortcuts</source>
-        <translation>Atajos ocultos</translation>
+        <translation>&amp;Atajos ocultos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="947"/>
@@ -1246,7 +1246,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="787"/>
         <source>&amp;Clear All Filters</source>
-        <translation>Borrar todos los filtros</translation>
+        <translation>&amp;Borrar todos los filtros</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="790"/>
@@ -1296,7 +1296,7 @@ es el gestor de archivos predeterminado.</translation>
     <message>
         <location filename="../main-win.ui" line="779"/>
         <source>Permanent &amp;filter bar</source>
-        <translation>Barra de &amp;filtrado permanente</translation>
+        <translation>Barra de &amp;filtro permanente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="821"/>
