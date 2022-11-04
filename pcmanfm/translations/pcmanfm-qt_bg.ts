@@ -1682,12 +1682,12 @@ are left clicked, even when it is not the default file manager.</source>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="300"/>
+        <location filename="../desktopwindow.cpp" line="299"/>
         <source>Trash (One item)</source>
         <translation>Кошче (един елемент)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="302"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Кошче (%Ln елемент)</numerusform>
@@ -1695,48 +1695,48 @@ are left clicked, even when it is not the default file manager.</source>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="307"/>
+        <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (Empty)</source>
         <translation>Кошче (Празно)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="342"/>
+        <location filename="../desktopwindow.cpp" line="341"/>
         <source>Computer</source>
         <translation>Компютър</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="356"/>
+        <location filename="../desktopwindow.cpp" line="355"/>
         <source>Network</source>
         <translation>Мрежа</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="993"/>
+        <location filename="../desktopwindow.cpp" line="992"/>
         <source>Open</source>
         <translation>Отваряне</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="999"/>
-        <location filename="../desktopwindow.cpp" line="1039"/>
+        <location filename="../desktopwindow.cpp" line="998"/>
+        <location filename="../desktopwindow.cpp" line="1038"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Фиксиране на текущата позиция</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1007"/>
+        <location filename="../desktopwindow.cpp" line="1006"/>
         <source>Empty Trash</source>
         <translation>Изпразване на кошчето</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1065"/>
         <source>Hide Desktop Items</source>
         <translation>Скриване на елементите на плота</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1072"/>
+        <location filename="../desktopwindow.cpp" line="1071"/>
         <source>Create Launcher</source>
         <translation>Създаване на стартер</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1074"/>
         <source>Desktop Preferences</source>
         <translation>Настройки на работния плот</translation>
     </message>

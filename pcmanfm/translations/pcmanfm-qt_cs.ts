@@ -1684,12 +1684,12 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="300"/>
+        <location filename="../desktopwindow.cpp" line="299"/>
         <source>Trash (One item)</source>
         <translation>Koš (1 položka)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="302"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Koš (%Ln položka)</numerusform>
@@ -1698,48 +1698,48 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="307"/>
+        <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (Empty)</source>
         <translation>Koš (prázdný)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="342"/>
+        <location filename="../desktopwindow.cpp" line="341"/>
         <source>Computer</source>
         <translation>Můj počítač</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="356"/>
+        <location filename="../desktopwindow.cpp" line="355"/>
         <source>Network</source>
         <translation>Síť</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="993"/>
+        <location filename="../desktopwindow.cpp" line="992"/>
         <source>Open</source>
         <translation>Otevřít</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="999"/>
-        <location filename="../desktopwindow.cpp" line="1039"/>
+        <location filename="../desktopwindow.cpp" line="998"/>
+        <location filename="../desktopwindow.cpp" line="1038"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Připnout &amp;ke stávající poloze</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1007"/>
+        <location filename="../desktopwindow.cpp" line="1006"/>
         <source>Empty Trash</source>
         <translation>Vyprázdnit koš</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1065"/>
         <source>Hide Desktop Items</source>
         <translation>Skrýt položky plochy</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1072"/>
+        <location filename="../desktopwindow.cpp" line="1071"/>
         <source>Create Launcher</source>
         <translation>Vytvořit spouštěč</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1074"/>
         <source>Desktop Preferences</source>
         <translation>Předvolby pracovní plochy</translation>
     </message>

@@ -1676,12 +1676,12 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="300"/>
+        <location filename="../desktopwindow.cpp" line="299"/>
         <source>Trash (One item)</source>
         <translation>Papirkurv (ett element)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="302"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Papirkurv (%Ln elementer)</numerusform>
@@ -1689,48 +1689,48 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="307"/>
+        <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (Empty)</source>
         <translation>Papirkurv (tom)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="342"/>
+        <location filename="../desktopwindow.cpp" line="341"/>
         <source>Computer</source>
         <translation>Datamaskin</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="356"/>
+        <location filename="../desktopwindow.cpp" line="355"/>
         <source>Network</source>
         <translation>Nettverk</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="993"/>
+        <location filename="../desktopwindow.cpp" line="992"/>
         <source>Open</source>
         <translation>Åpne</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="999"/>
-        <location filename="../desktopwindow.cpp" line="1039"/>
+        <location filename="../desktopwindow.cpp" line="998"/>
+        <location filename="../desktopwindow.cpp" line="1038"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Sett fast i nåværende posisjon</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1007"/>
+        <location filename="../desktopwindow.cpp" line="1006"/>
         <source>Empty Trash</source>
         <translation>Tøm papirkurv</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1065"/>
         <source>Hide Desktop Items</source>
         <translation>Skjul skrivebordselementer</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1072"/>
+        <location filename="../desktopwindow.cpp" line="1071"/>
         <source>Create Launcher</source>
         <translation>Skap oppstarter</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1074"/>
         <source>Desktop Preferences</source>
         <translation>Skrivebordsvalg</translation>
     </message>

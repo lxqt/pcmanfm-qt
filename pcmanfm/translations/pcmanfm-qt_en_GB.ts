@@ -1657,12 +1657,12 @@ are left clicked, even when it is not the default file manager.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="300"/>
+        <location filename="../desktopwindow.cpp" line="299"/>
         <source>Trash (One item)</source>
         <translation></translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="302"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Trash (%Ln item)</numerusform>
@@ -1670,48 +1670,48 @@ are left clicked, even when it is not the default file manager.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="307"/>
+        <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (Empty)</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="342"/>
+        <location filename="../desktopwindow.cpp" line="341"/>
         <source>Computer</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="356"/>
+        <location filename="../desktopwindow.cpp" line="355"/>
         <source>Network</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="993"/>
+        <location filename="../desktopwindow.cpp" line="992"/>
         <source>Open</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="999"/>
-        <location filename="../desktopwindow.cpp" line="1039"/>
+        <location filename="../desktopwindow.cpp" line="998"/>
+        <location filename="../desktopwindow.cpp" line="1038"/>
         <source>Stic&amp;k to Current Position</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1007"/>
+        <location filename="../desktopwindow.cpp" line="1006"/>
         <source>Empty Trash</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1065"/>
         <source>Hide Desktop Items</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1072"/>
+        <location filename="../desktopwindow.cpp" line="1071"/>
         <source>Create Launcher</source>
         <translation type="unfinished">Create Launcher</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1074"/>
         <source>Desktop Preferences</source>
         <translation></translation>
     </message>

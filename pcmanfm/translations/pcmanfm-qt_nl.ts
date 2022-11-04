@@ -1683,12 +1683,12 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
 <context>
     <name>PCManFM::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="300"/>
+        <location filename="../desktopwindow.cpp" line="299"/>
         <source>Trash (One item)</source>
         <translation>Prullenbak (één item)</translation>
     </message>
     <message numerus="yes">
-        <location filename="../desktopwindow.cpp" line="303"/>
+        <location filename="../desktopwindow.cpp" line="302"/>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Prullenbak (%Ln item)</numerusform>
@@ -1696,48 +1696,48 @@ zelfs als dat niet de standaard bestandsbeheerder is.</translation>
         </translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="307"/>
+        <location filename="../desktopwindow.cpp" line="306"/>
         <source>Trash (Empty)</source>
         <translation>Prullenbak (leeg)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="342"/>
+        <location filename="../desktopwindow.cpp" line="341"/>
         <source>Computer</source>
         <translation>Computer</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="356"/>
+        <location filename="../desktopwindow.cpp" line="355"/>
         <source>Network</source>
         <translation>Netwerk</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="993"/>
+        <location filename="../desktopwindow.cpp" line="992"/>
         <source>Open</source>
         <translation>Openen</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="999"/>
-        <location filename="../desktopwindow.cpp" line="1039"/>
+        <location filename="../desktopwindow.cpp" line="998"/>
+        <location filename="../desktopwindow.cpp" line="1038"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Op huidige positie &amp;blijven</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1007"/>
+        <location filename="../desktopwindow.cpp" line="1006"/>
         <source>Empty Trash</source>
         <translation>Prullenbak legen</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1066"/>
+        <location filename="../desktopwindow.cpp" line="1065"/>
         <source>Hide Desktop Items</source>
         <translation>Bureaubladitems verbergen</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1072"/>
+        <location filename="../desktopwindow.cpp" line="1071"/>
         <source>Create Launcher</source>
         <translation>Starter aanmaken</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="1075"/>
+        <location filename="../desktopwindow.cpp" line="1074"/>
         <source>Desktop Preferences</source>
         <translation>Bureaubladinstellingen</translation>
     </message>
@@ -1859,7 +1859,7 @@ Ze kunnen van pas komen als u ze opnieuw aanmaakt.</translation>
     <message>
         <location filename="../tabpage.cpp" line="538"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation>Vrije ruimte: %1 (totaal : %2)</translation>
+        <translation>Vrije ruimte: %1 (totaal&#xa0;: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="555"/>
