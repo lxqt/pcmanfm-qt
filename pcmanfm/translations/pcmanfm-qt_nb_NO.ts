@@ -204,7 +204,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Spesifikt navn på denne oppstarteren.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -216,7 +216,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Valgfri kort beskrivelse eller generisk navn, som f.eks. «Nettleser», eller «Hjemmemappe».</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -980,17 +980,17 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>Etter fi&amp;lnavn</translation>
+        <translation type="unfinished">&amp;Etter filnavn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Etter &amp;sist endret</translation>
+        <translation>Etter &amp;endringstid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Ette&amp;r dato</translation>
+        <translation>Etter &amp;opprettelsestid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1000,7 +1000,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Etter fil&amp;type</translation>
+        <translation type="unfinished">Etter fil&amp;type</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1060,7 +1060,7 @@ venstreklikkes, selv når det ikke er forvalgt filbehandler.</translation>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Etter &amp;størrelse</translation>
+        <translation type="unfinished">Etter fil&amp;størrelse</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
