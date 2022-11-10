@@ -923,12 +923,12 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Zrušit označ&amp;ení všeho</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -948,7 +948,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>Podle &amp;názvu</translation>
+        <translation>&amp;Podle názvu souboru</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
@@ -958,7 +958,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Podle času &amp;vytvoření</translation>
+        <translation>Podle času vy&amp;tvoření</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1043,7 +1043,7 @@ kliknete levým tlačítkem, i když to není výchozí správce souborů.</tran
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Podle veliko&amp;sti</translation>
+        <translation>Podle veliko&amp;sti souboru</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>

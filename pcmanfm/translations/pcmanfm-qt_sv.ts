@@ -984,7 +984,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>&amp;Av filnamn</translation>
+        <translation>&amp;Efter Filnamn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
@@ -1004,7 +1004,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Efter Fil &amp;typ</translation>
+        <translation>Efter Fil&amp;Typ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1064,7 +1064,7 @@ vänsterklickas, även när den inte är standard filhanterare.</translation>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Av filstorlek</translation>
+        <translation>Efter Fil &amp;Storlek</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
