@@ -1052,7 +1052,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>По в&amp;ремени создания</translation>
+        <translation>По вр&amp;емени создания</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1062,7 +1062,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>По &amp;типу файла</translation>
+        <translation>&amp;По типу файла</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1122,7 +1122,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>По &amp;размеру файла</translation>
+        <translation>По размеру &amp;файла</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
@@ -1334,7 +1334,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="228"/>
         <source>&amp;Tools</source>
-        <translation>&amp;Инструменты</translation>
+        <translation>С&amp;ервис</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="610"/>
@@ -2050,7 +2050,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="129"/>
         <source> sec</source>
-        <translation> сек</translation>
+        <translation> с</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="175"/>
