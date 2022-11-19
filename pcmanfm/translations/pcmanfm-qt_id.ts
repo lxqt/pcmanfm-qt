@@ -981,12 +981,12 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>Oleh Nama Berkas</translation>
+        <translation>&amp;Berdasarkan Nama File</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Oleh Tanggal Modifikasi</translation>
+        <translation>Berdasarkan &amp;Waktu Modifikasi</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
@@ -1001,7 +1001,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Oleh &amp;Tipe Berkas</translation>
+        <translation>Berdasarkan File &amp;Tipe</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1061,7 +1061,7 @@ jika folder tersebut diklik kiri, walaupun PCManFM-Qt bukan file manager standar
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Oleh Ukuran Berkas</translation>
+        <translation>Berdasarkan File &amp;Ukuran</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
