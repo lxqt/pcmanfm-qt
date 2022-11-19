@@ -128,12 +128,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Fyld numre med nul, hvis det er muligt</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Brug lokaliserede numre</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -204,7 +204,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Specifikt navn på dette program.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -216,7 +216,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>En kort beskrivelse eller generisk navn, f.eks. &quot;Webbrowser&quot; eller Hjemmekatalog&quot;&quot;
+
+Det kan stå tomt.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -228,7 +230,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>En kort kommentar.
+
+Det kan stå tomt.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -249,7 +253,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikon til visning i filhåndtering, menuer osv.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -265,7 +269,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Skal det startende program køres i et terminalvindue.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
@@ -285,7 +289,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Er dette et link eller skal det udføre en kommando.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
@@ -300,7 +304,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kategorier:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -309,7 +313,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Semikolon adskilte kategorier, hvori enhed skal vises, hvis den bruges af DE&apos;s hovedmenu (f.eks. når den placeres i ~/.local/share/applications).
+
+Det er kun nødvendigt, når du vil bruge den oprettede fil i hovedmenuen. Ellers kan du lade den stå tom.
+
+Eksempler: LydVideo, Lyd, Video, Udvikling, Uddannelse, Spil, Grafik, Netværk, Kontor, Indstillinger, System, Hjælpeprogram, Qt.</translation>
     </message>
 </context>
 <context>
@@ -468,7 +476,7 @@ Et mellemrum er også reserverte for tre linjers tekst.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>Arbejdsområdets marginer:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -485,7 +493,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../desktop-preferences.ui" line="314"/>
         <source>Make all items stick to their positions</source>
-        <translation type="unfinished"></translation>
+        <translation>Få alle genstande til at holde sig til deres positioner</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="373"/>
@@ -795,7 +803,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="293"/>
         <source>Alt+Up</source>
-        <translation>Alt+Up</translation>
+        <translation>Alt+Op</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
@@ -805,7 +813,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="305"/>
         <source>Alt+Home</source>
-        <translation>Alt+Home</translation>
+        <translation>Alt+Hjem</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="314"/>
@@ -955,12 +963,12 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Frav&amp;ælg alle</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -980,17 +988,17 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>Efter fi&amp;lnavn</translation>
+        <translation>&amp;Efter filnavn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>Efter &amp;ændringstidspunkt</translation>
+        <translation>Efter &amp;Ændringstid</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>Efter &amp;oprettelsestidspunkt</translation>
+        <translation>Ved oprettelse tidspunkt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1000,7 +1008,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="566"/>
         <source>By File &amp;Type</source>
-        <translation>Efter fil&amp;type</translation>
+        <translation>Efter Fil &amp;Type</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="574"/>
@@ -1035,7 +1043,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="968"/>
         <source>&amp;Go to Source of Inherited Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Gå til kilde til nedarvede indstillinger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="973"/>
@@ -1060,7 +1068,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="708"/>
         <source>By File &amp;Size</source>
-        <translation>Efter fil&amp;størrelse</translation>
+        <translation>Efter fil &amp;størrelse</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="713"/>
@@ -1282,7 +1290,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="628"/>
         <source>Alt+Left</source>
-        <translation>Alt+Left</translation>
+        <translation>Alt+Venstre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="637"/>
@@ -1297,7 +1305,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="643"/>
         <source>Alt+Right</source>
-        <translation>Alt+Right</translation>
+        <translation>Alt+Højre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="648"/>
@@ -1312,7 +1320,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../main-win.ui" line="663"/>
         <source>Del</source>
-        <translation>Del</translation>
+        <translation>Slet</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
@@ -1451,7 +1459,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../application.cpp" line="191"/>
         <source>Run PCManFM-Qt as a daemon</source>
-        <translation>Kør PCManFM-Qt  som en dæmon</translation>
+        <translation>Kør PCManFM-Qt som en dæmon</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="194"/>
@@ -1592,7 +1600,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommandoen der skal udføres.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1602,7 +1610,7 @@ venstreklikkes, selv hvis det ikke er standardfilhåndteringen.</translation>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>Den URL, der skal tilgås.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -2165,7 +2173,7 @@ De kan være nyttige hvis mapperne bliver oprettet igen.</translation>
     <message>
         <location filename="../preferences.ui" line="436"/>
         <source>Disable smooth scrolling in list and compact modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Deaktiver jævn rulning i liste og kompakt tilstande</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="459"/>
@@ -2223,12 +2231,15 @@ hvis der er mere end et faneblad.</translation>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation type="unfinished"></translation>
+        <translation>Den indbyggede thumbnailer laver thumbnails af billeder, der understøttes af Qt.
+
+
+Normalt er de fleste billedtyper understøttet. Standard størrelsesgrænsen er 4 MiB.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
         <source>Image size limit for built-in thumbnailer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Billedstørrelsesbegrænsning for indbygget thumbnailer:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="682"/>
@@ -2242,12 +2253,15 @@ Usually, most image types are supported. The default size limit is 4 MiB.</sourc
         <source>If existing, external thumbnailers are used for videos, PDF documents, etc.
 
 A value of -1 means that there is no limit for the file size (the default).</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvis eksisterende, bruges eksterne thumbnailere til videoer, PDF-dokumenter mv.
+
+
+En værdi på -1 betyder, at der ikke er nogen grænse for filstørrelsen (standard).</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="703"/>
         <source>File size limit for external thumbnailers:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filstørrelsesgrænse for eksterne miniaturebilleder:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="715"/>
@@ -2262,17 +2276,17 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Søg</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>Maksimal søgehistorik:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>Ryd søgehistorikken</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>

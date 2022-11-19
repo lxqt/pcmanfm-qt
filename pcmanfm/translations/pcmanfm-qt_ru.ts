@@ -125,7 +125,7 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
     <message>
         <location filename="../bulk-rename.ui" line="47"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation># будет заменен на числа, начиная с:</translation>
+        <translation># будет заменён на числа, начиная с:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
@@ -218,7 +218,7 @@ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  021
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation>Короткое описание или общее название, например &quot;Веб-браузер&quot; или &quot;Домашний каталог&quot;.
+        <translation>Короткое описание или общее название, например «Веб-браузер» или «Домашний каталог».
 
 Можно оставить пустым.</translation>
     </message>
@@ -315,7 +315,7 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation>Категории, разделенные точкой с запятой, в которых должна отображаться запись, если она используется в главном меню DE (например, при помещении в ~/.local/share/applications).
+        <translation>Категории, разделённые точкой с запятой, в которых должна отображаться запись, если она используется в главном меню DE (например, при помещении в ~/.local/share/applications).
 
 Нужно только тогда, когда вы хотите использовать созданный файл в главном меню. В противном случае вы можете оставить это пустым.
 
@@ -571,7 +571,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="626"/>
         <source>Home</source>
-        <translation>Home</translation>
+        <translation>Домашний каталог</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="637"/>
@@ -1303,7 +1303,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Menu bar</source>
-        <translation>&amp;Cтрока меню</translation>
+        <translation>&amp;Строка меню</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
@@ -2254,9 +2254,9 @@ only if there are more than one tab.</source>
         <source>The built-in thumbnailer makes thumbnails of images that are supported by Qt.
 
 Usually, most image types are supported. The default size limit is 4 MiB.</source>
-        <translation>Встроенный конструктор эскизов создает эскизы изображений, поддерживаемых Qt.
+        <translation>Встроенный конструктор эскизов создаёт эскизы изображений, поддерживаемых Qt.
 
-Поддерживается большинство типов изображений. Ограничение по размеру составляет 4 Мб.</translation>
+Поддерживается большинство типов изображений. Стандартное ограничение по размеру — 4 Мб.</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="670"/>
@@ -2457,7 +2457,7 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../tabpage.cpp" line="1115"/>
         <source>Cannot open as Admin.</source>
-        <translation>Не удается открыть в качестве администратора.</translation>
+        <translation>Не удаётся открыть в качестве администратора.</translation>
     </message>
 </context>
 </TS>
