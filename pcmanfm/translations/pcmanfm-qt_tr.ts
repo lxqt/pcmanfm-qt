@@ -1694,6 +1694,7 @@ olarak seçilmese bile sol tıklandığında PCManFM-Qt&apos;de açılır.</tran
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>Çöp Kutusu (%Ln öğe)</numerusform>
+            <numerusform>Çöp Kutusu (%Ln öğe)</numerusform>
         </translation>
     </message>
     <message>
