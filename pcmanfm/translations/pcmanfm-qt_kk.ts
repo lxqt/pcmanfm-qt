@@ -123,27 +123,27 @@ GNU General Public License аясында еркін тарата немесе/�
     <message>
         <location filename="../bulk-rename.ui" line="47"/>
         <source># will be replaced by numbers starting with:</source>
-        <translation type="unfinished"></translation>
+        <translation># таңбасы келесіден басталатын санмен алмастырылады:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>Мүмкін болса, санды нөлдермен қоршау</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Локализацияланған сандарды қолдану</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
         <source>Rename selected files to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Таңдалған файлдар аттарын келесідей ауыстыру:</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="40"/>
         <source>Name#</source>
-        <translation type="unfinished"></translation>
+        <translation>Аты#</translation>
     </message>
 </context>
 <context>
@@ -151,42 +151,42 @@ GNU General Public License аясында еркін тарата немесе/�
     <message>
         <location filename="../connect.ui" line="14"/>
         <source>Connect to remote server</source>
-        <translation type="unfinished"></translation>
+        <translation>Қашықтағы серверге қосылу</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="23"/>
         <source>Anonymous &amp;login</source>
-        <translation type="unfinished"></translation>
+        <translation>Анонимды &amp;кіру</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="36"/>
         <source>Login as &amp;user:</source>
-        <translation type="unfinished"></translation>
+        <translation>Па&amp;йдаланушы ретінде кіру:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="65"/>
         <source>Specify remote folder to connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Қосылу үшін қашықтағы буманы көрсетіңіз</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="72"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Түрі:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="79"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Порт:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="86"/>
         <source>Path:</source>
-        <translation type="unfinished"></translation>
+        <translation>Жолы:</translation>
     </message>
     <message>
         <location filename="../connect.ui" line="96"/>
         <source>Host:</source>
-        <translation type="unfinished"></translation>
+        <translation>Хост:</translation>
     </message>
 </context>
 <context>
@@ -194,113 +194,117 @@ GNU General Public License аясында еркін тарата немесе/�
     <message>
         <location filename="../desktopentrydialog.ui" line="14"/>
         <source>Create Launcher</source>
-        <translation type="unfinished"></translation>
+        <translation>Жөнелткішті жасау</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Аты:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Бұл жөнелткіштің нақты аты.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Сипаттамасы:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="65"/>
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Қысқаша сипаттамасы немесе жалпы аты, мысалы &quot;Веб-браузері&quot; немесе &quot;Үй бумасы&quot;.
+
+Бос етіп қалдыруға болады.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Түсіндірме:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="84"/>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Қысқаша түсіндірме.
+
+Бос етіп қалдыруға болады.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
         <source>Command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="112"/>
         <location filename="../desktopentrydialog.ui" line="143"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="121"/>
         <source>Icon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Таңбаша:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлдар басқарушысы, мәзірлер және т.б. жерде көрсетілетін таңбашасы.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
         <location filename="../desktopentrydialog.ui" line="162"/>
         <source>Run in terminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Терминалда жөнелту керек пе?</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="155"/>
         <source>Terminal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Терминал:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Жөнелтілген команда терминал терезесінде орындалуы керек пе.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Жоқ</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="174"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Иә</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="182"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Түрі:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Бұл сілтеме немесе команданың орындалуы ма.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
         <source>Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Қолданба</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="198"/>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Сілтеме</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Санаттар:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -309,7 +313,11 @@ It can be left empty.</source>
 It is needed only when you want to use the created file in the main menu. Otherwise, you could leave it empty.
 
 Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</source>
-        <translation type="unfinished"></translation>
+        <translation>Жазба көрсетілуі тиіс санаттар, нүктелі үтірмен бөлінген, егер ол жазба DE негізгі мәзірінде пайдаланылса (мысалы, ~/.local/share/applications ішіне қойылғанда) .
+
+Ол жасалған файлды негізгі мәзірде пайдаланғыңыз келгенде ғана қажет. Болмаса, оны бос қалдыруға болады.
+
+Мысалдар: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Settings, System, Utility, Qt.</translation>
     </message>
 </context>
 <context>
@@ -317,32 +325,32 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Жұмыс үстелі</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Жұмыс үстелі бумасы:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Сурет файлы</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>Бумаға дейінгі жол</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Шолу</translation>
     </message>
 </context>
 <context>
@@ -350,38 +358,38 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Жұмыс үстел баптаулары</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="338"/>
         <location filename="../desktop-preferences.ui" line="344"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Фон</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="385"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Түсқағаз режимі:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="408"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Түсқағаздың сурет файлы:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="350"/>
         <source>Select background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Фон суретін таңдау:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="417"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Сурет файлы</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="423"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>Сурет файлына дейінгі жол</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="430"/>
@@ -421,22 +429,22 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
     <message>
         <location filename="../desktop-preferences.ui" line="87"/>
         <source>Select text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Мәтін түсін таңдау:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="136"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Аралық</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="152"/>
         <source>Minimum item margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Элементтердің минималды шеттері:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="189"/>
         <source>3 px by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Үнсіз келісім бойынша - 3 пиксель.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="176"/>
@@ -446,12 +454,12 @@ Examples: AudioVideo, Audio, Video, Development, Education, Game, Graphics, Netw
         <location filename="../desktop-preferences.ui" line="275"/>
         <location filename="../desktop-preferences.ui" line="287"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> пикс</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="205"/>
         <source>x</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="172"/>
@@ -873,22 +881,22 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="402"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Жұмыс үстелі</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="411"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Бетбелгілерге қ&amp;осу</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="416"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Қолд&amp;анбалар</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="421"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңарту</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="429"/>
@@ -963,37 +971,37 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="510"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Ба&amp;птаулар</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="518"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>Ө&amp;су ретімен</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="526"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>Ке&amp;му ретімен</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл аты &amp;бойынша</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Өз&amp;гертілген уақыты бойынша</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Жа&amp;салған уақыты бойынша</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
         <source>By Deletio&amp;n Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Ө&amp;шірілген уақыты бойынша</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="566"/>
@@ -1229,28 +1237,28 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="821"/>
         <source>&amp;Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Мәзір жолағы</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
         <source>Menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Мәзір жолағы</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
         <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+M</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
         <location filename="../main-win.ui" line="839"/>
         <source>Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Мәзір</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="607"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа бе&amp;т</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="160"/>
@@ -1480,7 +1488,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../application.cpp" line="206"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа терезе ашу</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="209"/>
@@ -1816,22 +1824,22 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="199"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>Таңбалашар ретіне қарау</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="200"/>
         <source>Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>Ықшам көрініс</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="201"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>Кіші көріністер</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="202"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>Толық тізім ретінде</translation>
     </message>
 </context>
 <context>
@@ -1839,32 +1847,32 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="442"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>Іздеу нәтижелері</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="529"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Қате</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="538"/>
         <source>Free space: %1 (Total: %2)</source>
-        <translation type="unfinished"></translation>
+        <translation>Бос орын: %1 (Барлығы: %2)</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="555"/>
         <source>%n item(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n нәрсе</numerusform>
+            <numerusform>%n нәрсе</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="557"/>
         <source> (%n hidden)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform> (%n жасырын)</numerusform>
+            <numerusform> (%n жасырын)</numerusform>
         </translation>
     </message>
     <message>
@@ -1872,14 +1880,14 @@ They might be useful if those folders are created again.</source>
         <location filename="../tabpage.cpp" line="764"/>
         <location filename="../tabpage.cpp" line="778"/>
         <source>Link to</source>
-        <translation type="unfinished"></translation>
+        <translation>Келесіге сілтеме</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="790"/>
         <source>%n item(s) selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n нәрсе таңдалды</numerusform>
+            <numerusform>%n нәрсе таңдалды</numerusform>
         </translation>
     </message>
 </context>
@@ -1888,31 +1896,31 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../view.cpp" line="59"/>
         <source>Many files</source>
-        <translation type="unfinished"></translation>
+        <translation>Бірнеше файл</translation>
     </message>
     <message numerus="yes">
         <location filename="../view.cpp" line="60"/>
         <source>Do you want to open these %1 files?</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Бұл %1 файлды ашқыңыз келе ме?</numerusform>
+            <numerusform>Бұл %1 файлды ашқыңыз келе ме?</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../view.cpp" line="122"/>
         <source>Open in New T&amp;ab</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа б&amp;етте ашу</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="126"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа терезе&amp;де ашу</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="134"/>
         <location filename="../view.cpp" line="152"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>Термина&amp;лда ашу</translation>
     </message>
 </context>
 <context>
@@ -1920,73 +1928,73 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Баптаулар</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="45"/>
         <source>User Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Пайдаланушы интерфейсі</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>Мінез-құлығы</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="50"/>
         <location filename="../preferences.ui" line="642"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"></translation>
+        <translation>Кіші көріністер</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="55"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>Бөлім</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="60"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Кеңейтілген</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="222"/>
         <source>Select newly created files</source>
-        <translation type="unfinished"></translation>
+        <translation>Жаңа ғана жасалған файлдарды таңдау</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="296"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>Таңбашалар</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="328"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Үлкен таңбашалар өлшемі:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="345"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Кіші таңбашалар өлшемі:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="362"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation>Кіші көріністер өлшемі:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="376"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>Бүйір панелі таңбашалар өлшемі:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="308"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Таңбашалар темасы:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="546"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Терезе</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="559"/>
