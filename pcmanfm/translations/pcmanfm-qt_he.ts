@@ -71,12 +71,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../about.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt&quot;&gt;https://github.com/lxqt/pcmanfm-qt&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="74"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wiki: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ויקי: &lt;a href=&quot;https://github.com/lxqt/pcmanfm-qt/wiki&quot;&gt;https://github.com/lxqt/pcmanfm-qt/wiki&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="135"/>
@@ -127,12 +127,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../bulk-rename.ui" line="80"/>
         <source>Pad numbers with zero if possible</source>
-        <translation type="unfinished"></translation>
+        <translation>לרפד מספרים באפסים אם ניתן</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="87"/>
         <source>Use localized numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>להשתמש במספרים תואמי אזור</translation>
     </message>
     <message>
         <location filename="../bulk-rename.ui" line="27"/>
@@ -203,7 +203,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <message>
         <location filename="../desktopentrydialog.ui" line="45"/>
         <source>Specific name of this launcher.</source>
-        <translation type="unfinished"></translation>
+        <translation>שם מסוים למפעיל הזה.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="58"/>
@@ -215,7 +215,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <source>A short description or generic name, like &quot;Web Browser&quot; or &quot;Home Directory&quot;.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>תיאור קצר או שם כוללני, כגון „דפדפן אינטרנט” או „תיקיית בית”.
+
+אפשר להשאיר ריק.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="77"/>
@@ -227,7 +229,9 @@ It can be left empty.</source>
         <source>A short comment.
 
 It can be left empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>הערה קצרה.
+
+אפשר להשאיר ריק.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="96"/>
@@ -248,7 +252,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="130"/>
         <source>Icon to display in file manager, menus, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>סמל להצגה במנהל קבצים, תפריטים וכו׳.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="152"/>
@@ -264,7 +268,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="165"/>
         <source>Whether the launched program should run in a terminal window.</source>
-        <translation type="unfinished"></translation>
+        <translation>האם התוכנית שהופעלה אמור לרוץ בחלון מסוף.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="169"/>
@@ -284,7 +288,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="189"/>
         <source>Whether this is a link or executes a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>האם זה קישור או מפעיל פקודה.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="193"/>
@@ -299,7 +303,7 @@ It can be left empty.</source>
     <message>
         <location filename="../desktopentrydialog.ui" line="206"/>
         <source>Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>קטגוריות:</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.ui" line="213"/>
@@ -467,7 +471,7 @@ A space is also reserved for 3 lines of text.</source>
     <message>
         <location filename="../desktop-preferences.ui" line="230"/>
         <source>Margins of work area:</source>
-        <translation type="unfinished"></translation>
+        <translation>גבולות אזור העבודה:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="303"/>
@@ -955,12 +959,12 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="502"/>
         <source>De&amp;select All</source>
-        <translation type="unfinished"></translation>
+        <translation>ביטול &amp;בחירה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="510"/>
@@ -980,17 +984,17 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../main-win.ui" line="534"/>
         <source>&amp;By File Name</source>
-        <translation>לפי שם &amp;קובץ</translation>
+        <translation>לפי &amp;שם קובץ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="542"/>
         <source>By &amp;Modification Time</source>
-        <translation>לפי מועד &amp;שינוי</translation>
+        <translation>לפי מו&amp;עד שינוי</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="550"/>
         <source>By C&amp;reation Time</source>
-        <translation>לפי מועד הי&amp;צירה</translation>
+        <translation>לפי מועד י&amp;צירה</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="558"/>
@@ -1592,7 +1596,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="36"/>
         <source>The command to execute.</source>
-        <translation type="unfinished"></translation>
+        <translation>הפקודה להרצה.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="39"/>
@@ -1602,7 +1606,7 @@ are left clicked, even when it is not the default file manager.</source>
     <message>
         <location filename="../desktopentrydialog.cpp" line="40"/>
         <source>The URL to access.</source>
-        <translation type="unfinished"></translation>
+        <translation>הכתובת אליה לגשת.</translation>
     </message>
     <message>
         <location filename="../desktopentrydialog.cpp" line="67"/>
@@ -1685,6 +1689,8 @@ are left clicked, even when it is not the default file manager.</source>
         <source>Trash (%Ln items)</source>
         <translation>
             <numerusform>אשפה (פריט אחד)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
+            <numerusform>אשפה (%Ln פריטים)</numerusform>
             <numerusform>אשפה (%Ln פריטים)</numerusform>
         </translation>
     </message>
@@ -1842,7 +1848,7 @@ They might be useful if those folders are created again.</source>
     <message>
         <location filename="../tabpage.cpp" line="442"/>
         <source>Search Results</source>
-        <translation type="unfinished"></translation>
+        <translation>תוצאות חיפוש</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="529"/>
@@ -1860,6 +1866,8 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform>פריט אחד</numerusform>
             <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1867,6 +1875,8 @@ They might be useful if those folders are created again.</source>
         <source> (%n hidden)</source>
         <translation>
             <numerusform> (אחד מוסתר)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
+            <numerusform> (%n מוסתרים)</numerusform>
             <numerusform> (%n מוסתרים)</numerusform>
         </translation>
     </message>
@@ -1883,6 +1893,8 @@ They might be useful if those folders are created again.</source>
         <translation>
             <numerusform>נבחר פריט אחד</numerusform>
             <numerusform>נבחרו %n פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
+            <numerusform>נבחרו %n פריטים</numerusform>
         </translation>
     </message>
 </context>
@@ -1898,6 +1910,8 @@ They might be useful if those folders are created again.</source>
         <source>Do you want to open these %1 files?</source>
         <translation>
             <numerusform>לפתוח את הקובץ הזה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
+            <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
             <numerusform>לפתוח את %1 הקבצים האלה?</numerusform>
         </translation>
     </message>
@@ -2266,17 +2280,17 @@ A value of -1 means that there is no limit for the file size (the default).</sou
     <message>
         <location filename="../preferences.ui" line="919"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>חיפוש</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="934"/>
         <source>Maximum search history:</source>
-        <translation type="unfinished"></translation>
+        <translation>כמות הפריטים המרבית בהיסטוריית החיפוש:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="948"/>
         <source>Clear search history</source>
-        <translation type="unfinished"></translation>
+        <translation>פינוי היסטוריית החיפוש</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="983"/>
