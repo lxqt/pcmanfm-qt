@@ -600,7 +600,7 @@
   </action>
   <action name="actionNewTab">
    <property name="icon">
-    <iconset theme="window-new">
+    <iconset theme="tab-new">
      <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
